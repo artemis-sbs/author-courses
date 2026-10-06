@@ -26,6 +26,10 @@ SRC_PYRUNTIME = _p("SRC_PYRUNTIME", r"E:\a\Cosmos-dev\PyRuntime")
 SRC_TOOL = _p("SRC_TOOL", "")                              # folder holding sbs.pyz, sbs.bat and __lib__ (released ones)
 SRC_VSC_EXT = _p("SRC_VSC_EXT", "")                        # an --extensions-dir with the Artemis AMD add-on in it
 PROMPT = "C:\\Cosmos\\data\\missions>"                     # the course's stand-in path (Lecture 2)
+# The same folder under the course's own name: a directory junction to STANDIN, made once
+# per machine (`mklink /J C:\Cosmos <the stand-in>`). File Explorer is opened through it, so
+# its address bar reads as the page does.
+COURSE_ROOT = _p("COURSE_ROOT", "C:\\Cosmos")
 
 # The throwaway VS Code profile. NEVER the user's own.
 VSC_DATA = os.path.join(WORK, "vsc_data")

@@ -214,8 +214,8 @@ and Escape clears the whole line. ||"
 in this folder: | those were its two files. || A command to it is the word sbs, a space, and
 then what I want. | So I'll ask it for its version. ||| Two lines come back: | its version,
 and the folder it lives in, | which should be the path you wrote down. || Read the version
-as two whole numbers, | so this is nought, thirteen, and thirteen is newer than nine. || The
-course needs twelve or higher. ||| The tool is mended and published again from time to time.
+as two whole numbers, | so the second one counts like any other number, and a bigger one is
+newer. || The page tells you the lowest one that will do. ||| The tool is mended and published again from time to time.
 || To get the newest, type sbs update, and wait for it to finish. || It says updated, and
 where. | Then ask for the version again. || Do that whenever a page of this course names a
 higher number than yours. ||"

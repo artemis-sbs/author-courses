@@ -8,9 +8,11 @@ File Explorer. `explorer.exe "<folder>"` starts a window; it is found by being N
 not there a moment before) and by its title starting with the folder's name; it is sized
 with SetWindowPos, read with PrintWindow, and closed by posting WM_CLOSE to that one window.
 Nothing is clicked and no key is sent. What it shows is this machine's own File Explorer:
-its view, its theme, its navigation pane (the user's own pinned folders are in it), and
-whether file name extensions are shown are the USER'S and are not touched. The path on its
-address bar is the stand-in's real one.
+its view, its theme and whether file name extensions are shown are the USER'S and are not
+touched. Two things are kept OUT of the picture, because they are the machine owner's and
+not the lesson's: the navigation pane (pinned folders, drives, cloud accounts) is cut out
+of every still (pane_box, explorer_still), and the window is opened through the junction
+config.COURSE_ROOT, so its address bar reads C:\\Cosmos and not the stand-in's real folder.
 
 (VS Code's markdown preview is a "vscode" still with {"beside": "preview"}: see capture.py.)
 
@@ -101,6 +103,18 @@ def local_path(path):
     return (m.group(1).upper() + ":" + m.group(2) + path[len(drive):]) if m else path
 
 
+def course_root():
+    """The stand-in by the course's own name (config.COURSE_ROOT, a junction to it): what File
+    Explorer is opened on, so that its address bar shows the lesson's path and not this
+    machine's. No junction, or one that leads somewhere else, stops the run: a still with
+    the real path on it must never be made by accident."""
+    real = os.path.normcase(os.path.realpath(local_path(c.STANDIN)))
+    if not os.path.isdir(c.COURSE_ROOT) or os.path.normcase(os.path.realpath(c.COURSE_ROOT)) != real:
+        raise RuntimeError(f"{c.COURSE_ROOT} is not a junction to the stand-in. Make it once: "
+                           f"mklink /J {c.COURSE_ROOT} \"{local_path(c.STANDIN)}\"")
+    return c.COURSE_ROOT
+
+
 def listed(folder):
     """The folder's names in File Explorer's own order: folders first, each group sorted as
     Explorer sorts names (numbers by value). Hidden files are left out, as they are there."""
@@ -116,10 +130,67 @@ def listed(folder):
     return dirs + files
 
 
+NAV_FALLBACK = (372, 170, 32)      # at 1280x720: the pane's right edge, its top, and the status bar's height
+
+
+def pane_box(hwnd, size):
+    """Where the navigation pane is in the window's picture: (right edge, top, bottom), found
+    from the window itself (the rectangle of its tree control, among its child windows).
+    (0, top, bottom) when the window has no pane. When the tree cannot be found and the file
+    list cannot be found either, a fixed box, wide enough for the pane as Windows first shows it."""
+    import capture
+    found = {}
+    proto = ctypes.WINFUNCTYPE(ctypes.c_bool, wintypes.HWND, wintypes.LPARAM)
+
+    def each(h, _):
+        cls = ctypes.create_unicode_buffer(64)
+        user32.GetClassNameW(h, cls, 64)
+        if cls.value in ("SysTreeView32", "NamespaceTreeControl", "SHELLDLL_DefView") and user32.IsWindowVisible(h):
+            r = wintypes.RECT()
+            user32.GetWindowRect(h, ctypes.byref(r))
+            found.setdefault(cls.value, (r.left, r.top, r.right, r.bottom))
+        return True
+
+    user32.EnumChildWindows(hwnd, proto(each), 0)
+    w = wintypes.RECT()
+    user32.GetWindowRect(hwnd, ctypes.byref(w))
+    left, top, _r, _b = capture.insets(hwnd)
+    ox, oy = w.left + left, w.top + top
+    tree = found.get("SysTreeView32") or found.get("NamespaceTreeControl")
+    view = found.get("SHELLDLL_DefView")
+    if tree and tree[2] - tree[0] > 8:
+        return (tree[2] - ox, tree[1] - oy, tree[3] - oy)
+    if view:                                           # no tree: the list says where the pane would end
+        return (max(0, view[0] - ox) if view[0] - ox > 40 else 0, view[1] - oy, view[3] - oy)
+    return (NAV_FALLBACK[0], NAV_FALLBACK[1], size[1] - NAV_FALLBACK[2])
+
+
+def _settled(hwnd, size, settle, timeout, front=None):
+    """The window's picture once three looks in a row are the same."""
+    import capture
+    last, same, t1 = None, 0, time.time()
+    while time.time() - t1 < timeout:
+        if front and user32.GetForegroundWindow() == hwnd:
+            user32.SetForegroundWindow(front)          # in front, it draws a focus box round its first row
+        time.sleep(settle / 2)
+        img = capture.grab(hwnd)
+        data = img.resize((160, 90)).tobytes()
+        same = same + 1 if data == last else 0
+        last = data
+        if same >= 2:
+            if img.size != tuple(size):
+                raise RuntimeError(f"the window came out {img.size}, not {tuple(size)}")
+            return img
+    raise RuntimeError("the File Explorer window never stopped changing")
+
+
 def explorer_still(folder, size=(1280, 720), settle=4.0, timeout=30):
-    """A real File Explorer window on folder. -> image (the window as PrintWindow sees it,
-    without the invisible resize border). The window is this function's own from start to
-    WM_CLOSE: a File Explorer window the user already has open is never touched."""
+    """A real File Explorer window on folder. -> (image, how far the file list moved left).
+    The image is the window as PrintWindow sees it, without the invisible resize border and
+    WITHOUT its navigation pane (see pane_box): that pane lists the machine owner's own
+    folders, drives and accounts, and none of that belongs in a lesson. The window is this
+    function's own from start to WM_CLOSE: a File Explorer window the user already has open
+    is never touched, and neither is any setting of File Explorer."""
     import capture
     if not os.path.isdir(folder):
         raise RuntimeError(f"not a folder: {folder}")
@@ -142,18 +213,24 @@ def explorer_still(folder, size=(1280, 720), settle=4.0, timeout=30):
         user32.SetWindowPos(hwnd, 1, 40 - left, 40 - top, size[0] + left + right, size[1] + top + bottom, 0x0010)
         if front:
             user32.SetForegroundWindow(front)          # hand the keyboard back
-        last, same, t1 = None, 0, time.time()
-        while time.time() - t1 < timeout:              # wait until three looks in a row are the same picture
-            time.sleep(settle / 2)
-            img = capture.grab(hwnd)
-            data = img.resize((160, 90)).tobytes()
-            same = same + 1 if data == last else 0
-            last = data
-            if same >= 2:
-                if img.size != tuple(size):
-                    raise RuntimeError(f"the window came out {img.size}, not {tuple(size)}")
-                return img
-        raise RuntimeError("the File Explorer window never stopped changing")
+        img = _settled(hwnd, size, settle, timeout, front)
+        cut, p_top, p_bottom = pane_box(hwnd, size)
+        if cut <= 0:
+            return img, 0
+        # The pane is cut out and the file list moved left into its place. So that the list
+        # still fills the window, the window is made wider by the pane's width and looked at
+        # again: the rows between the toolbar and the status bar come from that wider look,
+        # everything else (title, tabs, address bar, toolbar, status bar) from the first.
+        wide = (size[0] + cut, size[1])
+        user32.SetWindowPos(hwnd, 1, 40 - left, 40 - top, wide[0] + left + right, wide[1] + top + bottom, 0x0010)
+        img2 = _settled(hwnd, wide, settle, timeout, front)
+        cut2, t2, b2 = pane_box(hwnd, wide)
+        if (cut2, t2, b2) != (cut, p_top, p_bottom):
+            raise RuntimeError(f"the navigation pane moved between two looks: {(cut, p_top, p_bottom)} then {(cut2, t2, b2)}")
+        edge = img.crop((0, p_top, 1, p_bottom))       # the window's own left border
+        img.paste(img2.crop((cut, p_top, cut + size[0], p_bottom)), (0, p_top))
+        img.paste(edge, (0, p_top))
+        return img, cut
     finally:
         if hwnd is not None and user32.IsWindow(hwnd):
             user32.PostMessageW(hwnd, WM_CLOSE, 0, 0)  # that window, and no other
@@ -172,7 +249,7 @@ def make_explorer(sb, name, spec, stills_dir):
     The rows are placed for the Details view at 1280x720, which is how File Explorer opens a
     plain folder on this machine; LOOK at the frame when you mark one."""
     rel, opts = spec[1], (spec[2] if len(spec) > 2 else {})
-    root = opts.get("root") or local_path(c.STANDIN)
+    root = opts.get("root") or course_root()
     folder = os.path.join(root, rel) if rel else root
     size = tuple(opts.get("size", (1280, 720)))
     made, renamed = [], []
@@ -200,7 +277,7 @@ def make_explorer(sb, name, spec, stills_dir):
                 else:
                     open(p, "w").close()
                 made.append(p)
-            img = explorer_still(folder, size=size)
+            img, cut = explorer_still(folder, size=size)
             names = listed(folder)
         finally:
             for p in reversed(made):
@@ -213,10 +290,10 @@ def make_explorer(sb, name, spec, stills_dir):
     shown = []
     for i, n in enumerate(names):
         if top + (i + 1) * pitch < size[1] - 34:
-            parts["row:" + n] = [392, top + i * pitch, 1144, top + (i + 1) * pitch]
+            parts["row:" + n] = [392 - cut, top + i * pitch, 1144 - cut, top + (i + 1) * pitch]
             shown.append(n)
     if shown:
-        parts["rows"] = [392, top, 1144, parts["row:" + shown[-1]][3]]
+        parts["rows"] = [392 - cut, top, 1144 - cut, parts["row:" + shown[-1]][3]]
     meta = {"kind": "explorer", "folder": folder, "parts": parts, "names": names,
             "without": list(opts.get("without", ()))}
     json.dump(meta, open(os.path.join(stills_dir, name + ".json"), "w", encoding="utf-8"), indent=1)

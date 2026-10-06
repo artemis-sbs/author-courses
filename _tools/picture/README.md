@@ -160,13 +160,21 @@ How these stay true, and where they do not:
   add-on (`course.picture-helper`) that exists ONLY in the throwaway VS Code profile; it
   reads the list from a file named by `PICTURE_DO`. It would show in the Extensions panel,
   so a still of that panel is filtered (`@installed Artemis`).
-- **File Explorer is this machine's own.** Its view, theme, navigation pane (the user's
-  own pinned folders are in the picture) and whether file name extensions are shown are
-  the user's settings and are not touched: the other state of a setting is a card. Its
-  address bar shows the stand-in's real folders (`... > Cosmos > data > missions`), not
-  `C:\Cosmos`. A drive that is only a name for `\\localhost\X$\...` is opened by its local
-  path, so the bar says a disk and not a network share. Row marks are placed for the
-  Details view at 1280x720: look at the frame.
+- **File Explorer is this machine's own, minus what is personal.** Its view, theme and
+  whether file name extensions are shown are the user's settings and are not touched:
+  the other state of a setting is a card. Two things keep the machine's owner out of the
+  picture. (1) The window is opened on `C:\Cosmos\...` (`config.COURSE_ROOT`), a directory
+  junction to the stand-in, so the address bar reads `This PC > Windows (C:) > Cosmos >
+  data > missions` as the page does. Make it once per machine: `mklink /J C:\Cosmos
+  "<the stand-in's local path>"`; capture stops if it is missing or leads elsewhere.
+  (Take it away with `rmdir C:\Cosmos`, never `rmdir /s`.) (2) The navigation pane, which
+  lists the owner's pinned folders, drives and cloud accounts, is cut out of every still:
+  `wincap.pane_box` finds the pane's right edge from the window's own tree control, the
+  window is looked at a second time made wider by that much, and the file list from the
+  wider look is laid over the pane. Title, tab, address bar, toolbar and status bar are
+  the first look's. If neither the tree nor the file list can be found, a fixed box is
+  cut (372 px of 1280). LOOK at every new Explorer still all the same. Row marks are
+  placed for the Details view at 1280x720: look at the frame.
 - **What a tool prints is not changed, except one thing:** the stand-in's real folder is
   written `C:\Cosmos`, as the page and the drawn prompt write it (`dir`'s "Volume in drive"
   line too). A session is read in code page 1252, so a long dash pasted from a word
