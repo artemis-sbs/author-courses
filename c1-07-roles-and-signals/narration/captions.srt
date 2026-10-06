@@ -1,0 +1,543 @@
+1
+00:00:00,000 --> 00:00:05,028
+Here's one word, and it shows up in two files, in eight places.
+
+2
+00:00:05,928 --> 00:00:08,969
+Until now, you've only ever written in one of these files.
+
+3
+00:00:09,869 --> 00:00:13,716
+So today you'll find out what the other one is doing with your words,
+
+4
+00:00:14,166 --> 00:00:16,791
+and you'll put two words of your own into both.
+
+5
+00:00:18,591 --> 00:00:20,853
+Your fact sheet says what the story is,
+
+6
+00:00:21,303 --> 00:00:24,977
+and this other file, story.mast, is what makes it happen.
+
+7
+00:00:25,877 --> 00:00:29,021
+And there are five lines in your fact sheet that lean on it.
+
+8
+00:00:30,821 --> 00:00:32,486
+Scan of derelict is a promise
+
+9
+00:00:32,936 --> 00:00:36,216
+that something in the game wears the word derelict.
+
+10
+00:00:37,116 --> 00:00:40,341
+That's called a role, which is really just a name tag.
+
+11
+00:00:42,141 --> 00:00:45,187
+Done when, signal derelict_found, is a promise too:
+
+12
+00:00:45,637 --> 00:00:50,527
+that the story will say derelict_found, out loud, at some moment.
+
+13
+00:00:51,427 --> 00:00:52,878
+And that's called a signal.
+
+14
+00:00:54,678 --> 00:00:56,924
+If the other file doesn't keep those promises,
+
+15
+00:00:57,374 --> 00:00:58,756
+the reading is never shown,
+
+16
+00:00:59,206 --> 00:01:00,993
+and the step never finishes.
+
+17
+00:01:02,793 --> 00:01:05,573
+So this is story.mast,
+
+18
+00:01:06,023 --> 00:01:08,028
+and you're not going to learn to read it today.
+
+19
+00:01:08,928 --> 00:01:10,231
+You only need three rules.
+
+20
+00:01:11,131 --> 00:01:14,766
+Change only what's between quote marks, or in a note.
+
+21
+00:01:15,666 --> 00:01:18,479
+Never delete a quote mark, and never add one.
+
+22
+00:01:19,379 --> 00:01:22,359
+And leave every comma right where it is.
+
+23
+00:01:24,159 --> 00:01:27,608
+One more thing: a note in this file starts with a hash,
+
+24
+00:01:28,058 --> 00:01:31,550
+whereas in your fact sheet it starts with two slashes.
+
+25
+00:01:33,349 --> 00:01:36,130
+Control, shift, F searches the whole folder.
+
+26
+00:01:37,030 --> 00:01:39,465
+I turn on match case, and match whole word,
+
+27
+00:01:39,915 --> 00:01:44,420
+so that I get the role itself, and not every word that happens to have it inside.
+
+28
+00:01:45,320 --> 00:01:46,895
+That gives me eight results.
+
+29
+00:01:48,695 --> 00:01:50,743
+Three of them are my Scan of lines.
+
+30
+00:01:51,643 --> 00:01:54,993
+The other five are in the story file,
+
+31
+00:01:55,443 --> 00:01:58,558
+and three of those start with a hash, so they're notes.
+
+32
+00:01:59,458 --> 00:02:02,730
+That leaves just two lines that do any work.
+
+33
+00:02:04,530 --> 00:02:07,284
+This first one puts the hulk in the game.
+
+34
+00:02:08,184 --> 00:02:10,477
+It has four pieces in quotes:
+
+35
+00:02:10,927 --> 00:02:13,122
+the name the crew sees, then a list,
+
+36
+00:02:13,572 --> 00:02:15,851
+then the model, and then how it behaves.
+
+37
+00:02:16,751 --> 00:02:18,893
+The list is the part that's ours.
+
+38
+00:02:19,793 --> 00:02:21,376
+Its first word is the side,
+
+39
+00:02:21,826 --> 00:02:23,921
+and every word after that is a role.
+
+40
+00:02:24,821 --> 00:02:27,541
+So the hulk is on our side, and it wears derelict,
+
+41
+00:02:27,991 --> 00:02:29,954
+which means that promise is kept.
+
+42
+00:02:31,754 --> 00:02:33,364
+And here's the word a second time,
+
+43
+00:02:33,814 --> 00:02:37,883
+in a line that asks: when Science scans something, does it wear derelict?
+
+44
+00:02:39,683 --> 00:02:41,327
+This search gives me four results.
+
+45
+00:02:42,227 --> 00:02:43,784
+One is in my fact sheet,
+
+46
+00:02:44,234 --> 00:02:45,695
+two are in a note,
+
+47
+00:02:46,145 --> 00:02:48,353
+and one is a working line.
+
+48
+00:02:50,153 --> 00:02:53,430
+That line has three pieces in quotes,
+
+49
+00:02:53,880 --> 00:02:56,397
+and only the last one is mine.
+
+50
+00:02:57,297 --> 00:03:01,013
+The first two, quest signal and signal name, are fixed:
+
+51
+00:03:01,463 --> 00:03:05,158
+touch either of them, and no quest hears anything.
+
+52
+00:03:06,058 --> 00:03:09,133
+The lines above it decide when the signal is said,
+
+53
+00:03:09,583 --> 00:03:12,569
+which is when a ship comes within two thousand of the hulk.
+
+54
+00:03:13,019 --> 00:03:14,561
+I don't need to read those.
+
+55
+00:03:16,361 --> 00:03:18,212
+The second signal is said down here,
+
+56
+00:03:18,662 --> 00:03:20,408
+straight under the question about the role.
+
+57
+00:03:22,208 --> 00:03:23,766
+And one more thing:
+
+58
+00:03:24,216 --> 00:03:25,985
+a signal is said once,
+
+59
+00:03:26,435 --> 00:03:29,742
+so a step that hasn't started yet has missed it.
+
+60
+00:03:31,542 --> 00:03:33,548
+In my story, this hulk is a ghost ship.
+
+61
+00:03:34,448 --> 00:03:37,843
+And I'm going to do this in the wrong order, on purpose.
+
+62
+00:03:38,743 --> 00:03:41,715
+First I point my reading at a role that nobody wears.
+
+63
+00:03:42,615 --> 00:03:44,305
+Lint has read both files,
+
+64
+00:03:44,755 --> 00:03:48,680
+and it tells me nothing in this mission wears a role called ghost_ship.
+
+65
+00:03:49,580 --> 00:03:52,177
+If I played it now, my reading would simply be gone.
+
+66
+00:03:53,977 --> 00:03:56,422
+So now I keep the promise, on line sixty-eight.
+
+67
+00:03:57,322 --> 00:03:58,972
+I click just before the closing quote,
+
+68
+00:03:59,422 --> 00:04:04,038
+and I type a comma, a space, and the word, and nothing else.
+
+69
+00:04:04,938 --> 00:04:07,998
+And it's clean, and the hulk wears two roles now.
+
+70
+00:04:09,798 --> 00:04:12,278
+There are four rules for a role, and they're on the page:
+
+71
+00:04:12,728 --> 00:04:14,627
+small letters and underscores,
+
+72
+00:04:15,077 --> 00:04:17,048
+the same spelling in both files,
+
+73
+00:04:17,498 --> 00:04:19,347
+one thing and not many,
+
+74
+00:04:19,797 --> 00:04:21,752
+and in a list your word goes last,
+
+75
+00:04:22,202 --> 00:04:25,178
+because the first word is the side.
+
+76
+00:04:26,978 --> 00:04:29,003
+Now the same again, with the signal.
+
+77
+00:04:29,903 --> 00:04:32,255
+My step now waits for ghost_ship_found.
+
+78
+00:04:33,155 --> 00:04:35,869
+And lint tells me that Find waits for that signal,
+
+79
+00:04:36,319 --> 00:04:37,982
+and nothing in the mission sends it,
+
+80
+00:04:38,432 --> 00:04:39,768
+so the wait never ends.
+
+81
+00:04:41,568 --> 00:04:43,326
+So I search for the old word,
+
+82
+00:04:43,776 --> 00:04:47,503
+and there are three left, all in the story file.
+
+83
+00:04:48,403 --> 00:04:50,033
+I do the working line first,
+
+84
+00:04:50,483 --> 00:04:52,736
+changing the last word in quotes, and only that one.
+
+85
+00:04:53,636 --> 00:04:55,235
+And now it's clean.
+
+86
+00:04:57,035 --> 00:05:00,518
+Then I change the note, so that the note stays true,
+
+87
+00:05:00,968 --> 00:05:03,499
+because lint doesn't read a note, and neither does the game.
+
+88
+00:05:05,299 --> 00:05:07,248
+And now I count.
+
+89
+00:05:08,148 --> 00:05:09,497
+The old word gives me nothing,
+
+90
+00:05:09,947 --> 00:05:11,906
+and the new word gives me four.
+
+91
+00:05:13,706 --> 00:05:17,711
+Remember that counting, because in two minutes you'll see why it matters.
+
+92
+00:05:19,511 --> 00:05:22,700
+By now I know every word these two files share,
+
+93
+00:05:23,150 --> 00:05:25,410
+so I write them down where I'll see them.
+
+94
+00:05:26,310 --> 00:05:28,221
+That's two roles and two signals,
+
+95
+00:05:28,671 --> 00:05:30,628
+and where each one comes from.
+
+96
+00:05:31,528 --> 00:05:33,474
+Every line starts with two slashes,
+
+97
+00:05:33,924 --> 00:05:36,755
+so the game skips them, and this list is just for me.
+
+98
+00:05:38,555 --> 00:05:40,374
+When there are thirty of these words,
+
+99
+00:05:40,824 --> 00:05:44,154
+it's how I'll spell the thirty-first the same way twice.
+
+100
+00:05:45,954 --> 00:05:47,070
+Now for the honest part.
+
+101
+00:05:47,970 --> 00:05:51,396
+First, a signal: I misspell it on the working line,
+
+102
+00:05:51,846 --> 00:05:55,047
+and lint catches it, even though my fact sheet is fine.
+
+103
+00:05:55,947 --> 00:05:57,952
+That's because for a signal,
+
+104
+00:05:58,402 --> 00:06:00,799
+lint looks for the line of the story that sends it.
+
+105
+00:06:02,599 --> 00:06:05,624
+Now a role: I misspell derelict in the hulk's list,
+
+106
+00:06:06,074 --> 00:06:07,989
+and lint says clean.
+
+107
+00:06:08,889 --> 00:06:11,279
+And here's why that is.
+
+108
+00:06:12,179 --> 00:06:17,535
+For a role, lint only looks for the word between quote marks, somewhere in this file,
+
+109
+00:06:17,985 --> 00:06:21,829
+and it found derelict down here, on line one hundred and three.
+
+110
+00:06:22,729 --> 00:06:25,698
+It doesn't ask whether the word is in a list of roles.
+
+111
+00:06:27,498 --> 00:06:29,906
+In the game, the hulk has lost two of its readings,
+
+112
+00:06:30,356 --> 00:06:32,718
+and the second step never finishes,
+
+113
+00:06:33,168 --> 00:06:35,087
+and nothing says so.
+
+114
+00:06:36,887 --> 00:06:38,513
+The count does catch this one:
+
+115
+00:06:38,964 --> 00:06:40,890
+I get eight, and I wanted nine.
+
+116
+00:06:41,790 --> 00:06:43,155
+The page lists the rest,
+
+117
+00:06:43,605 --> 00:06:47,825
+and the two to learn are that your role goes last in the list,
+
+118
+00:06:48,275 --> 00:06:50,654
+and that it goes after a comma.
+
+119
+00:06:52,454 --> 00:06:55,174
+The crew never sees a role or a signal.
+
+120
+00:06:55,624 --> 00:06:58,012
+They only see what those words connect.
+
+121
+00:06:58,912 --> 00:07:00,726
+So, Find the Derelict is done,
+
+122
+00:07:01,176 --> 00:07:02,227
+and that was my signal:
+
+123
+00:07:02,677 --> 00:07:06,709
+the story said ghost_ship_found, and my step was waiting for it.
+
+124
+00:07:07,609 --> 00:07:10,086
+The sensors scan the hulk by themselves,
+
+125
+00:07:10,536 --> 00:07:12,534
+so the second step finishes too.
+
+126
+00:07:14,334 --> 00:07:16,789
+And on Science there are three tabs,
+
+127
+00:07:17,239 --> 00:07:20,187
+and intel is the one that's hanging on my role.
+
+128
+00:07:21,087 --> 00:07:22,836
+And both logs are empty.
+
+129
+00:07:24,636 --> 00:07:26,502
+Now it's time for your own words.
+
+130
+00:07:27,402 --> 00:07:28,943
+Give the station a role,
+
+131
+00:07:29,393 --> 00:07:32,057
+and a reading on its mat tab.
+
+132
+00:07:32,957 --> 00:07:35,692
+Then rename the second signal, in both files,
+
+133
+00:07:36,142 --> 00:07:37,991
+and add both to your list.
+
+134
+00:07:39,791 --> 00:07:41,508
+Next time it's your first quest:
+
+135
+00:07:41,958 --> 00:07:43,570
+a line that names a role,
+
+136
+00:07:44,020 --> 00:07:46,694
+and the game does the watching itself.

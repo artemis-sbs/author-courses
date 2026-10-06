@@ -1,0 +1,97 @@
+s01_cold_open_0	Here's a quest, and here's a boss.
+s01_cold_open_1	Here's a boarding party, and a ruin.
+s01_cold_open_2	A writer typed every one of these, in plain words, in a text file.
+s01_cold_open_3	And by the end of this course, that writer is you.
+s01_cold_open_4	Today, you type nothing.
+s01_cold_open_5	You play, and you watch,
+s01_cold_open_6	and I show you what you're going to build.
+s02_what_the_game_is_0	Artemis Cosmos is a starship bridge.
+s02_what_the_game_is_1	One copy of the game runs the story, and we call that the server.
+s02_what_the_game_is_2	Every other screen is one station:
+s02_what_the_game_is_3	Helm steers, Weapons fires, Science scans,
+s02_what_the_game_is_4	Comms talks, and Engineering keeps her running.
+s02_what_the_game_is_5	What the crew is asked to do, who calls them, and what they find:
+s02_what_the_game_is_6	all of that is a mission.
+s02_what_the_game_is_7	And a mission is what you'll write.
+s03_stop_1_start_it_and_choose_s_0	Start the game with me.
+s03_stop_1_start_it_and_choose_s_1	The first screen has the game's name,
+s03_stop_1_start_it_and_choose_s_2	and three buttons at the bottom left: start server, start client, and options.
+s03_stop_1_start_it_and_choose_s_3	One computer runs the game for everybody, so press start server.
+s03_stop_1_start_it_and_choose_s_4	Now you choose twice.
+s03_stop_1_start_it_and_choose_s_5	First, you choose a mission, and that's Legendary Missions.
+s03_stop_1_start_it_and_choose_s_6	Press initialize mission, and wait a few seconds.
+s03_stop_1_start_it_and_choose_s_7	Then you choose a map inside it, and that's Siege.
+s03_stop_1_start_it_and_choose_s_8	Remember those two lists,
+s03_stop_1_start_it_and_choose_s_9	because in two lectures' time, there's a line in the first one that you made.
+s03_stop_1_start_it_and_choose_s_10	Now press start mission.
+s03_stop_1_start_it_and_choose_s_11	The server only runs the game,
+s03_stop_1_start_it_and_choose_s_12	so to fly, you start the game a second time, and press start client.
+s03_stop_1_start_it_and_choose_s_13	Connect to your own server, pick Helm, and press ready.
+s04_stop_2_the_quest_0	Here's what the game has asked us to do.
+s04_stop_2_the_quest_1	It's one job, in three parts:
+s04_stop_2_the_quest_2	break the siege, don't lose every starbase, and mind the clock.
+s04_stop_2_the_quest_3	Now look at this, because this is the file.
+s04_stop_2_the_quest_4	The square brackets hold the name on the screen,
+s04_stop_2_the_quest_5	and the last line is what the crew is told.
+s04_stop_2_the_quest_6	Required, true, means you can't win without it.
+s04_stop_2_the_quest_7	Nobody programmed this quest. Somebody typed it.
+s04_stop_2_the_quest_8	And Class One ends with you having typed a chain of these.
+s05_stop_3_the_boss_0	Now the same map, with one change.
+s05_stop_3_the_boss_1	On the start screen, the options panel has a line called Boss,
+s05_stop_3_the_boss_2	and I choose the Warlord.
+s05_stop_3_the_boss_3	A boss doesn't come at the start.
+s05_stop_3_the_boss_4	She waits until we've destroyed three raiders in every four.
+s05_stop_3_the_boss_5	Then she arrives, and a new job joins the list.
+s05_stop_3_the_boss_6	Now here's her file.
+s05_stop_3_the_boss_7	Twenty-five percent means a quarter are left.
+s05_stop_3_the_boss_8	Then two fleets, and her name and her hull.
+s05_stop_3_the_boss_9	In Class Two, you copy this file, change the words,
+s05_stop_3_the_boss_10	and your own boss is in that list.
+s06_stop_4_the_boarding_party_0	This one, you can't play today.
+s06_stop_4_the_boarding_party_1	It isn't in the game's menus, so just watch.
+s06_stop_4_the_boarding_party_2	Some of the crew leave the ship,
+s06_stop_4_the_boarding_party_3	and each console becomes a handheld.
+s06_stop_4_the_boarding_party_4	There's a line of story, and the ways out, as buttons.
+s06_stop_4_the_boarding_party_5	Now think of two of them together.
+s06_stop_4_the_boarding_party_6	They're in the same room, with different choices:
+s06_stop_4_the_boarding_party_7	the surgeon is offered what the engineer isn't.
+s06_stop_4_the_boarding_party_8	It's a story told in rooms, and every reader has their own copy.
+s06_stop_4_the_boarding_party_9	And that's Class Three.
+s07_stop_5_the_ruin_0	And then there's this.
+s07_stop_5_the_ruin_1	It's a built place, and it's old, with rooms.
+s07_stop_5_the_ruin_2	The writer didn't draw it.
+s07_stop_5_the_ruin_3	The writer wrote, a room, this big, here,
+s07_stop_5_the_ruin_4	and the game put up the walls.
+s07_stop_5_the_ruin_5	A quest leads the ship through it,
+s07_stop_5_the_ruin_6	and a place speaks.
+s07_stop_5_the_ruin_7	And for ten seconds, the story takes the main screen.
+s07_stop_5_the_ruin_8	And that's Class Four.
+s08_stop_6_a_mission_is_three_th_0	So what is a mission?
+s08_stop_6_a_mission_is_three_th_1	It's a folder, with seven files,
+s08_stop_6_a_mission_is_three_th_2	and five of them are made for you.
+s08_stop_6_a_mission_is_three_th_3	The two that matter are the fact sheet, and the story file.
+s08_stop_6_a_mission_is_three_th_4	The fact sheet is every word the crew reads.
+s08_stop_6_a_mission_is_three_th_5	Here's one quest: its name,
+s08_stop_6_a_mission_is_three_th_6	its facts between the two rows of hyphens,
+s08_stop_6_a_mission_is_three_th_7	and what the crew is told.
+s08_stop_6_a_mission_is_three_th_8	Done when, reach derelict five hundred.
+s08_stop_6_a_mission_is_three_th_9	It means just what it says.
+s08_stop_6_a_mission_is_three_th_10	The story file is short, and it comes ready-made.
+s08_stop_6_a_mission_is_three_th_11	Now and then, you paste a few lines into it from a card, like this one.
+s08_stop_6_a_mission_is_three_th_12	It says: when the step starts, wait twenty seconds,
+s08_stop_6_a_mission_is_three_th_13	bring in a tug, and tell the quests.
+s08_stop_6_a_mission_is_three_th_14	You'll be able to read this by Lecture Eleven.
+s08_stop_6_a_mission_is_three_th_15	And you'll never write one from a blank page.
+s09_stop_7_the_six_classes_0	There are six classes.
+s09_stop_7_the_six_classes_1	One is your desk, and a story told in quests.
+s09_stop_7_the_six_classes_2	Two is people who talk, and a boss of your own.
+s09_stop_7_the_six_classes_3	Then come three that you can take in any order:
+s09_stop_7_the_six_classes_4	three is boarding parties, four is ruins,
+s09_stop_7_the_six_classes_5	and five is a universe of your own.
+s09_stop_7_the_six_classes_6	And six is twenty evenings of play in that universe.
+s09_stop_7_the_six_classes_7	Some of the later lectures are still being made, and the page says which.
+s10_your_turn_0	So play ten minutes of Siege.
+s10_your_turn_1	Write down three things that happened,
+s10_your_turn_2	and who, or what, caused each one.
+s10_your_turn_3	And keep the page,
+s10_your_turn_4	because next time, we find where all of this lives on your computer.

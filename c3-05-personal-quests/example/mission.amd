@@ -1,0 +1,193 @@
+// Every piece of authored CONTENT in this mission lives in this one file. story.mast holds
+// only the logic that reacts to it.
+//
+// The shape is a table of contents: one `#` root, a `##` section per loader, and `###` /
+// `####` records inside. story.mast parses this once and hands each section to its loader.
+//
+// A record is `### [Display Name](key)`, an optional `---` fenced block of fields, then
+// body prose. Comments are `//` - note that .mast uses `#` instead.
+
+# [Sample Mission](sample_mission)
+
+
+// ---- Quests. Nested records are steps of the arc above them, addressed `arc/step`.
+## [Quests](quests)
+
+### [First Contact](first_contact)
+---
+Arc
+Scope: shared
+Starts when: at once
+---
+A derelict has drifted into the sector. Find out what happened to it.
+
+#### [Find the Derelict](find)
+---
+Scope: shared
+Starts when: at once
+Done when: signal derelict_found
+Then: reveal first_contact/study
+---
+Fly out and locate the drifting hulk.
+
+#### [Study the Derelict](study)
+---
+Scope: shared
+Starts when: revealed
+Done when: signal derelict_scanned
+---
+Science should take a full scan of the hull.
+
+### [Close Inspection](approach)
+---
+Scope: shared
+Starts when: at once
+Objective: Close to within 500 of the hulk
+Done when: reach derelict 500
+Then: signal board_hulk
+Reward: 100 credits
+---
+The hulk is not answering hails. Bring the ship in close and take a look.
+
+### [Account for the Crew](account)
+---
+Scope: shared
+Starts when: at once
+Objective: Find out who was aboard the hulk
+Done when: signal names_known
+Reward: 150 credits
+---
+Somebody crewed that ship. Command wants names.
+
+
+// ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
+// it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
+// several readings picked at random - so a second scan does not read identically.
+## [Scans](scans)
+
+### [Derelict Hull](derelict_scan)
+---
+Scan of: derelict
+Tab: scan
+---
+% The hull is cold. Whatever happened here happened a long time ago.
+% Hull plating is intact but every port is dark. No power anywhere aboard.
+
+### [Derelict Materials](derelict_mat)
+---
+Scan of: derelict
+Tab: mat
+---
+% Scoring along the plating matches no weapon in use in this sector.
+
+
+// ---- The crew. Each record is the person at one console - on the bridge, and aboard
+// the hulk. `Names: locked` makes them YOUR people: a player's own saved name is not used.
+// `Skills:` says how good each one is: a word, a number, a comma. A job with no number
+// counts as 2. story.mast reads these lines with one line of its own.
+## [The Watch](watch)
+---
+crew
+Ship: Artemis
+Names: locked
+---
+The people aboard for this story.
+
+### [Chief Okoro](okoro)
+---
+Console: engineering
+Face: terran_female
+Roles: engineering
+Skills: engineering 4, science 1
+---
+
+### [Dr Hale](hale)
+---
+Console: science
+Face: terran_male
+Roles: medical
+Skills: medical 4, science 3
+---
+
+
+// ---- Where they go. Each record is one room: what the party finds, then the ways out.
+## [Scenes](boarding)
+
+### [The Airlock](airlock)
+% The outer door was never sealed. Frost on the inside of the glass, and a row of suits still on their hooks.
+
+- [Read the name tags on the suits](suits) if medical ; learn suits, signal names_read
+- [Go aft, toward the reactor](reactor)
+- [Go forward, to the bridge](bridge)
+- [Return to the ship]()
+
+### [Six Suits](suits)
+% Six suits, six names, and every one of them is here. Nobody left this ship through the airlock.
+
+- [Step back](airlock)
+
+### [The Reactor Room](reactor)
+% Cold. The core was shut down by hand, in the right order, by someone who had time.
+
+- [Read the shutdown record](shutdown) if engineering ; learn shutdown, signal core_read
+- [Try to wake the core](core_wakes) ; check engineering 9 else core_dead, learn lockout
+- [Go back to the airlock](airlock)
+- [Return to the ship]()
+
+### [The Shutdown Record](shutdown)
+% Shut down from this room, and then the restart key was taken out and carried away. Whoever did it did not mean for her to wake up.
+
+- [Step back](reactor)
+
+### [The Core Turns Over](core_wakes)
+% The board lights for four seconds. Long enough to read one line: MANUAL LOCKOUT, CAPTAIN'S KEY.
+
+- [Step back](reactor)
+
+### [The Board Stays Dark](core_dead)
+% Nothing. Not a flicker. Whatever you tried, the core did not notice.
+
+- [Step back](reactor)
+
+### [The Bridge](bridge)
+%{learned < 2} Every station is dark but one. The log is open on the captain's chair, locked behind a question you cannot answer yet.
+%{learned >= 2} Every station is dark but one. The log is open on the captain's chair, and now you know what it is going to ask.
+
+- [Answer the log](last_entry) if learned >= 2
+- [Pull the sensor record](sensor_record) if skill science >= 3 ; learn sensors
+- [Go back to the airlock](airlock)
+- [Return to the ship]()
+
+### [The Sensor Record](sensor_record)
+% One contact, closing, eleven days before the core went cold. It never arrived. It is still out there.
+
+- [Step back](bridge)
+
+### [The Last Entry](last_entry)
+% Six aboard. Core cold. Key over the side. The last entry is one word: QUARANTINE.
+
+- [Return to the ship]()
+
+
+// ---- Side stories. One quest for one person: `For:` names a job from the crew roster.
+// story.mast hands each story to that person when they beam down.
+## [Side Stories](side_stories)
+
+### [Six Names](six_names)
+---
+For: medical
+Starts when: at once
+Objective: Find out whose suits are hanging in the airlock
+Done when: signal names_read
+Then: signal names_known
+---
+Six suits on their hooks, and nobody in them. Somebody should read the tags.
+
+### [A Cold Core](cold_core)
+---
+For: engineering
+Starts when: at once
+Objective: Find out how the core was stopped
+Done when: signal core_read
+---
+A reactor does not shut itself down in the right order. Find out who did.

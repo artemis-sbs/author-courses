@@ -1,0 +1,68 @@
+s01_cold_open_0	Last time the Corsair Queen was the Warlord with a new name.
+s01_cold_open_1	She flew a Kralien dreadnought, with Kralien escorts.
+s01_cold_open_2	This is the same file after today.
+s01_cold_open_3	She arrives when I say, in the ships I chose, with the fleets I chose. Six lines.
+s02_the_six_lines_0	Here is where we left her.
+s02_the_six_lines_1	Everything today is between Boss and the closing fence.
+s02_the_six_lines_2	Trigger and Low: when.
+s02_the_six_lines_3	Flies and Fleets: what comes with her.
+s02_the_six_lines_4	Difficulty: how big.
+s02_the_six_lines_5	Named: her own ships.
+s02_the_six_lines_6	We will change them one at a time, and play after each.
+s03_the_test_setting_0	First, make her easy to test.
+s03_the_test_setting_1	Low is the share of raiders still flying when she arrives.
+s03_the_test_setting_2	One hundred percent means all of them, so she arrives at once.
+s03_the_test_setting_3	Four seconds in, and there she is.
+s03_the_test_setting_4	We will put a real number back at the end.
+s04_trigger_0	Trigger has two values.
+s04_trigger_1	Enemies low: one arrival, when the raiders thin out.
+s04_trigger_2	Continuous: no arrival at all, just a new wave every so many seconds, all game.
+s04_trigger_3	They are different kinds of boss, and a continuous boss ignores half of this file: no named ship, no objective, no Low.
+s04_trigger_4	The page has a table.
+s04_trigger_5	We stay with enemies low.
+s04_trigger_6	One warning: if you misspell this word, the boss never comes, and nothing tells you.
+s05_low_0	Low is a share of the largest number of raiders the game has seen.
+s05_low_1	With twenty raiders, twenty-five percent is five left.
+s05_low_2	Forty percent is eight.
+s05_low_3	Always type the percent sign.
+s05_low_4	Without it, forty means forty times the raiders, and she is there at the start.
+s05_low_5	And the game looks every four seconds, so she is never exactly on the kill.
+s06_fleets_0	Fleets is how many escort fleets come with her.
+s06_fleets_1	A whole number, as a digit.
+s06_fleets_2	Zero, or no line at all, and she comes alone.
+s06_fleets_3	How many ships are in a fleet is not on this line.
+s06_fleets_4	That is the next two.
+s07_flies_0	Flies is who flies the fleets.
+s07_flies_1	Six races can: Kralien, Torgoth, Arvonian, Skaraan, Ximni, Pirate.
+s07_flies_2	One race, and every fleet is that race.
+s07_flies_3	Or a mix, with a percent on each and a comma between.
+s08_difficulty_0	The crew picks the game's difficulty, one to eleven.
+s08_difficulty_1	Plus two means two levels above whatever they picked.
+s08_difficulty_2	A bare number means that level, always.
+s08_difficulty_3	The level sets the size of each fleet.
+s08_difficulty_4	At level seven a pirate fleet is one to three ships.
+s08_difficulty_5	A Kralien fleet is four to six.
+s08_difficulty_6	At eleven, everything is six.
+s08_difficulty_7	Difficulty does not touch her named ships.
+s09_named_0	Named is her own ships.
+s09_named_1	Name, then ship key.
+s09_named_2	You know the first rule: the name is one word.
+s09_named_3	The key comes from this table, typed exactly, lowercase with underscores.
+s09_named_4	A second ship goes after a comma.
+s09_named_5	A corsair queen in a pirate brigantine, and her second in a strongbow.
+s10_check_it_and_what_lint_canno_0	Lint first. Clean.
+s10_check_it_and_what_lint_canno_1	Lint reads the shape of a line.
+s10_check_it_and_what_lint_canno_2	Misspell the label, and it tells you.
+s10_check_it_and_what_lint_canno_3	But it does not check what comes after the colon. Pirates, plural.
+s10_check_it_and_what_lint_canno_4	Lint says clean.
+s10_check_it_and_what_lint_canno_5	And in the game, the Queen arrives with no fleets at all, and nothing is written anywhere.
+s10_check_it_and_what_lint_canno_6	So after lint, play it.
+s10_check_it_and_what_lint_canno_7	The page has the whole list of what lint cannot see.
+s10_check_it_and_what_lint_canno_8	Two of them stop the game on an error page: a word where Low wants a number, and a word after the plus sign on Difficulty.
+s11_the_real_arrival_0	Testing is over.
+s11_the_real_arrival_1	Forty percent: the crew is winning, and the siege is not over.
+s11_the_real_arrival_2	And I bring the note up to date, because in a year I will not remember what plus two meant.
+s12_your_turn_0	Now your own boss.
+s12_your_turn_1	Give it a race that fits its story, its own ships, and an arrival you chose on purpose.
+s12_your_turn_2	Then make a wave boss in a second file.
+s12_your_turn_3	Next time: the objective.

@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:05,217
+Last time the Corsair Queen was the Warlord with a new name.
+
+2
+00:00:05,667 --> 00:00:09,146
+She flew a Kralien dreadnought, with Kralien escorts.
+
+3
+00:00:09,596 --> 00:00:12,639
+This is the same file after today.
+
+4
+00:00:13,089 --> 00:00:20,480
+She arrives when I say, in the ships I chose, with the fleets I chose. Six lines.
+
+5
+00:00:21,680 --> 00:00:24,289
+Here is where we left her.
+
+6
+00:00:24,739 --> 00:00:28,652
+Everything today is between Boss and the closing fence.
+
+7
+00:00:29,102 --> 00:00:30,841
+Trigger and Low: when.
+
+8
+00:00:31,291 --> 00:00:34,335
+Flies and Fleets: what comes with her.
+
+9
+00:00:34,785 --> 00:00:36,089
+Difficulty: how big.
+
+10
+00:00:36,539 --> 00:00:38,278
+Named: her own ships.
+
+11
+00:00:38,728 --> 00:00:43,946
+We will change them one at a time, and play after each.
+
+12
+00:00:45,146 --> 00:00:47,754
+First, make her easy to test.
+
+13
+00:00:48,204 --> 00:00:52,987
+Low is the share of raiders still flying when she arrives.
+
+14
+00:00:53,437 --> 00:00:58,654
+One hundred percent means all of them, so she arrives at once.
+
+15
+00:00:59,104 --> 00:01:02,148
+Four seconds in, and there she is.
+
+16
+00:01:02,598 --> 00:01:06,946
+We will put a real number back at the end.
+
+17
+00:01:08,146 --> 00:01:09,885
+Trigger has two values.
+
+18
+00:01:10,335 --> 00:01:14,248
+Enemies low: one arrival, when the raiders thin out.
+
+19
+00:01:14,698 --> 00:01:21,220
+Continuous: no arrival at all, just a new wave every so many seconds, all game.
+
+20
+00:01:21,670 --> 00:01:31,235
+They are different kinds of boss, and a continuous boss ignores half of this file: no named ship, no objective, no Low.
+
+21
+00:01:31,685 --> 00:01:33,859
+The page has a table.
+
+22
+00:01:34,309 --> 00:01:36,483
+We stay with enemies low.
+
+23
+00:01:36,933 --> 00:01:43,454
+One warning: if you misspell this word, the boss never comes, and nothing tells you.
+
+24
+00:01:44,654 --> 00:01:50,741
+Low is a share of the largest number of raiders the game has seen.
+
+25
+00:01:51,191 --> 00:01:54,670
+With twenty raiders, twenty-five percent is five left.
+
+26
+00:01:55,120 --> 00:01:56,859
+Forty percent is eight.
+
+27
+00:01:57,309 --> 00:01:59,483
+Always type the percent sign.
+
+28
+00:01:59,933 --> 00:02:06,454
+Without it, forty means forty times the raiders, and she is there at the start.
+
+29
+00:02:06,904 --> 00:02:13,426
+And the game looks every four seconds, so she is never exactly on the kill.
+
+30
+00:02:14,626 --> 00:02:18,539
+Fleets is how many escort fleets come with her.
+
+31
+00:02:18,989 --> 00:02:21,598
+A whole number, as a digit.
+
+32
+00:02:22,048 --> 00:02:26,396
+Zero, or no line at all, and she comes alone.
+
+33
+00:02:26,846 --> 00:02:32,063
+How many ships are in a fleet is not on this line.
+
+34
+00:02:32,513 --> 00:02:34,687
+That is the next two.
+
+35
+00:02:35,887 --> 00:02:38,496
+Flies is who flies the fleets.
+
+36
+00:02:38,946 --> 00:02:42,859
+Six races can: Kralien, Torgoth, Arvonian, Skaraan, Ximni, Pirate.
+
+37
+00:02:43,309 --> 00:02:46,787
+One race, and every fleet is that race.
+
+38
+00:02:47,237 --> 00:02:52,454
+Or a mix, with a percent on each and a comma between.
+
+39
+00:02:53,654 --> 00:02:57,567
+The crew picks the game's difficulty, one to eleven.
+
+40
+00:02:58,017 --> 00:03:01,930
+Plus two means two levels above whatever they picked.
+
+41
+00:03:02,380 --> 00:03:05,424
+A bare number means that level, always.
+
+42
+00:03:05,874 --> 00:03:09,352
+The level sets the size of each fleet.
+
+43
+00:03:09,802 --> 00:03:14,585
+At level seven a pirate fleet is one to three ships.
+
+44
+00:03:15,035 --> 00:03:18,078
+A Kralien fleet is four to six.
+
+45
+00:03:18,528 --> 00:03:20,702
+At eleven, everything is six.
+
+46
+00:03:21,152 --> 00:03:24,196
+Difficulty does not touch her named ships.
+
+47
+00:03:25,396 --> 00:03:27,570
+Named is her own ships.
+
+48
+00:03:28,020 --> 00:03:29,759
+Name, then ship key.
+
+49
+00:03:30,209 --> 00:03:34,557
+You know the first rule: the name is one word.
+
+50
+00:03:35,007 --> 00:03:39,789
+The key comes from this table, typed exactly, lowercase with underscores.
+
+51
+00:03:40,239 --> 00:03:43,283
+A second ship goes after a comma.
+
+52
+00:03:43,733 --> 00:03:49,385
+A corsair queen in a pirate brigantine, and her second in a strongbow.
+
+53
+00:03:50,585 --> 00:03:51,889
+Lint first. Clean.
+
+54
+00:03:52,339 --> 00:03:55,383
+Lint reads the shape of a line.
+
+55
+00:03:55,833 --> 00:03:58,876
+Misspell the label, and it tells you.
+
+56
+00:03:59,326 --> 00:04:04,543
+But it does not check what comes after the colon. Pirates, plural.
+
+57
+00:04:04,993 --> 00:04:06,298
+Lint says clean.
+
+58
+00:04:06,748 --> 00:04:14,139
+And in the game, the Queen arrives with no fleets at all, and nothing is written anywhere.
+
+59
+00:04:14,589 --> 00:04:16,763
+So after lint, play it.
+
+60
+00:04:17,213 --> 00:04:21,996
+The page has the whole list of what lint cannot see.
+
+61
+00:04:22,446 --> 00:04:33,750
+Two of them stop the game on an error page: a word where Low wants a number, and a word after the plus sign on Difficulty.
+
+62
+00:04:34,950 --> 00:04:36,254
+Testing is over.
+
+63
+00:04:36,704 --> 00:04:41,922
+Forty percent: the crew is winning, and the siege is not over.
+
+64
+00:04:42,372 --> 00:04:51,067
+And I bring the note up to date, because in a year I will not remember what plus two meant.
+
+65
+00:04:52,267 --> 00:04:54,007
+Now your own boss.
+
+66
+00:04:54,457 --> 00:05:02,283
+Give it a race that fits its story, its own ships, and an arrival you chose on purpose.
+
+67
+00:05:02,733 --> 00:05:06,646
+Then make a wave boss in a second file.
+
+68
+00:05:07,096 --> 00:05:08,835
+Next time: the objective.

@@ -1,0 +1,185 @@
+// Every piece of authored CONTENT in this mission lives in this one file. story.mast holds
+// only the logic that reacts to it.
+//
+// The shape is a table of contents: one `#` root, a `##` section per loader, and `###` /
+// `####` records inside. story.mast parses this once and hands each section to its loader.
+//
+// A record is `### [Display Name](key)`, an optional `---` fenced block of fields, then
+// body prose. Comments are `//` - note that .mast uses `#` instead.
+
+# [The Quiet Lantern](sample_mission)
+
+// ---- Words this file shares with story.mast. Keep this list true.
+// ROLE    derelict          worn by Lantern Nine
+// ROLE    ghost_ship        worn by Lantern Nine
+// ROLE    lifeboat          worn by The Keeper's Skiff, a landmark in this file
+// ROLE    tug               worn by the Tender Osprey, once it arrives
+// SIGNAL  ghost_ship_found  said when a ship comes within 2000 of Lantern Nine
+// SIGNAL  derelict_scanned  said when Science scans anything that wears derelict
+// SIGNAL  tug_arrived       said twenty seconds after Wait for the Tender starts
+
+
+// ---- Quests. Nested records are steps of the arc above them, addressed `arc/step`.
+## [Quests](quests)
+
+### [The Dark Beacon](first_contact)
+---
+Arc
+Scope: shared
+Starts when: at once
+---
+Lantern Nine has marked the edge of Kessel Deep for forty years. Last night she went dark.
+
+#### [Find the Lantern](find)
+---
+Scope: shared
+Starts when: at once
+Done when: signal ghost_ship_found
+Then: reveal first_contact/study
+---
+Fly out to the edge of the Deep and find Lantern Nine.
+
+#### [Read the Lantern](study)
+---
+Scope: shared
+Starts when: revealed
+Done when: signal derelict_scanned
+---
+Science should take a full scan of the beacon.
+
+### [The Keeper](salvage)
+---
+Arc
+Scope: shared
+Starts when: at once
+Fails when: 10 minutes
+Win: The keeper is home, and Lantern Nine will burn again.
+Lose: The storm closed over the Deep with the keeper still out there.
+---
+A storm front is ten minutes out. One woman keeps Lantern Nine, and she is not answering. Find her and bring her in.
+
+#### [Come Alongside](approach)
+---
+Scope: shared
+Starts when: at once
+Objective: Close to within 500 of Lantern Nine
+Done when: reach derelict 500
+Reward: 100 credits
+Then: reveal salvage/boat
+Part of: salvage
+Required: true
+---
+The lantern is not answering hails. Bring the ship in close and take a look.
+
+#### [Find the Skiff](boat)
+---
+Scope: shared
+Starts when: revealed
+Objective: Get within 500 of the keeper's skiff
+Done when: reach lifeboat 500
+Reward: 100 credits
+Then: reveal salvage/tug
+Part of: salvage
+Required: true
+---
+The keeper's quarters are empty, and her work skiff is gone from its cradle. Find the skiff.
+
+#### [Wait for the Tender](tug)
+---
+Scope: shared
+Starts when: revealed
+Objective: Hold near the skiff until the tender arrives
+Done when: signal tug_arrived
+Reward: 50 credits
+Then: reveal salvage/home
+Part of: salvage
+Required: true
+---
+Marrow Station is sending a tender to take the skiff in tow. Stay with her until it gets here.
+
+#### [Bring Her Home](home)
+---
+Scope: shared
+Starts when: revealed
+Objective: Return to within 1000 of Marrow Station
+Done when: reach station 1000
+Reward: 200 credits
+Part of: salvage
+Required: true
+---
+The keeper is aboard and half frozen. Get her back to Marrow Station.
+
+#### [First on Scene](quick)
+---
+Scope: shared
+Starts when: at once
+Objective: Reach Lantern Nine inside two minutes
+Done when: reach derelict 500
+Fails when: 2 minutes
+Reward: 50 credits
+---
+Optional. Marrow Station pays a bonus for a fast approach.
+
+// ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
+// it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
+// several readings picked at random - so a second scan does not read identically.
+## [Scans](scans)
+
+### [Lantern Hull](derelict_scan)
+---
+Scan of: derelict
+Tab: scan
+---
+% The lamp housing is cold. Nothing has burned here since last night.
+% The tower is whole and every port is dark. The lamp did not fail. It was put out.
+
+### [Lantern Materials](derelict_mat)
+---
+Scan of: derelict
+Tab: mat
+---
+% Ice on the lee side, a hand thick. The storm has been here once already.
+
+### [Lantern Intel](derelict_intel)
+---
+Scan of: ghost_ship
+Tab: intel
+---
+% The keeper's last entry reads: lamp out by my own hand, gone to see what it was calling in.
+
+### [Lantern Life Signs](derelict_bio)
+---
+Scan of: derelict
+Tab: bio
+---
+% No life signs. One suit hook in the lock is empty.
+% No life signs. The stove is still warm.
+% One faint reading in the galley. It is a cat, and it is furious.
+
+### [Skiff Hull](lifeboat_scan)
+---
+Scan of: lifeboat
+Tab: scan
+---
+% A work skiff, cold and drifting. Her running lights are off and her tether is cut.
+
+### [Skiff Intel](lifeboat_intel)
+---
+Scan of: lifeboat
+Tab: intel
+---
+% One life sign aboard, slow and steady. She is asleep, or close to it.
+
+
+// ---- Places. Each record is one thing on the map. `Roles:` is the label quests and
+// scans point at, `Art:` is what it looks like, and `Loc:` is where it sits.
+## [Landmarks](landmarks)
+
+### [The Keeper's Skiff](lifeboat)
+---
+Kind: wreck
+Roles: lifeboat
+Art: wreck
+Loc: 6000, 0, 6000
+---
+The keeper's work skiff. She took it out alone, last night, with the lamp dark behind her.

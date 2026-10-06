@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:01,719
+That quest is mine.
+
+2
+00:00:02,619 --> 00:00:04,944
+Nine lines in a text file put it there.
+
+3
+00:00:05,844 --> 00:00:09,757
+And in the next few minutes, you'll write your own first quest,
+
+4
+00:00:10,207 --> 00:00:12,257
+and you won't write any code to do it.
+
+5
+00:00:14,057 --> 00:00:15,697
+This is your fact sheet.
+
+6
+00:00:16,597 --> 00:00:18,180
+Two hashes make a section,
+
+7
+00:00:18,630 --> 00:00:20,881
+and this section is Quests,
+
+8
+00:00:21,331 --> 00:00:25,281
+so everything under it is a quest, until the next section starts.
+
+9
+00:00:26,181 --> 00:00:31,071
+Right now it holds one story, First Contact, in two steps.
+
+10
+00:00:31,971 --> 00:00:33,281
+We're going to leave that alone,
+
+11
+00:00:33,731 --> 00:00:36,234
+and add one of our own underneath it.
+
+12
+00:00:38,034 --> 00:00:41,328
+I start with three hashes, which makes this a quest of its own.
+
+13
+00:00:42,228 --> 00:00:45,415
+Then a name the crew will read, and a key.
+
+14
+00:00:46,315 --> 00:00:47,572
+Then I open the fence.
+
+15
+00:00:49,372 --> 00:00:52,774
+Shared means it's one quest for the whole crew.
+
+16
+00:00:53,674 --> 00:00:57,948
+Starts when, at once, means it's live as soon as the game starts.
+
+17
+00:00:58,848 --> 00:01:01,557
+The objective is the order, in one sentence.
+
+18
+00:01:02,457 --> 00:01:05,026
+Done when is the one we'll come back to.
+
+19
+00:01:05,926 --> 00:01:08,876
+Then comes the reward, and I close the fence.
+
+20
+00:01:10,676 --> 00:01:12,472
+And last, one line of story,
+
+21
+00:01:12,922 --> 00:01:14,755
+which is the text the crew will read.
+
+22
+00:01:16,555 --> 00:01:18,836
+This is the line that matters most.
+
+23
+00:01:19,736 --> 00:01:24,203
+It's a verb, then a role, then a number, in that order.
+
+24
+00:01:26,003 --> 00:01:27,665
+Reach means get close,
+
+25
+00:01:28,115 --> 00:01:31,099
+and five hundred is how close.
+
+26
+00:01:31,999 --> 00:01:33,913
+And derelict is a role,
+
+27
+00:01:34,363 --> 00:01:35,399
+which you met last time.
+
+28
+00:01:36,299 --> 00:01:37,412
+Here's the hulk's list:
+
+29
+00:01:37,862 --> 00:01:40,676
+its side, and then the two roles it wears.
+
+30
+00:01:41,576 --> 00:01:44,884
+The promise is the same as it was for a reading:
+
+31
+00:01:45,334 --> 00:01:47,024
+something has to wear the word.
+
+32
+00:01:48,824 --> 00:01:50,523
+What's new here is the verb.
+
+33
+00:01:51,423 --> 00:01:53,503
+Last time, a step waited for a signal,
+
+34
+00:01:53,953 --> 00:01:56,096
+and this file had to say it.
+
+35
+00:01:56,996 --> 00:01:58,249
+But reach is built in,
+
+36
+00:01:58,699 --> 00:02:00,415
+so the game does the watching itself.
+
+37
+00:02:01,315 --> 00:02:03,752
+And that's why there's nothing to change in here.
+
+38
+00:02:05,552 --> 00:02:08,118
+Here are two slips that lint catches.
+
+39
+00:02:09,018 --> 00:02:12,423
+The word When, on its own, means when the quest starts,
+
+40
+00:02:12,873 --> 00:02:15,095
+so nothing ever finishes this quest,
+
+41
+00:02:15,545 --> 00:02:17,303
+and lint says exactly that.
+
+42
+00:02:18,203 --> 00:02:20,975
+Then there's a role spelled wrong:
+
+43
+00:02:21,425 --> 00:02:23,534
+nothing wears it, and lint says that too.
+
+44
+00:02:25,334 --> 00:02:27,607
+Now here's one it doesn't catch.
+
+45
+00:02:28,507 --> 00:02:32,985
+If I take out the line that says Starts when, at once,
+
+46
+00:02:33,435 --> 00:02:35,460
+lint still says clean,
+
+47
+00:02:35,910 --> 00:02:37,925
+but the quest is only on offer.
+
+48
+00:02:39,725 --> 00:02:41,290
+The page has a table of these,
+
+49
+00:02:41,740 --> 00:02:43,869
+and the ones to remember are these:
+
+50
+00:02:44,319 --> 00:02:47,477
+the number goes last, and nothing goes after it,
+
+51
+00:02:47,927 --> 00:02:49,600
+and count your hashes.
+
+52
+00:02:51,400 --> 00:02:54,372
+Now I put everything back the way it was, and run lint.
+
+53
+00:02:55,272 --> 00:02:58,622
+And it's clean, with no errors and no warnings.
+
+54
+00:03:00,422 --> 00:03:02,412
+Here's the Quest Log, and here's mine,
+
+55
+00:03:02,862 --> 00:03:05,524
+with its state, its reward, and my description.
+
+56
+00:03:06,424 --> 00:03:08,476
+So now we fly.
+
+57
+00:03:10,276 --> 00:03:12,713
+At two thousand, Find the Derelict is done.
+
+58
+00:03:13,613 --> 00:03:16,995
+But that's last lecture's signal, and not my quest,
+
+59
+00:03:17,445 --> 00:03:18,578
+so mine hasn't moved.
+
+60
+00:03:20,378 --> 00:03:22,097
+Then, inside five hundred,
+
+61
+00:03:22,547 --> 00:03:24,964
+it's done, and the crew is paid.
+
+62
+00:03:26,764 --> 00:03:30,284
+Now add a second quest, one that finishes on time,
+
+63
+00:03:30,734 --> 00:03:33,070
+with Done when, two minutes.
+
+64
+00:03:33,970 --> 00:03:36,069
+That's just a number and a unit.
+
+65
+00:03:37,869 --> 00:03:39,818
+There are five verbs built in,
+
+66
+00:03:40,268 --> 00:03:42,129
+and they're all on the page.
+
+67
+00:03:43,929 --> 00:03:45,800
+Next time we'll join quests together,
+
+68
+00:03:46,250 --> 00:03:47,860
+so that one leads to the next.

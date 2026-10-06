@@ -1,0 +1,267 @@
+1
+00:00:00,000 --> 00:00:01,739
+This is a ruin.
+
+2
+00:00:02,189 --> 00:00:07,407
+Three rooms, two tunnels, older than anyone who could have built it.
+
+3
+00:00:07,857 --> 00:00:13,509
+I did not model it and I did not place a single rock.
+
+4
+00:00:13,959 --> 00:00:17,437
+I wrote down where the empty space is.
+
+5
+00:00:17,887 --> 00:00:19,626
+Today you write yours.
+
+6
+00:00:20,826 --> 00:00:24,739
+A ruin is hollow, so you describe the hollow.
+
+7
+00:00:25,189 --> 00:00:29,537
+A chamber is a ball of open space: a room.
+
+8
+00:00:29,987 --> 00:00:35,639
+A passage is a tube of open space between two chambers: a tunnel.
+
+9
+00:00:36,089 --> 00:00:44,785
+A box is a block with flat sides: a built room, and you will add one yourself at the end.
+
+10
+00:00:45,235 --> 00:00:48,278
+Whatever you do not describe is wall.
+
+11
+00:00:49,478 --> 00:00:54,696
+A new section, and its key has to be the word relics.
+
+12
+00:00:55,146 --> 00:01:00,363
+Then the ruin: a name for people, a key for the file.
+
+13
+00:01:00,813 --> 00:01:02,117
+And one field.
+
+14
+00:01:02,567 --> 00:01:06,046
+Loc is where it stands: across, height, along.
+
+15
+00:01:06,496 --> 00:01:09,539
+The station is at zero, zero, zero.
+
+16
+00:01:09,989 --> 00:01:12,598
+The hulk is nine thousand along.
+
+17
+00:01:13,048 --> 00:01:17,396
+So this is past the hulk, on the same line.
+
+18
+00:01:17,846 --> 00:01:21,324
+The sentence underneath is a note to myself.
+
+19
+00:01:21,774 --> 00:01:23,948
+No player ever reads it.
+
+20
+00:01:25,148 --> 00:01:29,496
+Three hashes again, the same as the ruin. Not four.
+
+21
+00:01:29,946 --> 00:01:39,511
+A room is not written inside the ruin; it is written beside it, and this line says whose it is. Relic: hollow.
+
+22
+00:01:39,961 --> 00:01:42,135
+The key, not the name.
+
+23
+00:01:42,585 --> 00:01:44,324
+Then Chamber, four numbers.
+
+24
+00:01:44,774 --> 00:01:52,600
+The first three say where, measured from the ruin, so zero zero zero is the ruin's own spot.
+
+25
+00:01:53,050 --> 00:01:55,224
+The fourth is the radius.
+
+26
+00:01:55,674 --> 00:01:58,283
+Nine hundred, so eighteen hundred across.
+
+27
+00:01:58,733 --> 00:02:01,341
+My ship is about a hundred.
+
+28
+00:02:02,541 --> 00:02:06,889
+The Nave is three thousand to one side, and bigger.
+
+29
+00:02:07,339 --> 00:02:11,687
+And it has a passage: to mouth, radius three fifty.
+
+30
+00:02:12,137 --> 00:02:13,876
+That is the tunnel.
+
+31
+00:02:14,326 --> 00:02:17,370
+I write it once, on either room.
+
+32
+00:02:17,820 --> 00:02:24,776
+The Vault is twenty-eight hundred further along from the Nave, with a passage back to it.
+
+33
+00:02:25,226 --> 00:02:27,835
+So the ruin turns a corner.
+
+34
+00:02:28,285 --> 00:02:32,198
+Keep neighbours within about thirty-five hundred of each other.
+
+35
+00:02:33,398 --> 00:02:37,746
+With the file in front: Control Shift P, Relic Plan.
+
+36
+00:02:38,196 --> 00:02:44,283
+There it is, drawn from the file, and the game is not even running.
+
+37
+00:02:44,733 --> 00:02:46,472
+Top looks straight down.
+
+38
+00:02:46,922 --> 00:02:49,096
+Each square is a thousand.
+
+39
+00:02:49,546 --> 00:02:54,763
+Hover a room for its size; hover a tunnel for its length.
+
+40
+00:02:55,213 --> 00:02:59,126
+Now click the Vault and make it eight hundred.
+
+41
+00:02:59,576 --> 00:03:02,620
+Look at the file: one line changed.
+
+42
+00:03:03,070 --> 00:03:06,983
+The picture and the file are the same thing.
+
+43
+00:03:07,433 --> 00:03:09,607
+Undo, and it is back.
+
+44
+00:03:10,807 --> 00:03:13,850
+The file says what the ruin is.
+
+45
+00:03:14,300 --> 00:03:29,517
+And this line, which was in your mission from the day you made it, builds every ruin the file holds: the space, the rock around it, whatever is inside, and its name on the map.
+
+46
+00:03:29,967 --> 00:03:32,141
+You do not touch it.
+
+47
+00:03:32,591 --> 00:03:36,504
+No ruin in the file, and it does nothing.
+
+48
+00:03:37,704 --> 00:03:38,704
+Lint. Clean.
+
+49
+00:03:39,154 --> 00:03:45,241
+A passage to a room that does not exist: it tells me, by name.
+
+50
+00:03:45,691 --> 00:03:51,343
+Fix that one, because with it the game builds no ruin at all.
+
+51
+00:03:51,793 --> 00:03:54,837
+Now a fourth hash on the Vault.
+
+52
+00:03:55,287 --> 00:03:57,896
+The plan still shows three rooms.
+
+53
+00:03:58,346 --> 00:04:07,041
+Lint is not fooled: this room is nested under the one above it, and the game will not read it.
+
+54
+00:04:07,491 --> 00:04:11,404
+Three hashes on the ruin, three on every room.
+
+55
+00:04:11,854 --> 00:04:14,028
+One thing lint cannot see.
+
+56
+00:04:14,478 --> 00:04:21,435
+Take the Loc line away, and lint is clean, because it cannot know where you meant.
+
+57
+00:04:21,885 --> 00:04:26,233
+The ruin would be built on top of the station.
+
+58
+00:04:26,683 --> 00:04:27,987
+Keep the line.
+
+59
+00:04:29,187 --> 00:04:31,361
+Past the hulk: The Hollow.
+
+60
+00:04:31,811 --> 00:04:35,289
+That marker is the middle of the Mouth.
+
+61
+00:04:35,739 --> 00:04:37,913
+And this is my wall.
+
+62
+00:04:38,363 --> 00:04:42,276
+It is scenery today; it will not stop me.
+
+63
+00:04:42,726 --> 00:04:46,204
+Through the tunnel, and this is the Nave.
+
+64
+00:04:47,404 --> 00:04:53,926
+Add a fourth room, and make it a box: a built room with flat walls.
+
+65
+00:04:54,376 --> 00:04:58,289
+Join it by overlapping the room next to it.
+
+66
+00:04:58,739 --> 00:05:07,870
+Then move it away, watch lint tell you the ruin is in two pieces, and join it again with a passage.
+
+67
+00:05:08,320 --> 00:05:12,667
+Next time we decide what these walls are made of.

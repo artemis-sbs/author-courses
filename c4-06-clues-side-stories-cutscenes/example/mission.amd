@@ -1,0 +1,298 @@
+// Every piece of authored CONTENT in this mission lives in this one file. story.mast holds
+// only the logic that reacts to it.
+//
+// The shape is a table of contents: one `#` root, a `##` section per loader, and `###` /
+// `####` records inside. story.mast parses this once and hands each section to its loader.
+//
+// A record is `### [Display Name](key)`, an optional `---` fenced block of fields, then
+// body prose. Comments are `//` - note that .mast uses `#` instead.
+
+# [Sample Mission](sample_mission)
+
+
+// ---- Quests. Nested records are steps of the arc above them, addressed `arc/step`.
+## [Quests](quests)
+
+### [First Contact](first_contact)
+---
+Arc
+Scope: shared
+Starts when: at once
+---
+A derelict has drifted into the sector. Find out what happened to it.
+
+#### [Find the Derelict](find)
+---
+Scope: shared
+Starts when: at once
+Done when: signal derelict_found
+Then: reveal first_contact/study
+---
+Fly out and locate the drifting hulk.
+
+#### [Study the Derelict](study)
+---
+Scope: shared
+Starts when: revealed
+Done when: signal derelict_scanned
+---
+Science should take a full scan of the hull.
+
+### [Marker One](marker_one)
+---
+Beat
+Starts when: reach altar 600
+Action:
+  - rook hails rook_altar
+---
+The ship comes close to the altar, and the old survey marker starts to play.
+
+### [Marker Zero](marker_zero)
+---
+Beat
+Starts when: reach plate 500
+Action:
+  - rook hails rook_plate
+---
+The ship flies through the ring, and the plate on it starts to play.
+
+### [The One Who Stayed](stayed)
+---
+Scope: shared
+Starts when: revealed
+Objective: Find the cairn in the side room off The Nave
+Done when: reach cairn 400
+Then: signal cairn_found
+---
+Five surveyors went into The Hollow. Four came out.
+
+
+// ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
+// it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
+// several readings picked at random - so a second scan does not read identically.
+## [Scans](scans)
+
+### [Derelict Hull](derelict_scan)
+---
+Scan of: derelict
+Tab: scan
+---
+% The hull is cold. Whatever happened here happened a long time ago.
+% Hull plating is intact but every port is dark. No power anywhere aboard.
+
+### [Derelict Materials](derelict_mat)
+---
+Scan of: derelict
+Tab: mat
+---
+% Scoring along the plating matches no weapon in use in this sector.
+
+
+// ---- Ruins. A ruin is a place the ship flies INSIDE. The first record is the ruin
+// itself. Every record with a `Relic:` line is one room of it.
+## [Relics](relics)
+
+### [The Hollow](hollow)
+---
+Loc: 0, 0, 20000
+Walls: rock
+Seed: 12
+Debris: 30
+Gaps: 0.2
+Atmosphere: purple
+---
+Older than anyone who could have built it. Three rooms, as far as anyone knows.
+
+### [The Mouth](mouth)
+---
+Relic: hollow
+Chamber: 0, 0, 0, 900
+---
+The way in. Wide, and worn smooth.
+
+### [The Nave](nave)
+---
+Relic: hollow
+Chamber: 3000, 0, 0, 1100
+Passage to: mouth 350
+---
+The big room. Whatever this place was for, it happened here.
+
+### [The Vault](vault)
+---
+Relic: hollow
+Chamber: 3000, 0, 2800, 700
+Passage to: nave 300
+Art: plain_asteroid_9
+---
+The far end. Small, round, and a long way from the door.
+
+### [The Gallery](gallery)
+---
+Relic: hollow
+Box: 3000, 0, -1900, 600, 400, 800
+Passage to: nave 300
+Walls: blocks
+---
+A built room, with flat walls and real corners. Somebody added this later.
+
+### [The Ring](ring)
+---
+Relic: hollow
+Prop: 1400, 0, 0
+Dress: generic-torus 4
+Facing: nave
+---
+A hoop of worked metal, set across the first passage. You fly through it.
+
+### [The Way In](way_in)
+---
+Relic: hollow
+Point: 0, 0, -700
+Roles: entrance
+---
+Where a ship arrives. The name on the map sits here.
+
+### [The Altar](altar)
+---
+Relic: hollow
+Point: 3000, 0, 2800
+Roles: altar
+Scene: altar_look
+Scan: A stone table, cut from the floor of the room. Its top is worn into a shallow bowl.
+---
+The middle of the Vault. Whatever was kept here is gone.
+
+### [The Niche](niche)
+---
+Relic: hollow
+Point: 3000, 0, -2500
+Roles: niche
+Hidden: yes
+---
+A recess at the back of the Gallery. Easy to miss.
+
+### [The Ring Plate](plate)
+---
+Relic: hollow
+Point: 1400, 0, 0
+Roles: plate
+---
+A metal plate bolted to the ring. The first survey left it.
+
+### [The Crypt](crypt)
+---
+Relic: hollow
+Chamber: 5200, 0, 0, 600
+Passage to: nave 250
+---
+A small side room off the Nave. The first survey's notes do not mention it.
+
+### [The Cairn](cairn)
+---
+Relic: hollow
+Point: 5200, 0, 0
+Roles: cairn
+Hidden: yes
+Dress: generic-cone 2
+---
+A pile of stones in the middle of the Crypt.
+
+
+// ---- Characters. The voices in the story.
+## [Characters](characters)
+
+### [Surveyor Rook](rook)
+---
+Face: terran_male
+---
+Led the first survey of The Hollow, forty years ago. He left recordings behind.
+
+
+// ---- Dialogue. What is said, and what the crew can say back.
+## [Dialogue](dialogue)
+
+### [Rook at the Altar](rook_altar)
+---
+Speaker: rook
+When: hail
+Title: A recording at the altar
+---
+% Survey marker one. If you can hear this, you are where I stood.
+% Marker one, the Vault. Whoever you are, you are the first here since us.
+
+- [Play the rest.](rook_more)
+- [Play the entry keyed to Dace.](rook_dace) if learned >= 1
+- [Shut it off.]()
+
+### [The Rest of It](rook_more)
+---
+Speaker: rook
+---
+% There was something on this table when we came. We took it. Look in the Gallery, at the back.
+
+- [Mark the Gallery.]() ; reveal niche
+- [End playback.]()
+
+### [Rook at the Ring](rook_plate)
+---
+Speaker: rook
+When: hail
+Title: A recording at the ring
+---
+% Marker zero. Five of us went in: Rook, Dace, Imre, Sato and Vell. The markers inside answer to our names.
+
+- [Log the names.]() ; learn names
+- [Shut it off.]()
+
+### [The Entry for Dace](rook_dace)
+---
+Speaker: rook
+---
+% Dace did not come out with us. We built her a cairn in the side room, off the Nave. Forty-one stones.
+
+- [Mark the side room.](rook_more) ; reveal cairn, accepts stayed
+
+### [At the Altar](altar_look)
+% A stone table, one piece with the floor. Its top is worn into a shallow bowl, and the bowl is empty.
+% The table is cut from the floor of the room. Something sat in the bowl on top of it for a very long time.
+
+- [Read the marks on the rim](altar_marks)
+- [Leave it alone]()
+
+### [The Marks](altar_marks)
+% Tally marks, in sets of five. Somebody counted days here, and then stopped.
+
+- [Step back]()
+
+
+// ---- Cutscenes. What the main screen shows at a moment in the story.
+## [Cutscenes](cutscenes)
+
+### [At the Cairn](cairn_scene)
+---
+Letterbox: yes
+---
+Played when the crew finds the cairn.
+
+### [The count](cairn_shot_1)
+---
+Cutscene: cairn_scene
+Subject: altar
+Framing: close
+Seconds: 4
+Overlay: lower_third
+Name: The Altar
+---
+The tally on the rim stops at forty-one.
+
+### [The stones](cairn_shot_2)
+---
+Cutscene: cairn_scene
+Subject: cairn
+Framing: wide, close
+Seconds: 6
+Overlay: lower_third
+Name: The Cairn
+---
+Forty-one stones. One for each day.

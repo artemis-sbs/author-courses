@@ -1,0 +1,38 @@
+s01_cold_open_0	Same room. Same moment.
+s01_cold_open_1	Two different menus.
+s01_cold_open_2	The doctor can read something the engineer cannot, and neither of them can open the captain's log alone.
+s01_cold_open_3	That is the whole trick of a boarding party, and it is one word and one semicolon.
+s02_a_choice_for_one_job_0	A choice you already know, with two things added. if medical: only someone whose job is medical is offered it.
+s02_a_choice_for_one_job_1	That word is the one on Roles in your roster.
+s02_a_choice_for_one_job_2	Then a semicolon, and learn suits: when she takes it, the party knows a fact, and I have named it suits.
+s02_a_choice_for_one_job_3	And the choice needs somewhere to go: a short room that says what she found, with one way back.
+s03_the_other_job_0	The same again for the engineer.
+s03_the_other_job_1	Now each of my two people has one thing only they can read.
+s04_a_door_that_opens_when_they__0	learned is a number: how many different facts the party has.
+s04_a_door_that_opens_when_they__1	The party, not the person.
+s04_a_door_that_opens_when_they__2	So this choice appears for everyone once the surgeon and the engineer have each done their part.
+s04_a_door_that_opens_when_they__3	And a fact counts once, however many times they read it.
+s05_a_line_that_changes_0	A party that walks here first finds a locked log.
+s05_a_line_that_changes_1	If I say nothing, they think the game is broken.
+s05_a_line_that_changes_2	So two versions of the line, and a condition in curly brackets on each.
+s05_a_line_that_changes_3	Too early, they are told there is more to find.
+s05_a_line_that_changes_4	Later, they are told it is time.
+s06_three_rules_and_lint_0	Three rules.
+s06_three_rules_and_lint_1	Nobody gets an empty menu, so every room keeps a choice with no if.
+s06_three_rules_and_lint_2	A reading goes somewhere and comes back.
+s06_three_rules_and_lint_3	And count your facts: two facts, and the log asks for two. Lint. Clean.
+s06_three_rules_and_lint_4	It catches a misspelled learn.
+s06_three_rules_and_lint_5	It catches the sign the wrong way round.
+s06_three_rules_and_lint_6	It does not catch a misspelled job.
+s06_three_rules_and_lint_7	That one you check by eye: every word after if is learned, or a job from your roster.
+s07_play_it_0	Two people.
+s07_play_it_1	The doctor has it; the chief does not.
+s07_play_it_2	Straight to the bridge: locked, and it says so. Back. She reads. Aft. He reads.
+s07_play_it_3	Forward: and there it is.
+s07_play_it_4	Now watch what happens when the doctor stays home.
+s07_play_it_5	Same room, one person, and her reading comes to me, marked: covering for medical.
+s07_play_it_6	A short crew still finishes the story.
+s08_your_turn_0	Your third crew member has a job you made up.
+s08_your_turn_1	Give them a reading on the bridge.
+s08_your_turn_2	Leave the log at two, and now any two of three will open it: more than one way through.
+s08_your_turn_3	Next time, we ask not only what someone's job is, but how good they are at it.

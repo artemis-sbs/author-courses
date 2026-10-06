@@ -1,0 +1,60 @@
+s01_cold_open_0	Nobody fired a shot there.
+s01_cold_open_1	Somebody called, and said something.
+s01_cold_open_2	That is a scene: a character, a few lines, and enough different ways to say them that it does not sound like a recording.
+s01_cold_open_3	Today you write one, and the station calls your crew with it.
+s02_someone_to_speak_0	A scene needs a speaker, and a speaker is a character.
+s02_someone_to_speak_1	You made characters last time.
+s02_someone_to_speak_2	Mine is Quill, who runs traffic on the station.
+s02_someone_to_speak_3	Look at the word in round brackets.
+s02_someone_to_speak_4	That is her key.
+s02_someone_to_speak_5	From here on, nothing calls her Quill, or Harbormaster.
+s02_someone_to_speak_6	Everything calls her by her key.
+s02_someone_to_speak_7	Small letters, no spaces.
+s03_the_scene_0	A new section, Dialogue.
+s03_the_scene_1	Its key is the word dialogue, in small letters, and that matters later.
+s03_the_scene_2	Then the scene: three hashes, a name for my own use, and a key.
+s03_the_scene_3	Speaker: her key.
+s03_the_scene_4	When: hail, which means this is a call coming in to the ship.
+s03_the_scene_5	Title: what the call is about.
+s03_the_scene_6	The crew reads that before they answer.
+s03_the_scene_7	And then what she says.
+s04_takes_0	Three lines, each starting with a percent sign.
+s04_takes_1	She does not say all three.
+s04_takes_2	She says one.
+s04_takes_3	Each of these is a take: a different way to say the same thing, and the game picks one by chance each time. Three rules.
+s04_takes_4	A take is one line in the file.
+s04_takes_5	If I press Enter in the middle of it, like this, I have made two takes, and one day the crew gets half a sentence.
+s04_takes_6	Takes are alternatives, not a list.
+s04_takes_7	And plain keyboard characters only: no curly quotes, no long dashes, and never a curly bracket at the start of a take.
+s05_a_second_thing_0	So how does she say two things? Blocks.
+s05_a_second_thing_1	An at sign and her key starts a block.
+s05_a_second_thing_2	Three takes in the first, two in the second.
+s05_a_second_thing_3	The game takes one from each, so this little scene can read six ways.
+s05_a_second_thing_4	The crew reads the first, presses Continue, reads the second.
+s05_a_second_thing_5	Her key, not her name.
+s05_a_second_thing_6	And one voice in a scene, for now.
+s06_placing_the_call_0	A scene is words on a page until the story places the call.
+s06_placing_the_call_1	I want it to come when the crew finishes Close Inspection.
+s06_placing_the_call_2	So that quest gets one more line: then, reveal ds1_calls.
+s06_placing_the_call_3	And here is ds1_calls.
+s06_placing_the_call_4	The word Beat, alone on the first line, says this is a moment in the story and not a job, so it stays out of the quest list.
+s06_placing_the_call_5	It starts when it is revealed.
+s06_placing_the_call_6	And Action is what happens the moment it starts: two spaces, a dash, then who calls, the word hails, and the key of the scene.
+s06_placing_the_call_7	Starts when revealed is what makes her wait.
+s06_placing_the_call_8	Leave it out, and she calls the moment the game begins.
+s07_lint_0	Lint. Clean.
+s07_lint_1	It catches a speaker who is nobody.
+s07_lint_2	It catches a call to a scene that is not there.
+s07_lint_3	It does not catch this: a capital letter in the section key.
+s07_lint_4	Clean, and the call would never come.
+s07_lint_5	So four names get checked by eye: her key, the scene's key, the beat's key, and the two section keys, which have to be exactly characters and dialogue.
+s07_lint_6	The table is on the page.
+s08_play_it_0	In close.
+s08_play_it_1	The quest completes, and there she is: Harbormaster Quill, about that hulk. Open it.
+s08_play_it_2	One of my three openings. Continue.
+s08_play_it_3	One of my two closings. Close.
+s08_play_it_4	And again, from the start.
+s08_play_it_5	Same scene, and it may not read the same.
+s09_your_turn_0	You have a quest that finishes on a timer, from Lecture 8.
+s09_your_turn_1	Write a second scene, and have that quest reveal a second beat that calls it.
+s09_your_turn_2	Next time the crew gets to answer back.

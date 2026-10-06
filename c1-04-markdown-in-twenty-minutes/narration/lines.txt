@@ -1,0 +1,124 @@
+s01_cold_open_0	On the left is what I typed, with nothing but a keyboard,
+s01_cold_open_1	and on the right is what a reader sees.
+s01_cold_open_2	The few odd characters on the left are called marks,
+s01_cold_open_3	and the whole idea is called markdown.
+s01_cold_open_4	You need it because the file your mission lives in is written the same way.
+s01_cold_open_5	And it takes about twenty minutes.
+s02_what_markdown_is_0	In a word processor, you make a heading by choosing a style,
+s02_what_markdown_is_1	and the file remembers that in a way only the word processor can read.
+s02_what_markdown_is_2	In markdown, you type a hash in front of the line,
+s02_what_markdown_is_3	and then anything can read it: a person, a preview, or a game.
+s02_what_markdown_is_4	Today you'll write one page, a story bible for your mission,
+s02_what_markdown_is_5	and you'll learn six marks.
+s03_make_the_file_open_the_previ_0	This is the folder you made and opened last time.
+s03_make_the_file_open_the_previ_1	I make a new file in it, and its name ends in dot M D.
+s03_make_the_file_open_the_previ_2	Then I type one line: a hash, a space, and my title.
+s03_make_the_file_open_the_previ_3	Now, control K, let go, and then V,
+s03_make_the_file_open_the_previ_4	and that opens the preview.
+s03_make_the_file_open_the_previ_5	The hash is gone, and the words have become a title.
+s03_make_the_file_open_the_previ_6	This preview is part of VS Code, so it needs nothing added.
+s03_make_the_file_open_the_previ_7	And then I save.
+s03_make_the_file_open_the_previ_8	The game never reads this file.
+s03_make_the_file_open_the_previ_9	It's mine, and nothing I type here can break anything.
+s04_a_title_and_three_headings_0	Two hashes make a heading.
+s04_a_title_and_three_headings_1	Three would make a smaller one, inside it.
+s04_a_title_and_three_headings_2	So count the hashes,
+s04_a_title_and_three_headings_3	because in the next lecture, the number of hashes is how the game knows what's inside what.
+s04_a_title_and_three_headings_4	There are two rules.
+s04_a_title_and_three_headings_5	The hashes start at the left edge,
+s04_a_title_and_three_headings_6	and there's one space after them.
+s04_a_title_and_three_headings_7	Watch what happens without the space:
+s04_a_title_and_three_headings_8	it's not a heading any more.
+s04_a_title_and_three_headings_9	So I put it back.
+s05_paragraphs_0	A paragraph is one line, however long it is,
+s05_paragraphs_1	and word wrap folds it for me.
+s05_paragraphs_2	A blank line ends it.
+s05_paragraphs_3	Now, here are two things writers do without thinking.
+s05_paragraphs_4	The first is pressing Enter in the middle of a paragraph.
+s05_paragraphs_5	Look at the preview: it joined the halves again, so you'd never know.
+s05_paragraphs_6	But the game doesn't join them.
+s05_paragraphs_7	It starts a new line there.
+s05_paragraphs_8	So the rule is, one paragraph, one line.
+s05_paragraphs_9	The second is the Tab key at the start.
+s05_paragraphs_10	Look what the preview made of that.
+s05_paragraphs_11	In markdown, an indented line is something else altogether,
+s05_paragraphs_12	so never start a line with Tab.
+s06_two_lists_0	A hyphen, a space, and a line of words make a list.
+s06_two_lists_1	These are the people in my story.
+s06_two_lists_2	A number, a period, and a space make a numbered list,
+s06_two_lists_3	for things that happen in order.
+s06_two_lists_4	Keep these three lines,
+s06_two_lists_5	because in Lecture Eight, each one becomes a step of a quest.
+s06_two_lists_6	And leave a blank line above a list, and a blank line below it.
+s07_one_link_0	A link is two pairs of brackets.
+s07_one_link_1	Square brackets go round the words the reader sees,
+s07_one_link_2	and round brackets go round where it leads.
+s07_one_link_3	There's nothing between them, not even a space.
+s07_one_link_4	VS Code typed that closing bracket for me, so I just keep going.
+s07_one_link_5	And in the preview, it's a link.
+s07_one_link_6	Now look at this line from the mission file.
+s07_one_link_7	It's hashes, a space, square brackets, and round brackets:
+s07_one_link_8	a heading with a link in it.
+s07_one_link_9	That's the first line of every record you'll ever write.
+s07_one_link_10	In that file, though, the round brackets hold a short name for the game,
+s07_one_link_11	and not a web address.
+s08_bold_and_italic_0	Two stars on each side make a word bold,
+s08_bold_and_italic_1	and one star on each side makes it slanted.
+s08_bold_and_italic_2	Use them in your story bible.
+s08_bold_and_italic_3	But don't use them in the mission file,
+s08_bold_and_italic_4	and in three minutes you'll see why.
+s09_the_plain_keyboard_0	Everything I've typed so far is a key on my keyboard.
+s09_the_plain_keyboard_1	A word processor isn't like that.
+s09_the_plain_keyboard_2	I typed straight quotes here, and it made them curly.
+s09_the_plain_keyboard_3	It did this to my hyphens, and this to my three dots.
+s09_the_plain_keyboard_4	And it doesn't ask.
+s09_the_plain_keyboard_5	The game can draw only plain characters.
+s09_the_plain_keyboard_6	When it reads your mission, it swaps these for the plain ones, so nothing breaks,
+s09_the_plain_keyboard_7	and you get a warning for each one, which is Lecture Six.
+s09_the_plain_keyboard_8	But the habit starts now: write game text in VS Code.
+s09_the_plain_keyboard_9	And if you bring words over from a word processor,
+s09_the_plain_keyboard_10	type the quotes, the dashes and the dots again.
+s10_the_mission_file_with_new_ey_0	Here's the file the game reads,
+s10_the_mission_file_with_new_ey_1	and you can read most of it now.
+s10_the_mission_file_with_new_ey_2	Hashes mean a heading, and brackets mean a link.
+s10_the_mission_file_with_new_ey_3	But five marks in here aren't markdown's.
+s10_the_mission_file_with_new_ey_4	This heading is the first line of a record:
+s10_the_mission_file_with_new_ey_5	a name for people, and a key for the game.
+s10_the_mission_file_with_new_ey_6	These three hyphens would be a line across the page in markdown.
+s10_the_mission_file_with_new_ey_7	Here, they're a fence, with the record's facts inside.
+s10_the_mission_file_with_new_ey_8	A percent sign is one reading for the Science screen.
+s10_the_mission_file_with_new_ey_9	Two slashes are a note to myself, which the game skips.
+s10_the_mission_file_with_new_ey_10	And there's one you haven't got yet, double square brackets,
+s10_the_mission_file_with_new_ey_11	which is a link to another record.
+s10_the_mission_file_with_new_ey_12	So this file is shaped like markdown, and it isn't markdown.
+s10_the_mission_file_with_new_ey_13	The preview I opened for my story bible doesn't open for it.
+s10_the_mission_file_with_new_ey_14	The game is what reads it.
+s11_the_game_is_not_a_preview_0	So what does the game do with marks?
+s11_the_game_is_not_a_preview_1	I'll give this quest nine lines:
+s11_the_game_is_not_a_preview_2	a heading, a bold word, a list, a word in backticks, and a link,
+s11_the_game_is_not_a_preview_3	and then I save.
+s11_the_game_is_not_a_preview_4	I start the game the way we did last time, and I don't fly anywhere.
+s11_the_game_is_not_a_preview_5	On Helm, it's the handheld, then Quests,
+s11_the_game_is_not_a_preview_6	and I select Find the Derelict.
+s11_the_game_is_not_a_preview_7	The heading is drawn as a heading.
+s11_the_game_is_not_a_preview_8	The bold word is still wearing its stars.
+s11_the_game_is_not_a_preview_9	The list is a list.
+s11_the_game_is_not_a_preview_10	The backticks are gone, and the word is still there.
+s11_the_game_is_not_a_preview_11	And the link shows every bracket and the whole address, with nothing to click.
+s11_the_game_is_not_a_preview_12	Look at the spacing, too.
+s11_the_game_is_not_a_preview_13	I left three blank lines, and the game left none.
+s11_the_game_is_not_a_preview_14	A preview would have drawn all of it.
+s11_the_game_is_not_a_preview_15	The game drew two things, the heading and the list.
+s11_the_game_is_not_a_preview_16	And nothing warned me, either.
+s11_the_game_is_not_a_preview_17	So here are the rules for the mission file, and they're on the page.
+s11_the_game_is_not_a_preview_18	Write plain sentences, and keep one paragraph to one line.
+s11_the_game_is_not_a_preview_19	And a heading and a list are the two marks a description draws.
+s11_the_game_is_not_a_preview_20	Then I close the game, and I put my line back,
+s11_the_game_is_not_a_preview_21	because the next lecture starts from the file as it was.
+s12_your_turn_0	Now write the story bible for your own mission.
+s12_your_turn_1	Give it a title, and the story in two sentences.
+s12_your_turn_2	Then three headings: premise, people, and what happens.
+s12_your_turn_3	Add three people, three things that happen, and one link.
+s12_your_turn_4	Keep it, because the people become characters in Class Two,
+s12_your_turn_5	and the three things that happen become your first quest.
+s12_your_turn_6	Next time, we take one record of the mission file apart, line by line.

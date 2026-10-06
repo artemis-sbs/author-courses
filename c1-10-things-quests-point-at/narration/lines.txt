@@ -1,0 +1,124 @@
+s01_cold_open_0	That sentence isn't the game's.
+s01_cold_open_1	I wrote it, in a text file,
+s01_cold_open_2	and it took me about a minute.
+s01_cold_open_3	Today you give the game two things to point at:
+s01_cold_open_4	some words for Science to find,
+s01_cold_open_5	and a place on the map that wasn't there before.
+s02_the_idea_point_at_a_role_0	You know these words already.
+s02_the_idea_point_at_a_role_1	In Lecture 7 you gave the hulk a role of your own,
+s02_the_idea_point_at_a_role_2	right here in this list.
+s02_the_idea_point_at_a_role_3	And in Lecture 8, your quest said reach derelict.
+s02_the_idea_point_at_a_role_4	A quest never names an object.
+s02_the_idea_point_at_a_role_5	It names a role, and the game finds whatever wears it.
+s02_the_idea_point_at_a_role_6	Scan text works the same way: Scan of, derelict.
+s02_the_idea_point_at_a_role_7	Until now, a role always came from this file, the script.
+s02_the_idea_point_at_a_role_8	Today you place a thing yourself,
+s02_the_idea_point_at_a_role_9	and you give it its role in your own file.
+s02_the_idea_point_at_a_role_10	So it's one idea: give a thing a role,
+s02_the_idea_point_at_a_role_11	and then point at the role.
+s03_the_scans_you_have_0	There are three records here.
+s03_the_scans_you_have_1	Two came with the template,
+s03_the_scans_you_have_2	and the third is yours, from Lecture 5.
+s03_the_scans_you_have_3	There's Hull, on the scan tab, Materials, on the mat tab,
+s03_the_scans_you_have_4	and Intel, on the role you added.
+s03_the_scans_you_have_5	There are five tabs in all:
+s03_the_scans_you_have_6	scan, status, intel, mat, and bio.
+s03_the_scans_you_have_7	Each line that starts with a percent sign is one reading,
+s03_the_scans_you_have_8	and there are two lines here, so the game picks one.
+s04_a_tab_of_your_own_0	The hulk has three tabs,
+s04_a_tab_of_your_own_1	so I'm going to give it a fourth, called bio.
+s04_a_tab_of_your_own_2	It's the same role, a different tab,
+s04_a_tab_of_your_own_3	and this time three readings.
+s04_a_tab_of_your_own_4	There are five rules for scan text.
+s04_a_tab_of_your_own_5	One reading is one line,
+s04_a_tab_of_your_own_6	because if I press Enter in the middle, I've made two readings,
+s04_a_tab_of_your_own_7	and the crew gets half a sentence.
+s04_a_tab_of_your_own_8	One role, spelled the way the hulk wears it.
+s04_a_tab_of_your_own_9	One record for each role and tab.
+s04_a_tab_of_your_own_10	Always write a Tab line.
+s04_a_tab_of_your_own_11	And no curly brackets, at all.
+s04_a_tab_of_your_own_12	Lint checks the first four.
+s04_a_tab_of_your_own_13	The fifth it can't check,
+s04_a_tab_of_your_own_14	because curly brackets are a real feature you haven't met yet,
+s04_a_tab_of_your_own_15	so the game just shows them as you typed them.
+s05_a_place_of_your_own_0	Everything on the map so far came from the script file,
+s05_a_place_of_your_own_1	but this one is mine.
+s05_a_place_of_your_own_2	It's a new section, with two hashes,
+s05_a_place_of_your_own_3	and its key is this word: landmarks.
+s05_a_place_of_your_own_4	Then comes a record,
+s05_a_place_of_your_own_5	and its name is the name the object gets.
+s05_a_place_of_your_own_6	Kind says what sort of thing it is:
+s05_a_place_of_your_own_7	a wreck, a ship, or a station.
+s05_a_place_of_your_own_8	Roles is the label it wears.
+s05_a_place_of_your_own_9	This is the line lint has been telling you about since Lecture 7,
+s05_a_place_of_your_own_10	and it's the line that matters,
+s05_a_place_of_your_own_11	because it's the word everything else points at.
+s05_a_place_of_your_own_12	Art is what it looks like.
+s05_a_place_of_your_own_13	Lint can't check that word, so copy it.
+s05_a_place_of_your_own_14	And Loc is where it sits:
+s05_a_place_of_your_own_15	three numbers, in plain digits,
+s05_a_place_of_your_own_16	with no comma inside a number.
+s05_a_place_of_your_own_17	The station is at zero, zero, zero,
+s05_a_place_of_your_own_18	and the hulk is at zero, zero, nine thousand.
+s05_a_place_of_your_own_19	The middle number is height, so leave it at zero.
+s05_a_place_of_your_own_20	Mine goes here, off to one side.
+s05_a_place_of_your_own_21	And then one line in my word list,
+s05_a_place_of_your_own_22	so that the list stays true.
+s06_words_for_the_lifeboat_0	The lifeboat wears a role,
+s06_words_for_the_lifeboat_1	so it can have scan text: Scan of, lifeboat.
+s06_words_for_the_lifeboat_2	A scan tab comes first, always, and then intel.
+s06_words_for_the_lifeboat_3	And that's the whole trick:
+s06_words_for_the_lifeboat_4	the place and the words never mention each other.
+s06_words_for_the_lifeboat_5	They both mention the role.
+s07_point_the_story_at_it_0	Now for the story.
+s07_point_the_story_at_it_1	I add a new step, between the hulk and home,
+s07_point_the_story_at_it_2	and it's revealed, like last time.
+s07_point_the_story_at_it_3	I run lint before I go on,
+s07_point_the_story_at_it_4	and it says the step waits to be revealed, and nothing reveals it.
+s07_point_the_story_at_it_5	You saw that one in Lecture 9.
+s07_point_the_story_at_it_6	So I make one change up here:
+s07_point_the_story_at_it_7	Close Inspection now reveals the boat, and not home.
+s07_point_the_story_at_it_8	And it's clean, so the chain runs hulk, boat, home.
+s07_point_the_story_at_it_9	Now look at this line:
+s07_point_the_story_at_it_10	Done when, reach, lifeboat, five hundred.
+s07_point_the_story_at_it_11	That's a verb, a role, and a distance.
+s07_point_the_story_at_it_12	It's the role, from the Roles line, and not the name.
+s07_point_the_story_at_it_13	I gave the key the same word on purpose,
+s07_point_the_story_at_it_14	and the next scene shows why.
+s08_lint_0	This is the one to remember.
+s08_lint_1	I take out the Roles line,
+s08_lint_2	and I get three warnings,
+s08_lint_3	one for every line that pointed at the role.
+s08_lint_4	Each one says the same thing:
+s08_lint_5	lifeboat is the landmark's key,
+s08_lint_6	and this line looks for a role.
+s08_lint_7	The key in the round brackets is not a role.
+s08_lint_8	So I put the line back.
+s08_lint_9	Next, a tab that isn't one of the five, and lint tells me.
+s08_lint_10	Then a plural: nothing wears a role called derelicts,
+s08_lint_11	and that tab would never have appeared.
+s08_lint_12	With no Loc line, the lifeboat would be sitting inside the station.
+s08_lint_13	And for a section the story never asks for,
+s08_lint_14	lint reads the story too,
+s08_lint_15	and tells me which keys it does ask for.
+s08_lint_16	There are two things it can't see, and they're on the page:
+s08_lint_17	one hash on the lifeboat's heading,
+s08_lint_18	and a comma inside a number.
+s08_lint_19	Check those two by eye.
+s09_play_it_0	The Quest Log has two steps showing,
+s09_play_it_1	so it's out to the hulk.
+s09_play_it_2	Close Inspection is done, and there's the new step, Find the Lifeboat.
+s09_play_it_3	At Science I select the hulk,
+s09_play_it_4	and there's my fourth tab, with one of my three readings.
+s09_play_it_5	Now for the lifeboat,
+s09_play_it_6	which is on the map because I wrote four lines.
+s09_play_it_7	At Science again, I pick the boat off the map,
+s09_play_it_8	and those are my words on its scan tab.
+s09_play_it_9	Its intel tab is one that Science has to scan for,
+s09_play_it_10	and then that's mine too.
+s09_play_it_11	In we go, and the step is done.
+s09_play_it_12	Then it's home, and that's the win.
+s10_your_turn_0	Now it's your turn: place a second thing of your own,
+s10_your_turn_1	give it a role, and give the role some words,
+s10_your_turn_2	and add a step the crew can take or leave.
+s10_your_turn_3	Next time, we open the script file.

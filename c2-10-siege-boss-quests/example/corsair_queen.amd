@@ -1,0 +1,73 @@
+// The Corsair Queen - my Siege boss.
+// She arrives when 4 raiders in 10 are left: two named ships and three escort fleets,
+// two levels above the game's difficulty. Three games in four the fleets are her own
+// pirates. One game in four she has hired Kraliens.
+//
+// Her story: sink the Morrigan within ten minutes or the game is lost. The Badb is a
+// bonus. Ninety seconds after she arrives a third ship, the Nemain, comes in. That part
+// is her hook: LegendaryMissions\corsair_queen\__init__.mast.
+
+# [Corsair Queen](corsair_queen)
+---
+Boss
+Trigger: enemies_low
+Low: 40%
+Flies: 75% Pirate, 25% Kralien
+Fleets: 3
+Difficulty: +2
+Named: Morrigan pirate_brigantine, Badb pirate_strongbow
+Hook: corsair_queen_hook
+---
+The Corsair Queen watched the siege falter from the dark. Now she brings her own ships to finish it.
+
+## [Sink the Morrigan](sink_morrigan)
+---
+Quest
+Scope: shared
+State: active
+Parent: siege_mission
+Required: true
+Objective: Destroy the Morrigan within ten minutes
+Done when: destroy 1 morrigan
+Fails when: 10 minutes
+Fatal: true
+Lose: The Morrigan broke the line. The sector is hers.
+Reward: 600 credits
+---
+The Queen's flagship Morrigan leads the last assault. Sink her within ten minutes of her arrival, or the sector is lost.
+
+## [Sink the Badb](sink_badb)
+---
+Quest
+Scope: shared
+State: active
+Parent: siege_mission
+Objective: Destroy the Badb
+Done when: destroy 1 badb
+Reward: 300 credits
+---
+A bonus. The Badb is the Queen's second ship. The siege can be won without sinking her.
+
+## [Her Reserve](reserve)
+---
+Quest
+Scope: shared
+State: active
+Parent: siege_mission
+Objective: Watch for a third ship
+Done when: signal nemain_arrived
+Then: reveal sink_nemain
+---
+The Queen never commits everything at once. Watch for a third ship.
+
+## [Sink the Nemain](sink_nemain)
+---
+Quest
+Scope: shared
+Starts when: revealed
+Parent: siege_mission
+Objective: Destroy the Nemain
+Done when: destroy 1 nemain
+Reward: 400 credits
+---
+The Nemain is here: the Queen's reserve. Sink her too.

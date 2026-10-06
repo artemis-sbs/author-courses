@@ -1,0 +1,327 @@
+1
+00:00:00,000 --> 00:00:03,478
+Last time, she talked and the crew listened.
+
+2
+00:00:03,928 --> 00:00:05,667
+This time they answer.
+
+3
+00:00:06,117 --> 00:00:08,726
+One answer got us a job.
+
+4
+00:00:09,176 --> 00:00:12,220
+Another would have hung up on her.
+
+5
+00:00:12,670 --> 00:00:19,626
+Every one of those is a single line in your file, and today you write them.
+
+6
+00:00:20,826 --> 00:00:25,174
+An answer is a line that starts with a dash.
+
+7
+00:00:25,624 --> 00:00:29,102
+Square brackets: the words Comms reads and picks.
+
+8
+00:00:29,552 --> 00:00:34,335
+Round brackets, straight after, no space: where the conversation goes next.
+
+9
+00:00:34,785 --> 00:00:39,133
+Empty round brackets mean the call is over. Two rules.
+
+10
+00:00:39,583 --> 00:00:41,757
+An answer is one line.
+
+11
+00:00:42,207 --> 00:00:50,033
+And answers go at the end, below her last take, because that is when the crew gets them.
+
+12
+00:00:51,233 --> 00:00:57,320
+Put a scene's key in the round brackets, and the call goes on there.
+
+13
+00:00:57,770 --> 00:00:59,943
+So I need that scene.
+
+14
+00:01:00,393 --> 00:01:04,307
+Three hashes, a name, the key I just used.
+
+15
+00:01:04,757 --> 00:01:06,930
+Speaker, her key. Two takes.
+
+16
+00:01:07,380 --> 00:01:09,989
+And two answers of its own.
+
+17
+00:01:10,439 --> 00:01:13,917
+Notice what is missing: no When, no Title.
+
+18
+00:01:14,367 --> 00:01:17,411
+Nothing places this scene as a call.
+
+19
+00:01:17,861 --> 00:01:22,209
+The only way in is the answer that names it.
+
+20
+00:01:22,659 --> 00:01:26,572
+And three hashes, like the first scene. Never four.
+
+21
+00:01:27,022 --> 00:01:30,500
+A scene does not go inside another scene.
+
+22
+00:01:31,700 --> 00:01:36,483
+One more answer: the crew asks a question of their own.
+
+23
+00:01:36,933 --> 00:01:45,193
+That goes to a scene where she tells them what she knows, and from there, on to the offer.
+
+24
+00:01:45,643 --> 00:01:48,687
+Two answers lead to the same scene.
+
+25
+00:01:49,137 --> 00:01:50,441
+That is fine.
+
+26
+00:01:50,891 --> 00:01:53,935
+One limit: four answers in a scene.
+
+27
+00:01:54,385 --> 00:01:56,559
+A fifth is never shown.
+
+28
+00:01:57,759 --> 00:02:00,802
+So far an answer moves the conversation.
+
+29
+00:02:01,252 --> 00:02:03,861
+Now one that changes the story.
+
+30
+00:02:04,311 --> 00:02:06,920
+First the job she is offering.
+
+31
+00:02:07,370 --> 00:02:10,413
+Starts when revealed, so it is hidden.
+
+32
+00:02:10,863 --> 00:02:13,472
+Done when thirty seconds. A reward.
+
+33
+00:02:13,922 --> 00:02:16,096
+Now the answer. A semicolon.
+
+34
+00:02:16,546 --> 00:02:20,459
+Everything after the semicolon is what the answer does.
+
+35
+00:02:20,909 --> 00:02:23,952
+Accepts, and the key of the quest.
+
+36
+00:02:24,402 --> 00:02:26,576
+The key, not the name.
+
+37
+00:02:27,026 --> 00:02:31,374
+When Comms says we will tag her, the job starts.
+
+38
+00:02:32,574 --> 00:02:35,183
+An answer can do two things.
+
+39
+00:02:35,633 --> 00:02:39,111
+One semicolon, then a comma between the things.
+
+40
+00:02:39,561 --> 00:02:43,909
+Not a second semicolon: that looks right and does nothing.
+
+41
+00:02:44,359 --> 00:02:50,011
+The second thing here finishes the beat from last time, DS 1 Calls.
+
+42
+00:02:50,461 --> 00:02:59,591
+She has been answered, so that moment is over, and a finished beat shows up in the quest list as done.
+
+43
+00:03:00,041 --> 00:03:01,780
+There are four words.
+
+44
+00:03:02,230 --> 00:03:03,970
+Accepts starts a quest.
+
+45
+00:03:04,420 --> 00:03:05,724
+Completes finishes one.
+
+46
+00:03:06,174 --> 00:03:07,478
+Fails fails one.
+
+47
+00:03:07,928 --> 00:03:14,885
+Signal sends a word into the story, and any quest waiting on that word hears it.
+
+48
+00:03:16,085 --> 00:03:19,998
+What the crew said should come back to them.
+
+49
+00:03:20,448 --> 00:03:23,926
+When the job is done: then, reveal beacon_set.
+
+50
+00:03:24,376 --> 00:03:31,767
+A beat, the same pattern as last time: starts when revealed, and its action places a call.
+
+51
+00:03:32,217 --> 00:03:33,522
+And the scene.
+
+52
+00:03:33,972 --> 00:03:41,363
+This one is a call of its own, so it has When hail and a Title again.
+
+53
+00:03:42,563 --> 00:03:44,737
+Look at what you have.
+
+54
+00:03:45,187 --> 00:03:51,274
+This answer is only offered to a crew that reported the hulk was cold.
+
+55
+00:03:51,724 --> 00:03:58,246
+This one is only offered to a crew that took the job and finished it.
+
+56
+00:03:58,696 --> 00:04:08,696
+That is how you make an answer depend on the story: put it somewhere the crew can only reach when it is true.
+
+57
+00:04:09,146 --> 00:04:15,233
+You will see another way in the documentation, the word if on the answer.
+
+58
+00:04:15,683 --> 00:04:18,726
+Do not use it in this mission.
+
+59
+00:04:19,176 --> 00:04:27,872
+It cannot read your quests or your credits, so the answer is never offered, and lint will not warn you.
+
+60
+00:04:28,322 --> 00:04:31,800
+It comes into its own in Class 3.
+
+61
+00:04:33,000 --> 00:04:34,000
+Lint. Clean.
+
+62
+00:04:34,450 --> 00:04:37,493
+A scene key that is not there.
+
+63
+00:04:37,943 --> 00:04:41,857
+A word that is not one of the four.
+
+64
+00:04:42,307 --> 00:04:49,263
+A quest key that is not there: the answer would end the call and start nothing.
+
+65
+00:04:49,713 --> 00:04:54,061
+No round brackets: that line is no longer an answer.
+
+66
+00:04:54,511 --> 00:05:02,772
+It is one more thing for her to say, and one day she would say it, brackets and all.
+
+67
+00:05:03,222 --> 00:05:11,048
+And a scene with one hash too many, which takes the scene above it out of the game.
+
+68
+00:05:11,498 --> 00:05:14,107
+Lint reads every one of these.
+
+69
+00:05:14,557 --> 00:05:21,948
+What it cannot read is your intention: a job with no way to finish still lints clean.
+
+70
+00:05:23,148 --> 00:05:25,757
+Her question, and my three answers.
+
+71
+00:05:26,207 --> 00:05:27,511
+I ask first.
+
+72
+00:05:27,961 --> 00:05:30,570
+Then I tell her. The offer.
+
+73
+00:05:31,020 --> 00:05:32,759
+We will tag her.
+
+74
+00:05:33,209 --> 00:05:37,122
+Call over, and there is the job. Thirty seconds.
+
+75
+00:05:37,572 --> 00:05:40,615
+Done, paid, and she is calling back.
+
+76
+00:05:41,065 --> 00:05:42,804
+Now the other road.
+
+77
+00:05:43,254 --> 00:05:45,428
+Find someone else. No job.
+
+78
+00:05:45,878 --> 00:05:48,052
+And she does not call.
+
+79
+00:05:48,502 --> 00:05:50,676
+Same file, two different evenings.
+
+80
+00:05:51,876 --> 00:05:54,920
+You wrote a second call last time.
+
+81
+00:05:55,370 --> 00:06:03,196
+Give it answers, and make one of them send a word into the story that finishes a quest.
+
+82
+00:06:03,646 --> 00:06:09,733
+Next time: a job the crew can only get by picking up the call.

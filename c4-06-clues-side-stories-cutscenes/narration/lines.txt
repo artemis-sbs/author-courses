@@ -1,0 +1,111 @@
+s01_cold_open_0	Last time the ruin could talk.
+s01_cold_open_1	Today it keeps a secret.
+s01_cold_open_2	A crew that listens at the door gets one more answer further in.
+s01_cold_open_3	That answer opens a side room, and a small story of its own.
+s01_cold_open_4	And when they find what is in the room, the main screen stops being a window and becomes a film, for ten seconds.
+s02_what_a_clue_is_0	A clue is something the crew learns in one place that changes what happens in another.
+s02_what_a_clue_is_1	You already wrote one: Mark the Gallery put a place on the map.
+s02_what_a_clue_is_2	Today, two new words. learn, on an answer, writes a word down for this crew. learned, on another answer, counts the words.
+s02_what_a_clue_is_3	That is all it does: it counts.
+s02_what_a_clue_is_4	It cannot ask for a word by name.
+s02_what_a_clue_is_5	There is one list for the whole ship.
+s02_what_a_clue_is_6	And the rule that shapes everything: the game reads the count when the crew opens the scene, once.
+s02_what_a_clue_is_7	If they open a call too early, going away and coming back does not help.
+s02_what_a_clue_is_8	So the clue has to come first on the road.
+s03_the_first_clue_0	Every ship flies through the ring.
+s03_the_first_clue_1	So the first clue goes there.
+s03_the_first_clue_2	A place, on the same spot as the ring, with a role: plate.
+s03_the_first_clue_3	A beat, the same as last time: when a ship is within five hundred of the plate, Rook calls.
+s03_the_first_clue_4	And the scene.
+s03_the_first_clue_5	One take, two answers.
+s03_the_first_clue_6	Here is the new part.
+s03_the_first_clue_7	Log the names, semicolon, learn names. names is my word.
+s03_the_first_clue_8	The crew never sees it.
+s03_the_first_clue_9	They see Log the names.
+s04_the_clue_opens_an_answer_0	Now the altar.
+s04_the_clue_opens_an_answer_1	One new answer, between the two that are there.
+s04_the_clue_opens_an_answer_2	Play the entry keyed to Dace, and after the round brackets: if learned is at least one.
+s04_the_clue_opens_an_answer_3	A crew that knows nothing gets two answers.
+s04_the_clue_opens_an_answer_4	A crew that logged the names gets three.
+s04_the_clue_opens_an_answer_5	The answer leads to a new scene.
+s04_the_clue_opens_an_answer_6	One take: Dace did not come out, and there is a cairn in a side room.
+s04_the_clue_opens_an_answer_7	One answer, and it leads on to The Rest of It, so this crew still hears the main recording.
+s05_a_side_room_and_the_place_in_0	He said a side room, so there has to be one.
+s05_a_side_room_and_the_place_in_1	A chamber, six hundred, with a passage to the Nave.
+s05_a_side_room_and_the_place_in_2	That is Lecture 2.
+s05_a_side_room_and_the_place_in_3	And a place in the middle of it, with a cone standing on it.
+s05_a_side_room_and_the_place_in_4	That is Lecture 3.
+s05_a_side_room_and_the_place_in_5	Now the answer shows it: reveal cairn.
+s05_a_side_room_and_the_place_in_6	The key of the place.
+s05_a_side_room_and_the_place_in_7	Not crypt: a room is not a place, and lint will not tell you.
+s06_the_side_story_0	A side story is a quest that is not part of the main story. Three hashes.
+s06_the_side_story_1	It starts when revealed, so it is asleep and out of the list.
+s06_the_side_story_2	It is done when a ship is within four hundred of the cairn.
+s06_the_side_story_3	And the answer starts it: a comma, accepts stayed.
+s06_the_side_story_4	Two things after one semicolon.
+s06_the_side_story_5	Now, if you open Storm's Beacon you will find a section called Side Stories, and those are a different animal.
+s06_the_side_story_6	Each one says For, and a job.
+s06_the_side_story_7	They belong to one person, and they are handed over when that person leaves the ship.
+s06_the_side_story_8	We get there in Lecture 8.
+s06_the_side_story_9	Do not type that section today: lint will tell you nothing hands it out, and lint is right.
+s07_the_cutscene_what_you_write_0	A cutscene is a list of shots.
+s07_the_cutscene_what_you_write_1	A new section, and its key has to be cutscenes.
+s07_the_cutscene_what_you_write_2	The first record is the cutscene: its key, and Letterbox: yes for the black bars.
+s07_the_cutscene_what_you_write_3	Then one record for each shot.
+s07_the_cutscene_what_you_write_4	Which cutscene it belongs to.
+s07_the_cutscene_what_you_write_5	What the camera looks at: a role, the same word I write after reach.
+s07_the_cutscene_what_you_write_6	How near: close, medium or wide.
+s07_the_cutscene_what_you_write_7	Two words with a comma is a move: wide, then close.
+s07_the_cutscene_what_you_write_8	How many seconds.
+s07_the_cutscene_what_you_write_9	And Overlay, lower_third: words at the bottom.
+s07_the_cutscene_what_you_write_10	A name, and under the fence, the line.
+s07_the_cutscene_what_you_write_11	Everywhere else in this file that line is my own note.
+s07_the_cutscene_what_you_write_12	Here the crew reads it: the name in blue, the line in white. Two rules.
+s07_the_cutscene_what_you_write_13	Keep it short: the crew cannot skip it.
+s07_the_cutscene_what_you_write_14	And keep each line short.
+s08_the_card_0	Lint first.
+s08_the_card_1	Nothing in this mission reads a section keyed cutscenes.
+s08_the_card_2	It is right, and the end of its sentence is the fix: add the line that reads it.
+s08_the_card_3	That is a card, in two parts.
+s08_the_card_4	Part one, in the map block, under the line that builds the ruin: read the Cutscenes section.
+s08_the_card_5	I do not change a letter. Lint: clean.
+s08_the_card_6	It is read now, and still nothing plays it.
+s08_the_card_7	So the quest has to say when: Then: signal cairn_found. My word.
+s08_the_card_8	Lint again: the word is sent and nothing hears it.
+s08_the_card_9	Part two, at the very end of the script file: when the word cairn_found is sent, play the cutscene with this key, on every main screen.
+s08_the_card_10	Two things here are mine: the word, and the key. Lint. Clean.
+s09_lint_0	Lint.
+s09_lint_1	I ask for the word by name.
+s09_lint_2	It tells me learned only counts.
+s09_lint_3	Good: that answer would never have been offered.
+s09_lint_4	Put it back.
+s09_lint_5	Now I misspell a subject. Clean.
+s09_lint_6	Lint reads the outside of a cutscene, not the inside of a shot.
+s09_lint_7	That shot would be left out.
+s09_lint_8	The game does say so, in one line, in the runtime log, after you have played it.
+s09_lint_9	Put it back.
+s09_lint_10	Now I misspell the overlay.
+s09_lint_11	Clean again, and this time nothing says anything: the shot plays with no words.
+s09_lint_12	There is a table on the page of the ones nothing tells you about.
+s09_lint_13	Read it before you play.
+s10_play_it_0	Through the ring.
+s10_play_it_1	Rook, at the ring.
+s10_play_it_2	Log the names.
+s10_play_it_3	Across the Nave, up the tunnel.
+s10_play_it_4	Rook, at the altar, and there is my third answer.
+s10_play_it_5	The entry for Dace.
+s10_play_it_6	Mark the side room.
+s10_play_it_7	And the rest of it: mark the Gallery.
+s10_play_it_8	A new contact on the far side of the Nave, and a new quest in the list.
+s10_play_it_9	Back down, straight across, into the side room.
+s10_play_it_10	And there it goes. Bars.
+s10_play_it_11	The altar: the tally on the rim stops at forty-one.
+s10_play_it_12	The cairn: forty-one stones, one for each day. And back.
+s10_play_it_13	One thing you will notice: that panel in the corner says The Altar, Energy zero.
+s10_play_it_14	It is the ship's own panel reading whatever the camera is on.
+s10_play_it_15	It is not in my file, and I cannot take it away.
+s11_your_turn_0	Give Rook a line that only a crew who knows will hear.
+s11_your_turn_1	Pay for the side story.
+s11_your_turn_2	Add a third shot.
+s11_your_turn_3	Then break one line where lint can see it and one where it cannot.
+s11_your_turn_4	Next time, the main story.

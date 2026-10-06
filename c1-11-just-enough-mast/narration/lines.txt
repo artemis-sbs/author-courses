@@ -1,0 +1,145 @@
+s01_cold_open_0	That ship wasn't on the map when the game started,
+s01_cold_open_1	and nothing in your fact sheet can do that.
+s01_cold_open_2	So today you open the other file, the script.
+s01_cold_open_3	You'll read it once, from top to bottom,
+s01_cold_open_4	and then paste three small cards into it.
+s01_cold_open_5	And you won't write a line of code.
+s02_two_files_two_sets_of_marks_0	First, a reminder from Lecture 7.
+s02_two_files_two_sets_of_marks_1	In your fact sheet, a hash is a heading,
+s02_two_files_two_sets_of_marks_2	and two slashes are a note.
+s02_two_files_two_sets_of_marks_3	In the script, it's the other way round.
+s02_two_files_two_sets_of_marks_4	A hash is a note,
+s02_two_files_two_sets_of_marks_5	and two slashes start a route,
+s02_two_files_two_sets_of_marks_6	which is a block that runs when something happens.
+s02_two_files_two_sets_of_marks_7	So a note of your own, in this file, starts with a hash.
+s02_two_files_two_sets_of_marks_8	You also had three rules for this file:
+s02_two_files_two_sets_of_marks_9	change only what's between the quote marks,
+s02_two_files_two_sets_of_marks_10	never touch a quote mark itself,
+s02_two_files_two_sets_of_marks_11	and leave the commas alone.
+s02_two_files_two_sets_of_marks_12	Today, you go a little further.
+s03_read_the_file_the_top_0	At the top there's a note.
+s03_read_the_file_the_top_1	Then a named box, which is empty for now,
+s03_read_the_file_the_top_2	and the word shared means every block in the file can see it.
+s03_read_the_file_the_top_3	Next, a line that reads a crew roster, which is for Class 3.
+s03_read_the_file_the_top_4	Then three lines that make your side,
+s03_read_the_file_the_top_5	and one for the music.
+s03_read_the_file_the_top_6	And here, at the left edge, is the map.
+s03_read_the_file_the_top_7	This is a label, which means a named block,
+s03_read_the_file_the_top_8	and everything indented under it runs once, when the game starts.
+s04_read_the_file_the_lines_that_0	Line thirty-five reads your whole fact sheet, and fills the box.
+s04_read_the_file_the_lines_that_1	After that, each section is handed to the thing that knows what to do with it:
+s04_read_the_file_the_lines_that_2	landmarks, quests, and scans.
+s04_read_the_file_the_lines_that_3	Now look at the word in quotes: landmarks.
+s04_read_the_file_the_lines_that_4	That's the key in your section heading.
+s04_read_the_file_the_lines_that_5	Last time, I said it had to be exactly that word,
+s04_read_the_file_the_lines_that_6	and this line is why.
+s04_read_the_file_the_lines_that_7	The lines for sides, for a cast, for conversations and for ruins
+s04_read_the_file_the_lines_that_8	do nothing until your file has those sections.
+s04_read_the_file_the_lines_that_9	Then comes the station, and then the hulk,
+s04_read_the_file_the_lines_that_10	where you added ghost ship to this line yourself, back in Lecture 7.
+s04_read_the_file_the_lines_that_11	And the last line is arrow, END,
+s04_read_the_file_the_lines_that_12	which says this block is finished.
+s05_read_the_file_the_indent_and_0	There are three things to know, and that's all the theory.
+s05_read_the_file_the_indent_and_1	The first is the indent:
+s05_read_the_file_the_indent_and_2	it's four spaces, and the lines of a block line up.
+s05_read_the_file_the_indent_and_3	The second is arrow END:
+s05_read_the_file_the_indent_and_4	the block is done, and nothing under it runs.
+s05_read_the_file_the_indent_and_5	And the third is these two blocks, which you already know.
+s05_read_the_file_the_indent_and_6	Each one ends by saying a name.
+s05_read_the_file_the_indent_and_7	This one says ghost ship found,
+s05_read_the_file_the_indent_and_8	which is your word, from Lecture 7.
+s05_read_the_file_the_indent_and_9	And the step in your fact sheet says,
+s05_read_the_file_the_indent_and_10	done when, signal, ghost ship found.
+s05_read_the_file_the_indent_and_11	So that step isn't finished by reach.
+s05_read_the_file_the_indent_and_12	It's finished by the script, by name.
+s05_read_the_file_the_indent_and_13	You'll paste that same line in a few minutes,
+s05_read_the_file_the_indent_and_14	and decide for yourself when it's said.
+s06_your_first_edit_0	Your mission has a title, from Lecture 3,
+s06_your_first_edit_1	but the map inside it is still called AMD Sample.
+s06_your_first_edit_2	So change the words between the quotes.
+s06_your_first_edit_3	The line under it is the description.
+s06_your_first_edit_4	It has one quote mark, at the start, and none at the end,
+s06_your_first_edit_5	and that's how it's meant to be.
+s06_your_first_edit_6	Just keep it on one line.
+s07_one_check_two_files_0	It's one command, as always.
+s07_one_check_two_files_1	Look at the last line: one AMD, and one mast.
+s07_one_check_two_files_2	Lint has been reading the script every time,
+s07_one_check_two_files_3	it's just never had anything to say.
+s07_one_check_two_files_4	So now I break it, by taking out one quote mark.
+s07_one_check_two_files_5	Lint says story dot mast, compile, line twenty-five,
+s07_one_check_two_files_6	and it can't read that line.
+s07_one_check_two_files_7	And its last sentence says
+s07_one_check_two_files_8	nothing in this mission runs until this is fixed.
+s07_one_check_two_files_9	Here's the game with that file:
+s07_one_check_two_files_10	a page headed Mast Compiler Errors, and nothing else.
+s07_one_check_two_files_11	Nothing of mine is running,
+s07_one_check_two_files_12	and that's from one character.
+s07_one_check_two_files_13	So, run lint after every change to this file.
+s08_a_step_that_waits_for_the_sc_0	Now back to the story,
+s08_a_step_that_waits_for_the_sc_1	which runs hulk, lifeboat, home.
+s08_a_step_that_waits_for_the_sc_2	I want a wait before home,
+s08_a_step_that_waits_for_the_sc_3	so the lifeboat step now reveals a new one.
+s08_a_step_that_waits_for_the_sc_4	And the new step is done when it hears a signal, tug arrived,
+s08_a_step_that_waits_for_the_sc_5	which is my own word.
+s08_a_step_that_waits_for_the_sc_6	Lint says the tug step waits for the signal tug arrived,
+s08_a_step_that_waits_for_the_sc_7	and nothing in the mission sends it.
+s08_a_step_that_waits_for_the_sc_8	You've seen this warning before,
+s08_a_step_that_waits_for_the_sc_9	and it's right, because nothing does yet.
+s09_card_one_when_a_step_starts_0	Go to the end of the file,
+s09_card_one_when_a_step_starts_1	and it's always the end.
+s09_card_one_when_a_step_starts_2	First a note, so I know what this is, and then the route.
+s09_card_one_when_a_step_starts_3	The game says quest started
+s09_card_one_when_a_step_starts_4	every time a hidden step is revealed,
+s09_card_one_when_a_step_starts_5	and this block listens for that.
+s09_card_one_when_a_step_starts_6	But it runs only if the step is this one, salvage, slash, tug,
+s09_card_one_when_a_step_starts_7	which is the address you write after reveal.
+s09_card_one_when_a_step_starts_8	Then there's one line,
+s09_card_one_when_a_step_starts_9	and you've read this line before,
+s09_card_one_when_a_step_starts_10	because it's how the hulk gets on the map.
+s09_card_one_when_a_step_starts_11	It says where, and its name,
+s09_card_one_when_a_step_starts_12	then its side and its role,
+s09_card_one_when_a_step_starts_13	and what it looks like.
+s09_card_one_when_a_step_starts_14	Those are the same facts as a landmark.
+s09_card_one_when_a_step_starts_15	The difference is when.
+s09_card_one_when_a_step_starts_16	And then arrow, END.
+s10_cards_two_and_three_0	Card two is the line from line ninety-three,
+s10_cards_two_and_three_1	with my word in it, tug arrived,
+s10_cards_two_and_three_2	and it's lined up with the line above.
+s10_cards_two_and_three_3	Lint is clean, because something sends the signal now.
+s10_cards_two_and_three_4	Card three is a wait, of twenty seconds.
+s10_cards_two_and_three_5	The lines run from the top down,
+s10_cards_two_and_three_6	so it waits, brings the tug in, and finishes the step.
+s10_cards_two_and_three_7	Then my word list gets a new role and a new signal,
+s10_cards_two_and_three_8	and lint is clean.
+s11_four_mistakes_0	Here are four mistakes.
+s11_four_mistakes_1	The first is one space short, on one line.
+s11_four_mistakes_2	Lint tells me: bad indentation, and the line.
+s11_four_mistakes_3	The second is a line pasted one line too low, under arrow END.
+s11_four_mistakes_4	It's a warning this time,
+s11_four_mistakes_5	and it says this line never runs.
+s11_four_mistakes_6	It's only a warning,
+s11_four_mistakes_7	but it would stop my story.
+s11_four_mistakes_8	The third is the card pasted in the middle of the map.
+s11_four_mistakes_9	It's the same warning,
+s11_four_mistakes_10	but about a line of the template,
+s11_four_mistakes_11	and the first thing it says is to move that line up.
+s11_four_mistakes_12	Don't do that, because that line is fine.
+s11_four_mistakes_13	My card cut the map in two,
+s11_four_mistakes_14	and the game would start with no station and no hulk.
+s11_four_mistakes_15	So move the card, to the end of the file.
+s11_four_mistakes_16	The fourth is the address, misspelled.
+s11_four_mistakes_17	Lint says clean, and there's no tug, ever.
+s11_four_mistakes_18	Nothing can check that word for you.
+s11_four_mistakes_19	The page has the list of what lint cannot see.
+s11_four_mistakes_20	It's short, so read it twice.
+s12_play_it_0	Out to the hulk, and on to the lifeboat.
+s12_play_it_1	There's the new step, and no tug, so now I wait.
+s12_play_it_2	And there she is, the Salvage Tug.
+s12_play_it_3	The step is done, and home is revealed.
+s12_play_it_4	So it's back to the station, and the win.
+s12_play_it_5	And both logs are empty.
+s13_your_turn_0	So that's three cards: when, finish a step, and wait.
+s13_your_turn_1	For your turn, paste the first one again,
+s13_your_turn_2	change started to succeeded,
+s13_your_turn_3	and make something of your own arrive when a step is finished.
+s13_your_turn_4	Next time is the capstone: you ship a mission.

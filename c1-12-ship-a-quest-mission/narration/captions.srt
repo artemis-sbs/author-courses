@@ -1,0 +1,487 @@
+1
+00:00:00,000 --> 00:00:01,224
+That's a mission I wrote,
+
+2
+00:00:01,674 --> 00:00:04,820
+starting on a computer that isn't mine.
+
+3
+00:00:05,720 --> 00:00:08,011
+Today is the last lecture of this class,
+
+4
+00:00:08,461 --> 00:00:10,480
+and there's nothing new to learn in it.
+
+5
+00:00:11,380 --> 00:00:13,209
+Today, you simply finish it.
+
+6
+00:00:15,009 --> 00:00:16,525
+You make the mission yours,
+
+7
+00:00:16,975 --> 00:00:18,362
+you check it, you print it,
+
+8
+00:00:18,812 --> 00:00:23,039
+and then you give it to someone.
+
+9
+00:00:24,239 --> 00:00:25,567
+Don't start by typing.
+
+10
+00:00:26,467 --> 00:00:28,162
+What you've built is a shape:
+
+11
+00:00:28,612 --> 00:00:31,049
+go out, find a second thing, wait,
+
+12
+00:00:31,499 --> 00:00:34,124
+and come home, against a clock.
+
+13
+00:00:35,024 --> 00:00:37,939
+Every slot in that shape has a name that a player reads,
+
+14
+00:00:38,389 --> 00:00:40,972
+and a handle that the game uses.
+
+15
+00:00:41,872 --> 00:00:44,359
+So write your story into the slots first.
+
+16
+00:00:46,159 --> 00:00:49,139
+Here's mine: a navigation beacon has gone dark,
+
+17
+00:00:49,589 --> 00:00:53,094
+its keeper is missing, and a storm is ten minutes out.
+
+18
+00:00:54,294 --> 00:00:58,537
+There's one rule: change names and sentences, and leave every key.
+
+19
+00:00:59,437 --> 00:01:01,259
+The square brackets are mine,
+
+20
+00:01:01,709 --> 00:01:03,634
+and the round brackets are the game's.
+
+21
+00:01:04,534 --> 00:01:07,252
+So my beacon is still called derelict underneath,
+
+22
+00:01:07,702 --> 00:01:10,372
+and no player will ever see that word.
+
+23
+00:01:12,172 --> 00:01:14,709
+I change the win line, and the lose line.
+
+24
+00:01:15,609 --> 00:01:17,683
+Then an objective, where the number in it
+
+25
+00:01:18,133 --> 00:01:20,471
+must still agree with the line under it.
+
+26
+00:01:21,371 --> 00:01:22,470
+And then a reading.
+
+27
+00:01:23,370 --> 00:01:26,809
+That comes to fifty-eight changes, and not one key.
+
+28
+00:01:28,609 --> 00:01:32,856
+Then the script, which has five places, all between quote marks.
+
+29
+00:01:33,756 --> 00:01:36,594
+It's the first pair of quotes on each line.
+
+30
+00:01:37,494 --> 00:01:40,618
+The second pair is the side and the roles, so leave it.
+
+31
+00:01:41,818 --> 00:01:45,263
+Lint says clean, because words can't break the chain,
+
+32
+00:01:45,713 --> 00:01:48,022
+and that's why we change them first.
+
+33
+00:01:49,222 --> 00:01:51,734
+Now, two files you haven't opened.
+
+34
+00:01:52,634 --> 00:01:56,112
+This one is what the server shows in its list of missions,
+
+35
+00:01:56,562 --> 00:01:58,766
+and you change two lines in it.
+
+36
+00:01:59,666 --> 00:02:02,720
+And there's one rule here that matters more than any other today:
+
+37
+00:02:03,170 --> 00:02:06,385
+no hyphen, and no colon, in these two values.
+
+38
+00:02:07,285 --> 00:02:11,679
+The game reads this file for every mission, before it shows anything,
+
+39
+00:02:12,129 --> 00:02:14,395
+and a hyphen here stops the game.
+
+40
+00:02:15,295 --> 00:02:17,099
+Not your mission, the game.
+
+41
+00:02:18,899 --> 00:02:22,189
+Lint reads this file now, and it stops you with an error.
+
+42
+00:02:23,089 --> 00:02:24,025
+Doctor doesn't read it.
+
+43
+00:02:24,925 --> 00:02:27,860
+So keep to plain words, commas and full stops,
+
+44
+00:02:28,310 --> 00:02:31,399
+and run lint after you change it.
+
+45
+00:02:33,199 --> 00:02:35,297
+Then the ship, on line seventy.
+
+46
+00:02:36,197 --> 00:02:39,822
+Change the word between the quote marks, and nothing else.
+
+47
+00:02:40,722 --> 00:02:44,776
+If I break this line, my ship is Artemis again, and nothing tells me.
+
+48
+00:02:45,676 --> 00:02:47,128
+I find out when I play.
+
+49
+00:02:48,328 --> 00:02:50,665
+You don't have to do this.
+
+50
+00:02:51,565 --> 00:02:53,107
+But if a key bothers you,
+
+51
+00:02:53,557 --> 00:02:56,354
+there's one way, and only one:
+
+52
+00:02:56,804 --> 00:03:00,613
+Replace, across the whole folder, with both buttons on.
+
+53
+00:03:01,513 --> 00:03:03,858
+Read the list first: there are nine places,
+
+54
+00:03:04,308 --> 00:03:08,048
+and look at the last one, which is in the script, on my card.
+
+55
+00:03:08,948 --> 00:03:11,124
+So it's replace all, save all, and lint.
+
+56
+00:03:11,574 --> 00:03:13,593
+It's clean, and it works.
+
+57
+00:03:15,393 --> 00:03:16,764
+Now for the other way.
+
+58
+00:03:17,664 --> 00:03:20,166
+I change it by hand, all through the fact sheet.
+
+59
+00:03:21,066 --> 00:03:23,659
+Lint says clean, and it's broken.
+
+60
+00:03:24,559 --> 00:03:27,696
+The tender never comes, and the game can't be won.
+
+61
+00:03:28,596 --> 00:03:30,628
+The address on the card
+
+62
+00:03:31,078 --> 00:03:33,898
+is the one place lint can't follow a key.
+
+63
+00:03:35,098 --> 00:03:38,197
+Everybody in this class has a folder called My Mission.
+
+64
+00:03:39,097 --> 00:03:40,887
+So if you send yours to a classmate,
+
+65
+00:03:41,337 --> 00:03:43,361
+it lands on top of theirs.
+
+66
+00:03:44,261 --> 00:03:47,135
+That's why it gets its own name, with no spaces.
+
+67
+00:03:48,035 --> 00:03:50,687
+Nothing inside the files knows the folder's name.
+
+68
+00:03:51,587 --> 00:03:54,728
+Only I do, in every command from now on.
+
+69
+00:03:55,928 --> 00:03:57,185
+There are three checks,
+
+70
+00:03:57,635 --> 00:03:59,959
+and each one sees what the others can't.
+
+71
+00:04:00,859 --> 00:04:03,568
+Lint asks, is the writing right?
+
+72
+00:04:04,468 --> 00:04:07,473
+Doctor asks, is everything this mission needs on this computer?
+
+73
+00:04:08,373 --> 00:04:10,255
+Look for the block with my folder's name,
+
+74
+00:04:10,705 --> 00:04:13,787
+and then the last two words: zero problems.
+
+75
+00:04:14,687 --> 00:04:16,578
+Doctor never reads my writing.
+
+76
+00:04:18,378 --> 00:04:20,001
+And then comes the play.
+
+77
+00:04:20,901 --> 00:04:24,101
+There's my ship, my station, and my beacon.
+
+78
+00:04:24,551 --> 00:04:27,170
+Then the skiff, the wait, and the tender.
+
+79
+00:04:28,070 --> 00:04:30,249
+Then home, and my win line.
+
+80
+00:04:31,149 --> 00:04:32,354
+Both logs are empty.
+
+81
+00:04:33,254 --> 00:04:36,984
+And then I read every sentence once more, as a reader.
+
+82
+00:04:38,184 --> 00:04:40,361
+My mission is also a text,
+
+83
+00:04:40,811 --> 00:04:42,199
+and it takes one command.
+
+84
+00:04:43,099 --> 00:04:47,466
+It has a title, it says player, which means leave out the machinery,
+
+85
+00:04:47,916 --> 00:04:49,467
+and it asks for a PDF.
+
+86
+00:04:50,367 --> 00:04:52,472
+That makes two files, in a new folder.
+
+87
+00:04:54,272 --> 00:04:55,890
+This is for a friend who reads,
+
+88
+00:04:56,340 --> 00:04:58,530
+and not for a friend who plays,
+
+89
+00:04:58,980 --> 00:05:01,288
+because it's the whole plot, in order.
+
+90
+00:05:02,188 --> 00:05:05,082
+And there's one for me, called the bible.
+
+91
+00:05:05,982 --> 00:05:08,439
+It goes beat one, beat two,
+
+92
+00:05:08,889 --> 00:05:10,709
+with reached from, and leads to.
+
+93
+00:05:11,609 --> 00:05:13,462
+If a step's in the wrong place here,
+
+94
+00:05:13,912 --> 00:05:16,635
+a Then line points at the wrong place.
+
+95
+00:05:17,535 --> 00:05:19,691
+There's one thing it gets wrong:
+
+96
+00:05:20,141 --> 00:05:23,687
+it says win, false, and lose, false.
+
+97
+00:05:24,587 --> 00:05:27,109
+My two sentences are fine.
+
+98
+00:05:27,559 --> 00:05:30,480
+It's the printing that isn't.
+
+99
+00:05:31,680 --> 00:05:34,501
+A mission is a folder,
+
+100
+00:05:34,951 --> 00:05:37,215
+so to share it, I send the folder.
+
+101
+00:05:38,115 --> 00:05:40,681
+First I take out what isn't the mission.
+
+102
+00:05:41,581 --> 00:05:44,926
+That's my documents, because they're the plot,
+
+103
+00:05:45,376 --> 00:05:47,460
+and the scratch folder and the logs,
+
+104
+00:05:47,910 --> 00:05:49,518
+which come back by themselves.
+
+105
+00:05:50,418 --> 00:05:51,663
+That leaves seven files,
+
+106
+00:05:52,113 --> 00:05:54,776
+and it's all seven, not only the two I wrote.
+
+107
+00:05:55,676 --> 00:05:57,763
+Then the folder itself gets zipped,
+
+108
+00:05:58,213 --> 00:06:00,680
+and it comes to seven kilobytes.
+
+109
+00:06:01,880 --> 00:06:04,297
+My friend puts the folder where mine is.
+
+110
+00:06:05,197 --> 00:06:06,976
+There's one check: open it,
+
+111
+00:06:07,426 --> 00:06:10,390
+and the files are right there, not another folder.
+
+112
+00:06:11,290 --> 00:06:14,537
+Then it's four lines: is the tool new enough,
+
+113
+00:06:14,987 --> 00:06:16,802
+and if it isn't, update it.
+
+114
+00:06:17,702 --> 00:06:19,866
+Then fetch the libraries this mission names,
+
+115
+00:06:20,316 --> 00:06:24,093
+because even if they play every week, theirs may be older than mine.
+
+116
+00:06:24,993 --> 00:06:26,310
+And then start it.
+
+117
+00:06:27,510 --> 00:06:28,783
+And that's the class.
+
+118
+00:06:29,683 --> 00:06:31,882
+The rubric on the page is what done means,
+
+119
+00:06:32,332 --> 00:06:34,584
+and you can tick every line yourself.
+
+120
+00:06:35,484 --> 00:06:37,083
+Then do the first exercise:
+
+121
+00:06:37,533 --> 00:06:40,284
+send it to one person, and don't help them.
+
+122
+00:06:42,084 --> 00:06:44,549
+Class 2 puts people in your story.

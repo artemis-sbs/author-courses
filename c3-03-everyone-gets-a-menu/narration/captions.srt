@@ -1,0 +1,151 @@
+1
+00:00:00,000 --> 00:00:01,739
+Same room. Same moment.
+
+2
+00:00:02,189 --> 00:00:03,493
+Two different menus.
+
+3
+00:00:03,943 --> 00:00:11,770
+The doctor can read something the engineer cannot, and neither of them can open the captain's log alone.
+
+4
+00:00:12,220 --> 00:00:19,611
+That is the whole trick of a boarding party, and it is one word and one semicolon.
+
+5
+00:00:20,811 --> 00:00:29,507
+A choice you already know, with two things added. if medical: only someone whose job is medical is offered it.
+
+6
+00:00:29,957 --> 00:00:34,304
+That word is the one on Roles in your roster.
+
+7
+00:00:34,754 --> 00:00:43,885
+Then a semicolon, and learn suits: when she takes it, the party knows a fact, and I have named it suits.
+
+8
+00:00:44,335 --> 00:00:52,596
+And the choice needs somewhere to go: a short room that says what she found, with one way back.
+
+9
+00:00:53,796 --> 00:00:56,404
+The same again for the engineer.
+
+10
+00:00:56,854 --> 00:01:02,507
+Now each of my two people has one thing only they can read.
+
+11
+00:01:03,707 --> 00:01:08,489
+learned is a number: how many different facts the party has.
+
+12
+00:01:08,939 --> 00:01:11,113
+The party, not the person.
+
+13
+00:01:11,563 --> 00:01:18,954
+So this choice appears for everyone once the surgeon and the engineer have each done their part.
+
+14
+00:01:19,404 --> 00:01:24,187
+And a fact counts once, however many times they read it.
+
+15
+00:01:25,387 --> 00:01:29,735
+A party that walks here first finds a locked log.
+
+16
+00:01:30,185 --> 00:01:34,533
+If I say nothing, they think the game is broken.
+
+17
+00:01:34,983 --> 00:01:41,070
+So two versions of the line, and a condition in curly brackets on each.
+
+18
+00:01:41,520 --> 00:01:45,867
+Too early, they are told there is more to find.
+
+19
+00:01:46,317 --> 00:01:49,361
+Later, they are told it is time.
+
+20
+00:01:50,561 --> 00:01:51,561
+Three rules.
+
+21
+00:01:52,011 --> 00:01:58,098
+Nobody gets an empty menu, so every room keeps a choice with no if.
+
+22
+00:01:58,548 --> 00:02:01,591
+A reading goes somewhere and comes back.
+
+23
+00:02:02,041 --> 00:02:08,128
+And count your facts: two facts, and the log asks for two. Lint. Clean.
+
+24
+00:02:08,578 --> 00:02:10,752
+It catches a misspelled learn.
+
+25
+00:02:11,202 --> 00:02:14,680
+It catches the sign the wrong way round.
+
+26
+00:02:15,130 --> 00:02:18,174
+It does not catch a misspelled job.
+
+27
+00:02:18,624 --> 00:02:26,450
+That one you check by eye: every word after if is learned, or a job from your roster.
+
+28
+00:02:27,650 --> 00:02:28,650
+Two people.
+
+29
+00:02:29,100 --> 00:02:32,578
+The doctor has it; the chief does not.
+
+30
+00:02:33,028 --> 00:02:39,550
+Straight to the bridge: locked, and it says so. Back. She reads. Aft. He reads.
+
+31
+00:02:40,000 --> 00:02:42,174
+Forward: and there it is.
+
+32
+00:02:42,624 --> 00:02:46,537
+Now watch what happens when the doctor stays home.
+
+33
+00:02:46,987 --> 00:02:53,074
+Same room, one person, and her reading comes to me, marked: covering for medical.
+
+34
+00:02:53,524 --> 00:02:56,567
+A short crew still finishes the story.
+
+35
+00:02:57,767 --> 00:03:02,115
+Your third crew member has a job you made up.
+
+36
+00:03:02,565 --> 00:03:05,609
+Give them a reading on the bridge.
+
+37
+00:03:06,059 --> 00:03:14,320
+Leave the log at two, and now any two of three will open it: more than one way through.
+
+38
+00:03:14,770 --> 00:03:22,161
+Next time, we ask not only what someone's job is, but how good they are at it.

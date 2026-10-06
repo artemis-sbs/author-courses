@@ -1,0 +1,34 @@
+s01_cold_open_0	My engineer, three rooms, and a hulk nobody has opened in years.
+s01_cold_open_1	She is the same person on the bridge and aboard it, and all of it is text I wrote in one file.
+s01_cold_open_2	Today you write your own.
+s02_your_crew_0	A new section at the bottom.
+s02_your_crew_1	The word crew on the first line of the fence says what it is.
+s02_your_crew_2	Ship says whose crew.
+s02_your_crew_3	And Names: locked says these are my people: without it, a player who has saved their own name keeps it.
+s02_your_crew_4	Then one record per person: the console they sit at, a face, and a job.
+s02_your_crew_5	Whoever sits at Engineering is the Chief, here and aboard the hulk.
+s03_the_place_0	A room is a record.
+s03_the_place_1	One line starting with a percent sign: what the party finds when they walk in.
+s03_the_place_2	Then the ways out.
+s03_the_place_3	Words in square brackets are what the crew reads.
+s03_the_place_4	The key in round brackets is the room it leads to.
+s03_the_place_5	And empty round brackets lead nowhere: that choice ends the visit and sends everyone home.
+s04_two_rules_0	Two rules, and they are the difference between a place and a trap.
+s04_two_rules_1	Every room has a way back.
+s04_two_rules_2	Every room has a way home.
+s04_two_rules_3	Check them by eye, because lint only helps with half of it: it warns if a choice points at a room that does not exist, and says nothing about a room with no way out.
+s05_start_it_0	Something has to say when.
+s05_start_it_1	Our quest already knows the moment: the ship is alongside.
+s05_start_it_2	So the quest sends a signal when it completes, and this card listens for it.
+s05_start_it_3	You paste it; you do not write it.
+s05_start_it_4	One line reads the rooms.
+s05_start_it_5	And one line runs the whole visit: it opens the party, starts the first room, and when the last choice is taken it brings everyone home.
+s05_start_it_6	Three things on the card are yours to change: the signal name, the name of the place, and the room they arrive in.
+s06_check_it_0	Lint. Clean.
+s06_check_it_1	And here is the one mistake it does catch.
+s07_play_it_0	Engineering, and I am Chief Okoro. Alongside.
+s07_play_it_1	The quest completes, and the party forms. Down. The airlock. Aft. Back. Forward. Back.
+s07_play_it_2	And home: I did not press anything to get back here.
+s08_your_turn_0	Add a fourth room, and a third person for Helm.
+s08_your_turn_1	Give the room a way in, a way back and a way home.
+s08_your_turn_2	Next time, everyone gets their own menu.

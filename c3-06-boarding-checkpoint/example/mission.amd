@@ -1,0 +1,256 @@
+// Every piece of authored CONTENT in this mission lives in this one file. story.mast holds
+// only the logic that reacts to it.
+//
+// The shape is a table of contents: one `#` root, a `##` section per loader, and `###` /
+// `####` records inside. story.mast parses this once and hands each section to its loader.
+//
+// A record is `### [Display Name](key)`, an optional `---` fenced block of fields, then
+// body prose. Comments are `//` - note that .mast uses `#` instead.
+
+# [Sample Mission](sample_mission)
+
+
+// ---- Quests. Nested records are steps of the arc above them, addressed `arc/step`.
+## [Quests](quests)
+
+### [First Contact](first_contact)
+---
+Arc
+Scope: shared
+Starts when: at once
+---
+A derelict has drifted into the sector. Find out what happened to it.
+
+#### [Find the Derelict](find)
+---
+Scope: shared
+Starts when: at once
+Done when: signal derelict_found
+Then: reveal first_contact/study
+---
+Fly out and locate the drifting hulk.
+
+#### [Study the Derelict](study)
+---
+Scope: shared
+Starts when: revealed
+Done when: signal derelict_scanned
+---
+Science should take a full scan of the hull.
+
+### [Close Inspection](approach)
+---
+Scope: shared
+Starts when: at once
+Objective: Close to within 500 of the hulk
+Done when: reach derelict 500
+Then: signal board_hulk
+Reward: 100 credits
+---
+The hulk is not answering hails. Bring the ship in close and take a look.
+
+### [Account for the Crew](account)
+---
+Scope: shared
+Starts when: at once
+Objective: Find out what became of the hulk's crew
+Done when: signal berths_read
+Reward: 150 credits
+---
+Somebody crewed that ship. Command wants to know what became of them.
+
+// ---- The two endings. Each one is hidden until the party makes its choice aboard.
+### [Stand By the Sleepers](stand_by)
+---
+Scope: shared
+Starts when: revealed
+Objective: Hold station for 30 seconds while the crew wakes
+Done when: 30 seconds
+Reward: 300 credits
+---
+Twelve people are waking up cold. Stay close until they can stand.
+
+### [Carry Word Home](carry_word)
+---
+Scope: shared
+Starts when: revealed
+Objective: Return to within 1000 of DS 1
+Done when: reach station 1000
+Reward: 200 credits
+---
+They asked for a doctor. Go and get one.
+
+
+// ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
+// it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
+// several readings picked at random - so a second scan does not read identically.
+## [Scans](scans)
+
+### [Derelict Hull](derelict_scan)
+---
+Scan of: derelict
+Tab: scan
+---
+% The hull is cold. Whatever happened here happened a long time ago.
+% Hull plating is intact but every port is dark. No power anywhere aboard.
+
+### [Derelict Materials](derelict_mat)
+---
+Scan of: derelict
+Tab: mat
+---
+% Scoring along the plating matches no weapon in use in this sector.
+
+
+// ---- The crew. Each record is the person at one console - on the bridge, and aboard
+// the hulk. `Names: locked` makes them YOUR people: a player's own saved name is not used.
+// `Skills:` says how good each one is: a word, a number, a comma. A job with no number
+// counts as 2.
+## [The Watch](watch)
+---
+crew
+Ship: Artemis
+Names: locked
+---
+The people aboard for this story.
+
+### [Chief Okoro](okoro)
+---
+Console: engineering
+Face: terran_female
+Roles: engineering
+Skills: engineering 4, science 1
+---
+
+### [Dr Hale](hale)
+---
+Console: science
+Face: terran_male
+Roles: medical
+Skills: medical 4, science 3
+---
+
+### [Mr Pell](pell)
+---
+Console: helm
+Face: terran_male
+Roles: quartermaster
+Skills: quartermaster 3
+---
+
+
+// ---- Where they go. Six places, and the short rooms that hang off them.
+//
+//   airlock - spine - berths   (the surgeon's reading)
+//                   - engine   (the engineer's reading, and the check)
+//                   - hold     (the quartermaster's reading, and one for a good scientist)
+//                   - cabin    (opens at three facts; the two endings)
+## [Scenes](boarding)
+
+### [The Airlock](airlock)
+% The inner door stands open. The air beyond is thin and very cold, and every light is the dull red of a ship running on her last cell.
+
+- [Go inboard, to the spine](spine)
+- [Return to the ship]()
+
+### [The Spine](spine)
+%{learned < 3} One long corridor, bow to stern, frost on every hatch. The captain's hatch is sealed, and the panel beside it asks a question you cannot answer yet.
+%{learned >= 3} One long corridor, bow to stern, frost on every hatch. The captain's hatch is sealed, and now you know what the panel beside it wants to hear.
+
+- [Open the captain's hatch](cabin) if learned >= 3
+- [Go forward, to the berth deck](berths)
+- [Go aft, to the engine room](engine)
+- [Go below, to the hold](hold)
+- [Go back to the airlock](airlock)
+
+### [The Berth Deck](berths)
+% Twelve cold berths in two rows, lids down, frost on the glass. There is a shape behind every lid.
+
+- [Read the berth monitors](monitors) if medical ; learn alive, signal berths_read
+- [Go back to the spine](spine)
+
+### [Twelve Heartbeats](monitors)
+% Twelve heartbeats, four to the minute. They are not dead. They are asleep, and the berths are keeping them that way on almost nothing.
+
+- [Step back](berths)
+
+### [The Engine Room](engine)
+% The main cell is dark. One small cell in the corner is still warm, and every cable in the room runs to it.
+
+- [Read the engine log](engine_log) if engineering ; learn rationed, signal log_read
+- [Try to bring up the main cell](cell_up) ; check engineering 9 else cell_down, learn reserve
+- [Go back to the spine](spine)
+
+### [The Engine Log](engine_log)
+% She was never wrecked. Someone shut down everything but the berths, by hand, to make one small cell last for years.
+
+- [Step back](engine)
+
+### [The Main Cell Holds](cell_up)
+% The main cell catches and holds. The lights come up white along the spine, and somewhere forward a pump begins to turn.
+
+- [Step back](engine)
+
+### [The Main Cell Drops Out](cell_down)
+% The main cell coughs twice and drops out. The red lights dim, then steady. It was worth a try.
+
+- [Step back](engine)
+
+### [The Hold](hold)
+% Racks from deck to overhead, and nearly all of them bare. Somebody ate their way through this hold very slowly.
+
+- [Count the stores](stores) if quartermaster ; learn stores
+- [Pull the cargo scanner's last sweep](sweep) if skill science >= 3 ; learn sweep
+- [Go back to the spine](spine)
+
+### [Nine Days](stores)
+% Food for twelve people for nine days. Water for six. Whatever they were waiting for, they could not wait for it awake.
+
+- [Step back](hold)
+
+### [The Last Sweep](sweep)
+% The scanner logged one thing leaving this hold: the ship's only boat, with nobody in it and a beacon tied to the seat. They sent for help. It never came.
+
+- [Step back](hold)
+
+### [The Captain's Cabin](cabin)
+% The captain's last order is taped to the desk: DO NOT WAKE US WITHOUT A DOCTOR. Under it is the master switch for the berths.
+
+- [Throw the switch and wake them](woken) ; accepts stand_by
+- [Leave them sleeping and go for help](asleep) ; accepts carry_word
+- [Go back to the spine](spine)
+
+### [Twelve Lids](woken)
+% The lids lift one at a time. Twelve people, grey and shaking, and the first of them asks what year it is.
+
+- [Return to the ship]()
+
+### [Lights Out](asleep)
+% You close the hatch on twelve sleepers and the cold. Somebody at DS 1 is going to have to send a hospital ship.
+
+- [Return to the ship]()
+
+
+// ---- Side stories. One quest for one person: `For:` names a job from the crew roster.
+// story.mast hands each story to that person when they beam down.
+## [Side Stories](side_stories)
+
+### [Twelve Berths](twelve_berths)
+---
+For: medical
+Starts when: at once
+Objective: Find out whether anyone in the berths is alive
+Done when: signal berths_read
+Reward: 50 credits
+---
+A shape behind every lid. Somebody should look at the monitors.
+
+### [The Last Watch](last_watch)
+---
+For: engineering
+Starts when: at once
+Objective: Find out why the main cell is dark
+Done when: signal log_read
+Reward: 50 credits
+---
+A ship does not go dark this neatly by accident. Find out who did it, and why.

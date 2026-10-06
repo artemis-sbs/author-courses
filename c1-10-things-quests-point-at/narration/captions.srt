@@ -1,0 +1,495 @@
+1
+00:00:00,000 --> 00:00:02,142
+That sentence isn't the game's.
+
+2
+00:00:03,042 --> 00:00:04,934
+I wrote it, in a text file,
+
+3
+00:00:05,384 --> 00:00:07,964
+and it took me about a minute.
+
+4
+00:00:08,864 --> 00:00:11,011
+Today you give the game two things to point at:
+
+5
+00:00:11,461 --> 00:00:13,517
+some words for Science to find,
+
+6
+00:00:13,967 --> 00:00:17,083
+and a place on the map that wasn't there before.
+
+7
+00:00:18,883 --> 00:00:20,455
+You know these words already.
+
+8
+00:00:21,355 --> 00:00:24,331
+In Lecture 7 you gave the hulk a role of your own,
+
+9
+00:00:24,781 --> 00:00:26,456
+right here in this list.
+
+10
+00:00:27,356 --> 00:00:31,597
+And in Lecture 8, your quest said reach derelict.
+
+11
+00:00:32,497 --> 00:00:34,474
+A quest never names an object.
+
+12
+00:00:34,924 --> 00:00:38,236
+It names a role, and the game finds whatever wears it.
+
+13
+00:00:40,036 --> 00:00:44,301
+Scan text works the same way: Scan of, derelict.
+
+14
+00:00:45,201 --> 00:00:48,820
+Until now, a role always came from this file, the script.
+
+15
+00:00:49,720 --> 00:00:51,593
+Today you place a thing yourself,
+
+16
+00:00:52,043 --> 00:00:55,530
+and you give it its role in your own file.
+
+17
+00:00:57,330 --> 00:00:59,408
+So it's one idea: give a thing a role,
+
+18
+00:00:59,858 --> 00:01:02,536
+and then point at the role.
+
+19
+00:01:03,736 --> 00:01:05,183
+There are three records here.
+
+20
+00:01:06,083 --> 00:01:07,707
+Two came with the template,
+
+21
+00:01:08,157 --> 00:01:10,697
+and the third is yours, from Lecture 5.
+
+22
+00:01:11,597 --> 00:01:15,795
+There's Hull, on the scan tab, Materials, on the mat tab,
+
+23
+00:01:16,245 --> 00:01:18,533
+and Intel, on the role you added.
+
+24
+00:01:19,433 --> 00:01:20,785
+There are five tabs in all:
+
+25
+00:01:21,235 --> 00:01:24,096
+scan, status, intel, mat, and bio.
+
+26
+00:01:24,996 --> 00:01:29,464
+Each line that starts with a percent sign is one reading,
+
+27
+00:01:29,914 --> 00:01:33,224
+and there are two lines here, so the game picks one.
+
+28
+00:01:34,424 --> 00:01:35,947
+The hulk has three tabs,
+
+29
+00:01:36,397 --> 00:01:38,808
+so I'm going to give it a fourth, called bio.
+
+30
+00:01:39,708 --> 00:01:41,994
+It's the same role, a different tab,
+
+31
+00:01:42,444 --> 00:01:44,465
+and this time three readings.
+
+32
+00:01:46,265 --> 00:01:48,012
+There are five rules for scan text.
+
+33
+00:01:48,912 --> 00:01:50,478
+One reading is one line,
+
+34
+00:01:50,928 --> 00:01:54,108
+because if I press Enter in the middle, I've made two readings,
+
+35
+00:01:54,558 --> 00:01:56,673
+and the crew gets half a sentence.
+
+36
+00:01:57,573 --> 00:01:59,945
+One role, spelled the way the hulk wears it.
+
+37
+00:02:00,845 --> 00:02:02,679
+One record for each role and tab.
+
+38
+00:02:03,579 --> 00:02:05,467
+Always write a Tab line.
+
+39
+00:02:06,367 --> 00:02:09,167
+And no curly brackets, at all.
+
+40
+00:02:10,967 --> 00:02:12,545
+Lint checks the first four.
+
+41
+00:02:13,445 --> 00:02:15,232
+The fifth it can't check,
+
+42
+00:02:15,682 --> 00:02:19,061
+because curly brackets are a real feature you haven't met yet,
+
+43
+00:02:19,511 --> 00:02:22,266
+so the game just shows them as you typed them.
+
+44
+00:02:23,466 --> 00:02:26,091
+Everything on the map so far came from the script file,
+
+45
+00:02:26,541 --> 00:02:28,410
+but this one is mine.
+
+46
+00:02:29,310 --> 00:02:31,719
+It's a new section, with two hashes,
+
+47
+00:02:32,169 --> 00:02:35,176
+and its key is this word: landmarks.
+
+48
+00:02:36,076 --> 00:02:37,096
+Then comes a record,
+
+49
+00:02:37,546 --> 00:02:41,131
+and its name is the name the object gets.
+
+50
+00:02:42,031 --> 00:02:43,849
+Kind says what sort of thing it is:
+
+51
+00:02:44,299 --> 00:02:46,999
+a wreck, a ship, or a station.
+
+52
+00:02:47,899 --> 00:02:49,636
+Roles is the label it wears.
+
+53
+00:02:50,536 --> 00:02:53,798
+This is the line lint has been telling you about since Lecture 7,
+
+54
+00:02:54,248 --> 00:02:56,983
+and it's the line that matters,
+
+55
+00:02:57,433 --> 00:03:00,186
+because it's the word everything else points at.
+
+56
+00:03:01,986 --> 00:03:03,360
+Art is what it looks like.
+
+57
+00:03:03,810 --> 00:03:06,108
+Lint can't check that word, so copy it.
+
+58
+00:03:07,008 --> 00:03:08,557
+And Loc is where it sits:
+
+59
+00:03:09,007 --> 00:03:11,409
+three numbers, in plain digits,
+
+60
+00:03:11,859 --> 00:03:13,854
+with no comma inside a number.
+
+61
+00:03:14,754 --> 00:03:18,413
+The station is at zero, zero, zero,
+
+62
+00:03:18,863 --> 00:03:23,219
+and the hulk is at zero, zero, nine thousand.
+
+63
+00:03:24,119 --> 00:03:27,349
+The middle number is height, so leave it at zero.
+
+64
+00:03:28,249 --> 00:03:30,333
+Mine goes here, off to one side.
+
+65
+00:03:32,133 --> 00:03:34,496
+And then one line in my word list,
+
+66
+00:03:34,946 --> 00:03:36,242
+so that the list stays true.
+
+67
+00:03:37,442 --> 00:03:38,830
+The lifeboat wears a role,
+
+68
+00:03:39,280 --> 00:03:42,508
+so it can have scan text: Scan of, lifeboat.
+
+69
+00:03:43,408 --> 00:03:46,662
+A scan tab comes first, always, and then intel.
+
+70
+00:03:47,562 --> 00:03:51,345
+And that's the whole trick:
+
+71
+00:03:51,795 --> 00:03:54,718
+the place and the words never mention each other.
+
+72
+00:03:55,618 --> 00:03:57,083
+They both mention the role.
+
+73
+00:03:58,883 --> 00:04:01,453
+Now for the story.
+
+74
+00:04:02,353 --> 00:04:04,981
+I add a new step, between the hulk and home,
+
+75
+00:04:05,431 --> 00:04:08,590
+and it's revealed, like last time.
+
+76
+00:04:09,490 --> 00:04:11,509
+I run lint before I go on,
+
+77
+00:04:11,959 --> 00:04:16,872
+and it says the step waits to be revealed, and nothing reveals it.
+
+78
+00:04:17,772 --> 00:04:19,506
+You saw that one in Lecture 9.
+
+79
+00:04:20,406 --> 00:04:22,947
+So I make one change up here:
+
+80
+00:04:23,397 --> 00:04:27,191
+Close Inspection now reveals the boat, and not home.
+
+81
+00:04:28,091 --> 00:04:32,539
+And it's clean, so the chain runs hulk, boat, home.
+
+82
+00:04:34,339 --> 00:04:35,559
+Now look at this line:
+
+83
+00:04:36,009 --> 00:04:39,278
+Done when, reach, lifeboat, five hundred.
+
+84
+00:04:40,178 --> 00:04:42,860
+That's a verb, a role, and a distance.
+
+85
+00:04:43,760 --> 00:04:47,043
+It's the role, from the Roles line, and not the name.
+
+86
+00:04:47,943 --> 00:04:50,735
+I gave the key the same word on purpose,
+
+87
+00:04:51,185 --> 00:04:53,029
+and the next scene shows why.
+
+88
+00:04:54,229 --> 00:04:56,716
+This is the one to remember.
+
+89
+00:04:57,616 --> 00:04:58,901
+I take out the Roles line,
+
+90
+00:04:59,351 --> 00:05:01,197
+and I get three warnings,
+
+91
+00:05:01,647 --> 00:05:04,549
+one for every line that pointed at the role.
+
+92
+00:05:05,449 --> 00:05:07,297
+Each one says the same thing:
+
+93
+00:05:07,747 --> 00:05:09,824
+lifeboat is the landmark's key,
+
+94
+00:05:10,274 --> 00:05:12,670
+and this line looks for a role.
+
+95
+00:05:13,570 --> 00:05:17,058
+The key in the round brackets is not a role.
+
+96
+00:05:18,858 --> 00:05:20,236
+So I put the line back.
+
+97
+00:05:21,136 --> 00:05:24,392
+Next, a tab that isn't one of the five, and lint tells me.
+
+98
+00:05:25,292 --> 00:05:28,280
+Then a plural: nothing wears a role called derelicts,
+
+99
+00:05:28,730 --> 00:05:31,328
+and that tab would never have appeared.
+
+100
+00:05:32,228 --> 00:05:36,144
+With no Loc line, the lifeboat would be sitting inside the station.
+
+101
+00:05:37,044 --> 00:05:40,774
+And for a section the story never asks for,
+
+102
+00:05:41,224 --> 00:05:42,901
+lint reads the story too,
+
+103
+00:05:43,351 --> 00:05:46,372
+and tells me which keys it does ask for.
+
+104
+00:05:48,172 --> 00:05:51,305
+There are two things it can't see, and they're on the page:
+
+105
+00:05:51,755 --> 00:05:53,438
+one hash on the lifeboat's heading,
+
+106
+00:05:53,888 --> 00:05:56,402
+and a comma inside a number.
+
+107
+00:05:57,302 --> 00:05:59,249
+Check those two by eye.
+
+108
+00:06:00,449 --> 00:06:02,219
+The Quest Log has two steps showing,
+
+109
+00:06:02,669 --> 00:06:04,548
+so it's out to the hulk.
+
+110
+00:06:05,448 --> 00:06:10,075
+Close Inspection is done, and there's the new step, Find the Lifeboat.
+
+111
+00:06:10,975 --> 00:06:13,424
+At Science I select the hulk,
+
+112
+00:06:13,874 --> 00:06:16,914
+and there's my fourth tab, with one of my three readings.
+
+113
+00:06:17,814 --> 00:06:21,416
+Now for the lifeboat,
+
+114
+00:06:21,866 --> 00:06:24,173
+which is on the map because I wrote four lines.
+
+115
+00:06:25,073 --> 00:06:28,264
+At Science again, I pick the boat off the map,
+
+116
+00:06:28,714 --> 00:06:31,092
+and those are my words on its scan tab.
+
+117
+00:06:31,992 --> 00:06:35,639
+Its intel tab is one that Science has to scan for,
+
+118
+00:06:36,089 --> 00:06:37,566
+and then that's mine too.
+
+119
+00:06:38,466 --> 00:06:40,797
+In we go, and the step is done.
+
+120
+00:06:41,697 --> 00:06:43,579
+Then it's home, and that's the win.
+
+121
+00:06:44,779 --> 00:06:47,160
+Now it's your turn: place a second thing of your own,
+
+122
+00:06:47,610 --> 00:06:49,956
+give it a role, and give the role some words,
+
+123
+00:06:50,406 --> 00:06:53,276
+and add a step the crew can take or leave.
+
+124
+00:06:54,176 --> 00:06:56,381
+Next time, we open the script file.

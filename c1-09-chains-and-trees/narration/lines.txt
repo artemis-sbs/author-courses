@@ -1,0 +1,108 @@
+s01_cold_open_0	Last time, you wrote one quest,
+s01_cold_open_1	and a quest is a task.
+s01_cold_open_2	This is a story, with a beginning, a middle,
+s01_cold_open_3	and an ending you can win or lose.
+s01_cold_open_4	It's still one text file, and it's still no code.
+s01_cold_open_5	And the quest you wrote last time
+s01_cold_open_6	is going to be its first step.
+s02_a_heading_for_the_story_0	A story needs a heading,
+s02_a_heading_for_the_story_1	and it's made the way every heading is:
+s02_a_heading_for_the_story_2	three hashes, a name, and a key.
+s02_a_heading_for_the_story_3	Inside the fence there's one word on a line by itself,
+s02_a_heading_for_the_story_4	the word Arc, with no colon after it.
+s02_a_heading_for_the_story_5	What that word says is,
+s02_a_heading_for_the_story_6	I'm not a task, I'm the heading over some tasks.
+s02_a_heading_for_the_story_7	The rest you've seen before:
+s02_a_heading_for_the_story_8	it's shared, it starts at once,
+s02_a_heading_for_the_story_9	and below the fence there's one line of story.
+s03_one_hash_0	Now for the trick, and it's just one more hash.
+s03_one_hash_1	Four hashes means, I'm a step of the three-hash record above me.
+s03_one_hash_2	And that's all nesting is.
+s03_one_hash_3	So Close Inspection was a quest,
+s03_one_hash_4	and now it's step one of Salvage Run,
+s03_one_hash_5	which gives it a full address: salvage, slash, approach.
+s04_the_second_step_and_where_no_0	Step two goes here, and not at the bottom of the section.
+s04_the_second_step_and_where_no_1	That's because a four-hash step belongs to the nearest three-hash heading above it,
+s04_the_second_step_and_where_no_2	and my quest from last time is a three-hash heading.
+s04_the_second_step_and_where_no_3	So if I type below it,
+s04_the_second_step_and_where_no_4	my new step joins the wrong story,
+s04_the_second_step_and_where_no_5	and the game is won at the first step.
+s04_the_second_step_and_where_no_6	Lint does warn about that,
+s04_the_second_step_and_where_no_7	and I'll show you the warning at the end,
+s04_the_second_step_and_where_no_8	because it comes with a trap.
+s04_the_second_step_and_where_no_9	Now, this line is new: Starts when, revealed.
+s04_the_second_step_and_where_no_10	It means this step is hidden and asleep, until something wakes it.
+s05_the_chain_0	Nothing wakes it yet, and lint knows that.
+s05_the_chain_1	It read the word revealed,
+s05_the_chain_2	went looking for the line that reveals this step, and found none.
+s05_the_chain_3	Now read to the end of the warning,
+s05_the_chain_4	because it writes the line out for me,
+s05_the_chain_5	and the line begins Then, reveal.
+s05_the_chain_6	That says, when Close Inspection finishes, start that one.
+s05_the_chain_7	Notice it's the full address, arc, slash, step,
+s05_the_chain_8	and not just the word home.
+s05_the_chain_9	And a quest gets one Then line, no more.
+s05_the_chain_10	So I add it, I save, and lint says clean.
+s05_the_chain_11	That's a chain: you finish one, and the next begins.
+s06_a_step_you_can_skip_0	Next comes a bonus: reach the hulk inside two minutes.
+s06_a_step_you_can_skip_1	It has a Done when line,
+s06_a_step_you_can_skip_2	and it has the opposite, Fails when,
+s06_a_step_you_can_skip_3	and whichever comes first decides it.
+s06_a_step_you_can_skip_4	So if the crew is quick, they're paid fifty.
+s06_a_step_you_can_skip_5	If they're slow, the step fails,
+s06_a_step_you_can_skip_6	and that's all that happens.
+s07_what_the_story_needs_0	As it stands, the story waits for every step, the bonus included.
+s07_what_the_story_needs_1	So if the bonus failed, the story could never finish.
+s07_what_the_story_needs_2	That's why I say which steps count.
+s07_what_the_story_needs_3	I add two lines, Part of salvage, and Required true,
+s07_what_the_story_needs_4	on these two steps, and not on the bonus.
+s07_what_the_story_needs_5	And now the story is done
+s07_what_the_story_needs_6	when the required steps are done.
+s08_two_endings_0	There are two arcs in this file,
+s08_two_endings_1	and they start with the same three lines,
+s08_two_endings_2	so I make sure I'm in Salvage Run.
+s08_two_endings_3	First comes a time limit,
+s08_two_endings_4	then Win, with a sentence,
+s08_two_endings_5	and Lose, with a sentence.
+s08_two_endings_6	Win fires when this record is finished,
+s08_two_endings_7	and Lose fires when it fails.
+s08_two_endings_8	And here's the rule to remember:
+s08_two_endings_9	Fails when only fails a quest.
+s08_two_endings_10	It's Lose that makes a failure end the game.
+s08_two_endings_11	So I run lint, and it's clean.
+s09_the_warning_with_a_trap_0	Now, there's one mistake I want you to see
+s09_the_warning_with_a_trap_1	before you make it yourself:
+s09_the_warning_with_a_trap_2	one hash too few on a step.
+s09_the_warning_with_a_trap_3	Lint warns me, and it's talking about line sixty-five,
+s09_the_warning_with_a_trap_4	which is my Then line, and not the heading I changed.
+s09_the_warning_with_a_trap_5	You know that habit of lint's from Lecture 6.
+s09_the_warning_with_a_trap_6	But look at how the sentence ends.
+s09_the_warning_with_a_trap_7	It's found my step in its new place,
+s09_the_warning_with_a_trap_8	and it offers me a new Then line that points there.
+s09_the_warning_with_a_trap_9	If I write that, lint says clean,
+s09_the_warning_with_a_trap_10	and the game is won the moment the crew reaches the hulk,
+s09_the_warning_with_a_trap_11	because my story has only one step left.
+s09_the_warning_with_a_trap_12	The Then line was right all along,
+s09_the_warning_with_a_trap_13	and it was the heading that was wrong.
+s09_the_warning_with_a_trap_14	So, when lint offers you a new Then line,
+s09_the_warning_with_a_trap_15	count the hashes on the step first.
+s10_play_it_win_0	Here's the Quest Log, with two steps showing,
+s10_play_it_win_1	and the third one still hidden.
+s10_play_it_win_2	So in we go, toward the hulk.
+s10_play_it_win_3	Close Inspection is done, and Quick Work is done with it.
+s10_play_it_win_4	And there's step three, Bring the Log Home,
+s10_play_it_win_5	so we turn for home.
+s10_play_it_win_6	And that's the win, with my own sentence on it.
+s11_play_it_lose_0	Now I change ten minutes to thirty seconds,
+s11_play_it_lose_1	and I sit on my hands.
+s11_play_it_lose_2	And it's lost, with my other sentence.
+s11_play_it_lose_3	Notice that nobody warned me.
+s11_play_it_lose_4	Your crew gets no countdown call,
+s11_play_it_lose_5	so tell them the limit in the arc's description,
+s11_play_it_lose_6	and tell them again in the first step's.
+s11_play_it_lose_7	And then I put ten minutes back.
+s12_your_turn_0	Now it's your turn: add a fourth step.
+s12_your_turn_1	It's revealed by the third,
+s12_your_turn_2	it's finished by a timer, and it's required.
+s12_your_turn_3	Then the win comes thirty seconds after they get home.
+s12_your_turn_4	Next time, we look at the things quests point at.

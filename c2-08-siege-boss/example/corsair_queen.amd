@@ -1,0 +1,26 @@
+// The Corsair Queen - my first Siege boss. A copy of the Warlord with new names.
+// She arrives when the raiders thin out, with two escort fleets and one named flagship.
+
+# [Corsair Queen](corsair_queen)
+---
+Boss
+Trigger: enemies_low
+Low: 25%
+Flies: 50% Kralien, 50% Torgoth
+Fleets: 2
+Difficulty: +1
+Named: Morrigan kralien_dreadnought
+---
+The Corsair Queen watched the siege falter from the dark. Now she brings her own ships to finish it.
+
+## [Sink the Morrigan](sink_morrigan)
+---
+Quest
+Scope: shared
+State: active
+Parent: siege_mission
+Required: true
+Done when: signal siege_won
+Reward: 600 credits
+---
+The Queen's flagship Morrigan leads the last assault. Destroy her and every raider with her.

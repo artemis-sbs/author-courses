@@ -1,0 +1,96 @@
+s01_cold_open_0	Last time she called to say well done, and nothing depended on it.
+s01_cold_open_1	This time the job is not finished until the crew picks up and says so.
+s01_cold_open_2	And she is not alone on the line.
+s02_a_step_only_an_answer_can_fi_0	Three changes to the job.
+s02_a_step_only_an_answer_can_fi_1	The reward comes off.
+s02_a_step_only_an_answer_can_fi_2	Then, reveal report_in.
+s02_a_step_only_an_answer_can_fi_3	And one more sentence, so the crew knows the pay comes later.
+s02_a_step_only_an_answer_can_fi_4	Now the beat below it.
+s02_a_step_only_an_answer_can_fi_5	I am replacing it with a quest.
+s02_a_step_only_an_answer_can_fi_6	No Beat line: so it is in the quest list while it runs, and a beat is not.
+s02_a_step_only_an_answer_can_fi_7	An objective, which sends the crew to Comms.
+s02_a_step_only_an_answer_can_fi_8	The reward, which has moved here.
+s02_a_step_only_an_answer_can_fi_9	The same Action as before: Action works on any quest, the moment it starts.
+s02_a_step_only_an_answer_can_fi_10	And look at what is missing.
+s02_a_step_only_an_answer_can_fi_11	No Done when.
+s02_a_step_only_an_answer_can_fi_12	Nothing in the game finishes this step.
+s02_a_step_only_an_answer_can_fi_13	Only an answer can.
+s03_the_answer_that_finishes_it_0	She should be asking now.
+s03_the_answer_that_finishes_it_1	Two takes, both questions.
+s03_the_answer_that_finishes_it_2	And the answer: completes report_in.
+s03_the_answer_that_finishes_it_3	That is the word from last time.
+s03_the_answer_that_finishes_it_4	It finishes the step and pays it.
+s03_the_answer_that_finishes_it_5	Now a mistake that looks like good manners.
+s03_the_answer_that_finishes_it_6	A second answer: not now.
+s03_the_answer_that_finishes_it_7	A crew that picks it has ended the call.
+s03_the_answer_that_finishes_it_8	It does not come back, and the step sits in the quest list for the rest of the game.
+s03_the_answer_that_finishes_it_9	So the rule: every answer that ends this call finishes the step.
+s03_the_answer_that_finishes_it_10	The crew already has a way to say not now.
+s03_the_answer_that_finishes_it_11	It is the Back button.
+s04_a_second_voice_0	A call can have more than one person on it.
+s04_a_second_voice_1	First the person: a heading, a key, a face.
+s04_a_second_voice_2	Now the scene.
+s04_a_second_voice_3	At quill starts her block, as it did in lecture three.
+s04_a_second_voice_4	At ives hands the call to him.
+s04_a_second_voice_5	His own takes.
+s04_a_second_voice_6	The crew reads her, presses Continue, and reads him, under his name and his face. Four things.
+s04_a_second_voice_7	The call is still Quill's in the list.
+s04_a_second_voice_8	The line is the at sign and a key, nothing else.
+s04_a_second_voice_9	Write his name there, or a space, or a colon, and it stops being a block: his lines become more takes for her, and lint will not tell you.
+s04_a_second_voice_10	Each block has its own takes.
+s04_a_second_voice_11	And the answers come with the last block.
+s05_which_call_is_on_top_0	You have several calls now, so here is how the list works.
+s05_which_call_is_on_top_1	Newest on top.
+s05_which_call_is_on_top_2	A row is a name and a title, so every call you place wants a title.
+s05_which_call_is_on_top_3	A call never times out.
+s05_which_call_is_on_top_4	And one call is open at a time.
+s05_which_call_is_on_top_5	If a call must not be buried, give its scene a priority.
+s05_which_call_is_on_top_6	A whole number.
+s05_which_call_is_on_top_7	Higher sits above lower, however new the others are.
+s05_which_call_is_on_top_8	I use it for the call a step is waiting on, and for nothing else.
+s06_who_gets_called_0	Who does she call?
+s06_who_gets_called_1	Every player ship.
+s06_who_gets_called_2	With one ship, that is the whole story.
+s06_who_gets_called_3	With two, each ship gets its own copy of the call and answers for itself.
+s06_who_gets_called_4	But the job is shared: one yes starts it for everyone.
+s06_who_gets_called_5	Both ships get the report call, and the first to report is paid.
+s06_who_gets_called_6	Two things for you as the writer.
+s06_who_gets_called_7	This take says Artemis.
+s06_who_gets_called_8	The Intrepid reads it too.
+s06_who_gets_called_9	And look at the last row: a ship that says yes after the job is finished starts it again.
+s06_who_gets_called_10	So a job handed out by a call belongs in a mission flown by one ship.
+s06_who_gets_called_11	You will see Scope ship in the documentation.
+s06_who_gets_called_12	In this mission it changes nothing.
+s06_who_gets_called_13	Leave it shared.
+s07_what_comms_can_do_with_a_cal_0	Nothing to type here.
+s07_what_comms_can_do_with_a_cal_1	This is what the person at Comms can do with what you wrote.
+s07_what_comms_can_do_with_a_cal_2	Leave it: it waits.
+s07_what_comms_can_do_with_a_cal_3	Open it: the bridge sees it on the main screen too.
+s07_what_comms_can_do_with_a_cal_4	Back: it goes back in the list and nothing in the story has changed.
+s07_what_comms_can_do_with_a_cal_5	The dial moves where it is drawn.
+s07_what_comms_can_do_with_a_cal_6	The Hails tab keeps every finished call.
+s07_what_comms_can_do_with_a_cal_7	And the ship's log gets one line per call.
+s07_what_comms_can_do_with_a_cal_8	So an answer is a decision made once.
+s07_what_comms_can_do_with_a_cal_9	Everything else lets the crew put it off, or look back at it.
+s08_lint_0	Lint. Clean.
+s08_lint_1	A key that is not a quest: it tells you the answer does nothing.
+s08_lint_2	A voice that is nobody in the cast.
+s08_lint_3	A field it does not know.
+s08_lint_4	Now two it cannot see.
+s08_lint_5	His name where his key goes: clean, and his block is gone.
+s08_lint_6	And an answer that finishes nothing: clean, and the job never ends.
+s08_lint_7	Those two you check by eye.
+s08_lint_8	The page has the whole list.
+s09_play_it_0	We will tag her.
+s09_play_it_1	The job is running. Thirty seconds.
+s09_play_it_2	Done, and not paid.
+s09_play_it_3	The list says report to DS 1, and there is the call. Quill. Continue. Chief Ives. Now Back.
+s09_play_it_4	The call is waiting, the step is waiting.
+s09_play_it_5	Open it again: it starts with her. Continue.
+s09_play_it_6	It is ours. Paid.
+s09_play_it_7	One line in the log.
+s09_play_it_8	And here, every call we have had, to read again.
+s10_your_turn_0	Your second call, the one your timer places.
+s10_your_turn_1	Turn its beat into a step the crew can see, make every ending finish it, and put a second voice on the line.
+s10_your_turn_2	Then break it on purpose, so you have seen what a call that finishes nothing looks like.
+s10_your_turn_3	Next time: reputation.

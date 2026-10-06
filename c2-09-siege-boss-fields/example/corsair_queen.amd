@@ -1,0 +1,28 @@
+// The Corsair Queen - my Siege boss.
+// She arrives when 4 raiders in 10 are left: two named ships and three escort fleets,
+// two levels above the game's difficulty. Three games in four the fleets are her own
+// pirates. One game in four she has hired Kraliens.
+
+# [Corsair Queen](corsair_queen)
+---
+Boss
+Trigger: enemies_low
+Low: 40%
+Flies: 75% Pirate, 25% Kralien
+Fleets: 3
+Difficulty: +2
+Named: Morrigan pirate_brigantine, Badb pirate_strongbow
+---
+The Corsair Queen watched the siege falter from the dark. Now she brings her own ships to finish it.
+
+## [Sink the Morrigan](sink_morrigan)
+---
+Quest
+Scope: shared
+State: active
+Parent: siege_mission
+Required: true
+Done when: signal siege_won
+Reward: 600 credits
+---
+The Queen's flagship Morrigan leads the last assault. Destroy her and every raider with her.

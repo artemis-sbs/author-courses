@@ -1,0 +1,239 @@
+1
+00:00:00,000 --> 00:00:02,174
+Nobody fired a shot there.
+
+2
+00:00:02,624 --> 00:00:04,798
+Somebody called, and said something.
+
+3
+00:00:05,248 --> 00:00:15,683
+That is a scene: a character, a few lines, and enough different ways to say them that it does not sound like a recording.
+
+4
+00:00:16,133 --> 00:00:21,350
+Today you write one, and the station calls your crew with it.
+
+5
+00:00:22,550 --> 00:00:27,333
+A scene needs a speaker, and a speaker is a character.
+
+6
+00:00:27,783 --> 00:00:29,957
+You made characters last time.
+
+7
+00:00:30,407 --> 00:00:34,320
+Mine is Quill, who runs traffic on the station.
+
+8
+00:00:34,770 --> 00:00:37,813
+Look at the word in round brackets.
+
+9
+00:00:38,263 --> 00:00:40,002
+That is her key.
+
+10
+00:00:40,452 --> 00:00:44,365
+From here on, nothing calls her Quill, or Harbormaster.
+
+11
+00:00:44,815 --> 00:00:47,424
+Everything calls her by her key.
+
+12
+00:00:47,874 --> 00:00:49,613
+Small letters, no spaces.
+
+13
+00:00:50,813 --> 00:00:52,552
+A new section, Dialogue.
+
+14
+00:00:53,002 --> 00:00:58,654
+Its key is the word dialogue, in small letters, and that matters later.
+
+15
+00:00:59,104 --> 00:01:05,191
+Then the scene: three hashes, a name for my own use, and a key.
+
+16
+00:01:05,641 --> 00:01:06,946
+Speaker: her key.
+
+17
+00:01:07,396 --> 00:01:13,048
+When: hail, which means this is a call coming in to the ship.
+
+18
+00:01:13,498 --> 00:01:16,107
+Title: what the call is about.
+
+19
+00:01:16,557 --> 00:01:19,600
+The crew reads that before they answer.
+
+20
+00:01:20,050 --> 00:01:22,224
+And then what she says.
+
+21
+00:01:23,424 --> 00:01:26,902
+Three lines, each starting with a percent sign.
+
+22
+00:01:27,352 --> 00:01:29,961
+She does not say all three.
+
+23
+00:01:30,411 --> 00:01:31,715
+She says one.
+
+24
+00:01:32,165 --> 00:01:43,035
+Each of these is a take: a different way to say the same thing, and the game picks one by chance each time. Three rules.
+
+25
+00:01:43,485 --> 00:01:46,963
+A take is one line in the file.
+
+26
+00:01:47,413 --> 00:01:58,283
+If I press Enter in the middle of it, like this, I have made two takes, and one day the crew gets half a sentence.
+
+27
+00:01:58,733 --> 00:02:01,341
+Takes are alternatives, not a list.
+
+28
+00:02:01,791 --> 00:02:11,357
+And plain keyboard characters only: no curly quotes, no long dashes, and never a curly bracket at the start of a take.
+
+29
+00:02:12,557 --> 00:02:16,035
+So how does she say two things? Blocks.
+
+30
+00:02:16,485 --> 00:02:20,398
+An at sign and her key starts a block.
+
+31
+00:02:20,848 --> 00:02:24,761
+Three takes in the first, two in the second.
+
+32
+00:02:25,211 --> 00:02:31,298
+The game takes one from each, so this little scene can read six ways.
+
+33
+00:02:31,748 --> 00:02:36,096
+The crew reads the first, presses Continue, reads the second.
+
+34
+00:02:36,546 --> 00:02:38,720
+Her key, not her name.
+
+35
+00:02:39,170 --> 00:02:42,648
+And one voice in a scene, for now.
+
+36
+00:02:43,848 --> 00:02:49,500
+A scene is words on a page until the story places the call.
+
+37
+00:02:49,950 --> 00:02:54,733
+I want it to come when the crew finishes Close Inspection.
+
+38
+00:02:55,183 --> 00:02:59,530
+So that quest gets one more line: then, reveal ds1_calls.
+
+39
+00:02:59,980 --> 00:03:01,720
+And here is ds1_calls.
+
+40
+00:03:02,170 --> 00:03:14,343
+The word Beat, alone on the first line, says this is a moment in the story and not a job, so it stays out of the quest list.
+
+41
+00:03:14,793 --> 00:03:17,402
+It starts when it is revealed.
+
+42
+00:03:17,852 --> 00:03:28,722
+And Action is what happens the moment it starts: two spaces, a dash, then who calls, the word hails, and the key of the scene.
+
+43
+00:03:29,172 --> 00:03:32,650
+Starts when revealed is what makes her wait.
+
+44
+00:03:33,100 --> 00:03:37,883
+Leave it out, and she calls the moment the game begins.
+
+45
+00:03:39,083 --> 00:03:40,083
+Lint. Clean.
+
+46
+00:03:40,533 --> 00:03:43,576
+It catches a speaker who is nobody.
+
+47
+00:03:44,026 --> 00:03:48,809
+It catches a call to a scene that is not there.
+
+48
+00:03:49,259 --> 00:03:54,476
+It does not catch this: a capital letter in the section key.
+
+49
+00:03:54,926 --> 00:03:57,970
+Clean, and the call would never come.
+
+50
+00:03:58,420 --> 00:04:10,593
+So four names get checked by eye: her key, the scene's key, the beat's key, and the two section keys, which have to be exactly characters and dialogue.
+
+51
+00:04:11,043 --> 00:04:13,652
+The table is on the page.
+
+52
+00:04:14,852 --> 00:04:15,852
+In close.
+
+53
+00:04:16,302 --> 00:04:22,389
+The quest completes, and there she is: Harbormaster Quill, about that hulk. Open it.
+
+54
+00:04:22,839 --> 00:04:25,448
+One of my three openings. Continue.
+
+55
+00:04:25,898 --> 00:04:28,507
+One of my two closings. Close.
+
+56
+00:04:28,957 --> 00:04:31,130
+And again, from the start.
+
+57
+00:04:31,580 --> 00:04:35,493
+Same scene, and it may not read the same.
+
+58
+00:04:36,693 --> 00:04:41,911
+You have a quest that finishes on a timer, from Lecture 8.
+
+59
+00:04:42,361 --> 00:04:48,883
+Write a second scene, and have that quest reveal a second beat that calls it.
+
+60
+00:04:49,333 --> 00:04:52,811
+Next time the crew gets to answer back.

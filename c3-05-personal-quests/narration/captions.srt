@@ -1,0 +1,339 @@
+1
+00:00:00,000 --> 00:00:03,043
+The doctor just read six name tags.
+
+2
+00:00:03,493 --> 00:00:06,537
+Nobody asked the engineer to do that.
+
+3
+00:00:06,987 --> 00:00:08,726
+Nobody asked the ship.
+
+4
+00:00:09,176 --> 00:00:16,133
+It was her job, on her list, and when she finished it something happened for everyone.
+
+5
+00:00:16,583 --> 00:00:21,800
+That is a side story: a quest that belongs to one person.
+
+6
+00:00:23,000 --> 00:00:26,043
+A new section, at the very end.
+
+7
+00:00:26,493 --> 00:00:29,537
+Side Stories, and the key is side_stories.
+
+8
+00:00:29,987 --> 00:00:31,291
+Keep that key.
+
+9
+00:00:31,741 --> 00:00:33,480
+Inside it, a quest.
+
+10
+00:00:33,930 --> 00:00:39,148
+You know every line of this from Class 1 except the first.
+
+11
+00:00:39,598 --> 00:00:40,902
+For, colon, medical.
+
+12
+00:00:41,352 --> 00:00:49,178
+That is a job word, the same word that is on the doctor's Roles line in your roster.
+
+13
+00:00:49,628 --> 00:00:52,237
+This quest is not the ship's.
+
+14
+00:00:52,687 --> 00:00:53,991
+It is hers.
+
+15
+00:00:54,441 --> 00:01:00,528
+Starts when: at once, because I want it running the moment she has it.
+
+16
+00:01:00,978 --> 00:01:09,239
+Leave that out and she is handed a story that is asleep, and nothing ever wakes it. An objective.
+
+17
+00:01:09,689 --> 00:01:11,863
+And Done when: signal names_read.
+
+18
+00:01:12,313 --> 00:01:14,487
+A signal I just invented.
+
+19
+00:01:14,937 --> 00:01:17,111
+Something has to send it.
+
+20
+00:01:18,311 --> 00:01:22,224
+Here is the choice only the doctor is offered.
+
+21
+00:01:22,674 --> 00:01:26,152
+After the semicolon it already says learn suits.
+
+22
+00:01:26,602 --> 00:01:29,646
+I add a comma, then signal names_read.
+
+23
+00:01:30,096 --> 00:01:38,357
+Two things happen now when she takes it: the party learns the fact, and her story hears its signal.
+
+24
+00:01:38,807 --> 00:01:40,546
+Look at this comma.
+
+25
+00:01:40,996 --> 00:01:47,517
+If I forget it, the signal is never sent, and lint will not tell me.
+
+26
+00:01:47,967 --> 00:01:54,924
+I am going to show you that in a few minutes, because you will do it.
+
+27
+00:01:56,124 --> 00:02:03,515
+The game does not hand these stories out by itself, so there is a card. Two parts.
+
+28
+00:02:03,965 --> 00:02:11,357
+The first goes under the line from Lecture 2 that starts shared BOARDING_SCENES, with the same indent.
+
+29
+00:02:11,807 --> 00:02:15,285
+It reads my new section and keeps it.
+
+30
+00:02:15,735 --> 00:02:20,083
+The second goes at the very end of the file.
+
+31
+00:02:20,533 --> 00:02:27,054
+It says: every time somebody beams down, hand them the story that is for them.
+
+32
+00:02:27,504 --> 00:02:30,113
+I change nothing on this card.
+
+33
+00:02:30,563 --> 00:02:31,867
+I paste it.
+
+34
+00:02:32,317 --> 00:02:41,448
+Lint is clean, and I have to be honest about what that means here: lint cannot see this card at all.
+
+35
+00:02:41,898 --> 00:02:46,246
+If I paste half of it, lint still says clean.
+
+36
+00:02:47,446 --> 00:02:50,489
+The chief gets one too. For: engineering.
+
+37
+00:02:50,939 --> 00:02:53,983
+Find out how the core was stopped.
+
+38
+00:02:54,433 --> 00:02:58,780
+And the choice only he is offered sends the signal.
+
+39
+00:02:59,230 --> 00:03:00,970
+Same shape, different job.
+
+40
+00:03:01,420 --> 00:03:03,159
+Two people, two stories.
+
+41
+00:03:04,359 --> 00:03:11,750
+A side story can lead somewhere, and it does it the way every quest does: with Then.
+
+42
+00:03:12,200 --> 00:03:15,678
+When the doctor's story finishes, it sends names_known.
+
+43
+00:03:16,128 --> 00:03:22,650
+And up here, in the ship's own quests, a new one: Account for the Crew.
+
+44
+00:03:23,100 --> 00:03:27,883
+Scope: shared, running from the start, done when it hears names_known.
+
+45
+00:03:28,333 --> 00:03:30,072
+So read the chain.
+
+46
+00:03:30,522 --> 00:03:32,261
+She reads the tags.
+
+47
+00:03:32,711 --> 00:03:34,450
+That finishes her story.
+
+48
+00:03:34,900 --> 00:03:37,509
+Her story finishes the ship's quest.
+
+49
+00:03:37,959 --> 00:03:39,698
+One waits, one sends.
+
+50
+00:03:40,148 --> 00:03:42,322
+Notice where the reward is.
+
+51
+00:03:42,772 --> 00:03:44,511
+On the ship's quest.
+
+52
+00:03:44,961 --> 00:03:49,743
+A reward written on a side story is paid to nobody.
+
+53
+00:03:50,193 --> 00:03:55,411
+And one thing you will see in other people's files: Leads to.
+
+54
+00:03:55,861 --> 00:04:02,817
+That points a person at a thing on a map, or a place in a ruin.
+
+55
+00:04:03,267 --> 00:04:08,050
+We have rooms, not a map, so it does nothing here.
+
+56
+00:04:08,500 --> 00:04:10,674
+We will use it later.
+
+57
+00:04:11,874 --> 00:04:12,874
+Five rules.
+
+58
+00:04:13,324 --> 00:04:21,585
+A side story is a bonus: nobody covers for a person, so never hang the main story on one.
+
+59
+00:04:22,035 --> 00:04:27,252
+One job word in three places: the roster, the story, the choice.
+
+60
+00:04:27,702 --> 00:04:30,311
+Name the job, not the person.
+
+61
+00:04:30,761 --> 00:04:33,370
+No reward on a side story.
+
+62
+00:04:33,820 --> 00:04:36,863
+And one story goes to one person.
+
+63
+00:04:37,313 --> 00:04:44,270
+Now lint, and I am going to start with the two it misses. The comma. Clean.
+
+64
+00:04:44,720 --> 00:04:46,893
+That story can never finish.
+
+65
+00:04:47,343 --> 00:04:49,952
+A misspelled job on For. Clean.
+
+66
+00:04:50,402 --> 00:04:53,011
+That story is handed to nobody.
+
+67
+00:04:53,461 --> 00:04:56,070
+Those two you check by eye.
+
+68
+00:04:56,520 --> 00:05:04,780
+Here is what it does catch: a signal name that does not match, two warnings, one from each end.
+
+69
+00:05:05,230 --> 00:05:09,578
+And a section key the card is not looking for.
+
+70
+00:05:10,778 --> 00:05:13,822
+Before we go: the ship's quest list.
+
+71
+00:05:14,272 --> 00:05:16,880
+Account for the Crew is waiting.
+
+72
+00:05:17,330 --> 00:05:19,504
+Both of them beam down.
+
+73
+00:05:19,954 --> 00:05:22,128
+The doctor reads the tags.
+
+74
+00:05:22,578 --> 00:05:26,926
+Back on the bridge: quest complete, twice, and the reward.
+
+75
+00:05:27,376 --> 00:05:31,289
+Now the same mission with the doctor left behind.
+
+76
+00:05:31,739 --> 00:05:35,652
+The chief is offered her reading, marked as covering.
+
+77
+00:05:36,102 --> 00:05:37,407
+He takes it.
+
+78
+00:05:37,857 --> 00:05:40,030
+The party learns the fact.
+
+79
+00:05:40,480 --> 00:05:42,654
+And on the bridge, nothing.
+
+80
+00:05:43,104 --> 00:05:47,452
+Her story was never handed out, because she never came.
+
+81
+00:05:47,902 --> 00:05:49,641
+That is rule one.
+
+82
+00:05:50,841 --> 00:05:58,233
+Your third crew member gets a story of their own, finished by the reading you gave them.
+
+83
+00:05:58,683 --> 00:06:01,726
+Give the chief's story somewhere to lead.
+
+84
+00:06:02,176 --> 00:06:12,611
+Then break it on purpose: misspell the job on For, watch lint say clean, and play it once to see what does not happen.
+
+85
+00:06:13,061 --> 00:06:20,452
+Next time you put all of it together, and play ten minutes of your own away mission.

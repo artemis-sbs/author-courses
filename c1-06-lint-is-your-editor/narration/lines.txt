@@ -1,0 +1,154 @@
+s01_cold_open_0	This one line is the most useful sentence anyone's going to say about your mission this week.
+s01_cold_open_1	It tells me which file and which line,
+s01_cold_open_2	what's wrong there, and what the game will do about it.
+s01_cold_open_3	So today you'll learn to read it,
+s01_cold_open_4	and we'll do that by breaking your mission in five places, on purpose.
+s02_what_lint_is_0	Lint is a program that reads your files and lists whatever looks wrong,
+s02_what_lint_is_1	and it changes nothing.
+s02_what_lint_is_2	Think of the editor at a publisher:
+s02_what_lint_is_3	she reads, and she marks,
+s02_what_lint_is_4	and you're the one who does the fixing.
+s02_what_lint_is_5	The habit has four beats.
+s02_what_lint_is_6	You change something, and you save.
+s02_what_lint_is_7	Then you run lint,
+s02_what_lint_is_8	and you read the first line it prints.
+s03_a_file_with_nothing_wrong_0	This is the answer you're hoping for.
+s03_a_file_with_nothing_wrong_1	There's the file, then the word clean,
+s03_a_file_with_nothing_wrong_2	and then the count line, which says one fact sheet, one story file,
+s03_a_file_with_nothing_wrong_3	no errors, and no warnings.
+s03_a_file_with_nothing_wrong_4	Read that count line every time,
+s03_a_file_with_nothing_wrong_5	even when it says clean.
+s04_break_1_a_field_name_0	I'm going to misspell one field,
+s04_break_1_a_field_name_1	then save, and run lint.
+s04_break_1_a_field_name_2	And I get one warning.
+s04_break_1_a_field_name_3	Every finding has four parts.
+s04_break_1_a_field_name_4	First there's the level, which here is warning.
+s04_break_1_a_field_name_5	Then there's the place,
+s04_break_1_a_field_name_6	which is line twenty-eight, character one.
+s04_break_1_a_field_name_7	Then comes the sentence itself.
+s04_break_1_a_field_name_8	And at the very end, in brackets, there's the code,
+s04_break_1_a_field_name_9	which is lint's short name for this kind of mistake.
+s04_break_1_a_field_name_10	Now read the sentence all the way to the end,
+s04_break_1_a_field_name_11	because it tells you three things.
+s04_break_1_a_field_name_12	First, what's wrong: Done wen is not a field a quest has.
+s04_break_1_a_field_name_13	Next, what the game does about it: nothing reads this line.
+s04_break_1_a_field_name_14	And last, what to write instead: did you mean Done when.
+s04_break_1_a_field_name_15	So I fix it, I save,
+s04_break_1_a_field_name_16	I run lint again, and it's clean.
+s04_break_1_a_field_name_17	Now, that was only a warning,
+s04_break_1_a_field_name_18	so I could have played this mission.
+s04_break_1_a_field_name_19	But with that one word misspelled,
+s04_break_1_a_field_name_20	this step can never finish.
+s04_break_1_a_field_name_21	A warning can stop your story just as surely as an error.
+s05_break_2_words_from_a_word_pr_0	Every writer does this next one.
+s05_break_2_words_from_a_word_pr_1	I wrote my line in a word processor,
+s05_break_2_words_from_a_word_pr_2	and it quietly made my quote marks curly.
+s05_break_2_words_from_a_word_pr_3	So now I get three warnings,
+s05_break_2_words_from_a_word_pr_4	one for each mark.
+s05_break_2_words_from_a_word_pr_5	All three are on line thirty-one,
+s05_break_2_words_from_a_word_pr_6	and this second number tells me how far along the line to look.
+s05_break_2_words_from_a_word_pr_7	Read to the end again:
+s05_break_2_words_from_a_word_pr_8	the game can't draw this mark,
+s05_break_2_words_from_a_word_pr_9	so it shows the plain one in its place.
+s05_break_2_words_from_a_word_pr_10	That means the crew would still read my sentence.
+s05_break_2_words_from_a_word_pr_11	It's a warning all the same,
+s05_break_2_words_from_a_word_pr_12	because the game only has a plain twin for some characters,
+s05_break_2_words_from_a_word_pr_13	and an emoji, for instance, is simply left out.
+s05_break_2_words_from_a_word_pr_14	So I delete each mark and press the plain key,
+s05_break_2_words_from_a_word_pr_15	and it's clean again.
+s06_break_3_a_key_that_no_longer_0	This time I rename a key, on line thirty-three.
+s06_break_3_a_key_that_no_longer_1	Lint complains about line twenty-nine and line thirty-six,
+s06_break_3_a_key_that_no_longer_2	and it says nothing at all about thirty-three.
+s06_break_3_a_key_that_no_longer_3	So why is that?
+s06_break_3_a_key_that_no_longer_4	Line twenty-nine points at the old key,
+s06_break_3_a_key_that_no_longer_5	and no record has that key any more,
+s06_break_3_a_key_that_no_longer_6	so nothing is revealed.
+s06_break_3_a_key_that_no_longer_7	And line thirty-six is the step I renamed.
+s06_break_3_a_key_that_no_longer_8	It's waiting to be revealed,
+s06_break_3_a_key_that_no_longer_9	and now nothing reveals it.
+s06_break_3_a_key_that_no_longer_10	Those are the two ends of one broken link,
+s06_break_3_a_key_that_no_longer_11	and lint names the line that points, and the line that waits.
+s06_break_3_a_key_that_no_longer_12	There's a second way to ask, too.
+s06_break_3_a_key_that_no_longer_13	If I run lint with the word missing on the end,
+s06_break_3_a_key_that_no_longer_14	I get a list of every key I've pointed at and haven't written yet.
+s06_break_3_a_key_that_no_longer_15	While I'm drafting, that's my to-do list.
+s06_break_3_a_key_that_no_longer_16	So I put the key back,
+s06_break_3_a_key_that_no_longer_17	and both warnings go away, and it's clean.
+s07_break_4_a_fence_left_open_0	Now I delete just one line,
+s07_break_4_a_fence_left_open_1	the three hyphens that close this fence.
+s07_break_4_a_fence_left_open_2	And that gets me my first error.
+s07_break_4_a_fence_left_open_3	I deleted line fifty-one,
+s07_break_4_a_fence_left_open_4	but lint names line forty-eight.
+s07_break_4_a_fence_left_open_5	That's the line where the fence opens,
+s07_break_4_a_fence_left_open_6	the fence that now never closes.
+s07_break_4_a_fence_left_open_7	And the sentence tells me the rest:
+s07_break_4_a_fence_left_open_8	the lines under the fields were read as fields,
+s07_break_4_a_fence_left_open_9	so this record has no text.
+s07_break_4_a_fence_left_open_10	It gives me the fix as well,
+s07_break_4_a_fence_left_open_11	which is to add a line of three hyphens under the last field.
+s07_break_4_a_fence_left_open_12	So I type it back, and it's clean.
+s07_break_4_a_fence_left_open_13	It's the same lesson as the last break:
+s07_break_4_a_fence_left_open_14	the line lint names isn't always the line I changed,
+s07_break_4_a_fence_left_open_15	so let the sentence tell you where to look.
+s08_break_5_the_number_of_hashes_0	The hashes say where a record sits.
+s08_break_5_the_number_of_hashes_1	So let's give this one a hash too many,
+s08_break_5_the_number_of_hashes_2	and that's one error.
+s08_break_5_the_number_of_hashes_3	This heading has four,
+s08_break_5_the_number_of_hashes_4	and the one it sits under has two.
+s08_break_5_the_number_of_hashes_5	And look at what the game does about it:
+s08_break_5_the_number_of_hashes_6	it reads the heading as if it had three.
+s08_break_5_the_number_of_hashes_7	Here that guess happens to be right,
+s08_break_5_the_number_of_hashes_8	so nothing is lost.
+s08_break_5_the_number_of_hashes_9	In break one, a warning stopped my story,
+s08_break_5_the_number_of_hashes_10	and here an error costs me nothing.
+s08_break_5_the_number_of_hashes_11	So I don't judge a finding by its level.
+s08_break_5_the_number_of_hashes_12	I read its sentence.
+s08_break_5_the_number_of_hashes_13	I take the extra hash off,
+s08_break_5_the_number_of_hashes_14	and now let's go the other way, down to one hash.
+s08_break_5_the_number_of_hashes_15	And that gives me three findings.
+s08_break_5_the_number_of_hashes_16	This is the point where people give up,
+s08_break_5_the_number_of_hashes_17	so here's the rule:
+s08_break_5_the_number_of_hashes_18	read the first one only.
+s08_break_5_the_number_of_hashes_19	It's about line forty-seven, the line I changed,
+s08_break_5_the_number_of_hashes_20	and it says one hash starts a new title, so give it three.
+s08_break_5_the_number_of_hashes_21	The other two are about line fifty-five,
+s08_break_5_the_number_of_hashes_22	which is a record I never touched,
+s08_break_5_the_number_of_hashes_23	and their advice would actually make things worse.
+s08_break_5_the_number_of_hashes_24	So I put the hashes back,
+s08_break_5_the_number_of_hashes_25	and all three go at once.
+s08_break_5_the_number_of_hashes_26	Fix the first finding, and then run lint again.
+s09_what_clean_does_not_mean_0	Now for the honest part.
+s09_what_clean_does_not_mean_1	I leave myself a note,
+s09_what_clean_does_not_mean_2	the way I would in a manuscript, with a hash in front of it.
+s09_what_clean_does_not_mean_3	And lint says clean.
+s09_what_clean_does_not_mean_4	But in the game, my note is part of the description the crew reads.
+s09_what_clean_does_not_mean_5	In this file, a note starts with two slashes.
+s09_what_clean_does_not_mean_6	Clean means every shape is one that lint knows,
+s09_what_clean_does_not_mean_7	every key that's pointed at exists,
+s09_what_clean_does_not_mean_8	and the story file can be read.
+s09_what_clean_does_not_mean_9	It doesn't mean the mission does what I meant it to.
+s09_what_clean_does_not_mean_10	The page has a short list of the things lint can't see.
+s10_the_second_check_0	Lint reads your files,
+s10_the_second_check_1	but it doesn't run them.
+s10_the_second_check_2	So the second check is to play for a minute,
+s10_the_second_check_3	and then read the logs.
+s10_the_second_check_4	Here's that extra hash again, this time in the game.
+s10_the_second_check_5	The quest list looks fine,
+s10_the_second_check_6	because the game took the hash off for me.
+s10_the_second_check_7	And here's the log:
+s10_the_second_check_8	one line, with the line number and the fix.
+s10_the_second_check_9	That's exactly what lint told me before I played,
+s10_the_second_check_10	which is why lint comes first.
+s10_the_second_check_11	So I fix it, and lint says clean.
+s10_the_second_check_12	But the log still has its line in it,
+s10_the_second_check_13	because lint leaves the logs alone.
+s10_the_second_check_14	They're the game's notes on my last play.
+s10_the_second_check_15	So I play again, and there's my story.
+s10_the_second_check_16	This time both logs are empty,
+s10_the_second_check_17	and that's what you want to see after every play.
+s11_your_turn_0	Now use it on your own words.
+s11_your_turn_1	Rewrite the three descriptions, and the three readings,
+s11_your_turn_2	and after every one of them, save, run lint, and read the count line.
+s11_your_turn_3	Then play the mission, and read both logs.
+s11_your_turn_4	Next time, we'll put names to two words you saw in this file today:
+s11_your_turn_5	a role, and a signal.

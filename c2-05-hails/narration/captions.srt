@@ -1,0 +1,383 @@
+1
+00:00:00,000 --> 00:00:05,652
+Last time she called to say well done, and nothing depended on it.
+
+2
+00:00:06,102 --> 00:00:12,624
+This time the job is not finished until the crew picks up and says so.
+
+3
+00:00:13,074 --> 00:00:16,552
+And she is not alone on the line.
+
+4
+00:00:17,752 --> 00:00:19,926
+Three changes to the job.
+
+5
+00:00:20,376 --> 00:00:22,115
+The reward comes off.
+
+6
+00:00:22,565 --> 00:00:23,870
+Then, reveal report_in.
+
+7
+00:00:24,320 --> 00:00:29,537
+And one more sentence, so the crew knows the pay comes later.
+
+8
+00:00:29,987 --> 00:00:32,161
+Now the beat below it.
+
+9
+00:00:32,611 --> 00:00:35,654
+I am replacing it with a quest.
+
+10
+00:00:36,104 --> 00:00:43,930
+No Beat line: so it is in the quest list while it runs, and a beat is not.
+
+11
+00:00:44,380 --> 00:00:47,859
+An objective, which sends the crew to Comms.
+
+12
+00:00:48,309 --> 00:00:50,917
+The reward, which has moved here.
+
+13
+00:00:51,367 --> 00:00:57,454
+The same Action as before: Action works on any quest, the moment it starts.
+
+14
+00:00:57,904 --> 00:01:00,513
+And look at what is missing.
+
+15
+00:01:00,963 --> 00:01:02,267
+No Done when.
+
+16
+00:01:02,717 --> 00:01:05,761
+Nothing in the game finishes this step.
+
+17
+00:01:06,211 --> 00:01:07,950
+Only an answer can.
+
+18
+00:01:09,150 --> 00:01:11,324
+She should be asking now.
+
+19
+00:01:11,774 --> 00:01:13,513
+Two takes, both questions.
+
+20
+00:01:13,963 --> 00:01:16,137
+And the answer: completes report_in.
+
+21
+00:01:16,587 --> 00:01:19,630
+That is the word from last time.
+
+22
+00:01:20,080 --> 00:01:23,124
+It finishes the step and pays it.
+
+23
+00:01:23,574 --> 00:01:27,052
+Now a mistake that looks like good manners.
+
+24
+00:01:27,502 --> 00:01:29,676
+A second answer: not now.
+
+25
+00:01:30,126 --> 00:01:34,039
+A crew that picks it has ended the call.
+
+26
+00:01:34,489 --> 00:01:42,750
+It does not come back, and the step sits in the quest list for the rest of the game.
+
+27
+00:01:43,200 --> 00:01:48,417
+So the rule: every answer that ends this call finishes the step.
+
+28
+00:01:48,867 --> 00:01:53,215
+The crew already has a way to say not now.
+
+29
+00:01:53,665 --> 00:01:55,839
+It is the Back button.
+
+30
+00:01:57,039 --> 00:02:01,387
+A call can have more than one person on it.
+
+31
+00:02:01,837 --> 00:02:05,750
+First the person: a heading, a key, a face.
+
+32
+00:02:06,200 --> 00:02:07,504
+Now the scene.
+
+33
+00:02:07,954 --> 00:02:12,737
+At quill starts her block, as it did in lecture three.
+
+34
+00:02:13,187 --> 00:02:16,230
+At ives hands the call to him.
+
+35
+00:02:16,680 --> 00:02:17,985
+His own takes.
+
+36
+00:02:18,435 --> 00:02:25,826
+The crew reads her, presses Continue, and reads him, under his name and his face. Four things.
+
+37
+00:02:26,276 --> 00:02:29,754
+The call is still Quill's in the list.
+
+38
+00:02:30,204 --> 00:02:34,987
+The line is the at sign and a key, nothing else.
+
+39
+00:02:35,437 --> 00:02:48,046
+Write his name there, or a space, or a colon, and it stops being a block: his lines become more takes for her, and lint will not tell you.
+
+40
+00:02:48,496 --> 00:02:51,104
+Each block has its own takes.
+
+41
+00:02:51,554 --> 00:02:55,033
+And the answers come with the last block.
+
+42
+00:02:56,233 --> 00:03:01,450
+You have several calls now, so here is how the list works.
+
+43
+00:03:01,900 --> 00:03:03,204
+Newest on top.
+
+44
+00:03:03,654 --> 00:03:10,611
+A row is a name and a title, so every call you place wants a title.
+
+45
+00:03:11,061 --> 00:03:13,235
+A call never times out.
+
+46
+00:03:13,685 --> 00:03:17,163
+And one call is open at a time.
+
+47
+00:03:17,613 --> 00:03:22,830
+If a call must not be buried, give its scene a priority.
+
+48
+00:03:23,280 --> 00:03:24,585
+A whole number.
+
+49
+00:03:25,035 --> 00:03:28,948
+Higher sits above lower, however new the others are.
+
+50
+00:03:29,398 --> 00:03:35,920
+I use it for the call a step is waiting on, and for nothing else.
+
+51
+00:03:37,120 --> 00:03:38,859
+Who does she call?
+
+52
+00:03:39,309 --> 00:03:40,613
+Every player ship.
+
+53
+00:03:41,063 --> 00:03:44,541
+With one ship, that is the whole story.
+
+54
+00:03:44,991 --> 00:03:51,513
+With two, each ship gets its own copy of the call and answers for itself.
+
+55
+00:03:51,963 --> 00:03:56,746
+But the job is shared: one yes starts it for everyone.
+
+56
+00:03:57,196 --> 00:04:02,848
+Both ships get the report call, and the first to report is paid.
+
+57
+00:04:03,298 --> 00:04:06,341
+Two things for you as the writer.
+
+58
+00:04:06,791 --> 00:04:08,530
+This take says Artemis.
+
+59
+00:04:08,980 --> 00:04:11,154
+The Intrepid reads it too.
+
+60
+00:04:11,604 --> 00:04:19,865
+And look at the last row: a ship that says yes after the job is finished starts it again.
+
+61
+00:04:20,315 --> 00:04:27,272
+So a job handed out by a call belongs in a mission flown by one ship.
+
+62
+00:04:27,722 --> 00:04:31,200
+You will see Scope ship in the documentation.
+
+63
+00:04:31,650 --> 00:04:34,259
+In this mission it changes nothing.
+
+64
+00:04:34,709 --> 00:04:36,013
+Leave it shared.
+
+65
+00:04:37,213 --> 00:04:38,952
+Nothing to type here.
+
+66
+00:04:39,402 --> 00:04:45,054
+This is what the person at Comms can do with what you wrote.
+
+67
+00:04:45,504 --> 00:04:47,243
+Leave it: it waits.
+
+68
+00:04:47,693 --> 00:04:52,476
+Open it: the bridge sees it on the main screen too.
+
+69
+00:04:52,926 --> 00:04:59,013
+Back: it goes back in the list and nothing in the story has changed.
+
+70
+00:04:59,463 --> 00:05:02,507
+The dial moves where it is drawn.
+
+71
+00:05:02,957 --> 00:05:06,000
+The Hails tab keeps every finished call.
+
+72
+00:05:06,450 --> 00:05:10,363
+And the ship's log gets one line per call.
+
+73
+00:05:10,813 --> 00:05:14,291
+So an answer is a decision made once.
+
+74
+00:05:14,741 --> 00:05:20,393
+Everything else lets the crew put it off, or look back at it.
+
+75
+00:05:21,593 --> 00:05:22,593
+Lint. Clean.
+
+76
+00:05:23,043 --> 00:05:29,130
+A key that is not a quest: it tells you the answer does nothing.
+
+77
+00:05:29,580 --> 00:05:33,059
+A voice that is nobody in the cast.
+
+78
+00:05:33,509 --> 00:05:36,117
+A field it does not know.
+
+79
+00:05:36,567 --> 00:05:38,741
+Now two it cannot see.
+
+80
+00:05:39,191 --> 00:05:44,409
+His name where his key goes: clean, and his block is gone.
+
+81
+00:05:44,859 --> 00:05:50,076
+And an answer that finishes nothing: clean, and the job never ends.
+
+82
+00:05:50,526 --> 00:05:53,135
+Those two you check by eye.
+
+83
+00:05:53,585 --> 00:05:56,193
+The page has the whole list.
+
+84
+00:05:57,393 --> 00:05:59,133
+We will tag her.
+
+85
+00:05:59,583 --> 00:06:02,191
+The job is running. Thirty seconds.
+
+86
+00:06:02,641 --> 00:06:04,380
+Done, and not paid.
+
+87
+00:06:04,830 --> 00:06:12,657
+The list says report to DS 1, and there is the call. Quill. Continue. Chief Ives. Now Back.
+
+88
+00:06:13,107 --> 00:06:16,585
+The call is waiting, the step is waiting.
+
+89
+00:06:17,035 --> 00:06:20,513
+Open it again: it starts with her. Continue.
+
+90
+00:06:20,963 --> 00:06:22,702
+It is ours. Paid.
+
+91
+00:06:23,152 --> 00:06:25,326
+One line in the log.
+
+92
+00:06:25,776 --> 00:06:30,124
+And here, every call we have had, to read again.
+
+93
+00:06:31,324 --> 00:06:34,802
+Your second call, the one your timer places.
+
+94
+00:06:35,252 --> 00:06:45,252
+Turn its beat into a step the crew can see, make every ending finish it, and put a second voice on the line.
+
+95
+00:06:45,702 --> 00:06:53,093
+Then break it on purpose, so you have seen what a call that finishes nothing looks like.
+
+96
+00:06:53,543 --> 00:06:54,848
+Next time: reputation.

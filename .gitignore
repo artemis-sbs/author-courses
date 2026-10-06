@@ -1,0 +1,6 @@
+site_src/
+_site/
+mkdocs.yml
+__pycache__/
+*.pyc
+_tools/voice_sample.txt

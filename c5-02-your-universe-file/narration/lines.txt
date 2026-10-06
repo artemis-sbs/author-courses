@@ -1,0 +1,77 @@
+s01_cold_open_0	Last time you played somebody else's universe.
+s01_cold_open_1	This is the first minute of yours.
+s01_cold_open_2	A title, a place to start with a name you gave it, and a save file, so the game you stop tonight is still there tomorrow.
+s01_cold_open_3	One file of your own, and a few words changed in another.
+s02_make_the_mission_0	ou is the Open Universe template.
+s02_make_the_mission_1	The title goes in the mission list.
+s02_make_the_mission_2	Keep it to letters, numbers and spaces.
+s02_make_the_mission_3	No hyphen, no colon, no apostrophe.
+s02_make_the_mission_4	That is not fussiness: the title is copied into a small settings file, and a hyphen in that file stops the whole game from starting. Lint.
+s02_make_the_mission_5	Clean, and I have not written a word yet.
+s03_what_is_in_the_folder_0	Three files matter today.
+s03_what_is_in_the_folder_1	The universe itself, which I write. story.mast, which tells the game which universe file to load and what to call it.
+s03_what_is_in_the_folder_2	And description.yaml, which already has my title.
+s03_what_is_in_the_folder_3	The rest is machinery.
+s04_the_file_and_its_title_recor_0	My file, my name: small letters, underscores.
+s04_the_file_and_its_title_recor_1	Inside, one record with a single hash.
+s04_the_file_and_its_title_recor_2	That is the universe itself.
+s04_the_file_and_its_title_recor_3	The name in square brackets, a key in round ones, and under the fence, what this place is.
+s04_the_file_and_its_title_recor_4	I am writing this for me and for whoever writes with me.
+s04_the_file_and_its_title_recor_5	Players never see this record.
+s04_the_file_and_its_title_recor_6	It is the title page of the manuscript.
+s04_the_file_and_its_title_recor_7	What players read comes in a minute.
+s05_the_scenario_0	Two hashes: a chapter.
+s05_the_scenario_1	Its key has to be scenario, because that is the word the game looks for.
+s05_the_scenario_2	And one fact: Mode.
+s05_the_scenario_3	Story is one ship and an ending.
+s05_the_scenario_4	Campaign is one ship over many nights.
+s05_the_scenario_5	Sandbox is an open world.
+s05_the_scenario_6	Today those three play alike.
+s05_the_scenario_7	The word starts to matter when we add fleets, late in this class.
+s05_the_scenario_8	Write the one that is true.
+s06_name_the_place_they_start_0	Sides and Jobs came with the template.
+s06_name_the_place_they_start_1	I leave them for the next lectures.
+s06_name_the_place_they_start_2	At the end, a new chapter: Landmarks. One place.
+s06_name_the_place_they_start_3	At: 0, 0 is home, where every new game starts. Kind: station.
+s06_name_the_place_they_start_4	And one line under the fence.
+s06_name_the_place_they_start_5	That line is the first thing my crew reads when they arrive, so it stays on one line: the card shows the first line and nothing after it.
+s07_tell_the_game_about_it_0	Four changes.
+s07_tell_the_game_about_it_1	The title: search, four found, replace all.
+s07_tell_the_game_about_it_2	The file name: two found, replace all.
+s07_tell_the_game_about_it_3	If those numbers are not four and two, stop and look.
+s07_tell_the_game_about_it_4	Third, the two lines that start with a double quote.
+s07_tell_the_game_about_it_5	These are what players read on the start screen, so these are worth writing well.
+s07_tell_the_game_about_it_6	No curly brackets in them.
+s07_tell_the_game_about_it_7	And fourth, two lines I leave alone.
+s07_tell_the_game_about_it_8	The first gives Helm an Engage button.
+s07_tell_the_game_about_it_9	The second keeps a list of the named places the crew has been.
+s07_tell_the_game_about_it_10	Without them, your universe is one system with no way out.
+s08_check_it_0	Two commands now.
+s08_check_it_1	Lint reads my universe file.
+s08_check_it_2	Compile reads story.mast, and when it is happy it says nothing at all.
+s08_check_it_3	Watch what each one catches.
+s08_check_it_4	A misspelled mode: lint tells me.
+s08_check_it_5	One hash too few on Scenario: lint says clean, and in the game every chapter below it would be gone.
+s08_check_it_6	And a single letter different in the title here: both commands are happy, and the game would start with no universe in it.
+s08_check_it_7	So I count hashes by eye, one, two, three, and I never retype the title.
+s08_check_it_8	I search and replace it.
+s09_play_it_0	My title.
+s09_play_it_1	My two lines.
+s09_play_it_2	Start is on Continue, and there is nothing to continue, so this is a new game.
+s09_play_it_3	And there is the card: Kestrel Relay, and my line.
+s09_play_it_4	Comms takes a cargo run.
+s09_play_it_5	Helm engages it.
+s09_play_it_6	We are somewhere else.
+s09_play_it_7	And in the quest list, a charted location: Kestrel Relay, the way home.
+s09_play_it_8	Now I stop, here, away from home.
+s09_play_it_9	This is the save.
+s09_play_it_10	It is named after my title, and it knows where I stopped. Start again. Continue.
+s09_play_it_11	Same system, same money.
+s09_play_it_12	Engage the way home. Kestrel Relay.
+s09_play_it_13	Two warnings about that file.
+s09_play_it_14	Its name comes from the title, so a new title is a new, empty game.
+s09_play_it_15	And New Game on the start screen replaces it without asking.
+s10_your_turn_0	Now make it yours.
+s10_your_turn_1	Your title, your file, your two lines, your front door.
+s10_your_turn_2	Then break it once on purpose, one letter, and learn where the game tells you about it.
+s10_your_turn_3	Next time we throw out the two factions that came in the box and write three of your own.

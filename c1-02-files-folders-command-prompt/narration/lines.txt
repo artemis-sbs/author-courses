@@ -1,0 +1,153 @@
+s01_cold_open_0	This is the game telling me that my computer is ready to build missions.
+s01_cold_open_1	Seventeen checks, and no problems.
+s01_cold_open_2	By the end of this lecture, you'll have asked it the same question,
+s01_cold_open_3	and you'll know how to read the answer.
+s01_cold_open_4	And if you've never seen a window like this one, good,
+s01_cold_open_5	because this lecture is for you.
+s02_files_folders_and_the_two_wi_0	Everything on your computer is a file, and files live in folders.
+s02_files_folders_and_the_two_wi_1	A file is one named thing:
+s02_files_folders_and_the_two_wi_2	a picture, a page, a program.
+s02_files_folders_and_the_two_wi_3	A folder is a box with a name,
+s02_files_folders_and_the_two_wi_4	and boxes go inside other boxes.
+s02_files_folders_and_the_two_wi_5	This window, File Explorer, is one way to look inside a box.
+s02_files_folders_and_the_two_wi_6	The command prompt is another.
+s02_files_folders_and_the_two_wi_7	Today you'll use both of them, on the same box.
+s03_find_the_game_s_folder_0	So first, where is the game?
+s03_find_the_game_s_folder_1	You didn't choose its folder, the store did,
+s03_find_the_game_s_folder_2	so ask the store.
+s03_find_the_game_s_folder_3	In Steam, go to the library, right-click the game,
+s03_find_the_game_s_folder_4	then choose manage, and browse local files.
+s03_find_the_game_s_folder_5	In the itch app, right-click the game,
+s03_find_the_game_s_folder_6	then manage, and open folder in Explorer.
+s03_find_the_game_s_folder_7	Either way, a window opens on the game's folder,
+s03_find_the_game_s_folder_8	and you know you're in the right place when you see these four names.
+s03_find_the_game_s_folder_9	This one is the game itself.
+s03_find_the_game_s_folder_10	Data is everything it shows and plays.
+s03_find_the_game_s_folder_11	And these two are helpers that it brings along.
+s03_find_the_game_s_folder_12	Leave everything else alone.
+s04_down_to_missions_and_what_a__0	Now go into data, and then into missions.
+s04_down_to_missions_and_what_a__1	This is where you'll work for the whole course.
+s04_down_to_missions_and_what_a__2	Each of these folders is one mission,
+s04_down_to_missions_and_what_a__3	and yours will be one more, right beside them.
+s04_down_to_missions_and_what_a__4	Now look up here, at the address bar.
+s04_down_to_missions_and_what_a__5	If I click in the empty part of it,
+s04_down_to_missions_and_what_a__6	the names turn into one line of text.
+s04_down_to_missions_and_what_a__7	That line is a path,
+s04_down_to_missions_and_what_a__8	which is the full address of this folder.
+s04_down_to_missions_and_what_a__9	It reads: drive C, then the folder Cosmos,
+s04_down_to_missions_and_what_a__10	with data inside it, and missions inside that.
+s04_down_to_missions_and_what_a__11	So the backslash just means inside.
+s04_down_to_missions_and_what_a__12	Write your own path down, because you'll want it again.
+s05_show_the_extensions_0	There's one setting to change, and you only change it once.
+s05_show_the_extensions_1	Every file's name ends in a dot and a few letters.
+s05_show_the_extensions_2	That's the extension, and it says what kind of file this is.
+s05_show_the_extensions_3	And Windows hides it from you.
+s05_show_the_extensions_4	So this file says sbs,
+s05_show_the_extensions_5	when its real name is sbs.bat.
+s05_show_the_extensions_6	Here's why that matters to you.
+s05_show_the_extensions_7	In a few lectures, you'll save a file called mission.amd.
+s05_show_the_extensions_8	If Windows quietly saves it as mission.amd, dot T X T,
+s05_show_the_extensions_9	it still looks right on the screen, and the game can't find it.
+s05_show_the_extensions_10	So open view, then show, and tick file name extensions.
+s05_show_the_extensions_11	And now nothing is hidden.
+s06_open_the_command_prompt_here_0	Now for the other window.
+s06_open_the_command_prompt_here_1	It's the same click on the address bar,
+s06_open_the_command_prompt_here_2	and this time I type C M D, and press Enter.
+s06_open_the_command_prompt_here_3	This is the command prompt.
+s06_open_the_command_prompt_here_4	Look at its last line:
+s06_open_the_command_prompt_here_5	it's the path we just read, and then an arrow.
+s06_open_the_command_prompt_here_6	The path is where this window is standing,
+s06_open_the_command_prompt_here_7	and the arrow means it's my turn.
+s06_open_the_command_prompt_here_8	One warning, though: Windows has a second program that looks just like this one,
+s06_open_the_command_prompt_here_9	and it's called PowerShell.
+s06_open_the_command_prompt_here_10	You can tell it by the letters P S at the start of the line,
+s06_open_the_command_prompt_here_11	and our tool won't run there.
+s06_open_the_command_prompt_here_12	So if you ever see P S, type C M D, press Enter, and it goes away.
+s07_look_around_dir_and_four_key_0	Here's my first command: D I R, and Enter.
+s07_look_around_dir_and_four_key_1	It lists what's in this folder.
+s07_look_around_dir_and_four_key_2	Where a line says D I R in brackets, that's a folder.
+s07_look_around_dir_and_four_key_3	Where it has a number, that's a file, and the number is its size.
+s07_look_around_dir_and_four_key_4	And it's the same list that File Explorer shows,
+s07_look_around_dir_and_four_key_5	because these are two windows onto one folder.
+s07_look_around_dir_and_four_key_6	There are four keys to know.
+s07_look_around_dir_and_four_key_7	Enter runs the line.
+s07_look_around_dir_and_four_key_8	The up arrow brings back the last line I ran.
+s07_look_around_dir_and_four_key_9	Backspace rubs out a letter,
+s07_look_around_dir_and_four_key_10	and Escape clears the whole line.
+s08_the_first_command_to_the_too_0	The game comes with a tool for mission writers.
+s08_the_first_command_to_the_too_1	It's called sbs, and it lives in this folder:
+s08_the_first_command_to_the_too_2	those were its two files.
+s08_the_first_command_to_the_too_3	A command to it is the word sbs, a space, and then what I want.
+s08_the_first_command_to_the_too_4	So I'll ask it for its version.
+s08_the_first_command_to_the_too_5	Two lines come back:
+s08_the_first_command_to_the_too_6	its version, and the folder it lives in,
+s08_the_first_command_to_the_too_7	which should be the path you wrote down.
+s08_the_first_command_to_the_too_8	Read the version as two whole numbers,
+s08_the_first_command_to_the_too_9	so this is nought, thirteen, and thirteen is newer than nine.
+s08_the_first_command_to_the_too_10	The course needs twelve or higher.
+s08_the_first_command_to_the_too_11	The tool is mended and published again from time to time.
+s08_the_first_command_to_the_too_12	To get the newest, type sbs update, and wait for it to finish.
+s08_the_first_command_to_the_too_13	It says updated, and where.
+s08_the_first_command_to_the_too_14	Then ask for the version again.
+s08_the_first_command_to_the_too_15	Do that whenever a page of this course names a higher number than yours.
+s09_is_this_computer_set_up_0	Now the real question.
+s09_is_this_computer_set_up_1	It's sbs doctor, and then a switch: two hyphens, and E N V.
+s09_is_this_computer_set_up_2	A switch changes how a command works,
+s09_is_this_computer_set_up_3	and this one means, look at this computer only.
+s09_is_this_computer_set_up_4	It prints about thirty lines, and most of them are written for a programmer.
+s09_is_this_computer_set_up_5	You need three things from it.
+s09_is_this_computer_set_up_6	The first is the last line, which says no problems,
+s09_is_this_computer_set_up_7	and that's your answer.
+s09_is_this_computer_set_up_8	The second is the mark at the start of each row.
+s09_is_this_computer_set_up_9	O K means it's fine.
+s09_is_this_computer_set_up_10	Two hyphens means something extra isn't here, and that's not a fault.
+s09_is_this_computer_set_up_11	Two exclamation marks would be a problem, and you have none.
+s09_is_this_computer_set_up_12	And the third: a line that's set further in belongs to the row above it.
+s09_is_this_computer_set_up_13	Under two hyphens, it says what the extra thing is for.
+s09_is_this_computer_set_up_14	It's not an instruction.
+s09_is_this_computer_set_up_15	A few rows like that are normal on a writer's computer.
+s10_get_lost_on_purpose_0	Windows finds sbs in one folder only, and it's this one.
+s10_get_lost_on_purpose_1	Watch what happens somewhere else.
+s10_get_lost_on_purpose_2	C D means change folder, so I'll go into a mission.
+s10_get_lost_on_purpose_3	The line on the left has changed.
+s10_get_lost_on_purpose_4	Now I ask for the version,
+s10_get_lost_on_purpose_5	and it says, not recognized.
+s10_get_lost_on_purpose_6	Read that as: there's nothing called sbs where you're standing.
+s10_get_lost_on_purpose_7	And that's true, because it's one folder up.
+s10_get_lost_on_purpose_8	C D and two dots means go up one.
+s10_get_lost_on_purpose_9	Then the up arrow, twice, and Enter,
+s10_get_lost_on_purpose_10	and it works again.
+s10_get_lost_on_purpose_11	You'll see that message again.
+s10_get_lost_on_purpose_12	When you do, read the start of the line before anything else.
+s10_get_lost_on_purpose_13	And if all else fails, close the window,
+s10_get_lost_on_purpose_14	and open a new one from the address bar.
+s11_three_slips_0	Here are three slips, so that you've seen them once.
+s11_three_slips_1	The first is a misspelled command:
+s11_three_slips_2	the tool says no such command, and guesses what I meant.
+s11_three_slips_3	The second is a command copied from a word processor.
+s11_three_slips_4	It turned my two hyphens into one long dash,
+s11_three_slips_5	and the tool takes that dash for a folder name.
+s11_three_slips_6	So type the hyphens here, in this window.
+s11_three_slips_7	And the third you've just seen, which is the wrong folder.
+s11_three_slips_8	The page has tables of more than twenty slips, and each one was tried.
+s12_the_long_report_0	Without the switch, doctor looks at every mission too.
+s12_the_long_report_1	It scrolls, and that's fine, because I read the end first.
+s12_the_long_report_2	It says no problems, so I'm done.
+s12_the_long_report_3	Each mission has a part like this one:
+s12_the_long_report_4	three rows, and all of them O K.
+s12_the_long_report_5	If the end ever names a mission, I scroll up to that mission,
+s12_the_long_report_6	and I keep two rules.
+s12_the_long_report_7	The first: is it my mission?
+s12_the_long_report_8	One that came with the game isn't mine, so I leave it.
+s12_the_long_report_9	The second: the line under a problem suggests a command.
+s12_the_long_report_10	Don't type it just because a report told you to.
+s12_the_long_report_11	And never type sbs fetch on its own,
+s12_the_long_report_12	because that replaces a whole mission folder.
+s12_the_long_report_13	To look at one mission, I put its folder's name after the command.
+s13_your_turn_0	Now do it without me.
+s13_your_turn_1	Close both of the windows,
+s13_your_turn_2	then find the folder, open the prompt, and read the line.
+s13_your_turn_3	Run doctor on one mission, and make three slips on purpose.
+s13_your_turn_4	Then write down your path, and your version.
+s13_your_turn_5	Next time, you get an editor,
+s13_your_turn_6	and you make your first mission in the window you opened today.

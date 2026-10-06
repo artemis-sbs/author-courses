@@ -1,0 +1,122 @@
+s01_cold_open_0	On the left is a mission,
+s01_cold_open_1	and on the right is that same mission, being played.
+s01_cold_open_2	An hour ago, neither of them existed.
+s01_cold_open_3	In this lecture, you put an editor on your computer,
+s01_cold_open_4	you make a mission with one line, and you fly it.
+s01_cold_open_5	You don't write anything yet,
+s01_cold_open_6	because today is about having the desk ready.
+s02_get_vs_code_0	A mission is plain text, and plain text wants an editor.
+s02_get_vs_code_1	A word processor changes what you type:
+s02_get_vs_code_2	it curls your quote marks and it joins your hyphens,
+s02_get_vs_code_3	and the game can read neither.
+s02_get_vs_code_4	So we use VS Code, which is free.
+s02_get_vs_code_5	You download it, and you run the installer.
+s02_get_vs_code_6	Only one page of it matters, and it's this one.
+s02_get_vs_code_7	Tick both of these boxes, and leave the rest.
+s02_get_vs_code_8	Then there are four names to learn for this window:
+s02_get_vs_code_9	the strip of icons, the panel beside it,
+s02_get_vs_code_10	the big area where your files open,
+s02_get_vs_code_11	and the bar along the bottom.
+s03_the_add_on_0	VS Code doesn't know what a mission file is,
+s03_the_add_on_1	so one add-on teaches it.
+s03_the_add_on_2	VS Code calls an add-on an extension,
+s03_the_add_on_3	which isn't the same thing as the extension on a file's name.
+s03_the_add_on_4	The add-on is one file.
+s03_the_add_on_5	I download it, and then I hand it to VS Code here:
+s03_the_add_on_6	the three dots, and then install from V S I X.
+s03_the_add_on_7	One warning, though: don't search for it.
+s03_the_add_on_8	It isn't in this list,
+s03_the_add_on_9	and these others have nothing to do with our game.
+s04_make_the_mission_0	Now back to the window from last time.
+s04_make_the_mission_1	Check the line first: it should end in data, missions.
+s04_make_the_mission_2	First I ask what I can start from,
+s04_make_the_mission_3	and there are five templates.
+s04_make_the_mission_4	We want this one, A M D.
+s04_make_the_mission_5	Now the line that makes a mission.
+s04_make_the_mission_6	It's create, then the folder's name, with no spaces.
+s04_make_the_mission_7	Then hyphen T, and the template.
+s04_make_the_mission_8	Then two hyphens, title,
+s04_make_the_mission_9	and in quote marks, the name the crew will see.
+s04_make_the_mission_10	It stops to ask one question,
+s04_make_the_mission_11	and Enter means yes.
+s04_make_the_mission_12	And there's the folder, right beside the game's own missions.
+s05_bring_the_libraries_up_to_da_0	There's one more line, and you type it once.
+s05_bring_the_libraries_up_to_da_1	Missions share program parts called libraries.
+s05_bring_the_libraries_up_to_da_2	They came with the game,
+s05_bring_the_libraries_up_to_da_3	and create kept them just as they are.
+s05_bring_the_libraries_up_to_da_4	But they're mended and published again from time to time,
+s05_bring_the_libraries_up_to_da_5	so this fetches today's build of each one.
+s05_bring_the_libraries_up_to_da_6	Read the last line: my mission itself was not changed.
+s05_bring_the_libraries_up_to_da_7	And never leave off the end of this command, update libs,
+s05_bring_the_libraries_up_to_da_8	because without it, fetch does a different job.
+s06_open_the_folder_and_trust_it_0	Now I open the mission in the editor,
+s06_open_the_folder_and_trust_it_1	and I open the folder, not a file.
+s06_open_the_folder_and_trust_it_2	So it's file, open folder,
+s06_open_the_folder_and_trust_it_3	one click on my mission, and select folder.
+s06_open_the_folder_and_trust_it_4	VS Code now asks whether I trust this folder.
+s06_open_the_folder_and_trust_it_5	I wrote it, so yes.
+s06_open_the_folder_and_trust_it_6	That matters more than it looks,
+s06_open_the_folder_and_trust_it_7	because until you say yes, the add-on only colors the file,
+s06_open_the_folder_and_trust_it_8	and its checking waits.
+s06_open_the_folder_and_trust_it_9	There are seven files here.
+s06_open_the_folder_and_trust_it_10	This one is yours: mission.amd.
+s06_open_the_folder_and_trust_it_11	This one, you'll change a few lines of, later on.
+s06_open_the_folder_and_trust_it_12	And the other five are plumbing.
+s07_the_add_on_at_work_0	There are three signs that the add-on is alive.
+s07_the_add_on_at_work_1	There's color, and there are the letters A M D down here,
+s07_the_add_on_at_work_2	and there's the outline: eight headings, one inside another.
+s07_the_add_on_at_work_3	Now I'll break something on purpose.
+s07_the_add_on_at_work_4	On line forty-seven, I take off the part in round brackets,
+s07_the_add_on_at_work_5	and a red wavy line appears.
+s07_the_add_on_at_work_6	It's telling me the heading has lost its key.
+s07_the_add_on_at_work_7	Control Z, and it's mended.
+s07_the_add_on_at_work_8	And nobody typed a command.
+s07_the_add_on_at_work_9	There are two keys to keep:
+s07_the_add_on_at_work_10	control Z takes back, and control S saves.
+s07_the_add_on_at_work_11	A dot on the tab means not saved,
+s07_the_add_on_at_work_12	and the game reads the saved file, not my screen.
+s08_check_it_0	Here's the same check, on the whole mission, from the command prompt.
+s08_check_it_1	There's one word to look for, and it's clean.
+s08_check_it_2	This command has a lecture all to itself.
+s09_play_it_0	Now for the game itself.
+s09_play_it_1	A run line starts several copies at once:
+s09_play_it_2	a server, which runs the mission, and the consoles I ask for.
+s09_play_it_3	I always look first.
+s09_play_it_4	Dry run prints what it would start, and starts nothing.
+s09_play_it_5	So it's server, helm, science, with commas and no spaces.
+s09_play_it_6	Then hyphen M and my mission,
+s09_play_it_7	and map equals nought, which means start the first map without asking me.
+s09_play_it_8	Good. Now I run it for real.
+s09_play_it_9	Three windows open, and each one says what it is.
+s09_play_it_10	Here I am at Helm.
+s09_play_it_11	There's the station, and there, nine thousand beyond it, is an unknown hulk.
+s09_play_it_12	I fly to it, and that's the sample quest's first step.
+s09_play_it_13	When I'm done, I close all three.
+s09_play_it_14	Every one of them, before I start again.
+s10_the_rehearsal_0	There's a second way, with no game windows at all.
+s10_the_rehearsal_1	The tool plays the mission itself, and shows it in my browser.
+s10_the_rehearsal_2	It prints about twenty lines, and three of them read like trouble.
+s10_the_rehearsal_3	They aren't. They're printed for every new mission.
+s10_the_rehearsal_4	Then it goes quiet, and the prompt doesn't come back.
+s10_the_rehearsal_5	That's right, because it's running.
+s10_the_rehearsal_6	So I open this address.
+s10_the_rehearsal_7	This is a drawing of a console, and not the game.
+s10_the_rehearsal_8	It's quick, and it's enough for a look.
+s10_the_rehearsal_9	To stop it, press control C, here.
+s10_the_rehearsal_10	And when a lecture says play it, use the game.
+s11_four_slips_0	Here are four slips, so that you've seen them.
+s11_four_slips_1	The first is create, twice.
+s11_four_slips_2	It refuses, and that's the tool protecting your work.
+s11_four_slips_3	The second is the mission's name where the consoles go:
+s11_four_slips_4	you get one window and no server, with only this note to tell you.
+s11_four_slips_5	The third is a space after a comma,
+s11_four_slips_6	which gives you a window with no name, and no note at all.
+s11_four_slips_7	And the fourth you've already met:
+s11_four_slips_8	an untrusted folder, and a file that's colored but not checked.
+s11_four_slips_9	The page has tables of more than thirty, and each one was tried.
+s12_your_turn_0	Now make a second mission, called Practice, without the page.
+s12_your_turn_1	Open it, trust it,
+s12_your_turn_2	break line forty-seven and mend it,
+s12_your_turn_3	and then fly it with one console.
+s12_your_turn_4	After that, open My Mission again, and leave it open.
+s12_your_turn_5	Next time, you'll learn the marks that file is written in.

@@ -1,0 +1,114 @@
+s01_cold_open_0	I wrote that sentence.
+s01_cold_open_1	It's one of six lines in a text file,
+s01_cold_open_2	and those six lines have a shape,
+s01_cold_open_3	the same shape as every quest, every person and every place you'll write in this course.
+s01_cold_open_4	So today, we learn that shape once.
+s02_the_file_0	This is the file your story lives in.
+s02_the_file_1	The lines at the top start with two slashes,
+s02_the_file_2	which makes them notes, and the game skips right over them.
+s02_the_file_3	Everything else in here is a record,
+s02_the_file_4	and a record is simply one thing in your story.
+s02_the_file_5	There are five of them in this file right now,
+s02_the_file_6	and by the time we finish today there'll be six.
+s03_eight_headings_0	Start by finding the hashes.
+s03_eight_headings_1	There are eight lines that begin with one,
+s03_eight_headings_2	and every one of those lines is a heading.
+s03_eight_headings_3	They all have the same shape:
+s03_eight_headings_4	some hashes, then a space,
+s03_eight_headings_5	then a name in square brackets,
+s03_eight_headings_6	and then a key in round brackets.
+s03_eight_headings_7	That's the link you learned in Lecture Four.
+s03_eight_headings_8	Now, the hashes tell you what's inside what.
+s03_eight_headings_9	One hash is the title of the whole file.
+s03_eight_headings_10	Two hashes make a section,
+s03_eight_headings_11	which is a drawer for one kind of record.
+s03_eight_headings_12	Three hashes make a record,
+s03_eight_headings_13	and four make a record that sits inside the record above it.
+s03_eight_headings_14	So these two, with four hashes each,
+s03_eight_headings_15	are the steps of First Contact.
+s04_one_record_three_parts_0	Let's take one apart.
+s04_one_record_three_parts_1	The heading gives it a name.
+s04_one_record_three_parts_2	Then comes what I'll call the fence:
+s04_one_record_three_parts_3	two lines of three hyphens, and everything between them.
+s04_one_record_three_parts_4	Inside the fence there's one fact on each line,
+s04_one_record_three_parts_5	a label, a colon, and a value.
+s04_one_record_three_parts_6	Those are fields, and they're what the game acts on.
+s04_one_record_three_parts_7	Below the fence is the body,
+s04_one_record_three_parts_8	which is just a sentence for people to read.
+s04_one_record_three_parts_9	So that's heading,
+s04_one_record_three_parts_10	fence,
+s04_one_record_three_parts_11	body.
+s04_one_record_three_parts_12	You don't need to know what these four fields do yet,
+s04_one_record_three_parts_13	but have a look at the last one.
+s04_one_record_three_parts_14	It points at another record,
+s04_one_record_three_parts_15	and it does that with a key,
+s04_one_record_three_parts_16	because nothing ever points at a name.
+s05_two_more_0	Now see if you can find the same three parts here.
+s05_two_more_1	One line inside this fence has no colon, and that's allowed,
+s05_two_more_2	because the first line of a fence can be a single word that says what kind of record this is.
+s05_two_more_3	And here, in a scan record,
+s05_two_more_4	the body is two lines that each start with a percent sign.
+s05_two_more_5	Each of those lines is one reading,
+s05_two_more_6	and Science gets shown just one of them.
+s06_what_shows_where_0	A quest's name becomes its line in the quest list,
+s06_what_shows_where_1	and its body becomes the description beside it.
+s06_what_shows_where_2	A scan record's name isn't shown anywhere,
+s06_what_shows_where_3	because that one's just for you,
+s06_what_shows_where_4	and its body is the reading.
+s06_what_shows_where_5	And a key is never shown at all,
+s06_what_shows_where_6	because a key is for the game.
+s07_change_the_words_0	Here's the first edit,
+s07_change_the_words_1	and I'm changing the words and nothing else.
+s07_change_the_words_2	It all stays on one line, however long that line gets,
+s07_change_the_words_3	and I'm not touching the heading or the fence.
+s08_write_a_record_0	Now I'll write one of my own.
+s08_write_a_record_1	I start with three hashes at the left edge, and then one space.
+s08_write_a_record_2	Next comes a name, and then a key,
+s08_write_a_record_3	which is small letters and an underscore, with no spaces.
+s08_write_a_record_4	Then three hyphens, to open the fence.
+s08_write_a_record_5	Inside it I say whose reading this is, which is the derelict,
+s08_write_a_record_6	and which tab it goes on, which is intel.
+s08_write_a_record_7	Three more hyphens close the fence,
+s08_write_a_record_8	and then comes the body, which starts with a percent sign and stays on one line.
+s08_write_a_record_9	So that's six lines in all.
+s08_write_a_record_10	Now notice what I didn't do.
+s08_write_a_record_11	I didn't put a space in front of the hashes,
+s08_write_a_record_12	I didn't type anything after the last round bracket,
+s08_write_a_record_13	and I didn't press the Tab key in front of a field.
+s09_three_ways_to_break_the_shap_0	There are three easy ways to get this shape wrong.
+s09_three_ways_to_break_the_shap_1	The first is leaving out the space after the hashes.
+s09_three_ways_to_break_the_shap_2	Then it isn't a heading any more,
+s09_three_ways_to_break_the_shap_3	and my six lines become six readings of the record above.
+s09_three_ways_to_break_the_shap_4	The second is one field pushed in from the edge.
+s09_three_ways_to_break_the_shap_5	That glues it to the line above,
+s09_three_ways_to_break_the_shap_6	and now the reading belongs to nobody.
+s09_three_ways_to_break_the_shap_7	And the third is two hyphens instead of three,
+s09_three_ways_to_break_the_shap_8	which isn't a fence, so there are no fields.
+s09_three_ways_to_break_the_shap_9	In all three cases the game shows no intel tab,
+s09_three_ways_to_break_the_shap_10	and it doesn't stop to tell you.
+s09_three_ways_to_break_the_shap_11	So when your record isn't in the game,
+s09_three_ways_to_break_the_shap_12	look at its shape first.
+s10_check_it_0	First I check that there are no squiggles,
+s10_check_it_1	and then I run one command.
+s10_check_it_2	I'm looking for a single word, and that word is clean.
+s10_check_it_3	The next lecture is all about this command,
+s10_check_it_4	and it would've caught all three of the mistakes I just showed you.
+s10_check_it_5	There's one warning until then, though.
+s10_check_it_6	If I put one hash where there should be three,
+s10_check_it_7	it still says clean.
+s10_check_it_8	That's because with one hash this line is a title, not a record,
+s10_check_it_9	so the game never reads it.
+s10_check_it_10	Clean only means the checker found nothing,
+s10_check_it_11	so count your hashes yourself.
+s11_play_it_0	I click the handheld, and then Quests,
+s11_play_it_1	and this is the Quest Log.
+s11_play_it_2	There's my sentence, right beside First Contact.
+s11_play_it_3	Now for the hulk.
+s11_play_it_4	The ship scans it by itself once we're close enough,
+s11_play_it_5	so there are three tabs here,
+s11_play_it_6	and the second one is mine.
+s12_your_turn_0	Give the hulk a fourth tab, with a record of your own.
+s12_your_turn_1	Then change the name of First Contact,
+s12_your_turn_2	and watch what changes and what doesn't.
+s12_your_turn_3	Next time, we'll break five things on purpose,
+s12_your_turn_4	and read what the checker says.

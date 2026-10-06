@@ -1,0 +1,91 @@
+s01_cold_open_0	This is the Corsair Queen after today.
+s01_cold_open_1	The crew is told she is here.
+s01_cold_open_2	They have ten minutes to sink her flagship.
+s01_cold_open_3	There is a bonus for her second ship.
+s01_cold_open_4	And ninety seconds in, a third ship she was holding back.
+s01_cold_open_5	Three of those are lines you already know.
+s01_cold_open_6	The last is one card.
+s02_the_test_setting_0	Same as last time.
+s02_the_test_setting_1	Low one hundred percent, so she arrives four seconds in.
+s02_the_test_setting_2	We put the real number back at the end.
+s03_how_a_siege_ends_0	Before we change her story, read the Siege's own. Four quests.
+s03_how_a_siege_ends_1	Repel the Siege is the top: finish it and the game is won.
+s03_how_a_siege_ends_2	Break the Siege is required, and it is done when every raider is gone.
+s03_how_a_siege_ends_3	The other two are the ways to lose.
+s03_how_a_siege_ends_4	Now look at your objective.
+s03_how_a_siege_ends_5	Parent, siege mission.
+s03_how_a_siege_ends_6	That line hangs it on this tree.
+s03_how_a_siege_ends_7	Required true means one more thing the crew must finish before they win.
+s03_how_a_siege_ends_8	Leave Required off, and it is extra.
+s04_destroy_one_morrigan_0	Sink the Morrigan has never meant sink the Morrigan.
+s04_destroy_one_morrigan_1	It meant destroy everything.
+s04_destroy_one_morrigan_2	One line fixes it: done when, destroy one morrigan.
+s04_destroy_one_morrigan_3	Morrigan here is a role.
+s04_destroy_one_morrigan_4	Every named ship gets its own name, in small letters, as a role.
+s04_destroy_one_morrigan_5	And I add an objective line, the sentence the crew reads.
+s04_destroy_one_morrigan_6	Now the objective is done when she is, and the reward is paid right then.
+s04_destroy_one_morrigan_7	The game is not over yet: Break the Siege still wants every raider.
+s05_a_bonus_0	A second objective.
+s05_a_bonus_1	Two hashes, like the first.
+s05_a_bonus_2	Destroy one badb, three hundred credits.
+s05_a_bonus_3	And no Required line.
+s05_a_bonus_4	So it is a bonus: pay if they do it, win if they do not.
+s06_a_way_to_lose_0	Now a clock.
+s06_a_way_to_lose_1	Three lines, and they go together.
+s06_a_way_to_lose_2	Fails when, thirty seconds: a test number. Fatal true.
+s06_a_way_to_lose_3	And Lose, with the sentence the crew will read.
+s06_a_way_to_lose_4	I start the game and do nothing.
+s06_a_way_to_lose_5	Thirty seconds after she arrives... there. My sentence.
+s06_a_way_to_lose_6	Now the real number, ten minutes.
+s06_a_way_to_lose_7	One more thing.
+s06_a_way_to_lose_8	Nobody warns the crew about this clock.
+s06_a_way_to_lose_9	So I say it where they will read it: in the objective, and in the description.
+s07_another_ending_0	One more line an objective can have.
+s07_another_ending_1	Win, and a sentence.
+s07_another_ending_2	Now the game is won the moment she sinks, whatever else is flying.
+s07_another_ending_3	For some bosses that is the right ending.
+s07_another_ending_4	Not for this one, because of what is coming.
+s07_another_ending_5	So I take it out again.
+s07_another_ending_6	Required, Win, and the three lines for losing: those are your three endings.
+s08_a_hook_that_is_already_writt_0	Some things no line can say.
+s08_a_hook_that_is_already_writt_1	For those a boss has a hook: a named block of script that the Siege runs once, when she arrives.
+s08_a_hook_that_is_already_writt_2	One comes with the game.
+s08_a_hook_that_is_already_writt_3	Hook, biomech infestation.
+s08_a_hook_that_is_already_writt_4	And there they are.
+s08_a_hook_that_is_already_writt_5	I wrote no script.
+s08_a_hook_that_is_already_writt_6	But BioMechs are not her story.
+s09_her_own_hook_the_folder_the__0	Her own hook is a label, and a label lives in a mast file.
+s09_her_own_hook_the_folder_the__1	Here is the awkward part.
+s09_her_own_hook_the_folder_the__2	Her boss file is in common data, where updates never touch it.
+s09_her_own_hook_the_folder_the__3	A hook cannot go there.
+s09_her_own_hook_the_folder_the__4	It has to be inside LegendaryMissions.
+s09_her_own_hook_the_folder_the__5	So I make a folder of my own in there, corsair queen, and one file in it.
+s09_her_own_hook_the_folder_the__6	The name is exact: two underscores, init, two underscores, dot mast.
+s09_her_own_hook_the_folder_the__7	The game reads every file with that name.
+s10_the_reserve_0	Now the card does more.
+s10_the_reserve_1	Wait: you know this one.
+s10_the_reserve_2	Ten seconds for testing.
+s10_the_reserve_3	Then a guard: if the game is over, stop.
+s10_the_reserve_4	Then the ship line.
+s10_the_reserve_5	It is long, and it is one line.
+s10_the_reserve_6	You change four things: where, her name, her ship key, and her role, which is her name in small letters.
+s10_the_reserve_7	Last, finish a step: your other card, with a signal name.
+s11_check_it_play_it_0	Lint, clean. Compile, nothing.
+s11_check_it_play_it_1	Four seconds: she is here, and so is the sentence. Three objectives.
+s11_check_it_play_it_2	Ten seconds... the Nemain, and a fourth objective.
+s11_check_it_play_it_3	Now the mistake nothing catches.
+s11_check_it_play_it_4	One letter wrong in the Hook line.
+s11_check_it_play_it_5	Lint is happy.
+s11_check_it_play_it_6	Compile is happy.
+s11_check_it_play_it_7	And the game stops when she arrives.
+s11_check_it_play_it_8	So check that word by eye, every time.
+s12_real_numbers_and_keeping_it__0	Testing is over.
+s12_real_numbers_and_keeping_it__1	Forty percent, ninety seconds, and the note brought up to date.
+s12_real_numbers_and_keeping_it__2	One last thing, and it matters.
+s12_real_numbers_and_keeping_it__3	Her boss file is safe from updates.
+s12_real_numbers_and_keeping_it__4	Her hook is not: it is inside LegendaryMissions, and an update replaces that folder.
+s12_real_numbers_and_keeping_it__5	Then she is still in the list, and the game stops when she arrives.
+s12_real_numbers_and_keeping_it__6	So keep a copy of this folder outside, and put it back after every update.
+s13_your_turn_0	Your own boss now.
+s13_your_turn_1	An objective that means what it says, a bonus, a clock, an ending you chose, and one sentence when it arrives.
+s13_your_turn_2	Next time she gets a voice.

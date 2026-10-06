@@ -1,0 +1,41 @@
+# The fixed half of the site's settings. `python _tools/site.py` writes mkdocs.yml from
+# this file plus the list of pages; edit THIS file, not mkdocs.yml.
+site_name: Cosmos Author Courses
+site_description: Write missions for Artemis Cosmos. A course for storytellers, not programmers.
+site_url: https://artemis-sbs.github.io/author-courses/
+repo_url: https://github.com/artemis-sbs/author-courses
+repo_name: artemis-sbs/author-courses
+docs_dir: site_src
+site_dir: _site
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Light
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Dark
+  features:
+    - navigation.sections
+    - navigation.footer
+    - content.code.copy
+    - toc.follow
+extra_css:
+  - extra.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences

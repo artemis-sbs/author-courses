@@ -1,0 +1,110 @@
+// Every piece of authored CONTENT in this mission lives in this one file. story.mast holds
+// only the logic that reacts to it.
+//
+// The shape is a table of contents: one `#` root, a `##` section per loader, and `###` /
+// `####` records inside. story.mast parses this once and hands each section to its loader.
+//
+// A record is `### [Display Name](key)`, an optional `---` fenced block of fields, then
+// body prose. Comments are `//` - note that .mast uses `#` instead.
+
+# [Sample Mission](sample_mission)
+
+
+// ---- Quests. Nested records are steps of the arc above them, addressed `arc/step`.
+## [Quests](quests)
+
+### [First Contact](first_contact)
+---
+Arc
+Scope: shared
+Starts when: at once
+---
+A derelict has drifted into the sector. Find out what happened to it.
+
+#### [Find the Derelict](find)
+---
+Scope: shared
+Starts when: at once
+Done when: signal derelict_found
+Then: reveal first_contact/study
+---
+Fly out and locate the drifting hulk.
+
+#### [Study the Derelict](study)
+---
+Scope: shared
+Starts when: revealed
+Done when: signal derelict_scanned
+---
+Science should take a full scan of the hull.
+
+### [Close Inspection](approach)
+---
+Scope: shared
+Starts when: at once
+Objective: Close to within 500 of the hulk
+Done when: reach derelict 500
+Reward: 100 credits
+Then: reveal ds1_calls
+---
+The hulk is not answering hails. Bring the ship in close and take a look.
+
+### [DS 1 Calls](ds1_calls)
+---
+Beat
+Starts when: revealed
+Action:
+  - quill hails quill_hello
+---
+DS 1 saw the ship go in close, and wants to hear about it.
+
+
+// ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
+// it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
+// several readings picked at random - so a second scan does not read identically.
+## [Scans](scans)
+
+### [Derelict Hull](derelict_scan)
+---
+Scan of: derelict
+Tab: scan
+---
+% The hull is cold. Whatever happened here happened a long time ago.
+% Hull plating is intact but every port is dark. No power anywhere aboard.
+
+### [Derelict Materials](derelict_mat)
+---
+Scan of: derelict
+Tab: mat
+---
+% Scoring along the plating matches no weapon in use in this sector.
+
+
+// ---- Characters. The people in the story. story.mast brings them into the game.
+## [Characters](characters)
+
+### [Harbormaster Quill](quill)
+---
+Face: terran_female
+---
+Runs traffic control on DS 1. Has watched this lane for eleven years.
+
+
+// ---- Dialogue. A scene is who speaks and what they say. A `%` line is one take: the
+// game picks one take from each block. `@quill` starts the next thing she says.
+## [Dialogue](dialogue)
+
+### [Quill Checks In](quill_hello)
+---
+Speaker: quill
+When: hail
+Title: About that hulk
+---
+@quill
+% Artemis, DS 1. We watched you go in close.
+% Artemis, this is Quill on DS 1. You got nearer to that hulk than I would have.
+% DS 1 to Artemis. Nice flying out there.
+
+@quill
+% Now tell me she is as dead as she looks.
+% So. Is anybody home?

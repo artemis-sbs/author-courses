@@ -1,0 +1,55 @@
+s01_cold_open_0	This is the Corsair Queen.
+s01_cold_open_1	She is not in the game you downloaded.
+s01_cold_open_2	I wrote her this morning, in one small text file, without writing any code.
+s01_cold_open_3	In the next fourteen minutes you will write your own.
+s02_what_a_boss_is_0	In Siege, raiders attack your starbases.
+s02_what_a_boss_is_1	If you choose a boss, then when the raiders are nearly beaten, something worse arrives.
+s02_what_a_boss_is_2	Four bosses come with the game.
+s02_what_a_boss_is_3	Each one is a single file in a folder.
+s02_what_a_boss_is_4	Add a file, and you have added a boss.
+s03_read_the_warlord_0	Here is the Warlord.
+s03_read_the_warlord_1	Two records, the shape you already know: a heading, a fence, a body.
+s03_read_the_warlord_2	The first record is the boss.
+s03_read_the_warlord_3	Boss says what kind of record it is.
+s03_read_the_warlord_4	Trigger and Low say when she arrives: when a quarter of the raiders are left.
+s03_read_the_warlord_5	Flies and Fleets say what comes with her.
+s03_read_the_warlord_6	Difficulty: +1 makes her one step harder than the game.
+s03_read_the_warlord_7	Named is her flagship: a name, then which ship it is.
+s04_make_the_copy_0	Never edit the Warlord. Copy it.
+s04_make_the_copy_1	And not into the game's folder.
+s04_make_the_copy_2	The game's folder is replaced every time the game is updated.
+s04_make_the_copy_3	Yours is here: common data, bosses.
+s04_make_the_copy_4	The Siege reads both.
+s04_make_the_copy_5	Lowercase, underscores, no spaces, and keep .amd on the end.
+s05_rename_the_boss_and_the_flag_0	Square brackets are what the crew reads.
+s05_rename_the_boss_and_the_flag_1	Round brackets are the key; match your file name." "Two traps.
+s05_rename_the_boss_and_the_flag_2	Lint catches both, and you will see that in a minute, but know them now.
+s05_rename_the_boss_and_the_flag_3	First: if you forget to change the name in square brackets, you get two Warlords and the list shows only one.
+s05_rename_the_boss_and_the_flag_4	Second: the flagship's name is one word.
+s05_rename_the_boss_and_the_flag_5	Type 'Iron Duke' and the game reads a ship called Iron, of a kind called Duke.
+s05_rename_the_boss_and_the_flag_6	There is no such ship.
+s06_write_her_words_0	Now the part you are here for.
+s06_write_her_words_1	One line for her entrance.
+s06_write_her_words_2	Then the objective: a new name, a new key, what it pays, and what you want the crew to read.
+s06_write_her_words_3	Leave the five lines in between alone today.
+s06_write_her_words_4	Plain quotes and plain hyphens only; the game cannot draw the curly kind.
+s07_check_it_0	Two checks.
+s07_check_it_1	No squiggles in the editor.
+s07_check_it_2	Then lint, pointed at my own folder, so it checks my bosses and nothing else.
+s07_check_it_3	You want the word 'clean'.
+s07_check_it_4	Here is what it says if I put 'Iron Duke' back: it tells me what the game will read, and what to write instead.
+s08_see_her_in_the_list_0	Start the server, choose Siege, open the Boss list.
+s08_see_her_in_the_list_1	There she is.
+s08_see_her_in_the_list_2	If she is not, the file is in the wrong folder, or the mission was already running when you saved.
+s08_see_her_in_the_list_3	The list is read when the mission starts.
+s09_meet_her_0	At twenty-five percent you would fight for a long time before she shows up.
+s09_meet_her_1	For testing, set it to ninety.
+s09_meet_her_2	Now she comes after the first kills.
+s09_meet_her_3	There is the Morrigan, there are her escorts, and there is your objective, in your words.
+s09_meet_her_4	Put Low back to twenty-five when you are done.
+s10_keep_it_safe_and_your_turn_0	This is why she lives here.
+s10_keep_it_safe_and_your_turn_1	Update the game and this folder is left alone.
+s10_keep_it_safe_and_your_turn_2	It is still one file on one computer, so keep a copy, the way you would with a manuscript.
+s10_keep_it_safe_and_your_turn_3	Now make a second boss, from your own story.
+s10_keep_it_safe_and_your_turn_4	The page has the steps and a checklist.
+s10_keep_it_safe_and_your_turn_5	Next time, we change the numbers.

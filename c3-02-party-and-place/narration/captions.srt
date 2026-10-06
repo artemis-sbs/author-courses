@@ -1,0 +1,135 @@
+1
+00:00:00,000 --> 00:00:05,217
+My engineer, three rooms, and a hulk nobody has opened in years.
+
+2
+00:00:05,667 --> 00:00:15,233
+She is the same person on the bridge and aboard it, and all of it is text I wrote in one file.
+
+3
+00:00:15,683 --> 00:00:17,857
+Today you write your own.
+
+4
+00:00:19,057 --> 00:00:21,665
+A new section at the bottom.
+
+5
+00:00:22,115 --> 00:00:28,202
+The word crew on the first line of the fence says what it is.
+
+6
+00:00:28,652 --> 00:00:30,391
+Ship says whose crew.
+
+7
+00:00:30,841 --> 00:00:39,537
+And Names: locked says these are my people: without it, a player who has saved their own name keeps it.
+
+8
+00:00:39,987 --> 00:00:46,509
+Then one record per person: the console they sit at, a face, and a job.
+
+9
+00:00:46,959 --> 00:00:52,176
+Whoever sits at Engineering is the Chief, here and aboard the hulk.
+
+10
+00:00:53,376 --> 00:00:55,550
+A room is a record.
+
+11
+00:00:56,000 --> 00:01:02,522
+One line starting with a percent sign: what the party finds when they walk in.
+
+12
+00:01:02,972 --> 00:01:04,711
+Then the ways out.
+
+13
+00:01:05,161 --> 00:01:09,074
+Words in square brackets are what the crew reads.
+
+14
+00:01:09,524 --> 00:01:14,307
+The key in round brackets is the room it leads to.
+
+15
+00:01:14,757 --> 00:01:21,278
+And empty round brackets lead nowhere: that choice ends the visit and sends everyone home.
+
+16
+00:01:22,478 --> 00:01:28,130
+Two rules, and they are the difference between a place and a trap.
+
+17
+00:01:28,580 --> 00:01:31,189
+Every room has a way back.
+
+18
+00:01:31,639 --> 00:01:34,248
+Every room has a way home.
+
+19
+00:01:34,698 --> 00:01:49,915
+Check them by eye, because lint only helps with half of it: it warns if a choice points at a room that does not exist, and says nothing about a room with no way out.
+
+20
+00:01:51,115 --> 00:01:53,289
+Something has to say when.
+
+21
+00:01:53,739 --> 00:01:58,087
+Our quest already knows the moment: the ship is alongside.
+
+22
+00:01:58,537 --> 00:02:05,059
+So the quest sends a signal when it completes, and this card listens for it.
+
+23
+00:02:05,509 --> 00:02:08,987
+You paste it; you do not write it.
+
+24
+00:02:09,437 --> 00:02:11,611
+One line reads the rooms.
+
+25
+00:02:12,061 --> 00:02:23,365
+And one line runs the whole visit: it opens the party, starts the first room, and when the last choice is taken it brings everyone home.
+
+26
+00:02:23,815 --> 00:02:33,815
+Three things on the card are yours to change: the signal name, the name of the place, and the room they arrive in.
+
+27
+00:02:35,015 --> 00:02:36,015
+Lint. Clean.
+
+28
+00:02:36,465 --> 00:02:40,378
+And here is the one mistake it does catch.
+
+29
+00:02:41,578 --> 00:02:44,622
+Engineering, and I am Chief Okoro. Alongside.
+
+30
+00:02:45,072 --> 00:02:51,159
+The quest completes, and the party forms. Down. The airlock. Aft. Back. Forward. Back.
+
+31
+00:02:51,609 --> 00:02:56,391
+And home: I did not press anything to get back here.
+
+32
+00:02:57,591 --> 00:03:01,939
+Add a fourth room, and a third person for Helm.
+
+33
+00:03:02,389 --> 00:03:08,041
+Give the room a way in, a way back and a way home.
+
+34
+00:03:08,491 --> 00:03:11,535
+Next time, everyone gets their own menu.

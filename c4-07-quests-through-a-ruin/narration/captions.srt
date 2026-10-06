@@ -1,0 +1,419 @@
+1
+00:00:00,000 --> 00:00:02,609
+Last time the ruin could talk.
+
+2
+00:00:03,059 --> 00:00:05,233
+Today it has a story.
+
+3
+00:00:05,683 --> 00:00:11,335
+Four steps, one after another, each in a different part of the ruin.
+
+4
+00:00:11,785 --> 00:00:17,437
+The crew is paid for each, and the last one ends the game.
+
+5
+00:00:17,887 --> 00:00:21,365
+I did not open the script file once.
+
+6
+00:00:22,565 --> 00:00:29,957
+There is a shipped campaign called Storm's Beacon, and it is made of ruins like this one.
+
+7
+00:00:30,407 --> 00:00:35,624
+Each ruin is one episode, and every episode is the same chain.
+
+8
+00:00:36,074 --> 00:00:40,422
+The approach: the crew comes up to the way in.
+
+9
+00:00:40,872 --> 00:00:47,828
+A call: somebody who knows the place tells them something. A room. A call. A room.
+
+10
+00:00:48,278 --> 00:00:54,365
+And at the end, the piece: they take away what the ruin was hiding.
+
+11
+00:00:54,815 --> 00:00:58,728
+You can already write every link in that chain.
+
+12
+00:00:59,178 --> 00:01:04,396
+A step that finishes when the ship gets somewhere is Class 1.
+
+13
+00:01:04,846 --> 00:01:09,193
+A call when the ship gets somewhere is last lecture.
+
+14
+00:01:09,643 --> 00:01:14,426
+A step that waits for a word is Class 1 again.
+
+15
+00:01:14,876 --> 00:01:19,659
+Here is what is new today: where the word comes from.
+
+16
+00:01:20,109 --> 00:01:25,761
+Nobody can leave the ship until next lecture, so today Comms says it.
+
+17
+00:01:26,961 --> 00:01:29,135
+The story needs a heading.
+
+18
+00:01:29,585 --> 00:01:35,237
+An arc: three hashes, and the word Arc alone on the first line.
+
+19
+00:01:35,687 --> 00:01:37,426
+It starts at once.
+
+20
+00:01:37,876 --> 00:01:40,050
+It fails after twenty minutes.
+
+21
+00:01:40,500 --> 00:01:47,022
+A Win sentence for when it is finished, a Lose sentence for when it fails.
+
+22
+00:01:47,472 --> 00:01:50,080
+All of that is Class 1.
+
+23
+00:01:50,530 --> 00:01:57,052
+Nobody warns the crew about the clock, so I say twenty minutes in the description.
+
+24
+00:01:58,252 --> 00:01:59,557
+The first step.
+
+25
+00:02:00,007 --> 00:02:03,485
+Four hashes, so it belongs to the arc.
+
+26
+00:02:03,935 --> 00:02:07,413
+And this line: Done when: reach entrance 1000.
+
+27
+00:02:07,863 --> 00:02:13,515
+Last time I wrote Starts when: reach altar 600, to start a beat.
+
+28
+00:02:13,965 --> 00:02:20,487
+This is the same sentence in a Done when line, so it finishes a step.
+
+29
+00:02:20,937 --> 00:02:27,893
+The rules have not changed. entrance is a role: the word on the place's Roles line.
+
+30
+00:02:28,343 --> 00:02:30,517
+This place's key is way_in.
+
+31
+00:02:30,967 --> 00:02:35,750
+The key does not work here, and lint will tell you.
+
+32
+00:02:36,200 --> 00:02:38,374
+A thousand is how close.
+
+33
+00:02:38,824 --> 00:02:40,998
+And always write the number.
+
+34
+00:02:41,448 --> 00:02:49,709
+Without it the game uses five thousand, and the step is finished before the crew has seen the ruin.
+
+35
+00:02:50,159 --> 00:02:59,724
+One more thing for numbers inside a ruin: the game looks every two seconds, so do not go below about three hundred.
+
+36
+00:03:00,924 --> 00:03:02,228
+Two more steps.
+
+37
+00:03:02,678 --> 00:03:06,591
+Both say Starts when: revealed, so they are asleep.
+
+38
+00:03:07,041 --> 00:03:09,650
+The way in reveals the first.
+
+39
+00:03:10,100 --> 00:03:12,274
+The first reveals the second.
+
+40
+00:03:12,724 --> 00:03:17,507
+The full address every time: the arc, a slash, the step.
+
+41
+00:03:17,957 --> 00:03:22,304
+Now look. reach altar 600 is in my file twice.
+
+42
+00:03:22,754 --> 00:03:27,972
+On the beat, in a Starts when line, it starts the call.
+
+43
+00:03:28,422 --> 00:03:33,639
+On the step, in a Done when line, it finishes the step.
+
+44
+00:03:34,089 --> 00:03:41,915
+They happen together: the ship comes into the Vault, the step is done and Rook is on Comms.
+
+45
+00:03:42,365 --> 00:03:48,017
+The second step sends the ship to the Niche, the place I hid.
+
+46
+00:03:48,467 --> 00:03:54,989
+The crew can find it because Rook tells them, or because they go and look.
+
+47
+00:03:55,439 --> 00:04:01,091
+So if Comms shuts the recording off, the story can still be finished.
+
+48
+00:04:02,291 --> 00:04:04,900
+The last step is the piece.
+
+49
+00:04:05,350 --> 00:04:07,089
+Somebody takes the thing.
+
+50
+00:04:07,539 --> 00:04:13,191
+Nobody can leave the ship today, so this is a decision Comms makes.
+
+51
+00:04:13,641 --> 00:04:16,685
+The step says Done when: signal hollow_taken.
+
+52
+00:04:17,135 --> 00:04:21,048
+It waits for a word. hollow_taken is my word.
+
+53
+00:04:21,498 --> 00:04:27,150
+And Action: the moment the step starts, Rook calls with a second recording.
+
+54
+00:04:27,600 --> 00:04:30,643
+Now the scene. Two takes. Two answers.
+
+55
+00:04:31,093 --> 00:04:35,876
+One asks what it is, and leads to a second scene.
+
+56
+00:04:36,326 --> 00:04:41,109
+One says take it aboard, and after the semicolon: signal hollow_taken.
+
+57
+00:04:41,559 --> 00:04:43,298
+That sends the word.
+
+58
+00:04:43,748 --> 00:04:50,704
+The step hears it, pays, and it was the last step, so the game is won.
+
+59
+00:04:51,154 --> 00:04:54,633
+Look at the ways out of this conversation.
+
+60
+00:04:55,083 --> 00:04:58,561
+There are two, and both send the word.
+
+61
+00:04:59,011 --> 00:05:00,750
+That is on purpose.
+
+62
+00:05:01,200 --> 00:05:12,070
+If I add an answer that just hangs up, a crew that picks it has spent the call, and the step can never be finished.
+
+63
+00:05:12,520 --> 00:05:17,302
+The crew's way of saying not now is the Back button.
+
+64
+00:05:17,752 --> 00:05:22,970
+Why a word, and not completes, the way Class 2 did it?
+
+65
+00:05:23,420 --> 00:05:27,767
+Because the step does not care who says the word.
+
+66
+00:05:28,217 --> 00:05:37,783
+Next lecture a crew member can go and take the bowl by hand, and this step will not change by one letter.
+
+67
+00:05:38,983 --> 00:05:43,330
+Last time I put a Scan line on the Altar.
+
+68
+00:05:43,780 --> 00:05:46,824
+That is for a person standing there.
+
+69
+00:05:47,274 --> 00:05:51,622
+The Science console on the ship does not show it.
+
+70
+00:05:52,072 --> 00:05:55,985
+Science reads scan records, the ones from Class 1.
+
+71
+00:05:56,435 --> 00:06:02,522
+A place wears a role, and a role is all a scan record needs.
+
+72
+00:06:02,972 --> 00:06:06,450
+Scan of, the role, a tab, a reading.
+
+73
+00:06:06,900 --> 00:06:09,943
+One on the place for a person.
+
+74
+00:06:10,393 --> 00:06:13,002
+One in Scans for the ship.
+
+75
+00:06:14,202 --> 00:06:15,202
+Lint. Clean.
+
+76
+00:06:15,652 --> 00:06:19,565
+Now I use the key where the role goes.
+
+77
+00:06:20,015 --> 00:06:23,928
+Nothing in this mission wears a role called way_in.
+
+78
+00:06:24,378 --> 00:06:27,422
+Good: that step would never have finished.
+
+79
+00:06:27,872 --> 00:06:29,176
+Put it back.
+
+80
+00:06:29,626 --> 00:06:33,104
+Now I drop the arc from a reveal.
+
+81
+00:06:33,554 --> 00:06:39,641
+It tells me the step is survey/first to the game, and to write that.
+
+82
+00:06:40,091 --> 00:06:41,396
+Put it back.
+
+83
+00:06:41,846 --> 00:06:46,628
+Now I take these two lines off the last step. Clean.
+
+84
+00:06:47,078 --> 00:06:48,817
+And this one matters.
+
+85
+00:06:49,267 --> 00:06:53,180
+The other three steps still say they are required.
+
+86
+00:06:53,630 --> 00:07:04,500
+So the game decides the arc is finished when those three are, and the crew wins at the niche with the last call still ringing.
+
+87
+00:07:04,950 --> 00:07:06,689
+Lint cannot see that.
+
+88
+00:07:07,139 --> 00:07:13,226
+Read your steps: all of them have the two lines, or none of them.
+
+89
+00:07:14,426 --> 00:07:16,600
+One step in the list.
+
+90
+00:07:17,050 --> 00:07:18,789
+Fly to the door.
+
+91
+00:07:19,239 --> 00:07:22,717
+Done, and paid, and here is the next.
+
+92
+00:07:23,167 --> 00:07:27,080
+In through the Mouth, the Nave, up the tunnel.
+
+93
+00:07:27,530 --> 00:07:30,139
+Done again, and Rook is calling.
+
+94
+00:07:30,589 --> 00:07:34,067
+Science: the Altar, and there is my reading.
+
+95
+00:07:34,517 --> 00:07:36,257
+Comms: play the rest.
+
+96
+00:07:36,707 --> 00:07:38,011
+Mark the Gallery.
+
+97
+00:07:38,461 --> 00:07:44,548
+Back across the Nave, into the built room, to the far end. Third step.
+
+98
+00:07:44,998 --> 00:07:46,302
+A second recording.
+
+99
+00:07:46,752 --> 00:07:48,057
+Take it aboard.
+
+100
+00:07:48,507 --> 00:07:50,680
+And that is the game.
+
+101
+00:07:51,880 --> 00:07:54,489
+Give the Altar a second tab.
+
+102
+00:07:54,939 --> 00:07:58,852
+Add a fifth step that carries the bowl home.
+
+103
+00:07:59,302 --> 00:08:03,215
+Give the crew a way to lose on purpose.
+
+104
+00:08:03,665 --> 00:08:09,752
+Then break one line where lint can see it and one where it cannot.
+
+105
+00:08:10,202 --> 00:08:12,811
+Next time, the crew goes outside.
