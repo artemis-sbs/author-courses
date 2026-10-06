@@ -16,6 +16,8 @@ Twelve lectures. Each is a page you follow at your own pace and a short video (f
 ten minutes) that shows it being done. You finish with a mission of your own: a quest with
 several steps, a place to find, a win and a loss, checked, printed and handed to a friend.
 
+All twelve videos are also in one [playlist](https://www.youtube.com/playlist?list=PLbwJW0GVtYR8).
+
 | # | Lecture | You leave with |
 |---|---|---|
 | 1 | [What you are going to build](class-1/01-what-you-are-going-to-build.md) | A look at a quest, a boss, a boarding scene and a ruin, and at what a mission is made of |

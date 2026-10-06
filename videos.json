@@ -1,1 +1,50 @@
-{}
+{
+  "c1-01-what-you-are-going-to-build": {
+    "youtube": "Xyx0zujvAIU",
+    "minutes": 6
+  },
+  "c1-02-files-folders-command-prompt": {
+    "youtube": "oloVptKQtuQ",
+    "minutes": 10
+  },
+  "c1-03-editor-and-first-run": {
+    "youtube": "Q6D_hleogw4",
+    "minutes": 7
+  },
+  "c1-04-markdown-in-twenty-minutes": {
+    "youtube": "x_u23OmoSTU",
+    "minutes": 8
+  },
+  "c1-05-the-shape-of-a-record": {
+    "youtube": "Blopxvr72UQ",
+    "minutes": 6
+  },
+  "c1-06-lint-is-your-editor": {
+    "youtube": "SyNibfGDPTs",
+    "minutes": 8
+  },
+  "c1-07-roles-and-signals": {
+    "youtube": "vhfW7HcJm0U",
+    "minutes": 8
+  },
+  "c1-08-first-quest": {
+    "youtube": "yU4I7KlwxfM",
+    "minutes": 4
+  },
+  "c1-09-chains-and-trees": {
+    "youtube": "HeCe8w8_oJU",
+    "minutes": 6
+  },
+  "c1-10-things-quests-point-at": {
+    "youtube": "ImzXX4wpDHI",
+    "minutes": 7
+  },
+  "c1-11-just-enough-mast": {
+    "youtube": "dPG0NR8daCk",
+    "minutes": 8
+  },
+  "c1-12-ship-a-quest-mission": {
+    "youtube": "02a98HOsBXU",
+    "minutes": 7
+  }
+}

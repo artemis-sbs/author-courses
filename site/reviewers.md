@@ -39,7 +39,6 @@ is easiest for us; a single long one is fine too.
 
 Please do not spend your time on these:
 
-- **Videos are not posted yet.** Pages say so where a video will go.
 - **Pictures are missing from the pages.** A line in square brackets such as
   *[Screenshot to add: ...]* marks where one will go.
 - **The pictures do not move much.** The videos are made from real screens, as stills with
