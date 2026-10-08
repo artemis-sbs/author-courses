@@ -1,82 +1,106 @@
-s01_cold_open_0	Last time, she talked and the crew listened.
-s01_cold_open_1	This time they answer.
-s01_cold_open_2	One answer got us a job.
-s01_cold_open_3	Another would have hung up on her.
-s01_cold_open_4	Every one of those is a single line in your file, and today you write them.
-s02_something_to_say_0	An answer is a line that starts with a dash.
-s02_something_to_say_1	Square brackets: the words Comms reads and picks.
-s02_something_to_say_2	Round brackets, straight after, no space: where the conversation goes next.
-s02_something_to_say_3	Empty round brackets mean the call is over. Two rules.
-s02_something_to_say_4	An answer is one line.
-s02_something_to_say_5	And answers go at the end, below her last take, because that is when the crew gets them.
-s03_an_answer_that_leads_somewhe_0	Put a scene's key in the round brackets, and the call goes on there.
-s03_an_answer_that_leads_somewhe_1	So I need that scene.
-s03_an_answer_that_leads_somewhe_2	Three hashes, a name, the key I just used.
-s03_an_answer_that_leads_somewhe_3	Speaker, her key. Two takes.
-s03_an_answer_that_leads_somewhe_4	And two answers of its own.
-s03_an_answer_that_leads_somewhe_5	Notice what is missing: no When, no Title.
-s03_an_answer_that_leads_somewhe_6	Nothing places this scene as a call.
-s03_an_answer_that_leads_somewhe_7	The only way in is the answer that names it.
-s03_an_answer_that_leads_somewhe_8	And three hashes, like the first scene. Never four.
-s03_an_answer_that_leads_somewhe_9	A scene does not go inside another scene.
-s04_a_second_way_in_0	One more answer: the crew asks a question of their own.
-s04_a_second_way_in_1	That goes to a scene where she tells them what she knows, and from there, on to the offer.
-s04_a_second_way_in_2	Two answers lead to the same scene.
-s04_a_second_way_in_3	That is fine.
-s04_a_second_way_in_4	One limit: four answers in a scene.
-s04_a_second_way_in_5	A fifth is never shown.
-s05_an_answer_that_does_somethin_0	So far an answer moves the conversation.
-s05_an_answer_that_does_somethin_1	Now one that changes the story.
-s05_an_answer_that_does_somethin_2	First the job she is offering.
-s05_an_answer_that_does_somethin_3	Starts when revealed, so it is hidden.
-s05_an_answer_that_does_somethin_4	Done when thirty seconds. A reward.
-s05_an_answer_that_does_somethin_5	Now the answer. A semicolon.
-s05_an_answer_that_does_somethin_6	Everything after the semicolon is what the answer does.
-s05_an_answer_that_does_somethin_7	Accepts, and the key of the quest.
-s05_an_answer_that_does_somethin_8	The key, not the name.
-s05_an_answer_that_does_somethin_9	When Comms says we will tag her, the job starts.
-s06_two_things_four_words_0	An answer can do two things.
-s06_two_things_four_words_1	One semicolon, then a comma between the things.
-s06_two_things_four_words_2	Not a second semicolon: that looks right and does nothing.
-s06_two_things_four_words_3	The second thing here finishes the beat from last time, DS 1 Calls.
-s06_two_things_four_words_4	She has been answered, so that moment is over, and a finished beat shows up in the quest list as done.
-s06_two_things_four_words_5	There are four words.
-s06_two_things_four_words_6	Accepts starts a quest.
-s06_two_things_four_words_7	Completes finishes one.
-s06_two_things_four_words_8	Fails fails one.
-s06_two_things_four_words_9	Signal sends a word into the story, and any quest waiting on that word hears it.
-s07_a_call_that_comes_back_0	What the crew said should come back to them.
-s07_a_call_that_comes_back_1	When the job is done: then, reveal beacon_set.
-s07_a_call_that_comes_back_2	A beat, the same pattern as last time: starts when revealed, and its action places a call.
-s07_a_call_that_comes_back_3	And the scene.
-s07_a_call_that_comes_back_4	This one is a call of its own, so it has When hail and a Title again.
-s08_answers_that_depend_on_the_s_0	Look at what you have.
-s08_answers_that_depend_on_the_s_1	This answer is only offered to a crew that reported the hulk was cold.
-s08_answers_that_depend_on_the_s_2	This one is only offered to a crew that took the job and finished it.
-s08_answers_that_depend_on_the_s_3	That is how you make an answer depend on the story: put it somewhere the crew can only reach when it is true.
-s08_answers_that_depend_on_the_s_4	You will see another way in the documentation, the word if on the answer.
-s08_answers_that_depend_on_the_s_5	Do not use it in this mission.
-s08_answers_that_depend_on_the_s_6	It cannot read your quests or your credits, so the answer is never offered, and lint will not warn you.
-s08_answers_that_depend_on_the_s_7	It comes into its own in Class 3.
-s09_lint_0	Lint. Clean.
-s09_lint_1	A scene key that is not there.
-s09_lint_2	A word that is not one of the four.
-s09_lint_3	A quest key that is not there: the answer would end the call and start nothing.
-s09_lint_4	No round brackets: that line is no longer an answer.
-s09_lint_5	It is one more thing for her to say, and one day she would say it, brackets and all.
-s09_lint_6	And a scene with one hash too many, which takes the scene above it out of the game.
-s09_lint_7	Lint reads every one of these.
-s09_lint_8	What it cannot read is your intention: a job with no way to finish still lints clean.
-s10_play_it_0	Her question, and my three answers.
-s10_play_it_1	I ask first.
-s10_play_it_2	Then I tell her. The offer.
-s10_play_it_3	We will tag her.
-s10_play_it_4	Call over, and there is the job. Thirty seconds.
-s10_play_it_5	Done, paid, and she is calling back.
-s10_play_it_6	Now the other road.
-s10_play_it_7	Find someone else. No job.
-s10_play_it_8	And she does not call.
-s10_play_it_9	Same file, two different evenings.
-s11_your_turn_0	You wrote a second call last time.
-s11_your_turn_1	Give it answers, and make one of them send a word into the story that finishes a quest.
-s11_your_turn_2	Next time: a job the crew can only get by picking up the call.
+s01_cold_open_0	Last time, the harbormaster called,
+s01_cold_open_1	and all the crew could do was listen.
+s01_cold_open_2	Today they get to answer.
+s01_cold_open_3	One answer asks her for more,
+s01_cold_open_4	one takes a job,
+s01_cold_open_5	and one hangs up.
+s01_cold_open_6	And the answer they give changes the story.
+s02_an_answer_0	An answer is one line,
+s02_an_answer_1	and you already know its shape.
+s02_an_answer_2	It's a dash and a space,
+s02_an_answer_3	then the words in square brackets,
+s02_an_answer_4	then round brackets, with no space between.
+s02_an_answer_5	It's a heading's name and key,
+s02_an_answer_6	with a dash where the hashes go.
+s02_an_answer_7	The square brackets hold what Comms reads and picks.
+s02_an_answer_8	The round brackets say where the conversation goes next,
+s02_an_answer_9	and when they're empty, the call is over.
+s03_an_answer_that_leads_somewhe_0	Now I put a key in those round brackets,
+s03_an_answer_that_leads_somewhe_1	the key of a scene I haven't written yet.
+s03_an_answer_that_leads_somewhe_2	And lint tells me so:
+s03_an_answer_that_leads_somewhe_3	this answer points at something that isn't there.
+s03_an_answer_that_leads_somewhe_4	So I write it, at the end of the file.
+s03_an_answer_that_leads_somewhe_5	It's a scene like the first one, with three hashes,
+s03_an_answer_that_leads_somewhe_6	but it has no When line and no title.
+s03_an_answer_that_leads_somewhe_7	Nothing in the story places it as a call.
+s03_an_answer_that_leads_somewhe_8	The only way in is the answer that names it.
+s04_a_second_way_in_0	A conversation can branch, and it can come back together.
+s04_a_second_way_in_1	I add an answer that asks her what she knows,
+s04_a_second_way_in_2	and I write the scene for it.
+s04_a_second_way_in_3	And from there, one answer leads on to the same offer.
+s04_a_second_way_in_4	So a crew that asks first hears a little more,
+s04_a_second_way_in_5	and ends up in the same place.
+s04_a_second_way_in_6	Just don't write more than four answers in a scene,
+s04_a_second_way_in_7	because a fifth is never offered.
+s05_the_job_0	So far an answer moves the conversation,
+s05_the_job_1	or it ends it.
+s05_the_job_2	Now one is going to change the story.
+s05_the_job_3	First I need the job she's offering,
+s05_the_job_4	so I write it up here among my quests.
+s05_the_job_5	It starts when revealed,
+s05_the_job_6	which keeps it hidden until something starts it.
+s05_the_job_7	Lint warns me that nothing does,
+s05_the_job_8	and look what it lists:
+s05_the_job_9	a Then line, or an answer.
+s05_the_job_10	So lint already knows where this is going.
+s05_the_job_11	I go back to the offer,
+s05_the_job_12	and after the round brackets I type a semicolon,
+s05_the_job_13	then accepts, and the job's key.
+s05_the_job_14	Everything after that semicolon is what the answer does.
+s06_two_things_at_once_0	An answer can do two things,
+s06_two_things_at_once_1	with one semicolon, and a comma between them.
+s06_two_things_at_once_2	Whichever way the crew answers, they've answered her,
+s06_two_things_at_once_3	so I mark that moment done as well.
+s06_two_things_at_once_4	There are four words you can write after the semicolon.
+s06_two_things_at_once_5	Accepts starts a job,
+s06_two_things_at_once_6	completes finishes one and pays it,
+s06_two_things_at_once_7	fails does what it says,
+s06_two_things_at_once_8	and signal sends a word into the story.
+s07_the_call_that_comes_back_0	What the crew said can come back to them later.
+s07_the_call_that_comes_back_1	When the beacon is set, I want her to call again,
+s07_the_call_that_comes_back_2	and that takes three pieces.
+s07_the_call_that_comes_back_3	Watch lint walk me from each one to the next.
+s07_the_call_that_comes_back_4	First, a Then line on the job,
+s07_the_call_that_comes_back_5	and lint says it reveals something that isn't there.
+s07_the_call_that_comes_back_6	So I write that, a beat like last time's,
+s07_the_call_that_comes_back_7	and lint says the beat calls a scene that isn't there.
+s07_the_call_that_comes_back_8	So I write the scene, and now it's clean.
+s07_the_call_that_comes_back_9	And here's the point of it.
+s07_the_call_that_comes_back_10	Only a crew that took the job, and finished it,
+s07_the_call_that_comes_back_11	ever hears this call.
+s08_if_and_why_not_yet_0	So that's two ways to make an answer depend on the story.
+s08_if_and_why_not_yet_1	You put it in a scene that only one answer leads to,
+s08_if_and_why_not_yet_2	or in a call that only comes later.
+s08_if_and_why_not_yet_3	You'll see a third way in other pages,
+s08_if_and_why_not_yet_4	a condition written on the answer itself.
+s08_if_and_why_not_yet_5	Don't use it in this mission.
+s08_if_and_why_not_yet_6	It can't read your quests or your credits,
+s08_if_and_why_not_yet_7	so the answer would never be offered,
+s08_if_and_why_not_yet_8	and lint can't tell.
+s08_if_and_why_not_yet_9	We'll use it properly in Class 3.
+s09_play_it_0	In we go, and here's her call.
+s09_play_it_1	She asks her question,
+s09_play_it_2	and now there are three answers in the list.
+s09_play_it_3	I'll ask what she knows first,
+s09_play_it_4	then I tell her the hulk is cold,
+s09_play_it_5	and there's the offer.
+s09_play_it_6	We will tag her.
+s09_play_it_7	The call is over,
+s09_play_it_8	and the job is in the Quest Log.
+s09_play_it_9	Thirty seconds later it's done and paid,
+s09_play_it_10	and she's calling back.
+s10_the_other_roads_0	Now the other roads.
+s10_the_other_roads_1	If I tell her to find someone else,
+s10_the_other_roads_2	there's no job, and no second call.
+s10_the_other_roads_3	And if I say not now,
+s10_the_other_roads_4	the call is gone, and it doesn't come back.
+s10_the_other_roads_5	But Back is a different thing.
+s10_the_other_roads_6	It puts the call back in the list, unanswered,
+s10_the_other_roads_7	and nothing in the story changes.
+s10_the_other_roads_8	So the crew always has a way to wait.
+s10_the_other_roads_9	Only write an answer that hangs up
+s10_the_other_roads_10	when your story can go on without the call.
+s11_your_turn_0	Now it's your turn: give your second call some answers.
+s11_your_turn_1	Make one of them send a word into the story,
+s11_your_turn_2	and write a quest that waits for that word.
+s11_your_turn_3	Next time, a step the crew can only finish by reporting in.

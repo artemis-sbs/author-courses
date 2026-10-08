@@ -11,8 +11,9 @@ and the crew can dock there. Each side has a name, a key and a color that you wr
 *[Screenshot to add: the Science console with the Breaker Cutter selected: its name, the
 word `breaker` beside it, and the scan text.]*
 
-You will edit two files. In `mission.amd` you add one section with three records, add two
-landmarks and change two lines. In `story.mast` you paste two lines and add one word.
+You will edit two files. In `mission.amd` you add one section with three records, two
+landmarks and three lines of your word list, and you change one line. In `story.mast` you
+add one word.
 
 ## The video
 
@@ -20,12 +21,19 @@ landmarks and change two lines. In `story.mast` you paste two lines and add one 
 
 ## Before you start
 
-- Your mission from Class 1, as it stood at the end of Lecture 11: the arc **Salvage Run**,
-  the lifeboat, and the tug that arrives.
-- `sbs lint MyMission` says `clean`, and `sbs compile MyMission` prints nothing.
-- You can start the mission with a Helm, a Science and a Comms console.
+- Your mission from Class 1, as Lecture 11 left it: the arc **Salvage Run**, the lifeboat,
+  and the tug that arrives. If you made it your own in Lecture 12, read your own names
+  where this page says DS 1, Unknown Hulk and Salvage Run. Your keys, your roles and the
+  line numbers of `story.mast` are the same.
+- `sbs lint MyMission` says `clean`.
+- VS Code with the mission folder open, a command prompt open in `data\missions`, and the
+  game closed.
 
-In this page the mission folder is called `MyMission`. Use your own folder's name.
+This lecture adds a third console to the line that starts the game:
+
+```
+sbs run server,helm,science,comms -m MyMission map=0
+```
 
 Words for this lecture:
 
@@ -34,7 +42,7 @@ Words for this lecture:
 | Side | A faction: a team. Every ship and station is on one side, or on none |
 | Key | The short word in round brackets after a name. A side's key is the word everything else uses to point at it |
 | Relation | What two sides are to each other: enemies, allies, neutral, or nothing at all |
-| Role | A label an object wears. You met it in Lecture 8 |
+| Role | A label a thing wears. You met it in Lecture 7 |
 
 ## Step 1 - The side you already have
 
@@ -51,9 +59,9 @@ color. That is the only side your mission has, and everything on your map is on 
 
 | Thing | Where its side is written | Its side |
 |---|---|---|
-| DS 1 | `"tsn, station"`, on line 59 | `tsn` |
-| The hulk | `"tsn, derelict"`, on line 63 | `tsn` |
-| The tug | `"tsn, tug"`, in your card at the end of the file | `tsn` |
+| DS 1 | `"tsn, station"`, on line 64 | `tsn` |
+| The hulk | `"tsn, derelict, ghost_ship"`, on line 68 | `tsn` |
+| The tug | `"tsn, tug"`, on line 113, in your card | `tsn` |
 | The crew's ship | The game's settings, not this file | `tsn` |
 | The lifeboat | Nowhere. A wreck needs no side | none |
 
@@ -62,7 +70,17 @@ Inside the quote marks, the first word is the side. The words after it are roles
 So `tsn` is the key of the crew's own side. Keep that word in mind: every step below
 uses it.
 
-Leave lines 18 to 20 as they are. From here on you write sides the way you write
+Now look at line 44:
+
+```
+    sides_declare_amd(amd_section(MISSION_DOC, "sides"))
+```
+
+In Lecture 11 this line was in your table as "a section keyed `sides`. Class 2". It reads
+a Sides section from `mission.amd` and makes a side from each record. Your file has no
+such section yet, so until today the line did nothing.
+
+Leave all of these lines as they are. From here on you write sides the way you write
 everything else: as records in `mission.amd`.
 
 ## Step 2 - A Sides section, with your own side in it
@@ -83,10 +101,13 @@ The Terran Stellar Navy. The crew's own side.
 
 | Line | Meaning |
 |---|---|
-| `## [Sides](sides)` | The section. Two hashes, and the key is exactly `sides` |
+| `## [Sides](sides)` | The section. Two hashes, and the key is exactly `sides`: line 44 asks for that word |
 | `### [TSN](tsn)` | One side. Three hashes, the side's name, then its key |
 | `Color: #07F` | The side's color |
 | The last line | A description. It is a note for you |
+
+This record says again what lines 18 to 20 of `story.mast` say. Keep both. The record is
+here so that every side of your story is in one place, written one way.
 
 Three rules for a side's key.
 
@@ -117,60 +138,17 @@ console. The map itself does not use it: there a contact is colored by what it i
 red for an enemy and blue for a friend. Lint does not check a color, so copy one from the
 table.
 
-### Run lint
+Save, and run lint:
 
 ```
 sbs lint MyMission
 ```
 
-It has something to say:
+It says `clean`.
 
-```
-nothing in this mission reads a section keyed `sides`, so its records are never loaded.
-The story asks this file for: characters, dialogue, landmarks, quests, scans.
-```
+## Step 3 - Two more sides
 
-Lint is right. In Lecture 11 you read the lines of `story.mast` that read your file: one
-for quests, one for scans, one for landmarks. There is no line for sides. The next step
-adds it.
-
-## Step 3 - The card: one line that reads the section
-
-*If your `story.mast` already has a line that begins `sides_declare_amd(`, the card is
-built in. Go to Step 4.*
-
-Open `story.mast`. Find line 35. It begins `shared MISSION_DOC =`, and it is the line that
-reads your whole file. Put your cursor at the END of that line and press Enter twice. Then
-type these two lines. Each starts four spaces in, lined up with line 35:
-
-```
-    # The sides, if mission.amd has a Sides section. With no such section this does nothing.
-    sides_declare_amd(amd_section(MISSION_DOC, "sides"))
-```
-
-| Part | Meaning |
-|---|---|
-| The `#` line | A comment, so that next month you know what the line is for |
-| `sides_declare_amd(` | Make a side from each record it is given |
-| `amd_section(MISSION_DOC, "sides")` | The section of your file whose key is `sides`. The same words as on the landmarks line, with a different key |
-
-You change nothing on this card. It has two rules, and both are about where it goes.
-
-1. **Below line 35.** Line 35 reads the file. A line above it has nothing to read.
-2. **One of the map's lines.** Four spaces in, and above the map's `->END`.
-
-Run both checks, as you have since Lecture 11:
-
-```
-sbs lint MyMission
-sbs compile MyMission
-```
-
-Lint says `clean`. Compile prints nothing.
-
-## Step 4 - Two more sides
-
-Go back to the end of `mission.amd`. Below the TSN record, leave a blank line and type:
+Below the TSN record, leave a blank line and type:
 
 ```
 ### [The Breakers](breaker)
@@ -202,7 +180,9 @@ After the colon comes a **key**. Two rules.
 2. **More than one key takes a comma.** `Enemies: tsn, guild`. Never `tsn guild`, and never
    `tsn and guild`.
 
-## Step 5 - Put something on each side
+Save. Run lint: `clean`.
+
+## Step 4 - Put something on each side
 
 A side with nothing on it is a name in a file. Give each of yours one thing on the map.
 
@@ -215,7 +195,7 @@ description. Leave one blank line below it. Then, ABOVE the `// ---- Sides` note
 ```
 ### [Breaker Cutter](cutter)
 ---
-Kind: npc
+Kind: ship
 Side: breaker
 Roles: cutter
 Art: pirate_strongbow
@@ -240,15 +220,15 @@ One `Art` word is new. Add it to your table from Lecture 10:
 
 | You write | It looks like | Goes with |
 |---|---|---|
-| `Art: pirate_strongbow` | A pirate ship | `Kind: npc` |
+| `Art: pirate_strongbow` | A pirate ship | `Kind: ship` |
 
 **Mind where these two records go.** They belong to the Landmarks section, so they sit
 above the line `## [Sides](sides)`. A record typed below that line is read as a side: the
 game makes a side called Breaker Cutter and puts no ship on the map.
 
-Run lint. It says `clean`.
+Save. Run lint: `clean`.
 
-## Step 6 - A second station changes an old step
+## Step 5 - A second station changes an old step
 
 Lecture 10 warned you about this, in its last table. Your story ends with:
 
@@ -258,7 +238,7 @@ Done when: reach station 1000
 
 `station` is a role, and the game gives it to every station. Until today DS 1 was the only
 one. Now the Guild Yard wears it too. A crew could carry the log to the yard, and the game
-would end there with "DS 1 knows what happened out there."
+would end there with "The log is home. DS 1 knows what happened out there."
 
 The cure is a role that only DS 1 wears. It takes two edits.
 
@@ -268,15 +248,17 @@ First, in `mission.amd`, find **Bring the Log Home** and change its `Done when:`
 Done when: reach home 1000
 ```
 
-Run lint. It tells you the half you have not done yet:
+Save, and run lint. It tells you the half you have not done yet:
 
 ```
-nothing in this mission wears a role called `home`, so `reach` matches nothing.
+== mission.amd ==
+  [WARNING] line 105: nothing in this mission wears a role called `home`, so `reach` matches nothing. Check the spelling against the `Roles:` line of the thing you mean, or the roles in `story.mast` (role-nothing-wears)
+
+1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```
 
-Now open `story.mast` and find the line that puts DS 1 on the map. It begins
-`npc_spawn(0, 0, 0, "DS 1"`, and it is on line 62 now that your card is above it. Inside
-the second pair of quote marks, after `station`, type a comma, a space and the word `home`:
+Now open `story.mast` and go to line 64, the line that puts DS 1 on the map. Inside the
+second pair of quote marks, after `station`, type a comma, a space and the word `home`:
 
 ```
     npc_spawn(0, 0, 0, "DS 1", "tsn, station, home", "starbase_command", "behav_station")
@@ -288,9 +270,9 @@ the second pair of quote marks, after `station`, type a comma, a space and the w
 | `station` | A role. Keep it: docking looks for it |
 | `home` | Your new role. Only DS 1 wears it |
 
-Run both checks. Lint says `clean`. Compile prints nothing.
+Save. Run lint: `clean`.
 
-## Step 7 - Who is what to whom
+## Step 6 - Who is what to whom
 
 You have three sides, so there are three pairs. Count what you have said about each.
 
@@ -327,18 +309,36 @@ This is what the crew meets. The words in quote marks are the game's own.
 
 | To the crew, the side is | A station of that side | A ship of that side |
 |---|---|---|
-| An enemy | Science draws its name in red, with a reading that begins "Enemy". Comms can hail and taunt it. The crew cannot dock | Science draws its name in red and reads "Enemy vessel. Exercise caution." Comms is offered **Hail**, **Taunt** and **Surrender now** |
+| An enemy | Science draws its name in red. Comms can hail and taunt it. The crew cannot dock |
+ Science draws its name in red and reads "Enemy vessel. Exercise caution." Comms is offered **Hail**, **Taunt** and **Surrender now** |
 | An ally | Science draws its name in green and reads "This is a friendly station." Comms is offered **Hail**, **Build Weapons** and **Request Priority Docking**. Helm can dock | Science shows it as `unknown` until you write scan text for one of its roles. Then its name is green, and Comms is offered **Hail** |
 | Neutral, or nothing | Science shows it as `unknown` until you write scan text for one of its roles. Then its name is white. Comms is offered nothing, and the crew cannot dock | The same: `unknown`, then white once it has scan text of yours. Comms is offered nothing |
 
 Three more things follow from being enemies or allies.
 
 - **The crew's own side counts as an ally.** DS 1 and the hulk are drawn in green.
-- **An enemy close by stops docking.** With an enemy ship inside about 1500, Helm's request
-  to dock is refused.
+- **An enemy close by stops docking.** With an enemy ship a few hundred from yours, Helm's
+  request to dock is refused. How close is too close grows with the difficulty the server
+  chose.
 - **Being enemies does not start a fight.** The cutter sits where you put it. It does not
   move and it does not shoot. A ship needs orders for that, and a landmark has none. Ships
   that hunt come with the Siege bosses, later in this class.
+
+## Step 7 - Keep your word list true
+
+You have three new roles. At the top of `mission.amd`, add them under the `tug` line of
+your word list:
+
+```
+// ROLE    home              worn by DS 1, and by nothing else
+// ROLE    cutter            worn by the Breaker Cutter, a landmark in this file
+// ROLE    yard              worn by the Guild Yard, a landmark in this file
+```
+
+A side's key needs no line in the list. Both places that use it are in `mission.amd`, and
+lint checks them for you.
+
+Save. Run lint: `clean`.
 
 ## Your finished pieces
 
@@ -347,7 +347,7 @@ At the end of the Landmarks section of `mission.amd`:
 ```
 ### [Breaker Cutter](cutter)
 ---
-Kind: npc
+Kind: ship
 Side: breaker
 Roles: cutter
 Art: pirate_strongbow
@@ -394,16 +394,13 @@ Allies: tsn
 The pilots and tug crews who work the lanes around DS 1.
 ```
 
-In `story.mast`, lines 35 to 38:
+In **Bring the Log Home**:
 
 ```
-    shared MISSION_DOC = document_get_amd_file(get_mission_dir_filename("mission.amd"), data_parser=amd_mission_data)
-
-    # The sides, if mission.amd has a Sides section. With no such section this does nothing.
-    sides_declare_amd(amd_section(MISSION_DOC, "sides"))
+Done when: reach home 1000
 ```
 
-And line 62:
+In `story.mast`, line 64:
 
 ```
     npc_spawn(0, 0, 0, "DS 1", "tsn, station, home", "starbase_command", "behav_station")
@@ -415,83 +412,89 @@ Both whole files are in `example\`.
 
 ```
 sbs lint MyMission
-sbs compile MyMission
 ```
 
-You want `clean` from the first and nothing from the second.
+```
+== mission.amd ==
+  clean
 
-Every row below was made on purpose, and both the tools and the game were run. Read the
-second table twice. Lint is clean for all of it, and it is where the likely mistakes are.
+1 amd + 1 mast file(s): 0 error(s), 0 warning(s)
+```
 
-**Lint names these.** The words in the last column are at the end of the line lint prints.
+Every row below was made on purpose, one at a time, on the finished files. Lint was run,
+and then the game was run without a screen, by a script that asked the game what each
+thing is to the crew. The last column is the code at the end of lint's line.
 
-| Mistake | What the game would do | Lint says |
+In these tables "`unknown`" means what Step 6 said about a stranger: Science shows the word
+`unknown` in place of the name, Comms is offered nothing, and the crew cannot dock.
+
+**Lint names these.**
+
+| Mistake | What the game does | Lint says |
 |---|---|---|
-| `## [Sides](side)` or `## [Factions](factions)` | Make no sides. The cutter and the yard belong to nobody | `section-not-loaded` |
-| A side typed with two hashes | Lose that side and every side below it | `section-not-loaded` |
-| The Sides line typed with three hashes, or left out | Make no sides | `landmark-no-art` and `unknown-field`: your sides are read as landmarks |
-| The Sides line typed with one hash | Read NOTHING from your file: no quests, no landmarks, no sides | `heading-level-jump`, an error |
-| The cutter and the yard typed below the Sides line | Place neither. Make two sides called Breaker Cutter and Guild Yard | `unknown-field`: `Kind` is not a known side field |
-| Two sides with the same key | Make one side, with the lower record's name, color and relations. With `breaker` twice, the cutter was a friend | `duplicate-key` |
-| `### [The Breakers]` (no key) | Make no Breakers. The record's lines become part of the TSN description | `suspect-heading` |
-| `Enemy: tsn`, `Ally: tsn` or `Colour: #F80` | Ignore the line | `unknown-field` |
-| `Enemies tsn` (no colon) | Ignore the line | An error: it expected `Label: value` |
-| `Enemies:` typed below the closing `---` | Ignore the line | `field-below-fence` |
-| A side's closing `---` left out | Lose every side below it | `unclosed-data-fence`, an error |
-| `Sides: breaker` on the cutter | Put the cutter on no side | `unknown-field` |
-| The step says `reach home 1000` and DS 1 does not wear `home` | Never finish the story | `role-nothing-wears` |
-| The card is not in `story.mast`, or it says `"side"` | Make no sides | `section-not-loaded` |
-| `Enemies: tsm` (a misspelled key) | Make the Breakers and the TSN nothing to each other. The cutter stays `unknown`. `mast.runtime.log` says `Side not found` | `dangling-side`, and the keys you did declare |
-| `Enemies: tsn guild`, `tsn and guild` or `tsn; guild` | Make no enemies at all. The whole line is read as one key | `dangling-side`: put a comma between sides |
-| `Side: braker` on the cutter | Put the cutter on no side. Science shows `unknown` and Comms is offered nothing | `dangling-side` |
+| `## [Sides](side)` or `## [Factions](factions)` | Makes no sides. The cutter and the yard are `unknown` | `section-not-loaded`. Its sentence lists the keys the story asks for |
+| A side typed with two hashes | Loses that side and every side below it | `section-not-loaded`, about that side's key |
+| The Sides line typed with three hashes, or left out | Makes no sides | `landmark-no-art`, `landmark-no-loc` and `landmark-no-kind` for each side, and `unknown-field`: your sides are read as landmarks |
+| The Sides line typed with one hash | Makes no sides | `heading-level-jump`, an error, and `section-not-loaded` for each side |
+| The cutter and the yard typed below the Sides line | Places neither. Makes two more sides, called Breaker Cutter and Guild Yard | `unknown-field`, four times for each: `Kind`, `Side`, `Roles` and `Art` are not a side's fields |
+| Two sides with the same key | Makes one side, with the lower record's name, color and relations. With `breaker` twice, the cutter was a friend | `duplicate-key`, and `dangling-side` for the key that is gone |
+| `### [The Breakers]` (no key), or `### The Breakers` (no brackets) | Makes no Breakers. The cutter is `unknown` | `broken-heading`, an error, and `dangling-side` on the cutter's `Side:` line |
+| The key changed in the heading and not in `Side:` | The cutter is `unknown` | `dangling-side`, on the `Side:` line |
+| `Enemy: tsn`, `Ally: tsn` or `Colour: #F80` | Ignores the line | `unknown-field`. It asks `Did you mean` and gives the word |
+| `Enemies tsn` (no colon) | Ignores the line | `fence-syntax`, an error: it expected `Label: value` |
+| `Enemies:` typed below the closing `---` | Ignores the line | `field-below-fence` |
+| A side's closing `---` left out | Loses that side's description. The sides are still made | `unclosed-data-fence`, an error |
+| `Sides: breaker` on the cutter | Puts the cutter on no side. It is `unknown` | `unknown-field` |
+| `Enemies: tsm` (a misspelled key) | Makes the Breakers and the TSN nothing to each other. The cutter is `unknown` | `dangling-side`, and the keys you did declare |
+| `Enemies: tsn guild`, `tsn and guild` or `tsn; guild` | Makes no enemies at all. The whole line is read as one key | `dangling-side`: put a comma between sides |
+| `Side: braker` on the cutter | Puts the cutter on no side. It is `unknown` | `dangling-side` |
+| `Side: The Breakers` (the name, not the key) | It half works. Science reads the cutter as an enemy, and the word beside its name is `the breakers`. An enemy close by no longer stops docking | `dangling-side` |
+| The step says `reach home 1000` and DS 1 does not wear `home` | The story never finishes | `role-nothing-wears` |
+| Line 44 of `story.mast` deleted | Makes no sides | `section-not-loaded` |
 
-**Lint says `clean` for every row of this table.** Check these by eye.
+For every row of the next table lint says `clean`. Check these by eye.
+
+**What lint cannot see.**
 
 | You wrote | What happens |
 |---|---|
-| No `Side:` line on the cutter | The cutter is on no side. Science shows `unknown` and Comms is offered nothing |
+| The step still says `reach station 1000`, whether or not DS 1 wears `home` | The story can be finished at the Guild Yard. Lint cannot count your stations |
+
+| No `Side:` line on the cutter | The cutter is on no side. It is `unknown` |
 | `Roles: cutter, breaker` in place of `Side: breaker` | The same. A role is not a side |
-| The key changed in the heading and not in `Side:` or `Enemies:` | The same, for whatever still uses the old key |
-| `Side: The Breakers` (the name), or `(Breaker)` with a capital in the heading | It half works. Science reads the cutter as an enemy, and an enemy close by no longer stops docking. Write the key, in small letters |
-| `#### [Harbor Guild](guild)` (four hashes) | The Guild is not made. The yard is on no side |
-| `### The Breakers` (no brackets at all) | No Breakers. The record's lines become part of the TSN description |
-| Your own side with a new key, such as `### [TSN](navy)` | A side nobody is on. The crew's ship is still on `tsn`, so nobody is its enemy and nobody is its ally |
+| `(Breaker)` with a capital in the heading | It half works. Science reads the cutter as an enemy. An enemy close by no longer stops docking. Write a key in small letters |
+| `#### [Harbor Guild](guild)` (four hashes) | The Guild is not made. The yard is `unknown` |
 | `Allies: tsn` and `Enemies: tsn` in one record | Enemies |
 | Two records that disagree about the same pair | The record lower in the file wins |
-| `Enemies: tsn` on the TSN record itself | DS 1 reads as an enemy starbase, Comms is offered **Taunt** for it, and the crew cannot dock at home |
+| `Enemies: tsn` on the TSN record itself | DS 1 is drawn in red, and the crew cannot dock at home |
 | `Color: F80`, `#F8` or `burnt orange` | Not known. The words go to the game as you typed them. Use the table in Step 2 |
-| A scan record of your own for `cutter`, on the `scan`, `intel` or `bio` tab. Or one for `yard`, on the `scan` tab | The game's own reading is shown, not yours. Yours is used only on a tab the game has no reading for |
-| DS 1 wears `home` and the step still says `reach station 1000` | The story can be finished at the Guild Yard |
-| `"tsn, station home"` (no comma) | DS 1 wears one role called `station home`. The story never finishes |
-| `"home, tsn, station"` (the new word first) | DS 1 is on a side called `home`, which does not exist. The crew cannot dock there |
+| A scan record of your own for `cutter`, on the `scan` or `intel` tab. Or one for `yard`, on the `scan` tab | The game's own reading is shown, not yours. Yours is used only on a tab the game has no reading for, such as `mat` |
+| `"tsn, station home"` on line 64 (no comma) | DS 1 wears one role called `station home`. The story never finishes |
+| `"home, tsn, station"` on line 64 (the new word first) | DS 1 is on a side called `home`, which does not exist. It is `unknown`, and the crew cannot dock there |
+| A `#` typed in front of line 44 of `story.mast` | Makes no sides. The cutter and the yard are `unknown`. Lecture 11 said it: a line that starts with `#` is a note |
 
-**The card in `story.mast`:**
+When a `Side:`, `Enemies:` or `Allies:` word names no side, the game also says so. After a
+play, `mast.runtime.log` in your mission folder has a line that begins `Side not found:`
+and gives the word in square brackets.
 
-| Mistake | In the game | `sbs lint` | `sbs compile` |
-|---|---|---|---|
-| The card is below the map's `->END` | No sides | `clean` | Nothing |
-| The card is above line 35 | No sides | `clean` | Nothing |
-| The card is at the top of the file, at the left edge | No sides | `clean` | Nothing |
-| A `#` typed in front of the `sides_declare_amd` line | No sides | `clean` | Nothing |
-| `"Sides"` with a capital | No sides | `clean` | Nothing |
-| The card is at the left edge, among the map's lines | Nothing runs | `clean` | `Bad indentation`, with the line |
-| Three spaces in front, not four | Nothing runs | `clean` | `Bad indentation`, with the line |
-| The last bracket left off | Nothing runs | `clean` | `invalid syntax`. The line it shows has the next line stuck on the end |
-| Curly quote marks from a word processor | Nothing runs | A warning for each of your signals, saying nothing sends it | `invalid character`, with the line |
-| `sides_declare_and(`, or no quote marks round `sides` | The game stops with an error as the map starts. `mast.runtime.log` names the line | `clean` | Nothing |
-| The card pasted twice | It works | `clean` | Nothing |
+**These are fine.**
 
-For the first five rows nothing warns you at all. Check three things by eye:
+| You wrote | Result |
+|---|---|
+| `Enemies: TSN, Guild` (capitals), or `Side: Breaker` on the cutter | Works. The game reads these words in small letters |
+| `Enemies: tsn,guild` (no space after the comma) | Works |
+| `Enemies: *` on the Breakers | Works: enemies of the TSN and of the Guild |
+| No TSN record in the Sides section | Works. Lines 18 to 20 of `story.mast` still make your side |
+| Lines 18 to 20 of `story.mast` deleted, with the TSN record in the file | Works. Leave them where they are all the same |
 
-1. The line that begins `sides_declare_amd(` is below the line that begins
-   `shared MISSION_DOC =`.
-2. It is four spaces in, and above the map's `->END`.
-3. The word in quote marks is `sides`, in small letters, the same as the key in
-   `## [Sides](sides)`.
+| Your own side written a second time with another key, such as `### [TSN](navy)` | Works, and makes one more side that nobody is on. Take it out |
+| `Kind: npc` on the cutter | Works. It means the same as `Kind: ship` |
 
 ## Step 9 - Play it
 
-Start your mission as the server, with a Helm, a Science and a Comms console.
+```
+sbs run server,helm,science,comms -m MyMission map=0
+```
 
 1. On Science, select the **Guild Yard**. Until the scan is done it reads `unknown`. Then
    its name is drawn in green, the word `guild` is beside it in the Guild's own green, and
@@ -509,15 +512,19 @@ Start your mission as the server, with a Helm, a Science and a Comms console.
 7. Now finish the story: the hulk, the lifeboat, the wait for the tug. When **Bring the Log
    Home** appears, fly to the Guild Yard first. Nothing happens. Fly to DS 1. Inside 1000,
    the game ends with your `Win:` sentence.
+8. Close the game. Open `mast.compile.log` and `mast.runtime.log`. Both are empty.
 
 The side is paid what it was paid in Lecture 11: 500 credits with the bonus, 450 without.
+
+On the map, the cutter is red and the yard is blue, like DS 1. That is the color of a
+relation. Your `Color:` shows only in the word beside the name.
 
 ### The other tabs of an enemy ship
 
 The cutter's `status`, `intel` and `bio` tabs are filled by the game too, and two of them
-read badly: "The captain cannot be taunted ." and "A bunch of  creatures." The game is
-looking for the ship's race, and a landmark has none. A scan record of your own for those
-tabs does not help: on an enemy ship the game's reading replaces yours.
+read badly, with a word missing or out of place. The game is looking for the ship's race,
+and a landmark has none. A scan record of your own for those tabs does not help: on an
+enemy ship the game's reading replaces yours.
 
 One tab is still yours. The game has no reading for `mat`, so a scan record with
 `Scan of: cutter` and `Tab: mat` is shown as you wrote it.
@@ -526,47 +533,39 @@ One tab is still yours. The game has no reading for `mat`, so a scan record with
 
 | What you see | Likely cause |
 |---|---|
-| The cutter or the yard stays `unknown` on Science, however long you wait | It is on no side, or its side is nothing to yours. Work down this list: the card is missing or in the wrong place (Step 3); the `Side:` word is not the side's key; the `Enemies:` or `Allies:` line has a misspelled key or no comma; the side's heading has four hashes |
+| The cutter or the yard stays `unknown` on Science, however long you wait | It is on no side, or its side is nothing to yours. Run lint first. If it is `clean`, work down this list: the thing has no `Side:` line; the side's heading has four hashes; there is no `Enemies:` or `Allies:` line. Then look in `mast.runtime.log` for `Side not found:` |
 | Comms is offered nothing for the cutter | The same list. Comms has nothing to say to a contact Science has not identified |
 | The crew cannot dock at the Guild Yard | The Guild is not your ally. Check `Allies: tsn` and the yard's `Side: guild` |
-| The crew cannot dock at DS 1 either, and DS 1 reads as an enemy | The TSN record names `tsn` as its own enemy. Or, on line 62, `home` was typed before `tsn` |
+| The crew cannot dock at DS 1 either, and DS 1 is drawn in red | The TSN record names `tsn` as its own enemy |
+| DS 1 reads `unknown`, and the crew cannot dock there | On line 64, `home` was typed before `tsn` |
 | Nothing is where it should be: no cutter, no yard | The two landmarks are below the `## [Sides](sides)` line. Move them up into the Landmarks section |
 | No quests at all | A heading in `mission.amd` jumps a level. Run lint: it is an error, not a warning |
 | The story ends at the Guild Yard | The step still says `reach station 1000` |
-| The story never ends | The step says `reach home 1000` and DS 1 does not wear `home`. Look for the comma on line 62 |
-| The mission starts and there is no map to pick, or a page of errors | `story.mast` does not compile. Run `sbs compile MyMission` |
-| The game stops with an error as the map starts | The card is misspelled. `mast.runtime.log` in your mission folder names the line |
+| The story never ends | The step says `reach home 1000` and DS 1 does not wear `home`. Look for the comma on line 64 |
+| Your mission starts, and a page headed "Mast Compiler Errors" is there in place of the game | `story.mast` does not compile. Run lint, and fix the line it names |
+| Lint says `section-not-loaded` about `sides`, and your `story.mast` has no line that begins `sides_declare_amd(` | Your mission was made by an older copy of the tool. In `story.mast`, put your cursor at the end of the line that begins `    shared MISSION_DOC =`, press Enter, and type, four spaces in: `sides_declare_amd(amd_section(MISSION_DOC, "sides"))` |
 
-## Your recipe card
+## One edit for any `npc_spawn` line
 
-One card. It joins the three from Lecture 11.
-
-**Card 4 - Sides.** A line inside the map's block, below the line that begins
-`shared MISSION_DOC =`:
-
-```
-    sides_declare_amd(amd_section(MISSION_DOC, "sides"))
-```
-
-There is nothing on it to change. It reads the section keyed `sides`, and it does nothing
-when your file has no such section.
-
-And one edit you can now make to any `npc_spawn` line, on any card:
+No new recipe card today. Your three cards from Lecture 11 stand, and you can now make one
+more change to the `npc_spawn` line on any of them:
 
 | Inside the second pair of quote marks | Change it to |
 |---|---|
 | The first word, `tsn` | The key of any side in your Sides section |
 | The words after it | Roles, with a comma between them |
 
+So the tug could arrive as a Guild ship: `"guild, tug"`.
+
 ## Exercise
 
 Add a faction of your own, and watch the crew's view of it change.
 
-1. At the end of the Sides section, write a third side: a name, a key and a color of your
+1. At the end of the Sides section, write a fourth side: a name, a key and a color of your
    own. Give it no `Enemies:` line and no `Allies:` line.
-2. In the Landmarks section, above the `// ---- Sides` note, give it one ship: `Kind: npc`,
+2. In the Landmarks section, above the `// ---- Sides` note, give it one ship: `Kind: ship`,
    `Side:` with your key, a role of your own, `Art: cargo_ship`, and a `Loc:` of your own.
-3. Run both checks, then play. On Science your ship reads `unknown`, and it stays that way.
+3. Run lint, then play. On Science your ship reads `unknown`, and it stays that way.
    A stranger tells Science nothing.
 4. Give it a voice. In the Scans section, write a scan record for its role, as you did in
    Lecture 10: `Scan of:` your role, `Tab: scan`, and one `%` line. Play again. Now Science
@@ -575,14 +574,13 @@ Add a faction of your own, and watch the crew's view of it change.
    "Enemy vessel. Exercise caution.", and Comms is offered **Taunt**.
 6. Change the line to `Allies: tsn`. Play. The name is green, your reading is back, and
    Comms is offered **Hail**.
-7. Keep the relation your story needs.
+7. Keep the relation your story needs, and add your role to the word list.
 
 ## Checkpoint
 
 You are done when all five are true:
 
-- `sbs lint MyMission` shows `mission.amd` as `clean`, and `sbs compile MyMission` prints
-  nothing.
+- `sbs lint MyMission` answers `clean`, with `0 error(s), 0 warning(s)`.
 - Science shows the Breaker Cutter's name in red, with `breaker` beside it, and reads
   "Enemy vessel. Exercise caution."
 - Science shows the Guild Yard's name in green, with `guild` beside it, and the crew can
@@ -605,6 +603,5 @@ Lecture 2 puts people in the story: three characters, each with a face.
   file of their own.
 - "Sides - who lives here" in the Open Universe writer's guide. Its `Character:`,
   `Disposition:`, `Home:` and `Flies:` lines belong to Open Universe, which is Class 5. In
-  a mission like yours lint calls each one an unknown field, and `Disposition: foe` makes
-  nobody an enemy. Lint lets `Values:` through. That line belongs to reputation, which is
-  Lecture 6.
+  a mission like yours lint calls each one an unknown field. Lint lets `Values:` through.
+  That line belongs to reputation, which is Lecture 6.

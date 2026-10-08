@@ -2,7 +2,7 @@
 
 ## What you will have at the end
 
-The salvage job no longer finishes by itself. When the beacon is set, the quest list tells
+The salvage job no longer finishes by itself. When the beacon is set, the Quest Log tells
 the crew to report. DS 1 calls, a second voice comes on the line, and the job pays when
 Comms says the words.
 
@@ -13,8 +13,8 @@ that is waiting.
 *[Screenshot to add: the Comms console with the report call open on Chief Ives's line, and
 one answer in the list.]*
 
-You will change two quest records, add one character and rewrite one scene in
-`mission.amd`. Nothing in `story.mast` changes.
+You will edit one file, `mission.amd`: two quest records and one scene. Nothing in
+`story.mast` changes.
 
 ## The video
 
@@ -22,12 +22,20 @@ You will change two quest records, add one character and rewrite one scene in
 
 ## Before you start
 
-- Your mission from Lecture 4. A crew that tells Quill "We will tag her." gets the job
-  **Tag the Hulk**, and about 30 seconds later she calls back.
+- Your mission as Lecture 4 left it. A crew that tells Quill "We will tag her." gets the
+  job **Tag the Hulk**, and about 30 seconds later she calls back.
 - `sbs lint MyMission` says `clean`.
-- You can start the mission with a Helm console and a Comms console.
+- VS Code with the mission folder open, a command prompt open in `data\missions`, and the
+  game closed.
 
-In this page the mission folder is called `MyMission`. Use your own folder's name.
+The game is started as in Lecture 3:
+
+```
+sbs run server,helm,comms -m MyMission map=0
+```
+
+The game's word for a call is a **hail**. You have typed it since Lecture 3: `When: hail`,
+and `quill hails quill_hello`. This lecture is about the call itself.
 
 ## Step 1 - A step only an answer can finish
 
@@ -48,7 +56,7 @@ Objective: Give the salvage beacon 30 seconds to set
 Done when: 30 seconds
 Then: reveal report_in
 ---
-DS 1 wants a salvage beacon on the hulk before the scavengers find her. It pays when
+DS 1 wants a salvage beacon on the hulk before the Breakers find her. It pays when
 the ship reports back.
 ```
 
@@ -71,11 +79,13 @@ This is a quest, not a beat. Compare it with the beat it replaces.
 
 | Line | What it means |
 |---|---|
-| No `Beat` line | A quest is in the quest list while it is running. A beat is not. The crew can now see that something is expected of them |
+| No `Beat` line | A quest is in the Quest Log while it is running. A beat is not. The crew can now see that something is expected of them |
 | `Objective:` | The sentence the crew reads. Here it sends them to Comms |
 | `Reward:` | The pay has moved here. It is paid when this step completes |
 | `Action:` | The same two lines the beat had. `Action:` works on any quest. It happens the moment the quest starts |
 | No `Done when:` line | Nothing in the game finishes this step by itself. Only an answer can |
+
+Save. Run lint: `clean`.
 
 ## Step 2 - The answer that finishes it
 
@@ -102,31 +112,21 @@ One rule for a call that a step is waiting on.
 
 **Every answer that ends the call finishes the step.** Suppose you add a second answer,
 `- [Not now, DS 1.]()`. A crew that picks it has ended the call. The call does not come
-back, and Report to DS 1 stays in the quest list for the rest of the game. Lint cannot see
+back, and Report to DS 1 stays in the Quest Log for the rest of the game. Lint cannot see
 this.
 
 The crew already has a way to say "not now". It is **Back**, from Lecture 3: the call goes
 back in the list, and the step waits with it.
 
+Save. Run lint: `clean`.
+
 ## Step 3 - A second voice
 
 A call can have more than one person on the line.
 
-First the person. In the Characters section, below Harbormaster Quill, add:
-
-```
-### [Chief Ives](ives)
----
-Face: terran_male
----
-Keeps the salvage ledger on DS 1. Counts everything twice.
-```
-
-If Lecture 2 left you with other people, use one of them, and write that person's key
-wherever this page says `ives`.
-
-Now give him a block in the call. Change the lines under the fence of Quill Calls Back so
-the scene reads:
+Chief Ives has been in your Characters section since Lecture 2, with nothing to say. His
+key is `ives`. Give him a block in the call. Change the lines under the fence of Quill
+Calls Back so the scene reads:
 
 ```
 ### [Quill Calls Back](quill_thanks)
@@ -164,6 +164,8 @@ Four things to know.
 
 A block can come first as well. Put `@ives` above `@quill` and he opens the call.
 
+Save. Run lint: `clean`.
+
 ## Step 4 - Which call is on top
 
 Calls wait in a list on the Comms console. You now have more than one call in your
@@ -189,6 +191,8 @@ A call with a higher number sits above every call with a lower one, however new 
 A call with no `Priority:` line counts as 0. Write a whole number. Use it for a call that
 a step is waiting on, and leave the others alone.
 
+Save. Run lint: `clean`.
+
 ## Step 5 - Who gets called
 
 You have never said which ship Quill calls. You do not have to: **every player ship is
@@ -200,7 +204,7 @@ Your mission can be started with more than one ship. This is what happens with t
 |---|---|
 | The call is placed | Each ship gets its own copy, in its own Comms list |
 | One ship answers | Only that ship's copy ends. The other ship's copy is still waiting |
-| One ship says "We will tag her." | The job starts for everyone. There is one Tag the Hulk, and both crews see it in their quest lists |
+| One ship says "We will tag her." | The job starts for everyone. There is one Tag the Hulk, and both crews see it in their Quest Logs |
 | The other ship then says "Find someone else, DS 1." | Nothing changes. The job goes on |
 | The report call | Goes to both ships. The first to report finishes the step, and the side is paid once. A second report changes nothing |
 | A ship says "We will tag her." after the job is finished | Nothing. A finished job stays finished |
@@ -209,8 +213,8 @@ Two things follow for a writer.
 
 - **Write the words for any ship that might hear them.** Your opening take says
   `Artemis, DS 1.` The crew of the Intrepid reads the same line.
-- **A job handed out by a call suits a mission flown by one ship.** The last row of the
-  table is the reason.
+- **A job handed out by a call suits a mission flown by one ship.** With two, the second
+  crew's answer counts for nothing.
 
 All of this follows from the line `Scope: shared`: one quest for the whole table. The
 library documentation also describes `Scope: ship`, a copy of the quest for each ship. In
@@ -233,53 +237,128 @@ This step has nothing to type. It is what the person at Comms can do with what y
 So an answer is a decision the crew makes once. Everything else on the console lets them
 put that decision off, or look back at it.
 
+## Your finished pieces
+
+In the Quests section:
+
+```
+### [Tag the Hulk](tag_hulk)
+---
+Scope: shared
+Starts when: revealed
+Objective: Give the salvage beacon 30 seconds to set
+Done when: 30 seconds
+Then: reveal report_in
+---
+DS 1 wants a salvage beacon on the hulk before the Breakers find her. It pays when
+the ship reports back.
+
+### [Report to DS 1](report_in)
+---
+Scope: shared
+Starts when: revealed
+Objective: Answer DS 1 and tell her the beacon is set
+Reward: 150 credits
+Action:
+  - quill hails quill_thanks
+---
+The beacon is live. DS 1 pays when she hears it from the ship.
+```
+
+At the end of the file:
+
+```
+### [Quill Calls Back](quill_thanks)
+---
+Speaker: quill
+When: hail
+Title: Your beacon
+Priority: 5
+---
+@quill
+% Something just started singing out by that hulk. Tell me it is yours.
+% I have a new beacon on my board, out by the hulk. Is that your work?
+
+@ives
+% Salvage desk. If it is theirs, I need to hear them say it.
+% Chief Ives, salvage desk. Say it for the ledger, please.
+
+- [It is ours, DS 1. The beacon is set.]() ; completes report_in
+```
+
+The whole file is in `example\`.
+
 ## Step 7 - Check it
 
 ```
 sbs lint MyMission
 ```
 
-You want `clean` under `mission.amd`. Lint names every mistake in this table. The words in
-the last column are at the end of the line lint prints.
+```
+== mission.amd ==
+  clean
 
-| Mistake | What the game would do | Lint says |
+1 amd + 1 mast file(s): 0 error(s), 0 warning(s)
+```
+
+Every row below was made on purpose, one at a time, on the finished file. Lint was run,
+and then the game was run without a screen, by a script that took the job, waited for the
+beacon, opened the report call and answered it.
+
+**Lint names these.**
+
+| Mistake | What the game does | Lint says |
 |---|---|---|
-| `; completes report_inn` (a misspelled key) | End the call and leave Report to DS 1 running. It writes a line in `mast.runtime.log` | `outcome-quest-missing` |
+| `; completes report_inn` (a misspelled key) | Ends the call and leaves Report to DS 1 running. It writes a line in `mast.runtime.log` | `outcome-quest-missing` |
 | `; completes Report to DS 1` (the name, not the key) | The same | `outcome-quest-missing` |
-| `Then: reveal beacon_set` left as it was | Never start the step. No call comes. It writes a line in `mast.runtime.log` | `dangling-reveal` |
-| `@ivse` (a misspelled key) | Show his block under the name `ivse`, with no face | `dangling-speaker` |
-| No record for Chief Ives in the Characters section | Show his block under the name `ives`, with no face | `dangling-speaker` |
-| `Priorty: 5` | Place the call with no priority | `unknown-field` |
-| `Priority: 5` typed in the fence of Report to DS 1 | Place the call with no priority | `unknown-field` |
-| `Priority 5` (no colon) | Place the call with no priority | An error: it expected `Label: value` |
-| `When: hail` left off the scene | Place the call anyway | `hail-not-a-hail` |
+| `Then: reveal beacon_set` left as it was | Never starts the step. No call comes | `dangling-reveal` |
+| `@ivse` (a misspelled key) | Shows his block under the name `ivse`, with no face | `dangling-speaker` |
+| No record for Chief Ives in the Characters section | Shows his block under the name `ives`, with no face | `dangling-speaker` |
+| `Priorty: 5` | Places the call with no priority | `unknown-field`. It asks `Did you mean` and gives the word |
+| `Priority: 5` typed in the fence of Report to DS 1 | Places the call with no priority | `unknown-field` |
+| `Priority 5` (no colon) | Places the call with no priority | `fence-syntax`, an error: it expected `Label: value` |
+| `When: hail` left off the scene | Places the call anyway | `hail-not-a-hail` |
 | `Scope: everyone` | Nothing different | `unknown-enum-value` |
 
-Lint says `clean` for every row of this second table. Check these by eye.
+**What lint cannot see.** For every row of this table lint says `clean`.
 
 | You wrote | What happens |
 |---|---|
-| The `Beat` line is still in the fence of Report to DS 1 | The step works and pays, but it is not in the quest list while it is running. The crew is never told to report |
+| The `Beat` line is still in the fence of Report to DS 1 | The step works and pays, but it is not in the Quest Log while it is running. The crew is never told to report |
 | The answer in the report call is left as `()`, or the scene has a second answer that hangs up | The call ends and Report to DS 1 stays running for good |
+| The answer says `; completes tag_hulk`, the wrong step | The same |
 | `Reward: 150 credits` is still on Tag the Hulk as well | The job pays twice |
 | The `Then: reveal report_in` line is missing | The beacon sets and nothing follows. No step, no call |
+| The `Action:` lines are left off Report to DS 1 | The step appears in the Quest Log, and no call comes. It can never be finished |
 | `Done when: 30 seconds` on Report to DS 1 | The step finishes by itself and pays. The call is left waiting in the list |
 | `Starts when: at once` on Report to DS 1 | The call arrives as the game starts. Answering it pays 150 credits before any work is done |
-| A `Fails when:` clock on Report to DS 1 | The step fails on time and charges its `Penalty:`. The call stays in the list. Answered late, it completes the step and pays anyway |
+| A `Fails when:` clock on Report to DS 1 | The step fails on time and charges its `Penalty:`. The call stays in the list, and answering it late changes nothing |
 | `@Chief Ives`, `@ ives`, `@ives:`, `ives:`, or `% @ives` | His block is gone. His takes are now alternatives to Quill's, and so is the stray line |
 | Chief Ives typed under the Dialogue heading | His block is shown under the name `ives`, with no face |
 | `Priority: high` | The call never arrives. `mast.runtime.log` has a line that names `high` |
 | `Scope: ship` | Nothing different. See Step 5 |
 
+**These are fine.**
+
+| You wrote | Result |
+|---|---|
+| `@Ives`, with a capital | Works |
+| `@ives` above `@quill` | Works. He opens the call, and she speaks second |
+| A second voice from another side: `@sable` | Works. Anyone in your cast can be on the line |
+| No `Objective:` line on Report to DS 1 | Works. The step is listed by its name alone |
+
 ## Step 8 - Play it
 
-Start your mission as the server, with a Helm console and a Comms console.
+```
+sbs run server,helm,comms -m MyMission map=0
+```
 
 1. Fly inside 500 of the Unknown Hulk. On Comms, open
    **Harbormaster Quill - About that hulk** and answer through to **We will tag her.**
-2. The quest list has **Tag the Hulk**, running.
-3. About 30 seconds later Tag the Hulk is done, and the list has **Report to DS 1**,
-   running. No credits yet. Comms has a new row: **Harbormaster Quill - Your beacon**.
+2. The Quest Log has **Tag the Hulk**, running.
+3. About 30 seconds later Tag the Hulk is done, and the Quest Log has **Report to DS 1**,
+   running. The beacon has paid nothing yet. Comms has a new row:
+   **Harbormaster Quill - Your beacon**.
 4. Open it. Quill asks her question. The list offers **Back** and **Continue**.
 5. Press **Continue**. The name and the face are now Chief Ives. The list offers **Back**
    and your answer.
@@ -291,6 +370,8 @@ Start your mission as the server, with a Helm console and a Comms console.
    `Harbormaster Quill - Your beacon - answered (It is ours, DS 1. The beacon is set.)`
 9. On Comms, open the Hails tab of the info panel. Both calls are listed. Choose one and
    read it through again.
+10. Finish the story, and close the game. `mast.compile.log` and `mast.runtime.log` are
+    both empty.
 
 Play it once more, and this time turn the dial above the list to **This Console** before
 you open the first call. The conversation is drawn on Comms only.
@@ -299,9 +380,9 @@ you open the first call. The conversation is drawn on Comms only.
 
 | What you see | Likely cause |
 |---|---|
-| The beacon sets and nothing follows | Work down this list. `Then: reveal report_in` is missing or misspelled. The key on the heading of Report to DS 1 is not `report_in`. The `Action:` lines are missing |
-| Report to DS 1 is not in the quest list while the call waits | The `Beat` line is still in its fence |
-| Comms answers, and Report to DS 1 stays in the list | The answer has no `; completes report_in`, or the key is misspelled. Look in `mast.runtime.log` |
+| The beacon sets and nothing follows | Run lint. Then work down this list. `Then: reveal report_in` is missing. The key on the heading of Report to DS 1 is not `report_in`. The `Action:` lines are missing |
+| Report to DS 1 is not in the Quest Log while the call waits | The `Beat` line is still in its fence |
+| Comms answers, and Report to DS 1 stays in the Quest Log | The answer has no `; completes report_in`, or the key is misspelled. Look in `mast.runtime.log` |
 | The job pays as soon as the beacon sets | `Reward:` is still on Tag the Hulk |
 | The job pays 300 credits | `Reward:` is on both records |
 | The call arrives as the game starts | Report to DS 1 does not say `Starts when: revealed` |
@@ -313,28 +394,27 @@ you open the first call. The conversation is drawn on Comms only.
 
 ## Exercise
 
-In the Lecture 3 exercise you wrote a second call, placed by a beat when your timed quest
-runs out. In the Lecture 4 exercise you gave it answers.
+Work on the calls you already have.
 
-1. Turn that beat into a step the crew can see. Take out the `Beat` line. Add
-   `Scope: shared`, an `Objective:` sentence and a `Reward:`.
-2. Make every answer that ends that call finish the step. Add `; completes` and your
-   step's key. An answer that already does something gets a comma:
-   `; signal told_truth, completes your_step`
-3. Give the call a second voice: an `@` block for another of your characters.
-4. Run lint, then play. When your timer runs out, the step is in the quest list and the
-   call is waiting. Whichever ending the crew picks, the step completes and pays.
-5. Break it on purpose. Take `; completes your_step` off one ending. Run lint: `clean`.
-   Play it and choose that ending. The call is gone, and the step is still in the list.
-   Put it back.
+1. Give Quill's first call a second voice. In **Quill Checks In**, put an `@ives` block
+   between her two blocks, with two takes of his own.
+2. Captain Sable has not said a word yet. Give the scene **The Offer** an `@sable` block
+   below Quill's takes, above the answers: the Breakers are listening in. Run lint, then
+   play, and watch the name and the face change twice in one call.
+3. Break the report on purpose. Take `; completes report_in` off the answer in **Quill
+   Calls Back**. Run lint: `clean`. Play it through and give that answer. The call is gone,
+   and Report to DS 1 is still in the Quest Log. Put it back.
+4. In the Lecture 3 exercise you wrote a second call, placed at the lifeboat. Leave the
+   first call unanswered, fly to the lifeboat, and look at the list: the newer call is on
+   top. Now give **Quill Checks In** the line `Priority: 5` and play again.
 
 ## Checkpoint
 
 You are done when all five are true:
 
-- `sbs lint MyMission` shows `mission.amd` as `clean`.
-- When the beacon sets, **Report to DS 1** is in the quest list, running, and no credits
-  have been paid.
+- `sbs lint MyMission` answers `clean`, with `0 error(s), 0 warning(s)`.
+- When the beacon sets, **Report to DS 1** is in the Quest Log, running, and the beacon
+  has paid nothing.
 - The report call has two voices. The name and the face change when Comms presses
   **Continue**.
 - **Back** returns the call to the list and leaves Report to DS 1 running.

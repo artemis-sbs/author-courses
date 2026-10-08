@@ -1,203 +1,206 @@
 # C2-4 video script - Dialogue, part 2
 
-Target length: 19 minutes. One continuous screen recording with voice-over, cut at scene
-boundaries. The companion page is `lesson.md`; the finished files are in `example\`.
+> **STATE ON 2026-10-08. Read this first.**
+>
+> - **Everything this page needs is released.** The page is written for Artemis Cosmos
+>   1.4.0, installed from Steam or itch.io, with a current tool and libraries.
+> - **The student's mission is `MyMission`** as Lecture 3 of this class left it
+>   (`c2-03-dialogue-part-1\example\mission.amd`, with Lecture 1's `story.mast`). The game
+>   is started with `sbs run server,helm,comms -m MyMission map=0`.
+> - **`example\` holds the one file that differs from that start:** `mission.amd`.
+> - **What changed from the first version.** The lecture teaches the same things. The
+>   file is the chained one: the beat DS 1 Calls starts on its own trigger (Lecture 3), so
+>   Tag the Hulk is typed below that beat, as a record of its own beside the arc Salvage
+>   Run. Three of the page's steps now show the warning lint prints half way through
+>   them, because lint has learned to say what is still missing: `dangling-choice`,
+>   `never-revealed`, then `dangling-reveal` and `dangling-action-ref`. The mistake tables
+>   have a third column, lint's code, and most rows that were silent in the first version
+>   have one now.
+
+> **Re-measured 2026-10-08, in the mock.** Tool as installed in `data\missions`, library
+> as packaged in `__lib__` (sbs_utils `ae2bbf4a`). The page's steps were applied one at a
+> time to the Lecture 3 example, with lint after each and after each half step. Then
+> one-change variants of the finished file: each linted, each played headless by a probe
+> that reads the rows the Comms hail list would show, picks rows by their first words,
+> and prints every quest's state, the side's credits and the calls waiting. Every line of
+> tool output in a code block on the page is a line a run printed (`verify_page.py`).
+
+> **CHECKED IN THE REAL ENGINE, 2026-10-04, with a real Comms console, on the first
+> version:** the whole conversation, the job taken, the call back, and 250 credits in all
+> (100 for Close Inspection, 150 for the beacon; that file had no bonus step). The four
+> scenes and the two quest records have not changed since, but for one sentence that now
+> names the Breakers. The hail list itself was not seen.
+
+The companion page is `lesson.md`; the finished file is in `example\`.
 
 ## Before recording
 
 | Item | State needed |
 |---|---|
-| Mission | The Lecture 3 mission: Harbormaster Quill, the scene **Quill Checks In** with two blocks, the beat **DS 1 Calls**. Lint clean. No answers yet |
-| Library | sbs_utils v1.4.0 as released on 2026-10-03 or later. It needs that day's fixes: an answer's `accepts` / `completes` / `fails` are known to lint, and a call that could not be placed is written to `mast.runtime.log`. One row of the page's lint table (two hashes on a scene with scenes below it) needs the lint change committed that evening (`e3b2a6a8`); on an older library that row reads `clean` |
-| Template | The mission must come from the `amd` template that already reads the Characters and Dialogue sections (build item B53: fixed in the starter repo, not pushed when this was written) |
-| VS Code | `MyMission` folder open, `mission.amd` in one tab, scrolled to Quill Checks In |
-| Game | Closed. Started on camera in scene 10 with a server, a Helm console and a Comms console |
+| Mission | `MyMission` as Lecture 3 leaves it. `mission.amd` has 283 lines and ends with Quill's take "So. Is anybody home?". The beat DS 1 Calls is the last record of the Quests section |
+| Lint | `sbs lint MyMission` says `clean` |
+| VS Code | `MyMission` folder open, `mission.amd` in one tab scrolled to the end |
+| Command prompt | Open in `data\missions`, cleared, wide enough that a finding fits on three lines |
+| Logs | `mast.compile.log` and `mast.runtime.log` empty, or deleted |
+| Game | Closed. Started on camera in scene 9 with a server, a Helm console and a Comms console |
 
 ## Confirm on camera
 
-Checked on 2026-10-03 by a script that called the game's own functions: the function that
-builds the rows of the Comms hail list, and the function that list calls when a row is
-picked. First in headless runs (the mock), then IN THE REAL ENGINE with a server and one
-real Comms console (sbs_utils `27aaa520`): the whole road below, from the first call to
-the call back and 250 credits, matched the mock line for line, and `mast.runtime.log` was
-empty. One screenshot of the Comms console was taken after the last answer: its message
-area reads `Harbormaster Quill - About that hulk - answered (We will tag her.)`. The hail
-list itself, with its rows, has not been seen.
+"Lint" is the installed tool. "Mock" is a headless play with the packaged library.
+"Engine" is the run of 2026-10-04 in the note above. If an item fails while recording,
+stop and fix the page.
 
-What the runs showed:
+1. Lint after each step is `clean`. Half way through Step 2 it prints the
+   `dangling-choice` line on the page, with `line 285:39`. Half way through Step 4 it
+   prints the `never-revealed` line, with `line 138`. In Step 6 it says `dangling-reveal`,
+   then `dangling-action-ref`, then `clean`. (Lint.)
+2. On the finished file, the road through the question: the rows are Back and the three
+   answers; then Back and two answers; then Back and the two answers of The Offer. "We
+   will tag her." ends the call, Tag the Hulk is running, and DS 1 Calls is complete.
+   (Mock, Engine.)
+3. About 30 seconds later Tag the Hulk is complete, the side has 150 credits more, and
+   one call waits: `Harbormaster Quill - Your beacon`. Its one answer ends it. (Mock,
+   Engine.)
+4. "Find someone else, DS 1.": no job, and 36 seconds later no second call. "Not now, DS
+   1. Artemis out.": the call is gone and does not come back. (Mock.)
+5. **Back** in the middle: the call returns to the list; opened again it is at the scene
+   the crew had reached. (Mock.)
+6. The job taken and the story played to its win: 650 credits. (Mock.)
+7. Every row of the five tables in Step 8. (Lint for all, Mock for all.)
+8. The exercise: an answer with `; signal told_truth` completes a quest that says
+   `Done when: signal told_truth`, and lint is `clean`. (Lint, Mock.)
 
-- Inside 500 of the hulk, one call waits: `Harbormaster Quill - About that hulk`.
-- Opened: one take of her first block, rows `Back` and `Continue`. Then one take of her
-  second block, and the rows are `Back` and the three answers, in the order they are
-  written in the file.
-- `What do you know about her?` moves to the second scene: one of its two takes, rows
-  `Back` and two answers. `She is cold, DS 1. No power, no lights.` moves to the offer:
-  rows `Back`, `We will tag her.`, `Find someone else, DS 1.`
-- `We will tag her.` closes the call. Tag the Hulk goes from hidden to running, and DS 1
-  Calls goes to complete. The function that fills the Quests tab then lists
-  `Tag the Hulk` (running) and `DS 1 Calls` (complete); DS 1 Calls was not listed before.
-- 20 seconds later the job is still running. By 36 seconds it is complete, the side's
-  credits have gone from 100 to 250, and a second call waits:
-  `Harbormaster Quill - Your beacon`. Opened, it has rows `Back` and one answer.
-- `Find someone else, DS 1.`: DS 1 Calls completes, no job, no second call.
-- `Not now, DS 1. Artemis out.`: nothing changes, and no call comes back.
-- `Back` after moving to another scene: the call returns to the waiting list, and opened
-  again it shows that scene, not the first one.
-- The exercise, followed as written: the quest completes when the answer with
-  `; signal told_truth` is picked, and pays its reward.
-- Every row of the lint table on the page was produced by making that mistake and running
-  `sbs lint`.
+Not seen by anyone, and to watch for while recording:
 
-Not seen by anyone. If one of these is not as described, stop and fix the page:
-
-1. The answers as rows in the Comms list. The longest is 39 characters
-   (`She is cold, DS 1. No power, no lights.`). If it does not fit a row, shorten the
-   lesson's answers and add a line about length to Step 1.
-2. Where the answers sit beside her face and her line, and what the main screen shows
-   while Comms is choosing. The code builds a read-only list of the answers there.
-3. The Quests tab after `We will tag her.`: Tag the Hulk running and DS 1 Calls done.
-   The page says a finished beat is listed as done; only the function behind the tab has
-   said so.
-4. Whether the crew gets a notice when a job starts from an answer, and when it completes.
-5. The second call arriving about 30 seconds later, and which comes first for the crew:
-   the "quest complete" notice or the call.
-6. `Back` in the middle of the call, and the call reopening at the scene the crew had
-   reached.
-
-Known, and kept out of the lesson on purpose:
-
-- A condition on an answer. Since 2026-10-03 the library answers a few names from the
-  first scene on: the answering ship's roles (`if tsn`), `learned`, and `skill <name>`.
-  It still cannot read a quest's state or the side's credits, so `if some_name >= 10` is
-  never offered and lint is clean. Scene 8 says so and teaches the two things that do
-  work. Guard words for quest state are a design question for the user (build item B66);
-  when they exist, re-cut scene 8 and Step 7.
-- Curly brackets in an answer's words. Fixed 2026-10-03: the words are drawn as typed. In
-  the engine, a real Comms console drew a row reading `Call me {Captain}, DS 1.` and the
-  log stayed empty.
-- A second voice in the same call is shown under the first speaker's name (build item
-  B51). Every scene here is Quill's.
+1. The answers in the list on a real Comms console: how a long answer is drawn, and
+   where Back sits.
+2. Where the crew reads that a job has started.
+3. A fifth answer: the page says it is never offered. The mock agrees. Nobody has looked.
+4. Quill saying a broken answer line out loud, brackets and all.
 
 ## Scenes
 
-### 1. Cold open (0:00 - 0:50)
+### 1. Cold open
 
-**Screen:** The Comms console. Quill's call is open on her question. Three answers in the
-list. Pick the first. She makes an offer. Pick "We will tag her." The quest list gains a
-job.
+**Screen:** The Comms console. Quill's call open, three answers in the list. One is
+picked. The Quest Log gains Tag the Hulk.
 
-**Say:** "Last time, she talked and the crew listened. This time they answer. One answer
-got us a job. Another would have hung up on her. Every one of those is a single line in
-your file, and today you write them."
+**Say:** "Last time, the harbormaster called, | and all the crew could do was listen. ||
+Today they get to answer. || One answer asks her for more, | one takes a job, | and one hangs up.
+||| And the answer they give changes the story. ||"
 
-### 2. Something to say (0:50 - 3:00)
+### 2. An answer
 
-**Screen:** `mission.amd`, Quill Checks In. Below her last take, a blank line, then type
-the two answers with empty round brackets. Point at the dash, the square brackets, the
-round brackets.
+**Screen:** `mission.amd`, the scene Quill Checks In. Below her last take, a blank line,
+then type the two answers. Highlight the dash, the square brackets, the round brackets.
+Save. Lint: clean.
 
-**Say:** "An answer is a line that starts with a dash. Square brackets: the words Comms
-reads and picks. Round brackets, straight after, no space: where the conversation goes
-next. Empty round brackets mean the call is over. Two rules. An answer is one line. And
-answers go at the end, below her last take, because that is when the crew gets them."
+**Say:** "An answer is one line, | and you already know its shape. || It's a dash and a
+space, | then the words in square brackets, | then round brackets, with no space between.
+|| It's a heading's name and key, | with a dash where the hashes go. ||| The square
+brackets hold what Comms reads and picks. || The round brackets say where the conversation
+goes next, | and when they're empty, the call is over. ||"
 
-### 3. An answer that leads somewhere (3:00 - 5:30)
+### 3. An answer that leads somewhere
 
-**Screen:** Put `quill_offer` in the first answer's round brackets. Go to the end of the
-file. Type The Offer: heading, fence with `Speaker: quill`, two takes, two answers.
+**Screen:** Type `quill_offer` in the first answer's round brackets. Save. Lint: the
+`dangling-choice` warning. Then, at the end of the file, type The Offer. Save. Lint:
+clean.
 
-**Say:** "Put a scene's key in the round brackets, and the call goes on there. So I need
-that scene. Three hashes, a name, the key I just used. Speaker, her key. Two takes. And
-two answers of its own. Notice what is missing: no When, no Title. Nothing places this
-scene as a call. The only way in is the answer that names it. And three hashes, like the
-first scene. Never four. A scene does not go inside another scene."
+**Say:** "Now I put a key in those round brackets, | the key of a scene I haven't written
+yet. || And lint tells me so: | this answer points at something that isn't there. ||| So I
+write it, at the end of the file. || It's a scene like the first one, with three hashes, |
+but it has no When line and no title. || Nothing in the story places it as a call. || The
+only way in is the answer that names it. ||"
 
-### 4. A second way in (5:30 - 7:00)
+### 4. A second way in
 
 **Screen:** Add the middle answer to Quill Checks In. Type What DS 1 Knows above The
-Offer.
+Offer. Highlight the two answers that both lead to `quill_offer`.
 
-**Say:** "One more answer: the crew asks a question of their own. That goes to a scene
-where she tells them what she knows, and from there, on to the offer. Two answers lead to
-the same scene. That is fine. One limit: four answers in a scene. A fifth is never
-shown."
+**Say:** "A conversation can branch, and it can come back together. || I add an answer
+that asks her what she knows, | and I write the scene for it. || And from there, one
+answer leads on to the same offer. ||| So a crew that asks first hears a little more, |
+and ends up in the same place. || Just don't write more than four answers in a scene, |
+because a fifth is never offered. ||"
 
-### 5. An answer that does something (7:00 - 9:45)
+### 5. The job
 
-**Screen:** Scroll up to the Quests section. Below DS 1 Calls, type Tag the Hulk. Then go
-back to The Offer and add `; accepts tag_hulk` to the first answer.
+**Screen:** The Quests section. Below DS 1 Calls, type Tag the Hulk. Save. Lint: the
+`never-revealed` warning; highlight the words "and no answer". Then The Offer: add
+`; accepts tag_hulk`. Save. Lint: clean.
 
-**Say:** "So far an answer moves the conversation. Now one that changes the story. First
-the job she is offering. Starts when revealed, so it is hidden. Done when thirty seconds.
-A reward. Now the answer. A semicolon. Everything after the semicolon is what the answer
-does. Accepts, and the key of the quest. The key, not the name. When Comms says we will
-tag her, the job starts."
+**Say:** "So far an answer moves the conversation, | or it ends it. || Now one is going to
+change the story. || First I need the job she's offering, | so I write it up here among my
+quests. || It starts when revealed, | which keeps it hidden until something starts it.
+||| Lint warns me that nothing does, | and look what it lists: | a Then line, or an
+answer. || So lint already knows where this is going. || I go back to the offer, | and
+after the round brackets I type a semicolon, | then accepts, and the job's key. ||
+Everything after that semicolon is what the answer does. ||"
 
-### 6. Two things, four words (9:45 - 11:45)
+### 6. Two things at once
 
-**Screen:** Change the two answers in The Offer to the final form. Then show the table of
-four words on the companion page.
+**Screen:** Change the two answers of The Offer to the lines with `completes ds1_calls`.
+Then the table of four words on the page.
 
-**Say:** "An answer can do two things. One semicolon, then a comma between the things.
-Not a second semicolon: that looks right and does nothing. The second thing here finishes
-the beat from last time, DS 1 Calls. She has been answered, so that moment is over, and a
-finished beat shows up in the quest list as done. There are four words. Accepts starts a
-quest. Completes finishes one. Fails fails one. Signal sends a word into the story, and
-any quest waiting on that word hears it."
+**Say:** "An answer can do two things, | with one semicolon, and a comma between them. ||
+Whichever way the crew answers, they've answered her, | so I mark that moment done as
+well. ||| There are four words you can write after the semicolon. || Accepts starts a
+job, | completes finishes one and pays it, | fails does what it says, | and signal sends a
+word into the story. ||"
 
-### 7. A call that comes back (11:45 - 13:45)
+### 7. The call that comes back
 
-**Screen:** Add `Then: reveal beacon_set` to Tag the Hulk. Type the Beacon Set beat below
-it. At the end of the file, type Quill Calls Back.
+**Screen:** Tag the Hulk: add `Then: reveal beacon_set`. Lint: `dangling-reveal`. Type the
+beat Beacon Set. Lint: `dangling-action-ref`. Type Quill Calls Back at the end of the
+file. Lint: clean.
 
-**Say:** "What the crew said should come back to them. When the job is done: then, reveal
-beacon_set. A beat, the same pattern as last time: starts when revealed, and its action
-places a call. And the scene. This one is a call of its own, so it has When hail and a
-Title again."
+**Say:** "What the crew said can come back to them later. || When the beacon is set, I
+want her to call again, | and that takes three pieces. || Watch lint walk me from each one
+to the next. ||| First, a Then line on the job, | and lint says it reveals something that
+isn't there. || So I write that, a beat like last time's, | and lint says the beat calls a
+scene that isn't there. || So I write the scene, and now it's clean. ||| And here's the
+point of it. || Only a crew that took the job, and finished it, | ever hears this call.
+||"
 
-### 8. Answers that depend on the story (13:45 - 15:00)
+### 8. If, and why not yet
 
-**Screen:** Highlight "We will tag her." Then highlight "Glad to help". Then show the
-`if` line from Step 7 of the companion page.
+**Screen:** The table in Step 7 of the page. Then the line with `if some_name >= 10`.
 
-**Say:** "Look at what you have. This answer is only offered to a crew that reported the
-hulk was cold. This one is only offered to a crew that took the job and finished it. That
-is how you make an answer depend on the story: put it somewhere the crew can only reach
-when it is true. You will see another way in the documentation, the word if on the
-answer. Do not use it in this mission. It cannot read your quests or your credits, so
-the answer is never offered, and lint will not warn you. It comes into its own in Class 3."
+**Say:** "So that's two ways to make an answer depend on the story. || You put it in a
+scene that only one answer leads to, | or in a call that only comes later. ||| You'll see
+a third way in other pages, | a condition written on the answer itself. || Don't use it in
+this mission. || It can't read your quests or your credits, | so the answer would never be
+offered, | and lint can't tell. || We'll use it properly in Class 3. ||"
 
-### 9. Lint (15:00 - 16:45)
+### 9. Play it
 
-**Screen:** Terminal: `sbs lint MyMission`, clean. Misspell `quill_offer` in an answer,
-lint, show the warning, undo. Type `acepts`, lint, show the warning, undo. Misspell the
-quest key after `accepts`, lint: no quest has that key. Undo. Delete the round brackets
-from the hang-up answer, lint: it looks like an answer and is read as a spoken line. Undo.
-Put a fourth hash on The Offer, lint: the scene above it disappears. Undo.
+**Screen:** Server, Helm and Comms. Fly inside 500 of the hulk. Open the call, Continue.
+Three answers. Pick What do you know. Pick She is cold. Pick We will tag her. The Quest
+Log: Tag the Hulk. Wait. The second call. Answer it.
 
-**Say:** "Lint. Clean. A scene key that is not there. A word that is not one of the four.
-A quest key that is not there: the answer would end the call and start nothing. No round
-brackets: that line is no longer an answer. It is one more thing for her to say, and one
-day she would say it, brackets and all. And a scene with one hash too many, which takes
-the scene above it out of the game. Lint reads every one of these. What it cannot read is
-your intention: a job with no way to finish still lints clean."
+**Say:** "In we go, and here's her call. || She asks her question, | and now there are
+three answers in the list. || I'll ask what she knows first, | then I tell her the hulk is
+cold, | and there's the offer. ||| We will tag her. || The call is over, | and the job is
+in the Quest Log. || Thirty seconds later it's done and paid, | and she's calling back.
+||"
 
-### 10. Play it (16:45 - 19:15)
+### 10. The other roads
 
-**Screen:** Server, Helm and Comms. Fly inside 500. Open the call. Continue. Choose "What
-do you know about her?", then "She is cold, DS 1.", then "We will tag her." Show the
-quest list. Wait for the job to complete. Open the second call and answer. Then restart,
-and this time choose "Find someone else, DS 1." and wait: no second call.
+**Screen:** Start again: pick Find someone else. Wait: nothing. Start again: pick Not now.
+Then once more: open the call and press Back.
 
-**Say:** "Her question, and my three answers. I ask first. Then I tell her. The offer.
-We will tag her. Call over, and there is the job. Thirty seconds. Done, paid, and she is
-calling back. Now the other road. Find someone else. No job. And she does not call. Same
-file, two different evenings."
+**Say:** "Now the other roads. || If I tell her to find someone else, | there's no job,
+and no second call. || And if I say not now, | the call is gone, and it doesn't come back.
+||| But Back is a different thing. || It puts the call back in the list, unanswered,
+ | and nothing in
+the story changes. || So the crew always has a way to wait. || Only write an answer that
+hangs up | when your story can go on without the call. ||"
 
-### 11. Your turn (19:15 - 19:50)
+### 11. Your turn
 
 **Screen:** The exercise on the companion page.
 
-**Say:** "You wrote a second call last time. Give it answers, and make one of them send a
-word into the story that finishes a quest. Next time: a job the crew can only get by
-picking up the call."
+**Say:** "Now it's your turn: give your second call some answers. || Make one of them send
+a word into the story, | and write a quest that waits for that word. ||| Next time, a step
+the crew can only finish by reporting in. ||"

@@ -1,0 +1,105 @@
+s01_cold_open_0	Your map has sides now,
+s01_cold_open_1	but there's nobody on them.
+s01_cold_open_2	Today we fix that.
+s01_cold_open_3	We're going to write three people,
+s01_cold_open_4	and give each of them a face.
+s01_cold_open_5	It's one new section in your fact sheet,
+s01_cold_open_6	and you won't touch the story file at all.
+s02_one_person_0	First, one line of the story file, just to read.
+s02_one_person_1	In Lecture 11 this line was marked for Class 2.
+s02_one_person_2	It makes a person from every record of a section called characters,
+s02_one_person_3	so that's the key my section needs.
+s02_one_person_4	Now the section itself is two hashes, the word Characters, and that key.
+s02_one_person_5	Then the person, with three hashes,
+s02_one_person_6	her name, and her key in round brackets.
+s02_one_person_7	Inside the fence there's one line,
+s02_one_person_8	Face, and the word female.
+s02_one_person_9	And below the fence there's a sentence about her,
+s02_one_person_10	which is a note for me.
+s02_one_person_11	I save, I run lint, and it's clean.
+s03_what_one_word_gets_you_0	That word female is called a keyword,
+s03_what_one_word_gets_you_1	and there are seven of them, all for humans.
+s03_what_one_word_gets_you_2	But a keyword doesn't choose a face.
+s03_what_one_word_gets_you_3	It asks the game to roll one.
+s03_what_one_word_gets_you_4	So every time the game starts,
+s03_what_one_word_gets_you_5	she gets new eyes, new hair and new clothes.
+s03_what_one_word_gets_you_6	And about half the time she gets skin that's green or blue.
+s03_what_one_word_gets_you_7	That's fine for a voice the crew hears once.
+s03_what_one_word_gets_you_8	But it's wrong for a person with a name,
+s03_what_one_word_gets_you_9	because your crew should know her when she calls again.
+s04_a_face_that_stays_0	To keep a face, the line has to spell it out,
+s04_a_face_that_stays_1	and I'm not going to type that myself.
+s04_a_face_that_stays_2	I press Control, Shift and P,
+s04_a_face_that_stays_3	which opens a box that runs any tool the editor has.
+s04_a_face_that_stays_4	I type story graph, and press Enter.
+s04_a_face_that_stays_5	Here are my records, drawn as boxes,
+s04_a_face_that_stays_6	with one band for each section.
+s04_a_face_that_stays_7	I right-click Quill's box, and I choose Edit.
+s04_a_face_that_stays_8	This tab is the Inspector,
+s04_a_face_that_stays_9	and it shows her record as a form.
+s04_a_face_that_stays_10	Beside her face there's a button, so I click it,
+s04_a_face_that_stays_11	and from the list I choose a random Terran woman.
+s04_a_face_that_stays_12	Now look at my file.
+s04_a_face_that_stays_13	The keyword is gone,
+s04_a_face_that_stays_14	and in its place there's one long line.
+s04_a_face_that_stays_15	That line is her face, written down.
+s05_change_one_thing_0	A roll gets me close,
+s05_change_one_thing_1	and the builder gets me the rest of the way.
+s05_change_one_thing_2	I click her picture, and the Face Builder opens,
+s05_change_one_thing_3	starting from the face she already has.
+s05_change_one_thing_4	There's a slider for each feature:
+s05_change_one_thing_5	eyes, mouth, hair, clothes and so on.
+s05_change_one_thing_6	And a tick box beside some of them
+s05_change_one_thing_7	turns that feature off altogether.
+s05_change_one_thing_8	So I move the hair,
+s05_change_one_thing_9	and her line in my file changes while I drag.
+s05_change_one_thing_10	There's nothing to press.
+s05_change_one_thing_11	When she looks right, I go back to the file and I save.
+s06_the_second_person_0	The second one goes faster.
+s06_the_second_person_1	I type Chief Ives below her,
+s06_the_second_person_2	with the keyword male, and I save.
+s06_the_second_person_3	The graph has already drawn a box for him.
+s06_the_second_person_4	So it's right-click, Edit, the face button,
+s06_the_second_person_5	and a random Terran man.
+s06_the_second_person_6	If I don't care for him, I roll again.
+s07_someone_who_is_not_human_0	My third person flies the Breaker Cutter,
+s07_someone_who_is_not_human_1	and she doesn't have to be one of us.
+s07_someone_who_is_not_human_2	The game has six peoples,
+s07_someone_who_is_not_human_3	and only the humans have keywords.
+s07_someone_who_is_not_human_4	For the other five there's no word to type,
+s07_someone_who_is_not_human_5	so the editor is the only way in.
+s07_someone_who_is_not_human_6	I type her record the same way,
+s07_someone_who_is_not_human_7	and this time, from the list, I choose a random Skaraan.
+s07_someone_who_is_not_human_8	And in the builder, this box at the top is her race.
+s08_four_rules_0	You'll copy these lines and move them about,
+s08_four_rules_1	and they break easily, so here are four rules.
+s08_four_rules_2	A face string is one line, however long it is.
+s08_four_rules_3	You keep all of it, down to the last semicolon.
+s08_four_rules_4	You put no quote marks round it.
+s08_four_rules_5	And you change it with the builder, never by hand.
+s08_four_rules_6	Here's what the first rule looks like when it's broken.
+s08_four_rules_7	I press Enter in the middle,
+s08_four_rules_8	and lint gives me an error on the second half.
+s08_four_rules_9	That's the only one of the four that lint can see,
+s08_four_rules_10	so the other three are yours to watch.
+s09_what_lint_cannot_see_0	And now the one that will catch you.
+s09_what_lint_cannot_see_1	I write Face, woman,
+s09_what_lint_cannot_see_2	which looks just as good as female,
+s09_what_lint_cannot_see_3	and lint says clean.
+s09_what_lint_cannot_see_4	But woman isn't one of the seven words,
+s09_what_lint_cannot_see_5	so the game doesn't roll anything.
+s09_what_lint_cannot_see_6	It takes the word itself as her face,
+s09_what_lint_cannot_see_7	and that's no face at all.
+s09_what_lint_cannot_see_8	Lint knows where a person's record belongs.
+s09_what_lint_cannot_see_9	It doesn't read what comes after Face.
+s09_what_lint_cannot_see_10	So that part you check with your own eyes.
+s10_look_at_them_0	Nobody speaks yet, so the game has nothing new to show.
+s10_look_at_them_1	But I can look at my cast right here.
+s10_look_at_them_2	I click inside her record,
+s10_look_at_them_3	I open that box again, and I type preview node.
+s10_look_at_them_4	There's Quill, and she'll look like that in every game from now on.
+s10_look_at_them_5	And there's Ives, and there's Sable.
+s11_your_turn_0	Now it's your turn: add a fourth person of your own,
+s11_your_turn_1	from a people you haven't used.
+s11_your_turn_2	Roll a face, and then change two things about it in the builder.
+s11_your_turn_3	Next time, the harbormaster picks up the microphone.

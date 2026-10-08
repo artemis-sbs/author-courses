@@ -123,15 +123,6 @@ Reward: 50 credits
 ---
 Optional. DS 1 pays a bonus for a fast approach.
 
-### [DS 1 Calls](ds1_calls)
----
-Beat
-Starts when: reach derelict 500
-Action:
-  - quill hails quill_hello
----
-DS 1 saw the ship go in close, and wants to hear about it.
-
 // ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
 // it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
 // several readings picked at random - so a second scan does not read identically.
@@ -262,22 +253,3 @@ Keeps the salvage ledger on DS 1. Counts everything twice.
 Face: ska #813e20 1 0;ska #fff 1 4;ska #813e20 2 1;ska #813e20 1 2;ska #fff 4 3;
 ---
 Flies the Breaker Cutter. Has never paid for a ship in her life.
-
-
-// ---- Dialogue. A scene is who speaks and what they say.
-## [Dialogue](dialogue)
-
-### [Quill Checks In](quill_hello)
----
-Speaker: quill
-When: hail
-Title: About that hulk
----
-@quill
-% Artemis, DS 1. We watched you go in close.
-% Artemis, this is Quill on DS 1. You got nearer to that hulk than I would have.
-% DS 1 to Artemis. Nice flying out there.
-
-@quill
-% Now tell me she is as dead as she looks.
-% So. Is anybody home?

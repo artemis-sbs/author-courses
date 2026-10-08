@@ -1,0 +1,419 @@
+1
+00:00:00,000 --> 00:00:02,174
+Your map has sides now,
+
+2
+00:00:02,624 --> 00:00:04,798
+but there's nobody on them.
+
+3
+00:00:05,698 --> 00:00:07,437
+Today we fix that.
+
+4
+00:00:08,337 --> 00:00:10,946
+We're going to write three people,
+
+5
+00:00:11,396 --> 00:00:14,439
+and give each of them a face.
+
+6
+00:00:16,239 --> 00:00:19,717
+It's one new section in your fact sheet,
+
+7
+00:00:20,167 --> 00:00:24,080
+and you won't touch the story file at all.
+
+8
+00:00:25,280 --> 00:00:29,628
+First, one line of the story file, just to read.
+
+9
+00:00:30,528 --> 00:00:34,876
+In Lecture 11 this line was marked for Class 2.
+
+10
+00:00:35,776 --> 00:00:40,993
+It makes a person from every record of a section called characters,
+
+11
+00:00:41,443 --> 00:00:44,487
+so that's the key my section needs.
+
+12
+00:00:46,287 --> 00:00:51,939
+Now the section itself is two hashes, the word Characters, and that key.
+
+13
+00:00:52,839 --> 00:00:55,448
+Then the person, with three hashes,
+
+14
+00:00:55,898 --> 00:00:59,376
+her name, and her key in round brackets.
+
+15
+00:01:00,276 --> 00:01:02,885
+Inside the fence there's one line,
+
+16
+00:01:03,335 --> 00:01:05,509
+Face, and the word female.
+
+17
+00:01:06,409 --> 00:01:10,322
+And below the fence there's a sentence about her,
+
+18
+00:01:10,772 --> 00:01:13,380
+which is a note for me.
+
+19
+00:01:14,280 --> 00:01:17,759
+I save, I run lint, and it's clean.
+
+20
+00:01:18,959 --> 00:01:22,002
+That word female is called a keyword,
+
+21
+00:01:22,452 --> 00:01:26,365
+and there are seven of them, all for humans.
+
+22
+00:01:27,265 --> 00:01:30,309
+But a keyword doesn't choose a face.
+
+23
+00:01:30,759 --> 00:01:33,802
+It asks the game to roll one.
+
+24
+00:01:35,602 --> 00:01:38,211
+So every time the game starts,
+
+25
+00:01:38,661 --> 00:01:42,574
+she gets new eyes, new hair and new clothes.
+
+26
+00:01:43,474 --> 00:01:48,691
+And about half the time she gets skin that's green or blue.
+
+27
+00:01:49,591 --> 00:01:53,504
+That's fine for a voice the crew hears once.
+
+28
+00:01:54,404 --> 00:01:58,317
+But it's wrong for a person with a name,
+
+29
+00:01:58,767 --> 00:02:03,115
+because your crew should know her when she calls again.
+
+30
+00:02:04,315 --> 00:02:09,098
+To keep a face, the line has to spell it out,
+
+31
+00:02:09,548 --> 00:02:13,026
+and I'm not going to type that myself.
+
+32
+00:02:13,926 --> 00:02:16,535
+I press Control, Shift and P,
+
+33
+00:02:16,985 --> 00:02:21,767
+which opens a box that runs any tool the editor has.
+
+34
+00:02:22,667 --> 00:02:25,711
+I type story graph, and press Enter.
+
+35
+00:02:27,511 --> 00:02:30,554
+Here are my records, drawn as boxes,
+
+36
+00:02:31,004 --> 00:02:33,613
+with one band for each section.
+
+37
+00:02:34,513 --> 00:02:37,991
+I right-click Quill's box, and I choose Edit.
+
+38
+00:02:38,891 --> 00:02:41,065
+This tab is the Inspector,
+
+39
+00:02:41,515 --> 00:02:44,993
+and it shows her record as a form.
+
+40
+00:02:45,893 --> 00:02:50,241
+Beside her face there's a button, so I click it,
+
+41
+00:02:50,691 --> 00:02:55,039
+and from the list I choose a random Terran woman.
+
+42
+00:02:56,839 --> 00:02:59,013
+Now look at my file.
+
+43
+00:02:59,913 --> 00:03:01,652
+The keyword is gone,
+
+44
+00:03:02,102 --> 00:03:05,580
+and in its place there's one long line.
+
+45
+00:03:06,480 --> 00:03:09,524
+That line is her face, written down.
+
+46
+00:03:10,724 --> 00:03:12,898
+A roll gets me close,
+
+47
+00:03:13,348 --> 00:03:17,696
+and the builder gets me the rest of the way.
+
+48
+00:03:18,596 --> 00:03:22,509
+I click her picture, and the Face Builder opens,
+
+49
+00:03:22,959 --> 00:03:26,002
+starting from the face she already has.
+
+50
+00:03:26,902 --> 00:03:29,511
+There's a slider for each feature:
+
+51
+00:03:29,961 --> 00:03:33,004
+eyes, mouth, hair, clothes and so on.
+
+52
+00:03:33,904 --> 00:03:37,383
+And a tick box beside some of them
+
+53
+00:03:37,833 --> 00:03:40,007
+turns that feature off altogether.
+
+54
+00:03:41,807 --> 00:03:43,980
+So I move the hair,
+
+55
+00:03:44,430 --> 00:03:48,778
+and her line in my file changes while I drag.
+
+56
+00:03:49,678 --> 00:03:51,417
+There's nothing to press.
+
+57
+00:03:52,317 --> 00:03:57,970
+When she looks right, I go back to the file and I save.
+
+58
+00:03:59,170 --> 00:04:01,343
+The second one goes faster.
+
+59
+00:04:02,243 --> 00:04:04,852
+I type Chief Ives below her,
+
+60
+00:04:05,302 --> 00:04:08,346
+with the keyword male, and I save.
+
+61
+00:04:09,246 --> 00:04:13,159
+The graph has already drawn a box for him.
+
+62
+00:04:14,059 --> 00:04:17,102
+So it's right-click, Edit, the face button,
+
+63
+00:04:17,552 --> 00:04:19,726
+and a random Terran man.
+
+64
+00:04:20,626 --> 00:04:24,539
+If I don't care for him, I roll again.
+
+65
+00:04:25,739 --> 00:04:28,783
+My third person flies the Breaker Cutter,
+
+66
+00:04:29,233 --> 00:04:33,146
+and she doesn't have to be one of us.
+
+67
+00:04:34,046 --> 00:04:36,220
+The game has six peoples,
+
+68
+00:04:36,670 --> 00:04:39,278
+and only the humans have keywords.
+
+69
+00:04:40,178 --> 00:04:44,091
+For the other five there's no word to type,
+
+70
+00:04:44,541 --> 00:04:48,020
+so the editor is the only way in.
+
+71
+00:04:49,820 --> 00:04:52,863
+I type her record the same way,
+
+72
+00:04:53,313 --> 00:04:58,096
+and this time, from the list, I choose a random Skaraan.
+
+73
+00:04:58,996 --> 00:05:04,213
+And in the builder, this box at the top is her race.
+
+74
+00:05:05,413 --> 00:05:08,891
+You'll copy these lines and move them about,
+
+75
+00:05:09,341 --> 00:05:13,254
+and they break easily, so here are four rules.
+
+76
+00:05:14,154 --> 00:05:18,502
+A face string is one line, however long it is.
+
+77
+00:05:19,402 --> 00:05:23,750
+You keep all of it, down to the last semicolon.
+
+78
+00:05:24,650 --> 00:05:27,693
+You put no quote marks round it.
+
+79
+00:05:28,593 --> 00:05:32,941
+And you change it with the builder, never by hand.
+
+80
+00:05:34,741 --> 00:05:39,089
+Here's what the first rule looks like when it's broken.
+
+81
+00:05:39,989 --> 00:05:42,598
+I press Enter in the middle,
+
+82
+00:05:43,048 --> 00:05:47,396
+and lint gives me an error on the second half.
+
+83
+00:05:48,296 --> 00:05:53,078
+That's the only one of the four that lint can see,
+
+84
+00:05:53,528 --> 00:05:57,007
+so the other three are yours to watch.
+
+85
+00:05:58,207 --> 00:06:01,685
+And now the one that will catch you.
+
+86
+00:06:02,585 --> 00:06:04,324
+I write Face, woman,
+
+87
+00:06:04,774 --> 00:06:07,817
+which looks just as good as female,
+
+88
+00:06:08,267 --> 00:06:10,007
+and lint says clean.
+
+89
+00:06:11,807 --> 00:06:15,285
+But woman isn't one of the seven words,
+
+90
+00:06:15,735 --> 00:06:18,343
+so the game doesn't roll anything.
+
+91
+00:06:19,243 --> 00:06:22,722
+It takes the word itself as her face,
+
+92
+00:06:23,172 --> 00:06:25,780
+and that's no face at all.
+
+93
+00:06:26,680 --> 00:06:29,724
+Lint knows where a person's record belongs.
+
+94
+00:06:30,174 --> 00:06:33,217
+It doesn't read what comes after Face.
+
+95
+00:06:34,117 --> 00:06:38,030
+So that part you check with your own eyes.
+
+96
+00:06:39,230 --> 00:06:44,013
+Nobody speaks yet, so the game has nothing new to show.
+
+97
+00:06:44,913 --> 00:06:48,826
+But I can look at my cast right here.
+
+98
+00:06:49,726 --> 00:06:51,900
+I click inside her record,
+
+99
+00:06:52,350 --> 00:06:56,698
+I open that box again, and I type preview node.
+
+100
+00:06:57,598 --> 00:07:03,250
+There's Quill, and she'll look like that in every game from now on.
+
+101
+00:07:04,150 --> 00:07:06,759
+And there's Ives, and there's Sable.
+
+102
+00:07:07,959 --> 00:07:12,741
+Now it's your turn: add a fourth person of your own,
+
+103
+00:07:13,191 --> 00:07:15,800
+from a people you haven't used.
+
+104
+00:07:16,700 --> 00:07:22,352
+Roll a face, and then change two things about it in the builder.
+
+105
+00:07:24,152 --> 00:07:27,630
+Next time, the harbormaster picks up the microphone.

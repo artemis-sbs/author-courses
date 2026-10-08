@@ -1,233 +1,214 @@
 # C2-5 video script - Hails
 
-> **CHECKED IN THE REAL ENGINE, 2026-10-04, a real Comms console and a main screen.** The
-> lesson's walk matched the mock line for line: the call on the list, Quill then Chief Ives
-> by name, the report finishing the step, 100 then 250 credits, `mast.runtime.log` empty.
-> SEEN on Comms: Chief Ives's face and name, the title "Your beacon", the dial and the
-> Audio box, the two answers. NOT seen: the Hails tab of the info panel, the quest list
-> row, anything with two ships.
+> **STATE ON 2026-10-08. Read this first.**
 >
-> **Changed since this script was written (library `98725836`, not yet released when this
-> note was written):** `At start: posting` now shows the Available Quests tile and the row
-> says how it is taken (seen); `Presentation: orbit` with `Subject: derelict` films the
-> hulk on the main screen with the speaker's band under it (seen); `Starts when: 5 seconds`
-> starts; a late answer no longer restarts a finished job or un-fails a failed step. The
-> page's Step 5 table and its "left out" table are updated.
+> - **Everything this page needs is released.** The page is written for Artemis Cosmos
+>   1.4.0, installed from Steam or itch.io, with a current tool and libraries.
+> - **The student's mission is `MyMission`** as Lecture 4 of this class left it
+>   (`c2-04-dialogue-part-2\example\mission.amd`, with Lecture 1's `story.mast`). The game
+>   is started with `sbs run server,helm,comms -m MyMission map=0`.
+> - **`example\` holds the one file that differs from that start:** `mission.amd`.
+> - **What changed from the first version.** The lecture teaches the same things on the
+>   chained file. Chief Ives is no longer typed here: he has been in the Characters
+>   section since Lecture 2, with a face that stays. The exercise is new: it works on the
+>   lesson's own calls. The first version's exercise turned a beat into a step the crew
+>   can see by taking out its `Beat` line. In the chained file that beat starts on a
+>   trigger (`Starts when: reach lifeboat 500`), and the same line on an ordinary quest
+>   starts nothing: the quest sits on offer for good, and no call is placed (measured;
+>   reported). Lint's only word for it is `quest-never-finishes`.
+
+
+> **Re-measured 2026-10-08, in the mock.** Tool as installed in `data\missions`, library
+> as packaged in `__lib__` (sbs_utils `ae2bbf4a`). The page's steps were applied one at a
+> time to the Lecture 4 example, with lint after each. Then one-change variants of the
+> finished file: each linted, each played headless by a probe that takes the job, waits
+> for the beacon, reads the rows the Comms hail list would show, picks rows by their
+> first words, and prints every quest's state, the side's credits, the calls waiting, the
+> list the Quest Log is filled from, the kept calls and the ship's log. Two-ship runs set
+> the number of player ships to two. Every line of tool output in a code block on the
+> page is a line a run printed (`verify_page.py`).
+
+> **CHECKED IN THE REAL ENGINE, 2026-10-04, a real Comms console and a main screen, on
+> the first version.** The lesson's walk matched the mock line for line: the call on the
+> list, Quill then Chief Ives by name, the report finishing the step, the credits,
+> `mast.runtime.log` empty. SEEN on Comms: Chief Ives's face and name, the title "Your
+> beacon", the dial and the Audio box, the two answers. NOT seen: the Hails tab of the
+> info panel, the Quest Log's row, anything with two ships. Seen since, in other
+> lectures' checks: `At start: posting` shows the Available Quests tile and its row says
+> how it is taken; `Presentation: orbit` with `Subject: derelict` films the hulk on the
+> main screen.
 >
-> **Still true, and a decision for the user (B82):** `Scope: ship` does nothing in a
+> **Still true, and a decision for the course owner:** `Scope: ship` does nothing in a
 > template mission, because the template grants every quest to the shared story.
 
-Target length: 19 minutes. One continuous screen recording with voice-over, cut at scene
-boundaries. The companion page is `lesson.md`; the finished files are in `example\`.
+The companion page is `lesson.md`; the finished file is in `example\`.
 
 ## Before recording
 
 | Item | State needed |
 |---|---|
-| Mission | The Lecture 4 mission: Quill's call with answers, the job **Tag the Hulk** taken by "We will tag her.", the beat **Beacon Set** and the scene **Quill Calls Back**. Lint clean |
-| Library | sbs_utils v1.4.0 at `49ba0d94` or later and LegendaryMissions at `e61b415` or later, as built into `data\missions\__lib__` on 2026-10-04. Everything on the page was measured on that packaged library, not on a working tree |
-| Template | The mission must come from the `amd` template that reads the Characters and Dialogue sections itself (build items B38 and B53: fixed in the starter repo, not pushed when this was written) |
+| Mission | `MyMission` as Lecture 4 leaves it: Quill's call with answers, the job **Tag the Hulk** taken by "We will tag her.", the beat **Beacon Set** and the scene **Quill Calls Back**. `mission.amd` has 338 lines |
+| Lint | `sbs lint MyMission` says `clean` |
 | VS Code | `MyMission` folder open, `mission.amd` in one tab, scrolled to Tag the Hulk |
-| Game | Closed. Started on camera in scene 9 with a server, a Helm console and a Comms console. For scene 6, a second start with two player ships is optional (see "Not seen by anyone", item 7) |
+| Command prompt | Open in `data\missions`, cleared |
+| Logs | `mast.compile.log` and `mast.runtime.log` empty, or deleted |
+| Game | Closed. Started on camera in scene 9 with a server, a Helm console and a Comms console. Scene 6 is a table on the page; a second start with two player ships is optional |
 
 ## Confirm on camera
 
-Checked on 2026-10-04 in headless runs (the mock) on the packaged library, by a script
-that called the game's own functions: the function that builds the rows of the Comms hail
-list, the dispatch that list does when a row is picked, the functions that fill Available
-Quests and Quests, and the function that counts jobs for the Available Quests tile. The
-console was a stand-in that holds the Comms role. Nothing here has been run in the real
-engine, and no screen has been seen.
+"Lint" is the installed tool. "Mock" is a headless play with the packaged library.
+"Engine" is the run of 2026-10-04 in the note above. If an item fails while recording,
+stop and fix the page.
 
-What the runs showed:
+1. Lint is `clean` after each of Steps 1 to 4. Half way through Step 1, with Tag the Hulk
+   changed and the beat not yet replaced, it says `dangling-reveal` and `never-revealed`.
+   (Lint.)
+2. After "We will tag her.": Tag the Hulk is running. About 30 seconds later it is
+   complete, Report to DS 1 is running, nothing has been paid for the beacon, and one call
+   waits: `Harbormaster Quill - Your beacon`. (Mock, Engine.)
+3. The list the Quest Log is filled from has Report to DS 1 as active at that moment.
+   With the `Beat` line left in, it does not. (Mock.)
+4. Opened, the call shows one of Quill's two takes with rows `Back` and `Continue`. After
+   Continue the list's heading and the speaker are `Chief Ives`, with a face, and the rows
+   are `Back` and the one answer. (Mock, Engine.)
+5. `Back` on Ives's block puts the call back in the list and leaves the step running.
+   Opened again it starts at Quill's block. A minute unanswered: the call is still
+   waiting. (Mock.)
+6. The answer closes the call. Report to DS 1 is complete and the side has 150 credits
+   more. The ship's log gets the line on the page. The record of finished calls holds
+   both conversations. (Mock, Engine.)
+7. Two calls waiting: the newer one is first. With `Priority: 5` on the older one, the
+   older one is first. (Mock.)
+8. The dial: `off`, `console`, `main` and `both` are accepted. It starts at `both`.
+   (Mock. Engine: the dial was seen.)
+9. Two player ships: both get each call. One ship's yes starts the job for both. Both get
+   the report call; the first report pays 150 and the second pays nothing. A yes from the
+   second ship after the job was finished changes nothing. (Mock.)
+10. Every row of the three tables in Step 7. (Lint for all, Mock for all.)
+11. The exercise: an `@ives` block between Quill's two blocks and an `@sable` block in
+    The Offer; lint is `clean`, and the name changes twice in the call. (Lint, Mock.)
 
-- The lesson's steps, applied literally to the Lecture 4 example, give the file in
-  `example\`. Lint is clean after every finished step. Between the two halves of Step 1 it
-  warns that `report_in` is not there yet.
-- After "We will tag her.": Tag the Hulk is running and the side has 100 credits. About 30
-  seconds later Tag the Hulk is complete, Report to DS 1 is running, the side still has
-  100 credits, and one call waits: `Harbormaster Quill - Your beacon`.
-- The function that fills Quests lists `Report to DS 1 (Active)` at that moment. With the
-  `Beat` line left in, it does not list it until it is done.
-- Opened, the call shows one of Quill's two takes with rows `Back` and `Continue`. After
-  Continue the list's heading and the speaker are `Chief Ives`, with a face, and the rows
-  are `Back` and the one answer.
-- The answer closes the call. Report to DS 1 is complete and the side has 250 credits.
-- `Back` on Ives's block puts the call back in the waiting list and leaves the step
-  running. Opened again it starts at Quill's block. Sixty seconds unanswered: the call is
-  still waiting, and nothing else changed.
-- The ship's log gets `Harbormaster Quill - Your beacon - answered (It is ours, DS 1. The
-  beacon is set.)`. The record of finished calls holds both conversations, line by line.
-- Two calls waiting: the newer one is first. With `Priority: 5` on the older one, the
-  older one is first.
-- The dial: `off`, `console`, `main` and `both` are accepted. It starts at `both`.
-  `console` and `off` turn the main-screen half off.
-- Two player ships: both get each call. One ship's yes starts the job for both. Both get
-  the report call; the first report pays 150 and the second pays nothing. A yes from the
-  second ship after the job was finished and paid started it again, and 34 seconds and
-  one more report later the side had 400 credits.
-- `Scope: ship` on any of the records: every quest is still held by the shared story, and
-  both ships are still called.
-- The exercise, followed as written on a stand-in for a student's own file: both endings
-  complete the step and pay, and the ending with its `; completes` removed leaves the step
-  running with lint clean.
-- Every row of the two tables in Step 7 was produced by making that one change, running
-  `sbs lint` with nothing but the lesson's files in the folder, and running the game.
+Not seen by anyone, and to watch for while recording:
 
-Not seen by anyone. If one of these is not as described, stop and fix the page:
-
-1. Report to DS 1 in the quest list while the call waits, and its objective sentence
-   beside it. Only the function behind the list has said so.
-2. The name and the face changing to Chief Ives on **Continue**, on Comms and on the main
-   screen. `Face: terran_male` has not been looked at. If it does not draw a face, pick
-   one in the Face Builder (Lecture 2) and change the page.
-3. The main screen during a call: the code draws the face, the title, the name, the line
-   and a numbered, read-only list of the answers over the view.
-4. The dial above the Incoming Hails list, its four words, and the Audio box beside it.
-5. The Hails tab of the Comms info panel: the two finished calls, and one of them read
-   again.
-6. The `answered` line in the ship's log, and where on the Comms console it is read.
-7. Two ships. Start the server with Player Ships set to 2 and put a Comms console on each.
-   The page's table in Step 5 was measured through function calls only.
-8. Whether a crew gets any notice that a step started when Report to DS 1 appears. The
-   log has no "started" line; it has `Quest complete: Tag the Hulk`.
-
-Known, and kept out of the lesson on purpose:
-
-- `At start: posting`. It works as data: the job is granted as Posted, the function that
-  fills Available Quests lists it as `Tag the Hulk (Posted)` with no Accept, the 30 second
-  clock does not run until an answer accepts it. But the Available Quests tile is only
-  offered when the board holds a job that can be accepted, and a posted job does not
-  count. In this mission the tile's count is 0, so the posted job would be on no screen.
-  The page says so in "Further reading". When that is fixed, posting is a three-minute
-  step between scenes 2 and 3.
-- `Scope: ship`, `Presentation:` and `Audio:`. See the page's "Further reading" table.
-- A call placed on a clock. `Starts when: 5 seconds` on a beat never starts it (measured:
-  the beat stays running and no call comes; lint clean). The Lecture 3 exercise's way,
-  a timed quest with `Then: reveal`, is the one that works.
-- A deadline on the report step. The step fails and charges, the call stays in the list,
-  and a late answer completes the step and pays. It is a row in Step 7, not a step.
+1. The Hails tab of the info panel, and reading a finished call again.
+2. The Quest Log's row for Report to DS 1 while the call waits.
+3. The call on the main screen, and what the dial does to it.
+4. Anything with two ships.
+5. Where the ship's log is read on a console.
 
 ## Scenes
 
-### 1. Cold open (0:00 - 0:45)
+### 1. Cold open
 
-**Screen:** The Comms console. The quest list shows Report to DS 1. One row in Incoming
-Hails: Harbormaster Quill - Your beacon. Open it. Quill asks. Continue. Chief Ives. Pick
-the answer. The step completes.
+**Screen:** The Quest Log: Report to DS 1, running. Comms: Harbormaster Quill - Your
+beacon in the list. It opens on Quill, then Chief Ives. One answer. The credits tick up.
 
-**Say:** "Last time she called to say well done, and nothing depended on it. This time the
-job is not finished until the crew picks up and says so. And she is not alone on the
-line."
+**Say:** "Last time, the job paid by itself, | and the call afterward was just manners. ||
+Today the job isn't over until the crew reports in. || And when they do, | a second voice
+comes on the line. ||| Along the way you'll learn which call sits on top, | which ships
+get called, | and what Comms can do with a call that's waiting. ||"
 
-### 2. A step only an answer can finish (0:45 - 4:15)
+### 2. A step only an answer can finish
 
-**Screen:** `mission.amd`, Tag the Hulk. Delete the `Reward:` line. Change `Then: reveal
-beacon_set` to `Then: reveal report_in`. Add the sentence to the description. Then select
-the whole Beacon Set record and type Report to DS 1 over it. Point at each line of the
-table on the companion page.
+**Screen:** Tag the Hulk: delete the `Reward:` line, change `Then:` to
+`reveal report_in`, add the sentence. Then select the whole beat Beacon Set and type
+Report to DS 1 over it. Highlight: no `Beat`, `Objective:`, `Reward:`, `Action:`, and the
+missing `Done when:`. Save. Lint: clean.
 
-**Say:** "Three changes to the job. The reward comes off. Then, reveal report_in. And one
-more sentence, so the crew knows the pay comes later. Now the beat below it. I am
-replacing it with a quest. No Beat line: so it is in the quest list while it runs, and a
-beat is not. An objective, which sends the crew to Comms. The reward, which has moved
-here. The same Action as before: Action works on any quest, the moment it starts. And
-look at what is missing. No Done when. Nothing in the game finishes this step. Only an
-answer can."
+**Say:** "I start with the job. || I take its reward off, | and I point its Then line at
+a new key. || Then I replace the beat below it with a quest. ||| Look at what's different.
+|| There's no Beat line, so the crew will see it in the Quest Log. || There's an
+objective, which sends them to Comms. || The reward has moved here. || The Action lines
+are the same two as before, | because Action works on any quest. ||| And look at what's
+missing: there's no Done when. || Nothing in the game finishes this step by itself. ||"
 
-### 3. The answer that finishes it (4:15 - 6:30)
+### 3. The answer that finishes it
 
-**Screen:** End of the file, Quill Calls Back. Replace the two takes. Replace the answer
-with `- [It is ours, DS 1. The beacon is set.]() ; completes report_in`. Then type a
-second answer, `- [Not now, DS 1.]()`, pause on it, and delete it.
+**Screen:** The scene Quill Calls Back: change the two takes, and the answer to
+`; completes report_in`. Save. Lint: clean.
 
-**Say:** "She should be asking now. Two takes, both questions. And the answer: completes
-report_in. That is the word from last time. It finishes the step and pays it. Now a
-mistake that looks like good manners. A second answer: not now. A crew that picks it has
-ended the call. It does not come back, and the step sits in the quest list for the rest
-of the game. So the rule: every answer that ends this call finishes the step. The crew
-already has a way to say not now. It is the Back button."
+**Say:** "So what does finish it? | An answer from the crew does. || Quill
+ should be asking now, not
+congratulating, | so I change her lines. ||
+ And on the crew's answer, after the semicolon,
+| I write completes, and the step's key. ||| Now here's the rule for a call that a step is
+waiting on. || Every answer that ends the call has to finish the step. || If I add an
+answer that just hangs up, | the call is gone, and the step stays in the Quest Log for
+good. || And lint can't see that. ||"
 
-### 4. A second voice (6:30 - 9:30)
+### 4. A second voice
 
-**Screen:** Characters section. Type Chief Ives below Quill. Back to Quill Calls Back. Add
-`@quill` above her takes, then a blank line, `@ives`, and his two takes. Then show the
-four rules on the companion page. Type `@Chief Ives` in place of `@ives`, pause, undo.
+**Screen:** In Quill Calls Back, type `@quill` above her takes, then the `@ives` block.
+Scroll up to show Chief Ives in the Characters section. Save. Lint: clean.
 
-**Say:** "A call can have more than one person on it. First the person: a heading, a key,
-a face. Now the scene. At quill starts her block, as it did in lecture three. At ives
-hands the call to him. His own takes. The crew reads her, presses Continue, and reads
-him, under his name and his face. Four things. The call is still Quill's in the list. The
-line is the at sign and a key, nothing else. Write his name there, or a space, or a
-colon, and it stops being a block: his lines become more takes for her, and lint will not
-tell you. Each block has its own takes. And the answers come with the last block."
+**Say:** "A call can have more than one person on the line. || Chief Ives has been in my
+cast since Lecture 2, | with nothing to say. || So I give him a block: | an at sign, his
+key, and two takes of his own. ||| The call still belongs to Quill, | and it's her name on
+the list. || But when Comms presses Continue, | the name and the face change to his. ||
+Remember that the line is an at sign and a key, and nothing else. || Write his full name
+there, and his block is gone, | and lint says clean. ||"
 
-### 5. Which call is on top (9:30 - 11:00)
+### 5. Which call is on top
 
-**Screen:** The table in Step 4 of the companion page. Then add `Priority: 5` to the fence
-of Quill Calls Back.
+**Screen:** The table in Step 4 of the page. Then add `Priority: 5` to Quill Calls Back.
+Save. Lint: clean.
 
-**Say:** "You have several calls now, so here is how the list works. Newest on top. A row
-is a name and a title, so every call you place wants a title. A call never times out. And
-one call is open at a time. If a call must not be buried, give its scene a priority. A
-whole number. Higher sits above lower, however new the others are. I use it for the call
-a step is waiting on, and for nothing else."
+**Say:** "Calls wait in a list, and the newest one is on top. || So a call that matters
+can get pushed down by a later one. || A call never times out, | and only one is open at
+a time. ||| To keep a call on top, I give its scene a priority. || A higher number sits
+above a lower one, | and a call with no priority counts as zero. || Use it for a call that
+a step is waiting on, | and leave the others alone. ||"
 
-### 6. Who gets called (11:00 - 13:00)
+### 6. Who gets called
 
-**Screen:** The table in Step 5 of the companion page. Then highlight `Artemis, DS 1.` in
-Quill Checks In. Then highlight `Scope: shared` on Tag the Hulk.
+**Screen:** The table in Step 5 of the page, row by row.
 
-**Say:** "Who does she call? Every player ship. With one ship, that is the whole story.
-With two, each ship gets its own copy of the call and answers for itself. But the job is
-shared: one yes starts it for everyone. Both ships get the report call, and the first to
-report is paid. Two things for you as the writer. This take says Artemis. The Intrepid
-reads it too. And look at the last row: a ship that says yes after the job is finished
-starts it again. So a job handed out by a call belongs in a mission flown by one ship.
-You will see Scope ship in the documentation. In this mission it changes nothing. Leave
-it shared."
+**Say:** "I've never said which ship she calls, | and I don't have to, | because every
+player ship is called. || With one ship, that's all there is to it. ||| With two, each
+ship gets its own copy of the call. || But the job is shared, so there's only one of it.
+|| One crew says yes, and it starts for everybody. || And the first crew to report gets
+the side paid, just once. ||| So write your lines for any ship that might hear them, | and
+keep jobs like this for missions flown by one ship. ||"
 
-### 7. What Comms can do with a call (13:00 - 14:30)
+### 7. What Comms can do
 
-**Screen:** The table in Step 6 of the companion page.
+**Screen:** The table in Step 6 of the page.
 
-**Say:** "Nothing to type here. This is what the person at Comms can do with what you
-wrote. Leave it: it waits. Open it: the bridge sees it on the main screen too. Back: it
-goes back in the list and nothing in the story has changed. The dial moves where it is
-drawn. The Hails tab keeps every finished call. And the ship's log gets one line per
-call. So an answer is a decision made once. Everything else lets the crew put it off, or
-look back at it."
+**Say:** "This part has nothing to type. || It's what the person at Comms can do with what
+you wrote. || They can leave a call waiting, | they can open it, | and they can press
+Back. || There's a dial that chooses where the conversation is drawn. || And every
+finished call is kept, | so it can be read again. ||| So an answer is a decision the crew
+makes once. || Everything else lets them put it off, or look back at it. ||"
 
-### 8. Lint (14:30 - 16:15)
+### 8. What lint cannot see
 
-**Screen:** Terminal: `sbs lint MyMission`, clean. Misspell `report_in` after `completes`,
-lint, show the warning, undo. Change `@ives` to `@ivse`, lint, show the warning, undo.
-Change `Priority` to `Priorty`, lint, undo. Then change `@ives` to `@Chief Ives`, lint:
-clean. Undo. Delete `; completes report_in` from the answer, lint: clean. Undo.
+**Screen:** Take `; completes report_in` off the answer. Save. Lint: clean. Put it back.
+Then type `Beat` back into Report to DS 1. Lint: clean. Take it out. Show the table on
+the page.
 
-**Say:** "Lint. Clean. A key that is not a quest: it tells you the answer does nothing. A
-voice that is nobody in the cast. A field it does not know. Now two it cannot see. His
-name where his key goes: clean, and his block is gone. And an answer that finishes
-nothing: clean, and the job never ends. Those two you check by eye. The page has the
-whole list."
+**Say:** "Lint names ten mistakes in this lecture, | and the page lists them. || These two
+it can't see. || If I take the completes off the answer, lint says clean, | and the step
+can never be finished. ||| And if I leave the Beat line in, lint says clean again. || The
+step still works and pays, | but the crew is never told to report. || So check both of
+those with your own eyes. ||"
 
-### 9. Play it (16:15 - 19:00)
+### 9. Play it
 
-**Screen:** Server, Helm and Comms. Fly inside 500. Take the job. Show the quest list.
-Wait for the beacon. Show Report to DS 1 in the list and the new call. Open it, Continue,
-then Back. Show the call back in the list and the step still running. Open again,
-Continue, answer. Show the step done and the log line. Open the Hails tab.
+**Screen:** Server, Helm and Comms. The hulk, the first call, We will tag her. The Quest
+Log: Tag the Hulk. Wait. Report to DS 1 appears; the new call. Open it: Quill. Continue:
+Ives. Back. Open again. Continue. The answer. The credits. The ship's log line.
 
-**Say:** "We will tag her. The job is running. Thirty seconds. Done, and not paid. The
-list says report to DS 1, and there is the call. Quill. Continue. Chief Ives. Now Back.
-The call is waiting, the step is waiting. Open it again: it starts with her. Continue.
-It is ours. Paid. One line in the log. And here, every call we have had, to read again."
+**Say:** "Let's play it through. || I take the job, the way we did last time. || Thirty
+seconds later the beacon is set, | and there's my new step, telling me to report. || And
+there's the call. ||| It opens on Quill, | and when I press Continue, that's Chief Ives.
+|| I press Back, and the call waits, and so does the step. || I open it again, and this
+time I give the answer. || The step is done, and now the job has paid. ||"
 
-### 10. Your turn (19:00 - 19:40)
+### 10. Your turn
 
 **Screen:** The exercise on the companion page.
 
-**Say:** "Your second call, the one your timer places. Turn its beat into a step the crew
-can see, make every ending finish it, and put a second voice on the line. Then break it
-on purpose, so you have seen what a call that finishes nothing looks like. Next time:
-reputation."
+**Say:** "Now it's your turn: put more voices on your calls. || Give Ives a block in the
+first call, | and let Captain Sable listen in on the offer. || Then break the report on
+purpose, and watch what lint doesn't say. ||| Next time, a side that remembers what the
+crew did. ||"

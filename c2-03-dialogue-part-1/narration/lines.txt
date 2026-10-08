@@ -1,60 +1,85 @@
-s01_cold_open_0	Nobody fired a shot there.
-s01_cold_open_1	Somebody called, and said something.
-s01_cold_open_2	That is a scene: a character, a few lines, and enough different ways to say them that it does not sound like a recording.
-s01_cold_open_3	Today you write one, and the station calls your crew with it.
-s02_someone_to_speak_0	A scene needs a speaker, and a speaker is a character.
-s02_someone_to_speak_1	You made characters last time.
-s02_someone_to_speak_2	Mine is Quill, who runs traffic on the station.
-s02_someone_to_speak_3	Look at the word in round brackets.
-s02_someone_to_speak_4	That is her key.
-s02_someone_to_speak_5	From here on, nothing calls her Quill, or Harbormaster.
-s02_someone_to_speak_6	Everything calls her by her key.
-s02_someone_to_speak_7	Small letters, no spaces.
-s03_the_scene_0	A new section, Dialogue.
-s03_the_scene_1	Its key is the word dialogue, in small letters, and that matters later.
-s03_the_scene_2	Then the scene: three hashes, a name for my own use, and a key.
-s03_the_scene_3	Speaker: her key.
-s03_the_scene_4	When: hail, which means this is a call coming in to the ship.
-s03_the_scene_5	Title: what the call is about.
-s03_the_scene_6	The crew reads that before they answer.
-s03_the_scene_7	And then what she says.
-s04_takes_0	Three lines, each starting with a percent sign.
-s04_takes_1	She does not say all three.
-s04_takes_2	She says one.
-s04_takes_3	Each of these is a take: a different way to say the same thing, and the game picks one by chance each time. Three rules.
-s04_takes_4	A take is one line in the file.
-s04_takes_5	If I press Enter in the middle of it, like this, I have made two takes, and one day the crew gets half a sentence.
-s04_takes_6	Takes are alternatives, not a list.
-s04_takes_7	And plain keyboard characters only: no curly quotes, no long dashes, and never a curly bracket at the start of a take.
-s05_a_second_thing_0	So how does she say two things? Blocks.
-s05_a_second_thing_1	An at sign and her key starts a block.
-s05_a_second_thing_2	Three takes in the first, two in the second.
-s05_a_second_thing_3	The game takes one from each, so this little scene can read six ways.
-s05_a_second_thing_4	The crew reads the first, presses Continue, reads the second.
-s05_a_second_thing_5	Her key, not her name.
-s05_a_second_thing_6	And one voice in a scene, for now.
-s06_placing_the_call_0	A scene is words on a page until the story places the call.
-s06_placing_the_call_1	I want it to come when the crew finishes Close Inspection.
-s06_placing_the_call_2	So that quest gets one more line: then, reveal ds1_calls.
-s06_placing_the_call_3	And here is ds1_calls.
-s06_placing_the_call_4	The word Beat, alone on the first line, says this is a moment in the story and not a job, so it stays out of the quest list.
-s06_placing_the_call_5	It starts when it is revealed.
-s06_placing_the_call_6	And Action is what happens the moment it starts: two spaces, a dash, then who calls, the word hails, and the key of the scene.
-s06_placing_the_call_7	Starts when revealed is what makes her wait.
-s06_placing_the_call_8	Leave it out, and she calls the moment the game begins.
-s07_lint_0	Lint. Clean.
-s07_lint_1	It catches a speaker who is nobody.
-s07_lint_2	It catches a call to a scene that is not there.
-s07_lint_3	It does not catch this: a capital letter in the section key.
-s07_lint_4	Clean, and the call would never come.
-s07_lint_5	So four names get checked by eye: her key, the scene's key, the beat's key, and the two section keys, which have to be exactly characters and dialogue.
-s07_lint_6	The table is on the page.
-s08_play_it_0	In close.
-s08_play_it_1	The quest completes, and there she is: Harbormaster Quill, about that hulk. Open it.
-s08_play_it_2	One of my three openings. Continue.
-s08_play_it_3	One of my two closings. Close.
-s08_play_it_4	And again, from the start.
-s08_play_it_5	Same scene, and it may not read the same.
-s09_your_turn_0	You have a quest that finishes on a timer, from Lecture 8.
-s09_your_turn_1	Write a second scene, and have that quest reveal a second beat that calls it.
-s09_your_turn_2	Next time the crew gets to answer back.
+s01_cold_open_0	You've got a cast now,
+s01_cold_open_1	and so far nobody has said a word.
+s01_cold_open_2	Today the harbormaster picks up the microphone.
+s01_cold_open_3	When the crew gets close to the hulk, she calls the ship,
+s01_cold_open_4	and what she says is different from one game to the next.
+s01_cold_open_5	It's one scene and one short record,
+s01_cold_open_6	all in your fact sheet.
+s02_the_scene_0	First, the last of the lines that Lecture 11 marked for Class 2.
+s02_the_scene_1	It reads every scene in a section called dialogue,
+s02_the_scene_2	so that's the section I write.
+s02_the_scene_3	A scene is a record, like everything else.
+s02_the_scene_4	Speaker is who's talking, and it takes her key.
+s02_the_scene_5	When hail means this is a call that comes in to the ship.
+s02_the_scene_6	And the title is what the call is about,
+s02_the_scene_7	which the crew reads before they answer.
+s02_the_scene_8	Below the fence come the lines she says,
+s02_the_scene_9	and each one starts with a percent sign.
+s03_takes_0	I wrote three of those lines,
+s03_takes_1	but she won't say all three.
+s03_takes_2	Each one is a take,
+s03_takes_3	which means one way of saying the same thing.
+s03_takes_4	Every time the scene plays, the game picks one.
+s03_takes_5	So write two or three,
+s03_takes_6	and she stops sounding like a recording.
+s03_takes_7	Just keep each take on one line,
+s03_takes_8	however long it gets.
+s04_a_second_thing_to_say_0	But what if she has two things to say, one after the other?
+s04_a_second_thing_to_say_1	Then I write blocks.
+s04_a_second_thing_to_say_2	A block starts with an at sign and her key,
+s04_a_second_thing_to_say_3	with nothing else on that line.
+s04_a_second_thing_to_say_4	So here's her greeting,
+s04_a_second_thing_to_say_5	and here's her question.
+s04_a_second_thing_to_say_6	The game takes one take from each block.
+s04_a_second_thing_to_say_7	The crew reads the first, presses Continue,
+s04_a_second_thing_to_say_8	and reads the second.
+s05_nobody_calls_yet_0	Lint is clean, and yet if I played this now, nobody would call.
+s05_nobody_calls_yet_1	A scene is only words on a page
+s05_nobody_calls_yet_2	until something in the story places the call.
+s05_nobody_calls_yet_3	And the thing that places it lives up here, among my quests.
+s06_the_beat_0	It's a record with three hashes,
+s06_the_beat_1	so it stands by itself, outside the arc.
+s06_the_beat_2	The first line of the fence is the word Beat,
+s06_the_beat_3	alone, the way the word Arc was in Lecture 9.
+s06_the_beat_4	A beat is a moment in the story.
+s06_the_beat_5	It isn't a job, and it's not in the Quest Log.
+s06_the_beat_6	Now, when does the moment come?
+s06_the_beat_7	Until today, after Starts when,
+s06_the_beat_8	you've written at once, or revealed.
+s06_the_beat_9	But that line takes the same words as Done when.
+s06_the_beat_10	So I write reach, derelict, five hundred,
+s06_the_beat_11	and those are the very words that finish Close Inspection.
+s06_the_beat_12	Then Action, which is what happens when the beat starts.
+s06_the_beat_13	On the next line, two spaces and a dash,
+s06_the_beat_14	and then who calls, the word hails, and the scene's key.
+s07_what_lint_cannot_see_0	Lint knows this lecture well,
+s07_what_lint_cannot_see_1	and the page has its tables.
+s07_what_lint_cannot_see_2	But two mistakes get past it, and you'll make both.
+s07_what_lint_cannot_see_3	If I leave out the Starts when line, lint says clean,
+s07_what_lint_cannot_see_4	and the call arrives the moment the game starts.
+s07_what_lint_cannot_see_5	And if I write her name after the at sign, in place of her key,
+s07_what_lint_cannot_see_6	lint says clean again.
+s07_what_lint_cannot_see_7	Now that line isn't the start of a block,
+s07_what_lint_cannot_see_8	so it becomes one more take,
+s07_what_lint_cannot_see_9	and every so often she says it out loud.
+s08_play_it_0	Here's Comms before I've flown anywhere,
+s08_play_it_1	and nobody is calling.
+s08_play_it_2	So in we go, toward the hulk.
+s08_play_it_3	Close Inspection is done,
+s08_play_it_4	and there's the call, with her name and my title.
+s08_play_it_5	I open it, and there she is,
+s08_play_it_6	with one of my three greetings.
+s08_play_it_7	I press Continue, and she asks her question.
+s08_play_it_8	Then Close, and the call is over.
+s09_back_and_again_0	Two more things to see.
+s09_back_and_again_1	This time I open the call and press Back,
+s09_back_and_again_2	and it goes back in the list, unanswered.
+s09_back_and_again_3	So Comms can read a call
+s09_back_and_again_4	and save it for when the captain is ready.
+s09_back_and_again_5	And when I start the mission over,
+s09_back_and_again_6	the takes are picked again,
+s09_back_and_again_7	so she may greet me with a different line.
+s10_your_turn_0	Now it's your turn: give her a second call.
+s10_your_turn_1	Write a second scene,
+s10_your_turn_2	and a second beat that starts at the lifeboat.
+s10_your_turn_3	Next time, the crew gets to answer her.

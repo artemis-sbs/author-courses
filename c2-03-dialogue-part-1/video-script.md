@@ -1,152 +1,198 @@
 # C2-3 video script - Dialogue, part 1
 
-Target length: 17 minutes. One continuous screen recording with voice-over, cut at scene
-boundaries. The companion page is `lesson.md`; the finished files are in `example\`.
+> **STATE ON 2026-10-08. Read this first.**
+>
+> - **Everything this page needs is released.** The page is written for Artemis Cosmos
+>   1.4.0, installed from Steam or itch.io, with a current tool and libraries.
+> - **The student's mission is `MyMission`** as Lecture 2 of this class left it
+>   (`c2-02-characters-and-faces\example\mission.amd`, with Lecture 1's `story.mast`). The
+>   game is started with `sbs run server,helm,comms -m MyMission map=0`.
+> - **`example\` holds the one file that differs from that start:** `mission.amd`.
+> - **What changed from the first version of this lecture.** The class now chains, so
+>   Close Inspection is a step of the arc Salvage Run, and its one `Then:` line is spent on
+>   Find the Lifeboat. The beat that places the call therefore starts on a trigger of its
+>   own, `Starts when: reach derelict 500`, in place of `Starts when: revealed` and a
+>   `Then: reveal` on the quest. Three ways were tried in the mock: this one; `Action:`
+>   typed on Find the Lifeboat; and a beat revealed by Quick Work. All three place the
+>   call at the hulk and leave the story's win alone. This one was chosen because it
+>   needs no edit to any other record and does not fail when the bonus does. The
+>   Characters section, and the two lines of `story.mast` the first version pasted, are
+>   already there.
+> - **A trigger after `Starts when:` works on a beat only** (measured). On a record with
+>   no `Beat` word the same line starts nothing: the record is listed under Available
+>   Quests and no call is placed. The page says so, in Step 4 and in its tables.
+
+
+> **Re-measured 2026-10-08, in the mock.** Tool as installed in `data\missions`, library
+> as packaged in `__lib__` (sbs_utils `ae2bbf4a`). The page's steps were applied one at a
+> time to the Lecture 2 example with lint after each. Then one-change variants of the
+> finished file: each linted, each played headless by a probe that puts the ship 300 from
+> the hulk, reads the rows the Comms hail list would show (the same function the list
+> calls), opens the call and presses what the list offers. Every line of tool output in a
+> code block on the page is a line a run printed (`verify_page.py`).
+
+> **CHECKED IN THE REAL ENGINE, 2026-10-03, by a script, on the first version** (a server
+> and a Comms console; the script called the game's own functions and wrote what they
+> returned to a file): no call before the quest finished; one call after; the row
+> `Harbormaster Quill - About that hulk`; she has a face; one take from each block; the
+> list titled `Incoming Hails`, then her name while the call is open; `Back` and
+> `Continue`, then `Back` and `Close`; a take with curly brackets is drawn. The scene has
+> not changed since. What starts the beat has: `Starts when: reach derelict 500` on a beat
+> has NOT been run in the engine. In Class 1 the engine finished `Done when: reach
+> derelict 500` for a ship put 300 from the hulk.
+
+The companion page is `lesson.md`; the finished file is in `example\`.
 
 ## Before recording
 
 | Item | State needed |
 |---|---|
-| Mission | The Class 1 mission with **Close Inspection** from Lecture 8. Lint clean. No Dialogue section yet |
-| Characters | Either none, or the Characters section from Lecture 2. The script types Harbormaster Quill on camera; if Lecture 2 already made her, show her and skip the typing |
-| Library | A build with the fixes of 2026-10-03 evening (an `Action:` on a quest that starts at once; curly brackets in a take). Committed, not yet released |
-| Template | The mission must come from the `amd` template that already reads the Characters and Dialogue sections (build item B53: fixed in the starter repo, not yet pushed). An older mission needs the two card lines this lesson used to teach |
-| VS Code | `MyMission` folder open, `mission.amd` in one tab |
+| Mission | `MyMission` as Lecture 2 leaves it: `mission.amd` ends with Captain Sable's description, and Quick Work is the last record of the Quests section |
+| Lint | `sbs lint MyMission` says `clean` |
+| VS Code | `MyMission` folder open, `mission.amd` in one tab scrolled to the end, `story.mast` in another at line 49 |
+| Command prompt | Open in `data\missions`, cleared |
+| Logs | `mast.compile.log` and `mast.runtime.log` empty, or deleted |
 | Game | Closed. Started on camera in scene 8 with a server, a Helm console and a Comms console |
 
 ## Confirm on camera
 
-Run in the real engine on 2026-10-03 with a server and a Comms console, by a script that
-called the game's own functions and wrote what they returned to a file. Every line below
-was the same in the engine as in the headless runs. Nobody has seen a screen.
+"Lint" is the installed tool. "Mock" is a headless play with the packaged library.
+"Engine" is the run of 2026-10-03 in the note above. If an item fails while recording,
+stop and fix the page.
 
-What the runs showed:
+1. Lint is `clean` after Step 1, Step 3 and Step 4. (Lint.)
+2. With the scene written and no beat, no call is ever placed. (Mock.)
+3. On the finished file: no call waits at the start. With the ship 300 from the hulk,
+   Close Inspection completes and one call waits, on the row `Harbormaster Quill - About
+   that hulk`. (Mock. Engine, with the first version's beat.)
+4. Opened, the list is titled `Harbormaster Quill`, she has a face, and the rows are
+   `Back` and `Continue`; then `Back` and `Close`. One take from each block is said.
+   (Mock, Engine.)
+5. `Back` returns the call to the list. Twenty seconds later it is still there. Opened
+   again it starts at her first block with the same takes. (Mock.)
+6. Over four plays with different seeds, more than one opening take came up. (Mock.)
+7. DS 1 Calls is not in the list the Quest Log is filled from, before or after the call.
+   (Mock.)
+8. The whole story still plays to its win with the call answered: 500 credits. (Mock.)
+9. Every row of the four tables in Step 5. (Lint for all, Mock for all.)
+10. The exercise: a second beat with `Starts when: reach lifeboat 500` places a second
+    call at the lifeboat. (Lint, Mock.)
 
-- No call is waiting before Close Inspection completes, or at 1500 from the hulk. At 300
-  the quest completes and one call is waiting.
-- The words on its row are `Harbormaster Quill - About that hulk`.
-- Opened, the speaker is Harbormaster Quill, she has a face, and two things are said: one
-  take from the first block, then one from the second.
-- Over six plays of a three-take scene, all three takes came up.
-- DS 1 Calls is not in the quest list before or after.
-- On the Comms console, the list is titled `Incoming Hails`
-  while a call waits and `Harbormaster Quill` while it is open. Its rows are the call,
-  then `Back` and `Continue`, then `Back` and `Close`. `Back` returns the call to the
-  list, and it opens again from the first block with the same takes.
-- That console's placement dial read `both`.
-
-Not seen by anyone. If one of these is not as described, stop and fix the page:
+Not seen by anyone, and to watch for while recording:
 
 1. The Incoming Hails list on a real Comms console, and where on the screen it sits.
-2. The open call: her face, the title, her name, the line. The code builds all four; none
-   has been seen drawn.
-3. The call on the main screen as well as on Comms. The dial's default says it should be.
-4. Which comes first for the crew: the "quest complete" notice or the call.
-5. Her face from one game to the next. `Face: terran_female` gives a new face of that kind
-   each game. If that looks wrong on camera, Lecture 2 has to teach a fixed face.
-6. The second game showing a different take. It is chance, so it can take a few tries.
-
-Known, and kept out of the lesson on purpose:
-
-- A second voice in the same call (`@vance` after `@quill`) is drawn under the first
-  speaker's name (build item B51). The lesson says one voice in a scene.
-- A take that BEGINS with a curly bracket is read as a condition and never used. Curly
-  brackets elsewhere in a take used to crash the screen that draws the call; that was
-  seen in the engine and is fixed (B50), but has not been seen drawn since.
+2. The open call: her face, the title, her name, the line.
+3. The call on the main screen as well as on Comms.
+4. Which the crew notices first: Close Inspection showing `Done`, or the call.
+5. A second game showing a different take. It is chance, so it can take a few tries.
+6. What a caller with no portrait looks like (`Face: woman`).
 
 ## Scenes
 
-### 1. Cold open (0:00 - 0:50)
+### 1. Cold open
 
-**Screen:** The Comms console. One row in the Incoming Hails list. Select it. Quill's
-face and a line. Continue. A second line. Close.
+**Screen:** The Comms console. The ship closes on the hulk. A row appears in the hail
+list: Harbormaster Quill - About that hulk. It opens: her face, her line.
 
-**Say:** "Nobody fired a shot there. Somebody called, and said something. That is a scene:
-a character, a few lines, and enough different ways to say them that it does not sound
-like a recording. Today you write one, and the station calls your crew with it."
+**Say:** "You've got a cast now, | and so far nobody has said a word. || Today the
+harbormaster picks up the microphone. || When the crew gets close to the hulk, she calls
+the ship, | and what she says is different from one game to the next. ||| It's one scene
+and one short record, | all in your fact sheet. ||"
 
-### 2. Someone to speak (0:50 - 2:30)
+### 2. The scene
 
-**Screen:** `mission.amd`, end of the file. Type the Characters section and Harbormaster
-Quill. Point at `(quill)`.
+**Screen:** `story.mast`, line 49 highlighted. Then `mission.amd`, the end of the file. Two
+blank lines. Type the note, the section line and the scene with three takes. Save. Lint:
+clean.
 
-**Say:** "A scene needs a speaker, and a speaker is a character. You made characters last
-time. Mine is Quill, who runs traffic on the station. Look at the word in round brackets.
-That is her key. From here on, nothing calls her Quill, or Harbormaster. Everything calls
-her by her key. Small letters, no spaces."
+**Say:** "First, the last of the lines that Lecture 11 marked for Class 2. || It reads
+every scene in a section called dialogue, | so that's the section I write. ||| A scene is
+a record, like everything else. || Speaker is who's talking, and it takes her key. || When
+hail means this is a call that comes in to the ship. || And the title is what the call is
+about, | which the crew reads before they answer. || Below the fence come the lines she
+says, | and each one starts with a percent sign. ||"
 
-### 3. The scene (2:30 - 5:15)
+### 3. Takes
 
-**Screen:** Type the Dialogue section heading, the scene heading, the fence, and three `%`
-lines. Point at each fence line as it is named.
+**Screen:** Highlight the three `%` lines one after another. Then the three rules on the
+page.
 
-**Say:** "A new section, Dialogue. Its key is the word dialogue, in small letters, and
-that matters later. Then the scene: three hashes, a name for my own use, and a key.
-Speaker: her key. When: hail, which means this is a call coming in to the ship. Title:
-what the call is about. The crew reads that before they answer. And then what she says."
+**Say:** "I wrote three of those lines, | but she won't say all three. || Each one is a
+take, | which means one way of saying the same thing. || Every time the scene plays, the
+game picks one. ||| So write two or three, | and she stops sounding like a recording. ||
+Just keep each take on one line, | however long it gets. ||"
 
-### 4. Takes (5:15 - 7:30)
+### 4. A second thing to say
 
-**Screen:** Highlight the three `%` lines. Then break the second one onto two lines, pause,
-and undo it.
+**Screen:** Type `@quill` above the three takes. Blank line. Type the second `@quill`
+block. Save. Lint: clean.
 
-**Say:** "Three lines, each starting with a percent sign. She does not say all three. She
-says one. Each of these is a take: a different way to say the same thing, and the game
-picks one by chance each time. Three rules. A take is one line in the file. If I press
-Enter in the middle of it, like this, I have made two takes, and one day the crew gets
-half a sentence. Takes are alternatives, not a list. And plain keyboard characters only:
-no curly quotes, no long dashes, and never a curly bracket at the start of a take."
+**Say:** "But what if she has two things to say, one after the other? || Then I write
+blocks. || A block starts with an at sign and her key, | with nothing else on that line.
+|| So here's her greeting, | and here's her question. ||| The game takes one take from
+each block. || The crew reads the first, presses Continue, | and reads the second. ||"
 
-### 5. A second thing (7:30 - 9:15)
+### 5. Nobody calls yet
 
-**Screen:** Add `@quill` above the three takes. Add a blank line, a second `@quill`, and
-two more takes.
+**Screen:** Lint, clean. Then the Quests section: scroll to Quick Work, the last record.
 
-**Say:** "So how does she say two things? Blocks. An at sign and her key starts a block.
-Three takes in the first, two in the second. The game takes one from each, so this little
-scene can read six ways. The crew reads the first, presses Continue, reads the second.
-Her key, not her name. And one voice in a scene, for now."
+**Say:** "Lint is clean, and yet if I played this now, nobody would call. || A scene is only
+words on a page | until something in the story places the call. || And the thing that
+places it lives up here, among my quests. ||"
 
-### 6. Placing the call (9:15 - 11:45)
+### 6. The beat
 
-**Screen:** Scroll up to Close Inspection. Add `Then: reveal ds1_calls`. Below it, type
-the DS 1 Calls record. Point at `Beat`, then at the two spaces and the dash.
+**Screen:** Below Quick Work's description, a blank line, then type DS 1 Calls. Highlight
+`Beat`, then `Starts when: reach derelict 500`, then the two `Action:` lines. Save. Lint:
+clean.
 
-**Say:** "A scene is words on a page until the story places the call. I want it to come
-when the crew finishes Close Inspection. So that quest gets one more line: then, reveal
-ds1_calls. And here is ds1_calls. The word Beat, alone on the first line, says this is a
-moment in the story and not a job, so it stays out of the quest list. It starts when it is
-revealed. And Action is what happens the moment it starts: two spaces, a dash, then who
-calls, the word hails, and the key of the scene. Starts when revealed is what makes her
-wait. Leave it out, and she calls the moment the game begins."
+**Say:** "It's a record with three hashes, | so it stands by itself, outside the arc. ||
+The first line of the fence is the word Beat, | alone, the way the word Arc was in Lecture
+9. || A beat is a moment in the story. | It isn't a job, and it's not in the Quest Log.
+||| Now, when does the moment come? || Until today, after Starts when, | you've written at once,
+or revealed. ||
+ But that line takes the same words as Done when. || So I write
+reach, derelict, five hundred, | and those are the very words that finish Close
+Inspection. ||| Then Action, which is what happens when the beat starts. || On the next
+line, two spaces and a dash, | and then who calls, the word hails, and the scene's key.
+||"
 
-### 7. Lint (11:45 - 13:30)
+### 7. What lint cannot see
 
-**Screen:** Terminal: `sbs lint MyMission`, clean. Change `Speaker: quill` to
-`Speaker: quil`, lint, show the warning, undo. Change `quill_hello` in the Action line to
-`quill_helo`, lint, show the warning, undo. Change the section key to `(Dialogue)` with a
-capital, lint: still clean. Undo.
+**Screen:** In the beat, delete the `Starts when:` line. Save. Lint: clean. Show the row
+on the page. `Ctrl+Z`. Then change `@quill` in the second block to `@Harbormaster Quill`.
+Lint: clean. `Ctrl+Z`. Lint: clean.
 
-**Say:** "Lint. Clean. It catches a speaker who is nobody. It catches a call to a scene
-that is not there. It does not catch this: a capital letter in the section key. Clean,
-and the call would never come. So four names get checked by eye: her key, the scene's
-key, the beat's key, and the two section keys, which have to be exactly characters and
-dialogue. The table is on the page."
+**Say:** "Lint knows this lecture well, | and the page has its tables. || But two mistakes
+get past it, and you'll make both. || If I leave out the Starts when line, lint says
+clean, | and the call arrives the moment the game starts. ||| And if I write her name
+after the at sign, in place of her key, | lint says clean again. || Now that line isn't
+the start of a block, | so it becomes one more take, | and every so often she says it out
+loud. ||"
 
-### 8. Play it (13:30 - 16:00)
+### 8. Play it
 
-**Screen:** Server, Helm and Comms. Fly to the hulk, inside 500. Close Inspection
-completes. On Comms: the Incoming Hails row. Select it. Continue. Close. Then restart the
-mission, fly in again, and open the call a second time.
+**Screen:** Server, Helm and Comms. Comms: the empty list. Helm: fly inside 500 of the
+hulk. Comms: the row. Select it: her face, her line. Continue. Close.
 
-**Say:** "In close. The quest completes, and there she is: Harbormaster Quill, about that
-hulk. Open it. One of my three openings. Continue. One of my two closings. Close. And
-again, from the start. Same scene, and it may not read the same."
+**Say:** "Here's Comms before I've flown anywhere, | and nobody is calling. || So in we
+go, toward the hulk. || Close Inspection is done, | and there's the call, with her name
+and my title. || I open it, and there she is, | with one of my three greetings. || I
+press Continue, and she asks her question. || Then Close, and the call is over. ||"
 
-### 9. Your turn (16:00 - 16:45)
+### 9. Back, and again
+
+**Screen:** Start again. Open the call, press Back: the row is in the list again. Open it.
+Then a third start: a different opening take.
+
+**Say:** "Two more things to see. || This time I open the call and press Back, | and it
+goes back in the list, unanswered. || So Comms can read a call | and save it for when the
+captain is ready. ||| And when I start the mission over, | the takes are picked again, |
+so she may greet me with a different line. ||"
+
+### 10. Your turn
 
 **Screen:** The exercise on the companion page.
 
-**Say:** "You have a quest that finishes on a timer, from Lecture 8. Write a second scene,
-and have that quest reveal a second beat that calls it. Next time the crew gets to answer
-back."
+**Say:** "Now it's your turn: give her a second call. || Write a second scene, | and a
+second beat that starts at the lifeboat. ||| Next time, the crew gets to answer her. ||"

@@ -9,6 +9,18 @@
 
 # [Sample Mission](sample_mission)
 
+// ---- Words this file shares with story.mast. Keep this list true.
+// ROLE    derelict          worn by the Unknown Hulk
+// ROLE    ghost_ship        worn by the Unknown Hulk
+// ROLE    lifeboat          worn by The Lifeboat, a landmark in this file
+// ROLE    tug               worn by the Salvage Tug, once it arrives
+// ROLE    home              worn by DS 1, and by nothing else
+// ROLE    cutter            worn by the Breaker Cutter, a landmark in this file
+// ROLE    yard              worn by the Guild Yard, a landmark in this file
+// SIGNAL  ghost_ship_found  said when a ship comes within 2000 of the hulk
+// SIGNAL  derelict_scanned  said when Science scans anything that wears derelict
+// SIGNAL  tug_arrived       said twenty seconds after Wait for the Tug starts
+
 
 // ---- Quests. Nested records are steps of the arc above them, addressed `arc/step`.
 ## [Quests](quests)
@@ -19,13 +31,13 @@ Arc
 Scope: shared
 Starts when: at once
 ---
-A derelict has drifted into the sector. Find out what happened to it.
+A dead ship has drifted across the border. Nobody sent her, and nobody will say whose she is.
 
 #### [Find the Derelict](find)
 ---
 Scope: shared
 Starts when: at once
-Done when: signal derelict_found
+Done when: signal ghost_ship_found
 Then: reveal first_contact/study
 ---
 Fly out and locate the drifting hulk.
@@ -111,7 +123,6 @@ Reward: 50 credits
 ---
 Optional. DS 1 pays a bonus for a fast approach.
 
-
 // ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
 // it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
 // several readings picked at random - so a second scan does not read identically.
@@ -131,6 +142,13 @@ Scan of: derelict
 Tab: mat
 ---
 % Scoring along the plating matches no weapon in use in this sector.
+
+### [Derelict Intel](derelict_intel)
+---
+Scan of: ghost_ship
+Tab: intel
+---
+% No flight plan was ever filed for this ship. Somebody wanted her forgotten.
 
 ### [Derelict Life Signs](derelict_bio)
 ---
@@ -171,7 +189,7 @@ The hulk's lifeboat. It left her with the flight log aboard.
 
 ### [Breaker Cutter](cutter)
 ---
-Kind: npc
+Kind: ship
 Side: breaker
 Roles: cutter
 Art: pirate_strongbow
