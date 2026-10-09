@@ -19,7 +19,7 @@ Arc
 Scope: shared
 Starts when: at once
 ---
-A derelict has drifted into the sector. Find out what happened to it.
+A dead ship has drifted across the border. Nobody sent her, and nobody will say whose she is.
 
 #### [Find the Derelict](find)
 ---
@@ -58,3 +58,10 @@ Scan of: derelict
 Tab: mat
 ---
 % Scoring along the plating matches no weapon in use in this sector.
+
+### [Derelict Intel](derelict_intel)
+---
+Scan of: derelict
+Tab: intel
+---
+% No flight plan was ever filed for this ship. Somebody wanted her forgotten.

@@ -47,8 +47,8 @@ Please do not spend your time on these:
   developer's, with more missions than you will have. A few game pictures show a folder
   named `_pic_probe`.
 - **Version numbers** on screen may be newer or older than yours.
-- **Lecture 6** was measured on a slightly different starting file from the one Lecture 5
-  leaves you with. One of its five examples prints more findings than the page shows.
+- **Lecture 6's video** shows three findings for the last example. The page shows six,
+  and the page is right: the video was made from an older starting file.
 - **Classes 2 to 6** are not published. Their drafts are in the repository for the curious.
 
 ## What happens to your report

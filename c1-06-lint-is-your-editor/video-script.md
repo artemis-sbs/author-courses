@@ -51,13 +51,19 @@
 
 Target length: 18 minutes. One continuous screen recording with voice-over, cut at scene
 boundaries. The companion page is `lesson.md`. The finished files are in `example\`, and
-they are the untouched template: this lesson ends where it began.
+they are Lecture 5's finished files: this lesson ends where it began.
+
+> **2026-10-08:** every break was run again on Lecture 5's finished file (the student's
+> real start). All line numbers hold. The last break, one hash on Derelict Hull, prints
+> six findings there, not three, because Lecture 5 added a record below it. Page and
+> script now say six. THE PUBLISHED VIDEO STILL SAYS AND SHOWS THREE: scene 8 needs a new
+> take and a new capture.
 
 ## Before recording
 
 | Item | State needed |
 |---|---|
-| Mission | A fresh mission from the `amd` template, `MyMission`, nothing edited. Line numbers on the page depend on that |
+| Mission | `MyMission` as Lecture 5 leaves it: its `mission.amd` matches `c1-05-the-shape-of-a-record\example\`. Line numbers on the page depend on that |
 | Starter template | The local `amd` template (starter repo `60c30bc`). `example\mission.amd` is the same file with plain line endings; the lint lines are the same either way (measured) |
 | Library | sbs_utils `0c4c0fae` or later, LegendaryMissions `298ffb3`, as built into `data\missions\__lib__` |
 | `sbs` | 0.12 or later: `sbs version` prints the number, `sbs update` fetches the newest |
@@ -226,8 +232,8 @@ sentence tell you where to look. |||"
 ### 8. Break 5: the number of hashes
 
 **Screen:** Add a fourth hash to Derelict Hull. Save, lint. One error. Remove it. Lint:
-clean. Then take two hashes off, so the heading has one. Save, lint. Three findings.
-Highlight only the first. Point at line 55 in the file. Type the hashes back. Lint: clean.
+clean. Then take two hashes off, so the heading has one. Save, lint. Six findings.
+Highlight only the first. Point at lines 55 and 62 in the file. Type the hashes back. Lint: clean.
 
 **Say:** "The hashes say where a record sits. || So let's give this one a hash too many, |
 and that's one error. || This heading has four, | and the one it sits under has two. || And
@@ -235,11 +241,11 @@ look at what the game does about it: | it reads the heading as if it had three. 
 guess happens to be right, | so nothing is lost. ||| In break one, a warning stopped my
 story, | and here an error costs me nothing. || So I don't judge a finding by its level. | I
 read its sentence. ||| I take the extra hash off, | and now let's go the other way, down to
-one hash. || And that gives me three findings. ||| This is the point where people give up, |
+one hash. || And that gives me six findings. ||| This is the point where people give up, |
 so here's the rule: | read the first one only. || It's about line forty-seven, the line I
-changed, | and it says one hash starts a new title, so give it three. || The other two are
-about line fifty-five, | which is a record I never touched, | and their advice would
-actually make things worse. ||| So I put the hashes back, | and all three go at once. || Fix
+changed, | and it says one hash starts a new title, so give it three. || The others are
+about two records further down, | records I never touched, | and their advice would
+actually make things worse. ||| So I put the hashes back, | and all six go at once. || Fix
 the first finding, and then run lint again. |||"
 
 ### 9. What clean does not mean

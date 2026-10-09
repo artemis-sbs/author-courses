@@ -26,8 +26,8 @@ You will type in one file, `mission.amd`. At the end it is exactly as it was at 
 - A command prompt open in `data\missions`.
 - The game closed.
 
-If you added lines to `mission.amd` in Lecture 5, your line numbers will be a few higher
-than the ones on this page. Go by the words.
+The line numbers on this page are for the file Lecture 5 left you, with your Derelict
+Intel record at the end of it. If yours differ, go by the words.
 
 Words for this lecture:
 
@@ -343,24 +343,28 @@ Save. Run lint.
   [ERROR] line 47: `# [Derelict Hull](derelict_scan)` has 1 hash, and the next record (line 55) has 3. One hash starts a new title, so this record and the ones after it are no longer in their section. Give it 3 (heading-level-jump)
   [WARNING] line 55:6: `Derelict Materials` has 3 hashes, which makes it a section of its own, and nothing in this mission reads a section keyed `derelict_mat`. If it is a record, give its heading 4 hashes so it sits inside the section above it (section-not-loaded)
   [WARNING] line 55:6: `Derelict Materials` is nested under the scan record `Derelict Hull`, so it is not read. Give it the same number of hashes (scan-record-level)
+  [ERROR] line 62: `### [Derelict Intel](derelict_intel)` has 3 hashes and the heading it sits under has 1: 1 too many. The game reads it as if it had 2, which may not be the record you meant it to be (heading-level-jump)
+  [WARNING] line 62:6: `Derelict Intel` has 3 hashes, which makes it a section of its own, and nothing in this mission reads a section keyed `derelict_intel`. If it is a record, give its heading 4 hashes so it sits inside the section above it (section-not-loaded)
+  [WARNING] line 62:6: `Derelict Intel` is nested under the scan record `Derelict Hull`, so it is not read. Give it the same number of hashes (scan-record-level)
 
-1 amd + 1 mast file(s): 1 error(s), 2 warning(s)
+1 amd + 1 mast file(s): 2 error(s), 4 warning(s)
 ```
 
-One changed line made three findings.
+One changed line made six findings.
 
-Do not work through all three. Read the first one only.
+Do not work through all six. Read the first one only.
 
 The first is about line 47, the line you changed. It says what happened: one hash starts
 a new title, so this record and the ones after it are no longer in their section. It ends
 with the fix: `Give it 3`.
 
-The other two are about line 55. That is Derelict Materials, a record you did not touch,
-and it has nothing wrong with it. They are the same mistake seen from further down the
-file. Look at their advice: one says to give line 55 four hashes, and the other says to
-give it the same number as the record above. Do either, and you have two mistakes.
+The other five are about line 55 and line 62. Those are Derelict Materials and your own
+Derelict Intel, two records you did not touch, and they have nothing wrong with them.
+They are the same mistake seen from further down the file. Look at the advice for line
+55: one finding says to give it four hashes, and the other says to give it the same
+number as the record above. Do either, and you have two mistakes.
 
-Put the three hashes back on line 47. Save. Run lint: `clean`. All three are gone.
+Put the three hashes back on line 47. Save. Run lint: `clean`. All six are gone.
 
 **The rule: fix the first finding, then run lint again.** Never start from the bottom of
 the list.
@@ -391,7 +395,7 @@ lint's line.
 | Spaces in front of a heading | The same | `broken-heading`, an error |
 | `[Derelict Hull](derelict_scan)` (the hashes left off) | The same | `broken-heading`, an error. Its sentence gives the line to write |
 | `#### [Derelict Hull](derelict_scan)` (four hashes straight under two) | The game reads it as three. Nothing is lost. It writes one line in `mast.runtime.log` | `heading-level-jump`, an error |
-| `# [Derelict Hull](derelict_scan)` (one hash on a record) | The hulk has no scan text at all | Three findings. The first is `heading-level-jump`, an error, on that line |
+| `# [Derelict Hull](derelict_scan)` (one hash on a record) | The hulk has no scan text at all | Six findings. The first is `heading-level-jump`, an error, on that line |
 | The `#` title line at the top deleted, or typed with no brackets | Nothing in the file is read: no quests, no scan text | Four findings. The first is `heading-level-jump`, an error. It says there is no title, and shows how to write one |
 | `### [Find the Derelict](find)` (three hashes on a step) | Find the Derelict becomes a story of its own. Study the Derelict never appears, and First Contact never finishes | `dangling-reveal`, a warning, on the `Then:` line. Its sentence offers a line to write. Do not write it. Put the hash back |
 | `##### [Study the Derelict](study)` (five hashes on a step) | First Contact finishes as soon as Find the Derelict does. Study the Derelict never appears | `reveal-path`, a warning, on the `Then:` line |
@@ -558,8 +562,9 @@ Use the habit on your own words.
 
 1. Rewrite the three descriptions in the Quests section in your own words: First Contact,
    Find the Derelict, Study the Derelict. Keep the names and the keys as they are.
-2. Rewrite the three readings in the Scans section. Keep each one on a single line, with
-   its `%` in front.
+2. Rewrite the three readings the template gave you in the Scans section. The fourth,
+   under Derelict Intel, is already yours. Keep each one on a single line, with its `%`
+   in front.
 3. After each one: save, run lint, read the count line.
 4. When all six are done, play for a minute and read both logs.
 5. Then pick two rows from the tables in Step 7 that you have not tried. Make each

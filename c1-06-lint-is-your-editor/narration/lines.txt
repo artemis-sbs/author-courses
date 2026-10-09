@@ -105,17 +105,17 @@ s08_break_5_the_number_of_hashes_11	So I don't judge a finding by its level.
 s08_break_5_the_number_of_hashes_12	I read its sentence.
 s08_break_5_the_number_of_hashes_13	I take the extra hash off,
 s08_break_5_the_number_of_hashes_14	and now let's go the other way, down to one hash.
-s08_break_5_the_number_of_hashes_15	And that gives me three findings.
+s08_break_5_the_number_of_hashes_15	And that gives me six findings.
 s08_break_5_the_number_of_hashes_16	This is the point where people give up,
 s08_break_5_the_number_of_hashes_17	so here's the rule:
 s08_break_5_the_number_of_hashes_18	read the first one only.
 s08_break_5_the_number_of_hashes_19	It's about line forty-seven, the line I changed,
 s08_break_5_the_number_of_hashes_20	and it says one hash starts a new title, so give it three.
-s08_break_5_the_number_of_hashes_21	The other two are about line fifty-five,
-s08_break_5_the_number_of_hashes_22	which is a record I never touched,
+s08_break_5_the_number_of_hashes_21	The others are about two records further down,
+s08_break_5_the_number_of_hashes_22	records I never touched,
 s08_break_5_the_number_of_hashes_23	and their advice would actually make things worse.
 s08_break_5_the_number_of_hashes_24	So I put the hashes back,
-s08_break_5_the_number_of_hashes_25	and all three go at once.
+s08_break_5_the_number_of_hashes_25	and all six go at once.
 s08_break_5_the_number_of_hashes_26	Fix the first finding, and then run lint again.
 s09_what_clean_does_not_mean_0	Now for the honest part.
 s09_what_clean_does_not_mean_1	I leave myself a note,
