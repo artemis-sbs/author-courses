@@ -1,0 +1,272 @@
+// ---- The Kestrel Verge: session card. Keep this true.
+// CREW       One ship, new to the game. DIFFICULTY 4, "Quiet", "Dormant".
+// BUDGET     Worst system: The Bone Pile. 4 Gleaners + 3 guards + a battle line of 4 or 5.
+//            12 hostile ships, for one crew.
+// SITTING 1  Kestrel Relay (the levy, a job) -> The Tern -> Assay Office (the ledger).
+// SITTING 2  Continue at Assay Office -> The Bone Pile -> Break the Bone Pile.
+// WORDS      signal ledger_read   sent in dialogue\deepwell.amd, waited for by tern_ledger
+//            key goal_bone_pile   named on the card at the end of story.mast
+//            system -4, -3        The Bone Pile's At:, and the two numbers on that card
+//
+
+// One authored file holding a whole universe. Heading level sets the structure:
+//   #    the universe itself (its identity)
+//   ##   a chapter: Sides / Jobs / Narrative / Regions / ...
+//   ###  an entry within a chapter (one side, one job type, one story beat)
+//
+// Each heading's data lives between `---` fences as `Label: value` fact lines, and the
+// prose under the fence is what players read.
+//
+// Almost everything is optional. Reputation axes, standing tuning and the generation
+// dials all fall back to engine defaults when you leave them out - which is why this file
+// is short. Add chapters as you want them.
+
+# [The Kestrel Verge](kestrel_verge)
+---
+Universe
+Display: The Kestrel Verge
+Station mix: 8%
+Enemy mix: 12%
+Nebula mix: 20%
+Derelict chance: 60%
+---
+Past the last relay the charts are forty years old, and nobody has come to correct them.
+Three colonies were planted out here. Two still answer.
+
+## [Scenario](scenario)
+---
+Mode: story
+---
+
+
+// ---- The factions. Each heading key IS the side key. `Home` is a system coordinate on
+// the galaxy grid; `Offers` names the job types this side hands out.
+## [Sides](sides)
+
+### [Hollin Compact](hollin)
+---
+Color: #44aa66
+Character: settler
+Disposition: neutral
+Home: 0, 0
+Values: honest 40, generous 30
+Offers: patrol, escort, strike
+Flies: Arvonian
+---
+The first colony, and the one that farms. They keep the relay running because nobody else will.
+
+### [Deepwell Assembly](deepwell)
+---
+Color: #6688ff
+Character: trader
+Disposition: neutral
+Home: 3, 1
+Values: by-the-book 40, peaceful 20
+Offers: survey, relay_run
+Flies: 70% Ximni, 30% Arvonian
+---
+The second colony. Miners who sell what they dig and count every crate twice.
+
+### [The Gleaners](gleaners)
+---
+Color: #cc5522
+Character: pirate
+Disposition: foe
+Home: -3, -2
+Values: fearsome 40, resourceful 30
+Offers: salvage
+Flies: Torgoth
+---
+They strip dead ships for a living, and they have stopped waiting for ships to die.
+
+
+## [Captains](captains)
+
+### [Edda Brake](edda)
+---
+Side: hollin
+Title: the Relay Warden
+Values: honest 40, kind 20
+Roams: 0, 0
+---
+She has kept the lamp at Kestrel Relay for thirty years, and she remembers every ship that passed it.
+
+### [Sable Orrin](sable)
+---
+Side: gleaners
+Title: the Tallyman
+Values: honest 40, by-the-book 30
+Roams: -3, -2
+---
+The Gleaners' bookkeeper. She knows what every wreck in the Breakers fetched, and who was aboard when it stopped being a ship.
+
+
+// ---- Job types the sides above can offer. The engine generates the individual jobs;
+// these records say what KINDS exist and what they pay.
+## [Jobs](jobs)
+---
+File: jobs.amd
+---
+
+## [Regions](regions)
+
+### [The Hollin Fields](hollin_fields)
+---
+Center: 0, 0
+Radius: 2
+Skybox: sky1-blue
+Color: #44aa66
+Enemy mix: 0%
+Station mix: 25%
+---
+Farmed space. Lit lanes, slow freight, and nothing that shoots.
+
+### [The Breakers](the_breakers)
+---
+Center: -4, -3
+Radius: 1
+Skybox: sky-neb2-rvb
+Music: Artemis2
+Color: #cc5522
+Enemy mix: 60%
+Station mix: 0%
+Mine chance: 80%
+---
+Gleaner country. Every wreck out here was somebody's ship.
+
+## [Landmarks](landmarks)
+
+### [Kestrel Relay](kestrel_relay)
+---
+At: 0, 0
+Kind: station
+---
+The last relay anyone still maintains. Everything past it is rumor.
+
+### [Assay Office](assay_office)
+---
+At: 3, 1
+Kind: station
+Side: deepwell
+Art: starbase_industry
+---
+Where the Deepwell weighs what it digs. Nothing leaves this system uncounted.
+
+### [The Tern](the_tern)
+---
+At: 1, -2
+Kind: derelict
+Terrain: nebula blue
+Guards: pirate 2
+---
+The third colony's ship, still in orbit over the place it never landed.
+
+### [The Bone Pile](bone_pile)
+---
+At: -4, -3
+Kind: derelict
+Terrain: asteroids
+Guards: torgoth 7
+---
+Where the Gleaners stack what they cannot sell. They do not like it looked at.
+
+## [Goods](goods)
+
+### [Ore](ore)
+---
+Weight: 40
+---
+What the Deepwell digs. There is always more of it than anyone wants.
+
+### [Provisions](provisions)
+---
+Weight: 30
+---
+What Hollin grows.
+
+### [Tech](tech)
+---
+Weight: 10
+---
+Relay parts, forty years out of date and worth more every year.
+
+### [Contraband](contraband)
+---
+Weight: 5
+---
+Whatever the Gleaners would rather not explain.
+
+## [Narrative](narrative)
+
+### [The Second Colony](lead_deepwell)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 3, 1
+---
+The Deepwell Assembly keeps its books at (3, 1). Go and be counted.
+
+### [The Breaking Yard](lead_gleaners)
+---
+Scope: shared
+Starts when: at once
+Done when: reach -3, -2
+---
+The Compact says the Gleaners tow their wrecks to a yard at (-3, -2). Go and look, with shields up.
+
+### [The Third Colony](lead_tern)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 1, -2
+Then: reveal tern_ledger
+---
+The Tern never answered. Her last position was (1, -2). Go and see what is left of her.
+
+### [The Assay Ledger](tern_ledger)
+---
+Scope: shared
+Starts when: revealed
+Done when: signal ledger_read
+Then: reveal lead_bone_pile
+Reward: 200 credits
+---
+The Tern's holds are bare, and her log does not say who emptied them. The Deepwell count everything that moves. Hail the Assay Office at (3, 1) and ask.
+
+### [What the Gleaners Keep](lead_bone_pile)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach -4, -3
+Then: reveal goal_bone_pile
+Reward: 400 credits
+---
+The ledger has the Tern's cargo sold on by the Gleaners. There is a place at (-4, -3) they will not talk about. Go armed.
+
+## [Goals](goals)
+
+### [Break the Bone Pile](goal_bone_pile)
+---
+Scope: shared
+Starts when: revealed
+Done when: destroy 4 enemies
+Win: The Bone Pile is broken, and what was taken from the Tern is going home.
+Citation: Forty years late, the third colony has been counted.
+---
+The Tern's people are stacked here with her cargo. Four Gleaner hulls stand between you and them.
+
+## [Lifeforms](lifeforms)
+
+### [Kestrel Traffic](kestrel_traffic)
+---
+Face: terran
+Roles: hollin
+Scene: traffic_hail
+Color: #44aa66
+---
+The relay's duty voice. It answers on any channel, from anywhere in the Verge.
+
+## [Dialogue](dialogue)
+---
+File: dialogue/hollin.amd, dialogue/deepwell.amd, dialogue/gleaners.amd
+---

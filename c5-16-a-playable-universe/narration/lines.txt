@@ -1,0 +1,91 @@
+s01_cold_open_0	This is the last lecture of the class,
+s01_cold_open_1	and it doesn't teach you anything new.
+s01_cold_open_2	It asks you to finish.
+s01_cold_open_3	By the end you'll have played one whole evening
+s01_cold_open_4	in your own universe, with a list in your hand,
+s01_cold_open_5	and you'll know that every part of it works.
+s01_cold_open_6	You'll also know, honestly, what doesn't.
+s02_plan_the_evening_0	Don't start the game yet.
+s02_plan_the_evening_1	Write down where a crew will go, in order,
+s02_plan_the_evening_2	and what should happen at each place.
+s02_plan_the_evening_3	I've got six rows, in two sittings.
+s02_plan_the_evening_4	The relay, the Tern, and the Assay Office.
+s02_plan_the_evening_5	Then they save, and come back another night
+s02_plan_the_evening_6	for the Bone Pile.
+s02_plan_the_evening_7	I follow three rules.
+s02_plan_the_evening_8	Three places make an evening.
+s02_plan_the_evening_9	End a sitting somewhere safe,
+s02_plan_the_evening_10	because the save keeps the system the crew is in.
+s02_plan_the_evening_11	And put the save between the mystery and the fight,
+s02_plan_the_evening_12	so they leave knowing where to go next.
+s03_the_session_card_0	Now, ten lines of notes at the top of the main file.
+s03_the_session_card_1	Two slashes start a note, so the game doesn't read these.
+s03_the_session_card_2	They're there for people.
+s03_the_session_card_3	Who the game is for, and the three dials from the battles lecture.
+s03_the_session_card_4	The budget for my worst system,
+s03_the_session_card_5	and then the two sittings.
+s03_the_session_card_6	And the most useful part, the words.
+s03_the_session_card_7	These are the words that have to match in two places,
+s03_the_session_card_8	and lint can't check any of them for me.
+s03_the_session_card_9	So when I rename something,
+s03_the_session_card_10	this is my list of where else to go.
+s04_before_you_play_0	There are four checks before I play.
+s04_before_you_play_1	Lint gives the three warnings we know about, and no others.
+s04_before_you_play_2	The save is gone,
+s04_before_you_play_3	because a run-through starts from a new game.
+s04_before_you_play_4	The dials say what my card says.
+s04_before_you_play_5	And the libraries are up to date.
+s05_the_first_sitting_0	Here we go, and I tick each row as it happens.
+s05_the_first_sitting_1	There are three leads in the Quest Log.
+s05_the_first_sitting_2	On Comms, I hail the Compact and pay the levy.
+s05_the_first_sitting_3	Now there's more work on offer, and the escort pays better,
+s05_the_first_sitting_4	so I take it.
+s05_the_first_sitting_5	On to the Tern.
+s05_the_first_sitting_6	There's her card, and there's the warning from the battles lecture.
+s05_the_first_sitting_7	The first lead is done, and a new step has appeared.
+s05_the_first_sitting_8	Now the Assay Office.
+s05_the_first_sitting_9	The escort pays out as I arrive.
+s05_the_first_sitting_10	I ask about the Tern, and pay the fee.
+s05_the_first_sitting_11	That closes the step,
+s05_the_first_sitting_12	and it tells the crew where to go next.
+s05_the_first_sitting_13	That's twelve rows, and twelve ticks.
+s06_close_it_0	And now I close the game, on purpose.
+s06_close_it_1	This is the part of an open universe that a single mission doesn't have.
+s06_close_it_2	There's the save, and I'm going to leave it alone.
+s07_the_second_sitting_0	I start it with the same line,
+s07_the_second_sitting_1	and we're back at the Assay Office, with the same credits.
+s07_the_second_sitting_2	The Quest Log is just as I left it.
+s07_the_second_sitting_3	Now for the place the Gleaners won't talk about.
+s07_the_second_sitting_4	Three cards come up.
+s07_the_second_sitting_5	The place, the guards, and the one I wrote.
+s07_the_second_sitting_6	I count eleven ships.
+s07_the_second_sitting_7	Four of them are a long way off,
+s07_the_second_sitting_8	three are by the wreck,
+s07_the_second_sitting_9	and four are right in front of me.
+s07_the_second_sitting_10	That's the battle line from last time.
+s07_the_second_sitting_11	I have to tell you something about this last row.
+s07_the_second_sitting_12	When I checked this page,
+s07_the_second_sitting_13	a script told the game the four ships were destroyed.
+s07_the_second_sitting_14	Nobody has fought this fight.
+s07_the_second_sitting_15	So this is the first time, and we'll find out together.
+s08_after_you_play_0	There are three things to read afterward.
+s08_after_you_play_1	The runtime log, which should be empty.
+s08_after_you_play_2	Your ticks, every one of them.
+s08_after_you_play_3	And your standings, which should match the page.
+s08_after_you_play_4	And then there's one more table,
+s08_after_you_play_5	the things this universe doesn't do yet.
+s08_after_you_play_6	It has no admiral of its own.
+s08_after_you_play_7	A story beat can't move standing.
+s08_after_you_play_8	Lint has three warnings that are wrong.
+s08_after_you_play_9	None of those is your mistake.
+s08_after_you_play_10	But a writer who knows them
+s08_after_you_play_11	writes around them, and that's why they're on the page.
+s09_your_turn_0	Now it's your turn,
+s09_your_turn_1	and this time it really is yours.
+s09_your_turn_2	Plan two sittings, and write your card.
+s09_your_turn_3	Write down what you should see before you play,
+s09_your_turn_4	from your own files.
+s09_your_turn_5	Then give it to a crew,
+s09_your_turn_6	sit behind them, and don't help.
+s09_your_turn_7	That's a whole universe, and you wrote it.
+s09_your_turn_8	Well done, and thank you.

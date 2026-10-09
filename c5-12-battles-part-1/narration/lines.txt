@@ -1,0 +1,101 @@
+s01_cold_open_0	Up to now, you've been writing a universe with enemies in it,
+s01_cold_open_1	and letting the game decide how many.
+s01_cold_open_2	Today you take that over.
+s01_cold_open_3	By the end, you'll know how many ships are waiting in every kind of system,
+s01_cold_open_4	and which line of which file put them there.
+s01_cold_open_5	And you'll have a budget,
+s01_cold_open_6	a number you wrote down on purpose.
+s02_three_places_the_ships_come__0	There are only three places an enemy ship comes from.
+s02_three_places_the_ships_come__1	One is an enemy system,
+s02_three_places_the_ships_come__2	the kind the game rolls from your mixes in Lecture Five.
+s02_three_places_the_ships_come__3	Two is a foe's home, where their station is.
+s02_three_places_the_ships_come__4	And three is a landmark with guards on it.
+s02_three_places_the_ships_come__5	You've already written all three.
+s02_three_places_the_ships_come__6	What you haven't done is count them.
+s03_fleets_and_tiers_0	Enemies come in fleets, and a fleet has a tier,
+s03_fleets_and_tiers_1	from one to eleven.
+s03_fleets_and_tiers_2	This table is how many ships are in one fleet, at each tier,
+s03_fleets_and_tiers_3	for each of the six kinds of ship.
+s03_fleets_and_tiers_4	Follow the Torgoth row.
+s03_fleets_and_tiers_5	It's one ship at the bottom, three in the middle,
+s03_fleets_and_tiers_6	and six at the top.
+s03_fleets_and_tiers_7	And the ships get heavier as the fleet gets bigger.
+s03_fleets_and_tiers_8	At the top tier,
+s03_fleets_and_tiers_9	that's six of the largest thing they fly.
+s04_the_difficulty_number_0	So what sets the tier?
+s04_the_difficulty_number_1	One number, called Difficulty,
+s04_the_difficulty_number_2	and it lives in the settings file, where you named your ship back in Class One.
+s04_the_difficulty_number_3	Here's what it does to one enemy system.
+s04_the_difficulty_number_4	At five, there are six ships.
+s04_the_difficulty_number_5	At eight there are eleven,
+s04_the_difficulty_number_6	and at eleven there are twenty-four.
+s04_the_difficulty_number_7	It grows that fast because Difficulty counts twice.
+s04_the_difficulty_number_8	It sets how many fleets there are,
+s04_the_difficulty_number_9	and it sets the tier of every one of them.
+s04_the_difficulty_number_10	My universe is a backwater with one ship in it,
+s04_the_difficulty_number_11	so I'm setting it to four.
+s05_guards_with_a_number_0	In Lecture Five you put guards on the Bone Pile,
+s05_guards_with_a_number_1	with just the kind of ship.
+s05_guards_with_a_number_2	Written like that, the guards follow Difficulty.
+s05_guards_with_a_number_3	Put a number after the word, and that's their tier, whatever Difficulty says.
+s05_guards_with_a_number_4	Seven is three Torgoth ships, every time.
+s05_guards_with_a_number_5	And I'm adding a small guard to the Tern,
+s05_guards_with_a_number_6	because somebody is picking at that wreck.
+s05_guards_with_a_number_7	There are four things to know about guards.
+s05_guards_with_a_number_8	The crew gets a warning card.
+s05_guards_with_a_number_9	The guards wait by the landmark, not by the crew.
+s05_guards_with_a_number_10	They're raiders, so no ceasefire calls them off.
+s05_guards_with_a_number_11	And once they're destroyed, they stay gone.
+s06_a_foe_s_home_0	A foe's home always has one fleet, at the Difficulty,
+s06_a_foe_s_home_1	and it waits close.
+s06_a_foe_s_home_2	It's the one place your crew arrives with the enemy already on top of them.
+s06_a_foe_s_home_3	There's also something there you didn't write.
+s06_a_foe_s_home_4	Most of the times I visited,
+s06_a_foe_s_home_5	the station launched four fighters of its own.
+s06_a_foe_s_home_6	No line of yours sets that number,
+s06_a_foe_s_home_7	so just add four when you count.
+s07_how_thick_and_how_close_0	There are two more dials, and they go in the story file,
+s07_how_thick_and_how_close_1	right under the two travel lines from Lecture Two.
+s07_how_thick_and_how_close_2	It's a card, so copy it from the page.
+s07_how_thick_and_how_close_3	The only words you change are the two in quote marks.
+s07_how_thick_and_how_close_4	The first is Danger.
+s07_how_thick_and_how_close_5	It doesn't add ships to a system.
+s07_how_thick_and_how_close_6	It makes more systems enemy systems.
+s07_how_thick_and_how_close_7	From quiet to dangerous,
+s07_how_thick_and_how_close_8	mine went from fourteen enemy systems to fifty-four.
+s07_how_thick_and_how_close_9	The second is Encounters.
+s07_how_thick_and_how_close_10	Dormant puts an enemy system's fleets at the far edge,
+s07_how_thick_and_how_close_11	so the crew gets time to talk before the shooting starts.
+s07_how_thick_and_how_close_12	Spell both words exactly as they are on the page.
+s07_how_thick_and_how_close_13	A wrong word isn't an error.
+s07_how_thick_and_how_close_14	It's just the gentle setting, and nobody tells you.
+s08_the_budget_0	Now add it up, for your worst system.
+s08_the_budget_1	Mine is the Bone Pile.
+s08_the_budget_2	At Difficulty four it holds four Gleaner ships,
+s08_the_budget_3	and three guards, so that's seven.
+s08_the_budget_4	At eleven it would be twenty-seven.
+s08_the_budget_5	So how many is too many?
+s08_the_budget_6	Here's what's known so far.
+s08_the_budget_7	A system only exists while a crew is in it.
+s08_the_budget_8	So what counts is your worst system,
+s08_the_budget_9	times the crews that can be in different systems at once.
+s08_the_budget_10	The people who make the game pushed it until it slowed down,
+s08_the_budget_11	and that was at about a hundred and ninety ships fighting at once,
+s08_the_budget_12	with no consoles connected.
+s08_the_budget_13	Nobody has measured it with a full bridge.
+s08_the_budget_14	So stay a long way under that number.
+s09_check_and_fly_it_0	Lint gives me the same three warnings as last time, and nothing new.
+s09_check_and_fly_it_1	But lint doesn't read the settings file at all,
+s09_check_and_fly_it_2	so read the checklist on the page.
+s09_check_and_fly_it_3	Now let's fly it.
+s09_check_and_fly_it_4	First we go to the Tern,
+s09_check_and_fly_it_5	and there's her card, and then the warning.
+s09_check_and_fly_it_6	And then the Gleaners' home.
+s09_check_and_fly_it_7	This is what close looks like.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Decide who your game is for, and set Difficulty to match.
+s10_your_turn_2	List every system your story visits,
+s10_your_turn_3	and count the three sources for each one.
+s10_your_turn_4	Then write your budget at the top of your file.
+s10_your_turn_5	Next time, we stage a battle ourselves,
+s10_your_turn_6	at one place, at the moment the story gets there.

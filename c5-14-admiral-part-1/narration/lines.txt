@@ -1,0 +1,113 @@
+s01_cold_open_0	Everything you've written so far is seen from a bridge.
+s01_cold_open_1	One ship, one crew,
+s01_cold_open_2	one system at a time.
+s01_cold_open_3	There's another seat in this game.
+s01_cold_open_4	The Admiral doesn't fly anything.
+s01_cold_open_5	The Admiral looks down on a whole system,
+s01_cold_open_6	builds on its worlds, and sends fleets out.
+s01_cold_open_7	Today you write for that seat.
+s02_where_it_runs_today_0	And I have to start with some bad news,
+s02_where_it_runs_today_1	because I'd rather you heard it from me.
+s02_where_it_runs_today_2	The Admiral's game doesn't run in the universe you made in Lecture Two,
+s02_where_it_runs_today_3	not as things stand today.
+s02_where_it_runs_today_4	I did try it.
+s02_where_it_runs_today_5	I added the Admiral's library,
+s02_where_it_runs_today_6	I changed the mode,
+s02_where_it_runs_today_7	and I wrote the chapters.
+s02_where_it_runs_today_8	The game started, and nothing happened.
+s02_where_it_runs_today_9	There was no console and no error.
+s02_where_it_runs_today_10	That's a fault in how two libraries find each other,
+s02_where_it_runs_today_11	and it's been reported.
+s02_where_it_runs_today_12	It isn't something you can fix from your mission folder.
+s02_where_it_runs_today_13	So today, we work where the Admiral does run,
+s02_where_it_runs_today_14	which is inside the Open Universe mission itself.
+s02_where_it_runs_today_15	And what you write there
+s02_where_it_runs_today_16	is exactly what your own universe will take later.
+s03_make_the_lab_0	First, we make a copy.
+s03_make_the_lab_1	Never change the Open Universe folder itself,
+s03_make_the_lab_2	because an update will replace it.
+s03_make_the_lab_3	I copy it, paste it, and call the copy Admiral Lab.
+s03_make_the_lab_4	One warning about saves.
+s03_make_the_lab_5	A save is named after the universe, not the folder,
+s03_make_the_lab_6	so the lab and the real thing share one.
+s03_make_the_lab_7	If you've got a skirmish game you care about,
+s03_make_the_lab_8	move that file somewhere safe first.
+s04_what_an_admiral_does_0	Here's the whole game, so you know what you're writing for.
+s04_what_an_admiral_does_1	The Admiral selects a world, and builds a headquarters.
+s04_what_an_admiral_does_2	Then comes an extractor,
+s04_what_an_admiral_does_3	and ore starts coming in.
+s04_what_an_admiral_does_4	Then an academy and a shipyard,
+s04_what_an_admiral_does_5	and the shipyard offers officers to commission.
+s04_what_an_admiral_does_6	Each officer gets a fleet of three ships.
+s04_what_an_admiral_does_7	And a lab offers research.
+s04_what_an_admiral_does_8	You don't write any of those buildings.
+s04_what_an_admiral_does_9	They're the same in every universe.
+s04_what_an_admiral_does_10	You write the worlds, the people, and the ladder.
+s05_a_world_of_your_own_0	This is the arena file, and it's short.
+s05_a_world_of_your_own_1	Here are its three kinds of world.
+s05_a_world_of_your_own_2	I'm adding a fourth, above them.
+s05_a_world_of_your_own_3	Yields is what one extractor brings in each minute.
+s05_a_world_of_your_own_4	Reserve is how much there is before the world runs dry.
+s05_a_world_of_your_own_5	And here's the rule that matters.
+s05_a_world_of_your_own_6	The home system always gets one world,
+s05_a_world_of_your_own_7	and it's the first one in the file that never runs dry.
+s05_a_world_of_your_own_8	I put mine first,
+s05_a_world_of_your_own_9	so my Admiral starts on my world.
+s06_dials_and_an_honest_number_0	Next come the dials, and there are three I'm setting.
+s06_dials_and_an_honest_number_1	There's the starting ore,
+s06_dials_and_an_honest_number_2	how many fleets at once,
+s06_dials_and_an_honest_number_3	and no border raids while I'm learning.
+s06_dials_and_an_honest_number_4	Now, an honest number.
+s06_dials_and_an_honest_number_5	I wrote five hundred ore.
+s06_dials_and_an_honest_number_6	The game started with six thousand.
+s06_dials_and_an_honest_number_7	Part of that is the mode, which is fair.
+s06_dials_and_an_honest_number_8	But most of it
+s06_dials_and_an_honest_number_9	is a test setting the game's makers left switched on.
+s06_dials_and_an_honest_number_10	It runs the Admiral's economy eight times fast.
+s06_dials_and_an_honest_number_11	So don't balance anything today.
+s06_dials_and_an_honest_number_12	Write the numbers your story suggests,
+s06_dials_and_an_honest_number_13	and tune them when that setting is gone.
+s07_an_officer_0	Officers look like the captains from Lecture Eight,
+s07_an_officer_1	and their values are the same traits.
+s07_an_officer_2	Here, though, three of those traits do something.
+s07_an_officer_3	By the book means the fleet burns less gas.
+s07_an_officer_4	Resourceful means more salvage.
+s07_an_officer_5	Fearsome means it engages from farther out.
+s07_an_officer_6	Every other trait is character.
+s07_an_officer_7	It's who she is,
+s07_an_officer_8	for the day a crew talks to her.
+s08_research_0	The arena has no research, so I'm adding the chapter.
+s08_research_1	There are two steps.
+s08_research_2	Each one has a cost, a time in seconds,
+s08_research_3	and what it unlocks.
+s08_research_4	The second one requires the first,
+s08_research_5	and that's what makes it a ladder.
+s08_research_6	Now I run lint.
+s08_research_7	Two warnings were there before I started.
+s08_research_8	And there are four new ones,
+s08_research_9	saying the game doesn't read my costs or my times.
+s08_research_10	It does read them.
+s08_research_11	I watched it take the ore, and the forty seconds.
+s08_research_12	There's a line that makes those warnings go away,
+s08_research_13	and I'm asking you not to write it.
+s08_research_14	It quietly turns forty seconds into forty minutes.
+s08_research_15	So for today, six warnings is what done looks like.
+s09_play_it_0	Now let's play it.
+s09_play_it_1	On the start screen I pick the skirmish universe, and a new game.
+s09_play_it_2	There's one world at home, and it's mine.
+s09_play_it_3	I build a headquarters,
+s09_play_it_4	then the extractor, the academy, the shipyard and the lab.
+s09_play_it_5	The ore is climbing.
+s09_play_it_6	The shipyard offers my officer first,
+s09_play_it_7	by her name and her title.
+s09_play_it_8	And the lab offers my first step,
+s09_play_it_9	and then, once that's done, my second.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	In the lab, write the world your own side starts on,
+s10_your_turn_2	then two officers, and a ladder of three steps.
+s10_your_turn_3	Keep them there for now.
+s10_your_turn_4	When the fault is mended,
+s10_your_turn_5	it's three small moves to bring them home,
+s10_your_turn_6	and they're on the page.
+s10_your_turn_7	The lecture after this one isn't ready yet,
+s10_your_turn_8	so go on to the capstone.

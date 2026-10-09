@@ -1,0 +1,403 @@
+1
+00:00:00,000 --> 00:00:05,217
+Up to now, you've been writing a universe with enemies in it,
+
+2
+00:00:05,667 --> 00:00:08,711
+and letting the game decide how many.
+
+3
+00:00:09,611 --> 00:00:11,785
+Today you take that over.
+
+4
+00:00:13,585 --> 00:00:20,107
+By the end, you'll know how many ships are waiting in every kind of system,
+
+5
+00:00:20,557 --> 00:00:24,470
+and which line of which file put them there.
+
+6
+00:00:25,370 --> 00:00:27,543
+And you'll have a budget,
+
+7
+00:00:27,993 --> 00:00:31,037
+a number you wrote down on purpose.
+
+8
+00:00:32,237 --> 00:00:36,585
+There are only three places an enemy ship comes from.
+
+9
+00:00:38,385 --> 00:00:40,559
+One is an enemy system,
+
+10
+00:00:41,009 --> 00:00:45,791
+the kind the game rolls from your mixes in Lecture Five.
+
+11
+00:00:46,691 --> 00:00:50,604
+Two is a foe's home, where their station is.
+
+12
+00:00:51,504 --> 00:00:55,417
+And three is a landmark with guards on it.
+
+13
+00:00:57,217 --> 00:00:59,391
+You've already written all three.
+
+14
+00:01:00,291 --> 00:01:03,335
+What you haven't done is count them.
+
+15
+00:01:04,535 --> 00:01:08,883
+Enemies come in fleets, and a fleet has a tier,
+
+16
+00:01:09,333 --> 00:01:11,072
+from one to eleven.
+
+17
+00:01:11,972 --> 00:01:17,624
+This table is how many ships are in one fleet, at each tier,
+
+18
+00:01:18,074 --> 00:01:21,552
+for each of the six kinds of ship.
+
+19
+00:01:23,352 --> 00:01:25,091
+Follow the Torgoth row.
+
+20
+00:01:25,991 --> 00:01:30,339
+It's one ship at the bottom, three in the middle,
+
+21
+00:01:30,789 --> 00:01:32,963
+and six at the top.
+
+22
+00:01:33,863 --> 00:01:38,211
+And the ships get heavier as the fleet gets bigger.
+
+23
+00:01:39,111 --> 00:01:40,850
+At the top tier,
+
+24
+00:01:41,300 --> 00:01:44,778
+that's six of the largest thing they fly.
+
+25
+00:01:45,978 --> 00:01:48,152
+So what sets the tier?
+
+26
+00:01:49,052 --> 00:01:50,791
+One number, called Difficulty,
+
+27
+00:01:51,241 --> 00:01:58,198
+and it lives in the settings file, where you named your ship back in Class One.
+
+28
+00:01:59,998 --> 00:02:03,476
+Here's what it does to one enemy system.
+
+29
+00:02:04,376 --> 00:02:06,985
+At five, there are six ships.
+
+30
+00:02:07,435 --> 00:02:09,609
+At eight there are eleven,
+
+31
+00:02:10,059 --> 00:02:12,667
+and at eleven there are twenty-four.
+
+32
+00:02:14,467 --> 00:02:17,946
+It grows that fast because Difficulty counts twice.
+
+33
+00:02:18,846 --> 00:02:21,889
+It sets how many fleets there are,
+
+34
+00:02:22,339 --> 00:02:26,687
+and it sets the tier of every one of them.
+
+35
+00:02:28,487 --> 00:02:32,835
+My universe is a backwater with one ship in it,
+
+36
+00:02:33,285 --> 00:02:35,893
+so I'm setting it to four.
+
+37
+00:02:37,093 --> 00:02:41,441
+In Lecture Five you put guards on the Bone Pile,
+
+38
+00:02:41,891 --> 00:02:44,500
+with just the kind of ship.
+
+39
+00:02:45,400 --> 00:02:48,443
+Written like that, the guards follow Difficulty.
+
+40
+00:02:50,243 --> 00:02:55,896
+Put a number after the word, and that's their tier, whatever Difficulty says.
+
+41
+00:02:56,796 --> 00:02:59,839
+Seven is three Torgoth ships, every time.
+
+42
+00:03:01,639 --> 00:03:05,552
+And I'm adding a small guard to the Tern,
+
+43
+00:03:06,002 --> 00:03:09,046
+because somebody is picking at that wreck.
+
+44
+00:03:10,846 --> 00:03:14,324
+There are four things to know about guards.
+
+45
+00:03:15,224 --> 00:03:17,833
+The crew gets a warning card.
+
+46
+00:03:18,733 --> 00:03:23,080
+The guards wait by the landmark, not by the crew.
+
+47
+00:03:23,980 --> 00:03:27,459
+They're raiders, so no ceasefire calls them off.
+
+48
+00:03:27,909 --> 00:03:30,952
+And once they're destroyed, they stay gone.
+
+49
+00:03:32,152 --> 00:03:36,500
+A foe's home always has one fleet, at the Difficulty,
+
+50
+00:03:36,950 --> 00:03:38,689
+and it waits close.
+
+51
+00:03:39,589 --> 00:03:46,111
+It's the one place your crew arrives with the enemy already on top of them.
+
+52
+00:03:47,911 --> 00:03:50,954
+There's also something there you didn't write.
+
+53
+00:03:51,854 --> 00:03:54,463
+Most of the times I visited,
+
+54
+00:03:54,913 --> 00:03:58,391
+the station launched four fighters of its own.
+
+55
+00:03:59,291 --> 00:04:02,335
+No line of yours sets that number,
+
+56
+00:04:02,785 --> 00:04:05,828
+so just add four when you count.
+
+57
+00:04:07,028 --> 00:04:12,246
+There are two more dials, and they go in the story file,
+
+58
+00:04:12,696 --> 00:04:16,609
+right under the two travel lines from Lecture Two.
+
+59
+00:04:17,509 --> 00:04:21,422
+It's a card, so copy it from the page.
+
+60
+00:04:21,872 --> 00:04:26,654
+The only words you change are the two in quote marks.
+
+61
+00:04:28,454 --> 00:04:30,193
+The first is Danger.
+
+62
+00:04:31,093 --> 00:04:34,137
+It doesn't add ships to a system.
+
+63
+00:04:34,587 --> 00:04:37,196
+It makes more systems enemy systems.
+
+64
+00:04:38,096 --> 00:04:39,835
+From quiet to dangerous,
+
+65
+00:04:40,285 --> 00:04:43,763
+mine went from fourteen enemy systems to fifty-four.
+
+66
+00:04:45,563 --> 00:04:47,302
+The second is Encounters.
+
+67
+00:04:48,202 --> 00:04:52,550
+Dormant puts an enemy system's fleets at the far edge,
+
+68
+00:04:53,000 --> 00:04:57,783
+so the crew gets time to talk before the shooting starts.
+
+69
+00:04:59,583 --> 00:05:03,930
+Spell both words exactly as they are on the page.
+
+70
+00:05:04,830 --> 00:05:07,439
+A wrong word isn't an error.
+
+71
+00:05:07,889 --> 00:05:11,802
+It's just the gentle setting, and nobody tells you.
+
+72
+00:05:13,002 --> 00:05:16,480
+Now add it up, for your worst system.
+
+73
+00:05:17,380 --> 00:05:19,554
+Mine is the Bone Pile.
+
+74
+00:05:20,454 --> 00:05:23,933
+At Difficulty four it holds four Gleaner ships,
+
+75
+00:05:24,383 --> 00:05:26,991
+and three guards, so that's seven.
+
+76
+00:05:27,891 --> 00:05:30,500
+At eleven it would be twenty-seven.
+
+77
+00:05:32,300 --> 00:05:34,909
+So how many is too many?
+
+78
+00:05:35,809 --> 00:05:37,983
+Here's what's known so far.
+
+79
+00:05:38,883 --> 00:05:43,230
+A system only exists while a crew is in it.
+
+80
+00:05:44,130 --> 00:05:47,174
+So what counts is your worst system,
+
+81
+00:05:47,624 --> 00:05:52,407
+times the crews that can be in different systems at once.
+
+82
+00:05:54,207 --> 00:05:59,424
+The people who make the game pushed it until it slowed down,
+
+83
+00:05:59,874 --> 00:06:05,526
+and that was at about a hundred and ninety ships fighting at once,
+
+84
+00:06:05,976 --> 00:06:07,715
+with no consoles connected.
+
+85
+00:06:08,615 --> 00:06:12,093
+Nobody has measured it with a full bridge.
+
+86
+00:06:12,993 --> 00:06:16,472
+So stay a long way under that number.
+
+87
+00:06:17,672 --> 00:06:23,324
+Lint gives me the same three warnings as last time, and nothing new.
+
+88
+00:06:24,224 --> 00:06:28,137
+But lint doesn't read the settings file at all,
+
+89
+00:06:28,587 --> 00:06:31,630
+so read the checklist on the page.
+
+90
+00:06:33,430 --> 00:06:35,170
+Now let's fly it.
+
+91
+00:06:36,070 --> 00:06:38,678
+First we go to the Tern,
+
+92
+00:06:39,128 --> 00:06:42,607
+and there's her card, and then the warning.
+
+93
+00:06:43,507 --> 00:06:45,680
+And then the Gleaners' home.
+
+94
+00:06:46,580 --> 00:06:49,189
+This is what close looks like.
+
+95
+00:06:50,389 --> 00:06:52,128
+Now it's your turn.
+
+96
+00:06:53,028 --> 00:06:57,811
+Decide who your game is for, and set Difficulty to match.
+
+97
+00:06:58,711 --> 00:07:01,320
+List every system your story visits,
+
+98
+00:07:01,770 --> 00:07:05,248
+and count the three sources for each one.
+
+99
+00:07:06,148 --> 00:07:10,496
+Then write your budget at the top of your file.
+
+100
+00:07:12,296 --> 00:07:15,339
+Next time, we stage a battle ourselves,
+
+101
+00:07:15,789 --> 00:07:20,137
+at one place, at the moment the story gets there.

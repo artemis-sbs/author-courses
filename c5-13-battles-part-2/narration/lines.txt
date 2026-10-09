@@ -1,0 +1,87 @@
+s01_cold_open_0	Last time, you learned to set the odds.
+s01_cold_open_1	How many systems have enemies, how big the fleets are,
+s01_cold_open_2	how close they wait.
+s01_cold_open_3	But a story has one place where odds aren't good enough.
+s01_cold_open_4	When the crew gets to the end,
+s01_cold_open_5	the fight has to be there.
+s01_cold_open_6	Today you stage that one fight yourself.
+s02_why_the_dice_aren_t_enough_0	Here's the end of my story.
+s02_why_the_dice_aren_t_enough_1	It says four Gleaner hulls stand between you and them.
+s02_why_the_dice_aren_t_enough_2	Well, do they really?
+s02_why_the_dice_aren_t_enough_3	Last time I counted four Gleaner ships at the Bone Pile.
+s02_why_the_dice_aren_t_enough_4	But they're only there because the game rolled an enemy system,
+s02_why_the_dice_aren_t_enough_5	and every new game rolls again.
+s02_why_the_dice_aren_t_enough_6	In the game I measured,
+s02_why_the_dice_aren_t_enough_7	five of the nine systems in that region were not enemy systems.
+s02_why_the_dice_aren_t_enough_8	If the Bone Pile is one of those,
+s02_why_the_dice_aren_t_enough_9	the crew arrives for the last fight and finds three raiders.
+s03_the_card_0	So here's a card.
+s03_the_card_1	It's the only new piece of MAST in this whole class,
+s03_the_card_2	and you don't need to be able to write it.
+s03_the_card_3	You copy it from the page,
+s03_the_card_4	to the very end of the story file.
+s03_the_card_5	One of these lines is long.
+s03_the_card_6	It's one line, so don't break it.
+s04_read_it_top_to_bottom_0	Let's read it once, from the top.
+s04_read_it_top_to_bottom_1	The line with two slashes is a route.
+s04_read_it_top_to_bottom_2	The game says, a ship has arrived,
+s04_read_it_top_to_bottom_3	and this block hears it.
+s04_read_it_top_to_bottom_4	The rest of that line says, only in this system.
+s04_read_it_top_to_bottom_5	Then it waits one second.
+s04_read_it_top_to_bottom_6	Then it asks, is this step of the story open right now?
+s04_read_it_top_to_bottom_7	If not, it stops.
+s04_read_it_top_to_bottom_8	And if it is,
+s04_read_it_top_to_bottom_9	it finds where the system is, makes one fleet,
+s04_read_it_top_to_bottom_10	and shows the crew a card.
+s05_the_seven_words_0	There are seven things you change, and nothing else.
+s05_the_seven_words_1	The two numbers of the system,
+s05_the_seven_words_2	which you copy from the landmark.
+s05_the_seven_words_3	The key of the step, in quotes.
+s05_the_seven_words_4	The kind of ship, and the tier,
+s05_the_seven_words_5	and you know both of those from last time.
+s05_the_seven_words_6	The key of the side they fight for,
+s05_the_seven_words_7	which has to come first inside those quotes.
+s05_the_seven_words_8	How far away they form up.
+s05_the_seven_words_9	And the sentence the crew reads.
+s06_shared_and_one_second_0	Two parts of this card look like details, and they aren't.
+s06_shared_and_one_second_1	The first is the word shared.
+s06_shared_and_one_second_2	A route without it runs once for every console that's connected.
+s06_shared_and_one_second_3	Anything that makes a ship goes on a shared route,
+s06_shared_and_one_second_4	or every console makes its own fleet.
+s06_shared_and_one_second_5	The second is the one-second wait.
+s06_shared_and_one_second_6	When the crew arrives,
+s06_shared_and_one_second_7	the game finishes one step and reveals the next, at that same moment.
+s06_shared_and_one_second_8	Without the wait, my card looks too early.
+s06_shared_and_one_second_9	It sees a hidden step, and it makes nothing.
+s06_shared_and_one_second_10	I took that line out to check, and that's exactly what happened.
+s07_when_the_battle_is_there_0	So when is the battle there?
+s07_when_the_battle_is_there_1	I played every case.
+s07_when_the_battle_is_there_2	If the crew wanders in early, there's nothing,
+s07_when_the_battle_is_there_3	because the step is still hidden.
+s07_when_the_battle_is_there_4	If they arrive on the story's business, it's there.
+s07_when_the_battle_is_there_5	If they run and come back, there's one battle line, not two,
+s07_when_the_battle_is_there_6	because the system is taken down when they leave.
+s07_when_the_battle_is_there_7	After a Continue, it's there again.
+s07_when_the_battle_is_there_8	And once the step is done, it's gone.
+s07_when_the_battle_is_there_9	There's one warning here.
+s07_when_the_battle_is_there_10	The tier on the card doesn't move with Difficulty,
+s07_when_the_battle_is_there_11	so add it to your budget from last time.
+s07_when_the_battle_is_there_12	Mine comes to eleven or twelve ships,
+s07_when_the_battle_is_there_13	which is a lot for one cruiser.
+s08_check_and_play_it_0	Lint gives the same three warnings as before.
+s08_check_and_play_it_1	And once again, it can't see most of what goes wrong on this card,
+s08_check_and_play_it_2	so use the list on the page.
+s08_check_and_play_it_3	Now let's play the story.
+s08_check_and_play_it_4	The Tern first, and then the ledger.
+s08_check_and_play_it_5	And then the place the Gleaners won't talk about.
+s08_check_and_play_it_6	There are three cards.
+s08_check_and_play_it_7	The place, the guards, and mine.
+s08_check_and_play_it_8	Now I'll run, and come back.
+s08_check_and_play_it_9	There's still one battle line.
+s09_your_turn_0	Now it's your turn.
+s09_your_turn_1	Find the one place in your story where the fight has to be there.
+s09_your_turn_2	If you don't have one, you don't need this card.
+s09_your_turn_3	If you do, paste it,
+s09_your_turn_4	change the seven words, and then go there early on purpose.
+s09_your_turn_5	There should be nothing waiting.
+s09_your_turn_6	Next time, somebody else gets to play your universe, from above.

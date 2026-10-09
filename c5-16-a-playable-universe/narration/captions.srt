@@ -1,0 +1,363 @@
+1
+00:00:00,000 --> 00:00:03,478
+This is the last lecture of the class,
+
+2
+00:00:03,928 --> 00:00:06,972
+and it doesn't teach you anything new.
+
+3
+00:00:07,872 --> 00:00:10,046
+It asks you to finish.
+
+4
+00:00:11,846 --> 00:00:15,759
+By the end you'll have played one whole evening
+
+5
+00:00:16,209 --> 00:00:20,557
+in your own universe, with a list in your hand,
+
+6
+00:00:21,007 --> 00:00:24,920
+and you'll know that every part of it works.
+
+7
+00:00:25,820 --> 00:00:28,428
+You'll also know, honestly, what doesn't.
+
+8
+00:00:29,628 --> 00:00:31,802
+Don't start the game yet.
+
+9
+00:00:32,702 --> 00:00:36,615
+Write down where a crew will go, in order,
+
+10
+00:00:37,065 --> 00:00:40,109
+and what should happen at each place.
+
+11
+00:00:41,909 --> 00:00:44,952
+I've got six rows, in two sittings.
+
+12
+00:00:45,852 --> 00:00:49,330
+The relay, the Tern, and the Assay Office.
+
+13
+00:00:50,230 --> 00:00:53,709
+Then they save, and come back another night
+
+14
+00:00:54,159 --> 00:00:55,898
+for the Bone Pile.
+
+15
+00:00:57,698 --> 00:00:59,437
+I follow three rules.
+
+16
+00:01:00,337 --> 00:01:02,511
+Three places make an evening.
+
+17
+00:01:03,411 --> 00:01:05,585
+End a sitting somewhere safe,
+
+18
+00:01:06,035 --> 00:01:10,383
+because the save keeps the system the crew is in.
+
+19
+00:01:11,283 --> 00:01:15,630
+And put the save between the mystery and the fight,
+
+20
+00:01:16,080 --> 00:01:19,559
+so they leave knowing where to go next.
+
+21
+00:01:20,759 --> 00:01:25,976
+Now, ten lines of notes at the top of the main file.
+
+22
+00:01:26,876 --> 00:01:31,659
+Two slashes start a note, so the game doesn't read these.
+
+23
+00:01:32,109 --> 00:01:33,848
+They're there for people.
+
+24
+00:01:35,648 --> 00:01:41,300
+Who the game is for, and the three dials from the battles lecture.
+
+25
+00:01:42,200 --> 00:01:44,809
+The budget for my worst system,
+
+26
+00:01:45,259 --> 00:01:47,433
+and then the two sittings.
+
+27
+00:01:49,233 --> 00:01:52,276
+And the most useful part, the words.
+
+28
+00:01:53,176 --> 00:01:57,959
+These are the words that have to match in two places,
+
+29
+00:01:58,409 --> 00:02:02,322
+and lint can't check any of them for me.
+
+30
+00:02:03,222 --> 00:02:05,396
+So when I rename something,
+
+31
+00:02:05,846 --> 00:02:09,759
+this is my list of where else to go.
+
+32
+00:02:10,959 --> 00:02:14,002
+There are four checks before I play.
+
+33
+00:02:14,902 --> 00:02:19,685
+Lint gives the three warnings we know about, and no others.
+
+34
+00:02:20,585 --> 00:02:22,324
+The save is gone,
+
+35
+00:02:22,774 --> 00:02:26,252
+because a run-through starts from a new game.
+
+36
+00:02:27,152 --> 00:02:30,196
+The dials say what my card says.
+
+37
+00:02:31,096 --> 00:02:34,139
+And the libraries are up to date.
+
+38
+00:02:35,339 --> 00:02:40,122
+Here we go, and I tick each row as it happens.
+
+39
+00:02:41,922 --> 00:02:45,400
+There are three leads in the Quest Log.
+
+40
+00:02:46,300 --> 00:02:50,648
+On Comms, I hail the Compact and pay the levy.
+
+41
+00:02:51,548 --> 00:02:56,330
+Now there's more work on offer, and the escort pays better,
+
+42
+00:02:56,780 --> 00:02:58,520
+so I take it.
+
+43
+00:03:00,320 --> 00:03:02,059
+On to the Tern.
+
+44
+00:03:02,959 --> 00:03:07,741
+There's her card, and there's the warning from the battles lecture.
+
+45
+00:03:08,641 --> 00:03:13,424
+The first lead is done, and a new step has appeared.
+
+46
+00:03:15,224 --> 00:03:16,963
+Now the Assay Office.
+
+47
+00:03:17,863 --> 00:03:20,907
+The escort pays out as I arrive.
+
+48
+00:03:21,807 --> 00:03:25,720
+I ask about the Tern, and pay the fee.
+
+49
+00:03:26,170 --> 00:03:27,909
+That closes the step,
+
+50
+00:03:28,359 --> 00:03:32,272
+and it tells the crew where to go next.
+
+51
+00:03:34,072 --> 00:03:36,680
+That's twelve rows, and twelve ticks.
+
+52
+00:03:37,880 --> 00:03:41,359
+And now I close the game, on purpose.
+
+53
+00:03:42,259 --> 00:03:48,346
+This is the part of an open universe that a single mission doesn't have.
+
+54
+00:03:49,246 --> 00:03:53,593
+There's the save, and I'm going to leave it alone.
+
+55
+00:03:54,793 --> 00:03:57,837
+I start it with the same line,
+
+56
+00:03:58,287 --> 00:04:03,070
+and we're back at the Assay Office, with the same credits.
+
+57
+00:04:03,970 --> 00:04:07,883
+The Quest Log is just as I left it.
+
+58
+00:04:09,683 --> 00:04:13,596
+Now for the place the Gleaners won't talk about.
+
+59
+00:04:14,496 --> 00:04:16,235
+Three cards come up.
+
+60
+00:04:16,685 --> 00:04:20,598
+The place, the guards, and the one I wrote.
+
+61
+00:04:22,398 --> 00:04:24,137
+I count eleven ships.
+
+62
+00:04:25,037 --> 00:04:28,515
+Four of them are a long way off,
+
+63
+00:04:28,965 --> 00:04:31,139
+three are by the wreck,
+
+64
+00:04:31,589 --> 00:04:35,067
+and four are right in front of me.
+
+65
+00:04:35,967 --> 00:04:39,011
+That's the battle line from last time.
+
+66
+00:04:40,811 --> 00:04:45,159
+I have to tell you something about this last row.
+
+67
+00:04:46,059 --> 00:04:48,233
+When I checked this page,
+
+68
+00:04:48,683 --> 00:04:53,030
+a script told the game the four ships were destroyed.
+
+69
+00:04:53,930 --> 00:04:56,104
+Nobody has fought this fight.
+
+70
+00:04:57,004 --> 00:05:01,787
+So this is the first time, and we'll find out together.
+
+71
+00:05:02,987 --> 00:05:06,030
+There are three things to read afterward.
+
+72
+00:05:06,930 --> 00:05:09,974
+The runtime log, which should be empty.
+
+73
+00:05:10,874 --> 00:05:13,483
+Your ticks, every one of them.
+
+74
+00:05:14,383 --> 00:05:17,861
+And your standings, which should match the page.
+
+75
+00:05:19,661 --> 00:05:22,270
+And then there's one more table,
+
+76
+00:05:22,720 --> 00:05:25,763
+the things this universe doesn't do yet.
+
+77
+00:05:26,663 --> 00:05:29,707
+It has no admiral of its own.
+
+78
+00:05:30,607 --> 00:05:33,215
+A story beat can't move standing.
+
+79
+00:05:34,115 --> 00:05:37,159
+Lint has three warnings that are wrong.
+
+80
+00:05:38,959 --> 00:05:41,567
+None of those is your mistake.
+
+81
+00:05:42,467 --> 00:05:45,076
+But a writer who knows them
+
+82
+00:05:45,526 --> 00:05:49,874
+writes around them, and that's why they're on the page.
+
+83
+00:05:51,074 --> 00:05:52,813
+Now it's your turn,
+
+84
+00:05:53,263 --> 00:05:56,307
+and this time it really is yours.
+
+85
+00:05:57,207 --> 00:06:00,250
+Plan two sittings, and write your card.
+
+86
+00:06:01,150 --> 00:06:05,063
+Write down what you should see before you play,
+
+87
+00:06:05,513 --> 00:06:07,252
+from your own files.
+
+88
+00:06:09,052 --> 00:06:11,661
+Then give it to a crew,
+
+89
+00:06:12,111 --> 00:06:14,720
+sit behind them, and don't help.
+
+90
+00:06:16,520 --> 00:06:19,998
+That's a whole universe, and you wrote it.
+
+91
+00:06:20,898 --> 00:06:23,072
+Well done, and thank you.
