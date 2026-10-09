@@ -1,85 +1,83 @@
-s01_cold_open_0	The doctor just read six name tags.
-s01_cold_open_1	Nobody asked the engineer to do that.
-s01_cold_open_2	Nobody asked the ship.
-s01_cold_open_3	It was her job, on her list, and when she finished it something happened for everyone.
-s01_cold_open_4	That is a side story: a quest that belongs to one person.
-s02_a_quest_with_an_owner_0	A new section, at the very end.
-s02_a_quest_with_an_owner_1	Side Stories, and the key is side_stories.
-s02_a_quest_with_an_owner_2	Keep that key.
-s02_a_quest_with_an_owner_3	Inside it, a quest.
-s02_a_quest_with_an_owner_4	You know every line of this from Class 1 except the first.
-s02_a_quest_with_an_owner_5	For, colon, medical.
-s02_a_quest_with_an_owner_6	That is a job word, the same word that is on the doctor's Roles line in your roster.
-s02_a_quest_with_an_owner_7	This quest is not the ship's.
-s02_a_quest_with_an_owner_8	It is hers.
-s02_a_quest_with_an_owner_9	Starts when: at once, because I want it running the moment she has it.
-s02_a_quest_with_an_owner_10	Leave that out and she is handed a story that is asleep, and nothing ever wakes it. An objective.
-s02_a_quest_with_an_owner_11	And Done when: signal names_read.
-s02_a_quest_with_an_owner_12	A signal I just invented.
-s02_a_quest_with_an_owner_13	Something has to send it.
-s03_her_own_reading_finishes_it_0	Here is the choice only the doctor is offered.
-s03_her_own_reading_finishes_it_1	After the semicolon it already says learn suits.
-s03_her_own_reading_finishes_it_2	I add a comma, then signal names_read.
-s03_her_own_reading_finishes_it_3	Two things happen now when she takes it: the party learns the fact, and her story hears its signal.
-s03_her_own_reading_finishes_it_4	Look at this comma.
-s03_her_own_reading_finishes_it_5	If I forget it, the signal is never sent, and lint will not tell me.
-s03_her_own_reading_finishes_it_6	I am going to show you that in a few minutes, because you will do it.
-s04_the_card_0	The game does not hand these stories out by itself, so there is a card. Two parts.
-s04_the_card_1	The first goes under the line from Lecture 2 that starts shared BOARDING_SCENES, with the same indent.
-s04_the_card_2	It reads my new section and keeps it.
-s04_the_card_3	The second goes at the very end of the file.
-s04_the_card_4	It says: every time somebody beams down, hand them the story that is for them.
-s04_the_card_5	I change nothing on this card.
-s04_the_card_6	I paste it.
-s04_the_card_7	Lint is clean, and I have to be honest about what that means here: lint cannot see this card at all.
-s04_the_card_8	If I paste half of it, lint still says clean.
-s05_a_second_story_0	The chief gets one too. For: engineering.
-s05_a_second_story_1	Find out how the core was stopped.
-s05_a_second_story_2	And the choice only he is offered sends the signal.
-s05_a_second_story_3	Same shape, different job.
-s05_a_second_story_4	Two people, two stories.
-s06_where_a_story_leads_0	A side story can lead somewhere, and it does it the way every quest does: with Then.
-s06_where_a_story_leads_1	When the doctor's story finishes, it sends names_known.
-s06_where_a_story_leads_2	And up here, in the ship's own quests, a new one: Account for the Crew.
-s06_where_a_story_leads_3	Scope: shared, running from the start, done when it hears names_known.
-s06_where_a_story_leads_4	So read the chain.
-s06_where_a_story_leads_5	She reads the tags.
-s06_where_a_story_leads_6	That finishes her story.
-s06_where_a_story_leads_7	Her story finishes the ship's quest.
-s06_where_a_story_leads_8	One waits, one sends.
-s06_where_a_story_leads_9	Notice where the reward is.
-s06_where_a_story_leads_10	On the ship's quest.
-s06_where_a_story_leads_11	A reward written on a side story is paid to nobody.
-s06_where_a_story_leads_12	And one thing you will see in other people's files: Leads to.
-s06_where_a_story_leads_13	That points a person at a thing on a map, or a place in a ruin.
-s06_where_a_story_leads_14	We have rooms, not a map, so it does nothing here.
-s06_where_a_story_leads_15	We will use it later.
-s07_rules_and_lint_0	Five rules.
-s07_rules_and_lint_1	A side story is a bonus: nobody covers for a person, so never hang the main story on one.
-s07_rules_and_lint_2	One job word in three places: the roster, the story, the choice.
-s07_rules_and_lint_3	Name the job, not the person.
-s07_rules_and_lint_4	No reward on a side story.
-s07_rules_and_lint_5	And one story goes to one person.
-s07_rules_and_lint_6	Now lint, and I am going to start with the two it misses. The comma. Clean.
-s07_rules_and_lint_7	That story can never finish.
-s07_rules_and_lint_8	A misspelled job on For. Clean.
-s07_rules_and_lint_9	That story is handed to nobody.
-s07_rules_and_lint_10	Those two you check by eye.
-s07_rules_and_lint_11	Here is what it does catch: a signal name that does not match, two warnings, one from each end.
-s07_rules_and_lint_12	And a section key the card is not looking for.
-s08_play_it_0	Before we go: the ship's quest list.
-s08_play_it_1	Account for the Crew is waiting.
-s08_play_it_2	Both of them beam down.
-s08_play_it_3	The doctor reads the tags.
-s08_play_it_4	Back on the bridge: quest complete, twice, and the reward.
-s08_play_it_5	Now the same mission with the doctor left behind.
-s08_play_it_6	The chief is offered her reading, marked as covering.
-s08_play_it_7	He takes it.
-s08_play_it_8	The party learns the fact.
-s08_play_it_9	And on the bridge, nothing.
-s08_play_it_10	Her story was never handed out, because she never came.
-s08_play_it_11	That is rule one.
-s09_your_turn_0	Your third crew member gets a story of their own, finished by the reading you gave them.
-s09_your_turn_1	Give the chief's story somewhere to lead.
-s09_your_turn_2	Then break it on purpose: misspell the job on For, watch lint say clean, and play it once to see what does not happen.
-s09_your_turn_3	Next time you put all of it together, and play ten minutes of your own away mission.
+s01_cold_open_0	Everyone in this party reads the same room.
+s01_cold_open_1	But one of them came aboard with a question of her own,
+s01_cold_open_2	and it's listed on her handheld, under her name.
+s01_cold_open_3	Whose suits are these?
+s01_cold_open_4	Today you give one person a quest that's theirs,
+s01_cold_open_5	and you make it lead somewhere.
+s02_a_section_for_side_stories_0	A side story is a quest.
+s02_a_section_for_side_stories_1	It has the fields you learned in Class 1,
+s02_a_section_for_side_stories_2	and it lives in a section of its own, at the end of the file.
+s02_a_section_for_side_stories_3	What's new is this line.
+s02_a_section_for_side_stories_4	For, and then a job.
+s02_a_section_for_side_stories_5	A quest in your Quests section belongs to the whole ship.
+s02_a_section_for_side_stories_6	This one belongs to one person.
+s02_a_section_for_side_stories_7	It starts at once,
+s02_a_section_for_side_stories_8	it has an objective,
+s02_a_section_for_side_stories_9	and it's done when a signal arrives. Lint warns twice,
+s02_a_section_for_side_stories_10	and both warnings are true for now.
+s02_a_section_for_side_stories_11	Nothing sends that signal yet,
+s02_a_section_for_side_stories_12	and nothing hands the story out.
+s02_a_section_for_side_stories_13	The word after For is a job from your roster,
+s02_a_section_for_side_stories_14	or it can be a person: their key, or their name.
+s03_her_own_reading_finishes_it_0	So first, the signal.
+s03_her_own_reading_finishes_it_1	I find the choice only the surgeon is offered,
+s03_her_own_reading_finishes_it_2	and I add a second outcome after the first,
+s03_her_own_reading_finishes_it_3	with a comma between them. Learn the fact, comma, send the signal.
+s03_her_own_reading_finishes_it_4	The name has to match the story's, letter for letter.
+s03_her_own_reading_finishes_it_5	And don't lose that comma.
+s03_her_own_reading_finishes_it_6	Without it, the signal is never sent.
+s04_hand_the_stories_to_the_visi_0	Then the handing out.
+s04_hand_the_stories_to_the_visi_1	I open the story file
+s04_hand_the_stories_to_the_visi_2	and find the card from Lecture 2.
+s04_hand_the_stories_to_the_visi_3	One line on it starts the visit,
+s04_hand_the_stories_to_the_visi_4	and I add a few words to the end of that line. Stories equals,
+s04_hand_the_stories_to_the_visi_5	and then the section of the fact sheet to read them from.
+s04_hand_the_stories_to_the_visi_6	The key in quotes is the key on my Side Stories heading.
+s04_hand_the_stories_to_the_visi_7	That's the whole change.
+s04_hand_the_stories_to_the_visi_8	From now on each person is handed their story as they beam down,
+s04_hand_the_stories_to_the_visi_9	and that includes someone who beams down late.
+s05_a_second_story_and_where_one_0	The engineer gets one too,
+s05_a_second_story_and_where_one_1	finished by his own reading.
+s05_a_second_story_and_where_one_2	And a side story can lead on,
+s05_a_second_story_and_where_one_3	the same way any quest does, with Then.
+s05_a_second_story_and_where_one_4	When the surgeon's story completes, it sends a second signal,
+s05_a_second_story_and_where_one_5	and a quest for the whole ship is waiting to hear it.
+s05_a_second_story_and_where_one_6	So read the chain from the top.
+s05_a_second_story_and_where_one_7	She reads the tags.
+s05_a_second_story_and_where_one_8	That finishes her story.
+s05_a_second_story_and_where_one_9	Her story finishes the ship's quest,
+s05_a_second_story_and_where_one_10	and the ship is paid.
+s05_a_second_story_and_where_one_11	A story can carry a reward of its own as well,
+s05_a_second_story_and_where_one_12	and it's paid to the ship that person came from.
+s06_four_rules_and_lint_0	Four rules. A side story is a bonus, and never the only way,
+s06_four_rules_and_lint_1	because nobody covers for a person.
+s06_four_rules_and_lint_2	One job word goes in three places:
+s06_four_rules_and_lint_3	the roster, the story, and the choice that finishes it.
+s06_four_rules_and_lint_4	For takes one job, or one person.
+s06_four_rules_and_lint_5	And one story goes to one person.
+s06_four_rules_and_lint_6	Lint is good here.
+s06_four_rules_and_lint_7	It tells you when a story is for nobody,
+s06_four_rules_and_lint_8	and it tells you when two outcomes have run together.
+s07_play_it_0	Both aboard. On the doctor's handheld I go back one step,
+s07_play_it_1	and there are three apps now,
+s07_play_it_2	and the third one is Tasks.
+s07_play_it_3	There's her story, under her name.
+s07_play_it_4	She reads the tags,
+s07_play_it_5	and the bridge is told twice:
+s07_play_it_6	her story is complete, and so is the ship's quest.
+s07_play_it_7	Then the chief reads his record,
+s07_play_it_8	and his story completes too.
+s07_play_it_9	Now think about a short crew.
+s07_play_it_10	If the doctor stays on the ship,
+s07_play_it_11	another console can still take her reading,
+s07_play_it_12	but her story was never handed out,
+s07_play_it_13	so the ship's quest stays open.
+s07_play_it_14	The next lecture shows you the way round that.
+s08_your_turn_0	Write a story for your third person,
+s08_your_turn_1	finished by their own reading.
+s08_your_turn_2	Give the chief's story somewhere to lead. Then break it.
+s08_your_turn_3	Misspell the job after For,
+s08_your_turn_4	read what lint says,
+s08_your_turn_5	and play it once anyway.
+s08_your_turn_6	Next time is the checkpoint:
+s08_your_turn_7	one away scene of your own, planned on paper and played.

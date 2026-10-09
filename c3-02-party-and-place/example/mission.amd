@@ -71,8 +71,6 @@ Tab: mat
 % Scoring along the plating matches no weapon in use in this sector.
 
 
-// ---- The crew. Each record is the person at one console - on the bridge, and aboard
-// the hulk. `Names: locked` makes them YOUR people: a player's own saved name is not used.
 ## [The Watch](watch)
 ---
 crew
@@ -84,19 +82,18 @@ The people aboard for this story.
 ### [Chief Okoro](okoro)
 ---
 Console: engineering
-Face: terran_female
+Face: terran_male
 Roles: engineering
 ---
 
 ### [Dr Hale](hale)
 ---
 Console: science
-Face: terran_male
+Face: terran_female
 Roles: medical
 ---
 
 
-// ---- Where they go. Each record is one room: what the party finds, then the ways out.
 ## [Scenes](boarding)
 
 ### [The Airlock](airlock)
@@ -110,10 +107,8 @@ Roles: medical
 % Cold. The core was shut down by hand, in the right order, by someone who had time.
 
 - [Go back to the airlock](airlock)
-- [Return to the ship]()
 
 ### [The Bridge](bridge)
 % Every station is dark but one. The log is open on the captain's chair, and the last entry is a single word.
 
 - [Go back to the airlock](airlock)
-- [Return to the ship]()

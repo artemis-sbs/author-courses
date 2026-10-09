@@ -59,7 +59,6 @@ Reward: 150 credits
 ---
 Somebody crewed that ship. Command wants to know what became of them.
 
-// ---- The two endings. Each one is hidden until the party makes its choice aboard.
 ### [Stand By the Sleepers](stand_by)
 ---
 Scope: shared
@@ -102,10 +101,6 @@ Tab: mat
 % Scoring along the plating matches no weapon in use in this sector.
 
 
-// ---- The crew. Each record is the person at one console - on the bridge, and aboard
-// the hulk. `Names: locked` makes them YOUR people: a player's own saved name is not used.
-// `Skills:` says how good each one is: a word, a number, a comma. A job with no number
-// counts as 2.
 ## [The Watch](watch)
 ---
 crew
@@ -117,7 +112,7 @@ The people aboard for this story.
 ### [Chief Okoro](okoro)
 ---
 Console: engineering
-Face: terran_female
+Face: terran_male
 Roles: engineering
 Skills: engineering 4, science 1
 ---
@@ -125,7 +120,7 @@ Skills: engineering 4, science 1
 ### [Dr Hale](hale)
 ---
 Console: science
-Face: terran_male
+Face: terran_female
 Roles: medical
 Skills: medical 4, science 3
 ---
@@ -139,12 +134,6 @@ Skills: quartermaster 3
 ---
 
 
-// ---- Where they go. Six places, and the short rooms that hang off them.
-//
-//   airlock - spine - berths   (the surgeon's reading)
-//                   - engine   (the engineer's reading, and the check)
-//                   - hold     (the quartermaster's reading, and one for a good scientist)
-//                   - cabin    (opens at three facts; the two endings)
 ## [Scenes](boarding)
 
 ### [The Airlock](airlock)
@@ -231,8 +220,6 @@ Skills: quartermaster 3
 - [Return to the ship]()
 
 
-// ---- Side stories. One quest for one person: `For:` names a job from the crew roster.
-// story.mast hands each story to that person when they beam down.
 ## [Side Stories](side_stories)
 
 ### [Twelve Berths](twelve_berths)

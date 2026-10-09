@@ -19,8 +19,18 @@ You will not touch `story.mast`.
 ## Before you start
 
 - Your mission from Lecture 3: the crew roster, the rooms, the two readings and the log.
-- `sbs lint MyMission` says `clean`.
-- Two consoles if you can manage it, Engineering and Science. One console also works.
+- `sbs lint MyBoarding` says `clean`.
+- Three consoles if you can manage it: Helm to fly, and Engineering and Science to go
+  aboard.
+
+Words for this lecture:
+
+| Word | Meaning |
+|---|---|
+| Skill | How good one person is at one thing. A word and a number |
+| Check | A try that may fail. The game rolls for it |
+| Target | The number a check has to reach |
+| Roll line | The line the page gains after a check, saying who rolled what |
 
 ## Step 1 - Say what each person is good at
 
@@ -30,7 +40,7 @@ Open `mission.amd` and find your crew roster. Add one line to each person, under
 ### [Chief Okoro](okoro)
 ---
 Console: engineering
-Face: terran_female
+Face: terran_male
 Roles: engineering
 Skills: engineering 4, science 1
 ---
@@ -38,7 +48,7 @@ Skills: engineering 4, science 1
 ### [Dr Hale](hale)
 ---
 Console: science
-Face: terran_male
+Face: terran_female
 Roles: medical
 Skills: medical 4, science 3
 ---
@@ -67,7 +77,7 @@ A scale that works well:
 | 4 | The best aboard |
 
 A person's job counts as 2 even with no `Skills:` line. Chief Okoro has
-`Roles: engineering`, so before today the chief's engineering was 2. The `Skills:` line raises it
+`Roles: engineering`, so before today his engineering was 2. The `Skills:` line raises it
 to 4.
 
 Dr Hale's job is `medical`. Science is not her job. She is simply good at it. That is what
@@ -78,8 +88,7 @@ a skill is for.
 The game reads `Skills:` with the rest of the roster. You have nothing to add to
 `story.mast`.
 
-The numbers belong to the person on the roster, not to the name on the console. A player
-who has saved a name of their own, and sits at Science, is still as good as Dr Hale.
+The numbers belong to the person on the roster, not to the name on the console.
 
 ## Step 3 - A choice for someone good enough
 
@@ -89,7 +98,8 @@ In **The Bridge**, add a choice below **Answer the log**:
 - [Pull the sensor record](sensor_record) if skill science >= 3 ; learn sensors
 ```
 
-Then add the room it leads to, below the bridge:
+Then add the room it leads to, below the bridge's last choice and above **The Last
+Entry**:
 
 ```
 ### [The Sensor Record](sensor_record)
@@ -129,7 +139,7 @@ In **The Reactor Room**, add a choice below **Read the shutdown record**:
 - [Try to wake the core](core_wakes) ; check engineering 9 else core_dead, learn lockout
 ```
 
-Then add two rooms, below **The Shutdown Record**:
+Then add two rooms, below **The Shutdown Record** and above **The Bridge**:
 
 ```
 ### [The Core Turns Over](core_wakes)
@@ -164,11 +174,11 @@ The number after the skill is the target. This table shows how often a check wor
 So Chief Okoro wakes the core 6 times in 10. Dr Hale, with no engineering at all, manages
 it 2 times in 10.
 
-The page tells the crew what happened. After a try, the party's page gains a line like
+The page tells the crew what happened. After a try, everyone's page gains a line like
 this, and then the line of the room they landed in:
 
 ```
-Chief Okoro - engineering 4, rolled 6: 10 vs 9, success.
+Chief Okoro - engineering 4, rolled 5: 9 vs 9, success.
 ```
 
 In a scene made of rooms, each person rolls alone. Nobody helps.
@@ -180,58 +190,70 @@ In a scene made of rooms, each person rolls alone. Nobody helps.
    two facts, and there are four to find now, so any party can finish.
 2. **A check always has an `else`, and both rooms lead back.** Write the room for failure
    as carefully as the room for success. Half your players will read it.
-3. **Before the check always happens. After the check happens only on success.**
+3. **What follows the check happens only on success.**
    `; check engineering 9 else core_dead, learn lockout` teaches the fact only when the
-   core wakes. Put `learn lockout` in front of `check` and the party learns it either way.
-4. **Skills belong to the seat's person, whatever the player calls them.** A player
-   with a saved name of their own keeps both the job and the numbers.
+   core wakes.
+4. **Skills belong to the seat's person.** They are read from the roster, by the record's
+   key.
 
 A party may try a check again. The roll is for drama. It is not a lock.
 
 ## Step 6 - Check it
 
 ```
-sbs lint MyMission
+sbs lint MyBoarding
 ```
 
-You want `clean` under `mission.amd`. Lint catches nearly every mistake you can make here.
+```
+== mission.amd ==
+  clean
 
-| Mistake | What lint says | What the game would do |
+1 amd + 1 mast file(s): 0 error(s), 0 warning(s)
+```
+
+Lint names nearly every mistake you can make here. Each row was tried on the finished
+file: one change, lint, and then every party walked through it.
+
+| Mistake | What the game does | Lint says |
 |---|---|---|
-| `Skill: medical 4` (no `s`) | `Skill` is not a known crew field | Ignore the line |
-| `Skills medical 4` (no colon) | An error: it expected `Label: value` | Ignore the line |
-| `Skills: medical 4 science 3` (no comma) | `medical 4 science 3` is not a skill and a number, so it is dropped | Lose both numbers |
-| `Skills: medical: 4`, `medical=4`, `4 medical` or `medical four` | The same warning, naming that entry | Lose that number |
-| Two `Skills:` lines on one person | `Skills:` is written twice, and only the last line counts | Use the second line only |
-| A person written with four hashes | They are not directly under the roster. `Give this heading 3 hashes` | Give that seat an automatic name |
-| `if skill science => 3` (the sign backwards) | Not a condition the game can read | Offer the choice to nobody |
-| `if skill science 3` (no sign) | It has no sign and number | Offer the choice to nobody |
-| `if science >= 3` (the word `skill` left out) | `science` on its own is a job, which is 1 or 0 | Offer the choice to nobody |
-| `if skill sience >= 3` | Nobody on the roster has a skill or a job called `sience` | Offer the choice to nobody |
-| `; chek engineering 9 else core_dead` | `chek` is not an outcome verb | Roll nothing. The choice always works |
-| `check engineering else core_dead` (no number), `check engineering >= 9`, or `nine` | Nothing is rolled and the choice always works | Exactly that, and write a line in `mast.runtime.log` |
-| `check enginering 9` | Nobody on the roster has `enginering`, so everyone rolls with 0 | Exactly that |
-| `check engineering 9, else core_dead` (a comma before `else`) | `else` is not an outcome verb | Send a failed roll to the success room |
-| `else core_ded` (a room that does not exist) | A failed roll goes to `core_ded`, and no room here has that key | End the visit on a failed roll |
-| The room for success is not written | A warning that names the room and the key | End the visit when the roll works |
+| `Skill: medical 4, science 3` (no `s`) | Ignores the line. Dr Hale loses the sensor record | `unknown-field` |
+| `Skills medical 4, science 3` (no colon) | The same | `fence-syntax`, an error |
+| `Skills: medical 4 science 3` (no comma) | Loses both numbers | `skills-shape` |
+| `Skills: medical: 4, science 3`, `medical=4`, `4 medical` or `medical four` | Loses that one number. The science entry still counts | `skills-shape` |
+| Two `Skills:` lines on one person | Uses the second line only | `repeated-skills` |
+| `Skills:` typed below the closing `---` | Ignores the line | `field-below-fence` |
+| A person written with four hashes | Gives that seat a name from the game, and no skills | `crew-member-level` |
+| `if skill science => 3` (the sign backwards) | Offers the choice to nobody | `unreadable-guard` |
+| `if skill science 3` (no sign) | Offers the choice to nobody | `skill-gate-shape` |
+| `if science >= 3` (the word `skill` left out) | Offers the choice to nobody. `science` on its own is a job | `job-gate-never` |
+| `if skill sience >= 3` | Offers the choice to nobody | `unknown-skill` |
+| `; chek engineering 9 else core_dead` | Rolls nothing. The choice always works | `unknown-outcome-verb` |
+| `check engineering else core_dead` (no number), `check engineering >= 9`, or `nine` | Rolls nothing. The choice always works, and `mast.runtime.log` gains a line each time it is picked | `check-shape` |
+| `check enginering 9` | Rolls, with 0 for everyone | `unknown-skill` |
+| `check engineering 9, else core_dead` (a comma before `else`) | A failed roll never reaches The Board Stays Dark | `unknown-outcome-verb` |
+| `else core_ded` (a room that does not exist) | Ends the visit on a failed roll | `check-else-missing` |
+| The room for success is not written | Ends the visit when the roll works | `dangling-choice` |
 
-Lint says `clean` for these, and they may still not be what you meant:
+What lint cannot see. Each of these says `clean`:
 
 | You wrote | What happens |
 |---|---|
-| `sience 3` on the ROSTER | That person has a skill called `sience`, and no science. Lint cannot know which word you meant |
+| `sience 3` on the ROSTER | That person has a skill called `sience`, and no science. Dr Hale loses the sensor record. Lint cannot know which word you meant |
 | `if skill science >= 5`, and nobody has 5 | Nobody is offered the choice |
-| `check engineering 9` with no `else` | Allowed. A failed roll still goes to the choice's own room, but nothing after the check happens |
+| `check engineering 15`, and the best aboard is 4 | Nobody can pass it. The room for success is never read |
+| `check engineering 9` with no `else` | A failed roll never reaches The Board Stays Dark |
 
 A second `;` works the same as the comma: `; check engineering 9 else core_dead ; learn
 lockout` is fine.
 
 ## Step 7 - Play it
 
-**With two consoles**, Engineering and Science:
+```
+sbs run server,helm,engineering,science -m MyBoarding map=0
+```
 
-1. Fly inside 500 of the hulk. On both consoles, press the tablet icon, open **Boarding
-   Party** and press **BEAM DOWN**.
+1. Fly inside 500 of the hulk. On Engineering and on Science, press the handheld icon,
+   open **Boarding Party** and press **BEAM DOWN**.
 2. Go forward to the bridge. The Science console (Dr Hale) is offered **Pull the sensor
    record**. The Engineering console is not.
 3. Go back, then aft to the reactor. Both consoles are offered **Try to wake the core**.
@@ -240,24 +262,25 @@ lockout` is fine.
 5. Step back. Let Chief Okoro try. This roll says `engineering 4`.
 
 Look at the number in the roll line. If the chief's line says `engineering 2`, the game is
-not reading the chief's `Skills:` line. Run lint: the line is misspelled, or its entry is
-(Step 6).
+not reading his `Skills:` line. Run lint: the line is misspelled, or its entry is.
 
-**With one console**, say Engineering: you are Chief Okoro. The suit tags come to you
-marked as covering, as they did last time. The sensor record does not come to you at all.
-You can still try the core.
+**With Engineering alone aboard**: you are Chief Okoro. The suit tags come to you marked
+as covering, as they did last time. The sensor record does not come to you at all. You can
+still try the core.
+
+Nothing on the handheld shows a person their own skill numbers. The only number a player
+sees is in a roll line.
 
 ## If something goes wrong
 
 | What you see | Likely cause |
 |---|---|
-| The chief's roll says `engineering 2`, not 4 | The chief's `Skills:` line is misspelled, or its `engineering` entry is. Lint names it |
+| The chief's roll says `engineering 2`, not 4 | His `Skills:` line is misspelled, or its `engineering` entry is. Lint names it |
 | The surgeon is in the party and nobody is offered the sensor record | The skill word in the room is not the word on her `Skills:` line, or her number is lower than the room asks for |
 | A roll says `0` for someone who should be good | The skill word after `check` is not the word on the roster. The roll line shows the word as you typed it |
 | Trying the core always works, and no roll line appears | The check has no number, or the number is written as a word, or there is a sign in it. Lint warns, and `mast.runtime.log` has a line each time it is picked |
 | A failed roll leads to the room for success | The check has no `else`, or there is a comma before `else` |
 | A failed roll ends the visit and everyone is back at their station | The room named after `else` does not exist. Lint warns about it |
-| The numbers do nothing at all, and lint is clean | Your copy of the game's library is older than this lesson. Update it |
 
 ## Exercise
 
@@ -277,7 +300,7 @@ In Lecture 2 you added a third person to your roster, at Helm, with a job of you
 
 You are done when all four are true:
 
-- `sbs lint MyMission` shows `mission.amd` as `clean`.
+- `sbs lint MyBoarding` says `clean`.
 - With the surgeon in the party, **Pull the sensor record** is offered to her and to
   nobody else.
 - When the chief tries the core, the roll line says `engineering 4`.
@@ -290,12 +313,8 @@ somewhere it leads.
 
 ## Further reading
 
+Nothing here is needed for Lecture 5.
+
 - "Crew rosters" in the library documentation: `Roles:`, `Skills:`, `Names:`, and who a
   console is.
-- "Boarding parties" in the library documentation: job conditions, `learn`, `skill` and
-  `check`, and what happens when a party is short of people.
-- The headers of `landing_crew.amd` and `scenes.amd` in the Dawnline mission
-  (`LandingParty`): a seven-person roster with skills, and a long scene file that uses
-  `if skill` and `check` throughout. One line in the `scenes.amd` header is out of date:
-  it says the outcomes beside a check happen whether or not the roll works. Today the
-  ones written after the check happen only on success.
+- "Boarding parties" in the library documentation: `skill` and `check`.

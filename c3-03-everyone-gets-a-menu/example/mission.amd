@@ -71,8 +71,6 @@ Tab: mat
 % Scoring along the plating matches no weapon in use in this sector.
 
 
-// ---- The crew. Each record is the person at one console - on the bridge, and aboard
-// the hulk. `Names: locked` makes them YOUR people: a player's own saved name is not used.
 ## [The Watch](watch)
 ---
 crew
@@ -84,19 +82,18 @@ The people aboard for this story.
 ### [Chief Okoro](okoro)
 ---
 Console: engineering
-Face: terran_female
+Face: terran_male
 Roles: engineering
 ---
 
 ### [Dr Hale](hale)
 ---
 Console: science
-Face: terran_male
+Face: terran_female
 Roles: medical
 ---
 
 
-// ---- Where they go. Each record is one room: what the party finds, then the ways out.
 ## [Scenes](boarding)
 
 ### [The Airlock](airlock)
@@ -117,7 +114,6 @@ Roles: medical
 
 - [Read the shutdown record](shutdown) if engineering ; learn shutdown
 - [Go back to the airlock](airlock)
-- [Return to the ship]()
 
 ### [The Shutdown Record](shutdown)
 % Shut down from this room, and then the restart key was taken out and carried away. Whoever did it did not mean for her to wake up.
@@ -130,7 +126,6 @@ Roles: medical
 
 - [Answer the log](last_entry) if learned >= 2
 - [Go back to the airlock](airlock)
-- [Return to the ship]()
 
 ### [The Last Entry](last_entry)
 % Six aboard. Core cold. Key over the side. The last entry is one word: QUARANTINE.

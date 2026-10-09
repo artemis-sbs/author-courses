@@ -1,0 +1,163 @@
+// Every piece of authored CONTENT in this mission lives in this one file. story.mast holds
+// only the logic that reacts to it.
+//
+// The shape is a table of contents: one `#` root, a `##` section per loader, and `###` /
+// `####` records inside. story.mast parses this once and hands each section to its loader.
+//
+// A record is `### [Display Name](key)`, an optional `---` fenced block of fields, then
+// body prose. Comments are `//` - note that .mast uses `#` instead.
+
+# [Sample Mission](sample_mission)
+
+
+// ---- Quests. Nested records are steps of the arc above them, addressed `arc/step`.
+## [Quests](quests)
+
+### [First Contact](first_contact)
+---
+Arc
+Scope: shared
+Starts when: at once
+---
+A derelict has drifted into the sector. Find out what happened to it.
+
+#### [Find the Derelict](find)
+---
+Scope: shared
+Starts when: at once
+Done when: signal derelict_found
+Then: reveal first_contact/study
+---
+Fly out and locate the drifting hulk.
+
+#### [Study the Derelict](study)
+---
+Scope: shared
+Starts when: revealed
+Done when: signal derelict_scanned
+---
+Science should take a full scan of the hull.
+
+
+// ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
+// it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
+// several readings picked at random - so a second scan does not read identically.
+## [Scans](scans)
+
+### [Derelict Hull](derelict_scan)
+---
+Scan of: derelict
+Tab: scan
+---
+% The hull is cold. Whatever happened here happened a long time ago.
+% Hull plating is intact but every port is dark. No power anywhere aboard.
+
+### [Derelict Materials](derelict_mat)
+---
+Scan of: derelict
+Tab: mat
+---
+% Scoring along the plating matches no weapon in use in this sector.
+
+
+## [Scenes](boarding)
+
+### [The Landing Field](arrival)
+% Warm, still, and swept. Somebody has raked the gravel into lines this morning.
+% Eleven of us now. We manage. The children are at their lessons, so it is quieter than usual.
+
+- [Look at the people meeting you](arrival_med) if medical >= 1 ; learn thin
+- [Look at the power spur](arrival_eng) if engineering >= 1 ; learn cold
+- [Count the doors](arrival_sec) if security >= 1 ; learn watched
+- [Ask when the last supply run came](arrival_sci) if science >= 1 ; learn idle
+- [Walk in with her](hall)
+- [Beam back up]()
+
+### [The People Meeting You](arrival_med)
+% Four adults, all well fed, all with the same faint tremor in the hands.
+% Not illness. Not cold. You have seen it in people who have not slept properly in a long time and have stopped mentioning it.
+
+- [Say it out loud](arrival)
+
+### [The Power Spur](arrival_eng)
+% Rated for eleven, drawing for forty. Every one of those amps is going somewhere and it is not going into these buildings.
+% The cable heading east is the newest thing on this colony.
+
+- [Say it out loud](arrival)
+
+### [Counting The Doors](arrival_sec)
+% Nine doors on the square, and every one of them opens inward and locks from the outside.
+% That is not how you build against weather.
+
+- [Say it out loud](arrival)
+
+### [The Last Supply Run](arrival_sci)
+% Fourteen months, she says, and the manifest agrees with her.
+% What it also says is that they ordered nothing on it. Not one item. A colony that needs nothing is a colony that has stopped planning.
+
+- [Say it out loud](arrival)
+
+### [The Long Hall](hall)
+% Tables for forty and eleven place settings, laid at the near end where the light is.
+% We keep it as it was. It seemed better than taking the rest away.
+
+- [Look at the place settings](hall_med) if medical >= 1 ; learn tended
+- [Look at what is heating this room](hall_eng) if engineering >= 1 ; learn idle
+- [Look at the far end](hall_sec) if security >= 1 ; learn tended
+- [Read the colony register](hall_sci) if science >= 1 ; learn thin
+- [Ask to see the east cable](east)
+- [Beam back up]()
+
+### [The Place Settings](hall_med)
+% Eleven laid, and every one of them worn at the same corner by the same right-handed grip.
+% One person set all of these, every day, for a long time.
+
+- [Say it out loud](hall)
+
+### [What Is Heating This Room](hall_eng)
+% Nothing is. The heat in here is coming through the east wall, from something on the other side of it that is running hot.
+% You could warm this hall on the waste alone, and nobody has thought to.
+
+- [Say it out loud](hall)
+
+### [The Far End](hall_sec)
+% Dust on the tables, and no dust on the floor between them. That floor is walked every day and never sat at.
+% Something goes down this hall regularly. It does not stop to eat.
+
+- [Say it out loud](hall)
+
+### [The Colony Register](hall_sci)
+% Forty one names. Eleven without a line through them, and the lines are all in the same hand and the same ink.
+% They were not crossed out as it happened. Somebody sat down one afternoon and did all thirty at once.
+
+- [Say it out loud](hall)
+
+### [The East Cable](east)
+% It runs a kilometre to a shed with no windows, and the shed is the warmest thing on this world.
+% That is the relay. It is not interesting. I would rather show you the orchard.
+%{learned < 3} She says it pleasantly and does not move. You have nothing to put to her yet - whatever is wrong with Ferrow Landing, you have not found enough of it to say out loud.
+
+- [Ask her plainly what is in the shed](east_ask)
+- [Open it](open) if learned >= 3
+- [Let her show you the orchard](orchard)
+- [Walk back to the hall](hall)
+- [Beam back up]()
+
+### [Asking Plainly](east_ask)
+% It is the relay.
+% She says it the same way both times, with the same pauses. You have heard a person say a true thing twice. This is not what that sounds like.
+
+- [Back to the shed](east)
+
+### [The Orchard](orchard)
+% Thirty saplings in rows, none of them older than a year, each with a stone at its foot.
+% We plant one for each of them. It is what we could think of.
+
+- [Go back to the shed](east)
+- [Walk back to the hall](hall)
+
+### [The Shed](open)
+% Thirty of them, warm, breathing, and asleep. The machine keeping them that way is drawing every spare amp on the colony and Bel is not stopping you looking at it.
+% We could not wake them. We could not bury them either. So we kept them, and we set their places, and we said we were fine.
+
+- [She was not lying, exactly]()

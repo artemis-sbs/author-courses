@@ -1,71 +1,83 @@
 s01_cold_open_0	Same button. Two people.
-s01_cold_open_1	One of them is the chief engineer and one of them is a surgeon, and the ship can tell the difference.
-s01_cold_open_2	Last time a choice asked what your job is.
-s01_cold_open_3	This time it asks how good you are.
-s02_skills_on_the_roster_0	One new line each.
-s02_skills_on_the_roster_1	Skills, colon, then a list: a word, a number, a comma.
-s02_skills_on_the_roster_2	The chief: engineering four, science one.
-s02_skills_on_the_roster_3	The doctor: medical four, science three.
-s02_skills_on_the_roster_4	The word is the name of the skill and you can invent your own, as long as it is one word.
-s02_skills_on_the_roster_5	The number is how good they are.
-s02_skills_on_the_roster_6	I use a scale that tops out at four.
-s02_skills_on_the_roster_7	Two means you do it for a living, and here is something the game gives you for nothing: a job counts as two.
-s02_skills_on_the_roster_8	The chief was already engineering two before I typed anything.
-s02_skills_on_the_roster_9	Now look at the doctor.
-s02_skills_on_the_roster_10	Her job is medical.
-s02_skills_on_the_roster_11	Science is not her job.
-s02_skills_on_the_roster_12	She is just good at it.
-s03_nothing_to_paste_0	Lint is happy, and that is all there is to it.
-s03_nothing_to_paste_1	The game reads these numbers with the rest of the roster.
-s03_nothing_to_paste_2	I do not open the other file today.
-s03_nothing_to_paste_3	One thing worth knowing: the numbers belong to the person on the roster, not to the name on the screen.
-s03_nothing_to_paste_4	If a player has saved a name of their own and sits in the doctor's chair, they are still as good as the doctor.
-s04_a_choice_for_someone_good_en_0	On the bridge, a new choice. if skill science, at least three.
-s04_a_choice_for_someone_good_en_1	Four parts: the word skill, which skill, a sign, a number.
-s04_a_choice_for_someone_good_en_2	The doctor has science three, so she is offered it.
-s04_a_choice_for_someone_good_en_3	The chief has science one, and is not.
-s04_a_choice_for_someone_good_en_4	And here is the difference from last time.
-s04_a_choice_for_someone_good_en_5	When a job is missing from the party, one console covers for it.
-s04_a_choice_for_someone_good_en_6	Nobody covers for a skill.
-s04_a_choice_for_someone_good_en_7	If the doctor stays on the ship, the sensor record is on nobody's menu.
-s04_a_choice_for_someone_good_en_8	So a skill choice is a bonus.
-s04_a_choice_for_someone_good_en_9	Never put the only way forward behind one.
-s05_a_choice_anyone_may_try_0	Now the other kind.
-s05_a_choice_anyone_may_try_1	No if at all, so everyone is offered it.
-s05_a_choice_anyone_may_try_2	After the semicolon: check engineering 9.
-s05_a_choice_anyone_may_try_3	The game rolls a number from one to ten and adds your engineering.
-s05_a_choice_anyone_may_try_4	Nine or more, it works, and the party goes to the room in the brackets.
-s05_a_choice_anyone_may_try_5	Then else, and the room for when it does not work.
-s05_a_choice_anyone_may_try_6	So this one choice needs two rooms, and I write the failure as carefully as the success, because half my players are going to read it.
-s05_a_choice_anyone_may_try_7	Last part: a comma, and learn lockout.
-s05_a_choice_anyone_may_try_8	Anything after the check, after a comma, only happens when the check worked.
-s05_a_choice_anyone_may_try_9	The odds: target nine, skill four, six times in ten.
-s05_a_choice_anyone_may_try_10	Skill zero, two in ten.
-s05_a_choice_anyone_may_try_11	Twelve is hard.
-s05_a_choice_anyone_may_try_12	Six is easy.
-s06_rules_and_lint_0	Four rules.
-s06_rules_and_lint_1	A skill choice is a bonus.
-s06_rules_and_lint_2	A check has an else, and both rooms lead back.
-s06_rules_and_lint_3	Before the check always happens, after it only on success.
-s06_rules_and_lint_4	And the numbers go with the seat, whatever the player calls themselves. Lint.
-s06_rules_and_lint_5	A misspelled Skills.
-s06_rules_and_lint_6	A missing comma: it tells me that entry is dropped.
-s06_rules_and_lint_7	A check with no number: nothing would be rolled, and it would always work.
-s06_rules_and_lint_8	An else that points at a room I never wrote: that one would end the visit, and only on a failed roll, so I would not find it by playing once.
-s06_rules_and_lint_9	And if science at least three, with the word skill left out: science on its own is a job, and a job is one or zero.
-s06_rules_and_lint_10	Lint reads all of these.
-s06_rules_and_lint_11	Two things it cannot know: a skill you misspelled on the roster itself, and a number nobody has.
-s07_play_it_0	The bridge.
-s07_play_it_1	The doctor has the sensor record.
-s07_play_it_2	The chief does not. The reactor.
-s07_play_it_3	The doctor tries.
-s07_play_it_4	There is her roll: engineering zero, and the board stays dark.
-s07_play_it_5	The chief tries. Engineering four.
-s07_play_it_6	That four is the number I typed on the roster, and that is the thing to look for: if it says two, that person's Skills line is not being read, and lint will tell you why.
-s07_play_it_7	Now the chief alone.
-s07_play_it_8	The suit tags arrive marked as covering for medical.
-s07_play_it_9	The sensor record does not come to anyone.
-s08_your_turn_0	Your third crew member gets two skills.
-s08_your_turn_1	Give them a choice only they can see and a check anyone can try.
-s08_your_turn_2	Then break it on purpose: take the s off one Skills, read what lint says, and play it once to see what that person loses.
-s08_your_turn_3	Next time, one of these people gets a quest that is theirs alone.
+s01_cold_open_1	One of them is the chief engineer and one of them is a surgeon,
+s01_cold_open_2	and the hulk can tell the difference.
+s01_cold_open_3	Last time, a choice asked what your job is.
+s01_cold_open_4	This time it asks how good you are.
+s02_say_what_each_person_is_good_0	I open my roster,
+s02_say_what_each_person_is_good_1	and I give each person one new line, under their job. It's a list:
+s02_say_what_each_person_is_good_2	a word, a space and a number,
+s02_say_what_each_person_is_good_3	with commas in between.
+s02_say_what_each_person_is_good_4	The chief is engineering four, and science one.
+s02_say_what_each_person_is_good_5	The doctor is medical four, and science three.
+s02_say_what_each_person_is_good_6	Now look at that last one.
+s02_say_what_each_person_is_good_7	Science isn't her job.
+s02_say_what_each_person_is_good_8	She's simply good at it.
+s02_say_what_each_person_is_good_9	And that's what a skill is for.
+s02_say_what_each_person_is_good_10	There's nothing to paste this time.
+s02_say_what_each_person_is_good_11	The game reads these lines along with the rest of the roster.
+s02_say_what_each_person_is_good_12	A job with no number counts as two,
+s02_say_what_each_person_is_good_13	so before today the chief's engineering was two, and this line makes it four.
+s03_a_choice_for_someone_good_en_0	On the bridge I add a choice with a new kind of condition. It says if,
+s03_a_choice_for_someone_good_en_1	then the word skill, then science,
+s03_a_choice_for_someone_good_en_2	then at least three.
+s03_a_choice_for_someone_good_en_3	Dr Hale has science three, so she's offered it.
+s03_a_choice_for_someone_good_en_4	The chief has one, so he isn't.
+s03_a_choice_for_someone_good_en_5	And here's the thing to remember.
+s03_a_choice_for_someone_good_en_6	When a choice asks for a job,
+s03_a_choice_for_someone_good_en_7	and that person stayed on the ship,
+s03_a_choice_for_someone_good_en_8	somebody covers for them.
+s03_a_choice_for_someone_good_en_9	When a choice asks for a skill, nobody covers.
+s03_a_choice_for_someone_good_en_10	With the doctor at home, that record isn't on anyone's menu.
+s04_a_choice_anyone_may_try_0	In the reactor room, a different idea.
+s04_a_choice_anyone_may_try_1	This choice has no condition,
+s04_a_choice_anyone_may_try_2	so everyone is offered it.
+s04_a_choice_anyone_may_try_3	What differs is how it turns out.
+s04_a_choice_anyone_may_try_4	After the semicolon it says check, then a skill,
+s04_a_choice_anyone_may_try_5	then a target of nine.
+s04_a_choice_anyone_may_try_6	The game picks a number from one to ten,
+s04_a_choice_anyone_may_try_7	adds that person's skill,
+s04_a_choice_anyone_may_try_8	and nine or more works.
+s04_a_choice_anyone_may_try_9	Then else, and a second room,
+s04_a_choice_anyone_may_try_10	which is where a failure goes.
+s04_a_choice_anyone_may_try_11	And after a comma, what the party learns,
+s04_a_choice_anyone_may_try_12	but only when it worked.
+s04_a_choice_anyone_may_try_13	So the chief wakes the core six times in ten,
+s04_a_choice_anyone_may_try_14	and the doctor manages it twice in ten.
+s04_a_choice_anyone_may_try_15	And the page shows the roll to everyone in the room,
+s04_a_choice_anyone_may_try_16	so the whole party sees who tried and how close it was.
+s05_four_rules_0	Four rules. A skill choice is a bonus, and never the only way,
+s05_four_rules_1	because nobody covers for a skill.
+s05_four_rules_2	A check always has an else,
+s05_four_rules_3	and both rooms lead back.
+s05_four_rules_4	What comes after the check happens only on success.
+s05_four_rules_5	And the numbers belong to the person on the roster.
+s05_four_rules_6	A party may try again, by the way.
+s05_four_rules_7	The roll is there for drama.
+s05_four_rules_8	It isn't a lock.
+s06_lint_0	Lint is clean, and it names nearly every slip you can make here.
+s06_lint_1	Leave the s off Skills, and it tells you.
+s06_lint_2	Leave the number out of a check,
+s06_lint_3	and it tells you nothing would be rolled.
+s06_lint_4	The one it can't catch is a skill misspelled on the roster itself,
+s06_lint_5	because you're allowed to invent skills.
+s06_lint_6	So read your roster once, slowly.
+s07_play_it_0	Both aboard. On the bridge, the doctor has the sensor record,
+s07_play_it_1	and the chief doesn't.
+s07_play_it_2	In the reactor room, they both have the same button.
+s07_play_it_3	The doctor tries first,
+s07_play_it_4	and the page shows her roll, with engineering nought in it.
+s07_play_it_5	Then the chief tries,
+s07_play_it_6	and his line says engineering four.
+s07_play_it_7	That number is the one to watch.
+s07_play_it_8	If the chief's line says two,
+s07_play_it_9	the game isn't reading his Skills line,
+s07_play_it_10	and lint will say why.
+s07_play_it_11	One more thing you'll notice.
+s07_play_it_12	Nothing on the handheld tells a player their own numbers.
+s07_play_it_13	The only place a number shows is in a roll.
+s08_your_turn_0	Give your third person some skills.
+s08_your_turn_1	Add one choice that only they're good enough for,
+s08_your_turn_2	and one check on a skill that nobody has. Then break it.
+s08_your_turn_3	Take the s off Skills, read the warning,
+s08_your_turn_4	and play it once anyway.
+s08_your_turn_5	Next time, one person gets a quest of their own.

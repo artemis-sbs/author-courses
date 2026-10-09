@@ -23,13 +23,22 @@ words to one line of `story.mast`.
   the check and the log.
 - You have chained quests with `Then:` (Class 1, Lecture 9) and pasted the boarding recipe
   card (Lecture 2).
-- `sbs lint MyMission` says `clean`.
-- Two consoles if you can manage it, Engineering and Science. One console also works.
+- `sbs lint MyBoarding` says `clean`.
+- Three consoles if you can manage it: Helm to fly, and Engineering and Science to go
+  aboard.
+
+Words for this lecture:
+
+| Word | Meaning |
+|---|---|
+| Side story | A quest that belongs to one person in the party |
+| Hand out | Give a side story to its person. The game does it as they beam down |
+| Tasks | The app on the handheld that lists a person's own stories |
 
 ## Step 1 - A section for side stories
 
-Open `mission.amd`. Go to the very end of the file and add a new section with one story
-in it:
+Open `mission.amd`. Go to the very end of the file, leave two blank lines, and add a new
+section with one story in it:
 
 ```
 ## [Side Stories](side_stories)
@@ -55,6 +64,18 @@ to one person.
 | `Objective:` | The one sentence that says what is asked |
 | `Done when: signal names_read` | What finishes it: a signal with a name you choose. Step 2 sends it |
 
+Save, and run lint. It warns twice, and both are true for the moment:
+
+```
+== mission.amd ==
+  [WARNING] line 155:5: nothing in this mission hands out `Side Stories`, so nobody gets the quests in it. Give it to the visit: `boarding_visit(..., stories=amd_section(MISSION_DOC, "side_stories"))` (stories-not-handed-out)
+  [WARNING] line 162:19: `six_names` waits for the signal `names_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+
+1 amd + 1 mast file(s): 0 error(s), 2 warning(s)
+```
+
+Step 2 clears the second, and Step 3 clears the first.
+
 ## Step 2 - Her own reading finishes it
 
 In **The Airlock**, find the choice only the surgeon is offered. Add a comma and a signal
@@ -78,12 +99,15 @@ Do not forget the comma. A second `;` works in place of it.
 
 ## Step 3 - Hand the stories to the visit
 
-Open `story.mast` and find the boarding card you pasted in Lecture 2. One line of it
-begins `boarding_visit(`. Add the last part, from the comma to the two closing brackets:
+Open `story.mast` and find the boarding card you pasted in Lecture 2, at the end of the
+file. One line of it begins `boarding_visit(`. Add the last part, from the comma after
+`"The Hulk"` to the two closing brackets:
 
 ```
-    boarding_visit(party_ship, BOARDING_SCENES, "airlock", title="The Hulk", stories=amd_section(MISSION_DOC, "side_stories"))
+    boarding_visit(party_ship, dialogue_scenes(amd_section(MISSION_DOC, "boarding")), "airlock", title="The Hulk", stories=amd_section(MISSION_DOC, "side_stories"))
 ```
+
+It is still one line.
 
 | Part | What it means |
 |---|---|
@@ -93,7 +117,7 @@ begins `boarding_visit(`. Add the last part, from the comma to the two closing b
 The key in quotes must be the key in round brackets on your Side Stories heading.
 
 That is the whole change. From now on each person is handed their story as they beam down,
-including someone who beams down late.
+including someone who beams down late. Run lint, and it says `clean`.
 
 ## Step 4 - A second story
 
@@ -128,8 +152,8 @@ Add one line to **Six Names**, below `Done when:`:
 Then: signal names_known
 ```
 
-Then go up to your Quests section and add a quest for the whole ship, below Close
-Inspection:
+Then go up to your Quests section and add a quest for the whole ship, below the last line
+of Close Inspection:
 
 ```
 ### [Account for the Crew](account)
@@ -198,11 +222,12 @@ What `For:` takes:
 ## Step 7 - Check it
 
 ```
-sbs lint MyMission
+sbs lint MyBoarding
 ```
 
 You want `clean` under `mission.amd`. Lint names every mistake in this table. The words in
-the last column are at the end of the line lint prints.
+the last column are at the end of the line lint prints. Each row was tried on the finished
+files: one change, lint, then the game.
 
 | Mistake | What the game would do | Lint says |
 |---|---|---|
@@ -213,7 +238,7 @@ the last column are at the end of the line lint prints.
 | `if medical, signal names_read` (no `;`) | Offer the choice to nobody | `unreadable-guard` |
 | `For: medcal`, `For: science`, `For: everyone`, or two jobs | Hand the story to nobody | `for-nobody`, with the words your roster does answer to |
 | No `For:` line, or `Fro: medical` | Hand the story to nobody | `story-no-for` (and `unknown-field` for `Fro`) |
-| `For medical` (no colon) | Hand the story to nobody | An error: it expected `Label: value` |
+| `For medical` (no colon) | Hand the story to nobody | `fence-syntax`, an error, and `story-no-for` |
 | `For:` typed below the closing `---` | Hand the story to nobody | `field-below-fence` |
 | No `Starts when:` line, or `Starts when: accepted` | Hand the story over asleep. Nothing wakes it | `for-not-started` |
 | No `Done when:` line | Leave the story running for good | `for-no-end` |
@@ -228,7 +253,8 @@ the last column are at the end of the line lint prints.
 | The words `stories=...` left off the `boarding_visit` line | Hand out nothing | `stories-not-handed-out` |
 | `"side_story"` on the `boarding_visit` line, `side_stories` on the heading (or the other way round) | Hand out nothing | `stories-not-handed-out` |
 
-Lint says `clean` for the two in this second table. Check these by eye.
+What lint cannot see. It says `clean` for the first of these, and for the second it warns
+about something else:
 
 | You wrote | What happens |
 |---|---|
@@ -237,11 +263,15 @@ Lint says `clean` for the two in this second table. Check these by eye.
 
 ## Step 8 - Play it
 
-**With two consoles**, Engineering and Science:
+```
+sbs run server,helm,engineering,science -m MyBoarding map=0
+```
+
+**With two aboard**, Engineering and Science:
 
 1. Before you leave the station, open the quest list. **Account for the Crew** is there.
-2. Fly inside 500 of the hulk. On both consoles, press the tablet icon, open **Boarding
-   Party** and press **BEAM DOWN**.
+2. Fly inside 500 of the hulk. On Engineering and on Science, press the handheld icon,
+   open **Boarding Party** and press **BEAM DOWN**.
 3. On the Science console (Dr Hale), press **Back**. The handheld shows three apps: Crew,
    Act and **Tasks**. Open Tasks. Under her name is **Six Names**, marked Active. Below it,
    under Party, are the ship's quests. Press Back, then open Act.
@@ -250,11 +280,12 @@ Lint says `clean` for the two in this second table. Check these by eye.
    Crew` and `Quest complete: Six Names`. The side is paid 150 credits.
 6. Step back, then go aft. The Engineering console (Chief Okoro) takes **Read the shutdown
    record**. The bridge is told `Quest complete: A Cold Core`.
-7. Return to the ship and open the quest list. Account for the Crew is complete.
+7. Walk back to the airlock, return to the ship, and open the quest list. Account for the
+   Crew is complete.
 
 A person with no story of their own has two apps on the handheld, Crew and Act.
 
-**With one console**, say Engineering: you are Chief Okoro. The suit tags come to you
+**With Engineering alone aboard**: you are Chief Okoro. The suit tags come to you
 marked as covering for medical. Take the reading. The party learns the fact, and Account
 for the Crew stays open, because nobody was handed Six Names. Your own story, A Cold Core,
 still finishes when you read the shutdown record.
@@ -290,7 +321,7 @@ choosing. In Lecture 3 you gave them a reading.
 
 You are done when all four are true:
 
-- `sbs lint MyMission` shows `mission.amd` as `clean`.
+- `sbs lint MyBoarding` shows `mission.amd` as `clean`.
 - With the surgeon in the party, her handheld lists Six Names, and her reading of the suit
   tags completes Account for the Crew. The side is paid 150 credits.
 - With the surgeon left on the ship, another console can take the reading, and Account for
@@ -305,6 +336,8 @@ menus, the skills and the side stories together into one ten-minute away scene, 
 it.
 
 ## Further reading
+
+Nothing here is needed for Lecture 6.
 
 - "Boarding parties" in the library documentation, under "A quest for one person": `For:`
   and `stories=`.

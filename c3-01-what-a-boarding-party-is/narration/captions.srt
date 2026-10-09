@@ -1,0 +1,379 @@
+1
+00:00:00,000 --> 00:00:02,174
+This is a boarding party.
+
+2
+00:00:03,074 --> 00:00:05,248
+Somebody has left the ship,
+
+3
+00:00:05,698 --> 00:00:08,741
+and they're standing on a landing field,
+
+4
+00:00:09,191 --> 00:00:13,104
+talking to a woman who says everything is fine.
+
+5
+00:00:14,904 --> 00:00:17,513
+Nobody drew this place. It's this:
+
+6
+00:00:17,963 --> 00:00:20,572
+about a hundred lines of text.
+
+7
+00:00:22,372 --> 00:00:25,850
+In this class, you write places like it.
+
+8
+00:00:26,300 --> 00:00:29,778
+Today, you play one that somebody else wrote,
+
+9
+00:00:30,228 --> 00:00:33,707
+and then you read how it was made.
+
+10
+00:00:34,907 --> 00:00:36,646
+First, a new mission.
+
+11
+00:00:37,546 --> 00:00:41,893
+This class doesn't build on the one from Class 1.
+
+12
+00:00:42,343 --> 00:00:45,822
+That story ends the game ten minutes in,
+
+13
+00:00:46,272 --> 00:00:51,054
+and a boarding party should be allowed to take its time.
+
+14
+00:00:52,854 --> 00:00:57,202
+So I make a mission the way I did before,
+
+15
+00:00:57,652 --> 00:01:00,261
+and I call it My Boarding.
+
+16
+00:01:01,161 --> 00:01:04,639
+Then I bring its libraries up to date,
+
+17
+00:01:05,089 --> 00:01:09,002
+open the folder in the editor, and run lint.
+
+18
+00:01:09,902 --> 00:01:15,554
+It's clean, and it's the same small mission you started Class 1 with.
+
+19
+00:01:16,754 --> 00:01:21,972
+There's a shipped campaign with a colony in it called Ferrow Landing.
+
+20
+00:01:22,872 --> 00:01:25,915
+Eleven people, a raked gravel landing field,
+
+21
+00:01:26,365 --> 00:01:29,843
+and an administrator with an answer for everything.
+
+22
+00:01:31,643 --> 00:01:35,991
+I go to the very end of my fact sheet,
+
+23
+00:01:36,441 --> 00:01:39,050
+and I paste that colony's scene.
+
+24
+00:01:39,950 --> 00:01:41,689
+Don't read it yet.
+
+25
+00:01:43,489 --> 00:01:46,098
+Lint has one thing to say.
+
+26
+00:01:46,548 --> 00:01:50,896
+Nothing in this mission reads these rooms. And that's true,
+
+27
+00:01:51,346 --> 00:01:54,824
+because a scene needs something to start it.
+
+28
+00:01:56,624 --> 00:02:01,407
+So I open the story file, go to the very end,
+
+29
+00:02:01,857 --> 00:02:03,596
+and paste one card.
+
+30
+00:02:04,496 --> 00:02:06,235
+Now lint is clean.
+
+31
+00:02:07,435 --> 00:02:12,217
+I start the game with a server and a Helm console,
+
+32
+00:02:12,667 --> 00:02:15,276
+and I fly toward the hulk.
+
+33
+00:02:16,176 --> 00:02:19,220
+When I'm close, I stop the ship,
+
+34
+00:02:19,670 --> 00:02:21,843
+and I open the handheld.
+
+35
+00:02:23,643 --> 00:02:29,730
+There's a tile called Boarding Party, and it's offering Ferrow Landing. I beam down.
+
+36
+00:02:31,530 --> 00:02:34,139
+Now this console is my handheld.
+
+37
+00:02:35,039 --> 00:02:37,648
+Two of these buttons are plain.
+
+38
+00:02:38,098 --> 00:02:39,837
+The others say covering,
+
+39
+00:02:40,287 --> 00:02:42,026
+and then a job.
+
+40
+00:02:42,926 --> 00:02:45,970
+Those belong to people who aren't here,
+
+41
+00:02:46,420 --> 00:02:52,507
+and I'm one helm officer, so they all come to me. I take one,
+
+42
+00:02:52,957 --> 00:02:57,739
+and I read what a medic would've noticed. I walk in.
+
+43
+00:02:58,189 --> 00:03:00,363
+I ask about the cable.
+
+44
+00:03:01,263 --> 00:03:03,872
+And she won't open the shed,
+
+45
+00:03:04,322 --> 00:03:08,235
+because I haven't found enough to say out loud.
+
+46
+00:03:10,035 --> 00:03:13,078
+So I go back and look harder.
+
+47
+00:03:13,978 --> 00:03:15,717
+Three things found out,
+
+48
+00:03:16,167 --> 00:03:18,341
+and now the button's there.
+
+49
+00:03:19,541 --> 00:03:21,280
+Now let's read it.
+
+50
+00:03:22,180 --> 00:03:25,659
+It's one section, with fourteen records in it,
+
+51
+00:03:26,109 --> 00:03:28,717
+and each record is a room.
+
+52
+00:03:30,517 --> 00:03:33,561
+A room has no fence at all.
+
+53
+00:03:34,461 --> 00:03:38,809
+These lines, the ones that start with a percent sign,
+
+54
+00:03:39,259 --> 00:03:41,433
+are what the party finds.
+
+55
+00:03:42,333 --> 00:03:44,072
+There are two here,
+
+56
+00:03:44,522 --> 00:03:48,000
+and the game showed me one of them.
+
+57
+00:03:49,800 --> 00:03:53,278
+Each line with a dash is a choice.
+
+58
+00:03:53,728 --> 00:03:56,337
+The words go on a button,
+
+59
+00:03:56,787 --> 00:04:02,004
+and the key in round brackets is the room it leads to.
+
+60
+00:04:03,804 --> 00:04:05,978
+This one adds a condition.
+
+61
+00:04:06,428 --> 00:04:09,037
+Only a medic is offered it.
+
+62
+00:04:09,937 --> 00:04:11,676
+And after the semicolon,
+
+63
+00:04:12,126 --> 00:04:13,865
+the party learns something.
+
+64
+00:04:15,665 --> 00:04:19,143
+Then here, at the cable, is the door.
+
+65
+00:04:19,593 --> 00:04:23,507
+It asks how many things the party has learned.
+
+66
+00:04:24,407 --> 00:04:29,624
+And this last kind has nothing in its brackets. It leads nowhere,
+
+67
+00:04:30,074 --> 00:04:32,248
+and it ends the visit.
+
+68
+00:04:33,448 --> 00:04:36,926
+The shipped file is about two hundred lines,
+
+69
+00:04:37,376 --> 00:04:39,985
+and I pasted half of it.
+
+70
+00:04:41,785 --> 00:04:47,872
+It opens with a page of notes, from the author to whoever comes next.
+
+71
+00:04:48,772 --> 00:04:54,424
+This one says every room has to lead back as well as on,
+
+72
+00:04:54,874 --> 00:04:58,787
+and it says so because the first version didn't.
+
+73
+00:05:00,587 --> 00:05:02,326
+Then there's a voice,
+
+74
+00:05:02,776 --> 00:05:07,124
+the administrator, of the kind you'll meet in Class 2.
+
+75
+00:05:08,024 --> 00:05:12,807
+And there's the call that starts the scene in that campaign,
+
+76
+00:05:13,257 --> 00:05:17,604
+when the ship docks at the colony. I cut those,
+
+77
+00:05:18,054 --> 00:05:22,837
+and the table on the page says what went and why.
+
+78
+00:05:24,037 --> 00:05:28,820
+Ferrow Landing was a loan, so now I give it back.
+
+79
+00:05:29,720 --> 00:05:35,807
+In the fact sheet I delete everything from the Scenes heading to the end,
+
+80
+00:05:36,257 --> 00:05:38,430
+and it's sixty lines again.
+
+81
+00:05:39,330 --> 00:05:42,809
+In the story file I delete the card,
+
+82
+00:05:43,259 --> 00:05:45,867
+and that's a hundred and five.
+
+83
+00:05:47,667 --> 00:05:51,580
+I save both, I run lint, and it's clean.
+
+84
+00:05:52,480 --> 00:05:55,959
+Don't leave the card behind. Lint won't mind,
+
+85
+00:05:56,409 --> 00:06:01,626
+but the game will go looking for a room that isn't there.
+
+86
+00:06:02,826 --> 00:06:05,870
+Before you delete it, play with it.
+
+87
+00:06:06,770 --> 00:06:09,378
+Change the name on the card,
+
+88
+00:06:09,828 --> 00:06:12,437
+and find it on the tile.
+
+89
+00:06:13,337 --> 00:06:16,380
+Make the shed ask for five things,
+
+90
+00:06:16,830 --> 00:06:20,309
+and see how much harder the colony gets.
+
+91
+00:06:22,109 --> 00:06:25,587
+Then answer three questions from the file alone,
+
+92
+00:06:26,037 --> 00:06:27,776
+with the game closed.
+
+93
+00:06:29,576 --> 00:06:33,489
+Next time, you write a place of your own:
+
+94
+00:06:33,939 --> 00:06:35,678
+a crew, three rooms,
+
+95
+00:06:36,128 --> 00:06:38,737
+and the card that starts it.

@@ -1,152 +1,150 @@
 # C3-4 video script - Crew and skills
 
-Target length: 18 minutes. One continuous screen recording with voice-over, cut at scene
-boundaries. The companion page is `lesson.md`; the finished files are in `example\`.
+> **STATE ON 2026-10-09. Read this first.**
+>
+> - **Everything this page needs is released.** Written for Artemis Cosmos 1.4.0 from
+>   Steam or itch.io, with a current tool and libraries.
+> - **Starts from Lecture 3's finished files** in `MyBoarding`. Only `mission.amd`
+>   changes, so `example\` holds that one file.
+> - **No recipe card.** The game reads `Skills:` with the rest of the roster.
+>   `story.mast` is not opened in this lecture.
+
+> **Measured 2026-10-09, in the mock.** Tool `sbs` as installed, library as packaged
+> (sbs_utils `ae2bbf4a`). The steps were typed onto Lecture 3's files and linted. The
+> finished file was played headless with stand-in consoles, the die fixed at 5 for the
+> two tries the page describes, then with real dice for the counts. Then 29 one-change
+> variants: each linted with the installed tool, and every party walked through it with
+> the library's own choice and answer functions, a check forced both ways. No engine, no
+> window.
+
+The companion page is `lesson.md`; the finished file is in `example\`.
 
 ## Before recording
 
 | Item | State needed |
 |---|---|
-| Mission | The Lecture 3 mission: the crew roster, the rooms, two readings, the log. Lint clean |
-| Library | sbs_utils `0d127f6e` or later (released 2026-10-03): it reads `Skills:` with the roster and lints skill gates and checks. On an older library the numbers do nothing |
-| Recipe card | None. `story.mast` is not opened in this lecture |
-| VS Code | `MyMission` folder open, `mission.amd` in one tab |
-| Game | Closed. Started on camera in scene 7 with a server and TWO consoles, Engineering and Science, side by side |
+| Mission | `MyBoarding` with Lecture 3's files. Lint clean |
+| VS Code | `MyBoarding` folder open, `mission.amd` in one tab |
+| Command prompt | Open in `data\missions`, cleared |
+| Game | Closed. Started on camera in scene 7 with a server, Helm, Engineering and Science, the last two side by side |
 
 ## Confirm on camera
 
-Checked on 2026-10-03, after the library began reading `Skills:` by itself (sbs_utils
-`f3d4e831`, `0d127f6e`):
+1. Lint is `clean` after each step. (Lint.)
+2. On the bridge, Pull the sensor record is offered to Dr Hale and not to Chief Okoro.
+   (Mock.)
+3. In the reactor room, Try to wake the core is offered to both. With the die at 5, Dr
+   Hale's page line is `Dr Hale - engineering 0, rolled 5: 5 vs 9, failure.`, she lands
+   in The Board Stays Dark and the party learns nothing; Chief Okoro's is
+   `Chief Okoro - engineering 4, rolled 5: 9 vs 9, success.`, he lands in The Core Turns
+   Over and the party learns `lockout`. Both lines are on both pages. (Mock.)
+4. With no `Skills:` lines at all, Chief Okoro's engineering is 2 and Dr Hale's is 0.
+   (Mock.)
+5. Engineering alone: the suit tags marked as covering, no sensor record, the core still
+   offered. (Mock.)
+6. Every row of both tables on the page. (Lint, and every party walked.)
 
-- **In the real engine, with a server and two real consoles** (Engineering and Science),
-  the lesson's `mission.amd` and a `story.mast` with NO skills line in it. A probe moved
-  the ship alongside so the lesson's own route called `boarding_visit`, beamed both
-  consoles down, and wrote what the game's own functions returned to a file:
-    1. Chief Okoro is engineering 4 and science 1; Dr Hale is medical 4 and science 3.
-    2. On the bridge, Pull the sensor record is offered to Science and not to Engineering.
-    3. In the reactor, Try to wake the core is offered to both. With the die fixed at 5,
-       Okoro lands in The Core Turns Over and the party learns `lockout`; Hale lands in
-       The Board Stays Dark and learns nothing. With real dice, both rooms were reached.
-    4. Both consoles went home to their own stations, and `mast.runtime.log` was empty.
-- **SEEN, one screenshot of each console standing on the bridge:** the handheld's bar
-  reads `Chief Okoro / engineering / The Bridge` on one and `Dr Hale / medical / The
-  Bridge` on the other. Engineering has two buttons, Go back to the airlock and Return to
-  the ship. Science has three: Pull the sensor record first. The roll lines sit in the
-  transcript, one to a line, above the room's own line, and each fits on one line at this
-  width. Nothing on the handheld shows a person their own skill numbers: the only number
-  a player sees is in a roll line. Say so on camera.
-- **In the mock:** over 2000 real rolls each at target 9, Okoro 58%, Hale 18%; no roll
-  was helped by the other person. Every row of the page's lint table was re-run against
-  the current linter.
+Seen on a real screen by the earlier pilot, with two real consoles on the bridge of the
+hulk: the two bars, two buttons on Engineering and three on Science, and roll lines one to
+a line above the room's own line.
 
-NOT seen. If one is not as described, stop and fix the page:
+Not seen by anyone. If one is not as described, stop and fix the page:
 
-5. A real roll made by pressing the button, and the room that follows it (the probe made
-   the rolls; nobody pressed anything).
-6. Engineering alone: the suit tags marked as covering, and no sensor record.
-7. A player with a saved name at an unlocked seat. Fixed in the library and covered by a
-   unit test (`tests/test_boarding_roster_skills.py`); not tried with a real saved name.
+1. A real roll made by pressing the button, and the room that follows it.
+2. This rewrite's files in the real game.
 
 ## Scenes
 
-### 1. Cold open (0:00 - 0:45)
+### 1. Cold open
 
 **Screen:** The reactor room on two consoles. The Science console tries the core. A roll
 line appears, then The Board Stays Dark. The Engineering console tries. Another roll line,
 then The Core Turns Over.
 
-**Say:** "Same button. Two people. One of them is the chief engineer and one of them is a
-surgeon, and the ship can tell the difference. Last time a choice asked what your job is.
-This time it asks how good you are."
+**Say:** "Same button. Two people. || One of them is the chief engineer and one of them is
+a surgeon, | and the hulk can tell the difference. ||| Last time, a choice asked what your
+job is. || This time it asks how good you are. ||"
 
-### 2. Skills on the roster (0:45 - 3:15)
+### 2. Say what each person is good at
 
-**Screen:** `mission.amd`, the crew roster. Type the two `Skills:` lines. Then the scale
-table from the companion page.
+**Screen:** `mission.amd`, the crew roster. Add a `Skills:` line to Chief Okoro, then to
+Dr Hale. Highlight `science 3` on Dr Hale.
 
-**Say:** "One new line each. `Skills`, colon, then a list: a word, a number, a comma. The
-chief: engineering four, science one. The doctor: medical four, science three. The word is
-the name of the skill and you can invent your own, as long as it is one word. The number
-is how good they are. I use a scale that tops out at four. Two means you do it for a
-living, and here is something the game gives you for nothing: a job counts as two. The
-chief was already engineering two before I typed anything. Now look at the doctor. Her job
-is medical. Science is not her job. She is just good at it."
+**Say:** "I open my roster, | and I give each person one new line, under their job. It's a
+list: | a word, a space and a number, | with commas in between. ||| The chief is
+engineering four, and science one. || The doctor is medical four, and science three. ||
+Now look at that last one. | Science isn't her job. | She's simply good at it. || And
+that's what a skill is for. ||| There's nothing to paste this time. | The game reads these
+lines along with the rest of the roster. || A job with no number counts as two, | so
+before today the chief's engineering was two, and this line makes it four. ||"
 
-### 3. Nothing to paste (3:15 - 4:00)
+### 3. A choice for someone good enough
 
-**Screen:** Terminal: `sbs lint MyMission`, clean. Stay on `mission.amd`.
+**Screen:** The Bridge. Type the `Pull the sensor record` choice, then The Sensor Record
+room. Then show the page's table of three kinds of choice.
 
-**Say:** "Lint is happy, and that is all there is to it. The game reads these numbers with
-the rest of the roster. I do not open the other file today. One thing worth knowing: the
-numbers belong to the person on the roster, not to the name on the screen. If a player
-has saved a name of their own and sits in the doctor's chair, they are still as good as
-the doctor."
+**Say:** "On the bridge I add a choice with a new kind of condition. It says if, | then
+the word skill, then science, | then at least three. ||| Dr Hale has science three, so
+she's offered it. | The chief has one, so he isn't. || And here's the thing to remember.
+||| When a choice asks for a job, | and that person stayed on the ship, | somebody covers
+for them. || When a choice asks for a skill, nobody covers. || With the doctor at home,
+that record isn't on anyone's menu. ||"
 
-### 4. A choice for someone good enough (5:30 - 8:30)
+### 4. A choice anyone may try
 
-**Screen:** The Bridge. Type the sensor record choice. Type The Sensor Record room. Then
-the three-row table: job, skill, no `if`.
+**Screen:** The Reactor Room. Type the `Try to wake the core` choice. Type the two rooms.
+Highlight `check engineering 9`, then `else core_dead`, then `, learn lockout`.
 
-**Say:** "On the bridge, a new choice. `if skill science`, at least three. Four parts: the
-word `skill`, which skill, a sign, a number. The doctor has science three, so she is
-offered it. The chief has science one, and is not. And here is the difference from last
-time. When a job is missing from the party, one console covers for it. Nobody covers for a
-skill. If the doctor stays on the ship, the sensor record is on nobody's menu. So a skill
-choice is a bonus. Never put the only way forward behind one."
+**Say:** "In the reactor room, a different idea. || This choice has no condition, | so
+everyone is offered it. || What differs is how it turns out. ||| After the semicolon it
+says check, then a skill, | then a target of nine. || The game picks a number from one to
+ten, | adds that person's skill, | and nine or more works. ||| Then else, and a second
+room, | which is where a failure goes. || And after a comma, what the party learns, | but
+only when it worked. ||| So the chief wakes the core six times in ten, | and the doctor
+manages it twice in ten. || And the page shows the roll to everyone in the room, | so the
+whole party sees who tried and how close it was. ||"
 
-### 5. A choice anyone may try (8:30 - 12:00)
+### 5. Four rules
 
-**Screen:** The Reactor Room. Type the check choice slowly, pausing on each part. Type the
-two rooms. Then the odds table.
+**Screen:** The four rules on the companion page.
 
-**Say:** "Now the other kind. No `if` at all, so everyone is offered it. After the
-semicolon: `check engineering 9`. The game rolls a number from one to ten and adds your
-engineering. Nine or more, it works, and the party goes to the room in the brackets. Then
-`else`, and the room for when it does not work. So this one choice needs two rooms, and I
-write the failure as carefully as the success, because half my players are going to read
-it. Last part: a comma, and `learn lockout`. Anything after the check, after a comma, only
-happens when the check worked. The odds: target nine, skill four, six times in ten. Skill
-zero, two in ten. Twelve is hard. Six is easy."
+**Say:** "Four rules. A skill choice is a bonus, and never the only way, | because nobody
+covers for a skill. || A check always has an else, | and both rooms lead back. || What
+comes after the check happens only on success. || And the numbers belong to the person on
+the roster. ||| A party may try again, by the way. | The roll is there for drama. | It
+isn't a lock. ||"
 
-### 6. Rules, and lint (12:00 - 14:30)
+### 6. Lint
 
-**Screen:** The four rules on the companion page. Then the terminal: lint, clean. Type
-`Skill:` with no `s`, lint, undo. Take the comma out of a `Skills:` line, lint, undo.
-Delete the 9 from the check, lint: a warning that nothing is rolled. Undo. Change
-`core_dead` after `else` to `core_ded`, lint: a warning that a failed roll has nowhere to
-go. Undo. Take the word `skill` out of the bridge choice, lint: a warning that a job is
-one or zero. Undo.
+**Screen:** Command prompt: `sbs lint MyBoarding`, clean. Change `Skills:` to `Skill:`,
+lint, undo. Remove the number from the check, lint, undo. Change `science 3` to
+`sience 3` on the roster, lint: clean. Undo.
 
-**Say:** "Four rules. A skill choice is a bonus. A check has an `else`, and both rooms
-lead back. Before the check always happens, after it only on success. And the numbers go
-with the seat, whatever the player calls themselves. Lint. A misspelled `Skills`. A
-missing comma: it tells me that entry is dropped. A check with no number: nothing would be
-rolled, and it would always work. An `else` that points at a room I never wrote: that one
-would end the visit, and only on a failed roll, so I would not find it by playing once.
-And `if science` at least three, with the word `skill` left out: science on its own is a
-job, and a job is one or zero. Lint reads all of these. Two things it cannot know: a skill
-you misspelled on the roster itself, and a number nobody has."
+**Say:** "Lint is clean, and it names nearly every slip you can make here. || Leave the s
+off Skills, and it tells you. || Leave the number out of a check, | and it tells you
+nothing would be rolled. ||| The one it can't catch is a skill misspelled on the roster
+itself, | because you're allowed to invent skills. || So read your roster once, slowly.
+||"
 
-### 7. Play it (14:30 - 17:15)
+### 7. Play it
 
-**Screen:** Server and two consoles. Alongside. Both beam down. Forward to the bridge:
-show the two menus. Back, aft to the reactor. Science tries the core: point at
-`engineering 0` in the roll line. Step back. Engineering tries: point at `engineering 4`.
-Then close Science, start again with Engineering only, and show the bridge with no sensor
-record.
+**Screen:** `sbs run server,helm,engineering,science -m MyBoarding map=0`. Alongside.
+Both beam down. Bridge: the sensor record on Science only. Reactor: Science tries, then
+Engineering tries. Point at the number in each roll line.
 
-**Say:** "The bridge. The doctor has the sensor record. The chief does not. The reactor.
-The doctor tries. There is her roll: engineering zero, and the board stays dark. The chief
-tries. Engineering four. That four is the number I typed on the roster, and that is the
-thing to look for: if it says two, that person's `Skills` line is not being read, and lint
-will tell you why. Now the chief alone. The suit tags arrive marked as covering for medical. The sensor
-record does not come to anyone."
+**Say:** "Both aboard. On the bridge, the doctor has the sensor record, | and the chief
+doesn't. ||| In the reactor room, they both have the same button. || The doctor tries
+first, | and the page shows her roll, with engineering nought in it. || Then the chief
+tries, | and his line says engineering four. ||| That number is the one to watch. | If the
+chief's line says two, | the game isn't reading his Skills line, | and lint will say why.
+|| One more thing you'll notice. | Nothing on the handheld tells a player their own
+numbers. | The only place a number shows is in a roll. ||"
 
-### 8. Your turn (17:15 - 18:00)
+### 8. Your turn
 
 **Screen:** The exercise on the companion page.
 
-**Say:** "Your third crew member gets two skills. Give them a choice only they can see and
-a check anyone can try. Then break it on purpose: take the `s` off one `Skills`, read what lint
-says, and play it once to see what that person loses. Next time, one of these people gets a
-quest that is theirs alone."
+**Say:** "Give your third person some skills. || Add one choice that only they're good
+enough for, | and one check on a skill that nobody has. Then break it. | Take the s off
+Skills, read the warning, | and play it once anyway. ||| Next time, one person gets a
+quest of their own. ||"

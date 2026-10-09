@@ -1,34 +1,74 @@
-s01_cold_open_0	My engineer, three rooms, and a hulk nobody has opened in years.
-s01_cold_open_1	She is the same person on the bridge and aboard it, and all of it is text I wrote in one file.
-s01_cold_open_2	Today you write your own.
-s02_your_crew_0	A new section at the bottom.
-s02_your_crew_1	The word crew on the first line of the fence says what it is.
-s02_your_crew_2	Ship says whose crew.
-s02_your_crew_3	And Names: locked says these are my people: without it, a player who has saved their own name keeps it.
-s02_your_crew_4	Then one record per person: the console they sit at, a face, and a job.
-s02_your_crew_5	Whoever sits at Engineering is the Chief, here and aboard the hulk.
-s03_the_place_0	A room is a record.
-s03_the_place_1	One line starting with a percent sign: what the party finds when they walk in.
-s03_the_place_2	Then the ways out.
-s03_the_place_3	Words in square brackets are what the crew reads.
-s03_the_place_4	The key in round brackets is the room it leads to.
-s03_the_place_5	And empty round brackets lead nowhere: that choice ends the visit and sends everyone home.
-s04_two_rules_0	Two rules, and they are the difference between a place and a trap.
-s04_two_rules_1	Every room has a way back.
-s04_two_rules_2	Every room has a way home.
-s04_two_rules_3	Check them by eye, because lint only helps with half of it: it warns if a choice points at a room that does not exist, and says nothing about a room with no way out.
-s05_start_it_0	Something has to say when.
-s05_start_it_1	Our quest already knows the moment: the ship is alongside.
-s05_start_it_2	So the quest sends a signal when it completes, and this card listens for it.
-s05_start_it_3	You paste it; you do not write it.
-s05_start_it_4	One line reads the rooms.
-s05_start_it_5	And one line runs the whole visit: it opens the party, starts the first room, and when the last choice is taken it brings everyone home.
-s05_start_it_6	Three things on the card are yours to change: the signal name, the name of the place, and the room they arrive in.
-s06_check_it_0	Lint. Clean.
-s06_check_it_1	And here is the one mistake it does catch.
-s07_play_it_0	Engineering, and I am Chief Okoro. Alongside.
-s07_play_it_1	The quest completes, and the party forms. Down. The airlock. Aft. Back. Forward. Back.
-s07_play_it_2	And home: I did not press anything to get back here.
-s08_your_turn_0	Add a fourth room, and a third person for Helm.
-s08_your_turn_1	Give the room a way in, a way back and a way home.
-s08_your_turn_2	Next time, everyone gets their own menu.
+s01_cold_open_0	This is a boarding party.
+s01_cold_open_1	The ship is alongside a dead hulk,
+s01_cold_open_2	and the people on the bridge have just gone aboard as themselves.
+s01_cold_open_3	Last time you played a scene somebody else wrote.
+s01_cold_open_4	Today you write your own: who goes, where they go,
+s01_cold_open_5	and the few lines that start it.
+s02_your_crew_0	First, who goes. I go to the end of my fact sheet and add a section,
+s02_your_crew_1	and the first line inside its fence is one bare word, crew.
+s02_your_crew_2	Then the ship these people crew,
+s02_your_crew_3	and a line that says the names are locked.
+s02_your_crew_4	Under it, one record for each person.
+s02_your_crew_5	Each one says which console they sit at,
+s02_your_crew_6	what they look like, and their job.
+s02_your_crew_7	So whoever sits at Engineering tonight is Chief Okoro,
+s02_your_crew_8	on the bridge and aboard the hulk.
+s02_your_crew_9	There's one cast, and it's the crew.
+s03_the_place_0	Now, where they go.
+s03_the_place_1	A place is a section of rooms,
+s03_the_place_2	and a room is the simplest record you've written yet.
+s03_the_place_3	It has no fence at all.
+s03_the_place_4	One line that starts with a percent sign is what the party finds.
+s03_the_place_5	Each line that starts with a dash is a way out:
+s03_the_place_6	the words in square brackets go on a button,
+s03_the_place_7	and the key in round brackets names the room it leads to.
+s03_the_place_8	And this one has nothing in its round brackets. It leads nowhere,
+s03_the_place_9	and taking it ends the visit.
+s04_lint_notices_0	I save, and I run lint,
+s04_lint_notices_1	and for once it isn't clean.
+s04_lint_notices_2	It says nothing in this mission reads a section with this key,
+s04_lint_notices_3	so my rooms are never loaded. That's true.
+s04_lint_notices_4	Nothing does read them yet.
+s04_lint_notices_5	So I leave the key exactly as it is,
+s04_lint_notices_6	and I go and add the thing that reads it.
+s05_two_rules_0	Before that, two rules.
+s05_two_rules_1	One: every room has a way back.
+s05_two_rules_2	A room with no way out holds the party for good,
+s05_two_rules_3	and lint won't tell you.
+s05_two_rules_4	Two: the way home goes where leaving is a decision.
+s05_two_rules_5	One press of that button, by anyone,
+s05_two_rules_6	ends the visit for everybody, and the place isn't offered again.
+s05_two_rules_7	So it's in the room they arrive in,
+s05_two_rules_8	and nowhere else for now.
+s06_start_it_0	Now the start. I add a quest of the kind you wrote in Class 1:
+s06_start_it_1	bring the ship within five hundred of the hulk.
+s06_start_it_2	The new line is this one.
+s06_start_it_3	When the quest completes, it sends a signal,
+s06_start_it_4	and I've named it board hulk.
+s06_start_it_5	Then I open the story file, go to the very end,
+s06_start_it_6	and paste one recipe card.
+s06_start_it_7	I don't read it.
+s06_start_it_8	I change three things on it, and they're on the page: the signal's name,
+s06_start_it_9	the key of the room the party arrives in,
+s06_start_it_10	and the name the crew sees.
+s06_start_it_11	I run lint again, and now it's clean.
+s07_play_it_0	I start the game with a server, a Helm and an Engineering console.
+s07_play_it_1	And there's my name, before I've flown anywhere.
+s07_play_it_2	I bring the ship in close,
+s07_play_it_3	and the quest completes.
+s07_play_it_4	On Engineering I open the handheld,
+s07_play_it_5	and there's a Boarding Party tile offering The Hulk. I beam down.
+s07_play_it_6	Now this console is the party's handheld.
+s07_play_it_7	It says who I am, my job, and the room I'm in,
+s07_play_it_8	and under that is my line, with a button for each way out.
+s07_play_it_9	I go aft, and the page keeps what I've read.
+s07_play_it_10	Back, forward, back again.
+s07_play_it_11	And from the airlock, I go home,
+s07_play_it_12	and the console is back at Engineering.
+s08_your_turn_0	Your turn. Add a fourth room, with a way in and a way back,
+s08_your_turn_1	and add a third person to your roster, at Helm, with a job you make up.
+s08_your_turn_2	Then break it on purpose.
+s08_your_turn_3	Delete the way back from your new room,
+s08_your_turn_4	run lint, and read the word clean.
+s08_your_turn_5	Then walk into that room, and see what your crew would see.
+s08_your_turn_6	Next time, everyone gets a different menu.

@@ -22,17 +22,17 @@ will not touch `story.mast`.
 
 ## Before you start
 
-- Your mission from Lecture 5. `sbs lint MyMission` says `clean`.
-- You have written `; accepts` on an answer (Class 2, Lecture 4).
+- Your mission from Lecture 5. `sbs lint MyBoarding` says `clean`.
 - A sheet of paper and a pencil.
-- Two consoles if you can manage it, three if you can. One console also works.
+- A Helm console to fly with, and as many more as you can manage: Engineering, then
+  Science.
 - A copy of your `mission.amd` from Lecture 5, kept **outside** the mission folder. You are
   about to delete your practice rooms. Lint reads every `.amd` file inside the mission
   folder, and you want it reading one.
 
-You also need the third person you added to your crew roster in Lecture 2's exercise. Mine
-is at Helm, and his job is a word I invented. If you skipped that exercise, add this record
-below Dr Hale now:
+You also need a third person on your crew roster. Mine is at Helm, and his job is a word I
+invented. If you added someone of your own in Lecture 2's exercise, keep them and read
+`quartermaster` as your word. If not, add this record below Dr Hale now:
 
 ```
 ### [Mr Pell](pell)
@@ -75,7 +75,7 @@ make a scene of about ten minutes.
 | Facts the locked door asks for | No more than your job readings | 3 |
 | Side stories | One for a person, at most | 2 |
 | Endings | 2 | 2 |
-| Words the party reads | About 500 | 490 |
+| Words on a full party's page by the end | About 600 | 603 |
 | Choices pressed, from arriving to an ending | 14 to 20 | 14 at the least, 16 for the worst crew, 20 to read everything |
 
 The last two rows were counted on my scene by a script that pressed every choice. Nobody
@@ -100,8 +100,7 @@ Three rules for the drawing.
 2. **Every room has a way back with no `if`.** You will check this with a pencil in Step 9.
 3. **`Return to the ship` goes in the arrival room and at each ending. Nowhere else.**
 
-Rule 3 is a change from Lecture 2, where every room had one. It is my choice for a scene
-this long, and here is why.
+Rule 3 is Lecture 2's rule. In a scene this long it matters more, and here is why.
 
 | What I measured | What it means for you |
 |---|---|
@@ -109,9 +108,8 @@ this long, and here is why.
 | After that, no party is on offer. The place cannot be entered again | A party that leaves early never sees an ending |
 | Side stories that were still running stay running for good | Nobody can finish them |
 
-With three rooms that cost nothing. In a ten-minute scene it costs the party the ending.
-So the way home is a walk: back to the middle, back to the arrival room, and then the
-choice.
+In a ten-minute scene that costs the party the ending. So the way home is a walk: back to
+the middle, back to the arrival room, and then the choice.
 
 One person who has to leave early does not need that choice. The handheld has a way home
 of its own, in its Crew app, that takes one person and leaves the visit open for the rest.
@@ -153,6 +151,8 @@ Then type five places under the Scenes heading:
 
 Keep the key of your arrival room as `airlock`. That key is on the card in `story.mast`.
 If you would rather change it, change it on the card as well (Lecture 2, Step 4).
+
+If you added a fourth room of your own in an exercise, it goes too.
 
 Run lint now. It warns twice: Six Names and A Cold Core are each waiting on a signal that
 nothing sends (`unfired-signal`). That is correct. Lint has noticed that you tore out the
@@ -348,8 +348,8 @@ In **The Captain's Cabin**, add the two choices above the way back:
 - [Leave them sleeping and go for help](asleep) ; accepts carry_word
 ```
 
-`accepts` is the word you used on an answer in Class 2. It works on a choice in a room in
-the same way: it starts the quest whose key follows it.
+`accepts` is a new outcome word. It starts the quest whose key follows it. If you have done
+Class 2, it is the word you used on an answer there, and it works here in the same way.
 
 Then the two last rooms, at the end of your rooms:
 
@@ -475,7 +475,7 @@ My scene, checked this way:
 ## Step 10 - Check it
 
 ```
-sbs lint MyMission
+sbs lint MyBoarding
 ```
 
 You want `clean` under `mission.amd`. Lint names every mistake in this first table. The
@@ -501,6 +501,8 @@ words in the last column are at the end of the line lint prints.
 | `if learned alive`, or `if learned 3` (no sign) | Offer the choice to nobody. `learned` only counts | `guard-learned-shape` |
 | `if hale`, or `if Dr Hale` (a person) | Offer the choice to nobody. A condition takes the job. Only `For:` takes a person | `guard-names-a-person` |
 | A `%` line broken onto a second line | Show the party one half of the sentence or the other | `line-wrapped` |
+| Both endings say `accepts` and the same key | Both endings start one quest. The other quest is never offered | `never-revealed`, on the quest nothing starts |
+| An ending with nothing after its round brackets | The ending starts nothing | `never-revealed`, on its quest |
 | `Starts when: at once` on an ending's quest | Run the quest from the start. Mine paid 300 credits to a party that chose the other ending | `outcome-accepts-running` |
 
 Lint says `clean` for everything in this second table. Each row was tried by a script that
@@ -529,8 +531,6 @@ your five checks.
 | A `check` the person cannot pass, in front of their story's signal | Their story never finishes | 5 |
 | No `Starts when:` line on an ending's quest | The quest is on offer from the start, before anyone has boarded | 5 |
 | A last room with a way back | The party takes both endings, and both quests run | 5 |
-| Both endings say `accepts` and the same key | Both endings start one quest | 5 |
-| An ending with nothing after its round brackets | The ending starts nothing | 5 |
 | The ship's quest waits on a side story's `Then:` | A party without that person can never complete it | 5 |
 
 What to write for each of the conditions lint named in the first table:
@@ -557,10 +557,16 @@ Two more that lint does not see, both in a room's `%` line:
 
 Play it three times. Have a watch beside you.
 
-**Alone, at Engineering.** You are Chief Okoro.
+Start the game with Helm, and the consoles you have people for:
 
-1. Fly inside 500 of the hulk. Press the tablet icon, open **Boarding Party** and press
-   **BEAM DOWN**.
+```
+sbs run server,helm,engineering,science -m MyBoarding map=0
+```
+
+**Alone, at Engineering.** You are Chief Okoro. The other consoles stay on the bridge.
+
+1. At Helm, fly inside 500 of the hulk. On Engineering, press the handheld icon, open
+   **Boarding Party** and press **BEAM DOWN**.
 2. Go inboard. The captain's hatch is not offered, and the line says why.
 3. Go forward. **Read the berth monitors** comes to you marked as covering for medical.
    Take it. The bridge is told `Quest complete: Account for the Crew`.
@@ -573,11 +579,11 @@ Play it three times. Have a watch beside you.
 
 That is 16 presses. Try the main cell on the way and it is 18.
 
-**With two consoles**, Engineering and Science. Dr Hale reads the monitors herself. The
+**With two aboard**, Engineering and Science. Dr Hale reads the monitors herself. The
 bridge is told `Quest complete: Account for the Crew` and `Quest complete: Twelve Berths`.
 The stores are still covered. In the hold, Dr Hale is offered the scanner's sweep.
 
-**With three consoles**, Engineering, Science and Helm. Nothing is marked as covering.
+**With three aboard**, Engineering, Science and Helm. Nothing is marked as covering.
 Reading everything and trying the main cell once takes 20 presses.
 
 Then look at what each ending did.
@@ -633,10 +639,10 @@ Now write your own.
 
 You are done when all six are true:
 
-- `sbs lint MyMission` shows `mission.amd` as `clean`.
+- `sbs lint MyBoarding` shows `mission.amd` as `clean`.
 - Your sheet of paper has three sentences, a beat sheet, a facts table and the result of
   each of the five checks.
-- Alone at one console, you reach each ending. Some readings come to you marked as
+- With one person aboard, you reach each ending. Some readings come to you marked as
   covering.
 - With everyone aboard, each side story completes on its own person's reading.
 - Each ending starts its own quest, and the other ending's quest never appears.
@@ -652,8 +658,8 @@ the same rooms and stories, with maps to walk on.
 - "Boarding parties" in the library documentation: `boarding_visit`, `learn`, `skill`,
   `check`, `For:`, and what happens when a party is short of people.
 - "Quests" in the library documentation: `Starts when:`, `Done when:` and `Reward:`.
-- Class 2, Lecture 4: `accepts`, `completes` and `fails` on an answer. All
-  three work on a choice in a room.
-- The header of the Open Universe site file `quiet_shore.amd`: a longer scene, and the
-  notes its author kept on what every party can reach. That author keeps a way home in
-  every room, and says why. Read it, and decide for your own scene.
+- `accepts` has two relatives, `completes` and `fails`. All three work on a choice in a
+  room.
+- The notes at the top of `quiet_shore.amd`, which you read in Lecture 1: what its author
+  learned about what every party can reach. That scene keeps a way home in each of its
+  three main rooms, and says why. Read it, and decide for your own scene.

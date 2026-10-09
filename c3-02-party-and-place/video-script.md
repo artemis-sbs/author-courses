@@ -1,126 +1,158 @@
 # C3-2 video script - A party and a place
 
-Target length: 15 minutes. One continuous screen recording with voice-over, cut at scene
-boundaries. The companion page is `lesson.md`; the finished files are in `example\`.
+> **STATE ON 2026-10-09. Read this first.**
+>
+> - **Everything this page needs is released.** The page is written for Artemis Cosmos
+>   1.4.0, installed from Steam or itch.io, with a current tool and libraries.
+> - **The class's mission is `MyBoarding`**, made in Lecture 1 with
+>   `sbs create MyBoarding -t amd --title "The Hulk"`. This lecture starts from that
+>   mission untouched: `mission.amd` is 60 lines.
+> - **The quest is typed here.** Earlier drafts of this lecture leaned on a quest from
+>   Class 1. The student now types Close Inspection in Step 4, with its `Then:` line.
+> - **The card is one block at the end of `story.mast`.** There is no second line to put
+>   inside the map any more: today's starter keeps the fact sheet where a route can read
+>   it.
+> - **The way home is in the arrival room only.** One press of it ends the visit for
+>   everybody, so it is not in every room. Lecture 6 uses the same rule.
+> - `example\` holds the two finished files, `mission.amd` and `story.mast`.
+
+> **Measured 2026-10-08 and 09, in the mock.** Tool `sbs` as installed, library as
+> packaged (sbs_utils `ae2bbf4a`). The steps were typed onto a fresh `sbs create`
+> mission, linted at each step, and played headless with stand-in consoles: a probe moved
+> the ship alongside, made the two calls the BEAM DOWN button makes, and pressed choices
+> through the handheld page's own signal. Then 24 one-change variants, each linted and
+> played. No engine, no window.
+
+The companion page is `lesson.md`; the finished files are in `example\`.
 
 ## Before recording
 
 | Item | State needed |
 |---|---|
-| Mission | The Class 1 mission with the Close Inspection quest, lint clean |
-| Library | A build that has `boarding_visit` and `Names: locked` (committed 2026-10-03, not yet released) |
-| VS Code | `MyMission` folder open, `mission.amd` and `story.mast` in two tabs |
-| Game | Closed. Started on camera in scene 7 with a server and an Engineering console |
+| Mission | `MyBoarding` as `sbs create` made it. Lint clean. `mission.amd` 60 lines |
+| VS Code | `MyBoarding` folder open, `mission.amd` and `story.mast` in two tabs |
+| Command prompt | Open in `data\missions`, cleared |
+| Game | Closed. Started on camera in scene 7 with a server, Helm and Engineering |
 
 ## Confirm on camera
 
-Checked in the real engine on 2026-10-03, with a server and an Engineering console, by a
-script that called the game's own functions and read the results from a file:
+1. With only the rooms typed, lint prints the `section-not-loaded` line on the page; with
+   the quest and the card in, it is `clean`. (Lint.)
+2. The Engineering console is Chief Okoro, engineering, locked; Science is Dr Hale,
+   medical. Helm, not on the roster, gets a name from the game and the job `helm`.
+   (Mock.)
+3. Inside 500 of the hulk Close Inspection completes, 100 credits are paid, and a visit
+   named The Hulk is on offer in the airlock. (Mock.)
+4. Both consoles are offered the same three choices in the airlock. Any console's press
+   moves everyone. The page keeps who chose, the choice, then the next line. (Mock.)
+5. Return to the ship ends the visit for both at one press, and no party is on offer
+   afterwards. (Mock.)
+6. Every row of both mistake tables. (Lint, Mock.)
 
-- the Engineering console is Chief Okoro, with the job `engineering`, and locked;
-- the party forms when Close Inspection completes, made of the crew, titled The Hulk;
-- the console goes down as Chief Okoro;
-- all three rooms, both ways back, and Return to the ship;
-- the visit ends by itself and the console is back at Engineering.
+Seen on a real screen by earlier pilots of this lecture, with one console: the Boarding
+Party tile, BEAM DOWN, the handheld's bar and buttons, and the console back at
+Engineering afterwards. That was before this rewrite; the rooms and the card's shape have
+changed since.
 
-SEEN on the real screens, 2026-10-03 (one Engineering console, driven by mouse, with the
-fixes made that day - they are not released yet):
+Not seen by anyone. If one is not as described, stop and fix the page:
 
-1. The top bar reads "Chief Okoro" beside the tablet icon.
-2. The PADD has a Boarding Party tile once the party has formed, and the tile says The
-   Hulk.
-3. The app says "Going down to The Hulk", shows Chief Okoro and her job, and has one
-   BEAM DOWN button.
-4. BEAM DOWN turns the console into the boarding handheld (the xESS), across the whole
-   screen: a bar reading Chief Okoro, engineering, The Airlock; under it the room's line
-   and one button per choice.
-5. Return to the ship puts the console back at Engineering with nothing to press.
-
-NOT seen yet. If one is not as described, stop and fix the page:
-
-6. The console picker offers no Edit button for a locked seat (the picker is behind the
-   Options menu and was not opened).
-7. A Science console is Dr Hale and can go down beside the Chief.
-
-Known: the game's log gets a line for each PADD app this mission has no screen for
-(`upgrade`, `cargo`, `fabricate`). It is harmless and is build item B21. A mission made
-from the template before 2026-10-03 shows IMAGE NOT FOUND on every PADD tile; the
-template is fixed (build item B38). The same older missions have no boarding handheld:
-after BEAM DOWN they stay on the Boarding Party app.
+1. This lecture's files in the real game at all.
+2. The name on a console's top bar after the visit. In the mock, a stand-in console came
+   home with no crew name; a real console has a page that puts it back, and the earlier
+   pilot saw it do so.
+3. A room with no choices on the handheld: what the crew actually looks at.
 
 ## Scenes
 
-### 1. Cold open (0:00 - 0:40)
+### 1. Cold open
 
-**Screen:** The game. The ship alongside the hulk. The Boarding Party app: The Hulk,
-Chief Okoro. BEAM DOWN. The airlock line.
+**Screen:** The handheld on an Engineering console: a bar with a name, a job and a room,
+one line of text, three buttons.
 
-**Say:** "My engineer, three rooms, and a hulk nobody has opened in years. She is the same
-person on the bridge and aboard it, and all of it is text I wrote in one file. Today you
-write your own."
+**Say:** "This is a boarding party. || The ship is alongside a dead hulk, | and the people
+on the bridge have just gone aboard as themselves. ||| Last time you played a scene
+somebody else wrote. || Today you write your own: who goes, where they go, | and the few
+lines that start it. ||"
 
-### 2. Your crew (0:40 - 3:30)
+### 2. Your crew
 
-**Screen:** `mission.amd`, end of file. Type the crew section.
+**Screen:** `mission.amd`, the end of the file. Type the roster: the section with its
+fence, then the two people.
 
-**Say:** "A new section at the bottom. The word `crew` on the first line of the fence
-says what it is. `Ship` says whose crew. And `Names: locked` says these are my people:
-without it, a player who has saved their own name keeps it. Then one record per person:
-the console they sit at, a face, and a job. Whoever sits at Engineering is the Chief,
-here and aboard the hulk."
+**Say:** "First, who goes. I go to the end of my fact sheet and add a section, | and the
+first line inside its fence is one bare word, crew. || Then the ship these people crew, |
+and a line that says the names are locked. ||| Under it, one record for each person. ||
+Each one says which console they sit at, | what they look like, and their job. || So
+whoever sits at Engineering tonight is Chief Okoro, | on the bridge and aboard the hulk.
+|| There's one cast, and it's the crew. ||"
 
-### 3. The place (3:30 - 6:40)
+### 3. The place
 
-**Screen:** Type the Scenes section, one room at a time.
+**Screen:** Below the roster, type the Scenes heading and the three rooms. Point at a
+percent line, then at a choice, then at the empty brackets.
 
-**Say:** "A room is a record. One line starting with a percent sign: what the party finds
-when they walk in. Then the ways out. Words in square brackets are what the crew reads.
-The key in round brackets is the room it leads to. And empty round brackets lead nowhere:
-that choice ends the visit and sends everyone home."
+**Say:** "Now, where they go. || A place is a section of rooms, | and a room is the
+simplest record you've written yet. | It has no fence at all. ||| One line that starts
+with a percent sign is what the party finds. || Each line that starts with a dash is a way
+out: | the words in square brackets go on a button, | and the key in round brackets names
+the room it leads to. ||| And this one has nothing in its round brackets. It leads
+nowhere, | and taking it ends the visit. ||"
 
-### 4. Two rules (6:40 - 8:10)
+### 4. Lint notices
 
-**Screen:** Highlight "Go back to the airlock" in both rooms, then the three "Return to
-the ship" lines.
+**Screen:** Command prompt: `sbs lint MyBoarding`. One warning, ending
+`section-not-loaded`. Highlight the word `boarding` in it.
 
-**Say:** "Two rules, and they are the difference between a place and a trap. Every room
-has a way back. Every room has a way home. Check them by eye, because lint only helps
-with half of it: it warns if a choice points at a room that does not exist, and says
-nothing about a room with no way out."
+**Say:** "I save, and I run lint, | and for once it isn't clean. || It says nothing in
+this mission reads a section with this key, | so my rooms are never loaded. That's true.
+|| Nothing does read them yet. | So I leave the key exactly as it is, | and I go and add
+the thing that reads it. ||"
 
-### 5. Start it (8:10 - 10:40)
+### 5. Two rules
 
-**Screen:** Add `Then: signal board_hulk` to Close Inspection. Switch to `story.mast`.
-Paste the two parts of the card. Highlight the three things to change.
+**Screen:** The three rooms. Highlight each `Go back to the airlock`. Then highlight the
+single `Return to the ship`.
 
-**Say:** "Something has to say when. Our quest already knows the moment: the ship is
-alongside. So the quest sends a signal when it completes, and this card listens for it.
-You paste it; you do not write it. One line reads the rooms.
-And one line runs the whole visit: it opens the party, starts the first room, and when
-the last choice is taken it brings everyone home. Three things on the card are yours to
-change: the signal name, the name of the place, and the room they arrive in."
+**Say:** "Before that, two rules. || One: every room has a way back. || A room with no way
+out holds the party for good, | and lint won't tell you. ||| Two: the way home goes where
+leaving is a decision. || One press of that button, by anyone, | ends the visit for
+everybody, and the place isn't offered again. || So it's in the room they arrive in, | and
+nowhere else for now. ||"
 
-### 6. Check it (10:40 - 11:20)
+### 6. Start it
 
-**Screen:** `sbs lint MyMission`. Show `clean`. Misspell `bridge` as `brige`, run lint,
-show the warning, undo.
+**Screen:** `mission.amd`, the Quests section: type Close Inspection, and highlight its
+`Then:` line. Then `story.mast`, the very end: paste the card. Highlight `board_hulk`,
+`"airlock"` and `"The Hulk"` in turn. Lint: clean.
 
-**Say:** "Lint. Clean. And here is the one mistake it does catch."
+**Say:** "Now the start. I add a quest of the kind you wrote in Class 1: | bring the ship
+within five hundred of the hulk. || The new line is this one. | When the quest completes,
+it sends a signal, | and I've named it board hulk. ||| Then I open the story file, go to
+the very end, | and paste one recipe card. || I don't read it. | I change three things on
+it, and they're on the page: the signal's name, | the key of the room the party arrives
+in, | and the name the crew sees. ||| I run lint again, and now it's clean. ||"
 
-### 7. Play it (11:20 - 14:10)
+### 7. Play it
 
-**Screen:** Start the server and an Engineering console. Show the crew name in the top
-bar. Fly inside 500. Press the tablet icon, then the Boarding Party tile. BEAM DOWN:
-the handheld opens on The Airlock. Walk airlock, reactor, airlock, bridge, airlock.
-Return to the ship. The console is Engineering again.
+**Screen:** Command prompt: `sbs run server,helm,engineering -m MyBoarding map=0`. The
+Engineering top bar: Chief Okoro. Fly Helm to the hulk. On Engineering: the handheld
+icon, the Boarding Party tile, BEAM DOWN. Walk aft, back, forward, back. Return to the
+ship.
 
-**Say:** "Engineering, and I am Chief Okoro. Alongside. The quest completes, and the
-party forms. Down. The airlock. Aft. Back. Forward. Back. And home: I did not press
-anything to get back here."
+**Say:** "I start the game with a server, a Helm and an Engineering console. || And
+there's my name, before I've flown anywhere. ||| I bring the ship in close, | and the
+quest completes. || On Engineering I open the handheld, | and there's a Boarding Party
+tile offering The Hulk. I beam down. ||| Now this console is the party's handheld. | It
+says who I am, my job, and the room I'm in, | and under that is my line, with a button for
+each way out. || I go aft, and the page keeps what I've read. || Back, forward, back
+again. ||| And from the airlock, I go home, | and the console is back at Engineering. ||"
 
-### 8. Your turn (14:10 - 15:00)
+### 8. Your turn
 
 **Screen:** The exercise on the companion page.
 
-**Say:** "Add a fourth room, and a third person for Helm. Give the room a way in, a way
-back and a way home. Next time, everyone gets their own menu."
+**Say:** "Your turn. Add a fourth room, with a way in and a way back, | and add a third
+person to your roster, at Helm, with a job you make up. ||| Then break it on purpose. |
+Delete the way back from your new room, | run lint, and read the word clean. || Then walk
+into that room, and see what your crew would see. ||| Next time, everyone gets a different
+menu. ||"

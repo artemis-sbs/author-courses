@@ -3,281 +3,329 @@
 Same button. Two people.
 
 2
-00:00:02,189 --> 00:00:11,320
-One of them is the chief engineer and one of them is a surgeon, and the ship can tell the difference.
+00:00:02,639 --> 00:00:08,726
+One of them is the chief engineer and one of them is a surgeon,
 
 3
-00:00:11,770 --> 00:00:15,683
-Last time a choice asked what your job is.
+00:00:09,176 --> 00:00:12,220
+and the hulk can tell the difference.
 
 4
-00:00:16,133 --> 00:00:19,611
-This time it asks how good you are.
+00:00:14,020 --> 00:00:17,933
+Last time, a choice asked what your job is.
 
 5
-00:00:20,811 --> 00:00:22,550
-One new line each.
+00:00:18,833 --> 00:00:22,311
+This time it asks how good you are.
 
 6
-00:00:23,000 --> 00:00:27,783
-Skills, colon, then a list: a word, a number, a comma.
+00:00:23,511 --> 00:00:25,250
+I open my roster,
 
 7
-00:00:28,233 --> 00:00:30,841
-The chief: engineering four, science one.
+00:00:25,700 --> 00:00:31,787
+and I give each person one new line, under their job. It's a list:
 
 8
-00:00:31,291 --> 00:00:33,900
-The doctor: medical four, science three.
+00:00:32,237 --> 00:00:35,280
+a word, a space and a number,
 
 9
-00:00:34,350 --> 00:00:43,480
-The word is the name of the skill and you can invent your own, as long as it is one word.
+00:00:35,730 --> 00:00:37,470
+with commas in between.
 
 10
-00:00:43,930 --> 00:00:46,974
-The number is how good they are.
+00:00:39,270 --> 00:00:42,748
+The chief is engineering four, and science one.
 
 11
-00:00:47,424 --> 00:00:51,337
-I use a scale that tops out at four.
+00:00:43,648 --> 00:00:47,126
+The doctor is medical four, and science three.
 
 12
-00:00:51,787 --> 00:01:01,787
-Two means you do it for a living, and here is something the game gives you for nothing: a job counts as two.
+00:00:48,026 --> 00:00:50,635
+Now look at that last one.
 
 13
-00:01:02,237 --> 00:01:06,585
-The chief was already engineering two before I typed anything.
+00:00:51,085 --> 00:00:52,824
+Science isn't her job.
 
 14
-00:01:07,035 --> 00:01:09,209
-Now look at the doctor.
+00:00:53,274 --> 00:00:55,448
+She's simply good at it.
 
 15
-00:01:09,659 --> 00:01:11,398
-Her job is medical.
+00:00:56,348 --> 00:00:59,391
+And that's what a skill is for.
 
 16
-00:01:11,848 --> 00:01:14,022
-Science is not her job.
+00:01:01,191 --> 00:01:03,800
+There's nothing to paste this time.
 
 17
-00:01:14,472 --> 00:01:17,080
-She is just good at it.
+00:01:04,250 --> 00:01:09,467
+The game reads these lines along with the rest of the roster.
 
 18
-00:01:18,280 --> 00:01:23,063
-Lint is happy, and that is all there is to it.
+00:01:10,367 --> 00:01:13,846
+A job with no number counts as two,
 
 19
-00:01:23,513 --> 00:01:28,296
-The game reads these numbers with the rest of the roster.
+00:01:14,296 --> 00:01:20,383
+so before today the chief's engineering was two, and this line makes it four.
 
 20
-00:01:28,746 --> 00:01:32,224
-I do not open the other file today.
+00:01:21,583 --> 00:01:28,539
+On the bridge I add a choice with a new kind of condition. It says if,
 
 21
-00:01:32,674 --> 00:01:41,370
-One thing worth knowing: the numbers belong to the person on the roster, not to the name on the screen.
+00:01:28,989 --> 00:01:31,598
+then the word skill, then science,
 
 22
-00:01:41,820 --> 00:01:52,254
-If a player has saved a name of their own and sits in the doctor's chair, they are still as good as the doctor.
+00:01:32,048 --> 00:01:33,787
+then at least three.
 
 23
-00:01:53,454 --> 00:01:58,672
-On the bridge, a new choice. if skill science, at least three.
+00:01:35,587 --> 00:01:39,500
+Dr Hale has science three, so she's offered it.
 
 24
-00:01:59,122 --> 00:02:03,904
-Four parts: the word skill, which skill, a sign, a number.
+00:01:39,950 --> 00:01:42,993
+The chief has one, so he isn't.
 
 25
-00:02:04,354 --> 00:02:08,702
-The doctor has science three, so she is offered it.
+00:01:43,893 --> 00:01:46,502
+And here's the thing to remember.
 
 26
-00:02:09,152 --> 00:02:12,630
-The chief has science one, and is not.
+00:01:48,302 --> 00:01:51,346
+When a choice asks for a job,
 
 27
-00:02:13,080 --> 00:02:16,559
-And here is the difference from last time.
+00:01:51,796 --> 00:01:54,839
+and that person stayed on the ship,
 
 28
-00:02:17,009 --> 00:02:22,661
-When a job is missing from the party, one console covers for it.
+00:01:55,289 --> 00:01:57,028
+somebody covers for them.
 
 29
-00:02:23,111 --> 00:02:25,285
-Nobody covers for a skill.
+00:01:57,928 --> 00:02:01,841
+When a choice asks for a skill, nobody covers.
 
 30
-00:02:25,735 --> 00:02:31,822
-If the doctor stays on the ship, the sensor record is on nobody's menu.
+00:02:02,741 --> 00:02:07,524
+With the doctor at home, that record isn't on anyone's menu.
 
 31
-00:02:32,272 --> 00:02:35,315
-So a skill choice is a bonus.
+00:02:08,724 --> 00:02:11,767
+In the reactor room, a different idea.
 
 32
-00:02:35,765 --> 00:02:39,243
-Never put the only way forward behind one.
+00:02:12,667 --> 00:02:14,841
+This choice has no condition,
 
 33
-00:02:40,443 --> 00:02:42,183
-Now the other kind.
+00:02:15,291 --> 00:02:17,465
+so everyone is offered it.
 
 34
-00:02:42,633 --> 00:02:46,546
-No if at all, so everyone is offered it.
+00:02:18,365 --> 00:02:21,409
+What differs is how it turns out.
 
 35
-00:02:46,996 --> 00:02:49,604
-After the semicolon: check engineering 9.
+00:02:23,209 --> 00:02:27,122
+After the semicolon it says check, then a skill,
 
 36
-00:02:50,054 --> 00:02:55,707
-The game rolls a number from one to ten and adds your engineering.
+00:02:27,572 --> 00:02:29,746
+then a target of nine.
 
 37
-00:02:56,157 --> 00:03:02,678
-Nine or more, it works, and the party goes to the room in the brackets.
+00:02:30,646 --> 00:02:34,559
+The game picks a number from one to ten,
 
 38
-00:03:03,128 --> 00:03:07,911
-Then else, and the room for when it does not work.
+00:02:35,009 --> 00:02:36,748
+adds that person's skill,
 
 39
-00:03:08,361 --> 00:03:19,665
-So this one choice needs two rooms, and I write the failure as carefully as the success, because half my players are going to read it.
+00:02:37,198 --> 00:02:39,372
+and nine or more works.
 
 40
-00:03:20,115 --> 00:03:23,159
-Last part: a comma, and learn lockout.
+00:02:41,172 --> 00:02:43,780
+Then else, and a second room,
 
 41
-00:03:23,609 --> 00:03:29,261
-Anything after the check, after a comma, only happens when the check worked.
+00:02:44,230 --> 00:02:46,839
+which is where a failure goes.
 
 42
-00:03:29,711 --> 00:03:34,059
-The odds: target nine, skill four, six times in ten.
+00:02:47,739 --> 00:02:51,217
+And after a comma, what the party learns,
 
 43
-00:03:34,509 --> 00:03:36,683
-Skill zero, two in ten.
+00:02:51,667 --> 00:02:53,841
+but only when it worked.
 
 44
-00:03:37,133 --> 00:03:38,437
-Twelve is hard.
+00:02:55,641 --> 00:02:59,989
+So the chief wakes the core six times in ten,
 
 45
-00:03:38,887 --> 00:03:40,191
-Six is easy.
+00:03:00,439 --> 00:03:03,917
+and the doctor manages it twice in ten.
 
 46
-00:03:41,391 --> 00:03:42,391
-Four rules.
+00:03:04,817 --> 00:03:09,600
+And the page shows the roll to everyone in the room,
 
 47
-00:03:42,841 --> 00:03:45,450
-A skill choice is a bonus.
+00:03:10,050 --> 00:03:15,267
+so the whole party sees who tried and how close it was.
 
 48
-00:03:45,900 --> 00:03:50,248
-A check has an else, and both rooms lead back.
+00:03:16,467 --> 00:03:22,120
+Four rules. A skill choice is a bonus, and never the only way,
 
 49
-00:03:50,698 --> 00:03:55,046
-Before the check always happens, after it only on success.
+00:03:22,570 --> 00:03:25,178
+because nobody covers for a skill.
 
 50
-00:03:55,496 --> 00:04:01,148
-And the numbers go with the seat, whatever the player calls themselves. Lint.
+00:03:26,078 --> 00:03:28,687
+A check always has an else,
 
 51
-00:04:01,598 --> 00:04:02,902
-A misspelled Skills.
+00:03:29,137 --> 00:03:31,311
+and both rooms lead back.
 
 52
-00:04:03,352 --> 00:04:07,700
-A missing comma: it tells me that entry is dropped.
+00:03:32,211 --> 00:03:36,124
+What comes after the check happens only on success.
 
 53
-00:04:08,150 --> 00:04:14,237
-A check with no number: nothing would be rolled, and it would always work.
+00:03:37,024 --> 00:03:41,372
+And the numbers belong to the person on the roster.
 
 54
-00:04:14,687 --> 00:04:28,165
-An else that points at a room I never wrote: that one would end the visit, and only on a failed roll, so I would not find it by playing once.
+00:03:43,172 --> 00:03:46,650
+A party may try again, by the way.
 
 55
-00:04:28,615 --> 00:04:39,920
-And if science at least three, with the word skill left out: science on its own is a job, and a job is one or zero.
+00:03:47,100 --> 00:03:49,709
+The roll is there for drama.
 
 56
-00:04:40,370 --> 00:04:42,543
-Lint reads all of these.
+00:03:50,159 --> 00:03:51,898
+It isn't a lock.
 
 57
-00:04:42,993 --> 00:04:50,820
-Two things it cannot know: a skill you misspelled on the roster itself, and a number nobody has.
+00:03:53,098 --> 00:03:58,750
+Lint is clean, and it names nearly every slip you can make here.
 
 58
-00:04:52,020 --> 00:04:53,020
-The bridge.
+00:03:59,650 --> 00:04:03,563
+Leave the s off Skills, and it tells you.
 
 59
-00:04:53,470 --> 00:04:56,078
-The doctor has the sensor record.
+00:04:04,463 --> 00:04:07,507
+Leave the number out of a check,
 
 60
-00:04:56,528 --> 00:04:59,137
-The chief does not. The reactor.
+00:04:07,957 --> 00:04:11,435
+and it tells you nothing would be rolled.
 
 61
-00:04:59,587 --> 00:05:00,891
-The doctor tries.
+00:04:13,235 --> 00:04:18,887
+The one it can't catch is a skill misspelled on the roster itself,
 
 62
-00:05:01,341 --> 00:05:06,124
-There is her roll: engineering zero, and the board stays dark.
+00:04:19,337 --> 00:04:21,946
+because you're allowed to invent skills.
 
 63
-00:05:06,574 --> 00:05:08,748
-The chief tries. Engineering four.
+00:04:22,846 --> 00:04:25,454
+So read your roster once, slowly.
 
 64
-00:05:09,198 --> 00:05:24,850
-That four is the number I typed on the roster, and that is the thing to look for: if it says two, that person's Skills line is not being read, and lint will tell you why.
+00:04:26,654 --> 00:04:31,437
+Both aboard. On the bridge, the doctor has the sensor record,
 
 65
-00:05:25,300 --> 00:05:27,039
-Now the chief alone.
+00:04:31,887 --> 00:04:33,626
+and the chief doesn't.
 
 66
-00:05:27,489 --> 00:05:31,402
-The suit tags arrive marked as covering for medical.
+00:04:35,426 --> 00:04:39,774
+In the reactor room, they both have the same button.
 
 67
-00:05:31,852 --> 00:05:35,330
-The sensor record does not come to anyone.
+00:04:40,674 --> 00:04:42,413
+The doctor tries first,
 
 68
-00:05:36,530 --> 00:05:39,574
-Your third crew member gets two skills.
+00:04:42,863 --> 00:04:47,646
+and the page shows her roll, with engineering nought in it.
 
 69
-00:05:40,024 --> 00:05:46,111
-Give them a choice only they can see and a check anyone can try.
+00:04:48,546 --> 00:04:50,285
+Then the chief tries,
 
 70
-00:05:46,561 --> 00:05:57,430
-Then break it on purpose: take the s off one Skills, read what lint says, and play it once to see what that person loses.
+00:04:50,735 --> 00:04:53,343
+and his line says engineering four.
 
 71
-00:05:57,880 --> 00:06:03,533
-Next time, one of these people gets a quest that is theirs alone.
+00:04:55,143 --> 00:04:58,187
+That number is the one to watch.
+
+72
+00:04:58,637 --> 00:05:01,246
+If the chief's line says two,
+
+73
+00:05:01,696 --> 00:05:04,739
+the game isn't reading his Skills line,
+
+74
+00:05:05,189 --> 00:05:07,363
+and lint will say why.
+
+75
+00:05:08,263 --> 00:05:10,437
+One more thing you'll notice.
+
+76
+00:05:10,887 --> 00:05:15,235
+Nothing on the handheld tells a player their own numbers.
+
+77
+00:05:15,685 --> 00:05:20,033
+The only place a number shows is in a roll.
+
+78
+00:05:21,233 --> 00:05:23,841
+Give your third person some skills.
+
+79
+00:05:24,741 --> 00:05:28,654
+Add one choice that only they're good enough for,
+
+80
+00:05:29,104 --> 00:05:34,322
+and one check on a skill that nobody has. Then break it.
+
+81
+00:05:34,772 --> 00:05:38,250
+Take the s off Skills, read the warning,
+
+82
+00:05:38,700 --> 00:05:40,874
+and play it once anyway.
+
+83
+00:05:42,674 --> 00:05:47,022
+Next time, one person gets a quest of their own.

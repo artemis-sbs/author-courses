@@ -1,191 +1,148 @@
 # C3-5 video script - Personal quests
 
-> **RE-CUT BEFORE RECORDING (2026-10-04).** This script was written before the library
-> changed, and `lesson.md` has been rewritten since. What is different now:
+> **STATE ON 2026-10-09. Read this first.**
 >
-> - There is no second recipe card. Step 3 adds `stories=amd_section(MISSION_DOC,
->   "side_stories")` to the `boarding_visit` line (sbs_utils `a928fbe0`).
-> - The handheld of a person who holds a story has a **Tasks** app, and it lists the story
->   under their name (sbs_utils `a37072ea`). The "Hold the recording" note below no longer
->   applies. Flagged for review: whether Tasks belongs on a rooms-only handheld was a design
->   call, and this is the recommended answer built.
-> - Lint names every mistake in the first table of Step 7. Only `Leads to:` in a place of
->   rooms and `Then: reveal` of a ship's quest stay silent.
-> - A `Reward:` on a side story is paid to the ship (measured: 250 -> 310 credits).
->
-> **Seen in the real engine, three consoles (Engineering, Science, Helm):** each person was
-> handed their story with no card; Dr Hale's handheld showed Crew, Act and Tasks; Tasks
-> listed `Dr Hale / Six Names / Active` above `Party`; Helm's ship log showed `Quest
-> complete: Six Names`; `mast.runtime.log` was empty; both consoles came home as their own
-> stations. **Not seen:** the Tasks app after the story completes (the handheld returns to
-> Act when the room changes), and anything with a player's saved name.
+> - **Everything this page needs is released.** Written for Artemis Cosmos 1.4.0 from
+>   Steam or itch.io, with a current tool and libraries.
+> - **Starts from Lecture 4's finished files** in `MyBoarding`. Both files change, so
+>   `example\` holds `mission.amd` and `story.mast`.
+> - **One card, changed once.** The student adds `stories=...` to the end of the
+>   `boarding_visit` line of Lecture 2's card. There is no second card.
+> - **`Leads to:` is not taught here.** It points at a thing on a map, and a place made of
+>   rooms has none. Lint is silent about it. It is on the page as a note.
 
-Target length: 18 minutes. One continuous screen recording with voice-over, cut at scene
-boundaries. The companion page is `lesson.md`; the finished files are in `example\`.
+> **Measured 2026-10-09, in the mock.** Tool `sbs` as installed, library as packaged
+> (sbs_utils `ae2bbf4a`). The steps were typed onto Lecture 4's files and linted at each
+> one. The finished files were played headless with stand-in consoles: two aboard, the
+> engineer alone, and the surgeon beaming down late. Then 40 one-change variants, each
+> linted and played. No engine, no window.
+
+The companion page is `lesson.md`; the finished files are in `example\`.
 
 ## Before recording
 
 | Item | State needed |
 |---|---|
-| Mission | The Lecture 4 mission: the crew roster with `Skills:`, the rooms, two readings, the check, the log. Lint clean |
-| Library | sbs_utils `70e4d939` or later. Read "Hold the recording" below first |
-| Recipe card | One new card, two parts, nothing on it to change. It is in Step 3 of `lesson.md` |
-| VS Code | `MyMission` folder open, `mission.amd` in one tab and `story.mast` in another |
-| Game | Closed. Started on camera in scene 8 with a server and THREE consoles: Engineering and Science to go aboard, Helm to stay on the bridge and show the ship's quest list |
-
-**Hold the recording.** As the library stands, the boarding handheld does not list a
-person's own quests in a place made only of rooms: the Tasks app opens only on a map or
-in a ruin. A side story is handed over, finishes and leads on, and its owner never reads
-it. The page says so plainly and the script below is written for that. If the Tasks app
-is opened for every boarding party before this is recorded, scenes 1, 2 and 8 change: the
-story is then on the handheld under the person's name, and that is the thing to show.
+| Mission | `MyBoarding` with Lecture 4's files. Lint clean |
+| VS Code | `MyBoarding` folder open, `mission.amd` and `story.mast` in two tabs |
+| Command prompt | Open in `data\missions`, cleared |
+| Game | Closed. Started on camera in scene 7 with a server, Helm, Engineering and Science |
 
 ## Confirm on camera
 
-Nothing in this lecture has been run in the real game, and no screen has been seen.
+1. After Step 1 lint prints the two warnings on the page; after Step 2 only the first;
+   after Step 3 it is `clean`, and it stays clean. (Lint.)
+2. With both aboard, Six Names is held by Dr Hale and A Cold Core by Chief Okoro, both
+   active; each handheld has three apps, Crew, Act and Tasks. (Mock.)
+3. Dr Hale's reading of the tags completes Six Names and Account for the Crew at one
+   press, and the side's credits go from 100 to 250. Chief Okoro's reading completes A
+   Cold Core. The ship is told `Quest complete:` for each. (Mock.)
+4. The engineer alone: Six Names is handed to nobody; the covered reading teaches the
+   fact and Account for the Crew stays active; A Cold Core still completes. (Mock.)
+5. The surgeon beaming down after the engineer is handed Six Names when she arrives.
+   (Mock.)
+6. Every row of the page's tables. (Lint, Mock.)
 
-Checked on 2026-10-03 in the mock only, sbs_utils `70e4d939`, by a probe that stood in
-consoles, moved the ship alongside so the lesson's own routes ran, beamed the party down
-with the same two calls the BEAM DOWN button makes, pressed choices by their words, and
-printed what the game's own functions returned:
+Seen on a real screen by the earlier pilot, with three real consoles: the Tasks app on
+the surgeon's handheld and its list, Six Names marked Active with the ship's quests under
+Party.
 
-1. Engineering and Science aboard, Helm on the bridge. Six Names was handed to Dr Hale and
-   A Cold Core to Chief Okoro. The surgeon's reading of the suit tags finished Six Names,
-   which finished Account for the Crew, and the side's credits rose by 150. The engineer's
-   reading finished A Cold Core. The ship's log held `Quest complete: Account for the
-   Crew`, `Quest complete: Six Names` and `Quest complete: A Cold Core`, in that order.
-   The run passed with an empty `mast.runtime.log`.
-2. Engineering alone. Six Names was handed to nobody. The suit tags were offered marked as
-   covering for medical; taking them left Account for the Crew open. A Cold Core finished.
-3. Science alone. The mirror image: Six Names and Account for the Crew finished, A Cold
-   Core was handed to nobody.
-4. Asked of the library, not read off a screen: with a party aboard, the handheld's apps
-   are Crew and Act; the ship's quest list holds Account for the Crew and neither side
-   story.
-5. Every row of the page's three tables: `sbs lint` on each mistake, and what the game did
-   with it.
+Not seen by anyone. If one is not as described, stop and fix the page:
 
-NOT seen. If one is not as described, stop and fix the page:
-
-6. Where `Quest complete: Six Names` is drawn, and whether the party aboard sees it at all
-   or only the people left on the bridge.
-7. The quest list on a real console: Account for the Crew present at the start and
-   complete at the end.
-8. The handheld of a person who holds a side story. The page says it shows no list of
-   quests. Look for a Tasks tile.
-9. What a player sees when the card's `shared SIDE_STORIES` line is missing. Headless, the
-   story stops with an error on the first beam down.
-10. Two real consoles beaming down one after the other, each getting their own story.
+1. This rewrite's files in the real game.
+2. The two `Quest complete:` lines on a bridge console as the reading is taken.
+3. The Back button's place on the handheld.
 
 ## Scenes
 
-### 1. Cold open (0:00 - 0:45)
+### 1. Cold open
 
-**Screen:** Three consoles. On Science, in the airlock, press Read the name tags on the
-suits. On Helm, still on the bridge, the two `Quest complete` lines arrive.
+**Screen:** The Science console's handheld with the Tasks app open: one story under Dr
+Hale's name. Then the airlock, and her reading.
 
-**Say:** "The doctor just read six name tags. Nobody asked the engineer to do that. Nobody
-asked the ship. It was her job, on her list, and when she finished it something happened
-for everyone. That is a side story: a quest that belongs to one person."
+**Say:** "Everyone in this party reads the same room. || But one of them came aboard with
+a question of her own, | and it's listed on her handheld, under her name. ||| Whose suits
+are these? || Today you give one person a quest that's theirs, | and you make it lead
+somewhere. ||"
 
-### 2. A quest with an owner (0:45 - 3:30)
+### 2. A section for side stories
 
-**Screen:** `mission.amd`, the end of the file. Type the Side Stories heading and the Six
-Names record. Then the four-row table from the companion page.
+**Screen:** `mission.amd`, the end of the file. Type the Side Stories heading and Six
+Names. Highlight `For: medical`. Lint: two warnings.
 
-**Say:** "A new section, at the very end. Side Stories, and the key is `side_stories`.
-Keep that key. Inside it, a quest. You know every line of this from Class 1 except the
-first. `For`, colon, `medical`. That is a job word, the same word that is on the doctor's
-`Roles` line in your roster. This quest is not the ship's. It is hers. `Starts when: at
-once`, because I want it running the moment she has it. Leave that out and she is handed
-a story that is asleep, and nothing ever wakes it. An objective. And `Done when: signal
-names_read`. A signal I just invented. Something has to send it."
+**Say:** "A side story is a quest. || It has the fields you learned in Class 1, | and it
+lives in a section of its own, at the end of the file. ||| What's new is this line. | For,
+and then a job. || A quest in your Quests section belongs to the whole ship. | This one
+belongs to one person. ||| It starts at once, | it has an objective, | and it's done when
+a signal arrives. Lint warns twice, | and both warnings are true for now. | Nothing sends
+that signal yet, | and nothing hands the story out. || The word after For is a job from
+your roster, | or it can be a person: their key, or their name. ||"
 
-### 3. Her own reading finishes it (3:30 - 5:30)
+### 3. Her own reading finishes it
 
-**Screen:** The Airlock. Put the cursor at the end of the suit tags choice. Type the comma
-and `signal names_read`. Zoom on the comma.
+**Screen:** The Airlock. On the surgeon's choice, add a comma and `signal names_read`
+after `learn suits`. Lint: one warning left.
 
-**Say:** "Here is the choice only the doctor is offered. After the semicolon it already
-says `learn suits`. I add a comma, then `signal names_read`. Two things happen now when
-she takes it: the party learns the fact, and her story hears its signal. Look at this
-comma. If I forget it, the signal is never sent, and lint will not tell me. I am going to
-show you that in a few minutes, because you will do it."
+**Say:** "So first, the signal. || I find the choice only the surgeon is offered, | and I
+add a second outcome after the first, | with a comma between them. Learn the fact, comma,
+send the signal. || The name has to match the story's, letter for letter. || And don't
+lose that comma. | Without it, the signal is never sent. ||"
 
-### 4. The card (5:30 - 8:00)
+### 4. Hand the stories to the visit
 
-**Screen:** `story.mast`. Find `shared BOARDING_SCENES`. Paste the first part below it.
-Scroll to the end of the file. Paste the second part. Then the terminal: `sbs lint
-MyMission`, clean.
+**Screen:** `story.mast`, the card at the end. On the `boarding_visit` line, type the
+`stories=` part before the last bracket. Lint: clean.
 
-**Say:** "The game does not hand these stories out by itself, so there is a card. Two
-parts. The first goes under the line from Lecture 2 that starts `shared BOARDING_SCENES`,
-with the same indent. It reads my new section and keeps it. The second goes at the very
-end of the file. It says: every time somebody beams down, hand them the story that is
-for them. I change nothing on this card. I paste it. Lint is clean, and I have to be
-honest about what that means here: lint cannot see this card at all. If I paste half of
-it, lint still says clean."
+**Say:** "Then the handing out. || I open the story file | and find the card from Lecture
+2. || One line on it starts the visit, | and I add a few words to the end of that line.
+Stories equals, | and then the section of the fact sheet to read them from. || The key in
+quotes is the key on my Side Stories heading. ||| That's the whole change. || From now on
+each person is handed their story as they beam down, | and that includes someone who beams
+down late. ||"
 
-### 5. A second story (8:00 - 9:30)
+### 5. A second story, and where one leads
 
-**Screen:** Type A Cold Core below Six Names. Then the Reactor Room: add `, signal
-core_read` to the shutdown choice.
+**Screen:** Type A Cold Core, and add its signal to the engineer's choice. Then add
+`Then: signal names_known` to Six Names, and type Account for the Crew in the Quests
+section. Draw the chain with the cursor: the choice, the story, the ship's quest.
 
-**Say:** "The chief gets one too. `For: engineering`. Find out how the core was stopped.
-And the choice only he is offered sends the signal. Same shape, different job. Two people,
-two stories."
+**Say:** "The engineer gets one too, | finished by his own reading. ||| And a side story
+can lead on, | the same way any quest does, with Then. || When the surgeon's story
+completes, it sends a second signal, | and a quest for the whole ship is waiting to hear
+it. ||| So read the chain from the top. | She reads the tags. | That finishes her story. |
+Her story finishes the ship's quest, | and the ship is paid. || A story can carry a reward
+of its own as well, | and it's paid to the ship that person came from. ||"
 
-### 6. Where a story leads (9:30 - 12:30)
+### 6. Four rules, and lint
 
-**Screen:** Six Names: add `Then: signal names_known`. Scroll up to the Quests section.
-Type Account for the Crew. Then the two-row table (waits, sends) and the three-row `Then:`
-table from the companion page.
+**Screen:** The four rules on the page. Then the command prompt: lint, clean. Change
+`For: medical` to `For: medcal`, lint, undo. Remove the comma before `signal`, lint, undo.
 
-**Say:** "A side story can lead somewhere, and it does it the way every quest does: with
-`Then`. When the doctor's story finishes, it sends `names_known`. And up here, in the
-ship's own quests, a new one: Account for the Crew. `Scope: shared`, running from the
-start, done when it hears `names_known`. So read the chain. She reads the tags. That
-finishes her story. Her story finishes the ship's quest. One waits, one sends. Notice
-where the reward is. On the ship's quest. A reward written on a side story is paid to
-nobody. And one thing you will see in other people's files: `Leads to`. That points a
-person at a thing on a map, or a place in a ruin. We have rooms, not a map, so it does
-nothing here. We will use it later."
+**Say:** "Four rules. A side story is a bonus, and never the only way, | because nobody
+covers for a person. || One job word goes in three places: | the roster, the story, and
+the choice that finishes it. || For takes one job, or one person. || And one story goes to
+one person. ||| Lint is good here. | It tells you when a story is for nobody, | and it
+tells you when two outcomes have run together. ||"
 
-### 7. Rules, and lint (12:30 - 15:30)
+### 7. Play it
 
-**Screen:** The five rules on the companion page. Then the terminal. Delete the comma
-before `signal` in the airlock choice, lint: clean. Undo. Change `For: medical` to `For:
-medcal`, lint: clean. Undo. Change `names_read` on the choice to `names_red`, lint: two
-warnings. Undo. Change the section key to `side_story`, lint: a warning that nothing reads
-it. Undo.
+**Screen:** `sbs run server,helm,engineering,science -m MyBoarding map=0`. Alongside.
+Both beam down. On Science: Back, the three apps, Tasks, Six Names. Back, Act. The
+surgeon reads the tags; show the ship's log on Helm. Aft; the engineer reads the record.
 
-**Say:** "Five rules. A side story is a bonus: nobody covers for a person, so never hang
-the main story on one. One job word in three places: the roster, the story, the choice.
-Name the job, not the person. No reward on a side story. And one story goes to one
-person. Now lint, and I am going to start with the two it misses. The comma. Clean. That
-story can never finish. A misspelled job on `For`. Clean. That story is handed to nobody.
-Those two you check by eye. Here is what it does catch: a signal name that does not match,
-two warnings, one from each end. And a section key the card is not looking for."
+**Say:** "Both aboard. On the doctor's handheld I go back one step, | and there are three
+apps now, | and the third one is Tasks. || There's her story, under her name. ||| She
+reads the tags, | and the bridge is told twice: | her story is complete, and so is the
+ship's quest. || Then the chief reads his record, | and his story completes too. ||| Now
+think about a short crew. || If the doctor stays on the ship, | another console can still
+take her reading, | but her story was never handed out, | so the ship's quest stays open.
+|| The next lecture shows you the way round that. ||"
 
-### 8. Play it (15:30 - 17:30)
-
-**Screen:** Server and three consoles. On Helm, open the quest list: Account for the Crew.
-Fly alongside. Engineering and Science beam down. Science takes the suit tags. Cut to
-Helm: the two lines, then the quest list. Back aboard: go aft, Engineering takes the
-shutdown record. Then close Science, start again with Engineering and Helm only, and take
-the suit tags marked as covering: on Helm, Account for the Crew stays open.
-
-**Say:** "Before we go: the ship's quest list. Account for the Crew is waiting. Both of
-them beam down. The doctor reads the tags. Back on the bridge: quest complete, twice, and
-the reward. Now the same mission with the doctor left behind. The chief is offered her
-reading, marked as covering. He takes it. The party learns the fact. And on the bridge,
-nothing. Her story was never handed out, because she never came. That is rule one."
-
-### 9. Your turn (17:30 - 18:00)
+### 8. Your turn
 
 **Screen:** The exercise on the companion page.
 
-**Say:** "Your third crew member gets a story of their own, finished by the reading you
-gave them. Give the chief's story somewhere to lead. Then break it on purpose: misspell
-the job on `For`, watch lint say clean, and play it once to see what does not happen. Next
-time you put all of it together, and play ten minutes of your own away mission."
+**Say:** "Write a story for your third person, | finished by their own reading. || Give
+the chief's story somewhere to lead. Then break it. | Misspell the job after For, | read
+what lint says, | and play it once anyway. ||| Next time is the checkpoint: | one away
+scene of your own, planned on paper and played. ||"

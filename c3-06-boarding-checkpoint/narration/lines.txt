@@ -1,103 +1,82 @@
-s01_cold_open_0	Three people, one room, and a decision none of them was ready for.
-s01_cold_open_1	It took them a dozen choices to get here, and every crew can get here: three of them, or one of them alone.
-s01_cold_open_2	Today you build this, and you learn how to be sure of that last part before anyone plays it.
-s02_three_sentences_and_a_beat_s_0	No rooms yet. Three sentences.
-s02_three_sentences_and_a_beat_s_1	The question: why is this ship drifting?
-s02_three_sentences_and_a_beat_s_2	The answer, which the party will find in pieces: her crew put themselves to sleep to wait for help.
-s02_three_sentences_and_a_beat_s_3	And the choice: wake them, or go and get a doctor.
-s02_three_sentences_and_a_beat_s_4	If you cannot write the third sentence you have a tour, not a scene.
-s02_three_sentences_and_a_beat_s_5	Now the beat sheet.
-s02_three_sentences_and_a_beat_s_6	It is just how much of everything. Six places.
-s02_three_sentences_and_a_beat_s_7	One reading for each person on my roster, so three.
-s02_three_sentences_and_a_beat_s_8	One reading for a skill. One check.
-s02_three_sentences_and_a_beat_s_9	That is five facts.
-s02_three_sentences_and_a_beat_s_10	The locked door will ask for three. Two endings.
-s02_three_sentences_and_a_beat_s_11	Keep to these numbers the first time.
-s03_the_places_0	One room in the middle, and everything hangs off it.
-s03_the_places_1	Every room has a way back.
-s03_the_places_2	And look where the way home is: in the airlock, and nowhere else yet.
-s03_the_places_3	In Lecture 2 every room had one.
-s03_the_places_4	Here is what I found when I measured it.
-s03_the_places_5	One press of Return to the ship, by anybody, ends the visit for everybody, and the place cannot be entered again.
-s03_the_places_6	In a ten-minute scene with three people, that is one thumb away from no ending at all.
-s03_the_places_7	So home is a walk.
-s03_the_places_8	Now I delete my practice rooms, all of them, and type five places. Lint.
-s03_the_places_9	Two warnings: my old stories are waiting for signals from rooms I just deleted.
-s03_the_places_10	Lint is right.
-s03_the_places_11	I will clear them in a few minutes.
-s04_the_facts_table_and_the_read_0	Before I type a reading, I list them.
-s04_the_facts_table_and_the_read_1	What the fact is, where it is, who is offered it.
-s04_the_facts_table_and_the_read_2	And one more column, the one that matters: is it sure?
-s04_the_facts_table_and_the_read_3	A fact is sure when any party at all can get it.
-s04_the_facts_table_and_the_read_4	A reading for a job is sure, because when the doctor stays home somebody covers for her.
-s04_the_facts_table_and_the_read_5	A reading for a skill is not.
-s04_the_facts_table_and_the_read_6	Nobody covers for a skill.
-s04_the_facts_table_and_the_read_7	And a fact behind a check takes luck. Three sure.
-s04_the_facts_table_and_the_read_8	Remember that number.
-s04_the_facts_table_and_the_read_9	Now the readings.
-s04_the_facts_table_and_the_read_10	Same shape as Lecture 3.
-s04_the_facts_table_and_the_read_11	Two of them also send a signal, and that is for later.
-s05_the_check_0	One check.
-s05_the_check_1	Anyone may try the main cell.
-s05_the_check_2	It goes where the party is passing through anyway, never in front of an ending, and what it teaches is a spare.
-s05_the_check_3	Both rooms lead back to the engine room.
-s06_the_locked_door_0	The captain's hatch opens at three facts.
-s06_the_locked_door_1	Three, because I have three sure facts.
-s06_the_locked_door_2	The number on the door is never more than the sure facts.
-s06_the_locked_door_3	The other two are spares.
-s06_the_locked_door_4	And two lines on the spine, so a party that gets here early is told why the hatch is shut.
-s06_the_locked_door_5	Now a warning, because you will want to write more than this.
-s06_the_locked_door_6	A condition has three shapes. A job.
-s06_the_locked_door_7	A skill and a number.
-s06_the_locked_door_8	How many facts.
-s06_the_locked_door_9	That is all.
-s06_the_locked_door_10	There is no and.
-s06_the_locked_door_11	You cannot ask for one fact by its name.
-s06_the_locked_door_12	Write any of those and lint says clean, and the choice is never offered to anyone.
-s07_two_endings_0	An ending is three things.
-s07_two_endings_1	A quest the ship does not have yet: Starts when: revealed, so it is hidden.
-s07_two_endings_2	A choice that starts it: semicolon, accepts, the quest's key.
-s07_two_endings_3	You used accepts on an answer in Class 2, and it works the same here.
-s07_two_endings_4	And a last room, with one line and one way out, and that way out is home.
-s07_two_endings_5	Do not give a last room a way back.
-s07_two_endings_6	I tried it.
-s07_two_endings_7	The party took both endings.
-s08_stories_and_a_quest_any_crew_0	Two stories, the same shape as last time: For, a job, and a signal that person's own reading sends.
-s08_stories_and_a_quest_any_crew_1	Now the ship's quest, and one change from Lecture 5.
-s08_stories_and_a_quest_any_crew_2	Last time it waited for the doctor's story.
-s08_stories_and_a_quest_any_crew_3	So with the doctor at home, it stayed open for good.
-s08_stories_and_a_quest_any_crew_4	This time it waits for the reading's own signal.
-s08_stories_and_a_quest_any_crew_5	The doctor's press finishes both.
-s08_stories_and_a_quest_any_crew_6	And if she is not there, whoever covers for her finishes the ship's quest. Lint. Clean.
-s09_five_checks_with_a_pencil_0	Lint is clean.
-s09_five_checks_with_a_pencil_1	Lint has checked my spelling.
-s09_five_checks_with_a_pencil_2	It has not walked through my rooms, and it never will.
-s09_five_checks_with_a_pencil_3	So, five checks.
-s09_five_checks_with_a_pencil_4	One: every room has a way out with no if.
-s09_five_checks_with_a_pencil_5	Fourteen headings, fourteen ticks.
-s09_five_checks_with_a_pencil_6	Two: every room has a way in.
-s09_five_checks_with_a_pencil_7	Three: the door asks for three, I have three sure.
-s09_five_checks_with_a_pencil_8	Four, the important one: I cross out everything that needs a skill or luck, and I walk it.
-s09_five_checks_with_a_pencil_9	Airlock, spine, three readings, cabin, ending, home.
-s09_five_checks_with_a_pencil_10	If the worst crew can do it, every crew can.
-s09_five_checks_with_a_pencil_11	Five: each story is finished by its own person's reading, and each last room has one way out. Now watch.
-s09_five_checks_with_a_pencil_12	I make the door ask for four. Lint: clean.
-s09_five_checks_with_a_pencil_13	But check three: four is more than three.
-s09_five_checks_with_a_pencil_14	That scene only opens for a lucky party.
-s09_five_checks_with_a_pencil_15	Lint could not tell me.
-s09_five_checks_with_a_pencil_16	The pencil could.
-s10_play_it_0	Alone first, as the chief.
-s10_play_it_1	The doctor's reading comes to me marked as covering.
-s10_play_it_2	So does the quartermaster's.
-s10_play_it_3	Three facts, the hatch, an ending. Sixteen presses.
-s10_play_it_4	Now all three, and the watch is running.
-s10_play_it_5	Each reading goes to its own person.
-s10_play_it_6	Nothing is marked as covering. They choose.
-s10_play_it_7	And on the bridge, the ship has a quest it did not have a minute ago.
-s10_play_it_8	Stop the watch.
-s11_your_turn_0	Now yours.
-s11_your_turn_1	Three sentences, a beat sheet, the places, the facts table, and only then the rooms.
-s11_your_turn_2	Do the five checks.
-s11_your_turn_3	Break it three times on purpose and find each one with the pencil.
-s11_your_turn_4	Then play it, and write down how long it took.
-s11_your_turn_5	Next time, we open up a long away mission and see how its files fit together.
+s01_cold_open_0	Twelve people asleep behind frosted glass, one switch,
+s01_cold_open_1	and a note that says don't.
+s01_cold_open_2	Three of my crew are standing in front of it,
+s01_cold_open_3	and whichever button they press, the ship gets a different quest.
+s01_cold_open_4	This is the checkpoint for the first half of the class.
+s01_cold_open_5	You'll plan one away scene on paper, type it, check it, and play it.
+s02_three_sentences_0	Before any rooms, three sentences.
+s02_three_sentences_1	The question the scene asks.
+s02_three_sentences_2	Why is this hulk drifting, with nobody at the controls?
+s02_three_sentences_3	The answer, which the party finds in pieces.
+s02_three_sentences_4	Her crew put themselves to sleep, to wait for help that never came.
+s02_three_sentences_5	And the choice they make at the end.
+s02_three_sentences_6	Wake them now, or leave them and fetch a doctor.
+s02_three_sentences_7	The pieces of the answer become your readings,
+s02_three_sentences_8	and the choice becomes your two endings.
+s02_three_sentences_9	If you can't write the third sentence,
+s02_three_sentences_10	you have a tour, and not a scene.
+s03_the_beat_sheet_and_the_drawi_0	Next, how much of everything. Six places.
+s03_the_beat_sheet_and_the_drawi_1	Three readings, one for each job on my roster.
+s03_the_beat_sheet_and_the_drawi_2	One reading for a skill, and one check.
+s03_the_beat_sheet_and_the_drawi_3	Five facts in all, and a door that asks for three.
+s03_the_beat_sheet_and_the_drawi_4	Then I draw it, with one room in the middle,
+s03_the_beat_sheet_and_the_drawi_5	and every other place leads back to that room.
+s03_the_beat_sheet_and_the_drawi_6	The way home goes in the room they arrive in,
+s03_the_beat_sheet_and_the_drawi_7	and at each ending, and nowhere else.
+s04_the_facts_table_0	This is the table that saves you.
+s04_the_facts_table_1	For every fact I write where it is, who's offered it,
+s04_the_facts_table_2	and whether it's sure.
+s04_the_facts_table_3	A fact is sure when every party can get it.
+s04_the_facts_table_4	A reading for a job on my roster is sure,
+s04_the_facts_table_5	because when that person stays home, somebody covers.
+s04_the_facts_table_6	A reading for a skill isn't,
+s04_the_facts_table_7	and neither is anything behind a roll.
+s04_the_facts_table_8	I have three sure facts.
+s04_the_facts_table_9	So my door may ask for three, and no more.
+s05_type_it_in_layers_0	Now I type, in layers, and I run lint after each one. Places first,
+s05_type_it_in_layers_1	and I've torn out my practice rooms to make space.
+s05_type_it_in_layers_2	Lint warns about two signals,
+s05_type_it_in_layers_3	and it's right, because the rooms that sent them are gone. Then the readings. Then the check.
+s05_type_it_in_layers_4	Then the door, with a line that tells an early party why it's shut. Then the endings.
+s05_type_it_in_layers_5	Each ending is a quest the ship doesn't have yet,
+s05_type_it_in_layers_6	a choice that starts it, with the new word accepts,
+s05_type_it_in_layers_7	and a last room with one way out.
+s05_type_it_in_layers_8	Then the two stories.
+s05_type_it_in_layers_9	And lint is clean.
+s06_a_quest_any_party_can_finish_0	One change to the ship's quest.
+s06_a_quest_any_party_can_finish_1	Last time, it waited for the surgeon's story to finish.
+s06_a_quest_any_party_can_finish_2	But a story is handed to nobody when its person stays home,
+s06_a_quest_any_party_can_finish_3	so a short crew could never complete it.
+s06_a_quest_any_party_can_finish_4	Now it waits for the reading's own signal.
+s06_a_quest_any_party_can_finish_5	The surgeon's press finishes her story and the ship's quest together,
+s06_a_quest_any_party_can_finish_6	and when she's not there, the covered reading still finishes the ship's.
+s07_five_checks_with_a_pencil_0	Lint has passed, and lint checks your spelling.
+s07_five_checks_with_a_pencil_1	It doesn't walk through your rooms.
+s07_five_checks_with_a_pencil_2	So I do, with a pencil.
+s07_five_checks_with_a_pencil_3	One: every room has a way out with no condition.
+s07_five_checks_with_a_pencil_4	Two: every room has a way in.
+s07_five_checks_with_a_pencil_5	Three: the door asks for no more than the sure facts,
+s07_five_checks_with_a_pencil_6	and every fact has its own name.
+s07_five_checks_with_a_pencil_7	Four is the big one.
+s07_five_checks_with_a_pencil_8	I cross out everything that needs a skill or a roll,
+s07_five_checks_with_a_pencil_9	and with what's left I walk to each ending.
+s07_five_checks_with_a_pencil_10	If I can, every crew can.
+s07_five_checks_with_a_pencil_11	Five: each story's reading belongs to its person,
+s07_five_checks_with_a_pencil_12	and each ending's quest starts hidden.
+s08_play_it_three_times_0	Then I play it three times, with a watch beside me.
+s08_play_it_three_times_1	Alone, I'm the chief,
+s08_play_it_three_times_2	and two readings come to me marked as covering.
+s08_play_it_three_times_3	Sixteen presses, and I'm home with an ending.
+s08_play_it_three_times_4	With everyone aboard, nothing is covered,
+s08_play_it_three_times_5	and reading it all takes twenty.
+s08_play_it_three_times_6	And once, I walk away.
+s08_play_it_three_times_7	One press in the airlock,
+s08_play_it_three_times_8	and the visit is over for everybody, with nothing finished.
+s08_play_it_three_times_9	That's why the way home is where it is.
+s09_your_turn_0	Now write your own.
+s09_your_turn_1	Three sentences, a beat sheet, a drawing, a facts table,
+s09_your_turn_2	and then the typing.
+s09_your_turn_3	Do the five checks,
+s09_your_turn_4	and break it three times on purpose, to see lint say clean when the scene is wrong.
+s09_your_turn_5	Then play it with everyone you can find,
+s09_your_turn_6	and write down how long it took.
