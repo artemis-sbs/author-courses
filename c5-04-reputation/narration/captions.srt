@@ -1,0 +1,443 @@
+1
+00:00:00,000 --> 00:00:03,478
+Last time, your three sides were just there.
+
+2
+00:00:04,378 --> 00:00:07,422
+They met every crew the same way,
+
+3
+00:00:07,872 --> 00:00:10,046
+whatever that crew had done.
+
+4
+00:00:11,846 --> 00:00:14,020
+Today they start to remember.
+
+5
+00:00:14,920 --> 00:00:17,528
+Each side gets something it values.
+
+6
+00:00:17,978 --> 00:00:21,457
+The crew earns a name with each one,
+
+7
+00:00:21,907 --> 00:00:26,254
+by what they say and by the work they finish.
+
+8
+00:00:27,154 --> 00:00:30,198
+And that name changes prices, and jobs,
+
+9
+00:00:30,648 --> 00:00:33,257
+and how a station says hello.
+
+10
+00:00:34,457 --> 00:00:38,804
+The game measures a captain on seven pairs of traits.
+
+11
+00:00:39,704 --> 00:00:42,748
+There's honest or liar, fearsome or cowardly,
+
+12
+00:00:43,198 --> 00:00:45,807
+generous or selfish, and four more.
+
+13
+00:00:47,607 --> 00:00:50,215
+Neither end is the good one.
+
+14
+00:00:51,115 --> 00:00:55,028
+A navy can value doing it by the book,
+
+15
+00:00:55,478 --> 00:00:59,391
+and a gang of wreckers can value being feared.
+
+16
+00:01:01,191 --> 00:01:04,235
+So each side gets one line, Values,
+
+17
+00:01:04,685 --> 00:01:09,467
+with the traits it cares about, and a weight on each.
+
+18
+00:01:10,367 --> 00:01:12,976
+The farmers want honest and generous.
+
+19
+00:01:13,876 --> 00:01:16,920
+The miners want it by the book.
+
+20
+00:01:17,820 --> 00:01:19,993
+And the wreckers want fearsome.
+
+21
+00:01:21,193 --> 00:01:26,846
+From those, the game works out one number for each side, called standing.
+
+22
+00:01:27,746 --> 00:01:29,485
+It starts at zero,
+
+23
+00:01:29,935 --> 00:01:33,848
+and it's an average across what that side values.
+
+24
+00:01:35,648 --> 00:01:37,822
+Look at what that means.
+
+25
+00:01:38,722 --> 00:01:43,504
+Twenty in both of Hollin's values is a standing of twenty.
+
+26
+00:01:44,404 --> 00:01:49,187
+But honesty alone has to reach thirty-five to do the same.
+
+27
+00:01:50,087 --> 00:01:54,435
+And honesty alone, pushed all the way, stops at fifty-seven.
+
+28
+00:01:56,235 --> 00:02:02,322
+So a crew can't win a side over by being good at one thing.
+
+29
+00:02:03,222 --> 00:02:08,004
+They have to be the whole of what that side admires.
+
+30
+00:02:09,204 --> 00:02:11,813
+How does the crew earn it?
+
+31
+00:02:12,263 --> 00:02:16,176
+There are two ways, and the first is work.
+
+32
+00:02:17,076 --> 00:02:20,120
+When a ship finishes a side's job,
+
+33
+00:02:20,570 --> 00:02:24,483
+its standing with that side goes up by five.
+
+34
+00:02:25,383 --> 00:02:27,557
+I write nothing for that.
+
+35
+00:02:28,007 --> 00:02:30,180
+It comes with the job.
+
+36
+00:02:31,980 --> 00:02:35,459
+But the template's jobs don't have endings yet,
+
+37
+00:02:35,909 --> 00:02:38,517
+so I give the escort one:
+
+38
+00:02:38,967 --> 00:02:42,446
+done when the ship reaches the miners' home.
+
+39
+00:02:43,346 --> 00:02:47,259
+And I give the patrol a rank, tier two.
+
+40
+00:02:48,159 --> 00:02:51,202
+A side only offers tier two work
+
+41
+00:02:51,652 --> 00:02:54,696
+to a ship at twenty or more.
+
+42
+00:02:55,896 --> 00:02:59,374
+The second way is what the crew says.
+
+43
+00:03:00,274 --> 00:03:02,013
+This is a call,
+
+44
+00:03:02,463 --> 00:03:06,811
+and if you've taken Class 2 you know its shape.
+
+45
+00:03:07,711 --> 00:03:11,189
+If you haven't, this is all of it.
+
+46
+00:03:12,989 --> 00:03:14,728
+Speaker is the side.
+
+47
+00:03:15,628 --> 00:03:20,846
+When comms means this opens when the crew hails that side's station.
+
+48
+00:03:21,746 --> 00:03:26,963
+A line starting with a percent sign is something the station says.
+
+49
+00:03:27,863 --> 00:03:33,950
+And a line starting with a hyphen is an answer, which becomes a button.
+
+50
+00:03:35,750 --> 00:03:39,228
+Now the two parts that are about today.
+
+51
+00:03:40,128 --> 00:03:43,607
+After the semicolon is what the answer does:
+
+52
+00:03:44,057 --> 00:03:46,230
+it costs a hundred credits,
+
+53
+00:03:46,680 --> 00:03:51,028
+and it earns twenty honest and twenty generous with Hollin.
+
+54
+00:03:51,928 --> 00:03:54,102
+That answer is the deed.
+
+55
+00:03:55,902 --> 00:03:59,815
+And up here, in curly brackets, is a guard.
+
+56
+00:04:00,715 --> 00:04:05,933
+This line is only said to a ship at twenty or more.
+
+57
+00:04:06,833 --> 00:04:09,876
+So the station greets a friend differently,
+
+58
+00:04:10,326 --> 00:04:14,674
+and that's how the crew finds out where they stand.
+
+59
+00:04:15,874 --> 00:04:19,787
+Two things to know before you write your own.
+
+60
+00:04:21,587 --> 00:04:24,196
+First, guard every line, or none.
+
+61
+00:04:25,096 --> 00:04:29,009
+A line with no guard can always be said,
+
+62
+00:04:29,459 --> 00:04:33,372
+so a friend would hear either one, at random.
+
+63
+00:04:35,172 --> 00:04:38,215
+Second, an answer can be given again.
+
+64
+00:04:39,115 --> 00:04:43,028
+The crew can hail as often as they like,
+
+65
+00:04:43,478 --> 00:04:46,087
+and the deed happens every time.
+
+66
+00:04:46,987 --> 00:04:49,596
+That's why the levy costs money.
+
+67
+00:04:51,396 --> 00:04:56,613
+Here's the wreckers' call, and I've left the cost off on purpose.
+
+68
+00:04:57,513 --> 00:05:00,991
+Watch what that does when I play it.
+
+69
+00:05:02,191 --> 00:05:05,670
+Standing only matters where it crosses a line.
+
+70
+00:05:06,570 --> 00:05:09,613
+At twenty, a side offers better work,
+
+71
+00:05:10,063 --> 00:05:13,976
+and an enemy will deal with you at all.
+
+72
+00:05:14,876 --> 00:05:19,224
+Every point above zero adds one percent to the pay.
+
+73
+00:05:20,124 --> 00:05:24,907
+A ceasefire costs twenty credits for each point short of thirty.
+
+74
+00:05:25,357 --> 00:05:30,574
+So it's six hundred to a stranger, and free to a friend.
+
+75
+00:05:32,374 --> 00:05:35,852
+You can move every one of those lines,
+
+76
+00:05:36,302 --> 00:05:38,911
+and the page shows you how.
+
+77
+00:05:39,811 --> 00:05:42,420
+I'm leaving them where they are,
+
+78
+00:05:42,870 --> 00:05:44,609
+and lint says clean.
+
+79
+00:05:45,809 --> 00:05:51,026
+Here's Hollin Compact, with an escort for two fifty, and no patrol.
+
+80
+00:05:52,826 --> 00:05:58,478
+I hail them, and I get the cold line, the one for strangers.
+
+81
+00:05:59,378 --> 00:06:01,117
+I pay the levy.
+
+82
+00:06:02,917 --> 00:06:05,526
+Now look at the station again.
+
+83
+00:06:06,426 --> 00:06:10,339
+There's the patrol, and the escort pays three hundred.
+
+84
+00:06:11,239 --> 00:06:16,022
+I hail once more, and this time they know my ship.
+
+85
+00:06:17,822 --> 00:06:19,996
+So I take the escort,
+
+86
+00:06:20,446 --> 00:06:23,054
+and on Helm I engage it.
+
+87
+00:06:23,954 --> 00:06:25,693
+It's done on arrival,
+
+88
+00:06:26,143 --> 00:06:28,752
+and that's five more with Hollin.
+
+89
+00:06:29,952 --> 00:06:31,691
+Now for the Gleaners.
+
+90
+00:06:32,591 --> 00:06:34,765
+The ceasefire is on offer,
+
+91
+00:06:35,215 --> 00:06:38,259
+and it would cost me six hundred.
+
+92
+00:06:39,159 --> 00:06:40,898
+I don't press it.
+
+93
+00:06:42,698 --> 00:06:44,437
+I hail them instead,
+
+94
+00:06:44,887 --> 00:06:48,800
+and I tell them I go where I like.
+
+95
+00:06:49,700 --> 00:06:53,613
+That's one bold answer, and my standing is twenty.
+
+96
+00:06:55,413 --> 00:06:57,587
+Look at the station now.
+
+97
+00:06:58,487 --> 00:07:00,226
+They'll give me work,
+
+98
+00:07:00,676 --> 00:07:03,285
+and the ceasefire costs two hundred,
+
+99
+00:07:03,735 --> 00:07:05,474
+so I take it.
+
+100
+00:07:07,274 --> 00:07:09,883
+And now the trap I left.
+
+101
+00:07:10,783 --> 00:07:14,696
+I give the same answer twice more, for nothing,
+
+102
+00:07:15,146 --> 00:07:19,928
+and I'm at fifty-seven with people who were shooting at me.
+
+103
+00:07:20,828 --> 00:07:25,176
+It stops there, because they value something else as well.
+
+104
+00:07:26,076 --> 00:07:30,424
+But that's what a free deed does to a story.
+
+105
+00:07:31,624 --> 00:07:33,363
+Now it's your turn.
+
+106
+00:07:34,263 --> 00:07:38,176
+Give each of your sides two or three values,
+
+107
+00:07:38,626 --> 00:07:41,670
+and say out loud why they'd care.
+
+108
+00:07:42,570 --> 00:07:46,917
+Rewrite both calls in their voices, and keep the guards.
+
+109
+00:07:47,817 --> 00:07:49,557
+And fix my trap:
+
+110
+00:07:50,007 --> 00:07:55,224
+make being feared by one side cost the crew something with another.
+
+111
+00:07:57,024 --> 00:07:59,633
+Next time, we draw the map.

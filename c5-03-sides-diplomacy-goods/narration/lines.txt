@@ -1,0 +1,116 @@
+s01_cold_open_0	Last time, you made a universe with one named place in it,
+s01_cold_open_1	and nobody living there but the crew.
+s01_cold_open_2	Today it gets people.
+s01_cold_open_3	There are three factions:
+s01_cold_open_4	one runs the port you start in,
+s01_cold_open_5	one lives three jumps away,
+s01_cold_open_6	and one shoots first.
+s01_cold_open_7	You'll write all three in one chapter,
+s01_cold_open_8	and then you'll go and meet them.
+s02_out_with_the_old_0	The template gave me two sides, and I'm deleting both.
+s02_out_with_the_old_1	But before they go, look at this line: Disposition, hostile.
+s02_out_with_the_old_2	You'd think that side was an enemy,
+s02_out_with_the_old_3	and it never was.
+s02_out_with_the_old_4	The game knows two words on that line,
+s02_out_with_the_old_5	and hostile isn't one of them.
+s02_out_with_the_old_6	Lint said clean the whole time.
+s02_out_with_the_old_7	So keep that in mind today:
+s02_out_with_the_old_8	clean means the record is well made.
+s02_out_with_the_old_9	It doesn't mean the words inside it are words the game knows.
+s03_the_first_side_0	A side is a record with three hashes,
+s03_the_first_side_1	a name, and a key.
+s03_the_first_side_2	The key matters, because everything else names this side by it.
+s03_the_first_side_3	Then come its facts, starting with a color.
+s03_the_first_side_4	There's a character, in one word, which decides how they greet the crew.
+s03_the_first_side_5	A disposition, which I'll come back to.
+s03_the_first_side_6	A home, which is a system, written as two numbers.
+s03_the_first_side_7	The jobs they offer,
+s03_the_first_side_8	and the ships they fly.
+s03_the_first_side_9	Now look at the home: zero, zero.
+s03_the_first_side_10	That's where the crew starts.
+s03_the_first_side_11	So the station the game put there last time
+s03_the_first_side_12	now belongs to these people, and carries their name.
+s04_two_more_and_who_shoots_firs_0	Here are the other two.
+s04_two_more_and_who_shoots_firs_1	The second colony is neutral, like the first,
+s04_two_more_and_who_shoots_firs_2	and its home is three systems over and one up.
+s04_two_more_and_who_shoots_firs_3	The third one says foe, in small letters.
+s04_two_more_and_who_shoots_firs_4	That's the only other word there is.
+s04_two_more_and_who_shoots_firs_5	Neutral means they talk, and their station offers work.
+s04_two_more_and_who_shoots_firs_6	Foe means they're at war with the crew from the first minute.
+s04_two_more_and_who_shoots_firs_7	And a foe gets things from the game for free.
+s04_two_more_and_who_shoots_firs_8	There's a fleet guarding its home.
+s04_two_more_and_who_shoots_firs_9	And every system the game fills with enemies,
+s04_two_more_and_who_shoots_firs_10	anywhere in the universe,
+s04_two_more_and_who_shoots_firs_11	is filled with their ships.
+s04_two_more_and_who_shoots_firs_12	So one word gives your villains a navy.
+s05_a_card_for_the_story_file_0	Now one card for the story file.
+s05_a_card_for_the_story_file_1	I paste it under the two travel lines,
+s05_a_card_for_the_story_file_2	and there's nothing in it to change.
+s05_a_card_for_the_story_file_3	Here's why it's needed.
+s05_a_card_for_the_story_file_4	One of the stations at home now belongs to a side I wrote.
+s05_a_card_for_the_story_file_5	When Comms selects a station like that,
+s05_a_card_for_the_story_file_6	the game asks for four names it can't find,
+s05_a_card_for_the_story_file_7	and the mission stops.
+s05_a_card_for_the_story_file_8	These lines give it those names.
+s06_two_leads_0	My sides live in three systems,
+s06_two_leads_1	and the crew can only jump where a job sends them.
+s06_two_leads_2	So I give them two jobs whose whole point is the trip.
+s06_two_leads_3	These are quests, like the ones you wrote in Class 1,
+s06_two_leads_4	and they live in a chapter called Narrative.
+s06_two_leads_5	The new part is this: Done when, reach, and two numbers.
+s06_two_leads_6	That means, arrive in that system.
+s06_two_leads_7	And because the quest has somewhere to go,
+s06_two_leads_8	Helm gets an Engage button on it.
+s07_goods_0	Last comes the economy, and it's a small one.
+s07_goods_1	Crates drift in most systems,
+s07_goods_2	and the game knows five kinds of cargo.
+s07_goods_3	This chapter says which of the five my world has,
+s07_goods_4	and how common each one is.
+s07_goods_5	The weights are just compared with each other.
+s07_goods_6	So with these numbers, about half the crates are ore,
+s07_goods_7	a third are food,
+s07_goods_8	and contraband is rare.
+s07_goods_9	I left gas out altogether,
+s07_goods_10	so there isn't any, anywhere.
+s07_goods_11	That's the whole of what a writer decides here.
+s07_goods_12	The prices in a market belong to the game.
+s08_check_it_0	Lint says clean, and today that's only half the check.
+s08_check_it_1	So I read down this list by eye.
+s08_check_it_2	Disposition is neutral or foe.
+s08_check_it_3	Every home is two numbers, and no two sides share one.
+s08_check_it_4	Every job after Offers is a key in the Jobs chapter.
+s08_check_it_5	Every ship after Flies is one of the six.
+s08_check_it_6	Every good is one of the five.
+s08_check_it_7	And the numbers after reach are that side's home.
+s09_meet_the_neighbors_0	On Comms, I select Hollin Compact.
+s09_meet_the_neighbors_1	There's the work I gave them:
+s09_meet_the_neighbors_2	a patrol, and an escort.
+s09_meet_the_neighbors_3	Kestrel Relay doesn't have those,
+s09_meet_the_neighbors_4	because it's the crew's own.
+s09_meet_the_neighbors_5	I take a cargo run, because I'm going to need the money.
+s09_meet_the_neighbors_6	On Helm, there are my two leads in the Quest Log.
+s09_meet_the_neighbors_7	I fly the cargo run first,
+s09_meet_the_neighbors_8	and then I engage The Second Colony.
+s09_meet_the_neighbors_9	And here's the Deepwell's own station,
+s09_meet_the_neighbors_10	offering an escort and nothing else,
+s09_meet_the_neighbors_11	just as I wrote it.
+s10_the_ones_who_shoot_first_0	Now the other lead.
+s10_the_ones_who_shoot_first_1	This is the Gleaners' home,
+s10_the_ones_who_shoot_first_2	and that's their fleet.
+s10_the_ones_who_shoot_first_3	On Comms, I select their station,
+s10_the_ones_who_shoot_first_4	and there's a button: Negotiate Ceasefire.
+s10_the_ones_who_shoot_first_5	It costs six hundred credits.
+s10_the_ones_who_shoot_first_6	A new crew starts with five hundred,
+s10_the_ones_who_shoot_first_7	which is why I flew that cargo run first.
+s10_the_ones_who_shoot_first_8	I press it, and the war is off.
+s10_the_ones_who_shoot_first_9	It's the whole side, everywhere,
+s10_the_ones_who_shoot_first_10	and it's written into the save.
+s10_the_ones_who_shoot_first_11	But it's a ceasefire, and not a friendship.
+s10_the_ones_who_shoot_first_12	They still won't give me work.
+s11_your_turn_0	Now make the three of them yours:
+s11_your_turn_1	new names, new keys, new homes.
+s11_your_turn_2	Choose each one's character,
+s11_your_turn_3	and read its greeting out loud.
+s11_your_turn_4	Then decide what's common in your world, and what's rare.
+s11_your_turn_5	Next time, each side gets something it values,
+s11_your_turn_6	and what the crew does starts to change what people think of them.

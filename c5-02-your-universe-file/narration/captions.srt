@@ -1,307 +1,459 @@
 1
-00:00:00,000 --> 00:00:03,043
-Last time you played somebody else's universe.
+00:00:00,000 --> 00:00:05,217
+In Class 1, you wrote a mission with one map in it.
 
 2
-00:00:03,493 --> 00:00:06,537
-This is the first minute of yours.
+00:00:06,117 --> 00:00:10,465
+This class is about a mission that's a whole universe,
 
 3
-00:00:06,987 --> 00:00:18,291
-A title, a place to start with a name you gave it, and a save file, so the game you stop tonight is still there tomorrow.
+00:00:10,915 --> 00:00:16,567
+with many systems, and a game you can stop and pick up again.
 
 4
-00:00:18,741 --> 00:00:23,959
-One file of your own, and a few words changed in another.
+00:00:18,367 --> 00:00:21,846
+And this is the first minute of yours:
 
 5
-00:00:25,159 --> 00:00:27,767
-ou is the Open Universe template.
+00:00:22,296 --> 00:00:27,513
+a title, a place to start with a name you gave it,
 
 6
-00:00:28,217 --> 00:00:31,261
-The title goes in the mission list.
+00:00:27,963 --> 00:00:29,702
+and a save file.
 
 7
-00:00:31,711 --> 00:00:34,754
-Keep it to letters, numbers and spaces.
+00:00:30,602 --> 00:00:33,211
+It's one file of your own,
 
 8
-00:00:35,204 --> 00:00:37,813
-No hyphen, no colon, no apostrophe.
+00:00:33,661 --> 00:00:36,704
+and a few words changed in another.
 
 9
-00:00:38,263 --> 00:00:49,567
-That is not fussiness: the title is copied into a small settings file, and a hyphen in that file stops the whole game from starting. Lint.
+00:00:37,904 --> 00:00:40,948
+You know this command from Class 1,
 
 10
-00:00:50,017 --> 00:00:53,930
-Clean, and I have not written a word yet.
+00:00:41,398 --> 00:00:44,007
+and only one word is different.
 
 11
-00:00:55,130 --> 00:00:56,870
-Three files matter today.
+00:00:44,907 --> 00:00:48,385
+The template isn't a m d any more,
 
 12
-00:00:57,320 --> 00:01:06,450
-The universe itself, which I write. story.mast, which tells the game which universe file to load and what to call it.
+00:00:48,835 --> 00:00:51,443
+it's o u, for Open Universe.
 
 13
-00:01:06,900 --> 00:01:09,943
-And description.yaml, which already has my title.
+00:00:52,343 --> 00:00:54,952
+So this is a new folder,
 
 14
-00:01:10,393 --> 00:01:12,133
-The rest is machinery.
+00:00:55,402 --> 00:00:59,315
+and you're not building on your Class 1 mission.
 
 15
-00:01:13,333 --> 00:01:16,376
-My file, my name: small letters, underscores.
+00:01:01,115 --> 00:01:05,463
+Then I fetch its libraries, the way I did before,
 
 16
-00:01:16,826 --> 00:01:19,870
-Inside, one record with a single hash.
+00:01:05,913 --> 00:01:07,652
+and I run lint.
 
 17
-00:01:20,320 --> 00:01:22,493
-That is the universe itself.
+00:01:08,552 --> 00:01:12,900
+It says clean, and I haven't written a word yet.
 
 18
-00:01:22,943 --> 00:01:30,770
-The name in square brackets, a key in round ones, and under the fence, what this place is.
+00:01:13,800 --> 00:01:16,409
+It even plays as it is.
 
 19
-00:01:31,220 --> 00:01:36,437
-I am writing this for me and for whoever writes with me.
+00:01:16,859 --> 00:01:21,207
+Everything from here is me replacing what I was given.
 
 20
-00:01:36,887 --> 00:01:39,061
-Players never see this record.
+00:01:22,407 --> 00:01:24,146
+Three files matter today.
 
 21
-00:01:39,511 --> 00:01:42,989
-It is the title page of the manuscript.
+00:01:25,046 --> 00:01:28,089
+There's the universe itself, which I write.
 
 22
-00:01:43,439 --> 00:01:46,483
-What players read comes in a minute.
+00:01:28,539 --> 00:01:33,757
+There's the story file, which tells the game which universe to load.
 
 23
-00:01:47,683 --> 00:01:49,422
-Two hashes: a chapter.
+00:01:34,207 --> 00:01:38,989
+And there's the one line for the game's list of missions,
 
 24
-00:01:49,872 --> 00:01:56,393
-Its key has to be scenario, because that is the word the game looks for.
+00:01:39,439 --> 00:01:41,613
+which already has my title.
 
 25
-00:01:56,843 --> 00:01:58,583
-And one fact: Mode.
+00:01:43,413 --> 00:01:46,022
+Notice there's no file called mission.
 
 26
-00:01:59,033 --> 00:02:02,076
-Story is one ship and an ending.
+00:01:46,922 --> 00:01:52,139
+In this kind of mission, the fact sheet is the universe file,
 
 27
-00:02:02,526 --> 00:02:05,570
-Campaign is one ship over many nights.
+00:01:52,589 --> 00:01:55,198
+and I get to name it.
 
 28
-00:02:06,020 --> 00:02:08,193
-Sandbox is an open world.
+00:01:56,398 --> 00:02:00,311
+So first, I give the file my own name.
 
 29
-00:02:08,643 --> 00:02:10,817
-Today those three play alike.
+00:02:01,211 --> 00:02:06,428
+Then the record at the top, the one with a single hash.
 
 30
-00:02:11,267 --> 00:02:16,920
-The word starts to matter when we add fleets, late in this class.
+00:02:07,328 --> 00:02:10,807
+One hash means, this is the universe itself,
 
 31
-00:02:17,370 --> 00:02:19,978
-Write the one that is true.
+00:02:11,257 --> 00:02:15,170
+and there's only one of those in the file.
 
 32
-00:02:21,178 --> 00:02:24,222
-Sides and Jobs came with the template.
+00:02:16,970 --> 00:02:22,187
+Inside the fence is the word Universe, on a line by itself.
 
 33
-00:02:24,672 --> 00:02:27,715
-I leave them for the next lectures.
+00:02:22,637 --> 00:02:30,028
+It says what kind of record this is, just as the word Arc did in Class 1.
 
 34
-00:02:28,165 --> 00:02:32,078
-At the end, a new chapter: Landmarks. One place.
+00:02:30,928 --> 00:02:34,841
+Under the fence I write what this place is.
 
 35
-00:02:32,528 --> 00:02:37,746
-At: 0, 0 is home, where every new game starts. Kind: station.
+00:02:35,741 --> 00:02:38,350
+Now here's the thing to know:
 
 36
-00:02:38,196 --> 00:02:40,804
-And one line under the fence.
+00:02:38,800 --> 00:02:42,713
+the game never shows this record to a player.
 
 37
-00:02:41,254 --> 00:02:53,428
-That line is the first thing my crew reads when they arrive, so it stays on one line: the card shows the first line and nothing after it.
+00:02:43,613 --> 00:02:46,657
+It's the title page of my manuscript,
 
 38
-00:02:54,628 --> 00:02:55,628
-Four changes.
+00:02:47,107 --> 00:02:50,150
+and it's for me and my co-writers.
 
 39
-00:02:56,078 --> 00:02:59,122
-The title: search, four found, replace all.
+00:02:51,350 --> 00:02:55,263
+Next comes a chapter, with two hashes, called Scenario.
 
 40
-00:02:59,572 --> 00:03:02,615
-The file name: two found, replace all.
+00:02:56,163 --> 00:02:58,772
+It holds one line today, Mode,
 
 41
-00:03:03,065 --> 00:03:07,848
-If those numbers are not four and two, stop and look.
+00:02:59,222 --> 00:03:03,570
+and the mode says what kind of game this is.
 
 42
-00:03:08,298 --> 00:03:12,646
-Third, the two lines that start with a double quote.
+00:03:04,470 --> 00:03:07,513
+Story is one ship and an ending.
 
 43
-00:03:13,096 --> 00:03:19,617
-These are what players read on the start screen, so these are worth writing well.
+00:03:07,963 --> 00:03:11,441
+Campaign is a long game over many evenings.
 
 44
-00:03:20,067 --> 00:03:22,241
-No curly brackets in them.
+00:03:11,891 --> 00:03:15,370
+Sandbox is an open world with no ending.
 
 45
-00:03:22,691 --> 00:03:25,735
-And fourth, two lines I leave alone.
+00:03:17,170 --> 00:03:19,343
+Today all three play alike,
 
 46
-00:03:26,185 --> 00:03:29,228
-The first gives Helm an Engage button.
+00:03:19,793 --> 00:03:24,141
+so I write the one that's true of my story.
 
 47
-00:03:29,678 --> 00:03:35,330
-The second keeps a list of the named places the crew has been.
+00:03:25,041 --> 00:03:28,954
+And the key has to be the word scenario,
 
 48
-00:03:35,780 --> 00:03:40,563
-Without them, your universe is one system with no way out.
+00:03:29,404 --> 00:03:32,883
+because that's the word the game looks for.
 
 49
-00:03:41,763 --> 00:03:43,067
-Two commands now.
+00:03:34,083 --> 00:03:36,257
+Now the place they start.
 
 50
-00:03:43,517 --> 00:03:45,691
-Lint reads my universe file.
+00:03:37,157 --> 00:03:41,070
+At the bottom I add a chapter called Landmarks,
 
 51
-00:03:46,141 --> 00:03:51,793
-Compile reads story.mast, and when it is happy it says nothing at all.
+00:03:41,520 --> 00:03:44,998
+and one landmark under it, with three hashes.
 
 52
-00:03:52,243 --> 00:03:54,417
-Watch what each one catches.
+00:03:45,898 --> 00:03:49,376
+The line At says which system it's in,
 
 53
-00:03:54,867 --> 00:03:57,476
-A misspelled mode: lint tells me.
+00:03:49,826 --> 00:03:54,174
+and zero, zero is home, where every new game begins.
 
 54
-00:03:57,926 --> 00:04:06,622
-One hash too few on Scenario: lint says clean, and in the game every chapter below it would be gone.
+00:03:55,974 --> 00:03:58,583
+That one record does three things.
 
 55
-00:04:07,072 --> 00:04:17,072
-And a single letter different in the title here: both commands are happy, and the game would start with no universe in it.
+00:03:59,483 --> 00:04:03,396
+When the crew arrives, a card names the system,
 
 56
-00:04:17,522 --> 00:04:24,043
-So I count hashes by eye, one, two, three, and I never retype the title.
+00:04:03,846 --> 00:04:06,889
+and shows my line under the name.
 
 57
-00:04:24,493 --> 00:04:26,667
-I search and replace it.
+00:04:07,789 --> 00:04:10,833
+There's a station there with that name.
 
 58
-00:04:27,867 --> 00:04:28,867
-My title.
+00:04:11,733 --> 00:04:16,080
+And it goes on the crew's list of charted places,
 
 59
-00:04:29,317 --> 00:04:30,622
-My two lines.
+00:04:16,530 --> 00:04:19,574
+so they can find their way back.
 
 60
-00:04:31,072 --> 00:04:38,028
-Start is on Continue, and there is nothing to continue, so this is a new game.
+00:04:21,374 --> 00:04:25,287
+Keep the line under the fence to one line,
 
 61
-00:04:38,478 --> 00:04:42,826
-And there is the card: Kestrel Relay, and my line.
+00:04:25,737 --> 00:04:28,780
+because the card only shows the first.
 
 62
-00:04:43,276 --> 00:04:45,450
-Comms takes a cargo run.
+00:04:29,980 --> 00:04:34,328
+The story file still has the template's names in it.
 
 63
-00:04:45,900 --> 00:04:47,204
-Helm engages it.
+00:04:35,228 --> 00:04:37,402
+So I press control H,
 
 64
-00:04:47,654 --> 00:04:49,393
-We are somewhere else.
+00:04:37,852 --> 00:04:41,765
+I search for My Universe, and it finds four.
 
 65
-00:04:49,843 --> 00:04:55,496
-And in the quest list, a charted location: Kestrel Relay, the way home.
+00:04:42,665 --> 00:04:45,709
+I replace all four with my title.
 
 66
-00:04:55,946 --> 00:04:58,989
-Now I stop, here, away from home.
+00:04:46,609 --> 00:04:50,087
+Then I search for the old file name,
 
 67
-00:04:59,439 --> 00:05:01,178
-This is the save.
+00:04:50,537 --> 00:04:53,580
+it finds two, and I replace those.
 
 68
-00:05:01,628 --> 00:05:08,150
-It is named after my title, and it knows where I stopped. Start again. Continue.
+00:04:55,380 --> 00:04:58,424
+If your counts aren't four and two,
 
 69
-00:05:08,600 --> 00:05:10,339
-Same system, same money.
+00:04:58,874 --> 00:05:01,483
+stop and look before you replace.
 
 70
-00:05:10,789 --> 00:05:13,398
-Engage the way home. Kestrel Relay.
+00:05:03,283 --> 00:05:06,761
+Next, the two lines under the map line.
 
 71
-00:05:13,848 --> 00:05:16,022
-Two warnings about that file.
+00:05:07,211 --> 00:05:11,559
+Those are what a player reads on the start screen,
 
 72
-00:05:16,472 --> 00:05:22,993
-Its name comes from the title, so a new title is a new, empty game.
+00:05:12,009 --> 00:05:14,183
+so I write my own.
 
 73
-00:05:23,443 --> 00:05:28,226
-And New Game on the start screen replaces it without asking.
+00:05:15,083 --> 00:05:19,430
+And these two lines near the top I leave alone.
 
 74
-00:05:29,426 --> 00:05:31,165
-Now make it yours.
+00:05:20,330 --> 00:05:23,374
+The first gives Helm an Engage button,
 
 75
-00:05:31,615 --> 00:05:35,963
-Your title, your file, your two lines, your front door.
+00:05:23,824 --> 00:05:27,737
+and the second keeps the list of charted places.
 
 76
-00:05:36,413 --> 00:05:43,804
-Then break it once on purpose, one letter, and learn where the game tells you about it.
+00:05:28,937 --> 00:05:32,850
+Lint reads both files now, and it says clean.
 
 77
-00:05:44,254 --> 00:05:52,515
-Next time we throw out the two factions that came in the box and write three of your own.
+00:05:34,650 --> 00:05:39,433
+But I want you to see the one it can't catch.
+
+78
+00:05:40,333 --> 00:05:45,550
+I change a single letter of the title, on this one line,
+
+79
+00:05:46,000 --> 00:05:48,174
+and lint still says clean.
+
+80
+00:05:49,074 --> 00:05:52,552
+If I played that, my universe wouldn't load.
+
+81
+00:05:53,002 --> 00:05:57,785
+The game would start anyway, with a place called Home Port,
+
+82
+00:05:58,235 --> 00:06:01,278
+and none of my work in it.
+
+83
+00:06:02,178 --> 00:06:07,830
+So the title has to be spelled the same way, all four times.
+
+84
+00:06:08,730 --> 00:06:11,339
+If it ever happens to you,
+
+85
+00:06:11,789 --> 00:06:15,702
+the runtime log in your mission folder says so.
+
+86
+00:06:16,602 --> 00:06:18,776
+I put the letter back.
+
+87
+00:06:19,976 --> 00:06:25,193
+Here's the card, with my station's name on it, and my line.
+
+88
+00:06:26,093 --> 00:06:28,702
+On Comms, I select a station,
+
+89
+00:06:29,152 --> 00:06:32,630
+and I take the cargo run it offers.
+
+90
+00:06:33,530 --> 00:06:37,009
+Then on Helm, I open the Quest Log,
+
+91
+00:06:37,459 --> 00:06:40,937
+I pick the run, and I press Engage.
+
+92
+00:06:41,837 --> 00:06:44,446
+And that's the jump you're watching.
+
+93
+00:06:46,246 --> 00:06:49,724
+We're somewhere new, and the run has paid.
+
+94
+00:06:50,624 --> 00:06:53,667
+And look at this group, Charted Locations.
+
+95
+00:06:54,117 --> 00:06:56,291
+Kestrel Relay is in it,
+
+96
+00:06:56,741 --> 00:06:58,915
+and that's my way home.
+
+97
+00:06:59,815 --> 00:07:02,424
+But I'm not going home yet.
+
+98
+00:07:02,874 --> 00:07:05,483
+I'm closing the game right here.
+
+99
+00:07:06,683 --> 00:07:09,291
+This is what the game kept.
+
+100
+00:07:10,191 --> 00:07:13,235
+It's a file named after my title,
+
+101
+00:07:13,685 --> 00:07:16,728
+and here's the system I stopped in.
+
+102
+00:07:18,528 --> 00:07:22,441
+I start the game again, with the same command,
+
+103
+00:07:22,891 --> 00:07:28,109
+and I'm where I left off, with the money from the run.
+
+104
+00:07:29,009 --> 00:07:33,791
+Then I pick Kestrel Relay, I press Engage, and we're home.
+
+105
+00:07:35,591 --> 00:07:38,635
+Two things to remember about that file.
+
+106
+00:07:39,535 --> 00:07:41,709
+It's named from the title,
+
+107
+00:07:42,159 --> 00:07:47,376
+so if you change the title, you start a new, empty game.
+
+108
+00:07:48,276 --> 00:07:50,885
+And to begin again on purpose,
+
+109
+00:07:51,335 --> 00:07:54,378
+close the game and delete the file.
+
+110
+00:07:55,578 --> 00:07:57,317
+Now make it yours:
+
+111
+00:07:57,767 --> 00:08:02,985
+your title, your file name, your home port, and your two lines.
+
+112
+00:08:03,885 --> 00:08:09,972
+Before you play, write down what you think the save file will be called,
+
+113
+00:08:10,422 --> 00:08:12,596
+and then go and look.
+
+114
+00:08:14,396 --> 00:08:17,874
+Next time, we fill this place with people:
+
+115
+00:08:18,324 --> 00:08:21,802
+three factions, and one of them shoots first.

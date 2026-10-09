@@ -1,0 +1,96 @@
+s01_cold_open_0	In Class 1, you built a mission with one map and one story.
+s01_cold_open_1	This class is about something larger:
+s01_cold_open_2	a mission that's a whole galaxy,
+s01_cold_open_3	with factions, work, a story,
+s01_cold_open_4	and a game the crew can leave and come back to.
+s01_cold_open_5	It's called Open Universe.
+s01_cold_open_6	And the surprising part is how it's made.
+s01_cold_open_7	All of it comes from one text file,
+s01_cold_open_8	of the kind you already know how to write.
+s01_cold_open_9	Today you'll start one, read the file behind it,
+s01_cold_open_10	and decide what kind of universe you're going to make.
+s02_start_it_and_choose_a_univer_0	Open Universe is a mission, like Legendary Missions,
+s02_start_it_and_choose_a_univer_1	so I start it the same way.
+s02_start_it_and_choose_a_univer_2	I leave the map off the end this time,
+s02_start_it_and_choose_a_univer_3	because I want the start screen.
+s02_start_it_and_choose_a_univer_4	Here's a list called Universe, with four on it.
+s02_start_it_and_choose_a_univer_5	I want The Silver Reach,
+s02_start_it_and_choose_a_univer_6	which is the one written as an example for writers.
+s02_start_it_and_choose_a_univer_7	And notice this setting, Start, which says Continue.
+s02_start_it_and_choose_a_univer_8	A game here is kept between sessions,
+s02_start_it_and_choose_a_univer_9	and that's half of what this class is for.
+s03_the_first_system_0	This is the system every new game starts in,
+s03_the_first_system_1	and the card calls it Home Port.
+s03_the_first_system_2	There's one station here.
+s03_the_first_system_3	On Comms I select it, and I take a cargo run.
+s03_the_first_system_4	Now the Quest Log, on Helm.
+s03_the_first_system_5	There's the first step of this universe's story,
+s03_the_first_system_6	there's the way to win,
+s03_the_first_system_7	and there's my cargo run.
+s03_the_first_system_8	All three of them send me to another system.
+s03_the_first_system_9	And this is where I have to stop.
+s03_the_first_system_10	In this mission, as it's published today,
+s03_the_first_system_11	the button that makes the jump is switched off.
+s03_the_first_system_12	That's a fault in the mission, and it isn't anything you did.
+s03_the_first_system_13	The mission you make next time has that button on.
+s03_the_first_system_14	So I'll close the game,
+s03_the_first_system_15	and show you the rest from the inside.
+s04_one_file_0	Everything about The Silver Reach is in this file.
+s04_one_file_1	It's about three hundred and sixty lines.
+s04_one_file_2	At the top is one record with a single hash,
+s04_one_file_3	and that's the universe itself.
+s04_one_file_4	Under it are chapters, each with two hashes.
+s04_one_file_5	There are the sides, which are the factions.
+s04_one_file_6	There are the jobs their stations offer.
+s04_one_file_7	Here's the story, in three steps,
+s04_one_file_8	and each step is a quest like the ones you wrote in Class 1.
+s04_one_file_9	Then regions and landmarks, which are the map.
+s04_one_file_10	And then the people,
+s04_one_file_11	and what they say.
+s04_one_file_12	Each of those chapters is a lecture in this class.
+s05_from_a_record_to_a_place_0	Let me show you one record becoming a place.
+s05_from_a_record_to_a_place_1	This is a side, the Lantern Combine.
+s05_from_a_record_to_a_place_2	You can read most of it already:
+s05_from_a_record_to_a_place_3	a heading, a fence, and a fact on each line.
+s05_from_a_record_to_a_place_4	Home is minus four, two.
+s05_from_a_record_to_a_place_5	That's a system, and it's the one the story sends the crew to first.
+s05_from_a_record_to_a_place_6	When a ship arrives there, the game puts a station in it,
+s05_from_a_record_to_a_place_7	named after this side.
+s05_from_a_record_to_a_place_8	This landmark, further down, puts a second station beside it.
+s05_from_a_record_to_a_place_9	And this line, Offers,
+s05_from_a_record_to_a_place_10	is why both stations hand out an escort job and a bounty.
+s05_from_a_record_to_a_place_11	Nobody placed those stations on a map.
+s05_from_a_record_to_a_place_12	The record says where these people live,
+s05_from_a_record_to_a_place_13	and the game does the rest.
+s06_what_isn_t_in_the_file_0	Now notice what isn't here.
+s06_what_isn_t_in_the_file_1	There's no list of systems.
+s06_what_isn_t_in_the_file_2	Nobody wrote the stars, or the nebulas,
+s06_what_isn_t_in_the_file_3	or the raiders in the dark between places.
+s06_what_isn_t_in_the_file_4	The game makes all of that from one number, called the seed.
+s06_what_isn_t_in_the_file_5	The same seed always gives the same galaxy,
+s06_what_isn_t_in_the_file_6	so a place you leave is the same place when you come back.
+s06_what_isn_t_in_the_file_7	And here's the save, which is tiny.
+s06_what_isn_t_in_the_file_8	It holds the seed, where the ship is,
+s06_what_isn_t_in_the_file_9	and what the crew has changed.
+s06_what_isn_t_in_the_file_10	That's the bargain of this class.
+s06_what_isn_t_in_the_file_11	You write the people, the places and the events.
+s06_what_isn_t_in_the_file_12	You don't draw the map.
+s07_choose_your_mode_0	One decision before next time.
+s07_choose_your_mode_1	Every universe says what kind of game it is, with one word.
+s07_choose_your_mode_2	Story is one ship, and a tale with an ending.
+s07_choose_your_mode_3	Campaign is one ship too,
+s07_choose_your_mode_4	played over many evenings.
+s07_choose_your_mode_5	Sandbox is an open world with no ending.
+s07_choose_your_mode_6	And the last two are wars between admirals,
+s07_choose_your_mode_7	which come late in this class.
+s07_choose_your_mode_8	For one crew in one ship, the first three play alike today.
+s07_choose_your_mode_9	So choose the one that's true of what you want to write.
+s08_your_turn_0	Two things on paper.
+s08_your_turn_1	First, read the file,
+s08_your_turn_2	and answer the five questions on the page.
+s08_your_turn_3	Each answer is one line of it.
+s08_your_turn_4	Then write three sentences about your own universe:
+s08_your_turn_5	who lives there, who shoots first,
+s08_your_turn_6	and what the crew is there to do.
+s08_your_turn_7	Next time, that page becomes a mission,
+s08_your_turn_8	and you take it on its first jump.

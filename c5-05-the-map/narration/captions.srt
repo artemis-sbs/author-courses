@@ -1,0 +1,423 @@
+1
+00:00:00,000 --> 00:00:03,913
+So far, you've written who lives in your universe,
+
+2
+00:00:04,363 --> 00:00:08,711
+and the game has decided what every system looks like.
+
+3
+00:00:09,611 --> 00:00:12,654
+Today you take some of that back.
+
+4
+00:00:14,454 --> 00:00:19,237
+You'll change how the whole galaxy is made, with four numbers.
+
+5
+00:00:20,137 --> 00:00:24,920
+You'll give two stretches of it a name and a sky.
+
+6
+00:00:25,820 --> 00:00:30,602
+And you'll put three more places on the map by hand.
+
+7
+00:00:31,802 --> 00:00:36,150
+First, how the game fills a system you never wrote.
+
+8
+00:00:37,050 --> 00:00:39,659
+It rolls once for each one,
+
+9
+00:00:40,109 --> 00:00:43,152
+and the roll comes from the seed,
+
+10
+00:00:43,602 --> 00:00:47,515
+so it's the same every time for that system.
+
+11
+00:00:49,315 --> 00:00:52,359
+About one in seven is a station.
+
+12
+00:00:52,809 --> 00:00:56,287
+About one in seven is full of enemies.
+
+13
+00:00:57,187 --> 00:01:00,230
+Some are nebula, a few are anomalies,
+
+14
+00:01:00,680 --> 00:01:03,289
+and half of them are empty.
+
+15
+00:01:05,089 --> 00:01:09,437
+And on top of that, a system might have loot,
+
+16
+00:01:09,887 --> 00:01:13,800
+or a dead ship to scan, or a minefield.
+
+17
+00:01:14,700 --> 00:01:19,483
+Every one of those chances is a number you can change.
+
+18
+00:01:20,683 --> 00:01:22,857
+Those numbers are called dials,
+
+19
+00:01:23,307 --> 00:01:28,959
+and they go in the title record, at the top of the file.
+
+20
+00:01:30,759 --> 00:01:34,237
+My universe is a frontier that was abandoned.
+
+21
+00:01:35,137 --> 00:01:39,050
+So I want few ports, a lot of cloud,
+
+22
+00:01:39,500 --> 00:01:42,109
+and a lot of dead ships,
+
+23
+00:01:42,559 --> 00:01:44,298
+and that's four lines.
+
+24
+00:01:46,098 --> 00:01:51,750
+And here's what they did, counted over the nearest hundred and sixty-nine systems.
+
+25
+00:01:52,650 --> 00:01:55,259
+Stations went from twenty-five to fifteen,
+
+26
+00:01:55,709 --> 00:01:58,317
+and nebulas from twenty-nine to forty.
+
+27
+00:02:00,117 --> 00:02:04,465
+One warning, and it's the big one in this lecture.
+
+28
+00:02:05,365 --> 00:02:07,104
+Write the percent sign.
+
+29
+00:02:08,004 --> 00:02:11,917
+Leave it off, and twelve means twelve hundred percent,
+
+30
+00:02:12,367 --> 00:02:14,976
+and lint won't say a word.
+
+31
+00:02:16,176 --> 00:02:20,524
+A dial in the title record is the same everywhere.
+
+32
+00:02:21,424 --> 00:02:26,207
+A region is a patch of the map where it's different.
+
+33
+00:02:28,007 --> 00:02:32,789
+It has a center, which is a system, and a radius.
+
+34
+00:02:33,689 --> 00:02:38,037
+A region is a square, so a radius of two
+
+35
+00:02:38,487 --> 00:02:41,096
+is five systems on a side.
+
+36
+00:02:42,896 --> 00:02:48,113
+It has a sky, from a list of seven on the page.
+
+37
+00:02:49,013 --> 00:02:52,491
+And it can have any of the dials.
+
+38
+00:02:53,391 --> 00:02:58,174
+Here I've said, no enemy systems at all, and more stations.
+
+39
+00:02:59,074 --> 00:03:03,422
+So this is safe, farmed space around the home port.
+
+40
+00:03:04,622 --> 00:03:07,230
+And here's the opposite: the Breakers.
+
+41
+00:03:08,130 --> 00:03:10,739
+There's a red sky, different music,
+
+42
+00:03:11,189 --> 00:03:14,667
+enemies in most systems, no ports, and mines.
+
+43
+00:03:16,467 --> 00:03:19,076
+I drew it on paper first,
+
+44
+00:03:19,526 --> 00:03:23,004
+and I'd ask you to do the same.
+
+45
+00:03:23,904 --> 00:03:28,687
+Mark each side's home, and draw each region as a square.
+
+46
+00:03:30,487 --> 00:03:32,661
+It shows you two things.
+
+47
+00:03:33,561 --> 00:03:36,170
+One is whether two regions overlap.
+
+48
+00:03:36,620 --> 00:03:41,402
+If they do, a system belongs to the one written first.
+
+49
+00:03:42,302 --> 00:03:48,824
+The other is whether a side's home is inside the region you meant for it.
+
+50
+00:03:49,724 --> 00:03:53,637
+Nothing moves a home into a region for you.
+
+51
+00:03:54,087 --> 00:03:57,565
+You keep those two lines in step yourself.
+
+52
+00:03:58,765 --> 00:04:00,504
+Now for the landmarks.
+
+53
+00:04:01,404 --> 00:04:04,013
+You wrote one in Lecture 2,
+
+54
+00:04:04,463 --> 00:04:08,811
+and here are three more, each for a different reason.
+
+55
+00:04:10,611 --> 00:04:14,524
+The first is a station at the miners' home.
+
+56
+00:04:15,424 --> 00:04:18,467
+Last time, when the crew arrived there,
+
+57
+00:04:18,917 --> 00:04:22,396
+the card just said uncharted, and two numbers.
+
+58
+00:04:23,296 --> 00:04:25,904
+A side's home doesn't name itself,
+
+59
+00:04:26,354 --> 00:04:28,093
+but a landmark does.
+
+60
+00:04:29,893 --> 00:04:33,372
+So now the card will read Assay Office,
+
+61
+00:04:33,822 --> 00:04:38,604
+and the place goes on the crew's list of charted locations.
+
+62
+00:04:39,504 --> 00:04:42,113
+And because of this line, Side,
+
+63
+00:04:42,563 --> 00:04:46,911
+the station belongs to the miners and offers their work.
+
+64
+00:04:48,111 --> 00:04:50,720
+The second is a dead ship.
+
+65
+00:04:51,620 --> 00:04:55,967
+Kind, derelict, makes it a wreck for Science to scan.
+
+66
+00:04:56,867 --> 00:05:02,085
+The game scatters wrecks of its own, but they have no names.
+
+67
+00:05:02,985 --> 00:05:07,333
+This one has a name, a line on the card,
+
+68
+00:05:07,783 --> 00:05:12,130
+and a nebula around it, whatever the game rolled there.
+
+69
+00:05:13,930 --> 00:05:16,539
+And the third is a fight.
+
+70
+00:05:17,439 --> 00:05:20,483
+Guards puts a fleet on the landmark,
+
+71
+00:05:20,933 --> 00:05:23,541
+the first time the crew arrives.
+
+72
+00:05:25,341 --> 00:05:27,950
+One thing to know about them.
+
+73
+00:05:28,850 --> 00:05:31,024
+The guards belong to nobody.
+
+74
+00:05:31,474 --> 00:05:34,083
+They're raiders, even in Gleaner country,
+
+75
+00:05:34,533 --> 00:05:38,880
+so a ceasefire with the Gleaners won't call them off.
+
+76
+00:05:40,080 --> 00:05:43,559
+The crew still needs a reason to go,
+
+77
+00:05:44,009 --> 00:05:49,226
+so I add two leads, the way we did in Lecture 3.
+
+78
+00:05:50,126 --> 00:05:52,735
+The Assay Office doesn't need one,
+
+79
+00:05:53,185 --> 00:05:56,228
+because an old lead already goes there.
+
+80
+00:05:58,028 --> 00:06:00,637
+I save, and lint says clean.
+
+81
+00:06:01,537 --> 00:06:05,015
+And again, clean isn't the whole check today.
+
+82
+00:06:05,915 --> 00:06:10,263
+Lint doesn't know a sky's name from a typing mistake,
+
+83
+00:06:10,713 --> 00:06:13,757
+and it doesn't count your percent signs.
+
+84
+00:06:14,657 --> 00:06:18,135
+So read down the list on the page.
+
+85
+00:06:19,335 --> 00:06:22,378
+Four leads in the Quest Log now.
+
+86
+00:06:23,278 --> 00:06:25,017
+First, the third colony.
+
+87
+00:06:25,467 --> 00:06:29,380
+There's her name on the card, and my line.
+
+88
+00:06:31,180 --> 00:06:32,920
+Then the miners' home,
+
+89
+00:06:33,370 --> 00:06:36,413
+and this time it has a name.
+
+90
+00:06:37,313 --> 00:06:41,226
+On Comms, the Assay Office offers the miners' escort.
+
+91
+00:06:43,026 --> 00:06:46,504
+Now the one the Gleaners won't talk about.
+
+92
+00:06:47,404 --> 00:06:50,448
+This is the Breakers, and somebody's waiting.
+
+93
+00:06:52,248 --> 00:06:54,857
+And last, the Gleaners' own home.
+
+94
+00:06:55,757 --> 00:06:57,496
+It has no landmark,
+
+95
+00:06:57,946 --> 00:07:01,859
+so the card falls back to the region's name.
+
+96
+00:07:03,659 --> 00:07:07,137
+Here's Charted Locations, with four places in it.
+
+97
+00:07:08,037 --> 00:07:11,515
+Those are my landmarks, and only my landmarks.
+
+98
+00:07:12,415 --> 00:07:14,589
+A region doesn't get charted,
+
+99
+00:07:15,039 --> 00:07:19,387
+and neither does a home with no landmark in it.
+
+100
+00:07:20,587 --> 00:07:22,326
+Now it's your turn.
+
+101
+00:07:23,226 --> 00:07:27,139
+Say what your galaxy is like in one sentence,
+
+102
+00:07:27,589 --> 00:07:31,502
+and set no more than four dials to match.
+
+103
+00:07:32,402 --> 00:07:34,576
+Draw the grid on paper.
+
+104
+00:07:35,476 --> 00:07:38,085
+Give every side's home a landmark,
+
+105
+00:07:38,535 --> 00:07:44,187
+and write one place that's only a story, and one that's a fight.
+
+106
+00:07:45,987 --> 00:07:52,074
+Next time, the work a station hands out gets a beginning and an end.

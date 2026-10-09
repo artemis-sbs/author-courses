@@ -28,28 +28,38 @@ Mode: story
 // the galaxy grid; `Offers` names the job types this side hands out.
 ## [Sides](sides)
 
-### [Iron Concord](iron)
+### [Hollin Compact](hollin)
 ---
-Color: #3399ff
-Character: military
+Color: #44aa66
+Character: settler
 Disposition: neutral
-Home: 6, 4
-Values: by-the-book 40, honest 20
+Home: 0, 0
 Offers: patrol, escort
-Flies: 60% Kralien, 40% Arvonian
+Flies: Arvonian
 ---
-Disciplined and territorial. Respects strength and straight dealing.
+The first colony, and the one that farms. They keep the relay running because nobody else will.
 
-### [Ashfall Run](ashfall)
+### [Deepwell Assembly](deepwell)
 ---
-Color: #cc6633
-Character: outlaw
-Disposition: hostile
-Home: 2, 7
+Color: #6688ff
+Character: trader
+Disposition: neutral
+Home: 3, 1
+Offers: escort
+Flies: 70% Ximni, 30% Arvonian
+---
+The second colony. Miners who sell what they dig and count every crate twice.
+
+### [The Gleaners](gleaners)
+---
+Color: #cc5522
+Character: pirate
+Disposition: foe
+Home: -3, -2
 Offers: salvage
 Flies: Torgoth
 ---
-Salvagers who stopped waiting for wrecks to happen on their own.
+They strip dead ships for a living, and they have stopped waiting for ships to die.
 
 
 // ---- Job types the sides above can offer. The engine generates the individual jobs;
@@ -82,3 +92,47 @@ At: 0, 0
 Kind: station
 ---
 The last relay anyone still maintains. Everything past it is rumor.
+
+## [Goods](goods)
+
+### [Ore](ore)
+---
+Weight: 40
+---
+What the Deepwell digs. There is always more of it than anyone wants.
+
+### [Provisions](provisions)
+---
+Weight: 30
+---
+What Hollin grows.
+
+### [Tech](tech)
+---
+Weight: 10
+---
+Relay parts, forty years out of date and worth more every year.
+
+### [Contraband](contraband)
+---
+Weight: 5
+---
+Whatever the Gleaners would rather not explain.
+
+## [Narrative](narrative)
+
+### [The Second Colony](lead_deepwell)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 3, 1
+---
+The Deepwell Assembly keeps its books at (3, 1). Go and be counted.
+
+### [The Breaking Yard](lead_gleaners)
+---
+Scope: shared
+Starts when: at once
+Done when: reach -3, -2
+---
+The Compact says the Gleaners tow their wrecks to a yard at (-3, -2). Go and look, with shields up.

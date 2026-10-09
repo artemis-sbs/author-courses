@@ -1,0 +1,383 @@
+1
+00:00:00,000 --> 00:00:05,652
+In Class 1, you built a mission with one map and one story.
+
+2
+00:00:06,552 --> 00:00:09,161
+This class is about something larger:
+
+3
+00:00:09,611 --> 00:00:12,220
+a mission that's a whole galaxy,
+
+4
+00:00:12,670 --> 00:00:14,843
+with factions, work, a story,
+
+5
+00:00:15,293 --> 00:00:20,076
+and a game the crew can leave and come back to.
+
+6
+00:00:21,876 --> 00:00:23,615
+It's called Open Universe.
+
+7
+00:00:24,515 --> 00:00:27,993
+And the surprising part is how it's made.
+
+8
+00:00:28,443 --> 00:00:31,922
+All of it comes from one text file,
+
+9
+00:00:32,372 --> 00:00:36,285
+of the kind you already know how to write.
+
+10
+00:00:38,085 --> 00:00:41,998
+Today you'll start one, read the file behind it,
+
+11
+00:00:42,448 --> 00:00:46,796
+and decide what kind of universe you're going to make.
+
+12
+00:00:47,996 --> 00:00:51,474
+Open Universe is a mission, like Legendary Missions,
+
+13
+00:00:51,924 --> 00:00:54,967
+so I start it the same way.
+
+14
+00:00:55,867 --> 00:00:59,780
+I leave the map off the end this time,
+
+15
+00:01:00,230 --> 00:01:02,839
+because I want the start screen.
+
+16
+00:01:04,639 --> 00:01:08,552
+Here's a list called Universe, with four on it.
+
+17
+00:01:09,452 --> 00:01:11,626
+I want The Silver Reach,
+
+18
+00:01:12,076 --> 00:01:16,424
+which is the one written as an example for writers.
+
+19
+00:01:17,324 --> 00:01:20,802
+And notice this setting, Start, which says Continue.
+
+20
+00:01:21,702 --> 00:01:24,746
+A game here is kept between sessions,
+
+21
+00:01:25,196 --> 00:01:29,109
+and that's half of what this class is for.
+
+22
+00:01:30,309 --> 00:01:34,222
+This is the system every new game starts in,
+
+23
+00:01:34,672 --> 00:01:37,715
+and the card calls it Home Port.
+
+24
+00:01:38,615 --> 00:01:40,354
+There's one station here.
+
+25
+00:01:41,254 --> 00:01:46,037
+On Comms I select it, and I take a cargo run.
+
+26
+00:01:47,837 --> 00:01:50,446
+Now the Quest Log, on Helm.
+
+27
+00:01:51,346 --> 00:01:54,824
+There's the first step of this universe's story,
+
+28
+00:01:55,274 --> 00:01:57,448
+there's the way to win,
+
+29
+00:01:57,898 --> 00:02:00,072
+and there's my cargo run.
+
+30
+00:02:00,972 --> 00:02:04,885
+All three of them send me to another system.
+
+31
+00:02:06,685 --> 00:02:10,163
+And this is where I have to stop.
+
+32
+00:02:11,063 --> 00:02:14,107
+In this mission, as it's published today,
+
+33
+00:02:14,557 --> 00:02:18,470
+the button that makes the jump is switched off.
+
+34
+00:02:19,370 --> 00:02:24,587
+That's a fault in the mission, and it isn't anything you did.
+
+35
+00:02:25,487 --> 00:02:29,835
+The mission you make next time has that button on.
+
+36
+00:02:30,735 --> 00:02:32,909
+So I'll close the game,
+
+37
+00:02:33,359 --> 00:02:36,837
+and show you the rest from the inside.
+
+38
+00:02:38,037 --> 00:02:41,950
+Everything about The Silver Reach is in this file.
+
+39
+00:02:42,850 --> 00:02:45,893
+It's about three hundred and sixty lines.
+
+40
+00:02:47,693 --> 00:02:52,041
+At the top is one record with a single hash,
+
+41
+00:02:52,491 --> 00:02:54,665
+and that's the universe itself.
+
+42
+00:02:55,565 --> 00:02:59,043
+Under it are chapters, each with two hashes.
+
+43
+00:02:59,943 --> 00:03:03,422
+There are the sides, which are the factions.
+
+44
+00:03:03,872 --> 00:03:06,915
+There are the jobs their stations offer.
+
+45
+00:03:07,815 --> 00:03:10,424
+Here's the story, in three steps,
+
+46
+00:03:10,874 --> 00:03:16,961
+and each step is a quest like the ones you wrote in Class 1.
+
+47
+00:03:17,861 --> 00:03:21,339
+Then regions and landmarks, which are the map.
+
+48
+00:03:22,239 --> 00:03:23,978
+And then the people,
+
+49
+00:03:24,428 --> 00:03:26,167
+and what they say.
+
+50
+00:03:27,967 --> 00:03:32,315
+Each of those chapters is a lecture in this class.
+
+51
+00:03:33,515 --> 00:03:37,428
+Let me show you one record becoming a place.
+
+52
+00:03:38,328 --> 00:03:41,372
+This is a side, the Lantern Combine.
+
+53
+00:03:42,272 --> 00:03:45,315
+You can read most of it already:
+
+54
+00:03:45,765 --> 00:03:50,113
+a heading, a fence, and a fact on each line.
+
+55
+00:03:51,913 --> 00:03:54,087
+Home is minus four, two.
+
+56
+00:03:54,537 --> 00:04:00,624
+That's a system, and it's the one the story sends the crew to first.
+
+57
+00:04:02,424 --> 00:04:07,641
+When a ship arrives there, the game puts a station in it,
+
+58
+00:04:08,091 --> 00:04:09,830
+named after this side.
+
+59
+00:04:10,730 --> 00:04:15,078
+This landmark, further down, puts a second station beside it.
+
+60
+00:04:15,978 --> 00:04:17,717
+And this line, Offers,
+
+61
+00:04:18,167 --> 00:04:23,385
+is why both stations hand out an escort job and a bounty.
+
+62
+00:04:25,185 --> 00:04:28,228
+Nobody placed those stations on a map.
+
+63
+00:04:29,128 --> 00:04:32,172
+The record says where these people live,
+
+64
+00:04:32,622 --> 00:04:35,230
+and the game does the rest.
+
+65
+00:04:36,430 --> 00:04:38,604
+Now notice what isn't here.
+
+66
+00:04:39,504 --> 00:04:41,678
+There's no list of systems.
+
+67
+00:04:42,578 --> 00:04:45,622
+Nobody wrote the stars, or the nebulas,
+
+68
+00:04:46,072 --> 00:04:49,550
+or the raiders in the dark between places.
+
+69
+00:04:51,350 --> 00:04:56,567
+The game makes all of that from one number, called the seed.
+
+70
+00:04:57,467 --> 00:05:00,946
+The same seed always gives the same galaxy,
+
+71
+00:05:01,396 --> 00:05:07,048
+so a place you leave is the same place when you come back.
+
+72
+00:05:08,848 --> 00:05:11,891
+And here's the save, which is tiny.
+
+73
+00:05:12,791 --> 00:05:16,270
+It holds the seed, where the ship is,
+
+74
+00:05:16,720 --> 00:05:19,328
+and what the crew has changed.
+
+75
+00:05:21,128 --> 00:05:23,737
+That's the bargain of this class.
+
+76
+00:05:24,637 --> 00:05:28,550
+You write the people, the places and the events.
+
+77
+00:05:29,000 --> 00:05:31,174
+You don't draw the map.
+
+78
+00:05:32,374 --> 00:05:34,548
+One decision before next time.
+
+79
+00:05:35,448 --> 00:05:40,665
+Every universe says what kind of game it is, with one word.
+
+80
+00:05:42,465 --> 00:05:46,813
+Story is one ship, and a tale with an ending.
+
+81
+00:05:47,713 --> 00:05:49,887
+Campaign is one ship too,
+
+82
+00:05:50,337 --> 00:05:52,076
+played over many evenings.
+
+83
+00:05:52,976 --> 00:05:56,454
+Sandbox is an open world with no ending.
+
+84
+00:05:57,354 --> 00:06:00,833
+And the last two are wars between admirals,
+
+85
+00:06:01,283 --> 00:06:03,891
+which come late in this class.
+
+86
+00:06:05,691 --> 00:06:10,909
+For one crew in one ship, the first three play alike today.
+
+87
+00:06:11,809 --> 00:06:17,026
+So choose the one that's true of what you want to write.
+
+88
+00:06:18,226 --> 00:06:19,965
+Two things on paper.
+
+89
+00:06:20,865 --> 00:06:22,604
+First, read the file,
+
+90
+00:06:23,054 --> 00:06:26,533
+and answer the five questions on the page.
+
+91
+00:06:27,433 --> 00:06:30,476
+Each answer is one line of it.
+
+92
+00:06:32,276 --> 00:06:35,754
+Then write three sentences about your own universe:
+
+93
+00:06:36,204 --> 00:06:38,813
+who lives there, who shoots first,
+
+94
+00:06:39,263 --> 00:06:42,741
+and what the crew is there to do.
+
+95
+00:06:44,541 --> 00:06:47,585
+Next time, that page becomes a mission,
+
+96
+00:06:48,035 --> 00:06:51,513
+and you take it on its first jump.

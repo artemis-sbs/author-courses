@@ -1,0 +1,111 @@
+s01_cold_open_0	Last time, your three sides were just there.
+s01_cold_open_1	They met every crew the same way,
+s01_cold_open_2	whatever that crew had done.
+s01_cold_open_3	Today they start to remember.
+s01_cold_open_4	Each side gets something it values.
+s01_cold_open_5	The crew earns a name with each one,
+s01_cold_open_6	by what they say and by the work they finish.
+s01_cold_open_7	And that name changes prices, and jobs,
+s01_cold_open_8	and how a station says hello.
+s02_what_a_side_values_0	The game measures a captain on seven pairs of traits.
+s02_what_a_side_values_1	There's honest or liar, fearsome or cowardly,
+s02_what_a_side_values_2	generous or selfish, and four more.
+s02_what_a_side_values_3	Neither end is the good one.
+s02_what_a_side_values_4	A navy can value doing it by the book,
+s02_what_a_side_values_5	and a gang of wreckers can value being feared.
+s02_what_a_side_values_6	So each side gets one line, Values,
+s02_what_a_side_values_7	with the traits it cares about, and a weight on each.
+s02_what_a_side_values_8	The farmers want honest and generous.
+s02_what_a_side_values_9	The miners want it by the book.
+s02_what_a_side_values_10	And the wreckers want fearsome.
+s03_standing_is_an_average_0	From those, the game works out one number for each side, called standing.
+s03_standing_is_an_average_1	It starts at zero,
+s03_standing_is_an_average_2	and it's an average across what that side values.
+s03_standing_is_an_average_3	Look at what that means.
+s03_standing_is_an_average_4	Twenty in both of Hollin's values is a standing of twenty.
+s03_standing_is_an_average_5	But honesty alone has to reach thirty-five to do the same.
+s03_standing_is_an_average_6	And honesty alone, pushed all the way, stops at fifty-seven.
+s03_standing_is_an_average_7	So a crew can't win a side over by being good at one thing.
+s03_standing_is_an_average_8	They have to be the whole of what that side admires.
+s04_a_deed_in_work_0	How does the crew earn it?
+s04_a_deed_in_work_1	There are two ways, and the first is work.
+s04_a_deed_in_work_2	When a ship finishes a side's job,
+s04_a_deed_in_work_3	its standing with that side goes up by five.
+s04_a_deed_in_work_4	I write nothing for that.
+s04_a_deed_in_work_5	It comes with the job.
+s04_a_deed_in_work_6	But the template's jobs don't have endings yet,
+s04_a_deed_in_work_7	so I give the escort one:
+s04_a_deed_in_work_8	done when the ship reaches the miners' home.
+s04_a_deed_in_work_9	And I give the patrol a rank, tier two.
+s04_a_deed_in_work_10	A side only offers tier two work
+s04_a_deed_in_work_11	to a ship at twenty or more.
+s05_a_deed_in_talk_0	The second way is what the crew says.
+s05_a_deed_in_talk_1	This is a call,
+s05_a_deed_in_talk_2	and if you've taken Class 2 you know its shape.
+s05_a_deed_in_talk_3	If you haven't, this is all of it.
+s05_a_deed_in_talk_4	Speaker is the side.
+s05_a_deed_in_talk_5	When comms means this opens when the crew hails that side's station.
+s05_a_deed_in_talk_6	A line starting with a percent sign is something the station says.
+s05_a_deed_in_talk_7	And a line starting with a hyphen is an answer, which becomes a button.
+s05_a_deed_in_talk_8	Now the two parts that are about today.
+s05_a_deed_in_talk_9	After the semicolon is what the answer does:
+s05_a_deed_in_talk_10	it costs a hundred credits,
+s05_a_deed_in_talk_11	and it earns twenty honest and twenty generous with Hollin.
+s05_a_deed_in_talk_12	That answer is the deed.
+s05_a_deed_in_talk_13	And up here, in curly brackets, is a guard.
+s05_a_deed_in_talk_14	This line is only said to a ship at twenty or more.
+s05_a_deed_in_talk_15	So the station greets a friend differently,
+s05_a_deed_in_talk_16	and that's how the crew finds out where they stand.
+s06_two_traps_in_a_call_0	Two things to know before you write your own.
+s06_two_traps_in_a_call_1	First, guard every line, or none.
+s06_two_traps_in_a_call_2	A line with no guard can always be said,
+s06_two_traps_in_a_call_3	so a friend would hear either one, at random.
+s06_two_traps_in_a_call_4	Second, an answer can be given again.
+s06_two_traps_in_a_call_5	The crew can hail as often as they like,
+s06_two_traps_in_a_call_6	and the deed happens every time.
+s06_two_traps_in_a_call_7	That's why the levy costs money.
+s06_two_traps_in_a_call_8	Here's the wreckers' call, and I've left the cost off on purpose.
+s06_two_traps_in_a_call_9	Watch what that does when I play it.
+s07_the_thresholds_0	Standing only matters where it crosses a line.
+s07_the_thresholds_1	At twenty, a side offers better work,
+s07_the_thresholds_2	and an enemy will deal with you at all.
+s07_the_thresholds_3	Every point above zero adds one percent to the pay.
+s07_the_thresholds_4	A ceasefire costs twenty credits for each point short of thirty.
+s07_the_thresholds_5	So it's six hundred to a stranger, and free to a friend.
+s07_the_thresholds_6	You can move every one of those lines,
+s07_the_thresholds_7	and the page shows you how.
+s07_the_thresholds_8	I'm leaving them where they are,
+s07_the_thresholds_9	and lint says clean.
+s08_play_it_the_farmers_0	Here's Hollin Compact, with an escort for two fifty, and no patrol.
+s08_play_it_the_farmers_1	I hail them, and I get the cold line, the one for strangers.
+s08_play_it_the_farmers_2	I pay the levy.
+s08_play_it_the_farmers_3	Now look at the station again.
+s08_play_it_the_farmers_4	There's the patrol, and the escort pays three hundred.
+s08_play_it_the_farmers_5	I hail once more, and this time they know my ship.
+s08_play_it_the_farmers_6	So I take the escort,
+s08_play_it_the_farmers_7	and on Helm I engage it.
+s08_play_it_the_farmers_8	It's done on arrival,
+s08_play_it_the_farmers_9	and that's five more with Hollin.
+s09_play_it_the_wreckers_0	Now for the Gleaners.
+s09_play_it_the_wreckers_1	The ceasefire is on offer,
+s09_play_it_the_wreckers_2	and it would cost me six hundred.
+s09_play_it_the_wreckers_3	I don't press it.
+s09_play_it_the_wreckers_4	I hail them instead,
+s09_play_it_the_wreckers_5	and I tell them I go where I like.
+s09_play_it_the_wreckers_6	That's one bold answer, and my standing is twenty.
+s09_play_it_the_wreckers_7	Look at the station now.
+s09_play_it_the_wreckers_8	They'll give me work,
+s09_play_it_the_wreckers_9	and the ceasefire costs two hundred,
+s09_play_it_the_wreckers_10	so I take it.
+s09_play_it_the_wreckers_11	And now the trap I left.
+s09_play_it_the_wreckers_12	I give the same answer twice more, for nothing,
+s09_play_it_the_wreckers_13	and I'm at fifty-seven with people who were shooting at me.
+s09_play_it_the_wreckers_14	It stops there, because they value something else as well.
+s09_play_it_the_wreckers_15	But that's what a free deed does to a story.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Give each of your sides two or three values,
+s10_your_turn_2	and say out loud why they'd care.
+s10_your_turn_3	Rewrite both calls in their voices, and keep the guards.
+s10_your_turn_4	And fix my trap:
+s10_your_turn_5	make being feared by one side cost the crew something with another.
+s10_your_turn_6	Next time, we draw the map.

@@ -1,0 +1,106 @@
+s01_cold_open_0	So far, you've written who lives in your universe,
+s01_cold_open_1	and the game has decided what every system looks like.
+s01_cold_open_2	Today you take some of that back.
+s01_cold_open_3	You'll change how the whole galaxy is made, with four numbers.
+s01_cold_open_4	You'll give two stretches of it a name and a sky.
+s01_cold_open_5	And you'll put three more places on the map by hand.
+s02_how_a_system_is_filled_0	First, how the game fills a system you never wrote.
+s02_how_a_system_is_filled_1	It rolls once for each one,
+s02_how_a_system_is_filled_2	and the roll comes from the seed,
+s02_how_a_system_is_filled_3	so it's the same every time for that system.
+s02_how_a_system_is_filled_4	About one in seven is a station.
+s02_how_a_system_is_filled_5	About one in seven is full of enemies.
+s02_how_a_system_is_filled_6	Some are nebula, a few are anomalies,
+s02_how_a_system_is_filled_7	and half of them are empty.
+s02_how_a_system_is_filled_8	And on top of that, a system might have loot,
+s02_how_a_system_is_filled_9	or a dead ship to scan, or a minefield.
+s02_how_a_system_is_filled_10	Every one of those chances is a number you can change.
+s03_the_dials_0	Those numbers are called dials,
+s03_the_dials_1	and they go in the title record, at the top of the file.
+s03_the_dials_2	My universe is a frontier that was abandoned.
+s03_the_dials_3	So I want few ports, a lot of cloud,
+s03_the_dials_4	and a lot of dead ships,
+s03_the_dials_5	and that's four lines.
+s03_the_dials_6	And here's what they did, counted over the nearest hundred and sixty-nine systems.
+s03_the_dials_7	Stations went from twenty-five to fifteen,
+s03_the_dials_8	and nebulas from twenty-nine to forty.
+s03_the_dials_9	One warning, and it's the big one in this lecture.
+s03_the_dials_10	Write the percent sign.
+s03_the_dials_11	Leave it off, and twelve means twelve hundred percent,
+s03_the_dials_12	and lint won't say a word.
+s04_a_region_0	A dial in the title record is the same everywhere.
+s04_a_region_1	A region is a patch of the map where it's different.
+s04_a_region_2	It has a center, which is a system, and a radius.
+s04_a_region_3	A region is a square, so a radius of two
+s04_a_region_4	is five systems on a side.
+s04_a_region_5	It has a sky, from a list of seven on the page.
+s04_a_region_6	And it can have any of the dials.
+s04_a_region_7	Here I've said, no enemy systems at all, and more stations.
+s04_a_region_8	So this is safe, farmed space around the home port.
+s05_a_second_region_and_the_grid_0	And here's the opposite: the Breakers.
+s05_a_second_region_and_the_grid_1	There's a red sky, different music,
+s05_a_second_region_and_the_grid_2	enemies in most systems, no ports, and mines.
+s05_a_second_region_and_the_grid_3	I drew it on paper first,
+s05_a_second_region_and_the_grid_4	and I'd ask you to do the same.
+s05_a_second_region_and_the_grid_5	Mark each side's home, and draw each region as a square.
+s05_a_second_region_and_the_grid_6	It shows you two things.
+s05_a_second_region_and_the_grid_7	One is whether two regions overlap.
+s05_a_second_region_and_the_grid_8	If they do, a system belongs to the one written first.
+s05_a_second_region_and_the_grid_9	The other is whether a side's home is inside the region you meant for it.
+s05_a_second_region_and_the_grid_10	Nothing moves a home into a region for you.
+s05_a_second_region_and_the_grid_11	You keep those two lines in step yourself.
+s06_a_landmark_that_names_a_home_0	Now for the landmarks.
+s06_a_landmark_that_names_a_home_1	You wrote one in Lecture 2,
+s06_a_landmark_that_names_a_home_2	and here are three more, each for a different reason.
+s06_a_landmark_that_names_a_home_3	The first is a station at the miners' home.
+s06_a_landmark_that_names_a_home_4	Last time, when the crew arrived there,
+s06_a_landmark_that_names_a_home_5	the card just said uncharted, and two numbers.
+s06_a_landmark_that_names_a_home_6	A side's home doesn't name itself,
+s06_a_landmark_that_names_a_home_7	but a landmark does.
+s06_a_landmark_that_names_a_home_8	So now the card will read Assay Office,
+s06_a_landmark_that_names_a_home_9	and the place goes on the crew's list of charted locations.
+s06_a_landmark_that_names_a_home_10	And because of this line, Side,
+s06_a_landmark_that_names_a_home_11	the station belongs to the miners and offers their work.
+s07_a_dead_ship_and_a_guarded_on_0	The second is a dead ship.
+s07_a_dead_ship_and_a_guarded_on_1	Kind, derelict, makes it a wreck for Science to scan.
+s07_a_dead_ship_and_a_guarded_on_2	The game scatters wrecks of its own, but they have no names.
+s07_a_dead_ship_and_a_guarded_on_3	This one has a name, a line on the card,
+s07_a_dead_ship_and_a_guarded_on_4	and a nebula around it, whatever the game rolled there.
+s07_a_dead_ship_and_a_guarded_on_5	And the third is a fight.
+s07_a_dead_ship_and_a_guarded_on_6	Guards puts a fleet on the landmark,
+s07_a_dead_ship_and_a_guarded_on_7	the first time the crew arrives.
+s07_a_dead_ship_and_a_guarded_on_8	One thing to know about them.
+s07_a_dead_ship_and_a_guarded_on_9	The guards belong to nobody.
+s07_a_dead_ship_and_a_guarded_on_10	They're raiders, even in Gleaner country,
+s07_a_dead_ship_and_a_guarded_on_11	so a ceasefire with the Gleaners won't call them off.
+s08_leads_and_check_0	The crew still needs a reason to go,
+s08_leads_and_check_1	so I add two leads, the way we did in Lecture 3.
+s08_leads_and_check_2	The Assay Office doesn't need one,
+s08_leads_and_check_3	because an old lead already goes there.
+s08_leads_and_check_4	I save, and lint says clean.
+s08_leads_and_check_5	And again, clean isn't the whole check today.
+s08_leads_and_check_6	Lint doesn't know a sky's name from a typing mistake,
+s08_leads_and_check_7	and it doesn't count your percent signs.
+s08_leads_and_check_8	So read down the list on the page.
+s09_fly_the_map_0	Four leads in the Quest Log now.
+s09_fly_the_map_1	First, the third colony.
+s09_fly_the_map_2	There's her name on the card, and my line.
+s09_fly_the_map_3	Then the miners' home,
+s09_fly_the_map_4	and this time it has a name.
+s09_fly_the_map_5	On Comms, the Assay Office offers the miners' escort.
+s09_fly_the_map_6	Now the one the Gleaners won't talk about.
+s09_fly_the_map_7	This is the Breakers, and somebody's waiting.
+s09_fly_the_map_8	And last, the Gleaners' own home.
+s09_fly_the_map_9	It has no landmark,
+s09_fly_the_map_10	so the card falls back to the region's name.
+s09_fly_the_map_11	Here's Charted Locations, with four places in it.
+s09_fly_the_map_12	Those are my landmarks, and only my landmarks.
+s09_fly_the_map_13	A region doesn't get charted,
+s09_fly_the_map_14	and neither does a home with no landmark in it.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Say what your galaxy is like in one sentence,
+s10_your_turn_2	and set no more than four dials to match.
+s10_your_turn_3	Draw the grid on paper.
+s10_your_turn_4	Give every side's home a landmark,
+s10_your_turn_5	and write one place that's only a story, and one that's a fight.
+s10_your_turn_6	Next time, the work a station hands out gets a beginning and an end.

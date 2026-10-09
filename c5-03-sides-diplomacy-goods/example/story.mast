@@ -25,6 +25,13 @@ default shared UNIVERSE_SELECT = "The Kestrel Verge"
 default shared QUEST_ENGAGE_ENABLED = True
 default shared WAYPOINTS_ENABLED = True
 
+# ---- CARD: Comms at a station that belongs to one of your sides ----
+# Four names the Open Universe engine asks for and does not find. Paste as they are.
+default shared sides_standing = reputation_standing
+default shared side_ceasefire_cost = reputation_ceasefire_cost
+default shared side_alliance_standing = reputation_alliance_standing
+default shared officers_captured_by = lambda side: []
+
 
 #
 # Register the universe so the engine can find it. The engine scans for `type: universe/*`
