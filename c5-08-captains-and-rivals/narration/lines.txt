@@ -1,0 +1,100 @@
+s01_cold_open_0	Your sides are institutions.
+s01_cold_open_1	They have stations, and fleets, and work.
+s01_cold_open_2	Today you write people.
+s01_cold_open_3	A captain is somebody with a name,
+s01_cold_open_4	who belongs to one of your sides,
+s01_cold_open_5	and has an opinion of the crew that's all their own.
+s01_cold_open_6	The crew can be at war with the Gleaners,
+s01_cold_open_7	and on good terms with their bookkeeper.
+s01_cold_open_8	Or the other way round.
+s02_what_a_captain_is_and_isn_t_0	A captain is three things.
+s02_what_a_captain_is_and_isn_t_1	A name on a button, at a station.
+s02_what_a_captain_is_and_isn_t_2	A voice, in your Dialogue chapter, and a memory.
+s02_what_a_captain_is_and_isn_t_3	That's all, and I want to be plain about it.
+s02_what_a_captain_is_and_isn_t_4	A captain is not a ship.
+s02_what_a_captain_is_and_isn_t_5	The game doesn't put one in space for them,
+s02_what_a_captain_is_and_isn_t_6	and nobody can shoot at them.
+s02_what_a_captain_is_and_isn_t_7	So everything a captain is,
+s02_what_a_captain_is_and_isn_t_8	you write in what they say, and what they refuse to say.
+s03_the_captains_chapter_0	A new chapter, and its key is captains.
+s03_the_captains_chapter_1	Each captain has four lines.
+s03_the_captains_chapter_2	Side is the side they belong to.
+s03_the_captains_chapter_3	Title follows their name on the button.
+s03_the_captains_chapter_4	Values are what this person cares about,
+s03_the_captains_chapter_5	the same traits as a side has.
+s03_the_captains_chapter_6	And Roams is the system where they're found.
+s03_the_captains_chapter_7	Look at Sable's values.
+s03_the_captains_chapter_8	The Gleaners value fear.
+s03_the_captains_chapter_9	She values honesty, and doing things by the book.
+s03_the_captains_chapter_10	She's a bookkeeper among wreckers.
+s03_the_captains_chapter_11	That gap is the character.
+s04_roams_needs_a_station_0	One rule about Roams.
+s04_roams_needs_a_station_1	The button to hail a captain is on a station.
+s04_roams_needs_a_station_2	Any station in that system will do, whoever owns it.
+s04_roams_needs_a_station_3	But if the system has no station,
+s04_roams_needs_a_station_4	there's nothing to carry the button,
+s04_roams_needs_a_station_5	and the captain can't be reached.
+s04_roams_needs_a_station_6	So Sable roams the Gleaners' home, which has one.
+s04_roams_needs_a_station_7	She does not roam the Bone Pile, which doesn't.
+s04_roams_needs_a_station_8	And lint won't warn you about that.
+s05_a_captain_s_voice_0	A captain talks the way a side talks, with one difference.
+s05_a_captain_s_voice_1	After Speaker, it's the captain's key.
+s05_a_captain_s_voice_2	And that changes what one word means.
+s05_a_captain_s_voice_3	In this record, standing is the crew's standing with her,
+s05_a_captain_s_voice_4	not with her side.
+s05_a_captain_s_voice_5	And a deed names her: earns, edda.
+s05_a_captain_s_voice_6	Now here's something new.
+s05_a_captain_s_voice_7	After this answer, the word if, and a comparison.
+s05_a_captain_s_voice_8	That's a guard on an answer.
+s05_a_captain_s_voice_9	The crew is only offered it when it's true.
+s05_a_captain_s_voice_10	So Edda won't gossip with strangers.
+s05_a_captain_s_voice_11	Tell her the news once, and she will.
+s06_a_captain_who_can_be_crossed_0	Now for Sable, who has two greetings, and the line between them is minus twenty.
+s06_a_captain_who_can_be_crossed_1	One answer pays her toll,
+s06_a_captain_who_can_be_crossed_2	and earns both of the things she values.
+s06_a_captain_who_can_be_crossed_3	The other insults her,
+s06_a_captain_who_can_be_crossed_4	and it names the far end of each of those traits.
+s06_a_captain_who_can_be_crossed_5	Once is enough to cross the line.
+s06_a_captain_who_can_be_crossed_6	And the answer that matters, the one about the Tern,
+s06_a_captain_who_can_be_crossed_7	is only for a crew she trusts.
+s06_a_captain_who_can_be_crossed_8	That's a rival, and that's all a rival is.
+s06_a_captain_who_can_be_crossed_9	A line you chose,
+s06_a_captain_who_can_be_crossed_10	and what you wrote on each side of it.
+s07_the_line_that_does_nothing_0	If you read the Open Universe's own files,
+s07_the_line_that_does_nothing_1	you'll see a line called Rival when.
+s07_the_line_that_does_nothing_2	It looks like exactly what we want.
+s07_the_line_that_does_nothing_3	Lint accepts it, and today, the game doesn't read it.
+s07_the_line_that_does_nothing_4	I tried it, and nothing changed.
+s07_the_line_that_does_nothing_5	So don't rely on it.
+s07_the_line_that_does_nothing_6	Make your rival out of guards, the way we just did.
+s07_the_line_that_does_nothing_7	I save, and lint says clean.
+s07_the_line_that_does_nothing_8	And as usual, the list on the page is the rest of the check.
+s08_make_a_friend_0	At home, the station has a new button,
+s08_make_a_friend_1	with Edda's name and title on it.
+s08_make_a_friend_2	She's short with me, and I've got two answers.
+s08_make_a_friend_3	I tell her the news.
+s08_make_a_friend_4	I hail her again, and it's a different greeting,
+s08_make_a_friend_5	and there's a third answer.
+s08_make_a_friend_6	She tells me where to find Sable,
+s08_make_a_friend_7	and to settle up first.
+s09_make_a_rival_0	This is Gleaner space, and we're at war with them.
+s09_make_a_rival_1	And here's Sable, anyway.
+s09_make_a_rival_2	I pay her toll.
+s09_make_a_rival_3	Now she'll answer the question about the Tern.
+s09_make_a_rival_4	So let's throw that away.
+s09_make_a_rival_5	I tell her to bill the Compact, twice.
+s09_make_a_rival_6	And listen to her now.
+s09_make_a_rival_7	The question's gone, too.
+s09_make_a_rival_8	Nothing else has changed.
+s09_make_a_rival_9	Nobody is out hunting me.
+s09_make_a_rival_10	A rival greets you differently,
+s09_make_a_rival_11	and keeps back what a friend would hear.
+s09_make_a_rival_12	Write that well, and it's plenty.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Write one captain for each side,
+s10_your_turn_2	and give each a value their side doesn't have.
+s10_your_turn_3	Two greetings, three answers.
+s10_your_turn_4	One earns, one costs, and one is only for a friend.
+s10_your_turn_5	Then decide whether the crew can win a rival back.
+s10_your_turn_6	Next time, we tidy up.
+s10_your_turn_7	Your file gets split into chapters, and you print the world.

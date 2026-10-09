@@ -1,0 +1,91 @@
+s01_cold_open_0	Your universe has places, sides, and work.
+s01_cold_open_1	What it doesn't have yet is a story.
+s01_cold_open_2	Right now the crew can see every lead you wrote,
+s01_cold_open_3	from the first minute, in any order.
+s01_cold_open_4	That's a list of places.
+s01_cold_open_5	Today you turn it into chapters,
+s01_cold_open_6	where each one opens the next.
+s01_cold_open_7	And then you write the last page.
+s02_three_lines_on_paper_0	Before I open the file, I write the story as three lines.
+s02_three_lines_on_paper_1	One. The crew finds the third colony's ship, and she's been stripped.
+s02_three_lines_on_paper_2	Two. The miners' ledger says who sold her cargo.
+s02_three_lines_on_paper_3	Three. That leads to a place the Gleaners won't talk about.
+s02_three_lines_on_paper_4	Each line ends with something the crew has just learned.
+s02_three_lines_on_paper_5	That's what makes it a chapter, and not an errand.
+s03_the_chain_0	You know these lines from Class One.
+s03_the_chain_1	Starts when, revealed, means the chapter is hidden.
+s03_the_chain_2	And Then, reveal, wakes the one with that key.
+s03_the_chain_3	So the first chapter keeps, at once,
+s03_the_chain_4	and gets one new line that points at the second.
+s03_the_chain_5	The second is new. It's hidden,
+s03_the_chain_6	and it points at the third.
+s03_the_chain_7	And the third was already here as a lead.
+s03_the_chain_8	I change at once to revealed, and give it a reward.
+s03_the_chain_9	Now read down the Then lines.
+s03_the_chain_10	That's your table of contents.
+s04_the_briefing_0	The words under a beat are the briefing.
+s04_the_briefing_1	They're what the crew reads when the chapter appears.
+s04_the_briefing_2	A good one says what was just learned,
+s04_the_briefing_3	and where to go next.
+s04_the_briefing_4	And I mean where. I've written the place into the sentence.
+s04_the_briefing_5	That matters for this chapter,
+s04_the_briefing_6	because it doesn't end at a place.
+s04_the_briefing_7	It ends on a signal.
+s04_the_briefing_8	So Helm has nothing to engage,
+s04_the_briefing_9	and the crew gets there by reading.
+s05_a_chapter_that_ends_in_a_cal_0	Done when, signal, ledger read.
+s05_a_chapter_that_ends_in_a_cal_1	Nothing sends that signal yet, so I write the thing that does.
+s05_a_chapter_that_ends_in_a_cal_2	It's a call to the miners, like the two calls from Lecture Four.
+s05_a_chapter_that_ends_in_a_cal_3	And there's one new item among an answer's outcomes:
+s05_a_chapter_that_ends_in_a_cal_4	signal, and the same word.
+s05_a_chapter_that_ends_in_a_cal_5	Now look at both answers.
+s05_a_chapter_that_ends_in_a_cal_6	They both send it, so either one closes the chapter.
+s05_a_chapter_that_ends_in_a_cal_7	But one pays the fee, politely,
+s05_a_chapter_that_ends_in_a_cal_8	and the miners think better of the crew.
+s05_a_chapter_that_ends_in_a_cal_9	The other demands the page,
+s05_a_chapter_that_ends_in_a_cal_10	and they think worse.
+s05_a_chapter_that_ends_in_a_cal_11	That's how a beat shifts standing.
+s05_a_chapter_that_ends_in_a_cal_12	The deed goes in the answer, beside the signal.
+s06_why_not_on_the_beat_0	You might expect to write the deed on the beat itself.
+s06_why_not_on_the_beat_1	There is a line for it, and lint accepts it.
+s06_why_not_on_the_beat_2	But today, on a story beat, it doesn't reach the ship.
+s06_why_not_on_the_beat_3	The score is kept, and nothing ever reads it.
+s06_why_not_on_the_beat_4	So until that changes, remember one rule.
+s06_why_not_on_the_beat_5	A job's reward can earn standing.
+s06_why_not_on_the_beat_6	An answer can earn standing.
+s06_why_not_on_the_beat_7	A story beat can't.
+s07_the_last_page_0	A goal is a beat with one more line.
+s07_the_last_page_1	Win, and then a sentence.
+s07_the_last_page_2	When this quest is done, the game ends,
+s07_the_last_page_3	and that sentence is on the last screen.
+s07_the_last_page_4	Citation is the line on the card the crew gets at that moment.
+s07_the_last_page_5	My goal is hidden too,
+s07_the_last_page_6	and the third chapter reveals it.
+s07_the_last_page_7	So the ending arrives when the story has earned it.
+s07_the_last_page_8	I save, and lint says clean.
+s07_the_last_page_9	Lint is good at chains.
+s07_the_last_page_10	It'll tell you when a chapter can never appear.
+s08_play_the_story_0	Three entries at the start, and no sign of the rest.
+s08_play_the_story_1	I go and find the Tern.
+s08_play_the_story_2	And there's chapter two, with its briefing.
+s08_play_the_story_3	It says to ask at the Assay Office, so that's where I go.
+s08_play_the_story_4	I hail them, and I pay the fee.
+s08_play_the_story_5	The chapter's done, it paid me,
+s08_play_the_story_6	and the miners like me a little more.
+s08_play_the_story_7	And here's chapter three.
+s09_the_end_0	This is the place the Gleaners won't talk about.
+s09_the_end_1	And as I arrive, the goal appears.
+s09_the_end_2	Four of them, and it's over.
+s09_the_end_3	There's my citation, on the card.
+s09_the_end_4	And there's my sentence, on the last screen.
+s09_the_end_5	One thing before you go.
+s09_the_end_6	A universe doesn't have to end.
+s09_the_end_7	Leave the goals out, and it's a sandbox for as long as the crew likes.
+s09_the_end_8	Write a goal when your story has a last page.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Write your story as three lines on paper first.
+s10_your_turn_2	Chain them, with the first one open and the rest hidden.
+s10_your_turn_3	End one chapter with a conversation,
+s10_your_turn_4	and give the crew two ways to get what they came for.
+s10_your_turn_5	Then decide whether your universe ends.
+s10_your_turn_6	Next time, we put people in it.

@@ -1,0 +1,101 @@
+s01_cold_open_0	You've been writing leads,
+s01_cold_open_1	and a lead happens once.
+s01_cold_open_2	Today you write the other kind of quest,
+s01_cold_open_3	the kind a crew can take again and again.
+s01_cold_open_4	That's what a job is: a station offers it, the crew takes it,
+s01_cold_open_5	they do it, and they're paid.
+s01_cold_open_6	And when they come back, it's there again.
+s02_the_life_of_a_job_0	Here's the whole life of a job, in five stages.
+s02_the_life_of_a_job_1	First it's offered, when Comms selects a station, and each job is a button, with its pay.
+s02_the_life_of_a_job_2	Then it's taken, and it goes into the Quest Log, under the ship's name.
+s02_the_life_of_a_job_3	Then it's done, when its ending comes true,
+s02_the_life_of_a_job_4	wherever the ship happens to be.
+s02_the_life_of_a_job_5	Then it's paid, in credits, and in standing with the side that offered it.
+s02_the_life_of_a_job_6	And then it's offered again.
+s02_the_life_of_a_job_7	Now, the template gave you three jobs,
+s02_the_life_of_a_job_8	and two of them have no ending at all.
+s02_the_life_of_a_job_9	A crew can take them, and never finish them.
+s03_five_endings_0	An ending is one line, Done when,
+s03_five_endings_1	and it's an order to the captain in plain words.
+s03_five_endings_2	There are five first words.
+s03_five_endings_3	Destroy. Recover. Scan. Reach. And dock.
+s03_five_endings_4	After the word comes a number, and what to count.
+s03_five_endings_5	So, for Patrol: Done when, destroy three enemies.
+s03_five_endings_6	Enemies is a word the game knows.
+s03_five_endings_7	It means anything at war with the crew.
+s03_five_endings_8	And the game shows that same line to the crew as their objective,
+s03_five_endings_9	so write it the way you'd say it.
+s04_a_reward_that_costs_somethin_0	Salvage is the Gleaners' job.
+s04_a_reward_that_costs_somethin_1	Its ending is, recover two tech,
+s04_a_reward_that_costs_somethin_2	and tech is a key from your Goods chapter.
+s04_a_reward_that_costs_somethin_3	Now look at the reward.
+s04_a_reward_that_costs_somethin_4	After the credits I'm adding a comma,
+s04_a_reward_that_costs_somethin_5	and then a deed, the same three words as in Lecture Four.
+s04_a_reward_that_costs_somethin_6	A side, a trait, and a number.
+s04_a_reward_that_costs_somethin_7	So this job pays, and it pleases the Gleaners.
+s04_a_reward_that_costs_somethin_8	But the farmers hear who's been stripping wrecks,
+s04_a_reward_that_costs_somethin_9	and they think a little less of the crew.
+s04_a_reward_that_costs_somethin_10	And mind that comma.
+s04_a_reward_that_costs_somethin_11	Leave it out, and the credits are paid,
+s04_a_reward_that_costs_somethin_12	the deed is dropped, and lint says nothing.
+s05_three_more_jobs_0	Three more jobs, quickly.
+s05_three_more_jobs_1	A survey, which ends when Science scans a dead ship.
+s05_three_more_jobs_2	A run home, against the clock.
+s05_three_more_jobs_3	Fails when, ten minutes,
+s05_three_more_jobs_4	and a penalty if it does.
+s05_three_more_jobs_5	You know both of those lines from Class One.
+s05_three_more_jobs_6	And a strike, at tier three.
+s05_three_more_jobs_7	That one's only offered to a crew the Compact really trusts.
+s05_three_more_jobs_8	The relay run does something else for me.
+s05_three_more_jobs_9	It ends at home,
+s05_three_more_jobs_10	so it's a way back that pays.
+s06_on_offer_0	A job nobody offers is never seen.
+s06_on_offer_1	So, back up to the sides.
+s06_on_offer_2	The farmers get patrol, escort and strike.
+s06_on_offer_3	The miners get the survey and the relay run.
+s06_on_offer_4	I'm taking the escort away from the miners,
+s06_on_offer_5	because it ends at their own front door.
+s06_on_offer_6	A job that ends at a place
+s06_on_offer_7	belongs to a side that lives somewhere else.
+s07_check_0	I save, and lint says clean.
+s07_check_1	And today that's less than half the check.
+s07_check_2	Lint knows the five first words,
+s07_check_3	so a misspelled one gets a warning.
+s07_check_4	But it doesn't read what comes after.
+s07_check_5	Write the number as a word,
+s07_check_6	and the job never finishes.
+s07_check_7	Name a good you don't have, and it never finishes.
+s07_check_8	And here's the one that will catch you.
+s07_check_9	You can't write, destroy three gleaners.
+s07_check_10	The game takes the s off,
+s07_check_11	looks for something called a gleaner, and finds nothing.
+s07_check_12	So write enemies instead.
+s08_work_the_board_0	At home, the farmers offer one job.
+s08_work_the_board_1	I pay the levy,
+s08_work_the_board_2	and now there are two, and the escort pays more.
+s08_work_the_board_3	I take both, and here they are in the Quest Log.
+s08_work_the_board_4	I engage the escort, and on arrival it's done.
+s08_work_the_board_5	The miners' office has my two new jobs.
+s08_work_the_board_6	I take them, and the clock on the relay run is running.
+s08_work_the_board_7	The survey wants a dead ship,
+s08_work_the_board_8	and I know where one is.
+s08_work_the_board_9	And the patrol wants enemies,
+s08_work_the_board_10	and I know where those are too.
+s09_paid_and_offered_again_0	The Gleaners will deal with me now,
+s09_paid_and_offered_again_1	so I take their salvage.
+s09_paid_and_offered_again_2	When it's done, watch the farmers.
+s09_paid_and_offered_again_3	My standing with them just dropped,
+s09_paid_and_offered_again_4	and I never spoke to them.
+s09_paid_and_offered_again_5	Now the relay run takes me home, inside its ten minutes.
+s09_paid_and_offered_again_6	And look at the farmers' list.
+s09_paid_and_offered_again_7	Patrol is back, and it pays a little more than last time.
+s09_paid_and_offered_again_8	That's the thing to remember about a job.
+s09_paid_and_offered_again_9	It never runs out.
+s09_paid_and_offered_again_10	So think about how often you want a crew to be able to please each side.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Write one job for each side that only that side would offer.
+s10_your_turn_2	Make one of them tier two.
+s10_your_turn_3	Make one that costs the crew somewhere else.
+s10_your_turn_4	And put one against the clock, and let it fail once.
+s10_your_turn_5	Next time, your universe gets a story,
+s10_your_turn_6	with a beginning and an end.

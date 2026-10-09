@@ -1,0 +1,32 @@
+// What the Deepwell Assembly say. This file is read into the Dialogue chapter of
+// kestrel_verge.amd. Each record here starts with ONE hash.
+
+# [Deepwell Hail](deepwell_hail)
+---
+Speaker: deepwell
+When: comms
+---
+%{standing >= 20} Assay Office. Your account is in order, captain.
+%{standing < 20} Assay Office. Have your manifest ready.
+
+- [Pay the search fee and ask about the Tern](deepwell_ledger) ; costs 150 credits, signal ledger_read, earns deepwell by-the-book 20, earns deepwell peaceful 20
+- [Demand the Tern's entry, now](deepwell_ledger_cold) ; signal ledger_read, earns deepwell resourceful 20, earns deepwell violent 20
+- [Sign off](deepwell_bye)
+
+# [The Ledger](deepwell_ledger)
+---
+Speaker: deepwell
+---
+% Fee received. Forty crates off the Tern, entered as salvage, sold to us by the Gleaners. We do not ask where salvage comes from.
+
+# [The Ledger, Thrown](deepwell_ledger_cold)
+---
+Speaker: deepwell
+---
+% Take it, then. Forty crates off the Tern, sold to us by the Gleaners. And captain: we have entered this conversation too.
+
+# [Deepwell Out](deepwell_bye)
+---
+Speaker: deepwell
+---
+% Assay Office out.

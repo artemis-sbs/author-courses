@@ -1,0 +1,100 @@
+s01_cold_open_0	Your universe file is four hundred lines long.
+s01_cold_open_1	It works, and it's getting hard to find anything in.
+s01_cold_open_2	Today we tidy up.
+s01_cold_open_3	The jobs get a file of their own,
+s01_cold_open_4	and so does each side's dialogue.
+s01_cold_open_5	And then there's a reward for the housekeeping.
+s01_cold_open_6	We print the whole world, as a book, a script, and a website.
+s02_a_chapter_that_reads_from_a__0	Here's the whole idea, in four lines.
+s02_a_chapter_that_reads_from_a__1	A chapter heading, a fence,
+s02_a_chapter_that_reads_from_a__2	and inside it, File, and a file's name.
+s02_a_chapter_that_reads_from_a__3	When the game starts, it reads that file,
+s02_a_chapter_that_reads_from_a__4	and puts its records into this chapter.
+s02_a_chapter_that_reads_from_a__5	As far as the game's concerned,
+s02_a_chapter_that_reads_from_a__6	you typed them right here.
+s02_a_chapter_that_reads_from_a__7	There are three rules, and I'll show you each one as we go.
+s03_move_the_jobs_0	A new file, jobs dot a m d.
+s03_move_the_jobs_1	I cut the six jobs out of the main file, and paste them in.
+s03_move_the_jobs_2	Now for rule one.
+s03_move_the_jobs_3	In the main file, a job has three hashes,
+s03_move_the_jobs_4	because it sits under a title and a chapter.
+s03_move_the_jobs_5	In a chapter file there's no title and no chapter.
+s03_move_the_jobs_6	So every record here starts with one hash.
+s03_move_the_jobs_7	Replace All does it,
+s03_move_the_jobs_8	and it tells me six changes, which is how many jobs I have.
+s03_move_the_jobs_9	Back in the main file, the chapter gets its fence.
+s04_move_the_conversations_0	Dialogue is the big one, with twenty records.
+s04_move_the_conversations_1	I'm sorting them by who's speaking,
+s04_move_the_conversations_2	one file for each side, in a folder.
+s04_move_the_conversations_3	A captain's lines go with her side.
+s04_move_the_conversations_4	That's a habit, not a rule.
+s04_move_the_conversations_5	And here's rule two.
+s04_move_the_conversations_6	Three files, one line, with commas.
+s04_move_the_conversations_7	Don't give each file a line of its own.
+s04_move_the_conversations_8	If you do, the game reads only the last,
+s04_move_the_conversations_9	and lint doesn't say a word.
+s05_three_warnings_that_are_wron_0	Now lint, and it's not clean.
+s05_three_warnings_that_are_wron_1	Three warnings, and they're all about one word.
+s05_three_warnings_that_are_wron_2	Remember the signal from Lecture Seven.
+s05_three_warnings_that_are_wron_3	An answer sends it, and a story beat waits for it.
+s05_three_warnings_that_are_wron_4	Those two are in different files now,
+s05_three_warnings_that_are_wron_5	and today, lint reads signals one file at a time.
+s05_three_warnings_that_are_wron_6	So it tells each file the other half is missing, and it isn't.
+s05_three_warnings_that_are_wron_7	The game reads everything into one universe before it runs.
+s05_three_warnings_that_are_wron_8	I'd rather show you this than hide it.
+s05_three_warnings_that_are_wron_9	For this lecture, done means these three and no others.
+s06_don_t_do_it_by_halves_0	You might think, I'll leave the miners' call in the main file, next to the beat.
+s06_don_t_do_it_by_halves_1	That's rule three, and it doesn't help.
+s06_don_t_do_it_by_halves_2	A chapter reads from files, or it holds records.
+s06_don_t_do_it_by_halves_3	Do both, and the game's happy,
+s06_don_t_do_it_by_halves_4	but lint gets five different warnings, also wrong.
+s06_don_t_do_it_by_halves_5	So it's all in, or all out.
+s06_don_t_do_it_by_halves_6	If you really want a clean lint,
+s06_don_t_do_it_by_halves_7	leave the dialogue chapter whole and split only the jobs.
+s07_a_voice_from_anywhere_0	One new thing for the crew.
+s07_a_voice_from_anywhere_1	A captain is hailed at a station.
+s07_a_voice_from_anywhere_2	A member of the cast doesn't need one.
+s07_a_voice_from_anywhere_3	This is the relay's duty voice.
+s07_a_voice_from_anywhere_4	It has a face, a color,
+s07_a_voice_from_anywhere_5	and a scene, which is the record that speaks for it.
+s07_a_voice_from_anywhere_6	The scene goes in a dialogue file, like any other.
+s07_a_voice_from_anywhere_7	Notice there are no guards.
+s07_a_voice_from_anywhere_8	The cast keeps no standing,
+s07_a_voice_from_anywhere_9	so use them for what a crew should always be able to find out.
+s08_lore_0	And one more file, called exactly lore dot a m d.
+s08_lore_1	There are no fences in this one.
+s08_lore_2	A heading is a page,
+s08_lore_3	and the words under it are what the crew reads.
+s08_lore_4	The crew's handheld has a Library,
+s08_lore_5	and this file becomes a chapter in it.
+s08_lore_6	Put in what somebody who lives here would know.
+s08_lore_7	Keep the secrets of your story out.
+s09_print_the_world_0	Now for the reward.
+s09_print_the_world_1	s b s docs, the folder, a title,
+s09_print_the_world_2	and I ask for all four editions.
+s09_print_the_world_3	The prose one is the book.
+s09_print_the_world_4	The catalog sorts everything by kind.
+s09_print_the_world_5	The screenplay is only the conversations.
+s09_print_the_world_6	Read one aloud. It's the best test there is.
+s09_print_the_world_7	And the bible is the plot.
+s09_print_the_world_8	Look at this beat.
+s09_print_the_world_9	It knows the call leads here, across the two files.
+s09_print_the_world_10	Then there's the website.
+s09_print_the_world_11	One page for each file, a search box,
+s09_print_the_world_12	and every answer is a link to where it goes.
+s09_print_the_world_13	Zip the folder and send it to whoever's writing with you.
+s10_still_the_same_game_0	And the game is the same game.
+s10_still_the_same_game_1	There's the same station, with the same buttons.
+s10_still_the_same_game_2	The levy comes from one file now, and the jobs from another.
+s10_still_the_same_game_3	Here's the Library, with my pages in it.
+s10_still_the_same_game_4	So, a last word about lint.
+s10_still_the_same_game_5	After a split, it's noisier,
+s10_still_the_same_game_6	and it misses a couple of things it used to catch.
+s10_still_the_same_game_7	The list on the page is longer today for that reason.
+s11_your_turn_0	Now it's your turn.
+s11_your_turn_1	Split your universe, and account for every warning lint gives you.
+s11_your_turn_2	Write a voice anyone can ask for directions,
+s11_your_turn_3	and four pages of lore.
+s11_your_turn_4	Then print the screenplay, and read one conversation out loud.
+s11_your_turn_5	Change a line because of what you heard.
+s11_your_turn_6	Next time, the crew gets off the ship.

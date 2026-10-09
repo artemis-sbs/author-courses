@@ -1,0 +1,48 @@
+// The jobs of the Kestrel Verge. This file is read into the Jobs chapter of
+// kestrel_verge.amd. Each record here starts with ONE hash.
+
+# [Patrol](patrol)
+---
+Tier: 2
+Done when: destroy 3 enemies
+Reward: 200 credits
+---
+Sweep a system and clear whatever is hunting in it.
+
+# [Escort](escort)
+---
+Done when: reach 3, 1
+Reward: 250 credits
+---
+See a freighter safely to its destination.
+
+# [Salvage](salvage)
+---
+Done when: recover 2 tech
+Reward: 150 credits, earns hollin selfish 20
+---
+Recover what is worth recovering, and do not ask where it came from.
+
+# [Wreck Survey](survey)
+---
+Done when: scan 1 derelict
+Reward: 220 credits
+---
+The Assembly wants every dead hull in the Verge on its books. Find one and scan it.
+
+# [Relay Run](relay_run)
+---
+Done when: reach 0, 0
+Fails when: 10 minutes
+Reward: 180 credits
+Penalty: 60 credits
+---
+Sealed tallies for Kestrel Relay. Carry them home and the Assembly pays on arrival.
+
+# [Clear the Lanes](strike)
+---
+Tier: 3
+Done when: destroy 6 enemies
+Reward: 600 credits
+---
+The Compact does not ask this of strangers. Six hulls, and the lanes stay open a season.

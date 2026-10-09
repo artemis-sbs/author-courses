@@ -1,0 +1,85 @@
+// What the Hollin Compact and its people say. This file is read into the Dialogue chapter of
+// kestrel_verge.amd. Each record here starts with ONE hash.
+
+# [Hollin Hail](hollin_hail)
+---
+Speaker: hollin
+When: comms
+---
+%{standing >= 20} Kestrel Relay knows your ship, captain. What do you need?
+%{standing < 20} Hollin Compact. State your business, captain.
+
+- [Pay the relay levy](hollin_levy) ; costs 100 credits, earns hollin honest 20, earns hollin generous 20
+- [Call the levy a racket](hollin_cold) ; earns hollin selfish 20
+- [Sign off](hollin_bye)
+
+# [The Levy](hollin_levy)
+---
+Speaker: hollin
+---
+% Paid and entered. The relay stays lit another month, and we know who lit it.
+
+# [A Cold Answer](hollin_cold)
+---
+Speaker: hollin
+---
+% Then fly without it, and see how far the light reaches.
+
+# [Hollin Out](hollin_bye)
+---
+Speaker: hollin
+---
+% Hollin out.
+
+# [Edda Brake](edda_hail)
+---
+Speaker: edda
+When: comms
+---
+%{standing >= 20} Captain. The kettle is on. What do you need to know?
+%{standing < 20} Warden Brake, Kestrel Relay. Keep it short. I have a lamp to tend.
+
+- [Give her the news from down the lanes](edda_news) ; earns edda honest 20, earns edda kind 20
+- [Ask who keeps the Gleaners' books](edda_tip) if standing >= 20
+- [Sign off](edda_bye)
+
+# [News](edda_news)
+---
+Speaker: edda
+---
+% Thirty years, and you are the first to stop and tell me anything. Come back when you want something.
+
+# [The Tallyman](edda_tip)
+---
+Speaker: edda
+---
+% Sable Orrin. She was Compact once. Find her at the breaking yard, and settle up before you ask her for anything.
+
+# [Edda Out](edda_bye)
+---
+Speaker: edda
+---
+% Mind the lanes, captain.
+
+# [Kestrel Traffic](traffic_hail)
+---
+Speaker: kestrel_traffic
+When: comms
+---
+% Kestrel Traffic. The lamp is lit and the lanes are quiet. Go ahead.
+% Kestrel Traffic. You are faint, captain, but we have you.
+
+- [Ask where the work is](traffic_work)
+- [Sign off](traffic_bye)
+
+# [Where the Work Is](traffic_work)
+---
+Speaker: kestrel_traffic
+---
+% The Compact hires at the relay. The Assembly hires at the Assay Office, three east and one south. Nobody sane hires from the Gleaners.
+
+# [Traffic Out](traffic_bye)
+---
+Speaker: kestrel_traffic
+---
+% Kestrel Traffic, listening.

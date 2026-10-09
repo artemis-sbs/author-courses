@@ -1,0 +1,62 @@
+// What the Gleaners and their people say. This file is read into the Dialogue chapter of
+// kestrel_verge.amd. Each record here starts with ONE hash.
+
+# [Gleaner Hail](gleaner_hail)
+---
+Speaker: gleaners
+When: comms
+---
+%{standing >= 20} The captain with the nerve. Talk.
+%{standing < 20} You are standing in our yard. Explain that.
+
+- [Tell them you go where you like](gleaner_nerve) ; earns gleaners fearsome 35
+- [Back away](gleaner_bye) ; earns gleaners cowardly 35
+
+# [Nerve](gleaner_nerve)
+---
+Speaker: gleaners
+---
+% Ha. Most of them beg. We will remember the ship that did not.
+
+# [Gleaners Out](gleaner_bye)
+---
+Speaker: gleaners
+---
+% Run along, then.
+
+# [Sable Orrin](sable_hail)
+---
+Speaker: sable
+When: comms
+---
+%{standing >= -20} Orrin. I keep the yard's books. If you owe, pay. If you do not, be brief.
+%{standing < -20} You. There is a page with your ship's name on it, captain, and it does not balance.
+
+- [Pay the yard's docking toll](sable_paid) ; costs 100 credits, earns sable honest 20, earns sable by-the-book 20
+- [Tell her to bill the Compact](sable_crossed) ; earns sable liar 25, earns sable resourceful 25
+- [Ask who was aboard the Tern](sable_tip) if standing >= 20
+- [Sign off](sable_bye)
+
+# [Paid](sable_paid)
+---
+Speaker: sable
+---
+% Entered. You would be surprised how few captains understand that this is all I want.
+
+# [Crossed](sable_crossed)
+---
+Speaker: sable
+---
+% The Compact does not pay our tolls. I will write that down, with your name beside it.
+
+# [Forty-One](sable_tip)
+---
+Speaker: sable
+---
+% Forty-one aboard when we found her, and alive. That is all the page says. It is more than the yard would thank me for.
+
+# [Sable Out](sable_bye)
+---
+Speaker: sable
+---
+% Close the channel behind you.
