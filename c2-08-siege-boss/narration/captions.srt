@@ -1,219 +1,407 @@
 1
 00:00:00,000 --> 00:00:02,174
-This is the Corsair Queen.
+This is the Corsair Queen,
 
 2
 00:00:02,624 --> 00:00:06,102
-She is not in the game you downloaded.
+and she isn't in the game you installed.
 
 3
-00:00:06,552 --> 00:00:12,639
-I wrote her this morning, in one small text file, without writing any code.
+00:00:07,002 --> 00:00:11,350
+I wrote her this morning, in one small text file,
 
 4
-00:00:13,089 --> 00:00:17,437
-In the next fourteen minutes you will write your own.
+00:00:11,800 --> 00:00:15,713
+and I didn't write any code to do it.
 
 5
-00:00:18,637 --> 00:00:21,246
-In Siege, raiders attack your starbases.
+00:00:17,513 --> 00:00:20,122
+By the end of this lecture,
 
 6
-00:00:21,696 --> 00:00:28,217
-If you choose a boss, then when the raiders are nearly beaten, something worse arrives.
+00:00:20,572 --> 00:00:24,920
+you'll have a boss of your own in that list.
 
 7
-00:00:28,667 --> 00:00:31,276
-Four bosses come with the game.
+00:00:26,120 --> 00:00:29,598
+You played Siege in the very first lecture.
 
 8
-00:00:31,726 --> 00:00:35,639
-Each one is a single file in a folder.
+00:00:30,498 --> 00:00:32,672
+Raiders come at your starbases,
 
 9
-00:00:36,089 --> 00:00:40,002
-Add a file, and you have added a boss.
+00:00:33,122 --> 00:00:37,035
+and you win when the last raider is gone.
 
 10
-00:00:41,202 --> 00:00:42,941
-Here is the Warlord.
+00:00:37,935 --> 00:00:40,543
+Now, if you choose a boss,
 
 11
-00:00:43,391 --> 00:00:49,043
-Two records, the shape you already know: a heading, a fence, a body.
+00:00:40,993 --> 00:00:44,907
+something worse arrives when the raiders are nearly beaten.
 
 12
-00:00:49,493 --> 00:00:52,102
-The first record is the boss.
+00:00:46,707 --> 00:00:49,315
+Four bosses come with the game,
 
 13
-00:00:52,552 --> 00:00:56,030
-Boss says what kind of record it is.
+00:00:49,765 --> 00:00:54,113
+and each one is a single file in a folder.
 
 14
-00:00:56,480 --> 00:01:03,002
-Trigger and Low say when she arrives: when a quarter of the raiders are left.
+00:00:55,013 --> 00:00:59,361
+So if you add a file, you've added a boss.
 
 15
-00:01:03,452 --> 00:01:06,930
-Flies and Fleets say what comes with her.
+00:01:00,561 --> 00:01:03,604
+Here's the Warlord, and it's two records,
 
 16
-00:01:07,380 --> 00:01:11,728
-Difficulty: +1 makes her one step harder than the game.
+00:01:04,054 --> 00:01:06,663
+in the shape you already know:
 
 17
-00:01:12,178 --> 00:01:16,961
-Named is her flagship: a name, then which ship it is.
+00:01:07,113 --> 00:01:10,157
+a heading, a fence, and a body.
 
 18
-00:01:18,161 --> 00:01:20,770
-Never edit the Warlord. Copy it.
+00:01:11,057 --> 00:01:14,100
+The first record is the boss herself.
 
 19
-00:01:21,220 --> 00:01:23,828
-And not into the game's folder.
+00:01:15,000 --> 00:01:19,348
+There's one word alone on a line, the word Boss,
 
 20
-00:01:24,278 --> 00:01:29,061
-The game's folder is replaced every time the game is updated.
+00:01:19,798 --> 00:01:23,276
+which says what kind of record this is.
 
 21
-00:01:29,511 --> 00:01:32,120
-Yours is here: common data, bosses.
+00:01:24,176 --> 00:01:27,220
+Trigger and Low say when she arrives:
 
 22
-00:01:32,570 --> 00:01:34,309
-The Siege reads both.
+00:01:27,670 --> 00:01:31,148
+when a quarter of the raiders are left.
 
 23
-00:01:34,759 --> 00:01:39,107
-Lowercase, underscores, no spaces, and keep .amd on the end.
+00:01:32,048 --> 00:01:35,526
+Flies and Fleets say what comes with her,
 
 24
-00:01:40,307 --> 00:01:43,350
-Square brackets are what the crew reads.
+00:01:35,976 --> 00:01:38,150
+and Named is her flagship:
 
 25
-00:01:43,800 --> 00:01:48,583
-Round brackets are the key; match your file name." "Two traps.
+00:01:38,600 --> 00:01:42,078
+a name, and then which ship it is.
 
 26
-00:01:49,033 --> 00:01:55,554
-Lint catches both, and you will see that in a minute, but know them now.
+00:01:43,878 --> 00:01:46,487
+The second record is a quest,
 
 27
-00:01:56,004 --> 00:02:05,135
-First: if you forget to change the name in square brackets, you get two Warlords and the list shows only one.
+00:01:46,937 --> 00:01:50,850
+and you wrote plenty of those in Class 1.
 
 28
-00:02:05,585 --> 00:02:08,628
-Second: the flagship's name is one word.
+00:01:51,750 --> 00:01:54,793
+It belongs to the Siege's own mission,
 
 29
-00:02:09,078 --> 00:02:16,035
-Type 'Iron Duke' and the game reads a ship called Iron, of a kind called Duke.
+00:01:55,243 --> 00:01:57,852
+the crew needs it to win,
 
 30
-00:02:16,485 --> 00:02:18,659
-There is no such ship.
+00:01:58,302 --> 00:02:03,085
+and it's done when the Siege says every raider is gone.
 
 31
-00:02:19,859 --> 00:02:22,902
-Now the part you are here for.
+00:02:04,285 --> 00:02:06,893
+Don't edit the Warlord. Copy it.
 
 32
-00:02:23,352 --> 00:02:25,526
-One line for her entrance.
+00:02:07,793 --> 00:02:12,141
+And don't paste it back into the game's own folder,
 
 33
-00:02:25,976 --> 00:02:34,672
-Then the objective: a new name, a new key, what it pays, and what you want the crew to read.
+00:02:12,591 --> 00:02:17,374
+because that folder is replaced every time the game is updated.
 
 34
-00:02:35,122 --> 00:02:38,600
-Leave the five lines in between alone today.
+00:02:18,274 --> 00:02:20,013
+Yours goes here instead:
 
 35
-00:02:39,050 --> 00:02:44,702
-Plain quotes and plain hyphens only; the game cannot draw the curly kind.
+00:02:20,463 --> 00:02:23,941
+common data, and then a folder called bosses.
 
 36
-00:02:45,902 --> 00:02:46,902
-Two checks.
+00:02:25,741 --> 00:02:27,915
+The Siege reads both folders,
 
 37
-00:02:47,352 --> 00:02:49,526
-No squiggles in the editor.
+00:02:28,365 --> 00:02:33,583
+so a file in either one is a boss in the list.
 
 38
-00:02:49,976 --> 00:02:56,498
-Then lint, pointed at my own folder, so it checks my bosses and nothing else.
+00:02:34,483 --> 00:02:36,222
+For the file's name,
 
 39
-00:02:56,948 --> 00:02:59,122
-You want the word 'clean'.
+00:02:36,672 --> 00:02:40,150
+use small letters and underscores, with no spaces.
 
 40
-00:02:59,572 --> 00:03:10,007
-Here is what it says if I put 'Iron Duke' back: it tells me what the game will read, and what to write instead.
+00:02:41,350 --> 00:02:45,263
+Before I change anything, I'm going to run lint,
 
 41
-00:03:11,207 --> 00:03:15,120
-Start the server, choose Siege, open the Boss list.
+00:02:45,713 --> 00:02:48,322
+pointed at my own bosses folder.
 
 42
-00:03:15,570 --> 00:03:16,874
-There she is.
+00:02:49,222 --> 00:02:52,265
+And it already has something to say.
 
 43
-00:03:17,324 --> 00:03:26,020
-If she is not, the file is in the wrong folder, or the mission was already running when you saved.
+00:02:53,165 --> 00:02:56,209
+My copy still has the Warlord's name,
 
 44
-00:03:26,470 --> 00:03:29,948
-The list is read when the mission starts.
+00:02:56,659 --> 00:02:59,702
+and the list offers bosses by name,
 
 45
-00:03:31,148 --> 00:03:37,235
-At twenty-five percent you would fight for a long time before she shows up.
+00:03:00,152 --> 00:03:04,500
+so only one of the two can be in it.
 
 46
-00:03:37,685 --> 00:03:40,293
-For testing, set it to ninety.
+00:03:06,300 --> 00:03:11,083
+It's a true warning, and it's the first thing we'll fix.
 
 47
-00:03:40,743 --> 00:03:43,787
-Now she comes after the first kills.
+00:03:12,283 --> 00:03:15,761
+The square brackets hold what the crew reads,
 
 48
-00:03:44,237 --> 00:03:51,193
-There is the Morrigan, there are her escorts, and there is your objective, in your words.
+00:03:16,211 --> 00:03:19,254
+and the round brackets hold the key,
 
 49
-00:03:51,643 --> 00:03:55,557
-Put Low back to twenty-five when you are done.
+00:03:19,704 --> 00:03:23,617
+which I make the same as my file's name.
 
 50
-00:03:56,757 --> 00:03:59,365
-This is why she lives here.
+00:03:24,517 --> 00:03:26,257
+Next is her flagship,
 
 51
-00:03:59,815 --> 00:04:03,728
-Update the game and this folder is left alone.
+00:03:26,707 --> 00:03:31,054
+and I'm only changing the first word, the ship's name.
 
 52
-00:04:04,178 --> 00:04:12,439
-It is still one file on one computer, so keep a copy, the way you would with a manuscript.
+00:03:32,854 --> 00:03:34,593
+There's one trap here.
 
 53
-00:04:12,889 --> 00:04:16,802
-Now make a second boss, from your own story.
+00:03:35,493 --> 00:03:38,972
+A flagship's name has to be one word.
 
 54
-00:04:17,252 --> 00:04:20,730
-The page has the steps and a checklist.
+00:03:39,872 --> 00:03:43,350
+If I type Iron Duke, as two words,
 
 55
-00:04:21,180 --> 00:04:23,789
+00:03:43,800 --> 00:03:46,843
+the game reads a ship called Iron,
+
+56
+00:03:47,293 --> 00:03:49,467
+of a kind called Duke,
+
+57
+00:03:49,917 --> 00:03:52,961
+and there's no such kind of ship.
+
+58
+00:03:53,861 --> 00:03:56,035
+Lint does catch that one,
+
+59
+00:03:56,485 --> 00:04:00,398
+and it shows you the line to write instead.
+
+60
+00:04:01,598 --> 00:04:04,641
+Now for the part you're here for.
+
+61
+00:04:05,541 --> 00:04:09,454
+Under the first fence goes one line about her.
+
+62
+00:04:10,354 --> 00:04:16,441
+That one's a note for you, and for anyone you give the file to,
+
+63
+00:04:16,891 --> 00:04:20,804
+because the game doesn't show it to the crew.
+
+64
+00:04:21,704 --> 00:04:23,443
+The objective is different,
+
+65
+00:04:23,893 --> 00:04:26,502
+since the crew does read that.
+
+66
+00:04:27,402 --> 00:04:31,315
+So it gets a new name, a new key,
+
+67
+00:04:31,765 --> 00:04:36,113
+what it pays, and a sentence in your own voice.
+
+68
+00:04:37,913 --> 00:04:41,826
+Leave the five lines in the middle alone today,
+
+69
+00:04:42,276 --> 00:04:45,754
+and keep the word credits after the number,
+
+70
+00:04:46,204 --> 00:04:47,943
+or nothing gets paid.
+
+71
+00:04:48,843 --> 00:04:51,017
+Then save, run lint again,
+
+72
+00:04:51,467 --> 00:04:54,076
+and this time it says clean.
+
+73
+00:04:55,276 --> 00:05:01,363
+To see her, I start the game the way you have since Class 1,
+
+74
+00:05:01,813 --> 00:05:04,857
+but with Legendary Missions as the mission,
+
+75
+00:05:05,307 --> 00:05:09,654
+and with no map on the end of the line.
+
+76
+00:05:10,554 --> 00:05:14,033
+That leaves the server on the start screen.
+
+77
+00:05:14,933 --> 00:05:17,107
+Siege is on the left,
+
+78
+00:05:17,557 --> 00:05:23,209
+and on the right is the Options panel, with a line called Boss.
+
+79
+00:05:25,009 --> 00:05:28,922
+And there she is, under the game's own four.
+
+80
+00:05:29,822 --> 00:05:31,996
+If she's missing for you,
+
+81
+00:05:32,446 --> 00:05:35,054
+the file's in the wrong folder,
+
+82
+00:05:35,504 --> 00:05:39,852
+or the game was already running when you saved it.
+
+83
+00:05:41,052 --> 00:05:46,704
+At twenty-five percent, you'd fight for a long time before she showed up.
+
+84
+00:05:47,604 --> 00:05:51,083
+So for testing, I set Low to ninety.
+
+85
+00:05:51,983 --> 00:05:56,330
+Now she comes when one raider in ten is gone,
+
+86
+00:05:56,780 --> 00:05:59,824
+which here is after the second kill.
+
+87
+00:06:01,624 --> 00:06:04,667
+There's the Morrigan, with her two fleets,
+
+88
+00:06:05,117 --> 00:06:09,900
+and there's my objective in the Quest Log, in my words.
+
+89
+00:06:10,800 --> 00:06:12,974
+Notice that nothing announced her.
+
+90
+00:06:13,424 --> 00:06:17,772
+The game doesn't tell the crew a boss has arrived,
+
+91
+00:06:18,222 --> 00:06:22,570
+and we'll do something about that later in the class.
+
+92
+00:06:23,470 --> 00:06:25,209
+When you've finished testing,
+
+93
+00:06:25,659 --> 00:06:27,833
+put Low back to twenty-five.
+
+94
+00:06:29,033 --> 00:06:32,076
+This is why she lives out here.
+
+95
+00:06:32,976 --> 00:06:35,150
+You can update the game,
+
+96
+00:06:35,600 --> 00:06:38,209
+and this folder is left alone.
+
+97
+00:06:39,109 --> 00:06:42,587
+It's still one file on one computer, though,
+
+98
+00:06:43,037 --> 00:06:45,646
+so keep a copy somewhere else,
+
+99
+00:06:46,096 --> 00:06:49,139
+the way you would with a manuscript.
+
+100
+00:06:50,939 --> 00:06:56,591
+And to give her to a friend, you send them that one file.
+
+101
+00:06:57,491 --> 00:07:01,404
+Now make a second boss, from your own story.
+
+102
+00:07:02,304 --> 00:07:04,913
 Next time, we change the numbers.

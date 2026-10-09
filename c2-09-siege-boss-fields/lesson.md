@@ -20,7 +20,8 @@ You will write no code. You change six lines in one file.
 
 ## Before you start
 
-- `corsair_queen.amd` from Lecture 8, in `data\missions\common_data\bosses`.
+- `corsair_queen.amd` as Lecture 8 left it, in `data\missions\common_data\bosses`. A copy
+  is in Lecture 8's `example\` folder.
 - `sbs lint common_data\bosses` says `clean`.
 - `Low:` is back at `25%`, the way Lecture 8 left it.
 
@@ -88,23 +89,25 @@ The exercise at the end has you build one. For the rest of the lesson, stay with
 `Low:` is a share of the raiders. The game remembers the largest number of raiders it has
 seen. When the number left is that share or less, she arrives.
 
-A Siege at difficulty 5 opens with 12 to 20 raiders. With 20:
+A Siege at difficulty 5 opens with 15 to 19 raiders. With 16:
 
 | You write | She arrives when this many are left |
 |---|---|
-| `Low: 25%` | 5 |
-| `Low: 40%` | 8 |
-| `Low: 90%` | 18 |
-| `Low: 100%` | 20. That is all of them, so she arrives at once |
+| `Low: 25%` | 4 |
+| `Low: 40%` | 6 |
+| `Low: 90%` | 14 |
+| `Low: 100%` | 16. That is all of them, so she arrives at once |
 
 Three things to know.
 
-- **Write the percent sign.** `Low: 40` is not forty percent. The game reads it as forty
-  times the raiders, and she arrives at once.
+- **Write the percent sign.** The game reads `Low: 40` as 40% too, but write the sign:
+  every boss file you will read has it.
+- **She comes when raiders are destroyed, not when time passes.** If nobody destroys a
+  raider, she never arrives.
 - **The game looks every four seconds.** She arrives up to four seconds after the count
   is reached, not on the same instant.
 - **A low number is a long wait.** At `Low: 10%` the crew must destroy nine raiders in
-  ten before she appears.
+  ten before she appears. With sixteen raiders, that is when one is left.
 
 Leave your line at `Low: 100%` for now.
 
@@ -299,16 +302,18 @@ in the list, open that log.
 
 ## Step 9 - Play it
 
-1. Start the game as the server with LegendaryMissions. Choose the **Siege** map.
-2. Under **Main**, set **Difficulty** to 5 and choose Corsair Queen in the **Boss** list.
-3. Start the game.
+1. Start the game with `sbs run server,helm,weapons -m LegendaryMissions`, as in
+   Lecture 8. Stay on **Siege**.
+2. In the **Options** panel, set **Difficulty** to 5 and choose Corsair Queen on the
+   **Boss** line.
+3. Press **Start Mission**.
 
 With `Low: 100%` she arrives about four seconds in. Count what came:
 
 - two named ships, **Morrigan** and **Badb**,
 - three new fleets, all of one race,
 - pirate fleets of one to three ships each, or Kralien fleets of four to six,
-- the objective **Sink the Morrigan** in the crew's quest list.
+- the objective **Sink the Morrigan** in the Quest Log.
 
 Start the mission again and look a second time. Over many games, about three arrivals in
 four are pirate.
@@ -387,7 +392,7 @@ A line you leave out has a meaning too:
 
 | What you see | Likely cause |
 |---|---|
-| She arrives the moment the game starts | `Low:` has no percent sign, or it is still `100%` from testing |
+| She arrives the moment the game starts | `Low:` is still `100%` from testing |
 | She never arrives | She is not chosen in the Boss list, or `Low:` is small and the crew has not destroyed enough raiders |
 | The named ships arrive with no fleets | The race on `Flies:` is misspelled, plural, or missing its percent sign or comma. Or `Fleets:` is misspelled, missing, or outside the fence |
 | The fleets arrive with no named ship | `Named:` has one word, or a comma between the name and the ship key |
@@ -395,7 +400,7 @@ A line you leave out has a meaning too:
 | Your boss is not in the Boss list | One of her lines cannot be read: `Trigger:`, `Low:`, `Fleets:`, `Wave:` or `Difficulty:`. `mast.runtime.log` names the file and the line |
 | Every arrival is the same race | That is the rule: one roll for all the fleets. If it is the same race every game, one race on `Flies:` has no percent sign |
 | A change you saved did nothing | The mission was already running. Boss files are read when the mission starts |
-| `sbs lint common_data\bosses` warns about every line of the fence | Your copy of the tools is older than this lesson. Update with `sbs update` |
+| Lint warns about every line of the first fence | Your copy of the game or of `sbs` is older than this course. Let the store update the game to 1.4.0, and type `sbs update` |
 
 ## Exercise
 
@@ -422,7 +427,8 @@ Difficulty: 9
 ```
 
 Delete its `Low:` and `Named:` lines, and its objective. A `continuous` boss uses none
-of them. Before you start the game, type `1` in **Time Limit** in the map's settings.
+of them. Before you start the mission, type `1` on the **Time Limit** line of the
+**Options** panel.
 Then play it: one Skaraan ship arrives every 20 seconds. When the minute runs out the
 waves stop and the crew wins.
 
@@ -447,7 +453,7 @@ card of MAST for a boss that does something no line can say.
 - "Writing a Siege boss" in the LegendaryMissions documentation: the reference table for
   the boss fields. It does not yet say three things this page does: the mix on `Flies:`
   is rolled once for all the fleets, a `continuous` boss ignores `Low:`, `Named:` and its
-  objectives, and a number written as a word breaks the file.
+  objectives, and a value the game cannot read leaves the boss out of the Boss list.
 - The four shipped bosses in `LegendaryMissions\maps\bosses`. Read `ragnarok.amd` for two
   named ships and `continuous.amd` for a wave boss.
 - `data\shipData.yaml`: every ship in the game. Search it for `"key":` to find more ship

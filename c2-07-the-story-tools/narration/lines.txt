@@ -1,0 +1,104 @@
+s01_cold_open_0	Your story has people in it now, and calls, and answers that start jobs.
+s01_cold_open_1	It's getting hard to see all of it at once.
+s01_cold_open_2	So today you don't learn a new kind of record.
+s01_cold_open_3	You learn four ways to look at the ones you have,
+s01_cold_open_4	and one habit that lets the tool write your to-do list for you.
+s02_why_a_file_isn_t_enough_0	Thirty-one records, and twelve places where one of them points at another.
+s02_why_a_file_isn_t_enough_1	You can't hold all of that in your head any more,
+s02_why_a_file_isn_t_enough_2	and it's only going to grow.
+s02_why_a_file_isn_t_enough_3	So I'll ask the tool a question.
+s02_why_a_file_isn_t_enough_4	It's lint, with one more word on the end: missing.
+s02_why_a_file_isn_t_enough_5	And it says nothing's missing,
+s02_why_a_file_isn_t_enough_6	which means every pointer lands on a record that exists.
+s02_why_a_file_isn_t_enough_7	Keep that answer in mind,
+s02_why_a_file_isn_t_enough_8	because in a few minutes we're going to break it on purpose.
+s03_a_note_on_a_record_0	A quest's description is written for the crew,
+s03_a_note_on_a_record_1	and it tells them what to do.
+s03_a_note_on_a_record_2	It doesn't say why your story needs that step,
+s03_a_note_on_a_record_3	and a note does.
+s03_a_note_on_a_record_4	A note is one line, right under the heading,
+s03_a_note_on_a_record_5	that starts with an equals sign and a space.
+s03_a_note_on_a_record_6	So this one says what the mystery is for,
+s03_a_note_on_a_record_7	and this one marks the end of act one.
+s03_a_note_on_a_record_8	The crew never sees a note.
+s03_a_note_on_a_record_9	You do, every time you hold the mouse over a pointer to that record.
+s03_a_note_on_a_record_10	And don't forget the space after the equals sign,
+s03_a_note_on_a_record_11	because without it the line isn't a note at all.
+s04_three_views_0	Now look at the top right corner of the editor,
+s04_three_views_1	where the add-on has put a row of small icons.
+s04_three_views_2	The first one is the outline:
+s04_three_views_3	every record in a list, grouped by section, with a box to search in.
+s04_three_views_4	The second is the timeline,
+s04_three_views_5	and that's the one I use most.
+s04_three_views_6	It has columns called beats,
+s04_three_views_7	and whatever's in beat two can't happen until something in beat one has.
+s04_three_views_8	The third is the graph,
+s04_three_views_9	which is a box for every record and an arrow for every pointer.
+s04_three_views_10	All three redraw while you type,
+s04_three_views_11	and clicking a record takes you to it in the file.
+s05_what_the_timeline_can_t_see_0	There's one thing you need to know before you trust it.
+s05_what_the_timeline_can_t_see_1	The timeline follows a reveal,
+s05_what_the_timeline_can_t_see_2	and it follows an answer that leads to another scene.
+s05_what_the_timeline_can_t_see_3	But it doesn't follow a call that a quest places,
+s05_what_the_timeline_can_t_see_4	and it doesn't follow what an answer starts.
+s05_what_the_timeline_can_t_see_5	So here's Tag the Hulk in beat one,
+s05_what_the_timeline_can_t_see_6	even though that job only starts when Comms says, we'll tag her.
+s05_what_the_timeline_can_t_see_7	Read the timeline for the chain of your quests,
+s05_what_the_timeline_can_t_see_8	and for who calls whom, read the printed script, which is coming up.
+s06_plan_act_two_by_pointing_at__0	Here's the habit I want you to have.
+s06_plan_act_two_by_pointing_at__1	Act two is three ideas:
+s06_plan_act_two_by_pointing_at__2	the hulk is worth something, the crew owns her for an hour,
+s06_plan_act_two_by_pointing_at__3	and a Guild assessor called Vane wants to know her price.
+s06_plan_act_two_by_pointing_at__4	I'm not going to write any of that yet.
+s06_plan_act_two_by_pointing_at__5	I'm going to point at it.
+s06_plan_act_two_by_pointing_at__6	So this step reveals a quest called claim, which doesn't exist.
+s06_plan_act_two_by_pointing_at__7	This sentence has a link in it,
+s06_plan_act_two_by_pointing_at__8	two square brackets around a key,
+s06_plan_act_two_by_pointing_at__9	for a person who doesn't exist.
+s06_plan_act_two_by_pointing_at__10	And this answer leads to a scene that doesn't exist either.
+s07_the_to_do_list_0	Now I ask the same question as before.
+s07_the_to_do_list_1	And this time I get three things, referenced but not written yet.
+s07_the_to_do_list_2	For each one it tells me what's missing,
+s07_the_to_do_list_3	which record points at it, and on which line.
+s07_the_to_do_list_4	That's my writing list for act two,
+s07_the_to_do_list_5	and I didn't have to keep it anywhere.
+s07_the_to_do_list_6	The fourth icon in the editor shows the same list,
+s07_the_to_do_list_7	and clicking a row takes me to the line.
+s08_write_them_and_cut_one_0	So I write them one at a time,
+s08_write_them_and_cut_one_1	and ask again after each.
+s08_write_them_and_cut_one_2	There are two left, then one,
+s08_write_them_and_cut_one_3	and then nothing's missing at all.
+s08_write_them_and_cut_one_4	Now the other direction.
+s08_write_them_and_cut_one_5	When you cut a scene, don't delete it.
+s08_write_them_and_cut_one_6	Put a slash and a star on a line above it,
+s08_write_them_and_cut_one_7	and a star and a slash on a line below,
+s08_write_them_and_cut_one_8	and it's out of the mission and still in your file.
+s08_write_them_and_cut_one_9	Then ask what's missing.
+s08_write_them_and_cut_one_10	One answer still leads to the scene I cut,
+s08_write_them_and_cut_one_11	and if the crew picks it, the call just ends,
+s08_write_them_and_cut_one_12	and the story stops there.
+s08_write_them_and_cut_one_13	So a cut has two halves,
+s08_write_them_and_cut_one_14	and the list tells you the second one.
+s09_print_it_four_ways_0	In Class 1 you printed one document.
+s09_print_it_four_ways_1	Now print all four.
+s09_print_it_four_ways_2	The prose one is your story as a book, with your notes beside it.
+s09_print_it_four_ways_3	The screenplay is every call,
+s09_print_it_four_ways_4	with who speaks, what they say,
+s09_print_it_four_ways_5	and what each answer does.
+s09_print_it_four_ways_6	Read that one aloud.
+s09_print_it_four_ways_7	But remember that where you wrote three takes, it prints three lines,
+s09_print_it_four_ways_8	and she only ever says one of them.
+s09_print_it_four_ways_9	The catalog is for looking things up,
+s09_print_it_four_ways_10	and the bible has the same beats as the timeline,
+s09_print_it_four_ways_11	with the same two gaps.
+s10_play_act_two_0	And then you play it, because a list isn't a game.
+s10_play_act_two_1	The link in my sentence is printed as his name, Assessor Vane.
+s10_play_act_two_2	On the second call there's my new answer,
+s10_play_act_two_3	and it leads to Quill's new scene,
+s10_play_act_two_4	which has the answer that finishes the report.
+s10_play_act_two_5	The Claim appears in the log,
+s10_play_act_two_6	and a minute later it pays.
+s10_play_act_two_7	Your notes aren't on any console.
+s10_play_act_two_8	They were only ever for you.
+s10_play_act_two_9	Next time we leave this mission for a while,
+s10_play_act_two_10	and you write a boss.

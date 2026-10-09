@@ -1,91 +1,117 @@
-s01_cold_open_0	This is the Corsair Queen after today.
-s01_cold_open_1	The crew is told she is here.
-s01_cold_open_2	They have ten minutes to sink her flagship.
-s01_cold_open_3	There is a bonus for her second ship.
-s01_cold_open_4	And ninety seconds in, a third ship she was holding back.
-s01_cold_open_5	Three of those are lines you already know.
-s01_cold_open_6	The last is one card.
-s02_the_test_setting_0	Same as last time.
-s02_the_test_setting_1	Low one hundred percent, so she arrives four seconds in.
-s02_the_test_setting_2	We put the real number back at the end.
-s03_how_a_siege_ends_0	Before we change her story, read the Siege's own. Four quests.
-s03_how_a_siege_ends_1	Repel the Siege is the top: finish it and the game is won.
-s03_how_a_siege_ends_2	Break the Siege is required, and it is done when every raider is gone.
-s03_how_a_siege_ends_3	The other two are the ways to lose.
-s03_how_a_siege_ends_4	Now look at your objective.
-s03_how_a_siege_ends_5	Parent, siege mission.
-s03_how_a_siege_ends_6	That line hangs it on this tree.
-s03_how_a_siege_ends_7	Required true means one more thing the crew must finish before they win.
-s03_how_a_siege_ends_8	Leave Required off, and it is extra.
-s04_destroy_one_morrigan_0	Sink the Morrigan has never meant sink the Morrigan.
-s04_destroy_one_morrigan_1	It meant destroy everything.
-s04_destroy_one_morrigan_2	One line fixes it: done when, destroy one morrigan.
-s04_destroy_one_morrigan_3	Morrigan here is a role.
-s04_destroy_one_morrigan_4	Every named ship gets its own name, in small letters, as a role.
-s04_destroy_one_morrigan_5	And I add an objective line, the sentence the crew reads.
-s04_destroy_one_morrigan_6	Now the objective is done when she is, and the reward is paid right then.
-s04_destroy_one_morrigan_7	The game is not over yet: Break the Siege still wants every raider.
-s05_a_bonus_0	A second objective.
-s05_a_bonus_1	Two hashes, like the first.
-s05_a_bonus_2	Destroy one badb, three hundred credits.
-s05_a_bonus_3	And no Required line.
-s05_a_bonus_4	So it is a bonus: pay if they do it, win if they do not.
-s06_a_way_to_lose_0	Now a clock.
-s06_a_way_to_lose_1	Three lines, and they go together.
-s06_a_way_to_lose_2	Fails when, thirty seconds: a test number. Fatal true.
-s06_a_way_to_lose_3	And Lose, with the sentence the crew will read.
-s06_a_way_to_lose_4	I start the game and do nothing.
-s06_a_way_to_lose_5	Thirty seconds after she arrives... there. My sentence.
-s06_a_way_to_lose_6	Now the real number, ten minutes.
-s06_a_way_to_lose_7	One more thing.
-s06_a_way_to_lose_8	Nobody warns the crew about this clock.
-s06_a_way_to_lose_9	So I say it where they will read it: in the objective, and in the description.
-s07_another_ending_0	One more line an objective can have.
-s07_another_ending_1	Win, and a sentence.
-s07_another_ending_2	Now the game is won the moment she sinks, whatever else is flying.
-s07_another_ending_3	For some bosses that is the right ending.
-s07_another_ending_4	Not for this one, because of what is coming.
-s07_another_ending_5	So I take it out again.
-s07_another_ending_6	Required, Win, and the three lines for losing: those are your three endings.
-s08_a_hook_that_is_already_writt_0	Some things no line can say.
-s08_a_hook_that_is_already_writt_1	For those a boss has a hook: a named block of script that the Siege runs once, when she arrives.
-s08_a_hook_that_is_already_writt_2	One comes with the game.
-s08_a_hook_that_is_already_writt_3	Hook, biomech infestation.
-s08_a_hook_that_is_already_writt_4	And there they are.
-s08_a_hook_that_is_already_writt_5	I wrote no script.
-s08_a_hook_that_is_already_writt_6	But BioMechs are not her story.
-s09_her_own_hook_the_folder_the__0	Her own hook is a label, and a label lives in a mast file.
-s09_her_own_hook_the_folder_the__1	Here is the awkward part.
-s09_her_own_hook_the_folder_the__2	Her boss file is in common data, where updates never touch it.
-s09_her_own_hook_the_folder_the__3	A hook cannot go there.
-s09_her_own_hook_the_folder_the__4	It has to be inside LegendaryMissions.
-s09_her_own_hook_the_folder_the__5	So I make a folder of my own in there, corsair queen, and one file in it.
-s09_her_own_hook_the_folder_the__6	The name is exact: two underscores, init, two underscores, dot mast.
-s09_her_own_hook_the_folder_the__7	The game reads every file with that name.
-s10_the_reserve_0	Now the card does more.
-s10_the_reserve_1	Wait: you know this one.
-s10_the_reserve_2	Ten seconds for testing.
-s10_the_reserve_3	Then a guard: if the game is over, stop.
-s10_the_reserve_4	Then the ship line.
-s10_the_reserve_5	It is long, and it is one line.
-s10_the_reserve_6	You change four things: where, her name, her ship key, and her role, which is her name in small letters.
-s10_the_reserve_7	Last, finish a step: your other card, with a signal name.
-s11_check_it_play_it_0	Lint, clean. Compile, nothing.
-s11_check_it_play_it_1	Four seconds: she is here, and so is the sentence. Three objectives.
-s11_check_it_play_it_2	Ten seconds... the Nemain, and a fourth objective.
-s11_check_it_play_it_3	Now the mistake nothing catches.
-s11_check_it_play_it_4	One letter wrong in the Hook line.
-s11_check_it_play_it_5	Lint is happy.
-s11_check_it_play_it_6	Compile is happy.
-s11_check_it_play_it_7	And the game stops when she arrives.
-s11_check_it_play_it_8	So check that word by eye, every time.
-s12_real_numbers_and_keeping_it__0	Testing is over.
-s12_real_numbers_and_keeping_it__1	Forty percent, ninety seconds, and the note brought up to date.
-s12_real_numbers_and_keeping_it__2	One last thing, and it matters.
-s12_real_numbers_and_keeping_it__3	Her boss file is safe from updates.
-s12_real_numbers_and_keeping_it__4	Her hook is not: it is inside LegendaryMissions, and an update replaces that folder.
-s12_real_numbers_and_keeping_it__5	Then she is still in the list, and the game stops when she arrives.
-s12_real_numbers_and_keeping_it__6	So keep a copy of this folder outside, and put it back after every update.
-s13_your_turn_0	Your own boss now.
-s13_your_turn_1	An objective that means what it says, a bonus, a clock, an ending you chose, and one sentence when it arrives.
-s13_your_turn_2	Next time she gets a voice.
+s01_cold_open_0	Your boss arrives, and she has the right ships.
+s01_cold_open_1	But all she asks of the crew is, destroy everything,
+s01_cold_open_2	and she says nothing at all.
+s01_cold_open_3	Today she gets objectives of her own, a way to lose,
+s01_cold_open_4	and a third ship she's been holding back.
+s01_cold_open_5	Most of it is lines you already know,
+s01_cold_open_6	and one small part is a card.
+s02_how_a_siege_ends_0	First, read how a Siege ends,
+s02_how_a_siege_ends_1	because your objectives hang on it.
+s02_how_a_siege_ends_2	There are four quests in this file.
+s02_how_a_siege_ends_3	The top one wins the game when it's finished.
+s02_how_a_siege_ends_4	Under it is Break the Siege, which wants every raider gone,
+s02_how_a_siege_ends_5	and two more that lose the game.
+s02_how_a_siege_ends_6	Now look at your own objective.
+s02_how_a_siege_ends_7	It says its parent is that top quest.
+s02_how_a_siege_ends_8	So with Required on it,
+s02_how_a_siege_ends_9	it's one more thing the crew has to finish before they can win.
+s02_how_a_siege_ends_10	And without Required, it's a bonus.
+s03_make_it_mean_what_it_says_0	My objective is called Sink the Morrigan,
+s03_make_it_mean_what_it_says_1	but it's finished when every raider is gone.
+s03_make_it_mean_what_it_says_2	Let's make it honest.
+s03_make_it_mean_what_it_says_3	Done when, destroy one morrigan.
+s03_make_it_mean_what_it_says_4	That last word is a role,
+s03_make_it_mean_what_it_says_5	and the Siege gives every named ship its own name as a role, in small letters.
+s03_make_it_mean_what_it_says_6	So whatever you wrote on the Named line
+s03_make_it_mean_what_it_says_7	is a word you can use here.
+s04_a_bonus_and_a_way_to_lose_0	A second objective, for her second ship.
+s04_a_bonus_and_a_way_to_lose_1	It has no Required line,
+s04_a_bonus_and_a_way_to_lose_2	so it pays if they do it and it doesn't matter if they don't.
+s04_a_bonus_and_a_way_to_lose_3	After that comes a clock.
+s04_a_bonus_and_a_way_to_lose_4	Fails when, thirty seconds, which is a test number.
+s04_a_bonus_and_a_way_to_lose_5	Then Fatal, set to true,
+s04_a_bonus_and_a_way_to_lose_6	and a Lose line, with the sentence the crew reads when it's over.
+s04_a_bonus_and_a_way_to_lose_7	Use those three together.
+s04_a_bonus_and_a_way_to_lose_8	And then I play it and I don't touch anything,
+s04_a_bonus_and_a_way_to_lose_9	and half a minute after she arrives, the game is lost, in my words.
+s04_a_bonus_and_a_way_to_lose_10	Then I set the real limit, ten minutes,
+s04_a_bonus_and_a_way_to_lose_11	and I say so in the objective,
+s04_a_bonus_and_a_way_to_lose_12	because the game doesn't warn the crew as the time runs down.
+s05_a_hook_that_is_already_writt_0	Some things no line in a boss file can say,
+s05_a_hook_that_is_already_writt_1	and a ship that turns up later is one of them.
+s05_a_hook_that_is_already_writt_2	For those, a boss has one more line, called Hook.
+s05_a_hook_that_is_already_writt_3	It names a block of script,
+s05_a_hook_that_is_already_writt_4	and the Siege runs that block once, when she arrives.
+s05_a_hook_that_is_already_writt_5	One hook comes with the game, so try it.
+s05_a_hook_that_is_already_writt_6	And there's a swarm of BioMechs, with no script written by me.
+s05_a_hook_that_is_already_writt_7	They aren't her story, though.
+s05_a_hook_that_is_already_writt_8	So now we write her own.
+s06_where_a_hook_lives_0	This is the one awkward thing in the lecture.
+s06_where_a_hook_lives_1	Your boss file lives in common data, where an update never touches it.
+s06_where_a_hook_lives_2	But a hook is script,
+s06_where_a_hook_lives_3	and script has to be inside the Legendary Missions folder.
+s06_where_a_hook_lives_4	So I make a folder of my own in there,
+s06_where_a_hook_lives_5	with one file in it,
+s06_where_a_hook_lives_6	named with two underscores, the word init, two more underscores, dot mast.
+s06_where_a_hook_lives_7	I haven't changed any file that came with the game.
+s06_where_a_hook_lives_8	But an update replaces that whole folder, mine included,
+s06_where_a_hook_lives_9	so keep a copy of it somewhere else.
+s07_the_smallest_hook_0	Here's the smallest hook there is.
+s07_the_smallest_hook_1	A label, which is three equals signs and a name.
+s07_the_smallest_hook_2	One line that says a sentence to every crew ship.
+s07_the_smallest_hook_3	And the line that ends it.
+s07_the_smallest_hook_4	Then the boss file names that label, letter for letter.
+s07_the_smallest_hook_5	Now there are two things to check, so there are two commands.
+s07_the_smallest_hook_6	The first reads my boss file, as always.
+s07_the_smallest_hook_7	The second reads all of Legendary Missions, my card included,
+s07_the_smallest_hook_8	the way the game will.
+s07_the_smallest_hook_9	Read its last line.
+s07_the_smallest_hook_10	You want zero errors.
+s07_the_smallest_hook_11	The two warnings are in files that came with the game,
+s07_the_smallest_hook_12	so they're not yours and you leave them alone.
+s08_hold_a_ship_in_reserve_0	Now the card grows by four lines.
+s08_hold_a_ship_in_reserve_1	A wait, which is one of your cards from Class 1.
+s08_hold_a_ship_in_reserve_2	A line that stops if the game's already over.
+s08_hold_a_ship_in_reserve_3	One long line that brings in a named ship.
+s08_hold_a_ship_in_reserve_4	And your finish a step card, which sends a signal.
+s08_hold_a_ship_in_reserve_5	On the ship line you change four things and nothing else:
+s08_hold_a_ship_in_reserve_6	where she appears, her name, which ship she is,
+s08_hold_a_ship_in_reserve_7	and her name again in small letters, which is her role.
+s09_the_objectives_the_hook_driv_0	A signal finishes a step, and a step can reveal another.
+s09_the_objectives_the_hook_driv_1	That's the chain from Class 1.
+s09_the_objectives_the_hook_driv_2	So Her Reserve waits for the signal,
+s09_the_objectives_the_hook_driv_3	and when it's done it reveals Sink the Nemain.
+s09_the_objectives_the_hook_driv_4	Two things here catch people.
+s09_the_objectives_the_hook_driv_5	In a boss file, the address after reveal is the key alone, with no slash.
+s09_the_objectives_the_hook_driv_6	And the hidden step says, starts when revealed,
+s09_the_objectives_the_hook_driv_7	and does not also say, state active.
+s10_check_it_0	Run both of them again.
+s10_check_it_1	And look at what a mistake in the card costs you.
+s10_check_it_2	I'll take out one quote mark.
+s10_check_it_3	Lint gives me an error that ends, mast compile,
+s10_check_it_4	with the file and the line.
+s10_check_it_5	If I played that, nothing in Legendary Missions would run.
+s10_check_it_6	No Siege, and no other map either.
+s10_check_it_7	Your Class 1 cards were in your own mission.
+s10_check_it_8	This one's inside the game's,
+s10_check_it_9	so run that second command every time you touch it.
+s11_play_it_0	And now she arrives and says so.
+s11_play_it_1	Three objectives are in the Quest Log,
+s11_play_it_2	and the fourth isn't there yet.
+s11_play_it_3	Ten seconds later, there's the Nemain,
+s11_play_it_4	Her Reserve is done, and the fourth one appears.
+s11_play_it_5	Then put the real numbers back:
+s11_play_it_6	forty percent, ten minutes,
+s11_play_it_7	and ninety seconds on the card.
+s12_keep_it_safe_0	Your boss is now two things in two places.
+s12_keep_it_safe_1	The file is safe from an update,
+s12_keep_it_safe_2	and the folder isn't.
+s12_keep_it_safe_3	After an update she's still in the list,
+s12_keep_it_safe_4	and she arrives without her hook:
+s12_keep_it_safe_5	no sentence, and no reserve ship.
+s12_keep_it_safe_6	Lint tells you, too.
+s12_keep_it_safe_7	It warns that Her Reserve is waiting for a signal nothing sends.
+s12_keep_it_safe_8	So keep a copy of that folder,
+s12_keep_it_safe_9	and put it back after every update.
+s12_keep_it_safe_10	Next time is the last lecture of the class,
+s12_keep_it_safe_11	and she gets a voice.

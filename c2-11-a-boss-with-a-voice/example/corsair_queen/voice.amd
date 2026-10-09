@@ -1,0 +1,47 @@
+// The Corsair Queen's voice: who she is, and what she says on the line.
+// Read by her hook, the card in this folder.
+
+# [The Corsair Queen's Voice](corsair_queen_voice)
+
+## [Characters](characters)
+
+### [The Corsair Queen](queen)
+---
+Face: terran_female
+---
+Flies the Morrigan. Has never lost a siege she chose to join.
+
+### [First Mate Orla](orla)
+---
+Face: terran_female
+---
+Runs the Badb's deck. Has buried three of the Queen's crews.
+
+## [Dialogue](dialogue)
+
+### [The Queen Calls](queen_calls)
+---
+Speaker: queen
+When: hail
+Title: The Corsair Queen
+Priority: 9
+---
+@queen
+% You held longer than I was told you would.
+% So you are the ones who broke my raiders.
+
+@queen
+% Stand your ships down and the starbases live. That is the only offer you will hear.
+
+- [We do not stand down.]() ; completes parley
+- [Badb, this is the TSN. She will spend your ship to save her own.](badb_answers)
+
+### [The Badb Answers](badb_answers)
+---
+Speaker: orla
+---
+% She has spent three crews this year. I will not be the fourth.
+% Three crews this year, TSN. I counted them into the ground myself.
+
+- [Then fly with us.]() ; completes parley, completes turn_badb, fails sink_badb
+- [Then stay out of our way.]() ; completes parley

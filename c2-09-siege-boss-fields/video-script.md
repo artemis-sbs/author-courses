@@ -1,210 +1,171 @@
 # C2-9 video script - A Siege boss, part 2
 
-> **CHECKED IN THE REAL ENGINE, 2026-10-04 (server only, by script, from a probe copy of
-> LegendaryMissions).** The finished boss: arrived within 2 s of the raiders thinning,
-> Morrigan and Badb with their names as roles, three fleets of one race, `Sink the Morrigan`
-> ACTIVE then COMPLETE, "Victory! The starbases held.", 1,100 credits; `mast.runtime.log`
-> empty. A misspelled ship key did NOT stop the engine: the ship exists with no hull roles.
-> Nothing was looked at on a console.
+> **STATE ON 2026-10-08. This replaces every earlier note in this file.**
 >
-> **Changed since this script was written (LegendaryMissions `abab230`):** a boss with a
-> value the game cannot read (`Low: forty percent`, `Fleets: three`, `Difficulty: +two`,
-> `Trigger: enemy_low`) is left out of the Boss list with one line in `mast.runtime.log`;
-> it no longer stops the game or puts "Could not read this document" in the list. `Low: 40`
-> is 40%. Lint names a misspelled trigger. A wrong race is written to the log. And a
-> SETTING picks the boss now (`BOSS_SELECT`), so a recording can start with her chosen.
-> Step 8 of the page is rewritten; re-cut the scenes that showed the error page.
+> - Everything the page needs is released, including `sbs lint common_data\bosses`. The
+>   page is written for Artemis Cosmos 1.4.0 from Steam or itch.io.
+> - **Starts from Lecture 8's finished file** (`c2-08-siege-boss\example\corsair_queen.amd`).
+>   `example\` here is that file with this lecture's six lines changed.
+> - **Re-measured today.** 109 files: the lesson's steps typed in order, the finished
+>   file, the exercise's wave boss, and one change at a time. Each was linted with the
+>   installed `sbs`; 108 were played headless, one at a time, in a Siege run from a probe
+>   copy of LegendaryMissions with its own `common_data\bosses`. A script
+>   (`c2b\verify_page.py`) found every line of tool output on the page in those runs.
+> - **What changed on the page since the pilot.** A Siege at difficulty 5 opened with 15 to
+>   19 raiders in eight games (the pilot measured 12 to 20), so the table in Step 3 is now
+>   worked for 16. `Low: 40` with no percent sign is read as 40%, and the page no longer
+>   says otherwise. The game is started with `sbs run`, and the Boss line is in the Options
+>   panel.
+> - **How a headless game stands in for a crew.** The boss is chosen by the setting the Boss
+>   line writes. Raiders are taken out of the Siege's count by the harness, not shot.
+> - **Checked in the real engine on 2026-10-04**, by a script, from a probe copy: the
+>   arrival, both named ships, three fleets, the objective, the win, 1,100 credits. Not
+>   run in the engine again today.
+> - **Seen in the real game:** the start screen and its Options panel with the Boss line.
+>   Nothing else here has been seen on a screen.
+> - The `narration\` folder beside this file was generated from the older script and is
+>   stale.
 
-Target length: 17 minutes. One continuous screen recording with voice-over, cut at scene
-boundaries. The companion page is `lesson.md`; the finished file is
-`example\corsair_queen.amd`.
+The companion page is `lesson.md`; the finished file is `example\corsair_queen.amd`.
 
 ## Before recording
 
 | Item | State needed |
 |---|---|
-| `common_data\bosses` | Holds `corsair_queen.amd` exactly as Lecture 8 finished it (`c2-08-siege-boss\example\corsair_queen.amd`), with `Low: 25%`. Nothing else |
-| LegendaryMissions | A clean v1.4.0 folder, `e61b415` or later, with the four shipped bosses |
-| Library | sbs_utils `98725836` or later, built into `__lib__` |
-| Tools | An `sbs` that lints a shared folder (sbs_cli `fd357ee` or later). On 2026-10-04 that is committed and NOT in the downloaded `sbs.pyz`, which warns about every boss field. Every lint result on the page was produced by running the CLI from source |
-| VS Code | The `data\missions` folder open, Artemis AMD extension installed, font size raised, `corsair_queen.amd` in one tab |
+| Boss file | `common_data\bosses\corsair_queen.amd` exactly as Lecture 8's `example\` |
+| VS Code | The `data\missions` folder open, the boss file in one tab, font size raised |
 | Command prompt | Open in `data\missions`, cleared |
-| Game | Closed. It is started and restarted on camera. Siege, Difficulty 5, one player ship |
-| A second window | `LegendaryMissions\mast.runtime.log` ready to open in VS Code for scene 10 |
-| Takes to prepare | Scene 7 needs two arrivals of different race. Record arrivals until you have one pirate and one Kralien |
+| Game | Closed. Started on camera in scenes 3 and 8, with Difficulty at 5 |
+| `mast.runtime.log` | In `LegendaryMissions`, empty or deleted |
 
 ## Confirm on camera
 
-Everything below was measured on 2026-10-04 in the mock: real Siege games played headless
-from the real LegendaryMissions folder with the packaged library, 91 of them, one boss
-file at a time. The boss was chosen by writing the same variable the Boss list writes.
-Raiders were taken out of the count by a script. Nobody fired a shot, and **nobody has
-seen any of this on a screen.** The engine has not run this lesson at all. The recording
-session is that check; if an item fails, stop and fix the page.
+"Lint" is the installed tool on that exact file. "Mock" is a headless Siege from the probe
+copy, at difficulty 5 unless said. "Engine" is the scripted run of 2026-10-04.
 
-1. With `Low: 100%` the boss arrives about four seconds into the game. (Mock: 4.5 seconds,
-   three runs. Not run in the engine.)
-2. With `Low: 40%` and 20 raiders she arrives at 8 left and not at 9. (Mock: no arrival
-   in 7 seconds at 9; arrival 1.5 seconds after the count reached 8. Also measured: 25%
-   at 5 and not 6, 90% at 18 and not 19.)
-3. `Fleets: 3` brings three fleets; `0` or no line brings none. (Mock: 0, 2, 3, 5 and 6
-   fleets counted.)
-4. All the fleets of one arrival are one race. (Mock: 62 arrivals with two or more
-   fleets, none mixed. In ten arrivals of the finished file, six were pirate and four
-   Kralien.)
-5. Fleet sizes at level 7: pirate 1 to 3 ships, Kralien 4 to 6. (Mock: seen 1 and 3 for
-   pirate; 4, 5 and 6 for Kralien. The page's size table is read from
-   `LegendaryMissions\races\*_fleets.yaml` and matched every fleet the runs produced.)
-6. `Difficulty: 11` makes every fleet six ships, and `+2` in a game at 11 does the same.
-   (Mock.)
-7. Morrigan arrives as a `pirate_brigantine` and Badb as a `pirate_strongbow`. (Mock: both
-   present with those keys. What either looks like is unseen.)
-8. The objective Sink the Morrigan appears on arrival, completes when every raider is
-   gone, and pays 600. (Mock: active on arrival; complete at the win; side credits 1,100,
-   which is 600 plus the Siege's own 500 for keeping every starbase.)
-9. `sbs lint common_data\bosses` prints the three lines the page shows, and prints the
-   `unknown-field` warning for `Fleats:`. (Run from CLI source.)
-10. With `Flies: 75% Pirates, 25% Kraliens` lint says `clean`, and the two named ships
-    arrive with no fleets. (Mock. `mast.runtime.log` stays empty.)
-11. With `Fleets: three` the Boss list has no Corsair Queen and has an entry called
-    `Could not read this document`. (Mock: that is the list the Siege builds. The list on
-    screen is unseen.)
-12. With `Low: forty percent` the game stops on an error page four seconds in. (Mock: a
-    page-level runtime error at 4 seconds, and game time stopped. The page is unseen.)
-13. A misspelled or capitalized ship key still brings a ship named Morrigan. (Mock only.
-    What the engine draws for a key it does not have is unknown. Check this one off
-    camera first: it may be an empty contact, a placeholder shape, or a crash.)
-14. The exercise's wave boss sends one Skaraan ship every 20 seconds, and with **Time
-    Limit** 1 the game ends in a win at one minute. (Mock: waves at 23 and 43 seconds,
-    victory at 63.)
-
-Not checked at all: how a fleet or a named ship is told apart on Science, Helm or the main
-screen; the wording of the Siege setup screen; whether the editor underlines any of the
-mistakes in scene 10.
+1. With `Low: 100%` she arrives about four seconds in, with nothing destroyed. (Mock: 4.4
+   to 4.6 seconds in seven games.)
+2. `Fleets: 3` brings three fleets, `Fleets: 1` one, no `Fleets:` line none. (Mock.)
+3. With `75% Pirate, 25% Kralien`, all three fleets of one arrival are one race. (Mock:
+   seventeen arrivals with that line, never a mix: twelve pirate, five Kralien. That the
+   roll is weighted three to one is read from the code, not counted.)
+4. At level 7 a pirate fleet is one to three ships and a Kralien fleet four to six.
+   (Mock: pirate arrivals of 3+3+1, 3+3+3, 3+1+1; a Kralien arrival of 5+6+5.)
+5. `Difficulty: 11` makes every fleet six ships. (Mock.)
+6. Two named ships arrive, the Morrigan on a `pirate_brigantine` and the Badb on a
+   `pirate_strongbow`. (Mock, Engine.)
+7. With the finished file and sixteen raiders she does not arrive at seven left, and does
+   at six. (Mock.)
+8. Every raider gone: `Victory! The starbases held.` and 1,100 credits. (Mock, Engine.)
+9. Every row of the three tables in Step 8. (Lint on each; Mock on each.) The game's own
+   line for a value it cannot read was captured from `mast.runtime.log`, for example
+   `` `Fleets: two` is not a whole number from 0 up ``.
+10. The exercise's wave boss sends one Skaraan ship every 20 seconds, and with a one
+    minute time limit the game ends in a win. (Mock.)
+11. Unseen, all of it: the arrival on a console, counting fleets on a map, the Quest Log,
+    the Time Limit line of the Options panel.
 
 Also capture the screenshot the page asks for.
 
 ## Scenes
 
-### 1. Cold open (0:00 - 0:40)
+### 1. Cold open
 
-**Screen:** The game. The Morrigan and the Badb arrive with three pirate fleets. (Reuse
-footage from scene 9.)
+**Screen:** The game. Two named ships, Morrigan and Badb, among three small pirate fleets.
+(Reuse footage from scene 8.)
 
-**Say:** "Last time the Corsair Queen was the Warlord with a new name. She flew a Kralien
-dreadnought, with Kralien escorts. This is the same file after today. She arrives when I
-say, in the ships I chose, with the fleets I chose. Six lines."
+**Say:** "Last time your boss was a copy of the Warlord with new names. || So she flew a
+Kralien dreadnought, with Kralien escorts, | and a corsair shouldn't. ||| Today you change
+six lines, one at a time, | and by the end, every number in her file is one you chose. ||"
 
-### 2. The six lines (0:40 - 1:30)
+### 2. The six lines
 
-**Screen:** VS Code, `corsair_queen.amd`. Highlight the first fence, line by line.
+**Screen:** VS Code, `corsair_queen.amd`. The first fence, between the word Boss and the
+closing fence line. Highlight the six lines in turn.
 
-**Say:** "Here is where we left her. Everything today is between `Boss` and the closing
-fence. Trigger and Low: when. Flies and Fleets: what comes with her. Difficulty: how big.
-Named: her own ships. We will change them one at a time, and play after each."
+**Say:** "Everything today is in the first fence. || Trigger says which kind of boss she
+is. | Low says when she arrives. || Fleets, Flies and Difficulty say what comes with her, |
+and Named says which ships carry a name. ||| One thing before we start. || The game reads
+a boss file when the mission starts, | so after every change you save, | you start the
+mission again. ||"
 
-### 3. The test setting (1:30 - 2:40)
+### 3. Make her arrive at once
 
-**Screen:** Change `Low: 25%` to `Low: 100%`. Save. Start the game as the server, choose
-Siege, choose Corsair Queen in the Boss list, start. She arrives within seconds.
+**Screen:** Change `Low: 25%` to `Low: 100%`. Save. Start the game, choose her on the Boss
+line, start the mission. She arrives within seconds.
 
-**Say:** "First, make her easy to test. Low is the share of raiders still flying when she
-arrives. One hundred percent means all of them, so she arrives at once. Four seconds in,
-and there she is. We will put a real number back at the end."
+**Say:** "You're going to play her several times today, | and you don't want to fight for
+ten minutes each time. || So set Low to a hundred percent. || Low is a share of the
+raiders, | and she comes when that share or less is left. ||| A hundred percent is all of
+them, so she arrives about four seconds in, | before anyone has fired a shot. || That's
+your test setting, | and you put the real number back at the end. ||"
 
-### 4. Trigger (2:40 - 4:10)
+### 4. Fleets, and who flies them
 
-**Screen:** Highlight `Trigger: enemies_low`. Open `LegendaryMissions\maps\bosses\continuous.amd`
-beside it for a few seconds, then close it.
+**Screen:** Change `Fleets: 2` to `Fleets: 3`. Change the `Flies:` line to
+`75% Pirate, 25% Kralien`.
 
-**Say:** "Trigger has two values. Enemies low: one arrival, when the raiders thin out.
-Continuous: no arrival at all, just a new wave every so many seconds, all game. They are
-different kinds of boss, and a continuous boss ignores half of this file: no named ship,
-no objective, no Low. The page has a table. We stay with enemies low. One warning: if you
-misspell this word, the boss never comes, and nothing tells you."
+**Say:** "Fleets is the easy one. It's a whole number, written as a digit, | and that many
+escort fleets arrive with her. || Flies names a race, | and there are six that can fly a
+fleet. ||| Now here's the part people get wrong. || Seventy-five percent pirate, twenty-five
+Kralien, with three fleets, | doesn't give you two pirate fleets and one Kralien. || The
+game rolls once, when she arrives, | and all three fleets are the same race. || So write
+the mix as a story: | most nights she brings her own corsairs, | and now and then she's
+hired Kraliens. ||"
 
-### 5. Low (4:10 - 5:40)
+### 5. Difficulty
 
-**Screen:** The table from Step 3 of the page, as an overlay or a second tab.
+**Screen:** Change `Difficulty: +1` to `Difficulty: +2`. Show the table of fleet sizes on
+the page.
 
-**Say:** "Low is a share of the largest number of raiders the game has seen. With twenty
-raiders, twenty-five percent is five left. Forty percent is eight. Always type the
-percent sign. Without it, forty means forty times the raiders, and she is there at the
-start. And the game looks every four seconds, so she is never exactly on the kill."
+**Say:** "The crew picks a difficulty before the game, from one to eleven. || Your line
+says how hard her fleets are next to that. || Plus two is two levels above the game, | so
+in a game at five, her fleets are built for seven. ||| And the level decides how many
+ships are in a fleet. || At seven, a pirate fleet is one to three ships, | and a Kralien
+fleet is four to six. || So the night she's hired Kraliens is the hard night. ||"
 
-### 6. Fleets (5:40 - 7:00)
+### 6. Her own ships
 
-**Screen:** Change `Fleets: 2` to `Fleets: 3`. Save. Restart the mission. Count three new
-fleets.
+**Screen:** Change the `Named:` line to
+`Morrigan pirate_brigantine, Badb pirate_strongbow`. Show the table of ship keys.
 
-**Say:** "Fleets is how many escort fleets come with her. A whole number, as a digit.
-Zero, or no line at all, and she comes alone. How many ships are in a fleet is not on
-this line. That is the next two."
+**Say:** "Named is two words for each ship: | its name, and then which ship it is. || Last
+time you changed the first word. | Today you change the second, | and you add a second
+ship after a comma. ||| The second word is a ship key, | and the page has the raider ships
+in a table. || Type it exactly as it's printed, in small letters, with the underscores, |
+because this is the one line where a spelling mistake gets past everything. ||"
 
-### 7. Flies (7:00 - 9:40)
+### 7. Check it, and what lint can't check
 
-**Screen:** Change the line to `Flies: 75% Pirate, 25% Kralien`. Save. Restart; show a
-pirate arrival. Cut to a second take; show a Kralien arrival.
+**Screen:** Command prompt: `sbs lint common_data\bosses`. `clean`. Then make the race
+plural, `Pirates`, and run lint again: still `clean`. Open `mast.runtime.log` after a game.
 
-**Say:** "Flies is who flies the fleets. Six races can: Kralien, Torgoth, Arvonian,
-Skaraan, Ximni, Pirate. One race, and every fleet is that race. Or a mix, with a percent
-on each and a comma between."
+**Say:** "Lint reads the shape of a boss line. || It knows the field names, | it knows the
+two triggers, | and it knows a named ship is two words. ||| It doesn't check the other
+values. || So if I write pirates, with an S, lint still says clean, | and in the game her
+named ships arrive with no fleets at all. || The game does tell you, though. | It writes
+one line in the runtime log, in the Legendary Missions folder, | naming the race it
+couldn't find. || And for a number it can't read, | it leaves your boss out of the list
+and says which line. ||"
 
-"Here is the part that surprises people. The game rolls once. All three fleets are the
-same race. This is a pirate night. This is a Kralien night. You never get two of one and
-one of the other. So write the mix as a story: most nights she brings her own corsairs,
-and now and then she has hired Kraliens."
+### 8. Play it, and count
 
-"And spell the race in the singular. Pirate, not pirates. We will see why in a minute."
+**Screen:** Start the game, Difficulty 5, Corsair Queen on the Boss line, start the
+mission. Count the named ships and the fleets on the map. Start again and count again.
 
-### 8. Difficulty (9:40 - 11:40)
+**Say:** "Now play it, and count what arrives. || Two named ships, the Morrigan and the
+Badb. | Three new fleets, all of one race. || Then start the mission again and look a
+second time, | because about one arrival in four is the Kralien one. ||| Try changing one
+number and playing again. || Set the difficulty line to eleven, | and every fleet is six
+ships. ||"
 
-**Screen:** Change `Difficulty: +1` to `Difficulty: +2`. Show the size table from Step 6.
-Then briefly type `Difficulty: 11`, save, restart, show fleets of six, and undo.
+### 9. Her real arrival
 
-**Say:** "The crew picks the game's difficulty, one to eleven. Plus two means two levels
-above whatever they picked. A bare number means that level, always. The level sets the
-size of each fleet. At level seven a pirate fleet is one to three ships. A Kralien fleet
-is four to six. At eleven, everything is six. Difficulty does not touch her named ships."
+**Screen:** Change `Low: 100%` to `Low: 40%`. Rewrite the note at the top of the file.
+Save. Lint: `clean`.
 
-### 9. Named (11:40 - 13:40)
-
-**Screen:** Change the line to `Named: Morrigan pirate_brigantine, Badb pirate_strongbow`.
-Show the ship key table from Step 7. Save. Restart. Find both named ships.
-
-**Say:** "Named is her own ships. Name, then ship key. You know the first rule: the name
-is one word. The key comes from this table, typed exactly, lowercase with underscores. A
-second ship goes after a comma. A corsair queen in a pirate brigantine, and her second in
-a strongbow."
-
-### 10. Check it, and what lint cannot see (13:40 - 15:50)
-
-**Screen:** Command prompt: `sbs lint common_data\bosses`. Three lines, `clean`.
-
-**Screen (insert 1):** Change `Fleets:` to `Fleats:`. Lint. Show the warning. Undo.
-
-**Screen (insert 2):** Change the race to `Pirates`. Lint: `clean`. Restart the mission.
-The two named ships arrive with no fleets. Undo.
-
-**Say:** "Lint first. Clean. Lint reads the shape of a line. Misspell the label, and it
-tells you. But it does not check what comes after the colon. Pirates, plural. Lint says
-clean. And in the game, the Queen arrives with no fleets at all, and nothing is written
-anywhere. So after lint, play it. The page has the whole list of what lint cannot see.
-Two of them stop the game on an error page: a word where Low wants a number, and a word
-after the plus sign on Difficulty."
-
-### 11. The real arrival (15:50 - 16:30)
-
-**Screen:** Change `Low: 100%` to `Low: 40%`. Replace the note at the top. Save. Lint.
-
-**Say:** "Testing is over. Forty percent: the crew is winning, and the siege is not over.
-And I bring the note up to date, because in a year I will not remember what plus two
-meant."
-
-### 12. Your turn (16:30 - 17:00)
-
-**Screen:** The exercise on the page.
-
-**Say:** "Now your own boss. Give it a race that fits its story, its own ships, and an
-arrival you chose on purpose. Then make a wave boss in a second file. Next time: the
-objective."
+**Say:** "Testing's over, so give her the number you want the crew to play. || I'm using
+forty percent. || With sixteen raiders at the start, | she comes when six are left. ||
+The crew's winning by then, | but the siege isn't over. ||| Then bring the note at the top
+of the file up to date. || It's for you, a year from now, | when you've forgotten why she
+flies what she flies. || Next time she gets objectives of her own. ||"

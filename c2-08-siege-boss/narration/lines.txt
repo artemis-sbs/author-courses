@@ -1,55 +1,102 @@
-s01_cold_open_0	This is the Corsair Queen.
-s01_cold_open_1	She is not in the game you downloaded.
-s01_cold_open_2	I wrote her this morning, in one small text file, without writing any code.
-s01_cold_open_3	In the next fourteen minutes you will write your own.
-s02_what_a_boss_is_0	In Siege, raiders attack your starbases.
-s02_what_a_boss_is_1	If you choose a boss, then when the raiders are nearly beaten, something worse arrives.
-s02_what_a_boss_is_2	Four bosses come with the game.
-s02_what_a_boss_is_3	Each one is a single file in a folder.
-s02_what_a_boss_is_4	Add a file, and you have added a boss.
-s03_read_the_warlord_0	Here is the Warlord.
-s03_read_the_warlord_1	Two records, the shape you already know: a heading, a fence, a body.
-s03_read_the_warlord_2	The first record is the boss.
-s03_read_the_warlord_3	Boss says what kind of record it is.
-s03_read_the_warlord_4	Trigger and Low say when she arrives: when a quarter of the raiders are left.
-s03_read_the_warlord_5	Flies and Fleets say what comes with her.
-s03_read_the_warlord_6	Difficulty: +1 makes her one step harder than the game.
-s03_read_the_warlord_7	Named is her flagship: a name, then which ship it is.
-s04_make_the_copy_0	Never edit the Warlord. Copy it.
-s04_make_the_copy_1	And not into the game's folder.
-s04_make_the_copy_2	The game's folder is replaced every time the game is updated.
-s04_make_the_copy_3	Yours is here: common data, bosses.
-s04_make_the_copy_4	The Siege reads both.
-s04_make_the_copy_5	Lowercase, underscores, no spaces, and keep .amd on the end.
-s05_rename_the_boss_and_the_flag_0	Square brackets are what the crew reads.
-s05_rename_the_boss_and_the_flag_1	Round brackets are the key; match your file name." "Two traps.
-s05_rename_the_boss_and_the_flag_2	Lint catches both, and you will see that in a minute, but know them now.
-s05_rename_the_boss_and_the_flag_3	First: if you forget to change the name in square brackets, you get two Warlords and the list shows only one.
-s05_rename_the_boss_and_the_flag_4	Second: the flagship's name is one word.
-s05_rename_the_boss_and_the_flag_5	Type 'Iron Duke' and the game reads a ship called Iron, of a kind called Duke.
-s05_rename_the_boss_and_the_flag_6	There is no such ship.
-s06_write_her_words_0	Now the part you are here for.
-s06_write_her_words_1	One line for her entrance.
-s06_write_her_words_2	Then the objective: a new name, a new key, what it pays, and what you want the crew to read.
-s06_write_her_words_3	Leave the five lines in between alone today.
-s06_write_her_words_4	Plain quotes and plain hyphens only; the game cannot draw the curly kind.
-s07_check_it_0	Two checks.
-s07_check_it_1	No squiggles in the editor.
-s07_check_it_2	Then lint, pointed at my own folder, so it checks my bosses and nothing else.
-s07_check_it_3	You want the word 'clean'.
-s07_check_it_4	Here is what it says if I put 'Iron Duke' back: it tells me what the game will read, and what to write instead.
-s08_see_her_in_the_list_0	Start the server, choose Siege, open the Boss list.
-s08_see_her_in_the_list_1	There she is.
-s08_see_her_in_the_list_2	If she is not, the file is in the wrong folder, or the mission was already running when you saved.
-s08_see_her_in_the_list_3	The list is read when the mission starts.
-s09_meet_her_0	At twenty-five percent you would fight for a long time before she shows up.
-s09_meet_her_1	For testing, set it to ninety.
-s09_meet_her_2	Now she comes after the first kills.
-s09_meet_her_3	There is the Morrigan, there are her escorts, and there is your objective, in your words.
-s09_meet_her_4	Put Low back to twenty-five when you are done.
-s10_keep_it_safe_and_your_turn_0	This is why she lives here.
-s10_keep_it_safe_and_your_turn_1	Update the game and this folder is left alone.
-s10_keep_it_safe_and_your_turn_2	It is still one file on one computer, so keep a copy, the way you would with a manuscript.
-s10_keep_it_safe_and_your_turn_3	Now make a second boss, from your own story.
-s10_keep_it_safe_and_your_turn_4	The page has the steps and a checklist.
-s10_keep_it_safe_and_your_turn_5	Next time, we change the numbers.
+s01_cold_open_0	This is the Corsair Queen,
+s01_cold_open_1	and she isn't in the game you installed.
+s01_cold_open_2	I wrote her this morning, in one small text file,
+s01_cold_open_3	and I didn't write any code to do it.
+s01_cold_open_4	By the end of this lecture,
+s01_cold_open_5	you'll have a boss of your own in that list.
+s02_what_a_boss_is_0	You played Siege in the very first lecture.
+s02_what_a_boss_is_1	Raiders come at your starbases,
+s02_what_a_boss_is_2	and you win when the last raider is gone.
+s02_what_a_boss_is_3	Now, if you choose a boss,
+s02_what_a_boss_is_4	something worse arrives when the raiders are nearly beaten.
+s02_what_a_boss_is_5	Four bosses come with the game,
+s02_what_a_boss_is_6	and each one is a single file in a folder.
+s02_what_a_boss_is_7	So if you add a file, you've added a boss.
+s03_read_the_warlord_0	Here's the Warlord, and it's two records,
+s03_read_the_warlord_1	in the shape you already know:
+s03_read_the_warlord_2	a heading, a fence, and a body.
+s03_read_the_warlord_3	The first record is the boss herself.
+s03_read_the_warlord_4	There's one word alone on a line, the word Boss,
+s03_read_the_warlord_5	which says what kind of record this is.
+s03_read_the_warlord_6	Trigger and Low say when she arrives:
+s03_read_the_warlord_7	when a quarter of the raiders are left.
+s03_read_the_warlord_8	Flies and Fleets say what comes with her,
+s03_read_the_warlord_9	and Named is her flagship:
+s03_read_the_warlord_10	a name, and then which ship it is.
+s03_read_the_warlord_11	The second record is a quest,
+s03_read_the_warlord_12	and you wrote plenty of those in Class 1.
+s03_read_the_warlord_13	It belongs to the Siege's own mission,
+s03_read_the_warlord_14	the crew needs it to win,
+s03_read_the_warlord_15	and it's done when the Siege says every raider is gone.
+s04_make_the_copy_0	Don't edit the Warlord. Copy it.
+s04_make_the_copy_1	And don't paste it back into the game's own folder,
+s04_make_the_copy_2	because that folder is replaced every time the game is updated.
+s04_make_the_copy_3	Yours goes here instead:
+s04_make_the_copy_4	common data, and then a folder called bosses.
+s04_make_the_copy_5	The Siege reads both folders,
+s04_make_the_copy_6	so a file in either one is a boss in the list.
+s04_make_the_copy_7	For the file's name,
+s04_make_the_copy_8	use small letters and underscores, with no spaces.
+s05_lint_it_before_you_change_a__0	Before I change anything, I'm going to run lint,
+s05_lint_it_before_you_change_a__1	pointed at my own bosses folder.
+s05_lint_it_before_you_change_a__2	And it already has something to say.
+s05_lint_it_before_you_change_a__3	My copy still has the Warlord's name,
+s05_lint_it_before_you_change_a__4	and the list offers bosses by name,
+s05_lint_it_before_you_change_a__5	so only one of the two can be in it.
+s05_lint_it_before_you_change_a__6	It's a true warning, and it's the first thing we'll fix.
+s06_rename_the_boss_and_the_flag_0	The square brackets hold what the crew reads,
+s06_rename_the_boss_and_the_flag_1	and the round brackets hold the key,
+s06_rename_the_boss_and_the_flag_2	which I make the same as my file's name.
+s06_rename_the_boss_and_the_flag_3	Next is her flagship,
+s06_rename_the_boss_and_the_flag_4	and I'm only changing the first word, the ship's name.
+s06_rename_the_boss_and_the_flag_5	There's one trap here.
+s06_rename_the_boss_and_the_flag_6	A flagship's name has to be one word.
+s06_rename_the_boss_and_the_flag_7	If I type Iron Duke, as two words,
+s06_rename_the_boss_and_the_flag_8	the game reads a ship called Iron,
+s06_rename_the_boss_and_the_flag_9	of a kind called Duke,
+s06_rename_the_boss_and_the_flag_10	and there's no such kind of ship.
+s06_rename_the_boss_and_the_flag_11	Lint does catch that one,
+s06_rename_the_boss_and_the_flag_12	and it shows you the line to write instead.
+s07_write_her_words_0	Now for the part you're here for.
+s07_write_her_words_1	Under the first fence goes one line about her.
+s07_write_her_words_2	That one's a note for you, and for anyone you give the file to,
+s07_write_her_words_3	because the game doesn't show it to the crew.
+s07_write_her_words_4	The objective is different,
+s07_write_her_words_5	since the crew does read that.
+s07_write_her_words_6	So it gets a new name, a new key,
+s07_write_her_words_7	what it pays, and a sentence in your own voice.
+s07_write_her_words_8	Leave the five lines in the middle alone today,
+s07_write_her_words_9	and keep the word credits after the number,
+s07_write_her_words_10	or nothing gets paid.
+s07_write_her_words_11	Then save, run lint again,
+s07_write_her_words_12	and this time it says clean.
+s08_see_her_in_the_list_0	To see her, I start the game the way you have since Class 1,
+s08_see_her_in_the_list_1	but with Legendary Missions as the mission,
+s08_see_her_in_the_list_2	and with no map on the end of the line.
+s08_see_her_in_the_list_3	That leaves the server on the start screen.
+s08_see_her_in_the_list_4	Siege is on the left,
+s08_see_her_in_the_list_5	and on the right is the Options panel, with a line called Boss.
+s08_see_her_in_the_list_6	And there she is, under the game's own four.
+s08_see_her_in_the_list_7	If she's missing for you,
+s08_see_her_in_the_list_8	the file's in the wrong folder,
+s08_see_her_in_the_list_9	or the game was already running when you saved it.
+s09_meet_her_0	At twenty-five percent, you'd fight for a long time before she showed up.
+s09_meet_her_1	So for testing, I set Low to ninety.
+s09_meet_her_2	Now she comes when one raider in ten is gone,
+s09_meet_her_3	which here is after the second kill.
+s09_meet_her_4	There's the Morrigan, with her two fleets,
+s09_meet_her_5	and there's my objective in the Quest Log, in my words.
+s09_meet_her_6	Notice that nothing announced her.
+s09_meet_her_7	The game doesn't tell the crew a boss has arrived,
+s09_meet_her_8	and we'll do something about that later in the class.
+s09_meet_her_9	When you've finished testing,
+s09_meet_her_10	put Low back to twenty-five.
+s10_keep_it_safe_and_your_turn_0	This is why she lives out here.
+s10_keep_it_safe_and_your_turn_1	You can update the game,
+s10_keep_it_safe_and_your_turn_2	and this folder is left alone.
+s10_keep_it_safe_and_your_turn_3	It's still one file on one computer, though,
+s10_keep_it_safe_and_your_turn_4	so keep a copy somewhere else,
+s10_keep_it_safe_and_your_turn_5	the way you would with a manuscript.
+s10_keep_it_safe_and_your_turn_6	And to give her to a friend, you send them that one file.
+s10_keep_it_safe_and_your_turn_7	Now make a second boss, from your own story.
+s10_keep_it_safe_and_your_turn_8	Next time, we change the numbers.

@@ -1,0 +1,378 @@
+// Every piece of authored CONTENT in this mission lives in this one file. story.mast holds
+// only the logic that reacts to it.
+//
+// The shape is a table of contents: one `#` root, a `##` section per loader, and `###` /
+// `####` records inside. story.mast parses this once and hands each section to its loader.
+//
+// A record is `### [Display Name](key)`, an optional `---` fenced block of fields, then
+// body prose. Comments are `//` - note that .mast uses `#` instead.
+
+# [Sample Mission](sample_mission)
+
+// ---- Words this file shares with story.mast. Keep this list true.
+// ROLE    derelict          worn by the Unknown Hulk
+// ROLE    ghost_ship        worn by the Unknown Hulk
+// ROLE    lifeboat          worn by The Lifeboat, a landmark in this file
+// ROLE    tug               worn by the Salvage Tug, once it arrives
+// ROLE    home              worn by DS 1, and by nothing else
+// ROLE    cutter            worn by the Breaker Cutter, a landmark in this file
+// ROLE    yard              worn by the Guild Yard, a landmark in this file
+// SIGNAL  ghost_ship_found  said when a ship comes within 2000 of the hulk
+// SIGNAL  derelict_scanned  said when Science scans anything that wears derelict
+// SIGNAL  tug_arrived       said twenty seconds after Wait for the Tug starts
+
+
+// ---- Quests. Nested records are steps of the arc above them, addressed `arc/step`.
+## [Quests](quests)
+
+### [First Contact](first_contact)
+= The mystery. It stays open until the crew reads the log.
+---
+Arc
+Scope: shared
+Starts when: at once
+---
+A dead ship has drifted across the border. Nobody sent her, and nobody will say whose she is.
+
+#### [Find the Derelict](find)
+---
+Scope: shared
+Starts when: at once
+Done when: signal ghost_ship_found
+Then: reveal first_contact/study
+---
+Fly out and locate the drifting hulk.
+
+#### [Study the Derelict](study)
+---
+Scope: shared
+Starts when: revealed
+Done when: signal derelict_scanned
+---
+Science should take a full scan of the hull.
+
+### [Salvage Run](salvage)
+---
+Arc
+Scope: shared
+Starts when: at once
+Fails when: 10 minutes
+Win: The log is home. DS 1 knows what happened out there.
+Lose: The reactor let go with the log still aboard.
+---
+The hulk's reactor is failing. Get her flight log back to DS 1 before she goes.
+
+#### [Close Inspection](approach)
+= The crew sees the hulk up close. DS 1 sees them do it, and that starts the talking.
+---
+Scope: shared
+Starts when: at once
+Objective: Close to within 500 of the hulk
+Done when: reach derelict 500
+Reward: 100 credits
+Then: reveal salvage/boat
+Part of: salvage
+Required: true
+---
+The hulk is not answering hails. Bring the ship in close and take a look.
+
+#### [Find the Lifeboat](boat)
+---
+Scope: shared
+Starts when: revealed
+Objective: Get within 500 of the hulk's lifeboat
+Done when: reach lifeboat 500
+Reward: 100 credits
+Then: reveal salvage/tug
+Part of: salvage
+Required: true
+---
+Her log is not aboard, and one lifeboat cradle is empty. Find the boat.
+
+#### [Wait for the Tug](tug)
+---
+Scope: shared
+Starts when: revealed
+Objective: Hold near the lifeboat until the tug arrives
+Done when: signal tug_arrived
+Reward: 50 credits
+Then: reveal salvage/home
+Part of: salvage
+Required: true
+---
+DS 1 is sending a tug for the lifeboat. Stay with her until it gets here.
+
+#### [Bring the Log Home](home)
+---
+Scope: shared
+Starts when: revealed
+Objective: Return to within 1000 of DS 1
+Done when: reach home 1000
+Reward: 200 credits
+Part of: salvage
+Required: true
+---
+You have her flight log. Carry it back to DS 1.
+
+#### [Quick Work](quick)
+---
+Scope: shared
+Starts when: at once
+Objective: Reach the hulk inside two minutes
+Done when: reach derelict 500
+Fails when: 2 minutes
+Reward: 50 credits
+---
+Optional. DS 1 pays a bonus for a fast approach.
+
+### [DS 1 Calls](ds1_calls)
+= The offer. Quill needs a beacon on the hulk and has nobody else to send.
+---
+Beat
+Starts when: reach derelict 500
+Action:
+  - quill hails quill_hello
+---
+DS 1 saw the ship go in close, and wants to hear about it.
+
+### [Tag the Hulk](tag_hulk)
+---
+Scope: shared
+Starts when: revealed
+Objective: Give the salvage beacon 30 seconds to set
+Done when: 30 seconds
+Then: reveal report_in
+---
+DS 1 wants a salvage beacon on the hulk before the Breakers find her. It pays when
+the ship reports back.
+
+### [Report to DS 1](report_in)
+= End of act one. The crew has done DS 1 a favor, and now DS 1 owes them the truth.
+---
+Scope: shared
+Starts when: revealed
+Objective: Answer DS 1 and tell her the beacon is set
+Reward: 150 credits
+Then: reveal claim
+Action:
+  - quill hails quill_thanks
+---
+The beacon is live. DS 1 pays when she hears it from the ship. Chief Ives says [[vane]] has been asking what she is worth.
+
+### [The Claim](claim)
+= Act two. The hulk is the crew's for one hour, and two others want her.
+---
+Scope: shared
+Starts when: revealed
+Objective: Stand by the hulk for 60 seconds
+Done when: 60 seconds
+Reward: 200 credits
+---
+Chief Ives has logged the hulk as yours for one hour. Stay with her until the ledger closes.
+
+// ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
+// it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
+// several readings picked at random - so a second scan does not read identically.
+## [Scans](scans)
+
+### [Derelict Hull](derelict_scan)
+---
+Scan of: derelict
+Tab: scan
+---
+% The hull is cold. Whatever happened here happened a long time ago.
+% Hull plating is intact but every port is dark. No power anywhere aboard.
+
+### [Derelict Materials](derelict_mat)
+---
+Scan of: derelict
+Tab: mat
+---
+% Scoring along the plating matches no weapon in use in this sector.
+
+### [Derelict Intel](derelict_intel)
+---
+Scan of: ghost_ship
+Tab: intel
+---
+% No flight plan was ever filed for this ship. Somebody wanted her forgotten.
+
+### [Derelict Life Signs](derelict_bio)
+---
+Scan of: derelict
+Tab: bio
+---
+% No life signs. Six suits hang in the airlock, and all six are empty.
+% No life signs. The air aboard went bad a long time ago.
+% One faint reading aft. It is a plant in a pot, and it is doing fine.
+
+### [Lifeboat Hull](lifeboat_scan)
+---
+Scan of: lifeboat
+Tab: scan
+---
+% A lifeboat, cold and tumbling. The hatch was opened from the inside.
+
+### [Lifeboat Intel](lifeboat_intel)
+---
+Scan of: lifeboat
+Tab: intel
+---
+% The flight log is aboard, sealed in the pilot's locker.
+
+
+// ---- Places. Each record is one thing on the map. `Roles:` is the label quests and
+// scans point at, `Art:` is what it looks like, and `Loc:` is where it sits.
+## [Landmarks](landmarks)
+
+### [The Lifeboat](lifeboat)
+---
+Kind: wreck
+Roles: lifeboat
+Art: wreck
+Loc: 6000, 0, 6000
+---
+The hulk's lifeboat. It left her with the flight log aboard.
+
+### [Breaker Cutter](cutter)
+---
+Kind: ship
+Side: breaker
+Roles: cutter
+Art: pirate_strongbow
+Loc: 3000, 0, 11000
+---
+A Breaker ship, standing off until the hulk goes quiet.
+
+### [Guild Yard](guild_yard)
+---
+Kind: station
+Side: guild
+Roles: yard
+Art: starbase_civil
+Loc: -6000, 0, 3000
+---
+The Harbor Guild's repair yard.
+
+
+// ---- Sides. Each record is one faction: its name, its color, and who it fights or
+// stands with. `Side:` on a landmark names one of these keys.
+## [Sides](sides)
+
+### [TSN](tsn)
+---
+Color: #07F
+---
+The Terran Stellar Navy. The crew's own side.
+
+### [The Breakers](breaker)
+---
+Color: #F80
+Enemies: tsn, guild
+---
+Scavengers. They strip dead ships, and they do not wait for the paperwork.
+
+### [Harbor Guild](guild)
+---
+Color: #0C6
+Allies: tsn
+---
+The pilots and tug crews who work the lanes around DS 1.
+
+
+// ---- Characters. The people in the story. `Face:` is how each one looks.
+## [Characters](characters)
+
+### [Harbormaster Quill](quill)
+---
+Face: ter #e4cb8e 1 0;ter #fff 12 6;ter #e4cb8e 3 1;ter #e4cb8e 5 2;ter #704025 7 3;
+---
+Runs traffic control on DS 1. Has watched this lane for eleven years.
+
+### [Chief Ives](ives)
+---
+Face: ter #d2b2a1 0 0;ter #fff 13 6;ter #d2b2a1 11 1;ter #d2b2a1 12 2;ter #934e2c 11 3;ter #fff 9 5;
+---
+Keeps the salvage ledger on DS 1. Counts everything twice.
+
+### [Captain Sable](sable)
+---
+Face: ska #813e20 1 0;ska #fff 1 4;ska #813e20 2 1;ska #813e20 1 2;ska #fff 4 3;
+---
+Flies the Breaker Cutter. Has never paid for a ship in her life.
+
+### [Assessor Vane](vane)
+---
+Face: ter #d2b2a1 0 0;ter #fff 13 6;ter #d2b2a1 11 1;ter #d2b2a1 12 2;ter #934e2c 11 3;
+---
+Values wrecks for the Harbor Guild. Buys what the Breakers would only steal.
+
+
+// ---- Dialogue. A scene is who speaks and what they say.
+## [Dialogue](dialogue)
+
+### [Quill Checks In](quill_hello)
+---
+Speaker: quill
+When: hail
+Title: About that hulk
+---
+@quill
+% Artemis, DS 1. We watched you go in close.
+% Artemis, this is Quill on DS 1. You got nearer to that hulk than I would have.
+% DS 1 to Artemis. Nice flying out there.
+
+@quill
+% Now tell me she is as dead as she looks.
+% So. Is anybody home?
+
+- [She is cold. No power, no lights.](quill_offer)
+- [What do you know about her?](quill_history)
+- [Not now, DS 1. Artemis out.]()
+
+### [What DS 1 Knows](quill_history)
+---
+Speaker: quill
+---
+% She came through the gate eleven days ago with her transponder off. Nobody has claimed her.
+% No flight plan, no transponder, no crew list. She arrived, and she stopped.
+
+- [She is cold, DS 1. No power, no lights.](quill_offer)
+- [Thank you, DS 1. Artemis out.]()
+
+### [The Offer](quill_offer)
+---
+Speaker: quill
+---
+% Then she is salvage, and somebody has to hang a beacon on her before the Breakers do. Do you want the job?
+% Dead, then. That makes her salvage, and salvage wants a beacon. Are you offering?
+
+- [We will tag her.]() ; accepts tag_hulk, completes ds1_calls
+- [Find someone else, DS 1.]() ; completes ds1_calls
+
+### [Quill Calls Back](quill_thanks)
+---
+Speaker: quill
+When: hail
+Title: Your beacon
+Priority: 5
+---
+@quill
+% Something just started singing out by that hulk. Tell me it is yours.
+% I have a new beacon on my board, out by the hulk. Is that your work?
+
+@ives
+% Salvage desk. If it is theirs, I need to hear them say it.
+% Chief Ives, salvage desk. Say it for the ledger, please.
+
+- [It is ours, DS 1. The beacon is set.]() ; completes report_in
+- [Who else is asking about her?](quill_rivals)
+
+### [Who Else Is Asking](quill_rivals)
+---
+Speaker: quill
+---
+% Two of them. Captain Sable, who never pays, and the Guild's assessor, who always does.
+% The Breakers want her for parts. And the Guild's assessor has called me twice today.
+
+- [Then log the claim, DS 1. The beacon is set.]() ; completes report_in

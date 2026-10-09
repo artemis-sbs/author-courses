@@ -6,8 +6,8 @@ The Corsair Queen with a story of her own. The crew must sink the Morrigan, and 
 minutes to do it or the game is lost. The Badb is worth a bonus. Ninety seconds after the
 Queen arrives, a third ship she held back comes in, and the crew is told to sink that too.
 
-*[Screenshot to add: the crew's quest list after her arrival, with Sink the Morrigan, Sink
-the Badb and Her Reserve in it.]*
+*[Screenshot to add: the Quest Log after her arrival, with Sink the Morrigan, Sink the Badb
+and Her Reserve in it.]*
 
 Most of that is lines in `corsair_queen.amd`, in words you learned in Class 1. The third
 ship is one card of MAST. It is called her **hook**, and it lives in one new, small file.
@@ -18,11 +18,12 @@ ship is one card of MAST. It is called her **hook**, and it lives in one new, sm
 
 ## Before you start
 
-- `corsair_queen.amd` from Lecture 9, in `data\missions\common_data\bosses`.
+- `corsair_queen.amd` as Lecture 9 left it, in `data\missions\common_data\bosses`. A copy
+  is in Lecture 9's `example\` folder.
 - `sbs lint common_data\bosses` says `clean`.
 - From Class 1, Lecture 9: `Then: reveal`, `Required:`, `Fails when:` and `Lose:`.
-- From Class 1, Lecture 11: your cards "finish a step" and "wait", and the two checks,
-  `sbs lint` and `sbs compile`.
+- From Class 1, Lecture 11: your cards "finish a step" and "wait", and what lint says
+  when a card cannot be read: an error that ends `mast-compile`.
 
 Open the `data\missions` folder in VS Code, then `common_data`, `bosses`,
 `corsair_queen.amd`.
@@ -281,15 +282,30 @@ Hook: corsair_queen_hook
 
 The word after `Hook:` and the word after `===` must be the same, letter for letter.
 
-Check it, with both commands:
+Check it. There are two things to check now, so there are two commands:
 
 ```
 sbs lint common_data\bosses
-sbs compile LegendaryMissions
+sbs lint LegendaryMissions
 ```
 
-Lint says `clean`. Compile prints nothing. Then play it. Nothing told the crew that a boss
-had arrived before. Now, as she arrives, every crew ship is told:
+The first reads your boss file, as before, and says `clean`.
+
+The second reads all of LegendaryMissions, your card included, the way the game will. It
+prints each file's name and, under it, `clean` or its findings. With one boss file of
+yours, it ends:
+
+```
+8 amd + 20 mast file(s): 0 error(s), 2 warning(s)
+```
+
+**Read that last line for `0 error(s)`.** The two warnings are not yours. They are in two
+files that came with the game, `maps\sides.amd` and `maps\mission_helper_functions.py`,
+and they are there on a copy nobody has touched. Leave them alone. A finding that names
+`corsair_queen\__init__.mast` or `common_data\bosses\corsair_queen.amd` is yours.
+
+Then play it. Nothing told the crew that a boss had arrived before. Now, as she arrives,
+every crew ship is told:
 
 ```
 The Corsair Queen has entered the sector.
@@ -377,10 +393,10 @@ she arrives in the same moment her step is revealed.
 
 ```
 sbs lint common_data\bosses
-sbs compile LegendaryMissions
+sbs lint LegendaryMissions
 ```
 
-You want:
+From the first you want:
 
 ```
 == common_data\bosses\corsair_queen.amd ==
@@ -389,7 +405,8 @@ You want:
 1 amd + 0 mast file(s): 0 error(s), 0 warning(s)
 ```
 
-and nothing at all from the second command.
+From the second you want `0 error(s)` on the last line, and no finding under a file of
+yours. The two warnings in the game's own files are still there.
 
 The mistakes below were each made on purpose, and each was played.
 
@@ -407,15 +424,18 @@ the line lint prints.
 | `Loose:` for `Lose:` | The objective fails and the game never ends. It cannot be won or lost | `unknown-field` |
 | `Parent: seige_mission` | The objective is not part of the ending. The crew wins without it | `dangling-parent` |
 | `Required true` (no colon) | The same | An error: it expected `Label: value` |
-| `Then: reveal sink_nemian` (misspelled) | Sink the Nemain never appears | `dangling-reveal` |
+| `Then: reveal sink_nemian` (misspelled) | Sink the Nemain never appears | `dangling-reveal`, and `never-revealed` on Sink the Nemain |
+| A hidden step that nothing reveals | It never appears | `never-revealed` |
 | `Starts when: reveal` (the `ed` left off) | The step is not hidden. It is listed from her arrival, as a job waiting to be accepted | `unknown-trigger` |
 | Two objectives with one key | Only the first appears | `duplicate-key` |
-| An objective heading with three hashes | Your boss is not in the Boss list. `mast.runtime.log` names the file | An error: `heading-level-jump` |
+| An objective heading with three hashes | It still plays. `mast.runtime.log` has a line about the heading | An error: `heading-level-jump` |
 | The word `Quest` deleted from an objective's fence | It still plays | `unknown-field`, on most lines of that fence |
 | `Hook:` typed in an objective's fence | No hook runs | `unknown-field` |
 | `Hook:` typed below the first fence's closing `---` | No hook runs | `field-below-fence` |
 | `Win:` typed in the boss's own fence | Nothing. The game is not won by it | `unknown-field` |
 | The signal on the card is not the one after `Done when: signal` | The Nemain arrives. Her Reserve never finishes, and Sink the Nemain never appears | `unfired-signal` |
+| `signal_emit("nemain_arrived")` on the card, the short way | The same | `unfired-signal`. It says a quest does not hear a plain `signal_emit` |
+| The card's file is named `__init__.mast.txt`, or the `corsair_queen` folder is gone | She arrives without her hook: no sentence, no reserve ship | `unfired-signal` |
 
 **In the boss file, and lint says `clean`.** Check these by eye.
 
@@ -426,7 +446,6 @@ the line lint prints.
 | `Done when: destroy the Morrigan` | The same. The game looks for a role called `the morrigan` |
 | `Then: reveal corsair_queen/sink_nemain` | Sink the Nemain never appears. `mast.runtime.log` has a line about it |
 | `State: active` left in the hidden step, below `Starts when: revealed` | The step is not hidden. It is live from her arrival |
-| A hidden step that nothing reveals | It never appears |
 | No `State:` line and no `Starts when:` line | The objective is a job waiting to be accepted, not a live one. A ship sunk before then does not count. On a `Required:` one the game then cannot be won |
 | `Required: true` with no `Parent:` line | Not required. The crew wins without it |
 | `Fatal: true` and `Fails when:` with no `Lose:` line | When the time runs out the objective fails, and the game never ends. It cannot be won or lost |
@@ -434,29 +453,33 @@ the line lint prints.
 | An objective with the key of one of the Siege's own quests, such as `break_siege` | Your objective never appears |
 | `Reward: 600`, or `Reward: six hundred credits` | Nothing is paid |
 
-**In the card.** Lint does not read the card for mistakes. `sbs compile` does.
+**In the card.** The last column is what `sbs lint LegendaryMissions` prints under
+`corsair_queen\__init__.mast`.
 
-| Mistake | `sbs compile LegendaryMissions` | In the game |
+| Mistake | What the game does | Lint says |
 |---|---|---|
-| A quote mark left off | `unterminated string literal`, with the file and the line | Nothing in LegendaryMissions runs. No map, no ships, on any map |
-| One line indented three spaces, the others four | `Bad indentation`, with the line | The same |
-| A note of your own that starts with `//` | `Unrecognized syntax`, with the line | The same |
-| The closing curly bracket left off the ship line | An error about a parenthesis, with the line | The same |
-| The card pasted twice | `Duplicate label 'corsair_queen_hook'` | The same |
-| The file is named `corsair_queen.mast`, not `__init__.mast` | Nothing | She arrives without her hook: no sentence, no reserve ship. `mast.runtime.log` says the hook was not found |
-| The label's name is not the word after `Hook:` | Nothing | The same |
-| `prefab_siege_boss_ship` misspelled | Nothing | The game stops with an error when the wait ends |
-| `delay_sim(10)` with no `await` | Nothing | No wait. The Nemain is there when the Queen arrives |
-| `signal_emit("nemain_arrived")`, the short way | Nothing | The Nemain arrives. Her Reserve never finishes |
-| The ship key misspelled, `pirate_brigantin` | Nothing | A ship named Nemain arrives, on a ship key the game does not have. Do not share a boss like this |
-| No `->END` on the last line | Nothing | It works. Keep the line anyway |
-| The label written `== corsair_queen_hook ==` | Nothing | It works |
-| The card pasted at the end of `LegendaryMissions\story.mast`, with no file of its own | Nothing | It works. But that is one of the game's own files, and an update puts the original back |
+| A quote mark left off | Nothing in LegendaryMissions runs. No map, no ships, on any map | An error: `mast-compile`. It says `unterminated string literal`, with the line |
+| One line indented three spaces, the others four | The same | `mast-compile`. It says `Bad indentation` |
+| A note of your own that starts with `//` | The same | `mast-compile`. It says `Unrecognized syntax` |
+| The closing curly bracket left off the ship line | The same | `mast-compile`. It says a parenthesis does not match |
+| The card pasted twice | The same | `mast-compile`. It says `Duplicate label 'corsair_queen_hook'` |
 
-Read the first rows of that table twice. Your Class 1 cards were in your own mission. This
-card is inside LegendaryMissions, so a card that does not compile stops every
-LegendaryMissions map, not only your boss. Run `sbs compile LegendaryMissions` every time
-you touch the card.
+**In the card, and lint says nothing.** Check these by eye.
+
+| Mistake | What the game does |
+|---|---|
+| The file is named `corsair_queen.mast`, not `__init__.mast` | She arrives without her hook: no sentence, no reserve ship. `mast.runtime.log` says the hook was not found |
+| The label's name is not the word after `Hook:` | The same |
+| `prefab_siege_boss_ship` misspelled | The game stops on a page of errors when the wait ends |
+| `delay_sim(10)` with no `await` | No wait. The Nemain is there when the Queen arrives |
+| The ship key misspelled, `pirate_brigantin` | A ship named Nemain arrives, on a ship key the game does not have. Do not share a boss like this |
+| No `->END` on the last line | It works. Keep the line anyway |
+| The label written `== corsair_queen_hook ==` | It works |
+| The card pasted at the end of `LegendaryMissions\story.mast`, with no file of its own | It works. But that is one of the game's own files, and an update puts the original back |
+
+Read the first table twice. Your Class 1 cards were in your own mission. This card is
+inside LegendaryMissions, so a card the game cannot read stops every LegendaryMissions map,
+not only your boss. Run `sbs lint LegendaryMissions` every time you touch the card.
 
 For the mistakes nothing warns you about, check four things by eye:
 
@@ -468,15 +491,17 @@ For the mistakes nothing warns you about, check four things by eye:
 
 ## Step 12 - Play it
 
-1. Start the game as the server with LegendaryMissions. Choose the **Siege** map.
-2. Under **Main**, set **Difficulty** to 5 and choose Corsair Queen in the **Boss** list.
-3. Start the game.
+1. Start the game with `sbs run server,helm,weapons -m LegendaryMissions`. Stay on
+   **Siege**.
+2. In the **Options** panel, set **Difficulty** to 5 and choose Corsair Queen on the
+   **Boss** line.
+3. Press **Start Mission**.
 
 With the test numbers, this is what happens:
 
 1. About four seconds in, she arrives. Every crew ship is told `The Corsair Queen has
    entered the sector.`
-2. The quest list has three new objectives: **Sink the Morrigan**, **Sink the Badb** and
+2. The Quest Log has three new objectives: **Sink the Morrigan**, **Sink the Badb** and
    **Her Reserve**. Sink the Nemain is not there.
 3. About ten seconds later the **Nemain** is on the map, 28000 from the middle, and she
    starts to move. The crew is told `Quest complete: Her Reserve`. **Sink the Nemain** is
@@ -546,7 +571,7 @@ Then add four lines to the note at the top of `corsair_queen.amd`, so the note r
 // is her hook: LegendaryMissions\corsair_queen\__init__.mast.
 ```
 
-Save both files. Run both checks once more.
+Save both files. Run both lint commands once more.
 
 ## Keep your work safe
 
@@ -561,6 +586,10 @@ After an update your boss is still in the Boss list, because her `.amd` file is 
 there. Her hook is gone. If you choose her then, she arrives without it: her ships and her
 objectives are there, the reserve ship never comes, and `mast.runtime.log` in the
 LegendaryMissions folder says the hook was not found.
+
+Lint notices too. With the folder gone, `sbs lint common_data\bosses` warns that Her
+Reserve waits for a signal nothing sends. That warning, on a file that was `clean` last
+week, means the folder is missing.
 
 So:
 
@@ -711,7 +740,7 @@ the same name.
 
 | What you see | Likely cause |
 |---|---|
-| LegendaryMissions starts with no maps, or with a page of errors | The card does not compile. Run `sbs compile LegendaryMissions` and fix the line it shows. If you cannot, move the `corsair_queen` folder out of `LegendaryMissions` |
+| LegendaryMissions starts with no maps, or with a page of errors | The game cannot read the card. Run `sbs lint LegendaryMissions` and fix the line it shows. If you cannot, move the `corsair_queen` folder out of `LegendaryMissions` |
 | She arrives, and nothing her hook does happens | The word after `Hook:` is not the name of a label. The folder is missing, the file is not named `__init__.mast`, or the two words differ. `mast.runtime.log` says so |
 | The game stops with an error some seconds after she arrives | A word on the ship line is misspelled |
 | She arrives and no sentence is shown | The `Hook:` line is missing, below the closing `---`, or in the wrong fence |
@@ -723,9 +752,9 @@ the same name.
 | The time runs out and nothing happens, then or later | `Fatal: true` with no `Lose:` line, or `Lose:` misspelled |
 | The game ends as soon as one ship is sunk | A `Win:` line is still in the file from Step 6 |
 | BioMechs arrive with her | The `Hook:` line still says `biomech_infestation` |
-| After an update, the game stops when she arrives | The update removed the `corsair_queen` folder. Copy it back |
+| After an update, she arrives and her reserve ship never comes | The update removed the `corsair_queen` folder. Copy it back |
 | A change you saved did nothing | The mission was already running. Boss files and cards are read when the mission starts |
-| `sbs lint common_data\bosses` warns about every line of the fence | Your copy of the tools is older than this lesson. Update with `sbs update` |
+| Lint warns about every line of the first fence | Your copy of the game or of `sbs` is older than this course. Let the store update the game to 1.4.0, and type `sbs update` |
 
 `mast.runtime.log` is in the `LegendaryMissions` folder. It is empty after a clean game.
 
@@ -743,11 +772,11 @@ the same name.
    `Required: true`.
 5. Give it a hook that says one sentence when it arrives. Add a second card to
    `__init__.mast`, under the first card's `->END`, with a label name of its own.
-6. Run both checks. Play it.
+6. Run both lint commands. Play it.
 
 **Break it on purpose.** Change one letter in the `Hook:` line of your second boss. Run
-both checks: they say nothing. Play it, and see the game stop when the boss arrives. Fix
-it.
+both lint commands: they say nothing about it. Play it. The boss arrives and says
+nothing. Open `mast.runtime.log` and read the line. Fix it.
 
 **A count.** Give the Corsair Queen one more bonus: an objective that says `Done when:
 destroy 4 boss_fleet`, with a reward and no `Required:` line.
@@ -756,10 +785,10 @@ destroy 4 boss_fleet`, with a reward and no `Required:` line.
 
 You are done when all six are true:
 
-- `sbs lint common_data\bosses` shows your file as `clean`, and `sbs compile
-  LegendaryMissions` prints nothing.
+- `sbs lint common_data\bosses` shows your file as `clean`, and `sbs lint
+  LegendaryMissions` ends with `0 error(s)` and no finding under a file of yours.
 - When she arrives, the crew is told your sentence.
-- Sink the Morrigan, Sink the Badb and Her Reserve are in the quest list when she
+- Sink the Morrigan, Sink the Badb and Her Reserve are in the Quest Log when she
   arrives. Sink the Nemain is not.
 - After the wait on your card, the Nemain is on the map and Sink the Nemain is in the
   list.
