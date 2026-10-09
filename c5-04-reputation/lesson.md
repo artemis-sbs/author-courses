@@ -20,8 +20,8 @@ short calls.
 
 ## Before you start
 
-- Your `MyUniverse` mission as Lecture 3 left it. Its two files match
-  `c5-03-sides-diplomacy-goods\example\`, with the card in `story.mast`.
+- Your `MyUniverse` mission as Lecture 3 left it. `kestrel_verge.amd` matches
+  `c5-03-sides-diplomacy-goods\example\`.
 - `sbs lint MyUniverse` says `clean`.
 - The game closed, and the save deleted:
   `C:\Cosmos\data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml`.

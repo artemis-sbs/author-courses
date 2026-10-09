@@ -7,12 +7,10 @@
 > save cannot reach a player's own. **Nothing in this lecture has been run in the real
 > game, and nobody has seen any of its screens.**
 >
-> **The card in Step 4 is a bridge over two defects in the released Open Universe
-> engine.** Without it, selecting a station that belongs to an authored side stops the
-> mission (`name 'sides_standing' is not defined`, then `officers_captured_by`). When the
-> engine is mended, take Step 4 off the page, take scene 5 out of this script, and take
-> the two card rows out of the tables. The card is harmless if it stays in a student's
-> file.
+> **2026-10-08, later:** the page first carried a card for `story.mast`, a bridge
+> over two faults in Open Universe. Those are mended and released, so the card, its
+> step and its scene are gone. Lecture 5's files were then run without the card in
+> the stand-in and in the real game's server (no console): no error either way.
 
 The companion page is `lesson.md`; the finished files are in `example\`.
 
@@ -23,8 +21,8 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 | Mission | `MyUniverse` as Lecture 2 leaves it: its two files match `c5-02-your-universe-file\example\` |
 | Saves | No `universe_save_the_kestrel_verge_1.yaml` in `data\missions\common_data\saves` |
 | Tool and libraries | Current: `sbs update`, then `sbs fetch "MyUniverse" --update-libs` |
-| VS Code | `MyUniverse` open, `kestrel_verge.amd` and `story.mast` in two tabs, font size raised |
-| Game | Closed. Started on camera in scene 9 with `sbs run server,helm,comms -m MyUniverse map=0` |
+| VS Code | `MyUniverse` open, `kestrel_verge.amd` open, font size raised |
+| Game | Closed. Started on camera in scene 8 with `sbs run server,helm,comms -m MyUniverse map=0` |
 
 ## Confirm on camera
 
@@ -56,7 +54,7 @@ The companion page is `lesson.md`; the finished files are in `example\`.
    mixed kinds.
 9. Loot: 2000 draws with the page's four weights gave 964 ore, 690 provisions, 222 tech,
    124 contraband, and no gas.
-10. Every row of the two tables in Step 7: 44 variants, one change each, each linted and
+10. Every row of the two tables in Step 6: 41 variants, one change each, each linted and
     played.
 
 **Read in the code, not run:** the greeting lines in the Character table; that a greeting
@@ -72,9 +70,7 @@ is sent on arrival in a side's system; the words of the ceasefire reply.
 4. The side's greeting on arrival: where it is drawn and for how long.
 5. A side's `Color:` anywhere on a screen.
 6. Loot crates in a system, and their names.
-7. What a player sees when the card is missing. The mock ends every task of the mission
-   and writes the error to `mast.runtime.log`.
-8. Whether the crew can dock at Hollin Compact.
+7. Whether the crew can dock at Hollin Compact.
 
 ## Scenes
 
@@ -123,19 +119,7 @@ foe gets things from the game for free. || There's a fleet guarding its home. ||
 system the game fills with enemies, | anywhere in the universe, | is filled with their
 ships. || So one word gives your villains a navy. ||"
 
-### 5. A card for the story file
-
-**Screen:** `story.mast`. Paste the six-line card under the two travel lines.
-
-**Say:** "Now one card for the story file. || I paste it under the two travel lines, | and
-there's nothing in it to change. ||| Here's why it's needed. || One of the stations at home
-now belongs to a side I wrote. || When Comms selects a station like that, | the game asks
-for four names it can't find, | and the mission stops. || These lines give it those names.
-||"
-
-> Take this scene out when the engine is mended. See the note at the top.
-
-### 6. Two leads
+### 5. Two leads
 
 **Screen:** End of the `.amd`. Type the Narrative chapter with the two leads. Highlight
 `Done when: reach 3, 1`.
@@ -146,7 +130,7 @@ the ones you wrote in Class 1, | and they live in a chapter called Narrative. ||
 part is this: Done when, reach, and two numbers. || That means, arrive in that system. ||
 And because the quest has somewhere to go, | Helm gets an Engage button on it. ||"
 
-### 7. Goods
+### 6. Goods
 
 **Screen:** Type the Goods chapter between Landmarks and Narrative. Highlight a `Weight:`
 line.
@@ -159,7 +143,7 @@ contraband is rare. || I left gas out altogether, | so there isn't any, anywhere
 That's the whole of what a writer decides here. || The prices in a market belong to the
 game. ||"
 
-### 8. Check it
+### 7. Check it
 
 **Screen:** Save both files. `sbs lint MyUniverse`: clean. Then the page's list of six
 things to check by eye.
@@ -170,7 +154,7 @@ sides share one. || Every job after Offers is a key in the Jobs chapter. || Ever
 after Flies is one of the six. || Every good is one of the five. || And the numbers after
 reach are that side's home. ||"
 
-### 9. Meet the neighbors
+### 8. Meet the neighbors
 
 **Screen:** `sbs run server,helm,comms -m MyUniverse map=0`. Comms: Hollin Compact, its
 buttons. Then Kestrel Relay. Take the cargo run. Helm: Quest Log, Engage the cargo run,
@@ -183,7 +167,7 @@ in the Quest Log. || I fly the cargo run first, | and then I engage The Second C
 And here's the Deepwell's own station, | offering an escort and nothing else, | just as I
 wrote it. ||"
 
-### 10. The ones who shoot first
+### 9. The ones who shoot first
 
 **Screen:** Helm: Engage The Breaking Yard. The arrival. Comms: select the Gleaners'
 station; Negotiate Ceasefire.
@@ -195,7 +179,7 @@ cargo run first. || I press it, and the war is off. ||| It's the whole side, eve
 and it's written into the save. || But it's a ceasefire, and not a friendship. | They still
 won't give me work. ||"
 
-### 11. Your turn
+### 10. Your turn
 
 **Screen:** The exercise on the companion page.
 

@@ -21,7 +21,7 @@ leads.
 ## Before you start
 
 - Your `MyUniverse` mission as Lecture 4 left it. `kestrel_verge.amd` matches
-  `c5-04-reputation\example\`, and `story.mast` has the card from Lecture 3.
+  `c5-04-reputation\example\`.
 - `sbs lint MyUniverse` says `clean`.
 - The game closed, and the save deleted:
   `C:\Cosmos\data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml`.

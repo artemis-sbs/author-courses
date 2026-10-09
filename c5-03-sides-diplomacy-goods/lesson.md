@@ -11,7 +11,7 @@ your systems is the cargo your world would have.
 Escort among its buttons.]*
 
 You write three records in a Sides chapter, two short quests that take the crew to see
-them, and a Goods chapter. You paste one card into `story.mast`.
+them, and a Goods chapter. All of it goes in `kestrel_verge.amd`.
 
 ## The video
 
@@ -163,37 +163,7 @@ first gets it and the other has no home at all.
 sides meet each other. There is no line that makes the Gleaners the enemy of Hollin. In
 this game every quarrel runs through the crew.
 
-## Step 4 - A card for the story file
-
-Open `story.mast`. Find the two travel lines from Lecture 2:
-
-```
-default shared QUEST_ENGAGE_ENABLED = True
-default shared WAYPOINTS_ENABLED = True
-```
-
-Leave one empty line under them and paste this card, exactly as it is. There are no
-words in it to change.
-
-```
-# ---- CARD: Comms at a station that belongs to one of your sides ----
-# Four names the Open Universe engine asks for and does not find. Paste as they are.
-default shared sides_standing = reputation_standing
-default shared side_ceasefire_cost = reputation_ceasefire_cost
-default shared side_alliance_standing = reputation_alliance_standing
-default shared officers_captured_by = lambda side: []
-```
-
-Every line starts at the left edge.
-
-Why you need it: in Lecture 2 both stations at home were the crew's own. Now one of them
-is Hollin's. When Comms selects a station that belongs to one of your sides, the game
-works out what that side thinks of the crew, and today it asks for four names that are
-not there. Without the card, the mission stops working at that moment. With it, Comms
-shows that side's work and its offers of peace. The card can stay in the file when the
-game is mended.
-
-## Step 5 - Two leads, so the crew can go and look
+## Step 4 - Two leads, so the crew can go and look
 
 Your sides live in three systems. The crew can only jump where a job sends them. So give
 them two jobs whose whole purpose is the journey.
@@ -230,7 +200,7 @@ You wrote quests like these in Class 1. Two things are new.
 Because the quest has a system to reach, Helm gets an **Engage** button on it, exactly as
 on a cargo run.
 
-## Step 6 - Goods
+## Step 5 - Goods
 
 Loot drifts in most systems: crates the crew can fly through and collect. The game has
 five kinds, and unless you say otherwise it scatters them evenly.
@@ -286,7 +256,7 @@ This chapter leaves `gas` out, so no gas drifts anywhere in The Kestrel Verge.
 That is all a writer decides about the economy today: which goods, and how common. The
 prices in a station's market, and what it has in stock, are the game's own.
 
-## Step 7 - Check it
+## Step 6 - Check it
 
 Save both files.
 
@@ -314,7 +284,6 @@ one change to the finished files, then linted, then played.
 | A side written with four hashes | Reads it as three. Nothing is lost | An error: "has 4 hashes and the heading it sits under has 2" (`heading-level-jump`) |
 | Two sides with the same key | The second one is lost. It has no station | A warning: "`hollin` is the key of 2 records in the same place" (`duplicate-key`) |
 | `## [Narrative](story)` | No leads in the Quest Log | A warning on each `Starts when:` and `Done when:` line: "this record is being read as a map" (`unknown-field`) |
-| A line of the card with spaces in front of it | Nothing runs: no ship, no station | An error: `Bad indentation` (`mast-compile`) |
 
 **Mistakes lint cannot see**
 
@@ -336,8 +305,6 @@ Lint says `clean` for every one of these.
 | `Weight: lots` | The game starts and stays empty: no ship, no station. `mast.runtime.log` says `invalid literal for int()` |
 | `Weight: 0`, or no `Weight:` line | The good counts as 1 |
 | `## [Goods](cargo)` | The chapter is ignored. All five goods, evenly |
-| A word of the card misspelled | Nothing runs: no ship, no station. `mast.runtime.log` names the word |
-| The card left out | The first time Comms selects a side's station, the mission stops working. `mast.runtime.log` says `name 'sides_standing' is not defined` |
 
 So after lint, check these by eye:
 
@@ -351,7 +318,7 @@ So after lint, check these by eye:
 And after you play, open `mast.runtime.log` in your mission folder. When it is empty, the
 game found nothing wrong.
 
-## Step 8 - Play it
+## Step 7 - Play it
 
 ```
 sbs run server,helm,comms -m MyUniverse map=0
@@ -397,7 +364,6 @@ work.
 |---|---|
 | Home still has a station called Starbase | Hollin's `Home:` is not `0, 0`, or the sides were not read. Look at the hashes: two on `Sides`, three on each side |
 | No ship and no station. Nothing happens | `story.mast` is broken, or a `Weight:` is not a number. Run lint, then read `mast.runtime.log` |
-| The game stops working when Comms selects Hollin Compact | The card from Step 4 is missing. `mast.runtime.log` says `name 'sides_standing' is not defined` |
 | The Gleaners' home has no fleet, and Comms has no **Negotiate Ceasefire** | `Disposition:` is not the word `foe` in small letters, or the word after `Flies:` is not one of the six |
 | A fleet attacks the crew in the first minute | A `foe` side has `Home: 0, 0`. Its station and its fleet are in the crew's own port |
 | **Negotiate Ceasefire** is not among the buttons | The crew has fewer than 600 credits, or the side is not a `foe` |

@@ -8,9 +8,6 @@
 > game, and nobody has seen any of its screens.** A sky, a nebula, a color and a piece
 > of music are exactly the things the stand-in cannot show: what was measured is that
 > the game was asked for them.
->
-> The card from Lecture 3 is still in `story.mast` and still needed: scene 9 selects a
-> station that belongs to a side.
 
 The companion page is `lesson.md`; the finished file is in `example\`.
 
@@ -18,7 +15,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyUniverse` as Lecture 4 leaves it: `kestrel_verge.amd` matches `c5-04-reputation\example\`, and `story.mast` matches `c5-03-sides-diplomacy-goods\example\` |
+| Mission | `MyUniverse` as Lecture 4 leaves it: `kestrel_verge.amd` matches `c5-04-reputation\example\` |
 | Saves | No `universe_save_the_kestrel_verge_1.yaml` in `data\missions\common_data\saves` |
 | Tool and libraries | Current: `sbs update`, then `sbs fetch "MyUniverse" --update-libs` |
 | VS Code | `MyUniverse` open, `kestrel_verge.amd` in a tab, font size raised |
@@ -30,7 +27,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 **In the mock, by script, on 2026-10-08, with the page's own file:**
 
 1. The finished file lints `clean` and plays with no errors (142 labels run) and an empty
-   `mast.runtime.log`. `story.mast` is unchanged from Lecture 3.
+   `mast.runtime.log`. `story.mast` is unchanged from Lecture 2.
 2. The four dials are read as 8, 12, 20 and 60 in 100. The count of kinds in the table
    under Step 2 is the game's own, over the 169 systems nearest home, with one seed.
 3. With the regions: all 25 systems of the Hollin Fields hold no enemy system and 5

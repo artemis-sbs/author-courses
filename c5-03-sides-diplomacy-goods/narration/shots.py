@@ -84,24 +84,7 @@ SHOTS = [
         "pauses": [0.9, 0.45, 1.8, 0.9, 0.9, 0.9, 1.8, 0.9, 0.9, 0.45, 0.45, 0.9, 1.2],
     },
     {
-        "id": "s05_a_card_for_the_story_file",
-        "title": 'A card for the story file',
-        "frames": 1086,
-        "captions": [
-            ('Now one card for the story file.', 0, 91),
-            ('I paste it under the two travel lines,', 118, 223),
-            ("and there's nothing in it to change.", 236, 327),
-            ("Here's why it's needed.", 381, 434),
-            ('One of the stations at home now belongs to a side I wrote.', 461, 630),
-            ('When Comms selects a station like that,', 657, 749),
-            ("the game asks for four names it can't find,", 762, 879),
-            ('and the mission stops.', 893, 945),
-            ('These lines give it those names.', 972, 1050),
-        ],
-        "pauses": [0.9, 0.45, 1.8, 0.9, 0.9, 0.45, 0.45, 0.9, 1.2],
-    },
-    {
-        "id": "s06_two_leads",
+        "id": "s05_two_leads",
         "title": 'Two leads',
         "frames": 1282,
         "captions": [
@@ -118,7 +101,7 @@ SHOTS = [
         "pauses": [0.45, 0.9, 1.8, 0.45, 0.9, 0.9, 0.9, 0.45, 1.2],
     },
     {
-        "id": "s07_goods",
+        "id": "s06_goods",
         "title": 'Goods',
         "frames": 1547,
         "captions": [
@@ -139,7 +122,7 @@ SHOTS = [
         "pauses": [0.9, 0.45, 0.9, 0.45, 1.8, 0.9, 0.45, 0.45, 0.9, 0.45, 1.8, 0.9, 1.2],
     },
     {
-        "id": "s08_check_it",
+        "id": "s07_check_it",
         "title": 'Check it',
         "frames": 1165,
         "captions": [
@@ -155,7 +138,7 @@ SHOTS = [
         "pauses": [0.9, 1.8, 0.9, 0.9, 0.9, 0.9, 0.9, 1.2],
     },
     {
-        "id": "s09_meet_the_neighbors",
+        "id": "s08_meet_the_neighbors",
         "title": 'Meet the neighbors',
         "frames": 1336,
         "captions": [
@@ -175,7 +158,7 @@ SHOTS = [
         "pauses": [0.9, 0.45, 0.9, 0.45, 1.8, 0.9, 0.9, 0.45, 0.9, 0.45, 0.45, 1.2],
     },
     {
-        "id": "s10_the_ones_who_shoot_first",
+        "id": "s09_the_ones_who_shoot_first",
         "title": 'The ones who shoot first',
         "frames": 1377,
         "captions": [
@@ -196,7 +179,7 @@ SHOTS = [
         "pauses": [0.9, 0.45, 1.8, 0.45, 0.9, 0.9, 0.45, 0.9, 1.8, 0.45, 0.9, 0.45, 1.2],
     },
     {
-        "id": "s11_your_turn",
+        "id": "s10_your_turn",
         "title": 'Your turn',
         "frames": 889,
         "captions": [

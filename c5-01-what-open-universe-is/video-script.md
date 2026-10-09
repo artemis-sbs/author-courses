@@ -10,9 +10,8 @@
 >   of The Fading Signal. In Default the Admiral console is active; that was not played.
 > - **A second fault waits behind it.** When the probe sent the message an Engage button
 >   would send, the ship arrived at the Lantern Combine's home, and selecting a station
->   there on Comms stopped the mission (`name 'sides_standing' is not defined`). Lecture
->   3's card bridges this in a student's own mission. The Open Universe mission has no
->   such card.
+>   there on Comms stopped the mission (`name 'sides_standing' is not defined`). That
+>   fault was mended in Open Universe later the same day and is released.
 > - So the lecture is a short true play, then a reading of `silver_reach.amd` beside a
 >   table of what the file becomes. **When the mission is mended** (one line switches
 >   Engage on in its `story.mast`, and the engine's missing names are restored), Stop 3

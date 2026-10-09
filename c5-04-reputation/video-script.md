@@ -20,8 +20,7 @@
 >   `neutral` never offers one.
 > - Lint warns on all six threshold dials, though the game reads them.
 >
-> When any of these is mended, this page changes. The card from Lecture 3 is still
-> needed: every play below selects a side's station.
+> When any of these is mended, this page changes.
 
 The companion page is `lesson.md`; the finished file is in `example\`.
 
@@ -29,7 +28,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyUniverse` as Lecture 3 leaves it: `kestrel_verge.amd` and `story.mast` match `c5-03-sides-diplomacy-goods\example\` |
+| Mission | `MyUniverse` as Lecture 3 leaves it: `kestrel_verge.amd` matches `c5-03-sides-diplomacy-goods\example\` |
 | Saves | No `universe_save_the_kestrel_verge_1.yaml` in `data\missions\common_data\saves` |
 | Tool and libraries | Current: `sbs update`, then `sbs fetch "MyUniverse" --update-libs` |
 | VS Code | `MyUniverse` open, `kestrel_verge.amd` in a tab, font size raised |
@@ -40,7 +39,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 **In the mock, by script, on 2026-10-08, with the page's own files:**
 
 1. The finished file lints `clean` and plays with no errors (146 labels run) and an empty
-   `mast.runtime.log`. `story.mast` is unchanged from Lecture 3.
+   `mast.runtime.log`. `story.mast` is unchanged from Lecture 2.
 2. The standing table in Step 1, row by row, from the game's own function.
 3. The thresholds in Step 4, from the game's own functions: tier 2 at 20 and tier 3 at
    50; a foe deals at 20; a ceasefire costs 600, 400, 200 and 0 at 0, 10, 20 and 30, and
