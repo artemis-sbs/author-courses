@@ -1,0 +1,331 @@
+1
+00:00:00,000 --> 00:00:02,174
+You've walked your act alone.
+
+2
+00:00:02,624 --> 00:00:04,363
+You know it works.
+
+3
+00:00:06,163 --> 00:00:10,076
+What you don't know is how long it takes,
+
+4
+00:00:10,526 --> 00:00:14,874
+what a crew does when they don't know the answers,
+
+5
+00:00:15,324 --> 00:00:18,367
+or which of your sentences nobody understood.
+
+6
+00:00:20,167 --> 00:00:23,211
+Today you find out, with real people.
+
+7
+00:00:24,111 --> 00:00:28,024
+And then you read what the game wrote down,
+
+8
+00:00:28,474 --> 00:00:31,952
+and you change three things, and only three.
+
+9
+00:00:33,152 --> 00:00:35,326
+Three checks before anybody arrives.
+
+10
+00:00:35,776 --> 00:00:38,385
+Each sees something the others can't.
+
+11
+00:00:40,185 --> 00:00:41,924
+The first is lint.
+
+12
+00:00:42,824 --> 00:00:45,867
+If it isn't clean, you're not ready.
+
+13
+00:00:47,067 --> 00:00:49,676
+The second is the printed bible.
+
+14
+00:00:50,576 --> 00:00:52,315
+Go down the beats,
+
+15
+00:00:52,765 --> 00:00:56,243
+and read only two lines under each step.
+
+16
+00:00:56,693 --> 00:00:58,867
+Reached from, and leads to.
+
+17
+00:01:00,667 --> 00:01:06,320
+The first step leads somewhere, and is reached from nowhere, and that's right.
+
+18
+00:01:07,220 --> 00:01:11,133
+Every later step is reached from the one before.
+
+19
+00:01:12,033 --> 00:01:15,511
+And the act's ending leads nowhere, for now.
+
+20
+00:01:17,311 --> 00:01:24,267
+If a later step is sitting up in the first beat, with no reached from line,
+
+21
+00:01:24,717 --> 00:01:29,500
+then nothing reveals it, and no crew will ever see it.
+
+22
+00:01:30,700 --> 00:01:33,309
+The third check is the walk.
+
+23
+00:01:34,209 --> 00:01:38,991
+You go down the spine alone, as fast as you can.
+
+24
+00:01:40,791 --> 00:01:43,400
+And then you delete the save.
+
+25
+00:01:44,300 --> 00:01:46,909
+This is the one people forget.
+
+26
+00:01:47,809 --> 00:01:49,548
+I'd forget it too,
+
+27
+00:01:49,998 --> 00:01:53,476
+so it's written on the page in bold.
+
+28
+00:01:55,276 --> 00:02:00,059
+A crew that sits down to a save you've walked through
+
+29
+00:02:00,509 --> 00:02:03,552
+starts at the end of your act.
+
+30
+00:02:04,752 --> 00:02:06,491
+Now for the people.
+
+31
+00:02:06,941 --> 00:02:11,289
+There are five rules, and they're harder than they look.
+
+32
+00:02:12,189 --> 00:02:16,537
+Say what the game is, and nothing about the story.
+
+33
+00:02:17,437 --> 00:02:20,046
+Don't answer questions. Write them down.
+
+34
+00:02:20,946 --> 00:02:24,859
+Where do we go, isn't a question for you.
+
+35
+00:02:25,309 --> 00:02:28,352
+It's a lead that didn't say where.
+
+36
+00:02:30,152 --> 00:02:33,630
+Write the time whenever a step shows done.
+
+37
+00:02:35,430 --> 00:02:38,039
+Don't stop them leaving the spine.
+
+38
+00:02:38,489 --> 00:02:41,098
+If they take three jobs instead,
+
+39
+00:02:41,548 --> 00:02:45,026
+that's the best thing you'll learn all week.
+
+40
+00:02:46,826 --> 00:02:48,565
+And end it yourself.
+
+41
+00:02:49,765 --> 00:02:53,678
+When they've gone, look at what the game recorded.
+
+42
+00:02:55,478 --> 00:02:58,087
+The runtime log should be empty.
+
+43
+00:02:59,887 --> 00:03:01,626
+Then open the save.
+
+44
+00:03:02,076 --> 00:03:04,250
+Don't change it. Just read.
+
+45
+00:03:06,050 --> 00:03:11,702
+Under the ship's name is what the ship has earned with each side.
+
+46
+00:03:12,602 --> 00:03:14,341
+Below that, the credits.
+
+47
+00:03:16,141 --> 00:03:19,185
+And then every step of your story,
+
+48
+00:03:19,635 --> 00:03:21,374
+each with a state.
+
+49
+00:03:22,274 --> 00:03:25,317
+One is open, and two is hidden.
+
+50
+00:03:25,767 --> 00:03:27,507
+Ninety-nine means it's done.
+
+51
+00:03:28,407 --> 00:03:30,580
+Now search for state one.
+
+52
+00:03:31,480 --> 00:03:35,393
+There should be exactly one step of your spine.
+
+53
+00:03:35,843 --> 00:03:39,757
+That's the hook, and that's where next week begins.
+
+54
+00:03:40,957 --> 00:03:44,435
+Before you close that folder, copy the file.
+
+55
+00:03:45,335 --> 00:03:47,509
+Name it for the evening.
+
+56
+00:03:49,309 --> 00:03:52,787
+The start screen has a new game choice
+
+57
+00:03:53,237 --> 00:03:55,846
+that replaces the save without asking.
+
+58
+00:03:56,746 --> 00:04:01,528
+A copy every week is the only undo a campaign has.
+
+59
+00:04:03,328 --> 00:04:05,502
+And remember what's in it.
+
+60
+00:04:05,952 --> 00:04:08,561
+Every hidden step, word for word.
+
+61
+00:04:09,461 --> 00:04:12,939
+So keep it where the crew doesn't look.
+
+62
+00:04:14,139 --> 00:04:17,183
+Now compare your notes with your plan,
+
+63
+00:04:17,633 --> 00:04:20,241
+and write three changes. No more.
+
+64
+00:04:21,141 --> 00:04:26,359
+More than three, and you can't tell next week which one helped.
+
+65
+00:04:28,159 --> 00:04:30,767
+The commonest first one is this.
+
+66
+00:04:31,217 --> 00:04:36,000
+The crew arrives, and somebody asks, what do we do now?
+
+67
+00:04:37,800 --> 00:04:39,539
+A description is atmosphere.
+
+68
+00:04:40,439 --> 00:04:45,657
+So give the step an order, on a line of its own.
+
+69
+00:04:46,557 --> 00:04:49,165
+And name the console in it.
+
+70
+00:04:50,965 --> 00:04:53,139
+Scan the Wren from Science.
+
+71
+00:04:54,039 --> 00:04:57,083
+That's the cheapest fix in this class.
+
+72
+00:04:58,283 --> 00:05:00,022
+Lint still says clean.
+
+73
+00:05:00,922 --> 00:05:02,661
+So delete the save,
+
+74
+00:05:03,111 --> 00:05:07,459
+and play it again with different people if you can.
+
+75
+00:05:09,259 --> 00:05:11,867
+A crew that's seen evening one
+
+76
+00:05:12,317 --> 00:05:15,796
+can't tell you if the new order helps.
+
+77
+00:05:17,596 --> 00:05:22,378
+Every playtest of an evening needs people who haven't seen it.
+
+78
+00:05:23,278 --> 00:05:28,061
+So save your friends for the evenings you're least sure of.
+
+79
+00:05:29,261 --> 00:05:34,043
+So a walk proves the steps are joined, and nothing else.
+
+80
+00:05:35,843 --> 00:05:38,017
+The game records what happened,
+
+81
+00:05:38,467 --> 00:05:41,076
+and only your notes say why.
+
+82
+00:05:42,876 --> 00:05:47,224
+So make three changes, keep a copy of the save,
+
+83
+00:05:47,674 --> 00:05:50,283
+and then write the next evening.

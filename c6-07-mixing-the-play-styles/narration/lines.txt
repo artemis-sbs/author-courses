@@ -1,0 +1,88 @@
+s01_cold_open_0	Look at your first two evenings from the crew's side of the table.
+s01_cold_open_1	One of them belongs to Science.
+s01_cold_open_2	The other belongs to Weapons.
+s01_cold_open_3	If the next three are fights as well,
+s01_cold_open_4	half your crew spends a month watching.
+s01_cold_open_5	Today you'll plan who carries each evening,
+s01_cold_open_6	and you'll build two new kinds.
+s02_what_a_style_is_0	A style is the answer to one question.
+s02_what_a_style_is_1	Whose evening is it?
+s02_what_a_style_is_2	A search is Science's evening.
+s02_what_a_style_is_3	A fight belongs to Weapons and Engineering.
+s02_what_a_style_is_4	A talk belongs to Comms.
+s02_what_a_style_is_5	A race belongs to Helm.
+s02_what_a_style_is_6	Politics is Comms again, with the captain.
+s02_what_a_style_is_7	And trade is Helm and Comms together.
+s02_what_a_style_is_8	You can build all six of those today,
+s02_what_a_style_is_9	with what you already know.
+s03_styles_for_later_0	There are four more styles in this course.
+s03_styles_for_later_1	Boarding, a ruin, a set battle,
+s03_styles_for_later_2	and the Admiral's view from above.
+s03_styles_for_later_3	A campaign in your universe can't use those yet.
+s03_styles_for_later_4	Each one's waiting on a lecture in the last class.
+s03_styles_for_later_5	So plan for them, and write them in your rotation as later.
+s03_styles_for_later_6	But don't build them today.
+s04_the_rotation_0	Three rules, and they're habits, not laws.
+s04_the_rotation_1	Never the same style twice running.
+s04_the_rotation_2	Everyone carries an evening in every act.
+s04_the_rotation_3	And a tentpole mixes two.
+s04_the_rotation_4	Now look at the last column,
+s04_the_rotation_5	what's on offer beside the spine.
+s04_the_rotation_6	Half an evening is the universe, remember.
+s04_the_rotation_7	This is where you plan that half.
+s05_a_talk_evening_0	Evening three is a stub, so let's make it an evening.
+s05_a_talk_evening_1	The open now leads to an objective,
+s05_a_talk_evening_2	and the objective ends with a signal.
+s05_a_talk_evening_3	An answer in a hail sends it.
+s05_a_talk_evening_4	And there are two answers.
+s05_a_talk_evening_5	Pay the fee, and be polite.
+s05_a_talk_evening_6	Or lean on the clerk, for nothing.
+s05_a_talk_evening_7	Both of them finish the step.
+s05_a_talk_evening_8	But they leave the crew in different places with the Deepwell,
+s05_a_talk_evening_9	and that's remembered for the rest of the campaign.
+s05_a_talk_evening_10	There's one warning, though.
+s05_a_talk_evening_11	The answers are there from the first evening.
+s05_a_talk_evening_12	A curious crew can ask early,
+s05_a_talk_evening_13	and it won't count. So word them for that.
+s06_where_clocks_go_0	Now for the race.
+s06_where_clocks_go_1	A race is a step with a clock on it.
+s06_where_clocks_go_2	Before you put one on the spine, here's what I measured.
+s06_where_clocks_go_3	When the time ran out, the step failed.
+s06_where_clocks_go_4	And the next step was never revealed.
+s06_where_clocks_go_5	That's the campaign stopped,
+s06_where_clocks_go_6	in a save your crew has put ten weeks into.
+s06_where_clocks_go_7	So a clock never goes on the spine.
+s06_where_clocks_go_8	And a clock never runs across the end of an evening.
+s07_a_race_that_s_safe_0	A clock belongs on a job.
+s07_a_race_that_s_safe_1	A job that fails costs its penalty,
+s07_a_race_that_s_safe_2	and the crew can take it again.
+s07_a_race_that_s_safe_3	This one goes back to the Wren,
+s07_a_race_that_s_safe_4	so the place from evening one still matters.
+s07_a_race_that_s_safe_5	And it's tier two, which gives it a date.
+s07_a_race_that_s_safe_6	The Compact only offers it to a crew at twenty or more.
+s07_a_race_that_s_safe_7	Your ledger says when that is.
+s08_an_evening_off_the_map_0	What about a boarding evening, or a ruin, right now?
+s08_an_evening_off_the_map_1	You have those, as missions of their own.
+s08_an_evening_off_the_map_2	You can play one as an interlude,
+s08_an_evening_off_the_map_3	the same people in the same story.
+s08_an_evening_off_the_map_4	But be exact about it,
+s08_an_evening_off_the_map_5	because it's another save.
+s08_an_evening_off_the_map_6	Nothing they do there reaches your universe.
+s08_an_evening_off_the_map_7	The only bridge is the next evening's hook,
+s08_an_evening_off_the_map_8	so write that hook after you've played.
+s09_lint_and_play_0	Lint says it's clean.
+s09_lint_and_play_1	There's no lamp run on the list yet.
+s09_lint_and_play_2	I pay the levy once,
+s09_lint_and_play_3	and there it is.
+s09_lint_and_play_4	I take it and engage,
+s09_lint_and_play_5	and it's done and paid.
+s09_lint_and_play_6	Then it's evening three.
+s09_lint_and_play_7	At the Assay Office I hail,
+s09_lint_and_play_8	and I choose how to ask.
+s09_lint_and_play_9	The step shows done,
+s09_lint_and_play_10	and the way home appears.
+s10_close_0	So every evening has an owner,
+s10_close_1	and no style comes twice running.
+s10_close_2	No clock on the spine.
+s10_close_3	And an interlude is joined by your writing, and nothing else.
+s10_close_4	Next time, real people sit down at the table.

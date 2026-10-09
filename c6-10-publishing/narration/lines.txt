@@ -1,0 +1,85 @@
+s01_cold_open_0	Act one is written, and a table has played it.
+s01_cold_open_1	Now it has to work in somebody else's house.
+s01_cold_open_2	You've sent a mission before, at the end of the first class.
+s01_cold_open_3	A campaign's the same job,
+s01_cold_open_4	with four differences that matter.
+s02_four_differences_0	A mission's played once.
+s02_four_differences_1	A campaign's played for months, from a save.
+s02_four_differences_2	A mission's sent once.
+s02_four_differences_3	A campaign's sent again, every time you finish an act.
+s02_four_differences_4	The title of a mission can change.
+s02_four_differences_5	The title of a campaign names the save, so it can't.
+s02_four_differences_6	And your notes are in the folder,
+s02_four_differences_7	with the whole plot in them.
+s03_the_line_on_the_list_0	First, say what this is.
+s03_the_line_on_the_list_1	One line in the description file.
+s03_the_line_on_the_list_2	A campaign for one ship, act one, five evenings, version one.
+s03_the_line_on_the_list_3	No hyphen in that line, and no colon.
+s03_the_line_on_the_list_4	That's the one mistake that can stop the game for everybody,
+s03_the_line_on_the_list_5	and lint checks it for you.
+s03_the_line_on_the_list_6	And leave the name alone.
+s03_the_line_on_the_list_7	From the first evening on,
+s03_the_line_on_the_list_8	that name is where the crew's save is.
+s04_the_folder_s_name_0	Next, the folder gets a name of its own.
+s04_the_folder_s_name_1	I measured two things about that name.
+s04_the_folder_s_name_2	Nothing inside the files holds it.
+s04_the_folder_s_name_3	And the save doesn't follow the folder.
+s04_the_folder_s_name_4	It follows the title.
+s04_the_folder_s_name_5	So renaming the folder doesn't lose your save.
+s04_the_folder_s_name_6	But two folders with one title
+s04_the_folder_s_name_7	are playing the same campaign,
+s04_the_folder_s_name_8	whether you meant that or not.
+s05_three_checks_0	Then the three checks, in the usual order.
+s05_three_checks_1	I run lint, and it's clean.
+s05_three_checks_2	Then I run doctor,
+s05_three_checks_3	and the last block is your folder.
+s05_three_checks_4	Twenty-one libraries, where your first mission had twelve.
+s05_three_checks_5	That's the universe machinery.
+s05_three_checks_6	And then the walk, on a deleted save.
+s05_three_checks_7	And delete the save again when you're done.
+s06_take_out_what_isn_t_the_miss_0	Now the step a campaign adds.
+s06_take_out_what_isn_t_the_miss_1	Your own pages come out.
+s06_take_out_what_isn_t_the_miss_2	The campaign page is every act, and the ending.
+s06_take_out_what_isn_t_the_miss_3	The playtest page is what other crews did.
+s06_take_out_what_isn_t_the_miss_4	And any save you kept in here
+s06_take_out_what_isn_t_the_miss_5	has every hidden step in it.
+s06_take_out_what_isn_t_the_miss_6	Then delete what the tools made.
+s06_take_out_what_isn_t_the_miss_7	The printed bible especially.
+s06_take_out_what_isn_t_the_miss_8	Seven files are left.
+s06_take_out_what_isn_t_the_miss_9	Those seven are the mission.
+s07_zip_it_0	Zip the folder itself,
+s07_zip_it_1	the way you did in the first class.
+s07_zip_it_2	One honest word here.
+s07_zip_it_3	The universe file is plain text, and it's the whole act.
+s07_zip_it_4	A host who opens it has read your campaign.
+s07_zip_it_5	That's what a host is for.
+s07_zip_it_6	It's the same as handing someone the adventure to run.
+s07_zip_it_7	It also means you can't be crew in your own campaign
+s07_zip_it_8	unless somebody else is willing to read it.
+s08_the_note_0	The note is where a campaign really differs.
+s08_the_note_1	The setup's the same three commands as before.
+s08_the_note_2	Then four things only a campaign needs.
+s08_the_note_3	Start it the same way every week,
+s08_the_note_4	and never choose new game.
+s08_the_note_5	Don't rename the ship.
+s08_the_note_6	End each evening by jumping home.
+s08_the_note_7	And copy the save file somewhere safe, every week.
+s08_the_note_8	The note gives its name, and where it lives.
+s09_act_two_0	When act two's ready, you send the folder again,
+s09_act_two_1	and there are three rules.
+s09_act_two_2	The title doesn't change, not by a letter.
+s09_act_two_3	Nothing the crew has met is deleted or renamed,
+s09_act_two_4	because you only ever add.
+s09_act_two_5	And act one's ending gets its one new line,
+s09_act_two_6	the one that shows the first lead of act two.
+s09_act_two_7	The host swaps the folder.
+s09_act_two_8	The save isn't in it,
+s09_act_two_9	so the crew carries on.
+s09_act_two_10	And before you send it, check it yourself.
+s09_act_two_11	Start the new folder on your own save from the end of act one,
+s09_act_two_12	and see that the first new lead is there.
+s10_close_0	So that's a release.
+s10_close_1	A named folder, a clean zip, and a note.
+s10_close_2	The capstone's next, when it's written.
+s10_close_3	And everything it'll ask of you
+s10_close_4	is already on your campaign page.

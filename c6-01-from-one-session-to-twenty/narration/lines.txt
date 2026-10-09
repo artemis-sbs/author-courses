@@ -1,0 +1,91 @@
+s01_cold_open_0	Your universe works, and a crew can sit down and play it for an evening.
+s01_cold_open_1	This class is about the evening after that,
+s01_cold_open_2	and the eighteen after that.
+s01_cold_open_3	Today you'll give your crew a question that takes twenty evenings to answer.
+s01_cold_open_4	And you'll find out, by measuring it,
+s01_cold_open_5	exactly what the game remembers from one week to the next.
+s02_a_campaign_that_shipped_0	The people who make the game built a campaign on the same machinery you're using.
+s02_a_campaign_that_shipped_1	It's called Storm's Beacon,
+s02_a_campaign_that_shipped_2	and they wrote down what they decided as they went.
+s02_a_campaign_that_shipped_3	First, every episode goes round one loop.
+s02_a_campaign_that_shipped_4	Someone names a place, the crew goes, finds one thing out,
+s02_a_campaign_that_shipped_5	gets interrupted, and reports back.
+s02_a_campaign_that_shipped_6	Second, only three evenings are written by hand.
+s02_a_campaign_that_shipped_7	The rest come from one pattern.
+s02_a_campaign_that_shipped_8	Third, they built the pattern before they wrote the episodes.
+s02_a_campaign_that_shipped_9	And they were honest about the hard part.
+s02_a_campaign_that_shipped_10	It isn't the machinery.
+s02_a_campaign_that_shipped_11	It's having enough for the crew to do.
+s03_one_evening_s_worth_0	So let's look at what you have, the way a crew sees it on the first night.
+s03_one_evening_s_worth_1	There are four leads, and all four are open.
+s03_one_evening_s_worth_2	For one evening, that's generous.
+s03_one_evening_s_worth_3	For a campaign, it's the whole map in the first minute.
+s03_one_evening_s_worth_4	Three things change when the same people come back.
+s03_one_evening_s_worth_5	You show them one lead at a time.
+s03_one_evening_s_worth_6	A win belongs to the very last evening.
+s03_one_evening_s_worth_7	And only what the game keeps is still true next week.
+s04_the_premise_0	The plan for a campaign isn't for the game,
+s04_the_premise_1	and it isn't for the crew. It's for you.
+s04_the_premise_2	So it goes in a plain page beside the universe file.
+s04_the_premise_3	A premise: one question.
+s04_the_premise_4	Five boats and forty-one people are missing.
+s04_the_premise_5	A pressure that's true every single week.
+s04_the_premise_6	Somebody else is stripping those boats.
+s04_the_premise_7	And the loop, in five lines.
+s04_the_premise_8	Lint doesn't read this page,
+s04_the_premise_9	and neither does the game.
+s04_the_premise_10	I tried, with a page made to look exactly like a record.
+s05_the_first_lead_0	Now the part the game does read.
+s05_the_first_lead_1	One landmark, a lifeboat called the Wren.
+s05_the_first_lead_2	And one lead that sends the crew to her.
+s05_the_first_lead_3	You know every line of these from the last class.
+s05_the_first_lead_4	Two habits are new.
+s05_the_first_lead_5	The title starts with the campaign's name,
+s05_the_first_lead_6	because in week six the Quest Log is a long list.
+s05_the_first_lead_7	And the key starts with the evening's number,
+s05_the_first_lead_8	because you're going to write sixty of them.
+s06_lint_0	I save, and I run lint,
+s06_lint_1	and it says clean.
+s06_lint_2	Now look at the count: one universe file, one story file.
+s06_lint_3	The campaign page isn't counted,
+s06_lint_4	which is exactly what we want.
+s07_play_stop_come_back_0	This next part is the measurement the whole class stands on.
+s07_play_stop_come_back_1	I pay the levy,
+s07_play_stop_come_back_2	I take a job,
+s07_play_stop_come_back_3	I follow the lead out to the Wren, and I come home.
+s07_play_stop_come_back_4	Then I write down six things.
+s07_play_stop_come_back_5	Where the ship is. The credits. The standing.
+s07_play_stop_come_back_6	The lead, the job,
+s07_play_stop_come_back_7	and the charted places.
+s07_play_stop_come_back_8	Now I close the game. All of it.
+s07_play_stop_come_back_9	And I type the same line again.
+s07_play_stop_come_back_10	It's the same system,
+s07_play_stop_come_back_11	the same credits, and the same standing.
+s07_play_stop_come_back_12	The lead is still done,
+s07_play_stop_come_back_13	the job is still mine,
+s07_play_stop_come_back_14	and the Wren is still on the chart.
+s08_what_the_game_keeps_0	So that's a campaign's memory.
+s08_what_the_game_keeps_1	Where the ship is,
+s08_what_the_game_keeps_2	what the side has in the bank,
+s08_what_the_game_keeps_3	and what every side thinks of this ship.
+s08_what_the_game_keeps_4	Every step of the story,
+s08_what_the_game_keeps_5	done, open, or still hidden.
+s08_what_the_game_keeps_6	The jobs in hand,
+s08_what_the_game_keeps_7	and every place they've charted.
+s08_what_the_game_keeps_8	That's enough to build twenty evenings on.
+s09_what_it_does_not_0	And here's what it doesn't keep.
+s09_what_it_does_not_1	Read this list twice.
+s09_what_it_does_not_2	Guards the crew ran away from are back.
+s09_what_it_does_not_3	A countdown starts again.
+s09_what_it_does_not_4	A ship with a new name has no standing and no jobs,
+s09_what_it_does_not_5	and the old name's record is gone for good.
+s09_what_it_does_not_6	A universe with a new title is a new game.
+s09_what_it_does_not_7	And the big one.
+s09_what_it_does_not_8	The game has no memory for a fact of your story
+s09_what_it_does_not_9	unless that fact is a step, a standing, or credits.
+s09_what_it_does_not_10	So in this class, every turn of the plot is a step.
+s10_close_0	So you have a premise, a first lead,
+s10_close_1	and a table you measured yourself.
+s10_close_2	End every evening the same way:
+s10_close_3	jump home, then close the game.
+s10_close_4	Next time, we build a whole evening round that one lead.

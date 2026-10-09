@@ -1,0 +1,363 @@
+1
+00:00:00,000 --> 00:00:06,522
+Your universe works, and a crew can sit down and play it for an evening.
+
+2
+00:00:07,422 --> 00:00:10,900
+This class is about the evening after that,
+
+3
+00:00:11,350 --> 00:00:13,524
+and the eighteen after that.
+
+4
+00:00:15,324 --> 00:00:20,976
+Today you'll give your crew a question that takes twenty evenings to answer.
+
+5
+00:00:21,876 --> 00:00:24,920
+And you'll find out, by measuring it,
+
+6
+00:00:25,370 --> 00:00:30,152
+exactly what the game remembers from one week to the next.
+
+7
+00:00:31,352 --> 00:00:37,874
+The people who make the game built a campaign on the same machinery you're using.
+
+8
+00:00:38,774 --> 00:00:40,513
+It's called Storm's Beacon,
+
+9
+00:00:40,963 --> 00:00:45,311
+and they wrote down what they decided as they went.
+
+10
+00:00:47,111 --> 00:00:50,154
+First, every episode goes round one loop.
+
+11
+00:00:50,604 --> 00:00:55,387
+Someone names a place, the crew goes, finds one thing out,
+
+12
+00:00:55,837 --> 00:00:58,011
+gets interrupted, and reports back.
+
+13
+00:00:58,911 --> 00:01:02,389
+Second, only three evenings are written by hand.
+
+14
+00:01:02,839 --> 00:01:05,448
+The rest come from one pattern.
+
+15
+00:01:06,348 --> 00:01:10,696
+Third, they built the pattern before they wrote the episodes.
+
+16
+00:01:12,496 --> 00:01:15,974
+And they were honest about the hard part.
+
+17
+00:01:16,874 --> 00:01:18,613
+It isn't the machinery.
+
+18
+00:01:19,063 --> 00:01:22,541
+It's having enough for the crew to do.
+
+19
+00:01:23,741 --> 00:01:31,133
+So let's look at what you have, the way a crew sees it on the first night.
+
+20
+00:01:32,033 --> 00:01:35,946
+There are four leads, and all four are open.
+
+21
+00:01:37,746 --> 00:01:39,920
+For one evening, that's generous.
+
+22
+00:01:40,370 --> 00:01:45,152
+For a campaign, it's the whole map in the first minute.
+
+23
+00:01:46,052 --> 00:01:49,965
+Three things change when the same people come back.
+
+24
+00:01:51,765 --> 00:01:55,243
+You show them one lead at a time.
+
+25
+00:01:56,143 --> 00:01:59,622
+A win belongs to the very last evening.
+
+26
+00:02:00,522 --> 00:02:05,304
+And only what the game keeps is still true next week.
+
+27
+00:02:06,504 --> 00:02:10,417
+The plan for a campaign isn't for the game,
+
+28
+00:02:10,867 --> 00:02:14,780
+and it isn't for the crew. It's for you.
+
+29
+00:02:15,680 --> 00:02:20,463
+So it goes in a plain page beside the universe file.
+
+30
+00:02:22,263 --> 00:02:24,002
+A premise: one question.
+
+31
+00:02:24,452 --> 00:02:27,496
+Five boats and forty-one people are missing.
+
+32
+00:02:28,396 --> 00:02:31,439
+A pressure that's true every single week.
+
+33
+00:02:31,889 --> 00:02:34,498
+Somebody else is stripping those boats.
+
+34
+00:02:35,398 --> 00:02:38,007
+And the loop, in five lines.
+
+35
+00:02:39,807 --> 00:02:41,980
+Lint doesn't read this page,
+
+36
+00:02:42,430 --> 00:02:44,604
+and neither does the game.
+
+37
+00:02:45,504 --> 00:02:50,722
+I tried, with a page made to look exactly like a record.
+
+38
+00:02:51,922 --> 00:02:54,965
+Now the part the game does read.
+
+39
+00:02:55,865 --> 00:02:58,909
+One landmark, a lifeboat called the Wren.
+
+40
+00:02:59,359 --> 00:03:03,272
+And one lead that sends the crew to her.
+
+41
+00:03:05,072 --> 00:03:09,420
+You know every line of these from the last class.
+
+42
+00:03:10,320 --> 00:03:12,059
+Two habits are new.
+
+43
+00:03:12,959 --> 00:03:16,002
+The title starts with the campaign's name,
+
+44
+00:03:16,452 --> 00:03:21,235
+because in week six the Quest Log is a long list.
+
+45
+00:03:22,135 --> 00:03:25,613
+And the key starts with the evening's number,
+
+46
+00:03:26,063 --> 00:03:29,541
+because you're going to write sixty of them.
+
+47
+00:03:30,741 --> 00:03:33,350
+I save, and I run lint,
+
+48
+00:03:33,800 --> 00:03:35,539
+and it says clean.
+
+49
+00:03:37,339 --> 00:03:42,122
+Now look at the count: one universe file, one story file.
+
+50
+00:03:43,022 --> 00:03:45,196
+The campaign page isn't counted,
+
+51
+00:03:45,646 --> 00:03:48,254
+which is exactly what we want.
+
+52
+00:03:49,454 --> 00:03:54,237
+This next part is the measurement the whole class stands on.
+
+53
+00:03:55,137 --> 00:03:56,876
+I pay the levy,
+
+54
+00:03:57,326 --> 00:03:59,065
+I take a job,
+
+55
+00:03:59,515 --> 00:04:04,733
+I follow the lead out to the Wren, and I come home.
+
+56
+00:04:06,533 --> 00:04:09,141
+Then I write down six things.
+
+57
+00:04:09,591 --> 00:04:13,070
+Where the ship is. The credits. The standing.
+
+58
+00:04:13,970 --> 00:04:15,709
+The lead, the job,
+
+59
+00:04:16,159 --> 00:04:17,898
+and the charted places.
+
+60
+00:04:19,698 --> 00:04:23,176
+Now I close the game. All of it.
+
+61
+00:04:24,076 --> 00:04:27,120
+And I type the same line again.
+
+62
+00:04:28,920 --> 00:04:30,659
+It's the same system,
+
+63
+00:04:31,109 --> 00:04:34,152
+the same credits, and the same standing.
+
+64
+00:04:35,052 --> 00:04:37,226
+The lead is still done,
+
+65
+00:04:37,676 --> 00:04:39,850
+the job is still mine,
+
+66
+00:04:40,300 --> 00:04:43,778
+and the Wren is still on the chart.
+
+67
+00:04:44,978 --> 00:04:47,152
+So that's a campaign's memory.
+
+68
+00:04:48,052 --> 00:04:49,791
+Where the ship is,
+
+69
+00:04:50,241 --> 00:04:53,285
+what the side has in the bank,
+
+70
+00:04:53,735 --> 00:04:57,213
+and what every side thinks of this ship.
+
+71
+00:04:59,013 --> 00:05:01,187
+Every step of the story,
+
+72
+00:05:01,637 --> 00:05:03,811
+done, open, or still hidden.
+
+73
+00:05:04,711 --> 00:05:06,450
+The jobs in hand,
+
+74
+00:05:06,900 --> 00:05:09,074
+and every place they've charted.
+
+75
+00:05:10,874 --> 00:05:13,917
+That's enough to build twenty evenings on.
+
+76
+00:05:15,117 --> 00:05:17,726
+And here's what it doesn't keep.
+
+77
+00:05:18,176 --> 00:05:19,915
+Read this list twice.
+
+78
+00:05:21,715 --> 00:05:25,193
+Guards the crew ran away from are back.
+
+79
+00:05:26,093 --> 00:05:27,833
+A countdown starts again.
+
+80
+00:05:29,633 --> 00:05:34,850
+A ship with a new name has no standing and no jobs,
+
+81
+00:05:35,300 --> 00:05:39,213
+and the old name's record is gone for good.
+
+82
+00:05:40,113 --> 00:05:44,461
+A universe with a new title is a new game.
+
+83
+00:05:46,261 --> 00:05:48,000
+And the big one.
+
+84
+00:05:48,900 --> 00:05:53,683
+The game has no memory for a fact of your story
+
+85
+00:05:54,133 --> 00:05:58,480
+unless that fact is a step, a standing, or credits.
+
+86
+00:05:59,380 --> 00:06:04,598
+So in this class, every turn of the plot is a step.
+
+87
+00:06:05,798 --> 00:06:09,276
+So you have a premise, a first lead,
+
+88
+00:06:09,726 --> 00:06:12,335
+and a table you measured yourself.
+
+89
+00:06:14,135 --> 00:06:16,743
+End every evening the same way:
+
+90
+00:06:17,193 --> 00:06:19,802
+jump home, then close the game.
+
+91
+00:06:20,702 --> 00:06:25,485
+Next time, we build a whole evening round that one lead.

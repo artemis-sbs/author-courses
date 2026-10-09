@@ -1,0 +1,28 @@
+This is a campaign for Artemis Cosmos: The Kestrel Verge, Act One, version 1.
+It is five evenings for one ship. You are the host: your computer keeps the game.
+
+To set it up:
+
+1. Open File Explorer and go to the game's folder, then data, then missions.
+2. Put the KestrelVerge folder from the zip file in there. When you open
+   data\missions\KestrelVerge you must see story.mast at once, not another folder.
+3. Click in the address bar of that missions window, type cmd and press Enter.
+4. Type each of these lines and press Enter after each:
+
+   sbs update
+   sbs fetch "KestrelVerge" --update-libs
+   sbs run server,helm,science,comms -m KestrelVerge map=0
+
+Four things about a campaign:
+
+1. Start it the same way every week. It continues where the crew stopped.
+   Never choose New Game on the start screen. It replaces the save and does not ask.
+2. The ship's name is the crew's record. Do not change it between evenings.
+3. End each evening by jumping home, then close the game.
+4. After each evening, copy this file somewhere safe:
+   data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml
+   If anything goes wrong, close the game and copy it back.
+
+When Act Two is ready I will send the folder again. Delete the old KestrelVerge
+folder and put the new one in its place. The save is not in that folder, so the
+crew carries on.

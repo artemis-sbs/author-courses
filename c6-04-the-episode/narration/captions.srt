@@ -1,0 +1,335 @@
+1
+00:00:00,000 --> 00:00:03,478
+Evening one took a whole lecture to build.
+
+2
+00:00:04,378 --> 00:00:08,291
+Evening two is going to take a few minutes.
+
+3
+00:00:10,091 --> 00:00:14,004
+Because today, you write down what stays the same.
+
+4
+00:00:14,904 --> 00:00:16,643
+That's called a pattern,
+
+5
+00:00:17,093 --> 00:00:22,311
+and a campaign is one pattern that you fill in twenty times.
+
+6
+00:00:23,511 --> 00:00:27,859
+The people who built Storm's Beacon made themselves a rule.
+
+7
+00:00:28,759 --> 00:00:33,107
+Adding an episode has to be a few mechanical edits,
+
+8
+00:00:33,557 --> 00:00:36,165
+and no new thinking about how.
+
+9
+00:00:37,965 --> 00:00:39,704
+And they tested it.
+
+10
+00:00:40,154 --> 00:00:44,937
+They added a third episode to a campaign that had two.
+
+11
+00:00:45,837 --> 00:00:48,880
+It held, so they wrote the rest.
+
+12
+00:00:50,680 --> 00:00:53,724
+You already have what an episode needs.
+
+13
+00:00:54,624 --> 00:00:57,667
+A lead that ends at a place.
+
+14
+00:00:58,117 --> 00:01:01,161
+A line that shows the next step.
+
+15
+00:01:02,061 --> 00:01:04,670
+Guards and cover on a landmark.
+
+16
+00:01:05,120 --> 00:01:09,033
+And a step that ends at home and pays.
+
+17
+00:01:10,833 --> 00:01:13,007
+None of that's new today.
+
+18
+00:01:13,907 --> 00:01:17,385
+Today's about writing down what stays the same,
+
+19
+00:01:17,835 --> 00:01:21,748
+so you never have to work it out again.
+
+20
+00:01:22,948 --> 00:01:29,035
+So here's evening one, with everything taken out that belongs only to evening one.
+
+21
+00:01:30,835 --> 00:01:33,009
+A landmark, and three steps.
+
+22
+00:01:33,909 --> 00:01:36,952
+The words in capitals are the slots.
+
+23
+00:01:38,752 --> 00:01:40,926
+The evening's number, two digits.
+
+24
+00:01:41,826 --> 00:01:46,609
+The system, twice, and it must be the same both times.
+
+25
+00:01:47,509 --> 00:01:49,248
+What's in the way.
+
+26
+00:01:50,148 --> 00:01:51,887
+What finishes the objective.
+
+27
+00:01:52,337 --> 00:01:54,076
+And what it pays.
+
+28
+00:01:55,876 --> 00:01:57,615
+Everything else is yours:
+
+29
+00:01:58,065 --> 00:02:01,543
+four titles, and four short pieces of text.
+
+30
+00:02:03,343 --> 00:02:06,387
+Keep the pattern in your campaign page,
+
+31
+00:02:06,837 --> 00:02:10,315
+so it's there every time you sit down.
+
+32
+00:02:11,515 --> 00:02:17,167
+The slot that changes the evening most is the ending of the objective.
+
+33
+00:02:18,967 --> 00:02:22,880
+Scan, and it's an evening about finding something out.
+
+34
+00:02:23,780 --> 00:02:28,128
+Destroy, and it's a fight they can't walk away from.
+
+35
+00:02:29,928 --> 00:02:32,102
+Signal, and it's a conversation,
+
+36
+00:02:32,552 --> 00:02:35,596
+which we'll write in a later lecture.
+
+37
+00:02:36,496 --> 00:02:38,235
+And then there's reach,
+
+38
+00:02:38,685 --> 00:02:42,598
+for an evening that's about getting somewhere further on.
+
+39
+00:02:44,398 --> 00:02:47,876
+One of those four goes in the slot,
+
+40
+00:02:48,326 --> 00:02:52,674
+and the rest of the pattern doesn't change at all.
+
+41
+00:02:53,874 --> 00:02:56,048
+The sheet first, as always.
+
+42
+00:02:56,948 --> 00:02:59,122
+Then the landmark, the Dunlin,
+
+43
+00:02:59,572 --> 00:03:01,311
+in cloud, and guarded.
+
+44
+00:03:03,111 --> 00:03:05,285
+Now look at the open.
+
+45
+00:03:05,735 --> 00:03:08,343
+I don't have to write it.
+
+46
+00:03:09,243 --> 00:03:13,157
+It's already there, because it was last week's hook.
+
+47
+00:03:13,607 --> 00:03:16,215
+It only needs its next step.
+
+48
+00:03:18,015 --> 00:03:20,189
+So I write three things.
+
+49
+00:03:21,089 --> 00:03:23,698
+The objective: this one's a trap,
+
+50
+00:03:24,148 --> 00:03:26,757
+and they have to break it.
+
+51
+00:03:27,657 --> 00:03:29,396
+Then the way home,
+
+52
+00:03:29,846 --> 00:03:32,454
+and the hook for evening three.
+
+53
+00:03:34,254 --> 00:03:37,298
+That's the rhythm of the whole campaign.
+
+54
+00:03:38,198 --> 00:03:42,111
+Every time you sit down, the open's already written,
+
+55
+00:03:42,561 --> 00:03:48,648
+and you write a place, a deed, a way home, and the next hook.
+
+56
+00:03:49,848 --> 00:03:52,022
+Two details in that objective.
+
+57
+00:03:53,822 --> 00:03:55,996
+The game sends three guards,
+
+58
+00:03:56,446 --> 00:03:58,620
+and I ask for two.
+
+59
+00:03:59,520 --> 00:04:02,563
+A fight to the very last ship
+
+60
+00:04:03,013 --> 00:04:06,926
+goes on five minutes after it stopped being fun.
+
+61
+00:04:08,726 --> 00:04:11,770
+And the fight needs the guards line.
+
+62
+00:04:12,670 --> 00:04:14,409
+I measured it without:
+
+63
+00:04:14,859 --> 00:04:17,902
+there was nothing hostile there at all,
+
+64
+00:04:18,352 --> 00:04:20,961
+and the evening couldn't be finished.
+
+65
+00:04:22,761 --> 00:04:25,804
+So an objective that ends with destroy
+
+66
+00:04:26,254 --> 00:04:29,733
+always gets a guards line on its landmark.
+
+67
+00:04:30,933 --> 00:04:32,672
+Lint says it's clean.
+
+68
+00:04:33,572 --> 00:04:37,485
+So I play evening one through to its hook,
+
+69
+00:04:37,935 --> 00:04:40,543
+and I engage the new lead.
+
+70
+00:04:42,343 --> 00:04:46,257
+Here's the Dunlin, the warning, and the new step.
+
+71
+00:04:47,157 --> 00:04:50,200
+One ship down, and it's still open.
+
+72
+00:04:50,650 --> 00:04:52,389
+Two, and it's done.
+
+73
+00:04:54,189 --> 00:04:56,363
+Then we're home and paid,
+
+74
+00:04:56,813 --> 00:04:59,857
+and there's the lead for evening three.
+
+75
+00:05:01,657 --> 00:05:06,004
+And the charted places now have both boats in them.
+
+76
+00:05:07,204 --> 00:05:12,857
+So the open of every evening is the hook of the one before.
+
+77
+00:05:13,757 --> 00:05:15,930
+You never start from nothing.
+
+78
+00:05:17,730 --> 00:05:21,209
+Renumber every key when you copy the pattern.
+
+79
+00:05:22,109 --> 00:05:27,326
+If you don't, the game keeps the first record with that key,
+
+80
+00:05:27,776 --> 00:05:30,385
+and quietly drops your new evening.
+
+81
+00:05:31,285 --> 00:05:33,893
+Lint does tell you, by name.
+
+82
+00:05:35,693 --> 00:05:38,302
+And the pattern's yours to break.
+
+83
+00:05:38,752 --> 00:05:40,926
+A tentpole can be longer.
+
+84
+00:05:41,826 --> 00:05:45,304
+Next time, all twenty evenings, on one page.

@@ -1,0 +1,335 @@
+1
+00:00:00,000 --> 00:00:05,217
+In the last class, you moved a crew's standing in one sitting.
+
+2
+00:00:07,017 --> 00:00:09,191
+A campaign asks something harder.
+
+3
+00:00:10,091 --> 00:00:12,265
+How fast does it move,
+
+4
+00:00:12,715 --> 00:00:16,628
+and what does it open when it gets there?
+
+5
+00:00:18,428 --> 00:00:22,776
+Today you'll build a door that only trust can open.
+
+6
+00:00:23,676 --> 00:00:28,893
+And then a way for the crew to slam it on themselves.
+
+7
+00:00:30,093 --> 00:00:33,137
+First, what actually moves standing over weeks.
+
+8
+00:00:33,587 --> 00:00:35,326
+I measured every row.
+
+9
+00:00:37,126 --> 00:00:38,865
+Finishing a side's job.
+
+10
+00:00:39,315 --> 00:00:42,793
+Five points, or ten for the harder kind.
+
+11
+00:00:43,693 --> 00:00:46,302
+Paying the levy in a hail.
+
+12
+00:00:46,752 --> 00:00:49,361
+Twenty points, for a hundred credits.
+
+13
+00:00:51,161 --> 00:00:54,204
+And now look at the last row.
+
+14
+00:00:55,104 --> 00:00:58,583
+Finishing a step of the story does nothing.
+
+15
+00:01:00,383 --> 00:01:02,557
+You can write the words.
+
+16
+00:01:03,007 --> 00:01:06,050
+Lint says clean, the credits are paid,
+
+17
+00:01:06,500 --> 00:01:10,413
+and the standing goes somewhere no door ever reads.
+
+18
+00:01:11,613 --> 00:01:16,830
+That has a consequence, and it's the whole craft of this lecture.
+
+19
+00:01:18,630 --> 00:01:22,109
+Nothing the crew does once can move standing.
+
+20
+00:01:23,009 --> 00:01:25,183
+Jobs can be taken again.
+
+21
+00:01:25,633 --> 00:01:27,807
+Answers can be given again.
+
+22
+00:01:29,607 --> 00:01:33,520
+So you can't hand standing out as a prize.
+
+23
+00:01:34,420 --> 00:01:37,898
+You can only put a price on it,
+
+24
+00:01:38,348 --> 00:01:40,522
+in credits or in time.
+
+25
+00:01:41,422 --> 00:01:45,770
+And you decide how much of each an evening pays.
+
+26
+00:01:46,970 --> 00:01:50,013
+So here's a door, in three parts.
+
+27
+00:01:51,813 --> 00:01:56,596
+A lead the crew can see from the very first evening.
+
+28
+00:01:57,046 --> 00:01:59,654
+It tells them what opens it.
+
+29
+00:02:00,554 --> 00:02:04,033
+That matters, because a door nobody knows about
+
+30
+00:02:04,483 --> 00:02:07,091
+isn't a reason to do anything.
+
+31
+00:02:08,891 --> 00:02:11,935
+Then one answer in the Compact's hail.
+
+32
+00:02:12,835 --> 00:02:17,617
+After the key it says, if standing is forty or more.
+
+33
+00:02:18,067 --> 00:02:20,676
+Below that, the button isn't there.
+
+34
+00:02:22,476 --> 00:02:25,085
+And the record it leads to,
+
+35
+00:02:25,535 --> 00:02:27,274
+where they're finally told.
+
+36
+00:02:28,474 --> 00:02:31,517
+Why forty, and not some other number?
+
+37
+00:02:33,317 --> 00:02:36,361
+At twenty it opens after one levy,
+
+38
+00:02:36,811 --> 00:02:40,724
+on the first evening, and that isn't a door.
+
+39
+00:02:41,624 --> 00:02:45,102
+At sixty, a crew may never get there.
+
+40
+00:02:46,902 --> 00:02:51,250
+At forty, a crew that takes one job a week
+
+41
+00:02:51,700 --> 00:02:53,874
+and pays the levy once
+
+42
+00:02:54,324 --> 00:02:56,933
+arrives in about the fourth week.
+
+43
+00:02:57,833 --> 00:03:01,746
+And that's where I want them to hear it,
+
+44
+00:03:02,196 --> 00:03:04,370
+right before the act ends.
+
+45
+00:03:06,170 --> 00:03:10,083
+So you choose the number by choosing the week.
+
+46
+00:03:11,283 --> 00:03:14,761
+A door that only opens is a reward.
+
+47
+00:03:15,211 --> 00:03:18,689
+A door that can close is a story.
+
+48
+00:03:20,489 --> 00:03:24,837
+So in the Gleaners' hail, I add one tempting answer.
+
+49
+00:03:25,737 --> 00:03:28,780
+Sell them a copy of the Count.
+
+50
+00:03:30,580 --> 00:03:32,754
+It earns the Gleaners' respect,
+
+51
+00:03:33,204 --> 00:03:37,552
+and in the same breath it costs the Compact's trust.
+
+52
+00:03:38,452 --> 00:03:43,235
+An answer with one side can do a deed with another.
+
+53
+00:03:45,035 --> 00:03:46,774
+Here's what I measured.
+
+54
+00:03:47,224 --> 00:03:49,833
+Forty with the Compact became seventeen.
+
+55
+00:03:50,733 --> 00:03:53,341
+And at home, three things changed.
+
+56
+00:03:54,241 --> 00:03:57,720
+The greeting went cold, the manifest was gone,
+
+57
+00:03:58,170 --> 00:04:00,778
+and so was the better work.
+
+58
+00:04:01,978 --> 00:04:03,717
+Now you plan it.
+
+59
+00:04:04,617 --> 00:04:08,096
+The ledger is one row for each evening,
+
+60
+00:04:08,546 --> 00:04:10,720
+with the standing you expect,
+
+61
+00:04:11,170 --> 00:04:14,213
+and the door you expect to open.
+
+62
+00:04:16,013 --> 00:04:20,796
+The numbers are a guess, and the crew won't follow them.
+
+63
+00:04:21,696 --> 00:04:24,304
+What matters is the last column.
+
+64
+00:04:26,104 --> 00:04:29,148
+For each door, you've named an evening,
+
+65
+00:04:29,598 --> 00:04:33,511
+and you can check the price against the wages.
+
+66
+00:04:34,411 --> 00:04:37,889
+Too cheap, and it opens on night one.
+
+67
+00:04:38,339 --> 00:04:40,948
+Too dear, and it never does.
+
+68
+00:04:42,748 --> 00:04:46,226
+And remember where all of this is kept.
+
+69
+00:04:46,676 --> 00:04:50,154
+It's under the ship's name, in the save.
+
+70
+00:04:51,354 --> 00:04:53,963
+Lint's clean, so here it is.
+
+71
+00:04:55,763 --> 00:04:57,937
+Three answers, and no manifest.
+
+72
+00:04:58,837 --> 00:05:01,011
+I pay the levy twice,
+
+73
+00:05:01,461 --> 00:05:03,635
+and now there are four.
+
+74
+00:05:05,435 --> 00:05:08,478
+I ask, and the lead is done.
+
+75
+00:05:10,278 --> 00:05:12,887
+Then out to the breaking yard,
+
+76
+00:05:13,337 --> 00:05:15,511
+and I sell the Count.
+
+77
+00:05:16,411 --> 00:05:19,020
+Nothing tells me what that cost.
+
+78
+00:05:20,820 --> 00:05:25,167
+Back home, the good work has gone from the list.
+
+79
+00:05:26,067 --> 00:05:29,546
+And the hail's down to three answers again.
+
+80
+00:05:30,746 --> 00:05:34,224
+So you price standing, you don't award it.
+
+81
+00:05:36,024 --> 00:05:39,502
+Every answer that earns it gets a cost.
+
+82
+00:05:40,402 --> 00:05:44,315
+And all of it lives under the ship's name,
+
+83
+00:05:44,765 --> 00:05:47,374
+so the ship keeps its name.
+
+84
+00:05:49,174 --> 00:05:55,261
+Next time, we look at the act from the crew's side of the table.

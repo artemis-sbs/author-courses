@@ -1,0 +1,387 @@
+// One authored file holding a whole universe. Heading level sets the structure:
+//   #    the universe itself (its identity)
+//   ##   a chapter: Sides / Jobs / Narrative / Regions / ...
+//   ###  an entry within a chapter (one side, one job type, one story beat)
+//
+// Each heading's data lives between `---` fences as `Label: value` fact lines, and the
+// prose under the fence is what players read.
+//
+// Almost everything is optional. Reputation axes, standing tuning and the generation
+// dials all fall back to engine defaults when you leave them out - which is why this file
+// is short. Add chapters as you want them.
+
+# [The Kestrel Verge](kestrel_verge)
+---
+Universe
+Display: The Kestrel Verge
+Station mix: 8%
+Enemy mix: 12%
+Nebula mix: 20%
+Derelict chance: 60%
+---
+Past the last relay the charts are forty years old, and nobody has come to correct them.
+Three colonies were planted out here. Two still answer.
+
+## [Scenario](scenario)
+---
+Mode: story
+---
+
+
+// ---- The factions. Each heading key IS the side key. `Home` is a system coordinate on
+// the galaxy grid; `Offers` names the job types this side hands out.
+## [Sides](sides)
+
+### [Hollin Compact](hollin)
+---
+Color: #44aa66
+Character: settler
+Disposition: neutral
+Home: 0, 0
+Values: honest 40, generous 30
+Offers: patrol, escort
+Flies: Arvonian
+---
+The first colony, and the one that farms. They keep the relay running because nobody else will.
+
+### [Deepwell Assembly](deepwell)
+---
+Color: #6688ff
+Character: trader
+Disposition: neutral
+Home: 3, 1
+Values: by-the-book 40, peaceful 20
+Offers: escort
+Flies: 70% Ximni, 30% Arvonian
+---
+The second colony. Miners who sell what they dig and count every crate twice.
+
+### [The Gleaners](gleaners)
+---
+Color: #cc5522
+Character: pirate
+Disposition: foe
+Home: -3, -2
+Values: fearsome 40, resourceful 30
+Offers: salvage
+Flies: Torgoth
+---
+They strip dead ships for a living, and they have stopped waiting for ships to die.
+
+
+// ---- Job types the sides above can offer. The engine generates the individual jobs;
+// these records say what KINDS exist and what they pay.
+## [Jobs](jobs)
+
+### [Patrol](patrol)
+---
+Tier: 2
+Reward: 200 credits
+---
+Sweep a system and clear whatever is hunting in it.
+
+### [Escort](escort)
+---
+Done when: reach 3, 1
+Reward: 250 credits
+---
+See a freighter safely to its destination.
+
+### [Salvage](salvage)
+---
+Reward: 150 credits
+---
+Recover what is worth recovering, and do not ask where it came from.
+
+## [Regions](regions)
+
+### [The Hollin Fields](hollin_fields)
+---
+Center: 0, 0
+Radius: 2
+Skybox: sky1-blue
+Color: #44aa66
+Enemy mix: 0%
+Station mix: 25%
+---
+Farmed space. Lit lanes, slow freight, and nothing that shoots.
+
+### [The Breakers](the_breakers)
+---
+Center: -4, -3
+Radius: 1
+Skybox: sky-neb2-rvb
+Music: Artemis2
+Color: #cc5522
+Enemy mix: 60%
+Station mix: 0%
+Mine chance: 80%
+---
+Gleaner country. Every wreck out here was somebody's ship.
+
+## [Landmarks](landmarks)
+
+### [Kestrel Relay](kestrel_relay)
+---
+At: 0, 0
+Kind: station
+---
+The last relay anyone still maintains. Everything past it is rumor.
+
+### [Assay Office](assay_office)
+---
+At: 3, 1
+Kind: station
+Side: deepwell
+Art: starbase_industry
+---
+Where the Deepwell weighs what it digs. Nothing leaves this system uncounted.
+
+### [The Tern](the_tern)
+---
+At: 1, -2
+Kind: derelict
+Terrain: nebula blue
+---
+The third colony's ship, still in orbit over the place it never landed.
+
+### [The Bone Pile](bone_pile)
+---
+At: -4, -3
+Kind: derelict
+Terrain: asteroids
+Guards: torgoth
+---
+Where the Gleaners stack what they cannot sell. They do not like it looked at.
+
+### [The Wren](the_wren)
+---
+At: 2, 2
+Kind: derelict
+Terrain: asteroids
+Guards: torgoth
+---
+A lifeboat off the Tern, cold for forty years. Her davit number can still be read: one of five.
+
+### [The Dunlin](the_dunlin)
+---
+At: -2, 3
+Kind: derelict
+Terrain: nebula
+Guards: torgoth
+---
+The Tern's second boat, deep in cloud. The voice on her channel is a recording.
+
+### [The Petrel](the_petrel)
+---
+At: 4, -2
+Kind: derelict
+---
+The Tern's fourth boat, holed and tumbling. Her beacon is still counting.
+
+## [Goods](goods)
+
+### [Ore](ore)
+---
+Weight: 40
+---
+What the Deepwell digs. There is always more of it than anyone wants.
+
+### [Provisions](provisions)
+---
+Weight: 30
+---
+What Hollin grows.
+
+### [Tech](tech)
+---
+Weight: 10
+---
+Relay parts, forty years out of date and worth more every year.
+
+### [Contraband](contraband)
+---
+Weight: 5
+---
+Whatever the Gleaners would rather not explain.
+
+## [Narrative](narrative)
+
+### [The Second Colony](lead_deepwell)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 3, 1
+---
+The Deepwell Assembly keeps its books at (3, 1). Go and be counted.
+
+### [The Breaking Yard](lead_gleaners)
+---
+Scope: shared
+Starts when: at once
+Done when: reach -3, -2
+---
+The Compact says the Gleaners tow their wrecks to a yard at (-3, -2). Go and look, with shields up.
+
+### [The Third Colony](lead_tern)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 1, -2
+---
+The Tern never answered. Her last position was (1, -2). Go and see what is left of her.
+
+### [What the Gleaners Keep](lead_bone_pile)
+---
+Scope: shared
+Starts when: at once
+Done when: reach -4, -3
+---
+There is a place at (-4, -3) the Gleaners will not talk about. Go armed.
+
+### [The Long Count: One of Five](s01_go)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 2, 2
+Then: reveal s01_scan
+---
+The Tern carried five boats and forty-one people. A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+
+### [The Long Count: Her Log](s01_scan)
+---
+Scope: shared
+Starts when: revealed
+Done when: scan 1 derelict
+Then: reveal s01_home
+---
+The Wren is here, and so are ships with cutting gear. Get Science close enough to read her log before they strip it.
+
+### [The Long Count: Enter It](s01_home)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach 0, 0
+Then: reveal s02_go
+Reward: 300 credits
+---
+Nine names in the Wren's log, and a course laid in for a place that is on no chart. Take the log home to Kestrel Relay and have it entered.
+
+### [The Long Count: Two of Five](s02_go)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach -2, 3
+Then: reveal s02_clear
+---
+The Wren's log gives the next boat's last bearing: (-2, 3), past the edge of the Fields. She was the Dunlin. Somebody out there is still answering her hails.
+
+### [The Long Count: Bait](s02_clear)
+---
+Scope: shared
+Starts when: revealed
+Done when: destroy 2 enemies
+Then: reveal s02_home
+---
+The Dunlin is a lure, and the ships in the cloud have been waiting for someone to answer. Two of them. Break the trap.
+
+### [The Long Count: Enter It Twice](s02_home)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach 0, 0
+Then: reveal s03_go
+Reward: 350 credits
+---
+The Dunlin's seats were empty and her lockers were full. Nobody starved in her. Take that home to Kestrel Relay.
+
+### [The Long Count: Three of Five](s03_go)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach 3, 1
+Then: reveal s04_go
+---
+A boat does not empty itself. The Deepwell count every hull that is sold in the Verge. Go to the Assay Office at (3, 1) and ask what they paid for a boat called the Plover.
+
+### [The Long Count: Four of Five](s04_go)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach 4, -2
+Then: reveal s05_go
+---
+The Assay Office sold the Plover on, and logged a second boat adrift at (4, -2). The Petrel. Nobody has claimed her.
+
+### [The Long Count: Five of Five](s05_go)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach -3, -2
+Then: reveal act1_close
+---
+The last boat was the Skua, and the Petrel's beacon puts her in the Gleaners' breaking yard at (-3, -2). Go and see whether she is still a boat.
+
+### [The Long Count: Five Boats](act1_close)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach 0, 0
+Reward: 1000 credits
+---
+Five boats, and not one body. Forty-one people left the Tern alive and went somewhere together. Take the Count home to Kestrel Relay.
+
+## [Dialogue](dialogue)
+
+### [Hollin Hail](hollin_hail)
+---
+Speaker: hollin
+When: comms
+---
+%{standing >= 20} Kestrel Relay knows your ship, captain. What do you need?
+%{standing < 20} Hollin Compact. State your business, captain.
+
+- [Pay the relay levy](hollin_levy) ; costs 100 credits, earns hollin honest 20, earns hollin generous 20
+- [Call the levy a racket](hollin_cold) ; earns hollin selfish 20
+- [Sign off](hollin_bye)
+
+### [The Levy](hollin_levy)
+---
+Speaker: hollin
+---
+% Paid and entered. The relay stays lit another month, and we know who lit it.
+
+### [A Cold Answer](hollin_cold)
+---
+Speaker: hollin
+---
+% Then fly without it, and see how far the light reaches.
+
+### [Hollin Out](hollin_bye)
+---
+Speaker: hollin
+---
+% Hollin out.
+
+### [Gleaner Hail](gleaner_hail)
+---
+Speaker: gleaners
+When: comms
+---
+%{standing >= 20} The captain with the nerve. Talk.
+%{standing < 20} You are standing in our yard. Explain that.
+
+- [Tell them you go where you like](gleaner_nerve) ; earns gleaners fearsome 35
+- [Back away](gleaner_bye) ; earns gleaners cowardly 35
+
+### [Nerve](gleaner_nerve)
+---
+Speaker: gleaners
+---
+% Ha. Most of them beg. We will remember the ship that did not.
+
+### [Gleaners Out](gleaner_bye)
+---
+Speaker: gleaners
+---
+% Run along, then.

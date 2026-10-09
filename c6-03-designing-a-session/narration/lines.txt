@@ -1,0 +1,84 @@
+s01_cold_open_0	Last time, you wrote one lead.
+s01_cold_open_1	Today that lead becomes a whole evening,
+s01_cold_open_2	with a beginning, something to do, a moment of danger,
+s01_cold_open_3	and a reason to come back next week.
+s01_cold_open_4	It takes three records,
+s01_cold_open_5	and one line on a landmark.
+s02_four_parts_0	An evening at a table has four parts.
+s02_four_parts_1	The open is where the crew's told where to go, and why it has to be tonight.
+s02_four_parts_2	The objective is the one thing they have to do when they get there.
+s02_four_parts_3	The climax is the moment it could go wrong.
+s02_four_parts_4	And the hook is the last thing they learn,
+s02_four_parts_5	which is why they come back.
+s02_four_parts_6	I've put minutes beside each one.
+s02_four_parts_7	Those are a plan, not a measurement,
+s02_four_parts_8	and you'll time a real table against them later.
+s03_what_the_game_does_not_know_0	Here's something to be clear about before we build.
+s03_what_the_game_does_not_know_1	The game has no idea what an evening is.
+s03_what_the_game_does_not_know_2	There's no end of session screen.
+s03_what_the_game_does_not_know_3	There's no recap of last week.
+s03_what_the_game_does_not_know_4	And there's no timer that stops you at forty-five minutes.
+s03_what_the_game_does_not_know_5	So you do all three yourself,
+s03_what_the_game_does_not_know_6	with the shape of the episode.
+s03_what_the_game_does_not_know_7	The last step ends at home, and you stop there.
+s03_what_the_game_does_not_know_8	The open lead is your recap.
+s03_what_the_game_does_not_know_9	And the time limit is your watch.
+s04_the_sheet_0	Before any records, the sheet.
+s04_the_sheet_1	It's a small table in your campaign page,
+s04_the_sheet_2	one row for each of the four parts.
+s04_the_sheet_3	Then a few lines under it.
+s04_the_sheet_4	What the crew learns. What it pays. Who's busy.
+s04_the_sheet_5	And where the evening ends.
+s04_the_sheet_6	Fill in what the crew learns first.
+s04_the_sheet_7	If you can't, it's a trip,
+s04_the_sheet_8	and not an episode.
+s05_open_and_objective_0	Now for the records themselves.
+s05_open_and_objective_1	The open is the lead you already have.
+s05_open_and_objective_2	It gets one more line,
+s05_open_and_objective_3	so that finishing it shows the next step.
+s05_open_and_objective_4	The next step is the objective.
+s05_open_and_objective_5	Science reads the Wren's log.
+s05_open_and_objective_6	Two things I measured about that.
+s05_open_and_objective_7	Any dead ship in the system counts,
+s05_open_and_objective_8	and the game may have put one of its own there.
+s05_open_and_objective_9	So write the text so either one makes sense.
+s05_open_and_objective_10	And the step's hidden until the crew arrives,
+s05_open_and_objective_11	so nothing they scanned earlier counts.
+s06_the_climax_0	The climax isn't a step at all.
+s06_the_climax_1	It's something at the place.
+s06_the_climax_2	One line on the landmark,
+s06_the_climax_3	and three ships are waiting when the crew arrives.
+s06_the_climax_4	And notice what I haven't written.
+s06_the_climax_5	Nothing says, destroy them.
+s06_the_climax_6	So the crew has a real choice.
+s06_the_climax_7	They can fight. They can scan under fire and run.
+s06_the_climax_8	Or they can leave, and come back next week,
+s06_the_climax_9	and the guards will be there again.
+s07_the_hook_0	Last, the way home, and next week's lead.
+s07_the_hook_1	The home step ends when the ship's back at the relay,
+s07_the_hook_2	and that's where it pays.
+s07_the_hook_3	A crew that's just been paid, at their own station,
+s07_the_hook_4	is a crew you can send home.
+s07_the_hook_5	And the moment it's done, the next lead appears.
+s07_the_hook_6	That's the hook, and it's the last thing they read tonight.
+s07_the_hook_7	And next week, after they continue,
+s07_the_hook_8	it's the one open line of the campaign.
+s07_the_hook_9	So it's the recap as well.
+s08_lint_and_play_0	Save, lint, and it's clean.
+s08_lint_and_play_1	So let's play it.
+s08_lint_and_play_2	One line of the campaign in the log, not three.
+s08_lint_and_play_3	I engage the lead,
+s08_lint_and_play_4	and here's the Wren, and the warning.
+s08_lint_and_play_5	Science scans her, and the way home appears,
+s08_lint_and_play_6	so I engage that as well.
+s08_lint_and_play_7	We're home, we're paid,
+s08_lint_and_play_8	and there's the second boat.
+s08_lint_and_play_9	And that's the whole evening.
+s08_lint_and_play_10	Now I close the game and start it again.
+s08_lint_and_play_11	And the hook's still there, waiting.
+s09_close_0	So an evening is four parts and three records.
+s09_close_1	You end it, because the game won't.
+s09_close_2	And a step that's done stays done,
+s09_close_3	so a long evening is simply two evenings.
+s09_close_4	Next time, we turn this one into a pattern,
+s09_close_5	and write the second evening in a quarter of the time.

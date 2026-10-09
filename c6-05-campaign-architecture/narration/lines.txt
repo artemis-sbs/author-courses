@@ -1,0 +1,81 @@
+s01_cold_open_0	You have two evenings.
+s01_cold_open_1	A campaign is twenty.
+s01_cold_open_2	Today you'll put all twenty on one page,
+s01_cold_open_3	and you'll lay the first act down in the game, from its first lead to its last.
+s01_cold_open_4	And then you'll count what it's going to cost you.
+s02_acts_0	Twenty evenings is too many to hold in your head,
+s02_acts_1	but five of them isn't.
+s02_acts_2	So a campaign is acts,
+s02_acts_3	and an act is about five evenings with one question.
+s02_acts_4	What happened to the boats?
+s02_acts_5	Who took the people off them?
+s02_acts_6	Where did they go?
+s02_acts_7	And do they want to be found?
+s02_acts_8	Notice how each answer is the next question.
+s02_acts_9	And notice the last row is one line.
+s02_acts_10	You don't know yet what your crew will have done by then.
+s03_act_one_as_a_table_0	Now the act you're about to build, evening by evening.
+s03_act_one_as_a_table_1	Look at the place column before anything else.
+s03_act_one_as_a_table_2	Two of these five evenings go somewhere you built in the last class.
+s03_act_one_as_a_table_3	And that's quite deliberate.
+s03_act_one_as_a_table_4	A campaign that only goes to new places
+s03_act_one_as_a_table_5	teaches the crew that nowhere matters.
+s03_act_one_as_a_table_6	So send them back.
+s04_stubs_0	You've written two evenings in full.
+s04_stubs_1	The other three start as stubs.
+s04_stubs_2	A stub is an open with nothing behind it yet.
+s04_stubs_3	One lead, that shows the next lead.
+s04_stubs_4	With three of them, the act can be walked from end to end tonight.
+s04_stubs_5	And lint can see that every evening's joined to the one before.
+s04_stubs_6	A stub is a real evening, only a short one.
+s04_stubs_7	If the crew outruns your writing,
+s04_stubs_8	they get a thin evening, and not a dead end.
+s05_the_act_s_ending_0	The act ends at home, with a big payment,
+s05_the_act_s_ending_1	and a text that answers the act's question.
+s05_the_act_s_ending_2	And it has no next step.
+s05_the_act_s_ending_3	Act two isn't written,
+s05_the_act_s_ending_4	so no new lead appears, and that's the truth.
+s05_the_act_s_ending_5	When you have evening six, you add one line here.
+s05_the_act_s_ending_6	And the same save carries on.
+s06_where_the_ending_goes_0	A word about winning, because I measured it.
+s06_where_the_ending_goes_1	A step with a win line ends the game the moment it's done.
+s06_where_the_ending_goes_2	The save keeps that step as done.
+s06_where_the_ending_goes_3	The crew can continue afterward,
+s06_where_the_ending_goes_4	and the game simply goes on.
+s06_where_the_ending_goes_5	But that win can never happen again, because it's been spent.
+s06_where_the_ending_goes_6	So a campaign has one,
+s06_where_the_ending_goes_7	on the last step of the last evening,
+s06_where_the_ending_goes_8	and you write it last.
+s07_the_budget_0	Now it's time to count.
+s07_the_budget_1	The printed bible does some of it for you.
+s07_the_budget_2	Near the top is a block that says how many records you have,
+s07_the_budget_3	and how many beats are on the spine.
+s07_the_budget_4	Then count one evening by hand.
+s07_the_budget_5	Four records. About ten sentences the crew reads.
+s07_the_budget_6	Seventeen ordinary evenings, three tentpoles, four act endings.
+s07_the_budget_7	That's about ninety records,
+s07_the_budget_8	and you've written thirteen.
+s07_the_budget_9	Now write down how long evening two took you to write, and multiply it up.
+s07_the_budget_10	Do that before you promise anyone a campaign.
+s08_half_the_evening_is_free_0	Here's the good news in that number.
+s08_half_the_evening_is_free_1	The spine is only half an evening.
+s08_half_the_evening_is_free_2	The other half is the universe you already built.
+s08_half_the_evening_is_free_3	Jobs come round again every week.
+s08_half_the_evening_is_free_4	So do hails, and trade.
+s08_half_the_evening_is_free_5	So you're not writing twenty evenings of things to do.
+s08_half_the_evening_is_free_6	You're writing twenty reasons to go out there.
+s09_walk_it_0	Lint's clean, so let's walk the act.
+s09_walk_it_1	I'm not playing. I'm checking the joins.
+s09_walk_it_2	Three of five, and four appears at once.
+s09_walk_it_3	Four, and there's the Petrel.
+s09_walk_it_4	Five, and we're in the breaking yard.
+s09_walk_it_5	And then we're home.
+s09_walk_it_6	That's a thousand credits,
+s09_walk_it_7	and every line of the campaign is done.
+s09_walk_it_8	And on the way, two old leads from the last class finished themselves,
+s09_walk_it_9	because the spine goes through those systems.
+s10_close_0	So you have four acts, one of them walkable,
+s10_close_1	and an honest number.
+s10_close_2	If that number's too big,
+s10_close_3	the answer is fewer evenings, and not thinner ones.
+s10_close_4	Next time, we give the acts something to turn on.

@@ -1,0 +1,84 @@
+s01_cold_open_0	In the last class, you moved a crew's standing in one sitting.
+s01_cold_open_1	A campaign asks something harder.
+s01_cold_open_2	How fast does it move,
+s01_cold_open_3	and what does it open when it gets there?
+s01_cold_open_4	Today you'll build a door that only trust can open.
+s01_cold_open_5	And then a way for the crew to slam it on themselves.
+s02_what_moves_it_0	First, what actually moves standing over weeks.
+s02_what_moves_it_1	I measured every row.
+s02_what_moves_it_2	Finishing a side's job.
+s02_what_moves_it_3	Five points, or ten for the harder kind.
+s02_what_moves_it_4	Paying the levy in a hail.
+s02_what_moves_it_5	Twenty points, for a hundred credits.
+s02_what_moves_it_6	And now look at the last row.
+s02_what_moves_it_7	Finishing a step of the story does nothing.
+s02_what_moves_it_8	You can write the words.
+s02_what_moves_it_9	Lint says clean, the credits are paid,
+s02_what_moves_it_10	and the standing goes somewhere no door ever reads.
+s03_price_not_prize_0	That has a consequence, and it's the whole craft of this lecture.
+s03_price_not_prize_1	Nothing the crew does once can move standing.
+s03_price_not_prize_2	Jobs can be taken again.
+s03_price_not_prize_3	Answers can be given again.
+s03_price_not_prize_4	So you can't hand standing out as a prize.
+s03_price_not_prize_5	You can only put a price on it,
+s03_price_not_prize_6	in credits or in time.
+s03_price_not_prize_7	And you decide how much of each an evening pays.
+s04_a_door_that_opens_0	So here's a door, in three parts.
+s04_a_door_that_opens_1	A lead the crew can see from the very first evening.
+s04_a_door_that_opens_2	It tells them what opens it.
+s04_a_door_that_opens_3	That matters, because a door nobody knows about
+s04_a_door_that_opens_4	isn't a reason to do anything.
+s04_a_door_that_opens_5	Then one answer in the Compact's hail.
+s04_a_door_that_opens_6	After the key it says, if standing is forty or more.
+s04_a_door_that_opens_7	Below that, the button isn't there.
+s04_a_door_that_opens_8	And the record it leads to,
+s04_a_door_that_opens_9	where they're finally told.
+s05_why_forty_0	Why forty, and not some other number?
+s05_why_forty_1	At twenty it opens after one levy,
+s05_why_forty_2	on the first evening, and that isn't a door.
+s05_why_forty_3	At sixty, a crew may never get there.
+s05_why_forty_4	At forty, a crew that takes one job a week
+s05_why_forty_5	and pays the levy once
+s05_why_forty_6	arrives in about the fourth week.
+s05_why_forty_7	And that's where I want them to hear it,
+s05_why_forty_8	right before the act ends.
+s05_why_forty_9	So you choose the number by choosing the week.
+s06_a_door_that_closes_0	A door that only opens is a reward.
+s06_a_door_that_closes_1	A door that can close is a story.
+s06_a_door_that_closes_2	So in the Gleaners' hail, I add one tempting answer.
+s06_a_door_that_closes_3	Sell them a copy of the Count.
+s06_a_door_that_closes_4	It earns the Gleaners' respect,
+s06_a_door_that_closes_5	and in the same breath it costs the Compact's trust.
+s06_a_door_that_closes_6	An answer with one side can do a deed with another.
+s06_a_door_that_closes_7	Here's what I measured.
+s06_a_door_that_closes_8	Forty with the Compact became seventeen.
+s06_a_door_that_closes_9	And at home, three things changed.
+s06_a_door_that_closes_10	The greeting went cold, the manifest was gone,
+s06_a_door_that_closes_11	and so was the better work.
+s07_the_ledger_0	Now you plan it.
+s07_the_ledger_1	The ledger is one row for each evening,
+s07_the_ledger_2	with the standing you expect,
+s07_the_ledger_3	and the door you expect to open.
+s07_the_ledger_4	The numbers are a guess, and the crew won't follow them.
+s07_the_ledger_5	What matters is the last column.
+s07_the_ledger_6	For each door, you've named an evening,
+s07_the_ledger_7	and you can check the price against the wages.
+s07_the_ledger_8	Too cheap, and it opens on night one.
+s07_the_ledger_9	Too dear, and it never does.
+s07_the_ledger_10	And remember where all of this is kept.
+s07_the_ledger_11	It's under the ship's name, in the save.
+s08_lint_and_play_0	Lint's clean, so here it is.
+s08_lint_and_play_1	Three answers, and no manifest.
+s08_lint_and_play_2	I pay the levy twice,
+s08_lint_and_play_3	and now there are four.
+s08_lint_and_play_4	I ask, and the lead is done.
+s08_lint_and_play_5	Then out to the breaking yard,
+s08_lint_and_play_6	and I sell the Count.
+s08_lint_and_play_7	Nothing tells me what that cost.
+s08_lint_and_play_8	Back home, the good work has gone from the list.
+s08_lint_and_play_9	And the hail's down to three answers again.
+s09_close_0	So you price standing, you don't award it.
+s09_close_1	Every answer that earns it gets a cost.
+s09_close_2	And all of it lives under the ship's name,
+s09_close_3	so the ship keeps its name.
+s09_close_4	Next time, we look at the act from the crew's side of the table.

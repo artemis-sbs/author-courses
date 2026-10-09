@@ -1,0 +1,84 @@
+s01_cold_open_0	Evening one took a whole lecture to build.
+s01_cold_open_1	Evening two is going to take a few minutes.
+s01_cold_open_2	Because today, you write down what stays the same.
+s01_cold_open_3	That's called a pattern,
+s01_cold_open_4	and a campaign is one pattern that you fill in twenty times.
+s02_build_it_once_0	The people who built Storm's Beacon made themselves a rule.
+s02_build_it_once_1	Adding an episode has to be a few mechanical edits,
+s02_build_it_once_2	and no new thinking about how.
+s02_build_it_once_3	And they tested it.
+s02_build_it_once_4	They added a third episode to a campaign that had two.
+s02_build_it_once_5	It held, so they wrote the rest.
+s02_build_it_once_6	You already have what an episode needs.
+s02_build_it_once_7	A lead that ends at a place.
+s02_build_it_once_8	A line that shows the next step.
+s02_build_it_once_9	Guards and cover on a landmark.
+s02_build_it_once_10	And a step that ends at home and pays.
+s02_build_it_once_11	None of that's new today.
+s02_build_it_once_12	Today's about writing down what stays the same,
+s02_build_it_once_13	so you never have to work it out again.
+s03_the_pattern_0	So here's evening one, with everything taken out that belongs only to evening one.
+s03_the_pattern_1	A landmark, and three steps.
+s03_the_pattern_2	The words in capitals are the slots.
+s03_the_pattern_3	The evening's number, two digits.
+s03_the_pattern_4	The system, twice, and it must be the same both times.
+s03_the_pattern_5	What's in the way.
+s03_the_pattern_6	What finishes the objective.
+s03_the_pattern_7	And what it pays.
+s03_the_pattern_8	Everything else is yours:
+s03_the_pattern_9	four titles, and four short pieces of text.
+s03_the_pattern_10	Keep the pattern in your campaign page,
+s03_the_pattern_11	so it's there every time you sit down.
+s04_four_endings_0	The slot that changes the evening most is the ending of the objective.
+s04_four_endings_1	Scan, and it's an evening about finding something out.
+s04_four_endings_2	Destroy, and it's a fight they can't walk away from.
+s04_four_endings_3	Signal, and it's a conversation,
+s04_four_endings_4	which we'll write in a later lecture.
+s04_four_endings_5	And then there's reach,
+s04_four_endings_6	for an evening that's about getting somewhere further on.
+s04_four_endings_7	One of those four goes in the slot,
+s04_four_endings_8	and the rest of the pattern doesn't change at all.
+s05_evening_two_0	The sheet first, as always.
+s05_evening_two_1	Then the landmark, the Dunlin,
+s05_evening_two_2	in cloud, and guarded.
+s05_evening_two_3	Now look at the open.
+s05_evening_two_4	I don't have to write it.
+s05_evening_two_5	It's already there, because it was last week's hook.
+s05_evening_two_6	It only needs its next step.
+s05_evening_two_7	So I write three things.
+s05_evening_two_8	The objective: this one's a trap,
+s05_evening_two_9	and they have to break it.
+s05_evening_two_10	Then the way home,
+s05_evening_two_11	and the hook for evening three.
+s05_evening_two_12	That's the rhythm of the whole campaign.
+s05_evening_two_13	Every time you sit down, the open's already written,
+s05_evening_two_14	and you write a place, a deed, a way home, and the next hook.
+s06_two_of_three_0	Two details in that objective.
+s06_two_of_three_1	The game sends three guards,
+s06_two_of_three_2	and I ask for two.
+s06_two_of_three_3	A fight to the very last ship
+s06_two_of_three_4	goes on five minutes after it stopped being fun.
+s06_two_of_three_5	And the fight needs the guards line.
+s06_two_of_three_6	I measured it without:
+s06_two_of_three_7	there was nothing hostile there at all,
+s06_two_of_three_8	and the evening couldn't be finished.
+s06_two_of_three_9	So an objective that ends with destroy
+s06_two_of_three_10	always gets a guards line on its landmark.
+s07_lint_and_play_0	Lint says it's clean.
+s07_lint_and_play_1	So I play evening one through to its hook,
+s07_lint_and_play_2	and I engage the new lead.
+s07_lint_and_play_3	Here's the Dunlin, the warning, and the new step.
+s07_lint_and_play_4	One ship down, and it's still open.
+s07_lint_and_play_5	Two, and it's done.
+s07_lint_and_play_6	Then we're home and paid,
+s07_lint_and_play_7	and there's the lead for evening three.
+s07_lint_and_play_8	And the charted places now have both boats in them.
+s08_close_0	So the open of every evening is the hook of the one before.
+s08_close_1	You never start from nothing.
+s08_close_2	Renumber every key when you copy the pattern.
+s08_close_3	If you don't, the game keeps the first record with that key,
+s08_close_4	and quietly drops your new evening.
+s08_close_5	Lint does tell you, by name.
+s08_close_6	And the pattern's yours to break.
+s08_close_7	A tentpole can be longer.
+s08_close_8	Next time, all twenty evenings, on one page.

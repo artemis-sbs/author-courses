@@ -1,0 +1,83 @@
+s01_cold_open_0	You've walked your act alone.
+s01_cold_open_1	You know it works.
+s01_cold_open_2	What you don't know is how long it takes,
+s01_cold_open_3	what a crew does when they don't know the answers,
+s01_cold_open_4	or which of your sentences nobody understood.
+s01_cold_open_5	Today you find out, with real people.
+s01_cold_open_6	And then you read what the game wrote down,
+s01_cold_open_7	and you change three things, and only three.
+s02_lint_first_0	Three checks before anybody arrives.
+s02_lint_first_1	Each sees something the others can't.
+s02_lint_first_2	The first is lint.
+s02_lint_first_3	If it isn't clean, you're not ready.
+s03_read_the_spine_0	The second is the printed bible.
+s03_read_the_spine_1	Go down the beats,
+s03_read_the_spine_2	and read only two lines under each step.
+s03_read_the_spine_3	Reached from, and leads to.
+s03_read_the_spine_4	The first step leads somewhere, and is reached from nowhere, and that's right.
+s03_read_the_spine_5	Every later step is reached from the one before.
+s03_read_the_spine_6	And the act's ending leads nowhere, for now.
+s03_read_the_spine_7	If a later step is sitting up in the first beat, with no reached from line,
+s03_read_the_spine_8	then nothing reveals it, and no crew will ever see it.
+s04_walk_then_delete_0	The third check is the walk.
+s04_walk_then_delete_1	You go down the spine alone, as fast as you can.
+s04_walk_then_delete_2	And then you delete the save.
+s04_walk_then_delete_3	This is the one people forget.
+s04_walk_then_delete_4	I'd forget it too,
+s04_walk_then_delete_5	so it's written on the page in bold.
+s04_walk_then_delete_6	A crew that sits down to a save you've walked through
+s04_walk_then_delete_7	starts at the end of your act.
+s05_at_the_table_0	Now for the people.
+s05_at_the_table_1	There are five rules, and they're harder than they look.
+s05_at_the_table_2	Say what the game is, and nothing about the story.
+s05_at_the_table_3	Don't answer questions. Write them down.
+s05_at_the_table_4	Where do we go, isn't a question for you.
+s05_at_the_table_5	It's a lead that didn't say where.
+s05_at_the_table_6	Write the time whenever a step shows done.
+s05_at_the_table_7	Don't stop them leaving the spine.
+s05_at_the_table_8	If they take three jobs instead,
+s05_at_the_table_9	that's the best thing you'll learn all week.
+s05_at_the_table_10	And end it yourself.
+s06_read_the_save_0	When they've gone, look at what the game recorded.
+s06_read_the_save_1	The runtime log should be empty.
+s06_read_the_save_2	Then open the save.
+s06_read_the_save_3	Don't change it. Just read.
+s06_read_the_save_4	Under the ship's name is what the ship has earned with each side.
+s06_read_the_save_5	Below that, the credits.
+s06_read_the_save_6	And then every step of your story,
+s06_read_the_save_7	each with a state.
+s06_read_the_save_8	One is open, and two is hidden.
+s06_read_the_save_9	Ninety-nine means it's done.
+s06_read_the_save_10	Now search for state one.
+s06_read_the_save_11	There should be exactly one step of your spine.
+s06_read_the_save_12	That's the hook, and that's where next week begins.
+s07_keep_a_copy_0	Before you close that folder, copy the file.
+s07_keep_a_copy_1	Name it for the evening.
+s07_keep_a_copy_2	The start screen has a new game choice
+s07_keep_a_copy_3	that replaces the save without asking.
+s07_keep_a_copy_4	A copy every week is the only undo a campaign has.
+s07_keep_a_copy_5	And remember what's in it.
+s07_keep_a_copy_6	Every hidden step, word for word.
+s07_keep_a_copy_7	So keep it where the crew doesn't look.
+s08_three_changes_0	Now compare your notes with your plan,
+s08_three_changes_1	and write three changes. No more.
+s08_three_changes_2	More than three, and you can't tell next week which one helped.
+s08_three_changes_3	The commonest first one is this.
+s08_three_changes_4	The crew arrives, and somebody asks, what do we do now?
+s08_three_changes_5	A description is atmosphere.
+s08_three_changes_6	So give the step an order, on a line of its own.
+s08_three_changes_7	And name the console in it.
+s08_three_changes_8	Scan the Wren from Science.
+s08_three_changes_9	That's the cheapest fix in this class.
+s09_again_with_new_people_0	Lint still says clean.
+s09_again_with_new_people_1	So delete the save,
+s09_again_with_new_people_2	and play it again with different people if you can.
+s09_again_with_new_people_3	A crew that's seen evening one
+s09_again_with_new_people_4	can't tell you if the new order helps.
+s09_again_with_new_people_5	Every playtest of an evening needs people who haven't seen it.
+s09_again_with_new_people_6	So save your friends for the evenings you're least sure of.
+s10_close_0	So a walk proves the steps are joined, and nothing else.
+s10_close_1	The game records what happened,
+s10_close_2	and only your notes say why.
+s10_close_3	So make three changes, keep a copy of the save,
+s10_close_4	and then write the next evening.
