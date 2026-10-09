@@ -18,9 +18,9 @@ Forty-one stones. One for each day." at the bottom.]*
 You will add to `mission.amd`. For the cutscene you will also paste one card into
 `story.mast`: one line and one block.
 
-You do not need Lecture 5 for this page. Nothing here is picked up. You do not need Class
-3 either: the two words it shares with this page, `learn` and `learned`, are taught again
-here.
+Lecture 5 is in preparation, and you do not need it for this page. Nothing here is picked
+up. You do not need Class 3 either: the two words it shares with this page, `learn` and
+`learned`, are taught again here.
 
 ## The video
 
@@ -28,14 +28,23 @@ here.
 
 ## Before you start
 
-- Your mission from Lecture 4: The Hollow, with The Ring, The Way In, The Altar and The
+- `MyRuin` as Lecture 4 left it: The Hollow, with The Ring, The Way In, The Altar and The
   Niche, Surveyor Rook, the beat **Marker One**, and the scenes **Rook at the Altar** and
-  **The Rest of It**. In this page it is called `MyMission`. Use your own folder's name.
-- `sbs lint MyMission` says `clean`.
+  **The Rest of It**. `mission.amd` is 199 lines long. If you did Lecture 4's exercise,
+  your file is longer and the two line numbers lint prints in Step 7 will be higher.
+  Nothing else changes.
+- `sbs lint MyRuin` says `clean`.
 - You have done Class 1, Lecture 11. You have pasted a card at the end of `story.mast`.
 - You have done Class 2, Lecture 4. You have written an answer that starts a quest.
-- You can start the mission as the server, with a Helm console and a Comms console. The
-  server's own window is the main screen.
+- VS Code with the mission folder open, a command prompt open in
+  `C:\Cosmos\data\missions`, and the game closed.
+
+You start the game the way you did in Lecture 4. The server's own window is the main
+screen:
+
+```
+sbs run server,helm,comms -m MyRuin map=0
+```
 
 ## Step 1 - What a clue is
 
@@ -369,7 +378,7 @@ Two rules for a cutscene your crew will thank you for:
 Run lint now. It has something to say about the section you just typed:
 
 ```
-  [WARNING] line 269:5: nothing in this mission reads a section keyed `cutscenes`, so its records are never loaded. The story asks this file for: characters, dialogue, landmarks, quests, scans, sides. Change the key in round brackets to one of those, or add the line that reads it (section-not-loaded)
+  [WARNING] line 267:5: nothing in this mission reads a section keyed `cutscenes`, so its records are never loaded. The story asks this file for: characters, dialogue, landmarks, quests, scans, sides. Change the key in round brackets to one of those, or add the line that reads it (section-not-loaded)
 ```
 
 Lint is right. Nothing in your mission reads the Cutscenes section, and nothing plays it.
@@ -560,7 +569,7 @@ Both whole files are in `example\`.
 ## Step 8 - Check it
 
 ```
-sbs lint MyMission
+sbs lint MyRuin
 ```
 
 You want `clean` under `mission.amd`, nothing about `story.mast`, and a last line that
@@ -677,8 +686,12 @@ Things that look like mistakes and are not:
 
 ## Step 9 - Play it
 
-Start your mission as the server, with a Helm console and a Comms console. Keep the
-server's window where you can see it. It is the main screen.
+Start the game with a server, a Helm console and a Comms console. Keep the server's
+window where you can see it. It is the main screen.
+
+```
+sbs run server,helm,comms -m MyRuin map=0
+```
 
 1. Fly to **The Hollow** and in through The Mouth. As the ship passes through the ring,
    Comms has a call: **Surveyor Rook - A recording at the ring**.
@@ -785,7 +798,7 @@ When you stop, open `mast.runtime.log` in your mission folder. It should be empt
 
 You are done when all five are true:
 
-- `sbs lint MyMission` says `clean`, with `0 error(s), 0 warning(s)`.
+- `sbs lint MyRuin` says `clean`, with `0 error(s), 0 warning(s)`.
 - With the names logged, the altar call offers three answers. With the ring recording shut
   off, it offers two.
 - **Mark the side room.** puts The Cairn on the map and The One Who Stayed in the quest

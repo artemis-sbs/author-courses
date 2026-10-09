@@ -1,67 +1,94 @@
 s01_cold_open_0	This is a ruin.
-s01_cold_open_1	Three rooms, two tunnels, older than anyone who could have built it.
-s01_cold_open_2	I did not model it and I did not place a single rock.
-s01_cold_open_3	I wrote down where the empty space is.
-s01_cold_open_4	Today you write yours.
-s02_space_not_walls_0	A ruin is hollow, so you describe the hollow.
-s02_space_not_walls_1	A chamber is a ball of open space: a room.
-s02_space_not_walls_2	A passage is a tube of open space between two chambers: a tunnel.
-s02_space_not_walls_3	A box is a block with flat sides: a built room, and you will add one yourself at the end.
-s02_space_not_walls_4	Whatever you do not describe is wall.
-s03_the_ruin_itself_0	A new section, and its key has to be the word relics.
-s03_the_ruin_itself_1	Then the ruin: a name for people, a key for the file.
-s03_the_ruin_itself_2	And one field.
-s03_the_ruin_itself_3	Loc is where it stands: across, height, along.
-s03_the_ruin_itself_4	The station is at zero, zero, zero.
-s03_the_ruin_itself_5	The hulk is nine thousand along.
-s03_the_ruin_itself_6	So this is past the hulk, on the same line.
-s03_the_ruin_itself_7	The sentence underneath is a note to myself.
-s03_the_ruin_itself_8	No player ever reads it.
-s04_the_first_room_0	Three hashes again, the same as the ruin. Not four.
-s04_the_first_room_1	A room is not written inside the ruin; it is written beside it, and this line says whose it is. Relic: hollow.
-s04_the_first_room_2	The key, not the name.
-s04_the_first_room_3	Then Chamber, four numbers.
-s04_the_first_room_4	The first three say where, measured from the ruin, so zero zero zero is the ruin's own spot.
-s04_the_first_room_5	The fourth is the radius.
-s04_the_first_room_6	Nine hundred, so eighteen hundred across.
-s04_the_first_room_7	My ship is about a hundred.
-s05_two_more_rooms_and_the_tunne_0	The Nave is three thousand to one side, and bigger.
-s05_two_more_rooms_and_the_tunne_1	And it has a passage: to mouth, radius three fifty.
-s05_two_more_rooms_and_the_tunne_2	That is the tunnel.
-s05_two_more_rooms_and_the_tunne_3	I write it once, on either room.
-s05_two_more_rooms_and_the_tunne_4	The Vault is twenty-eight hundred further along from the Nave, with a passage back to it.
-s05_two_more_rooms_and_the_tunne_5	So the ruin turns a corner.
-s05_two_more_rooms_and_the_tunne_6	Keep neighbours within about thirty-five hundred of each other.
-s06_look_at_it_0	With the file in front: Control Shift P, Relic Plan.
-s06_look_at_it_1	There it is, drawn from the file, and the game is not even running.
-s06_look_at_it_2	Top looks straight down.
-s06_look_at_it_3	Each square is a thousand.
-s06_look_at_it_4	Hover a room for its size; hover a tunnel for its length.
-s06_look_at_it_5	Now click the Vault and make it eight hundred.
-s06_look_at_it_6	Look at the file: one line changed.
-s06_look_at_it_7	The picture and the file are the same thing.
-s06_look_at_it_8	Undo, and it is back.
+s01_cold_open_1	It has three rooms and two tunnels,
+s01_cold_open_2	and it's older than anyone who could have built it.
+s01_cold_open_3	I didn't model it,
+s01_cold_open_4	and I didn't place a single rock.
+s01_cold_open_5	All I did was write down where the empty space is.
+s01_cold_open_6	Today, you write yours.
+s02_space_not_walls_0	A ruin is hollow, so what you describe is the hollow.
+s02_space_not_walls_1	A chamber is a ball of open space, and that's a room.
+s02_space_not_walls_2	A passage is a tube of open space between two rooms,
+s02_space_not_walls_3	and that's a tunnel.
+s02_space_not_walls_4	A box is a block with flat sides, a built room,
+s02_space_not_walls_5	and you'll add one yourself at the end.
+s02_space_not_walls_6	And whatever you don't describe is wall.
+s03_the_ruin_itself_0	I go to the very end of the file,
+s03_the_ruin_itself_1	and I start a new section.
+s03_the_ruin_itself_2	Its key has to be the word relics,
+s03_the_ruin_itself_3	because that's the word the game looks for.
+s03_the_ruin_itself_4	Then comes the ruin itself,
+s03_the_ruin_itself_5	with a name for people and a key for the file.
+s03_the_ruin_itself_6	And it has one field, called Loc, which is where it stands: across, height, along.
+s03_the_ruin_itself_7	The station is at zero, zero, zero,
+s03_the_ruin_itself_8	and the hulk is nine thousand along,
+s03_the_ruin_itself_9	so this is past the hulk, on the same line.
+s03_the_ruin_itself_10	The sentence underneath is a note to myself,
+s03_the_ruin_itself_11	and no player ever reads it.
+s04_the_first_room_0	Now a room, and it has three hashes, the same as the ruin, not four.
+s04_the_first_room_1	A room isn't written inside the ruin.
+s04_the_first_room_2	It's written beside it,
+s04_the_first_room_3	and this line says whose it is.
+s04_the_first_room_4	That's the ruin's key, and not its name.
+s04_the_first_room_5	Then Chamber, with four numbers.
+s04_the_first_room_6	The first three say where, measured from the ruin,
+s04_the_first_room_7	so three zeros is the ruin's own spot.
+s04_the_first_room_8	The fourth is the radius, nine hundred,
+s04_the_first_room_9	so the room is eighteen hundred across.
+s04_the_first_room_10	My ship is about a hundred.
+s05_two_more_rooms_and_the_tunne_0	The Nave is three thousand to one side, and it's bigger.
+s05_two_more_rooms_and_the_tunne_1	And it has a passage line:
+s05_two_more_rooms_and_the_tunne_2	passage to mouth, three fifty.
+s05_two_more_rooms_and_the_tunne_3	That's the tunnel, and the word is the other room's key,
+s05_two_more_rooms_and_the_tunne_4	and the number is the tunnel's radius.
+s05_two_more_rooms_and_the_tunne_5	There's a space between them, and no comma.
+s05_two_more_rooms_and_the_tunne_6	I write each tunnel once, on either of its two rooms.
+s05_two_more_rooms_and_the_tunne_7	The Vault is twenty-eight hundred further along from the Nave,
+s05_two_more_rooms_and_the_tunne_8	with a passage back to it,
+s05_two_more_rooms_and_the_tunne_9	so the ruin turns a corner.
+s06_look_at_it_0	With the file in front,
+s06_look_at_it_1	I open the command palette and ask for the Relic Plan.
+s06_look_at_it_2	And there it is, drawn from the file,
+s06_look_at_it_3	and the game isn't even running.
+s06_look_at_it_4	Top looks straight down, and each square is a thousand.
+s06_look_at_it_5	I can hover over a room for its size,
+s06_look_at_it_6	and over a tunnel for its length.
+s06_look_at_it_7	Now I click the Vault, and I make it eight hundred.
+s06_look_at_it_8	Look at the file: one line has changed.
+s06_look_at_it_9	So the picture and the file are the same thing.
+s06_look_at_it_10	I press Undo, and it's back.
 s07_nothing_to_paste_0	The file says what the ruin is.
-s07_nothing_to_paste_1	And this line, which was in your mission from the day you made it, builds every ruin the file holds: the space, the rock around it, whatever is inside, and its name on the map.
-s07_nothing_to_paste_2	You do not touch it.
-s07_nothing_to_paste_3	No ruin in the file, and it does nothing.
-s08_lint_0	Lint. Clean.
-s08_lint_1	A passage to a room that does not exist: it tells me, by name.
-s08_lint_2	Fix that one, because with it the game builds no ruin at all.
-s08_lint_3	Now a fourth hash on the Vault.
-s08_lint_4	The plan still shows three rooms.
-s08_lint_5	Lint is not fooled: this room is nested under the one above it, and the game will not read it.
-s08_lint_6	Three hashes on the ruin, three on every room.
-s08_lint_7	One thing lint cannot see.
-s08_lint_8	Take the Loc line away, and lint is clean, because it cannot know where you meant.
-s08_lint_9	The ruin would be built on top of the station.
-s08_lint_10	Keep the line.
-s09_play_it_0	Past the hulk: The Hollow.
-s09_play_it_1	That marker is the middle of the Mouth.
-s09_play_it_2	And this is my wall.
-s09_play_it_3	It is scenery today; it will not stop me.
-s09_play_it_4	Through the tunnel, and this is the Nave.
-s10_your_turn_0	Add a fourth room, and make it a box: a built room with flat walls.
-s10_your_turn_1	Join it by overlapping the room next to it.
-s10_your_turn_2	Then move it away, watch lint tell you the ruin is in two pieces, and join it again with a passage.
-s10_your_turn_3	Next time we decide what these walls are made of.
+s07_nothing_to_paste_1	And this line, which has been in your mission since the day you made it,
+s07_nothing_to_paste_2	builds every ruin the file holds.
+s07_nothing_to_paste_3	It makes the space, it puts rock around it,
+s07_nothing_to_paste_4	and it writes the ruin's name on the map.
+s07_nothing_to_paste_5	You don't touch it.
+s07_nothing_to_paste_6	And if there's no ruin in the file, it does nothing.
+s08_lint_0	So I run lint, and it's clean.
+s08_lint_1	Now I point a passage at a room that doesn't exist,
+s08_lint_2	and lint tells me so, by name.
+s08_lint_3	Read the end of that sentence:
+s08_lint_4	with this one going nowhere, the game doesn't build the ruin at all.
+s08_lint_5	Next, a fourth hash on the Vault.
+s08_lint_6	The plan still shows three rooms, but lint isn't fooled.
+s08_lint_7	It says the room is nested, and the game won't read it.
+s08_lint_8	So it's three hashes on the ruin, and three on every room.
+s08_lint_9	And here's one thing lint can't see.
+s08_lint_10	I take the Loc line away, and lint says clean,
+s08_lint_11	because it can't know where I meant.
+s08_lint_12	The ruin would be built on top of the station,
+s08_lint_13	so keep the line.
+s09_play_it_0	I start the game with a server and a Helm console.
+s09_play_it_1	And there, past the hulk, is The Hollow.
+s09_play_it_2	That marker is the middle of the Mouth.
+s09_play_it_3	And this is my wall.
+s09_play_it_4	From inside it looks like a field of rocks,
+s09_play_it_5	and it's scenery today, so it won't stop me.
+s09_play_it_6	Through the tunnel we go, and this is the Nave.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Add a fourth room, and make it a box,
+s10_your_turn_2	a built room with flat walls.
+s10_your_turn_3	Join it by overlapping the room next to it.
+s10_your_turn_4	Then move it away,
+s10_your_turn_5	and watch lint tell you the ruin is in two pieces.
+s10_your_turn_6	And then join it again, with a passage.
+s10_your_turn_7	Next time, we decide what these walls are made of.

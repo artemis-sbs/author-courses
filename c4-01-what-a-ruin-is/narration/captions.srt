@@ -1,0 +1,319 @@
+1
+00:00:00,000 --> 00:00:01,739
+This is a ruin.
+
+2
+00:00:02,639 --> 00:00:06,117
+It's a place a ship can fly inside,
+
+3
+00:00:06,567 --> 00:00:10,915
+and it's older than anyone who could have built it.
+
+4
+00:00:11,815 --> 00:00:14,859
+Nobody modeled it in a drawing program.
+
+5
+00:00:16,659 --> 00:00:19,702
+It's this: about fifty lines of text.
+
+6
+00:00:20,602 --> 00:00:24,515
+In this class, you write one of your own.
+
+7
+00:00:24,965 --> 00:00:28,443
+Today, you fly one that somebody else wrote,
+
+8
+00:00:28,893 --> 00:00:32,372
+and then you read how it was made.
+
+9
+00:00:33,572 --> 00:00:35,311
+First, a new mission.
+
+10
+00:00:36,211 --> 00:00:40,559
+This class doesn't build on the one from Class 1.
+
+11
+00:00:41,009 --> 00:00:44,487
+That story ends the game ten minutes in,
+
+12
+00:00:44,937 --> 00:00:48,850
+and a ruin takes longer than that to fly.
+
+13
+00:00:49,750 --> 00:00:57,576
+So I make a mission the way I did in Class 1, and I call it My Ruin.
+
+14
+00:00:59,376 --> 00:01:02,854
+Then I bring its libraries up to date,
+
+15
+00:01:03,304 --> 00:01:07,217
+open the folder in the editor, and run lint.
+
+16
+00:01:08,117 --> 00:01:13,770
+It's clean, and it's the same small mission you started Class 1 with.
+
+17
+00:01:14,970 --> 00:01:18,883
+There's a shipped campaign that's built out of ruins,
+
+18
+00:01:19,333 --> 00:01:23,246
+and one of its smallest is called The Sink.
+
+19
+00:01:24,146 --> 00:01:28,928
+It's one enormous flooded room, with a hole in one end.
+
+20
+00:01:30,728 --> 00:01:34,641
+I go to the very end of my file,
+
+21
+00:01:35,091 --> 00:01:38,570
+and I paste a cut-down copy of it.
+
+22
+00:01:39,470 --> 00:01:41,209
+Don't read it yet.
+
+23
+00:01:41,659 --> 00:01:45,137
+Just save, and run lint, and it's clean.
+
+24
+00:01:46,037 --> 00:01:49,950
+One line in there isn't in the shipped file,
+
+25
+00:01:50,400 --> 00:01:54,748
+and that's the line that says where the ruin stands.
+
+26
+00:01:55,948 --> 00:02:00,730
+I start the game with a server and a Helm console.
+
+27
+00:02:01,630 --> 00:02:08,587
+And there on the map, past the hulk and off to one side, is The Sink.
+
+28
+00:02:09,487 --> 00:02:16,009
+The name sits at the mouth of the way in, so that's where I fly.
+
+29
+00:02:17,809 --> 00:02:21,722
+Now I'm in the inlet, a long narrow room,
+
+30
+00:02:22,172 --> 00:02:23,911
+and there's the haze.
+
+31
+00:02:24,811 --> 00:02:29,593
+And here it opens out, into a room five thousand across.
+
+32
+00:02:31,393 --> 00:02:35,307
+There's a mass hanging in the middle of it.
+
+33
+00:02:35,757 --> 00:02:37,496
+I fly round that,
+
+34
+00:02:37,946 --> 00:02:40,554
+and I'm on the far side.
+
+35
+00:02:41,454 --> 00:02:47,107
+Notice the names that turned up on the map as I came near.
+
+36
+00:02:47,557 --> 00:02:51,035
+Those are places, and you'll write those too.
+
+37
+00:02:52,235 --> 00:02:55,278
+Now let's read it, as a list.
+
+38
+00:02:56,178 --> 00:02:59,657
+It's one section, with seven records in it.
+
+39
+00:03:00,557 --> 00:03:03,600
+The first record is the ruin itself.
+
+40
+00:03:04,500 --> 00:03:11,022
+The next two say Box, and each of those is a room with flat sides.
+
+41
+00:03:11,922 --> 00:03:16,704
+This one says Solid, and it's the mass in the middle,
+
+42
+00:03:17,154 --> 00:03:18,893
+which takes space away.
+
+43
+00:03:19,793 --> 00:03:25,011
+And these three say Point, and each one is a named place.
+
+44
+00:03:26,811 --> 00:03:32,028
+Now look at what every record but the first has in common.
+
+45
+00:03:32,478 --> 00:03:35,087
+It says Relic, and then sink,
+
+46
+00:03:35,537 --> 00:03:37,711
+which is the ruin's key.
+
+47
+00:03:38,611 --> 00:03:42,959
+That's how a room says which ruin it belongs to.
+
+48
+00:03:44,759 --> 00:03:46,933
+And notice what isn't here.
+
+49
+00:03:47,383 --> 00:03:49,122
+Nobody wrote a wall.
+
+50
+00:03:50,022 --> 00:03:53,500
+The file says where the open space is,
+
+51
+00:03:53,950 --> 00:03:56,993
+and the game puts rock around it.
+
+52
+00:03:58,193 --> 00:04:02,541
+The shipped file is about three hundred and fifty lines,
+
+53
+00:04:02,991 --> 00:04:05,600
+and I pasted fifty or so.
+
+54
+00:04:06,500 --> 00:04:09,543
+The rest is what this class teaches.
+
+55
+00:04:11,343 --> 00:04:13,952
+Here, a place has a scene,
+
+56
+00:04:14,402 --> 00:04:18,750
+a conversation of the kind you wrote in Class 2.
+
+57
+00:04:19,650 --> 00:04:23,998
+Here, a place holds a thing the crew can find.
+
+58
+00:04:24,898 --> 00:04:30,115
+This place is hidden, until somebody hears it from across the room.
+
+59
+00:04:31,015 --> 00:04:35,798
+This is a small story for one member of the crew.
+
+60
+00:04:36,248 --> 00:04:41,465
+And this is what the main screen shows as the ship arrives.
+
+61
+00:04:43,265 --> 00:04:47,178
+Most of that isn't for the ship at all.
+
+62
+00:04:47,628 --> 00:04:51,541
+It's for people who leave the ship in suits,
+
+63
+00:04:51,991 --> 00:04:55,035
+and that comes late in this class.
+
+64
+00:04:55,935 --> 00:04:57,674
+So I cut it,
+
+65
+00:04:58,124 --> 00:05:02,907
+and the table on the page says what went and why.
+
+66
+00:05:04,107 --> 00:05:08,889
+The Sink was a loan, so now I give it back.
+
+67
+00:05:09,789 --> 00:05:15,441
+I select everything from the Relics heading to the end of the file,
+
+68
+00:05:15,891 --> 00:05:17,630
+and I delete it.
+
+69
+00:05:18,530 --> 00:05:22,009
+I save, I run lint, and it's clean.
+
+70
+00:05:23,809 --> 00:05:26,852
+The file is sixty lines long again,
+
+71
+00:05:27,302 --> 00:05:30,346
+and that's where the next lecture starts.
+
+72
+00:05:31,546 --> 00:05:34,589
+Before you delete it, play with it.
+
+73
+00:05:35,489 --> 00:05:38,098
+Change the color of the haze.
+
+74
+00:05:38,548 --> 00:05:42,896
+Move the whole ruin somewhere else, and find it again.
+
+75
+00:05:43,796 --> 00:05:45,970
+Make the big room smaller,
+
+76
+00:05:46,420 --> 00:05:49,898
+and read what lint tells you about that.
+
+77
+00:05:51,698 --> 00:05:53,872
+Then put the game away,
+
+78
+00:05:54,322 --> 00:05:57,800
+and answer three questions from the file alone.
+
+79
+00:05:59,600 --> 00:06:03,513
+Next time, you write a ruin of your own,
+
+80
+00:06:03,963 --> 00:06:06,137
+starting from an empty page.

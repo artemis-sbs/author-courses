@@ -1,0 +1,80 @@
+s01_cold_open_0	This is a ruin.
+s01_cold_open_1	It's a place a ship can fly inside,
+s01_cold_open_2	and it's older than anyone who could have built it.
+s01_cold_open_3	Nobody modeled it in a drawing program.
+s01_cold_open_4	It's this: about fifty lines of text.
+s01_cold_open_5	In this class, you write one of your own.
+s01_cold_open_6	Today, you fly one that somebody else wrote,
+s01_cold_open_7	and then you read how it was made.
+s02_a_mission_for_this_class_0	First, a new mission.
+s02_a_mission_for_this_class_1	This class doesn't build on the one from Class 1.
+s02_a_mission_for_this_class_2	That story ends the game ten minutes in,
+s02_a_mission_for_this_class_3	and a ruin takes longer than that to fly.
+s02_a_mission_for_this_class_4	So I make a mission the way I did in Class 1, and I call it My Ruin.
+s02_a_mission_for_this_class_5	Then I bring its libraries up to date,
+s02_a_mission_for_this_class_6	open the folder in the editor, and run lint.
+s02_a_mission_for_this_class_7	It's clean, and it's the same small mission you started Class 1 with.
+s03_borrow_a_ruin_0	There's a shipped campaign that's built out of ruins,
+s03_borrow_a_ruin_1	and one of its smallest is called The Sink.
+s03_borrow_a_ruin_2	It's one enormous flooded room, with a hole in one end.
+s03_borrow_a_ruin_3	I go to the very end of my file,
+s03_borrow_a_ruin_4	and I paste a cut-down copy of it.
+s03_borrow_a_ruin_5	Don't read it yet.
+s03_borrow_a_ruin_6	Just save, and run lint, and it's clean.
+s03_borrow_a_ruin_7	One line in there isn't in the shipped file,
+s03_borrow_a_ruin_8	and that's the line that says where the ruin stands.
+s04_fly_it_0	I start the game with a server and a Helm console.
+s04_fly_it_1	And there on the map, past the hulk and off to one side, is The Sink.
+s04_fly_it_2	The name sits at the mouth of the way in, so that's where I fly.
+s04_fly_it_3	Now I'm in the inlet, a long narrow room,
+s04_fly_it_4	and there's the haze.
+s04_fly_it_5	And here it opens out, into a room five thousand across.
+s04_fly_it_6	There's a mass hanging in the middle of it.
+s04_fly_it_7	I fly round that,
+s04_fly_it_8	and I'm on the far side.
+s04_fly_it_9	Notice the names that turned up on the map as I came near.
+s04_fly_it_10	Those are places, and you'll write those too.
+s05_read_what_you_pasted_0	Now let's read it, as a list.
+s05_read_what_you_pasted_1	It's one section, with seven records in it.
+s05_read_what_you_pasted_2	The first record is the ruin itself.
+s05_read_what_you_pasted_3	The next two say Box, and each of those is a room with flat sides.
+s05_read_what_you_pasted_4	This one says Solid, and it's the mass in the middle,
+s05_read_what_you_pasted_5	which takes space away.
+s05_read_what_you_pasted_6	And these three say Point, and each one is a named place.
+s05_read_what_you_pasted_7	Now look at what every record but the first has in common.
+s05_read_what_you_pasted_8	It says Relic, and then sink,
+s05_read_what_you_pasted_9	which is the ruin's key.
+s05_read_what_you_pasted_10	That's how a room says which ruin it belongs to.
+s05_read_what_you_pasted_11	And notice what isn't here.
+s05_read_what_you_pasted_12	Nobody wrote a wall.
+s05_read_what_you_pasted_13	The file says where the open space is,
+s05_read_what_you_pasted_14	and the game puts rock around it.
+s06_read_the_rest_of_the_file_0	The shipped file is about three hundred and fifty lines,
+s06_read_the_rest_of_the_file_1	and I pasted fifty or so.
+s06_read_the_rest_of_the_file_2	The rest is what this class teaches.
+s06_read_the_rest_of_the_file_3	Here, a place has a scene,
+s06_read_the_rest_of_the_file_4	a conversation of the kind you wrote in Class 2.
+s06_read_the_rest_of_the_file_5	Here, a place holds a thing the crew can find.
+s06_read_the_rest_of_the_file_6	This place is hidden, until somebody hears it from across the room.
+s06_read_the_rest_of_the_file_7	This is a small story for one member of the crew.
+s06_read_the_rest_of_the_file_8	And this is what the main screen shows as the ship arrives.
+s06_read_the_rest_of_the_file_9	Most of that isn't for the ship at all.
+s06_read_the_rest_of_the_file_10	It's for people who leave the ship in suits,
+s06_read_the_rest_of_the_file_11	and that comes late in this class.
+s06_read_the_rest_of_the_file_12	So I cut it,
+s06_read_the_rest_of_the_file_13	and the table on the page says what went and why.
+s07_give_it_back_0	The Sink was a loan, so now I give it back.
+s07_give_it_back_1	I select everything from the Relics heading to the end of the file,
+s07_give_it_back_2	and I delete it.
+s07_give_it_back_3	I save, I run lint, and it's clean.
+s07_give_it_back_4	The file is sixty lines long again,
+s07_give_it_back_5	and that's where the next lecture starts.
+s08_your_turn_0	Before you delete it, play with it.
+s08_your_turn_1	Change the color of the haze.
+s08_your_turn_2	Move the whole ruin somewhere else, and find it again.
+s08_your_turn_3	Make the big room smaller,
+s08_your_turn_4	and read what lint tells you about that.
+s08_your_turn_5	Then put the game away,
+s08_your_turn_6	and answer three questions from the file alone.
+s08_your_turn_7	Next time, you write a ruin of your own,
+s08_your_turn_8	starting from an empty page.

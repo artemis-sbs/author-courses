@@ -62,80 +62,57 @@ Tab: mat
 
 ## [Relics](relics)
 
-### [The Hollow](hollow)
+### [The Sink](sink)
 ---
-Loc: 0, 0, 20000
-Walls: rock
-Seed: 12
-Debris: 30
-Gaps: 0.2
+Loc: 6000, 0, 12000
 Atmosphere: purple
+Seed: 113
+Art: plain_asteroid_6, plain_asteroid_8, plain_asteroid_9
+Walls: cave, rock
 ---
-Older than anyone who could have built it. Three rooms, as far as anyone knows.
+One room, flooded and enormous, with a hole in one end.
 
-### [The Mouth](mouth)
+### [the inlet](inlet)
 ---
-Relic: hollow
-Chamber: 0, 0, 0, 900
+Relic: sink
+Box: -3250, 0, 0, 1000, 350, 350
 ---
-The way in. Wide, and worn smooth.
+The hole in the end. It is the only way in and it is the only way out.
 
-### [The Nave](nave)
+### [the sink](basin)
 ---
-Relic: hollow
-Chamber: 3000, 0, 0, 1100
-Passage to: mouth 350
+Relic: sink
+Box: 200, 0, 0, 2600, 900, 2600
 ---
-The big room. Whatever this place was for, it happened here.
+Five kilometres of room and no floor plan at all. Fly it however you like - there is
+nothing in here that cares which way you came.
 
-### [The Vault](vault)
+### [the drift](drift_solid)
 ---
-Relic: hollow
-Chamber: 3000, 0, 2800, 700
-Passage to: nave 300
-Art: plain_asteroid_9
+Relic: sink
+Solid: sphere, 200, 0, 0, 700
 ---
-The far end. Small, round, and a long way from the door.
+A mass of settled debris hanging in the middle of the room, big enough to hide the far wall
+from the near one.
 
-### [The Gallery](gallery)
+### [the inlet mouth](mouth)
 ---
-Relic: hollow
-Box: 3000, 0, -1900, 600, 400, 800
-Passage to: nave 300
-Walls: blocks
----
-A built room, with flat walls and real corners. Somebody added this later.
-
-### [The Ring](ring)
----
-Relic: hollow
-Prop: 1400, 0, 0
-Dress: generic-torus 4
-Facing: nave
----
-A hoop of worked metal, set across the first passage. You fly through it.
-
-### [The Way In](way_in)
----
-Relic: hollow
-Point: 0, 0, -700
+Relic: sink
+Point: -4400, 0, 0
 Roles: entrance
 ---
-Where a ship arrives. The name on the map sits here.
 
-### [The Altar](altar)
+### [the near side](at_near)
 ---
-Relic: hollow
-Point: 3000, 0, 2800
-Roles: altar
+Relic: sink
+Point: -1600, 0, 0
+Roles: sink_near
 ---
-The middle of the Vault. Whatever was kept here is gone.
 
-### [The Niche](niche)
+### [the far side](at_far)
 ---
-Relic: hollow
-Point: 3000, 0, -2500
-Roles: niche
-Hidden: yes
+Relic: sink
+Point: 2000, 0, 1600
+Roles: sink_far
 ---
-A recess at the back of the Gallery. Easy to miss.
+Behind the drift, which is the only reason there is a "far side" at all.

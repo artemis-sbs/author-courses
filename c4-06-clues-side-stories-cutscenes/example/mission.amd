@@ -88,8 +88,6 @@ Tab: mat
 % Scoring along the plating matches no weapon in use in this sector.
 
 
-// ---- Ruins. A ruin is a place the ship flies INSIDE. The first record is the ruin
-// itself. Every record with a `Relic:` line is one room of it.
 ## [Relics](relics)
 
 ### [The Hollow](hollow)

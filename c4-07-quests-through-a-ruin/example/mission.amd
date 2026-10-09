@@ -47,6 +47,25 @@ Action:
 ---
 The ship comes close to the altar, and the old survey marker starts to play.
 
+### [Marker Zero](marker_zero)
+---
+Beat
+Starts when: reach plate 500
+Action:
+  - rook hails rook_plate
+---
+The ship flies through the ring, and the plate on it starts to play.
+
+### [The One Who Stayed](stayed)
+---
+Scope: shared
+Starts when: revealed
+Objective: Find the cairn in the side room off The Nave
+Done when: reach cairn 400
+Then: signal cairn_found
+---
+Five surveyors went into The Hollow. Four came out.
+
 ### [The Hollow Survey](survey)
 ---
 Arc
@@ -147,8 +166,6 @@ Tab: scan
 % A square recess, cut later than the room. Something small and dense sits at the back of it.
 
 
-// ---- Ruins. A ruin is a place the ship flies INSIDE. The first record is the ruin
-// itself. Every record with a `Relic:` line is one room of it.
 ## [Relics](relics)
 
 ### [The Hollow](hollow)
@@ -231,6 +248,32 @@ Hidden: yes
 ---
 A recess at the back of the Gallery. Easy to miss.
 
+### [The Ring Plate](plate)
+---
+Relic: hollow
+Point: 1400, 0, 0
+Roles: plate
+---
+A metal plate bolted to the ring. The first survey left it.
+
+### [The Crypt](crypt)
+---
+Relic: hollow
+Chamber: 5200, 0, 0, 600
+Passage to: nave 250
+---
+A small side room off the Nave. The first survey's notes do not mention it.
+
+### [The Cairn](cairn)
+---
+Relic: hollow
+Point: 5200, 0, 0
+Roles: cairn
+Hidden: yes
+Dress: generic-cone 2
+---
+A pile of stones in the middle of the Crypt.
+
 
 // ---- Characters. The voices in the story.
 ## [Characters](characters)
@@ -255,6 +298,7 @@ Title: A recording at the altar
 % Marker one, the Vault. Whoever you are, you are the first here since us.
 
 - [Play the rest.](rook_more)
+- [Play the entry keyed to Dace.](rook_dace) if learned >= 1
 - [Shut it off.]()
 
 ### [The Rest of It](rook_more)
@@ -265,6 +309,25 @@ Speaker: rook
 
 - [Mark the Gallery.]() ; reveal niche
 - [End playback.]()
+
+### [Rook at the Ring](rook_plate)
+---
+Speaker: rook
+When: hail
+Title: A recording at the ring
+---
+% Marker zero. Five of us went in: Rook, Dace, Imre, Sato and Vell. The markers inside answer to our names.
+
+- [Log the names.]() ; learn names
+- [Shut it off.]()
+
+### [The Entry for Dace](rook_dace)
+---
+Speaker: rook
+---
+% Dace did not come out with us. We built her a cairn in the side room, off the Nave. Forty-one stones.
+
+- [Mark the side room.](rook_more) ; reveal cairn, accepts stayed
 
 ### [Rook at the Niche](rook_niche)
 ---
@@ -298,3 +361,35 @@ Speaker: rook
 % Tally marks, in sets of five. Somebody counted days here, and then stopped.
 
 - [Step back]()
+
+
+// ---- Cutscenes. What the main screen shows at a moment in the story.
+## [Cutscenes](cutscenes)
+
+### [At the Cairn](cairn_scene)
+---
+Letterbox: yes
+---
+Played when the crew finds the cairn.
+
+### [The count](cairn_shot_1)
+---
+Cutscene: cairn_scene
+Subject: altar
+Framing: close
+Seconds: 4
+Overlay: lower_third
+Name: The Altar
+---
+The tally on the rim stops at forty-one.
+
+### [The stones](cairn_shot_2)
+---
+Cutscene: cairn_scene
+Subject: cairn
+Framing: wide, close
+Seconds: 6
+Overlay: lower_third
+Name: The Cairn
+---
+Forty-one stones. One for each day.

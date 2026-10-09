@@ -19,11 +19,23 @@ goes in wearing a suit all come in later lectures.
 
 ## Before you start
 
-- A mission made with `sbs create` from the `amd` template. In this page it is called
-  `MyMission`. Use your own folder's name.
-- VS Code with the Artemis AMD extension, and the mission folder open in it.
-- You have flown a shipped ruin and read its file (Lecture 1 of this class).
-- `sbs lint MyMission` says `clean`.
+- The mission `MyRuin` from Lecture 1, as that lecture left it: made with `sbs create`,
+  its libraries brought up to date, and the borrowed ruin deleted again. `mission.amd` is
+  60 lines long and ends with the record **Derelict Materials**.
+- `MyRuin` open and trusted in VS Code, a command prompt open in `C:\Cosmos\data\missions`,
+  and the game closed.
+- `sbs lint MyRuin` says `clean`.
+
+Did you skip Lecture 1? Make the mission now, the way you made `MyMission` in Class 1:
+
+```
+sbs create MyRuin -t amd --title "The Hollow"
+sbs fetch "MyRuin" --update-libs
+```
+
+This class does not build on `MyMission`. Your Class 1 story ends the game ten minutes
+after it starts, and a ruin takes longer than that to fly. So the ruin gets a mission of
+its own, and Lecture 7 gives it a story and a clock of its own.
 
 ## Step 1 - You describe the space, not the walls
 
@@ -33,14 +45,15 @@ everything else is wall.
 | You write | It is | Think of it as |
 |---|---|---|
 | `Chamber:` | A ball of open space | A room |
-| `Passage to:` | A tube of open space between two chambers | A tunnel |
+| `Passage to:` | A tube of open space between two rooms | A tunnel |
 | `Box:` | A block of open space with flat sides | A built room. You meet it in the exercise |
 
 Today you write three chambers and two passages.
 
 ## Step 2 - The ruin itself
 
-Open `mission.amd`. Go to the very end of the file and add:
+Open `mission.amd`. Go to the very end of the file, below the last line of **Derelict
+Materials**. Leave two blank lines, and type:
 
 ```
 ## [Relics](relics)
@@ -67,7 +80,7 @@ around the station.
 
 ## Step 3 - The first room
 
-Below the ruin, add:
+Below the ruin, leave one blank line and type:
 
 ```
 ### [The Mouth](mouth)
@@ -93,7 +106,7 @@ cruiser as a ball 100 across.
 
 ## Step 4 - Two more rooms, and the passages
 
-Add these below The Mouth:
+Below The Mouth, leave one blank line and type:
 
 ```
 ### [The Nave](nave)
@@ -119,17 +132,18 @@ number is the tunnel's radius, so this one is 700 across.
 | Rule | Why |
 |---|---|
 | Name the other room by its key: `mouth`, not `The Mouth` | The game reads one word |
-| Write each passage once, on either of its two rooms | Twice makes two tunnels |
+| A space between the key and the number, and no comma | With a comma the number is not read, and you get 200 |
 | Leave the radius out and you get 200 | A narrow tunnel |
-| Keep rooms that share a passage within about 3500 of each other | The editor warns you when a passage is longer than 5000 |
+| Write each passage once, on either of its two rooms | Twice makes two tunnels in the same place |
+| Keep rooms that share a passage within about 3500 of each other | The Relic Plan warns you when a passage is longer than 5000 |
 
 The Nave is 3000 to one side of The Mouth. The Vault is 2800 further along from The Nave.
 The ruin turns a corner.
 
 ## Step 5 - Look at it
 
-Keep `mission.amd` as the tab in front. Press `Ctrl+Shift+P`, type `Relic Plan`, and choose
-**Artemis AMD: Show Relic Plan**.
+Save. Keep `mission.amd` as the tab in front. Press `Ctrl+Shift+P`, type `Relic Plan`, and
+choose **Artemis AMD: Show Relic Plan**.
 
 A panel named **Relic Plan** opens beside your file. It draws your ruin from the file
 alone. The game does not need to be running.
@@ -163,7 +177,7 @@ Leave **Preview** and **Live** alone for now. They belong to a later lecture.
 
 There is nothing to do. Your mission already builds every ruin written in `mission.amd`.
 
-Open `story.mast` and look for this line. Do not change it:
+Open `story.mast` and look at line 62. Do not change it:
 
 ```
     relics_spawn(get_mission_dir_filename("mission.amd"))
@@ -175,67 +189,91 @@ When the map starts, that one line does four things for each ruin in the file:
 |---|---|
 | Builds the space from your rooms and passages | The ruin is a place |
 | Puts rock around the space | There is something to see |
-| Places what is inside the ruin | Nothing yet. Lectures 4 and 5 fill it |
+| Places what is inside the ruin | Nothing yet. Later lectures fill it |
 | Writes the ruin's name on the map, at its `Loc:` | Helm can find it |
 
 A mission with no Relics section is not a mistake. The line does nothing and the mission
-runs as before.
-
-> **No such line in your `story.mast`?** Your mission was made from an older template. This
-> is the one time today you paste something. Find the line that starts
-> `    science_define_scan_amd(` and paste the `relics_spawn` line above, on a new line
-> directly under it. It starts with four spaces. Not a tab, and not three.
+runs as before. That is how your Class 1 mission ran.
 
 ## Step 7 - Check it
 
 ```
-sbs lint MyMission
+sbs lint MyRuin
 ```
 
-You want `clean` under `mission.amd`.
+You want this:
 
-Lint catches these:
+```
+== mission.amd ==
+  clean
 
-| Mistake | What lint says | What the game does |
+1 amd + 1 mast file(s): 0 error(s), 0 warning(s)
+```
+
+Lint names every mistake in this first table. The word in the last column is at the end of
+the line lint prints.
+
+| Mistake | What the game does | Lint says |
 |---|---|---|
-| `Passage to: crypt 300`, and no room has the key `crypt` | `'crypt' is not a room of 'hollow'` | Builds no ruin at all |
-| `Passage to: The Mouth 350` (the name, not the key) | The same warning, about `The` | Builds no ruin at all |
-| `Relic: holow`, or `Relic: The Hollow` | That is not a relic in this file, so the room is dropped | The room is missing. If another room has a passage to it, no ruin at all |
-| `Chambre:` | Not a known field | The same as a missing room |
-| `Pasage to:` | Not a known field, and the ruin `solves into 2 separate pieces` | The ruin is built with that passage missing |
-| A radius of `0` or `-700` | The radius must be positive | Builds no ruin at all |
-| Three numbers where four are needed, or `700u`, or a long dash for a minus sign | `'chamber' needs 4 numbers, got 3` | The same as a missing room |
-| A room that no passage reaches and that touches no other room | The ruin `solves into 2 separate pieces`. It points at the ruin's heading, not at the room | The room is there, sealed off |
-| Two rooms with the same key | That key names two records | One of the two rooms is missing |
-| A room written with four hashes | The room is nested under the room above it. `Give this heading 3 hashes` | That room is missing. With every room nested, no ruin at all |
-| A room written with two hashes | That room, and every room below it, `is not inside a relics section` | Those rooms are missing |
-| A room with no `Relic:` line | It `has a Chamber: line and no Relic: line` | That room is missing |
-| `Loc:` with two numbers | `Loc: needs 3 numbers` | The ruin is built around the station |
-| No colon after `Chamber` | An error | The same as a missing room |
-| The closing `---` left off | An error | |
+| `Passage to: crypt 300`, and no room has the key `crypt` | Builds no ruin at all | `relic-dangling-passage` |
+| `Passage to: The Mouth 350` (the name, not the key) | Builds no ruin at all | `relic-dangling-passage`, about the word `The` |
+| `Relic: holow`, or `Relic: The Hollow`, on a room | That room is missing. If another room has a passage to it, no ruin at all | `relic-dangling-parent` |
+| `Chambre:` | The same as a missing room | `unknown-field`: did you mean `Chamber`? |
+| `Pasage to:`, or `Passage:` | The ruin is built with that passage missing. The room is there, sealed off | `unknown-field`, and `relic-disconnected` |
+| A radius of `0` or `-700` | Builds no ruin at all | `relic-bad-radius` |
+| Three numbers where four are needed, or `700u` for the radius | The same as a missing room | `relic-short-part` |
+| A room that no passage reaches and that touches no other room | The room is there, sealed off | `relic-disconnected`. It points at the ruin's heading, not at the room |
+| Two rooms with the same key | One of the two rooms is missing | `duplicate-key` |
+| A room written with four hashes | That room is missing. With every room nested, no ruin at all | `relic-part-level`: give it 3 hashes |
+| A room written with two hashes | That room, and every room below it, is missing | `relic-outside-section` |
+| A room with no `Relic:` line, or with the line below the closing `---` | That room is missing | `relic-part-no-owner` |
+| `Loc:` with two numbers | The ruin is built around the station | `relic-bad-loc` |
+| No colon after `Chamber` | The same as a missing room | `fence-syntax`, an error |
+| The closing `---` left off a room | That room is missing | `unclosed-data-fence`, an error |
+| `## [Old Places](places)` for the section | No ruin at all | `section-not-loaded` |
+| The section heading left out, or written with three hashes | No ruin at all. The rooms are read as scans | `relic-outside-section` |
 
 A missing room that another room has a passage to is a passage to nowhere, and that means
-no ruin at all.
+no ruin at all. In your file both The Mouth and The Nave have a passage leading to them.
+
+This is the line lint prints for the first row, whole:
+
+```
+  [WARNING] line 90: 'crypt' is not a room of 'hollow' - a passage has to end on a room's key, and with this one going nowhere the game does not build 'hollow' at all (relic-dangling-passage)
+```
 
 Fix every one of these before you play. A warning here is not a small thing: with most of
 them the game builds no ruin at all, and with the rest a room is missing or cut off.
 
 When the game cannot build a ruin it does not stop. The rest of the mission runs, and the
-reason is written to `mast.runtime.log` in your mission folder. An empty file there means
-nothing went wrong.
+reason is written to `mast.runtime.log` in your mission folder, in a line that begins
+`relic 'hollow' was not built`. An empty file there means nothing went wrong.
+
+### What lint cannot see
 
 Lint says `clean` for these, and they are still wrong:
 
-| Mistake | What happens |
-|---|---|
-| No `Loc:` line at all | The ruin is built around the station. `mast.runtime.log` says so |
-| A radius of `90000` | A room bigger than the whole map |
+| You wrote | What happens | What tells you |
+|---|---|---|
+| No `Loc:` line at all | The ruin is built around the station | A line in `mast.runtime.log` |
+| A radius of `90000` | A room bigger than the whole map | Nothing |
+| `Passage to: mouth, 350` (a comma) | The number is not read. The tunnel is 400 across, not 700 | Nothing |
+| A `#` typed in front of the `relics_spawn` line in `story.mast` | No ruin at all | Nothing |
 
-So check those two by eye.
+So check those by eye.
+
+One more, which goes the other way. A long dash where a minus sign belongs (a word
+processor types one by itself) gets two warnings from lint: `non-ascii`, and
+`relic-short-part` saying a number is missing. The game reads the dash as a minus and
+builds the room where you meant it. Type the plain minus all the same.
 
 ## Step 8 - Play it
 
-Start your mission as the server with a Helm console, the way you did in Class 1.
+Start the game with a server and a Helm console:
+
+```
+sbs run server,helm -m MyRuin map=0
+```
 
 1. On Helm's map, look past the hulk for a marker named **The Hollow**. It is 20000 from
    the station.
@@ -243,7 +281,8 @@ Start your mission as the server with a Helm console, the way you did in Class 1
 3. The rock around you is the wall of the first room. Go on through the passage to The
    Nave, then turn and go on to The Vault.
 
-The rock is scenery. It does not stop your ship, and you can fly back out through it.
+The rock is scenery. It does not stop your ship, and you can fly back out through it. It
+is spaced well apart: from inside, a room looks like a field of rocks, not like a wall.
 
 ## If something goes wrong
 
@@ -251,16 +290,18 @@ The rock is scenery. It does not stop your ship, and you can fly back out throug
 |---|---|
 | The panel says `No relic in this file.` | `mission.amd` was not the tab in front when you opened the panel, or the ruin has no `Loc:` line |
 | The plan is right and the game has no marker | Lint has a warning you have not fixed. Open `mast.runtime.log` in the mission folder: it says why the ruin was not built |
-| Still no marker, lint is clean, and the log is empty | Your `story.mast` has no `relics_spawn` line. See the note in Step 6 |
+| Still no marker, lint is clean, and the log is empty | Line 62 of `story.mast` has a `#` in front of it |
+| No station, no hulk, no ship | `story.mast` does not compile. Lint names the line under `story.mast (compile)`. Line 62 starts with four spaces, not three and not a tab |
 | Rooms are missing in the game | A room has two or four hashes, or no `Relic:` line, or a misspelled `Relic:` key. Lint names each one |
 | The ruin is wrapped around the station | No `Loc:` line, or it has two numbers |
 | Lint says `solves into 2 separate pieces` | A room is not joined to the rest. Look for the room with no passage |
+| Lint says `section-not-loaded` about your Relics section | Line 62 of `story.mast` is gone. If your `story.mast` never had such a line, the mission was made with an older copy of the tool: type `sbs update`, and make the mission again |
 
 ## Exercise
 
 Add a fourth room to your ruin, and make it a built one.
 
-1. Below The Vault, add a box that overlaps The Nave:
+1. Below The Vault, leave one blank line and add a box that overlaps The Nave:
 
    ```
    ### [The Gallery](gallery)
@@ -278,29 +319,40 @@ Add a fourth room to your ruin, and make it a built one.
    from its middle. This box starts 800 from the Nave's middle, so they share 300. That
    shared space is the doorway.
 
-3. A box can have a passage too, written the same way as on a chamber. You will use one
-   in step 6.
+3. Open the Relic Plan and press **Top**. You should have four rooms.
 
-4. Open the Relic Plan and press **Top**. You should have four rooms.
+4. Move the box away: change `-1600` to `-1900`. Run lint. It tells you the ruin is in 2
+   pieces:
 
-5. Move the box away: change `-1600` to `-1900`. Run lint. It tells you the ruin is in 2
-   pieces.
+   ```
+     [WARNING] line 65: 'hollow' solves into 2 separate pieces - part of it cannot be flown to from the rest. Rooms must OVERLAP, not abut: a zero-thickness join reads as connected and is not (relic-disconnected)
+   ```
 
-6. Leave the box where it is and join it with a tunnel instead. Add one line to its fence:
-   `Passage to: nave 300`. Run lint again. It is clean, and the plan shows a band between
-   the box and The Nave.
+   Line 65 is the ruin's heading. Lint does not say which room is cut off.
 
-7. Give your ruin and its rooms your own names: change the words in square brackets. Leave
+5. Leave the box where it is and join it with a tunnel instead. A box can have a passage,
+   written the same way as on a chamber. Add one line to its fence, under `Box:`:
+
+   ```
+   Passage to: nave 300
+   ```
+
+   Run lint again. It is clean, and the plan shows a band between the box and The Nave.
+
+6. Give your ruin and its rooms your own names: change the words in square brackets. Leave
    the keys in round brackets alone, because `Relic:` and `Passage to:` lines point at
    them. Write your own note under each.
+
+Lecture 3 starts with The Gallery as step 5 leaves it. If you skip this exercise, Lecture
+3 gives you the record to type.
 
 ## Checkpoint
 
 You are done when all four are true:
 
-- `sbs lint MyMission` shows `mission.amd` as `clean`.
+- `sbs lint MyRuin` shows `mission.amd` as `clean`.
 - The Relic Plan shows every room you wrote, each one joined to the rest.
-- In the game, a marker with your ruin's name is on the map where your `Loc:` says.
+- In the game, a marker with your ruin's name is on Helm's map where your `Loc:` says.
 - When you fly to the marker, there is rock around you.
 
 ## Next
@@ -311,5 +363,4 @@ different from a cave.
 ## Further reading
 
 - "Relic interiors" in the library documentation: every field of a ruin and its rooms.
-- `relics\sink.amd` in Storm's Beacon: a shipped ruin that is one enormous box.
 - "The AMD file format": headings, fences, and how a record says what it is.

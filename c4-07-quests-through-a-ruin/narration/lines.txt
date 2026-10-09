@@ -1,105 +1,128 @@
-s01_cold_open_0	Last time the ruin could talk.
-s01_cold_open_1	Today it has a story.
-s01_cold_open_2	Four steps, one after another, each in a different part of the ruin.
-s01_cold_open_3	The crew is paid for each, and the last one ends the game.
-s01_cold_open_4	I did not open the script file once.
-s02_what_an_episode_is_0	There is a shipped campaign called Storm's Beacon, and it is made of ruins like this one.
-s02_what_an_episode_is_1	Each ruin is one episode, and every episode is the same chain.
-s02_what_an_episode_is_2	The approach: the crew comes up to the way in.
-s02_what_an_episode_is_3	A call: somebody who knows the place tells them something. A room. A call. A room.
-s02_what_an_episode_is_4	And at the end, the piece: they take away what the ruin was hiding.
-s02_what_an_episode_is_5	You can already write every link in that chain.
-s02_what_an_episode_is_6	A step that finishes when the ship gets somewhere is Class 1.
-s02_what_an_episode_is_7	A call when the ship gets somewhere is last lecture.
-s02_what_an_episode_is_8	A step that waits for a word is Class 1 again.
-s02_what_an_episode_is_9	Here is what is new today: where the word comes from.
-s02_what_an_episode_is_10	Nobody can leave the ship until next lecture, so today Comms says it.
-s03_the_heading_0	The story needs a heading.
-s03_the_heading_1	An arc: three hashes, and the word Arc alone on the first line.
-s03_the_heading_2	It starts at once.
-s03_the_heading_3	It fails after twenty minutes.
-s03_the_heading_4	A Win sentence for when it is finished, a Lose sentence for when it fails.
-s03_the_heading_5	All of that is Class 1.
-s03_the_heading_6	Nobody warns the crew about the clock, so I say twenty minutes in the description.
-s04_the_way_in_0	The first step.
-s04_the_way_in_1	Four hashes, so it belongs to the arc.
-s04_the_way_in_2	And this line: Done when: reach entrance 1000.
-s04_the_way_in_3	Last time I wrote Starts when: reach altar 600, to start a beat.
-s04_the_way_in_4	This is the same sentence in a Done when line, so it finishes a step.
-s04_the_way_in_5	The rules have not changed. entrance is a role: the word on the place's Roles line.
-s04_the_way_in_6	This place's key is way_in.
-s04_the_way_in_7	The key does not work here, and lint will tell you.
-s04_the_way_in_8	A thousand is how close.
-s04_the_way_in_9	And always write the number.
-s04_the_way_in_10	Without it the game uses five thousand, and the step is finished before the crew has seen the ruin.
-s04_the_way_in_11	One more thing for numbers inside a ruin: the game looks every two seconds, so do not go below about three hundred.
-s05_room_by_room_0	Two more steps.
-s05_room_by_room_1	Both say Starts when: revealed, so they are asleep.
-s05_room_by_room_2	The way in reveals the first.
-s05_room_by_room_3	The first reveals the second.
-s05_room_by_room_4	The full address every time: the arc, a slash, the step.
-s05_room_by_room_5	Now look. reach altar 600 is in my file twice.
-s05_room_by_room_6	On the beat, in a Starts when line, it starts the call.
-s05_room_by_room_7	On the step, in a Done when line, it finishes the step.
-s05_room_by_room_8	They happen together: the ship comes into the Vault, the step is done and Rook is on Comms.
-s05_room_by_room_9	The second step sends the ship to the Niche, the place I hid.
-s05_room_by_room_10	The crew can find it because Rook tells them, or because they go and look.
-s05_room_by_room_11	So if Comms shuts the recording off, the story can still be finished.
-s06_the_step_that_waits_for_a_wo_0	The last step is the piece.
-s06_the_step_that_waits_for_a_wo_1	Somebody takes the thing.
-s06_the_step_that_waits_for_a_wo_2	Nobody can leave the ship today, so this is a decision Comms makes.
-s06_the_step_that_waits_for_a_wo_3	The step says Done when: signal hollow_taken.
-s06_the_step_that_waits_for_a_wo_4	It waits for a word. hollow_taken is my word.
-s06_the_step_that_waits_for_a_wo_5	And Action: the moment the step starts, Rook calls with a second recording.
-s06_the_step_that_waits_for_a_wo_6	Now the scene. Two takes. Two answers.
-s06_the_step_that_waits_for_a_wo_7	One asks what it is, and leads to a second scene.
-s06_the_step_that_waits_for_a_wo_8	One says take it aboard, and after the semicolon: signal hollow_taken.
-s06_the_step_that_waits_for_a_wo_9	That sends the word.
-s06_the_step_that_waits_for_a_wo_10	The step hears it, pays, and it was the last step, so the game is won.
-s06_the_step_that_waits_for_a_wo_11	Look at the ways out of this conversation.
-s06_the_step_that_waits_for_a_wo_12	There are two, and both send the word.
-s06_the_step_that_waits_for_a_wo_13	That is on purpose.
-s06_the_step_that_waits_for_a_wo_14	If I add an answer that just hangs up, a crew that picks it has spent the call, and the step can never be finished.
-s06_the_step_that_waits_for_a_wo_15	The crew's way of saying not now is the Back button.
-s06_the_step_that_waits_for_a_wo_16	Why a word, and not completes, the way Class 2 did it?
-s06_the_step_that_waits_for_a_wo_17	Because the step does not care who says the word.
-s06_the_step_that_waits_for_a_wo_18	Next lecture a crew member can go and take the bowl by hand, and this step will not change by one letter.
-s07_what_science_reads_0	Last time I put a Scan line on the Altar.
-s07_what_science_reads_1	That is for a person standing there.
-s07_what_science_reads_2	The Science console on the ship does not show it.
+s01_cold_open_0	Last time, the ruin kept a secret.
+s01_cold_open_1	Today, it has a story.
+s01_cold_open_2	There are four steps, one after another,
+s01_cold_open_3	each in a different part of the ruin.
+s01_cold_open_4	The crew is paid for each one, and the last one ends the game.
+s01_cold_open_5	And I didn't open the story file once.
+s02_what_an_episode_is_0	There's a shipped campaign made of ruins like this one.
+s02_what_an_episode_is_1	Each ruin in it is one episode,
+s02_what_an_episode_is_2	and every episode is the same chain.
+s02_what_an_episode_is_3	First the approach, where the crew comes up to the way in.
+s02_what_an_episode_is_4	Then a call, from somebody who knows the place.
+s02_what_an_episode_is_5	Then a room, and a call, and a room.
+s02_what_an_episode_is_6	And at the end comes the piece,
+s02_what_an_episode_is_7	where they take away what the ruin was hiding.
+s02_what_an_episode_is_8	You can already write every link in that chain.
+s02_what_an_episode_is_9	What's new today is where the last word comes from.
+s02_what_an_episode_is_10	Nobody can leave the ship yet,
+s02_what_an_episode_is_11	so today, Comms says it.
+s03_the_heading_0	The story needs a heading,
+s03_the_heading_1	and I put it below the last quest in the section.
+s03_the_heading_2	It's an arc, with three hashes,
+s03_the_heading_3	and the word Arc alone on the first line.
+s03_the_heading_4	It starts at once, and it fails after twenty minutes.
+s03_the_heading_5	There's a Win sentence for when it's finished,
+s03_the_heading_6	and a Lose sentence for when it fails.
+s03_the_heading_7	All of that is Class 1.
+s03_the_heading_8	Nobody warns the crew about the clock,
+s03_the_heading_9	so I say twenty minutes in the description.
+s04_the_way_in_0	Here's the first step.
+s04_the_way_in_1	It has four hashes, so it belongs to the arc.
+s04_the_way_in_2	And this is the line that matters:
+s04_the_way_in_3	done when, reach entrance, one thousand.
+s04_the_way_in_4	Before, I wrote that sentence in a Starts when line, to start a beat.
+s04_the_way_in_5	Here it's in a Done when line, so it finishes a step.
+s04_the_way_in_6	The rules haven't changed.
+s04_the_way_in_7	Entrance is a role, the word on the place's Roles line.
+s04_the_way_in_8	This place's key is way in,
+s04_the_way_in_9	and the key doesn't work here. Lint will tell you.
+s04_the_way_in_10	A thousand is how close, and always write the number.
+s04_the_way_in_11	Without it the game uses five thousand,
+s04_the_way_in_12	and the step is finished before the crew has seen the ruin.
+s04_the_way_in_13	One more thing, for numbers inside a ruin:
+s04_the_way_in_14	the game looks every two seconds,
+s04_the_way_in_15	so don't go below about three hundred.
+s05_room_by_room_0	Now two more steps.
+s05_room_by_room_1	Both say starts when, revealed, so they're asleep.
+s05_room_by_room_2	The way in reveals the first,
+s05_room_by_room_3	and the first reveals the second.
+s05_room_by_room_4	It's the full address every time:
+s05_room_by_room_5	the arc, a slash, the step.
+s05_room_by_room_6	Now look at this.
+s05_room_by_room_7	Reach altar, six hundred, is in my file twice.
+s05_room_by_room_8	On the beat, it starts the call.
+s05_room_by_room_9	On the step, it finishes the step.
+s05_room_by_room_10	They happen together, when the ship comes into the Vault:
+s05_room_by_room_11	the step is done, and Rook is on Comms.
+s05_room_by_room_12	The second step sends the ship to the Niche, the place I hid.
+s05_room_by_room_13	The crew can find it because Rook tells them,
+s05_room_by_room_14	or because they go and look.
+s05_room_by_room_15	So if Comms shuts the recording off,
+s05_room_by_room_16	the story can still be finished.
+s06_the_step_that_waits_for_a_wo_0	The last step is the piece, where somebody takes the thing.
+s06_the_step_that_waits_for_a_wo_1	Nobody can leave the ship today,
+s06_the_step_that_waits_for_a_wo_2	so this is a decision Comms makes.
+s06_the_step_that_waits_for_a_wo_3	The step says done when, signal, hollow taken.
+s06_the_step_that_waits_for_a_wo_4	It waits for a word, and that word is mine.
+s06_the_step_that_waits_for_a_wo_5	And it has an Action:
+s06_the_step_that_waits_for_a_wo_6	the moment the step starts, Rook calls with a second recording.
+s06_the_step_that_waits_for_a_wo_7	Now for the scene.
+s06_the_step_that_waits_for_a_wo_8	One answer asks what it is, and leads to a second scene.
+s06_the_step_that_waits_for_a_wo_9	The other says take it aboard,
+s06_the_step_that_waits_for_a_wo_10	and after the semicolon, it sends the word.
+s06_the_step_that_waits_for_a_wo_11	The step hears it and pays,
+s06_the_step_that_waits_for_a_wo_12	and it was the last step, so the game is won.
+s06_the_step_that_waits_for_a_wo_13	Look at the ways out of this conversation.
+s06_the_step_that_waits_for_a_wo_14	There are two, and both send the word.
+s06_the_step_that_waits_for_a_wo_15	I did that on purpose.
+s06_the_step_that_waits_for_a_wo_16	If I add an answer that just hangs up,
+s06_the_step_that_waits_for_a_wo_17	a crew that picks it has spent the call,
+s06_the_step_that_waits_for_a_wo_18	and the step can never be finished.
+s06_the_step_that_waits_for_a_wo_19	The crew's way of saying not now is the Back button.
+s06_the_step_that_waits_for_a_wo_20	So why a word, and not the way Class 2 did it?
+s06_the_step_that_waits_for_a_wo_21	Because the step doesn't care who says the word.
+s06_the_step_that_waits_for_a_wo_22	When your crew can go and take the bowl by hand,
+s06_the_step_that_waits_for_a_wo_23	this step won't change by one letter.
+s07_what_science_reads_0	Two lectures ago I put a Scan line on the Altar.
+s07_what_science_reads_1	That's for a person standing there,
+s07_what_science_reads_2	and the Science console on the ship doesn't show it.
 s07_what_science_reads_3	Science reads scan records, the ones from Class 1.
-s07_what_science_reads_4	A place wears a role, and a role is all a scan record needs.
-s07_what_science_reads_5	Scan of, the role, a tab, a reading.
-s07_what_science_reads_6	One on the place for a person.
-s07_what_science_reads_7	One in Scans for the ship.
-s08_lint_0	Lint. Clean.
-s08_lint_1	Now I use the key where the role goes.
-s08_lint_2	Nothing in this mission wears a role called way_in.
-s08_lint_3	Good: that step would never have finished.
-s08_lint_4	Put it back.
-s08_lint_5	Now I drop the arc from a reveal.
-s08_lint_6	It tells me the step is survey/first to the game, and to write that.
-s08_lint_7	Put it back.
-s08_lint_8	Now I take these two lines off the last step. Clean.
-s08_lint_9	And this one matters.
-s08_lint_10	The other three steps still say they are required.
-s08_lint_11	So the game decides the arc is finished when those three are, and the crew wins at the niche with the last call still ringing.
-s08_lint_12	Lint cannot see that.
-s08_lint_13	Read your steps: all of them have the two lines, or none of them.
-s09_play_it_0	One step in the list.
-s09_play_it_1	Fly to the door.
-s09_play_it_2	Done, and paid, and here is the next.
-s09_play_it_3	In through the Mouth, the Nave, up the tunnel.
-s09_play_it_4	Done again, and Rook is calling.
-s09_play_it_5	Science: the Altar, and there is my reading.
-s09_play_it_6	Comms: play the rest.
-s09_play_it_7	Mark the Gallery.
-s09_play_it_8	Back across the Nave, into the built room, to the far end. Third step.
-s09_play_it_9	A second recording.
-s09_play_it_10	Take it aboard.
-s09_play_it_11	And that is the game.
-s10_your_turn_0	Give the Altar a second tab.
-s10_your_turn_1	Add a fifth step that carries the bowl home.
-s10_your_turn_2	Give the crew a way to lose on purpose.
-s10_your_turn_3	Then break one line where lint can see it and one where it cannot.
-s10_your_turn_4	Next time, the crew goes outside.
+s07_what_science_reads_4	A place wears a role,
+s07_what_science_reads_5	and a role is all a scan record needs.
+s07_what_science_reads_6	So I write Scan of, the role, a tab, and a reading.
+s07_what_science_reads_7	That's one line on the place for a person,
+s07_what_science_reads_8	and one record in Scans for the ship.
+s08_lint_0	So I run lint, and it's clean.
+s08_lint_1	Now I use the key where the role goes,
+s08_lint_2	and lint says nothing in this mission wears a role called way in.
+s08_lint_3	That's good, because that step would never have finished.
+s08_lint_4	Next I drop the arc from a reveal line.
+s08_lint_5	Lint tells me what the step is called to the game,
+s08_lint_6	and to write that.
+s08_lint_7	Now I take these two lines off the last step, and lint says clean.
+s08_lint_8	And this one matters.
+s08_lint_9	The other three steps still say they're required,
+s08_lint_10	so the game decides the arc is finished when those three are.
+s08_lint_11	The crew wins at the niche, with the last call still ringing.
+s08_lint_12	Lint can't see that.
+s08_lint_13	So read your steps:
+s08_lint_14	all of them have the two lines, or none of them do.
+s09_play_it_0	There's one step in the list, so I fly to the door.
+s09_play_it_1	It's done, and paid, and here's the next.
+s09_play_it_2	In through the Mouth, and through the ring.
+s09_play_it_3	That's last lecture's recording calling, and I'll leave it for now.
+s09_play_it_4	Across the Nave and up the tunnel.
+s09_play_it_5	The step is done again, and Rook is calling from the altar.
+s09_play_it_6	On Science, I select the Altar, and there's my reading.
+s09_play_it_7	On Comms, I play the rest, and I mark the Gallery.
+s09_play_it_8	Back across the Nave, into the built room, and to the far end.
+s09_play_it_9	That's the third step, and a second recording, at the top of the list.
+s09_play_it_10	I take it aboard.
+s09_play_it_11	And that's the game.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Give the Altar a second tab.
+s10_your_turn_2	Add a fifth step that carries the bowl home.
+s10_your_turn_3	Give the crew a way to lose on purpose.
+s10_your_turn_4	Then break one line where lint can see it,
+s10_your_turn_5	and one where it can't.
+s10_your_turn_6	Next time, the crew goes outside.

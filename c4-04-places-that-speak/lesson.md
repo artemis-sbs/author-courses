@@ -15,8 +15,8 @@ The Altar says something, twice over.
 
 You will add to `mission.amd`. You will not touch `story.mast`.
 
-Today is about what a place says. What is lying in a place is Lecture 5. Going there in a
-suit is Lecture 8.
+Today is about what a place says. Lecture 5 will teach what is lying in a place. Lecture 8
+will teach going there in a suit.
 
 ## The video
 
@@ -24,12 +24,19 @@ suit is Lecture 8.
 
 ## Before you start
 
-- Your mission from Lecture 3: The Hollow, with The Way In, The Altar and The Niche. In
-  this page it is called `MyMission`. Use your own folder's name.
-- `sbs lint MyMission` says `clean`.
-- You have done Class 2, Lectures 3 and 4. You have written a scene, had the story place
-  it as a call, and given the crew answers.
-- You can start the mission with a Helm console and a Comms console.
+- `MyRuin` as Lecture 3 left it: The Hollow, with The Ring, The Way In, The Altar and The
+  Niche. `mission.amd` is 141 lines long and ends with The Niche.
+- `sbs lint MyRuin` says `clean`.
+- You have done Class 2, Lectures 2 to 5. You have written a character and a scene, had
+  the story place the scene as a call, and given the crew answers.
+- VS Code with the mission folder open, a command prompt open in
+  `C:\Cosmos\data\missions`, and the game closed.
+
+This lecture adds a Comms console to the line that starts the game:
+
+```
+sbs run server,helm,comms -m MyRuin map=0
+```
 
 ## Step 1 - Two ways a place can speak
 
@@ -54,7 +61,7 @@ place's own words, which you check with lint and leave for Lecture 8.
 A call is placed by somebody, and a place is not a somebody. So the place gets a voice: a
 recording, left on the altar by the survey team that found this ruin first.
 
-Go to the end of `mission.amd` and type:
+Go to the end of `mission.amd`, below The Niche's note. Leave two blank lines, and type:
 
 ```
 // ---- Characters. The voices in the story.
@@ -72,7 +79,7 @@ is his key. Everything below points at him by that key.
 
 ## Step 3 - What the voice says
 
-Below the character, at the end of the file, type:
+Below the character, at the end of the file, leave two blank lines and type:
 
 ```
 // ---- Dialogue. What is said, and what the crew can say back.
@@ -334,7 +341,7 @@ Speaker: rook
 ## Step 7 - Check it
 
 ```
-sbs lint MyMission
+sbs lint MyRuin
 ```
 
 You want `clean` under `mission.amd`.
@@ -378,13 +385,15 @@ arrives, which you will see in Lecture 8:
 | `Scene:` and `Scan:` below the closing `---` | Nothing opens, and there is no line to read | `field-below-fence` |
 | The `Scan:` text broken onto two lines | Only the first line is read | `fence-syntax`, an error |
 | `#### [At the Altar](altar_look)` (four hashes) | The scene above it, The Rest of It, disappears: "Play the rest." ends the call | `scene-nested` |
-| `## [At the Altar](altar_look)` (two hashes) | Nothing opens | `section-not-loaded` |
+| `## [At the Altar](altar_look)` (two hashes) | Nothing opens, and a line in `mast.runtime.log` | `section-not-loaded` |
 | `- [Read the marks on the rim](altar_mark)` | That answer ends the scene | `dangling-choice` |
 | `Scene:` on a room, on a prop, or on the ruin itself | Nothing ever opens it. A crew member can only be sent to a place | `relic-field-wrong-record`: put it on a `Point:` |
 | The place's scene written in the Relics section, under the place | Nothing opens. The game takes the scene for a second ruin, and says so in `mast.runtime.log` | `relic-section-stray`: move it to Dialogue |
 
 Lint also builds the ruin the way the game will. If a place cannot be reached from the way
 in, it says so (`relic-unreachable-node`).
+
+### What lint cannot see
 
 Lint says `clean` for everything in this last table. The first two rows are the ones to
 check by eye every time.
@@ -398,7 +407,6 @@ check by eye every time.
 | The `Beat` line left out | The call never comes. Marker One is in the quest list, as a job on offer | The quest list |
 | No `Starts when:` line, or `Done when:` written in its place | The call is waiting when the game starts | Nothing |
 | The beat written in the Dialogue section | The call never comes | Nothing |
-| `## [Dialogue](Dialogue)` (a capital in the key) | The call never comes, and no scene of yours is read | A line in `mast.runtime.log` |
 | No takes in Rook at the Altar | The call opens with nothing said, and offers the answers | Nothing |
 | Two beats that call the same scene | The crew gets the same call twice | Nothing |
 | A place's scene with no takes | It opens with nothing said, and offers the answers | Nothing |
@@ -406,16 +414,21 @@ check by eye every time.
 | A `Scene:` line and no `Scan:` line | Whoever comes later reads nothing | Nothing |
 | The same `Scene:` on two places | It opens at each of them, once each | Nothing |
 
-Three things that look like mistakes and are not:
+Four things that look like mistakes and are not:
 
 - `reach Altar 600` works. Capitals do not matter in the role.
+- `## [Dialogue](Dialogue)`, with a capital in the section's key, works too.
 - `Action: rook hails rook_altar`, all on one line, works when there is one thing to do.
 - A place with a `Scene:` and no `Roles:` line still opens its scene for a person. It has
   no contact on the map, and a ship cannot `reach` it.
 
 ## Step 8 - Play it
 
-Start your mission as the server, with a Helm console and a Comms console.
+Start the game with a server, a Helm console and a Comms console:
+
+```
+sbs run server,helm,comms -m MyRuin map=0
+```
 
 1. Fly to **The Hollow**, in through The Mouth, across The Nave and up the tunnel to The
    Vault. As you come up the tunnel, **The Altar** appears on the map, the same as in
@@ -532,7 +545,7 @@ When you stop, open `mast.runtime.log` in your mission folder. It should be empt
 
 You are done when all five are true:
 
-- `sbs lint MyMission` shows `mission.amd` as `clean`.
+- `sbs lint MyRuin` shows `mission.amd` as `clean`.
 - No call is waiting while the ship is outside The Vault.
 - Inside The Vault, **Surveyor Rook - A recording at the altar** is in the Incoming Hails
   list, and it has two answers.
@@ -542,8 +555,9 @@ You are done when all five are true:
 
 ## Next
 
-Lecture 5 puts things in the rooms: items the crew can find, and the pieces a ruin is
-worth visiting for.
+Lecture 5, on what is lying in the rooms, is in preparation. Go on to Lecture 6: a clue
+the crew learns in one place and uses in another, a side story, and a cutscene. It starts
+from the files this lecture leaves, without the exercise.
 
 ## Further reading
 

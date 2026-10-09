@@ -1,371 +1,459 @@
 1
 00:00:00,000 --> 00:00:03,043
-Last time this room had a name.
+Last time, this room had a name.
 
 2
 00:00:03,493 --> 00:00:06,102
-Today it has something to say.
+Today, it has something to say.
 
 3
-00:00:06,552 --> 00:00:13,509
-I flew the ship into the Vault, and a recording forty years old started to play.
+00:00:07,002 --> 00:00:10,046
+I flew the ship into the Vault,
 
 4
-00:00:13,959 --> 00:00:18,307
-I did not write a line of code for that.
+00:00:10,496 --> 00:00:14,409
+and a recording forty years old started to play.
 
 5
-00:00:18,757 --> 00:00:25,713
-I wrote who is speaking, what he says, and how close the ship has to be.
+00:00:16,209 --> 00:00:20,122
+I didn't write a line of code for that.
 
 6
-00:00:26,913 --> 00:00:31,696
-A place in a ruin can speak to two different listeners.
+00:00:21,022 --> 00:00:24,065
+I wrote who's speaking, what he says,
 
 7
-00:00:32,146 --> 00:00:37,798
-The ship, which means the bridge: that arrives on Comms as a call.
+00:00:24,515 --> 00:00:27,993
+and how close the ship has to be.
 
 8
-00:00:38,248 --> 00:00:48,248
-Or a person, a crew member who has gone outside in a suit and is standing there: that is read on their handheld.
+00:00:29,193 --> 00:00:33,976
+A place in a ruin can speak to two different listeners.
 
 9
-00:00:48,698 --> 00:00:50,437
-They are written differently.
+00:00:34,876 --> 00:00:38,354
+One is the ship, which means the bridge,
 
 10
-00:00:50,887 --> 00:00:55,235
-And here is the thing to know before we start.
+00:00:38,804 --> 00:00:42,283
+and that arrives on Comms as a call.
 
 11
-00:00:55,685 --> 00:01:00,033
-Your crew does not leave the ship until Lecture 8.
+00:00:43,183 --> 00:00:45,357
+The other is a person,
 
 12
-00:01:00,483 --> 00:01:05,265
-So today you will write both, and you will play one.
+00:00:45,807 --> 00:00:51,459
+a crew member who's gone outside in a suit and is standing there,
 
 13
-00:01:05,715 --> 00:01:10,063
-The other one lint checks for you, and it waits.
+00:00:51,909 --> 00:00:54,517
+and that's read on their handheld.
 
 14
-00:01:11,263 --> 00:01:17,785
-A call is placed by somebody, and a table of stone is not a somebody.
+00:00:56,317 --> 00:00:58,491
+The two are written differently.
 
 15
-00:01:18,235 --> 00:01:21,278
-So I give the place a voice.
+00:00:59,391 --> 00:01:03,304
+And here's the thing to know before we start:
 
 16
-00:01:21,728 --> 00:01:28,685
-Forty years ago a survey team found this ruin, and their leader left recordings in it.
+00:01:03,754 --> 00:01:08,102
+your crew doesn't leave the ship until a later lecture.
 
 17
-00:01:29,135 --> 00:01:34,787
-He is a character, written the way you wrote characters in Class 2.
+00:01:09,002 --> 00:01:12,915
+So today you'll write both, and you'll play one.
 
 18
-00:01:35,237 --> 00:01:36,976
-His key is rook.
+00:01:13,365 --> 00:01:17,713
+The other one, lint checks for you, and it waits.
 
 19
-00:01:38,176 --> 00:01:39,480
-Now the scene.
+00:01:18,913 --> 00:01:21,522
+A call is placed by somebody,
 
 20
-00:01:39,930 --> 00:01:42,539
-All of this is Class 2.
+00:01:21,972 --> 00:01:25,450
+and a table of stone isn't a somebody.
 
 21
-00:01:42,989 --> 00:01:44,293
-Speaker: his key.
+00:01:26,350 --> 00:01:29,393
+So I give the place a voice.
 
 22
-00:01:44,743 --> 00:01:49,091
-When: hail, because this is a call that comes in.
+00:01:30,293 --> 00:01:34,207
+Forty years ago a survey team found this ruin,
 
 23
-00:01:49,541 --> 00:01:53,889
-A title, which the crew reads before they open it.
+00:01:34,657 --> 00:01:37,700
+and their leader left recordings in it.
 
 24
-00:01:54,339 --> 00:01:57,383
-Two takes, and the game picks one.
+00:01:39,500 --> 00:01:44,717
+He's a character, written the way you wrote characters in Class 2,
 
 25
-00:01:57,833 --> 00:01:59,137
-Then two answers.
+00:01:45,167 --> 00:01:47,341
+and his key is rook.
 
 26
-00:01:59,587 --> 00:02:03,935
-One leads on to a second scene, by its key.
+00:01:48,541 --> 00:01:52,889
+Now the scene, and all of this is Class 2.
 
 27
-00:02:04,385 --> 00:02:06,124
-One ends the call.
+00:01:53,789 --> 00:01:55,963
+The speaker is his key.
 
 28
-00:02:06,574 --> 00:02:14,400
-The second scene has no When and no title, because the only way into it is that answer.
+00:01:56,413 --> 00:02:01,196
+When is hail, because this is a call that comes in.
 
 29
-00:02:15,600 --> 00:02:20,817
-A scene is words on a page until something places the call.
+00:02:02,096 --> 00:02:06,878
+There's a title, which the crew reads before they open it.
 
 30
-00:02:21,267 --> 00:02:26,050
-In Class 2 that was a beat waiting to be revealed.
+00:02:07,778 --> 00:02:11,691
+There are two takes, and the game picks one.
 
 31
-00:02:26,500 --> 00:02:30,413
-This beat waits for the ship to get somewhere.
+00:02:13,491 --> 00:02:15,230
+Then come two answers.
 
 32
-00:02:30,863 --> 00:02:35,211
-Three hashes: it is not a step of First Contact.
+00:02:15,680 --> 00:02:20,028
+One leads on to a second scene, by its key,
 
 33
-00:02:35,661 --> 00:02:37,835
-Beat on the first line.
+00:02:20,478 --> 00:02:22,652
+and one ends the call.
 
 34
-00:02:38,285 --> 00:02:42,633
-Then Starts when: reach altar 600. altar is a role.
+00:02:23,552 --> 00:02:27,900
+The second scene has no When line and no title,
 
 35
-00:02:43,083 --> 00:02:47,430
-It is this word here, on the place's Roles line.
+00:02:28,350 --> 00:02:32,263
+because the only way into it is that answer.
 
 36
-00:02:47,880 --> 00:02:50,924
-Not its key, and not its name.
+00:02:33,463 --> 00:02:39,115
+A scene is only words on a page, until something places the call.
 
 37
-00:02:51,374 --> 00:02:55,722
-For the Altar they happen to be the same word.
+00:02:40,015 --> 00:02:44,798
+In Class 2 that was a beat, waiting to be revealed.
 
 38
-00:02:56,172 --> 00:03:03,128
-For the Way In they are not: the key is way_in and the role is entrance.
+00:02:45,248 --> 00:02:49,161
+This beat waits for the ship to get somewhere.
 
 39
-00:03:03,578 --> 00:03:06,187
-And six hundred is how close.
+00:02:50,061 --> 00:02:55,278
+It has three hashes, so it isn't a step of First Contact,
 
 40
-00:03:06,637 --> 00:03:18,811
-The Vault is seven hundred from the middle to the wall, and the altar is in the middle, so six hundred means the ship is in the room.
+00:02:55,728 --> 00:02:59,641
+and the word Beat is on its first line.
 
 41
-00:03:19,261 --> 00:03:21,000
-Always write that number.
+00:03:01,441 --> 00:03:04,050
+Then comes the line that matters:
 
 42
-00:03:21,450 --> 00:03:28,407
-Leave it out and the game uses five thousand, which is bigger than the whole ruin.
+00:03:04,500 --> 00:03:07,109
+starts when, reach altar, six hundred.
 
 43
-00:03:28,857 --> 00:03:34,509
-Then Action, and under it who calls, the word hails, and the scene.
+00:03:08,009 --> 00:03:09,748
+Altar is a role.
 
 44
-00:03:35,709 --> 00:03:42,230
-You know what an answer can do: start a quest, finish one, send a word.
+00:03:10,198 --> 00:03:14,111
+It's this word here, on the place's Roles line,
 
 45
-00:03:42,680 --> 00:03:47,898
-In a ruin there is one more. reveal, and then a place.
+00:03:14,561 --> 00:03:17,604
+and not its key or its name.
 
 46
-00:03:48,348 --> 00:03:52,261
-Remember the Niche, the place I hid last time.
+00:03:18,504 --> 00:03:21,113
+For the Way In those differ:
 
 47
-00:03:52,711 --> 00:03:58,363
-It only showed up when the ship was nearly on top of it.
+00:03:21,563 --> 00:03:25,911
+the key is way in, and the role is entrance.
 
 48
-00:03:58,813 --> 00:04:03,161
-With this answer it shows up when Comms says so.
+00:03:27,711 --> 00:03:29,885
+Six hundred is how close.
 
 49
-00:04:03,611 --> 00:04:11,002
-Now be careful: reveal takes the place's key, the word in round brackets. reach took its role.
+00:03:30,785 --> 00:03:34,698
+The altar is in the middle of the Vault,
 
 50
-00:04:11,452 --> 00:04:15,365
-Two lines, two different words for the same place.
+00:03:35,148 --> 00:03:38,191
+and the wall is seven hundred out,
 
 51
-00:04:16,565 --> 00:04:18,304
-Now the other listener.
+00:03:38,641 --> 00:03:42,989
+so six hundred means the ship is in the room.
 
 52
-00:04:18,754 --> 00:04:21,363
-Somebody is standing at this table.
+00:03:43,889 --> 00:03:45,628
+Always write that number.
 
 53
-00:04:21,813 --> 00:04:23,552
-Nobody is calling them.
+00:03:46,078 --> 00:03:49,991
+Leave it out and the game uses five thousand,
 
 54
-00:04:24,002 --> 00:04:27,046
-What they read is what they see.
+00:03:50,441 --> 00:03:53,485
+which is bigger than the whole ruin.
 
 55
-00:04:27,496 --> 00:04:29,670
-On the place, two lines.
+00:03:54,385 --> 00:03:57,428
+Last comes Action, which says who calls,
 
 56
-00:04:30,120 --> 00:04:33,163
-Scene is the key of a scene.
+00:03:57,878 --> 00:04:01,357
+then the word hails, and then the scene.
 
 57
-00:04:33,613 --> 00:04:40,570
-Scan is one line about the place, for whoever comes after the scene has been played.
+00:04:02,557 --> 00:04:05,600
+You know what an answer can do:
 
 58
-00:04:41,020 --> 00:04:44,498
-And the scene itself: no fence at all.
+00:04:06,050 --> 00:04:10,833
+it can start a quest, finish one, or send a word.
 
 59
-00:04:44,948 --> 00:04:47,557
-No speaker, because nobody is speaking.
+00:04:11,733 --> 00:04:14,341
+In a ruin there's one more,
 
 60
-00:04:48,007 --> 00:04:52,354
-No When, no title, because it is not a call.
+00:04:14,791 --> 00:04:17,835
+which is reveal, and then a place.
 
 61
-00:04:52,804 --> 00:04:55,848
-Takes and answers, the same as ever.
+00:04:18,735 --> 00:04:22,648
+Remember the Niche, the place I hid last time.
 
 62
-00:04:56,298 --> 00:05:04,559
-One rule is new: every path through a place's scene has to end in an answer with empty brackets.
+00:04:23,098 --> 00:04:28,750
+It only showed up when the ship was nearly on top of it.
 
 63
-00:05:05,009 --> 00:05:06,748
-Nothing else closes it.
+00:04:29,650 --> 00:04:33,998
+With this answer, it shows up when Comms says so.
 
 64
-00:05:07,198 --> 00:05:11,111
-This opens when a crew member's suit arrives here.
+00:04:35,798 --> 00:04:37,537
+Now be careful here.
 
 65
-00:05:11,561 --> 00:05:13,735
-Not when the ship does.
+00:04:37,987 --> 00:04:42,335
+Reveal takes the place's key, the word in round brackets,
 
 66
-00:05:14,185 --> 00:05:19,837
-I cannot show it to you today, and you cannot play it today.
+00:04:42,785 --> 00:04:44,959
+and reach took its role.
 
 67
-00:05:20,287 --> 00:05:23,765
-We come back to it in Lecture 8.
+00:04:45,859 --> 00:04:50,641
+That's two lines, and two different words for the same place.
 
 68
-00:05:24,965 --> 00:05:25,965
-Lint. Clean.
+00:04:51,841 --> 00:04:54,015
+Now for the other listener.
 
 69
-00:05:26,415 --> 00:05:28,589
-Now I break the role.
+00:04:54,915 --> 00:04:59,263
+Somebody is standing at this table, and nobody's calling them.
 
 70
-00:05:29,039 --> 00:05:34,257
-It tells me nothing in the mission wears a role called alter.
+00:04:59,713 --> 00:05:02,757
+What they read is what they see.
 
 71
-00:05:34,707 --> 00:05:37,750
-Good: that call would never have come.
+00:05:03,657 --> 00:05:06,700
+On the place I add two lines.
 
 72
-00:05:38,200 --> 00:05:39,504
-Put it back.
+00:05:07,150 --> 00:05:10,193
+Scene is the key of a scene,
 
 73
-00:05:39,954 --> 00:05:42,563
-Now the scene on the place.
+00:05:10,643 --> 00:05:14,122
+and Scan is one line about the place,
 
 74
-00:05:43,013 --> 00:05:48,665
-It tells me the Altar points at a scene that is not there.
+00:05:14,572 --> 00:05:18,485
+for whoever comes after the scene has been played.
 
 75
-00:05:49,115 --> 00:05:53,463
-That is how I check the half I cannot play.
+00:05:20,285 --> 00:05:23,763
+The scene itself has no fence at all.
 
 76
-00:05:53,913 --> 00:05:55,217
-Put it back.
+00:05:24,663 --> 00:05:27,272
+There's no speaker, because nobody's speaking,
 
 77
-00:05:55,667 --> 00:05:58,276
-Now the word after reveal. Clean.
+00:05:27,722 --> 00:05:31,200
+and no title, because it isn't a call.
 
 78
-00:05:58,726 --> 00:06:09,596
-Lint does not check that word, and the game would say nothing either: the answer would end the call and the Niche would stay dark.
+00:05:32,100 --> 00:05:33,839
+One rule is new:
 
 79
-00:06:10,046 --> 00:06:18,741
-So read two things yourself, every time: the word after reveal, and that there is a number after the role.
+00:05:34,289 --> 00:05:40,811
+every path through a place's scene has to end in an answer with empty brackets,
 
 80
-00:06:19,941 --> 00:06:22,550
-In through the Mouth. The Nave.
+00:05:41,261 --> 00:05:43,435
+because nothing else closes it.
 
 81
-00:06:23,000 --> 00:06:29,957
-Up the tunnel, and there is the Altar on the map, the same as last time.
+00:05:45,235 --> 00:05:51,757
+This opens when a crew member's suit arrives here, and not when the ship does.
 
 82
-00:06:30,407 --> 00:06:32,146
-Now into the room.
+00:05:52,657 --> 00:05:56,135
+So I can't show it to you today,
 
 83
-00:06:32,596 --> 00:06:33,900
-Comms: a call.
+00:05:56,585 --> 00:05:59,193
+and you can't play it today.
 
 84
-00:06:34,350 --> 00:06:38,263
-Surveyor Rook, a recording at the altar. Open it.
+00:06:00,093 --> 00:06:05,311
+We come back to it when the crew can leave the ship.
 
 85
-00:06:38,713 --> 00:06:40,887
-One of my two takes.
+00:06:06,511 --> 00:06:09,554
+So I run lint, and it's clean.
 
 86
-00:06:41,337 --> 00:06:42,641
-Play the rest.
+00:06:10,454 --> 00:06:12,628
+Now I break the role,
 
 87
-00:06:43,091 --> 00:06:44,830
-And: mark the Gallery.
+00:06:13,078 --> 00:06:19,165
+and lint tells me that nothing in the mission wears a role called alter.
 
 88
-00:06:45,280 --> 00:06:46,585
-Back to Helm.
+00:06:20,065 --> 00:06:23,978
+That's good, because that call would never have come.
 
 89
-00:06:47,035 --> 00:06:51,817
-There is the Niche, and we have not been near it.
+00:06:25,778 --> 00:06:29,257
+Next I break the scene on the place.
 
 90
-00:06:53,017 --> 00:06:58,670
-Give the Niche a recording of its own, and words of its own.
+00:06:29,707 --> 00:06:34,924
+Lint tells me the Altar points at a scene that isn't there,
 
 91
-00:06:59,120 --> 00:07:01,728
-Make one answer finish a quest.
+00:06:35,374 --> 00:06:39,722
+and that's how I check the half I can't play.
 
 92
-00:07:02,178 --> 00:07:08,265
-Then break one line where lint can see it and one where it cannot.
+00:06:41,522 --> 00:06:45,435
+Now the word after reveal, and lint says clean.
 
 93
-00:07:08,715 --> 00:07:12,193
-Next time: what is lying in these rooms.
+00:06:46,335 --> 00:06:48,509
+Lint doesn't check that word,
+
+94
+00:06:48,959 --> 00:06:52,002
+and the game would say nothing either.
+
+95
+00:06:52,452 --> 00:06:57,670
+The answer would end the call, and the Niche would stay dark.
+
+96
+00:06:58,570 --> 00:07:01,613
+So read two things yourself, every time:
+
+97
+00:07:02,063 --> 00:07:03,802
+the word after reveal,
+
+98
+00:07:04,252 --> 00:07:07,730
+and that there's a number after the role.
+
+99
+00:07:08,930 --> 00:07:13,278
+In through the Mouth we go, and across the Nave.
+
+100
+00:07:14,178 --> 00:07:18,526
+Up the tunnel, and there's the Altar on the map,
+
+101
+00:07:18,976 --> 00:07:21,150
+the same as last time.
+
+102
+00:07:22,050 --> 00:07:23,789
+Now into the room.
+
+103
+00:07:25,589 --> 00:07:28,198
+And on Comms, there's a call:
+
+104
+00:07:28,648 --> 00:07:31,691
+Surveyor Rook, a recording at the altar.
+
+105
+00:07:32,591 --> 00:07:37,374
+I open it, and I get one of my two takes.
+
+106
+00:07:38,274 --> 00:07:42,622
+I play the rest, and then I mark the Gallery.
+
+107
+00:07:44,422 --> 00:07:47,030
+Back on Helm, there's the Niche,
+
+108
+00:07:47,480 --> 00:07:50,089
+and we haven't been near it.
+
+109
+00:07:51,289 --> 00:07:53,028
+Now it's your turn.
+
+110
+00:07:53,928 --> 00:07:59,580
+Give the Niche a recording of its own, and words of its own.
+
+111
+00:08:00,480 --> 00:08:03,089
+Make one answer finish a quest.
+
+112
+00:08:03,989 --> 00:08:07,902
+Then break one line where lint can see it,
+
+113
+00:08:08,352 --> 00:08:10,526
+and one where it can't.
+
+114
+00:08:12,326 --> 00:08:16,239
+Next time, the crew learns something in one room,
+
+115
+00:08:16,689 --> 00:08:18,863
+and uses it in another.

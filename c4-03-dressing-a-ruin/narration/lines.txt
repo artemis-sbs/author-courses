@@ -1,85 +1,101 @@
-s01_cold_open_0	Last time this was three balls of rock.
-s01_cold_open_1	Today it is a cave with a hall somebody built in it, a haze, a gate, and places with names.
-s01_cold_open_2	I did not model any of it.
-s01_cold_open_3	I added about twenty lines to the same file.
-s02_a_built_room_0	Two of today's fields only show on flat walls, so the ruin needs one box.
-s02_a_built_room_1	If you did last lecture's exercise you have it.
-s02_a_built_room_2	If not, add it now.
-s02_a_built_room_3	Six numbers: the middle, then half the width, half the height, half the length.
-s02_a_built_room_4	And a passage to the Nave.
-s03_what_the_walls_are_made_of_0	This line goes on the ruin, and it names a look. Five words.
-s03_what_the_walls_are_made_of_1	Rock is asteroids, and it is what you had already.
-s03_what_the_walls_are_made_of_2	Plates are flat pieces laid over every wall.
-s03_what_the_walls_are_made_of_3	Blocks are the same with thickness.
-s03_what_the_walls_are_made_of_4	Ribs are plates with bars across them.
-s03_what_the_walls_are_made_of_5	None is no walls at all.
-s03_what_the_walls_are_made_of_6	The game builds a wall from a few hundred small pieces: about four hundred and fifty rocks for this ruin, or three hundred and seventy plates.
-s03_what_the_walls_are_made_of_7	I am keeping rock.
-s03_what_the_walls_are_made_of_8	This place is a cave.
-s04_one_room_that_differs_0	Say only where it changes.
+s01_cold_open_0	Last time, this was three balls of rock.
+s01_cold_open_1	Today it's a cave, with a hall somebody built in it,
+s01_cold_open_2	a haze, a gate, and places with names.
+s01_cold_open_3	I didn't model any of it.
+s01_cold_open_4	I added about twenty lines to the same file.
+s02_a_built_room_0	Two of today's fields only show on flat walls,
+s02_a_built_room_1	so the ruin needs one box.
+s02_a_built_room_2	If you did last lecture's exercise, you have it already.
+s02_a_built_room_3	If not, add it now.
+s02_a_built_room_4	It has six numbers:
+s02_a_built_room_5	the middle, then half the width, half the height, half the length.
+s02_a_built_room_6	And it has a passage to the Nave.
+s03_what_the_walls_are_made_of_0	This line goes on the ruin, and it names a look.
+s03_what_the_walls_are_made_of_1	There are five words.
+s03_what_the_walls_are_made_of_2	Rock is asteroids, and it's what you had already.
+s03_what_the_walls_are_made_of_3	Plates are flat pieces laid over every wall,
+s03_what_the_walls_are_made_of_4	and blocks are the same with thickness.
+s03_what_the_walls_are_made_of_5	Ribs are plates with bars across them,
+s03_what_the_walls_are_made_of_6	and none is no walls at all.
+s03_what_the_walls_are_made_of_7	The game builds a wall from a few hundred small pieces:
+s03_what_the_walls_are_made_of_8	about four hundred and fifty rocks for this ruin,
+s03_what_the_walls_are_made_of_9	or three hundred and seventy plates.
+s03_what_the_walls_are_made_of_10	I'm keeping rock, because this place is a cave.
+s04_one_room_that_differs_0	Now I say only where it changes.
 s04_one_room_that_differs_1	The Gallery was built later, so the Gallery gets blocks.
-s04_one_room_that_differs_2	Every room without a line of its own takes the ruin's.
-s04_one_room_that_differs_3	So do the tunnels, always.
-s04_one_room_that_differs_4	Now the Vault.
+s04_one_room_that_differs_2	Every room without a line of its own takes the ruin's,
+s04_one_room_that_differs_3	and so do the tunnels, always.
+s04_one_room_that_differs_4	Now for the Vault.
 s04_one_room_that_differs_5	Art names the piece itself.
-s04_one_room_that_differs_6	The game has six asteroid shapes, numbered six to eleven, and a rock wall mixes them.
-s04_one_room_that_differs_7	With this line the Vault is cut from one.
-s04_one_room_that_differs_8	Art picks the piece.
-s04_one_room_that_differs_9	Walls picks the look.
-s05_three_dials_0	Three dials, all on the ruin.
+s04_one_room_that_differs_6	The game has six asteroid shapes,
+s04_one_room_that_differs_7	and a rock wall mixes them.
+s04_one_room_that_differs_8	With this line, the Vault is cut from just one.
+s04_one_room_that_differs_9	So Art picks the piece, and Walls picks the look.
+s05_three_dials_0	Next come three dials, all on the ruin.
 s05_three_dials_1	Seed decides which rock goes where.
-s05_three_dials_2	The same number builds the same ruin every time, so your players and you are looking at the same place.
-s05_three_dials_3	Debris is the loose rock drifting inside the rooms.
-s05_three_dials_4	Sixty if you say nothing.
-s05_three_dials_5	I want thirty.
+s05_three_dials_2	The same number builds the same ruin every time,
+s05_three_dials_3	so you and your players are looking at the same place.
+s05_three_dials_4	Debris is the loose rock drifting inside the rooms.
+s05_three_dials_5	It's sixty if you say nothing, and I want thirty.
 s05_three_dials_6	Gaps is how much of a built wall is missing.
-s05_three_dials_7	It is a number from nought to one, not a percentage.
-s05_three_dials_8	Nought point two is one piece in five.
-s05_three_dials_9	It only touches flat walls, so here that is the Gallery.
-s05_three_dials_10	One is no wall at all, and so is two.
+s05_three_dials_7	It's a number from zero to one, and not a percentage,
+s05_three_dials_8	so zero point two is one piece in five.
+s05_three_dials_9	It only touches flat walls, which here means the Gallery.
 s06_haze_0	One more line on the ruin.
-s06_haze_1	Atmosphere fills the whole place with one cloud.
-s06_haze_2	Seven colors, in small letters.
-s06_haze_3	Leave the line out, or write none, for no cloud.
-s07_a_set_piece_0	A new kind of record.
-s07_a_set_piece_1	Three hashes, and Relic: hollow, like a room.
-s07_a_set_piece_2	But this is a prop: a thing standing in the ruin.
-s07_a_set_piece_3	Prop is where.
-s07_a_set_piece_4	Fourteen hundred along is the middle of the first tunnel.
-s07_a_set_piece_5	Dress is what, and how big: a ring, four times its size, which makes it a little wider than the tunnel.
-s07_a_set_piece_6	Facing is which way it looks: at the Nave.
-s07_a_set_piece_7	A prop takes no space.
-s07_a_set_piece_8	You fly through it.
-s07_a_set_piece_9	These plain shapes come with the game.
-s07_a_set_piece_10	Real gates and statues come in an art pack, in sets called kits.
-s07_a_set_piece_11	Your mission does not have the pack yet.
-s07_a_set_piece_12	But you can write a list, and the game takes the first word it knows.
-s07_a_set_piece_13	Today that is the ring.
-s08_named_places_0	Last kind of record: a point.
-s08_named_places_1	A named spot.
-s08_named_places_2	Three numbers, inside a room.
-s08_named_places_3	And roles, which say what it is for.
-s08_named_places_4	One role means something to the game: entrance.
-s08_named_places_5	The name of the ruin on the map moves to this point.
-s08_named_places_6	Any other role is a word of mine.
-s08_named_places_7	The Altar, in the middle of the Vault.
-s08_named_places_8	The game stands an invisible marker there, and when a ship gets close it turns into a contact with this name.
-s08_named_places_9	The Niche is the same, and hidden.
-s08_named_places_10	Hidden is for a crew in suits, later in this class.
-s08_named_places_11	For a ship it changes nothing.
-s09_lint_0	Lint. Clean.
-s09_lint_1	A misspelled style: it tells me, and lists the five.
-s09_lint_2	A point with two numbers: it tells me the place will not be made.
-s09_lint_3	Now the name of the ring. Clean.
-s09_lint_4	Lint does not check that word today, and the game would simply build no ring.
-s09_lint_5	So read your Dress and Art lines yourself, letter by letter.
+s06_haze_1	Atmosphere fills the whole place with one cloud,
+s06_haze_2	in one of seven colors.
+s06_haze_3	Leave the line out, or write none, and there's no cloud.
+s07_a_set_piece_0	Here's a new kind of record.
+s07_a_set_piece_1	It has three hashes and a Relic line, like a room,
+s07_a_set_piece_2	but this is a prop, a thing standing in the ruin.
+s07_a_set_piece_3	Prop says where it stands,
+s07_a_set_piece_4	and fourteen hundred along is the middle of the first tunnel.
+s07_a_set_piece_5	Dress says what, and how big:
+s07_a_set_piece_6	a ring, at four times its size,
+s07_a_set_piece_7	which makes it a little wider than the tunnel.
+s07_a_set_piece_8	Facing says which way it looks, and that's at the Nave.
+s07_a_set_piece_9	A prop takes no space, so you fly straight through it.
+s07_a_set_piece_10	These plain shapes come with the game.
+s07_a_set_piece_11	Real gates and statues come in an art pack,
+s07_a_set_piece_12	and your mission doesn't have one yet.
+s07_a_set_piece_13	But you can write a list,
+s07_a_set_piece_14	and the game takes the first word it knows.
+s08_named_places_0	The last kind of record is a point, which is a named spot.
+s08_named_places_1	It has three numbers, inside a room,
+s08_named_places_2	and it has roles, which say what it's for.
+s08_named_places_3	One role means something to the game, and that's entrance.
+s08_named_places_4	The ruin's name on the map moves to this point.
+s08_named_places_5	Any other role is a word of my own.
+s08_named_places_6	So the Altar goes in the middle of the Vault.
+s08_named_places_7	The game stands an invisible marker there,
+s08_named_places_8	and when a ship gets close,
+s08_named_places_9	it turns into a contact with this name.
+s08_named_places_10	The Niche is the same, and it's hidden.
+s08_named_places_11	Hidden is for a crew in suits, later in this class.
+s08_named_places_12	For a ship, it changes nothing.
+s09_lint_0	So I run lint, and it's clean.
+s09_lint_1	Now I misspell a style,
+s09_lint_2	and lint tells me, and asks if I meant blocks.
+s09_lint_3	I take a number out of a point,
+s09_lint_4	and it tells me the place won't be made.
+s09_lint_5	Now I misspell the name of the ring, and lint says clean.
+s09_lint_6	Lint doesn't check that word,
+s09_lint_7	and the game would simply build no ring.
+s09_lint_8	The game does say so, in its log file, after you play.
+s09_lint_9	So read your Dress and Art lines yourself, letter by letter.
 s10_play_it_0	The name is at the way in now.
-s10_play_it_1	Inside: the haze.
-s10_play_it_2	The ring, across the tunnel. Through it. The Nave.
-s10_play_it_3	Up to the Vault, and there: The Altar, on the map, because I am close enough.
-s10_play_it_4	And the Gallery: built walls, with pieces missing.
-s11_your_turn_0	Change the Gallery to ribs and take more of it away.
-s11_your_turn_1	Put something on the altar: a point can be dressed too.
-s11_your_turn_2	Add a hidden place of your own.
-s11_your_turn_3	Then break one line where lint can see it and one where it cannot.
-s11_your_turn_4	Next time, a place says something when the crew arrives.
+s10_play_it_1	Inside, there's the haze,
+s10_play_it_2	and there's the ring, across the tunnel.
+s10_play_it_3	Through it we go, and this is the Nave.
+s10_play_it_4	Now up to the Vault.
+s10_play_it_5	And there's the Altar, on the map,
+s10_play_it_6	because I'm close enough.
+s10_play_it_7	And this is the Gallery, with built walls, and pieces missing.
+s11_your_turn_0	Now it's your turn.
+s11_your_turn_1	Change the Gallery to ribs, and take more of it away.
+s11_your_turn_2	Put something on the altar,
+s11_your_turn_3	because a point can be dressed too.
+s11_your_turn_4	Add a hidden place of your own.
+s11_your_turn_5	Then break one line where lint can see it,
+s11_your_turn_6	and one where it can't.
+s11_your_turn_7	Next time, a place says something when the ship arrives.

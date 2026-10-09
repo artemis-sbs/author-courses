@@ -24,13 +24,20 @@ Today the ship does all of it. Nobody leaves the ship until Lecture 8.
 
 ## Before you start
 
-- Your mission from Lecture 4: The Hollow, with The Way In, The Altar and The Niche,
-  Surveyor Rook, the beat **Marker One**, and the scenes **Rook at the Altar** and **The
-  Rest of It**. In this page it is called `MyMission`. Use your own folder's name.
-- `sbs lint MyMission` says `clean`.
+- `MyRuin` as Lecture 6 left it: The Hollow, with its places, Surveyor Rook and his three
+  recordings, the side story **The One Who Stayed**, and the cutscene. `mission.amd` is
+  296 lines long, and `story.mast` has the card from Lecture 6.
+- `sbs lint MyRuin` says `clean`.
 - You have done Class 1, Lecture 9 (an arc, its steps, `Then: reveal`, `Win:`, `Lose:`) and
   Class 2, Lecture 5 (a step that an answer finishes).
-- You can start the mission with a Helm console, a Comms console and a Science console.
+- VS Code with the mission folder open, a command prompt open in
+  `C:\Cosmos\data\missions`, and the game closed.
+
+This lecture adds a Science console to the line that starts the game:
+
+```
+sbs run server,helm,comms,science -m MyRuin map=0
+```
 
 **If you did Lecture 4's exercise,** you have three records this page is about to replace.
 
@@ -78,8 +85,8 @@ comes from Comms.
 
 ## Step 2 - The story's heading
 
-Open `mission.amd` and find the beat **Marker One** in the Quests section. Leave one blank
-line below its description, and type:
+Open `mission.amd` and find **The One Who Stayed**. It is the last record of the Quests
+section. Leave one blank line below its description, and type:
 
 ```
 ### [The Hollow Survey](survey)
@@ -253,8 +260,8 @@ Then: reveal survey/take
 `hollow_taken` is a word of your own. Write it in small letters, with an underscore where a
 space would go. The habit in Storm's Beacon is the name of the thing and then `_taken`.
 
-Now the call that says the word. Go to the Dialogue section. Below **The Rest of It**,
-leave a blank line and type:
+Now the call that says the word. Go to the Dialogue section and find **The Entry for
+Dace**, the last of Rook's scenes. Leave one blank line below its answer, and type:
 
 ```
 ### [Rook at the Niche](rook_niche)
@@ -348,7 +355,7 @@ ship has come within 1200 of it, or once an answer has revealed it.
 
 ## Your finished pieces
 
-In the Quests section, below Marker One:
+In the Quests section, below The One Who Stayed:
 
 ```
 ### [The Hollow Survey](survey)
@@ -434,7 +441,7 @@ Tab: scan
 % A square recess, cut later than the room. Something small and dense sits at the back of it.
 ```
 
-In the Dialogue section, below The Rest of It:
+In the Dialogue section, below The Entry for Dace:
 
 ```
 ### [Rook at the Niche](rook_niche)
@@ -464,7 +471,7 @@ The whole file is in `example\mission.amd`.
 ## Step 7 - Check it
 
 ```
-sbs lint MyMission
+sbs lint MyRuin
 ```
 
 You want `clean` under `mission.amd`.
@@ -498,8 +505,10 @@ end of the line lint prints.
 |---|---|---|
 | `Scan of: way_in` (the key, not the role) | That place has no reading | `role-nothing-wears` |
 | A second record with `Scan of: altar` and no `Tab:` line | It replaces Altar Reading | `duplicate-scan` |
-| `Scan of: altar` typed in The Altar's own fence, in Relics | Nothing. The game ignores the line | `unknown-field` |
+| `Scan of: altar` typed in The Altar's own fence, in Relics | Nothing. The game ignores the line | `unknown-field`, and `duplicate-scan` |
 | The whole Altar Reading record typed in the Relics section, under The Altar | No reading. A line in `mast.runtime.log` says `relic 'altar_scan' has no rooms` | `relic-section-stray`: move it to Scans |
+
+### What lint cannot see
 
 Lint says `clean` for everything in this last table. The first three rows are the ones to
 check by eye every time.
@@ -531,24 +540,35 @@ Four things that look like mistakes and are not:
 
 ## Step 8 - Play it
 
-Start your mission as the server, with a Helm console, a Comms console and a Science
-console.
+Start the game with a server, a Helm console, a Comms console and a Science console:
+
+```
+sbs run server,helm,comms,science -m MyRuin map=0
+```
 
 1. Open the quest list. **The Hollow Survey** is there with one step under it: **Find the
    Way In**. First Contact, from the template, is in the list as well.
 2. Fly to The Hollow. As the ship comes up to the door, Find the Way In completes and
    **The First Marker** appears.
-3. Fly in through The Mouth, across The Nave and up the tunnel to The Vault. Inside the
-   room, The First Marker completes, **The Second Marker** appears, and Comms has a call:
-   **Surveyor Rook - A recording at the altar**.
-4. On Science, select **The Altar**. Its `scan` tab has your reading.
-5. On Comms, open the call. Choose **Play the rest.**, then **Mark the Gallery.** On
+3. Fly in through The Mouth and the ring. Comms has Lecture 6's call, **Surveyor Rook - A
+   recording at the ring**. Answer it or leave it. Today's story does not need it.
+4. Go on across The Nave and up the tunnel to The Vault. Inside the room, The First Marker
+   completes, **The Second Marker** appears, and Comms has a call: **Surveyor Rook - A
+   recording at the altar**.
+5. On Science, select **The Altar**. Its `scan` tab has your reading.
+6. On Comms, open the altar call. Choose **Play the rest.**, then **Mark the Gallery.** On
    Helm's map, **The Niche** appears.
-6. Fly back down the tunnel, across The Nave and into The Gallery, to the far end. The
+7. Fly back down the tunnel, across The Nave and into The Gallery, to the far end. The
    Second Marker completes and **What Rook Put Back** appears. Comms has a new call at the
-   top of the list: **Surveyor Rook - A second recording**.
-7. Open it. Choose **Take it aboard.** The step completes, the arc completes, and the game
+   top of the list, above any call the crew has not answered: **Surveyor Rook - A second
+   recording**.
+8. Open it. Choose **Take it aboard.** The step completes, the arc completes, and the game
    ends with your `Win:` sentence.
+
+The side story from Lecture 6 is still in the mission. A crew that logs the names at the
+ring can take it, find the cairn and watch the cutscene on the way. A crew that does not
+wins all the same: the game ends with The One Who Stayed never started, or started and
+not finished. Nothing in the survey waits for it.
 
 What the crew is told, word for word:
 
@@ -658,7 +678,7 @@ When you stop, open `mast.runtime.log` in your mission folder. It should be empt
 
 You are done when all five are true:
 
-- `sbs lint MyMission` shows `mission.amd` as `clean`.
+- `sbs lint MyRuin` shows `mission.amd` as `clean`.
 - At the start, the quest list shows one step under The Hollow Survey: Find the Way In.
 - Each of the other three steps appears only when the one before it finishes.
 - **Take it aboard.** ends the game with your `Win:` sentence, and the side has been paid
@@ -668,8 +688,8 @@ You are done when all five are true:
 
 ## Next
 
-Lecture 8 is EVA. The crew leaves the ship in suits, and the words you wrote on The Altar
-in Lecture 4 are read at last.
+Lecture 8 will teach EVA: the crew leaves the ship in suits, and the words you wrote on
+The Altar in Lecture 4 are read at last. It is in preparation.
 
 ## Further reading
 

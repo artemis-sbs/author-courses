@@ -13,7 +13,7 @@ You will add lines to the Relics section of `mission.amd`. You will not touch
 `story.mast`.
 
 Today is about how the ruin looks and where its places are. What a place says, and what is
-lying in it, come in Lectures 4 and 5. The walls are still scenery: they do not stop a
+lying in it, come in later lectures. The walls are still scenery: they do not stop a
 ship.
 
 ## The video
@@ -22,17 +22,19 @@ ship.
 
 ## Before you start
 
-- Your mission from Lecture 2: The Hollow, with The Mouth, The Nave and The Vault. In this
-  page it is called `MyMission`. Use your own folder's name.
-- `sbs lint MyMission` says `clean`.
-- `story.mast` has the `relics_spawn` line (Lecture 2, Step 6).
+- `MyRuin` as Lecture 2 left it: The Hollow, with The Mouth, The Nave and The Vault.
+  `mission.amd` is 92 lines long, or 100 with The Gallery from Lecture 2's exercise.
+- `sbs lint MyRuin` says `clean`.
+- VS Code with the mission folder open, a command prompt open in
+  `C:\Cosmos\data\missions`, and the game closed.
 
 ## Step 1 - A built room to dress
 
 Two of today's fields only show on a room with flat walls. So the ruin needs one box.
 
 If you did the exercise in Lecture 2, you have The Gallery. Make its fence read like the
-one below. If you did not, add this below The Vault:
+one below. If you did not, go to the end of the file, leave one blank line below The
+Vault's note, and type:
 
 ```
 ### [The Gallery](gallery)
@@ -409,7 +411,7 @@ Every new record has three hashes and a `Relic: hollow` line, the same as a room
 ## Step 8 - Check it
 
 ```
-sbs lint MyMission
+sbs lint MyRuin
 ```
 
 You want `clean` under `mission.amd`.
@@ -420,6 +422,7 @@ line lint prints.
 | Mistake | What the game does | Lint says |
 |---|---|---|
 | `Walls: plats`, or `Walls: bloks, plates` | Plain rock for `plats`. For the second, `plates` | `relic-walls-word`: did you mean `plates`? |
+| `Walls: rib` on The Gallery | That room is plain rock | `relic-walls-word`, and `relic-unknown-walls` |
 | `Walls: plates blocks` (two words, no comma) | Plain rock | `relic-unknown-walls` |
 | `Walls: torgoth` (a kit, and no word from Step 2 after it) | Plain rock, unless the kit is loaded | `relic-unknown-walls`. End the list with a word from Step 2 |
 | `Walls: torgoth.zip, plates` | `plates` | `relic-walls-word`: it looks like a file name |
@@ -448,19 +451,27 @@ line lint prints.
 | `Relic: Hollow` (a capital in the key) | The part is not made | `relic-dangling-parent` |
 | A point with the same key as a room | Do not rely on either | `duplicate-key` |
 
-Lint says `clean` for the four in this second table. The game tells you about the first
+### What lint cannot see
+
+Lint says `clean` for everything in this second table. The game tells you about the first
 two: play once, then open `mast.runtime.log` in your mission folder. It should be empty.
 
 | You wrote | What happens | What tells you |
 |---|---|---|
 | `Art: plain_astroid_9` (a key that does not exist) | The room falls back to ordinary mixed rock | A line in `mast.runtime.log` naming the key and the room |
 | `Dress: generic-tortus 4`, or a kit's name such as `Dress: torgoth` | Nothing is placed | A line in `mast.runtime.log` naming the key and the prop |
+| `Dress: generic-torus, 4` (a comma), or `Dress: generic-torus four` | The ring is built at size 1: 210 across, inside a tunnel 700 across | Nothing |
+| `Roles: the altar` (two words) | The place wears one role, spelled with the space in it. Nothing later can name it | Nothing |
 | `Walls:` in a fence under `## [Relics](relics)` | Nothing. `Walls:` goes on the ruin or on a room | Nothing |
 | `Atmosphere: Purple` (a capital) | A purple cloud. Capitals do not matter | It is not a mistake |
 
 ## Step 9 - Play it
 
-Start your mission as the server with a Helm console, the way you did in Lecture 2.
+Start the game with a server and a Helm console, the way you did in Lecture 2:
+
+```
+sbs run server,helm -m MyRuin map=0
+```
 
 1. On Helm's map, find **The Hollow**. It should be a little nearer the station than last
    time: 19300 out, not 20000.
@@ -489,8 +500,8 @@ The walls are still scenery. Nothing here stops the ship.
 ## Exercise
 
 1. Change The Gallery from `blocks` to `ribs` and play. Then change `Gaps: 0.2` to
-   `Gaps: 0.6` and play again. More than half the plates are gone. The bars are not: `Gaps:`
-   removes plates and leaves bars.
+   `Gaps: 0.6` and play again. The Gallery had 67 plates and 14 bars. Now it has 36 plates
+   and the same 14 bars: `Gaps:` removes plates and leaves bars.
 2. Put something on the altar. A point can be dressed, the same as a prop. Add this line
    to The Altar's fence:
 
@@ -524,7 +535,7 @@ The walls are still scenery. Nothing here stops the ship.
 
 You are done when all five are true:
 
-- `sbs lint MyMission` shows `mission.amd` as `clean`.
+- `sbs lint MyRuin` shows `mission.amd` as `clean`.
 - In the game, the ruin's name on the map is at the way in, not in the middle of the first
   room.
 - There is a colored cloud inside the ruin, and it is the color you wrote.
@@ -533,8 +544,8 @@ You are done when all five are true:
 
 ## Next
 
-Lecture 4 makes a place speak: a point gets a scene, and the crew that reaches it reads
-what is there.
+Lecture 4 makes a place speak: the ship comes close to The Altar, and a recording calls
+it on Comms.
 
 ## Further reading
 

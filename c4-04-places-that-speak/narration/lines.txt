@@ -1,93 +1,115 @@
-s01_cold_open_0	Last time this room had a name.
-s01_cold_open_1	Today it has something to say.
-s01_cold_open_2	I flew the ship into the Vault, and a recording forty years old started to play.
-s01_cold_open_3	I did not write a line of code for that.
-s01_cold_open_4	I wrote who is speaking, what he says, and how close the ship has to be.
+s01_cold_open_0	Last time, this room had a name.
+s01_cold_open_1	Today, it has something to say.
+s01_cold_open_2	I flew the ship into the Vault,
+s01_cold_open_3	and a recording forty years old started to play.
+s01_cold_open_4	I didn't write a line of code for that.
+s01_cold_open_5	I wrote who's speaking, what he says,
+s01_cold_open_6	and how close the ship has to be.
 s02_two_listeners_0	A place in a ruin can speak to two different listeners.
-s02_two_listeners_1	The ship, which means the bridge: that arrives on Comms as a call.
-s02_two_listeners_2	Or a person, a crew member who has gone outside in a suit and is standing there: that is read on their handheld.
-s02_two_listeners_3	They are written differently.
-s02_two_listeners_4	And here is the thing to know before we start.
-s02_two_listeners_5	Your crew does not leave the ship until Lecture 8.
-s02_two_listeners_6	So today you will write both, and you will play one.
-s02_two_listeners_7	The other one lint checks for you, and it waits.
-s03_a_voice_0	A call is placed by somebody, and a table of stone is not a somebody.
-s03_a_voice_1	So I give the place a voice.
-s03_a_voice_2	Forty years ago a survey team found this ruin, and their leader left recordings in it.
-s03_a_voice_3	He is a character, written the way you wrote characters in Class 2.
-s03_a_voice_4	His key is rook.
-s04_what_he_says_0	Now the scene.
-s04_what_he_says_1	All of this is Class 2.
-s04_what_he_says_2	Speaker: his key.
-s04_what_he_says_3	When: hail, because this is a call that comes in.
-s04_what_he_says_4	A title, which the crew reads before they open it.
-s04_what_he_says_5	Two takes, and the game picks one.
-s04_what_he_says_6	Then two answers.
-s04_what_he_says_7	One leads on to a second scene, by its key.
-s04_what_he_says_8	One ends the call.
-s04_what_he_says_9	The second scene has no When and no title, because the only way into it is that answer.
-s05_the_place_makes_the_call_0	A scene is words on a page until something places the call.
-s05_the_place_makes_the_call_1	In Class 2 that was a beat waiting to be revealed.
+s02_two_listeners_1	One is the ship, which means the bridge,
+s02_two_listeners_2	and that arrives on Comms as a call.
+s02_two_listeners_3	The other is a person,
+s02_two_listeners_4	a crew member who's gone outside in a suit and is standing there,
+s02_two_listeners_5	and that's read on their handheld.
+s02_two_listeners_6	The two are written differently.
+s02_two_listeners_7	And here's the thing to know before we start:
+s02_two_listeners_8	your crew doesn't leave the ship until a later lecture.
+s02_two_listeners_9	So today you'll write both, and you'll play one.
+s02_two_listeners_10	The other one, lint checks for you, and it waits.
+s03_a_voice_0	A call is placed by somebody,
+s03_a_voice_1	and a table of stone isn't a somebody.
+s03_a_voice_2	So I give the place a voice.
+s03_a_voice_3	Forty years ago a survey team found this ruin,
+s03_a_voice_4	and their leader left recordings in it.
+s03_a_voice_5	He's a character, written the way you wrote characters in Class 2,
+s03_a_voice_6	and his key is rook.
+s04_what_he_says_0	Now the scene, and all of this is Class 2.
+s04_what_he_says_1	The speaker is his key.
+s04_what_he_says_2	When is hail, because this is a call that comes in.
+s04_what_he_says_3	There's a title, which the crew reads before they open it.
+s04_what_he_says_4	There are two takes, and the game picks one.
+s04_what_he_says_5	Then come two answers.
+s04_what_he_says_6	One leads on to a second scene, by its key,
+s04_what_he_says_7	and one ends the call.
+s04_what_he_says_8	The second scene has no When line and no title,
+s04_what_he_says_9	because the only way into it is that answer.
+s05_the_place_makes_the_call_0	A scene is only words on a page, until something places the call.
+s05_the_place_makes_the_call_1	In Class 2 that was a beat, waiting to be revealed.
 s05_the_place_makes_the_call_2	This beat waits for the ship to get somewhere.
-s05_the_place_makes_the_call_3	Three hashes: it is not a step of First Contact.
-s05_the_place_makes_the_call_4	Beat on the first line.
-s05_the_place_makes_the_call_5	Then Starts when: reach altar 600. altar is a role.
-s05_the_place_makes_the_call_6	It is this word here, on the place's Roles line.
-s05_the_place_makes_the_call_7	Not its key, and not its name.
-s05_the_place_makes_the_call_8	For the Altar they happen to be the same word.
-s05_the_place_makes_the_call_9	For the Way In they are not: the key is way_in and the role is entrance.
-s05_the_place_makes_the_call_10	And six hundred is how close.
-s05_the_place_makes_the_call_11	The Vault is seven hundred from the middle to the wall, and the altar is in the middle, so six hundred means the ship is in the room.
-s05_the_place_makes_the_call_12	Always write that number.
-s05_the_place_makes_the_call_13	Leave it out and the game uses five thousand, which is bigger than the whole ruin.
-s05_the_place_makes_the_call_14	Then Action, and under it who calls, the word hails, and the scene.
-s06_an_answer_that_changes_the_m_0	You know what an answer can do: start a quest, finish one, send a word.
-s06_an_answer_that_changes_the_m_1	In a ruin there is one more. reveal, and then a place.
-s06_an_answer_that_changes_the_m_2	Remember the Niche, the place I hid last time.
-s06_an_answer_that_changes_the_m_3	It only showed up when the ship was nearly on top of it.
-s06_an_answer_that_changes_the_m_4	With this answer it shows up when Comms says so.
-s06_an_answer_that_changes_the_m_5	Now be careful: reveal takes the place's key, the word in round brackets. reach took its role.
-s06_an_answer_that_changes_the_m_6	Two lines, two different words for the same place.
-s07_the_place_s_own_words_0	Now the other listener.
-s07_the_place_s_own_words_1	Somebody is standing at this table.
-s07_the_place_s_own_words_2	Nobody is calling them.
-s07_the_place_s_own_words_3	What they read is what they see.
-s07_the_place_s_own_words_4	On the place, two lines.
-s07_the_place_s_own_words_5	Scene is the key of a scene.
-s07_the_place_s_own_words_6	Scan is one line about the place, for whoever comes after the scene has been played.
-s07_the_place_s_own_words_7	And the scene itself: no fence at all.
-s07_the_place_s_own_words_8	No speaker, because nobody is speaking.
-s07_the_place_s_own_words_9	No When, no title, because it is not a call.
-s07_the_place_s_own_words_10	Takes and answers, the same as ever.
-s07_the_place_s_own_words_11	One rule is new: every path through a place's scene has to end in an answer with empty brackets.
-s07_the_place_s_own_words_12	Nothing else closes it.
-s07_the_place_s_own_words_13	This opens when a crew member's suit arrives here.
-s07_the_place_s_own_words_14	Not when the ship does.
-s07_the_place_s_own_words_15	I cannot show it to you today, and you cannot play it today.
-s07_the_place_s_own_words_16	We come back to it in Lecture 8.
-s08_lint_0	Lint. Clean.
-s08_lint_1	Now I break the role.
-s08_lint_2	It tells me nothing in the mission wears a role called alter.
-s08_lint_3	Good: that call would never have come.
-s08_lint_4	Put it back.
-s08_lint_5	Now the scene on the place.
-s08_lint_6	It tells me the Altar points at a scene that is not there.
-s08_lint_7	That is how I check the half I cannot play.
-s08_lint_8	Put it back.
-s08_lint_9	Now the word after reveal. Clean.
-s08_lint_10	Lint does not check that word, and the game would say nothing either: the answer would end the call and the Niche would stay dark.
-s08_lint_11	So read two things yourself, every time: the word after reveal, and that there is a number after the role.
-s09_play_it_0	In through the Mouth. The Nave.
-s09_play_it_1	Up the tunnel, and there is the Altar on the map, the same as last time.
-s09_play_it_2	Now into the room.
-s09_play_it_3	Comms: a call.
-s09_play_it_4	Surveyor Rook, a recording at the altar. Open it.
-s09_play_it_5	One of my two takes.
-s09_play_it_6	Play the rest.
-s09_play_it_7	And: mark the Gallery.
-s09_play_it_8	Back to Helm.
-s09_play_it_9	There is the Niche, and we have not been near it.
-s10_your_turn_0	Give the Niche a recording of its own, and words of its own.
-s10_your_turn_1	Make one answer finish a quest.
-s10_your_turn_2	Then break one line where lint can see it and one where it cannot.
-s10_your_turn_3	Next time: what is lying in these rooms.
+s05_the_place_makes_the_call_3	It has three hashes, so it isn't a step of First Contact,
+s05_the_place_makes_the_call_4	and the word Beat is on its first line.
+s05_the_place_makes_the_call_5	Then comes the line that matters:
+s05_the_place_makes_the_call_6	starts when, reach altar, six hundred.
+s05_the_place_makes_the_call_7	Altar is a role.
+s05_the_place_makes_the_call_8	It's this word here, on the place's Roles line,
+s05_the_place_makes_the_call_9	and not its key or its name.
+s05_the_place_makes_the_call_10	For the Way In those differ:
+s05_the_place_makes_the_call_11	the key is way in, and the role is entrance.
+s05_the_place_makes_the_call_12	Six hundred is how close.
+s05_the_place_makes_the_call_13	The altar is in the middle of the Vault,
+s05_the_place_makes_the_call_14	and the wall is seven hundred out,
+s05_the_place_makes_the_call_15	so six hundred means the ship is in the room.
+s05_the_place_makes_the_call_16	Always write that number.
+s05_the_place_makes_the_call_17	Leave it out and the game uses five thousand,
+s05_the_place_makes_the_call_18	which is bigger than the whole ruin.
+s05_the_place_makes_the_call_19	Last comes Action, which says who calls,
+s05_the_place_makes_the_call_20	then the word hails, and then the scene.
+s06_an_answer_that_changes_the_m_0	You know what an answer can do:
+s06_an_answer_that_changes_the_m_1	it can start a quest, finish one, or send a word.
+s06_an_answer_that_changes_the_m_2	In a ruin there's one more,
+s06_an_answer_that_changes_the_m_3	which is reveal, and then a place.
+s06_an_answer_that_changes_the_m_4	Remember the Niche, the place I hid last time.
+s06_an_answer_that_changes_the_m_5	It only showed up when the ship was nearly on top of it.
+s06_an_answer_that_changes_the_m_6	With this answer, it shows up when Comms says so.
+s06_an_answer_that_changes_the_m_7	Now be careful here.
+s06_an_answer_that_changes_the_m_8	Reveal takes the place's key, the word in round brackets,
+s06_an_answer_that_changes_the_m_9	and reach took its role.
+s06_an_answer_that_changes_the_m_10	That's two lines, and two different words for the same place.
+s07_the_place_s_own_words_0	Now for the other listener.
+s07_the_place_s_own_words_1	Somebody is standing at this table, and nobody's calling them.
+s07_the_place_s_own_words_2	What they read is what they see.
+s07_the_place_s_own_words_3	On the place I add two lines.
+s07_the_place_s_own_words_4	Scene is the key of a scene,
+s07_the_place_s_own_words_5	and Scan is one line about the place,
+s07_the_place_s_own_words_6	for whoever comes after the scene has been played.
+s07_the_place_s_own_words_7	The scene itself has no fence at all.
+s07_the_place_s_own_words_8	There's no speaker, because nobody's speaking,
+s07_the_place_s_own_words_9	and no title, because it isn't a call.
+s07_the_place_s_own_words_10	One rule is new:
+s07_the_place_s_own_words_11	every path through a place's scene has to end in an answer with empty brackets,
+s07_the_place_s_own_words_12	because nothing else closes it.
+s07_the_place_s_own_words_13	This opens when a crew member's suit arrives here, and not when the ship does.
+s07_the_place_s_own_words_14	So I can't show it to you today,
+s07_the_place_s_own_words_15	and you can't play it today.
+s07_the_place_s_own_words_16	We come back to it when the crew can leave the ship.
+s08_lint_0	So I run lint, and it's clean.
+s08_lint_1	Now I break the role,
+s08_lint_2	and lint tells me that nothing in the mission wears a role called alter.
+s08_lint_3	That's good, because that call would never have come.
+s08_lint_4	Next I break the scene on the place.
+s08_lint_5	Lint tells me the Altar points at a scene that isn't there,
+s08_lint_6	and that's how I check the half I can't play.
+s08_lint_7	Now the word after reveal, and lint says clean.
+s08_lint_8	Lint doesn't check that word,
+s08_lint_9	and the game would say nothing either.
+s08_lint_10	The answer would end the call, and the Niche would stay dark.
+s08_lint_11	So read two things yourself, every time:
+s08_lint_12	the word after reveal,
+s08_lint_13	and that there's a number after the role.
+s09_play_it_0	In through the Mouth we go, and across the Nave.
+s09_play_it_1	Up the tunnel, and there's the Altar on the map,
+s09_play_it_2	the same as last time.
+s09_play_it_3	Now into the room.
+s09_play_it_4	And on Comms, there's a call:
+s09_play_it_5	Surveyor Rook, a recording at the altar.
+s09_play_it_6	I open it, and I get one of my two takes.
+s09_play_it_7	I play the rest, and then I mark the Gallery.
+s09_play_it_8	Back on Helm, there's the Niche,
+s09_play_it_9	and we haven't been near it.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Give the Niche a recording of its own, and words of its own.
+s10_your_turn_2	Make one answer finish a quest.
+s10_your_turn_3	Then break one line where lint can see it,
+s10_your_turn_4	and one where it can't.
+s10_your_turn_5	Next time, the crew learns something in one room,
+s10_your_turn_6	and uses it in another.
