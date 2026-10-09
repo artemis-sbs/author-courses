@@ -20,8 +20,8 @@ You will type in one file, `mission.amd`. At the end it is exactly as it was at 
 
 ## Before you start
 
-- Your mission from Lecture 3, made from the `amd` template. In this page its folder is
-  called `MyMission`. Use your own folder's name.
+- Your mission as Lecture 5 left it. In this page its folder is called `MyMission`. Use
+  your own folder's name.
 - VS Code, with the mission folder open and `mission.amd` in front.
 - A command prompt open in `data\missions`.
 - The game closed.
