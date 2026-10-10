@@ -1,5 +1,13 @@
 # C5-7 video script - Narrative and goals
 
+> **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
+> stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the
+> finished file and on all 40 one-change variants. `Then: tern_ledger` with no verb, and
+> two keys on one `Then:` line, are `clean` now, and both were played again: the first
+> reveals the chapter, the second reveals both. The page's table and the paragraph under
+> it changed to say so.
+
 > **STATE ON 2026-10-09.** Written and measured against the released tools: `sbs` 0.13,
 > the published v1.4.0 libraries (sbs_utils `ae2bbf4a`, LegendaryMissions `b20726f`, the
 > Open Universe engine library rebuilt 2026-10-08 from `421ff4a`). Everything was run by

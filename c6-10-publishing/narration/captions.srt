@@ -139,201 +139,201 @@ Then I run doctor,
 and the last block is your folder.
 
 36
-00:02:24,157 --> 00:02:27,635
-Twenty-one libraries, where your first mission had twelve.
+00:02:24,157 --> 00:02:28,504
+Twenty-three libraries, where your first mission had about a dozen.
 
 37
-00:02:28,535 --> 00:02:30,274
+00:02:29,404 --> 00:02:31,143
 That's the universe machinery.
 
 38
-00:02:32,074 --> 00:02:35,552
+00:02:32,943 --> 00:02:36,422
 And then the walk, on a deleted save.
 
 39
-00:02:36,452 --> 00:02:39,930
+00:02:37,322 --> 00:02:40,800
 And delete the save again when you're done.
 
 40
-00:02:41,130 --> 00:02:43,739
+00:02:42,000 --> 00:02:44,609
 Now the step a campaign adds.
 
 41
-00:02:44,639 --> 00:02:46,813
+00:02:45,509 --> 00:02:47,683
 Your own pages come out.
 
 42
-00:02:48,613 --> 00:02:52,526
+00:02:49,483 --> 00:02:53,396
 The campaign page is every act, and the ending.
 
 43
-00:02:53,426 --> 00:02:56,904
+00:02:54,296 --> 00:02:57,774
 The playtest page is what other crews did.
 
 44
-00:02:58,704 --> 00:03:01,748
+00:02:59,574 --> 00:03:02,617
 And any save you kept in here
 
 45
-00:03:02,198 --> 00:03:04,807
+00:03:03,067 --> 00:03:05,676
 has every hidden step in it.
 
 46
-00:03:06,607 --> 00:03:09,215
+00:03:07,476 --> 00:03:10,085
 Then delete what the tools made.
 
 47
-00:03:09,665 --> 00:03:11,404
+00:03:10,535 --> 00:03:12,274
 The printed bible especially.
 
 48
-00:03:13,204 --> 00:03:14,943
+00:03:14,074 --> 00:03:15,813
 Seven files are left.
 
 49
-00:03:15,843 --> 00:03:18,017
+00:03:16,713 --> 00:03:18,887
 Those seven are the mission.
 
 50
-00:03:19,217 --> 00:03:20,957
+00:03:20,087 --> 00:03:21,826
 Zip the folder itself,
 
 51
-00:03:21,407 --> 00:03:24,885
+00:03:22,276 --> 00:03:25,754
 the way you did in the first class.
 
 52
-00:03:26,685 --> 00:03:28,424
+00:03:27,554 --> 00:03:29,293
 One honest word here.
 
 53
-00:03:29,324 --> 00:03:34,107
+00:03:30,193 --> 00:03:34,976
 The universe file is plain text, and it's the whole act.
 
 54
-00:03:35,007 --> 00:03:38,920
+00:03:35,876 --> 00:03:39,789
 A host who opens it has read your campaign.
 
 55
-00:03:40,720 --> 00:03:43,328
+00:03:41,589 --> 00:03:44,198
 That's what a host is for.
 
 56
-00:03:44,228 --> 00:03:48,576
+00:03:45,098 --> 00:03:49,446
 It's the same as handing someone the adventure to run.
 
 57
-00:03:50,376 --> 00:03:55,159
+00:03:51,246 --> 00:03:56,028
 It also means you can't be crew in your own campaign
 
 58
-00:03:55,609 --> 00:03:59,087
+00:03:56,478 --> 00:03:59,957
 unless somebody else is willing to read it.
 
 59
-00:04:00,287 --> 00:04:03,765
+00:04:01,157 --> 00:04:04,635
 The note is where a campaign really differs.
 
 60
-00:04:05,565 --> 00:04:09,043
+00:04:06,435 --> 00:04:09,913
 The setup's the same three commands as before.
 
 61
-00:04:09,943 --> 00:04:12,987
+00:04:10,813 --> 00:04:13,857
 Then four things only a campaign needs.
 
 62
-00:04:14,787 --> 00:04:17,830
+00:04:15,657 --> 00:04:18,700
 Start it the same way every week,
 
 63
-00:04:18,280 --> 00:04:20,454
+00:04:19,150 --> 00:04:21,324
 and never choose new game.
 
 64
-00:04:21,354 --> 00:04:24,833
+00:04:22,224 --> 00:04:25,702
 Leave the ship's name alone if you can.
 
 65
-00:04:25,733 --> 00:04:28,341
+00:04:26,602 --> 00:04:29,211
 End each evening by jumping home.
 
 66
-00:04:29,241 --> 00:04:33,154
+00:04:30,111 --> 00:04:34,024
 And copy the save file somewhere safe, every week.
 
 67
-00:04:34,054 --> 00:04:37,967
+00:04:34,924 --> 00:04:38,837
 The note gives its name, and where it lives.
 
 68
-00:04:39,167 --> 00:04:43,080
+00:04:40,037 --> 00:04:43,950
 When act two's ready, you send the folder again,
 
 69
-00:04:43,530 --> 00:04:45,704
+00:04:44,400 --> 00:04:46,574
 and there are three rules.
 
 70
-00:04:47,504 --> 00:04:50,983
+00:04:48,374 --> 00:04:51,852
 The title doesn't change, not by a letter.
 
 71
-00:04:51,883 --> 00:04:55,796
+00:04:52,752 --> 00:04:56,665
 Nothing the crew has met is deleted or renamed,
 
 72
-00:04:56,246 --> 00:04:58,420
+00:04:57,115 --> 00:04:59,289
 because you only ever add.
 
 73
-00:05:00,220 --> 00:05:06,307
+00:05:01,089 --> 00:05:07,176
 And act two has to be opened by a step they haven't finished yet.
 
 74
-00:05:06,757 --> 00:05:08,930
+00:05:07,626 --> 00:05:09,800
 The capstone shows you how.
 
 75
-00:05:10,730 --> 00:05:12,904
+00:05:11,600 --> 00:05:13,774
 The host swaps the folder.
 
 76
-00:05:13,804 --> 00:05:15,978
+00:05:14,674 --> 00:05:16,848
 The save isn't in it,
 
 77
-00:05:16,428 --> 00:05:18,602
+00:05:17,298 --> 00:05:19,472
 so the crew carries on.
 
 78
-00:05:20,402 --> 00:05:23,880
+00:05:21,272 --> 00:05:24,750
 And before you send it, check it yourself.
 
 79
-00:05:24,330 --> 00:05:30,417
+00:05:25,200 --> 00:05:31,287
 Start the new folder on your own save from the end of act one,
 
 80
-00:05:30,867 --> 00:05:34,780
+00:05:31,737 --> 00:05:35,650
 and see that the first new lead is there.
 
 81
-00:05:35,980 --> 00:05:37,720
+00:05:36,850 --> 00:05:38,589
 So that's a release.
 
 82
-00:05:38,170 --> 00:05:42,083
+00:05:39,039 --> 00:05:42,952
 A named folder, a clean zip, and a note.
 
 83
-00:05:43,883 --> 00:05:46,491
+00:05:44,752 --> 00:05:47,361
 The capstone's next, when it's written.
 
 84
-00:05:47,391 --> 00:05:50,000
+00:05:48,261 --> 00:05:50,870
 And everything it'll ask of you
 
 85
-00:05:50,450 --> 00:05:53,059
+00:05:51,320 --> 00:05:53,928
 is already on your campaign page.

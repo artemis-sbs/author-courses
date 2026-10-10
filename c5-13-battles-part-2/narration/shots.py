@@ -137,7 +137,7 @@ SHOTS = [
         "title": 'Check, and play it',
         "frames": 1219,
         "captions": [
-            ('Lint gives the same three warnings as before.', 0, 104),
+            ('Lint says clean, as it did last time.', 0, 104),
             ("And once again, it can't see most of what goes wrong on this card,", 131, 314),
             ('so use the list on the page.', 327, 419),
             ("Now let's play the story.", 473, 538),

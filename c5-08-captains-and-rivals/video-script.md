@@ -1,5 +1,15 @@
 # C5-8 video script - Captains and rivals
 
+> **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
+> stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the
+> finished file and on all 40 one-change variants. `Side:` misspelled on a captain is a
+> warning now (`dangling-side`), and two rows gained a second warning. A captain with a
+> `Side:` and no `Values:` was played again, twice: she is read against her side's
+> `Values:` now (a deed in a trait her side values moved the standing from 0 to 35; this
+> page's deeds, in traits it does not value, still left it at 0). `Rival when:` was not
+> looked at again.
+
 > **STATE ON 2026-10-09.** Written and measured against the released tools: `sbs` 0.13,
 > the published v1.4.0 libraries (sbs_utils `ae2bbf4a`, LegendaryMissions `b20726f`, the
 > Open Universe engine library rebuilt 2026-10-08 from `421ff4a`). Everything was run by

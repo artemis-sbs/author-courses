@@ -23,7 +23,7 @@ not need to be able to write them.
 
 - Your `MyUniverse` mission as Lecture 12 left it. `kestrel_verge.amd`, `story.mast` and
   `settings.yaml` match `c5-12-battles-part-1\example\`.
-- `sbs lint MyUniverse` gives the three warnings about `ledger_read`, and nothing else.
+- `sbs lint MyUniverse` says `clean` for all six files.
 - The game closed, and the save deleted:
   `C:\Cosmos\data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml`.
 
@@ -186,8 +186,8 @@ Save the file.
 sbs lint MyUniverse
 ```
 
-The result is the one from Lecture 12: the three `ledger_read` warnings, and
-`6 amd + 1 mast file(s): 0 error(s), 3 warning(s)`.
+The result is the one from Lecture 12: six files, all `clean`, and
+`6 amd + 1 mast file(s): 0 error(s), 0 warning(s)`.
 
 Each row below was made on purpose, one change to the finished card, then linted, then
 played through the story to The Bone Pile.
@@ -204,7 +204,7 @@ played through the story to The Bone Pile.
 
 **Mistakes lint cannot see**
 
-Lint gives the same three warnings and nothing else for every one of these.
+Lint says `clean` for every one of these.
 
 | The mistake | What the game does |
 |---|---|
@@ -319,7 +319,7 @@ card again under the first and change its words. For two fleets in one place, co
 
 You are done when all five are true:
 
-- `sbs lint MyUniverse` gives the three `ledger_read` warnings and nothing else.
+- `sbs lint MyUniverse` says `clean` for all six files.
 - A crew that arrives early finds no battle line.
 - A crew that arrives on the story's business finds one, and reads your card.
 - A crew that leaves and comes back finds one, not two.

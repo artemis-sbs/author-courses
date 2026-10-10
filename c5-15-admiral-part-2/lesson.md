@@ -27,7 +27,7 @@ wrote those chapters in a lab. Today they come home.
 - Your `MyUniverse` mission as Lecture 13 left it. `story.mast` matches
   `c5-13-battles-part-2\example\`; `kestrel_verge.amd` and `settings.yaml` match
   `c5-12-battles-part-1\example\`.
-- `sbs lint MyUniverse` gives the three warnings about `ledger_read`, and nothing else.
+- `sbs lint MyUniverse` says `clean` for all six files.
 - Lecture 14, in its lab. You do not need the lab's files: every line is on this page.
 - The game closed, and the save deleted:
   `C:\Cosmos\data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml`.
@@ -178,8 +178,7 @@ Every extractor works a quarter again as fast.
 
 Three things are different from the lab.
 
-**Where they go.** At the end of the file. Nothing above them moves, so every line
-number lint has given you in this class is still right.
+**Where they go.** At the end of the file. Nothing above them moves.
 
 **Home.** The Hollin Compact's `Home:` is `0, 0`, the system every new game starts in.
 The home system still gets its world: Hollin Prime, the first world in the chapter that
@@ -232,8 +231,7 @@ sbs lint MyUniverse
 
 ```
 == dialogue\deepwell.amd ==
-  [WARNING] line 12:92: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 13:65: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  clean
 == dialogue\gleaners.amd ==
   clean
 == dialogue\hollin.amd ==
@@ -241,14 +239,14 @@ sbs lint MyUniverse
 == jobs.amd ==
   clean
 == kestrel_verge.amd ==
-  [WARNING] line 219:19: `tern_ledger` waits for the signal `ledger_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+  clean
 == lore.amd ==
   clean
 
-6 amd + 1 mast file(s): 0 error(s), 3 warning(s)
+6 amd + 1 mast file(s): 0 error(s), 0 warning(s)
 ```
 
-The same three warnings as before, on the same lines. The four chapters add none.
+Six files, all `clean`, as before. The four chapters add no warning.
 
 Each row below was made on purpose, one change to the finished files, then linted, then
 played.
@@ -262,12 +260,12 @@ played.
 | `### [Admiralty](admiralty)`, with three hashes | No Admiral at all. The chapter has become a world | A warning on each dial: "`Worldlet chance` is not a field a landmark has" (`unknown-field`) |
 | `Economy pace: fast` | Taken as `standard` | A warning: "`Economy pace: fast` is not a valid map value (brisk/standard/epic)" (`unknown-enum-value`) |
 | A world with no `Also: economy` line | Nothing changes. The world yields as before | Two warnings: "`Yields` is not a field a landmark has", and the same for `Reserve` (`unknown-field`) |
-| The comma left off the line above the Admiral's in `story.json` | Not played. The story does not compile | Dozens of warnings that are not true, and at the bottom one error: "Expecting ',' delimiter ... The story does not compile, so NOTHING in this mission runs until this is fixed" (`mast-compile`). Read the last line first |
+| The comma left off the line above the Admiral's in `story.json` | Not played. The game cannot read its list of libraries | One error, under `story.json`, and nothing else: "`story.json` cannot be read: expecting ',' delimiter (line 28, column 9). The usual cause is a comma missing from the end of the line above" (`story-json`) |
 | The library's name misspelled in `story.json` | Not played | An error: "Cannot load file __init__.mast from library ..." naming the file it could not find |
 
 **Mistakes lint cannot see**
 
-Lint gives the same three warnings and nothing else for every one of these.
+Lint says `clean` for every one of these.
 
 | The mistake | What the game does |
 |---|---|
@@ -406,7 +404,7 @@ again.
 |---|---|
 | No Admiral console | One of the three in Step 1 is missing. Check them in order: the line in `story.json`, `Mode: campaign`, then the keys `worldlets` and `admiralty` in the two headings |
 | `story.json` has no line with `admiral` in it | The folder was made before the template changed. Put a comma at the end of the `universe_core` line, and add the Admiral's line under it, so that the two read as in Step 2. Nothing else in the file changes |
-| Lint is suddenly full of warnings about fields that were fine | `story.json` is broken, usually a missing comma. Read lint's last line |
+| Lint gives one error about `story.json` and checks nothing else | A missing comma, usually. Lint names the line: look at the end of the line above it |
 | No world in the home system | The Worldlets chapter's key is not `worldlets`, or a world has two hashes |
 | The pools are 2,400, 800 and 320 | The mode is not `campaign`. `sandbox`, or a misspelled mode, starts at the `standard` pace |
 | The Shipyard offers nobody | There is no Academy yet |
@@ -427,7 +425,7 @@ again.
 
 You are done when all five are true:
 
-- `sbs lint MyUniverse` gives the three warnings about `ledger_read`, and nothing else.
+- `sbs lint MyUniverse` says `clean` for all six files.
 - The home system has your world in it.
 - With somebody in the Admiral's seat, a Headquarters stands on it.
 - With nobody in the seat, the crew's evening is the one you wrote.

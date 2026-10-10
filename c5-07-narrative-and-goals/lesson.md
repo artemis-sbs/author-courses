@@ -238,7 +238,6 @@ played.
 | The `Then:` line left off | The same, with nothing in the log | The second of those warnings (`never-revealed`) |
 | A word that is not `reveal`: `Then: show tern_ledger` | The same | A warning: "`show` is not a `Then:` verb" (`unknown-then-verb`), and both of the others |
 | The beat's name where its key should be: `Then: reveal The Assay Ledger` | The same | "`lead_tern` Then reveals `The`, and no record has that key" (`dangling-reveal`) |
-| Two keys on one line: `Then: reveal tern_ledger, lead_bone_pile` | Neither is revealed | The same warning, about `tern_ledger,` with its comma (`dangling-reveal`) |
 | Two beats with the same key | The second is lost, and the story stops where it should have appeared | A warning: "is the key of 2 records in the same place" (`duplicate-key`) |
 | A beat with two hashes | That beat, and every beat under it in the chapter, is lost | A warning on each of their lines: "this record is being read as a map" (`unknown-field`) |
 | `## [Narrative](story)` | No story and no leads. The Quest Log holds Charted Locations and nothing else | The same warning, on every line of every beat |
@@ -249,9 +248,12 @@ played.
 | The line that reveals the goal left off | The goal never appears, and the game never ends | The `never-revealed` warning, on the goal |
 | `## [Goals](endings)` | The same, and `mast.runtime.log` has a line about `goal_bone_pile` | A warning on each line of the goal: "this record is being read as a map" (`unknown-field`) |
 
-One warning is wrong. `Then: tern_ledger`, with the word `reveal` left out, works: the
-next chapter appears. Lint still says nothing reveals it. Write the word, and lint and
-the game agree.
+Two things look wrong and are not. Lint says `clean` for both.
+
+| You wrote | What the game does |
+|---|---|
+| `Then: tern_ledger`, with the word `reveal` left out | Works: the next chapter appears. Write the word all the same. It says what the line does |
+| Two keys on one line: `Then: reveal tern_ledger, lead_bone_pile` | Both are revealed at once. A `Then:` line takes several things, with a comma between them. In this story that is a mistake of plot and not of spelling: the third chapter is in the Quest Log before the second is done |
 
 **Mistakes lint cannot see**
 

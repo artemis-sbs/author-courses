@@ -26,11 +26,11 @@ s03_the_session_card_4	The budget for my worst system,
 s03_the_session_card_5	and then the two sittings.
 s03_the_session_card_6	And the most useful part, the words.
 s03_the_session_card_7	These are the words that have to match in two places,
-s03_the_session_card_8	and lint can't check any of them for me.
+s03_the_session_card_8	and lint only checks the first of them for me.
 s03_the_session_card_9	So when I rename something,
 s03_the_session_card_10	this is my list of where else to go.
 s04_before_you_play_0	There are four checks before I play.
-s04_before_you_play_1	Lint gives the three warnings we know about, and no others.
+s04_before_you_play_1	Lint says clean, for every file.
 s04_before_you_play_2	The save is gone,
 s04_before_you_play_3	because a run-through starts from a new game.
 s04_before_you_play_4	The dials say what my card says.
@@ -76,10 +76,9 @@ s08_after_you_play_4	And then there's one more table,
 s08_after_you_play_5	the things this universe doesn't do yet.
 s08_after_you_play_6	An admiral's numbers can't be balanced yet.
 s08_after_you_play_7	A captain can't be made a rival with one line.
-s08_after_you_play_8	Lint has three warnings that are wrong.
-s08_after_you_play_9	None of those is your mistake.
-s08_after_you_play_10	But a writer who knows them
-s08_after_you_play_11	writes around them, and that's why they're on the page.
+s08_after_you_play_8	Neither of those is your mistake.
+s08_after_you_play_9	But a writer who knows them
+s08_after_you_play_10	writes around them, and that's why they're on the page.
 s09_your_turn_0	Now it's your turn,
 s09_your_turn_1	and this time it really is yours.
 s09_your_turn_2	Plan two sittings, and write your card.

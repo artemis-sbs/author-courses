@@ -27,7 +27,7 @@ what a finished check looks like.
   `c5-13-battles-part-2\example\`; `kestrel_verge.amd` and `settings.yaml` match
   `c5-12-battles-part-1\example\`. Lecture 14 worked in a copy of another mission and
   changed nothing here.
-- `sbs lint MyUniverse` gives the three warnings about `ledger_read`, and nothing else.
+- `sbs lint MyUniverse` says `clean` for all six files.
 - The game closed, and the save deleted:
   `C:\Cosmos\data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml`.
 - A crew for the last step: three people, or one patient friend. You can do everything
@@ -115,7 +115,7 @@ read it.
 | `CREW` | Lecture 12's three dials, in one place. Whoever runs the game reads this first |
 | `BUDGET` | Lecture 12's sum, with Lecture 13's battle line added |
 | `SITTING` | Your plan from Step 1, short enough to read at a glance |
-| `WORDS` | Every word that has to match in two places. Lint cannot check any of these three for you today. When you rename one, this is the list of where else to go |
+| `WORDS` | Every word that has to match in two places. Lint checks the first of these three for you. It cannot check the key or the two numbers on the card in `story.mast`. When you rename one, this is the list of where else to go |
 
 ## Step 3 - Before you play
 
@@ -127,7 +127,7 @@ sbs lint MyUniverse
 
 | Check | Right answer |
 |---|---|
-| Lint | The three `ledger_read` warnings, and `6 amd + 1 mast file(s): 0 error(s), 3 warning(s)`. The card you just added moved the third warning down eleven lines, to line 230 |
+| Lint | `clean` for all six files, and `6 amd + 1 mast file(s): 0 error(s), 0 warning(s)` |
 | The save | `universe_save_the_kestrel_verge_1.yaml` is not in `common_data\saves`. A run-through starts from a new game |
 | The dials | Line 53 of `settings.yaml` and the two card lines in `story.mast` say what your session card says |
 | The libraries | `sbs fetch "MyUniverse" --update-libs` has been run since you last updated the tool |
@@ -210,7 +210,6 @@ and your own universe can have an Admiral (Lecture 15).
 | Balance an Admiral's economy. Your universe can have an Admiral now (Lecture 15), and the game still multiplies every stock and yield by eight | Write the numbers your story suggests. Tune them when the test setting is gone |
 | Let a story move on because of something the Admiral did. Nothing the Admiral builds or researches sends a signal a quest can wait for (Lecture 15) | Keep the Admiral beside the story, not in it |
 | Turn a captain into a rival with `Rival when:` (Lecture 8) | Build the rival from guarded lines and answers, as Lecture 8 does |
-| Lint clean. The three `ledger_read` warnings are wrong, and stay (Lecture 9) | Count them. Three, about that one word, is today's `clean` |
 | Tell you how the crew reaches Kestrel Traffic on Comms (Lecture 9) | Find it on a real screen, and write it on your session card |
 
 ## The capstone rubric
@@ -220,7 +219,7 @@ Mark yourself. Ten points make a universe you can put in front of a crew.
 | | Worth | You have it when |
 |---|---|---|
 | 1 | 1 | The session card is at the top of the main file, and every line of it is true |
-| 2 | 1 | Lint gives only warnings you can name, and you can say why each is wrong |
+| 2 | 1 | Lint says `clean` for every file |
 | 3 | 1 | `mast.runtime.log` is empty after both sittings |
 | 4 | 2 | Every row of your first sitting is ticked |
 | 5 | 1 | The second sitting starts where the first one stopped, with the same credits and Quest Log |

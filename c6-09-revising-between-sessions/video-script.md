@@ -1,5 +1,13 @@
 # C6-9 video script - Revising between sessions
 
+> **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
+> stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the lab at
+> each round: rounds one and two as printed; the lab with its Narrative chapter in a file
+> of its own is `clean` now (it had five wrong warnings), and Step 7's row says so. That a
+> finished step does not reveal again was measured again on a small test step. The six
+> Continues were not played again.
+
 > **STATE ON 2026-10-10.** Written and measured against the released tools: `sbs` 0.13,
 > the published v1.4.0 libraries (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`, the
 > Open Universe libraries of 2026-10-09, saves version 2). Everything was run by script

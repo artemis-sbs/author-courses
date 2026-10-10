@@ -68,7 +68,7 @@ s07_when_the_battle_is_there_10	The tier on the card doesn't move with Difficult
 s07_when_the_battle_is_there_11	so add it to your budget from last time.
 s07_when_the_battle_is_there_12	Mine comes to eleven or twelve ships,
 s07_when_the_battle_is_there_13	which is a lot for one cruiser.
-s08_check_and_play_it_0	Lint gives the same three warnings as before.
+s08_check_and_play_it_0	Lint says clean, as it did last time.
 s08_check_and_play_it_1	And once again, it can't see most of what goes wrong on this card,
 s08_check_and_play_it_2	so use the list on the page.
 s08_check_and_play_it_3	Now let's play the story.

@@ -196,6 +196,7 @@ played.
 | Two `Done when:` lines in one job | The second one is the ending | A warning: "`Done when:` is written twice in this fence" (`repeated-field`) |
 | `Rewrad:` | The button reads **(0 cr)** and the job pays nothing | A warning: "Did you mean `Reward`?" (`unknown-field`) |
 | Two jobs with the same key | The second is never offered | A warning: "`survey` is the key of 2 records in the same place" (`duplicate-key`) |
+| No comma before `earns`: `Reward: 150 credits earns hollin selfish 20` | Pays the 150. The deed does not happen | A warning: "has `earns` in the middle of it, so the `earns` is not read and no standing moves. Put a comma before `earns`" (`earns-shape`) |
 | A job with two hashes | That job, and every job under it in the chapter, is never offered | A warning on each of their lines: "this record is being read as a map" (`unknown-field`) |
 | `## [Jobs](work)` | No station offers any work | The same warning, on every line of every job |
 
@@ -215,7 +216,6 @@ Lint says `clean` for every one of these.
 | A word for a place: `reach home` | The same |
 | `Reward: 180`, with no `credits` | The button reads **(0 cr)** and the job pays nothing |
 | `Reward: one hundred eighty credits` | The same |
-| No comma before `earns`: `Reward: 150 credits earns hollin selfish 20` | Pays the 150. The deed does not happen |
 | `Standing: hollin selfish 20` on a job | Nothing. On a job, write the deed in the reward |
 | A word after `Offers:` that is not a job's key: `survey, relay` | That job is never offered |
 | A job's name after `Offers:` where its key should be: `Wreck Survey, Relay Run` | Neither is offered |

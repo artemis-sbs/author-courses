@@ -197,8 +197,8 @@ an arc, and it cost you one line.
 at once. A crew that visits the Assay Office in week 1 can pay 150 credits for a bill of
 sale they have no use for yet, and the step, still hidden, is not done. They will have
 to ask again in week 3. (Lecture 2 has a way to hold an answer back until the crew has
-learned a fact: `if learned ...`. The fact has to come from an answer or from a lead off
-the spine, because a spine step's one `Then:` line is taken.) Class 5 Lecture 7 has the same warning. Write the answer's words so that
+learned a fact: `if learned ...`. The fact can come from an answer, or from a step,
+whose `Then:` line can reveal and teach at once.) Class 5 Lecture 7 has the same warning. Write the answer's words so that
 asking early is only odd, not wrong.
 
 ## Step 4 - A race, and where clocks go
@@ -284,16 +284,14 @@ sbs lint MyUniverse
 1 amd + 1 mast file(s): 0 error(s), 0 warning(s)
 ```
 
-**If you split your universe in Class 5 Lecture 9,** two things are different for you.
-Both were measured on a split copy of this universe.
+**If you split your universe in Class 5 Lecture 9,** one thing is different for you. It
+was measured on a split copy of this universe.
 
 - A record you add to a chapter file starts with one hash, like every other record in
   that file. The records on this page are printed with three, for the main file.
-- Lint gives two warnings for every `signal` that crosses from one file to another: on
-  the answer, "emits signal ... but no `//signal/...` route was found" (`signal-no-route`),
-  and on the step, "waits for the signal ... and nothing in the mission sends it"
-  (`unfired-signal`). They are the same wrong warnings Lecture 9 showed you for
-  `ledger_read`. The game sends the signal and the step finishes. Leave them standing.
+
+Lint is the same for you: `clean`. It follows a `signal` from an answer in one file to
+the step that waits for it in another.
 
 Each row below was made on purpose, one change to the finished files, then linted.
 Where the middle column says what the game does, it was played as well.

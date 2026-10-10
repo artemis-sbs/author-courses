@@ -1,5 +1,11 @@
 # C5-6 video script - Jobs
 
+> **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
+> stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the
+> finished file and on all 46 one-change variants. One row moved: `Reward: 150 credits
+> earns ...` with no comma is a warning now (`earns-shape`). Nothing was played again.
+
 > **STATE ON 2026-10-08.** Written and measured today against the released tools: `sbs`
 > 0.13, the published v1.4.0 libraries (sbs_utils `ae2bbf4a`, LegendaryMissions
 > `b20726f`, the Open Universe engine library rebuilt 2026-10-08 from `421ff4a`).
@@ -109,7 +115,7 @@ adding a comma, | and then a deed, the same three words as in Lecture Four. || A
 trait, and a number. ||| So this job pays, and it pleases the Gleaners. || But the
 farmers hear who's been stripping wrecks, | and they think a little less of the crew.
 ||| And mind that comma. | Leave it out, and the credits are paid, | the deed is dropped,
-and lint says nothing. ||"
+and lint gives you a warning about it. ||"
 
 ### 5. Three more jobs
 

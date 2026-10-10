@@ -161,9 +161,6 @@ the Gleaners think afterward: Lecture 7's shape. The `if learned` is new here. A
 that hails the Gleaners cold does not see either answer. They have to ask what became
 of the boats first.
 
-Why the fact comes from an answer and not from the step: a step has one `Then:` line,
-and Five of Five needs its `Then: reveal`.
-
 Both answers also teach a new fact, `the skua was emptied`. Nothing asks for it yet.
 It is there so that Act Two can tell a crew that has finished evening 5 from one that
 has not. Step 9 uses it.
@@ -316,7 +313,14 @@ was no step in between. Neither worked.
 | Tried | What happened |
 |---|---|
 | `Then: reveal s06_go` added to Five Boats | Evening 6's step stayed hidden. A finished step does not reveal again |
-| An answer with `; reveal s06_go` | The answer was offered and the Compact spoke, and the step stayed hidden. In this game an answer's `reveal` does not reach a step of the story |
+| An answer with `; reveal s06_go` | The answer was offered and the Compact spoke, and the step stayed hidden. In this game an answer's `reveal` does not reach a step of the story. Lint warns on that answer: "`; reveal s06_go` does nothing to a quest: `reveal` is what `Then:` says" (`outcome-quest-verb`) |
+
+Both were tried again on the game as it is now, on a small test step, and both still
+fail the same way. That lint warning ends by suggesting another word, `; accepts`. On
+the same test step an answer with `; accepts` and the step's key did open it: the
+hidden step was Active and in the Quest Log. That was one press in one game. It was not
+played through a Continue, and this capstone was not walked again with it. The step in
+between is the way that was played from end to end, so it is the way this page builds.
 
 If you have already sent an Act One with no step in between, Lecture 9 has the cure:
 give evening 6's first step `Starts when: at once`. The crew that has finished gets it.

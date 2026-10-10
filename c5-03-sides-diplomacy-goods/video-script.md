@@ -1,5 +1,11 @@
 # C5-3 video script - Sides, diplomacy and goods
 
+> **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
+> stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the
+> finished file and on all 42 one-change variants: every result as printed. Nothing on the
+> page changed and nothing was played again.
+
 > **STATE ON 2026-10-08.** Written and measured today against the released tools: `sbs`
 > 0.13, the published v1.4.0 libraries (sbs_utils `ae2bbf4a`, LegendaryMissions
 > `b20726f`, the Open Universe engine library built 2026-10-05). Everything was run by

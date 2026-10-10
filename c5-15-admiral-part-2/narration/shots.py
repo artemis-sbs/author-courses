@@ -96,14 +96,13 @@ SHOTS = [
     {
         "id": "s06_lint",
         "title": 'Lint',
-        "frames": 390,
+        "frames": 377,
         "captions": [
             ('I save, and I run lint.', 0, 78),
-            ("It's the same three warnings as before,", 105, 197),
-            ('on the same lines.', 210, 262),
-            ('The four chapters add none.', 289, 354),
+            ('All six files are clean, as they were before.', 105, 223),
+            ('The four new chapters add no warning.', 250, 341),
         ],
-        "pauses": [0.9, 0.45, 0.9, 1.2],
+        "pauses": [0.9, 0.9, 1.2],
     },
     {
         "id": "s07_both_seats_filled",

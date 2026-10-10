@@ -11,18 +11,19 @@ s02_what_moves_it_3	Five points, or ten for the harder kind.
 s02_what_moves_it_4	Paying the levy in a hail.
 s02_what_moves_it_5	Twenty points, for a hundred credits.
 s02_what_moves_it_6	And now look at the last row.
-s02_what_moves_it_7	Finishing a step of the story does nothing.
-s02_what_moves_it_8	You can write the words.
-s02_what_moves_it_9	Lint says clean, the credits are paid,
-s02_what_moves_it_10	and the standing goes somewhere no door ever reads.
-s03_price_not_prize_0	That has a consequence, and it's the whole craft of this lecture.
-s03_price_not_prize_1	Nothing the crew does once can move standing.
-s03_price_not_prize_2	Jobs can be taken again.
-s03_price_not_prize_3	Answers can be given again.
-s03_price_not_prize_4	So you can't hand standing out as a prize.
-s03_price_not_prize_5	You can only put a price on it,
-s03_price_not_prize_6	in credits or in time.
-s03_price_not_prize_7	And you decide how much of each an evening pays.
+s02_what_moves_it_7	A step of the story can carry a deed as well.
+s02_what_moves_it_8	I put one on a lead and finished it,
+s02_what_moves_it_9	and the standing went from forty to fifty-one.
+s02_what_moves_it_10	But a step is finished once.
+s03_a_prize_and_a_price_0	That gives you two tools, and most of this lecture is the second one.
+s03_a_prize_and_a_price_1	A prize is a deed on a step.
+s03_a_prize_and_a_price_2	It's given once, on the evening you choose.
+s03_a_prize_and_a_price_3	Everything else, the crew can do again.
+s03_a_prize_and_a_price_4	Jobs can be taken again,
+s03_a_prize_and_a_price_5	and answers can be given again.
+s03_a_prize_and_a_price_6	So on those you put a price,
+s03_a_prize_and_a_price_7	in credits or in time.
+s03_a_prize_and_a_price_8	And you decide how much of each an evening pays.
 s04_a_door_that_opens_0	So here's a door, in three parts.
 s04_a_door_that_opens_1	A lead the crew can see from the very first evening.
 s04_a_door_that_opens_2	It tells them what opens it.
@@ -77,8 +78,9 @@ s08_lint_and_play_6	and I sell the Count.
 s08_lint_and_play_7	Nothing tells me what that cost.
 s08_lint_and_play_8	Back home, the good work has gone from the list.
 s08_lint_and_play_9	And the hail's down to three answers again.
-s09_close_0	So you price standing, you don't award it.
-s09_close_1	Every answer that earns it gets a cost.
-s09_close_2	And all of it lives in the ship's record,
-s09_close_3	which the save carries from week to week.
-s09_close_4	Next time, we look at the act from the crew's side of the table.
+s09_close_0	So you award standing once, on a step,
+s09_close_1	and you price the rest.
+s09_close_2	Every answer that earns it gets a cost.
+s09_close_3	And all of it lives in the ship's record,
+s09_close_4	which the save carries from week to week.
+s09_close_5	Next time, we look at the act from the crew's side of the table.

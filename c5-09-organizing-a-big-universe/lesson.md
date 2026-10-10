@@ -55,7 +55,7 @@ File: jobs.amd
 `File:` names a file in the mission folder. When the game starts, it reads that file and
 puts its records into this chapter, as if you had typed them there.
 
-Three rules, and each one is a mistake waiting for you in Step 5.
+Three rules. The first two are mistakes waiting for you in Step 8.
 
 1. **In a chapter file, every record starts with one hash.** In the main file a job is
    `### [Patrol](patrol)`, because it sits under a title and a chapter. A chapter file
@@ -63,8 +63,10 @@ Three rules, and each one is a mistake waiting for you in Step 5.
 2. **Several files go on one line, with commas.** `File: a.amd, b.amd`. A `File:` line
    for each file, one under another, works as well: both ways were played, and every
    file was read. This page uses the commas.
-3. **A chapter reads from files, or holds records. Not both.** The game allows both.
-   Lint does not: it stops recognizing the records under a chapter that has a fence.
+3. **A chapter reads from files, or holds records. Keep to one.** Both together do
+   work: the game reads the files and the records under the fence, and lint checks
+   them all. But then one chapter lives in two places, and the point of today is that
+   you know where to look.
 
 ## Step 2 - The jobs
 
@@ -145,7 +147,7 @@ The folder and the file are joined with a forward slash, `/`.
 
 Save all four files.
 
-## Step 4 - Check it, and three warnings that are wrong
+## Step 4 - Check it
 
 ```
 sbs lint MyUniverse
@@ -153,8 +155,7 @@ sbs lint MyUniverse
 
 ```
 == dialogue\deepwell.amd ==
-  [WARNING] line 12:92: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 13:65: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  clean
 == dialogue\gleaners.amd ==
   clean
 == dialogue\hollin.amd ==
@@ -162,36 +163,21 @@ sbs lint MyUniverse
 == jobs.amd ==
   clean
 == kestrel_verge.amd ==
-  [WARNING] line 218:19: `tern_ledger` waits for the signal `ledger_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+  clean
 ```
 
-Your line numbers will differ if your notes at the top of the files do. The last lines
-of that output come after Step 6, when there is one more file.
+The last lines of that output come after Step 6, when there is one more file.
 
-Lint now checks every file, and names each one. Four are `clean`. The three warnings are
-all about one thing, and all three are wrong.
+Lint now checks every file, and names each one. All five are `clean`.
 
-In Lecture 7 an answer in the Deepwell's hail sends the signal `ledger_read`, and a beat
-in the Narrative chapter waits for it. While both were in one file, lint saw the two
-ends meet. Today lint reads signals one file at a time. The answer is in
-`dialogue\deepwell.amd`, the beat is in `kestrel_verge.amd`, and lint tells each file
-that the other half is missing.
+One thing in your universe now crosses from file to file. In Lecture 7 an answer in the
+Deepwell's hail sends the signal `ledger_read`, and a beat in the Narrative chapter
+waits for it. The answer is in `dialogue\deepwell.amd` now, and the beat is still in
+`kestrel_verge.amd`.
 
-The game is not confused. It reads all the files into one universe before anything
-runs, and the chapter closes when the crew asks, as it did before.
-
-> **For this lecture, your checkpoint is these three warnings and no others.** They are
-> the price of the split, today. If you would rather have a `clean` lint, there is one
-> way: leave the Dialogue chapter whole, in the main file, and split only the Jobs.
-> Do not try the half measure of leaving the Deepwell's four records in the main file
-> under the fence. Rule 3 in Step 1 is why: lint then gives five other warnings, also
-> wrong.
-
-Because lint is noisier today, the list to check by eye matters more. Read it now, and
-again after every change to a signal:
-
-- The word after `signal` is the same in `kestrel_verge.amd` and in
-  `dialogue\deepwell.amd`.
+Lint reads the mission as one thing, as the game does. It sees the two ends meet, and
+says nothing. Misspell the word at either end and it tells you, in the file where the
+word is (Step 8 has the row).
 
 ## Step 5 - A voice from anywhere
 
@@ -289,7 +275,7 @@ Save, and lint once more. The end of its output now reads:
 == lore.amd ==
   clean
 
-6 amd + 1 mast file(s): 0 error(s), 3 warning(s)
+6 amd + 1 mast file(s): 0 error(s), 0 warning(s)
 ```
 
 ## Step 7 - Print the world
@@ -331,7 +317,7 @@ bible         6 files -> C:\Cosmos\data\missions\MyUniverse\__docs__\The Kestrel
 
 The bible is worth opening today. Under The Assay Ledger it says the beat is reached
 from The Third Colony and from Deepwell Hail. It has joined the signal across the two
-files that lint could not.
+files, as lint did.
 
 **A website.**
 
@@ -366,11 +352,11 @@ sbs site MyUniverse --emit site --profile player -o MyUniverse/handout
 ## Step 8 - What can go wrong in a split
 
 Each row below was made on purpose, one change to the finished files, then linted, then
-played. "The three" means the three warnings of Step 4, which every row has.
+played.
 
 **Mistakes lint finds**
 
-| The mistake | What the game does | What lint says, besides the three |
+| The mistake | What the game does | What lint says |
 |---|---|---|
 | `Fil: jobs.amd` | No station offers any work | A warning: "Did you mean `File`?" (`unknown-field`) |
 | The fence left off round `File: jobs.amd` | The same | An error: "the fields under `## [Jobs](jobs)` have no `---` lines round them" (`fence-not-opened`) |
@@ -382,17 +368,17 @@ played. "The three" means the three warnings of Step 4, which every row has.
 | `Speaker: sabel` in `dialogue\gleaners.amd` | No button to hail Sable | A warning: "gives its voice to `sabel`, who is not in the cast" (`dangling-speaker`). Lint does look across files for a speaker |
 | `Scene: trafic_hail` on Kestrel Traffic | The voice has nothing to say | A warning: "Scene points at `trafic_hail`, which is not a defined node" (`dangling-scene`) |
 | A curly quote or a long dash, in any of the files | Not played. Lint says the game draws a plain one in its place | A warning: "is not a plain keyboard character" (`non-ascii`) |
+| The signal's word misspelled on the beat: `Done when: signal ledger_red` | The Assay Ledger never closes, as in Lecture 7 | Three warnings. One in the main file: "waits for the signal `ledger_red`, and nothing in the mission sends it" (`unfired-signal`). And one for each of the two answers in `dialogue\deepwell.amd` that send the right word (`signal-no-route`) |
+| The word misspelled on one of the two answers | Not played | One warning, on that answer's line in `dialogue\deepwell.amd` (`signal-no-route`) |
 
-Two warnings are wrong, besides the three. `Files:` with an s works, and lint says
-"Did you mean `File`?". And a record left in the main file under a chapter that has a
-`File:` line works, and lint says it "is being read as a map".
-
-One thing looks wrong and is not: a `File:` line for each file, three lines where this
-page writes one. All three files are read, and lint says nothing more than the three.
+Three things look wrong and are not, and lint says `clean` for each. `Files:` with an s
+works. A `File:` line for each file, three lines where this page writes one, works: all
+three files are read. And a record left in the main file under a chapter that has a
+`File:` line works too (rule 3 in Step 1 is why this page does not do it).
 
 **Mistakes lint cannot see**
 
-Lint says nothing more than the three for every one of these.
+Lint says `clean` for every one of these.
 
 | The mistake | What the game does |
 |---|---|
@@ -411,7 +397,6 @@ So check these by eye:
 
 - Every name after a `File:` is a file that is there, with its folder and a forward
   slash.
-- No records under a chapter that has a `File:` fence.
 - Every record in a chapter file starts with one hash.
 - After any change in `jobs.amd`, read each job's four lines.
 
@@ -433,7 +418,7 @@ sbs run server,helm,comms -m MyUniverse map=0
    your record to speak. Where its button is, this page cannot tell you: nobody has
    seen that screen yet.
 5. Play the story from Lecture 7 as far as the Assay Office. Pay the fee. The Assay
-   Ledger closes, whatever lint said.
+   Ledger closes, with the answer in one file and the beat in another.
 
 After the game, read `mast.runtime.log`. It should be empty.
 
@@ -443,7 +428,7 @@ After the game, read `mast.runtime.log`. It should be empty.
 |---|---|
 | The game reads every file into one universe | A key is still one key across all your files. Two records with the same key in two dialogue files are still a clash |
 | A chapter file's name is yours to choose. `lore.amd` is not | Jobs, dialogue and the rest are found by the `File:` line. Lore is found by its name |
-| Lint reads a speaker across files, and a signal within one | Today, a signal sent in one file and waited for in another is three wrong warnings. Nothing else in this class crosses files that way |
+| Lint reads a speaker and a signal across files, as the game does | A signal sent in one file and waited for in another is checked at both ends. A warning about a signal is yours to fix, whichever file it is in |
 | `__docs__`, `__site__` and `handout` are made, not written | Delete them whenever you like, and make them again. Never edit them: the next run replaces them |
 | The editions are made from the files, as they are at that moment | Print after lint, not before. A document made from a broken file is a broken document |
 
@@ -454,7 +439,6 @@ After the game, read `mast.runtime.log`. It should be empty.
 | No work at any station | The Jobs chapter's `File:` line is misspelled, has no fence, or names a file that is not there |
 | No Hail button on some stations | That side's dialogue file is not on the `File:` line |
 | Lint has an error about hashes in a chapter file | A record there has three hashes. Replace All `### [` with `# [` in that file |
-| Lint has five warnings about "read as a map" | Records were left under a chapter that has a `File:` line. Move them into a chapter file |
 | A job is called Jobs | The chapter's heading was pasted into `jobs.amd` |
 | No Codex in the Library | The file is not called `lore.amd`, or it is not in the mission folder |
 | `sbs docs` made a file called `MyUniverse-prose.html` | The `--title` was left off. The folder's name is used |
@@ -464,8 +448,7 @@ After the game, read `mast.runtime.log`. It should be empty.
 
 1. Split your own universe: the jobs into one file, and the conversations into one file
    for each side.
-2. Run lint. Account for every warning. Each should be one of the wrong ones this page
-   names, or yours to fix.
+2. Run lint, and fix what it finds until every file says `clean`.
 3. Write one cast voice that any crew, anywhere, can ask for directions.
 4. Write a `lore.amd` of four pages. Leave one thing out of it on purpose, for the story
    to tell.
@@ -478,7 +461,7 @@ After the game, read `mast.runtime.log`. It should be empty.
 
 You are done when all five are true:
 
-- `sbs lint MyUniverse` gives the three warnings about `ledger_read` and nothing else.
+- `sbs lint MyUniverse` says `clean` for all six files.
 - The crew is offered the same work and the same calls as before the split.
 - The Library holds a Codex with your pages.
 - `__docs__` holds four editions with your universe's name on them.

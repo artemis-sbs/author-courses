@@ -52,18 +52,21 @@ tier 1 row was measured in Class 5 Lecture 4.)
 | Finish a Hollin job of tier 2 | +10 | The same | Yes |
 | Pay the relay levy, in the hail | +20 | 100 credits | Yes, as often as they can pay |
 | Sell the Count to the Gleaners, in the hail you write today | 40 falls to 17 | Nothing | Yes |
-| Finish a step of the story | Nothing | | |
+| Finish a step of the story that carries a deed | 40 rises to 51 | Nothing | No. A step is finished once |
 
-Read the last row twice. A step of the story cannot move standing. If you write
-`Reward: 100 credits, earns hollin honest 20` on a step in the Narrative chapter, lint
-says `clean`, the credits are paid, and the standing goes somewhere no door ever reads.
-This is Class 5 Lecture 7's rule, and for a campaign it has a consequence:
+Read the last row twice. It is the only row that happens once. A step of the story can
+carry a deed, in its `Reward:` or on a `Standing:` line (Class 5 Lecture 7), and the
+deed reaches every ship flying when the step is finished. It was measured on The Tern's
+Manifest, the lead you write in Step 3, with its reward written
+`Reward: 200 credits, earns hollin honest 20`: the ship's standing with Hollin went from
+40 to 51. That deed is not in this lecture's finished file.
 
-**Nothing the crew does once can move standing.** Jobs can be taken again. Answers can be
-given again. So you cannot give standing as a prize for evening 3. You can only put a
-price on it, in credits or in time, and decide how much of each an evening hands out.
+**So an arc has two tools: a prize and a price.** A prize is a deed on a step. It is
+given once, on the evening you choose. Everything else the crew can do again: jobs can
+be taken again, and answers can be given again. On those you put a price, in credits or
+in time, and decide how much of each an evening hands out.
 
-That is the whole craft of an arc in this game. The wage is yours to set: evening 1 pays
+Most of the craft of an arc in this game is the price. The wage is yours to set: evening 1 pays
 300 credits and evening 2 pays 350. The price is yours to set: the levy costs 100. So a
 crew can buy +20 three times a week if they want nothing else, and you know it before
 they do.
@@ -221,16 +224,14 @@ sbs lint MyUniverse
 1 amd + 1 mast file(s): 0 error(s), 0 warning(s)
 ```
 
-**If you split your universe in Class 5 Lecture 9,** two things are different for you.
-Both were measured on a split copy of this universe.
+**If you split your universe in Class 5 Lecture 9,** one thing is different for you. It
+was measured on a split copy of this universe.
 
 - A record you add to a chapter file starts with one hash, like every other record in
   that file. The records on this page are printed with three, for the main file.
-- Lint gives two warnings for every `signal` that crosses from one file to another: on
-  the answer, "emits signal ... but no `//signal/...` route was found" (`signal-no-route`),
-  and on the step, "waits for the signal ... and nothing in the mission sends it"
-  (`unfired-signal`). They are the same wrong warnings Lecture 9 showed you for
-  `ledger_read`. The game sends the signal and the step finishes. Leave them standing.
+
+Lint is the same for you: `clean`. It follows a `signal` from an answer in one file to
+the step that waits for it in another.
 
 Each row below was made on purpose, one change to the finished files, then linted, then
 played.
@@ -240,6 +241,7 @@ played.
 | The mistake | What the game does | What lint says |
 |---|---|---|
 | No `;` before the outcome: `if standing >= 40 signal manifest_seen` | The answer is never offered, at any standing | A warning: "is not a condition the game can read, so this choice is never offered ... An outcome goes after a `;`" (`unreadable-guard`) |
+| A trait misspelled in the deed: `earns hollin lier 40` | The Gleaners' respect is earned and the Compact's trust is not lost. Hollin stays at 40. A score is kept under a trait that does not exist | A warning: "`earns hollin lier 40` - `lier` is not a trait a side can value, so no side's standing moves" (`earns-unknown-trait`) |
 | The signal's word misspelled on the answer: `signal manifest_sen` | The answer is offered at 40 and can be pressed. The lead stays open, and its 200 credits are never paid | Two warnings. On the lead: "waits for the signal `manifest_seen`, and nothing in the mission sends it" (`unfired-signal`). On the answer: `signal-no-route` |
 
 **Mistakes lint cannot see**
@@ -250,15 +252,11 @@ Lint says `clean` for every one of these.
 |---|---|
 | The word after `if` misspelled: `if standng >= 40` | The answer is never offered. A crew at 40 sees three answers |
 | The `if` part left off | The answer is offered to everybody, at standing 0. The door is open on evening 1 |
-| A trait misspelled in the deed: `earns hollin lier 40` | The Gleaners' respect is earned and the Compact's trust is not lost. Hollin stays at 40. A score is kept under a trait that does not exist |
-| `Reward: 100 credits, earns hollin honest 20` on a step of the story | The credits are paid. The ship's standing does not move |
 | The lead written to start on the signal, `Starts when: signal manifest_seen`, with a `Done when:` of its own | The lead never starts. In an Open Universe mission a step starts `at once` or `revealed`, and nothing else |
 
 So check by eye:
 
 - Every guarded answer reads `) if standing >= NUMBER ; outcome`, in that order.
-- Every `earns` has a side's key, one of the fourteen trait words, and a number.
-- No step in the Narrative chapter has `earns` in its `Reward:`.
 
 ## Step 7 - Play it
 
@@ -284,7 +282,7 @@ sbs run server,helm,comms -m MyUniverse map=0
 
 | Fact | What it means for your story |
 |---|---|
-| Nothing the crew does once can move standing | You cannot award it. You price it, in credits or in work |
+| A deed on a step happens once. A job or an answer can be repeated | Award standing on a step when you want to choose the evening. Price everything that repeats, in credits or in work |
 | An answer can be given again | A deed with no cost can be pressed until the number is whatever the crew wants. Every answer that earns standing gets a `costs` |
 | The answer that opened a door is still there afterward | The crew can ask for the manifest again and be read it again. The lead pays once. Write the record so that hearing it twice makes sense |
 | An answer's `if` is read when the hail opens | A door closes the moment standing falls below its line. There is no "you had it once" |
@@ -299,7 +297,7 @@ sbs run server,helm,comms -m MyUniverse map=0
 | The answer is offered to everybody | The `if` part is missing, or it is after the `;` |
 | The answer is pressed and the lead stays open | The word after `signal` is not the word after `Done when: signal` |
 | The Tern's Manifest is not in the Quest Log | It does not say `Starts when: at once` |
-| Selling the Count does not change anything at home | The side's key or the trait after `earns` is misspelled. Lint does not see either |
+| Selling the Count does not change anything at home | The side's key or the trait after `earns` is misspelled. Run lint: it names both |
 | The standing is 0 this week | **New Game** was chosen, or the title changed, or two ships were renamed in the same week. One renamed ship keeps its standing |
 
 ## Exercise

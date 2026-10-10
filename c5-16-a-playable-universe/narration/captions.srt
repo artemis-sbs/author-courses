@@ -111,253 +111,249 @@ And the most useful part, the words.
 These are the words that have to match in two places,
 
 29
-00:01:58,409 --> 00:02:02,322
-and lint can't check any of them for me.
+00:01:58,409 --> 00:02:02,757
+and lint only checks the first of them for me.
 
 30
-00:02:03,222 --> 00:02:05,396
+00:02:03,657 --> 00:02:05,830
 So when I rename something,
 
 31
-00:02:05,846 --> 00:02:09,759
+00:02:06,280 --> 00:02:10,193
 this is my list of where else to go.
 
 32
-00:02:10,959 --> 00:02:14,002
+00:02:11,393 --> 00:02:14,437
 There are four checks before I play.
 
 33
-00:02:14,902 --> 00:02:19,685
-Lint gives the three warnings we know about, and no others.
+00:02:15,337 --> 00:02:17,946
+Lint says clean, for every file.
 
 34
-00:02:20,585 --> 00:02:22,324
+00:02:18,846 --> 00:02:20,585
 The save is gone,
 
 35
-00:02:22,774 --> 00:02:26,252
+00:02:21,035 --> 00:02:24,513
 because a run-through starts from a new game.
 
 36
-00:02:27,152 --> 00:02:30,196
+00:02:25,413 --> 00:02:28,457
 The dials say what my card says.
 
 37
-00:02:31,096 --> 00:02:34,139
+00:02:29,357 --> 00:02:32,400
 And the libraries are up to date.
 
 38
-00:02:35,339 --> 00:02:40,122
+00:02:33,600 --> 00:02:38,383
 Here we go, and I tick each row as it happens.
 
 39
-00:02:41,922 --> 00:02:45,400
+00:02:40,183 --> 00:02:43,661
 There are three leads in the Quest Log.
 
 40
-00:02:46,300 --> 00:02:50,648
+00:02:44,561 --> 00:02:48,909
 On Comms, I hail the Compact and pay the levy.
 
 41
-00:02:51,548 --> 00:02:56,330
+00:02:49,809 --> 00:02:54,591
 Now there's more work on offer, and the escort pays better,
 
 42
-00:02:56,780 --> 00:02:58,520
+00:02:55,041 --> 00:02:56,780
 so I take it.
 
 43
-00:03:00,320 --> 00:03:02,059
+00:02:58,580 --> 00:03:00,320
 On to the Tern.
 
 44
-00:03:02,959 --> 00:03:07,741
+00:03:01,220 --> 00:03:06,002
 There's her card, and there's the warning from the battles lecture.
 
 45
-00:03:08,641 --> 00:03:13,424
+00:03:06,902 --> 00:03:11,685
 The first lead is done, and a new step has appeared.
 
 46
-00:03:15,224 --> 00:03:16,963
+00:03:13,485 --> 00:03:15,224
 Now the Assay Office.
 
 47
-00:03:17,863 --> 00:03:20,907
+00:03:16,124 --> 00:03:19,167
 The escort pays out as I arrive.
 
 48
-00:03:21,807 --> 00:03:25,720
+00:03:20,067 --> 00:03:23,980
 I ask about the Tern, and pay the fee.
 
 49
-00:03:26,170 --> 00:03:27,909
+00:03:24,430 --> 00:03:26,170
 That closes the step,
 
 50
-00:03:28,359 --> 00:03:32,272
+00:03:26,620 --> 00:03:30,533
 and it tells the crew where to go next.
 
 51
-00:03:34,072 --> 00:03:36,680
+00:03:32,333 --> 00:03:34,941
 That's twelve rows, and twelve ticks.
 
 52
-00:03:37,880 --> 00:03:41,359
+00:03:36,141 --> 00:03:39,620
 And now I close the game, on purpose.
 
 53
-00:03:42,259 --> 00:03:48,346
+00:03:40,520 --> 00:03:46,607
 This is the part of an open universe that a single mission doesn't have.
 
 54
-00:03:49,246 --> 00:03:53,593
+00:03:47,507 --> 00:03:51,854
 There's the save, and I'm going to leave it alone.
 
 55
-00:03:54,793 --> 00:03:57,837
+00:03:53,054 --> 00:03:56,098
 I start it with the same line,
 
 56
-00:03:58,287 --> 00:04:03,070
+00:03:56,548 --> 00:04:01,330
 and we're back at the Assay Office, with the same credits.
 
 57
-00:04:03,970 --> 00:04:07,883
+00:04:02,230 --> 00:04:06,143
 The Quest Log is just as I left it.
 
 58
-00:04:09,683 --> 00:04:13,596
+00:04:07,943 --> 00:04:11,857
 Now for the place the Gleaners won't talk about.
 
 59
-00:04:14,496 --> 00:04:16,235
+00:04:12,757 --> 00:04:14,496
 Three cards come up.
 
 60
-00:04:16,685 --> 00:04:20,598
+00:04:14,946 --> 00:04:18,859
 The place, the guards, and the one I wrote.
 
 61
-00:04:22,398 --> 00:04:24,137
+00:04:20,659 --> 00:04:22,398
 I count eleven ships.
 
 62
-00:04:25,037 --> 00:04:28,515
+00:04:23,298 --> 00:04:26,776
 Four of them are a long way off,
 
 63
-00:04:28,965 --> 00:04:31,139
+00:04:27,226 --> 00:04:29,400
 three are by the wreck,
 
 64
-00:04:31,589 --> 00:04:35,067
+00:04:29,850 --> 00:04:33,328
 and four are right in front of me.
 
 65
-00:04:35,967 --> 00:04:39,011
+00:04:34,228 --> 00:04:37,272
 That's the battle line from last time.
 
 66
-00:04:40,811 --> 00:04:45,159
+00:04:39,072 --> 00:04:43,420
 I have to tell you something about this last row.
 
 67
-00:04:46,059 --> 00:04:48,233
+00:04:44,320 --> 00:04:46,493
 When I checked this page,
 
 68
-00:04:48,683 --> 00:04:53,030
+00:04:46,943 --> 00:04:51,291
 a script told the game the four ships were destroyed.
 
 69
-00:04:53,930 --> 00:04:56,104
+00:04:52,191 --> 00:04:54,365
 Nobody has fought this fight.
 
 70
-00:04:57,004 --> 00:05:01,787
+00:04:55,265 --> 00:05:00,048
 So this is the first time, and we'll find out together.
 
 71
-00:05:02,987 --> 00:05:06,030
+00:05:01,248 --> 00:05:04,291
 There are three things to read afterward.
 
 72
-00:05:06,930 --> 00:05:09,974
+00:05:05,191 --> 00:05:08,235
 The runtime log, which should be empty.
 
 73
-00:05:10,874 --> 00:05:13,483
+00:05:09,135 --> 00:05:11,743
 Your ticks, every one of them.
 
 74
-00:05:14,383 --> 00:05:17,861
+00:05:12,643 --> 00:05:16,122
 And your standings, which should match the page.
 
 75
-00:05:19,661 --> 00:05:22,270
+00:05:17,922 --> 00:05:20,530
 And then there's one more table,
 
 76
-00:05:22,720 --> 00:05:25,763
+00:05:20,980 --> 00:05:24,024
 the things this universe doesn't do yet.
 
 77
-00:05:26,663 --> 00:05:29,707
+00:05:24,924 --> 00:05:27,967
 An admiral's numbers can't be balanced yet.
 
 78
-00:05:30,607 --> 00:05:34,954
+00:05:28,867 --> 00:05:33,215
 A captain can't be made a rival with one line.
 
 79
-00:05:35,854 --> 00:05:38,898
-Lint has three warnings that are wrong.
+00:05:35,015 --> 00:05:37,624
+Neither of those is your mistake.
 
 80
-00:05:40,698 --> 00:05:43,307
-None of those is your mistake.
-
-81
-00:05:44,207 --> 00:05:46,815
+00:05:38,524 --> 00:05:41,133
 But a writer who knows them
 
-82
-00:05:47,265 --> 00:05:51,613
+81
+00:05:41,583 --> 00:05:45,930
 writes around them, and that's why they're on the page.
 
-83
-00:05:52,813 --> 00:05:54,552
+82
+00:05:47,130 --> 00:05:48,870
 Now it's your turn,
 
-84
-00:05:55,002 --> 00:05:58,046
+83
+00:05:49,320 --> 00:05:52,363
 and this time it really is yours.
 
-85
-00:05:58,946 --> 00:06:01,989
+84
+00:05:53,263 --> 00:05:56,307
 Plan two sittings, and write your card.
 
-86
-00:06:02,889 --> 00:06:06,802
+85
+00:05:57,207 --> 00:06:01,120
 Write down what you should see before you play,
 
-87
-00:06:07,252 --> 00:06:08,991
+86
+00:06:01,570 --> 00:06:03,309
 from your own files.
 
-88
-00:06:10,791 --> 00:06:13,400
+87
+00:06:05,109 --> 00:06:07,717
 Then give it to a crew,
 
-89
-00:06:13,850 --> 00:06:16,459
+88
+00:06:08,167 --> 00:06:10,776
 sit behind them, and don't help.
 
-90
-00:06:18,259 --> 00:06:21,737
+89
+00:06:12,576 --> 00:06:16,054
 That's a whole universe, and you wrote it.
 
-91
-00:06:22,637 --> 00:06:24,811
+90
+00:06:16,954 --> 00:06:19,128
 Well done, and thank you.

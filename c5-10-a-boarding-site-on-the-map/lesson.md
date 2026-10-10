@@ -29,7 +29,7 @@ its own.
 
 - Your `MyUniverse` mission as Lecture 9 left it. Its six `.amd` files match
   `c5-09-organizing-a-big-universe\example\`.
-- `sbs lint MyUniverse` gives the three warnings about `ledger_read`, and nothing else.
+- `sbs lint MyUniverse` says `clean` for all six files.
 - The game closed, and the save deleted:
   `C:\Cosmos\data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml`.
 - Open `story.json` in the mission folder and look for a line with the word `boarding`
@@ -239,11 +239,9 @@ sbs lint MyUniverse
 
 ```
 == customs.amd ==
-  [WARNING] line 27:42: `customs_call` emits signal `boarding_down` but no `//signal/boarding_down` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 39:85: `customs_counter` emits signal `manifest_read` but no `//signal/manifest_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  clean
 == dialogue\deepwell.amd ==
-  [WARNING] line 12:92: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 13:65: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  clean
 == dialogue\gleaners.amd ==
   clean
 == dialogue\hollin.amd ==
@@ -251,30 +249,23 @@ sbs lint MyUniverse
 == jobs.amd ==
   clean
 == kestrel_verge.amd ==
-  [WARNING] line 227:19: `tern_ledger` waits for the signal `ledger_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
-  [WARNING] line 246:19: `lead_customs` waits for the signal `manifest_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+  clean
 == lore.amd ==
   clean
 
-7 amd + 1 mast file(s): 0 error(s), 6 warning(s)
+7 amd + 1 mast file(s): 0 error(s), 0 warning(s)
 ```
 
-Seven files, and six warnings. Three are the `ledger_read` warnings from Lecture 9. The
-three new ones are wrong too, and you keep them.
+Seven files, and every one is `clean`.
 
-| The new warning | Why it is wrong |
-|---|---|
-| `boarding_down`, on the call, in `customs.amd` | The game does listen for that word. The part that listens is inside the Open Universe library, and lint does not find it there |
-| `manifest_read`, on the answer, in `customs.amd` | The same mistake as Lecture 9's: lint does not look in `kestrel_verge.amd` for the step that waits for it |
-| `manifest_read`, on the step, in `kestrel_verge.amd` | The other half of that: lint does not look in `customs.amd` for the answer that sends it |
+Lint reads the site's file with the rest of the mission. It knows `boarding_down` is the
+game's own word. And it sees that the answer in `customs.amd` sends `manifest_read` and
+the step in `kestrel_verge.amd` waits for it, as it did for `ledger_read` in Lecture 9.
 
-The step did finish when the game was played, in Step 5.
+> **For Part 1, your checkpoint is a `clean` lint for all seven files.**
 
-> **For Part 1, your checkpoint is these six warnings and no others.**
-
-Lint gives the same warnings whether those two words are spelled right or wrong. So
-check them by eye: `boarding_down` exactly, and your own word the same in both files.
-The table of mistakes is in Step 11, for both kinds of site together.
+Misspell either word and lint tells you. The table of mistakes is in Step 11, for both
+kinds of site together.
 
 ## Step 5 - Play it
 
@@ -682,11 +673,9 @@ sbs lint MyUniverse
 
 ```
 == customs.amd ==
-  [WARNING] line 27:42: `customs_call` emits signal `boarding_down` but no `//signal/boarding_down` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 39:85: `customs_counter` emits signal `manifest_read` but no `//signal/manifest_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  clean
 == dialogue\deepwell.amd ==
-  [WARNING] line 12:92: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 13:65: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  clean
 == dialogue\gleaners.amd ==
   clean
 == dialogue\hollin.amd ==
@@ -694,31 +683,22 @@ sbs lint MyUniverse
 == jobs.amd ==
   clean
 == kestrel_verge.amd ==
-  [WARNING] line 236:19: `tern_ledger` waits for the signal `ledger_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
-  [WARNING] line 255:19: `lead_customs` waits for the signal `manifest_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
-  [WARNING] line 264:19: `yard_count` waits for the signal `count_settled`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+  clean
 == lore.amd ==
   clean
 == tally_yard.amd ==
-  [WARNING] line 28:42: `yard_call` emits signal `boarding_down` but no `//signal/boarding_down` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 146:54: `yard_ledger` emits signal `count_settled` but no `//signal/count_settled` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  clean
 
-8 amd + 1 mast file(s): 0 error(s), 9 warning(s)
+8 amd + 1 mast file(s): 0 error(s), 0 warning(s)
 ```
 
-Eight files and nine warnings, and every one of the nine is wrong. Count them by kind.
+Eight files, and every one is `clean`.
 
-| Kind | How many | Which |
-|---|---|---|
-| A call's `boarding_down` | 2 | One for each site's call |
-| A site's answer and the step that waits for it | 4 | `manifest_read` twice, `count_settled` twice |
-| Lecture 9's | 3 | `ledger_read` |
-
-> **Your checkpoint is these nine warnings and no others.** Each site you add brings one
-> for its call, and two for each step of story it finishes.
+> **Your checkpoint is a `clean` lint for all eight files.**
 
 Lint does not count the two files in `ground`, but it does read them. Several rows
-below are lint reading the map.
+below are lint reading the map. A warning that comes from reading the map or the site
+is listed under the file's name with `(tiles)` after it.
 
 Each row below was made on purpose: one change to the finished files, then linted, then
 played with a shorter script than Step 12's. It docked at each site, answered the call,
@@ -728,30 +708,31 @@ looked at what was offered, and came home.
 
 | The mistake | What the game does | What lint says |
 |---|---|---|
-| The map's first line is `area: yard`, or `area: tally_yards`: not the site's key | Tally Yard is an ordinary station. Docking brings no call, and The Short Count can never be done. `mast.runtime.log` is empty | Seven more warnings. One on the Props chapter: "this file is the site `tally_yard` and puts 6 thing(s) on a map, and no .tiles file in this mission says `area: tally_yard`" (`site-no-area`). And one on each thing: "no tile area 'tally_yard' in this mission" (`tiles-unknown-area`) |
+| The map's first line is `area: yard`, or `area: tally_yards`: not the site's key | Tally Yard is an ordinary station. Docking brings no call, and The Short Count can never be done. `mast.runtime.log` has one line, written as the game starts: "universe site: the site 'tally_yard' ('tally_yard.amd') is written as a place the party walks ... and no .tiles file in this universe's folder says `area: tally_yard`. So this site does not exist" | Seven warnings. One on the Props chapter: "this file is the site `tally_yard` and puts 6 thing(s) on a map, and no .tiles file in this mission says `area: tally_yard` ... so this site will not exist" (`site-no-area`). And one on each thing: "no tile area 'tally_yard' in this mission" (`tiles-unknown-area`) |
 | The two files in `ground` are not there at all | The same | The first of those, by itself (`site-no-area`) |
 | One thing says `Area: yard` | The site works, and that thing is not on the map. `mast.runtime.log`: "'Tally house door' (yard_door) is in the area 'yard', and no .tiles file is an area with that key, so it was not placed." | "yard_door: no tile area 'yard' in this mission" (`tiles-unknown-area`) |
 | `Mark: yard_dor` | The same: no door. The log names the marks the map does have | "yard_door: no mark 'yard_dor' in tally_yard - it is never placed" (`tiles-unknown-mark`) |
 | The map says `tileset: start` | The crew member beams down onto the pad and cannot leave it. `mast.runtime.log`: "the area 'tally_yard' (tally_yard.tiles) is drawn with the tileset 'start', and no .tileset file in the mission declares one. Nothing on it can be walked." | "no start.tileset in this mission, so its kinds and what can be walked are not checked" (`tiles-unknown-tileset`) |
 | A second walked site whose door has the key `yard_door` too | The second door is not counted among the things on the ground. Tally Yard's own door is untouched | "the site `tally_yard` (tally_yard.amd) already has a prop or a person with this key. Keys are unique across ALL of a universe's site files - this one is never put on the map" (`site-key-collision`) |
-| No comma between two outcomes: `; learn the manifest signal manifest_read` | The manifest is read and Nothing to Declare stays open | Four more warnings. The one to read: "`signal manifest_read` is read as part of `learn the manifest`, so it never happens. Outcomes are separated by a comma" (`outcome-run-together`) |
-| A comma missing in `story.json`, after the `frontier` line | The game does not start | One error, shown under `story.mast`: "Expecting ',' delimiter: line 33 column 9 (char 1741). The story does not compile, so NOTHING in this mission runs until this is fixed" (`mast-compile`). And 54 warnings, most of them wrong. Fix the error first. Line 33 is a line of `story.json` |
+| No comma between two outcomes: `; learn the manifest signal manifest_read` | The manifest is read and Nothing to Declare stays open | Four warnings. The one to read: "`signal manifest_read` is read as part of `learn the manifest`, so it never happens. Outcomes are separated by a comma" (`outcome-run-together`) |
+| A comma missing in `story.json`, after the `frontier` line | The game does not start | One error, under `story.json`, and nothing else: "`story.json` cannot be read: expecting ',' delimiter (line 33, column 9). The usual cause is a comma missing from the end of the line above" (`story-json`). Lint checks nothing else until it is fixed |
+| `Site: custom` on the landmark: a key with no file | The Customs House is an ordinary station, and no call ever comes. `mast.runtime.log` has two lines. The second: "universe site: the landmark's `Site: custom` names the file 'custom.amd', and it was not found beside the universe file. This landmark has no site, so docking there does nothing." | "`Site: custom` is looked for in `custom.amd`, and there is no file of that name in this mission" (`site-file-missing`) |
+| `Site file:` naming a file that is not there | The same, and the same two lines in the log, naming that file | The same warning, naming the file on the `Site file:` line (`site-file-missing`) |
+| The text site's rooms headed `## [Scenes](scenes)` | No site, no call, and Nothing to Declare can never be done. `mast.runtime.log` has one line, which ends: "For a site of rooms and choices with no map, key its rooms `boarding` instead: `## [Scenes](boarding)`." | "this file is the site `customs`, and its rooms are under a chapter keyed `scenes` ... So this site will not exist" (`site-no-rooms`) |
+| The call's answer has no `; signal boarding_down` | The call comes. Comms gives the answer, and nothing happens: no party. `mast.runtime.log` has one line, written as the game starts: "the site 'customs' ('customs.amd') has a call in `## Hails`, and none of its answers sends a party" | "the site `customs` has a call in `Hails`, and none of its answers sends a party: no answer ends with `; signal boarding_down`" (`site-hail-no-way-down`) |
+| The answer says `; signal boarding_party` | The same, with the same line in the log | Two warnings: that one, and the misspelled word by itself (`signal-no-route`) |
+| `Done when: signal manifest_red` on the step, or the same slip on the answer | The manifest is read, the fact is learned, and Nothing to Declare stays open. No credits | Two warnings, one in each file: the answer "emits signal" a word nothing waits for (`signal-no-route`), and the step "waits for the signal" a word nothing sends (`unfired-signal`) |
+| No `For:` line on the side story | The side story is handed to nobody. The loader can still be put down. Nothing is marked Done | "`Clear the Yard` is in a section of quests that each belong to one person, and has no `For:`, so it is handed to nobody" (`story-no-for`) |
 
 **Mistakes lint cannot see**
 
-Lint gives the same nine warnings for every one of these. For the two marked with a
-star, one of the nine has a different word in it, and nothing says which word is right.
+Lint says `clean` for every one of these.
 
 | The mistake | What the game does |
 |---|---|
-| `Site: custom` on the landmark: a key with no file | The Customs House is an ordinary station, and no call ever comes. `mast.runtime.log` has one line: "AMD error: custom.amd: 'custom.amd' not found" |
-| `Site file:` naming a file that is not there | The same |
-| The text site's rooms headed `## [Scenes](scenes)` | The same: no site, no call, and Nothing to Declare can never be done. This time `mast.runtime.log` is empty |
-| The call's answer has no `; signal boarding_down`, or says `; signal boarding_party` (star) | The call comes. Comms gives the answer, and nothing happens: no party |
 | The call's chapter headed `## [Hails](hail)` | No call. The party is open the moment the ship docks. See "A site with no call" below |
-| `Done when: signal manifest_red` on the step, or the same slip on the answer (star) | The manifest is read, the fact is learned, and Nothing to Declare stays open. No credits |
 | An answer at the yard guarded by `if learned the manifest`, a fact from the Customs House | Never offered, even straight after the manifest was read |
-| `For: security`, or `For: Reyes`, or no `For:` line at all | The side story is handed to nobody. The loader can still be put down. Nothing is marked Done |
+| `For: security`, or `For: Reyes` | The side story is handed to nobody. The loader can still be put down. Nothing is marked Done |
 | `For: weapons`, and the one who goes down came from Helm | The same. It waits for somebody from Weapons |
 | No `TILE_ART:` line in `settings.yaml` | No art is loaded, and nothing says so. Everything else works |
 | `TILE_ART: frontier, stations` | The game says, once: "the tile art 'stations' is not installed, so what it draws is missing." Everything else works |
@@ -772,36 +753,31 @@ Things that look wrong and are not:
 | The walked site's rooms headed `## [Scenes](boarding)` | Works. A walked site reads both keys |
 | Three landmarks with the same `At:` | Works. All three stations are there, and both sites answer |
 
-**"Stay aboard" lasts until the crew leaves.** When Comms answered **Stay aboard**,
-docking again the same evening brought no call. After a jump to the next system and
-back, the call came again. So a crew that says no has to go away and come back. Say so
-in the clerk's words, or do not offer a way to say no.
+**"Stay aboard" lasts until the ship docks again.** When Comms answered **Stay
+aboard**, docking with the Customs House again the same evening brought the call again.
+A crew that says no can change its mind by casting off and tying up once more.
 
 **A site with no call.** Leave the `## [Hails](hails)` chapter out and there is nobody
 to ask: the party is open the moment the ship docks. That works. A crew member who
-beamed down was in the place as usual. The trouble is a crew that docks and never goes
-down. Both of these were played with nobody going down.
+beamed down was in the place as usual. And a crew that docks and never goes down loses
+nothing. Both of these were played with nobody going down.
 
-| The site with no call | Then the ship docked at the other site | After leaving the system and coming back |
+| The site with no call | The ship cast off | Then it docked at the other site |
 |---|---|---|
-| Tally Yard, the walked one | No call. The yard's visit was still open | The visit had ended. The Customs House called |
-| The Customs House, the text one | No call. The visit was still open | Still open. Still no call at the yard |
+| Tally Yard, the walked one | A few seconds later the yard's visit had ended | The Customs House called |
+| The Customs House, the text one | The visit had ended | Tally Yard called |
 
-In both, the way out was the same: one crew member went down and came home, and after
-that the other site called. So:
+The script that played those two rows set the ship's docked mark by hand, as the game
+does when a ship ties up and casts off. A call is still the kinder way: it asks the
+crew first. So give every site a `## [Hails](hails)` chapter, with one answer that
+sends the party.
 
-- Give every site a `## [Hails](hails)` chapter, with one answer that sends the party.
-- If a call never comes anywhere, look on a handheld for an open **Boarding Party**.
-  Go down, and come straight back.
+So check these by eye. They are what lint cannot see:
 
-So check these by eye:
-
-- The word after `Site:` is the first part of a file's name.
-- A text site's rooms are under `## [Scenes](boarding)`.
-- The answer that sends the party ends `; signal boarding_down`.
-- Each step's word after `signal` is the same in the site's file and in the Narrative.
-- The map's `area:`, the landmark's `Site:` and every `Area:` line are one word.
+- The call's chapter is keyed `hails`.
 - The word after `For:` is a console the crew will really have.
+- `settings.yaml` has its `TILE_ART:` line, with the two names spelled as in Step 7.
+- A fact asked for in one site was learned in that same site.
 
 ## Step 12 - Play it, and come back
 
@@ -874,32 +850,31 @@ again after a Continue.
 | Fact | What it means for your story |
 |---|---|
 | `Site:` and a key, on any station landmark | The place is a file named for the key. One site file can be used by any universe |
-| The same key on a map's `area:` line makes it walked | Take the map away and the landmark is not a walked site any more. Lint tells you, and the game does not |
+| The same key on a map's `area:` line makes it walked | Take the map away and the site does not exist at all. Lint tells you, and so does `mast.runtime.log` |
 | The call's answer needs `; signal boarding_down` | It is the only thing that sends a party. The words on the button are yours |
 | An answer's `; signal` word finishes a step that waits for the same word | A site can pay and open the next step the moment something is read or found |
 | A fact belongs to the place it was learned in | The yard cannot ask what was learned at the Customs House |
 | A text site ends when an answer with empty brackets is chosen. A walked site ends when the last of the party beams up | Give every room a way home |
-| One party at a time, in the whole game | While a visit is open, docking anywhere else brings no call |
+| One party at a time, in the whole game | While a visit is open, docking anywhere else brings no call. A visit nobody went down to ends when the ship casts off |
 | Both kinds remember | A crew cannot be paid twice, and cannot lose their place |
 
 ## What changes in later lectures
 
 This lecture is a side road. Lectures 11, 12, 13 and 16 start from Lecture 9's files,
 and were written for a universe with no sites in it. If you go on with the Customs
-House and Tally Yard in yours, four things on their pages read differently. Each
-number below was measured by adding this lecture's lines to that lecture's finished
-files and running lint.
+House and Tally Yard in yours, three things on their pages read differently. Lint was
+run on each of those lectures' finished files with this lecture's lines added, and it
+said `clean` every time.
 
 | Their page says | You will see |
 |---|---|
-| Six `.amd` files, and three warnings | Eight files, and nine warnings: the six new ones from Step 11 |
-| The `tern_ledger` warning on line 219 (Lectures 12 and 13) or line 230 (Lecture 16) | Eighteen lines further down: 237, or 248. Your two landmarks are nine lines each |
+| Lint names six `.amd` files, all `clean` | Eight files, all `clean` |
 | Three leads in the Quest Log at the start | Four. **Nothing to Declare** is the fourth |
-| Lecture 11: seven files, five warnings, and `tern_ledger` on line 227 | Nine files, eleven warnings, and line 245 |
+| Lecture 11: seven files | Nine files |
 
 And Lecture 11's own table, "What changes in later lectures", counts from six files.
-With both lectures in your universe, add this page's numbers to that one's: nine files,
-eleven warnings, twenty-seven lines, five leads.
+With both lectures in your universe, add this page's numbers to that one's: nine files
+and five leads.
 
 Two more stations stand in the home system, where every lecture starts. The later
 lectures' walks were not played again with them there. Their fights and their story
@@ -910,18 +885,18 @@ visits the sites.
 
 | What you see | Likely cause |
 |---|---|
-| Docking brings no call | In this order: the word after `Site:` names no file (`mast.runtime.log` says so). The text site's rooms are not under `## [Scenes](boarding)`. The map's `area:` is not the site's key (lint says so). Comms said **Stay aboard** earlier: jump away and come back. Or a visit is still open somewhere: see the last row |
-| Comms gives the answer and nothing happens | The answer does not end `; signal boarding_down` |
+| Docking brings no call | Run lint, then read `mast.runtime.log`: both name the first three causes. The word after `Site:` names no file. The text site's rooms are not under `## [Scenes](boarding)`. The map's `area:` is not the site's key. Or a visit is still open somewhere: see the last row |
+| Comms gives the answer and nothing happens | The answer does not end `; signal boarding_down`. Lint says so, and so does `mast.runtime.log` |
 | The party opens the moment the ship docks, with no call | The site has no `## [Hails](hails)` chapter, or its key is not `hails` |
 | Nobody has a **Boarding Party** app, or going down shows nothing | `story.json` has no line with `boarding` in it. The folder was made before the template changed. Find the line that ends `items.v1.4.0.mastlib",` and add this line under it, with its comma: `"artemis-sbs.LegendaryMissions.boarding.v1.4.0.mastlib",` |
 | The map is black, and everything else works | The two art packs are not downloaded, or `settings.yaml` has no `TILE_ART:` line. `sbs fetch "MyUniverse" --update-libs`, with the internet on, and check Step 7's three lines |
 | Part of the map is not drawn | `TILE_ART` names an art set that is not there. The line should read `TILE_ART: frontier, station` |
-| Lint has one error and dozens of warnings, straight after Step 7 | A comma in `story.json`. Compare the three lines with Step 7 |
-| The manifest is read, or the ledger closed, and the step stays open | The word after `signal` is not the same in the two files. Or the two outcomes on the answer have no comma between them |
+| Lint has one error, about `story.json`, straight after Step 7 | A comma in `story.json`. Lint gives the line. Compare the three lines with Step 7 |
+| The manifest is read, or the ledger closed, and the step stays open | The word after `signal` is not the same in the two files. Or the two outcomes on the answer have no comma between them. Lint names both |
 | The door is not on the map | Its `Area:` or its `Mark:` is misspelled. Lint says which |
-| Nobody gets Clear the Yard | Nobody came down from the console named after `For:` |
+| Nobody gets Clear the Yard | Nobody came down from the console named after `For:`, or the line is missing (lint says so) |
 | Tally Yard never calls, and lint says `site-no-area` | The first line of the `.tiles` file is not `area:` and the site's key |
-| No call comes anywhere, at any site | A visit is open that nobody is in. One crew member opens **Boarding Party** on the handheld, goes down, and comes home. Then dock again |
+| No call comes at a second site | A visit is still open at the first: somebody of its party is still down. When the last of them is back aboard, dock again |
 
 ## Exercise
 
@@ -942,7 +917,7 @@ visits the sites.
 
 You are done when all six are true:
 
-- `sbs lint MyUniverse` gives the nine warnings of Step 11, and nothing else.
+- `sbs lint MyUniverse` says `clean` for all eight files.
 - Docking with the Customs House brings a call, and one answer sends a party.
 - Reading the manifest finishes Nothing to Declare and opens The Short Count.
 - At Tally Yard the door refuses a crew member with no keycard, and opens for one who

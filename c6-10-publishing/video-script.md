@@ -1,6 +1,8 @@
 # C6-10 video script - Publishing
 
-> **STATE ON 2026-10-09.** Written and measured today against the released tools: `sbs`
+> **STATE ON 2026-10-10.** Lint and doctor re-measured 2026-10-10 on the released tool
+> `sbs` 0.14 (the doctor's count is 23 libraries for a folder with today's template
+> `story.json`; it was 21). Written 2026-10-09 against `sbs`
 > 0.13, the published v1.4.0 libraries (sbs_utils `ae2bbf4a`, LegendaryMissions
 > `b20726f`, the Open Universe engine library in `__lib__`). Lint and doctor were run on
 > the page's own files. **Nothing was sent to anybody, nothing was fetched, nothing was
@@ -25,7 +27,7 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 
 1. With the new `Description:` line the mission lints `clean`.
 2. A hyphen in that line, and a colon in it: lint's answers are in the page's table.
-3. `sbs doctor` on the folder ends with the block on the page: `1 sbslib, 21 mastlib,
+3. `sbs doctor` on the folder ends with the block on the page: `1 sbslib, 23 mastlib,
    0 media`, all libraries present, and `0 problems`.
 4. Copies of the mission under several folder names all linted and played, and all read
    and wrote one save file, named from the title.
@@ -90,8 +92,8 @@ folders with one title | are playing the same campaign, | whether you meant that
 **Screen:** `sbs lint KestrelVerge`. `sbs doctor KestrelVerge`. The folder's block.
 
 **Say:** "Then the three checks, in the usual order. ||| I run lint, and it's clean. ||
-Then I run doctor, | and the last block is your folder. ||| Twenty-one libraries, where your first
-mission had twelve. || That's the universe machinery. ||| And then the walk, on a
+Then I run doctor, | and the last block is your folder. ||| Twenty-three libraries, where your first
+mission had about a dozen. || That's the universe machinery. ||| And then the walk, on a
 deleted save. || And delete the save again when you're done. ||"
 
 ### 6. Take out what isn't the mission

@@ -1,8 +1,13 @@
 # C6-11 video script - Capstone studio
 
-> **STATE ON 2026-10-10.** Written and measured against the released tools: `sbs` 0.13,
-> the published v1.4.0 libraries (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`, the
-> Open Universe libraries of 2026-10-09, saves version 2). The whole studio was walked
+> **STATE ON 2026-10-10, evening.** Written and walked that morning against `sbs` 0.13
+> and the libraries of the day (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`, saves
+> version 2). Re-measured the same evening on the released tool `sbs` 0.14 and libraries
+> (sbs_utils `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`): lint on
+> the finished file (the one true warning, unchanged) and on its variants, and, on a
+> small test step, that a finished step still does not reveal and an answer's `reveal`
+> still does not reach a story step. The four launches were not walked again. The whole
+> studio was walked
 > by script in the game's stand-in (the mock), from a copy of the mission placed where
 > its save cannot reach a player's own: one save, four launches, with the universe file
 > changed between the first and the second exactly as the page changes it. The script

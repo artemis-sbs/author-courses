@@ -84,7 +84,7 @@ s08_the_budget_11	and that was at about a hundred and ninety ships fighting at o
 s08_the_budget_12	with no consoles connected.
 s08_the_budget_13	Nobody has measured it with a full bridge.
 s08_the_budget_14	So stay a long way under that number.
-s09_check_and_fly_it_0	Lint gives me the same three warnings as last time, and nothing new.
+s09_check_and_fly_it_0	Lint says clean, for all six files.
 s09_check_and_fly_it_1	But lint doesn't read the settings file at all,
 s09_check_and_fly_it_2	so read the checklist on the page.
 s09_check_and_fly_it_3	Now let's fly it.

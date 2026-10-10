@@ -1,6 +1,9 @@
 # C5-15 video script - The Admiral, part 2: an Admiral alongside a bridge crew
 
-> **STATE ON 2026-10-10.** Written and measured against the released tools: `sbs` 0.13,
+> **STATE ON 2026-10-10.** Written that morning; lint and every lint row of the mistake tables
+> re-measured 2026-10-10 on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`): all `clean` now. The
+> plays were not run again. Written and measured first against `sbs` 0.13,
 > the published v1.4.0 libraries (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`, the
 > two Open Universe libraries of 2026-10-09). Everything was run by script in the game's
 > stand-in (the mock), from copies of `MyUniverse` placed where their save cannot reach
@@ -28,8 +31,8 @@ The companion page is `lesson.md`; the finished `kestrel_verge.amd` is in `examp
 
 **In the mock, by script, on 2026-10-10, with the page's own files:**
 
-1. The finished file lints with the three `ledger_read` warnings, the third still on
-   line 219, and nothing else.
+1. The finished files lint `clean`, all six (re-measured that evening; three false
+   `ledger_read` warnings when this was written).
 2. The Admiral is on (`campaign`, pace `epic`, raids `off`), the Admiral console's
    condition is true, and the home system holds one worldlet, Hollin Prime. Pools 3,600
    ore, 1,200 gas, 480 crew, each able to hold 14,400.
@@ -125,10 +128,10 @@ headquarters costs. ||"
 
 ### 6. Lint
 
-**Screen:** Save. `sbs lint MyUniverse`. The same three warnings.
+**Screen:** Save. `sbs lint MyUniverse`. Six files, each one `clean`.
 
-**Say:** "I save, and I run lint. || It's the same three warnings as before, | on the
-same lines. || The four chapters add none. ||"
+**Say:** "I save, and I run lint. || All six files are clean, as they were before. ||
+The four new chapters add no warning. ||"
 
 ### 7. Both seats filled
 

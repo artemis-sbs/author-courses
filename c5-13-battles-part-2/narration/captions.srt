@@ -280,7 +280,7 @@ which is a lot for one cruiser.
 
 71
 00:05:02,298 --> 00:05:05,776
-Lint gives the same three warnings as before.
+Lint says clean, as it did last time.
 
 72
 00:05:06,676 --> 00:05:12,763

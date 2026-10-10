@@ -294,7 +294,7 @@ is done at two.]*
 
 | Fact | What it means for your story |
 |---|---|
-| A step shows one next step, and no more | `Then: reveal` takes one key. The spine of a campaign is a single line. Lecture 6 shows how to hang something beside it |
+| On the spine, a step shows one next step | A `Then:` line can reveal two, with a comma: `Then: reveal a, reveal b` opened both when it was played. Keep the spine a single line all the same, so the crew always has one next thing to do. Lecture 6 shows how to hang something beside it |
 | The open of each evening is the hook of the one before | You never write an evening from nothing. And you never write a hook without knowing what the next evening is |
 | Every key must be new | Copy an evening and forget to renumber it, and the game keeps the first record with each key and drops your copy. Nothing breaks, and the new evening is not there |
 | The pattern is yours to break | Three records is the ordinary evening. A tentpole can have five. An evening with nothing in it can have two |

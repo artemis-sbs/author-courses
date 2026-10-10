@@ -18,12 +18,12 @@ s03_learned_by_finishing_a_step_0	First, a fact from a step.
 s03_learned_by_finishing_a_step_1	This is one of my old leads, the second colony.
 s03_learned_by_finishing_a_step_2	I add one line.
 s03_learned_by_finishing_a_step_3	Then, learn, and the words.
-s03_learned_by_finishing_a_step_4	Now here's the catch, and it's a real one.
-s03_learned_by_finishing_a_step_5	A step has one then line,
-s03_learned_by_finishing_a_step_6	and it does one thing.
-s03_learned_by_finishing_a_step_7	It reveals the next step, or it teaches a fact, but not both.
-s03_learned_by_finishing_a_step_8	So a step on your spine can't teach.
-s03_learned_by_finishing_a_step_9	Use a lead that stands alone, like this one.
+s03_learned_by_finishing_a_step_4	A then line can do more than one thing.
+s03_learned_by_finishing_a_step_5	Put a comma after the first,
+s03_learned_by_finishing_a_step_6	and write the second.
+s03_learned_by_finishing_a_step_7	So a step on your spine can reveal the next step,
+s03_learned_by_finishing_a_step_8	and teach a fact as well.
+s03_learned_by_finishing_a_step_9	This lead only teaches, so one is enough.
 s04_learned_in_a_hail_0	Second, a fact from a hail.
 s04_learned_in_a_hail_1	The Gleaners get a new answer.
 s04_learned_in_a_hail_2	Ask what became of the boats.

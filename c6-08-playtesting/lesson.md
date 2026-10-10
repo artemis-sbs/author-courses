@@ -199,7 +199,8 @@ evening: `evening_01.yaml`. The game's start screen has a **New Game** choice th
 replaces the save without asking (Class 5 Lecture 2). The game keeps the campaign it
 replaced, once, in a file ending `.previous.bak` (Lecture 2). A copy made every week is
 the undo you can count on. To go back to it, close the game, and copy it over the save
-under the save's own name.
+under the save's own name. It is also the cure for a save that will not load: the game
+then refuses to start, and leaves the damaged file as it is (Lecture 2).
 
 *[Not tried: putting a copy back. What was measured is that the game reads whatever file
 has that name when it continues.]*

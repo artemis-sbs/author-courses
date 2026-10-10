@@ -1,5 +1,12 @@
 # C5-1 video script - What Open Universe is
 
+> **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
+> stand-in and by lint. Nothing ran in the real game and nobody saw a screen. The Open Universe
+> mission was read again: its `story.mast` still has no Engage or waypoint line, and the
+> lines this page quotes from `silver_reach.amd` are unchanged. Nothing on the page
+> changed and nothing was played again.
+
 > **STATE ON 2026-10-08. Read this first.**
 >
 > - **The plan called this lecture "plays Silver Reach". Today a crew cannot play it past

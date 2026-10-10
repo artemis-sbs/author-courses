@@ -41,12 +41,14 @@ s05_three_steps_of_story_6	and nothing in my files sends them,
 s05_three_steps_of_story_7	because the game does.
 s05_three_steps_of_story_8	It builds each word from a key in the ruin's file.
 s05_three_steps_of_story_9	Slab, then opened, and hollow, then taken.
-s06_lint_0	I run lint, and it has five warnings.
-s06_lint_1	Three are old friends.
-s06_lint_2	The two new ones say nothing sends my signals.
-s06_lint_3	That's wrong, in the same way the old three are wrong.
-s06_lint_4	Lint doesn't look in the ruin's file.
-s06_lint_5	So those two words are mine to check, every single time.
+s06_lint_0	I run lint, and all seven files are clean.
+s06_lint_1	Lint looked in the ruin's file.
+s06_lint_2	It found a barrier called slab,
+s06_lint_3	so it knows the game sends slab opened.
+s06_lint_4	Watch what happens if I get the word wrong.
+s06_lint_5	There's one warning, on the step that waits,
+s06_lint_6	and it says nothing sends that word.
+s06_lint_7	So I fix it, and it's clean again.
 s07_play_it_0	Let's go in, then.
 s07_play_it_1	There's a fourth lead in the quest log,
 s07_play_it_2	and I engage it.

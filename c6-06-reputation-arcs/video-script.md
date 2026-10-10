@@ -1,5 +1,14 @@
 # C6-6 video script - Reputation arcs
 
+> **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
+> stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the
+> finished file and its variants; `earns hollin lier 40` is a warning now. **One thing
+> this page taught is no longer true and was corrected:** a deed on a step of the story
+> does reach the ship (standing 40 to 51 when The Tern's Manifest carried `earns hollin
+> honest 20`). Scenes 2, 3 and 9 and Step 1 of the page were rewritten for it: a prize,
+> once, on a step; a price on everything that repeats. A split universe lints `clean` now.
+
 > **STATE ON 2026-10-09.** Written and measured today against the released tools: `sbs`
 > 0.13, the published v1.4.0 libraries (sbs_utils `ae2bbf4a`, LegendaryMissions
 > `b20726f`, the Open Universe engine library in `__lib__`). Everything was run by script
@@ -33,8 +42,10 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 5. Back home at 17: Patrol is not on the station's list, Escort is offered at 292 where
    it was 350, the greeting is the under-20 line, and the hail has three answers.
 6. A tier 2 job finished at 40 took the ship to 50. Sold at 50, the ship stood at 27.
-7. `Reward: ..., earns hollin honest 20, earns hollin generous 20` on a Narrative step:
-   credits paid, the ship's standing unchanged, the scores kept on the shared story.
+7. `Reward: 200 credits, earns hollin honest 20` on a Narrative step (The Tern's
+   Manifest), re-measured 2026-10-10 on the released libraries: credits paid, and the
+   ship's standing with Hollin 40 to 51. `Standing: hollin honest 20` on the same step
+   did the same. (When this page was first written the ship's standing did not move.)
 8. Standing is in the ship's record in the save. Re-measured 2026-10-10 on the released
    libraries: a renamed ship kept its standing and its jobs (it was 0 when this page was
    first written).
@@ -69,17 +80,18 @@ the crew to slam it on themselves. ||"
 **Say:** "First, what actually moves standing over weeks. | I measured every row. |||
 Finishing a side's job. | Five points, or ten for the harder kind. || Paying the levy in
 a hail. | Twenty points, for a hundred credits. ||| And now look at the last row. ||
-Finishing a step of the story does nothing. ||| You can write the words. | Lint says
-clean, the credits are paid, | and the standing goes somewhere no door ever reads. ||"
+A step of the story can carry a deed as well. ||| I put one on a lead and finished
+it, | and the standing went from forty to fifty-one. || But a step is finished once. ||"
 
-### 3. Price, not prize
+### 3. A prize and a price
 
 **Screen:** The bold sentence under the table.
 
-**Say:** "That has a consequence, and it's the whole craft of this lecture. ||| Nothing
-the crew does once can move standing. || Jobs can be taken again. | Answers can be given
-again. ||| So you can't hand standing out as a prize. || You can only put a price on it,
-| in credits or in time. || And you decide how much of each an evening pays. ||"
+**Say:** "That gives you two tools, and most of this lecture is the second one. ||| A
+prize is a deed on a step. || It's given once, on the evening you choose. ||| Everything
+else, the crew can do again. || Jobs can be taken again, | and answers can be given
+again. ||| So on those you put a price, | in credits or in time. || And you decide how
+much of each an evening pays. ||"
 
 ### 4. A door that opens
 
@@ -139,6 +151,6 @@ again. ||"
 
 **Screen:** The table "What you need to know about an arc".
 
-**Say:** "So you price standing, you don't award it. ||| Every answer that earns it gets
+**Say:** "So you award standing once, on a step, | and you price the rest. ||| Every answer that earns it gets
 a cost. || And all of it lives in the ship's record, | which the save carries from week to week. |||
 Next time, we look at the act from the crew's side of the table. ||"

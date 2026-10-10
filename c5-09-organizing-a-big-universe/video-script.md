@@ -1,8 +1,8 @@
 # C5-9 video script - Organizing a big universe
 
-> **STATE ON 2026-10-09.** Written and measured against the released tools: `sbs` 0.13,
-> the published v1.4.0 libraries (sbs_utils `ae2bbf4a`, LegendaryMissions `b20726f`, the
-> Open Universe engine library rebuilt 2026-10-08 from `421ff4a`). The game side was run
+> **STATE ON 2026-10-10.** Written 2026-10-09; lint re-measured 2026-10-10 on the released
+> tools: `sbs` 0.14 and the published v1.4.0 libraries (sbs_utils `ed811ecb`,
+> LegendaryMissions `cc9cd06`, Open Universe `80e9397`). The game side was run
 > by script in the game's stand-in (the mock), from a copy of the mission placed where
 > its save cannot reach a player's own. `sbs docs` and `sbs site` were run for real, on
 > the page's own files, and their output was read as text. **Nothing in this lecture has
@@ -21,15 +21,16 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 | Tool and libraries | Current: `sbs update`, then `sbs fetch "MyUniverse" --update-libs` |
 | VS Code | `MyUniverse` open, the file list showing, font size raised |
 | Browser | Ready to open a file from `MyUniverse\__docs__` and `MyUniverse\__site__` |
-| Game | Closed. Started on camera in scene 10 with `sbs run server,helm,comms -m MyUniverse map=0` |
+| Game | Closed. Started on camera in scene 9 with `sbs run server,helm,comms -m MyUniverse map=0` |
 
 ## Confirm on camera
 
 **Measured, with the page's own files:**
 
-1. Lint reads six `.amd` files and gives three warnings, all about `ledger_read`, and no
-   error. The same files with the Deepwell's call left in the main file under the fenced
-   chapter give five other warnings and not those three.
+1. Lint reads six `.amd` files and says `clean` for each: `0 error(s), 0 warning(s)`.
+   The same files with the Deepwell's call left in the main file under the fenced
+   chapter are `clean` too. The signal's word misspelled on the beat gives three
+   warnings; misspelled on one answer, one.
 2. In the mock the split universe plays with no errors and an empty `mast.runtime.log`.
    The game holds six jobs, twenty-three conversation records, two captains, one cast
    member, and the story as before.
@@ -46,12 +47,14 @@ The companion page is `lesson.md`; the finished files are in `example\`.
    Re-measured 2026-10-10 on the released libraries: three `File:` lines in the Dialogue
    chapter are all read (a Hail button at Hollin's, the Deepwell's and the Gleaners'
    stations). When this page was first written only the last was. The three
-   `ledger_read` warnings are still exactly three.
+   `ledger_read` warnings this page used to teach are gone: lint joins a signal
+   across a mission's files now. `Files:` with an s, and a record under a `File:`
+   chapter, no longer warn either.
 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 
 1. **How the crew reaches Kestrel Traffic on Comms.** The page says plainly that it
-   cannot tell the student. Find it on camera, then fix Step 9 and scene 10.
+   cannot tell the student. Find it on camera, then fix Step 9 and scene 9.
 2. The Library on the handheld with a chapter called Codex, and how two hashes look
    there.
 3. The four editions in a browser, and printed.
@@ -106,31 +109,21 @@ side. || That's a habit, not a rule. ||| And here's rule two. || Three files, on
 with commas. ||| You'll also see a line for each file, one under another. || That
 works as well, | and the game reads every one of them. ||"
 
-### 5. Three warnings that are wrong
+### 5. Check it
 
-**Screen:** `sbs lint MyUniverse`. Six file names, three warnings. Highlight
-`ledger_read` in each.
+**Screen:** `sbs lint MyUniverse`. Five file names, each with `clean` under it. Then
+`ledger_read` highlighted in `dialogue\deepwell.amd` and in `kestrel_verge.amd`, side by
+side.
 
-**Say:** "Now lint, and it's not clean. || Three warnings, and they're all about one
-word. ||| Remember the signal from Lecture Seven. || An answer sends it, and a story
-beat waits for it. || Those two are in different files now, | and today, lint reads
-signals one file at a time. ||| So it tells each file the other half is missing, and it
-isn't. || The game reads everything into one universe before it runs. ||| I'd rather
-show you this than hide it. || For this lecture, done means these three and no others.
-||"
+**Say:** "Now we run lint. || It names every file, | and every one of them is clean. |||
+Remember the signal from Lecture Seven. || An answer sends it, and a story beat waits
+for it. || Those two are in different files now. ||| Lint reads the mission as one
+thing, the way the game does, | so it sees the two ends meet. || Misspell the word at
+either end, and it tells you. ||| And then there's rule three. || A chapter reads from files, or it
+holds records. || Both together do work, | but then one chapter lives in two places. ||
+So keep to one. ||"
 
-### 6. Don't do it by halves
-
-**Screen:** The note in Step 4 on the page. Then, briefly, the Deepwell records pasted
-back under the fenced chapter and lint's five other warnings.
-
-**Say:** "You might think, I'll leave the miners' call in the main file, next to the
-beat. || That's rule three, and it doesn't help. ||| A chapter reads from files, or it
-holds records. || Do both, and the game's happy, | but lint gets five different
-warnings, also wrong. ||| So it's all in, or all out. || If you really want a clean
-lint, | leave the dialogue chapter whole and split only the jobs. ||"
-
-### 7. A voice from anywhere
+### 6. A voice from anywhere
 
 **Screen:** Add the Lifeforms chapter and Kestrel Traffic. Then the three records at the
 end of `dialogue\hollin.amd`.
@@ -141,7 +134,7 @@ color, | and a scene, which is the record that speaks for it. ||| The scene goes
 dialogue file, like any other. || Notice there are no guards. || The cast keeps no
 standing, | so use them for what a crew should always be able to find out. ||"
 
-### 8. Lore
+### 7. Lore
 
 **Screen:** New file `lore.amd`. Type the four pages. Highlight that there are no
 fences.
@@ -151,7 +144,7 @@ this one. || A heading is a page, | and the words under it are what the crew rea
 The crew's handheld has a Library, | and this file becomes a chapter in it. ||| Put in
 what somebody who lives here would know. || Keep the secrets of your story out. ||"
 
-### 9. Print the world
+### 8. Print the world
 
 **Screen:** `sbs docs MyUniverse --title "The Kestrel Verge" --lens all`. Open the prose
 edition, then the screenplay, then the bible at The Assay Ledger. Then `sbs site
@@ -165,7 +158,7 @@ here, across the two files. ||| Then there's the website. || One page for each f
 box, | and every answer is a link to where it goes. || Zip the folder and send it to
 whoever's writing with you. ||"
 
-### 10. Still the same game
+### 9. Still the same game
 
 **Screen:** `sbs run server,helm,comms -m MyUniverse map=0`. Comms on Hollin Compact:
 the same buttons. Pay the levy. The handheld: Library, Codex.
@@ -173,14 +166,14 @@ the same buttons. Pay the levy. The handheld: Library, Codex.
 **Say:** "And the game is the same game. || There's the same station, with the same
 buttons. || The levy comes from one file now, and the jobs from another. ||| Here's
 the Library, with my pages in it. ||| So, a last word about lint. || After a split,
-it's noisier, | and it misses a couple of things it used to catch. || The list on the
-page is longer today for that reason. ||"
+it misses a couple of things it used to catch, | like a file name that isn't there. ||
+The list on the page is longer today for that reason. ||"
 
-### 11. Your turn
+### 10. Your turn
 
 **Screen:** The exercise on the companion page.
 
-**Say:** "Now it's your turn. || Split your universe, and account for every warning
-lint gives you. || Write a voice anyone can ask for directions, | and four pages of
+**Say:** "Now it's your turn. || Split your universe, and run lint until every file
+says clean. || Write a voice anyone can ask for directions, | and four pages of
 lore. ||| Then print the screenplay, and read one conversation out loud. || Change a
 line because of what you heard. ||| Next time, the crew gets off the ship. ||"

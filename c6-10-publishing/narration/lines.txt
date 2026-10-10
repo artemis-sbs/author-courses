@@ -33,7 +33,7 @@ s05_three_checks_0	Then the three checks, in the usual order.
 s05_three_checks_1	I run lint, and it's clean.
 s05_three_checks_2	Then I run doctor,
 s05_three_checks_3	and the last block is your folder.
-s05_three_checks_4	Twenty-one libraries, where your first mission had twelve.
+s05_three_checks_4	Twenty-three libraries, where your first mission had about a dozen.
 s05_three_checks_5	That's the universe machinery.
 s05_three_checks_6	And then the walk, on a deleted save.
 s05_three_checks_7	And delete the save again when you're done.

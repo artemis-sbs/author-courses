@@ -1,6 +1,9 @@
 # C5-13 video script - Battles, part 2: a battle that waits for the story
 
-> **STATE ON 2026-10-09.** Written and measured against the released tools: `sbs` 0.13,
+> **STATE ON 2026-10-10.** Written 2026-10-09; lint and every lint row of the mistake tables
+> re-measured 2026-10-10 on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`): all `clean` now. The
+> plays were not run again. Written and measured first against `sbs` 0.13,
 > the published v1.4.0 libraries (sbs_utils `4941820e`, LegendaryMissions `b20726f`, the
 > Open Universe engine library built 2026-10-08). Everything was run by script in the
 > game's stand-in (the mock), from a copy of the mission placed where its save cannot
@@ -25,7 +28,8 @@ The companion page is `lesson.md`; the finished `story.mast` is in `example\`.
 
 **In the mock, by script, on 2026-10-09, with the page's own files:**
 
-1. Lint gives the three `ledger_read` warnings and nothing else. The mission plays with
+1. Lint says `clean` for all six files (re-measured 2026-10-10; three false
+   `ledger_read` warnings when this was written). The mission plays with
    no errors (115 labels run) and an empty `mast.runtime.log`.
 2. Arriving at -4, -3 at the start, with the goal hidden: seven hostile ships (four
    Gleaners, three guards), no battle line, no card of ours.
@@ -141,11 +145,11 @@ Mine comes to eleven or twelve ships, | which is a lot for one cruiser. ||"
 
 ### 8. Check, and play it
 
-**Screen:** `sbs lint MyUniverse`: the same three warnings. Then
+**Screen:** `sbs lint MyUniverse`: six files, each one `clean`. Then
 `sbs run server,helm,comms -m MyUniverse map=0`. The Tern, the Assay Office hail, then
 Engage What the Gleaners Keep: three cards. Leave, come back.
 
-**Say:** "Lint gives the same three warnings as before. || And once again, it can't see
+**Say:** "Lint says clean, as it did last time. || And once again, it can't see
 most of what goes wrong on this card, | so use the list on the page. ||| Now let's
 play the story. || The Tern first, and then the ledger. | And then the place the
 Gleaners won't talk about. ||| There are three cards. | The place, the guards, and

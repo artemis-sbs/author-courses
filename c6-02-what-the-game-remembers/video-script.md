@@ -1,8 +1,14 @@
 # C6-2 video script - What the game remembers
 
-> **STATE ON 2026-10-10.** Written and measured against the released tools: `sbs` 0.13,
-> the published v1.4.0 libraries (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`, the
-> Open Universe libraries of 2026-10-09, saves version 2). Everything was run by script
+> **STATE ON 2026-10-10, evening.** Written that morning against `sbs` 0.13 and the
+> libraries of the day (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`, saves version
+> 2). Re-measured the same evening on the released tool `sbs` 0.14 and libraries
+> (sbs_utils `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`): lint on
+> the finished file and on all 17 variants, and two plays of a step with two `Then:`
+> actions (two lines; one line with a comma). Both now reveal AND teach. A save filled
+> with nonsense was Continued once: the game did not start, the file was unchanged, and
+> a copy ending `.unreadable.bak` was beside it (a row under "If something goes wrong").
+> The other plays were not run again. Everything was run by script
 > in the game's stand-in (the mock), from copies of the mission placed where their save
 > cannot reach a player's own. A script pressed the Comms buttons by their text and sent
 > the Quest Log's Engage. **Nothing in this lecture has been run on a real console, and
@@ -49,7 +55,9 @@ The companion page is `lesson.md`; the finished file is in `example\`.
    `universe_save_the_kestrel_verge_1.yaml.previous.bak`, the size of the old campaign.
 8. After a `Win:` step was finished and the game started again: one card titled
    Campaign won, the game not over, the ship able to jump.
-9. Step 5's tables: 17 one-change variants linted, 8 of them played.
+9. Step 5's tables: 17 one-change variants linted (again on the evening's tool), 8 of
+   them played. On the evening's tool `if learnt`, `if knows` and a guard with no curly
+   brackets are warnings, and two `Then:` actions are `clean` and both happen.
 
 **Read in the game's guide, not run:** a hail nobody answered does not call again;
 ordinary loot in a ruin returns; a ship arrives at the edge of its system.
@@ -89,10 +97,10 @@ belongs to the whole game, | and it doesn't move anybody's standing. ||"
 **Screen:** `kestrel_verge.amd`, The Second Colony. Add the `Then: learn` line.
 
 **Say:** "First, a fact from a step. || This is one of my old leads, the second colony.
-|| I add one line. | Then, learn, and the words. ||| Now here's the catch, and it's a
-real one. || A step has one then line, | and it does one thing. || It reveals the next
-step, or it teaches a fact, but not both. ||| So a step on your spine can't teach. || Use
-a lead that stands alone, like this one. ||"
+|| I add one line. | Then, learn, and the words. ||| A then line can do more than one
+thing. || Put a comma after the first, | and write the second. || So a step on your
+spine can reveal the next step, | and teach a fact as well. ||| This lead only teaches,
+so one is enough. ||"
 
 ### 4. Learned in a hail
 

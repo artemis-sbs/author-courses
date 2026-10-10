@@ -24,8 +24,7 @@ two landmarks.
 
 - Your `MyUniverse` mission as Lecture 9 left it. Its six `.amd` files match
   `c5-09-organizing-a-big-universe\example\`.
-- `sbs lint MyUniverse` gives the three warnings about `ledger_read` from Lecture 9, and
-  nothing else.
+- `sbs lint MyUniverse` says `clean` for all six files.
 - The game closed, and the save deleted:
   `C:\Cosmos\data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml`.
 
@@ -292,8 +291,7 @@ sbs lint MyUniverse
 
 ```
 == dialogue\deepwell.amd ==
-  [WARNING] line 12:92: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 13:65: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  clean
 == dialogue\gleaners.amd ==
   clean
 == dialogue\hollin.amd ==
@@ -301,15 +299,14 @@ sbs lint MyUniverse
 == jobs.amd ==
   clean
 == kestrel_verge.amd ==
-  [WARNING] line 219:19: `tern_ledger` waits for the signal `ledger_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+  clean
 == lore.amd ==
   clean
 
-6 amd + 1 mast file(s): 0 error(s), 3 warning(s)
+6 amd + 1 mast file(s): 0 error(s), 0 warning(s)
 ```
 
-Those are the three wrong warnings from Lecture 9, and nothing new. That is today's
-`clean`.
+Six files, all `clean`.
 
 Lint does not read `settings.yaml` at all. Nothing you do to line 53 changes what lint
 says.
@@ -328,7 +325,7 @@ played.
 
 **Mistakes lint cannot see**
 
-Lint gives the same three warnings and nothing else for every one of these.
+Lint says `clean` for every one of these.
 
 | The mistake | What the game does |
 |---|---|
@@ -428,7 +425,7 @@ sbs run server,helm,comms -m MyUniverse map=0
 
 You are done when all five are true:
 
-- `sbs lint MyUniverse` gives the three `ledger_read` warnings and nothing else.
+- `sbs lint MyUniverse` says `clean` for all six files.
 - `mast.runtime.log` is empty after a play.
 - A landmark with `Guards:` and a tier shows the Threat card and the number of ships you
   chose.

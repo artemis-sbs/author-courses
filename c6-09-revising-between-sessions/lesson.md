@@ -279,7 +279,7 @@ These were changed in the lab between the same launches.
 | Change | What the continued game showed |
 |---|---|
 | The ship renamed in `settings.yaml`, Artemis to Kittiwake | Kittiwake had Artemis's standing and her Escort. The game's report: "ship 'Kittiwake' continues the saved record of 'Artemis' (the only unmatched ship and record on side tsn)" |
-| The Narrative chapter moved to a file of its own, `story.amd`, with a `File:` line left behind (Class 5 Lecture 9) | Every step had the state it had before the move. Lint gained the wrong warnings Class 5 Lecture 9 describes, about signals that cross files |
+| The Narrative chapter moved to a file of its own, `story.amd`, with a `File:` line left behind (Class 5 Lecture 9) | Every step had the state it had before the move. Lint was `clean` for both files: it follows a signal from one file to the other |
 | The title changed, in all four places in `story.mast`, to The Kestrel Verge II | A new campaign: 500 credits, standing 0, nothing done, in a new file with the new title in its name. The old file was not touched, and the old campaign was still in it |
 
 That last row was measured in slot 1, where the new file was

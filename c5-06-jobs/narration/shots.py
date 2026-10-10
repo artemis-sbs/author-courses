@@ -60,7 +60,7 @@ SHOTS = [
     {
         "id": "s04_a_reward_that_costs_somethin",
         "title": 'A reward that costs something',
-        "frames": 1639,
+        "frames": 1691,
         "captions": [
             ("Salvage is the Gleaners' job.", 0, 65),
             ('Its ending is, recover two tech,', 92, 170),
@@ -74,7 +74,7 @@ SHOTS = [
             ('and they think a little less of the crew.', 1143, 1261),
             ('And mind that comma.', 1315, 1367),
             ('Leave it out, and the credits are paid,', 1381, 1485),
-            ('the deed is dropped, and lint says nothing.', 1498, 1603),
+            ('the deed is dropped, and lint gives you a warning about it.', 1498, 1655),
         ],
         "pauses": [0.9, 0.45, 1.8, 0.9, 0.45, 0.9, 1.8, 0.9, 0.45, 1.8, 0.45, 0.45, 1.2],
     },

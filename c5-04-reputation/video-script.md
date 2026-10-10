@@ -1,5 +1,15 @@
 # C5-4 video script - Reputation
 
+> **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
+> stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the
+> finished file and on the one-change variants. Five rows that lint could not see are
+> warnings now and moved to the first table of Step 5: a trait misspelled in `Values:`,
+> `Values:` with no numbers, a side misspelled after `earns`, a deed with no number, and a
+> guard with no curly brackets. `earns ... and ...` gained a second warning. A side with
+> no `Values:` line was played again: as the page says. The six dial lines still draw
+> their warning, and it is still wrong.
+
 > **STATE ON 2026-10-08.** Written and measured today against the released tools: `sbs`
 > 0.13, the published v1.4.0 libraries (sbs_utils `ae2bbf4a`, LegendaryMissions
 > `b20726f`, the Open Universe engine library built 2026-10-05). Everything was run by

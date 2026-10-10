@@ -1,6 +1,9 @@
 # C5-16 video script - Capstone: a playable universe
 
-> **STATE ON 2026-10-09.** Written and measured against the released tools: `sbs` 0.13,
+> **STATE ON 2026-10-10.** Written 2026-10-09; lint and every lint row of the mistake tables
+> re-measured 2026-10-10 on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`): all `clean` now. The
+> plays were not run again. Written and measured first against `sbs` 0.13,
 > the published v1.4.0 libraries (sbs_utils `4941820e`, LegendaryMissions `b20726f`, the
 > Open Universe engine library built 2026-10-08). The whole session on the page was
 > walked by script in the game's stand-in (the mock), in two runs with the save kept
@@ -30,8 +33,8 @@ The companion page is `lesson.md`; the finished `kestrel_verge.amd` is in `examp
 
 **In the mock, by script, on 2026-10-09, with the page's own files:**
 
-1. With the session card added, lint gives the three `ledger_read` warnings (the third
-   now on line 230) and nothing else.
+1. With the session card added, lint says `clean` for all six files (re-measured
+   2026-10-10; three false `ledger_read` warnings when this was written).
 2. First sitting, a new game: every "You should see" of rows 1 to 12, as text the game
    was asked to send. Credits 500, 400, 700, 750. Standing with Hollin 20 after the
    levy and 25 after the escort; with Deepwell 20 after the fee. 142 labels run, an
@@ -89,16 +92,16 @@ the save between the mystery and the fight, | so they leave knowing where to go 
 note, so the game doesn't read these. | They're there for people. ||| Who the game is for, and
 the three dials from the battles lecture. || The budget for my worst system, | and then the two
 sittings. ||| And the most useful part, the words. || These are the words that have to
-match in two places, | and lint can't check any of them for me. || So when I rename
+match in two places, | and lint only checks the first of them for me. || So when I rename
 something, | this is my list of where else to go. ||"
 
 ### 4. Before you play
 
-**Screen:** `sbs lint MyUniverse`: three warnings. The saves folder, with no save in
+**Screen:** `sbs lint MyUniverse`: six files, each one `clean`. The saves folder, with no save in
 it. `settings.yaml` line 53. The two card lines in `story.mast`.
 
-**Say:** "There are four checks before I play. || Lint gives the three warnings we know
-about, and no others. || The save is gone, | because a run-through starts from a new
+**Say:** "There are four checks before I play. || Lint says clean, for every
+file. || The save is gone, | because a run-through starts from a new
 game. || The dials say what my card says. || And the libraries are up to date. ||"
 
 ### 5. The first sitting
@@ -146,8 +149,8 @@ the page.
 **Say:** "There are three things to read afterward. || The runtime log, which should be
 empty. || Your ticks, every one of them. || And your standings, which should match the page. ||| And then
 there's one more table, | the things this universe doesn't do yet. || An admiral's
-numbers can't be balanced yet. || A captain can't be made a rival with one line. || Lint
-has three warnings that are wrong. ||| None of those is your mistake. || But a writer
+numbers can't be balanced yet. || A captain can't be made a rival with one line. |||
+Neither of those is your mistake. || But a writer
 who knows them | writes around them, and that's why they're on the page. ||"
 
 ### 9. Your turn

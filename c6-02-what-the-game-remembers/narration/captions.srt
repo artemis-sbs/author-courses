@@ -80,284 +80,284 @@ Then, learn, and the words.
 
 21
 00:01:24,778 --> 00:01:28,691
-Now here's the catch, and it's a real one.
+A then line can do more than one thing.
 
 22
 00:01:29,591 --> 00:01:32,200
-A step has one then line,
+Put a comma after the first,
 
 23
-00:01:32,650 --> 00:01:34,824
-and it does one thing.
+00:01:32,650 --> 00:01:34,389
+and write the second.
 
 24
-00:01:35,724 --> 00:01:41,376
-It reveals the next step, or it teaches a fact, but not both.
+00:01:35,289 --> 00:01:40,072
+So a step on your spine can reveal the next step,
 
 25
-00:01:43,176 --> 00:01:46,654
-So a step on your spine can't teach.
+00:01:40,522 --> 00:01:43,130
+and teach a fact as well.
 
 26
-00:01:47,554 --> 00:01:51,467
-Use a lead that stands alone, like this one.
+00:01:44,930 --> 00:01:48,409
+This lead only teaches, so one is enough.
 
 27
-00:01:52,667 --> 00:01:55,276
+00:01:49,609 --> 00:01:52,217
 Second, a fact from a hail.
 
 28
-00:01:56,176 --> 00:01:58,785
+00:01:53,117 --> 00:01:55,726
 The Gleaners get a new answer.
 
 29
-00:01:59,235 --> 00:02:01,843
+00:01:56,176 --> 00:01:58,785
 Ask what became of the boats.
 
 30
-00:02:03,643 --> 00:02:08,426
+00:02:00,585 --> 00:02:05,367
 After the semicolon, where a cost or a deed would go,
 
 31
-00:02:08,876 --> 00:02:11,485
+00:02:05,817 --> 00:02:08,426
 I write learn, and the fact.
 
 32
-00:02:13,285 --> 00:02:16,328
+00:02:10,226 --> 00:02:13,270
 And the answer needs somewhere to lead,
 
 33
-00:02:16,778 --> 00:02:21,561
+00:02:13,720 --> 00:02:18,502
 so I add their reply at the end of the file.
 
 34
-00:02:22,761 --> 00:02:24,500
+00:02:19,702 --> 00:02:21,441
 Now the Compact asks.
 
 35
-00:02:25,400 --> 00:02:28,878
+00:02:22,341 --> 00:02:25,820
 A new answer, report what the Gleaners said.
 
 36
-00:02:29,328 --> 00:02:33,241
+00:02:26,270 --> 00:02:30,183
 And after it, if learned, and the same words.
 
 37
-00:02:35,041 --> 00:02:39,824
+00:02:31,983 --> 00:02:36,765
 A crew that never asked the Gleaners never sees this answer.
 
 38
-00:02:41,624 --> 00:02:43,798
+00:02:38,565 --> 00:02:40,739
 The reply has two lines.
 
 39
-00:02:44,698 --> 00:02:49,046
+00:02:41,639 --> 00:02:45,987
 One for a crew that's been to the assay office,
 
 40
-00:02:49,496 --> 00:02:52,539
+00:02:46,437 --> 00:02:49,480
 and one for a crew that hasn't.
 
 41
-00:02:53,439 --> 00:02:55,613
+00:02:50,380 --> 00:02:52,554
 I guard both of them,
 
 42
-00:02:56,063 --> 00:03:00,411
+00:02:53,004 --> 00:02:57,352
 because a line with no guard can always be said.
 
 43
-00:03:02,211 --> 00:03:04,820
+00:02:59,152 --> 00:03:01,761
 I save, and lint says clean.
 
 44
-00:03:05,720 --> 00:03:07,893
+00:03:02,661 --> 00:03:04,835
 And lint does read facts.
 
 45
-00:03:08,343 --> 00:03:11,387
+00:03:05,285 --> 00:03:08,328
 Misspell one, and it tells you which.
 
 46
-00:03:12,587 --> 00:03:14,326
+00:03:09,528 --> 00:03:11,267
 Let's play it, then.
 
 47
-00:03:15,226 --> 00:03:18,704
+00:03:12,167 --> 00:03:15,646
 I pay the levy and take a job,
 
 48
-00:03:19,154 --> 00:03:24,372
+00:03:16,096 --> 00:03:21,313
 then I go to the breaking yard and ask about the boats.
 
 49
-00:03:26,172 --> 00:03:27,911
+00:03:23,113 --> 00:03:24,852
 Now I go home.
 
 50
-00:03:28,811 --> 00:03:30,550
+00:03:25,752 --> 00:03:27,491
 There's the new answer,
 
 51
-00:03:31,000 --> 00:03:34,478
+00:03:27,941 --> 00:03:31,420
 and the Compact gives me the first line.
 
 52
-00:03:36,278 --> 00:03:38,452
+00:03:33,220 --> 00:03:35,393
 Out to the second colony.
 
 53
-00:03:39,352 --> 00:03:42,830
+00:03:36,293 --> 00:03:39,772
 Nothing on the screen says I've learned anything.
 
 54
-00:03:43,280 --> 00:03:47,193
+00:03:40,222 --> 00:03:44,135
 A fact is silent until something asks for it.
 
 55
-00:03:48,993 --> 00:03:52,037
+00:03:45,935 --> 00:03:48,978
 Home once more, and I report again.
 
 56
-00:03:52,937 --> 00:03:55,546
+00:03:49,878 --> 00:03:52,487
 And now it's the second line.
 
 57
-00:03:56,746 --> 00:04:00,224
+00:03:53,687 --> 00:03:57,165
 Now I close the game, all of it,
 
 58
-00:04:00,674 --> 00:04:02,848
+00:03:57,615 --> 00:03:59,789
 and I start it again.
 
 59
-00:04:04,648 --> 00:04:06,387
+00:04:01,589 --> 00:04:03,328
 The answer's still there,
 
 60
-00:04:06,837 --> 00:04:10,315
+00:04:03,778 --> 00:04:07,257
 and the line is still the second one.
 
 61
-00:04:11,215 --> 00:04:13,824
+00:04:08,157 --> 00:04:10,765
 The crew still knows both facts.
 
 62
-00:04:15,624 --> 00:04:18,233
+00:04:12,565 --> 00:04:15,174
 Same system, same credits, same standing.
 
 63
-00:04:19,433 --> 00:04:21,172
+00:04:16,374 --> 00:04:18,113
 Here's where it's kept.
 
 64
-00:04:22,072 --> 00:04:25,115
+00:04:19,013 --> 00:04:22,057
 The last five lines of the save
 
 65
-00:04:25,565 --> 00:04:27,739
+00:04:22,507 --> 00:04:24,680
 are what the crew knows.
 
 66
-00:04:29,539 --> 00:04:33,017
+00:04:26,480 --> 00:04:29,959
 And look at a step of the story.
 
 67
-00:04:33,917 --> 00:04:36,091
+00:04:30,859 --> 00:04:33,033
 A key, and a state.
 
 68
-00:04:36,541 --> 00:04:38,715
+00:04:33,483 --> 00:04:35,657
 No title, and no text.
 
 69
-00:04:40,515 --> 00:04:43,993
+00:04:37,457 --> 00:04:40,935
 I search for the name of my campaign,
 
 70
-00:04:44,443 --> 00:04:46,617
+00:04:41,385 --> 00:04:43,559
 and it isn't in here.
 
 71
-00:04:48,417 --> 00:04:51,026
+00:04:45,359 --> 00:04:47,967
 So the save isn't a spoiler.
 
 72
-00:04:51,926 --> 00:04:55,839
+00:04:48,867 --> 00:04:52,780
 And when I change a step's words between evenings,
 
 73
-00:04:56,289 --> 00:04:58,898
+00:04:53,230 --> 00:04:55,839
 the crew gets the new words.
 
 74
-00:05:00,098 --> 00:05:02,272
+00:04:57,039 --> 00:04:59,213
 There are two more things.
 
 75
-00:05:03,172 --> 00:05:08,389
+00:05:00,113 --> 00:05:05,330
 The number at the end of the save's name is its slot,
 
 76
-00:05:08,839 --> 00:05:10,578
+00:05:05,780 --> 00:05:07,520
 and there are six.
 
 77
-00:05:12,378 --> 00:05:16,726
+00:05:09,320 --> 00:05:13,667
 Each slot is its own campaign, in its own file.
 
 78
-00:05:17,626 --> 00:05:20,670
+00:05:14,567 --> 00:05:17,611
 So two tables can play one universe,
 
 79
-00:05:21,120 --> 00:05:25,467
+00:05:18,061 --> 00:05:22,409
 and you can keep a slot for your own walks.
 
 80
-00:05:27,267 --> 00:05:31,615
+00:05:24,209 --> 00:05:28,557
 And a campaign that's been won isn't a dead save.
 
 81
-00:05:32,515 --> 00:05:36,863
+00:05:29,457 --> 00:05:33,804
 Continue it, and the crew gets one card saying so.
 
 82
-00:05:37,763 --> 00:05:39,502
+00:05:34,704 --> 00:05:36,443
 Then they fly on.
 
 83
-00:05:40,702 --> 00:05:45,050
+00:05:37,643 --> 00:05:41,991
 The whole list of what's kept is on the page,
 
 84
-00:05:45,500 --> 00:05:48,543
+00:05:42,441 --> 00:05:45,485
 and every row of it was measured.
 
 85
-00:05:50,343 --> 00:05:52,083
+00:05:47,285 --> 00:05:49,024
 Now it's your turn.
 
 86
-00:05:52,983 --> 00:05:56,461
+00:05:49,924 --> 00:05:53,402
 Write one fact the crew learns by asking,
 
 87
-00:05:56,911 --> 00:05:59,954
+00:05:53,852 --> 00:05:56,896
 and one they learn by going somewhere.
 
 88
-00:06:01,754 --> 00:06:04,363
+00:05:58,696 --> 00:06:01,304
 Put an answer behind the first,
 
 89
-00:06:04,813 --> 00:06:08,726
+00:06:01,754 --> 00:06:05,667
 at a station they can always get back to.
 
 90
-00:06:09,626 --> 00:06:12,235
+00:06:06,567 --> 00:06:09,176
 Then stop the game, come back,
 
 91
-00:06:12,685 --> 00:06:14,859
+00:06:09,626 --> 00:06:11,800
 and check they still know.

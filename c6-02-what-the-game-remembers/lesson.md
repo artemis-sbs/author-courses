@@ -80,10 +80,11 @@ Then: learn the assay office buys salvage
 The Deepwell Assembly keeps its books at (3, 1). Go and be counted.
 ```
 
-**A step has one `Then:` line, and it does one thing.** It reveals the next step, or it
-teaches a fact. It cannot do both. So a step on your spine, which needs its
-`Then: reveal`, cannot also teach. Teach from a lead that stands by itself, like this
-one, or from an answer in a hail. Step 5 shows what lint says when you forget.
+**`Then:` can do more than one thing.** Put a comma between them, as you do after the
+`;` on an answer: `Then: reveal lead_tern, learn the assay office buys salvage`. Or
+write a second `Then:` line under the first. Either way both happen, in the order you
+wrote them. So a step on your spine can keep its `Then: reveal` and teach a fact as
+well. This lead only teaches, so it has one.
 
 ## Step 3 - A fact learned in a hail
 
@@ -165,31 +166,30 @@ the finished file, then linted, then played where the row says what the game doe
 | No `;` in front of `learn` | Not played | Two warnings: the one above, and "neither a condition (`if ...`) nor an outcome (after a `;`), so it is ignored" (`choice-tail-ignored`) |
 | `; learns the gleaners broke a boat` | Not played | Two warnings: the one above, and "`learns` is not an outcome verb" (`unknown-outcome-verb`) |
 | `; learn`, with no fact after it | Not played | Two warnings: the one above, and "`learn` names no fact, so nothing is recorded" (`learn-nothing`) |
-| A second `Then:` line in one fence: `Then: reveal lead_tern` and `Then: learn ...` | The last `Then:` wins. The fact was learned, and The Third Colony, which the first line should have revealed, stayed hidden | A warning: "`Then:` is written more than once in this record, and only the last one counts" (`repeated-then`) |
-| Both on one line with a comma: `Then: reveal lead_tern, learn the assay office buys salvage` | Not played | Three warnings: "Then reveals `lead_tern,`, and no record has that key" (`dangling-reveal`), and the fact is reported as never learned, twice (`guard-learned-unknown`) |
 | `Then: learns the assay office buys salvage` | Not played | "`learns` is not a `Then:` verb ... `Then:` takes reveal or signal or learn" (`unknown-then-verb`), and three more that follow from it |
 | `%{not learned the assay office buys salvage}` for the second line | Not played | A warning: "`and`, `or` and `not` are read as part of the name ... As written this line is never spoken" (`guard-joined`). Write `< 1` |
 | A reputation trait bent into a fact: `; earns gleaners boat 1` and `if boat >= 1` | The score is kept, under the Gleaners. The Compact's answer asks about the Compact, finds nothing, and is never offered | A warning: "`boat` is not a trait a side can value, so no side's standing moves" (`earns-unknown-trait`) |
+| `if learnt the gleaners broke a boat` | The answer is never offered, to anybody | A warning: "asks about the fact `the gleaners broke a boat` with the word `learnt`, and the game knows only `learned` ... As written this choice is never offered" (`guard-learned-word`) |
+| `if knows the gleaners broke a boat` | The same | The same warning, about `knows` (`guard-learned-word`) |
+| The curly brackets left off: `%learned the assay office buys salvage Entered.` | No guard. The Compact said the words out loud, to a crew that had not been to the Assay Office: "learned the assay office buys salvage Entered. And the Assay Office buys what the Gleaners break ..." | A warning: "has no curly brackets round it, so it is not a condition: the words `learned the assay office buys salvage` are spoken aloud, to everybody" (`guard-no-braces`) |
 
-**Mistakes lint cannot see**
+**A mistake lint cannot see**
 
-Lint says `clean` for every one of these.
+Lint says `clean` for this one.
 
 | The mistake | What the game does |
 |---|---|
-| `if learnt the gleaners broke a boat` | The answer is never offered, to anybody |
-| `if knows the gleaners broke a boat` | The same |
 | The second line of The Report with no guard: `% Entered. One boat ...` | A crew that knows only the first fact hears it, as it should. For a crew that knows both, two lines can now be said. Class 5 Lecture 4 measured what the game does then: it picks one by chance. That part was not played again here |
-| The curly brackets left off: `%learned the assay office buys salvage Entered.` | No guard. The Compact said the words out loud, to a crew that had not been to the Assay Office: "learned the assay office buys salvage Entered. And the Assay Office buys what the Gleaners break ..." |
 
-One thing that looks wrong and is not:
+Three things that look wrong and are not. Lint says `clean` for each:
 
 | You wrote | What the game does |
 |---|---|
 | `if learned The Gleaners Broke A Boat`, with capitals | Works. The answer was offered after the crew learned the fact as you wrote it, in small letters |
+| A second `Then:` line in one fence: `Then: reveal lead_tern` and, under it, `Then: learn the assay office buys salvage` | Both happen. On arrival The Third Colony was revealed and the fact was learned |
+| Both on one line with a comma: `Then: reveal lead_tern, learn the assay office buys salvage` | The same: revealed, and learned |
 
-So check by eye: the word after `if` is `learned`, every guarded line has its curly
-brackets, and a guarded line has a partner guarded the other way.
+So check by eye: a guarded line has a partner guarded the other way.
 
 ## Step 6 - Play, stop, and come back
 
@@ -379,7 +379,7 @@ Game**.
 | A fact is known or it is not | There is no "how much". For a number, use standing or credits |
 | A fact is the whole game's | It is saved once, at the end of the file, and not under a ship. The game's guide says the same: what one crew learns, every crew knows |
 | A fact is not unlearned | Lint's list of the words an answer can use has `learn` in it and nothing that takes a fact back. A door opened by a fact stays open |
-| One `Then:` line, one thing | A step reveals or it teaches. A spine step reveals |
+| `Then:` takes several things, with commas | A step can reveal the next one and teach a fact. A spine step can do both |
 | The save has no story text in it | It is safe to show a host, and your rewrites reach a campaign in progress |
 | A slot is a campaign | Two tables, two slots. And one for your own walks |
 
@@ -391,14 +391,14 @@ Game**.
 | The Compact says the first-visit line after the crew has been to the Assay Office | The `Then: learn` line is not in The Second Colony's fence, or its words differ from the guard's |
 | The Compact sometimes says one line and sometimes the other | One of the two lines in The Report has no guard |
 | The Compact says the words `learned the assay office buys salvage` out loud | The curly brackets are missing from that line |
-| Lint: "`Then:` is written more than once" | The step already had a `Then:` line. Take the fact to an answer in a hail |
 | The second start is a new game | The save was deleted, or the title changed, or the slot is not the one you played in |
+| The game does not start, and the start screen says the saved game could not be loaded | The save file is damaged. This was measured with a save filled with nonsense: on Continue the game did not start, the file was byte for byte the same afterward, and a copy of it was beside it with `.unreadable.bak` on the end of its name. Put a good copy back under the save's own name (Lecture 8 has you keep one). Nobody has seen that screen, and New Game on the same slot, which the game's notes say still works, was not tried for this page |
 | There is no Save Slot dial | Step 9, the last paragraph |
 
 ## Exercise
 
 1. Write one fact of your own that the crew learns in a hail, and one they learn by
-   finishing a lead that is not on your spine.
+   finishing a step.
 2. Put an answer behind the first fact, at a station the crew can always return to.
 3. Give that answer's record two lines, guarded on the second fact both ways.
 4. Misspell the fact in one place, run lint, and read the warning. Put it right.
@@ -415,7 +415,7 @@ You are done when all five are true:
 - An answer is offered only after the crew has learned a fact.
 - A line changes when the crew has learned another.
 - After Continue, both are still as they were.
-- You can say, without looking, why a step on the spine cannot teach a fact.
+- You can say, without looking, the two places a crew can learn a fact.
 
 ## Next
 

@@ -121,13 +121,14 @@ The report ends with a block for your folder, and a count:
 
 ```
 KestrelVerge
-  ok  story.json  1 sbslib, 21 mastlib, 0 media
+  ok  story.json  1 sbslib, 23 mastlib, 0 media
   ok  libraries   all declared libraries present
   ok  art         0 baked, 0 not yet drawn, 0 half-baked in mission art
 ```
 
-`21 mastlib` is the libraries a universe runs on. One of them is the Open Universe
-machinery. Your Class 1 mission had twelve. Your count line may differ by one or two.
+`23 mastlib` is the libraries a universe made from today's template runs on. Two of
+them are the Open Universe's own. Your Class 1 mission had about a dozen. Your count
+may differ by one or two, and an older folder has fewer.
 Its last words must be `0 problems`.
 
 Then the walk, from Lecture 8, on a deleted save. And delete the save again afterward.

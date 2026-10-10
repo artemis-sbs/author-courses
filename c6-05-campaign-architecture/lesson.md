@@ -281,7 +281,6 @@ of these four was played.
 |---|---|
 | Two steps reveal the same record: Three of Five says `Then: reveal s05_go`, and so does Four of Five | A warning on Four of Five: "waits to be revealed, and nothing reveals it" (`never-revealed`). Evening 4 has been skipped |
 | A step reveals the evening after next: Four of Five says `Then: reveal act1_close` | The same warning, on Five of Five |
-| Two `Then:` lines on one step | A warning: "`Then:` is written more than once in this record, and only the last one counts" (`repeated-then`) |
 
 **A mistake lint cannot see**
 
@@ -289,8 +288,12 @@ of these four was played.
 |---|---|
 | A stub with no `Done when:` line | `clean`. Nothing can finish the step, so the act stops there |
 
+One thing looks wrong and is not: two `Then:` lines on one step. Lint says `clean`,
+and both are done, in order (Lecture 2 played it). On the spine, one step reveals one
+next step.
+
 So check by eye: every step of the spine has a `Done when:` line and, except the act's
-ending, exactly one `Then:` line.
+ending, a `Then: reveal` line.
 
 ## Step 7 - Walk the act
 
@@ -314,7 +317,7 @@ sbs run server,helm,science -m MyUniverse map=0
 
 | Fact | What it means for your story |
 |---|---|
-| A step shows one next step | The spine is one line from evening 1 to evening 20. A campaign that branches is two campaigns, and you write both |
+| On the spine, a step shows one next step | The spine is one line from evening 1 to evening 20. A campaign that branches is two campaigns, and you write both |
 | A stub can be played | Write the whole act as stubs first, then fill them in. The crew can never fall off the end of a half-written evening |
 | A record added between evenings appears | You can write Act Two while the crew plays Act One |
 | A `Win:` is spent the first time | One per campaign, on the last step, written last |

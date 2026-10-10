@@ -1,5 +1,13 @@
 # C5-14 video script - The Admiral, part 1: the game from above
 
+> **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
+> stand-in and by lint. Nothing ran in the real game and nobody saw a screen. The lab was
+> rebuilt from the released Open Universe folder. Lint on it untouched, on the finished
+> file and on all 51 one-change variants: every result as printed, with the same two
+> warnings that are not the student's. Nothing on the page changed and nothing was played
+> again.
+
 > **STATE ON 2026-10-09.** Written and measured against the released tools: `sbs` 0.13,
 > the published v1.4.0 libraries (sbs_utils `4941820e`, LegendaryMissions `b20726f`, the
 > two Open Universe libraries built 2026-10-08). **Re-measured 2026-10-10 on the

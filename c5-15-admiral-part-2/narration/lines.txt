@@ -46,9 +46,8 @@ s05_an_honest_number_8	So for now, the ladder is cheap and the tanks are huge.
 s05_an_honest_number_9	Don't balance anything yet.
 s05_an_honest_number_10	Just never start with less than a headquarters costs.
 s06_lint_0	I save, and I run lint.
-s06_lint_1	It's the same three warnings as before,
-s06_lint_2	on the same lines.
-s06_lint_3	The four chapters add none.
+s06_lint_1	All six files are clean, as they were before.
+s06_lint_2	The four new chapters add no warning.
 s07_both_seats_filled_0	Now let's play it with both seats filled.
 s07_both_seats_filled_1	The admiral sees one world at home, and it's mine.
 s07_both_seats_filled_2	I build a headquarters.

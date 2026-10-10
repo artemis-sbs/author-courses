@@ -37,7 +37,7 @@ s04_a_reward_that_costs_somethin_8	But the farmers hear who's been stripping wre
 s04_a_reward_that_costs_somethin_9	and they think a little less of the crew.
 s04_a_reward_that_costs_somethin_10	And mind that comma.
 s04_a_reward_that_costs_somethin_11	Leave it out, and the credits are paid,
-s04_a_reward_that_costs_somethin_12	the deed is dropped, and lint says nothing.
+s04_a_reward_that_costs_somethin_12	the deed is dropped, and lint gives you a warning about it.
 s05_three_more_jobs_0	Three more jobs, quickly.
 s05_three_more_jobs_1	A survey, which ends when Science scans a dead ship.
 s05_three_more_jobs_2	A run home, against the clock.

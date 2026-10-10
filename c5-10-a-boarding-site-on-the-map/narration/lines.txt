@@ -36,12 +36,12 @@ s04_a_fact_and_a_step_of_story_7	That word is mine.
 s04_a_fact_and_a_step_of_story_8	Over in the universe file, I add a step of story
 s04_a_fact_and_a_step_of_story_9	that's done when it hears that same word.
 s04_a_fact_and_a_step_of_story_10	That's how a place finishes a step.
-s05_lint_and_play_0	Lint has six warnings now.
-s05_lint_and_play_1	Three are old friends from last time.
-s05_lint_and_play_2	The three new ones are wrong in the same way.
-s05_lint_and_play_3	Lint can't see the game listening for boarding down,
-s05_lint_and_play_4	and it doesn't join a signal across two files.
-s05_lint_and_play_5	So I count them, and I keep them.
+s05_lint_and_play_0	Lint first, and it's clean.
+s05_lint_and_play_1	There are seven files now,
+s05_lint_and_play_2	and it read the new one with the rest.
+s05_lint_and_play_3	It knows boarding down is the game's own word.
+s05_lint_and_play_4	And it found my signal at both ends,
+s05_lint_and_play_5	the answer in one file and the step in the other.
 s05_lint_and_play_6	Now let's dock with it.
 s05_lint_and_play_7	A call comes in from the Customs House.
 s05_lint_and_play_8	Comms answers, and sends a party.
@@ -79,12 +79,11 @@ s07_the_map_and_its_file_13	Keep to that, and two places can never share a key.
 s08_the_landmark_the_step_and_li_0	One more landmark, with its one line.
 s08_the_landmark_the_step_and_li_1	One more step of story,
 s08_the_landmark_the_step_and_li_2	opened by the first one.
-s08_the_landmark_the_step_and_li_3	And lint says nine.
-s08_the_landmark_the_step_and_li_4	That's two for the calls,
-s08_the_landmark_the_step_and_li_5	four for the two steps,
-s08_the_landmark_the_step_and_li_6	and the three old ones.
-s08_the_landmark_the_step_and_li_7	Nine is today's clean.
-s08_the_landmark_the_step_and_li_8	If you see a tenth, that one's real.
+s08_the_landmark_the_step_and_li_3	And lint says clean, for all eight files.
+s08_the_landmark_the_step_and_li_4	It reads the map as well.
+s08_the_landmark_the_step_and_li_5	Change the map's first line to some other word,
+s08_the_landmark_the_step_and_li_6	and lint tells you the site will not exist.
+s08_the_landmark_the_step_and_li_7	The game's log says the same.
 s09_walk_it_0	So we dock with the yard,
 s09_walk_it_1	and the call comes.
 s09_walk_it_2	I go down from Weapons,
@@ -114,9 +113,10 @@ s11_an_honest_word_and_your_turn_1	When I checked this page, a script did all of
 s11_an_honest_word_and_your_turn_2	and nobody was watching a screen.
 s11_an_honest_word_and_your_turn_3	And always give a site a call.
 s11_an_honest_word_and_your_turn_4	A place with no call opens the moment you dock,
-s11_an_honest_word_and_your_turn_5	and that can leave a visit hanging open.
-s11_an_honest_word_and_your_turn_6	It's on the page, with the way out.
-s11_an_honest_word_and_your_turn_7	Now it's your turn.
-s11_an_honest_word_and_your_turn_8	Rename the customs house,
-s11_an_honest_word_and_your_turn_9	and give it a fifth room.
-s11_an_honest_word_and_your_turn_10	Then walk the yard as far as the ledger.
+s11_an_honest_word_and_your_turn_5	and nobody asked the crew first.
+s11_an_honest_word_and_your_turn_6	If they cast off without going down,
+s11_an_honest_word_and_your_turn_7	that visit just ends.
+s11_an_honest_word_and_your_turn_8	Now it's your turn.
+s11_an_honest_word_and_your_turn_9	Rename the customs house,
+s11_an_honest_word_and_your_turn_10	and give it a fifth room.
+s11_an_honest_word_and_your_turn_11	Then walk the yard as far as the ledger.

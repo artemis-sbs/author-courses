@@ -1,5 +1,12 @@
 # C6-4 video script - The episode, your repeatable unit
 
+> **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
+> `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
+> stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the
+> finished file and its variants: every result as printed. One row of the last table
+> changed: a `Then:` line can reveal two steps with a comma (played on Lecture 2's file).
+> Nothing else was played again.
+
 > **STATE ON 2026-10-09.** Written and measured today against the released tools: `sbs`
 > 0.13, the published v1.4.0 libraries (sbs_utils `ae2bbf4a`, LegendaryMissions
 > `b20726f`, the Open Universe engine library in `__lib__`). Everything was run by script

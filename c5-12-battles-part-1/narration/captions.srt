@@ -343,61 +343,61 @@ Nobody has measured it with a full bridge.
 So stay a long way under that number.
 
 87
-00:06:17,672 --> 00:06:23,324
-Lint gives me the same three warnings as last time, and nothing new.
+00:06:17,672 --> 00:06:20,715
+Lint says clean, for all six files.
 
 88
-00:06:24,224 --> 00:06:28,137
+00:06:21,615 --> 00:06:25,528
 But lint doesn't read the settings file at all,
 
 89
-00:06:28,587 --> 00:06:31,630
+00:06:25,978 --> 00:06:29,022
 so read the checklist on the page.
 
 90
-00:06:33,430 --> 00:06:35,170
+00:06:30,822 --> 00:06:32,561
 Now let's fly it.
 
 91
-00:06:36,070 --> 00:06:38,678
+00:06:33,461 --> 00:06:36,070
 First we go to the Tern,
 
 92
-00:06:39,128 --> 00:06:42,607
+00:06:36,520 --> 00:06:39,998
 and there's her card, and then the warning.
 
 93
-00:06:43,507 --> 00:06:45,680
+00:06:40,898 --> 00:06:43,072
 And then the Gleaners' home.
 
 94
-00:06:46,580 --> 00:06:49,189
+00:06:43,972 --> 00:06:46,580
 This is what close looks like.
 
 95
-00:06:50,389 --> 00:06:52,128
+00:06:47,780 --> 00:06:49,520
 Now it's your turn.
 
 96
-00:06:53,028 --> 00:06:57,811
+00:06:50,420 --> 00:06:55,202
 Decide who your game is for, and set Difficulty to match.
 
 97
-00:06:58,711 --> 00:07:01,320
+00:06:56,102 --> 00:06:58,711
 List every system your story visits,
 
 98
-00:07:01,770 --> 00:07:05,248
+00:06:59,161 --> 00:07:02,639
 and count the three sources for each one.
 
 99
-00:07:06,148 --> 00:07:10,496
+00:07:03,539 --> 00:07:07,887
 Then write your budget at the top of your file.
 
 100
-00:07:12,296 --> 00:07:15,339
+00:07:09,687 --> 00:07:12,730
 Next time, we stage a battle ourselves,
 
 101
-00:07:15,789 --> 00:07:20,137
+00:07:13,180 --> 00:07:17,528
 at one place, at the moment the story gets there.

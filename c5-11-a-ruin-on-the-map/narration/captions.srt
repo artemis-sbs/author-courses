@@ -171,193 +171,201 @@ It builds each word from a key in the ruin's file.
 Slab, then opened, and hollow, then taken.
 
 44
-00:02:51,222 --> 00:02:54,700
-I run lint, and it has five warnings.
+00:02:51,222 --> 00:02:55,135
+I run lint, and all seven files are clean.
 
 45
-00:02:55,600 --> 00:02:57,339
-Three are old friends.
+00:02:56,935 --> 00:02:59,543
+Lint looked in the ruin's file.
 
 46
-00:02:59,139 --> 00:03:03,052
-The two new ones say nothing sends my signals.
+00:03:00,443 --> 00:03:03,052
+It found a barrier called slab,
 
 47
-00:03:03,952 --> 00:03:08,735
-That's wrong, in the same way the old three are wrong.
+00:03:03,502 --> 00:03:06,980
+so it knows the game sends slab opened.
 
 48
-00:03:09,635 --> 00:03:12,678
-Lint doesn't look in the ruin's file.
+00:03:08,780 --> 00:03:12,693
+Watch what happens if I get the word wrong.
 
 49
-00:03:14,478 --> 00:03:19,261
-So those two words are mine to check, every single time.
+00:03:13,593 --> 00:03:17,072
+There's one warning, on the step that waits,
 
 50
-00:03:20,461 --> 00:03:22,200
-Let's go in, then.
+00:03:17,522 --> 00:03:20,565
+and it says nothing sends that word.
 
 51
-00:03:23,100 --> 00:03:26,578
-There's a fourth lead in the quest log,
+00:03:21,465 --> 00:03:24,943
+So I fix it, and it's clean again.
 
 52
-00:03:27,028 --> 00:03:28,767
-and I engage it.
+00:03:26,143 --> 00:03:27,883
+Let's go in, then.
 
 53
-00:03:29,667 --> 00:03:31,407
-The Hollow is charted,
+00:03:28,783 --> 00:03:32,261
+There's a fourth lead in the quest log,
 
 54
-00:03:31,857 --> 00:03:34,030
-and the next step appears.
+00:03:32,711 --> 00:03:34,450
+and I engage it.
 
 55
-00:03:35,830 --> 00:03:39,743
-I bring the ship up to the way in.
+00:03:35,350 --> 00:03:37,089
+The Hollow is charted,
 
 56
-00:03:40,643 --> 00:03:44,557
-And now a handheld has something new on it.
+00:03:37,539 --> 00:03:39,713
+and the next step appears.
 
 57
-00:03:45,007 --> 00:03:46,746
-It says suit up.
+00:03:41,513 --> 00:03:45,426
+I bring the ship up to the way in.
 
 58
-00:03:47,646 --> 00:03:49,385
-So out I go.
+00:03:46,326 --> 00:03:50,239
+And now a handheld has something new on it.
 
 59
-00:03:50,285 --> 00:03:52,459
-The suit knows two places,
+00:03:50,689 --> 00:03:52,428
+It says suit up.
 
 60
-00:03:52,909 --> 00:03:55,517
-the gallery door and the niche.
+00:03:53,328 --> 00:03:55,067
+So out I go.
 
 61
-00:03:57,317 --> 00:04:00,796
-At the door, the slab is a target.
+00:03:55,967 --> 00:03:58,141
+The suit knows two places,
 
 62
-00:04:01,696 --> 00:04:05,174
-I cut it, and that takes twelve seconds.
+00:03:58,591 --> 00:04:01,200
+the gallery door and the niche.
 
 63
-00:04:06,074 --> 00:04:08,683
-The step is done, and paid.
+00:04:03,000 --> 00:04:06,478
+At the door, the slab is a target.
 
 64
-00:04:09,583 --> 00:04:11,757
-Then on to the niche.
+00:04:07,378 --> 00:04:10,857
+I cut it, and that takes twelve seconds.
 
 65
-00:04:12,657 --> 00:04:14,830
-The bowl comes with me,
+00:04:11,757 --> 00:04:14,365
+The step is done, and paid.
 
 66
-00:04:15,280 --> 00:04:17,454
-and that's the last step.
+00:04:15,265 --> 00:04:17,439
+Then on to the niche.
 
 67
-00:04:18,654 --> 00:04:23,002
-I have to be honest about what you just saw.
+00:04:18,339 --> 00:04:20,513
+The bowl comes with me,
 
 68
-00:04:23,902 --> 00:04:28,685
-When I checked this page, a script flew all of it,
+00:04:20,963 --> 00:04:23,137
+and that's the last step.
 
 69
-00:04:29,135 --> 00:04:31,743
-and nobody was watching a screen.
+00:04:24,337 --> 00:04:28,685
+I have to be honest about what you just saw.
 
 70
-00:04:33,543 --> 00:04:36,587
-And the exosuit has one known fault.
+00:04:29,585 --> 00:04:34,367
+When I checked this page, a script flew all of it,
 
 71
-00:04:37,487 --> 00:04:42,270
-A console can close the first time it meets one mid-game.
+00:04:34,817 --> 00:04:37,426
+and nobody was watching a screen.
 
 72
-00:04:43,170 --> 00:04:46,213
-It's reported, and it isn't your file.
+00:04:39,226 --> 00:04:42,270
+And the exosuit has one known fault.
 
 73
-00:04:46,663 --> 00:04:50,141
-The way round it is on the page.
+00:04:43,170 --> 00:04:47,952
+A console can close the first time it meets one mid-game.
 
 74
-00:04:51,341 --> 00:04:55,689
-Now the part that makes a ruin fit a campaign.
+00:04:48,852 --> 00:04:51,896
+It's reported, and it isn't your file.
 
 75
-00:04:57,489 --> 00:05:00,533
-I go home, and I come back.
+00:04:52,346 --> 00:04:55,824
+The way round it is on the page.
 
 76
-00:05:01,433 --> 00:05:04,041
-The game rebuilt the whole place.
+00:04:57,024 --> 00:05:01,372
+Now the part that makes a ruin fit a campaign.
 
 77
-00:05:04,491 --> 00:05:06,665
-And the slab's still cut.
+00:05:03,172 --> 00:05:06,215
+I go home, and I come back.
 
 78
-00:05:07,565 --> 00:05:09,304
-The bowl's still gone,
+00:05:07,115 --> 00:05:09,724
+The game rebuilt the whole place.
 
 79
-00:05:09,754 --> 00:05:11,928
-and nobody paid me twice.
+00:05:10,174 --> 00:05:12,348
+And the slab's still cut.
 
 80
-00:05:13,728 --> 00:05:16,772
-Now I close the game, and continue,
+00:05:13,248 --> 00:05:14,987
+The bowl's still gone,
 
 81
-00:05:17,222 --> 00:05:19,396
-and it's the same again.
+00:05:15,437 --> 00:05:17,611
+and nobody paid me twice.
 
 82
-00:05:21,196 --> 00:05:24,239
-And here it is in the save.
+00:05:19,411 --> 00:05:22,454
+Now I close the game, and continue,
 
 83
-00:05:24,689 --> 00:05:28,602
-The ruin, what was opened, and what was taken.
+00:05:22,904 --> 00:05:25,078
+and it's the same again.
 
 84
-00:05:29,802 --> 00:05:32,411
-One note before you go on.
+00:05:26,878 --> 00:05:29,922
+And here it is in the save.
 
 85
-00:05:33,311 --> 00:05:38,093
-The battle lectures were written for a universe with no ruin.
+00:05:30,372 --> 00:05:34,285
+The ruin, what was opened, and what was taken.
 
 86
-00:05:38,993 --> 00:05:42,037
-So three small things read differently there,
+00:05:35,485 --> 00:05:38,093
+One note before you go on.
 
 87
-00:05:42,487 --> 00:05:45,096
-and they're listed on the page.
+00:05:38,993 --> 00:05:43,776
+The battle lectures were written for a universe with no ruin.
 
 88
-00:05:46,896 --> 00:05:48,635
-Now it's your turn.
+00:05:44,676 --> 00:05:47,720
+So three small things read differently there,
 
 89
-00:05:49,535 --> 00:05:53,883
-Give The Hollow your own name and your own words.
+00:05:48,170 --> 00:05:50,778
+and they're listed on the page.
 
 90
-00:05:54,783 --> 00:05:56,957
-Play it to the bowl.
+00:05:52,578 --> 00:05:54,317
+Now it's your turn.
 
 91
-00:05:57,407 --> 00:06:01,320
+00:05:55,217 --> 00:05:59,565
+Give The Hollow your own name and your own words.
+
+92
+00:06:00,465 --> 00:06:02,639
+Play it to the bowl.
+
+93
+00:06:03,089 --> 00:06:07,002
 Go home, come back, and look at that slab.

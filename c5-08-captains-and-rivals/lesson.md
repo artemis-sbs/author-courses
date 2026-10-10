@@ -248,10 +248,11 @@ played.
 | `## [Captains](people)` | No captains. No station has a button to hail one | A warning on every line of every captain: "this record is being read as a hostile because of where it sits" (`unknown-field`) |
 | A captain with two hashes | That captain is lost, and every captain under them | A warning on each of their lines: "this record is being read as a map" (`unknown-field`) |
 | `Speaker: sabel` on her hail | No button to hail her | A warning: "gives its voice to `sabel`, who is not in the cast" (`dangling-speaker`) |
-| A captain with the same key as a side: `### [Sable Orrin](gleaners)` | Her button is there, and it opens the side's hail. Her own answers are never seen | The same warning, on each of her records that still says `Speaker: sable` (`dangling-speaker`) |
+| A captain with the same key as a side: `### [Sable Orrin](gleaners)` | Her button is there, and it opens the side's hail. Her own answers are never seen | The same warning, on each of her records that still says `Speaker: sable` (`dangling-speaker`). And one on each deed that still says `earns sable`: "`sable` is not a side in this mission" (`earns-unknown-side`) |
+| `Side: gleaner`, misspelled | The captain still works: her button, her greetings and her answers were all there | A warning: "`Side: gleaner` - `gleaner` is not a side in this mission", with the keys you did declare (`dangling-side`) |
 | `when` for `if` on an answer: `(sable_tip) when standing >= 20` | The answer is offered to everybody, a rival too | A warning: "neither a condition (`if ...`) nor an outcome (after a `;`), so it is ignored" (`choice-tail-ignored`) |
 | Two comparisons in one guard: `if standing >= 20 and credits >= 100` | The answer is never offered | Two warnings: "not a condition the game can read, so this choice is never offered" (`unreadable-guard`, `guard-joined`) |
-| The guard after the outcomes: `; costs 100 credits, earns sable honest 20, earns sable by-the-book 20 if standing < 40` | The answer is offered to everybody, and the last deed is lost: paying the toll gives a standing of 11, where it should give 20 | A warning: "the `if` is after the `;`, so it is read as part of `earns`" (`guard-after-outcome`) |
+| The guard after the outcomes: `; costs 100 credits, earns sable honest 20, earns sable by-the-book 20 if standing < 40` | The answer is offered to everybody, and the last deed is lost: paying the toll gives a standing of 11, where it should give 20 | Two warnings: "the `if` is after the `;`, so it is read as part of `earns`" (`guard-after-outcome`), and "is not a trait a side can value" about the words it swallowed (`earns-unknown-trait`) |
 
 **Mistakes lint cannot see**
 
@@ -261,7 +262,7 @@ Lint says `clean` for every one of these.
 |---|---|
 | No `Roams:` line | No button anywhere. The captain cannot be reached |
 | `Roams:` a system with no station: `Roams: -4, -3` | The same |
-| No `Values:` line | The ship's standing with the captain never moves from 0. No friend's answer, no rival's greeting |
+| No `Values:` line on a captain who has a `Side:` | The captain is read against her side's `Values:`. Sable's side values `fearsome` and `resourceful`, so the deeds this page writes for her, in `honest` and `by-the-book`, left the standing at 0: no friend's answer, no rival's greeting. A deed of `earns sable fearsome 35` moved it to 35, and the friend's answer appeared |
 | A deed with a trait the captain does not value: `earns sable fearsome 20` | The same: standing does not move |
 | The side's key in a captain's deed: `earns gleaners honest 20` | The deed goes to the side. The ship's standing with Sable stays at 0, and its standing with the Gleaners moves, here down by 8 |
 | The side's key after `Speaker:` on her hail: `Speaker: gleaners` | No button to hail her |
@@ -271,8 +272,8 @@ Lint says `clean` for every one of these.
 | `Flies: Torgoth` on a captain | Nothing. A captain has no ship |
 | A third greeting, `%{standing >= 20}`, above the plain one | A friend is given either greeting, at random |
 
-Two more behave better than you might fear. `Side: gleaner`, misspelled, leaves the
-captain working. And `Roams: -3 -2`, with no comma, is read as you meant it.
+One more behaves better than you might fear. `Roams: -3 -2`, with no comma, is read as
+you meant it.
 
 So check these by eye:
 
@@ -333,7 +334,7 @@ and `sable` are there beside your sides.
 |---|---|
 | No button to hail a captain | The Captains chapter's key is not `captains`. Or the captain has no `Roams:`, or roams a system with no station. Or their hail has no `When: comms`, or its `Speaker:` is not their key |
 | The captain's button opens the side's hail | The captain and the side have the same key |
-| The friend's answer never appears | The ship's standing with the captain is not moving. The deed names the side, or a trait the captain does not value, or the captain has no `Values:` |
+| The friend's answer never appears | The ship's standing with the captain is not moving. The deed names the side, or a trait the captain does not value, or the captain has no `Values:` and her side does not value that trait |
 | The friend's answer is there from the start | The guard does not start with `if`, or it is after the `;` |
 | A friend sometimes gets the stranger's greeting | Two of the greeting's guards are both true for them. Two lines, not three |
 | Paying Sable changed the Gleaners' greeting | The deed says `earns gleaners`. It should say `earns sable` |

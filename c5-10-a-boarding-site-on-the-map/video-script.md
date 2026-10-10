@@ -1,8 +1,10 @@
 # C5-10 video script - A boarding site on the map
 
-> **STATE ON 2026-10-10.** Written and measured against the released tools: `sbs` 0.13,
-> the published v1.4.0 libraries (sbs_utils `ce28c951`, LegendaryMissions `243e0a4`,
-> Open Universe `15b9998`, the first to hold walked sites). Everything was run by script
+> **STATE ON 2026-10-10, evening.** Written that morning, and re-measured the same
+> evening against the released tools: `sbs` 0.14, the published v1.4.0 libraries
+> (sbs_utils `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`). Lint, the
+> three long plays, and every row of Step 11 that the release touched were run again.
+> Everything was run by script
 > in the game's stand-in (the mock), from a copy of `MyUniverse` placed where its save
 > cannot reach a player's own, with the `frontier` and `station` tile art copied into
 > the copy's own media folder. A script reported the ship docked (it did not fly it),
@@ -32,8 +34,8 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 
 **In the mock, by script, on 2026-10-10, with the page's own files:**
 
-1. Part 1's files lint with six warnings, and the finished files with nine, as printed
-   on the page. Lecture 9's files lint with three.
+1. Part 1's seven files, the finished eight, and Lecture 9's six all lint `clean`:
+   `0 error(s), 0 warning(s)`.
 2. At the start the shared story holds four running leads. `ship_docked` at the Customs
    House puts one call on the ship after a few seconds, titled Customs House, with the
    two answers. The first answer opens a visit titled CUSTOMS HOUSE in the room
@@ -58,11 +60,16 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 8. A second launch on the same save: the same state, both steps Done, credits 700; a
    jump with the stand-in on the map ends the visit and brings the console home; the
    Customs House opens on its second line.
-9. Step 11's tables: 42 variants linted, 41 of them played, each one change to the finished
-   files. The two "no call" rows were played with no console seated, then with one
-   arriving late.
-10. Lecture 11's, 12's and 16's finished files with this lecture's lines added: the
-    file counts, warning counts and line numbers in "What changes in later lectures".
+9. Step 11's tables: 42 variants linted again on the evening's tool, each one change to
+   the finished files; 41 were played when the page was written, and these were played
+   again that evening: the area key, no `ground` files, `Site: custom`, a missing
+   `Site file:`, the text site's rooms under `scenes`, the call with no
+   `boarding_down` and with a misspelled one, `## [Hails](hail)`, Stay aboard then
+   docking again, and a comma missing from `story.json`. The two "no call" rows were
+   played with no console seated: the script marked the ship docked, then undocked,
+   by hand, and the visit ended within six seconds.
+10. Lecture 11's, 12's and 16's finished files with this lecture's lines added lint
+    `clean`; the file counts are in "What changes in later lectures".
 
 **Read in the tool's or the game's code, not run:** that `sbs fetch --update-libs`
 downloads and unpacks what `shared_media` lists; that the call waits four seconds;
@@ -128,13 +135,13 @@ word. ||| That's how a place finishes a step. ||"
 
 ### 5. Lint, and play
 
-**Screen:** `sbs lint MyUniverse`: seven files, six warnings. Then run the game: dock,
+**Screen:** `sbs lint MyUniverse`: seven files, each one `clean`. Then run the game: dock,
 the call, the answer, BEAM DOWN, the rooms of Step 5's table.
 
-**Say:** "Lint has six warnings now. || Three are old friends from last time. ||| The
-three new ones are wrong in the same way. || Lint can't see the game listening for
-boarding down, | and it doesn't join a signal across two files. || So I count them, and
-I keep them. ||| Now let's dock with it. || A call comes in from the Customs House. || Comms
+**Say:** "Lint first, and it's clean. || There are seven files now, | and it read the
+new one with the rest. ||| It knows boarding down is the game's own word. || And it
+found my signal at both ends, | the answer in one file and the step in the other. |||
+Now let's dock with it. || A call comes in from the Customs House. || Comms
 answers, and sends a party. || And here's the counter. ||| I read the manifest, | and
 the step is done and paid. || Back at the counter, | the clerk has a different line for
 me now. ||"
@@ -166,12 +173,12 @@ attacks. ||| Every key starts with the word yard. || Keep to that, and two place
 ### 8. The landmark, the step, and lint
 
 **Screen:** `kestrel_verge.amd`: the Tally Yard landmark, the `Then: reveal` line, the
-step The Short Count. Then lint: eight files, nine warnings.
+step The Short Count. Then lint: eight files, each one `clean`.
 
 **Say:** "One more landmark, with its one line. || One more step of story, | opened by
-the first one. ||| And lint says nine. || That's two for the calls, | four for the two
-steps, | and the three old ones. ||| Nine is today's clean. || If you see a tenth,
-that one's real. ||"
+the first one. ||| And lint says clean, for all eight files. || It reads the map as
+well. ||| Change the map's first line to some other word, | and lint tells you the
+site will not exist. || The game's log says the same. ||"
 
 ### 9. Walk it
 
@@ -197,11 +204,11 @@ keycard, the loader, | and what we learned in each place. ||"
 
 ### 11. An honest word, and your turn
 
-**Screen:** The warning about a site with no call, on the page. Then the exercise.
+**Screen:** The section about a site with no call, on the page. Then the exercise.
 
 **Say:** "Two honest words before you go. ||| When I checked this page, a script did
 all of it, | and nobody was watching a screen. ||| And always give a site a call. || A
-place with no call opens the moment you dock, | and that can leave a visit hanging
-open. || It's on the page, with the way out. ||| Now it's your turn. || Rename the
+place with no call opens the moment you dock, | and nobody asked the crew first. || If
+they cast off without going down, | that visit just ends. ||| Now it's your turn. || Rename the
 customs house, | and give it a fifth room. || Then walk the yard as far as the ledger.
 ||"

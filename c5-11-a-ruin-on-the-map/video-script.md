@@ -1,8 +1,10 @@
 # C5-11 video script - A ruin on the map
 
-> **STATE ON 2026-10-10.** Written and measured against the released tools: `sbs` 0.13,
-> the published v1.4.0 libraries (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`, the
-> Open Universe libraries of 2026-10-09). Everything was run by script in the game's
+> **STATE ON 2026-10-10, evening.** Written and played against the libraries of that
+> morning (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`). Lint, and every row of
+> Step 5's tables, were measured again that evening on the released tool `sbs` 0.14 and
+> libraries (sbs_utils `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe
+> `80e9397`); the plays were not run again. Everything was run by script in the game's
 > stand-in (the mock), from a copy of `MyUniverse` placed where its save cannot reach a
 > player's own. A script sent the Quest Log's Engage, moved the ship to the ruin's
 > mouth, connected one stand-in console and seated it at Comms, pressed the Boarding
@@ -29,8 +31,9 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 
 **In the mock, by script, on 2026-10-10, with the page's own files:**
 
-1. The finished files lint with five warnings: the three about `ledger_read`, and two
-   that say nothing sends `slab_opened` and `hollow_taken`.
+1. The finished seven files lint `clean`. `Done when: signal slab_open`, `signal
+   bowl_taken`, and `relic_piece` left off the niche each give exactly one warning
+   (`unfired-signal`), on the step that waits.
 2. At the start the Quest Log is handed four leads. Engaging A Hole in the Chart puts
    the ship at 2, -3; the game is asked to show "Location charted: The Hollow"; the lead
    is Done and Cut Through is Active. The ruin is built.
@@ -121,12 +124,13 @@ opened, and hollow, then taken. ||"
 
 ### 6. Lint
 
-**Screen:** Save all. `sbs lint MyUniverse`: seven files, five warnings.
+**Screen:** Save all. `sbs lint MyUniverse`: seven files, each one `clean`. Then change
+`slab_opened` to `slab_open`, run lint again, and put it back.
 
-**Say:** "I run lint, and it has five warnings. || Three are old friends. ||| The two
-new ones say nothing sends my signals. || That's wrong, in the same way the old three
-are wrong. || Lint doesn't look in the ruin's file. ||| So those two words are mine to
-check, every single time. ||"
+**Say:** "I run lint, and all seven files are clean. ||| Lint looked in the ruin's
+file. || It found a barrier called slab, | so it knows the game sends slab opened. |||
+Watch what happens if I get the word wrong. || There's one warning, on the step that
+waits, | and it says nothing sends that word. || So I fix it, and it's clean again. ||"
 
 ### 7. Play it
 

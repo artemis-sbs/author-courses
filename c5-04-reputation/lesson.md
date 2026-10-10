@@ -302,13 +302,18 @@ played.
 | The mistake | What the game does | What lint says |
 |---|---|---|
 | `Value:` for `Values:` | The side values nothing. Finishing its jobs earns no standing | A warning: "`Value` is not a field a side has" (`unknown-field`) |
-| `earns hollin honest 20 and generous 20` | Neither deed happens. A score is kept under a trait that does not exist | A warning: "`generous 20` is read as part of `earns hollin honest 20`, so it never happens" (`outcome-run-together`) |
+| `earns hollin honest 20 and generous 20` | Neither deed happens. A score is kept under a trait that does not exist | Two warnings: "`generous 20` is read as part of `earns hollin honest 20`, so it never happens" (`outcome-run-together`), and "`honest 20 and generous` is not a trait a side can value" (`earns-unknown-trait`) |
 | No comma between `costs 100 credits` and `earns` | Takes the 100 credits. No deed | The same warning (`outcome-run-together`) |
 | No `;` in front of the outcomes | Nothing: no cost and no deed | A warning: "neither a condition (`if ...`) nor an outcome (after a `;`), so it is ignored" (`choice-tail-ignored`) |
 | A guard with two comparisons: `%{standing >= 0 and standing < 20}` | The line is never said. When no other line can be said, the station says nothing | Two warnings: "not a condition the game can read, so this line is never spoken" (`unreadable-guard`, `guard-joined`) |
 | `Speaker: holin` | No **Hail** button on that side's stations | A warning: "gives its voice to `holin`, who is not in the cast" (`dangling-speaker`) |
 | An answer that names a record that is not there: `(hollin_by)` | Not played | A warning: "points at `hollin_by`, which resolves to no node" (`dangling-choice`) |
 | `## [Dialogue](talk)` | No **Hail** button on any station | A warning on every `Speaker:` and `When:` line: "this record is being read as a map" (`unknown-field`) |
+| A trait misspelled in `Values:`, as in `honset 40, generous 30` | The side values a trait no deed can ever name. The levy gives a standing of 8, where it should give 20 | A warning: "`Values: honset 40` - `honset` is not a trait a side can value, so nothing the ship does counts toward it" (`values-unknown-trait`). It lists the fourteen |
+| `Values: honest, generous`, with no numbers | Standing with that side never moves from 0 | A warning for each trait: "`Values: honest` has no number after it, so `honest` counts for nothing" (`values-no-weight`) |
+| A side's key misspelled in a deed: `earns holin honest 20` | The score is kept for a side that does not exist. Standing with Hollin does not move | A warning on each deed: "`holin` is not a side in this mission, so the standing is filed where nobody looks" (`earns-unknown-side`) |
+| A deed with no number: `earns hollin honest` | Nothing happens. Any `costs` beside it is still charged | A warning: "`earns hollin honest` is not `earns <side> <trait> <number>`, so this choice moves nobody's standing" (`earns-shape`) |
+| The curly brackets left off a guard: `%standing < 20 Hollin Compact.` | No guard. The station says the words `standing < 20` out loud, to everybody | A warning: "`%standing < 20` has no curly brackets round it, so it is not a condition: the words `standing < 20` are spoken aloud, to everybody" (`guard-no-braces`) |
 
 **Mistakes lint cannot see**
 
@@ -316,15 +321,10 @@ Lint says `clean` for every one of these.
 
 | The mistake | What the game does |
 |---|---|
-| A trait misspelled in `Values:`, as in `honset 40, generous 30` | The side values a trait no deed can ever name. The levy gives a standing of 8, where it should give 20 |
-| `Values: honest, generous`, with no numbers | Standing with that side never moves from 0 |
 | No `Values:` line on a side | Standing is the plain average of every score the ship has with that side, and finishing its jobs earns nothing |
-| A side's key misspelled in a deed: `earns holin honest 20` | The score is kept for a side that does not exist. Standing with Hollin does not move |
 | A deed in a trait the side does not value: `earns hollin fearsome 20` | The score is kept, and standing does not move |
-| A deed with no number: `earns hollin honest` | Nothing happens. Any `costs` beside it is still charged |
 | A word misspelled in a guard: `%{standng >= 20}` | The line is never said. A ship at 20 or more hears nothing at all |
 | Words in a guard where a sign should be: `%{standing at least 20}` | The same |
-| The curly brackets left off a guard: `%standing < 20 Hollin Compact.` | No guard. The station says the words `standing < 20` out loud, to everybody |
 | A line with no guard beside lines that have one | It can always be said. A friend hears it or the friendly line, at random |
 | No `When: comms` line | No **Hail** button |
 | `Tier: two` | The mission stops working when Comms selects a station of a side that offers that job. `mast.runtime.log` says `invalid literal for int()` |

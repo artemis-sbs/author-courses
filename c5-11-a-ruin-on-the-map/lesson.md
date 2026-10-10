@@ -24,7 +24,7 @@ write the ruin today. It is on this page, ready to paste.
 
 - Your `MyUniverse` mission as Lecture 9 left it. Its six `.amd` files match
   `c5-09-organizing-a-big-universe\example\`.
-- `sbs lint MyUniverse` gives the three warnings about `ledger_read`, and nothing else.
+- `sbs lint MyUniverse` says `clean` for all six files.
 - The game closed, and the save deleted:
   `C:\Cosmos\data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml`.
 
@@ -239,8 +239,7 @@ sbs lint MyUniverse
 
 ```
 == dialogue\deepwell.amd ==
-  [WARNING] line 12:92: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 13:65: `deepwell_hail` emits signal `ledger_read` but no `//signal/ledger_read` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  clean
 == dialogue\gleaners.amd ==
   clean
 == dialogue\hollin.amd ==
@@ -250,23 +249,23 @@ sbs lint MyUniverse
 == jobs.amd ==
   clean
 == kestrel_verge.amd ==
-  [WARNING] line 227:19: `tern_ledger` waits for the signal `ledger_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
-  [WARNING] line 256:19: `hollow_cut` waits for the signal `slab_opened`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
-  [WARNING] line 266:19: `hollow_bowl` waits for the signal `hollow_taken`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+  clean
 == lore.amd ==
   clean
 
-7 amd + 1 mast file(s): 0 error(s), 5 warning(s)
+7 amd + 1 mast file(s): 0 error(s), 0 warning(s)
 ```
 
-Seven files now, and five warnings. Three are the `ledger_read` warnings you know. Two
-are new, and they are wrong in the same way: lint does not look in `hollow.amd` when it
-checks a signal in `kestrel_verge.amd`. Both steps finished when the game was played.
+Seven files now, and every one is `clean`.
 
-> **For this lecture, your checkpoint is these five warnings and no others.**
+Lint looks in `hollow.amd` when it checks a signal in `kestrel_verge.amd`. It finds a
+barrier with the key `slab`, so it knows the game will send `slab_opened`. It finds a
+piece in the ruin `hollow`, so it knows about `hollow_taken`.
 
-That makes the two words something only you can check. Lint gives the same warning
-whether `slab_opened` is spelled right or wrong.
+> **For this lecture, your checkpoint is a `clean` lint for all seven files.**
+
+Misspell either word and lint gives exactly one warning, on the step that waits for
+it. The rows are below.
 
 Each row below was made on purpose, one change to the finished files, then linted, then
 played. They were played with a shorter script than Step 6's: it took the ship to the
@@ -278,19 +277,19 @@ the bowl out by the game's own calls, with no suit.
 | The mistake | What the game does | What lint says |
 |---|---|---|
 | The colon left off: `Relic hollow` | Not played | An error: "expected \"Label: value\" - did you mean to put this line in the body, below the --- ?" (`fence-syntax`) |
+| `Done when: signal slab_open` | The slab is cut, the game sends `slab_opened`, and Cut Through stays open. The story stops there | One warning: "`hollow_cut` waits for the signal `slab_open`, and nothing in the mission sends it, so that wait never ends" (`unfired-signal`) |
+| `Done when: signal bowl_taken`, the item's name where the ruin's key goes | The bowl is taken, the game sends `hollow_taken`, and What the Hollow Kept stays open | The same warning, about `hollow_bowl` and `bowl_taken` |
+| `relic_piece` left off The Niche's roles | The bowl is not a piece any more. `hollow_taken` is never sent, and the last step can never be done | The same warning, about `hollow_bowl` and `hollow_taken`. The word is right this time, and nothing sends it |
 
 **Mistakes lint cannot see**
 
-Lint gives the same five warnings and nothing else for every one of these.
+Lint says `clean` for every one of these.
 
 | The mistake | What the game does |
 |---|---|
 | `Relic file: hollows.amd`, a file that is not there | No ruin. The Hollow is an ordinary wreck in an ordinary system, the lead finishes on arrival, and Cut Through can never be done. `mast.runtime.log` has one line: "`hollows.amd` not found" |
 | `Relic: hollo`, a key that is not in the file | The same, and this time the log is empty. Nothing says why |
-| `Done when: signal slab_open` | The slab is cut, the game sends `slab_opened`, and Cut Through stays open. The story stops there |
-| `Done when: signal bowl_taken`, the item's name where the ruin's key goes | The bowl is taken, the game sends `hollow_taken`, and What the Hollow Kept stays open |
-| `relic_piece` left off The Niche's roles | The bowl is not a piece any more. `hollow_taken` is never sent, and the last step can never be done |
-| `Item: stone_bowl` left off The Niche | The same. There is nothing in the niche to take |
+| `Item: stone_bowl` left off The Niche | There is nothing in the niche to take. `hollow_taken` is never sent, and the last step can never be done |
 | The boarding library missing from `story.json` | The ruin is built and the ship can fly into it. Nobody is ever offered a suit, so nobody can cut the slab by hand |
 
 Things that look wrong and are not, or not much:
@@ -400,12 +399,11 @@ on every visit.
 ## What changes in later lectures
 
 Lectures 12, 13 and 16 were written before this one, for a universe with no ruin in it.
-If you go on with The Hollow in yours, three things on their pages read differently.
+If you go on with The Hollow in yours, two things on their pages read differently.
 
 | Their page says | You will see |
 |---|---|
-| Six `.amd` files, and three warnings | Seven files, and five warnings: the two new ones from Step 5 |
-| The `tern_ledger` warning on line 219 (Lectures 12 and 13) or line 230 (Lecture 16) | Nine lines further down: 228, or 239. The landmark you added is nine lines long |
+| Lint names six `.amd` files, all `clean` | Seven files, all `clean` |
 | Three leads in the Quest Log at the start | Four. **A Hole in the Chart** is the fourth |
 
 Nothing else on those pages changes. The Hollow is in a system no other lecture visits.
@@ -417,8 +415,8 @@ Nothing else on those pages changes. The Hollow is in a system no other lecture 
 | At (2, -3) there is a wreck, and no ruin | The landmark did not find the ruin. `Relic file:` names a file that is not there (`mast.runtime.log` says so), or `Relic:` is not the ruin's key (nothing says so) |
 | The handheld never offers SUIT UP | The ship is not within 3,000 of the way in. Or the place with `Roles: entrance` is missing. Or `story.json` has no line with `boarding` in it: see the next row |
 | `story.json` has no line with `boarding` in it | The folder was made before the template changed. Find the line that ends `items.v1.4.0.mastlib",` and add this line under it, with its comma: `"artemis-sbs.LegendaryMissions.boarding.v1.4.0.mastlib",` |
-| The slab is cut and Cut Through is still open | The word after `signal` is not `slab_opened`. Lint cannot tell you |
-| The bowl is aboard and What the Hollow Kept is still open | The word after `signal` is not `hollow_taken`, or The Niche has lost `relic_piece` from its roles |
+| The slab is cut and Cut Through is still open | The word after `signal` is not `slab_opened`. Lint says so, on that step |
+| The bowl is aboard and What the Hollow Kept is still open | The word after `signal` is not `hollow_taken`, or The Niche has lost `relic_piece` from its roles. Lint warns about that step either way |
 | A console closes the moment somebody suits up | The known fault with the exosuit. Start the game again with the same line: it continues, and the ruin is as the crew left it. Until the fault is fixed you can have suits drawn as the stock shuttle. Open `story.mast`, find the line `default shared WAYPOINTS_ENABLED = True`, and add this on a line of its own below it: `eva_set_suit_hull("tsn_shuttle")`. That line was played: suits were offered and the two steps finished as before |
 | The suit is a shuttle | The LegendaryMissions art pack is not fetched. `sbs fetch "MyUniverse" --update-libs` |
 
@@ -438,7 +436,7 @@ Nothing else on those pages changes. The Hollow is in a system no other lecture 
 
 You are done when all five are true:
 
-- `sbs lint MyUniverse` gives the five warnings of Step 5, and nothing else.
+- `sbs lint MyUniverse` says `clean` for all seven files.
 - The crew is offered suits at the ruin's mouth, and not from across the system.
 - Cutting the slab finishes one step of your story, and the bowl finishes the next.
 - After leaving and coming back, the slab is still cut.
