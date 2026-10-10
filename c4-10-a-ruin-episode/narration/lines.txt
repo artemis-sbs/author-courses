@@ -1,0 +1,93 @@
+s01_cold_open_0	This is the last lecture of the class,
+s01_cold_open_1	and there's almost nothing new in it.
+s01_cold_open_2	Everything you've written since Lecture one is about to become one episode.
+s01_cold_open_3	It has a beginning at the station,
+s01_cold_open_4	a middle inside the ruin,
+s01_cold_open_5	and an ending back home.
+s01_cold_open_6	And today you learn to check it, from the first line to the last.
+s02_the_episode_on_one_page_0	Before I change anything, I read what I have.
+s02_the_episode_on_one_page_1	This table is the whole episode.
+s02_the_episode_on_one_page_2	Each row is something that happens.
+s02_the_episode_on_one_page_3	It says where it happens, who does it,
+s02_the_episode_on_one_page_4	and what finishes it.
+s02_the_episode_on_one_page_5	Seven of the rows are the story,
+s02_the_episode_on_one_page_6	and the game is won when those seven are done.
+s02_the_episode_on_one_page_7	The other five are what a curious crew finds on the way.
+s02_the_episode_on_one_page_8	Draw a table like this for every episode you write.
+s02_the_episode_on_one_page_9	Draw it first, before any record.
+s02_the_episode_on_one_page_10	Every row needs something that finishes it,
+s02_the_episode_on_one_page_11	and somebody who's able to.
+s03_the_mast_is_the_first_step_0	Last time the mast was a quest by itself.
+s03_the_mast_is_the_first_step_1	Now it opens the episode.
+s03_the_mast_is_the_first_step_2	So I delete that quest,
+s03_the_mast_is_the_first_step_3	and I type it again inside the arc, with four hashes.
+s03_the_mast_is_the_first_step_4	It gets three more lines:
+s03_the_mast_is_the_first_step_5	a Then, to reveal the next step,
+s03_the_mast_is_the_first_step_6	and the two lines that make it count toward winning.
+s03_the_mast_is_the_first_step_7	And the way in is no longer first,
+s03_the_mast_is_the_first_step_8	so it starts when it's revealed.
+s04_a_clue_for_the_crew_who_go_i_0	Earlier the ship got a clue chain.
+s04_a_clue_for_the_crew_who_go_i_1	Comms logged some names,
+s04_a_clue_for_the_crew_who_go_i_2	and a later call had one more answer.
+s04_a_clue_for_the_crew_who_go_i_3	This is the same idea, for somebody in a suit.
+s04_a_clue_for_the_crew_who_go_i_4	At the altar, the answer that reads the marks
+s04_a_clue_for_the_crew_who_go_i_5	now learns a fact, and starts a quest.
+s04_a_clue_for_the_crew_who_go_i_6	Then the cairn gets a scene of its own.
+s04_a_clue_for_the_crew_who_go_i_7	And one of its answers says if learned, at least one.
+s04_a_clue_for_the_crew_who_go_i_8	So a crew member who read the marks can count the stones against them.
+s04_a_clue_for_the_crew_who_go_i_9	One who didn't just sees a pile of stones.
+s04_a_clue_for_the_crew_who_go_i_10	And the count sends the word that finishes the quest.
+s05_lint_0	I run lint, and it's clean.
+s05_lint_1	I misspell the quest on the answer,
+s05_lint_2	and lint names the line.
+s05_lint_3	But lint only reads a file.
+s05_lint_4	It can't play an episode.
+s05_lint_5	So the last check isn't lint at all.
+s06_the_walk_0	The last check is a walk.
+s06_the_walk_1	Every row of the episode, in order,
+s06_the_walk_2	with what I expect written down before I start.
+s06_the_walk_3	In row one, the quest list has one step, the mast.
+s06_the_walk_4	In row two, near the station, the app offers the worksite.
+s06_the_walk_5	I go out, I weld the mast,
+s06_the_walk_6	and the next step appears.
+s06_the_walk_7	I've got forty credits, and the table says forty.
+s06_the_walk_8	Then I come aboard and fly to the door.
+s06_the_walk_9	Ninety credits, and the table says ninety.
+s07_inside_0	Now I suit up again, and this time the app names the Hollow.
+s07_inside_1	At the ring, Comms logs the names.
+s07_inside_2	At the altar the step is done,
+s07_inside_3	and I read the marks on the rim.
+s07_inside_4	There's the new quest in the list.
+s07_inside_5	Comms plays the entry for Dace,
+s07_inside_6	and marks the side room and the Gallery.
+s07_inside_7	At the cairn, the side story finishes,
+s07_inside_8	and the cutscene plays on the main screen.
+s07_inside_9	And on my suit, there's the answer I earned.
+s07_inside_10	I count the stones,
+s07_inside_11	and there are forty-one.
+s08_the_bowl_and_home_0	Then the slab, twelve seconds with the beam.
+s08_the_bowl_and_home_1	Then it's the niche.
+s08_the_bowl_and_home_2	Comms opens it, and I take the bowl.
+s08_the_bowl_and_home_3	I come aboard, and we fly home.
+s08_the_bowl_and_home_4	Eight hundred and twenty credits,
+s08_the_bowl_and_home_5	and the table says eight hundred and twenty.
+s08_the_bowl_and_home_6	Every row has agreed.
+s08_the_bowl_and_home_7	Then I check the other ending.
+s08_the_bowl_and_home_8	I set the clock to twenty seconds, and I sit still.
+s08_the_bowl_and_home_9	There's my Lose sentence.
+s08_the_bowl_and_home_10	And the log file is empty after both.
+s09_what_you_don_t_have_yet_0	Here's one honest note before you go.
+s09_what_you_don_t_have_yet_1	In Class three you wrote a story for one person.
+s09_what_you_don_t_have_yet_2	In a ruin, that isn't working yet.
+s09_what_you_don_t_have_yet_3	The story is handed over, and then it never starts.
+s09_what_you_don_t_have_yet_4	So for now, give the whole crew the story,
+s09_what_you_don_t_have_yet_5	the way I did with Forty-One.
+s09_what_you_don_t_have_yet_6	The page lists that, and three other things,
+s09_what_you_don_t_have_yet_7	so you don't go looking for them.
+s10_your_turn_0	And now the class project.
+s10_your_turn_1	Make a new mission, and write an episode of your own.
+s10_your_turn_2	Draw the table first.
+s10_your_turn_3	Build the ruin, give it a voice, and hide a piece in it.
+s10_your_turn_4	Write the arc, with a win, a loss and a clock.
+s10_your_turn_5	Then write your walk, and walk it.
+s10_your_turn_6	You're finished when your table and your game agree on every row.

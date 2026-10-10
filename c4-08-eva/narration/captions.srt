@@ -1,0 +1,451 @@
+1
+00:00:00,000 --> 00:00:03,478
+For seven lectures, nobody has left the ship.
+
+2
+00:00:04,378 --> 00:00:06,552
+Today, at last, somebody does.
+
+3
+00:00:08,352 --> 00:00:10,961
+The ship stops at the door,
+
+4
+00:00:11,411 --> 00:00:15,759
+and one of the crew goes in wearing a suit.
+
+5
+00:00:16,659 --> 00:00:18,398
+They read the altar,
+
+6
+00:00:18,848 --> 00:00:21,457
+they cut through a fallen slab,
+
+7
+00:00:21,907 --> 00:00:25,385
+and they bring out the bowl by hand.
+
+8
+00:00:27,185 --> 00:00:32,837
+And the part that surprised me is how little there is to write.
+
+9
+00:00:34,037 --> 00:00:36,211
+Going outside is called EVA,
+
+10
+00:00:36,661 --> 00:00:40,574
+and most of it is already in your mission.
+
+11
+00:00:41,474 --> 00:00:48,430
+The game offers the crew a way out, at the door of any ruin you build.
+
+12
+00:00:49,330 --> 00:00:51,939
+It puts them in a suit,
+
+13
+00:00:52,389 --> 00:00:56,302
+it gives the suit a list of your places,
+
+14
+00:00:56,752 --> 00:01:01,100
+and it flies the suit to the one they pick.
+
+15
+00:01:02,900 --> 00:01:05,943
+You wrote the door in Lecture three.
+
+16
+00:01:06,393 --> 00:01:09,437
+It's the place with the role entrance.
+
+17
+00:01:10,337 --> 00:01:16,424
+The offer is made while the ship is within three thousand of that place,
+
+18
+00:01:16,874 --> 00:01:20,352
+and it's taken back when the ship leaves.
+
+19
+00:01:21,252 --> 00:01:24,296
+But not while somebody is still outside.
+
+20
+00:01:25,496 --> 00:01:30,713
+A crew member in a suit gets a console of their own,
+
+21
+00:01:31,163 --> 00:01:34,207
+with a handheld that has five apps.
+
+22
+00:01:35,107 --> 00:01:37,715
+Nav is the list of places.
+
+23
+00:01:38,165 --> 00:01:40,774
+Act is what a place says.
+
+24
+00:01:41,224 --> 00:01:42,963
+Scan reads the room.
+
+25
+00:01:43,413 --> 00:01:45,152
+Fire holds the tools.
+
+26
+00:01:45,602 --> 00:01:48,211
+And Crew is the way home.
+
+27
+00:01:50,011 --> 00:01:52,620
+There are three things to remember.
+
+28
+00:01:53,520 --> 00:01:57,433
+A suit flies to places, and to nothing else.
+
+29
+00:01:57,883 --> 00:02:00,491
+You can't steer it by hand.
+
+30
+00:02:01,391 --> 00:02:06,174
+A hidden place isn't on the list until it's been found.
+
+31
+00:02:07,074 --> 00:02:10,987
+And the tools reach six hundred, and no further.
+
+32
+00:02:12,187 --> 00:02:14,361
+Now the first new record.
+
+33
+00:02:15,261 --> 00:02:18,739
+A barrier is a ball of blocked space.
+
+34
+00:02:19,189 --> 00:02:23,537
+Every way through it is shut, until somebody opens it.
+
+35
+00:02:25,337 --> 00:02:28,380
+But look at what I type first.
+
+36
+00:02:28,830 --> 00:02:33,178
+It's a place, on the near side of the door.
+
+37
+00:02:34,078 --> 00:02:37,991
+That's because a suit can only fly to places,
+
+38
+00:02:38,441 --> 00:02:41,485
+and its cutter only reaches six hundred.
+
+39
+00:02:42,385 --> 00:02:44,993
+With no place beside the slab,
+
+40
+00:02:45,443 --> 00:02:49,357
+nobody could ever get close enough to cut it.
+
+41
+00:02:51,157 --> 00:02:52,896
+Then the slab itself.
+
+42
+00:02:53,796 --> 00:02:58,143
+Barrier, three numbers for where, and one for how big.
+
+43
+00:02:59,043 --> 00:03:00,783
+And Clear with, beam,
+
+44
+00:03:01,233 --> 00:03:04,276
+which means the suit's cutter opens it.
+
+45
+00:03:05,476 --> 00:03:09,389
+When a barrier opens, the game sends a word.
+
+46
+00:03:10,289 --> 00:03:13,767
+It's the barrier's key, and then underscore opened.
+
+47
+00:03:14,217 --> 00:03:15,957
+Mine is slab opened.
+
+48
+00:03:17,757 --> 00:03:21,670
+So I write a step that waits for it.
+
+49
+00:03:22,570 --> 00:03:24,743
+It goes after the altar,
+
+50
+00:03:25,193 --> 00:03:28,672
+and the altar's step now reveals this one.
+
+51
+00:03:29,572 --> 00:03:32,180
+I don't send that word anywhere.
+
+52
+00:03:32,630 --> 00:03:34,370
+The game sends it,
+
+53
+00:03:34,820 --> 00:03:36,993
+however the slab comes open.
+
+54
+00:03:38,193 --> 00:03:42,541
+Last time Comms said the final word, in a call.
+
+55
+00:03:43,441 --> 00:03:48,659
+Since Lecture five the game says it, when the bowl is taken.
+
+56
+00:03:49,109 --> 00:03:51,283
+So Comms stops saying it.
+
+57
+00:03:53,083 --> 00:03:57,430
+But there's a trap here, and it's worth a minute.
+
+58
+00:03:58,330 --> 00:04:02,243
+The walls of a ruin don't hold a ship.
+
+59
+00:04:03,143 --> 00:04:08,361
+So a ship could fly in and scoop up the bowl early,
+
+60
+00:04:08,811 --> 00:04:11,420
+before the last step was listening.
+
+61
+00:04:12,320 --> 00:04:14,493
+The word would be spent,
+
+62
+00:04:14,943 --> 00:04:17,552
+and the story could never end.
+
+63
+00:04:19,352 --> 00:04:22,830
+So I don't let the bowl exist yet.
+
+64
+00:04:23,730 --> 00:04:27,209
+Comms gets a new answer, open the niche,
+
+65
+00:04:27,659 --> 00:04:31,137
+and it sends a word of my own.
+
+66
+00:04:32,037 --> 00:04:35,950
+And the niche says starts when, signal, that word.
+
+67
+00:04:37,750 --> 00:04:42,098
+The step is always listening before the bowl is there.
+
+68
+00:04:42,998 --> 00:04:45,172
+Then I change the objective,
+
+69
+00:04:45,622 --> 00:04:49,100
+and I delete the quest from Lecture five,
+
+70
+00:04:49,550 --> 00:04:52,593
+because the arc does its job now.
+
+71
+00:04:53,793 --> 00:04:58,576
+I don't want the game to end with somebody still outside.
+
+72
+00:04:59,476 --> 00:05:02,954
+So taking the bowl reveals one more step,
+
+73
+00:05:03,404 --> 00:05:07,317
+and that one is finished back at the station.
+
+74
+00:05:09,117 --> 00:05:12,161
+And I give the crew more time.
+
+75
+00:05:13,061 --> 00:05:16,104
+A suit is slower than a ship.
+
+76
+00:05:16,554 --> 00:05:22,641
+In my test it took about three minutes from the door to the altar.
+
+77
+00:05:23,541 --> 00:05:25,715
+So twenty minutes becomes forty.
+
+78
+00:05:26,915 --> 00:05:29,524
+I run lint, and it's clean.
+
+79
+00:05:30,424 --> 00:05:33,902
+Now I misspell the word on the step,
+
+80
+00:05:34,352 --> 00:05:36,961
+and lint says nothing sends it.
+
+81
+00:05:37,861 --> 00:05:39,600
+That's what I want.
+
+82
+00:05:41,400 --> 00:05:44,878
+Next I delete the place beside the slab,
+
+83
+00:05:45,328 --> 00:05:47,067
+and lint says clean.
+
+84
+00:05:47,967 --> 00:05:50,576
+But that mission can't be finished.
+
+85
+00:05:51,476 --> 00:05:54,520
+The slab is out of everyone's reach,
+
+86
+00:05:54,970 --> 00:05:59,752
+and no file can tell lint how far a cutter reaches.
+
+87
+00:06:01,552 --> 00:06:05,030
+So that's the check to do by eye.
+
+88
+00:06:05,480 --> 00:06:09,828
+Every barrier needs a place within six hundred of it.
+
+89
+00:06:11,028 --> 00:06:15,376
+I fly to the door, and I stop the ship.
+
+90
+00:06:16,276 --> 00:06:19,754
+On my handheld there's a Boarding Party app,
+
+91
+00:06:20,204 --> 00:06:22,813
+and its button says suit up.
+
+92
+00:06:24,613 --> 00:06:26,352
+And now I'm outside.
+
+93
+00:06:27,252 --> 00:06:32,470
+I pick the Altar from the list, and the suit flies itself.
+
+94
+00:06:34,270 --> 00:06:38,617
+And here are the words I wrote four lectures ago,
+
+95
+00:06:39,067 --> 00:06:42,980
+read by somebody standing in front of the table.
+
+96
+00:06:43,880 --> 00:06:46,489
+On Comms I mark the Gallery,
+
+97
+00:06:46,939 --> 00:06:49,548
+and the Niche joins my list.
+
+98
+00:06:50,448 --> 00:06:54,796
+I pick it, and Nav says there's no way through.
+
+99
+00:06:56,596 --> 00:06:59,639
+So I go to the Gallery Door.
+
+100
+00:07:00,539 --> 00:07:02,713
+On Fire there's the slab.
+
+101
+00:07:03,163 --> 00:07:07,946
+I select it, I press again, and I wait twelve seconds.
+
+102
+00:07:08,846 --> 00:07:10,585
+The step is done.
+
+103
+00:07:12,385 --> 00:07:14,124
+Now for the niche.
+
+104
+00:07:15,024 --> 00:07:18,067
+Comms opens it, and there's the bowl.
+
+105
+00:07:18,517 --> 00:07:22,865
+I take it, I come aboard, and we fly home.
+
+106
+00:07:23,765 --> 00:07:25,504
+And that's the game.
+
+107
+00:07:26,704 --> 00:07:28,443
+Now it's your turn.
+
+108
+00:07:29,343 --> 00:07:33,257
+Let an engineer work the slab loose by hand.
+
+109
+00:07:34,157 --> 00:07:36,765
+Make the slab open by itself.
+
+110
+00:07:37,665 --> 00:07:40,274
+Send someone out for the canisters.
+
+111
+00:07:42,074 --> 00:07:45,987
+Then break one line where lint can see it,
+
+112
+00:07:46,437 --> 00:07:48,611
+and one where it can't.
+
+113
+00:07:49,511 --> 00:07:54,293
+Next time, the same suit goes to work outside a station.

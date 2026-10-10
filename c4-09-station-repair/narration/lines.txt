@@ -1,0 +1,92 @@
+s01_cold_open_0	Last time the crew went into a ruin.
+s01_cold_open_1	Today there's no ruin at all.
+s01_cold_open_2	It's the same suit, and the same tools,
+s01_cold_open_3	outside a station, on a repair job.
+s01_cold_open_4	A crew member comes out of the airlock,
+s01_cold_open_5	flies round the hull, and welds a mast.
+s01_cold_open_6	And it's one more record than you already know.
+s02_a_ruin_with_the_ruin_turned__0	A crew member can go outside wherever the game has a space to fly a suit in.
+s02_a_ruin_with_the_ruin_turned__1	That's what a ruin's records are:
+s02_a_ruin_with_the_ruin_turned__2	rooms, a way in, and places to go.
+s02_a_ruin_with_the_ruin_turned__3	So a worksite is written as a ruin,
+s02_a_ruin_with_the_ruin_turned__4	with everything that looks like a ruin switched off.
+s02_a_ruin_with_the_ruin_turned__5	It has no walls, no drifting rock, and no cloud.
+s02_a_ruin_with_the_ruin_turned__6	One room to work in,
+s02_a_ruin_with_the_ruin_turned__7	and one solid lump where the station is.
+s02_a_ruin_with_the_ruin_turned__8	And there's one new record, the job.
+s02_a_ruin_with_the_ruin_turned__9	It's written like the barrier from last time,
+s02_a_ruin_with_the_ruin_turned__10	but it's never in anybody's way.
+s03_the_worksite_0	Here are four records.
+s03_the_worksite_1	The first is the worksite itself.
+s03_the_worksite_2	It has no Relic line, so it's a second ruin, beside the Hollow.
+s03_the_worksite_3	It sits at zero, zero, zero,
+s03_the_worksite_4	which is where the template puts the station.
+s03_the_worksite_5	It says walls, none, and debris, zero,
+s03_the_worksite_6	and it has no Atmosphere line.
+s03_the_worksite_7	Then one round room, fifteen hundred across from the middle.
+s03_the_worksite_8	Then comes a solid,
+s03_the_worksite_9	which takes the middle five hundred back out,
+s03_the_worksite_10	so a suit flies round the station and not through it.
+s03_the_worksite_11	And last the airlock.
+s03_the_worksite_12	It wears the role entrance,
+s03_the_worksite_13	so it's where the suit appears,
+s03_the_worksite_14	and where suit up is measured from.
+s04_when_the_offer_is_made_0	The rule is the one from last time.
+s04_when_the_offer_is_made_1	The ship has to be within three thousand of the entrance.
+s04_when_the_offer_is_made_2	Now, a ship doesn't always start that close.
+s04_when_the_offer_is_made_3	In my two tests it started twenty-three hundred away,
+s04_when_the_offer_is_made_4	and then forty-three hundred.
+s04_when_the_offer_is_made_5	So if the app offers nothing, fly toward the station.
+s04_when_the_offer_is_made_6	And with two ruins in one mission,
+s04_when_the_offer_is_made_7	the offer follows the ship.
+s04_when_the_offer_is_made_8	It's the worksite here, and the Hollow at the Hollow.
+s05_the_job_0	Now for the job itself.
+s05_the_job_1	Repair, three numbers for where, and one for how big.
+s05_the_job_2	I've put it just outside the hull, on the airlock's side.
+s05_the_job_3	It says Clear with, beam,
+s05_the_job_4	so the crew member welds it.
+s05_the_job_5	The tools are the ones from last time:
+s05_the_job_6	the beam, the tether,
+s05_the_job_7	or a check of somebody's skill.
+s06_a_quest_that_waits_0	When a job is done, the game sends a word.
+s06_a_quest_that_waits_1	It's the job's key, and then underscore repaired.
+s06_a_quest_that_waits_2	So my quest says done when, signal, mast repaired.
+s06_a_quest_that_waits_3	That's three words now that the game sends by itself.
+s06_a_quest_that_waits_4	A barrier has opened,
+s06_a_quest_that_waits_5	a job has been repaired,
+s06_a_quest_that_waits_6	or a ruin's piece has been taken.
+s06_a_quest_that_waits_7	Lint knows all three.
+s07_two_doors_one_word_0	Now here's the reason I kept this in the same mission.
+s07_two_doors_one_word_1	I have two places with the role entrance.
+s07_two_doors_one_word_2	The game needs both.
+s07_two_doors_one_word_3	But my story uses that word too.
+s07_two_doors_one_word_4	The first step says reach entrance, one thousand.
+s07_two_doors_one_word_5	And reach doesn't know which entrance I meant.
+s07_two_doors_one_word_6	So a suit that steps out of the airlock at the station
+s07_two_doors_one_word_7	is standing on an entrance,
+s07_two_doors_one_word_8	and the step finishes there.
+s07_two_doors_one_word_9	It pays, and it sends the crew to the altar,
+s07_two_doors_one_word_10	before they've left home.
+s07_two_doors_one_word_11	Lint can't see it.
+s07_two_doors_one_word_12	Both lines are correct.
+s07_two_doors_one_word_13	The cure is a role of my own.
+s07_two_doors_one_word_14	I add hollow door to the Way In,
+s07_two_doors_one_word_15	and the step waits for that.
+s08_lint_and_play_0	Lint is clean, so I start the game.
+s08_lint_and_play_1	The Boarding Party app names the worksite,
+s08_lint_and_play_2	so I suit up.
+s08_lint_and_play_3	There's one place on the list, the mast.
+s08_lint_and_play_4	I pick it, and the suit flies round.
+s08_lint_and_play_5	On Fire, the row says Repair, Survey Mast.
+s08_lint_and_play_6	I select it, I press again,
+s08_lint_and_play_7	and the banner says repair, twelve seconds.
+s08_lint_and_play_8	And then it's done.
+s08_lint_and_play_9	The quest is finished, and I never sent the word.
+s09_your_turn_0	Now it's your turn.
+s09_your_turn_1	Add a valve that's worked by hand,
+s09_your_turn_2	and a panel that's hauled into place.
+s09_your_turn_3	Write a quest for one of them.
+s09_your_turn_4	Then break one line where lint can see it,
+s09_your_turn_5	and one where it can't.
+s09_your_turn_6	Next time is the last one:
+s09_your_turn_7	the whole class, in one episode.

@@ -1,0 +1,113 @@
+s01_cold_open_0	For seven lectures, nobody has left the ship.
+s01_cold_open_1	Today, at last, somebody does.
+s01_cold_open_2	The ship stops at the door,
+s01_cold_open_3	and one of the crew goes in wearing a suit.
+s01_cold_open_4	They read the altar,
+s01_cold_open_5	they cut through a fallen slab,
+s01_cold_open_6	and they bring out the bowl by hand.
+s01_cold_open_7	And the part that surprised me is how little there is to write.
+s02_what_the_game_does_by_itself_0	Going outside is called EVA,
+s02_what_the_game_does_by_itself_1	and most of it is already in your mission.
+s02_what_the_game_does_by_itself_2	The game offers the crew a way out, at the door of any ruin you build.
+s02_what_the_game_does_by_itself_3	It puts them in a suit,
+s02_what_the_game_does_by_itself_4	it gives the suit a list of your places,
+s02_what_the_game_does_by_itself_5	and it flies the suit to the one they pick.
+s02_what_the_game_does_by_itself_6	You wrote the door in Lecture three.
+s02_what_the_game_does_by_itself_7	It's the place with the role entrance.
+s02_what_the_game_does_by_itself_8	The offer is made while the ship is within three thousand of that place,
+s02_what_the_game_does_by_itself_9	and it's taken back when the ship leaves.
+s02_what_the_game_does_by_itself_10	But not while somebody is still outside.
+s03_the_suit_0	A crew member in a suit gets a console of their own,
+s03_the_suit_1	with a handheld that has five apps.
+s03_the_suit_2	Nav is the list of places.
+s03_the_suit_3	Act is what a place says.
+s03_the_suit_4	Scan reads the room.
+s03_the_suit_5	Fire holds the tools.
+s03_the_suit_6	And Crew is the way home.
+s03_the_suit_7	There are three things to remember.
+s03_the_suit_8	A suit flies to places, and to nothing else.
+s03_the_suit_9	You can't steer it by hand.
+s03_the_suit_10	A hidden place isn't on the list until it's been found.
+s03_the_suit_11	And the tools reach six hundred, and no further.
+s04_a_place_to_stand_and_a_way_t_0	Now the first new record.
+s04_a_place_to_stand_and_a_way_t_1	A barrier is a ball of blocked space.
+s04_a_place_to_stand_and_a_way_t_2	Every way through it is shut, until somebody opens it.
+s04_a_place_to_stand_and_a_way_t_3	But look at what I type first.
+s04_a_place_to_stand_and_a_way_t_4	It's a place, on the near side of the door.
+s04_a_place_to_stand_and_a_way_t_5	That's because a suit can only fly to places,
+s04_a_place_to_stand_and_a_way_t_6	and its cutter only reaches six hundred.
+s04_a_place_to_stand_and_a_way_t_7	With no place beside the slab,
+s04_a_place_to_stand_and_a_way_t_8	nobody could ever get close enough to cut it.
+s04_a_place_to_stand_and_a_way_t_9	Then the slab itself.
+s04_a_place_to_stand_and_a_way_t_10	Barrier, three numbers for where, and one for how big.
+s04_a_place_to_stand_and_a_way_t_11	And Clear with, beam,
+s04_a_place_to_stand_and_a_way_t_12	which means the suit's cutter opens it.
+s05_the_slab_is_a_step_0	When a barrier opens, the game sends a word.
+s05_the_slab_is_a_step_1	It's the barrier's key, and then underscore opened.
+s05_the_slab_is_a_step_2	Mine is slab opened.
+s05_the_slab_is_a_step_3	So I write a step that waits for it.
+s05_the_slab_is_a_step_4	It goes after the altar,
+s05_the_slab_is_a_step_5	and the altar's step now reveals this one.
+s05_the_slab_is_a_step_6	I don't send that word anywhere.
+s05_the_slab_is_a_step_7	The game sends it,
+s05_the_slab_is_a_step_8	however the slab comes open.
+s06_the_bowl_by_hand_0	Last time Comms said the final word, in a call.
+s06_the_bowl_by_hand_1	Since Lecture five the game says it, when the bowl is taken.
+s06_the_bowl_by_hand_2	So Comms stops saying it.
+s06_the_bowl_by_hand_3	But there's a trap here, and it's worth a minute.
+s06_the_bowl_by_hand_4	The walls of a ruin don't hold a ship.
+s06_the_bowl_by_hand_5	So a ship could fly in and scoop up the bowl early,
+s06_the_bowl_by_hand_6	before the last step was listening.
+s06_the_bowl_by_hand_7	The word would be spent,
+s06_the_bowl_by_hand_8	and the story could never end.
+s06_the_bowl_by_hand_9	So I don't let the bowl exist yet.
+s06_the_bowl_by_hand_10	Comms gets a new answer, open the niche,
+s06_the_bowl_by_hand_11	and it sends a word of my own.
+s06_the_bowl_by_hand_12	And the niche says starts when, signal, that word.
+s06_the_bowl_by_hand_13	The step is always listening before the bowl is there.
+s06_the_bowl_by_hand_14	Then I change the objective,
+s06_the_bowl_by_hand_15	and I delete the quest from Lecture five,
+s06_the_bowl_by_hand_16	because the arc does its job now.
+s07_coming_home_and_the_clock_0	I don't want the game to end with somebody still outside.
+s07_coming_home_and_the_clock_1	So taking the bowl reveals one more step,
+s07_coming_home_and_the_clock_2	and that one is finished back at the station.
+s07_coming_home_and_the_clock_3	And I give the crew more time.
+s07_coming_home_and_the_clock_4	A suit is slower than a ship.
+s07_coming_home_and_the_clock_5	In my test it took about three minutes from the door to the altar.
+s07_coming_home_and_the_clock_6	So twenty minutes becomes forty.
+s08_lint_0	I run lint, and it's clean.
+s08_lint_1	Now I misspell the word on the step,
+s08_lint_2	and lint says nothing sends it.
+s08_lint_3	That's what I want.
+s08_lint_4	Next I delete the place beside the slab,
+s08_lint_5	and lint says clean.
+s08_lint_6	But that mission can't be finished.
+s08_lint_7	The slab is out of everyone's reach,
+s08_lint_8	and no file can tell lint how far a cutter reaches.
+s08_lint_9	So that's the check to do by eye.
+s08_lint_10	Every barrier needs a place within six hundred of it.
+s09_play_it_0	I fly to the door, and I stop the ship.
+s09_play_it_1	On my handheld there's a Boarding Party app,
+s09_play_it_2	and its button says suit up.
+s09_play_it_3	And now I'm outside.
+s09_play_it_4	I pick the Altar from the list, and the suit flies itself.
+s09_play_it_5	And here are the words I wrote four lectures ago,
+s09_play_it_6	read by somebody standing in front of the table.
+s09_play_it_7	On Comms I mark the Gallery,
+s09_play_it_8	and the Niche joins my list.
+s09_play_it_9	I pick it, and Nav says there's no way through.
+s09_play_it_10	So I go to the Gallery Door.
+s09_play_it_11	On Fire there's the slab.
+s09_play_it_12	I select it, I press again, and I wait twelve seconds.
+s09_play_it_13	The step is done.
+s09_play_it_14	Now for the niche.
+s09_play_it_15	Comms opens it, and there's the bowl.
+s09_play_it_16	I take it, I come aboard, and we fly home.
+s09_play_it_17	And that's the game.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Let an engineer work the slab loose by hand.
+s10_your_turn_2	Make the slab open by itself.
+s10_your_turn_3	Send someone out for the canisters.
+s10_your_turn_4	Then break one line where lint can see it,
+s10_your_turn_5	and one where it can't.
+s10_your_turn_6	Next time, the same suit goes to work outside a station.

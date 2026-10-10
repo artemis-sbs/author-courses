@@ -1,0 +1,371 @@
+1
+00:00:00,000 --> 00:00:03,478
+This is the last lecture of the class,
+
+2
+00:00:03,928 --> 00:00:06,972
+and there's almost nothing new in it.
+
+3
+00:00:08,772 --> 00:00:13,989
+Everything you've written since Lecture one is about to become one episode.
+
+4
+00:00:14,889 --> 00:00:17,933
+It has a beginning at the station,
+
+5
+00:00:18,383 --> 00:00:20,557
+a middle inside the ruin,
+
+6
+00:00:21,007 --> 00:00:23,180
+and an ending back home.
+
+7
+00:00:24,080 --> 00:00:30,167
+And today you learn to check it, from the first line to the last.
+
+8
+00:00:31,367 --> 00:00:35,280
+Before I change anything, I read what I have.
+
+9
+00:00:36,180 --> 00:00:38,789
+This table is the whole episode.
+
+10
+00:00:39,689 --> 00:00:42,298
+Each row is something that happens.
+
+11
+00:00:42,748 --> 00:00:46,226
+It says where it happens, who does it,
+
+12
+00:00:46,676 --> 00:00:48,415
+and what finishes it.
+
+13
+00:00:50,215 --> 00:00:53,259
+Seven of the rows are the story,
+
+14
+00:00:53,709 --> 00:00:58,057
+and the game is won when those seven are done.
+
+15
+00:00:58,957 --> 00:01:04,174
+The other five are what a curious crew finds on the way.
+
+16
+00:01:05,974 --> 00:01:10,322
+Draw a table like this for every episode you write.
+
+17
+00:01:10,772 --> 00:01:13,380
+Draw it first, before any record.
+
+18
+00:01:14,280 --> 00:01:17,324
+Every row needs something that finishes it,
+
+19
+00:01:17,774 --> 00:01:19,948
+and somebody who's able to.
+
+20
+00:01:21,148 --> 00:01:25,061
+Last time the mast was a quest by itself.
+
+21
+00:01:25,961 --> 00:01:28,135
+Now it opens the episode.
+
+22
+00:01:29,935 --> 00:01:32,109
+So I delete that quest,
+
+23
+00:01:32,559 --> 00:01:37,341
+and I type it again inside the arc, with four hashes.
+
+24
+00:01:38,241 --> 00:01:40,415
+It gets three more lines:
+
+25
+00:01:40,865 --> 00:01:43,909
+a Then, to reveal the next step,
+
+26
+00:01:44,359 --> 00:01:48,707
+and the two lines that make it count toward winning.
+
+27
+00:01:50,507 --> 00:01:53,985
+And the way in is no longer first,
+
+28
+00:01:54,435 --> 00:01:57,043
+so it starts when it's revealed.
+
+29
+00:01:58,243 --> 00:02:01,287
+Earlier the ship got a clue chain.
+
+30
+00:02:01,737 --> 00:02:03,476
+Comms logged some names,
+
+31
+00:02:03,926 --> 00:02:07,404
+and a later call had one more answer.
+
+32
+00:02:09,204 --> 00:02:13,552
+This is the same idea, for somebody in a suit.
+
+33
+00:02:14,452 --> 00:02:18,365
+At the altar, the answer that reads the marks
+
+34
+00:02:18,815 --> 00:02:22,293
+now learns a fact, and starts a quest.
+
+35
+00:02:23,193 --> 00:02:27,107
+Then the cairn gets a scene of its own.
+
+36
+00:02:28,007 --> 00:02:32,789
+And one of its answers says if learned, at least one.
+
+37
+00:02:34,589 --> 00:02:40,676
+So a crew member who read the marks can count the stones against them.
+
+38
+00:02:41,126 --> 00:02:45,039
+One who didn't just sees a pile of stones.
+
+39
+00:02:45,939 --> 00:02:50,287
+And the count sends the word that finishes the quest.
+
+40
+00:02:51,487 --> 00:02:54,096
+I run lint, and it's clean.
+
+41
+00:02:54,996 --> 00:02:58,039
+I misspell the quest on the answer,
+
+42
+00:02:58,489 --> 00:03:00,663
+and lint names the line.
+
+43
+00:03:02,463 --> 00:03:05,072
+But lint only reads a file.
+
+44
+00:03:05,522 --> 00:03:07,696
+It can't play an episode.
+
+45
+00:03:08,596 --> 00:03:12,074
+So the last check isn't lint at all.
+
+46
+00:03:13,274 --> 00:03:15,883
+The last check is a walk.
+
+47
+00:03:16,783 --> 00:03:19,826
+Every row of the episode, in order,
+
+48
+00:03:20,276 --> 00:03:24,189
+with what I expect written down before I start.
+
+49
+00:03:25,989 --> 00:03:30,772
+In row one, the quest list has one step, the mast.
+
+50
+00:03:31,672 --> 00:03:36,454
+In row two, near the station, the app offers the worksite.
+
+51
+00:03:37,354 --> 00:03:40,398
+I go out, I weld the mast,
+
+52
+00:03:40,848 --> 00:03:43,022
+and the next step appears.
+
+53
+00:03:43,922 --> 00:03:47,835
+I've got forty credits, and the table says forty.
+
+54
+00:03:49,635 --> 00:03:53,548
+Then I come aboard and fly to the door.
+
+55
+00:03:53,998 --> 00:03:57,041
+Ninety credits, and the table says ninety.
+
+56
+00:03:58,241 --> 00:04:03,893
+Now I suit up again, and this time the app names the Hollow.
+
+57
+00:04:05,693 --> 00:04:08,737
+At the ring, Comms logs the names.
+
+58
+00:04:09,637 --> 00:04:12,680
+At the altar the step is done,
+
+59
+00:04:13,130 --> 00:04:16,609
+and I read the marks on the rim.
+
+60
+00:04:17,509 --> 00:04:20,552
+There's the new quest in the list.
+
+61
+00:04:22,352 --> 00:04:24,961
+Comms plays the entry for Dace,
+
+62
+00:04:25,411 --> 00:04:28,889
+and marks the side room and the Gallery.
+
+63
+00:04:29,789 --> 00:04:32,833
+At the cairn, the side story finishes,
+
+64
+00:04:33,283 --> 00:04:36,761
+and the cutscene plays on the main screen.
+
+65
+00:04:37,661 --> 00:04:41,574
+And on my suit, there's the answer I earned.
+
+66
+00:04:42,474 --> 00:04:44,213
+I count the stones,
+
+67
+00:04:44,663 --> 00:04:46,402
+and there are forty-one.
+
+68
+00:04:47,602 --> 00:04:51,080
+Then the slab, twelve seconds with the beam.
+
+69
+00:04:51,980 --> 00:04:53,720
+Then it's the niche.
+
+70
+00:04:54,170 --> 00:04:57,648
+Comms opens it, and I take the bowl.
+
+71
+00:04:59,448 --> 00:05:02,491
+I come aboard, and we fly home.
+
+72
+00:05:03,391 --> 00:05:05,565
+Eight hundred and twenty credits,
+
+73
+00:05:06,015 --> 00:05:09,493
+and the table says eight hundred and twenty.
+
+74
+00:05:10,393 --> 00:05:12,133
+Every row has agreed.
+
+75
+00:05:13,933 --> 00:05:16,541
+Then I check the other ending.
+
+76
+00:05:17,441 --> 00:05:22,224
+I set the clock to twenty seconds, and I sit still.
+
+77
+00:05:22,674 --> 00:05:24,413
+There's my Lose sentence.
+
+78
+00:05:25,313 --> 00:05:28,791
+And the log file is empty after both.
+
+79
+00:05:29,991 --> 00:05:33,035
+Here's one honest note before you go.
+
+80
+00:05:33,935 --> 00:05:38,283
+In Class three you wrote a story for one person.
+
+81
+00:05:39,183 --> 00:05:42,226
+In a ruin, that isn't working yet.
+
+82
+00:05:42,676 --> 00:05:47,024
+The story is handed over, and then it never starts.
+
+83
+00:05:48,824 --> 00:05:52,737
+So for now, give the whole crew the story,
+
+84
+00:05:53,187 --> 00:05:55,796
+the way I did with Forty-One.
+
+85
+00:05:56,696 --> 00:06:00,174
+The page lists that, and three other things,
+
+86
+00:06:00,624 --> 00:06:03,667
+so you don't go looking for them.
+
+87
+00:06:04,867 --> 00:06:07,041
+And now the class project.
+
+88
+00:06:07,941 --> 00:06:12,724
+Make a new mission, and write an episode of your own.
+
+89
+00:06:14,524 --> 00:06:16,263
+Draw the table first.
+
+90
+00:06:17,163 --> 00:06:22,815
+Build the ruin, give it a voice, and hide a piece in it.
+
+91
+00:06:23,715 --> 00:06:28,498
+Write the arc, with a win, a loss and a clock.
+
+92
+00:06:30,298 --> 00:06:33,341
+Then write your walk, and walk it.
+
+93
+00:06:34,241 --> 00:06:39,459
+You're finished when your table and your game agree on every row.

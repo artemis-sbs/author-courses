@@ -1,0 +1,367 @@
+1
+00:00:00,000 --> 00:00:03,478
+Last time the crew went into a ruin.
+
+2
+00:00:04,378 --> 00:00:06,987
+Today there's no ruin at all.
+
+3
+00:00:08,787 --> 00:00:12,265
+It's the same suit, and the same tools,
+
+4
+00:00:12,715 --> 00:00:15,759
+outside a station, on a repair job.
+
+5
+00:00:16,659 --> 00:00:20,137
+A crew member comes out of the airlock,
+
+6
+00:00:20,587 --> 00:00:24,065
+flies round the hull, and welds a mast.
+
+7
+00:00:25,865 --> 00:00:29,778
+And it's one more record than you already know.
+
+8
+00:00:30,978 --> 00:00:38,370
+A crew member can go outside wherever the game has a space to fly a suit in.
+
+9
+00:00:39,270 --> 00:00:41,878
+That's what a ruin's records are:
+
+10
+00:00:42,328 --> 00:00:45,807
+rooms, a way in, and places to go.
+
+11
+00:00:47,607 --> 00:00:51,085
+So a worksite is written as a ruin,
+
+12
+00:00:51,535 --> 00:00:55,448
+with everything that looks like a ruin switched off.
+
+13
+00:00:56,348 --> 00:01:00,696
+It has no walls, no drifting rock, and no cloud.
+
+14
+00:01:01,596 --> 00:01:03,770
+One room to work in,
+
+15
+00:01:04,220 --> 00:01:07,698
+and one solid lump where the station is.
+
+16
+00:01:09,498 --> 00:01:12,541
+And there's one new record, the job.
+
+17
+00:01:13,441 --> 00:01:16,920
+It's written like the barrier from last time,
+
+18
+00:01:17,370 --> 00:01:19,978
+but it's never in anybody's way.
+
+19
+00:01:21,178 --> 00:01:22,917
+Here are four records.
+
+20
+00:01:23,817 --> 00:01:26,426
+The first is the worksite itself.
+
+21
+00:01:26,876 --> 00:01:32,528
+It has no Relic line, so it's a second ruin, beside the Hollow.
+
+22
+00:01:33,428 --> 00:01:36,037
+It sits at zero, zero, zero,
+
+23
+00:01:36,487 --> 00:01:39,965
+which is where the template puts the station.
+
+24
+00:01:40,865 --> 00:01:43,909
+It says walls, none, and debris, zero,
+
+25
+00:01:44,359 --> 00:01:46,967
+and it has no Atmosphere line.
+
+26
+00:01:48,767 --> 00:01:53,115
+Then one round room, fifteen hundred across from the middle.
+
+27
+00:01:54,015 --> 00:01:55,754
+Then comes a solid,
+
+28
+00:01:56,204 --> 00:01:59,683
+which takes the middle five hundred back out,
+
+29
+00:02:00,133 --> 00:02:04,915
+so a suit flies round the station and not through it.
+
+30
+00:02:06,715 --> 00:02:08,454
+And last the airlock.
+
+31
+00:02:09,354 --> 00:02:11,528
+It wears the role entrance,
+
+32
+00:02:11,978 --> 00:02:14,587
+so it's where the suit appears,
+
+33
+00:02:15,037 --> 00:02:18,080
+and where suit up is measured from.
+
+34
+00:02:19,280 --> 00:02:22,759
+The rule is the one from last time.
+
+35
+00:02:23,209 --> 00:02:27,991
+The ship has to be within three thousand of the entrance.
+
+36
+00:02:29,791 --> 00:02:33,270
+Now, a ship doesn't always start that close.
+
+37
+00:02:34,170 --> 00:02:38,083
+In my two tests it started twenty-three hundred away,
+
+38
+00:02:38,533 --> 00:02:40,272
+and then forty-three hundred.
+
+39
+00:02:41,172 --> 00:02:45,520
+So if the app offers nothing, fly toward the station.
+
+40
+00:02:47,320 --> 00:02:50,363
+And with two ruins in one mission,
+
+41
+00:02:50,813 --> 00:02:52,987
+the offer follows the ship.
+
+42
+00:02:53,887 --> 00:02:58,235
+It's the worksite here, and the Hollow at the Hollow.
+
+43
+00:02:59,435 --> 00:03:01,609
+Now for the job itself.
+
+44
+00:03:02,509 --> 00:03:06,857
+Repair, three numbers for where, and one for how big.
+
+45
+00:03:07,757 --> 00:03:12,539
+I've put it just outside the hull, on the airlock's side.
+
+46
+00:03:14,339 --> 00:03:16,513
+It says Clear with, beam,
+
+47
+00:03:16,963 --> 00:03:19,572
+so the crew member welds it.
+
+48
+00:03:20,472 --> 00:03:23,950
+The tools are the ones from last time:
+
+49
+00:03:24,400 --> 00:03:26,139
+the beam, the tether,
+
+50
+00:03:26,589 --> 00:03:29,198
+or a check of somebody's skill.
+
+51
+00:03:30,398 --> 00:03:34,746
+When a job is done, the game sends a word.
+
+52
+00:03:35,646 --> 00:03:39,124
+It's the job's key, and then underscore repaired.
+
+53
+00:03:40,024 --> 00:03:43,937
+So my quest says done when, signal, mast repaired.
+
+54
+00:03:45,737 --> 00:03:50,085
+That's three words now that the game sends by itself.
+
+55
+00:03:50,985 --> 00:03:52,724
+A barrier has opened,
+
+56
+00:03:53,174 --> 00:03:55,348
+a job has been repaired,
+
+57
+00:03:55,798 --> 00:03:58,841
+or a ruin's piece has been taken.
+
+58
+00:03:59,741 --> 00:04:01,480
+Lint knows all three.
+
+59
+00:04:02,680 --> 00:04:07,463
+Now here's the reason I kept this in the same mission.
+
+60
+00:04:08,363 --> 00:04:11,841
+I have two places with the role entrance.
+
+61
+00:04:12,291 --> 00:04:14,030
+The game needs both.
+
+62
+00:04:15,830 --> 00:04:18,874
+But my story uses that word too.
+
+63
+00:04:19,774 --> 00:04:23,252
+The first step says reach entrance, one thousand.
+
+64
+00:04:24,152 --> 00:04:27,630
+And reach doesn't know which entrance I meant.
+
+65
+00:04:29,430 --> 00:04:34,648
+So a suit that steps out of the airlock at the station
+
+66
+00:04:35,098 --> 00:04:37,272
+is standing on an entrance,
+
+67
+00:04:37,722 --> 00:04:39,896
+and the step finishes there.
+
+68
+00:04:40,796 --> 00:04:45,143
+It pays, and it sends the crew to the altar,
+
+69
+00:04:45,593 --> 00:04:47,333
+before they've left home.
+
+70
+00:04:49,133 --> 00:04:50,872
+Lint can't see it.
+
+71
+00:04:51,322 --> 00:04:53,061
+Both lines are correct.
+
+72
+00:04:53,961 --> 00:04:57,439
+The cure is a role of my own.
+
+73
+00:04:58,339 --> 00:05:01,817
+I add hollow door to the Way In,
+
+74
+00:05:02,267 --> 00:05:04,876
+and the step waits for that.
+
+75
+00:05:06,076 --> 00:05:09,554
+Lint is clean, so I start the game.
+
+76
+00:05:10,454 --> 00:05:13,498
+The Boarding Party app names the worksite,
+
+77
+00:05:13,948 --> 00:05:15,687
+so I suit up.
+
+78
+00:05:17,487 --> 00:05:20,965
+There's one place on the list, the mast.
+
+79
+00:05:21,415 --> 00:05:24,893
+I pick it, and the suit flies round.
+
+80
+00:05:25,793 --> 00:05:29,272
+On Fire, the row says Repair, Survey Mast.
+
+81
+00:05:30,172 --> 00:05:32,780
+I select it, I press again,
+
+82
+00:05:33,230 --> 00:05:36,274
+and the banner says repair, twelve seconds.
+
+83
+00:05:38,074 --> 00:05:39,813
+And then it's done.
+
+84
+00:05:40,263 --> 00:05:44,611
+The quest is finished, and I never sent the word.
+
+85
+00:05:45,811 --> 00:05:47,550
+Now it's your turn.
+
+86
+00:05:48,450 --> 00:05:51,493
+Add a valve that's worked by hand,
+
+87
+00:05:51,943 --> 00:05:54,987
+and a panel that's hauled into place.
+
+88
+00:05:55,887 --> 00:05:58,930
+Write a quest for one of them.
+
+89
+00:06:00,730 --> 00:06:04,643
+Then break one line where lint can see it,
+
+90
+00:06:05,093 --> 00:06:07,267
+and one where it can't.
+
+91
+00:06:08,167 --> 00:06:10,776
+Next time is the last one:
+
+92
+00:06:11,226 --> 00:06:13,835
+the whole class, in one episode.

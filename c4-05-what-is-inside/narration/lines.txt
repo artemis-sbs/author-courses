@@ -1,0 +1,99 @@
+s01_cold_open_0	So far the ruin has rooms, and places, and a voice.
+s01_cold_open_1	Today it has things in it.
+s01_cold_open_2	There are sample canisters in the big room,
+s01_cold_open_3	and a stone bowl at the back of the built one.
+s01_cold_open_4	A ship that flies up to either one takes it aboard.
+s01_cold_open_5	And when the bowl is taken,
+s01_cold_open_6	the game itself tells the story so.
+s02_a_thing_a_place_and_a_word_0	It takes three records to make a thing you can take.
+s02_a_thing_a_place_and_a_word_1	The item says what the thing is.
+s02_a_thing_a_place_and_a_word_2	A place says where one of them lies.
+s02_a_thing_a_place_and_a_word_3	And a quest says what the story does about it.
+s02_a_thing_a_place_and_a_word_4	A quest can wait in two ways.
+s02_a_thing_a_place_and_a_word_5	It can wait for a kind of thing, by its key,
+s02_a_thing_a_place_and_a_word_6	and that's for ordinary finds.
+s02_a_thing_a_place_and_a_word_7	Or it can wait for a word,
+s02_a_thing_a_place_and_a_word_8	and that's for the one thing the whole ruin is about.
+s02_a_thing_a_place_and_a_word_9	The game sends that word by itself.
+s03_the_items_section_0	Items live in a section of their own.
+s03_the_items_section_1	I find the comment above Characters,
+s03_the_items_section_2	and I type the new section above it.
+s03_the_items_section_3	Two hashes for the section, and three for the item.
+s03_the_items_section_4	The key is canister,
+s03_the_items_section_5	and that's the word everything else will use.
+s03_the_items_section_6	Type says item, slash, quest,
+s03_the_items_section_7	which means the story carries it.
+s03_the_items_section_8	And Art is what it looks like.
+s03_the_items_section_9	That last line matters more than you'd think.
+s03_the_items_section_10	A ship takes a thing by flying into it,
+s03_the_items_section_11	and only some shapes can be flown into.
+s03_the_items_section_12	The table on the page lists them.
+s03_the_items_section_13	Leave the line out, or misspell it,
+s03_the_items_section_14	and the thing just sits there for the whole game.
+s03_the_items_section_15	Lint won't tell you.
+s04_a_place_that_holds_it_0	Now a place for it.
+s04_a_place_that_holds_it_1	This is a place like the ones from Lecture three,
+s04_a_place_that_holds_it_2	with two new lines.
+s04_a_place_that_holds_it_3	Item, and the item's key, means one of these lies here.
+s04_a_place_that_holds_it_4	And Qty, three, means it's worth three.
+s04_a_place_that_holds_it_5	The crew takes all three in one go.
+s04_a_place_that_holds_it_6	So this is one thing to pick up,
+s04_a_place_that_holds_it_7	and it's worth three in the hold.
+s04_a_place_that_holds_it_8	Remember that for the next step.
+s05_a_quest_that_waits_for_it_0	Here's the quest that waits for them.
+s05_a_quest_that_waits_for_it_1	Everything in it is from Class one, except one line.
+s05_a_quest_that_waits_for_it_2	Done when, collect, canister.
+s05_a_quest_that_waits_for_it_3	The word after collect is the item's key.
+s05_a_quest_that_waits_for_it_4	And here's the catch.
+s05_a_quest_that_waits_for_it_5	The game counts pick-ups,
+s05_a_quest_that_waits_for_it_6	it doesn't count what a pick-up is worth.
+s05_a_quest_that_waits_for_it_7	My cache is one pick-up.
+s05_a_quest_that_waits_for_it_8	If I write collect three canister,
+s05_a_quest_that_waits_for_it_9	the game waits for three separate pick-ups,
+s05_a_quest_that_waits_for_it_10	and with one cache, it waits forever.
+s05_a_quest_that_waits_for_it_11	Lint says clean either way.
+s05_a_quest_that_waits_for_it_12	So I write collect canister, with no number.
+s06_the_piece_0	Now the thing the ruin was hiding.
+s06_the_piece_1	First the item, a stone bowl.
+s06_the_piece_2	Then I go back to the Niche, and I change two lines.
+s06_the_piece_3	On the Roles line I add a comma, and relic underscore piece.
+s06_the_piece_4	That role isn't mine.
+s06_the_piece_5	It's the game's own word,
+s06_the_piece_6	the way entrance was in Lecture three.
+s06_the_piece_7	It means the thing in this place is the piece.
+s06_the_piece_8	And then Item, stone bowl.
+s06_the_piece_9	It takes both lines.
+s06_the_piece_10	The role alone is an empty place,
+s06_the_piece_11	and the item alone is just another find.
+s07_the_word_the_game_sends_0	And the second quest.
+s07_the_word_the_game_sends_1	Done when, signal, hollow taken.
+s07_the_word_the_game_sends_2	Now, nothing in my file sends that word,
+s07_the_word_the_game_sends_3	and lint still says clean.
+s07_the_word_the_game_sends_4	That's because the game sends it.
+s07_the_word_the_game_sends_5	It takes the key of the ruin, which is hollow,
+s07_the_word_the_game_sends_6	and it adds underscore taken.
+s07_the_word_the_game_sends_7	It's the ruin's key.
+s07_the_word_the_game_sends_8	It's not the place's, and it's not the thing's.
+s07_the_word_the_game_sends_9	Lint will catch you if you use either of those.
+s07_the_word_the_game_sends_10	The word is sent once.
+s07_the_word_the_game_sends_11	So the quest has to be running before anybody can reach the bowl.
+s07_the_word_the_game_sends_12	That's why this one starts at once.
+s08_lint_and_play_0	I run lint, and it's clean.
+s08_lint_and_play_1	Now I take out the Art line,
+s08_lint_and_play_2	and lint is still clean.
+s08_lint_and_play_3	That's the one to check by eye, so I put it back.
+s08_lint_and_play_4	Then I start the game.
+s08_lint_and_play_5	Both quests are in the list.
+s08_lint_and_play_6	I fly into the Nave and straight at the canisters.
+s08_lint_and_play_7	There's the pick-up, times three, and the first quest is done.
+s08_lint_and_play_8	Now the Gallery, all the way to the back.
+s08_lint_and_play_9	And there's the stone bowl.
+s08_lint_and_play_10	I take it, and the second quest is done.
+s08_lint_and_play_11	And I never wrote the line that said so.
+s09_your_turn_0	Now it's your turn.
+s09_your_turn_1	Add a second cache, and make the quest want both.
+s09_your_turn_2	Make the canisters appear only when the ship comes near.
+s09_your_turn_3	Make the bowl appear only when Comms has heard Rook out.
+s09_your_turn_4	Then break one line where lint can see it,
+s09_your_turn_5	and one where it can't.
+s09_your_turn_6	Later in this class, someone goes in and takes that bowl by hand.

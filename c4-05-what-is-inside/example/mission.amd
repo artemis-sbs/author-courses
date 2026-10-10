@@ -1,0 +1,247 @@
+// Every piece of authored CONTENT in this mission lives in this one file. story.mast holds
+// only the logic that reacts to it.
+//
+// The shape is a table of contents: one `#` root, a `##` section per loader, and `###` /
+// `####` records inside. story.mast parses this once and hands each section to its loader.
+//
+// A record is `### [Display Name](key)`, an optional `---` fenced block of fields, then
+// body prose. Comments are `//` - note that .mast uses `#` instead.
+
+# [Sample Mission](sample_mission)
+
+
+// ---- Quests. Nested records are steps of the arc above them, addressed `arc/step`.
+## [Quests](quests)
+
+### [First Contact](first_contact)
+---
+Arc
+Scope: shared
+Starts when: at once
+---
+A derelict has drifted into the sector. Find out what happened to it.
+
+#### [Find the Derelict](find)
+---
+Scope: shared
+Starts when: at once
+Done when: signal derelict_found
+Then: reveal first_contact/study
+---
+Fly out and locate the drifting hulk.
+
+#### [Study the Derelict](study)
+---
+Scope: shared
+Starts when: revealed
+Done when: signal derelict_scanned
+---
+Science should take a full scan of the hull.
+
+### [Marker One](marker_one)
+---
+Beat
+Starts when: reach altar 600
+Action:
+  - rook hails rook_altar
+---
+The ship comes close to the altar, and the old survey marker starts to play.
+
+
+### [What the Survey Left](left)
+---
+Scope: shared
+Starts when: at once
+Objective: Pick up the survey canisters in The Nave
+Done when: collect canister
+Reward: 60 credits
+---
+The first survey left its samples behind. Bring them out.
+
+### [The Bowl](bowl)
+---
+Scope: shared
+Starts when: at once
+Objective: Take the stone bowl out of the niche
+Done when: signal hollow_taken
+Reward: 200 credits
+---
+Something small and heavy sits in the niche at the back of The Gallery.
+
+// ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
+// it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
+// several readings picked at random - so a second scan does not read identically.
+## [Scans](scans)
+
+### [Derelict Hull](derelict_scan)
+---
+Scan of: derelict
+Tab: scan
+---
+% The hull is cold. Whatever happened here happened a long time ago.
+% Hull plating is intact but every port is dark. No power anywhere aboard.
+
+### [Derelict Materials](derelict_mat)
+---
+Scan of: derelict
+Tab: mat
+---
+% Scoring along the plating matches no weapon in use in this sector.
+
+
+## [Relics](relics)
+
+### [The Hollow](hollow)
+---
+Loc: 0, 0, 20000
+Walls: rock
+Seed: 12
+Debris: 30
+Gaps: 0.2
+Atmosphere: purple
+---
+Older than anyone who could have built it. Three rooms, as far as anyone knows.
+
+### [The Mouth](mouth)
+---
+Relic: hollow
+Chamber: 0, 0, 0, 900
+---
+The way in. Wide, and worn smooth.
+
+### [The Nave](nave)
+---
+Relic: hollow
+Chamber: 3000, 0, 0, 1100
+Passage to: mouth 350
+---
+The big room. Whatever this place was for, it happened here.
+
+### [The Vault](vault)
+---
+Relic: hollow
+Chamber: 3000, 0, 2800, 700
+Passage to: nave 300
+Art: plain_asteroid_9
+---
+The far end. Small, round, and a long way from the door.
+
+### [The Gallery](gallery)
+---
+Relic: hollow
+Box: 3000, 0, -1900, 600, 400, 800
+Passage to: nave 300
+Walls: blocks
+---
+A built room, with flat walls and real corners. Somebody added this later.
+
+### [The Ring](ring)
+---
+Relic: hollow
+Prop: 1400, 0, 0
+Dress: generic-torus 4
+Facing: nave
+---
+A hoop of worked metal, set across the first passage. You fly through it.
+
+### [The Way In](way_in)
+---
+Relic: hollow
+Point: 0, 0, -700
+Roles: entrance
+---
+Where a ship arrives. The name on the map sits here.
+
+### [The Altar](altar)
+---
+Relic: hollow
+Point: 3000, 0, 2800
+Roles: altar
+Scene: altar_look
+Scan: A stone table, cut from the floor of the room. Its top is worn into a shallow bowl.
+---
+The middle of the Vault. Whatever was kept here is gone.
+
+### [The Niche](niche)
+---
+Relic: hollow
+Point: 3000, 0, -2500
+Roles: niche, relic_piece
+Hidden: yes
+Item: stone_bowl
+---
+A recess at the back of the Gallery. Easy to miss.
+
+### [The Cache](cache)
+---
+Relic: hollow
+Point: 3600, 0, 500
+Roles: cache
+Item: canister
+Qty: 3
+---
+A stack of sample tubes against the wall of the Nave. The first survey left them.
+
+
+// ---- Items. The things a crew can find and carry away.
+## [Items](items)
+
+### [Survey Canister](canister)
+---
+Type: item/quest
+Art: container_small_1a
+---
+A sealed sample tube from the first survey. The label has faded.
+
+### [The Stone Bowl](stone_bowl)
+---
+Type: item/quest
+Art: alien_small_2a
+---
+A shallow bowl of grey stone. It fits the hollow worn into the top of the altar.
+
+// ---- Characters. The voices in the story.
+## [Characters](characters)
+
+### [Surveyor Rook](rook)
+---
+Face: terran_male
+---
+Led the first survey of The Hollow, forty years ago. He left recordings behind.
+
+
+// ---- Dialogue. What is said, and what the crew can say back.
+## [Dialogue](dialogue)
+
+### [Rook at the Altar](rook_altar)
+---
+Speaker: rook
+When: hail
+Title: A recording at the altar
+---
+% Survey marker one. If you can hear this, you are where I stood.
+% Marker one, the Vault. Whoever you are, you are the first here since us.
+
+- [Play the rest.](rook_more)
+- [Shut it off.]()
+
+### [The Rest of It](rook_more)
+---
+Speaker: rook
+---
+% There was something on this table when we came. We took it. Look in the Gallery, at the back.
+
+- [Mark the Gallery.]() ; reveal niche
+- [End playback.]()
+
+### [At the Altar](altar_look)
+% A stone table, one piece with the floor. Its top is worn into a shallow bowl, and the bowl is empty.
+% The table is cut from the floor of the room. Something sat in the bowl on top of it for a very long time.
+
+- [Read the marks on the rim](altar_marks)
+- [Leave it alone]()
+
+### [The Marks](altar_marks)
+% Tally marks, in sets of five. Somebody counted days here, and then stopped.
+
+- [Step back]()
