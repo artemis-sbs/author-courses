@@ -1,0 +1,69 @@
+// Customs House: a place the crew leaves the ship for. This file is the whole site:
+// the call that comes when the ship docks, and the rooms the party walks through.
+// The landmark in kestrel_verge.amd says `Site: customs`, and that is this file's name.
+
+# [Customs House](customs)
+
+## [Voices](voices)
+
+### [The Clerk](customs_clerk)
+---
+Face: terran_female
+Roles: narrator
+Color: "#8df"
+---
+Stamps what is put in front of her.
+
+## [Hails](hails)
+
+### [Customs Answers](customs_call)
+---
+Speaker: customs_clerk
+Title: Customs House
+Color: "#8df"
+---
+% Customs. Nothing to declare? Then come aboard and look around, if you must.
+
+- [Assemble a boarding party]() ; signal boarding_down
+- [Stay aboard]()
+
+## [Scenes](boarding)
+
+### [The Counter](customs_counter)
+---
+Speaker: customs_clerk
+---
+%{learned the manifest < 1} A long counter and one clerk, who does not look up.
+%{learned the manifest} The clerk has turned the manifest face down. She still does not look up.
+
+- [Read the manifest on the counter](customs_manifest) ; learn the manifest, signal manifest_read
+- [Go through to the back office](customs_office)
+- [Beam back up]()
+
+### [The Manifest](customs_manifest)
+---
+Speaker: customs_clerk
+---
+% Forty crates declared for Tally Yard. Every line is initialed, and every time it is the same letter.
+
+- [Back to the counter](customs_counter)
+- [Beam back up]()
+
+### [The Back Office](customs_office)
+---
+Speaker: customs_clerk
+---
+% Shelves of stamped forms, and a kettle that has boiled dry.
+
+- [Ask whose initial is on the manifest](customs_initial) if learned the manifest
+- [Back to the counter](customs_counter)
+- [Beam back up]()
+
+### [The Initial](customs_initial)
+---
+Speaker: customs_clerk
+---
+% "K. That is Kell, who keeps the yard. He signs for everything, and nobody checks him."
+
+- [Back to the counter](customs_counter)
+- [Beam back up]()

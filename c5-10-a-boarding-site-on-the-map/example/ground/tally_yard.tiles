@@ -1,0 +1,28 @@
+area: tally_yard
+title: Tally Yard
+tileset: starter
+entry: pad
+legend:
+  .: dust
+  #: rock
+  =: pad
+  _: floor
+  W: wall
+  P: pad @pad
+  D: floor @yard_door
+  T: dust @yard_terminal
+  k: dust @yard_keeper
+  c: dust @yard_keycard
+  s: dust @yard_loader
+  L: floor @yard_ledger
+---
+########################
+#......................#
+#..===.......WWWWWWW...#
+#..=P=..k....W_____W...#
+#..===.......W__L__W...#
+#............WWWDWWW...#
+#......c.......T.......#
+#..................s...#
+#......................#
+########################

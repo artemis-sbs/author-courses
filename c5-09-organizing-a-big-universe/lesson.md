@@ -486,8 +486,9 @@ You are done when all five are true:
 
 ## Next
 
-Lecture 10, a boarding site written as a scene, is not written yet. Lecture 11 puts a
-ruin on the map: a place the crew flies into, and then leaves the ship for.
+Lecture 10 puts two boarding sites on the map: a place of rooms and choices, and a
+place with a map the party walks. Lecture 11 puts a ruin there: a place the crew flies
+into, and then goes outside in suits.
 
 ## Further reading
 

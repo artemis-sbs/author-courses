@@ -33,13 +33,17 @@ what a finished check looks like.
 - A crew for the last step: three people, or one patient friend. You can do everything
   before that alone.
 
-Lecture 10 is not written yet. Lectures 11 and 15 are, and this capstone needs neither.
+This capstone needs none of Lectures 10, 11 and 15.
 
 - **If you took Lecture 15,** your `kestrel_verge.amd` says `Mode: campaign` and has four
   chapters at its end. Both sittings on this page were walked again with them in the
   file and nobody in the Admiral's seat. Every row was the same.
 - **If you took Lecture 11,** your universe has a ruin in it, and three things on this
   page read differently for you. Lecture 11's last section lists them.
+- **If you took Lecture 10,** your universe has two boarding sites in the home system,
+  and three things on this page read differently for you. Lecture 10's section "What
+  changes in later lectures" lists them. This page's two sittings were not walked
+  again with the sites in the file.
 
 This page leans on earlier ones and does not explain them again.
 
@@ -197,9 +201,9 @@ goes wrong" table is the first thing to read.
 
 A capstone is also a list of what is missing. Each of these was measured during this
 class. None of them is your mistake, and each is on the list the game's makers work
-from. Two rows that used to be here are gone, because they are mended: a story beat
-can move a crew's standing now (Lecture 7), and your own universe can have an Admiral
-(Lecture 15).
+from. Three rows that used to be here are gone, because they are mended: a story beat
+can move a crew's standing now (Lecture 7), the crew can board a place (Lecture 10),
+and your own universe can have an Admiral (Lecture 15).
 
 | It does not | What you do meanwhile |
 |---|---|
@@ -207,7 +211,6 @@ can move a crew's standing now (Lecture 7), and your own universe can have an Ad
 | Let a story move on because of something the Admiral did. Nothing the Admiral builds or researches sends a signal a quest can wait for (Lecture 15) | Keep the Admiral beside the story, not in it |
 | Turn a captain into a rival with `Rival when:` (Lecture 8) | Build the rival from guarded lines and answers, as Lecture 8 does |
 | Lint clean. The three `ledger_read` warnings are wrong, and stay (Lecture 9) | Count them. Three, about that one word, is today's `clean` |
-| Let the crew board a place | Lecture 10, when it is written. A ruin the crew flies into and suits up at is Lecture 11, and it works |
 | Tell you how the crew reaches Kestrel Traffic on Comms (Lecture 9) | Find it on a real screen, and write it on your session card |
 
 ## The capstone rubric

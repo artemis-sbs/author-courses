@@ -1,0 +1,122 @@
+s01_cold_open_0	Your crew has spent this whole class on the bridge.
+s01_cold_open_1	Today they get up,
+s01_cold_open_2	and they leave the ship, twice over.
+s01_cold_open_3	Once into a place made of rooms and choices.
+s01_cold_open_4	And once onto a map they walk across.
+s01_cold_open_5	And both of them hang on one line of a landmark.
+s02_one_line_on_a_landmark_0	Here's a station, like the ones you've written before.
+s02_one_line_on_a_landmark_1	It's in the home system,
+s02_one_line_on_a_landmark_2	so nobody has to fly anywhere.
+s02_one_line_on_a_landmark_3	And it has one new line.
+s02_one_line_on_a_landmark_4	Site, and a key.
+s02_one_line_on_a_landmark_5	That line says the crew can leave the ship here.
+s02_one_line_on_a_landmark_6	And the key is the name of a file.
+s02_one_line_on_a_landmark_7	Customs, dot a m d.
+s03_the_site_s_file_0	So I make that file,
+s03_the_site_s_file_1	and the whole place goes in it.
+s03_the_site_s_file_2	It has three chapters in it.
+s03_the_site_s_file_3	Voices says who's talking.
+s03_the_site_s_file_4	Hails is the call that comes when we dock.
+s03_the_site_s_file_5	Look at this answer.
+s03_the_site_s_file_6	After it comes a semicolon, the word signal, and boarding down.
+s03_the_site_s_file_7	That's the game's own word,
+s03_the_site_s_file_8	and it's what sends a party.
+s03_the_site_s_file_9	Then come the rooms,
+s03_the_site_s_file_10	and the first one is where they arrive.
+s03_the_site_s_file_11	Every room has a way back,
+s03_the_site_s_file_12	and every room has a way home.
+s04_a_fact_and_a_step_of_story_0	Two more things on this one answer.
+s04_a_fact_and_a_step_of_story_1	The first is learn the manifest.
+s04_a_fact_and_a_step_of_story_2	Now the party knows a fact,
+s04_a_fact_and_a_step_of_story_3	and the place keeps it.
+s04_a_fact_and_a_step_of_story_4	This line is only spoken before they know it,
+s04_a_fact_and_a_step_of_story_5	and this one only after.
+s04_a_fact_and_a_step_of_story_6	And then signal, manifest read.
+s04_a_fact_and_a_step_of_story_7	That word is mine.
+s04_a_fact_and_a_step_of_story_8	Over in the universe file, I add a step of story
+s04_a_fact_and_a_step_of_story_9	that's done when it hears that same word.
+s04_a_fact_and_a_step_of_story_10	That's how a place finishes a step.
+s05_lint_and_play_0	Lint has six warnings now.
+s05_lint_and_play_1	Three are old friends from last time.
+s05_lint_and_play_2	The three new ones are wrong in the same way.
+s05_lint_and_play_3	Lint can't see the game listening for boarding down,
+s05_lint_and_play_4	and it doesn't join a signal across two files.
+s05_lint_and_play_5	So I count them, and I keep them.
+s05_lint_and_play_6	Now let's dock with it.
+s05_lint_and_play_7	A call comes in from the Customs House.
+s05_lint_and_play_8	Comms answers, and sends a party.
+s05_lint_and_play_9	And here's the counter.
+s05_lint_and_play_10	I read the manifest,
+s05_lint_and_play_11	and the step is done and paid.
+s05_lint_and_play_12	Back at the counter,
+s05_lint_and_play_13	the clerk has a different line for me now.
+s06_the_same_idea_walked_0	Now the second place, and here's the rule for it.
+s06_the_same_idea_walked_1	Say it with me.
+s06_the_same_idea_walked_2	The landmark says site, tally yard.
+s06_the_same_idea_walked_3	The map's first line says area, tally yard.
+s06_the_same_idea_walked_4	It's the same key,
+s06_the_same_idea_walked_5	and nothing else joins them.
+s06_the_same_idea_walked_6	A map needs pictures,
+s06_the_same_idea_walked_7	and they come in two art packs.
+s06_the_same_idea_walked_8	So I add two lines to story dot json,
+s06_the_same_idea_walked_9	and I watch my commas.
+s06_the_same_idea_walked_10	One line at the end of the settings file.
+s06_the_same_idea_walked_11	And then I fetch them, once.
+s07_the_map_and_its_file_0	I'm handing you this map finished,
+s07_the_map_and_its_file_1	because drawing one is a class of its own.
+s07_the_map_and_its_file_2	Read it as a picture.
+s07_the_map_and_its_file_3	There's a landing pad on the left,
+s07_the_map_and_its_file_4	and a walled house with one door.
+s07_the_map_and_its_file_5	And there's the first line, area, tally yard.
+s07_the_map_and_its_file_6	Then the site's own file.
+s07_the_map_and_its_file_7	It has the same call as before.
+s07_the_map_and_its_file_8	And then what stands on the map.
+s07_the_map_and_its_file_9	A door, a keycard, a terminal, a ledger.
+s07_the_map_and_its_file_10	A calm man to talk to,
+s07_the_map_and_its_file_11	and a loader that attacks.
+s07_the_map_and_its_file_12	Every key starts with the word yard.
+s07_the_map_and_its_file_13	Keep to that, and two places can never share a key.
+s08_the_landmark_the_step_and_li_0	One more landmark, with its one line.
+s08_the_landmark_the_step_and_li_1	One more step of story,
+s08_the_landmark_the_step_and_li_2	opened by the first one.
+s08_the_landmark_the_step_and_li_3	And lint says nine.
+s08_the_landmark_the_step_and_li_4	That's two for the calls,
+s08_the_landmark_the_step_and_li_5	four for the two steps,
+s08_the_landmark_the_step_and_li_6	and the three old ones.
+s08_the_landmark_the_step_and_li_7	Nine is today's clean.
+s08_the_landmark_the_step_and_li_8	If you see a tenth, that one's real.
+s09_walk_it_0	So we dock with the yard,
+s09_walk_it_1	and the call comes.
+s09_walk_it_2	I go down from Weapons,
+s09_walk_it_3	and the side story is mine.
+s09_walk_it_4	First I deal with the loader.
+s09_walk_it_5	Then I try the door,
+s09_walk_it_6	and it stays shut.
+s09_walk_it_7	The keycard's lying out in the yard.
+s09_walk_it_8	I pick it up, and now the door opens.
+s09_walk_it_9	Inside there's the ledger.
+s09_walk_it_10	I close it, and the short count is done and paid.
+s09_walk_it_11	And when the last of us beams up,
+s09_walk_it_12	the visit is over.
+s10_it_remembers_0	Now I dock again, and go back down.
+s10_it_remembers_1	The door's still open,
+s10_it_remembers_2	and the loader's still down.
+s10_it_remembers_3	I leave the system, and I come back.
+s10_it_remembers_4	The game built that station new,
+s10_it_remembers_5	and the yard is just as I left it.
+s10_it_remembers_6	Then I close the game, and continue.
+s10_it_remembers_7	It's the same again.
+s10_it_remembers_8	And here it is in the save.
+s10_it_remembers_9	The door, the keycard, the loader,
+s10_it_remembers_10	and what we learned in each place.
+s11_an_honest_word_and_your_turn_0	Two honest words before you go.
+s11_an_honest_word_and_your_turn_1	When I checked this page, a script did all of it,
+s11_an_honest_word_and_your_turn_2	and nobody was watching a screen.
+s11_an_honest_word_and_your_turn_3	And always give a site a call.
+s11_an_honest_word_and_your_turn_4	A place with no call opens the moment you dock,
+s11_an_honest_word_and_your_turn_5	and that can leave a visit hanging open.
+s11_an_honest_word_and_your_turn_6	It's on the page, with the way out.
+s11_an_honest_word_and_your_turn_7	Now it's your turn.
+s11_an_honest_word_and_your_turn_8	Rename the customs house,
+s11_an_honest_word_and_your_turn_9	and give it a fifth room.
+s11_an_honest_word_and_your_turn_10	Then walk the yard as far as the ledger.

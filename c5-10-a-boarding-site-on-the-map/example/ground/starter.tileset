@@ -1,0 +1,8 @@
+tileset: starter
+title: Starter ground
+kinds:
+  dust:    walk see   look=dirt
+  pad:     walk see   look=stone_tiles
+  floor:   walk see   look=floor_metal
+  rock:               look=rock
+  wall:    tall       look=wall_metal
