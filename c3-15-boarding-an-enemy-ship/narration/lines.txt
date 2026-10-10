@@ -1,0 +1,98 @@
+s01_cold_open_0	For eight lectures, you've drawn every floor your crew walked on.
+s01_cold_open_1	Today they board a ship,
+s01_cold_open_2	and you draw nothing.
+s01_cold_open_3	The game builds her deck from her own plan,
+s01_cold_open_4	and puts her crew aboard.
+s01_cold_open_5	Your job is what's on it.
+s01_cold_open_6	A prisoner, a gunner who won't give up,
+s01_cold_open_7	and a strongbox that ends it three ways.
+s01_cold_open_8	One warning first: this is brand new, and three things about it are rough.
+s01_cold_open_9	I'll show you each one.
+s02_one_party_at_a_time_0	The button needs four things.
+s02_one_party_at_a_time_1	A ship that has struck.
+s02_one_party_at_a_time_2	A hull with a plan.
+s02_one_party_at_a_time_3	The station art, which your starter already has.
+s02_one_party_at_a_time_4	And no other party out.
+s02_one_party_at_a_time_5	That last one is the trouble.
+s02_one_party_at_a_time_6	Your relay party opens in the first second,
+s02_one_party_at_a_time_7	and a party on a map never closes by itself.
+s02_one_party_at_a_time_8	So as your mission stands,
+s02_one_party_at_a_time_9	nobody could ever board her.
+s02_one_party_at_a_time_10	We fix that with one rule.
+s02_one_party_at_a_time_11	When she strikes, the landing party comes home.
+s02_one_party_at_a_time_12	When the ship comes back, the relay opens again.
+s03_a_side_and_a_ship_0	First, a side for her to be on.
+s03_a_side_and_a_ship_1	One record, and one line that says enemies.
+s03_a_side_and_a_ship_2	Then the ship, in the story file.
+s03_a_side_and_a_ship_3	Two lines, under the relay's own line.
+s03_a_side_and_a_ship_4	Look at the numbers.
+s03_a_side_and_a_ship_5	The first set is where she comes from.
+s03_a_side_and_a_ship_6	The second is where she is.
+s03_a_side_and_a_ship_7	That matters, because a ship that strikes and isn't boarded runs for home,
+s03_a_side_and_a_ship_8	and when she gets there she's taken off the map.
+s03_a_side_and_a_ship_9	I tried it with one place.
+s03_a_side_and_a_ship_10	She struck, and eight seconds later she was gone.
+s04_three_quests_and_a_card_0	There are three quests here.
+s04_three_quests_and_a_card_1	Run her down, which waits for the ship to close on her.
+s04_three_quests_and_a_card_2	Come back to the relay, which is hidden until then.
+s04_three_quests_and_a_card_3	And take her, which waits for a signal the game sends.
+s04_three_quests_and_a_card_4	The card is one you know.
+s04_three_quests_and_a_card_5	It's the tug card from the first class,
+s04_three_quests_and_a_card_6	hearing a different step start.
+s04_three_quests_and_a_card_7	It does two things.
+s04_three_quests_and_a_card_8	It calls the landing party home, and she strikes.
+s04_three_quests_and_a_card_9	And the same line goes on your old card,
+s04_three_quests_and_a_card_10	for the trip back.
+s05_kinds_of_room_0	Now the two new words.
+s05_kinds_of_room_1	Area, deck: that means whatever ship we board.
+s05_kinds_of_room_2	And mark is no longer a mark in a file,
+s05_kinds_of_room_3	because there is no file.
+s05_kinds_of_room_4	It's a kind of room.
+s05_kinds_of_room_5	Brig, cargo, quarters, bay.
+s05_kinds_of_room_6	Her hold is called the plunder hold.
+s05_kinds_of_room_7	Her sickbay is the surgery.
+s05_kinds_of_room_8	You don't need to know that.
+s05_kinds_of_room_9	You write the kind, and it works on any hull.
+s05_kinds_of_room_10	And when a hull has no such room,
+s05_kinds_of_room_11	your thing stands in the hallway, and the game says so once.
+s06_her_own_crew_and_the_walk_0	Here's the first rough thing.
+s06_her_own_crew_and_the_walk_1	The game puts her own crew aboard,
+s06_her_own_crew_and_the_walk_2	calm, and standing still.
+s06_her_own_crew_and_the_walk_3	And a calm person blocks the cell they stand on.
+s06_her_own_crew_and_the_walk_4	I put the strongbox in the captain's cabin.
+s06_her_own_crew_and_the_walk_5	One of her crew stood inside the door.
+s06_her_own_crew_and_the_walk_6	Nobody could reach it, and nothing said so.
+s06_her_own_crew_and_the_walk_7	Worse, where they stand changes every time you add a record.
+s06_her_own_crew_and_the_walk_8	So there are three rules.
+s06_her_own_crew_and_the_walk_9	Put what the story needs in the brig, a bay, the entry or a hallway.
+s06_her_own_crew_and_the_walk_10	A hostile is never shut in.
+s06_her_own_crew_and_the_walk_11	And after every change,
+s06_her_own_crew_and_the_walk_12	go aboard and walk to each thing.
+s07_three_endings_0	Now play it through.
+s07_three_endings_1	Helm closes to fifteen hundred, and she strikes.
+s07_three_endings_2	Comms selects her, and sends a party.
+s07_three_endings_3	Aboard, the strongbox has three answers that matter.
+s07_three_endings_4	Take her, and she joins your side,
+s07_three_endings_5	and the quest pays.
+s07_three_endings_6	Scuttle her, and she's gone.
+s07_three_endings_7	Leave her, and she runs for home.
+s07_three_endings_8	Every one of them brings the party home first.
+s07_three_endings_9	And after every one,
+s07_three_endings_10	the relay opens again when the ship comes back.
+s08_what_to_warn_your_crew_about_0	The second rough thing is lint.
+s08_what_to_warn_your_crew_about_1	Your finished mission shows two warnings,
+s08_what_to_warn_your_crew_about_2	and both are wrong.
+s08_what_to_warn_your_crew_about_3	So two is the number to check.
+s08_what_to_warn_your_crew_about_4	The third you know from before.
+s08_what_to_warn_your_crew_about_5	A full shot destroys any prop, and that includes the strongbox.
+s08_what_to_warn_your_crew_about_6	Comms has its own button, take as prize.
+s08_what_to_warn_your_crew_about_7	It skips everything you wrote, and the quest never pays.
+s08_what_to_warn_your_crew_about_8	What the gunner drops is lost if nobody picks it up.
+s08_what_to_warn_your_crew_about_9	And from her deck, the transporter still reaches your relay.
+s08_what_to_warn_your_crew_about_10	Know these before your crew finds them.
+s09_your_turn_0	Now it's your turn.
+s09_your_turn_1	Play all three endings.
+s09_your_turn_2	Move the strongbox into the cabin, and try to reach it.
+s09_your_turn_3	Swap her hull for a freighter, and see where everything goes.
+s09_your_turn_4	Then light the beacon with the gunner's cell.
+s09_your_turn_5	Next time, the mission is your own.

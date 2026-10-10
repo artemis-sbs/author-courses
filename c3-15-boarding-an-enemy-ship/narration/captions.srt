@@ -1,0 +1,391 @@
+1
+00:00:00,000 --> 00:00:04,783
+For eight lectures, you've drawn every floor your crew walked on.
+
+2
+00:00:06,583 --> 00:00:08,757
+Today they board a ship,
+
+3
+00:00:09,207 --> 00:00:10,946
+and you draw nothing.
+
+4
+00:00:11,846 --> 00:00:15,759
+The game builds her deck from her own plan,
+
+5
+00:00:16,209 --> 00:00:18,383
+and puts her crew aboard.
+
+6
+00:00:20,183 --> 00:00:22,791
+Your job is what's on it.
+
+7
+00:00:23,691 --> 00:00:27,170
+A prisoner, a gunner who won't give up,
+
+8
+00:00:27,620 --> 00:00:31,098
+and a strongbox that ends it three ways.
+
+9
+00:00:32,898 --> 00:00:38,985
+One warning first: this is brand new, and three things about it are rough.
+
+10
+00:00:39,885 --> 00:00:42,059
+I'll show you each one.
+
+11
+00:00:43,259 --> 00:00:45,433
+The button needs four things.
+
+12
+00:00:46,333 --> 00:00:48,507
+A ship that has struck.
+
+13
+00:00:48,957 --> 00:00:51,130
+A hull with a plan.
+
+14
+00:00:51,580 --> 00:00:55,059
+The station art, which your starter already has.
+
+15
+00:00:56,859 --> 00:00:59,033
+And no other party out.
+
+16
+00:00:59,933 --> 00:01:02,541
+That last one is the trouble.
+
+17
+00:01:04,341 --> 00:01:07,820
+Your relay party opens in the first second,
+
+18
+00:01:08,270 --> 00:01:12,617
+and a party on a map never closes by itself.
+
+19
+00:01:13,517 --> 00:01:15,691
+So as your mission stands,
+
+20
+00:01:16,141 --> 00:01:18,315
+nobody could ever board her.
+
+21
+00:01:20,115 --> 00:01:22,724
+We fix that with one rule.
+
+22
+00:01:23,174 --> 00:01:26,652
+When she strikes, the landing party comes home.
+
+23
+00:01:27,552 --> 00:01:31,465
+When the ship comes back, the relay opens again.
+
+24
+00:01:32,665 --> 00:01:36,143
+First, a side for her to be on.
+
+25
+00:01:36,593 --> 00:01:40,072
+One record, and one line that says enemies.
+
+26
+00:01:41,872 --> 00:01:44,915
+Then the ship, in the story file.
+
+27
+00:01:45,365 --> 00:01:48,409
+Two lines, under the relay's own line.
+
+28
+00:01:50,209 --> 00:01:51,948
+Look at the numbers.
+
+29
+00:01:52,848 --> 00:01:56,326
+The first set is where she comes from.
+
+30
+00:01:56,776 --> 00:01:59,385
+The second is where she is.
+
+31
+00:02:01,185 --> 00:02:06,837
+That matters, because a ship that strikes and isn't boarded runs for home,
+
+32
+00:02:07,287 --> 00:02:11,635
+and when she gets there she's taken off the map.
+
+33
+00:02:12,535 --> 00:02:15,143
+I tried it with one place.
+
+34
+00:02:15,593 --> 00:02:19,507
+She struck, and eight seconds later she was gone.
+
+35
+00:02:20,707 --> 00:02:22,880
+There are three quests here.
+
+36
+00:02:23,780 --> 00:02:28,998
+Run her down, which waits for the ship to close on her.
+
+37
+00:02:29,898 --> 00:02:34,246
+Come back to the relay, which is hidden until then.
+
+38
+00:02:35,146 --> 00:02:39,928
+And take her, which waits for a signal the game sends.
+
+39
+00:02:41,728 --> 00:02:44,337
+The card is one you know.
+
+40
+00:02:44,787 --> 00:02:48,265
+It's the tug card from the first class,
+
+41
+00:02:48,715 --> 00:02:50,889
+hearing a different step start.
+
+42
+00:02:52,689 --> 00:02:54,428
+It does two things.
+
+43
+00:02:54,878 --> 00:02:58,791
+It calls the landing party home, and she strikes.
+
+44
+00:03:00,591 --> 00:03:04,504
+And the same line goes on your old card,
+
+45
+00:03:04,954 --> 00:03:06,693
+for the trip back.
+
+46
+00:03:07,893 --> 00:03:10,067
+Now the two new words.
+
+47
+00:03:10,967 --> 00:03:14,446
+Area, deck: that means whatever ship we board.
+
+48
+00:03:16,246 --> 00:03:20,593
+And mark is no longer a mark in a file,
+
+49
+00:03:21,043 --> 00:03:23,217
+because there is no file.
+
+50
+00:03:24,117 --> 00:03:26,291
+It's a kind of room.
+
+51
+00:03:26,741 --> 00:03:28,480
+Brig, cargo, quarters, bay.
+
+52
+00:03:30,280 --> 00:03:33,324
+Her hold is called the plunder hold.
+
+53
+00:03:33,774 --> 00:03:35,948
+Her sickbay is the surgery.
+
+54
+00:03:36,848 --> 00:03:39,457
+You don't need to know that.
+
+55
+00:03:39,907 --> 00:03:44,254
+You write the kind, and it works on any hull.
+
+56
+00:03:46,054 --> 00:03:49,533
+And when a hull has no such room,
+
+57
+00:03:49,983 --> 00:03:55,200
+your thing stands in the hallway, and the game says so once.
+
+58
+00:03:56,400 --> 00:03:58,574
+Here's the first rough thing.
+
+59
+00:04:00,374 --> 00:04:03,417
+The game puts her own crew aboard,
+
+60
+00:04:03,867 --> 00:04:05,607
+calm, and standing still.
+
+61
+00:04:06,507 --> 00:04:10,854
+And a calm person blocks the cell they stand on.
+
+62
+00:04:12,654 --> 00:04:16,133
+I put the strongbox in the captain's cabin.
+
+63
+00:04:16,583 --> 00:04:20,061
+One of her crew stood inside the door.
+
+64
+00:04:20,961 --> 00:04:24,439
+Nobody could reach it, and nothing said so.
+
+65
+00:04:26,239 --> 00:04:31,022
+Worse, where they stand changes every time you add a record.
+
+66
+00:04:32,822 --> 00:04:34,996
+So there are three rules.
+
+67
+00:04:35,896 --> 00:04:42,417
+Put what the story needs in the brig, a bay, the entry or a hallway.
+
+68
+00:04:43,317 --> 00:04:45,926
+A hostile is never shut in.
+
+69
+00:04:46,826 --> 00:04:48,565
+And after every change,
+
+70
+00:04:49,015 --> 00:04:52,059
+go aboard and walk to each thing.
+
+71
+00:04:53,259 --> 00:04:54,998
+Now play it through.
+
+72
+00:04:55,898 --> 00:04:59,376
+Helm closes to fifteen hundred, and she strikes.
+
+73
+00:05:00,276 --> 00:05:03,320
+Comms selects her, and sends a party.
+
+74
+00:05:05,120 --> 00:05:08,598
+Aboard, the strongbox has three answers that matter.
+
+75
+00:05:09,498 --> 00:05:12,541
+Take her, and she joins your side,
+
+76
+00:05:12,991 --> 00:05:14,730
+and the quest pays.
+
+77
+00:05:15,630 --> 00:05:17,804
+Scuttle her, and she's gone.
+
+78
+00:05:18,704 --> 00:05:21,748
+Leave her, and she runs for home.
+
+79
+00:05:23,548 --> 00:05:27,461
+Every one of them brings the party home first.
+
+80
+00:05:28,361 --> 00:05:30,100
+And after every one,
+
+81
+00:05:30,550 --> 00:05:34,463
+the relay opens again when the ship comes back.
+
+82
+00:05:35,663 --> 00:05:38,272
+The second rough thing is lint.
+
+83
+00:05:39,172 --> 00:05:41,780
+Your finished mission shows two warnings,
+
+84
+00:05:42,230 --> 00:05:43,970
+and both are wrong.
+
+85
+00:05:44,870 --> 00:05:47,913
+So two is the number to check.
+
+86
+00:05:49,713 --> 00:05:52,322
+The third you know from before.
+
+87
+00:05:52,772 --> 00:05:57,554
+A full shot destroys any prop, and that includes the strongbox.
+
+88
+00:05:59,354 --> 00:06:02,833
+Comms has its own button, take as prize.
+
+89
+00:06:03,283 --> 00:06:07,630
+It skips everything you wrote, and the quest never pays.
+
+90
+00:06:09,430 --> 00:06:14,213
+What the gunner drops is lost if nobody picks it up.
+
+91
+00:06:16,013 --> 00:06:20,361
+And from her deck, the transporter still reaches your relay.
+
+92
+00:06:21,261 --> 00:06:24,304
+Know these before your crew finds them.
+
+93
+00:06:25,504 --> 00:06:27,243
+Now it's your turn.
+
+94
+00:06:28,143 --> 00:06:29,883
+Play all three endings.
+
+95
+00:06:30,783 --> 00:06:35,565
+Move the strongbox into the cabin, and try to reach it.
+
+96
+00:06:36,465 --> 00:06:41,248
+Swap her hull for a freighter, and see where everything goes.
+
+97
+00:06:43,048 --> 00:06:46,526
+Then light the beacon with the gunner's cell.
+
+98
+00:06:47,426 --> 00:06:50,470
+Next time, the mission is your own.

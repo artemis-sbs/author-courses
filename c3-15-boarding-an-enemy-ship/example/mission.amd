@@ -1,0 +1,799 @@
+// A landing party on a tile map, with no Python.
+//
+// Everything the crew meets on the ground is written in this file. The ground itself is
+// `ground/landing.tiles` (the map) and `ground/starter.tileset` (what can be walked).
+// story.mast holds only the logic that reacts: it reads this file, loads the ground with
+// one line, and opens the landing party when the ship reaches the relay.
+//
+// A record is `### [Display Name](key)`, an optional `---` fenced block of fields, then
+// body prose. Comments are `//` - note that .mast uses `#` instead.
+
+# [Kesh Relay](kesh_relay)
+
+
+// ---- The crew: who sits at each console, and so who goes down. You beam down as the
+// person you have been all evening. `Roles:` is what a choice asks for (`if medical`).
+// `Skills:` is what a `check` rolls with: a ten sided die, plus the skill, plus one for
+// each crew member standing beside you who has it.
+## [The Watch](crew)
+---
+crew
+Ship: Artemis
+---
+The watch aboard when Kesh Relay went dark.
+
+### [Lt Dana Ross](ross)
+---
+Console: helm
+Roles: helm
+Skills: helm 4, engineering 1
+---
+
+### [Lt Sam Reyes](reyes)
+---
+Console: weapons
+Roles: security
+Skills: security 4, athletics 2
+---
+
+### [Dr Ines Hale](hale)
+---
+Console: science
+Roles: medical, science
+Skills: medical 4, science 3
+---
+
+### [Chief Okoro](okoro)
+---
+Console: engineering
+Roles: engineering
+Skills: engineering 4, science 1
+---
+
+### [Ens Tam Vale](vale)
+---
+Console: comms
+Roles: comms
+Skills: comms 3, science 2
+---
+
+
+// ---- Quests. `Scope: shared` is one copy for the whole crew.
+//
+// HOW THE GAME ENDS. `Win:` and `Lose:` are the last sentence the crew reads. COMPLETING
+// a quest that has `Win:` wins the game with it; FAILING a quest that has `Lose:` loses
+// it. A choice in a scene does either one: `; completes relight` or `; fails relight`
+// (see The Beacon, at the end of this file).
+## [Quests](quests)
+
+### [Relight Kesh Relay](relight)
+---
+Scope: shared
+Starts when: at once
+Objective: Light the beacon at Kesh Relay
+Leads to: beacon
+Fails when: 30 minutes
+Win: The beacon is lit. Every convoy on the Kesh run has its way home again.
+Lose: Kesh Relay stays dark. The convoy comes through blind, and must find another road.
+---
+The relay's beacon went dark nine days ago. Go down and light it.
+
+// `reach relay 6000` waits for a ship within 6000 of anything with the ROLE `relay` -
+// story.mast gives the station that role. `Then: signal relay_reached` is what opens the
+// landing party: story.mast has one route waiting on exactly that name.
+### [Hold at the Relay](arrive)
+---
+Scope: shared
+Starts when: at once
+Objective: Close to within 6000 of Kesh Relay
+Done when: reach relay 6000
+Then: signal relay_reached
+---
+Bring the ship in close enough for a transporter lock.
+
+// A quest that waits. `Starts when: revealed` means nothing starts it but an answer:
+// `; accepts pim_tablet`, in Pim's scene.
+### [Bring Pim Her Tablet](pim_tablet)
+---
+Scope: shared
+Starts when: revealed
+Objective: Bring Pim her survey tablet
+Reward: 100 credits
+Leads to: pim
+---
+Nine days of survey readings, in the jaws of the thing in the cistern.
+
+// ---- Lecture 15. `reach gull 1500` waits for a ship within 1500 of anything with the
+// ROLE `gull` - story.mast gives the Black Gull that role. When it is done it reveals
+// the next quest, and story.mast has one card that hears that quest start: that card
+// is what makes her strike.
+### [Run Down the Black Gull](chase)
+---
+Scope: shared
+Starts when: at once
+Objective: Close to within 1500 of the Black Gull
+Done when: reach gull 1500
+Then: reveal back
+---
+A pirate brigantine is standing off the dark relay, waiting for a convoy that cannot see her.
+
+// One party at a time. The card that makes her strike calls the landing party home.
+// This quest opens Kesh Relay again when the ship comes back: `relay_reached` is the
+// same signal that opened it the first time.
+### [Come Back to Kesh Relay](back)
+---
+Scope: shared
+Starts when: revealed
+Objective: Settle with the Black Gull, then come back within 3000 of Kesh Relay
+Done when: reach relay 3000
+Then: signal relay_reached
+---
+She has struck her colors. The beacon is still dark.
+
+// `boarding_deck_take` is the game's own signal: an answer aboard her sends it.
+### [Take the Black Gull](prize)
+---
+Scope: shared
+Starts when: at once
+Objective: Board the Black Gull and take her as a prize
+Done when: signal boarding_deck_take
+Reward: 200 credits
+---
+A brigantine is worth more to the Kesh run with a navy crew aboard than as wreckage.
+
+
+// ---- Side stories: a quest for ONE person. `For:` is a job from a `Roles:` line (or a
+// crew member's key). Each is handed to its person when they beam down; one nobody on
+// the ground answers to is handed to nobody. `Leads to:` names what it points at, by key.
+## [Side Stories](side_stories)
+
+### [See to Marrow's Cough](cough)
+---
+For: medical
+Starts when: at once
+Objective: See to the caretaker
+Done when: signal marrow_treated
+Leads to: marrow
+---
+The man who kept the relay has been breathing its dust for nine days.
+
+// When somebody on the ground is put down for good, the game sends the signal
+// `hostile_down_` and their key.
+### [Clear the Yard](clear_yard)
+---
+For: security
+Starts when: at once
+Objective: Put the relay's sentry out of action
+Done when: signal hostile_down_sentry
+Leads to: sentry
+---
+The sentry does not know a friend from a thief any more.
+
+### [Clear the Cistern Walkway](sump)
+---
+For: engineering
+Starts when: at once
+Objective: Clear the cistern walkway
+Done when: signal hostile_down_crawler
+Leads to: crawler
+---
+Whatever is living in the cistern has been at the pump lines.
+
+### [Find a Place to Set Down](strip)
+---
+For: helm
+Starts when: at once
+Objective: Ask the caretaker where a shuttle could land
+Done when: signal strip_found
+Leads to: marrow
+---
+If the beacon cannot be lit, somebody will have to fly a new one down.
+
+### [Hear the Last Call](last_call)
+---
+For: comms
+Starts when: at once
+Objective: Find out who the relay spoke to last
+Done when: signal last_call_heard
+Leads to: terminal
+---
+A relay does not go dark without telling somebody first.
+
+
+// ---- Props: things on the ground. `Area:` is the area file it stands in, and `Mark:` a
+// mark in that file (or `At: x, y`, a cell). What a prop DOES is whichever of these it
+// has: `Scene:` opens a scene for whoever uses it, `Item:` is picked up into their pack,
+// `Opens with:` makes it a door. `Blocks: yes` means nobody walks through it.
+// `Scan:` is what the device's Scan app says about it.
+## [Props](props)
+
+### [Yard terminal](terminal)
+---
+Area: landing
+Mark: terminal
+Sprite: prop:terminal
+Scene: terminal
+Blocks: yes
+Scan: Still drawing a trickle of power. Its last entry is nine days old.
+---
+A weatherproof terminal beside the relay door, its screen still lit.
+
+// A DOOR. `Opens with:` is tried in order by whoever uses it: a key anyone in the party
+// is carrying, a skill check, a CUT shot from the device, or a signal - here the one the
+// terminal sends once somebody has the door code.
+### [Relay door](door)
+---
+Area: landing
+Mark: door
+Sprite: prop:hatch
+Open sprite: prop:doorframe
+Blocks: yes
+Opens with: key relay_keycard, check engineering 9, cut, signal relay_unlocked
+Scan: Mag locked. The keycard reader beside it is live.
+---
+The only way into the relay house. Shut, and meant to stay that way.
+
+// A PICKUP. Using it puts `relay_keycard` in the pack of whoever picked it up.
+### [Relay keycard](keycard)
+---
+Area: landing
+Mark: keycard
+Sprite: prop:keycard
+Item: relay_keycard
+---
+A gray keycard on a lanyard, dropped where the sentry walks.
+
+// HIDDEN until a signal. It is not on the map at all until `cache_known` is sent - which
+// the caretaker's scene does, further down.
+### [Medical kit](cache)
+---
+Area: landing
+At: 6, 8
+Sprite: prop:crate_medical
+Item: medkit
+Hidden until: cache_known
+---
+A sealed medical kit under camouflage netting.
+
+### [The beacon](beacon)
+---
+Area: landing
+Mark: beacon
+Sprite: prop:beacon
+Scene: beacon
+Blocks: yes
+Scan: No power in the lamp. The socket for its cell is empty.
+---
+The relay's beacon: a lamp the height of two people, dark.
+
+// SCENERY. A prop with no scene, no item, no lock and no words is furniture: it is drawn
+// and it blocks, and nothing offers to use it.
+### [Tent](tent)
+---
+Area: landing
+Mark: tent
+Sprite: prop:tent
+Blocks: yes
+Scan: Canvas, a camp bed, and a kettle that is still warm.
+---
+
+### [Trail sign](sign)
+---
+Area: landing
+At: 28, 5
+Sprite: prop:sign
+---
+A painted board on a post: PUMP HOUSE, and an arrow pointing east.
+
+// SCENERY again: no words, so nothing offers to use it. It only stands there, and blocks.
+### [The pump](pump)
+---
+Area: gully
+Mark: pump
+Sprite: prop:machinery
+Blocks: yes
+Scan: A two stage pump. No power to it, and nothing wrong with it.
+---
+
+### [Crate](gully_crate)
+---
+Area: gully
+At: 6, 9
+Sprite: prop:crate
+Blocks: yes
+Scan: Empty. Somebody has been using it as a seat.
+---
+
+// ---- Lecture 10: the pump house and the cistern.
+### [Pump house key](pump_key)
+---
+Area: landing
+At: 14, 4
+Sprite: prop:keycard
+Item: pump_house_key
+---
+A brass key on a loop of wire, hung on a tent peg.
+
+### [Pump house door](pump_door)
+---
+Area: gully
+Mark: pump_door
+Sprite: prop:hatch
+Open sprite: prop:doorframe
+Blocks: yes
+Opens with: key pump_house_key, check engineering 8, cut
+Scan: A plain mechanical lock. No power to it at all.
+---
+A steel door, rusted at the hinges.
+
+// `Qty:` is how many of the item one pickup is worth.
+### [Two fuses](toolbox)
+---
+Area: gully
+At: 19, 8
+Sprite: prop:toolbox
+Item: fuse
+Qty: 2
+---
+A toolbox left open in the dust. Two heavy fuses, still in their paper.
+
+// `Once: yes`: the scene opens the first time. After that there is only the description.
+### [Brittle notice](notice)
+---
+Area: gully
+At: 11, 4
+Sprite: prop:sign
+Scene: notice
+Once: yes
+---
+A notice pasted beside the door, gone brown and brittle. It will not survive being read twice.
+
+// `Needs:` is who may use it at all. Nobody covers for a `Needs:`.
+### [Pump panel](pump_panel)
+---
+Area: gully
+At: 16, 6
+Sprite: prop:console
+Scene: pump_panel
+Blocks: yes
+Needs: engineering
+Scan: Three fuse clips, all empty. The pump below it is sound.
+---
+The pump's control panel: one lever, one dial, and a row of fuse clips.
+
+// A door only a signal opens: nobody on the ground can force it.
+### [Sluice gate](sluice)
+---
+Area: cistern
+Mark: sluice
+Sprite: prop:hatch
+Open sprite: prop:doorframe
+Blocks: yes
+Opens with: signal cistern_drained
+Scan: Held shut by the weight of the water behind it.
+---
+An iron gate across the walkway, wet to the top.
+
+### [Spare power cell](spare_cell)
+---
+Area: cistern
+At: 16, 2
+Sprite: prop:power_cell
+Item: power_cell
+Hidden until: cistern_drained
+---
+A beacon cell in a sealed case, left where the water would keep it cool.
+
+// `Reach: 2`: it can be used from two cells away. It stands in the water, where
+// nobody can stand beside it.
+### [Depth gauge](gauge)
+---
+Area: cistern
+Mark: gauge
+Sprite: prop:scanner
+Reach: 2
+Scan: Four meters of water over the tank floor.
+---
+A brass depth gauge on a post in the middle of the tank. The needle reads FULL.
+
+// Hidden until a scene shows it: `; reveal stash`.
+### [Pim's medical kit](stash)
+---
+Area: gully
+At: 4, 9
+Sprite: prop:crate_medical
+Item: medkit
+Hidden until: stash_shown
+---
+A medical kit wedged under the rock, where the dust would not find it.
+
+// ---- Lecture 15: aboard the Black Gull. `Area: deck` is the deck of whatever ship the
+// crew boards. Nobody drew it, so `Mark:` is a KIND of room, not a mark in a file.
+### [Captain's strongbox](strongbox)
+---
+Area: deck
+Mark: brig
+Sprite: prop:crate_shield
+Scene: strongbox
+Blocks: yes
+Scan: Plate steel, bolted through the deck. Paper inside, and a ring of keys.
+---
+A strongbox bolted to the deck of the brig, where nobody would think to look for it.
+
+### [Boarding kit](gull_kit)
+---
+Area: deck
+Mark: entry
+Sprite: prop:crate_medical
+Item: medkit
+Scan: A medical kit, sealed. Nobody aboard has needed it yet.
+---
+A medical kit on a hook beside the entry port, for whoever comes aboard the hard way.
+
+
+// ---- People: someone you can walk up to and talk with. `Calm: yes` means they never
+// attack. `Talk scene:` is the scene a click on them opens. `Face:` is shown beside what
+// they say (`male`, `female`, or a face string).
+## [People](people)
+
+### [Old Marrow](marrow)
+---
+Area: landing
+Mark: caretaker
+Sprite: fig:junker_m
+Face: male
+Calm: yes
+Talk scene: marrow
+Scan: One human. Elevated pulse, and a wet cough.
+---
+The relay's caretaker, sitting on an upturned crate beside his tent.
+
+// ---- Lecture 11.
+### [Pim](pim)
+---
+Area: gully
+Mark: camp
+Sprite: fig:junker_f
+Face: female
+Calm: yes
+Talk scene: pim
+Scan: One human, young. Cold, and not hurt.
+---
+Marrow's apprentice, wrapped in a survey blanket with her back to a rock.
+
+// Pim again, by the tent. She is not on the map until a scene sends for her:
+// `; summon pim_yard`.
+### [Pim](pim_yard)
+---
+Area: landing
+At: 11, 4
+Sprite: fig:junker_f
+Face: female
+Calm: yes
+Talk scene: pim_yard
+Hidden until: pim_went_home
+---
+Marrow's apprentice, home, with a mug in both hands.
+
+// ---- Lecture 15. The Black Gull's own crew is put aboard by the game. This is somebody
+// with something to say.
+### [Mate Oduya](oduya)
+---
+Area: deck
+Mark: brig
+Sprite: fig:junker_f
+Face: female
+Calm: yes
+Talk scene: oduya
+Scan: One human. Nine days of ship's biscuit, and not hurt.
+---
+The mate of the convoy tender, sitting on the brig's one bench with her arms folded.
+
+
+// ---- Hostiles: someone who walks a `Patrol:` (cells, `x y; x y`), notices a crew member
+// within `Notice:` cells, and attacks. `HP:` is how much it takes; `Stun:` how many
+// seconds a stun shot holds it; `Drops:` what it leaves where it falls.
+## [Hostiles](hostiles)
+
+### [Relay sentry](sentry)
+---
+Area: landing
+Mark: sentry
+Sprite: fig:robot_war
+HP: 2
+Damage: 1
+Notice: 4
+Stun: 10
+Speed: 2
+Patrol: 18 9; 27 9; 27 11; 18 11
+Drops: power_cell
+Scan: Security frame, nine days without a recognition update. One power cell.
+---
+A security frame walking the same square it has walked for nine days.
+
+// ---- Lecture 11. A hostile is a person without `Calm: yes`.
+### [Sump crawler](crawler)
+---
+Area: cistern
+At: 13, 3
+Sprite: fig:glassback
+HP: 3
+Damage: 1
+Notice: 3
+Stun: 8
+Speed: 2
+Patrol: 12 1; 13 5; 12 5; 13 1
+Drops: tablet
+Scan: Silicate shell, about the size of a dog. It has something flat in its jaws.
+---
+Something low and glassy that has had the walkway to itself for nine days.
+
+// ---- Lecture 15. The captain struck. Not everybody aboard agreed.
+### [Gunner Brakk](brakk)
+---
+Area: deck
+Mark: bay
+Sprite: fig:hunter_f
+HP: 2
+Damage: 1
+Notice: 4
+Stun: 10
+Drops: power_cell
+Scan: One human, armed. Not on the list of those who struck. One power cell, slung on her back.
+---
+The Gull's gunner, in the boat bay, with a cutlass in her hand and the tender's beacon cell on her back.
+
+
+// ---- Scenes: what is said, and what can be answered. Each `%` line is something the
+// scene may say (one is picked). Each `-` line is a choice: `[words](where it leads)`,
+// then `if <who may take it>`, then `; <what it does>`. An empty `()` ends the scene.
+//
+// WHO: a job (`if medical`), how good (`if skill science >= 3`), what they carry
+// (`if holding power_cell`), or what the party has worked out - how many things
+// (`if learned >= 2`) or one named thing (`if learned codes`).
+//
+// WHAT IT DOES: `learn <fact>`, `signal <name>`, `take <item>`, `give <item>`,
+// `check <skill> <number> else <scene>` (a failed roll goes to that scene instead),
+// `completes <quest>`, `fails <quest>`.
+## [Scenes](scenes)
+
+### [The Yard Terminal](terminal)
+%{learned codes < 1} One line on the screen, over and over: DOOR SEALED. AWAITING CODE.
+%{learned codes} DOOR SEALED. AWAITING CODE. And now you have one to give it.
+
+- [Read the log](terminal_log) ; learn log
+- [Pull the door code out of its memory](terminal_code) if skill science >= 3
+- [Force the service port](terminal_code) ; check engineering 8 else terminal_dead
+- [Send the door code](terminal_sent) if learned codes ; signal relay_unlocked
+- [Send the sentry its recognition update](terminal_update) if learned codes ; calm sentry, give power_cell
+- [Play back the last call it sent](terminal_call) if comms ; signal last_call_heard
+- [Step back]()
+
+### [Recognition Update](terminal_update)
+% The terminal sends nine days of crew lists in one burst. The sentry stops, walks to the terminal, opens its chest and sets a power cell in your hands. Then it goes back to its square with its weapon down.
+
+- [Step back]()
+
+### [The Last Call](terminal_call)
+% One call, nine days old, to a convoy tender that never answered: CELL FAILING. SEND A SPARE. The relay asked for help once, and then saved its power.
+
+- [Step back](terminal)
+
+### [Nine Days](terminal_log)
+% Day one: beacon cell failing. Day two: cell removed for test and fitted to the sentry, which has the only good socket. Day three: sentry no longer answers to its keeper. The entries stop.
+
+- [Step back](terminal)
+
+### [Six Digits](terminal_code)
+% The door code is six digits, stored in the clear. Whoever built this place trusted the dust to keep people out.
+
+- [Copy it down](terminal) ; learn codes
+
+### [Dead Screen](terminal_dead)
+% The service port spits once and the screen goes dark. The log, the code and the cursor go with it.
+
+- [Step back]()
+
+### [The Door Answers](terminal_sent)
+% The terminal thinks about it. Across the yard, the relay door drops its bolts with a bang.
+
+- [Step back]()
+
+### [Old Marrow](marrow)
+% "Nine days dark. I kept the kettle on and nobody came." He coughs into his sleeve, and looks at your uniform as if it might not be real.
+
+- [Ask how to get into the relay house](marrow_key)
+- [Ask about the sentry](marrow_sentry)
+- [Ask what he has put by](marrow_cache) ; signal cache_known
+- [Show him the brass key](marrow_pump) if party pump_house_key
+- [Ask where a shuttle could set down](marrow_strip) if helm ; signal strip_found
+- [Look at that cough](marrow_treated) if medical ; signal marrow_treated, give fuse
+- [Leave him to his kettle]()
+
+### [The Brass Key](marrow_pump)
+% "That is the pump house. Pim went out there the day the beacon failed, to start the pump, and I have not had the legs to go and look for her." He closes your fingers over the key.
+
+- [Ask him something else](marrow)
+- [Thank him]()
+
+### [The Old Strip](marrow_strip)
+% "South of the pad, where the scrub is flat. The supply boats used it before my time." He looks pleased that somebody asked.
+
+- [Ask him something else](marrow)
+- [Thank him]()
+
+### [The Keycard](marrow_key)
+% "Keycard. I dropped it in the yard the day the sentry turned on me, and I have not been back for it. The terminal by the door knows the code too, if you can make it talk."
+
+- [Ask him something else](marrow)
+- [Thank him]()
+
+### [The Sentry](marrow_sentry)
+% "It has the beacon's power cell in its chest. Stun it and you have ten seconds. Put it down for good and the cell is yours - and the beacon wants one."
+
+- [Ask him something else](marrow)
+- [Thank him]()
+
+### [Put By](marrow_cache)
+% He nods at the scrub beside the landing pad. "Medical kit, under the netting. I was saving it for somebody worse off than me. That might be you, if you go near the sentry."
+
+- [Ask him something else](marrow)
+- [Thank him]()
+
+### [Dust Lung](marrow_treated)
+% You listen to his chest for a long minute. Dust lung, nine days of it, and nothing that will not mend. He takes the inhaler like it is made of glass, and pays for it with the fuse out of his kettle.
+
+- [Leave him to his kettle]()
+
+// THE ENDINGS. Both `Call it in` answers complete the quest `relight`, which has a
+// `Win:` line - that wins the game. `Step back from the smoke` fails it, and it has a
+// `Lose:` line - that loses it. Either way the landing party is brought home.
+### [The Beacon](beacon)
+% The beacon fills the room, dark. The socket for its power cell is empty, and somebody has left the governor housing open.
+
+- [Fit the power cell](beacon_lit) if holding power_cell ; take power_cell
+- [Bring it up by hand on the standby coil](beacon_hand) if engineering ; check engineering 11 else beacon_burn
+- [Pull the governor and run it wide open](beacon_burn)
+- [Leave it dark for now]()
+
+### [Light](beacon_lit)
+% The cell seats with a click you feel in your teeth. The lamp turns once, twice, and then the whole room is white.
+
+- [Call it in]() ; completes relight
+
+### [Light, the Hard Way](beacon_hand)
+% The standby coil whines, catches and holds. It is not pretty, and it will not last a year. It will last until somebody brings a new cell.
+
+- [Call it in]() ; completes relight
+
+### [Smoke](beacon_burn)
+% The coil arcs white, then orange, then nothing at all. What is left of the lamp is glass on the floor and a smell you will not forget.
+
+- [Step back from the smoke]() ; fails relight
+
+
+// ---- Lecture 10: what the new props open.
+### [The Notice](notice)
+% SPARE BEACON CELL KEPT BELOW, IN THE COLD. DRAIN THE TANK FIRST. The paper comes apart in your fingers as you read the last line.
+
+- [Let the pieces fall]() ; learn spare
+
+### [The Pump Panel](pump_panel)
+%{party fuse < 3} Three fuse clips, all empty. The lever will not do anything until they are full.
+%{party fuse >= 3} Three fuse clips, all empty, and three fuses between you.
+
+- [Fit three fuses and throw the lever](pump_run) if holding fuse >= 3 ; take fuse 3
+- [Fit two, and bridge the third clip with wire](pump_run) if holding fuse >= 2 ; take fuse 2, check engineering 10 else pump_spark
+- [Jam a crowbar across all three clips](pump_burn)
+- [Leave it alone]()
+
+### [The Pump Runs](pump_run)
+% The pump coughs, catches, and settles to a hammering you can feel through the floor. Somewhere under your feet, a great deal of water starts to move.
+
+- [Step back]() ; signal cistern_drained
+
+### [A Bright Blue Spark](pump_spark)
+% The wire glows, sags and parts, and two good fuses go with it. Nothing else happens, and you have burned your thumb.
+
+- [Step back]()
+
+### [Fire in the Pump House](pump_burn)
+% The crowbar welds itself to the clips. The panel burns first, then the cable under it, and that cable runs all the way back to the relay house.
+
+- [Run]() ; fails relight
+
+
+// ---- Lecture 11: somebody to talk to.
+### [Pim](pim)
+% "You are from the ship." She does not get up. "I came out here to start the pump, nine days ago. I got as far as the door."
+
+- [Ask what stopped her](pim_why)
+- [Ask about the spare cell](pim_spare) if learned spare
+- [Ask if she has anything for a fight](pim_stash) ; reveal stash
+- [Give her the tablet](pim_thanks) if holding tablet ; take tablet, completes pim_tablet, give fuse
+- [Tell her the tablet is yours now](pim_angry) if holding tablet ; rouse pim, fails pim_tablet
+- [Leave her be]()
+
+### [What Stopped Her](pim_why)
+% "There is something on the walkway down there. It took my tablet out of my hand and I ran. I have been working up to going back for it ever since."
+
+- [Promise to bring it back](pim) ; accepts pim_tablet
+- [Ask her something else](pim)
+- [Leave her be]()
+
+### [Below](pim_spare)
+% "The spare. Yes. It is in the tank room, past the sluice, and the sluice will not move until the tank is dry." She draws the stairs for you in the dust, and where they come out.
+
+- [Ask her something else](pim)
+- [Leave her be]()
+
+### [Under the Rock](pim_stash)
+% She tips her head at the rock behind her. "Medical kit. Marrow packs one for me every time, and I never open it."
+
+- [Ask her something else](pim)
+- [Leave her be]()
+
+### [Nine Days of Readings](pim_thanks)
+% She turns the tablet over twice before she believes it. Then she takes a fuse out of her lamp and puts it in your hand. "I will not need the light. I am going home."
+
+- [Watch her go]() ; dismiss pim, summon pim_yard
+
+### [Yours Now](pim_angry)
+% She is on her feet before you have finished the sentence, and there is a cutting torch in her hand that was not there a moment ago.
+
+- [Back away]()
+
+### [Pim, at Home](pim_yard)
+% "Marrow says I am to thank you properly." She holds up a small gray remote. "I wired the relay house door to this years ago, so I would never need his keycard."
+
+- [Ask her to open the relay house](pim_remote) ; open door
+- [Leave her to her tea]()
+
+### [The Remote](pim_remote)
+% She points it over her shoulder without looking. Across the yard the relay door drops its bolts.
+
+- [Thank her]()
+
+
+// ---- Lecture 15: aboard the Black Gull. The three endings are the game's own signals.
+//   boarding_deck_take     the party comes home, and the ship joins your side
+//   boarding_deck_scuttle  the party comes home, and then the ship is gone
+//   boarding_deck_leave    the party comes home, and she is left as she was
+### [The Strongbox](strongbox)
+% Her papers, her letters of marque, and the keys to her magazine. Whoever holds this box holds the Black Gull.
+
+- [Take her as a prize]() ; signal boarding_deck_take
+- [Open her sea cocks]() ; signal boarding_deck_scuttle, fails prize
+- [Go back to the ship]() ; signal boarding_deck_leave
+- [Leave it for now]()
+
+### [Mate Oduya](oduya)
+% "Tender Halcyon, out of Kesh. We came to answer the relay's call, nine days ago, and this ship was waiting where the beacon should have been."
+
+- [Ask what the tender was carrying](oduya_cell) ; learn tender
+- [Ask who is still armed](oduya_brakk)
+- [Tell her she is going home]()
+
+### [The Spare](oduya_cell)
+% "One spare beacon cell. The relay asked for it. Their gunner took it for her own share, and I do not think she knows what it is."
+
+- [Ask her something else](oduya)
+- [Tell her she is going home]()
+
+### [The Gunner](oduya_brakk)
+% "Brakk. The captain struck and the gunner did not. She is in the boat bay, aft, with a cutlass, and our cell slung on her back."
+
+- [Ask her something else](oduya)
+- [Tell her she is going home]()
+
+
+// ---- Sides. The crew's own side, `tsn`, is made in story.mast. This is the other one.
+// `Enemies: tsn` is said once, here, and holds both ways.
+## [Sides](sides)
+
+### [Pirates](pirate)
+---
+Color: #F40
+Enemies: tsn
+---
+The crews that work the Kesh run when nobody is watching it.

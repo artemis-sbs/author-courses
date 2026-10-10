@@ -10,7 +10,7 @@
 >   finished mission: the starter's files, with `mission.amd` rewritten, three maps in
 >   place of `landing.tiles`, and two words changed on the card in `story.mast`.
 > - **It does not depend on Lecture 15.** One sentence under "Before you start" says a
->   drawn deck can stand in for an area.
+>   boarded ship can be one more place: a party of its own, not an area.
 > - **`sbs create` and `sbs fetch` were not run** to write this. The start files are
 >   Lecture 7's starter with `description.yaml` retitled the way `sbs create` does it.
 > - **A FULL shot destroys any prop** in the released game, and the game says nothing.

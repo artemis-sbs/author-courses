@@ -25,8 +25,9 @@ them.]*
 ## Before you start
 
 - You have finished Lecture 14, and you have its sheet: the game's numbers, three lists
-  and three columns. If you have taken Lecture 15, a deck the game draws can stand in
-  for one of your three areas. Nothing here depends on it.
+  and three columns. If you have taken Lecture 15, a ship the crew boards can be one
+  more place in your mission. It is a party of its own, not one of your three areas.
+  Nothing here depends on it.
 - A new sheet of paper, and a pencil.
 - The internet, once, to make the mission.
 
