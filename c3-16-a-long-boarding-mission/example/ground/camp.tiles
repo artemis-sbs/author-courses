@@ -1,0 +1,29 @@
+# The claim's surface camp: a landing pad, Ada Corvin's hut, and the stores.
+area: camp
+title: Corvin's Claim
+tileset: starter
+entry: landing_pad
+size: 26x11
+legend:
+  .: dust
+  ,: scrub
+  #: rock
+  ^: cliff
+  =: pad
+  _: floor
+  W: wall
+  P: pad @landing_pad
+  D: floor @stores_door
+  >: dust @to_works
+---
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^##......,,....WWWWWW..#^^
+^#...===..,....W____W...^^
+^#...=P=.......W____W...^^
+^#...===.......WWDWWW...^^
+^#......................>^
+^#......................^^
+^#..,,..................#^
+^##.,,,............,,..##^
+^^###.............#####^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^

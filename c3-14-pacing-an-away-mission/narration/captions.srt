@@ -1,0 +1,375 @@
+1
+00:00:00,000 --> 00:00:02,174
+How long is your mission?
+
+2
+00:00:03,974 --> 00:00:07,452
+You've played it, so you have a feeling.
+
+3
+00:00:07,902 --> 00:00:10,076
+A feeling isn't a number.
+
+4
+00:00:11,876 --> 00:00:15,789
+Today we measure it with the game's own numbers.
+
+5
+00:00:16,689 --> 00:00:19,298
+We put a clock on it.
+
+6
+00:00:20,198 --> 00:00:24,111
+We check by hand that every party can finish.
+
+7
+00:00:25,011 --> 00:00:30,663
+And we look at what three people are doing in the same minute.
+
+8
+00:00:32,463 --> 00:00:34,202
+There's one warning first.
+
+9
+00:00:34,652 --> 00:00:39,435
+A script walked this for us, and a script doesn't read.
+
+10
+00:00:40,335 --> 00:00:43,378
+So every number today is a floor.
+
+11
+00:00:44,578 --> 00:00:48,057
+A crew member walks four cells a second.
+
+12
+00:00:48,957 --> 00:00:50,696
+Your hostiles walk two.
+
+13
+00:00:52,496 --> 00:00:57,713
+A hostile beside you hits after about two and a half seconds,
+
+14
+00:00:58,163 --> 00:01:01,641
+and then again every two and a half.
+
+15
+00:01:02,541 --> 00:01:04,715
+Three hits, and you're down,
+
+16
+00:01:05,165 --> 00:01:06,904
+in about seven seconds.
+
+17
+00:01:08,704 --> 00:01:14,791
+If the others are still up, you stay down until somebody brings a medkit.
+
+18
+00:01:15,691 --> 00:01:23,083
+If everybody's down, you all wake at the entry a few seconds later, with one point each.
+
+19
+00:01:24,883 --> 00:01:29,230
+And a full shot puts any hostile down in one,
+
+20
+00:01:29,680 --> 00:01:31,854
+whatever its hit points say.
+
+21
+00:01:33,054 --> 00:01:35,228
+Now walk your own map.
+
+22
+00:01:35,678 --> 00:01:38,722
+Count the cells and divide by four.
+
+23
+00:01:40,522 --> 00:01:44,870
+The landing pad to the way east is seven seconds.
+
+24
+00:01:45,770 --> 00:01:50,552
+The whole long road, out to the spare cell and back,
+
+25
+00:01:51,002 --> 00:01:52,741
+is under a minute.
+
+26
+00:01:54,541 --> 00:01:58,020
+So distance isn't what makes a mission long.
+
+27
+00:01:58,920 --> 00:02:05,007
+A door on the far side of the map costs your crew seven seconds.
+
+28
+00:02:06,807 --> 00:02:10,285
+What costs them time is reading, and deciding.
+
+29
+00:02:10,735 --> 00:02:13,343
+So that's what we count next.
+
+30
+00:02:14,543 --> 00:02:17,152
+Thirty-one rooms, and nine hundred words.
+
+31
+00:02:18,952 --> 00:02:20,691
+Three plays, by script.
+
+32
+00:02:21,591 --> 00:02:24,635
+The long road alone is eleven presses.
+
+33
+00:02:25,535 --> 00:02:29,013
+With three crew it's still eleven, between them.
+
+34
+00:02:30,813 --> 00:02:32,987
+And look at this one.
+
+35
+00:02:33,437 --> 00:02:36,915
+The comms officer, alone, wins in two presses.
+
+36
+00:02:37,815 --> 00:02:41,728
+Shoot the sentry, take its cell, light the beacon.
+
+37
+00:02:42,178 --> 00:02:46,091
+That's the starter's design, and it's a kind one.
+
+38
+00:02:46,541 --> 00:02:48,280
+Just know it's there.
+
+39
+00:02:50,080 --> 00:02:53,993
+To turn presses into minutes, I have to guess.
+
+40
+00:02:54,893 --> 00:02:57,067
+Half a minute a press,
+
+41
+00:02:57,517 --> 00:03:00,561
+and double it for a first play.
+
+42
+00:03:01,461 --> 00:03:04,070
+Write your own guess beside mine.
+
+43
+00:03:05,270 --> 00:03:09,183
+You have four ways to press on a crew.
+
+44
+00:03:10,083 --> 00:03:11,822
+A clock, a patrol,
+
+45
+00:03:12,272 --> 00:03:16,620
+a key that's somewhere else, and a thing that's hidden.
+
+46
+00:03:18,420 --> 00:03:24,072
+The clock is one line, and you wrote it in the first class.
+
+47
+00:03:24,972 --> 00:03:26,711
+Fails when, thirty minutes.
+
+48
+00:03:28,511 --> 00:03:31,989
+The Lose sentence has to change with it.
+
+49
+00:03:32,439 --> 00:03:35,917
+It used to say the beacon was slag.
+
+50
+00:03:36,817 --> 00:03:40,730
+Now it's read when the clock runs out too,
+
+51
+00:03:41,180 --> 00:03:44,659
+so it has to be true every way.
+
+52
+00:03:46,459 --> 00:03:49,937
+And the clock starts when the quest starts.
+
+53
+00:03:50,387 --> 00:03:52,996
+This one starts with the game.
+
+54
+00:03:54,196 --> 00:03:56,370
+Lint doesn't walk your map.
+
+55
+00:03:56,820 --> 00:03:59,863
+You do, on paper, in three lists.
+
+56
+00:04:01,663 --> 00:04:04,272
+Every area, every item, every ending.
+
+57
+00:04:04,722 --> 00:04:08,200
+And beside each one, who can do it.
+
+58
+00:04:10,000 --> 00:04:13,478
+Now find a party the lists leave stuck.
+
+59
+00:04:14,378 --> 00:04:17,857
+A scientist and a guard, and no engineer.
+
+60
+00:04:19,657 --> 00:04:23,570
+She pulls the door code, and calms the sentry.
+
+61
+00:04:24,020 --> 00:04:25,759
+That's the clever answer.
+
+62
+00:04:26,659 --> 00:04:29,267
+But the sentry keeps its cell,
+
+63
+00:04:29,717 --> 00:04:32,761
+and nobody here can run the pump.
+
+64
+00:04:34,561 --> 00:04:37,604
+The clever answer left them with nothing.
+
+65
+00:04:38,504 --> 00:04:41,113
+So fix it where it broke.
+
+66
+00:04:41,563 --> 00:04:44,172
+The sentry hands its cell over.
+
+67
+00:04:44,622 --> 00:04:46,796
+One outcome, after a comma.
+
+68
+00:04:47,996 --> 00:04:50,604
+Three columns, one for each console.
+
+69
+00:04:51,054 --> 00:04:53,228
+What is each person doing?
+
+70
+00:04:55,028 --> 00:04:58,507
+This is the mission as you left it.
+
+71
+00:04:59,407 --> 00:05:02,885
+The chief makes eight presses out of twelve.
+
+72
+00:05:03,335 --> 00:05:06,378
+The doctor is finished in ten seconds.
+
+73
+00:05:08,178 --> 00:05:11,222
+What you have there is a chain.
+
+74
+00:05:11,672 --> 00:05:14,715
+Every step waits for the one before,
+
+75
+00:05:15,165 --> 00:05:18,209
+so only one person is ever busy.
+
+76
+00:05:20,009 --> 00:05:22,183
+The cure is a join.
+
+77
+00:05:22,633 --> 00:05:27,415
+Make the thing in the middle need pieces from three places.
+
+78
+00:05:29,215 --> 00:05:31,389
+Your pump needs three fuses.
+
+79
+00:05:31,839 --> 00:05:35,752
+So give Marrow one to pay the doctor with.
+
+80
+00:05:36,652 --> 00:05:41,000
+Now three people each carry something to the pump house,
+
+81
+00:05:41,450 --> 00:05:44,493
+and nobody presses more than five times.
+
+82
+00:05:45,693 --> 00:05:48,737
+Put it together in a beat sheet.
+
+83
+00:05:49,637 --> 00:05:52,246
+One column is the stand-in's clock,
+
+84
+00:05:52,696 --> 00:05:54,870
+and that one is measured.
+
+85
+00:05:55,770 --> 00:05:59,683
+The other is my guess for a first play.
+
+86
+00:06:01,483 --> 00:06:04,091
+Now play it with a stopwatch,
+
+87
+00:06:04,541 --> 00:06:07,585
+and write your own times over mine.
+
+88
+00:06:09,385 --> 00:06:12,428
+For forty-five minutes, write the sheet first.
+
+89
+00:06:13,328 --> 00:06:15,067
+Five for the landing.
+
+90
+00:06:15,517 --> 00:06:17,257
+Twenty for three tracks.
+
+91
+00:06:17,707 --> 00:06:19,446
+Eight for the join.
+
+92
+00:06:20,346 --> 00:06:22,520
+Seven for the last area,
+
+93
+00:06:22,970 --> 00:06:25,143
+and five for the ending.
+
+94
+00:06:26,943 --> 00:06:30,422
+That sheet is where your own mission starts.

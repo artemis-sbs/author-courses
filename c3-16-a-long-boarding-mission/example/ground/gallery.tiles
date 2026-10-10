@@ -1,0 +1,21 @@
+# The lower gallery: one straight drive, and the rock fall at the end of it.
+area: gallery
+title: Lower Gallery
+tileset: starter
+entry: lift_cage
+known: no
+beam: no
+size: 22x6
+legend:
+  W: wall
+  #: rock
+  _: floor
+  u: floor @to_works
+  c: floor @lift_cage
+---
+WWWWWWWWWWWWWWWWWWWWWW
+Wuc________________#WW
+W___________________#W
+W__###_____________#WW
+W__###____________##WW
+WWWWWWWWWWWWWWWWWWWWWW

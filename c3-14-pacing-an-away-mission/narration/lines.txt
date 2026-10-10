@@ -1,0 +1,94 @@
+s01_cold_open_0	How long is your mission?
+s01_cold_open_1	You've played it, so you have a feeling.
+s01_cold_open_2	A feeling isn't a number.
+s01_cold_open_3	Today we measure it with the game's own numbers.
+s01_cold_open_4	We put a clock on it.
+s01_cold_open_5	We check by hand that every party can finish.
+s01_cold_open_6	And we look at what three people are doing in the same minute.
+s01_cold_open_7	There's one warning first.
+s01_cold_open_8	A script walked this for us, and a script doesn't read.
+s01_cold_open_9	So every number today is a floor.
+s02_the_game_s_numbers_0	A crew member walks four cells a second.
+s02_the_game_s_numbers_1	Your hostiles walk two.
+s02_the_game_s_numbers_2	A hostile beside you hits after about two and a half seconds,
+s02_the_game_s_numbers_3	and then again every two and a half.
+s02_the_game_s_numbers_4	Three hits, and you're down,
+s02_the_game_s_numbers_5	in about seven seconds.
+s02_the_game_s_numbers_6	If the others are still up, you stay down until somebody brings a medkit.
+s02_the_game_s_numbers_7	If everybody's down, you all wake at the entry a few seconds later, with one point each.
+s02_the_game_s_numbers_8	And a full shot puts any hostile down in one,
+s02_the_game_s_numbers_9	whatever its hit points say.
+s03_distance_is_not_pressure_0	Now walk your own map.
+s03_distance_is_not_pressure_1	Count the cells and divide by four.
+s03_distance_is_not_pressure_2	The landing pad to the way east is seven seconds.
+s03_distance_is_not_pressure_3	The whole long road, out to the spare cell and back,
+s03_distance_is_not_pressure_4	is under a minute.
+s03_distance_is_not_pressure_5	So distance isn't what makes a mission long.
+s03_distance_is_not_pressure_6	A door on the far side of the map costs your crew seven seconds.
+s03_distance_is_not_pressure_7	What costs them time is reading, and deciding.
+s03_distance_is_not_pressure_8	So that's what we count next.
+s04_count_the_presses_0	Thirty-one rooms, and nine hundred words.
+s04_count_the_presses_1	Three plays, by script.
+s04_count_the_presses_2	The long road alone is eleven presses.
+s04_count_the_presses_3	With three crew it's still eleven, between them.
+s04_count_the_presses_4	And look at this one.
+s04_count_the_presses_5	The comms officer, alone, wins in two presses.
+s04_count_the_presses_6	Shoot the sentry, take its cell, light the beacon.
+s04_count_the_presses_7	That's the starter's design, and it's a kind one.
+s04_count_the_presses_8	Just know it's there.
+s04_count_the_presses_9	To turn presses into minutes, I have to guess.
+s04_count_the_presses_10	Half a minute a press,
+s04_count_the_presses_11	and double it for a first play.
+s04_count_the_presses_12	Write your own guess beside mine.
+s05_a_clock_0	You have four ways to press on a crew.
+s05_a_clock_1	A clock, a patrol,
+s05_a_clock_2	a key that's somewhere else, and a thing that's hidden.
+s05_a_clock_3	The clock is one line, and you wrote it in the first class.
+s05_a_clock_4	Fails when, thirty minutes.
+s05_a_clock_5	The Lose sentence has to change with it.
+s05_a_clock_6	It used to say the beacon was slag.
+s05_a_clock_7	Now it's read when the clock runs out too,
+s05_a_clock_8	so it has to be true every way.
+s05_a_clock_9	And the clock starts when the quest starts.
+s05_a_clock_10	This one starts with the game.
+s06_can_every_party_get_there_0	Lint doesn't walk your map.
+s06_can_every_party_get_there_1	You do, on paper, in three lists.
+s06_can_every_party_get_there_2	Every area, every item, every ending.
+s06_can_every_party_get_there_3	And beside each one, who can do it.
+s06_can_every_party_get_there_4	Now find a party the lists leave stuck.
+s06_can_every_party_get_there_5	A scientist and a guard, and no engineer.
+s06_can_every_party_get_there_6	She pulls the door code, and calms the sentry.
+s06_can_every_party_get_there_7	That's the clever answer.
+s06_can_every_party_get_there_8	But the sentry keeps its cell,
+s06_can_every_party_get_there_9	and nobody here can run the pump.
+s06_can_every_party_get_there_10	The clever answer left them with nothing.
+s06_can_every_party_get_there_11	So fix it where it broke.
+s06_can_every_party_get_there_12	The sentry hands its cell over.
+s06_can_every_party_get_there_13	One outcome, after a comma.
+s07_three_columns_0	Three columns, one for each console.
+s07_three_columns_1	What is each person doing?
+s07_three_columns_2	This is the mission as you left it.
+s07_three_columns_3	The chief makes eight presses out of twelve.
+s07_three_columns_4	The doctor is finished in ten seconds.
+s07_three_columns_5	What you have there is a chain.
+s07_three_columns_6	Every step waits for the one before,
+s07_three_columns_7	so only one person is ever busy.
+s07_three_columns_8	The cure is a join.
+s07_three_columns_9	Make the thing in the middle need pieces from three places.
+s07_three_columns_10	Your pump needs three fuses.
+s07_three_columns_11	So give Marrow one to pay the doctor with.
+s07_three_columns_12	Now three people each carry something to the pump house,
+s07_three_columns_13	and nobody presses more than five times.
+s08_the_beat_sheet_and_your_turn_0	Put it together in a beat sheet.
+s08_the_beat_sheet_and_your_turn_1	One column is the stand-in's clock,
+s08_the_beat_sheet_and_your_turn_2	and that one is measured.
+s08_the_beat_sheet_and_your_turn_3	The other is my guess for a first play.
+s08_the_beat_sheet_and_your_turn_4	Now play it with a stopwatch,
+s08_the_beat_sheet_and_your_turn_5	and write your own times over mine.
+s08_the_beat_sheet_and_your_turn_6	For forty-five minutes, write the sheet first.
+s08_the_beat_sheet_and_your_turn_7	Five for the landing.
+s08_the_beat_sheet_and_your_turn_8	Twenty for three tracks.
+s08_the_beat_sheet_and_your_turn_9	Eight for the join.
+s08_the_beat_sheet_and_your_turn_10	Seven for the last area,
+s08_the_beat_sheet_and_your_turn_11	and five for the ending.
+s08_the_beat_sheet_and_your_turn_12	That sheet is where your own mission starts.

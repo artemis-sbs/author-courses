@@ -1,0 +1,459 @@
+// Corvin's Claim: a long away mission on three maps, with no Python.
+//
+// The ship holds at Kesh Relay. The landing party beams down to a mining claim on the
+// rock below it: `ground/camp.tiles`, `ground/works.tiles` and `ground/gallery.tiles`.
+//
+// A record is `### [Display Name](key)`, an optional `---` fenced block of fields, then
+// body prose. Comments are `//` - note that .mast uses `#` instead.
+
+# [Corvin's Claim](corvins_claim)
+
+
+// ---- The crew: who sits at each console, and so who goes down.
+## [The Watch](crew)
+---
+crew
+Ship: Artemis
+---
+The watch aboard when Corvin's Claim stopped answering.
+
+### [Lt Dana Ross](ross)
+---
+Console: helm
+Roles: helm
+Skills: helm 4, engineering 1
+---
+
+### [Lt Sam Reyes](reyes)
+---
+Console: weapons
+Roles: security
+Skills: security 4, athletics 2
+---
+
+### [Dr Ines Hale](hale)
+---
+Console: science
+Roles: medical, science
+Skills: medical 4, science 3
+---
+
+### [Chief Okoro](okoro)
+---
+Console: engineering
+Roles: engineering
+Skills: engineering 4, science 1
+---
+
+### [Ens Tam Vale](vale)
+---
+Console: comms
+Roles: comms
+Skills: comms 3, science 2
+---
+
+
+// ---- Quests. This tree is all the bridge sees of the ground: each step that starts or
+// finishes is news for whoever stayed aboard.
+//
+// THE CLOCK is on the arc, and the arc waits for an answer: Ada Corvin's first one says
+// `; accepts rescue, accepts rescue/power`. So the time starts when the party has heard
+// what is wrong, and nothing about the lift is on anybody's screen before that.
+//
+// THE TWO ENDINGS are the last two steps, with a `Win:` line each. Both wait. An answer
+// at the rock fall completes one of them: `; completes rescue/dig`. Because they wait,
+// the arc is never finished by its first two steps, and its clock keeps running.
+## [Quests](quests)
+
+### [Hold at the Relay](arrive)
+---
+Scope: shared
+Starts when: at once
+Objective: Close to within 6000 of Kesh Relay
+Done when: reach relay 6000
+Then: signal relay_reached
+---
+Bring the ship in close enough for a transporter lock.
+
+### [Bring the Dig Crew Out](rescue)
+---
+Arc
+Scope: shared
+Starts when: revealed
+Fails when: 25 minutes
+Lose: The air in the lower gallery ran out before anybody reached them.
+---
+Four diggers are sealed in behind a rock fall, and their air is going.
+
+#### [Get the Lift Running](power)
+---
+Scope: shared
+Starts when: revealed
+Objective: Find the lift's coupling and fit it
+Done when: signal lift_running
+Then: reveal rescue/reach
+Leads to: lift_console
+---
+The only way down is the lift, and the lift is dead.
+
+#### [Reach the Rock Fall](reach)
+---
+Scope: shared
+Starts when: revealed
+Objective: Go down to the lower gallery
+Done when: signal fall_reached
+Leads to: rock_fall
+---
+They are behind it. Find out how thick it is.
+
+#### [Dig Them Out](dig)
+---
+Scope: shared
+Starts when: revealed
+Objective: Open the fall and keep the roof up
+Win: All four walk out, and Corvin's Claim opens again in the morning.
+---
+The slow way, or the clever one. The gallery stands.
+
+#### [Blast Them Out](blast)
+---
+Scope: shared
+Starts when: revealed
+Objective: Bring the fall down with quarry charges
+Win: All four walk out. Behind them the lower gallery comes down for good.
+---
+The fast way. It costs Ada Corvin her mine.
+
+
+// ---- Side stories: a quest for ONE person. On the ground the heading is all they are
+// shown, so each heading is the instruction.
+## [Side Stories](side_stories)
+
+### [Set the Digger's Leg](leg)
+---
+For: medical
+Starts when: at once
+Objective: See to the hurt man in the lower gallery
+Done when: signal reth_treated
+---
+One of them got out from under the fall. Not all of him got out well.
+
+### [Stop the Hauler](hauler_down)
+---
+For: security
+Starts when: at once
+Objective: Put the wild hauler out of action
+Done when: signal hostile_down_hauler
+Leads to: hauler
+---
+An ore hauler with nobody driving it is circling the lift house.
+
+### [Get the Air Moving](fans)
+---
+For: engineering
+Starts when: at once
+Objective: Start the ventilator in the lift house
+Done when: signal air_moving
+Leads to: vent_panel
+---
+The fans stopped when the roof came down. Nobody below can last without them.
+
+
+// ---- Props. A hidden thing stands on a cell (`At:`), never on a mark that names it.
+// An item's key is the words the pack shows: `stores_key` reads `stores key`.
+## [Props](props)
+
+### [Ada's hut](hut)
+---
+Area: camp
+At: 7, 7
+Sprite: prop:tent
+Blocks: yes
+Scan: A radio, a cot, and nine hours of cold coffee.
+---
+
+### [Gallery plan](plan_board)
+---
+Area: camp
+At: 12, 6
+Sprite: prop:sign
+Scene: plan
+Blocks: yes
+Scan: A survey plan of the lower gallery, under scratched plastic.
+---
+A board on two posts, with the claim's working plan pinned to it.
+
+// Hidden until Ada says where it is: `; reveal stores_key`.
+### [Stores key](stores_key)
+---
+Area: camp
+At: 10, 7
+Sprite: prop:keycard
+Item: stores_key
+Hidden until: stores_key_shown
+---
+A key on a nail, where anybody could have found it if they had known to look.
+
+### [Stores door](stores_door)
+---
+Area: camp
+Mark: stores_door
+Sprite: prop:hatch
+Open sprite: prop:doorframe
+Blocks: yes
+Opens with: key stores_key, check engineering 8, cut
+Scan: A padlock the size of a fist. No power to it.
+---
+The door of the stores, shut with a padlock.
+
+### [Blasting charges](charges)
+---
+Area: camp
+At: 16, 2
+Sprite: prop:crate_ammo
+Item: charges
+Scan: Four quarry charges and a firing box. Old, and dry.
+---
+A crate stenciled QUARRY USE ONLY.
+
+### [Shoring jacks](jacks)
+---
+Area: camp
+At: 19, 2
+Sprite: prop:machine_part
+Item: jacks
+Scan: Screw jacks for holding a roof up. Heavy, and sound.
+---
+A stack of steel jacks, each as long as your arm.
+
+### [Lift console](lift_console)
+---
+Area: works
+At: 13, 2
+Sprite: prop:console
+Scene: lift
+Blocks: yes
+Scan: Sound, and dead. The socket for its power coupling is empty.
+---
+The lift's console: one lever, and a socket with torn cable ends hanging out of it.
+
+// `Needs:` is who may use it at all. Nobody covers for a `Needs:`.
+### [Ventilator panel](vent_panel)
+---
+Area: works
+At: 17, 2
+Sprite: prop:generator
+Scene: vent
+Blocks: yes
+Needs: engineering
+Scan: Tripped on overload nine hours ago. The fans below are not turning.
+---
+The ventilator's breaker panel. Every handle on it is down.
+
+### [Winding drum](drum)
+---
+Area: works
+At: 15, 6
+Sprite: prop:machinery
+Blocks: yes
+Scan: The lift's winding drum. The cable is whole.
+---
+
+// A door only a signal opens: the lift console sends it.
+### [Lift gate](lift_gate)
+---
+Area: works
+Mark: lift_gate
+Sprite: prop:hatch
+Open sprite: prop:doorframe
+Blocks: yes
+Opens with: signal lift_running
+Scan: Locked shut while the cage has no power.
+---
+The gate of the lift cage.
+
+### [Safety lamp](lamp)
+---
+Area: gallery
+At: 17, 1
+Sprite: prop:scanner
+Scan: Burning low and blue. The air at this end is bad.
+---
+A miner's safety lamp hung on a nail. Its flame is small, and the wrong color.
+
+### [The rock fall](rock_fall)
+---
+Area: gallery
+At: 19, 2
+Sprite: prop:rubble
+Scene: fall
+Blocks: yes
+Scan: Broken rock, floor to roof. Four heartbeats on the far side, close together.
+---
+The roof of the lower gallery, lying where the floor used to be.
+
+
+// ---- People.
+## [People](people)
+
+### [Ada Corvin](corvin)
+---
+Area: camp
+At: 9, 6
+Sprite: fig:junker_f
+Face: female
+Calm: yes
+Talk scene: corvin
+Scan: One human. She has not slept, and she is not going to.
+---
+The owner of the claim, standing by her radio with a mug she is not drinking from.
+
+### [Jo Reth](reth)
+---
+Area: gallery
+At: 9, 3
+Sprite: fig:junker_m
+Face: male
+Calm: yes
+Talk scene: reth
+Scan: One human. A broken leg, set by nobody, and nine hours of bad air.
+---
+A digger sitting against the wall with one leg out straight in front of him.
+
+
+// ---- Hostiles.
+## [Hostiles](hostiles)
+
+### [Ore hauler](hauler)
+---
+Area: works
+At: 8, 2
+Sprite: fig:robot_war
+HP: 3
+Damage: 1
+Notice: 3
+Stun: 8
+Speed: 2
+Patrol: 7 2; 10 2; 10 6; 7 6
+Drops: coupling
+Scan: An ore hauler with its guidance burned out. It is dragging a power coupling.
+---
+A loading machine walking a square in front of the lift house, with a length of cable trailing behind it.
+
+
+// ---- Scenes.
+## [Scenes](scenes)
+
+### [Ada Corvin](corvin)
+%{learned told < 1} "You took your time." She does not look round from the radio. "Four of mine are under that hill. Ask me what you need and then go."
+%{learned told} "You know what I know." She turns the radio up. Three knocks, a pause, three knocks.
+
+- [Ask what happened](corvin_fall) if learned told < 1 ; accepts rescue, accepts rescue/power, learn told
+- [Ask why the lift is dead](corvin_lift) if learned told
+- [Ask what is in the stores](corvin_stores) if learned told ; reveal stores_key
+- [Leave her to the radio]()
+
+### [Nine Hours Ago](corvin_fall)
+% "The lower gallery roof let go at the end of the night shift. Reth crawled out. The other four are behind it, and the fans stopped when it fell. They have air for half an hour. Less, now."
+
+- [Ask her something else](corvin)
+- [Go]()
+
+### [The Hauler](corvin_lift)
+% "The ore hauler. Its guidance burned out in the fall, and it tore the coupling out of the lift on its way past. It is still dragging it round the lift house. Stun it and you have eight seconds."
+
+- [Ask her something else](corvin)
+- [Go]()
+
+### [The Stores](corvin_stores)
+% "Jacks, for holding a roof up. And quarry charges, if you would rather bring it down." She nods at a nail by her door. "Key. Use the charges and I have no mine. Use them anyway."
+
+- [Ask her something else](corvin)
+- [Go]()
+
+### [The Gallery Plan](plan)
+% The lower gallery is one straight drive. Somebody has inked a cross where it meets an older working, and written beside it: OLD SEAM. ROOF GOOD HERE.
+
+- [Copy it down]() ; learn plan
+
+### [The Lift Console](lift)
+% A lever, a dead lamp, and a socket with torn cable ends hanging out of it. Without its coupling the lift is a cage on a rope.
+
+- [Fit the coupling](lift_runs) if holding coupling ; take coupling
+- [Leave it]()
+
+### [The Drum Turns](lift_runs)
+% The lamp comes up amber, then green. Behind you the winding drum takes up its slack with a groan, and the cage gate unlocks.
+
+- [Step back]() ; signal lift_running
+
+### [The Ventilator](vent)
+% Every breaker is down. The fans did what they were built to do when the roof fell: they stopped, so they would not feed a fire.
+
+- [Reset the breakers](vent_runs)
+- [Leave it]()
+
+### [Air](vent_runs)
+% One handle at a time. Far below, something big begins to turn, and the dust on the panel starts to drift toward the lift shaft.
+
+- [Step back]() ; signal air_moving, learn air
+
+### [Jo Reth](reth)
+% "They are alive. I can hear them." He has one leg out straight, and he is not looking at it. "Do not ask me to walk you there."
+
+- [Ask where the others are](reth_where)
+- [Set his leg](reth_leg) if skill medical >= 3 ; signal reth_treated, learn seam
+- [Leave him]()
+
+### [Behind the Fall](reth_where)
+% "End of the drive. Thirty paces of rock, and them on the other side of it. Put your ear to it."
+
+- [Ask him something else](reth)
+- [Leave him]()
+
+### [The Thin Place](reth_leg)
+% He bites down on his glove while you work. When he can talk again he says: "Left side, by the old seam. The fall is thin there. I got out through it before it closed."
+
+- [Leave him]()
+
+### [The Rock Fall](fall)
+%{learned air < 1} A slope of broken rock from floor to roof. The air is thick here, and your lamp burns low.
+%{learned air} A slope of broken rock from floor to roof. There is a draft on your face now, and your lamp burns clean.
+
+- [Listen at the rock](fall_listen) ; signal fall_reached
+- [Shore the roof and dig](fall_shore) if learned >= 4
+- [Set the charges](fall_charges) if holding charges ; take charges
+- [Step back]()
+
+### [Three Knocks](fall_listen)
+% Three knocks, a pause, three knocks. You knock back, and for a moment there is nothing. Then all four of them are hammering at once.
+
+- [Step back](fall)
+
+### [Where to Dig](fall_shore)
+% You know where the fall is thin, where the roof is good, and that there is air to work in. What you need now is steel to hold the roof while you dig under it.
+
+- [Set the jacks and dig](fall_dig) if holding jacks ; take jacks
+- [Step back](fall)
+
+### [Through](fall_dig)
+% The jacks take the weight with a sound like a ship settling. An hour of rock comes out in ten minutes, and then a hand comes through the gap, and takes yours.
+
+- [Bring them up]() ; completes rescue/dig
+
+### [Four Charges](fall_charges)
+% Quarry charges: all push and no manners. Set as they are, they will open the fall and bring the roof down behind it.
+
+- [Fire them as they are](fall_blast)
+- [Shape them to spare the roof](fall_shaped) if skill security >= 3
+- [Pack them up again](fall) ; give charges
+
+### [The Gallery Goes](fall_blast)
+% The fall goes out like a cork. Four gray figures come through the dust at a run, and you run with them, and the roof follows all of you to the foot of the lift.
+
+- [Bring them up]() ; completes rescue/blast
+
+### [A Door in the Rock](fall_shaped)
+% Two charges, not four, and turned to face each other. The bang is small and flat. When the dust settles there is a hole the size of a door, and the roof has not moved.
+
+- [Bring them up]() ; completes rescue/dig

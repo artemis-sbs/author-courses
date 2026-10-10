@@ -1,0 +1,31 @@
+# The lift house, and the yard in front of it where the hauler walks.
+area: works
+title: Lift House
+tileset: starter
+entry: works_gate
+known: no
+size: 24x11
+legend:
+  .: dust
+  ,: scrub
+  #: rock
+  ^: cliff
+  _: floor
+  W: wall
+  a: dust @works_gate
+  <: dust @to_camp
+  d: floor
+  G: floor @lift_gate
+  v: floor @to_gallery
+---
+^^^^^^^^^^^^^^^^^^^^^^^^
+^##........WWWWWWWWW##^^
+^#.........W_______W.#^^
+^..........W_______W##^^
+^<a........d_______GvW^^
+^..........W_______W##^^
+^#.........W_______W.#^^
+^#..,,.....WWWWWWWWW.#^^
+^##.,,..............##^^
+^^###...........#####^^^
+^^^^^^^^^^^^^^^^^^^^^^^^

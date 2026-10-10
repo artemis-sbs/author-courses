@@ -650,8 +650,8 @@ You are done when all six are true:
 
 ## Next
 
-Lecture 7 opens up a long away mission, Dawnline, and shows how its files fit together:
-the same rooms and stories, with maps to walk on.
+Lecture 7 makes a second mission from the `away` starter, and shows how its files fit
+together: the same rooms and stories, with a map to walk on.
 
 ## Further reading
 

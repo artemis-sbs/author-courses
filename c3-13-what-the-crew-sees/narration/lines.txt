@@ -1,0 +1,85 @@
+s01_cold_open_0	For six lectures you've written records.
+s01_cold_open_1	Your crew never sees a record.
+s01_cold_open_2	What they see is this handheld.
+s01_cold_open_3	Eight apps, and every one of them is made of your words.
+s01_cold_open_4	Some of those words you chose with care.
+s01_cold_open_5	And some you typed in a hurry, as a name for yourself.
+s01_cold_open_6	like the last word on this bar.
+s01_cold_open_7	Today we read the mission from their side,
+s01_cold_open_8	and fix what reads badly.
+s02_the_bar_and_the_eight_apps_0	Start with the line that's always there.
+s02_the_bar_and_the_eight_apps_1	Your name, your jobs, and where you stand.
+s02_the_bar_and_the_eight_apps_2	Then the eight apps.
+s02_the_bar_and_the_eight_apps_3	Crew is who's down here, and the way home.
+s02_the_bar_and_the_eight_apps_4	Act is the scene, and it keeps everything you've read.
+s02_the_bar_and_the_eight_apps_5	Look is what's in reach, as buttons.
+s02_the_bar_and_the_eight_apps_6	Pack is what you carry.
+s02_the_bar_and_the_eight_apps_7	Tasks is your own story, and the party's.
+s02_the_bar_and_the_eight_apps_8	Beam, Scan and Fire do what they say.
+s02_the_bar_and_the_eight_apps_9	For each one, ask a single question.
+s02_the_bar_and_the_eight_apps_10	Which of my words is this?
+s03_who_is_offered_what_0	A choice with no condition goes to everybody in the scene.
+s03_who_is_offered_what_1	A choice for a job goes to the person with that job.
+s03_who_is_offered_what_2	Now here's the surprise.
+s03_who_is_offered_what_3	The engineer walks up to Marrow alone.
+s03_who_is_offered_what_4	The medic is across the yard, on the landing pad.
+s03_who_is_offered_what_5	And he's offered her answer, marked as covering.
+s03_who_is_offered_what_6	Covering is worked out scene by scene,
+s03_who_is_offered_what_7	from who is standing in it.
+s03_who_is_offered_what_8	So a job is never out of reach.
+s03_who_is_offered_what_9	If only a medic's hands will do,
+s03_who_is_offered_what_10	ask for a skill instead.
+s04_a_mark_is_a_word_0	That third word on the bar is a mark from your map file.
+s04_a_mark_is_a_word_1	Any mark somebody can stand on is a word on their screen.
+s04_a_mark_is_a_word_2	So watch what happens here.
+s04_a_mark_is_a_word_3	Nobody has asked about the medical kit yet.
+s04_a_mark_is_a_word_4	And the map has just told her it's there.
+s04_a_mark_is_a_word_5	So here are two rules.
+s04_a_mark_is_a_word_6	Name a mark for the place, the way you'd say it.
+s04_a_mark_is_a_word_7	Landing pad. Gully mouth. Foot of the stairs.
+s04_a_mark_is_a_word_8	And stand a hidden thing on a cell, not on a mark.
+s05_titles_and_what_the_pack_say_0	An area's title is read after other words.
+s05_titles_and_what_the_pack_say_1	Go to, in Look. To, in Beam.
+s05_titles_and_what_the_pack_say_2	So a title that starts with The reads badly twice.
+s05_titles_and_what_the_pack_say_3	and the fix is to take it off.
+s05_titles_and_what_the_pack_say_4	Next, the things you pick up.
+s05_titles_and_what_the_pack_say_5	The transcript says he picked up a toolbox.
+s05_titles_and_what_the_pack_say_6	The pack says two fuses.
+s05_titles_and_what_the_pack_say_7	And the key is worse.
+s05_titles_and_what_the_pack_say_8	The heading says pump house key.
+s05_titles_and_what_the_pack_say_9	The pack and the door say pump key.
+s05_titles_and_what_the_pack_say_10	That's the item's key, with its underscore shown as a space.
+s05_titles_and_what_the_pack_say_11	So make the item's key the same words as the heading.
+s05_titles_and_what_the_pack_say_12	Three lines name it,
+s05_titles_and_what_the_pack_say_13	and all three change together.
+s05_titles_and_what_the_pack_say_14	Lint can't check that for you.
+s06_scan_and_a_title_that_is_the_0	Scan lists everything in sight, scenery too.
+s06_scan_and_a_title_that_is_the_1	With no scan line and no description, it says no reading.
+s06_scan_and_a_title_that_is_the_2	So give your scenery one line each.
+s06_scan_and_a_title_that_is_the_3	It's the cheapest clue you have.
+s06_scan_and_a_title_that_is_the_4	Now open the Tasks app.
+s06_scan_and_a_title_that_is_the_5	On the ship, a quest shows its objective.
+s06_scan_and_a_title_that_is_the_6	Down here it shows a heading, a state, and a lead.
+s06_scan_and_a_title_that_is_the_7	So on the ground the heading has to be the instruction.
+s06_scan_and_a_title_that_is_the_8	The Caretaker's Cough becomes See to Marrow's Cough.
+s07_the_two_with_nothing_to_do_0	Look at the mission as your helm officer.
+s07_the_two_with_nothing_to_do_1	No story of her own.
+s07_the_two_with_nothing_to_do_2	One answer she's covering, and a panel that refuses her.
+s07_the_two_with_nothing_to_do_3	Two of your five crew have come down to watch.
+s07_the_two_with_nothing_to_do_4	So give each of them a story, and one answer that finishes it.
+s07_the_two_with_nothing_to_do_5	You know every word of this from the fifth lecture.
+s07_the_two_with_nothing_to_do_6	Lint warns that nothing sends the signals,
+s07_the_two_with_nothing_to_do_7	and then the two answers put that right.
+s08_what_the_bridge_sees_and_you_0	Somebody stays on the bridge.
+s08_what_the_bridge_sees_and_you_1	Here's everything they get.
+s08_what_the_bridge_sees_and_you_2	A list of who went down.
+s08_what_the_bridge_sees_and_you_3	The shared quests, as they start and finish.
+s08_what_the_bridge_sees_and_you_4	And one line in Messages,
+s08_what_the_bridge_sees_and_you_5	when somebody on the ground presses Report in.
+s08_what_the_bridge_sees_and_you_6	No scene line ever reaches the bridge.
+s08_what_the_bridge_sees_and_you_7	So the shared quests are its only window.
+s08_what_the_bridge_sees_and_you_8	Remember that for the capstone.
+s08_what_the_bridge_sees_and_you_9	For the exercise, play it to read, not to win.
+s08_what_the_bridge_sees_and_you_10	Write down every word that makes you wince,
+s08_what_the_bridge_sees_and_you_11	and then go and fix each one.
+s08_what_the_bridge_sees_and_you_12	Next time, we put a clock on it.
