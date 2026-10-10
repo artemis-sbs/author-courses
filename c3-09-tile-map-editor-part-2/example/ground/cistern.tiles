@@ -1,0 +1,22 @@
+# Under the pump house: a walkway round a tank of standing water.
+area: cistern
+title: The Cistern
+tileset: starter
+entry: foot
+known: no
+beam: no
+size: 18x7
+legend:
+  W: wall
+  _: floor
+  ~: water
+  u: floor @to_gully
+  f: floor @foot
+---
+WWWWWWWWWWWWWWWWWW
+Wu_f__________W__W
+W_~~~~~~~~~~_____W
+W_~~~~~~~~~~__W__W
+W_~~~~~~~~~~__W__W
+W_____________W__W
+WWWWWWWWWWWWWWWWWW

@@ -1,0 +1,34 @@
+# The dry gully east of the relay yard, and the pump house that stands in it.
+area: gully
+title: The Dry Gully
+tileset: starter
+entry: arrive
+known: no
+size: 24x12
+legend:
+  .: dust
+  ,: scrub
+  #: rock
+  ^: cliff
+  _: floor
+  W: wall
+  D: floor @pump_door
+  a: dust @arrive
+  <: dust @to_landing
+  v: floor @to_cistern
+  p: floor @pump
+exits:
+  to_cistern: cistern @foot
+---
+^^^^^^^^^^^^^^^^^^^^^^^^
+^###......,,....####^^^^
+^#.........,........##^^
+^#..........WWWWWWW..#^^
+^...........W__p__W..#^^
+^<a.........D____vW..#^^
+^...........W_____W..#^^
+^#..,,......WWWWWWW..#^^
+^#...,,..............#^^
+^##.................##^^
+^^###...........#####^^^
+^^^^^^^^^^^^^^^^^^^^^^^^

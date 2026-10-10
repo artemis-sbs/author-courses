@@ -1,0 +1,93 @@
+s01_cold_open_0	This is a map you'll draw today:
+s01_cold_open_1	a dry gully, with a pump house in the middle of it.
+s01_cold_open_2	And this is the same map as the game reads it.
+s01_cold_open_3	Twenty-eight lines of text.
+s01_cold_open_4	You can paint it with the mouse, or type it,
+s01_cold_open_5	and it's the same file either way.
+s02_a_new_file_and_the_header_0	Right-click the ground folder, new file,
+s02_a_new_file_and_the_header_1	and call it gully dot tiles.
+s02_a_new_file_and_the_header_2	It opens in the Tile Map Editor,
+s02_a_new_file_and_the_header_3	and there's nothing to draw yet,
+s02_a_new_file_and_the_header_4	so press the Text button.
+s02_a_new_file_and_the_header_5	The top of an area file is its header.
+s02_a_new_file_and_the_header_6	Area is the key,
+s02_a_new_file_and_the_header_7	the name the rest of your mission knows it by.
+s02_a_new_file_and_the_header_8	Title is what the crew sees.
+s02_a_new_file_and_the_header_9	Tileset names the file that lists the kinds of ground.
+s02_a_new_file_and_the_header_10	And size is how many cells across,
+s02_a_new_file_and_the_header_11	then a small x, and how many down.
+s03_the_legend_and_the_ground_0	Next comes the legend.
+s03_the_legend_and_the_ground_1	Each line is one character, a colon,
+s03_the_legend_and_the_ground_2	and a kind of ground from the tileset.
+s03_the_legend_and_the_ground_3	A dot is dust.
+s03_the_legend_and_the_ground_4	A capital W is wall.
+s03_the_legend_and_the_ground_5	Then a line of three dashes,
+s03_the_legend_and_the_ground_6	and under them the map itself,
+s03_the_legend_and_the_ground_7	one character for each cell.
+s03_the_legend_and_the_ground_8	There are twelve rows,
+s03_the_legend_and_the_ground_9	and each one is twenty-four characters long.
+s03_the_legend_and_the_ground_10	Save it, and run lint.
+s03_the_legend_and_the_ground_11	It comes back clean.
+s03_the_legend_and_the_ground_12	And notice that lint doesn't mention the new file at all.
+s03_the_legend_and_the_ground_13	It only speaks up about a map when something's wrong with it.
+s04_look_at_it_0	Now go back to the picture,
+s04_look_at_it_1	with this button at the top of the text.
+s04_look_at_it_2	Two ways to look.
+s04_look_at_it_3	Kinds colors each cell by what it is,
+s04_look_at_it_4	and hatches the ones nobody can walk on.
+s04_look_at_it_5	Art draws it the way the game will.
+s04_look_at_it_6	Move the mouse over it,
+s04_look_at_it_7	and the bottom line tells you which cell you're over,
+s04_look_at_it_8	and what it is.
+s04_look_at_it_9	And look at the pump house.
+s04_look_at_it_10	It's a box with no way in.
+s05_a_door_0	A door on a map is two things.
+s05_a_door_1	It's a cell you can walk through,
+s05_a_door_2	in a wall you can't.
+s05_a_door_3	And it's a mark,
+s05_a_door_4	so that later a real door can be stood on it.
+s05_a_door_5	Plus Entry gives me a new legend line.
+s05_a_door_6	The kind is floor,
+s05_a_door_7	the mark is pump door,
+s05_a_door_8	and the character is a capital D.
+s05_a_door_9	Then I paint one cell with it,
+s05_a_door_10	in the middle of the west wall.
+s05_a_door_11	Press Text, and look at what the editor wrote.
+s05_a_door_12	One new line in the legend,
+s05_a_door_13	and one changed character in the map.
+s05_a_door_14	Nothing else was touched.
+s06_a_mark_to_arrive_on_and_the__0	The party needs somewhere to stand when it beams down.
+s06_a_mark_to_arrive_on_and_the__1	So I make a second mark the same way,
+s06_a_mark_to_arrive_on_and_the__2	on open ground at the west end.
+s06_a_mark_to_arrive_on_and_the__3	The mark gives that cell a name,
+s06_a_mark_to_arrive_on_and_the__4	and it's still dust.
+s06_a_mark_to_arrive_on_and_the__5	Then one more line in the header.
+s06_a_mark_to_arrive_on_and_the__6	Entry, and the name of the mark.
+s06_a_mark_to_arrive_on_and_the__7	The editor has a tool for this as well,
+s06_a_mark_to_arrive_on_and_the__8	and it writes the cell's numbers.
+s06_a_mark_to_arrive_on_and_the__9	Both of them work.
+s06_a_mark_to_arrive_on_and_the__10	The name is better,
+s06_a_mark_to_arrive_on_and_the__11	because it still points at the right place after you redraw the map.
+s07_lint_and_what_it_can_t_see_0	Lint reads your maps along with everything else.
+s07_lint_and_what_it_can_t_see_1	Misspell the entry line,
+s07_lint_and_what_it_can_t_see_2	and it tells you the name is neither a mark nor a cell.
+s07_lint_and_what_it_can_t_see_3	Type a letter that isn't in the legend,
+s07_lint_and_what_it_can_t_see_4	and it tells you the whole area won't load.
+s07_lint_and_what_it_can_t_see_5	But there are things it can't see.
+s07_lint_and_what_it_can_t_see_6	Give two areas the same key,
+s07_lint_and_what_it_can_t_see_7	and it says nothing at all.
+s07_lint_and_what_it_can_t_see_8	Draw a row longer than the size line says,
+s07_lint_and_what_it_can_t_see_9	and the extra cells are quietly cut off.
+s07_lint_and_what_it_can_t_see_10	So compare your file with the page, one character at a time.
+s08_play_it_and_your_turn_0	Nothing in the mission leads to the gully yet.
+s08_play_it_and_your_turn_1	But the ship's transporter can put you there.
+s08_play_it_and_your_turn_2	Beam down as usual,
+s08_play_it_and_your_turn_3	then open Beam on the handheld.
+s08_play_it_and_your_turn_4	There's one other place on the list, and it's yours.
+s08_play_it_and_your_turn_5	You're standing on your own mark.
+s08_play_it_and_your_turn_6	Click inside the pump house,
+s08_play_it_and_your_turn_7	and you walk in through the gap you painted.
+s08_play_it_and_your_turn_8	For the exercise, try the other tools.
+s08_play_it_and_your_turn_9	Draw a second building with the rectangle,
+s08_play_it_and_your_turn_10	then break the file on purpose and read what lint says.
+s08_play_it_and_your_turn_11	Next time, you join this map to the yard.

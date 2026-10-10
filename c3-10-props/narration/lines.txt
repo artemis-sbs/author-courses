@@ -1,0 +1,98 @@
+s01_cold_open_0	Your maps have places on them.
+s01_cold_open_1	Today they get things:
+s01_cold_open_2	a locked door and its key,
+s01_cold_open_3	hung on a tent peg,
+s01_cold_open_4	and a panel only an engineer may touch.
+s01_cold_open_5	Every one of them is a few lines in the fact sheet,
+s01_cold_open_6	and what a thing does depends on which lines it has.
+s02_what_a_prop_does_0	When somebody clicks a prop,
+s02_what_a_prop_does_1	the game asks four questions in order.
+s02_what_a_prop_does_2	May this person use it at all?
+s02_what_a_prop_does_3	Is it a door, and shut?
+s02_what_a_prop_does_4	Is it something to pick up?
+s02_what_a_prop_does_5	Does it open a scene?
+s02_what_a_prop_does_6	It stops at the first yes.
+s02_what_a_prop_does_7	And if there's no yes at all,
+s02_what_a_prop_does_8	it shows the description.
+s02_what_a_prop_does_9	So here's the simplest prop there is.
+s02_what_a_prop_does_10	One line says Item,
+s02_what_a_prop_does_11	and a name I made up.
+s02_what_a_prop_does_12	Click it, and it's in your pack and off the map.
+s03_a_door_0	Now the door, on the mark you painted two lectures ago.
+s03_a_door_1	Blocks, and then yes,
+s03_a_door_2	means nobody walks through it while it's shut.
+s03_a_door_3	And Opens with lists the ways it opens,
+s03_a_door_4	with commas between them.
+s03_a_door_5	A key opens it when anybody in the party is carrying one,
+s03_a_door_6	not just the one at the door.
+s03_a_door_7	A check is a roll:
+s03_a_door_8	a ten sided die, plus a skill, against a number.
+s03_a_door_9	And cut means a shot from the weapon.
+s03_a_door_10	Two warnings about checks.
+s03_a_door_11	Write the key first,
+s03_a_door_12	because the terms are tried in order.
+s03_a_door_13	And a check can be tried again at once,
+s03_a_door_14	so a door with a check on it will always open in the end.
+s04_two_more_pickups_and_a_notic_0	The toolbox is a pickup worth two.
+s04_two_more_pickups_and_a_notic_1	That's the line that says Qty.
+s04_two_more_pickups_and_a_notic_2	The notice opens a scene.
+s04_two_more_pickups_and_a_notic_3	Scene, and the key of a room,
+s04_two_more_pickups_and_a_notic_4	the same join you saw on the starter's terminal.
+s04_two_more_pickups_and_a_notic_5	And it has one more line:
+s04_two_more_pickups_and_a_notic_6	Once, and then yes.
+s04_two_more_pickups_and_a_notic_7	The room opens the first time,
+s04_two_more_pickups_and_a_notic_8	and after that a click only shows the description.
+s04_two_more_pickups_and_a_notic_9	Be careful with that one.
+s04_two_more_pickups_and_a_notic_10	It counts the room opening,
+s04_two_more_pickups_and_a_notic_11	not what anyone answered.
+s05_a_terminal_with_a_needs_0	The pump panel is a terminal too,
+s05_a_terminal_with_a_needs_1	with one new line.
+s05_a_terminal_with_a_needs_2	Needs, and a job.
+s05_a_terminal_with_a_needs_3	Anyone else who clicks it is told they'd need engineering,
+s05_a_terminal_with_a_needs_4	and gets nothing more.
+s05_a_terminal_with_a_needs_5	That's stricter than a choice in a room.
+s05_a_terminal_with_a_needs_6	A choice for a missing job gets covered by somebody else.
+s05_a_terminal_with_a_needs_7	Nobody covers for a Needs.
+s05_a_terminal_with_a_needs_8	So never put the only way through your story behind one.
+s05_a_terminal_with_a_needs_9	Scan is the simple one.
+s05_a_terminal_with_a_needs_10	It's what the scanner says about the thing,
+s05_a_terminal_with_a_needs_11	when a crew member can see it.
+s06_their_rooms_and_a_true_warni_0	Three short rooms at the end of the file.
+s06_their_rooms_and_a_true_warni_1	You know how to write these.
+s06_their_rooms_and_a_true_warni_2	The notice teaches a fact.
+s06_their_rooms_and_a_true_warni_3	And the lever's answer sends a signal.
+s06_their_rooms_and_a_true_warni_4	Lint warns that nothing hears that signal.
+s06_their_rooms_and_a_true_warni_5	That's true for the moment.
+s06_their_rooms_and_a_true_warni_6	The next step is what hears it.
+s07_a_gate_a_hidden_cell_and_a_g_0	Three marks in the cistern first,
+s07_a_gate_a_hidden_cell_and_a_g_1	one new legend line and one click each.
+s07_a_gate_a_hidden_cell_and_a_g_2	The sluice gate is a door with only one way to open.
+s07_a_gate_a_hidden_cell_and_a_g_3	Opens with, signal, and a name.
+s07_a_gate_a_hidden_cell_and_a_g_4	Nobody on the ground can force it.
+s07_a_gate_a_hidden_cell_and_a_g_5	The spare cell says Hidden until,
+s07_a_gate_a_hidden_cell_and_a_g_6	and the same name.
+s07_a_gate_a_hidden_cell_and_a_g_7	It isn't on the map at all until that signal is sent.
+s07_a_gate_a_hidden_cell_and_a_g_8	So one answer in the pump house does two things downstairs.
+s07_a_gate_a_hidden_cell_and_a_g_9	It opens the gate,
+s07_a_gate_a_hidden_cell_and_a_g_10	and it uncovers the cell.
+s07_a_gate_a_hidden_cell_and_a_g_11	The gauge stands out in the water.
+s07_a_gate_a_hidden_cell_and_a_g_12	Reach, and the number two,
+s07_a_gate_a_hidden_cell_and_a_g_13	lets a crew member use it from two cells away.
+s07_a_gate_a_hidden_cell_and_a_g_14	And lint is clean again,
+s07_a_gate_a_hidden_cell_and_a_g_15	because something hears the signal now.
+s08_what_lint_can_t_see_and_play_0	A warning before you play.
+s08_what_lint_can_t_see_and_play_1	Lint doesn't read a door.
+s08_what_lint_can_t_see_and_play_2	Misspell the key's name, or the signal's,
+s08_what_lint_can_t_see_and_play_3	and it says clean,
+s08_what_lint_can_t_see_and_play_4	and the door never opens.
+s08_what_lint_can_t_see_and_play_5	So check doors with a pencil.
+s08_what_lint_can_t_see_and_play_6	For each way a door opens,
+s08_what_lint_can_t_see_and_play_7	write down where that key or that signal comes from.
+s08_what_lint_can_t_see_and_play_8	Then play it with two consoles.
+s08_what_lint_can_t_see_and_play_9	The doctor carries the key,
+s08_what_lint_can_t_see_and_play_10	and the engineer opens the door.
+s08_what_lint_can_t_see_and_play_11	The doctor can't work the panel, and the engineer can.
+s08_what_lint_can_t_see_and_play_12	For the exercise, add a second key somewhere it can never be reached,
+s08_what_lint_can_t_see_and_play_13	and say why that's a mistake.
+s08_what_lint_can_t_see_and_play_14	Next time, somebody to talk to,
+s08_what_lint_can_t_see_and_play_15	and something that bites.

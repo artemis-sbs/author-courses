@@ -1,0 +1,363 @@
+1
+00:00:00,000 --> 00:00:03,913
+You have three maps, some things, and two people.
+
+2
+00:00:04,813 --> 00:00:10,030
+What you don't have yet is a story that ties them together.
+
+3
+00:00:11,830 --> 00:00:14,439
+Today Pim wants her tablet back,
+
+4
+00:00:14,889 --> 00:00:17,063
+the pump wants three fuses,
+
+5
+00:00:17,513 --> 00:00:22,296
+and one bad idea with a crowbar loses the whole game.
+
+6
+00:00:23,196 --> 00:00:27,543
+Every bit of it is an answer in a room.
+
+7
+00:00:28,743 --> 00:00:33,961
+A choice has a condition in front of it, and outcomes behind.
+
+8
+00:00:34,861 --> 00:00:37,904
+You've used both since the third lecture.
+
+9
+00:00:39,704 --> 00:00:43,183
+On a map there are two new conditions.
+
+10
+00:00:44,083 --> 00:00:47,561
+Holding asks what the person answering is carrying.
+
+11
+00:00:48,461 --> 00:00:53,243
+Party asks what everybody on the ground is carrying between them.
+
+12
+00:00:55,043 --> 00:00:57,217
+And there are new outcomes.
+
+13
+00:00:58,117 --> 00:01:02,900
+Give and take move things in and out of a pack.
+
+14
+00:01:03,800 --> 00:01:06,409
+Open and reveal work on props.
+
+15
+00:01:07,309 --> 00:01:10,787
+Calm, rouse, dismiss and summon work on people.
+
+16
+00:01:11,987 --> 00:01:14,161
+First a quest that waits.
+
+17
+00:01:14,611 --> 00:01:16,785
+It starts when it's revealed,
+
+18
+00:01:17,235 --> 00:01:20,278
+which means when an answer says so.
+
+19
+00:01:21,178 --> 00:01:24,222
+Lint warns that nothing reveals it yet,
+
+20
+00:01:24,672 --> 00:01:26,846
+and that's true for now.
+
+21
+00:01:28,646 --> 00:01:31,254
+Then two things that begin hidden.
+
+22
+00:01:32,154 --> 00:01:36,937
+A second record for Pim, by the tent in the yard.
+
+23
+00:01:37,387 --> 00:01:42,170
+When somebody goes somewhere else on a map, they're two records:
+
+24
+00:01:42,620 --> 00:01:46,533
+the one who leaves, and the one who arrives.
+
+25
+00:01:47,433 --> 00:01:50,476
+And a medical kit under a rock,
+
+26
+00:01:50,926 --> 00:01:53,535
+hidden until a scene shows it.
+
+27
+00:01:54,735 --> 00:01:56,474
+Now for her scene,
+
+28
+00:01:56,924 --> 00:02:00,402
+and it's where most of today's words live.
+
+29
+00:02:02,202 --> 00:02:06,985
+This answer is only offered if the party learned a fact,
+
+30
+00:02:07,435 --> 00:02:10,043
+from the notice by the door.
+
+31
+00:02:10,943 --> 00:02:13,117
+This one reveals the stash.
+
+32
+00:02:14,017 --> 00:02:17,930
+In the next room, a promise accepts the quest.
+
+33
+00:02:19,730 --> 00:02:21,470
+And here's the payoff.
+
+34
+00:02:21,920 --> 00:02:25,833
+It's offered only to the one holding the tablet.
+
+35
+00:02:26,733 --> 00:02:30,211
+Then three outcomes in a row, with commas:
+
+36
+00:02:30,661 --> 00:02:35,009
+take the tablet, complete the quest, and give a fuse.
+
+37
+00:02:36,809 --> 00:02:38,983
+There's a mean answer too.
+
+38
+00:02:39,433 --> 00:02:42,041
+Keep the tablet, and she's roused:
+
+39
+00:02:42,491 --> 00:02:45,100
+she attacks, and the quest fails.
+
+40
+00:02:46,000 --> 00:02:48,174
+And when she goes home,
+
+41
+00:02:48,624 --> 00:02:50,798
+one answer dismisses her here
+
+42
+00:02:51,248 --> 00:02:52,987
+and summons her there.
+
+43
+00:02:54,187 --> 00:02:56,796
+The pump needs three fuses now.
+
+44
+00:02:57,696 --> 00:02:59,435
+Look at the condition,
+
+45
+00:02:59,885 --> 00:03:02,493
+and at the outcome after it.
+
+46
+00:03:03,393 --> 00:03:05,567
+Holding three, and take three.
+
+47
+00:03:07,367 --> 00:03:10,846
+Take always takes from the person who answers.
+
+48
+00:03:11,296 --> 00:03:16,948
+So the condition in front of it is always holding, and never party.
+
+49
+00:03:18,748 --> 00:03:21,791
+The lines at the top are different.
+
+50
+00:03:22,241 --> 00:03:24,850
+A line is read by everybody,
+
+51
+00:03:25,300 --> 00:03:28,343
+so a line asks about the party.
+
+52
+00:03:30,143 --> 00:03:32,752
+The second answer is a gamble.
+
+53
+00:03:33,202 --> 00:03:36,246
+Two fuses and a bit of wire,
+
+54
+00:03:36,696 --> 00:03:39,304
+and a roll that can fail.
+
+55
+00:03:40,204 --> 00:03:42,813
+And notice where the signal went.
+
+56
+00:03:43,263 --> 00:03:46,307
+Two answers lead to this room now,
+
+57
+00:03:46,757 --> 00:03:50,670
+so the signal sits on its one way out.
+
+58
+00:03:51,870 --> 00:03:54,913
+The starter's terminal already teaches a fact.
+
+59
+00:03:55,363 --> 00:03:57,537
+Give it a second use.
+
+60
+00:03:58,437 --> 00:04:01,915
+Send the sentry its update, and it's calm.
+
+61
+00:04:02,365 --> 00:04:04,974
+It keeps its power cell, though,
+
+62
+00:04:05,424 --> 00:04:08,467
+so the party still needs another one.
+
+63
+00:04:10,267 --> 00:04:14,180
+And Marrow gets one answer about the brass key.
+
+64
+00:04:15,080 --> 00:04:16,820
+That condition is party,
+
+65
+00:04:17,270 --> 00:04:19,009
+because nothing is taken,
+
+66
+00:04:19,459 --> 00:04:23,372
+and it doesn't matter who picked the key up.
+
+67
+00:04:24,572 --> 00:04:28,920
+You wrote no Win line today, and no Lose line.
+
+68
+00:04:29,820 --> 00:04:31,559
+You didn't need to.
+
+69
+00:04:32,009 --> 00:04:34,617
+Both sit on the starter's quest.
+
+70
+00:04:36,417 --> 00:04:38,591
+Your crowbar fails that quest,
+
+71
+00:04:39,041 --> 00:04:42,954
+so it loses the game from two maps away.
+
+72
+00:04:43,854 --> 00:04:47,333
+And your spare cell is a power cell,
+
+73
+00:04:47,783 --> 00:04:51,261
+so the starter's own winning answer takes it.
+
+74
+00:04:53,061 --> 00:04:54,800
+One more word, discover,
+
+75
+00:04:55,250 --> 00:04:57,859
+tells the ship an area exists.
+
+76
+00:04:58,759 --> 00:05:00,933
+It works in the game.
+
+77
+00:05:01,383 --> 00:05:03,557
+But lint calls it unknown,
+
+78
+00:05:04,007 --> 00:05:07,920
+so it stays out of your mission for now.
+
+79
+00:05:09,120 --> 00:05:11,293
+Play the long way round.
+
+80
+00:05:12,193 --> 00:05:15,672
+The key, then Marrow, and then the gully.
+
+81
+00:05:16,572 --> 00:05:18,746
+Pim asks for her tablet.
+
+82
+00:05:19,646 --> 00:05:24,428
+The crawler, the tablet, and back to Pim for a fuse.
+
+83
+00:05:25,328 --> 00:05:27,502
+Three fuses in the pump,
+
+84
+00:05:27,952 --> 00:05:30,996
+then the gate, and the spare cell.
+
+85
+00:05:31,896 --> 00:05:35,374
+Pim opens the relay house from her chair,
+
+86
+00:05:35,824 --> 00:05:37,563
+and the beacon lights.
+
+87
+00:05:39,363 --> 00:05:43,711
+Then play it again, and lose it with the crowbar.
+
+88
+00:05:45,511 --> 00:05:50,293
+For the exercise, give Marrow a use for the medical kit,
+
+89
+00:05:50,743 --> 00:05:54,657
+and write a second losing answer that plays fair.
+
+90
+00:05:56,457 --> 00:05:59,935
+That's the last new word for a while.
+
+91
+00:06:00,385 --> 00:06:04,733
+Next time, the screen your crew has been looking at.

@@ -1,0 +1,90 @@
+s01_cold_open_0	Two maps of yours are still empty of people.
+s01_cold_open_1	Today there's somebody in the gully to talk to,
+s01_cold_open_2	and something in the cistern you can't talk to at all.
+s01_cold_open_3	They turn out to be the same kind of record,
+s01_cold_open_4	with one line between them.
+s02_a_person_0	Pim belongs to a spot,
+s02_a_person_1	so first she gets a mark.
+s02_a_person_2	Then her record, under Old Marrow's.
+s02_a_person_3	Area and Mark put her on the map,
+s02_a_person_4	the way they put a prop there.
+s02_a_person_5	Sprite is her figure.
+s02_a_person_6	Face is the face shown beside what she says.
+s02_a_person_7	And these two lines are the ones that matter.
+s02_a_person_8	Calm, and then yes,
+s02_a_person_9	means she never attacks.
+s02_a_person_10	And Talk scene is the key of the room a click on her opens.
+s02_a_person_11	A person says Talk scene,
+s02_a_person_12	and a prop says Scene.
+s02_a_person_13	Lint tells you if you mix them up.
+s03_what_she_says_0	Her rooms go at the end of the file,
+s03_what_she_says_1	and there's nothing new in them.
+s03_what_she_says_2	She came out here to start the pump,
+s03_what_she_says_3	and something below took her tablet.
+s03_what_she_says_4	Next lecture gives her a great deal more to say.
+s04_a_hostile_0	Now the crawler, under the sentry.
+s04_a_hostile_1	Look at what's missing.
+s04_a_hostile_2	There's no Calm line,
+s04_a_hostile_3	and that's all it takes to make a hostile.
+s04_a_hostile_4	HP is how much hurt it can take.
+s04_a_hostile_5	Damage is how much it does with each strike.
+s04_a_hostile_6	Notice is how close you can get before it sees you, counted in cells.
+s04_a_hostile_7	Patrol is the walk it takes.
+s04_a_hostile_8	And Drops is what it leaves behind.
+s04_a_hostile_9	A hostile walks its patrol
+s04_a_hostile_10	until a crew member is close enough and in view.
+s04_a_hostile_11	Then it chases them,
+s04_a_hostile_12	and strikes every two seconds from the next cell.
+s04_a_hostile_13	So think about where you put it.
+s04_a_hostile_14	This one keeps to the east end of the walkway,
+s04_a_hostile_15	well away from the stairs.
+s04_a_hostile_16	A party that arrives has room to stop and look.
+s05_a_quest_it_finishes_0	When a hostile goes down for good,
+s05_a_quest_it_finishes_1	the game sends a signal by itself.
+s05_a_quest_it_finishes_2	The name is hostile, down, and the record's key, joined with underscores.
+s05_a_quest_it_finishes_3	So a quest can wait for it,
+s05_a_quest_it_finishes_4	with no answer and no card.
+s05_a_quest_it_finishes_5	This one is a side story for the engineer.
+s05_a_quest_it_finishes_6	And Leads to finally has something to point at.
+s05_a_quest_it_finishes_7	It's the key of the thing on the map this story is about.
+s06_a_fight_and_getting_hurt_0	Every crew member carries a weapon,
+s06_a_fight_and_getting_hurt_1	and it's the Fire app on the handheld.
+s06_a_fight_and_getting_hurt_2	Pick a setting and press Arm,
+s06_a_fight_and_getting_hurt_3	and the next click on the map is a shot.
+s06_a_fight_and_getting_hurt_4	One shot, and it's safe again.
+s06_a_fight_and_getting_hurt_5	Stun holds a hostile still.
+s06_a_fight_and_getting_hurt_6	Cut takes one point off it.
+s06_a_fight_and_getting_hurt_7	And full puts it down,
+s06_a_fight_and_getting_hurt_8	whatever it had left.
+s06_a_fight_and_getting_hurt_9	Full also destroys any thing it hits, the beacon included,
+s06_a_fight_and_getting_hurt_10	so keep it for what's attacking you.
+s06_a_fight_and_getting_hurt_11	The crew has three points each.
+s06_a_fight_and_getting_hurt_12	At nothing, you're down,
+s06_a_fight_and_getting_hurt_13	and you can't walk or act.
+s06_a_fight_and_getting_hurt_14	Somebody beside you with a medical kit can stand you up.
+s06_a_fight_and_getting_hurt_15	And if everybody is down,
+s06_a_fight_and_getting_hurt_16	the whole party wakes at the entry eight seconds later,
+s06_a_fight_and_getting_hurt_17	with one point each.
+s06_a_fight_and_getting_hurt_18	So nobody is ever out of the game.
+s06_a_fight_and_getting_hurt_19	But one person alone wakes up next to whatever put them down.
+s07_play_it_0	Three consoles this time.
+s07_play_it_1	The doctor talks to Pim.
+s07_play_it_2	Then two of them go down the stairs,
+s07_play_it_3	and stop at the foot.
+s07_play_it_4	Scan tells them what's in sight.
+s07_play_it_5	From the weapons console:
+s07_play_it_6	stun, then cut, twice, and then full.
+s07_play_it_7	And down it goes.
+s07_play_it_8	There's a tablet on the walkway where it fell,
+s07_play_it_9	and the engineer's story is complete.
+s08_what_lint_can_t_see_and_your_0	Lint knows a lot here.
+s08_what_lint_can_t_see_and_your_1	It knows the names of those signals,
+s08_what_lint_can_t_see_and_your_2	and it knows a crawler can't stand in water.
+s08_what_lint_can_t_see_and_your_3	It can't see a missing Calm line, though.
+s08_what_lint_can_t_see_and_your_4	Leave that line out,
+s08_what_lint_can_t_see_and_your_5	and Pim attacks the first crew member who walks up.
+s08_what_lint_can_t_see_and_your_6	And it can't see a Talk scene that names no room.
+s08_what_lint_can_t_see_and_your_7	You click her, and nothing happens.
+s08_what_lint_can_t_see_and_your_8	For the exercise, make the crawler tougher, then gentler,
+s08_what_lint_can_t_see_and_your_9	and play each one.
+s08_what_lint_can_t_see_and_your_10	Next time, Pim wants that tablet back.

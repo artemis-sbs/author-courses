@@ -1,0 +1,371 @@
+1
+00:00:00,000 --> 00:00:03,043
+This is a map you'll draw today:
+
+2
+00:00:03,493 --> 00:00:08,711
+a dry gully, with a pump house in the middle of it.
+
+3
+00:00:09,611 --> 00:00:14,393
+And this is the same map as the game reads it.
+
+4
+00:00:14,843 --> 00:00:16,583
+Twenty-eight lines of text.
+
+5
+00:00:18,383 --> 00:00:22,730
+You can paint it with the mouse, or type it,
+
+6
+00:00:23,180 --> 00:00:26,224
+and it's the same file either way.
+
+7
+00:00:27,424 --> 00:00:30,033
+Right-click the ground folder, new file,
+
+8
+00:00:30,483 --> 00:00:33,091
+and call it gully dot tiles.
+
+9
+00:00:33,991 --> 00:00:37,035
+It opens in the Tile Map Editor,
+
+10
+00:00:37,485 --> 00:00:40,093
+and there's nothing to draw yet,
+
+11
+00:00:40,543 --> 00:00:42,717
+so press the Text button.
+
+12
+00:00:44,517 --> 00:00:48,430
+The top of an area file is its header.
+
+13
+00:00:49,330 --> 00:00:51,070
+Area is the key,
+
+14
+00:00:51,520 --> 00:00:55,867
+the name the rest of your mission knows it by.
+
+15
+00:00:56,767 --> 00:00:59,376
+Title is what the crew sees.
+
+16
+00:01:00,276 --> 00:01:04,624
+Tileset names the file that lists the kinds of ground.
+
+17
+00:01:05,524 --> 00:01:08,567
+And size is how many cells across,
+
+18
+00:01:09,017 --> 00:01:12,496
+then a small x, and how many down.
+
+19
+00:01:13,696 --> 00:01:15,435
+Next comes the legend.
+
+20
+00:01:16,335 --> 00:01:19,378
+Each line is one character, a colon,
+
+21
+00:01:19,828 --> 00:01:23,307
+and a kind of ground from the tileset.
+
+22
+00:01:24,207 --> 00:01:25,946
+A dot is dust.
+
+23
+00:01:26,396 --> 00:01:28,570
+A capital W is wall.
+
+24
+00:01:30,370 --> 00:01:32,978
+Then a line of three dashes,
+
+25
+00:01:33,428 --> 00:01:36,037
+and under them the map itself,
+
+26
+00:01:36,487 --> 00:01:38,661
+one character for each cell.
+
+27
+00:01:39,561 --> 00:01:41,300
+There are twelve rows,
+
+28
+00:01:41,750 --> 00:01:44,793
+and each one is twenty-four characters long.
+
+29
+00:01:46,593 --> 00:01:48,767
+Save it, and run lint.
+
+30
+00:01:49,667 --> 00:01:51,407
+It comes back clean.
+
+31
+00:01:51,857 --> 00:01:56,639
+And notice that lint doesn't mention the new file at all.
+
+32
+00:01:57,089 --> 00:02:02,307
+It only speaks up about a map when something's wrong with it.
+
+33
+00:02:03,507 --> 00:02:06,115
+Now go back to the picture,
+
+34
+00:02:06,565 --> 00:02:10,478
+with this button at the top of the text.
+
+35
+00:02:12,278 --> 00:02:14,017
+Two ways to look.
+
+36
+00:02:14,917 --> 00:02:18,396
+Kinds colors each cell by what it is,
+
+37
+00:02:18,846 --> 00:02:22,324
+and hatches the ones nobody can walk on.
+
+38
+00:02:23,224 --> 00:02:26,702
+Art draws it the way the game will.
+
+39
+00:02:28,502 --> 00:02:30,676
+Move the mouse over it,
+
+40
+00:02:31,126 --> 00:02:35,474
+and the bottom line tells you which cell you're over,
+
+41
+00:02:35,924 --> 00:02:37,663
+and what it is.
+
+42
+00:02:38,563 --> 00:02:41,172
+And look at the pump house.
+
+43
+00:02:41,622 --> 00:02:44,665
+It's a box with no way in.
+
+44
+00:02:45,865 --> 00:02:49,343
+A door on a map is two things.
+
+45
+00:02:50,243 --> 00:02:53,287
+It's a cell you can walk through,
+
+46
+00:02:53,737 --> 00:02:55,911
+in a wall you can't.
+
+47
+00:02:56,811 --> 00:02:58,550
+And it's a mark,
+
+48
+00:02:59,000 --> 00:03:03,783
+so that later a real door can be stood on it.
+
+49
+00:03:05,583 --> 00:03:09,061
+Plus Entry gives me a new legend line.
+
+50
+00:03:09,511 --> 00:03:11,250
+The kind is floor,
+
+51
+00:03:11,700 --> 00:03:13,874
+the mark is pump door,
+
+52
+00:03:14,324 --> 00:03:17,367
+and the character is a capital D.
+
+53
+00:03:18,267 --> 00:03:21,311
+Then I paint one cell with it,
+
+54
+00:03:21,761 --> 00:03:24,804
+in the middle of the west wall.
+
+55
+00:03:26,604 --> 00:03:30,517
+Press Text, and look at what the editor wrote.
+
+56
+00:03:31,417 --> 00:03:34,026
+One new line in the legend,
+
+57
+00:03:34,476 --> 00:03:37,520
+and one changed character in the map.
+
+58
+00:03:37,970 --> 00:03:39,709
+Nothing else was touched.
+
+59
+00:03:40,909 --> 00:03:45,257
+The party needs somewhere to stand when it beams down.
+
+60
+00:03:46,157 --> 00:03:50,070
+So I make a second mark the same way,
+
+61
+00:03:50,520 --> 00:03:53,563
+on open ground at the west end.
+
+62
+00:03:55,363 --> 00:03:58,407
+The mark gives that cell a name,
+
+63
+00:03:58,857 --> 00:04:00,596
+and it's still dust.
+
+64
+00:04:01,496 --> 00:04:04,539
+Then one more line in the header.
+
+65
+00:04:04,989 --> 00:04:08,033
+Entry, and the name of the mark.
+
+66
+00:04:09,833 --> 00:04:13,746
+The editor has a tool for this as well,
+
+67
+00:04:14,196 --> 00:04:16,804
+and it writes the cell's numbers.
+
+68
+00:04:17,704 --> 00:04:19,443
+Both of them work.
+
+69
+00:04:19,893 --> 00:04:21,633
+The name is better,
+
+70
+00:04:22,083 --> 00:04:27,735
+because it still points at the right place after you redraw the map.
+
+71
+00:04:28,935 --> 00:04:32,413
+Lint reads your maps along with everything else.
+
+72
+00:04:33,313 --> 00:04:35,052
+Misspell the entry line,
+
+73
+00:04:35,502 --> 00:04:41,154
+and it tells you the name is neither a mark nor a cell.
+
+74
+00:04:42,054 --> 00:04:45,533
+Type a letter that isn't in the legend,
+
+75
+00:04:45,983 --> 00:04:49,896
+and it tells you the whole area won't load.
+
+76
+00:04:51,696 --> 00:04:54,739
+But there are things it can't see.
+
+77
+00:04:55,639 --> 00:04:58,248
+Give two areas the same key,
+
+78
+00:04:58,698 --> 00:05:01,307
+and it says nothing at all.
+
+79
+00:05:02,207 --> 00:05:06,120
+Draw a row longer than the size line says,
+
+80
+00:05:06,570 --> 00:05:10,048
+and the extra cells are quietly cut off.
+
+81
+00:05:10,948 --> 00:05:16,165
+So compare your file with the page, one character at a time.
+
+82
+00:05:17,365 --> 00:05:21,278
+Nothing in the mission leads to the gully yet.
+
+83
+00:05:22,178 --> 00:05:25,657
+But the ship's transporter can put you there.
+
+84
+00:05:27,457 --> 00:05:29,196
+Beam down as usual,
+
+85
+00:05:29,646 --> 00:05:32,254
+then open Beam on the handheld.
+
+86
+00:05:32,704 --> 00:05:37,052
+There's one other place on the list, and it's yours.
+
+87
+00:05:37,952 --> 00:05:40,561
+You're standing on your own mark.
+
+88
+00:05:41,461 --> 00:05:43,635
+Click inside the pump house,
+
+89
+00:05:44,085 --> 00:05:47,998
+and you walk in through the gap you painted.
+
+90
+00:05:49,798 --> 00:05:52,841
+For the exercise, try the other tools.
+
+91
+00:05:53,291 --> 00:05:56,335
+Draw a second building with the rectangle,
+
+92
+00:05:56,785 --> 00:06:01,567
+then break the file on purpose and read what lint says.
+
+93
+00:06:03,367 --> 00:06:07,280
+Next time, you join this map to the yard.

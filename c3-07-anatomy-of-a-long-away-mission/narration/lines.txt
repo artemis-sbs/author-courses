@@ -1,0 +1,115 @@
+s01_cold_open_0	So far your boarding party has read its way through rooms.
+s01_cold_open_1	Today it walks instead.
+s01_cold_open_2	This is a yard, with a caretaker, a sentry and a locked door,
+s01_cold_open_3	and every bit of it is in four files you can read.
+s01_cold_open_4	You'll make it with one command,
+s01_cold_open_5	play it through once,
+s01_cold_open_6	and then take it apart.
+s02_a_second_mission_0	This half of the class gets a mission of its own.
+s02_a_second_mission_1	Same command as before,
+s02_a_second_mission_2	with a different template after the dash t: away.
+s02_a_second_mission_3	Press Enter at the question,
+s02_a_second_mission_4	and it tells you the mission is ready.
+s02_a_second_mission_5	Then the fetch line, once,
+s02_a_second_mission_6	to bring the libraries up to date.
+s02_a_second_mission_7	That second line matters more than usual here.
+s02_a_second_mission_8	This mission has no pictures of its own.
+s02_a_second_mission_9	Its map is drawn with two art packs that missions share,
+s02_a_second_mission_10	and that line is what unpacks them.
+s02_a_second_mission_11	Open the folder, trust it, and run lint,
+s02_a_second_mission_12	and it comes back clean.
+s03_play_it_to_the_win_0	A server and two consoles.
+s03_play_it_to_the_win_1	The ship starts beside the relay, so nobody has to fly.
+s03_play_it_to_the_win_2	Handheld, Boarding Party, beam down.
+s03_play_it_to_the_win_3	And there's the difference:
+s03_play_it_to_the_win_4	a map, and you on it.
+s03_play_it_to_the_win_5	Click the ground to walk.
+s03_play_it_to_the_win_6	Click a person, and you walk up and talk.
+s03_play_it_to_the_win_7	This is a room, exactly like the ones you've written:
+s03_play_it_to_the_win_8	buttons, and one of them only a medic is offered.
+s03_play_it_to_the_win_9	He mentions a medical kit,
+s03_play_it_to_the_win_10	and now it's on the map, where a moment ago it wasn't.
+s03_play_it_to_the_win_11	The sentry is the hard part.
+s03_play_it_to_the_win_12	From the weapons console I open Fire,
+s03_play_it_to_the_win_13	arm it, and click the sentry.
+s03_play_it_to_the_win_14	It drops a power cell.
+s03_play_it_to_the_win_15	The keycard opens the door,
+s03_play_it_to_the_win_16	the cell goes into the beacon,
+s03_play_it_to_the_win_17	and that's the game.
+s04_four_files_0	Now look at the folder.
+s04_four_files_1	Nine files came with it,
+s04_four_files_2	and four of them are the mission.
+s04_four_files_3	Two are in a folder called ground: the map itself,
+s04_four_files_4	and a short list of the kinds of ground there are.
+s04_four_files_5	Then the fact sheet,
+s04_four_files_6	which holds everything else.
+s04_four_files_7	And the story file,
+s04_four_files_8	where one line loads the ground
+s04_four_files_9	and one card opens the party.
+s04_four_files_10	There's no Python here, and you won't write any.
+s05_what_a_map_is_0	Click the map file and you get a picture.
+s05_what_a_map_is_1	Next lecture is about that picture.
+s05_what_a_map_is_2	Today press Text, and read what's underneath.
+s05_what_a_map_is_3	It has three parts.
+s05_what_a_map_is_4	The header says what this area is called,
+s05_what_a_map_is_5	and where someone who beams down stands.
+s05_what_a_map_is_6	The legend says what each character means:
+s05_what_a_map_is_7	a dot is dust,
+s05_what_a_map_is_8	a capital W is wall.
+s05_what_a_map_is_9	And some lines carry an at sign and a name.
+s05_what_a_map_is_10	That's called a mark.
+s05_what_a_map_is_11	It gives a cell a name,
+s05_what_a_map_is_12	so a record can say, stand here.
+s05_what_a_map_is_13	Under three dashes is the map itself.
+s05_what_a_map_is_14	You can find the pad,
+s05_what_a_map_is_15	the tent beside it,
+s05_what_a_map_is_16	and the relay house with its door.
+s05_what_a_map_is_17	Notice what isn't here.
+s05_what_a_map_is_18	No caretaker, no sentry, no key.
+s05_what_a_map_is_19	Only the places they stand.
+s06_what_a_record_is_0	The fact sheet has seven sections,
+s06_what_a_record_is_1	and four of them you've written before.
+s06_what_a_record_is_2	Three of them are new:
+s06_what_a_record_is_3	props, people and hostiles.
+s06_what_a_record_is_4	Here's one of the props.
+s06_what_a_record_is_5	A heading, a fence, and a line of description.
+s06_what_a_record_is_6	Two fields put it on the map.
+s06_what_a_record_is_7	Area names the map file.
+s06_what_a_record_is_8	Mark names a mark in that file's legend.
+s06_what_a_record_is_9	And one field says what it does.
+s06_what_a_record_is_10	Item means you can pick it up.
+s06_what_a_record_is_11	A person is the same shape.
+s06_what_a_record_is_12	And this line is a join you already know.
+s06_what_a_record_is_13	It's the key of a room.
+s06_what_a_record_is_14	So a room on the ground is the room you've always written,
+s06_what_a_record_is_15	with one difference: nobody walks into it.
+s06_what_a_record_is_16	It belongs to the thing or the person that opens it.
+s07_one_line_one_card_and_the_en_0	In the story file, one line loads the ground.
+s07_one_line_one_card_and_the_en_1	You never change it.
+s07_one_line_one_card_and_the_en_2	A new map is found by itself.
+s07_one_line_one_card_and_the_en_3	And this is the card.
+s07_one_line_one_card_and_the_en_4	Put it beside the one from Lecture 2.
+s07_one_line_one_card_and_the_en_5	The first room is gone,
+s07_one_line_one_card_and_the_en_6	because a map has no first room.
+s07_one_line_one_card_and_the_en_7	And there's a new word:
+s07_one_line_one_card_and_the_en_8	the area to beam down into.
+s07_one_line_one_card_and_the_en_9	Three words here are yours.
+s07_one_line_one_card_and_the_en_10	The signal, the name on the tile, and the area.
+s07_one_line_one_card_and_the_en_11	Last comes the ending.
+s07_one_line_one_card_and_the_en_12	This quest carries two sentences,
+s07_one_line_one_card_and_the_en_13	one for a win and one for a loss.
+s07_one_line_one_card_and_the_en_14	And an answer at the beacon either completes that quest, or fails it.
+s07_one_line_one_card_and_the_en_15	That's the whole ending.
+s08_dawnline_and_your_turn_0	The long example of all this is a mission called Dawnline.
+s08_dawnline_and_your_turn_1	It doesn't come with the game,
+s08_dawnline_and_your_turn_2	and you don't need it.
+s08_dawnline_and_your_turn_3	Look at the numbers.
+s08_dawnline_and_your_turn_4	Six maps where you have one.
+s08_dawnline_and_your_turn_5	Forty-two props where you have six.
+s08_dawnline_and_your_turn_6	But every row is the same kind of thing as yours.
+s08_dawnline_and_your_turn_7	One thing its maps have that yours doesn't:
+s08_dawnline_and_your_turn_8	a way from one map to the next.
+s08_dawnline_and_your_turn_9	You'll build that in two lectures' time.
+s08_dawnline_and_your_turn_10	For now, change three small things,
+s08_dawnline_and_your_turn_11	play each one, and put them back.
+s08_dawnline_and_your_turn_12	Next time you draw a map of your own.

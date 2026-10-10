@@ -1,0 +1,459 @@
+1
+00:00:00,000 --> 00:00:04,783
+So far your boarding party has read its way through rooms.
+
+2
+00:00:05,683 --> 00:00:07,422
+Today it walks instead.
+
+3
+00:00:09,222 --> 00:00:14,874
+This is a yard, with a caretaker, a sentry and a locked door,
+
+4
+00:00:15,324 --> 00:00:20,541
+and every bit of it is in four files you can read.
+
+5
+00:00:21,441 --> 00:00:24,050
+You'll make it with one command,
+
+6
+00:00:24,500 --> 00:00:26,239
+play it through once,
+
+7
+00:00:26,689 --> 00:00:28,863
+and then take it apart.
+
+8
+00:00:30,063 --> 00:00:34,846
+This half of the class gets a mission of its own.
+
+9
+00:00:35,746 --> 00:00:37,485
+Same command as before,
+
+10
+00:00:37,935 --> 00:00:41,848
+with a different template after the dash t: away.
+
+11
+00:00:43,648 --> 00:00:45,822
+Press Enter at the question,
+
+12
+00:00:46,272 --> 00:00:49,750
+and it tells you the mission is ready.
+
+13
+00:00:50,650 --> 00:00:52,824
+Then the fetch line, once,
+
+14
+00:00:53,274 --> 00:00:56,317
+to bring the libraries up to date.
+
+15
+00:00:57,217 --> 00:01:00,696
+That second line matters more than usual here.
+
+16
+00:01:01,146 --> 00:01:04,624
+This mission has no pictures of its own.
+
+17
+00:01:05,074 --> 00:01:09,857
+Its map is drawn with two art packs that missions share,
+
+18
+00:01:10,307 --> 00:01:13,350
+and that line is what unpacks them.
+
+19
+00:01:15,150 --> 00:01:18,628
+Open the folder, trust it, and run lint,
+
+20
+00:01:19,078 --> 00:01:21,252
+and it comes back clean.
+
+21
+00:01:22,452 --> 00:01:24,626
+A server and two consoles.
+
+22
+00:01:25,076 --> 00:01:29,859
+The ship starts beside the relay, so nobody has to fly.
+
+23
+00:01:30,759 --> 00:01:32,933
+Handheld, Boarding Party, beam down.
+
+24
+00:01:34,733 --> 00:01:36,472
+And there's the difference:
+
+25
+00:01:36,922 --> 00:01:39,530
+a map, and you on it.
+
+26
+00:01:40,430 --> 00:01:42,604
+Click the ground to walk.
+
+27
+00:01:43,054 --> 00:01:46,967
+Click a person, and you walk up and talk.
+
+28
+00:01:47,867 --> 00:01:52,215
+This is a room, exactly like the ones you've written:
+
+29
+00:01:52,665 --> 00:01:57,013
+buttons, and one of them only a medic is offered.
+
+30
+00:01:58,813 --> 00:02:00,987
+He mentions a medical kit,
+
+31
+00:02:01,437 --> 00:02:06,654
+and now it's on the map, where a moment ago it wasn't.
+
+32
+00:02:07,554 --> 00:02:10,163
+The sentry is the hard part.
+
+33
+00:02:10,613 --> 00:02:13,657
+From the weapons console I open Fire,
+
+34
+00:02:14,107 --> 00:02:16,715
+arm it, and click the sentry.
+
+35
+00:02:17,615 --> 00:02:19,789
+It drops a power cell.
+
+36
+00:02:20,239 --> 00:02:22,413
+The keycard opens the door,
+
+37
+00:02:22,863 --> 00:02:25,472
+the cell goes into the beacon,
+
+38
+00:02:25,922 --> 00:02:27,661
+and that's the game.
+
+39
+00:02:28,861 --> 00:02:31,035
+Now look at the folder.
+
+40
+00:02:31,935 --> 00:02:34,109
+Nine files came with it,
+
+41
+00:02:34,559 --> 00:02:37,602
+and four of them are the mission.
+
+42
+00:02:39,402 --> 00:02:43,750
+Two are in a folder called ground: the map itself,
+
+43
+00:02:44,200 --> 00:02:48,983
+and a short list of the kinds of ground there are.
+
+44
+00:02:49,883 --> 00:02:51,622
+Then the fact sheet,
+
+45
+00:02:52,072 --> 00:02:53,811
+which holds everything else.
+
+46
+00:02:54,711 --> 00:02:56,450
+And the story file,
+
+47
+00:02:56,900 --> 00:02:59,509
+where one line loads the ground
+
+48
+00:02:59,959 --> 00:03:02,567
+and one card opens the party.
+
+49
+00:03:03,467 --> 00:03:07,380
+There's no Python here, and you won't write any.
+
+50
+00:03:08,580 --> 00:03:12,493
+Click the map file and you get a picture.
+
+51
+00:03:12,943 --> 00:03:15,552
+Next lecture is about that picture.
+
+52
+00:03:16,452 --> 00:03:19,496
+Today press Text, and read what's underneath.
+
+53
+00:03:21,296 --> 00:03:23,035
+It has three parts.
+
+54
+00:03:23,935 --> 00:03:27,413
+The header says what this area is called,
+
+55
+00:03:27,863 --> 00:03:30,907
+and where someone who beams down stands.
+
+56
+00:03:31,807 --> 00:03:34,850
+The legend says what each character means:
+
+57
+00:03:35,300 --> 00:03:37,039
+a dot is dust,
+
+58
+00:03:37,489 --> 00:03:39,663
+a capital W is wall.
+
+59
+00:03:40,563 --> 00:03:44,911
+And some lines carry an at sign and a name.
+
+60
+00:03:45,361 --> 00:03:47,100
+That's called a mark.
+
+61
+00:03:47,550 --> 00:03:50,159
+It gives a cell a name,
+
+62
+00:03:50,609 --> 00:03:53,652
+so a record can say, stand here.
+
+63
+00:03:55,452 --> 00:03:58,496
+Under three dashes is the map itself.
+
+64
+00:03:58,946 --> 00:04:01,120
+You can find the pad,
+
+65
+00:04:01,570 --> 00:04:03,309
+the tent beside it,
+
+66
+00:04:03,759 --> 00:04:06,802
+and the relay house with its door.
+
+67
+00:04:07,702 --> 00:04:09,441
+Notice what isn't here.
+
+68
+00:04:09,891 --> 00:04:12,500
+No caretaker, no sentry, no key.
+
+69
+00:04:12,950 --> 00:04:15,124
+Only the places they stand.
+
+70
+00:04:16,324 --> 00:04:18,933
+The fact sheet has seven sections,
+
+71
+00:04:19,383 --> 00:04:22,426
+and four of them you've written before.
+
+72
+00:04:23,326 --> 00:04:25,500
+Three of them are new:
+
+73
+00:04:25,950 --> 00:04:27,689
+props, people and hostiles.
+
+74
+00:04:29,489 --> 00:04:31,663
+Here's one of the props.
+
+75
+00:04:32,113 --> 00:04:36,026
+A heading, a fence, and a line of description.
+
+76
+00:04:36,926 --> 00:04:39,970
+Two fields put it on the map.
+
+77
+00:04:40,420 --> 00:04:42,593
+Area names the map file.
+
+78
+00:04:43,043 --> 00:04:46,522
+Mark names a mark in that file's legend.
+
+79
+00:04:47,422 --> 00:04:50,465
+And one field says what it does.
+
+80
+00:04:50,915 --> 00:04:53,959
+Item means you can pick it up.
+
+81
+00:04:55,759 --> 00:04:58,367
+A person is the same shape.
+
+82
+00:04:58,817 --> 00:05:02,730
+And this line is a join you already know.
+
+83
+00:05:03,180 --> 00:05:05,789
+It's the key of a room.
+
+84
+00:05:06,689 --> 00:05:11,907
+So a room on the ground is the room you've always written,
+
+85
+00:05:12,357 --> 00:05:15,400
+with one difference: nobody walks into it.
+
+86
+00:05:15,850 --> 00:05:20,633
+It belongs to the thing or the person that opens it.
+
+87
+00:05:21,833 --> 00:05:25,746
+In the story file, one line loads the ground.
+
+88
+00:05:26,196 --> 00:05:27,935
+You never change it.
+
+89
+00:05:28,385 --> 00:05:31,428
+A new map is found by itself.
+
+90
+00:05:33,228 --> 00:05:35,402
+And this is the card.
+
+91
+00:05:36,302 --> 00:05:39,780
+Put it beside the one from Lecture 2.
+
+92
+00:05:40,230 --> 00:05:42,404
+The first room is gone,
+
+93
+00:05:42,854 --> 00:05:45,898
+because a map has no first room.
+
+94
+00:05:46,348 --> 00:05:48,522
+And there's a new word:
+
+95
+00:05:48,972 --> 00:05:51,580
+the area to beam down into.
+
+96
+00:05:52,480 --> 00:05:54,654
+Three words here are yours.
+
+97
+00:05:55,104 --> 00:05:59,452
+The signal, the name on the tile, and the area.
+
+98
+00:06:01,252 --> 00:06:02,991
+Last comes the ending.
+
+99
+00:06:03,891 --> 00:06:06,065
+This quest carries two sentences,
+
+100
+00:06:06,515 --> 00:06:10,428
+one for a win and one for a loss.
+
+101
+00:06:11,328 --> 00:06:16,980
+And an answer at the beacon either completes that quest, or fails it.
+
+102
+00:06:17,430 --> 00:06:19,170
+That's the whole ending.
+
+103
+00:06:20,370 --> 00:06:25,152
+The long example of all this is a mission called Dawnline.
+
+104
+00:06:26,052 --> 00:06:28,661
+It doesn't come with the game,
+
+105
+00:06:29,111 --> 00:06:31,285
+and you don't need it.
+
+106
+00:06:33,085 --> 00:06:34,824
+Look at the numbers.
+
+107
+00:06:35,274 --> 00:06:37,883
+Six maps where you have one.
+
+108
+00:06:38,333 --> 00:06:40,941
+Forty-two props where you have six.
+
+109
+00:06:41,841 --> 00:06:46,624
+But every row is the same kind of thing as yours.
+
+110
+00:06:48,424 --> 00:06:51,902
+One thing its maps have that yours doesn't:
+
+111
+00:06:52,352 --> 00:06:55,830
+a way from one map to the next.
+
+112
+00:06:56,280 --> 00:06:59,324
+You'll build that in two lectures' time.
+
+113
+00:07:00,224 --> 00:07:02,833
+For now, change three small things,
+
+114
+00:07:03,283 --> 00:07:06,326
+play each one, and put them back.
+
+115
+00:07:08,126 --> 00:07:12,039
+Next time you draw a map of your own.

@@ -1,0 +1,103 @@
+s01_cold_open_0	One map is a place.
+s01_cold_open_1	Three maps joined together are somewhere to go.
+s01_cold_open_2	Today the crew walks out of the yard,
+s01_cold_open_3	through your pump house,
+s01_cold_open_4	and down a flight of stairs to a tank of standing water.
+s01_cold_open_5	And you stand the first things on your maps.
+s02_a_way_out_and_a_way_back_0	An exit is a mark with a special name.
+s02_a_way_out_and_a_way_back_1	It starts with the word to,
+s02_a_way_out_and_a_way_back_2	then an underscore, and then the key of the area it leads to.
+s02_a_way_out_and_a_way_back_3	So in the yard I add a legend line,
+s02_a_way_out_and_a_way_back_4	with the mark to gully,
+s02_a_way_out_and_a_way_back_5	and paint one cell at the east edge.
+s02_a_way_out_and_a_way_back_6	Then the same in the gully,
+s02_a_way_out_and_a_way_back_7	with a mark that leads back.
+s02_a_way_out_and_a_way_back_8	Three things to know about exits.
+s02_a_way_out_and_a_way_back_9	An exit takes whoever stops on it,
+s02_a_way_out_and_a_way_back_10	so click the exit itself.
+s02_a_way_out_and_a_way_back_11	Each person goes through alone.
+s02_a_way_out_and_a_way_back_12	And they arrive beside the way back,
+s02_a_way_out_and_a_way_back_13	never on top of it.
+s03_what_the_ship_knows_0	Last time, the transporter put you straight into the gully.
+s03_what_the_ship_knows_1	That would spoil things now.
+s03_what_the_ship_knows_2	A crew that can beam anywhere never has to find the way.
+s03_what_the_ship_knows_3	Two lines in the header decide it.
+s03_what_the_ship_knows_4	Known, and then no,
+s03_what_the_ship_knows_5	means the ship doesn't know this area exists
+s03_what_the_ship_knows_6	until somebody has walked into it.
+s03_what_the_ship_knows_7	And beam, followed by no,
+s03_what_the_ship_knows_8	means the transporter can never lock on there at all.
+s03_what_the_ship_knows_9	The gully gets the first one.
+s03_what_the_ship_knows_10	You type it yourself,
+s03_what_the_ship_knows_11	because the editor has no box for it.
+s04_water_and_a_third_map_0	The cistern needs water,
+s04_water_and_a_third_map_1	and the tileset has no such kind.
+s04_water_and_a_third_map_2	So I add one line to the tileset.
+s04_water_and_a_third_map_3	Water can be seen across,
+s04_water_and_a_third_map_4	and it can't be walked on.
+s04_water_and_a_third_map_5	That pair is what makes a map readable.
+s04_water_and_a_third_map_6	You can see the far side,
+s04_water_and_a_third_map_7	and getting there is the puzzle.
+s04_water_and_a_third_map_8	Then a new area file,
+s04_water_and_a_third_map_9	typed the way you typed the gully.
+s04_water_and_a_third_map_10	A walkway round a tank,
+s04_water_and_a_third_map_11	and a small room at the east end.
+s04_water_and_a_third_map_12	It carries both header lines,
+s04_water_and_a_third_map_13	so the only way in is on foot.
+s05_stairs_and_where_they_arrive_0	The stairs are one more exit,
+s05_stairs_and_where_they_arrive_1	inside the pump house against the east wall.
+s05_stairs_and_where_they_arrive_2	Now, an area file can also say where its exits lead.
+s05_stairs_and_where_they_arrive_3	It's a block of its own, called exits,
+s05_stairs_and_where_they_arrive_4	after the legend and before the dashes.
+s05_stairs_and_where_they_arrive_5	Read this line as:
+s05_stairs_and_where_they_arrive_6	the mark to cistern leads to the area cistern,
+s05_stairs_and_where_they_arrive_7	and you arrive beside the mark called foot.
+s05_stairs_and_where_they_arrive_8	You only need the block when the usual arrival isn't right.
+s05_stairs_and_where_they_arrive_9	And the editor can't edit it, so you type it.
+s06_a_thing_at_a_cell_0	Now the fact sheet.
+s06_a_thing_at_a_cell_1	A record that stands on a map says where in two fields.
+s06_a_thing_at_a_cell_2	The first is always Area.
+s06_a_thing_at_a_cell_3	The second is one of two.
+s06_a_thing_at_a_cell_4	At takes a cell:
+s06_a_thing_at_a_cell_5	how far across, a comma, and how far down.
+s06_a_thing_at_a_cell_6	So here's a trail sign,
+s06_a_thing_at_a_cell_7	at twenty-eight across and five down, in the yard.
+s06_a_thing_at_a_cell_8	Open the yard's map,
+s06_a_thing_at_a_cell_9	and the editor draws the sign where the record put it.
+s06_a_thing_at_a_cell_10	With Move I can drag it,
+s06_a_thing_at_a_cell_11	and the editor rewrites that line in the fact sheet for me.
+s07_a_thing_on_a_mark_and_a_patr_0	The pump belongs to the pump house,
+s07_a_thing_on_a_mark_and_a_patr_1	so it gets a mark of its own.
+s07_a_thing_on_a_mark_and_a_patr_2	And its record says Mark,
+s07_a_thing_on_a_mark_and_a_patr_3	and the mark's name.
+s07_a_thing_on_a_mark_and_a_patr_4	Here's the rule that's easy to break.
+s07_a_thing_on_a_mark_and_a_patr_5	A mark's name goes in Mark,
+s07_a_thing_on_a_mark_and_a_patr_6	and never in At.
+s07_a_thing_on_a_mark_and_a_patr_7	At reads numbers only,
+s07_a_thing_on_a_mark_and_a_patr_8	so a word there reads as nothing,
+s07_a_thing_on_a_mark_and_a_patr_9	and the thing is never placed.
+s07_a_thing_on_a_mark_and_a_patr_10	Neither of these two has any words under its fence.
+s07_a_thing_on_a_mark_and_a_patr_11	That makes them scenery.
+s07_a_thing_on_a_mark_and_a_patr_12	They're drawn, and they're in the way.
+s07_a_thing_on_a_mark_and_a_patr_13	Last comes the sentry.
+s07_a_thing_on_a_mark_and_a_patr_14	Its patrol is a list of cells,
+s07_a_thing_on_a_mark_and_a_patr_15	with a semicolon between each pair.
+s07_a_thing_on_a_mark_and_a_patr_16	I've made its loop longer,
+s07_a_thing_on_a_mark_and_a_patr_17	and the editor draws it as a dashed line.
+s08_lint_play_it_and_your_turn_0	Lint knows about exits.
+s08_lint_play_it_and_your_turn_1	Misspell one of them,
+s08_lint_play_it_and_your_turn_2	and it tells you there's no such area.
+s08_lint_play_it_and_your_turn_3	Put a mark's name in At,
+s08_lint_play_it_and_your_turn_4	and it tells you that too.
+s08_lint_play_it_and_your_turn_5	It can't tell you an area is cut off, though.
+s08_lint_play_it_and_your_turn_6	It only says a mark was never drawn.
+s08_lint_play_it_and_your_turn_7	So play it through.
+s08_lint_play_it_and_your_turn_8	Beam down, and open Beam.
+s08_lint_play_it_and_your_turn_9	There's nowhere else to go.
+s08_lint_play_it_and_your_turn_10	Walk east, and take the exit.
+s08_lint_play_it_and_your_turn_11	Now the gully is on the list.
+s08_lint_play_it_and_your_turn_12	Go down the stairs,
+s08_lint_play_it_and_your_turn_13	and you're standing by the water.
+s08_lint_play_it_and_your_turn_14	For the exercise, stand a crate in the cistern,
+s08_lint_play_it_and_your_turn_15	and add a second way down.
+s08_lint_play_it_and_your_turn_16	Next time, these maps get things you can use.

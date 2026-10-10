@@ -1,0 +1,91 @@
+s01_cold_open_0	You have three maps, some things, and two people.
+s01_cold_open_1	What you don't have yet is a story that ties them together.
+s01_cold_open_2	Today Pim wants her tablet back,
+s01_cold_open_3	the pump wants three fuses,
+s01_cold_open_4	and one bad idea with a crowbar loses the whole game.
+s01_cold_open_5	Every bit of it is an answer in a room.
+s02_the_words_0	A choice has a condition in front of it, and outcomes behind.
+s02_the_words_1	You've used both since the third lecture.
+s02_the_words_2	On a map there are two new conditions.
+s02_the_words_3	Holding asks what the person answering is carrying.
+s02_the_words_4	Party asks what everybody on the ground is carrying between them.
+s02_the_words_5	And there are new outcomes.
+s02_the_words_6	Give and take move things in and out of a pack.
+s02_the_words_7	Open and reveal work on props.
+s02_the_words_8	Calm, rouse, dismiss and summon work on people.
+s03_a_quest_that_waits_and_two_h_0	First a quest that waits.
+s03_a_quest_that_waits_and_two_h_1	It starts when it's revealed,
+s03_a_quest_that_waits_and_two_h_2	which means when an answer says so.
+s03_a_quest_that_waits_and_two_h_3	Lint warns that nothing reveals it yet,
+s03_a_quest_that_waits_and_two_h_4	and that's true for now.
+s03_a_quest_that_waits_and_two_h_5	Then two things that begin hidden.
+s03_a_quest_that_waits_and_two_h_6	A second record for Pim, by the tent in the yard.
+s03_a_quest_that_waits_and_two_h_7	When somebody goes somewhere else on a map, they're two records:
+s03_a_quest_that_waits_and_two_h_8	the one who leaves, and the one who arrives.
+s03_a_quest_that_waits_and_two_h_9	And a medical kit under a rock,
+s03_a_quest_that_waits_and_two_h_10	hidden until a scene shows it.
+s04_pim_s_scene_0	Now for her scene,
+s04_pim_s_scene_1	and it's where most of today's words live.
+s04_pim_s_scene_2	This answer is only offered if the party learned a fact,
+s04_pim_s_scene_3	from the notice by the door.
+s04_pim_s_scene_4	This one reveals the stash.
+s04_pim_s_scene_5	In the next room, a promise accepts the quest.
+s04_pim_s_scene_6	And here's the payoff.
+s04_pim_s_scene_7	It's offered only to the one holding the tablet.
+s04_pim_s_scene_8	Then three outcomes in a row, with commas:
+s04_pim_s_scene_9	take the tablet, complete the quest, and give a fuse.
+s04_pim_s_scene_10	There's a mean answer too.
+s04_pim_s_scene_11	Keep the tablet, and she's roused:
+s04_pim_s_scene_12	she attacks, and the quest fails.
+s04_pim_s_scene_13	And when she goes home,
+s04_pim_s_scene_14	one answer dismisses her here
+s04_pim_s_scene_15	and summons her there.
+s05_the_pump_with_fuses_0	The pump needs three fuses now.
+s05_the_pump_with_fuses_1	Look at the condition,
+s05_the_pump_with_fuses_2	and at the outcome after it.
+s05_the_pump_with_fuses_3	Holding three, and take three.
+s05_the_pump_with_fuses_4	Take always takes from the person who answers.
+s05_the_pump_with_fuses_5	So the condition in front of it is always holding, and never party.
+s05_the_pump_with_fuses_6	The lines at the top are different.
+s05_the_pump_with_fuses_7	A line is read by everybody,
+s05_the_pump_with_fuses_8	so a line asks about the party.
+s05_the_pump_with_fuses_9	The second answer is a gamble.
+s05_the_pump_with_fuses_10	Two fuses and a bit of wire,
+s05_the_pump_with_fuses_11	and a roll that can fail.
+s05_the_pump_with_fuses_12	And notice where the signal went.
+s05_the_pump_with_fuses_13	Two answers lead to this room now,
+s05_the_pump_with_fuses_14	so the signal sits on its one way out.
+s06_two_more_uses_for_old_rooms_0	The starter's terminal already teaches a fact.
+s06_two_more_uses_for_old_rooms_1	Give it a second use.
+s06_two_more_uses_for_old_rooms_2	Send the sentry its update, and it's calm.
+s06_two_more_uses_for_old_rooms_3	It keeps its power cell, though,
+s06_two_more_uses_for_old_rooms_4	so the party still needs another one.
+s06_two_more_uses_for_old_rooms_5	And Marrow gets one answer about the brass key.
+s06_two_more_uses_for_old_rooms_6	That condition is party,
+s06_two_more_uses_for_old_rooms_7	because nothing is taken,
+s06_two_more_uses_for_old_rooms_8	and it doesn't matter who picked the key up.
+s07_the_endings_and_one_word_lin_0	You wrote no Win line today, and no Lose line.
+s07_the_endings_and_one_word_lin_1	You didn't need to.
+s07_the_endings_and_one_word_lin_2	Both sit on the starter's quest.
+s07_the_endings_and_one_word_lin_3	Your crowbar fails that quest,
+s07_the_endings_and_one_word_lin_4	so it loses the game from two maps away.
+s07_the_endings_and_one_word_lin_5	And your spare cell is a power cell,
+s07_the_endings_and_one_word_lin_6	so the starter's own winning answer takes it.
+s07_the_endings_and_one_word_lin_7	One more word, discover,
+s07_the_endings_and_one_word_lin_8	tells the ship an area exists.
+s07_the_endings_and_one_word_lin_9	It works in the game.
+s07_the_endings_and_one_word_lin_10	But lint calls it unknown,
+s07_the_endings_and_one_word_lin_11	so it stays out of your mission for now.
+s08_play_it_and_your_turn_0	Play the long way round.
+s08_play_it_and_your_turn_1	The key, then Marrow, and then the gully.
+s08_play_it_and_your_turn_2	Pim asks for her tablet.
+s08_play_it_and_your_turn_3	The crawler, the tablet, and back to Pim for a fuse.
+s08_play_it_and_your_turn_4	Three fuses in the pump,
+s08_play_it_and_your_turn_5	then the gate, and the spare cell.
+s08_play_it_and_your_turn_6	Pim opens the relay house from her chair,
+s08_play_it_and_your_turn_7	and the beacon lights.
+s08_play_it_and_your_turn_8	Then play it again, and lose it with the crowbar.
+s08_play_it_and_your_turn_9	For the exercise, give Marrow a use for the medical kit,
+s08_play_it_and_your_turn_10	and write a second losing answer that plays fair.
+s08_play_it_and_your_turn_11	That's the last new word for a while.
+s08_play_it_and_your_turn_12	Next time, the screen your crew has been looking at.

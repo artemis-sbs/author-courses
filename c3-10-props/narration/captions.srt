@@ -1,0 +1,391 @@
+1
+00:00:00,000 --> 00:00:02,609
+Your maps have places on them.
+
+2
+00:00:03,509 --> 00:00:05,248
+Today they get things:
+
+3
+00:00:05,698 --> 00:00:08,307
+a locked door and its key,
+
+4
+00:00:08,757 --> 00:00:10,930
+hung on a tent peg,
+
+5
+00:00:11,380 --> 00:00:14,859
+and a panel only an engineer may touch.
+
+6
+00:00:16,659 --> 00:00:21,876
+Every one of them is a few lines in the fact sheet,
+
+7
+00:00:22,326 --> 00:00:27,109
+and what a thing does depends on which lines it has.
+
+8
+00:00:28,309 --> 00:00:30,483
+When somebody clicks a prop,
+
+9
+00:00:30,933 --> 00:00:33,976
+the game asks four questions in order.
+
+10
+00:00:34,876 --> 00:00:37,920
+May this person use it at all?
+
+11
+00:00:38,820 --> 00:00:41,428
+Is it a door, and shut?
+
+12
+00:00:42,328 --> 00:00:44,937
+Is it something to pick up?
+
+13
+00:00:45,837 --> 00:00:48,011
+Does it open a scene?
+
+14
+00:00:49,811 --> 00:00:52,420
+It stops at the first yes.
+
+15
+00:00:52,870 --> 00:00:55,913
+And if there's no yes at all,
+
+16
+00:00:56,363 --> 00:00:58,102
+it shows the description.
+
+17
+00:00:59,902 --> 00:01:02,946
+So here's the simplest prop there is.
+
+18
+00:01:03,396 --> 00:01:05,135
+One line says Item,
+
+19
+00:01:05,585 --> 00:01:08,193
+and a name I made up.
+
+20
+00:01:09,093 --> 00:01:13,876
+Click it, and it's in your pack and off the map.
+
+21
+00:01:15,076 --> 00:01:19,859
+Now the door, on the mark you painted two lectures ago.
+
+22
+00:01:20,759 --> 00:01:22,498
+Blocks, and then yes,
+
+23
+00:01:22,948 --> 00:01:26,426
+means nobody walks through it while it's shut.
+
+24
+00:01:27,326 --> 00:01:30,804
+And Opens with lists the ways it opens,
+
+25
+00:01:31,254 --> 00:01:32,993
+with commas between them.
+
+26
+00:01:34,793 --> 00:01:40,011
+A key opens it when anybody in the party is carrying one,
+
+27
+00:01:40,461 --> 00:01:43,504
+not just the one at the door.
+
+28
+00:01:44,404 --> 00:01:46,578
+A check is a roll:
+
+29
+00:01:47,028 --> 00:01:51,376
+a ten sided die, plus a skill, against a number.
+
+30
+00:01:52,276 --> 00:01:55,754
+And cut means a shot from the weapon.
+
+31
+00:01:57,554 --> 00:01:59,293
+Two warnings about checks.
+
+32
+00:02:00,193 --> 00:02:01,933
+Write the key first,
+
+33
+00:02:02,383 --> 00:02:05,426
+because the terms are tried in order.
+
+34
+00:02:06,326 --> 00:02:10,239
+And a check can be tried again at once,
+
+35
+00:02:10,689 --> 00:02:16,776
+so a door with a check on it will always open in the end.
+
+36
+00:02:17,976 --> 00:02:21,020
+The toolbox is a pickup worth two.
+
+37
+00:02:21,470 --> 00:02:24,078
+That's the line that says Qty.
+
+38
+00:02:25,878 --> 00:02:28,052
+The notice opens a scene.
+
+39
+00:02:28,502 --> 00:02:31,546
+Scene, and the key of a room,
+
+40
+00:02:31,996 --> 00:02:35,909
+the same join you saw on the starter's terminal.
+
+41
+00:02:36,809 --> 00:02:39,417
+And it has one more line:
+
+42
+00:02:39,867 --> 00:02:41,607
+Once, and then yes.
+
+43
+00:02:42,507 --> 00:02:45,115
+The room opens the first time,
+
+44
+00:02:45,565 --> 00:02:49,478
+and after that a click only shows the description.
+
+45
+00:02:51,278 --> 00:02:53,452
+Be careful with that one.
+
+46
+00:02:53,902 --> 00:02:56,076
+It counts the room opening,
+
+47
+00:02:56,526 --> 00:02:58,265
+not what anyone answered.
+
+48
+00:02:59,465 --> 00:03:02,509
+The pump panel is a terminal too,
+
+49
+00:03:02,959 --> 00:03:04,698
+with one new line.
+
+50
+00:03:05,598 --> 00:03:07,337
+Needs, and a job.
+
+51
+00:03:09,137 --> 00:03:13,485
+Anyone else who clicks it is told they'd need engineering,
+
+52
+00:03:13,935 --> 00:03:15,674
+and gets nothing more.
+
+53
+00:03:16,574 --> 00:03:20,052
+That's stricter than a choice in a room.
+
+54
+00:03:20,502 --> 00:03:25,285
+A choice for a missing job gets covered by somebody else.
+
+55
+00:03:25,735 --> 00:03:27,909
+Nobody covers for a Needs.
+
+56
+00:03:29,709 --> 00:03:34,491
+So never put the only way through your story behind one.
+
+57
+00:03:35,391 --> 00:03:37,565
+Scan is the simple one.
+
+58
+00:03:38,015 --> 00:03:41,493
+It's what the scanner says about the thing,
+
+59
+00:03:41,943 --> 00:03:44,987
+when a crew member can see it.
+
+60
+00:03:46,187 --> 00:03:50,100
+Three short rooms at the end of the file.
+
+61
+00:03:50,550 --> 00:03:53,159
+You know how to write these.
+
+62
+00:03:54,059 --> 00:03:56,233
+The notice teaches a fact.
+
+63
+00:03:57,133 --> 00:04:00,176
+And the lever's answer sends a signal.
+
+64
+00:04:01,976 --> 00:04:05,020
+Lint warns that nothing hears that signal.
+
+65
+00:04:05,470 --> 00:04:07,643
+That's true for the moment.
+
+66
+00:04:08,093 --> 00:04:11,137
+The next step is what hears it.
+
+67
+00:04:12,337 --> 00:04:14,946
+Three marks in the cistern first,
+
+68
+00:04:15,396 --> 00:04:18,874
+one new legend line and one click each.
+
+69
+00:04:20,674 --> 00:04:25,891
+The sluice gate is a door with only one way to open.
+
+70
+00:04:26,341 --> 00:04:28,950
+Opens with, signal, and a name.
+
+71
+00:04:29,850 --> 00:04:32,893
+Nobody on the ground can force it.
+
+72
+00:04:33,793 --> 00:04:36,402
+The spare cell says Hidden until,
+
+73
+00:04:36,852 --> 00:04:38,591
+and the same name.
+
+74
+00:04:39,041 --> 00:04:44,259
+It isn't on the map at all until that signal is sent.
+
+75
+00:04:46,059 --> 00:04:50,841
+So one answer in the pump house does two things downstairs.
+
+76
+00:04:51,291 --> 00:04:53,030
+It opens the gate,
+
+77
+00:04:53,480 --> 00:04:55,654
+and it uncovers the cell.
+
+78
+00:04:57,454 --> 00:05:00,498
+The gauge stands out in the water.
+
+79
+00:05:00,948 --> 00:05:03,122
+Reach, and the number two,
+
+80
+00:05:03,572 --> 00:05:07,920
+lets a crew member use it from two cells away.
+
+81
+00:05:09,720 --> 00:05:11,893
+And lint is clean again,
+
+82
+00:05:12,343 --> 00:05:14,952
+because something hears the signal now.
+
+83
+00:05:16,152 --> 00:05:18,326
+A warning before you play.
+
+84
+00:05:19,226 --> 00:05:21,400
+Lint doesn't read a door.
+
+85
+00:05:22,300 --> 00:05:25,343
+Misspell the key's name, or the signal's,
+
+86
+00:05:25,793 --> 00:05:27,533
+and it says clean,
+
+87
+00:05:27,983 --> 00:05:30,157
+and the door never opens.
+
+88
+00:05:31,957 --> 00:05:34,565
+So check doors with a pencil.
+
+89
+00:05:35,015 --> 00:05:37,624
+For each way a door opens,
+
+90
+00:05:38,074 --> 00:05:42,422
+write down where that key or that signal comes from.
+
+91
+00:05:44,222 --> 00:05:46,830
+Then play it with two consoles.
+
+92
+00:05:47,730 --> 00:05:49,904
+The doctor carries the key,
+
+93
+00:05:50,354 --> 00:05:52,963
+and the engineer opens the door.
+
+94
+00:05:53,863 --> 00:05:58,211
+The doctor can't work the panel, and the engineer can.
+
+95
+00:06:00,011 --> 00:06:05,663
+For the exercise, add a second key somewhere it can never be reached,
+
+96
+00:06:06,113 --> 00:06:08,722
+and say why that's a mistake.
+
+97
+00:06:10,522 --> 00:06:13,130
+Next time, somebody to talk to,
+
+98
+00:06:13,580 --> 00:06:15,320
+and something that bites.

@@ -1,0 +1,359 @@
+1
+00:00:00,000 --> 00:00:03,913
+Two maps of yours are still empty of people.
+
+2
+00:00:04,813 --> 00:00:08,726
+Today there's somebody in the gully to talk to,
+
+3
+00:00:09,176 --> 00:00:13,959
+and something in the cistern you can't talk to at all.
+
+4
+00:00:15,759 --> 00:00:20,107
+They turn out to be the same kind of record,
+
+5
+00:00:20,557 --> 00:00:22,730
+with one line between them.
+
+6
+00:00:23,930 --> 00:00:26,104
+Pim belongs to a spot,
+
+7
+00:00:26,554 --> 00:00:29,163
+so first she gets a mark.
+
+8
+00:00:30,063 --> 00:00:32,672
+Then her record, under Old Marrow's.
+
+9
+00:00:34,472 --> 00:00:37,950
+Area and Mark put her on the map,
+
+10
+00:00:38,400 --> 00:00:41,443
+the way they put a prop there.
+
+11
+00:00:42,343 --> 00:00:44,083
+Sprite is her figure.
+
+12
+00:00:44,533 --> 00:00:48,446
+Face is the face shown beside what she says.
+
+13
+00:00:50,246 --> 00:00:54,159
+And these two lines are the ones that matter.
+
+14
+00:00:55,059 --> 00:00:56,798
+Calm, and then yes,
+
+15
+00:00:57,248 --> 00:00:58,987
+means she never attacks.
+
+16
+00:00:59,887 --> 00:01:05,974
+And Talk scene is the key of the room a click on her opens.
+
+17
+00:01:07,774 --> 00:01:09,948
+A person says Talk scene,
+
+18
+00:01:10,398 --> 00:01:12,572
+and a prop says Scene.
+
+19
+00:01:13,022 --> 00:01:16,500
+Lint tells you if you mix them up.
+
+20
+00:01:17,700 --> 00:01:21,613
+Her rooms go at the end of the file,
+
+21
+00:01:22,063 --> 00:01:24,672
+and there's nothing new in them.
+
+22
+00:01:25,572 --> 00:01:29,050
+She came out here to start the pump,
+
+23
+00:01:29,500 --> 00:01:32,109
+and something below took her tablet.
+
+24
+00:01:33,909 --> 00:01:38,257
+Next lecture gives her a great deal more to say.
+
+25
+00:01:39,457 --> 00:01:42,065
+Now the crawler, under the sentry.
+
+26
+00:01:42,965 --> 00:01:44,704
+Look at what's missing.
+
+27
+00:01:45,154 --> 00:01:46,893
+There's no Calm line,
+
+28
+00:01:47,343 --> 00:01:51,257
+and that's all it takes to make a hostile.
+
+29
+00:01:53,057 --> 00:01:56,535
+HP is how much hurt it can take.
+
+30
+00:01:57,435 --> 00:02:01,348
+Damage is how much it does with each strike.
+
+31
+00:02:02,248 --> 00:02:08,335
+Notice is how close you can get before it sees you, counted in cells.
+
+32
+00:02:09,235 --> 00:02:11,843
+Patrol is the walk it takes.
+
+33
+00:02:12,293 --> 00:02:15,337
+And Drops is what it leaves behind.
+
+34
+00:02:17,137 --> 00:02:19,311
+A hostile walks its patrol
+
+35
+00:02:19,761 --> 00:02:24,109
+until a crew member is close enough and in view.
+
+36
+00:02:25,009 --> 00:02:26,748
+Then it chases them,
+
+37
+00:02:27,198 --> 00:02:31,111
+and strikes every two seconds from the next cell.
+
+38
+00:02:32,911 --> 00:02:35,954
+So think about where you put it.
+
+39
+00:02:36,854 --> 00:02:41,202
+This one keeps to the east end of the walkway,
+
+40
+00:02:41,652 --> 00:02:43,826
+well away from the stairs.
+
+41
+00:02:44,276 --> 00:02:48,624
+A party that arrives has room to stop and look.
+
+42
+00:02:49,824 --> 00:02:52,867
+When a hostile goes down for good,
+
+43
+00:02:53,317 --> 00:02:56,361
+the game sends a signal by itself.
+
+44
+00:02:57,261 --> 00:03:02,478
+The name is hostile, down, and the record's key, joined with underscores.
+
+45
+00:03:04,278 --> 00:03:07,322
+So a quest can wait for it,
+
+46
+00:03:07,772 --> 00:03:10,380
+with no answer and no card.
+
+47
+00:03:11,280 --> 00:03:15,193
+This one is a side story for the engineer.
+
+48
+00:03:16,993 --> 00:03:20,907
+And Leads to finally has something to point at.
+
+49
+00:03:21,357 --> 00:03:27,009
+It's the key of the thing on the map this story is about.
+
+50
+00:03:28,209 --> 00:03:30,817
+Every crew member carries a weapon,
+
+51
+00:03:31,267 --> 00:03:34,746
+and it's the Fire app on the handheld.
+
+52
+00:03:35,646 --> 00:03:38,254
+Pick a setting and press Arm,
+
+53
+00:03:38,704 --> 00:03:43,052
+and the next click on the map is a shot.
+
+54
+00:03:43,952 --> 00:03:46,561
+One shot, and it's safe again.
+
+55
+00:03:48,361 --> 00:03:50,535
+Stun holds a hostile still.
+
+56
+00:03:51,435 --> 00:03:54,043
+Cut takes one point off it.
+
+57
+00:03:54,943 --> 00:03:57,117
+And full puts it down,
+
+58
+00:03:57,567 --> 00:03:59,307
+whatever it had left.
+
+59
+00:04:00,207 --> 00:04:04,554
+Full also destroys any thing it hits, the beacon included,
+
+60
+00:04:05,004 --> 00:04:08,048
+so keep it for what's attacking you.
+
+61
+00:04:09,848 --> 00:04:12,457
+The crew has three points each.
+
+62
+00:04:13,357 --> 00:04:15,096
+At nothing, you're down,
+
+63
+00:04:15,546 --> 00:04:18,154
+and you can't walk or act.
+
+64
+00:04:19,954 --> 00:04:24,737
+Somebody beside you with a medical kit can stand you up.
+
+65
+00:04:25,637 --> 00:04:27,811
+And if everybody is down,
+
+66
+00:04:28,261 --> 00:04:32,609
+the whole party wakes at the entry eight seconds later,
+
+67
+00:04:33,059 --> 00:04:34,798
+with one point each.
+
+68
+00:04:36,598 --> 00:04:40,076
+So nobody is ever out of the game.
+
+69
+00:04:40,526 --> 00:04:45,743
+But one person alone wakes up next to whatever put them down.
+
+70
+00:04:46,943 --> 00:04:48,683
+Three consoles this time.
+
+71
+00:04:49,583 --> 00:04:51,757
+The doctor talks to Pim.
+
+72
+00:04:53,557 --> 00:04:57,035
+Then two of them go down the stairs,
+
+73
+00:04:57,485 --> 00:04:59,659
+and stop at the foot.
+
+74
+00:05:00,559 --> 00:05:03,167
+Scan tells them what's in sight.
+
+75
+00:05:04,967 --> 00:05:06,707
+From the weapons console:
+
+76
+00:05:07,157 --> 00:05:10,200
+stun, then cut, twice, and then full.
+
+77
+00:05:11,100 --> 00:05:12,839
+And down it goes.
+
+78
+00:05:13,289 --> 00:05:17,202
+There's a tablet on the walkway where it fell,
+
+79
+00:05:17,652 --> 00:05:20,261
+and the engineer's story is complete.
+
+80
+00:05:21,461 --> 00:05:23,635
+Lint knows a lot here.
+
+81
+00:05:24,085 --> 00:05:27,128
+It knows the names of those signals,
+
+82
+00:05:27,578 --> 00:05:31,491
+and it knows a crawler can't stand in water.
+
+83
+00:05:33,291 --> 00:05:36,770
+It can't see a missing Calm line, though.
+
+84
+00:05:37,220 --> 00:05:38,959
+Leave that line out,
+
+85
+00:05:39,409 --> 00:05:43,757
+and Pim attacks the first crew member who walks up.
+
+86
+00:05:44,657 --> 00:05:49,439
+And it can't see a Talk scene that names no room.
+
+87
+00:05:49,889 --> 00:05:52,498
+You click her, and nothing happens.
+
+88
+00:05:54,298 --> 00:05:58,211
+For the exercise, make the crawler tougher, then gentler,
+
+89
+00:05:58,661 --> 00:06:00,400
+and play each one.
+
+90
+00:06:02,200 --> 00:06:05,243
+Next time, Pim wants that tablet back.
