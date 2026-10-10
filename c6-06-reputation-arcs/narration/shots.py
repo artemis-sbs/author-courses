@@ -114,7 +114,7 @@ SHOTS = [
     {
         "id": "s07_the_ledger",
         "title": 'The ledger',
-        "frames": 1481,
+        "frames": 1494,
         "captions": [
             ('Now you plan it.', 0, 52),
             ('The ledger is one row for each evening,', 79, 184),
@@ -127,7 +127,7 @@ SHOTS = [
             ('Too cheap, and it opens on night one.', 973, 1077),
             ('Too dear, and it never does.', 1091, 1169),
             ('And remember where all of this is kept.', 1223, 1327),
-            ("It's under the ship's name, in the save.", 1341, 1445),
+            ("It's in the ship's own record, in the save.", 1341, 1458),
         ],
         "pauses": [0.9, 0.45, 0.45, 1.8, 0.9, 1.8, 0.45, 0.9, 0.45, 1.8, 0.45, 1.2],
     },
@@ -152,13 +152,13 @@ SHOTS = [
     {
         "id": "s09_close",
         "title": 'Close',
-        "frames": 771,
+        "frames": 798,
         "captions": [
             ("So you price standing, you don't award it.", 0, 104),
             ('Every answer that earns it gets a cost.', 158, 263),
-            ("And all of it lives under the ship's name,", 290, 407),
-            ('so the ship keeps its name.', 421, 499),
-            ("Next time, we look at the act from the crew's side of the table.", 553, 735),
+            ("And all of it lives in the ship's record,", 290, 407),
+            ('which the save carries from week to week.', 421, 525),
+            ("Next time, we look at the act from the crew's side of the table.", 579, 762),
         ],
         "pauses": [1.8, 0.9, 0.45, 1.8, 1.2],
     },

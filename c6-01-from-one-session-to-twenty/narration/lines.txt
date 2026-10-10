@@ -74,16 +74,15 @@ s08_what_the_game_keeps_6	The jobs in hand,
 s08_what_the_game_keeps_7	and every place they've charted.
 s08_what_the_game_keeps_8	That's enough to build twenty evenings on.
 s09_what_it_does_not_0	And here's what it doesn't keep.
-s09_what_it_does_not_1	Read this list twice.
+s09_what_it_does_not_1	It's a short list.
 s09_what_it_does_not_2	Guards the crew ran away from are back.
-s09_what_it_does_not_3	A countdown starts again.
-s09_what_it_does_not_4	A ship with a new name has no standing and no jobs,
-s09_what_it_does_not_5	and the old name's record is gone for good.
-s09_what_it_does_not_6	A universe with a new title is a new game.
-s09_what_it_does_not_7	And the big one.
-s09_what_it_does_not_8	The game has no memory for a fact of your story
-s09_what_it_does_not_9	unless that fact is a step, a standing, or credits.
-s09_what_it_does_not_10	So in this class, every turn of the plot is a step.
+s09_what_it_does_not_3	And a universe with a new title is a new game,
+s09_what_it_does_not_4	so choose the title once.
+s09_what_it_does_not_5	Some things you might expect to lose are kept.
+s09_what_it_does_not_6	A clock that was running comes back with the time it had left.
+s09_what_it_does_not_7	A ship you rename keeps its standing and its jobs.
+s09_what_it_does_not_8	And the game can remember a fact of your story.
+s09_what_it_does_not_9	That's the next lecture.
 s10_close_0	So you have a premise, a first lead,
 s10_close_1	and a table you measured yourself.
 s10_close_2	End every evening the same way:

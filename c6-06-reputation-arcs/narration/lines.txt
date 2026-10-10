@@ -66,7 +66,7 @@ s07_the_ledger_7	and you can check the price against the wages.
 s07_the_ledger_8	Too cheap, and it opens on night one.
 s07_the_ledger_9	Too dear, and it never does.
 s07_the_ledger_10	And remember where all of this is kept.
-s07_the_ledger_11	It's under the ship's name, in the save.
+s07_the_ledger_11	It's in the ship's own record, in the save.
 s08_lint_and_play_0	Lint's clean, so here it is.
 s08_lint_and_play_1	Three answers, and no manifest.
 s08_lint_and_play_2	I pay the levy twice,
@@ -79,6 +79,6 @@ s08_lint_and_play_8	Back home, the good work has gone from the list.
 s08_lint_and_play_9	And the hail's down to three answers again.
 s09_close_0	So you price standing, you don't award it.
 s09_close_1	Every answer that earns it gets a cost.
-s09_close_2	And all of it lives under the ship's name,
-s09_close_3	so the ship keeps its name.
+s09_close_2	And all of it lives in the ship's record,
+s09_close_3	which the save carries from week to week.
 s09_close_4	Next time, we look at the act from the crew's side of the table.

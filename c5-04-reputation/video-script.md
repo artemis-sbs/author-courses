@@ -9,10 +9,11 @@
 >
 > **This lecture teaches less than the plan lists, on purpose.** Measured today:
 >
-> - `Standing:` (or `earns` in a `Reward:`) on a quest in the Narrative chapter is kept
->   on the shared story, not on the ship. Nothing a player meets reads it there. The
->   page says so and teaches the two deeds that do reach the ship: a finished job and an
->   answer in a call.
+> - `Standing:` (or `earns` in a `Reward:`) on a quest in the Narrative chapter reaches
+>   every ship flying. Re-measured 2026-10-10 on the released libraries, with two ships:
+>   `Standing: gleaners fearsome 70` left both at 40 with the Gleaners. It did not reach
+>   any ship when this page was first written. The page says so in one row and still
+>   teaches the two deeds it was built on: a finished job and an answer in a call.
 > - `Standing:` on a job is thrown away. A job is always worth 5 for each tier.
 > - `Rival when:` on a captain is read by nothing. It is not on the page. Lecture 8 will
 >   need it.
@@ -67,7 +68,9 @@ The companion page is `lesson.md`; the finished file is in `example\`.
     line.
 
 **Read in the code, not run:** that a refused answer tells the crew "You cannot afford
-that."; that standing is kept by the ship's name.
+that."; that standing is kept in the ship's own record. (Re-measured 2026-10-10: a ship
+renamed in `settings.yaml` kept its standing and its jobs. When this page was first
+written it lost both.)
 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 

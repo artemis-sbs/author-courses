@@ -31,421 +31,393 @@ builds on its worlds, and sends fleets out.
 Today you write for that seat.
 
 9
-00:00:31,009 --> 00:00:34,922
-And I have to start with some bad news,
+00:00:31,009 --> 00:00:36,661
+Before we start, here's how this lecture and the next one fit together.
 
 10
-00:00:35,372 --> 00:00:38,850
-because I'd rather you heard it from me.
+00:00:38,461 --> 00:00:41,504
+Your own universe can have an admiral.
 
 11
-00:00:40,650 --> 00:00:46,302
-The Admiral's game doesn't run in the universe you made in Lecture Two,
+00:00:42,404 --> 00:00:44,143
+That's the next lecture.
 
 12
-00:00:46,752 --> 00:00:48,926
-not as things stand today.
+00:00:45,943 --> 00:00:48,987
+Today we work somewhere else, on purpose.
 
 13
-00:00:50,726 --> 00:00:52,465
-I did try it.
+00:00:49,887 --> 00:00:53,365
+The Open Universe mission holds a small universe
 
 14
-00:00:53,365 --> 00:00:55,539
-I added the Admiral's library,
+00:00:53,815 --> 00:00:56,859
+that is nothing but an admiral's game.
 
 15
-00:00:55,989 --> 00:00:57,728
-I changed the mode,
+00:00:57,759 --> 00:01:03,411
+Three kinds of world, six officers, and no story to keep track of.
 
 16
-00:00:58,178 --> 00:01:00,352
-and I wrote the chapters.
+00:01:05,211 --> 00:01:09,559
+It's the best place to learn what each line does.
 
 17
-00:01:01,252 --> 00:01:03,861
-The game started, and nothing happened.
+00:01:10,459 --> 00:01:15,676
+So we make a copy of it, and we change the copy.
 
 18
-00:01:04,761 --> 00:01:07,804
-There was no console and no error.
+00:01:17,476 --> 00:01:20,085
+And what you write there today
 
 19
-00:01:09,604 --> 00:01:13,952
-That's a fault in how two libraries find each other,
+00:01:20,535 --> 00:01:24,883
+is exactly what goes into your own universe next time.
 
 20
-00:01:14,402 --> 00:01:16,141
-and it's been reported.
-
-21
-00:01:17,041 --> 00:01:21,389
-It isn't something you can fix from your mission folder.
-
-22
-00:01:23,189 --> 00:01:27,102
-So today, we work where the Admiral does run,
-
-23
-00:01:27,552 --> 00:01:31,030
-which is inside the Open Universe mission itself.
-
-24
-00:01:31,930 --> 00:01:34,104
-And what you write there
-
-25
-00:01:34,554 --> 00:01:38,467
-is exactly what your own universe will take later.
-
-26
-00:01:39,667 --> 00:01:41,841
+00:01:26,083 --> 00:01:28,257
 First, we make a copy.
 
-27
-00:01:42,741 --> 00:01:45,785
+21
+00:01:29,157 --> 00:01:32,200
 Never change the Open Universe folder itself,
 
-28
-00:01:46,235 --> 00:01:48,843
+22
+00:01:32,650 --> 00:01:35,259
 because an update will replace it.
 
-29
-00:01:50,643 --> 00:01:55,426
+23
+00:01:37,059 --> 00:01:41,841
 I copy it, paste it, and call the copy Admiral Lab.
 
-30
-00:01:57,226 --> 00:01:58,965
+24
+00:01:43,641 --> 00:01:45,380
 One warning about saves.
 
-31
-00:01:59,865 --> 00:02:04,213
+25
+00:01:46,280 --> 00:01:50,628
 A save is named after the universe, not the folder,
 
-32
-00:02:04,663 --> 00:02:08,576
+26
+00:01:51,078 --> 00:01:54,991
 so the lab and the real thing share one.
 
-33
-00:02:09,476 --> 00:02:13,389
+27
+00:01:55,891 --> 00:01:59,804
 If you've got a skirmish game you care about,
 
-34
-00:02:13,839 --> 00:02:16,448
+28
+00:02:00,254 --> 00:02:02,863
 move that file somewhere safe first.
 
-35
-00:02:17,648 --> 00:02:22,430
+29
+00:02:04,063 --> 00:02:08,846
 Here's the whole game, so you know what you're writing for.
 
-36
-00:02:24,230 --> 00:02:28,143
+30
+00:02:10,646 --> 00:02:14,559
 The Admiral selects a world, and builds a headquarters.
 
-37
-00:02:29,043 --> 00:02:30,783
+31
+00:02:15,459 --> 00:02:17,198
 Then comes an extractor,
 
-38
-00:02:31,233 --> 00:02:33,407
+32
+00:02:17,648 --> 00:02:19,822
 and ore starts coming in.
 
-39
-00:02:34,307 --> 00:02:36,915
+33
+00:02:20,722 --> 00:02:23,330
 Then an academy and a shipyard,
 
-40
-00:02:37,365 --> 00:02:40,409
+34
+00:02:23,780 --> 00:02:26,824
 and the shipyard offers officers to commission.
 
-41
-00:02:41,309 --> 00:02:44,787
+35
+00:02:27,724 --> 00:02:31,202
 Each officer gets a fleet of three ships.
 
-42
-00:02:45,687 --> 00:02:47,861
+36
+00:02:32,102 --> 00:02:34,276
 And a lab offers research.
 
-43
-00:02:49,661 --> 00:02:52,704
+37
+00:02:36,076 --> 00:02:39,120
 You don't write any of those buildings.
 
-44
-00:02:53,604 --> 00:02:56,213
+38
+00:02:40,020 --> 00:02:42,628
 They're the same in every universe.
 
-45
-00:02:57,113 --> 00:03:01,026
+39
+00:02:43,528 --> 00:02:47,441
 You write the worlds, the people, and the ladder.
 
-46
-00:03:02,226 --> 00:03:05,704
+40
+00:02:48,641 --> 00:02:52,120
 This is the arena file, and it's short.
 
-47
-00:03:06,604 --> 00:03:09,648
+41
+00:02:53,020 --> 00:02:56,063
 Here are its three kinds of world.
 
-48
-00:03:10,098 --> 00:03:12,707
+42
+00:02:56,513 --> 00:02:59,122
 I'm adding a fourth, above them.
 
-49
-00:03:14,507 --> 00:03:18,420
+43
+00:03:00,922 --> 00:03:04,835
 Yields is what one extractor brings in each minute.
 
-50
-00:03:19,320 --> 00:03:24,102
+44
+00:03:05,735 --> 00:03:10,517
 Reserve is how much there is before the world runs dry.
 
-51
-00:03:25,902 --> 00:03:28,511
+45
+00:03:12,317 --> 00:03:14,926
 And here's the rule that matters.
 
-52
-00:03:29,411 --> 00:03:32,454
+46
+00:03:15,826 --> 00:03:18,870
 The home system always gets one world,
 
-53
-00:03:32,904 --> 00:03:38,122
+47
+00:03:19,320 --> 00:03:24,537
 and it's the first one in the file that never runs dry.
 
-54
-00:03:39,022 --> 00:03:40,761
+48
+00:03:25,437 --> 00:03:27,176
 I put mine first,
 
-55
-00:03:41,211 --> 00:03:44,254
+49
+00:03:27,626 --> 00:03:30,670
 so my Admiral starts on my world.
 
-56
-00:03:45,454 --> 00:03:49,802
+50
+00:03:31,870 --> 00:03:36,217
 Next come the dials, and there are three I'm setting.
 
-57
-00:03:50,702 --> 00:03:52,441
+51
+00:03:37,117 --> 00:03:38,857
 There's the starting ore,
 
-58
-00:03:52,891 --> 00:03:55,065
+52
+00:03:39,307 --> 00:03:41,480
 how many fleets at once,
 
-59
-00:03:55,515 --> 00:03:58,559
+53
+00:03:41,930 --> 00:03:44,974
 and no border raids while I'm learning.
 
-60
-00:04:00,359 --> 00:04:02,098
+54
+00:03:46,774 --> 00:03:48,513
 Now, an honest number.
 
-61
-00:04:02,998 --> 00:04:05,172
+55
+00:03:49,413 --> 00:03:51,587
 I wrote five hundred ore.
 
-62
-00:04:06,072 --> 00:04:08,680
+56
+00:03:52,487 --> 00:03:55,096
 The game started with six thousand.
 
-63
-00:04:10,480 --> 00:04:14,393
+57
+00:03:56,896 --> 00:04:00,809
 Part of that is the mode, which is fair.
 
-64
-00:04:15,293 --> 00:04:17,033
+58
+00:04:01,709 --> 00:04:03,448
 But most of it
 
-65
-00:04:17,483 --> 00:04:21,830
+59
+00:04:03,898 --> 00:04:08,246
 is a test setting the game's makers left switched on.
 
-66
-00:04:22,730 --> 00:04:26,209
+60
+00:04:09,146 --> 00:04:12,624
 It runs the Admiral's economy eight times fast.
 
-67
-00:04:28,009 --> 00:04:30,183
+61
+00:04:14,424 --> 00:04:16,598
 So don't balance anything today.
 
-68
-00:04:31,083 --> 00:04:33,691
+62
+00:04:17,498 --> 00:04:20,107
 Write the numbers your story suggests,
 
-69
-00:04:34,141 --> 00:04:37,620
+63
+00:04:20,557 --> 00:04:24,035
 and tune them when that setting is gone.
 
-70
-00:04:38,820 --> 00:04:42,298
+64
+00:04:25,235 --> 00:04:28,713
 Officers look like the captains from Lecture Eight,
 
-71
-00:04:42,748 --> 00:04:45,791
+65
+00:04:29,163 --> 00:04:32,207
 and their values are the same traits.
 
-72
-00:04:47,591 --> 00:04:51,070
+66
+00:04:34,007 --> 00:04:37,485
 Here, though, three of those traits do something.
 
-73
-00:04:51,970 --> 00:04:55,883
+67
+00:04:38,385 --> 00:04:42,298
 By the book means the fleet burns less gas.
 
-74
-00:04:56,783 --> 00:04:58,522
+68
+00:04:43,198 --> 00:04:44,937
 Resourceful means more salvage.
 
-75
-00:04:59,422 --> 00:05:02,465
+69
+00:04:45,837 --> 00:04:48,880
 Fearsome means it engages from farther out.
 
-76
-00:05:04,265 --> 00:05:06,439
+70
+00:04:50,680 --> 00:04:52,854
 Every other trait is character.
 
-77
-00:05:07,339 --> 00:05:09,078
+71
+00:04:53,754 --> 00:04:55,493
 It's who she is,
 
-78
-00:05:09,528 --> 00:05:13,007
+72
+00:04:55,943 --> 00:04:59,422
 for the day a crew talks to her.
 
-79
-00:05:14,207 --> 00:05:18,554
+73
+00:05:00,622 --> 00:05:04,970
 The arena has no research, so I'm adding the chapter.
 
-80
-00:05:19,454 --> 00:05:21,193
+74
+00:05:05,870 --> 00:05:07,609
 There are two steps.
 
-81
-00:05:22,093 --> 00:05:26,007
+75
+00:05:08,509 --> 00:05:12,422
 Each one has a cost, a time in seconds,
 
-82
-00:05:26,457 --> 00:05:28,196
+76
+00:05:12,872 --> 00:05:14,611
 and what it unlocks.
 
-83
-00:05:29,096 --> 00:05:31,704
+77
+00:05:15,511 --> 00:05:18,120
 The second one requires the first,
 
-84
-00:05:32,154 --> 00:05:35,198
+78
+00:05:18,570 --> 00:05:21,613
 and that's what makes it a ladder.
 
-85
-00:05:36,998 --> 00:05:38,737
+79
+00:05:23,413 --> 00:05:25,152
 Now I run lint.
 
+80
+00:05:26,052 --> 00:05:29,096
+Two warnings were there before I started,
+
+81
+00:05:29,546 --> 00:05:31,720
+in files I never touched.
+
+82
+00:05:32,620 --> 00:05:34,793
+And that's all there is.
+
+83
+00:05:35,243 --> 00:05:37,417
+My own file says clean.
+
+84
+00:05:39,217 --> 00:05:41,391
+One small thing about time.
+
+85
+00:05:42,291 --> 00:05:44,900
+It's a plain number of seconds.
+
 86
-00:05:39,637 --> 00:05:42,680
-Two warnings were there before I started.
+00:05:45,350 --> 00:05:47,089
+Forty means forty seconds.
 
 87
-00:05:43,580 --> 00:05:46,189
-And there are four new ones,
+00:05:48,889 --> 00:05:54,107
+So for today, those two old warnings are what done looks like.
 
 88
-00:05:46,639 --> 00:05:50,987
-saying the game doesn't read my costs or my times.
-
-89
-00:05:51,887 --> 00:05:53,626
-It does read them.
-
-90
-00:05:54,076 --> 00:05:58,424
-I watched it take the ore, and the forty seconds.
-
-91
-00:06:00,224 --> 00:06:04,137
-There's a line that makes those warnings go away,
-
-92
-00:06:04,587 --> 00:06:08,065
-and I'm asking you not to write it.
-
-93
-00:06:08,965 --> 00:06:12,443
-It quietly turns forty seconds into forty minutes.
-
-94
-00:06:13,343 --> 00:06:17,691
-So for today, six warnings is what done looks like.
-
-95
-00:06:18,891 --> 00:06:20,630
+00:05:55,307 --> 00:05:57,046
 Now let's play it.
 
-96
-00:06:21,530 --> 00:06:27,183
+89
+00:05:57,946 --> 00:06:03,598
 On the start screen I pick the skirmish universe, and a new game.
 
-97
-00:06:28,983 --> 00:06:32,461
+90
+00:06:05,398 --> 00:06:08,876
 There's one world at home, and it's mine.
 
-98
-00:06:33,361 --> 00:06:35,100
+91
+00:06:09,776 --> 00:06:11,515
 I build a headquarters,
 
-99
-00:06:35,550 --> 00:06:39,898
+92
+00:06:11,965 --> 00:06:16,313
 then the extractor, the academy, the shipyard and the lab.
 
-100
-00:06:40,798 --> 00:06:42,537
+93
+00:06:17,213 --> 00:06:18,952
 The ore is climbing.
 
-101
-00:06:44,337 --> 00:06:46,946
+94
+00:06:20,752 --> 00:06:23,361
 The shipyard offers my officer first,
 
-102
-00:06:47,396 --> 00:06:50,004
+95
+00:06:23,811 --> 00:06:26,420
 by her name and her title.
 
-103
-00:06:50,904 --> 00:06:53,948
+96
+00:06:27,320 --> 00:06:30,363
 And the lab offers my first step,
 
-104
-00:06:54,398 --> 00:06:57,441
+97
+00:06:30,813 --> 00:06:33,857
 and then, once that's done, my second.
 
-105
-00:06:58,641 --> 00:07:00,380
+98
+00:06:35,057 --> 00:06:36,796
 Now it's your turn.
 
-106
-00:07:01,280 --> 00:07:06,063
+99
+00:06:37,696 --> 00:06:42,478
 In the lab, write the world your own side starts on,
 
-107
-00:07:06,513 --> 00:07:10,426
+100
+00:06:42,928 --> 00:06:46,841
 then two officers, and a ladder of three steps.
 
-108
-00:07:12,226 --> 00:07:14,400
-Keep them there for now.
+101
+00:06:48,641 --> 00:06:51,250
+Write them for your own universe,
 
-109
-00:07:15,300 --> 00:07:17,474
-When the fault is mended,
+102
+00:06:51,700 --> 00:06:53,874
+because that's where they're going.
 
-110
-00:07:17,924 --> 00:07:21,402
-it's three small moves to bring them home,
+103
+00:06:54,774 --> 00:06:58,252
+It's three small moves to bring them home,
 
-111
-00:07:21,852 --> 00:07:24,026
+104
+00:06:58,702 --> 00:07:00,876
 and they're on the page.
 
-112
-00:07:25,826 --> 00:07:29,304
-The lecture after this one isn't ready yet,
+105
+00:07:02,676 --> 00:07:05,285
+The next lecture makes those moves,
 
-113
-00:07:29,754 --> 00:07:32,363
-so go on to the capstone.
+106
+00:07:05,735 --> 00:07:09,213
+and puts an admiral beside your bridge crew.

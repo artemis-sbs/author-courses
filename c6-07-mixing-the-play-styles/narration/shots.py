@@ -105,7 +105,7 @@ SHOTS = [
             ("That's the campaign stopped,", 684, 736),
             ('in a save your crew has put ten weeks into.', 749, 880),
             ('So a clock never goes on the spine.', 934, 1038),
-            ('And a clock never runs across the end of an evening.', 1065, 1209),
+            ("And closing the game doesn't undo a clock that ran out.", 1065, 1209),
         ],
         "pauses": [0.45, 1.8, 0.9, 0.45, 1.8, 0.45, 1.8, 0.9, 1.2],
     },

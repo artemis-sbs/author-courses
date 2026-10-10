@@ -251,89 +251,89 @@ Start it the same way every week,
 and never choose new game.
 
 64
-00:04:21,354 --> 00:04:23,093
-Don't rename the ship.
+00:04:21,354 --> 00:04:24,833
+Leave the ship's name alone if you can.
 
 65
-00:04:23,993 --> 00:04:26,602
+00:04:25,733 --> 00:04:28,341
 End each evening by jumping home.
 
 66
-00:04:27,502 --> 00:04:31,415
+00:04:29,241 --> 00:04:33,154
 And copy the save file somewhere safe, every week.
 
 67
-00:04:32,315 --> 00:04:36,228
+00:04:34,054 --> 00:04:37,967
 The note gives its name, and where it lives.
 
 68
-00:04:37,428 --> 00:04:41,341
+00:04:39,167 --> 00:04:43,080
 When act two's ready, you send the folder again,
 
 69
-00:04:41,791 --> 00:04:43,965
+00:04:43,530 --> 00:04:45,704
 and there are three rules.
 
 70
-00:04:45,765 --> 00:04:49,243
+00:04:47,504 --> 00:04:50,983
 The title doesn't change, not by a letter.
 
 71
-00:04:50,143 --> 00:04:54,057
+00:04:51,883 --> 00:04:55,796
 Nothing the crew has met is deleted or renamed,
 
 72
-00:04:54,507 --> 00:04:56,680
+00:04:56,246 --> 00:04:58,420
 because you only ever add.
 
 73
-00:04:58,480 --> 00:05:02,393
-And act one's ending gets its one new line,
+00:05:00,220 --> 00:05:06,307
+And act two has to be opened by a step they haven't finished yet.
 
 74
-00:05:02,843 --> 00:05:07,191
-the one that shows the first lead of act two.
+00:05:06,757 --> 00:05:08,930
+The capstone shows you how.
 
 75
-00:05:08,991 --> 00:05:11,165
+00:05:10,730 --> 00:05:12,904
 The host swaps the folder.
 
 76
-00:05:12,065 --> 00:05:14,239
+00:05:13,804 --> 00:05:15,978
 The save isn't in it,
 
 77
-00:05:14,689 --> 00:05:16,863
+00:05:16,428 --> 00:05:18,602
 so the crew carries on.
 
 78
-00:05:18,663 --> 00:05:22,141
+00:05:20,402 --> 00:05:23,880
 And before you send it, check it yourself.
 
 79
-00:05:22,591 --> 00:05:28,678
+00:05:24,330 --> 00:05:30,417
 Start the new folder on your own save from the end of act one,
 
 80
-00:05:29,128 --> 00:05:33,041
+00:05:30,867 --> 00:05:34,780
 and see that the first new lead is there.
 
 81
-00:05:34,241 --> 00:05:35,980
+00:05:35,980 --> 00:05:37,720
 So that's a release.
 
 82
-00:05:36,430 --> 00:05:40,343
+00:05:38,170 --> 00:05:42,083
 A named folder, a clean zip, and a note.
 
 83
-00:05:42,143 --> 00:05:44,752
+00:05:43,883 --> 00:05:46,491
 The capstone's next, when it's written.
 
 84
-00:05:45,652 --> 00:05:48,261
+00:05:47,391 --> 00:05:50,000
 And everything it'll ask of you
 
 85
-00:05:48,711 --> 00:05:51,320
+00:05:50,450 --> 00:05:53,059
 is already on your campaign page.

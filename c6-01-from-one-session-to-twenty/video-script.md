@@ -38,12 +38,16 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 5. A second launch with the same save: the same system, credits, standing, story steps
    (done, open and hidden), jobs in hand, and Charted Locations.
 6. The three guards of a landmark, not destroyed, were there again after Continue.
-7. A step whose clock ran out (not followed by a jump) was Active again after Continue.
-8. With the ship renamed in `settings.yaml`: credits, story and charts came back;
-   standing was 0, no jobs, and the save then held only the new name.
+7. Re-measured 2026-10-10 on the libraries released 2026-10-09 (saves version 2). A
+   step whose clock ran out was in the save as failed, with its penalty paid, within
+   seconds and with no jump after it. A running clock came back with the time left (258
+   seconds when the game was closed, 275 after Continue).
+8. With the ship renamed in `settings.yaml`: everything came back, standing and jobs
+   too. The save keeps the record under its old key with the new name in it.
 9. With the title changed: a new game, a second save file, the first one untouched.
 10. Between two launches the universe file was changed: a rewritten lead showed its new
-    title and text; a deleted lead was still there; an added lead appeared.
+    title and text; a deleted lead was gone from the Quest Log and parked in the save;
+    an added lead appeared. The save file held no title or text of any story step.
 11. Lint on the mistakes in Step 5: 2 variants, each linted and played.
 
 **Read in the docs and code, not run:** the five decisions quoted from Storm's Beacon's
@@ -146,12 +150,12 @@ enough to build twenty evenings on. ||"
 
 **Screen:** The second table, one row at a time.
 
-**Say:** "And here's what it doesn't keep. | Read this list twice. ||| Guards the crew
-ran away from are back. || A countdown starts again. ||| A ship with a new name has no
-standing and no jobs, | and the old name's record is gone for good. || A universe with a
-new title is a new game. ||| And the big one. || The game has no memory for a fact of
-your story | unless that fact is a step, a standing, or credits. || So in this class,
-every turn of the plot is a step. ||"
+**Say:** "And here's what it doesn't keep. | It's a short list. ||| Guards the crew
+ran away from are back. || And a universe with a new title is a new game, | so choose
+the title once. ||| Some things you might expect to lose are kept. || A clock that was
+running comes back with the time it had left. || A ship you rename keeps its standing
+and its jobs. ||| And the game can remember a fact of your story. || That's the next
+lecture. ||"
 
 ### 10. Close
 

@@ -1,0 +1,90 @@
+s01_cold_open_0	This is a campaign with nowhere to go.
+s01_cold_open_1	The crew finished evening two,
+s01_cold_open_2	and then I tidied my file.
+s01_cold_open_3	I deleted one step, the one they were on.
+s01_cold_open_4	And everything after it is hidden,
+s01_cold_open_5	with nothing left to reveal it.
+s01_cold_open_6	By the end of this lecture you'll know how that happens,
+s01_cold_open_7	how to get it back,
+s01_cold_open_8	and how to never do it to a real crew.
+s02_two_halves_0	Here's the whole idea, in one sentence.
+s02_two_halves_1	The save holds what the crew did.
+s02_two_halves_2	Your file holds what there is to do.
+s02_two_halves_3	The save has no words in it.
+s02_two_halves_4	It has keys, and a state for each key.
+s02_two_halves_5	So every time the game starts,
+s02_two_halves_6	it joins the two halves by key.
+s02_two_halves_7	Change your words, and the crew sees new words.
+s02_two_halves_8	Change a key, and the save doesn't know that record any more.
+s03_make_the_lab_0	We don't practice on a live campaign.
+s03_make_the_lab_1	So I copy the folder,
+s03_make_the_lab_2	and I call the copy revision lab.
+s03_make_the_lab_3	Now, the copy has the same title,
+s03_make_the_lab_4	and a save is named for its title.
+s03_make_the_lab_5	Left alone, the two folders would share one save.
+s03_make_the_lab_6	So I add one line to the lab's story file.
+s03_make_the_lab_7	Save slot, equals six.
+s03_make_the_lab_8	Now the lab keeps its own campaign, in its own file,
+s03_make_the_lab_9	and mine is somewhere else entirely.
+s04_a_campaign_in_progress_0	The lab needs a campaign that's partway through.
+s04_a_campaign_in_progress_1	So I walk two evenings, as fast as I can.
+s04_a_campaign_in_progress_2	And here's where it stands.
+s04_a_campaign_in_progress_3	Six steps are done,
+s04_a_campaign_in_progress_4	and one is open, three of five.
+s04_a_campaign_in_progress_5	Everything after that is hidden.
+s04_a_campaign_in_progress_6	And there's a job in hand.
+s04_a_campaign_in_progress_7	Now I close the game,
+s04_a_campaign_in_progress_8	and I start changing things.
+s05_round_one_0	Seven changes, all at once.
+s05_round_one_1	I reword the step they're on,
+s05_round_one_2	and one they've finished.
+s05_round_one_3	I add a lead,
+s05_round_one_4	and I delete a finished step.
+s05_round_one_5	I rename a step the right way,
+s05_round_one_6	with a line that says what it was called before.
+s05_round_one_7	I rename another the wrong way, with no such line.
+s05_round_one_8	And I add a new step behind one that's already done.
+s05_round_one_9	Lint has two warnings,
+s05_round_one_10	and both are about the step I deleted.
+s05_round_one_11	It's telling me I've cut my spine.
+s05_round_one_12	Now I continue the game.
+s05_round_one_13	There are new words in both places,
+s05_round_one_14	and the new lead is there.
+s05_round_one_15	The deleted step is gone.
+s05_round_one_16	The step I renamed properly is still done.
+s05_round_one_17	The one I renamed badly has vanished.
+s05_round_one_18	And the new step behind a finished one never shows up.
+s06_round_two_0	In round two, I put the deleted step back,
+s06_round_two_1	and it comes back done.
+s06_round_two_2	The save had kept its state for me.
+s06_round_two_3	I tell the hidden step to start at once,
+s06_round_two_4	and it's still hidden.
+s06_round_two_5	The save remembered it as hidden, and the save won.
+s06_round_two_6	And now the accident.
+s06_round_two_7	I delete the step the crew is on.
+s06_round_two_8	The step after it is stranded.
+s06_round_two_9	No next lead, in a campaign somebody has put weeks into.
+s07_getting_it_back_0	The game's own guide has a cure for this.
+s07_getting_it_back_1	I tried it, and it didn't work.
+s07_getting_it_back_2	What does work is a new key.
+s07_getting_it_back_3	The save decides the state of every key it's seen.
+s07_getting_it_back_4	Your file decides the state of a key it hasn't.
+s07_getting_it_back_5	So I give the stranded step a key the save has never met,
+s07_getting_it_back_6	and I tell it to start at once.
+s07_getting_it_back_7	And there it is, back in the quest log.
+s08_the_list_0	So here's the list.
+s08_the_list_1	Reword anything you like.
+s08_the_list_2	Add leads, and add steps ahead of the crew.
+s08_the_list_3	That's just writing the campaign.
+s08_the_list_4	Rename a key only with the line that says what it was.
+s08_the_list_5	Never add a step behind one that's finished.
+s08_the_list_6	Never delete the step they're on.
+s08_the_list_7	And never, ever change the title.
+s08_the_list_8	That's a different campaign.
+s09_your_turn_0	Now it's your turn.
+s09_your_turn_1	Make a lab from your own campaign.
+s09_your_turn_2	Strand a step on purpose,
+s09_your_turn_3	and bring it back both ways.
+s09_your_turn_4	Then write three rules on your campaign page,
+s09_your_turn_5	the three things you'll never do to a file a crew is playing.
+s09_your_turn_6	Next time, we pack the whole thing up and send it out.

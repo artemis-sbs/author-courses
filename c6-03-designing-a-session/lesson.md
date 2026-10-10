@@ -22,8 +22,8 @@ three records.
 ## Before you start
 
 - Your `MyUniverse` mission as Lecture 1 left it: `campaign.md`, and a `kestrel_verge.amd`
-  with The Wren and One of Five in it. (Lecture 2 is not written yet. Nothing here needs
-  it.)
+  with The Wren and One of Five in it. (If you took Lecture 2, your file has its three
+  lines and two records as well. Nothing here changes.)
 - `sbs lint MyUniverse` says `clean`.
 - The game closed, and the save deleted:
   `C:\Cosmos\data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml`.

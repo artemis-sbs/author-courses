@@ -74,8 +74,8 @@ s08_after_you_play_2	Your ticks, every one of them.
 s08_after_you_play_3	And your standings, which should match the page.
 s08_after_you_play_4	And then there's one more table,
 s08_after_you_play_5	the things this universe doesn't do yet.
-s08_after_you_play_6	It has no admiral of its own.
-s08_after_you_play_7	A story beat can't move standing.
+s08_after_you_play_6	An admiral's numbers can't be balanced yet.
+s08_after_you_play_7	A captain can't be made a rival with one line.
 s08_after_you_play_8	Lint has three warnings that are wrong.
 s08_after_you_play_9	None of those is your mistake.
 s08_after_you_play_10	But a writer who knows them

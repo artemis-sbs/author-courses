@@ -193,10 +193,12 @@ leave the crew in different places. Measured:
 A crew that leaned on the clerk in week 3 is greeted as a stranger in week 12. That is
 an arc, and it cost you one line.
 
-**The answers are there from evening 1.** An answer cannot be hidden until its evening.
-A crew that visits the Assay Office in week 1 can pay 150 credits for a bill of sale
-they have no use for yet, and the step, still hidden, is not done. They will have to ask
-again in week 3. Class 5 Lecture 7 has the same warning. Write the answer's words so that
+**The answers are there from evening 1.** These two have no `if`, so they are on offer
+at once. A crew that visits the Assay Office in week 1 can pay 150 credits for a bill of
+sale they have no use for yet, and the step, still hidden, is not done. They will have
+to ask again in week 3. (Lecture 2 has a way to hold an answer back until the crew has
+learned a fact: `if learned ...`. The fact has to come from an answer or from a lead off
+the spine, because a spine step's one `Then:` line is taken.) Class 5 Lecture 7 has the same warning. Write the answer's words so that
 asking early is only odd, not wrong.
 
 ## Step 4 - A race, and where clocks go
@@ -208,11 +210,12 @@ what was measured.
 |---|---|
 | A step of the spine with `Fails when: 20 seconds`, and a `Then: reveal` line. The time ran out | The step showed `Failed`. The next step was not revealed, and stayed hidden |
 | The same, with a `Penalty:` | The penalty was charged. The chain was still dead |
-| A step whose time had run out, with the game closed before the ship next jumped, then continued | The step was open again, with a full clock |
+| A step whose time had run out, with the game closed before the ship next jumped, then continued | The step was still `Failed`, and its penalty was still paid. The game had saved both within seconds |
 
 So: **a clock never goes on the spine.** One slow evening and the campaign has no next
-lead, in a save the crew has put ten weeks into. And a clock never runs across the end
-of an evening.
+lead, in a save the crew has put ten weeks into. Closing the game does not undo it, and
+it does not reset a clock that is still running either: that comes back with the time it
+had left (Lecture 2).
 
 A clock belongs on a job. A job that fails costs its penalty, and can be taken again.
 Add this to your Jobs chapter.
@@ -341,9 +344,9 @@ sbs run server,helm,comms -m MyUniverse map=0
 
 | Fact | What it means for your story |
 |---|---|
-| An answer in a hail is always on offer | A talk evening can be "done" early by a curious crew, and it will not count. Word the answers for that |
+| An answer in a hail with no `if` is always on offer | A talk evening can be "done" early by a curious crew, and it will not count. Word the answers for that, or guard them with a fact (Lecture 2) |
 | A step that fails reveals nothing | No clock on the spine, ever |
-| A clock that ran out is not saved until the next jump | No clock across the end of an evening |
+| A clock that ran out is saved as failed within seconds, and a running clock is saved with its time left | Closing the game is no way out of a clock |
 | A job's tier is a door | You can date a style: this kind of work arrives when the crew is trusted |
 | Another mission is another save | An interlude is joined to the campaign by your writing and by nothing else |
 
@@ -356,7 +359,7 @@ sbs run server,helm,comms -m MyUniverse map=0
 | No **Hail Deepwell Assembly** button | The hail has no `When: comms` line, or `Speaker:` is not the side's key |
 | Lamp Run is never on the list | It is not in the Compact's `Offers:` line, or the crew's standing is under 20 |
 | Lamp Run is on the list from the start | It has no `Tier: 2` line |
-| The campaign has no next lead, and a step shows `Failed` | A clock on the spine. Take the `Fails when:` line off for the next crew. For the save that has already failed, Lecture 9 is not written yet. Lecture 1 measured that a record added to the file does appear in a running save, so a new lead that says `at once` and reveals the lost step is the thing to try |
+| The campaign has no next lead, and a step shows `Failed` | A clock on the spine. Take the `Fails when:` line off for the next crew. For the save that has already failed, the step after it is stranded: Lecture 9, Step 6 gets it back, with a new key and `Starts when: at once` |
 
 ## Exercise
 

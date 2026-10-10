@@ -1,0 +1,165 @@
+// The story of The Kestrel Verge: leads, and The Long Count.
+
+# [The Second Colony](lead_deepwell)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 3, 1
+Then: learn the assay office buys salvage
+---
+The Deepwell Assembly keeps its books at (3, 1). Go and be counted.
+
+# [The Breaking Yard](lead_gleaners)
+---
+Scope: shared
+Starts when: at once
+Done when: reach -3, -2
+---
+The Compact says the Gleaners tow their wrecks to a yard at (-3, -2). Go and look, with shields up.
+
+# [The Third Colony](lead_tern)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 1, -2
+---
+The Tern never answered. Her last position was (1, -2). Go and see what is left of her.
+
+# [What the Gleaners Keep](lead_bone_pile)
+---
+Scope: shared
+Starts when: at once
+Done when: reach -4, -3
+---
+There is a place at (-4, -3) the Gleaners will not talk about. Go armed.
+
+# [The Long Count: The Wren](s01_go)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 2, 2
+Then: reveal s01_log
+---
+The Tern carried five boats and forty-one people. A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+
+# [The Long Count: Her Log](s01_log)
+---
+Scope: shared
+Starts when: revealed
+Done when: scan 1 derelict
+Objective: Scan the Wren from Science
+Then: reveal s01_home
+---
+The Wren is here, and so are ships with cutting gear. Get Science close enough to read her log before they strip it.
+
+# [The Long Count: Enter It](s01_home)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach 0, 0
+Then: reveal s02_go
+Reward: 300 credits
+---
+Nine names in the Wren's log, and a course laid in for a place that is on no chart. Take the log home to Kestrel Relay and have it entered.
+
+# [The Long Count: Two of Five](s02_go)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach -2, 3
+Then: reveal s02_clear
+---
+The Wren's log gives the next boat's last bearing: (-2, 3), past the edge of the Fields. She was the Dunlin. Somebody out there is still answering her hails.
+
+# [The Long Count: Bait](s02_clear)
+---
+Scope: shared
+Starts when: revealed
+Done when: destroy 2 enemies
+Then: reveal s02_enter
+---
+The Dunlin is a lure, and the ships in the cloud have been waiting for someone to answer. Two of them. Break the trap.
+
+# [The Long Count: Enter It Twice](s02_enter)
+---
+Was: s02_home
+Scope: shared
+Starts when: revealed
+Done when: reach 0, 0
+Then: reveal s02_lockers
+Reward: 350 credits
+---
+The Dunlin's seats were empty and her lockers were full. Nobody starved in her. Take that home to Kestrel Relay.
+
+# [The Long Count: The Plover's Price](s03_price)
+---
+Scope: shared
+Starts when: at once
+Done when: signal plover_asked
+Objective: Hail the Assay Office on Comms
+Then: reveal s03_home
+---
+The Assay Office has the Plover's bill of sale. Hail them and get it. How you ask is up to you, and they will remember it.
+
+# [The Long Count: Enter It Again](s03_home)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach 0, 0
+Then: reveal s04_go
+Reward: 300 credits
+---
+The Plover was sold as scrap, empty, by a seller the Deepwell would not name twice. Take the bill home to Kestrel Relay.
+
+# [The Long Count: Four of Five](s04_go)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach 4, -2
+Then: reveal s05_go
+---
+The Assay Office sold the Plover on, and logged a second boat adrift at (4, -2). The Petrel. Nobody has claimed her.
+
+# [The Long Count: Five of Five](s05_go)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach -3, -2
+Then: reveal act1_close
+---
+The last boat was the Skua, and the Petrel's beacon puts her in the Gleaners' breaking yard at (-3, -2). Go and see whether she is still a boat.
+
+# [The Long Count: Five Boats](act1_close)
+---
+Scope: shared
+Starts when: revealed
+Done when: reach 0, 0
+Reward: 1000 credits
+---
+Five boats, and not one body. Forty-one people left the Tern alive and went somewhere together. Take the Count home to Kestrel Relay.
+
+# [The Tern's Manifest](door_manifest)
+---
+Scope: shared
+Starts when: at once
+Done when: signal manifest_seen
+Reward: 200 credits
+---
+The Compact keeps the Tern's manifest under seal, and does not break a seal for strangers. Earn their trust at Kestrel Relay, then ask.
+
+# [A Lamp for the Wren](x_lamp)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 2, 2
+Reward: 100 credits
+---
+The Compact wants a marker lamp left at the Wren, at (2, 2), so that nobody else has to find her by accident.
+
+# [The Long Count: The Dunlin's Lockers](s02_lockers)
+---
+Scope: shared
+Starts when: at once
+Done when: reach 4, 4
+---
+Have the Dunlin's lockers counted at Kestrel Relay before anything else.

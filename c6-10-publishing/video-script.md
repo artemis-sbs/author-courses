@@ -120,7 +120,7 @@ handing someone the adventure to run. ||| It also means you can't be crew in you
 
 **Say:** "The note is where a campaign really differs. ||| The setup's the same three
 commands as before. || Then four things only a campaign needs. ||| Start it the same way
-every week, | and never choose new game. || Don't rename the ship. || End each evening
+every week, | and never choose new game. || Leave the ship's name alone if you can. || End each evening
 by jumping home. || And copy the save file somewhere safe, every week. || The note
 gives its name, and where it lives. ||"
 
@@ -130,8 +130,8 @@ gives its name, and where it lives. ||"
 
 **Say:** "When act two's ready, you send the folder again, | and there are three rules. ||| The title
 doesn't change, not by a letter. || Nothing the crew has met is deleted or renamed, |
-because you only ever add. ||| And act one's ending gets its one new line, | the one that shows the
-first lead of act two. ||| The host swaps the folder. || The save isn't in it, | so the
+because you only ever add. ||| And act two has to be opened by a step they haven't finished yet. |
+The capstone shows you how. ||| The host swaps the folder. || The save isn't in it, | so the
 crew carries on. ||| And before you send it, check it yourself. | Start the new folder on your own save from the end of act one, | and see that the first new lead is there. ||"
 
 ### 10. Close

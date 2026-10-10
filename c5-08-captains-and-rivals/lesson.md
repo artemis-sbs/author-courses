@@ -325,7 +325,7 @@ and `sable` are there beside your sides.
 | A captain's key and a side's key go in the same place after `earns` | The game tells them apart only by the word. Never give a captain the same key as a side |
 | A rival does not come after the crew | Nothing hunts them. A rival greets them differently and withholds what a friend would be told. That is all, and it is worth writing well |
 | The crew can win a rival back | Sable's toll is always on offer. A crew at -30 pays it three times and is at 30. If a grudge should be for good, take the way back out of the cold greeting's answers, or make it dear |
-| Personal standing is saved with the ship | It is under the ship's name in the save, like standing with a side. A ship that is renamed has no history with anybody |
+| Personal standing is saved with the ship | It is in the ship's record in the save, like standing with a side, and it stays with the ship when the ship is renamed |
 
 ## If something goes wrong
 

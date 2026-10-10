@@ -19,7 +19,7 @@ You change one line of `description.yaml`, rename a folder, and write a note.
 ## Before you start
 
 - Your `MyUniverse` mission as Lecture 8 left it, played at a table at least once.
-  (Lecture 9 is not written yet. Nothing here needs it.)
+  (Lecture 9 works in a copy and changes nothing here.)
 - `sbs lint MyUniverse` says `clean`.
 - You have done Class 1 Lecture 12. This lecture is that one again, for a universe, and
   it does not repeat the parts that are the same.
@@ -204,7 +204,8 @@ Four things about a campaign:
 
 1. Start it the same way every week. It continues where the crew stopped.
    Never choose New Game on the start screen. It replaces the save and does not ask.
-2. The ship's name is the crew's record. Do not change it between evenings.
+2. Leave the ship's name alone if you can. One ship renamed between evenings keeps
+   its record. Do not rename two in the same week.
 3. End each evening by jumping home, then close the game.
 4. After each evening, copy this file somewhere safe:
    data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml
@@ -221,8 +222,8 @@ Where each line of the note comes from:
 |---|---|
 | `sbs fetch "KestrelVerge" --update-libs` | Class 1 Lecture 12, on a second copy of the game, for a Class 1 mission. Not run again for this page. For a universe the line is the same, and the libraries it fetches include Open Universe's |
 | It continues where the crew stopped | Lecture 1 |
-| New Game replaces the save | Class 5 Lecture 2 |
-| The ship's name | Lecture 1 |
+| New Game replaces the save | Class 5 Lecture 2. The game keeps the replaced campaign once, beside the save, as a file ending `.previous.bak` (Lecture 2) |
+| The ship's name | Lecture 2: one renamed ship kept its standing and its jobs. That two renamed at once are not matched is from the game's own notes, and was not played |
 | Jump home, then close | Lecture 1 |
 | The save's name and place | Class 5 Lecture 2. It is named from the title, not the folder |
 | A new folder, the old save | Lecture 1: a save was continued after the universe file had been changed, with records added and words rewritten. The save file is in `common_data`, outside the mission folder |
@@ -238,8 +239,8 @@ all from Lecture 1.
 | Rule | Why |
 |---|---|
 | The title does not change. Not by a letter | A new title is a new, empty save |
-| Nothing the crew has met is deleted or renamed. You add | A deleted record comes back from their save. Renaming a key is deleting one record and adding another |
-| Act One's ending gets its `Then: reveal s06_go` line | That one line is what lets a save that finished Act One go on |
+| Nothing the crew has met is deleted or renamed. You add | Lecture 9 measured it. A step deleted while the crew is on it strands everything after it. A key renamed with no `Was:` line starts again as a new, hidden step |
+| Act Two is opened by a step the crew's save has not finished | A finished step does not reveal again, so `Then: reveal s06_go` on Act One's ending does nothing for a crew that has already finished it. Lecture 11, Steps 6 and 9, has the way that was played: a quiet step left open at the end of Act One, finished by an answer in Act Two. If your Act One is already out without one, give `s06_go` `Starts when: at once` |
 
 Change `Version 1` to `Act Two, version 1` in `description.yaml`, and send the folder.
 
@@ -265,7 +266,7 @@ The zip file is the way that was measured.
 | The game stops as it starts, for every mission | A hyphen in `description.yaml`. They delete the folder. You fix Step 2 |
 | `sbs doctor KestrelVerge` has a row that begins `!!  libraries` | The fetch line in the note was skipped. The row names the cure. Class 1 Lecture 12 |
 | The crew starts Act Two at evening 1 | The title changed, or the host chose New Game, or the save is on another computer |
-| The crew's standing is gone and the story is not | The ship's name changed |
+| The crew's standing is gone and the story is not | Two ships were renamed in the same week, so the game could not tell which record was whose. One renamed ship keeps its record |
 | The host knows the ending | They read `campaign.md`. Step 5 |
 
 ## Exercise
@@ -289,13 +290,13 @@ You are done when all five are true:
 - The zip has no `campaign.md`, no `playtest.md`, no `__docs__` and no save in it.
 - Your note tells the host about Continue, the ship's name, going home, and the copy of
   the save.
-- You know which one line you will add when Act Two is ready.
+- You know how Act Two will reach a crew that has finished Act One: Lecture 11, Step 9.
 
 ## Next
 
-Lecture 11 is the capstone: Act One built and played to its end, and Acts Two to Four
-outlined. It is not written yet. Everything it will ask of you is on your `campaign.md`
-already.
+Lecture 11 is the capstone: Act One built and played to its end across three evenings
+of your own, and Acts Two to Four outlined. Everything it asks of you is on your
+`campaign.md` already.
 
 ## Further reading
 

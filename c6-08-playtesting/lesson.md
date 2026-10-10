@@ -149,7 +149,7 @@ into your log.
 open `universe_save_the_kestrel_verge_1.yaml` in VS Code. Do not change it. It is a
 plain list of what the game remembers, and you can read it.
 
-Near the top, under the ship's name, is what the ship has earned:
+Near the top, under `players:` and the ship's own record, is what the ship has earned:
 
 ```
     reputation:
@@ -174,7 +174,8 @@ Further down, under `shared_quests:`, is every step of your story, with a `state
 
 ```
   s03_ask:
-    display_text: "The Long Count: The Plover's Price"
+    authored: true
+    state: 99
 ```
 
 | `state:` | The step is |
@@ -195,15 +196,17 @@ Under the ship's name, `quests:` holds the jobs the ship has taken, each with it
 
 **Keep a copy.** Copy the save file to your Documents folder and name it for the
 evening: `evening_01.yaml`. The game's start screen has a **New Game** choice that
-replaces the save without asking (Class 5 Lecture 2). A copy made every week is the only
-undo a campaign has. To go back to it, close the game, and copy it over the save under
-the save's own name.
+replaces the save without asking (Class 5 Lecture 2). The game keeps the campaign it
+replaced, once, in a file ending `.previous.bak` (Lecture 2). A copy made every week is
+the undo you can count on. To go back to it, close the game, and copy it over the save
+under the save's own name.
 
 *[Not tried: putting a copy back. What was measured is that the game reads whatever file
 has that name when it continues.]*
 
-The save has every step's text in it, the hidden ones too. It is the whole plot. Keep it
-where the crew does not look.
+The save has none of your story's words in it. A step is its key and a number. The keys
+are still yours, and a key like `s05_go` tells a curious host there is a fifth evening,
+so name keys as you would want them read.
 
 ## Step 4 - Compare, and change three things
 
@@ -329,9 +332,8 @@ You are done when all five are true:
 
 ## Next
 
-Lecture 9, on changing a universe while a crew is partway through it, is not written
-yet. Until it is, the rule from Lecture 1 holds: between evenings, add records, change
-words, and do not delete or rename what the crew has already met. Lecture 10 is how the
+Lecture 9 is about changing a universe while a crew is partway through it: what is safe,
+what is not, and how to rehearse a change on a copy of their save. Lecture 10 is how the
 finished thing reaches a crew that is not in your house.
 
 ## Further reading

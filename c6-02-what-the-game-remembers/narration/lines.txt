@@ -1,0 +1,91 @@
+s01_cold_open_0	Last time, the game remembered steps, standing and credits, and nothing else.
+s01_cold_open_1	If your story turned on something the crew found out,
+s01_cold_open_2	you had to fake it.
+s01_cold_open_3	Today the game learns to remember what the crew knows.
+s01_cold_open_4	And you'll see exactly where it writes that down.
+s02_what_a_fact_is_0	A fact is a few plain words that you choose.
+s02_what_a_fact_is_1	The Gleaners broke a boat.
+s02_what_a_fact_is_2	The crew either knows it, or doesn't.
+s02_what_a_fact_is_3	You write it where they learn it,
+s02_what_a_fact_is_4	and again wherever the story asks.
+s02_what_a_fact_is_5	There are two ways to learn.
+s02_what_a_fact_is_6	An answer in a hail, or finishing a step.
+s02_what_a_fact_is_7	And two ways to ask.
+s02_what_a_fact_is_8	On an answer, or on a line.
+s02_what_a_fact_is_9	A fact belongs to the whole game,
+s02_what_a_fact_is_10	and it doesn't move anybody's standing.
+s03_learned_by_finishing_a_step_0	First, a fact from a step.
+s03_learned_by_finishing_a_step_1	This is one of my old leads, the second colony.
+s03_learned_by_finishing_a_step_2	I add one line.
+s03_learned_by_finishing_a_step_3	Then, learn, and the words.
+s03_learned_by_finishing_a_step_4	Now here's the catch, and it's a real one.
+s03_learned_by_finishing_a_step_5	A step has one then line,
+s03_learned_by_finishing_a_step_6	and it does one thing.
+s03_learned_by_finishing_a_step_7	It reveals the next step, or it teaches a fact, but not both.
+s03_learned_by_finishing_a_step_8	So a step on your spine can't teach.
+s03_learned_by_finishing_a_step_9	Use a lead that stands alone, like this one.
+s04_learned_in_a_hail_0	Second, a fact from a hail.
+s04_learned_in_a_hail_1	The Gleaners get a new answer.
+s04_learned_in_a_hail_2	Ask what became of the boats.
+s04_learned_in_a_hail_3	After the semicolon, where a cost or a deed would go,
+s04_learned_in_a_hail_4	I write learn, and the fact.
+s04_learned_in_a_hail_5	And the answer needs somewhere to lead,
+s04_learned_in_a_hail_6	so I add their reply at the end of the file.
+s05_asking_what_they_know_0	Now the Compact asks.
+s05_asking_what_they_know_1	A new answer, report what the Gleaners said.
+s05_asking_what_they_know_2	And after it, if learned, and the same words.
+s05_asking_what_they_know_3	A crew that never asked the Gleaners never sees this answer.
+s05_asking_what_they_know_4	The reply has two lines.
+s05_asking_what_they_know_5	One for a crew that's been to the assay office,
+s05_asking_what_they_know_6	and one for a crew that hasn't.
+s05_asking_what_they_know_7	I guard both of them,
+s05_asking_what_they_know_8	because a line with no guard can always be said.
+s05_asking_what_they_know_9	I save, and lint says clean.
+s05_asking_what_they_know_10	And lint does read facts.
+s05_asking_what_they_know_11	Misspell one, and it tells you which.
+s06_play_it_0	Let's play it, then.
+s06_play_it_1	I pay the levy and take a job,
+s06_play_it_2	then I go to the breaking yard and ask about the boats.
+s06_play_it_3	Now I go home.
+s06_play_it_4	There's the new answer,
+s06_play_it_5	and the Compact gives me the first line.
+s06_play_it_6	Out to the second colony.
+s06_play_it_7	Nothing on the screen says I've learned anything.
+s06_play_it_8	A fact is silent until something asks for it.
+s06_play_it_9	Home once more, and I report again.
+s06_play_it_10	And now it's the second line.
+s07_stop_and_come_back_0	Now I close the game, all of it,
+s07_stop_and_come_back_1	and I start it again.
+s07_stop_and_come_back_2	The answer's still there,
+s07_stop_and_come_back_3	and the line is still the second one.
+s07_stop_and_come_back_4	The crew still knows both facts.
+s07_stop_and_come_back_5	Same system, same credits, same standing.
+s08_inside_the_save_0	Here's where it's kept.
+s08_inside_the_save_1	The last five lines of the save
+s08_inside_the_save_2	are what the crew knows.
+s08_inside_the_save_3	And look at a step of the story.
+s08_inside_the_save_4	A key, and a state.
+s08_inside_the_save_5	No title, and no text.
+s08_inside_the_save_6	I search for the name of my campaign,
+s08_inside_the_save_7	and it isn't in here.
+s08_inside_the_save_8	So the save isn't a spoiler.
+s08_inside_the_save_9	And when I change a step's words between evenings,
+s08_inside_the_save_10	the crew gets the new words.
+s09_slots_and_a_campaign_that_wa_0	There are two more things.
+s09_slots_and_a_campaign_that_wa_1	The number at the end of the save's name is its slot,
+s09_slots_and_a_campaign_that_wa_2	and there are six.
+s09_slots_and_a_campaign_that_wa_3	Each slot is its own campaign, in its own file.
+s09_slots_and_a_campaign_that_wa_4	So two tables can play one universe,
+s09_slots_and_a_campaign_that_wa_5	and you can keep a slot for your own walks.
+s09_slots_and_a_campaign_that_wa_6	And a campaign that's been won isn't a dead save.
+s09_slots_and_a_campaign_that_wa_7	Continue it, and the crew gets one card saying so.
+s09_slots_and_a_campaign_that_wa_8	Then they fly on.
+s10_your_turn_0	The whole list of what's kept is on the page,
+s10_your_turn_1	and every row of it was measured.
+s10_your_turn_2	Now it's your turn.
+s10_your_turn_3	Write one fact the crew learns by asking,
+s10_your_turn_4	and one they learn by going somewhere.
+s10_your_turn_5	Put an answer behind the first,
+s10_your_turn_6	at a station they can always get back to.
+s10_your_turn_7	Then stop the game, come back,
+s10_your_turn_8	and check they still know.

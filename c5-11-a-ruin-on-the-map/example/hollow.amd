@@ -1,0 +1,84 @@
+// The Hollow: a ruin for The Kestrel Verge. This file is the whole ruin: its rooms, its
+// way in, the slab across the Gallery door, and the one thing worth carrying out.
+// Class 4 teaches every line of it. The landmark in kestrel_verge.amd puts it on the map.
+
+# [The Hollow](hollow_file)
+
+## [Relics](relics)
+
+### [The Hollow](hollow)
+---
+Walls: rock
+Seed: 12
+Debris: 30
+Gaps: 0.2
+Atmosphere: purple
+---
+Older than the three colonies, and older than whoever charted them.
+
+### [The Mouth](mouth)
+---
+Relic: hollow
+Chamber: 0, 0, 0, 900
+---
+The way in. Wide, and worn smooth.
+
+### [The Nave](nave)
+---
+Relic: hollow
+Chamber: 3000, 0, 0, 1100
+Passage to: mouth 350
+---
+The big room. Whatever this place was for, it happened here.
+
+### [The Gallery](gallery)
+---
+Relic: hollow
+Box: 3000, 0, -1900, 600, 400, 800
+Passage to: nave 300
+Walls: blocks
+---
+A built room, with flat walls and real corners. Somebody added this later.
+
+### [The Way In](way_in)
+---
+Relic: hollow
+Point: 0, 0, -700
+Roles: entrance
+---
+Where a ship arrives. The name on the map sits here.
+
+### [The Gallery Door](gallery_door)
+---
+Relic: hollow
+Point: 3000, 0, -650
+Roles: gallery_door
+---
+The Nave side of the doorway into the Gallery. Where a crew member stands to cut.
+
+### [The Fallen Slab](slab)
+---
+Relic: hollow
+Barrier: 3000, 0, -1100, 320
+Clear with: beam
+---
+A slab of the Gallery's own wall, down across its doorway.
+
+### [The Niche](niche)
+---
+Relic: hollow
+Point: 3000, 0, -2500
+Roles: niche, relic_piece
+Item: stone_bowl
+---
+A recess at the back of the Gallery. A stone bowl sits in it.
+
+
+## [Items](items)
+
+### [The Stone Bowl](stone_bowl)
+---
+Type: item/quest
+Art: alien_small_2a
+---
+A shallow bowl of grey stone, worn by more hands than the Verge has ever held.

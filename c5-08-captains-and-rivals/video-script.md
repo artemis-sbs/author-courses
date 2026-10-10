@@ -8,6 +8,12 @@
 > game, and nobody has seen any of its screens.** A captain's card, face and color are
 > exactly what the stand-in cannot show: what was measured is what the game was asked
 > to send.
+>
+> **Checked again 2026-10-10 against the libraries released 2026-10-09.** Nothing has
+> changed for `Rival when:`. The released Open Universe library keeps the line with the
+> captain's record and no code reads it (read in the packaged library, not played
+> again). One row of the page did change: a renamed ship now keeps its personal
+> standing with a captain, because the save keeps a ship's record through a rename.
 
 The companion page is `lesson.md`; the finished file is in `example\`.
 

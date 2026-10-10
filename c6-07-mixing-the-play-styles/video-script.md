@@ -35,14 +35,16 @@ The companion page is `lesson.md`; the finished files are in `example\`.
    credits and leaves it at 20.
 5. A step of the spine with a clock: when the time ran out the step was Failed and its
    `Then: reveal` did nothing. With a `Penalty:` the credits were taken.
-6. A step that failed, with the game closed before any jump, was Active again after
-   Continue.
+6. Re-measured 2026-10-10 on the libraries released 2026-10-09: a step that failed, with
+   the game closed before any jump, was still Failed after Continue, with its penalty
+   paid. (It was Active again when this page was first written.) A running clock came
+   back with the time it had left.
 7. `Starts when: reach ...`, `Starts when: signal ...` and `Starts when: 10 seconds`
    on a Narrative step: lint `clean`, and the step never started.
 8. Every row of the tables in Step 6: 6 variants, each linted, 4 of them played.
 
 **Read in the plan for this course, not built:** the four styles in the second table of
-Step 1. Their lectures are not written.
+Step 1. Class 5 Lectures 11, 14 and 15 are written now. Lecture 10 is not.
 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 
@@ -110,8 +112,8 @@ crew can ask early, | and it won't count. So word them for that. ||"
 **Say:** "Now for the race. | A race is a step with a clock on it. ||| Before you put one on
 the spine, here's what I measured. || When the time ran out, the step failed. | And the
 next step was never revealed. ||| That's the campaign stopped, | in a save your crew has
-put ten weeks into. ||| So a clock never goes on the spine. || And a clock never runs
-across the end of an evening. ||"
+put ten weeks into. ||| So a clock never goes on the spine. || And closing the game
+doesn't undo a clock that ran out. ||"
 
 ### 7. A race that's safe
 

@@ -29,7 +29,9 @@ two landmarks.
 - The game closed, and the save deleted:
   `C:\Cosmos\data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml`.
 
-Lectures 10 and 11 are not written yet. This lecture does not need them.
+Lecture 10 is not written yet. Lecture 11 is, and this lecture does not need it. If you
+took it, your universe has a ruin in it: Lecture 11's section "What changes in later
+lectures" says what reads differently on this page.
 
 Words for this lecture:
 

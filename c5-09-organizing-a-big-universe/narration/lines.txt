@@ -30,9 +30,9 @@ s04_move_the_conversations_3	A captain's lines go with her side.
 s04_move_the_conversations_4	That's a habit, not a rule.
 s04_move_the_conversations_5	And here's rule two.
 s04_move_the_conversations_6	Three files, one line, with commas.
-s04_move_the_conversations_7	Don't give each file a line of its own.
-s04_move_the_conversations_8	If you do, the game reads only the last,
-s04_move_the_conversations_9	and lint doesn't say a word.
+s04_move_the_conversations_7	You'll also see a line for each file, one under another.
+s04_move_the_conversations_8	That works as well,
+s04_move_the_conversations_9	and the game reads every one of them.
 s05_three_warnings_that_are_wron_0	Now lint, and it's not clean.
 s05_three_warnings_that_are_wron_1	Three warnings, and they're all about one word.
 s05_three_warnings_that_are_wron_2	Remember the signal from Lecture Seven.

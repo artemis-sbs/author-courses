@@ -166,11 +166,17 @@ the chapter. They differ in what the Deepwell think afterward.
 The story moves on either way. The Deepwell remember which way. Put the deed in the
 answer, beside the signal.
 
-> **Not on the beat itself.** There is a line `Standing:` that a quest can carry, and a
-> reward can hold an `earns`, as Salvage's does. On a job, the reward's `earns` works.
-> On a beat in the Narrative or Goals chapter, neither reaches the ship today: the
-> score is kept for the story and no price, job or greeting ever reads it. Lecture 4
-> told you this in one row. It is why this step puts the deed in a conversation.
+> **A beat can carry a deed too.** A quest can have a line `Standing:`, and a reward can
+> hold an `earns`, as Salvage's does. On a beat in the Narrative or Goals chapter both
+> work, and both reach **every ship flying**, whoever finished the beat. Played with two
+> ships: `Standing: gleaners fearsome 70` on a beat left each of them at 40 with the
+> Gleaners, and `Reward: 200 credits, earns deepwell by-the-book 30` paid the 200 and
+> left each of them at 20 with the Deepwell.
+>
+> So there are two tools. A deed on the beat is the story's verdict: the same for
+> everybody, whichever way it was done. A deed in an answer is a choice: it goes to the
+> ship that gave the answer, and to no other. This step wants the crew to choose how
+> they ask, so its deeds are in the conversation.
 
 **Put `costs` first.** If the crew cannot pay, the answer is refused, and everything
 written after `costs` is skipped. A signal written in front of it would already have
@@ -254,8 +260,6 @@ Lint says `clean` for every one of these.
 | The mistake | What the game does |
 |---|---|
 | `Starts when: at once` on a middle chapter | It is in the Quest Log from the first minute. A crew that does it early wakes the chapter after it, and the story runs out of order |
-| `Standing: deepwell by-the-book 30` on a beat | The score is kept for the story. The ship's standing does not move |
-| A deed in a beat's reward: `Reward: 200 credits, earns deepwell by-the-book 30` | The credits are paid. The deed goes the same way as the row above |
 | A cost the crew cannot pay: `costs 900 credits` | The answer is refused. The chapter stays open until they can pay, or give the other answer |
 | `Win: true` | The game ends, won. The end-of-game screen shows the goal's name where your sentence would be |
 | No `Win:` line on the goal | The goal is done, and the game goes on |
@@ -308,7 +312,7 @@ Deepwell is 20 below where it was.
 | A hidden chapter cannot be finished | A crew that hails the Assay Office before finding the Tern can pay the fee and be told about forty crates, and the chapter is still hidden. They will have to ask again. Write the answer's words so that asking early makes sense, or accept it |
 | An answer can be given again | The fee can be paid a second time, and the deed happens a second time. The chapter pays its 200 once. This is Lecture 4's rule: a deed in talk needs a cost |
 | The story belongs to the whole game | With two ships, the chapter is done for both when either one does it, and its reward is paid to each side that has a ship, once |
-| A reward on a beat can be credits. It cannot be standing | Put standing in an answer, as in Step 3, or in a job's reward, as in Lecture 6 |
+| A beat can pay in standing as well as credits | `Standing:` on the beat, or `earns` in its `Reward:`, goes to every ship flying. A deed in an answer, as in Step 3, goes to the ship that answered |
 | `Win:` works on any quest in the Narrative or Goals chapter | A goal is a habit, not a rule. Keeping endings in a chapter of their own makes them easy to find |
 | A goal can be lost | Give it `Fails when: 20 minutes` and `Lose:` with a sentence. If the time runs out, the game ends, lost, with that sentence |
 | A new game has a new seed, and the same story | Your beats name places by their two numbers. Those places are landmarks and homes you wrote, so they are where the briefings say they are in every game |
@@ -323,7 +327,7 @@ Deepwell is 20 below where it was.
 | The crew paid the fee and The Assay Ledger is still open | The signal's word differs between the beat and the answer. Or there is no comma between `costs` and `signal` |
 | The crew paid the fee and nothing appeared | They asked before finding the Tern. The chapter was still hidden |
 | Pressing the fee answer leaves the same three buttons | The crew has fewer than 150 credits. The answer was refused |
-| A beat should have changed a side's standing, and did not | The deed is on the beat. Move it into an answer |
+| A beat should have changed a side's standing, and did not | The deed names a trait that side does not value, or its key is misspelled. Lecture 4, Step 5 |
 | The goal was done and the game did not end | It has no `Win:` line, or it says `Lose:` |
 | The card under VICTORY reads "The frontier is yours." | The goal has no `Citation:` |
 

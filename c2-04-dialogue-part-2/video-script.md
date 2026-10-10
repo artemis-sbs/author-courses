@@ -171,7 +171,7 @@ point of it. || Only a crew that took the job, and finished it, | ever hears thi
 scene that only one answer leads to, | or in a call that only comes later. ||| You'll see
 a third way in other pages, | a condition written on the answer itself. || Don't use it in
 this mission. || It can't read your quests or your credits, | so the answer would never be
-offered, | and lint can't tell. || We'll use it properly in Class 3. ||"
+offered, | and lint can't tell. || We'll use it properly in lecture six, | on a ship's standing. ||"
 
 ### 9. Play it
 

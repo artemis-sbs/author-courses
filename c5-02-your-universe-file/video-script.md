@@ -48,6 +48,8 @@ The companion page is `lesson.md`; the finished files are in `example\`.
    `tsn: 900`. A second start begins there with the run still Done. Engaging the charted
    Kestrel Relay brings the ship home, with both stations there.
 7. A start with **New Game** replaces the save: a new seed, home, 500 credits.
+   Re-measured 2026-10-10 on the released libraries: the replaced campaign is kept once
+   as `<save>.previous.bak`, and a start in slot 2 writes a second file ending `_2`.
 8. Every row of the four tables in Step 8: 46 variants, one change each, each linted and
    played.
 

@@ -96,8 +96,8 @@ dead end. ||"
 
 **Say:** "The act ends at home, with a big payment, | and a text that answers the act's
 question. ||| And it has no next step. || Act two isn't written, | so no new lead
-appears, and that's the truth. ||| When you have evening six, you add one line here. ||
-And the same save carries on. ||"
+appears, and that's the truth. ||| When you have evening six, you join it on here. ||
+The capstone shows how to do that for a crew that's already finished. ||"
 
 ### 6. Where the ending goes
 

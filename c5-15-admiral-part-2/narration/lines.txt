@@ -1,0 +1,91 @@
+s01_cold_open_0	Last time you wrote for the admiral's seat, in a lab.
+s01_cold_open_1	Today that seat comes home.
+s01_cold_open_2	Your universe gets a second way to play,
+s01_cold_open_3	right beside the bridge crew.
+s01_cold_open_4	And here's the part that matters most to a writer.
+s01_cold_open_5	If nobody wants that chair,
+s01_cold_open_6	the crew's evening doesn't change at all.
+s02_three_things_switch_it_on_0	A campaign has no admiral unless you ask for one.
+s02_three_things_switch_it_on_1	And you ask by writing chapters.
+s02_three_things_switch_it_on_2	Three things have to be true.
+s02_three_things_switch_it_on_3	The admiral's library is loaded.
+s02_three_things_switch_it_on_4	The mode is campaign, with an admiralty chapter in your own file.
+s02_three_things_switch_it_on_5	And there's a worldlets chapter with a world in it.
+s02_three_things_switch_it_on_6	I left each one out in turn, and played it.
+s02_three_things_switch_it_on_7	Every time, no console, no world, and empty pools.
+s02_three_things_switch_it_on_8	So the chapters are the switch.
+s03_the_library_and_the_mode_0	First, I look in one file I never edit.
+s03_the_library_and_the_mode_1	Story dot json is the list of libraries.
+s03_the_library_and_the_mode_2	The last two lines are the universe's own,
+s03_the_library_and_the_mode_3	and then the admiral's.
+s03_the_library_and_the_mode_4	If yours has both, leave it alone.
+s03_the_library_and_the_mode_5	That line does nothing by itself.
+s03_the_library_and_the_mode_6	Now for the mode.
+s03_the_library_and_the_mode_7	One word changes, from story to campaign.
+s03_the_library_and_the_mode_8	For the crew, that's all it is: a word.
+s04_the_chapters_come_home_0	Now the four chapters from the lab.
+s04_the_chapters_come_home_1	They go at the very end of the file,
+s04_the_chapters_come_home_2	so nothing above them moves.
+s04_the_chapters_come_home_3	There are two worlds:
+s04_the_chapters_come_home_4	Hollin Prime, which never runs dry, and the Lamp, which does.
+s04_the_chapters_come_home_5	An admiralty chapter with two dials.
+s04_the_chapters_come_home_6	One officer, Commodore Maren.
+s04_the_chapters_come_home_7	And a ladder of two research steps.
+s04_the_chapters_come_home_8	The Compact's home is the system every game starts in.
+s04_the_chapters_come_home_9	It still gets its world,
+s04_the_chapters_come_home_10	and it's the first one that says unlimited.
+s05_an_honest_number_0	Now, the numbers, and I'll be straight with you.
+s05_an_honest_number_1	I wrote nothing for starting ore,
+s05_an_honest_number_2	so the game used its own three hundred.
+s05_an_honest_number_3	And it started with three thousand six hundred.
+s05_an_honest_number_4	Part of that is the pace, which is yours to set.
+s05_an_honest_number_5	Most of it is a test setting the game's makers left on.
+s05_an_honest_number_6	It multiplies every stock and every yield by eight.
+s05_an_honest_number_7	Research isn't multiplied at all.
+s05_an_honest_number_8	So for now, the ladder is cheap and the tanks are huge.
+s05_an_honest_number_9	Don't balance anything yet.
+s05_an_honest_number_10	Just never start with less than a headquarters costs.
+s06_lint_0	I save, and I run lint.
+s06_lint_1	It's the same three warnings as before,
+s06_lint_2	on the same lines.
+s06_lint_3	The four chapters add none.
+s07_both_seats_filled_0	Now let's play it with both seats filled.
+s07_both_seats_filled_1	The admiral sees one world at home, and it's mine.
+s07_both_seats_filled_2	I build a headquarters.
+s07_both_seats_filled_3	It takes about half a minute.
+s07_both_seats_filled_4	Then an extractor, an academy, a shipyard and a lab.
+s07_both_seats_filled_5	The ore starts to climb.
+s07_both_seats_filled_6	The shipyard offers Commodore Maren,
+s07_both_seats_filled_7	and she brings three ships.
+s07_both_seats_filled_8	The lab offers my first step.
+s07_both_seats_filled_9	Forty seconds later, it's done,
+s07_both_seats_filled_10	and it offers the second.
+s07_both_seats_filled_11	And over on the bridge?
+s07_both_seats_filled_12	Five hundred credits, and three leads.
+s07_both_seats_filled_13	Nothing at all has changed.
+s08_the_empty_seat_0	Now the question you should ask first.
+s08_the_empty_seat_1	What does this cost a table that doesn't want an admiral?
+s08_the_empty_seat_2	So I walked the whole capstone evening,
+s08_the_empty_seat_3	with these chapters in the file and that chair empty.
+s08_the_empty_seat_4	Every row came out the same.
+s08_the_empty_seat_5	The world is there, as scenery.
+s08_the_empty_seat_6	The pools sit full, and never move.
+s08_the_empty_seat_7	So you can ship one universe to both kinds of table.
+s09_how_it_ends_and_what_comes_b_0	How does it end?
+s09_how_it_ends_and_what_comes_b_1	The admiral's game has no ending of its own here.
+s09_how_it_ends_and_what_comes_b_2	The campaign ends where your goals chapter says.
+s09_how_it_ends_and_what_comes_b_3	That's your win line.
+s09_how_it_ends_and_what_comes_b_4	And when I stop and continue?
+s09_how_it_ends_and_what_comes_b_5	The pools come back, to the last unit.
+s09_how_it_ends_and_what_comes_b_6	So do all five platforms,
+s09_how_it_ends_and_what_comes_b_7	the fleet, and the research.
+s09_how_it_ends_and_what_comes_b_8	Twenty seconds in, the extractor's working again.
+s10_your_turn_0	Now it's your turn.
+s10_your_turn_1	Write your own home world, two officers,
+s10_your_turn_2	and a ladder of three steps.
+s10_your_turn_3	Then take the admiral out, by changing one key,
+s10_your_turn_4	and check the crew's game is the same.
+s10_your_turn_5	Then put it back,
+s10_your_turn_6	and hand that chair to a friend.
+s10_your_turn_7	Next time is the capstone.
+s10_your_turn_8	It works with an admiral in the file, or without.

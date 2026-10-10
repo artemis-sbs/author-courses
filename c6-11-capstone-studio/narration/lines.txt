@@ -1,0 +1,99 @@
+s01_cold_open_0	This is the last lecture, and it teaches you nothing new.
+s01_cold_open_1	It's a studio, where you build, you play,
+s01_cold_open_2	and you write down what happened.
+s01_cold_open_3	By the end you'll have act one finished and walked,
+s01_cold_open_4	and the other three acts on a page.
+s02_the_plan_0	Three sittings, on one save.
+s02_the_plan_1	In the first, I play evenings one and two,
+s02_the_plan_2	on the file exactly as it stands.
+s02_the_plan_3	Then I stop, and I write evenings four and five.
+s02_the_plan_4	I do that on purpose,
+s02_the_plan_5	because it's how you'll write the other fifteen:
+s02_the_plan_6	with a crew already playing.
+s02_the_plan_7	Then two more sittings to finish the act.
+s03_sitting_one_0	Sitting one is a walk, as fast as I can go.
+s03_sitting_one_1	The levy, a job,
+s03_sitting_one_2	the Wren and home,
+s03_sitting_one_3	the Dunlin and home.
+s03_sitting_one_4	And here's where I stop.
+s03_sitting_one_5	The open step is three of five.
+s03_sitting_one_6	Four and five are still stubs,
+s03_sitting_one_7	and the crew can't see them yet.
+s03_sitting_one_8	I close the game.
+s04_write_evening_four_0	Now I write, with a game in progress.
+s04_write_evening_four_1	Evening four is one step that goes to the Petrel.
+s04_write_evening_four_2	I change where it leads,
+s04_write_evening_four_3	and I add an objective and a way home.
+s04_write_evening_four_4	Is that safe for the save?
+s04_write_evening_four_5	Yes, and I know why.
+s04_write_evening_four_6	The crew hasn't finished that step,
+s04_write_evening_four_7	so its new line will be read when they do.
+s04_write_evening_four_8	And the new steps are ahead of them, not behind.
+s05_write_evening_five_0	Evening five is a talk evening, in the Gleaners' yard.
+s05_write_evening_five_1	There are two answers,
+s05_write_evening_five_2	and either one finishes it.
+s05_write_evening_five_3	But this time they're held back.
+s05_write_evening_five_4	If learned, the Gleaners broke a boat.
+s05_write_evening_five_5	A crew that hails them cold won't see either answer.
+s05_write_evening_five_6	They have to ask the right question first.
+s05_write_evening_five_7	That's the fact from lecture two,
+s05_write_evening_five_8	doing a real job.
+s06_one_change_they_ll_notice_0	And one change to something the crew has already seen.
+s06_one_change_they_ll_notice_1	The step they're on had a placeholder for a title.
+s06_one_change_they_ll_notice_2	I change the title,
+s06_one_change_they_ll_notice_3	and I leave the key alone.
+s06_one_change_they_ll_notice_4	One more step, for act two to stand on.
+s06_one_change_they_ll_notice_5	It stays open when the act ends,
+s06_one_change_they_ll_notice_6	and act two will finish it.
+s06_one_change_they_ll_notice_7	I save, and I run lint.
+s06_one_change_they_ll_notice_8	One warning, and for once it's true.
+s06_one_change_they_ll_notice_9	Nothing sends that signal yet.
+s06_one_change_they_ll_notice_10	If it said a step is never revealed,
+s06_one_change_they_ll_notice_11	I'd stop right here and fix it.
+s07_sitting_two_0	Sitting two, and I don't delete the save.
+s07_sitting_two_1	The open step has its new name.
+s07_sitting_two_2	My words reached a game in progress.
+s07_sitting_two_3	Evening three is the assay office, and home.
+s07_sitting_two_4	Then comes evening four.
+s07_sitting_two_5	I arrive at the Petrel,
+s07_sitting_two_6	and there's the step I wrote an hour ago.
+s07_sitting_two_7	I scan her, and I go home.
+s07_sitting_two_8	Now five of five is waiting.
+s07_sitting_two_9	I close the game again.
+s08_sitting_three_0	And the last sitting.
+s08_sitting_three_1	At the yard, I hail the Gleaners.
+s08_sitting_three_2	There are four answers,
+s08_sitting_three_3	and neither of my new ones.
+s08_sitting_three_4	I ask what became of the boats,
+s08_sitting_three_5	and I hail again.
+s08_sitting_three_6	Now there are six.
+s08_sitting_three_7	I buy the log.
+s08_sitting_three_8	The step is done,
+s08_sitting_three_9	and the act's ending appears.
+s08_sitting_three_10	Home, and it pays.
+s08_sitting_three_11	Every line of the long count is done,
+s08_sitting_three_12	but the one that's waiting for act two.
+s09_the_other_three_acts_0	Now for the page.
+s09_the_other_three_acts_1	Act one's table says in full, all the way down.
+s09_the_other_three_acts_2	I write what I played:
+s09_the_other_three_acts_3	three sittings, with the credits and the open step each time.
+s09_the_other_three_acts_4	And then the other three acts.
+s09_the_other_three_acts_5	One table each, one row an evening.
+s09_the_other_three_acts_6	A title, a place, a style, and how it ends.
+s09_the_other_three_acts_7	I don't write a single record.
+s09_the_other_three_acts_8	There's one win in the whole campaign,
+s09_the_other_three_acts_9	and it's on evening twenty.
+s10_the_rubric_and_what_nobody_h_0	Mark yourself against the rubric.
+s10_the_rubric_and_what_nobody_h_1	And be honest, the way this page is.
+s10_the_rubric_and_what_nobody_h_2	Nobody has sat a crew down to this.
+s10_the_rubric_and_what_nobody_h_3	A script did the scanning and the fighting.
+s10_the_rubric_and_what_nobody_h_4	Every time on my sheets is a plan.
+s10_the_rubric_and_what_nobody_h_5	The last two points on the rubric are the ones that count.
+s10_the_rubric_and_what_nobody_h_6	A crew that isn't you plays evening one,
+s10_the_rubric_and_what_nobody_h_7	and you watch without helping.
+s11_close_0	And that's the course.
+s11_close_1	You have a universe, and a campaign with its first act played.
+s11_close_2	You have a plan for the rest,
+s11_close_3	and the habits to write it while a crew is playing.
+s11_close_4	So there's only one thing left to do.
+s11_close_5	Go and write evening six.

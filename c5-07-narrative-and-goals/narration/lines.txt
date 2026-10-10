@@ -46,14 +46,17 @@ s05_a_chapter_that_ends_in_a_cal_9	The other demands the page,
 s05_a_chapter_that_ends_in_a_cal_10	and they think worse.
 s05_a_chapter_that_ends_in_a_cal_11	That's how a beat shifts standing.
 s05_a_chapter_that_ends_in_a_cal_12	The deed goes in the answer, beside the signal.
-s06_why_not_on_the_beat_0	You might expect to write the deed on the beat itself.
-s06_why_not_on_the_beat_1	There is a line for it, and lint accepts it.
-s06_why_not_on_the_beat_2	But today, on a story beat, it doesn't reach the ship.
-s06_why_not_on_the_beat_3	The score is kept, and nothing ever reads it.
-s06_why_not_on_the_beat_4	So until that changes, remember one rule.
-s06_why_not_on_the_beat_5	A job's reward can earn standing.
-s06_why_not_on_the_beat_6	An answer can earn standing.
-s06_why_not_on_the_beat_7	A story beat can't.
+s06_on_the_beat_or_in_the_answer_0	You could write the deed on the beat itself.
+s06_on_the_beat_or_in_the_answer_1	There's a line for it, called standing,
+s06_on_the_beat_or_in_the_answer_2	and a beat's reward can hold one too.
+s06_on_the_beat_or_in_the_answer_3	A deed on the beat goes to every ship in the game,
+s06_on_the_beat_or_in_the_answer_4	whoever finished it, and whichever way.
+s06_on_the_beat_or_in_the_answer_5	A deed in an answer goes to the ship that gave the answer,
+s06_on_the_beat_or_in_the_answer_6	and to nobody else.
+s06_on_the_beat_or_in_the_answer_7	So ask yourself what you want.
+s06_on_the_beat_or_in_the_answer_8	If it's the story's verdict, put it on the beat.
+s06_on_the_beat_or_in_the_answer_9	If it's a choice, put it in the answer.
+s06_on_the_beat_or_in_the_answer_10	Here it's a choice.
 s07_the_last_page_0	A goal is a beat with one more line.
 s07_the_last_page_1	Win, and then a sentence.
 s07_the_last_page_2	When this quest is done, the game ends,

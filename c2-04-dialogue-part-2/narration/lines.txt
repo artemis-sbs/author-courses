@@ -77,7 +77,8 @@ s08_if_and_why_not_yet_5	Don't use it in this mission.
 s08_if_and_why_not_yet_6	It can't read your quests or your credits,
 s08_if_and_why_not_yet_7	so the answer would never be offered,
 s08_if_and_why_not_yet_8	and lint can't tell.
-s08_if_and_why_not_yet_9	We'll use it properly in Class 3.
+s08_if_and_why_not_yet_9	We'll use it properly in lecture six,
+s08_if_and_why_not_yet_10	on a ship's standing.
 s09_play_it_0	In we go, and here's her call.
 s09_play_it_1	She asks her question,
 s09_play_it_2	and now there are three answers in the list.

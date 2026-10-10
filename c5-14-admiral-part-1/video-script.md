@@ -2,9 +2,13 @@
 
 > **STATE ON 2026-10-09.** Written and measured against the released tools: `sbs` 0.13,
 > the published v1.4.0 libraries (sbs_utils `4941820e`, LegendaryMissions `b20726f`, the
-> two Open Universe libraries built 2026-10-08). **The headline of this lecture is a
-> fault: a universe made with `sbs create -t ou` cannot have an Admiral today.** That
-> was measured, and the page says so first. Everything else was measured in a copy of
+> two Open Universe libraries built 2026-10-08). **Re-measured 2026-10-10 on the
+> libraries released 2026-10-09: every one of the 51 one-change variants was linted and
+> played again, and the whole loop was played again.** Three things changed, and the
+> page now says so: a universe made with `sbs create -t ou` CAN have an Admiral (it is
+> Lecture 15); research `Costs:` and `Time:` lint clean, and `Time:` is seconds with or
+> without `Also: economy`; `Mode: campaign` has an Admiral when the file has its own
+> Admiralty and Worldlets chapters. Everything was measured in a copy of
 > the Open Universe mission, placed where its save cannot reach a player's own, in the
 > game's stand-in (the mock). The Admiral's console was never opened. A script made the
 > Admiral's camera the way the console does, selected worldlets and platforms through
@@ -27,25 +31,19 @@ it belongs in the `AdmiralLab` copy, not in `MyUniverse`.
 
 ## Confirm on camera
 
-**The fault, measured in the mock with `MyUniverse` as Lecture 13 leaves it:** with the
-Admiral's library on a line of its own in `story.json`, `Mode: sandbox`, and Worldlets,
-Admiralty, Officers and Research chapters in `kestrel_verge.amd`, the game runs 85
-labels of 620 with no error and an empty `mast.runtime.log`. The Admiral's functions are
-loaded. The game's own test for "is the Admiral's library here" answers no, the Admiral
-console's condition is false, and the home system has no worldlet.
-
 **In the mock, by script, in a copy of the Open Universe mission, with the page's own
 `skirmish_arena.amd`:**
 
 1. Lint of a whole copy of the mission: 13 `.amd` and 13 `.mast` files, two warnings,
-   neither in `skirmish_arena.amd`. With the page's changes: those two, and four that
-   say `Costs` and `Time` are not fields. With `Also: economy` added to a research
-   record those go, and the game reads its `Time: 40` as 2,400.
+   neither in `skirmish_arena.amd`. With the page's changes: the same two, and
+   `skirmish_arena.amd` is `clean`. With `Also: economy` added to a research record the
+   game still reads its `Time: 40` as 40.
 2. The Admiral is on (`skirmish`), the console's condition is true, and the home system
    holds one worldlet, Hollin Prime. Untouched, it was Haven World.
 3. The pools start at 6,000 ore, 1,200 gas and 480 crew, each able to hold 7,200.
-4. The worldlet is sent one button, `Build Headquarters (150 ore, 15 crew)`. Thirty-one
-   seconds after the press the Headquarters stands, and the worldlet is sent eight more
+4. The worldlet is sent one button, `Build Headquarters (150 ore, 15 crew)`. About
+   half a minute after the press the Headquarters stands (31 seconds when first
+   measured; between 33 and 35 on 2026-10-10), and the worldlet is sent eight more
    buttons, with the costs in the page's table.
 5. Extractor, Academy, Shipyard and Lab, started together: the Extractor stands inside
    30 seconds and all four inside 60. With the Extractor, ore rose 32 in 30 seconds and
@@ -89,20 +87,17 @@ crew, | one system at a time. ||| There's another seat in this game. || The Admi
 doesn't fly anything. || The Admiral looks down on a whole system, | builds on its
 worlds, and sends fleets out. ||| Today you write for that seat. ||"
 
-### 2. Where it runs today
+### 2. Two lectures, two folders
 
-**Screen:** The "Read this first" section of the page. Then `MyUniverse\story.json`
-with the Admiral's library line added, and the game starting with no Admiral console.
+**Screen:** The "Read this first" section of the page, and its table.
 
-**Say:** "And I have to start with some bad news, | because I'd rather you heard it
-from me. ||| The Admiral's game doesn't run in the universe you made in Lecture Two, |
-not as things stand today. ||| I did try it. || I added the Admiral's library, | I changed the mode, | and
-I wrote the chapters. || The game started, and nothing happened. || There was no
-console and no error. ||| That's a fault in how two libraries find each other, | and
-it's been reported. || It isn't something you can fix from your mission folder. ||| So
-today, we work where the Admiral does run, | which is inside the Open Universe mission
-itself. || And what you write there | is exactly what your own universe will take
-later. ||"
+**Say:** "Before we start, here's how this lecture and the next one fit together. |||
+Your own universe can have an admiral. || That's the next lecture. ||| Today we work
+somewhere else, on purpose. || The Open Universe mission holds a small universe | that
+is nothing but an admiral's game. || Three kinds of world, six officers, and no story
+to keep track of. ||| It's the best place to learn what each line does. || So we make
+a copy of it, and we change the copy. ||| And what you write there today | is exactly
+what goes into your own universe next time. ||"
 
 ### 3. Make the lab
 
@@ -170,11 +165,10 @@ the day a crew talks to her. ||"
 **Say:** "The arena has no research, so I'm adding the chapter. || There are two steps.
 || Each one has a cost, a time in seconds, | and what it unlocks. || The second one
 requires the first, | and that's what makes it a ladder. ||| Now I run lint. || Two
-warnings were there before I started. || And there are four new ones, | saying the game
-doesn't read my costs or my times. || It does read them. | I watched it take the ore,
-and the forty seconds. ||| There's a line that makes those warnings go away, | and I'm
-asking you not to write it. || It quietly turns forty seconds into forty minutes. ||
-So for today, six warnings is what done looks like. ||"
+warnings were there before I started, | in files I never touched. || And that's all
+there is. | My own file says clean. ||| One small thing about time. || It's a plain
+number of seconds. | Forty means forty seconds. ||| So for today, those two old
+warnings are what done looks like. ||"
 
 ### 9. Play it
 
@@ -190,9 +184,10 @@ my first step, | and then, once that's done, my second. ||"
 
 ### 10. Your turn
 
-**Screen:** The "What your own universe will need" table. Then the exercise.
+**Screen:** The "Taking it to your own universe" table. Then the exercise.
 
 **Say:** "Now it's your turn. || In the lab, write the world your own side starts
-on, | then two officers, and a ladder of three steps. ||| Keep them there for now. || When
-the fault is mended, | it's three small moves to bring them home, | and they're on the
-page. ||| The lecture after this one isn't ready yet, | so go on to the capstone. ||"
+on, | then two officers, and a ladder of three steps. ||| Write them for your own
+universe, | because that's where they're going. || It's three small moves to bring
+them home, | and they're on the page. ||| The next lecture makes those moves, | and
+puts an admiral beside your bridge crew. ||"

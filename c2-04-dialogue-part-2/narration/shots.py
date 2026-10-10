@@ -135,7 +135,7 @@ SHOTS = [
     {
         "id": "s08_if_and_why_not_yet",
         "title": 'If, and why not yet',
-        "frames": 1282,
+        "frames": 1348,
         "captions": [
             ("So that's two ways to make an answer depend on the story.", 0, 157),
             ('You put it in a scene that only one answer leads to,', 184, 340),
@@ -146,9 +146,10 @@ SHOTS = [
             ("It can't read your quests or your credits,", 853, 958),
             ('so the answer would never be offered,', 971, 1062),
             ("and lint can't tell.", 1076, 1128),
-            ("We'll use it properly in Class 3.", 1155, 1246),
+            ("We'll use it properly in lecture six,", 1155, 1246),
+            ("on a ship's standing.", 1260, 1312),
         ],
-        "pauses": [0.9, 0.45, 1.8, 0.45, 0.9, 0.9, 0.45, 0.45, 0.9, 1.2],
+        "pauses": [0.9, 0.45, 1.8, 0.45, 0.9, 0.9, 0.45, 0.45, 0.9, 0.45, 1.2],
     },
     {
         "id": "s09_play_it",

@@ -42,8 +42,11 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 6. `sbs docs` writes the four files named on the page. `sbs site` writes seven pages and
    indexes 67 records. With `--profile player` the conversation pages have no `earns` in
    them. The bible lists The Assay Ledger as reached from Deepwell Hail, by signal.
-7. Every row of the two tables in Step 8: 46 variants linted, 22 of them played. Three
-   `File:` lines in the Dialogue chapter leave only the Gleaners' eight records.
+7. Every row of the two tables in Step 8: 46 variants linted, 22 of them played.
+   Re-measured 2026-10-10 on the released libraries: three `File:` lines in the Dialogue
+   chapter are all read (a Hail button at Hollin's, the Deepwell's and the Gleaners'
+   stations). When this page was first written only the last was. The three
+   `ledger_read` warnings are still exactly three.
 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 
@@ -100,8 +103,8 @@ in each. The Dialogue chapter's fence with three names on one line.
 **Say:** "Dialogue is the big one, with twenty records. || I'm sorting them by who's
 speaking, | one file for each side, in a folder. ||| A captain's lines go with her
 side. || That's a habit, not a rule. ||| And here's rule two. || Three files, one line,
-with commas. ||| Don't give each file a line of its own. || If you do, the game reads
-only the last, | and lint doesn't say a word. ||"
+with commas. ||| You'll also see a line for each file, one under another. || That
+works as well, | and the game reads every one of them. ||"
 
 ### 5. Three warnings that are wrong
 

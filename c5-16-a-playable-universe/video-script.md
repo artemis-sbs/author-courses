@@ -4,6 +4,9 @@
 > the published v1.4.0 libraries (sbs_utils `4941820e`, LegendaryMissions `b20726f`, the
 > Open Universe engine library built 2026-10-08). The whole session on the page was
 > walked by script in the game's stand-in (the mock), in two runs with the save kept
+> (and walked again on 2026-10-10 on the libraries released 2026-10-09, with Lecture
+> 15's `Mode: campaign` and four chapters in the file and nobody in the Admiral's seat:
+> every probe line the same but the raiders' names)
 > between them, from a copy of the mission placed where its save cannot reach a
 > player's own. The script selected stations, pressed Comms buttons by their text, sent
 > the Quest Log's Engage for each lead, and told the game "the ship destroyed this" four
@@ -142,10 +145,10 @@ the page.
 
 **Say:** "There are three things to read afterward. || The runtime log, which should be
 empty. || Your ticks, every one of them. || And your standings, which should match the page. ||| And then
-there's one more table, | the things this universe doesn't do yet. || It has no admiral
-of its own. || A story beat can't move standing. || Lint has three warnings that are
-wrong. ||| None of those is your mistake. || But a writer who knows them | writes
-around them, and that's why they're on the page. ||"
+there's one more table, | the things this universe doesn't do yet. || An admiral's
+numbers can't be balanced yet. || A captain can't be made a rival with one line. || Lint
+has three warnings that are wrong. ||| None of those is your mistake. || But a writer
+who knows them | writes around them, and that's why they're on the page. ||"
 
 ### 9. Your turn
 

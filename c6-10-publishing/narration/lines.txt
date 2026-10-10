@@ -61,7 +61,7 @@ s08_the_note_1	The setup's the same three commands as before.
 s08_the_note_2	Then four things only a campaign needs.
 s08_the_note_3	Start it the same way every week,
 s08_the_note_4	and never choose new game.
-s08_the_note_5	Don't rename the ship.
+s08_the_note_5	Leave the ship's name alone if you can.
 s08_the_note_6	End each evening by jumping home.
 s08_the_note_7	And copy the save file somewhere safe, every week.
 s08_the_note_8	The note gives its name, and where it lives.
@@ -70,8 +70,8 @@ s09_act_two_1	and there are three rules.
 s09_act_two_2	The title doesn't change, not by a letter.
 s09_act_two_3	Nothing the crew has met is deleted or renamed,
 s09_act_two_4	because you only ever add.
-s09_act_two_5	And act one's ending gets its one new line,
-s09_act_two_6	the one that shows the first lead of act two.
+s09_act_two_5	And act two has to be opened by a step they haven't finished yet.
+s09_act_two_6	The capstone shows you how.
 s09_act_two_7	The host swaps the folder.
 s09_act_two_8	The save isn't in it,
 s09_act_two_9	so the crew carries on.

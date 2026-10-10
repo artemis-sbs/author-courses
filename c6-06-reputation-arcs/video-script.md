@@ -35,7 +35,9 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 6. A tier 2 job finished at 40 took the ship to 50. Sold at 50, the ship stood at 27.
 7. `Reward: ..., earns hollin honest 20, earns hollin generous 20` on a Narrative step:
    credits paid, the ship's standing unchanged, the scores kept on the shared story.
-8. Standing is under the ship's name in the save, and was 0 for a renamed ship.
+8. Standing is in the ship's record in the save. Re-measured 2026-10-10 on the released
+   libraries: a renamed ship kept its standing and its jobs (it was 0 when this page was
+   first written).
 9. Every row of the tables in Step 6: 6 variants, each linted, 5 of them played.
 
 **Read from Class 5 Lecture 4, not run again:** the thresholds 20, 30, 50 and 60, and
@@ -119,7 +121,7 @@ went cold, the manifest was gone, | and so was the better work. ||"
 standing you expect, | and the door you expect to open. ||| The numbers are a guess, and
 the crew won't follow them. || What matters is the last column. ||| For each door,
 you've named an evening, | and you can check the price against the wages. || Too cheap,
-and it opens on night one. | Too dear, and it never does. ||| And remember where all of this is kept. | It's under the ship's name, in the save. ||"
+and it opens on night one. | Too dear, and it never does. ||| And remember where all of this is kept. | It's in the ship's own record, in the save. ||"
 
 ### 8. Lint and play
 
@@ -138,5 +140,5 @@ again. ||"
 **Screen:** The table "What you need to know about an arc".
 
 **Say:** "So you price standing, you don't award it. ||| Every answer that earns it gets
-a cost. || And all of it lives under the ship's name, | so the ship keeps its name. |||
+a cost. || And all of it lives in the ship's record, | which the save carries from week to week. |||
 Next time, we look at the act from the crew's side of the table. ||"

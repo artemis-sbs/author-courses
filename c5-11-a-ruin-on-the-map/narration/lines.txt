@@ -1,0 +1,91 @@
+s01_cold_open_0	Every place in your universe so far
+s01_cold_open_1	is somewhere the crew looks at from the bridge.
+s01_cold_open_2	This one they fly into.
+s01_cold_open_3	And then one of them gets out.
+s01_cold_open_4	By the end of this lecture
+s01_cold_open_5	your universe has a ruin in it,
+s01_cold_open_6	and a story that runs through its rooms.
+s02_what_a_universe_needs_of_a_r_0	Writing a ruin is a whole class of its own.
+s02_what_a_universe_needs_of_a_r_1	So today I'm handing you one, finished.
+s02_what_a_universe_needs_of_a_r_2	What we're learning is how a universe holds it.
+s02_what_a_universe_needs_of_a_r_3	A ruin in a universe never says where it is.
+s02_what_a_universe_needs_of_a_r_4	The landmark says that.
+s02_what_a_universe_needs_of_a_r_5	It needs one place marked as its entrance.
+s02_what_a_universe_needs_of_a_r_6	And it needs two keys.
+s02_what_a_universe_needs_of_a_r_7	One on the thing that blocks the way,
+s02_what_a_universe_needs_of_a_r_8	and one on the ruin itself.
+s03_the_ruin_s_file_0	A new file, called hollow.
+s03_the_ruin_s_file_1	I paste the whole ruin in.
+s03_the_ruin_s_file_2	Don't read every line, just read its shape.
+s03_the_ruin_s_file_3	Three rooms, joined by passages,
+s03_the_ruin_s_file_4	and one way in.
+s03_the_ruin_s_file_5	A slab, fallen across one doorway.
+s03_the_ruin_s_file_6	And behind the slab, a niche with a stone bowl in it.
+s03_the_ruin_s_file_7	The bowl is an item,
+s03_the_ruin_s_file_8	and it lives in this file with the ruin.
+s04_the_landmark_0	Now the landmark, in the universe file.
+s04_the_landmark_1	It's a landmark like any other,
+s04_the_landmark_2	with two more lines.
+s04_the_landmark_3	Relic, and the ruin's key.
+s04_the_landmark_4	Relic file, and the name of the file.
+s04_the_landmark_5	That's the whole join.
+s04_the_landmark_6	And there's no terrain line,
+s04_the_landmark_7	because a ruin brings its own cloud.
+s05_three_steps_of_story_0	And now the story.
+s05_three_steps_of_story_1	A lead that takes the crew there.
+s05_three_steps_of_story_2	A step that's done when the slab is cut.
+s05_three_steps_of_story_3	And a step that's done when the bowl is taken.
+s05_three_steps_of_story_4	Look at those two signals.
+s05_three_steps_of_story_5	I didn't make them up,
+s05_three_steps_of_story_6	and nothing in my files sends them,
+s05_three_steps_of_story_7	because the game does.
+s05_three_steps_of_story_8	It builds each word from a key in the ruin's file.
+s05_three_steps_of_story_9	Slab, then opened, and hollow, then taken.
+s06_lint_0	I run lint, and it has five warnings.
+s06_lint_1	Three are old friends.
+s06_lint_2	The two new ones say nothing sends my signals.
+s06_lint_3	That's wrong, in the same way the old three are wrong.
+s06_lint_4	Lint doesn't look in the ruin's file.
+s06_lint_5	So those two words are mine to check, every single time.
+s07_play_it_0	Let's go in, then.
+s07_play_it_1	There's a fourth lead in the quest log,
+s07_play_it_2	and I engage it.
+s07_play_it_3	The Hollow is charted,
+s07_play_it_4	and the next step appears.
+s07_play_it_5	I bring the ship up to the way in.
+s07_play_it_6	And now a handheld has something new on it.
+s07_play_it_7	It says suit up.
+s07_play_it_8	So out I go.
+s07_play_it_9	The suit knows two places,
+s07_play_it_10	the gallery door and the niche.
+s07_play_it_11	At the door, the slab is a target.
+s07_play_it_12	I cut it, and that takes twelve seconds.
+s07_play_it_13	The step is done, and paid.
+s07_play_it_14	Then on to the niche.
+s07_play_it_15	The bowl comes with me,
+s07_play_it_16	and that's the last step.
+s08_an_honest_word_0	I have to be honest about what you just saw.
+s08_an_honest_word_1	When I checked this page, a script flew all of it,
+s08_an_honest_word_2	and nobody was watching a screen.
+s08_an_honest_word_3	And the exosuit has one known fault.
+s08_an_honest_word_4	A console can close the first time it meets one mid-game.
+s08_an_honest_word_5	It's reported, and it isn't your file.
+s08_an_honest_word_6	The way round it is on the page.
+s09_the_ruin_remembers_0	Now the part that makes a ruin fit a campaign.
+s09_the_ruin_remembers_1	I go home, and I come back.
+s09_the_ruin_remembers_2	The game rebuilt the whole place.
+s09_the_ruin_remembers_3	And the slab's still cut.
+s09_the_ruin_remembers_4	The bowl's still gone,
+s09_the_ruin_remembers_5	and nobody paid me twice.
+s09_the_ruin_remembers_6	Now I close the game, and continue,
+s09_the_ruin_remembers_7	and it's the same again.
+s09_the_ruin_remembers_8	And here it is in the save.
+s09_the_ruin_remembers_9	The ruin, what was opened, and what was taken.
+s10_your_turn_0	One note before you go on.
+s10_your_turn_1	The battle lectures were written for a universe with no ruin.
+s10_your_turn_2	So three small things read differently there,
+s10_your_turn_3	and they're listed on the page.
+s10_your_turn_4	Now it's your turn.
+s10_your_turn_5	Give The Hollow your own name and your own words.
+s10_your_turn_6	Play it to the bowl.
+s10_your_turn_7	Go home, come back, and look at that slab.

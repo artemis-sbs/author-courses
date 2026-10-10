@@ -58,7 +58,7 @@ SHOTS = [
     {
         "id": "s04_move_the_conversations",
         "title": 'Move the conversations',
-        "frames": 1233,
+        "frames": 1220,
         "captions": [
             ('Dialogue is the big one, with twenty records.', 0, 104),
             ("I'm sorting them by who's speaking,", 131, 210),
@@ -67,9 +67,9 @@ SHOTS = [
             ("That's a habit, not a rule.", 500, 578),
             ("And here's rule two.", 632, 684),
             ('Three files, one line, with commas.', 711, 789),
-            ("Don't give each file a line of its own.", 843, 961),
-            ('If you do, the game reads only the last,', 988, 1105),
-            ("and lint doesn't say a word.", 1119, 1197),
+            ("You'll also see a line for each file, one under another.", 843, 987),
+            ('That works as well,', 1014, 1066),
+            ('and the game reads every one of them.', 1080, 1184),
         ],
         "pauses": [0.9, 0.45, 1.8, 0.9, 1.8, 0.9, 1.8, 0.9, 0.45, 1.2],
     },

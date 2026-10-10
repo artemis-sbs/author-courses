@@ -9,35 +9,32 @@ and two steps of research, and you will know what each line does because every n
 this page was read out of the running game.
 
 You will do it in a copy of the Open Universe mission, and not in `MyUniverse`. The
-next section says why. It is the most important thing on the page.
+copy holds a finished Admiral's game to read and to change. Lecture 15 then carries your
+four chapters into `MyUniverse`. The next section says how the two lectures fit.
 
 *[Screenshot to add: the Admiral console looking down on a system, a worldlet selected
 and the button "Build Headquarters (150 ore, 15 crew)".]*
 
-## Read this first: where the Admiral runs today
+## Read this first: two lectures, two folders
 
-**The Admiral's game does not run in a universe made with `sbs create -t ou`.** Not yet.
+**Your own universe can have an Admiral.** When this page was first written it could
+not: the Admiral's game ran only inside the Open Universe mission's own folder. That is
+mended, and Lecture 15 does it in `MyUniverse`.
 
-It was tried, with `MyUniverse` as Lecture 13 left it and the three things the game's
-own guide says to do:
+This lecture still works in a copy of the Open Universe mission, on purpose. The copy
+holds a small universe, Skirmish - The Broken Accord, that is nothing but an Admiral's
+game: three kinds of world, six officers, and no story to keep track of. It is the best
+place to learn what each line does. Everything you write today is four chapters of AMD,
+and they are the same four chapters Lecture 15 puts beside your bridge crew.
 
-1. the Admiral's library added to `story.json`,
-2. `Mode: story` changed to `Mode: sandbox`,
-3. a Worldlets chapter and an Admiralty chapter written into `kestrel_verge.amd`.
+| | This lecture | Lecture 15 |
+|---|---|---|
+| Folder | `AdmiralLab`, a copy of `OpenUniverse` | `MyUniverse` |
+| `Mode:` | `skirmish` | `campaign` |
+| Who plays | An Admiral | A bridge crew, with an Admiral beside them or with that seat empty |
+| You learn | What a world, a dial, an officer and a step of research do | How to switch the Admiral on in your own universe, and what it costs the crew |
 
-The game started. The library was loaded. And nothing else happened: no Admiral console
-was offered, no world was put in the home system, no error was shown, and
-`mast.runtime.log` was empty. The rest of the universe played as before.
-
-The cause is in how the two libraries find each other, and it is not something a writer
-can fix from a mission folder. It is reported to the game's makers. Today the Admiral
-runs in one place: inside the Open Universe mission's own folder, where its two halves
-sit side by side.
-
-So this lecture works there, in a copy. Everything you write today is four chapters of
-AMD, and they are the same four chapters your own universe will take when the fault is
-mended. Nothing you learn here is thrown away. Do not add the Admiral's library to
-`MyUniverse` today. It does nothing there.
+Leave `MyUniverse` alone today.
 
 ## The video
 
@@ -83,7 +80,7 @@ own.
 | The Admiral | What happens |
 |---|---|
 | Selects the worldlet in the home system | One button: **Build Headquarters (150 ore, 15 crew)** |
-| Presses it | "Construction started: Headquarters." The cost leaves the pools at once. Thirty seconds later: "Headquarters complete." |
+| Presses it | "Construction started: Headquarters." The cost leaves the pools at once. About half a minute later the Headquarters stands |
 | Selects the worldlet again | Eight more platforms are on offer |
 | Builds an Extractor | Twenty seconds. Then the worldlet's `Yields:` start to arrive in the pools |
 | Builds an Academy and a Shipyard, then selects the Shipyard | One button for each officer: **Commission Commodore Ansel Vale - the Quartermaster** |
@@ -133,7 +130,7 @@ There is no Research chapter. You will add one.
 | `sandbox` | Yes. The pace is `standard` |
 | No `Mode:` line at all | Yes. The game takes it as `sandbox` |
 | `story` | No. No console, no worldlet at home, and the pools are empty |
-| `campaign` | No, the same |
+| `campaign` | Yes, in this file. A `campaign` has an Admiral when the file has its own Admiralty chapter and a Worldlets chapter, and the arena has both. The pace is `epic`. Lecture 15 is about this row |
 
 ## Step 4 - A world of your own
 
@@ -155,7 +152,7 @@ The world the Compact farms. People, a little industry, and somewhere to come ho
 
 | Line | What it means |
 |---|---|
-| `Also: economy` | This record yields something. Without the line, lint does not know `Yields:` and `Reserve:`. Write it on a world. Never on a research step: see Step 7 |
+| `Also: economy` | This record yields something. Without the line, lint does not know `Yields:` and `Reserve:`. Write it on a world. A research step does not need it: see Step 7 |
 | `Yields:` | What one Extractor here brings in each minute. Three things can be yielded: `ore`, `gas` and `crew` |
 | `Reserve:` | How much there is before the world runs dry. `unlimited` never runs dry |
 | `Palette:` | How the world is painted: a `base` color, a `clouds` color, and for a striped giant, `bands` and a number |
@@ -204,8 +201,8 @@ ore a minute, and an Extractor there brought in 64.
 
 Two things multiply them. `Mode: skirmish` sets the pace to `brisk`, which is fair. And
 the game's makers left a test setting on that runs every Admiral's economy eight times
-fast, so that they could watch it work. That one is theirs to turn off, and it is why
-Lecture 15 is not written yet.
+fast, so that they could watch it work. That one is theirs to turn off. It is still on,
+and Lecture 15 gives the same table for a `campaign`.
 
 | You write | Multiplied by, in this lab |
 |---|---|
@@ -304,10 +301,11 @@ What happened when it was played:
 Starting research needs a Shipyard as well as a Lab. That was read in the game's own
 notes; every game played for this page had both.
 
-**Do not write `Also: economy` in a research record.** It looks like the cure for the
-four warnings in Step 8, and it does quiet them. It also changes what `Time:` means.
-With that line, `Time: 40` was read as 2,400 seconds: forty minutes, not forty seconds.
-Leave the line out, and live with the warnings.
+**A research record needs no `Also: economy` line.** `Costs:` and `Time:` are a research
+step's own fields, and lint knows them. `Time:` is a plain number of seconds, with that
+line or without it: `Time: 40` was read as 40 both ways. (When this page was first
+written lint warned about both fields, and the line that quieted the warnings also
+turned forty seconds into forty minutes. Both are mended.)
 
 ## Step 8 - Check it
 
@@ -341,24 +339,16 @@ sbs lint AdmiralLab
 == silver_reach.amd ==
   clean
 == skirmish_arena.amd ==
-  [WARNING] line 187:1: `Costs` is not a field a item has, so nothing reads this line. Did you mean `Consoles`? (unknown-field)
-  [WARNING] line 188:1: `Time` is not a field a item has, so nothing reads this line. Did you mean `Tier`? (unknown-field)
-  [WARNING] line 196:1: `Costs` is not a field a item has, so nothing reads this line. Did you mean `Consoles`? (unknown-field)
-  [WARNING] line 197:1: `Time` is not a field a item has, so nothing reads this line. Did you mean `Tier`? (unknown-field)
+  clean
 
-13 amd + 13 mast file(s): 0 error(s), 6 warning(s)
+13 amd + 13 mast file(s): 0 error(s), 2 warning(s)
 ```
 
-Six warnings. Two were there before you changed anything, in files of the Open Universe
-mission that you did not touch. Before your changes the last lines read
-`skirmish_arena.amd`, `clean`, and `0 error(s), 2 warning(s)`.
+Two warnings, and neither is yours. Both were there before you changed anything, in
+files of the Open Universe mission that you did not touch. Your own file,
+`skirmish_arena.amd`, says `clean`.
 
-The other four are yours, and they are wrong. Lint says `Costs` and `Time` are not
-fields, and that nothing reads them. The game read both: Deeper Silos took 120 ore and
-40 gas, and forty seconds. Your line numbers will differ if you wrote more.
-
-> **For this lecture, your checkpoint is those six warnings and no others**: the two old
-> ones, and one `Costs` and one `Time` for each step of research you wrote.
+> **For this lecture, your checkpoint is those two warnings and no others.**
 
 Each row below was made on purpose, one change to the finished file, then linted, then
 played.
@@ -373,13 +363,14 @@ played.
 | Two worlds with the same key | The second replaces the first | A warning: "is the key of 2 records in the same place" (`duplicate-key`) |
 | `Comand points: 2` | Ignored. The game's own number, 3, stands | A warning: "Did you mean `Command_points`?" (`unknown-field`). Write it with a space |
 | `Mode: skirmsh` | The game takes it as `sandbox`: there is an Admiral, at the `standard` pace | A warning: "is not a valid map value (story/sandbox/skirmish/war/campaign)" (`unknown-enum-value`) |
+| `Economy pace: fast`, or any word that is not one of the three | Taken as `standard` | A warning: "`Economy pace: fast` is not a valid map value (brisk/standard/epic)" (`unknown-enum-value`) |
 | `Scene: maren_hail` on an officer, with no such conversation | She is commissioned as usual | A warning: "Scene points at `maren_hail`, which is not a defined node" (`dangling-scene`) |
 | An officer written with two hashes | The Shipyard offers no officers at all | Warnings on every officer after her: "this record is being read as a map" (`unknown-field`) |
-| `## [Research](tech)` | The Lab offers nothing | A warning on each `Branch:`, `Requires:` and `Unlocks:` line: "this record is being read as a map" (`unknown-field`) |
+| `## [Research](tech)` | The Lab offers nothing | A warning on every line of each step's fence: "this record is being read as a map because of where it sits (under `tech`)" (`unknown-field`) |
 
 **Mistakes lint cannot see**
 
-Lint gives the same six warnings and nothing else for every one of these.
+Lint gives the same two warnings and nothing else for every one of these.
 
 | The mistake | What the game does |
 |---|---|
@@ -395,7 +386,6 @@ Lint gives the same six warnings and nothing else for every one of these.
 | `Start ore: plenty` | The game stops with an error as it starts |
 | `Start ore: 500` written in the Scenario chapter and not the Admiralty chapter | Ignored. The pool starts from the game's own 300 |
 | `Command points: 0` | No fleet can ever be commissioned: "No command points free." |
-| `Economy pace: fast`, or any word that is not one of the three | Taken as `standard` |
 | No Admiralty chapter at all | There is still an Admiral. Every dial is the game's own, and only home has a worldlet |
 | `Mode: Skirmish`, with a capital | Works as `skirmish` |
 | `Values: by-the-buk 40` on an officer | The trait is kept as written and does nothing. No bonus |
@@ -412,7 +402,6 @@ Lint gives the same six warnings and nothing else for every one of these.
 | `Time: forty` | The game stops with an error when the step is started |
 | No `Time:` line | Thirty seconds |
 | No `Branch:` line | The button reads `[general]` |
-| `Also: economy` in a research record | Lint goes quiet about that record, and `Time: 40` becomes 2,400 seconds |
 
 Two things that look wrong and are not:
 
@@ -420,6 +409,7 @@ Two things that look wrong and are not:
 |---|---|
 | `Values: by_the_book 40`, with underscores | Works. Hyphens and underscores are the same here |
 | `Unlocks: extraction 25`, with no percent sign | Works, as 25 percent |
+| `Also: economy` in a research record | Works. `Time: 40` is still 40 seconds, and lint says nothing |
 
 So check these by eye:
 
@@ -464,29 +454,28 @@ change that window's console to **Admiral**.
 | Home's world is the first one with `Reserve: unlimited` | Put the world you want the Admiral to start on first |
 | An officer's `Values:` are Lecture 4's traits | Three of them change a fleet. The rest are who she is |
 | A fleet is always the same three ships, on the Admiral's own side | An Admiral for the Hollin Compact would still fly these hulls today |
-| `Mode:` turns the Admiral on and off | `story` and `campaign` have no Admiral, whatever chapters are in the file |
+| `Mode:` turns the Admiral on and off | `story` never has an Admiral, whatever chapters are in the file. `campaign` has one when the file has its own Admiralty and Worldlets chapters |
 | The economy is multiplied today | Do not balance it yet |
 
-## What your own universe will need
+## Taking it to your own universe
 
-When the fault at the top of this page is mended, the Admiral comes to `MyUniverse` in
-three moves. None of them works today. They are here so that you know the size of the
-job.
+The Admiral comes to `MyUniverse` in three moves. Lecture 15 does each of them, and
+plays the result. They are here so that you know the size of the job.
 
-| Move | Where | Today |
+| Move | Where | What Lecture 15 found |
 |---|---|---|
-| Add the Admiral's library, on a line of its own under the universe's | `story.json` | Loads, and does nothing |
-| Change `Mode: story` to a mode with an Admiral | `kestrel_verge.amd`, the Scenario chapter | Changes the mode, and no Admiral appears |
-| Copy your Worldlets, Admiralty, Officers and Research chapters across | `kestrel_verge.amd` | Read by nothing |
+| The Admiral's library is listed, on a line of its own under the universe's | `story.json` | A mission made from today's template has the line already. By itself it changes nothing |
+| `Mode: story` becomes `Mode: campaign` | `kestrel_verge.amd`, the Scenario chapter | By itself it changes nothing the crew can see |
+| Your Worldlets, Admiralty, Officers and Research chapters are copied across | The end of `kestrel_verge.amd` | With all three moves made, the Admiral console is offered and the home system has your world |
 
-Until then, keep those four chapters in the lab. Write them for your own universe:
-Hollin Prime and Maren are already the Verge's.
+Write your four chapters for your own universe while you are in the lab: Hollin Prime
+and Maren are already the Verge's.
 
 ## If something goes wrong
 
 | What you see | Likely cause |
 |---|---|
-| No Admiral console | The universe on the start screen is not Skirmish - The Broken Accord. Or its `Mode:` is `story` or `campaign`. Or the Worldlets chapter has no records |
+| No Admiral console | The universe on the start screen is not Skirmish - The Broken Accord. Or its `Mode:` is `story`. Or the Worldlets chapter has no records |
 | No worldlet in the home system | The Worldlets chapter's key is not `worldlets`, or a world was written with two hashes |
 | Home's world is not the one you wrote | Another record with `Reserve: unlimited` is above yours |
 | A world that never yields anything | `Yields:` names something that is not `ore`, `gas` or `crew`, or has no numbers |
@@ -510,18 +499,18 @@ Hollin Prime and Maren are already the Verge's.
 
 You are done when all five are true:
 
-- `sbs lint AdmiralLab` gives the two warnings that were there before, and one `Costs`
-  and one `Time` warning for each step of research, and nothing else.
+- `sbs lint AdmiralLab` gives the two warnings that were there before, and nothing
+  else.
 - The home system's worldlet is yours.
 - The Shipyard offers your officer by name and title.
 - The Lab offers your first step, and your second only after the first is done.
-- You can say, without this page, why none of this is in `MyUniverse` yet.
+- You can say, without this page, the three moves that take it to `MyUniverse`.
 
 ## Next
 
-Lecture 15, the Admiral beside a bridge crew, is not written yet. It waits for the same
-repairs as this one. Go on to Lecture 16, the capstone: one whole evening in your own
-universe, checked from the first card to the last.
+Lecture 15 takes these four chapters into `MyUniverse`, sets its mode to `campaign`, and
+seats an Admiral beside your bridge crew. If the Admiral is not for you, go straight to
+Lecture 16, the capstone. It does not need one.
 
 ## Further reading
 

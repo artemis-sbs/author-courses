@@ -153,8 +153,10 @@ playable. If the crew outruns your writing, they get a thin evening and not a de
 **The act's ending has no `Then:` line.** Act Two is not written. When the crew finishes
 Five Boats, no new lead appears, and that is the truth. Tell them at the table: "that is
 the end of Act One." When you have written evening 6, you add `Then: reveal s06_go` to
-this record, and the campaign goes on from the same save. Adding a record between
-evenings is safe: Lecture 1 measured it.
+this record. That carries on a crew that has not finished Five Boats yet. For a crew
+that has, it does nothing: a finished step does not reveal again. Lecture 11 measured
+that, and builds the one step that carries a finished act into the next. Adding a
+record between evenings is safe: Lecture 1 measured it.
 
 ## Step 4 - Where the ending goes
 

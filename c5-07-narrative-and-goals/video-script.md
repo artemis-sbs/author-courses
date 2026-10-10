@@ -43,8 +43,11 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 8. With four kills reported the goal is done. The game is sent a card titled VICTORY
    carrying the `Citation:`, and is told the game is over, won, with the `Win:` sentence.
 9. Every row of the two tables in Step 5: 40 variants, one change each, each linted and
-   played. `Standing:` and a reward's `earns` on a beat both land on the story's own
-   record and leave the ship's standing at 0.
+   played. Re-measured 2026-10-10 on the released libraries, with two ships:
+   `Standing: gleaners fearsome 70` on a beat left both at 40 with the Gleaners, and
+   `Reward: 200 credits, earns deepwell by-the-book 30` left both at 20 with the
+   Deepwell; the fee answer then took the ship that gave it to 40 and left the other at
+   20. When this page was first written a beat's deed reached no ship.
 10. A goal given `Fails when: 5 seconds` and a `Lose:` sentence ends the game, lost, with
     that sentence.
 
@@ -118,15 +121,16 @@ chapter. || But one pays the fee, politely, | and the miners think better of the
 || The other demands the page, | and they think worse. ||| That's how a beat shifts
 standing. || The deed goes in the answer, beside the signal. ||"
 
-### 6. Why not on the beat
+### 6. On the beat, or in the answer
 
 **Screen:** The note under Step 3 on the page.
 
-**Say:** "You might expect to write the deed on the beat itself. || There is a line for
-it, and lint accepts it. ||| But today, on a story beat, it doesn't reach the ship. ||
-The score is kept, and nothing ever reads it. ||| So until that changes, remember one
-rule. || A job's reward can earn standing. | An answer can earn standing. || A story
-beat can't. ||"
+**Say:** "You could write the deed on the beat itself. || There's a line for it, called
+standing, | and a beat's reward can hold one too. ||| A deed on the beat goes to every
+ship in the game, | whoever finished it, and whichever way. || A deed in an answer goes
+to the ship that gave the answer, | and to nobody else. ||| So ask yourself what you
+want. || If it's the story's verdict, put it on the beat. || If it's a choice, put it in
+the answer. || Here it's a choice. ||"
 
 ### 7. The last page
 

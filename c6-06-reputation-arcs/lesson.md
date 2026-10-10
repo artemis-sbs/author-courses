@@ -201,9 +201,10 @@ for is the last column: for each door, you have named the evening you want it to
 and you can check that the price makes that possible and not too easy. In Lecture 8 you
 write the real numbers beside the guesses.
 
-**What an arc rests on.** Standing is kept under the ship's name (Lecture 1). It is the
-most valuable thing in the save by the end of an act, and the easiest to lose. A crew
-that flies a different ship next week starts every arc again.
+**What an arc rests on.** Standing is kept in the ship's own record in the save. It is
+the most valuable thing in the save by the end of an act. A ship that is renamed
+between evenings keeps it (Lecture 2 measures that). A crew that starts a New Game does
+not.
 
 ## Step 6 - Check it
 
@@ -288,7 +289,7 @@ sbs run server,helm,comms -m MyUniverse map=0
 | The answer that opened a door is still there afterward | The crew can ask for the manifest again and be read it again. The lead pays once. Write the record so that hearing it twice makes sense |
 | An answer's `if` is read when the hail opens | A door closes the moment standing falls below its line. There is no "you had it once" |
 | The game does not tell the crew a door has closed | If the story needs them to know, say it in the greeting, with a guarded line |
-| Standing belongs to the ship's name | A renamed ship has none |
+| Standing belongs to the ship | Each ship has its own. A ship renamed between evenings keeps it |
 
 ## If something goes wrong
 
@@ -299,7 +300,7 @@ sbs run server,helm,comms -m MyUniverse map=0
 | The answer is pressed and the lead stays open | The word after `signal` is not the word after `Done when: signal` |
 | The Tern's Manifest is not in the Quest Log | It does not say `Starts when: at once` |
 | Selling the Count does not change anything at home | The side's key or the trait after `earns` is misspelled. Lint does not see either |
-| The standing is 0 this week | The ship's name changed |
+| The standing is 0 this week | **New Game** was chosen, or the title changed, or two ships were renamed in the same week. One renamed ship keeps its standing |
 
 ## Exercise
 

@@ -262,49 +262,48 @@ That is a campaign's memory, and it is enough to build on.
 
 **What the game keeps, and what it does not**
 
-This is the one place in this class where the whole list is written down. Every row was
-measured by stopping a game and continuing it.
+This is the short list. Lecture 2 has the whole one, and every row of both was measured
+by stopping a game and continuing it.
 
 | The game keeps | What that means for your story |
 |---|---|
 | The system the ship is in | The crew starts next week where they stopped |
 | The side's credits | A reward paid on evening 3 can be spent on evening 9 |
 | The ship's standing with each side | A deed is remembered. Lecture 6 is built on this |
-| Every step of the story: done, open, or still hidden | The crew never repeats an evening, and never sees one early |
+| Every step of the story: done, open, failed, or still hidden | The crew never repeats an evening, and never sees one early |
 | Jobs in hand, taken or finished | A job taken tonight is still theirs next week |
 | Charted Locations | Every landmark they have visited is a way back |
+| A clock that is running, with the time that was left | A step with 258 seconds left came back with 275. The game writes a running clock down every half minute, so it can gain that much |
+| A ship's record, when the ship is renamed | A ship renamed in `settings.yaml` between evenings kept its standing and its jobs |
+| What the crew has learned | Lecture 2 teaches you to write a fact, and to ask for it |
 
 | The game does not keep | What to do about it |
 |---|---|
 | A fleet that was not destroyed. The three ships guarding a landmark were there again after Continue | Nothing. A crew that ran away finds the guards waiting |
-| A countdown. A step with a time limit started its clock again from the top | Never let a clock run across the end of an evening. Lecture 7 has the rule for clocks |
-| Anything, for a ship whose name has changed. The ship started with standing 0 and no jobs, and the old ship's record was gone from the save for good. Credits, the story and the charts were kept, because those belong to the side and to the story | Choose the ship's name before evening 1 and never change it |
 | The game, under a new title. A universe whose title changed started a new, empty save. The old save file was still there, unused | Choose the title before evening 1 and never change it |
-| Any fact of your story that is not a step, a standing or a number of credits. "The crew lied to the Assay Office" is kept only as the standing it cost | In this class, every turn of the plot is a step in the Quest Log. If it is not a step, the game will not remember it |
 
 Two more measured facts belong beside that table.
 
-**The save is written as things happen, and when the ship arrives somewhere.** A deed in
-a hail and a job taken were in the file at once. A step that failed because its time ran
-out was not, until the next jump. So end every evening the same way: jump home, then
-close the game.
+**The save is written as things happen.** A deed in a hail, a job taken and a fact
+learned were in the file at once. A step that failed because its time ran out was in the
+file within seconds, with its penalty paid, and no jump was needed. End every evening at
+home all the same: it is where the next lead is waiting.
 
-**The save holds the story as well as the progress.** It keeps the title and text of
-every step, the hidden ones too. A record you rewrite between evenings shows its new
-words next time. A record you delete comes back from the save, because the crew already
-has it. Lecture 9 is about changing a universe that a crew is halfway through. It is not
-written yet. Until it is: add records between evenings, and do not delete or rename the
-ones a crew has met.
+**The save holds the progress, and none of the story.** For each step of your story it
+keeps the step's key and its state, and no title and no text. So a record you rewrite
+between evenings shows its new words next time. A record you delete is gone from the
+Quest Log, and its state is put aside in the save in case you put the record back.
+Lecture 9 is about changing a universe that a crew is halfway through, and what is safe.
 
-Lecture 2 will go through the save file line by line. It is not written yet either, and
-nothing in the lectures you have depends on it.
+Lecture 2 goes through the save itself: its file, its slots, and the facts you can ask
+it to keep.
 
 ## If something goes wrong
 
 | What you see | Likely cause |
 |---|---|
 | The second start is a new game: 500 credits, standing 0 | The title in `story.mast` changed, or the save was deleted, or **New Game** was chosen on the start screen |
-| The story and the credits came back, and the standing and the job did not | The ship has a different name from last time |
+| The story and the credits came back, and the standing and the job did not | Two ships were renamed in the same week, and the game could not tell whose record was whose. One renamed ship keeps its record |
 | The card at (2, 2) reads `The Hollin Fields` and not `The Wren` | The landmark's `At:` is not `2, 2` |
 | One of Five is not in the Quest Log | It has no `Starts when: at once` line, or it is not in the Narrative chapter |
 | There is no **Engage** button | Class 5 Lecture 2: the two travel lines in `story.mast` |
@@ -321,8 +320,8 @@ nothing in the lectures you have depends on it.
    it until you know what the crew did.
 5. Write your first lead and its landmark, lint, and do Step 6 with your own table.
 6. In `settings.yaml`, change the first ship's name, as you did in Class 1 Lecture 12,
-   and continue once more. Write down what was lost. Then change it back and delete the
-   save. You will not do that again.
+   and continue once more. Check your six things again: all six should be as they were.
+   Then change the name back, and delete the save.
 
 ## Checkpoint
 
@@ -336,9 +335,10 @@ You are done when all five are true:
 
 ## Next
 
-Lecture 2, on the save file itself, is not written yet. Lecture 3 takes the lead you
-wrote today and builds a whole evening around it: an opening, something to do, a moment
-of danger, and a hook for next week.
+Lecture 2 is the save itself: where it is, how to keep two campaigns side by side, and
+how to make the game remember a fact of your story. Lecture 3 then takes the lead you
+wrote today and builds a whole evening around it. If you are in a hurry to write,
+Lecture 3 works straight from here, and you can come back.
 
 ## Further reading
 

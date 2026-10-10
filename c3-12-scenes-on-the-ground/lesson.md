@@ -451,7 +451,7 @@ Then play it once more and lose it, with the crowbar.
 | What you see | Why | What to do |
 |---|---|---|
 | A choice with `if holding` is not offered | Somebody else is carrying it | Use **Give to** in the Pack app, or have that person answer |
-| A choice for a job is not offered, and nobody is covering | The person with that job is on the ground somewhere else. A choice is covered only when nobody in the party has the job | Send that person |
+| A choice for a job is offered to somebody else, marked `(covering for medical)`, while the medic is on the ground | Covering is worked out for each scene, from who is standing in it. The medic was across the yard | Nothing to fix. If only a medic should do it, write `if skill medical >= 3`: nobody covers for a skill |
 | Pim does not turn up by the tent | The key after `summon` does not match the second record's key | Lint cannot see it. Compare the two |
 | The pump runs and the sluice stays shut | The signal's name differs between the room and the prop | Lecture 10, "What lint cannot see" |
 

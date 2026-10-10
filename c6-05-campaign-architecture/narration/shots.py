@@ -73,15 +73,15 @@ SHOTS = [
     {
         "id": "s05_the_act_s_ending",
         "title": "The act's ending",
-        "frames": 903,
+        "frames": 995,
         "captions": [
             ('The act ends at home, with a big payment,', 0, 117),
             ("and a text that answers the act's question.", 131, 235),
             ('And it has no next step.', 289, 368),
             ("Act two isn't written,", 394, 447),
             ("so no new lead appears, and that's the truth.", 460, 578),
-            ('When you have evening six, you add one line here.', 632, 762),
-            ('And the same save carries on.', 789, 867),
+            ('When you have evening six, you join it on here.', 632, 762),
+            ("The capstone shows how to do that for a crew that's already finished.", 789, 959),
         ],
         "pauses": [0.45, 1.8, 0.9, 0.45, 1.8, 0.9, 1.2],
     },

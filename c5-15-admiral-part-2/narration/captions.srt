@@ -1,0 +1,363 @@
+1
+00:00:00,000 --> 00:00:04,783
+Last time you wrote for the admiral's seat, in a lab.
+
+2
+00:00:05,683 --> 00:00:07,857
+Today that seat comes home.
+
+3
+00:00:09,657 --> 00:00:13,135
+Your universe gets a second way to play,
+
+4
+00:00:13,585 --> 00:00:15,759
+right beside the bridge crew.
+
+5
+00:00:16,659 --> 00:00:21,007
+And here's the part that matters most to a writer.
+
+6
+00:00:21,907 --> 00:00:24,080
+If nobody wants that chair,
+
+7
+00:00:24,530 --> 00:00:27,574
+the crew's evening doesn't change at all.
+
+8
+00:00:28,774 --> 00:00:33,122
+A campaign has no admiral unless you ask for one.
+
+9
+00:00:34,022 --> 00:00:36,630
+And you ask by writing chapters.
+
+10
+00:00:38,430 --> 00:00:41,039
+Three things have to be true.
+
+11
+00:00:41,939 --> 00:00:44,113
+The admiral's library is loaded.
+
+12
+00:00:45,013 --> 00:00:50,230
+The mode is campaign, with an admiralty chapter in your own file.
+
+13
+00:00:51,130 --> 00:00:55,478
+And there's a worldlets chapter with a world in it.
+
+14
+00:00:57,278 --> 00:01:01,626
+I left each one out in turn, and played it.
+
+15
+00:01:02,526 --> 00:01:06,439
+Every time, no console, no world, and empty pools.
+
+16
+00:01:08,239 --> 00:01:10,848
+So the chapters are the switch.
+
+17
+00:01:12,048 --> 00:01:15,961
+First, I look in one file I never edit.
+
+18
+00:01:16,861 --> 00:01:20,339
+Story dot json is the list of libraries.
+
+19
+00:01:21,239 --> 00:01:24,717
+The last two lines are the universe's own,
+
+20
+00:01:25,167 --> 00:01:26,907
+and then the admiral's.
+
+21
+00:01:28,707 --> 00:01:31,750
+If yours has both, leave it alone.
+
+22
+00:01:32,650 --> 00:01:35,259
+That line does nothing by itself.
+
+23
+00:01:37,059 --> 00:01:38,798
+Now for the mode.
+
+24
+00:01:39,698 --> 00:01:42,741
+One word changes, from story to campaign.
+
+25
+00:01:43,641 --> 00:01:47,554
+For the crew, that's all it is: a word.
+
+26
+00:01:48,754 --> 00:01:51,798
+Now the four chapters from the lab.
+
+27
+00:01:52,698 --> 00:01:56,611
+They go at the very end of the file,
+
+28
+00:01:57,061 --> 00:01:59,235
+so nothing above them moves.
+
+29
+00:02:01,035 --> 00:02:02,774
+There are two worlds:
+
+30
+00:02:03,224 --> 00:02:08,007
+Hollin Prime, which never runs dry, and the Lamp, which does.
+
+31
+00:02:09,807 --> 00:02:12,415
+An admiralty chapter with two dials.
+
+32
+00:02:13,315 --> 00:02:15,054
+One officer, Commodore Maren.
+
+33
+00:02:15,954 --> 00:02:18,998
+And a ladder of two research steps.
+
+34
+00:02:20,798 --> 00:02:25,146
+The Compact's home is the system every game starts in.
+
+35
+00:02:26,046 --> 00:02:28,220
+It still gets its world,
+
+36
+00:02:28,670 --> 00:02:32,148
+and it's the first one that says unlimited.
+
+37
+00:02:33,348 --> 00:02:37,261
+Now, the numbers, and I'll be straight with you.
+
+38
+00:02:38,161 --> 00:02:40,770
+I wrote nothing for starting ore,
+
+39
+00:02:41,220 --> 00:02:44,698
+so the game used its own three hundred.
+
+40
+00:02:45,598 --> 00:02:49,076
+And it started with three thousand six hundred.
+
+41
+00:02:50,876 --> 00:02:55,659
+Part of that is the pace, which is yours to set.
+
+42
+00:02:56,559 --> 00:03:01,776
+Most of it is a test setting the game's makers left on.
+
+43
+00:03:02,676 --> 00:03:06,589
+It multiplies every stock and every yield by eight.
+
+44
+00:03:08,389 --> 00:03:10,563
+Research isn't multiplied at all.
+
+45
+00:03:11,463 --> 00:03:16,680
+So for now, the ladder is cheap and the tanks are huge.
+
+46
+00:03:18,480 --> 00:03:20,220
+Don't balance anything yet.
+
+47
+00:03:21,120 --> 00:03:25,033
+Just never start with less than a headquarters costs.
+
+48
+00:03:26,233 --> 00:03:28,841
+I save, and I run lint.
+
+49
+00:03:29,741 --> 00:03:32,785
+It's the same three warnings as before,
+
+50
+00:03:33,235 --> 00:03:34,974
+on the same lines.
+
+51
+00:03:35,874 --> 00:03:38,048
+The four chapters add none.
+
+52
+00:03:39,248 --> 00:03:42,726
+Now let's play it with both seats filled.
+
+53
+00:03:44,526 --> 00:03:48,874
+The admiral sees one world at home, and it's mine.
+
+54
+00:03:49,774 --> 00:03:51,513
+I build a headquarters.
+
+55
+00:03:51,963 --> 00:03:54,572
+It takes about half a minute.
+
+56
+00:03:56,372 --> 00:04:00,720
+Then an extractor, an academy, a shipyard and a lab.
+
+57
+00:04:01,620 --> 00:04:03,793
+The ore starts to climb.
+
+58
+00:04:05,593 --> 00:04:07,767
+The shipyard offers Commodore Maren,
+
+59
+00:04:08,217 --> 00:04:10,391
+and she brings three ships.
+
+60
+00:04:11,291 --> 00:04:13,900
+The lab offers my first step.
+
+61
+00:04:14,350 --> 00:04:16,524
+Forty seconds later, it's done,
+
+62
+00:04:16,974 --> 00:04:19,148
+and it offers the second.
+
+63
+00:04:20,948 --> 00:04:23,122
+And over on the bridge?
+
+64
+00:04:24,022 --> 00:04:26,630
+Five hundred credits, and three leads.
+
+65
+00:04:27,080 --> 00:04:29,254
+Nothing at all has changed.
+
+66
+00:04:30,454 --> 00:04:33,498
+Now the question you should ask first.
+
+67
+00:04:34,398 --> 00:04:39,180
+What does this cost a table that doesn't want an admiral?
+
+68
+00:04:40,980 --> 00:04:44,024
+So I walked the whole capstone evening,
+
+69
+00:04:44,474 --> 00:04:48,822
+with these chapters in the file and that chair empty.
+
+70
+00:04:50,622 --> 00:04:53,230
+Every row came out the same.
+
+71
+00:04:54,130 --> 00:04:56,739
+The world is there, as scenery.
+
+72
+00:04:57,189 --> 00:05:00,233
+The pools sit full, and never move.
+
+73
+00:05:02,033 --> 00:05:06,815
+So you can ship one universe to both kinds of table.
+
+74
+00:05:08,015 --> 00:05:09,754
+How does it end?
+
+75
+00:05:10,654 --> 00:05:15,002
+The admiral's game has no ending of its own here.
+
+76
+00:05:15,902 --> 00:05:19,380
+The campaign ends where your goals chapter says.
+
+77
+00:05:19,830 --> 00:05:21,570
+That's your win line.
+
+78
+00:05:23,370 --> 00:05:25,978
+And when I stop and continue?
+
+79
+00:05:26,878 --> 00:05:30,357
+The pools come back, to the last unit.
+
+80
+00:05:31,257 --> 00:05:33,430
+So do all five platforms,
+
+81
+00:05:33,880 --> 00:05:36,054
+the fleet, and the research.
+
+82
+00:05:37,854 --> 00:05:40,898
+Twenty seconds in, the extractor's working again.
+
+83
+00:05:42,098 --> 00:05:43,837
+Now it's your turn.
+
+84
+00:05:44,737 --> 00:05:47,780
+Write your own home world, two officers,
+
+85
+00:05:48,230 --> 00:05:50,839
+and a ladder of three steps.
+
+86
+00:05:52,639 --> 00:05:56,552
+Then take the admiral out, by changing one key,
+
+87
+00:05:57,002 --> 00:06:00,480
+and check the crew's game is the same.
+
+88
+00:06:01,380 --> 00:06:03,120
+Then put it back,
+
+89
+00:06:03,570 --> 00:06:06,613
+and hand that chair to a friend.
+
+90
+00:06:08,413 --> 00:06:10,587
+Next time is the capstone.
+
+91
+00:06:11,487 --> 00:06:15,835
+It works with an admiral in the file, or without.

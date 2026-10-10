@@ -298,7 +298,7 @@ the answering ship is on, and what a boarding party has learned or is good at. T
 Class 3. It cannot read your quests or your credits. A name it cannot read counts as zero,
 so the condition is never true, the answer is never offered, and lint cannot tell.
 
-You will use `if` for real in Class 3.
+You will use `if` for real two lectures from now. Lecture 6 gives a condition one more thing to read, a ship's `standing` with a side, and guards an answer on it. Class 3 adds what a boarding party has learned.
 
 ## Your finished pieces
 

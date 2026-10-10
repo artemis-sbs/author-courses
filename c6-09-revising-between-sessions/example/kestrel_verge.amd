@@ -1,0 +1,335 @@
+// One authored file holding a whole universe. Heading level sets the structure:
+//   #    the universe itself (its identity)
+//   ##   a chapter: Sides / Jobs / Narrative / Regions / ...
+//   ###  an entry within a chapter (one side, one job type, one story beat)
+//
+// Each heading's data lives between `---` fences as `Label: value` fact lines, and the
+// prose under the fence is what players read.
+//
+// Almost everything is optional. Reputation axes, standing tuning and the generation
+// dials all fall back to engine defaults when you leave them out - which is why this file
+// is short. Add chapters as you want them.
+
+# [The Kestrel Verge](kestrel_verge)
+---
+Universe
+Display: The Kestrel Verge
+Station mix: 8%
+Enemy mix: 12%
+Nebula mix: 20%
+Derelict chance: 60%
+---
+Past the last relay the charts are forty years old, and nobody has come to correct them.
+Three colonies were planted out here. Two still answer.
+
+## [Scenario](scenario)
+---
+Mode: story
+---
+
+
+// ---- The factions. Each heading key IS the side key. `Home` is a system coordinate on
+// the galaxy grid; `Offers` names the job types this side hands out.
+## [Sides](sides)
+
+### [Hollin Compact](hollin)
+---
+Color: #44aa66
+Character: settler
+Disposition: neutral
+Home: 0, 0
+Values: honest 40, generous 30
+Offers: patrol, escort, lamp_run
+Flies: Arvonian
+---
+The first colony, and the one that farms. They keep the relay running because nobody else will.
+
+### [Deepwell Assembly](deepwell)
+---
+Color: #6688ff
+Character: trader
+Disposition: neutral
+Home: 3, 1
+Values: by-the-book 40, peaceful 20
+Offers: escort
+Flies: 70% Ximni, 30% Arvonian
+---
+The second colony. Miners who sell what they dig and count every crate twice.
+
+### [The Gleaners](gleaners)
+---
+Color: #cc5522
+Character: pirate
+Disposition: foe
+Home: -3, -2
+Values: fearsome 40, resourceful 30
+Offers: salvage
+Flies: Torgoth
+---
+They strip dead ships for a living, and they have stopped waiting for ships to die.
+
+
+// ---- Job types the sides above can offer. The engine generates the individual jobs;
+// these records say what KINDS exist and what they pay.
+## [Jobs](jobs)
+
+### [Patrol](patrol)
+---
+Tier: 2
+Reward: 200 credits
+---
+Sweep a system and clear whatever is hunting in it.
+
+### [Escort](escort)
+---
+Done when: reach 3, 1
+Reward: 250 credits
+---
+See a freighter safely to its destination.
+
+### [Salvage](salvage)
+---
+Reward: 150 credits
+---
+Recover what is worth recovering, and do not ask where it came from.
+
+### [Lamp Run](lamp_run)
+---
+Tier: 2
+Done when: reach 2, 2
+Fails when: 10 minutes
+Reward: 300 credits
+Penalty: 100 credits
+---
+The marker lamp out by the Wren burns a cell a week. Carry a fresh one to (2, 2) before the old one dies.
+
+## [Regions](regions)
+
+### [The Hollin Fields](hollin_fields)
+---
+Center: 0, 0
+Radius: 2
+Skybox: sky1-blue
+Color: #44aa66
+Enemy mix: 0%
+Station mix: 25%
+---
+Farmed space. Lit lanes, slow freight, and nothing that shoots.
+
+### [The Breakers](the_breakers)
+---
+Center: -4, -3
+Radius: 1
+Skybox: sky-neb2-rvb
+Music: Artemis2
+Color: #cc5522
+Enemy mix: 60%
+Station mix: 0%
+Mine chance: 80%
+---
+Gleaner country. Every wreck out here was somebody's ship.
+
+## [Landmarks](landmarks)
+
+### [Kestrel Relay](kestrel_relay)
+---
+At: 0, 0
+Kind: station
+---
+The last relay anyone still maintains. Everything past it is rumor.
+
+### [Assay Office](assay_office)
+---
+At: 3, 1
+Kind: station
+Side: deepwell
+Art: starbase_industry
+---
+Where the Deepwell weighs what it digs. Nothing leaves this system uncounted.
+
+### [The Tern](the_tern)
+---
+At: 1, -2
+Kind: derelict
+Terrain: nebula blue
+---
+The third colony's ship, still in orbit over the place it never landed.
+
+### [The Bone Pile](bone_pile)
+---
+At: -4, -3
+Kind: derelict
+Terrain: asteroids
+Guards: torgoth
+---
+Where the Gleaners stack what they cannot sell. They do not like it looked at.
+
+### [The Wren](the_wren)
+---
+At: 2, 2
+Kind: derelict
+Terrain: asteroids
+Guards: torgoth
+---
+A lifeboat off the Tern, cold for forty years. Her davit number can still be read: one of five.
+
+### [The Dunlin](the_dunlin)
+---
+At: -2, 3
+Kind: derelict
+Terrain: nebula
+Guards: torgoth
+---
+The Tern's second boat, deep in cloud. The voice on her channel is a recording.
+
+### [The Petrel](the_petrel)
+---
+At: 4, -2
+Kind: derelict
+---
+The Tern's fourth boat, holed and tumbling. Her beacon is still counting.
+
+## [Goods](goods)
+
+### [Ore](ore)
+---
+Weight: 40
+---
+What the Deepwell digs. There is always more of it than anyone wants.
+
+### [Provisions](provisions)
+---
+Weight: 30
+---
+What Hollin grows.
+
+### [Tech](tech)
+---
+Weight: 10
+---
+Relay parts, forty years out of date and worth more every year.
+
+### [Contraband](contraband)
+---
+Weight: 5
+---
+Whatever the Gleaners would rather not explain.
+
+## [Narrative](narrative)
+---
+File: story.amd
+---
+
+## [Dialogue](dialogue)
+
+### [Hollin Hail](hollin_hail)
+---
+Speaker: hollin
+When: comms
+---
+%{standing >= 20} Kestrel Relay knows your ship, captain. What do you need?
+%{standing < 20} Hollin Compact. State your business, captain.
+
+- [Pay the relay levy](hollin_levy) ; costs 100 credits, earns hollin honest 20, earns hollin generous 20
+- [Call the levy a racket](hollin_cold) ; earns hollin selfish 20
+- [Report what the Gleaners said](hollin_report) if learned the gleaners broke a boat
+- [Ask to see the Tern's manifest](hollin_manifest) if standing >= 40 ; signal manifest_seen
+- [Sign off](hollin_bye)
+
+### [The Levy](hollin_levy)
+---
+Speaker: hollin
+---
+% Paid and entered. The relay stays lit another month, and we know who lit it.
+
+### [A Cold Answer](hollin_cold)
+---
+Speaker: hollin
+---
+% Then fly without it, and see how far the light reaches.
+
+### [Hollin Out](hollin_bye)
+---
+Speaker: hollin
+---
+% Hollin out.
+
+### [Gleaner Hail](gleaner_hail)
+---
+Speaker: gleaners
+When: comms
+---
+%{standing >= 20} The captain with the nerve. Talk.
+%{standing < 20} You are standing in our yard. Explain that.
+
+- [Tell them you go where you like](gleaner_nerve) ; earns gleaners fearsome 35
+- [Ask what became of the Tern's boats](gleaner_boats) ; learn the gleaners broke a boat
+- [Sell them a copy of the Count](gleaner_sold) ; earns gleaners resourceful 35, earns hollin liar 40
+- [Back away](gleaner_bye) ; earns gleaners cowardly 35
+
+### [Nerve](gleaner_nerve)
+---
+Speaker: gleaners
+---
+% Ha. Most of them beg. We will remember the ship that did not.
+
+### [Gleaners Out](gleaner_bye)
+---
+Speaker: gleaners
+---
+% Run along, then.
+
+### [The Boats](gleaner_boats)
+---
+Speaker: gleaners
+---
+% Boats? One came through the yard. We broke her for the cells. Ask nicely and we may remember which.
+
+### [The Report](hollin_report)
+---
+Speaker: hollin
+---
+%{learned the assay office buys salvage} Entered. And the Assay Office buys what the Gleaners break, captain. You have seen both ends of it now.
+%{learned the assay office buys salvage < 1} Entered. One boat, broken for her cells. Find out who bought what was left of her.
+
+### [The Manifest](hollin_manifest)
+---
+Speaker: hollin
+---
+% Seal broken, and witnessed. Forty-one names, captain. Nine of them are children. Read it here. It does not leave the relay.
+
+### [Sold](gleaner_sold)
+---
+Speaker: gleaners
+---
+% Now we know which boats you have found, and which you have not. Pleasure, captain. The Compact need never hear of it.
+
+### [Deepwell Hail](deepwell_hail)
+---
+Speaker: deepwell
+When: comms
+---
+%{standing >= 20} Assay Office. Your account is in order, captain.
+%{standing < 20} Assay Office. Have your manifest ready.
+
+- [Pay the search fee for the Plover's bill of sale](deepwell_plover) ; costs 150 credits, signal plover_asked, earns deepwell by-the-book 20, earns deepwell peaceful 20
+- [Tell the clerk the Compact will hear of a refusal](deepwell_plover_cold) ; signal plover_asked, earns deepwell violent 20
+- [Sign off](deepwell_bye)
+
+### [The Bill of Sale](deepwell_plover)
+---
+Speaker: deepwell
+---
+% Fee received. One ship's boat, the Plover, bought as scrap. Empty. Seller's mark withheld at the seller's request. That is all the book says.
+
+### [The Bill, Thrown](deepwell_plover_cold)
+---
+Speaker: deepwell
+---
+% Take your copy. One boat, the Plover, bought empty as scrap. And captain: the Assembly has entered how you asked.
+
+### [Deepwell Out](deepwell_bye)
+---
+Speaker: deepwell
+---
+% Assay Office out.

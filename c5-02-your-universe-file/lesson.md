@@ -371,7 +371,15 @@ Lower down, `side_credits` holds 900: the 500 you start with, and the 400 the ru
 
 The start screen has a setting for this too. Start the game without `map=0`, and the
 server shows the mission's start screen, with a **Start** list that reads **Continue**.
-Its other choice, **New Game**, replaces the save. It does not ask first.
+Its other choice, **New Game**, replaces the save. It does not ask first. The game keeps
+the campaign that was replaced, once, beside the save, in a file whose name ends
+`.previous.bak`.
+
+A mission made from today's template has one more setting there: **Save Slot**, a dial
+from 1 to 6. The `_1` at the end of the save's name is the slot. Another slot is another
+campaign, in a file of its own. Nobody has seen the dial on a screen for this page. What
+was measured is that slot 2 wrote `universe_save_the_kestrel_verge_2.yaml` and left the
+first file as it was. Class 6 Lecture 2 uses it.
 
 ## If something goes wrong
 
@@ -379,6 +387,7 @@ Its other choice, **New Game**, replaces the save. It does not ask first.
 |---|---|
 | `sbs create` says `Error: no template 'ou'`, or does not end `MyUniverse is ready.` | Your tool is older than this page. Type `sbs update`, then try again |
 | The start screen says My Universe | Step 7, part 1 was not done. Replace All should have found 4 |
+| The start screen has no **Save Slot** | Your folder was made before the dial was added. Nothing is wrong: the game plays in slot 1, as this page says. Class 6 Lecture 2 gives the one line that adds the dial |
 | The game starts, home is called Home Port, and there is no Kestrel Relay | The universe file was not loaded, or the landmark was not. Read `mast.runtime.log`. Then check the title is spelled one way, the file name after `universe:` is right, and the landmark has `At: 0, 0` |
 | No ship and no station. Nothing happens | `story.mast` is broken. Run `sbs lint MyUniverse` and read the first error |
 | No **Engage** button in Helm's Quest Log | The two travel lines are missing or changed. See Step 7, part 4. If your `story.mast` never had them, type them directly under the first `UNIVERSE_SELECT` line. Both start at the left edge, and `True` has a capital T |

@@ -304,60 +304,56 @@ And here's what it doesn't keep.
 
 77
 00:05:18,176 --> 00:05:19,915
-Read this list twice.
+It's a short list.
 
 78
 00:05:21,715 --> 00:05:25,193
 Guards the crew ran away from are back.
 
 79
-00:05:26,093 --> 00:05:27,833
-A countdown starts again.
+00:05:26,093 --> 00:05:30,876
+And a universe with a new title is a new game,
 
 80
-00:05:29,633 --> 00:05:34,850
-A ship with a new name has no standing and no jobs,
+00:05:31,326 --> 00:05:33,500
+so choose the title once.
 
 81
 00:05:35,300 --> 00:05:39,213
-and the old name's record is gone for good.
+Some things you might expect to lose are kept.
 
 82
-00:05:40,113 --> 00:05:44,461
-A universe with a new title is a new game.
+00:05:40,113 --> 00:05:45,765
+A clock that was running comes back with the time it had left.
 
 83
-00:05:46,261 --> 00:05:48,000
-And the big one.
+00:05:46,665 --> 00:05:51,013
+A ship you rename keeps its standing and its jobs.
 
 84
-00:05:48,900 --> 00:05:53,683
-The game has no memory for a fact of your story
+00:05:52,813 --> 00:05:57,161
+And the game can remember a fact of your story.
 
 85
-00:05:54,133 --> 00:05:58,480
-unless that fact is a step, a standing, or credits.
+00:05:58,061 --> 00:05:59,800
+That's the next lecture.
 
 86
-00:05:59,380 --> 00:06:04,598
-So in this class, every turn of the plot is a step.
-
-87
-00:06:05,798 --> 00:06:09,276
+00:06:01,000 --> 00:06:04,478
 So you have a premise, a first lead,
 
-88
-00:06:09,726 --> 00:06:12,335
+87
+00:06:04,928 --> 00:06:07,537
 and a table you measured yourself.
 
-89
-00:06:14,135 --> 00:06:16,743
+88
+00:06:09,337 --> 00:06:11,946
 End every evening the same way:
 
-90
-00:06:17,193 --> 00:06:19,802
+89
+00:06:12,396 --> 00:06:15,004
 jump home, then close the game.
 
-91
-00:06:20,702 --> 00:06:25,485
+90
+00:06:15,904 --> 00:06:20,687
 Next time, we build a whole evening round that one lead.

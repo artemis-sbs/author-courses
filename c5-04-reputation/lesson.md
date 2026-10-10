@@ -330,7 +330,6 @@ Lint says `clean` for every one of these.
 | `Tier: two` | The mission stops working when Comms selects a station of a side that offers that job. `mast.runtime.log` says `invalid literal for int()` |
 | `Tier: 4` | The job is never offered. There is no tier above 3 |
 | `Standing: hollin honest 50` on a job | Nothing. A job's worth to standing is always 5 for each tier |
-| `Standing: gleaners fearsome 70` on a quest in the Narrative chapter | The score is kept for the story and not for the ship. No price, job or greeting changes |
 
 Three more are about the dials in the title record. Lint gives every dial line the same
 warning, right or wrong, so its warning tells you nothing about these.
@@ -393,12 +392,12 @@ scores are there, by side. Start the game again and they are still in force.
 
 | Fact | What it means for your story |
 |---|---|
-| Standing belongs to a ship, by the ship's name | Two ships in one game each have their own. A ship that is renamed starts again from nothing |
+| Standing belongs to a ship | Two ships in one game each have their own. It is saved in the ship's record, and a ship that is renamed in `settings.yaml` keeps it. Class 6 Lecture 2 measures that |
 | No screen shows the number | The crew learns their standing from what changes: a greeting, a price, a job on offer. Write lines that tell them |
 | An answer can be given again and again | Three bold answers took the Gleaners from enemies to 57. Give a deed in talk a cost, or expect it to be farmed |
 | Standing with one side is no business of another | Nothing the crew does for Hollin is heard by the Gleaners, unless you write a deed that names both |
 | An alliance is offered only after a ceasefire | A side written `neutral` never offers one, however high the standing. Only an old enemy becomes an ally |
-| `Standing:` on a quest in the Narrative chapter does not reach the ship today | See the table in Step 5. For now, a story beat that should change a side's mind needs a call with an answer in it |
+| A quest in the Narrative chapter can carry a deed, and it reaches every ship | `Standing: gleaners fearsome 70` on a story quest was played with two ships. When the quest was done, standing with the Gleaners was 40 for both of them. Lecture 7 uses it. A deed in an answer goes only to the ship that gave the answer |
 
 ## If something goes wrong
 

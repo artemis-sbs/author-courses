@@ -6,23 +6,17 @@ s01_cold_open_4	The Admiral doesn't fly anything.
 s01_cold_open_5	The Admiral looks down on a whole system,
 s01_cold_open_6	builds on its worlds, and sends fleets out.
 s01_cold_open_7	Today you write for that seat.
-s02_where_it_runs_today_0	And I have to start with some bad news,
-s02_where_it_runs_today_1	because I'd rather you heard it from me.
-s02_where_it_runs_today_2	The Admiral's game doesn't run in the universe you made in Lecture Two,
-s02_where_it_runs_today_3	not as things stand today.
-s02_where_it_runs_today_4	I did try it.
-s02_where_it_runs_today_5	I added the Admiral's library,
-s02_where_it_runs_today_6	I changed the mode,
-s02_where_it_runs_today_7	and I wrote the chapters.
-s02_where_it_runs_today_8	The game started, and nothing happened.
-s02_where_it_runs_today_9	There was no console and no error.
-s02_where_it_runs_today_10	That's a fault in how two libraries find each other,
-s02_where_it_runs_today_11	and it's been reported.
-s02_where_it_runs_today_12	It isn't something you can fix from your mission folder.
-s02_where_it_runs_today_13	So today, we work where the Admiral does run,
-s02_where_it_runs_today_14	which is inside the Open Universe mission itself.
-s02_where_it_runs_today_15	And what you write there
-s02_where_it_runs_today_16	is exactly what your own universe will take later.
+s02_two_lectures_two_folders_0	Before we start, here's how this lecture and the next one fit together.
+s02_two_lectures_two_folders_1	Your own universe can have an admiral.
+s02_two_lectures_two_folders_2	That's the next lecture.
+s02_two_lectures_two_folders_3	Today we work somewhere else, on purpose.
+s02_two_lectures_two_folders_4	The Open Universe mission holds a small universe
+s02_two_lectures_two_folders_5	that is nothing but an admiral's game.
+s02_two_lectures_two_folders_6	Three kinds of world, six officers, and no story to keep track of.
+s02_two_lectures_two_folders_7	It's the best place to learn what each line does.
+s02_two_lectures_two_folders_8	So we make a copy of it, and we change the copy.
+s02_two_lectures_two_folders_9	And what you write there today
+s02_two_lectures_two_folders_10	is exactly what goes into your own universe next time.
 s03_make_the_lab_0	First, we make a copy.
 s03_make_the_lab_1	Never change the Open Universe folder itself,
 s03_make_the_lab_2	because an update will replace it.
@@ -83,15 +77,14 @@ s08_research_3	and what it unlocks.
 s08_research_4	The second one requires the first,
 s08_research_5	and that's what makes it a ladder.
 s08_research_6	Now I run lint.
-s08_research_7	Two warnings were there before I started.
-s08_research_8	And there are four new ones,
-s08_research_9	saying the game doesn't read my costs or my times.
-s08_research_10	It does read them.
-s08_research_11	I watched it take the ore, and the forty seconds.
-s08_research_12	There's a line that makes those warnings go away,
-s08_research_13	and I'm asking you not to write it.
-s08_research_14	It quietly turns forty seconds into forty minutes.
-s08_research_15	So for today, six warnings is what done looks like.
+s08_research_7	Two warnings were there before I started,
+s08_research_8	in files I never touched.
+s08_research_9	And that's all there is.
+s08_research_10	My own file says clean.
+s08_research_11	One small thing about time.
+s08_research_12	It's a plain number of seconds.
+s08_research_13	Forty means forty seconds.
+s08_research_14	So for today, those two old warnings are what done looks like.
 s09_play_it_0	Now let's play it.
 s09_play_it_1	On the start screen I pick the skirmish universe, and a new game.
 s09_play_it_2	There's one world at home, and it's mine.
@@ -105,9 +98,9 @@ s09_play_it_9	and then, once that's done, my second.
 s10_your_turn_0	Now it's your turn.
 s10_your_turn_1	In the lab, write the world your own side starts on,
 s10_your_turn_2	then two officers, and a ladder of three steps.
-s10_your_turn_3	Keep them there for now.
-s10_your_turn_4	When the fault is mended,
-s10_your_turn_5	it's three small moves to bring them home,
+s10_your_turn_3	Write them for your own universe,
+s10_your_turn_4	because that's where they're going.
+s10_your_turn_5	It's three small moves to bring them home,
 s10_your_turn_6	and they're on the page.
-s10_your_turn_7	The lecture after this one isn't ready yet,
-s10_your_turn_8	so go on to the capstone.
+s10_your_turn_7	The next lecture makes those moves,
+s10_your_turn_8	and puts an admiral beside your bridge crew.

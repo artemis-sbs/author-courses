@@ -52,7 +52,7 @@ s06_where_clocks_go_4	And the next step was never revealed.
 s06_where_clocks_go_5	That's the campaign stopped,
 s06_where_clocks_go_6	in a save your crew has put ten weeks into.
 s06_where_clocks_go_7	So a clock never goes on the spine.
-s06_where_clocks_go_8	And a clock never runs across the end of an evening.
+s06_where_clocks_go_8	And closing the game doesn't undo a clock that ran out.
 s07_a_race_that_s_safe_0	A clock belongs on a job.
 s07_a_race_that_s_safe_1	A job that fails costs its penalty,
 s07_a_race_that_s_safe_2	and the crew can take it again.

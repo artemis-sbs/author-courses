@@ -127,273 +127,273 @@ And here's rule two.
 Three files, one line, with commas.
 
 33
-00:02:24,246 --> 00:02:28,159
-Don't give each file a line of its own.
+00:02:24,246 --> 00:02:29,028
+You'll also see a line for each file, one under another.
 
 34
-00:02:29,059 --> 00:02:32,972
-If you do, the game reads only the last,
+00:02:29,928 --> 00:02:31,667
+That works as well,
 
 35
-00:02:33,422 --> 00:02:36,030
-and lint doesn't say a word.
+00:02:32,117 --> 00:02:35,596
+and the game reads every one of them.
 
 36
-00:02:37,230 --> 00:02:39,839
+00:02:36,796 --> 00:02:39,404
 Now lint, and it's not clean.
 
 37
-00:02:40,739 --> 00:02:44,217
+00:02:40,304 --> 00:02:43,783
 Three warnings, and they're all about one word.
 
 38
-00:02:46,017 --> 00:02:48,626
+00:02:45,583 --> 00:02:48,191
 Remember the signal from Lecture Seven.
 
 39
-00:02:49,526 --> 00:02:54,309
+00:02:49,091 --> 00:02:53,874
 An answer sends it, and a story beat waits for it.
 
 40
-00:02:55,209 --> 00:02:58,252
+00:02:54,774 --> 00:02:57,817
 Those two are in different files now,
 
 41
-00:02:58,702 --> 00:03:03,050
+00:02:58,267 --> 00:03:02,615
 and today, lint reads signals one file at a time.
 
 42
-00:03:04,850 --> 00:03:10,502
+00:03:04,415 --> 00:03:10,067
 So it tells each file the other half is missing, and it isn't.
 
 43
-00:03:11,402 --> 00:03:15,750
+00:03:10,967 --> 00:03:15,315
 The game reads everything into one universe before it runs.
 
 44
-00:03:17,550 --> 00:03:21,028
+00:03:17,115 --> 00:03:20,593
 I'd rather show you this than hide it.
 
 45
-00:03:21,928 --> 00:03:26,276
+00:03:21,493 --> 00:03:25,841
 For this lecture, done means these three and no others.
 
 46
-00:03:27,476 --> 00:03:34,433
+00:03:27,041 --> 00:03:33,998
 You might think, I'll leave the miners' call in the main file, next to the beat.
 
 47
-00:03:35,333 --> 00:03:38,376
+00:03:34,898 --> 00:03:37,941
 That's rule three, and it doesn't help.
 
 48
-00:03:40,176 --> 00:03:44,089
+00:03:39,741 --> 00:03:43,654
 A chapter reads from files, or it holds records.
 
 49
-00:03:44,989 --> 00:03:47,598
+00:03:44,554 --> 00:03:47,163
 Do both, and the game's happy,
 
 50
-00:03:48,048 --> 00:03:51,526
+00:03:47,613 --> 00:03:51,091
 but lint gets five different warnings, also wrong.
 
 51
-00:03:53,326 --> 00:03:56,370
+00:03:52,891 --> 00:03:55,935
 So it's all in, or all out.
 
 52
-00:03:57,270 --> 00:04:00,313
+00:03:56,835 --> 00:03:59,878
 If you really want a clean lint,
 
 53
-00:04:00,763 --> 00:04:05,111
+00:04:00,328 --> 00:04:04,676
 leave the dialogue chapter whole and split only the jobs.
 
 54
-00:04:06,311 --> 00:04:08,920
+00:04:05,876 --> 00:04:08,485
 One new thing for the crew.
 
 55
-00:04:09,820 --> 00:04:12,863
+00:04:09,385 --> 00:04:12,428
 A captain is hailed at a station.
 
 56
-00:04:13,313 --> 00:04:16,791
+00:04:12,878 --> 00:04:16,357
 A member of the cast doesn't need one.
 
 57
-00:04:18,591 --> 00:04:21,200
+00:04:18,157 --> 00:04:20,765
 This is the relay's duty voice.
 
 58
-00:04:22,100 --> 00:04:24,709
+00:04:21,665 --> 00:04:24,274
 It has a face, a color,
 
 59
-00:04:25,159 --> 00:04:29,941
+00:04:24,724 --> 00:04:29,507
 and a scene, which is the record that speaks for it.
 
 60
-00:04:31,741 --> 00:04:36,089
+00:04:31,307 --> 00:04:35,654
 The scene goes in a dialogue file, like any other.
 
 61
-00:04:36,989 --> 00:04:39,163
+00:04:36,554 --> 00:04:38,728
 Notice there are no guards.
 
 62
-00:04:40,063 --> 00:04:42,237
+00:04:39,628 --> 00:04:41,802
 The cast keeps no standing,
 
 63
-00:04:42,687 --> 00:04:48,774
+00:04:42,252 --> 00:04:48,339
 so use them for what a crew should always be able to find out.
 
 64
-00:04:49,974 --> 00:04:54,757
+00:04:49,539 --> 00:04:54,322
 And one more file, called exactly lore dot a m d.
 
 65
-00:04:56,557 --> 00:04:59,600
+00:04:56,122 --> 00:04:59,165
 There are no fences in this one.
 
 66
-00:05:00,500 --> 00:05:02,674
+00:05:00,065 --> 00:05:02,239
 A heading is a page,
 
 67
-00:05:03,124 --> 00:05:07,472
+00:05:02,689 --> 00:05:07,037
 and the words under it are what the crew reads.
 
 68
-00:05:09,272 --> 00:05:11,880
+00:05:08,837 --> 00:05:11,446
 The crew's handheld has a Library,
 
 69
-00:05:12,330 --> 00:05:15,809
+00:05:11,896 --> 00:05:15,374
 and this file becomes a chapter in it.
 
 70
-00:05:17,609 --> 00:05:21,522
+00:05:17,174 --> 00:05:21,087
 Put in what somebody who lives here would know.
 
 71
-00:05:22,422 --> 00:05:25,465
+00:05:21,987 --> 00:05:25,030
 Keep the secrets of your story out.
 
 72
-00:05:26,665 --> 00:05:28,404
+00:05:26,230 --> 00:05:27,970
 Now for the reward.
 
 73
-00:05:29,304 --> 00:05:32,783
+00:05:28,870 --> 00:05:32,348
 s b s docs, the folder, a title,
 
 74
-00:05:33,233 --> 00:05:36,276
+00:05:32,798 --> 00:05:35,841
 and I ask for all four editions.
 
 75
-00:05:38,076 --> 00:05:40,685
+00:05:37,641 --> 00:05:40,250
 The prose one is the book.
 
 76
-00:05:41,585 --> 00:05:44,193
+00:05:41,150 --> 00:05:43,759
 The catalog sorts everything by kind.
 
 77
-00:05:45,093 --> 00:05:47,702
+00:05:44,659 --> 00:05:47,267
 The screenplay is only the conversations.
 
 78
-00:05:48,152 --> 00:05:52,065
+00:05:47,717 --> 00:05:51,630
 Read one aloud. It's the best test there is.
 
 79
-00:05:53,865 --> 00:05:56,474
+00:05:53,430 --> 00:05:56,039
 And the bible is the plot.
 
 80
-00:05:57,374 --> 00:05:59,113
+00:05:56,939 --> 00:05:58,678
 Look at this beat.
 
 81
-00:05:59,563 --> 00:06:03,911
+00:05:59,128 --> 00:06:03,476
 It knows the call leads here, across the two files.
 
 82
-00:06:05,711 --> 00:06:07,450
+00:06:05,276 --> 00:06:07,015
 Then there's the website.
 
 83
-00:06:08,350 --> 00:06:11,828
+00:06:07,915 --> 00:06:11,393
 One page for each file, a search box,
 
 84
-00:06:12,278 --> 00:06:16,626
+00:06:11,843 --> 00:06:16,191
 and every answer is a link to where it goes.
 
 85
-00:06:17,526 --> 00:06:22,309
+00:06:17,091 --> 00:06:21,874
 Zip the folder and send it to whoever's writing with you.
 
 86
-00:06:23,509 --> 00:06:26,552
+00:06:23,074 --> 00:06:26,117
 And the game is the same game.
 
 87
-00:06:27,452 --> 00:06:30,930
+00:06:27,017 --> 00:06:30,496
 There's the same station, with the same buttons.
 
 88
-00:06:31,830 --> 00:06:37,048
+00:06:31,396 --> 00:06:36,613
 The levy comes from one file now, and the jobs from another.
 
 89
-00:06:38,848 --> 00:06:42,326
+00:06:38,413 --> 00:06:41,891
 Here's the Library, with my pages in it.
 
 90
-00:06:44,126 --> 00:06:46,735
+00:06:43,691 --> 00:06:46,300
 So, a last word about lint.
 
 91
-00:06:47,635 --> 00:06:49,809
+00:06:47,200 --> 00:06:49,374
 After a split, it's noisier,
 
 92
-00:06:50,259 --> 00:06:55,041
+00:06:49,824 --> 00:06:54,607
 and it misses a couple of things it used to catch.
 
 93
-00:06:55,941 --> 00:07:00,724
+00:06:55,507 --> 00:07:00,289
 The list on the page is longer today for that reason.
 
 94
-00:07:01,924 --> 00:07:03,663
+00:07:01,489 --> 00:07:03,228
 Now it's your turn.
 
 95
-00:07:04,563 --> 00:07:09,346
+00:07:04,128 --> 00:07:08,911
 Split your universe, and account for every warning lint gives you.
 
 96
-00:07:10,246 --> 00:07:13,724
+00:07:09,811 --> 00:07:13,289
 Write a voice anyone can ask for directions,
 
 97
-00:07:14,174 --> 00:07:16,348
+00:07:13,739 --> 00:07:15,913
 and four pages of lore.
 
 98
-00:07:18,148 --> 00:07:22,496
+00:07:17,713 --> 00:07:22,061
 Then print the screenplay, and read one conversation out loud.
 
 99
-00:07:23,396 --> 00:07:26,874
+00:07:22,961 --> 00:07:26,439
 Change a line because of what you heard.
 
 100
-00:07:28,674 --> 00:07:32,152
+00:07:28,239 --> 00:07:31,717
 Next time, the crew gets off the ship.

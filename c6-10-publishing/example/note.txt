@@ -17,7 +17,8 @@ Four things about a campaign:
 
 1. Start it the same way every week. It continues where the crew stopped.
    Never choose New Game on the start screen. It replaces the save and does not ask.
-2. The ship's name is the crew's record. Do not change it between evenings.
+2. Leave the ship's name alone if you can. One ship renamed between evenings keeps
+   its record. Do not rename two in the same week.
 3. End each evening by jumping home, then close the game.
 4. After each evening, copy this file somewhere safe:
    data\missions\common_data\saves\universe_save_the_kestrel_verge_1.yaml

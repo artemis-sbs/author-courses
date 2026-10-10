@@ -271,65 +271,65 @@ Too dear, and it never does.
 And remember where all of this is kept.
 
 69
-00:04:46,676 --> 00:04:50,154
-It's under the ship's name, in the save.
+00:04:46,676 --> 00:04:50,589
+It's in the ship's own record, in the save.
 
 70
-00:04:51,354 --> 00:04:53,963
+00:04:51,789 --> 00:04:54,398
 Lint's clean, so here it is.
 
 71
-00:04:55,763 --> 00:04:57,937
+00:04:56,198 --> 00:04:58,372
 Three answers, and no manifest.
 
 72
-00:04:58,837 --> 00:05:01,011
+00:04:59,272 --> 00:05:01,446
 I pay the levy twice,
 
 73
-00:05:01,461 --> 00:05:03,635
+00:05:01,896 --> 00:05:04,070
 and now there are four.
 
 74
-00:05:05,435 --> 00:05:08,478
+00:05:05,870 --> 00:05:08,913
 I ask, and the lead is done.
 
 75
-00:05:10,278 --> 00:05:12,887
+00:05:10,713 --> 00:05:13,322
 Then out to the breaking yard,
 
 76
-00:05:13,337 --> 00:05:15,511
+00:05:13,772 --> 00:05:15,946
 and I sell the Count.
 
 77
-00:05:16,411 --> 00:05:19,020
+00:05:16,846 --> 00:05:19,454
 Nothing tells me what that cost.
 
 78
-00:05:20,820 --> 00:05:25,167
+00:05:21,254 --> 00:05:25,602
 Back home, the good work has gone from the list.
 
 79
-00:05:26,067 --> 00:05:29,546
+00:05:26,502 --> 00:05:29,980
 And the hail's down to three answers again.
 
 80
-00:05:30,746 --> 00:05:34,224
+00:05:31,180 --> 00:05:34,659
 So you price standing, you don't award it.
 
 81
-00:05:36,024 --> 00:05:39,502
+00:05:36,459 --> 00:05:39,937
 Every answer that earns it gets a cost.
 
 82
-00:05:40,402 --> 00:05:44,315
-And all of it lives under the ship's name,
+00:05:40,837 --> 00:05:44,750
+And all of it lives in the ship's record,
 
 83
-00:05:44,765 --> 00:05:47,374
-so the ship keeps its name.
+00:05:45,200 --> 00:05:48,678
+which the save carries from week to week.
 
 84
-00:05:49,174 --> 00:05:55,261
+00:05:50,478 --> 00:05:56,565
 Next time, we look at the act from the crew's side of the table.

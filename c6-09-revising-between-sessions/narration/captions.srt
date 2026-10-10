@@ -1,0 +1,359 @@
+1
+00:00:00,000 --> 00:00:03,478
+This is a campaign with nowhere to go.
+
+2
+00:00:04,378 --> 00:00:06,552
+The crew finished evening two,
+
+3
+00:00:07,002 --> 00:00:09,611
+and then I tidied my file.
+
+4
+00:00:11,411 --> 00:00:15,324
+I deleted one step, the one they were on.
+
+5
+00:00:16,224 --> 00:00:18,833
+And everything after it is hidden,
+
+6
+00:00:19,283 --> 00:00:21,891
+with nothing left to reveal it.
+
+7
+00:00:23,691 --> 00:00:28,474
+By the end of this lecture you'll know how that happens,
+
+8
+00:00:28,924 --> 00:00:31,098
+how to get it back,
+
+9
+00:00:31,548 --> 00:00:35,896
+and how to never do it to a real crew.
+
+10
+00:00:37,096 --> 00:00:40,139
+Here's the whole idea, in one sentence.
+
+11
+00:00:41,039 --> 00:00:44,083
+The save holds what the crew did.
+
+12
+00:00:44,533 --> 00:00:48,011
+Your file holds what there is to do.
+
+13
+00:00:49,811 --> 00:00:52,854
+The save has no words in it.
+
+14
+00:00:53,754 --> 00:00:57,667
+It has keys, and a state for each key.
+
+15
+00:00:59,467 --> 00:01:02,076
+So every time the game starts,
+
+16
+00:01:02,526 --> 00:01:05,570
+it joins the two halves by key.
+
+17
+00:01:06,470 --> 00:01:10,383
+Change your words, and the crew sees new words.
+
+18
+00:01:11,283 --> 00:01:16,500
+Change a key, and the save doesn't know that record any more.
+
+19
+00:01:17,700 --> 00:01:20,743
+We don't practice on a live campaign.
+
+20
+00:01:21,643 --> 00:01:23,817
+So I copy the folder,
+
+21
+00:01:24,267 --> 00:01:27,311
+and I call the copy revision lab.
+
+22
+00:01:29,111 --> 00:01:32,154
+Now, the copy has the same title,
+
+23
+00:01:32,604 --> 00:01:36,083
+and a save is named for its title.
+
+24
+00:01:36,983 --> 00:01:40,896
+Left alone, the two folders would share one save.
+
+25
+00:01:42,696 --> 00:01:47,043
+So I add one line to the lab's story file.
+
+26
+00:01:47,943 --> 00:01:49,683
+Save slot, equals six.
+
+27
+00:01:51,483 --> 00:01:56,265
+Now the lab keeps its own campaign, in its own file,
+
+28
+00:01:56,715 --> 00:01:59,324
+and mine is somewhere else entirely.
+
+29
+00:02:00,524 --> 00:02:04,002
+The lab needs a campaign that's partway through.
+
+30
+00:02:04,902 --> 00:02:09,250
+So I walk two evenings, as fast as I can.
+
+31
+00:02:11,050 --> 00:02:13,224
+And here's where it stands.
+
+32
+00:02:14,124 --> 00:02:15,863
+Six steps are done,
+
+33
+00:02:16,313 --> 00:02:19,357
+and one is open, three of five.
+
+34
+00:02:20,257 --> 00:02:22,430
+Everything after that is hidden.
+
+35
+00:02:22,880 --> 00:02:25,489
+And there's a job in hand.
+
+36
+00:02:27,289 --> 00:02:29,463
+Now I close the game,
+
+37
+00:02:29,913 --> 00:02:32,087
+and I start changing things.
+
+38
+00:02:33,287 --> 00:02:35,461
+Seven changes, all at once.
+
+39
+00:02:37,261 --> 00:02:39,870
+I reword the step they're on,
+
+40
+00:02:40,320 --> 00:02:42,059
+and one they've finished.
+
+41
+00:02:42,959 --> 00:02:44,698
+I add a lead,
+
+42
+00:02:45,148 --> 00:02:47,757
+and I delete a finished step.
+
+43
+00:02:49,557 --> 00:02:52,600
+I rename a step the right way,
+
+44
+00:02:53,050 --> 00:02:57,398
+with a line that says what it was called before.
+
+45
+00:02:58,298 --> 00:03:02,646
+I rename another the wrong way, with no such line.
+
+46
+00:03:03,546 --> 00:03:08,328
+And I add a new step behind one that's already done.
+
+47
+00:03:10,128 --> 00:03:11,867
+Lint has two warnings,
+
+48
+00:03:12,317 --> 00:03:15,796
+and both are about the step I deleted.
+
+49
+00:03:16,696 --> 00:03:19,739
+It's telling me I've cut my spine.
+
+50
+00:03:21,539 --> 00:03:23,713
+Now I continue the game.
+
+51
+00:03:24,613 --> 00:03:27,657
+There are new words in both places,
+
+52
+00:03:28,107 --> 00:03:30,715
+and the new lead is there.
+
+53
+00:03:31,615 --> 00:03:33,789
+The deleted step is gone.
+
+54
+00:03:34,689 --> 00:03:38,167
+The step I renamed properly is still done.
+
+55
+00:03:39,067 --> 00:03:42,111
+The one I renamed badly has vanished.
+
+56
+00:03:42,561 --> 00:03:47,343
+And the new step behind a finished one never shows up.
+
+57
+00:03:48,543 --> 00:03:52,457
+In round two, I put the deleted step back,
+
+58
+00:03:52,907 --> 00:03:55,080
+and it comes back done.
+
+59
+00:03:55,980 --> 00:03:59,459
+The save had kept its state for me.
+
+60
+00:04:01,259 --> 00:04:05,172
+I tell the hidden step to start at once,
+
+61
+00:04:05,622 --> 00:04:07,361
+and it's still hidden.
+
+62
+00:04:08,261 --> 00:04:12,609
+The save remembered it as hidden, and the save won.
+
+63
+00:04:14,409 --> 00:04:16,148
+And now the accident.
+
+64
+00:04:16,598 --> 00:04:20,076
+I delete the step the crew is on.
+
+65
+00:04:21,876 --> 00:04:24,485
+The step after it is stranded.
+
+66
+00:04:25,385 --> 00:04:30,167
+No next lead, in a campaign somebody has put weeks into.
+
+67
+00:04:31,367 --> 00:04:35,280
+The game's own guide has a cure for this.
+
+68
+00:04:36,180 --> 00:04:39,224
+I tried it, and it didn't work.
+
+69
+00:04:41,024 --> 00:04:44,067
+What does work is a new key.
+
+70
+00:04:44,967 --> 00:04:49,315
+The save decides the state of every key it's seen.
+
+71
+00:04:49,765 --> 00:04:54,113
+Your file decides the state of a key it hasn't.
+
+72
+00:04:55,913 --> 00:05:01,565
+So I give the stranded step a key the save has never met,
+
+73
+00:05:02,015 --> 00:05:05,493
+and I tell it to start at once.
+
+74
+00:05:07,293 --> 00:05:11,207
+And there it is, back in the quest log.
+
+75
+00:05:12,407 --> 00:05:14,146
+So here's the list.
+
+76
+00:05:15,046 --> 00:05:16,785
+Reword anything you like.
+
+77
+00:05:17,685 --> 00:05:21,598
+Add leads, and add steps ahead of the crew.
+
+78
+00:05:22,048 --> 00:05:24,222
+That's just writing the campaign.
+
+79
+00:05:26,022 --> 00:05:31,239
+Rename a key only with the line that says what it was.
+
+80
+00:05:32,139 --> 00:05:35,617
+Never add a step behind one that's finished.
+
+81
+00:05:36,517 --> 00:05:39,126
+Never delete the step they're on.
+
+82
+00:05:40,926 --> 00:05:43,535
+And never, ever change the title.
+
+83
+00:05:43,985 --> 00:05:45,724
+That's a different campaign.
+
+84
+00:05:46,924 --> 00:05:48,663
+Now it's your turn.
+
+85
+00:05:49,563 --> 00:05:52,607
+Make a lab from your own campaign.
+
+86
+00:05:53,507 --> 00:05:55,680
+Strand a step on purpose,
+
+87
+00:05:56,130 --> 00:05:58,739
+and bring it back both ways.
+
+88
+00:06:00,539 --> 00:06:04,017
+Then write three rules on your campaign page,
+
+89
+00:06:04,467 --> 00:06:10,120
+the three things you'll never do to a file a crew is playing.
+
+90
+00:06:11,920 --> 00:06:17,137
+Next time, we pack the whole thing up and send it out.

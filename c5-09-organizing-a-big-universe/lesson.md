@@ -60,8 +60,9 @@ Three rules, and each one is a mistake waiting for you in Step 5.
 1. **In a chapter file, every record starts with one hash.** In the main file a job is
    `### [Patrol](patrol)`, because it sits under a title and a chapter. A chapter file
    has no title and no chapter heading. Its records are the top of the file.
-2. **Several files go on one line, with commas.** `File: a.amd, b.amd`. Do not write a
-   second `File:` line.
+2. **Several files go on one line, with commas.** `File: a.amd, b.amd`. A `File:` line
+   for each file, one under another, works as well: both ways were played, and every
+   file was read. This page uses the commas.
 3. **A chapter reads from files, or holds records. Not both.** The game allows both.
    Lint does not: it stops recognizing the records under a chapter that has a fence.
 
@@ -386,6 +387,9 @@ Two warnings are wrong, besides the three. `Files:` with an s works, and lint sa
 "Did you mean `File`?". And a record left in the main file under a chapter that has a
 `File:` line works, and lint says it "is being read as a map".
 
+One thing looks wrong and is not: a `File:` line for each file, three lines where this
+page writes one. All three files are read, and lint says nothing more than the three.
+
 **Mistakes lint cannot see**
 
 Lint says nothing more than the three for every one of these.
@@ -394,7 +398,6 @@ Lint says nothing more than the three for every one of these.
 |---|---|
 | A file name that is not there: `File: job.amd` | No station offers any work. The game's log says "`job.amd` not found" |
 | The folder left off: `File: hollin.amd, deepwell.amd, gleaners.amd` | No conversations at all. No station has a Hail button |
-| A second and third `File:` line, where there should be commas | Only the last file is read. Here that is the Gleaners': no Hail button on Hollin's stations or the Deepwell's |
 | One file left off the list | Its conversations are gone. Nothing says so |
 | A dialogue file named in the Jobs chapter | No station offers any work |
 | `Done wen:` in `jobs.amd` | That job never finishes. In the main file lint caught this. In a chapter file it does not |
@@ -408,7 +411,7 @@ So check these by eye:
 
 - Every name after a `File:` is a file that is there, with its folder and a forward
   slash.
-- One `File:` line to a chapter, and no records under it.
+- No records under a chapter that has a `File:` fence.
 - Every record in a chapter file starts with one hash.
 - After any change in `jobs.amd`, read each job's four lines.
 
@@ -449,7 +452,7 @@ After the game, read `mast.runtime.log`. It should be empty.
 | What you see | Likely cause |
 |---|---|
 | No work at any station | The Jobs chapter's `File:` line is misspelled, has no fence, or names a file that is not there |
-| No Hail button on some stations | That side's dialogue file is not on the `File:` line. Or there are several `File:` lines, and only the last one counts |
+| No Hail button on some stations | That side's dialogue file is not on the `File:` line |
 | Lint has an error about hashes in a chapter file | A record there has three hashes. Replace All `### [` with `# [` in that file |
 | Lint has five warnings about "read as a map" | Records were left under a chapter that has a `File:` line. Move them into a chapter file |
 | A job is called Jobs | The chapter's heading was pasted into `jobs.amd` |
@@ -483,14 +486,14 @@ You are done when all five are true:
 
 ## Next
 
-Lecture 10 puts a place on the map that the crew can leave the ship for: a boarding site,
-written as a scene.
+Lecture 10, a boarding site written as a scene, is not written yet. Lecture 11 puts a
+ruin on the map: a place the crew flies into, and then leaves the ship for.
 
 ## Further reading
 
 - `default.amd` in the Open Universe mission: a universe whose Jobs, Captains, Lifeforms
-  and Dialogue chapters all read from files. One caution: its Dialogue chapter writes
-  four `File:` lines. Write yours on one line.
+  and Dialogue chapters all read from files. Its Dialogue chapter writes four `File:`
+  lines where this page writes one line with commas. Both work.
 - "Printing a mission: `sbs docs`" and "Publishing AMD: `sbs site`" in the sbs_utils
   documentation: PDF output, and the other things `sbs site` can make.
 - "Captains and the cast" in the Open Universe writer's walkthrough: passengers, who are

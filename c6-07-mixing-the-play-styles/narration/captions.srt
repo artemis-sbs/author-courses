@@ -216,7 +216,7 @@ So a clock never goes on the spine.
 
 55
 00:03:43,791 --> 00:03:48,574
-And a clock never runs across the end of an evening.
+And closing the game doesn't undo a clock that ran out.
 
 56
 00:03:49,774 --> 00:03:52,383
