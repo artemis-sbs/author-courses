@@ -1,0 +1,2347 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Write missions for Artemis Cosmos. A course for storytellers, not programmers.">
+      
+      
+      
+        <link rel="canonical" href="https://artemis-sbs.github.io/author-courses/class-1/09-chains-and-trees/">
+      
+      
+        <link rel="prev" href="../08-first-quest/">
+      
+      
+        <link rel="next" href="../10-things-quests-point-at/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>9. Chains and trees - Cosmos Author Courses</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-1-lecture-9-chains-and-trees" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cosmos Author Courses" class="md-header__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cosmos Author Courses
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9. Chains and trees
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Light"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Dark"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cosmos Author Courses" class="md-nav__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cosmos Author Courses
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reviewers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For reviewers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-what-you-are-going-to-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What you are going to build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-files-folders-command-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Files, folders and the command prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-editor-and-first-run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Your editor and your first run
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-markdown-in-twenty-minutes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Markdown in twenty minutes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-the-shape-of-a-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. The shape of a record
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-lint-is-your-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Lint is your editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-roles-and-signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Roles and signals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-first-quest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Your first quest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Chains and trees
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Chains and trees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-give-the-story-a-heading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Give the story a heading
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-put-close-inspection-under-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Put Close Inspection under it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-a-second-step-and-the-line-that-starts-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - A second step, and the line that starts it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-a-step-the-crew-can-skip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - A step the crew can skip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-say-which-steps-the-story-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Say which steps the story needs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-an-ending-each-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - An ending each way
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 6 - An ending each way">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-a-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing a time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-crew-gets-no-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The crew gets no warning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-finished-arc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your finished arc
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Check it
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 7 - Check it">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-warning-to-see-before-you-need-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One warning to see before you need it
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-lint-says-about-the-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What lint says about the rest
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-lint-cannot-see" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What lint cannot see
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#these-are-fine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        These are fine
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-play-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Play it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-things-quests-point-at/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Things quests point at
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-just-enough-mast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Just enough MAST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-ship-a-quest-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Capstone: ship a quest mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-give-the-story-a-heading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Give the story a heading
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-put-close-inspection-under-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Put Close Inspection under it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-a-second-step-and-the-line-that-starts-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - A second step, and the line that starts it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-a-step-the-crew-can-skip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - A step the crew can skip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-say-which-steps-the-story-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Say which steps the story needs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-an-ending-each-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - An ending each way
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 6 - An ending each way">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-a-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Writing a time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-crew-gets-no-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The crew gets no warning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-finished-arc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your finished arc
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Check it
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 7 - Check it">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-warning-to-see-before-you-need-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One warning to see before you need it
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-lint-says-about-the-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What lint says about the rest
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-lint-cannot-see" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What lint cannot see
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#these-are-fine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        These are fine
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-play-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Play it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="class-1-lecture-9-chains-and-trees">Class 1, Lecture 9 - Chains and trees<a class="headerlink" href="#class-1-lecture-9-chains-and-trees" title="Permanent link">&para;</a></h1>
+<h2 id="what-you-will-have-at-the-end">What you will have at the end<a class="headerlink" href="#what-you-will-have-at-the-end" title="Permanent link">&para;</a></h2>
+<p>A story with a beginning, a middle and two endings. The crew closes on the hulk. Only then
+are they told to bring her log home. One extra step is theirs to take or leave. Getting
+home in time wins the game. Running out the clock loses it.</p>
+<p><em>[Screenshot to add: the Quest Log showing "Salvage Run" with its steps under it.]</em></p>
+<p>You will edit one file, <code>mission.amd</code>. Nothing in <code>story.mast</code> changes.</p>
+<h2 id="the-video">The video<a class="headerlink" href="#the-video" title="Permanent link">&para;</a></h2>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/HeCe8w8_oJU" title="Class 1, Lecture 9 - Chains and trees" allowfullscreen></iframe></div>
+
+<p>About 6 minutes. Subtitles are available in the player.</p>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Your mission as Lecture 8 left it: both files, with the quest <strong>Close Inspection</strong> in
+  <code>mission.amd</code>. It is the same mission you have had since Lecture 3.</li>
+<li><code>sbs lint MyMission</code> says <code>clean</code>.</li>
+<li>VS Code with the mission folder open, a command prompt open in <code>data\missions</code>, and the
+  game closed.</li>
+</ul>
+<p>You will not throw Close Inspection away. In Step 2 it becomes the first step of your
+story, word for word as you wrote it.</p>
+<p>In Lecture 8's exercise you added a second quest of your own, under Close Inspection.
+Leave it where it is. Step 3 tells you how to work around it.</p>
+<p>Lecture 6 taught you to read a finding from lint, and to fix the first one first. This
+page prints findings and does not explain their parts again.</p>
+<p>Line numbers on this page are for a <code>mission.amd</code> that matches Lecture 8's finished file
+line for line. If you did Lecture 7's exercise, yours are a line or two higher. Go by the
+words.</p>
+<p>Two words for this lecture:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arc</td>
+<td>A story: a heading with steps under it</td>
+</tr>
+<tr>
+<td>Step</td>
+<td>One quest inside an arc</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-1-give-the-story-a-heading">Step 1 - Give the story a heading<a class="headerlink" href="#step-1-give-the-story-a-heading" title="Permanent link">&para;</a></h2>
+<p>Open <code>mission.amd</code>. Find this line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>### [Close Inspection](approach)
+</code></pre></div>
+<p>Click at the very start of that line, in front of the first <code>#</code>. Type:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>### [Salvage Run](salvage)
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>---
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Arc
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Scope: shared
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Starts when: at once
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>---
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>The hulk's reactor is failing. Get her flight log back to DS 1 before she goes.
+</code></pre></div>
+<p>After the last line press Enter twice. That leaves one blank line between your new record
+and Close Inspection.</p>
+<p>The new thing is the single word <code>Arc</code>, alone on the first line inside the fence. It has no
+colon. It says this record is a heading over a run of steps.</p>
+<h2 id="step-2-put-close-inspection-under-it">Step 2 - Put Close Inspection under it<a class="headerlink" href="#step-2-put-close-inspection-under-it" title="Permanent link">&para;</a></h2>
+<p>Add one hash to the Close Inspection heading, so it has four:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>#### [Close Inspection](approach)
+</code></pre></div>
+<p>That is all it takes. A record with four hashes is a step of the nearest three-hash record
+above it. Close Inspection is now the first step of Salvage Run.</p>
+<p>Its key has not changed, but its full address has. From anywhere else in the file it is
+now <code>salvage/approach</code>: the arc, a slash, the step.</p>
+<h2 id="step-3-a-second-step-and-the-line-that-starts-it">Step 3 - A second step, and the line that starts it<a class="headerlink" href="#step-3-a-second-step-and-the-line-that-starts-it" title="Permanent link">&para;</a></h2>
+<p>Click at the end of Close Inspection's description line. Press Enter twice. Type:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>#### [Bring the Log Home](home)
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>---
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Scope: shared
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Starts when: revealed
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Objective: Return to within 1000 of DS 1
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>Done when: reach station 1000
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>Reward: 200 credits
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>---
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>You have her flight log. Carry it back to DS 1.
+</code></pre></div>
+<blockquote>
+<p><strong>Where you type it matters.</strong> A four-hash step belongs to the nearest three-hash record
+ABOVE it. If your own quest from Lecture 8 sits under Close Inspection, the new step goes
+above that quest, not below it. Below it, the step becomes a step of your quest, and the
+game is won the moment the crew reaches the hulk. Lint warns you when that happens. Step
+7 shows you the warning, and one thing it says that you must not do.</p>
+</blockquote>
+<p><code>Starts when: revealed</code> means this step is hidden and asleep. It is not in the Quest Log,
+and nothing can finish it, until another quest reveals it.</p>
+<p>Nothing reveals it yet. Save with <code>Ctrl+S</code>, and ask lint:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sbs lint MyMission
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>== mission.amd ==
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  [WARNING] line 68: `Bring the Log Home` waits to be revealed, and nothing reveals it: no `Then: reveal salvage/home` on another step, and no answer or story line names `home`. It never appears, and the story it belongs to cannot finish (never-revealed)
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
+</code></pre></div>
+<p>Lint read <code>Starts when: revealed</code> on line 68 and looked for the line that wakes this step.
+There is none. Its sentence spells that line out for you: <code>Then: reveal salvage/home</code>.</p>
+<p>If lint says <code>clean</code> here, one of your own sentences has the word <code>home</code> in it. Step 7
+explains. Go on to the next line either way.</p>
+<p>Now make Close Inspection reveal it. Add one line to Close Inspection's fence, under its
+<code>Reward:</code> line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Then: reveal salvage/home
+</code></pre></div>
+<p>Save. Run lint: <code>clean</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Then:</code></td>
+<td>What happens when this quest finishes</td>
+</tr>
+<tr>
+<td><code>reveal</code></td>
+<td>Start another quest</td>
+</tr>
+<tr>
+<td><code>salvage/home</code></td>
+<td>Which one: its full address</td>
+</tr>
+</tbody>
+</table>
+<p>That is a chain. Finishing one step starts the next.</p>
+<p>Three rules for <code>Then: reveal</code>:</p>
+<ol>
+<li>Write the full address, <code>salvage/home</code>. Not <code>home</code> on its own.</li>
+<li>One <code>Then:</code> line per quest. A second one replaces the first.</li>
+<li>Every <code>Starts when: revealed</code> step needs some other quest to reveal it.</li>
+</ol>
+<h2 id="step-4-a-step-the-crew-can-skip">Step 4 - A step the crew can skip<a class="headerlink" href="#step-4-a-step-the-crew-can-skip" title="Permanent link">&para;</a></h2>
+<p>Click at the end of Bring the Log Home's description line. Press Enter twice. Type:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>#### [Quick Work](quick)
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>---
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>Scope: shared
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>Starts when: at once
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>Objective: Reach the hulk inside two minutes
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>Done when: reach derelict 500
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>Fails when: 2 minutes
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>Reward: 50 credits
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>---
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>Optional. DS 1 pays a bonus for a fast approach.
+</code></pre></div>
+<p><code>Fails when:</code> is new. It is the opposite of <code>Done when:</code>. This quest can end two ways,
+and whichever happens first decides it.</p>
+<table>
+<thead>
+<tr>
+<th>What happens first</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The ship gets within 500 of the hulk</td>
+<td>Quick Work is complete. The side is paid 50</td>
+</tr>
+<tr>
+<td>Two minutes pass</td>
+<td>Quick Work has failed. Nothing is paid</td>
+</tr>
+</tbody>
+</table>
+<p>Quick Work and Close Inspection have the same <code>Done when:</code> line. A fast crew finishes both
+at the same moment and is told about each.</p>
+<h2 id="step-5-say-which-steps-the-story-needs">Step 5 - Say which steps the story needs<a class="headerlink" href="#step-5-say-which-steps-the-story-needs" title="Permanent link">&para;</a></h2>
+<p>Right now the story would wait for every step under it, Quick Work included. And if Quick
+Work failed, the story could never be finished at all.</p>
+<p>Fix that by marking the two steps the story needs. Add these two lines to the fence of
+<strong>Close Inspection</strong>, and the same two lines to the fence of <strong>Bring the Log Home</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Part of: salvage
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>Required: true
+</code></pre></div>
+<p>Do not add them to Quick Work.</p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Part of: salvage</code></td>
+<td>This step counts toward finishing the arc whose key is <code>salvage</code></td>
+</tr>
+<tr>
+<td><code>Required: true</code></td>
+<td>The arc is not finished until this step is</td>
+</tr>
+</tbody>
+</table>
+<p>Now the arc is finished when its required steps are done. Quick Work can be finished,
+failed or ignored. It no longer matters to the ending.</p>
+<h2 id="step-6-an-ending-each-way">Step 6 - An ending each way<a class="headerlink" href="#step-6-an-ending-each-way" title="Permanent link">&para;</a></h2>
+<p>There are two arcs in your file now, and both begin with the same three lines. Make sure
+you are in the <strong>Salvage Run</strong> record.</p>
+<p>Add three lines to the Salvage Run fence, under <code>Starts when: at once</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Fails when: 10 minutes
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>Win: The log is home. DS 1 knows what happened out there.
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>Lose: The reactor let go with the log still aboard.
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Win:</code></td>
+<td>When this record is finished, the game is won. The sentence is the reason given</td>
+</tr>
+<tr>
+<td><code>Lose:</code></td>
+<td>When this record FAILS, the game is lost. The sentence is the reason given</td>
+</tr>
+<tr>
+<td><code>Fails when: 10 minutes</code></td>
+<td>What fails it: ten minutes after it starts</td>
+</tr>
+</tbody>
+</table>
+<p>Compare this with Quick Work. Both have a <code>Fails when:</code> line. Quick Work failing costs the
+crew a bonus. Salvage Run failing ends the game, because Salvage Run has a <code>Lose:</code> line.</p>
+<p><strong><code>Fails when:</code> only fails a quest. <code>Lose:</code> is what makes a failure end the game.</strong></p>
+<p><code>Lose:</code> only acts when its quest FAILS. On a quest that simply gets finished, the game does
+not end. So a <code>Lose:</code> line needs something that can fail the quest, and in this lecture
+that is a <code>Fails when:</code> line on the same record.</p>
+<h3 id="writing-a-time">Writing a time<a class="headerlink" href="#writing-a-time" title="Permanent link">&para;</a></h3>
+<p>You wrote a time in Lecture 8's exercise. <code>Fails when:</code> takes the same thing: a whole
+number, in digits, and a unit.</p>
+<table>
+<thead>
+<tr>
+<th>You write</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10 minutes</code></td>
+<td>Ten minutes</td>
+</tr>
+<tr>
+<td><code>90 seconds</code> or <code>90 sec</code></td>
+<td>Ninety seconds</td>
+</tr>
+<tr>
+<td><code>1 hour</code></td>
+<td>One hour</td>
+</tr>
+<tr>
+<td><code>2 minutes 30 seconds</code></td>
+<td>Two and a half minutes</td>
+</tr>
+<tr>
+<td><code>10 min</code> or <code>10m</code></td>
+<td>Ten minutes. The short forms work</td>
+</tr>
+<tr>
+<td><code>ten minutes</code>, <code>2.5 minutes</code>, <code>10:00</code>, or <code>10</code> with no unit</td>
+<td>No time limit at all. Lint warns you</td>
+</tr>
+</tbody>
+</table>
+<p>The number has to be digits. A number written as a word is not a time.</p>
+<h3 id="the-crew-gets-no-warning">The crew gets no warning<a class="headerlink" href="#the-crew-gets-no-warning" title="Permanent link">&para;</a></h3>
+<p>Nobody calls the crew to say time is running out. The only clock is in the Quest Log, for
+a crew that opens it. Everyone else first hears of the limit when the mission has failed.</p>
+<p>So tell them yourself, in words they read at the start: the arc's description, and the
+<code>Objective:</code> line or the description of its first step. The Quest Log shows all three to
+a crew that opens it.</p>
+<h2 id="your-finished-arc">Your finished arc<a class="headerlink" href="#your-finished-arc" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>### [Salvage Run](salvage)
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>---
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Arc
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>Scope: shared
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>Starts when: at once
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>Fails when: 10 minutes
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>Win: The log is home. DS 1 knows what happened out there.
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>Lose: The reactor let go with the log still aboard.
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>---
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>The hulk's reactor is failing. Get her flight log back to DS 1 before she goes.
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>#### [Close Inspection](approach)
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>---
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>Scope: shared
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>Starts when: at once
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>Objective: Close to within 500 of the hulk
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>Done when: reach derelict 500
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>Reward: 100 credits
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>Then: reveal salvage/home
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>Part of: salvage
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>Required: true
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>---
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>The hulk is not answering hails. Bring the ship in close and take a look.
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>#### [Bring the Log Home](home)
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>---
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>Scope: shared
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>Starts when: revealed
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>Objective: Return to within 1000 of DS 1
+<a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>Done when: reach station 1000
+<a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a>Reward: 200 credits
+<a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a>Part of: salvage
+<a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>Required: true
+<a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a>---
+<a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>You have her flight log. Carry it back to DS 1.
+<a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a>
+<a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a>#### [Quick Work](quick)
+<a id="__codelineno-10-38" name="__codelineno-10-38" href="#__codelineno-10-38"></a>---
+<a id="__codelineno-10-39" name="__codelineno-10-39" href="#__codelineno-10-39"></a>Scope: shared
+<a id="__codelineno-10-40" name="__codelineno-10-40" href="#__codelineno-10-40"></a>Starts when: at once
+<a id="__codelineno-10-41" name="__codelineno-10-41" href="#__codelineno-10-41"></a>Objective: Reach the hulk inside two minutes
+<a id="__codelineno-10-42" name="__codelineno-10-42" href="#__codelineno-10-42"></a>Done when: reach derelict 500
+<a id="__codelineno-10-43" name="__codelineno-10-43" href="#__codelineno-10-43"></a>Fails when: 2 minutes
+<a id="__codelineno-10-44" name="__codelineno-10-44" href="#__codelineno-10-44"></a>Reward: 50 credits
+<a id="__codelineno-10-45" name="__codelineno-10-45" href="#__codelineno-10-45"></a>---
+<a id="__codelineno-10-46" name="__codelineno-10-46" href="#__codelineno-10-46"></a>Optional. DS 1 pays a bonus for a fast approach.
+</code></pre></div>
+<p>The whole file is in <code>example\mission.amd</code>.</p>
+<h2 id="step-7-check-it">Step 7 - Check it<a class="headerlink" href="#step-7-check-it" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sbs lint MyMission
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>== mission.amd ==
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  clean
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>1 amd + 1 mast file(s): 0 error(s), 0 warning(s)
+</code></pre></div>
+<h3 id="one-warning-to-see-before-you-need-it">One warning to see before you need it<a class="headerlink" href="#one-warning-to-see-before-you-need-it" title="Permanent link">&para;</a></h3>
+<p>In this lecture a warning can decide who wins. See the worst one now, on purpose.</p>
+<p>Take one hash off the Bring the Log Home heading, so it has three:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>### [Bring the Log Home](home)
+</code></pre></div>
+<p>Save. Run lint.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>== mission.amd ==
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>  [WARNING] line 65:14: `approach` Then reveals `salvage/home`, and no record has that key, so nothing is revealed. There is a `home` at `home`: write `Then: reveal home` (dangling-reveal)
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
+</code></pre></div>
+<p>You changed line 71. Lint names line 65, the <code>Then:</code> line in Close Inspection. That is
+break 3 of Lecture 6 again: a finding about a <code>Then:</code> line is about the record it points
+at.</p>
+<p>With three hashes, Bring the Log Home is no longer a step of Salvage Run. It is a quest of
+its own, and Quick Work below it has become ITS step. Salvage Run has one step left. If you
+played this, the game would be WON the moment the crew reached the hulk.</p>
+<p>Now read the end of the sentence. Lint found your step in its new place and offers a line
+that points there: <code>Then: reveal home</code>.</p>
+<p><strong>Do not write that line.</strong> It makes lint say <code>clean</code>, and the game is still won at the
+hulk. Your <code>Then:</code> line was right. The heading is wrong.</p>
+<p>Put the fourth hash back. Save. Run lint: <code>clean</code>.</p>
+<p><strong>When lint offers you a new <code>Then:</code> line, count the hashes on the step first.</strong></p>
+<h3 id="what-lint-says-about-the-rest">What lint says about the rest<a class="headerlink" href="#what-lint-says-about-the-rest" title="Permanent link">&para;</a></h3>
+<p>Every row below was tried on this mission, one at a time. Lint was run. Then the game was
+run without a screen, by a script that put the ship beside the hulk and then beside DS 1.
+The last column is the code at the end of lint's line.</p>
+<p>A misspelled field, a missing colon, a space in front of a field, a key used twice: you met
+these in Lecture 6, and lint says the same about them here. These tables tell you what each
+one costs in THIS story.</p>
+<p><strong>The chain.</strong> The mistake is on Close Inspection's <code>Then:</code> line, unless the row names
+another line.</p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Then: reveal salvage/hmoe</code> (the step misspelled)</td>
+<td>Bring the Log Home never appears, so the story cannot be finished</td>
+<td><code>dangling-reveal</code></td>
+</tr>
+<tr>
+<td><code>Then: reveal home</code> (the arc and the slash left off)</td>
+<td>The same</td>
+<td><code>reveal-path</code>. Its sentence gives the line to write</td>
+</tr>
+<tr>
+<td><code>Then: reveal Salvage/Home</code> (capitals), <code>salvage\home</code> (the other slash), or the step's name in place of its address</td>
+<td>The same</td>
+<td><code>dangling-reveal</code></td>
+</tr>
+<tr>
+<td><code>Then: reveal salvage/home, salvage/quick</code> (two at once)</td>
+<td>The same</td>
+<td><code>dangling-reveal</code>, about <code>salvage/home,</code> with its comma</td>
+</tr>
+<tr>
+<td><code>Then: start salvage/home</code>, or <code>Then: reveals salvage/home</code></td>
+<td>The same</td>
+<td><code>unknown-then-verb</code> and <code>dangling-reveal</code>. The second one gives the line to write</td>
+</tr>
+<tr>
+<td>Two <code>Then:</code> lines in one fence</td>
+<td>Only the lower one counts. With the right line on top, Bring the Log Home never appears</td>
+<td><code>repeated-then</code></td>
+</tr>
+<tr>
+<td>The <code>Then:</code> line typed below the closing <code>---</code></td>
+<td>Bring the Log Home never appears</td>
+<td><code>field-below-fence</code></td>
+</tr>
+<tr>
+<td>A space in front of the <code>Then:</code> line</td>
+<td>The same</td>
+<td><code>field-indented</code></td>
+</tr>
+<tr>
+<td><code>Then reveal salvage/home</code> (no colon)</td>
+<td>The same</td>
+<td><code>fence-syntax</code>, an error</td>
+</tr>
+<tr>
+<td>The step's key changed, <code>(home)</code> to <code>(log_home)</code>, the <code>Then:</code> line left alone</td>
+<td>The same</td>
+<td><code>dangling-reveal</code>, and <code>never-revealed</code> on the step that waits</td>
+</tr>
+<tr>
+<td>The arc's key changed, <code>(salvage)</code> to <code>(salvage_run)</code>, the lines that name it left alone</td>
+<td>The same</td>
+<td><code>dangling-reveal</code>: its sentence gives the line to write. And <code>dangling-parent</code>, twice</td>
+</tr>
+<tr>
+<td><code>Starts when: reveal</code> (the <code>ed</code> left off), or <code>Starts when: hidden</code></td>
+<td>Nothing the crew can see. The step is on offer, not hidden, and neither quest screen lists a step that is on offer. It still starts when Close Inspection finishes</td>
+<td><code>unknown-trigger</code>. Its sentence lists what you can write</td>
+</tr>
+<tr>
+<td><code>When: reach station 1000</code> where <code>Done when:</code> was meant</td>
+<td>Bring the Log Home appears and can never be finished</td>
+<td><code>quest-never-finishes</code>. Its sentence gives the line to write</td>
+</tr>
+<tr>
+<td><code>Done when: reach staton 1000</code> (the role misspelled)</td>
+<td>The same</td>
+<td><code>role-nothing-wears</code></td>
+</tr>
+</tbody>
+</table>
+<p>A story that cannot be finished ends one way. The ten minutes run out, and the game is
+lost.</p>
+<p><strong>Where a step sits.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Three hashes on Bring the Log Home</td>
+<td>The game is WON the moment the crew reaches the hulk</td>
+<td><code>dangling-reveal</code>. Its sentence offers <code>Then: reveal home</code>. Do not write it</td>
+</tr>
+<tr>
+<td>The new steps typed below another three-hash quest</td>
+<td>The same. They become steps of that quest</td>
+<td><code>dangling-reveal</code>. It offers a line with that quest's key in it. Do not write it</td>
+</tr>
+<tr>
+<td>Three hashes on Close Inspection (Step 2 not done)</td>
+<td>Salvage Run has no steps and can never be finished. Bring the Log Home never appears</td>
+<td><code>dangling-reveal</code>. It offers <code>Then: reveal approach/home</code>. Do not write it</td>
+</tr>
+<tr>
+<td>Five hashes on Bring the Log Home</td>
+<td>It becomes a step of Close Inspection and never appears. The game is won at the hulk</td>
+<td><code>reveal-path</code>. Its sentence ends "or check the number of hashes". Do that</td>
+</tr>
+<tr>
+<td>Six hashes on Bring the Log Home</td>
+<td>The same</td>
+<td><code>reveal-path</code>, and <code>heading-level-jump</code>, an error</td>
+</tr>
+<tr>
+<td>Two hashes on Bring the Log Home</td>
+<td>It and Quick Work are no longer quests at all. The game is won at the hulk</td>
+<td>Three findings. First <code>dangling-reveal</code>, with a line you must not write. Then <code>section-not-loaded</code>, on your line. The error, <code>heading-level-jump</code>, is on the NEXT step's heading</td>
+</tr>
+<tr>
+<td>One hash on Bring the Log Home</td>
+<td>The same</td>
+<td>Three findings. First <code>dangling-reveal</code>, the same. Then the error, <code>heading-level-jump</code>, on your line: it ends <code>Give it 4</code>. Then <code>section-not-loaded</code>, about the next step</td>
+</tr>
+<tr>
+<td>Two hashes on Quick Work</td>
+<td>Quick Work is gone. The rest of the story plays</td>
+<td><code>section-not-loaded</code></td>
+</tr>
+<tr>
+<td>A step copied to make the next one, with the key left the same: two steps keyed <code>(home)</code></td>
+<td>The second one is dropped. There is no Quick Work</td>
+<td><code>duplicate-key</code>. Its sentence gives both line numbers</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Time.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Fails when: ten minutes</code></td>
+<td>No time limit. The story can no longer fail</td>
+<td><code>unknown-trigger</code>. Its sentence shows how to write a time</td>
+</tr>
+<tr>
+<td><code>Fails when: 2.5 minutes</code>, <code>10:00</code>, or <code>10</code> with no unit</td>
+<td>The same</td>
+<td><code>unknown-trigger</code></td>
+</tr>
+<tr>
+<td><code>Fails when: reach station 1000</code></td>
+<td>The same. Getting somewhere cannot fail a quest</td>
+<td><code>unsupported-fail-trigger</code></td>
+</tr>
+<tr>
+<td><code>Fail when:</code> (no <code>s</code>), or <code>Lose when:</code></td>
+<td>The same</td>
+<td><code>unknown-field</code>. It guesses the word you meant. For <code>Lose when</code> it guesses <code>Done when</code>, and that guess is wrong: write <code>Fails when</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>What the story needs.</strong> The mistake is in Bring the Log Home's fence.</p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Part of: salvge</code></td>
+<td>Bring the Log Home no longer counts. The game is won at the hulk</td>
+<td><code>dangling-parent</code>. Where its sentence says "Parent", read <code>Part of:</code></td>
+</tr>
+<tr>
+<td><code>Requierd: true</code></td>
+<td>The same</td>
+<td><code>unknown-field</code>. It guesses <code>Required</code></td>
+</tr>
+<tr>
+<td><code>Required true</code> (no colon)</td>
+<td>The same</td>
+<td><code>fence-syntax</code>, an error</td>
+</tr>
+<tr>
+<td>A space or a tab in front of <code>Required: true</code></td>
+<td>The same</td>
+<td><code>dangling-parent</code> and <code>field-indented</code>. The second one is the mistake</td>
+</tr>
+<tr>
+<td><code>Part of: Salvage Run</code> on both steps (the name, not the key)</td>
+<td>A quick crew sees nothing wrong. If Quick Work fails, reaching DS 1 does not end the game</td>
+<td><code>dangling-parent</code>, twice</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The arc's own lines.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Kind: Arc</code>, <code>Arc:</code>, or <code>Ark</code></td>
+<td>Nothing you can see in this mission</td>
+<td><code>unknown-field</code> for the first two, <code>unknown-kind-line</code> for <code>Ark</code></td>
+</tr>
+<tr>
+<td><code>Arc</code> typed on the second line of the fence</td>
+<td>The same</td>
+<td><code>fence-syntax</code>, an error. Its sentence says where the word goes</td>
+</tr>
+<tr>
+<td><code>Wins:</code>, or <code>Win</code> with no colon</td>
+<td>The story is finished at DS 1, and the game goes on</td>
+<td><code>unknown-field</code>, which guesses <code>Win</code>. Or <code>fence-syntax</code>, an error</td>
+</tr>
+<tr>
+<td><code>Loose:</code></td>
+<td>When the time runs out the story fails, and the game goes on</td>
+<td><code>unknown-field</code>. It guesses <code>Lose</code></td>
+</tr>
+<tr>
+<td>The three lines of Step 6 typed in Bring the Log Home's fence</td>
+<td>The game is still won at DS 1. But the ten minutes start only when Bring the Log Home appears. Until then there is no time limit</td>
+<td><code>required-step-dead-end</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-lint-cannot-see">What lint cannot see<a class="headerlink" href="#what-lint-cannot-see" title="Permanent link">&para;</a></h3>
+<p>For every row below lint says <code>clean</code>. Both logs stay empty too, except in the one row
+that says otherwise.</p>
+<table>
+<thead>
+<tr>
+<th>You wrote</th>
+<th>What happens when you play</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No <code>Then:</code> line at all, in the finished file</td>
+<td>Bring the Log Home never appears. Lint's <code>never-revealed</code> warning is silent, and the next paragraph says why</td>
+</tr>
+<tr>
+<td>The <code>Then:</code> line in Quick Work's fence, not Close Inspection's</td>
+<td>A quick crew sees nothing wrong. If Quick Work fails first, Bring the Log Home never appears</td>
+</tr>
+<tr>
+<td><code>Then: reveal salvage/quick</code> (another step's address)</td>
+<td>Bring the Log Home never appears</td>
+</tr>
+<tr>
+<td><code>Then: reveal</code> with no address after it</td>
+<td>Bring the Log Home never appears. This one does leave a line in <code>mast.runtime.log</code></td>
+</tr>
+<tr>
+<td><code>Part of:</code> with no key after it, on Bring the Log Home</td>
+<td>Bring the Log Home no longer counts. The game is won at the hulk</td>
+</tr>
+<tr>
+<td><code>Then: reveal salvage/approach</code> (the step's own address)</td>
+<td>Close Inspection starts again each time it finishes. While the ship stays near the hulk it finishes every two seconds, and pays 100 each time</td>
+</tr>
+<tr>
+<td>Three hashes on Bring the Log Home, and then the line lint offered, <code>Then: reveal home</code></td>
+<td>The game is won at the hulk</td>
+</tr>
+<tr>
+<td>Five hashes on Quick Work</td>
+<td>Quick Work becomes a step of Bring the Log Home, and is not in the Quest Log at the start. A quick crew finishes both at the hulk, is paid all 350, and wins there</td>
+</tr>
+<tr>
+<td><code>Required: ture</code></td>
+<td>Bring the Log Home no longer counts. The game is won at the hulk</td>
+</tr>
+<tr>
+<td><code>Part of:</code> and <code>Required:</code> on Close Inspection only</td>
+<td>The game is won at the hulk</td>
+</tr>
+<tr>
+<td><code>Part of:</code> and <code>Required:</code> on neither step</td>
+<td>A quick crew sees nothing wrong. If Quick Work fails, reaching DS 1 does not end the game</td>
+</tr>
+<tr>
+<td><code>Part of:</code> and <code>Required:</code> on Quick Work as well</td>
+<td>If Quick Work fails, reaching DS 1 does not end the game</td>
+</tr>
+<tr>
+<td>The three lines of Step 6 typed in First Contact's fence</td>
+<td>The game is won when Science has scanned the hulk. In the real game the ship's sensors do that by themselves, seconds after you arrive</td>
+</tr>
+<tr>
+<td><code>Lose:</code> with no <code>Fails when:</code> line</td>
+<td>No time limit. The story never fails, so <code>Lose:</code> never acts</td>
+</tr>
+<tr>
+<td><code>Starts when: at once</code> on Bring the Log Home</td>
+<td>It is in the Quest Log from the start. A crew that visits DS 1 first finishes it there, then finishes it again after the hulk, and is paid 200 twice</td>
+</tr>
+<tr>
+<td><code>Win:</code> with no sentence after it</td>
+<td>The game is won. The reason given is the arc's name, <code>Salvage Run</code></td>
+</tr>
+</tbody>
+</table>
+<p>Why <code>never-revealed</code> is silent in the first row: lint looks for the step's key anywhere in
+the file, and <code>home</code> is an ordinary word. Your <code>Win:</code> sentence says "The log is home." Lint
+takes that for a line that names the step. In Step 3 the warning fired, because the
+sentence was not there yet. So do not lean on that warning. For every step that says
+<code>Starts when: revealed</code>, find its <code>Then: reveal</code> line with your own eyes.</p>
+<p>Three more checks to make by eye:</p>
+<ul>
+<li>Each step under the arc has exactly four hashes.</li>
+<li><code>Part of: salvage</code> and <code>Required: true</code> are on Close Inspection and on Bring the Log
+  Home, and on no other step.</li>
+<li><code>Fails when:</code>, <code>Win:</code> and <code>Lose:</code> are in the Salvage Run fence.</li>
+</ul>
+<h3 id="these-are-fine">These are fine<a class="headerlink" href="#these-are-fine" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>You wrote</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Then: reveal salvage / home</code> (spaces round the slash)</td>
+<td>Works</td>
+</tr>
+<tr>
+<td><code>Then: Reveal salvage/home</code>, <code>Starts when: Revealed</code>, or <code>arc</code> in small letters</td>
+<td>Works. Capitals do not matter in these words. They do matter in an address: <code>Salvage/Home</code> is not <code>salvage/home</code></td>
+</tr>
+<tr>
+<td><code>Required: yes</code>, or <code>Required: True</code></td>
+<td>Works</td>
+</tr>
+<tr>
+<td><code>Done when: reach stations 1000</code> (the role as more than one)</td>
+<td>Works</td>
+</tr>
+<tr>
+<td>No blank line between one step and the next</td>
+<td>Works</td>
+</tr>
+<tr>
+<td>The same key under two arcs: a step <code>(find)</code> in Salvage Run</td>
+<td>Works. <code>first_contact/find</code> and <code>salvage/find</code> are two addresses</td>
+</tr>
+<tr>
+<td><code>Fails when: 10 Minutes</code>, <code>10 mins</code>, or <code>after 10 minutes</code></td>
+<td>Works. Ten minutes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-8-play-it">Step 8 - Play it<a class="headerlink" href="#step-8-play-it" title="Permanent link">&para;</a></h2>
+<p>Start your mission as the server with a Helm console.</p>
+<p><strong>To win:</strong></p>
+<ol>
+<li>Open the Quest Log, as you did in Lecture 8: the handheld icon at the top, then
+   <strong>Quests</strong>. <strong>Salvage Run</strong> is there with two steps under it: Close Inspection and
+   Quick Work. Bring the Log Home is not.</li>
+<li>Fly to the Unknown Hulk. Get inside 500.</li>
+<li>Close Inspection completes. If you were quick, so does Quick Work.</li>
+<li><strong>Bring the Log Home</strong> is now in the list.</li>
+<li>Fly back to DS 1. Inside 1000, it completes, and the game ends with your <code>Win:</code>
+   sentence.</li>
+</ol>
+<p>First Contact, the template's own story, finishes its steps at the hulk too. That is not
+this lecture's doing, and it does not end the game.</p>
+<p><strong>To lose,</strong> without waiting ten minutes: change <code>Fails when: 10 minutes</code> to
+<code>Fails when: 30 seconds</code>, start the mission, and sit still. The game ends with your <code>Lose:</code>
+sentence. Then change it back.</p>
+<p>What the crew is told, word for word:</p>
+<table>
+<thead>
+<tr>
+<th>When</th>
+<th>The crew is told</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A step is finished</td>
+<td><code>Quest complete: Close Inspection</code></td>
+</tr>
+<tr>
+<td>Quick Work runs out of time</td>
+<td><code>Quest failed: Quick Work</code></td>
+</tr>
+<tr>
+<td>The arc is finished</td>
+<td><code>Mission complete: Salvage Run</code></td>
+</tr>
+<tr>
+<td>The arc runs out of time</td>
+<td><code>Mission failed: Salvage Run</code></td>
+</tr>
+</tbody>
+</table>
+<p>What the side is paid:</p>
+<table>
+<thead>
+<tr>
+<th>Ending</th>
+<th>Credits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Won, with the bonus</td>
+<td>350</td>
+</tr>
+<tr>
+<td>Won, bonus missed</td>
+<td>300</td>
+</tr>
+<tr>
+<td>Lost at the start</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Your own quest from Lecture 8 is still running beside the story. When its two minutes are
+up it pays its reward on top of these.</p>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="headerlink" href="#if-something-goes-wrong" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>Likely cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lint says <code>dangling-reveal</code> or <code>reveal-path</code></td>
+<td>The address after <code>Then: reveal</code> is not the address of a step. If the sentence offers you another line to write, count the hashes on that step before you do anything else</td>
+</tr>
+<tr>
+<td>Lint says <code>never-revealed</code></td>
+<td>A step says <code>Starts when: revealed</code>, and no <code>Then: reveal</code> line names it</td>
+</tr>
+<tr>
+<td>Lint says <code>dangling-parent</code></td>
+<td>A <code>Part of:</code> line names a key that no record has. "Parent" in the sentence is your <code>Part of:</code> line</td>
+</tr>
+<tr>
+<td>Lint says <code>unknown-trigger</code> on a <code>Fails when:</code> line</td>
+<td>The time is not a whole number in digits and a unit</td>
+</tr>
+<tr>
+<td>Lint says <code>quest-never-finishes</code></td>
+<td><code>When:</code> where <code>Done when:</code> was meant</td>
+</tr>
+<tr>
+<td>The game is won as soon as you reach the hulk</td>
+<td>Only Close Inspection counts. Bring the Log Home has the wrong number of hashes, or sits below a different three-hash quest, or has lost its <code>Part of:</code> or <code>Required:</code> line to a misspelling</td>
+</tr>
+<tr>
+<td>Bring the Log Home never appears</td>
+<td><code>Then: reveal</code> does not say <code>salvage/home</code> exactly, or there are two <code>Then:</code> lines, or none, or the line is in another step's fence</td>
+</tr>
+<tr>
+<td>Bring the Log Home is in the Quest Log from the start</td>
+<td>Its <code>Starts when:</code> line says <code>at once</code>, not <code>revealed</code></td>
+</tr>
+<tr>
+<td>Bring the Log Home appears and never finishes</td>
+<td><code>When:</code> where <code>Done when:</code> was meant, or the role after <code>reach</code> is misspelled</td>
+</tr>
+<tr>
+<td>You reach DS 1 and the game does not end</td>
+<td>The <code>Win:</code> line is misspelled. Or Quick Work failed, and <code>Part of:</code> and <code>Required:</code> are on neither step, or on Quick Work as well</td>
+</tr>
+<tr>
+<td>The time runs out and the game does not end</td>
+<td>The <code>Lose:</code> line is misspelled or missing</td>
+</tr>
+<tr>
+<td>The time limit never comes</td>
+<td>The <code>Fails when:</code> line is misspelled, or its time is not digits and a unit. Lint warns about both</td>
+</tr>
+<tr>
+<td>A step shows up under one of your other quests</td>
+<td>It is typed below that quest. Move it up, under the arc</td>
+</tr>
+<tr>
+<td><code>mast.runtime.log</code> has a line that starts <code>Quest: there is no quest</code></td>
+<td>The game tried to reveal a step and found none at that address. Lint's <code>dangling-reveal</code> is the same mistake, found before you played</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Give your story a fourth step.</p>
+<ol>
+<li>Add a step under Bring the Log Home, above Quick Work. Give it your own name and key.</li>
+<li>Make it wait: <code>Starts when: revealed</code>.</li>
+<li>Make it finish on time: <code>Done when: 30 seconds</code>.</li>
+<li>Give it <code>Part of: salvage</code> and <code>Required: true</code>.</li>
+<li>Add a <code>Then: reveal</code> line to Bring the Log Home, with your new step's full address.</li>
+<li>Write the time limit into the arc's description, and into Close Inspection's, so the
+   crew knows it.</li>
+</ol>
+<p>Run lint after step 4, and again after step 5. After step 4 it should warn you:
+<code>never-revealed</code>. After step 5 it has to say <code>clean</code>.</p>
+<p>Now the game is won thirty seconds after the crew gets home, not the moment they arrive.</p>
+<h2 id="checkpoint">Checkpoint<a class="headerlink" href="#checkpoint" title="Permanent link">&para;</a></h2>
+<p>You are done when all five are true:</p>
+<ul>
+<li><code>sbs lint MyMission</code> shows <code>mission.amd</code> as <code>clean</code>.</li>
+<li>Bring the Log Home is not in the Quest Log at the start, and is after you reach the hulk.</li>
+<li>Reaching DS 1 after the hulk ends the game with your <code>Win:</code> sentence.</li>
+<li>With the time set short, sitting still ends the game with your <code>Lose:</code> sentence.</li>
+<li>Reaching the hulk does NOT end the game.</li>
+</ul>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>Lecture 10 is about the things quests point at: scans, and places on the map.</p>
+<h2 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
+<ul>
+<li>"Quests" in the library documentation: every quest field, and the mission tree.</li>
+<li>"The AMD file format", the section "Screenplay words": <code>Arc</code>, <code>Beat</code> and the other words
+  a record can call itself.</li>
+<li><code>maps\siege_quests.amd</code> in LegendaryMissions: a shipped story tree. It uses older
+  spellings of some fields, such as <code>Parent:</code> for <code>Part of:</code>.</li>
+</ul>
+<hr />
+<p><a href="../../downloads/c1-09-chains-and-trees.zip">Download this lecture's finished files</a> (a zip of its <code>example</code> folder).</p>
+<p><a href="https://github.com/artemis-sbs/author-courses/issues/new?template=lecture-feedback.md&amp;title=c1-09-chains-and-trees%3A+">Report a problem with this lecture</a> | <a href="https://github.com/artemis-sbs/author-courses/blob/main/c1-09-chains-and-trees/lesson.md">This page's source</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../08-first-quest/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 8. Your first quest">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                8. Your first quest
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../10-things-quests-point-at/" class="md-footer__link md-footer__link--next" aria-label="Next: 10. Things quests point at">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                10. Things quests point at
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.footer", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

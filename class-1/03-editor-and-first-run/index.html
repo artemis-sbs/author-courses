@@ -1,0 +1,2213 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Write missions for Artemis Cosmos. A course for storytellers, not programmers.">
+      
+      
+      
+        <link rel="canonical" href="https://artemis-sbs.github.io/author-courses/class-1/03-editor-and-first-run/">
+      
+      
+        <link rel="prev" href="../02-files-folders-command-prompt/">
+      
+      
+        <link rel="next" href="../04-markdown-in-twenty-minutes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>3. Your editor and your first run - Cosmos Author Courses</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-1-lecture-3-your-editor-and-your-first-run" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cosmos Author Courses" class="md-header__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cosmos Author Courses
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3. Your editor and your first run
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Light"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Dark"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cosmos Author Courses" class="md-nav__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cosmos Author Courses
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reviewers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For reviewers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-what-you-are-going-to-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What you are going to build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-files-folders-command-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Files, folders and the command prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Your editor and your first run
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Your editor and your first run
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-get-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Get VS Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-add-the-artemis-amd-add-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Add the Artemis AMD add-on
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-make-your-mission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Make your mission
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-bring-the-libraries-up-to-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Bring the libraries up to date
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-open-your-mission-in-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Open your mission in VS Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Check it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-play-it-in-the-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Play it, in the game
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-the-rehearsal-your-mission-in-a-web-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - The rehearsal: your mission in a web browser
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-check-it-what-the-tools-say-when-you-slip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Check it: what the tools say when you slip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-markdown-in-twenty-minutes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Markdown in twenty minutes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-the-shape-of-a-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. The shape of a record
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-lint-is-your-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Lint is your editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-roles-and-signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Roles and signals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-first-quest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Your first quest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-chains-and-trees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Chains and trees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-things-quests-point-at/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Things quests point at
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-just-enough-mast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Just enough MAST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-ship-a-quest-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Capstone: ship a quest mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-get-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Get VS Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-add-the-artemis-amd-add-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Add the Artemis AMD add-on
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-make-your-mission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Make your mission
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-bring-the-libraries-up-to-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Bring the libraries up to date
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-open-your-mission-in-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Open your mission in VS Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Check it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-play-it-in-the-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Play it, in the game
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-the-rehearsal-your-mission-in-a-web-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - The rehearsal: your mission in a web browser
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-check-it-what-the-tools-say-when-you-slip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Check it: what the tools say when you slip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="class-1-lecture-3-your-editor-and-your-first-run">Class 1, Lecture 3 - Your editor and your first run<a class="headerlink" href="#class-1-lecture-3-your-editor-and-your-first-run" title="Permanent link">&para;</a></h1>
+<h2 id="what-you-will-have-at-the-end">What you will have at the end<a class="headerlink" href="#what-you-will-have-at-the-end" title="Permanent link">&para;</a></h2>
+<p>A mission of your own, open in an editor, and played once.</p>
+<ul>
+<li>VS Code is on your computer, with the Artemis AMD add-on in it.</li>
+<li>A folder named <code>MyMission</code> is in <code>data\missions</code>. One command made it.</li>
+<li>That folder is open in VS Code, and <code>mission.amd</code> shows in color.</li>
+<li>You have started the game on your mission and flown the ship from Helm.</li>
+</ul>
+<p><em>[Screenshot to add: VS Code with the <code>MyMission</code> folder open and <code>mission.amd</code> in front,
+and beside it the Helm window of the game.]</em></p>
+<p>You write no story today. The mission you make is a small finished sample: a station, a
+drifting hulk, and one quest in two steps. From Lecture 5 on you change it into your own.</p>
+<h2 id="the-video">The video<a class="headerlink" href="#the-video" title="Permanent link">&para;</a></h2>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/Q6D_hleogw4" title="Class 1, Lecture 3 - Your editor and your first run" allowfullscreen></iframe></div>
+
+<p>About 7 minutes. Subtitles are available in the player.</p>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A computer with Windows 10 or Windows 11, and Artemis Cosmos 1.4.0 from Steam or
+  itch.io.</li>
+<li>The internet, for the whole lecture. Four things are downloaded.</li>
+<li>A command prompt open in <code>data\missions</code> (Lecture 2).</li>
+<li>File name extensions shown in File Explorer (Lecture 2, Step 3).</li>
+<li><code>sbs version</code> prints <code>0.12</code> or a later number (Lecture 2, Step 6).</li>
+</ul>
+<p>Words for this lecture:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>A program for writing plain text files. It is to a mission what a word processor is to a letter</td>
+</tr>
+<tr>
+<td>VS Code</td>
+<td>The editor this course uses. Its full name is Visual Studio Code. It is free</td>
+</tr>
+<tr>
+<td>Add-on</td>
+<td>An extra part you put into VS Code. VS Code calls it an "extension". That is not the extension on the end of a file's name</td>
+</tr>
+<tr>
+<td>Template</td>
+<td>A small ready-made mission that a new mission is copied from</td>
+</tr>
+<tr>
+<td>Library</td>
+<td>A file of program parts that missions share. Libraries live in <code>__lib__</code>. You never open one</td>
+</tr>
+<tr>
+<td>Server</td>
+<td>The copy of the game that runs the mission. There is one</td>
+</tr>
+<tr>
+<td>Console</td>
+<td>A copy of the game that shows one station of the bridge: Helm, Science, and so on</td>
+</tr>
+</tbody>
+</table>
+<p>On this page the game's folder is written <code>C:\Cosmos</code>, as in Lecture 2. Your own path
+is longer. Read your own.</p>
+<h2 id="step-1-get-vs-code">Step 1 - Get VS Code<a class="headerlink" href="#step-1-get-vs-code" title="Permanent link">&para;</a></h2>
+<ol>
+<li>In your web browser, go to <code>https://code.visualstudio.com/</code>.</li>
+<li>Click the download button for Windows. A file whose name starts with
+   <code>VSCodeUserSetup</code> arrives in your Downloads folder.</li>
+<li>Double-click that file. Accept the agreement and click <strong>Next</strong> until you reach the
+   page named <strong>Select Additional Tasks</strong>. It has five boxes:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Box</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create a desktop icon</td>
+<td>Your choice</td>
+</tr>
+<tr>
+<td>Add "Open with Code" action to Windows Explorer file context menu</td>
+<td>Tick it</td>
+</tr>
+<tr>
+<td>Add "Open with Code" action to Windows Explorer directory context menu</td>
+<td>Tick it. It lets you right-click a folder and open it in VS Code</td>
+</tr>
+<tr>
+<td>Register Code as an editor for supported file types</td>
+<td>Leave it as it is</td>
+</tr>
+<tr>
+<td>Add to PATH (requires shell restart)</td>
+<td>Leave it ticked</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Click <strong>Next</strong>, then <strong>Install</strong>, then <strong>Finish</strong>. VS Code opens.</li>
+</ol>
+<p>This installer puts VS Code in your own Windows account. It does not ask for an
+administrator's password.</p>
+<p>The VS Code window has four parts. You will hear their names for the rest of the course.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Where</th>
+<th>What it is for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Activity Bar</td>
+<td>The narrow strip of icons down the left edge</td>
+<td>Chooses what the panel beside it shows</td>
+</tr>
+<tr>
+<td>Side Bar</td>
+<td>The panel beside the Activity Bar</td>
+<td>The list of your files, a search box, or the list of add-ons</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>The large area</td>
+<td>Your files, one tab for each</td>
+</tr>
+<tr>
+<td>Status Bar</td>
+<td>The strip along the bottom</td>
+<td>Small facts about the open file</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-2-add-the-artemis-amd-add-on">Step 2 - Add the Artemis AMD add-on<a class="headerlink" href="#step-2-add-the-artemis-amd-add-on" title="Permanent link">&para;</a></h2>
+<p>The add-on is one file. You download it, then hand it to VS Code.</p>
+<ol>
+<li>In your web browser, go to:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://github.com/artemis-sbs/sbs_cli/releases/tag/amd-vscode-v0.9.4
+</code></pre></div>
+<ol>
+<li>Under the word <strong>Assets</strong>, click <code>amd-language-0.9.4.vsix</code>. It goes to your Downloads
+   folder. If your browser says the file is not commonly downloaded, choose to keep it.</li>
+<li>In VS Code, click the Extensions icon in the Activity Bar. It is the one made of four
+   squares. Or press <code>Ctrl+Shift+X</code>.</li>
+<li>At the top of the Side Bar, click the three dots. Choose <strong>Install from VSIX...</strong></li>
+<li>Go to your Downloads folder, click <code>amd-language-0.9.4.vsix</code>, and click <strong>Install</strong>.</li>
+<li>If VS Code asks <code>Do you trust the publisher "artemis-sbs"?</code>, click <strong>Trust Publisher &amp;
+   Install</strong>.</li>
+</ol>
+<p>The add-on is now in the list, under <strong>Installed</strong>, as <strong>Artemis AMD</strong>.</p>
+<p>Two things to know:</p>
+<ul>
+<li><strong>Do not look for it with the search box.</strong> The add-on is not in the public list that
+  the search box reads. A search for "Artemis" offers other add-ons that have nothing to
+  do with this game. Install none of them.</li>
+<li><strong>A newer one may be out.</strong> Go to <code>https://github.com/artemis-sbs/sbs_cli/releases</code>
+  and look for the highest entry whose title starts <code>Artemis AMD (VS Code)</code>. The entry
+  at the very top of that page may be the <code>sbs</code> tool. That is not the add-on.</li>
+</ul>
+<h2 id="step-3-make-your-mission">Step 3 - Make your mission<a class="headerlink" href="#step-3-make-your-mission" title="Permanent link">&para;</a></h2>
+<p>Go to the command prompt. Read the prompt line. It ends <code>\data\missions&gt;</code>.</p>
+<p>First ask what you can start from:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sbs templates
+</code></pre></div>
+<p>The top of the answer:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Default release line: v1.4.0  (installed in __lib__)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>v1.4.0  &lt;- default
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  minimal        Minimal mission
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>                 One @map and a line of narration. The smallest thing that runs.
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  sandbox        Sandbox mission
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>                 Two sides, a station in an asteroid field, player ships and raider waves.
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  addon          Mastlib addon
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>                 A shareable addon plus a harness map to run it. Uses provides/requires.
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>  amd            AMD driven mission
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>                 Quests and science scans authored as data in a .amd fact sheet.
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>  ou             Open Universe mission
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>                 Built on the OpenUniverse engine: a whole universe authored in one .amd.
+</code></pre></div>
+<p>Five templates. This class uses <code>amd</code>. Class 5 uses <code>ou</code>. Below this block the answer
+lists older versions, which have fewer templates. Leave them.</p>
+<p>Now make the mission. Type this as one line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sbs create MyMission -t amd --title "The Cold Hulk"
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>create</code></td>
+<td>The command: make a new mission</td>
+</tr>
+<tr>
+<td><code>MyMission</code></td>
+<td>The name of the new folder. No spaces</td>
+</tr>
+<tr>
+<td><code>-t amd</code></td>
+<td>Which template to copy</td>
+</tr>
+<tr>
+<td><code>--title "The Cold Hulk"</code></td>
+<td>The mission's name in the game's list of missions. Put your own title between the quote marks</td>
+</tr>
+</tbody>
+</table>
+<p>Three rules for the title: no more than 40 characters, no colon, and no quote marks
+inside it.</p>
+<p>It prints:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Release line: v1.4.0  (installed in __lib__)
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Fetching mast_starter (v1.4.0) from https://github.com/artemis-sbs/mast_starter/archive/refs/heads/v1.4.0.zip
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Command ran successfully.
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Created MyMission from 'amd' (7 files)
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  artemis-sbs.sbs_utils.v1.4.0.sbslib
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  + 12 mastlib dependencies
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>Fetch these dependencies now? [Y/n]:
+</code></pre></div>
+<p>It has stopped to ask a question. Press Enter. That means yes.</p>
+<p>If a library your mission asks for is not on your computer yet, it prints one long line
+starting <code>Fetching</code> for each. The libraries came with the game, so most likely it prints
+none. It ends:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>MyMission is ready.
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  14 of its 14 libraries were already here and were kept as they are.
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  sbs fetch "MyMission" --update-libs   # get today's build of each (do this once)
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  sbs debug MyMission          # run it in the browser
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>  sbs lint MyMission           # check its AMD
+</code></pre></div>
+<p>The first of the three commands it names is the next step.</p>
+<p>Later lectures call your folder <code>MyMission</code>. Keep that name and those pages will match
+your screen.</p>
+<h2 id="step-4-bring-the-libraries-up-to-date">Step 4 - Bring the libraries up to date<a class="headerlink" href="#step-4-bring-the-libraries-up-to-date" title="Permanent link">&para;</a></h2>
+<p>The libraries are mended and published again from time to time. <code>sbs create</code> kept the
+ones that came with the game as they are. Get today's build of each, once:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sbs fetch "MyMission" --update-libs
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fetch</code></td>
+<td>The command: download</td>
+</tr>
+<tr>
+<td><code>"MyMission"</code></td>
+<td>Your mission's folder. The tool reads the list of libraries your mission asks for</td>
+</tr>
+<tr>
+<td><code>--update-libs</code></td>
+<td>The libraries only. Nothing in your folder is touched</td>
+</tr>
+</tbody>
+</table>
+<p>It prints one long <code>Fetching</code> line for each library, fifteen in all, and ends:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Libraries are up to date. MyMission itself was not changed.
+</code></pre></div>
+<p>It took seven seconds when this page was written. One of the fifteen is the game's
+shared art, and it is the slow one.</p>
+<p><strong>Never leave <code>--update-libs</code> off.</strong> Without it, <code>sbs fetch</code> does a different job: it downloads
+a published mission and puts it in place of the folder with that name.</p>
+<h2 id="step-5-open-your-mission-in-vs-code">Step 5 - Open your mission in VS Code<a class="headerlink" href="#step-5-open-your-mission-in-vs-code" title="Permanent link">&para;</a></h2>
+<p>You open the mission's FOLDER, not one file in it.</p>
+<ol>
+<li>In VS Code, open the <strong>File</strong> menu and choose <strong>Open Folder...</strong></li>
+<li>Go to <code>data\missions</code>. Click <code>MyMission</code> once. Click <strong>Select Folder</strong>.</li>
+</ol>
+<p>VS Code now decides whether it trusts the folder. Until it does, your add-on only colors
+the file: its checking, the outline and its other tools wait. The add-on says so itself,
+with <code>AMD: trust this folder</code> near the right end of the Status Bar. What else you see
+depends on your copy of VS Code:</p>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A box that asks <code>Do you trust the authors of the files in this folder?</code></td>
+<td>Click <strong>Yes, I trust the authors</strong>. You are the author</td>
+</tr>
+<tr>
+<td>No box. A band along the top that says <code>Restricted Mode is intended for safe code browsing. Trust this folder to enable all features.</code></td>
+<td>Click <strong>Manage</strong> on that band, then the <strong>Trust</strong> button</td>
+</tr>
+<tr>
+<td>Neither</td>
+<td>Look at the left end of the Status Bar. If it says <code>Restricted Mode</code>, click those words, then <strong>Trust</strong></td>
+</tr>
+</tbody>
+</table>
+<p>You do this once for each mission folder.</p>
+<p>The <strong>Trust</strong> button is on a page named <strong>Workspace Trust</strong>. After you click it the page
+says <code>You trust this folder</code>, the band at the top goes away, and so do the words
+<code>Restricted Mode</code>. Close that page with the <strong>X</strong> at its top right corner.</p>
+<p>If a panel named <strong>Chat</strong> fills the right side of the window, close it the same way, with
+the <strong>X</strong> at its own top right corner. This class does not use it, and your file gets the
+room.</p>
+<p>The Side Bar now lists your mission's files. At the top of the list is the folder's name,
+in capitals: <code>MYMISSION</code>. There are seven files:</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+<th>Will you change it?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mission.amd</code></td>
+<td>Your fact sheet: the quests and what Science reads</td>
+<td>Yes. Most of your writing goes here, from Lecture 5</td>
+</tr>
+<tr>
+<td><code>story.mast</code></td>
+<td>The story file. It puts the station and the hulk in space</td>
+<td>A few lines, from cards, in Lectures 7 and 11</td>
+</tr>
+<tr>
+<td><code>description.yaml</code></td>
+<td>The title you gave, for the game's list of missions</td>
+<td>Not in this class</td>
+</tr>
+<tr>
+<td><code>settings.yaml</code></td>
+<td>Settings, such as how many player ships</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>story.json</code></td>
+<td>The list of libraries the mission asks for</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>script.py</code></td>
+<td>Starts the mission inside the game</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>__lib__.json</code></td>
+<td>The version of the libraries</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>More files will appear here by themselves. Leave them where they are.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>When it appears</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mast.compile.log</code> and <code>mast.runtime.log</code></td>
+<td>The first time the mission runs</td>
+<td>Notes the game writes while it runs. Empty means it noticed nothing wrong. Lecture 6 reads them</td>
+</tr>
+<tr>
+<td><code>__pycache__</code></td>
+<td>The first time you run <code>sbs lint</code></td>
+<td>The tool's own scratch folder</td>
+</tr>
+</tbody>
+</table>
+<p>Now click <code>mission.amd</code> in the list. It opens in the Editor. Three things tell you the
+add-on is working:</p>
+<ol>
+<li><strong>Color.</strong> The lines that start with <code>#</code> are a different color from the sentences.</li>
+<li><strong>The word <code>AMD</code></strong> near the right end of the Status Bar. Without the add-on it says
+   <code>Plain Text</code>.</li>
+<li><strong>The outline.</strong> At the bottom of the file list is a heading named <strong>Outline</strong>. Click
+   it. It shows the eight headings of the file, one inside another:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Sample Mission
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  Quests
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    First Contact
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>      Find the Derelict
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>      Study the Derelict
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  Scans
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    Derelict Hull
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    Derelict Materials
+</code></pre></div>
+<p>Now see the add-on catch a mistake.</p>
+<ol>
+<li>Go to line 47. The line numbers are down the left edge of the Editor. The line is:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>### [Derelict Hull](derelict_scan)
+</code></pre></div>
+<ol>
+<li>Delete the last part, <code>(derelict_scan)</code>, so that the line ends at <code>]</code>.</li>
+<li>A red wavy line appears under that line. Open the <strong>View</strong> menu and choose
+   <strong>Problems</strong>. The panel that opens has one line, an error on line 47. It begins:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>there is no `(key)` after the `[Name]`
+</code></pre></div>
+<ol>
+<li>Press <code>Ctrl+Z</code>. The part you deleted comes back and the wavy line goes.</li>
+</ol>
+<p>The add-on checks the file as you type. It needs no command and no save. Lecture 6
+teaches you to read what it says.</p>
+<p>Two habits for the editor:</p>
+<table>
+<thead>
+<tr>
+<th>Habit</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl+S</code> saves the file</td>
+<td>VS Code does not save by itself. A round dot on a file's tab means it has changes that are not saved. The game and <code>sbs lint</code> read the saved file, not your screen</td>
+</tr>
+<tr>
+<td><code>Ctrl+Z</code> takes back the last thing you did</td>
+<td>Press it again to go back further</td>
+</tr>
+</tbody>
+</table>
+<p>If the tab of <code>mission.amd</code> shows a dot now, press <code>Ctrl+S</code>.</p>
+<h2 id="step-6-check-it">Step 6 - Check it<a class="headerlink" href="#step-6-check-it" title="Permanent link">&para;</a></h2>
+<p>One command reads your whole mission and says what looks wrong. Lecture 6 is all about
+it. Today, look for one word. In the command prompt:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sbs lint MyMission
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>== mission.amd ==
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  clean
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>1 amd + 1 mast file(s): 0 error(s), 0 warning(s)
+</code></pre></div>
+<p>The word is <code>clean</code>. You have not changed anything, so there is nothing to find.</p>
+<h2 id="step-7-play-it-in-the-game">Step 7 - Play it, in the game<a class="headerlink" href="#step-7-play-it-in-the-game" title="Permanent link">&para;</a></h2>
+<p>A <code>run</code> command starts several copies of the game at once: one server and the consoles
+you name. First ask what it would start, and start nothing. Add <code>--dry-run</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sbs run server,helm,science -m MyMission map=0 --dry-run
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>  server         C:\Cosmos\Artemis3-x64-release.exe autostartserver defaultmission=MyMission map=0
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>  helm           C:\Cosmos\Artemis3-x64-release.exe autostartclient clientautoconnectip=127.0.0.1 map=0
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>  science        C:\Cosmos\Artemis3-x64-release.exe autostartclient clientautoconnectip=127.0.0.1 map=0
+</code></pre></div>
+<p>One line for each window it would open. Read the first word of each line, and
+<code>defaultmission=MyMission</code> on the server's line.</p>
+<table>
+<thead>
+<tr>
+<th>Part of the command</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>run</code></td>
+<td>The command: start the game</td>
+</tr>
+<tr>
+<td><code>server,helm,science</code></td>
+<td>The windows you want: the server, and two consoles. Commas between them and NO spaces</td>
+</tr>
+<tr>
+<td><code>-m MyMission</code></td>
+<td>Which mission: your folder's name. Leave this off and you get the game's own mission</td>
+</tr>
+<tr>
+<td><code>map=0</code></td>
+<td>Start the mission's first map without being asked. No hyphens and no spaces</td>
+</tr>
+<tr>
+<td><code>--dry-run</code></td>
+<td>Show the lines and start nothing</td>
+</tr>
+</tbody>
+</table>
+<p>Now press the up arrow, rub out <code>--dry-run</code>, and press Enter:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sbs run server,helm,science -m MyMission map=0
+</code></pre></div>
+<p>Three game windows open, one after another, a couple of seconds apart. The tool writes
+each window's job on its title bar: <code>server</code>, <code>helm</code>, <code>science</code>. When the third is up,
+the command prompt is ready for you again. The game does not need it.</p>
+<p>In the game:</p>
+<ol>
+<li>Go to the <code>helm</code> window. Your ship is the Artemis. She starts about 3500 from the
+   station, DS 1.</li>
+<li>Find the <strong>Unknown Hulk</strong> on Helm's map. It is 9000 from the station.</li>
+<li>Fly to it. This is the sample quest: when you come within 2000 of the hulk, its first
+   step, <strong>Find the Derelict</strong>, is done.</li>
+<li>Look at the <code>science</code> window. The hulk is in its list.</li>
+</ol>
+<p>You will open the quest list in Lecture 4, and take it apart in Lecture 5.</p>
+<p>When you have looked around, close all three windows with the X in each one's corner.
+Close every game window before you start the game again.</p>
+<h2 id="step-8-the-rehearsal-your-mission-in-a-web-browser">Step 8 - The rehearsal: your mission in a web browser<a class="headerlink" href="#step-8-the-rehearsal-your-mission-in-a-web-browser" title="Permanent link">&para;</a></h2>
+<p>There is a second way to run a mission. It needs no game windows. The tool plays the
+mission itself and shows it as a page in your web browser. Use it for a quick look. Use
+the game when a lecture says "play it".</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sbs debug MyMission --map 0
+</code></pre></div>
+<p>It prints about twenty lines. Twelve of them start <code>[runner] mastlib:</code>, one for each
+library. Among the rest:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>[runner] story: C:\Cosmos\data\missions\MyMission\story.mast
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>[runner] running at 60 Hz  (MAST 5 Hz, physics 30 Hz background thread)
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>EXTRA_SHIP_DATA is off, so no mod ship data is being loaded - hulls a mod adds will not exist, and a picker or race list filtered to them will come up empty. Set EXTRA_SHIP_DATA: true to enable it.
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>no @media/skybox labels are loaded at all - nothing will be set. Is the add-on that declares them in story.json, or excluded by a profile?
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>[runner] auto-starting map: amd_sample
+</code></pre></div>
+<p>Then it stops printing, and the prompt line does not come back. That is right. The
+mission is running.</p>
+<p>Three of its lines read like faults. None of them is one.</p>
+<table>
+<thead>
+<tr>
+<th>Line starts</th>
+<th>What it means for you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EXTRA_SHIP_DATA is off</code></td>
+<td>The mission uses the game's own ships and no others. Yours does</td>
+</tr>
+<tr>
+<td><code>no @media/skybox labels are loaded</code></td>
+<td>The sample mission does not choose a picture for the sky</td>
+</tr>
+<tr>
+<td><code>Elapsed time:</code></td>
+<td>How long the first moment of the mission took. A note for programmers</td>
+</tr>
+</tbody>
+</table>
+<p>One line names the page: it starts <code>[runner] GUI server started</code> and ends
+<code>open http://localhost:8765/</code>.</p>
+<ol>
+<li>The page is served by your own computer, to your own computer only.</li>
+<li>In your web browser, go to:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>http://localhost:8765/
+</code></pre></div>
+<ol>
+<li>The page's tab is named <code>SBS Remote GUI</code>. It is the tool's drawing of a console.</li>
+<li>To stop: click the command prompt window and press <code>Ctrl+C</code>. It prints
+   <code>[runner] stopped</code>. If it then asks <code>Terminate batch job (Y/N)?</code>, type <code>Y</code> and press
+   Enter. The prompt line is back.</li>
+</ol>
+<p>The rehearsal is a stand-in for the game, not the game:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>The game (<code>sbs run</code>)</th>
+<th>The rehearsal (<code>sbs debug</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What you look at</td>
+<td>The game's own windows</td>
+<td>A page in your browser</td>
+</tr>
+<tr>
+<td>The command prompt while it runs</td>
+<td>Free</td>
+<td>Busy until you press <code>Ctrl+C</code></td>
+</tr>
+<tr>
+<td>Sensors</td>
+<td>Scan what is in range by themselves</td>
+<td>Scan nothing by themselves, so a quest step that waits for a scan does not finish</td>
+</tr>
+<tr>
+<td>What it is good for</td>
+<td>Every "Play it" step in this course</td>
+<td>A quick look, and the two log files</td>
+</tr>
+</tbody>
+</table>
+<p><code>sbs debug</code> also leaves a file named <code>debug.log</code> in <code>data\missions</code>. Leave it.</p>
+<h2 id="step-9-check-it-what-the-tools-say-when-you-slip">Step 9 - Check it: what the tools say when you slip<a class="headerlink" href="#step-9-check-it-what-the-tools-say-when-you-slip" title="Permanent link">&para;</a></h2>
+<p>Every row was typed on a copy of the game. The middle column is what came back. Two kinds
+of row were typed with one more word on the end: the <code>sbs run</code> rows with <code>--dry-run</code>, so
+that nothing was started, and the <code>sbs debug</code> rows with <code>--no-gui</code>, which runs the
+mission without the page.</p>
+<p><strong>Making the mission:</strong></p>
+<table>
+<thead>
+<tr>
+<th>What you typed</th>
+<th>What the window says</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs create</code></td>
+<td><code>Error: Missing argument 'NAME'.</code></td>
+<td>The folder's name goes after <code>create</code></td>
+</tr>
+<tr>
+<td><code>sbs create My Mission -t amd</code></td>
+<td><code>Error: Got unexpected extra argument (Mission)</code></td>
+<td>A space ends a word. Use a name with no spaces</td>
+</tr>
+<tr>
+<td><code>sbs create Second -t amdd</code></td>
+<td><code>Error: no template 'amdd'. Available: minimal, sandbox, addon, amd, ou</code></td>
+<td>The template's name is misspelled</td>
+</tr>
+<tr>
+<td><code>sbs create Ninth -t AMD</code></td>
+<td>It works. Capitals do not matter in a template's name</td>
+<td>Nothing to mend</td>
+</tr>
+<tr>
+<td><code>sbs create MyMission -t amd</code>, a second time</td>
+<td><code>Error: C:\Cosmos\data\missions\MyMission already exists and is not empty - pick another name, or move it aside</code></td>
+<td>The tool never writes over a mission. Good. <code>mymission</code> gets the same answer: capitals do not make a new name</td>
+</tr>
+<tr>
+<td>The same, with the internet off</td>
+<td><code>Error: could not reach github.com/artemis-sbs/mast_starter - check the network, or pass -b</code></td>
+<td>The template is downloaded each time. No folder is made</td>
+</tr>
+<tr>
+<td><code>--title "Salvage: Run"</code></td>
+<td><code>Error: --title rejected: a ':' makes YAML read it as a mapping</code></td>
+<td>No colon in a title</td>
+</tr>
+<tr>
+<td>A title of 47 characters</td>
+<td><code>Error: --title rejected: it is 47 characters; the mission list truncates long names</code></td>
+<td>40 at most</td>
+</tr>
+<tr>
+<td><code>-title "Nine"</code> (one hyphen)</td>
+<td><code>Error: Got unexpected extra argument (Nine)</code></td>
+<td><code>--title</code> has two hyphens</td>
+</tr>
+<tr>
+<td><code>sbs creat MyMission</code></td>
+<td><code>Error: No such command 'creat'. Did you mean 'create'?</code></td>
+<td>A slip in the second word</td>
+</tr>
+<tr>
+<td><code>sbs create Seventh -t amd</code>, with the prompt inside a mission's folder</td>
+<td><code>'sbs' is not recognized as an internal or external command,</code></td>
+<td>The wrong folder. Read the prompt line (Lecture 2)</td>
+</tr>
+<tr>
+<td><code>n</code> at the question</td>
+<td><code>Skipped. Type `sbs fetch "MyMission" --update-libs` when you are ready.</code></td>
+<td>The folder is made and no library is fetched. Step 4 fetches them</td>
+</tr>
+<tr>
+<td><code>sbs create Second</code>, with no <code>-t</code></td>
+<td>A numbered list of the five templates, then <code>Template [1]:</code></td>
+<td>Type <code>4</code> and press Enter</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The libraries:</strong></p>
+<table>
+<thead>
+<tr>
+<th>What you typed</th>
+<th>What the window says</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs fetch "MyMision" --update-libs</code></td>
+<td><code>ERROR: no mission here to read the list of libraries from: C:\Cosmos\data\missions\MyMision</code></td>
+<td>The folder's name is misspelled</td>
+</tr>
+<tr>
+<td><code>sbs fetch MyMission --update-libs</code> (no quote marks)</td>
+<td>The same as with them</td>
+<td>The quote marks matter only for a name with a space in it</td>
+</tr>
+<tr>
+<td><code>sbs fetch "MyMission" --update-libs</code>, with the internet off</td>
+<td>About a minute of lines that start <code>Command failed</code> and <code>ERROR: Fetching</code>, then a list under <code>ERROR: these dependencies could not be fetched:</code> and <code>The mission(s) will NOT run without them.</code></td>
+<td>Nothing was changed. The libraries you had are still there, and the mission runs as it did before. Mend the connection and type it again</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Starting the game</strong> (each with <code>--dry-run</code>):</p>
+<table>
+<thead>
+<tr>
+<th>What you typed</th>
+<th>What the window says</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs run server,helm -m MyMision map=0</code></td>
+<td><code>note: mission folder 'MyMision' not found in C:\Cosmos\data\missions - the server will not find it either</code></td>
+<td>The folder's name is misspelled. Without <code>--dry-run</code> the windows open all the same</td>
+</tr>
+<tr>
+<td><code>sbs run helm -m MyMission map=0</code></td>
+<td><code>note: no 'Server' in the list, so nothing is serving on 127.0.0.1 - add Server, pass --ip, or use --no-auto</code></td>
+<td>A console and no server. Put <code>server,</code> in front</td>
+</tr>
+<tr>
+<td><code>sbs run server,helm -m MyMission --map 0</code></td>
+<td><code>Error: No such option '--map'. Did you mean '--ip'?</code></td>
+<td>For <code>run</code> it is <code>map=0</code>. The form <code>--map 0</code> belongs to <code>debug</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Starting the rehearsal:</strong></p>
+<table>
+<thead>
+<tr>
+<th>What you typed</th>
+<th>What the window says</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs debug MyMision --map 0</code></td>
+<td><code>Error: not a folder: MyMision</code>, then <code>Check the spelling, and that the prompt is in data\missions (type</code>dir<code>to see the mission folders).</code></td>
+<td>The folder's name is misspelled, or the prompt is in another folder</td>
+</tr>
+<tr>
+<td><code>sbs debug --map 0</code>, with no folder name</td>
+<td><code>Error: not a mission: . has no story.mast. Name the mission's own folder, for example:  sbs debug MyMission</code></td>
+<td>Put your folder's name after <code>debug</code></td>
+</tr>
+<tr>
+<td><code>sbs debug MyMission map=0</code></td>
+<td><code>Error: Got unexpected extra argument (map=0)</code></td>
+<td>For <code>debug</code> it is <code>--map 0</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>What nothing warns you about:</strong></p>
+<table>
+<thead>
+<tr>
+<th>What you did</th>
+<th>What happens</th>
+<th>What tells you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs run MyMission</code></td>
+<td>The name is taken for a console. One window opens, as a console of that name, with no server and no mission</td>
+<td>Only the <code>note: no 'Server' in the list</code> line. The window opens all the same</td>
+</tr>
+<tr>
+<td><code>sbs run -m MyMission</code>, with no list of windows</td>
+<td>Six windows: the server and five consoles</td>
+<td>Nothing. Close them</td>
+</tr>
+<tr>
+<td><code>sbs run</code> with nothing after it</td>
+<td>The same six windows, on the game's own mission</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>A space after a comma: <code>sbs run server, helm -m MyMission map=0</code></td>
+<td>Two windows. The second has no console name</td>
+<td>Nothing. With <code>--dry-run</code> its line starts with a blank</td>
+</tr>
+<tr>
+<td>A console's name misspelled: <code>server,hlem</code></td>
+<td>A window is started for a console named <code>hlem</code></td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>sbs create</code> with no <code>--title</code></td>
+<td>The mission is named <code>AMD Sample</code> in the game's list, like everybody else's</td>
+<td>Nothing. Open <code>description.yaml</code> and change the words after <code>Visible Mission Name:</code></td>
+</tr>
+<tr>
+<td>A folder name with a space, in quote marks: <code>sbs create "My Mission" -t amd</code></td>
+<td>It works. Every command after it needs the quote marks: <code>sbs lint My Mission</code> answers <code>Error: Got unexpected extra argument (Mission)</code></td>
+<td>Nothing, until then</td>
+</tr>
+<tr>
+<td>The folder is not trusted in VS Code</td>
+<td><code>mission.amd</code> has its colors, but no wavy lines and no outline</td>
+<td><code>Restricted Mode</code> at the left of the Status Bar and <code>AMD: trust this folder</code> at the right. Click either</td>
+</tr>
+</tbody>
+</table>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="headerlink" href="#if-something-goes-wrong" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>Likely cause, and what to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs version</code> answers a number lower than <code>0.12</code>, or <code>sbs create</code> does not end <code>MyMission is ready.</code>, or <code>sbs lint</code> says <code>ERROR: could not load sbs_utils to lint</code>, or a block that starts <code>Traceback</code> ends in <code>ImportError</code></td>
+<td>Your tool or your libraries are older than this page. Type <code>sbs update</code>, then <code>sbs fetch "MyMission" --update-libs</code></td>
+</tr>
+<tr>
+<td>It all worked last week and now gives the row above</td>
+<td>The store put its own files back. Steam does this when you ask it to check the game's files (<strong>Properties</strong>, <strong>Installed Files</strong>, <strong>Verify integrity of game files</strong>), and a game update can do it too. The tool and the missions that came with the game go back to what the game shipped with. <code>MyMission</code> is not one of the game's files and is left alone. Type the two commands of the row above. (Read, not tried)</td>
+</tr>
+<tr>
+<td>A line that starts <code>not checked:</code> under <code>clean</code></td>
+<td>One library is missing. Step 4</td>
+</tr>
+<tr>
+<td><code>ERROR: not a folder: MyMision</code></td>
+<td>The folder's name is misspelled, or the prompt is not in <code>data\missions</code></td>
+</tr>
+<tr>
+<td><code>ERROR: which mission? Put its folder name after the command:</code></td>
+<td>You typed <code>sbs lint</code> with nothing after it</td>
+</tr>
+<tr>
+<td><code>mission.amd</code> has no color in VS Code, and the Status Bar says <code>Plain Text</code></td>
+<td>The add-on is not installed (Step 2), or it is older than 0.9.4 and the folder is not trusted (look for <code>Restricted Mode</code> in the Status Bar, and do the table in Step 5). Or the file is misnamed (see the next row)</td>
+</tr>
+<tr>
+<td>The file list shows <code>mission.amd.txt</code></td>
+<td>The file was saved from another program with <code>.txt</code> on the end. Right-click it in the file list, choose <strong>Rename...</strong>, and take the <code>.txt</code> off. <code>sbs lint</code> says so too: "There is a <code>mission.amd.txt</code> in the folder: the name has to END in <code>.amd</code>"</td>
+</tr>
+<tr>
+<td>Color, and no wavy line when you break line 47</td>
+<td>The add-on's checker did not start. Do Step 4, then close VS Code and open it again. If that does not mend it, open the <strong>View</strong> menu, choose <strong>Output</strong>, and pick <strong>Artemis AMD</strong> in the list at the right of that panel</td>
+</tr>
+<tr>
+<td>A box: <code>Artemis AMD: could not start the language server. Set "amd.cosmosPath" to your Cosmos install folder.</code></td>
+<td>Most often the same cause as the row above. Do Step 4 before you change any setting</td>
+</tr>
+<tr>
+<td>The file list shows many folders, and the name at its top is <code>MISSIONS</code></td>
+<td>You opened <code>data\missions</code>, not your mission. <strong>File</strong>, <strong>Open Folder...</strong>, and choose <code>MyMission</code></td>
+</tr>
+<tr>
+<td>The Side Bar says <code>You have not yet opened a folder.</code> and offers an <strong>Open Folder</strong> button</td>
+<td>You opened one file, not the folder. Click that button and choose <code>MyMission</code></td>
+</tr>
+<tr>
+<td>The game windows open on the game's own mission</td>
+<td><code>-m MyMission</code> is missing from the <code>run</code> line</td>
+</tr>
+<tr>
+<td>The game windows open and your mission does not start by itself</td>
+<td><code>map=0</code> is missing from the <code>run</code> line, or the folder's name after <code>-m</code> is misspelled. Close the windows, add <code>--dry-run</code>, and read the server's line</td>
+</tr>
+<tr>
+<td>A game window comes up as the wrong console</td>
+<td>Close all the game windows and run the line again with <code>--settle 4</code> on the end. It leaves more time between windows</td>
+</tr>
+<tr>
+<td>The browser says it cannot reach <code>localhost:8765</code></td>
+<td>The rehearsal is not running. Look at the command prompt: if the prompt line is back, start it again</td>
+</tr>
+<tr>
+<td>You closed the command prompt while the rehearsal was running</td>
+<td>The rehearsal runs inside that window, so it stops with it. Open a new prompt (Lecture 2, Step 4) <em>[Not checked: see the script.]</em></td>
+</tr>
+<tr>
+<td>You closed the command prompt while the game was running</td>
+<td>The game windows do not need the prompt and should stay. Close them with their own X <em>[Not checked: see the script.]</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Do it without the page, then check yourself against it.</p>
+<ol>
+<li>Make a second mission, named <code>Practice</code>, from the <code>amd</code> template, with a title of your
+   own.</li>
+<li>Open the <code>Practice</code> folder in VS Code and trust it. Find your title in
+   <code>description.yaml</code>.</li>
+<li>Open its <code>mission.amd</code>. Break line 47 the way Step 5 does, read the error, and take
+   the change back.</li>
+<li>Type the <code>run</code> line for <code>Practice</code> with a server and one console, Helm, and with
+   <code>--dry-run</code>. Read the two lines. Then run it without <code>--dry-run</code> and fly to the hulk.</li>
+<li>Make three slips from the tables in Step 9 on purpose. Read each message before you
+   look at the table.</li>
+<li>Close the game. In VS Code, open your <code>MyMission</code> folder again: <strong>File</strong>, then
+   <strong>Open Recent</strong>.</li>
+</ol>
+<p><code>Practice</code> is yours to break. To be rid of it, delete its folder in File Explorer.</p>
+<h2 id="checkpoint">Checkpoint<a class="headerlink" href="#checkpoint" title="Permanent link">&para;</a></h2>
+<p>You are done when all five are true:</p>
+<ul>
+<li>VS Code shows the seven files of <code>MyMission</code> in its file list.</li>
+<li><code>mission.amd</code> is in color, and the Status Bar says <code>AMD</code>.</li>
+<li><code>sbs lint MyMission</code> says <code>clean</code>, with no line under it that starts <code>not checked:</code>.</li>
+<li><code>sbs run server,helm,science -m MyMission map=0</code> opens three windows, and you flew the
+  ship from the one named <code>helm</code>.</li>
+<li>You can say which of the seven files you will write in, and which one you will change a
+  few lines of.</li>
+</ul>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>Lecture 4 is markdown, the marks your mission file is written in. You do it in VS Code,
+with your <code>MyMission</code> folder open, so leave things as they are.</p>
+<h2 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
+<ul>
+<li>"sbs - the Artemis Cosmos command-line helper", the tool's own README: the parts named
+  "Starting a new mission", "<code>sbs run</code> - launch the game" and "<code>sbs debug</code> - test-fly a
+  mission in the browser".</li>
+<li>"The AMD editor for VS Code" in the Open Universe documentation: what else the add-on
+  can do. You meet its story tools in Class 2.</li>
+<li>"Creating a mission" in the library documentation: what each file in a mission's folder
+  is for.</li>
+<li>"Workspace Trust" in the VS Code documentation, if you want to know why VS Code asked.</li>
+</ul>
+<hr />
+<p><a href="../../downloads/c1-03-editor-and-first-run.zip">Download this lecture's finished files</a> (a zip of its <code>example</code> folder).</p>
+<p><a href="https://github.com/artemis-sbs/author-courses/issues/new?template=lecture-feedback.md&amp;title=c1-03-editor-and-first-run%3A+">Report a problem with this lecture</a> | <a href="https://github.com/artemis-sbs/author-courses/blob/main/c1-03-editor-and-first-run/lesson.md">This page's source</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../02-files-folders-command-prompt/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2. Files, folders and the command prompt">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                2. Files, folders and the command prompt
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../04-markdown-in-twenty-minutes/" class="md-footer__link md-footer__link--next" aria-label="Next: 4. Markdown in twenty minutes">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                4. Markdown in twenty minutes
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.footer", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

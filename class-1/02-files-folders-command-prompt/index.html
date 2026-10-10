@@ -1,0 +1,2207 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Write missions for Artemis Cosmos. A course for storytellers, not programmers.">
+      
+      
+      
+        <link rel="canonical" href="https://artemis-sbs.github.io/author-courses/class-1/02-files-folders-command-prompt/">
+      
+      
+        <link rel="prev" href="../01-what-you-are-going-to-build/">
+      
+      
+        <link rel="next" href="../03-editor-and-first-run/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>2. Files, folders and the command prompt - Cosmos Author Courses</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-1-lecture-2-files-folders-and-the-command-prompt" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cosmos Author Courses" class="md-header__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cosmos Author Courses
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. Files, folders and the command prompt
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Light"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Dark"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cosmos Author Courses" class="md-nav__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cosmos Author Courses
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reviewers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For reviewers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-what-you-are-going-to-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What you are going to build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Files, folders and the command prompt
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Files, folders and the command prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-find-the-games-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Find the game's folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-go-down-to-missions-and-read-the-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Go down to missions, and read the path
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-show-file-name-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Show file name extensions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-open-a-command-prompt-in-datamissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Open a command prompt in data\missions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-read-the-prompt-line-and-look-around" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Read the prompt line, and look around
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-your-first-command-to-the-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Your first command to the tool
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-ask-the-tool-whether-this-computer-is-set-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Ask the tool whether this computer is set up
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-get-lost-on-purpose-and-come-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Get lost on purpose, and come back
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-check-it-what-the-window-says-when-you-slip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Check it: what the window says when you slip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-use-it-the-long-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Use it: the long report
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-editor-and-first-run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Your editor and your first run
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-markdown-in-twenty-minutes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Markdown in twenty minutes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-the-shape-of-a-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. The shape of a record
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-lint-is-your-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Lint is your editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-roles-and-signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Roles and signals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-first-quest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Your first quest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-chains-and-trees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Chains and trees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-things-quests-point-at/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Things quests point at
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-just-enough-mast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Just enough MAST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-ship-a-quest-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Capstone: ship a quest mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-find-the-games-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Find the game's folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-go-down-to-missions-and-read-the-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Go down to missions, and read the path
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-show-file-name-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Show file name extensions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-open-a-command-prompt-in-datamissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Open a command prompt in data\missions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-read-the-prompt-line-and-look-around" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Read the prompt line, and look around
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-your-first-command-to-the-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Your first command to the tool
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-ask-the-tool-whether-this-computer-is-set-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Ask the tool whether this computer is set up
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-get-lost-on-purpose-and-come-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Get lost on purpose, and come back
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-check-it-what-the-window-says-when-you-slip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Check it: what the window says when you slip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-use-it-the-long-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Use it: the long report
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="class-1-lecture-2-files-folders-and-the-command-prompt">Class 1, Lecture 2 - Files, folders and the command prompt<a class="headerlink" href="#class-1-lecture-2-files-folders-and-the-command-prompt" title="Permanent link">&para;</a></h1>
+<h2 id="what-you-will-have-at-the-end">What you will have at the end<a class="headerlink" href="#what-you-will-have-at-the-end" title="Permanent link">&para;</a></h2>
+<p>A window open in the right folder, one command typed into it, and its answer read.</p>
+<p>You will find the game's folder on your computer. You will find the <code>missions</code> folder
+inside it. You will open a command prompt there and ask the game's own tool two
+questions: which version are you, and is this computer set up? Every later lecture
+begins with the words "a command prompt open in <code>data\missions</code>". After today that is
+ten seconds' work.</p>
+<p><em>[Screenshot to add: File Explorer on <code>data\missions</code>, the command prompt beside it, and
+the prompt line marked.]</em></p>
+<p>You install nothing in this lecture. One step may replace the tool with its newest
+version. Nothing else on your computer changes.</p>
+<h2 id="the-video">The video<a class="headerlink" href="#the-video" title="Permanent link">&para;</a></h2>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/oloVptKQtuQ" title="Class 1, Lecture 2 - Files, folders and the command prompt" allowfullscreen></iframe></div>
+
+<p>About 10 minutes. Subtitles are available in the player.</p>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A computer with Windows 10 or Windows 11.</li>
+<li>Artemis Cosmos 1.4.0, installed from Steam or from itch.io. It is the copy you played
+  in Lecture 1.</li>
+<li>The internet, for one step.</li>
+</ul>
+<p>Words for this lecture:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File</td>
+<td>One named thing on your disk: a picture, a page of text, a program</td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>A named box that holds files and other folders</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td>The last part of a file's name, after the last dot: <code>.bat</code>, <code>.amd</code>, <code>.txt</code>. It says what kind of file it is</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>The full address of a file or a folder: the drive, then every folder on the way down, joined by backslashes. <code>C:\Cosmos\data\missions</code></td>
+</tr>
+<tr>
+<td>Command prompt</td>
+<td>A window where you type an instruction and press Enter, and the answer is printed under it</td>
+</tr>
+<tr>
+<td>Current folder</td>
+<td>The folder the command prompt is standing in. The window shows it at the start of every line</td>
+</tr>
+<tr>
+<td>Command</td>
+<td>The line you type</td>
+</tr>
+<tr>
+<td>Switch</td>
+<td>A word in a command that starts with two hyphens. It changes how the command works: <code>--env</code></td>
+</tr>
+</tbody>
+</table>
+<p>On this page the game's folder is written <code>C:\Cosmos</code>. That is a short stand-in. Steam
+or itch.io chose your folder for you, so your path is longer and may have spaces in it.
+The tool does not mind spaces. Wherever this page says <code>C:\Cosmos</code>, read your own.</p>
+<h2 id="step-1-find-the-games-folder">Step 1 - Find the game's folder<a class="headerlink" href="#step-1-find-the-games-folder" title="Permanent link">&para;</a></h2>
+<p>The game's folder is the one that holds the program the game runs from. The program's
+name is <code>Artemis3-x64-release.exe</code>. Windows may show it without the <code>.exe</code> on the end.
+Step 3 explains why.</p>
+<p>The app you got the game from will open the folder for you:</p>
+<table>
+<thead>
+<tr>
+<th>You got the game from</th>
+<th>How to open its folder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steam</td>
+<td>In the <strong>Library</strong>, right-click the game. Choose <strong>Manage</strong>, then <strong>Browse local files</strong></td>
+</tr>
+<tr>
+<td>The itch.io app</td>
+<td>In your library, right-click the game, or click the gear beside <strong>Launch</strong>. Choose <strong>Manage</strong>, then <strong>Open folder in Explorer</strong></td>
+</tr>
+</tbody>
+</table>
+<p>A File Explorer window opens on the game's folder. With Steam the path usually ends
+<code>\Steam\steamapps\common\</code> and then the game's own folder.</p>
+<p>If neither works: in File Explorer (the yellow folder on the taskbar, or the Windows
+key and <code>E</code>), click <strong>This PC</strong>, click in the search box, and type
+<code>Artemis3-x64-release</code>. When it is found, right-click it and choose <strong>Open file
+location</strong>.</p>
+<p>You are in the right folder when you see these four names:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Artemis3-x64-release</code></td>
+<td>The game itself</td>
+</tr>
+<tr>
+<td><code>data</code></td>
+<td>Everything the game shows and plays: art, sound, missions</td>
+</tr>
+<tr>
+<td><code>PyRuntime</code></td>
+<td>A helper program the game brings with it. The tool you meet today runs on it</td>
+</tr>
+<tr>
+<td><code>PyAddons</code></td>
+<td>A few more helper files</td>
+</tr>
+</tbody>
+</table>
+<p>There are other files beside them. Leave them alone.</p>
+<h2 id="step-2-go-down-to-missions-and-read-the-path">Step 2 - Go down to <code>missions</code>, and read the path<a class="headerlink" href="#step-2-go-down-to-missions-and-read-the-path" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Double-click <code>data</code>.</li>
+<li>Double-click <code>missions</code>.</li>
+</ol>
+<p>This is where you will work for the whole course. Look at what is here:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LegendaryMissions</code>, and other folders</td>
+<td>One folder for each mission. Yours will be one more folder, beside these</td>
+</tr>
+<tr>
+<td><code>__lib__</code></td>
+<td>Program parts that missions share. You do not change it</td>
+</tr>
+<tr>
+<td>Two files whose names start with <code>sbs</code></td>
+<td>The tool. Step 3 shows you their whole names</td>
+</tr>
+</tbody>
+</table>
+<p>Now the path. At the top of the window is the address bar. It shows the folders you came
+through, one after another. Click once in the empty part of the address bar, to the
+right of the last name. The names turn into one line of text:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>C:\Cosmos\data\missions
+</code></pre></div>
+<p>That line is the path of this folder. Read it from the left: the drive <code>C:</code>, the folder
+<code>Cosmos</code> on it, the folder <code>data</code> inside that, the folder <code>missions</code> inside that. The
+backslash <code>\</code> means "inside".</p>
+<p>Press Esc to put the address bar back.</p>
+<p>Write your own path down. You will want it again.</p>
+<h2 id="step-3-show-file-name-extensions">Step 3 - Show file name extensions<a class="headerlink" href="#step-3-show-file-name-extensions" title="Permanent link">&para;</a></h2>
+<p>Windows hides the extension of every kind of file it knows. So a file named <code>sbs.bat</code>
+is shown as <code>sbs</code>, and a file named <code>mission.amd.txt</code> is shown as <code>mission.amd</code>. The
+second one costs new writers an evening: the file looks right, and the game cannot find
+it.</p>
+<p>Turn the hiding off. You do this once, and Windows remembers.</p>
+<table>
+<thead>
+<tr>
+<th>Windows</th>
+<th>Where the switch is, in File Explorer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows 11</td>
+<td><strong>View</strong>, then <strong>Show</strong>, then <strong>File name extensions</strong></td>
+</tr>
+<tr>
+<td>Windows 10</td>
+<td>The <strong>View</strong> tab, then tick <strong>File name extensions</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Look at the folder again. The file that read <code>sbs</code> now reads <code>sbs.bat</code>.</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs.bat</code></td>
+<td>Two lines of text. It starts the tool. When you type <code>sbs</code>, this is the file Windows runs</td>
+</tr>
+<tr>
+<td><code>sbs.pyz</code></td>
+<td>The tool itself</td>
+</tr>
+</tbody>
+</table>
+<p>These are the extensions you will meet in this class:</p>
+<table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Kind of file</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.amd</code></td>
+<td>Your fact sheet: quests, scans, people. Most of your writing goes here</td>
+</tr>
+<tr>
+<td><code>.mast</code></td>
+<td>The story file. You change a few lines of it, from cards</td>
+</tr>
+<tr>
+<td><code>.json</code>, <code>.yaml</code></td>
+<td>Settings</td>
+</tr>
+<tr>
+<td><code>.log</code></td>
+<td>Notes the game writes while it runs</td>
+</tr>
+<tr>
+<td><code>.txt</code></td>
+<td>Plain text. If this ends up on the end of one of the names above, the file is misnamed</td>
+</tr>
+<tr>
+<td><code>.bat</code>, <code>.pyz</code></td>
+<td>The tool. Do not open or rename them</td>
+</tr>
+</tbody>
+</table>
+<p>Do not double-click <code>sbs.bat</code> or <code>sbs.pyz</code>. You use them from the command prompt.</p>
+<h2 id="step-4-open-a-command-prompt-in-datamissions">Step 4 - Open a command prompt in <code>data\missions</code><a class="headerlink" href="#step-4-open-a-command-prompt-in-datamissions" title="Permanent link">&para;</a></h2>
+<ol>
+<li>In File Explorer, be in <code>data\missions</code>.</li>
+<li>Click once in the empty part of the address bar, as you did in Step 2. The path is
+   highlighted.</li>
+<li>Type <code>cmd</code>. It replaces the path.</li>
+<li>Press Enter.</li>
+</ol>
+<p>A window opens with a dark background and a few lines of text. The last line is:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>C:\Cosmos\data\missions&gt;
+</code></pre></div>
+<p>That is the command prompt. Opened this way, it starts in the folder you were looking
+at.</p>
+<p>Look at the start of that last line before you type anything, now and every time. If it
+starts with the letters <code>PS</code>, you have a different program, called PowerShell. It looks
+almost the same and it will not run the tool. Type <code>cmd</code>, press Enter, and the <code>PS</code> goes
+away.</p>
+<p>Windows offers two other ways to open a window like this: <strong>Open in Terminal</strong> on the
+right-click menu, and Shift with a right-click. Both can give you PowerShell. Use the
+address bar.</p>
+<h2 id="step-5-read-the-prompt-line-and-look-around">Step 5 - Read the prompt line, and look around<a class="headerlink" href="#step-5-read-the-prompt-line-and-look-around" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>C:\Cosmos\data\missions&gt;
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>C:\Cosmos\data\missions</code></td>
+<td>The current folder: where the window is standing. It is the same path you read in Step 2</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>"Your turn." The window is waiting for a command</td>
+</tr>
+</tbody>
+</table>
+<p>You type a command after the <code>&gt;</code> and press Enter. Nothing happens until you press
+Enter. A box on this page that holds a command shows only the words you type. Never type
+the path or the <code>&gt;</code>.</p>
+<p>Your first command lists what is in the current folder. Type it and press Enter:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>dir
+</code></pre></div>
+<p>It prints one line for each thing in the folder. Here are four of them:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>10/04/2026  09:31 PM    &lt;DIR&gt;          LegendaryMissions
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>10/05/2026  10:36 AM               121 sbs.bat
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>10/05/2026  10:36 AM         2,756,752 sbs.pyz
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>10/05/2026  11:13 AM    &lt;DIR&gt;          __lib__
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>On the line</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The date and time</td>
+<td>When it was last changed. Yours differ</td>
+</tr>
+<tr>
+<td><code>&lt;DIR&gt;</code></td>
+<td>This one is a folder</td>
+</tr>
+<tr>
+<td>A number</td>
+<td>This one is a file, and that is its size</td>
+</tr>
+<tr>
+<td>The last word</td>
+<td>Its name, with its extension</td>
+</tr>
+</tbody>
+</table>
+<p>There are a few more lines above and below the list. The list itself starts with two
+odd names, <code>.</code> and <code>..</code>. One dot stands for this folder, and two dots for the folder that
+holds it. You use the two dots in Step 8.</p>
+<p>It is the same list File Explorer shows you. The command prompt and File Explorer are
+two windows onto one folder.</p>
+<p>Four keys to know now:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enter</td>
+<td>Runs the line you typed</td>
+</tr>
+<tr>
+<td>Up arrow</td>
+<td>Brings back the last command you ran. Press it again for the one before</td>
+</tr>
+<tr>
+<td>Backspace</td>
+<td>Rubs out the character before the cursor</td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>Clears the line you are typing</td>
+</tr>
+</tbody>
+</table>
+<p>To paste into the window, press <code>Ctrl+V</code>, or click the right mouse button. To copy out of
+it, drag across the text with the mouse and press <code>Ctrl+C</code>.</p>
+<h2 id="step-6-your-first-command-to-the-tool">Step 6 - Your first command to the tool<a class="headerlink" href="#step-6-your-first-command-to-the-tool" title="Permanent link">&para;</a></h2>
+<p>The tool is called <code>sbs</code>. A command to it is the word <code>sbs</code>, a space, and what you want.
+Type:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sbs version
+</code></pre></div>
+<p>The answer is two lines:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>0.12
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>C:\Cosmos\data\missions
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0.12</code></td>
+<td>The tool's version</td>
+</tr>
+<tr>
+<td><code>C:\Cosmos\data\missions</code></td>
+<td>The folder the tool lives in. It should be the path you wrote down</td>
+</tr>
+</tbody>
+</table>
+<p>Read the version as two whole numbers with a dot between them. <code>0.12</code> is "nought, twelve".
+It is newer than <code>0.9</code>, which is "nought, nine".</p>
+<p>This course needs <code>0.12</code> or a higher number. The tool that comes with 1.4.0 has one.</p>
+<p>The tool is mended and published again from time to time. To get the newest, with the
+internet on:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sbs update
+</code></pre></div>
+<p>It fetches the newest <code>sbs.bat</code> and <code>sbs.pyz</code> and puts them over the ones you have. It
+ends with:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Updated sbs in C:\Cosmos\data\missions. Type `sbs version` to see the new number.
+</code></pre></div>
+<p>If the download did not work, it ends with this, and leaves the tool as it was:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>ERROR: the new sbs could not be downloaded. Nothing was changed: the sbs you have still works. Check the internet connection and type `sbs update` again.
+</code></pre></div>
+<p>Do this whenever <code>sbs version</code> answers a number lower than a page of this course
+names. Then ask <code>sbs version</code> again.</p>
+<h2 id="step-7-ask-the-tool-whether-this-computer-is-set-up">Step 7 - Ask the tool whether this computer is set up<a class="headerlink" href="#step-7-ask-the-tool-whether-this-computer-is-set-up" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sbs doctor --env
+</code></pre></div>
+<p><code>doctor</code> is the command. <code>--env</code> is a switch: it means "this computer only, not the
+missions". The answer is about thirty lines:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sbs
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  ok  version     0.12
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>  ok  running     from sbs.pyz
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>  ok  missions    C:\Cosmos\data\missions
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>Python
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>  ok  version     3.11.1 embedded (C:\Cosmos\PyRuntime\python.exe)
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>  ok  paths       PYTHONPATH is ignored and site-packages is not on sys.path
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>      use `sbs deps install X` for optional libraries
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>Layout
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>  ok  __lib__     112 libraries
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>  ok  sbs_utils   sbslib: C:\Cosmos\data\missions\__lib__\artemis-sbs.sbs_utils.v1.4.0.sbslib
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>  ok  graphics    C:\Cosmos\data\graphics
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>  --  faces       cosmos_dev is not installed
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>      faces will print as placeholders in `sbs docs`
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>  ok  PyAddons    C:\Cosmos\PyAddons (with ryaml)
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>Tools
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>  --  git         not found
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>      needed by `sbs fetch --source`
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>  ok  curl        curl 8.21.0 (Windows) libcurl/8.21.0 Schannel zlib/1.3.2 WinIDN WinLDAP
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>  ok  browser     chrome 154.0.8037.97 (C:\Program Files\Google\Chrome\Application\chrome.exe)
+<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>  --  weasyprint  not installed - PDFs will have no contents page numbers
+<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a>      install the WeasyPrint package; pip alone cannot supply its GTK libraries
+<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>Sidecar
+<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>  --  sbs         empty (C:\Cosmos\data\missions\__pylib__)
+<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>  --  engine      empty (C:\Cosmos\PyAddons)
+<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a>install
+<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a>  ok  art         37 baked, 176 not yet drawn, 0 half-baked in data/graphics
+<a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a>
+<a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a>17 checks: 12 ok, 5 optional absent, 0 problems
+</code></pre></div>
+<p>Most of it is written for a programmer. You need three things from it.</p>
+<p><strong>First, read the last line.</strong> It is the count.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>17 checks: 12 ok, 5 optional absent, 0 problems
+</code></pre></div>
+<p><code>0 problems</code> is the answer you want. Your other numbers can be one or two away from
+these. If it says <code>1 problem</code>, see "If something goes wrong" below.</p>
+<p><strong>Second, the mark at the start of each row.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mark</th>
+<th>Meaning</th>
+<th>What you do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ok</code></td>
+<td>Fine</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>--</code></td>
+<td>Something extra is not on this computer. It is not a fault</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>!!</code></td>
+<td>A problem</td>
+<td>Read that row, then "If something goes wrong" below</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Third, a line set further in belongs to the row above it.</strong> Under a <code>--</code> row it says
+what you would get if you had the extra thing. Under <code>ok  paths</code> it is a note for
+programmers. Neither is an instruction to you. The five <code>--</code> rows above are normal on a
+writer's computer. None of them stops you building a mission.</p>
+<p>The words at the left edge name the parts of the report:</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>What it looked at</th>
+<th>Can you act on it?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs</code></td>
+<td>The tool: its version, and the missions folder it is working in</td>
+<td>Yes. A low version: Step 6. A wrong folder: you are in another copy of the game</td>
+</tr>
+<tr>
+<td><code>Python</code></td>
+<td>The helper program in <code>PyRuntime</code> that the tool runs on. It comes with the game. You never install it and never write it</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>Layout</code></td>
+<td>The folders the tool expects beside it: <code>__lib__</code>, the game's art</td>
+<td>Only if a row has <code>!!</code>. See "If something goes wrong"</td>
+</tr>
+<tr>
+<td><code>Tools</code></td>
+<td>Other programs on your computer that the tool can use</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>Sidecar</code></td>
+<td>Extras for programmers</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>install</code></td>
+<td>The game's ship art. <code>0 half-baked</code> is the part that matters</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-8-get-lost-on-purpose-and-come-back">Step 8 - Get lost on purpose, and come back<a class="headerlink" href="#step-8-get-lost-on-purpose-and-come-back" title="Permanent link">&para;</a></h2>
+<p>Windows finds the word <code>sbs</code> in one folder only: <code>data\missions</code>. See what happens
+anywhere else.</p>
+<p><code>cd</code> means "change the current folder". Go into a mission's folder:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>cd LegendaryMissions
+</code></pre></div>
+<p>Nothing is printed. Look at the prompt line: it now ends
+<code>\data\missions\LegendaryMissions&gt;</code>. Ask the tool for its version:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sbs version
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>'sbs' is not recognized as an internal or external command,
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>operable program or batch file.
+</code></pre></div>
+<p>Read it as: "there is nothing called <code>sbs</code> in the folder you are standing in". That is
+true. <code>sbs.bat</code> is one folder up.</p>
+<p>Go back up. Two dots mean "the folder that holds this one":</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>cd ..
+</code></pre></div>
+<p>The prompt line ends <code>\data\missions&gt;</code> again. Now press the up arrow twice. <code>sbs version</code>
+comes back. Press Enter.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>0.12
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>C:\Cosmos\data\missions
+</code></pre></div>
+<p>You will see the "not recognized" message again in this course. It has two causes, and
+the prompt line tells you which:</p>
+<table>
+<thead>
+<tr>
+<th>The prompt line</th>
+<th>The cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Does not end in <code>\data\missions&gt;</code></td>
+<td>You are in the wrong folder</td>
+</tr>
+<tr>
+<td>Ends in <code>\data\missions&gt;</code></td>
+<td>You misspelled the first word</td>
+</tr>
+</tbody>
+</table>
+<p>Three more commands for finding your way:</p>
+<table>
+<thead>
+<tr>
+<th>You type</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cd</code></td>
+<td>With nothing after it: prints the current folder</td>
+</tr>
+<tr>
+<td><code>cls</code></td>
+<td>Wipes the window clean. Nothing is lost but the old text</td>
+</tr>
+<tr>
+<td><code>exit</code></td>
+<td>Closes the window</td>
+</tr>
+</tbody>
+</table>
+<p>The surest way back from anywhere is to close the window and open a new one from the
+address bar, as in Step 4. You lose nothing by closing it.</p>
+<h2 id="step-9-check-it-what-the-window-says-when-you-slip">Step 9 - Check it: what the window says when you slip<a class="headerlink" href="#step-9-check-it-what-the-window-says-when-you-slip" title="Permanent link">&para;</a></h2>
+<p>Every row was typed on a copy of the game. The middle column is what came back.</p>
+<p><strong>In the wrong place:</strong></p>
+<table>
+<thead>
+<tr>
+<th>What you did</th>
+<th>What the window says</th>
+<th>The way back</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs version</code> with the prompt in the game's folder, in <code>data</code>, in a mission's own folder, or on the Desktop</td>
+<td><code>'sbs' is not recognized as an internal or external command, operable program or batch file.</code></td>
+<td>Read the prompt line. Open a new window from the address bar of <code>data\missions</code></td>
+</tr>
+<tr>
+<td><code>sbs version</code> in a window whose prompt line starts with <code>PS</code></td>
+<td><code>The term 'sbs' is not recognized as the name of a cmdlet, function, script file, or operable program.</code> and more</td>
+<td>That is PowerShell. Type <code>cmd</code> and press Enter</td>
+</tr>
+<tr>
+<td><code>cd E:\Cosmos\data\missions</code>, when the prompt is on drive <code>C:</code> and the game is on drive <code>E:</code></td>
+<td>Nothing. The prompt line does not change</td>
+<td>Add <code>/d</code> after <code>cd</code>: <code>cd /d E:\Cosmos\data\missions</code>. Or open the window from the address bar</td>
+</tr>
+<tr>
+<td><code>cd data\mission</code> (a folder name misspelled)</td>
+<td><code>The system cannot find the path specified.</code></td>
+<td>Check the spelling against File Explorer</td>
+</tr>
+<tr>
+<td>The tool started by its whole path from another folder: <code>C:\Cosmos\data\missions\sbs version</code></td>
+<td><code>0.12</code> and the path of <code>data\missions</code></td>
+<td>None needed. By its whole path the tool runs from any folder. The short word <code>sbs</code> runs only in <code>data\missions</code></td>
+</tr>
+<tr>
+<td>The same, when the path has a space in it and no quote marks round it</td>
+<td><code>is not recognized as an internal or external command</code>, after the part of the path before the space</td>
+<td>Put quote marks round the path: <code>"C:\Artemis Cosmos\data\missions\sbs" version</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Typing slips, in the right place:</strong></p>
+<table>
+<thead>
+<tr>
+<th>What you typed</th>
+<th>What the window says</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs doctr</code></td>
+<td><code>Error: No such command 'doctr'. (Did you mean one of: 'docs', 'doctor'?)</code></td>
+<td>The second word is misspelled. The two lines above the error tell you how to ask for help</td>
+</tr>
+<tr>
+<td><code>sbd doctor</code></td>
+<td><code>'sbd' is not recognized as an internal or external command, operable program or batch file.</code></td>
+<td>The first word is misspelled. It is the same message as the wrong folder</td>
+</tr>
+<tr>
+<td><code>sbsdoctor</code></td>
+<td><code>'sbsdoctor' is not recognized as an internal or external command, operable program or batch file.</code></td>
+<td>The space is missing</td>
+</tr>
+<tr>
+<td><code>SBS VERSION</code></td>
+<td><code>Error: No such command 'VERSION'.</code></td>
+<td><code>SBS version</code> works. The words after <code>sbs</code> are in small letters</td>
+</tr>
+<tr>
+<td><code>sbs help</code></td>
+<td><code>Error: No such command 'help'.</code></td>
+<td>Type <code>sbs</code> alone for the list of commands, or <code>sbs doctor --help</code> for one command</td>
+</tr>
+<tr>
+<td><code>sbs doctor -env</code> (one hyphen)</td>
+<td><code>Error: No such option '-e'.</code></td>
+<td>A switch has two hyphens</td>
+</tr>
+<tr>
+<td><code>sbs doctor -- env</code> (a space after the hyphens)</td>
+<td><code>ERROR: not a folder: env</code></td>
+<td>No space inside a switch</td>
+</tr>
+<tr>
+<td><code>sbs doctor –env</code> (a long dash, pasted from a word processor)</td>
+<td><code>ERROR: not a folder:</code> and the dash with <code>env</code></td>
+<td>Type two plain hyphens. A word processor turns two hyphens into one long dash</td>
+</tr>
+<tr>
+<td><code>sbs --env doctor</code></td>
+<td><code>Error: No such option '--env'.</code></td>
+<td>The switch goes after the command it belongs to</td>
+</tr>
+<tr>
+<td><code>sbs doctor SecretMeting</code></td>
+<td><code>ERROR: not a folder: SecretMeting</code></td>
+<td>A folder name is misspelled. <code>sbs doctor secretmeeting</code> works: capitals in a folder's name do not matter</td>
+</tr>
+<tr>
+<td><code>sbs doctor My Mission</code></td>
+<td><code>Error: Got unexpected extra argument (Mission)</code></td>
+<td>A space ends a word. A name with a space in it needs quote marks: <code>"My Mission"</code>. Better: no spaces in the name of a mission's folder</td>
+</tr>
+<tr>
+<td><code>dir My Mission</code></td>
+<td><code>File Not Found</code></td>
+<td>The same. <code>dir "My Mission"</code> works</td>
+</tr>
+<tr>
+<td>A path on a line by itself: <code>C:\Cosmos\data\missions</code></td>
+<td><code>'C:\Cosmos\data\missions' is not recognized as an internal or external command, operable program or batch file.</code></td>
+<td>A path is not a command. Put <code>cd /d</code> and a space in front of it. A path in quote marks gets the same message, quote marks and all</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What nothing warns you about:</strong></p>
+<table>
+<thead>
+<tr>
+<th>What you did</th>
+<th>What happens</th>
+<th>What tells you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pasted a line with the prompt still on it: <code>C:\Cosmos\data\missions&gt;sbs version</code></td>
+<td>The "not recognized" message, and an empty file named <code>sbs</code>, with no extension, is left in the folder</td>
+<td>Nothing. Delete that file in File Explorer: it is the one with no extension and no size. Leave <code>sbs.bat</code> and <code>sbs.pyz</code></td>
+</tr>
+<tr>
+<td><code>cd</code> to a folder on another drive, without <code>/d</code></td>
+<td>Nothing changes</td>
+<td>Nothing. The prompt line is the same as before</td>
+</tr>
+<tr>
+<td>Opened PowerShell in place of the command prompt</td>
+<td>The window looks the same</td>
+<td>Only the <code>PS</code> at the start of the prompt line</td>
+</tr>
+<tr>
+<td>Ran a tool that is older than a page of the course</td>
+<td><code>sbs version</code> answers its number and nothing more</td>
+<td>Nothing. Compare the number with the one in Step 6</td>
+</tr>
+</tbody>
+</table>
+<p>Spaces and brackets in the path of the game's folder are fine. <code>sbs version</code> and
+<code>sbs doctor</code> were tried in a folder shaped like Steam's,
+<code>Program Files (x86)\Steam\steamapps\common\Artemis Cosmos</code>, and ran as usual.</p>
+<h2 id="step-10-use-it-the-long-report">Step 10 - Use it: the long report<a class="headerlink" href="#step-10-use-it-the-long-report" title="Permanent link">&para;</a></h2>
+<p>Leave the switch off, and <code>doctor</code> looks at every mission as well:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sbs doctor
+</code></pre></div>
+<p>It starts with the report you have just read. After that comes one part for each mission
+folder. The window scrolls. Use the mouse wheel to go back up.</p>
+<p>Read the last lines first. You want <code>0 problems</code> there, as in Step 7. Then look at one
+mission's part:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>LegendaryMissions
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>  ok  story.json  1 sbslib, 0 mastlib, 0 media
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>  ok  libraries   all declared libraries present
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>  ok  art         0 baked, 0 not yet drawn, 0 half-baked in mission art
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>In the report</th>
+<th>In plain words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LegendaryMissions</code></td>
+<td>The name of a mission's folder</td>
+</tr>
+<tr>
+<td><code>story.json</code></td>
+<td>The mission's list of the program parts it asks for. Your numbers may differ</td>
+</tr>
+<tr>
+<td><code>libraries</code></td>
+<td>Whether every part it asks for is in the <code>__lib__</code> folder</td>
+</tr>
+<tr>
+<td><code>art</code></td>
+<td>The mission's own ship art. Most missions have none</td>
+</tr>
+</tbody>
+</table>
+<p>If the count is not <code>0 problems</code>, the line under it says <code>to fix:</code> and names the part of
+the report to scroll up to. Two rules for a <code>!!</code> row under a mission:</p>
+<ol>
+<li><strong>Is it your mission?</strong> A mission that came with the game is not yours. Leave it.</li>
+<li><strong>Do not type a command because a report says so.</strong> The line set further in, under a
+   <code>!!</code> row, suggests a command. For a mission of your own it is usually the one you
+   meet in Lecture 3, with your mission's name in it. And never type <code>sbs fetch</code> with
+   nothing after it. That asks one question. If you answer yes, it replaces the whole
+   <code>LegendaryMissions</code> folder with a fresh copy.</li>
+</ol>
+<p>To look at one mission only, put its folder's name after the command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>sbs doctor LegendaryMissions
+</code></pre></div>
+<p>That prints the report on this computer, then the part for that one mission, and ends:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>20 checks: 15 ok, 5 optional absent, 0 problems
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>content checks: sbs lint &lt;folder&gt; (AMD), sbs compile &lt;folder&gt; (MAST)
+</code></pre></div>
+<p>When you have a mission of your own, this is the form you will use.</p>
+<p>The last line names two more commands, <code>sbs lint</code> and <code>sbs compile</code>. <code>doctor</code> looks at
+how things are set up. It never reads your writing. <code>sbs lint</code> does, and it has a
+lecture of its own.</p>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="headerlink" href="#if-something-goes-wrong" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>Likely cause, and what to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>'sbs' is not recognized as an internal or external command</code></td>
+<td>The prompt is not in <code>data\missions</code>, or the first word is misspelled. Read the prompt line</td>
+</tr>
+<tr>
+<td><code>The term 'sbs' is not recognized as the name of a cmdlet</code></td>
+<td>The window is PowerShell. Type <code>cmd</code> and press Enter</td>
+</tr>
+<tr>
+<td><code>sbs version</code> answers a number lower than <code>0.12</code>, or the report has a row <code>!!  sbs_utils   older than this sbs needs</code></td>
+<td>Your tool or your program parts are older than this page. Type <code>sbs update</code>. For the row, also do Lecture 3, Step 4, once you have a mission: <code>sbs fetch "MyMission" --update-libs</code></td>
+</tr>
+<tr>
+<td>The tool was current last week and now <code>sbs version</code> answers a lower number</td>
+<td>The store put its own files back. Steam does this when you ask it to check the game's files (<strong>Properties</strong>, <strong>Installed Files</strong>, <strong>Verify integrity of game files</strong>), and a game update can do it too. Type <code>sbs update</code> again. The missions that came with the game are put back as well. A mission folder you made is not one of the game's files and is left alone. (Read, not tried)</td>
+</tr>
+<tr>
+<td><code>Error: No such command</code> and a word you did type</td>
+<td>A typing slip in the second word. If it offers <code>Did you mean</code>, it is guessing well</td>
+</tr>
+<tr>
+<td><code>The system cannot find the path specified.</code></td>
+<td>A folder name in your command is misspelled</td>
+</tr>
+<tr>
+<td><code>can't open file</code> and a path that ends <code>sbs.pyz</code></td>
+<td><code>sbs.bat</code> is here and <code>sbs.pyz</code> is not. See the next row</td>
+</tr>
+<tr>
+<td><code>SyntaxError</code>, and above it a line that is not an answer, such as <code>404: Not Found</code></td>
+<td><code>sbs.pyz</code> is a failed download. In your web browser open <code>https://github.com/artemis-sbs/sbs_cli/releases/latest</code>, click <code>sbs.pyz</code> in the list named <strong>Assets</strong>, and move the file from your Downloads folder into <code>data\missions</code>, over the one there</td>
+</tr>
+<tr>
+<td><code>!!  libraries</code> under a mission that came with the game</td>
+<td>Not yours. Leave it. See Step 10</td>
+</tr>
+<tr>
+<td>The top of the report has scrolled away</td>
+<td>Turn the mouse wheel. Or use <code>sbs doctor --env</code>, which is short</td>
+</tr>
+<tr>
+<td>The window stops and its title starts with <code>Select</code></td>
+<td>You clicked inside it. Press Esc</td>
+</tr>
+<tr>
+<td>A dark window flashed and was gone</td>
+<td>You double-clicked <code>sbs.bat</code>. It listed its commands and closed. Nothing was changed</td>
+</tr>
+<tr>
+<td>Windows asks how to open the file</td>
+<td>You double-clicked <code>sbs.pyz</code>. Choose Cancel</td>
+</tr>
+<tr>
+<td>You closed the window</td>
+<td>Open another, as in Step 4. Nothing is lost</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Do this without the page in front of you. Then check yourself against it.</p>
+<ol>
+<li>Close the command prompt and File Explorer.</li>
+<li>Open File Explorer and go to the game's folder, then to <code>data\missions</code>.</li>
+<li>Open <code>LegendaryMissions</code>. Find the four files <code>story.mast</code>, <code>story.json</code>,
+   <code>description.yaml</code> and <code>script.py</code>. Every mission has these four. Say what the
+   extension of each is.</li>
+<li>Go back to <code>data\missions</code>. Open a command prompt there from the address bar.</li>
+<li>Read the prompt line aloud. Is there a <code>PS</code> at the start?</li>
+<li>Type <code>dir</code>. Find <code>sbs.bat</code> and <code>sbs.pyz</code> in the list.</li>
+<li>Type <code>cd LegendaryMissions</code>, then <code>dir</code>. Find the four files from item 3.</li>
+<li>Type <code>cd ..</code> and check the prompt line.</li>
+<li>Type <code>sbs doctor LegendaryMissions</code>. Find the count line. How many problems?</li>
+<li>Make three slips from the tables in Step 9 on purpose. Read each message before you
+    look at the table.</li>
+</ol>
+<p>Write two things on the first page of your notes: the path of your <code>missions</code> folder,
+and your tool's version.</p>
+<h2 id="checkpoint">Checkpoint<a class="headerlink" href="#checkpoint" title="Permanent link">&para;</a></h2>
+<p>You are done when all five are true:</p>
+<ul>
+<li>File Explorer shows the name <code>sbs.bat</code>, with its extension.</li>
+<li>You can open a command prompt whose prompt line ends <code>\data\missions&gt;</code>, with no <code>PS</code>
+  in front.</li>
+<li><code>sbs version</code> prints <code>0.12</code> or a higher number, and under it the path of your
+  <code>missions</code> folder.</li>
+<li><code>sbs doctor --env</code> ends with <code>0 problems</code>.</li>
+<li>You can say what each of these is: a file, a folder, an extension, a path, the current
+  folder.</li>
+</ul>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>Lecture 3, "Your editor and your first run", gives you an editor, VS Code, and your
+first mission. You make the mission with one command, <code>sbs create</code>, typed into the
+window you learned to open today. Lecture 4, "Markdown in twenty minutes", teaches the
+marks your mission file is written in.</p>
+<h2 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
+<ul>
+<li>"sbs - the Artemis Cosmos command-line helper", the tool's own README. Read "Getting
+  the tool running" and "<code>sbs doctor</code> - check your setup". Do not try <code>sbs production</code>
+  or <code>sbs fetch</code> from it yet: both replace mission folders.</li>
+<li>"Checking your setup: <code>sbs doctor</code> and <code>sbs deps</code>" in the library documentation, the
+  part called "Reading the output".</li>
+<li>"The <code>sbs</code> CLI" in the library documentation: the table of commands at the top. You
+  will use a handful of them in this class.</li>
+</ul>
+<hr />
+<p><a href="https://github.com/artemis-sbs/author-courses/issues/new?template=lecture-feedback.md&amp;title=c1-02-files-folders-command-prompt%3A+">Report a problem with this lecture</a> | <a href="https://github.com/artemis-sbs/author-courses/blob/main/c1-02-files-folders-command-prompt/lesson.md">This page's source</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01-what-you-are-going-to-build/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. What you are going to build">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                1. What you are going to build
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03-editor-and-first-run/" class="md-footer__link md-footer__link--next" aria-label="Next: 3. Your editor and your first run">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                3. Your editor and your first run
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.footer", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

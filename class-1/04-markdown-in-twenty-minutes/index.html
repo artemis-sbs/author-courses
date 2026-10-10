@@ -1,0 +1,2219 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Write missions for Artemis Cosmos. A course for storytellers, not programmers.">
+      
+      
+      
+        <link rel="canonical" href="https://artemis-sbs.github.io/author-courses/class-1/04-markdown-in-twenty-minutes/">
+      
+      
+        <link rel="prev" href="../03-editor-and-first-run/">
+      
+      
+        <link rel="next" href="../05-the-shape-of-a-record/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>4. Markdown in twenty minutes - Cosmos Author Courses</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-1-lecture-4-markdown-in-twenty-minutes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cosmos Author Courses" class="md-header__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cosmos Author Courses
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4. Markdown in twenty minutes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Light"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Dark"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cosmos Author Courses" class="md-nav__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cosmos Author Courses
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reviewers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For reviewers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-what-you-are-going-to-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What you are going to build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-files-folders-command-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Files, folders and the command prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-editor-and-first-run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Your editor and your first run
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Markdown in twenty minutes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Markdown in twenty minutes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-make-the-file-and-open-the-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Make the file and open the preview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-a-title-and-three-headings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - A title and three headings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-paragraphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Paragraphs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-a-list-of-people" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - A list of people
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-a-numbered-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - A numbered list
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-one-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - One link
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-bold-and-italic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Bold and italic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-the-plain-keyboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - The plain keyboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-finished-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your finished page
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-read-missionamd-with-new-eyes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Read mission.amd with new eyes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Check it
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 10 - Check it">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-the-preview-looks-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When the preview looks wrong
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-same-marks-in-missionamd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The same marks in mission.amd
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-play-it-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 - Play it (optional)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-the-shape-of-a-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. The shape of a record
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-lint-is-your-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Lint is your editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-roles-and-signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Roles and signals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-first-quest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Your first quest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-chains-and-trees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Chains and trees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-things-quests-point-at/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Things quests point at
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-just-enough-mast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Just enough MAST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-ship-a-quest-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Capstone: ship a quest mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-make-the-file-and-open-the-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Make the file and open the preview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-a-title-and-three-headings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - A title and three headings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-paragraphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Paragraphs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-a-list-of-people" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - A list of people
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-a-numbered-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - A numbered list
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-one-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - One link
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-bold-and-italic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Bold and italic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-the-plain-keyboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - The plain keyboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-finished-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your finished page
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-read-missionamd-with-new-eyes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Read mission.amd with new eyes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Check it
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 10 - Check it">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-the-preview-looks-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When the preview looks wrong
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-same-marks-in-missionamd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The same marks in mission.amd
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-play-it-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 - Play it (optional)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="class-1-lecture-4-markdown-in-twenty-minutes">Class 1, Lecture 4 - Markdown in twenty minutes<a class="headerlink" href="#class-1-lecture-4-markdown-in-twenty-minutes" title="Permanent link">&para;</a></h1>
+<h2 id="what-you-will-have-at-the-end">What you will have at the end<a class="headerlink" href="#what-you-will-have-at-the-end" title="Permanent link">&para;</a></h2>
+<p>Three things.</p>
+<ul>
+<li>A one-page story bible for your mission, in a file called <code>story-bible.md</code>: a title,
+  three headings, a list of people, a numbered list and one link.</li>
+<li>You can look at <code>mission.amd</code> and say what each mark in it is for.</li>
+<li>You know which marks the game draws, and which it prints on the crew's screens exactly
+  as you typed them.</li>
+</ul>
+<p><em>[Screenshot to add: VS Code with <code>story-bible.md</code> on the left and its preview on the
+right.]</em></p>
+<p>You will type in one new file. You will read <code>mission.amd</code>. Only the last step changes
+it, and that step is optional and puts it back.</p>
+<h2 id="the-video">The video<a class="headerlink" href="#the-video" title="Permanent link">&para;</a></h2>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/x_u23OmoSTU" title="Class 1, Lecture 4 - Markdown in twenty minutes" allowfullscreen></iframe></div>
+
+<p>About 8 minutes. Subtitles are available in the player.</p>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The mission you made in Lecture 3 (your editor and your first run): the folder
+  <code>MyMission</code>, with its libraries fetched (Lecture 3, Step 4). If you gave your folder
+  another name, use that name wherever this page says <code>MyMission</code>.</li>
+<li>VS Code, with the <code>MyMission</code> folder open in it and trusted (Lecture 3, Step 5).</li>
+<li>For the last step only, and that step is optional: a command prompt open in
+  <code>data\missions</code> (Lecture 2), and every game window closed.</li>
+</ul>
+<p>Nothing today waits for the Artemis AMD add-on:</p>
+<table>
+<thead>
+<tr>
+<th>Steps</th>
+<th>The file</th>
+<th>What does the work</th>
+<th>Without the add-on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 to 8, and 10</td>
+<td><code>story-bible.md</code>, a page of your own</td>
+<td>The markdown preview. It is part of VS Code itself</td>
+<td>The same. The preview opens even in a folder VS Code does not trust</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>mission.amd</code>, to read</td>
+<td>Your eyes. The add-on puts the file in color</td>
+<td>The file is all one color. The marks are the same</td>
+</tr>
+<tr>
+<td>11 (optional)</td>
+<td><code>mission.amd</code>, to change and put back</td>
+<td>The game. It reads the saved file</td>
+<td>The same</td>
+</tr>
+</tbody>
+</table>
+<p>If <code>mission.amd</code> is all one color, or the Status Bar says <code>Restricted Mode</code>, the add-on is
+off or only partly on. Carry on with this lecture. Then do the trust table in Lecture 3,
+Step 5, before Lecture 5.</p>
+<p>Words for this lecture:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Markdown</td>
+<td>A way of writing a page with nothing but a keyboard. A few marks in the text say "this is a heading", "this is a list", "this is a link"</td>
+</tr>
+<tr>
+<td>Mark</td>
+<td>One of those characters: a hash <code>#</code>, a hyphen <code>-</code>, a star <code>*</code>, a bracket</td>
+</tr>
+<tr>
+<td>Preview</td>
+<td>VS Code's picture of your page as a reader would see it</td>
+</tr>
+<tr>
+<td>Plain text</td>
+<td>Letters, digits and punctuation, and nothing more. No fonts and no bold button. VS Code saves plain text. A word processor does not</td>
+</tr>
+<tr>
+<td>Story bible</td>
+<td>A writer's own page of facts about a story: who is in it, where it happens, what happens</td>
+</tr>
+</tbody>
+</table>
+<p>Why you are learning this: <code>mission.amd</code>, the file you will write in for the rest of the
+course, is shaped like markdown. Twenty minutes here saves you guessing at every line of
+it.</p>
+<h2 id="step-1-make-the-file-and-open-the-preview">Step 1 - Make the file and open the preview<a class="headerlink" href="#step-1-make-the-file-and-open-the-preview" title="Permanent link">&para;</a></h2>
+<ol>
+<li>In VS Code, look at the file list in the Side Bar. Its top line is your folder's name,
+   <code>MYMISSION</code>, and under it are <code>mission.amd</code>, <code>story.mast</code> and the other files of your
+   mission.</li>
+<li>Right-click an empty place under the last file. Choose <strong>New File...</strong></li>
+<li>Type the name and press Enter:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>story-bible.md
+</code></pre></div>
+<ol>
+<li>The file opens, empty. Type one line:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># Nobody Aboard
+</code></pre></div>
+<ol>
+<li>Press <code>Ctrl+K</code>, let go, then press <code>V</code>. The preview opens beside your file.</li>
+<li>Press <code>Ctrl+S</code> to save.</li>
+</ol>
+<p>On the left is what you type. On the right is what a reader sees. The hash is gone from
+the right-hand side, and the words are a title.</p>
+<p>In a <code>.md</code> file VS Code folds a long line to fit the window. That is called word wrap,
+and for this kind of file it is on from the start. The line is still one line in the
+file. The key <code>Alt+Z</code> switches word wrap off, and on again.</p>
+<p>The game does not read this file. It reads <code>mission.amd</code> and <code>story.mast</code>. So this page
+is yours: nothing you type in it can break your mission.</p>
+<h2 id="step-2-a-title-and-three-headings">Step 2 - A title and three headings<a class="headerlink" href="#step-2-a-title-and-three-headings" title="Permanent link">&para;</a></h2>
+<p>Click at the end of the title line and press Enter twice. That leaves a blank line under
+the title. Then type three headings, with a blank line between them. Your file now reads:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># Nobody Aboard
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>## Premise
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>## People
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>## What happens
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>You type</th>
+<th>It is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>#</code>, a space, words</td>
+<td>The title. One on a page, at the top</td>
+</tr>
+<tr>
+<td><code>##</code>, a space, words</td>
+<td>A heading</td>
+</tr>
+<tr>
+<td><code>###</code>, a space, words</td>
+<td>A smaller heading, inside the <code>##</code> above it</td>
+</tr>
+</tbody>
+</table>
+<p>Three rules:</p>
+<ol>
+<li><strong>The hashes start at the left edge.</strong></li>
+<li><strong>One space after the hashes.</strong> <code>##Premise</code> is not a heading.</li>
+<li><strong>More hashes means further inside.</strong> A <code>###</code> belongs to the <code>##</code> above it.</li>
+</ol>
+<p>You will count hashes again in Lecture 5. In <code>mission.amd</code> they say which record is
+inside which.</p>
+<h2 id="step-3-paragraphs">Step 3 - Paragraphs<a class="headerlink" href="#step-3-paragraphs" title="Permanent link">&para;</a></h2>
+<p>Click at the end of the title line and press Enter twice. Type this, all on one line. Do
+not press Enter in the middle of it:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>A dead ship has drifted across the border. Nobody sent her, and nobody will say whose she is.
+</code></pre></div>
+<p>Your paragraph now has a blank line above it and a blank line below it.</p>
+<p>Click at the end of the <code>## Premise</code> line, press Enter twice, and type:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>The crew has one watch to find out what happened aboard, before somebody else comes to claim her.
+</code></pre></div>
+<p>Three rules:</p>
+<ol>
+<li><strong>A paragraph is one line in the file, however long.</strong> Word wrap folds it for you.</li>
+<li><strong>A blank line ends a paragraph.</strong></li>
+<li><strong>Never start a line with the Tab key or the space bar.</strong> Writers indent a paragraph
+   without thinking. In markdown an indented line is something else: the preview shows it
+   in a box, in typewriter letters.</li>
+</ol>
+<p>Why rule 1 matters. If you press Enter in the middle of a paragraph, the preview joins
+the two halves again and you see no difference. The game does not join them. It starts a
+new line wherever you pressed Enter. One paragraph on one line reads the same in both.</p>
+<h2 id="step-4-a-list-of-people">Step 4 - A list of people<a class="headerlink" href="#step-4-a-list-of-people" title="Permanent link">&para;</a></h2>
+<p>Click at the end of the <code>## People</code> line, press Enter twice, and type three lines:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>- Captain Mara Vell, who gives the order and hates it
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>- Chief Osei, who has seen a hull like this one before
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>- The Voice, still talking on the hulk's radio
+</code></pre></div>
+<p>Each line is a hyphen, one space, then words. The list has a blank line above it and a
+blank line below it.</p>
+<p>That is the pattern for the whole page: <strong>a blank line above and below every heading,
+every paragraph and every list.</strong></p>
+<h2 id="step-5-a-numbered-list">Step 5 - A numbered list<a class="headerlink" href="#step-5-a-numbered-list" title="Permanent link">&para;</a></h2>
+<p>Click at the end of the last line, <code>## What happens</code>, press Enter twice, and type:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>1. The crew finds the hulk.
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>2. Science takes a full scan of the hull.
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>3. Not written yet: somebody answers.
+</code></pre></div>
+<p>Each line is a number, a period, one space, then words. Use a numbered list when the
+order matters. These three lines are the steps of your story. In Lectures 8 and 9 each
+one becomes a step of a quest.</p>
+<h2 id="step-6-one-link">Step 6 - One link<a class="headerlink" href="#step-6-one-link" title="Permanent link">&para;</a></h2>
+<p>A link is two pairs of brackets, with nothing between them:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>[the words a reader sees](where the link goes)
+</code></pre></div>
+<p>Square brackets first, then round brackets. No space between <code>]</code> and <code>(</code>.</p>
+<p>Click at the end of the paragraph under <code>## Premise</code>. Type a space, then this sentence, on
+the same line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>The idea comes from [the Mary Celeste](https://en.wikipedia.org/wiki/Mary_Celeste), a ship found sailing with nobody aboard.
+</code></pre></div>
+<p>VS Code helps as you type: when you type <code>[</code> it adds the <code>]</code>, and when you type <code>(</code> it
+adds the <code>)</code>. Keep typing. When you reach the closing bracket, type it yourself as usual.</p>
+<p>In the preview the words <code>the Mary Celeste</code> are a link, and the address is out of sight.</p>
+<p>Remember this shape. In Lecture 5 you will see it at the start of every record in
+<code>mission.amd</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>### [Derelict Hull](derelict_scan)
+</code></pre></div>
+<p>Hashes, a space, and a link. In that file the round brackets do not hold a web address.
+They hold a short name the game uses, called a key.</p>
+<h2 id="step-7-bold-and-italic">Step 7 - Bold and italic<a class="headerlink" href="#step-7-bold-and-italic" title="Permanent link">&para;</a></h2>
+<p>Two stars each side of a word make it bold. One star each side makes it slanted.</p>
+<p>In the Premise paragraph, put two stars each side of <code>nobody</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>a ship found sailing with **nobody** aboard.
+</code></pre></div>
+<p>In the numbered list, put one star each side of <code>Not written yet:</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>3. *Not written yet:* somebody answers.
+</code></pre></div>
+<p>No space between the stars and the word.</p>
+<p>Use these in your story bible as much as you like. Do not use them in <code>mission.amd</code>. The
+game does not make anything bold: the crew would read the stars. Step 10 has the list.</p>
+<h2 id="step-8-the-plain-keyboard">Step 8 - The plain keyboard<a class="headerlink" href="#step-8-the-plain-keyboard" title="Permanent link">&para;</a></h2>
+<p>Markdown is plain text. Every mark on this page is a key on your keyboard.</p>
+<p>A word processor is not plain. It changes three kinds of character as you type, and it
+does not ask:</p>
+<table>
+<thead>
+<tr>
+<th>A word processor puts in</th>
+<th>Called</th>
+<th>The plain one to type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“ ”</td>
+<td>Curly double quotes</td>
+<td><code>"</code></td>
+</tr>
+<tr>
+<td>‘ ’</td>
+<td>Curly single quotes, and the curly apostrophe</td>
+<td><code>'</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td>A long dash</td>
+<td><code>-</code></td>
+</tr>
+<tr>
+<td>…</td>
+<td>Three dots joined into one character</td>
+<td><code>...</code></td>
+</tr>
+</tbody>
+</table>
+<p>The game can draw only plain keyboard characters. When it reads <code>mission.amd</code> it swaps
+each of these for the plain one, so the crew still reads your sentence. But the words on
+the screen are then not the words in your file, and the other tools you will use read the
+file too. Lecture 6 shows you the warning each one gets.</p>
+<p>So the habit, from today:</p>
+<ol>
+<li><strong>Write in VS Code.</strong> It never changes what you type.</li>
+<li><strong>If you bring words over from a word processor, type the quote marks, the dashes and
+   the dots again.</strong> Those are the three it changed.</li>
+<li><strong>Keep your story bible plain too.</strong> One day you will copy a sentence out of it and
+   into <code>mission.amd</code>.</li>
+</ol>
+<p>Nothing checks your story bible: no tool reads the file. The habit is the check.</p>
+<h2 id="your-finished-page">Your finished page<a class="headerlink" href="#your-finished-page" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a># Nobody Aboard
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>A dead ship has drifted across the border. Nobody sent her, and nobody will say whose she is.
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>## Premise
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>The crew has one watch to find out what happened aboard, before somebody else comes to claim her. The idea comes from [the Mary Celeste](https://en.wikipedia.org/wiki/Mary_Celeste), a ship found sailing with **nobody** aboard.
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>## People
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>- Captain Mara Vell, who gives the order and hates it
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>- Chief Osei, who has seen a hull like this one before
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>- The Voice, still talking on the hulk's radio
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>## What happens
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>1. The crew finds the hulk.
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>2. Science takes a full scan of the hull.
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>3. *Not written yet:* somebody answers.
+</code></pre></div>
+<p>The same file is <code>example\story-bible.md</code>.</p>
+<h2 id="step-9-read-missionamd-with-new-eyes">Step 9 - Read <code>mission.amd</code> with new eyes<a class="headerlink" href="#step-9-read-missionamd-with-new-eyes" title="Permanent link">&para;</a></h2>
+<p>Click <code>mission.amd</code> in the file list. Do not change anything in it.</p>
+<p>The add-on may show small words above a heading, such as <code>1 reference(s)</code>. They are the
+add-on's, and they are not in your file. And in this file word wrap starts off, so a long
+line runs off the right-hand side. <code>Alt+Z</code> folds it.</p>
+<p>You can now read most of its marks. Five of them do not mean what they mean in markdown.
+Find one of each:</p>
+<table>
+<thead>
+<tr>
+<th>In <code>mission.amd</code></th>
+<th>In markdown it would be</th>
+<th>In this file it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>### [Derelict Hull](derelict_scan)</code></td>
+<td>A heading whose words are a link</td>
+<td>The first line of a record. The square brackets hold a name for people. The round brackets hold a key for the game. Nothing else may be on the line</td>
+</tr>
+<tr>
+<td><code>---</code> on the line under a heading</td>
+<td>A line drawn across the page</td>
+<td>A fence. Two of them, with the record's facts between</td>
+</tr>
+<tr>
+<td><code>% The hull is cold. Whatever happened here happened a long time ago.</code></td>
+<td>Nothing. A percent sign and two sentences</td>
+<td>One reading for the Science screen</td>
+</tr>
+<tr>
+<td>The line that starts <code>// ---- Quests.</code></td>
+<td>Nothing. Two slashes and a sentence, shown to the reader</td>
+<td>A note to yourself. The game skips the whole line</td>
+</tr>
+<tr>
+<td><code>[[study]]</code> (not in your file yet)</td>
+<td>Nothing. The reader sees the brackets</td>
+<td>A link to another record. The game prints that record's name: <code>Study the Derelict</code></td>
+</tr>
+</tbody>
+</table>
+<p>So this file is shaped like markdown, and it is not markdown. It has its own name, AMD,
+and it is read by the game, not by a preview. The preview you opened in Step 1 is for
+<code>.md</code> files only.</p>
+<p>Lecture 5 takes one record of this file apart, line by line.</p>
+<h2 id="step-10-check-it">Step 10 - Check it<a class="headerlink" href="#step-10-check-it" title="Permanent link">&para;</a></h2>
+<p>Look at the preview of <code>story-bible.md</code>. You should see one title, three headings, two
+paragraphs, a list of three people, a list numbered 1 to 3, one link, one bold word and
+one slanted phrase. No hash, hyphen, star or bracket should be left showing.</p>
+<h3 id="when-the-preview-looks-wrong">When the preview looks wrong<a class="headerlink" href="#when-the-preview-looks-wrong" title="Permanent link">&para;</a></h3>
+<p>Each row is a slip somebody made. The middle column is what markdown makes of it.</p>
+<table>
+<thead>
+<tr>
+<th>You typed</th>
+<th>What markdown makes of it</th>
+<th>Type this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>##Premise</code> (no space after the hashes)</td>
+<td>Not a heading. The line is shown as typed, hashes and all</td>
+<td><code>## Premise</code></td>
+</tr>
+<tr>
+<td><code>-Captain Mara Vell</code> (no space after the hyphen)</td>
+<td>Not a list. The lines run together into one paragraph, hyphens and all</td>
+<td><code>- Captain Mara Vell</code></td>
+</tr>
+<tr>
+<td><code>1.The crew finds the hulk.</code> (no space after the period)</td>
+<td>Not a list. Shown as typed</td>
+<td><code>1. The crew finds the hulk.</code></td>
+</tr>
+<tr>
+<td><code>[the Mary Celeste] (https://...)</code> (a space between <code>]</code> and <code>(</code>)</td>
+<td>The words are not a link. The line is shown as typed, brackets and all. The preview turns the bare address into a link by itself, so it can look half right</td>
+<td>Take the space out</td>
+</tr>
+<tr>
+<td><code>(the Mary Celeste)[https://...]</code> (the brackets the wrong way round)</td>
+<td>The same: every bracket shows, and only the address is a link</td>
+<td>Square brackets first</td>
+</tr>
+<tr>
+<td><code>[the Mary Celeste](https://...</code> (no closing bracket)</td>
+<td>The same</td>
+<td>Add the <code>)</code></td>
+</tr>
+<tr>
+<td><code>** nobody **</code> (spaces inside the stars)</td>
+<td>Not bold. The stars are shown</td>
+<td><code>**nobody**</code></td>
+</tr>
+<tr>
+<td><code>**nobody</code> (stars on one side only)</td>
+<td>Not bold. The stars are shown</td>
+<td>Put two stars after the word as well</td>
+</tr>
+<tr>
+<td>A paragraph that starts with the Tab key, or with four spaces</td>
+<td>Not a paragraph. It is shown in a box, in typewriter letters</td>
+<td>Delete the tab or the spaces</td>
+</tr>
+<tr>
+<td>Enter pressed in the middle of a paragraph</td>
+<td>Still one paragraph. The two halves are joined</td>
+<td>Nothing is wrong here. In <code>mission.amd</code> it is a mistake: see the next table</td>
+</tr>
+<tr>
+<td><code>---</code> typed straight under a line of words</td>
+<td>The line above becomes a heading</td>
+<td>Leave a blank line above the <code>---</code>. Then it is a line across the page</td>
+</tr>
+<tr>
+<td>A line that starts with a number and a period: <code>2187. A bad year.</code></td>
+<td>A list that starts at 2187</td>
+<td>Start the line with a word: <code>In 2187, a bad year.</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-same-marks-in-missionamd">The same marks in <code>mission.amd</code><a class="headerlink" href="#the-same-marks-in-missionamd" title="Permanent link">&para;</a></h3>
+<p>This is the table to come back to. It says what the game does with each mark when you
+type it in the two places your words go in this class: a quest's description, which the
+crew reads in the Quest Log, and a reading, which the crew reads on the Science screen.</p>
+<p>The last column is <code>sbs lint</code>, the checker you ran once in Lecture 3 and learn to read in
+Lecture 6. It is here to make one point: lint says nothing about nearly all of these,
+because none of them is a mistake of shape. The game just does not do what a preview
+does.</p>
+<p><strong>Marks the game acts on.</strong> There are few, and most of them act only in a description:</p>
+<table>
+<thead>
+<tr>
+<th>You type</th>
+<th>In a quest's description</th>
+<th>In a reading</th>
+<th>Lint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code># Orders</code> or <code>## Orders</code></td>
+<td>Drawn as a heading: larger gray letters, the hashes gone. <code>#Orders</code> with no space is a heading too</td>
+<td>Kept as typed, hash and all, as a reading of its own</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>A line that is only a hash, <code>#</code> (the scene break of a typed manuscript)</td>
+<td>Shown as typed: <code>#</code></td>
+<td>Kept as a reading of its own: <code>#</code></td>
+<td>Nothing for a description. <code>reading-wrapped</code>, a warning, for a reading</td>
+</tr>
+<tr>
+<td><code>- Find her.</code> (a hyphen, then a space)</td>
+<td>Drawn as a list: indented, light blue, with its hyphen</td>
+<td>Kept as typed, hyphen and all</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>1. Find her.</code> (a number, a period, then a space)</td>
+<td>Drawn as a numbered list, indented. The game does the counting: a list typed <code>3.</code>, <code>4.</code> is shown <code>1.</code>, <code>2.</code>, and so is one typed <code>1)</code>, <code>2)</code></td>
+<td>Kept as typed</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>A plain line straight under a list, with no blank line between</td>
+<td>Drawn as part of the list: indented like the items, and in their color</td>
+<td>Does not apply</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>`drifting`</code> (the backticks this course puts round words to type)</td>
+<td>The backticks are left out. The word stays</td>
+<td>Kept as typed, backticks and all</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>10^3</code> (a caret)</td>
+<td>A new line starts where the caret was. The caret is gone</td>
+<td>Kept as typed</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>A tab in the middle of a line</td>
+<td>One space</td>
+<td>Kept as a tab</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>A tab or spaces at the start of a line</td>
+<td>Removed</td>
+<td>Removed</td>
+<td>Nothing</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What the game prints as you typed it.</strong> A preview would draw the first six:</p>
+<table>
+<thead>
+<tr>
+<th>You type</th>
+<th>In a quest's description</th>
+<th>In a reading</th>
+<th>Lint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>**drifting**</code>, <code>*drifting*</code>, <code>_drifting_</code> or <code>&lt;b&gt;drifting&lt;/b&gt;</code></td>
+<td>Shown as typed, stars and all. Nothing is bold or slanted</td>
+<td>The same</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>[the old report](https://example.com/report)</code>, anywhere in a line</td>
+<td>Shown as typed, brackets and address. Nothing to click</td>
+<td>The same</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>&gt; She was the pride of the fleet.</code></td>
+<td>Shown as typed, with the <code>&gt;</code></td>
+<td>The same</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>* Find her.</code> (a star for a list)</td>
+<td>Shown as typed, star and all. Only a hyphen makes a list</td>
+<td>The same</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>---</code> on a line of its own, between two paragraphs</td>
+<td>Shown as typed: three hyphens, and no line across the screen</td>
+<td>One more reading: <code>---</code></td>
+<td>Nothing for a description. <code>reading-wrapped</code>, a warning, for a reading</td>
+</tr>
+<tr>
+<td>Two spaces at the end of a line (markdown's way to break a line)</td>
+<td>Nothing. The spaces are dropped</td>
+<td>The same</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><code>dead_reckoning</code> (an underscore in a word)</td>
+<td>Shown as typed</td>
+<td>The same</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>A sentence that only looks like a mark: <code>40 years ago this ship was reported lost.</code>, <code>-Find her.</code>, <code>[Static] Is anyone aboard?</code>, <code>$500 says she is not empty.</code></td>
+<td>Shown as typed</td>
+<td>The same</td>
+<td>Nothing</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines and gaps:</strong></p>
+<table>
+<thead>
+<tr>
+<th>You type</th>
+<th>In a quest's description</th>
+<th>In a reading</th>
+<th>Lint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A blank line between two paragraphs</td>
+<td>The second paragraph starts on a new line. There is no gap between them</td>
+<td>Two readings. The crew is shown one of them</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>Enter pressed in the middle of a paragraph</td>
+<td>The same as a blank line: a new line starts there</td>
+<td>Two readings. The crew may be shown half a sentence</td>
+<td>Nothing for a description. <code>reading-wrapped</code>, a warning, for a reading</td>
+</tr>
+</tbody>
+</table>
+<p>Three rules cover the three tables:</p>
+<ol>
+<li><strong>In <code>mission.amd</code>, write plain sentences.</strong> No stars, no backticks, no links. The crew
+   would read the marks, or lose them.</li>
+<li><strong>One paragraph, one line.</strong></li>
+<li><strong>A heading and a list are the two marks a description draws.</strong> Give a list a blank
+   line above it and a blank line below it. Neither is drawn in a reading.</li>
+</ol>
+<p>Of the characters a sentence is likely to open with, three can make a mark: a hash; a
+hyphen followed by a space; a number followed by a period and a space. So <code>40 years ago</code>
+opens a sentence. But <code>2187. A bad year.</code> is taken for the first item of a numbered list,
+and the crew reads <code>1. A bad year.</code> And <code>#1 priority is the hulk.</code> is taken for a heading:
+the crew reads <code>1 priority is the hulk.</code>, large and gray.</p>
+<h2 id="step-11-play-it-optional">Step 11 - Play it (optional)<a class="headerlink" href="#step-11-play-it-optional" title="Permanent link">&para;</a></h2>
+<p>This step is the only one that changes <code>mission.amd</code>, and it changes it back. It takes
+five minutes. If you would sooner watch, the video does it.</p>
+<ol>
+<li>In <code>mission.amd</code>, find this line. It is line 31, the description of <strong>Find the
+   Derelict</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Fly out and locate the drifting hulk.
+</code></pre></div>
+<ol>
+<li>Select the whole line and type these nine lines over it. The third, the sixth and the
+   eighth are blank:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a># Orders
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>Fly out and locate the **drifting** hulk.
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>- Find her.
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>- Scan her.
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>Her last word was `stay`.
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>Read [the old report](https://example.com/report) first.
+</code></pre></div>
+<ol>
+<li>Press <code>Ctrl+S</code>. The game reads the saved file, not your screen.</li>
+<li>Start the game the way you did in Lecture 3, Step 7. In the command prompt, in
+   <code>data\missions</code>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sbs run server,helm,science -m MyMission map=0
+</code></pre></div>
+<ol>
+<li>Go to the <code>helm</code> window. Do not fly anywhere yet. Click the handheld icon at the top,
+   beside the crew member's name, then <strong>Quests</strong>. The page that opens is the <strong>Quest
+   Log</strong>.</li>
+<li>In the list on the left, select <strong>Find the Derelict</strong>. It is the line under First
+   Contact.</li>
+</ol>
+<p>On the right, under <code>State</code> and <code>Active</code>:</p>
+<table>
+<thead>
+<tr>
+<th>You typed</th>
+<th>The crew reads</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code># Orders</code></td>
+<td><code>Orders</code>, as a heading: larger gray letters, and no hash</td>
+</tr>
+<tr>
+<td><code>Fly out and locate the **drifting** hulk.</code></td>
+<td>The same, stars and all</td>
+</tr>
+<tr>
+<td><code>- Find her.</code> and <code>- Scan her.</code></td>
+<td>A list: indented, light blue, each line with its hyphen</td>
+</tr>
+<tr>
+<td><code>Her last word was `stay`.</code></td>
+<td><code>Her last word was stay.</code> The backticks are gone</td>
+</tr>
+<tr>
+<td><code>Read [the old report](https://example.com/report) first.</code></td>
+<td>The same, brackets and address. There is nothing to click</td>
+</tr>
+<tr>
+<td>The three blank lines</td>
+<td>Nothing. Each line starts straight under the one before it</td>
+</tr>
+</tbody>
+</table>
+<p>A preview would have drawn all six. The game drew two, the heading and the list. It
+printed two as you typed them, took the backticks away, and took no notice of the blank
+lines.</p>
+<ol>
+<li>Close all three game windows.</li>
+<li>Put the file back. In <code>mission.amd</code>, press <code>Ctrl+Z</code> until the nine lines are one line
+   again. If that no longer works, delete the nine lines and type the one line back:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Fly out and locate the drifting hulk.
+</code></pre></div>
+<ol>
+<li>Press <code>Ctrl+S</code>.</li>
+</ol>
+<p>Do not leave the nine lines in. Lectures 5 and 6 start from <code>mission.amd</code> as it was when
+you began today, and they name its lines by number.</p>
+<p>Two files in <code>example\</code> are named <code>mission.amd</code>:</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>example\mission.amd</code></td>
+<td>The file as you hand it on to Lecture 5: the one Lecture 3 gave you, with nothing changed</td>
+</tr>
+<tr>
+<td><code>example\step-11-only\mission.amd</code></td>
+<td>The same file with the nine lines in place. It is there to copy from. It is not how this lecture ends</td>
+</tr>
+</tbody>
+</table>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="headerlink" href="#if-something-goes-wrong" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>Likely cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No preview opens</td>
+<td>The file's name does not end in <code>.md</code>, or the cursor is not in the file. Click in the file, then press <code>Ctrl+K</code>, let go, and press <code>V</code></td>
+</tr>
+<tr>
+<td>A long paragraph runs off the right-hand side of the window</td>
+<td>Word wrap is off. Press <code>Alt+Z</code></td>
+</tr>
+<tr>
+<td>The preview shows a line with its hashes</td>
+<td>No space after the hashes, or seven hashes and more</td>
+</tr>
+<tr>
+<td>Your list is one paragraph with hyphens in it</td>
+<td>No space after the hyphens</td>
+</tr>
+<tr>
+<td>A paragraph is in a box, in typewriter letters</td>
+<td>It starts with a tab or with four spaces</td>
+</tr>
+<tr>
+<td>A line of words has turned into a heading</td>
+<td>There is a <code>---</code> on the line straight under it</td>
+</tr>
+<tr>
+<td>The link shows its brackets</td>
+<td>A space between <code>]</code> and <code>(</code>, or the brackets the wrong way round, or a bracket missing</td>
+</tr>
+<tr>
+<td>The stars are showing</td>
+<td>A space inside the stars, or stars on one side only</td>
+</tr>
+<tr>
+<td>There are two <code>]</code> or two <code>)</code> where you typed one</td>
+<td>VS Code added the closing bracket, and you typed another after moving away. Delete one</td>
+</tr>
+<tr>
+<td>The numbers in your list are not the ones you typed</td>
+<td>Markdown counts for you, from the first number. <code>1.</code> three times is shown as 1, 2, 3</td>
+</tr>
+<tr>
+<td>Step 9: <code>mission.amd</code> is all one color</td>
+<td>The add-on is off, or not installed. The marks are the same, so carry on. See "Before you start"</td>
+</tr>
+<tr>
+<td>Step 11: the game does not start, or it starts on another mission</td>
+<td>The <code>run</code> line. Type it as Lecture 3, Step 7, has it, and look in that lecture's "If something goes wrong"</td>
+</tr>
+<tr>
+<td>Step 11: the right-hand side says <code>Select a quest from the list.</code></td>
+<td>Nothing is selected yet, or you clicked the line above First Contact. Click <strong>Find the Derelict</strong></td>
+</tr>
+<tr>
+<td>Step 11: the right-hand side shows one sentence, then <code>Find the Derelict</code> and <code>... more to follow</code></td>
+<td>You selected First Contact. That is its own sentence and a list of its steps. Select <strong>Find the Derelict</strong>, the line under it</td>
+</tr>
+<tr>
+<td>Step 11: <code>State</code> says <code>Done</code>, and Find the Derelict is not the line straight under First Contact</td>
+<td>The ship has been to the hulk, so the step is finished and has moved down the list. Select it by its name. The lines under <code>State</code> are the same</td>
+</tr>
+<tr>
+<td>Step 11: the right-hand side shows the old sentence</td>
+<td>You did not save <code>mission.amd</code> before you started the game. Close the game, press <code>Ctrl+S</code>, and start it again</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Write the story bible for a mission of your own. Make a second file, <code>my-story.md</code>, in the
+same folder, and give it:</p>
+<ol>
+<li>A title, with one hash.</li>
+<li>One paragraph under the title: the story in two sentences.</li>
+<li>Three headings, with two hashes: <code>## Premise</code>, <code>## People</code>, <code>## What happens</code>.</li>
+<li>A list of at least three people. One line each: a name, a comma, and the one thing the
+   crew should know about them.</li>
+<li>A numbered list of three things that happen, in order.</li>
+<li>One link, to a page that gave you the idea.</li>
+<li>One bold word and one slanted phrase.</li>
+</ol>
+<p>Then read it once more for the plain keyboard: straight quotes, plain hyphens, three
+separate dots.</p>
+<p>Last, open <code>mission.amd</code>, change nothing, and find: a line that is a heading, a line that
+is a fence, a line that is a note, and a line that is a reading.</p>
+<p>Keep <code>my-story.md</code>. The people become characters in Class 2. The three things that happen
+become the steps of your first quest in Lectures 8 and 9.</p>
+<h2 id="checkpoint">Checkpoint<a class="headerlink" href="#checkpoint" title="Permanent link">&para;</a></h2>
+<p>You are done when all four are true:</p>
+<ul>
+<li>The preview of <code>story-bible.md</code> shows a title, three headings, a list of people, a
+  numbered list and a link, with no mark left showing.</li>
+<li><code>my-story.md</code> has the same parts, for your own story.</li>
+<li>You can point at a heading, a fence, a note and a reading in <code>mission.amd</code>, and say
+  which of them would mean something else in markdown.</li>
+<li><code>mission.amd</code> is exactly as it was when Lecture 3 ended. Line 31, its description of
+  Find the Derelict, is one line: <code>Fly out and locate the drifting hulk.</code></li>
+</ul>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>Lecture 5 (the shape of a record) takes three records of <code>mission.amd</code> apart, and you
+type one of your own. It starts from the file as it is now.</p>
+<h2 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
+<ul>
+<li>"The AMD file format" in the library documentation: "Headings" has the table of which
+  marks a quest's description and a reading draw, and "Writing the body" has the marks
+  that are AMD's own.</li>
+<li>"Markdown and Visual Studio Code" in the VS Code documentation: the preview, and the
+  editor's other help for <code>.md</code> files.</li>
+<li>"CommonMark" (commonmark.org): the rules of markdown itself, with a ten-minute
+  tutorial.</li>
+</ul>
+<hr />
+<p><a href="../../downloads/c1-04-markdown-in-twenty-minutes.zip">Download this lecture's finished files</a> (a zip of its <code>example</code> folder).</p>
+<p><a href="https://github.com/artemis-sbs/author-courses/issues/new?template=lecture-feedback.md&amp;title=c1-04-markdown-in-twenty-minutes%3A+">Report a problem with this lecture</a> | <a href="https://github.com/artemis-sbs/author-courses/blob/main/c1-04-markdown-in-twenty-minutes/lesson.md">This page's source</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../03-editor-and-first-run/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3. Your editor and your first run">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                3. Your editor and your first run
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../05-the-shape-of-a-record/" class="md-footer__link md-footer__link--next" aria-label="Next: 5. The shape of a record">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                5. The shape of a record
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.footer", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

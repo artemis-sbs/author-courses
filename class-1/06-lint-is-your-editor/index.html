@@ -1,0 +1,2257 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Write missions for Artemis Cosmos. A course for storytellers, not programmers.">
+      
+      
+      
+        <link rel="canonical" href="https://artemis-sbs.github.io/author-courses/class-1/06-lint-is-your-editor/">
+      
+      
+        <link rel="prev" href="../05-the-shape-of-a-record/">
+      
+      
+        <link rel="next" href="../07-roles-and-signals/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>6. Lint is your editor - Cosmos Author Courses</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-1-lecture-6-lint-is-your-editor" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cosmos Author Courses" class="md-header__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cosmos Author Courses
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6. Lint is your editor
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Light"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Dark"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cosmos Author Courses" class="md-nav__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cosmos Author Courses
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reviewers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For reviewers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-what-you-are-going-to-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What you are going to build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-files-folders-command-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Files, folders and the command prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-editor-and-first-run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Your editor and your first run
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-markdown-in-twenty-minutes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Markdown in twenty minutes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-the-shape-of-a-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. The shape of a record
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Lint is your editor
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Lint is your editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-run-lint-on-a-file-with-nothing-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Run lint on a file with nothing wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-break-1-a-field-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Break 1: a field name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-break-2-words-from-a-word-processor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Break 2: words from a word processor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-break-3-a-key-that-no-longer-matches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Break 3: a key that no longer matches
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-break-4-a-fence-left-open" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Break 4: a fence left open
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-break-5-the-number-of-hashes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Break 5: the number of hashes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Check it
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 7 - Check it">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-clean-does-not-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What clean does not mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#three-switches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three switches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-play-it-the-second-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Play it: the second check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-roles-and-signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Roles and signals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-first-quest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Your first quest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-chains-and-trees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Chains and trees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-things-quests-point-at/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Things quests point at
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-just-enough-mast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Just enough MAST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-ship-a-quest-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Capstone: ship a quest mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-run-lint-on-a-file-with-nothing-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Run lint on a file with nothing wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-break-1-a-field-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Break 1: a field name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-break-2-words-from-a-word-processor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Break 2: words from a word processor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-break-3-a-key-that-no-longer-matches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Break 3: a key that no longer matches
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-break-4-a-fence-left-open" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Break 4: a fence left open
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-break-5-the-number-of-hashes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Break 5: the number of hashes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Check it
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 7 - Check it">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-clean-does-not-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What clean does not mean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#three-switches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three switches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-play-it-the-second-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Play it: the second check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="class-1-lecture-6-lint-is-your-editor">Class 1, Lecture 6 - Lint is your editor<a class="headerlink" href="#class-1-lecture-6-lint-is-your-editor" title="Permanent link">&para;</a></h1>
+<h2 id="what-you-will-have-at-the-end">What you will have at the end<a class="headerlink" href="#what-you-will-have-at-the-end" title="Permanent link">&para;</a></h2>
+<p>A habit. After every change you run one command, read one line, fix one thing, and run it
+again.</p>
+<p>You will break your mission in five places on purpose, and mend it each time. Each break is
+one a new writer makes in the first week. When you make one by accident later, you will
+have seen its message before.</p>
+<p><em>[Screenshot to add: the command prompt with one warning line from lint, its four parts
+marked.]</em></p>
+<p>You will type in one file, <code>mission.amd</code>. At the end it is exactly as it was at the start.</p>
+<h2 id="the-video">The video<a class="headerlink" href="#the-video" title="Permanent link">&para;</a></h2>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/SyNibfGDPTs" title="Class 1, Lecture 6 - Lint is your editor" allowfullscreen></iframe></div>
+
+<p>About 8 minutes. Subtitles are available in the player.</p>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Your mission as Lecture 5 left it. In this page its folder is called <code>MyMission</code>. Use
+  your own folder's name.</li>
+<li>VS Code, with the mission folder open and <code>mission.amd</code> in front.</li>
+<li>A command prompt open in <code>data\missions</code>.</li>
+<li>The game closed.</li>
+</ul>
+<p>The line numbers on this page are for the file Lecture 5 left you, with your Derelict
+Intel record at the end of it. If yours differ, go by the words.</p>
+<p>Words for this lecture:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lint</td>
+<td>A program that reads your mission's files and lists what looks wrong. It changes nothing in them</td>
+</tr>
+<tr>
+<td>Finding</td>
+<td>One line that lint prints, about one problem</td>
+</tr>
+<tr>
+<td>Error</td>
+<td>A finding about a line the game cannot read the way you wrote it</td>
+</tr>
+<tr>
+<td>Warning</td>
+<td>A finding about a line the game can read, but which will not do what you meant</td>
+</tr>
+<tr>
+<td>Key</td>
+<td>The word in round brackets at the end of a heading</td>
+</tr>
+<tr>
+<td>Log</td>
+<td>A text file the game writes notes in while it runs</td>
+</tr>
+</tbody>
+</table>
+<p>The title uses "editor" the way a publisher does: the person who reads your manuscript and
+marks it up. Lint marks. You fix.</p>
+<h2 id="step-1-run-lint-on-a-file-with-nothing-wrong">Step 1 - Run lint on a file with nothing wrong<a class="headerlink" href="#step-1-run-lint-on-a-file-with-nothing-wrong" title="Permanent link">&para;</a></h2>
+<p>In the command prompt, type:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sbs lint MyMission
+</code></pre></div>
+<p>The answer:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>== mission.amd ==
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  clean
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>1 amd + 1 mast file(s): 0 error(s), 0 warning(s)
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>What it tells you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>== mission.amd ==</code></td>
+<td>The file the lines below are about</td>
+</tr>
+<tr>
+<td><code>clean</code></td>
+<td>Lint found nothing to say about that file</td>
+</tr>
+<tr>
+<td><code>1 amd + 1 mast file(s)</code></td>
+<td>What it read: one fact sheet, <code>mission.amd</code>, and one story file, <code>story.mast</code></td>
+</tr>
+<tr>
+<td><code>0 error(s), 0 warning(s)</code></td>
+<td>The count. This is the line to read first, every time</td>
+</tr>
+</tbody>
+</table>
+<p>Read the count line even when the answer is <code>clean</code>. If it ever says <code>0 amd</code>, lint did
+not find your fact sheet at all.</p>
+<h2 id="step-2-break-1-a-field-name">Step 2 - Break 1: a field name<a class="headerlink" href="#step-2-break-1-a-field-name" title="Permanent link">&para;</a></h2>
+<p>Find the record <strong>Find the Derelict</strong>. In its fence, change <code>Done when:</code> to <code>Done wen:</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Done wen: signal derelict_found
+</code></pre></div>
+<p>Save the file with <code>Ctrl+S</code>. Lint reads the file on your disk, so a change you have not
+saved does not exist yet.</p>
+<p>Run lint again. In the command prompt, press the up arrow and then Enter.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>== mission.amd ==
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  [WARNING] line 28:1: `Done wen` is not a field a quest has, so nothing reads this line. Did you mean `Done when`? (unknown-field)
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
+</code></pre></div>
+<p>That long line is a finding. Every finding has the same four parts.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Here</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The level</td>
+<td><code>[WARNING]</code></td>
+<td>A warning or an error</td>
+</tr>
+<tr>
+<td>The place</td>
+<td><code>line 28:1</code></td>
+<td>Line 28 of the file, and character 1 of that line. Both count from 1. Some findings give only the line</td>
+</tr>
+<tr>
+<td>The sentence</td>
+<td><code>Done wen is not a field a quest has ... Did you mean Done when?</code></td>
+<td>What is wrong, in words</td>
+</tr>
+<tr>
+<td>The code</td>
+<td><code>(unknown-field)</code></td>
+<td>Lint's short name for this kind of problem. The tables in this course use it</td>
+</tr>
+</tbody>
+</table>
+<p>To go to line 28 in VS Code, press <code>Ctrl+G</code>, type <code>28</code>, and press Enter. VS Code shows
+your place at the bottom of the window as <code>Ln</code> and <code>Col</code>. Lint's <code>28:1</code> is VS Code's
+<code>Ln 28, Col 1</code>.</p>
+<p>Read the sentence to its end. This one says three things, and most do:</p>
+<table>
+<thead>
+<tr>
+<th>In the sentence</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Done wen is not a field a quest has</code></td>
+<td>What is wrong</td>
+</tr>
+<tr>
+<td><code>so nothing reads this line</code></td>
+<td>What the game does about it</td>
+</tr>
+<tr>
+<td><code>Did you mean Done when?</code></td>
+<td>What to write</td>
+</tr>
+</tbody>
+</table>
+<p>Lint guesses like this when your word is close to a real one. When it is not close, lint
+cannot guess. It then lists the first few field names in a-b-c order, and adds a note
+about <code>amd_register_fields</code>, which is for programmers. Skip both, and check your spelling
+against the record above or below.</p>
+<p>Fix the line, save, and run lint. You want <code>clean</code> again.</p>
+<p>Now the lesson of this break. It was only a warning, and nothing stops you from playing a
+mission that has warnings. But with that one line misspelled, Find the Derelict never
+finishes, and the step after it never appears. <strong>A warning can stop your story as surely
+as an error.</strong> Fix both.</p>
+<h2 id="step-3-break-2-words-from-a-word-processor">Step 3 - Break 2: words from a word processor<a class="headerlink" href="#step-3-break-2-words-from-a-word-processor" title="Permanent link">&para;</a></h2>
+<p>Find the description of Find the Derelict:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Fly out and locate the drifting hulk.
+</code></pre></div>
+<p>Replace it with this sentence. Copy it from this page, or type it in your word processor
+and paste it in. Either way the quote marks come out curly.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Fly out and locate the “ghost ship”. It isn’t answering.
+</code></pre></div>
+<p>Save. Run lint.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>== mission.amd ==
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  [WARNING] line 31:24: `“` is not a plain keyboard character (a word processor puts these in by itself). The game cannot draw it and shows `"` in its place. Type the plain one, so every tool reads this line the same way (non-ascii)
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  [WARNING] line 31:35: `”` is not a plain keyboard character (a word processor puts these in by itself). The game cannot draw it and shows `"` in its place. Type the plain one, so every tool reads this line the same way (non-ascii)
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  [WARNING] line 31:44: `’` is not a plain keyboard character (a word processor puts these in by itself). The game cannot draw it and shows `'` in its place. Type the plain one, so every tool reads this line the same way (non-ascii)
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>1 amd + 1 mast file(s): 0 error(s), 3 warning(s)
+</code></pre></div>
+<p>Three findings, one paste: one for each curly mark. All three are on line 31, and the
+number after the colon tells them apart: character 24, character 35, character 44. In
+VS Code, click just in front of the first curly mark and look at the bottom of the
+window. It says <code>Ln 31, Col 24</code>.</p>
+<p>Read each sentence to its end again. It says what the game does: it cannot draw the curly
+mark, and it shows the plain one in its place. So the crew would read this:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Fly out and locate the "ghost ship". It isn't answering.
+</code></pre></div>
+<p>That is the game being kind, and it is still a warning. The words in your file are no
+longer the words on the screen. And the game has a plain twin for only some characters. A
+long dash becomes <code>-</code>. Three dots that your word processor turned into one character become
+<code>...</code>. An accented letter loses its accent. An emoji is left out.</p>
+<p>Fix it by typing the marks again in VS Code. Delete each curly mark and press the plain
+key: <code>"</code> and <code>'</code>. Save, and run lint: <code>clean</code>.</p>
+<p>Then put the first sentence back, so your file matches the rest of this page:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Fly out and locate the drifting hulk.
+</code></pre></div>
+<h2 id="step-4-break-3-a-key-that-no-longer-matches">Step 4 - Break 3: a key that no longer matches<a class="headerlink" href="#step-4-break-3-a-key-that-no-longer-matches" title="Permanent link">&para;</a></h2>
+<p>Find the heading of the second step:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>#### [Study the Derelict](study)
+</code></pre></div>
+<p>Change its key to <code>examine</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>#### [Study the Derelict](examine)
+</code></pre></div>
+<p>Save. Run lint.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>== mission.amd ==
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  [WARNING] line 29:14: `find` Then reveals `first_contact/study`, and no record has that key, so nothing is revealed (dangling-reveal)
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>  [WARNING] line 36: `Study the Derelict` waits to be revealed, and nothing reveals it: no `Then: reveal first_contact/examine` on another step, and no answer or story line names `examine`. It never appears, and the story it belongs to cannot finish (never-revealed)
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>1 amd + 1 mast file(s): 0 error(s), 2 warning(s)
+</code></pre></div>
+<p>You changed line 33. Lint is talking about line 29 and line 36, and it says nothing about
+line 33. Look at both:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Then: reveal first_contact/study
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Starts when: revealed
+</code></pre></div>
+<p>Line 29 points at a record by its key, and the key it names is gone. Line 36 is in the
+record you renamed: that step waits to be pointed at, and nothing points at <code>examine</code>.
+They are the two ends of one broken link. Lint names the line that points and the line
+that waits. The line you changed is between them.</p>
+<table>
+<thead>
+<tr>
+<th>In the message</th>
+<th>In plain words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>`find`</code></td>
+<td>The key of the record that line 29 is in</td>
+</tr>
+<tr>
+<td><code>Then reveals first_contact/study</code></td>
+<td>What line 29 points at</td>
+</tr>
+<tr>
+<td><code>no record has that key, so nothing is revealed</code></td>
+<td>The step it points at will never appear</td>
+</tr>
+<tr>
+<td><code>waits to be revealed</code></td>
+<td>Line 36 says <code>Starts when: revealed</code>. That step stays hidden until another line names it</td>
+</tr>
+<tr>
+<td><code>no Then: reveal first_contact/examine on another step</code></td>
+<td>The line that would name it, spelled with its new key</td>
+</tr>
+<tr>
+<td><code>no answer or story line names examine</code></td>
+<td>Two other ways a step can be named. You meet them later in the course</td>
+</tr>
+<tr>
+<td><code>It never appears, and the story it belongs to cannot finish</code></td>
+<td>What the game does</td>
+</tr>
+</tbody>
+</table>
+<p>There is a second way to ask what line 29 points at. Type:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sbs lint MyMission --missing
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>1 thing(s) referenced but not written yet:
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>  first_contact/study
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>      revealed by `find`   mission.amd:29
+</code></pre></div>
+<p><code>--missing</code> lists every key you have pointed at and not written. It is a to-do list for a
+story you are still drafting.</p>
+<p>You have two ways to fix this one: put the key back, or change line 29 to the line the
+second finding spells out. Put the key back to <code>study</code>. Save, and run lint: <code>clean</code>. Both
+findings go at once.</p>
+<p>If you had played it: Find the Derelict finishes when the ship reaches the hulk, and Study
+the Derelict never appears.</p>
+<h2 id="step-5-break-4-a-fence-left-open">Step 5 - Break 4: a fence left open<a class="headerlink" href="#step-5-break-4-a-fence-left-open" title="Permanent link">&para;</a></h2>
+<p>Find the record <strong>Derelict Hull</strong>, near the end of the file:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>### [Derelict Hull](derelict_scan)
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>---
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>Scan of: derelict
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>Tab: scan
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>---
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>% The hull is cold. Whatever happened here happened a long time ago.
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>% Hull plating is intact but every port is dark. No power anywhere aboard.
+</code></pre></div>
+<p>Delete the second <code>---</code>, the one under <code>Tab: scan</code>. Save. Run lint.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>== mission.amd ==
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>  [ERROR] line 48: the fence that opens here has no closing `---` before the next heading, `### [Derelict Materials](derelict_mat)` on line 54. The lines under its fields are read as fields, so `### [Derelict Hull](derelict_scan)` has no text. Add a `---` line under its last field (unclosed-data-fence)
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>1 amd + 1 mast file(s): 1 error(s), 0 warning(s)
+</code></pre></div>
+<p>This is your first error.</p>
+<p>You deleted line 51. Lint names line 48. Look at line 48: it is the first <code>---</code>, the one
+that opens the fence. Lint names the line where the fence opens, because that is the
+fence that never closes. The sentence then tells you where the missing line goes.</p>
+<table>
+<thead>
+<tr>
+<th>In the message</th>
+<th>In plain words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the fence that opens here</code></td>
+<td>The <code>---</code> on line 48</td>
+</tr>
+<tr>
+<td><code>before the next heading ... on line 54</code></td>
+<td>The game stops reading this fence at the next heading. The record that starts there, Derelict Materials, is not harmed</td>
+</tr>
+<tr>
+<td><code>The lines under its fields are read as fields</code></td>
+<td>Your two readings were taken for fields, and they are not fields</td>
+</tr>
+<tr>
+<td><code>has no text</code></td>
+<td>So this record keeps its fields and has nothing to show</td>
+</tr>
+<tr>
+<td><code>Add a --- line under its last field</code></td>
+<td>The fix. The last field is <code>Tab: scan</code></td>
+</tr>
+</tbody>
+</table>
+<p>Type the <code>---</code> back under <code>Tab: scan</code>. Save. Run lint: <code>clean</code>.</p>
+<p>This is break 3 again in another place: the line lint names is not always the line you
+changed. Read the sentence. It says where to look.</p>
+<p>If you had played it: the hulk keeps its <code>mat</code> reading and has no <code>scan</code> reading.</p>
+<h2 id="step-6-break-5-the-number-of-hashes">Step 6 - Break 5: the number of hashes<a class="headerlink" href="#step-6-break-5-the-number-of-hashes" title="Permanent link">&para;</a></h2>
+<p>The hashes in front of a heading say where a record sits. In this file <code>##</code> starts a
+section, <code>###</code> starts a record in it, and <code>####</code> starts a step of the record above it. You
+will get the count wrong two ways, on one heading.</p>
+<p><strong>One hash too many.</strong> On the same record, add a fourth hash to the heading:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>#### [Derelict Hull](derelict_scan)
+</code></pre></div>
+<p>Save. Run lint.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>== mission.amd ==
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>  [ERROR] line 47: `#### [Derelict Hull](derelict_scan)` has 4 hashes and the heading it sits under has 2: 1 too many. The game reads it as if it had 3, which may not be the record you meant it to be (heading-level-jump)
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>1 amd + 1 mast file(s): 1 error(s), 0 warning(s)
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>In the message</th>
+<th>In plain words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the heading it sits under has 2</code></td>
+<td>The nearest heading above with fewer hashes: <code>## [Scans](scans)</code></td>
+</tr>
+<tr>
+<td><code>1 too many</code></td>
+<td>A heading can have one more hash than the heading it sits under, and no more</td>
+</tr>
+<tr>
+<td><code>The game reads it as if it had 3</code></td>
+<td>What the game does: it takes the extra hash off for you</td>
+</tr>
+<tr>
+<td><code>which may not be the record you meant it to be</code></td>
+<td>The game is guessing, and a guess can be wrong</td>
+</tr>
+</tbody>
+</table>
+<p>Here the guess is right. Three hashes is what this record should have, so the game reads
+it and nothing is lost. It is still an error, and it is still yours to fix: with two
+hashes too many on Study the Derelict, the same guess makes it a step of Find the
+Derelict, and it never appears.</p>
+<p>Take the fourth hash off. Save. Run lint: <code>clean</code>.</p>
+<p>In break 1 a warning stopped your story. Here an error cost you nothing. So do not judge a
+finding by its level. Read its sentence: that is where lint says what the game will do.</p>
+<p><strong>Too few hashes.</strong> Now take two hashes off the same heading, so it has one:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a># [Derelict Hull](derelict_scan)
+</code></pre></div>
+<p>Save. Run lint.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>== mission.amd ==
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>  [ERROR] line 47: `# [Derelict Hull](derelict_scan)` has 1 hash, and the next record (line 55) has 3. One hash starts a new title, so this record and the ones after it are no longer in their section. Give it 3 (heading-level-jump)
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>  [WARNING] line 55:6: `Derelict Materials` has 3 hashes, which makes it a section of its own, and nothing in this mission reads a section keyed `derelict_mat`. If it is a record, give its heading 4 hashes so it sits inside the section above it (section-not-loaded)
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>  [WARNING] line 55:6: `Derelict Materials` is nested under the scan record `Derelict Hull`, so it is not read. Give it the same number of hashes (scan-record-level)
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>  [ERROR] line 62: `### [Derelict Intel](derelict_intel)` has 3 hashes and the heading it sits under has 1: 1 too many. The game reads it as if it had 2, which may not be the record you meant it to be (heading-level-jump)
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>  [WARNING] line 62:6: `Derelict Intel` has 3 hashes, which makes it a section of its own, and nothing in this mission reads a section keyed `derelict_intel`. If it is a record, give its heading 4 hashes so it sits inside the section above it (section-not-loaded)
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>  [WARNING] line 62:6: `Derelict Intel` is nested under the scan record `Derelict Hull`, so it is not read. Give it the same number of hashes (scan-record-level)
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>1 amd + 1 mast file(s): 2 error(s), 4 warning(s)
+</code></pre></div>
+<p>One changed line made six findings.</p>
+<p>Do not work through all six. Read the first one only.</p>
+<p>The first is about line 47, the line you changed. It says what happened: one hash starts
+a new title, so this record and the ones after it are no longer in their section. It ends
+with the fix: <code>Give it 3</code>.</p>
+<p>The other five are about line 55 and line 62. Those are Derelict Materials and your own
+Derelict Intel, two records you did not touch, and they have nothing wrong with them.
+They are the same mistake seen from further down the file. Look at the advice for line
+55: one finding says to give it four hashes, and the other says to give it the same
+number as the record above. Do either, and you have two mistakes.</p>
+<p>Put the three hashes back on line 47. Save. Run lint: <code>clean</code>. All six are gone.</p>
+<p><strong>The rule: fix the first finding, then run lint again.</strong> Never start from the bottom of
+the list.</p>
+<p>If you had played it with one hash: the hulk has no scan text at all, and the game writes
+the sentence of lint's first finding, word for word, in <code>mast.runtime.log</code>.</p>
+<p>You will put the fourth hash back for a minute in Step 8, to see what the game says about
+it.</p>
+<h2 id="step-7-check-it">Step 7 - Check it<a class="headerlink" href="#step-7-check-it" title="Permanent link">&para;</a></h2>
+<p>You have now read your first findings. These tables hold the rest of what a new writer
+runs into. Every row was tried on this mission. The last column is the code at the end of
+lint's line.</p>
+<p><strong>The heading:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>###[Derelict Hull](derelict_scan)</code> (no space after the hashes)</td>
+<td>The record is gone. The hulk has no <code>scan</code> text</td>
+<td><code>broken-heading</code>, an error. Its sentence gives the line to write</td>
+</tr>
+<tr>
+<td><code>### [Derelict Hull] (derelict_scan)</code> (a space before the round bracket)</td>
+<td>The same</td>
+<td><code>broken-heading</code>, an error. Its sentence names the space</td>
+</tr>
+<tr>
+<td><code>### [Derelict Hull](derelict_scan</code> (no closing round bracket)</td>
+<td>The same</td>
+<td><code>broken-heading</code>, an error</td>
+</tr>
+<tr>
+<td><code>### [Derelict Hull(derelict_scan)</code> (no closing square bracket)</td>
+<td>The same</td>
+<td><code>broken-heading</code>, an error</td>
+</tr>
+<tr>
+<td><code>### Derelict Hull (derelict_scan)</code> (no square brackets)</td>
+<td>The same</td>
+<td><code>broken-heading</code>, an error</td>
+</tr>
+<tr>
+<td><code>### [Derelict Hull]</code> (no key)</td>
+<td>The same</td>
+<td><code>broken-heading</code>, an error</td>
+</tr>
+<tr>
+<td>A note typed after the heading, on the same line</td>
+<td>The same</td>
+<td><code>broken-heading</code>, an error</td>
+</tr>
+<tr>
+<td>Spaces in front of a heading</td>
+<td>The same</td>
+<td><code>broken-heading</code>, an error</td>
+</tr>
+<tr>
+<td><code>[Derelict Hull](derelict_scan)</code> (the hashes left off)</td>
+<td>The same</td>
+<td><code>broken-heading</code>, an error. Its sentence gives the line to write</td>
+</tr>
+<tr>
+<td><code>#### [Derelict Hull](derelict_scan)</code> (four hashes straight under two)</td>
+<td>The game reads it as three. Nothing is lost. It writes one line in <code>mast.runtime.log</code></td>
+<td><code>heading-level-jump</code>, an error</td>
+</tr>
+<tr>
+<td><code># [Derelict Hull](derelict_scan)</code> (one hash on a record)</td>
+<td>The hulk has no scan text at all</td>
+<td>Six findings. The first is <code>heading-level-jump</code>, an error, on that line</td>
+</tr>
+<tr>
+<td>The <code>#</code> title line at the top deleted, or typed with no brackets</td>
+<td>Nothing in the file is read: no quests, no scan text</td>
+<td>Four findings. The first is <code>heading-level-jump</code>, an error. It says there is no title, and shows how to write one</td>
+</tr>
+<tr>
+<td><code>### [Find the Derelict](find)</code> (three hashes on a step)</td>
+<td>Find the Derelict becomes a story of its own. Study the Derelict never appears, and First Contact never finishes</td>
+<td><code>dangling-reveal</code>, a warning, on the <code>Then:</code> line. Its sentence offers a line to write. Do not write it. Put the hash back</td>
+</tr>
+<tr>
+<td><code>##### [Study the Derelict](study)</code> (five hashes on a step)</td>
+<td>First Contact finishes as soon as Find the Derelict does. Study the Derelict never appears</td>
+<td><code>reveal-path</code>, a warning, on the <code>Then:</code> line</td>
+</tr>
+</tbody>
+</table>
+<p>Every <code>broken-heading</code> row is one pattern gone wrong. A heading is hashes, a space, square
+brackets, round brackets, with nothing in front, nothing between the two brackets, and
+nothing after:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>### [Derelict Hull](derelict_scan)
+</code></pre></div>
+<p><strong>The fence:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The closing <code>---</code> deleted</td>
+<td>That record keeps its fields and loses its text: the hulk has no <code>scan</code> text. The record after it is read as usual</td>
+<td><code>unclosed-data-fence</code>, one error, on the line where the fence opens</td>
+</tr>
+<tr>
+<td>The closing <code>---</code> typed as <code>--</code>, as <code>___</code>, as <code>***</code>, as <code>- - -</code>, or changed to one long dash by a word processor</td>
+<td>The same</td>
+<td><code>fence-shape</code>, an error, on that line. The long dash gets a <code>non-ascii</code> warning as well</td>
+</tr>
+<tr>
+<td>The opening <code>---</code> deleted</td>
+<td>That record's fields are read as text, so the hulk has no <code>scan</code> text. The rest of the file is read as usual</td>
+<td><code>fence-not-opened</code>, an error, on the first field</td>
+</tr>
+<tr>
+<td>A sentence typed between the heading and the opening <code>---</code></td>
+<td>The same</td>
+<td><code>fence-not-opened</code>, an error. Its sentence says which line to move</td>
+</tr>
+<tr>
+<td>A <code>---</code> typed inside a description, as a scene break</td>
+<td>The <code>---</code> is kept as part of the description. The rest of the file is read as usual</td>
+<td>Nothing. It is allowed</td>
+</tr>
+<tr>
+<td><code>Scope shared</code> (no colon), or <code>Scope = shared</code></td>
+<td>The game skips the line. In this mission nothing else changes</td>
+<td><code>fence-syntax</code>, an error</td>
+</tr>
+<tr>
+<td>The description typed above the closing <code>---</code></td>
+<td>The step has no description</td>
+<td><code>fence-syntax</code>, an error. Its sentence gives the fix</td>
+</tr>
+<tr>
+<td><code>Tab: mat</code> typed below the closing <code>---</code></td>
+<td>The hulk's <code>scan</code> tab now reads either <code>Tab: mat</code> or the Materials sentence. Its own two readings and its <code>mat</code> tab are gone</td>
+<td><code>duplicate-scan</code> and <code>field-below-fence</code>, warnings. The second one is the mistake</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The fields:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Done wen:</code></td>
+<td>Find the Derelict never finishes</td>
+<td><code>unknown-field</code>, a warning. It guesses the word you meant</td>
+</tr>
+<tr>
+<td><code>Scop: shared</code></td>
+<td>The game skips the line. In this mission nothing else changes</td>
+<td><code>unknown-field</code>, a warning</td>
+</tr>
+<tr>
+<td><code>Tabb: mat</code></td>
+<td>The Materials sentence replaces the hulk's <code>scan</code> text</td>
+<td><code>duplicate-scan</code> and <code>unknown-field</code>, warnings. The second one is the mistake</td>
+</tr>
+<tr>
+<td>Spaces or a tab in front of a field line</td>
+<td>The line is joined to the one above it. In front of <code>Done when:</code>, Find the Derelict is only on offer and never starts</td>
+<td><code>field-indented</code>, a warning</td>
+</tr>
+<tr>
+<td><code>Done when:</code> written twice in one fence</td>
+<td>The second one is used</td>
+<td><code>repeated-field</code>, a warning</td>
+</tr>
+<tr>
+<td><code>Starts when: at onse</code></td>
+<td>Find the Derelict is only on offer. It never starts, and the story stops there</td>
+<td><code>unknown-trigger</code>, a warning. Its sentence lists what you can write</td>
+</tr>
+<tr>
+<td><code>Tab: sacn</code></td>
+<td>That text is put on a tab the game does not have. It is never shown</td>
+<td><code>unknown-scan-tab</code>, a warning</td>
+</tr>
+<tr>
+<td><code>Scope: shard</code></td>
+<td>Nothing changes in this mission</td>
+<td><code>unknown-enum-value</code>, a warning</td>
+</tr>
+<tr>
+<td><code>Then: revael first_contact/study</code></td>
+<td>Study the Derelict never appears</td>
+<td><code>unknown-then-verb</code> and <code>dangling-reveal</code>, warnings</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Keys, and words that have to match:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(study)</code> changed to <code>(examine)</code>, the <code>Then:</code> line left alone</td>
+<td>Find the Derelict finishes. Study the Derelict never appears</td>
+<td><code>dangling-reveal</code> on the <code>Then:</code> line and <code>never-revealed</code> on the step that waits, both warnings</td>
+</tr>
+<tr>
+<td>The story's own key changed, <code>(first_contact)</code> to <code>(contact)</code>, the <code>Then:</code> line left alone</td>
+<td>The same</td>
+<td><code>dangling-reveal</code>, a warning. Its sentence gives the line to write</td>
+</tr>
+<tr>
+<td><code>Then: reveal first_contact/stdy</code></td>
+<td>The same</td>
+<td><code>dangling-reveal</code> and <code>never-revealed</code>, warnings</td>
+</tr>
+<tr>
+<td><code>Then: reveal study</code> (the story's key and the slash left off)</td>
+<td>The same</td>
+<td><code>reveal-path</code>, a warning. Its sentence gives the line to write</td>
+</tr>
+<tr>
+<td>The <code>Then:</code> line deleted. Or a new step with <code>Starts when: revealed</code>, and no <code>Then:</code> line that names it</td>
+<td>The step that waits never appears, and First Contact never finishes</td>
+<td><code>never-revealed</code>, a warning, on the <code>Starts when:</code> line. Its sentence gives the line to write</td>
+</tr>
+<tr>
+<td>A step copied to make a new one, with the key left the same</td>
+<td>The copy is dropped. The game keeps the first record with that key</td>
+<td><code>duplicate-key</code>, a warning</td>
+</tr>
+<tr>
+<td><code>## [Quests](quest)</code></td>
+<td>No quests at all</td>
+<td><code>section-not-loaded</code>, a warning. Its sentence lists the keys the story asks for</td>
+</tr>
+<tr>
+<td>The <code>## [Scans](scans)</code> line deleted</td>
+<td>The two scan records become two quests on offer. The hulk has no scan text</td>
+<td><code>unknown-field</code>, four times. Each one asks whether the <code>##</code> heading is missing</td>
+</tr>
+<tr>
+<td><code>Scan of: derelect</code></td>
+<td>The hulk has no <code>scan</code> text</td>
+<td><code>role-nothing-wears</code>, a warning</td>
+</tr>
+<tr>
+<td><code>Done when: signal derelict_fond</code></td>
+<td>Find the Derelict never finishes</td>
+<td><code>unfired-signal</code>, a warning</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Text:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Curly quotes, a curly apostrophe, a long dash, three dots as one character</td>
+<td>The game shows the plain one in its place: <code>"</code>, <code>'</code>, <code>-</code>, <code>...</code></td>
+<td><code>non-ascii</code>, a warning. Its sentence says what the game shows. Marks side by side share one warning</td>
+</tr>
+<tr>
+<td>An accented letter</td>
+<td>The game shows the letter without its accent</td>
+<td><code>non-ascii</code>, a warning</td>
+</tr>
+<tr>
+<td>An emoji</td>
+<td>The game leaves it out</td>
+<td><code>non-ascii</code>, a warning</td>
+</tr>
+<tr>
+<td>A reading (a <code>%</code> line) broken over two lines</td>
+<td>It becomes two readings. The crew can be shown half a sentence</td>
+<td><code>reading-wrapped</code>, a warning</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The files:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game does</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mission.amd</code> given another name</td>
+<td>The mission stops as it starts: the story asks for <code>mission.amd</code> by name</td>
+<td><code>amd-file-missing</code>, an error, under <code>== story.mast ==</code>. Its sentence names the <code>.amd</code> files the folder does have</td>
+</tr>
+<tr>
+<td><code>mission.amd</code> saved as <code>mission.amd.txt</code></td>
+<td>The same</td>
+<td><code>amd-file-missing</code>, an error. Its sentence names the <code>.txt</code> file. The count line says <code>0 amd</code></td>
+</tr>
+<tr>
+<td>Every line of <code>mission.amd</code> deleted</td>
+<td>No quests and no scan text</td>
+<td><code>no-headings</code>, an error</td>
+</tr>
+<tr>
+<td>A stray key press in <code>story.mast</code></td>
+<td>Nothing in the mission runs</td>
+<td><code>mast-compile</code>, an error, under <code>== story.mast (compile) ==</code>. It gives the line</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-clean-does-not-mean">What <code>clean</code> does not mean<a class="headerlink" href="#what-clean-does-not-mean" title="Permanent link">&para;</a></h3>
+<p><code>clean</code> means four things. Every heading, fence and field has a shape lint knows. Every
+key that a line points at exists. Every character is a plain one. And the game can read
+<code>story.mast</code>.</p>
+<p>It does not mean the mission does what you meant. For each row below, lint says <code>clean</code>.</p>
+<table>
+<thead>
+<tr>
+<th>You wrote</th>
+<th>What happens</th>
+<th>What tells you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code># [Derelict Materials](derelict_mat)</code> (one hash on the last record in the file)</td>
+<td>That record is gone. The hulk has no <code>mat</code> text</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>Three hashes on a step, and then the <code>Then:</code> line that lint offers for it</td>
+<td>First Contact never finishes</td>
+<td>Nothing. This is why the heading table says to put the hash back</td>
+</tr>
+<tr>
+<td>A note that starts with <code>#</code>, or with one <code>/</code></td>
+<td>The note becomes part of a description</td>
+<td>Nothing. In this file a note starts with <code>//</code></td>
+</tr>
+<tr>
+<td><code>Done when: signal derelict_scanned</code> on Find the Derelict (a real signal, on the wrong step)</td>
+<td>Find the Derelict waits for Science, not for the ship</td>
+<td>Nothing. Lint cannot know which one you meant</td>
+</tr>
+</tbody>
+</table>
+<p>So when something is missing in the game and lint says <code>clean</code>, look at two lines: the
+heading of the record that is missing, and the <code>Then:</code> line that names it.</p>
+<h3 id="three-switches">Three switches<a class="headerlink" href="#three-switches" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>You type</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sbs lint MyMission --missing</code></td>
+<td>The to-do list from Step 4. It is not a check. It says <code>Nothing missing</code> about a file that has errors in it</td>
+</tr>
+<tr>
+<td><code>sbs lint MyMission --strict</code></td>
+<td>The same lines as plain lint. When there are warnings and no errors it adds one more line under the count: <code>FAILED: --strict counts a warning as a failure</code>. The switch is for a program that runs lint for you</td>
+</tr>
+<tr>
+<td><code>sbs lint MyMission --format compact</code></td>
+<td>One line for each finding, with the file name in front. When the mission is clean it prints nothing at all</td>
+</tr>
+</tbody>
+</table>
+<p>You do not need <code>--strict</code>. Treat every warning as something to fix, and you have it
+already.</p>
+<h2 id="step-8-play-it-the-second-check">Step 8 - Play it: the second check<a class="headerlink" href="#step-8-play-it-the-second-check" title="Permanent link">&para;</a></h2>
+<p>Lint reads your files. It does not run them. The second check is to play the mission for
+a minute and then read the two logs.</p>
+<p>First see what a log looks like when the game has something to say.</p>
+<ol>
+<li>Put the first half of break 5 back: four hashes on <strong>Derelict Hull</strong>. Save.</li>
+<li>Start your mission the way you did in Lecture 3, and take a console.</li>
+<li>Open the quest list. At the top of the console, beside your crew member's name, is a
+   handheld icon. It opens the ePADD. Choose <strong>Quests</strong> to open the <strong>Quest Log</strong>. The
+   list is on the left, and <strong>First Contact</strong> is in it. Select it: its <code>State</code> and its
+   text are on the right. Nothing looks wrong, because the game took the extra hash off
+   for you.</li>
+<li>Close the game.</li>
+<li>In VS Code, open <code>mast.runtime.log</code> from the file list.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>AMD error: line 47: `#### [Derelict Hull](derelict_scan)` has 4 hashes, and a heading here can have at most 3. It is read as if it had 3. Take the extra off, or put back the heading above it
+</code></pre></div>
+<p>One line. It names the file's line, says what the game did, and says how to fix it.</p>
+<p>Compare that with what lint said about the same mistake in Step 6. It is the same line
+number and the same advice. Lint gave it to you before you played. That is why lint comes
+first. The log is for what only shows while the mission runs.</p>
+<p>Now mend it.</p>
+<ol>
+<li>Take the fourth hash off. Save. Run lint: <code>clean</code>.</li>
+<li>Open <code>mast.runtime.log</code> again. The line is still there. Lint leaves the logs alone:
+   they are the game's notes on your last play, and they stay until you play again.</li>
+<li>Play again. Open the quest list as before. <strong>First Contact</strong> is in it.</li>
+<li>Close the game. Open <code>mast.compile.log</code> and <code>mast.runtime.log</code>. Both are empty. The
+   game starts each play with two empty logs.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Log</th>
+<th>It has lines in it when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mast.compile.log</code></td>
+<td>The game could not read <code>story.mast</code>. Nothing ran</td>
+</tr>
+<tr>
+<td><code>mast.runtime.log</code></td>
+<td>Something went wrong while the mission was running, or the game had to guess at a line in <code>mission.amd</code></td>
+</tr>
+</tbody>
+</table>
+<p>Two empty logs after a play mean the game noticed nothing wrong.</p>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="headerlink" href="#if-something-goes-wrong" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>Likely cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ERROR: not a folder: MyMision</code></td>
+<td>The folder name is misspelled, or the command prompt is not in <code>data\missions</code></td>
+</tr>
+<tr>
+<td><code>ERROR: not a folder: MyMission\mission.amd</code></td>
+<td>You gave lint the file. Give it the folder</td>
+</tr>
+<tr>
+<td><code>ERROR: which mission? Put its folder name after the command:</code></td>
+<td>You typed <code>sbs lint</code> with no folder name, or <code>sbs lint .</code> Type your folder's name after it</td>
+</tr>
+<tr>
+<td><code>Error: No such command 'lnt'. Did you mean 'lint'?</code></td>
+<td>A typing slip.</td>
+</tr>
+<tr>
+<td>Lint says the same thing after you fixed it</td>
+<td>You did not save. Press <code>Ctrl+S</code> and run lint again</td>
+</tr>
+<tr>
+<td>The count line says <code>0 amd</code></td>
+<td>There is no file ending in <code>.amd</code> in the folder. Lint prints an <code>amd-file-missing</code> error above the count. Look in the folder for <code>mission.amd.txt</code></td>
+</tr>
+<tr>
+<td><code>== story.mast (compile) ==</code> and a line that starts <code>not checked:</code></td>
+<td>Not a mistake of yours. The part that checks <code>story.mast</code> is not on this computer yet. The line names the command that fetches it</td>
+</tr>
+<tr>
+<td>A finding names a line that looks right</td>
+<td>Look above it for the first finding. A finding about a fence names the line where the fence opens. A finding about a <code>Then:</code> line is about the key it points at</td>
+</tr>
+<tr>
+<td>Lint says <code>clean</code> and something is missing in the game</td>
+<td>Count the hashes on the heading of the missing record, and read the <code>Then:</code> line that names it. Then read "What <code>clean</code> does not mean" in Step 7</td>
+</tr>
+<tr>
+<td><code>mast.runtime.log</code> still shows a line after you fixed the mistake</td>
+<td>The log is from your last play. Lint does not change it. Play again, and read it after that</td>
+</tr>
+<tr>
+<td><code>sbs debug</code> prints a line about <code>EXTRA_SHIP_DATA</code> and a line about <code>@media/skybox</code></td>
+<td>Both are printed for the untouched template too. They are not about your work</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Use the habit on your own words.</p>
+<ol>
+<li>Rewrite the three descriptions in the Quests section in your own words: First Contact,
+   Find the Derelict, Study the Derelict. Keep the names and the keys as they are.</li>
+<li>Rewrite the three readings the template gave you in the Scans section. The fourth,
+   under Derelict Intel, is already yours. Keep each one on a single line, with its <code>%</code>
+   in front.</li>
+<li>After each one: save, run lint, read the count line.</li>
+<li>When all six are done, play for a minute and read both logs.</li>
+<li>Then pick two rows from the tables in Step 7 that you have not tried. Make each
+   mistake, read the finding, and write down its code and what you did to fix it.</li>
+</ol>
+<h2 id="checkpoint">Checkpoint<a class="headerlink" href="#checkpoint" title="Permanent link">&para;</a></h2>
+<p>You are done when all four are true:</p>
+<ul>
+<li><code>sbs lint MyMission</code> answers <code>clean</code>, and its count line reads <code>0 error(s), 0 warning(s)</code>.</li>
+<li>You can point at the four parts of a finding: the level, the place, the sentence, the
+  code.</li>
+<li>After a short play, <code>mast.compile.log</code> and <code>mast.runtime.log</code> are both empty.</li>
+<li>The quest list shows First Contact, with your own description.</li>
+</ul>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>Lecture 7 gives names to two words you saw in this file today: the role <code>derelict</code>, and
+the signal <code>derelict_found</code>.</p>
+<h2 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
+<ul>
+<li>"The <code>sbs</code> CLI" in the library documentation, the part called "Validating AMD". It is
+  about <code>sbs lint</code>.</li>
+<li>"The AMD file format" in the library documentation: headings, fences, and what a kind
+  is.</li>
+<li>"AMD authoring tools" in the library documentation: the editor's own views of the same
+  findings.</li>
+<li>"Troubleshooting - the five classic mistakes" in the Open Universe writer's guide. Its
+  third mistake is the heading table in Step 7.</li>
+</ul>
+<hr />
+<p><a href="../../downloads/c1-06-lint-is-your-editor.zip">Download this lecture's finished files</a> (a zip of its <code>example</code> folder).</p>
+<p><a href="https://github.com/artemis-sbs/author-courses/issues/new?template=lecture-feedback.md&amp;title=c1-06-lint-is-your-editor%3A+">Report a problem with this lecture</a> | <a href="https://github.com/artemis-sbs/author-courses/blob/main/c1-06-lint-is-your-editor/lesson.md">This page's source</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../05-the-shape-of-a-record/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 5. The shape of a record">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                5. The shape of a record
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../07-roles-and-signals/" class="md-footer__link md-footer__link--next" aria-label="Next: 7. Roles and signals">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                7. Roles and signals
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.footer", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
