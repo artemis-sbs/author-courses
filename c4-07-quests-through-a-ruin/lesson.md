@@ -79,14 +79,16 @@ What a ship can do in your mission today, and what has to wait:
 | A win and a loss | Yes. Step 2 |
 | Jumping to another star system to find the ruin | Class 5 |
 
-In Storm's Beacon the last word is sent when the piece has been scanned and towed clear of
-the ruin. That mission has a script of its own for it. Yours does not, so today the word
-comes from Comms.
+In Storm's Beacon the last word is sent when the piece has been taken out of the ruin. The
+game sends that word itself, for any ruin, once a place in it holds a thing to take:
+Lecture 5 teaches that, and Lecture 8 puts it to work. Today the word comes from Comms, so
+the story ends on an answer the crew gives.
 
 ## Step 2 - The story's heading
 
-Open `mission.amd` and find **The One Who Stayed**. It is the last record of the Quests
-section. Leave one blank line below its description, and type:
+Open `mission.amd` and find **The One Who Stayed** in the Quests section. It is the last
+record there, unless you did Lecture 5 before Lecture 6. Leave one blank line below its
+description, and type:
 
 ```
 ### [The Hollow Survey](survey)
@@ -257,8 +259,10 @@ Then: reveal survey/take
 | `Action:` and the line under it | The moment this step starts, Rook calls with the scene `rook_niche` |
 | `Objective:` | It sends the crew to Comms, because nothing the ship does will finish this step |
 
-`hollow_taken` is a word of your own. Write it in small letters, with an underscore where a
-space would go. The habit in Storm's Beacon is the name of the thing and then `_taken`.
+`hollow_taken` is not a word you make up. It is the ruin's key, `hollow`, and then
+`_taken`: the word the game itself sends when the thing a ruin holds is taken out of it
+(Lecture 5). Spell it exactly that way, in small letters. Then one step hears your answer
+on Comms today, and the game's own word once your crew can take the bowl by hand.
 
 Now the call that says the word. Go to the Dialogue section and find **The Entry for
 Dace**, the last of Rook's scenes. Leave one blank line below its answer, and type:
@@ -688,8 +692,9 @@ You are done when all five are true:
 
 ## Next
 
-Lecture 8 will teach EVA: the crew leaves the ship in suits, and the words you wrote on
-The Altar in Lecture 4 are read at last. It is in preparation.
+Lecture 8 is EVA: the crew leaves the ship in suits, and the words you wrote on The Altar
+in Lecture 4 are read at last. It starts from today's file with Lecture 5 done as well. If
+you skipped Lecture 5, do it now, on the file you have.
 
 ## Further reading
 

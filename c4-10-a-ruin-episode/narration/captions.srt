@@ -312,60 +312,60 @@ And the log file is empty after both.
 
 79
 00:05:29,991 --> 00:05:33,035
-Here's one honest note before you go.
+Here's one more thing before you go.
 
 80
 00:05:33,935 --> 00:05:38,283
 In Class three you wrote a story for one person.
 
 81
-00:05:39,183 --> 00:05:42,226
-In a ruin, that isn't working yet.
+00:05:39,183 --> 00:05:44,400
+A ruin can carry one too, in a section of its own,
 
 82
-00:05:42,676 --> 00:05:47,024
-The story is handed over, and then it never starts.
+00:05:44,850 --> 00:05:50,067
+and the game hands it to the crew member who suits up.
 
 83
-00:05:48,824 --> 00:05:52,737
-So for now, give the whole crew the story,
+00:05:51,867 --> 00:05:54,911
+The page shows you one to type,
 
 84
-00:05:53,187 --> 00:05:55,796
-the way I did with Forty-One.
+00:05:55,361 --> 00:06:00,143
+and it tells you about one lint warning that's wrong here.
 
 85
-00:05:56,696 --> 00:06:00,174
-The page lists that, and three other things,
+00:06:01,043 --> 00:06:05,391
+Then it lists three things this class hasn't given you,
 
 86
-00:06:00,624 --> 00:06:03,667
+00:06:05,841 --> 00:06:08,885
 so you don't go looking for them.
 
 87
-00:06:04,867 --> 00:06:07,041
+00:06:10,085 --> 00:06:12,259
 And now the class project.
 
 88
-00:06:07,941 --> 00:06:12,724
+00:06:13,159 --> 00:06:17,941
 Make a new mission, and write an episode of your own.
 
 89
-00:06:14,524 --> 00:06:16,263
+00:06:19,741 --> 00:06:21,480
 Draw the table first.
 
 90
-00:06:17,163 --> 00:06:22,815
+00:06:22,380 --> 00:06:28,033
 Build the ruin, give it a voice, and hide a piece in it.
 
 91
-00:06:23,715 --> 00:06:28,498
+00:06:28,933 --> 00:06:33,715
 Write the arc, with a win, a loss and a clock.
 
 92
-00:06:30,298 --> 00:06:33,341
+00:06:35,515 --> 00:06:38,559
 Then write your walk, and walk it.
 
 93
-00:06:34,241 --> 00:06:39,459
+00:06:39,459 --> 00:06:44,676
 You're finished when your table and your game agree on every row.

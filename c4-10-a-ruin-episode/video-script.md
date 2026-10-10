@@ -17,11 +17,13 @@
 > - **Scenes 6 to 8 are one take of about twenty minutes of play, cut down,** and they
 >   end a game. A recording take adds a line to the game's own `game_results.yaml`. That is
 >   fine for a real play; say nothing about it.
-> - **A PERSONAL SIDE STORY IS NOT IN THIS LECTURE, ON PURPOSE.** The plan was a `For:`
->   story in the ruin's own Side Stories section. The game hands it to the crew member who
->   suits up and it then never starts: its `Starts when:` and `Done when:` are not read
->   (reported, with a repro). Lint also says `stories-not-handed-out`. The page teaches a
->   shared quest in its place and says why in "What this class has not given you".
+> - **A PERSONAL SIDE STORY IS AN OPTIONAL PART OF THE PAGE, NOT OF THE CAPSTONE.** A
+>   `For:` story in the ruin's own Side Stories section is handed to the crew member who
+>   suits up, starts at once and finishes on its signal (fixed in the library after the
+>   first version of this lecture; re-measured 2026-10-10 on sbs_utils `ae05dac7`). The
+>   page has it as "One more thing", after the walk. Lint still says
+>   `stories-not-handed-out` about it, wrongly, and the page says so. The capstone file,
+>   the walk and its credits are unchanged.
 > - **The exosuit can close a client** the first time it appears (an engine fault,
 >   reported). Lecture 8's page has the one line that switches to a stock hull.
 
@@ -72,9 +74,11 @@ page.
    after the mast, 90 at the door, 140 at the altar, 220 after the count, 320 after the
    slab, 420 at the niche, 720 with the bowl, and a win with 820 at DS 1. `mast.runtime.log`
    empty. (Mock.)
-4. In that walk the facts were filed as `The Hollow: names, tally`: the ring call's fact
-   and the altar scene's fact on one list. With the cairn's answer changed to
-   `if learned >= 2`, it was still offered. (Mock.)
+4. In that walk the facts were filed on two lists: `names`, from the ring call, on the
+   game's own list, and `tally`, from the altar's scene, on The Hollow's. With the
+   cairn's answer changed to `if learned >= 2` it was NOT offered; changed to
+   `if learned names` it was. (Mock, 2026-10-10. The first version of this lecture
+   measured one shared list; the library changed.)
 5. A crew member who does not read the marks is offered one answer at the cairn, "Leave
    her be", and Forty-One stays hidden. (Mock.)
 6. With `Fails when: 20 seconds` and nobody moving, the game ends as a loss with the
@@ -83,10 +87,13 @@ page.
    After the mast, back at the door, Find the Way In completes. (Mock.)
 8. Every row of the two tables in Step 4: lint for all of them, and the mock for what the
    game does. (Lint, Mock.)
-9. NOT ON THE PAGE, measured so that the page could say "not yet": a `## [Side Stories]`
-   section with one `For: comms` story. Lint: `stories-not-handed-out`. In the game the
-   story is on the crew member who suited up, in state IDLE, with its `Starts when:` and
-   `Done when:` unread, before and after the word it waits for is sent. (Lint, Mock.)
+9. "One more thing": a `## [Side Stories]` section with one `For: comms` story. Lint:
+   `stories-not-handed-out`, on line 524. In the game, with the Comms officer suiting up
+   at The Hollow: nobody holds the story before; it is on that crew member's list and
+   running the moment they suit up; after **Log it** at the cairn it is done, the crew is
+   told `Quest complete: The Tally`, and the ship has 80 more. (Lint, Mock.) With a Helm
+   officer suiting up, the story was not on that crew member's list, and it was still
+   announced complete and paid at the cairn: who holds it then was not found out.
 
 Not seen by anyone. If one is not as described, stop and fix the page:
 
@@ -100,8 +107,9 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 4. The quest list with ten finished rows.
 5. The end screen for this mission.
 
-> Keep off camera: a `For:` story in a ruin (see the note at the top), and the place's own
-> marker in the Fire app at the niche (Lecture 8's note).
+> Keep off camera: the place's own marker in the Fire app at the niche (Lecture 8's note).
+> The `For:` story is optional on camera: if it is shown, show lint's warning and say it is
+> wrong for a ruin.
 
 Also capture the screenshot for the top of the page.
 
@@ -198,15 +206,16 @@ twenty credits, | and the table says eight hundred and twenty. || Every row has 
 ||| Then I check the other ending. || I set the clock to twenty seconds, and I sit still.
 | There's my Lose sentence. || And the log file is empty after both. ||"
 
-### 9. What you don't have yet
+### 9. One more thing, and what you don't have yet
 
-**Screen:** The table "What this class has not given you" on the page.
+**Screen:** The section "One more thing - a story for one person" on the page, then the
+table "What this class has not given you".
 
-**Say:** "Here's one honest note before you go. || In Class three you wrote a story for
-one person. || In a ruin, that isn't working yet. | The story is handed over, and then it
-never starts. ||| So for now, give the whole crew the story, | the way I did with
-Forty-One. || The page lists that, and three other things, | so you don't go looking for
-them. ||"
+**Say:** "Here's one more thing before you go. || In Class three you wrote a story for
+one person. || A ruin can carry one too, in a section of its own, | and the game hands it
+to the crew member who suits up. ||| The page shows you one to type, | and it tells you
+about one lint warning that's wrong here. || Then it lists three things this class
+hasn't given you, | so you don't go looking for them. ||"
 
 ### 10. Your turn
 

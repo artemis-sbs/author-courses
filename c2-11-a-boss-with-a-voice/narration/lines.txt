@@ -3,7 +3,7 @@ s01_cold_open_1	and it puts the whole class together.
 s01_cold_open_2	You have a boss, with ships and objectives and a hook.
 s01_cold_open_3	And you know how to write a scene, a call, and an answer.
 s01_cold_open_4	Today, at last, she speaks.
-s01_cold_open_5	And along the way, you'll find the one hard limit in everything you've learned so far.
+s01_cold_open_5	And all of her voice goes in the one file you already have.
 s02_her_voice_on_the_clock_0	Last time, the crew had ten minutes to sink the Morrigan,
 s02_her_voice_on_the_clock_1	and nothing warned them as the time ran down.
 s02_her_voice_on_the_clock_2	Two lines fix that.
@@ -16,9 +16,9 @@ s02_her_voice_on_the_clock_8	It's sent at five minutes, at two, at one, and at t
 s02_her_voice_on_the_clock_9	and only the ones that fit inside your limit.
 s03_the_one_warning_you_keep_0	Now run lint, and it complains.
 s03_the_one_warning_you_keep_1	It says morrigan isn't in the cast.
-s03_the_one_warning_you_keep_2	And for a boss file, that warning is wrong.
-s03_the_one_warning_you_keep_3	Lint's looking for a Characters section,
-s03_the_one_warning_you_keep_4	and a boss file hasn't got one.
+s03_the_one_warning_you_keep_2	And here, that warning is wrong.
+s03_the_one_warning_you_keep_3	Lint's looking for a person, in a Characters section,
+s03_the_one_warning_you_keep_4	and the Morrigan is a ship.
 s03_the_one_warning_you_keep_5	The game looks for a character first,
 s03_the_one_warning_you_keep_6	and then for a ship wearing that role, and it finds her.
 s03_the_one_warning_you_keep_7	So this is the only warning in the whole course that I'll tell you to keep.
@@ -33,50 +33,52 @@ s04_hear_her_5	Then this sector is mine.
 s04_hear_her_6	That's her voice, in my words,
 s04_hear_her_7	and it's in the one file.
 s04_hear_her_8	If I send that file to a friend, they hear it too.
-s05_what_one_file_can_t_hold_0	So you'd think the call goes in that file as well.
-s05_what_one_file_can_t_hold_1	A Characters section, a Dialogue section, and a Beat to place the call.
-s05_what_one_file_can_t_hold_2	It doesn't work, and I want you to see why.
-s05_what_one_file_can_t_hold_3	The Siege reads a boss file for two things:
-s05_what_one_file_can_t_hold_4	the boss's own lines, and quests.
-s05_what_one_file_can_t_hold_5	Everything under the boss is treated as a quest.
-s05_what_one_file_can_t_hold_6	So your cast and your scenes turn up in the crew's quest lists, as jobs,
-s05_what_one_file_can_t_hold_7	and no call ever comes.
-s05_what_one_file_can_t_hold_8	And lint doesn't say a word.
-s06_her_voice_file_0	So her cast and her scenes get a file of their own,
-s06_her_voice_file_1	in the folder you made last time.
-s06_her_voice_file_2	It's a small mission file.
-s06_her_voice_file_3	It has a title line,
-s06_her_voice_file_4	a Characters section with the Queen in it,
-s06_her_voice_file_5	and a Dialogue section with one scene.
-s06_her_voice_file_6	The scene is exactly what you wrote in Lecture 3.
-s06_her_voice_file_7	A speaker, two blocks of takes, and an answer.
-s06_her_voice_file_8	And that answer finishes a quest called parley,
-s06_her_voice_file_9	which we haven't written yet.
-s07_three_lines_on_the_card_0	Something has to read that file, and that's her card.
-s07_three_lines_on_the_card_1	Three lines, and you copy them as they are.
-s07_three_lines_on_the_card_2	The first opens the file.
-s07_three_lines_on_the_card_3	The second brings its people into the game,
-s07_three_lines_on_the_card_4	and the third makes its scenes ready to be called.
-s07_three_lines_on_the_card_5	You've seen the last two before,
-s07_three_lines_on_the_card_6	because your own mission's story file has them.
-s07_three_lines_on_the_card_7	One rule: they go first, right under the label.
-s07_three_lines_on_the_card_8	The call is placed the moment she arrives,
-s07_three_lines_on_the_card_9	so the scenes have to be read before anything waits.
-s08_place_the_call_and_make_an_a_0	The call is placed the way you placed one in Lecture 5:
-s08_place_the_call_and_make_an_a_1	a Beat, with an Action line that says, queen hails, and the scene's key.
-s08_place_the_call_and_make_an_a_2	It goes in the boss file,
-s08_place_the_call_and_make_an_a_3	because that's where her quests are.
-s08_place_the_call_and_make_an_a_4	Now the answer that matters.
-s08_place_the_call_and_make_an_a_5	A second answer leads to a second scene,
-s08_place_the_call_and_make_an_a_6	where the Badb's first mate comes on the line.
-s08_place_the_call_and_make_an_a_7	And if the crew says, then fly with us,
-s08_place_the_call_and_make_an_a_8	three things happen after the semicolon.
-s08_place_the_call_and_make_an_a_9	The call is finished.
-s08_place_the_call_and_make_an_a_10	Turn the Badb is finished, which reveals one more step.
-s08_place_the_call_and_make_an_a_11	And that step has an Action of its own:
-s08_place_the_call_and_make_an_a_12	badb joins T S N.
-s08_place_the_call_and_make_an_a_13	So the ship changes sides.
-s09_play_every_road_0	Check both files, and then play it.
+s05_place_the_call_0	Now for the call itself.
+s05_place_the_call_1	You know the three parts from your own mission:
+s05_place_the_call_2	a Beat that places it, a cast, and a scene.
+s05_place_the_call_3	All three go in the boss file,
+s05_place_the_call_4	and I start with the Beat.
+s05_place_the_call_5	It has an Action line that says, queen hails, and a scene's key.
+s05_place_the_call_6	I run lint, and there's a second warning.
+s05_place_the_call_7	This one is true.
+s05_place_the_call_8	The Beat names a scene that nobody has written yet,
+s05_place_the_call_9	so right now, no call would come.
+s06_her_people_and_her_scene_0	So I go to the very end of the file,
+s06_her_people_and_her_scene_1	and I type two sections you already know.
+s06_her_people_and_her_scene_2	Characters, with the Queen and her first mate.
+s06_her_people_and_her_scene_3	And Dialogue, with one scene.
+s06_her_people_and_her_scene_4	The sections have two hashes, like her objectives,
+s06_her_people_and_her_scene_5	and the people and the scenes inside them have three.
+s06_her_people_and_her_scene_6	The scene is just what you wrote in Lecture 3:
+s06_her_people_and_her_scene_7	a speaker, two blocks of takes, and an answer.
+s06_her_people_and_her_scene_8	That answer finishes the Beat.
+s06_her_people_and_her_scene_9	I run lint again,
+s06_her_people_and_her_scene_10	and the warning about the call has gone.
+s07_what_the_siege_does_with_her_0	There's nothing to paste for this.
+s07_what_the_siege_does_with_her_1	When she arrives, the Siege reads her file itself.
+s07_what_the_siege_does_with_her_2	Her objectives go to the crew,
+s07_what_the_siege_does_with_her_3	her people come into the game,
+s07_what_the_siege_does_with_her_4	and her scenes are made ready to be called.
+s07_what_the_siege_does_with_her_5	Two things follow from that.
+s07_what_the_siege_does_with_her_6	Her people don't exist until she arrives,
+s07_what_the_siege_does_with_her_7	which is fine, because her Beats don't either.
+s07_what_the_siege_does_with_her_8	And her card isn't part of this at all.
+s07_what_the_siege_does_with_her_9	It still brings the third ship,
+s07_what_the_siege_does_with_her_10	and I haven't added a line to it.
+s08_an_answer_that_matters_0	Now I make an answer matter.
+s08_an_answer_that_matters_1	A second answer leads to a second scene,
+s08_an_answer_that_matters_2	where the Badb's first mate comes on the line.
+s08_an_answer_that_matters_3	And if the crew says, then fly with us,
+s08_an_answer_that_matters_4	three things happen after the semicolon.
+s08_an_answer_that_matters_5	The call is finished.
+s08_an_answer_that_matters_6	Turn the Badb is finished, which reveals one more step.
+s08_an_answer_that_matters_7	And that step has an Action of its own:
+s08_an_answer_that_matters_8	badb joins T S N.
+s08_an_answer_that_matters_9	So the ship changes sides.
+s08_an_answer_that_matters_10	Notice where I typed those two records:
+s08_an_answer_that_matters_11	among her objectives, above the Characters line.
+s08_an_answer_that_matters_12	Her people and her scenes stay last in the file.
+s09_play_every_road_0	Check both, and then play it.
 s09_play_every_road_1	There's her call, waiting, with her name and the title.
 s09_play_every_road_2	I open it, she makes her offer,
 s09_play_every_road_3	and I talk to the Badb instead.
@@ -88,17 +90,19 @@ s09_play_every_road_8	three hundred credits, or one raider fewer.
 s09_play_every_road_9	Then play it again and refuse her,
 s09_play_every_road_10	and play it a third time and never answer at all.
 s09_play_every_road_11	The game has to be winnable on every road.
-s10_hand_her_to_a_friend_0	Now be honest about what you're handing over.
-s10_hand_her_to_a_friend_1	If you send the one file,
-s10_hand_her_to_a_friend_2	your friend gets the boss, her ships, her objectives,
-s10_hand_her_to_a_friend_3	and the Morrigan calling the clock.
-s10_hand_her_to_a_friend_4	They don't get the arrival line, the reserve ship, or the call.
-s10_hand_her_to_a_friend_5	For those, they need the folder too, inside their Legendary Missions.
-s10_hand_her_to_a_friend_6	And an update removes that folder, for them and for you.
-s10_hand_her_to_a_friend_7	So keep a copy outside the game,
-s10_hand_her_to_a_friend_8	and put it back when it's gone.
-s10_hand_her_to_a_friend_9	Lint will tell you: one warning when the folder's there,
-s10_hand_her_to_a_friend_10	and three when it isn't.
+s10_hand_her_to_a_friend_0	Now, what are you handing over?
+s10_hand_her_to_a_friend_1	Nearly all of her is the one file.
+s10_hand_her_to_a_friend_2	Send just that one file,
+s10_hand_her_to_a_friend_3	and your friend gets the boss, her ships, her objectives,
+s10_hand_her_to_a_friend_4	the Morrigan calling the clock,
+s10_hand_her_to_a_friend_5	and the Queen's call with the answer that turns the Badb.
+s10_hand_her_to_a_friend_6	What they don't get is the arrival line and the reserve ship.
+s10_hand_her_to_a_friend_7	Those are her card,
+s10_hand_her_to_a_friend_8	and the card lives in a folder inside Legendary Missions.
+s10_hand_her_to_a_friend_9	An update removes that folder, for them and for you.
+s10_hand_her_to_a_friend_10	So keep a copy outside the game.
+s10_hand_her_to_a_friend_11	Lint will tell you: one warning when the folder's there,
+s10_hand_her_to_a_friend_12	and two when it isn't.
 s11_the_rubric_and_what_comes_ne_0	The page ends with a rubric,
 s11_the_rubric_and_what_comes_ne_1	and every line on it is something you can check yourself.
 s11_the_rubric_and_what_comes_ne_2	She's yours, she's checked, she plays, and she travels.

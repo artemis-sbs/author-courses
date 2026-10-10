@@ -173,14 +173,32 @@ arrives.
 
 ### Whose list a fact goes on
 
-While SUIT UP is on offer at a ruin, there is one list, and it is the ruin's. In the
-stand-in, with the ship at The Hollow, the names Comms logged at the ring and the tally a
-crew member read at the altar went on the same list. A cairn answer written
-`if learned >= 2` was offered to a crew that had both.
+There are two lists, and which one a word goes on depends on who gave the answer.
 
-So inside a ruin, the bridge and the people outside can build one chain between them. A
-clue Comms hears can open an answer for the crew member at a place, and the other way
-round.
+| The answer is given | The word goes on |
+|---|---|
+| In a call, by Comms on the bridge | The game's own list. It is kept for the whole game, wherever the ship goes |
+| In a place's scene, by a crew member in a suit | The ruin's list |
+
+A question reads them like this:
+
+| The question | Where it is asked | What it reads |
+|---|---|---|
+| `if learned >= 1` | In a call | The count of the game's list |
+| `if learned >= 1` | In a place's scene | The count of the ruin's list, and nothing else |
+| `if learned tally`, a word by name | In a place's scene | That one word, on the ruin's list and then on the game's |
+
+In the walk of this episode, the names Comms logged at the ring went on the game's list,
+and the tally a crew member read at the altar went on The Hollow's. Two things were then
+tried on the cairn's answer.
+
+- Written `if learned names`, it was offered. A word Comms heard on the bridge opened an
+  answer for the crew member standing at the cairn.
+- Written `if learned >= 2`, it was not offered, although the crew knew two things. The
+  count at a place is the ruin's alone, and the ruin's list held one word.
+
+So the bridge and the people outside can build one chain between them, as long as the
+link is asked for by name.
 
 ## Your finished pieces
 
@@ -288,10 +306,12 @@ Lint says `clean` for everything in this table.
 | Nothing wrong: the crew flies to The Hollow first | Nothing happens at the door. Find the Way In is still asleep. It finishes when the ship comes back to the door after the mast is mended | The quest list |
 | Nothing wrong: the crew member never reads the marks | At the cairn there is one answer, **Leave her be**. Forty-One never starts | That is the story working |
 
-One thing that looks like a mistake and is not:
+One thing that looks right and is not:
 
-- `if learned >= 2` on the cairn's answer. A crew that logged the names at the ring AND
-  read the marks has two facts, and is offered the answer.
+- `if learned >= 2` on the cairn's answer, meant as "the names and the tally". The names
+  are on the game's list and the tally is on the ruin's. The crew member at the cairn is
+  counted against the ruin's list, which has one word, and the answer is never offered.
+  Lint says nothing. Ask for the word from the bridge by name: `if learned names`.
 
 ## Step 5 - Check it end to end
 
@@ -370,13 +390,70 @@ why the first thing to do with a real crew is time it.
 | A row of the walk does what the row before it should have | Read the step named in that row. Its `Starts when:` or the `Then:` above it is wrong |
 | Anything about the suit, the slab, the bowl or the worksite | Lectures 8 and 9, "If something goes wrong" |
 
+## One more thing - a story for one person
+
+Class 3, Lecture 5 gave one crew member a story of their own. A ruin can do the same, and
+it needs no card. This part is optional. The capstone, its `example\` file and the walk
+table in Step 5 do not have it.
+
+In `mission.amd`, find this line:
+
+```
+// ---- Cutscenes. What the main screen shows at a moment in the story.
+```
+
+Above it, leave two blank lines, and type:
+
+```
+// ---- Side stories. A small story for one member of the crew who goes inside.
+## [Side Stories](side_stories)
+
+### [The Tally](the_tally)
+---
+For: comms
+Starts when: at once
+Objective: Find out what the tally on the altar was counting
+Done when: signal count_matched
+Reward: 80 credits
+---
+Somebody cut marks into the rim of the altar, in sets of five. Find out what they were counting.
+```
+
+| Line | What it means |
+|---|---|
+| `## [Side Stories](side_stories)` | A section of its own, with exactly this key. The game hands every story in it to the crew who go out to a ruin built from this file |
+| `For: comms` | Whose story it is: a job, as in Class 3, Lecture 5 |
+| `Starts when: at once` | It starts the moment it is handed over |
+| `Done when: signal count_matched` | The word your answer **Log it** already sends at the cairn |
+| `Reward: 80 credits` | Paid to the ship, as a personal story's reward always is |
+
+Run lint. It has one thing to say:
+
+```
+  [WARNING] line 524:5: nothing in this mission hands out `Side Stories`, so nobody gets the quests in it. Give it to the visit: `boarding_visit(..., stories=amd_section(MISSION_DOC, "side_stories"))` (stories-not-handed-out)
+```
+
+**For a ruin, that warning is wrong.** The line it suggests is for a boarding party, in
+Class 3. A ruin's own Side Stories are handed out by the game itself. Leave the warning,
+and do not paste the line.
+
+This is what the stand-in did, with the Comms officer as the one who suits up at The
+Hollow:
+
+| Moment | The Tally |
+|---|---|
+| Before SUIT UP | Nobody has it |
+| The moment the Comms officer suits up | It is on that crew member's own list, running |
+| **Log it**, at the cairn | Done. The crew is told `Quest complete: The Tally`, beside `Quest complete: Forty-One`, and the ship is paid 80 for each |
+
+If you keep it, your walk ends 80 credits above the table in Step 5.
+
 ## What this class has not given you
 
-Four things you may have expected, and why they are not here.
+Three things you may have expected, and why they are not here.
 
 | You might want | Where it stands |
 |---|---|
-| A small story for ONE crew member who goes inside, written with `For:`, as in Class 3, Lecture 5 | Not yet. A ruin's own Side Stories section is handed to the crew who suit up, and then the story never starts. Lint also warns that nothing hands the section out. Until that is put right, give the whole crew the story, the way Forty-One does |
 | Walls that hold the ship in | Off in a template mission, on purpose: a held ship has no way out. Open Universe turns it on, because there a ship leaves by jumping (Class 5) |
 | Walls from an art pack | Kits. They need lines in three files, so they are in the library documentation, under "Kits" |
 | A scan text of your own on a thing | Not yet. Lecture 5 says what Science reads on a thing |

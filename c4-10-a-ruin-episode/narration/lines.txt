@@ -76,14 +76,14 @@ s08_the_bowl_and_home_7	Then I check the other ending.
 s08_the_bowl_and_home_8	I set the clock to twenty seconds, and I sit still.
 s08_the_bowl_and_home_9	There's my Lose sentence.
 s08_the_bowl_and_home_10	And the log file is empty after both.
-s09_what_you_don_t_have_yet_0	Here's one honest note before you go.
-s09_what_you_don_t_have_yet_1	In Class three you wrote a story for one person.
-s09_what_you_don_t_have_yet_2	In a ruin, that isn't working yet.
-s09_what_you_don_t_have_yet_3	The story is handed over, and then it never starts.
-s09_what_you_don_t_have_yet_4	So for now, give the whole crew the story,
-s09_what_you_don_t_have_yet_5	the way I did with Forty-One.
-s09_what_you_don_t_have_yet_6	The page lists that, and three other things,
-s09_what_you_don_t_have_yet_7	so you don't go looking for them.
+s09_one_more_thing_and_what_you__0	Here's one more thing before you go.
+s09_one_more_thing_and_what_you__1	In Class three you wrote a story for one person.
+s09_one_more_thing_and_what_you__2	A ruin can carry one too, in a section of its own,
+s09_one_more_thing_and_what_you__3	and the game hands it to the crew member who suits up.
+s09_one_more_thing_and_what_you__4	The page shows you one to type,
+s09_one_more_thing_and_what_you__5	and it tells you about one lint warning that's wrong here.
+s09_one_more_thing_and_what_you__6	Then it lists three things this class hasn't given you,
+s09_one_more_thing_and_what_you__7	so you don't go looking for them.
 s10_your_turn_0	And now the class project.
 s10_your_turn_1	Make a new mission, and write an episode of your own.
 s10_your_turn_2	Draw the table first.

@@ -13,17 +13,18 @@ list.]*
 This lecture puts the class together. The boss is from Lectures 8 to 10. The scene, the
 call and the answers are from Lectures 3 to 5.
 
-You will also know exactly where her voice lives, because it lives in two places:
+All of her voice lives in her one boss file:
 
-| Part of her voice | Where it is written | Travels in her one boss file |
-|---|---|---|
-| The words in her objectives, and her `Win:` and `Lose:` sentences | `corsair_queen.amd` | Yes |
-| The Morrigan calling the clock | `corsair_queen.amd` | Yes |
-| The Queen's call, her face, and the answers | A second file, in her folder inside LegendaryMissions | No |
+| Part of her voice | Where in `corsair_queen.amd` |
+|---|---|
+| The words in her objectives, and her `Win:` and `Lose:` sentences | Her objectives, as in Lecture 10 |
+| The Morrigan calling the clock | Two lines on Sink the Morrigan |
+| The Queen's call, her face, and the answers | Two sections at the end of the file: her people, and her scenes |
 
-**A boss file cannot hold a cast or a scene.** That is the one hard limit in this class,
-and Step 4 shows it to you. So this capstone is built in two parts: first everything one
-file can carry, then the call, which needs the folder you made in Lecture 10.
+**A boss file can carry its own cast and its own scenes.** The Siege reads them when that
+boss arrives. So this capstone is one file, typed in two parts: first her voice on the
+clock, then the call. The card you made in Lecture 10 stays exactly as it is. It still
+brings her third ship, and nothing is added to it.
 
 ## The video
 
@@ -47,10 +48,10 @@ Words for this lecture:
 | Word | Meaning |
 |---|---|
 | The clock | The time limit on Sink the Morrigan: `Fails when: 10 minutes` |
-| Voice file | A second `.amd` file, in her folder, that holds her cast and her scenes |
+| Cast | The people in a Characters section. A boss file can have one of its own |
 | Beat | A record that is live as soon as it exists and belongs to the whole crew. You used one in Lecture 5 to place a call |
 
-## Part 1 - Everything one file can carry
+## Part 1 - Her voice on the clock
 
 ## Step 1 - The test numbers
 
@@ -126,10 +127,13 @@ sbs lint common_data\bosses
 1 amd + 0 mast file(s): 0 error(s), 1 warning(s)
 ```
 
-**This one warning is wrong for a boss file, and you leave it.** Lint looks for `morrigan`
-in a Characters section. A boss file has none, and cannot have one. The game looks for a
-character and, when there is none, for a ship that wears the role. It finds the Morrigan.
-Step 3 proves it.
+**This one warning is wrong here, and you leave it.** Lint looks for `morrigan` among the
+people of a Characters section. The Morrigan is not a person. She is a ship. The game
+looks for a character and, when there is none of that name, for a ship that wears the
+role. It finds the Morrigan. Step 3 proves it.
+
+In Step 5 you give this file a Characters section of its own. The warning stays, because
+the Morrigan is still not one of the people in it.
 
 It is the only warning in this course that you are told to keep. Read it every time all
 the same: if the name after "voice to" is not a name on your `Named:` line, the warning is
@@ -151,43 +155,58 @@ from the Morrigan, titled **Sink the Morrigan**:
 You have 1:59, little ship. Then this sector is mine.
 ```
 
-A minute after that it says `0:59`, then `0:29`. Half a minute later the game is lost,
-with your `Lose:` sentence.
+A minute after that it says `1:00` or `0:59`, then `0:29`. Half a minute later the game
+is lost, with your `Lose:` sentence.
 
-That is the whole of Part 1. Everything in it is in the one file.
-
-## Step 4 - What one file cannot hold
-
-You know how to write a call: a Characters section, a Dialogue section, a Beat with
-`Action:`. The natural thing is to type all three into the boss file. Here is what happens
-if you do. It was done, linted and played.
-
-| Typed into the boss file | Lint says | In the game |
-|---|---|---|
-| A `## [Characters](characters)` section with the Queen in it, and a `## [Dialogue](dialogue)` section with her scene | Nothing about them | No call. The two sections and every record in them are handed to the crew as quests: six jobs waiting to be accepted, named Characters, The Corsair Queen, Dialogue and so on |
-| A Beat with `Action:` that places the call, and the scene nowhere | `dangling-action-ref` | No call. The Beat is live and nothing happens |
-
-The Siege reads a boss file for two things only: the boss's own lines, and quests. Every
-record under the boss is treated as a quest, whatever it says.
-
-So her cast and her scenes go in a file of their own, and something has to read it. That
-something is two more lines on her card.
+That is her voice on the clock: two lines.
 
 ## Part 2 - The call
 
-## Step 5 - Her voice file
+## Step 4 - Place the call
 
-In the VS Code file list, right-click the `corsair_queen` folder inside
-`LegendaryMissions` and choose **New File**. Type `voice.amd`.
+You know how to write a call: a Beat with an `Action:` line places it, a Characters
+section says who is calling, and a Dialogue section holds what is said. All three go in
+the boss file. Start with the Beat.
 
-Type this into it. It is a small mission file with two sections you know:
+Type this at the very end of `corsair_queen.amd`, with one blank line above it:
 
 ```
-// The Corsair Queen's voice: who she is, and what she says on the line.
-// Read by her hook, the card in this folder.
+## [The Queen Calls](parley)
+---
+Beat
+Parent: siege_mission
+Action:
+  - queen hails queen_calls
+---
+The Corsair Queen is on the line. Comms should answer her.
+```
 
-# [The Corsair Queen's Voice](corsair_queen_voice)
+Two hashes, like every objective of hers. It has no `Required:` line: a crew that never
+answers can still win.
 
+Run lint:
+
+```
+sbs lint common_data\bosses
+```
+
+```
+== common_data\bosses\corsair_queen.amd ==
+  [WARNING] line 35:10: `sink_morrigan` gives its voice to `morrigan`, who is not in the cast (dangling-speaker)
+  [WARNING] line 82: `hails queen_calls` names `queen_calls`, which no record in this document declares. (dangling-action-ref)
+
+1 amd + 0 mast file(s): 0 error(s), 2 warning(s)
+```
+
+The second warning is true. The Beat places a call, and there is nobody to make it and
+nothing to say. Played like this, no call comes. That is the next step.
+
+## Step 5 - Her people and her scene
+
+Go to the very end of the file again. Leave one blank line, and type two sections you
+know from your own mission:
+
+```
 ## [Characters](characters)
 
 ### [The Corsair Queen](queen)
@@ -221,75 +240,54 @@ Priority: 9
 - [We do not stand down.]() ; completes parley
 ```
 
-`Face:` lines work here as they do in your mission. Use the ones from your own cast.
-
-The answer finishes a quest called `parley`. You write that in Step 7.
-
-## Step 6 - Two lines to read it, one to open it
-
-Open the card, `__init__.mast`. Put your cursor at the end of the label line,
-`=== corsair_queen_hook`, and press Enter. Paste these three lines, so that they are the
-**first** three lines under the label:
-
-```
-    queen_voice = document_get_amd_file(get_mission_dir_filename("corsair_queen/voice.amd"), data_parser=amd_mission_data)
-    lifeforms_spawn(amd_section(queen_voice, "characters"))
-    dialogue_register_scenes(amd_section(queen_voice, "dialogue"))
-```
-
 | Line | Meaning |
 |---|---|
-| The first | Opens `voice.amd`. It is one long line. Do not press Enter inside it |
-| The second | Brings its people into the game. It is the line your own mission's `story.mast` has |
-| The third | Makes its scenes ready to be called. Your mission's `story.mast` has this one too |
+| `## [Characters](characters)` and `## [Dialogue](dialogue)` | Two hashes, like an objective. The Siege tells them from objectives by their keys, so the keys must be exactly `characters` and `dialogue` |
+| `### [The Corsair Queen](queen)` | Three hashes: a person in the cast. `queen` is the key the Beat's `Action:` line uses |
+| `### [The Queen Calls](queen_calls)` | Three hashes: a scene. `queen_calls` is the other key on that `Action:` line |
+| `; completes parley` | The answer finishes the Beat you typed in Step 4 |
 
-You change one thing, and only if your folder has another name:
+`Face:` lines work here as they do in your mission. Use the ones from your own cast.
 
-| On the first line | Change it to |
-|---|---|
-| `corsair_queen`, before the slash | Your folder's name. The slash leans forward here |
+Keep the two sections **at the end of the file, below every objective**. The game finds
+them by their keys wherever they are, but you will not. Everything you add to her story
+from now on goes above the line `## [Characters](characters)`.
 
-> **They must come first.** The call is placed in the moment she arrives. If these lines
-> are below the `await delay_sim` line, the call is placed before her scenes are read, and
-> it never comes.
-
-The card now reads:
+Run lint again:
 
 ```
-=== corsair_queen_hook
-    queen_voice = document_get_amd_file(get_mission_dir_filename("corsair_queen/voice.amd"), data_parser=amd_mission_data)
-    lifeforms_spawn(amd_section(queen_voice, "characters"))
-    dialogue_register_scenes(amd_section(queen_voice, "dialogue"))
-    comms_broadcast(role("__player__"), "The Corsair Queen has entered the sector.", "#f33")
-    await delay_sim(10)
-    ->END if GAME_ENDED
-    prefab_spawn(prefab_siege_boss_ship, {"START_X": 0, "START_Y": 0, "START_Z": 28000, "NAME": "Nemain", "BOSS_ART": "pirate_brigantine", "BOSS_ROLES": "raider, boss, nemain"})
-    signal_emit("quest_signal", {"SIGNAL_NAME": "nemain_arrived"})
-    ->END
+== common_data\bosses\corsair_queen.amd ==
+  [WARNING] line 35:10: `sink_morrigan` gives its voice to `morrigan`, who is not in the cast (dangling-speaker)
+
+1 amd + 0 mast file(s): 0 error(s), 1 warning(s)
 ```
 
-## Step 7 - Place the call
+The warning about the call is gone. The one you keep is still there.
 
-The call is placed the way Lecture 5 placed one: a Beat with an `Action:` line. The Beat
-goes in the boss file, because the boss file is where her quests are.
+## Step 6 - What the Siege does with her file
 
-Type this at the very end of `corsair_queen.amd`, with one blank line above it:
+There is no line for you to paste. The Siege reads each part of the file itself:
 
-```
-## [The Queen Calls](parley)
----
-Beat
-Parent: siege_mission
-Action:
-  - queen hails queen_calls
----
-The Corsair Queen is on the line. Comms should answer her.
-```
+| Part of the file | What the Siege does with it | When |
+|---|---|---|
+| The first fence | Puts her on the **Boss** line of the Options panel | When the mission starts |
+| Each record with two hashes, except the two sections | Hands it to the crew as an objective | When she arrives |
+| `## [Characters](characters)` | Brings its people into the game | When she arrives |
+| `## [Dialogue](dialogue)` | Makes its scenes ready to be called | When she arrives |
 
-Two hashes, like every objective of hers. It has no `Required:` line: a crew that never
-answers can still win.
+Three things follow.
 
-Check both files:
+- **Her people do not exist before she arrives.** A crew that never thins the raiders
+  never meets the Queen. That suits a Beat of hers, because her Beats are not live before
+  she arrives either.
+- **Only the boss that was chosen is read.** The Queen and First Mate Orla are not in a
+  game played against the Warlord.
+- **Her card is not part of this.** The card still sends the arrival sentence and brings
+  the Nemain, and it needs nothing new.
+
+## Step 7 - Hear the call
+
+Check both, as in Lecture 10:
 
 ```
 sbs lint common_data\bosses
@@ -308,8 +306,8 @@ one answer. Choose it, and the crew is told `Quest complete: The Queen Calls`.
 
 So far the call is words. Now one answer changes the battle.
 
-**In `voice.amd`,** add a second answer to **The Queen Calls**, and a second scene at the
-end of the file:
+**In the Dialogue section,** add a second answer to the scene **The Queen Calls**, and a
+second scene at the very end of the file:
 
 ```
 - [We do not stand down.]() ; completes parley
@@ -326,7 +324,9 @@ Speaker: orla
 - [Then stay out of our way.]() ; completes parley
 ```
 
-**In `corsair_queen.amd`,** type two more records at the very end:
+**Among her objectives,** type two more records. They go below the Beat **The Queen
+Calls**, the record with two hashes and the key `parley`, and above the line
+`## [Characters](characters)`. Leave one blank line on each side:
 
 ```
 ## [Turn the Badb](turn_badb)
@@ -384,9 +384,8 @@ From the first:
 1 amd + 0 mast file(s): 0 error(s), 1 warning(s)
 ```
 
-From the second: `0 error(s)` on the last line. Under `corsair_queen\voice.amd` and
-`corsair_queen\__init__.mast` there is nothing, and under your boss file the one warning
-you know.
+From the second: `0 error(s)` on the last line. Under `corsair_queen\__init__.mast` there
+is nothing, and under your boss file the one warning you know.
 
 Each mistake below was made on purpose, one at a time, and each was played.
 
@@ -394,35 +393,45 @@ Each mistake below was made on purpose, one at a time, and each was played.
 
 | Mistake | What the game does | Lint says |
 |---|---|---|
-| `Signal say:` for `Signal says:` | The Morrigan sends `AUTOMATED SIGNAL - 0:30 REMAINING - FINAL`, not your words | `unknown-field` |
+| `Signal say:` for `Signal says:` | The Morrigan sends `AUTOMATED SIGNAL - 0:30 REMAINING - FINAL`, not your words | `unknown-field`. It asks `Did you mean` and gives the words |
 | `Signal says:` that starts with `{time}` | Nobody calls the clock | An error: `fence-syntax` |
 | `Action:` `- queen hails queen_call`, the scene's key misspelled | No call. `mast.runtime.log` says there is no scene of that name | `dangling-action-ref` |
 | The word `Beat` deleted from The Queen Calls | No call. The record is a job waiting to be accepted | `unknown-field`, twice |
 | `Then: reveal badb_turn`, the `s` left off | The answer closes the bonus, and the Badb stays a raider | `dangling-reveal`, and `never-revealed` on The Badb Turns |
-| `; completes parlay` on an answer in `voice.amd` | The rest of that answer happens. The Queen Calls stays open | `outcome-quest-missing`, under `corsair_queen\voice.amd` |
-| Two outcomes with no comma, `; completes parley completes turn_badb, fails sink_badb` | Only the bonus is closed. The call's Beat stays open and the Badb stays a raider | `outcome-run-together` |
+| `; completes parlay` on an answer | The rest of that answer happens. The Queen Calls stays open | `outcome-quest-missing` |
+| Two outcomes with no comma, `; completes parley completes turn_badb, fails sink_badb` | Only the bonus is closed. The call's Beat stays open and the Badb stays a raider | `outcome-quest-missing` and `outcome-run-together`. The second writes the line out with its comma |
 | An answer that leads to `badb_answer`, a scene that is not there | The call ends when that answer is chosen. The Queen Calls stays open | `dangling-choice` |
-| `Speaker: quen` in the scene | The call is listed as coming from `quen` | `dangling-speaker`, under `corsair_queen\voice.amd`. This one is true |
-| The card reads `corsair_quen/voice.amd`, or `voice.amd` is not in the folder, or it is named `voice.amd.txt` | No call. The rest of the card still runs. `mast.runtime.log` names the file it could not find | An error: `amd-file-missing`, under `corsair_queen\__init__.mast` |
-| The title line of `voice.amd` deleted | No call. `mast.runtime.log` has a line about the headings | An error: `heading-level-jump` |
-| The `corsair_queen` folder moved away | The clock is still called. No arrival sentence, no reserve ship, no call | Three warnings under your boss file: `dangling-speaker`, `unfired-signal`, `dangling-action-ref` |
+| `Speaker: quen` in the scene | The call is listed as coming from `quen` | `dangling-speaker` and `hail-speaker-mismatch`. Both are true |
+| `## [Dialogue](dialog)`, the section's key misspelled | No call. The section and both scenes are jobs waiting in the crew's quest lists. `mast.runtime.log` says there is no scene called `queen_calls` | `unknown-field`, five times: each says the record "is being read as a map" |
+| The scene **The Queen Calls** typed with two hashes | No call. The scene, and the scene below it, are jobs waiting in the quest lists | An error, `hail-unknown-scene`, and the same five `unknown-field` warnings |
+| `### [Characters](characters)`, the section typed with three hashes | The call comes from `queen`, the bare key, with no face. The section and both people are jobs waiting in the quest lists | `dangling-speaker`, four more times: the Queen and Orla are "not in the cast" |
+| No Characters section at all | The call comes from `queen`, the bare key, with no face | The same four |
+| The `corsair_queen` folder moved away | The clock is still called, the Queen still calls, and the answer still turns the Badb. No arrival sentence and no reserve ship. `mast.runtime.log` says the hook was not found | One more warning under your boss file: `unfired-signal`, about Her Reserve |
 
 **What lint cannot see.** Lint says nothing new for any row here.
 
 | Mistake | What the game does |
 |---|---|
 | `Speaker: morigan`, the role misspelled | Nobody calls the clock. Lint prints the same `dangling-speaker` warning as for a correct line, with the misspelled name in it |
-| `Speaker: boss` | The clock is called, by the Badb. Both named ships wear `boss` |
+| `Speaker: boss` | The clock is called by another of her ships: the Badb in one game, the Nemain in another. All three wear `boss` |
+| `Speaker: queen` on the clock: the person, not the ship | Lint says `clean`, with no warning at all. In the game the warning was not sent in her name: it was filed as coming from the crew's own ship. Keep `morrigan` |
 | `Signal says:` with no `Speaker:` line | Nobody calls the clock |
 | `{Time}` with a capital letter | The Morrigan sends a message with no words in it |
-| A Characters or Dialogue section typed into the boss file | No call, and each section and each record in it is a job in the crew's quest lists (Step 4) |
-| The three lines pasted below the `await delay_sim` line of the card | No call. `mast.runtime.log` says there is no scene called `queen_calls` |
-| The `dialogue_register_scenes` line left off the card, or the boss file's `Hook:` line deleted | The same |
-| The `lifeforms_spawn` line left off the card, or `"character"` for `"characters"` on it | The call comes from `queen`, the bare key, with no face |
+| `## [Characters](character)`, the section's key misspelled | The call comes from `queen`, the bare key, with no face. The section and both people are jobs waiting in the crew's quest lists |
+| The Queen's record typed with two hashes | The same. She and First Mate Orla are jobs waiting in the quest lists |
+| `Host: morrigan` on a person's record | Nothing. The line is not read here |
 | `- badb joins tsnn`, the side misspelled | The answer closes the bonus, and the Badb stays a raider. `mast.runtime.log` says the side was not found |
 | `- bdab joins tsn`, the role misspelled | The same. `mast.runtime.log` says nobody is called `bdab` |
 | `fails sink_badb` left off the turning answer | The Badb changes sides, and the crew can still be paid 300 for sinking her |
 | No `Parent:` line on The Queen Calls | Nothing. The call is placed all the same |
+| The boss file's `Hook:` line deleted | No arrival sentence and no reserve ship. The Queen still calls |
+
+**These are fine.**
+
+| You wrote | Result |
+|---|---|
+| The two sections typed above her first objective | Works. The Siege finds them by their keys, wherever they are |
+| An objective typed below the Dialogue section, with two hashes | Works. Keep the sections last all the same: it is where you will look for them |
 
 ## Step 10 - Play it
 
@@ -484,32 +493,35 @@ Add four lines to the note at the top of `corsair_queen.amd`:
 
 ```
 //
-// Her voice: the Morrigan calls the clock on Comms (Speaker: and Signal says:, in this
-// file). When she arrives the Queen calls, and one answer turns the Badb. The call needs
-// the folder: her card reads LegendaryMissions\corsair_queen\voice.amd.
+// Her voice: the Morrigan calls the clock on Comms (Speaker: and Signal says:). When she
+// arrives the Queen calls, and one answer turns the Badb. Her people and her scenes are
+// the last two sections of this file.
 ```
 
 Run both lint commands once more. The one warning has moved four lines down, to line 39.
 
 ## Hand her to a friend
 
-This is the part to be honest about. What your friend gets depends on what you send.
+Nearly all of her is one file now. What your friend gets depends on what you send.
 
 | You send | Your friend puts it | What plays |
 |---|---|---|
-| `corsair_queen.amd` alone | In `common_data\bosses` | The boss, her ships, her objectives, the ten-minute clock, and the Morrigan calling it. No arrival sentence, no reserve ship, no call. Her Reserve, The Queen Calls and Turn the Badb sit open in the Quest Log, and the game can still be won |
-| The file, and the `corsair_queen` folder with its two files | The file in `common_data\bosses`, the folder in `LegendaryMissions` | All of her |
+| `corsair_queen.amd` alone | In `common_data\bosses` | The boss, her ships, her objectives, the ten-minute clock and the Morrigan calling it, the Queen's call with her face, and the answer that turns the Badb. No arrival sentence and no reserve ship: Her Reserve sits open in the Quest Log, and the game can still be won |
+| The file, and the `corsair_queen` folder with its card | The file in `common_data\bosses`, the folder in `LegendaryMissions` | All of her |
 
 Zip the folder the way you zipped your mission in Class 1, and send the `.amd` beside it.
 Tell your friend two things:
 
 - An update of LegendaryMissions removes the folder. Put it back afterwards.
 - Run `sbs lint common_data\bosses`. With the folder in place it prints one warning, about
-  `morrigan`. With the folder missing it prints three.
+  `morrigan`. With the folder missing it prints two: the second says that Her Reserve
+  waits for a signal nothing sends.
 
-The same is true for you. Keep a copy of the folder outside `LegendaryMissions`.
+The same is true for you. Keep a copy of the folder outside `LegendaryMissions`. An update
+does not touch `common_data\bosses`, so her file, with her voice in it, is safe where it
+is.
 
-## The finished files
+## The finished file
 
 `common_data\bosses\corsair_queen.amd`:
 
@@ -523,9 +535,9 @@ The same is true for you. Keep a copy of the folder outside `LegendaryMissions`.
 // bonus. Ninety seconds after she arrives a third ship, the Nemain, comes in. That part
 // is her hook: LegendaryMissions\corsair_queen\__init__.mast.
 //
-// Her voice: the Morrigan calls the clock on Comms (Speaker: and Signal says:, in this
-// file). When she arrives the Queen calls, and one answer turns the Badb. The call needs
-// the folder: her card reads LegendaryMissions\corsair_queen\voice.amd.
+// Her voice: the Morrigan calls the clock on Comms (Speaker: and Signal says:). When she
+// arrives the Queen calls, and one answer turns the Badb. Her people and her scenes are
+// the last two sections of this file.
 
 # [Corsair Queen](corsair_queen)
 ---
@@ -624,34 +636,6 @@ Action:
   - badb joins tsn
 ---
 First Mate Orla has turned the Badb. She flies for you now.
-```
-
-`LegendaryMissions\corsair_queen\__init__.mast`:
-
-```
-#
-# The Corsair Queen's hook: what she does when she arrives.
-# Her boss file says  Hook: corsair_queen_hook  and that name is the label below.
-#
-=== corsair_queen_hook
-    queen_voice = document_get_amd_file(get_mission_dir_filename("corsair_queen/voice.amd"), data_parser=amd_mission_data)
-    lifeforms_spawn(amd_section(queen_voice, "characters"))
-    dialogue_register_scenes(amd_section(queen_voice, "dialogue"))
-    comms_broadcast(role("__player__"), "The Corsair Queen has entered the sector.", "#f33")
-    await delay_sim(90)
-    ->END if GAME_ENDED
-    prefab_spawn(prefab_siege_boss_ship, {"START_X": 0, "START_Y": 0, "START_Z": 28000, "NAME": "Nemain", "BOSS_ART": "pirate_brigantine", "BOSS_ROLES": "raider, boss, nemain"})
-    signal_emit("quest_signal", {"SIGNAL_NAME": "nemain_arrived"})
-    ->END
-```
-
-`LegendaryMissions\corsair_queen\voice.amd`:
-
-```
-// The Corsair Queen's voice: who she is, and what she says on the line.
-// Read by her hook, the card in this folder.
-
-# [The Corsair Queen's Voice](corsair_queen_voice)
 
 ## [Characters](characters)
 
@@ -697,7 +681,8 @@ Speaker: orla
 - [Then stay out of our way.]() ; completes parley
 ```
 
-All three are in `example\`, whole.
+It is in `example\`, whole. The card, `LegendaryMissions\corsair_queen\__init__.mast`, is
+Lecture 10's, unchanged, with its wait back at 90.
 
 ## The capstone rubric
 
@@ -728,7 +713,7 @@ All three are in `example\`, whole.
 **She travels**
 
 - [ ] You have played her once with the `corsair_queen` folder moved out of
-      `LegendaryMissions`, and you know what is missing.
+      `LegendaryMissions`. She still calls, and you know the two things that are missing.
 - [ ] You have a copy of the file and of the folder outside the game.
 
 ## If something goes wrong
@@ -739,9 +724,10 @@ All three are in `example\`, whole.
 | A message from the Morrigan with no words in it | `{Time}` with a capital letter |
 | A message that says `AUTOMATED SIGNAL` | There is a `Speaker:` line and no `Signal says:` line, or `Signal says` is misspelled |
 | The clock is called by the Badb | `Speaker: boss`. Both named ships wear that role. Use the ship's own name |
-| Six odd jobs in the quest lists, named Characters, Dialogue and so on | A cast or a scene typed into the boss file (Step 4) |
-| No call when she arrives | The three lines are not the first three on the card, or `voice.amd` is not in the folder, or the folder is gone. `mast.runtime.log` says which |
-| The call comes from `Morrigan`, with no face | The scene's `Speaker:` is the ship's role, not a person in the Characters section |
+| Odd jobs in the quest lists, named Characters, The Corsair Queen, Dialogue and so on | A section's key is not exactly `characters` or `dialogue`, or a section, a person or a scene has the wrong number of hashes (Step 5) |
+| No call when she arrives | The Beat's `Action:` line names a scene that is not in the Dialogue section. Run lint. `mast.runtime.log` names the scene it could not find |
+| The call comes from `queen`, in small letters, with no face | The Characters section is missing, its key is misspelled, or her record has two hashes |
+| She arrives without a sentence, and the Nemain never comes | The `corsair_queen` folder is not in `LegendaryMissions`, or the `Hook:` line is gone from her file |
 | An answer is chosen and nothing changes | The key after `completes` is not a quest's key. Run `sbs lint LegendaryMissions` |
 | LegendaryMissions starts with no maps, or with a page of errors | The game cannot read the card. Run `sbs lint LegendaryMissions` and fix the line it shows |
 | A change you saved did nothing | The mission was already running. Everything here is read when the mission starts |
@@ -754,14 +740,15 @@ All three are in `example\`, whole.
 
 1. Give its timed objective a `Speaker:` and a `Signal says:` line in its own voice. Play
    it with a three-minute limit and read the three messages.
-2. Give it a voice file of its own in its hook's folder, or add a second cast and scene to
-   the one you have: keys must be different from the Queen's.
-3. Write its call: one scene, two answers that both finish the Beat.
+2. Give it a Characters section and a Dialogue section of its own, at the end of its own
+   file.
+3. Write its call: a Beat among its objectives, one scene, two answers that both finish
+   the Beat.
 4. Make one answer matter. Use `joins`, as here, or let the answer finish a bonus
    objective that has a `Reward:` line.
 5. Run both lint commands. Play every road through the call.
-6. Move the folder out of `LegendaryMissions` and play the boss once more. Write down
-   what was missing. Put the folder back.
+6. If your boss has a hook, move its folder out of `LegendaryMissions` and play the boss
+   once more. Write down what was missing. Put the folder back.
 
 ## Checkpoint
 

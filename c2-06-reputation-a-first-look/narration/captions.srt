@@ -1,0 +1,439 @@
+1
+00:00:00,000 --> 00:00:03,478
+Here's the same call, in two different games.
+
+2
+00:00:04,378 --> 00:00:10,030
+In the first one, Quill tells the crew to hold outside the markers.
+
+3
+00:00:10,930 --> 00:00:13,974
+In the second, she opens the yard,
+
+4
+00:00:14,424 --> 00:00:17,902
+and there's an answer that wasn't there before.
+
+5
+00:00:19,702 --> 00:00:22,746
+Nothing in the story changed between them.
+
+6
+00:00:23,646 --> 00:00:27,993
+What changed is what the Guild thinks of this ship.
+
+7
+00:00:28,893 --> 00:00:32,372
+Today you'll teach a side to keep score,
+
+8
+00:00:32,822 --> 00:00:37,604
+and you won't write a line of script to do it.
+
+9
+00:00:38,804 --> 00:00:44,022
+Before I type anything, I make a copy of my mission folder.
+
+10
+00:00:44,922 --> 00:00:50,574
+The next lecture starts from the file exactly as Lecture 5 left it,
+
+11
+00:00:51,024 --> 00:00:54,067
+so today's lines go in a copy.
+
+12
+00:00:54,967 --> 00:00:56,707
+I call it MyStanding,
+
+13
+00:00:57,157 --> 00:00:59,765
+I open it in VS Code,
+
+14
+00:01:00,215 --> 00:01:02,824
+and I run lint on it.
+
+15
+00:01:04,624 --> 00:01:07,667
+It's clean, and it's the same mission.
+
+16
+00:01:08,567 --> 00:01:12,046
+From here on, everything happens in the copy.
+
+17
+00:01:13,246 --> 00:01:17,593
+The game measures a ship on seven pairs of traits.
+
+18
+00:01:18,493 --> 00:01:21,102
+Honest or liar, generous or selfish,
+
+19
+00:01:21,552 --> 00:01:24,161
+fearsome or cowardly, and so on.
+
+20
+00:01:25,061 --> 00:01:27,670
+Neither end is the good one,
+
+21
+00:01:28,120 --> 00:01:30,728
+because that depends on who's judging.
+
+22
+00:01:32,528 --> 00:01:37,311
+So I tell the game what the Harbor Guild cares about.
+
+23
+00:01:38,211 --> 00:01:40,820
+On its record I write Values,
+
+24
+00:01:41,270 --> 00:01:44,313
+then honest forty, a comma, generous thirty.
+
+25
+00:01:45,213 --> 00:01:46,952
+Those numbers are weights.
+
+26
+00:01:47,852 --> 00:01:51,765
+They say honesty counts a bit more than generosity,
+
+27
+00:01:52,215 --> 00:01:56,128
+and they don't have to add up to anything.
+
+28
+00:01:57,328 --> 00:01:59,502
+Standing is always somebody's opinion.
+
+29
+00:02:00,402 --> 00:02:03,011
+So when Quill asks about it,
+
+30
+00:02:03,461 --> 00:02:07,374
+the game has to know whose opinion she's giving.
+
+31
+00:02:08,274 --> 00:02:12,187
+I tell it on her record, with one line:
+
+32
+00:02:12,637 --> 00:02:14,811
+Side, and the Guild's key.
+
+33
+00:02:16,611 --> 00:02:20,089
+You've typed that line before, on a landmark.
+
+34
+00:02:20,989 --> 00:02:25,772
+On a person it means, this character speaks for that side.
+
+35
+00:02:26,672 --> 00:02:30,150
+Leave it off, and she speaks for nobody,
+
+36
+00:02:30,600 --> 00:02:34,078
+and the number she reads is always zero.
+
+37
+00:02:35,278 --> 00:02:39,191
+Now the crew needs a way to earn something.
+
+38
+00:02:40,091 --> 00:02:42,700
+A deed is the word earns,
+
+39
+00:02:43,150 --> 00:02:47,933
+and then three more: a side, a trait and a number.
+
+40
+00:02:49,733 --> 00:02:52,776
+The first one goes on the quest.
+
+41
+00:02:53,676 --> 00:02:56,720
+After the credits I put a comma,
+
+42
+00:02:57,170 --> 00:02:59,778
+and then earns guild honest thirty.
+
+43
+00:03:00,678 --> 00:03:05,461
+The crew did the job and came back to say so,
+
+44
+00:03:05,911 --> 00:03:08,520
+and the Guild calls that honest.
+
+45
+00:03:10,320 --> 00:03:13,363
+The second deed goes on an answer.
+
+46
+00:03:14,263 --> 00:03:20,350
+I add a way to report that gives the fee to the tug crews,
+
+47
+00:03:20,800 --> 00:03:24,278
+and after the semicolon it earns generous thirty.
+
+48
+00:03:25,178 --> 00:03:27,787
+Both answers still finish the step,
+
+49
+00:03:28,237 --> 00:03:31,280
+because that's the rule from last time.
+
+50
+00:03:32,480 --> 00:03:37,263
+So far the Guild is keeping score, and nobody's reading it.
+
+51
+00:03:38,163 --> 00:03:45,120
+I add a beat that places a call when the ship comes near the Guild's yard,
+
+52
+00:03:45,570 --> 00:03:48,613
+and I write the scene for it.
+
+53
+00:03:50,413 --> 00:03:52,587
+Look at Quill's two lines.
+
+54
+00:03:53,487 --> 00:03:57,835
+Until today, two lines in a block were two takes,
+
+55
+00:03:58,285 --> 00:04:00,459
+and the game picked one.
+
+56
+00:04:01,359 --> 00:04:07,446
+These two each have a guard, in curly brackets, right after the percent sign.
+
+57
+00:04:08,346 --> 00:04:13,128
+The first can only be said to a ship below thirty.
+
+58
+00:04:14,028 --> 00:04:18,376
+The second can only be said at thirty or more.
+
+59
+00:04:20,176 --> 00:04:24,089
+Between them they cover every ship, and that matters.
+
+60
+00:04:24,989 --> 00:04:31,076
+If no line can be said, the call opens with no words at all.
+
+61
+00:04:32,276 --> 00:04:35,320
+An answer can have a guard too.
+
+62
+00:04:36,220 --> 00:04:40,567
+After the round brackets I write if and the condition,
+
+63
+00:04:41,017 --> 00:04:43,191
+and only then the semicolon.
+
+64
+00:04:44,991 --> 00:04:49,339
+A ship below thirty doesn't see this answer greyed out.
+
+65
+00:04:50,239 --> 00:04:52,848
+It doesn't see it at all.
+
+66
+00:04:54,648 --> 00:05:00,735
+Back in Lecture 4, I told you to leave this kind of condition alone,
+
+67
+00:05:01,185 --> 00:05:04,663
+because there was almost nothing it could read.
+
+68
+00:05:05,563 --> 00:05:10,780
+Now there is something: standing, with the side the speaker speaks for.
+
+69
+00:05:11,980 --> 00:05:14,589
+Here's the part that surprises people.
+
+70
+00:05:15,489 --> 00:05:17,663
+The quest earns honest thirty,
+
+71
+00:05:18,113 --> 00:05:21,591
+and the ship's standing after it is seventeen.
+
+72
+00:05:23,391 --> 00:05:26,000
+That's because standing isn't one score.
+
+73
+00:05:26,900 --> 00:05:30,378
+It's the average of everything the side values,
+
+74
+00:05:30,828 --> 00:05:34,307
+weighted by those numbers on the Values line.
+
+75
+00:05:35,207 --> 00:05:38,685
+Honesty alone gets this crew about half way.
+
+76
+00:05:39,585 --> 00:05:41,324
+Add the generous answer,
+
+77
+00:05:41,774 --> 00:05:45,687
+and both scores are thirty, so standing is thirty.
+
+78
+00:05:47,487 --> 00:05:50,530
+And the number belongs to a ship.
+
+79
+00:05:51,430 --> 00:05:54,909
+With two ships, the quest pays them both,
+
+80
+00:05:55,359 --> 00:05:59,707
+but the answer pays only the ship that gave it.
+
+81
+00:06:00,607 --> 00:06:03,215
+So one crew gets the berth,
+
+82
+00:06:03,665 --> 00:06:08,013
+and the crew beside them is told to hold outside.
+
+83
+00:06:09,213 --> 00:06:10,952
+Let's play it twice.
+
+84
+00:06:11,852 --> 00:06:16,200
+First I fly straight to the yard, having done nothing.
+
+85
+00:06:17,100 --> 00:06:20,143
+There's the call, with the cold line,
+
+86
+00:06:20,593 --> 00:06:22,767
+and there's my one answer.
+
+87
+00:06:24,567 --> 00:06:26,307
+Now a new game.
+
+88
+00:06:27,207 --> 00:06:31,120
+I take the job, I wait for the beacon,
+
+89
+00:06:31,570 --> 00:06:35,917
+and this time the report call offers me two answers.
+
+90
+00:06:36,817 --> 00:06:38,991
+I give the fee away.
+
+91
+00:06:39,891 --> 00:06:42,500
+Then I fly to the yard.
+
+92
+00:06:44,300 --> 00:06:46,474
+And there's the other line,
+
+93
+00:06:46,924 --> 00:06:49,533
+and a second answer under it.
+
+94
+00:06:50,733 --> 00:06:54,646
+Lint knows your sides and it knows the traits.
+
+95
+00:06:55,546 --> 00:06:58,589
+If I misspell the side after earns,
+
+96
+00:06:59,039 --> 00:07:03,822
+it tells me, and it lists the sides I do have.
+
+97
+00:07:05,622 --> 00:07:07,796
+But now watch what happens
+
+98
+00:07:08,246 --> 00:07:11,724
+when I take the Side line off Quill,
+
+99
+00:07:12,174 --> 00:07:13,913
+and lint says clean.
+
+100
+00:07:14,813 --> 00:07:18,291
+In the game she now speaks for nobody,
+
+101
+00:07:18,741 --> 00:07:20,915
+the number is always zero,
+
+102
+00:07:21,365 --> 00:07:23,539
+and the yard never opens.
+
+103
+00:07:24,439 --> 00:07:28,352
+So that line you check with your own eyes.
+
+104
+00:07:29,552 --> 00:07:31,291
+Now it's your turn.
+
+105
+00:07:32,191 --> 00:07:35,670
+Give the crew a selfish way to report,
+
+106
+00:07:36,120 --> 00:07:40,033
+and work out the standing before you play it.
+
+107
+00:07:40,933 --> 00:07:43,541
+Then change what the Guild values,
+
+108
+00:07:43,991 --> 00:07:47,035
+and watch the same answer land differently.
+
+109
+00:07:48,835 --> 00:07:53,183
+Next time, we go back to your own mission folder,
+
+110
+00:07:53,633 --> 00:07:59,285
+and look at the tools that show you the whole story at once.

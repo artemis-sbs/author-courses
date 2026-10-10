@@ -18,9 +18,10 @@ Forty-one stones. One for each day." at the bottom.]*
 You will add to `mission.amd`. For the cutscene you will also paste one card into
 `story.mast`: one line and one block.
 
-Lecture 5 is in preparation, and you do not need it for this page. Nothing here is picked
-up. You do not need Class 3 either: the two words it shares with this page, `learn` and
-`learned`, are taught again here.
+You do not need Lecture 5 for this page. Nothing here is picked up. If you have done it,
+type today's steps onto the file you have: they are the same. You do not need Class 3
+either: the two words it shares with this page, `learn` and `learned`, are taught again
+here.
 
 ## The video
 
@@ -63,12 +64,15 @@ For a ship in a ruin, a clue can open four things.
 **`learn` writes one word down.** `; learn names` adds the word `names` to what this
 ship's crew knows. The word is yours. Writing the same word down twice counts once.
 
-**`learned` is a count.** `if learned >= 1` means: they know at least one thing. It cannot
-ask for a thing by its name. `if learned names` is never true, and neither is `if names`.
+**`learned` counts, and it can also ask for one word.** `if learned >= 1` means: they know
+at least one thing. `if learned names` means: they know that one word. The word by itself,
+`if names`, is never true.
 
-**There is one list for the whole ship.** Every word learned in any call goes on it, and
-it is kept for the whole game. It is the ship's list. A crew that leaves the ship in suits
-keeps a list of its own, and that is Lecture 8.
+**Every word learned in a call goes on one list, kept for the whole game.** A crew member
+who leaves the ship in a suit writes on a second list, which belongs to the ruin they are
+in. A count asked in a call counts the first list. A count asked by somebody in a suit
+counts only the ruin's. A word asked for by name is found on either. Suits are Lecture 8,
+and Lecture 10 uses both lists.
 
 **The count is read when the crew opens the scene.** The game decides which answers to
 offer at the moment a scene is first opened, and it does not look again. A crew that opens
@@ -280,11 +284,16 @@ Something in the murk is still calling for help. Bring it home.
 | What says whose it is | Nothing. It is everybody's | `For:` and a job, such as `For: comms` |
 | Who is handed it | The ship, when an answer says `accepts` | A crew member, when they leave the ship |
 | Where it is read | The quest list on any console | That person's handheld |
-| You can play it | Today | From Lecture 8 |
+| You can play it | Today | Once a crew member can suit up: Lecture 8, and Lecture 10's exercise |
 
-A story for one person is handed over when that person goes into the ruin in a suit.
-Nobody leaves the ship until Lecture 8, so do not type that section today. If you do, lint
-tells you that nothing hands it out (`stories-not-handed-out`), and it is right.
+A story for one person is handed over when a crew member with that job goes out to the
+ruin in a suit, and it starts at that moment. The game does the handing over itself, for
+any ruin that has a Side Stories section in its file. Suits are Lecture 8, so leave that
+section until then. Lecture 10 has one for you to type.
+
+If you do type one, lint warns that nothing hands the section out
+(`stories-not-handed-out`). For a ruin's own Side Stories that warning is wrong, and you
+may leave it.
 
 ## Step 6 - The cutscene: what you write
 
@@ -585,10 +594,12 @@ end of the line lint prints.
 | `; learns names` (an `s`) | The answer ends the call and writes nothing down. The entry for Dace is never offered | `unknown-outcome-verb` |
 | `; learn` with no word after it | The same | `learn-nothing` |
 | `() learn names` (no semicolon) | The same | `choice-tail-ignored` |
-| `if learned names` | The entry is never offered, whatever the crew knows | `guard-learned-shape` |
 | `if names` (the word by itself) | The same | `guard-names-a-fact` |
 | `if learned => 1` (the sign backwards) | The same | `unreadable-guard` |
 | `; if learned >= 1` (the `if` after the `;`) | The entry is offered to everybody | `unknown-outcome-verb` |
+
+Not a mistake: `if learned names`. Lint says `clean`, and the entry is offered to a crew
+that logged the names and to no other.
 
 **The place and the side story:**
 
@@ -602,7 +613,6 @@ end of the line lint prints.
 | `Done when: reach crypt 400` (the room's key) | The side story starts and never finishes | `role-nothing-wears` |
 | The Cairn has no `Roles:` line | No contact on the map, and the side story never finishes | `role-nothing-wears` |
 | `For: comms` typed on The One Who Stayed | Nothing changes. The ship still holds it | `for-in-quests` |
-| A Side Stories section with a `For:` quest in it | Nobody is handed the quest | `stories-not-handed-out` |
 | No `; accepts stayed` on the answer | The Cairn appears. The side story never starts | `never-revealed` |
 
 **The cutscene and the card:**

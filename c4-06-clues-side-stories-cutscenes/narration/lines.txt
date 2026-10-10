@@ -13,9 +13,9 @@ s02_what_a_clue_is_3	when Mark the Gallery put a place on the map.
 s02_what_a_clue_is_4	Today there are two new words.
 s02_what_a_clue_is_5	Learn, on an answer, writes a word down for this crew.
 s02_what_a_clue_is_6	And learned, on another answer, counts the words.
-s02_what_a_clue_is_7	Counting is all it does.
-s02_what_a_clue_is_8	It can't ask for a word by name.
-s02_what_a_clue_is_9	There's one list for the whole ship.
+s02_what_a_clue_is_7	It can count them,
+s02_what_a_clue_is_8	or it can ask for one word by name.
+s02_what_a_clue_is_9	What's learned in a call goes on one list, for the whole game.
 s02_what_a_clue_is_10	And here's the rule that shapes everything:
 s02_what_a_clue_is_11	the game reads the count when the crew opens the scene, and only then.
 s02_what_a_clue_is_12	If they open a call too early,
@@ -63,9 +63,9 @@ s06_the_side_story_6	Now, in the game's shipped ruins you'll find a section call
 s06_the_side_story_7	and those are a different animal.
 s06_the_side_story_8	Each one says For, and a job.
 s06_the_side_story_9	They belong to one person,
-s06_the_side_story_10	and they're handed over when that person leaves the ship.
-s06_the_side_story_11	So don't type that section today.
-s06_the_side_story_12	Lint will tell you nothing hands it out, and lint is right.
+s06_the_side_story_10	and they're handed over when that person leaves the ship in a suit.
+s06_the_side_story_11	So leave that section for now.
+s06_the_side_story_12	You'll type one at the end of the class, in Lecture 10.
 s07_the_cutscene_what_you_write_0	A cutscene is a list of shots.
 s07_the_cutscene_what_you_write_1	It's a new section, and its key has to be cutscenes.
 s07_the_cutscene_what_you_write_2	The first record is the cutscene itself,
@@ -102,8 +102,8 @@ s08_the_card_15	When that word is sent, it plays the cutscene with this key, on 
 s08_the_card_16	Two things in it are mine, the word and the key.
 s08_the_card_17	And lint is clean.
 s09_lint_0	Now for three breaks.
-s09_lint_1	First, I ask for the word by name,
-s09_lint_2	and lint tells me that learned only counts.
+s09_lint_1	First, I turn the sign round,
+s09_lint_2	and lint tells me that it can't read that condition.
 s09_lint_3	That's good, because that answer would never have been offered.
 s09_lint_4	Next, I misspell a subject, and lint says clean.
 s09_lint_5	Lint reads the outside of a cutscene,

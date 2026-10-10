@@ -20,7 +20,8 @@ You will add three records to `mission.amd`, and a one-line note to five. Nothin
 
 - Your mission as Lecture 5 left it. It still has the Salvage Run from Class 1. Beside
   it, the crew tags the hulk for DS 1, and that job pays when Comms tells Quill and Chief
-  Ives that the beacon is set.
+  Ives that the beacon is set. Lecture 6 was done in a copy of the folder, `MyStanding`.
+  Leave that copy as it is, and come back to `MyMission` for this lecture.
 - `sbs lint MyMission` says `clean`.
 - VS Code with the mission folder open and trusted, a command prompt open in
   `data\missions`, and the game closed.

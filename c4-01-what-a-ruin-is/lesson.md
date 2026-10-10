@@ -345,9 +345,9 @@ for members of the crew who leave the ship in suits.
 | `Containment: tractor`, `Scrape band:`, `Margin:`, `Forbid jump:` on the ruin | They make the walls hold a ship. Your mission leaves that off, so a ship can always fly out | Not in this class |
 | `Dress: ruins_cv_rubble` on the drift, and a prop named the picket boat's hull | They are pieces from an art pack your mission does not have. So your drift is plain rock | Lecture 3 explains art packs |
 | `Scene:` and `Scan:` on the places, and the Dialogue section | A place's scene is read by a crew member in a suit | Lecture 4, then Lecture 8 |
-| `Item:` on three places, and the Items section | Your mission cannot pick things up yet | Lecture 5 |
+| `Item:` on three places, and the Items section | A thing to pick up needs a record of its own, in an Items section, and that is a lecture by itself | Lecture 5 |
 | The Cutscenes section | It is started by the campaign, not by the file | Lecture 6 |
-| The Side Stories section | They are handed to people who leave the ship | Lecture 8 |
+| The Side Stories section | They are handed to people who leave the ship | Lecture 8 takes the crew out. Lecture 10 has a story to type |
 | A second solid, `the wrack` | It only matters to the picket boat's story | Solids are in the reference |
 
 Your copy keeps two words your mission does not know. `Walls: cave, rock` asks for a wall

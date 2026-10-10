@@ -555,9 +555,10 @@ You are done when all five are true:
 
 ## Next
 
-Lecture 5, on what is lying in the rooms, is in preparation. Go on to Lecture 6: a clue
-the crew learns in one place and uses in another, a side story, and a cutscene. It starts
-from the files this lecture leaves, without the exercise.
+Lecture 5 is what is lying in the rooms: things a ship can take aboard. Lecture 6 is a
+clue the crew learns in one place and uses in another, a side story, and a cutscene. Both
+start from the files this lecture leaves, without the exercise, and neither needs the
+other. Do them in either order.
 
 ## Further reading
 

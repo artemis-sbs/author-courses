@@ -7,9 +7,9 @@
 // bonus. Ninety seconds after she arrives a third ship, the Nemain, comes in. That part
 // is her hook: LegendaryMissions\corsair_queen\__init__.mast.
 //
-// Her voice: the Morrigan calls the clock on Comms (Speaker: and Signal says:, in this
-// file). When she arrives the Queen calls, and one answer turns the Badb. The call needs
-// the folder: her card reads LegendaryMissions\corsair_queen\voice.amd.
+// Her voice: the Morrigan calls the clock on Comms (Speaker: and Signal says:). When she
+// arrives the Queen calls, and one answer turns the Badb. Her people and her scenes are
+// the last two sections of this file.
 
 # [Corsair Queen](corsair_queen)
 ---
@@ -108,3 +108,46 @@ Action:
   - badb joins tsn
 ---
 First Mate Orla has turned the Badb. She flies for you now.
+
+## [Characters](characters)
+
+### [The Corsair Queen](queen)
+---
+Face: terran_female
+---
+Flies the Morrigan. Has never lost a siege she chose to join.
+
+### [First Mate Orla](orla)
+---
+Face: terran_female
+---
+Runs the Badb's deck. Has buried three of the Queen's crews.
+
+## [Dialogue](dialogue)
+
+### [The Queen Calls](queen_calls)
+---
+Speaker: queen
+When: hail
+Title: The Corsair Queen
+Priority: 9
+---
+@queen
+% You held longer than I was told you would.
+% So you are the ones who broke my raiders.
+
+@queen
+% Stand your ships down and the starbases live. That is the only offer you will hear.
+
+- [We do not stand down.]() ; completes parley
+- [Badb, this is the TSN. She will spend your ship to save her own.](badb_answers)
+
+### [The Badb Answers](badb_answers)
+---
+Speaker: orla
+---
+% She has spent three crews this year. I will not be the fourth.
+% Three crews this year, TSN. I counted them into the ground myself.
+
+- [Then fly with us.]() ; completes parley, completes turn_badb, fails sink_badb
+- [Then stay out of our way.]() ; completes parley

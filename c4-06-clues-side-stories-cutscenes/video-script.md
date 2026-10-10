@@ -7,8 +7,8 @@
 >   such an install.
 > - **The student's mission is `MyRuin`** as Lecture 4 left it, without Lecture 4's
 >   exercise: a fresh `sbs create MyRuin -t amd` mission whose `mission.amd` is
->   `c4-04-places-that-speak\example\mission.amd` (199 lines). Lecture 5 is not written
->   yet, and nothing here depends on it. The game is started with
+>   `c4-04-places-that-speak\example\mission.amd` (199 lines). Lecture 5 (things to
+>   take aboard) can be done before or after this one; nothing here depends on it. The game is started with
 >   `sbs run server,helm,comms -m MyRuin map=0`.
 > - **This lecture hands the student a recipe card** (R13 in the plan): one line in the
 >   map block of `story.mast` and a three-line block at its end. Nothing a writer can put
@@ -17,8 +17,9 @@
 >   lines) and `story.mast` (116 lines).
 > - **Side stories for one person are not in this lecture.** Storm's Beacon's Side Stories
 >   sections hold `For:` quests, which are handed to a crew member who goes into the ruin
->   in a suit. The page shows one and says Lecture 8 will teach it. What the student builds
->   is a side story for the ship: an ordinary quest that a clue starts.
+>   in a suit. The page shows one and says where one is typed: Lecture 10's exercise.
+>   What the student builds is a side story for the ship: an ordinary quest that a clue
+>   starts.
 
 > **Re-measured 2026-10-08, in the mock.** Tool `sbs` as installed in `data\missions`,
 > library as packaged in `__lib__` (sbs_utils `ae2bbf4a`). The page's steps were typed one
@@ -122,7 +123,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 
 > Keep off camera: `Lens:` and `Move:` on a shot (they are spots in the whole map, and a
 > writer who types numbers measured from the ruin puts the camera twenty thousand away),
-> and a Side Stories section (lint warns about it until Lecture 8).
+> and a Side Stories section (lint warns about it, wrongly for a ruin; it is typed in
+> Lecture 10's exercise).
 
 > Say the wart out loud in scene 10. The ship panel in the corner of the main screen reads
 > `The Altar` and `Energy 0` during the cutscene. A viewer will take it for a mistake in
@@ -149,8 +151,8 @@ stops being a window, | and becomes a film, for ten seconds. ||"
 **Say:** "A clue is something the crew learns in one place | that changes what happens in
 another. || You've already written one, | when Mark the Gallery put a place on the map. ||
 Today there are two new words. || Learn, on an answer, writes a word down for this crew. |
-And learned, on another answer, counts the words. ||| Counting is all it does. | It can't
-ask for a word by name. || There's one list for the whole ship. || And here's the rule
+And learned, on another answer, counts the words. ||| It can count them, | or it can
+ask for one word by name. || What's learned in a call goes on one list, for the whole game. || And here's the rule
 that shapes everything: | the game reads the count when the crew opens the scene, and only
 then. || If they open a call too early, | going away and coming back doesn't help. || So
 the clue has to come first on the road. ||"
@@ -202,8 +204,8 @@ when a ship is within four hundred of the cairn. ||| The answer starts it, with 
 and then accepts stayed. || That's two things after one semicolon. ||| Now, in the game's
 shipped ruins you'll find a section called Side Stories, | and those are a different
 animal. || Each one says For, and a job. | They belong to one person, | and they're handed
-over when that person leaves the ship. || So don't type that section today. | Lint will
-tell you nothing hands it out, and lint is right. ||"
+over when that person leaves the ship in a suit. || So leave that section for now. | You'll
+type one at the end of the class, in Lecture 10. ||"
 
 ### 7. The cutscene: what you write
 
@@ -240,13 +242,13 @@ are mine, the word and the key. | And lint is clean. ||"
 
 ### 9. Lint
 
-**Screen:** Three breaks, each undone. Change `if learned >= 1` to `if learned names`,
+**Screen:** Three breaks, each undone. Change `if learned >= 1` to `if learned => 1`,
 save, lint, read the warning. Change `Subject: cairn` to `Subject: carin`, save, lint:
 clean; then show the line from `mast.runtime.log` on the page. Change
 `Overlay: lower_third` to `Overlay: lowerthird`, save, lint: clean.
 
-**Say:** "Now for three breaks. || First, I ask for the word by name, | and lint tells me that
-learned only counts. || That's good, because that answer would never have been offered.
+**Say:** "Now for three breaks. || First, I turn the sign round, | and lint tells me that
+it can't read that condition. || That's good, because that answer would never have been offered.
 ||| Next, I misspell a subject, and lint says clean. || Lint reads the outside of a
 cutscene, | and not the inside of a shot. || That shot would be left out, | and the game
 does say so, in one line, in its log, after you've played. ||| Last, I misspell the

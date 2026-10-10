@@ -1,0 +1,110 @@
+s01_cold_open_0	Here's the same call, in two different games.
+s01_cold_open_1	In the first one, Quill tells the crew to hold outside the markers.
+s01_cold_open_2	In the second, she opens the yard,
+s01_cold_open_3	and there's an answer that wasn't there before.
+s01_cold_open_4	Nothing in the story changed between them.
+s01_cold_open_5	What changed is what the Guild thinks of this ship.
+s01_cold_open_6	Today you'll teach a side to keep score,
+s01_cold_open_7	and you won't write a line of script to do it.
+s02_a_copy_to_work_in_0	Before I type anything, I make a copy of my mission folder.
+s02_a_copy_to_work_in_1	The next lecture starts from the file exactly as Lecture 5 left it,
+s02_a_copy_to_work_in_2	so today's lines go in a copy.
+s02_a_copy_to_work_in_3	I call it MyStanding,
+s02_a_copy_to_work_in_4	I open it in VS Code,
+s02_a_copy_to_work_in_5	and I run lint on it.
+s02_a_copy_to_work_in_6	It's clean, and it's the same mission.
+s02_a_copy_to_work_in_7	From here on, everything happens in the copy.
+s03_what_the_guild_values_0	The game measures a ship on seven pairs of traits.
+s03_what_the_guild_values_1	Honest or liar, generous or selfish,
+s03_what_the_guild_values_2	fearsome or cowardly, and so on.
+s03_what_the_guild_values_3	Neither end is the good one,
+s03_what_the_guild_values_4	because that depends on who's judging.
+s03_what_the_guild_values_5	So I tell the game what the Harbor Guild cares about.
+s03_what_the_guild_values_6	On its record I write Values,
+s03_what_the_guild_values_7	then honest forty, a comma, generous thirty.
+s03_what_the_guild_values_8	Those numbers are weights.
+s03_what_the_guild_values_9	They say honesty counts a bit more than generosity,
+s03_what_the_guild_values_10	and they don't have to add up to anything.
+s04_who_speaks_for_the_guild_0	Standing is always somebody's opinion.
+s04_who_speaks_for_the_guild_1	So when Quill asks about it,
+s04_who_speaks_for_the_guild_2	the game has to know whose opinion she's giving.
+s04_who_speaks_for_the_guild_3	I tell it on her record, with one line:
+s04_who_speaks_for_the_guild_4	Side, and the Guild's key.
+s04_who_speaks_for_the_guild_5	You've typed that line before, on a landmark.
+s04_who_speaks_for_the_guild_6	On a person it means, this character speaks for that side.
+s04_who_speaks_for_the_guild_7	Leave it off, and she speaks for nobody,
+s04_who_speaks_for_the_guild_8	and the number she reads is always zero.
+s05_two_deeds_0	Now the crew needs a way to earn something.
+s05_two_deeds_1	A deed is the word earns,
+s05_two_deeds_2	and then three more: a side, a trait and a number.
+s05_two_deeds_3	The first one goes on the quest.
+s05_two_deeds_4	After the credits I put a comma,
+s05_two_deeds_5	and then earns guild honest thirty.
+s05_two_deeds_6	The crew did the job and came back to say so,
+s05_two_deeds_7	and the Guild calls that honest.
+s05_two_deeds_8	The second deed goes on an answer.
+s05_two_deeds_9	I add a way to report that gives the fee to the tug crews,
+s05_two_deeds_10	and after the semicolon it earns generous thirty.
+s05_two_deeds_11	Both answers still finish the step,
+s05_two_deeds_12	because that's the rule from last time.
+s06_a_call_that_reads_standing_0	So far the Guild is keeping score, and nobody's reading it.
+s06_a_call_that_reads_standing_1	I add a beat that places a call when the ship comes near the Guild's yard,
+s06_a_call_that_reads_standing_2	and I write the scene for it.
+s06_a_call_that_reads_standing_3	Look at Quill's two lines.
+s06_a_call_that_reads_standing_4	Until today, two lines in a block were two takes,
+s06_a_call_that_reads_standing_5	and the game picked one.
+s06_a_call_that_reads_standing_6	These two each have a guard, in curly brackets, right after the percent sign.
+s06_a_call_that_reads_standing_7	The first can only be said to a ship below thirty.
+s06_a_call_that_reads_standing_8	The second can only be said at thirty or more.
+s06_a_call_that_reads_standing_9	Between them they cover every ship, and that matters.
+s06_a_call_that_reads_standing_10	If no line can be said, the call opens with no words at all.
+s07_an_answer_that_needs_standin_0	An answer can have a guard too.
+s07_an_answer_that_needs_standin_1	After the round brackets I write if and the condition,
+s07_an_answer_that_needs_standin_2	and only then the semicolon.
+s07_an_answer_that_needs_standin_3	A ship below thirty doesn't see this answer greyed out.
+s07_an_answer_that_needs_standin_4	It doesn't see it at all.
+s07_an_answer_that_needs_standin_5	Back in Lecture 4, I told you to leave this kind of condition alone,
+s07_an_answer_that_needs_standin_6	because there was almost nothing it could read.
+s07_an_answer_that_needs_standin_7	Now there is something: standing, with the side the speaker speaks for.
+s08_how_the_number_works_0	Here's the part that surprises people.
+s08_how_the_number_works_1	The quest earns honest thirty,
+s08_how_the_number_works_2	and the ship's standing after it is seventeen.
+s08_how_the_number_works_3	That's because standing isn't one score.
+s08_how_the_number_works_4	It's the average of everything the side values,
+s08_how_the_number_works_5	weighted by those numbers on the Values line.
+s08_how_the_number_works_6	Honesty alone gets this crew about half way.
+s08_how_the_number_works_7	Add the generous answer,
+s08_how_the_number_works_8	and both scores are thirty, so standing is thirty.
+s08_how_the_number_works_9	And the number belongs to a ship.
+s08_how_the_number_works_10	With two ships, the quest pays them both,
+s08_how_the_number_works_11	but the answer pays only the ship that gave it.
+s08_how_the_number_works_12	So one crew gets the berth,
+s08_how_the_number_works_13	and the crew beside them is told to hold outside.
+s09_play_it_0	Let's play it twice.
+s09_play_it_1	First I fly straight to the yard, having done nothing.
+s09_play_it_2	There's the call, with the cold line,
+s09_play_it_3	and there's my one answer.
+s09_play_it_4	Now a new game.
+s09_play_it_5	I take the job, I wait for the beacon,
+s09_play_it_6	and this time the report call offers me two answers.
+s09_play_it_7	I give the fee away.
+s09_play_it_8	Then I fly to the yard.
+s09_play_it_9	And there's the other line,
+s09_play_it_10	and a second answer under it.
+s10_what_lint_can_and_cannot_see_0	Lint knows your sides and it knows the traits.
+s10_what_lint_can_and_cannot_see_1	If I misspell the side after earns,
+s10_what_lint_can_and_cannot_see_2	it tells me, and it lists the sides I do have.
+s10_what_lint_can_and_cannot_see_3	But now watch what happens
+s10_what_lint_can_and_cannot_see_4	when I take the Side line off Quill,
+s10_what_lint_can_and_cannot_see_5	and lint says clean.
+s10_what_lint_can_and_cannot_see_6	In the game she now speaks for nobody,
+s10_what_lint_can_and_cannot_see_7	the number is always zero,
+s10_what_lint_can_and_cannot_see_8	and the yard never opens.
+s10_what_lint_can_and_cannot_see_9	So that line you check with your own eyes.
+s11_your_turn_0	Now it's your turn.
+s11_your_turn_1	Give the crew a selfish way to report,
+s11_your_turn_2	and work out the standing before you play it.
+s11_your_turn_3	Then change what the Guild values,
+s11_your_turn_4	and watch the same answer land differently.
+s11_your_turn_5	Next time, we go back to your own mission folder,
+s11_your_turn_6	and look at the tools that show you the whole story at once.

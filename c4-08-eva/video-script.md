@@ -142,7 +142,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 9. The end screen for this mission.
 
 > Keep off camera: a personal side story (`For:`). The game hands a ruin's Side Stories
-> to the crew who suit up, and the story then never starts (reported). Lecture 10 says so.
+> to the crew who suit up, and the story starts then. It is an optional part of
+> Lecture 10, not of this lecture.
 > And the place's own marker listed in the Fire app at the niche ("The Niche"): it is a
 > fault, reported; do not select it.
 

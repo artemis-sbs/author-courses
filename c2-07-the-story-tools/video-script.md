@@ -9,8 +9,9 @@
 >   `c2-01-sides-and-factions\example\` and the other files of a mission made by `sbs
 >   create`. `example\` here holds the one file that differs, `mission.amd`. The lecture
 >   was first measured on an older Lecture 5 file and was measured again, whole, when that
->   file changed on 2026-10-08. Lecture 6 is not written yet and changes nothing this
->   lecture reads.
+>   file changed on 2026-10-08. Lecture 6 (written 2026-10-10) is done in a COPY of the
+>   mission folder, `MyStanding`, so it changes nothing this lecture reads: the student
+>   comes back to `MyMission`, which is still Lecture 5's file.
 > - **Measured:** the lesson's eight states of the file (start, notes, plan, each of the
 >   three records written, the cut, the exercise's cut) and sixteen one-change mistakes, each through
 >   `sbs lint` and `sbs lint --missing` with the installed tool. Seventeen headless plays
