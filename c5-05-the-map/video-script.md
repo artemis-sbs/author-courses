@@ -143,10 +143,10 @@ Side, | the station belongs to the miners and offers their work. ||"
 
 ### 7. A dead ship, and a guarded one
 
-**Screen:** Type The Tern, then The Bone Pile. Highlight `Kind: derelict`, `Terrain:`,
+**Screen:** Type The Tern, then The Bone Pile. Highlight `Prefab: derelict`, `Terrain:`,
 `Guards:`.
 
-**Say:** "The second is a dead ship. || Kind, derelict, makes it a wreck for Science to
+**Say:** "The second is a dead ship. || Prefab, derelict, makes it a wreck for Science to
 scan. || The game scatters wrecks of its own, but they have no names. || This one has a
 name, a line on the card, | and a nebula around it, whatever the game rolled there. |||
 And the third is a fight. || Guards puts a fleet on the landmark, | the first time the

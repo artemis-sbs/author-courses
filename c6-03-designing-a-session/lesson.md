@@ -144,7 +144,7 @@ in your Landmarks chapter and add one line.
 ### [The Wren](the_wren)
 ---
 At: 2, 2
-Kind: derelict
+Prefab: derelict
 Terrain: asteroids
 Guards: torgoth
 ---

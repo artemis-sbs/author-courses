@@ -137,7 +137,7 @@ Go to the very end of `mission.amd`. Leave two blank lines, then type:
 
 ### [The Lifeboat](lifeboat)
 ---
-Kind: wreck
+Prefab: wreck
 Roles: lifeboat
 Art: wreck
 Loc: 6000, 0, 6000
@@ -152,7 +152,7 @@ change.
 | Line | Meaning |
 |---|---|
 | `### [The Lifeboat](lifeboat)` | Three hashes, the object's name in the game, then its key |
-| `Kind: wreck` | What sort of thing it is |
+| `Prefab: wreck` | What sort of thing it is |
 | `Roles: lifeboat` | The label it wears. Quests and scans point at this word |
 | `Art: wreck` | What it looks like |
 | `Loc: 6000, 0, 6000` | Where it sits |
@@ -178,16 +178,20 @@ list you wrote in Lecture 7, add one line:
 // ROLE    lifeboat          worn by The Lifeboat, a landmark in this file
 ```
 
-### Kind
+### Prefab
 
 | You write | You get |
 |---|---|
-| `Kind: wreck` | Wreckage. Scenery, not a ship |
-| `Kind: ship` | A ship. Missions that ship with the game also write `Kind: npc`, which means the same |
-| `Kind: station` | A base |
+| `Prefab: wreck` | Wreckage. Scenery, not a ship |
+| `Prefab: ship` | A ship. Missions that ship with the game also write `Prefab: npc`, which means the same |
+| `Prefab: station` | A base |
 
-Write `Kind:` with its colon, every time. Lint warns when the line is missing. It does
-not check the word after it: a word the game does not know gets you a ship.
+Write `Prefab:` with its colon, every time. A landmark with no `Prefab:` line, or with a
+word the game does not know, is not placed at all. Lint warns about both.
+
+Older missions, and earlier copies of this lecture, write `Kind:` here. It was renamed
+`Prefab:` in October 2026. A landmark that still says `Kind:` is not placed, and lint's
+sentence gives you the line to write instead.
 
 ### Art
 
@@ -196,9 +200,9 @@ exactly. These three are in the list:
 
 | You write | It looks like | Goes with |
 |---|---|---|
-| `Art: wreck` | Wreckage | `Kind: wreck` |
-| `Art: cargo_ship` | A freighter | `Kind: ship` |
-| `Art: starbase_civil` | A civilian station | `Kind: station` |
+| `Art: wreck` | Wreckage | `Prefab: wreck` |
+| `Art: cargo_ship` | A freighter | `Prefab: ship` |
+| `Art: starbase_civil` | A civilian station | `Prefab: station` |
 
 A record with no `Art:` line is not placed at all.
 
@@ -409,7 +413,7 @@ At the end of the file:
 
 ### [The Lifeboat](lifeboat)
 ---
-Kind: wreck
+Prefab: wreck
 Roles: lifeboat
 Art: wreck
 Loc: 6000, 0, 6000
@@ -501,8 +505,10 @@ another.
 | No `Roles:` line, or `Role:`, or the role misspelled: `Roles: lifebaot` | The lifeboat is placed. It has no scan text, and Find the Lifeboat can never be finished | `role-is-a-key`, three times. With `Role:`, `unknown-field` as well: it guesses `Roles` |
 | `Roles: lifeboat wreckage` (two roles and no comma) | The same. The lifeboat wears one role called `lifeboat wreckage` | `role-is-a-key`, three times |
 | `Roles lifeboat` (no colon) | The same | `role-is-a-key`, three times, and `fence-syntax`, an error |
-| No `Kind:` line | The lifeboat is made the way a station is, not as scenery. In the test the story still played | `landmark-no-kind`. Its sentence says the lifeboat "wears the role `station`". With `Art: wreck` it does not: that role comes with a station's art |
-| The bare word `wreck`, with no `Kind:` in front, or `Kind wreck` with no colon | The same | `landmark-no-kind`, and `unknown-kind-line` for the bare word or `fence-syntax`, an error, for the missing colon |
+| No `Prefab:` line | The lifeboat is not placed, and Find the Lifeboat can never be finished | `landmark-no-prefab` |
+| `Prefab: wreck` (the line's old name) | The same | `landmark-kind-retired`. Its sentence gives the line to write |
+| The bare word `wreck`, with no `Prefab:` in front, or `Prefab wreck` with no colon | The same | `landmark-no-prefab`, and `unknown-kind-line` for the bare word or `fence-syntax`, an error, for the missing colon |
+| `Prefab: lifeboat` (a word that is not a prefab) | The same | `unknown-prefab`. Its sentence lists words it knows |
 
 **The step that points at it.** The mistake is in Find the Lifeboat, unless the row names
 another step.
@@ -527,11 +533,10 @@ For every row below lint says `clean`. Both logs stay empty too.
 |---|---|
 | `# [The Lifeboat](lifeboat)` (one hash) | The lifeboat is not placed, and Find the Lifeboat can never be finished. The Lifeboat is the last record in the file, and that is the one place lint misses a single hash |
 | `Loc: 6,000, 0, 6,000` (commas inside the numbers) | The lifeboat is put at `6, 0, 0`, inside DS 1. The game is won at DS 1 without the trip |
-| `Kind: lifeboat` (a word that is not a kind) | The lifeboat is made as a ship, not as scenery |
 | `Art: wrek` | Not known. The test places it all the same, and the test draws nothing. Nobody has tried a wrong art word in the real game. Copy the word from the table |
 | `Side: navy`, with no side of that name in the mission | The thing is on a side called `navy`, which nobody declared |
 | `Roles: lifeboat, station` | The lifeboat wears the role `station`. Bring the Log Home finishes there the moment it appears, so the game is WON at the lifeboat |
-| The lifeboat made a station on the crew's side: `Kind: station`, `Side: tsn`, `Art: starbase_civil` | The same, and two things more. The crew starts the game beside it, not beside DS 1. And it shows the game's stock text in place of your two readings |
+| The lifeboat made a station on the crew's side: `Prefab: station`, `Side: tsn`, `Art: starbase_civil` | The same, and two things more. The crew starts the game beside it, not beside DS 1. And it shows the game's stock text in place of your two readings |
 | A second station of its own, anywhere on the map, with those same three lines | Bring the Log Home finishes at either station. In the test the game was won 9000 from DS 1. The crew also starts the game beside the new station |
 | `Roles: lifeboat, derelict` | The lifeboat shows the hulk's `mat` and `bio` readings as well as its own. Whatever your file says about `derelict`, it now says about the lifeboat too |
 | A `{word}` in a reading | It is shown exactly as you wrote it, curly brackets and all. Nothing in this lecture fills it in |
@@ -548,7 +553,7 @@ Three checks to make by eye:
 
 | You wrote | Result |
 |---|---|
-| `Tab: Bio`, `Scan of: Derelict`, `Roles: Lifeboat`, or `Kind: Wreck` | Works. Capitals do not matter in these words |
+| `Tab: Bio`, `Scan of: Derelict`, `Roles: Lifeboat`, or `Prefab: Wreck` | Works. Capitals do not matter in these words |
 | `Roles: lifeboat, wreckage` (two roles, with a comma) | Works. The lifeboat wears both |
 | `Roles: tsn, lifeboat` (a side typed first, as in `story.mast`) | Works, and the lifeboat is on no side. It wears a role called `tsn`. Take the word out |
 | `Loc: 6000 0 6000` (no commas) | Works |
@@ -639,7 +644,7 @@ the crew to do something, use `reach`.
 Place a second thing of your own, and let the crew choose to visit it.
 
 1. In the Landmarks section, add a second record below The Lifeboat, with three hashes.
-   Give it your own name and key. Use `Kind: wreck` and `Art: wreck`, a role of your own,
+   Give it your own name and key. Use `Prefab: wreck` and `Art: wreck`, a role of your own,
    and a `Loc:` that is not near anything else.
 2. Add a line for your new role to the word list at the top of the file.
 3. In the Scans section, give its role a `scan` tab with two readings.

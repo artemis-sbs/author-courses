@@ -195,7 +195,7 @@ description. Leave one blank line below it. Then, ABOVE the `// ---- Sides` note
 ```
 ### [Breaker Cutter](cutter)
 ---
-Kind: ship
+Prefab: ship
 Side: breaker
 Roles: cutter
 Art: pirate_strongbow
@@ -205,7 +205,7 @@ A Breaker ship, standing off until the hulk goes quiet.
 
 ### [Guild Yard](guild_yard)
 ---
-Kind: station
+Prefab: station
 Side: guild
 Roles: yard
 Art: starbase_civil
@@ -220,7 +220,7 @@ One `Art` word is new. Add it to your table from Lecture 10:
 
 | You write | It looks like | Goes with |
 |---|---|---|
-| `Art: pirate_strongbow` | A pirate ship | `Kind: ship` |
+| `Art: pirate_strongbow` | A pirate ship | `Prefab: ship` |
 
 **Mind where these two records go.** They belong to the Landmarks section, so they sit
 above the line `## [Sides](sides)`. A record typed below that line is read as a side: the
@@ -347,7 +347,7 @@ At the end of the Landmarks section of `mission.amd`:
 ```
 ### [Breaker Cutter](cutter)
 ---
-Kind: ship
+Prefab: ship
 Side: breaker
 Roles: cutter
 Art: pirate_strongbow
@@ -357,7 +357,7 @@ A Breaker ship, standing off until the hulk goes quiet.
 
 ### [Guild Yard](guild_yard)
 ---
-Kind: station
+Prefab: station
 Side: guild
 Roles: yard
 Art: starbase_civil
@@ -434,9 +434,9 @@ In these tables "`unknown`" means what Step 6 said about a stranger: Science sho
 |---|---|---|
 | `## [Sides](side)` or `## [Factions](factions)` | Makes no sides. The cutter and the yard are `unknown` | `section-not-loaded`. Its sentence lists the keys the story asks for |
 | A side typed with two hashes | Loses that side and every side below it | `section-not-loaded`, about that side's key |
-| The Sides line typed with three hashes, or left out | Makes no sides | `landmark-no-art`, `landmark-no-loc` and `landmark-no-kind` for each side, and `unknown-field`: your sides are read as landmarks |
+| The Sides line typed with three hashes, or left out | Makes no sides | `landmark-no-loc` and `landmark-no-prefab` for each side, and `unknown-field`: your sides are read as landmarks |
 | The Sides line typed with one hash | Makes no sides | `heading-level-jump`, an error, and `section-not-loaded` for each side |
-| The cutter and the yard typed below the Sides line | Places neither. Makes two more sides, called Breaker Cutter and Guild Yard | `unknown-field`, four times for each: `Kind`, `Side`, `Roles` and `Art` are not a side's fields |
+| The cutter and the yard typed below the Sides line | Places neither. Makes two more sides, called Breaker Cutter and Guild Yard. `mast.runtime.log` asks if each is under the wrong heading | `prefab-wrong-record` for each, and `unknown-field` three times for each: `Side`, `Roles` and `Art` are not a side's fields |
 | Two sides with the same key | Makes one side, with the lower record's name, color and relations. With `breaker` twice, the cutter was a friend | `duplicate-key`, and `dangling-side` for the key that is gone |
 | `### [The Breakers]` (no key), or `### The Breakers` (no brackets) | Makes no Breakers. The cutter is `unknown` | `broken-heading`, an error, and `dangling-side` on the cutter's `Side:` line |
 | The key changed in the heading and not in `Side:` | The cutter is `unknown` | `dangling-side`, on the `Side:` line |
@@ -451,6 +451,7 @@ In these tables "`unknown`" means what Step 6 said about a stranger: Science sho
 | `Side: The Breakers` (the name, not the key) | It half works. Science reads the cutter as an enemy, and the word beside its name is `the breakers`. An enemy close by no longer stops docking | `dangling-side` |
 | The step says `reach home 1000` and DS 1 does not wear `home` | The story never finishes | `role-nothing-wears` |
 | Line 44 of `story.mast` deleted | Makes no sides | `section-not-loaded` |
+| A `#` typed in front of line 44 of `story.mast` | Makes no sides. The cutter and the yard are `unknown`. Lecture 11 said it: a line that starts with `#` is a note | `section-not-loaded` |
 
 For every row of the next table lint says `clean`. Check these by eye.
 
@@ -471,7 +472,6 @@ For every row of the next table lint says `clean`. Check these by eye.
 | A scan record of your own for `cutter`, on the `scan` or `intel` tab. Or one for `yard`, on the `scan` tab | The game's own reading is shown, not yours. Yours is used only on a tab the game has no reading for, such as `mat` |
 | `"tsn, station home"` on line 64 (no comma) | DS 1 wears one role called `station home`. The story never finishes |
 | `"home, tsn, station"` on line 64 (the new word first) | DS 1 is on a side called `home`, which does not exist. It is `unknown`, and the crew cannot dock there |
-| A `#` typed in front of line 44 of `story.mast` | Makes no sides. The cutter and the yard are `unknown`. Lecture 11 said it: a line that starts with `#` is a note |
 
 When a `Side:`, `Enemies:` or `Allies:` word names no side, the game also says so. After a
 play, `mast.runtime.log` in your mission folder has a line that begins `Side not found:`
@@ -488,7 +488,7 @@ and gives the word in square brackets.
 | Lines 18 to 20 of `story.mast` deleted, with the TSN record in the file | Works. Leave them where they are all the same |
 
 | Your own side written a second time with another key, such as `### [TSN](navy)` | Works, and makes one more side that nobody is on. Take it out |
-| `Kind: npc` on the cutter | Works. It means the same as `Kind: ship` |
+| `Prefab: npc` on the cutter | Works. It means the same as `Prefab: ship` |
 
 ## Step 9 - Play it
 
@@ -563,7 +563,7 @@ Add a faction of your own, and watch the crew's view of it change.
 
 1. At the end of the Sides section, write a fourth side: a name, a key and a color of your
    own. Give it no `Enemies:` line and no `Allies:` line.
-2. In the Landmarks section, above the `// ---- Sides` note, give it one ship: `Kind: ship`,
+2. In the Landmarks section, above the `// ---- Sides` note, give it one ship: `Prefab: ship`,
    `Side:` with your key, a role of your own, `Art: cargo_ship`, and a `Loc:` of your own.
 3. Run lint, then play. On Science your ship reads `unknown`, and it stays that way.
    A stranger tells Science nothing.

@@ -68,7 +68,7 @@ are in capital letters.
 ### [PLACE NAME](PLACE_KEY)
 ---
 At: X, Y
-Kind: derelict
+Prefab: derelict
 Terrain: COVER
 Guards: SHIPS
 ---
@@ -162,7 +162,7 @@ Now the records. The landmark goes in your Landmarks chapter, under The Wren.
 ### [The Dunlin](the_dunlin)
 ---
 At: -2, 3
-Kind: derelict
+Prefab: derelict
 Terrain: nebula
 Guards: torgoth
 ---

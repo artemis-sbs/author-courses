@@ -287,7 +287,7 @@ the same way. It holds the same facts as a Landmarks record.
 | `"Salvage Tug"` | The name in the heading | Its name |
 | `"tsn, tug"` | `Side:`, then `Roles:` | Its side, a comma, then its role. The side comes first, as on line 68 |
 | `"cargo_ship"` | `Art:` | What it looks like |
-| `"behav_npcship"` | `Kind: ship` | It is a ship. Leave this word alone |
+| `"behav_npcship"` | `Prefab: ship` | It is a ship. Leave this word alone |
 
 The difference is **when**. A Landmarks record is on the map from the start. This ship
 arrives when the story says so.

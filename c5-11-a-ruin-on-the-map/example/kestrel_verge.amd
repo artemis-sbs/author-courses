@@ -128,14 +128,14 @@ Gleaner country. Every wreck out here was somebody's ship.
 ### [Kestrel Relay](kestrel_relay)
 ---
 At: 0, 0
-Kind: station
+Prefab: station
 ---
 The last relay anyone still maintains. Everything past it is rumor.
 
 ### [Assay Office](assay_office)
 ---
 At: 3, 1
-Kind: station
+Prefab: station
 Side: deepwell
 Art: starbase_industry
 ---
@@ -144,7 +144,7 @@ Where the Deepwell weighs what it digs. Nothing leaves this system uncounted.
 ### [The Tern](the_tern)
 ---
 At: 1, -2
-Kind: derelict
+Prefab: derelict
 Terrain: nebula blue
 ---
 The third colony's ship, still in orbit over the place it never landed.
@@ -152,7 +152,7 @@ The third colony's ship, still in orbit over the place it never landed.
 ### [The Bone Pile](bone_pile)
 ---
 At: -4, -3
-Kind: derelict
+Prefab: derelict
 Terrain: asteroids
 Guards: torgoth
 ---
@@ -161,7 +161,7 @@ Where the Gleaners stack what they cannot sell. They do not like it looked at.
 ### [The Hollow](the_hollow)
 ---
 At: 2, -3
-Kind: derelict
+Prefab: derelict
 Relic: hollow
 Relic file: hollow.amd
 ---

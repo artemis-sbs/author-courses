@@ -76,8 +76,8 @@
 >   code, every row measured again. `Tab: life` is one finding, not two. A reading typed
 >   above the closing fence costs that one line, not the record. A landmark typed with
 >   four hashes no longer loses the whole file: it is placed, and the log gets one line.
->   A landmark with no `Kind:` line does NOT wear the role `station` with the lesson's
->   art, whatever lint's sentence says (the old page said it did). `never-revealed` now
+>   A landmark with no `Prefab:` line is not placed at all (`Prefab:` replaced `Kind:` on
+>   2026-10-14; before that, a landmark with no `Kind:` line was made as a station). `never-revealed` now
 >   fires in the middle of Step 5, and the page prints it. Most rows of "What lint
 >   cannot see" are new, among them one hash on The Lifeboat and `Loc: 6,000, 0, 6,000`.
 
@@ -177,9 +177,8 @@ Not checked, and to watch for while recording:
    page says so, as a test result.
 4. A misspelled `Art:` word. The mock places the object anyway. The real game may not.
    The page says it is not known.
-5. A landmark with no `Kind:` line. The mock makes it with a station's behavior and the
-   wreck's art, and the story still plays. What that looks like, and whether it can be
-   docked with, nobody has seen.
+5. SETTLED 2026-10-14: a landmark with no `Prefab:` line is not placed at all, in the
+   mock and the game alike. (`Prefab:` replaced `Kind:`.)
 6. The `scan` verb in the real game. In the mock a `Done when: scan 1 lifeboat` step
    completes on the ship's own scan, and a scan made before the step was revealed did not
    count. Whether the real game scans the same contact a second time by itself was not
@@ -245,12 +244,12 @@ typed them. ||"
 
 **Screen:** The end of the file. Type the note, the `## [Landmarks](landmarks)` line and
 The Lifeboat record. Highlight `(landmarks)`. Then each of the four lines in turn. Show
-the Kind, Art and Loc tables on the companion page. Then scroll to the top and add the
+the Prefab, Art and Loc tables on the companion page. Then scroll to the top and add the
 `lifeboat` line to the word list. Save. Lint: `clean`.
 
 **Say:** "Everything on the map so far came from the script file, | but this one is mine. ||
 It's a new section, with two hashes, | and its key is this word: landmarks. || Then comes a
-record, | and its name is the name the object gets. || Kind says what sort of thing it is: |
+record, | and its name is the name the object gets. || Prefab says what sort of thing it is: |
 a wreck, a ship, or a station. || Roles is the label it wears. || This is the line lint has
 been telling you about since Lecture 7, | and it's the line that matters, | because it's the
 word everything else points at. ||| Art is what it looks like. | Lint can't check that word,

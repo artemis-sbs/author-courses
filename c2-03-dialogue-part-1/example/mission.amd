@@ -189,7 +189,7 @@ Tab: intel
 
 ### [The Lifeboat](lifeboat)
 ---
-Kind: wreck
+Prefab: wreck
 Roles: lifeboat
 Art: wreck
 Loc: 6000, 0, 6000
@@ -198,7 +198,7 @@ The hulk's lifeboat. It left her with the flight log aboard.
 
 ### [Breaker Cutter](cutter)
 ---
-Kind: ship
+Prefab: ship
 Side: breaker
 Roles: cutter
 Art: pirate_strongbow
@@ -208,7 +208,7 @@ A Breaker ship, standing off until the hulk goes quiet.
 
 ### [Guild Yard](guild_yard)
 ---
-Kind: station
+Prefab: station
 Side: guild
 Roles: yard
 Art: starbase_civil

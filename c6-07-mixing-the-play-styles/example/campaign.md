@@ -67,7 +67,7 @@ Narrative chapter. Then fill it in.
 ### [PLACE NAME](PLACE_KEY)
 ---
 At: X, Y
-Kind: derelict
+Prefab: derelict
 Terrain: COVER
 Guards: SHIPS
 ---

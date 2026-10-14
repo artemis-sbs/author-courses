@@ -173,7 +173,7 @@ above it, add:
 ### [The Hollow](the_hollow)
 ---
 At: 2, -3
-Kind: derelict
+Prefab: derelict
 Relic: hollow
 Relic file: hollow.amd
 ---
@@ -182,7 +182,7 @@ A hole in a rock that is on no survey. The Tern's last log gives its bearing, an
 
 | Line | What it means |
 |---|---|
-| `At:` and `Kind:` | As for any landmark, from Lecture 5 |
+| `At:` and `Prefab:` | As for any landmark, from Lecture 5 |
 | `Relic: hollow` | This landmark is a ruin. The word is the ruin's key: `### [The Hollow](hollow)` in the other file |
 | `Relic file: hollow.amd` | The file the ruin is in, in the mission folder |
 

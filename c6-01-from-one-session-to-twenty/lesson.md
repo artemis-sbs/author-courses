@@ -162,7 +162,7 @@ Find your Landmarks chapter. Under your last landmark, with an empty line above 
 ### [The Wren](the_wren)
 ---
 At: 2, 2
-Kind: derelict
+Prefab: derelict
 Terrain: asteroids
 ---
 A lifeboat off the Tern, cold for forty years. Her davit number can still be read: one of five.

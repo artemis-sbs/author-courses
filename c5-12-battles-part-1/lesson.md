@@ -132,7 +132,7 @@ Give The Tern a guard as well. Somebody is picking at her. Add one line to her r
 ### [The Tern](the_tern)
 ---
 At: 1, -2
-Kind: derelict
+Prefab: derelict
 Terrain: nebula blue
 Guards: pirate 2
 ---

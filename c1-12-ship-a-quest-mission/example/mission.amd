@@ -177,7 +177,7 @@ Tab: intel
 
 ### [The Keeper's Skiff](lifeboat)
 ---
-Kind: wreck
+Prefab: wreck
 Roles: lifeboat
 Art: wreck
 Loc: 6000, 0, 6000

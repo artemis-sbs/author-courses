@@ -198,7 +198,7 @@ chapter, with an empty line between records.
 ### [Assay Office](assay_office)
 ---
 At: 3, 1
-Kind: station
+Prefab: station
 Side: deepwell
 Art: starbase_industry
 ---
@@ -207,7 +207,7 @@ Where the Deepwell weighs what it digs. Nothing leaves this system uncounted.
 ### [The Tern](the_tern)
 ---
 At: 1, -2
-Kind: derelict
+Prefab: derelict
 Terrain: nebula blue
 ---
 The third colony's ship, still in orbit over the place it never landed.
@@ -215,7 +215,7 @@ The third colony's ship, still in orbit over the place it never landed.
 ### [The Bone Pile](bone_pile)
 ---
 At: -4, -3
-Kind: derelict
+Prefab: derelict
 Terrain: asteroids
 Guards: torgoth
 ---
@@ -225,7 +225,7 @@ Where the Gleaners stack what they cannot sell. They do not like it looked at.
 | Line | What it means |
 |---|---|
 | `At:` | The system it is in |
-| `Kind:` | `station` or `derelict` |
+| `Prefab:` | `station` or `derelict` |
 | `Side:` | For a station: the key of the side it belongs to. Leave it out and the station is the crew's own, like Kestrel Relay |
 | `Art:` | For a station: which model it is. `starbase_command`, `starbase_civil`, `starbase_science` or `starbase_industry` |
 | `Terrain:` | Cover round the landmark: `nebula`, or `asteroids`. After `nebula` you can name a color |
@@ -322,7 +322,7 @@ Lint says `clean` for every one of these.
 | A sky that is not one of the seven: `Skybox: sky-red` | The sky does not change there. The music still does |
 | `Music: Artemis3` | The music does not change there. The sky still does |
 | A large region written before a small one inside it | The small one never happens. Every system belongs to the large one |
-| `Kind: wreck`, or any word but `derelict` | The landmark is a station |
+| `Prefab: wreck` | Plain wreckage, not Open Universe's derelict. A `Site:` on it does nothing |
 | No `Side:` on a station landmark | The station is the crew's own, with a market and none of that side's work |
 | An `Art:` the game does not have: `Art: starbase_huge` | Not seen. The station is given that name for its model |
 | `Guards: klingon` | No guards. `mast.runtime.log` names the word and lists the six it knows |
@@ -337,7 +337,7 @@ So check these by eye:
 - Every region has a `Center:` of two numbers and a `Radius:` that is a number.
 - Every `Skybox:` is one of the seven, letter for letter.
 - A small region is written before a large one that overlaps it.
-- `Kind:` is `station` or `derelict`.
+- `Prefab:` is `station` or `derelict`, not `wreck`.
 
 ## Step 7 - Play it
 
@@ -378,7 +378,7 @@ sbs run server,helm,comms -m MyUniverse map=0
 | The sky does not change in a region | The name after `Skybox:` is not one of the seven |
 | The Deepwell's home still reads `Uncharted (3, 1)` | The Assay Office's `At:` is not `3, 1` |
 | The Assay Office has a market and no escort job | It has no `Side:` line, so it is the crew's own |
-| The Tern is a station | `Kind:` is not the word `derelict` |
+| The Tern is missing, or is plain wreckage | `Prefab:` is not the word `derelict` |
 | No fleet at The Bone Pile | The word after `Guards:` is not one of the six kinds of ship. Or the crew has been here before in this save and destroyed it |
 | Ships at The Bone Pile attack after a ceasefire with the Gleaners | The guards are raiders. They are nobody's to call off |
 | A place is missing from Charted Locations | Only a landmark is charted, and only once the crew has been there |

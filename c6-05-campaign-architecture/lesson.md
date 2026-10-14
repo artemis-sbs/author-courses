@@ -110,7 +110,7 @@ Evening 4 goes somewhere new, so it needs a landmark. Add it to your Landmarks c
 ### [The Petrel](the_petrel)
 ---
 At: 4, -2
-Kind: derelict
+Prefab: derelict
 ---
 The Tern's fourth boat, holed and tumbling. Her beacon is still counting.
 ```

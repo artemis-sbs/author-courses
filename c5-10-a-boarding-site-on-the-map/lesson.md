@@ -71,7 +71,7 @@ above it, add:
 ### [Customs House](customs_house)
 ---
 At: 0, 0
-Kind: station
+Prefab: station
 Art: starbase_civil
 Site: customs
 ---
@@ -623,7 +623,7 @@ In `kestrel_verge.amd`, under the Customs House landmark, add:
 ### [Tally Yard](tally_yard_station)
 ---
 At: 0, 0
-Kind: station
+Prefab: station
 Art: starbase_industry
 Site: tally_yard
 ---

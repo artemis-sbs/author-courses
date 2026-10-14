@@ -426,7 +426,7 @@ lost.
 
 | Mistake | What the game does | Lint says |
 |---|---|---|
-| `Kind: Arc`, `Arc:`, or `Ark` | Nothing you can see in this mission | `unknown-field` for the first two, `unknown-kind-line` for `Ark` |
+| `Kind: Arc`, `Prefab: Arc`, `Arc:`, or `Ark` | Nothing you can see in this mission | `unknown-field` for the first three, `unknown-kind-line` for `Ark` |
 | `Arc` typed on the second line of the fence | The same | `fence-syntax`, an error. Its sentence says where the word goes |
 | `Wins:`, or `Win` with no colon | The story is finished at DS 1, and the game goes on | `unknown-field`, which guesses `Win`. Or `fence-syntax`, an error |
 | `Loose:` | When the time runs out the story fails, and the game goes on | `unknown-field`. It guesses `Lose` |

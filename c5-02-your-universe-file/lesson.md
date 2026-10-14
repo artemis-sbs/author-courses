@@ -171,7 +171,7 @@ Go to the very end of the file, leave one empty line, and add:
 ### [Kestrel Relay](kestrel_relay)
 ---
 At: 0, 0
-Kind: station
+Prefab: station
 ---
 The last relay anyone still maintains. Everything past it is rumor.
 ```
@@ -181,7 +181,7 @@ The last relay anyone still maintains. Everything past it is rumor.
 | `## [Landmarks](landmarks)` | A chapter of named places. The key must be `landmarks` |
 | `### [Kestrel Relay](kestrel_relay)` | Three hashes: one place. Its name, then its key |
 | `At: 0, 0` | Which system it is in. `0, 0` is home |
-| `Kind: station` | It is a station |
+| `Prefab: station` | It is a station |
 | The line below the fence | What the crew is told when they arrive |
 
 Three things happen because of this record:
@@ -270,7 +270,7 @@ files, then linted, then played.
 | The closing `---` left off the title record | Plays. The title record has no text | An error: "the fence that opens here has no closing `---`" (`unclosed-data-fence`) |
 | `Dispaly:` | Nothing changes | A warning: "`Dispaly` is not a field a map has" (`unknown-field`) |
 | A curly quote or a long dash in your prose | Shows the plain one in its place | A warning for each one (`non-ascii`) |
-| `## [Landmarks](places)` | No Kestrel Relay. Home is called Home Port | A warning on the `Kind:` line: "this record is being read as a map because of where it sits" (`unknown-field`) |
+| `## [Landmarks](places)` | No Kestrel Relay. Home is called Home Port | A warning on the `Prefab:` line: "this record is read as a map" (`unknown-field`) |
 | The landmark written with two hashes | The same | The same warning |
 
 Never play with a lint **error** in the title record. The game cannot find your chapters,

@@ -79,6 +79,6 @@ Recover what is worth recovering, and do not ask where it came from.
 ### [Kestrel Relay](kestrel_relay)
 ---
 At: 0, 0
-Kind: station
+Prefab: station
 ---
 The last relay anyone still maintains. Everything past it is rumor.

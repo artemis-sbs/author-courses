@@ -30,7 +30,7 @@ _NOTE = ("// ---- Places. Each record is one thing on the map. `Roles:` is the l
 _BOAT = [
     "### [The Lifeboat](lifeboat)",
     "---",
-    "Kind: wreck",
+    "Prefab: wreck",
     "Roles: lifeboat",
     "Art: wreck",
     "Loc: 6000, 0, 6000",
@@ -166,7 +166,7 @@ STILLS = {
     "card_title": ("card", "title", {}),
     "card_tabs": ("card", "points", {"kicker": "The five tabs", "items": ["scan", "status", "intel", "mat", "bio"]}),
     "card_rules": ("card", "list", {"heading": "Step 2 - Add a tab of your own", "kicker": "Five rules for scan text"}),
-    "card_kind": ("card", "table", {"heading": "Kind", "kicker": "Kind: what sort of thing"}),
+    "card_kind": ("card", "table", {"heading": "Prefab", "kicker": "Prefab: what sort of thing"}),
     "card_art": ("card", "table", {"heading": "Art", "kicker": "Art: what it looks like"}),
     "card_loc": ("card", "table", {"heading": "Loc", "kicker": "Loc: where it sits"}),
     "card_cannot": ("card", "table", {"heading": "What lint cannot see", "kicker": "Lint says clean, and", "rows": (1, 2)}),
