@@ -433,6 +433,7 @@ end of the line lint prints.
 |---|---|---|
 | `Clear with: cutter` (a word of your own) | The Fire app lists the slab and says `(wrong tool)` whichever tool is in hand. No crew member can open it | `relic-unknown-clear` |
 | `#### [The Fallen Slab](slab)` (four hashes) | There is no slab. The way to the niche is open, and Cut Through never finishes | `relic-part-level` |
+| `Barrier: 3000, 0, -1100` (no size) | There is no slab at all. The suit flies straight to the niche, and Cut Through can never finish | `relic-short-part` |
 | `Done when: signal slab_open` (the word misspelled) | The slab is cut, and Cut Through never finishes. The story stops there | `unfired-signal` |
 | `Done when: signal gallery_door_opened` (the place, not the slab) | The same | `unfired-signal` |
 | `Done when: signal fallen_slab_opened` (the name, not the key) | The same | `unfired-signal` |
@@ -448,13 +449,12 @@ end of the line lint prints.
 
 ### What lint cannot see
 
-Lint says `clean` for everything in this table. The first four are the ones to check by
+Lint says `clean` for everything in this table. The first three are the ones to check by
 eye every time you write a barrier.
 
 | You wrote | What happens | What tells you |
 |---|---|---|
 | No place within 600 of the slab (The Gallery Door deleted) | Nav says `No way through to niche from here.` From every place on the list, the Fire app says `Nothing in reach. Fly closer.` No crew member can open the slab | Those two lines |
-| `Barrier: 3000, 0, -1100` (no size) | There is no slab at all. The suit flies straight to the niche, and Cut Through can never finish | Nothing |
 | The slab is not across the way: `Barrier: 3000, 0, -300, 100` | The suit flies to the niche past it. Cut Through waits until somebody cuts the slab anyway | Nothing |
 | `Starts when: signal slab_opened` on The Niche | The slab is cut, the word is sent, and the bowl never appears. A place hears the words YOUR file sends, from an answer or a `Then:` line. It does not hear the game's own three | Nothing |
 | `Part of:` and `Required:` left off Carry It Home | The game is won at the niche, as the bowl is taken, with the crew member still outside | Nothing |

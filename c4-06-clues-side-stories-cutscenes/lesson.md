@@ -291,10 +291,6 @@ ruin in a suit, and it starts at that moment. The game does the handing over its
 any ruin that has a Side Stories section in its file. Suits are Lecture 8, so leave that
 section until then. Lecture 10 has one for you to type.
 
-If you do type one, lint warns that nothing hands the section out
-(`stories-not-handed-out`). For a ruin's own Side Stories that warning is wrong, and you
-may leave it.
-
 ## Step 6 - The cutscene: what you write
 
 A cutscene takes the main screen away from the ship for a few seconds and shows the crew
@@ -387,7 +383,7 @@ Two rules for a cutscene your crew will thank you for:
 Run lint now. It has something to say about the section you just typed:
 
 ```
-  [WARNING] line 267:5: nothing in this mission reads a section keyed `cutscenes`, so its records are never loaded. The story asks this file for: characters, dialogue, landmarks, quests, scans, sides. Change the key in round brackets to one of those, or add the line that reads it (section-not-loaded)
+  [WARNING] line 267:5: nothing in this mission reads a section keyed `cutscenes`, so its records are never loaded. The story asks this file for: characters, crew, dialogue, items, landmarks, quests, relics, scans, sides. Change the key in round brackets to one of those, or add the line that reads it (section-not-loaded)
 ```
 
 Lint is right. Nothing in your mission reads the Cutscenes section, and nothing plays it.
@@ -460,12 +456,8 @@ finishes, and an answer can send one when it is chosen.
 | The ship reaches a place | A quest with `Done when: reach cairn 400` and the line above. That is today's | The same |
 | An answer in a call | `; signal cairn_found` on the answer | The same |
 
-A quest has one `Then:` line. If yours already says `Then: reveal`, use Card 1 from Class
-1, Lecture 11 for the route line, with `quest_succeeded` in place of `quest_started`:
-
-```
-//shared/signal/quest_succeeded if QUEST_ID == "stayed"
-```
+If your quest already has a `Then: reveal` line, type `Then: signal cairn_found` as a
+second `Then:` line under it. Both run.
 
 ## Your finished pieces
 
@@ -605,7 +597,7 @@ that logged the names and to no other.
 
 | Mistake | What the game does | Lint says |
 |---|---|---|
-| `; reveal cairn accepts stayed` (no comma) | The Cairn appears on the map. The side story never starts | `outcome-run-together` |
+| `; reveal cairn accepts stayed` (no comma) | The Cairn appears on the map. The side story never starts | `ground-verb-target`, and then `outcome-run-together`, which gives the line to write |
 | `; accepts stayd` (the key misspelled) | The side story never starts. A line in `mast.runtime.log` | `outcome-quest-missing` |
 | `Starts when: at once` on The One Who Stayed | It is in the quest list from the start, and any ship that flies into the Crypt finishes it | `outcome-accepts-running` |
 | `#### [The One Who Stayed](stayed)` (four hashes) | It becomes a step of Marker Zero, and the answer starts nothing. A line in `mast.runtime.log` | `outcome-quest-path` |

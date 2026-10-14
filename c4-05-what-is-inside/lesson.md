@@ -345,6 +345,7 @@ end of the line lint prints.
 |---|---|---|
 | `Item: canistr` (the key misspelled) | Something is drawn at The Cache, named `canistr`. A ship cannot take it | `relic-unknown-item` |
 | `Item: canister, stone_bowl` (two things on one line) | The same: one thing with that whole line for a name | `relic-unknown-item` |
+| No Items section at all | Something is drawn at each place. A ship sitting on it takes nothing | `relic-unknown-item`, once for each `Item:` line |
 | `Qty: 3` with no `Item:` line | Nothing is there | `relic-qty-without-item` |
 | `#### [Survey Canister](canister)` (four hashes) | It works, and a line in `mast.runtime.log` says the heading has too many hashes | `heading-level-jump` |
 | `## Items` (no brackets and no key) | Both things are drawn and neither can be taken. No word is sent. Two lines in `mast.runtime.log` | `unknown-field`, twice |
@@ -366,12 +367,11 @@ end of the line lint prints.
 
 ### What lint cannot see
 
-Lint says `clean` for everything in this table. Check the first four by eye every time.
+Lint says `clean` for everything in this table. Check the first three by eye every time.
 
 | You wrote | What happens | What tells you |
 |---|---|---|
 | No `Art:` line on an item, or `Art: unknown`, or a misspelled key such as `container_smal_1a` | The thing is drawn, and a ship sitting on it takes nothing | Nothing |
-| No Items section at all | The same, for every `Item:` in the file | Nothing |
 | `Done when: collect 3 canister`, with one cache | The ship takes the cache. The hold has three. The quest has counted one of three, and never finishes | Nothing |
 | `Roles: niche, relic_piece` and no `Item:` line | Nothing is in the niche. The Bowl never finishes | Nothing |
 | `Done when: collect canisters` (the plural) | Never finishes. The word has to be the key, letter for letter | Nothing |

@@ -231,6 +231,7 @@ the line lint prints.
 | No colon after `Chamber` | The same as a missing room | `fence-syntax`, an error |
 | The closing `---` left off a room | That room is missing | `unclosed-data-fence`, an error |
 | `## [Old Places](places)` for the section | No ruin at all | `section-not-loaded` |
+| A `#` typed in front of the `relics_spawn` line in `story.mast` | No ruin at all | `section-not-loaded`, about your Relics section |
 | The section heading left out, or written with three hashes | No ruin at all. The rooms are read as scans | `relic-outside-section` |
 
 A missing room that another room has a passage to is a passage to nowhere, and that means
@@ -258,7 +259,6 @@ Lint says `clean` for these, and they are still wrong:
 | No `Loc:` line at all | The ruin is built around the station | A line in `mast.runtime.log` |
 | A radius of `90000` | A room bigger than the whole map | Nothing |
 | `Passage to: mouth, 350` (a comma) | The number is not read. The tunnel is 400 across, not 700 | Nothing |
-| A `#` typed in front of the `relics_spawn` line in `story.mast` | No ruin at all | Nothing |
 
 So check those by eye.
 
@@ -290,12 +290,11 @@ is spaced well apart: from inside, a room looks like a field of rocks, not like 
 |---|---|
 | The panel says `No relic in this file.` | `mission.amd` was not the tab in front when you opened the panel, or the ruin has no `Loc:` line |
 | The plan is right and the game has no marker | Lint has a warning you have not fixed. Open `mast.runtime.log` in the mission folder: it says why the ruin was not built |
-| Still no marker, lint is clean, and the log is empty | Line 62 of `story.mast` has a `#` in front of it |
 | No station, no hulk, no ship | `story.mast` does not compile. Lint names the line under `story.mast (compile)`. Line 62 starts with four spaces, not three and not a tab |
 | Rooms are missing in the game | A room has two or four hashes, or no `Relic:` line, or a misspelled `Relic:` key. Lint names each one |
 | The ruin is wrapped around the station | No `Loc:` line, or it has two numbers |
 | Lint says `solves into 2 separate pieces` | A room is not joined to the rest. Look for the room with no passage |
-| Lint says `section-not-loaded` about your Relics section | Line 62 of `story.mast` is gone. If your `story.mast` never had such a line, the mission was made with an older copy of the tool: type `sbs update`, and make the mission again |
+| Lint says `section-not-loaded` about your Relics section | Line 62 of `story.mast` is gone, or has a `#` in front of it. If your `story.mast` never had such a line, the mission was made with an older copy of the tool: type `sbs update`, and make the mission again |
 
 ## Exercise
 

@@ -427,15 +427,8 @@ Somebody cut marks into the rim of the altar, in sets of five. Find out what the
 | `Done when: signal count_matched` | The word your answer **Log it** already sends at the cairn |
 | `Reward: 80 credits` | Paid to the ship, as a personal story's reward always is |
 
-Run lint. It has one thing to say:
-
-```
-  [WARNING] line 524:5: nothing in this mission hands out `Side Stories`, so nobody gets the quests in it. Give it to the visit: `boarding_visit(..., stories=amd_section(MISSION_DOC, "side_stories"))` (stories-not-handed-out)
-```
-
-**For a ruin, that warning is wrong.** The line it suggests is for a boarding party, in
-Class 3. A ruin's own Side Stories are handed out by the game itself. Leave the warning,
-and do not paste the line.
+Run lint. It says `clean`. A ruin's own Side Stories are handed out by the game itself,
+so there is no card to paste.
 
 This is what the stand-in did, with the Comms officer as the one who suits up at The
 Hollow:

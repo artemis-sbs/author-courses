@@ -178,9 +178,9 @@ starts nothing: the quest only sits on offer.
 Those are the very words that finish **Close Inspection**. So the call arrives at the same
 moment the crew is told that step is done.
 
-Why not `Then: reveal`, as in Lecture 9? Because a quest has one `Then:` line, and Close
-Inspection has spent its own on Find the Lifeboat. A beat with a `Starts when:` of its own
-needs nothing from any other record.
+Why not `Then: reveal`, as in Lecture 9? Close Inspection's `Then:` line is already at
+work, on Find the Lifeboat. A beat with a `Starts when:` of its own needs nothing from
+any other record, so that fence stays as it is.
 
 Save. Run lint: `clean`.
 

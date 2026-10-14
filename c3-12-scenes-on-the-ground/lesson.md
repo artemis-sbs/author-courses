@@ -126,6 +126,9 @@ Marrow's apprentice, home, with a mug in both hands.
 signal `pim_went_home` is sent, or until a scene names her key with `summon`. Nothing in
 this mission sends that signal. The name is only there to keep her hidden.
 
+Lint knows it. Run it now and it adds a second warning, `ground-signal-unsent`: she
+`stays hidden for good`. That is true until Step 4 writes the answer that summons her.
+
 Her name on screen is Pim, the same as the first record. Her key is different. Keys are
 what the file joins with.
 
@@ -148,6 +151,9 @@ A medical kit wedged under the rock, where the dust would not find it.
 
 A `medkit` is the one item the game knows what to do with. In the handheld's **Pack** app
 it has a **Use medkit** button.
+
+Lint says of the stash what it said of Pim, and for the same reason: no answer reveals it
+yet.
 
 ## Step 4 - Pim's scene
 
@@ -207,7 +213,7 @@ Find the two rooms you wrote for Pim in Lecture 11, at the end of the file: **Pi
 ```
 
 Save and run lint. It says `clean`: the quest from Step 1 now has an answer that names
-it.
+it, and the two hidden records each have an answer that shows them.
 
 Take the new lines one at a time. Each was played for this page.
 
@@ -363,25 +369,18 @@ after it would never be read.
 Put `fails` only where the story is truly over. `fails pim_tablet` is safe anywhere,
 because that quest has no `Lose:`.
 
-## Step 9 - One word lint does not know
+## Step 9 - One more outcome
 
 There is one more outcome: `discover`, and an area's key. It tells the ship an area is
-there, as if somebody had walked into it. It goes with `known: no` from Lecture 9. Your
-cistern has `beam: no` as well, so the transporter still could not reach it. Here it
-would only add the stairs to the Look app's list of ways out.
+there, as if somebody had walked into it. It goes with `known: no` from Lecture 9.
 
-It is not in your mission, for one reason. Tried for this page, with `known: no` on the
-cistern and `; discover cistern` on Pim's answer about the spare cell, it worked: before
-the answer the party knew of the yard only, and after it of the yard and the cistern.
-But lint does not know the word:
+It is not in your mission, because here it would do very little. Your cistern has
+`beam: no` as well, so the transporter still could not reach it. The word would only add
+the stairs to the Look app's list of ways out.
 
-```
-== mission.amd ==
-  [WARNING] line 584: `discover` is not an outcome verb, so nothing applies it - the choice does everything except this. Known: accepts, calm, check, completes, dismiss, earns, fails, give, learn, open, reveal, rouse, signal, summon, take. (unknown-outcome-verb)
-```
-
-That warning is wrong, and it will be fixed. Until it is, a mission that uses `discover`
-cannot lint clean, and a mission that does not lint clean hides its real mistakes.
+It was tried for this page all the same, with `; discover cistern` on Pim's answer about
+the spare cell. Before the answer the party knew of the yard only, and after it of the
+yard and the cistern. Lint said `clean`.
 
 ## Step 10 - Check it
 
@@ -393,35 +392,35 @@ Each row was tried on the finished files, one change at a time.
 | `if spare`, with no `learned` | `guard-names-a-fact`: on its own that is read as a job |
 | `; accepts pim_tablt` | `outcome-quest-missing` |
 | The quest left at `Starts when: at once` | `outcome-accepts-running` |
-| Three outcomes with no commas | `outcome-run-together`: only the first one happens |
+| Three outcomes with no commas | `outcome-run-together`, and `pack-item-shape`: `the game skips this whole answer`. Pressed, nothing is taken, finished or given, and the scene moves on |
 | `gives fuse` | `unknown-outcome-verb` |
 | `; if party pump_key`, the condition after the `;` | `unknown-outcome-verb`, about `if` |
 | `if holding fuse >= 2 and engineering` | `guard-joined` and `unreadable-guard`. A choice has one condition |
+| `if holding tablt` | `item-nothing-gives`: nothing in the mission gives anybody a `tablt`. It lists what is given. The choice is offered to nobody |
+| `; dismiss pim, summon pim_yrd` | `ground-verb-target`: nobody has the key `pim_yrd`. Pim leaves the gully and never arrives. She is gone from the game |
+| `; dismiss pimm, summon pim_yard` | `ground-verb-target`. She arrives by the tent and is still in the gully: two of her |
+| `summon` left off altogether | `ground-signal-unsent`, on the second Pim: she `stays hidden for good`. Pim is gone from the game |
+| `; calm sentri` | `ground-verb-target`. The sentry goes on attacking. It shot the crew member at the terminal |
+| `; open dor` | `ground-verb-target`. The relay door stays shut |
+| `; reveal stsh` | `ground-verb-target`, and `ground-signal-unsent` on the stash. It stays hidden |
 
 ### What lint cannot see
 
-Lint does not check the name after a NEW word against anything. All of these lint clean.
+Lint checks the key after a NEW word against your records, and an item against what the
+mission gives. It does not count what is in a pack. All of these lint clean.
 
 | The mistake | What happens |
 |---|---|
-| `if holding tablt` | The choice is offered to nobody, and nothing says so |
-| `if tablet`, with no `holding` | The same. On its own the word is read as a job |
+| `if tablet`, with no `holding` | The choice is offered to nobody. On its own the word is read as a job |
 | `if holding fuse >= 2 ; take fuse 3` | Offered with two fuses. Pressed, it does nothing at all |
 | `if party fuse >= 3 ; take fuse 3` | Offered when the party has three between them. Pressed by somebody carrying two, it does nothing |
 | `%{holding fuse >= 3}` on a line | The line is never shown |
-| `; dismiss pim, summon pim_yrd` | Pim leaves the gully and never arrives. She is gone from the game |
-| `; dismiss pimm, summon pim_yard` | She arrives by the tent and is still in the gully: two of her |
-| `summon` left off altogether | The same as the first: she is gone |
-| `; calm sentri` | The sentry goes on attacking. It shot the crew member at the terminal |
-| `; open dor` | The relay door stays shut |
-| `; reveal stsh` | The stash stays hidden |
 | `; fails arrive`, a quest with no `Lose:` | The game goes on |
 | The `Lose:` line deleted from **Relight Kesh Relay** | The quest is failed and the game goes on, with no way left to win it |
 | `; if party pump_key`, the condition after the `;` | Lint does warn. In the game the choice is offered to everybody, key or no key |
-| Three outcomes with no commas | Lint does warn. Pressed, the answer does nothing, and the game logs an error |
 
-So check the names by hand. For every NEW word in your file, put a finger on the record
-its name points at.
+So check the packs by hand. For every `take` in your file, read the condition in front
+of it: it should say `holding`, and ask for at least as many.
 
 ## Step 11 - Play it
 
@@ -452,8 +451,8 @@ Then play it once more and lose it, with the crowbar.
 |---|---|---|
 | A choice with `if holding` is not offered | Somebody else is carrying it | Use **Give to** in the Pack app, or have that person answer |
 | A choice for a job is offered to somebody else, marked `(covering for medical)`, while the medic is on the ground | Covering is worked out for each scene, from who is standing in it. The medic was across the yard | Nothing to fix. If only a medic should do it, write `if skill medical >= 3`: nobody covers for a skill |
-| Pim does not turn up by the tent | The key after `summon` does not match the second record's key | Lint cannot see it. Compare the two |
-| The pump runs and the sluice stays shut | The signal's name differs between the room and the prop | Lecture 10, "What lint cannot see" |
+| Pim does not turn up by the tent | The key after `summon` does not match the second record's key | Run lint: `ground-verb-target` |
+| The pump runs and the sluice stays shut | The signal's name differs between the room and the prop | Run lint: `ground-signal-unsent` |
 
 ## Exercise
 

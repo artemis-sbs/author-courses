@@ -21,9 +21,9 @@
 >   `For:` story in the ruin's own Side Stories section is handed to the crew member who
 >   suits up, starts at once and finishes on its signal (fixed in the library after the
 >   first version of this lecture; re-measured 2026-10-10 on sbs_utils `ae05dac7`). The
->   page has it as "One more thing", after the walk. Lint still says
->   `stories-not-handed-out` about it, wrongly, and the page says so. The capstone file,
->   the walk and its credits are unchanged.
+>   page has it as "One more thing", after the walk. Lint is `clean` with it (the false
+>   warning about handing the section out is gone from the tool). The capstone file, the
+>   walk and its credits are unchanged.
 > - **The exosuit can close a client** the first time it appears (an engine fault,
 >   reported). Lecture 8's page has the one line that switches to a stock hull.
 
@@ -88,7 +88,7 @@ page.
 8. Every row of the two tables in Step 4: lint for all of them, and the mock for what the
    game does. (Lint, Mock.)
 9. "One more thing": a `## [Side Stories]` section with one `For: comms` story. Lint:
-   `stories-not-handed-out`, on line 524. In the game, with the Comms officer suiting up
+   `clean`. In the game, with the Comms officer suiting up
    at The Hollow: nobody holds the story before; it is on that crew member's list and
    running the moment they suit up; after **Log it** at the cairn it is done, the crew is
    told `Quest complete: The Tally`, and the ship has 80 more. (Lint, Mock.) With a Helm
@@ -108,8 +108,7 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 5. The end screen for this mission.
 
 > Keep off camera: the place's own marker in the Fire app at the niche (Lecture 8's note).
-> The `For:` story is optional on camera: if it is shown, show lint's warning and say it is
-> wrong for a ruin.
+> The `For:` story is optional on camera: if it is shown, show that lint is `clean`.
 
 Also capture the screenshot for the top of the page.
 
@@ -213,8 +212,8 @@ table "What this class has not given you".
 
 **Say:** "Here's one more thing before you go. || In Class three you wrote a story for
 one person. || A ruin can carry one too, in a section of its own, | and the game hands it
-to the crew member who suits up. ||| The page shows you one to type, | and it tells you
-about one lint warning that's wrong here. || Then it lists three things this class
+to the crew member who suits up. ||| The page shows you one to type, | and it needs no
+card at all. || Then it lists three things this class
 hasn't given you, | so you don't go looking for them. ||"
 
 ### 10. Your turn

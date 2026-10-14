@@ -291,6 +291,7 @@ it had made and what face each one holds.
 | A person's closing `---` left out | Makes her, with no description | `unclosed-data-fence`, an error |
 | A curly apostrophe or an accent in a name: `O'Ives` typed in a word processor, `Ives` with an accent on the e | Shows the plain letter in its place | `non-ascii` |
 | Line 48 of `story.mast` deleted | Makes nobody | `section-not-loaded` |
+| A `#` typed in front of line 48 of `story.mast` | Makes nobody | `section-not-loaded` |
 
 **What lint cannot see.** For every row of this table lint says `clean`.
 
@@ -313,7 +314,6 @@ it had made and what face each one holds.
 | `Loc: 0, 0, 0` on a person | Ignored. A person is not on the map |
 | `Color: #F80` on a person | Read, and used by nothing in a mission like yours |
 | `Roles: captain` on a person | She wears that role. Nothing in this class uses a person's role |
-| A `#` typed in front of line 48 of `story.mast` | Makes nobody |
 
 **These are fine.**
 

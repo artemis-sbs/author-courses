@@ -21,6 +21,14 @@
 > `Use medkit`), Tasks (own story, party quests, `Leads`), Beam, Scan and Fire; the
 > ship tablet's Boarding Party screen; the ship's quest rows; the Messages line from
 > `Report in`. Before and after each fix.
+>
+> **Re-measured the same day on tool `sbs` 0.14 and the library released with it**
+> (sbs_utils `ed811ecb`). Two things changed the lecture. The starter's marks are
+> place names now (`@post`, `@yard`, `@scrub`), and the game no longer shows a mark
+> that places something still hidden: on the hidden kit's cell the bar reads the
+> area's title. So the step that moved two hidden things from a mark to `At:` is gone,
+> and Step 2 teaches the rule. Lint now warns when an item's key is renamed in one
+> place and not another (`item-nothing-gives`).
 
 > **READ FROM SOURCE ONLY, NOT CAPTURED.** Look's limits (six in reach, four further
 > off) and Tasks' four leads; that a prop's scene takes in crew within two cells (seen
@@ -45,11 +53,14 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 
 1. Lint is `clean` after Steps 2, 3, 4, 5 and 6, warns `unfired-signal` twice after the
    two stories are typed, and is `clean` again after the two answers. (Lint.)
-2. The bar's third slot reads `pad` before Step 2 and `landing pad` after it; on the
-   hidden kit's cell it reads `cache` before and `Kesh Relay` after. (Mock, captured.)
+2. The bar's third slot reads `pad` before Step 2 and `landing pad` after it; in the
+   gully it reads `arrive` before and `gully mouth` after. On the hidden kit's cell it
+   reads `Kesh Relay` until Marrow has told of the kit, and `scrub` after. (Mock,
+   captured.)
 3. Look and Beam read `Go to Dry Gully` and `To Dry Gully` after Step 3. (Mock.)
 4. After Step 4 the pack reads `pump house key x1` and the door says `pump house key
-   fits`. With the door's line left stale, the key does not open it. (Mock.)
+   fits`. With the door's line left stale, the key does not open it, and lint says
+   `item-nothing-gives`. (Mock, Lint.)
 5. Scan reads `no reading` for the tent before Step 5. (Mock.)
 6. Lt Ross's Tasks app has no story before Step 7 and `Find a Place to Set Down` after.
    Dr Hale, alone with Marrow, is offered the helm answer as covering. (Mock.)
@@ -68,7 +79,7 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 ### 1. Cold open
 
 **Screen:** The handheld on the ground, eight tiles. Then the bar, close: a name, two
-jobs, and the word `cache`.
+jobs, and the word `arrive`.
 
 **Say:** "For six lectures you've written records. || Your crew never sees a record. |||
 What they see is this handheld. | Eight apps, and every one of them is made of your words. || Some of
@@ -107,14 +118,16 @@ do, | ask for a skill instead. ||"
 
 ### 4. A mark is a word
 
-**Screen:** The bar reading `pad`. Then the doctor walked onto the scrub by the pad: the
-bar reads `cache`. Then `landing.tiles` in Text view: the two lines changed. Then the
-record: `At: 6, 8`.
+**Screen:** The bar reading `pad`. Then the doctor in the gully: the bar reads `arrive`.
+Then the three map files in Text view, the lines changed. Then the doctor on the scrub
+where the kit is hidden: the bar reads `Kesh Relay`.
 
 **Say:** "That third word on the bar is a mark from your map file. || Any mark somebody
-can stand on is a word on their screen. ||| So watch what happens here. || Nobody has
-asked about the medical kit yet. | And the map has just told her it's there. ||| So here are two rules. || Name a mark for the place, the way you'd say it. | Landing pad. Gully mouth.
-Foot of the stairs. || And stand a hidden thing on a cell, not on a mark. ||"
+can stand on is a word on their screen. ||| So watch what happens in the gully. || The
+bar says arrive. | That was a name for you, not for her. ||| Name a mark for the place,
+the way you'd say it. | Landing pad. Gully mouth. Foot of the stairs. ||| One thing the
+game does for you. || A mark with something hidden on it isn't shown at all, | until the
+thing is found. || So the map never gives your secret away. ||"
 
 ### 5. Titles, and what the pack says
 
@@ -128,7 +141,7 @@ pick up. || The transcript says he picked up a toolbox. | The pack says two fuse
 the key is worse. | The heading says pump house key. | The pack and the door say pump
 key. || That's the item's key, with its underscore shown as a space. ||| So make the
 item's key the same words as the heading. || Three lines name it, | and all three change
-together. | Lint can't check that for you. ||"
+together. | Miss one, and lint tells you. ||"
 
 ### 6. Scan, and a title that is the whole task
 

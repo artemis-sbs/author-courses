@@ -13,7 +13,7 @@ legend:
   u: floor @to_gully
   f: floor @foot_of_the_stairs
   s: floor @sluice
-  c: floor
+  c: floor @crate
   g: water @gauge
 ---
 WWWWWWWWWWWWWWWWWW

@@ -198,16 +198,18 @@ today. || We come back to it when the crew can leave the ship. ||"
 **Screen:** Command prompt: `sbs lint MyRuin`, clean. Then three breaks, each undone.
 Change `reach altar 600` to `reach alter 600`, save, lint, read the warning. Change
 `Scene: altar_look` to `Scene: altar_lok`, save, lint, read the warning. Change
-`; reveal niche` to `; reveal nich`, save, lint: clean.
+`; reveal niche` to `; reveal nich`, save, lint, read the warning. Change it to
+`; reveal gallery`, save, lint: clean.
 
 **Say:** "So I run lint, and it's clean. || Now I break the role, | and lint tells me that
 nothing in the mission wears a role called alter. || That's good, because that call would
 never have come. ||| Next I break the scene on the place. | Lint tells me the Altar points
 at a scene that isn't there, | and that's how I check the half I can't play. ||| Now the
-word after reveal, and lint says clean. || Lint doesn't check that word, | and the game
+word after reveal. | Lint tells me nothing in the mission has that key, | so the answer
+would do nothing. || But if I put a room's key there, lint says clean, | and the game
 would say nothing either. | The answer would end the call, and the Niche would stay dark.
-|| So read two things yourself, every time: | the word after reveal, | and that there's a
-number after the role. ||"
+|| So read two things yourself, every time: | that the word after reveal is a place, |
+and that there's a number after the role. ||"
 
 ### 9. Play it
 

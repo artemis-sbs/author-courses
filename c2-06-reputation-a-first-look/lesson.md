@@ -434,29 +434,29 @@ side after `earns` is misspelled:
 | Mistake | What the game does | Lint says |
 |---|---|---|
 | `earns gild honest 30` (the side misspelled) | Keeps the 30 for a side that does not exist. Standing with the Guild stays at 0 | `earns-unknown-side`. It lists the sides you have |
-| `earns guild honset 30` (the trait misspelled) | Keeps the 30 under a trait no side values. Standing stays at 0 | `earns-unknown-trait`. It lists the fourteen traits |
+| `earns guild honset 30` (the trait misspelled) | Keeps the 30 under a trait no side values. Standing stays at 0 | `earns-unknown-trait`. It lists the words it knows |
 | `Reward: 150 credits earns guild honest 30` (no comma) | Pays the 150 credits. No deed | `earns-shape`: put a comma before `earns` |
 | `; completes report_in, earns guild generous` (no number) | The step completes. No deed from the answer | `earns-shape` |
 | `; completes report_in earns guild generous 30` (no comma) | The call ends, and Report to DS 1 stays running and unpaid. No deed. A line in `mast.runtime.log` | `outcome-quest-missing` and `outcome-run-together`. The second writes the line out with its comma |
 | `Value:` for `Values:` | The Guild values nothing in particular. See "no `Values:` line" in the next table | `unknown-field` |
+| `Side: gild` on Quill (the key misspelled) | She speaks for nobody. `standing` reads 0 whatever the crew has done: the cold line and one answer, for good | `dangling-side`. It lists the sides you have |
+| `Values: honset 40, generous 30` (a trait misspelled) | The Guild values a trait no deed can name. Both deeds give a standing of 12, where they should give 30 | `values-unknown-trait`. It lists the fourteen traits |
+| `Values: honest 40 generous 30` (no comma) | Standing never moves from 0 | `values-unknown-trait`: put a comma after each number |
+| `Values: honest, generous` (no numbers) | Standing never moves from 0 | `values-no-weight`, once for each trait |
 | `%{standing => 30}` (the sign backwards) | The line is never said. A ship at 30 opens the call and reads no words | `unreadable-guard`. It lists the signs: `>=` `<=` `==` `!=` `>` `<` |
 | `%{standing >= 0 and standing < 30}` (two comparisons) | The line is never said. A ship at 17 opens the call and reads no words | `unreadable-guard` and `guard-joined` |
+| `%standing >= 30 Artemis, the tug crews...` (no curly brackets) | No guard. Quill says the words `standing >= 30` out loud | `guard-no-braces`. It writes the guard out with its brackets |
 
 **What lint cannot see.** For every row of this table lint says `clean`.
 
 | You wrote | What happens |
 |---|---|
 | No `Side:` line on Quill | She speaks for nobody. `standing` reads 0 whatever the crew has done: the cold line and one answer, for good |
-| `Side: gild` on Quill (the key misspelled) | The same |
 | `Side: guild` typed in the fence of the scene, not on Quill's record | The same |
-| `Values: honset 40, generous 30` (a trait misspelled) | The Guild values a trait no deed can name. Both deeds give a standing of 12, where they should give 30 |
-| `Values: honest 40 generous 30` (no comma) | Standing never moves from 0 |
-| `Values: honest, generous` (no numbers) | Standing never moves from 0 |
 | No `Values:` line on the Guild | Standing is the plain average of whatever the ship has earned with the Guild. The plain answer gives 30, so every crew that reports gets the warm line and the berth |
 | `if standng >= 30` on the answer (a word misspelled) | The answer is never offered. A ship at 30 hears the warm line and sees one answer |
 | `%{standng >= 30}` on the line | The line is never said. A ship at 30 opens the call and reads no words, with both answers under them |
 | `if standing >= 300` | The answer is never offered. Standing stops at 100 |
-| `%standing >= 30 Artemis, the tug crews...` (no curly brackets) | No guard. Quill says the words `standing >= 30` out loud |
 | `% Artemis, the Guild yard is for members.` (the guard left off the cold line) | That line can always be said. A ship at 30 was told to hold outside the markers, and offered the berth under it |
 | `%{standing < 10}` and `%{standing >= 30}` (a gap) | A ship at 17 opens the call and reads no words |
 | `earns guild fearsome 30` (a trait the Guild does not value) | The score is kept, and standing does not move |

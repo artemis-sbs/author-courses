@@ -9,8 +9,8 @@
 > - **No MAST, and no new `Win:` or `Lose:`.** Both endings go through the starter's
 >   quest `relight`. The student writes one losing answer, and builds a second road to
 >   the starter's winning one.
-> - **`discover` is shown and not used.** It works in the game, and the installed lint
->   calls it an unknown word. The finished mission has to lint clean, so it is left out.
+> - **`discover` is shown and not used.** It works in the game and lints clean. It is
+>   left out because the cistern is `beam: no`, so here it would do very little.
 > - **This is the end of the taught part of the tile-map half.** After it the student has
 >   three linked areas, two locked doors, a terminal, three people, two hostiles, three
 >   facts, a quest that starts and ends on the ground, a win and two losses.
@@ -24,6 +24,12 @@
 > the crowbar to the loss. Then 26 one-change variants, each linted, and the ones lint
 > is silent about played. In the second play and the variants the stand-ins were put
 > beside things, and given items and facts, by the probe.
+>
+> **Re-measured the same day on tool `sbs` 0.14 and the library released with it**
+> (sbs_utils `ed811ecb`): lint knows `discover`; seven rows that lint was silent about
+> now draw `item-nothing-gives`, `ground-verb-target` or `ground-signal-unsent` and
+> moved to the first table; an answer with a malformed `take` is skipped whole and the
+> scene moves on.
 
 The companion page is `lesson.md`; the finished file is in `example\`.
 
@@ -38,8 +44,9 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 ## Confirm on camera
 
-1. Lint prints the `never-revealed` warning on the page after Steps 1, 2 and 3, and is
-   `clean` after Step 4 and for the rest of the lecture. (Lint.)
+1. Lint prints the `never-revealed` warning on the page after Step 1, adds one
+   `ground-signal-unsent` warning after Step 2 and another after Step 3, and is `clean`
+   after Step 4 and for the rest of the lecture. (Lint.)
 2. The long way round wins: the game ends with the starter's `Win:` sentence, and the
    side has 100 credits from Pim's Tablet. (Mock, by script.)
 3. The crowbar loses: the game ends with the starter's `Lose:` sentence. (Mock.)
@@ -130,16 +137,16 @@ still needs another one. ||| And Marrow gets one answer about the brass key. || 
 condition is party, | because nothing is taken, | and it doesn't matter who picked the key
 up. ||"
 
-### 7. The endings, and one word lint doesn't know
+### 7. The endings, and one more word
 
 **Screen:** The pump's `; fails relight`. Then the starter's beacon answer with `if
-holding power_cell`. Then Step 9's lint warning about `discover`.
+holding power_cell`. Then Step 9: `; discover cistern`, and lint clean.
 
 **Say:** "You wrote no Win line today, and no Lose line. || You didn't need to. | Both sit
 on the starter's quest. ||| Your crowbar fails that quest, | so it loses the game from two
 maps away. || And your spare cell is a power cell, | so the starter's own winning answer
-takes it. ||| One more word, discover, | tells the ship an area exists. || It works in the
-game. | But lint calls it unknown, | so it stays out of your mission for now. ||"
+takes it. ||| One more word, discover, | tells the ship an area exists. || It isn't in
+your mission, | because the ship can't beam into your cistern anyway. ||"
 
 ### 8. Play it, and your turn
 

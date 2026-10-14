@@ -335,28 +335,29 @@ Each row was tried on the finished files, one change at a time.
 | `Opens wiht:` | `unknown-field`: `Did you mean Opens with?` |
 | A prop typed under the People heading | `unknown-field`, once for each field a person does not have |
 | A mark the cistern's legend does not have | `tiles-unknown-mark`, as in Lecture 9 |
+| The key is `Item: pumphouse_key` and the door wants `key pump_key` | `item-nothing-gives`: `nothing in this mission gives anybody pump_key`. It lists what is given. In the game the key does not fit, and the door falls back on its other ways |
+| `Item: pump key`, with a space | The same warning, on the door. It is picked up as `pump key`, which no door asks for |
+| `Opens with: key brass_key`, and nothing in the mission gives a `brass_key` | `item-nothing-gives`. A door nothing opens: `needs brass key`, for ever |
+| `Opens with: kee pump_key` | `opens-with-shape`: `kee is not a way a door opens, so this is skipped`. In the game: `locked`, for ever |
+| `Opens with: key pump_key check engineering 8 cut`, with no commas | `opens-with-shape`: `everything from check on is thrown away`. Only the key is left |
+| `Opens with: check engineering`, with no number | `opens-with-shape`: `a check is a skill and a number`. In the game: `locked`, for ever |
+| `Opens with: signal cistern_draind` on the gate | `ground-signal-unsent`: nothing in the mission sends it. The lever is thrown, the cell appears, and the gate stays shut |
+| `Hidden until: cistern_draned` on the cell | `ground-signal-unsent`. The gate opens, and the cell never appears |
+| `Qty: two` | `not-a-number`: `Write it in figures`. The game reads it as 1, and says so once in `mast.runtime.log` |
 
 ### What lint cannot see
 
-Lint checks where a prop stands and what scene it names. It does not read `Opens with:`,
-`Item:`, `Needs:` or `Hidden until:`. All of these lint clean.
+Lint reads a door's `Opens with:` line, and it checks each key and each signal against
+the rest of the mission. It does not check a skill's name, the order of the ways in, or
+a `Needs:` line. All of these lint clean.
 
 | The mistake | What happens |
 |---|---|
-| The key is `Item: pumphouse_key` and the door wants `key pump_key` | The key does not fit. The door falls back on its other ways, if it has any |
-| `Opens with: key brass_key`, and nothing in the mission gives a `brass_key` | A door nothing opens. `needs brass key`, for ever |
 | `Blocks: yes` and no `Opens with:` line | Not a door at all: a wall with a door's picture. Clicking it shows the description |
-| `Opens with: kee pump_key` | `locked`, for ever. An unknown word is not a way in |
-| `Opens with: key pump_key check engineering 8 cut`, with no commas | Read as one term, the key. The check and the cut are gone |
-| `Opens with: check engineering`, with no number | `locked`, for ever |
 | `check enginering 8`, a skill nobody has | It still rolls, with a skill of 0. It opened on an 8 |
 | `Opens with: check engineering 8, key pump_key`, the check written first | A crew member holding the key rolled a 1 and the door stayed shut. The key was never tried |
 | A door with no `Blocks:` line | The crew walks through it while it is shut |
-| `Opens with: signal cistern_draind` on the gate | The lever is thrown, the cell appears, and the gate stays shut |
-| `Hidden until: cistern_draned` on the cell | The gate opens, and the cell never appears |
 | `Needs: enginering` | Nobody may use it: `You would need enginering for that.`, said to the engineer |
-| `Qty: two` | The worst one on this page. The game stops with an error as the map starts, and no ground is loaded at all. A number has to be figures |
-| `Item: pump key`, with a space | It is picked up as `pump key`, which no door asks for |
 | The gauge with no `Reach:` line | A click on it does nothing. Nobody can get near enough |
 | `Once: yse` | Lint does warn. In the game the notice opens every time |
 
@@ -364,8 +365,8 @@ Lint checks where a prop stands and what scene it names. It does not read `Opens
 their pack, the engineer got the scene. But the refusal reads your words back, `You would
 need holding fuse for that.`, so a job reads best.
 
-So check your doors with a pencil. For each door, write down each way it opens, and
-beside it where in the mission that key, that skill or that signal comes from.
+So check your doors with a pencil. For each door, write down each way it opens, in the
+order you wrote them, and beside each skill who in the party has it.
 
 ## Step 9 - Play it
 

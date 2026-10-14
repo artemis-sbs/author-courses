@@ -198,7 +198,7 @@ The only way into the relay house. Shut, and meant to stay that way.
 ### [Relay keycard](keycard)
 ---
 Area: landing
-Mark: keycard
+Mark: yard
 Sprite: prop:keycard
 Item: relay_keycard
 ---
@@ -209,7 +209,7 @@ A gray keycard on a lanyard, dropped where the sentry walks.
 ### [Medical kit](cache)
 ---
 Area: landing
-At: 6, 8
+Mark: scrub
 Sprite: prop:crate_medical
 Item: medkit
 Hidden until: cache_known
@@ -338,7 +338,7 @@ An iron gate across the walkway, wet to the top.
 ### [Spare power cell](spare_cell)
 ---
 Area: cistern
-At: 16, 2
+Mark: crate
 Sprite: prop:power_cell
 Item: power_cell
 Hidden until: cistern_drained
@@ -422,7 +422,7 @@ Marrow's apprentice, home, with a mug in both hands.
 ### [Relay sentry](sentry)
 ---
 Area: landing
-Mark: sentry
+Mark: post
 Sprite: fig:robot_war
 HP: 2
 Damage: 1

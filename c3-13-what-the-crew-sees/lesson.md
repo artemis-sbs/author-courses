@@ -169,18 +169,18 @@ The bar said `pad`. That is the mark `@pad` in `landing.tiles`. Any mark a crew 
 can stand on is a word on their bar, in the Crew app beside their name, and at the top
 of Scan. An underscore is shown as a space.
 
-Now stand Dr Hale on the cell where the medical kit is hidden, before anybody has asked
-Marrow about it:
+Now walk Dr Hale across your three maps, and read the bar on four more marks:
 
 ```
-Dr Ines Hale | medical, science | cache
+Dr Ines Hale | medical, science | post
+Dr Ines Hale | medical, science | yard
+Dr Ines Hale | medical, science | arrive
+Dr Ines Hale | medical, science | foot
 ```
 
-The map just told her something is buried there. You named that mark for yourself in
-Lecture 7's file, and it has been on screen ever since. The same walk through your other
-maps gives `arrive`, `foot` and `crate`.
-
-Two rules.
+`post` and `yard` came with the starter, and they are places. `arrive` and `foot` are
+yours, from Lectures 8 and 9. You typed them as names for yourself, and they have been
+on screen ever since.
 
 **Name a mark for the place, the way you would say it.** Open `ground\landing.tiles`
 (press **Text** in the editor). Change two lines:
@@ -220,40 +220,26 @@ The gully names that last mark too, as the place its stairs come out. In
   to_cistern: cistern @foot_of_the_stairs
 ```
 
-**Stand a hidden thing on a cell, not on a mark.** In `landing.tiles`, take the mark off
-the `h` line:
-
-```
-  h: scrub
-```
-
-and in `mission.amd`, in the **Medical kit** record, change `Mark: cache` to the cell:
-
-```
-At: 6, 8
-```
-
-Do the same for the spare cell. In `cistern.tiles`:
-
-```
-  c: floor
-```
-
-and in the **Spare power cell** record, change `Mark: crate` to:
-
-```
-At: 16, 2
-```
-
-Save all four files and run lint. It says `clean`. Played again, the bar reads:
+Save the three files and run lint. It says `clean`. Played again, the bar reads:
 
 ```
 Dr Ines Hale | medical, science | landing pad
 Dr Ines Hale | medical, science | gully mouth
 ```
 
-and on the hidden kit's cell it says only `Kesh Relay`. A cell with no mark shows the
-area's title.
+**A mark never gives a hidden thing away.** Two of your marks have something hidden on
+them: `@scrub`, where the medical kit lies until Marrow speaks of it, and `@crate`,
+where the spare cell waits for the tank to drain. The game does not show a mark like
+that. This is Dr Hale standing on the kit's cell before anybody has asked Marrow:
+
+```
+Dr Ines Hale | medical, science | Kesh Relay
+```
+
+The area's title, and nothing more. A cell with no mark at all reads the same way. Once
+Marrow has told of the kit, the same cell reads `scrub`. So you may put a hidden thing
+on a mark. Name the mark for the place all the same, because it is on the bar from the
+moment the thing is found.
 
 Marks under a thing that blocks, like `door` and `tent`, are never stood on. Leave them.
 
@@ -369,8 +355,8 @@ pump house key fits
 relay keycard fits
 ```
 
-Lint cannot help you with this step. Step 10 shows what happens when one of the three
-lines is missed.
+Miss one of the three lines and lint tells you: nothing in the mission gives the old
+key any more. Step 10 has the warning.
 
 ## Step 5 - Scenery still gets scanned
 
@@ -607,42 +593,46 @@ Each row was tried on the finished files, one change at a time.
 | The mistake | What lint says |
 |---|---|
 | The mark renamed in the legend, `entry:` left as it was | `tiles-entry`, an error |
-| The mark taken off the legend, the record still says `Mark: cache` | `tiles-unknown-mark`: it is never placed |
+| The mark renamed in the legend, the record still says `Mark: scrub` | `tiles-unknown-mark`: it is never placed |
 | The mark renamed in the cistern, the gully's `exits:` line left | `tiles-exit` |
 | `Scann:` for `Scan:` | `unknown-field`. It guesses `Scan` |
 | `For: helmsman` | `for-nobody`. It lists every word that would work |
 | The answer sends `strip_fond` | `unfired-signal` on the story, `signal-no-route` on the answer |
+| The item renamed on the pickup, and the door still says `key pump_key` | `item-nothing-gives`, on the door. In the game the key does not open it: the door goes straight to its skill check, and says nothing about a key |
+| The item renamed on the pickup, and Marrow's line still says `if party pump_key` | `item-nothing-gives`, on the choice. `Show him the brass key` is offered to nobody |
+| `Item: pump house key`, with spaces | `item-nothing-gives`, on the door and on Marrow's line. The pack shows `pump house key x1`, and it opens nothing |
 
-Three of those, as lint printed them:
+Four of those, as lint printed them:
 
 ```
   [ERROR] line 12:8: entry 'pad' is neither a mark on this map nor x, y (tiles-entry)
 ```
 
 ```
-  [WARNING] line 212:7: cache: no mark 'cache' in landing - it is never placed (tiles-unknown-mark)
+  [WARNING] line 212:7: cache: no mark 'scrub' in landing - it is never placed (tiles-unknown-mark)
 ```
 
 ```
   [WARNING] line 22:3: exit to_cistern arrives at @foot, which is not a mark in cistern (tiles-exit)
 ```
 
+```
+  [WARNING] line 285: `Opens with: key pump_key` - nothing in this mission gives anybody `pump_key`: no pickup has `Item: pump_key`, nobody `Drops:` one and no answer says `; give pump_key`. So this door never opens with a key. Check the spelling against the `Item:` line of the thing you mean. Given in this mission: fuse, medkit, power_cell, pump_house_key, relay_keycard, tablet (item-nothing-gives)
+```
+
 ### What lint cannot see
 
-All of these lint `clean`. The first three were played.
+None of these is a mistake lint could know about. They are choices of words.
 
-| The mistake | What happens |
+| The words | What the crew reads |
 |---|---|
-| The item renamed on the pickup, and the door still says `key pump_key` | The key does not open the door. The door goes straight to its skill check, and says nothing about a key |
-| The item renamed on the pickup, and Marrow's line still says `if party pump_key` | `Show him the brass key` is offered to nobody |
-| `Item: pump house key`, with spaces | The pack shows `pump house key x1`, and it opens nothing and is asked for by nothing |
-| A mark name that gives a secret away | It is on the bar of anybody who stands there |
+| A mark named for yourself | `arrive`, on the bar of anybody who stands there |
 | A title that starts with `The` | `Go to The Dry Gully` |
 | A pickup named for its box | `picked up Toolbox.` |
 | A choice too long to read at a glance | Nobody has measured what fits |
 
-So after any rename, search the file for the old word. In VS Code, Ctrl+F, type the old
-key, and look at every line it finds.
+After any rename, run lint, and then search the file for the old word. In VS Code,
+Ctrl+F, type the old key, and look at every line it finds.
 
 ## Step 11 - Play it
 
@@ -669,20 +659,20 @@ Write down every word that makes you wince. That list is your exercise.
 |---|---|---|
 | Lint says `tiles-entry` | You renamed a mark and not the `entry:` line above it | Make the two match |
 | Lint says `tiles-exit` | The gully's `exits:` line still names the old mark in the cistern | Step 2 |
-| The brass key no longer opens the pump house | The door's `Opens with:` still has the old item key | Step 4. Lint cannot see it |
+| The brass key no longer opens the pump house | The door's `Opens with:` still has the old item key | Step 4. Lint says `item-nothing-gives` |
 | A story is `Done` and its owner never touched it | Somebody else took the answer as covering | Step 7. Use `if skill` if only one person may |
 
 ## Exercise
 
-1. The marks `sentry` and `keycard` in `landing.tiles` can both be stood on. Stand on
-   each in the game and read the bar. Fix them the way you fixed `cache`.
+1. Stand on the cell where the medical kit is hidden, before and after you ask Marrow
+   about it. Read the bar both times.
 2. Read every prop heading in your file after the word `Use`, and after the words
    `picked up`. Change the ones that jar.
 3. Read every `Scan:` line. Each should tell the crew something they could not see.
    Rewrite two.
 4. Find your three longest choices. Can each lose five words and keep its meaning?
-5. Break it and read lint: `entry: pad`; `Mark: cache`; `Item: pump_key` on the key
-   only. Which one does lint miss?
+5. Break it and read lint: `entry: pad`; the mark on the `h` line renamed; `Item:
+   pump_key` on the key only. Lint has a different thing to say about each.
 
 Then answer on paper, from the file alone:
 
@@ -695,7 +685,7 @@ Then answer on paper, from the file alone:
 You are done when all five are true:
 
 - `sbs lint MyAway` says `clean`.
-- No mark that can be stood on gives a secret away.
+- Every mark that can be stood on is named for its place.
 - The pack, the door and the heading use the same words for each key.
 - Every crew member on your roster has a story or an answer of their own.
 - You can say which of your words each of the eight apps shows.

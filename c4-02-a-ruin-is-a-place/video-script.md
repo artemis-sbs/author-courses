@@ -21,9 +21,9 @@
 > that asks the library what it built (the rooms and passages, the wall objects, the name
 > on the map). Every line of tool output printed on the page is a line a run printed
 > (`verify_page.py` in the harness folder). Since the first version: the table has the
-> code lint prints; a passage with a comma before its number, and a `#` in front of the
-> `relics_spawn` line, are new rows under "What lint cannot see"; a long dash is read as a
-> minus by the game.
+> code lint prints; a passage with a comma before its number is a new row under "What lint
+> cannot see"; a `#` in front of the `relics_spawn` line is a row of the Step 7 table (lint
+> names it now: `section-not-loaded`); a long dash is read as a minus by the game.
 
 > **SEEN IN THE REAL ENGINE, 2026-10-03** (on the first version of these files; the ruin's
 > five records have not changed), one screenshot each, with the ship parked in The Mouth

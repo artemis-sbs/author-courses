@@ -9,7 +9,7 @@
 >   game is started with `sbs run server,helm,comms -m MyMission map=0`.
 > - **`example\` holds the one file that differs from that start:** `mission.amd`.
 > - **What changed from the first version of this lecture.** The class now chains, so
->   Close Inspection is a step of the arc Salvage Run, and its one `Then:` line is spent on
+>   Close Inspection is a step of the arc Salvage Run, and its `Then:` line is spent on
 >   Find the Lifeboat. The beat that places the call therefore starts on a trigger of its
 >   own, `Starts when: reach derelict 500`, in place of `Starts when: revealed` and a
 >   `Then: reveal` on the quest. Three ways were tried in the mock: this one; `Action:`

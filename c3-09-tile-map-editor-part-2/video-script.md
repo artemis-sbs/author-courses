@@ -20,6 +20,11 @@
 > and back, with the Beam app's list read at each stop. Then 31 one-change variants,
 > each linted, and the ones lint is silent about played. No engine, no window, no VS
 > Code.
+>
+> **Re-measured the same day on tool `sbs` 0.14 and the library released with it**
+> (sbs_utils `ed811ecb`): lint now warns about an `exits:` line with no `@` and about a
+> `Patrol:` split by commas. Those two rows moved to the first table. The legend of
+> `landing.tiles` has the starter's new mark names (`@post`, `@yard`, `@scrub`).
 
 The companion page is `lesson.md`; the finished files are in `example\`.
 

@@ -229,9 +229,9 @@ legend:
   T: dust @terminal
   k: dust @caretaker
   t: dust @tent
-  s: dust @sentry
-  c: dust @keycard
-  h: scrub @cache
+  s: dust @post
+  c: dust @yard
+  h: scrub @scrub
 ```
 
 The last nine lines have something extra: `@` and a name. That is a **mark**. Every cell
@@ -310,7 +310,7 @@ A prop:
 ### [Relay keycard](keycard)
 ---
 Area: landing
-Mark: keycard
+Mark: yard
 Sprite: prop:keycard
 Item: relay_key
 ---
@@ -320,7 +320,7 @@ A gray keycard on a lanyard, dropped where the sentry walks.
 | Field | Means |
 |---|---|
 | `Area: landing` | Which map it is on: the `area:` line of a `.tiles` file |
-| `Mark: keycard` | Where on that map: a mark from that file's legend |
+| `Mark: yard` | Where on that map: a mark from that file's legend |
 | `Sprite: prop:keycard` | Which picture it is drawn with |
 | `Item: relay_key` | Using it puts a `relay_key` in your pack |
 
@@ -517,7 +517,7 @@ Change one thing at a time, save, play, look, and put it back.
 
 1. In `landing.tiles`, change `entry: pad` to `entry: 9, 7`. Beam down. Where do you
    stand? An entry can be a mark or a cell.
-2. In `mission.amd`, find the keycard and change `Mark: keycard` to `Mark: pad`. Beam
+2. In `mission.amd`, find the keycard and change `Mark: yard` to `Mark: pad`. Beam
    down. Where is it now?
 3. In `mission.amd`, find the sentry and change `Notice: 4` to `Notice: 1`. Walk past it.
 

@@ -298,17 +298,18 @@ Then the room behind the hatch, at the end of your rooms:
 the door asks for three. The two facts that are not sure are spares: a lucky party, or one
 with a good scientist, gets through without one of the readings.
 
-A condition comes in three shapes, and no others.
+A condition comes in four shapes, and no others.
 
 | Shape | Example |
 |---|---|
 | A job | `if medical` |
 | A skill and a number | `if skill science >= 3` |
 | How many facts | `if learned >= 3` |
+| One fact, by its name | `if learned alive` |
 
-One condition to a choice. There is no `and`. There is no way to ask for one fact by its
-name. If a door should open only after one particular reading, put the door **inside the
-room that reading leads to**.
+One condition to a choice. There is no `and`. This scene counts its facts and never asks
+for one by its name. If a door should open only after one particular reading, ask for
+that fact, or put the door **inside the room that reading leads to**.
 
 ## Step 7 - Two endings
 
@@ -498,7 +499,7 @@ words in the last column are at the end of the line lint prints.
 | A side story with no reading that sends its signal | Leave the story running for good | `unfired-signal` |
 | `if medical and learned >= 2`, `if medical or engineering`, `if not medical` | Offer the choice to nobody. A condition is ONE name, and there is no `and`, `or` or `not` | `guard-joined` |
 | `if alive` (a fact by its name) | Offer the choice to nobody | `guard-names-a-fact` |
-| `if learned alive`, or `if learned 3` (no sign) | Offer the choice to nobody. `learned` only counts | `guard-learned-shape` |
+| `if learned 3` (no sign) | Offer the choice to nobody. A count needs its sign | `guard-learned-shape` |
 | `if hale`, or `if Dr Hale` (a person) | Offer the choice to nobody. A condition takes the job. Only `For:` takes a person | `guard-names-a-person` |
 | A `%` line broken onto a second line | Show the party one half of the sentence or the other | `line-wrapped` |
 | Both endings say `accepts` and the same key | Both endings start one quest. The other quest is never offered | `never-revealed`, on the quest nothing starts |
@@ -540,7 +541,7 @@ What to write for each of the conditions lint named in the first table:
 | `if medical and learned >= 2` | One condition. Put the reading in a room behind the door |
 | `if medical or engineering` | Two choices, one for each job |
 | `if not medical` | Leave the `if` off. Everyone is offered it |
-| `if alive`, or `if learned alive` (a fact by its name) | `if learned >=` and a number. Or put the door inside the reading's room |
+| `if alive` (a fact by its name) | `if learned alive`. Or count them: `if learned >=` and a number |
 | `if hale`, or `if Dr Hale` (a person) | `if medical` |
 | `if learned 3` (no sign) | `if learned >= 3` |
 
@@ -608,7 +609,7 @@ party gets.
 | No party forms when you reach the hulk | The arrival room's key is not the key on the card in `story.mast`. `mast.runtime.log` in your mission folder names the rooms it found |
 | The hatch never opens | Do Check 3. The number is higher than your sure facts, or two readings learn one name |
 | The hatch opens for a full crew and not for one person alone | One of the facts you counted as sure is behind `if skill`, a `check`, or a job word that is on nobody's `Roles:` line |
-| A choice is offered to nobody, and lint is clean | Its condition is not one of the three shapes in Step 6 |
+| A choice is offered to nobody, and lint is clean | Its condition is not one of the four shapes in Step 6 |
 | The party is in a room with no choices | Do Check 1 on that room |
 | Taking a choice ends the visit | Its key is misspelled, or the room it names is typed with four hashes. Lint warns about both |
 | An ending is chosen and no quest appears | The key after `accepts` is not the quest's key. Lint warns |

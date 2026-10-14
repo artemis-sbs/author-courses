@@ -55,7 +55,7 @@ In the editor: **+ Entry**, Kind `dust`, Mark `to_gully`, Character `>`, **OK**.
 Or in the text. Add the last line here to the end of the legend:
 
 ```
-  h: scrub @cache
+  h: scrub @scrub
   >: dust @to_gully
 ---
 ```
@@ -370,6 +370,7 @@ time.
 | `@to_landng` in the gully | `tiles-exit`: `@to_landng is named like an exit, but there is no area 'landng' (and no exits: line for it)` |
 | `to_cistern: cistrn @foot` | `tiles-exit`: `exit to_cistern leads to 'cistrn', which is no area in this mission` |
 | `to_cistern: cistern @feet` | `tiles-exit`: `exit to_cistern arrives at @feet, which is not a mark in cistern` |
+| `to_cistern: cistern foot`, with no `@` | `tiles-exit`: `arrives at 'foot', which is neither @ and a mark's name nor x, y - so it is ignored`. In the game they arrive beside the way back, as if the block were not there |
 | The exit's legend line says `rock` | `tiles-exit`: `exit @to_landing is on ground nobody can walk onto` |
 | An exit in the legend that is drawn nowhere | `tiles-mark-unplaced`. This is all lint says when an area cannot be reached |
 | The `water` line missing from the tileset | `tiles-unknown-kind`, an error, in `cistern.tiles` |
@@ -381,6 +382,7 @@ time.
 | `At: 5, 28`, the two numbers the wrong way round | `tiles-off-map`, when you are lucky. If both numbers fit on the map, lint is silent and the thing stands somewhere else |
 | A patrol cell off the map | `tiles-off-map` |
 | A patrol cell on rock | `tiles-unwalkable`: `sentry: Patrol 27, 12 is rock, which cannot be walked` |
+| `Patrol: 18 9, 27 9, 27 11, 18 11`, commas where the semicolons go | `patrol-shape`: it is read as one point, and the rest is ignored. In the game the sentry never moved. It stood at 18, 9 for as long as the test ran |
 | `Blocks: yse` | `unknown-enum-value` |
 
 A finding about a placement is printed under its own heading:
@@ -397,8 +399,6 @@ All of these lint clean.
 | The mistake | What happens |
 |---|---|
 | A prop with no `Area:` line, or with no `Mark:` and no `At:` | It is not placed. `mast.runtime.log` in the mission folder names it and says why: `'Trail sign' (sign) has no Area:, so it is nowhere.` |
-| `to_cistern: cistern foot`, with no `@` | The mark is not read. They arrive beside the way back, as if the block were not there |
-| `Patrol: 18 9, 27 9, 27 11, 18 11`, commas where the semicolons go | The sentry never moves. It stood at 18, 9 for as long as the test ran |
 | `At: 5, 28`, and lint did warn | It is placed all the same, off the edge of the map, where nobody can reach it |
 | A prop `At:` a cliff or a rock | Allowed, and lint is right to be silent: a prop may stand anywhere. Only people have to stand where they can walk |
 | Both `Mark:` and `At:` on one record | `Mark:` wins. The sign stood on the pad |
@@ -439,7 +439,7 @@ click on the water, and the clicks on the pump and the crate.
 | You walk onto the exit and nothing happens | You walked across it to somewhere else | Click the exit cell itself |
 | You walk onto the exit and nothing happens, and lint says `tiles-exit` | The mark's name does not end in an area's key | Check the name against the other file's `area:` line |
 | A thing is not on the map | Its `Area:` or `Mark:` names nothing, or it has no place at all. `mast.runtime.log` in the mission folder names it and says why | Read that file, then run lint |
-| The sentry stands still | A `Patrol:` cell it cannot reach | Lint says `tiles-unwalkable` |
+| The sentry stands still | A `Patrol:` cell it cannot reach, or commas where the semicolons go | Lint says `tiles-unwalkable`, or `patrol-shape` |
 | The cistern is solid black in the editor's **Kinds** view | The `water` line is missing from the tileset | Step 4 |
 
 ## Exercise

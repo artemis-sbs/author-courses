@@ -334,7 +334,7 @@ more block at the end, headed with that name:
 
 ```
 QuietLantern
-  ok  story.json  1 sbslib, 12 mastlib, 0 media
+  ok  story.json  1 sbslib, 13 mastlib, 0 media
   ok  libraries   all declared libraries present
   ok  art         0 baked, 0 not yet drawn, 0 half-baked in mission art
 ```

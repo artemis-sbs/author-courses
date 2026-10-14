@@ -370,6 +370,7 @@ end of the line lint prints.
 | `## [Scenes](scenes)` for the section | The call never comes, and no scene of yours is read | `section-not-loaded` |
 | `- [Play the rest.](rook_mor)` | That answer ends the call | `dangling-choice` |
 | `; reveals niche` | The answer ends the call and shows nothing | `unknown-outcome-verb` |
+| `; reveal nich`, or `; reveal The Niche` (the name) | The same. `reveal` wants the key of a place | `ground-verb-target` |
 | `() reveal niche` (no semicolon) | The same | `choice-tail-ignored` |
 | `; signal some_word` when no quest waits for that word | The word is sent and nothing happens | `signal-no-route` |
 | The beat written in the Relics section | The call never comes. The game takes the beat for a second ruin, and says so in `mast.runtime.log` | `relic-section-stray`: move it to Quests |
@@ -401,7 +402,7 @@ check by eye every time.
 | You wrote | What happens | What tells you |
 |---|---|---|
 | `Starts when: reach altar` (no number) | The game uses 5000. The call is waiting before the ship is inside the ruin | Nothing |
-| `; reveal nich`, `; reveal gallery` (a room), or `; reveal The Niche` (the name) | The answer ends the call and shows nothing. `reveal` wants the key of a place | Nothing |
+| `; reveal gallery` (the key of a room) | The answer ends the call and shows nothing. `reveal` wants the key of a place, not of a room | Nothing |
 | `reach altar 60` | The call comes only if the ship passes within 60 of the middle of the place. In practice, never | Nothing |
 | `Roles: steps` on the place and `reach steps 600` | The call never comes. The game drops the last `s` and looks for `step`. Use a role that does not end in `s` | Nothing |
 | The `Beat` line left out | The call never comes. Marker One is in the quest list, as a job on offer | The quest list |

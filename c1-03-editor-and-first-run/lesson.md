@@ -160,7 +160,7 @@ Command ran successfully.
 Created MyMission from 'amd' (7 files)
 
   artemis-sbs.sbs_utils.v1.4.0.sbslib
-  + 12 mastlib dependencies
+  + 13 mastlib dependencies
 
 Fetch these dependencies now? [Y/n]:
 ```
@@ -387,13 +387,13 @@ the game when a lecture says "play it".
 sbs debug MyMission --map 0
 ```
 
-It prints about twenty lines. Twelve of them start `[runner] mastlib:`, one for each
+It prints about twenty lines. Thirteen of them start `[runner] mastlib:`, one for each
 library. Among the rest:
 
 ```
 [runner] story: C:\Cosmos\data\missions\MyMission\story.mast
 [runner] running at 60 Hz  (MAST 5 Hz, physics 30 Hz background thread)
-EXTRA_SHIP_DATA is off, so no mod ship data is being loaded - hulls a mod adds will not exist, and a picker or race list filtered to them will come up empty. Set EXTRA_SHIP_DATA: true to enable it.
+lm_eva_ships: 1 hull(s) declare an interior but ship no silhouette sprite, e.g. 'lm_eva_suit' ...
 no @media/skybox labels are loaded at all - nothing will be set. Is the add-on that declares them in story.json, or excluded by a profile?
 [runner] auto-starting map: amd_sample
 ```
@@ -405,7 +405,7 @@ Three of its lines read like faults. None of them is one.
 
 | Line starts | What it means for you |
 |---|---|
-| `EXTRA_SHIP_DATA is off` | The mission uses the game's own ships and no others. Yours does |
+| `lm_eva_ships:` | A long line, cut short above, about the picture of one hull the library adds: a crew member's suit. Nothing of yours |
 | `no @media/skybox labels are loaded` | The sample mission does not choose a picture for the sky |
 | `Elapsed time:` | How long the first moment of the mission took. A note for programmers |
 

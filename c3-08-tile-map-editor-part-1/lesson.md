@@ -312,6 +312,9 @@ tried on the finished file, one change at a time.
 | `size: 24 by 12` | `tiles-syntax`, an error: `cannot read size '24 by 12'` |
 | A legend line with no spaces in front | `tiles-syntax`, and `tiles-unknown-char` for every cell drawn with it |
 | A legend key of two characters, `ar: dust` | `tiles-syntax`: `legend key must be one character` |
+| `area: landing`, the same key as the yard | `tiles-duplicate-area`: `Two files cannot be one area`. In the game only one of the two maps was loaded, and here it was the gully. The yard was gone, and none of the starter's seven props and people was placed |
+| A map row longer than `size:` says | `tiles-size-cut`: `everything past column 24 is cut off and is not in the game` |
+| `size: 20x10`, with a 24 by 12 map drawn under it | `tiles-size-cut`, once for the columns and once for the rows. The game cuts the map to 20 by 10 |
 
 An error means the area will not load at all. Fix the first one and run lint again.
 
@@ -330,9 +333,6 @@ All of these lint clean.
 
 | The mistake | What happens |
 |---|---|
-| `area: landing`, the same key as the yard | The worst one. Only one of the two maps is loaded, and here it was the gully. The yard was gone: the party beamed down into the gully, and none of the starter's seven props and people was placed. `mast.runtime.log` in the mission folder has a line for each |
-| A map row longer than `size:` says | The extra cells are cut off, and nothing says so |
-| `size: 20x10`, with a 24 by 12 map drawn under it | The map is cut to 20 by 10. The east side and the bottom two rows are gone |
 | A space in the middle of a row | A hole. That cell is `nothing`: black, and never walked |
 | No `entry:` line | Whoever beams in stands on the cell nearest the middle that can be walked. Here that was the doorway, at 12, 5 |
 | The file saved as `gully.tiles.txt` | The area does not exist. Nothing on the Beam app |

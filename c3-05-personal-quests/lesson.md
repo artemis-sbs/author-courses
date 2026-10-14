@@ -239,7 +239,7 @@ files: one change, lint, then the game.
 | `For: medcal`, `For: science`, `For: everyone`, or two jobs | Hand the story to nobody | `for-nobody`, with the words your roster does answer to |
 | No `For:` line, or `Fro: medical` | Hand the story to nobody | `story-no-for` (and `unknown-field` for `Fro`) |
 | `For medical` (no colon) | Hand the story to nobody | `fence-syntax`, an error, and `story-no-for` |
-| `For:` typed below the closing `---` | Hand the story to nobody | `field-below-fence` |
+| `For:` typed below the closing `---` | Hand the story to nobody | `field-below-fence`, and `story-no-for` |
 | No `Starts when:` line, or `Starts when: accepted` | Hand the story over asleep. Nothing wakes it | `for-not-started` |
 | No `Done when:` line | Leave the story running for good | `for-no-end` |
 | `Scope: shared` on a side story | Make it the ship's quest. Nobody gets it as their own | `for-shared` |

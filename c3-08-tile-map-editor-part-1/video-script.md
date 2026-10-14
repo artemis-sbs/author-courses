@@ -21,6 +21,10 @@
 > app's own button into the gully, three map clicks, and back. Then 27 one-change
 > variants, each linted, and the ones lint has nothing to say about played. No engine,
 > no window, no VS Code.
+>
+> **Re-measured the same day on tool `sbs` 0.14 and the library released with it**
+> (sbs_utils `ed811ecb`): lint now warns about two files with one `area:` and about a
+> map bigger than its `size:` line. Those three rows moved to the first table.
 
 The companion page is `lesson.md`; the finished file is in `example\ground\`.
 
@@ -142,10 +146,11 @@ undo. Type a small w into a wall; lint; undo. Then the second table on the page.
 
 **Say:** "Lint reads your maps along with everything else. || Misspell the entry line, |
 and it tells you the name is neither a mark nor a cell. || Type a letter that isn't in the
-legend, | and it tells you the whole area won't load. ||| But there are things it can't
-see. || Give two areas the same key, | and it says nothing at all. || Draw a row longer
-than the size line says, | and the extra cells are quietly cut off. || So compare your
-file with the page, one character at a time. ||"
+legend, | and it tells you the whole area won't load. ||| It warns you, too, | when two
+files claim the same area, || and when a row is longer than the size line says. ||| But
+there are things it can't see. || Leave a space in the middle of a row, | and that cell
+is a hole nobody can walk on. || So compare your file with the page, one character at a
+time. ||"
 
 ### 8. Play it, and your turn
 

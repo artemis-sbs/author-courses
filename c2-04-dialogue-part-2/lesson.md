@@ -422,7 +422,7 @@ offered.
 | `; accepts tag_hulk and completes ds1_calls`, or the two with nothing between them | Neither thing happens | `outcome-run-together`: it writes the line out with its comma |
 | `; completes study` (a step without its arc) | Nothing. `mast.runtime.log` says why | `outcome-quest-path`: it writes the path out for you |
 
-| `; reveal tag_hulk` | Nothing | `outcome-quest-verb`: `reveal` is what `Then:` says. From an answer, write `accepts` |
+| `; reveal tag_hulk` | Nothing | `never-revealed` on the quest, and `outcome-quest-verb`: `reveal` is what `Then:` says. From an answer, write `accepts` |
 | `; accepts tag_hulk if some_name >= 10` (the `if` after the `;`) | The answer is offered to everybody, and starts no job | `guard-after-outcome` |
 | `if some_name => 10` (the sign backwards) | The answer is never offered | `unreadable-guard` |
 | `; signal some_word` when nothing waits for that word | Nothing | `signal-no-route` |

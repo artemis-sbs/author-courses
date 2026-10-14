@@ -146,7 +146,8 @@ That is a chain. Finishing one step starts the next.
 Three rules for `Then: reveal`:
 
 1. Write the full address, `salvage/home`. Not `home` on its own.
-2. One `Then:` line per quest. A second one replaces the first.
+2. A quest can reveal more than one step: a second `Then:` line, or a comma between two
+   addresses on one line.
 3. Every `Starts when: revealed` step needs some other quest to reveal it.
 
 ## Step 4 - A step the crew can skip
@@ -374,9 +375,7 @@ another line.
 | `Then: reveal salvage/hmoe` (the step misspelled) | Bring the Log Home never appears, so the story cannot be finished | `dangling-reveal` |
 | `Then: reveal home` (the arc and the slash left off) | The same | `reveal-path`. Its sentence gives the line to write |
 | `Then: reveal Salvage/Home` (capitals), `salvage\home` (the other slash), or the step's name in place of its address | The same | `dangling-reveal` |
-| `Then: reveal salvage/home, salvage/quick` (two at once) | The same | `dangling-reveal`, about `salvage/home,` with its comma |
 | `Then: start salvage/home`, or `Then: reveals salvage/home` | The same | `unknown-then-verb` and `dangling-reveal`. The second one gives the line to write |
-| Two `Then:` lines in one fence | Only the lower one counts. With the right line on top, Bring the Log Home never appears | `repeated-then` |
 | The `Then:` line typed below the closing `---` | Bring the Log Home never appears | `field-below-fence` |
 | A space in front of the `Then:` line | The same | `field-indented` |
 | `Then reveal salvage/home` (no colon) | The same | `fence-syntax`, an error |
@@ -474,6 +473,8 @@ Three more checks to make by eye:
 | You wrote | Result |
 |---|---|
 | `Then: reveal salvage / home` (spaces round the slash) | Works |
+| `Then: reveal salvage/home, salvage/quick` (two at once, with a comma) | Works. Both are revealed |
+| Two `Then:` lines in one fence | Works. Both run, the upper one first |
 | `Then: Reveal salvage/home`, `Starts when: Revealed`, or `arc` in small letters | Works. Capitals do not matter in these words. They do matter in an address: `Salvage/Home` is not `salvage/home` |
 | `Required: yes`, or `Required: True` | Works |
 | `Done when: reach stations 1000` (the role as more than one) | Works |
@@ -533,7 +534,7 @@ up it pays its reward on top of these.
 | Lint says `unknown-trigger` on a `Fails when:` line | The time is not a whole number in digits and a unit |
 | Lint says `quest-never-finishes` | `When:` where `Done when:` was meant |
 | The game is won as soon as you reach the hulk | Only Close Inspection counts. Bring the Log Home has the wrong number of hashes, or sits below a different three-hash quest, or has lost its `Part of:` or `Required:` line to a misspelling |
-| Bring the Log Home never appears | `Then: reveal` does not say `salvage/home` exactly, or there are two `Then:` lines, or none, or the line is in another step's fence |
+| Bring the Log Home never appears | `Then: reveal` does not say `salvage/home` exactly, or there is no `Then:` line, or the line is in another step's fence |
 | Bring the Log Home is in the Quest Log from the start | Its `Starts when:` line says `at once`, not `revealed` |
 | Bring the Log Home appears and never finishes | `When:` where `Done when:` was meant, or the role after `reach` is misspelled |
 | You reach DS 1 and the game does not end | The `Win:` line is misspelled. Or Quick Work failed, and `Part of:` and `Required:` are on neither step, or on Quick Work as well |

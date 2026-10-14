@@ -265,7 +265,7 @@ Inspection's fence. Save. Lint: `clean`.
 looking for the line that reveals this step, and found none. || Now read to the end of the
 warning, | because it writes the line out for me, | and the line begins Then, reveal. ||
 That says, when Close Inspection finishes, start that one. || Notice it's the full address,
-arc, slash, step, | and not just the word home. || And a quest gets one Then line, no more.
+arc, slash, step, | and not just the word home. || One Then line is all this step needs.
 ||| So I add it, I save, and lint says clean. || That's a chain: you finish one, and the
 next begins. ||"
 

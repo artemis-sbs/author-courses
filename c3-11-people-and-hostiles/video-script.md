@@ -11,8 +11,9 @@
 >   the Hostiles sections the same way; `Calm: yes` is the difference.
 > - **Nobody is ever out of the game.** A party that is all down wakes at the area's
 >   entry eight seconds later with 1 HP each. For one person alone, down is all down.
-> - **A FULL shot destroys any prop**, the beacon included, and then the mission cannot
->   be won and nothing says so. Measured. The page warns in plain words; say it on camera.
+> - **A shot never takes a prop off the map**, and nobody calm is harmed by any setting.
+>   Measured. (An earlier library let a FULL shot destroy any prop; the page's warning
+>   about it is gone.)
 
 > **Measured 2026-10-10, in the mock.** Tool `sbs` as installed, library as packaged
 > (sbs_utils `ae05dac7`). The five steps were typed in order and linted at each one.
@@ -23,6 +24,11 @@
 > played. The stand-ins were put beside things by the probe to save the walk, and a
 > crew member's HP was taken away by the probe for the revive test. The shots went
 > through the Fire app's own arming call and a map click.
+>
+> **Re-measured the same day on tool `sbs` 0.14 and the library released with it**
+> (sbs_utils `ed811ecb`): every setting at the terminal, at Pim and at a crew member, and
+> a FULL shot at the beacon and at Old Marrow. `Talk scene:` naming no scene and
+> `HP: three` now draw a lint warning.
 
 The companion page is `lesson.md`; the finished files are in `example\`.
 
@@ -44,8 +50,9 @@ The companion page is `lesson.md`; the finished files are in `example\`.
    Sump is complete. (Mock, by script.)
 4. A strike tells the one hit: `Hit by Relay sentry - 2 of 3 left.`, then `1 of 3
    left.` (Mock, from the sentry.)
-5. A FULL shot at the yard terminal, and one at the beacon: each is gone from the map,
-   and the game does not end. (Mock.)
+5. Every setting at the yard terminal, and a FULL shot at the beacon: each is still on
+   the map, and the terminal still opens its scene. Every setting at Pim: nothing
+   happens to her. (Mock.)
 6. A medical kit used from the next cell: `Chief Okoro is back on their feet.`, with 2
    HP. Two crew down: still down five seconds later, both at 3, 1 with 1 HP ten seconds
    later. (Mock; the HP was taken by the probe.)
@@ -126,8 +133,8 @@ this story is about. ||"
 **Say:** "Every crew member carries a weapon, | and it's the Fire app on the handheld. ||
 Pick a setting and press Arm, | and the next click on the map is a shot. || One shot, and
 it's safe again. ||| Stun holds a hostile still. || Cut takes one point off it. || And
-full puts it down, | whatever it had left. || Full also destroys any thing it hits, the
-beacon included, | so keep it for what's attacking you. ||| The crew has three points
+full puts it down, | whatever it had left. || No shot takes a thing off the map, | and
+nobody calm is hurt by one. ||| The crew has three points
 each. || At nothing, you're down, | and you can't walk or act. ||| Somebody beside you
 with a medical kit can stand you up. || And if everybody is down, | the whole party wakes
 at the entry eight seconds later, | with one point each. ||| So nobody is ever out of the

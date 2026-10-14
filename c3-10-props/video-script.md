@@ -9,8 +9,9 @@
 >   `example\` holds those two.
 > - **No MAST at all.** `Opens with: signal` and `Hidden until:` are heard by the
 >   library itself. The signal is sent by an answer in a room.
-> - **Lint does not read a door.** `Opens with:`, `Item:`, `Needs:` and `Hidden until:`
->   are not checked against anything. The page says so, and gives a pencil check.
+> - **Lint reads a door.** A key nothing gives, a signal nothing sends and a malformed
+>   `Opens with:` line are all warned about. A skill's name, the order of the ways in
+>   and `Needs:` are not, and the page gives a pencil check for those.
 
 > **Measured 2026-10-10, in the mock.** Tool `sbs` as installed, library as packaged
 > (sbs_utils `ae05dac7`). The eight steps were typed in order and linted at each one.
@@ -19,6 +20,11 @@
 > lever, the cell. A door check was played with the die fixed, to pass and to fail. Then
 > 22 one-change variants, each linted, and the ones lint is silent about played with the
 > stand-in put beside the thing by the probe. No engine, no window.
+>
+> **Re-measured the same day on tool `sbs` 0.14 and the library released with it**
+> (sbs_utils `ed811ecb`): nine rows that lint was silent about now draw a warning
+> (`item-nothing-gives`, `opens-with-shape`, `ground-signal-unsent`, `not-a-number`) and
+> moved to the first table. `Qty: two` no longer stops the game: it is read as 1.
 
 The companion page is `lesson.md`; the finished files are in `example\`.
 
@@ -143,10 +149,10 @@ signal now. ||"
 **Screen:** The second table on the page. Then the game: the key, the door, the notice
 twice, the panel as the doctor and as the engineer, the lever, the gate.
 
-**Say:** "A warning before you play. || Lint doesn't read a door. || Misspell the key's
-name, or the signal's, | and it says clean, | and the door never opens. ||| So check doors
-with a pencil. | For each way a door opens, | write down where that key or that signal
-comes from. ||| Then play it with two consoles. || The doctor carries the key, | and the
-engineer opens the door. || The doctor can't work the panel, and the engineer can. ||| For
+**Say:** "A word before you play. || Lint reads a door now. || Misspell the key's name,
+or the signal's, | and it tells you nothing gives that key, | or nothing sends that
+signal. ||| What it can't check is the skill's name, | or the order you wrote the ways
+in. || So check those with a pencil. ||| Then play it with two consoles. || The doctor
+carries the key, | and the engineer opens the door. || The doctor can't work the panel, and the engineer can. ||| For
 the exercise, add a second key somewhere it can never be reached, | and say why that's a
 mistake. ||| Next time, somebody to talk to, | and something that bites. ||"

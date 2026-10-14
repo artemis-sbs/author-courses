@@ -80,7 +80,7 @@ from and means it was not run. "UNSEEN" means nobody has looked at it.
 6. `sbs run server,helm,science -m MyMission map=0 --dry-run`: the three lines. (Run.)
 7. `sbs debug MyMission --map 0`, with its page: the lines on the page, the line that
    starts `[runner] GUI server started` and ends `open http://localhost:8765/` (it has a
-   long dash in the middle), twelve `[runner] mastlib:` lines, then silence until it was
+   long dash in the middle), thirteen `[runner] mastlib:` lines, then silence until it was
    stopped. (Run. No browser was opened and no firewall window can be seen from a
    script: check on camera that none appears.) The page titled `SBS Remote GUI` was
    fetched by script in the pilot, on the developer install. What it LOOKS like is

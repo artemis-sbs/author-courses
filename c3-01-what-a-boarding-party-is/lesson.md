@@ -203,7 +203,7 @@ Save, and run lint. It has one thing to say:
 
 ```
 == mission.amd ==
-  [WARNING] line 63:5: nothing in this mission reads a section keyed `boarding`, so its records are never loaded. The story asks this file for: characters, dialogue, landmarks, quests, scans, sides. Change the key in round brackets to one of those, or add the line that reads it (section-not-loaded)
+  [WARNING] line 63:5: nothing in this mission reads a section keyed `boarding`, so its records are never loaded. The story asks this file for: characters, crew, dialogue, items, landmarks, quests, relics, scans, sides. Change the key in round brackets to one of those, or add the line that reads it (section-not-loaded)
 
 1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```

@@ -123,8 +123,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 
 > Keep off camera: `Lens:` and `Move:` on a shot (they are spots in the whole map, and a
 > writer who types numbers measured from the ruin puts the camera twenty thousand away),
-> and a Side Stories section (lint warns about it, wrongly for a ruin; it is typed in
-> Lecture 10's exercise).
+> and a Side Stories section (it is typed in Lecture 10's optional part; lint is `clean`
+> with it).
 
 > Say the wart out loud in scene 10. The ship panel in the corner of the main screen reads
 > `The Altar` and `Energy 0` during the cutscene. A viewer will take it for a mistake in

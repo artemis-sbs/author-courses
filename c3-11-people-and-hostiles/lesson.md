@@ -216,7 +216,7 @@ A shot reaches six cells, and needs a clear line to what it is aimed at.
 |---|---|---|
 | STUN | It stands still for its `Stun:` seconds. It takes no hurt | Nothing |
 | CUT | It loses 1 HP | A door with `cut` in its `Opens with:` opens. Anything else is only scorched |
-| FULL | It is down at once, whatever its HP | A door with `cut` opens. **Anything else is destroyed** |
+| FULL | It is down at once, whatever its HP | The same as CUT. A shot never takes a prop off the map |
 
 So the crawler, with `HP: 3`, takes three CUT shots, or one FULL. In the test run for
 this page: a stun, two cuts and a full. The game reported `stunned`, `wounded`,
@@ -226,25 +226,19 @@ Lt Reyes fired from cell 9, 1, six cells from the crawler, and it never came for
 The weapon reaches six cells and this crawler notices at three. That is a kind fight.
 Give a hostile `Notice: 6` or more and the crew has to take a strike to get a shot.
 
-### The one setting that can break your mission
-
-Read the last cell of that table again. FULL destroys a prop. It is gone from the map,
-with whatever it did.
-
-Tried for this page, in the yard: one FULL shot at the terminal, and the terminal was
-gone. One FULL shot at the beacon, and the beacon was gone. The game did not end, and
-nothing told the crew. A mission whose beacon has been shot cannot be won, and nobody is
-told that either.
-
-There is no field that protects a prop. Until there is, tell your crew before they beam
-down: FULL is for things that are attacking you.
-
 When it went down three things happened at once. The crawler left the map. A pickup
 named `tablet` appeared on the cell where it fell. And **The Thing in the Sump** was
 complete.
 
-The weapon does not care whose side anybody is on. A shot that lands on a crew member
-stuns them, wounds them, or with FULL puts them down.
+A shot cannot break your mission. Tried for this page, in the yard: every setting at the
+terminal, and a FULL shot at the beacon. Both were still on the map afterwards, and the
+terminal still opened its scene.
+
+And nobody calm is harmed. Every setting was fired at Pim, and a FULL shot at Old Marrow.
+Nothing happened to either of them.
+
+Your own crew is not calm. A shot that lands on a crew member stuns them, wounds them,
+or with FULL puts them down.
 
 ## Step 7 - When the crew is hurt
 
@@ -289,6 +283,8 @@ Each row was tried on the finished files, one change at a time.
 | `Done when: signal crawler_down` | `unfired-signal`. The name is `hostile_down_` and the key, in that order |
 | `For: enginering` | `for-nobody`, as in Lecture 5 |
 | The crawler typed under the Props heading | `unknown-field` for each of its fields, and `unfired-signal` for the story |
+| `Talk scene: pimm` | `dangling-scene`. In the game a click on her walks you over, and nothing opens |
+| `HP: three` | `not-a-number`: `Write it in figures`. The game reads the default, 2, and says so once in `mast.runtime.log` |
 
 ### What lint cannot see
 
@@ -298,10 +294,8 @@ All of these lint clean.
 |---|---|
 | Pim with no `Calm:` line | She is a hostile. She walked up to the engineer and took him from 3 HP to 1 in five seconds |
 | `Calm: yse` | Lint does warn. In the game it reads as no, and she attacks |
-| `Talk scene: pimm` | A click on her walks you over, and nothing opens. Nothing is said about why |
 | `Scene: pim` on a person | Lint does warn. In the game nothing opens |
 | `Leads to: crawlr` | The story is handed out and can be finished. It points at nothing |
-| `HP: three` | Read as the default, 2. No error |
 | `Face: woman`, a word that is no face | The scene opens. What is drawn beside her words was not seen for this page |
 
 Two that are not mistakes. `Drops: tablet, fuse` leaves two pickups on the cell. And
@@ -334,7 +328,6 @@ the arming and the four shots went through the same calls the Fire app's buttons
 | The crawler is not there | Its `Area:` or `At:` is wrong, or it is typed under the wrong heading | Run lint; read `mast.runtime.log` |
 | You click and walk instead of shooting | The weapon was not armed. One shot, then it is safe again | **Arm** before every shot |
 | A shot does nothing | More than six cells away, or something in the line | Get closer; get a clear line |
-| A thing the story needs is gone from the map | Somebody shot it with FULL | Step 6. Start the mission again |
 | A crew member will not move | They are down | Step 7 |
 
 ## Exercise
