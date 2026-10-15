@@ -1,7 +1,7 @@
 # For reviewers
 
-Thank you for trying this. Class 1 is a complete draft: twelve pages and twelve videos.
-Nobody outside the project has followed it yet. You are the first.
+Thank you for trying this. Classes 1 and 2 are complete drafts: twenty-three pages and
+twenty-three videos. Nobody outside the project has followed them yet. You are the first.
 
 ## What we most want to know
 
@@ -39,7 +39,7 @@ is easiest for us; a single long one is fine too.
 
 Please do not spend your time on these:
 
-- **Pictures are missing from the pages.** A line in square brackets such as
+- **A few pictures are still missing from the pages.** A line in square brackets such as
   *[Screenshot to add: ...]* marks where one will go.
 - **The pictures do not move much.** The videos are made from real screens, as stills with
   a slow push-in. Typing and clicking are shown by their result.
@@ -49,7 +49,7 @@ Please do not spend your time on these:
 - **Version numbers** on screen may be newer or older than yours.
 - **Lecture 6's video** shows three findings for the last example. The page shows six,
   and the page is right: the video was made from an older starting file.
-- **Classes 2 to 6** are not published. Their drafts are in the repository for the curious.
+- **Classes 3 to 6** are not published. Their drafts are in the repository for the curious.
 
 ## What happens to your report
 

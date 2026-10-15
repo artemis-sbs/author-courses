@@ -6,9 +6,12 @@ You do not need to know markdown, a command prompt or a code editor before you s
 first class teaches all three.
 
 !!! warning "This is a review copy"
-    Class 1 is complete as a draft and is being read and tried by reviewers. Pages and
-    videos will change. If you are one of the reviewers, start with
+    Classes 1 and 2 are complete as drafts and are being read and tried by reviewers.
+    Pages and videos will change. If you are one of the reviewers, start with
     [For reviewers](reviewers.md).
+
+Every video so far is in one [playlist](https://www.youtube.com/playlist?list=PLAW6YCoCOmSk),
+in order.
 
 ## Class 1 - The Writer's Desk and Your First Quest
 
@@ -33,6 +36,29 @@ All twelve videos are also in one [playlist](https://www.youtube.com/playlist?li
 | 11 | [Just enough MAST](class-1/11-just-enough-mast.md) | The story file read, and one small card pasted into it |
 | 12 | [Ship a quest mission](class-1/12-ship-a-quest-mission.md) | Your own story in place of the taught one, checked, printed and shared |
 
+## Class 2 - People, Dialogue and Siege Bosses
+
+Eleven lectures. Your mission gets sides that are friends and enemies, people with names
+and faces, calls the crew answers on Comms, and a side that remembers what the crew did.
+Then you write a boss for the Siege game: a flagship with her own fleets, her own quests,
+and a voice.
+
+All eleven videos are also in one [playlist](https://www.youtube.com/playlist?list=PLENy86IbXr6Y).
+
+| # | Lecture | You leave with |
+|---|---|---|
+| 1 | [Sides and factions](class-2/01-sides-and-factions.md) | Three sides where you had one: scavengers who want the hulk, and friends at the station |
+| 2 | [Characters and faces](class-2/02-characters-and-faces.md) | Three people in your mission file, each with a name and a face that stays the same |
+| 3 | [Dialogue, part 1](class-2/03-dialogue-part-1.md) | A call from the station, waiting on Comms, that reads a little differently each game |
+| 4 | [Dialogue, part 2](class-2/04-dialogue-part-2.md) | Answers the crew can give: ask for more, take a quest, hang up |
+| 5 | [Hails](class-2/05-hails.md) | A quest that ends when the crew reports in, with a second voice on the line |
+| 6 | [Reputation, a first look](class-2/06-reputation-a-first-look.md) | A side that keeps score, and greets the crew by what they did |
+| 7 | [The story tools](class-2/07-the-story-tools.md) | A second act planned before it is written, and the story seen and printed four ways |
+| 8 | [A Siege boss, part 1](class-2/08-siege-boss.md) | Your own boss in the Siege game's Boss list, from one copied file |
+| 9 | [A Siege boss, part 2](class-2/09-siege-boss-fields.md) | The same boss built on purpose: when she comes, with whom, and which ships carry names |
+| 10 | [A Siege boss, part 3](class-2/10-siege-boss-quests.md) | Her quests: a flagship to sink against the clock, a bonus, and a ship held back |
+| 11 | [Capstone: a boss with a voice](class-2/11-a-boss-with-a-voice.md) | A boss who calls the crew herself, and an answer that turns one of her ships |
+
 ## What you need
 
 - Artemis Cosmos 1.4.0, from Steam or itch.io.
@@ -41,7 +67,6 @@ All twelve videos are also in one [playlist](https://www.youtube.com/playlist?li
 
 ## The classes to come
 
-Class 2 gives your mission people, dialogue and a boss. Class 3 sends a boarding party
-aboard. Class 4 builds ancient ruins. Classes 5 and 6 build a universe and run a campaign in
+Class 3 sends a boarding party aboard. Class 4 builds ancient ruins. Classes 5 and 6 build a universe and run a campaign in
 it. Drafts of some of their lectures are in the
 [repository](https://github.com/artemis-sbs/author-courses); they are not published here yet.
