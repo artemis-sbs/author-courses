@@ -101,7 +101,17 @@ Starts when: revealed
 Done when: reach 3, 1
 Then: reveal s04_go
 ---
-A boat does not empty itself. The Deepwell count every hull that is sold in the Verge. Go to the Assay Office at (3, 1) and ask what they paid for a boat called the Plover.
+A boat does not empty itself. The Deepwell count every hull that is sold in the Verge.
+
+Go to the Assay Office at (3, 1) and ask what they paid for a boat called the Plover.
+
+## The count so far
+
+| Boat | Where | What we know |
+|---|---|---|
+| The Wren | (2, 2) | Launched, and empty. Nine names in her log |
+| The Dunlin | (-2, 3) | Empty, her lockers full. Her voice was a recording |
+| The Plover | Sold | Ask the Deepwell who bought her |
 ```
 
 Evening 4 goes somewhere new, so it needs a landmark. Add it to your Landmarks chapter.
@@ -143,12 +153,35 @@ Starts when: revealed
 Done when: reach 0, 0
 Reward: 1000 credits
 ---
-Five boats, and not one body. Forty-one people left the Tern alive and went somewhere together. Take the Count home to Kestrel Relay.
+![](face://ter #9c7056 0 0;ter #fff 13 6;ter #9c7056 1 1;ter #9c7056 11 2;ter #704025 20 3;) Registrar Amsel, who keeps the Count at Kestrel Relay
+
+Five boats, and not one body. Forty-one people left the Tern alive and went somewhere together.
+
+## The count, closed
+
+| Boat | Where | What we know |
+|---|---|---|
+| The Wren | (2, 2) | Launched, and empty. Nine names in her log |
+| The Dunlin | (-2, 3) | Empty, her lockers full. A lure |
+| The Plover | (3, 1) | Sold on by the Assay Office |
+| The Petrel | (4, -2) | Holed and adrift. Her beacon still counting |
+| The Skua | (-3, -2) | In the Gleaners' yard |
+
+Take the Count home to Kestrel Relay. Amsel will want to enter it herself.
 ```
 
 **A stub is a real evening, only a short one.** Played as it stands, evening 4 is: jump
 to the Petrel, read the card, and the next lead appears. That is thin, and it is
 playable. If the crew outruns your writing, they get a thin evening and not a dead end.
+A stub is one paragraph, with no table. The count is carried by the act's ending instead.
+
+**The act's ending is a page.** Five Boats is a tentpole: the crew reads it at the
+moment the first act turns, so it gets more than a sentence. Its first line is a face,
+the way Class 2 Lecture 2 put the harbormaster on a quest: a `face://` picture with a
+whole face string inside its round brackets, then the words that name who is speaking. This one is
+Registrar Amsel, who keeps the Count at Kestrel Relay. Copy the face string exactly,
+every letter, number and semicolon: lint does not read it. Under her come two paragraphs
+and the whole count, all five boats, in one table.
 
 **The act's ending has no `Then:` line.** Act Two is not written. When the crew finishes
 Five Boats, no new lead appears, and that is the truth. Tell them at the table: "that is
@@ -211,8 +244,8 @@ Then count one evening by hand, from Lecture 4's pattern.
 | One ordinary evening | Count |
 |---|---|
 | Records | 4: a landmark, an open, an objective, a way home |
-| Lines in the file | About 35 |
-| Sentences the crew reads | 4 texts and a card line: about 10 sentences |
+| Lines in the file | About 45 |
+| Sentences the crew reads | 4 texts, the count's table and a card line: about 10 sentences |
 | Words you change in the pattern | The slots in Lecture 4's table |
 
 And the campaign:

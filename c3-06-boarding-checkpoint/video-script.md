@@ -62,6 +62,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 2. The Crew app's Beam up button, and a console coming back down.
 3. The time. Fourteen to twenty presses is a count. "About ten minutes" is a guess, and
    the page says so.
+4. The two ending quests in the Quest Log: the hourglass line, the DS 1 lead
+   line, and Account for the Crew's three-row table.
 
 ## Scenes
 
@@ -117,15 +119,18 @@ torn out my practice rooms to make space. || Lint warns about two signals, | and
 right, because the rooms that sent them are gone. Then the readings. Then the check. |
 Then the door, with a line that tells an early party why it's shut. Then the endings. |
 Each ending is a quest the ship doesn't have yet, | a choice that starts it, with the new
-word accepts, | and a last room with one way out. ||| Then the two stories. | And lint is
+word accepts, | and a last room with one way out. || The crew reads an ending's quest the
+moment they choose, | so each one gets a short page. | An hourglass on one, the station
+drawn beside the other. ||| Then the two stories. | And lint is
 clean. ||"
 
 ### 6. A quest any party can finish
 
-**Screen:** Account for the Crew: its `Done when:` line. Then the page's table of the
-two ways to wire it.
+**Screen:** Account for the Crew: its new description, with the three-row table. Then
+its `Done when:` line. Then the page's table of the two ways to wire it.
 
-**Say:** "One change to the ship's quest. || Last time, it waited for the surgeon's story
+**Say:** "The ship's quest gets a new page too: | a table of what the station knows before
+anybody boards. ||| And one change to how it ends. || Last time, it waited for the surgeon's story
 to finish. | But a story is handed to nobody when its person stays home, | so a short crew
 could never complete it. ||| Now it waits for the reading's own signal. || The surgeon's
 press finishes her story and the ship's quest together, | and when she's not there, the

@@ -91,7 +91,7 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 1. What `rock`, `plates`, `blocks` and `ribs` look like, from inside and from outside.
    The page says cave, hull plating, masonry, bored shaft. Those words are the library
    documentation's.
-2. That the flat pieces are plain grey. The page says "flat grey blocks".
+2. That the flat pieces are plain gray. The page says "flat gray blocks".
 3. Holes in The Gallery's walls at `Gaps: 0.2`, and that they read as damage.
 4. The ring: that it is a hoop, that it stands across the tunnel and not along it, that
    it is big enough to fly through, and that the ship passes through it with no bump.

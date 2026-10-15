@@ -223,13 +223,21 @@ Starts when: at once
 Done when: signal manifest_read
 Reward: 50 credits
 ---
+![](ship://starbase_civil) The Customs House, beside Kestrel Relay
+
 The Customs House beside the relay waves everybody through. Dock with it, go aboard, and read what it has been waving through.
+
+A post that checks nothing is a post somebody is paying. Find out who.
 ```
 
 A lead, as in Lecture 7. It is done when the signal `manifest_read` is sent, and the
 answer you wrote in Step 2 sends it. That is the whole join between a site and your
 story: an answer in the site says `; signal` and a word, and a step in the Narrative
 says `Done when: signal` and the same word.
+
+The first line of its briefing draws the Customs House beside the words, as the Assay
+Office was drawn in Lecture 6. `starbase_civil` is the model the landmark's `Art:` line
+names, so the crew sees the station they are being sent to.
 
 ## Step 4 - Check it
 
@@ -657,11 +665,19 @@ Starts when: revealed
 Done when: signal count_settled
 Reward: 150 credits
 ---
+![](ship://starbase_industry) Tally Yard, on the edge of the lane
+
 Forty crates were declared for Tally Yard. Dock with the yard, go down, and count them.
+
+| The papers | What they say |
+|---|---|
+| The manifest | Forty crates, every line initialed with the same letter |
+| The yard | The count is short |
 ```
 
 `count_settled` is sent by the last line of `tally_yard.amd`, when somebody closes the
-ledger behind the door.
+ledger behind the door. Its briefing puts what the crew has learned so far in a small
+table, as Lecture 7 did for the Tern.
 
 The finished files are in `example\`.
 

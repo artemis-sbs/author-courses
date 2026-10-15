@@ -54,7 +54,8 @@ were added.
 1. The end-of-game screen with the `Win:` sentence, in this universe. (It was seen in
    the real game for a Class 1 mission.)
 2. The bible page in a browser.
-3. The Quest Log during the walk.
+3. The Quest Log during the walk, and Five Boats as a page: Registrar Amsel's face at
+   the top, two paragraphs, the five-row table.
 
 ## Scenes
 
@@ -100,10 +101,13 @@ dead end. ||"
 
 ### 5. The act's ending
 
-**Screen:** Five Boats. Point at the missing `Then:` line.
+**Screen:** Five Boats. Point at the face line, then the table, then the missing `Then:`
+line.
 
 **Say:** "The act ends at home, with a big payment, | and a text that answers the act's
-question. ||| And it has no next step. || Act two isn't written, | so no new lead
+question. ||| It's a tentpole, so it gets a page. || At the top, a face: | the registrar
+who keeps the Count. || I copy the face string exactly, | because lint won't check it. |||
+Then two short paragraphs, | and the whole count in one table, all five boats. ||| And it has no next step. || Act two isn't written, | so no new lead
 appears, and that's the truth. ||| When you have evening six, you join it on here. ||
 The capstone shows how to do that for a crew that's already finished. ||"
 

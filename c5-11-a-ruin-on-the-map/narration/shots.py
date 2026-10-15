@@ -74,7 +74,7 @@ SHOTS = [
     {
         "id": "s05_three_steps_of_story",
         "title": 'Three steps of story',
-        "frames": 1206,
+        "frames": 1601,
         "captions": [
             ('And now the story.', 0, 52),
             ('A lead that takes the crew there.', 79, 170),
@@ -86,8 +86,11 @@ SHOTS = [
             ('because the game does.', 802, 854),
             ("It builds each word from a key in the ruin's file.", 908, 1052),
             ('Slab, then opened, and hollow, then taken.', 1079, 1170),
+            ('And each briefing is a page, as in Lecture Seven.', 1224, 1354),
+            ('The cut gets two icon bullets,', 1381, 1460),
+            ('who suits up, and what they cut.', 1473, 1565),
         ],
-        "pauses": [0.9, 0.9, 0.9, 1.8, 0.9, 0.45, 0.45, 1.8, 0.9, 1.2],
+        "pauses": [0.9, 0.9, 0.9, 1.8, 0.9, 0.45, 0.45, 1.8, 0.9, 1.8, 0.9, 0.45, 1.2],
     },
     {
         "id": "s06_lint",

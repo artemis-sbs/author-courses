@@ -131,7 +131,9 @@ type Nothing to Declare. Highlight `signal manifest_read` in both files.
 **Say:** "Two more things on this one answer. ||| The first is learn the manifest. || Now the party knows a fact, | and the place keeps it. || This line is only spoken before they know it,
 | and this one only after. ||| And then signal, manifest read. || That word is mine. ||
 Over in the universe file, I add a step of story | that's done when it hears that same
-word. ||| That's how a place finishes a step. ||"
+word. ||| That's how a place finishes a step. ||| Its briefing opens with the Customs
+House itself, drawn beside the words. || It's the same model as the landmark's Art
+line, | so the crew sees where they're going. ||"
 
 ### 5. Lint, and play
 

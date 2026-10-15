@@ -64,6 +64,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 4. How fast she runs for home, and how long a real crew has.
 5. Where a student finds `debug.log`.
 6. The room names on the handheld's bar, as `room:boat-bay`.
+7. Run Down the Black Gull in the Quest Log with the brigantine drawn beside
+   its lead line, and Take the Black Gull's two icon bullets.
 
 ## Scenes
 
@@ -104,13 +106,14 @@ struck, and eight seconds later she was gone. ||"
 
 ### 4. Three quests and a card
 
-**Screen:** The three quests in the Quests section, with arrows: the first reveals the
+**Screen:** The three quests in the Quests section, with their descriptions, and arrows: the first reveals the
 second, the second sends the relay's signal. Then the card pasted at the end of the
 story file, and one line added to the starter's card.
 
 **Say:** "There are three quests here. || Run her down, which waits for the ship to close on her. ||
 Come back to the relay, which is hidden until then. || And take her, which waits for a
-signal the game sends. ||| The card is one you know. | It's the tug card from the first
+signal the game sends. ||| Two of them get a page for the bridge. | The brigantine drawn at
+the top of the chase, | and two icon bullets on the prize. ||| The card is one you know. | It's the tug card from the first
 class, | hearing a different step start. ||| It does two things. | It calls the landing
 party home, and she strikes. ||| And the same line goes on your old card, | for the
 trip back. ||"

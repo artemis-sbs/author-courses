@@ -50,6 +50,11 @@ Win: The Bone Pile is broken, and what was taken from the Tern is going home.
 Citation: Forty years late, the third colony has been counted.
 ---
 The Tern's people are stacked here with her cargo. Four Gleaner hulls stand between you and them.
+
+- ![](icon://crosshair) Break the hulls that guard the pile
+- ![](icon://person) Then the Tern's people can go home
+
+Forty years is long enough. Nobody else is coming for them.
 ```
 
 "Four Gleaner hulls stand between you and them." Do they?

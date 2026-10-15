@@ -99,7 +99,7 @@ SHOTS = [
     {
         "id": "s06_a_quest_that_waits",
         "title": 'A quest that waits',
-        "frames": 968,
+        "frames": 1625,
         "captions": [
             ('When a job is done, the game sends a word.', 0, 130),
             ("It's the job's key, and then underscore repaired.", 157, 262),
@@ -109,8 +109,12 @@ SHOTS = [
             ('a job has been repaired,', 683, 749),
             ("or a ruin's piece has been taken.", 762, 853),
             ('Lint knows all three.', 880, 932),
+            ('The description borrows two things from earlier.', 986, 1078),
+            ("The station's lead line, so the crew knows it's DS 1 asking.", 1105, 1261),
+            ('And a short list, with a person and a wrench for bullets,', 1288, 1445),
+            ('so whoever reads it knows what to do, in order.', 1458, 1589),
         ],
-        "pauses": [0.9, 0.9, 1.8, 0.9, 0.45, 0.45, 0.9, 1.2],
+        "pauses": [0.9, 0.9, 1.8, 0.9, 0.45, 0.45, 0.9, 1.8, 0.9, 0.9, 0.45, 1.2],
     },
     {
         "id": "s07_two_doors_one_word",

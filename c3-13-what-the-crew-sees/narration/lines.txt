@@ -31,13 +31,15 @@ s03_who_is_offered_what_9	If only a medic's hands will do,
 s03_who_is_offered_what_10	ask for a skill instead.
 s04_a_mark_is_a_word_0	That third word on the bar is a mark from your map file.
 s04_a_mark_is_a_word_1	Any mark somebody can stand on is a word on their screen.
-s04_a_mark_is_a_word_2	So watch what happens here.
-s04_a_mark_is_a_word_3	Nobody has asked about the medical kit yet.
-s04_a_mark_is_a_word_4	And the map has just told her it's there.
-s04_a_mark_is_a_word_5	So here are two rules.
-s04_a_mark_is_a_word_6	Name a mark for the place, the way you'd say it.
-s04_a_mark_is_a_word_7	Landing pad. Gully mouth. Foot of the stairs.
-s04_a_mark_is_a_word_8	And stand a hidden thing on a cell, not on a mark.
+s04_a_mark_is_a_word_2	So watch what happens in the gully.
+s04_a_mark_is_a_word_3	The bar says arrive.
+s04_a_mark_is_a_word_4	That was a name for you, not for her.
+s04_a_mark_is_a_word_5	Name a mark for the place, the way you'd say it.
+s04_a_mark_is_a_word_6	Landing pad. Gully mouth. Foot of the stairs.
+s04_a_mark_is_a_word_7	One thing the game does for you.
+s04_a_mark_is_a_word_8	A mark with something hidden on it isn't shown at all,
+s04_a_mark_is_a_word_9	until the thing is found.
+s04_a_mark_is_a_word_10	So the map never gives your secret away.
 s05_titles_and_what_the_pack_say_0	An area's title is read after other words.
 s05_titles_and_what_the_pack_say_1	Go to, in Look. To, in Beam.
 s05_titles_and_what_the_pack_say_2	So a title that starts with The reads badly twice.
@@ -52,7 +54,7 @@ s05_titles_and_what_the_pack_say_10	That's the item's key, with its underscore s
 s05_titles_and_what_the_pack_say_11	So make the item's key the same words as the heading.
 s05_titles_and_what_the_pack_say_12	Three lines name it,
 s05_titles_and_what_the_pack_say_13	and all three change together.
-s05_titles_and_what_the_pack_say_14	Lint can't check that for you.
+s05_titles_and_what_the_pack_say_14	Miss one, and lint tells you.
 s06_scan_and_a_title_that_is_the_0	Scan lists everything in sight, scenery too.
 s06_scan_and_a_title_that_is_the_1	With no scan line and no description, it says no reading.
 s06_scan_and_a_title_that_is_the_2	So give your scenery one line each.
@@ -79,7 +81,13 @@ s08_what_the_bridge_sees_and_you_5	when somebody on the ground presses Report in
 s08_what_the_bridge_sees_and_you_6	No scene line ever reaches the bridge.
 s08_what_the_bridge_sees_and_you_7	So the shared quests are its only window.
 s08_what_the_bridge_sees_and_you_8	Remember that for the capstone.
-s08_what_the_bridge_sees_and_you_9	For the exercise, play it to read, not to win.
-s08_what_the_bridge_sees_and_you_10	Write down every word that makes you wince,
-s08_what_the_bridge_sees_and_you_11	and then go and fix each one.
-s08_what_the_bridge_sees_and_you_12	Next time, we put a clock on it.
+s08_what_the_bridge_sees_and_you_9	Select a quest, and the Quest Log shows its description in full.
+s08_what_the_bridge_sees_and_you_10	The starter's is one sentence,
+s08_what_the_bridge_sees_and_you_11	and for the bridge that's the whole briefing.
+s08_what_the_bridge_sees_and_you_12	So give it a page.
+s08_what_the_bridge_sees_and_you_13	The relay drawn at the top,
+s08_what_the_bridge_sees_and_you_14	then a table of what the ship knows from up there.
+s08_what_the_bridge_sees_and_you_15	For the exercise, play it to read, not to win.
+s08_what_the_bridge_sees_and_you_16	Write down every word that makes you wince,
+s08_what_the_bridge_sees_and_you_17	and then go and fix each one.
+s08_what_the_bridge_sees_and_you_18	Next time, we put a clock on it.

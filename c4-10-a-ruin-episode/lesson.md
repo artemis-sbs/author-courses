@@ -24,7 +24,7 @@ You will add to `mission.amd`. You will not touch `story.mast`.
 
 ## Before you start
 
-- `MyRuin` as Lecture 9 left it. `mission.amd` is 526 lines long, and `story.mast` is
+- `MyRuin` as Lecture 9 left it. `mission.amd` is 554 lines long, and `story.mast` is
   Lecture 6's, 116 lines.
 - `sbs lint MyRuin` says `clean`.
 - VS Code with the mission folder open, a command prompt open in
@@ -83,11 +83,17 @@ Then: reveal survey/door
 Part of: survey
 Required: true
 ---
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
 The station's survey antenna is dead. Until it is mended, nobody can hear the markers in The Hollow.
+
+- ![](icon://person) Suit up while the ship is near DS 1
+- ![](icon://wrench) Fly the suit round the hull to the mast, and mend it with the beam
 ```
 
 It is the same quest, with four hashes and three more lines: `Then:`, `Part of:` and
-`Required:`.
+`Required:`. Its lead line and its list are Lecture 9's. Only the paragraph between them
+has changed: it now says why the mast comes first.
 
 Then change one line in **Find the Way In**. It is no longer the first step, so it waits
 to be revealed:
@@ -120,7 +126,17 @@ Done when: signal count_matched
 Reward: 80 credits
 ---
 Somebody cut marks into the rim of the altar, in sets of five. Find out what they were counting.
+
+| The marks | What the crew knows |
+|---|---|
+| How many | Forty-one. Eight sets of five, and one on its own |
+| Who cut them | Nobody has said |
+
+Whoever kept the count kept it for a long time, and then stopped.
 ```
+
+The table is what the crew knows when the quest appears: the count, and that nobody has
+said whose it was. It hands them the number without the answer.
 
 **The first link.** In the Dialogue section, find **At the Altar**, the scene from Lecture
 4. Change its first answer:
@@ -214,6 +230,13 @@ Done when: signal count_matched
 Reward: 80 credits
 ---
 Somebody cut marks into the rim of the altar, in sets of five. Find out what they were counting.
+
+| The marks | What the crew knows |
+|---|---|
+| How many | Forty-one. Eight sets of five, and one on its own |
+| Who cut them | Nobody has said |
+
+Whoever kept the count kept it for a long time, and then stopped.
 ```
 
 The first two steps of the arc:
@@ -230,7 +253,12 @@ Then: reveal survey/door
 Part of: survey
 Required: true
 ---
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
 The station's survey antenna is dead. Until it is mended, nobody can hear the markers in The Hollow.
+
+- ![](icon://person) Suit up while the ship is near DS 1
+- ![](icon://wrench) Fly the suit round the hull to the mast, and mend it with the beam
 
 #### [Find the Way In](door)
 ---
@@ -273,7 +301,7 @@ In the Dialogue section, the place scenes:
 - [Log it]() ; signal count_matched
 ```
 
-The whole file is in `example\mission.amd`. It is 552 lines long.
+The whole file is in `example\mission.amd`. It is 587 lines long.
 
 ## Step 4 - Check it with lint
 

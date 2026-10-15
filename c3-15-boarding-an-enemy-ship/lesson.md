@@ -170,7 +170,11 @@ Objective: Close to within 1500 of the Black Gull
 Done when: reach gull 1500
 Then: reveal back
 ---
+![](ship://pirate_brigantine) The Black Gull, out past the relay.
+
 A pirate brigantine is standing off the dark relay, waiting for a convoy that cannot see her.
+
+Run her down. A pirate crew caught by a navy ship will often strike rather than fight.
 
 ### [Come Back to Kesh Relay](back)
 ---
@@ -191,9 +195,18 @@ Done when: signal boarding_deck_take
 Reward: 200 credits
 ---
 A brigantine is worth more to the Kesh run with a navy crew aboard than as wreckage.
+
+## Once she strikes
+
+- ![](icon://flag) Comms can send a boarding party across.
+- ![](icon://chest) Her papers are aboard somewhere. Find them, and she is yours.
 ```
 
 Every line is one you have written before. What matters is how they hang together.
+
+The descriptions are pages for the bridge, as in Lecture 13. `pirate_brigantine` is the
+hull `story.mast` gives the Black Gull, so the lead line draws the ship they are chasing.
+`flag` and `chest` are two more icon names.
 
 | Quest | It waits for | When it is done |
 |---|---|---|
@@ -208,7 +221,7 @@ before the second quest can finish.
 Save, and run lint. It has one thing to say:
 
 ```
-  [WARNING] line 139:19: `prize` waits for the signal `boarding_deck_take`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+  [WARNING] line 157:19: `prize` waits for the signal `boarding_deck_take`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
 ```
 
 Lint is right, as it was in Class 1. Nothing sends that signal yet. Step 7 does.
@@ -482,8 +495,8 @@ sbs lint MyAway
 
 ```
 == mission.amd ==
-  [WARNING] line 766:35: `strongbox` emits signal `boarding_deck_scuttle` but no `//signal/boarding_deck_scuttle` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 767:36: `strongbox` emits signal `boarding_deck_leave` but no `//signal/boarding_deck_leave` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  [WARNING] line 789:35: `strongbox` emits signal `boarding_deck_scuttle` but no `//signal/boarding_deck_scuttle` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
+  [WARNING] line 790:36: `strongbox` emits signal `boarding_deck_leave` but no `//signal/boarding_deck_leave` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
 
 1 amd + 1 mast file(s): 0 error(s), 2 warning(s)
 ```
@@ -510,7 +523,7 @@ Each row below was tried on the finished files, one change at a time.
 The first of them, as lint printed it:
 
 ```
-  [WARNING] line 415:7: strongbox: 'bgri' is not a kind of room - did you mean 'brig'? On `Area: deck` a Mark: is a kind of room (airlock, bay, beam, bridge, brig, cargo, computer, conference, galley, hyper, impulse, jump, lab, lounge, maneuver, mess, production, quarters, recreation, sensor, shield, sickbay, torpedo, warp, workshop), `entry` or `hallway`; anything else stands in the hallway (tiles-deck-unknown-kind)
+  [WARNING] line 438:7: strongbox: 'bgri' is not a kind of room - did you mean 'brig'? On `Area: deck` a Mark: is a kind of room (airlock, bay, beam, bridge, brig, cargo, computer, conference, galley, hyper, impulse, jump, lab, lounge, maneuver, mess, production, quarters, recreation, sensor, shield, sickbay, torpedo, warp, workshop), `entry` or `hallway`; anything else stands in the hallway (tiles-deck-unknown-kind)
 ```
 
 ### What lint cannot see

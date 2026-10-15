@@ -151,7 +151,8 @@ and zero, zero is home, where every new game begins. ||| That one record does th
 things. || When the crew arrives, a card names the system, | and shows my line under the
 name. || There's a station there with that name. || And it goes on the crew's list of
 charted places, | so they can find their way back. ||| Keep the line under the fence to
-one line, | because the card only shows the first. ||"
+one short line, | because the card only shows the first. || And it cuts anything past
+sixty characters, so mine is just fifty. ||"
 
 ### 7. The story file
 

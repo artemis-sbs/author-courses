@@ -113,7 +113,7 @@ The hole in the end. It is the only way in and it is the only way out.
 Relic: sink
 Box: 200, 0, 0, 2600, 900, 2600
 ---
-Five kilometres of room and no floor plan at all. Fly it however you like - there is
+Five kilometers of room and no floor plan at all. Fly it however you like - there is
 nothing in here that cares which way you came.
 
 ### [the drift](drift_solid)

@@ -38,6 +38,9 @@ s05_write_evening_five_5	A crew that hails them cold won't see either answer.
 s05_write_evening_five_6	They have to ask the right question first.
 s05_write_evening_five_7	That's the fact from lecture two,
 s05_write_evening_five_8	doing a real job.
+s05_write_evening_five_9	And the step's second paragraph says so.
+s05_write_evening_five_10	A crew that's stuck reads the Quest Log,
+s05_write_evening_five_11	so that's where the hint goes.
 s06_one_change_they_ll_notice_0	And one change to something the crew has already seen.
 s06_one_change_they_ll_notice_1	The step they're on had a placeholder for a title.
 s06_one_change_they_ll_notice_2	I change the title,
@@ -45,11 +48,14 @@ s06_one_change_they_ll_notice_3	and I leave the key alone.
 s06_one_change_they_ll_notice_4	One more step, for act two to stand on.
 s06_one_change_they_ll_notice_5	It stays open when the act ends,
 s06_one_change_they_ll_notice_6	and act two will finish it.
-s06_one_change_they_ll_notice_7	I save, and I run lint.
-s06_one_change_they_ll_notice_8	One warning, and for once it's true.
-s06_one_change_they_ll_notice_9	Nothing sends that signal yet.
-s06_one_change_they_ll_notice_10	If it said a step is never revealed,
-s06_one_change_they_ll_notice_11	I'd stop right here and fix it.
+s06_one_change_they_ll_notice_7	It could be open for weeks,
+s06_one_change_they_ll_notice_8	so it gets a page.
+s06_one_change_they_ll_notice_9	A paragraph, and a short list of what's still out there.
+s06_one_change_they_ll_notice_10	I save, and I run lint.
+s06_one_change_they_ll_notice_11	One warning, and for once it's true.
+s06_one_change_they_ll_notice_12	Nothing sends that signal yet.
+s06_one_change_they_ll_notice_13	If it said a step is never revealed,
+s06_one_change_they_ll_notice_14	I'd stop right here and fix it.
 s07_sitting_two_0	Sitting two, and I don't delete the save.
 s07_sitting_two_1	The open step has its new name.
 s07_sitting_two_2	My words reached a game in progress.

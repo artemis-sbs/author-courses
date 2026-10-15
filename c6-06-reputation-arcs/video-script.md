@@ -61,6 +61,7 @@ the tier 1 job's 5.
 2. Whether the crew is told anything when standing changes. The stand-in is sent one
    card, `Word of your deeds spreads among the sides.`, at some point.
 3. The ledger's guesses. They are arithmetic, not play.
+4. The Tern's Manifest in the Quest Log: its heading, and the three icon bullets.
 
 ## Scenes
 
@@ -100,7 +101,10 @@ The Manifest record.
 
 **Say:** "So here's a door, in three parts. ||| A lead the crew can see from the very
 first evening. | It tells them what opens it. || That matters, because a door nobody
-knows about | isn't a reason to do anything. ||| Then one answer in the Compact's hail.
+knows about | isn't a reason to do anything. ||| So under a heading, | I list the keys. ||
+Each line starts with a hyphen, | and a small icon where the dot would be. || A
+handshake for the levy, | a flag for the jobs, | and a crossed circle for the one thing
+that shuts it. ||| Then one answer in the Compact's hail.
 || After the key it says, if standing is forty or more. | Below that, the button isn't
 there. ||| And the record it leads to, | where they're finally told. ||"
 

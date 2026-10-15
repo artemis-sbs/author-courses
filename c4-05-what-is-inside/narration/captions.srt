@@ -219,177 +219,189 @@ Lint says clean either way.
 So I write collect canister, with no number.
 
 56
-00:03:46,141 --> 00:03:49,185
-Now the thing the ruin was hiding.
+00:03:46,741 --> 00:03:51,089
+The description gets a second paragraph, after a blank line.
 
 57
-00:03:50,085 --> 00:03:52,693
-First the item, a stone bowl.
+00:03:51,989 --> 00:03:54,598
+The first says what to do,
 
 58
-00:03:53,593 --> 00:03:58,811
-Then I go back to the Niche, and I change two lines.
+00:03:55,048 --> 00:03:57,222
+the second says what's known.
 
 59
-00:04:00,611 --> 00:04:05,828
-On the Roles line I add a comma, and relic underscore piece.
+00:03:58,422 --> 00:04:01,465
+Now the thing the ruin was hiding.
 
 60
-00:04:06,728 --> 00:04:08,467
-That role isn't mine.
+00:04:02,365 --> 00:04:04,974
+First the item, a stone bowl.
 
 61
-00:04:08,917 --> 00:04:11,091
-It's the game's own word,
+00:04:05,874 --> 00:04:11,091
+Then I go back to the Niche, and I change two lines.
 
 62
-00:04:11,541 --> 00:04:14,585
-the way entrance was in Lecture three.
+00:04:12,891 --> 00:04:18,109
+On the Roles line I add a comma, and relic underscore piece.
 
 63
-00:04:15,485 --> 00:04:19,833
-It means the thing in this place is the piece.
+00:04:19,009 --> 00:04:20,748
+That role isn't mine.
 
 64
-00:04:21,633 --> 00:04:23,807
-And then Item, stone bowl.
+00:04:21,198 --> 00:04:23,372
+It's the game's own word,
 
 65
-00:04:24,707 --> 00:04:26,446
-It takes both lines.
+00:04:23,822 --> 00:04:26,865
+the way entrance was in Lecture three.
 
 66
-00:04:26,896 --> 00:04:29,939
-The role alone is an empty place,
+00:04:27,765 --> 00:04:32,113
+It means the thing in this place is the piece.
 
 67
-00:04:30,389 --> 00:04:33,867
-and the item alone is just another find.
+00:04:33,913 --> 00:04:36,087
+And then Item, stone bowl.
 
 68
-00:04:35,067 --> 00:04:36,807
-And the second quest.
+00:04:36,987 --> 00:04:38,726
+It takes both lines.
 
 69
-00:04:37,707 --> 00:04:39,880
-Done when, signal, hollow taken.
+00:04:39,176 --> 00:04:42,220
+The role alone is an empty place,
 
 70
-00:04:41,680 --> 00:04:45,159
-Now, nothing in my file sends that word,
+00:04:42,670 --> 00:04:46,148
+and the item alone is just another find.
 
 71
-00:04:45,609 --> 00:04:47,783
-and lint still says clean.
+00:04:47,348 --> 00:04:49,087
+And the second quest.
 
 72
-00:04:48,683 --> 00:04:51,291
-That's because the game sends it.
+00:04:49,987 --> 00:04:52,161
+Done when, signal, hollow taken.
 
 73
-00:04:52,191 --> 00:04:56,539
-It takes the key of the ruin, which is hollow,
+00:04:53,961 --> 00:04:57,439
+Now, nothing in my file sends that word,
 
 74
-00:04:56,989 --> 00:04:59,163
-and it adds underscore taken.
+00:04:57,889 --> 00:05:00,063
+and lint still says clean.
 
 75
-00:05:00,963 --> 00:05:02,702
-It's the ruin's key.
+00:05:00,963 --> 00:05:03,572
+That's because the game sends it.
 
 76
-00:05:03,152 --> 00:05:07,065
-It's not the place's, and it's not the thing's.
+00:05:04,472 --> 00:05:08,820
+It takes the key of the ruin, which is hollow,
 
 77
-00:05:07,965 --> 00:05:12,313
-Lint will catch you if you use either of those.
+00:05:09,270 --> 00:05:11,443
+and it adds underscore taken.
 
 78
-00:05:14,113 --> 00:05:16,287
-The word is sent once.
+00:05:13,243 --> 00:05:14,983
+It's the ruin's key.
 
 79
-00:05:17,187 --> 00:05:22,839
-So the quest has to be running before anybody can reach the bowl.
+00:05:15,433 --> 00:05:19,346
+It's not the place's, and it's not the thing's.
 
 80
-00:05:23,289 --> 00:05:26,333
-That's why this one starts at once.
+00:05:20,246 --> 00:05:24,593
+Lint will catch you if you use either of those.
 
 81
-00:05:27,533 --> 00:05:30,141
-I run lint, and it's clean.
+00:05:26,393 --> 00:05:28,567
+The word is sent once.
 
 82
-00:05:31,041 --> 00:05:34,085
-Now I take out the Art line,
+00:05:29,467 --> 00:05:35,120
+So the quest has to be running before anybody can reach the bowl.
 
 83
-00:05:34,535 --> 00:05:36,709
-and lint is still clean.
+00:05:35,570 --> 00:05:38,613
+That's why this one starts at once.
 
 84
-00:05:37,609 --> 00:05:42,826
-That's the one to check by eye, so I put it back.
+00:05:39,813 --> 00:05:42,422
+I run lint, and it's clean.
 
 85
-00:05:44,626 --> 00:05:46,800
-Then I start the game.
+00:05:43,322 --> 00:05:46,365
+Now I take out the Art line,
 
 86
-00:05:47,700 --> 00:05:50,309
-Both quests are in the list.
+00:05:46,815 --> 00:05:48,989
+and lint is still clean.
 
 87
-00:05:51,209 --> 00:05:55,557
-I fly into the Nave and straight at the canisters.
+00:05:49,889 --> 00:05:55,107
+That's the one to check by eye, so I put it back.
 
 88
-00:05:56,007 --> 00:06:00,789
-There's the pick-up, times three, and the first quest is done.
+00:05:56,907 --> 00:05:59,080
+Then I start the game.
 
 89
-00:06:02,589 --> 00:06:06,502
-Now the Gallery, all the way to the back.
+00:05:59,980 --> 00:06:02,589
+Both quests are in the list.
 
 90
-00:06:07,402 --> 00:06:09,576
-And there's the stone bowl.
+00:06:03,489 --> 00:06:07,837
+I fly into the Nave and straight at the canisters.
 
 91
-00:06:10,026 --> 00:06:13,939
-I take it, and the second quest is done.
+00:06:08,287 --> 00:06:13,070
+There's the pick-up, times three, and the first quest is done.
 
 92
-00:06:14,839 --> 00:06:18,752
-And I never wrote the line that said so.
+00:06:14,870 --> 00:06:18,783
+Now the Gallery, all the way to the back.
 
 93
-00:06:19,952 --> 00:06:21,691
-Now it's your turn.
+00:06:19,683 --> 00:06:21,857
+And there's the stone bowl.
 
 94
-00:06:22,591 --> 00:06:26,939
-Add a second cache, and make the quest want both.
+00:06:22,307 --> 00:06:26,220
+I take it, and the second quest is done.
 
 95
-00:06:27,839 --> 00:06:32,187
-Make the canisters appear only when the ship comes near.
+00:06:27,120 --> 00:06:31,033
+And I never wrote the line that said so.
 
 96
-00:06:33,087 --> 00:06:37,870
-Make the bowl appear only when Comms has heard Rook out.
+00:06:32,233 --> 00:06:33,972
+Now it's your turn.
 
 97
-00:06:39,670 --> 00:06:43,583
-Then break one line where lint can see it,
+00:06:34,872 --> 00:06:39,220
+Add a second cache, and make the quest want both.
 
 98
-00:06:44,033 --> 00:06:46,207
-and one where it can't.
+00:06:40,120 --> 00:06:44,467
+Make the canisters appear only when the ship comes near.
 
 99
-00:06:47,107 --> 00:06:52,759
+00:06:45,367 --> 00:06:50,150
+Make the bowl appear only when Comms has heard Rook out.
+
+100
+00:06:51,950 --> 00:06:55,863
+Then break one line where lint can see it,
+
+101
+00:06:56,313 --> 00:06:58,487
+and one where it can't.
+
+102
+00:06:59,387 --> 00:07:05,039
 Later in this class, someone goes in and takes that bowl by hand.

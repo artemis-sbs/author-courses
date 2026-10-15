@@ -173,7 +173,7 @@ Go to the very end of the file, leave one empty line, and add:
 At: 0, 0
 Prefab: station
 ---
-The last relay anyone still maintains. Everything past it is rumor.
+The last relay anyone keeps lit. Past it is rumor.
 ```
 
 | Line | What it means |
@@ -193,7 +193,9 @@ Three things happen because of this record:
 3. Kestrel Relay is written into the crew's list of charted places, so they can come
    back to it.
 
-Keep the line under the fence on **one line**. The card shows the first line only.
+Keep the line under the fence on **one line**, and short: 60 characters or fewer. The
+card shows the first line only, and it cuts a longer one at a word and puts three dots
+after it. `The last relay anyone keeps lit. Past it is rumor.` is 50.
 
 This is one landmark, to give your universe a front door. Lecture 5 is the whole map.
 
@@ -293,6 +295,7 @@ So check these by eye:
 - One hash on the title, two on `Scenario` and `Landmarks`, three on `Kestrel Relay`.
 - The keys are `scenario` and `landmarks`, in round brackets.
 - `At:` is two numbers.
+- The landmark's line is one line, of 60 characters or fewer.
 
 **Mistakes in `story.mast` that lint finds**
 

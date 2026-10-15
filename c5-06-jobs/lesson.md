@@ -116,7 +116,11 @@ Add these under Salvage, with an empty line between records.
 Done when: scan 1 derelict
 Reward: 220 credits
 ---
+![](ship://starbase_industry) The Assay Office, Deepwell Assembly
+
 The Assembly wants every dead hull in the Verge on its books. Find one and scan it.
+
+A scan is all they ask. What she was, who flew her and what she carried go into the ledger, and the ledger is how the Assembly decides what anything is worth.
 
 ### [Relay Run](relay_run)
 ---
@@ -127,6 +131,10 @@ Penalty: 60 credits
 ---
 Sealed tallies for Kestrel Relay. Carry them home and the Assembly pays on arrival.
 
+![](icon://hourglass) Ten minutes, from the moment you take them.
+
+Late tallies are worth nothing. Miss the ten minutes and the Assembly bills you for the broken seals.
+
 ### [Clear the Lanes](strike)
 ---
 Tier: 3
@@ -134,6 +142,11 @@ Done when: destroy 6 enemies
 Reward: 600 credits
 ---
 The Compact does not ask this of strangers. Six hulls, and the lanes stay open a season.
+
+- ![](icon://crosshair) Six hulls that hunt the lanes
+- ![](icon://handshake) The Compact's trust, which is worth more than the pay
+
+Freight moves when the lanes are quiet, and Hollin eats when the freight moves.
 ```
 
 | Line | What it means |
@@ -142,9 +155,30 @@ The Compact does not ask this of strangers. Six hulls, and the lanes stay open a
 | `Fails when: 10 minutes` | The job fails ten minutes after it is taken. You know this line from Class 1 |
 | `Penalty: 60 credits` | What a failed job costs the crew. Written like a reward |
 | `Tier: 3` | Offered only to a ship whose standing with that side is 50 or more |
-| The line below the fence | What the crew reads when they select the job in the Quest Log |
+| The text below the fence | The job's briefing. The crew reads it in the Quest Log, once they have taken the job |
 
 Relay Run does a second thing for you. It ends at `0, 0`, so it is a way home that pays.
+
+**A job's text is a page, read after the crew says yes.** Before the job is taken, the
+crew sees only its button: the name and the pay, **Wreck Survey (220 cr)**. Once it is
+taken, selecting it in the Quest Log shows everything under the fence, laid out the way
+a quest's description is in Class 1, Lecture 8: lines one under another run together
+into one paragraph, and an empty line starts the next. So the first paragraph is the
+order, and the rest is why it matters.
+
+A picture can start a line, with the words beside it, as the face did in Class 2. Two
+kinds are new here:
+
+| You type | The Quest Log draws |
+|---|---|
+| `![](ship://starbase_industry) The Assay Office, Deepwell Assembly` | The station, in 3D, with the words beside it. `starbase_industry` is the model the Assay Office's `Art:` line names, so the crew sees the station that is paying |
+| `![](icon://hourglass) Ten minutes, from the moment you take them.` | A small hourglass, one line tall, and the words beside it |
+| `- ![](icon://crosshair) Six hulls that hunt the lanes` | A list item whose bullet is the icon |
+
+The word after `icon://` must be one of the game's icon names: `hourglass`, `crosshair`,
+`handshake`, `flag`, `skull`, `shield`, `person` and `wrench` are a few. An icon name
+the game does not have draws nothing. Lint does not read pictures at all, neither an
+icon's name nor a model's, so copy the names from this page.
 
 ## Step 4 - Put them on offer
 
@@ -235,6 +269,7 @@ So check these by eye:
 - Every `Reward:` has a number and the word `credits`, and a comma before each `earns`.
 - Every word after an `Offers:` is the key of a job, and every job is after somebody's
   `Offers:`.
+- Every name after `icon://` or `ship://` is copied from this page, letter for letter.
 
 ## Step 6 - Play it
 
@@ -301,13 +336,14 @@ sbs run server,helm,comms,science -m MyUniverse map=0
 | Salvage never finishes | There are not two crates of tech where the crew is looking. Tech is rare: its `Weight:` is 10. Try another system |
 | The Relay Run failed, and 60 credits went | More than ten minutes passed between taking it and arriving home |
 | The mission stops working when Comms selects a station | A `Tier:` that is not a number. Read `mast.runtime.log` |
+| A picture is missing from a job's briefing | The name after `icon://` or `ship://` is not one the game has. Copy it again from this page |
 
 ## Exercise
 
 1. Write one job for each of your sides that only that side would offer. Say out loud
    why.
 2. Give one of them `Tier: 2`, and make its text read like work for a crew that is
-   trusted.
+   trusted. Give it two paragraphs: the order, then why it matters.
 3. Write a job that pays well and costs standing with another side. Decide which side
    hears about it, and which trait they would hold against the crew.
 4. Write one job against the clock. Play it, and let it fail once.

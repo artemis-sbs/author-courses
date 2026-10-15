@@ -39,11 +39,16 @@ s05_the_first_lead_0	Now the part the game does read.
 s05_the_first_lead_1	One landmark, a lifeboat called the Wren.
 s05_the_first_lead_2	And one lead that sends the crew to her.
 s05_the_first_lead_3	You know every line of these from the last class.
-s05_the_first_lead_4	Two habits are new.
-s05_the_first_lead_5	The title starts with the campaign's name,
-s05_the_first_lead_6	because in week six the Quest Log is a long list.
-s05_the_first_lead_7	And the key starts with the evening's number,
-s05_the_first_lead_8	because you're going to write sixty of them.
+s05_the_first_lead_4	Three habits are new.
+s05_the_first_lead_5	The lead's text is a page,
+s05_the_first_lead_6	so I give it three short paragraphs, with an empty line between them.
+s05_the_first_lead_7	What happened, where to go, and why tonight.
+s05_the_first_lead_8	The landmark stays one line,
+s05_the_first_lead_9	because the arrival card shows only its first line.
+s05_the_first_lead_10	The title starts with the campaign's name,
+s05_the_first_lead_11	because in week six the Quest Log is a long list.
+s05_the_first_lead_12	And the key starts with the evening's number,
+s05_the_first_lead_13	because you're going to write sixty of them.
 s06_lint_0	I save, and I run lint,
 s06_lint_1	and it says clean.
 s06_lint_2	Now look at the count: one universe file, one story file.

@@ -236,6 +236,14 @@ Objective: Find the cairn in the side room off The Nave
 Done when: reach cairn 400
 ---
 Five surveyors went into The Hollow. Four came out.
+
+| Surveyor | Came out |
+|---|---|
+| Rook, who led the survey | Yes |
+| Imre, Sato and Vell | Yes |
+| Dace | No |
+
+Rook says they built Dace a cairn in a side room off The Nave. Nobody has stood in that room since.
 ```
 
 | Line | What it means |
@@ -243,6 +251,10 @@ Five surveyors went into The Hollow. Four came out.
 | `### ` | Three hashes: a quest of its own. It is not a step of anything |
 | `Starts when: revealed` | Asleep, and out of the quest list, until something starts it |
 | `Done when: reach cairn 400` | Finished when a ship is within 400 of the place that wears the role `cairn` |
+| The lines with upright bars between the words | A table in the quest list, as in Class 1, Lecture 11: a header row, a row of dashes, then one row per line. The crew sees who came out at a glance |
+
+This quest is only seen once the crew has heard the names at the ring, so its table can
+use them. Leave a blank line above the table and below it.
 
 Then let the answer start it. In **The Entry for Dace**:
 
@@ -383,7 +395,7 @@ Two rules for a cutscene your crew will thank you for:
 Run lint now. It has something to say about the section you just typed:
 
 ```
-  [WARNING] line 267:5: nothing in this mission reads a section keyed `cutscenes`, so its records are never loaded. The story asks this file for: characters, crew, dialogue, items, landmarks, quests, relics, scans, sides. Change the key in round brackets to one of those, or add the line that reads it (section-not-loaded)
+  [WARNING] line 275:5: nothing in this mission reads a section keyed `cutscenes`, so its records are never loaded. The story asks this file for: characters, crew, dialogue, items, landmarks, quests, relics, scans, sides. Change the key in round brackets to one of those, or add the line that reads it (section-not-loaded)
 ```
 
 Lint is right. Nothing in your mission reads the Cutscenes section, and nothing plays it.
@@ -482,6 +494,14 @@ Done when: reach cairn 400
 Then: signal cairn_found
 ---
 Five surveyors went into The Hollow. Four came out.
+
+| Surveyor | Came out |
+|---|---|
+| Rook, who led the survey | Yes |
+| Imre, Sato and Vell | Yes |
+| Dace | No |
+
+Rook says they built Dace a cairn in a side room off The Nave. Nobody has stood in that room since.
 ```
 
 In the Relics section, below The Niche:

@@ -62,7 +62,8 @@ tentpoles named, a 45 second pursuit fuse). Storm's Beacon itself was never star
 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 
-1. Every screen: the Quest Log, the arrival card, the Comms buttons.
+1. Every screen: the Quest Log (One of Five drawn as three paragraphs), the arrival
+   card, the Comms buttons.
 2. That closing the game's windows and typing the same line continues the save in the
    real game, for standing and story steps. (Class 5 Lecture 2's engine check saw it for
    a cargo run, credits, the system and a charted place.)
@@ -115,13 +116,16 @@ to look exactly like a record. ||"
 ### 5. The first lead
 
 **Screen:** `kestrel_verge.amd`. Add The Wren under the last landmark, then One of Five
-under the last narrative record.
+under the last narrative record. Point at the two empty lines in its text.
 
 **Say:** "Now the part the game does read. || One landmark, a lifeboat called the Wren. |
 And one lead that sends the crew to her. ||| You know every line of these from the last
-class. || Two habits are new. || The title starts with the campaign's name, | because in
-week six the Quest Log is a long list. || And the key starts with the evening's number, |
-because you're going to write sixty of them. ||"
+class. || Three habits are new. || The lead's text is a page, | so I give it three short
+paragraphs, with an empty line between them. || What happened, where to go, and why
+tonight. ||| The landmark stays one line, | because the arrival card shows only its first
+line. ||| The title starts with the campaign's name, | because in week six the Quest Log
+is a long list. || And the key starts with the evening's number, | because you're going
+to write sixty of them. ||"
 
 ### 6. Lint
 

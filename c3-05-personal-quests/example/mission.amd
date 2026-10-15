@@ -47,7 +47,11 @@ Done when: reach derelict 500
 Then: signal board_hulk
 Reward: 100 credits
 ---
+![](ship://tsn_warpster) The Unknown Hulk, as DS 1's sensors see her.
+
 The hulk is not answering hails. Bring the ship in close and take a look.
+
+Inside 500, a boarding party can go across. Whoever goes, goes as themselves, so think about who you send.
 
 ### [Account for the Crew](account)
 ---
@@ -58,6 +62,13 @@ Done when: signal names_known
 Reward: 150 credits
 ---
 Somebody crewed that ship. Command wants names.
+
+## Where names are kept
+
+- ![](icon://person) Suits. Every suit in an airlock is tagged with its owner's name.
+- ![](icon://tablet) The log. A captain's log says who is aboard.
+
+Bring the names home, and DS 1 can tell their families something.
 
 
 // ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing

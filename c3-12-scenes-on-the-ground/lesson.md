@@ -86,9 +86,13 @@ Reward: 100 credits
 Leads to: pim
 ---
 Nine days of survey readings, in the jaws of the thing in the cistern.
+
+Pim, Marrow's apprentice, dropped it on the cistern walkway and ran. Bring it back to her, and do not keep it.
 ```
 
-You met `Starts when: revealed` in Lecture 6. Save, and run lint:
+You met `Starts when: revealed` in Lecture 6. The description is two paragraphs, because
+the Quest Log shows all of it once Pim's answer starts the quest. The second says who is
+asking, for whoever stayed on the ship and has never met her. Save, and run lint:
 
 ```
 == mission.amd ==

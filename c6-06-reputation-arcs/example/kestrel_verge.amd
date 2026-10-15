@@ -246,7 +246,11 @@ Starts when: at once
 Done when: reach 2, 2
 Then: reveal s01_scan
 ---
-The Tern carried five boats and forty-one people. A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+The Tern carried five boats and forty-one people. When the Compact found her, forty years late, every davit was empty.
+
+A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+
+A boat that was launched had somebody in it. The Gleaners strip every dead hull in the Verge, so be there before they are.
 
 ### [The Long Count: Her Log](s01_scan)
 ---
@@ -274,7 +278,16 @@ Starts when: revealed
 Done when: reach -2, 3
 Then: reveal s02_clear
 ---
-The Wren's log gives the next boat's last bearing: (-2, 3), past the edge of the Fields. She was the Dunlin. Somebody out there is still answering her hails.
+The Wren's log gives the next boat's last bearing: (-2, 3), past the edge of the Fields. She was the Dunlin.
+
+Somebody out there is still answering her hails.
+
+## The count so far
+
+| Boat | Where | What we know |
+|---|---|---|
+| The Wren | (2, 2) | Launched, and empty. Nine names in her log |
+| The Dunlin | (-2, 3) | Something answers on her channel |
 
 ### [The Long Count: Bait](s02_clear)
 ---
@@ -283,7 +296,9 @@ Starts when: revealed
 Done when: destroy 2 enemies
 Then: reveal s02_home
 ---
-The Dunlin is a lure, and the ships in the cloud have been waiting for someone to answer. Two of them. Break the trap.
+[](ship://torgoth_destroyer) Gleaner hulls, Torgoth-built. Two of them, in the cloud.
+
+The Dunlin is a lure, and the ships in the cloud have been waiting for someone to answer. Break the trap.
 
 ### [The Long Count: Enter It Twice](s02_home)
 ---
@@ -302,7 +317,17 @@ Starts when: revealed
 Done when: reach 3, 1
 Then: reveal s04_go
 ---
-A boat does not empty itself. The Deepwell count every hull that is sold in the Verge. Go to the Assay Office at (3, 1) and ask what they paid for a boat called the Plover.
+A boat does not empty itself. The Deepwell count every hull that is sold in the Verge.
+
+Go to the Assay Office at (3, 1) and ask what they paid for a boat called the Plover.
+
+## The count so far
+
+| Boat | Where | What we know |
+|---|---|---|
+| The Wren | (2, 2) | Launched, and empty. Nine names in her log |
+| The Dunlin | (-2, 3) | Empty, her lockers full. Her voice was a recording |
+| The Plover | Sold | Ask the Deepwell who bought her |
 
 ### [The Long Count: Four of Five](s04_go)
 ---
@@ -329,7 +354,21 @@ Starts when: revealed
 Done when: reach 0, 0
 Reward: 1000 credits
 ---
-Five boats, and not one body. Forty-one people left the Tern alive and went somewhere together. Take the Count home to Kestrel Relay.
+![](face://ter #9c7056 0 0;ter #fff 13 6;ter #9c7056 1 1;ter #9c7056 11 2;ter #704025 20 3;) Registrar Amsel, who keeps the Count at Kestrel Relay
+
+Five boats, and not one body. Forty-one people left the Tern alive and went somewhere together.
+
+## The count, closed
+
+| Boat | Where | What we know |
+|---|---|---|
+| The Wren | (2, 2) | Launched, and empty. Nine names in her log |
+| The Dunlin | (-2, 3) | Empty, her lockers full. A lure |
+| The Plover | (3, 1) | Sold on by the Assay Office |
+| The Petrel | (4, -2) | Holed and adrift. Her beacon still counting |
+| The Skua | (-3, -2) | In the Gleaners' yard |
+
+Take the Count home to Kestrel Relay. Amsel will want to enter it herself.
 
 ### [The Tern's Manifest](door_manifest)
 ---
@@ -339,6 +378,12 @@ Done when: signal manifest_seen
 Reward: 200 credits
 ---
 The Compact keeps the Tern's manifest under seal, and does not break a seal for strangers. Earn their trust at Kestrel Relay, then ask.
+
+## What the Compact trusts
+
+- ![](icon://handshake) A ship that pays the relay levy
+- ![](icon://flag) A ship that flies their patrols and escorts
+- ![](icon://ban) Not a ship that trades with the Gleaners
 
 ## [Dialogue](dialogue)
 

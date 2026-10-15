@@ -259,125 +259,141 @@ The crew's handheld has a Library,
 and this file becomes a chapter in it.
 
 66
-00:04:44,952 --> 00:04:48,865
-Put in what somebody who lives here would know.
+00:04:44,952 --> 00:04:47,996
+Each page is drawn like a briefing,
 
 67
-00:04:49,765 --> 00:04:52,809
-Keep the secrets of your story out.
+00:04:48,446 --> 00:04:51,924
+with paragraphs, and a table where it helps.
 
 68
-00:04:54,009 --> 00:04:55,748
-Now for the reward.
+00:04:52,824 --> 00:04:55,433
+This heading has no square brackets,
 
 69
-00:04:56,648 --> 00:05:00,126
-s b s docs, the folder, a title,
+00:04:55,883 --> 00:05:01,535
+so it's a heading inside the page, not a page of its own.
 
 70
-00:05:00,576 --> 00:05:03,620
-and I ask for all four editions.
+00:05:03,335 --> 00:05:07,248
+Put in what somebody who lives here would know.
 
 71
-00:05:05,420 --> 00:05:08,028
-The prose one is the book.
+00:05:08,148 --> 00:05:11,191
+Keep the secrets of your story out.
 
 72
-00:05:08,928 --> 00:05:11,537
-The catalog sorts everything by kind.
+00:05:12,391 --> 00:05:14,130
+Now for the reward.
 
 73
-00:05:12,437 --> 00:05:15,046
-The screenplay is only the conversations.
+00:05:15,030 --> 00:05:18,509
+s b s docs, the folder, a title,
 
 74
-00:05:15,496 --> 00:05:19,409
-Read one aloud. It's the best test there is.
+00:05:18,959 --> 00:05:22,002
+and I ask for all four editions.
 
 75
-00:05:21,209 --> 00:05:23,817
-And the bible is the plot.
+00:05:23,802 --> 00:05:26,411
+The prose one is the book.
 
 76
-00:05:24,717 --> 00:05:26,457
-Look at this beat.
+00:05:27,311 --> 00:05:29,920
+The catalog sorts everything by kind.
 
 77
-00:05:26,907 --> 00:05:31,254
-It knows the call leads here, across the two files.
+00:05:30,820 --> 00:05:33,428
+The screenplay is only the conversations.
 
 78
-00:05:33,054 --> 00:05:34,793
-Then there's the website.
+00:05:33,878 --> 00:05:37,791
+Read one aloud. It's the best test there is.
 
 79
-00:05:35,693 --> 00:05:39,172
-One page for each file, a search box,
+00:05:39,591 --> 00:05:42,200
+And the bible is the plot.
 
 80
-00:05:39,622 --> 00:05:43,970
-and every answer is a link to where it goes.
+00:05:43,100 --> 00:05:44,839
+Look at this beat.
 
 81
-00:05:44,870 --> 00:05:49,652
-Zip the folder and send it to whoever's writing with you.
+00:05:45,289 --> 00:05:49,637
+It knows the call leads here, across the two files.
 
 82
-00:05:50,852 --> 00:05:53,896
-And the game is the same game.
+00:05:51,437 --> 00:05:53,176
+Then there's the website.
 
 83
-00:05:54,796 --> 00:05:58,274
-There's the same station, with the same buttons.
+00:05:54,076 --> 00:05:57,554
+One page for each file, a search box,
 
 84
-00:05:59,174 --> 00:06:04,391
-The levy comes from one file now, and the jobs from another.
+00:05:58,004 --> 00:06:02,352
+and every answer is a link to where it goes.
 
 85
-00:06:06,191 --> 00:06:09,670
-Here's the Library, with my pages in it.
+00:06:03,252 --> 00:06:08,035
+Zip the folder and send it to whoever's writing with you.
 
 86
-00:06:11,470 --> 00:06:14,078
-So, a last word about lint.
+00:06:09,235 --> 00:06:12,278
+And the game is the same game.
 
 87
-00:06:14,978 --> 00:06:20,630
-After a split, it misses a couple of things it used to catch,
+00:06:13,178 --> 00:06:16,657
+There's the same station, with the same buttons.
 
 88
-00:06:21,080 --> 00:06:24,124
-like a file name that isn't there.
+00:06:17,557 --> 00:06:22,774
+The levy comes from one file now, and the jobs from another.
 
 89
-00:06:25,024 --> 00:06:29,807
-The list on the page is longer today for that reason.
+00:06:24,574 --> 00:06:28,052
+Here's the Library, with my pages in it.
 
 90
-00:06:31,007 --> 00:06:32,746
-Now it's your turn.
+00:06:29,852 --> 00:06:32,461
+So, a last word about lint.
 
 91
-00:06:33,646 --> 00:06:38,428
-Split your universe, and run lint until every file says clean.
+00:06:33,361 --> 00:06:39,013
+After a split, it misses a couple of things it used to catch,
 
 92
-00:06:39,328 --> 00:06:42,807
-Write a voice anyone can ask for directions,
+00:06:39,463 --> 00:06:42,507
+like a file name that isn't there.
 
 93
-00:06:43,257 --> 00:06:45,430
-and four pages of lore.
+00:06:43,407 --> 00:06:48,189
+The list on the page is longer today for that reason.
 
 94
-00:06:47,230 --> 00:06:51,578
-Then print the screenplay, and read one conversation out loud.
+00:06:49,389 --> 00:06:51,128
+Now it's your turn.
 
 95
-00:06:52,478 --> 00:06:55,957
-Change a line because of what you heard.
+00:06:52,028 --> 00:06:56,811
+Split your universe, and run lint until every file says clean.
 
 96
-00:06:57,757 --> 00:07:01,235
+00:06:57,711 --> 00:07:01,189
+Write a voice anyone can ask for directions,
+
+97
+00:07:01,639 --> 00:07:03,813
+and four pages of lore.
+
+98
+00:07:05,613 --> 00:07:09,961
+Then print the screenplay, and read one conversation out loud.
+
+99
+00:07:10,861 --> 00:07:14,339
+Change a line because of what you heard.
+
+100
+00:07:16,139 --> 00:07:19,617
 Next time, the crew gets off the ship.

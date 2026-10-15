@@ -43,7 +43,7 @@ SHOTS = [
     {
         "id": "s03_the_heading",
         "title": 'The heading',
-        "frames": 1269,
+        "frames": 1874,
         "captions": [
             ('The story needs a heading,', 0, 65),
             ('and I put it below the last quest in the section.', 79, 222),
@@ -53,10 +53,16 @@ SHOTS = [
             ("There's a Win sentence for when it's finished,", 643, 747),
             ('and a Lose sentence for when it fails.', 761, 865),
             ('All of that is Class 1.', 919, 997),
-            ('Nobody warns the crew about the clock,', 1024, 1116),
-            ('so I say twenty minutes in the description.', 1129, 1233),
+            ("The description's a page,", 1024, 1076),
+            ('so it gets three short paragraphs.', 1090, 1168),
+            ('First the station, drawn beside its own line,', 1195, 1300),
+            ("so the crew knows who's sending them.", 1313, 1404),
+            ("Then what's known about the markers.", 1431, 1510),
+            ('Nobody warns the crew about the clock,', 1537, 1628),
+            ('so the last paragraph says twenty minutes,', 1641, 1733),
+            ('and that the haze is closing in.', 1746, 1838),
         ],
-        "pauses": [0.45, 0.9, 0.45, 0.9, 0.9, 0.45, 1.8, 0.9, 0.45, 1.2],
+        "pauses": [0.45, 0.9, 0.45, 0.9, 0.9, 0.45, 1.8, 0.9, 0.45, 0.9, 0.45, 0.9, 0.9, 0.45, 0.45, 1.2],
     },
     {
         "id": "s04_the_way_in",

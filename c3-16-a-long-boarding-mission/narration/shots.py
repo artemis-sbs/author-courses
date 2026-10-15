@@ -84,7 +84,7 @@ SHOTS = [
     {
         "id": "s05_the_quest_tree",
         "title": 'The quest tree',
-        "frames": 1704,
+        "frames": 2282,
         "captions": [
             ('Now the quest tree.', 0, 52),
             ('Remember what the bridge gets: the shared quests, and nothing else.', 66, 209),
@@ -99,8 +99,13 @@ SHOTS = [
             ('I had the endings outside the arc.', 1327, 1419),
             ('The arc finished early, and the clock stopped with it.', 1446, 1576),
             ('Keep the endings inside, and waiting.', 1590, 1668),
+            ("And the arc's description is the bridge's briefing.", 1722, 1826),
+            ('Nobody aboard hears Ada Corvin,', 1853, 1919),
+            ('so the arc says what she said.', 1932, 2023),
+            ("Who's where, in a table,", 2050, 2116),
+            ('and the air she counted, on an hourglass line.', 2129, 2246),
         ],
-        "pauses": [0.45, 0.9, 1.8, 0.9, 0.45, 1.8, 0.9, 0.45, 1.8, 0.45, 0.9, 0.45, 1.2],
+        "pauses": [0.45, 0.9, 1.8, 0.9, 0.45, 1.8, 0.9, 0.45, 1.8, 0.45, 0.9, 0.45, 1.8, 0.9, 0.45, 0.9, 0.45, 1.2],
     },
     {
         "id": "s06_two_endings_and_a_full_shot",

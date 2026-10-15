@@ -120,7 +120,8 @@ and `signal hollow_taken`.
 when the slab is cut. || And a step that's done when the bowl is taken. ||| Look at
 those two signals. || I didn't make them up, | and nothing in my files sends them, |
 because the game does. ||| It builds each word from a key in the ruin's file. || Slab, then
-opened, and hollow, then taken. ||"
+opened, and hollow, then taken. ||| And each briefing is a page, as in Lecture Seven. ||
+The cut gets two icon bullets, | who suits up, and what they cut. ||"
 
 ### 6. Lint
 

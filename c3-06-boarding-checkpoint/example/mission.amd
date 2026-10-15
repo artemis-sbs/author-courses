@@ -47,7 +47,11 @@ Done when: reach derelict 500
 Then: signal board_hulk
 Reward: 100 credits
 ---
+![](ship://tsn_warpster) The Unknown Hulk, as DS 1's sensors see her.
+
 The hulk is not answering hails. Bring the ship in close and take a look.
+
+Inside 500, a boarding party can go across. Whoever goes, goes as themselves, so think about who you send.
 
 ### [Account for the Crew](account)
 ---
@@ -59,6 +63,14 @@ Reward: 150 credits
 ---
 Somebody crewed that ship. Command wants to know what became of them.
 
+| What | What DS 1 knows |
+|---|---|
+| Her registry | Not on any list DS 1 keeps |
+| Her last call | None on record. She went quiet without a word |
+| Her power | One small cell, still warm. Everything else is cold |
+
+If anybody is still aboard her, they have been there a long time.
+
 ### [Stand By the Sleepers](stand_by)
 ---
 Scope: shared
@@ -69,6 +81,10 @@ Reward: 300 credits
 ---
 Twelve people are waking up cold. Stay close until they can stand.
 
+![](icon://hourglass) Thirty seconds, while the last of the lids come up.
+
+They went to sleep to make one small cell last. Nobody has told them yet how long it lasted.
+
 ### [Carry Word Home](carry_word)
 ---
 Scope: shared
@@ -78,6 +94,10 @@ Done when: reach station 1000
 Reward: 200 credits
 ---
 They asked for a doctor. Go and get one.
+
+![](ship://starbase_command) DS 1, and the nearest doctor. Within 1000 of her is close enough.
+
+The sleepers are safe for as long as their one cell lasts. Nobody aboard knows how long that is.
 
 
 // ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing

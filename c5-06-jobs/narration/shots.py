@@ -98,7 +98,31 @@ SHOTS = [
         "pauses": [0.9, 1.8, 0.9, 0.45, 0.9, 1.8, 0.9, 1.8, 0.9, 0.45, 1.2],
     },
     {
-        "id": "s06_on_offer",
+        "id": "s06_the_briefing",
+        "title": 'The briefing',
+        "frames": 2151,
+        "captions": [
+            ("Now look at what's under the fence.", 0, 91),
+            ("That's the job's briefing, and it's a page, not a line.", 118, 262),
+            ('Before the crew takes a job,', 316, 394),
+            ('all they see is a button, with a name and a price.', 408, 564),
+            ("Once they've taken it, the Quest Log shows them all of this.", 591, 748),
+            ('The first line puts the Assay Office beside the words, in three dimensions.', 802, 971),
+            ("It's the same model as the station's Art line,", 998, 1116),
+            ("so they see who's paying.", 1129, 1194),
+            ('An empty line starts a new paragraph.', 1248, 1340),
+            ('The first one is the order,', 1367, 1445),
+            ('and the second is why it matters.', 1458, 1550),
+            ('And an icon can start a line, or be a bullet.', 1604, 1747),
+            ('An hourglass for the clock,', 1774, 1839),
+            ('and a crosshair for the hulls.', 1853, 1931),
+            ("Lint doesn't check those names,", 1958, 2023),
+            ('so copy them from the page.', 2037, 2115),
+        ],
+        "pauses": [0.9, 1.8, 0.45, 0.9, 1.8, 0.9, 0.45, 1.8, 0.9, 0.45, 1.8, 0.9, 0.45, 0.9, 0.45, 1.2],
+    },
+    {
+        "id": "s07_on_offer",
         "title": 'On offer',
         "frames": 1035,
         "captions": [
@@ -114,7 +138,7 @@ SHOTS = [
         "pauses": [0.9, 1.8, 0.9, 1.8, 0.45, 0.9, 0.45, 1.2],
     },
     {
-        "id": "s07_check",
+        "id": "s08_check",
         "title": 'Check',
         "frames": 1548,
         "captions": [
@@ -135,7 +159,7 @@ SHOTS = [
         "pauses": [1.8, 0.9, 0.45, 0.9, 1.8, 0.45, 0.9, 1.8, 0.9, 0.9, 0.45, 0.9, 1.2],
     },
     {
-        "id": "s08_work_the_board",
+        "id": "s09_work_the_board",
         "title": 'Work the board',
         "frames": 1455,
         "captions": [
@@ -154,7 +178,7 @@ SHOTS = [
         "pauses": [0.9, 0.45, 1.8, 0.9, 1.8, 0.9, 1.8, 0.45, 0.9, 0.45, 1.2],
     },
     {
-        "id": "s09_paid_and_offered_again",
+        "id": "s10_paid_and_offered_again",
         "title": 'Paid, and offered again',
         "frames": 1495,
         "captions": [
@@ -173,7 +197,7 @@ SHOTS = [
         "pauses": [0.45, 1.8, 0.9, 0.45, 1.8, 0.9, 0.9, 1.8, 0.9, 0.9, 1.2],
     },
     {
-        "id": "s10_your_turn",
+        "id": "s11_your_turn",
         "title": 'Your turn',
         "frames": 902,
         "captions": [

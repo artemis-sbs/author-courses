@@ -83,7 +83,7 @@ SHOTS = [
     {
         "id": "s05_a_clock",
         "title": 'A clock',
-        "frames": 1468,
+        "frames": 1757,
         "captions": [
             ('You have four ways to press on a crew.', 0, 117),
             ('A clock, a patrol,', 144, 197),
@@ -94,10 +94,13 @@ SHOTS = [
             ('It used to say the beacon was slag.', 815, 919),
             ("Now it's read when the clock runs out too,", 946, 1064),
             ('so it has to be true every way.', 1077, 1182),
-            ('And the clock starts when the quest starts.', 1236, 1340),
-            ('This one starts with the game.', 1354, 1432),
+            ('Then I tell the bridge.', 1236, 1301),
+            ('One line in the description,', 1314, 1380),
+            ('with an hourglass at the start.', 1393, 1471),
+            ('And the clock starts when the quest starts.', 1525, 1630),
+            ('This one starts with the game.', 1643, 1721),
         ],
-        "pauses": [0.9, 0.45, 1.8, 0.9, 1.8, 0.45, 0.9, 0.45, 1.8, 0.45, 1.2],
+        "pauses": [0.9, 0.45, 1.8, 0.9, 1.8, 0.45, 0.9, 0.45, 1.8, 0.45, 0.45, 1.8, 0.45, 1.2],
     },
     {
         "id": "s06_can_every_party_get_there",

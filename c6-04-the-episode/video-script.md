@@ -49,7 +49,8 @@ pattern. Their pattern was read. Their mission was never started.
 
 1. The fight, and how long two ships of three take a crew.
 2. The nebula round the Dunlin.
-3. The Quest Log, the cards.
+3. The Quest Log, the cards. Bait's Torgoth hull drawn at the top of its text, and
+   Three of Five's table.
 
 ## Scenes
 
@@ -79,7 +80,9 @@ step that ends at home and pays. ||| None of that's new today. || Today's about 
 **Say:** "So here's evening one, with everything taken out that belongs only to evening
 one. ||| A landmark, and three steps. || The words in capitals are the slots. ||| The
 evening's number, two digits. || The system, twice, and it must be the same both times.
-|| What's in the way. || What finishes the objective. | And what it pays. ||| Everything else is yours: | four titles, and four short pieces of text. ||| Keep the pattern
+|| What's in the way. || What finishes the objective. | And what it pays. ||| The open
+ends with the count so far, | a table with one row for each boat. || You copy it from
+the open before, | and add a row. ||| Everything else is yours: | four titles, and four short pieces of text. ||| Keep the pattern
 in your campaign page, | so it's there every time you sit down. ||"
 
 ### 4. Four endings
@@ -95,12 +98,16 @@ later lecture. || And then there's reach, | for an evening that's about getting 
 ### 5. Evening two
 
 **Screen:** `campaign.md`: the Evening 2 sheet. Then `kestrel_verge.amd`: add The Dunlin.
-Find Two of Five, add its `Then:` line. Add Bait, Enter It Twice, Three of Five.
+Find Two of Five, add its `Then:` line. Add Bait, Enter It Twice, Three of Five. Point at
+Bait's ship line, then at Three of Five's table.
 
 **Say:** "The sheet first, as always. || Then the landmark, the Dunlin, | in cloud, and
 guarded. ||| Now look at the open. | I don't have to write it. || It's already there,
 because it was last week's hook. | It only needs its next step. ||| So I write three
-things. || The objective: this one's a trap, | and they have to break it. || Then the way home, | and the hook for evening three. ||| That's the rhythm of the whole campaign. || Every time you sit down, the open's already written, | and you write a place, a deed, a way home, and the next hook. ||"
+things. || The objective: this one's a trap, | and they have to break it. || Its text
+starts with a ship, a Torgoth hull, | because the Gleaners fly Torgoth. || The crew sees
+what's waiting before they jump. ||| Then the way home, | and the hook for evening three.
+|| The hook copies the count, | and adds a row for the Plover. ||| That's the rhythm of the whole campaign. || Every time you sit down, the open's already written, | and you write a place, a deed, a way home, and the next hook. ||"
 
 ### 6. Two of three
 

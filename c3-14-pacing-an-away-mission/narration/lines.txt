@@ -49,8 +49,11 @@ s05_a_clock_5	The Lose sentence has to change with it.
 s05_a_clock_6	It used to say the beacon was slag.
 s05_a_clock_7	Now it's read when the clock runs out too,
 s05_a_clock_8	so it has to be true every way.
-s05_a_clock_9	And the clock starts when the quest starts.
-s05_a_clock_10	This one starts with the game.
+s05_a_clock_9	Then I tell the bridge.
+s05_a_clock_10	One line in the description,
+s05_a_clock_11	with an hourglass at the start.
+s05_a_clock_12	And the clock starts when the quest starts.
+s05_a_clock_13	This one starts with the game.
 s06_can_every_party_get_there_0	Lint doesn't walk your map.
 s06_can_every_party_get_there_1	You do, on paper, in three lists.
 s06_can_every_party_get_there_2	Every area, every item, every ending.

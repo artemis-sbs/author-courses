@@ -231,137 +231,153 @@ or a ruin's piece has been taken.
 Lint knows all three.
 
 59
-00:04:02,680 --> 00:04:07,463
-Now here's the reason I kept this in the same mission.
+00:04:03,280 --> 00:04:06,324
+The description borrows two things from earlier.
 
 60
-00:04:08,363 --> 00:04:11,841
-I have two places with the role entrance.
+00:04:07,224 --> 00:04:12,441
+The station's lead line, so the crew knows it's DS 1 asking.
 
 61
-00:04:12,291 --> 00:04:14,030
-The game needs both.
+00:04:13,341 --> 00:04:18,559
+And a short list, with a person and a wrench for bullets,
 
 62
-00:04:15,830 --> 00:04:18,874
-But my story uses that word too.
+00:04:19,009 --> 00:04:23,357
+so whoever reads it knows what to do, in order.
 
 63
-00:04:19,774 --> 00:04:23,252
-The first step says reach entrance, one thousand.
+00:04:24,557 --> 00:04:29,339
+Now here's the reason I kept this in the same mission.
 
 64
-00:04:24,152 --> 00:04:27,630
-And reach doesn't know which entrance I meant.
+00:04:30,239 --> 00:04:33,717
+I have two places with the role entrance.
 
 65
-00:04:29,430 --> 00:04:34,648
-So a suit that steps out of the airlock at the station
+00:04:34,167 --> 00:04:35,907
+The game needs both.
 
 66
-00:04:35,098 --> 00:04:37,272
-is standing on an entrance,
+00:04:37,707 --> 00:04:40,750
+But my story uses that word too.
 
 67
-00:04:37,722 --> 00:04:39,896
-and the step finishes there.
+00:04:41,650 --> 00:04:45,128
+The first step says reach entrance, one thousand.
 
 68
-00:04:40,796 --> 00:04:45,143
-It pays, and it sends the crew to the altar,
+00:04:46,028 --> 00:04:49,507
+And reach doesn't know which entrance I meant.
 
 69
-00:04:45,593 --> 00:04:47,333
-before they've left home.
+00:04:51,307 --> 00:04:56,524
+So a suit that steps out of the airlock at the station
 
 70
-00:04:49,133 --> 00:04:50,872
-Lint can't see it.
+00:04:56,974 --> 00:04:59,148
+is standing on an entrance,
 
 71
-00:04:51,322 --> 00:04:53,061
-Both lines are correct.
+00:04:59,598 --> 00:05:01,772
+and the step finishes there.
 
 72
-00:04:53,961 --> 00:04:57,439
-The cure is a role of my own.
+00:05:02,672 --> 00:05:07,020
+It pays, and it sends the crew to the altar,
 
 73
-00:04:58,339 --> 00:05:01,817
-I add hollow door to the Way In,
+00:05:07,470 --> 00:05:09,209
+before they've left home.
 
 74
-00:05:02,267 --> 00:05:04,876
-and the step waits for that.
+00:05:11,009 --> 00:05:12,748
+Lint can't see it.
 
 75
-00:05:06,076 --> 00:05:09,554
-Lint is clean, so I start the game.
+00:05:13,198 --> 00:05:14,937
+Both lines are correct.
 
 76
-00:05:10,454 --> 00:05:13,498
-The Boarding Party app names the worksite,
+00:05:15,837 --> 00:05:19,315
+The cure is a role of my own.
 
 77
-00:05:13,948 --> 00:05:15,687
-so I suit up.
+00:05:20,215 --> 00:05:23,693
+I add hollow door to the Way In,
 
 78
-00:05:17,487 --> 00:05:20,965
-There's one place on the list, the mast.
+00:05:24,143 --> 00:05:26,752
+and the step waits for that.
 
 79
-00:05:21,415 --> 00:05:24,893
-I pick it, and the suit flies round.
+00:05:27,952 --> 00:05:31,430
+Lint is clean, so I start the game.
 
 80
-00:05:25,793 --> 00:05:29,272
-On Fire, the row says Repair, Survey Mast.
+00:05:32,330 --> 00:05:35,374
+The Boarding Party app names the worksite,
 
 81
-00:05:30,172 --> 00:05:32,780
-I select it, I press again,
+00:05:35,824 --> 00:05:37,563
+so I suit up.
 
 82
-00:05:33,230 --> 00:05:36,274
-and the banner says repair, twelve seconds.
+00:05:39,363 --> 00:05:42,841
+There's one place on the list, the mast.
 
 83
-00:05:38,074 --> 00:05:39,813
-And then it's done.
+00:05:43,291 --> 00:05:46,770
+I pick it, and the suit flies round.
 
 84
-00:05:40,263 --> 00:05:44,611
-The quest is finished, and I never sent the word.
+00:05:47,670 --> 00:05:51,148
+On Fire, the row says Repair, Survey Mast.
 
 85
-00:05:45,811 --> 00:05:47,550
-Now it's your turn.
+00:05:52,048 --> 00:05:54,657
+I select it, I press again,
 
 86
-00:05:48,450 --> 00:05:51,493
-Add a valve that's worked by hand,
+00:05:55,107 --> 00:05:58,150
+and the banner says repair, twelve seconds.
 
 87
-00:05:51,943 --> 00:05:54,987
-and a panel that's hauled into place.
+00:05:59,950 --> 00:06:01,689
+And then it's done.
 
 88
-00:05:55,887 --> 00:05:58,930
-Write a quest for one of them.
+00:06:02,139 --> 00:06:06,487
+The quest is finished, and I never sent the word.
 
 89
-00:06:00,730 --> 00:06:04,643
-Then break one line where lint can see it,
+00:06:07,687 --> 00:06:09,426
+Now it's your turn.
 
 90
-00:06:05,093 --> 00:06:07,267
-and one where it can't.
+00:06:10,326 --> 00:06:13,370
+Add a valve that's worked by hand,
 
 91
-00:06:08,167 --> 00:06:10,776
-Next time is the last one:
+00:06:13,820 --> 00:06:16,863
+and a panel that's hauled into place.
 
 92
-00:06:11,226 --> 00:06:13,835
+00:06:17,763 --> 00:06:20,807
+Write a quest for one of them.
+
+93
+00:06:22,607 --> 00:06:26,520
+Then break one line where lint can see it,
+
+94
+00:06:26,970 --> 00:06:29,143
+and one where it can't.
+
+95
+00:06:30,043 --> 00:06:32,652
+Next time is the last one:
+
+96
+00:06:33,102 --> 00:06:35,711
 the whole class, in one episode.

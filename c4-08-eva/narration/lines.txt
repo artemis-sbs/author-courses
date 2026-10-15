@@ -51,6 +51,13 @@ s05_the_slab_is_a_step_5	and the altar's step now reveals this one.
 s05_the_slab_is_a_step_6	I don't send that word anywhere.
 s05_the_slab_is_a_step_7	The game sends it,
 s05_the_slab_is_a_step_8	however the slab comes open.
+s05_the_slab_is_a_step_9	Under the first sentence there's a short list,
+s05_the_slab_is_a_step_10	and each bullet is a little picture.
+s05_the_slab_is_a_step_11	A hyphen and a space, then the picture, then the words.
+s05_the_slab_is_a_step_12	A person for suiting up,
+s05_the_slab_is_a_step_13	and a flame for the cut.
+s05_the_slab_is_a_step_14	Lint doesn't check the picture's name,
+s05_the_slab_is_a_step_15	so copy it from the page.
 s06_the_bowl_by_hand_0	Last time Comms said the final word, in a call.
 s06_the_bowl_by_hand_1	Since Lecture five the game says it, when the bowl is taken.
 s06_the_bowl_by_hand_2	So Comms stops saying it.
@@ -71,10 +78,12 @@ s06_the_bowl_by_hand_16	because the arc does its job now.
 s07_coming_home_and_the_clock_0	I don't want the game to end with somebody still outside.
 s07_coming_home_and_the_clock_1	So taking the bowl reveals one more step,
 s07_coming_home_and_the_clock_2	and that one is finished back at the station.
-s07_coming_home_and_the_clock_3	And I give the crew more time.
-s07_coming_home_and_the_clock_4	A suit is slower than a ship.
-s07_coming_home_and_the_clock_5	In my test it took about three minutes from the door to the altar.
-s07_coming_home_and_the_clock_6	So twenty minutes becomes forty.
+s07_coming_home_and_the_clock_3	Its second paragraph tells the crew to count heads first.
+s07_coming_home_and_the_clock_4	And I give the crew more time.
+s07_coming_home_and_the_clock_5	A suit is slower than a ship.
+s07_coming_home_and_the_clock_6	In my test it took about three minutes from the door to the altar.
+s07_coming_home_and_the_clock_7	So twenty minutes becomes forty,
+s07_coming_home_and_the_clock_8	in the fence and in the last paragraph.
 s08_lint_0	I run lint, and it's clean.
 s08_lint_1	Now I misspell the word on the step,
 s08_lint_2	and lint says nothing sends it.

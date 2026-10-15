@@ -28,7 +28,11 @@ Recover what is worth recovering, and do not ask where it came from.
 Done when: scan 1 derelict
 Reward: 220 credits
 ---
+![](ship://starbase_industry) The Assay Office, Deepwell Assembly
+
 The Assembly wants every dead hull in the Verge on its books. Find one and scan it.
+
+A scan is all they ask. What she was, who flew her and what she carried go into the ledger, and the ledger is how the Assembly decides what anything is worth.
 
 # [Relay Run](relay_run)
 ---
@@ -39,6 +43,10 @@ Penalty: 60 credits
 ---
 Sealed tallies for Kestrel Relay. Carry them home and the Assembly pays on arrival.
 
+![](icon://hourglass) Ten minutes, from the moment you take them.
+
+Late tallies are worth nothing. Miss the ten minutes and the Assembly bills you for the broken seals.
+
 # [Clear the Lanes](strike)
 ---
 Tier: 3
@@ -46,3 +54,8 @@ Done when: destroy 6 enemies
 Reward: 600 credits
 ---
 The Compact does not ask this of strangers. Six hulls, and the lanes stay open a season.
+
+- ![](icon://crosshair) Six hulls that hunt the lanes
+- ![](icon://handshake) The Compact's trust, which is worth more than the pay
+
+Freight moves when the lanes are quiet, and Hollin eats when the freight moves.

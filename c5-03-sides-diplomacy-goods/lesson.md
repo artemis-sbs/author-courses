@@ -200,6 +200,10 @@ You wrote quests like these in Class 1. Two things are new.
 Because the quest has a system to reach, Helm gets an **Engage** button on it, exactly as
 on a cargo run.
 
+The words under each fence are the lead's briefing, and the Quest Log shows them as a
+page, the way it showed your quests in Class 1. These two are travel orders, so one
+short paragraph each is enough. Lecture 7 writes the briefings that carry the story.
+
 ## Step 5 - Goods
 
 Loot drifts in most systems: crates the crew can fly through and collect. The game has

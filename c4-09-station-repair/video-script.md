@@ -9,7 +9,7 @@
 >   screen in scene 8 is unseen. Record scene 8 FIRST, and fix the page where the screen
 >   differs.
 > - **The student's mission is `MyRuin`** as Lecture 8 left it:
->   `c4-08-eva\example\mission.amd` (478 lines) and Lecture 6's `story.mast` (116 lines).
+>   `c4-08-eva\example\mission.amd` (501 lines) and Lecture 6's `story.mast` (116 lines).
 >   The game is started with `sbs run server,helm,comms -m MyRuin map=0`.
 > - **`mission.amd` only.**
 > - **`example\` holds the one file that differs from the start:** `mission.amd` (526
@@ -51,7 +51,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyRuin` as Lecture 8 leaves it, lint clean. `mission.amd` has 478 lines |
+| Mission | `MyRuin` as Lecture 8 leaves it, lint clean. `mission.amd` has 501 lines |
 | `story.mast` | Lecture 6's, 116 lines. Opened once, read only, in scene 3 |
 | VS Code | `MyRuin` folder open, `mission.amd` in one tab, font size raised |
 | Command prompt | Open in `data\missions`, cleared |
@@ -111,6 +111,9 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 5. Whether the suit's beam is seen to fire at the mast. The suit does not lock its
    weapons on a job, on purpose; what the engine then draws is unknown.
 6. The name DS 1 Worksite on Helm's map, beside the station's own name.
+7. Raise the Mast in the quest list: DS 1's hull beside the first line, a paragraph, then
+   the two bullets with a person and a wrench for their dots. (Mock lays it out; nobody
+   has seen the engine draw it.)
 
 > Keep off camera: `Dress:` on a job. The documentation says a dressed job stays in place
 > when it is done; in the mock the dressed marker was gone like a plain one. Not on the
@@ -183,7 +186,10 @@ tether, | or a check of somebody's skill. ||"
 **Say:** "When a job is done, the game sends a word. || It's the job's key, and then
 underscore repaired. || So my quest says done when, signal, mast repaired. ||| That's
 three words now that the game sends by itself. || A barrier has opened, | a job has been
-repaired, | or a ruin's piece has been taken. || Lint knows all three. ||"
+repaired, | or a ruin's piece has been taken. || Lint knows all three. ||| The
+description borrows two things from earlier. || The station's lead line, so the crew
+knows it's DS 1 asking. || And a short list, with a person and a wrench for bullets, | so
+whoever reads it knows what to do, in order. ||
 
 ### 7. Two doors, one word
 

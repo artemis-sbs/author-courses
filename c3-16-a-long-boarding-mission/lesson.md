@@ -211,6 +211,14 @@ Lose: The air in the lower gallery ran out before anybody reached them.
 ---
 Four diggers are sealed in behind a rock fall, and their air is going.
 
+| Who | Where |
+|---|---|
+| Four diggers | Behind the fall, at the end of the lower gallery |
+| Jo Reth | This side of the fall. He crawled out |
+| Ada Corvin | Her hut in the camp, by the radio |
+
+![](icon://hourglass) Half an hour of air when the roof came down, by Ada Corvin's count. Less, now.
+
 #### [Get the Lift Running](power)
 ---
 Scope: shared
@@ -251,7 +259,7 @@ Win: All four walk out. Behind them the lower gallery comes down for good.
 The fast way. It costs Ada Corvin her mine.
 ```
 
-You know every field. Four things are worth a second look.
+You know every field. Five things are worth a second look.
 
 **The clock starts from an answer.** The arc says `Starts when: revealed`, and Ada
 Corvin's first answer starts it:
@@ -295,6 +303,12 @@ their own, outside the arc. Played, the arc finished the moment its two steps we
 done, and the clock stopped with it: the party stood at the rock fall with all the time
 in the world. With the endings inside the arc, and waiting, the arc cannot finish
 early. Played again, the list at the rock fall read `24:20 left` with both steps done.
+
+**The arc's description is the bridge's briefing.** Select the arc in the Quest Log and
+its description is shown above the checklist of its steps. Whoever stayed aboard never
+hears Ada Corvin, so the arc carries what she said: who is where, in a table, and the air
+she counted, on an hourglass line. Keep each step's own description to a sentence or
+two. The step's heading and objective are what changes as the party works.
 
 ## Step 6 - Two endings in one room
 
@@ -392,7 +406,7 @@ this order, and write the result of each on your sheet.
 | 7 | The worst party can finish | Cross out every `if skill`, every `check`, every `Needs:`. Walk to an ending with what is left |
 | 8 | Nothing only one person can do is on the only road | For each thing you crossed out in 7: name the other road |
 | 9 | Three columns | Lecture 14's sheet. Nobody is watching for more than one beat |
-| 10 | The screen reads well | Lecture 13: marks, titles after `Go to`, headings after `picked up`, item keys, `Scan:` lines |
+| 10 | The screen reads well | Lecture 13: marks, titles after `Go to`, headings after `picked up`, item keys, `Scan:` lines, and the arc's description read as the bridge reads it |
 | 11 | A FULL shot | Step 8's two questions |
 | 12 | The clock | It starts from an answer. `Lose:` is true every way the arc can fail |
 
@@ -430,7 +444,7 @@ Each row was tried on the finished files, one change at a time.
 One of them, as lint printed it:
 
 ```
-  [WARNING] line 94:14: `power` Then reveals `rescue/reech`, and no record has that key, so nothing is revealed (dangling-reveal)
+  [WARNING] line 102:14: `power` Then reveals `rescue/reech`, and no record has that key, so nothing is revealed (dangling-reveal)
 ```
 
 ### What lint cannot see

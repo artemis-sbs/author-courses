@@ -144,208 +144,240 @@ An answer in a hail sends it.
 
 37
 00:02:28,115 --> 00:02:30,289
-And there are two answers.
+The objective is the decision,
 
 38
-00:02:31,189 --> 00:02:33,798
-Pay the fee, and be polite.
+00:02:30,739 --> 00:02:32,478
+so it's a page.
 
 39
-00:02:34,248 --> 00:02:37,291
-Or lean on the clerk, for nothing.
+00:02:33,378 --> 00:02:37,291
+The Assay Office at the top, as a ship,
 
 40
-00:02:39,091 --> 00:02:41,700
-Both of them finish the step.
+00:02:37,741 --> 00:02:42,524
+and a line that says their answer will be written down.
 
 41
-00:02:42,600 --> 00:02:47,383
-But they leave the crew in different places with the Deepwell,
+00:02:44,324 --> 00:02:46,498
+And there are two answers.
 
 42
-00:02:47,833 --> 00:02:51,746
-and that's remembered for the rest of the campaign.
+00:02:47,398 --> 00:02:50,007
+Pay the fee, and be polite.
 
 43
-00:02:53,546 --> 00:02:55,285
-There's one warning, though.
+00:02:50,457 --> 00:02:53,500
+Or lean on the clerk, for nothing.
 
 44
-00:02:55,735 --> 00:02:59,213
-The answers are there from the first evening.
+00:02:55,300 --> 00:02:57,909
+Both of them finish the step.
 
 45
-00:03:00,113 --> 00:03:02,722
-A curious crew can ask early,
+00:02:58,809 --> 00:03:03,591
+But they leave the crew in different places with the Deepwell,
 
 46
-00:03:03,172 --> 00:03:07,085
-and it won't count. So word them for that.
+00:03:04,041 --> 00:03:07,954
+and that's remembered for the rest of the campaign.
 
 47
-00:03:08,285 --> 00:03:10,024
-Now for the race.
+00:03:09,754 --> 00:03:11,493
+There's one warning, though.
 
 48
-00:03:10,474 --> 00:03:14,822
-A race is a step with a clock on it.
+00:03:11,943 --> 00:03:15,422
+The answers are there from the first evening.
 
 49
-00:03:16,622 --> 00:03:21,404
-Before you put one on the spine, here's what I measured.
+00:03:16,322 --> 00:03:18,930
+A curious crew can ask early,
 
 50
-00:03:22,304 --> 00:03:25,783
-When the time ran out, the step failed.
+00:03:19,380 --> 00:03:23,293
+and it won't count. So word them for that.
 
 51
-00:03:26,233 --> 00:03:29,276
-And the next step was never revealed.
+00:03:24,493 --> 00:03:26,233
+Now for the race.
 
 52
-00:03:31,076 --> 00:03:32,815
-That's the campaign stopped,
+00:03:26,683 --> 00:03:31,030
+A race is a step with a clock on it.
 
 53
-00:03:33,265 --> 00:03:37,613
-in a save your crew has put ten weeks into.
+00:03:32,830 --> 00:03:37,613
+Before you put one on the spine, here's what I measured.
 
 54
-00:03:39,413 --> 00:03:42,891
-So a clock never goes on the spine.
+00:03:38,513 --> 00:03:41,991
+When the time ran out, the step failed.
 
 55
-00:03:43,791 --> 00:03:48,574
-And closing the game doesn't undo a clock that ran out.
+00:03:42,441 --> 00:03:45,485
+And the next step was never revealed.
 
 56
-00:03:49,774 --> 00:03:52,383
-A clock belongs on a job.
+00:03:47,285 --> 00:03:49,024
+That's the campaign stopped,
 
 57
-00:03:53,283 --> 00:03:56,326
-A job that fails costs its penalty,
+00:03:49,474 --> 00:03:53,822
+in a save your crew has put ten weeks into.
 
 58
-00:03:56,776 --> 00:03:59,820
-and the crew can take it again.
+00:03:55,622 --> 00:03:59,100
+So a clock never goes on the spine.
 
 59
-00:04:01,620 --> 00:04:04,663
-This one goes back to the Wren,
+00:04:00,000 --> 00:04:04,783
+And closing the game doesn't undo a clock that ran out.
 
 60
-00:04:05,113 --> 00:04:08,591
-so the place from evening one still matters.
+00:04:05,983 --> 00:04:08,591
+A clock belongs on a job.
 
 61
-00:04:10,391 --> 00:04:14,304
-And it's tier two, which gives it a date.
+00:04:09,491 --> 00:04:12,535
+A job that fails costs its penalty,
 
 62
-00:04:15,204 --> 00:04:20,422
-The Compact only offers it to a crew at twenty or more.
+00:04:12,985 --> 00:04:16,028
+and the crew can take it again.
 
 63
-00:04:20,872 --> 00:04:23,480
-Your ledger says when that is.
+00:04:17,828 --> 00:04:20,872
+This one goes back to the Wren,
 
 64
-00:04:24,680 --> 00:04:29,028
-What about a boarding evening, or a ruin, right now?
+00:04:21,322 --> 00:04:24,800
+so the place from evening one still matters.
 
 65
-00:04:30,828 --> 00:04:34,307
-You have those, as missions of their own.
+00:04:26,600 --> 00:04:30,513
+And it's tier two, which gives it a date.
 
 66
-00:04:35,207 --> 00:04:38,250
-You can play one as an interlude,
+00:04:31,413 --> 00:04:36,630
+The Compact only offers it to a crew at twenty or more.
 
 67
-00:04:38,700 --> 00:04:41,743
-the same people in the same story.
+00:04:37,080 --> 00:04:39,689
+Your ledger says when that is.
 
 68
-00:04:43,543 --> 00:04:45,717
-But be exact about it,
+00:04:41,489 --> 00:04:45,402
+The crew reads its text once they've taken it,
 
 69
-00:04:46,167 --> 00:04:47,907
-because it's another save.
+00:04:45,852 --> 00:04:47,591
+in the Quest Log.
 
 70
-00:04:48,807 --> 00:04:51,850
-Nothing they do there reaches your universe.
+00:04:48,491 --> 00:04:51,970
+So the clock goes in the text too,
 
 71
-00:04:53,650 --> 00:04:57,128
-The only bridge is the next evening's hook,
+00:04:52,420 --> 00:04:55,463
+on a line with a little hourglass.
 
 72
-00:04:57,578 --> 00:05:00,622
-so write that hook after you've played.
+00:04:56,663 --> 00:05:01,011
+What about a boarding evening, or a ruin, right now?
 
 73
-00:05:01,822 --> 00:05:03,561
-Lint says it's clean.
+00:05:02,811 --> 00:05:06,289
+You have those, as missions of their own.
 
 74
-00:05:04,461 --> 00:05:07,939
-There's no lamp run on the list yet.
+00:05:07,189 --> 00:05:10,233
+You can play one as an interlude,
 
 75
-00:05:09,739 --> 00:05:11,913
-I pay the levy once,
+00:05:10,683 --> 00:05:13,726
+the same people in the same story.
 
 76
-00:05:12,363 --> 00:05:14,102
-and there it is.
+00:05:15,526 --> 00:05:17,700
+But be exact about it,
 
 77
-00:05:15,002 --> 00:05:17,176
-I take it and engage,
+00:05:18,150 --> 00:05:19,889
+because it's another save.
 
 78
-00:05:17,626 --> 00:05:19,800
-and it's done and paid.
+00:05:20,789 --> 00:05:23,833
+Nothing they do there reaches your universe.
 
 79
-00:05:21,600 --> 00:05:23,339
-Then it's evening three.
+00:05:25,633 --> 00:05:29,111
+The only bridge is the next evening's hook,
 
 80
-00:05:24,239 --> 00:05:26,848
-At the Assay Office I hail,
+00:05:29,561 --> 00:05:32,604
+so write that hook after you've played.
 
 81
-00:05:27,298 --> 00:05:29,907
-and I choose how to ask.
+00:05:33,804 --> 00:05:35,543
+Lint says it's clean.
 
 82
-00:05:31,707 --> 00:05:33,446
-The step shows done,
+00:05:36,443 --> 00:05:39,922
+There's no lamp run on the list yet.
 
 83
-00:05:33,896 --> 00:05:36,070
-and the way home appears.
+00:05:41,722 --> 00:05:43,896
+I pay the levy once,
 
 84
-00:05:37,270 --> 00:05:39,878
-So every evening has an owner,
+00:05:44,346 --> 00:05:46,085
+and there it is.
 
 85
-00:05:40,328 --> 00:05:42,937
-and no style comes twice running.
+00:05:46,985 --> 00:05:49,159
+I take it and engage,
 
 86
-00:05:44,737 --> 00:05:46,911
-No clock on the spine.
+00:05:49,609 --> 00:05:51,783
+and it's done and paid.
 
 87
-00:05:47,811 --> 00:05:52,593
-And an interlude is joined by your writing, and nothing else.
+00:05:53,583 --> 00:05:55,322
+Then it's evening three.
 
 88
-00:05:54,393 --> 00:05:58,307
+00:05:56,222 --> 00:05:58,830
+At the Assay Office I hail,
+
+89
+00:05:59,280 --> 00:06:01,889
+and I choose how to ask.
+
+90
+00:06:03,689 --> 00:06:05,428
+The step shows done,
+
+91
+00:06:05,878 --> 00:06:08,052
+and the way home appears.
+
+92
+00:06:09,252 --> 00:06:11,861
+So every evening has an owner,
+
+93
+00:06:12,311 --> 00:06:14,920
+and no style comes twice running.
+
+94
+00:06:16,720 --> 00:06:18,893
+No clock on the spine.
+
+95
+00:06:19,793 --> 00:06:24,576
+And an interlude is joined by your writing, and nothing else.
+
+96
+00:06:26,376 --> 00:06:30,289
 Next time, real people sit down at the table.

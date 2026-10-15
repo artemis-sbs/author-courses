@@ -32,11 +32,18 @@ s04_stubs_7	If the crew outruns your writing,
 s04_stubs_8	they get a thin evening, and not a dead end.
 s05_the_act_s_ending_0	The act ends at home, with a big payment,
 s05_the_act_s_ending_1	and a text that answers the act's question.
-s05_the_act_s_ending_2	And it has no next step.
-s05_the_act_s_ending_3	Act two isn't written,
-s05_the_act_s_ending_4	so no new lead appears, and that's the truth.
-s05_the_act_s_ending_5	When you have evening six, you join it on here.
-s05_the_act_s_ending_6	The capstone shows how to do that for a crew that's already finished.
+s05_the_act_s_ending_2	It's a tentpole, so it gets a page.
+s05_the_act_s_ending_3	At the top, a face:
+s05_the_act_s_ending_4	the registrar who keeps the Count.
+s05_the_act_s_ending_5	I copy the face string exactly,
+s05_the_act_s_ending_6	because lint won't check it.
+s05_the_act_s_ending_7	Then two short paragraphs,
+s05_the_act_s_ending_8	and the whole count in one table, all five boats.
+s05_the_act_s_ending_9	And it has no next step.
+s05_the_act_s_ending_10	Act two isn't written,
+s05_the_act_s_ending_11	so no new lead appears, and that's the truth.
+s05_the_act_s_ending_12	When you have evening six, you join it on here.
+s05_the_act_s_ending_13	The capstone shows how to do that for a crew that's already finished.
 s06_where_the_ending_goes_0	A word about winning, because I measured it.
 s06_where_the_ending_goes_1	A step with a win line ends the game the moment it's done.
 s06_where_the_ending_goes_2	The save keeps that step as done.

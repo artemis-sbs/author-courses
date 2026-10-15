@@ -73,6 +73,8 @@ Then: reveal tern_ledger
 ---
 The Tern never answered. Her last position was (1, -2). Go and see what is left of her.
 
+She was the third colony ship, and the last one out. Nobody has been to look in forty years.
+
 ### [The Assay Ledger](tern_ledger)
 ---
 Scope: shared
@@ -81,7 +83,17 @@ Done when: signal ledger_read
 Then: reveal lead_bone_pile
 Reward: 200 credits
 ---
+![](ship://wreck) The Tern, at (1, -2). Her holds open, and nobody aboard.
+
 The Tern's holds are bare, and her log does not say who emptied them. The Deepwell count everything that moves. Hail the Assay Office at (3, 1) and ask.
+
+| What you found | What it tells you |
+|---|---|
+| Her holds | Emptied, and not in a hurry |
+| Her boats | Still in their cradles |
+| Her log | Not one word about cargo |
+
+Ask politely or ask hard. The Assembly will answer either way, and it will remember which.
 
 ### [What the Gleaners Keep](lead_bone_pile)
 ---
@@ -91,7 +103,19 @@ Done when: reach -4, -3
 Then: reveal goal_bone_pile
 Reward: 400 credits
 ---
+![](face://zim #e4cb8e 1 0;zim #fff 2 4;zim #e4cb8e 0 2;zim #e4cb8e 5 3;zim #e4cb8e 2 1;) The Assay Office, reading you the entry
+
 The ledger has the Tern's cargo sold on by the Gleaners. There is a place at (-4, -3) they will not talk about. Go armed.
+
+| The ledger | The entry |
+|---|---|
+| Cargo | Forty crates off the Tern |
+| Entered as | Salvage |
+| Sold by | The Gleaners |
+
+## What the ledger leaves out
+
+Where the Tern's people went. The Gleaners stack what they cannot sell at the Bone Pile, and nobody buys people.
 ```
 
 What changed:
@@ -100,15 +124,32 @@ What changed:
 |---|---|
 | The Third Colony | One new line, `Then: reveal tern_ledger` |
 | The Assay Ledger | New. Hidden until the crew has been to the Tern. It ends on a signal, which Step 3 sends |
-| What the Gleaners Keep | `at once` became `revealed`. It has a reward, and it reveals something called `goal_bone_pile`, which Step 4 writes |
+| What the Gleaners Keep | `at once` became `revealed`. It has a reward, and it reveals something called `goal_bone_pile`, which Step 4 writes. Its text is new: Step 2's last part is about it |
 
 Read down the `Then:` lines and you have the table of contents: the Tern, then the
 ledger, then the Bone Pile, then the end.
 
-**The text under a beat is the briefing.** It is what the crew reads when the beat
-appears. Each one says what was just learned, and where to go next. Write the place into
-the words. A beat that ends on a signal has nowhere for Helm's **Engage** to fly to, so
-the crew gets there by reading.
+**The text under a beat is the briefing.** It is what the crew reads in the Quest Log
+when the beat appears, and it is a page, laid out like a quest's description in Class
+1, Lecture 8. Each one says what was just learned, and where to go next. Write the place
+into the words. A beat that ends on a signal has nowhere for Helm's **Engage** to fly
+to, so the crew gets there by reading.
+
+These are the two chapters the crew reads at a turn in the story, so they get the most:
+
+| In the briefing | What it is for |
+|---|---|
+| `![](ship://wreck) The Tern, at (1, -2).` and the words after it | The ship they have just left, drawn in 3D beside the words. `wreck` is a model the game has. The words after the round bracket sit beside it, as in Lecture 6 |
+| The line that starts `![](face://` and ends `The Assay Office, reading you the entry` | Who is speaking: a face, with the words beside it, as in Class 2, Lecture 2. A face is the long string of codes after `face://`. Copy it whole from this page, from the first `zim` to the last `;` |
+| A table | What is known, in rows, as in Class 1, Lecture 11: a heading row, the row of dashes, then a row for each thing |
+| `## What the ledger leaves out` | A heading inside the briefing. No square brackets, so it is not a record of its own |
+
+A face here cannot be a word such as `terran` or `female`, the kind of word a `Face:`
+line takes in Lecture 9. Such a word tells the game to pick a face. A picture needs the face itself, written
+out. This one is a Ximni face, and the Deepwell fly Ximni ships.
+
+Keep the first paragraph the order. A crew in a hurry reads that and flies; the table
+and the heading are for the crew that stops to think.
 
 ## Step 3 - A beat that ends in a conversation
 
@@ -199,6 +240,11 @@ Win: The Bone Pile is broken, and what was taken from the Tern is going home.
 Citation: Forty years late, the third colony has been counted.
 ---
 The Tern's people are stacked here with her cargo. Four Gleaner hulls stand between you and them.
+
+- ![](icon://crosshair) Break the hulls that guard the pile
+- ![](icon://person) Then the Tern's people can go home
+
+Forty years is long enough. Nobody else is coming for them.
 ```
 
 | Line | What it means |
@@ -208,6 +254,10 @@ The Tern's people are stacked here with her cargo. Four Gleaner hulls stand betw
 | `Done when: destroy 4 enemies` | The same endings as a job, from Lecture 6 |
 | `Win:` | Finishing this quest ends the game, won. The sentence is the one on the end-of-game screen. You know this line from Class 1 |
 | `Citation:` | The words on the card the crew is sent at that moment, under the title VICTORY |
+| The text below the fence | The last briefing. The two lines starting `- ![](icon://` are a list whose bullets are icons, from Lecture 6: a crosshair for the fight, a person for who it is for |
+
+`Win:` and `Citation:` stay on one line each. They are fields, and each is shown in a
+place that has room for one sentence.
 
 A universe with no Goals chapter never ends. That is a real choice, and many good
 sandboxes make it. Write a goal when your story has a last page.
@@ -278,6 +328,9 @@ So check these by eye:
   it.
 - In an answer, `costs` comes before `signal`.
 - The goal has a `Win:` line with a sentence after it.
+- A face after `face://` is copied whole, from the first three letters to the last `;`
+  before the round bracket. Lint does not read pictures, and a face cut short is not a
+  face.
 
 ## Step 6 - Play it
 
@@ -340,8 +393,9 @@ Deepwell is 20 below where it was.
 2. Turn them into a chain. The first says `at once`. The rest say `revealed`.
 3. End one chapter with a conversation. Give the crew two ways to get what they came
    for, and make a side think differently of them for each.
-4. Write the briefing under each beat so that a crew who reads only that knows where to
-   go.
+4. Write the briefing under each beat so that a crew who reads only its first paragraph
+   knows where to go. Then give the beat at the turn of your story more: who is
+   speaking, or what is known, in a table.
 5. Decide whether your universe ends. If it does, write the goal, its `Win:` sentence
    and its `Citation:`. If it does not, say why not, out loud.
 

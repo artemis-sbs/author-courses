@@ -24,8 +24,14 @@ s03_the_heading_4	It starts at once, and it fails after twenty minutes.
 s03_the_heading_5	There's a Win sentence for when it's finished,
 s03_the_heading_6	and a Lose sentence for when it fails.
 s03_the_heading_7	All of that is Class 1.
-s03_the_heading_8	Nobody warns the crew about the clock,
-s03_the_heading_9	so I say twenty minutes in the description.
+s03_the_heading_8	The description's a page,
+s03_the_heading_9	so it gets three short paragraphs.
+s03_the_heading_10	First the station, drawn beside its own line,
+s03_the_heading_11	so the crew knows who's sending them.
+s03_the_heading_12	Then what's known about the markers.
+s03_the_heading_13	Nobody warns the crew about the clock,
+s03_the_heading_14	so the last paragraph says twenty minutes,
+s03_the_heading_15	and that the haze is closing in.
 s04_the_way_in_0	Here's the first step.
 s04_the_way_in_1	It has four hashes, so it belongs to the arc.
 s04_the_way_in_2	And this is the line that matters:

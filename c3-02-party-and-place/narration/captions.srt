@@ -188,108 +188,128 @@ and I've named it board hulk.
 
 48
 00:03:31,924 --> 00:03:36,707
-Then I open the story file, go to the very end,
+The description's a page, the way it was in Class 1.
 
 49
-00:03:37,157 --> 00:03:39,330
-and paste one recipe card.
+00:03:37,607 --> 00:03:41,085
+A picture of the hulk at the top,
 
 50
-00:03:40,230 --> 00:03:41,970
-I don't read it.
+00:03:41,535 --> 00:03:43,274
+then two short paragraphs.
 
 51
-00:03:42,420 --> 00:03:48,507
-I change three things on it, and they're on the page: the signal's name,
+00:03:44,174 --> 00:03:48,522
+The second one tells the crew a party can cross,
 
 52
-00:03:48,957 --> 00:03:52,870
-the key of the room the party arrives in,
+00:03:48,972 --> 00:03:51,580
+so they think about who goes.
 
 53
-00:03:53,320 --> 00:03:55,928
-and the name the crew sees.
+00:03:53,380 --> 00:03:58,163
+Then I open the story file, go to the very end,
 
 54
-00:03:57,728 --> 00:04:01,207
-I run lint again, and now it's clean.
+00:03:58,613 --> 00:04:00,787
+and paste one recipe card.
 
 55
-00:04:02,407 --> 00:04:08,059
-I start the game with a server, a Helm and an Engineering console.
+00:04:01,687 --> 00:04:03,426
+I don't read it.
 
 56
-00:04:08,959 --> 00:04:12,437
-And there's my name, before I've flown anywhere.
+00:04:03,876 --> 00:04:09,963
+I change three things on it, and they're on the page: the signal's name,
 
 57
-00:04:14,237 --> 00:04:16,846
-I bring the ship in close,
+00:04:10,413 --> 00:04:14,326
+the key of the room the party arrives in,
 
 58
-00:04:17,296 --> 00:04:19,035
-and the quest completes.
+00:04:14,776 --> 00:04:17,385
+and the name the crew sees.
 
 59
-00:04:19,935 --> 00:04:22,543
-On Engineering I open the handheld,
+00:04:19,185 --> 00:04:22,663
+I run lint again, and now it's clean.
 
 60
-00:04:22,993 --> 00:04:28,211
-and there's a Boarding Party tile offering The Hulk. I beam down.
+00:04:23,863 --> 00:04:29,515
+I start the game with a server, a Helm and an Engineering console.
 
 61
-00:04:30,011 --> 00:04:33,054
-Now this console is the party's handheld.
+00:04:30,415 --> 00:04:33,893
+And there's my name, before I've flown anywhere.
 
 62
-00:04:33,504 --> 00:04:38,722
-It says who I am, my job, and the room I'm in,
+00:04:35,693 --> 00:04:38,302
+I bring the ship in close,
 
 63
-00:04:39,172 --> 00:04:44,824
-and under that is my line, with a button for each way out.
+00:04:38,752 --> 00:04:40,491
+and the quest completes.
 
 64
-00:04:45,724 --> 00:04:50,072
-I go aft, and the page keeps what I've read.
+00:04:41,391 --> 00:04:44,000
+On Engineering I open the handheld,
 
 65
-00:04:50,972 --> 00:04:52,711
-Back, forward, back again.
+00:04:44,450 --> 00:04:49,667
+and there's a Boarding Party tile offering The Hulk. I beam down.
 
 66
-00:04:54,511 --> 00:04:57,554
-And from the airlock, I go home,
+00:04:51,467 --> 00:04:54,511
+Now this console is the party's handheld.
 
 67
-00:04:58,004 --> 00:05:01,048
-and the console is back at Engineering.
+00:04:54,961 --> 00:05:00,178
+It says who I am, my job, and the room I'm in,
 
 68
-00:05:02,248 --> 00:05:08,335
-Your turn. Add a fourth room, with a way in and a way back,
+00:05:00,628 --> 00:05:06,280
+and under that is my line, with a button for each way out.
 
 69
-00:05:08,785 --> 00:05:15,741
-and add a third person to your roster, at Helm, with a job you make up.
+00:05:07,180 --> 00:05:11,528
+I go aft, and the page keeps what I've read.
 
 70
-00:05:17,541 --> 00:05:19,715
-Then break it on purpose.
+00:05:12,428 --> 00:05:14,167
+Back, forward, back again.
 
 71
-00:05:20,165 --> 00:05:23,643
-Delete the way back from your new room,
+00:05:15,967 --> 00:05:19,011
+And from the airlock, I go home,
 
 72
-00:05:24,093 --> 00:05:27,137
-run lint, and read the word clean.
+00:05:19,461 --> 00:05:22,504
+and the console is back at Engineering.
 
 73
-00:05:28,037 --> 00:05:33,254
-Then walk into that room, and see what your crew would see.
+00:05:23,704 --> 00:05:29,791
+Your turn. Add a fourth room, with a way in and a way back,
 
 74
-00:05:35,054 --> 00:05:38,098
+00:05:30,241 --> 00:05:37,198
+and add a third person to your roster, at Helm, with a job you make up.
+
+75
+00:05:38,998 --> 00:05:41,172
+Then break it on purpose.
+
+76
+00:05:41,622 --> 00:05:45,100
+Delete the way back from your new room,
+
+77
+00:05:45,550 --> 00:05:48,593
+run lint, and read the word clean.
+
+78
+00:05:49,493 --> 00:05:54,711
+Then walk into that room, and see what your crew would see.
+
+79
+00:05:56,511 --> 00:05:59,554
 Next time, everyone gets a different menu.

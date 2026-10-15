@@ -26,7 +26,7 @@ Today the ship does all of it. Nobody leaves the ship until Lecture 8.
 
 - `MyRuin` as Lecture 6 left it: The Hollow, with its places, Surveyor Rook and his three
   recordings, the side story **The One Who Stayed**, and the cutscene. `mission.amd` is
-  296 lines long, and `story.mast` has the card from Lecture 6.
+  304 lines long, and `story.mast` has the card from Lecture 6.
 - `sbs lint MyRuin` says `clean`.
 - You have done Class 1, Lecture 9 (an arc, its steps, `Then: reveal`, `Win:`, `Lose:`) and
   Class 2, Lecture 5 (a step that an answer finishes).
@@ -100,10 +100,14 @@ Fails when: 20 minutes
 Win: The Hollow is surveyed, and what Rook put back is aboard.
 Lose: The haze closed in before the survey was done.
 ---
-Somebody surveyed The Hollow forty years ago and left markers behind. Follow them. You have twenty minutes.
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
+Somebody surveyed The Hollow forty years ago and left markers behind. Some of them still play when a ship comes close. Follow them, room by room.
+
+The haze round The Hollow is thickening. Once it closes, no ship will find the way in. You have twenty minutes.
 ```
 
-All of it is Class 1, Lecture 9. A reminder:
+All of it is Class 1, Lectures 9 and 11. A reminder:
 
 | Line | What it means |
 |---|---|
@@ -111,9 +115,12 @@ All of it is Class 1, Lecture 9. A reminder:
 | `Fails when: 20 minutes` | Twenty minutes after the game starts, the arc fails |
 | `Win:` | When the arc is finished, the game is won. The sentence is the reason given |
 | `Lose:` | When the arc FAILS, the game is lost. The sentence is the reason given |
+| `![](ship://starbase_command) Orders from DS 1...` | The station, drawn small beside the words: who is giving these orders. `starbase_command` is the station's hull, the same one DS 1 is built from |
+| Three paragraphs, a blank line between each | The crew reads them when they pick the arc in the quest list: who sends them, what is known, and what is at stake |
 
 Nobody warns the crew that time is running out. So the last sentence of the description
-tells them the limit.
+tells them the limit. Keep the haze and the clock in that last paragraph: Lecture 8
+changes it.
 
 ## Step 3 - The first step: the way in
 
@@ -245,6 +252,8 @@ Part of: survey
 Required: true
 ---
 The second marker is playing. Hear it out, and bring aboard what is in the niche.
+
+Rook's team took it from the altar forty years ago, and then they carried it back. His recordings are the only account of why.
 ```
 
 Then add one line to the fence of **The Second Marker**, under `Reward:`:
@@ -371,7 +380,11 @@ Fails when: 20 minutes
 Win: The Hollow is surveyed, and what Rook put back is aboard.
 Lose: The haze closed in before the survey was done.
 ---
-Somebody surveyed The Hollow forty years ago and left markers behind. Follow them. You have twenty minutes.
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
+Somebody surveyed The Hollow forty years ago and left markers behind. Some of them still play when a ship comes close. Follow them, room by room.
+
+The haze round The Hollow is thickening. Once it closes, no ship will find the way in. You have twenty minutes.
 
 #### [Find the Way In](door)
 ---
@@ -425,6 +438,8 @@ Part of: survey
 Required: true
 ---
 The second marker is playing. Hear it out, and bring aboard what is in the niche.
+
+Rook's team took it from the altar forty years ago, and then they carried it back. His recordings are the only account of why.
 ```
 
 At the end of the Scans section:

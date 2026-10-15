@@ -83,7 +83,7 @@ SHOTS = [
     {
         "id": "s05_a_quest_that_waits_for_it",
         "title": 'A quest that waits for it',
-        "frames": 1429,
+        "frames": 1798,
         "captions": [
             ("Here's the quest that waits for them.", 0, 91),
             ('Everything in it is from Class one, except one line.', 118, 249),
@@ -98,8 +98,11 @@ SHOTS = [
             ('and with one cache, it waits forever.', 1065, 1156),
             ('Lint says clean either way.', 1210, 1275),
             ('So I write collect canister, with no number.', 1289, 1393),
+            ('The description gets a second paragraph, after a blank line.', 1447, 1578),
+            ('The first says what to do,', 1605, 1683),
+            ("the second says what's known.", 1696, 1762),
         ],
-        "pauses": [0.9, 0.9, 0.45, 1.8, 0.9, 0.45, 0.9, 0.9, 0.45, 0.45, 1.8, 0.45, 1.2],
+        "pauses": [0.9, 0.9, 0.45, 1.8, 0.9, 0.45, 0.9, 0.9, 0.45, 0.45, 1.8, 0.45, 1.8, 0.9, 0.45, 1.2],
     },
     {
         "id": "s06_the_piece",

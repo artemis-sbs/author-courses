@@ -85,6 +85,14 @@ Lose: The air in the lower gallery ran out before anybody reached them.
 ---
 Four diggers are sealed in behind a rock fall, and their air is going.
 
+| Who | Where |
+|---|---|
+| Four diggers | Behind the fall, at the end of the lower gallery |
+| Jo Reth | This side of the fall. He crawled out |
+| Ada Corvin | Her hut in the camp, by the radio |
+
+![](icon://hourglass) Half an hour of air when the roof came down, by Ada Corvin's count. Less, now.
+
 #### [Get the Lift Running](power)
 ---
 Scope: shared
@@ -280,6 +288,8 @@ Sprite: prop:scanner
 Scan: Burning low and blue. The air at this end is bad.
 ---
 A miner's safety lamp hung on a nail. Its flame is small, and the wrong color.
+
+A lamp like this burns blue when the air is going bad. Down here, that is the only warning anybody gets.
 
 ### [The rock fall](rock_fall)
 ---

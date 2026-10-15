@@ -59,6 +59,8 @@ Step 1. Class 5 Lectures 11, 14 and 15 are written now. Lecture 10 is not.
    how scanning feels in the game.
 2. How long Lamp Run takes. Ten minutes is a guess.
 3. The hail on Comms.
+4. The Plover's Price and an accepted Lamp Run in the Quest Log: the station's hull at
+   the top of one, the hourglass line in the other.
 
 ## Scenes
 
@@ -106,7 +108,8 @@ Price and Enter It Again. Add the two answers to the Deepwell hail and the two r
 
 **Say:** "Evening three is a stub, so let's make it an evening. ||| The open now leads
 to an objective, | and the objective ends with a signal. || An answer in a hail sends
-it. ||| And there are two answers. || Pay the fee, and be polite. | Or lean on the
+it. ||| The objective is the decision, | so it's a page. || The Assay Office at the top,
+as a ship, | and a line that says their answer will be written down. ||| And there are two answers. || Pay the fee, and be polite. | Or lean on the
 clerk, for nothing. ||| Both of them finish the step. || But they leave the crew in
 different places with the Deepwell, | and that's remembered for the rest of the
 campaign. ||| There's one warning, though. | The answers are there from the first evening. || A curious
@@ -129,7 +132,9 @@ doesn't undo a clock that ran out. ||"
 **Say:** "A clock belongs on a job. || A job that fails costs its penalty, | and the crew
 can take it again. ||| This one goes back to the Wren, | so the place from evening one
 still matters. ||| And it's tier two, which gives it a date. || The Compact only offers
-it to a crew at twenty or more. | Your ledger says when that is. ||"
+it to a crew at twenty or more. | Your ledger says when that is. ||| The crew reads its
+text once they've taken it, | in the Quest Log. || So the clock goes in the text too, | on
+a line with a little hourglass. ||"
 
 ### 8. An evening off the map
 

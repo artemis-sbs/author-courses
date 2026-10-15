@@ -41,6 +41,9 @@ s05_three_steps_of_story_6	and nothing in my files sends them,
 s05_three_steps_of_story_7	because the game does.
 s05_three_steps_of_story_8	It builds each word from a key in the ruin's file.
 s05_three_steps_of_story_9	Slab, then opened, and hollow, then taken.
+s05_three_steps_of_story_10	And each briefing is a page, as in Lecture Seven.
+s05_three_steps_of_story_11	The cut gets two icon bullets,
+s05_three_steps_of_story_12	who suits up, and what they cut.
 s06_lint_0	I run lint, and all seven files are clean.
 s06_lint_1	Lint looked in the ruin's file.
 s06_lint_2	It found a barrier called slab,

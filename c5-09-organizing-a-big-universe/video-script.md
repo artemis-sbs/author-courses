@@ -56,7 +56,7 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 1. **How the crew reaches Kestrel Traffic on Comms.** The page says plainly that it
    cannot tell the student. Find it on camera, then fix Step 9 and scene 9.
 2. The Library on the handheld with a chapter called Codex, and how two hashes look
-   there.
+   there. The colonies table and the gray `What it is for` heading inside Kestrel Relay.
 3. The four editions in a browser, and printed.
 4. The website's menu, its search, and a click through a conversation.
 5. The Assay Ledger closing in the real game with the call in a file of its own.
@@ -137,12 +137,16 @@ standing, | so use them for what a crew should always be able to find out. ||"
 ### 7. Lore
 
 **Screen:** New file `lore.amd`. Type the four pages. Highlight that there are no
-fences.
+fences. Then the table under The Three Colonies, and `## What it is for` under Kestrel
+Relay.
 
 **Say:** "And one more file, called exactly lore dot a m d. ||| There are no fences in
 this one. || A heading is a page, | and the words under it are what the crew reads. |||
-The crew's handheld has a Library, | and this file becomes a chapter in it. ||| Put in
-what somebody who lives here would know. || Keep the secrets of your story out. ||"
+The crew's handheld has a Library, | and this file becomes a chapter in it. ||| Each page
+is drawn like a briefing, | with paragraphs, and a table where it helps. || This
+heading has no square brackets, | so it's a heading inside the page, not a page of its
+own. ||| Put in what somebody who lives here would know. || Keep the secrets of your
+story out. ||"
 
 ### 8. Print the world
 

@@ -57,15 +57,20 @@ s06_the_side_story_0	A side story is a quest that isn't part of the main story.
 s06_the_side_story_1	It has three hashes.
 s06_the_side_story_2	It starts when revealed, so it's asleep and out of the list.
 s06_the_side_story_3	And it's done when a ship is within four hundred of the cairn.
-s06_the_side_story_4	The answer starts it, with a comma and then accepts stayed.
-s06_the_side_story_5	That's two things after one semicolon.
-s06_the_side_story_6	Now, in the game's shipped ruins you'll find a section called Side Stories,
-s06_the_side_story_7	and those are a different animal.
-s06_the_side_story_8	Each one says For, and a job.
-s06_the_side_story_9	They belong to one person,
-s06_the_side_story_10	and they're handed over when that person leaves the ship in a suit.
-s06_the_side_story_11	So leave that section for now.
-s06_the_side_story_12	You'll type one at the end of the class, in Lecture 10.
+s06_the_side_story_4	The description's a page,
+s06_the_side_story_5	so under the first line there's a small table.
+s06_the_side_story_6	It lists five surveyors, and who came out.
+s06_the_side_story_7	The crew only sees this quest after they've heard the names,
+s06_the_side_story_8	so the table can use them.
+s06_the_side_story_9	The answer starts it, with a comma and then accepts stayed.
+s06_the_side_story_10	That's two things after one semicolon.
+s06_the_side_story_11	Now, in the game's shipped ruins you'll find a section called Side Stories,
+s06_the_side_story_12	and those are a different animal.
+s06_the_side_story_13	Each one says For, and a job.
+s06_the_side_story_14	They belong to one person,
+s06_the_side_story_15	and they're handed over when that person leaves the ship in a suit.
+s06_the_side_story_16	So leave that section for now.
+s06_the_side_story_17	You'll type one at the end of the class, in Lecture 10.
 s07_the_cutscene_what_you_write_0	A cutscene is a list of shots.
 s07_the_cutscene_what_you_write_1	It's a new section, and its key has to be cutscenes.
 s07_the_cutscene_what_you_write_2	The first record is the cutscene itself,

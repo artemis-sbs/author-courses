@@ -203,129 +203,153 @@ A story can carry a reward of its own as well,
 and it's paid to the ship that person came from.
 
 52
-00:03:34,143 --> 00:03:39,796
-Four rules. A side story is a bonus, and never the only way,
+00:03:34,743 --> 00:03:37,352
+The ship's quest gets a page,
 
 53
-00:03:40,246 --> 00:03:42,854
-because nobody covers for a person.
+00:03:37,802 --> 00:03:41,280
+because the Quest Log shows all of it.
 
 54
-00:03:43,754 --> 00:03:46,798
-One job word goes in three places:
+00:03:42,180 --> 00:03:47,398
+A heading, and two bullets with a small picture for a dot.
 
 55
-00:03:47,248 --> 00:03:51,596
-the roster, the story, and the choice that finishes it.
+00:03:48,298 --> 00:03:51,341
+The word after icon names the picture.
 
 56
-00:03:52,496 --> 00:03:55,539
-For takes one job, or one person.
+00:03:53,141 --> 00:03:55,315
+The side story stays short.
 
 57
-00:03:56,439 --> 00:03:59,483
-And one story goes to one person.
+00:03:55,765 --> 00:03:57,939
+Tasks only shows its heading.
 
 58
-00:04:01,283 --> 00:04:03,022
-Lint is good here.
+00:03:59,139 --> 00:04:04,791
+Four rules. A side story is a bonus, and never the only way,
 
 59
-00:04:03,472 --> 00:04:07,385
-It tells you when a story is for nobody,
+00:04:05,241 --> 00:04:07,850
+because nobody covers for a person.
 
 60
-00:04:07,835 --> 00:04:12,183
-and it tells you when two outcomes have run together.
+00:04:08,750 --> 00:04:11,793
+One job word goes in three places:
 
 61
-00:04:13,383 --> 00:04:18,165
-Both aboard. On the doctor's handheld I go back one step,
+00:04:12,243 --> 00:04:16,591
+the roster, the story, and the choice that finishes it.
 
 62
-00:04:18,615 --> 00:04:21,224
-and there are three apps now,
+00:04:17,491 --> 00:04:20,535
+For takes one job, or one person.
 
 63
-00:04:21,674 --> 00:04:24,283
-and the third one is Tasks.
+00:04:21,435 --> 00:04:24,478
+And one story goes to one person.
 
 64
-00:04:25,183 --> 00:04:27,791
-There's her story, under her name.
+00:04:26,278 --> 00:04:28,017
+Lint is good here.
 
 65
-00:04:29,591 --> 00:04:31,330
-She reads the tags,
+00:04:28,467 --> 00:04:32,380
+It tells you when a story is for nobody,
 
 66
-00:04:31,780 --> 00:04:34,389
-and the bridge is told twice:
+00:04:32,830 --> 00:04:37,178
+and it tells you when two outcomes have run together.
 
 67
-00:04:34,839 --> 00:04:39,187
-her story is complete, and so is the ship's quest.
+00:04:38,378 --> 00:04:43,161
+Both aboard. On the doctor's handheld I go back one step,
 
 68
-00:04:40,087 --> 00:04:42,696
-Then the chief reads his record,
+00:04:43,611 --> 00:04:46,220
+and there are three apps now,
 
 69
-00:04:43,146 --> 00:04:45,320
-and his story completes too.
+00:04:46,670 --> 00:04:49,278
+and the third one is Tasks.
 
 70
-00:04:47,120 --> 00:04:49,728
-Now think about a short crew.
+00:04:50,178 --> 00:04:52,787
+There's her story, under her name.
 
 71
-00:04:50,628 --> 00:04:53,672
-If the doctor stays on the ship,
+00:04:54,587 --> 00:04:56,326
+She reads the tags,
 
 72
-00:04:54,122 --> 00:04:57,165
-another console can still take her reading,
+00:04:56,776 --> 00:04:59,385
+and the bridge is told twice:
 
 73
-00:04:57,615 --> 00:05:00,659
-but her story was never handed out,
+00:04:59,835 --> 00:05:04,183
+her story is complete, and so is the ship's quest.
 
 74
-00:05:01,109 --> 00:05:03,717
-so the ship's quest stays open.
+00:05:05,083 --> 00:05:07,691
+Then the chief reads his record,
 
 75
-00:05:04,617 --> 00:05:08,530
-The next lecture shows you the way round that.
+00:05:08,141 --> 00:05:10,315
+and his story completes too.
 
 76
-00:05:09,730 --> 00:05:12,774
-Write a story for your third person,
+00:05:12,115 --> 00:05:14,724
+Now think about a short crew.
 
 77
-00:05:13,224 --> 00:05:15,398
-finished by their own reading.
+00:05:15,624 --> 00:05:18,667
+If the doctor stays on the ship,
 
 78
-00:05:16,298 --> 00:05:20,646
-Give the chief's story somewhere to lead. Then break it.
+00:05:19,117 --> 00:05:22,161
+another console can still take her reading,
 
 79
-00:05:21,096 --> 00:05:23,270
-Misspell the job after For,
+00:05:22,611 --> 00:05:25,654
+but her story was never handed out,
 
 80
-00:05:23,720 --> 00:05:25,459
-read what lint says,
+00:05:26,104 --> 00:05:28,713
+so the ship's quest stays open.
 
 81
-00:05:25,909 --> 00:05:28,083
-and play it once anyway.
+00:05:29,613 --> 00:05:33,526
+The next lecture shows you the way round that.
 
 82
-00:05:29,883 --> 00:05:32,057
-Next time is the checkpoint:
+00:05:34,726 --> 00:05:37,770
+Write a story for your third person,
 
 83
-00:05:32,507 --> 00:05:37,289
+00:05:38,220 --> 00:05:40,393
+finished by their own reading.
+
+84
+00:05:41,293 --> 00:05:45,641
+Give the chief's story somewhere to lead. Then break it.
+
+85
+00:05:46,091 --> 00:05:48,265
+Misspell the job after For,
+
+86
+00:05:48,715 --> 00:05:50,454
+read what lint says,
+
+87
+00:05:50,904 --> 00:05:53,078
+and play it once anyway.
+
+88
+00:05:54,878 --> 00:05:57,052
+Next time is the checkpoint:
+
+89
+00:05:57,502 --> 00:06:02,285
 one away scene of your own, planned on paper and played.

@@ -63,8 +63,12 @@ s07_lore_2	A heading is a page,
 s07_lore_3	and the words under it are what the crew reads.
 s07_lore_4	The crew's handheld has a Library,
 s07_lore_5	and this file becomes a chapter in it.
-s07_lore_6	Put in what somebody who lives here would know.
-s07_lore_7	Keep the secrets of your story out.
+s07_lore_6	Each page is drawn like a briefing,
+s07_lore_7	with paragraphs, and a table where it helps.
+s07_lore_8	This heading has no square brackets,
+s07_lore_9	so it's a heading inside the page, not a page of its own.
+s07_lore_10	Put in what somebody who lives here would know.
+s07_lore_11	Keep the secrets of your story out.
 s08_print_the_world_0	Now for the reward.
 s08_print_the_world_1	s b s docs, the folder, a title,
 s08_print_the_world_2	and I ask for all four editions.

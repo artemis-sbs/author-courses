@@ -177,7 +177,7 @@ Prefab: derelict
 Relic: hollow
 Relic file: hollow.amd
 ---
-A hole in a rock that is on no survey. The Tern's last log gives its bearing, and one word: older.
+A hole in a rock, on no survey. The Tern's log says: older.
 ```
 
 | Line | What it means |
@@ -185,6 +185,7 @@ A hole in a rock that is on no survey. The Tern's last log gives its bearing, an
 | `At:` and `Prefab:` | As for any landmark, from Lecture 5 |
 | `Relic: hollow` | This landmark is a ruin. The word is the ruin's key: `### [The Hollow](hollow)` in the other file |
 | `Relic file: hollow.amd` | The file the ruin is in, in the mission folder |
+| The line below the fence | The card's line, as for any landmark: one line, of 60 characters or fewer |
 
 There is no `Terrain:` line. A ruin brings its own cloud, sized to its rooms, and the
 game's guide says a landmark's `Terrain:` is skipped when the landmark is a ruin.
@@ -204,6 +205,8 @@ Then: reveal hollow_cut
 ---
 The Tern logged a bearing she never explained: (2, -3), and the word "older". Go and see what she saw.
 
+Nothing is charted there. No survey, no beacon, no claim. Whatever the Tern found, she found it first.
+
 ### [Cut Through](hollow_cut)
 ---
 Scope: shared
@@ -214,6 +217,11 @@ Then: reveal hollow_bowl
 ---
 A slab has come down across the built room. Somebody has to suit up, go out there and cut it.
 
+- ![](icon://person) Bring the ship in close to the way in, and suit up
+- ![](icon://lightning) Cut the slab from the Gallery door
+
+Nothing in the Hollow has moved in a long time. Move slowly.
+
 ### [What the Hollow Kept](hollow_bowl)
 ---
 Scope: shared
@@ -222,12 +230,20 @@ Done when: signal hollow_taken
 Reward: 300 credits
 ---
 There is a niche at the back of the built room, and something in it. Bring it aboard.
+
+## What the Tern saw
+
+Older than the colonies, and older than the charts. If the Tern's crew stood here, they stood where nobody from the Verge had stood before.
 ```
 
 A lead, and a chain, as in Lecture 7. The two new things are the words after `signal`.
 You did not make them up, and nothing in your files sends them. The game does, when the
 slab is cut and when the bowl is taken. Get them from the two keys: `slab`, then
 `_opened`; `hollow`, then `_taken`.
+
+The briefings are pages, as in Lecture 7. Cut Through tells the crew how, in two
+bullets that are icons: a `person` for the one who suits up, and `lightning` for the
+cut. What the Hollow Kept ends under a plain heading, with no square brackets.
 
 The finished files are in `example\`.
 

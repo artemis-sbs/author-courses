@@ -25,7 +25,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 | Saves | No `universe_save_the_kestrel_verge_1.yaml` in `data\missions\common_data\saves` |
 | Tool and libraries | Current: `sbs update`, then `sbs fetch "MyUniverse" --update-libs` |
 | VS Code | `MyUniverse` open, `kestrel_verge.amd` in a tab, font size raised |
-| Game | Closed. Started on camera in scene 8 with `sbs run server,helm,comms,science -m MyUniverse map=0` |
+| Game | Closed. Started on camera in scene 9 with `sbs run server,helm,comms,science -m MyUniverse map=0` |
 
 ## Confirm on camera
 
@@ -68,6 +68,9 @@ job can be taken again; the words the game says when Engage has nowhere to go.
 6. Where the game's own Accept Patrol Mission sits beside your Patrol on Comms.
 7. Anything about Available Quests, if the crew has such a list. In the stand-in, a job
    that has been finished once is no longer listed there, though Comms still offers it.
+8. A taken job's briefing in the Quest Log: the Assay Office drawn beside the first line
+   of Wreck Survey, the hourglass in Relay Run, the icon bullets in Clear the Lanes, and
+   the paragraphs wrapped to the pane.
 
 ## Scenes
 
@@ -128,7 +131,23 @@ know both of those lines from Class One. ||| And a strike, at tier three. || Tha
 only offered to a crew the Compact really trusts. ||| The relay run does something else
 for me. || It ends at home, | so it's a way back that pays. ||"
 
-### 6. On offer
+### 6. The briefing
+
+**Screen:** The text under Wreck Survey. Highlight the ship line, then the empty line
+between the two paragraphs. Then the hourglass line in Relay Run, and the two icon
+bullets in Clear the Lanes.
+
+**Say:** "Now look at what's under the fence. || That's the job's briefing, and it's a
+page, not a line. ||| Before the crew takes a job, | all they see is a button, with a name
+and a price. || Once they've taken it, the Quest Log shows them all of this. ||| The
+first line puts the Assay Office beside the words, in three dimensions. || It's the
+same model as the station's Art line, | so they see who's paying. ||| An empty line starts
+a new paragraph. || The first one is the order, | and the second is why it matters. |||
+And an icon can start a line, or be a bullet. || An hourglass for the clock, | and a
+crosshair for the hulls. || Lint doesn't check those names, | so copy them from the page.
+||"
+
+### 7. On offer
 
 **Screen:** The Sides chapter. Change Hollin's and the Deepwell's `Offers:` lines.
 
@@ -137,7 +156,7 @@ farmers get patrol, escort and strike. || The miners get the survey and the rela
 ||| I'm taking the escort away from the miners, | because it ends at their own front
 door. || A job that ends at a place | belongs to a side that lives somewhere else. ||"
 
-### 7. Check
+### 8. Check
 
 **Screen:** Save. `sbs lint MyUniverse`: clean. Then the second table in Step 5.
 
@@ -148,7 +167,7 @@ Name a good you don't have, and it never finishes. ||| And here's the one that w
 catch you. || You can't write, destroy three gleaners. || The game takes the s off, |
 looks for something called a gleaner, and finds nothing. || So write enemies instead. ||"
 
-### 8. Work the board
+### 9. Work the board
 
 **Screen:** `sbs run server,helm,comms,science -m MyUniverse map=0`. Comms: Hollin
 Compact, the levy, Patrol and Escort. Helm: Quest Log, Engage Escort. Comms: Assay
@@ -161,7 +180,7 @@ jobs. || I take them, and the clock on the relay run is running. ||| The survey 
 dead ship, | and I know where one is. || And the patrol wants enemies, | and I know
 where those are too. ||"
 
-### 9. Paid, and offered again
+### 10. Paid, and offered again
 
 **Screen:** Gleaners' station: the bold answer, Salvage. Then Engage Relay Run. Comms on
 Hollin Compact: Patrol and Escort at new prices.
@@ -173,7 +192,7 @@ farmers' list. || Patrol is back, and it pays a little more than last time. ||| 
 the thing to remember about a job. || It never runs out. || So think about how often
 you want a crew to be able to please each side. ||"
 
-### 10. Your turn
+### 11. Your turn
 
 **Screen:** The exercise on the companion page.
 

@@ -24,19 +24,25 @@ s03_the_mast_is_the_first_step_3	and I type it again inside the arc, with four h
 s03_the_mast_is_the_first_step_4	It gets three more lines:
 s03_the_mast_is_the_first_step_5	a Then, to reveal the next step,
 s03_the_mast_is_the_first_step_6	and the two lines that make it count toward winning.
-s03_the_mast_is_the_first_step_7	And the way in is no longer first,
-s03_the_mast_is_the_first_step_8	so it starts when it's revealed.
+s03_the_mast_is_the_first_step_7	The lead line and the list stay as they were.
+s03_the_mast_is_the_first_step_8	Only the middle paragraph changes,
+s03_the_mast_is_the_first_step_9	to say why the mast comes first.
+s03_the_mast_is_the_first_step_10	And the way in is no longer first,
+s03_the_mast_is_the_first_step_11	so it starts when it's revealed.
 s04_a_clue_for_the_crew_who_go_i_0	Earlier the ship got a clue chain.
 s04_a_clue_for_the_crew_who_go_i_1	Comms logged some names,
 s04_a_clue_for_the_crew_who_go_i_2	and a later call had one more answer.
 s04_a_clue_for_the_crew_who_go_i_3	This is the same idea, for somebody in a suit.
 s04_a_clue_for_the_crew_who_go_i_4	At the altar, the answer that reads the marks
 s04_a_clue_for_the_crew_who_go_i_5	now learns a fact, and starts a quest.
-s04_a_clue_for_the_crew_who_go_i_6	Then the cairn gets a scene of its own.
-s04_a_clue_for_the_crew_who_go_i_7	And one of its answers says if learned, at least one.
-s04_a_clue_for_the_crew_who_go_i_8	So a crew member who read the marks can count the stones against them.
-s04_a_clue_for_the_crew_who_go_i_9	One who didn't just sees a pile of stones.
-s04_a_clue_for_the_crew_who_go_i_10	And the count sends the word that finishes the quest.
+s04_a_clue_for_the_crew_who_go_i_6	The quest has a small table,
+s04_a_clue_for_the_crew_who_go_i_7	what the crew knows about the marks.
+s04_a_clue_for_the_crew_who_go_i_8	It gives them the number without the answer.
+s04_a_clue_for_the_crew_who_go_i_9	Then the cairn gets a scene of its own.
+s04_a_clue_for_the_crew_who_go_i_10	And one of its answers says if learned, at least one.
+s04_a_clue_for_the_crew_who_go_i_11	So a crew member who read the marks can count the stones against them.
+s04_a_clue_for_the_crew_who_go_i_12	One who didn't just sees a pile of stones.
+s04_a_clue_for_the_crew_who_go_i_13	And the count sends the word that finishes the quest.
 s05_lint_0	I run lint, and it's clean.
 s05_lint_1	I misspell the quest on the answer,
 s05_lint_2	and lint names the line.
@@ -81,7 +87,7 @@ s09_one_more_thing_and_what_you__1	In Class three you wrote a story for one pers
 s09_one_more_thing_and_what_you__2	A ruin can carry one too, in a section of its own,
 s09_one_more_thing_and_what_you__3	and the game hands it to the crew member who suits up.
 s09_one_more_thing_and_what_you__4	The page shows you one to type,
-s09_one_more_thing_and_what_you__5	and it tells you about one lint warning that's wrong here.
+s09_one_more_thing_and_what_you__5	and it needs no card at all.
 s09_one_more_thing_and_what_you__6	Then it lists three things this class hasn't given you,
 s09_one_more_thing_and_what_you__7	so you don't go looking for them.
 s10_your_turn_0	And now the class project.

@@ -41,15 +41,20 @@ s05_type_it_in_layers_4	Then the door, with a line that tells an early party why
 s05_type_it_in_layers_5	Each ending is a quest the ship doesn't have yet,
 s05_type_it_in_layers_6	a choice that starts it, with the new word accepts,
 s05_type_it_in_layers_7	and a last room with one way out.
-s05_type_it_in_layers_8	Then the two stories.
-s05_type_it_in_layers_9	And lint is clean.
-s06_a_quest_any_party_can_finish_0	One change to the ship's quest.
-s06_a_quest_any_party_can_finish_1	Last time, it waited for the surgeon's story to finish.
-s06_a_quest_any_party_can_finish_2	But a story is handed to nobody when its person stays home,
-s06_a_quest_any_party_can_finish_3	so a short crew could never complete it.
-s06_a_quest_any_party_can_finish_4	Now it waits for the reading's own signal.
-s06_a_quest_any_party_can_finish_5	The surgeon's press finishes her story and the ship's quest together,
-s06_a_quest_any_party_can_finish_6	and when she's not there, the covered reading still finishes the ship's.
+s05_type_it_in_layers_8	The crew reads an ending's quest the moment they choose,
+s05_type_it_in_layers_9	so each one gets a short page.
+s05_type_it_in_layers_10	An hourglass on one, the station drawn beside the other.
+s05_type_it_in_layers_11	Then the two stories.
+s05_type_it_in_layers_12	And lint is clean.
+s06_a_quest_any_party_can_finish_0	The ship's quest gets a new page too:
+s06_a_quest_any_party_can_finish_1	a table of what the station knows before anybody boards.
+s06_a_quest_any_party_can_finish_2	And one change to how it ends.
+s06_a_quest_any_party_can_finish_3	Last time, it waited for the surgeon's story to finish.
+s06_a_quest_any_party_can_finish_4	But a story is handed to nobody when its person stays home,
+s06_a_quest_any_party_can_finish_5	so a short crew could never complete it.
+s06_a_quest_any_party_can_finish_6	Now it waits for the reading's own signal.
+s06_a_quest_any_party_can_finish_7	The surgeon's press finishes her story and the ship's quest together,
+s06_a_quest_any_party_can_finish_8	and when she's not there, the covered reading still finishes the ship's.
 s07_five_checks_with_a_pencil_0	Lint has passed, and lint checks your spelling.
 s07_five_checks_with_a_pencil_1	It doesn't walk through your rooms.
 s07_five_checks_with_a_pencil_2	So I do, with a pencil.

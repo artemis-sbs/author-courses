@@ -116,7 +116,7 @@ SHOTS = [
     {
         "id": "s07_lore",
         "title": 'Lore',
-        "frames": 1101,
+        "frames": 1652,
         "captions": [
             ('And one more file, called exactly lore dot a m d.', 0, 143),
             ('There are no fences in this one.', 197, 289),
@@ -124,10 +124,14 @@ SHOTS = [
             ('and the words under it are what the crew reads.', 394, 525),
             ("The crew's handheld has a Library,", 579, 657),
             ('and this file becomes a chapter in it.', 671, 775),
-            ('Put in what somebody who lives here would know.', 829, 946),
-            ('Keep the secrets of your story out.', 973, 1065),
+            ('Each page is drawn like a briefing,', 829, 920),
+            ('with paragraphs, and a table where it helps.', 934, 1038),
+            ('This heading has no square brackets,', 1065, 1143),
+            ("so it's a heading inside the page, not a page of its own.", 1157, 1327),
+            ('Put in what somebody who lives here would know.', 1381, 1498),
+            ('Keep the secrets of your story out.', 1525, 1616),
         ],
-        "pauses": [1.8, 0.9, 0.45, 1.8, 0.45, 1.8, 0.9, 1.2],
+        "pauses": [1.8, 0.9, 0.45, 1.8, 0.45, 1.8, 0.45, 0.9, 0.45, 1.8, 0.9, 1.2],
     },
     {
         "id": "s08_print_the_world",

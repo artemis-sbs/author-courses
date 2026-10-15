@@ -54,6 +54,11 @@ s05_the_quest_tree_9	I got this wrong the first time.
 s05_the_quest_tree_10	I had the endings outside the arc.
 s05_the_quest_tree_11	The arc finished early, and the clock stopped with it.
 s05_the_quest_tree_12	Keep the endings inside, and waiting.
+s05_the_quest_tree_13	And the arc's description is the bridge's briefing.
+s05_the_quest_tree_14	Nobody aboard hears Ada Corvin,
+s05_the_quest_tree_15	so the arc says what she said.
+s05_the_quest_tree_16	Who's where, in a table,
+s05_the_quest_tree_17	and the air she counted, on an hourglass line.
 s06_two_endings_and_a_full_shot_0	Both endings live in one room.
 s06_two_endings_and_a_full_shot_1	A choice has one condition,
 s06_two_endings_and_a_full_shot_2	so a thing that needs two takes two rooms.

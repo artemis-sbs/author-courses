@@ -61,6 +61,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
    home with no crew name; a real console has a page that puts it back, and the earlier
    pilot saw it do so.
 3. A room with no choices on the handheld: what the crew actually looks at.
+4. Close Inspection in the Quest Log: the hulk drawn beside its lead line, and two
+   paragraphs under it.
 
 ## Scenes
 
@@ -122,12 +124,15 @@ nowhere else for now. ||"
 ### 6. Start it
 
 **Screen:** `mission.amd`, the Quests section: type Close Inspection, and highlight its
-`Then:` line. Then `story.mast`, the very end: paste the card. Highlight `board_hulk`,
+`Then:` line, then its description: the ship line at the top, two paragraphs. Then
+`story.mast`, the very end: paste the card. Highlight `board_hulk`,
 `"airlock"` and `"The Hulk"` in turn. Lint: clean.
 
 **Say:** "Now the start. I add a quest of the kind you wrote in Class 1: | bring the ship
 within five hundred of the hulk. || The new line is this one. | When the quest completes,
-it sends a signal, | and I've named it board hulk. ||| Then I open the story file, go to
+it sends a signal, | and I've named it board hulk. ||| The description's a page, the way
+it was in Class 1. || A picture of the hulk at the top, | then two short paragraphs. ||
+The second one tells the crew a party can cross, | so they think about who goes. ||| Then I open the story file, go to
 the very end, | and paste one recipe card. || I don't read it. | I change three things on
 it, and they're on the page: the signal's name, | the key of the room the party arrives
 in, | and the name the crew sees. ||| I run lint again, and now it's clean. ||"

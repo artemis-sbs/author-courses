@@ -104,11 +104,25 @@ Done when: signal manifest_seen
 Reward: 200 credits
 ---
 The Compact keeps the Tern's manifest under seal, and does not break a seal for strangers. Earn their trust at Kestrel Relay, then ask.
+
+## What the Compact trusts
+
+- ![](icon://handshake) A ship that pays the relay levy
+- ![](icon://flag) A ship that flies their patrols and escorts
+- ![](icon://ban) Not a ship that trades with the Gleaners
 ```
 
 This one is not on the spine. It says `at once`, so it is in the Quest Log from evening
 1, beside whichever evening is open. The crew can see the door. Its text tells them what
 opens it. That is on purpose: a door nobody knows about is not a reason to do anything.
+
+**The keys to the door are a list.** The Quest Log draws the text as a page, so the
+heading and the three lines under it are drawn as a heading and a bulleted list. A line
+that starts with a hyphen and a space is a bullet. `![](icon://handshake)` straight after
+the hyphen puts a small picture where the dot would be, one line tall: a handshake, a
+flag, a crossed circle. The word after `icon://` must be one of the game's icon names,
+spelled exactly, and lint does not check it. Each line is a row of Step 1's table, in
+the crew's words: the levy, the jobs, and the one thing that costs them the door.
 
 **The answer.** Find `### [Hollin Hail](hollin_hail)`. Add one line above
 `- [Sign off](hollin_bye)`.

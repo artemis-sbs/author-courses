@@ -34,16 +34,20 @@ s05_a_talk_evening_0	Evening three is a stub, so let's make it an evening.
 s05_a_talk_evening_1	The open now leads to an objective,
 s05_a_talk_evening_2	and the objective ends with a signal.
 s05_a_talk_evening_3	An answer in a hail sends it.
-s05_a_talk_evening_4	And there are two answers.
-s05_a_talk_evening_5	Pay the fee, and be polite.
-s05_a_talk_evening_6	Or lean on the clerk, for nothing.
-s05_a_talk_evening_7	Both of them finish the step.
-s05_a_talk_evening_8	But they leave the crew in different places with the Deepwell,
-s05_a_talk_evening_9	and that's remembered for the rest of the campaign.
-s05_a_talk_evening_10	There's one warning, though.
-s05_a_talk_evening_11	The answers are there from the first evening.
-s05_a_talk_evening_12	A curious crew can ask early,
-s05_a_talk_evening_13	and it won't count. So word them for that.
+s05_a_talk_evening_4	The objective is the decision,
+s05_a_talk_evening_5	so it's a page.
+s05_a_talk_evening_6	The Assay Office at the top, as a ship,
+s05_a_talk_evening_7	and a line that says their answer will be written down.
+s05_a_talk_evening_8	And there are two answers.
+s05_a_talk_evening_9	Pay the fee, and be polite.
+s05_a_talk_evening_10	Or lean on the clerk, for nothing.
+s05_a_talk_evening_11	Both of them finish the step.
+s05_a_talk_evening_12	But they leave the crew in different places with the Deepwell,
+s05_a_talk_evening_13	and that's remembered for the rest of the campaign.
+s05_a_talk_evening_14	There's one warning, though.
+s05_a_talk_evening_15	The answers are there from the first evening.
+s05_a_talk_evening_16	A curious crew can ask early,
+s05_a_talk_evening_17	and it won't count. So word them for that.
 s06_where_clocks_go_0	Now for the race.
 s06_where_clocks_go_1	A race is a step with a clock on it.
 s06_where_clocks_go_2	Before you put one on the spine, here's what I measured.
@@ -61,6 +65,10 @@ s07_a_race_that_s_safe_4	so the place from evening one still matters.
 s07_a_race_that_s_safe_5	And it's tier two, which gives it a date.
 s07_a_race_that_s_safe_6	The Compact only offers it to a crew at twenty or more.
 s07_a_race_that_s_safe_7	Your ledger says when that is.
+s07_a_race_that_s_safe_8	The crew reads its text once they've taken it,
+s07_a_race_that_s_safe_9	in the Quest Log.
+s07_a_race_that_s_safe_10	So the clock goes in the text too,
+s07_a_race_that_s_safe_11	on a line with a little hourglass.
 s08_an_evening_off_the_map_0	What about a boarding evening, or a ruin, right now?
 s08_an_evening_off_the_map_1	You have those, as missions of their own.
 s08_an_evening_off_the_map_2	You can play one as an interlude,

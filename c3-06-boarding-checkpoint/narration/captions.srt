@@ -171,157 +171,177 @@ a choice that starts it, with the new word accepts,
 and a last room with one way out.
 
 44
-00:03:24,080 --> 00:03:25,820
-Then the two stories.
+00:03:23,180 --> 00:03:27,528
+The crew reads an ending's quest the moment they choose,
 
 45
-00:03:26,270 --> 00:03:28,009
-And lint is clean.
+00:03:27,978 --> 00:03:31,022
+so each one gets a short page.
 
 46
-00:03:29,209 --> 00:03:31,817
-One change to the ship's quest.
+00:03:31,472 --> 00:03:35,820
+An hourglass on one, the station drawn beside the other.
 
 47
-00:03:32,717 --> 00:03:37,065
-Last time, it waited for the surgeon's story to finish.
+00:03:37,620 --> 00:03:39,359
+Then the two stories.
 
 48
-00:03:37,515 --> 00:03:42,733
-But a story is handed to nobody when its person stays home,
+00:03:39,809 --> 00:03:41,548
+And lint is clean.
 
 49
-00:03:43,183 --> 00:03:46,661
-so a short crew could never complete it.
+00:03:42,748 --> 00:03:46,226
+The ship's quest gets a new page too:
 
 50
-00:03:48,461 --> 00:03:51,939
-Now it waits for the reading's own signal.
+00:03:46,676 --> 00:03:51,024
+a table of what the station knows before anybody boards.
 
 51
-00:03:52,839 --> 00:03:57,622
-The surgeon's press finishes her story and the ship's quest together,
+00:03:52,824 --> 00:03:55,867
+And one change to how it ends.
 
 52
-00:03:58,072 --> 00:04:03,289
-and when she's not there, the covered reading still finishes the ship's.
+00:03:56,767 --> 00:04:01,115
+Last time, it waited for the surgeon's story to finish.
 
 53
-00:04:04,489 --> 00:04:07,967
-Lint has passed, and lint checks your spelling.
+00:04:01,565 --> 00:04:06,783
+But a story is handed to nobody when its person stays home,
 
 54
-00:04:08,417 --> 00:04:11,026
-It doesn't walk through your rooms.
+00:04:07,233 --> 00:04:10,711
+so a short crew could never complete it.
 
 55
-00:04:11,926 --> 00:04:14,535
-So I do, with a pencil.
+00:04:12,511 --> 00:04:15,989
+Now it waits for the reading's own signal.
 
 56
-00:04:16,335 --> 00:04:20,683
-One: every room has a way out with no condition.
+00:04:16,889 --> 00:04:21,672
+The surgeon's press finishes her story and the ship's quest together,
 
 57
-00:04:21,583 --> 00:04:24,626
-Two: every room has a way in.
+00:04:22,122 --> 00:04:27,339
+and when she's not there, the covered reading still finishes the ship's.
 
 58
-00:04:25,526 --> 00:04:30,309
-Three: the door asks for no more than the sure facts,
+00:04:28,539 --> 00:04:32,017
+Lint has passed, and lint checks your spelling.
 
 59
-00:04:30,759 --> 00:04:33,802
-and every fact has its own name.
+00:04:32,467 --> 00:04:35,076
+It doesn't walk through your rooms.
 
 60
-00:04:35,602 --> 00:04:37,776
-Four is the big one.
+00:04:35,976 --> 00:04:38,585
+So I do, with a pencil.
 
 61
-00:04:38,226 --> 00:04:43,009
-I cross out everything that needs a skill or a roll,
+00:04:40,385 --> 00:04:44,733
+One: every room has a way out with no condition.
 
 62
-00:04:43,459 --> 00:04:47,372
-and with what's left I walk to each ending.
+00:04:45,633 --> 00:04:48,676
+Two: every room has a way in.
 
 63
-00:04:48,272 --> 00:04:50,880
-If I can, every crew can.
+00:04:49,576 --> 00:04:54,359
+Three: the door asks for no more than the sure facts,
 
 64
-00:04:52,680 --> 00:04:56,159
-Five: each story's reading belongs to its person,
+00:04:54,809 --> 00:04:57,852
+and every fact has its own name.
 
 65
-00:04:56,609 --> 00:04:59,217
-and each ending's quest starts hidden.
+00:04:59,652 --> 00:05:01,826
+Four is the big one.
 
 66
-00:05:00,417 --> 00:05:05,200
-Then I play it three times, with a watch beside me.
+00:05:02,276 --> 00:05:07,059
+I cross out everything that needs a skill or a roll,
 
 67
-00:05:06,100 --> 00:05:07,839
-Alone, I'm the chief,
+00:05:07,509 --> 00:05:11,422
+and with what's left I walk to each ending.
 
 68
-00:05:08,289 --> 00:05:12,202
-and two readings come to me marked as covering.
+00:05:12,322 --> 00:05:14,930
+If I can, every crew can.
 
 69
-00:05:13,102 --> 00:05:16,580
-Sixteen presses, and I'm home with an ending.
+00:05:16,730 --> 00:05:20,209
+Five: each story's reading belongs to its person,
 
 70
-00:05:18,380 --> 00:05:20,989
-With everyone aboard, nothing is covered,
+00:05:20,659 --> 00:05:23,267
+and each ending's quest starts hidden.
 
 71
-00:05:21,439 --> 00:05:24,048
-and reading it all takes twenty.
+00:05:24,467 --> 00:05:29,250
+Then I play it three times, with a watch beside me.
 
 72
-00:05:25,848 --> 00:05:28,022
-And once, I walk away.
+00:05:30,150 --> 00:05:31,889
+Alone, I'm the chief,
 
 73
-00:05:28,472 --> 00:05:30,646
-One press in the airlock,
+00:05:32,339 --> 00:05:36,252
+and two readings come to me marked as covering.
 
 74
-00:05:31,096 --> 00:05:35,443
-and the visit is over for everybody, with nothing finished.
+00:05:37,152 --> 00:05:40,630
+Sixteen presses, and I'm home with an ending.
 
 75
-00:05:36,343 --> 00:05:40,257
-That's why the way home is where it is.
+00:05:42,430 --> 00:05:45,039
+With everyone aboard, nothing is covered,
 
 76
-00:05:41,457 --> 00:05:43,196
-Now write your own.
+00:05:45,489 --> 00:05:48,098
+and reading it all takes twenty.
 
 77
-00:05:44,096 --> 00:05:48,443
-Three sentences, a beat sheet, a drawing, a facts table,
+00:05:49,898 --> 00:05:52,072
+And once, I walk away.
 
 78
-00:05:48,893 --> 00:05:50,633
-and then the typing.
+00:05:52,522 --> 00:05:54,696
+One press in the airlock,
 
 79
-00:05:51,533 --> 00:05:53,272
-Do the five checks,
+00:05:55,146 --> 00:05:59,493
+and the visit is over for everybody, with nothing finished.
 
 80
-00:05:53,722 --> 00:06:01,113
-and break it three times on purpose, to see lint say clean when the scene is wrong.
+00:06:00,393 --> 00:06:04,307
+That's why the way home is where it is.
 
 81
-00:06:02,913 --> 00:06:06,391
-Then play it with everyone you can find,
+00:06:05,507 --> 00:06:07,246
+Now write your own.
 
 82
-00:06:06,841 --> 00:06:09,885
+00:06:08,146 --> 00:06:12,493
+Three sentences, a beat sheet, a drawing, a facts table,
+
+83
+00:06:12,943 --> 00:06:14,683
+and then the typing.
+
+84
+00:06:15,583 --> 00:06:17,322
+Do the five checks,
+
+85
+00:06:17,772 --> 00:06:25,163
+and break it three times on purpose, to see lint say clean when the scene is wrong.
+
+86
+00:06:26,963 --> 00:06:30,441
+Then play it with everyone you can find,
+
+87
+00:06:30,891 --> 00:06:33,935
 and write down how long it took.

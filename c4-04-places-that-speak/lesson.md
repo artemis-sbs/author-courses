@@ -505,7 +505,12 @@ When you stop, open `mast.runtime.log` in your mission folder. It should be empt
    Done when: signal rook_heard
    ---
    Somebody surveyed this place before you. Find what they left.
+
+   Their markers still play when a ship comes close. One of them is somewhere in The Gallery.
    ```
+
+   A quest's description is a page, as in Class 1, Lecture 8: the blank line starts a
+   second paragraph.
 
    Then change the first answer in Rook at the Niche:
 

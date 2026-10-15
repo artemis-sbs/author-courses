@@ -57,6 +57,8 @@ Not seen by anyone, or not measured. If one is not as described, stop and fix th
 1. The clock on a real handheld, and how it reads below one minute.
 2. A real crew's time for any beat. The stopwatch in scene 8 is the first.
 3. Whether seven seconds is enough for a real hand to arm and fire.
+4. The hourglass line in Relight Kesh Relay's description, between the first
+   paragraph and the table.
 
 ## Scenes
 
@@ -108,14 +110,15 @@ minute a press, | and double it for a first play. || Write your own guess beside
 
 ### 5. A clock
 
-**Screen:** The Quests section: one line typed above `Win:`, and the `Lose:` line
-rewritten. Lint clean. Then the Tasks app: the time under the quest.
+**Screen:** The Quests section: one line typed above `Win:`, the `Lose:` line
+rewritten, and the hourglass line typed into the description. Lint clean. Then the Tasks app: the time under the quest.
 
 **Say:** "You have four ways to press on a crew. || A clock, a patrol, | a key that's
 somewhere else, and a thing that's hidden. ||| The clock is one line, and you wrote it in
 the first class. || Fails when, thirty minutes. ||| The Lose sentence has to change with
 it. | It used to say the beacon was slag. || Now it's read when the clock runs out too, |
-so it has to be true every way. ||| And the clock starts when the quest starts. | This
+so it has to be true every way. ||| Then I tell the bridge. | One line in the
+description, | with an hourglass at the start. ||| And the clock starts when the quest starts. | This
 one starts with the game. ||"
 
 ### 6. Can every party get there?

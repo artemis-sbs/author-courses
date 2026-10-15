@@ -66,7 +66,9 @@ before an unaffordable `costs` is sent anyway; that a shared reward pays each si
 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 
-1. A chapter appearing in the Quest Log while the crew watches, and its briefing there.
+1. A chapter appearing in the Quest Log while the crew watches, and its briefing there:
+   the Tern drawn beside the first line of The Assay Ledger, its table, the Ximni face
+   and the gray heading in What the Gleaners Keep, the icon bullets in the goal.
 2. The VICTORY card on a console, and how long it stays.
 3. The end-of-game screen in an Open Universe mission, with the `Win:` sentence on it.
 4. What the crew can do after the game is won, and what Continue offers next time.
@@ -108,13 +110,21 @@ Then lines. || That's your table of contents. ||"
 
 ### 4. The briefing
 
-**Screen:** Highlight the text under The Assay Ledger. Then the words "at (3, 1)".
+**Screen:** Highlight the text under The Assay Ledger. Then the words "at (3, 1)". Then
+the ship line at the top, and the table. Then the face line and the heading under What
+the Gleaners Keep.
 
-**Say:** "The words under a beat are the briefing. || They're what the crew reads when
-the chapter appears. ||| A good one says what was just learned, | and where to go next.
-|| And I mean where. I've written the place into the sentence. ||| That matters for
-this chapter, | because it doesn't end at a place. || It ends on a signal. || So Helm
-has nothing to engage, | and the crew gets there by reading. ||"
+**Say:** "The words under a beat are the briefing. || They're what the crew reads in the
+Quest Log when the chapter appears. ||| A good one says what was just learned, | and
+where to go next. || And I mean where. I've written the place into the sentence. |||
+That matters for this chapter, | because it doesn't end at a place. || It ends on a
+signal. || So Helm has nothing to engage, | and the crew gets there by reading. |||
+And a briefing is a page, so it can hold more than the order. || At the top, the Tern
+herself, drawn beside the words. || Under the order, a table of what the crew found. |||
+The next one starts with a face, | the Assay Office reading out the entry. || That's a
+real face, written out in full, so copy every bit of it. || And a heading, with no square
+brackets, | for the thing the ledger leaves out. ||| Keep the order in the first
+paragraph. || A crew in a hurry reads that, and flies. ||"
 
 ### 5. A chapter that ends in a call
 

@@ -55,7 +55,8 @@ are in `example\`.
 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 
-1. Every screen.
+1. Every screen, including While They Read and The Skua's Price as pages in the Quest
+   Log.
 2. A real scan of the Wren and the Petrel. The real game scans by itself when a ship is
    in range, so a scan step may finish before Science touches anything.
 3. A real fight at the Dunlin.
@@ -110,7 +111,8 @@ Gleaner hail, `if learned` highlighted. The two reply records.
 answers, | and either one finishes it. ||| But this time they're held back. || If
 learned, the Gleaners broke a boat. ||| A crew that hails them cold won't see either
 answer. || They have to ask the right question first. ||| That's the fact from lecture
-two, | doing a real job. ||"
+two, | doing a real job. ||| And the step's second paragraph says so. || A crew that's
+stuck reads the Quest Log, | so that's where the hint goes. ||"
 
 ### 6. One change they'll notice
 
@@ -120,7 +122,8 @@ two, | doing a real job. ||"
 **Say:** "And one change to something the crew has already seen. || The step they're
 on had a placeholder for a title. || I change the title, | and I leave the key alone.
 ||| One more step, for act two to stand on. || It stays open when the act ends, |
-and act two will finish it. ||| I save, and I run lint. || One warning, and for once
+and act two will finish it. ||| It could be open for weeks, | so it gets a page. || A
+paragraph, and a short list of what's still out there. ||| I save, and I run lint. || One warning, and for once
 it's true. | Nothing sends that signal yet. ||| If it said a step is never revealed, |
 I'd stop right here and fix it. ||"
 

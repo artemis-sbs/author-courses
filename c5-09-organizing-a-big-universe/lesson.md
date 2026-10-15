@@ -248,18 +248,38 @@ Make one more file in the `MyUniverse` folder, called exactly `lore.amd`.
 # [The Kestrel Verge](verge)
 Past the last relay the charts are forty years old. Three colonies were planted out here. Two still answer.
 
+Nobody has come out to correct the charts, so every captain keeps their own. Trade them, and trust them about as far as the captain who sold them.
+
 ## [The Three Colonies](colonies)
 The Hollin Compact landed first, and farms. The Deepwell Assembly landed second, and digs. The third ship was the Tern. She never reported in.
+
+| Colony | Landed | Now |
+|---|---|---|
+| Hollin Compact | First | Farms, and keeps the relay lit |
+| Deepwell Assembly | Second | Mines, and counts every crate |
+| The Tern | Never | Lost, forty years ago |
 
 ## [The Gleaners](gleaners)
 Nobody planted the Gleaners. They came for the wrecks, and stayed when the wrecks ran short.
 
+They fly old Torgoth hulls and keep a yard in the Breakers. Their prices are fair, and their questions are few.
+
 # [Kestrel Relay](relay)
 The last relay anyone still maintains. The Compact keeps its lamp lit, and Warden Brake has kept the Compact honest about it for thirty years.
+
+## What it is for
+
+Every message into or out of the Verge passes through the relay. A ship the relay cannot hear is a ship nobody will come looking for.
 ```
 
-This file has no fences at all. A heading is a page, and the words under it are what the
-crew reads. One hash is a page; two hashes is a page inside the one above.
+This file has no fences at all. A heading with a name and a key is a page, and the words
+under it are what the crew reads. One hash is a page; two hashes is a page inside the one
+above.
+
+The words under a page are drawn the way a quest's are: an empty line between
+paragraphs, a table where a table helps. `## What it is for` has no square brackets, so
+it is not a page of its own. It is a heading inside the Kestrel Relay page, in larger
+gray letters. Give it brackets and a key, and it becomes a fifth page.
 
 The crew's handheld has an app called Library. A mission with a `lore.amd` gets a
 chapter in it called **Codex**, holding your pages. You do not name the file anywhere.

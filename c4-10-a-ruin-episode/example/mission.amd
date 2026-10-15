@@ -66,6 +66,14 @@ Then: signal cairn_found
 ---
 Five surveyors went into The Hollow. Four came out.
 
+| Surveyor | Came out |
+|---|---|
+| Rook, who led the survey | Yes |
+| Imre, Sato and Vell | Yes |
+| Dace | No |
+
+Rook says they built Dace a cairn in a side room off The Nave. Nobody has stood in that room since.
+
 ### [Forty-One](forty_one)
 ---
 Scope: shared
@@ -76,6 +84,13 @@ Reward: 80 credits
 ---
 Somebody cut marks into the rim of the altar, in sets of five. Find out what they were counting.
 
+| The marks | What the crew knows |
+|---|---|
+| How many | Forty-one. Eight sets of five, and one on its own |
+| Who cut them | Nobody has said |
+
+Whoever kept the count kept it for a long time, and then stopped.
+
 ### [The Hollow Survey](survey)
 ---
 Arc
@@ -85,7 +100,11 @@ Fails when: 40 minutes
 Win: The Hollow is surveyed, and what Rook put back is aboard.
 Lose: The haze closed in before the survey was done.
 ---
-Somebody surveyed The Hollow forty years ago and left markers behind. Follow them. You have forty minutes.
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
+Somebody surveyed The Hollow forty years ago and left markers behind. Some of them still play when a ship comes close. Follow them, room by room.
+
+The haze round The Hollow is thickening. Once it closes, no ship will find the way in. You have forty minutes.
 
 #### [Raise the Mast](mast_up)
 ---
@@ -98,7 +117,12 @@ Then: reveal survey/door
 Part of: survey
 Required: true
 ---
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
 The station's survey antenna is dead. Until it is mended, nobody can hear the markers in The Hollow.
+
+- ![](icon://person) Suit up while the ship is near DS 1
+- ![](icon://wrench) Fly the suit round the hull to the mast, and mend it with the beam
 
 #### [Find the Way In](door)
 ---
@@ -139,6 +163,11 @@ Required: true
 ---
 A slab has come down across the way into the built room. Somebody has to go out there and cut it.
 
+- ![](icon://person) Suit up at The Way In, while the ship is close
+- ![](icon://flame) Fly to The Gallery Door, and cut the slab with the beam
+
+The cut takes twelve seconds. The ship's own beams can break the slab as well.
+
 #### [The Second Marker](second)
 ---
 Scope: shared
@@ -167,6 +196,8 @@ Required: true
 ---
 The second marker is playing. Hear it out, and bring aboard what is in the niche.
 
+Rook's team took it from the altar forty years ago, and then they carried it back. His recordings are the only account of why.
+
 #### [Carry It Home](home)
 ---
 Scope: shared
@@ -179,6 +210,8 @@ Required: true
 ---
 It is aboard. Take it back to DS 1.
 
+Count heads before Helm turns for home. Anybody still in a suit is still out at The Hollow.
+
 
 ### [What the Survey Left](left)
 ---
@@ -189,6 +222,8 @@ Done when: collect canister
 Reward: 60 credits
 ---
 The first survey left its samples behind. Bring them out.
+
+A stack of sealed tubes stands against the wall of The Nave, where the first survey set them down forty years ago. Nobody at DS 1 knows what is in them.
 
 // ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
 // it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
@@ -419,7 +454,7 @@ A sealed sample tube from the first survey. The label has faded.
 Type: item/quest
 Art: alien_small_2a
 ---
-A shallow bowl of grey stone. It fits the hollow worn into the top of the altar.
+A shallow bowl of gray stone. It fits the hollow worn into the top of the altar.
 
 // ---- Characters. The voices in the story.
 ## [Characters](characters)

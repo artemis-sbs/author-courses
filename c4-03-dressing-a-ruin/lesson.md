@@ -479,7 +479,7 @@ sbs run server,helm -m MyRuin map=0
 3. Turn toward The Nave. The Ring should stand across the tunnel. Fly through it.
 4. From The Nave, fly on to The Vault. As you come up the tunnel, a contact named
    **The Altar** should appear on the map.
-5. Go back through The Nave and into The Gallery. Its walls should be flat grey blocks,
+5. Go back through The Nave and into The Gallery. Its walls should be flat gray blocks,
    with holes where pieces are missing. At the far end, **The Niche** should appear.
 
 The walls are still scenery. Nothing here stops the ship.

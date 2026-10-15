@@ -68,8 +68,8 @@ Save, and run lint. It warns twice, and both are true for the moment:
 
 ```
 == mission.amd ==
-  [WARNING] line 155:5: nothing in this mission hands out `Side Stories`, so nobody gets the quests in it. Give it to the visit: `boarding_visit(..., stories=amd_section(MISSION_DOC, "side_stories"))` (stories-not-handed-out)
-  [WARNING] line 162:19: `six_names` waits for the signal `names_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+  [WARNING] line 159:5: nothing in this mission hands out `Side Stories`, so nobody gets the quests in it. Give it to the visit: `boarding_visit(..., stories=amd_section(MISSION_DOC, "side_stories"))` (stories-not-handed-out)
+  [WARNING] line 166:19: `six_names` waits for the signal `names_read`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
 
 1 amd + 1 mast file(s): 0 error(s), 2 warning(s)
 ```
@@ -165,7 +165,24 @@ Done when: signal names_known
 Reward: 150 credits
 ---
 Somebody crewed that ship. Command wants names.
+
+## Where names are kept
+
+- ![](icon://person) Suits. Every suit in an airlock is tagged with its owner's name.
+- ![](icon://tablet) The log. A captain's log says who is aboard.
+
+Bring the names home, and DS 1 can tell their families something.
 ```
+
+The ship's quest is read in the Quest Log, so its description is a page (Class 1, Lecture
+8): a plain heading, two bullets and a closing paragraph. One thing is new. A bullet
+that starts `- ![](icon://person)` uses a small picture for its dot. The word after
+`icon://` names a picture from the game's icon sheet: `person`, `tablet`, `hourglass`,
+`flag` and many more, listed on the "Icons by name" page of the library documentation.
+
+A side story's description is different. On a visit of rooms, Tasks lists a story's
+heading and its state, and nothing else, so nobody reads the words under the fence.
+Keep them short: they are a note to yourself.
 
 Read the chain from the top. The surgeon reads the tags. That sends `names_read`, which
 finishes her story. Her story then sends `names_known`, and the ship's quest hears it.
@@ -253,13 +270,14 @@ files: one change, lint, then the game.
 | The words `stories=...` left off the `boarding_visit` line | Hand out nothing | `stories-not-handed-out` |
 | `"side_story"` on the `boarding_visit` line, `side_stories` on the heading (or the other way round) | Hand out nothing | `stories-not-handed-out` |
 
-What lint cannot see. It says `clean` for the first of these, and for the second it warns
-about something else:
+What lint cannot see. It says `clean` for the first and last of these, and for the second
+it warns about something else:
 
 | You wrote | What happens |
 |---|---|
 | `Leads to: suits`, or `Leads to:` with any other key | Nothing. See Step 5 |
 | `Then: reveal account` on a side story | Nothing is revealed. Lint only says that Account for the Crew is waiting on a signal nothing sends |
+| `- ![](icon://persn) Suits.` | The bullet is drawn with no picture. A name the game does not know draws nothing (read from the game's code) |
 
 ## Step 8 - Play it
 

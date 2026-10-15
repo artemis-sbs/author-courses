@@ -7,7 +7,7 @@
 >   such an install.
 > - **The student's mission is `MyRuin`** as Lecture 6 left it: a fresh
 >   `sbs create MyRuin -t amd` mission whose two files are
->   `c4-06-clues-side-stories-cutscenes\example\mission.amd` (296 lines) and `story.mast`
+>   `c4-06-clues-side-stories-cutscenes\example\mission.amd` (304 lines) and `story.mast`
 >   (116 lines). The first version of this lecture started from Lecture 4's file; the
 >   class is a chain now, so the ring recording, the side story and the cutscene are in
 >   the file and in the game while this lecture is played. The game is started with
@@ -46,7 +46,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyRuin` as Lecture 6 leaves it, lint clean. Lecture 4's exercise NOT done (no Marker Two, no What Rook Left, no Rook at the Niche). `mission.amd` has 296 lines |
+| Mission | `MyRuin` as Lecture 6 leaves it, lint clean. Lecture 4's exercise NOT done (no Marker Two, no What Rook Left, no Rook at the Niche). `mission.amd` has 304 lines |
 | `story.mast` | Lecture 6's, 116 lines, with the card. Never opened in this lecture |
 | VS Code | `MyRuin` folder open, `mission.amd` in one tab, font size raised |
 | Command prompt | Open in `data\missions`, cleared |
@@ -115,6 +115,9 @@ Not seen by anyone. If one is not as described, stop and fix the page:
    say so and change the number in the page.
 7. Everything Lecture 4's script lists as unseen: the call's row, the open call, The Niche
    turning gold on Helm's map.
+8. The Hollow Survey's description with the arc picked in the quest list: DS 1's hull
+   drawn small beside its line, then three paragraphs. And What Rook Put Back's two
+   paragraphs. (Mock lays them out; nobody has seen the engine draw them.)
 
 > Keep off camera: suits, and picking anything up. And a step that finishes on a scan
 > (`Done when: scan 1 altar`): Class 1, Lecture 10 already tells the student why not to
@@ -154,8 +157,11 @@ Survey.
 **Say:** "The story needs a heading, | and I put it below the last quest in the section.
 || It's an arc, with three hashes, | and the word Arc alone on the first line. || It
 starts at once, and it fails after twenty minutes. || There's a Win sentence for when it's
-finished, | and a Lose sentence for when it fails. ||| All of that is Class 1. || Nobody
-warns the crew about the clock, | so I say twenty minutes in the description. ||"
+finished, | and a Lose sentence for when it fails. ||| All of that is Class 1. || The
+description's a page, | so it gets three short paragraphs. || First the station, drawn
+beside its own line, | so the crew knows who's sending them. || Then what's known about
+the markers. || Nobody warns the crew about the clock, | so the last paragraph says twenty
+minutes, | and that the haze is closing in. ||"
 
 ### 4. The way in
 

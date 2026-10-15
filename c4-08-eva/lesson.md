@@ -36,9 +36,9 @@ What your file looks like depends on the order you worked in.
 
 | You did | Your `mission.amd` |
 |---|---|
-| Lectures 1 to 4, then 6 and 7, then 5 | 443 lines. Lecture 5's two quests are the last records of the Quests section |
-| Lectures 1 to 7 in order | 443 lines. Lecture 5's two quests sit just below Marker One |
-| Lectures 1 to 4, 6 and 7, and not 5 | 395 lines. Do Lecture 5's Steps 2 to 6 now, on the file you have |
+| Lectures 1 to 4, then 6 and 7, then 5 | 461 lines. Lecture 5's two quests are the last records of the Quests section |
+| Lectures 1 to 7 in order | 461 lines. Lecture 5's two quests sit just below Marker One |
+| Lectures 1 to 4, 6 and 7, and not 5 | 409 lines. Do Lecture 5's Steps 2 to 6 now, on the file you have |
 
 Nothing on this page depends on which of the first two you have. `story.mast` is Lecture
 6's, with its card, 116 lines.
@@ -177,7 +177,25 @@ Part of: survey
 Required: true
 ---
 A slab has come down across the way into the built room. Somebody has to go out there and cut it.
+
+- ![](icon://person) Suit up at The Way In, while the ship is close
+- ![](icon://flame) Fly to The Gallery Door, and cut the slab with the beam
+
+The cut takes twelve seconds. The ship's own beams can break the slab as well.
 ```
+
+The two lines that start with a hyphen are a list, and each one has a picture for its
+bullet.
+
+| You type | The quest list draws |
+|---|---|
+| `- ` (a hyphen, a space) at the start of a line | A bullet |
+| `![](icon://person)` straight after it | A small picture of a person, in place of the dot |
+| `person`, `flame` | The picture's name. A name the game does not know draws nothing, and lint does not check it |
+
+Other names you can use: `wrench`, `antenna`, `chest`, `hourglass`, `magnifier`,
+`first-aid`, `flag`, `skull`. Leave a blank line below the list: a line typed straight
+under a bullet joins that bullet.
 
 Then change one line in **The First Marker**, so that it leads to the new step:
 
@@ -283,22 +301,26 @@ Part of: survey
 Required: true
 ---
 It is aboard. Take it back to DS 1.
+
+Count heads before Helm turns for home. Anybody still in a suit is still out at The Hollow.
 ```
 
-It is the fifth step from Lecture 7's exercise. The `Win:` line stays on the arc. The game
-is won when the last required step is done, and that is now this one.
+It is the fifth step from Lecture 7's exercise, with a new objective and a second
+paragraph. The `Win:` line stays on the arc. The game is won when the last required step
+is done, and that is now this one.
 
 ## Step 6 - The clock
 
 A suit is slower than a ship. Twenty minutes is not enough for this story. In **The Hollow
-Survey**, change two lines:
+Survey**, change two lines: the clock in its fence, and the last paragraph of its
+description.
 
 ```
 Fails when: 40 minutes
 ```
 
 ```
-Somebody surveyed The Hollow forty years ago and left markers behind. Follow them. You have forty minutes.
+The haze round The Hollow is thickening. Once it closes, no ship will find the way in. You have forty minutes.
 ```
 
 In the stand-in this page was checked on, a suit at Cruise took about three minutes from
@@ -335,6 +357,11 @@ Part of: survey
 Required: true
 ---
 A slab has come down across the way into the built room. Somebody has to go out there and cut it.
+
+- ![](icon://person) Suit up at The Way In, while the ship is close
+- ![](icon://flame) Fly to The Gallery Door, and cut the slab with the beam
+
+The cut takes twelve seconds. The ship's own beams can break the slab as well.
 ```
 
 The end of the arc:
@@ -355,6 +382,8 @@ Required: true
 ---
 The second marker is playing. Hear it out, and bring aboard what is in the niche.
 
+Rook's team took it from the altar forty years ago, and then they carried it back. His recordings are the only account of why.
+
 #### [Carry It Home](home)
 ---
 Scope: shared
@@ -366,6 +395,8 @@ Part of: survey
 Required: true
 ---
 It is aboard. Take it back to DS 1.
+
+Count heads before Helm turns for home. Anybody still in a suit is still out at The Hollow.
 ```
 
 At the end of the Relics section:
@@ -414,7 +445,7 @@ Speaker: rook
 - [Open the niche.]() ; signal niche_open
 ```
 
-The whole file is in `example\mission.amd`. It is 478 lines long.
+The whole file is in `example\mission.amd`. It is 501 lines long.
 
 ## Step 7 - Check it
 

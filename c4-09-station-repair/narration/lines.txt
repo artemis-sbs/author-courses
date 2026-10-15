@@ -56,6 +56,10 @@ s06_a_quest_that_waits_4	A barrier has opened,
 s06_a_quest_that_waits_5	a job has been repaired,
 s06_a_quest_that_waits_6	or a ruin's piece has been taken.
 s06_a_quest_that_waits_7	Lint knows all three.
+s06_a_quest_that_waits_8	The description borrows two things from earlier.
+s06_a_quest_that_waits_9	The station's lead line, so the crew knows it's DS 1 asking.
+s06_a_quest_that_waits_10	And a short list, with a person and a wrench for bullets,
+s06_a_quest_that_waits_11	so whoever reads it knows what to do, in order.
 s07_two_doors_one_word_0	Now here's the reason I kept this in the same mission.
 s07_two_doors_one_word_1	I have two places with the role entrance.
 s07_two_doors_one_word_2	The game needs both.

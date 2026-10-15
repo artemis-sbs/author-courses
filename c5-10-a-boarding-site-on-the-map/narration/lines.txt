@@ -36,6 +36,9 @@ s04_a_fact_and_a_step_of_story_7	That word is mine.
 s04_a_fact_and_a_step_of_story_8	Over in the universe file, I add a step of story
 s04_a_fact_and_a_step_of_story_9	that's done when it hears that same word.
 s04_a_fact_and_a_step_of_story_10	That's how a place finishes a step.
+s04_a_fact_and_a_step_of_story_11	Its briefing opens with the Customs House itself, drawn beside the words.
+s04_a_fact_and_a_step_of_story_12	It's the same model as the landmark's Art line,
+s04_a_fact_and_a_step_of_story_13	so the crew sees where they're going.
 s05_lint_and_play_0	Lint first, and it's clean.
 s05_lint_and_play_1	There are seven files now,
 s05_lint_and_play_2	and it read the new one with the rest.

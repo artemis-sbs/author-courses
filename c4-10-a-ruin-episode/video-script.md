@@ -9,7 +9,7 @@
 >   the mock. No suit has been flown by a person, no repair has been done at a console.
 >   Record Lectures 8 and 9 first; this recording depends on everything they find.
 > - **The student's mission is `MyRuin`** as Lecture 9 left it:
->   `c4-09-station-repair\example\mission.amd` (526 lines) and Lecture 6's `story.mast`
+>   `c4-09-station-repair\example\mission.amd` (554 lines) and Lecture 6's `story.mast`
 >   (116 lines). The game is started with `sbs run server,helm,comms -m MyRuin map=0`.
 > - **`mission.amd` only.**
 > - **`example\` holds the one file that differs from the start:** `mission.amd` (552
@@ -51,7 +51,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyRuin` as Lecture 9 leaves it, lint clean. `mission.amd` has 526 lines |
+| Mission | `MyRuin` as Lecture 9 leaves it, lint clean. `mission.amd` has 554 lines |
 | `story.mast` | Lecture 6's, 116 lines. Never opened in this lecture |
 | VS Code | `MyRuin` folder open, `mission.amd` in one tab, font size raised |
 | Command prompt | Open in `data\missions`, cleared |
@@ -106,6 +106,9 @@ Not seen by anyone. If one is not as described, stop and fix the page:
    and the cairn's own scene opening on the suit at the same moment.
 4. The quest list with ten finished rows.
 5. The end screen for this mission.
+6. Forty-One in the quest list: a paragraph, the two-row table, a paragraph. And Raise
+   the Mast as a step of the arc, with its lead line and its list. (Mock lays them out;
+   nobody has seen the engine draw them.)
 
 > Keep off camera: the place's own marker in the Fire app at the niche (Lecture 8's note).
 > The `For:` story is optional on camera: if it is shown, show that lint is `clean`.
@@ -144,7 +147,8 @@ type the step Raise the Mast. Change Find the Way In to `Starts when: revealed`.
 **Say:** "Last time the mast was a quest by itself. || Now it opens the episode. ||| So I
 delete that quest, | and I type it again inside the arc, with four hashes. || It gets
 three more lines: | a Then, to reveal the next step, | and the two lines that make it
-count toward winning. ||| And the way in is no longer first, | so it starts when it's
+count toward winning. || The lead line and the list stay as they were. | Only the
+middle paragraph changes, | to say why the mast comes first. ||| And the way in is no longer first, | so it starts when it's
 revealed. ||"
 
 ### 4. A clue for the crew who go inside
@@ -155,7 +159,9 @@ Dialogue: type At the Cairn and The Count.
 
 **Say:** "Earlier the ship got a clue chain. | Comms logged some names, | and a later call
 had one more answer. ||| This is the same idea, for somebody in a suit. || At the altar,
-the answer that reads the marks | now learns a fact, and starts a quest. || Then the cairn
+the answer that reads the marks | now learns a fact, and starts a quest. || The quest has
+a small table, | what the crew knows about the marks. || It gives them the number
+without the answer. || Then the cairn
 gets a scene of its own. || And one of its answers says if learned, at least one. ||| So a
 crew member who read the marks can count the stones against them. | One who didn't just
 sees a pile of stones. || And the count sends the word that finishes the quest. ||"

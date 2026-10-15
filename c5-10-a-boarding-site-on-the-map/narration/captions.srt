@@ -151,337 +151,349 @@ that's done when it hears that same word.
 That's how a place finishes a step.
 
 39
-00:02:32,524 --> 00:02:34,698
-Lint first, and it's clean.
+00:02:33,124 --> 00:02:38,341
+Its briefing opens with the Customs House itself, drawn beside the words.
 
 40
-00:02:35,598 --> 00:02:37,772
-There are seven files now,
+00:02:39,241 --> 00:02:43,154
+It's the same model as the landmark's Art line,
 
 41
-00:02:38,222 --> 00:02:42,135
-and it read the new one with the rest.
+00:02:43,604 --> 00:02:46,648
+so the crew sees where they're going.
 
 42
-00:02:43,935 --> 00:02:47,848
-It knows boarding down is the game's own word.
+00:02:47,848 --> 00:02:50,022
+Lint first, and it's clean.
 
 43
-00:02:48,748 --> 00:02:52,226
-And it found my signal at both ends,
+00:02:50,922 --> 00:02:53,096
+There are seven files now,
 
 44
-00:02:52,676 --> 00:02:57,459
-the answer in one file and the step in the other.
+00:02:53,546 --> 00:02:57,459
+and it read the new one with the rest.
 
 45
-00:02:59,259 --> 00:03:01,433
-Now let's dock with it.
+00:02:59,259 --> 00:03:03,172
+It knows boarding down is the game's own word.
 
 46
-00:03:02,333 --> 00:03:05,811
-A call comes in from the Customs House.
+00:03:04,072 --> 00:03:07,550
+And it found my signal at both ends,
 
 47
-00:03:06,711 --> 00:03:09,320
-Comms answers, and sends a party.
+00:03:08,000 --> 00:03:12,783
+the answer in one file and the step in the other.
 
 48
-00:03:10,220 --> 00:03:11,959
-And here's the counter.
+00:03:14,583 --> 00:03:16,757
+Now let's dock with it.
 
 49
-00:03:13,759 --> 00:03:15,498
-I read the manifest,
+00:03:17,657 --> 00:03:21,135
+A call comes in from the Customs House.
 
 50
-00:03:15,948 --> 00:03:18,991
-and the step is done and paid.
+00:03:22,035 --> 00:03:24,643
+Comms answers, and sends a party.
 
 51
-00:03:19,891 --> 00:03:21,630
-Back at the counter,
+00:03:25,543 --> 00:03:27,283
+And here's the counter.
 
 52
-00:03:22,080 --> 00:03:25,993
-the clerk has a different line for me now.
+00:03:29,083 --> 00:03:30,822
+I read the manifest,
 
 53
-00:03:27,193 --> 00:03:31,541
-Now the second place, and here's the rule for it.
+00:03:31,272 --> 00:03:34,315
+and the step is done and paid.
 
 54
-00:03:32,441 --> 00:03:34,180
-Say it with me.
+00:03:35,215 --> 00:03:36,954
+Back at the counter,
 
 55
-00:03:35,980 --> 00:03:38,589
-The landmark says site, tally yard.
+00:03:37,404 --> 00:03:41,317
+the clerk has a different line for me now.
 
 56
-00:03:39,489 --> 00:03:42,967
-The map's first line says area, tally yard.
+00:03:42,517 --> 00:03:46,865
+Now the second place, and here's the rule for it.
 
 57
-00:03:43,867 --> 00:03:45,607
-It's the same key,
+00:03:47,765 --> 00:03:49,504
+Say it with me.
 
 58
-00:03:46,057 --> 00:03:48,230
-and nothing else joins them.
+00:03:51,304 --> 00:03:53,913
+The landmark says site, tally yard.
 
 59
-00:03:50,030 --> 00:03:51,770
-A map needs pictures,
+00:03:54,813 --> 00:03:58,291
+The map's first line says area, tally yard.
 
 60
-00:03:52,220 --> 00:03:55,263
-and they come in two art packs.
+00:03:59,191 --> 00:04:00,930
+It's the same key,
 
 61
-00:03:56,163 --> 00:04:00,076
-So I add two lines to story dot json,
+00:04:01,380 --> 00:04:03,554
+and nothing else joins them.
 
 62
-00:04:00,526 --> 00:04:02,700
-and I watch my commas.
+00:04:05,354 --> 00:04:07,093
+A map needs pictures,
 
 63
-00:04:03,600 --> 00:04:07,513
-One line at the end of the settings file.
+00:04:07,543 --> 00:04:10,587
+and they come in two art packs.
 
 64
-00:04:08,413 --> 00:04:11,022
-And then I fetch them, once.
+00:04:11,487 --> 00:04:15,400
+So I add two lines to story dot json,
 
 65
-00:04:12,222 --> 00:04:14,830
-I'm handing you this map finished,
+00:04:15,850 --> 00:04:18,024
+and I watch my commas.
 
 66
-00:04:15,280 --> 00:04:19,193
-because drawing one is a class of its own.
+00:04:18,924 --> 00:04:22,837
+One line at the end of the settings file.
 
 67
-00:04:20,993 --> 00:04:23,167
-Read it as a picture.
+00:04:23,737 --> 00:04:26,346
+And then I fetch them, once.
 
 68
-00:04:24,067 --> 00:04:27,111
-There's a landing pad on the left,
+00:04:27,546 --> 00:04:30,154
+I'm handing you this map finished,
 
 69
-00:04:27,561 --> 00:04:30,604
-and a walled house with one door.
+00:04:30,604 --> 00:04:34,517
+because drawing one is a class of its own.
 
 70
-00:04:32,404 --> 00:04:35,883
-And there's the first line, area, tally yard.
+00:04:36,317 --> 00:04:38,491
+Read it as a picture.
 
 71
-00:04:37,683 --> 00:04:39,857
-Then the site's own file.
+00:04:39,391 --> 00:04:42,435
+There's a landing pad on the left,
 
 72
-00:04:40,757 --> 00:04:43,800
-It has the same call as before.
+00:04:42,885 --> 00:04:45,928
+and a walled house with one door.
 
 73
-00:04:44,700 --> 00:04:47,743
-And then what stands on the map.
+00:04:47,728 --> 00:04:51,207
+And there's the first line, area, tally yard.
 
 74
-00:04:48,193 --> 00:04:51,672
-A door, a keycard, a terminal, a ledger.
+00:04:53,007 --> 00:04:55,180
+Then the site's own file.
 
 75
-00:04:52,572 --> 00:04:55,180
-A calm man to talk to,
+00:04:56,080 --> 00:04:59,124
+It has the same call as before.
 
 76
-00:04:55,630 --> 00:04:57,804
-and a loader that attacks.
+00:05:00,024 --> 00:05:03,067
+And then what stands on the map.
 
 77
-00:04:59,604 --> 00:05:02,648
-Every key starts with the word yard.
+00:05:03,517 --> 00:05:06,996
+A door, a keycard, a terminal, a ledger.
 
 78
-00:05:03,548 --> 00:05:08,330
-Keep to that, and two places can never share a key.
+00:05:07,896 --> 00:05:10,504
+A calm man to talk to,
 
 79
-00:05:09,530 --> 00:05:12,574
-One more landmark, with its one line.
+00:05:10,954 --> 00:05:13,128
+and a loader that attacks.
 
 80
-00:05:13,474 --> 00:05:15,648
-One more step of story,
+00:05:14,928 --> 00:05:17,972
+Every key starts with the word yard.
 
 81
-00:05:16,098 --> 00:05:18,272
-opened by the first one.
+00:05:18,872 --> 00:05:23,654
+Keep to that, and two places can never share a key.
 
 82
-00:05:20,072 --> 00:05:23,550
-And lint says clean, for all eight files.
+00:05:24,854 --> 00:05:27,898
+One more landmark, with its one line.
 
 83
-00:05:24,450 --> 00:05:27,059
-It reads the map as well.
+00:05:28,798 --> 00:05:30,972
+One more step of story,
 
 84
-00:05:28,859 --> 00:05:32,772
-Change the map's first line to some other word,
+00:05:31,422 --> 00:05:33,596
+opened by the first one.
 
 85
-00:05:33,222 --> 00:05:37,135
-and lint tells you the site will not exist.
+00:05:35,396 --> 00:05:38,874
+And lint says clean, for all eight files.
 
 86
-00:05:38,035 --> 00:05:40,643
-The game's log says the same.
+00:05:39,774 --> 00:05:42,383
+It reads the map as well.
 
 87
-00:05:41,843 --> 00:05:44,452
-So we dock with the yard,
+00:05:44,183 --> 00:05:48,096
+Change the map's first line to some other word,
 
 88
-00:05:44,902 --> 00:05:46,641
-and the call comes.
+00:05:48,546 --> 00:05:52,459
+and lint tells you the site will not exist.
 
 89
-00:05:47,541 --> 00:05:49,715
-I go down from Weapons,
+00:05:53,359 --> 00:05:55,967
+The game's log says the same.
 
 90
-00:05:50,165 --> 00:05:52,774
-and the side story is mine.
+00:05:57,167 --> 00:05:59,776
+So we dock with the yard,
 
 91
-00:05:54,574 --> 00:05:57,183
-First I deal with the loader.
+00:06:00,226 --> 00:06:01,965
+and the call comes.
 
 92
-00:05:58,083 --> 00:06:00,257
-Then I try the door,
+00:06:02,865 --> 00:06:05,039
+I go down from Weapons,
 
 93
-00:06:00,707 --> 00:06:02,446
-and it stays shut.
+00:06:05,489 --> 00:06:08,098
+and the side story is mine.
 
 94
-00:06:03,346 --> 00:06:06,389
-The keycard's lying out in the yard.
+00:06:09,898 --> 00:06:12,507
+First I deal with the loader.
 
 95
-00:06:07,289 --> 00:06:11,202
-I pick it up, and now the door opens.
+00:06:13,407 --> 00:06:15,580
+Then I try the door,
 
 96
-00:06:13,002 --> 00:06:14,741
-Inside there's the ledger.
+00:06:16,030 --> 00:06:17,770
+and it stays shut.
 
 97
-00:06:15,641 --> 00:06:20,424
-I close it, and the short count is done and paid.
+00:06:18,670 --> 00:06:21,713
+The keycard's lying out in the yard.
 
 98
-00:06:22,224 --> 00:06:25,702
-And when the last of us beams up,
+00:06:22,613 --> 00:06:26,526
+I pick it up, and now the door opens.
 
 99
-00:06:26,152 --> 00:06:27,891
-the visit is over.
+00:06:28,326 --> 00:06:30,065
+Inside there's the ledger.
 
 100
-00:06:29,091 --> 00:06:32,570
-Now I dock again, and go back down.
+00:06:30,965 --> 00:06:35,748
+I close it, and the short count is done and paid.
 
 101
-00:06:33,470 --> 00:06:35,209
-The door's still open,
+00:06:37,548 --> 00:06:41,026
+And when the last of us beams up,
 
 102
-00:06:35,659 --> 00:06:37,833
-and the loader's still down.
+00:06:41,476 --> 00:06:43,215
+the visit is over.
 
 103
-00:06:39,633 --> 00:06:43,111
-I leave the system, and I come back.
+00:06:44,415 --> 00:06:47,893
+Now I dock again, and go back down.
 
 104
-00:06:44,011 --> 00:06:46,620
-The game built that station new,
+00:06:48,793 --> 00:06:50,533
+The door's still open,
 
 105
-00:06:47,070 --> 00:06:50,983
-and the yard is just as I left it.
+00:06:50,983 --> 00:06:53,157
+and the loader's still down.
 
 106
-00:06:52,783 --> 00:06:55,826
-Then I close the game, and continue.
+00:06:54,957 --> 00:06:58,435
+I leave the system, and I come back.
 
 107
-00:06:56,276 --> 00:06:58,015
-It's the same again.
+00:06:59,335 --> 00:07:01,943
+The game built that station new,
 
 108
-00:06:59,815 --> 00:07:02,859
-And here it is in the save.
+00:07:02,393 --> 00:07:06,307
+and the yard is just as I left it.
 
 109
-00:07:03,309 --> 00:07:05,917
-The door, the keycard, the loader,
+00:07:08,107 --> 00:07:11,150
+Then I close the game, and continue.
 
 110
-00:07:06,367 --> 00:07:09,411
-and what we learned in each place.
+00:07:11,600 --> 00:07:13,339
+It's the same again.
 
 111
-00:07:10,611 --> 00:07:13,220
-Two honest words before you go.
+00:07:15,139 --> 00:07:18,183
+And here it is in the save.
 
 112
-00:07:15,020 --> 00:07:19,802
-When I checked this page, a script did all of it,
+00:07:18,633 --> 00:07:21,241
+The door, the keycard, the loader,
 
 113
-00:07:20,252 --> 00:07:22,861
-and nobody was watching a screen.
+00:07:21,691 --> 00:07:24,735
+and what we learned in each place.
 
 114
-00:07:24,661 --> 00:07:27,704
-And always give a site a call.
+00:07:25,935 --> 00:07:28,543
+Two honest words before you go.
 
 115
-00:07:28,604 --> 00:07:32,952
-A place with no call opens the moment you dock,
+00:07:30,343 --> 00:07:35,126
+When I checked this page, a script did all of it,
 
 116
-00:07:33,402 --> 00:07:36,011
-and nobody asked the crew first.
+00:07:35,576 --> 00:07:38,185
+and nobody was watching a screen.
 
 117
-00:07:36,911 --> 00:07:39,954
-If they cast off without going down,
+00:07:39,985 --> 00:07:43,028
+And always give a site a call.
 
 118
-00:07:40,404 --> 00:07:42,143
-that visit just ends.
+00:07:43,928 --> 00:07:48,276
+A place with no call opens the moment you dock,
 
 119
-00:07:43,943 --> 00:07:45,683
-Now it's your turn.
+00:07:48,726 --> 00:07:51,335
+and nobody asked the crew first.
 
 120
-00:07:46,583 --> 00:07:48,322
-Rename the customs house,
+00:07:52,235 --> 00:07:55,278
+If they cast off without going down,
 
 121
-00:07:48,772 --> 00:07:51,380
-and give it a fifth room.
+00:07:55,728 --> 00:07:57,467
+that visit just ends.
 
 122
-00:07:52,280 --> 00:07:56,193
+00:07:59,267 --> 00:08:01,007
+Now it's your turn.
+
+123
+00:08:01,907 --> 00:08:03,646
+Rename the customs house,
+
+124
+00:08:04,096 --> 00:08:06,704
+and give it a fifth room.
+
+125
+00:08:07,604 --> 00:08:11,517
 Then walk the yard as far as the ledger.

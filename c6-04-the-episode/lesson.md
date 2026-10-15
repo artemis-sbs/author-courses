@@ -81,7 +81,15 @@ Starts when: revealed
 Done when: reach X, Y
 Then: reveal sNN_DEED
 ---
-WHAT WAS FOUND LAST WEEK. WHERE TO GO. WHAT IS STRANGE ABOUT IT.
+WHAT WAS FOUND LAST WEEK. WHERE TO GO.
+
+WHAT IS STRANGE ABOUT IT.
+
+## The count so far
+
+| Boat | Where | What we know |
+|---|---|---|
+| BOAT | (X, Y) | WHAT WE KNOW |
 
 ### [The Long Count: OBJECTIVE TITLE](sNN_DEED)
 ---
@@ -114,6 +122,7 @@ WHAT THE CREW NOW KNOWS. TAKE IT HOME.
 | `DEED` | A word for what the crew does: `scan`, `clear`, `ask` |
 | `ENDING` | What finishes the objective. See the table below |
 | `PAY` | The evening's wage |
+| `BOAT`, `WHAT WE KNOW` | The count so far. Copy the table from the open before this one, and add a row for the boat this open sends the crew to |
 | The four titles and the four texts | Yours |
 
 The four endings an objective can have with what you know today:
@@ -180,7 +189,16 @@ Starts when: revealed
 Done when: reach -2, 3
 Then: reveal s02_clear
 ---
-The Wren's log gives the next boat's last bearing: (-2, 3), past the edge of the Fields. She was the Dunlin. Somebody out there is still answering her hails.
+The Wren's log gives the next boat's last bearing: (-2, 3), past the edge of the Fields. She was the Dunlin.
+
+Somebody out there is still answering her hails.
+
+## The count so far
+
+| Boat | Where | What we know |
+|---|---|---|
+| The Wren | (2, 2) | Launched, and empty. Nine names in her log |
+| The Dunlin | (-2, 3) | Something answers on her channel |
 ```
 
 Under it, the objective, the way home, and next week's hook.
@@ -193,7 +211,9 @@ Starts when: revealed
 Done when: destroy 2 enemies
 Then: reveal s02_home
 ---
-The Dunlin is a lure, and the ships in the cloud have been waiting for someone to answer. Two of them. Break the trap.
+[](ship://torgoth_destroyer) Gleaner hulls, Torgoth-built. Two of them, in the cloud.
+
+The Dunlin is a lure, and the ships in the cloud have been waiting for someone to answer. Break the trap.
 
 ### [The Long Count: Enter It Twice](s02_home)
 ---
@@ -211,12 +231,29 @@ Scope: shared
 Starts when: revealed
 Done when: reach 3, 1
 ---
-A boat does not empty itself. The Deepwell count every hull that is sold in the Verge. Go to the Assay Office at (3, 1) and ask what they paid for a boat called the Plover.
+A boat does not empty itself. The Deepwell count every hull that is sold in the Verge.
+
+Go to the Assay Office at (3, 1) and ask what they paid for a boat called the Plover.
+
+## The count so far
+
+| Boat | Where | What we know |
+|---|---|---|
+| The Wren | (2, 2) | Launched, and empty. Nine names in her log |
+| The Dunlin | (-2, 3) | Empty, her lockers full. Her voice was a recording |
+| The Plover | Sold | Ask the Deepwell who bought her |
 ```
 
 That is the rhythm of the whole campaign. Each time you sit down, the open is already
 written, because it was last week's hook. You write a landmark, an objective, a way
-home, and the next hook.
+home, and the next hook. Three of Five carries the count forward: the table from Two of
+Five, with a row added for the Plover.
+
+**The fight shows the crew what they are fighting.** Bait's text starts with a ship, the
+way the Salvage Run arc did in Class 1 Lecture 11: `[](ship://torgoth_destroyer)` draws a
+Torgoth hull in 3D at the top of the page, with the words beside it. The Gleaners fly
+Torgoth. The name after `ship://` must be a hull the game has, letter for letter, and
+lint does not read it. Copy it exactly.
 
 **Two enemies, three ships.** Measured: three ships guard the Dunlin, and the step asks
 for two. That is on purpose. A fight the crew must finish to the last ship is a fight

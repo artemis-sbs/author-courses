@@ -161,7 +161,11 @@ clean.
 
 **Say:** "The crew still needs a reason to go, | so I add two leads, the way we did in
 Lecture 3. || The Assay Office doesn't need one, | because an old lead already goes
-there. ||| I save, and lint says clean. || And again, clean isn't the whole check today.
+there. ||| The third colony gets two paragraphs, | with an empty line between them. ||
+The Quest Log shows a lead as a page, | so the first paragraph is the order, | and the
+second is why anyone would go. ||| A landmark's line is different. || The card shows
+the first line, | and cuts it after sixty characters, | so no landmark line here is
+longer than that. ||| I save, and lint says clean. || And again, clean isn't the whole check today.
 || Lint doesn't know a sky's name from a typing mistake, | and it doesn't count your
 percent signs. || So read down the list on the page. ||"
 

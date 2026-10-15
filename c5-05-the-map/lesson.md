@@ -202,7 +202,7 @@ Prefab: station
 Side: deepwell
 Art: starbase_industry
 ---
-Where the Deepwell weighs what it digs. Nothing leaves this system uncounted.
+Where the Deepwell weighs its ore. Nothing leaves uncounted.
 
 ### [The Tern](the_tern)
 ---
@@ -210,7 +210,7 @@ At: 1, -2
 Prefab: derelict
 Terrain: nebula blue
 ---
-The third colony's ship, still in orbit over the place it never landed.
+The third colony's ship, circling where she never landed.
 
 ### [The Bone Pile](bone_pile)
 ---
@@ -219,7 +219,7 @@ Prefab: derelict
 Terrain: asteroids
 Guards: torgoth
 ---
-Where the Gleaners stack what they cannot sell. They do not like it looked at.
+The Gleaners' dump. They do not like it looked at.
 ```
 
 | Line | What it means |
@@ -230,7 +230,7 @@ Where the Gleaners stack what they cannot sell. They do not like it looked at.
 | `Art:` | For a station: which model it is. `starbase_command`, `starbase_civil`, `starbase_science` or `starbase_industry` |
 | `Terrain:` | Cover round the landmark: `nebula`, or `asteroids`. After `nebula` you can name a color |
 | `Guards:` | A fleet that waits at the landmark. The word is the kind of ship, one of the six from Lecture 3 |
-| The line below the fence | What the crew is told on arrival. One line |
+| The line below the fence | What the crew is told on arrival. One line, of 60 characters or fewer |
 
 What each of these three is for.
 
@@ -264,6 +264,8 @@ Done when: reach 1, -2
 ---
 The Tern never answered. Her last position was (1, -2). Go and see what is left of her.
 
+She was the third colony ship, and the last one out. Nobody has been to look in forty years.
+
 ### [What the Gleaners Keep](lead_bone_pile)
 ---
 Scope: shared
@@ -272,6 +274,15 @@ Done when: reach -4, -3
 ---
 There is a place at (-4, -3) the Gleaners will not talk about. Go armed.
 ```
+
+The Third Colony has two paragraphs. A lead is a quest, and the Quest Log shows what is
+under its fence as a page, the way Class 1, Lecture 8 taught: an empty line between
+paragraphs. The first paragraph is the order. The second is why anyone would go.
+
+A landmark is not like that. Its arrival card shows the first line only, and cuts it at
+60 characters, at a word, with three dots after it. Every landmark line on this page is
+60 or fewer. Count yours: VS Code shows the column at the bottom of the window, as
+`Col 61` when the cursor is just after the 60th character.
 
 Assay Office needs no lead of its own. It is at the Deepwell's home, where The Second
 Colony already takes the crew.
@@ -338,6 +349,7 @@ So check these by eye:
 - Every `Skybox:` is one of the seven, letter for letter.
 - A small region is written before a large one that overlaps it.
 - `Prefab:` is `station` or `derelict`, not `wreck`.
+- Every landmark's line is one line, of 60 characters or fewer.
 
 ## Step 7 - Play it
 

@@ -65,6 +65,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
    `prop:generator` and `prop:machine_part` look like what the records say they are.
 2. The quest list changing on a console left aboard.
 3. Any real crew's time.
+4. The arc's description in the Quest Log, with the arc selected: the
+   three-row table and the hourglass line.
 
 ## Scenes
 
@@ -115,7 +117,8 @@ somebody. ||"
 ### 5. The quest tree
 
 **Screen:** The Quests section: the arc and its four steps. Then the bridge's quest list
-at three moments: before Ada's answer, after it, and after the lift.
+at three moments: before Ada's answer, after it, and after the lift. Then the arc
+selected, its description shown: the table and the hourglass line.
 
 **Say:** "Now the quest tree. | Remember what the bridge gets: the shared quests, and
 nothing else. || So this tree is the story the bridge follows. ||| One arc, with the clock
@@ -123,7 +126,9 @@ on it. || The arc waits, and the first answer on the ground starts it. | So nobo
 time choosing a console. ||| Each step is news for the ship. || And the two endings are
 the last two steps, | each with its own winning sentence. ||| I got this wrong the first
 time. | I had the endings outside the arc. || The arc finished early, and the clock
-stopped with it. | Keep the endings inside, and waiting. ||"
+stopped with it. | Keep the endings inside, and waiting. ||| And the arc's description is
+the bridge's briefing. || Nobody aboard hears Ada Corvin, | so the arc says what she said.
+|| Who's where, in a table, | and the air she counted, on an hourglass line. ||"
 
 ### 6. Two endings, and a full shot
 

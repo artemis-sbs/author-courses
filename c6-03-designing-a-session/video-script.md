@@ -52,7 +52,8 @@ there again.
    sensor range. The stand-in never scans by itself. The real game is known to, in
    other missions.
 2. The fight with the three guards.
-3. The Quest Log and the arrival cards.
+3. The Quest Log and the arrival cards. Two of Five's heading and table as a page in
+   the Quest Log.
 4. How long any of this takes with a crew.
 
 ## Scenes
@@ -119,14 +120,17 @@ next week, | and the guards will be there again. ||"
 
 ### 7. The hook
 
-**Screen:** Add Enter It and Two of Five. Select the text of Two of Five.
+**Screen:** Add Enter It and Two of Five. Select the text of Two of Five, then the
+table under `## The count so far`.
 
 **Say:** "Last, the way home, and next week's lead. ||| The home step ends when the
 ship's back at the relay, | and that's where it pays. || A crew that's just been paid, at
 their own station, | is a crew you can send home. ||| And the moment it's done, the next
 lead appears. || That's the hook, and it's the last thing they read tonight. ||| And next
 week, after they continue, | it's the one open line of the campaign. || So it's the
-recap as well. ||"
+recap as well. ||| That's why it ends with a table. || The count so far, | one row for each
+boat. || A crew that's been away a week reads the table first. ||| The heading has no
+square brackets, | so it's part of the text, not a new record. ||"
 
 ### 8. Lint and play
 

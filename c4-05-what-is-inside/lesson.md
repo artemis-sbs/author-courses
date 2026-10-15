@@ -165,9 +165,16 @@ Done when: collect canister
 Reward: 60 credits
 ---
 The first survey left its samples behind. Bring them out.
+
+A stack of sealed tubes stands against the wall of The Nave, where the first survey set them down forty years ago. Nobody at DS 1 knows what is in them.
 ```
 
 `Done when: collect canister` is the new line. The word after `collect` is the item's key.
+
+The description is two paragraphs, with a blank line between them. A quest's description
+is a page in the quest list, as in Class 1, Lecture 8: the first paragraph says what to
+do, the second what is known. An item's description is different: no screen in this
+class shows it, so one sentence is plenty there.
 
 **It counts pick-ups, and not what a pick-up is worth.** The Cache is one thing to take,
 worth three. So the line is `collect canister`, and one visit finishes it. If you write
@@ -185,7 +192,7 @@ line below the canister's description, and type:
 Type: item/quest
 Art: alien_small_2a
 ---
-A shallow bowl of grey stone. It fits the hollow worn into the top of the altar.
+A shallow bowl of gray stone. It fits the hollow worn into the top of the altar.
 ```
 
 Then find **The Niche** again, and change its fence. Add a word to `Roles:`, and add one
@@ -228,6 +235,8 @@ Done when: signal hollow_taken
 Reward: 200 credits
 ---
 Something small and heavy sits in the niche at the back of The Gallery.
+
+It is the one thing in The Hollow worth the trip. Whatever else the crew finds in there, this is what DS 1 sent them for.
 ```
 
 Look at `Done when: signal hollow_taken`. Nothing in your file sends that word, and lint
@@ -270,6 +279,8 @@ Reward: 60 credits
 ---
 The first survey left its samples behind. Bring them out.
 
+A stack of sealed tubes stands against the wall of The Nave, where the first survey set them down forty years ago. Nobody at DS 1 knows what is in them.
+
 ### [The Bowl](bowl)
 ---
 Scope: shared
@@ -279,6 +290,8 @@ Done when: signal hollow_taken
 Reward: 200 credits
 ---
 Something small and heavy sits in the niche at the back of The Gallery.
+
+It is the one thing in The Hollow worth the trip. Whatever else the crew finds in there, this is what DS 1 sent them for.
 ```
 
 In the Relics section, The Niche changed and The Cache below it:
@@ -323,10 +336,10 @@ A sealed sample tube from the first survey. The label has faded.
 Type: item/quest
 Art: alien_small_2a
 ---
-A shallow bowl of grey stone. It fits the hollow worn into the top of the altar.
+A shallow bowl of gray stone. It fits the hollow worn into the top of the altar.
 ```
 
-The whole file is in `example\mission.amd`. It is 247 lines long.
+The whole file is in `example\mission.amd`. It is 251 lines long.
 
 ## Step 7 - Check it
 

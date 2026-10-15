@@ -58,6 +58,8 @@ Reward: 60 credits
 ---
 The first survey left its samples behind. Bring them out.
 
+A stack of sealed tubes stands against the wall of The Nave, where the first survey set them down forty years ago. Nobody at DS 1 knows what is in them.
+
 ### [The Bowl](bowl)
 ---
 Scope: shared
@@ -67,6 +69,8 @@ Done when: signal hollow_taken
 Reward: 200 credits
 ---
 Something small and heavy sits in the niche at the back of The Gallery.
+
+It is the one thing in The Hollow worth the trip. Whatever else the crew finds in there, this is what DS 1 sent them for.
 
 // ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
 // it. `Tab:` picks which science tab the text lands in, and each `%` line is one of
@@ -198,7 +202,7 @@ A sealed sample tube from the first survey. The label has faded.
 Type: item/quest
 Art: alien_small_2a
 ---
-A shallow bowl of grey stone. It fits the hollow worn into the top of the altar.
+A shallow bowl of gray stone. It fits the hollow worn into the top of the altar.
 
 // ---- Characters. The voices in the story.
 ## [Characters](characters)

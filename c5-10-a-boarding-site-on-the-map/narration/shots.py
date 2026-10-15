@@ -60,7 +60,7 @@ SHOTS = [
     {
         "id": "s04_a_fact_and_a_step_of_story",
         "title": 'A fact, and a step of story',
-        "frames": 1299,
+        "frames": 1758,
         "captions": [
             ('Two more things on this one answer.', 0, 91),
             ('The first is learn the manifest.', 145, 224),
@@ -73,8 +73,11 @@ SHOTS = [
             ('Over in the universe file, I add a step of story', 856, 1000),
             ("that's done when it hears that same word.", 1013, 1117),
             ("That's how a place finishes a step.", 1171, 1263),
+            ('Its briefing opens with the Customs House itself, drawn beside the words.', 1317, 1473),
+            ("It's the same model as the landmark's Art line,", 1500, 1618),
+            ("so the crew sees where they're going.", 1631, 1722),
         ],
-        "pauses": [1.8, 0.9, 0.45, 0.9, 0.45, 1.8, 0.9, 0.9, 0.45, 1.8, 1.2],
+        "pauses": [1.8, 0.9, 0.45, 0.9, 0.45, 1.8, 0.9, 0.9, 0.45, 1.8, 1.8, 0.9, 0.45, 1.2],
     },
     {
         "id": "s05_lint_and_play",

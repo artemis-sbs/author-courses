@@ -49,6 +49,12 @@ s05_a_second_story_and_where_one_9	Her story finishes the ship's quest,
 s05_a_second_story_and_where_one_10	and the ship is paid.
 s05_a_second_story_and_where_one_11	A story can carry a reward of its own as well,
 s05_a_second_story_and_where_one_12	and it's paid to the ship that person came from.
+s05_a_second_story_and_where_one_13	The ship's quest gets a page,
+s05_a_second_story_and_where_one_14	because the Quest Log shows all of it.
+s05_a_second_story_and_where_one_15	A heading, and two bullets with a small picture for a dot.
+s05_a_second_story_and_where_one_16	The word after icon names the picture.
+s05_a_second_story_and_where_one_17	The side story stays short.
+s05_a_second_story_and_where_one_18	Tasks only shows its heading.
 s06_four_rules_and_lint_0	Four rules. A side story is a bonus, and never the only way,
 s06_four_rules_and_lint_1	because nobody covers for a person.
 s06_four_rules_and_lint_2	One job word goes in three places:

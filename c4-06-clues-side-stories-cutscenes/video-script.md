@@ -13,7 +13,7 @@
 > - **This lecture hands the student a recipe card** (R13 in the plan): one line in the
 >   map block of `story.mast` and a three-line block at its end. Nothing a writer can put
 >   in `mission.amd` starts a cutscene today.
-> - **`example\` holds the two files that differ from the start:** `mission.amd` (296
+> - **`example\` holds the two files that differ from the start:** `mission.amd` (304
 >   lines) and `story.mast` (116 lines).
 > - **Side stories for one person are not in this lecture.** Storm's Beacon's Side Stories
 >   sections hold `For:` quests, which are handed to a crew member who goes into the ruin
@@ -61,7 +61,7 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyRuin` as Lecture 4 leaves it, lint clean: The Hollow with The Ring, The Way In, The Altar and The Niche, Surveyor Rook, Marker One, Rook at the Altar, The Rest of It. Lecture 4's exercise NOT done. `mission.amd` has 199 lines, or the line numbers 267 and 65 on the page are wrong |
+| Mission | `MyRuin` as Lecture 4 leaves it, lint clean: The Hollow with The Ring, The Way In, The Altar and The Niche, Surveyor Rook, Marker One, Rook at the Altar, The Rest of It. Lecture 4's exercise NOT done. `mission.amd` has 199 lines, or the line numbers 275 and 65 on the page are wrong |
 | `story.mast` | The template's, 105 lines, `relics_spawn` on line 62 |
 | VS Code | `MyRuin` folder open, `mission.amd` and `story.mast` in two tabs, font size raised |
 | Command prompt | Open in `data\missions`, cleared |
@@ -77,7 +77,7 @@ recording, stop and fix the page.
 
 1. Lint is `clean` after every step except the two the page shows, both in Step 7: with
    the Cutscenes section typed and no map line, the `section-not-loaded` line printed
-   there, with `line 267`; with the `Then:` line typed and no block, the `signal-no-route`
+   there, with `line 275`; with the `Then:` line typed and no block, the `signal-no-route`
    line printed there, with `line 65`. (Lint.)
 2. At the ring a call is waiting, "Surveyor Rook - A recording at the ring", with the
    answers "Log the names." and "Shut it off.". "Log the names." puts `names` on the list
@@ -120,6 +120,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
    ship was moved, not flown.
 4. Everything Lecture 4's script lists as unseen: the call's row, the open call, a place
    turning into a contact after an answer.
+5. The One Who Stayed in the quest list: a paragraph, the three-row table of surveyors,
+   then a paragraph. (Mock lays it out; nobody has seen the engine draw it.)
 
 > Keep off camera: `Lens:` and `Move:` on a shot (they are spots in the whole map, and a
 > writer who types numbers measured from the ruin puts the camera twenty thousand away),
@@ -200,7 +202,10 @@ record above it.
 
 **Say:** "A side story is a quest that isn't part of the main story. || It has three
 hashes. | It starts when revealed, so it's asleep and out of the list. || And it's done
-when a ship is within four hundred of the cairn. ||| The answer starts it, with a comma
+when a ship is within four hundred of the cairn. ||| The description's a page, | so
+under the first line there's a small table. || It lists five surveyors, and who came out. || The
+crew only sees this quest after they've heard the names, | so the table can use them.
+||| The answer starts it, with a comma
 and then accepts stayed. || That's two things after one semicolon. ||| Now, in the game's
 shipped ruins you'll find a section called Side Stories, | and those are a different
 animal. || Each one says For, and a job. | They belong to one person, | and they're handed

@@ -177,10 +177,20 @@ Scope: shared
 Starts when: at once
 Done when: reach 2, 2
 ---
-The Tern carried five boats and forty-one people. A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+The Tern carried five boats and forty-one people. When the Compact found her, forty years late, every davit was empty.
+
+A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+
+A boat that was launched had somebody in it. The Gleaners strip every dead hull in the Verge, so be there before they are.
 ```
 
-You know every line of both from Class 5. Two things are new, and both are habits.
+You know every line of both from Class 5. Three things are new, and all three are habits.
+
+**The lead's text is a page.** The Quest Log draws it in a text area, so an empty line
+between two paragraphs starts a new paragraph on screen, the way Class 1 Lecture 8
+taught. Three short paragraphs here: what happened, where to go, and why tonight. The
+landmark's text is different. The game shows only its first line, on the card when the
+ship arrives, so keep a landmark to one short line.
 
 **The title starts with the campaign's name.** The Quest Log is one long list. A crew
 that has been playing for six weeks needs to see at a glance which lines are the

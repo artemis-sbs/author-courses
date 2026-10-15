@@ -76,7 +76,19 @@ Fails when: 30 minutes
 Win: The beacon is lit. Every convoy on the Kesh run has its way home again.
 Lose: Kesh Relay stays dark. The convoy comes through blind, and must find another road.
 ---
+![](ship://starbase_civil) Kesh Relay, the only light on the Kesh run.
+
 The relay's beacon went dark nine days ago. Go down and light it.
+
+![](icon://hourglass) Thirty minutes. Then the next convoy comes through, lamp or no lamp.
+
+| What | What the ship knows |
+|---|---|
+| The beacon | Dark for nine days. No power in the lamp |
+| The caretaker | Old Marrow. Not answering hails |
+| The yard | A security frame on patrol. It answers to nobody now |
+
+Every convoy on the Kesh run steers by that lamp. Until it is lit, they fly blind.
 
 // `reach relay 6000` waits for a ship within 6000 of anything with the ROLE `relay` -
 // story.mast gives the station that role. `Then: signal relay_reached` is what opens the
@@ -102,6 +114,8 @@ Reward: 100 credits
 Leads to: pim
 ---
 Nine days of survey readings, in the jaws of the thing in the cistern.
+
+Pim, Marrow's apprentice, dropped it on the cistern walkway and ran. Bring it back to her, and do not keep it.
 
 
 // ---- Side stories: a quest for ONE person. `For:` is a job from a `Roles:` line (or a

@@ -64,6 +64,7 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 2. The Pack app's **Give to** button.
 3. The quest log showing Pim's Tablet start and complete.
 4. The last screen after a loss from the pump house.
+5. Pim's Tablet's second paragraph in the Quest Log, under the first.
 
 ## Scenes
 
@@ -94,7 +95,8 @@ on people. ||"
 section: the second Pim. Then the Props section: the stash.
 
 **Say:** "First a quest that waits. | It starts when it's revealed, | which means when an
-answer says so. || Lint warns that nothing reveals it yet, | and that's true for now. |||
+answer says so. || Its description gets a second paragraph about who Pim is, | for
+whoever stayed on the ship and never met her. || Lint warns that nothing reveals it yet, | and that's true for now. |||
 Then two things that begin hidden. || A second record for Pim, by the tent in the yard. |
 When somebody goes somewhere else on a map, they're two records: | the one who leaves, and
 the one who arrives. || And a medical kit under a rock, | hidden until a scene shows it.

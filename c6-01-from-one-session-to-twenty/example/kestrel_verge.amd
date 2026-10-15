@@ -228,7 +228,11 @@ Scope: shared
 Starts when: at once
 Done when: reach 2, 2
 ---
-The Tern carried five boats and forty-one people. A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+The Tern carried five boats and forty-one people. When the Compact found her, forty years late, every davit was empty.
+
+A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+
+A boat that was launched had somebody in it. The Gleaners strip every dead hull in the Verge, so be there before they are.
 
 ## [Dialogue](dialogue)
 

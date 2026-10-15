@@ -329,6 +329,10 @@ Reward: 300 credits
 ---
 Twelve people are waking up cold. Stay close until they can stand.
 
+![](icon://hourglass) Thirty seconds, while the last of the lids come up.
+
+They went to sleep to make one small cell last. Nobody has told them yet how long it lasted.
+
 ### [Carry Word Home](carry_word)
 ---
 Scope: shared
@@ -338,9 +342,18 @@ Done when: reach station 1000
 Reward: 200 credits
 ---
 They asked for a doctor. Go and get one.
+
+![](ship://starbase_command) DS 1, and the nearest doctor. Within 1000 of her is close enough.
+
+The sleepers are safe for as long as their one cell lasts. Nobody aboard knows how long that is.
 ```
 
 `Starts when: revealed` keeps each quest hidden until something starts it.
+
+Each description is the first thing the crew reads after the choice, so each is a short
+page. `![](icon://hourglass)` at the start of a line is the icon from Lecture 5 without
+the bullet: one line tall, with the words beside it. The DS 1 line is a ship lead line, as
+on Close Inspection.
 
 In **The Captain's Cabin**, add the two choices above the way back:
 
@@ -417,7 +430,19 @@ Done when: signal berths_read
 Reward: 150 credits
 ---
 Somebody crewed that ship. Command wants to know what became of them.
+
+| What | What DS 1 knows |
+|---|---|
+| Her registry | Not on any list DS 1 keeps |
+| Her last call | None on record. She went quiet without a word |
+| Her power | One small cell, still warm. Everything else is cold |
+
+If anybody is still aboard her, they have been there a long time.
 ```
+
+The Lecture 5 heading and bullets go, and a table takes their place: what DS 1 knows
+before anybody boards. The table is written as in Class 1, Lecture 11: a header row, a row of dashes,
+then a row for each thing.
 
 Look at its `Done when:` line. It waits for `berths_read`, the signal the reading itself
 sends. In Lecture 5 it waited for the surgeon's story to finish. The difference matters to

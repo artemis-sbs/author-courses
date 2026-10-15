@@ -52,6 +52,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 1. This rewrite's files in the real game.
 2. The two `Quest complete:` lines on a bridge console as the reading is taken.
 3. The Back button's place on the handheld.
+4. Account for the Crew in the Quest Log: the heading, and the person and
+   tablet icons as the two bullets.
 
 ## Scenes
 
@@ -104,14 +106,18 @@ down late. ||"
 
 **Screen:** Type A Cold Core, and add its signal to the engineer's choice. Then add
 `Then: signal names_known` to Six Names, and type Account for the Crew in the Quests
-section. Draw the chain with the cursor: the choice, the story, the ship's quest.
+section, with its heading and two icon bullets. Draw the chain with the cursor: the
+choice, the story, the ship's quest.
 
 **Say:** "The engineer gets one too, | finished by his own reading. ||| And a side story
 can lead on, | the same way any quest does, with Then. || When the surgeon's story
 completes, it sends a second signal, | and a quest for the whole ship is waiting to hear
 it. ||| So read the chain from the top. | She reads the tags. | That finishes her story. |
 Her story finishes the ship's quest, | and the ship is paid. || A story can carry a reward
-of its own as well, | and it's paid to the ship that person came from. ||"
+of its own as well, | and it's paid to the ship that person came from. |||
+The ship's quest gets a page, | because the Quest Log shows all of it. || A heading,
+and two bullets with a small picture for a dot. || The word after icon names the
+picture. ||| The side story stays short. | Tasks only shows its heading. ||"
 
 ### 6. Four rules, and lint
 

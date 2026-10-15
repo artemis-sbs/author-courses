@@ -211,241 +211,277 @@ The game sends it,
 however the slab comes open.
 
 54
-00:03:38,193 --> 00:03:42,541
-Last time Comms said the final word, in a call.
+00:03:38,793 --> 00:03:42,272
+Under the first sentence there's a short list,
 
 55
-00:03:43,441 --> 00:03:48,659
-Since Lecture five the game says it, when the bowl is taken.
+00:03:42,722 --> 00:03:45,765
+and each bullet is a little picture.
 
 56
-00:03:49,109 --> 00:03:51,283
-So Comms stops saying it.
+00:03:46,665 --> 00:03:51,448
+A hyphen and a space, then the picture, then the words.
 
 57
-00:03:53,083 --> 00:03:57,430
-But there's a trap here, and it's worth a minute.
+00:03:52,348 --> 00:03:54,522
+A person for suiting up,
 
 58
-00:03:58,330 --> 00:04:02,243
-The walls of a ruin don't hold a ship.
+00:03:54,972 --> 00:03:57,580
+and a flame for the cut.
 
 59
-00:04:03,143 --> 00:04:08,361
-So a ship could fly in and scoop up the bowl early,
+00:03:58,480 --> 00:04:01,089
+Lint doesn't check the picture's name,
 
 60
-00:04:08,811 --> 00:04:11,420
-before the last step was listening.
+00:04:01,539 --> 00:04:04,148
+so copy it from the page.
 
 61
-00:04:12,320 --> 00:04:14,493
-The word would be spent,
+00:04:05,348 --> 00:04:09,696
+Last time Comms said the final word, in a call.
 
 62
-00:04:14,943 --> 00:04:17,552
-and the story could never end.
+00:04:10,596 --> 00:04:15,813
+Since Lecture five the game says it, when the bowl is taken.
 
 63
-00:04:19,352 --> 00:04:22,830
-So I don't let the bowl exist yet.
+00:04:16,263 --> 00:04:18,437
+So Comms stops saying it.
 
 64
-00:04:23,730 --> 00:04:27,209
-Comms gets a new answer, open the niche,
+00:04:20,237 --> 00:04:24,585
+But there's a trap here, and it's worth a minute.
 
 65
-00:04:27,659 --> 00:04:31,137
-and it sends a word of my own.
+00:04:25,485 --> 00:04:29,398
+The walls of a ruin don't hold a ship.
 
 66
-00:04:32,037 --> 00:04:35,950
-And the niche says starts when, signal, that word.
+00:04:30,298 --> 00:04:35,515
+So a ship could fly in and scoop up the bowl early,
 
 67
-00:04:37,750 --> 00:04:42,098
-The step is always listening before the bowl is there.
+00:04:35,965 --> 00:04:38,574
+before the last step was listening.
 
 68
-00:04:42,998 --> 00:04:45,172
-Then I change the objective,
+00:04:39,474 --> 00:04:41,648
+The word would be spent,
 
 69
-00:04:45,622 --> 00:04:49,100
-and I delete the quest from Lecture five,
+00:04:42,098 --> 00:04:44,707
+and the story could never end.
 
 70
-00:04:49,550 --> 00:04:52,593
-because the arc does its job now.
+00:04:46,507 --> 00:04:49,985
+So I don't let the bowl exist yet.
 
 71
-00:04:53,793 --> 00:04:58,576
-I don't want the game to end with somebody still outside.
+00:04:50,885 --> 00:04:54,363
+Comms gets a new answer, open the niche,
 
 72
-00:04:59,476 --> 00:05:02,954
-So taking the bowl reveals one more step,
+00:04:54,813 --> 00:04:58,291
+and it sends a word of my own.
 
 73
-00:05:03,404 --> 00:05:07,317
-and that one is finished back at the station.
+00:04:59,191 --> 00:05:03,104
+And the niche says starts when, signal, that word.
 
 74
-00:05:09,117 --> 00:05:12,161
-And I give the crew more time.
+00:05:04,904 --> 00:05:09,252
+The step is always listening before the bowl is there.
 
 75
-00:05:13,061 --> 00:05:16,104
-A suit is slower than a ship.
+00:05:10,152 --> 00:05:12,326
+Then I change the objective,
 
 76
-00:05:16,554 --> 00:05:22,641
-In my test it took about three minutes from the door to the altar.
+00:05:12,776 --> 00:05:16,254
+and I delete the quest from Lecture five,
 
 77
-00:05:23,541 --> 00:05:25,715
-So twenty minutes becomes forty.
+00:05:16,704 --> 00:05:19,748
+because the arc does its job now.
 
 78
-00:05:26,915 --> 00:05:29,524
-I run lint, and it's clean.
+00:05:20,948 --> 00:05:25,730
+I don't want the game to end with somebody still outside.
 
 79
-00:05:30,424 --> 00:05:33,902
-Now I misspell the word on the step,
+00:05:26,630 --> 00:05:30,109
+So taking the bowl reveals one more step,
 
 80
-00:05:34,352 --> 00:05:36,961
-and lint says nothing sends it.
+00:05:30,559 --> 00:05:34,472
+and that one is finished back at the station.
 
 81
-00:05:37,861 --> 00:05:39,600
-That's what I want.
+00:05:35,372 --> 00:05:39,720
+Its second paragraph tells the crew to count heads first.
 
 82
-00:05:41,400 --> 00:05:44,878
-Next I delete the place beside the slab,
+00:05:41,520 --> 00:05:44,563
+And I give the crew more time.
 
 83
-00:05:45,328 --> 00:05:47,067
-and lint says clean.
+00:05:45,463 --> 00:05:48,507
+A suit is slower than a ship.
 
 84
-00:05:47,967 --> 00:05:50,576
-But that mission can't be finished.
+00:05:48,957 --> 00:05:55,043
+In my test it took about three minutes from the door to the altar.
 
 85
-00:05:51,476 --> 00:05:54,520
-The slab is out of everyone's reach,
+00:05:55,943 --> 00:05:58,117
+So twenty minutes becomes forty,
 
 86
-00:05:54,970 --> 00:05:59,752
-and no file can tell lint how far a cutter reaches.
+00:05:58,567 --> 00:06:02,046
+in the fence and in the last paragraph.
 
 87
-00:06:01,552 --> 00:06:05,030
-So that's the check to do by eye.
+00:06:03,246 --> 00:06:05,854
+I run lint, and it's clean.
 
 88
-00:06:05,480 --> 00:06:09,828
-Every barrier needs a place within six hundred of it.
+00:06:06,754 --> 00:06:10,233
+Now I misspell the word on the step,
 
 89
-00:06:11,028 --> 00:06:15,376
-I fly to the door, and I stop the ship.
+00:06:10,683 --> 00:06:13,291
+and lint says nothing sends it.
 
 90
-00:06:16,276 --> 00:06:19,754
-On my handheld there's a Boarding Party app,
+00:06:14,191 --> 00:06:15,930
+That's what I want.
 
 91
-00:06:20,204 --> 00:06:22,813
-and its button says suit up.
+00:06:17,730 --> 00:06:21,209
+Next I delete the place beside the slab,
 
 92
-00:06:24,613 --> 00:06:26,352
-And now I'm outside.
+00:06:21,659 --> 00:06:23,398
+and lint says clean.
 
 93
-00:06:27,252 --> 00:06:32,470
-I pick the Altar from the list, and the suit flies itself.
+00:06:24,298 --> 00:06:26,907
+But that mission can't be finished.
 
 94
-00:06:34,270 --> 00:06:38,617
-And here are the words I wrote four lectures ago,
+00:06:27,807 --> 00:06:30,850
+The slab is out of everyone's reach,
 
 95
-00:06:39,067 --> 00:06:42,980
-read by somebody standing in front of the table.
+00:06:31,300 --> 00:06:36,083
+and no file can tell lint how far a cutter reaches.
 
 96
-00:06:43,880 --> 00:06:46,489
-On Comms I mark the Gallery,
+00:06:37,883 --> 00:06:41,361
+So that's the check to do by eye.
 
 97
-00:06:46,939 --> 00:06:49,548
-and the Niche joins my list.
+00:06:41,811 --> 00:06:46,159
+Every barrier needs a place within six hundred of it.
 
 98
-00:06:50,448 --> 00:06:54,796
-I pick it, and Nav says there's no way through.
+00:06:47,359 --> 00:06:51,707
+I fly to the door, and I stop the ship.
 
 99
-00:06:56,596 --> 00:06:59,639
-So I go to the Gallery Door.
+00:06:52,607 --> 00:06:56,085
+On my handheld there's a Boarding Party app,
 
 100
-00:07:00,539 --> 00:07:02,713
-On Fire there's the slab.
+00:06:56,535 --> 00:06:59,143
+and its button says suit up.
 
 101
-00:07:03,163 --> 00:07:07,946
-I select it, I press again, and I wait twelve seconds.
+00:07:00,943 --> 00:07:02,683
+And now I'm outside.
 
 102
-00:07:08,846 --> 00:07:10,585
-The step is done.
+00:07:03,583 --> 00:07:08,800
+I pick the Altar from the list, and the suit flies itself.
 
 103
-00:07:12,385 --> 00:07:14,124
-Now for the niche.
+00:07:10,600 --> 00:07:14,948
+And here are the words I wrote four lectures ago,
 
 104
-00:07:15,024 --> 00:07:18,067
-Comms opens it, and there's the bowl.
+00:07:15,398 --> 00:07:19,311
+read by somebody standing in front of the table.
 
 105
-00:07:18,517 --> 00:07:22,865
-I take it, I come aboard, and we fly home.
+00:07:20,211 --> 00:07:22,820
+On Comms I mark the Gallery,
 
 106
-00:07:23,765 --> 00:07:25,504
-And that's the game.
+00:07:23,270 --> 00:07:25,878
+and the Niche joins my list.
 
 107
-00:07:26,704 --> 00:07:28,443
-Now it's your turn.
+00:07:26,778 --> 00:07:31,126
+I pick it, and Nav says there's no way through.
 
 108
-00:07:29,343 --> 00:07:33,257
-Let an engineer work the slab loose by hand.
+00:07:32,926 --> 00:07:35,970
+So I go to the Gallery Door.
 
 109
-00:07:34,157 --> 00:07:36,765
-Make the slab open by itself.
+00:07:36,870 --> 00:07:39,043
+On Fire there's the slab.
 
 110
-00:07:37,665 --> 00:07:40,274
-Send someone out for the canisters.
+00:07:39,493 --> 00:07:44,276
+I select it, I press again, and I wait twelve seconds.
 
 111
-00:07:42,074 --> 00:07:45,987
-Then break one line where lint can see it,
+00:07:45,176 --> 00:07:46,915
+The step is done.
 
 112
-00:07:46,437 --> 00:07:48,611
-and one where it can't.
+00:07:48,715 --> 00:07:50,454
+Now for the niche.
 
 113
-00:07:49,511 --> 00:07:54,293
+00:07:51,354 --> 00:07:54,398
+Comms opens it, and there's the bowl.
+
+114
+00:07:54,848 --> 00:07:59,196
+I take it, I come aboard, and we fly home.
+
+115
+00:08:00,096 --> 00:08:01,835
+And that's the game.
+
+116
+00:08:03,035 --> 00:08:04,774
+Now it's your turn.
+
+117
+00:08:05,674 --> 00:08:09,587
+Let an engineer work the slab loose by hand.
+
+118
+00:08:10,487 --> 00:08:13,096
+Make the slab open by itself.
+
+119
+00:08:13,996 --> 00:08:16,604
+Send someone out for the canisters.
+
+120
+00:08:18,404 --> 00:08:22,317
+Then break one line where lint can see it,
+
+121
+00:08:22,767 --> 00:08:24,941
+and one where it can't.
+
+122
+00:08:25,841 --> 00:08:30,624
 Next time, the same suit goes to work outside a station.

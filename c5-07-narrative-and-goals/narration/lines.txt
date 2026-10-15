@@ -24,7 +24,7 @@ s03_the_chain_8	I change at once to revealed, and give it a reward.
 s03_the_chain_9	Now read down the Then lines.
 s03_the_chain_10	That's your table of contents.
 s04_the_briefing_0	The words under a beat are the briefing.
-s04_the_briefing_1	They're what the crew reads when the chapter appears.
+s04_the_briefing_1	They're what the crew reads in the Quest Log when the chapter appears.
 s04_the_briefing_2	A good one says what was just learned,
 s04_the_briefing_3	and where to go next.
 s04_the_briefing_4	And I mean where. I've written the place into the sentence.
@@ -33,6 +33,16 @@ s04_the_briefing_6	because it doesn't end at a place.
 s04_the_briefing_7	It ends on a signal.
 s04_the_briefing_8	So Helm has nothing to engage,
 s04_the_briefing_9	and the crew gets there by reading.
+s04_the_briefing_10	And a briefing is a page, so it can hold more than the order.
+s04_the_briefing_11	At the top, the Tern herself, drawn beside the words.
+s04_the_briefing_12	Under the order, a table of what the crew found.
+s04_the_briefing_13	The next one starts with a face,
+s04_the_briefing_14	the Assay Office reading out the entry.
+s04_the_briefing_15	That's a real face, written out in full, so copy every bit of it.
+s04_the_briefing_16	And a heading, with no square brackets,
+s04_the_briefing_17	for the thing the ledger leaves out.
+s04_the_briefing_18	Keep the order in the first paragraph.
+s04_the_briefing_19	A crew in a hurry reads that, and flies.
 s05_a_chapter_that_ends_in_a_cal_0	Done when, signal, ledger read.
 s05_a_chapter_that_ends_in_a_cal_1	Nothing sends that signal yet, so I write the thing that does.
 s05_a_chapter_that_ends_in_a_cal_2	It's a call to the miners, like the two calls from Lecture Four.

@@ -22,7 +22,7 @@ You will add to `mission.amd`. You will not touch `story.mast`.
 
 ## Before you start
 
-- `MyRuin` as Lecture 8 left it. `mission.amd` is 478 lines long, and `story.mast` is
+- `MyRuin` as Lecture 8 left it. `mission.amd` is 501 lines long, and `story.mast` is
   Lecture 6's, 116 lines.
 - `sbs lint MyRuin` says `clean`.
 - VS Code with the mission folder open, a command prompt open in
@@ -182,8 +182,17 @@ Objective: Go outside at DS 1 and mend the survey mast
 Done when: signal mast_repaired
 Reward: 40 credits
 ---
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
 The station's survey antenna is dead. Somebody has to go out and weld it.
+
+- ![](icon://person) Suit up while the ship is near DS 1
+- ![](icon://wrench) Fly the suit round the hull to the mast, and mend it with the beam
 ```
+
+The description uses two things you have typed before: the station's lead line from
+Lecture 7, and a list with pictures for bullets from Lecture 8. The list says what to do,
+in order, for whoever reads the quest list while the crew member suits up.
 
 It is the same shape as `slab_opened` and `hollow_taken`: a word the game sends, and a
 quest that waits. Lint knows all three.
@@ -249,7 +258,12 @@ Objective: Go outside at DS 1 and mend the survey mast
 Done when: signal mast_repaired
 Reward: 40 credits
 ---
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
 The station's survey antenna is dead. Somebody has to go out and weld it.
+
+- ![](icon://person) Suit up while the ship is near DS 1
+- ![](icon://wrench) Fly the suit round the hull to the mast, and mend it with the beam
 ```
 
 At the end of the Relics section:
@@ -297,7 +311,7 @@ The station's survey antenna. It has been dead since the first survey came home.
 And two lines changed: `Roles: entrance, hollow_door` on The Way In, and
 `Done when: reach hollow_door 1000` on Find the Way In.
 
-The whole file is in `example\mission.amd`. It is 526 lines long.
+The whole file is in `example\mission.amd`. It is 554 lines long.
 
 ## Step 6 - Check it
 

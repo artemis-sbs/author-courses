@@ -223,161 +223,181 @@ The arc finished early, and the clock stopped with it.
 Keep the endings inside, and waiting.
 
 57
-00:03:54,104 --> 00:03:56,713
-Both endings live in one room.
+00:03:54,704 --> 00:03:58,183
+And the arc's description is the bridge's briefing.
 
 58
-00:03:57,613 --> 00:03:59,787
-A choice has one condition,
+00:03:59,083 --> 00:04:01,257
+Nobody aboard hears Ada Corvin,
 
 59
-00:04:00,237 --> 00:04:04,150
-so a thing that needs two takes two rooms.
+00:04:01,707 --> 00:04:04,750
+so the arc says what she said.
 
 60
-00:04:04,600 --> 00:04:08,948
-Facts in the first, and the jacks in the second.
+00:04:05,650 --> 00:04:07,824
+Who's where, in a table,
 
 61
-00:04:10,748 --> 00:04:13,791
-Now something you have to plan for.
+00:04:08,274 --> 00:04:12,187
+and the air she counted, on an hourglass line.
 
 62
-00:04:14,691 --> 00:04:18,170
-A full shot destroys any prop it hits.
+00:04:13,387 --> 00:04:15,996
+Both endings live in one room.
 
 63
-00:04:18,620 --> 00:04:22,533
-The game doesn't stop, and it doesn't tell anyone.
+00:04:16,896 --> 00:04:19,070
+A choice has one condition,
 
 64
-00:04:24,333 --> 00:04:28,680
-Shoot the lift gate, and you can walk through it.
+00:04:19,520 --> 00:04:23,433
+so a thing that needs two takes two rooms.
 
 65
-00:04:29,580 --> 00:04:33,493
-Shoot the rock fall, and no ending is left.
+00:04:23,883 --> 00:04:28,230
+Facts in the first, and the jacks in the second.
 
 66
-00:04:35,293 --> 00:04:38,772
-So ask two questions of your own mission.
+00:04:30,030 --> 00:04:33,074
+Now something you have to plan for.
 
 67
-00:04:39,222 --> 00:04:41,396
-Which props hold an ending?
+00:04:33,974 --> 00:04:37,452
+A full shot destroys any prop it hits.
 
 68
-00:04:41,846 --> 00:04:45,324
-And which doors does only a signal open?
+00:04:37,902 --> 00:04:41,815
+The game doesn't stop, and it doesn't tell anyone.
 
 69
-00:04:47,124 --> 00:04:50,602
-Mine still ends, because the clock runs out.
+00:04:43,615 --> 00:04:47,963
+Shoot the lift gate, and you can walk through it.
 
 70
-00:04:51,052 --> 00:04:54,096
-That's the best reason to have one.
+00:04:48,863 --> 00:04:52,776
+Shoot the rock fall, and no ending is left.
 
 71
-00:04:55,296 --> 00:04:57,035
-Lint reads your spelling.
+00:04:54,576 --> 00:04:58,054
+So ask two questions of your own mission.
 
 72
-00:04:57,485 --> 00:04:59,659
-It doesn't walk your map.
+00:04:58,504 --> 00:05:00,678
+Which props hold an ending?
 
 73
-00:05:00,559 --> 00:05:05,776
-So here are the checks of the whole class, on one sheet.
+00:05:01,128 --> 00:05:04,607
+And which doors does only a signal open?
 
 74
-00:05:06,226 --> 00:05:08,400
-Twelve of them, in order.
+00:05:06,407 --> 00:05:09,885
+Mine still ends, because the clock runs out.
 
 75
-00:05:10,200 --> 00:05:12,374
-Ways in and ways out.
+00:05:10,335 --> 00:05:13,378
+That's the best reason to have one.
 
 76
-00:05:12,824 --> 00:05:14,998
-Keys and names that join.
+00:05:14,578 --> 00:05:16,317
+Lint reads your spelling.
 
 77
-00:05:15,448 --> 00:05:17,187
-Signals with two ends.
+00:05:16,767 --> 00:05:18,941
+It doesn't walk your map.
 
 78
-00:05:18,087 --> 00:05:21,565
-Then the worst party, and the three columns.
+00:05:19,841 --> 00:05:25,059
+So here are the checks of the whole class, on one sheet.
 
 79
-00:05:22,015 --> 00:05:25,493
-The screen, a full shot, and the clock.
+00:05:25,509 --> 00:05:27,683
+Twelve of them, in order.
 
 80
-00:05:27,293 --> 00:05:29,467
-Then walk it, every road.
+00:05:29,483 --> 00:05:31,657
+Ways in and ways out.
 
 81
-00:05:30,367 --> 00:05:32,541
-Three people dig them out.
+00:05:32,107 --> 00:05:34,280
+Keys and names that join.
 
 82
-00:05:33,441 --> 00:05:37,789
-One person, with no skill at all, blasts them out.
+00:05:34,730 --> 00:05:36,470
+Signals with two ends.
 
 83
-00:05:39,589 --> 00:05:43,937
-The times on the page are floors from a script.
+00:05:37,370 --> 00:05:40,848
+Then the worst party, and the three columns.
 
 84
-00:05:44,387 --> 00:05:48,735
-Walk yours with people, and write down what you get.
+00:05:41,298 --> 00:05:44,776
+The screen, a full shot, and the clock.
 
 85
-00:05:49,935 --> 00:05:52,543
-Here's the rubric, in ten lines,
+00:05:46,576 --> 00:05:48,750
+Then walk it, every road.
 
 86
-00:05:52,993 --> 00:05:56,472
-and each one has a way to know.
+00:05:49,650 --> 00:05:51,824
+Three people dig them out.
 
 87
-00:05:58,272 --> 00:06:03,489
-Three areas. A quest tree. Two endings and a way to lose.
+00:05:52,724 --> 00:05:57,072
+One person, with no skill at all, blasts them out.
 
 88
-00:06:04,389 --> 00:06:06,563
-Three jobs nobody can replace.
+00:05:58,872 --> 00:06:03,220
+The times on the page are floors from a script.
 
 89
-00:06:07,013 --> 00:06:10,057
-A clock that starts on the ground.
+00:06:03,670 --> 00:06:08,017
+Walk yours with people, and write down what you get.
 
 90
-00:06:10,957 --> 00:06:13,565
-An ending for the smallest party.
+00:06:09,217 --> 00:06:11,826
+Here's the rubric, in ten lines,
 
 91
-00:06:14,015 --> 00:06:16,624
-And work for three at once.
+00:06:12,276 --> 00:06:15,754
+and each one has a way to know.
 
 92
-00:06:18,424 --> 00:06:21,467
-You're done when every line is ticked,
+00:06:17,554 --> 00:06:22,772
+Three areas. A quest tree. Two endings and a way to lose.
 
 93
-00:06:21,917 --> 00:06:24,961
-and when somebody who didn't write it
+00:06:23,672 --> 00:06:25,846
+Three jobs nobody can replace.
 
 94
-00:06:25,411 --> 00:06:29,759
-has played it to an ending without asking you anything.
+00:06:26,296 --> 00:06:29,339
+A clock that starts on the ground.
 
 95
-00:06:31,559 --> 00:06:34,167
-That's the end of Boarding Parties.
+00:06:30,239 --> 00:06:32,848
+An ending for the smallest party.
 
 96
-00:06:34,617 --> 00:06:36,791
+00:06:33,298 --> 00:06:35,907
+And work for three at once.
+
+97
+00:06:37,707 --> 00:06:40,750
+You're done when every line is ticked,
+
+98
+00:06:41,200 --> 00:06:44,243
+and when somebody who didn't write it
+
+99
+00:06:44,693 --> 00:06:49,041
+has played it to an ending without asking you anything.
+
+100
+00:06:50,841 --> 00:06:53,450
+That's the end of Boarding Parties.
+
+101
+00:06:53,900 --> 00:06:56,074
 Now go and write yours.

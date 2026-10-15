@@ -80,7 +80,15 @@ Starts when: revealed
 Done when: reach X, Y
 Then: reveal sNN_DEED
 ---
-WHAT WAS FOUND LAST WEEK. WHERE TO GO. WHAT IS STRANGE ABOUT IT.
+WHAT WAS FOUND LAST WEEK. WHERE TO GO.
+
+WHAT IS STRANGE ABOUT IT.
+
+## The count so far
+
+| Boat | Where | What we know |
+|---|---|---|
+| BOAT | (X, Y) | WHAT WE KNOW |
 
 ### [The Long Count: OBJECTIVE TITLE](sNN_DEED)
 ---

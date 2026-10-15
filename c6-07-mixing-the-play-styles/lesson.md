@@ -121,7 +121,11 @@ Starts when: revealed
 Done when: signal plover_asked
 Then: reveal s03_home
 ---
-The Assay Office has the Plover's bill of sale. Hail them and get it. How you ask is up to you, and they will remember it.
+[](ship://starbase_industry) The Assay Office, at (3, 1)
+
+The Assay Office has the Plover's bill of sale. Hail them and get it.
+
+How you ask is up to you, and they will remember it. The Deepwell write down every captain who asks, and how.
 
 ### [The Long Count: Enter It Again](s03_home)
 ---
@@ -133,6 +137,12 @@ Reward: 300 credits
 ---
 The Plover was sold as scrap, empty, by a seller the Deepwell would not name twice. Take the bill home to Kestrel Relay.
 ```
+
+The Plover's Price is the evening's decision, and the crew reads it at the moment they
+make it, so it is a page: the Assay Office drawn as a ship at the top, with
+`[](ship://starbase_industry)`, the same hull as its landmark's `Art:` line, and two short
+paragraphs. The second one tells them their answer will be written down, without telling
+them which answer to give.
 
 Now the conversation. It is two ways of asking for the same thing.
 
@@ -230,6 +240,8 @@ Reward: 300 credits
 Penalty: 100 credits
 ---
 The marker lamp out by the Wren burns a cell a week. Carry a fresh one to (2, 2) before the old one dies.
+
+![](icon://hourglass) Ten minutes. Run out, and the Compact charges you for the lamp.
 ```
 
 And put it on offer. Find the Hollin Compact in your Sides chapter and add `lamp_run` to
@@ -249,6 +261,12 @@ Three things about this job are for the campaign.
   ledger says when the crew gets to 20. That is when the race enters the campaign.
 - **Ten minutes is a guess.** With Engage, the jump itself is quick. The race is in
   everything a crew does before they press it. Lecture 8 times it at a real table.
+
+**A job's text is read after it is taken.** On the station's list a job is only its name
+and its pay. Once the crew takes it, it is in the Quest Log, and its text is drawn there
+as a page, like a step's. So the clock goes in the text as well, on a line of its own:
+`![](icon://hourglass)` draws a small hourglass, one line tall, with the words beside it.
+`hourglass` is one of the game's icon names; lint does not check the word.
 
 ## Step 5 - An evening off the map
 

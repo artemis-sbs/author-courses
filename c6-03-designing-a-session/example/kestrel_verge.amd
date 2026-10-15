@@ -230,7 +230,11 @@ Starts when: at once
 Done when: reach 2, 2
 Then: reveal s01_scan
 ---
-The Tern carried five boats and forty-one people. A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+The Tern carried five boats and forty-one people. When the Compact found her, forty years late, every davit was empty.
+
+A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+
+A boat that was launched had somebody in it. The Gleaners strip every dead hull in the Verge, so be there before they are.
 
 ### [The Long Count: Her Log](s01_scan)
 ---
@@ -257,7 +261,16 @@ Scope: shared
 Starts when: revealed
 Done when: reach -2, 3
 ---
-The Wren's log gives the next boat's last bearing: (-2, 3), past the edge of the Fields. She was the Dunlin. Somebody out there is still answering her hails.
+The Wren's log gives the next boat's last bearing: (-2, 3), past the edge of the Fields. She was the Dunlin.
+
+Somebody out there is still answering her hails.
+
+## The count so far
+
+| Boat | Where | What we know |
+|---|---|---|
+| The Wren | (2, 2) | Launched, and empty. Nine names in her log |
+| The Dunlin | (-2, 3) | Something answers on her channel |
 
 ## [Dialogue](dialogue)
 

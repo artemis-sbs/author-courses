@@ -130,7 +130,7 @@ Gleaner country. Every wreck out here was somebody's ship.
 At: 0, 0
 Prefab: station
 ---
-The last relay anyone still maintains. Everything past it is rumor.
+The last relay anyone keeps lit. Past it is rumor.
 
 ### [Assay Office](assay_office)
 ---
@@ -139,7 +139,7 @@ Prefab: station
 Side: deepwell
 Art: starbase_industry
 ---
-Where the Deepwell weighs what it digs. Nothing leaves this system uncounted.
+Where the Deepwell weighs its ore. Nothing leaves uncounted.
 
 ### [The Tern](the_tern)
 ---
@@ -148,7 +148,7 @@ Prefab: derelict
 Terrain: nebula blue
 Guards: pirate 2
 ---
-The third colony's ship, still in orbit over the place it never landed.
+The third colony's ship, circling where she never landed.
 
 ### [The Bone Pile](bone_pile)
 ---
@@ -157,7 +157,7 @@ Prefab: derelict
 Terrain: asteroids
 Guards: torgoth 7
 ---
-Where the Gleaners stack what they cannot sell. They do not like it looked at.
+The Gleaners' dump. They do not like it looked at.
 
 ## [Goods](goods)
 
@@ -212,6 +212,8 @@ Then: reveal tern_ledger
 ---
 The Tern never answered. Her last position was (1, -2). Go and see what is left of her.
 
+She was the third colony ship, and the last one out. Nobody has been to look in forty years.
+
 ### [The Assay Ledger](tern_ledger)
 ---
 Scope: shared
@@ -220,7 +222,17 @@ Done when: signal ledger_read
 Then: reveal lead_bone_pile
 Reward: 200 credits
 ---
+![](ship://wreck) The Tern, at (1, -2). Her holds open, and nobody aboard.
+
 The Tern's holds are bare, and her log does not say who emptied them. The Deepwell count everything that moves. Hail the Assay Office at (3, 1) and ask.
+
+| What you found | What it tells you |
+|---|---|
+| Her holds | Emptied, and not in a hurry |
+| Her boats | Still in their cradles |
+| Her log | Not one word about cargo |
+
+Ask politely or ask hard. The Assembly will answer either way, and it will remember which.
 
 ### [What the Gleaners Keep](lead_bone_pile)
 ---
@@ -230,7 +242,19 @@ Done when: reach -4, -3
 Then: reveal goal_bone_pile
 Reward: 400 credits
 ---
+![](face://zim #e4cb8e 1 0;zim #fff 2 4;zim #e4cb8e 0 2;zim #e4cb8e 5 3;zim #e4cb8e 2 1;) The Assay Office, reading you the entry
+
 The ledger has the Tern's cargo sold on by the Gleaners. There is a place at (-4, -3) they will not talk about. Go armed.
+
+| The ledger | The entry |
+|---|---|
+| Cargo | Forty crates off the Tern |
+| Entered as | Salvage |
+| Sold by | The Gleaners |
+
+## What the ledger leaves out
+
+Where the Tern's people went. The Gleaners stack what they cannot sell at the Bone Pile, and nobody buys people.
 
 ## [Goals](goals)
 
@@ -243,6 +267,11 @@ Win: The Bone Pile is broken, and what was taken from the Tern is going home.
 Citation: Forty years late, the third colony has been counted.
 ---
 The Tern's people are stacked here with her cargo. Four Gleaner hulls stand between you and them.
+
+- ![](icon://crosshair) Break the hulls that guard the pile
+- ![](icon://person) Then the Tern's people can go home
+
+Forty years is long enough. Nobody else is coming for them.
 
 ## [Lifeforms](lifeforms)
 

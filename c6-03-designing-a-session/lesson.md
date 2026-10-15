@@ -103,7 +103,11 @@ Starts when: at once
 Done when: reach 2, 2
 Then: reveal s01_scan
 ---
-The Tern carried five boats and forty-one people. A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+The Tern carried five boats and forty-one people. When the Compact found her, forty years late, every davit was empty.
+
+A prospector has sold the Compact a fix on one boat, at (2, 2). Go and find her.
+
+A boat that was launched had somebody in it. The Gleaners strip every dead hull in the Verge, so be there before they are.
 ```
 
 `Then: reveal` is the line from Class 5 Lecture 7. When this step is done, the next one
@@ -183,7 +187,16 @@ Scope: shared
 Starts when: revealed
 Done when: reach -2, 3
 ---
-The Wren's log gives the next boat's last bearing: (-2, 3), past the edge of the Fields. She was the Dunlin. Somebody out there is still answering her hails.
+The Wren's log gives the next boat's last bearing: (-2, 3), past the edge of the Fields. She was the Dunlin.
+
+Somebody out there is still answering her hails.
+
+## The count so far
+
+| Boat | Where | What we know |
+|---|---|---|
+| The Wren | (2, 2) | Launched, and empty. Nine names in her log |
+| The Dunlin | (-2, 3) | Something answers on her channel |
 ```
 
 Read those two as a pair.
@@ -193,8 +206,15 @@ crew that has just been paid, at their own station, is a crew you can send home.
 
 **Two of Five is the hook.** It appears at the moment Enter It is done. Its text is the
 last thing the crew reads tonight. Next week, after Continue, it is the one open line of
-The Long Count in the Quest Log, so it is also the recap. Write it to do both jobs: one
-sentence of what was found, one of where to go, one of what is strange about it.
+The Long Count in the Quest Log, so it is also the recap. Write it to do both jobs: a
+paragraph of what was found and where to go, a short one of what is strange about it,
+and a table of the count so far.
+
+**The table is the recap.** A crew that has been away for a week reads it before they
+read anything else. It is the table you met in Class 1 Lecture 11: a row of names, a row
+of hyphens between bars, then one row for each boat. `## The count so far` above it is a
+heading, larger and gray, and it has no square brackets, so it stays part of the text
+(Class 1 Lecture 8). Every open from now on carries the table forward and adds a row.
 
 The Dunlin's landmark and the rest of her evening are Lecture 4. Today the lead is
 enough. A lead with no landmark behind it lints `clean` and takes the crew to whatever

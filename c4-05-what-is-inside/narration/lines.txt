@@ -53,6 +53,9 @@ s05_a_quest_that_waits_for_it_9	the game waits for three separate pick-ups,
 s05_a_quest_that_waits_for_it_10	and with one cache, it waits forever.
 s05_a_quest_that_waits_for_it_11	Lint says clean either way.
 s05_a_quest_that_waits_for_it_12	So I write collect canister, with no number.
+s05_a_quest_that_waits_for_it_13	The description gets a second paragraph, after a blank line.
+s05_a_quest_that_waits_for_it_14	The first says what to do,
+s05_a_quest_that_waits_for_it_15	the second says what's known.
 s06_the_piece_0	Now the thing the ruin was hiding.
 s06_the_piece_1	First the item, a stone bowl.
 s06_the_piece_2	Then I go back to the Niche, and I change two lines.

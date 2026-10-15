@@ -88,6 +88,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 4. The quest list with the two quests, and each one completing.
 5. Science selecting a thing and reading the `scan` tab.
 6. The Cache as a contact on Helm's map.
+7. Both quests' descriptions in the quest list as two paragraphs with a gap between them,
+   wrapped to the pane. (Mock lays them out; nobody has seen the engine draw them.)
 
 > Keep off camera: suits. And the Upgrades app on the handheld: a thing with
 > `Type: item/quest` is deliberately not listed there.
@@ -151,7 +153,9 @@ except one line. || Done when, collect, canister. | The word after collect is th
 key. ||| And here's the catch. || The game counts pick-ups, | it doesn't count what a
 pick-up is worth. || My cache is one pick-up. || If I write collect three canister, | the
 game waits for three separate pick-ups, | and with one cache, it waits forever. ||| Lint
-says clean either way. | So I write collect canister, with no number. ||"
+says clean either way. | So I write collect canister, with no number. ||| The
+description gets a second paragraph, after a blank line. || The first says what to do,
+| the second says what's known. ||"
 
 ### 6. The piece
 

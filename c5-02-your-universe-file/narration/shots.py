@@ -97,7 +97,7 @@ SHOTS = [
     {
         "id": "s06_a_front_door",
         "title": 'A front door',
-        "frames": 1677,
+        "frames": 1874,
         "captions": [
             ('Now the place they start.', 0, 65),
             ('At the bottom I add a chapter called Landmarks,', 92, 210),
@@ -110,10 +110,11 @@ SHOTS = [
             ("There's a station there with that name.", 1011, 1102),
             ("And it goes on the crew's list of charted places,", 1130, 1260),
             ('so they can find their way back.', 1273, 1365),
-            ('Keep the line under the fence to one line,', 1419, 1536),
-            ('because the card only shows the first.', 1550, 1641),
+            ('Keep the line under the fence to one short line,', 1419, 1549),
+            ('because the card only shows the first.', 1563, 1654),
+            ('And it cuts anything past sixty characters, so mine is just fifty.', 1681, 1838),
         ],
-        "pauses": [0.9, 0.45, 0.9, 0.45, 1.8, 0.9, 0.45, 0.9, 0.9, 0.45, 1.8, 0.45, 1.2],
+        "pauses": [0.9, 0.45, 0.9, 0.45, 1.8, 0.9, 0.45, 0.9, 0.9, 0.45, 1.8, 0.45, 0.9, 1.2],
     },
     {
         "id": "s07_the_story_file",

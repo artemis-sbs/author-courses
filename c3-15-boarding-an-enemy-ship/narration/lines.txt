@@ -36,13 +36,16 @@ s04_three_quests_and_a_card_0	There are three quests here.
 s04_three_quests_and_a_card_1	Run her down, which waits for the ship to close on her.
 s04_three_quests_and_a_card_2	Come back to the relay, which is hidden until then.
 s04_three_quests_and_a_card_3	And take her, which waits for a signal the game sends.
-s04_three_quests_and_a_card_4	The card is one you know.
-s04_three_quests_and_a_card_5	It's the tug card from the first class,
-s04_three_quests_and_a_card_6	hearing a different step start.
-s04_three_quests_and_a_card_7	It does two things.
-s04_three_quests_and_a_card_8	It calls the landing party home, and she strikes.
-s04_three_quests_and_a_card_9	And the same line goes on your old card,
-s04_three_quests_and_a_card_10	for the trip back.
+s04_three_quests_and_a_card_4	Two of them get a page for the bridge.
+s04_three_quests_and_a_card_5	The brigantine drawn at the top of the chase,
+s04_three_quests_and_a_card_6	and two icon bullets on the prize.
+s04_three_quests_and_a_card_7	The card is one you know.
+s04_three_quests_and_a_card_8	It's the tug card from the first class,
+s04_three_quests_and_a_card_9	hearing a different step start.
+s04_three_quests_and_a_card_10	It does two things.
+s04_three_quests_and_a_card_11	It calls the landing party home, and she strikes.
+s04_three_quests_and_a_card_12	And the same line goes on your old card,
+s04_three_quests_and_a_card_13	for the trip back.
 s05_kinds_of_room_0	Now the two new words.
 s05_kinds_of_room_1	Area, deck: that means whatever ship we board.
 s05_kinds_of_room_2	And mark is no longer a mark in a file,

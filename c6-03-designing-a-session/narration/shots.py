@@ -113,7 +113,7 @@ SHOTS = [
     {
         "id": "s07_the_hook",
         "title": 'The hook',
-        "frames": 1376,
+        "frames": 2126,
         "captions": [
             ("Last, the way home, and next week's lead.", 0, 104),
             ("The home step ends when the ship's back at the relay,", 158, 302),
@@ -125,8 +125,14 @@ SHOTS = [
             ('And next week, after they continue,', 1039, 1117),
             ("it's the one open line of the campaign.", 1130, 1235),
             ("So it's the recap as well.", 1262, 1340),
+            ("That's why it ends with a table.", 1394, 1485),
+            ('The count so far,', 1512, 1565),
+            ('one row for each boat.', 1578, 1643),
+            ("A crew that's been away a week reads the table first.", 1670, 1814),
+            ('The heading has no square brackets,', 1868, 1946),
+            ("so it's part of the text, not a new record.", 1959, 2090),
         ],
-        "pauses": [1.8, 0.45, 0.9, 0.45, 1.8, 0.9, 1.8, 0.45, 0.9, 1.2],
+        "pauses": [1.8, 0.45, 0.9, 0.45, 1.8, 0.9, 1.8, 0.45, 0.9, 1.8, 0.9, 0.45, 0.9, 1.8, 0.45, 1.2],
     },
     {
         "id": "s08_lint_and_play",

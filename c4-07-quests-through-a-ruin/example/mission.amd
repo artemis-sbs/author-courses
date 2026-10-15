@@ -66,6 +66,14 @@ Then: signal cairn_found
 ---
 Five surveyors went into The Hollow. Four came out.
 
+| Surveyor | Came out |
+|---|---|
+| Rook, who led the survey | Yes |
+| Imre, Sato and Vell | Yes |
+| Dace | No |
+
+Rook says they built Dace a cairn in a side room off The Nave. Nobody has stood in that room since.
+
 ### [The Hollow Survey](survey)
 ---
 Arc
@@ -75,7 +83,11 @@ Fails when: 20 minutes
 Win: The Hollow is surveyed, and what Rook put back is aboard.
 Lose: The haze closed in before the survey was done.
 ---
-Somebody surveyed The Hollow forty years ago and left markers behind. Follow them. You have twenty minutes.
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
+Somebody surveyed The Hollow forty years ago and left markers behind. Some of them still play when a ship comes close. Follow them, room by room.
+
+The haze round The Hollow is thickening. Once it closes, no ship will find the way in. You have twenty minutes.
 
 #### [Find the Way In](door)
 ---
@@ -129,6 +141,8 @@ Part of: survey
 Required: true
 ---
 The second marker is playing. Hear it out, and bring aboard what is in the niche.
+
+Rook's team took it from the altar forty years ago, and then they carried it back. His recordings are the only account of why.
 
 
 // ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing

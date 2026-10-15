@@ -126,7 +126,7 @@ Gleaner country. Every wreck out here was somebody's ship.
 At: 0, 0
 Prefab: station
 ---
-The last relay anyone still maintains. Everything past it is rumor.
+The last relay anyone keeps lit. Past it is rumor.
 
 ### [Assay Office](assay_office)
 ---
@@ -135,7 +135,7 @@ Prefab: station
 Side: deepwell
 Art: starbase_industry
 ---
-Where the Deepwell weighs what it digs. Nothing leaves this system uncounted.
+Where the Deepwell weighs its ore. Nothing leaves uncounted.
 
 ### [The Tern](the_tern)
 ---
@@ -143,7 +143,7 @@ At: 1, -2
 Prefab: derelict
 Terrain: nebula blue
 ---
-The third colony's ship, still in orbit over the place it never landed.
+The third colony's ship, circling where she never landed.
 
 ### [The Bone Pile](bone_pile)
 ---
@@ -152,7 +152,7 @@ Prefab: derelict
 Terrain: asteroids
 Guards: torgoth
 ---
-Where the Gleaners stack what they cannot sell. They do not like it looked at.
+The Gleaners' dump. They do not like it looked at.
 
 ## [Goods](goods)
 
@@ -205,6 +205,8 @@ Starts when: at once
 Done when: reach 1, -2
 ---
 The Tern never answered. Her last position was (1, -2). Go and see what is left of her.
+
+She was the third colony ship, and the last one out. Nobody has been to look in forty years.
 
 ### [What the Gleaners Keep](lead_bone_pile)
 ---

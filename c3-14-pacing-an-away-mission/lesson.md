@@ -173,6 +173,16 @@ Win: The beacon is lit. Every convoy on the Kesh run has its way home again.
 Lose: Kesh Relay stays dark. The convoy comes through blind, and must find another road.
 ```
 
+Then tell the bridge about the clock. In the same quest's description, under the
+paragraph that ends `Go down and light it.`, leave a blank line and add:
+
+```
+![](icon://hourglass) Thirty minutes. Then the next convoy comes through, lamp or no lamp.
+```
+
+and a blank line under it, so the table still starts on its own. It is the icon line from
+Lecture 6.
+
 The `Lose:` sentence had to change. It used to say the beacon was slag. Now the same
 sentence is read after the governor, after the fire in the pump house, and when the
 clock runs out. Write a `Lose:` that is true every way the quest can fail.
@@ -373,7 +383,7 @@ Each row was tried on the finished files, one change at a time.
 The last one, as lint printed it:
 
 ```
-  [WARNING] line 478: `give power_cell` is read as part of `calm sentry`, so it never happens. Outcomes are separated by a comma: `; calm sentry, give power_cell` (outcome-run-together)
+  [WARNING] line 492: `give power_cell` is read as part of `calm sentry`, so it never happens. Outcomes are separated by a comma: `; calm sentry, give power_cell` (outcome-run-together)
 ```
 
 ### What lint cannot see

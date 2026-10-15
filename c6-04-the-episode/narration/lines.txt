@@ -25,10 +25,14 @@ s03_the_pattern_4	The system, twice, and it must be the same both times.
 s03_the_pattern_5	What's in the way.
 s03_the_pattern_6	What finishes the objective.
 s03_the_pattern_7	And what it pays.
-s03_the_pattern_8	Everything else is yours:
-s03_the_pattern_9	four titles, and four short pieces of text.
-s03_the_pattern_10	Keep the pattern in your campaign page,
-s03_the_pattern_11	so it's there every time you sit down.
+s03_the_pattern_8	The open ends with the count so far,
+s03_the_pattern_9	a table with one row for each boat.
+s03_the_pattern_10	You copy it from the open before,
+s03_the_pattern_11	and add a row.
+s03_the_pattern_12	Everything else is yours:
+s03_the_pattern_13	four titles, and four short pieces of text.
+s03_the_pattern_14	Keep the pattern in your campaign page,
+s03_the_pattern_15	so it's there every time you sit down.
 s04_four_endings_0	The slot that changes the evening most is the ending of the objective.
 s04_four_endings_1	Scan, and it's an evening about finding something out.
 s04_four_endings_2	Destroy, and it's a fight they can't walk away from.
@@ -48,11 +52,16 @@ s05_evening_two_6	It only needs its next step.
 s05_evening_two_7	So I write three things.
 s05_evening_two_8	The objective: this one's a trap,
 s05_evening_two_9	and they have to break it.
-s05_evening_two_10	Then the way home,
-s05_evening_two_11	and the hook for evening three.
-s05_evening_two_12	That's the rhythm of the whole campaign.
-s05_evening_two_13	Every time you sit down, the open's already written,
-s05_evening_two_14	and you write a place, a deed, a way home, and the next hook.
+s05_evening_two_10	Its text starts with a ship, a Torgoth hull,
+s05_evening_two_11	because the Gleaners fly Torgoth.
+s05_evening_two_12	The crew sees what's waiting before they jump.
+s05_evening_two_13	Then the way home,
+s05_evening_two_14	and the hook for evening three.
+s05_evening_two_15	The hook copies the count,
+s05_evening_two_16	and adds a row for the Plover.
+s05_evening_two_17	That's the rhythm of the whole campaign.
+s05_evening_two_18	Every time you sit down, the open's already written,
+s05_evening_two_19	and you write a place, a deed, a way home, and the next hook.
 s06_two_of_three_0	Two details in that objective.
 s06_two_of_three_1	The game sends three guards,
 s06_two_of_three_2	and I ask for two.

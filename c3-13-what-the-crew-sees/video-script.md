@@ -73,6 +73,8 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 2. Whether a 44 character choice fits, and how a covered choice looks.
 3. The bar when a mark's name is three words long.
 4. The Boarding Party screen and the quest list on a console left aboard.
+5. Relight Kesh Relay in the Quest Log on a console left aboard: the relay
+   drawn beside its lead line, then the table.
 
 ## Scenes
 
@@ -168,12 +170,17 @@ then the two answers put that right. ||"
 ### 8. What the bridge sees, and your turn
 
 **Screen:** A console left aboard: Boarding Party, with the names of the party. Then the
-quest list. Then Messages, with one line: reporting in. Then the exercise.
+quest list. Then Messages, with one line: reporting in. Then `mission.amd`: Relight Kesh
+Relay's description retyped, the ship line, the paragraphs and the table. Then the
+exercise.
 
 **Say:** "Somebody stays on the bridge. | Here's everything they get. ||| A list of who
 went down. || The shared quests, as they start and finish. || And one line in Messages, |
 when somebody on the ground presses Report in. ||| No scene line ever reaches the bridge.
-|| So the shared quests are its only window. | Remember that for the capstone. ||| For
+|| So the shared quests are its only window. | Remember that for the capstone. |||
+Select a quest, and the Quest Log shows its description in full. || The starter's is one
+sentence, | and for the bridge that's the whole briefing. || So give it a page. | The
+relay drawn at the top, | then a table of what the ship knows from up there. ||| For
 the exercise, play it to read, not to win. || Write down every word that makes you wince,
 | and then go and fix each one. ||| Next time, we put a clock on it. ||"
 

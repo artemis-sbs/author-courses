@@ -29,11 +29,18 @@ s04_a_door_that_opens_1	A lead the crew can see from the very first evening.
 s04_a_door_that_opens_2	It tells them what opens it.
 s04_a_door_that_opens_3	That matters, because a door nobody knows about
 s04_a_door_that_opens_4	isn't a reason to do anything.
-s04_a_door_that_opens_5	Then one answer in the Compact's hail.
-s04_a_door_that_opens_6	After the key it says, if standing is forty or more.
-s04_a_door_that_opens_7	Below that, the button isn't there.
-s04_a_door_that_opens_8	And the record it leads to,
-s04_a_door_that_opens_9	where they're finally told.
+s04_a_door_that_opens_5	So under a heading,
+s04_a_door_that_opens_6	I list the keys.
+s04_a_door_that_opens_7	Each line starts with a hyphen,
+s04_a_door_that_opens_8	and a small icon where the dot would be.
+s04_a_door_that_opens_9	A handshake for the levy,
+s04_a_door_that_opens_10	a flag for the jobs,
+s04_a_door_that_opens_11	and a crossed circle for the one thing that shuts it.
+s04_a_door_that_opens_12	Then one answer in the Compact's hail.
+s04_a_door_that_opens_13	After the key it says, if standing is forty or more.
+s04_a_door_that_opens_14	Below that, the button isn't there.
+s04_a_door_that_opens_15	And the record it leads to,
+s04_a_door_that_opens_16	where they're finally told.
 s05_why_forty_0	Why forty, and not some other number?
 s05_why_forty_1	At twenty it opens after one levy,
 s05_why_forty_2	on the first evening, and that isn't a door.

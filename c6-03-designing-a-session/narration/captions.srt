@@ -263,73 +263,97 @@ it's the one open line of the campaign.
 So it's the recap as well.
 
 67
-00:04:38,548 --> 00:04:40,722
-Save, lint, and it's clean.
+00:04:39,148 --> 00:04:42,191
+That's why it ends with a table.
 
 68
-00:04:41,622 --> 00:04:43,361
-So let's play it.
+00:04:43,091 --> 00:04:44,830
+The count so far,
 
 69
-00:04:45,161 --> 00:04:49,509
-One line of the campaign in the log, not three.
+00:04:45,280 --> 00:04:47,454
+one row for each boat.
 
 70
-00:04:50,409 --> 00:04:52,148
-I engage the lead,
+00:04:48,354 --> 00:04:53,137
+A crew that's been away a week reads the table first.
 
 71
-00:04:52,598 --> 00:04:55,641
-and here's the Wren, and the warning.
+00:04:54,937 --> 00:04:57,546
+The heading has no square brackets,
 
 72
-00:04:57,441 --> 00:05:00,920
-Science scans her, and the way home appears,
+00:04:57,996 --> 00:05:02,343
+so it's part of the text, not a new record.
 
 73
-00:05:01,370 --> 00:05:03,978
-so I engage that as well.
+00:05:03,543 --> 00:05:05,717
+Save, lint, and it's clean.
 
 74
-00:05:05,778 --> 00:05:07,517
-We're home, we're paid,
+00:05:06,617 --> 00:05:08,357
+So let's play it.
 
 75
-00:05:07,967 --> 00:05:10,141
-and there's the second boat.
+00:05:10,157 --> 00:05:14,504
+One line of the campaign in the log, not three.
 
 76
-00:05:11,041 --> 00:05:13,215
-And that's the whole evening.
+00:05:15,404 --> 00:05:17,143
+I engage the lead,
 
 77
-00:05:15,015 --> 00:05:18,928
-Now I close the game and start it again.
+00:05:17,593 --> 00:05:20,637
+and here's the Wren, and the warning.
 
 78
-00:05:19,828 --> 00:05:22,437
-And the hook's still there, waiting.
+00:05:22,437 --> 00:05:25,915
+Science scans her, and the way home appears,
 
 79
-00:05:23,637 --> 00:05:27,550
-So an evening is four parts and three records.
+00:05:26,365 --> 00:05:28,974
+so I engage that as well.
 
 80
-00:05:29,350 --> 00:05:32,393
-You end it, because the game won't.
+00:05:30,774 --> 00:05:32,513
+We're home, we're paid,
 
 81
-00:05:33,293 --> 00:05:36,337
-And a step that's done stays done,
+00:05:32,963 --> 00:05:35,137
+and there's the second boat.
 
 82
-00:05:36,787 --> 00:05:40,265
-so a long evening is simply two evenings.
+00:05:36,037 --> 00:05:38,211
+And that's the whole evening.
 
 83
-00:05:42,065 --> 00:05:45,978
-Next time, we turn this one into a pattern,
+00:05:40,011 --> 00:05:43,924
+Now I close the game and start it again.
 
 84
-00:05:46,428 --> 00:05:51,211
+00:05:44,824 --> 00:05:47,433
+And the hook's still there, waiting.
+
+85
+00:05:48,633 --> 00:05:52,546
+So an evening is four parts and three records.
+
+86
+00:05:54,346 --> 00:05:57,389
+You end it, because the game won't.
+
+87
+00:05:58,289 --> 00:06:01,333
+And a step that's done stays done,
+
+88
+00:06:01,783 --> 00:06:05,261
+so a long evening is simply two evenings.
+
+89
+00:06:07,061 --> 00:06:10,974
+Next time, we turn this one into a pattern,
+
+90
+00:06:11,424 --> 00:06:16,207
 and write the second evening in a quarter of the time.

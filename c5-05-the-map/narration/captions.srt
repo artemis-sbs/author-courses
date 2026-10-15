@@ -256,7 +256,7 @@ The second is a dead ship.
 
 65
 00:04:51,620 --> 00:04:55,967
-Kind, derelict, makes it a wreck for Science to scan.
+Prefab, derelict, makes it a wreck for Science to scan.
 
 66
 00:04:56,867 --> 00:05:02,085
@@ -316,108 +316,144 @@ because an old lead already goes there.
 
 80
 00:05:58,028 --> 00:06:00,637
-I save, and lint says clean.
+The third colony gets two paragraphs,
 
 81
-00:06:01,537 --> 00:06:05,015
-And again, clean isn't the whole check today.
+00:06:01,087 --> 00:06:03,696
+with an empty line between them.
 
 82
-00:06:05,915 --> 00:06:10,263
-Lint doesn't know a sky's name from a typing mistake,
+00:06:04,596 --> 00:06:08,509
+The Quest Log shows a lead as a page,
 
 83
-00:06:10,713 --> 00:06:13,757
-and it doesn't count your percent signs.
+00:06:08,959 --> 00:06:12,002
+so the first paragraph is the order,
 
 84
-00:06:14,657 --> 00:06:18,135
-So read down the list on the page.
+00:06:12,452 --> 00:06:15,930
+and the second is why anyone would go.
 
 85
-00:06:19,335 --> 00:06:22,378
-Four leads in the Quest Log now.
+00:06:17,730 --> 00:06:19,904
+A landmark's line is different.
 
 86
-00:06:23,278 --> 00:06:25,017
-First, the third colony.
+00:06:20,804 --> 00:06:23,413
+The card shows the first line,
 
 87
-00:06:25,467 --> 00:06:29,380
-There's her name on the card, and my line.
+00:06:23,863 --> 00:06:26,472
+and cuts it after sixty characters,
 
 88
-00:06:31,180 --> 00:06:32,920
-Then the miners' home,
+00:06:26,922 --> 00:06:30,835
+so no landmark line here is longer than that.
 
 89
-00:06:33,370 --> 00:06:36,413
-and this time it has a name.
+00:06:32,635 --> 00:06:35,243
+I save, and lint says clean.
 
 90
-00:06:37,313 --> 00:06:41,226
-On Comms, the Assay Office offers the miners' escort.
+00:06:36,143 --> 00:06:39,622
+And again, clean isn't the whole check today.
 
 91
-00:06:43,026 --> 00:06:46,504
-Now the one the Gleaners won't talk about.
+00:06:40,522 --> 00:06:44,870
+Lint doesn't know a sky's name from a typing mistake,
 
 92
-00:06:47,404 --> 00:06:50,448
-This is the Breakers, and somebody's waiting.
+00:06:45,320 --> 00:06:48,363
+and it doesn't count your percent signs.
 
 93
-00:06:52,248 --> 00:06:54,857
-And last, the Gleaners' own home.
+00:06:49,263 --> 00:06:52,741
+So read down the list on the page.
 
 94
-00:06:55,757 --> 00:06:57,496
-It has no landmark,
+00:06:53,941 --> 00:06:56,985
+Four leads in the Quest Log now.
 
 95
-00:06:57,946 --> 00:07:01,859
-so the card falls back to the region's name.
+00:06:57,885 --> 00:06:59,624
+First, the third colony.
 
 96
-00:07:03,659 --> 00:07:07,137
-Here's Charted Locations, with four places in it.
+00:07:00,074 --> 00:07:03,987
+There's her name on the card, and my line.
 
 97
-00:07:08,037 --> 00:07:11,515
-Those are my landmarks, and only my landmarks.
+00:07:05,787 --> 00:07:07,526
+Then the miners' home,
 
 98
-00:07:12,415 --> 00:07:14,589
-A region doesn't get charted,
+00:07:07,976 --> 00:07:11,020
+and this time it has a name.
 
 99
-00:07:15,039 --> 00:07:19,387
-and neither does a home with no landmark in it.
+00:07:11,920 --> 00:07:15,833
+On Comms, the Assay Office offers the miners' escort.
 
 100
-00:07:20,587 --> 00:07:22,326
-Now it's your turn.
+00:07:17,633 --> 00:07:21,111
+Now the one the Gleaners won't talk about.
 
 101
-00:07:23,226 --> 00:07:27,139
-Say what your galaxy is like in one sentence,
+00:07:22,011 --> 00:07:25,054
+This is the Breakers, and somebody's waiting.
 
 102
-00:07:27,589 --> 00:07:31,502
-and set no more than four dials to match.
+00:07:26,854 --> 00:07:29,463
+And last, the Gleaners' own home.
 
 103
-00:07:32,402 --> 00:07:34,576
-Draw the grid on paper.
+00:07:30,363 --> 00:07:32,102
+It has no landmark,
 
 104
-00:07:35,476 --> 00:07:38,085
-Give every side's home a landmark,
+00:07:32,552 --> 00:07:36,465
+so the card falls back to the region's name.
 
 105
-00:07:38,535 --> 00:07:44,187
-and write one place that's only a story, and one that's a fight.
+00:07:38,265 --> 00:07:41,743
+Here's Charted Locations, with four places in it.
 
 106
-00:07:45,987 --> 00:07:52,074
+00:07:42,643 --> 00:07:46,122
+Those are my landmarks, and only my landmarks.
+
+107
+00:07:47,022 --> 00:07:49,196
+A region doesn't get charted,
+
+108
+00:07:49,646 --> 00:07:53,993
+and neither does a home with no landmark in it.
+
+109
+00:07:55,193 --> 00:07:56,933
+Now it's your turn.
+
+110
+00:07:57,833 --> 00:08:01,746
+Say what your galaxy is like in one sentence,
+
+111
+00:08:02,196 --> 00:08:06,109
+and set no more than four dials to match.
+
+112
+00:08:07,009 --> 00:08:09,183
+Draw the grid on paper.
+
+113
+00:08:10,083 --> 00:08:12,691
+Give every side's home a landmark,
+
+114
+00:08:13,141 --> 00:08:18,793
+and write one place that's only a story, and one that's a fight.
+
+115
+00:08:20,593 --> 00:08:26,680
 Next time, the work a station hands out gets a beginning and an end.

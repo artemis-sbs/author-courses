@@ -49,53 +49,69 @@ s05_three_more_jobs_7	That one's only offered to a crew the Compact really trust
 s05_three_more_jobs_8	The relay run does something else for me.
 s05_three_more_jobs_9	It ends at home,
 s05_three_more_jobs_10	so it's a way back that pays.
-s06_on_offer_0	A job nobody offers is never seen.
-s06_on_offer_1	So, back up to the sides.
-s06_on_offer_2	The farmers get patrol, escort and strike.
-s06_on_offer_3	The miners get the survey and the relay run.
-s06_on_offer_4	I'm taking the escort away from the miners,
-s06_on_offer_5	because it ends at their own front door.
-s06_on_offer_6	A job that ends at a place
-s06_on_offer_7	belongs to a side that lives somewhere else.
-s07_check_0	I save, and lint says clean.
-s07_check_1	And today that's less than half the check.
-s07_check_2	Lint knows the five first words,
-s07_check_3	so a misspelled one gets a warning.
-s07_check_4	But it doesn't read what comes after.
-s07_check_5	Write the number as a word,
-s07_check_6	and the job never finishes.
-s07_check_7	Name a good you don't have, and it never finishes.
-s07_check_8	And here's the one that will catch you.
-s07_check_9	You can't write, destroy three gleaners.
-s07_check_10	The game takes the s off,
-s07_check_11	looks for something called a gleaner, and finds nothing.
-s07_check_12	So write enemies instead.
-s08_work_the_board_0	At home, the farmers offer one job.
-s08_work_the_board_1	I pay the levy,
-s08_work_the_board_2	and now there are two, and the escort pays more.
-s08_work_the_board_3	I take both, and here they are in the Quest Log.
-s08_work_the_board_4	I engage the escort, and on arrival it's done.
-s08_work_the_board_5	The miners' office has my two new jobs.
-s08_work_the_board_6	I take them, and the clock on the relay run is running.
-s08_work_the_board_7	The survey wants a dead ship,
-s08_work_the_board_8	and I know where one is.
-s08_work_the_board_9	And the patrol wants enemies,
-s08_work_the_board_10	and I know where those are too.
-s09_paid_and_offered_again_0	The Gleaners will deal with me now,
-s09_paid_and_offered_again_1	so I take their salvage.
-s09_paid_and_offered_again_2	When it's done, watch the farmers.
-s09_paid_and_offered_again_3	My standing with them just dropped,
-s09_paid_and_offered_again_4	and I never spoke to them.
-s09_paid_and_offered_again_5	Now the relay run takes me home, inside its ten minutes.
-s09_paid_and_offered_again_6	And look at the farmers' list.
-s09_paid_and_offered_again_7	Patrol is back, and it pays a little more than last time.
-s09_paid_and_offered_again_8	That's the thing to remember about a job.
-s09_paid_and_offered_again_9	It never runs out.
-s09_paid_and_offered_again_10	So think about how often you want a crew to be able to please each side.
-s10_your_turn_0	Now it's your turn.
-s10_your_turn_1	Write one job for each side that only that side would offer.
-s10_your_turn_2	Make one of them tier two.
-s10_your_turn_3	Make one that costs the crew somewhere else.
-s10_your_turn_4	And put one against the clock, and let it fail once.
-s10_your_turn_5	Next time, your universe gets a story,
-s10_your_turn_6	with a beginning and an end.
+s06_the_briefing_0	Now look at what's under the fence.
+s06_the_briefing_1	That's the job's briefing, and it's a page, not a line.
+s06_the_briefing_2	Before the crew takes a job,
+s06_the_briefing_3	all they see is a button, with a name and a price.
+s06_the_briefing_4	Once they've taken it, the Quest Log shows them all of this.
+s06_the_briefing_5	The first line puts the Assay Office beside the words, in three dimensions.
+s06_the_briefing_6	It's the same model as the station's Art line,
+s06_the_briefing_7	so they see who's paying.
+s06_the_briefing_8	An empty line starts a new paragraph.
+s06_the_briefing_9	The first one is the order,
+s06_the_briefing_10	and the second is why it matters.
+s06_the_briefing_11	And an icon can start a line, or be a bullet.
+s06_the_briefing_12	An hourglass for the clock,
+s06_the_briefing_13	and a crosshair for the hulls.
+s06_the_briefing_14	Lint doesn't check those names,
+s06_the_briefing_15	so copy them from the page.
+s07_on_offer_0	A job nobody offers is never seen.
+s07_on_offer_1	So, back up to the sides.
+s07_on_offer_2	The farmers get patrol, escort and strike.
+s07_on_offer_3	The miners get the survey and the relay run.
+s07_on_offer_4	I'm taking the escort away from the miners,
+s07_on_offer_5	because it ends at their own front door.
+s07_on_offer_6	A job that ends at a place
+s07_on_offer_7	belongs to a side that lives somewhere else.
+s08_check_0	I save, and lint says clean.
+s08_check_1	And today that's less than half the check.
+s08_check_2	Lint knows the five first words,
+s08_check_3	so a misspelled one gets a warning.
+s08_check_4	But it doesn't read what comes after.
+s08_check_5	Write the number as a word,
+s08_check_6	and the job never finishes.
+s08_check_7	Name a good you don't have, and it never finishes.
+s08_check_8	And here's the one that will catch you.
+s08_check_9	You can't write, destroy three gleaners.
+s08_check_10	The game takes the s off,
+s08_check_11	looks for something called a gleaner, and finds nothing.
+s08_check_12	So write enemies instead.
+s09_work_the_board_0	At home, the farmers offer one job.
+s09_work_the_board_1	I pay the levy,
+s09_work_the_board_2	and now there are two, and the escort pays more.
+s09_work_the_board_3	I take both, and here they are in the Quest Log.
+s09_work_the_board_4	I engage the escort, and on arrival it's done.
+s09_work_the_board_5	The miners' office has my two new jobs.
+s09_work_the_board_6	I take them, and the clock on the relay run is running.
+s09_work_the_board_7	The survey wants a dead ship,
+s09_work_the_board_8	and I know where one is.
+s09_work_the_board_9	And the patrol wants enemies,
+s09_work_the_board_10	and I know where those are too.
+s10_paid_and_offered_again_0	The Gleaners will deal with me now,
+s10_paid_and_offered_again_1	so I take their salvage.
+s10_paid_and_offered_again_2	When it's done, watch the farmers.
+s10_paid_and_offered_again_3	My standing with them just dropped,
+s10_paid_and_offered_again_4	and I never spoke to them.
+s10_paid_and_offered_again_5	Now the relay run takes me home, inside its ten minutes.
+s10_paid_and_offered_again_6	And look at the farmers' list.
+s10_paid_and_offered_again_7	Patrol is back, and it pays a little more than last time.
+s10_paid_and_offered_again_8	That's the thing to remember about a job.
+s10_paid_and_offered_again_9	It never runs out.
+s10_paid_and_offered_again_10	So think about how often you want a crew to be able to please each side.
+s11_your_turn_0	Now it's your turn.
+s11_your_turn_1	Write one job for each side that only that side would offer.
+s11_your_turn_2	Make one of them tier two.
+s11_your_turn_3	Make one that costs the crew somewhere else.
+s11_your_turn_4	And put one against the clock, and let it fail once.
+s11_your_turn_5	Next time, your universe gets a story,
+s11_your_turn_6	with a beginning and an end.

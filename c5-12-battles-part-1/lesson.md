@@ -136,7 +136,7 @@ Prefab: derelict
 Terrain: nebula blue
 Guards: pirate 2
 ---
-The third colony's ship, still in orbit over the place it never landed.
+The third colony's ship, circling where she never landed.
 ```
 
 `pirate 2` is one or two small ships. In the game this page was measured in, it was one.

@@ -64,6 +64,12 @@ s07_the_hook_6	That's the hook, and it's the last thing they read tonight.
 s07_the_hook_7	And next week, after they continue,
 s07_the_hook_8	it's the one open line of the campaign.
 s07_the_hook_9	So it's the recap as well.
+s07_the_hook_10	That's why it ends with a table.
+s07_the_hook_11	The count so far,
+s07_the_hook_12	one row for each boat.
+s07_the_hook_13	A crew that's been away a week reads the table first.
+s07_the_hook_14	The heading has no square brackets,
+s07_the_hook_15	so it's part of the text, not a new record.
 s08_lint_and_play_0	Save, lint, and it's clean.
 s08_lint_and_play_1	So let's play it.
 s08_lint_and_play_2	One line of the campaign in the log, not three.

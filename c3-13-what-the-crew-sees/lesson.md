@@ -586,6 +586,35 @@ That is everything. No scene line reaches the bridge. So the shared quests are t
 bridge's only window on the ground. Every time one starts or finishes, the bridge
 learns something. Lecture 16 builds a quest tree with that in mind.
 
+### Give the bridge something to read
+
+Select a quest in that list and the Quest Log shows its description beside it, in full.
+The starter's is one sentence. For the people who never beam down, it is the whole
+briefing. Give it a page. In **Relight Kesh Relay**, replace the line under the closing
+`---` with:
+
+```
+![](ship://starbase_civil) Kesh Relay, the only light on the Kesh run.
+
+The relay's beacon went dark nine days ago. Go down and light it.
+
+| What | What the ship knows |
+|---|---|
+| The beacon | Dark for nine days. No power in the lamp |
+| The caretaker | Old Marrow. Not answering hails |
+| The yard | A security frame on patrol. It answers to nobody now |
+
+Every convoy on the Kesh run steers by that lamp. Until it is lit, they fly blind.
+```
+
+You know every piece of it from Classes 1 and 2: a ship lead line, paragraphs, a table.
+`starbase_civil` is the hull `story.mast` gives the relay, so the picture is the station
+the ship is holding beside. The table says only what the ship could know from up there.
+Nothing in it gives away a scene.
+
+The side stories are a different matter. Their words under the fence are on no screen
+that this page captured, on the ground or aboard, so leave them short.
+
 ## Step 10 - Check it
 
 Each row was tried on the finished files, one change at a time.
@@ -609,7 +638,7 @@ Four of those, as lint printed them:
 ```
 
 ```
-  [WARNING] line 212:7: cache: no mark 'scrub' in landing - it is never placed (tiles-unknown-mark)
+  [WARNING] line 224:7: cache: no mark 'scrub' in landing - it is never placed (tiles-unknown-mark)
 ```
 
 ```
@@ -617,7 +646,7 @@ Four of those, as lint printed them:
 ```
 
 ```
-  [WARNING] line 285: `Opens with: key pump_key` - nothing in this mission gives anybody `pump_key`: no pickup has `Item: pump_key`, nobody `Drops:` one and no answer says `; give pump_key`. So this door never opens with a key. Check the spelling against the `Item:` line of the thing you mean. Given in this mission: fuse, medkit, power_cell, pump_house_key, relay_keycard, tablet (item-nothing-gives)
+  [WARNING] line 297: `Opens with: key pump_key` - nothing in this mission gives anybody `pump_key`: no pickup has `Item: pump_key`, nobody `Drops:` one and no answer says `; give pump_key`. So this door never opens with a key. Check the spelling against the `Item:` line of the thing you mean. Given in this mission: fuse, medkit, power_cell, pump_house_key, relay_keycard, tablet (item-nothing-gives)
 ```
 
 ### What lint cannot see

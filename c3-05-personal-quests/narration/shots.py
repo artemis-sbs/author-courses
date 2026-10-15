@@ -79,7 +79,7 @@ SHOTS = [
     {
         "id": "s05_a_second_story_and_where_one",
         "title": 'A second story, and where one leads',
-        "frames": 1532,
+        "frames": 2282,
         "captions": [
             ('The engineer gets one too,', 0, 65),
             ('finished by his own reading.', 79, 144),
@@ -94,8 +94,14 @@ SHOTS = [
             ('and the ship is paid.', 1116, 1182),
             ('A story can carry a reward of its own as well,', 1209, 1352),
             ("and it's paid to the ship that person came from.", 1366, 1496),
+            ("The ship's quest gets a page,", 1550, 1628),
+            ('because the Quest Log shows all of it.', 1642, 1746),
+            ('A heading, and two bullets with a small picture for a dot.', 1773, 1930),
+            ('The word after icon names the picture.', 1957, 2048),
+            ('The side story stays short.', 2102, 2167),
+            ('Tasks only shows its heading.', 2181, 2246),
         ],
-        "pauses": [0.45, 1.8, 0.45, 0.9, 0.45, 1.8, 0.45, 0.45, 0.45, 0.45, 0.9, 0.45, 1.2],
+        "pauses": [0.45, 1.8, 0.45, 0.9, 0.45, 1.8, 0.45, 0.45, 0.45, 0.45, 0.9, 0.45, 1.8, 0.45, 0.9, 0.9, 1.8, 0.45, 1.2],
     },
     {
         "id": "s06_four_rules_and_lint",

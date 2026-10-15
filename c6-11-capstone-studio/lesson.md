@@ -131,6 +131,8 @@ Objective: Hail the Gleaners on Comms
 Then: reveal act1_close
 ---
 The Skua is in the yard, in pieces, and the Gleaners kept her log. Hail them and get it. They will remember how you asked.
+
+They will not sell what they have not owned up to. Ask them first what became of the Tern's boats.
 ```
 
 In the Gleaner hail, above `- [Back away]`, add two answers.
@@ -159,7 +161,8 @@ Speaker: gleaners
 Both answers send the signal, so either finishes the evening, and they differ in what
 the Gleaners think afterward: Lecture 7's shape. The `if learned` is new here. A crew
 that hails the Gleaners cold does not see either answer. They have to ask what became
-of the boats first.
+of the boats first. So the step's second paragraph tells them: a crew that is stuck at a
+decision reads the Quest Log, and the hint is there.
 
 Both answers also teach a new fact, `the skua was emptied`. Nothing asks for it yet.
 It is there so that Act Two can tell a crew that has finished evening 5 from one that
@@ -200,10 +203,19 @@ Starts when: revealed
 Done when: signal act2_begins
 ---
 Five logs are on the Compact's table, and it will take them a while to read what you already know. They will call.
+
+Until they do, the Verge still has work in it.
+
+- ![](icon://flag) The Compact's patrols and escorts, at Kestrel Relay
+- ![](icon://handshake) The Tern's manifest, if you have not read it yet
 ```
 
 Nothing sends `act2_begins` yet. That is the point: the step is open, and it waits for
 Act Two to finish it.
+
+It may stay open for weeks of evenings, so its text is the page the crew reads most.
+Give it more than the wait: a paragraph, and a short icon list (Lecture 6) of what the
+Verge still holds for them while the Compact reads.
 
 The finished file is in `example\kestrel_verge.amd`.
 
@@ -215,7 +227,7 @@ sbs lint KestrelVerge
 
 ```
 == kestrel_verge.amd ==
-  [WARNING] line 410:19: `act2_wait` waits for the signal `act2_begins`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+  [WARNING] line 463:19: `act2_wait` waits for the signal `act2_begins`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
 
 1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```

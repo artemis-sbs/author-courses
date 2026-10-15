@@ -11,7 +11,7 @@
 >   where the screen differs.
 > - **The student's mission is `MyRuin`** as Lecture 7 left it, with Lecture 5's Steps 2
 >   to 6 done as well: `c4-07-quests-through-a-ruin\example\mission.amd` with Lecture 5's
->   records typed onto it (443 lines), and Lecture 6's `story.mast` (116 lines). Lecture
+>   records typed onto it (461 lines), and Lecture 6's `story.mast` (116 lines). Lecture
 >   5's page says where each record goes; in Lecture 7's file the two quests go at the end
 >   of the Quests section. The game is started with
 >   `sbs run server,helm,comms -m MyRuin map=0`.
@@ -64,7 +64,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyRuin` as Lecture 7 leaves it plus Lecture 5, lint clean. `mission.amd` has 443 lines |
+| Mission | `MyRuin` as Lecture 7 leaves it plus Lecture 5, lint clean. `mission.amd` has 461 lines |
 | `story.mast` | Lecture 6's, 116 lines, with the card |
 | `story.json` | Has the line with `items` in it (Lecture 5) |
 | VS Code | `MyRuin` folder open, `mission.amd` in one tab, font size raised |
@@ -140,6 +140,9 @@ Not seen by anyone. If one is not as described, stop and fix the page:
    or reel it in with TETHER in the real game is NOT known: the page says both.
 8. Coming aboard, and the console going back to its post.
 9. The end screen for this mission.
+10. Cut Through in the quest list: the paragraph, the two bullets with a person and a flame
+    for their dots, then the last paragraph. And Carry It Home's two paragraphs. (Mock
+    lays them out; nobody has seen the engine draw them.)
 
 > Keep off camera: a personal side story (`For:`). The game hands a ruin's Side Stories
 > to the crew who suit up, and the story starts then. It is an optional part of
@@ -206,7 +209,10 @@ Marker's `Then:` line. Highlight `signal slab_opened`, then `(slab)` on the barr
 **Say:** "When a barrier opens, the game sends a word. || It's the barrier's key, and then
 underscore opened. | Mine is slab opened. ||| So I write a step that waits for it. || It
 goes after the altar, | and the altar's step now reveals this one. || I don't send that
-word anywhere. | The game sends it, | however the slab comes open. ||"
+word anywhere. | The game sends it, | however the slab comes open. ||| Under the first
+sentence there's a short list, | and each bullet is a little picture. || A hyphen and a
+space, then the picture, then the words. || A person for suiting up, | and a flame for
+the cut. || Lint doesn't check the picture's name, | so copy it from the page. ||
 
 ### 6. The bowl, by hand
 
@@ -230,9 +236,11 @@ arc does its job now. ||"
 Change `Fails when:` to 40 minutes, and the arc's description.
 
 **Say:** "I don't want the game to end with somebody still outside. || So taking the bowl
-reveals one more step, | and that one is finished back at the station. ||| And I give the
+reveals one more step, | and that one is finished back at the station. || Its second
+paragraph tells the crew to count heads first. ||| And I give the
 crew more time. || A suit is slower than a ship. | In my test it took about three minutes
-from the door to the altar. || So twenty minutes becomes forty. ||"
+from the door to the altar. || So twenty minutes becomes forty, | in the fence and in
+the last paragraph. ||"
 
 ### 8. Lint
 

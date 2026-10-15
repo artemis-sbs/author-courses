@@ -45,13 +45,18 @@ s06_start_it_1	bring the ship within five hundred of the hulk.
 s06_start_it_2	The new line is this one.
 s06_start_it_3	When the quest completes, it sends a signal,
 s06_start_it_4	and I've named it board hulk.
-s06_start_it_5	Then I open the story file, go to the very end,
-s06_start_it_6	and paste one recipe card.
-s06_start_it_7	I don't read it.
-s06_start_it_8	I change three things on it, and they're on the page: the signal's name,
-s06_start_it_9	the key of the room the party arrives in,
-s06_start_it_10	and the name the crew sees.
-s06_start_it_11	I run lint again, and now it's clean.
+s06_start_it_5	The description's a page, the way it was in Class 1.
+s06_start_it_6	A picture of the hulk at the top,
+s06_start_it_7	then two short paragraphs.
+s06_start_it_8	The second one tells the crew a party can cross,
+s06_start_it_9	so they think about who goes.
+s06_start_it_10	Then I open the story file, go to the very end,
+s06_start_it_11	and paste one recipe card.
+s06_start_it_12	I don't read it.
+s06_start_it_13	I change three things on it, and they're on the page: the signal's name,
+s06_start_it_14	the key of the room the party arrives in,
+s06_start_it_15	and the name the crew sees.
+s06_start_it_16	I run lint again, and now it's clean.
 s07_play_it_0	I start the game with a server, a Helm and an Engineering console.
 s07_play_it_1	And there's my name, before I've flown anywhere.
 s07_play_it_2	I bring the ship in close,

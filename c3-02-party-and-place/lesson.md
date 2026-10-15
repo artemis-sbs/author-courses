@@ -167,11 +167,21 @@ Done when: reach derelict 500
 Then: signal board_hulk
 Reward: 100 credits
 ---
+![](ship://tsn_warpster) The Unknown Hulk, as DS 1's sensors see her.
+
 The hulk is not answering hails. Bring the ship in close and take a look.
+
+Inside 500, a boarding party can go across. Whoever goes, goes as themselves, so think about who you send.
 ```
 
 You wrote quests like this in Class 1. The line that matters today is `Then:`. It says
 what happens when the quest completes, and this one sends a signal named `board_hulk`.
+
+The description is a page, as in Class 1, Lecture 8: the Quest Log shows it in full, and
+a blank line starts a new paragraph. The first line is a ship lead line, the shape from
+Class 1, Lecture 11. `tsn_warpster` is the hull the template gives the hulk, so the
+picture is the ship the crew is flying to. Lint does not read that line, so check the
+hull name letter for letter.
 
 **In `story.mast`**, go to the very end of the file, leave two blank lines, and paste
 this recipe card:
