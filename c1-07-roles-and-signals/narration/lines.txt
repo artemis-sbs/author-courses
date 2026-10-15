@@ -5,15 +5,20 @@ s01_cold_open_3	and you'll put two words of your own into both.
 s02_two_files_three_promises_0	Your fact sheet says what the story is,
 s02_two_files_three_promises_1	and this other file, story.mast, is what makes it happen.
 s02_two_files_three_promises_2	And there are five lines in your fact sheet that lean on it.
-s02_two_files_three_promises_3	Scan of derelict is a promise
-s02_two_files_three_promises_4	that something in the game wears the word derelict.
-s02_two_files_three_promises_5	That's called a role, which is really just a name tag.
-s02_two_files_three_promises_6	Done when, signal derelict_found, is a promise too:
-s02_two_files_three_promises_7	that the story will say derelict_found, out loud, at some moment.
-s02_two_files_three_promises_8	And that's called a signal.
-s02_two_files_three_promises_9	If the other file doesn't keep those promises,
-s02_two_files_three_promises_10	the reading is never shown,
-s02_two_files_three_promises_11	and the step never finishes.
+s02_two_files_three_promises_3	Here's what two of them put in front of the crew.
+s02_two_files_three_promises_4	This is the Science console, with the hulk selected,
+s02_two_files_three_promises_5	and this is its Intel tab, with the sentence I wrote in Lecture 5.
+s02_two_files_three_promises_6	And this is the Quest Log, where Find the Derelict shows Done
+s02_two_files_three_promises_7	once the ship reaches the hulk.
+s02_two_files_three_promises_8	Scan of derelict is a promise
+s02_two_files_three_promises_9	that something in the game wears the word derelict.
+s02_two_files_three_promises_10	That's called a role, which is really just a name tag.
+s02_two_files_three_promises_11	Done when, signal derelict_found, is a promise too:
+s02_two_files_three_promises_12	that the story will say derelict_found, out loud, at some moment.
+s02_two_files_three_promises_13	And that's called a signal.
+s02_two_files_three_promises_14	If the other file doesn't keep those promises,
+s02_two_files_three_promises_15	that Intel tab never shows my sentence,
+s02_two_files_three_promises_16	and that step in the Quest Log never shows Done.
 s03_open_the_other_file_0	So this is story.mast,
 s03_open_the_other_file_1	and you're not going to learn to read it today.
 s03_open_the_other_file_2	You only need three rules.
@@ -30,17 +35,21 @@ s04_find_the_role_4	Three of them are my Scan of lines.
 s04_find_the_role_5	The other five are in the story file,
 s04_find_the_role_6	and three of those start with a hash, so they're notes.
 s04_find_the_role_7	That leaves just two lines that do any work.
-s04_find_the_role_8	This first one puts the hulk in the game.
-s04_find_the_role_9	It has four pieces in quotes:
-s04_find_the_role_10	the name the crew sees, then a list,
-s04_find_the_role_11	then the model, and then how it behaves.
-s04_find_the_role_12	The list is the part that's ours.
-s04_find_the_role_13	Its first word is the side,
-s04_find_the_role_14	and every word after that is a role.
-s04_find_the_role_15	So the hulk is on our side, and it wears derelict,
-s04_find_the_role_16	which means that promise is kept.
-s04_find_the_role_17	And here's the word a second time,
-s04_find_the_role_18	in a line that asks: when Science scans something, does it wear derelict?
+s04_find_the_role_8	Here's the hulk on Helm's map,
+s04_find_the_role_9	and Unknown Hulk is the name the crew reads beside it.
+s04_find_the_role_10	Science shows the same name at the top of its read-out, once the hulk is scanned.
+s04_find_the_role_11	That name comes from this first line,
+s04_find_the_role_12	which puts the hulk in the game.
+s04_find_the_role_13	It has four pieces in quotes:
+s04_find_the_role_14	its name, then a list,
+s04_find_the_role_15	then the model, and then how it behaves.
+s04_find_the_role_16	The list is the part that's ours.
+s04_find_the_role_17	Its first word is the side,
+s04_find_the_role_18	and every word after that is a role.
+s04_find_the_role_19	So the hulk is on our side, and it wears derelict,
+s04_find_the_role_20	which means that promise is kept.
+s04_find_the_role_21	And here's the word a second time,
+s04_find_the_role_22	in a line that asks: when Science scans something, does it wear derelict?
 s05_find_the_signals_0	This search gives me four results.
 s05_find_the_signals_1	One is in my fact sheet,
 s05_find_the_signals_2	two are in a note,
@@ -62,17 +71,19 @@ s06_name_a_role_1	And I'm going to do this in the wrong order, on purpose.
 s06_name_a_role_2	First I point my reading at a role that nobody wears.
 s06_name_a_role_3	Lint has read both files,
 s06_name_a_role_4	and it tells me nothing in this mission wears a role called ghost_ship.
-s06_name_a_role_5	If I played it now, my reading would simply be gone.
-s06_name_a_role_6	So now I keep the promise, on line sixty-eight.
-s06_name_a_role_7	I click just before the closing quote,
-s06_name_a_role_8	and I type a comma, a space, and the word, and nothing else.
-s06_name_a_role_9	And it's clean, and the hulk wears two roles now.
-s06_name_a_role_10	There are four rules for a role, and they're on the page:
-s06_name_a_role_11	small letters and underscores,
-s06_name_a_role_12	the same spelling in both files,
-s06_name_a_role_13	one thing and not many,
-s06_name_a_role_14	and in a list your word goes last,
-s06_name_a_role_15	because the first word is the side.
+s06_name_a_role_5	If I played it now,
+s06_name_a_role_6	this Intel tab on Science would simply not be there,
+s06_name_a_role_7	and my sentence would be gone with it.
+s06_name_a_role_8	So now I keep the promise, on line sixty-eight.
+s06_name_a_role_9	I click just before the closing quote,
+s06_name_a_role_10	and I type a comma, a space, and the word, and nothing else.
+s06_name_a_role_11	And it's clean, and the hulk wears two roles now.
+s06_name_a_role_12	There are four rules for a role, and they're on the page:
+s06_name_a_role_13	small letters and underscores,
+s06_name_a_role_14	the same spelling in both files,
+s06_name_a_role_15	one thing and not many,
+s06_name_a_role_16	and in a list your word goes last,
+s06_name_a_role_17	because the first word is the side.
 s07_rename_a_signal_0	Now the same again, with the signal.
 s07_rename_a_signal_1	My step now waits for ghost_ship_found.
 s07_rename_a_signal_2	And lint tells me that Find waits for that signal,
@@ -108,29 +119,35 @@ s09_what_lint_cannot_see_7	And here's why that is.
 s09_what_lint_cannot_see_8	For a role, lint only looks for the word between quote marks, somewhere in this file,
 s09_what_lint_cannot_see_9	and it found derelict down here, on line one hundred and three.
 s09_what_lint_cannot_see_10	It doesn't ask whether the word is in a list of roles.
-s09_what_lint_cannot_see_11	In the game, the hulk has lost two of its readings,
-s09_what_lint_cannot_see_12	and the second step never finishes,
-s09_what_lint_cannot_see_13	and nothing says so.
-s09_what_lint_cannot_see_14	The count does catch this one:
-s09_what_lint_cannot_see_15	I get eight, and I wanted nine.
-s09_what_lint_cannot_see_16	The page lists the rest,
-s09_what_lint_cannot_see_17	and the two to learn are that your role goes last in the list,
-s09_what_lint_cannot_see_18	and that it goes after a comma.
+s09_what_lint_cannot_see_11	On Science, the hulk has lost its readings:
+s09_what_lint_cannot_see_12	its Mat tab is gone,
+s09_what_lint_cannot_see_13	and its Scan button just keeps saying Queue Scan.
+s09_what_lint_cannot_see_14	And in the Quest Log, Study the Derelict never shows Done, and nothing says so.
+s09_what_lint_cannot_see_15	The count does catch this one:
+s09_what_lint_cannot_see_16	I get eight, and I wanted nine.
+s09_what_lint_cannot_see_17	The page lists the rest,
+s09_what_lint_cannot_see_18	and the two to learn are that your role goes last in the list,
+s09_what_lint_cannot_see_19	and that it goes after a comma.
 s10_play_it_0	The crew never sees a role or a signal.
 s10_play_it_1	They only see what those words connect.
-s10_play_it_2	So, Find the Derelict is done,
+s10_play_it_2	So, here in the Quest Log, Find the Derelict is done,
 s10_play_it_3	and that was my signal:
 s10_play_it_4	the story said ghost_ship_found, and my step was waiting for it.
 s10_play_it_5	The sensors scan the hulk by themselves,
 s10_play_it_6	so the second step finishes too.
-s10_play_it_7	And on Science there are three tabs,
-s10_play_it_8	and intel is the one that's hanging on my role.
-s10_play_it_9	And both logs are empty.
+s10_play_it_7	Then on Science, I pick the hulk from the list.
+s10_play_it_8	Its tab buttons are down here on the left, under its name:
+s10_play_it_9	there's Scan, then Intel, and then Mat.
+s10_play_it_10	I press Intel, and there's my sentence in the read-out,
+s10_play_it_11	hanging on the role I gave it.
+s10_play_it_12	And both logs are empty.
 s11_your_turn_0	Now it's time for your own words.
 s11_your_turn_1	Give the station a role,
-s11_your_turn_2	and a reading on its mat tab.
+s11_your_turn_2	and a sentence for its Mat tab on Science.
 s11_your_turn_3	Then rename the second signal, in both files,
 s11_your_turn_4	and add both to your list.
-s11_your_turn_5	Next time it's your first quest:
-s11_your_turn_6	a line that names a role,
-s11_your_turn_7	and the game does the watching itself.
+s11_your_turn_5	When you play, select DS 1 on Science,
+s11_your_turn_6	and your sentence is in its Mat tab.
+s11_your_turn_7	Next time it's your first quest:
+s11_your_turn_8	a line that names a role,
+s11_your_turn_9	and the game does the watching itself.

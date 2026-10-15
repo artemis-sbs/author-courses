@@ -87,7 +87,7 @@ steps in a chain. This one has four, and a bonus.
 A key such as `(salvage)` or a role such as `derelict` is a handle. No screen of the game
 shows it to a player. So your story about a lighthouse can keep a role called `derelict`,
 and nobody who plays will ever know. Changing only the words is the one kind of change
-that cannot break the chain. The example changes 58 things this way and no key at all.
+that cannot break the chain. The example changes 66 things this way and no key at all.
 
 Work down this list. It is everything a player or a reader sees, and where it lives.
 
@@ -97,13 +97,24 @@ Work down this list. It is everything a player or a reader sees, and where it li
 |---|---|---|
 | The title of the file | Line 10, in the square brackets: `# [Sample Mission](sample_mission)` | 1 |
 | Arc and step names | The square brackets of each `###` and `####` heading under Quests | 9 |
-| Arc and step descriptions | The sentence under each record's second `---` | 9 |
+| Arc and step descriptions | Everything under each record's second `---`. In most it is one sentence. In the two briefings, The Keeper's and its first step's, it is each paragraph, the words beside the station's picture and each row of the table | 17, in 9 records. The heading `## Why it matters` fits both stories, so the example keeps it |
 | `Objective:` lines | In the steps of the main arc | 5 |
 | `Win:` and `Lose:` | In the main arc | 2 |
 | Reading names | The square brackets of each heading under Scans | 6 |
 | Readings | Every line that starts with `%` | 9 |
 | The landmark's name and description | Under Landmarks | 2 |
 | Your word list | The `// ROLE` and `// SIGNAL` lines at the top. Change what each line says the word is worn by | 6 |
+
+Where the crew meets each of them, so you can check it when you play (Step 6):
+
+| What | Where the crew sees it |
+|---|---|
+| Arc and step names, descriptions, `Objective:` lines | The Quest Log: the names in the list on the left, the rest on the right when one is selected |
+| `Win:` and `Lose:` | The end screen, **Game results**, when the game ends |
+| Readings | Science: select the thing, press the tab its record names, and the sentence is in the read-out on the right |
+| Reading names, and the word list | Nowhere in the game. They are for you, and for the printed document (Step 7) |
+| The names in `story.mast` (lines 64, 68, 113) | Beside each ship and station on Helm's map |
+| The map's name and description (lines 25 and 26) | The server's start screen, in its list of maps (Lecture 11, Step 9) |
 
 For example, the main arc of the example now reads:
 
@@ -117,10 +128,23 @@ Fails when: 10 minutes
 Win: The keeper is home, and Lantern Nine will burn again.
 Lose: The storm closed over the Deep with the keeper still out there.
 ---
+![](ship://starbase_command) Orders from Marrow Station, the station you started at.
+
 A storm front is ten minutes out. One woman keeps Lantern Nine, and she is not answering. Find her and bring her in.
+
+| What | What Marrow Station knows |
+|---|---|
+| The storm | Ten minutes out, and closing |
+| The keeper | Alone on Lantern Nine. Twenty years at her post |
+| The lamp | Dark since last night |
+
+If the storm closes over the Deep with her out in it, nobody will find her until it lifts.
 ```
 
-Look at what did not change: `(salvage)`, and every word in front of a colon.
+Look at what did not change: `(salvage)`, and every word in front of a colon. In the
+briefing, the marks stay too: the bars and hyphens of the table, the `##` of a heading,
+and all of `![](ship://starbase_command)`. Marrow Station is still made with that art, on
+line 64 of `story.mast`. Change only the words.
 
 Two things to keep true as you reword:
 
@@ -375,16 +399,20 @@ yours.
 1. The ship is yours: **Kittiwake**, not Artemis.
 2. On Helm, open the Quest Log (the handheld icon at the top, then **Quests**). Two arcs:
    **The Dark Beacon** with Find the Lantern, and **The Keeper** with Come Alongside and
-   First on Scene.
+   First on Scene. Select The Keeper: your briefing is on the right, with the station's
+   picture at the top and your table in it.
 3. The station is **Marrow Station**. Out at 9000 is **Lantern Nine**.
 4. Fly to Lantern Nine. Inside 500, Come Alongside and First on Scene show `Done`, and
    **Find the Skiff** is in the list. The Dark Beacon finishes by itself here too.
-5. On Science, select Lantern Nine and read each tab. The readings are your sentences.
+5. On Science, click Lantern Nine on the map. Its tab buttons are in the lower left,
+   under its name. Press each one and read the read-out on the right: the readings are
+   your sentences. **Scan** shows one of your two hull lines.
 6. Fly to **The Keeper's Skiff**. Inside 500, Find the Skiff shows `Done`, and **Wait for
    the Tender** is in the list.
 7. Twenty seconds later **Tender Osprey** is on the map, and **Bring Her Home** is in the
    list.
-8. Fly home. Inside 1000 of Marrow Station the game ends with your `Win:` sentence.
+8. Fly home. Inside 1000 of Marrow Station the game ends. The end screen, **Game
+   results**, carries your `Win:` sentence.
 9. Close the game. Open `mast.compile.log` and `mast.runtime.log` in the mission folder.
    Both are empty.
 
@@ -448,7 +476,8 @@ Both files are in a new folder inside your mission, called `__docs__`. Open it i
 Explorer and double-click the PDF.
 
 What is in it, for this mission: a contents list, then every arc and step with its
-description, every reading, and the landmark. Three pages.
+description, every reading, and the landmark. A few pages: the briefings make it longer
+than a page per arc.
 
 **Who gets which document.**
 
@@ -625,6 +654,8 @@ this class needs it. The zip file is the way that was measured.
 **It is yours**
 
 - [ ] The paper plan from Step 1 has every row filled in.
+- [ ] The main arc and its first step have briefings in your story's words: what to do,
+      what is known, and why it matters.
 - [ ] A folder search with **Match Case** on, for each old name in turn (`Cold Hulk`,
       `Salvage`, `DS 1`, `Hulk`, `Lifeboat`, `Tug`, `Artemis`, `Sample`), finds nothing.
       The keys `salvage`, `lifeboat` and `tug` are in small letters, so they are not

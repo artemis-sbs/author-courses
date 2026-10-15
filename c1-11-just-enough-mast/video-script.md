@@ -1,5 +1,23 @@
 # C1-11 video script - Just enough MAST
 
+> **2026-10-14 (later): briefings.** Lecture 10's file now carries Close Inspection's
+> three-paragraph briefing and the arc's DS 1 picture and table, so `mission.amd` lines
+> below the arc moved by 16: lint's `unfired-signal` line is `line 106:19` (measured on
+> the storyboard states). Nothing said aloud changes. New stills: `e_w0_p2`, `e_then_p2`,
+> `t_wait_p2`, `t_card2_p2`. Game stills show no description pane as far as their notes
+> say; if `game_wait_log` or `game_tug_log` shows a pane, retake it.
+
+> **REWORKED ON 2026-10-14: say what the crew sees. Newer than every note below.**
+>
+> - Scene 6 now opens on the server's start screen, where the map's name and description
+>   are listed, before lines 25 and 26 are changed, and comes back to it after. Scene 9
+>   shows the Salvage Tug on Helm's map, with its name beside it, before it reads the
+>   `npc_spawn` line. Scene 12 names the green `Quest complete` lines on Helm and the end
+>   screen, Game results.
+> - Two new stills: the server's start screen (the game started WITHOUT `map=0`) as the
+>   template leaves it, and again after Step 2. Check on them that the description
+>   sentence is drawn under the map's name; the script says it is.
+
 > **STATE ON 2026-10-05. Read this first; where an older note below disagrees, this is
 > newer.**
 >
@@ -133,7 +151,7 @@ On the lesson's steps, typed in order:
    `FAILED: 1 compile error(s)`, and prints nothing for a good file. Played, nothing
    runs: no label of the story executes. (Lint, Mock.)
 4. After Step 4 lint prints the `unfired-signal` line on the page, word for word, with
-   `line 90:19`. After Step 5 it prints the same line. After Steps 6 and 7, and after
+   `line 106:19` (2026-10-14, after the briefings; it was `line 90:19`). After Step 5 it prints the same line. After Steps 6 and 7, and after
    the two word-list lines, it is `clean`. (Lint.)
 5. After Step 5 alone, the tug appears as the step starts and the step stays open. After
    Step 6, the tug and the signal come in the same moment as the step starts. (Mock.)
@@ -204,10 +222,10 @@ Not seen, and to watch for while recording:
 **Screen:** The game. Helm's map at the lifeboat. The Quest Log shows Wait for the Tug.
 The tug appears. The step shows Done.
 
-**Say:** "That ship wasn't on the map when the game started, | and nothing in your fact
-sheet can do that. || So today you open the other file, the script. || You'll read it once,
-from top to bottom, | and then paste three small cards into it. || And you won't write a
-line of code. |||"
+**Say:** "That ship on Helm's map wasn't there when the game started, | and nothing in your
+fact sheet can do that. || So today you open the other file, the script. || You'll read it
+once, from top to bottom, | and then paste three small cards into it. || And you won't
+write a line of code. |||"
 
 ### 2. Two files, two sets of marks
 
@@ -263,13 +281,19 @@ when it's said. ||"
 
 ### 6. Your first edit
 
-**Screen:** Line 25: change `AMD Sample` to `Salvage Run`. Line 26: change the sentence.
-Point at the single quote mark. Save.
+**Screen:** The game first: the server's start screen (started without `map=0`), the list
+of maps with AMD Sample and the template's sentence. Then line 25: change `AMD Sample` to
+`Salvage Run`. Line 26: change the sentence. Point at the single quote mark. Save. Then
+the start screen again: Salvage Run, with the new sentence.
 
-**Say:** "Your mission has a title, from Lecture 3, | but the map inside it is still called
-AMD Sample. || So change the words between the quotes. || The line under it is the
-description. || It has one quote mark, at the start, and none at the end, | and that's how
-it's meant to be. || Just keep it on one line. ||"
+**Say:** "Here's the server's start screen, | which is what you get when you start the game
+without map equals zero. || In its list of maps, mine is still called AMD Sample, | with
+the template's sentence under it. || Your mission got a title in Lecture 3, | but the map
+inside it never did. || Both of those come from lines twenty-five and twenty-six. || So
+change the words between the quotes. || The line under it is the description, | which is
+the sentence on that screen. || It has one quote mark, at the start, and none at the end,
+| and that's how it's meant to be. || Just keep it on one line. || And there it is on the
+start screen, | Salvage Run, with my own sentence under it. ||"
 
 ### 7. One check, two files
 
@@ -300,17 +324,20 @@ before, | and it's right, because nothing does yet. ||"
 ### 9. Card one: when a step starts
 
 **Screen:** `story.mast`, the very end, below line 105. Two blank lines. Paste the card.
-Highlight the route line, then the address, then walk the `npc_spawn` line against line
-68 and against the Lifeboat record in `mission.amd`. Save. Lint: the same warning, and
-nothing about `story.mast`.
+Highlight the route line, then the address. Then the game: Helm's map, the Salvage Tug
+with its name beside the lifeboat. Then walk the `npc_spawn` line against line 68 and
+against the Lifeboat record in `mission.amd`. Save. Lint: the same warning, and nothing
+about `story.mast`.
 
 **Say:** "Go to the end of the file, | and it's always the end. || First a note, so I know
 what this is, and then the route. || The game says quest started | every time a hidden step
 is revealed, | and this block listens for that. || But it runs only if the step is this one,
 salvage, slash, tug, | which is the address you write after reveal. ||| Then there's one
-line, | and you've read this line before, | because it's how the hulk gets on the map. || It
-says where, and its name, | then its side and its role, | and what it looks like. || Those
-are the same facts as a landmark. | The difference is when. || And then arrow, END. ||"
+line, | and you've read this line before, | because it's how the hulk gets on the map. ||
+Here's what this one puts on Helm's map: | the Salvage Tug, with her name beside her. ||
+The line says where, and that name, | then its side and its role, | and what it looks
+like. || Those are the same facts as a landmark, | and the difference is when. || And then
+arrow, END. ||"
 
 ### 10. Cards two and three
 
@@ -346,13 +373,18 @@ what lint cannot see. | It's short, so read it twice. ||"
 
 ### 12. Play it
 
-**Screen:** Server and Helm. The Quest Log. Fly to the hulk. Fly to the lifeboat. Wait for
-the Tug appears. Hold. The tug appears. The step shows Done, Bring the Log Home appears.
-Fly home. The game ends. Then both logs, empty.
+**Screen:** Server and Helm. The Quest Log. Fly to the hulk. Fly to the lifeboat. Helm:
+`Quest complete: Find the Lifeboat`, no tug. Wait for the Tug appears in the Quest Log.
+Hold. The tug appears on Helm's map with its name. `Quest complete: Wait for the Tug`;
+Bring the Log Home appears. Fly home. The game ends: Game results, with the Win sentence.
+Then both logs, empty.
 
-**Say:** "Out to the hulk, and on to the lifeboat. || There's the new step, and no tug, so
-now I wait. ||| And there she is, the Salvage Tug. || The step is done, and home is
-revealed. || So it's back to the station, and the win. || And both logs are empty. ||"
+**Say:** "Out to the hulk, and on to the lifeboat. || Helm says Quest complete, Find the
+Lifeboat, | and there's the new step in the Quest Log, | but there's no tug on Helm's map,
+so now I wait. ||| And there she is on the map, the Salvage Tug, | with the name from my
+card beside her. || Helm says Quest complete, Wait for the Tug, | and in the Quest Log,
+home is revealed. || So it's back to the station, | and there's my Win sentence on Game
+results. || And both logs are empty. ||"
 
 > Say what the screen actually shows. If the tug is not where the page says, or it moves,
 > stop and fix the page.

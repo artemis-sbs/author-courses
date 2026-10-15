@@ -2,12 +2,12 @@
 
 ## What you will have at the end
 
-A quest of your own in the crew's quest list. It starts when the game starts, it finishes
+A quest of your own in the crew's Quest Log. It starts when the game starts, it finishes
 when the ship gets close to the drifting hulk, and it pays a reward.
 
 *[Screenshot to add: the Quest Log showing "Close Inspection".]*
 
-You will write nine lines in one file. You will not touch any code.
+You will write fifteen lines in one file. You will not touch any code.
 
 ## The video
 
@@ -41,8 +41,8 @@ Open `mission.amd`. Find this line:
 ## [Quests](quests)
 ```
 
-Everything under it, down to the next line that starts with two hashes, is the Quests
-section. It holds one story already: **First Contact**, with two steps, **Find the
+Everything under it, down to the next line that starts with two hashes and a name in
+square brackets, is the Quests section. It holds one story already: **First Contact**, with two steps, **Find the
 Derelict** and **Study the Derelict**.
 
 Leave those alone. You are adding a quest of your own after them.
@@ -69,19 +69,57 @@ Done when: reach derelict 500
 Reward: 100 credits
 ---
 The hulk is not answering hails. Bring the ship in close and take a look.
+
+DS 1 has called her on every channel for an hour. Nothing has come back, not even a carrier wave.
+
+## Why it matters
+
+A ship with nobody at the helm is a danger to every lane near the border. If she is empty, DS 1 needs to know why. If she is not, somebody aboard needs help.
 ```
 
-Leave one blank line after it. Save with `Ctrl+S`.
+One line is a heading, `## Why it matters`. Three lines are blank: the one after each of
+the first two paragraphs, and the one under the heading. Type them too. Leave one blank
+line after the record. Save with `Ctrl+S`.
 
-| Line | What it means |
+Every line has a place the crew reads it. All of them are in the Quest Log, on any
+console: the handheld icon at the top, then **Quests**. The quest's name is in the list
+on the left. Select it, and the right side shows the rest.
+
+| Line | What it means | Where the crew sees it |
+|---|---|---|
+| `### [Close Inspection](approach)` | Three hashes, the name, then the key | The name is the quest's line in the Quest Log's list. The key is never shown |
+| `Scope: shared` | One quest for the whole crew | Every console's Quest Log shows the same quest |
+| `Starts when: at once` | It is live the moment the game starts | It is in the Quest Log from the start |
+| `Objective:` | The order, in one sentence | On the right, above your description |
+| `Done when: reach derelict 500` | What finishes it: any player ship within 500 of the hulk | The quest's state changes to `Done` |
+| `Reward: 100 credits` | What finishing it pays. The credits go to the crew's side | The quest's `Reward` line, on the right |
+| The lines under the fence | The description | On the right, under the objective |
+
+### The description is a page
+
+Everything under the closing `---`, down to the next record, is the description. The
+Quest Log draws it the way the preview drew your story bible in Lecture 4, so you can
+give the crew more than a sentence:
+
+| You typed | The crew reads, on the right of the Quest Log |
 |---|---|
-| `### [Close Inspection](approach)` | Three hashes, the name the crew sees, then the key |
-| `Scope: shared` | One quest for the whole crew |
-| `Starts when: at once` | It is live the moment the game starts |
-| `Objective:` | The order, in one sentence. The crew reads it in the Quest Log, above your description |
-| `Done when: reach derelict 500` | What finishes it: any player ship within 500 of the hulk |
-| `Reward: 100 credits` | What finishing it pays. The credits go to the crew's side |
-| The last line | The description. It is the text the crew reads when they select the quest |
+| `The hulk is not answering hails. ...` | The order, as a line of story |
+| A blank line | A gap. The paragraph above has ended |
+| `DS 1 has called her ...` | What is known so far, in a second paragraph |
+| `## Why it matters` | A heading, in larger gray letters, with no hashes |
+| `A ship with nobody at the helm ...` | What is at stake, in a third paragraph |
+
+A good briefing answers three things: what to do, what is known, and why it matters. Keep
+each paragraph short. The crew reads this on a console, in the middle of a game.
+
+Three rules:
+
+1. **A blank line between paragraphs.** Without one, the two lines are joined into one
+   paragraph, the way the preview joins them.
+2. **A heading in a description has no square brackets.** Two hashes, a space, and words.
+   With brackets it is a heading of the FILE, a record, and it ends your description
+   there. Step 5's table of what lint cannot see has that one.
+3. **No stars, backticks or links.** Lecture 4, Step 10: the crew would read the marks.
 
 ## Step 4 - Read the `Done when:` line
 
@@ -222,7 +260,8 @@ For every row below lint says `clean`. Both logs stay empty too.
 | `##### [Close Inspection](approach)` (five hashes) | It becomes a step of Study the Derelict. It is not in the Quest Log until Find the Derelict finishes |
 | `#### [Close Inspection](approach)` (four hashes) | It becomes a third step of First Contact, and is listed under it. First Contact now waits for it as well |
 | `### [Close Inspection]()` (nothing in the round brackets) | The quest is not there |
-| No `Starts when:` line | The quest is only on offer. It is not in the Quest Log. It is on a second list, Available Quests, and nothing happens until somebody accepts it |
+| `## [Why it matters](why)`: square brackets on the heading in your description | The description stops above it. The crew reads the first two paragraphs, and the third is lost. The heading has become a section of the file, and nothing reads it |
+| No `Starts when:` line | The quest is only on offer. It is not in the Quest Log. It is on a second list, Available Quests (on the ePADD, the tile above Quests), and nothing happens until somebody on Comms accepts it |
 | No `Done when:` line. Or `Done when:` with nothing after it, or with `reach` alone | The quest is in the list and never finishes |
 | `Done when: reach 500 derelict` (the number first) | The number is not read, and the game uses 5000. In the test it finished 1500 from the hulk |
 | `Done when: reach derelict 1,500` | It finishes at 500. The game takes the last number it finds |
@@ -248,6 +287,8 @@ a number, and nothing else.
 | `Reward: 100 Credits`, `Reward: 100 credit`, or `Reward: 100 credits.` | Works. 100 credits are paid |
 | `Reward: The thanks of the fleet` | Allowed. It is a reward in words, and nothing is paid |
 | No `Scope:` line | Works the same in this mission |
+| `##Why it matters` (no space), or `### Why it matters` | Works. It is still a heading. Three hashes make it smaller |
+| No blank line between two paragraphs | Works. The two are joined into one paragraph |
 | No `Objective:` line, no `Reward:` line, or no description | Works. The Quest Log shows no order above the description, the quest pays nothing, or it has no text |
 | A blank line or a `//` note inside the fence. No blank line before the record, or after it | Works |
 | The record typed first in the Quests section, above First Contact | Works |
@@ -259,13 +300,15 @@ Start your mission as the server with a Helm console, the way you did in Lecture
 1. Open the quest list. At the top of the console, beside your crew member's name, is a
    handheld icon. It opens the ePADD. Choose **Quests** to open the **Quest Log**.
 2. **Close Inspection** is in the list on the left. Select it. On the right are its
-   `State`, its `Reward`, then your `Objective:` sentence, then your description.
+   `State`, its `Reward`, then your `Objective:` sentence, then your description: three
+   short paragraphs, with `Why it matters` as a heading between the second and the third.
 3. Fly to the Unknown Hulk. It is about 9000 from the station, DS 1.
 4. Inside 2000, Find the Derelict shows `Done`. That is Lecture 7's signal, not your
    quest. Study the Derelict appears, and a few seconds later it shows `Done` as well.
    Close Inspection has not moved.
-5. Keep closing. Inside 500, Close Inspection shows `Done`, and the crew's side is paid
-   100 credits.
+5. Keep closing. Inside 500, Helm shows a green line, `Quest complete: Close Inspection`.
+   In the Quest Log, Close Inspection shows `Done`, and the crew's side is paid the 100
+   credits on its `Reward` line.
 6. Close the game. Open `mast.compile.log` and `mast.runtime.log`. Both are empty.
 
 ## Other built-in verbs
@@ -294,7 +337,7 @@ finishes with nobody at Science.
 | What you see | Likely cause |
 |---|---|
 | Lint says anything but `clean` | Find its code in the tables in Step 5. For the rest, Lecture 6, Step 7 |
-| The quest is not in the Quest Log, and lint is clean | No `Starts when: at once` line: it is under Available Quests. Or one hash on its heading, or nothing in the round brackets |
+| The quest is not in the Quest Log, and lint is clean | No `Starts when: at once` line: it is under Available Quests, on the ePADD. Or one hash on its heading, or nothing in the round brackets |
 | It is listed as a step of First Contact | The heading has four hashes |
 | It appears only after Find the Derelict finishes | The heading has five hashes |
 | It is in the list and never shows `Done` | Run lint. If lint is clean, read the `Done when:` line against Step 4: a verb, a role, a number, nothing else |
@@ -303,6 +346,8 @@ finishes with nobody at Science.
 | It shows `Done` and the side is not paid | `Reward:` needs a number, a space, and the word `credits`: `100 credits`. No comma in the number |
 | The hulk has lost its readings on Science | One hash on your heading. Give it three |
 | Lint prints `== story.mast (compile) ==` and an error | You changed `story.mast` by accident while you were looking at line 68. Lint gives the line. Press `Ctrl+Z` in that file until it is as it was, and save |
+| Your description is one block, with no gaps | No blank lines between the paragraphs. Each blank line is a gap |
+| Your description stops after the second paragraph | Square brackets on the heading. Take them out: `## Why it matters` |
 | Lint warns `non-ascii` on your description | Curly quotes or a long dash from a word processor. The game shows the plain ones. Lecture 6, Step 3 |
 
 ## Exercise
@@ -311,9 +356,11 @@ Add a second quest of your own under the first.
 
 1. Give it a new name and a new key.
 2. Make it finish on time: `Done when: 2 minutes`.
-3. Write your own objective sentence and description.
+3. Write your own objective sentence, and a description of at least two paragraphs: what
+   to do, and why it matters.
 4. Pick your own reward.
-5. Run lint. Then play: stay where you are for two minutes and watch it show `Done`.
+5. Run lint. Then play: stay where you are for two minutes and watch it show `Done` in
+   the Quest Log.
 
 ## Checkpoint
 

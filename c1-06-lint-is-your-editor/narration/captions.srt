@@ -1,615 +1,671 @@
 1
-00:00:00,000 --> 00:00:07,391
+00:00:00,000 --> 00:00:05,339
 This one line is the most useful sentence anyone's going to say about your mission this week.
 
 2
-00:00:08,291 --> 00:00:11,770
+00:00:06,239 --> 00:00:08,620
 It tells me which file and which line,
 
 3
-00:00:12,220 --> 00:00:17,002
+00:00:09,070 --> 00:00:11,786
 what's wrong there, and what the game will do about it.
 
 4
-00:00:18,802 --> 00:00:21,846
+00:00:13,586 --> 00:00:15,720
 So today you'll learn to read it,
 
 5
-00:00:22,296 --> 00:00:27,948
+00:00:16,170 --> 00:00:20,147
 and we'll do that by breaking your mission in five places, on purpose.
 
 6
-00:00:29,748 --> 00:00:35,400
+00:00:21,947 --> 00:00:27,014
 Lint is a program that reads your files and lists whatever looks wrong,
 
 7
-00:00:35,850 --> 00:00:37,589
-and it changes nothing.
+00:00:27,464 --> 00:00:29,342
+and it changes nothing at all.
 
 8
-00:00:38,489 --> 00:00:41,533
+00:00:30,242 --> 00:00:31,820
 Think of the editor at a publisher:
 
 9
-00:00:41,983 --> 00:00:44,157
+00:00:32,270 --> 00:00:34,380
 she reads, and she marks,
 
 10
-00:00:44,607 --> 00:00:48,085
+00:00:34,830 --> 00:00:37,026
 and you're the one who does the fixing.
 
 11
-00:00:49,885 --> 00:00:52,059
+00:00:38,826 --> 00:00:40,346
 The habit has four beats.
 
 12
-00:00:52,959 --> 00:00:55,567
+00:00:41,246 --> 00:00:43,425
 You change something, and you save.
 
 13
-00:00:56,017 --> 00:00:57,757
-Then you run lint,
+00:00:43,875 --> 00:00:45,170
+Then you run lint on it,
 
 14
-00:00:58,207 --> 00:01:01,685
+00:00:45,620 --> 00:00:47,633
 and you read the first line it prints.
 
 15
-00:01:03,485 --> 00:01:06,528
+00:00:49,433 --> 00:00:51,422
 This is the answer you're hoping for.
 
 16
-00:01:07,428 --> 00:01:10,472
+00:00:52,322 --> 00:00:54,740
 There's the file, then the word clean,
 
 17
-00:01:10,922 --> 00:01:16,574
+00:00:55,190 --> 00:00:59,623
 and then the count line, which says one fact sheet, one story file,
 
 18
-00:01:17,024 --> 00:01:19,198
+00:01:00,073 --> 00:01:02,087
 no errors, and no warnings.
 
 19
-00:01:20,998 --> 00:01:23,607
+00:01:03,887 --> 00:01:06,078
 Read that count line every time,
 
 20
-00:01:24,057 --> 00:01:26,230
+00:01:06,528 --> 00:01:08,040
 even when it says clean.
 
 21
-00:01:28,030 --> 00:01:30,639
-I'm going to misspell one field,
+00:01:09,840 --> 00:01:11,519
+This is the Quest Log,
 
 22
-00:01:31,089 --> 00:01:33,263
-then save, and run lint.
+00:01:11,969 --> 00:01:15,391
+and Find the Derelict is the first step under First Contact.
 
 23
-00:01:34,163 --> 00:01:36,337
-And I get one warning.
+00:01:16,291 --> 00:01:18,855
+In the file, I'm going to misspell one of its fields,
 
 24
-00:01:38,137 --> 00:01:40,311
-Every finding has four parts.
+00:01:19,305 --> 00:01:21,008
+then save, and run lint.
 
 25
-00:01:41,211 --> 00:01:44,689
-First there's the level, which here is warning.
+00:01:21,908 --> 00:01:23,124
+And I get one warning.
 
 26
-00:01:45,589 --> 00:01:47,328
-Then there's the place,
+00:01:24,924 --> 00:01:27,257
+Every finding has four parts.
 
 27
-00:01:47,778 --> 00:01:50,387
-which is line twenty-eight, character one.
+00:01:28,157 --> 00:01:30,479
+First there's the level, which here is warning.
 
 28
-00:01:51,287 --> 00:01:53,461
-Then comes the sentence itself.
+00:01:31,379 --> 00:01:32,997
+Then there's the place it's found,
 
 29
-00:01:54,361 --> 00:01:58,709
-And at the very end, in brackets, there's the code,
+00:01:33,447 --> 00:01:35,785
+which is line twenty-eight, character one.
 
 30
-00:01:59,159 --> 00:02:03,507
-which is lint's short name for this kind of mistake.
+00:01:36,685 --> 00:01:38,431
+Then comes the sentence itself.
 
 31
-00:02:05,307 --> 00:02:09,654
-Now read the sentence all the way to the end,
+00:01:39,331 --> 00:01:42,719
+And at the very end, in brackets, there's the code,
 
 32
-00:02:10,104 --> 00:02:12,713
-because it tells you three things.
+00:01:43,169 --> 00:01:46,851
+which is lint's short name for this kind of mistake.
 
 33
-00:02:13,613 --> 00:02:18,830
-First, what's wrong: Done wen is not a field a quest has.
+00:01:48,651 --> 00:01:51,058
+Now read the sentence all the way to the end,
 
 34
-00:02:19,730 --> 00:02:24,513
-Next, what the game does about it: nothing reads this line.
+00:01:51,508 --> 00:01:53,789
+because it tells you three things.
 
 35
-00:02:25,413 --> 00:02:30,196
-And last, what to write instead: did you mean Done when.
+00:01:54,689 --> 00:01:59,478
+First, what's wrong: Done wen is not a field a quest has.
 
 36
-00:02:31,996 --> 00:02:34,604
-So I fix it, I save,
+00:02:00,378 --> 00:02:04,797
+Next, what the game does about it: nothing reads this line.
 
 37
-00:02:35,054 --> 00:02:38,098
-I run lint again, and it's clean.
+00:02:05,697 --> 00:02:10,276
+And last, what to write instead: did you mean Done when.
 
 38
-00:02:39,898 --> 00:02:42,507
-Now, that was only a warning,
+00:02:12,076 --> 00:02:13,904
+So I fix it, I save,
 
 39
-00:02:42,957 --> 00:02:46,000
-so I could have played this mission.
+00:02:14,354 --> 00:02:16,441
+I run lint again, and it's clean.
 
 40
-00:02:46,900 --> 00:02:49,509
-But with that one word misspelled,
+00:02:18,241 --> 00:02:19,956
+Now, that was only a warning,
 
 41
-00:02:49,959 --> 00:02:52,133
-this step can never finish.
+00:02:20,406 --> 00:02:22,174
+so I could have played this mission.
 
 42
-00:02:53,033 --> 00:02:58,250
-A warning can stop your story just as surely as an error.
+00:02:23,074 --> 00:02:25,268
+But with that one word misspelled,
 
 43
-00:03:00,050 --> 00:03:02,659
-Every writer does this next one.
+00:02:25,718 --> 00:02:27,953
+this step can never finish,
 
 44
-00:03:03,559 --> 00:03:07,037
-I wrote my line in a word processor,
+00:02:28,403 --> 00:02:30,894
+and the Quest Log would show it active for the whole game.
 
 45
-00:03:07,487 --> 00:03:10,965
-and it quietly made my quote marks curly.
+00:02:31,794 --> 00:02:35,383
+A warning can stop your story just as surely as an error.
 
 46
-00:03:11,865 --> 00:03:14,474
-So now I get three warnings,
+00:02:37,183 --> 00:02:39,435
+Every writer does this next one,
 
 47
-00:03:14,924 --> 00:03:16,663
-one for each mark.
+00:02:39,885 --> 00:02:41,954
+and it's to the words in this pane,
 
 48
-00:03:18,463 --> 00:03:21,072
-All three are on line thirty-one,
+00:02:42,404 --> 00:02:45,939
+the description of Find the Derelict in the Quest Log.
 
 49
-00:03:21,522 --> 00:03:27,174
-and this second number tells me how far along the line to look.
+00:02:46,839 --> 00:02:48,755
+I wrote my line in a word processor,
 
 50
-00:03:28,074 --> 00:03:30,248
-Read to the end again:
+00:02:49,205 --> 00:02:52,050
+and it quietly made my quote marks curly.
 
 51
-00:03:30,698 --> 00:03:33,307
-the game can't draw this mark,
+00:02:52,950 --> 00:02:55,022
+So now I get three warnings,
 
 52
-00:03:33,757 --> 00:03:37,670
-so it shows the plain one in its place.
+00:02:55,472 --> 00:02:57,041
+one warning for each mark.
 
 53
-00:03:38,570 --> 00:03:42,483
-That means the crew would still read my sentence.
+00:02:58,841 --> 00:03:01,168
+All three are on line thirty-one,
 
 54
-00:03:44,283 --> 00:03:46,891
-It's a warning all the same,
+00:03:01,618 --> 00:03:05,601
+and this second number tells me how far along the line to look.
 
 55
-00:03:47,341 --> 00:03:52,124
-because the game only has a plain twin for some characters,
+00:03:06,501 --> 00:03:07,533
+Read to the end again:
 
 56
-00:03:52,574 --> 00:03:56,487
-and an emoji, for instance, is simply left out.
+00:03:07,983 --> 00:03:09,533
+the game can't draw this mark,
 
 57
-00:03:57,387 --> 00:04:01,735
-So I delete each mark and press the plain key,
+00:03:09,983 --> 00:03:12,771
+so it shows the plain one in its place.
 
 58
-00:04:02,185 --> 00:04:03,924
-and it's clean again.
+00:03:13,671 --> 00:03:17,098
+So in the Quest Log, the crew would still read my sentence,
 
 59
-00:04:05,724 --> 00:04:09,637
-This time I rename a key, on line thirty-three.
+00:03:17,548 --> 00:03:20,986
+with plain quote marks where I typed curly ones.
 
 60
-00:04:10,537 --> 00:04:14,015
-Lint complains about line twenty-nine and line thirty-six,
+00:03:22,786 --> 00:03:24,514
+It's a warning all the same,
 
 61
-00:04:14,465 --> 00:04:17,943
-and it says nothing at all about thirty-three.
+00:03:24,964 --> 00:03:28,216
+because the game only has a plain twin for some characters,
 
 62
-00:04:18,843 --> 00:04:20,583
-So why is that?
+00:03:28,666 --> 00:03:31,873
+and an emoji, for instance, is simply left out.
 
 63
-00:04:22,383 --> 00:04:25,426
-Line twenty-nine points at the old key,
+00:03:32,773 --> 00:03:36,040
+So I delete each mark and press the plain key,
 
 64
-00:04:25,876 --> 00:04:29,354
-and no record has that key any more,
+00:03:36,490 --> 00:03:38,235
+and lint says it's clean again.
 
 65
-00:04:29,804 --> 00:04:31,543
-so nothing is revealed.
+00:03:40,035 --> 00:03:43,469
+This time I rename a key, on line thirty-three.
 
 66
-00:04:32,443 --> 00:04:35,922
-And line thirty-six is the step I renamed.
+00:03:44,369 --> 00:03:48,091
+Lint complains about line twenty-nine and line thirty-six,
 
 67
-00:04:36,372 --> 00:04:38,546
-It's waiting to be revealed,
+00:03:48,541 --> 00:03:51,259
+and it says nothing at all about thirty-three.
 
 68
-00:04:38,996 --> 00:04:41,170
-and now nothing reveals it.
+00:03:52,159 --> 00:03:53,470
+So why would that be?
 
 69
-00:04:42,970 --> 00:04:46,883
-Those are the two ends of one broken link,
+00:03:55,270 --> 00:03:57,656
+Line twenty-nine points at the old key,
 
 70
-00:04:47,333 --> 00:04:52,550
-and lint names the line that points, and the line that waits.
+00:03:58,106 --> 00:04:00,473
+and no record has that key any more,
 
 71
-00:04:54,350 --> 00:04:57,393
-There's a second way to ask, too.
+00:04:00,923 --> 00:04:02,953
+so nothing at all is revealed.
 
 72
-00:04:58,293 --> 00:05:03,076
-If I run lint with the word missing on the end,
+00:04:03,853 --> 00:04:06,691
+And line thirty-six is the step I renamed.
 
 73
-00:05:03,526 --> 00:05:09,613
-I get a list of every key I've pointed at and haven't written yet.
+00:04:07,141 --> 00:04:08,740
+It's waiting to be revealed,
 
 74
-00:05:10,513 --> 00:05:13,557
-While I'm drafting, that's my to-do list.
+00:04:09,190 --> 00:04:11,125
+and now nothing reveals it,
 
 75
-00:05:15,357 --> 00:05:17,965
-So I put the key back,
+00:04:11,575 --> 00:04:14,324
+so it would never appear in the Quest Log.
 
 76
-00:05:18,415 --> 00:05:21,893
-and both warnings go away, and it's clean.
+00:04:16,124 --> 00:04:18,245
+Those are the two ends of one broken link,
 
 77
-00:05:23,693 --> 00:05:26,302
-Now I delete just one line,
+00:04:18,695 --> 00:04:23,135
+and lint names the line that points, and the line that waits.
 
 78
-00:05:26,752 --> 00:05:29,796
-the three hyphens that close this fence.
+00:04:24,935 --> 00:04:26,537
+There's a second way to ask, too.
 
 79
-00:05:30,696 --> 00:05:33,739
-And that gets me my first error.
+00:04:27,437 --> 00:04:30,104
+If I run lint with the word missing on the end,
 
 80
-00:05:35,539 --> 00:05:37,278
-I deleted line fifty-one,
+00:04:30,554 --> 00:04:33,933
+I get a list of every key I've pointed at and haven't written yet.
 
 81
-00:05:37,728 --> 00:05:39,902
-but lint names line forty-eight.
+00:04:34,833 --> 00:04:37,502
+While I'm drafting, that's my to-do list.
 
 82
-00:05:40,802 --> 00:05:43,846
-That's the line where the fence opens,
+00:04:39,302 --> 00:04:40,581
+So I put the key back,
 
 83
-00:05:44,296 --> 00:05:46,904
-the fence that now never closes.
+00:04:41,031 --> 00:04:43,867
+and both warnings go away, and it's clean.
 
 84
-00:05:47,804 --> 00:05:50,848
-And the sentence tells me the rest:
+00:04:45,667 --> 00:04:47,568
+Now it's Derelict Hull's turn,
 
 85
-00:05:51,298 --> 00:05:55,211
-the lines under the fields were read as fields,
+00:04:48,018 --> 00:04:50,993
+the hull reading on Science, on the hulk's scan tab.
 
 86
-00:05:55,661 --> 00:05:58,270
-so this record has no text.
+00:04:51,893 --> 00:04:53,363
+I delete just one line,
 
 87
-00:05:59,170 --> 00:06:02,213
-It gives me the fix as well,
+00:04:53,813 --> 00:04:55,964
+the three hyphens that close this fence.
 
 88
-00:06:02,663 --> 00:06:08,315
-which is to add a line of three hyphens under the last field.
+00:04:56,864 --> 00:04:58,503
+And that gets me my first error.
 
 89
-00:06:10,115 --> 00:06:13,593
-So I type it back, and it's clean.
+00:05:00,303 --> 00:05:02,104
+The line I deleted was fifty-one,
 
 90
-00:06:14,493 --> 00:06:17,972
-It's the same lesson as the last break:
+00:05:02,554 --> 00:05:04,541
+but lint names line forty-eight.
 
 91
-00:06:18,422 --> 00:06:22,770
-the line lint names isn't always the line I changed,
+00:05:05,441 --> 00:05:07,897
+That's the line where the fence opens,
 
 92
-00:06:23,220 --> 00:06:27,133
-so let the sentence tell you where to look.
+00:05:08,347 --> 00:05:10,163
+the fence that now never closes.
 
 93
-00:06:28,933 --> 00:06:31,976
-The hashes say where a record sits.
+00:05:11,063 --> 00:05:12,982
+And the sentence tells me the rest:
 
 94
-00:06:32,876 --> 00:06:36,789
-So let's give this one a hash too many,
+00:05:13,432 --> 00:05:16,482
+the lines under the fields were read as fields,
 
 95
-00:06:37,239 --> 00:06:38,978
-and that's one error.
+00:05:16,932 --> 00:05:18,885
+so this record has no text.
 
 96
-00:06:39,878 --> 00:06:41,617
-This heading has four,
+00:05:19,785 --> 00:05:23,171
+In the game, Science can never finish scanning the hulk:
 
 97
-00:06:42,067 --> 00:06:45,546
-and the one it sits under has two.
+00:05:23,621 --> 00:05:27,887
+its Scan button just keeps saying Queue Scan,
 
 98
-00:06:46,446 --> 00:06:50,359
-And look at what the game does about it:
+00:05:28,337 --> 00:05:30,159
+and the hulk stays unknown.
 
 99
-00:06:50,809 --> 00:06:54,722
-it reads the heading as if it had three.
+00:05:31,059 --> 00:05:32,932
+It gives me the fix as well,
 
 100
-00:06:55,622 --> 00:06:58,665
-Here that guess happens to be right,
+00:05:33,382 --> 00:05:36,510
+which is to add a line of three hyphens under the last field.
 
 101
-00:06:59,115 --> 00:07:00,854
-so nothing is lost.
+00:05:38,310 --> 00:05:40,337
+So I type it back, and it's clean.
 
 102
-00:07:02,654 --> 00:07:06,133
-In break one, a warning stopped my story,
+00:05:41,237 --> 00:05:43,843
+It's the same lesson as the last break:
 
 103
-00:07:06,583 --> 00:07:09,626
-and here an error costs me nothing.
+00:05:44,293 --> 00:05:47,750
+the line lint names isn't always the line I changed,
 
 104
-00:07:10,526 --> 00:07:14,439
-So I don't judge a finding by its level.
+00:05:48,200 --> 00:05:50,801
+so let the sentence tell you where to look.
 
 105
-00:07:14,889 --> 00:07:16,628
-I read its sentence.
+00:05:52,601 --> 00:05:54,653
+The hashes say where a record sits.
 
 106
-00:07:18,428 --> 00:07:21,037
-I take the extra hash off,
+00:05:55,553 --> 00:05:58,047
+So let's give this one a hash too many,
 
 107
-00:07:21,487 --> 00:07:26,270
-and now let's go the other way, down to one hash.
+00:05:58,497 --> 00:06:00,383
+and that gives me one error.
 
 108
-00:07:27,170 --> 00:07:29,778
-And that gives me six findings.
+00:06:01,283 --> 00:06:03,768
+This heading now has four hashes,
 
 109
-00:07:31,578 --> 00:07:35,057
-This is the point where people give up,
+00:06:04,218 --> 00:06:06,448
+and the one it sits under has two.
 
 110
-00:07:35,507 --> 00:07:37,246
-so here's the rule:
+00:06:07,348 --> 00:06:09,262
+And look at what the game does about it:
 
 111
-00:07:37,696 --> 00:07:39,870
-read the first one only.
+00:06:09,712 --> 00:06:12,947
+it reads the heading as if it had three.
 
 112
-00:07:40,770 --> 00:07:44,248
-It's about line forty-seven, the line I changed,
+00:06:13,847 --> 00:06:15,933
+Here that guess happens to be right,
 
 113
-00:07:44,698 --> 00:07:50,350
-and it says one hash starts a new title, so give it three.
+00:06:16,383 --> 00:06:18,647
+so nothing at all is lost.
 
 114
-00:07:51,250 --> 00:07:54,728
-The others are about two records further down,
+00:06:20,447 --> 00:06:23,454
+In break one, a warning stopped my story,
 
 115
-00:07:55,178 --> 00:07:56,917
-records I never touched,
+00:06:23,904 --> 00:06:26,601
+and here an error costs me nothing.
 
 116
-00:07:57,367 --> 00:08:00,846
-and their advice would actually make things worse.
+00:06:27,501 --> 00:06:30,714
+So I don't judge a finding by its level.
 
 117
-00:08:02,646 --> 00:08:05,254
-So I put the hashes back,
+00:06:31,164 --> 00:06:33,660
+I read its sentence instead.
 
 118
-00:08:05,704 --> 00:08:08,313
-and all six go at once.
+00:06:35,460 --> 00:06:37,300
+I take the extra hash off,
 
 119
-00:08:09,213 --> 00:08:13,126
-Fix the first finding, and then run lint again.
+00:06:37,750 --> 00:06:40,673
+and now let's go the other way, down to one hash.
 
 120
-00:08:14,926 --> 00:08:17,100
-Now for the honest part.
+00:06:41,573 --> 00:06:44,656
+And that gives me six findings.
 
 121
-00:08:18,000 --> 00:08:20,174
-I leave myself a note,
+00:06:46,456 --> 00:06:48,429
+This is the point where people give up,
 
 122
-00:08:20,624 --> 00:08:26,711
-the way I would in a manuscript, with a hash in front of it.
+00:06:48,879 --> 00:06:51,017
+so here's the rule to follow:
 
 123
-00:08:27,611 --> 00:08:29,350
-And lint says clean.
+00:06:51,467 --> 00:06:53,046
+read the first one only.
 
 124
-00:08:30,250 --> 00:08:36,337
-But in the game, my note is part of the description the crew reads.
+00:06:53,946 --> 00:06:57,231
+It's about line forty-seven, the line I changed,
 
 125
-00:08:38,137 --> 00:08:42,050
-In this file, a note starts with two slashes.
+00:06:57,681 --> 00:07:02,575
+and it says one hash starts a new title, so give it three.
 
 126
-00:08:43,850 --> 00:08:47,763
-Clean means every shape is one that lint knows,
+00:07:03,475 --> 00:07:06,268
+The others are about two records further down,
 
 127
-00:08:48,213 --> 00:08:50,822
-every key that's pointed at exists,
+00:07:06,718 --> 00:07:08,401
+records that I never touched,
 
 128
-00:08:51,272 --> 00:08:54,315
-and the story file can be read.
+00:07:08,851 --> 00:07:11,296
+and their advice would actually make things worse.
 
 129
-00:08:55,215 --> 00:08:59,998
-It doesn't mean the mission does what I meant it to.
+00:07:13,096 --> 00:07:14,883
+So I put the hashes back,
 
 130
-00:09:00,898 --> 00:09:06,115
-The page has a short list of the things lint can't see.
+00:07:15,333 --> 00:07:17,712
+and all six go at once.
 
 131
-00:09:07,915 --> 00:09:09,654
-Lint reads your files,
+00:07:18,612 --> 00:07:21,606
+Fix the first finding, and then run lint again.
 
 132
-00:09:10,104 --> 00:09:12,278
-but it doesn't run them.
+00:07:23,406 --> 00:07:24,499
+Now for the honest part.
 
 133
-00:09:13,178 --> 00:09:17,526
-So the second check is to play for a minute,
+00:07:25,399 --> 00:07:26,931
+I leave myself a note,
 
 134
-00:09:17,976 --> 00:09:20,150
-and then read the logs.
+00:07:27,381 --> 00:07:31,343
+the way I would in a manuscript, with a hash in front of it.
 
 135
-00:09:21,950 --> 00:09:26,298
-Here's that extra hash again, this time in the game.
+00:07:32,243 --> 00:07:33,723
+And lint still says clean.
 
 136
-00:09:27,198 --> 00:09:29,372
-The quest list looks fine,
+00:07:34,623 --> 00:07:40,156
+But in the game, in the Quest Log's pane, my note is part of the description the crew reads.
 
 137
-00:09:29,822 --> 00:09:33,735
-because the game took the hash off for me.
+00:07:41,956 --> 00:07:44,635
+In this file, a note starts with two slashes.
 
 138
-00:09:34,635 --> 00:09:36,374
-And here's the log:
+00:07:46,435 --> 00:07:50,620
+Clean means every shape is one that lint knows,
 
 139
-00:09:36,824 --> 00:09:40,737
-one line, with the line number and the fix.
+00:07:51,070 --> 00:07:53,257
+every key that's pointed at exists,
 
 140
-00:09:41,637 --> 00:09:45,550
-That's exactly what lint told me before I played,
+00:07:53,707 --> 00:07:55,334
+and the story file can be read.
 
 141
-00:09:46,000 --> 00:09:48,609
-which is why lint comes first.
+00:07:56,234 --> 00:07:58,557
+It doesn't mean the mission does what I meant it to.
 
 142
-00:09:50,409 --> 00:09:53,887
-So I fix it, and lint says clean.
+00:07:59,457 --> 00:08:02,159
+The page has a short list of the things lint can't see.
 
 143
-00:09:54,787 --> 00:09:58,700
-But the log still has its line in it,
+00:08:03,959 --> 00:08:06,563
+Lint reads every one of your files,
 
 144
-00:09:59,150 --> 00:10:01,759
-because lint leaves the logs alone.
+00:08:07,013 --> 00:08:08,332
+but it doesn't run them.
 
 145
-00:10:02,659 --> 00:10:06,137
-They're the game's notes on my last play.
+00:08:09,232 --> 00:08:11,609
+So the second check is to play for a minute,
 
 146
-00:10:07,937 --> 00:10:11,415
-So I play again, and there's my story.
+00:08:12,059 --> 00:08:14,118
+and then read the logs.
 
 147
-00:10:12,315 --> 00:10:14,924
-This time both logs are empty,
+00:08:15,918 --> 00:08:19,105
+Here's that extra hash again, this time in the game.
 
 148
-00:10:15,374 --> 00:10:19,722
-and that's what you want to see after every play.
+00:08:20,005 --> 00:08:22,870
+This is Science, with the hulk's scan tab open,
 
 149
-00:10:21,522 --> 00:10:24,565
-Now use it on your own words.
+00:08:23,320 --> 00:08:24,858
+and the hull reading is still there,
 
 150
-00:10:25,465 --> 00:10:28,943
-Rewrite the three descriptions, and the three readings,
+00:08:25,308 --> 00:08:27,452
+because the game took the hash off for me.
 
 151
-00:10:29,393 --> 00:10:35,480
-and after every one of them, save, run lint, and read the count line.
+00:08:28,352 --> 00:08:29,951
+And here's the runtime log:
 
 152
-00:10:36,380 --> 00:10:39,859
-Then play the mission, and read both logs.
+00:08:30,401 --> 00:08:33,875
+one line, with the line number and the fix.
 
 153
-00:10:41,659 --> 00:10:47,746
-Next time, we'll put names to two words you saw in this file today:
+00:08:34,775 --> 00:08:37,598
+That's exactly what lint told me before I played,
 
 154
-00:10:48,196 --> 00:10:50,370
+00:08:38,048 --> 00:08:39,815
+which is why lint comes first.
+
+155
+00:08:41,615 --> 00:08:43,831
+So I fix it, and lint says clean.
+
+156
+00:08:44,731 --> 00:08:46,762
+But the log still has its line in it,
+
+157
+00:08:47,212 --> 00:08:49,147
+because lint leaves the logs alone.
+
+158
+00:08:50,047 --> 00:08:51,958
+They're the game's notes on my last play.
+
+159
+00:08:53,758 --> 00:08:55,119
+So I play the mission again,
+
+160
+00:08:55,569 --> 00:08:58,664
+and there's the hull reading on Science, just as it should be.
+
+161
+00:08:59,564 --> 00:09:01,606
+This time both logs are empty,
+
+162
+00:09:02,056 --> 00:09:04,576
+and that's what you want to see after every play.
+
+163
+00:09:06,376 --> 00:09:08,212
+Now use it on your own words.
+
+164
+00:09:09,112 --> 00:09:12,534
+Rewrite the three descriptions, and the three readings,
+
+165
+00:09:12,984 --> 00:09:17,028
+and after every one of them, save, run lint, and read the count line.
+
+166
+00:09:17,928 --> 00:09:20,430
+Then play the mission, and read both logs.
+
+167
+00:09:22,230 --> 00:09:26,506
+Next time, we'll put names to two words you saw in this file today:
+
+168
+00:09:26,956 --> 00:09:28,584
 a role, and a signal.

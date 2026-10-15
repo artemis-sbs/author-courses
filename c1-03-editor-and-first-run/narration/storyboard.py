@@ -17,6 +17,11 @@ What is real and what is not:
   otherwise be listed beside the add-on. The untrusted window is a real Restricted Mode.
 - The two web pages and the `sbs debug` page are drawn by headless Edge.
 - The game is real (game.py): the page's own run line on a probe copy of the example.
+- REWORK 2026-10-14 (say what the crew sees): Science is the NEW console (the default
+  since 2026-10-13), so its stills are retaken under new ids (_sci2), taken 2026-10-14; the
+  old game_science is not used. Also new, taken 2026-10-14: game_quests (the Quest Log after
+  Find the Derelict) and game_list (the server's list of missions with The Cold Hulk,
+  the game started by hand, since map=0 skips the list).
 - The VS Code installer, the menus and the store apps are cards in the page's own words.
 """
 LECTURE = "c1-03-editor-and-first-run"
@@ -77,7 +82,10 @@ STILLS = {
     # the real game (game.py), the page's run line on a probe copy of the example
     "game_server": ("game", "the window titled server: the main screen"),
     "game_helm": ("game", "the window titled helm"),
-    "game_science": ("game", "the window titled science"),
+    "game_science_sci2": ("game", "the window titled science, the NEW console: nothing selected, the contact list with the hulk in it, the chip rail under the map"),
+    "game_sci_scan_sci2": ("game", "the science window, NEW console: the hulk selected and scanned, its tab stack over the map with Scan chosen, the read-out showing the hull reading from line 47"),
+    "game_quests": ("game", "the helm window's handheld, Quests: the Quest Log, First Contact with Find the Derelict Done and Study the Derelict Active"),
+    "game_list": ("game", "the game started by hand, Start Server: Choose Mission, the line The Cold Hulk selected"),
     # drawn
     "card_title": ("card", "title", {}),
     "card_word": ("card", "page", {"kicker": "What a word processor does to what you type",
@@ -123,8 +131,12 @@ _PROBLEMS = ("rect", 0.232, 0.628, 0.998, 0.722)         # v_problems: the panel
 _TAB = ("rect", 0.234, 0.040, 0.318, 0.072)              # v_dot: the tab and its dot
 _STATION = ("rect", 0.455, 0.455, 0.545, 0.585)          # game_helm: DS 1 and the ship
 _HULK = ("rect", 0.455, 0.370, 0.540, 0.448)             # game_helm: the hulk and its bearing
-_SCI_ROW = ("rect", 0.698, 0.688, 0.930, 0.733)          # game_science: the hulk in the list (still "unknown")
 _TITLE = ("rect", 0.885, 0.0, 1.0, 0.045)                # a game window's name
+_SCI_READ = ("rect", 0.697, 0.245, 0.99, 0.307)          # game_sci_scan_sci2: the hull reading in the read-out
+_SCI_SCAN = ("rect", 0.007, 0.761, 0.286, 0.8)           # game_sci_scan_sci2: the Scan button
+_SCI_HULK = ("rect", 0.698, 0.278, 0.928, 0.318)         # game_science_sci2: Unknown Hulk (TSN) in the contact list
+_Q_FIND = ("rect", 0.025, 0.293, 0.38, 0.358)            # game_quests: Find the Derelict, Done
+_Q_STUDY = ("rect", 0.025, 0.222, 0.38, 0.287)           # game_quests: Study the Derelict, Active
 
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
@@ -167,8 +179,9 @@ BOARD = {
         {"from": 7, "still": "t_create", "marks": [("cmd", 1, "-t amd")]},
         {"from": 8, "still": "t_create", "marks": [("cmd", 1, "--title")]},
         {"from": 9, "still": "t_create", "marks": [("cmd", 1, "\"The Cold Hulk\"")]},
-        {"from": 10, "still": "t_create", "marks": [("span", 1, "Fetch these dependencies now? [Y/n]:")]},
-        {"from": 12, "still": "x_after", "marks": [("part", "row:MyMission")]},
+        {"from": 10, "still": "game_list", "crop": (0.03, 0.34, 0.83, 0.52), "marks": [("rect", 0.035, 0.41, 0.81, 0.47)]},
+        {"from": 12, "still": "t_create", "marks": [("span", 1, "Fetch these dependencies now? [Y/n]:")]},
+        {"from": 14, "still": "x_after", "marks": [("part", "row:MyMission")]},
     ]},
     "s05_bring_the_libraries_up_to_da": {"step": 4, "beats": [
         {"from": 0, "still": "t_create", "marks": [("span", 1, _FETCH)]},
@@ -197,14 +210,18 @@ BOARD = {
         {"from": 1, "still": "v_color", "marks": [("lines", 10, 10), _AMD]},
         {"from": 2, "still": "v_outline", "marks": [_OUTLINE]},
         {"from": 3, "still": "v_47"},
-        {"from": 4, "still": "v_47", "marks": [("text", 47, "(derelict_scan)")]},
-        {"from": 5, "still": "v_47b", "marks": [("lines", 47, 47)]},
-        {"from": 6, "still": "v_problems", "marks": [_PROBLEMS]},
-        {"from": 7, "still": "v_47", "marks": [("text", 47, "(derelict_scan)")]},
-        {"from": 8, "still": "v_47"},
-        {"from": 9, "still": "card_keys"},
-        {"from": 10, "still": "card_keys", "marks": [("part", "r1"), ("part", "r2")]},
-        {"from": 11, "still": "v_dot", "marks": [_TAB]},
+        {"from": 4, "still": "v_47", "marks": [("lines", 47, 47)]},
+        {"from": 5, "still": "v_47", "marks": [("lines", 52, 53)]},
+        {"from": 6, "still": "game_sci_scan_sci2", "marks": [_SCI_READ]},
+        {"from": 7, "still": "game_sci_scan_sci2", "marks": [_SCI_SCAN, _SCI_READ]},
+        {"from": 8, "still": "v_47", "marks": [("text", 47, "(derelict_scan)")]},
+        {"from": 9, "still": "v_47b", "marks": [("lines", 47, 47)]},
+        {"from": 10, "still": "v_problems", "marks": [_PROBLEMS]},
+        {"from": 11, "still": "v_47", "marks": [("text", 47, "(derelict_scan)")]},
+        {"from": 12, "still": "v_47"},
+        {"from": 13, "still": "card_keys"},
+        {"from": 14, "still": "card_keys", "marks": [("part", "r1"), ("part", "r2")]},
+        {"from": 15, "still": "v_dot", "marks": [_TAB]},
     ]},
     "s08_check_it": {"step": 6, "beats": [
         {"from": 0, "still": "t_lint", "marks": [("part", "run1:cmd")]},
@@ -220,12 +237,16 @@ BOARD = {
         {"from": 7, "still": "t_dry", "marks": [("cmd", 1, "map=0")]},
         {"from": 8, "still": "t_dry"},
         {"from": 9, "still": "game_server"},
-        {"from": 9.5, "still": "game_science", "marks": [_TITLE]},
+        {"from": 9.5, "still": "game_science_sci2", "marks": [_TITLE]},
         {"from": 10, "still": "game_helm", "marks": [_TITLE]},
         {"from": 11, "still": "game_helm", "marks": [_STATION]},
         {"from": 11.45, "still": "game_helm", "marks": [_HULK]},
-        {"from": 12, "still": "game_science", "marks": [_SCI_ROW]},
-        {"from": 13, "still": "game_server"},
+        {"from": 12, "still": "game_helm"},
+        {"from": 13, "still": "game_quests"},
+        {"from": 14, "still": "game_quests", "marks": [_Q_FIND, _Q_STUDY]},
+        {"from": 15, "still": "game_science_sci2"},
+        {"from": 16, "still": "game_science_sci2", "marks": [_SCI_HULK]},
+        {"from": 17, "still": "game_server"},
     ]},
     "s10_the_rehearsal": {"step": 8, "beats": [
         {"from": 0, "still": "w_debug_term", "marks": [("part", "run1:cmd")]},

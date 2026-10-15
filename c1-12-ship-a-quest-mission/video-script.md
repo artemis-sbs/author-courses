@@ -1,5 +1,31 @@
 # C1-12 video script - Capstone: ship a quest mission
 
+> **2026-10-14 (later): briefings.** Lecture 11's file now carries two briefings: Close
+> Inspection's three paragraphs and heading, and the Salvage Run arc's DS 1 picture,
+> table and line of stakes. The example rewords both in the Lantern story (Come
+> Alongside; The Keeper, with Marrow Station's picture, `ship://starbase_command`, kept,
+> and a table of what Marrow Station knows). The count of changes is 66, not 58 (17
+> description pieces where there were 9; the heading `## Why it matters` is kept). Scene
+> 3 says so. `mission.amd` is 201 lines. Measured: `sbs lint` clean and
+> `mission_runner --test 30` PASS on the example. NOT measured: what `sbs docs` prints
+> for the longer briefings (the page now says "a few pages", not "three"); the `c112`
+> harness was not re-run. New stills: `e_fin_a_p2`/`e_fin_c_p2` if the remap says their
+> picture changed, and `game_log_p2` (the Quest Log with The Keeper selected, its
+> briefing on the right).
+
+> **REWORKED ON 2026-10-14: say what the crew sees. Newer than every note below.**
+>
+> - Scene 3 now names where each kind of word is read before it is changed: the arc and
+>   step names and the `Objective:` in the Quest Log, `Win:`/`Lose:` on the end screen
+>   (Game results), a reading on Science (Lantern Nine's Scan tab), the names in
+>   `story.mast` on Helm's map. Scene 8's play checks a reading on Science.
+> - Science is the NEW console, LegendaryMissions' default since 2026-10-13: the selected
+>   contact's tab buttons are in the lower left under its name, the chosen tab's text in
+>   the read-out on the right (from `consoles/science_tabs.py` and `science_panel.py`;
+>   not yet seen with these files). One new still, under an id ending `_sci2`.
+> - Check on it: that Lantern Nine's Scan tab shows one of the example's two hull lines
+>   (the record has two `%` lines and the game picks one).
+
 > **SEEN AND CHANGED SINCE (2026-10-05, by the session that sent the pilot):**
 >
 > - **The finished example was started in the real game** with
@@ -44,7 +70,7 @@ boundaries. The companion page is `lesson.md`; the finished files are in `exampl
 
 | Item | State needed |
 |---|---|
-| Mission | `MyMission` as Lecture 11 leaves it, lint clean: `mission.amd` 185 lines, `story.mast` 115 lines, line 111 the card's route line, line 113 the `npc_spawn` line; `settings.yaml` line 70 is `    -   name: "Artemis"`; `description.yaml` lines 11 and 14 say `The Cold Hulk` |
+| Mission | `MyMission` as Lecture 11 leaves it, lint clean: `mission.amd` 201 lines, `story.mast` 115 lines, line 111 the card's route line, line 113 the `npc_spawn` line; `settings.yaml` line 70 is `    -   name: "Artemis"`; `description.yaml` lines 11 and 14 say `The Cold Hulk` |
 | A finished copy | `example\` copied to a second folder, so scene 3 can cut from the first edits to the finished text |
 | Tool and libraries | `sbs version` says 0.12 or later; `sbs fetch "MyMission" --update-libs` run that day |
 | VS Code | Mission folder open, `mission.amd` and `story.mast` in tabs, font raised. Close it before scene 6 |
@@ -178,18 +204,28 @@ storm is ten minutes out. ||"
 
 ### 3. The words
 
-**Screen:** `mission.amd`. Change the main arc's heading, `Win:`, `Lose:` and
-description. Point at `(salvage)` untouched. Change one step: name, `Objective:`,
-description; point at `Done when: reach derelict 500` untouched. Change one reading. Cut
-to the finished file and scroll it. Then `story.mast`: lines 25, 26, 64, 68, 113.
+**Screen:** The game first: the Quest Log with the example's names. Then `mission.amd`.
+Change the main arc's heading. Point at `(salvage)` untouched. The end screen, Game
+results, with the example's Win sentence; change `Win:`, `Lose:` and the description.
+Change one step: name, `Objective:`, description; point at `Done when: reach derelict 500`
+untouched. Science, Lantern Nine's Scan tab, its reading in the read-out; change that
+reading. Cut to the finished file and scroll it. Then Helm's map with the new names, and
+`story.mast`: lines 25, 26, 64, 68, 113.
 
-**Say:** "There's one rule: change names and sentences, and leave every key. || The square
-brackets are mine, | and the round brackets are the game's. || So my beacon is still called
-derelict underneath, | and no player will ever see that word. ||| I change the win line, and
-the lose line. || Then an objective, where the number in it | must still agree with the line
-under it. || And then a reading. || That comes to fifty-eight changes, and not one key. |||
-Then the script, which has five places, all between quote marks. || It's the first pair of
-quotes on each line. || The second pair is the side and the roles, so leave it. ||"
+**Say:** "There's one rule: change names and sentences, and leave every key. || Every name
+and sentence I change is one the crew reads somewhere, so here's where. || The Quest Log
+shows the arc's name, and every step's, | and those are the square brackets, which are
+mine. || The round brackets are the game's. || So my beacon is still called derelict
+underneath, | and no player will ever see that word. ||| The end screen, Game results,
+shows a win sentence or a lose sentence, | and those are these two lines. || The order on
+the right of the Quest Log is an objective, | and the number in it must still agree with
+the line under it. || And Science shows a reading on the beacon's Scan tab, | so I change
+that sentence too. || The two briefings change the same way: | each paragraph and each row
+of the table gets my words, | and every mark stays where it is. || That comes to sixty-six
+changes, and not one key. ||| Then the
+script, which has five places, all between quote marks. || The names Helm's map draws
+beside each ship | are the first pair of quotes on each line. || The second pair is the side
+and the roles, so leave it. ||"
 
 ### 4. Lint
 
@@ -247,14 +283,17 @@ from now on. ||"
 
 **Screen:** `sbs lint QuietLantern`. `sbs doctor QuietLantern`: scroll to the last block
 and the count. Then the game: `sbs run server,helm,science -m QuietLantern map=0`. The
-list in Step 6, item by item, speeded up. The two logs. The table "What each check sees".
+list in Step 6, item by item, speeded up: Science, Lantern Nine clicked on the map, its
+Scan tab with the example's reading. The two logs. The table "What each check sees".
 
 **Say:** "There are three checks, | and each one sees what the others can't. || Lint asks,
 is the writing right? || Doctor asks, is everything this mission needs on this computer? ||
 Look for the block with my folder's name, | and then the last two words: zero problems. ||
 Doctor never reads my writing. ||| And then comes the play. || There's my ship, my station,
-and my beacon. | Then the skiff, the wait, and the tender. || Then home, and my win line. ||
-Both logs are empty. || And then I read every sentence once more, as a reader. ||"
+and my beacon, on Helm's map. || On Science, I pick Lantern Nine from the list, | and its Scan tab shows
+one of my new lines in the read-out. || Then the skiff, the wait, and the tender. || Then
+home, and my win line on Game results. || Both logs are empty, which is what I want. ||
+And then I read every sentence once more, as a reader. ||"
 
 ### 9. Print it
 

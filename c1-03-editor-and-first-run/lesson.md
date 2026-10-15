@@ -145,7 +145,7 @@ sbs create MyMission -t amd --title "The Cold Hulk"
 | `create` | The command: make a new mission |
 | `MyMission` | The name of the new folder. No spaces |
 | `-t amd` | Which template to copy |
-| `--title "The Cold Hulk"` | The mission's name in the game's list of missions. Put your own title between the quote marks |
+| `--title "The Cold Hulk"` | The mission's name in the server's list of missions, the list you chose Legendary Missions from in Lecture 1. Put your own title between the quote marks |
 
 Three rules for the title: no more than 40 characters, no colon, and no quote marks
 inside it.
@@ -287,6 +287,9 @@ Now see the add-on catch a mistake.
 ### [Derelict Hull](derelict_scan)
 ```
 
+   It is the heading of a scan record: the hull reading Science shows on the hulk's
+   `Scan` tab when the crew scans it. You will see it on Science in Step 7.
+
 5. Delete the last part, `(derelict_scan)`, so that the line ends at `]`.
 6. A red wavy line appears under that line. Open the **View** menu and choose
    **Problems**. The panel that opens has one line, an error on line 47. It begins:
@@ -369,10 +372,15 @@ In the game:
    station, DS 1.
 2. Find the **Unknown Hulk** on Helm's map. It is 9000 from the station.
 3. Fly to it. This is the sample quest: when you come within 2000 of the hulk, its first
-   step, **Find the Derelict**, is done.
-4. Look at the `science` window. The hulk is in its list.
+   step, **Find the Derelict**, is done. See it in the Quest Log: press the small handheld
+   icon in the top bar, then **Quests**. Under **First Contact**, Find the Derelict is
+   marked `Done`, and the next step, **Study the Derelict**, has appeared.
+4. Look at the `science` window. The hulk is in its list of contacts. Click it, and its
+   scan tabs come up over the map. If the first reads **Queue Scan**, press it and wait.
+   When the scan is done it reads **Scan**, and it shows the hull reading from line 47.
 
-You will open the quest list in Lecture 4, and take it apart in Lecture 5.
+You will open the quest list in Lecture 4 again, to see what it does with marks, and take
+the quests apart in Lecture 5.
 
 When you have looked around, close all three windows with the X in each one's corner.
 Close every game window before you start the game again.

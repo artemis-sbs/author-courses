@@ -9,8 +9,8 @@ and an ancient ruin. You will know which of the six classes teaches you to write
 one. And you will know what a mission is made of: a folder, a fact sheet in plain words,
 and a short story file.
 
-*[Screenshot to add: the four stops side by side - the crew's quest list, the Boss line on
-the Siege setup screen, a boarding party's handheld, and a ruin on Helm's map.]*
+*[Screenshot to add: the four stops side by side - the crew's Quest Log, the Boss line on
+the Siege setup screen, a boarding party's handheld, and The Voice on the main screen.]*
 
 You type nothing in this lecture. You play, and you watch.
 
@@ -19,8 +19,9 @@ You type nothing in this lecture. You play, and you watch.
 *[Link to add when recorded.]*
 
 Two of the four stops are on the video only. The game as you install it does not hold a
-boarding scene or a ruin you can reach from its menus. Stops 4 and 5 say so again. You
-will build both yourself, in Classes 3 and 4.
+boarding scene or a ruin you can reach from its menus, and the ruin on the video comes
+from a mission that is not released yet. Stops 4 and 5 say so again. You will build both
+yourself, in Classes 3 and 4.
 
 ## Before you start
 
@@ -95,6 +96,7 @@ bar, beside your crew member's name. It opens the ePADD, the crew's handheld. Pr
 **Quests**. The screen is headed **Quest Log**.
 
 Under **Game** are four lines, each marked `Active`: one job, and the three parts of it.
+Click a line and the Quest Log shows what the crew is told about it.
 
 | Quest | What it says | What it does |
 |---|---|---|
@@ -121,8 +123,9 @@ Done when: signal siege_won
 Destroy the attacking fleets before they overwhelm the starbases.
 ```
 
-You cannot read all of it yet. Read what you can. The name in square brackets is what
-the crew sees. The last line is what the crew is told. `Parent:` says which quest it is
+You cannot read all of it yet. Read what you can. The name in square brackets is the
+line in the Quest Log. The last line is what the Quest Log shows when the crew clicks that
+line. `Parent:` says which quest it is
 part of, and `Required: true` says the parent cannot be won without it. By Lecture 9 you
 will have written one like it.
 
@@ -151,7 +154,7 @@ Choose **Warlord** and start the mission.
 
 A boss does not come at the start. The Warlord waits until the crew has destroyed three
 raiders in every four. Then the flagship arrives with her fleets, and a new quest joins
-the list: **Defeat the Warlord**, worth 500 credits.
+the Quest Log: **Defeat the Warlord**, worth 500 credits.
 
 That takes a while, and a first-time crew may lose the starbases before it happens. The
 video shows the arrival. You do not need to reach it today.
@@ -206,23 +209,44 @@ about ten lines of plain words in the fact sheet.
 
 **Taught in Class 4.**
 
-This one is on the video for the same reason. The video flies the ruin a student builds
-in Class 4. It is called The Hollow.
+This one is on the video too. The ruin on the video is **The Voice, from Storm's
+Beacon**, a mission that is still being made and has no release. You cannot play it. In
+Class 4 you build a ruin of your own like it.
+
+The Voice is a station the Torgoth built a thousand years ago and left dark: a docking
+throat, a concourse, freight halls, a shaft straight down, and a transmitter bay at the
+bottom.
 
 What happens on the video:
 
-1. Helm's map shows a named place past the hulk. The ship flies to it.
-2. On the main screen the ruin is a built thing in space: rooms joined by passages, with
-   an opening wide enough for the ship.
-3. The ship flies inside. As it reaches each named place, a quest step finishes and the
-   next place appears on the map.
-4. At one place a recording calls the ship. Comms answers, and one of the answers puts a
-   hidden room on the map.
-5. For ten seconds the main screen leaves the ship and looks at two places in the ruin,
-   with a line of words under each. This is a cutscene.
+1. The ship arrives, and the main screen shows the station ahead.
+2. Helm flies the ship up to the way in, a docking throat built for ships that no longer
+   exist.
+3. Inside, it is rooms: long halls with flat walls and real corners.
+4. Close to the way in, a crew member's handheld offers **SUIT UP**. Some of the crew can
+   leave the ship and fly the halls in suits.
 
-What to notice: the ruin is rooms and passages written as a list. Nobody modeled it in a
-drawing program. The writer says "a room, this big, here" and the game builds the walls.
+Then the video shows the file. Each room is one record, and its `Box:` line says where
+the room's middle is and how big it is. This is the way in:
+
+```
+### [the throat](throat)
+---
+Relic: voice
+Box: -3200, 0, 0, 1400, 420, 420
+---
+The way in. A docking throat built for hulls that no longer exist - a corridor to your
+ship, a keyhole to theirs.
+```
+
+One more line, on the ruin's own record, picks what the walls are made of:
+
+```
+Walls: torgoth, plates
+```
+
+What to notice: the ruin is rooms written as a list. Nobody modeled it in a drawing
+program. The writer says "a room, this big, here", and the game lays the walls.
 
 ## Stop 6 - A mission is three things
 
@@ -247,7 +271,11 @@ you leave them alone.
 
 ### The fact sheet
 
-By the end of Class 1 your fact sheet is 185 lines long. This is one quest from it, whole:
+By the end of Class 1 your fact sheet is 185 lines long. One of its quests is **Close
+Inspection**. In the game it is a line in the Quest Log, under Salvage Run. Click it and
+the Quest Log shows what the crew is asked to do and what they are told. When the ship
+comes within 500 of the hulk, the line is marked `Done`. This is that quest in the fact
+sheet, whole:
 
 ```
 #### [Close Inspection](approach)
@@ -292,7 +320,8 @@ that one:
 ```
 
 It says: when the step "Wait for the Tug" starts, wait twenty seconds, put a ship named
-Salvage Tug on the map, and tell the quests that the tug has arrived. You will be able to
+Salvage Tug on the map, and tell the quests that the tug has arrived. In the game, that
+is the Salvage Tug appearing on Helm's map. You will be able to
 read that by Lecture 11. You will never be asked to write one from a blank page, in this
 class or any other.
 

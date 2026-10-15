@@ -28,13 +28,16 @@ Starts when: at once
 Done when: signal derelict_found
 Then: reveal first_contact/study
 ---
-# Orders
+## Orders
 Fly out and locate the **drifting** hulk.
+She went dark three days ago, past the border.
 
 - Find her.
 - Scan her.
 
-Her last word was `stay`.
+| Last heard | Her words |
+|---|---|
+| Three days ago | Stay. |
 
 Read [the old report](https://example.com/report) first.
 

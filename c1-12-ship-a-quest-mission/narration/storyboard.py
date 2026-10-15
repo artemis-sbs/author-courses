@@ -18,6 +18,10 @@ own steps. The printed documents are shown by what `sbs docs` really printed (ru
 --open) and a card that says what each holds. After the folder is renamed the Command
 Prompt stills are made by SCRATCH\\v912\\term12.py from TERM12 below (make.py --capture can
 only work in a folder called MyMission): the same real commands, really run.
+
+2026-10-14 (later): the briefings. The finished file rewords Lecture 11's two briefings in
+the Lantern story; scene 3 shows the briefing in the Quest Log (game_log_p2, taken 2026-10-14) and
+then in the file. VS Code stills whose picture changed carry _p2.
 """
 import os as _os
 import re as _re
@@ -106,13 +110,13 @@ _S = {"file": "settings.yaml", "side": False}
 
 STILLS = {
     # Step 2: the fact sheet, the first changes one at a time (lines 46 to 66, then 56 to 76)
-    "e_w1": ("vscode", "w1", 56, "big", _NS),
-    "e_w2": ("vscode", "w2", 56, "big", _NS),
-    "e_w3": ("vscode", "w3", 66, "big", _NS),
-    "e_w4": ("vscode", "w4", 133, "big", _NS),
+    "e_w1_p2": ("vscode", "w1", 56, "big", _NS),
+    "e_w2_p2": ("vscode", "w2", 56, "big", _NS),
+    "e_w3_p2": ("vscode", "w3", 76, "big", _NS),
+    "e_w4": ("vscode", "w4", 149, "big", _NS),
     # ... the finished file, in two long looks
-    "e_fin_a": ("vscode", "final", 62, "mid", _NS),
-    "e_fin_c": ("vscode", "final", 140, "mid", _NS),
+    "e_fin_a_p2": ("vscode", "final", 73, "wide", _NS),     # lines 55 to 91: both briefings
+    "e_fin_c": ("vscode", "final", 156, "mid", _NS),
     # ... and the script's five places
     "m_25": ("vscode", "final", 25, "big", _M),
     "m_64": ("vscode", "final", 66, "big", _M),
@@ -124,7 +128,7 @@ STILLS = {
     "d_set0": ("vscode", "start", 70, "big", _S),
     "d_set": ("vscode", "final", 70, "big", _S),
     # Step 4: a key renamed by hand, in the fact sheet only
-    "e_rhand": ("vscode", "r_hand", 56, "big", _NS),
+    "e_rhand_p2": ("vscode", "r_hand", 56, "big", _NS),
     "m_rhand": ("vscode", "r_hand", 105, "big", _M),
     # the Command Prompt, while the folder is still MyMission
     "t_final": ("terminal", [("final", _LINT)]),
@@ -140,7 +144,11 @@ STILLS = {
     # the real game, all seven files of the PROBE states laid over a probe mission (game12.py)
     "game_map": ("game", "Helm: Kittiwake, Marrow Station, Lantern Nine, Tender Osprey beside the skiff"),
     "game_log": ("game", "The Quest Log with the example's names"),
+    # NEW 2026-10-14 (later), taken 2026-10-14: the example's briefing (probe state g_tug or the page's own files)
+    "game_log_p2": ("game", "The Quest Log with the example's names, The Keeper selected: on the right Marrow Station's picture with 'Orders from Marrow Station...', the storm line, the table What / What Marrow Station knows, and the line of what is at stake"),
     "game_win": ("game", "Helm, Game results with the example's Win sentence"),
+    # added 2026-10-14 (say what the crew sees); Science is the NEW console
+    "game_sci_beacon_sci2": ("game", "Science (new console), Lantern Nine clicked on the map, its Scan button pressed: one of the example's two hull lines in the read-out on the right"),
     # drawn
     # File Explorer, REAL (added 2026-10-06): the RESULT of a step, never the act. The stand-in's
     # MyMission holds the finished files; for these stills it is called QuietLantern, as the
@@ -204,6 +212,12 @@ _TENDER = ("rect", 0.375, 0.472, 0.487, 0.538)
 _MSG = ("rect", 0.015, 0.488, 0.275, 0.56)
 _SENTENCE = ("rect", 0.012, 0.215, 0.265, 0.287)
 
+_PANE12 = ("rect", 0.385, 0.075, 0.975, 0.51)          # game_log_p2: the briefing, Marrow Station's picture to "lifts."
+# game_sci_beacon_sci2, the NEW Science console
+_BEACON_NAME = [("rect", 0.697, 0.06, 0.865, 0.096), ("rect", 0.005, 0.65, 0.105, 0.68)]  # Lantern Nine: read-out title, stack name
+_BEACON_SCAN = ("rect", 0.007, 0.683, 0.286, 0.722)    # the Scan button
+_BEACON_READ = ("rect", 0.697, 0.245, 0.96, 0.307)     # the hull line in the read-out
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
         {"from": 0, "still": "game_map"},
@@ -224,18 +238,28 @@ BOARD = {
     ]},
     "s03_the_words": {"step": 2, "beats": [
         {"from": 0, "still": "card_rule"},
-        {"from": 1, "still": "e_w1", "marks": [("text", 50, "[The Keeper]")]},
-        {"from": 2, "still": "e_w1", "marks": [("text", 50, "(salvage)")]},
-        {"from": 3, "still": "e_w3", "marks": [("text", 66, "derelict")]},
-        {"from": 5, "still": "e_w2", "marks": [("lines", 56, 57)]},
-        {"from": 6, "still": "e_w3", "marks": [("text", 65, "500"), ("text", 66, "500")]},
-        {"from": 8, "still": "e_w4", "marks": [("lines", 133, 133)]},
-        {"from": 9, "still": "e_fin_a"},
-        {"from": 9.5, "still": "e_fin_c"},
-        {"from": 10, "still": "m_25", "marks": [("text", 25, "\"The Quiet Lantern\""), ("lines", 26, 26)]},
-        {"from": 10.5, "still": "m_64", "marks": [("text", 64, "\"Marrow Station\""), ("text", 68, "\"Lantern Nine\"")]},
-        {"from": 11, "still": "m_113", "marks": [("text", 113, "\"Tender Osprey\"")]},
-        {"from": 12, "still": "m_113", "marks": [("text", 113, "\"tsn, tug\"")]},
+        # the game first, then the words that make it
+        {"from": 2, "still": "game_log"},
+        {"from": 3, "still": "e_w1_p2", "marks": [("text", 50, "[The Keeper]")]},
+        {"from": 4, "still": "e_w1_p2", "marks": [("text", 50, "(salvage)")]},
+        {"from": 5, "still": "e_w3_p2", "marks": [("text", 76, "derelict")]},
+        {"from": 7, "still": "game_win", "marks": [_SENTENCE]},
+        {"from": 8, "still": "e_w2_p2", "marks": [("lines", 56, 57)]},
+        {"from": 9, "still": "game_log"},
+        {"from": 10, "still": "e_w3_p2", "marks": [("text", 75, "500"), ("text", 76, "500")]},
+        {"from": 11, "still": "game_sci_beacon_sci2", "marks": [_BEACON_SCAN, _BEACON_READ]},
+        {"from": 12, "still": "e_w4", "marks": [("lines", 149, 149)]},
+        # the two briefings: the game first, then the finished file
+        {"from": 13, "still": "game_log_p2", "marks": [_PANE12]},
+        {"from": 14, "still": "e_fin_a_p2", "marks": [("lines", 59, 69), ("lines", 82, 88)]},
+        {"from": 15, "still": "e_fin_a_p2", "marks": [("text", 59, "![](ship://starbase_command)"), ("lines", 64, 64), ("hashes", 86)]},
+        {"from": 16, "still": "e_fin_a_p2"},
+        {"from": 16.5, "still": "e_fin_c"},
+        {"from": 17, "still": "m_25", "marks": [("text", 25, "\"The Quiet Lantern\""), ("lines", 26, 26)]},
+        {"from": 18, "still": "game_map", "marks": [_STATION, _BEACON, _TENDER]},
+        {"from": 19, "still": "m_64", "marks": [("text", 64, "\"Marrow Station\""), ("text", 68, "\"Lantern Nine\"")]},
+        {"from": 19.5, "still": "m_113", "marks": [("text", 113, "\"Tender Osprey\"")]},
+        {"from": 20, "still": "m_113", "marks": [("text", 113, "\"tsn, tug\"")]},
     ]},
     "s04_lint": {"step": None, "beats": [
         {"from": 0, "still": "t_final", "marks": [("part", "run1:clean")]},
@@ -260,7 +284,7 @@ BOARD = {
         {"from": 4, "still": "card_search", "marks": [("part", "summary")]},
         {"from": 5, "still": "card_search", "marks": [("part", "file2")]},
         {"from": 6, "still": "t_rall", "marks": [("part", "run1:clean")]},
-        {"from": 8, "still": "e_rhand", "marks": [("text", 50, "(keeper)")]},
+        {"from": 8, "still": "e_rhand_p2", "marks": [("text", 50, "(keeper)")]},
         {"from": 10, "still": "t_rhand", "marks": [("part", "run1:clean")]},
         {"from": 11, "still": "m_rhand", "marks": [("text", 111, "\"salvage/tug\"")]},
         {"from": 12, "still": "m_rhand", "marks": [("text", 111, "\"salvage/tug\"")], "dim": True},
@@ -281,10 +305,12 @@ BOARD = {
         {"from": 6, "still": "t_doctor", "marks": [("out", 1, 27), ("out", 1, 28), ("out", 1, 29)], "move": False},
         {"from": 7, "still": "game_map"},
         {"from": 8, "still": "game_map", "marks": [_SHIP, _STATION, _BEACON]},
-        {"from": 9, "still": "game_map", "marks": [_TENDER, _MSG]},
-        {"from": 10, "still": "game_win", "marks": [_SENTENCE]},
-        {"from": 11, "still": "card_play", "marks": [("part", "item9")]},
-        {"from": 12, "still": "card_play"},
+        {"from": 9, "still": "game_sci_beacon_sci2", "marks": _BEACON_NAME},
+        {"from": 10, "still": "game_sci_beacon_sci2", "marks": [_BEACON_SCAN, _BEACON_READ]},
+        {"from": 11, "still": "game_map", "marks": [_TENDER, _MSG]},
+        {"from": 12, "still": "game_win", "marks": [_SENTENCE]},
+        {"from": 13, "still": "card_play", "marks": [("part", "item9")]},
+        {"from": 14, "still": "card_play"},
     ]},
     "s09_print_it": {"step": 7, "beats": [
         {"from": 0, "still": "t_docs", "marks": [("part", "run1:cmd")]},

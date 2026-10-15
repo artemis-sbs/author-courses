@@ -1,5 +1,43 @@
 # C1-10 video script - Things quests point at
 
+> **2026-10-14 (later): briefings. Newer than every note below.** Lecture 9's file now
+> arrives with Close Inspection's three-paragraph briefing and the arc's table, and Step 5
+> ends with one more line, who gives the order: `![](ship://starbase_command) Orders from
+> DS 1, the station you started at.` at the top of Salvage Run's description. It ties to
+> `Art:`: the word after `ship://` comes from the same list of ships.
+>
+> - Line numbers moved: Step 5's `never-revealed` is `line 89` (was 75); the three
+>   `role-is-a-key` lines are 93, 162 and 169 (were 77, 146, 153). Measured: `sbs lint` on
+>   the storyboard states (step, chain, final and the five mistakes) and
+>   `mission_runner --test 30` on the example. The `c110r` harness was NOT re-run.
+> - New stills: `game_arc_ship_p2` (the Quest Log, Salvage Run selected: DS 1's picture at
+>   the top of the briefing, with the words beside it, then the table), the VS Code stills
+>   whose picture changed (suffix `_p2`, plus `e_ship` for the line being typed), and the
+>   Command Prompt stills whose line numbers changed (`_p2`). NOT SEEN: how big the
+>   station is drawn beside the words, or whether a 3D ship draws at all in the Quest Log
+>   pane (text-area ship pictures are engine-verified elsewhere, not here). Also unknown:
+>   what the engine does with a misspelled hull after `ship://`.
+
+> **REWORKED ON 2026-10-14: say what the crew sees. Newer than every note below.**
+>
+> - Each piece is now shown on its console before it is typed: the hulk's tab buttons on
+>   Science before the Scans section, the new Bio tab before its record, the lifeboat on
+>   Helm's map before its landmark record, and the lifeboat's two tabs on Science before
+>   its scan records.
+> - Science is the NEW console, LegendaryMissions' default since 2026-10-13. From its
+>   source (`consoles/science_tabs.py`, `science_panel.py`): the selected contact's tab
+>   buttons sit in the lower left under its name, `Scan` first; a tab not read yet is a
+>   button labeled `Queue Intel` (it queues the scan; there is no `Start Intel Scan` any
+>   more); while it runs the button says `Intel    SCANNING 41%`, then just `Intel`; the
+>   chosen tab's text is in the read-out on the right; a contact list fills the right
+>   column only while nothing is selected. Every Science still is retaken under a new id
+>   ending `_sci2`. The note under scene 9 that says `Start Intel Scan` is history.
+> - Check on the new stills: the order of the hulk's four buttons (the script says Scan,
+>   Intel, Mat, Bio); that the lifeboat is still a white icon with no name on Science's
+>   map and is still missing from the contact list; that its first button reads `Scan`
+>   (filled by the ship's own sensors) and its second `Queue Intel`; whether the lifeboat
+>   has a name on Helm's map (the script does not claim one).
+
 > **STATE ON 2026-10-05. Read this first; where an older note below disagrees, this is
 > newer.**
 >
@@ -131,7 +169,7 @@ On the lesson's steps, typed in order:
 2. Lint is `clean` after Step 2, Step 3 and Step 4, and after Step 5. (Lint.)
 3. In the middle of Step 5, with Find the Lifeboat typed and Close Inspection's `Then:`
    line not yet changed, lint prints the `never-revealed` line on the page, word for
-   word, with `line 75`. (Lint.)
+   word, with `line 89` (2026-10-14, on the briefing files; it was `line 75`). (Lint.)
 4. Following the page's steps in order, typing each block as printed, gives
    `example\mission.amd` byte for byte. (A script, `c110r\steps.py`.)
 
@@ -195,12 +233,13 @@ Not checked, and to watch for while recording:
 
 ### 1. Cold open
 
-**Screen:** The game. The Science console, the hulk selected, a tab open with the line
-about the plant in a pot.
+**Screen:** The game. The Science console, the hulk selected, its Bio button pressed, the
+line about the plant in a pot in the read-out on the right.
 
-**Say:** "That sentence isn't the game's. || I wrote it, in a text file, | and it took me
-about a minute. || Today you give the game two things to point at: | some words for Science
-to find, | and a place on the map that wasn't there before. |||"
+**Say:** "This is the Science console, | and we've selected the hulk and pressed its Bio
+tab. || That sentence in the read-out isn't the game's. || I wrote it, in a text file, |
+and it took me about a minute. || Today you give the game two things to point at: | some
+words for Science to find, | and a place on the map that wasn't there before. |||"
 
 ### 2. The idea: point at a role
 
@@ -217,75 +256,93 @@ own file. ||| So it's one idea: give a thing a role, | and then point at the rol
 
 ### 3. The scans you have
 
-**Screen:** `mission.amd`, the Scans section. Scroll past the three records. Point at
-each `Scan of:` and `Tab:` line.
+**Screen:** The game first: Science, the hulk selected, its three tab buttons. Then
+`mission.amd`, the Scans section. Scroll past the three records. Point at each `Scan of:`
+and `Tab:` line.
 
-**Say:** "There are three records here. || Two came with the template, | and the third is
-yours, from Lecture 5. || There's Hull, on the scan tab, Materials, on the mat tab, | and
-Intel, on the role you added. || There are five tabs in all: | scan, status, intel, mat, and
-bio. || Each line that starts with a percent sign is one reading, | and there are two lines
-here, so the game picks one. ||"
+**Say:** "Here's the hulk on Science today. || Under its name it has three tab buttons, Scan, Intel
+and Mat, | and each one is a record in this section. || Two came with the
+template, | and the third is yours, from Lecture 5. || There's Hull, on the scan tab,
+Materials, on the mat tab, | and Intel, on the role you added. || There are five tabs in
+all: | scan, status, intel, mat, and bio. || Each line that starts with a percent sign is
+one reading, | and there are two lines here, so the game picks one. ||"
 
 ### 4. A tab of your own
 
 **Screen:** Below Derelict Intel, type the Derelict Life Signs record. Save. Lint:
-`clean`. Then show the five rules on the companion page.
+`clean`. Then the game: Science, the hulk's fourth button, Bio, pressed, one reading in the
+read-out. Then show the five rules on the companion page.
 
 **Say:** "The hulk has three tabs, | so I'm going to give it a fourth, called bio. || It's
-the same role, a different tab, | and this time three readings. ||| There are five rules for
-scan text. || One reading is one line, | because if I press Enter in the middle, I've made
-two readings, | and the crew gets half a sentence. || One role, spelled the way the hulk
-wears it. || One record for each role and tab. || Always write a Tab line. || And no curly
-brackets, at all. ||| Lint checks the first four. || The fifth it can't check, | because
-curly brackets are a real feature you haven't met yet, | so the game just shows them as you
-typed them. ||"
+the same role, a different tab, | and this time three readings. || On Science, that's a
+fourth button under the hulk's name, Bio, | and the read-out shows one of my three
+readings. ||| There are five rules for scan text. || One reading is one line, | because if
+I press Enter in the middle, I've made two readings, | and the crew gets half a sentence.
+|| One role, spelled the way the hulk wears it. || One record for each role and tab. ||
+Always write a Tab line. || And no curly brackets, at all. ||| Lint checks the first four.
+|| The fifth it can't check, | because curly brackets are a real feature you haven't met
+yet, | so the game just shows them as you typed them. ||"
 
 ### 5. A place of your own
 
-**Screen:** The end of the file. Type the note, the `## [Landmarks](landmarks)` line and
-The Lifeboat record. Highlight `(landmarks)`. Then each of the four lines in turn. Show
-the Prefab, Art and Loc tables on the companion page. Then scroll to the top and add the
-`lifeboat` line to the word list. Save. Lint: `clean`.
+**Screen:** The game first: Helm's map, the lifeboat off to one side of the hulk. Then the
+end of the file. Type the note, the `## [Landmarks](landmarks)` line and The Lifeboat
+record. Highlight `(landmarks)`. Then each of the four lines in turn. Show the Prefab, Art
+and Loc tables on the companion page. Then scroll to the top and add the `lifeboat` line
+to the word list. Save. Lint: `clean`.
 
-**Say:** "Everything on the map so far came from the script file, | but this one is mine. ||
-It's a new section, with two hashes, | and its key is this word: landmarks. || Then comes a
-record, | and its name is the name the object gets. || Prefab says what sort of thing it is: |
-a wreck, a ship, or a station. || Roles is the label it wears. || This is the line lint has
-been telling you about since Lecture 7, | and it's the line that matters, | because it's the
-word everything else points at. ||| Art is what it looks like. | Lint can't check that word,
-so copy it. || And Loc is where it sits: | three numbers, in plain digits, | with no comma
-inside a number. || The station is at zero, zero, zero, | and the hulk is at zero, zero,
-nine thousand. || The middle number is height, so leave it at zero. || Mine goes here, off
-to one side. ||| And then one line in my word list, | so that the list stays true. ||"
+**Say:** "Everything on the map so far came from the script file, | but this one is mine.
+|| Here it is on Helm's map, | a lifeboat drifting off to one side of the hulk. || It's a
+new section, with two hashes, | and its key is this word: landmarks. || Then comes the
+lifeboat's own record, | and its name in square brackets is the name Science shows | once the
+lifeboat is scanned. ||
+Prefab says what sort of thing it is: | a wreck, a ship, or a station. || Roles is the
+label it wears. || This is the line lint has been telling you about since Lecture 7, | and
+it's the line that matters, | because it's the word everything else points at. ||| Art is
+what it looks like. | Lint can't check that word, so copy it. || And Loc is where it sits:
+| three numbers, in plain digits, | with no comma inside a number. || The station is at
+zero, zero, zero, | and the hulk is at zero, zero, nine thousand. || The middle number is
+height, so leave it at zero. || Mine goes here, off to one side, | which is where you saw
+it on Helm's map. ||| And then one line in my word list, | so that the list stays true. ||"
 
 ### 6. Words for the lifeboat
 
-**Screen:** Back in the Scans section, type the two lifeboat records above the Places
-note. Save. Lint: `clean`.
+**Screen:** The game first: Science, the lifeboat selected, its two buttons, Scan and
+Queue Intel, and its hull line in the read-out. Back in the Scans section, type the two
+lifeboat records above the Places note. Save. Lint: `clean`.
 
-**Say:** "The lifeboat wears a role, | so it can have scan text: Scan of, lifeboat. || A
-scan tab comes first, always, and then intel. || And that's the whole trick: | the place and
-the words never mention each other. || They both mention the role. |||"
+**Say:** "Here's the lifeboat on Science, | with two tab buttons under it, Scan and Intel.
+|| Those are the two records I'm about to write. || The lifeboat wears a role, | so it can
+have scan text: Scan of, lifeboat. || A scan tab comes first, always, and then intel. ||
+And that's the whole trick: | the place and the words never mention each other. || They
+both mention the role. |||"
 
 ### 7. Point the story at it
 
 **Screen:** The Quests section. Type Find the Lifeboat below Close Inspection. Save. Lint:
-the `never-revealed` warning, line 75. Then change Close Inspection's `Then:` line to
-`salvage/boat`. Save. Lint: `clean`. Highlight `reach lifeboat 500`.
+the `never-revealed` warning, line 89. Then change Close Inspection's `Then:` line to
+`salvage/boat`. Save. Lint: `clean`. Highlight `reach lifeboat 500`. Then the game: the
+Quest Log, Salvage Run selected, DS 1's picture at the top of its briefing. Back to the
+file: type the ship line at the top of Salvage Run's description. Save. Lint: `clean`.
 
-**Say:** "Now for the story. || I add a new step, between the hulk and home, | and it's
+**Say:** "Now for the story itself. || I add a new step, between the hulk and home, | and it's
 revealed, like last time. || I run lint before I go on, | and it says the step waits to be
 revealed, and nothing reveals it. || You saw that one in Lecture 9. || So I make one change
 up here: | Close Inspection now reveals the boat, and not home. || And it's clean, so the
 chain runs hulk, boat, home. ||| Now look at this line: | Done when, reach, lifeboat, five
 hundred. || That's a verb, a role, and a distance. || It's the role, from the Roles line,
-and not the name. || I gave the key the same word on purpose, | and the next scene shows
-why. ||"
+| and not the name the crew reads on Science. || I gave the key the same word on purpose,
+| and the next scene shows why. ||| And one more line, this one for the crew. || Here's
+Salvage Run in the Quest Log now, | with a picture of DS 1 at the top of its briefing, |
+because DS 1 is who gives the order. || In the file it's one line, at the top of the
+briefing: | an exclamation mark, empty square brackets, | and then ship, colon, two
+slashes, and the art word for the station. || That's the same list of ships that Art
+comes from, | so copy the word exactly, because lint can't check it. ||"
 
 ### 8. Lint
 
 **Screen:** The command prompt. Delete the `Roles:` line, lint: three `role-is-a-key`
-warnings, lines 77, 146 and 153. Undo. Change `Tab: bio` to `Tab: life`, lint: one
+warnings, lines 93, 162 and 169. Undo. Change `Tab: bio` to `Tab: life`, lint: one
 warning, `unknown-scan-tab`. Undo. Change `Scan of: derelict` to `Scan of: derelicts` on
 the new record, lint: nothing wears a role called `derelicts`. Undo. Delete the `Loc:`
 line, lint: placed at zero, zero, zero. Undo. Change the section key to `places`, lint:
@@ -305,28 +362,33 @@ those two by eye. ||"
 ### 9. Play it
 
 **Screen:** Server, Helm and Science. The Quest Log: the handheld icon, then Quests. Fly
-to the hulk. Science: select the hulk, open the tabs. Find the Lifeboat is in the list.
-Fly to the lifeboat. Science: select it, open its tabs. The step shows `Done`. Fly home.
-The game ends.
+to the hulk. Science: click the hulk on the map, press Bio. Find the Lifeboat is in the
+Quest Log. Fly to the lifeboat. Science: click its icon on the map; its Scan button, then
+Queue Intel pressed, the scan running, then its Intel text. The step shows `Done`. Fly
+home. The game ends: Game results, with the Win sentence.
 
-**Say:** "The Quest Log has two steps showing, | so it's out to the hulk. || Close
-Inspection is done, and there's the new step, Find the Lifeboat. || At Science I select the
-hulk, | and there's my fourth tab, with one of my three readings. || Now for the lifeboat, |
-which is on the map because I wrote four lines. || At Science again, I pick the boat off the
-map, | and those are my words on its scan tab. || Its intel tab is one that Science has to
-scan for, | and then that's mine too. || In we go, and the step is done. || Then it's home,
-and that's the win. ||"
+**Say:** "The Quest Log has two steps showing, | and DS 1 at the top of the briefing, | so
+it's out to the hulk. || Close
+Inspection is done, and there's the new step, Find the Lifeboat. || At Science I click the
+hulk on the map, | and there's my fourth button, Bio, | with one of my three readings in
+the read-out. || Now it's on to the lifeboat, | which is on the map because I wrote four lines. ||
+At Science again, I click the boat's icon on the map, | and those are my words on its Scan
+tab. || Its other button says Queue Intel, | because that's a tab Science has to scan for.
+|| So I press it, the scan runs, | and then that's mine too. || In we go, and the step is
+done. || Then it's home, and that's the win, | with my Win sentence on Game results. ||"
 
-> Say what the screen actually shows about scanning. If the hulk's tabs are already filled
-> before Science does anything, say so: the ship scans what is in range by itself. If the
-> lifeboat's `intel` tab is empty until Science scans it, say that too: the lifeboat is on
-> no side, so the ship's own sensors fill only its first tab.
+> Say what the screen actually shows about scanning. If the hulk's buttons already read
+> Scan, Intel, Mat and Bio before Science does anything, say so: the ship scans what is
+> in range by itself. If the lifeboat's second button reads `Queue Intel`, say that too:
+> the lifeboat is on no side, so the ship's own sensors fill only its first tab.
 >
-> Seen in the real game on 2026-10-05 (probe: the lifeboat put 1500 off to one side): the
-> hulk's four tabs were filled with nobody at Science; the lifeboat is a white icon on
-> Science's map with no name drawn and was not in the contact list, and clicking it selects
-> it; its `scan` tab was filled; its `intel` tab showed a `Start Intel Scan` button, and the
-> reading came after it was pressed. The Say block above says so.
+> Seen in the real game on 2026-10-05, on the OLD Science console (probe: the lifeboat
+> put 1500 off to one side): the hulk's four tabs were filled with nobody at Science; the
+> lifeboat is a white icon on Science's map with no name drawn and was not in the contact
+> list, and clicking it selects it; its `scan` tab was filled; its `intel` tab showed a
+> `Start Intel Scan` button, and the reading came after it was pressed. On the NEW
+> console that button is the tab row itself, labeled `Queue Intel` (from the source; not
+> yet seen). The Say block above follows the new console.
 
 ### 10. Your turn
 

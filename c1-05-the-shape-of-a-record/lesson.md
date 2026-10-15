@@ -141,7 +141,8 @@ Tab: scan
 ```
 
 Two fields. The body is two lines, and each starts with `%`. In a scan record every line
-of the body is one reading, and Science is shown one of them.
+of the body is one reading, and Science is shown one of them. You see it on Science, on
+the hulk's `Scan` tab, when the crew scans the hulk.
 
 ## Step 4 - What shows, and where
 
@@ -149,16 +150,17 @@ The same part does not show in the same place for every kind of record.
 
 | Part | In a quest | In a scan record |
 |---|---|---|
-| Name | The quest's line in the quest list | Nowhere. It is for you |
+| Name | The quest's line in the Quest Log | Nowhere. It is for you |
 | Key | Nowhere | Nowhere |
-| Body | Beside the list, when the quest is selected | The reading on Science |
+| Body | In the Quest Log's pane, when the crew selects the quest | The reading on Science, on the tab the record names, when the crew scans the object |
 
 The fields are not shown as you typed them. They tell the game what to do with the
 record: whose reading it is, which tab it goes on, when a quest starts.
 
 ## Step 5 - Change one record's words
 
-Find the body of **First Contact**:
+Find the body of **First Contact**. In the game it is what the Quest Log's pane shows
+when the crew selects First Contact:
 
 ```
 A derelict has drifted into the sector. Find out what happened to it.
@@ -170,7 +172,10 @@ Select that line and type your own over it. This page uses:
 A dead ship has drifted across the border. Nobody sent her, and nobody will say whose she is.
 ```
 
-Keep it on one line, however long it gets. Do not touch the heading or the fence.
+Keep it on one line, however long it gets: word wrap folds it. A quest's description can
+hold more than one paragraph, and Lecture 8 writes one that does. This one stays on one
+line so that the line numbers on the next pages match your file. Do not touch the heading
+or the fence.
 
 ## Step 6 - Add a record of your own
 
@@ -191,11 +196,12 @@ Tab: intel
 | `### [Derelict Intel](derelict_intel)` | Three hashes: a record in the Scans section. Then a name, then a key |
 | `---` | The fence opens |
 | `Scan of: derelict` | Whose reading this is. The hulk is the derelict |
-| `Tab: intel` | Which page of the Science screen it goes on. The hulk already has `scan` and `mat` |
+| `Tab: intel` | Which Science tab it goes on. The hulk already has `scan` and `mat` |
 | `---` | The fence closes |
 | The last line | The body: one reading |
 
-Type it in VS Code. Do not write it in a word processor and paste it in. A word processor
+You will see this on Science: the hulk, the `Intel` tab. Type it in VS Code. Do not
+write it in a word processor and paste it in. A word processor
 can change hyphens into one long dash, and straight quotes into curly ones.
 
 Seven rules for the shape. Each one is a mistake somebody made.
@@ -425,13 +431,15 @@ did in Lecture 3.
    crew member's name, then **Quests**. The page that opens is the **Quest Log**.
 2. Select **First Contact** in the list on the left. Your sentence is on the right.
 3. Fly to the Unknown Hulk. It is about 9000 from the station, DS 1.
-4. On Science, select the hulk in the list on the right. It has three tabs with text:
-   `scan`, `mat` and your `intel`.
-5. Open `intel`. Your reading is there.
+4. On Science, select the hulk: in the contact list, or on the map. Its scan tabs come up
+   over the map, one button each. Three of them hold text: **Scan**, **Mat** and your
+   **Intel**.
+5. Press **Intel**. Your reading is in the read-out beside the map.
 
 In the real game the ship's sensors scan what is in range without anybody pressing a
-button. So the tabs have their text soon after you arrive, and both steps of First
-Contact finish by themselves. The Quest Log then shows First Contact as `Done`.
+button. So the tabs should have their text soon after you arrive, and both steps of First
+Contact finish by themselves. If a tab still reads **Queue Intel**, press it: the scan
+joins the queue, and the button reads **Intel** when it is done. The Quest Log then shows First Contact as `Done`.
 
 ## If something goes wrong
 

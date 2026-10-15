@@ -1,7 +1,8 @@
-s01_cold_open_0	That quest is mine.
-s01_cold_open_1	Nine lines in a text file put it there.
-s01_cold_open_2	And in the next few minutes, you'll write your own first quest,
-s01_cold_open_3	and you won't write any code to do it.
+s01_cold_open_0	This is the Quest Log, on Helm,
+s01_cold_open_1	and that quest, Close Inspection, is mine.
+s01_cold_open_2	Fifteen lines in a text file put it there.
+s01_cold_open_3	And in the next few minutes, you'll write your own first quest,
+s01_cold_open_4	and you won't write any code to do it.
 s02_where_quests_live_0	This is your fact sheet.
 s02_where_quests_live_1	Two hashes make a section,
 s02_where_quests_live_2	and this section is Quests,
@@ -9,16 +10,31 @@ s02_where_quests_live_3	so everything under it is a quest, until the next sectio
 s02_where_quests_live_4	Right now it holds one story, First Contact, in two steps.
 s02_where_quests_live_5	We're going to leave that alone,
 s02_where_quests_live_6	and add one of our own underneath it.
-s03_write_it_0	I start with three hashes, which makes this a quest of its own.
-s03_write_it_1	Then a name the crew will read, and a key.
-s03_write_it_2	Then I open the fence.
-s03_write_it_3	Shared means it's one quest for the whole crew.
-s03_write_it_4	Starts when, at once, means it's live as soon as the game starts.
-s03_write_it_5	The objective is the order, in one sentence.
-s03_write_it_6	Done when is the one we'll come back to.
-s03_write_it_7	Then comes the reward, and I close the fence.
-s03_write_it_8	And last, one line of story,
-s03_write_it_9	which is the text the crew will read.
+s03_write_it_0	Here's where the crew will read it.
+s03_write_it_1	On the left is the Quest Log's list,
+s03_write_it_2	and on the right, for the quest that's selected,
+s03_write_it_3	its state, its reward, its order, and its briefing.
+s03_write_it_4	Every one of those is a line I'm about to type.
+s03_write_it_5	I start with three hashes, which makes this a quest of its own.
+s03_write_it_6	Then the name, which is what the crew sees in that list,
+s03_write_it_7	and a key, which they never see.
+s03_write_it_8	Then I open the fence.
+s03_write_it_9	Shared means it's one quest for the whole crew.
+s03_write_it_10	Starts when, at once, means it's in the Quest Log
+s03_write_it_11	as soon as the game starts.
+s03_write_it_12	The objective is the order, in one sentence,
+s03_write_it_13	and the crew reads it on the right, above the description.
+s03_write_it_14	Done when is the one we'll come back to.
+s03_write_it_15	Then comes the reward, which is the Reward line on the right,
+s03_write_it_16	and I close the fence.
+s03_write_it_17	And last comes the description,
+s03_write_it_18	which the crew reads under the order.
+s03_write_it_19	It's a short page, so I write it like one.
+s03_write_it_20	First a line of story,
+s03_write_it_21	then a blank line, and what DS 1 knows so far.
+s03_write_it_22	Then a heading, which is two hashes and a space, with no brackets,
+s03_write_it_23	so it's part of the description, and not a record.
+s03_write_it_24	And last, what's at stake.
 s04_the_line_that_matters_0	This is the line that matters most.
 s04_the_line_that_matters_1	It's a verb, then a role, then a number, in that order.
 s04_the_line_that_matters_2	Reach means get close,
@@ -27,7 +43,7 @@ s04_the_line_that_matters_4	And derelict is a role,
 s04_the_line_that_matters_5	which you met last time.
 s04_the_line_that_matters_6	Here's the hulk's list:
 s04_the_line_that_matters_7	its side, and then the two roles it wears.
-s04_the_line_that_matters_8	The promise is the same as it was for a reading:
+s04_the_line_that_matters_8	The promise is the same as it was for the sentence on Science's Intel tab:
 s04_the_line_that_matters_9	something has to wear the word.
 s04_the_line_that_matters_10	What's new here is the verb.
 s04_the_line_that_matters_11	Last time, a step waited for a signal,
@@ -45,24 +61,35 @@ s05_getting_it_wrong_6	Now here's one it doesn't catch.
 s05_getting_it_wrong_7	If I take out the line that says Starts when, at once,
 s05_getting_it_wrong_8	lint still says clean,
 s05_getting_it_wrong_9	but the quest is only on offer.
-s05_getting_it_wrong_10	The page has a table of these,
-s05_getting_it_wrong_11	and the ones to remember are these:
-s05_getting_it_wrong_12	the number goes last, and nothing goes after it,
-s05_getting_it_wrong_13	and count your hashes.
+s05_getting_it_wrong_10	So here's where my quest went instead.
+s05_getting_it_wrong_11	It isn't in the Quest Log at all.
+s05_getting_it_wrong_12	It's on the ePADD's other list, Available Quests,
+s05_getting_it_wrong_13	and it waits there until someone on Comms accepts it.
+s05_getting_it_wrong_14	The page has a table of these,
+s05_getting_it_wrong_15	and the ones to remember are these:
+s05_getting_it_wrong_16	the number goes last, and nothing goes after it,
+s05_getting_it_wrong_17	and count your hashes.
 s06_check_it_0	Now I put everything back the way it was, and run lint.
 s06_check_it_1	And it's clean, with no errors and no warnings.
-s07_play_it_0	Here's the Quest Log, and here's mine,
-s07_play_it_1	with its state, its reward, and my description.
-s07_play_it_2	So now we fly.
-s07_play_it_3	At two thousand, Find the Derelict is done.
-s07_play_it_4	But that's last lecture's signal, and not my quest,
-s07_play_it_5	so mine hasn't moved.
-s07_play_it_6	Then, inside five hundred,
-s07_play_it_7	it's done, and the crew is paid.
+s07_play_it_0	Here's the Quest Log, and here's mine in the list.
+s07_play_it_1	On the right are its state, its reward and my order.
+s07_play_it_2	Under them is my description,
+s07_play_it_3	three short paragraphs with a heading,
+s07_play_it_4	and a gap wherever I left a blank line.
+s07_play_it_5	So now we fly out to the hulk.
+s07_play_it_6	At two thousand, Find the Derelict is done.
+s07_play_it_7	But that's last lecture's signal, and not my quest,
+s07_play_it_8	so mine hasn't moved.
+s07_play_it_9	Then, once we're inside five hundred,
+s07_play_it_10	Helm shows a green line: Quest complete, Close Inspection.
+s07_play_it_11	In the Quest Log it's done,
+s07_play_it_12	and the hundred credits on its Reward line are paid to the crew's side.
 s08_your_turn_0	Now add a second quest, one that finishes on time,
 s08_your_turn_1	with Done when, two minutes.
-s08_your_turn_2	That's just a number and a unit.
-s08_your_turn_3	There are five verbs built in,
-s08_your_turn_4	and they're all on the page.
-s08_your_turn_5	Next time we'll join quests together,
-s08_your_turn_6	so that one leads to the next.
+s08_your_turn_2	Give it a briefing of its own,
+s08_your_turn_3	at least two paragraphs: what to do, and why it matters.
+s08_your_turn_4	That's just a number and a unit.
+s08_your_turn_5	There are five verbs built in,
+s08_your_turn_6	and they're all on the page.
+s08_your_turn_7	Next time we'll join quests together,
+s08_your_turn_8	so that one leads to the next.

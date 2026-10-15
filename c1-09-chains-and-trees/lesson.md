@@ -60,6 +60,14 @@ Scope: shared
 Starts when: at once
 ---
 The hulk's reactor is failing. Get her flight log back to DS 1 before she goes.
+
+| What | What DS 1 knows |
+|---|---|
+| Her reactor | Failing. Ten minutes, maybe less |
+| Her flight log | Aboard, as far as anyone can tell |
+| Her crew | Six when she sailed. None answering |
+
+The log is the only record of where she has been. Lose it, and nobody will ever know who sent her.
 ```
 
 After the last line press Enter twice. That leaves one blank line between your new record
@@ -67,6 +75,32 @@ and Close Inspection.
 
 The new thing is the single word `Arc`, alone on the first line inside the fence. It has no
 colon. It says this record is a heading over a run of steps.
+
+You will see it in the Quest Log: **Salvage Run** is a heading in the list, with its steps
+under it. Select it, and its description is on the right: the first line, the table, the
+last line, and then its steps.
+
+### A table of what is known
+
+Close Inspection's description told the crew what to do and why. This one adds what DS 1
+knows, as a small table. You will see it in the Quest Log, on the right, when the crew
+selects Salvage Run:
+
+| You typed | The crew reads |
+|---|---|
+| The first line, `What` and `What DS 1 knows` between bars | The table's header row, in gray |
+| The line of bars and hyphens under it | Nothing. It only marks the line above as the header |
+| The three lines under that | Three rows: one thing in the left column, what DS 1 knows about it in the right |
+
+Three rules for a table:
+
+1. **Every line starts and ends with a bar, `|`, and has a bar between the columns.** On
+   most keyboards it is `Shift` and the backslash key.
+2. **The second line is bars and hyphens, `|---|---|`:** one `---` for each column.
+3. **A blank line above it and below it.** Keep it to a few short rows. The pane is narrow,
+   and the game fits the columns to it.
+
+A table does not belong in a Science reading. There, every line is a reading of its own.
 
 ## Step 2 - Put Close Inspection under it
 
@@ -77,14 +111,16 @@ Add one hash to the Close Inspection heading, so it has four:
 ```
 
 That is all it takes. A record with four hashes is a step of the nearest three-hash record
-above it. Close Inspection is now the first step of Salvage Run.
+above it. Close Inspection is now the first step of Salvage Run. In the Quest Log it is
+listed under Salvage Run, not on a line of its own.
 
 Its key has not changed, but its full address has. From anywhere else in the file it is
 now `salvage/approach`: the arc, a slash, the step.
 
 ## Step 3 - A second step, and the line that starts it
 
-Click at the end of Close Inspection's description line. Press Enter twice. Type:
+Click at the end of the last line of Close Inspection's description, the one that ends
+`somebody aboard needs help.` Press Enter twice. Type:
 
 ```
 #### [Bring the Log Home](home)
@@ -115,12 +151,12 @@ sbs lint MyMission
 
 ```
 == mission.amd ==
-  [WARNING] line 68: `Bring the Log Home` waits to be revealed, and nothing reveals it: no `Then: reveal salvage/home` on another step, and no answer or story line names `home`. It never appears, and the story it belongs to cannot finish (never-revealed)
+  [WARNING] line 82: `Bring the Log Home` waits to be revealed, and nothing reveals it: no `Then: reveal salvage/home` on another step, and no answer or story line names `home`. It never appears, and the story it belongs to cannot finish (never-revealed)
 
 1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```
 
-Lint read `Starts when: revealed` on line 68 and looked for the line that wakes this step.
+Lint read `Starts when: revealed` on line 82 and looked for the line that wakes this step.
 There is none. Its sentence spells that line out for you: `Then: reveal salvage/home`.
 
 If lint says `clean` here, one of your own sentences has the word `home` in it. Step 7
@@ -141,7 +177,8 @@ Save. Run lint: `clean`.
 | `reveal` | Start another quest |
 | `salvage/home` | Which one: its full address |
 
-That is a chain. Finishing one step starts the next.
+That is a chain. Finishing one step starts the next. In the Quest Log, Bring the Log Home
+appears in the list the moment Close Inspection shows `Done`.
 
 Three rules for `Then: reveal`:
 
@@ -174,6 +211,8 @@ and whichever happens first decides it.
 |---|---|
 | The ship gets within 500 of the hulk | Quick Work is complete. The side is paid 50 |
 | Two minutes pass | Quick Work has failed. Nothing is paid |
+
+In the Quest Log, Quick Work has a clock under it that counts down its two minutes.
 
 Quick Work and Close Inspection have the same `Done when:` line. A fast crew finishes both
 at the same moment and is told about each.
@@ -216,9 +255,9 @@ Lose: The reactor let go with the log still aboard.
 
 | Line | Meaning |
 |---|---|
-| `Win:` | When this record is finished, the game is won. The sentence is the reason given |
-| `Lose:` | When this record FAILS, the game is lost. The sentence is the reason given |
-| `Fails when: 10 minutes` | What fails it: ten minutes after it starts |
+| `Win:` | When this record is finished, the game is won. The sentence is the reason given, on the end screen, **Game results** |
+| `Lose:` | When this record FAILS, the game is lost. The sentence is on the same end screen |
+| `Fails when: 10 minutes` | What fails it: ten minutes after it starts. The Quest Log shows the time left under Salvage Run |
 
 Compare this with Quick Work. Both have a `Fails when:` line. Quick Work failing costs the
 crew a bonus. Salvage Run failing ends the game, because Salvage Run has a `Lose:` line.
@@ -252,7 +291,7 @@ a crew that opens it. Everyone else first hears of the limit when the mission ha
 
 So tell them yourself, in words they read at the start: the arc's description, and the
 `Objective:` line or the description of its first step. The Quest Log shows all three to
-a crew that opens it.
+a crew that opens it. Your table already does it once: `Failing. Ten minutes, maybe less`.
 
 ## Your finished arc
 
@@ -268,6 +307,14 @@ Lose: The reactor let go with the log still aboard.
 ---
 The hulk's reactor is failing. Get her flight log back to DS 1 before she goes.
 
+| What | What DS 1 knows |
+|---|---|
+| Her reactor | Failing. Ten minutes, maybe less |
+| Her flight log | Aboard, as far as anyone can tell |
+| Her crew | Six when she sailed. None answering |
+
+The log is the only record of where she has been. Lose it, and nobody will ever know who sent her.
+
 #### [Close Inspection](approach)
 ---
 Scope: shared
@@ -280,6 +327,12 @@ Part of: salvage
 Required: true
 ---
 The hulk is not answering hails. Bring the ship in close and take a look.
+
+DS 1 has called her on every channel for an hour. Nothing has come back, not even a carrier wave.
+
+## Why it matters
+
+A ship with nobody at the helm is a danger to every lane near the border. If she is empty, DS 1 needs to know why. If she is not, somebody aboard needs help.
 
 #### [Bring the Log Home](home)
 ---
@@ -334,12 +387,12 @@ Save. Run lint.
 
 ```
 == mission.amd ==
-  [WARNING] line 65:14: `approach` Then reveals `salvage/home`, and no record has that key, so nothing is revealed. There is a `home` at `home`: write `Then: reveal home` (dangling-reveal)
+  [WARNING] line 73:14: `approach` Then reveals `salvage/home`, and no record has that key, so nothing is revealed. There is a `home` at `home`: write `Then: reveal home` (dangling-reveal)
 
 1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```
 
-You changed line 71. Lint names line 65, the `Then:` line in Close Inspection. That is
+You changed line 85. Lint names line 73, the `Then:` line in Close Inspection. That is
 break 3 of Lecture 6 again: a finding about a `Then:` line is about the record it points
 at.
 
@@ -494,17 +547,17 @@ Start your mission as the server with a Helm console.
 2. Fly to the Unknown Hulk. Get inside 500.
 3. Close Inspection completes. If you were quick, so does Quick Work.
 4. **Bring the Log Home** is now in the list.
-5. Fly back to DS 1. Inside 1000, it completes, and the game ends with your `Win:`
-   sentence.
+5. Fly back to DS 1. Inside 1000, it completes, and the game ends. The end screen,
+   **Game results**, carries your `Win:` sentence.
 
 First Contact, the template's own story, finishes its steps at the hulk too. That is not
 this lecture's doing, and it does not end the game.
 
 **To lose,** without waiting ten minutes: change `Fails when: 10 minutes` to
-`Fails when: 30 seconds`, start the mission, and sit still. The game ends with your `Lose:`
-sentence. Then change it back.
+`Fails when: 30 seconds`, start the mission, and sit still. The game ends, and **Game
+results** carries your `Lose:` sentence. Then change it back.
 
-What the crew is told, word for word:
+What the crew is told, word for word, as a line on Helm:
 
 | When | The crew is told |
 |---|---|
@@ -552,8 +605,8 @@ Give your story a fourth step.
 3. Make it finish on time: `Done when: 30 seconds`.
 4. Give it `Part of: salvage` and `Required: true`.
 5. Add a `Then: reveal` line to Bring the Log Home, with your new step's full address.
-6. Write the time limit into the arc's description, and into Close Inspection's, so the
-   crew knows it.
+6. The arc's table already gives the time limit. Write it into Close Inspection's
+   description as well, as a sentence of its own, so the crew reads it from the first step.
 
 Run lint after step 4, and again after step 5. After step 4 it should warn you:
 `never-revealed`. After step 5 it has to say `clean`.

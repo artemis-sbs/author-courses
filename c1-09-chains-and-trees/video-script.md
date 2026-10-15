@@ -1,5 +1,32 @@
 # C1-9 video script - Chains and trees
 
+> **2026-10-14 (later): briefings. Newer than every note below.** Close Inspection comes
+> from Lecture 8 with a three-paragraph description (a heading `## Why it matters`), and
+> the Salvage Run arc is typed with a table of what DS 1 knows and a line of what is at
+> stake. Scene 2 teaches the table; scene 11 points at its "ten minutes" row.
+>
+> - Line numbers moved: the never-revealed warning is now `line 82` (was 68), the trap's
+>   `dangling-reveal` is `line 73:14` (was 65:14), the trap's heading is line 85 (was 71).
+>   Measured: `sbs lint` on the storyboard states `home`, `then`, `final`, `trap` and
+>   `page` (= `example\`), and `mission_runner --test 30` on the example: clean / PASS.
+>   The 159-variant harness (`c19r`) was NOT re-run; its other line numbers are past the
+>   arc's first line and moved the same way.
+> - New stills: every VS Code still (suffix `_p2`), `t_home_p2`, `t_then_p2`, `t_trap_p2`,
+>   and `game_arc_p2` (Salvage Run selected: its briefing with the table). If `game_log` or
+>   `game_hulk` shows a pane with Close Inspection's or Salvage Run's text, retake those
+>   too. NOT SEEN: the table in the Quest Log pane.
+
+> **REWORKED ON 2026-10-14: say what the crew sees. Newer than every note below.**
+>
+> - Each new piece is now shown in the Quest Log before it is typed: an arc as the heading
+>   in the list with its steps under it and its own description on the right; a step
+>   under it once it has four hashes; a revealed step appearing; Quick Work's clock and
+>   Salvage Run's. The `Win:` and `Lose:` sentences are named as what the end screen,
+>   Game results, shows.
+> - Every game still here already exists (game_log, game_arc, game_helm, game_hulk,
+>   game_home, game_win, game_lose). No Science shot, so nothing is retaken. Check that
+>   game_arc's "more to follow" line is still drawn, since scene 4 now says it.
+
 > **STATE ON 2026-10-05. Read this first; where an older note below disagrees, this is
 > newer.**
 >
@@ -101,8 +128,8 @@ boundaries. The companion page is `lesson.md`; the finished files are in `exampl
 
 | Item | State needed |
 |---|---|
-| Mission | `MyMission` as Lecture 8 leaves it. `mission.amd` must match `c1-08-first-quest\example\mission.amd` line for line (82 lines, the Close Inspection heading on line 47), or the line numbers 65, 68 and 71 on the page are wrong |
-| Lecture 8's exercise quest | Type one under Close Inspection before recording. Scene 4 needs it there to show where not to type. It sits below everything the page numbers, so 65, 68 and 71 still hold (measured with a quest keyed `watch`) |
+| Mission | `MyMission` as Lecture 8 leaves it. `mission.amd` must match `c1-08-first-quest\example\mission.amd` line for line (88 lines, the Close Inspection heading on line 47), or the line numbers 73, 82 and 85 on the page are wrong |
+| Lecture 8's exercise quest | Type one under Close Inspection before recording. Scene 4 needs it there to show where not to type. It sits below everything the page numbers, so 73, 82 and 85 still hold (measured with a quest keyed `watch`) |
 | `story.mast` | Lecture 8's, which is Lecture 7's finished file. Never opened in this lecture |
 | Library | sbs_utils `0d76c0c4` or later and LegendaryMissions `b20726f` or later, BUILT into `data\missions\__lib__`. With the older build (`0c4c0fae`, `298ffb3`) everything on the page still holds except one thing on camera: selecting Salvage Run in the Quest Log shows no description |
 | `sbs` | 0.12 or later: `sbs version` prints the number, `sbs update` fetches the newest |
@@ -130,8 +157,9 @@ On the lesson's steps, typed in order:
 
 2. Lint is `clean` after each of the six steps. (Lint.)
 3. In the middle of Step 3, with Bring the Log Home typed and the `Then:` line not yet,
-   lint prints the `never-revealed` line on the page, word for word, with `line 68`.
-   (Lint. The same line, with `line 68`, when Lecture 8's exercise quest is in the file.)
+   lint prints the `never-revealed` line on the page, word for word, with `line 82`.
+   (Lint, 2026-10-14 on the briefing files, with Lecture 8's exercise quest in the file.
+   Before the briefings it was `line 68`.)
 
 On the finished `mission.amd`:
 
@@ -224,42 +252,55 @@ it's still no code. || And the quest you wrote last time | is going to be its fi
 
 ### 2. A heading for the story
 
-**Screen:** `mission.amd`. Click in front of the first `#` of `### [Close Inspection]`.
-Type the Salvage Run record. Enter twice.
+**Screen:** The game first: the Quest Log at the start, Salvage Run in the list with its
+clock and two steps under it; then Salvage Run selected, its briefing on the right, the
+table in the middle. Then `mission.amd`. Click in front of the first `#` of
+`### [Close Inspection]`. Type the Salvage Run record, the table line by line. Enter twice.
 
-**Say:** "A story needs a heading, | and it's made the way every heading is: | three hashes,
-a name, and a key. || Inside the fence there's one word on a line by itself, | the word Arc,
+**Say:** "Here's how a story looks in the Quest Log. || Salvage Run is a heading in the
+list, | with its steps under it, | and a clock under its name counting down. || Select it,
+and its own briefing is on the right, | with a small table in the middle. ||| A story needs
+a heading in the file too, | and it's made the way every heading is: | three hashes, a
+name, and a key. || Inside the fence there's one word on a line by itself, | the word Arc,
 with no colon after it. || What that word says is, | I'm not a task, I'm the heading over
-some tasks. ||| The rest you've seen before: | it's shared, it starts at once, | and below
-the fence there's one line of story. ||"
+some tasks. ||| The rest you've seen before: | it's shared, and it starts at once. || Below
+the fence comes the briefing, | and this time it has a table of what DS 1 knows. || Every
+line of a table starts and ends with a bar, | and the second line is just bars and
+hyphens. || Then one more line, for what's at stake. || And that's all of what the Quest
+Log shows | when the crew selects Salvage Run. ||"
 
 ### 3. One hash
 
-**Screen:** Add a fourth hash to Close Inspection. Pause on it.
+**Screen:** Add a fourth hash to Close Inspection. Pause on it. Then the Quest Log at the
+start, Close Inspection listed under Salvage Run.
 
 **Say:** "Now for the trick, and it's just one more hash. || Four hashes means, I'm a step
 of the three-hash record above me. || And that's all nesting is. ||| So Close Inspection was
-a quest, | and now it's step one of Salvage Run, | which gives it a full address: salvage,
-slash, approach. ||"
+a quest, | and now it's step one of Salvage Run. || In the Quest Log, it's listed under
+Salvage Run now, | and not on a line of its own. || And in the file it has a full address:
+salvage, slash, approach. ||"
 
 ### 4. The second step, and where not to type it
 
 **Screen:** Scroll down to show the Lecture 8 exercise quest under Close Inspection. Point
-at it. Scroll back. Click at the end of Close Inspection's description. Enter twice. Type
-Bring the Log Home.
+at it. Scroll back. Click at the end of the last line of Close Inspection's description. Enter twice. Type
+Bring the Log Home. Then the Quest Log, Salvage Run selected: two steps, and "more to
+follow".
 
 **Say:** "Step two goes here, and not at the bottom of the section. || That's because a
 four-hash step belongs to the nearest three-hash heading above it, | and my quest from last
 time is a three-hash heading. || So if I type below it, | my new step joins the wrong story,
 | and the game is won at the first step. ||| Lint does warn about that, | and I'll show you
 the warning at the end, | because it comes with a trap. || Now, this line is new: Starts
-when, revealed. || It means this step is hidden and asleep, until something wakes it. ||"
+when, revealed. || It means this step is hidden and asleep, until something wakes it. ||
+The Quest Log doesn't list it at all, | it only says that more is to follow. ||"
 
 ### 5. The chain
 
 **Screen:** Save. Command prompt: `sbs lint MyMission`. The `never-revealed` warning.
 Highlight `Then: reveal salvage/home` inside it. Back to the file: add that line to Close
-Inspection's fence. Save. Lint: `clean`.
+Inspection's fence. Save. Lint: `clean`. Then the Quest Log at the hulk: Close Inspection
+`Done`, and Bring the Log Home in the list.
 
 **Say:** "Nothing wakes it yet, and lint knows that. || It read the word revealed, | went
 looking for the line that reveals this step, and found none. || Now read to the end of the
@@ -267,17 +308,19 @@ warning, | because it writes the line out for me, | and the line begins Then, re
 That says, when Close Inspection finishes, start that one. || Notice it's the full address,
 arc, slash, step, | and not just the word home. || One Then line is all this step needs.
 ||| So I add it, I save, and lint says clean. || That's a chain: you finish one, and the
-next begins. ||"
+next begins. || In the Quest Log, Bring the Log Home appears | the moment Close Inspection
+shows Done. ||"
 
 ### 6. A step you can skip
 
-**Screen:** Click at the end of Bring the Log Home's description. Enter twice. Type Quick
-Work. Highlight `Fails when: 2 minutes`.
+**Screen:** The Quest Log at the start, the clock under Quick Work. Then click at the end of
+Bring the Log Home's description line. Enter twice. Type Quick Work. Highlight
+`Fails when: 2 minutes`.
 
-**Say:** "Next comes a bonus: reach the hulk inside two minutes. || It has a Done when line,
-| and it has the opposite, Fails when, | and whichever comes first decides it. || So if the
-crew is quick, they're paid fifty. | If they're slow, the step fails, | and that's all that
-happens. ||"
+**Say:** "Next comes a bonus: reach the hulk inside two minutes. || In the Quest Log, it's
+the step with its own clock under it. || It has a Done when line, | and it has the
+opposite, Fails when, | and whichever comes first decides it. || So if the crew is quick,
+they're paid fifty. | If they're slow, the step fails, | and that's all that happens. ||"
 
 ### 7. What the story needs
 
@@ -292,22 +335,27 @@ two lines, Part of salvage, and Required true, | on these two steps, and not on 
 ### 8. Two endings
 
 **Screen:** Scroll up to show both arcs, First Contact and Salvage Run. Click into Salvage
-Run. Add `Fails when:`, `Win:`, `Lose:`. Save. Lint: `clean`.
+Run. Add `Fails when:`, then the Quest Log's clock under Salvage Run. Then the end screen,
+Game results, with the Win sentence, and with the Lose sentence. Back to the file: add
+`Win:` and `Lose:`. Save. Lint: `clean`.
 
 **Say:** "There are two arcs in this file, | and they start with the same three lines, | so
-I make sure I'm in Salvage Run. || First comes a time limit, | then Win, with a sentence, |
-and Lose, with a sentence. || Win fires when this record is finished, | and Lose fires when
-it fails. ||| And here's the rule to remember: | Fails when only fails a quest. || It's Lose
-that makes a failure end the game. ||| So I run lint, and it's clean. ||"
+I make sure I'm in Salvage Run. || First comes a time limit, | and that's the clock the
+crew sees under Salvage Run in the Quest Log. ||| Then come the two endings, one each way. || When the game
+ends, it ends on this screen, Game results, | and the sentence near the top is mine. || In the file they're Win,
+with a sentence, | and Lose, with a sentence. || Win fires when this record is finished, |
+and Lose fires when it fails. ||| And here's the rule to remember: | Fails when only fails
+a quest. || It's Lose that makes a failure end the game. ||| So I run lint, and it's clean.
+||"
 
 ### 9. The warning with a trap
 
 **Screen:** Take one hash off Bring the Log Home. Save. Lint: the `dangling-reveal`
-warning. Highlight `line 65`, then the last words, `write Then: reveal home`. Do NOT type
+warning. Highlight `line 73`, then the last words, `write Then: reveal home`. Do NOT type
 it. Put the hash back. Save. Lint: `clean`.
 
 **Say:** "Now, there's one mistake I want you to see | before you make it yourself: | one
-hash too few on a step. || Lint warns me, and it's talking about line sixty-five, | which is
+hash too few on a step. || Lint warns me, and it's talking about line seventy-three, | which is
 my Then line, and not the heading I changed. || You know that habit of lint's from Lecture
 6. || But look at how the sentence ends. || It's found my step in its new place, | and it
 offers me a new Then line that points there. || If I write that, lint says clean, | and the
@@ -318,22 +366,25 @@ lint offers you a new Then line, | count the hashes on the step first. ||"
 ### 10. Play it: win
 
 **Screen:** Server and Helm. The Quest Log: Salvage Run with two steps. Fly to the hulk.
-The completion lines. Bring the Log Home appears. Fly to DS 1. The game ends.
+The completion lines on Helm. Bring the Log Home appears in the Quest Log. Fly to DS 1. The
+game ends: Game results, with the Win sentence.
 
 **Say:** "Here's the Quest Log, with two steps showing, | and the third one still hidden. ||
-So in we go, toward the hulk. || Close Inspection is done, and Quick Work is done with it.
-|| And there's step three, Bring the Log Home, | so we turn for home. || And that's the win,
-with my own sentence on it. ||"
+So in we go, toward the hulk. || Helm says Quest complete, Quick Work, | and Close
+Inspection is done with it. || And there's step three in the Quest Log, Bring the Log Home,
+| so we turn for home. || And that's the end screen, Game results, | with my Win sentence
+on it. ||"
 
 ### 11. Play it: lose
 
-**Screen:** Change `10 minutes` to `30 seconds`. Start again. Do nothing. The game ends.
-Change it back.
+**Screen:** Change `10 minutes` to `30 seconds`. Start again. Do nothing. The game ends:
+Game results, with the Lose sentence. Then the Quest Log's clock. Change it back.
 
-**Say:** "Now I change ten minutes to thirty seconds, | and I sit on my hands. || And it's
-lost, with my other sentence. || Notice that nobody warned me. || Your crew gets no
-countdown call, | so tell them the limit in the arc's description, | and tell them again in
-the first step's. || And then I put ten minutes back. ||"
+**Say:** "Now I change ten minutes to thirty seconds, | and I sit on my hands. || And there's
+the end screen again, | this time with my Lose sentence on it. || Notice that nobody warned
+me. || The only countdown is that clock in the Quest Log, | so tell the crew the limit, | the
+way my table does in the arc's briefing, | and tell them again in the first step's. || And then I put ten
+minutes back. ||"
 
 ### 12. Your turn
 

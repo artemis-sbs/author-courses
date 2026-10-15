@@ -87,8 +87,14 @@ STILLS = {
     "term3": ("terminal", [("final", _LINT), ("onehash", _LINT), ("final", _LINT)]),
     "game_epadd": ("game", "Helm with the handheld open"),
     "game_quests": ("game", "The Quest Log, First Contact selected"),
-    "game_science": ("game", "Science, the hulk selected"),
-    "game_intel": ("game", "Science, the hulk's intel tab"),
+    # REWORK 2026-10-14: the NEW Science console (default since 2026-10-13), taken 2026-10-14.
+    # The old game_science / game_intel were the old console and are gone, so they cannot
+    # be shown by accident.
+    "game_science_sci2": ("game", "Science, NEW console, the page's example: the hulk selected, its scan tab stack over the map (Scan, Mat, Intel or however the console orders them, then In Queue)"),
+    "game_scan_sci2": ("game", "Science, NEW console, the page's example: the hulk scanned, Scan chosen, the read-out showing one of the two Derelict Hull readings"),
+    "game_intel_sci2": ("game", "Science, NEW console, the page's example: the hulk scanned, Intel chosen, the read-out showing 'No flight plan was ever filed for this ship. Somebody wanted her forgotten.'"),
+    "game_quests_before": ("game", "The Quest Log on Helm's handheld, the mission as Lecture 4 left it (state start): First Contact selected, the OLD body 'A derelict has drifted into the sector...' in the pane"),
+
     "card_title": ("card", "title", {}),
     "card_shows": ("card", "table", {"heading": "Step 4 - What shows, and where"}),
     "card_exercise": ("card", "list", {"heading": "Exercise", "kicker": "Your turn"}),
@@ -96,7 +102,13 @@ STILLS = {
 }
 
 _REC = [("lines", 62, 67)]
-_SENTENCE = ("rect", 0.695, 0.388, 0.998, 0.448)       # the reading, on the Science console
+# the NEW Science console (fractions of the 4:3 picture), from the _sci2 screenshots
+_SCI_STACK = ("rect", 0.005, 0.69, 0.288, 0.882)        # the hulk's name and its tab buttons, lower left
+_SCI_SCAN = ("rect", 0.007, 0.722, 0.286, 0.762)        # the Scan button
+_SCI_INTEL = ("rect", 0.007, 0.761, 0.286, 0.8)         # the Intel button
+_SCI_HULL = ("rect", 0.697, 0.234, 0.99, 0.29)          # the hull reading in the read-out
+_SCI_SENT = ("rect", 0.697, 0.155, 0.985, 0.218)        # the intel sentence in the read-out
+
 _PARTS = [("lines", 62, 62), ("lines", 63, 66), ("lines", 67, 67)]
 
 # Re-fitted on 2026-10-05 to the narration written for the ear (114 pieces, where there were
@@ -107,10 +119,12 @@ _HASHES_A = [("hashes", n) for n in (10, 14, 16, 24, 33, 45)]
 
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
-        {"from": 0, "still": "game_intel", "marks": [_SENTENCE], "dim": True},
-        {"from": 1, "still": "ed_final", "marks": _REC, "dim": True},
-        {"from": 3, "still": "ed_final_a", "marks": _THREE},
-        {"from": 4, "still": "card_title"},
+        {"from": 0, "still": "game_intel_sci2"},
+        {"from": 1, "still": "game_intel_sci2", "marks": [_SCI_INTEL]},
+        {"from": 2, "still": "game_intel_sci2", "marks": [_SCI_SENT]},
+        {"from": 4, "still": "ed_final", "marks": _REC, "dim": True},
+        {"from": 6, "still": "ed_final_a", "marks": _THREE},
+        {"from": 7, "still": "card_title"},
     ]},
     "s02_the_file": {"step": 1, "beats": [
         {"from": 0, "still": "ed_top"},
@@ -143,11 +157,11 @@ BOARD = {
          "marks": [("text", 26, "Scope"), ("text", 26, ":"), ("text", 26, "shared")]},
         {"from": 6, "still": "ed_find", "marks": [("lines", 26, 29)]},
         {"from": 7, "still": "ed_find", "marks": [("lines", 32, 32)]},
-        # "So that's heading, | fence, | body." is three very short pieces: one picture.
+        # "So that's heading, fence, body." is one piece since 2026-10-14 (it was three very short ones).
         {"from": 9, "still": "ed_find", "marks": [("lines", 24, 24), ("lines", 25, 31), ("lines", 32, 32)]},
-        {"from": 12, "still": "ed_find", "marks": [("lines", 26, 29)]},
-        {"from": 13, "still": "ed_find", "marks": [("lines", 29, 29)]},
-        {"from": 14, "still": "ed_find",
+        {"from": 10, "still": "ed_find", "marks": [("lines", 26, 29)]},
+        {"from": 11, "still": "ed_find", "marks": [("lines", 29, 29)]},
+        {"from": 12, "still": "ed_find",
          "marks": [("text", 29, "first_contact/study"), ("text", 16, "(first_contact)"),
                    ("text", 33, "(study)")]},
     ]},
@@ -155,23 +169,26 @@ BOARD = {
         {"from": 0, "still": "ed_fc", "marks": [("lines", 16, 16), ("lines", 17, 21), ("lines", 22, 22)]},
         {"from": 1, "still": "ed_fc", "marks": [("lines", 18, 18)]},
         {"from": 2, "still": "ed_fc", "marks": [("lines", 17, 17), ("text", 18, "Arc")]},
-        {"from": 3, "still": "ed_hull", "marks": [("lines", 47, 47), ("lines", 48, 51), ("lines", 52, 53)]},
-        {"from": 4, "still": "ed_hull", "marks": [("text", 52, "%"), ("text", 53, "%")]},
-        {"from": 5, "still": "ed_hull", "marks": [("lines", 52, 52), ("lines", 53, 53)]},
-        # added: the one reading Science was shown, on the real console
-        {"from": 6, "still": "game_science", "marks": [_SENTENCE]},
+        {"from": 3, "still": "game_scan_sci2", "marks": [_SCI_SCAN, _SCI_HULL]},
+        {"from": 5, "still": "ed_hull", "marks": [("lines", 47, 47), ("lines", 48, 51), ("lines", 52, 53)]},
+        {"from": 6, "still": "ed_hull", "marks": [("text", 52, "%"), ("text", 53, "%")]},
+        {"from": 7, "still": "ed_hull", "marks": [("lines", 52, 52), ("lines", 53, 53)]},
+        # the one reading Science was shown
+        {"from": 8, "still": "game_scan_sci2", "marks": [_SCI_HULL]},
     ]},
     "s06_what_shows_where": {"step": 4, "beats": [
-        {"from": 0, "still": "card_shows", "marks": [("part", "r1c2")]},
-        {"from": 1, "still": "card_shows", "marks": [("part", "r3c2")]},
+                {"from": 0, "still": "game_quests_before"},
+        {"from": 1.5, "still": "card_shows", "marks": [("part", "r1c2"), ("part", "r3c2")]},
         {"from": 2, "still": "card_shows", "marks": [("part", "r1c3")]},
-        {"from": 4, "still": "card_shows", "marks": [("part", "r3c3")]},
+        {"from": 4, "still": "game_scan_sci2", "marks": [_SCI_HULL]},
+        {"from": 4.6, "still": "card_shows", "marks": [("part", "r3c3")]},
         {"from": 5, "still": "card_shows", "marks": [("part", "r2")]},
     ]},
     "s07_change_the_words": {"step": 5, "beats": [
-        {"from": 0, "still": "ed_fc", "marks": [("lines", 22, 22)]},
-        {"from": 1, "still": "ed_fc_new", "marks": [("lines", 22, 22)]},
-        {"from": 3, "still": "ed_fc_new", "marks": [("lines", 16, 16), ("lines", 17, 21)]},
+                {"from": 0, "still": "game_quests_before"},
+        {"from": 3, "still": "ed_fc", "marks": [("lines", 22, 22)]},
+        {"from": 3.6, "still": "ed_fc_new", "marks": [("lines", 22, 22)]},
+        {"from": 7, "still": "ed_fc_new", "marks": [("lines", 16, 16), ("lines", 17, 21)]},
     ]},
     "s08_write_a_record": {"step": 6, "beats": [
         {"from": 0, "still": "ed_end"},
@@ -184,10 +201,11 @@ BOARD = {
         {"from": 7, "still": "ed_w4", "marks": [("lines", 66, 66)]},
         {"from": 8, "still": "ed_final", "marks": [("text", 67, "%"), ("lines", 67, 67)]},
         {"from": 9, "still": "ed_final", "marks": _REC},
-        {"from": 10, "still": "ed_final"},
-        {"from": 11, "still": "ed_final", "marks": [("hashes", 62)]},
-        {"from": 12, "still": "ed_final", "marks": [("after", 62)]},
-        {"from": 13, "still": "ed_final", "marks": [("text", 64, "Scan of:"), ("text", 65, "Tab:")]},
+        {"from": 10, "still": "game_intel_sci2", "marks": [_SCI_INTEL, _SCI_SENT]},
+        {"from": 12, "still": "ed_final"},
+        {"from": 13, "still": "ed_final", "marks": [("hashes", 62)]},
+        {"from": 14, "still": "ed_final", "marks": [("after", 62)]},
+        {"from": 15, "still": "ed_final", "marks": [("text", 64, "Scan of:"), ("text", 65, "Tab:")]},
     ]},
     "s09_three_ways_to_break_the_shap": {"step": None, "beats": [
         {"from": 0, "still": "ed_final", "marks": _REC},
@@ -214,9 +232,10 @@ BOARD = {
         {"from": 0, "still": "game_epadd", "marks": [("rect", 0.203, 0.0, 0.232, 0.046), ("rect", 0.0, 0.395, 0.32, 0.56)]},
         {"from": 1, "still": "game_quests", "marks": [("rect", 0.003, 0.146, 0.38, 0.214)]},
         {"from": 2, "still": "game_quests", "marks": [("rect", 0.383, 0.074, 0.98, 0.14)]},
-        {"from": 3, "still": "game_science", "marks": [("rect", 0.697, 0.648, 0.93, 0.692)]},
-        {"from": 5, "still": "game_science", "marks": [("rect", 0.697, 0.05, 0.937, 0.093)]},
-        {"from": 6, "still": "game_intel", "marks": [("rect", 0.778, 0.05, 0.86, 0.093), _SENTENCE]},
+        {"from": 3, "still": "game_science_sci2"},
+        {"from": 4, "still": "game_science_sci2", "marks": [_SCI_STACK]},
+        {"from": 5, "still": "game_intel_sci2", "marks": [_SCI_INTEL]},
+        {"from": 6, "still": "game_intel_sci2", "marks": [_SCI_SENT]},
     ]},
     "s12_your_turn": {"step": None, "beats": [
         {"from": 0, "still": "card_exercise", "marks": [("part", "item1")]},

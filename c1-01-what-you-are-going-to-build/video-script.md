@@ -1,5 +1,18 @@
 # C1-1 video script - What you are going to build
 
+> **Reworked 2026-10-14: say what the crew sees.**
+>
+> - Every piece of content is now shown in the game first, on the console where the crew
+>   sees it, then in its file. Stop 2 names the Quest Log line and its pane. Stop 6 shows
+>   Close Inspection in the Quest Log, the step turning to Done inside 500, and the
+>   Salvage Tug on Helm's map, before the fact sheet and the card.
+> - Stop 5 is now **The Voice, from Storm's Beacon** (`relics\voice.amd`, `Walls: torgoth,
+>   plates`), in place of untraceable stills of an older ruin. Storm's Beacon has no
+>   release: the tour says so, and says the student builds a ruin like it in Class 4.
+> - Corrected: an earlier note took Class 4 Lecture 2's ruin as one with built walls. The
+>   Hollow there has no `Walls:` line, so it is walled in rock. The tour no longer leans
+>   on it.
+
 > **Rewritten 2026-10-05 for a 1.4.0 install, got from Steam or itch.io.**
 >
 > - Removed: the two trouble rows and the notes that told a student with an older
@@ -52,8 +65,9 @@
 > - **Two of the four tour stops cannot be played by a student on day one.** A boarding
 >   scene and a ruin are in no map of LegendaryMissions (checked by search: no map calls
 >   `boarding_visit` or `relics_spawn`). Nobody has said that the missions which have
->   them (Dawnline, Open Universe, Storm's Beacon) are in the 1.4.0 download. So Stops 4
->   and 5 are played by the presenter and watched.
+>   them (Dawnline, Open Universe) are in the 1.4.0 download, and Storm's Beacon, whose
+>   ruin Stop 5 shows, has no release at all. So Stops 4 and 5 are played by the
+>   presenter and watched.
 
 Target length: 18 minutes. Game footage with voice-over for Stops 1 to 5; File Explorer
 and two files shown in an editor for Stop 6; slides or stills for Stop 7. The companion
@@ -69,9 +83,10 @@ page is `lesson.md`. There is no `example\` folder: the lecture makes no file.
 | Stop 2 and 3 footage | A crew, or the presenter with `sbs run server,helm,weapons,science -m LegendaryMissions`. Boss chosen by hand in the Options panel, on camera: the menu is the point |
 | Getting the Warlord to arrive | She arrives when the raiders are at or under 25% of their peak count. Lower Difficulty and bring a Weapons officer. Budget time for this off camera: how long it takes has not been measured |
 | Stop 4 footage | The finished mission of Class 3, Lecture 6 (`c3-06-boarding-checkpoint\example\`), in a mission folder made the way that lesson says, with at least Engineering and one more console. Its predecessors were played in the real game (Lecture 2 with one console, Lectures 4 to 6 with two and three) |
-| Stop 5 footage | Two missions. The finished one of Class 4, Lecture 7 (`c4-07-quests-through-a-ruin\example\`) for the flight, the quest and the call. Lecture 6's (`c4-06-clues-side-stories-cutscenes\example\`) for the cutscene: Lecture 7's files do not carry it. Helm, Comms, Science and a main screen |
-| Stop 6 | File Explorer on a mission folder made by `sbs create ... -t amd` (seven files), with file name extensions shown. `c1-11-just-enough-mast\example\mission.amd` at line 61 and `story.mast` at line 108, in VS Code with the add-on, so the color is what the student will later see |
-| Saved games | Stops 4 and 5 do not use Open Universe or Storm's Beacon, on purpose: both write saved games. If you would rather show a shipped mission, Dawnline (`sbs fetch LandingParty --branch master`) and Storm's Beacon (`sbs fetch StormsBeacon`) are the candidates. Neither fetch was run for this page |
+| Stop 5 footage | **The Voice, from Storm's Beacon**: map `stormsbeacon_voice`, "Test: The Voice (relic)", in `story.mast`. Run it ONLY from a sandbox copy of Storm's Beacon, never its real folder: it rewrites the slot-1 saved game. `COSMOS_SETTINGS='{"GAME_RESULTS_SAVE": false}'`. `EXTRA_SHIP_DATA` must be on and the ruins pack present, or `Walls: torgoth, plates` falls back to plain plates: look at the walls in the still for the Torgoth kit (floor, trim, corner pillars). Helm and a main screen; one more console for the handheld with SUIT UP |
+| Stop 5 file | `relics\voice.amd` in VS Code, side bar hidden: the relic record (line 117 to 125, `Walls:` on 125) and the throat (lines 143 to 149, `Box:` on 146). The stills name the folder `StormsBeacon` of the stand-in, which needs a copy of that folder (or of `relics\voice.amd`) before capture |
+| Stop 6 | File Explorer on a mission folder made by `sbs create ... -t amd` (seven files), with file name extensions shown. `c1-11-just-enough-mast\example\mission.amd` at line 61 and `story.mast` at line 108, in VS Code with the add-on, so the color is what the student will later see. Game stills from the same example: the Quest Log with Close Inspection, before and after the ship is inside 500 of the hulk, and Helm's map with the Salvage Tug |
+| Saved games | Stop 4 does not use Open Universe. Stop 5 does use Storm's Beacon, which writes saved games: hence the sandbox copy above. Dawnline (`sbs fetch LandingParty --branch master`) is the other shipped candidate. No fetch was run for this page |
 
 ## Confirm on camera
 
@@ -139,32 +154,51 @@ looked at in the real game by an earlier pilot. "UNSEEN" means nobody has looked
 
 **Stop 5 - the ruin**
 
-20. The ruin on Helm's map and on the main view. (SEEN, one screenshot each, Class 4
-    Lecture 2.) The ship inside it, close up: UNSEEN.
-21. The cutscene: the main screen leaves the ship, two shots, a line of words under
-    each, then back. (SEEN, Class 4 Lecture 6.)
-22. A place calling the ship, and an answer revealing a hidden place. (Checked in the
-    real game by script, Class 4 Lectures 4 and 7. Not watched on a console.)
-23. The page says the opening is "wide enough for the ship". Check it with the hull the
-    footage uses, or cut the words.
+20. The Voice is a Torgoth station built of boxes: a docking throat, a concourse, a
+    freight hall, a sorting floor, a shaft and a transmitter bay, in a purple cloud.
+    (Read: `StormsBeacon\relics\voice.amd`, the `Box:` lines and `Atmosphere: purple`.)
+    What the arrival, the throat and a room look like on screen: UNSEEN until the stills
+    are taken. The words "flat walls and real corners" are the file's own; keep them only
+    if the inside still shows them.
+21. `Walls: torgoth, plates` lays floor, ceiling, walls, trim and a pillar in every
+    corner from the ruins pack's Torgoth kit, and nothing where two rooms meet. Without
+    the pack, or with `EXTRA_SHIP_DATA` off, the walls are plain plates. (Read:
+    `voice.amd` and the library's "Relic interiors" page.)
+22. Near the way in, the Boarding Party app on the handheld offers **SUIT UP**: within
+    3000 of the point with `Roles: entrance` (`the mouth`). (Read: "Relic interiors",
+    "Going inside".) In this map: UNSEEN.
+23. Storm's Beacon has no release. The script never says "play this now". (The owner,
+    2026-10-14.)
+24. An earlier version of this list took Class 4 Lecture 2's ruin as walled. It is not:
+    The Hollow there has no `Walls:` line, so its walls are rock. Class 4 builds rooms,
+    walls, places that speak and suits; its walls are rock and blocks, not a Torgoth kit.
+    (Read: the Class 4 examples.)
 
 **Stop 6 - the folder**
 
-24. A mission from the `amd` template is seven files. (Measured: the Lecture 3 example
+25. A mission from the `amd` template is seven files. (Measured: the Lecture 3 example
     folder.) How File Explorer shows them: UNSEEN.
-25. Every line in a code block on the page is a line of a real file. (Measured:
+26. Every line in a code block on the page is a line of a real file. (Measured:
     `c101\verify_page.py`, 53 lines and 16 phrases, exit 0.)
+27. The Quest Log lists Close Inspection under Salvage Run; selected, its pane shows the
+    state (`Active`, then `Done`), `Reward` 100 credits, the objective line and the body.
+    (Read: the library's Quest Log renderer, `quest_log_pane_text`.) On screen: UNSEEN.
+28. Twenty seconds after Wait for the Tug starts, a contact named Salvage Tug is on
+    Helm's map. (Read: the card in `story.mast`.) Whether Helm's map writes its name:
+    UNSEEN.
 
 ## Scenes
 
 ### 1. Cold open
 
-**Screen:** Four quick cuts, about ten seconds each: a quest finishing in the quest
-list; a flagship arriving; a console turning into a handheld; a ship flying into a ruin.
+**Screen:** Four quick cuts, about ten seconds each: a quest in the Quest Log; the Boss
+line on the server's Options panel; a console turned into a handheld; the main screen
+arriving at The Voice.
 
-**Say:** "Here's a quest, and here's a boss. | Here's a boarding party, and a ruin. || A
-writer typed every one of these, in plain words, in a text file. || And by the end of this
-course, that writer is you. ||| Today, you type nothing. || You play, and you watch, | and I
+**Say:** "Here's a quest, in the crew's Quest Log, | and here's a boss, chosen on the
+server before the game starts. || Here's a boarding party, on a crew member's handheld, |
+and here's an ancient ruin, on the main screen. || A writer typed every one of these, in plain words, in a text file. || And by the end of this
+course, that writer is you. ||| Today, you don't type anything at all. || You play, and you watch, | and I
 show you what you're going to build. ||"
 
 ### 2. What the game is
@@ -185,24 +219,25 @@ A console taken.
 
 **Say:** "Start the game with me. || The first screen has the game's name, | and three
 buttons at the bottom left: start server, start client, and options. || One computer runs
-the game for everybody, so press start server. ||| Now you choose twice. || First, you
+the game for everybody, so press start server. ||| Now you make two choices here. || First, you
 choose a mission, and that's Legendary Missions. | Press initialize mission, and wait a few
-seconds. || Then you choose a map inside it, and that's Siege. ||| Remember those two lists,
-| because in two lectures' time, there's a line in the first one that you made. ||| Now
-press start mission. || The server only runs the game, | so to fly, you start the game a
+seconds. || Then you choose a map inside it, and that's Siege. ||| Remember both of those lists,
+| because in two lectures' time, there's a line in the first one that you made. ||| Now press the start mission button. || The server only runs the game, | so to fly, you start the game a
 second time, and press start client. || Connect to your own server, pick Helm, and press
 ready. ||"
 
 ### 4. Stop 2: the quest
 
-**Screen:** Siege under way. The handheld icon, Quests. "Repel the Siege" with its three
-parts. Then `siege_quests.amd` open at "Break the Siege".
+**Screen:** Siege under way. The handheld icon, Quests. The Quest Log: "Repel the Siege"
+with its three parts under **Game**. "Break the Siege" selected, its pane. Then
+`siege_quests.amd` open at "Break the Siege".
 
-**Say:** "Here's what the game has asked us to do. || It's one job, in three parts: | break
-the siege, don't lose every starbase, and mind the clock. ||| Now look at this, because this
-is the file. || The square brackets hold the name on the screen, | and the last line is what
-the crew is told. || Required, true, means you can't win without it. ||| Nobody programmed
-this quest. Somebody typed it. || And Class One ends with you having typed a chain of these.
+**Say:** "This is the Quest Log, on the crew's handheld, | and under Game is what the game
+has asked us to do. || It's one job, in three parts: | break the siege, don't lose every
+starbase, and mind the clock. ||| Now look at this, because this is the file. || The square brackets hold
+the name on that Quest Log line, | and the last line is the words the crew reads, | when they
+select that line. || Required, true, means you can't win without it. ||| Nobody programmed this
+quest. Somebody typed it. || And Class One ends with you having typed a chain of these.
 ||"
 
 ### 5. Stop 3: the boss
@@ -211,10 +246,10 @@ this quest. Somebody typed it. || And Class One ends with you having typed a cha
 chosen. Cut to late in the battle: the flagship arrives; "Defeat the Warlord" joins the
 quest list. Then `warlord.amd`.
 
-**Say:** "Now the same map, with one change. || On the start screen, the options panel has a
-line called Boss, | and I choose the Warlord. ||| A boss doesn't come at the start. || She
-waits until we've destroyed three raiders in every four. || Then she arrives, and a new job
-joins the list. ||| Now here's her file. || Twenty-five percent means a quarter are left. |
+**Say:** "Now the same map, with one change. || On the server's start screen, the options
+panel has a line called Boss, | and I choose the Warlord. ||| A boss doesn't come at the
+start. || She waits until we've destroyed three raiders in every four. || Then she arrives,
+and a new job joins the Quest Log. ||| Now here's her file, the one that makes her. || Twenty-five percent means a quarter are left. |
 Then two fleets, and her name and her hull. || In Class Two, you copy this file, change the
 words, | and your own boss is in that list. ||"
 
@@ -228,38 +263,50 @@ one room.
 ||| Some of the crew leave the ship, | and each console becomes a handheld. || There's a
 line of story, and the ways out, as buttons. ||| Now think of two of them together. ||
 They're in the same room, with different choices: | the surgeon is offered what the engineer
-isn't. || It's a story told in rooms, and every reader has their own copy. | And that's
-Class Three. ||"
+isn't. || It's a story told in rooms, and every reader has their own copy. | And that's what Class Three teaches. ||"
 
 ### 7. Stop 5: the ruin
 
-**Screen:** The Class 4 mission. Helm's map with the ruin named. The flight in. A step
-finishing, a new place on the map. The call. The cutscene.
+**Screen:** The Voice, from Storm's Beacon (map "Test: The Voice (relic)", from a
+sandbox copy). The main screen as the ship arrives: the station ahead. Helm flying up to
+the docking throat. Inside one of the boxes: the Torgoth walls. The handheld's Boarding
+Party app offering SUIT UP. Then `relics\voice.amd`: the throat's `Box:` line, the
+relic's `Walls:` line.
 
-**Say:** "And then there's this. || It's a built place, and it's old, with rooms. || The
-writer didn't draw it. || The writer wrote, a room, this big, here, | and the game put up
-the walls. ||| A quest leads the ship through it, | and a place speaks. || And for ten
-seconds, the story takes the main screen. || And that's Class Four. ||"
+**Say:** "And then there's this, a ruin called The Voice, | from Storm's Beacon, a mission
+that's still being made. || This is the main screen as we arrive, | and that's the station
+ahead, dark for a thousand years. ||| Helm takes us in through a docking throat, | and
+inside, it's rooms with flat walls and real corners. || Close to the way in, the handheld
+offers suit up, | so some of the crew can fly the halls in suits. ||| In the file, every
+room is one record, | and its box line says where it is, and how big. || This line picks
+what the walls are made of, | and the game lays them for you. ||| Storm's Beacon isn't out
+yet, so you can't play this one. || But in Class Four, you build a ruin like it. ||"
 
 ### 8. Stop 6: a mission is three things
 
-**Screen:** File Explorer on a mission folder: seven files. `mission.amd` highlighted,
-then opened at "Close Inspection". `story.mast` highlighted, then opened at the card.
+**Screen:** File Explorer on a mission folder: seven files. Then Class 1's finished
+mission in the game: the Quest Log with Close Inspection selected, `Active`; the same line
+`Done` once the ship is inside 500 of the hulk. `mission.amd` opened at "Close
+Inspection". Helm's map with the Salvage Tug. `story.mast` opened at the card.
 
 **Say:** "So what is a mission? || It's a folder, with seven files, | and five of them are
 made for you. || The two that matter are the fact sheet, and the story file. ||| The fact
-sheet is every word the crew reads. || Here's one quest: its name, | its facts between the
-two rows of hyphens, | and what the crew is told. || Done when, reach derelict five hundred.
-| It means just what it says. ||| The story file is short, and it comes ready-made. || Now
-and then, you paste a few lines into it from a card, like this one. || It says: when the
-step starts, wait twenty seconds, | bring in a tug, and tell the quests. ||| You'll be able
-to read this by Lecture Eleven. || And you'll never write one from a blank page. ||"
+sheet is every word the crew reads. || Here's one quest from Class One's mission, in the
+Quest Log: | Close Inspection, and what the crew is told about it. || When we fly within
+five hundred of the hulk, | the Quest Log marks it done. ||| And here it is in the fact
+sheet: | its name, its facts between the two rows of hyphens, | and what the crew is told.
+|| Done when, reach derelict five hundred. | It means just what it says. ||| The story file
+is short, and it comes ready-made. || On Helm, twenty seconds after the crew is told to
+wait for a tug, | the game says the tug has arrived. || It comes from a card, pasted into the story file, like
+this one. || It says: when the step starts, wait twenty seconds, | bring
+in a tug, and tell the quests. ||| You'll be able to read this by Lecture Eleven. || And
+you'll never write one from a blank page. ||"
 
 ### 9. Stop 7: the six classes
 
 **Screen:** The table of six classes, then one still per class.
 
-**Say:** "There are six classes. || One is your desk, and a story told in quests. | Two is
+**Say:** "There are six classes in all. || One is your desk, and a story told in quests. | Two is
 people who talk, and a boss of your own. || Then come three that you can take in any order:
 | three is boarding parties, four is ruins, | and five is a universe of your own. || And six
 is twenty evenings of play in that universe. ||| Some of the later lectures are still being
@@ -270,5 +317,5 @@ made, and the page says which. ||"
 **Screen:** The exercise table from the page.
 
 **Say:** "So play ten minutes of Siege. || Write down three things that happened, | and who,
-or what, caused each one. || And keep the page, | because next time, we find where all of
+or what, caused each one. || And keep the page you write, | because next time, we find where all of
 this lives on your computer. ||"

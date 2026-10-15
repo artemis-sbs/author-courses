@@ -35,11 +35,13 @@ s04_make_the_mission_4	We want this one, A M D.
 s04_make_the_mission_5	Now the line that makes a mission.
 s04_make_the_mission_6	It's create, then the folder's name, with no spaces.
 s04_make_the_mission_7	Then hyphen T, and the template.
-s04_make_the_mission_8	Then two hyphens, title,
-s04_make_the_mission_9	and in quote marks, the name the crew will see.
-s04_make_the_mission_10	It stops to ask one question,
-s04_make_the_mission_11	and Enter means yes.
-s04_make_the_mission_12	And there's the folder, right beside the game's own missions.
+s04_make_the_mission_8	Then two hyphens and the word title,
+s04_make_the_mission_9	and in quote marks, the mission's title.
+s04_make_the_mission_10	That's the line the server will show in its list of missions,
+s04_make_the_mission_11	the same list you chose Legendary Missions from.
+s04_make_the_mission_12	It stops to ask one question,
+s04_make_the_mission_13	and pressing Enter means yes.
+s04_make_the_mission_14	And there's the folder, right beside the game's own missions.
 s05_bring_the_libraries_up_to_da_0	There's one more line, and you type it once.
 s05_bring_the_libraries_up_to_da_1	Missions share program parts called libraries.
 s05_bring_the_libraries_up_to_da_2	They came with the game,
@@ -57,7 +59,7 @@ s06_open_the_folder_and_trust_it_4	VS Code now asks whether I trust this folder.
 s06_open_the_folder_and_trust_it_5	I wrote it, so yes.
 s06_open_the_folder_and_trust_it_6	That matters more than it looks,
 s06_open_the_folder_and_trust_it_7	because until you say yes, the add-on only colors the file,
-s06_open_the_folder_and_trust_it_8	and its checking waits.
+s06_open_the_folder_and_trust_it_8	and its checking has to wait.
 s06_open_the_folder_and_trust_it_9	There are seven files here.
 s06_open_the_folder_and_trust_it_10	This one is yours: mission.amd.
 s06_open_the_folder_and_trust_it_11	This one, you'll change a few lines of, later on.
@@ -66,33 +68,41 @@ s07_the_add_on_at_work_0	There are three signs that the add-on is alive.
 s07_the_add_on_at_work_1	There's color, and there are the letters A M D down here,
 s07_the_add_on_at_work_2	and there's the outline: eight headings, one inside another.
 s07_the_add_on_at_work_3	Now I'll break something on purpose.
-s07_the_add_on_at_work_4	On line forty-seven, I take off the part in round brackets,
-s07_the_add_on_at_work_5	and a red wavy line appears.
-s07_the_add_on_at_work_6	It's telling me the heading has lost its key.
-s07_the_add_on_at_work_7	Control Z, and it's mended.
-s07_the_add_on_at_work_8	And nobody typed a command.
-s07_the_add_on_at_work_9	There are two keys to keep:
-s07_the_add_on_at_work_10	control Z takes back, and control S saves.
-s07_the_add_on_at_work_11	A dot on the tab means not saved,
-s07_the_add_on_at_work_12	and the game reads the saved file, not my screen.
+s07_the_add_on_at_work_4	Line forty-seven is the heading of a scan record:
+s07_the_add_on_at_work_5	the words Science shows when the crew scans the hulk.
+s07_the_add_on_at_work_6	Here they are in the game, on the Science console,
+s07_the_add_on_at_work_7	on the hulk's scan tab.
+s07_the_add_on_at_work_8	Back in the file, I take off the part in round brackets,
+s07_the_add_on_at_work_9	and a red wavy line appears.
+s07_the_add_on_at_work_10	It's telling me the heading has lost its key.
+s07_the_add_on_at_work_11	Control Z, and it's mended.
+s07_the_add_on_at_work_12	And nobody typed a command.
+s07_the_add_on_at_work_13	There are two keys to keep:
+s07_the_add_on_at_work_14	control Z takes back, and control S saves.
+s07_the_add_on_at_work_15	A dot on the tab means not saved,
+s07_the_add_on_at_work_16	and the game reads the saved file, not my screen.
 s08_check_it_0	Here's the same check, on the whole mission, from the command prompt.
 s08_check_it_1	There's one word to look for, and it's clean.
 s08_check_it_2	This command has a lecture all to itself.
 s09_play_it_0	Now for the game itself.
 s09_play_it_1	A run line starts several copies at once:
 s09_play_it_2	a server, which runs the mission, and the consoles I ask for.
-s09_play_it_3	I always look first.
+s09_play_it_3	I always look first, before I run anything.
 s09_play_it_4	Dry run prints what it would start, and starts nothing.
 s09_play_it_5	So it's server, helm, science, with commas and no spaces.
 s09_play_it_6	Then hyphen M and my mission,
 s09_play_it_7	and map equals nought, which means start the first map without asking me.
 s09_play_it_8	Good. Now I run it for real.
 s09_play_it_9	Three windows open, and each one says what it is.
-s09_play_it_10	Here I am at Helm.
+s09_play_it_10	Here I am at Helm, in the window called helm.
 s09_play_it_11	There's the station, and there, nine thousand beyond it, is an unknown hulk.
-s09_play_it_12	I fly to it, and that's the sample quest's first step.
-s09_play_it_13	When I'm done, I close all three.
-s09_play_it_14	Every one of them, before I start again.
+s09_play_it_12	I fly to it, and that's the first step of the sample quest.
+s09_play_it_13	Here it is in the Quest Log, on the handheld:
+s09_play_it_14	Find the Derelict is done, and Study the Derelict has appeared.
+s09_play_it_15	And this is the Science window,
+s09_play_it_16	with the hulk in its list of contacts.
+s09_play_it_17	When I'm done, I close all three.
+s09_play_it_18	Every one of them, before I start again.
 s10_the_rehearsal_0	There's a second way, with no game windows at all.
 s10_the_rehearsal_1	The tool plays the mission itself, and shows it in my browser.
 s10_the_rehearsal_2	It prints about twenty lines, and three of them read like trouble.
@@ -115,7 +125,7 @@ s11_four_slips_7	And the fourth you've already met:
 s11_four_slips_8	an untrusted folder, and a file that's colored but not checked.
 s11_four_slips_9	The page has tables of more than thirty, and each one was tried.
 s12_your_turn_0	Now make a second mission, called Practice, without the page.
-s12_your_turn_1	Open it, trust it,
+s12_your_turn_1	Open it in VS Code, trust it,
 s12_your_turn_2	break line forty-seven and mend it,
 s12_your_turn_3	and then fly it with one console.
 s12_your_turn_4	After that, open My Mission again, and leave it open.

@@ -56,7 +56,17 @@ Fails when: 10 minutes
 Win: The keeper is home, and Lantern Nine will burn again.
 Lose: The storm closed over the Deep with the keeper still out there.
 ---
+![](ship://starbase_command) Orders from Marrow Station, the station you started at.
+
 A storm front is ten minutes out. One woman keeps Lantern Nine, and she is not answering. Find her and bring her in.
+
+| What | What Marrow Station knows |
+|---|---|
+| The storm | Ten minutes out, and closing |
+| The keeper | Alone on Lantern Nine. Twenty years at her post |
+| The lamp | Dark since last night |
+
+If the storm closes over the Deep with her out in it, nobody will find her until it lifts.
 
 #### [Come Alongside](approach)
 ---
@@ -70,6 +80,12 @@ Part of: salvage
 Required: true
 ---
 The lantern is not answering hails. Bring the ship in close and take a look.
+
+Marrow Station has called her on every channel since the lamp went out. Nothing has come back, not even the beacon's own tone.
+
+## Why it matters
+
+Every pilot in the Deep steers by Lantern Nine. With her dark and a storm coming, the lane is blind. And her keeper is out there somewhere, alone.
 
 #### [Find the Skiff](boat)
 ---

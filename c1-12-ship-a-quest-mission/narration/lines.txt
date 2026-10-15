@@ -16,18 +16,26 @@ s02_the_plan_on_paper_6	So write your story into the slots first.
 s02_the_plan_on_paper_7	Here's mine: a navigation beacon has gone dark,
 s02_the_plan_on_paper_8	its keeper is missing, and a storm is ten minutes out.
 s03_the_words_0	There's one rule: change names and sentences, and leave every key.
-s03_the_words_1	The square brackets are mine,
-s03_the_words_2	and the round brackets are the game's.
-s03_the_words_3	So my beacon is still called derelict underneath,
-s03_the_words_4	and no player will ever see that word.
-s03_the_words_5	I change the win line, and the lose line.
-s03_the_words_6	Then an objective, where the number in it
-s03_the_words_7	must still agree with the line under it.
-s03_the_words_8	And then a reading.
-s03_the_words_9	That comes to fifty-eight changes, and not one key.
-s03_the_words_10	Then the script, which has five places, all between quote marks.
-s03_the_words_11	It's the first pair of quotes on each line.
-s03_the_words_12	The second pair is the side and the roles, so leave it.
+s03_the_words_1	Every name and sentence I change is one the crew reads somewhere, so here's where.
+s03_the_words_2	The Quest Log shows the arc's name, and every step's,
+s03_the_words_3	and those are the square brackets, which are mine.
+s03_the_words_4	The round brackets are the game's.
+s03_the_words_5	So my beacon is still called derelict underneath,
+s03_the_words_6	and no player will ever see that word.
+s03_the_words_7	The end screen, Game results, shows a win sentence or a lose sentence,
+s03_the_words_8	and those are these two lines.
+s03_the_words_9	The order on the right of the Quest Log is an objective,
+s03_the_words_10	and the number in it must still agree with the line under it.
+s03_the_words_11	And Science shows a reading on the beacon's Scan tab,
+s03_the_words_12	so I change that sentence too.
+s03_the_words_13	The two briefings change the same way:
+s03_the_words_14	each paragraph and each row of the table gets my words,
+s03_the_words_15	and every mark stays where it is.
+s03_the_words_16	That comes to sixty-six changes, and not one key.
+s03_the_words_17	Then the script, which has five places, all between quote marks.
+s03_the_words_18	The names Helm's map draws beside each ship
+s03_the_words_19	are the first pair of quotes on each line.
+s03_the_words_20	The second pair is the side and the roles, so leave it.
 s04_lint_0	Lint says clean, because words can't break the chain,
 s04_lint_1	and that's why we change them first.
 s05_two_small_files_0	Now, two files you haven't opened.
@@ -74,11 +82,13 @@ s08_check_it_three_checks_4	Look for the block with my folder's name,
 s08_check_it_three_checks_5	and then the last two words: zero problems.
 s08_check_it_three_checks_6	Doctor never reads my writing.
 s08_check_it_three_checks_7	And then comes the play.
-s08_check_it_three_checks_8	There's my ship, my station, and my beacon.
-s08_check_it_three_checks_9	Then the skiff, the wait, and the tender.
-s08_check_it_three_checks_10	Then home, and my win line.
-s08_check_it_three_checks_11	Both logs are empty.
-s08_check_it_three_checks_12	And then I read every sentence once more, as a reader.
+s08_check_it_three_checks_8	There's my ship, my station, and my beacon, on Helm's map.
+s08_check_it_three_checks_9	On Science, I pick Lantern Nine from the list,
+s08_check_it_three_checks_10	and its Scan tab shows one of my new lines in the read-out.
+s08_check_it_three_checks_11	Then the skiff, the wait, and the tender.
+s08_check_it_three_checks_12	Then home, and my win line on Game results.
+s08_check_it_three_checks_13	Both logs are empty, which is what I want.
+s08_check_it_three_checks_14	And then I read every sentence once more, as a reader.
 s09_print_it_0	My mission is also a text,
 s09_print_it_1	and it takes one command.
 s09_print_it_2	It has a title, it says player, which means leave out the machinery,

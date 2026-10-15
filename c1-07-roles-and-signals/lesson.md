@@ -4,7 +4,8 @@
 
 Two words of your own, each written in two files, and a list that keeps track of them.
 
-- The hulk wears a role you named, `ghost_ship`. Your Intel reading hangs on that word.
+- The hulk wears a role you named, `ghost_ship`. Your sentence on Science's **Intel** tab
+  hangs on that word.
 - The story says a signal you named, `ghost_ship_found`. Your first step waits for it.
 - The top of your fact sheet holds a short list: every role and every signal in your
   story, and where each one comes from.
@@ -42,8 +43,8 @@ Five words for this lecture:
 | Note | A line the game skips. In `mission.amd` a note starts with `//`. In `story.mast` it starts with `#` |
 | Working line | A line of `story.mast` that is not a note. The game does what it says |
 
-The crew never sees a role or a signal. They see what those words connect: a reading on
-Science, a step that shows `Done`.
+The crew never sees a role or a signal. They see what those words connect: your sentence
+on a Science tab, and a step that shows `Done` in the Quest Log.
 
 ## Step 1 - Two files, three promises
 
@@ -68,7 +69,8 @@ Each one is a promise about `story.mast`.
 - `Done when: signal derelict_found` promises that the story will say `derelict_found`.
 
 In this mission nothing in `mission.amd` can keep those promises. `story.mast` keeps them.
-If it does not, the reading is never shown and the step never finishes.
+If it does not, the crew never sees your sentence: the hulk has no **Intel** tab on
+Science. And Find the Derelict never shows `Done` in the Quest Log.
 
 Now open `story.mast`: click it in the file list. Three rules for this file, today and
 until Lecture 11:
@@ -114,7 +116,7 @@ Read only the four pieces in quotes.
 
 | In quotes | What it is |
 |---|---|
-| `"Unknown Hulk"` | The name the crew sees |
+| `"Unknown Hulk"` | The name the crew sees: beside the hulk on Helm's map, and at the top of Science's read-out once the hulk is scanned |
 | `"tsn, derelict"` | A list: its side, then the roles it wears |
 | `"tsn_warpster"` | Which ship model is drawn |
 | `"behav_npcship"` | How it behaves |
@@ -210,12 +212,12 @@ Lint has read both files. Your fact sheet made a promise, and nothing keeps it.
 | In the message | In plain words |
 |---|---|
 | `nothing in this mission wears a role called ghost_ship` | No list in `story.mast` has that word |
-| `this scan text matches nothing` | The reading will never be shown |
+| `this scan text matches nothing` | Your sentence will never be shown on Science |
 | ``the `Roles:` line`` | Another way to give a role. You meet it in Lecture 10 |
 | ``the roles in `story.mast` `` | The list on line 68 |
 
-If you played it now, the hulk would have two tabs on Science, `scan` and `mat`. Your
-Intel reading would be gone.
+If you played it now and selected the hulk on Science, it would have two tab buttons,
+**Scan** and **Mat**. The **Intel** tab, with your sentence on it, would not be there.
 
 Now keep the promise. In `story.mast`, line 68, click just before the quote mark that
 closes the list. Type a comma, a space, and the word:
@@ -275,6 +277,9 @@ Save. Run lint:
 | `nothing in the mission sends it` | No working line in `story.mast` says that word |
 | `that wait never ends` | Find the Derelict never shows `Done`, and the step after it never appears |
 | `the story` | `story.mast` |
+
+You would see this in the Quest Log: Find the Derelict sits there, `Active`, however close
+the ship gets.
 
 Now make the story say it. Search for the OLD word, `derelict_found`. It has three
 results left, all in `story.mast`. Do the working line first.
@@ -385,7 +390,7 @@ two steps, Find the Derelict and Study the Derelict.
 
 | Mistake | What the game does | Lint says |
 |---|---|---|
-| `Scan of: ghost_ship` before the hulk wears it | The hulk has no `intel` tab | `role-nothing-wears` |
+| `Scan of: ghost_ship` before the hulk wears it | On Science, the hulk has no **Intel** tab | `role-nothing-wears` |
 | `Scan of: derelect` | The same | `role-nothing-wears` |
 | `Scan of: derelicts`, or `ghost_ships` | The same | `role-nothing-wears` |
 | `Scan of: ghostship` when the hulk wears `ghost_ship` | The same | `role-nothing-wears` |
@@ -397,7 +402,7 @@ two steps, Find the Derelict and Study the Derelict.
 
 | Mistake | What the game does | Lint says |
 |---|---|---|
-| `"tsn, derelict, ghost_shp"`, or `ghost_ships` | The hulk has no `intel` tab | `role-nothing-wears`, on your `Scan of:` line |
+| `"tsn, derelict, ghost_shp"`, or `ghost_ships` | On Science, the hulk has no **Intel** tab | `role-nothing-wears`, on your `Scan of:` line |
 | `"tsn, derelict, ghost ship"` (a space where the fact sheet has `_`) | The same | `role-nothing-wears` |
 | The closing quote mark deleted | Nothing in the mission runs. The game shows an error page | `mast-compile`, an error, on line 68 of `story.mast` |
 | Curly quote marks, pasted from a word processor | The same | `mast-compile`, an error. It says `invalid character`. And `role-nothing-wears` |
@@ -440,13 +445,13 @@ the one row that says otherwise.
 |---|---|
 | Typed your role FIRST: `"ghost_ship, tsn, derelict"` | The hulk leaves the crew's side. Its side is now `ghost_ship`, which is no side at all. On Science it is drawn grey, not in a friendly ship's color. `mast.runtime.log` gets one line: `Side not found: [ghost_ship]` |
 | Left out the comma: `"tsn, derelict ghost_ship"`. Or typed `;` or `and` for it | The hulk wears one role called `derelict ghost_ship`. It has lost `derelict`: no text on any tab, and Study never finishes |
-| Typed your role OVER the old one: `"tsn, ghost_ship"` | The hulk loses its `scan` and `mat` readings, and Study never finishes |
+| Typed your role OVER the old one: `"tsn, ghost_ship"` | On Science, the hulk loses its **Mat** tab and the text under **Scan**, and Study never finishes |
 | Misspelled the old role in the list: `"tsn, derelect, ghost_ship"` | The same. Lint found `derelict` in quotes on line 103 and looked no further |
 | Renamed `derelict` itself in the fact sheet and on line 68, and not on line 103 | The readings are shown, and Study never finishes. Line 103 still asks for `derelict` |
-| Typed your role into the name: `"Unknown Hulk, ghost_ship"` | The crew sees a hulk called `Unknown Hulk, ghost_ship`. It has no `intel` tab |
-| Typed your role on the line above, the station's | The hulk has no `intel` tab. Your reading is shown nowhere |
-| Gave the station the hulk's role as well: `"tsn, station, derelict"` | DS 1 gets a `mat` tab with the hulk's reading, and Study finishes when Science scans the STATION. Two things wear the word, so both count |
-| `Scan of: hulk` (a word from the name) | The hulk has no `intel` tab. A name is not a role |
+| Typed your role into the name: `"Unknown Hulk, ghost_ship"` | The crew sees a hulk called `Unknown Hulk, ghost_ship`. On Science it has no **Intel** tab |
+| Typed your role on the line above, the station's | On Science, the hulk has no **Intel** tab. Your reading is shown nowhere |
+| Gave the station the hulk's role as well: `"tsn, station, derelict"` | On Science, DS 1 gets a **Mat** tab with the hulk's reading, and Study finishes when Science scans the STATION. Two things wear the word, so both count |
+| `Scan of: hulk` (a word from the name) | On Science, the hulk has no **Intel** tab. A name is not a role |
 | `Scan of: wreck` | The same. `wreck` is on lint's own list of roles the game gives out by itself, so lint lets it pass. Nothing in this mission wears it |
 | `Scan of: "ghost_ship"`, or `Scan of: ghost_ship.` | The same. The quote marks, or the full stop, became part of the word |
 
@@ -496,9 +501,13 @@ did in Lecture 3.
    `ghost_ship_found`, and your step was waiting for that word.
 4. **Study the Derelict** appears. The ship's sensors scan a contact that is close, with
    nobody pressing a button, so it shows `Done` a few seconds later.
-5. On Science, select the hulk in the list on the right. It has three tabs: `scan`, `mat`
-   and `intel`. Open `intel`. That is your role: the reading hangs on `ghost_ship`, and
-   the hulk wears it.
+5. On Science, click the hulk on the map. (While nothing is selected, Science also lists
+   its contacts on the right, and you can click the hulk's line there instead.) Its tab
+   buttons are in the lower left, under its name: **Scan** at the top, then **Intel** and
+   **Mat**. Press **Intel**. Your sentence is in the read-out on the right. That is your
+   role: the reading hangs on `ghost_ship`, and the hulk wears it. If a button reads
+   **Queue Intel** instead, the sensors have not read that tab yet: press it, and the scan
+   runs.
 6. Close the game. Open `mast.compile.log` and `mast.runtime.log`. Both are empty.
 
 Now see one disagreement in the game, so you know it when you meet it.
@@ -506,8 +515,9 @@ Now see one disagreement in the game, so you know it when you meet it.
 1. In `story.mast`, line 68, change `derelict` to `derelect`. Leave the rest of the list
    alone. Save.
 2. Run lint. It says `clean`. This is the fourth row of "What lint cannot see".
-3. Play. Fly to the hulk. Study the Derelict appears, and never shows `Done`. On Science
-   the hulk has lost its `scan` and `mat` readings.
+3. Play. Fly to the hulk. In the Quest Log, Study the Derelict appears, and never shows
+   `Done`. On Science, select the hulk: its **Mat** button is gone, and its **Scan** tab
+   has none of the hulk's text.
 4. Close the game. Both logs are empty. Nothing told you.
 5. Search for `derelict`, with both buttons on. With your word list in the file you want
    nine results, and there are eight. The count told you.
@@ -526,7 +536,7 @@ Now see one disagreement in the game, so you know it when you meet it.
 | `mast.runtime.log` says a `quest_signal` was sent with no name | On line 93, `SIGNAL_NAME` is misspelled or was changed. Put it back as the template had it |
 | Lint says `signal-no-name` | A `Done when: signal` line has no word after it. Write the signal's name there |
 | Lint is clean and Study the Derelict never shows `Done` | The hulk no longer wears `derelict`. Look at its list on line 68: a comma between every two words, and `derelict` still there |
-| Lint is clean and the hulk has no `intel` tab | Your role is not in the hulk's list: it is in the name, in the wrong line, or joined to the word before it |
+| Lint is clean and the hulk has no **Intel** button on Science | Your role is not in the hulk's list: it is in the name, in the wrong line, or joined to the word before it |
 | `mast.runtime.log` says `Side not found: [ghost_ship]` | Your role is the first word of the list. The first word is the side. Move yours to the end |
 | The search finds nothing at all | Match Whole Word is on and you typed part of a word, or the folder open in VS Code is not your mission's |
 
@@ -544,8 +554,9 @@ Do it again with words of your own.
    is on one line of `story.mast` and two of `mission.amd`: the step, and your word list.
    Search for the old word afterwards: no results.
 4. Add one line to your word list for the new role.
-5. Run lint, then play. On Science, DS 1 has a `mat` tab with your reading, and Study the
-   Derelict still shows `Done`.
+5. Run lint, then play. On Science, click DS 1 on the map and press its **Mat** button:
+   your sentence is in the read-out on the right. In the Quest Log, Study the Derelict
+   still shows `Done`.
 
 ## Checkpoint
 
@@ -554,8 +565,8 @@ You are done when all five are true:
 - `sbs lint MyMission` answers `clean`, with `0 error(s), 0 warning(s)`.
 - A search for `derelict_found` finds nothing. A search for your signal finds it once in
   `mission.amd` (twice, with your word list) and three times in `story.mast`.
-- In the game, Find the Derelict and Study the Derelict both show `Done`, and the hulk
-  has `scan`, `mat` and `intel` tabs.
+- In the game, Find the Derelict and Study the Derelict both show `Done` in the Quest
+  Log, and on Science the hulk has **Scan**, **Intel** and **Mat** tab buttons.
 - After the play, `mast.compile.log` and `mast.runtime.log` are both empty.
 - You can point at a word in `mission.amd` and say whether it is a role, a signal or a
   key, and which line of `story.mast` keeps its promise.

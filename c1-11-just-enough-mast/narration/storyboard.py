@@ -8,6 +8,10 @@ at its real line numbers: Lecture 10's finished file (105 lines) until scene 9, 
 card as it is pasted, line by line, down to this lecture's example\\ (115 lines), which the
 state "final" must equal byte for byte, both files. Every Command Prompt still is the real
 `sbs lint` (0.13) on a copy with exactly that one mistake.
+
+2026-10-14 (later): Lecture 10's file now carries the briefings (Close Inspection's three
+paragraphs, the arc's DS 1 picture and table), so the mission.amd lines moved by 16; the
+two VS Code stills that show them are new (_p2), and lint's unfired-signal line is 106.
 """
 LECTURE = "c1-11-just-enough-mast"
 TITLE = ("Class 1, Lecture 11", "Just enough MAST", "Read the script once, then paste three cards")
@@ -95,17 +99,17 @@ STILLS = {
     # the fact sheet, for the lines the script points at
     "e_top": ("vscode", "start", 10, "big", _NS),           # lines 1 to 20
     "e_find": ("vscode", "start", 35, "big", _NS),          # lines 25 to 45: Find the Derelict
-    "e_land": ("vscode", "start", 161, "big", _NS),         # the Landmarks section line
+    "e_land": ("vscode", "start", 177, "big", _NS),         # the Landmarks section line
     # Step 2: lines 15 to 35 of the script
     "m_25": ("vscode", "start", 25, "big", _M),
     "m_name": ("vscode", "name", 25, "big", _M),
     "m_title": ("vscode", "title", 25, "big", _M),
     "m_q25": ("vscode", "q25", 25, "big", _M),
     # Step 4: the fact sheet
-    "e_w0": ("vscode", "title", 72, "mid", _NS),            # lines 58 to 86: hulk, lifeboat, home
-    "e_then": ("vscode", "then", 79, "big", _NS),           # lines 69 to 89
-    "e_wait": ("vscode", "wait", 85, "big", _NS),           # lines 75 to 95
-    "e_boat": ("vscode", "wait", 176, "big", _NS),          # The Lifeboat record
+    "e_w0_p2": ("vscode", "title", 85, "wide", _NS),           # lines 67 to 103: hulk, lifeboat, home
+    "e_then_p2": ("vscode", "then", 95, "big", _NS),           # lines 85 to 105
+    "e_wait": ("vscode", "wait", 101, "big", _NS),           # lines 75 to 95
+    "e_boat": ("vscode", "wait", 192, "big", _NS),          # The Lifeboat record
     # Steps 5 to 7: the card, at the end of the script. Every still looks at lines 95 to 115
     "m_end0": ("vscode", "wait", 105, "big", _M),
     "m_c_note": ("vscode", "c_note", 105, "big", _M),
@@ -124,8 +128,8 @@ STILLS = {
     "t_title": ("terminal", [("title", _LINT)]),
     "t_q25": ("terminal", [("q25", _LINT)]),
     "t_q25_fix": ("terminal", [("q25", _LINT), ("title", _LINT)]),
-    "t_wait": ("terminal", [("wait", _LINT)]),
-    "t_card2": ("terminal", [("card1", _LINT), ("card2", _LINT)]),
+    "t_wait_p2": ("terminal", [("wait", _LINT)]),
+    "t_card2_p2": ("terminal", [("card1", _LINT), ("card2", _LINT)]),
     "t_final": ("terminal", [("final", _LINT)]),
     "t_indent": ("terminal", [("m_indent", _LINT)]),
     "t_low": ("terminal", [("m_low", _LINT)]),
@@ -137,6 +141,9 @@ STILLS = {
     "game_tug_map": ("game", "Helm: the Salvage Tug beside the lifeboat, 'Quest complete: Wait for the Tug' (the page's own 20 seconds)"),
     "game_tug_log": ("game", "The Quest Log: Wait for the Tug Done, Bring the Log Home Active"),
     "game_win": ("game", "Helm, Game results with the Win sentence"),
+    # added 2026-10-14 (say what the crew sees): the server's start screen, the game started WITHOUT map=0
+    "game_maps_start": ("game", "Server console, the start screen (no map=0): the list of maps, AMD Sample with the template's description (state start)"),
+    "game_maps_named": ("game", "Server console, the start screen (no map=0): Salvage Run with the new description (state title)"),
     "game_broken": ("game", "Helm with the quote mark missing on line 25: Mast Compiler Errors (no probe change)"),
     # drawn
     "card_title": ("card", "title", {}),
@@ -160,6 +167,9 @@ _SENTENCE = ("rect", 0.012, 0.215, 0.25, 0.287)
 _LOGS = ("rect", 0.035, 0.157, 0.222, 0.209)           # e_logs: the two logs in the file list
 _HEAD = ("rect", 0.0, 0.066, 0.96, 0.128)               # game_broken: the heading sentence
 _LINE25 = ("rect", 0.0, 0.19, 0.46, 0.288)              # game_broken: the error and its line
+_MAP_ENTRY = ("rect", 0.023, 0.35, 0.462, 0.45)         # game_maps_start/_named: the map's name and description
+_MAP_NAME = ("rect", 0.023, 0.35, 0.195, 0.385)         # ... the name
+_MAP_DESC = ("rect", 0.023, 0.383, 0.462, 0.45)         # ... the description
 
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
@@ -199,7 +209,7 @@ BOARD = {
         {"from": 1, "still": "m_load", "marks": [("lines", 54, 54), ("lines", 56, 57)]},
         {"from": 2, "still": "m_load", "marks": [("text", 54, "\"landmarks\""), ("text", 56, "\"quests\""), ("text", 57, "\"scans\"")]},
         {"from": 3, "still": "m_load", "marks": [("text", 54, "\"landmarks\"")]},
-        {"from": 4, "still": "e_land", "marks": [("text", 161, "(landmarks)")]},
+        {"from": 4, "still": "e_land", "marks": [("text", 177, "(landmarks)")]},
         {"from": 5, "still": "m_load", "marks": [("text", 54, "\"landmarks\"")]},
         {"from": 7, "still": "m_load", "marks": [("lines", 44, 44), ("lines", 48, 49), ("lines", 62, 62)]},
         {"from": 9, "still": "m_hulk", "marks": [("lines", 64, 64), ("lines", 68, 68)]},
@@ -217,12 +227,19 @@ BOARD = {
         {"from": 11, "still": "m_tail", "marks": [("lines", 93, 93)]},
     ]},
     "s06_your_first_edit": {"step": 2, "beats": [
-        {"from": 0, "still": "m_25"},
-        {"from": 1, "still": "m_25", "marks": [("text", 25, "\"AMD Sample\"")]},
-        {"from": 2, "still": "m_name", "marks": [("text", 25, "\"Salvage Run\"")]},
-        {"from": 3, "still": "m_title", "marks": [("lines", 26, 26)]},
-        {"from": 4, "still": "m_title", "marks": [("text", 26, "\""), ("after", 26)]},
-        {"from": 6, "still": "m_title", "marks": [("lines", 26, 26)]},
+        # the game first: where the map's name and description are read
+        {"from": 0, "still": "game_maps_start"},
+        {"from": 2, "still": "game_maps_start", "marks": [_MAP_NAME]},
+        {"from": 3, "still": "game_maps_start", "marks": [_MAP_DESC]},
+        {"from": 4, "still": "game_maps_start", "marks": [_MAP_ENTRY]},
+        {"from": 6, "still": "m_25", "marks": [("text", 25, "\"AMD Sample\""), ("lines", 26, 26)]},
+        {"from": 7, "still": "m_name", "marks": [("text", 25, "\"Salvage Run\"")]},
+        {"from": 8, "still": "m_title", "marks": [("lines", 26, 26)]},
+        {"from": 9, "still": "game_maps_start", "marks": [_MAP_DESC]},
+        {"from": 10, "still": "m_title", "marks": [("text", 26, "\""), ("after", 26)]},
+        {"from": 12, "still": "m_title", "marks": [("lines", 26, 26)]},
+        {"from": 13, "still": "game_maps_named"},
+        {"from": 14, "still": "game_maps_named", "marks": [_MAP_ENTRY]},
     ]},
     "s07_one_check_two_files": {"step": 3, "beats": [
         {"from": 0, "still": "t_title", "marks": [("part", "run1:cmd")]},
@@ -238,13 +255,13 @@ BOARD = {
         {"from": 13, "still": "t_q25_fix", "marks": [("part", "run2:clean")]},
     ]},
     "s08_a_step_that_waits_for_the_sc": {"step": 4, "beats": [
-        {"from": 0, "still": "e_w0", "marks": [("lines", 59, 59), ("lines", 72, 72), ("lines", 85, 85)]},
-        {"from": 2, "still": "e_then", "marks": [("text", 79, "salvage/tug")]},
-        {"from": 4, "still": "e_wait", "marks": [("lines", 90, 90)]},
-        {"from": 5, "still": "e_wait", "marks": [("text", 90, "tug_arrived")]},
-        {"from": 6, "still": "t_wait", "marks": [("out", 1, 2)]},
-        {"from": 7, "still": "t_wait", "marks": [("span", 1, "nothing in the mission sends it")]},
-        {"from": 8, "still": "t_wait", "marks": [("out", 1, 2)]},
+        {"from": 0, "still": "e_w0_p2", "marks": [("lines", 69, 69), ("lines", 88, 88), ("lines", 101, 101)]},
+        {"from": 2, "still": "e_then_p2", "marks": [("text", 95, "salvage/tug")]},
+        {"from": 4, "still": "e_wait", "marks": [("lines", 106, 106)]},
+        {"from": 5, "still": "e_wait", "marks": [("text", 106, "tug_arrived")]},
+        {"from": 6, "still": "t_wait_p2", "marks": [("out", 1, 2)]},
+        {"from": 7, "still": "t_wait_p2", "marks": [("span", 1, "nothing in the mission sends it")]},
+        {"from": 8, "still": "t_wait_p2", "marks": [("out", 1, 2)]},
     ]},
     "s09_card_one_when_a_step_starts": {"step": 5, "beats": [
         {"from": 0, "still": "m_end0", "marks": [("after", 105)]},
@@ -252,20 +269,21 @@ BOARD = {
         {"from": 2.6, "still": "m_c_route", "marks": [("lines", 111, 111)]},
         {"from": 3, "still": "m_c_route", "marks": [("text", 111, "//shared/signal/quest_started")]},
         {"from": 6, "still": "m_c_route", "marks": [("text", 111, "\"salvage/tug\"")]},
-        {"from": 7, "still": "e_then", "marks": [("text", 79, "salvage/tug")]},
+        {"from": 7, "still": "e_then_p2", "marks": [("text", 95, "salvage/tug")]},
         {"from": 8, "still": "m_card1", "marks": [("lines", 112, 112)]},
         {"from": 10, "still": "m_hulk", "marks": [("lines", 68, 68)]},
-        {"from": 11, "still": "m_card1", "marks": [("text", 112, "5600, 0, 6000"), ("text", 112, "\"Salvage Tug\"")]},
-        {"from": 12, "still": "m_card1", "marks": [("text", 112, "\"tsn, tug\"")]},
-        {"from": 13, "still": "m_card1", "marks": [("text", 112, "\"cargo_ship\"")]},
-        {"from": 14, "still": "e_boat", "marks": [("lines", 176, 183)]},
-        {"from": 16, "still": "m_card1", "marks": [("text", 113, "->END")]},
+        {"from": 11, "still": "game_tug_map", "marks": [_TUG]},
+        {"from": 13, "still": "m_card1", "marks": [("text", 112, "5600, 0, 6000"), ("text", 112, "\"Salvage Tug\"")]},
+        {"from": 14, "still": "m_card1", "marks": [("text", 112, "\"tsn, tug\"")]},
+        {"from": 15, "still": "m_card1", "marks": [("text", 112, "\"cargo_ship\"")]},
+        {"from": 16, "still": "e_boat", "marks": [("lines", 192, 199)]},
+        {"from": 18, "still": "m_card1", "marks": [("text", 113, "->END")]},
     ]},
     "s10_cards_two_and_three": {"step": 6, "beats": [
         {"from": 0, "still": "m_tail", "marks": [("lines", 93, 93)]},
         {"from": 1, "still": "m_card2", "marks": [("text", 113, "\"tug_arrived\"")]},
         {"from": 2, "still": "m_card2", "marks": [("lines", 112, 113)]},
-        {"from": 3, "still": "t_card2", "marks": [("part", "run2:clean")]},
+        {"from": 3, "still": "t_card2_p2", "marks": [("part", "run2:clean")]},
         {"from": 4, "still": "m_card3", "marks": [("lines", 112, 112)]},
         {"from": 5, "still": "m_card3", "marks": [("lines", 112, 112), ("lines", 113, 113), ("lines", 114, 114)]},
         {"from": 7, "still": "e_words", "marks": [("lines", 16, 16), ("lines", 19, 19)]},
@@ -292,12 +310,16 @@ BOARD = {
         {"from": 19, "still": "card_cannot"},
     ]},
     "s12_play_it": {"step": 9, "beats": [
-        {"from": 0, "still": "game_wait_map", "marks": [_BOAT_ICON, _MSG]},
-        {"from": 1, "still": "game_wait_log", "marks": [_ROW1]},
-        {"from": 2, "still": "game_tug_map", "marks": [_TUG]},
-        {"from": 3, "still": "game_tug_log", "marks": [_ROW4, _ROW1]},
-        {"from": 4, "still": "game_win", "marks": [_SENTENCE]},
-        {"from": 5, "still": "e_logs", "marks": [_LOGS], "move": False},
+        {"from": 0, "still": "game_wait_map", "marks": [_BOAT_ICON]},
+        {"from": 1, "still": "game_wait_map", "marks": [_MSG]},
+        {"from": 2, "still": "game_wait_log", "marks": [_ROW1]},
+        {"from": 3, "still": "game_wait_map", "marks": [_BOAT_ICON]},
+        {"from": 4, "still": "game_tug_map", "marks": [_TUG]},
+        {"from": 6, "still": "game_tug_map", "marks": [_MSG]},
+        {"from": 7, "still": "game_tug_log", "marks": [_ROW4, _ROW1]},
+        {"from": 8, "still": "game_win"},
+        {"from": 9, "still": "game_win", "marks": [_SENTENCE]},
+        {"from": 10, "still": "e_logs", "marks": [_LOGS], "move": False},
     ]},
     "s13_your_turn": {"step": None, "beats": [
         {"from": 0, "still": "card_cards"},

@@ -143,6 +143,10 @@ yourself.
 The command in Lecture 3 gave your mission its title. It did not name the map inside it.
 The map is still called "AMD Sample".
 
+You will see these two lines on the server's start screen, in its list of maps: the
+name, with the description under it. Your usual command, with `map=0`, starts the map
+straight away and skips that screen. Step 9 says how to see it.
+
 Go to line 25. Change the words between the quote marks:
 
 ```
@@ -248,7 +252,7 @@ Save. Run lint. It has something to say:
 
 ```
 == mission.amd ==
-  [WARNING] line 90:19: `tug` waits for the signal `tug_arrived`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
+  [WARNING] line 106:19: `tug` waits for the signal `tug_arrived`, and nothing in the mission sends it, so that wait never ends. Check the spelling against the line in the story that sends it (unfired-signal)
 
 1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```
@@ -284,7 +288,7 @@ the same way. It holds the same facts as a Landmarks record.
 | On the line | In a Landmarks record | Here |
 |---|---|---|
 | `5600, 0, 6000` | `Loc:` | Where. This is 400 from the lifeboat |
-| `"Salvage Tug"` | The name in the heading | Its name |
+| `"Salvage Tug"` | The name in the heading | Its name. Helm's map draws it beside the tug |
 | `"tsn, tug"` | `Side:`, then `Roles:` | Its side, a comma, then its role. The side comes first, as on line 68 |
 | `"cargo_ship"` | `Art:` | What it looks like |
 | `"behav_npcship"` | `Prefab: ship` | It is a ship. Leave this word alone |
@@ -594,11 +598,13 @@ Start your mission as the server with a Helm console, the way you did in Lecture
    Quick Work.
 2. Fly to the Unknown Hulk. Inside 500, Close Inspection shows `Done`, and **Find the
    Lifeboat** is now in the list.
-3. Fly to The Lifeboat. Inside 500, Find the Lifeboat shows `Done`, and **Wait for the
-   Tug** is now in the list. There is no tug on the map.
-4. Wait. Twenty seconds later the **Salvage Tug** is on the map, 400 from the lifeboat.
-   Wait for the Tug shows `Done`, and **Bring the Log Home** is now in the list.
-5. Fly back to DS 1. Inside 1000, the game ends with your `Win:` sentence.
+3. Fly to The Lifeboat. Inside 500, Helm shows `Quest complete: Find the Lifeboat`, and
+   **Wait for the Tug** is now in the Quest Log. There is no tug on Helm's map.
+4. Wait. Twenty seconds later the **Salvage Tug** is on Helm's map, with its name beside
+   it, 400 from the lifeboat. Helm shows `Quest complete: Wait for the Tug`. In the Quest
+   Log, Wait for the Tug shows `Done`, and **Bring the Log Home** is now in the list.
+5. Fly back to DS 1. Inside 1000, the game ends. The end screen, **Game results**, carries
+   your `Win:` sentence.
 6. Close the game. Open `mast.compile.log` and `mast.runtime.log`. Both are empty.
 
 First Contact, the template's own story, finishes its steps at the hulk too, as it has

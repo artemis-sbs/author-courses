@@ -1,5 +1,34 @@
 # C1-4 video script - Markdown in twenty minutes
 
+> **Reworked again 2026-10-14 (later): a description is a page.** The owner: the page
+> wrongly taught that a quest's body is one line, one paragraph, plain sentences. A
+> description is drawn by a text area, and text areas now follow MARKDOWN paragraph rules
+> (library change in progress at the time of writing, by another session): lines with no
+> blank line between them JOIN into one paragraph, and a blank line ends it and leaves a
+> gap. `<br>` and `^` are unchanged. So the preview and the Quest Log now agree on
+> paragraphs. What changed here:
+>
+> - Step 3 / scene 5: Enter inside a paragraph is no longer a mistake in a description;
+>   it still is in a Science reading (each line a reading of its own).
+> - "The same marks in `mission.amd`": two tables, "What a description can hold" (now
+>   with paragraphs, gaps, tables, `<hr>`, `ship://`, `face://`, `icon://`) and "What the
+>   game prints as you typed it". The "Lines and gaps" table is folded into the first.
+>   The three rules are new: write a description as a page; leave stars, backticks and
+>   links out; a reading is one line.
+> - Step 11 / scene 11: twelve lines instead of nine (a heading, a paragraph typed on two
+>   lines, a list, a three-line table, a link). `example\step-11-only\mission.amd` is
+>   rewritten to match. The Quest Log still for it is NEW: `game_log_p2`, not taken.
+> - NOT SEEN, NOT MEASURED on the new library: the joined paragraph, the gap, the table
+>   in the Quest Log pane. The older notes below (and items 1, 3, 22, 25 of "Confirm on
+>   camera") describe the nine-line version and the old line rules; where they disagree,
+>   this note wins. Look at `game_log_p2` before recording scene 11.
+
+> **Reworked 2026-10-14: say what the crew sees.** `### [Derelict Hull](derelict_scan)` is
+> now called what it is, a scan record, and the script shows its `%` reading on the NEW
+> Science console (the hulk scanned, its `Scan` tab) before the line in the file. The
+> play scene names the Quest Log and its pane. The Science still is new
+> (`game_sci_hull_sci2`), not taken yet.
+
 > **This is Lecture 4, and that is settled.** It follows "Your editor and your first run"
 > (Lecture 3, `c1-03-editor-and-first-run`) and uses VS Code throughout. The folder is
 > `c1-04-markdown-in-twenty-minutes`. The three reasons, all from what the lecture
@@ -101,12 +130,12 @@ mission as this lecture hands it on: untouched. The mission file for scene 11 is
 | Library | sbs_utils `2c7d93d1` or later and LegendaryMissions `b20726f` or later, as built into `data\missions\__lib__`. With an older library scene 11 does not match the page |
 | `sbs.pyz` | Built from sbs_cli `f26f3ff` or later. See the note at the top |
 | VS Code | `MyMission` open as a folder AND TRUSTED, the Artemis AMD add-on installed, the Chat panel closed, the file list showing, no `story-bible.md` yet, font size raised |
-| VS Code settings | Defaults. In particular `markdown.preview.breaks` off (scene 5 depends on it), `markdown.preview.linkify` on, and word wrap left alone: VS Code turns it ON for a `.md` file by itself and leaves it OFF for `mission.amd` |
+| VS Code settings | Defaults. In particular `markdown.preview.breaks` off (scene 5 depends on it: the preview and the Quest Log both join the lines), `markdown.preview.linkify` on, and word wrap left alone: VS Code turns it ON for a `.md` file by itself and leaves it OFF for `mission.amd` |
 | Word processor | Open, with this typed in it: `The "ghost ship" -- it isn't answering...` It must have made the quotes curly. Look at what it did to the two hyphens and the three dots, and say what you see |
 | Browser | Not needed. If you click the link in scene 7, have one ready |
 | Command prompt | Open in `data\missions`, with the Lecture 3 line already in its history, so the up arrow brings it back: `sbs run server,helm,science -m MyMission map=0` |
 | Game | Closed. Scene 11 starts it with that line: three windows |
-| Paste buffer | The nine lines of Step 11, from `example\step-11-only\mission.amd`, lines 31 to 39 |
+| Paste buffer | The twelve lines of Step 11, from `example\step-11-only\mission.amd`, lines 31 to 42 |
 
 ## Confirm on camera
 
@@ -235,6 +264,12 @@ NOT checked. If one is not as described, stop and fix the page:
 29. The lone hash. On the shipped screen, in-process, the pane is sent
     `Document syntax issue line number 6 #`. Do not show it on camera unless it is
     still there in the build you record with.
+30. (2026-10-14.) The NEW Science console: a selected, scanned hulk shows a stack of tab
+    buttons over the map, `Scan` first, and the read-out shows the scan tab's text under
+    the shield lines. (Read: LegendaryMissions `consoles\science_tabs.py`,
+    `science_panel.py`.) On screen: UNSEEN until `game_sci_hull_sci2` is taken. Whether
+    the engine has already scanned the hulk by itself when Science selects it (it scans
+    contacts in range) decides whether the still needs a `Queue Scan` press first.
 
 Also capture the screenshot for the top of the page.
 
@@ -270,7 +305,7 @@ file list, **New File...**, type `story-bible.md`. Type `# Nobody Aboard`. `Ctrl
 its name ends in dot M D. || Then I type one line: a hash, a space, and my title. ||| Now,
 control K, let go, and then V, | and that opens the preview. || The hash is gone, and the
 words have become a title. || This preview is part of VS Code, so it needs nothing added.
-||| And then I save. || The game never reads this file. | It's mine, and nothing I type here
+||| And then I save the file. || The game never reads this file. | It's mine, and nothing I type here
 can break anything. ||"
 
 ### 4. A title and three headings
@@ -278,9 +313,8 @@ can break anything. ||"
 **Screen:** Type `## Premise`, `## People`, `## What happens`, a blank line between each.
 Then delete the space in `## Premise`: the preview. Put it back.
 
-**Say:** "Two hashes make a heading. | Three would make a smaller one, inside it. || So
-count the hashes, | because in the next lecture, the number of hashes is how the game knows
-what's inside what. ||| There are two rules. || The hashes start at the left edge, | and
+**Say:** "Two hashes make a heading. | Three would make a smaller one, inside it. || So always count the hashes, | because in the next lecture, the number of hashes is how the game knows
+what's inside what. ||| There are two rules for headings. || The hashes start at the left edge, | and
 there's one space after them. || Watch what happens without the space: | it's not a heading
 any more. || So I put it back. ||"
 
@@ -290,13 +324,14 @@ any more. || So I put it back. ||"
 Press Enter in the middle of one: the preview. Undo. Press Tab at the start of one: the
 preview. Undo.
 
-**Say:** "A paragraph is one line, however long it is, | and word wrap folds it for me. || A
-blank line ends it. ||| Now, here are two things writers do without thinking. || The first
-is pressing Enter in the middle of a paragraph. || Look at the preview: it joined the halves
-again, so you'd never know. || But the game doesn't join them. | It starts a new line there.
-|| So the rule is, one paragraph, one line. ||| The second is the Tab key at the start. ||
-Look what the preview made of that. || In markdown, an indented line is something else
-altogether, | so never start a line with Tab. ||"
+**Say:** "A paragraph can be one long line, | and word wrap folds it for me. || A blank line
+ends it. ||| Now, here are two things writers do without thinking. || The first is pressing
+Enter in the middle of a paragraph. || Look at the preview: it joined the halves again, so
+you'd never know. || The game's Quest Log joins them too, | so in a quest's description,
+that's fine. || The one place it isn't fine is a Science reading, | and that's next
+lecture. ||| The second is the Tab key at the start. || Look what the preview made of that.
+|| In markdown, an indented line is something else altogether, | so never start a line
+with Tab. ||"
 
 ### 6. Two lists
 
@@ -305,20 +340,23 @@ altogether, | so never start a line with Tab. ||"
 
 **Say:** "A hyphen, a space, and a line of words make a list. || These are the people in my
 story. || A number, a period, and a space make a numbered list, | for things that happen in
-order. ||| Keep these three lines, | because in Lecture Eight, each one becomes a step of a
+order. ||| Keep these three numbered lines, | because in Lecture Eight, each one becomes a step of a
 quest. || And leave a blank line above a list, and a blank line below it. ||"
 
 ### 7. One link
 
 **Screen:** At the end of the Premise paragraph, type the sentence with the link, slowly.
-Show the `]` that VS Code adds. The preview. Then `mission.amd`, line 47:
+Show the `]` that VS Code adds. The preview. Then the game: Science, the hulk scanned,
+its `Scan` tab and the hull reading. Then `mission.amd`, line 47:
 `### [Derelict Hull](derelict_scan)`.
 
 **Say:** "A link is two pairs of brackets. || Square brackets go round the words the reader
 sees, | and round brackets go round where it leads. || There's nothing between them, not
 even a space. ||| VS Code typed that closing bracket for me, so I just keep going. || And in
-the preview, it's a link. ||| Now look at this line from the mission file. || It's hashes, a
-space, square brackets, and round brackets: | a heading with a link in it. || That's the
+the preview, it's a link. ||| Now here's something from the mission file, in the game first. || This is the Science
+console, with the hulk scanned, | and those words are on the hulk's scan tab. || They come
+from a scan record, and this is its first line. || It's hashes, a space, square brackets,
+and round brackets: | a heading with a link in it. || That's the
 first line of every record you'll ever write. || In that file, though, the round brackets
 hold a short name for the game, | and not a web address. ||"
 
@@ -338,7 +376,7 @@ The table from Step 8 of the page.
 
 **Say:** "Everything I've typed so far is a key on my keyboard. || A word processor isn't
 like that. || I typed straight quotes here, and it made them curly. | It did this to my
-hyphens, and this to my three dots. || And it doesn't ask. ||| The game can draw only plain
+hyphens, and this to my three dots. || And it doesn't even ask me. ||| The game can draw only plain
 characters. || When it reads your mission, it swaps these for the plain ones, so nothing
 breaks, | and you get a warning for each one, which is Lecture Six. ||| But the habit starts
 now: write game text in VS Code. || And if you bring words over from a word processor, |
@@ -346,14 +384,17 @@ type the quotes, the dashes and the dots again. ||"
 
 ### 10. The mission file with new eyes
 
-**Screen:** `mission.amd`. Highlight in turn: a heading; the `---` under it; a `%` line;
-a `//` line. Then the Step 9 table on the page.
+**Screen:** `mission.amd`. Highlight in turn: a heading; the `---` under it. Then the
+game: Science, the hulk's `Scan` tab with its reading. Back to the file: the `%` lines; a
+`//` line. Then the Step 9 table on the page.
 
 **Say:** "Here's the file the game reads, | and you can read most of it now. || Hashes mean
 a heading, and brackets mean a link. || But five marks in here aren't markdown's. ||| This
 heading is the first line of a record: | a name for people, and a key for the game. || These
 three hyphens would be a line across the page in markdown. | Here, they're a fence, with the
-record's facts inside. || A percent sign is one reading for the Science screen. || Two
+record's facts inside. ||| Now back to Science, and the hulk's scan tab. || That sentence is
+one reading, | and a percent sign in the file starts each reading the hulk can give. || This
+record has two of them, | and Science picks one each time the hulk is scanned. ||| Two
 slashes are a note to myself, which the game skips. || And there's one you haven't got yet,
 double square brackets, | which is a link to another record. ||| So this file is shaped like
 markdown, and it isn't markdown. || The preview I opened for my story bible doesn't open for
@@ -362,25 +403,28 @@ it. | The game is what reads it. ||"
 ### 11. The game is not a preview
 
 **Screen:** In `mission.amd`, select line 31, `Fly out and locate the drifting hulk.`,
-and paste the nine lines. Save. The command prompt: up arrow,
+and paste the twelve lines. Save. The command prompt: up arrow,
 `sbs run server,helm,science -m MyMission map=0`. Three windows. The `helm` window: the
 handheld icon, **Quests**. Select **Find the Derelict**. Hold on the right-hand side and
-point at each line. Close the three windows. `Ctrl+Z` until one line is left. Save. Then
-the three tables on the page.
+point at each part: the heading, the paragraph, the list, the table, the link, the gaps.
+Close the three windows. `Ctrl+Z` until one line is left. Save. Then the two tables on the
+page, and the three rules.
 
-**Say:** "So what does the game do with marks? || I'll give this quest nine lines: | a
-heading, a bold word, a list, a word in backticks, and a link, | and then I save. ||| I
-start the game the way we did last time, and I don't fly anywhere. || On Helm, it's the
-handheld, then Quests, | and I select Find the Derelict. ||| The heading is drawn as a
-heading. || The bold word is still wearing its stars. || The list is a list. || The
-backticks are gone, and the word is still there. || And the link shows every bracket and the
-whole address, with nothing to click. ||| Look at the spacing, too. | I left three blank
-lines, and the game left none. || A preview would have drawn all of it. | The game drew two
-things, the heading and the list. || And nothing warned me, either. ||| So here are the
-rules for the mission file, and they're on the page. || Write plain sentences, and keep one
-paragraph to one line. || And a heading and a list are the two marks a description draws.
-||| Then I close the game, and I put my line back, | because the next lecture starts from
-the file as it was. ||"
+**Say:** "So what does the game do with marks? || I'll give this quest twelve lines: | a
+heading, a paragraph typed on two lines, a list, | a small table, and a link, | and then I
+save the file. ||| I start the game the way we did last time, and I don't fly anywhere. ||
+On Helm, it's the handheld, then Quests, | and in the Quest Log, I select Find the
+Derelict. || The pane beside the list shows what the crew is told about it. ||| The heading
+is drawn as a heading. || My two lines are one paragraph, | just as the preview joined
+them. || But the bold word is still wearing its stars. || The list is a list, | and the
+table is a table. || And the link shows every bracket and the whole address, with nothing
+to click. ||| Look at the spacing, too. | Where I left a blank line, the game left a gap.
+|| So a description is a page, | and you can give the crew a lot more than one sentence.
+||| Here are the rules for the mission file, and they're on the page. || Write a
+description as a page, | with paragraphs, and a heading, a list or a table where they
+help. || Leave out stars, backticks and links. || And a Science reading is one line, |
+because every line is a reading of its own. ||| Then I close the game, and I put my line
+back, | because the next lecture starts from the file as it was. ||"
 
 ### 12. Your turn
 

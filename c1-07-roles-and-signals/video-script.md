@@ -1,5 +1,23 @@
 # C1-7 video script - Roles and signals
 
+> **REWORKED ON 2026-10-14: say what the crew sees. Newer than every note below.**
+>
+> - Each piece of content is shown on its own console first (Science and the tab, the
+>   Quest Log, Helm's map), said in the crew's words, and only then found in the file.
+> - Science is the NEW console, LegendaryMissions' default since 2026-10-13: a rail of
+>   filter chips under the map, a contact list on the right while nothing is selected,
+>   the selected contact's tab buttons in the lower left under its name (`Scan` first,
+>   and a tab not read yet says `Queue Intel`), and the chosen tab's text in the read-out
+>   on the right. That is from LegendaryMissions' source (`consoles/science_tabs.py`,
+>   `science_panel.py`); nobody has seen it with these files. Every Science still is
+>   retaken under a new id ending `_sci2`. Where a note below describes the old console
+>   ("the list on the right", "three tabs", `Start Initial Scan`), it is history.
+> - Check on the new stills: the order of the hulk's three tab buttons (the script says
+>   Scan, Intel, Mat); that the hulk's name is drawn beside it on Helm's map; that the
+>   read-out's title says `Unknown Hulk` once the hulk is scanned; and what Science shows
+>   for scene 9's break (the script says: no Mat button, and none of the hulk's text
+>   under Scan). If any differs, change the Say line to what the still shows.
+
 > **STATE ON 2026-10-05. Read this first; where an older note below disagrees, this is
 > newer.**
 >
@@ -164,16 +182,22 @@ one is doing with your words, | and you'll put two words of your own into both. 
 
 ### 2. Two files, three promises
 
-**Screen:** `mission.amd`. Highlight the three `Scan of: derelict` lines, then the two
-`Done when: signal` lines. Then the table from Step 1.
+**Screen:** The game first. Science, the hulk selected, its Intel tab open, the Lecture 5
+sentence in the read-out. Then Helm's Quest Log, Find the Derelict. Then `mission.amd`.
+Highlight the three `Scan of: derelict` lines, then the two `Done when: signal` lines. Then
+the table from Step 1.
 
 **Say:** "Your fact sheet says what the story is, | and this other file, story.mast, is what
-makes it happen. || And there are five lines in your fact sheet that lean on it. ||| Scan of
-derelict is a promise | that something in the game wears the word derelict. || That's called
-a role, which is really just a name tag. ||| Done when, signal derelict_found, is a promise
-too: | that the story will say derelict_found, out loud, at some moment. || And that's
-called a signal. ||| If the other file doesn't keep those promises, | the reading is never
-shown, | and the step never finishes. |||"
+makes it happen. || And there are five lines in your fact sheet that lean on it. ||| Here's
+what two of them put in front of the crew. || This is the Science console, with the hulk
+selected, | and this is its Intel tab, with the sentence I wrote in Lecture 5. || And this
+is the Quest Log, where Find the Derelict shows Done | once the ship reaches the hulk. |||
+Scan of derelict is a promise | that something in the game wears the word derelict. ||
+That's called a role, which is really just a name tag. ||| Done when, signal
+derelict_found, is a promise too: | that the story will say derelict_found, out loud, at
+some moment. || And that's called a signal. ||| If the other file doesn't keep those
+promises, | that Intel tab never shows my sentence, | and that step in the Quest Log never
+shows Done. |||"
 
 ### 3. Open the other file
 
@@ -189,19 +213,23 @@ with two slashes. |||"
 ### 4. Find the role
 
 **Screen:** `Ctrl+Shift+F`. Type `derelict`. Turn on `Aa` and `ab`. Point at the summary
-line. Click the hit on line 68. Highlight the four quoted pieces one at a time. Then click
-the hit on line 103.
+line. Then the game: Helm's map, the hulk with its name beside it; Science's read-out with
+the name at the top. Click the hit on line 68. Highlight the four quoted pieces one at a
+time. Then click the hit on line 103.
 
 **Say:** "Control, shift, F searches the whole folder. || I turn on match case, and match
 whole word, | so that I get the role itself, and not every word that happens to have it
 inside. || That gives me eight results. ||| Three of them are my Scan of lines. || The other
 five are in the story file, | and three of those start with a hash, so they're notes. ||
-That leaves just two lines that do any work. ||| This first one puts the hulk in the game.
-|| It has four pieces in quotes: | the name the crew sees, then a list, | then the model,
-and then how it behaves. || The list is the part that's ours. || Its first word is the side,
-| and every word after that is a role. || So the hulk is on our side, and it wears derelict,
-| which means that promise is kept. ||| And here's the word a second time, | in a line that
-asks: when Science scans something, does it wear derelict? |||"
+That leaves just two lines that do any work. ||| Here's the hulk on Helm's map, | and
+Unknown Hulk is the name the crew reads beside it. || Science shows the same name at the
+top of its read-out, once the hulk is scanned. || That name comes from this first line, |
+which puts the hulk in the game. || It has four pieces in quotes: | its name, then a list,
+| then the model, and then how it behaves. || The list is the part that's ours. || Its
+first word is the side, | and every word after that is a role. || So the hulk is on our
+side, and it wears derelict, | which means that promise is kept. ||| And here's the word a
+second time, | in a line that asks: when Science scans something, does it wear derelict?
+|||"
 
 ### 5. Find the signals
 
@@ -221,18 +249,20 @@ it. |||"
 ### 6. Name a role
 
 **Screen:** In `mission.amd`, Derelict Intel: `Scan of: ghost_ship`. `Ctrl+S`. Lint: the
-`role-nothing-wears` warning. Then `story.mast` line 68: click before the closing quote,
-type `, ghost_ship`. `Ctrl+S`. Lint: `clean`.
+`role-nothing-wears` warning. Science's tab buttons for the hulk, the Intel button marked.
+Then `story.mast` line 68: click before the closing quote, type `, ghost_ship`. `Ctrl+S`.
+Lint: `clean`.
 
 **Say:** "In my story, this hulk is a ghost ship. || And I'm going to do this in the wrong
 order, on purpose. || First I point my reading at a role that nobody wears. || Lint has read
 both files, | and it tells me nothing in this mission wears a role called ghost_ship. || If
-I played it now, my reading would simply be gone. ||| So now I keep the promise, on line
-sixty-eight. || I click just before the closing quote, | and I type a comma, a space, and
-the word, and nothing else. || And it's clean, and the hulk wears two roles now. ||| There
-are four rules for a role, and they're on the page: | small letters and underscores, | the
-same spelling in both files, | one thing and not many, | and in a list your word goes last,
-| because the first word is the side. |||"
+I played it now, | this Intel tab on Science would simply not be there, | and my sentence
+would be gone with it. ||| So now I keep the promise, on line sixty-eight. || I click just
+before the closing quote, | and I type a comma, a space, and the word, and nothing else. ||
+And it's clean, and the hulk wears two roles now. ||| There are four rules for a role, and
+they're on the page: | small letters and underscores, | the same spelling in both files, |
+one thing and not many, | and in a list your word goes last, | because the first word is
+the side. |||"
 
 ### 7. Rename a signal
 
@@ -265,8 +295,10 @@ twice. |||"
 
 **Screen:** In `story.mast` line 93, change `ghost_ship_found` to `ghost_ship_fond`. Save.
 Lint: the `unfired-signal` warning. Put the word back. Then line 68: change `derelict` to
-`derelect`. Save. Lint: `clean`. Hold on the word. Search `derelict`: 8 results, where 9
-are wanted. Put the word back. Then the "What lint cannot see" table on the page.
+`derelect`. Save. Lint: `clean`. Hold on the word. The game with that file: Science, the
+hulk selected, no Mat button; then the Quest Log, Study the Derelict still Active. Search
+`derelict`: 8 results, where 9 are wanted. Put the word back. Then the "What lint cannot
+see" table on the page.
 
 **Say:** "Now for the honest part. || First, a signal: I misspell it on the working line, |
 and lint catches it, even though my fact sheet is fine. || That's because for a signal, |
@@ -274,29 +306,35 @@ lint looks for the line of the story that sends it. ||| Now a role: I misspell d
 the hulk's list, | and lint says clean. || And here's why that is. || For a role, lint only
 looks for the word between quote marks, somewhere in this file, | and it found derelict down
 here, on line one hundred and three. || It doesn't ask whether the word is in a list of
-roles. ||| In the game, the hulk has lost two of its readings, | and the second step never
-finishes, | and nothing says so. ||| The count does catch this one: | I get eight, and I
-wanted nine. || The page lists the rest, | and the two to learn are that your role goes last
-in the list, | and that it goes after a comma. |||"
+roles. ||| On Science, the hulk has lost its
+readings: | its Mat tab is gone, | and its Scan button just keeps saying Queue Scan. || And in
+the Quest Log, Study the Derelict never shows Done, and nothing says so. ||| The count
+does catch this one: | I get eight, and I wanted nine. || The page lists the rest, | and
+the two to learn are that your role goes last in the list, | and that it goes after a
+comma. |||"
 
 ### 10. Play it
 
-**Screen:** Start the game as the server with Helm and Science. Helm: the quest list. Fly
-to the hulk. Find the Derelict shows `Done`. Study the Derelict appears, then `Done`.
-Science: select the hulk, the three tabs, open `intel`. Close the game. Open both logs:
-empty.
+**Screen:** Start the game as the server with Helm and Science. Helm: the Quest Log. Fly to
+the hulk. Find the Derelict shows `Done`. Study the Derelict appears, then `Done`. Science:
+click the hulk on the map; its tab buttons in the lower left, under its name; press Intel;
+the sentence in the read-out on the right. Close the game. Open both logs: empty.
 
 **Say:** "The crew never sees a role or a signal. | They only see what those words connect.
-|| So, Find the Derelict is done, | and that was my signal: | the story said
-ghost_ship_found, and my step was waiting for it. || The sensors scan the hulk by
-themselves, | so the second step finishes too. ||| And on Science there are three tabs, |
-and intel is the one that's hanging on my role. || And both logs are empty. |||"
+|| So, here in the Quest Log, Find the Derelict is done, | and that was my signal: | the
+story said ghost_ship_found, and my step was waiting for it. || The sensors scan the hulk
+by themselves, | so the second step finishes too. ||| Then on Science, I pick the hulk from
+the list. || Its tab buttons are down here on the left, under its name: | there's Scan,
+then Intel, and then Mat. || I press Intel, and there's my sentence in the read-out, | hanging
+on the role I gave it. ||
+And both logs are empty. |||"
 
 ### 11. Your turn
 
 **Screen:** The exercise on the companion page.
 
-**Say:** "Now it's time for your own words. || Give the station a role, | and a reading on
-its mat tab. || Then rename the second signal, in both files, | and add both to your list.
-||| Next time it's your first quest: | a line that names a role, | and the game does the
-watching itself. |||"
+**Say:** "Now it's time for your own words. || Give the station a role, | and a sentence
+for its Mat tab on Science. || Then rename the second signal, in both files, | and add both
+to your list. || When you play, select DS 1 on Science, | and your sentence is in its Mat
+tab. ||| Next time it's your first quest: | a line that names a role, | and the game does
+the watching itself. |||"

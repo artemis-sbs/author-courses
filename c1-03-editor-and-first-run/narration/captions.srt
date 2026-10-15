@@ -1,487 +1,527 @@
 1
-00:00:00,000 --> 00:00:01,485
+00:00:00,000 --> 00:00:01,667
 On the left is a mission,
 
 2
-00:00:01,935 --> 00:00:05,336
+00:00:02,117 --> 00:00:05,695
 and on the right is that same mission, being played.
 
 3
-00:00:06,236 --> 00:00:08,163
+00:00:06,595 --> 00:00:09,007
 An hour ago, neither of them existed.
 
 4
-00:00:09,963 --> 00:00:13,439
+00:00:10,807 --> 00:00:13,966
 In this lecture, you put an editor on your computer,
 
 5
-00:00:13,889 --> 00:00:17,306
+00:00:14,416 --> 00:00:17,311
 you make a mission with one line, and you fly it.
 
 6
-00:00:18,206 --> 00:00:19,449
+00:00:18,211 --> 00:00:20,531
 You don't write anything yet,
 
 7
-00:00:19,899 --> 00:00:22,439
+00:00:20,981 --> 00:00:23,996
 because today is about having the desk ready.
 
 8
-00:00:23,639 --> 00:00:27,402
+00:00:25,196 --> 00:00:29,035
 A mission is plain text, and plain text wants an editor.
 
 9
-00:00:28,302 --> 00:00:30,357
+00:00:29,935 --> 00:00:32,574
 A word processor changes what you type:
 
 10
-00:00:30,807 --> 00:00:34,309
+00:00:33,024 --> 00:00:37,065
 it curls your quote marks and it joins your hyphens,
 
 11
-00:00:34,759 --> 00:00:36,209
+00:00:37,515 --> 00:00:39,369
 and the game can read neither.
 
 12
-00:00:38,009 --> 00:00:40,255
+00:00:41,169 --> 00:00:43,711
 So we use VS Code, which is free.
 
 13
-00:00:41,155 --> 00:00:43,460
+00:00:44,611 --> 00:00:46,904
 You download it, and you run the installer.
 
 14
-00:00:44,360 --> 00:00:47,110
+00:00:47,804 --> 00:00:50,541
 Only one page of it matters, and it's this one.
 
 15
-00:00:47,560 --> 00:00:50,743
+00:00:50,991 --> 00:00:53,459
 Tick both of these boxes, and leave the rest.
 
 16
-00:00:52,543 --> 00:00:55,911
+00:00:55,259 --> 00:00:57,909
 Then there are four names to learn for this window:
 
 17
-00:00:56,361 --> 00:00:59,261
+00:00:58,359 --> 00:01:00,789
 the strip of icons, the panel beside it,
 
 18
-00:00:59,711 --> 00:01:01,452
+00:01:01,239 --> 00:01:03,178
 the big area where your files open,
 
 19
-00:01:01,902 --> 00:01:03,442
+00:01:03,628 --> 00:01:05,436
 and the bar along the bottom.
 
 20
-00:01:04,642 --> 00:01:07,420
+00:01:06,636 --> 00:01:09,552
 VS Code doesn't know what a mission file is,
 
 21
-00:01:07,870 --> 00:01:09,550
+00:01:10,002 --> 00:01:11,830
 so one add-on teaches it.
 
 22
-00:01:10,450 --> 00:01:12,840
+00:01:12,730 --> 00:01:15,844
 VS Code calls an add-on an extension,
 
 23
-00:01:13,290 --> 00:01:16,127
+00:01:16,294 --> 00:01:20,084
 which isn't the same thing as the extension on a file's name.
 
 24
-00:01:17,927 --> 00:01:20,542
+00:01:21,884 --> 00:01:23,466
 The add-on is one file.
 
 25
-00:01:21,442 --> 00:01:24,925
+00:01:24,366 --> 00:01:27,851
 I download it, and then I hand it to VS Code here:
 
 26
-00:01:25,375 --> 00:01:28,571
+00:01:28,301 --> 00:01:32,043
 the three dots, and then install from V S I X.
 
 27
-00:01:30,371 --> 00:01:32,237
+00:01:33,843 --> 00:01:36,111
 One warning, though: don't search for it.
 
 28
-00:01:33,137 --> 00:01:34,641
+00:01:37,011 --> 00:01:38,269
 It isn't in this list,
 
 29
-00:01:35,091 --> 00:01:38,038
+00:01:38,719 --> 00:01:41,713
 and these others have nothing to do with our game.
 
 30
-00:01:39,238 --> 00:01:41,746
+00:01:42,913 --> 00:01:45,091
 Now back to the window from last time.
 
 31
-00:01:42,646 --> 00:01:47,242
+00:01:45,991 --> 00:01:49,283
 Check the line first: it should end in data, missions.
 
 32
-00:01:48,142 --> 00:01:50,137
+00:01:50,183 --> 00:01:52,202
 First I ask what I can start from,
 
 33
-00:01:50,587 --> 00:01:52,405
+00:01:52,652 --> 00:01:54,799
 and there are five templates.
 
 34
-00:01:53,305 --> 00:01:55,497
+00:01:55,699 --> 00:01:57,765
 We want this one, A M D.
 
 35
-00:01:57,297 --> 00:02:00,040
+00:01:59,565 --> 00:02:01,474
 Now the line that makes a mission.
 
 36
-00:02:00,940 --> 00:02:05,071
+00:02:02,374 --> 00:02:06,058
 It's create, then the folder's name, with no spaces.
 
 37
-00:02:05,521 --> 00:02:08,082
+00:02:06,508 --> 00:02:08,661
 Then hyphen T, and the template.
 
 38
-00:02:08,982 --> 00:02:11,248
-Then two hyphens, title,
+00:02:09,561 --> 00:02:12,009
+Then two hyphens and the word title,
 
 39
-00:02:11,698 --> 00:02:14,560
-and in quote marks, the name the crew will see.
+00:02:12,459 --> 00:02:15,511
+and in quote marks, the mission's title.
 
 40
-00:02:16,360 --> 00:02:18,190
-It stops to ask one question,
+00:02:16,411 --> 00:02:19,650
+That's the line the server will show in its list of missions,
 
 41
-00:02:18,640 --> 00:02:20,521
-and Enter means yes.
+00:02:20,100 --> 00:02:23,194
+the same list you chose Legendary Missions from.
 
 42
-00:02:21,421 --> 00:02:24,969
-And there's the folder, right beside the game's own missions.
+00:02:24,994 --> 00:02:26,784
+It stops to ask one question,
 
 43
-00:02:26,169 --> 00:02:29,544
-There's one more line, and you type it once.
+00:02:27,234 --> 00:02:29,774
+and pressing Enter means yes.
 
 44
-00:02:30,444 --> 00:02:34,323
-Missions share program parts called libraries.
+00:02:30,674 --> 00:02:34,263
+And there's the folder, right beside the game's own missions.
 
 45
-00:02:35,223 --> 00:02:36,574
-They came with the game,
+00:02:35,463 --> 00:02:38,193
+There's one more line, and you type it once.
 
 46
-00:02:37,024 --> 00:02:39,169
-and create kept them just as they are.
+00:02:39,093 --> 00:02:42,368
+Missions share program parts called libraries.
 
 47
-00:02:40,069 --> 00:02:42,707
-But they're mended and published again from time to time,
+00:02:43,268 --> 00:02:44,847
+They came with the game,
 
 48
-00:02:43,157 --> 00:02:46,283
-so this fetches today's build of each one.
+00:02:45,297 --> 00:02:47,722
+and create kept them just as they are.
 
 49
-00:02:48,083 --> 00:02:51,474
-Read the last line: my mission itself was not changed.
+00:02:48,622 --> 00:02:51,218
+But they're mended and published again from time to time,
 
 50
-00:02:52,374 --> 00:02:55,694
-And never leave off the end of this command, update libs,
+00:02:51,668 --> 00:02:54,459
+so this fetches today's build of each one.
 
 51
-00:02:56,144 --> 00:02:58,503
-because without it, fetch does a different job.
+00:02:56,259 --> 00:02:59,658
+Read the last line: my mission itself was not changed.
 
 52
-00:02:59,703 --> 00:03:01,526
-Now I open the mission in the editor,
+00:03:00,558 --> 00:03:04,589
+And never leave off the end of this command, update libs,
 
 53
-00:03:01,976 --> 00:03:04,628
-and I open the folder, not a file.
+00:03:05,039 --> 00:03:08,012
+because without it, fetch does a different job.
 
 54
-00:03:05,528 --> 00:03:07,416
-So it's file, open folder,
+00:03:09,212 --> 00:03:11,103
+Now I open the mission in the editor,
 
 55
-00:03:07,866 --> 00:03:10,373
-one click on my mission, and select folder.
+00:03:11,553 --> 00:03:13,763
+and I open the folder, not a file.
 
 56
-00:03:12,173 --> 00:03:15,739
-VS Code now asks whether I trust this folder.
+00:03:14,663 --> 00:03:16,936
+So it's file, open folder,
 
 57
-00:03:16,639 --> 00:03:18,024
-I wrote it, so yes.
+00:03:17,386 --> 00:03:20,036
+one click on my mission, and select folder.
 
 58
-00:03:18,924 --> 00:03:20,418
-That matters more than it looks,
+00:03:21,836 --> 00:03:24,560
+VS Code now asks whether I trust this folder.
 
 59
-00:03:20,868 --> 00:03:24,565
-because until you say yes, the add-on only colors the file,
+00:03:25,460 --> 00:03:26,829
+I wrote it, so yes.
 
 60
-00:03:25,015 --> 00:03:27,547
-and its checking waits.
+00:03:27,729 --> 00:03:29,550
+That matters more than it looks,
 
 61
-00:03:29,347 --> 00:03:30,683
-There are seven files here.
+00:03:30,000 --> 00:03:34,169
+because until you say yes, the add-on only colors the file,
 
 62
-00:03:31,583 --> 00:03:34,634
-This one is yours: mission.amd.
+00:03:34,619 --> 00:03:36,754
+and its checking has to wait.
 
 63
-00:03:35,534 --> 00:03:38,399
-This one, you'll change a few lines of, later on.
+00:03:38,554 --> 00:03:39,802
+There are seven files here.
 
 64
-00:03:38,849 --> 00:03:40,739
-And the other five are plumbing.
+00:03:40,702 --> 00:03:43,420
+This one is yours: mission.amd.
 
 65
-00:03:41,939 --> 00:03:45,671
-There are three signs that the add-on is alive.
+00:03:44,320 --> 00:03:48,199
+This one, you'll change a few lines of, later on.
 
 66
-00:03:46,571 --> 00:03:50,592
-There's color, and there are the letters A M D down here,
+00:03:48,649 --> 00:03:50,553
+And the other five are plumbing.
 
 67
-00:03:51,042 --> 00:03:54,250
-and there's the outline: eight headings, one inside another.
+00:03:51,753 --> 00:03:54,998
+There are three signs that the add-on is alive.
 
 68
-00:03:56,050 --> 00:03:57,837
-Now I'll break something on purpose.
+00:03:55,898 --> 00:03:59,370
+There's color, and there are the letters A M D down here,
 
 69
-00:03:58,737 --> 00:04:01,985
-On line forty-seven, I take off the part in round brackets,
+00:03:59,820 --> 00:04:02,942
+and there's the outline: eight headings, one inside another.
 
 70
-00:04:02,435 --> 00:04:05,093
-and a red wavy line appears.
+00:04:04,742 --> 00:04:06,258
+Now I'll break something on purpose.
 
 71
-00:04:05,993 --> 00:04:09,080
-It's telling me the heading has lost its key.
+00:04:07,157 --> 00:04:09,853
+Line forty-seven is the heading of a scan record:
 
 72
-00:04:09,980 --> 00:04:11,856
-Control Z, and it's mended.
+00:04:10,303 --> 00:04:13,458
+the words Science shows when the crew scans the hulk.
 
 73
-00:04:12,306 --> 00:04:14,374
-And nobody typed a command.
+00:04:14,358 --> 00:04:16,881
+Here they are in the game, on the Science console,
 
 74
-00:04:16,174 --> 00:04:17,563
-There are two keys to keep:
+00:04:17,331 --> 00:04:19,118
+on the hulk's scan tab.
 
 75
-00:04:18,013 --> 00:04:21,990
-control Z takes back, and control S saves.
+00:04:20,018 --> 00:04:23,328
+Back in the file, I take off the part in round brackets,
 
 76
-00:04:22,890 --> 00:04:25,559
-A dot on the tab means not saved,
+00:04:23,778 --> 00:04:26,153
+and a red wavy line appears.
 
 77
-00:04:26,009 --> 00:04:28,999
-and the game reads the saved file, not my screen.
+00:04:27,053 --> 00:04:29,996
+It's telling me the heading has lost its key.
 
 78
-00:04:30,199 --> 00:04:34,433
-Here's the same check, on the whole mission, from the command prompt.
+00:04:30,896 --> 00:04:32,824
+Control Z, and it's mended.
 
 79
-00:04:35,333 --> 00:04:39,255
-There's one word to look for, and it's clean.
+00:04:33,274 --> 00:04:34,896
+And nobody typed a command.
 
 80
-00:04:40,155 --> 00:04:43,132
-This command has a lecture all to itself.
+00:04:36,696 --> 00:04:38,618
+There are two keys to keep:
 
 81
-00:04:44,332 --> 00:04:47,476
-Now for the game itself.
+00:04:39,068 --> 00:04:42,170
+control Z takes back, and control S saves.
 
 82
-00:04:48,376 --> 00:04:50,938
-A run line starts several copies at once:
+00:04:43,070 --> 00:04:46,188
+A dot on the tab means not saved,
 
 83
-00:04:51,388 --> 00:04:55,340
-a server, which runs the mission, and the consoles I ask for.
+00:04:46,638 --> 00:04:49,432
+and the game reads the saved file, not my screen.
 
 84
-00:04:56,240 --> 00:04:58,164
-I always look first.
+00:04:50,632 --> 00:04:54,476
+Here's the same check, on the whole mission, from the command prompt.
 
 85
-00:04:58,614 --> 00:05:01,969
-Dry run prints what it would start, and starts nothing.
+00:04:55,376 --> 00:04:58,007
+There's one word to look for, and it's clean.
 
 86
-00:05:03,769 --> 00:05:09,031
-So it's server, helm, science, with commas and no spaces.
+00:04:58,907 --> 00:05:01,609
+This command has a lecture all to itself.
 
 87
-00:05:09,931 --> 00:05:12,835
-Then hyphen M and my mission,
+00:05:02,809 --> 00:05:04,280
+Now for the game itself.
 
 88
-00:05:13,285 --> 00:05:18,382
-and map equals nought, which means start the first map without asking me.
+00:05:05,180 --> 00:05:07,607
+A run line starts several copies at once:
 
 89
-00:05:19,282 --> 00:05:21,586
-Good. Now I run it for real.
+00:05:08,057 --> 00:05:11,355
+a server, which runs the mission, and the consoles I ask for.
 
 90
-00:05:23,386 --> 00:05:26,005
-Three windows open, and each one says what it is.
+00:05:12,255 --> 00:05:15,449
+I always look first, before I run anything.
 
 91
-00:05:26,905 --> 00:05:28,221
-Here I am at Helm.
+00:05:15,899 --> 00:05:18,896
+Dry run prints what it would start, and starts nothing.
 
 92
-00:05:28,671 --> 00:05:33,244
-There's the station, and there, nine thousand beyond it, is an unknown hulk.
+00:05:20,696 --> 00:05:25,517
+So it's server, helm, science, with commas and no spaces.
 
 93
-00:05:34,144 --> 00:05:37,059
-I fly to it, and that's the sample quest's first step.
+00:05:26,417 --> 00:05:28,888
+Then hyphen M and my mission,
 
 94
-00:05:38,859 --> 00:05:40,997
-When I'm done, I close all three.
+00:05:29,338 --> 00:05:34,423
+and map equals nought, which means start the first map without asking me.
 
 95
-00:05:41,447 --> 00:05:44,440
-Every one of them, before I start again.
+00:05:35,323 --> 00:05:37,471
+Good. Now I run it for real.
 
 96
-00:05:45,640 --> 00:05:48,942
-There's a second way, with no game windows at all.
+00:05:39,271 --> 00:05:42,371
+Three windows open, and each one says what it is.
 
 97
-00:05:49,842 --> 00:05:52,749
-The tool plays the mission itself, and shows it in my browser.
+00:05:43,271 --> 00:05:46,088
+Here I am at Helm, in the window called helm.
 
 98
-00:05:54,549 --> 00:05:57,615
-It prints about twenty lines, and three of them read like trouble.
+00:05:46,538 --> 00:05:51,496
+There's the station, and there, nine thousand beyond it, is an unknown hulk.
 
 99
-00:05:58,515 --> 00:06:00,885
-They aren't. They're printed for every new mission.
+00:05:52,396 --> 00:05:55,715
+I fly to it, and that's the first step of the sample quest.
 
 100
-00:06:01,785 --> 00:06:04,157
-Then it goes quiet, and the prompt doesn't come back.
+00:05:56,615 --> 00:05:59,308
+Here it is in the Quest Log, on the handheld:
 
 101
-00:06:05,057 --> 00:06:06,498
-That's right, because it's running.
+00:05:59,758 --> 00:06:03,340
+Find the Derelict is done, and Study the Derelict has appeared.
 
 102
-00:06:08,298 --> 00:06:10,253
-So I open this address.
+00:06:04,240 --> 00:06:05,882
+And this is the Science window,
 
 103
-00:06:11,153 --> 00:06:14,225
-This is a drawing of a console, and not the game.
+00:06:06,332 --> 00:06:08,705
+with the hulk in its list of contacts.
 
 104
-00:06:14,675 --> 00:06:16,765
-It's quick, and it's enough for a look.
+00:06:10,505 --> 00:06:12,512
+When I'm done, I close all three.
 
 105
-00:06:17,665 --> 00:06:20,871
-To stop it, press control C, here.
+00:06:12,962 --> 00:06:15,586
+Every one of them, before I start again.
 
 106
-00:06:21,771 --> 00:06:25,497
-And when a lecture says play it, use the game.
+00:06:16,786 --> 00:06:19,548
+There's a second way, with no game windows at all.
 
 107
-00:06:26,697 --> 00:06:29,430
-Here are four slips, so that you've seen them.
+00:06:20,448 --> 00:06:24,176
+The tool plays the mission itself, and shows it in my browser.
 
 108
-00:06:30,330 --> 00:06:32,366
-The first is create, twice.
+00:06:25,976 --> 00:06:29,369
+It prints about twenty lines, and three of them read like trouble.
 
 109
-00:06:32,816 --> 00:06:35,727
-It refuses, and that's the tool protecting your work.
+00:06:30,269 --> 00:06:32,697
+They aren't. They're printed for every new mission.
 
 110
-00:06:36,627 --> 00:06:39,667
-The second is the mission's name where the consoles go:
+00:06:33,597 --> 00:06:37,145
+Then it goes quiet, and the prompt doesn't come back.
 
 111
-00:06:40,117 --> 00:06:43,760
-you get one window and no server, with only this note to tell you.
+00:06:38,045 --> 00:06:39,754
+That's right, because it's running.
 
 112
-00:06:44,660 --> 00:06:46,863
-The third is a space after a comma,
+00:06:41,554 --> 00:06:43,414
+So I open this address.
 
 113
-00:06:47,313 --> 00:06:50,892
-which gives you a window with no name, and no note at all.
+00:06:44,314 --> 00:06:46,985
+This is a drawing of a console, and not the game.
 
 114
-00:06:52,692 --> 00:06:54,105
-And the fourth you've already met:
+00:06:47,435 --> 00:06:49,389
+It's quick, and it's enough for a look.
 
 115
-00:06:54,555 --> 00:06:58,221
-an untrusted folder, and a file that's colored but not checked.
+00:06:50,289 --> 00:06:52,898
+To stop it, press control C, here.
 
 116
-00:06:59,121 --> 00:07:02,650
-The page has tables of more than thirty, and each one was tried.
+00:06:53,798 --> 00:06:56,498
+And when a lecture says play it, use the game.
 
 117
-00:07:03,850 --> 00:07:06,952
-Now make a second mission, called Practice, without the page.
+00:06:57,698 --> 00:07:00,416
+Here are four slips, so that you've seen them.
 
 118
-00:07:07,852 --> 00:07:09,211
-Open it, trust it,
+00:07:01,316 --> 00:07:03,301
+The first is create, twice.
 
 119
-00:07:09,661 --> 00:07:12,142
-break line forty-seven and mend it,
+00:07:03,751 --> 00:07:07,122
+It refuses, and that's the tool protecting your work.
 
 120
-00:07:12,592 --> 00:07:14,814
-and then fly it with one console.
+00:07:08,022 --> 00:07:11,447
+The second is the mission's name where the consoles go:
 
 121
-00:07:16,614 --> 00:07:19,533
-After that, open My Mission again, and leave it open.
+00:07:11,897 --> 00:07:16,684
+you get one window and no server, with only this note to tell you.
 
 122
-00:07:20,433 --> 00:07:23,412
+00:07:17,584 --> 00:07:19,970
+The third is a space after a comma,
+
+123
+00:07:20,420 --> 00:07:24,315
+which gives you a window with no name, and no note at all.
+
+124
+00:07:26,115 --> 00:07:27,480
+And the fourth you've already met:
+
+125
+00:07:27,930 --> 00:07:31,657
+an untrusted folder, and a file that's colored but not checked.
+
+126
+00:07:32,557 --> 00:07:36,363
+The page has tables of more than thirty, and each one was tried.
+
+127
+00:07:37,563 --> 00:07:41,341
+Now make a second mission, called Practice, without the page.
+
+128
+00:07:42,241 --> 00:07:45,174
+Open it in VS Code, trust it,
+
+129
+00:07:45,624 --> 00:07:47,692
+break line forty-seven and mend it,
+
+130
+00:07:48,142 --> 00:07:50,223
+and then fly it with one console.
+
+131
+00:07:52,023 --> 00:07:56,235
+After that, open My Mission again, and leave it open.
+
+132
+00:07:57,135 --> 00:08:00,957
 Next time, you'll learn the marks that file is written in.

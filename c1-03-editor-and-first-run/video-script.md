@@ -1,5 +1,15 @@
 # C1-3 video script - Your editor and your first run
 
+> **Reworked 2026-10-14: say what the crew sees.**
+>
+> - The title in the `create` line is now named as what it is: the line in the server's
+>   list of missions. A still of that list with The Cold Hulk in it follows the words.
+> - Before line 47 is broken, the script says what it is (the heading of the hulk's hull
+>   reading) and shows that reading on Science's `Scan` tab.
+> - The play scene opens the Quest Log when Find the Derelict is done, and shows the hulk
+>   on the NEW Science console (chip rail, tabs over the map). Every Science still is
+>   retaken on that console, under a new id.
+
 > **Rewritten 2026-10-05 for a 1.4.0 install, got from Steam or itch.io.**
 >
 > - Removed: the second ending of `sbs create` (old libraries), the table "Checking,
@@ -129,7 +139,17 @@ from and means it was not run. "UNSEEN" means nobody has looked at it.
     saw the Helm window come up as a second Engineering console. If it happens on
     camera, close everything and add `--settle 4`.
 19. The hulk is in Science's list; the first step finishes inside 2000. (Other pilots of
-    this class, in the engine. Not this one.)
+    this class, in the engine. Not this one.) The Quest Log then shows Find the Derelict
+    `Done` and Study the Derelict `Active`, under First Contact. (Read: the library's
+    Quest Log renderer. On screen: UNSEEN.)
+19a. The new Science console (the default since 2026-10-13): a contact list while nothing
+    is selected; a selected contact's scan tabs stacked over the map, `Scan` first, each
+    reading `Queue <Tab>` until scanned, with an `In Queue` row last; the read-out of the
+    chosen tab beside the map. (Read: LegendaryMissions `consoles\science_tabs.py` and
+    `science_panel.py`.) On screen: UNSEEN until the `_sci2` stills are taken.
+19b. The server's list of missions shows `The Cold Hulk` (`Visible Mission Name:` in
+    `description.yaml`). (Read. On screen: UNSEEN; the run line with `map=0` skips that
+    list, so the still is taken with the game started by hand.)
 20. Closing the command prompt leaves the game running and stops the rehearsal. The
     first half was seen (the block at the top). The second is REASONED. The page marks
     both rows. Try both off camera and take the marks off.
@@ -185,15 +205,16 @@ the three dots, and then install from V S I X. ||| One warning, though: don't se
 ### 4. Make the mission
 
 **Screen:** The command prompt. Point at the prompt line. `sbs templates`. Then the
-`create` line, typed slowly. The question. Enter. `MyMission is ready.` Point at the
+`create` line, typed slowly. At the title, a still of the server's list of missions with
+The Cold Hulk in it. The question. Enter. `MyMission is ready.` Point at the
 line under it: the libraries were already here. Then File Explorer: the new folder.
 
 **Say:** "Now back to the window from last time. || Check the line first: it should end in
 data, missions. || First I ask what I can start from, | and there are five templates. || We
 want this one, A M D. ||| Now the line that makes a mission. || It's create, then the
-folder's name, with no spaces. | Then hyphen T, and the template. || Then two hyphens,
-title, | and in quote marks, the name the crew will see. ||| It stops to ask one question, |
-and Enter means yes. || And there's the folder, right beside the game's own missions. ||"
+folder's name, with no spaces. | Then hyphen T, and the template. || Then two hyphens and the word title, | and in quote marks, the mission's title. || That's the line the server will show in
+its list of missions, | the same list you chose Legendary Missions from. ||| It stops to ask one question, |
+and pressing Enter means yes. || And there's the folder, right beside the game's own missions. ||"
 
 ### 5. Bring the libraries up to date
 
@@ -214,20 +235,23 @@ the seven.
 **Say:** "Now I open the mission in the editor, | and I open the folder, not a file. || So
 it's file, open folder, | one click on my mission, and select folder. ||| VS Code now asks
 whether I trust this folder. || I wrote it, so yes. || That matters more than it looks, |
-because until you say yes, the add-on only colors the file, | and its checking waits. |||
+because until you say yes, the add-on only colors the file, | and its checking has to wait. |||
 There are seven files here. || This one is yours: mission.amd. || This one, you'll change a
 few lines of, later on. | And the other five are plumbing. ||"
 
 ### 7. The add-on at work
 
 **Screen:** Click `mission.amd`. Point at a colored heading, at `AMD` in the Status Bar,
-open **Outline**. Go to line 47, delete `(derelict_scan)`. The wavy line. **View**,
+open **Outline**. Cut to the game: Science, the hulk selected, its `Scan` tab and the hull
+reading. Back to VS Code: go to line 47, delete `(derelict_scan)`. The wavy line. **View**,
 **Problems**. `Ctrl+Z`. Then type a space, show the dot on the tab, `Ctrl+Z`, `Ctrl+S`.
 
 **Say:** "There are three signs that the add-on is alive. || There's color, and there are
 the letters A M D down here, | and there's the outline: eight headings, one inside another.
-||| Now I'll break something on purpose. || On line forty-seven, I take off the part in
-round brackets, | and a red wavy line appears. || It's telling me the heading has lost its
+||| Now I'll break something on purpose. || Line forty-seven is the heading of a scan record:
+| the words Science shows when the crew scans the hulk. || Here they are in the game, on the
+Science console, | on the hulk's scan tab. || Back in the file, I take off the part in round
+brackets, | and a red wavy line appears. || It's telling me the heading has lost its
 key. || Control Z, and it's mended. | And nobody typed a command. ||| There are two keys to
 keep: | control Z takes back, and control S saves. || A dot on the tab means not saved, |
 and the game reads the saved file, not my screen. ||"
@@ -243,16 +267,19 @@ one word to look for, and it's clean. || This command has a lecture all to itsel
 
 **Screen:** The `run` line with `--dry-run`. Three lines. Up arrow, rub out `--dry-run`,
 Enter. Three windows open. Point at each title bar. In `helm`: find DS 1 and the Unknown
-Hulk, set a course, engines. In `science`: the hulk in the list. Close all three.
+Hulk, set a course, engines. The handheld, **Quests**: Find the Derelict `Done`. In
+`science` (the new console): the hulk in the contact list. Close all three.
 
 **Say:** "Now for the game itself. || A run line starts several copies at once: | a server,
-which runs the mission, and the consoles I ask for. || I always look first. | Dry run prints
+which runs the mission, and the consoles I ask for. || I always look first, before I run anything. | Dry run prints
 what it would start, and starts nothing. ||| So it's server, helm, science, with commas and
 no spaces. || Then hyphen M and my mission, | and map equals nought, which means start the
 first map without asking me. || Good. Now I run it for real. ||| Three windows open, and
-each one says what it is. || Here I am at Helm. | There's the station, and there, nine
-thousand beyond it, is an unknown hulk. || I fly to it, and that's the sample quest's first
-step. ||| When I'm done, I close all three. | Every one of them, before I start again. ||"
+each one says what it is. || Here I am at Helm, in the window called helm. | There's the station,
+and there, nine thousand beyond it, is an unknown hulk. || I fly to it, and that's the
+first step of the sample quest. || Here it is in the Quest Log, on the handheld: | Find the
+Derelict is done, and Study the Derelict has appeared. || And this is the Science window, |
+with the hulk in its list of contacts. ||| When I'm done, I close all three. | Every one of them, before I start again. ||"
 
 ### 10. The rehearsal
 
@@ -284,7 +311,6 @@ not checked. || The page has tables of more than thirty, and each one was tried.
 
 **Screen:** The exercise on the companion page.
 
-**Say:** "Now make a second mission, called Practice, without the page. || Open it, trust
-it, | break line forty-seven and mend it, | and then fly it with one console. ||| After
+**Say:** "Now make a second mission, called Practice, without the page. || Open it in VS Code, trust it, | break line forty-seven and mend it, | and then fly it with one console. ||| After
 that, open My Mission again, and leave it open. || Next time, you'll learn the marks that
 file is written in. ||"

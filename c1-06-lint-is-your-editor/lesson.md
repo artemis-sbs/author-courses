@@ -72,7 +72,8 @@ not find your fact sheet at all.
 
 ## Step 2 - Break 1: a field name
 
-Find the record **Find the Derelict**. In its fence, change `Done when:` to `Done wen:`.
+Find the record **Find the Derelict**. In the game it is the first step under First
+Contact in the Quest Log. In its fence, change `Done when:` to `Done wen:`.
 
 ```
 Done wen: signal derelict_found
@@ -155,7 +156,8 @@ VS Code, click just in front of the first curly mark and look at the bottom of t
 window. It says `Ln 31, Col 24`.
 
 Read each sentence to its end again. It says what the game does: it cannot draw the curly
-mark, and it shows the plain one in its place. So the crew would read this:
+mark, and it shows the plain one in its place. So in the Quest Log, when the crew selects
+Find the Derelict, the pane would read this:
 
 ```
 Fly out and locate the "ghost ship". It isn't answering.
@@ -290,7 +292,10 @@ Type the `---` back under `Tab: scan`. Save. Run lint: `clean`.
 This is break 3 again in another place: the line lint names is not always the line you
 changed. Read the sentence. It says where to look.
 
-If you had played it: the hulk keeps its `mat` reading and has no `scan` reading.
+If you had played it: Science could never finish scanning the hulk. Its first button
+keeps saying `Queue Scan` however often you press it, and its name stays `unknown`.
+Derelict Hull is the record behind that `Scan` tab, and without its text the scan never
+completes.
 
 ## Step 6 - Break 5: the number of hashes
 
@@ -505,12 +510,12 @@ a minute and then read the two logs.
 First see what a log looks like when the game has something to say.
 
 1. Put the first half of break 5 back: four hashes on **Derelict Hull**. Save.
-2. Start your mission the way you did in Lecture 3, and take a console.
-3. Open the quest list. At the top of the console, beside your crew member's name, is a
-   handheld icon. It opens the ePADD. Choose **Quests** to open the **Quest Log**. The
-   list is on the left, and **First Contact** is in it. Select it: its `State` and its
-   text are on the right. Nothing looks wrong, because the game took the extra hash off
-   for you.
+2. Start your mission the way you did in Lecture 3, with its `science` window.
+3. Derelict Hull is a scan record, so look for it on Science. In the `science` window,
+   select the hulk, in the contact list or on the map. Its scan tabs come up over the map.
+   Press **Scan** (if it reads **Queue Scan**, press it and wait for the scan). The hull
+   reading is in the read-out beside the map. Nothing looks wrong, because the game took
+   the extra hash off for you.
 4. Close the game.
 5. In VS Code, open `mast.runtime.log` from the file list.
 
@@ -529,7 +534,8 @@ Now mend it.
 6. Take the fourth hash off. Save. Run lint: `clean`.
 7. Open `mast.runtime.log` again. The line is still there. Lint leaves the logs alone:
    they are the game's notes on your last play, and they stay until you play again.
-8. Play again. Open the quest list as before. **First Contact** is in it.
+8. Play again. On Science, select the hulk and press **Scan**, as before. The hull
+   reading is there.
 9. Close the game. Open `mast.compile.log` and `mast.runtime.log`. Both are empty. The
    game starts each play with two empty logs.
 

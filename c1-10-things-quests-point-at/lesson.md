@@ -40,7 +40,7 @@ Two words for this lecture:
 
 | Word | Meaning |
 |---|---|
-| Tab | One page of what Science learns about an object. There are five: `scan`, `status`, `intel`, `mat`, `bio` |
+| Tab | One page of what Science learns about an object. There are five: `scan`, `status`, `intel`, `mat`, `bio`. On Science each tab is a button under the selected contact's name, in the lower left, and its text is shown in the read-out on the right |
 | Landmark | A thing on the map that you place by writing a record |
 
 One idea runs through the whole lecture. A quest never names an object. It names a role,
@@ -65,7 +65,8 @@ that record on a role of your own. Three records are under the line now:
 | Derelict Materials | `derelict` | `mat` |
 | Derelict Intel | `ghost_ship` | `intel` |
 
-The hulk wears both roles, so it has text on three tabs.
+The hulk wears both roles, so it has text on three tabs. You can see them on Science:
+click the hulk on the map, and its tab buttons are **Scan**, **Intel** and **Mat**.
 
 Here is the first record again:
 
@@ -108,6 +109,9 @@ Tab: bio
 ```
 
 Three readings this time. Save with `Ctrl+S`, and run lint: `clean`.
+
+You will see this on Science: the hulk gets a fourth button, **Bio**. Press it, and the
+read-out on the right shows one of your three readings.
 
 Five rules for scan text. Lint checks the first four. Nothing checks the fifth.
 
@@ -217,7 +221,8 @@ Three numbers with commas between them.
 | Your lifeboat | `6000, 0, 6000` |
 
 The middle number is height. Leave it at `0`. The first and the third say where on the
-map. Your lifeboat is about 8500 from DS 1 and about 6700 from the hulk.
+map. Your lifeboat is about 8500 from DS 1 and about 6700 from the hulk. You will see it
+on Helm's map and on Science's, off to one side of the hulk.
 
 Write all three numbers, and write each one plain: `6000`, not `6,000`. With fewer than
 three numbers, or with no `Loc:` line, the lifeboat is put at `0, 0, 0`, which is inside
@@ -272,6 +277,9 @@ Tab: intel
 Give every role a `scan` tab before you give it any other. `scan` is the first look: it
 is the tab the ship's own sensors ask for.
 
+You will see these on Science when you select the lifeboat: two buttons, **Scan** with the
+hull line, and **Intel** with the flight log.
+
 Save. Run lint: `clean`.
 
 ## Step 5 - Point the story at it
@@ -279,7 +287,8 @@ Save. Run lint: `clean`.
 The story goes hulk, then home. Put the lifeboat in the middle.
 
 First the new step. Find **Close Inspection** in the Quests section. Type this directly
-below its description line, above **Bring the Log Home**:
+below the last line of its description, the one that ends `somebody aboard needs help.`,
+above **Bring the Log Home**:
 
 ```
 #### [Find the Lifeboat](boat)
@@ -304,7 +313,7 @@ sbs lint MyMission
 
 ```
 == mission.amd ==
-  [WARNING] line 75: `Find the Lifeboat` waits to be revealed, and nothing reveals it: no `Then: reveal salvage/boat` on another step, and no answer or story line names `boat`. It never appears, and the story it belongs to cannot finish (never-revealed)
+  [WARNING] line 89: `Find the Lifeboat` waits to be revealed, and nothing reveals it: no `Then: reveal salvage/boat` on another step, and no answer or story line names `boat`. It never appears, and the story it belongs to cannot finish (never-revealed)
 
 1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```
@@ -341,12 +350,43 @@ point at a landmark by its key, so one word for both means you cannot pick the w
 And when the `Roles:` line is missing, lint can then tell you exactly what happened. Step
 6 shows you.
 
+### Who gives the order
+
+One more line, and this one is for the crew. The order to bring the log home comes from
+DS 1, so show them DS 1. You will see it in the Quest Log: select **Salvage Run**, and a
+small picture of the station sits at the top of its briefing, with your words beside it.
+
+Find Salvage Run's description, the line that starts `The hulk's reactor is failing.`
+Click at the very start of that line, type this, and press Enter twice:
+
+```
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+```
+
+| Part | Meaning |
+|---|---|
+| `![]` | A picture, not words. Nothing goes between the square brackets |
+| `(ship://starbase_command)` | Which picture: a ship from the game's own list, the same list `Art:` takes its word from. `starbase_command` is the art DS 1 is made with: it is on line 64 of `story.mast` |
+| The words after it | Drawn beside the picture |
+
+Copy `starbase_command` exactly, as you would an `Art:` word. Lint cannot check it.
+
+Save. Run lint: `clean`.
+
 ## Your finished pieces
 
 At the top of the file, in your word list:
 
 ```
 // ROLE    lifeboat          worn by The Lifeboat, a landmark in this file
+```
+
+At the top of Salvage Run's description:
+
+```
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
+The hulk's reactor is failing. Get her flight log back to DS 1 before she goes.
 ```
 
 In the Quests section, inside Salvage Run:
@@ -364,6 +404,12 @@ Part of: salvage
 Required: true
 ---
 The hulk is not answering hails. Bring the ship in close and take a look.
+
+DS 1 has called her on every channel for an hour. Nothing has come back, not even a carrier wave.
+
+## Why it matters
+
+A ship with nobody at the helm is a danger to every lane near the border. If she is empty, DS 1 needs to know why. If she is not, somebody aboard needs help.
 
 #### [Find the Lifeboat](boat)
 ---
@@ -444,9 +490,9 @@ Delete the `Roles: lifeboat` line from The Lifeboat's fence. Save. Run lint.
 
 ```
 == mission.amd ==
-  [WARNING] line 77: `lifeboat` is the KEY of the landmark `The Lifeboat`, and `reach` looks for a ROLE. Nothing wears a role called `lifeboat`, so this matches nothing. Add `Roles: lifeboat` to that landmark's fence (role-is-a-key)
-  [WARNING] line 146: `lifeboat` is the KEY of the landmark `The Lifeboat`, and `Scan of:` looks for a ROLE. Nothing wears a role called `lifeboat`, so this matches nothing. Add `Roles: lifeboat` to that landmark's fence (role-is-a-key)
-  [WARNING] line 153: `lifeboat` is the KEY of the landmark `The Lifeboat`, and `Scan of:` looks for a ROLE. Nothing wears a role called `lifeboat`, so this matches nothing. Add `Roles: lifeboat` to that landmark's fence (role-is-a-key)
+  [WARNING] line 93: `lifeboat` is the KEY of the landmark `The Lifeboat`, and `reach` looks for a ROLE. Nothing wears a role called `lifeboat`, so this matches nothing. Add `Roles: lifeboat` to that landmark's fence (role-is-a-key)
+  [WARNING] line 162: `lifeboat` is the KEY of the landmark `The Lifeboat`, and `Scan of:` looks for a ROLE. Nothing wears a role called `lifeboat`, so this matches nothing. Add `Roles: lifeboat` to that landmark's fence (role-is-a-key)
+  [WARNING] line 169: `lifeboat` is the KEY of the landmark `The Lifeboat`, and `Scan of:` looks for a ROLE. Nothing wears a role called `lifeboat`, so this matches nothing. Add `Roles: lifeboat` to that landmark's fence (role-is-a-key)
 
 1 amd + 1 mast file(s): 0 error(s), 3 warning(s)
 ```
@@ -572,17 +618,22 @@ Start your mission as the server with a Helm console and a Science console.
 
 1. Open the Quest Log, as you did in Lecture 8: the handheld icon at the top, then
    **Quests**. **Salvage Run** is there with two steps under it: Close Inspection and
-   Quick Work.
+   Quick Work. Select Salvage Run: DS 1's picture is at the top of its briefing, beside
+   your words.
 2. Fly to the Unknown Hulk. Inside 500, Close Inspection shows `Done`, and **Find the
    Lifeboat** is now in the list.
-3. On Science, select the hulk in the list on the right. It has four tabs with text:
-   `scan`, `mat`, `intel` and your `bio`. Open `bio`. One of your three readings is there.
-4. Fly to The Lifeboat. It is about 6700 from the hulk. On Science, select it. It has
-   your two tabs, `scan` and `intel`.
+3. On Science, click the hulk on the map. (While nothing is selected, Science also lists
+   its contacts on the right, and you can click the hulk's line there.) Its tab buttons
+   are in the lower left, under its name: **Scan** at the top, then **Intel**, **Mat** and
+   your **Bio**. Press **Bio**. One of your three readings is in the read-out on the right.
+4. Fly to The Lifeboat. It is about 6700 from the hulk. On Science, click its icon on the
+   map: a white icon with no name, and it is not in the contact list. It has your two
+   tabs. **Scan** already shows your hull line. The other button reads **Queue Intel**:
+   press it, the scan runs, and then **Intel** shows the flight log line.
 5. Inside 500 of the lifeboat, Find the Lifeboat shows `Done`, and **Bring the Log Home**
    is now in the list.
-6. Fly back to DS 1, about 8500 away. Inside 1000, the game ends with your `Win:`
-   sentence.
+6. Fly back to DS 1, about 8500 away. Inside 1000, the game ends. The end screen, **Game
+   results**, carries your `Win:` sentence.
 7. Close the game. Open `mast.compile.log` and `mast.runtime.log`. Both are empty.
 
 First Contact, the template's own story, finishes its steps at the hulk too, as it did in
@@ -606,7 +657,7 @@ pressing a button. How much they fill depends on whose the thing is.
 | Thing | The ship's own sensors fill | Left for Science to scan |
 |---|---|---|
 | The hulk. It is on your side | Every tab that has text | Nothing |
-| The lifeboat. It has no side | `scan` | `intel` |
+| The lifeboat. It has no side | `scan` | `intel`. Its button reads **Queue Intel** until Science presses it |
 
 So do not be surprised if the hulk's tabs already have their text the first time Science
 selects it. And that is why Step 4 said to give every role a `scan` tab first.
@@ -629,8 +680,9 @@ the crew to do something, use `reach`.
 | The game is won at the hulk | A step under Salvage Run has the wrong number of hashes. Lecture 9, Step 7 |
 | The lifeboat has no scan text | No `Roles:` line, or the `Scan of:` word is not the role, or its two scan records are typed below The Lifeboat and not in the Scans section |
 | The lifeboat's first tab shows the line about the flight log | Both of its records say `Tab: scan` |
-| The hulk's new tab is not there | The `Scan of:` word is not `derelict`, the `Tab:` word is not one of the five, or the record has four hashes |
-| The hulk's first tab shows your new text | Your record has no `Tab:` line |
+| On Science, the hulk has no **Bio** button | The `Scan of:` word is not `derelict`, the `Tab:` word is not one of the five, or the record has four hashes |
+| On Science, the hulk's **Scan** tab shows your new text | Your record has no `Tab:` line |
+| No picture at the top of Salvage Run's briefing | Check the line against Step 5, character by character: the `!`, the empty square brackets, then `(ship://starbase_command)` straight after them, with no space |
 | A reading shows a word in curly brackets | You typed `{word}`. It is shown as written. Take the brackets out |
 | Half a sentence on a tab | A reading split over two lines |
 | Find the Lifeboat never appears | Close Inspection still says `Then: reveal salvage/home`. Lint's `never-revealed` gives the line to write |

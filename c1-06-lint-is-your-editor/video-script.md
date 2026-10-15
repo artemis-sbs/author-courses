@@ -1,5 +1,15 @@
 # C1-6 video script - Lint is your editor
 
+> **Reworked 2026-10-14: say what the crew sees.** Each break now names the console where
+> the broken thing shows: Find the Derelict in the Quest Log (breaks 1 and 2: the curly
+> marks are "read" in the Quest Log's pane), Derelict Hull on Science's `Scan` tab (breaks
+> 4 and 5). Scene 10 plays the four-hash break and checks Derelict Hull ON SCIENCE, not
+> in the Quest Log. Note: with four hashes the game reads the record as three, so the
+> `Scan` tab is NOT empty there (Confirm item 7: "the hulk has both tabs"); the empty
+> `Scan` tab belongs to break 4 (item 10), and scene 7 now shows it. Science stills are on
+> the NEW console, ids `_sci2`, not taken yet.
+
+
 > **STATE ON 2026-10-05. Read this first; where an older note below disagrees, this is
 > newer.**
 >
@@ -97,7 +107,9 @@ pass did not start the engine.
    of 24 and 23 bytes, the same after four lint runs; a fresh folder has no logs after
    lint.)
 7. Break 5 with four hashes, played: all three quests are there, the hulk has both tabs,
-   and `mast.runtime.log` holds exactly the one line on the page. (Engine, and Mock: the
+   and `mast.runtime.log` holds exactly the one line on the page. (2026-10-14: scene 10
+   now shows this on Science's NEW console, the `Scan` tab with its reading. On screen:
+   UNSEEN until `game_hull4_sci2` is taken.) (Engine, and Mock: the
    same line.) After the fix and a second play both logs are empty. (Mock.)
 8. Where the quest list is: the handheld icon beside the crew member's name, the ePADD,
    **Quests**, the **Quest Log**, the list on the left, `State` and the text on the
@@ -105,8 +117,9 @@ pass did not start the engine.
 9. Curly quotes in a description are drawn as plain `"` and `'`. (Engine, seen on Helm.)
    A long dash as `-`, three dots as `...`, an accent dropped, an emoji left out. (Mock:
    that is the text the game holds. UNSEEN on a screen.)
-10. Break 4, played: the hulk keeps its `mat` reading and has no `scan` reading. (Engine,
-    and Mock.)
+10. Break 4, played: SEEN in the engine 2026-10-14 on the new console. The hulk can never
+    be scanned: its first button stays `Queue Scan` however often it is pressed, the
+    title stays `unknown`, and `mast.runtime.log` holds the line-48 error. (`game_b4_sci2`.)
 11. Break 5 with one hash, played: the hulk has no scan text at all, and the log holds
     the sentence of lint's first finding, word for word. (Mock only. UNSEEN.)
 12. `Ctrl+G` goes to a line; with the caret just in front of the first curly mark the
@@ -151,10 +164,9 @@ mission in five places, on purpose. |||"
 
 **Screen:** A manuscript page with an editor's marks on it. Then the command prompt.
 
-**Say:** "Lint is a program that reads your files and lists whatever looks wrong, | and it
-changes nothing. || Think of the editor at a publisher: | she reads, and she marks, | and
+**Say:** "Lint is a program that reads your files and lists whatever looks wrong, | and it changes nothing at all. || Think of the editor at a publisher: | she reads, and she marks, | and
 you're the one who does the fixing. ||| The habit has four beats. || You change something,
-and you save. | Then you run lint, | and you read the first line it prints. |||"
+and you save. | Then you run lint on it, | and you read the first line it prints. |||"
 
 ### 3. A file with nothing wrong
 
@@ -166,37 +178,42 @@ warnings. ||| Read that count line every time, | even when it says clean. |||"
 
 ### 4. Break 1: a field name
 
-**Screen:** In Find the Derelict, change `Done when:` to `Done wen:`. `Ctrl+S`. Up arrow,
+**Screen:** The Quest Log, Find the Derelict selected. Then in Find the Derelict, change
+`Done when:` to `Done wen:`. `Ctrl+S`. Up arrow,
 Enter. Highlight the four parts of the finding, one at a time. `Ctrl+G`, `28`. Then
 highlight the three parts of the sentence.
 
-**Say:** "I'm going to misspell one field, | then save, and run lint. || And I get one
+**Say:** "This is the Quest Log, | and Find the Derelict is the first step under First
+Contact. || In the file, I'm going to misspell one of its fields, | then save, and run lint.
+|| And I get one
 warning. ||| Every finding has four parts. || First there's the level, which here is
-warning. || Then there's the place, | which is line twenty-eight, character one. || Then
+warning. || Then there's the place it's found, | which is line twenty-eight, character one. || Then
 comes the sentence itself. || And at the very end, in brackets, there's the code, | which is
 lint's short name for this kind of mistake. ||| Now read the sentence all the way to the
 end, | because it tells you three things. || First, what's wrong: Done wen is not a field a
 quest has. || Next, what the game does about it: nothing reads this line. || And last, what
 to write instead: did you mean Done when. ||| So I fix it, I save, | I run lint again, and
-it's clean. ||| Now, that was only a warning, | so I could have played this mission. || But
-with that one word misspelled, | this step can never finish. || A warning can stop your
+it's clean. ||| Now, that was only a warning, | so I could have played this mission. || But with that one word misspelled, | this step can never finish, | and the Quest Log
+would show it active for the whole game. || A warning can stop your
 story just as surely as an error. |||"
 
 ### 5. Break 2: words from a word processor
 
-**Screen:** The word processor. Copy the sentence. Paste it over the description. Save,
+**Screen:** The Quest Log, Find the Derelict selected, its description in the pane. The
+word processor. Copy the sentence. Paste it over the description. Save,
 lint. Three warnings. Point at `31:24`, `31:35`, `31:44`. Click in front of the first
-curly mark: the status bar. Retype the three marks. Lint: clean. Put the first sentence
-back.
+curly mark: the status bar. Retype the three marks. Lint: clean. The Quest Log with the curly-quote sentence: plain marks. Put the first
+sentence back.
 
-**Say:** "Every writer does this next one. || I wrote my line in a word processor, | and it
-quietly made my quote marks curly. || So now I get three warnings, | one for each mark. |||
+**Say:** "Every writer does this next one, | and it's to the words in this pane, | the
+description of Find the Derelict in the Quest Log. || I wrote my line in a word processor, | and it
+quietly made my quote marks curly. || So now I get three warnings, | one warning for each mark. |||
 All three are on line thirty-one, | and this second number tells me how far along the line
 to look. || Read to the end again: | the game can't draw this mark, | so it shows the plain
-one in its place. || That means the crew would still read my sentence. ||| It's a warning
+one in its place. || So in the Quest Log, the crew would still read my sentence, | with plain quote marks
+where I typed curly ones. ||| It's a warning
 all the same, | because the game only has a plain twin for some characters, | and an emoji,
-for instance, is simply left out. || So I delete each mark and press the plain key, | and
-it's clean again. |||"
+for instance, is simply left out. || So I delete each mark and press the plain key, | and lint says it's clean again. |||"
 
 ### 6. Break 3: a key that no longer matches
 
@@ -205,10 +222,9 @@ Highlight `line 29`, go to line 29. Highlight `line 36`, go to line 36. Then
 `sbs lint MyMission --missing`. Put the key back. Lint: clean.
 
 **Say:** "This time I rename a key, on line thirty-three. || Lint complains about line
-twenty-nine and line thirty-six, | and it says nothing at all about thirty-three. || So why
-is that? ||| Line twenty-nine points at the old key, | and no record has that key any more,
-| so nothing is revealed. || And line thirty-six is the step I renamed. | It's waiting to be
-revealed, | and now nothing reveals it. ||| Those are the two ends of one broken link, | and
+twenty-nine and line thirty-six, | and it says nothing at all about thirty-three. || So why would that be? ||| Line twenty-nine points at the old key, | and no record has that key any more,
+| so nothing at all is revealed. || And line thirty-six is the step I renamed. | It's waiting to be
+revealed, | and now nothing reveals it, | so it would never appear in the Quest Log. ||| Those are the two ends of one broken link, | and
 lint names the line that points, and the line that waits. ||| There's a second way to ask,
 too. || If I run lint with the word missing on the end, | I get a list of every key I've
 pointed at and haven't written yet. || While I'm drafting, that's my to-do list. ||| So I
@@ -216,15 +232,17 @@ put the key back, | and both warnings go away, and it's clean. |||"
 
 ### 7. Break 4: a fence left open
 
-**Screen:** In Derelict Hull, delete the second `---`. Save, lint. One error. Highlight
+**Screen:** Science, the hulk's `Scan` tab with its hull reading. In Derelict Hull,
+delete the second `---`. Save, lint. One error. Highlight
 `line 48`, then line 48 in the file, then the last words of the sentence. Type `---` back.
 Lint: clean.
 
-**Say:** "Now I delete just one line, | the three hyphens that close this fence. || And that
-gets me my first error. ||| I deleted line fifty-one, | but lint names line forty-eight. ||
+**Say:** "Now it's Derelict Hull's turn, | the hull reading on Science, on the hulk's
+scan tab. || I delete just one line, | the three hyphens that close this fence. || And that
+gets me my first error. ||| The line I deleted was fifty-one, | but lint names line forty-eight. ||
 That's the line where the fence opens, | the fence that now never closes. || And the
 sentence tells me the rest: | the lines under the fields were read as fields, | so this
-record has no text. || It gives me the fix as well, | which is to add a line of three
+record has no text. || In the game, Science can never finish scanning the hulk: | its Scan button just keeps saying Queue Scan, | and the hulk stays unknown. || It gives me the fix as well, | which is to add a line of three
 hyphens under the last field. ||| So I type it back, and it's clean. || It's the same lesson
 as the last break: | the line lint names isn't always the line I changed, | so let the
 sentence tell you where to look. |||"
@@ -236,15 +254,14 @@ clean. Then take two hashes off, so the heading has one. Save, lint. Six finding
 Highlight only the first. Point at lines 55 and 62 in the file. Type the hashes back. Lint: clean.
 
 **Say:** "The hashes say where a record sits. || So let's give this one a hash too many, |
-and that's one error. || This heading has four, | and the one it sits under has two. || And
+and that gives me one error. || This heading now has four hashes, | and the one it sits under has two. || And
 look at what the game does about it: | it reads the heading as if it had three. || Here that
-guess happens to be right, | so nothing is lost. ||| In break one, a warning stopped my
-story, | and here an error costs me nothing. || So I don't judge a finding by its level. | I
-read its sentence. ||| I take the extra hash off, | and now let's go the other way, down to
+guess happens to be right, | so nothing at all is lost. ||| In break one, a warning stopped my
+story, | and here an error costs me nothing. || So I don't judge a finding by its level. | I read its sentence instead. ||| I take the extra hash off, | and now let's go the other way, down to
 one hash. || And that gives me six findings. ||| This is the point where people give up, |
-so here's the rule: | read the first one only. || It's about line forty-seven, the line I
+so here's the rule to follow: | read the first one only. || It's about line forty-seven, the line I
 changed, | and it says one hash starts a new title, so give it three. || The others are
-about two records further down, | records I never touched, | and their advice would
+about two records further down, | records that I never touched, | and their advice would
 actually make things worse. ||| So I put the hashes back, | and all six go at once. || Fix
 the first finding, and then run lint again. |||"
 
@@ -255,26 +272,26 @@ the first finding, and then run lint again. |||"
 clean does not mean" table on the page. Delete the note. Lint: clean.
 
 **Say:** "Now for the honest part. || I leave myself a note, | the way I would in a
-manuscript, with a hash in front of it. || And lint says clean. || But in the game, my note
-is part of the description the crew reads. ||| In this file, a note starts with two slashes.
+manuscript, with a hash in front of it. || And lint still says clean. || But in the game, in the Quest
+Log's pane, my note is part of the description the crew reads. ||| In this file, a note starts with two slashes.
 ||| Clean means every shape is one that lint knows, | every key that's pointed at exists, |
 and the story file can be read. || It doesn't mean the mission does what I meant it to. ||
 The page has a short list of the things lint can't see. |||"
 
 ### 10. The second check
 
-**Screen:** Put four hashes on Derelict Hull. Start the game, take a console. The handheld
-icon, the ePADD, Quests, the Quest Log: First Contact in the list. Close the game. Open
+**Screen:** Put four hashes on Derelict Hull. Start the game with Science. Science: the
+hulk selected, its `Scan` tab, the hull reading there. Close the game. Open
 `mast.runtime.log`: one line. Fix, lint: clean. Open the log again: the line is still
-there. Play again: the quest list. Close. Open both logs: empty.
+there. Play again: Science, the `Scan` tab. Close. Open both logs: empty.
 
-**Say:** "Lint reads your files, | but it doesn't run them. || So the second check is to
+**Say:** "Lint reads every one of your files, | but it doesn't run them. || So the second check is to
 play for a minute, | and then read the logs. ||| Here's that extra hash again, this time in
-the game. || The quest list looks fine, | because the game took the hash off for me. || And
-here's the log: | one line, with the line number and the fix. || That's exactly what lint
+the game. || This is Science, with the hulk's scan tab open, | and the hull reading is still
+there, | because the game took the hash off for me. || And here's the runtime log: | one line, with the line number and the fix. || That's exactly what lint
 told me before I played, | which is why lint comes first. ||| So I fix it, and lint says
 clean. || But the log still has its line in it, | because lint leaves the logs alone. ||
-They're the game's notes on my last play. ||| So I play again, and there's my story. || This
+They're the game's notes on my last play. ||| So I play the mission again, | and there's the hull reading on Science, just as it should be. || This
 time both logs are empty, | and that's what you want to see after every play. |||"
 
 ### 11. Your turn

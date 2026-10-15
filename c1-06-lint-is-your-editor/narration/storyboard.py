@@ -10,13 +10,17 @@ lecture also uses what was added to the shared code for it:
                               ("out", run, n)         the run's nth line of output that is not blank
   a beat with "move": False keeps its picture from pushing in.
 
-THE FILE THIS LECTURE IS SHOWN ON. The script's "Before recording" table asks for the
-untouched template (Lecture 4's finished folder; the file is the same as this lecture's own
-example\\mission.amd), and every line number and every count the voice says was measured on
-it. So that is what is on screen. The student who followed Lecture 5 has one more record at
-the end of the file, and for the one-hash half of break 5 the real tool then prints SIX
-findings, not three: the still "t_b5b_chain" is that screen, made and not used. See the
-report of 2026-10-05.
+THE FILE THIS LECTURE IS SHOWN ON is Lecture 5's finished file (since 2026-10-08: the
+script's "Before recording" asks for it, and this lecture's example\\mission.amd is it). The
+state "start" said Lecture 4's folder until 2026-10-14, so --plan stopped on its same_as
+check; it now lays Lecture 5's example over Lecture 4's folder. Every line number held
+(measured 2026-10-08). On this file the one-hash half of break 5 prints SIX findings, so
+"chain" is now the same as "start", and the terminal stills must be made again.
+
+REWORK 2026-10-14 (say what the crew sees): every break names where the broken thing
+shows. Find the Derelict in the Quest Log (game_find_log, game_curly_log); Derelict Hull on
+Science's Scan tab, NEW console (game_hull_sci2, game_b4_sci2, game_hull4_sci2). All
+taken 2026-10-14.
 """
 LECTURE = "c1-06-lint-is-your-editor"
 TITLE = ("Class 1, Lecture 6", "Lint is your editor", "Change, save, lint, read the first line")
@@ -35,7 +39,8 @@ _LOGGED = ("AMD error: line 47: `#### [Derelict Hull](derelict_scan)` has 4 hash
            "at most 3. It is read as if it had 3. Take the extra off, or put back the heading above it\n")
 
 STATES = {
-    "start": {"folder": "c1-04-markdown-in-twenty-minutes/example", "skip": ("step-11-only",),
+        "start": {"folder": "c1-04-markdown-in-twenty-minutes/example", "skip": ("step-11-only",),
+              "over": ("c1-05-the-shape-of-a-record/example",),
               "same_as": "c1-06-lint-is-your-editor/example/mission.amd"},
     "b1": {"base": "start", "edits": [
         ("replace", FILE, "Done when: signal derelict_found", "Done wen: signal derelict_found")]},
@@ -97,10 +102,15 @@ STILLS = {
     "t_note": ("terminal", [("note", _LINT)]),
     "t_b5b_chain": ("terminal", [("chain_b5b", _LINT)]),   # made, not used: see the docstring
     # the real game
-    "game_epadd": ("game", "Helm with the handheld open; four hashes on Derelict Hull"),
-    "game_quests": ("game", "The Quest Log, First Contact selected; four hashes on Derelict Hull"),
-    "game_note": ("game", "The Quest Log, Find the Derelict selected; the # note under its description"),
-    "game_quests_ok": ("game", "The Quest Log after the fix, First Contact selected"),
+        "game_note": ("game", "The Quest Log, Find the Derelict selected; the # note under its description"),
+    # REWORK 2026-10-14 (say what the crew sees), taken 2026-10-14. Science is the NEW console.
+    # game_epadd / game_quests / game_quests_ok (the Quest Log for the four-hash play) are
+    # gone: Derelict Hull is a scan record, so scene 10 checks it on Science.
+    "game_find_log": ("game", "The Quest Log on Helm's handheld, state start (Lecture 5's file): Find the Derelict selected, its pane: State Active and 'Fly out and locate the drifting hulk.'"),
+    "game_curly_log": ("game", "The same Quest Log, state b2 (the word-processor sentence pasted, curly marks): Find the Derelict selected, the pane shows the sentence with PLAIN quote marks"),
+    "game_hull_sci2": ("game", "Science, NEW console, state start: the hulk scanned, Scan chosen, a Derelict Hull reading in the read-out"),
+    "game_b4_sci2": ("game", "Science, NEW console, state b4 (Derelict Hull's fence left open) played: the hulk scanned, Scan chosen, NO hull reading in the read-out; Mat still has its reading"),
+    "game_hull4_sci2": ("game", "Science, NEW console, state b5a (four hashes on Derelict Hull) played: the hulk scanned, Scan chosen, the hull reading still there"),
     # drawn
     "card_title": ("card", "title", {}),
     "card_manuscript": ("card", "page", {
@@ -133,6 +143,16 @@ _ICON = ("rect", 0.203, 0.0, 0.232, 0.046)             # the handheld icon, on a
 _QUESTS_TILE = ("rect", 0.0, 0.395, 0.32, 0.56)
 _FC_ROW = ("rect", 0.003, 0.146, 0.38, 0.214)
 _TEXT_PANE = ("rect", 0.383, 0.074, 0.98, 0.20)
+# the new Quest Log stills (game_find_log, game_curly_log)
+_FIND_ROW = ("rect", 0.025, 0.218, 0.38, 0.285)        # Find the Derelict, Active
+_FIND_STATE = ("rect", 0.385, 0.075, 0.55, 0.108)      # State Active
+_FIND_TEXT = ("rect", 0.385, 0.122, 0.655, 0.158)      # Fly out and locate the drifting hulk.
+_CURLY_TEXT = ("rect", 0.385, 0.122, 0.785, 0.158)     # the pasted sentence
+_CURLY_MARKS = [("rect", 0.549, 0.122, 0.644, 0.158), ("rect", 0.657, 0.122, 0.691, 0.158)]  # "ghost ship", isn't
+# the NEW Science console (game_hull_sci2, game_b4_sci2, game_hull4_sci2)
+_SCI_SCAN = ("rect", 0.007, 0.722, 0.286, 0.762)       # the Scan button (Queue Scan on b4)
+_SCI_HULL = ("rect", 0.697, 0.245, 0.98, 0.307)        # the hull reading in the read-out
+_SCI_TITLE = ("rect", 0.697, 0.06, 0.82, 0.096)        # the read-out's title: unknown, on b4
 # on the stills of a log, with the file list (a wrapped line cannot be marked by its words)
 _LOGS = ("rect", 0.035, 0.157, 0.222, 0.209)           # the two logs in the file list
 _LOG_LINE = ("rect", 0.258, 0.074, 0.972, 0.182)       # the one line the game wrote, as wrapped
@@ -170,38 +190,44 @@ BOARD = {
         {"from": 4, "still": "t_clean", "marks": [("part", "run1:last")]},
     ]},
     "s04_break_1_a_field_name": {"step": 2, "beats": [
-        {"from": 0, "still": "e_b1", "marks": [("text", 28, "Done wen")]},
-        {"from": 1, "still": "t_b1", "marks": [("part", "run1:cmd")]},
-        {"from": 2, "still": "t_b1", "marks": [("out", 1, 2)]},
-        {"from": 3, "still": "t_b1", "marks": [("span", 1, "[WARNING]"), ("span", 1, "line 28:1"),
+        {"from": 0, "still": "game_find_log"},
+        {"from": 1, "still": "game_find_log", "marks": [_FIND_ROW]},
+        {"from": 2, "still": "e_b1", "marks": [("text", 28, "Done wen")]},
+        {"from": 3, "still": "t_b1", "marks": [("part", "run1:cmd")]},
+        {"from": 4, "still": "t_b1", "marks": [("out", 1, 2)]},
+        {"from": 5, "still": "t_b1", "marks": [("span", 1, "[WARNING]"), ("span", 1, "line 28:1"),
                                                 ("span", 1, _B1_SENTENCE), ("span", 1, "(unknown-field)")]},
-        {"from": 4, "still": "t_b1", "marks": [("span", 1, "[WARNING]")]},
-        {"from": 5, "still": "t_b1", "marks": [("span", 1, "line 28:1")]},
-        {"from": 7, "still": "t_b1", "marks": [("span", 1, _B1_SENTENCE)]},
-        {"from": 8, "still": "t_b1", "marks": [("span", 1, "(unknown-field)")]},
-        {"from": 10, "still": "e_b1", "marks": [("lines", 28, 28)]},
-        {"from": 11, "still": "t_b1", "marks": [("span", 1, _B1_SENTENCE)]},
-        {"from": 12, "still": "t_b1", "marks": [("span", 1, _B1_IS)]},
-        {"from": 13, "still": "t_b1", "marks": [("span", 1, _B1_DOES)]},
-        {"from": 14, "still": "t_b1", "marks": [("span", 1, _B1_WRITE)]},
-        {"from": 15, "still": "e_find", "marks": [("text", 28, "Done when")]},
-        {"from": 16, "still": "t_b1_fix", "marks": [("part", "run2:clean")]},
-        {"from": 17, "still": "t_b1", "marks": [("span", 1, "[WARNING]")]},
-        {"from": 19, "still": "e_b1", "marks": [("lines", 24, 31)], "dim": True},
-        {"from": 21, "still": "e_b1", "marks": [("lines", 28, 28), ("lines", 29, 29)]},
+        {"from": 6, "still": "t_b1", "marks": [("span", 1, "[WARNING]")]},
+        {"from": 7, "still": "t_b1", "marks": [("span", 1, "line 28:1")]},
+        {"from": 9, "still": "t_b1", "marks": [("span", 1, _B1_SENTENCE)]},
+        {"from": 10, "still": "t_b1", "marks": [("span", 1, "(unknown-field)")]},
+        {"from": 12, "still": "e_b1", "marks": [("lines", 28, 28)]},
+        {"from": 13, "still": "t_b1", "marks": [("span", 1, _B1_SENTENCE)]},
+        {"from": 14, "still": "t_b1", "marks": [("span", 1, _B1_IS)]},
+        {"from": 15, "still": "t_b1", "marks": [("span", 1, _B1_DOES)]},
+        {"from": 16, "still": "t_b1", "marks": [("span", 1, _B1_WRITE)]},
+        {"from": 17, "still": "e_find", "marks": [("text", 28, "Done when")]},
+        {"from": 18, "still": "t_b1_fix", "marks": [("part", "run2:clean")]},
+        {"from": 19, "still": "t_b1", "marks": [("span", 1, "[WARNING]")]},
+        {"from": 21, "still": "e_b1", "marks": [("lines", 24, 31)], "dim": True},
+        {"from": 23, "still": "game_find_log", "marks": [_FIND_ROW, _FIND_STATE]},
+        {"from": 24, "still": "e_b1", "marks": [("lines", 28, 28), ("lines", 29, 29)]},
     ]},
     "s05_break_2_words_from_a_word_pr": {"step": 3, "beats": [
-        {"from": 0, "still": "card_wp"},
-        {"from": 2, "still": "card_wp", "marks": [("part", "find1"), ("part", "find2"), ("part", "find3")]},
-        {"from": 3, "still": "t_b2", "marks": [("out", 1, 2), ("out", 1, 3), ("out", 1, 4)]},
-        {"from": 5, "still": "t_b2", "marks": [("span", 1, "line 31:24"), ("span", 1, "line 31:35"), ("span", 1, "line 31:44")]},
-        {"from": 6, "still": "e_b2", "marks": [("text", 31, "“"), ("text", 31, "”"), ("text", 31, "’")]},
-        {"from": 7, "still": "t_b2", "marks": [("span", 1, _DRAWS)]},
-        {"from": 10, "still": "e_b2", "marks": [("lines", 31, 31)]},
-        {"from": 11, "still": "t_b2", "marks": [("span", 1, "[WARNING]"), ("span", 1, "[WARNING]", 2), ("span", 1, "[WARNING]", 3)]},
-        {"from": 12, "still": "t_b2", "marks": [("span", 1, "(non-ascii)"), ("span", 1, "(non-ascii)", 2), ("span", 1, "(non-ascii)", 3)]},
-        {"from": 14, "still": "e_b2_retyped", "marks": [("text", 31, "\""), ("text", 31, "\"", 2), ("text", 31, "'")]},
-        {"from": 15, "still": "t_b2_fix", "marks": [("part", "run2:clean")]},
+        {"from": 0, "still": "game_find_log"},
+        {"from": 1, "still": "game_find_log", "marks": [_FIND_TEXT]},
+        {"from": 3, "still": "card_wp"},
+        {"from": 4, "still": "card_wp", "marks": [("part", "find1"), ("part", "find2"), ("part", "find3")]},
+        {"from": 5, "still": "t_b2", "marks": [("out", 1, 2), ("out", 1, 3), ("out", 1, 4)]},
+        {"from": 7, "still": "t_b2", "marks": [("span", 1, "line 31:24"), ("span", 1, "line 31:35"), ("span", 1, "line 31:44")]},
+        {"from": 8, "still": "e_b2", "marks": [("text", 31, "“"), ("text", 31, "”"), ("text", 31, "’")]},
+        {"from": 9, "still": "t_b2", "marks": [("span", 1, _DRAWS)]},
+        {"from": 12, "still": "game_curly_log", "marks": [_CURLY_TEXT]},
+        {"from": 13, "still": "game_curly_log", "marks": _CURLY_MARKS},
+        {"from": 14, "still": "t_b2", "marks": [("span", 1, "[WARNING]"), ("span", 1, "[WARNING]", 2), ("span", 1, "[WARNING]", 3)]},
+        {"from": 15, "still": "t_b2", "marks": [("span", 1, "(non-ascii)"), ("span", 1, "(non-ascii)", 2), ("span", 1, "(non-ascii)", 3)]},
+        {"from": 17, "still": "e_b2_retyped", "marks": [("text", 31, "\""), ("text", 31, "\"", 2), ("text", 31, "'")]},
+        {"from": 18, "still": "t_b2_fix", "marks": [("part", "run2:clean")]},
     ]},
     "s06_break_3_a_key_that_no_longer": {"step": 4, "beats": [
         {"from": 0, "still": "e_b3", "marks": [("text", 33, "(examine)")]},
@@ -211,30 +237,35 @@ BOARD = {
         {"from": 5, "still": "t_b3", "marks": [("span", 1, "no record has that key, so nothing is revealed")]},
         {"from": 7, "still": "e_b3", "marks": [("lines", 36, 36), ("text", 33, "(examine)")]},
         {"from": 8, "still": "t_b3", "marks": [("span", 1, "waits to be revealed, and nothing reveals it")]},
-        {"from": 10, "still": "e_b3", "marks": [("text", 29, "first_contact/study"), ("text", 33, "(examine)")]},
-        {"from": 11, "still": "e_b3", "marks": [("lines", 29, 29), ("lines", 36, 36)]},
-        {"from": 12, "still": "t_b3"},
-        {"from": 13, "still": "t_b3_missing", "marks": [("part", "run2:cmd")], "move": False},
-        {"from": 14, "still": "t_b3_missing", "marks": [("out", 2, 2), ("out", 2, 3)], "move": False},
-        {"from": 15, "still": "t_b3_missing", "marks": [("out", 2, 1)], "move": False},
-        {"from": 16, "still": "e_study", "marks": [("text", 33, "(study)")]},
-        {"from": 17, "still": "t_b3_fix", "marks": [("part", "run2:clean")]},
+        {"from": 11, "still": "e_b3", "marks": [("text", 29, "first_contact/study"), ("text", 33, "(examine)")]},
+        {"from": 12, "still": "e_b3", "marks": [("lines", 29, 29), ("lines", 36, 36)]},
+        {"from": 13, "still": "t_b3"},
+        {"from": 14, "still": "t_b3_missing", "marks": [("part", "run2:cmd")], "move": False},
+        {"from": 15, "still": "t_b3_missing", "marks": [("out", 2, 2), ("out", 2, 3)], "move": False},
+        {"from": 16, "still": "t_b3_missing", "marks": [("out", 2, 1)], "move": False},
+        {"from": 17, "still": "e_study", "marks": [("text", 33, "(study)")]},
+        {"from": 18, "still": "t_b3_fix", "marks": [("part", "run2:clean")]},
     ]},
     "s07_break_4_a_fence_left_open": {"step": 5, "beats": [
-        {"from": 0, "still": "e_hull", "marks": [("lines", 51, 51)]},
-        {"from": 1.5, "still": "e_b4", "marks": [("after", 50)]},
-        {"from": 2, "still": "t_b4", "marks": [("span", 1, "[ERROR]")]},
-        {"from": 3, "still": "e_b4", "marks": [("after", 50)]},
-        {"from": 4, "still": "t_b4", "marks": [("span", 1, "line 48")]},
-        {"from": 5, "still": "e_b4", "marks": [("lines", 48, 48)]},
-        {"from": 7, "still": "t_b4", "marks": [("out", 1, 2)]},
-        {"from": 8, "still": "t_b4", "marks": [("span", 1, _B4_READ)]},
-        {"from": 9, "still": "e_b4", "marks": [("lines", 49, 52)]},
-        {"from": 10, "still": "t_b4", "marks": [("span", 1, "Add a `---` line under its last field")]},
-        {"from": 12, "still": "e_hull", "marks": [("lines", 51, 51)]},
-        {"from": 12.5, "still": "t_b4_fix", "marks": [("part", "run2:clean")]},
-        {"from": 13, "still": "e_b4", "marks": [("lines", 48, 48), ("after", 50)]},
-        {"from": 15, "still": "t_b4", "marks": [("out", 1, 2)]},
+        {"from": 0, "still": "game_hull_sci2"},
+        {"from": 1, "still": "game_hull_sci2", "marks": [_SCI_SCAN, _SCI_HULL]},
+        {"from": 2, "still": "e_hull", "marks": [("lines", 51, 51)]},
+        {"from": 3.5, "still": "e_b4", "marks": [("after", 50)]},
+        {"from": 4, "still": "t_b4", "marks": [("span", 1, "[ERROR]")]},
+        {"from": 5, "still": "e_b4", "marks": [("after", 50)]},
+        {"from": 6, "still": "t_b4", "marks": [("span", 1, "line 48")]},
+        {"from": 7, "still": "e_b4", "marks": [("lines", 48, 48)]},
+        {"from": 9, "still": "t_b4", "marks": [("out", 1, 2)]},
+        {"from": 10, "still": "t_b4", "marks": [("span", 1, _B4_READ)]},
+        {"from": 11, "still": "e_b4", "marks": [("lines", 49, 52)]},
+        {"from": 12, "still": "game_b4_sci2"},
+        {"from": 13, "still": "game_b4_sci2", "marks": [_SCI_SCAN]},
+        {"from": 14, "still": "game_b4_sci2", "marks": [_SCI_TITLE]},
+        {"from": 15, "still": "t_b4", "marks": [("span", 1, "Add a `---` line under its last field")]},
+        {"from": 17, "still": "e_hull", "marks": [("lines", 51, 51)]},
+        {"from": 17.5, "still": "t_b4_fix", "marks": [("part", "run2:clean")]},
+        {"from": 18, "still": "e_b4", "marks": [("lines", 48, 48), ("after", 50)]},
+        {"from": 20, "still": "t_b4", "marks": [("out", 1, 2)]},
     ]},
     "s08_break_5_the_number_of_hashes": {"step": 6, "beats": [
         {"from": 0, "still": "e_hull47", "marks": [("hashes", 45), ("hashes", 47), ("hashes", 55)]},
@@ -275,21 +306,21 @@ BOARD = {
         {"from": 10, "still": "card_notmean", "marks": [("part", "r3")]},
     ]},
     "s10_the_second_check": {"step": 8, "beats": [
-        {"from": 0, "still": "t_clean", "marks": [("part", "run1:clean")]},
+                {"from": 0, "still": "t_clean", "marks": [("part", "run1:clean")]},
         {"from": 2, "still": "e_log_empty", "marks": [_LOGS], "move": False},
         {"from": 4, "still": "e_b5a", "marks": [("hashes", 47)]},
-        {"from": 4.55, "still": "game_epadd", "marks": [_ICON, _QUESTS_TILE]},
-        {"from": 5, "still": "game_quests", "marks": [_FC_ROW]},
-        {"from": 7, "still": "e_log", "marks": [_LOG_LINE]},
-        {"from": 8, "still": "e_log", "marks": [("rect", 0.345, 0.074, 0.405, 0.111), ("rect", 0.624, 0.110, 0.972, 0.146), ("rect", 0.258, 0.146, 0.328, 0.182)]},
-        {"from": 9, "still": "t_b5a", "marks": [("span", 1, "line 47"), ("span", 1, _B5A_GUESS)]},
-        {"from": 11, "still": "e_hull47", "marks": [("hashes", 47)]},
-        {"from": 11.5, "still": "t_b5a_fix", "marks": [("part", "run2:clean")]},
-        {"from": 12, "still": "e_log_stale", "marks": [_LOG_LINE]},
-        {"from": 13, "still": "e_log_stale", "marks": [_LOGS]},
-        {"from": 15, "still": "game_epadd", "marks": [_QUESTS_TILE]},
-        {"from": 15.5, "still": "game_quests_ok", "marks": [_FC_ROW]},
-        {"from": 16, "still": "e_log_empty", "marks": [_LOGS], "move": False},
+        {"from": 5, "still": "game_hull4_sci2", "marks": [_SCI_SCAN]},
+        {"from": 6, "still": "game_hull4_sci2", "marks": [_SCI_HULL]},
+        {"from": 8, "still": "e_log", "marks": [_LOG_LINE]},
+        {"from": 9, "still": "e_log", "marks": [("rect", 0.345, 0.074, 0.405, 0.111), ("rect", 0.624, 0.110, 0.972, 0.146), ("rect", 0.258, 0.146, 0.328, 0.182)]},
+        {"from": 10, "still": "t_b5a", "marks": [("span", 1, "line 47"), ("span", 1, _B5A_GUESS)]},
+        {"from": 12, "still": "e_hull47", "marks": [("hashes", 47)]},
+        {"from": 12.5, "still": "t_b5a_fix", "marks": [("part", "run2:clean")]},
+        {"from": 13, "still": "e_log_stale", "marks": [_LOG_LINE]},
+        {"from": 14, "still": "e_log_stale", "marks": [_LOGS]},
+        {"from": 16, "still": "game_hull_sci2"},
+        {"from": 17, "still": "game_hull_sci2", "marks": [_SCI_HULL]},
+        {"from": 18, "still": "e_log_empty", "marks": [_LOGS], "move": False},
     ]},
     "s11_your_turn": {"step": None, "beats": [
         {"from": 0, "still": "card_exercise", "marks": [("part", "item1")]},

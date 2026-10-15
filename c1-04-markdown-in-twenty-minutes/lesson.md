@@ -118,8 +118,8 @@ inside which.
 
 ## Step 3 - Paragraphs
 
-Click at the end of the title line and press Enter twice. Type this, all on one line. Do
-not press Enter in the middle of it:
+Click at the end of the title line and press Enter twice. Type this. It is one long line,
+and word wrap folds it for you:
 
 ```
 A dead ship has drifted across the border. Nobody sent her, and nobody will say whose she is.
@@ -135,15 +135,18 @@ The crew has one watch to find out what happened aboard, before somebody else co
 
 Three rules:
 
-1. **A paragraph is one line in the file, however long.** Word wrap folds it for you.
-2. **A blank line ends a paragraph.**
+1. **A blank line ends a paragraph.** The preview leaves a gap there.
+2. **Enter in the middle of a paragraph does not end it.** The preview joins the two
+   halves again, and you see no difference. So a long paragraph can be one line, folded
+   by word wrap, or several lines with no blank line between. Both read the same.
 3. **Never start a line with the Tab key or the space bar.** Writers indent a paragraph
    without thinking. In markdown an indented line is something else: the preview shows it
    in a box, in typewriter letters.
 
-Why rule 1 matters. If you press Enter in the middle of a paragraph, the preview joins
-the two halves again and you see no difference. The game does not join them. It starts a
-new line wherever you pressed Enter. One paragraph on one line reads the same in both.
+The game follows rules 1 and 2 too, in a quest's description: the crew reads your
+paragraphs in the Quest Log just as the preview shows them. There is one place it does
+not: a Science reading, which Lecture 5 shows you. There, every line is a reading of its
+own.
 
 ## Step 4 - A list of people
 
@@ -204,8 +207,10 @@ Remember this shape. In Lecture 5 you will see it at the start of every record i
 ### [Derelict Hull](derelict_scan)
 ```
 
-Hashes, a space, and a link. In that file the round brackets do not hold a web address.
-They hold a short name the game uses, called a key.
+Hashes, a space, and a link. It is the first line of a **scan record**: the hull reading
+the crew sees on Science, on the hulk's `Scan` tab, when they scan the hulk. In that file
+the round brackets do not hold a web address. They hold a short name the game uses,
+called a key.
 
 ## Step 7 - Bold and italic
 
@@ -226,7 +231,8 @@ In the numbered list, put one star each side of `Not written yet:`
 No space between the stars and the word.
 
 Use these in your story bible as much as you like. Do not use them in `mission.amd`. The
-game does not make anything bold: the crew would read the stars. Step 10 has the list.
+game does not make anything bold: the crew would read the stars. Step 10 has the list of
+what the game draws, and it is longer than you might think.
 
 ## Step 8 - The plain keyboard
 
@@ -298,7 +304,7 @@ Find one of each:
 |---|---|---|
 | `### [Derelict Hull](derelict_scan)` | A heading whose words are a link | The first line of a record. The square brackets hold a name for people. The round brackets hold a key for the game. Nothing else may be on the line |
 | `---` on the line under a heading | A line drawn across the page | A fence. Two of them, with the record's facts between |
-| `% The hull is cold. Whatever happened here happened a long time ago.` | Nothing. A percent sign and two sentences | One reading for the Science screen |
+| `% The hull is cold. Whatever happened here happened a long time ago.` | Nothing. A percent sign and two sentences | One reading. You see it on Science, on the hulk's `Scan` tab, when the crew scans the hulk. The record has two, and Science picks one each time |
 | The line that starts `// ---- Quests.` | Nothing. Two slashes and a sentence, shown to the reader | A note to yourself. The game skips the whole line |
 | `[[study]]` (not in your file yet) | Nothing. The reader sees the brackets | A link to another record. The game prints that record's name: `Study the Derelict` |
 
@@ -329,7 +335,7 @@ Each row is a slip somebody made. The middle column is what markdown makes of it
 | `** nobody **` (spaces inside the stars) | Not bold. The stars are shown | `**nobody**` |
 | `**nobody` (stars on one side only) | Not bold. The stars are shown | Put two stars after the word as well |
 | A paragraph that starts with the Tab key, or with four spaces | Not a paragraph. It is shown in a box, in typewriter letters | Delete the tab or the spaces |
-| Enter pressed in the middle of a paragraph | Still one paragraph. The two halves are joined | Nothing is wrong here. In `mission.amd` it is a mistake: see the next table |
+| Enter pressed in the middle of a paragraph | Still one paragraph. The two halves are joined | Nothing is wrong here. The Quest Log joins them too. Only in a Science reading is it a mistake: see the next tables |
 | `---` typed straight under a line of words | The line above becomes a heading | Leave a blank line above the `---`. Then it is a line across the page |
 | A line that starts with a number and a period: `2187. A bad year.` | A list that starts at 2187 | Start the line with a word: `In 2187, a bad year.` |
 
@@ -339,26 +345,34 @@ This is the table to come back to. It says what the game does with each mark whe
 type it in the two places your words go in this class: a quest's description, which the
 crew reads in the Quest Log, and a reading, which the crew reads on the Science screen.
 
+A description is drawn the way the preview draws a page. It can be a short page, too:
+several paragraphs, a heading, a list, a small table, even a picture of a ship. A reading
+is not a page. It is one line.
+
 The last column is `sbs lint`, the checker you ran once in Lecture 3 and learn to read in
 Lecture 6. It is here to make one point: lint says nothing about nearly all of these,
-because none of them is a mistake of shape. The game just does not do what a preview
-does.
+because none of them is a mistake of shape.
 
-**Marks the game acts on.** There are few, and most of them act only in a description:
+**What a description can hold.** The Quest Log draws each of these:
 
 | You type | In a quest's description | In a reading | Lint |
 |---|---|---|---|
-| `# Orders` or `## Orders` | Drawn as a heading: larger gray letters, the hashes gone. `#Orders` with no space is a heading too | Kept as typed, hash and all, as a reading of its own | Nothing |
-| A line that is only a hash, `#` (the scene break of a typed manuscript) | Shown as typed: `#` | Kept as a reading of its own: `#` | Nothing for a description. `reading-wrapped`, a warning, for a reading |
-| `- Find her.` (a hyphen, then a space) | Drawn as a list: indented, light blue, with its hyphen | Kept as typed, hyphen and all | Nothing |
-| `1. Find her.` (a number, a period, then a space) | Drawn as a numbered list, indented. The game does the counting: a list typed `3.`, `4.` is shown `1.`, `2.`, and so is one typed `1)`, `2)` | Kept as typed | Nothing |
-| A plain line straight under a list, with no blank line between | Drawn as part of the list: indented like the items, and in their color | Does not apply | Nothing |
+| Lines with no blank line between them | One paragraph. The lines are joined, as the preview joins them | Each line is a reading of its own | Nothing for a description. `reading-wrapped`, a warning, for a reading |
+| A blank line between two paragraphs | The paragraph ends, and a gap is left before the next one | Two readings. The crew is shown one of them | Nothing |
+| `## Orders` (hashes, a space, words) | A heading: larger gray letters, the hashes gone. One hash makes it larger, three smaller | Kept as typed, hashes and all | Nothing |
+| `- Find her.` (a hyphen, then a space) | A list: indented, light blue | Kept as typed, hyphen and all | Nothing |
+| `1. Find her.` (a number, a period, then a space) | A numbered list, indented. The game does the counting: a list typed `3.`, `4.` is shown `1.`, `2.` | Kept as typed | Nothing |
+| A table: lines that start and end with a bar, the second line made of bars and hyphens. Step 11 has one | A table, its columns made to fit the pane. Keep it to a few short rows | Keep tables out of a reading | Nothing |
+| `<hr>` on a line of its own | A line across the pane. (Not `---`: in `mission.amd` three hyphens are a fence) | Keep it out of a reading | Nothing |
+| `![](ship://starbase_command) Orders from DS 1.` | A picture of that ship, here the station DS 1, with the words beside it. The word after `ship://` is a ship from the game's own list: Lecture 10 | Keep it out of a reading | Nothing |
+| `![](face://...) Harbormaster Quill` | A face, with the words beside it. What goes after `face://` is a long line the face editor writes for you: Class 2 | Keep it out of a reading | Nothing |
+| `![](icon://reactor) Her reactor` | A small picture from the game's own icons, with the words beside it | Keep it out of a reading | Nothing |
 | `` `drifting` `` (the backticks this course puts round words to type) | The backticks are left out. The word stays | Kept as typed, backticks and all | Nothing |
-| `10^3` (a caret) | A new line starts where the caret was. The caret is gone | Kept as typed | Nothing |
+| `10^3` (a caret) | A new line starts where the caret was, even inside a paragraph. The caret is gone | Kept as typed | Nothing |
 | A tab in the middle of a line | One space | Kept as a tab | Nothing |
 | A tab or spaces at the start of a line | Removed | Removed | Nothing |
 
-**What the game prints as you typed it.** A preview would draw the first six:
+**What the game prints as you typed it.** A preview would draw the first five:
 
 | You type | In a quest's description | In a reading | Lint |
 |---|---|---|---|
@@ -366,25 +380,20 @@ does.
 | `[the old report](https://example.com/report)`, anywhere in a line | Shown as typed, brackets and address. Nothing to click | The same | Nothing |
 | `> She was the pride of the fleet.` | Shown as typed, with the `>` | The same | Nothing |
 | `* Find her.` (a star for a list) | Shown as typed, star and all. Only a hyphen makes a list | The same | Nothing |
-| `---` on a line of its own, between two paragraphs | Shown as typed: three hyphens, and no line across the screen | One more reading: `---` | Nothing for a description. `reading-wrapped`, a warning, for a reading |
-| Two spaces at the end of a line (markdown's way to break a line) | Nothing. The spaces are dropped | The same | Nothing |
+| `---` on a line of its own, between two paragraphs | Shown as typed: three hyphens. For a line across the pane, type `<hr>` | One more reading: `---` | Nothing for a description. `reading-wrapped`, a warning, for a reading |
+| A line that is only a hash, `#` (the scene break of a typed manuscript) | Shown as typed: `#` | Kept as a reading of its own: `#` | Nothing for a description. `reading-wrapped`, a warning, for a reading |
 | `dead_reckoning` (an underscore in a word) | Shown as typed | The same | Nothing |
 | A sentence that only looks like a mark: `40 years ago this ship was reported lost.`, `-Find her.`, `[Static] Is anyone aboard?`, `$500 says she is not empty.` | Shown as typed | The same | Nothing |
 
-**Lines and gaps:**
+Three rules cover the two tables:
 
-| You type | In a quest's description | In a reading | Lint |
-|---|---|---|---|
-| A blank line between two paragraphs | The second paragraph starts on a new line. There is no gap between them | Two readings. The crew is shown one of them | Nothing |
-| Enter pressed in the middle of a paragraph | The same as a blank line: a new line starts there | Two readings. The crew may be shown half a sentence | Nothing for a description. `reading-wrapped`, a warning, for a reading |
-
-Three rules cover the three tables:
-
-1. **In `mission.amd`, write plain sentences.** No stars, no backticks, no links. The crew
-   would read the marks, or lose them.
-2. **One paragraph, one line.**
-3. **A heading and a list are the two marks a description draws.** Give a list a blank
-   line above it and a blank line below it. Neither is drawn in a reading.
+1. **Write a description as a page.** Paragraphs with a blank line between them, and a
+   heading, a list or a small table where it helps the crew. Lecture 8 writes one.
+2. **Leave stars, backticks and links out of `mission.amd`.** The crew would read the
+   marks, or lose them.
+3. **A Science reading is one line.** Every line of a reading's record is a reading of
+   its own. Press Enter in the middle of one and you have made two, and the crew may be
+   shown half a sentence. Keep marks out of readings too: Science is not the Quest Log.
 
 Of the characters a sentence is likely to open with, three can make a mark: a hash; a
 hyphen followed by a space; a number followed by a period and a space. So `40 years ago`
@@ -404,17 +413,20 @@ five minutes. If you would sooner watch, the video does it.
 Fly out and locate the drifting hulk.
 ```
 
-2. Select the whole line and type these nine lines over it. The third, the sixth and the
-   eighth are blank:
+2. Select the whole line and type these twelve lines over it. The fourth, the seventh
+   and the eleventh are blank:
 
 ```
-# Orders
+## Orders
 Fly out and locate the **drifting** hulk.
+She went dark three days ago, past the border.
 
 - Find her.
 - Scan her.
 
-Her last word was `stay`.
+| Last heard | Her words |
+|---|---|
+| Three days ago | Stay. |
 
 Read [the old report](https://example.com/report) first.
 ```
@@ -433,24 +445,25 @@ sbs run server,helm,science -m MyMission map=0
 6. In the list on the left, select **Find the Derelict**. It is the line under First
    Contact.
 
-On the right, under `State` and `Active`:
+The pane on the right is what the crew is told about that quest. In it, under `State` and
+`Active`:
 
 | You typed | The crew reads |
 |---|---|
-| `# Orders` | `Orders`, as a heading: larger gray letters, and no hash |
-| `Fly out and locate the **drifting** hulk.` | The same, stars and all |
-| `- Find her.` and `- Scan her.` | A list: indented, light blue, each line with its hyphen |
-| ``Her last word was `stay`.`` | `Her last word was stay.` The backticks are gone |
+| `## Orders` | `Orders`, as a heading: larger gray letters, and no hashes |
+| The two lines under it | One paragraph. The two lines are joined, as the preview joins them, and the stars round `drifting` are shown as typed |
+| The three blank lines | A gap, where the paragraph, the list and the table end |
+| `- Find her.` and `- Scan her.` | A list: indented, light blue |
+| The three lines that start with a bar | A small table: `Last heard` and `Her words` over one row |
 | `Read [the old report](https://example.com/report) first.` | The same, brackets and address. There is nothing to click |
-| The three blank lines | Nothing. Each line starts straight under the one before it |
 
-A preview would have drawn all six. The game drew two, the heading and the list. It
-printed two as you typed them, took the backticks away, and took no notice of the blank
-lines.
+A preview would have drawn all of it. The game drew the heading, the paragraph, the gaps,
+the list and the table, just as the preview does. It printed two things as you typed
+them: the stars and the link.
 
 7. Close all three game windows.
-8. Put the file back. In `mission.amd`, press `Ctrl+Z` until the nine lines are one line
-   again. If that no longer works, delete the nine lines and type the one line back:
+8. Put the file back. In `mission.amd`, press `Ctrl+Z` until the twelve lines are one
+   line again. If that no longer works, delete the twelve lines and type the one line back:
 
 ```
 Fly out and locate the drifting hulk.
@@ -458,7 +471,7 @@ Fly out and locate the drifting hulk.
 
 9. Press `Ctrl+S`.
 
-Do not leave the nine lines in. Lectures 5 and 6 start from `mission.amd` as it was when
+Do not leave the twelve lines in. Lectures 5 and 6 start from `mission.amd` as it was when
 you began today, and they name its lines by number.
 
 Two files in `example\` are named `mission.amd`:
@@ -466,7 +479,7 @@ Two files in `example\` are named `mission.amd`:
 | File | What it is |
 |---|---|
 | `example\mission.amd` | The file as you hand it on to Lecture 5: the one Lecture 3 gave you, with nothing changed |
-| `example\step-11-only\mission.amd` | The same file with the nine lines in place. It is there to copy from. It is not how this lecture ends |
+| `example\step-11-only\mission.amd` | The same file with the twelve lines in place. It is there to copy from. It is not how this lecture ends |
 
 ## If something goes wrong
 
@@ -487,6 +500,7 @@ Two files in `example\` are named `mission.amd`:
 | Step 11: the right-hand side says `Select a quest from the list.` | Nothing is selected yet, or you clicked the line above First Contact. Click **Find the Derelict** |
 | Step 11: the right-hand side shows one sentence, then `Find the Derelict` and `... more to follow` | You selected First Contact. That is its own sentence and a list of its steps. Select **Find the Derelict**, the line under it |
 | Step 11: `State` says `Done`, and Find the Derelict is not the line straight under First Contact | The ship has been to the hulk, so the step is finished and has moved down the list. Select it by its name. The lines under `State` are the same |
+| Step 11: the two lines under `Orders` are two lines on screen, not one paragraph | The game is older than this page. Lecture 3, Step 4 brings its libraries up to date |
 | Step 11: the right-hand side shows the old sentence | You did not save `mission.amd` before you started the game. Close the game, press `Ctrl+S`, and start it again |
 
 ## Exercise

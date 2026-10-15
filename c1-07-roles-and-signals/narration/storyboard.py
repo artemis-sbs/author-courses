@@ -108,8 +108,11 @@ STILLS = {
     "c_derelict_x2": ("card", "search", {"state": "x2", "word": "derelict", "want": (8, 2)}),
     # the real game
     "game_quests": ("game", "Helm, the Quest Log after the ship reached the hulk"),
-    "game_science": ("game", "Science, the hulk selected: three tabs"),
-    "game_intel": ("game", "Science, the hulk's intel tab"),
+    "game_helm_name": ("game", "Helm, the map: the hulk with its name, Unknown Hulk, drawn beside it (the page's own files)"),
+    # Science is the NEW console (2026-10-13): retaken, so the old ids are never shown by accident
+    "game_science_sci2": ("game", "Science (new console), the hulk clicked on the map: its tab buttons in the lower left under its name - Scan, Intel, Mat"),
+    "game_intel_sci2": ("game", "Science (new console), the hulk's Intel button pressed: the Lecture 5 sentence in the read-out on the right, Unknown Hulk as its title"),
+    "game_x2_sci2": ("game", "Science (new console), derelect on line 68: the hulk selected - no Mat button, none of the hulk's text under Scan"),
     "game_x2": ("game", "Helm, the Quest Log with derelect on line 68: Study the Derelict stays Active"),
     # drawn
     "card_title": ("card", "title", {}),
@@ -125,13 +128,19 @@ _FILE_ROW = ("rect", 0.03, 0.279, 0.222, 0.306)        # story.mast in the file 
 # on the game's windows (fractions of the 4:3 picture)
 _ROW2 = ("rect", 0.02, 0.215, 0.38, 0.285)             # the first step under First Contact in the Quest Log
 _ROW3 = ("rect", 0.02, 0.288, 0.38, 0.358)             # the second
-_TABS = ("rect", 0.697, 0.05, 0.937, 0.093)            # scan, intel, mat on Science
-_INTEL_TAB = ("rect", 0.778, 0.05, 0.86, 0.093)
-_READING = ("rect", 0.695, 0.388, 0.998, 0.448)
+# the NEW Science console (the _sci2 stills) and Helm's map
+_SCI_STACK = ("rect", 0.005, 0.69, 0.288, 0.882)       # the hulk's name and its tab buttons, lower left
+_SCI_BUTTONS = ("rect", 0.007, 0.722, 0.286, 0.84)     # Scan, Intel, Mat
+_SCI_INTEL = ("rect", 0.007, 0.761, 0.286, 0.8)        # the Intel (Queue Intel) button
+_SCI_SENT = ("rect", 0.697, 0.155, 0.985, 0.218)       # the Lecture 5 sentence in the read-out
+_SCI_TITLE = ("rect", 0.697, 0.06, 0.885, 0.096)       # the read-out's title, Unknown Hulk
+_X2_STACK = ("rect", 0.005, 0.73, 0.288, 0.882)        # game_x2_sci2: Queue Scan, Intel, In Queue - no Mat
+_X2_SCAN = ("rect", 0.007, 0.761, 0.286, 0.8)          # game_x2_sci2: Queue Scan
+_HELM_HULK = ("rect", 0.48, 0.405, 0.59, 0.5)          # game_helm_name: the hulk and its name
+_HELM_NAME = ("rect", 0.48, 0.405, 0.59, 0.435)        # game_helm_name: Unknown Hulk
 _LOGS = ("rect", 0.035, 0.157, 0.222, 0.209)           # the two logs in the file list (as in Lecture 6)
 
-# Re-fitted on 2026-10-05 to the narration written for the ear (136 pieces, where there were
-# 98 sentences). Same stills and marks; each beat now starts on the piece that says it.
+# Re-fitted on 2026-10-14 for "say what the crew sees": the game is shown before the line.
 # Re-fitted on 2026-10-05 to the narration written for the ear (136 pieces, where there were
 # 98 sentences). Same stills and marks; each beat now starts on the piece that says it.
 BOARD = {
@@ -148,12 +157,18 @@ BOARD = {
         {"from": 1, "still": "m_hulk"},
         {"from": 2, "still": "e_five", "marks": [("lines", 28, 28), ("lines", 37, 37), ("lines", 49, 49),
                                                  ("lines", 57, 57), ("lines", 64, 64)]},
-        {"from": 3, "still": "e_scans", "marks": [("text", 49, "derelict"), ("text", 57, "derelict"), ("text", 64, "derelict")]},
-        {"from": 4, "still": "m_hulk", "marks": [("text", 68, "derelict")]},
-        {"from": 6, "still": "e_find", "marks": [("text", 28, "derelict_found")]},
-        {"from": 7, "still": "m_signal", "marks": [("text", 93, "\"derelict_found\"")]},
-        {"from": 8, "still": "e_find", "marks": [("text", 28, "signal derelict_found"), ("text", 37, "signal derelict_scanned")]},
-        {"from": 9, "still": "card_files", "marks": [("part", "r2")]},
+        {"from": 3, "still": "game_science_sci2"},
+        {"from": 4, "still": "game_science_sci2", "marks": [_SCI_STACK]},
+        {"from": 5, "still": "game_intel_sci2", "marks": [_SCI_INTEL, _SCI_SENT]},
+        {"from": 6, "still": "game_quests", "marks": [_ROW2]},
+        {"from": 8, "still": "e_scans", "marks": [("text", 49, "derelict"), ("text", 57, "derelict"), ("text", 64, "derelict")]},
+        {"from": 9, "still": "m_hulk", "marks": [("text", 68, "derelict")]},
+        {"from": 11, "still": "e_find", "marks": [("text", 28, "derelict_found")]},
+        {"from": 12, "still": "m_signal", "marks": [("text", 93, "\"derelict_found\"")]},
+        {"from": 13, "still": "e_find", "marks": [("text", 28, "signal derelict_found"), ("text", 37, "signal derelict_scanned")]},
+        {"from": 14, "still": "card_files", "marks": [("part", "r2")]},
+        {"from": 15, "still": "game_intel_sci2", "marks": [_SCI_INTEL, _SCI_SENT]},
+        {"from": 16, "still": "game_quests", "marks": [_ROW2]},
     ]},
     "s03_open_the_other_file": {"step": None, "beats": [
         {"from": 0, "still": "m_side", "marks": [_FILE_ROW]},
@@ -175,18 +190,22 @@ BOARD = {
         {"from": 5, "still": "c_derelict", "marks": [("part", "file2")]},
         {"from": 6, "still": "c_derelict", "marks": [("part", "f2h1"), ("part", "f2h2"), ("part", "f2h4")]},
         {"from": 7, "still": "c_derelict", "marks": [("part", "f2h3"), ("part", "f2h5")]},
-        {"from": 8, "still": "m_hulk", "marks": [("lines", 68, 68)]},
-        {"from": 9, "still": "m_hulk", "marks": [("text", 68, "\"Unknown Hulk\""), ("text", 68, "\"tsn, derelict\""),
+        {"from": 8, "still": "game_helm_name", "marks": [_HELM_HULK]},
+        {"from": 9, "still": "game_helm_name", "marks": [_HELM_NAME]},
+        {"from": 10, "still": "game_intel_sci2", "marks": [_SCI_TITLE]},
+        {"from": 11, "still": "m_hulk", "marks": [("text", 68, "\"Unknown Hulk\"")]},
+        {"from": 12, "still": "m_hulk", "marks": [("lines", 68, 68)]},
+        {"from": 13, "still": "m_hulk", "marks": [("text", 68, "\"Unknown Hulk\""), ("text", 68, "\"tsn, derelict\""),
                                                  ("text", 68, "\"tsn_warpster\""), ("text", 68, "\"behav_npcship\"")]},
-        {"from": 10, "still": "m_hulk", "marks": [("text", 68, "\"Unknown Hulk\"")]},
-        {"from": 10.6, "still": "m_hulk", "marks": [("text", 68, "\"tsn, derelict\"")]},
-        {"from": 11, "still": "m_hulk", "marks": [("text", 68, "\"tsn_warpster\"")]},
-        {"from": 11.4, "still": "m_hulk", "marks": [("text", 68, "\"behav_npcship\"")]},
-        {"from": 12, "still": "m_hulk", "marks": [("text", 68, "\"tsn, derelict\"")]},
-        {"from": 13, "still": "m_hulk", "marks": [("text", 68, "tsn")]},
-        {"from": 14, "still": "m_hulk", "marks": [("text", 68, "derelict")]},
-        {"from": 15, "still": "m_hulk", "marks": [("text", 68, "tsn"), ("text", 68, "derelict")]},
-        {"from": 17, "still": "m_sci", "marks": [("text", 103, "\"derelict\"")]},
+        {"from": 14, "still": "m_hulk", "marks": [("text", 68, "\"Unknown Hulk\"")]},
+        {"from": 14.5, "still": "m_hulk", "marks": [("text", 68, "\"tsn, derelict\"")]},
+        {"from": 15, "still": "m_hulk", "marks": [("text", 68, "\"tsn_warpster\"")]},
+        {"from": 15.4, "still": "m_hulk", "marks": [("text", 68, "\"behav_npcship\"")]},
+        {"from": 16, "still": "m_hulk", "marks": [("text", 68, "\"tsn, derelict\"")]},
+        {"from": 17, "still": "m_hulk", "marks": [("text", 68, "tsn")]},
+        {"from": 18, "still": "m_hulk", "marks": [("text", 68, "derelict")]},
+        {"from": 19, "still": "m_hulk", "marks": [("text", 68, "tsn"), ("text", 68, "derelict")]},
+        {"from": 21, "still": "m_sci", "marks": [("text", 103, "\"derelict\"")]},
     ]},
     "s05_find_the_signals": {"step": 3, "beats": [
         {"from": 0, "still": "c_found", "marks": [("part", "summary")]},
@@ -209,16 +228,17 @@ BOARD = {
         {"from": 3, "still": "t_r1", "marks": [("out", 1, 2)]},
         {"from": 4, "still": "t_r1", "marks": [("span", 1, "nothing in this mission wears a role called `ghost_ship`")]},
         {"from": 5, "still": "t_r1", "marks": [("span", 1, "so this scan text matches nothing")]},
-        {"from": 6, "still": "m_hulk", "marks": [("text", 68, "\"tsn, derelict\"")]},
-        {"from": 7, "still": "m_hulk", "marks": [("text", 68, "\"", 4)]},
-        {"from": 8, "still": "m_r2", "marks": [("text", 68, ", ghost_ship")]},
-        {"from": 9, "still": "t_r2", "marks": [("part", "run2:clean")]},
-        {"from": 9.45, "still": "m_r2", "marks": [("text", 68, "derelict"), ("text", 68, "ghost_ship")]},
-        {"from": 10, "still": "card_word_rules"},
-        {"from": 11, "still": "card_word_rules", "marks": [("part", "item1")]},
-        {"from": 12, "still": "card_word_rules", "marks": [("part", "item2")]},
-        {"from": 13, "still": "card_word_rules", "marks": [("part", "item3")]},
-        {"from": 14, "still": "card_word_rules", "marks": [("part", "item4")]},
+        {"from": 6, "still": "game_science_sci2", "marks": [_SCI_INTEL]},
+        {"from": 8, "still": "m_hulk", "marks": [("text", 68, "\"tsn, derelict\"")]},
+        {"from": 9, "still": "m_hulk", "marks": [("text", 68, "\"", 4)]},
+        {"from": 10, "still": "m_r2", "marks": [("text", 68, ", ghost_ship")]},
+        {"from": 11, "still": "t_r2", "marks": [("part", "run2:clean")]},
+        {"from": 11.45, "still": "m_r2", "marks": [("text", 68, "derelict"), ("text", 68, "ghost_ship")]},
+        {"from": 12, "still": "card_word_rules"},
+        {"from": 13, "still": "card_word_rules", "marks": [("part", "item1")]},
+        {"from": 14, "still": "card_word_rules", "marks": [("part", "item2")]},
+        {"from": 15, "still": "card_word_rules", "marks": [("part", "item3")]},
+        {"from": 16, "still": "card_word_rules", "marks": [("part", "item4")]},
     ]},
     "s07_rename_a_signal": {"step": 5, "beats": [
         {"from": 0, "still": "e_find_r2", "marks": [("lines", 28, 28)]},
@@ -260,24 +280,29 @@ BOARD = {
         {"from": 6, "still": "t_x2", "marks": [("part", "run1:clean")]},
         {"from": 8, "still": "m_x2_sci", "marks": [("text", 103, "\"derelict\"")]},
         {"from": 10, "still": "m_x2", "marks": [("text", 68, "\"tsn, derelect, ghost_ship\"")]},
-        {"from": 11, "still": "game_x2", "marks": [_ROW2]},
-        {"from": 14, "still": "c_derelict_x2", "marks": [("part", "summary")]},
-        {"from": 16, "still": "card_cannot"},
-        {"from": 17, "still": "card_cannot", "marks": [("part", "r1c1"), ("part", "r2c1")]},
+        {"from": 11, "still": "game_x2_sci2", "marks": [_X2_STACK]},
+        {"from": 12, "still": "game_x2_sci2", "marks": [_X2_SCAN]},
+        {"from": 14, "still": "game_x2", "marks": [_ROW2]},
+        {"from": 15, "still": "c_derelict_x2", "marks": [("part", "summary")]},
+        {"from": 17, "still": "card_cannot"},
+        {"from": 18, "still": "card_cannot", "marks": [("part", "r1c1"), ("part", "r2c1")]},
     ]},
     "s10_play_it": {"step": 8, "beats": [
         {"from": 0, "still": "game_quests"},
         {"from": 2, "still": "game_quests", "marks": [_ROW2]},
         {"from": 5, "still": "game_quests", "marks": [_ROW3]},
-        {"from": 7, "still": "game_science", "marks": [_TABS]},
-        {"from": 8, "still": "game_intel", "marks": [_INTEL_TAB, _READING]},
-        {"from": 9, "still": "e_log_empty", "marks": [_LOGS]},
+        {"from": 7, "still": "game_science_sci2"},
+        {"from": 8, "still": "game_science_sci2", "marks": [_SCI_STACK]},
+        {"from": 9, "still": "game_science_sci2", "marks": [_SCI_BUTTONS]},
+        {"from": 10, "still": "game_intel_sci2", "marks": [_SCI_INTEL, _SCI_SENT]},
+        {"from": 12, "still": "e_log_empty", "marks": [_LOGS]},
     ]},
     "s11_your_turn": {"step": None, "beats": [
         {"from": 0, "still": "card_exercise"},
         {"from": 1, "still": "card_exercise", "marks": [("part", "item1"), ("part", "item2")]},
         {"from": 3, "still": "card_exercise", "marks": [("part", "item3")]},
         {"from": 4, "still": "card_exercise", "marks": [("part", "item4")]},
-        {"from": 5, "still": "card_next"},
+        {"from": 5, "still": "card_exercise", "marks": [("part", "item5")]},
+        {"from": 7, "still": "card_next"},
     ]},
 }

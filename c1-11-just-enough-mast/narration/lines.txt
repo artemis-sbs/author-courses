@@ -1,4 +1,4 @@
-s01_cold_open_0	That ship wasn't on the map when the game started,
+s01_cold_open_0	That ship on Helm's map wasn't there when the game started,
 s01_cold_open_1	and nothing in your fact sheet can do that.
 s01_cold_open_2	So today you open the other file, the script.
 s01_cold_open_3	You'll read it once, from top to bottom,
@@ -54,13 +54,21 @@ s05_read_the_file_the_indent_and_11	So that step isn't finished by reach.
 s05_read_the_file_the_indent_and_12	It's finished by the script, by name.
 s05_read_the_file_the_indent_and_13	You'll paste that same line in a few minutes,
 s05_read_the_file_the_indent_and_14	and decide for yourself when it's said.
-s06_your_first_edit_0	Your mission has a title, from Lecture 3,
-s06_your_first_edit_1	but the map inside it is still called AMD Sample.
-s06_your_first_edit_2	So change the words between the quotes.
-s06_your_first_edit_3	The line under it is the description.
-s06_your_first_edit_4	It has one quote mark, at the start, and none at the end,
-s06_your_first_edit_5	and that's how it's meant to be.
-s06_your_first_edit_6	Just keep it on one line.
+s06_your_first_edit_0	Here's the server's start screen,
+s06_your_first_edit_1	which is what you get when you start the game without map equals zero.
+s06_your_first_edit_2	In its list of maps, mine is still called AMD Sample,
+s06_your_first_edit_3	with the template's sentence under it.
+s06_your_first_edit_4	Your mission got a title in Lecture 3,
+s06_your_first_edit_5	but the map inside it never did.
+s06_your_first_edit_6	Both of those come from lines twenty-five and twenty-six.
+s06_your_first_edit_7	So change the words between the quotes.
+s06_your_first_edit_8	The line under it is the description,
+s06_your_first_edit_9	which is the sentence on that screen.
+s06_your_first_edit_10	It has one quote mark, at the start, and none at the end,
+s06_your_first_edit_11	and that's how it's meant to be.
+s06_your_first_edit_12	Just keep it on one line.
+s06_your_first_edit_13	And there it is on the start screen,
+s06_your_first_edit_14	Salvage Run, with my own sentence under it.
 s07_one_check_two_files_0	It's one command, as always.
 s07_one_check_two_files_1	Look at the last line: one AMD, and one mast.
 s07_one_check_two_files_2	Lint has been reading the script every time,
@@ -96,12 +104,14 @@ s09_card_one_when_a_step_starts_7	which is the address you write after reveal.
 s09_card_one_when_a_step_starts_8	Then there's one line,
 s09_card_one_when_a_step_starts_9	and you've read this line before,
 s09_card_one_when_a_step_starts_10	because it's how the hulk gets on the map.
-s09_card_one_when_a_step_starts_11	It says where, and its name,
-s09_card_one_when_a_step_starts_12	then its side and its role,
-s09_card_one_when_a_step_starts_13	and what it looks like.
-s09_card_one_when_a_step_starts_14	Those are the same facts as a landmark.
-s09_card_one_when_a_step_starts_15	The difference is when.
-s09_card_one_when_a_step_starts_16	And then arrow, END.
+s09_card_one_when_a_step_starts_11	Here's what this one puts on Helm's map:
+s09_card_one_when_a_step_starts_12	the Salvage Tug, with her name beside her.
+s09_card_one_when_a_step_starts_13	The line says where, and that name,
+s09_card_one_when_a_step_starts_14	then its side and its role,
+s09_card_one_when_a_step_starts_15	and what it looks like.
+s09_card_one_when_a_step_starts_16	Those are the same facts as a landmark,
+s09_card_one_when_a_step_starts_17	and the difference is when.
+s09_card_one_when_a_step_starts_18	And then arrow, END.
 s10_cards_two_and_three_0	Card two is the line from line ninety-three,
 s10_cards_two_and_three_1	with my word in it, tug arrived,
 s10_cards_two_and_three_2	and it's lined up with the line above.
@@ -133,11 +143,16 @@ s11_four_mistakes_18	Nothing can check that word for you.
 s11_four_mistakes_19	The page has the list of what lint cannot see.
 s11_four_mistakes_20	It's short, so read it twice.
 s12_play_it_0	Out to the hulk, and on to the lifeboat.
-s12_play_it_1	There's the new step, and no tug, so now I wait.
-s12_play_it_2	And there she is, the Salvage Tug.
-s12_play_it_3	The step is done, and home is revealed.
-s12_play_it_4	So it's back to the station, and the win.
-s12_play_it_5	And both logs are empty.
+s12_play_it_1	Helm says Quest complete, Find the Lifeboat,
+s12_play_it_2	and there's the new step in the Quest Log,
+s12_play_it_3	but there's no tug on Helm's map, so now I wait.
+s12_play_it_4	And there she is on the map, the Salvage Tug,
+s12_play_it_5	with the name from my card beside her.
+s12_play_it_6	Helm says Quest complete, Wait for the Tug,
+s12_play_it_7	and in the Quest Log, home is revealed.
+s12_play_it_8	So it's back to the station,
+s12_play_it_9	and there's my Win sentence on Game results.
+s12_play_it_10	And both logs are empty.
 s13_your_turn_0	So that's three cards: when, finish a step, and wait.
 s13_your_turn_1	For your turn, paste the first one again,
 s13_your_turn_2	change started to succeeded,

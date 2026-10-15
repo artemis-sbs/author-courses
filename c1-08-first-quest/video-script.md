@@ -1,5 +1,39 @@
 # C1-8 video script - Your first quest
 
+> **2026-10-14 (later): the description is a page.** The owner: Class 1 wrongly taught a
+> body as one line. A quest's description is drawn by a text area, so Close Inspection now
+> has a real briefing: the order, what is known (a second paragraph), a heading
+> `## Why it matters`, and what is at stake. Text areas follow markdown paragraph rules
+> (library change in progress at the time of writing): lines with no blank line between
+> them join, a blank line ends the paragraph and leaves a gap. The record is fifteen lines,
+> not nine; `Done when:` is still line 52, so both lint slips print the same lines. The
+> Scans section moved down six lines (Lecture 9 starts from this file).
+> - New stills: `game_start_p2`, `game_2000_p2`, `game_done_p2`, `game_offers_p2` (the
+>   pane now shows the briefing), and VS Code `e_q11`, `e_q13`, `e_q15_p2`, `e_done_p2`,
+>   `e_sl1_p2` to `e_sl3_p2`. `e_q9` is unchanged (the first nine lines).
+> - Measured: `sbs lint` clean on the finished files and on `## [Why it matters](why)`
+>   (which drops the third paragraph: a "What lint cannot see" row), `##Why it matters`
+>   and `### Why it matters`; the mock runs `--test 30` clean. NOT SEEN: the heading and
+>   the gaps in the real Quest Log pane.
+
+
+> **REWORKED ON 2026-10-14: say what the crew sees. Newer than every note below.**
+>
+> - Each line of the quest is now tied to the place the crew reads it before it is typed:
+>   the quest's name in the Quest Log's list, and on the right its state, its `Reward:`
+>   line, the `Objective:` sentence and the description. Scene 5 shows where a quest with
+>   no `Starts when:` line goes (the ePADD's Available Quests), and scene 7 shows the
+>   green `Quest complete: Close Inspection` line.
+> - From the library source, not yet seen: Available Quests is an ePADD tile above
+>   Quests, present only while something is on offer, and its Accept button is shown
+>   only on Comms (`QUEST_ACCEPT_CONSOLES`, default `comms,admiral`); on Helm a line names
+>   the console that can accept. The completion line is a `comms_broadcast` in green,
+>   `Quest complete: <name>` (`quest_driver.py`). Check both on the new stills.
+> - Not shown anywhere on screen, as far as the source says: the side's credit total
+>   (the amd template does not set `CREDITS_START`, so the end screen has no credits
+>   row). The script says only that the Reward line's credits are paid. If a still shows
+>   the total somewhere, say where.
+
 > **STATE ON 2026-10-05. Read this first; where an older note below disagrees, this is
 > newer.**
 >
@@ -129,9 +163,9 @@ Also capture the screenshot for the top of the page.
 **Screen:** The game, Helm. The ship closes on a dark hulk. The Quest Log, with Close
 Inspection showing `Done`.
 
-**Say:** "That quest is mine. || Nine lines in a text file put it there. || And in the next
-few minutes, you'll write your own first quest, | and you won't write any code to do it.
-|||"
+**Say:** "This is the Quest Log, on Helm, | and that quest, Close Inspection, is mine. ||
+Fifteen lines in a text file put it there. || And in the next few minutes, you'll write your
+own first quest, | and you won't write any code to do it. |||"
 
 ### 2. Where quests live
 
@@ -145,15 +179,23 @@ one of our own underneath it. |||"
 
 ### 3. Write it
 
-**Screen:** Cursor on the blank line above `// ---- Science scans.` Type the record, one
-line at a time. Save.
+**Screen:** The game first: the Quest Log, Close Inspection selected, the list on the left
+and the pane on the right. Then VS Code: cursor on the blank line above `// ---- Science
+scans.` Type the record, one line at a time, the blank lines too. Save.
 
-**Say:** "I start with three hashes, which makes this a quest of its own. || Then a name the
-crew will read, and a key. || Then I open the fence. ||| Shared means it's one quest for the
-whole crew. || Starts when, at once, means it's live as soon as the game starts. || The
-objective is the order, in one sentence. || Done when is the one we'll come back to. || Then
-comes the reward, and I close the fence. ||| And last, one line of story, | which is the
-text the crew will read. |||"
+**Say:** "Here's where the crew will read it. || On the left is the Quest Log's list, | and
+on the right, for the quest that's selected, | its state, its reward, its order, and
+its briefing. || Every one of those is a line I'm about to type. ||| I start with three
+hashes, which makes this a quest of its own. || Then the name, which is what the crew sees
+in that list, | and a key, which they never see. || Then I open the fence. ||| Shared means
+it's one quest for the whole crew. || Starts when, at once, means it's in the Quest Log |
+as soon as the game starts. || The objective is the order, in one sentence, | and the crew
+reads it on the right, above the description. || Done when is the one we'll come back to.
+|| Then comes the reward, which is the Reward line on the right, | and I close the fence.
+||| And last comes the description, | which the crew reads under the order. || It's a short
+page, so I write it like one. || First a line of story, | then a blank line, and what DS 1
+knows so far. || Then a heading, which is two hashes and a space, with no brackets, | so
+it's part of the description, and not a record. || And last, what's at stake. |||"
 
 ### 4. The line that matters
 
@@ -163,25 +205,28 @@ with `"tsn, derelict, ghost_ship"` selected. Change nothing.
 **Say:** "This is the line that matters most. || It's a verb, then a role, then a number, in
 that order. ||| Reach means get close, | and five hundred is how close. || And derelict is a
 role, | which you met last time. || Here's the hulk's list: | its side, and then the two
-roles it wears. || The promise is the same as it was for a reading: | something has to wear
-the word. ||| What's new here is the verb. || Last time, a step waited for a signal, | and
-this file had to say it. || But reach is built in, | so the game does the watching itself.
-|| And that's why there's nothing to change in here. |||"
+roles it wears. || The promise is the same as it was for the sentence on Science's Intel
+tab: | something has to wear the word. ||| What's new here is the verb. || Last time, a step
+waited for a signal, | and this file had to say it. || But reach is built in, | so the game
+does the watching itself. || And that's why there's nothing to change in here. |||"
 
 ### 5. Getting it wrong
 
 **Screen:** Change `Done when:` to `When:`, save, run lint: the `quest-never-finishes`
 warning. Undo. Change `derelict` to `derelect`, save, run lint: `role-nothing-wears`.
-Undo. Delete the `Starts when:` line, save, run lint: `clean`. Undo. Then the page, "What
-lint cannot see".
+Undo. Delete the `Starts when:` line, save, run lint: `clean`. The game with that file:
+Helm, the ePADD, the Available Quests screen with Close Inspection on it. Undo. Then the
+page, "What lint cannot see".
 
 **Say:** "Here are two slips that lint catches. || The word When, on its own, means when the
 quest starts, | so nothing ever finishes this quest, | and lint says exactly that. || Then
 there's a role spelled wrong: | nothing wears it, and lint says that too. ||| Now here's one
 it doesn't catch. || If I take out the line that says Starts when, at once, | lint still
-says clean, | but the quest is only on offer. ||| The page has a table of these, | and the
-ones to remember are these: | the number goes last, and nothing goes after it, | and count
-your hashes. |||"
+says clean, | but the quest is only on offer. || So here's where my quest went instead. || It isn't in the
+Quest Log at all. | It's on the ePADD's other list, Available Quests, | and it waits there
+until someone on Comms accepts it. ||| The page has a table of these, | and the ones to
+remember are these: | the number goes last, and nothing goes after it, | and count your
+hashes. |||"
 
 ### 6. Check it
 
@@ -194,17 +239,21 @@ errors and no warnings. |||"
 
 **Screen:** Start the server and a Helm console. The handheld icon, **Quests**, the Quest
 Log. Select Close Inspection. Fly to the hulk. Show the range passing 2000, then 500. The
-Quest Log again.
+green `Quest complete: Close Inspection` line on Helm. The Quest Log again.
 
-**Say:** "Here's the Quest Log, and here's mine, | with its state, its reward, and my
-description. || So now we fly. ||| At two thousand, Find the Derelict is done. || But that's
-last lecture's signal, and not my quest, | so mine hasn't moved. ||| Then, inside five
-hundred, | it's done, and the crew is paid. |||"
+**Say:** "Here's the Quest Log, and here's mine in the list. || On the right are its state,
+its reward and my order. || Under them is my description, | three short paragraphs with a
+heading, | and a gap wherever I left a blank line. || So now we fly out to the hulk. ||| At two thousand, Find
+the Derelict is done. || But that's last lecture's signal, and not my quest, | so mine
+hasn't moved. ||| Then, once we're inside five hundred, | Helm shows a green line: Quest complete,
+Close Inspection. || In the Quest Log it's done, | and the hundred credits on its Reward
+line are paid to the crew's side. |||"
 
 ### 8. Your turn
 
 **Screen:** The exercise on the companion page. Then the built-in verbs table.
 
 **Say:** "Now add a second quest, one that finishes on time, | with Done when, two minutes.
+|| Give it a briefing of its own, | at least two paragraphs: what to do, and why it matters.
 || That's just a number and a unit. ||| There are five verbs built in, | and they're all on
 the page. ||| Next time we'll join quests together, | so that one leads to the next. |||"

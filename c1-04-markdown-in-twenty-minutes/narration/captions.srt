@@ -1,495 +1,551 @@
 1
-00:00:00,000 --> 00:00:03,163
+00:00:00,000 --> 00:00:03,359
 On the left is what I typed, with nothing but a keyboard,
 
 2
-00:00:03,613 --> 00:00:06,530
+00:00:03,809 --> 00:00:06,046
 and on the right is what a reader sees.
 
 3
-00:00:07,430 --> 00:00:10,276
+00:00:06,946 --> 00:00:09,822
 The few odd characters on the left are called marks,
 
 4
-00:00:10,726 --> 00:00:12,950
+00:00:10,272 --> 00:00:12,410
 and the whole idea is called markdown.
 
 5
-00:00:14,750 --> 00:00:19,581
+00:00:14,210 --> 00:00:18,041
 You need it because the file your mission lives in is written the same way.
 
 6
-00:00:20,481 --> 00:00:23,314
+00:00:18,941 --> 00:00:20,588
 And it takes about twenty minutes.
 
 7
-00:00:24,514 --> 00:00:28,316
+00:00:21,788 --> 00:00:25,375
 In a word processor, you make a heading by choosing a style,
 
 8
-00:00:28,766 --> 00:00:33,878
+00:00:25,825 --> 00:00:30,498
 and the file remembers that in a way only the word processor can read.
 
 9
-00:00:34,778 --> 00:00:38,166
+00:00:31,398 --> 00:00:34,194
 In markdown, you type a hash in front of the line,
 
 10
-00:00:38,616 --> 00:00:42,800
+00:00:34,644 --> 00:00:38,609
 and then anything can read it: a person, a preview, or a game.
 
 11
-00:00:44,600 --> 00:00:48,466
+00:00:40,409 --> 00:00:44,228
 Today you'll write one page, a story bible for your mission,
 
 12
-00:00:48,916 --> 00:00:50,991
+00:00:44,678 --> 00:00:46,540
 and you'll learn six marks.
 
 13
-00:00:52,191 --> 00:00:54,728
+00:00:47,740 --> 00:00:50,521
 This is the folder you made and opened last time.
 
 14
-00:00:55,628 --> 00:00:59,540
+00:00:51,421 --> 00:00:55,641
 I make a new file in it, and its name ends in dot M D.
 
 15
-00:01:00,439 --> 00:01:04,658
+00:00:56,541 --> 00:01:00,883
 Then I type one line: a hash, a space, and my title.
 
 16
-00:01:06,458 --> 00:01:09,851
+00:01:02,683 --> 00:01:06,581
 Now, control K, let go, and then V,
 
 17
-00:01:10,301 --> 00:01:12,139
+00:01:07,031 --> 00:01:08,634
 and that opens the preview.
 
 18
-00:01:13,039 --> 00:01:15,684
+00:01:09,534 --> 00:01:12,261
 The hash is gone, and the words have become a title.
 
 19
-00:01:16,584 --> 00:01:20,114
+00:01:13,161 --> 00:01:16,761
 This preview is part of VS Code, so it needs nothing added.
 
 20
-00:01:21,914 --> 00:01:23,758
-And then I save.
+00:01:18,561 --> 00:01:19,920
+And then I save the file.
 
 21
-00:01:24,658 --> 00:01:26,516
+00:01:20,820 --> 00:01:22,742
 The game never reads this file.
 
 22
-00:01:26,966 --> 00:01:29,851
+00:01:23,192 --> 00:01:26,362
 It's mine, and nothing I type here can break anything.
 
 23
-00:01:31,051 --> 00:01:32,717
+00:01:27,562 --> 00:01:29,328
 Two hashes make a heading.
 
 24
-00:01:33,167 --> 00:01:35,557
+00:01:29,778 --> 00:01:32,322
 Three would make a smaller one, inside it.
 
 25
-00:01:36,457 --> 00:01:37,786
-So count the hashes,
+00:01:33,222 --> 00:01:35,110
+So always count the hashes,
 
 26
-00:01:38,236 --> 00:01:43,753
+00:01:35,560 --> 00:01:42,240
 because in the next lecture, the number of hashes is how the game knows what's inside what.
 
 27
-00:01:45,553 --> 00:01:46,812
-There are two rules.
+00:01:44,040 --> 00:01:45,769
+There are two rules for headings.
 
 28
-00:01:47,712 --> 00:01:49,577
+00:01:46,669 --> 00:01:48,626
 The hashes start at the left edge,
 
 29
-00:01:50,027 --> 00:01:51,950
+00:01:49,076 --> 00:01:50,811
 and there's one space after them.
 
 30
-00:01:52,850 --> 00:01:54,788
+00:01:51,711 --> 00:01:53,909
 Watch what happens without the space:
 
 31
-00:01:55,238 --> 00:01:56,734
+00:01:54,359 --> 00:01:55,747
 it's not a heading any more.
 
 32
-00:01:57,634 --> 00:01:59,860
+00:01:56,647 --> 00:01:57,767
 So I put it back.
 
 33
-00:02:01,060 --> 00:02:03,958
-A paragraph is one line, however long it is,
+00:01:58,967 --> 00:02:01,718
+A paragraph can be one long line,
 
 34
-00:02:04,408 --> 00:02:07,261
+00:02:02,168 --> 00:02:04,077
 and word wrap folds it for me.
 
 35
-00:02:08,161 --> 00:02:09,692
+00:02:04,977 --> 00:02:06,251
 A blank line ends it.
 
 36
-00:02:11,492 --> 00:02:13,979
+00:02:08,051 --> 00:02:11,777
 Now, here are two things writers do without thinking.
 
 37
-00:02:14,879 --> 00:02:19,282
+00:02:12,677 --> 00:02:16,970
 The first is pressing Enter in the middle of a paragraph.
 
 38
-00:02:20,182 --> 00:02:23,502
+00:02:17,870 --> 00:02:22,527
 Look at the preview: it joined the halves again, so you'd never know.
 
 39
-00:02:24,402 --> 00:02:26,351
-But the game doesn't join them.
+00:02:23,427 --> 00:02:25,258
+The game's Quest Log joins them too,
 
 40
-00:02:26,801 --> 00:02:28,132
-It starts a new line there.
+00:02:25,708 --> 00:02:28,316
+so in a quest's description, that's fine.
 
 41
-00:02:29,032 --> 00:02:30,884
-So the rule is, one paragraph, one line.
+00:02:29,216 --> 00:02:31,877
+The one place it isn't fine is a Science reading,
 
 42
-00:02:32,684 --> 00:02:34,636
-The second is the Tab key at the start.
+00:02:32,327 --> 00:02:33,944
+and that's next lecture.
 
 43
-00:02:35,536 --> 00:02:38,394
-Look what the preview made of that.
+00:02:35,744 --> 00:02:37,698
+The second is the Tab key at the start.
 
 44
-00:02:39,294 --> 00:02:42,552
-In markdown, an indented line is something else altogether,
+00:02:38,598 --> 00:02:40,376
+Look what the preview made of that.
 
 45
-00:02:43,002 --> 00:02:44,748
-so never start a line with Tab.
+00:02:41,276 --> 00:02:45,242
+In markdown, an indented line is something else altogether,
 
 46
-00:02:45,948 --> 00:02:48,970
-A hyphen, a space, and a line of words make a list.
+00:02:45,692 --> 00:02:48,434
+so never start a line with Tab.
 
 47
-00:02:49,870 --> 00:02:52,327
-These are the people in my story.
+00:02:49,634 --> 00:02:53,313
+A hyphen, a space, and a line of words make a list.
 
 48
-00:02:53,227 --> 00:02:57,027
-A number, a period, and a space make a numbered list,
+00:02:54,213 --> 00:02:56,250
+These are the people in my story.
 
 49
-00:02:57,477 --> 00:02:58,767
-for things that happen in order.
+00:02:57,150 --> 00:03:01,503
+A number, a period, and a space make a numbered list,
 
 50
-00:03:00,567 --> 00:03:01,938
-Keep these three lines,
+00:03:01,953 --> 00:03:03,708
+for things that happen in order.
 
 51
-00:03:02,388 --> 00:03:05,530
-because in Lecture Eight, each one becomes a step of a quest.
+00:03:05,508 --> 00:03:07,297
+Keep these three numbered lines,
 
 52
-00:03:06,430 --> 00:03:09,839
-And leave a blank line above a list, and a blank line below it.
+00:03:07,747 --> 00:03:11,511
+because in Lecture Eight, each one becomes a step of a quest.
 
 53
-00:03:11,039 --> 00:03:13,026
-A link is two pairs of brackets.
+00:03:12,411 --> 00:03:15,783
+And leave a blank line above a list, and a blank line below it.
 
 54
-00:03:13,926 --> 00:03:17,415
-Square brackets go round the words the reader sees,
+00:03:16,983 --> 00:03:19,011
+A link is two pairs of brackets.
 
 55
-00:03:17,865 --> 00:03:21,539
-and round brackets go round where it leads.
+00:03:19,911 --> 00:03:22,890
+Square brackets go round the words the reader sees,
 
 56
-00:03:22,439 --> 00:03:25,448
-There's nothing between them, not even a space.
+00:03:23,340 --> 00:03:25,842
+and round brackets go round where it leads.
 
 57
-00:03:27,248 --> 00:03:30,518
-VS Code typed that closing bracket for me, so I just keep going.
+00:03:26,742 --> 00:03:29,239
+There's nothing between them, not even a space.
 
 58
-00:03:31,418 --> 00:03:33,498
-And in the preview, it's a link.
+00:03:31,039 --> 00:03:34,738
+VS Code typed that closing bracket for me, so I just keep going.
 
 59
-00:03:35,298 --> 00:03:37,407
-Now look at this line from the mission file.
+00:03:35,638 --> 00:03:37,475
+And in the preview, it's a link.
 
 60
-00:03:38,307 --> 00:03:42,926
-It's hashes, a space, square brackets, and round brackets:
+00:03:39,275 --> 00:03:42,637
+Now here's something from the mission file, in the game first.
 
 61
-00:03:43,376 --> 00:03:45,625
-a heading with a link in it.
+00:03:43,537 --> 00:03:46,503
+This is the Science console, with the hulk scanned,
 
 62
-00:03:46,525 --> 00:03:49,156
-That's the first line of every record you'll ever write.
+00:03:46,953 --> 00:03:49,954
+and those words are on the hulk's scan tab.
 
 63
-00:03:50,056 --> 00:03:53,884
-In that file, though, the round brackets hold a short name for the game,
+00:03:50,854 --> 00:03:54,777
+They come from a scan record, and this is its first line.
 
 64
-00:03:54,334 --> 00:03:56,413
-and not a web address.
+00:03:55,677 --> 00:03:59,275
+It's hashes, a space, square brackets, and round brackets:
 
 65
-00:03:57,613 --> 00:04:00,203
-Two stars on each side make a word bold,
+00:03:59,725 --> 00:04:01,484
+a heading with a link in it.
 
 66
-00:04:00,653 --> 00:04:03,022
-and one star on each side makes it slanted.
+00:04:02,384 --> 00:04:05,238
+That's the first line of every record you'll ever write.
 
 67
-00:04:03,922 --> 00:04:06,562
-Use them in your story bible.
+00:04:06,138 --> 00:04:10,703
+In that file, though, the round brackets hold a short name for the game,
 
 68
-00:04:07,462 --> 00:04:09,616
-But don't use them in the mission file,
+00:04:11,153 --> 00:04:12,401
+and not a web address.
 
 69
-00:04:10,066 --> 00:04:12,385
-and in three minutes you'll see why.
+00:04:13,601 --> 00:04:16,174
+Two stars on each side make a word bold,
 
 70
-00:04:13,585 --> 00:04:16,508
-Everything I've typed so far is a key on my keyboard.
+00:04:16,624 --> 00:04:18,783
+and one star on each side makes it slanted.
 
 71
-00:04:17,408 --> 00:04:19,115
-A word processor isn't like that.
+00:04:19,683 --> 00:04:21,257
+Use them in your story bible.
 
 72
-00:04:20,015 --> 00:04:23,294
-I typed straight quotes here, and it made them curly.
+00:04:22,157 --> 00:04:24,074
+But don't use them in the mission file,
 
 73
-00:04:23,744 --> 00:04:27,226
-It did this to my hyphens, and this to my three dots.
+00:04:24,524 --> 00:04:26,576
+and in three minutes you'll see why.
 
 74
-00:04:28,126 --> 00:04:29,331
-And it doesn't ask.
+00:04:27,776 --> 00:04:31,496
+Everything I've typed so far is a key on my keyboard.
 
 75
-00:04:31,131 --> 00:04:33,236
-The game can draw only plain characters.
+00:04:32,396 --> 00:04:34,229
+A word processor isn't like that.
 
 76
-00:04:34,136 --> 00:04:39,344
-When it reads your mission, it swaps these for the plain ones, so nothing breaks,
+00:04:35,129 --> 00:04:38,419
+I typed straight quotes here, and it made them curly.
 
 77
-00:04:39,794 --> 00:04:42,803
-and you get a warning for each one, which is Lecture Six.
+00:04:38,869 --> 00:04:42,098
+It did this to my hyphens, and this to my three dots.
 
 78
-00:04:44,603 --> 00:04:48,137
-But the habit starts now: write game text in VS Code.
+00:04:42,998 --> 00:04:44,515
+And it doesn't even ask me.
 
 79
-00:04:49,037 --> 00:04:51,953
-And if you bring words over from a word processor,
+00:04:46,315 --> 00:04:48,444
+The game can draw only plain characters.
 
 80
-00:04:52,403 --> 00:04:55,304
-type the quotes, the dashes and the dots again.
+00:04:49,344 --> 00:04:53,841
+When it reads your mission, it swaps these for the plain ones, so nothing breaks,
 
 81
-00:04:56,504 --> 00:04:58,215
-Here's the file the game reads,
+00:04:54,291 --> 00:04:57,893
+and you get a warning for each one, which is Lecture Six.
 
 82
-00:04:58,665 --> 00:05:01,350
-and you can read most of it now.
+00:04:59,693 --> 00:05:03,705
+But the habit starts now: write game text in VS Code.
 
 83
-00:05:02,250 --> 00:05:05,408
-Hashes mean a heading, and brackets mean a link.
+00:05:04,605 --> 00:05:07,415
+And if you bring words over from a word processor,
 
 84
-00:05:06,308 --> 00:05:08,654
-But five marks in here aren't markdown's.
+00:05:07,865 --> 00:05:11,299
+type the quotes, the dashes and the dots again.
 
 85
-00:05:10,454 --> 00:05:12,483
-This heading is the first line of a record:
+00:05:12,499 --> 00:05:14,008
+Here's the file the game reads,
 
 86
-00:05:12,933 --> 00:05:16,368
-a name for people, and a key for the game.
+00:05:14,458 --> 00:05:16,038
+and you can read most of it now.
 
 87
-00:05:17,268 --> 00:05:21,040
-These three hyphens would be a line across the page in markdown.
+00:05:16,938 --> 00:05:19,756
+Hashes mean a heading, and brackets mean a link.
 
 88
-00:05:21,490 --> 00:05:24,526
-Here, they're a fence, with the record's facts inside.
+00:05:20,656 --> 00:05:23,271
+But five marks in here aren't markdown's.
 
 89
-00:05:25,426 --> 00:05:29,845
-A percent sign is one reading for the Science screen.
+00:05:25,071 --> 00:05:27,421
+This heading is the first line of a record:
 
 90
-00:05:30,745 --> 00:05:34,076
-Two slashes are a note to myself, which the game skips.
+00:05:27,871 --> 00:05:30,568
+a name for people, and a key for the game.
 
 91
-00:05:34,976 --> 00:05:37,964
-And there's one you haven't got yet, double square brackets,
+00:05:31,468 --> 00:05:35,247
+These three hyphens would be a line across the page in markdown.
 
 92
-00:05:38,414 --> 00:05:40,542
-which is a link to another record.
+00:05:35,697 --> 00:05:39,642
+Here, they're a fence, with the record's facts inside.
 
 93
-00:05:42,342 --> 00:05:45,569
-So this file is shaped like markdown, and it isn't markdown.
+00:05:41,442 --> 00:05:44,763
+Now back to Science, and the hulk's scan tab.
 
 94
-00:05:46,469 --> 00:05:49,699
-The preview I opened for my story bible doesn't open for it.
+00:05:45,663 --> 00:05:47,599
+That sentence is one reading,
 
 95
-00:05:50,149 --> 00:05:51,584
-The game is what reads it.
+00:05:48,049 --> 00:05:52,511
+and a percent sign in the file starts each reading the hulk can give.
 
 96
-00:05:52,784 --> 00:05:54,819
-So what does the game do with marks?
+00:05:53,411 --> 00:05:55,414
+This record has two of them,
 
 97
-00:05:55,719 --> 00:05:57,781
-I'll give this quest nine lines:
+00:05:55,864 --> 00:05:59,112
+and Science picks one each time the hulk is scanned.
 
 98
-00:05:58,231 --> 00:06:02,167
-a heading, a bold word, a list, a word in backticks, and a link,
+00:06:00,912 --> 00:06:04,458
+Two slashes are a note to myself, which the game skips.
 
 99
-00:06:02,617 --> 00:06:04,461
-and then I save.
+00:06:05,357 --> 00:06:08,857
+And there's one you haven't got yet, double square brackets,
 
 100
-00:06:06,261 --> 00:06:09,851
-I start the game the way we did last time, and I don't fly anywhere.
+00:06:09,307 --> 00:06:11,132
+which is a link to another record.
 
 101
-00:06:10,751 --> 00:06:14,285
-On Helm, it's the handheld, then Quests,
+00:06:12,932 --> 00:06:17,623
+So this file is shaped like markdown, and it isn't markdown.
 
 102
-00:06:14,735 --> 00:06:17,461
-and I select Find the Derelict.
+00:06:18,523 --> 00:06:22,104
+The preview I opened for my story bible doesn't open for it.
 
 103
-00:06:19,261 --> 00:06:21,173
-The heading is drawn as a heading.
+00:06:22,554 --> 00:06:24,236
+The game is what reads it.
 
 104
-00:06:22,073 --> 00:06:24,496
-The bold word is still wearing its stars.
+00:06:25,436 --> 00:06:27,373
+So what does the game do with marks?
 
 105
-00:06:25,396 --> 00:06:27,226
-The list is a list.
+00:06:28,273 --> 00:06:30,670
+I'll give this quest twelve lines:
 
 106
-00:06:28,126 --> 00:06:31,078
-The backticks are gone, and the word is still there.
+00:06:31,120 --> 00:06:34,984
+a heading, a paragraph typed on two lines, a list,
 
 107
-00:06:31,978 --> 00:06:37,373
-And the link shows every bracket and the whole address, with nothing to click.
+00:06:35,434 --> 00:06:37,599
+a small table, and a link,
 
 108
-00:06:39,173 --> 00:06:40,505
-Look at the spacing, too.
+00:06:38,049 --> 00:06:39,408
+and then I save the file.
 
 109
-00:06:40,955 --> 00:06:44,102
-I left three blank lines, and the game left none.
+00:06:41,208 --> 00:06:45,102
+I start the game the way we did last time, and I don't fly anywhere.
 
 110
-00:06:45,002 --> 00:06:47,294
-A preview would have drawn all of it.
+00:06:46,002 --> 00:06:49,522
+On Helm, it's the handheld, then Quests,
 
 111
-00:06:47,744 --> 00:06:50,899
-The game drew two things, the heading and the list.
+00:06:49,972 --> 00:06:54,019
+and in the Quest Log, I select Find the Derelict.
 
 112
-00:06:51,799 --> 00:06:53,597
-And nothing warned me, either.
+00:06:54,919 --> 00:06:58,238
+The pane beside the list shows what the crew is told about it.
 
 113
-00:06:55,397 --> 00:06:59,474
-So here are the rules for the mission file, and they're on the page.
+00:07:00,038 --> 00:07:02,460
+The heading is drawn as a heading.
 
 114
-00:07:00,374 --> 00:07:04,613
-Write plain sentences, and keep one paragraph to one line.
+00:07:03,360 --> 00:07:05,345
+My two lines are one paragraph,
 
 115
-00:07:05,513 --> 00:07:09,872
-And a heading and a list are the two marks a description draws.
+00:07:05,795 --> 00:07:07,708
+just as the preview joined them.
 
 116
-00:07:11,672 --> 00:07:14,720
-Then I close the game, and I put my line back,
+00:07:08,608 --> 00:07:11,222
+But the bold word is still wearing its stars.
 
 117
-00:07:15,170 --> 00:07:18,082
-because the next lecture starts from the file as it was.
+00:07:12,122 --> 00:07:13,774
+The list is a list,
 
 118
-00:07:19,282 --> 00:07:23,172
-Now write the story bible for your own mission.
+00:07:14,224 --> 00:07:16,326
+and the table is a table.
 
 119
-00:07:24,072 --> 00:07:27,413
-Give it a title, and the story in two sentences.
+00:07:17,226 --> 00:07:21,622
+And the link shows every bracket and the whole address, with nothing to click.
 
 120
-00:07:28,313 --> 00:07:31,923
-Then three headings: premise, people, and what happens.
+00:07:23,422 --> 00:07:24,920
+Look at the spacing, too.
 
 121
-00:07:32,823 --> 00:07:36,579
-Add three people, three things that happen, and one link.
+00:07:25,369 --> 00:07:28,595
+Where I left a blank line, the game left a gap.
 
 122
-00:07:38,379 --> 00:07:41,747
-Keep it, because the people become characters in Class Two,
+00:07:29,495 --> 00:07:31,692
+So a description is a page,
 
 123
-00:07:42,197 --> 00:07:45,188
-and the three things that happen become your first quest.
+00:07:32,142 --> 00:07:35,007
+and you can give the crew a lot more than one sentence.
 
 124
-00:07:46,088 --> 00:07:50,289
+00:07:36,807 --> 00:07:40,291
+Here are the rules for the mission file, and they're on the page.
+
+125
+00:07:41,191 --> 00:07:43,269
+Write a description as a page,
+
+126
+00:07:43,719 --> 00:07:47,550
+with paragraphs, and a heading, a list or a table where they help.
+
+127
+00:07:48,450 --> 00:07:51,377
+Leave out stars, backticks and links.
+
+128
+00:07:52,277 --> 00:07:54,209
+And a Science reading is one line,
+
+129
+00:07:54,659 --> 00:07:57,569
+because every line is a reading of its own.
+
+130
+00:07:59,369 --> 00:08:02,270
+Then I close the game, and I put my line back,
+
+131
+00:08:02,720 --> 00:08:05,760
+because the next lecture starts from the file as it was.
+
+132
+00:08:06,960 --> 00:08:09,242
+Now write the story bible for your own mission.
+
+133
+00:08:10,142 --> 00:08:13,032
+Give it a title, and the story in two sentences.
+
+134
+00:08:13,932 --> 00:08:18,878
+Then three headings: premise, people, and what happens.
+
+135
+00:08:19,778 --> 00:08:24,142
+Add three people, three things that happen, and one link.
+
+136
+00:08:25,942 --> 00:08:29,321
+Keep it, because the people become characters in Class Two,
+
+137
+00:08:29,771 --> 00:08:33,230
+and the three things that happen become your first quest.
+
+138
+00:08:34,130 --> 00:08:38,285
 Next time, we take one record of the mission file apart, line by line.

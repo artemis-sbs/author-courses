@@ -56,7 +56,17 @@ Fails when: 10 minutes
 Win: The log is home. DS 1 knows what happened out there.
 Lose: The reactor let go with the log still aboard.
 ---
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
 The hulk's reactor is failing. Get her flight log back to DS 1 before she goes.
+
+| What | What DS 1 knows |
+|---|---|
+| Her reactor | Failing. Ten minutes, maybe less |
+| Her flight log | Aboard, as far as anyone can tell |
+| Her crew | Six when she sailed. None answering |
+
+The log is the only record of where she has been. Lose it, and nobody will ever know who sent her.
 
 #### [Close Inspection](approach)
 ---
@@ -70,6 +80,12 @@ Part of: salvage
 Required: true
 ---
 The hulk is not answering hails. Bring the ship in close and take a look.
+
+DS 1 has called her on every channel for an hour. Nothing has come back, not even a carrier wave.
+
+## Why it matters
+
+A ship with nobody at the helm is a danger to every lane near the border. If she is empty, DS 1 needs to know why. If she is not, somebody aboard needs help.
 
 #### [Find the Lifeboat](boat)
 ---

@@ -1,5 +1,23 @@
 # C1-5 video script - The shape of a record
 
+> **2026-10-14 (later): a body is not one line.** Scene 7 used to say the body "stays on
+> one line, however long that line gets". A quest's description is drawn by a text area
+> and can hold several paragraphs (blank line between), a heading, a list, a table; the
+> Quest Log joins a paragraph's lines as markdown does. Scene 7 now says so and keeps
+> First Contact's body to one line only so later line numbers match. A Science reading's
+> one-line rule (scene 8, Step 6) is real and unchanged: every line is a reading.
+
+> **Reworked 2026-10-14: say what the crew sees.** The cold open names Science, the hulk
+> and its `intel` tab before "I wrote that sentence". Scene 5 shows the hull reading on
+> Science's `Scan` tab, scene 6 shows the Quest Log line and pane and the Science tab the
+> table talks about, scene 7 shows First Contact's old words in the Quest Log before they
+> are changed, and scene 8 cuts to Science's `intel` tab when the new record is written.
+> Every Science still is retaken on the NEW console (chip rail, tabs over the map) under a
+> `_sci2` id. "The second one is mine" is gone: the new console lists the hulk's tabs as
+> `Scan`, then the others in the order the scan records give them, so on this file intel
+> is probably third. The script no longer counts.
+
+
 > **STATE ON 2026-10-05. Read this first; where an older note below disagrees, this is
 > newer.**
 >
@@ -116,7 +134,12 @@ it. These may be said as fact:
 2. The engine scans the hulk by itself once the ship is near. Both of the template's
    steps finish within seconds of arriving, and First Contact then shows `Done`.
 3. On Science, selecting the hulk in the list on the right shows tabs `scan` and `mat`
-   and one of the readings.
+   and one of the readings. (That was the OLD console. On the new one, the default since
+   2026-10-13, the selected contact's tabs are a stack of buttons over the map, `Scan`
+   first, each reading `Queue <Tab>` until it is scanned, then the tab's name; an
+   `In Queue` row comes last, and the chosen tab's text is in the read-out beside the
+   map. Read: LegendaryMissions `consoles\science_tabs.py`, `science_panel.py`. Not
+   seen.)
 4. Curly quotes in a quest's description are drawn as plain `"` and `'` (seen on Helm).
 5. Four hashes on Derelict Hull: all three quests are there, the hulk has both tabs and
    both readings, and `mast.runtime.log` holds one line that starts `AMD error: line 47`.
@@ -184,10 +207,11 @@ take another row from that table for the scene: a blank line and then
 
 ### 1. Cold open
 
-**Screen:** The Science console. The hulk selected, the `intel` tab open, one sentence on
-it.
+**Screen:** The Science console (the new one). The hulk selected and scanned, the
+`intel` tab open, one sentence in the read-out.
 
-**Say:** "I wrote that sentence. || It's one of six lines in a text file, | and those six
+**Say:** "This is the Science console. || We've scanned the hulk, and this is its intel tab, | with one sentence
+on it. || I wrote that sentence myself. || It's one of six lines in a text file, | and those six
 lines have a shape, | the same shape as every quest, every person and every place you'll
 write in this course. || So today, we learn that shape once. |||"
 
@@ -219,41 +243,46 @@ Contact. |||"
 **Screen:** Select the heading of Find the Derelict. Then select from the first `---` to
 the second. Then select the body line.
 
-**Say:** "Let's take one apart. || The heading gives it a name. | Then comes what I'll call
+**Say:** "Let's take one record apart. || The heading gives it a name. | Then comes what I'll call
 the fence: | two lines of three hyphens, and everything between them. || Inside the fence
 there's one fact on each line, | a label, a colon, and a value. | Those are fields, and
 they're what the game acts on. || Below the fence is the body, | which is just a sentence
-for people to read. ||| So that's heading, | fence, | body. ||| You don't need to know what
+for people to read. ||| So that's heading, fence, body. ||| You don't need to know what
 these four fields do yet, | but have a look at the last one. || It points at another record,
 | and it does that with a key, | because nothing ever points at a name. |||"
 
 ### 5. Two more
 
-**Screen:** First Contact, with `Arc` highlighted. Then Derelict Hull, with the two `%`
-lines highlighted.
+**Screen:** First Contact, with `Arc` highlighted. Then Science, the hulk's `Scan` tab
+with its reading. Then Derelict Hull, with the two `%` lines highlighted.
 
 **Say:** "Now see if you can find the same three parts here. || One line inside this fence
 has no colon, and that's allowed, | because the first line of a fence can be a single word
-that says what kind of record this is. ||| And here, in a scan record, | the body is two
-lines that each start with a percent sign. || Each of those lines is one reading, | and
-Science gets shown just one of them. |||"
+that says what kind of record this is. ||| Now here's a scan record, in the game first. || This is
+Science again, with the hulk's scan tab open, | and that sentence comes from this record.
+|| Its body is two lines that each start with a percent sign. || Each of those lines is
+one reading, | and Science gets shown just one of them. |||"
 
 ### 6. What shows where
 
-**Screen:** The table from step 4 of the page.
+**Screen:** The Quest Log with First Contact selected. Science, the hulk's `Scan` tab.
+Then the table from step 4 of the page.
 
-**Say:** "A quest's name becomes its line in the quest list, | and its body becomes the
-description beside it. || A scan record's name isn't shown anywhere, | because that one's
-just for you, | and its body is the reading. ||| And a key is never shown at all, | because
+**Say:** "A quest's name becomes its line in the Quest Log, | and its body becomes the words
+in the pane when the crew selects it. || A scan record's name isn't shown anywhere, |
+because that one's just for you, | and its body is the reading on a Science tab. ||| And a key is never shown at all, | because
 a key is for the game. |||"
 
 ### 7. Change the words
 
-**Screen:** Select the body of First Contact. Type the new sentence over it.
+**Screen:** The Quest Log with First Contact selected, its old words in the pane. Then
+VS Code: select the body of First Contact. Type the new sentence over it.
 
-**Say:** "Here's the first edit, | and I'm changing the words and nothing else. || It all
-stays on one line, however long that line gets, | and I'm not touching the heading or the
-fence. |||"
+**Say:** "Here's the first edit, and it's to these words. || This is the Quest Log, with
+First Contact selected, | and the words in the pane are its body. || So in the file, I'm
+changing the words and nothing else. || A body can be more than one paragraph, | and in
+Lecture Eight we'll write one that is. || Today I keep this one to a single line, | and I'm
+not touching the heading or the fence. |||"
 
 ### 8. Write a record
 
@@ -262,9 +291,10 @@ fence. |||"
 **Say:** "Now I'll write one of my own. || I start with three hashes at the left edge, and
 then one space. || Next comes a name, and then a key, | which is small letters and an
 underscore, with no spaces. || Then three hyphens, to open the fence. || Inside it I say
-whose reading this is, which is the derelict, | and which tab it goes on, which is intel. ||
+whose reading this is, which is the derelict, | and which Science tab it goes on, which is intel. ||
 Three more hyphens close the fence, | and then comes the body, which starts with a percent
-sign and stays on one line. ||| So that's six lines in all. || Now notice what I didn't do.
+sign and stays on one line. ||| So that's six lines in all. || And this is what they make: | Science, with the hulk
+scanned, and a tab called intel with my sentence on it. ||| Now notice what I didn't do.
 || I didn't put a space in front of the hashes, | I didn't type anything after the last
 round bracket, | and I didn't press the Tab key in front of a field. |||"
 
@@ -278,8 +308,8 @@ prompt is not used in this scene.
 space after the hashes. | Then it isn't a heading any more, | and my six lines become six
 readings of the record above. || The second is one field pushed in from the edge. | That
 glues it to the line above, | and now the reading belongs to nobody. || And the third is two
-hyphens instead of three, | which isn't a fence, so there are no fields. ||| In all three
-cases the game shows no intel tab, | and it doesn't stop to tell you. || So when your record
+hyphens instead of three, | which isn't a fence, so there are no fields. ||| In all three cases Science shows the hulk with no intel tab, | and the game doesn't stop
+to tell you. || So when your record
 isn't in the game, | look at its shape first. |||"
 
 ### 10. Check it
@@ -292,8 +322,7 @@ back, save, and run it a third time.
 **Say:** "First I check that there are no squiggles, | and then I run one command. || I'm
 looking for a single word, and that word is clean. || The next lecture is all about this
 command, | and it would've caught all three of the mistakes I just showed you. ||| There's
-one warning until then, though. || If I put one hash where there should be three, | it still
-says clean. || That's because with one hash this line is a title, not a record, | so the
+one warning until then, though. || If I put one hash where there should be three, | it still says the word clean. || That's because with one hash this line is a title, not a record, | so the
 game never reads it. ||| Clean only means the checker found nothing, | so count your hashes
 yourself. |||"
 
@@ -301,12 +330,12 @@ yourself. |||"
 
 **Screen:** Start the server, Helm and Science. On Helm, click the handheld icon at the
 top, beside the crew member's name, then **Quests**. Select First Contact in the list on
-the left. Fly to the hulk. On Science, select the hulk in the list on the right and open
-`intel`.
+the left. Fly to the hulk. On Science (the new console), select the hulk; its tabs come up
+over the map; press `Intel` (if it reads `Queue Intel`, press it and wait for the scan).
 
-**Say:** "I click the handheld, and then Quests, | and this is the Quest Log. || There's my
-sentence, right beside First Contact. || Now for the hulk. | The ship scans it by itself
-once we're close enough, | so there are three tabs here, | and the second one is mine. |||"
+**Say:** "I click the handheld, and then Quests, | and this is the Quest Log. || There's my new sentence, in the pane for First Contact. ||| Now for Science, once we're
+close to the hulk. || I select it, and its scan tabs come up over the map. || One of them
+is called intel, | and when its scan is done, that's my sentence. |||"
 
 ### 12. Your turn
 
