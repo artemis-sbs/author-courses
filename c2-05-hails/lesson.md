@@ -10,8 +10,8 @@ You will also know three things about every call you write from now on: which ca
 the top of the list, which ships are called, and what a Comms officer can do with a call
 that is waiting.
 
-*[Screenshot to add: the Comms console with the report call open on Chief Ives's line, and
-one answer in the list.]*
+![The Comms console with Chief Ives speaking on the report call, one answer in the list](images/comms-ives-report.jpg)
+*Comms on the report call: Chief Ives speaking, and one answer in the list.*
 
 You will edit one file, `mission.amd`: two quest records and one scene. Nothing in
 `story.mast` changes.

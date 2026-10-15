@@ -8,7 +8,8 @@ Science scans the hulk and reads your words, on a tab you added. A lifeboat of y
 drifts on the map with its own scan text. And the story now runs from the hulk to the
 lifeboat and then home.
 
-*[Screenshot to add: the Science console with the hulk selected and your new tab open.]*
+![The Science console with the Unknown Hulk selected and its bio reading shown](images/science-hulk-bio-tab.jpg)
+*Science with the Unknown Hulk selected: your bio reading in the read-out on the right.*
 
 You will edit one file, `mission.amd`. Nothing in `story.mast` changes.
 

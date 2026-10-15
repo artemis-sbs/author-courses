@@ -5,8 +5,8 @@
 Your own boss in the Siege game's **Boss** list: a named flagship that arrives with two
 escort fleets, and an objective the crew must finish to win.
 
-*[Screenshot to add: the Options panel of Siege with "Corsair Queen" chosen on the Boss
-line.]*
+![The Siege setup screen with Corsair Queen on the Boss line](images/siege-corsair-queen.jpg)
+*Siege's Options panel, with Corsair Queen chosen on the Boss line.*
 
 You will write no code. You will copy one short file and change the words in it.
 

@@ -5,8 +5,8 @@
 The same boss, now built on purpose. You decide when she arrives, how many fleets come
 with her, who flies them, how big they are, and which ships carry a name.
 
-*[Screenshot to add: the Corsair Queen's arrival, with the Morrigan and the Badb among the
-new raiders.]*
+![The Science console after the Corsair Queen arrives, the contact list showing the Morrigan and the Badb among pirate ships](images/queen-arrival-science.jpg)
+*Science after she arrives, the list set to scanned pirates: the Morrigan and the Badb among her escorts.*
 
 In Lecture 8 your Corsair Queen flew a Kralien dreadnought with Kralien escorts, because
 she was a copy of the Warlord. A corsair should fly pirate ships. Today you fix that, one

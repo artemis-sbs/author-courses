@@ -6,8 +6,8 @@ A second act for your mission, planned before it was written. And four ways to s
 whole story at once without scrolling a file: a list, a timeline, a diagram, and a to-do
 list the tool writes for you. Then the story printed as four documents.
 
-*[Screenshot to add: VS Code with `mission.amd` on the left and the Story Timeline beside
-it.]*
+![VS Code with mission.amd on the left and the Story Timeline on the right](images/story-timeline.jpg)
+*VS Code: `mission.amd` on the left, the Story Timeline beside it.*
 
 You will add three records to `mission.amd`, and a one-line note to five. Nothing in
 `story.mast` changes.

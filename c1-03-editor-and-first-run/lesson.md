@@ -9,8 +9,8 @@ A mission of your own, open in an editor, and played once.
 - That folder is open in VS Code, and `mission.amd` shows in color.
 - You have started the game on your mission and flown the ship from Helm.
 
-*[Screenshot to add: VS Code with the `MyMission` folder open and `mission.amd` in front,
-and beside it the Helm window of the game.]*
+![VS Code with the MyMission folder open and mission.amd in front, beside the game's Helm console](images/editor-and-helm.jpg)
+*Left, VS Code with the `MyMission` folder open and `mission.amd` in color. Right, Helm in the game.*
 
 You write no story today. The mission you make is a small finished sample: a station, a
 drifting hulk, and one quest in two steps. From Lecture 5 on you change it into your own.

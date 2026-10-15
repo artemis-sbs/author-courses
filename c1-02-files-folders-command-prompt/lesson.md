@@ -10,8 +10,8 @@ questions: which version are you, and is this computer set up? Every later lectu
 begins with the words "a command prompt open in `data\missions`". After today that is
 ten seconds' work.
 
-*[Screenshot to add: File Explorer on `data\missions`, the command prompt beside it, and
-the prompt line marked.]*
+![File Explorer on data\missions, and a command prompt open in the same folder](images/explorer-and-prompt.jpg)
+*Above, File Explorer on `data\missions`. Below, a command prompt open in the same folder, its prompt line marked.*
 
 You install nothing in this lecture. One step may replace the tool with its newest
 version. Nothing else on your computer changes.

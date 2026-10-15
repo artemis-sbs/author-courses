@@ -4,8 +4,8 @@
 
 The lectures live one folder each at the top of the repository (`c1-05-...`), with
 `lesson.md` as the page a student reads. mkdocs wants one docs folder, so this copies each
-published lecture's page into `site_src/`, puts its video at the top, and zips its
-`example/` folder for download. `site_src/` is generated: do not edit it, do not commit it.
+published lecture's page into `site_src/`, puts its video at the top, copies its
+`images/` folder beside the page, and zips its `example/` folder for download. `site_src/` is generated: do not edit it, do not commit it.
 
 Which classes are published is PUBLISHED below. A lecture's video and subtitles are named
 in `videos.json` at the top of the repository; a lecture with no entry says so on its page.
@@ -71,6 +71,20 @@ def zip_example(folder, target):
     return True
 
 
+def copy_images(name, number, text):
+    """Copy a lecture's `images/` folder beside its page and point the page's links at it.
+
+    lesson.md links its pictures as `images/x.jpg`, which is right on GitHub. The site page
+    lives in `site_src/class-N/`, so the folder goes to `site_src/class-N/img/<lecture>/`
+    (one folder per lecture, so two lectures may use the same file name) and the links are
+    rewritten to match: mkdocs resolves an image path relative to the page's .md file."""
+    src = os.path.join(ROOT, name, "images")
+    if not os.path.isdir(src):
+        return text
+    shutil.copytree(src, os.path.join(OUT, f"class-{number}", "img", name))
+    return text.replace("](images/", f"](img/{name}/")
+
+
 def main():
     videos = {}
     vpath = os.path.join(ROOT, "videos.json")
@@ -94,6 +108,7 @@ def main():
             block = video_block(videos.get(name), title)
             text = VIDEO_SECTION.sub(lambda m: block, text, count=1) if VIDEO_SECTION.search(text) \
                 else text
+            text = copy_images(name, number, text)
             got_zip = zip_example(os.path.join(ROOT, name), os.path.join(OUT, "downloads", name + ".zip"))
             tail = ["", "---", ""]
             if got_zip:

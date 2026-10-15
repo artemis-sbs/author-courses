@@ -9,8 +9,8 @@ You will break your mission in five places on purpose, and mend it each time. Ea
 one a new writer makes in the first week. When you make one by accident later, you will
 have seen its message before.
 
-*[Screenshot to add: the command prompt with one warning line from lint, its four parts
-marked.]*
+![A command prompt showing one lint warning, with its four parts marked](images/lint-warning-parts.jpg)
+*One lint warning, its four parts marked: the level, the place, the sentence, and the code.*
 
 You will type in one file, `mission.amd`. At the end it is exactly as it was at the start.
 

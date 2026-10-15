@@ -6,7 +6,8 @@ Three people live in your mission file: the harbormaster of DS 1, the chief who 
 salvage ledger, and the captain of the Breaker Cutter. Each has a name, a key and a face,
 and each face is the same in every game.
 
-*[Screenshot to add: the Face Builder beside `mission.amd`, with Captain Sable's portrait.]*
+![VS Code with mission.amd on the left and the AMD Preview of Captain Sable on the right](images/preview-captain-sable.jpg)
+*`mission.amd` with Captain Sable's record, and the AMD Preview beside it showing her portrait.*
 
 You will edit one file, `mission.amd`: one new section with three records, and one line
 in a quest. Nothing in `story.mast` changes.

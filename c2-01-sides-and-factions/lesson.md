@@ -8,8 +8,8 @@ The Breakers are scavengers who want the hulk. Their cutter waits beyond it, and
 reads it as an enemy vessel. The Harbor Guild are friends. They keep a yard west of DS 1,
 and the crew can dock there. Each side has a name, a key and a color that you wrote.
 
-*[Screenshot to add: the Science console with the Breaker Cutter selected: its name, the
-word `breaker` beside it, and the scan text.]*
+![The Science console with the Breaker Cutter selected, the word breaker beside her name](images/science-breaker-cutter.jpg)
+*Science with the Breaker Cutter selected: her name in red, the side `breaker` beside it, and the scan read-out under them.*
 
 You will edit two files. In `mission.amd` you add one section with three records, two
 landmarks and three lines of your word list, and you change one line. In `story.mast` you

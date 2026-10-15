@@ -5,7 +5,8 @@
 A quest of your own in the crew's Quest Log. It starts when the game starts, it finishes
 when the ship gets close to the drifting hulk, and it pays a reward.
 
-*[Screenshot to add: the Quest Log showing "Close Inspection".]*
+![The Quest Log on Helm with Close Inspection selected](images/quest-log-close-inspection.jpg)
+*The Quest Log on Helm: Close Inspection selected, its reward and its briefing beside it.*
 
 You will write fifteen lines in one file. You will not touch any code.
 

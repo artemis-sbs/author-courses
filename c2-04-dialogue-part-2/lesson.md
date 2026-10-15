@@ -6,7 +6,8 @@ Harbormaster Quill asks a question, and now the crew can answer it. One answer a
 for more. One takes a quest. One hangs up. If the crew takes the quest and finishes it, she
 calls back.
 
-*[Screenshot to add: the Comms console with Quill's call open and three answers in the list.]*
+![The Comms console with Quill's call open and the answer list at the lower left](images/comms-quill-answers.jpg)
+*Comms with Quill's call open. The list at the lower left shows two rows at a time; scroll it for the other answers.*
 
 You will edit one file, `mission.amd`: answers on one scene, three new scenes, and two
 records among your quests. Nothing in `story.mast` changes.

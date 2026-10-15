@@ -6,8 +6,8 @@ The Corsair Queen with a story of her own. The crew must sink the Morrigan, and 
 minutes to do it or the game is lost. The Badb is worth a bonus. Ninety seconds after the
 Queen arrives, a third ship she held back comes in, and the crew is told to sink that too.
 
-*[Screenshot to add: the Quest Log after her arrival, with Sink the Morrigan, Sink the Badb
-and Her Reserve in it.]*
+![The Quest Log with Sink the Morrigan, Sink the Badb and Her Reserve](images/quest-log-queen.jpg)
+*The Quest Log after she arrives: Sink the Morrigan, Sink the Badb and Her Reserve under Siege's own quests.*
 
 Most of that is lines in `corsair_queen.amd`, in words you learned in Class 1. The third
 ship is one card of MAST. It is called her **hook**, and it lives in one new, small file.

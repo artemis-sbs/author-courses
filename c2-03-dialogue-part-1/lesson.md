@@ -6,7 +6,8 @@ When the crew brings the ship in close to the hulk, the station calls. The call 
 list on the Comms console. When Comms opens it, Harbormaster Quill says one of three
 opening lines, then one of two closing lines. Play it again and it may read differently.
 
-*[Screenshot to add: the Comms console with Quill's call open.]*
+![The Comms console with Harbormaster Quill's call open](images/comms-quill-call.jpg)
+*Comms with Quill's call open: her face, the call's title, and her line under her name.*
 
 You will edit one file, `mission.amd`: one new section with one scene, and one short
 record among your quests. Nothing in `story.mast` changes.

@@ -8,8 +8,8 @@ Two things in the game that are your words, and one new skill.
 - Science scans the hulk and reads a line you wrote, on a tab the hulk did not have.
 - You can look at any record in `mission.amd` and name its parts.
 
-*[Screenshot to add: the quest list with First Contact selected and the new sentence
-beside it.]*
+![The Quest Log on Helm with First Contact selected and its new sentence beside it](images/first-contact-sentence.jpg)
+*The Quest Log on Helm: First Contact selected, and your sentence beside it.*
 
 You will edit one file, `mission.amd`. You will not open `story.mast`.
 

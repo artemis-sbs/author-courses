@@ -6,7 +6,8 @@ A story with a beginning, a middle and two endings. The crew closes on the hulk.
 are they told to bring her log home. One extra step is theirs to take or leave. Getting
 home in time wins the game. Running out the clock loses it.
 
-*[Screenshot to add: the Quest Log showing "Salvage Run" with its steps under it.]*
+![The Quest Log on Helm with Salvage Run selected and its steps under it](images/quest-log-salvage-run.jpg)
+*The Quest Log on Helm: Salvage Run selected, its steps under it and its briefing beside it.*
 
 You will edit one file, `mission.amd`. Nothing in `story.mast` changes.
 

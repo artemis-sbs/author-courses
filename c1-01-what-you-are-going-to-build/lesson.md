@@ -9,8 +9,8 @@ and an ancient ruin. You will know which of the six classes teaches you to write
 one. And you will know what a mission is made of: a folder, a fact sheet in plain words,
 and a short story file.
 
-*[Screenshot to add: the four stops side by side - the crew's Quest Log, the Boss line on
-the Siege setup screen, a boarding party's handheld, and The Voice on the main screen.]*
+![Four game screens: the Quest Log, the Siege setup screen, a boarding party's handheld, and the station The Voice](images/four-stops.jpg)
+*Four stops: the crew's Quest Log, the Boss line on the Siege setup screen, a boarding party's handheld, and The Voice ahead of the ship.*
 
 You type nothing in this lecture. You play, and you watch.
 
@@ -252,7 +252,8 @@ program. The writer says "a room, this big, here", and the game lays the walls.
 
 This is the promise of Class 1. Do not open anything yet. Look at the picture.
 
-*[Screenshot to add: File Explorer on a mission folder, showing the seven files below.]*
+![File Explorer on the MyMission folder, showing seven files](images/mission-folder.jpg)
+*File Explorer on `data\missions\MyMission`: the seven files of a mission.*
 
 A mission is a folder. The one you make in Lecture 3 holds seven files:
 
@@ -344,7 +345,9 @@ written in, and the checker that reads your work back to you. The second half is
 story: a dead ship across the border, her missing lifeboat, a tug that arrives late, and
 ten minutes to bring her flight log home. You end with a mission named Salvage Run whose
 quests reveal one another, pay, and win or lose the game.
-*[Screenshot to add: the Quest Log showing "Salvage Run" with its steps.]*
+
+![The Quest Log on Helm, with Salvage Run and its steps](images/quest-log-salvage-run.jpg)
+*The Quest Log on Helm: Salvage Run and its steps, with Close Inspection selected.*
 
 **Class 2 - People, Dialogue and Siege Bosses.** Your mission gets people. A station
 that calls the ship; a harbormaster who says one of three things each time; a call the
@@ -352,8 +355,9 @@ crew must answer to be paid. Then you go back to Stop 3 and write a boss for Sie
 Corsair Queen, with a flagship, two escort fleets, a quest that must be finished to win,
 and a reserve ship she holds back. One lecture, on how the game remembers what a side
 thinks of the crew, is in preparation.
-*[Screenshot to add: the Siege setup screen with "Corsair Queen" chosen in the Boss
-list.]*
+
+![The Siege setup screen with Corsair Queen on the Boss line](images/siege-corsair-queen.jpg)
+*The Siege setup screen in Legendary Missions, with Corsair Queen chosen on the Boss line.*
 
 **Class 3 - Boarding Parties.** Stop 4. In six lectures you write a place in rooms, give
 each job on the crew its own choices, add skills and a little luck, and hand two of the

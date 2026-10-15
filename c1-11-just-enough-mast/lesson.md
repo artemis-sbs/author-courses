@@ -9,8 +9,8 @@ block is for. Your map carries a name you chose. And a salvage tug that is not o
 at the start arrives twenty seconds after the crew finds the lifeboat, while a step of
 your story waits for it.
 
-*[Screenshot to add: the Quest Log showing "Wait for the Tug", and the tug beside the
-lifeboat on the Helm map.]*
+![The Quest Log with Wait for the Tug active, and Helm's map with the Salvage Tug beside the lifeboat](images/wait-for-the-tug.jpg)
+*Left, the Quest Log with Wait for the Tug active. Right, Helm's map when the tug arrives beside the lifeboat.*
 
 You will edit two files. In `mission.amd` you add one step, and two lines to your word
 list. In `story.mast` you change two lines and paste eight.

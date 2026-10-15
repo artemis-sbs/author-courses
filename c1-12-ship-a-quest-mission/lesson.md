@@ -8,8 +8,8 @@ The mission you built in Lectures 3 to 11 tells **your** story: every word a pla
 is yours. It has been checked the way this class taught. It exists as a document you can
 print. And another person has it on their own computer and can play it.
 
-*[Screenshot to add: the server's list of missions with your title in it, beside the first
-page of your printed story.]*
+![The server's Choose Mission list with The Quiet Lantern in it](images/mission-list.jpg)
+*The server's list of missions, with The Quiet Lantern in it (marked).*
 
 This lecture teaches no new record and no new card. It asks you to finish. You will edit
 four files, type six commands you mostly know, and make one zip file.

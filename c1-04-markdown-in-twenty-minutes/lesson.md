@@ -10,8 +10,8 @@ Three things.
 - You know which marks the game draws, and which it prints on the crew's screens exactly
   as you typed them.
 
-*[Screenshot to add: VS Code with `story-bible.md` on the left and its preview on the
-right.]*
+![VS Code with story-bible.md on the left and its preview on the right](images/story-bible-preview.jpg)
+*VS Code: `story-bible.md` on the left, its preview on the right.*
 
 You will type in one new file. You will read `mission.amd`. Only the last step changes
 it, and that step is optional and puts it back.

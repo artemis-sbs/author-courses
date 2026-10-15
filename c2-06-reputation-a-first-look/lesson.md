@@ -8,8 +8,8 @@ scores. Later, when the ship comes near the Guild's yard, Quill greets a crew sh
 reason to like one way, and a crew the tug crews spoke up for another way. The second
 crew gets an answer the first is never offered.
 
-*[Screenshot to add: the Comms console with the call "The Guild yard" open twice, side by
-side: the cold line with one answer, the warm line with two.]*
+![The call The Guild yard twice: the cold line with one answer, and the warm line with two](images/guild-yard-cold-warm.jpg)
+*The Guild yard, twice. Left, the cold line with one answer. Right, the warm line with two.*
 
 You will edit one file, `mission.amd`: one line on a side, one line on a character, a few
 words on a quest and on an answer, then one beat and one scene. Nothing in `story.mast`

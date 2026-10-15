@@ -7,8 +7,8 @@ clock on Comms, in your words. When the Queen arrives she hails the crew herself
 face and a name. And one answer on that call turns her second ship, the Badb, to the
 crew's side.
 
-*[Screenshot to add: the Comms console with the Queen's call open, and two answers in the
-list.]*
+![The Comms console with the Corsair Queen's call open and two answers in the list](images/comms-queen-call.jpg)
+*Comms with the Queen's call open, her offer under her name, and two answers in the list.*
 
 This lecture puts the class together. The boss is from Lectures 8 to 10. The scene, the
 call and the answers are from Lectures 3 to 5.
