@@ -307,27 +307,41 @@ def find_tell(img):
         if len(rows) >= 8 and rows[-1] - rows[0] == len(rows) - 1:
             y0, band = rows[0], len(rows)
             left = next(xx for xx in range(w) if is_tell(px[xx, y0 + 1]))
+            far_right = x >= w - 200
             if x < w - 200:                             # found in the left half: text may cross this column,
                 run = left                              # so measure the editor's height just inside its right edge
                 while run + 1 < w and is_tell(px[run + 1, y0 + 1]):
                     run += 1
                 x = run - 24
-            # the editor's own background is above the band or below it - whichever runs
-            # further (the band may be the first line or the last)
-            best = (y0, y0 + band)
-            for bg in {px[x, max(0, y0 - 2)], px[x, min(h - 1, y0 + band + 2)]}:
-                top = y0
-                while top > 0 and px[x, top - 1] == bg:
-                    top -= 1
-                bottom = y0 + band
-                while bottom < h - 1 and px[x, bottom] == bg:
-                    bottom += 1
-                if bottom - top > best[1] - best[0]:
-                    best = (top, bottom)
-            top, bottom = best
             right = left
             while right < w and is_tell(px[right, y0 + 1]):    # the band's own run (a preview beside it has none)
                 right += 1
+
+            def extent(xc):
+                # the editor's own background is above the band or below it - whichever runs
+                # further (the band may be the first line or the last)
+                best = (y0, y0 + band)
+                for bg in {px[xc, max(0, y0 - 2)], px[xc, min(h - 1, y0 + band + 2)]}:
+                    top = y0
+                    while top > 0 and px[xc, top - 1] == bg:
+                        top -= 1
+                    bottom = y0 + band
+                    while bottom < h - 1 and px[xc, bottom] == bg:
+                        bottom += 1
+                    if bottom - top > best[1] - best[0]:
+                        best = (top, bottom)
+                return best
+            top, bottom = extent(x)
+            if far_right and right < w:
+                # a long line of text crosses column x and stops the run early, so lines
+                # beyond it were counted as off screen; the column just right of the band
+                # (no text is drawn there) runs the editor's whole height
+                # (only then: that column has no scroll shadow, so it reads a few pixels higher)
+                t2, b2 = extent(right)
+                if top - t2 > band // 4:
+                    top = t2
+                if b2 - bottom > band // 4:
+                    bottom = b2
             return {"y": y0, "h": band, "x0": left, "top": top, "bottom": bottom, "right": right}
     return None
 
