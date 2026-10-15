@@ -1,447 +1,499 @@
 1
-00:00:00,000 --> 00:00:03,478
+00:00:00,000 --> 00:00:02,516
 This is the last lecture of the class,
 
 2
-00:00:03,928 --> 00:00:06,972
+00:00:02,966 --> 00:00:05,674
 and it puts the whole class together.
 
 3
-00:00:07,872 --> 00:00:12,654
+00:00:06,574 --> 00:00:09,662
 You have a boss, with ships and objectives and a hook.
 
 4
-00:00:13,104 --> 00:00:18,757
+00:00:10,112 --> 00:00:13,686
 And you know how to write a scene, a call, and an answer.
 
 5
-00:00:20,557 --> 00:00:22,730
+00:00:15,486 --> 00:00:17,625
 Today, at last, she speaks.
 
 6
-00:00:23,630 --> 00:00:29,283
+00:00:18,525 --> 00:00:21,611
 And all of her voice goes in the one file you already have.
 
 7
-00:00:30,483 --> 00:00:35,265
+00:00:22,811 --> 00:00:25,945
 Last time, the crew had ten minutes to sink the Morrigan,
 
 8
-00:00:35,715 --> 00:00:39,628
+00:00:26,395 --> 00:00:28,992
 and nothing warned them as the time ran down.
 
 9
-00:00:40,528 --> 00:00:42,267
-Two lines fix that.
+00:00:29,892 --> 00:00:31,938
+Here's the warning we're about to make:
 
 10
-00:00:43,167 --> 00:00:45,776
-Speaker says who gives the warning,
+00:00:32,388 --> 00:00:34,526
+a message on Comms from the Morrigan,
 
 11
-00:00:46,226 --> 00:00:51,878
-and here it's a role: the name of her flagship, in small letters.
-
-12
-00:00:52,778 --> 00:00:55,387
-Signal says is what she sends.
-
-13
-00:00:57,187 --> 00:01:01,100
-Where I write the word time, in curly brackets,
-
-14
-00:01:01,550 --> 00:01:05,028
-the game puts in the time that's left.
-
-15
-00:01:05,928 --> 00:01:11,580
-It's sent at five minutes, at two, at one, and at thirty seconds,
-
-16
-00:01:12,030 --> 00:01:15,943
-and only the ones that fit inside your limit.
-
-17
-00:01:17,143 --> 00:01:19,752
-Now run lint, and it complains.
-
-18
-00:01:20,652 --> 00:01:23,696
-It says morrigan isn't in the cast.
-
-19
-00:01:25,496 --> 00:01:28,104
-And here, that warning is wrong.
-
-20
-00:01:29,004 --> 00:01:32,917
-Lint's looking for a person, in a Characters section,
-
-21
-00:01:33,367 --> 00:01:35,976
-and the Morrigan is a ship.
-
-22
-00:01:36,876 --> 00:01:39,920
-The game looks for a character first,
-
-23
-00:01:40,370 --> 00:01:45,587
-and then for a ship wearing that role, and it finds her.
-
-24
-00:01:46,487 --> 00:01:53,443
-So this is the only warning in the whole course that I'll tell you to keep.
-
-25
-00:01:54,343 --> 00:01:56,517
-Read it every time, though.
-
-26
-00:01:56,967 --> 00:02:02,620
-If the name in it isn't on your Named line, then it's true.
-
-27
-00:02:03,820 --> 00:02:07,733
-For testing, I've set the limit to three minutes.
-
-28
-00:02:08,633 --> 00:02:11,241
-She arrives, and I do nothing.
-
-29
-00:02:12,141 --> 00:02:16,924
-About a minute later, Comms gets a message from the Morrigan,
-
-30
-00:02:17,374 --> 00:02:20,417
+00:00:34,976 --> 00:00:37,035
 with the objective's name as its title.
 
+12
+00:00:37,935 --> 00:00:39,632
+Two lines in her file make it.
+
+13
+00:00:40,532 --> 00:00:42,555
+Speaker says who gives the warning,
+
+14
+00:00:43,005 --> 00:00:47,042
+and here it's a role: the name of her flagship, in small letters.
+
+15
+00:00:47,942 --> 00:00:50,364
+Signal says is what she sends.
+
+16
+00:00:52,164 --> 00:00:55,607
+Where I write the word time, in curly brackets,
+
+17
+00:00:56,057 --> 00:00:58,213
+the game puts in the time that's left.
+
+18
+00:00:59,113 --> 00:01:03,858
+It's sent at five minutes, at two, at one, and at thirty seconds,
+
+19
+00:01:04,308 --> 00:01:06,766
+and only the ones that fit inside your limit.
+
+20
+00:01:07,966 --> 00:01:10,224
+Now run lint, and it complains.
+
+21
+00:01:11,124 --> 00:01:13,896
+It says morrigan isn't in the cast.
+
+22
+00:01:15,696 --> 00:01:17,515
+And here, that warning is wrong.
+
+23
+00:01:18,415 --> 00:01:21,677
+Lint's looking for a person, in a Characters section,
+
+24
+00:01:22,127 --> 00:01:23,498
+and the Morrigan is a ship.
+
+25
+00:01:24,398 --> 00:01:26,307
+The game looks for a character first,
+
+26
+00:01:26,757 --> 00:01:29,997
+and then for a ship wearing that role, and it finds her.
+
+27
+00:01:30,897 --> 00:01:35,815
+So this is the only warning in the whole course that I'll tell you to keep.
+
+28
+00:01:36,715 --> 00:01:37,956
+Read it every time, though.
+
+29
+00:01:38,406 --> 00:01:41,856
+If the name in it isn't on your Named line, then it's true.
+
+30
+00:01:43,056 --> 00:01:45,871
+For testing, I've set the limit to three minutes.
+
 31
-00:02:22,217 --> 00:02:24,826
-You have one fifty-nine, little ship.
+00:01:46,771 --> 00:01:48,702
+She arrives, and I do nothing.
 
 32
-00:02:25,276 --> 00:02:27,450
-Then this sector is mine.
+00:01:49,602 --> 00:01:52,478
+About a minute later, Comms gets a message from the Morrigan,
 
 33
-00:02:28,350 --> 00:02:30,959
-That's her voice, in my words,
+00:01:52,928 --> 00:01:54,986
+with the objective's name as its title.
 
 34
-00:02:31,409 --> 00:02:34,017
-and it's in the one file.
+00:01:56,786 --> 00:01:58,321
+You have two minutes, little ship.
 
 35
-00:02:34,917 --> 00:02:40,135
-If I send that file to a friend, they hear it too.
+00:01:58,771 --> 00:02:00,645
+Then this sector is mine.
 
 36
-00:02:41,335 --> 00:02:43,509
-Now for the call itself.
+00:02:01,545 --> 00:02:03,336
+That's her voice, in my words,
 
 37
-00:02:44,409 --> 00:02:48,322
-You know the three parts from your own mission:
+00:02:03,786 --> 00:02:05,744
+and it's in the one file.
 
 38
-00:02:48,772 --> 00:02:53,120
-a Beat that places it, a cast, and a scene.
+00:02:06,644 --> 00:02:09,428
+If I send that file to a friend, they hear it too.
 
 39
-00:02:54,020 --> 00:02:57,063
-All three go in the boss file,
+00:02:10,628 --> 00:02:12,058
+Now for the call itself.
 
 40
-00:02:57,513 --> 00:03:00,122
-and I start with the Beat.
+00:02:12,958 --> 00:02:15,123
+On Comms it waits in Incoming Hails,
 
 41
-00:03:01,922 --> 00:03:07,574
-It has an Action line that says, queen hails, and a scene's key.
+00:02:15,573 --> 00:02:17,817
+under her name and the title I give it.
 
 42
-00:03:08,474 --> 00:03:11,952
-I run lint, and there's a second warning.
+00:02:18,717 --> 00:02:21,323
+You know the three parts from your own mission:
 
 43
-00:03:12,852 --> 00:03:14,591
-This one is true.
+00:02:21,773 --> 00:02:25,169
+a Beat that places it, a cast, and a scene.
 
 44
-00:03:15,491 --> 00:03:19,839
-The Beat names a scene that nobody has written yet,
+00:02:26,069 --> 00:02:27,630
+All three go in the boss file,
 
 45
-00:03:20,289 --> 00:03:23,333
-so right now, no call would come.
+00:02:28,080 --> 00:02:30,033
+and I start with the Beat.
 
 46
-00:03:24,533 --> 00:03:28,880
-So I go to the very end of the file,
+00:02:31,833 --> 00:02:36,049
+It has an Action line that says, queen hails, and a scene's key.
 
 47
-00:03:29,330 --> 00:03:32,809
-and I type two sections you already know.
+00:02:36,949 --> 00:02:39,302
+I run lint, and there's a second warning,
 
 48
-00:03:33,709 --> 00:03:37,187
-Characters, with the Queen and her first mate.
+00:02:39,752 --> 00:02:41,166
+and this one is true.
 
 49
-00:03:38,087 --> 00:03:40,261
-And Dialogue, with one scene.
+00:02:42,066 --> 00:02:44,490
+The Beat names a scene that nobody has written yet,
 
 50
-00:03:42,061 --> 00:03:45,539
-The sections have two hashes, like her objectives,
+00:02:44,940 --> 00:02:47,359
+so right now, no call would come.
 
 51
-00:03:45,989 --> 00:03:50,337
-and the people and the scenes inside them have three.
+00:02:48,559 --> 00:02:50,410
+Here's the call opened on Comms:
 
 52
-00:03:51,237 --> 00:03:55,585
-The scene is just what you wrote in Lecture 3:
+00:02:50,860 --> 00:02:53,934
+her face, her name, her offer, and an answer.
 
 53
-00:03:56,035 --> 00:03:59,948
-a speaker, two blocks of takes, and an answer.
+00:02:54,834 --> 00:02:57,534
+To make it, I go to the very end of the file,
 
 54
-00:04:00,848 --> 00:04:03,022
-That answer finishes the Beat.
+00:02:57,984 --> 00:03:00,599
+and I type two sections you already know.
 
 55
-00:04:04,822 --> 00:04:06,561
-I run lint again,
+00:03:01,499 --> 00:03:04,438
+Characters, with the Queen and her first mate.
 
 56
-00:04:07,011 --> 00:04:10,489
-and the warning about the call has gone.
+00:03:05,338 --> 00:03:07,900
+And Dialogue, with one scene.
 
 57
-00:04:11,689 --> 00:04:14,298
-There's nothing to paste for this.
+00:03:09,700 --> 00:03:12,674
+The sections have two hashes, like her objectives,
 
 58
-00:04:15,198 --> 00:04:19,111
-When she arrives, the Siege reads her file itself.
+00:03:13,124 --> 00:03:16,325
+and the people and the scenes inside them have three.
 
 59
-00:04:20,011 --> 00:04:22,620
-Her objectives go to the crew,
+00:03:17,225 --> 00:03:19,984
+The scene is just what you wrote in Lecture 3:
 
 60
-00:04:23,070 --> 00:04:25,678
-her people come into the game,
+00:03:20,434 --> 00:03:23,348
+a speaker, two blocks of takes, and an answer.
 
 61
-00:04:26,128 --> 00:04:30,041
-and her scenes are made ready to be called.
+00:03:24,248 --> 00:03:26,205
+That answer finishes the Beat.
 
 62
-00:04:31,841 --> 00:04:34,015
-Two things follow from that.
+00:03:28,005 --> 00:03:31,561
+I run lint again, and the warning about the call has gone.
 
 63
-00:04:34,915 --> 00:04:37,959
-Her people don't exist until she arrives,
+00:03:32,761 --> 00:03:34,282
+There's nothing to paste for this.
 
 64
-00:04:38,409 --> 00:04:41,887
-which is fine, because her Beats don't either.
+00:03:35,181 --> 00:03:38,721
+When she arrives, the Siege reads her file itself.
 
 65
-00:04:42,787 --> 00:04:46,700
-And her card isn't part of this at all.
+00:03:39,621 --> 00:03:41,749
+Her objectives go to the crew,
 
 66
-00:04:47,600 --> 00:04:50,209
-It still brings the third ship,
+00:03:42,199 --> 00:03:43,885
+her people come into the game,
 
 67
-00:04:50,659 --> 00:04:54,137
-and I haven't added a line to it.
+00:03:44,335 --> 00:03:46,786
+and her scenes are made ready to be called.
 
 68
-00:04:55,337 --> 00:04:57,946
-Now I make an answer matter.
+00:03:48,586 --> 00:03:50,368
+Two things follow from that.
 
 69
-00:04:58,846 --> 00:05:02,324
-A second answer leads to a second scene,
+00:03:51,268 --> 00:03:53,606
+Her people don't exist until she arrives,
 
 70
-00:05:02,774 --> 00:05:06,687
-where the Badb's first mate comes on the line.
+00:03:54,056 --> 00:03:57,154
+which is fine, because her Beats don't either.
 
 71
-00:05:07,587 --> 00:05:11,500
-And if the crew says, then fly with us,
+00:03:58,054 --> 00:03:59,934
+And her card isn't part of this at all.
 
 72
-00:05:11,950 --> 00:05:14,559
-three things happen after the semicolon.
+00:04:00,834 --> 00:04:02,595
+It still brings the third ship,
 
 73
-00:05:16,359 --> 00:05:18,098
-The call is finished.
+00:04:03,045 --> 00:04:04,781
+and I haven't added a line to it.
 
 74
-00:05:18,998 --> 00:05:23,346
-Turn the Badb is finished, which reveals one more step.
+00:04:05,981 --> 00:04:07,264
+Now I make an answer matter.
 
 75
-00:05:24,246 --> 00:05:28,159
-And that step has an Action of its own:
+00:04:08,164 --> 00:04:10,009
+Here's where it ends up on Comms:
 
 76
-00:05:28,609 --> 00:05:30,783
-badb joins T S N.
+00:04:10,459 --> 00:04:13,666
+First Mate Orla on the line, with two answers of her own.
 
 77
-00:05:31,683 --> 00:05:33,857
-So the ship changes sides.
+00:04:14,566 --> 00:04:17,205
+A second answer leads to a second scene,
 
 78
-00:05:35,657 --> 00:05:38,700
-Notice where I typed those two records:
+00:04:17,655 --> 00:04:20,229
+where the Badb's first mate comes on the line.
 
 79
-00:05:39,150 --> 00:05:42,193
-among her objectives, above the Characters line.
+00:04:21,129 --> 00:04:23,584
+And if the crew says, then fly with us,
 
 80
-00:05:43,093 --> 00:05:47,441
-Her people and her scenes stay last in the file.
+00:04:24,034 --> 00:04:26,091
+three things happen after the semicolon.
 
 81
-00:05:48,641 --> 00:05:51,250
-Check both, and then play it.
+00:04:27,891 --> 00:04:29,861
+First, the call is finished.
 
 82
-00:05:52,150 --> 00:05:56,498
-There's her call, waiting, with her name and the title.
+00:04:30,761 --> 00:04:35,381
+Turn the Badb is finished, which reveals one more step.
 
 83
-00:05:57,398 --> 00:06:00,441
-I open it, she makes her offer,
+00:04:36,281 --> 00:04:38,337
+And that step has an Action of its own:
 
 84
-00:06:00,891 --> 00:06:03,935
-and I talk to the Badb instead.
+00:04:38,787 --> 00:04:40,320
+badb joins T S N.
 
 85
-00:06:05,735 --> 00:06:07,474
-Then fly with us.
+00:04:41,220 --> 00:04:42,841
+So the ship changes sides.
 
 86
-00:06:08,374 --> 00:06:13,157
-The crew's told the call is done, the Badb is turned,
+00:04:43,741 --> 00:04:46,407
+In the Quest Log, on Helm's handheld,
 
 87
-00:06:13,607 --> 00:06:17,085
-and the bonus for sinking her is closed.
+00:04:46,857 --> 00:04:50,357
+The Badb Turns appears, with her ship drawn at the top.
 
 88
-00:06:17,985 --> 00:06:19,724
-That's a real choice:
+00:04:52,157 --> 00:04:54,694
+Notice where I typed those two records:
 
 89
-00:06:20,174 --> 00:06:23,217
-three hundred credits, or one raider fewer.
+00:04:55,144 --> 00:04:58,143
+among her objectives, above the Characters line.
 
 90
-00:06:24,117 --> 00:06:27,161
-Then play it again and refuse her,
+00:04:59,044 --> 00:05:02,138
+Her people and her scenes stay last in the file.
 
 91
-00:06:27,611 --> 00:06:32,393
-and play it a third time and never answer at all.
+00:05:03,338 --> 00:05:04,907
+Check both, and then play it.
 
 92
-00:06:33,293 --> 00:06:37,207
-The game has to be winnable on every road.
+00:05:05,807 --> 00:05:10,171
+On Comms, there's her call, waiting in Incoming Hails,
 
 93
-00:06:38,407 --> 00:06:41,015
-Now, what are you handing over?
+00:05:10,621 --> 00:05:12,337
+with her name and the title.
 
 94
-00:06:41,915 --> 00:06:45,393
-Nearly all of her is the one file.
+00:05:13,237 --> 00:05:14,955
+I open it, she makes her offer,
 
 95
-00:06:46,293 --> 00:06:48,467
-Send just that one file,
+00:05:15,405 --> 00:05:17,307
+and I talk to the Badb instead.
 
 96
-00:06:48,917 --> 00:06:53,265
-and your friend gets the boss, her ships, her objectives,
+00:05:19,107 --> 00:05:21,311
+I choose, then fly with us.
 
 97
-00:06:53,715 --> 00:06:55,889
-the Morrigan calling the clock,
+00:05:22,211 --> 00:05:24,492
+Helm shows it one line at a time,
 
 98
-00:06:56,339 --> 00:07:01,122
-and the Queen's call with the answer that turns the Badb.
+00:05:24,942 --> 00:05:27,727
+and the last line says, the Badb turns.
 
 99
-00:07:02,922 --> 00:07:08,139
-What they don't get is the arrival line and the reserve ship.
+00:05:28,627 --> 00:05:33,534
+In the Quest Log, the call is done, the Badb has turned,
 
 100
-00:07:09,039 --> 00:07:10,778
-Those are her card,
+00:05:33,984 --> 00:05:36,794
+and the bonus for sinking her has failed.
 
 101
-00:07:11,228 --> 00:07:15,576
-and the card lives in a folder inside Legendary Missions.
+00:05:37,694 --> 00:05:39,322
+That's a real choice for the crew:
 
 102
-00:07:16,476 --> 00:07:20,824
-An update removes that folder, for them and for you.
+00:05:39,772 --> 00:05:42,513
+three hundred credits, or one raider fewer.
 
 103
-00:07:21,724 --> 00:07:24,767
-So keep a copy outside the game.
+00:05:43,413 --> 00:05:45,401
+Then play it again and refuse her,
 
 104
-00:07:25,667 --> 00:07:30,015
-Lint will tell you: one warning when the folder's there,
+00:05:45,851 --> 00:05:48,897
+and play it a third time and never answer at all.
 
 105
-00:07:30,465 --> 00:07:32,639
-and two when it isn't.
+00:05:49,797 --> 00:05:52,275
+The game has to be winnable on every road.
 
 106
-00:07:33,839 --> 00:07:36,448
-The page ends with a rubric,
+00:05:53,475 --> 00:05:54,983
+Now, what are you handing over?
 
 107
-00:07:36,898 --> 00:07:41,680
-and every line on it is something you can check yourself.
+00:05:55,883 --> 00:05:58,355
+Nearly all of her is the one file.
 
 108
-00:07:42,580 --> 00:07:46,493
-She's yours, she's checked, she plays, and she travels.
+00:05:59,255 --> 00:06:00,758
+Send just that one file,
 
 109
-00:07:48,293 --> 00:07:52,207
-When every line is ticked, you've finished Class 2.
+00:06:01,208 --> 00:06:04,567
+and your friend gets the boss, her ships, her objectives,
 
 110
-00:07:53,107 --> 00:07:56,150
-You can write a cast, a conversation,
+00:06:05,017 --> 00:06:06,532
+the Morrigan calling the clock,
 
 111
-00:07:56,600 --> 00:07:59,209
-and a boss who talks back.
+00:06:06,982 --> 00:06:10,581
+and the Queen's call with the answer that turns the Badb.
 
 112
-00:08:00,109 --> 00:08:04,022
+00:06:12,381 --> 00:06:15,752
+What they don't get is the arrival line and the reserve ship.
+
+113
+00:06:16,652 --> 00:06:18,536
+Those two are her card,
+
+114
+00:06:18,986 --> 00:06:22,585
+and the card lives in a folder inside Legendary Missions.
+
+115
+00:06:23,485 --> 00:06:26,756
+An update removes that folder, for them and for you.
+
+116
+00:06:27,656 --> 00:06:29,734
+So keep a copy outside the game.
+
+117
+00:06:30,634 --> 00:06:34,124
+Lint will tell you: one warning when the folder's there,
+
+118
+00:06:34,574 --> 00:06:36,012
+and two when it isn't.
+
+119
+00:06:37,212 --> 00:06:38,737
+The page ends with a rubric,
+
+120
+00:06:39,188 --> 00:06:42,446
+and every line on it is something you can check yourself.
+
+121
+00:06:43,346 --> 00:06:47,563
+She's yours, she's checked, she plays, and she travels.
+
+122
+00:06:49,363 --> 00:06:52,223
+When every line is ticked, you've finished Class 2.
+
+123
+00:06:53,123 --> 00:06:55,637
+You can write a cast, a conversation,
+
+124
+00:06:56,087 --> 00:06:57,810
+and a boss who talks back.
+
+125
+00:06:58,710 --> 00:07:01,213
 In the next class, the crew leaves the bridge.

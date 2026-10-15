@@ -3,7 +3,7 @@
 ## What you will have at the end
 
 Harbormaster Quill asks a question, and now the crew can answer it. One answer asks her
-for more. One takes a job. One hangs up. If the crew takes the job and finishes it, she
+for more. One takes a quest. One hangs up. If the crew takes the quest and finishes it, she
 calls back.
 
 *[Screenshot to add: the Comms console with Quill's call open and three answers in the list.]*
@@ -83,7 +83,7 @@ Save, and run lint. It tells you the half you have not done yet:
 
 ```
 == mission.amd ==
-  [WARNING] line 285:39: choice in `quill_hello` points at `quill_offer`, which resolves to no node (dangling-choice)
+  [WARNING] line 303:39: choice in `quill_hello` points at `quill_offer`, which resolves to no node (dangling-choice)
 
 1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```
@@ -148,7 +148,7 @@ Save. Run lint: `clean`.
 
 So far an answer moves the conversation or ends it. It can also change the story.
 
-First, the job Quill is offering. Scroll up to the Quests section and find the beat
+First, the quest Quill is offering. Scroll up to the Quests section and find the beat
 **DS 1 Calls**. Below its description, leave a blank line and type:
 
 ```
@@ -160,23 +160,32 @@ Objective: Give the salvage beacon 30 seconds to set
 Done when: 30 seconds
 Reward: 150 credits
 ---
+![](face://ter #e4cb8e 1 0;ter #fff 12 6;ter #e4cb8e 3 1;ter #e4cb8e 5 2;ter #704025 7 3;) Harbormaster Quill, DS 1 traffic control
+
 DS 1 wants a salvage beacon on the hulk before the Breakers find her.
+
+A beacon makes her a claim on DS 1's salvage ledger. Until one is set, she belongs to whoever gets a line on her first, and the Breaker Cutter is already standing off.
 ```
 
-Three hashes: it is a job of its own, not a step of Salvage Run. `Starts when: revealed`
+Three hashes: it is a quest of its own, not a step of Salvage Run. `Starts when: revealed`
 keeps it hidden until something starts it.
+
+The description is the quest as Quill gives it, so it opens with her face, the way Close
+Inspection does since Lecture 2: copy her `Face:` string, do not type it. Then two
+paragraphs with a blank line between them: what she wants, and why it cannot wait. That is
+what the crew reads in the Quest Log once they say yes.
 
 Save, and run lint:
 
 ```
 == mission.amd ==
-  [WARNING] line 138: `Tag the Hulk` waits to be revealed, and nothing reveals it: no `Then: reveal tag_hulk` on another step, and no answer or story line names `tag_hulk`. It never appears (never-revealed)
+  [WARNING] line 156: `Tag the Hulk` waits to be revealed, and nothing reveals it: no `Then: reveal tag_hulk` on another step, and no answer or story line names `tag_hulk`. It never appears (never-revealed)
 
 1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```
 
 You met `never-revealed` in Lecture 9. Read the middle of this one: "and no answer ...
-names `tag_hulk`". Lint already knows an answer can start a job.
+names `tag_hulk`". Lint already knows an answer can start a quest.
 
 Go back down to The Offer and add to its first answer:
 
@@ -275,7 +284,7 @@ This scene is a call of its own, so it has `When: hail` and a `Title:` again.
 
 Save. Run lint: `clean`.
 
-Only a crew that took the job, and finished it, ever gets this call. A crew that said
+Only a crew that took the quest, and finished it, ever gets this call. A crew that said
 "Find someone else" never hears it.
 
 ## Step 7 - Answers that depend on the story
@@ -285,7 +294,7 @@ You now have two ways to make an answer exist only when something is true.
 | You want | Do this |
 |---|---|
 | An answer only for a crew that said something earlier in the call | Put it in a scene that only that earlier answer leads to. "We will tag her." is only offered to a crew that told Quill the hulk was cold |
-| An answer only once something has happened in the story | Put it in a call that only comes then. "Glad to help" is only offered after the job is done |
+| An answer only once something has happened in the story | Put it in a call that only comes then. "Glad to help" is only offered after the quest is done |
 
 In other documentation you will see a third way, a condition written on the answer:
 
@@ -314,7 +323,11 @@ Done when: 30 seconds
 Reward: 150 credits
 Then: reveal beacon_set
 ---
+![](face://ter #e4cb8e 1 0;ter #fff 12 6;ter #e4cb8e 3 1;ter #e4cb8e 5 2;ter #704025 7 3;) Harbormaster Quill, DS 1 traffic control
+
 DS 1 wants a salvage beacon on the hulk before the Breakers find her.
+
+A beacon makes her a claim on DS 1's salvage ledger. Until one is set, she belongs to whoever gets a line on her first, and the Breaker Cutter is already standing off.
 
 ### [Beacon Set](beacon_set)
 ---
@@ -416,14 +429,13 @@ offered.
 
 | Mistake | What the game does | Lint says |
 |---|---|---|
-| `; acepts tag_hulk`, or `; accept tag_hulk` without the `s` | Starts no job. The rest of the answer still happens | `unknown-outcome-verb`. It lists the words it knows. Most of them belong to Class 3 |
-| `; accepts tag_hulkk` (a misspelled quest key) | Starts no job. `mast.runtime.log` says why | `outcome-quest-missing` |
+| `; acepts tag_hulk`, or `; accept tag_hulk` without the `s` | Starts no quest. The rest of the answer still happens | `unknown-outcome-verb`. It lists the words it knows. Most of them belong to Class 3 |
+| `; accepts tag_hulkk` (a misspelled quest key) | Starts no quest. `mast.runtime.log` says why | `outcome-quest-missing` |
 | `; accepts Tag the Hulk` (the name, not the key) | The same | `outcome-quest-missing`: `accepts` needs one quest key |
 | `; accepts tag_hulk and completes ds1_calls`, or the two with nothing between them | Neither thing happens | `outcome-run-together`: it writes the line out with its comma |
 | `; completes study` (a step without its arc) | Nothing. `mast.runtime.log` says why | `outcome-quest-path`: it writes the path out for you |
-
 | `; reveal tag_hulk` | Nothing | `never-revealed` on the quest, and `outcome-quest-verb`: `reveal` is what `Then:` says. From an answer, write `accepts` |
-| `; accepts tag_hulk if some_name >= 10` (the `if` after the `;`) | The answer is offered to everybody, and starts no job | `guard-after-outcome` |
+| `; accepts tag_hulk if some_name >= 10` (the `if` after the `;`) | The answer is offered to everybody, and starts no quest | `guard-after-outcome` |
 | `if some_name => 10` (the sign backwards) | The answer is never offered | `unreadable-guard` |
 | `; signal some_word` when nothing waits for that word | Nothing | `signal-no-route` |
 
@@ -437,10 +449,10 @@ offered.
 | `Then: reveal beacon_sett` (a misspelled beat) | The beacon sets, and she never calls back | `dangling-reveal`, and `never-revealed` |
 | `- quill hails quill_thank` (a misspelled scene) | The same. `mast.runtime.log` says why | `dangling-action-ref` |
 | No `Then:` line on Tag the Hulk | The same | `never-revealed`, about Beacon Set |
-| `Starts when: at once` on Tag the Hulk | The job runs from the first moment and is done before Quill has asked | `outcome-accepts-running` |
-| Tag the Hulk typed with four hashes | It becomes a step of DS 1 Calls, and "We will tag her." starts no job | `outcome-quest-path` |
+| `Starts when: at once` on Tag the Hulk | The quest runs from the first moment and is done before Quill has asked | `outcome-accepts-running` |
+| Tag the Hulk typed with four hashes | It becomes a step of DS 1 Calls, and "We will tag her." starts no quest | `outcome-quest-path` |
 | Quill Calls Back with no `When: hail` | The call still arrives | `hail-not-a-hail` |
-| A quest's key in an answer's round brackets: `- [We will tag her.](tag_hulk)` | The call ends, and no job starts | `never-revealed`, about the job. Lint has nothing to say about the answer itself |
+| A quest's key in an answer's round brackets: `- [We will tag her.](tag_hulk)` | The call ends, and no quest starts | `never-revealed`, about the quest. Lint has nothing to say about the answer itself |
 
 
 **What lint cannot see.** For every row of this table lint says `clean`.
@@ -449,9 +461,9 @@ offered.
 |---|---|
 | `if some_name >= 10` on an answer | The answer is never offered (Step 7) |
 | The brackets the wrong way round: `- (quill_offer)[She is cold ...]` | That line is not an answer. Quill says it out loud |
-| No `Starts when:` line on Tag the Hulk | The job is on offer from the first moment, on the Quest Log's second list, before Quill has asked |
-| No `Done when:` on Tag the Hulk | The job is taken and never finishes, so she never calls back |
-| `; completes tag_hulk` where you meant `accepts` | The job is finished and paid the moment the crew says yes. `completes` works on a job that never started |
+| No `Starts when:` line on Tag the Hulk | The quest is on offer from the first moment, on the Quest Log's second list, before Quill has asked |
+| No `Done when:` on Tag the Hulk | The quest is taken and never finishes, so she never calls back |
+| `; completes tag_hulk` where you meant `accepts` | The quest is finished and paid the moment the crew says yes. `completes` works on a quest that never started |
 | `; completes ds1_calls` left off both answers | Nothing the crew can see. DS 1 Calls is never listed as done |
 | The answers typed above her takes, or between her two blocks | They are still offered with her last block. Keep them at the end |
 | An answer with no words: `- []()` | A row with nothing on it |
@@ -478,7 +490,8 @@ sbs run server,helm,comms -m MyMission map=0
 
 1. Fly inside 500 of the Unknown Hulk. On Comms, open
    **Harbormaster Quill - About that hulk** and press **Continue**.
-2. With her second line, the list offers **Back** and your three answers.
+2. With her second line, the list offers **Back** and your three answers. It shows two
+   rows at a time: use its scroll bar for the rest.
 3. Choose **What do you know about her?** She tells you. The list offers **Back** and
    two answers.
 4. Choose **She is cold, DS 1. No power, no lights.** She makes the offer.
@@ -489,12 +502,12 @@ sbs run server,helm,comms -m MyMission map=0
 7. Finish the story: the lifeboat, the tug, home to DS 1.
 8. Close the game. Open `mast.compile.log` and `mast.runtime.log`. Both are empty.
 
-A crew that takes the job and wins with the bonus is paid 650 credits: the 500 of
+A crew that takes the quest and wins with the bonus is paid 650 credits: the 500 of
 Lecture 11, and 150 for the beacon.
 
 Play it twice more.
 
-- Choose **Find someone else, DS 1.** No job starts, and no second call comes.
+- Choose **Find someone else, DS 1.** No quest starts, and no second call comes.
 - Choose **Not now, DS 1. Artemis out.** The call is gone, and it does not come back.
 
 **Back** is different from an answer. It puts the call back in the list, unanswered, and
@@ -511,11 +524,11 @@ story can go on without the call. If your story cannot, do not write one.
 | Quill says one of your answers out loud, with its brackets | That line is not an answer. The round brackets are missing, there is a space before them, or the line does not start with a dash |
 | She says `; accepts tag_hulk` out loud | The part after the semicolon is on a line of its own |
 | An answer ends the call when it should lead on | The key in its round brackets is not a scene's key. Or the scene it names has two hashes on its heading. Or the scene directly below that one has four |
-| "We will tag her." and no job starts | Run lint. The quest key is misspelled, the semicolon is missing, or there is no comma between two outcomes. Then look in `mast.runtime.log` |
+| "We will tag her." and no quest starts | Run lint. The quest key is misspelled, the semicolon is missing, or there is no comma between two outcomes. Then look in `mast.runtime.log` |
 | Tag the Hulk is on offer before Quill calls | Tag the Hulk has no `Starts when: revealed` line |
-| The job is done before anyone flies anywhere | Tag the Hulk says `Starts when: at once` |
-| The job never finishes | Tag the Hulk has no `Done when:` line |
-| The job finishes and she does not call back | Run lint. `Then: reveal beacon_set` is missing, or the beat's key is not `beacon_set`, or the heading of Quill Calls Back, or of a scene above it, has two hashes |
+| The quest is done before anyone flies anywhere | Tag the Hulk says `Starts when: at once` |
+| The quest never finishes | Tag the Hulk has no `Done when:` line |
+| The quest finishes and she does not call back | Run lint. `Then: reveal beacon_set` is missing, or the beat's key is not `beacon_set`, or the heading of Quill Calls Back, or of a scene above it, has two hashes |
 | An answer is never offered | It has an `if` on it, or it is the fifth answer in its scene |
 
 ## Exercise
@@ -553,7 +566,7 @@ You are done when all five are true:
 - **What do you know about her?** leads to a scene, and that scene leads to the offer.
 - **We will tag her.** puts **Tag the Hulk** in the Quest Log. About 30 seconds later it
   completes, and **Harbormaster Quill - Your beacon** is waiting on Comms.
-- **Find someone else, DS 1.** starts no job, and no second call comes.
+- **Find someone else, DS 1.** starts no quest, and no second call comes.
 
 ## Next
 

@@ -40,7 +40,12 @@ Speaker: morrigan
 Signal says: You have {time}, little ship. Then this sector is mine.
 Reward: 600 credits
 ---
+[](ship://pirate_brigantine) The Morrigan, the Queen's flagship
+
 The Queen's flagship Morrigan leads the last assault. Sink her within ten minutes of her arrival, or the sector is lost.
+
+- ![](icon://hourglass) Ten minutes, from the moment she arrives.
+- ![](icon://skull) When the time is up, the game is lost.
 
 ## [Sink the Badb](sink_badb)
 ---
@@ -52,6 +57,8 @@ Objective: Destroy the Badb
 Done when: destroy 1 badb
 Reward: 300 credits
 ---
+[](ship://pirate_strongbow) The Badb, the Queen's second ship
+
 A bonus. The Badb is the Queen's second ship. The siege can be won without sinking her.
 
 ## [Her Reserve](reserve)
@@ -66,6 +73,8 @@ Then: reveal sink_nemain
 ---
 The Queen never commits everything at once. Watch for a third ship.
 
+Somewhere out in the dark she is holding one more hull back, and she will send it in when it suits her, not when it suits you.
+
 ## [Sink the Nemain](sink_nemain)
 ---
 Quest
@@ -76,6 +85,8 @@ Objective: Destroy the Nemain
 Done when: destroy 1 nemain
 Reward: 400 credits
 ---
+[](ship://pirate_brigantine) The Nemain, the Queen's reserve
+
 The Nemain is here: the Queen's reserve. Sink her too.
 
 ## [The Queen Calls](parley)
@@ -107,7 +118,11 @@ Done when: 5 seconds
 Action:
   - badb joins tsn
 ---
+[](ship://pirate_strongbow) The Badb, flying with you
+
 First Mate Orla has turned the Badb. She flies for you now.
+
+Leave her alone. A ship that fires on her now fires on a friend, and the Queen will remember who turned.
 
 ## [Characters](characters)
 

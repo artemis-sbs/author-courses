@@ -37,7 +37,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyMission` as Lecture 3 leaves it. `mission.amd` has 283 lines and ends with Quill's take "So. Is anybody home?". The beat DS 1 Calls is the last record of the Quests section |
+| Mission | `MyMission` as Lecture 3 leaves it. `mission.amd` has 301 lines and ends with Quill's take "So. Is anybody home?". The beat DS 1 Calls is the last record of the Quests section |
 | Lint | `sbs lint MyMission` says `clean` |
 | VS Code | `MyMission` folder open, `mission.amd` in one tab scrolled to the end |
 | Command prompt | Open in `data\missions`, cleared, wide enough that a finding fits on three lines |
@@ -51,8 +51,8 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 stop and fix the page.
 
 1. Lint after each step is `clean`. Half way through Step 2 it prints the
-   `dangling-choice` line on the page, with `line 285:39`. Half way through Step 4 it
-   prints the `never-revealed` line, with `line 138`. In Step 6 it says `dangling-reveal`,
+   `dangling-choice` line on the page, with `line 303:39`. Half way through Step 4 it
+   prints the `never-revealed` line, with `line 156`. In Step 6 it says `dangling-reveal`,
    then `dangling-action-ref`, then `clean`. (Lint.)
 2. On the finished file, the road through the question: the rows are Back and the three
    answers; then Back and two answers; then Back and the two answers of The Offer. "We
@@ -77,6 +77,9 @@ Not seen by anyone, and to watch for while recording:
 2. Where the crew reads that a job has started.
 3. A fifth answer: the page says it is never offered. The mock agrees. Nobody has looked.
 4. Quill saying a broken answer line out loud, brackets and all.
+5. Tag the Hulk in the Quest Log: Quill's portrait at the top with her name beside it,
+   then two paragraphs with a gap between (read in the library's text area code; not seen
+   in the Quest Log).
 
 ## Scenes
 
@@ -86,16 +89,19 @@ Not seen by anyone, and to watch for while recording:
 picked. The Quest Log gains Tag the Hulk.
 
 **Say:** "Last time, the harbormaster called, | and all the crew could do was listen. ||
-Today they get to answer. || One answer asks her for more, | one takes a job, | and one hangs up.
+Today they get to answer. || One answer asks her for more, | one takes on a quest, | and one hangs up.
 ||| And the answer they give changes the story. ||"
 
 ### 2. An answer
 
-**Screen:** `mission.amd`, the scene Quill Checks In. Below her last take, a blank line,
-then type the two answers. Highlight the dash, the square brackets, the round brackets.
+**Screen:** The game first: Comms, Quill's call after Continue: her question, and under
+it the list of answers, two rows at a time with a scroll bar. Then `mission.amd`, the scene Quill Checks In. Below her last
+take, a blank line, then type the two answers. Highlight the dash, the square brackets, the round brackets.
 Save. Lint: clean.
 
-**Say:** "An answer is one line, | and you already know its shape. || It's a dash and a
+**Say:** "Here's her call on Comms, after Continue. || Under her question there's a list of
+answers, | two rows at a time, with a scroll bar for the rest, | and the crew picks one. ||| In the file, an answer is one line, | and you
+already know its shape. || It's a dash and a
 space, | then the words in square brackets, | then round brackets, with no space between.
 || It's a heading's name and key, | with a dash where the hashes go. ||| The square
 brackets hold what Comms reads and picks. || The round brackets say where the conversation
@@ -104,38 +110,48 @@ goes next, | and when they're empty, the call is over. ||"
 ### 3. An answer that leads somewhere
 
 **Screen:** Type `quill_offer` in the first answer's round brackets. Save. Lint: the
-`dangling-choice` warning. Then, at the end of the file, type The Offer. Save. Lint:
+`dangling-choice` warning. Then the game: Comms, her offer on screen and its two answers
+(the list scrolled down to them). Then, at the end of the file, type The Offer. Save. Lint:
 clean.
 
 **Say:** "Now I put a key in those round brackets, | the key of a scene I haven't written
-yet. || And lint tells me so: | this answer points at something that isn't there. ||| So I
-write it, at the end of the file. || It's a scene like the first one, with three hashes, |
+yet. || And lint tells me so: | this answer points at something that isn't there. ||| Here's
+what it leads to on Comms: | Quill's offer, with two answers of its own. || So I write it,
+at the end of the file. || It's a scene like the first one, with three hashes, |
 but it has no When line and no title. || Nothing in the story places it as a call. || The
 only way in is the answer that names it. ||"
 
 ### 4. A second way in
 
-**Screen:** Add the middle answer to Quill Checks In. Type What DS 1 Knows above The
-Offer. Highlight the two answers that both lead to `quill_offer`.
+**Screen:** The game first: Comms, her line about the gate on screen (the call's title
+stays About that hulk; a scene's name is never shown), and the first of its answers. Then add the middle answer to Quill Checks In. Type What DS 1 Knows
+above The Offer. Highlight the two answers that both lead to `quill_offer`.
 
-**Say:** "A conversation can branch, and it can come back together. || I add an answer
-that asks her what she knows, | and I write the scene for it. || And from there, one
+**Say:** "A conversation can branch, and it can come back together. || On Comms, a crew
+can ask her what she knows, | and she tells them about the gate. || So I add that answer,
+| and I write the scene for it. || And from there, one
 answer leads on to the same offer. ||| So a crew that asks first hears a little more, |
 and ends up in the same place. || Just don't write more than four answers in a scene, |
 because a fifth is never offered. ||"
 
-### 5. The job
+### 5. The quest
 
-**Screen:** The Quests section. Below DS 1 Calls, type Tag the Hulk. Save. Lint: the
+**Screen:** The game first: Helm, the ePADD Quest Log, Tag the Hulk selected: Quill's
+portrait at the top, the order, and the two paragraphs. Then the Quests section. Below
+DS 1 Calls, type Tag the Hulk: the fence, then Quill's
+face line (her `Face:` string copied from her record) and two paragraphs. Save. Lint: the
 `never-revealed` warning; highlight the words "and no answer". Then The Offer: add
 `; accepts tag_hulk`. Save. Lint: clean.
 
 **Say:** "So far an answer moves the conversation, | or it ends it. || Now one is going to
-change the story. || First I need the job she's offering, | so I write it up here among my
+change the story. || First I need the quest she's offering. || Here it is in the Quest Log, once
+the crew says yes: | Tag the Hulk, with her face under its order. || I write it up here among my
 quests. || It starts when revealed, | which keeps it hidden until something starts it.
-||| Lint warns me that nothing does, | and look what it lists: | a Then line, or an
+||| Its description is the quest as Quill gives it. || So it opens with her face, copied from
+her record, | the way Close Inspection does. || Then comes what she wants, | and, after a blank
+line, why it can't wait. ||| Lint warns me that nothing does, | and look what it lists: | a Then line, or an
 answer. || So lint already knows where this is going. || I go back to the offer, | and
-after the round brackets I type a semicolon, | then accepts, and the job's key. ||
+after the round brackets I type a semicolon, | then accepts, and the quest's key. ||
 Everything after that semicolon is what the answer does. ||"
 
 ### 6. Two things at once
@@ -146,21 +162,22 @@ Then the table of four words on the page.
 **Say:** "An answer can do two things, | with one semicolon, and a comma between them. ||
 Whichever way the crew answers, they've answered her, | so I mark that moment done as
 well. ||| There are four words you can write after the semicolon. || Accepts starts a
-job, | completes finishes one and pays it, | fails does what it says, | and signal sends a
+quest, | completes finishes one and pays it, | fails does what it says, | and signal sends a
 word into the story. ||"
 
 ### 7. The call that comes back
 
-**Screen:** Tag the Hulk: add `Then: reveal beacon_set`. Lint: `dangling-reveal`. Type the
+**Screen:** The game first: Comms, the Incoming Hails row Harbormaster Quill - Your beacon,
+then the call open with its one answer. Then Tag the Hulk: add `Then: reveal beacon_set`. Lint: `dangling-reveal`. Type the
 beat Beacon Set. Lint: `dangling-action-ref`. Type Quill Calls Back at the end of the
 file. Lint: clean.
 
-**Say:** "What the crew said can come back to them later. || When the beacon is set, I
-want her to call again, | and that takes three pieces. || Watch lint walk me from each one
-to the next. ||| First, a Then line on the job, | and lint says it reveals something that
+**Say:** "What the crew said can come back to them later. || Here's Comms when the beacon
+is set: | she calls again, under the title Your beacon. || That takes three pieces. || Watch lint walk me from each one
+to the next. ||| First, a Then line on the quest, | and lint says it reveals something that
 isn't there. || So I write that, a beat like last time's, | and lint says the beat calls a
 scene that isn't there. || So I write the scene, and now it's clean. ||| And here's the
-point of it. || Only a crew that took the job, and finished it, | ever hears this call.
+point of it. || Only a crew that took the quest, and finished it, | ever hears this call.
 ||"
 
 ### 8. If, and why not yet
@@ -176,13 +193,14 @@ offered, | and lint can't tell. || We'll use it properly in lecture six, | on a 
 ### 9. Play it
 
 **Screen:** Server, Helm and Comms. Fly inside 500 of the hulk. Open the call, Continue.
-Three answers. Pick What do you know. Pick She is cold. Pick We will tag her. The Quest
+Three answers, two rows on screen at a time. Pick What do you know. Pick She is cold. Pick We will tag her. The Quest
 Log: Tag the Hulk. Wait. The second call. Answer it.
 
 **Say:** "In we go, and here's her call. || She asks her question, | and now there are
-three answers in the list. || I'll ask what she knows first, | then I tell her the hulk is
-cold, | and there's the offer. ||| We will tag her. || The call is over, | and the job is
-in the Quest Log. || Thirty seconds later it's done and paid, | and she's calling back.
+three answers in the list. || It shows two rows at a time, | so I scroll down for the
+rest. || I'll ask what she knows first, | then I tell her the hulk is
+cold, | and there's the offer. ||| We will tag her. || The call is over, | and the quest is
+in the Quest Log, | with Quill's face under its order. || Thirty seconds later it's done and paid, | and she's calling back.
 ||"
 
 ### 10. The other roads
@@ -190,10 +208,9 @@ in the Quest Log. || Thirty seconds later it's done and paid, | and she's callin
 **Screen:** Start again: pick Find someone else. Wait: nothing. Start again: pick Not now.
 Then once more: open the call and press Back.
 
-**Say:** "Now the other roads. || If I tell her to find someone else, | there's no job,
-and no second call. || And if I say not now, | the call is gone, and it doesn't come back.
-||| But Back is a different thing. || It puts the call back in the list, unanswered,
- | and nothing in
+**Say:** "Now the other roads. || If I tell her to find someone else, | there's no quest,
+and no second call. || And if I scroll down and say not now, | the call is gone, and it doesn't come back.
+||| But Back is a different thing. || It puts the call back in the list, unanswered, | and nothing in
 the story changes. || So the crew always has a way to wait. || Only write an answer that
 hangs up | when your story can go on without the call. ||"
 

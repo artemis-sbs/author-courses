@@ -302,13 +302,17 @@ in the list, open that log.
 
 ## Step 9 - Play it
 
-1. Start the game with `sbs run server,helm,weapons -m LegendaryMissions`, as in
-   Lecture 8. Stay on **Siege**.
+1. Start the game with `sbs run server,helm,science -m LegendaryMissions`: as in
+   Lecture 8, but with Science, where you count. Stay on **Siege**.
 2. In the **Options** panel, set **Difficulty** to 5 and choose Corsair Queen on the
    **Boss** line.
 3. Press **Start Mission**.
 
-With `Low: 100%` she arrives about four seconds in. Count what came:
+With `Low: 100%` she arrives about four seconds in. On Science, count what came. The
+contact list names a ship only once it is scanned; until then it reads `unknown`. So press
+the `raider` chip, pick each row in turn and press **Queue Scan**. Then turn `raider` off
+and press the chip for her fleets' race, `pirate-o` or `kralien-o`: it lists the scanned
+ships of that race. You should count:
 
 - two named ships, **Morrigan** and **Badb**,
 - three new fleets, all of one race,

@@ -1,17 +1,20 @@
 s01_cold_open_0	Last time your boss was a copy of the Warlord with new names.
-s01_cold_open_1	So she flew a Kralien dreadnought, with Kralien escorts,
+s01_cold_open_1	So she flew a Kralien dreadnought, with Kralien or Torgoth escorts,
 s01_cold_open_2	and a corsair shouldn't.
 s01_cold_open_3	Today you change six lines, one at a time,
 s01_cold_open_4	and by the end, every number in her file is one you chose.
-s02_the_six_lines_0	Everything today is in the first fence.
-s02_the_six_lines_1	Trigger says which kind of boss she is.
-s02_the_six_lines_2	Low says when she arrives.
-s02_the_six_lines_3	Fleets, Flies and Difficulty say what comes with her,
-s02_the_six_lines_4	and Named says which ships carry a name.
-s02_the_six_lines_5	One thing before we start.
-s02_the_six_lines_6	The game reads a boss file when the mission starts,
-s02_the_six_lines_7	so after every change you save,
-s02_the_six_lines_8	you start the mission again.
+s02_the_six_lines_0	Here's last time's Queen on Science,
+s02_the_six_lines_1	with the Morrigan selected,
+s02_the_six_lines_2	her name in red at the top.
+s02_the_six_lines_3	Everything she brings is in the first fence of her file.
+s02_the_six_lines_4	Trigger says which kind of boss she is.
+s02_the_six_lines_5	Low says when she arrives.
+s02_the_six_lines_6	Fleets, Flies and Difficulty say what comes with her,
+s02_the_six_lines_7	and Named says which ships carry a name.
+s02_the_six_lines_8	One thing before we start.
+s02_the_six_lines_9	The game reads a boss file when the mission starts,
+s02_the_six_lines_10	so after every change you save,
+s02_the_six_lines_11	you start the mission again.
 s03_make_her_arrive_at_once_0	You're going to play her several times today,
 s03_make_her_arrive_at_once_1	and you don't want to fight for ten minutes each time.
 s03_make_her_arrive_at_once_2	So set Low to a hundred percent.
@@ -19,20 +22,18 @@ s03_make_her_arrive_at_once_3	Low is a share of the raiders,
 s03_make_her_arrive_at_once_4	and she comes when that share or less is left.
 s03_make_her_arrive_at_once_5	A hundred percent is all of them, so she arrives about four seconds in,
 s03_make_her_arrive_at_once_6	before anyone has fired a shot.
-s03_make_her_arrive_at_once_7	That's your test setting,
-s03_make_her_arrive_at_once_8	and you put the real number back at the end.
+s03_make_her_arrive_at_once_7	That's your test setting, and you put the real number back at the end.
 s04_fleets_and_who_flies_them_0	Fleets is the easy one. It's a whole number, written as a digit,
 s04_fleets_and_who_flies_them_1	and that many escort fleets arrive with her.
-s04_fleets_and_who_flies_them_2	Flies names a race,
-s04_fleets_and_who_flies_them_3	and there are six that can fly a fleet.
-s04_fleets_and_who_flies_them_4	Now here's the part people get wrong.
-s04_fleets_and_who_flies_them_5	Seventy-five percent pirate, twenty-five Kralien, with three fleets,
-s04_fleets_and_who_flies_them_6	doesn't give you two pirate fleets and one Kralien.
-s04_fleets_and_who_flies_them_7	The game rolls once, when she arrives,
-s04_fleets_and_who_flies_them_8	and all three fleets are the same race.
-s04_fleets_and_who_flies_them_9	So write the mix as a story:
-s04_fleets_and_who_flies_them_10	most nights she brings her own corsairs,
-s04_fleets_and_who_flies_them_11	and now and then she's hired Kraliens.
+s04_fleets_and_who_flies_them_2	Flies names a race, and there are six that can fly a fleet.
+s04_fleets_and_who_flies_them_3	Now here's the part people get wrong.
+s04_fleets_and_who_flies_them_4	Seventy-five percent pirate, twenty-five Kralien, with three fleets,
+s04_fleets_and_who_flies_them_5	doesn't give you two pirate fleets and one Kralien.
+s04_fleets_and_who_flies_them_6	The game rolls once, when she arrives,
+s04_fleets_and_who_flies_them_7	and all three fleets are the same race.
+s04_fleets_and_who_flies_them_8	So write the mix as a story:
+s04_fleets_and_who_flies_them_9	most nights she brings her own corsairs,
+s04_fleets_and_who_flies_them_10	and now and then she's hired Kraliens.
 s05_difficulty_0	The crew picks a difficulty before the game, from one to eleven.
 s05_difficulty_1	Your line says how hard her fleets are next to that.
 s05_difficulty_2	Plus two is two levels above the game,
@@ -43,13 +44,15 @@ s05_difficulty_6	and a Kralien fleet is four to six.
 s05_difficulty_7	So the night she's hired Kraliens is the hard night.
 s06_her_own_ships_0	Named is two words for each ship:
 s06_her_own_ships_1	its name, and then which ship it is.
-s06_her_own_ships_2	Last time you changed the first word.
-s06_her_own_ships_3	Today you change the second,
-s06_her_own_ships_4	and you add a second ship after a comma.
-s06_her_own_ships_5	The second word is a ship key,
-s06_her_own_ships_6	and the page has the raider ships in a table.
-s06_her_own_ships_7	Type it exactly as it's printed, in small letters, with the underscores,
-s06_her_own_ships_8	because this is the one line where a spelling mistake gets past everything.
+s06_her_own_ships_2	The name is what Science shows for her,
+s06_her_own_ships_3	and once she's scanned, it's her row in the contact list.
+s06_her_own_ships_4	Last time you changed the first word.
+s06_her_own_ships_5	Today you change the second,
+s06_her_own_ships_6	and you add a second ship after a comma.
+s06_her_own_ships_7	The second word is a ship key,
+s06_her_own_ships_8	and the page has the raider ships in a table.
+s06_her_own_ships_9	Type it exactly as it's printed, in small letters, with the underscores,
+s06_her_own_ships_10	because this is the one line where a spelling mistake gets past everything.
 s07_check_it_and_what_lint_can_t_0	Lint reads the shape of a boss line.
 s07_check_it_and_what_lint_can_t_1	It knows the field names,
 s07_check_it_and_what_lint_can_t_2	it knows the two triggers,
@@ -57,21 +60,26 @@ s07_check_it_and_what_lint_can_t_3	and it knows a named ship is two words.
 s07_check_it_and_what_lint_can_t_4	It doesn't check the other values.
 s07_check_it_and_what_lint_can_t_5	So if I write pirates, with an S, lint still says clean,
 s07_check_it_and_what_lint_can_t_6	and in the game her named ships arrive with no fleets at all.
-s07_check_it_and_what_lint_can_t_7	The game does tell you, though.
-s07_check_it_and_what_lint_can_t_8	It writes one line in the runtime log, in the Legendary Missions folder,
-s07_check_it_and_what_lint_can_t_9	naming the race it couldn't find.
-s07_check_it_and_what_lint_can_t_10	And for a number it can't read,
-s07_check_it_and_what_lint_can_t_11	it leaves your boss out of the list and says which line.
+s07_check_it_and_what_lint_can_t_7	Here they are among the Siege's own raiders,
+s07_check_it_and_what_lint_can_t_8	and not one pirate is with them.
+s07_check_it_and_what_lint_can_t_9	The game does tell you, though.
+s07_check_it_and_what_lint_can_t_10	It writes a line in the runtime log, in the Legendary Missions folder,
+s07_check_it_and_what_lint_can_t_11	one for each fleet,
+s07_check_it_and_what_lint_can_t_12	naming the race it couldn't find.
+s07_check_it_and_what_lint_can_t_13	And for a number it can't read,
+s07_check_it_and_what_lint_can_t_14	it leaves your boss out of the list and says which line.
 s08_play_it_and_count_0	Now play it, and count what arrives.
-s08_play_it_and_count_1	Two named ships, the Morrigan and the Badb.
-s08_play_it_and_count_2	Three new fleets, all of one race.
-s08_play_it_and_count_3	Then start the mission again and look a second time,
-s08_play_it_and_count_4	because about one arrival in four is the Kralien one.
-s08_play_it_and_count_5	Try changing one number and playing again.
-s08_play_it_and_count_6	Set the difficulty line to eleven,
-s08_play_it_and_count_7	and every fleet is six ships.
+s08_play_it_and_count_1	On Science, once they're scanned,
+s08_play_it_and_count_2	the pirate chip lists the Morrigan and the Badb,
+s08_play_it_and_count_3	and eight more pirates:
+s08_play_it_and_count_4	her three fleets, all of one race.
+s08_play_it_and_count_5	Then start the mission again and look a second time,
+s08_play_it_and_count_6	because about one arrival in four is the Kralien one.
+s08_play_it_and_count_7	Try changing one number and playing again.
+s08_play_it_and_count_8	Set the difficulty line to eleven,
+s08_play_it_and_count_9	and every fleet is six ships.
 s09_her_real_arrival_0	Testing's over, so give her the number you want the crew to play.
-s09_her_real_arrival_1	I'm using forty percent.
+s09_her_real_arrival_1	I'm using forty percent for mine.
 s09_her_real_arrival_2	With sixteen raiders at the start,
 s09_her_real_arrival_3	she comes when six are left.
 s09_her_real_arrival_4	The crew's winning by then,

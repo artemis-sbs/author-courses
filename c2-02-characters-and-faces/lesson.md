@@ -8,11 +8,12 @@ and each face is the same in every game.
 
 *[Screenshot to add: the Face Builder beside `mission.amd`, with Captain Sable's portrait.]*
 
-You will edit one file, `mission.amd`: one new section with three records. Nothing in
-`story.mast` changes.
+You will edit one file, `mission.amd`: one new section with three records, and one line
+in a quest. Nothing in `story.mast` changes.
 
-Nobody speaks yet. A character is shown in the game when they talk to the crew, and that
-is Lecture 3. Today you make the people, and you look at them in the editor.
+Nobody speaks yet. A character is mostly shown in the game when they talk to the crew,
+and that is Lecture 3. Today you make the people, you look at them in the editor, and you
+put the harbormaster's face on a job in the Quest Log.
 
 ## The video
 
@@ -283,7 +284,6 @@ it had made and what face each one holds.
 | `### [Chief Ives]` (no key), or `### Chief Ives` (no brackets) | Does not make him | `broken-heading`, an error |
 | Two people with the same key | Makes the upper one only | `duplicate-key` |
 | A person typed up in the Landmarks section | Makes no person from that record | `landmark-no-art`, `landmark-no-loc` and `landmark-no-kind`: she is read as a place |
-
 | `Face female` (no colon) | Makes her with a rolled human face | `fence-syntax`, an error: it expected `Label: value` |
 | A face string broken onto two lines | Makes her with half a face string | `fence-syntax`, an error, on the second half |
 | `Faces:` or `Portrait:` for `Face:` | Ignores the line. She gets a rolled human face | `unknown-field` |
@@ -340,6 +340,64 @@ You can look at them in the editor.
 Try it once on a keyword. Change Sable's line to `Face: female` and preview her twice:
 two different women. Then press `Ctrl+Z` until her face string is back.
 
+## Step 10 - Her face on a job
+
+Nobody speaks until Lecture 3, but one place in the game can show a face today: the
+Quest Log. In Class 1 you learned that a quest's description is a page, with paragraphs,
+headings and a table. A page can also hold a portrait.
+
+Quill runs traffic control, and she is the one who has been calling the hulk. Put her
+face on that job. Find **Close Inspection** in the Quests section. Above the first line of
+its description, add one line and a blank line:
+
+```
+#### [Close Inspection](approach)
+---
+Scope: shared
+Starts when: at once
+Objective: Close to within 500 of the hulk
+Done when: reach derelict 500
+Reward: 100 credits
+Then: reveal salvage/boat
+Part of: salvage
+Required: true
+---
+![](face://ter #e4cb8e 1 0;ter #fff 12 6;ter #e4cb8e 3 1;ter #e4cb8e 5 2;ter #704025 7 3;) Harbormaster Quill, DS 1 traffic control
+
+The hulk is not answering hails. Bring the ship in close and take a look.
+```
+
+Leave the rest of the description as it is. Do not type the face string: copy it.
+
+1. Go to Quill's record and select everything after `Face: `, down to the last semicolon.
+   Press `Ctrl+C`.
+2. Go back to Close Inspection. Type `![](face://`, press `Ctrl+V`, and type `)`.
+3. Type a space and the words that go beside her picture.
+
+| Part | What it is |
+|---|---|
+| `![](face://` | The start: an exclamation mark, empty square brackets, a round bracket, and `face://` |
+| The face string | Hers, letter for letter, down to the last semicolon. It does not look her up by key |
+| `)` | The end of the face |
+| `Harbormaster Quill, DS 1 traffic control` | Drawn beside the portrait. Who is speaking, and from where |
+
+Save. Run lint: `clean`. Lint does not read this line at all, so it says `clean` for
+every row of this table too:
+
+| Mistake | What the Quest Log does (read in the library's code, not yet seen in the game) |
+|---|---|
+| A space between `]` and `(` | No portrait. The line is drawn as typed, marks and all |
+| The `)` left off | The same |
+| Half a face string | It is handed to the game as typed, and it is not a face |
+| `face://quill`, the key in place of the string | The same. The page does not look people up |
+
+**If you change her face later, change this copy too.** Nothing joins the two. A good
+habit: every time you use the builder on Quill, search the file for her old string.
+
+Start the game and open the Quest Log (the ePADD, then **Quests**). Close Inspection is
+there from the start. Her portrait is on the right, under the order line and above the
+first paragraph, small, with her name beside it. That is the first time anyone in the game sees her.
+
 ## If something goes wrong
 
 | What you see | Likely cause |
@@ -369,13 +427,15 @@ Add a fourth person of your own, from a people you have not used.
 
 ## Checkpoint
 
-You are done when all four are true:
+You are done when all five are true:
 
 - `sbs lint MyMission` answers `clean`, with `0 error(s), 0 warning(s)`.
 - Your file ends with a section keyed `characters`, holding three records, each with three
   hashes and a key of its own.
 - Every `Face:` line is a face string on one line. None is a keyword.
 - **Preview Node** shows the same portrait for Quill each time you run it.
+- Close Inspection's description starts with Quill's portrait, her face string copied
+  letter for letter, and her name beside it.
 
 ## Next
 

@@ -174,14 +174,20 @@ Action:
 ```
 
 **2. A name in a sentence.** In the description of the same record, add a sentence with a
-link in it:
+link in it, at the end of its first paragraph:
 
 ```
+![](face://ter #d2b2a1 0 0;ter #fff 13 6;ter #d2b2a1 11 1;ter #d2b2a1 12 2;ter #934e2c 11 3;ter #fff 9 5;) Chief Ives, salvage desk, DS 1
+
 The beacon is live. DS 1 pays when she hears it from the ship. Chief Ives says [[vane]] has been asking what she is worth.
+
+Chief Ives will not write a claim into the ledger on a beacon's signal alone. Somebody aboard the ship that set it has to say so on Comms, so that it is on the record.
 ```
 
-Keep it on one line. Two square brackets, a key, two square brackets. When the record
-`vane` exists, the game prints its name there.
+Two square brackets, a key, two square brackets. When the record `vane` exists, the game
+prints its name there. Keep the link itself whole, on one line. The sentence around it can
+run on to the next line of the file: the Quest Log joins the lines of a paragraph. The
+crew reads this sentence in the Quest Log, on Helm's handheld, on Report to DS 1's page.
 
 **3. An answer that leads on.** In the scene **Quill Calls Back**, add a second answer
 under the first:
@@ -190,6 +196,8 @@ under the first:
 - [It is ours, DS 1. The beacon is set.]() ; completes report_in
 - [Who else is asking about her?](quill_rivals)
 ```
+
+The crew sees this answer on Comms, in Quill's second call, after Chief Ives has spoken.
 
 Save. You have named three things that do not exist: a quest `claim`, a person `vane`,
 and a scene `quill_rivals`.
@@ -204,11 +212,11 @@ sbs lint MyMission --missing
 3 thing(s) referenced but not written yet:
 
   claim
-      revealed by `report_in`   mission.amd:156
+      revealed by `report_in`   mission.amd:178
   quill_rivals
-      chosen from `quill_thanks`   mission.amd:352
+      chosen from `quill_thanks`   mission.amd:378
   vane
-      linked from `report_in`   mission.amd:160
+      linked from `report_in`   mission.amd:184
 ```
 
 That is your writing list for act two. Each entry names what is missing, which record
@@ -226,9 +234,9 @@ sbs lint MyMission
 
 ```
 == mission.amd ==
-  [WARNING] line 156:14: `report_in` Then reveals `claim`, and no record has that key, so nothing is revealed (dangling-reveal)
-  [WARNING] line 160:80: `report_in` links to `vane`, which is not written yet (dangling-link)
-  [WARNING] line 352:35: choice in `quill_thanks` points at `quill_rivals`, which resolves to no node (dangling-choice)
+  [WARNING] line 178:14: `report_in` Then reveals `claim`, and no record has that key, so nothing is revealed (dangling-reveal)
+  [WARNING] line 184:80: `report_in` links to `vane`, which is not written yet (dangling-link)
+  [WARNING] line 378:35: choice in `quill_thanks` points at `quill_rivals`, which resolves to no node (dangling-choice)
 
 1 amd + 1 mast file(s): 0 error(s), 3 warning(s)
 ```
@@ -256,7 +264,21 @@ Done when: 60 seconds
 Reward: 200 credits
 ---
 Chief Ives has logged the hulk as yours for one hour. Stay with her until the ledger closes.
+
+## Who else wants her
+
+| Who | Wants her for |
+|---|---|
+| Captain Sable, the Breaker Cutter | Parts. She has never paid for a ship |
+| Assessor Vane, the Harbor Guild | Her value. He pays, and he pays low |
+
+A claim holds only while the ship that made it stands by. Leave her, and the first hull alongside can take her.
 ```
+
+This is the start of act two, and the crew reads it at the moment the story turns, in the
+Quest Log on Helm's handheld, so give it a page: the order, a heading, a short table of who else is in play, and what is at
+stake. Every part of it is from Class 1, Lecture 8. The table names people in plain words;
+the crew meets Sable and Vane by voice later in the act.
 
 Save, and ask again:
 
@@ -264,9 +286,9 @@ Save, and ask again:
 2 thing(s) referenced but not written yet:
 
   quill_rivals
-      chosen from `quill_thanks`   mission.amd:363
+      chosen from `quill_thanks`   mission.amd:398
   vane
-      linked from `report_in`   mission.amd:160
+      linked from `report_in`   mission.amd:184
 ```
 
 **The person.** In the Characters section, under **Captain Sable**:
@@ -286,7 +308,7 @@ Lecture 2, when you have a minute.
 1 thing(s) referenced but not written yet:
 
   quill_rivals
-      chosen from `quill_thanks`   mission.amd:369
+      chosen from `quill_thanks`   mission.amd:404
 ```
 
 **The scene.** At the very end of the file, with one blank line above it:
@@ -343,7 +365,7 @@ sbs lint MyMission --missing
 1 thing(s) referenced but not written yet:
 
   quill_history
-      chosen from `quill_hello`   mission.amd:330
+      chosen from `quill_hello`   mission.amd:365
 ```
 
 One answer in **Quill Checks In** still leads to the scene you cut. If the crew chooses
@@ -467,9 +489,10 @@ sbs run server,helm,comms -m MyMission map=0
 
 1. Fly inside 500 of the hulk. Quill calls. On Comms, tell her the hulk is cold, then
    that you will tag her.
-2. Wait 30 seconds. **Report to DS 1** is in the Quest Log. Its description now ends
-   `Chief Ives says Assessor Vane has been asking what she is worth.` The link is
-   printed as his name.
+2. Wait 30 seconds. **Report to DS 1** is in the Quest Log. The first paragraph of
+   its description now ends `Chief Ives says Assessor Vane has been asking what she is
+   worth.`, and the paragraph about the ledger still follows it. The link is printed as his
+   name, in plain type.
 3. Answer the second call. When Chief Ives has spoken there are two answers. Choose
    `Who else is asking about her?`
 4. Quill answers. Choose `Then log the claim, DS 1. The beacon is set.`

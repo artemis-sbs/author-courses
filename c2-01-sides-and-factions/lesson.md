@@ -67,6 +67,9 @@ color. That is the only side your mission has, and everything on your map is on 
 
 Inside the quote marks, the first word is the side. The words after it are roles.
 
+You see that word in the game. On Science, once DS 1 is scanned, `tsn` is drawn at the
+right of its name, at the top of the read-out.
+
 So `tsn` is the key of the crew's own side. Keep that word in mind: every step below
 uses it.
 
@@ -135,7 +138,8 @@ much blue is in the color, in that order. Each character is one of
 
 The game uses the color for the side's key, the word beside a contact's name on the Science
 console. The map itself does not use it: there a contact is colored by what it is to YOU,
-red for an enemy and blue for a friend. Lint does not check a color, so copy one from the
+red for an enemy and blue for a friend, once Science has scanned it. Until then it is grey.
+Lint does not check a color, so copy one from the
 table.
 
 Save, and run lint:
@@ -215,6 +219,8 @@ The Harbor Guild's repair yard.
 ```
 
 The cutter sits about 3600 beyond the hulk. The yard is about 6700 from DS 1, to the west.
+You will see them on Helm's map: the cutter out past the hulk, grey until Science scans it
+and red after, and the yard blue like DS 1.
 
 One `Art` word is new. Add it to your table from Lecture 10:
 
@@ -252,7 +258,7 @@ Save, and run lint. It tells you the half you have not done yet:
 
 ```
 == mission.amd ==
-  [WARNING] line 105: nothing in this mission wears a role called `home`, so `reach` matches nothing. Check the spelling against the `Roles:` line of the thing you mean, or the roles in `story.mast` (role-nothing-wears)
+  [WARNING] line 121: nothing in this mission wears a role called `home`, so `reach` matches nothing. Check the spelling against the `Roles:` line of the thing you mean, or the roles in `story.mast` (role-nothing-wears)
 
 1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```
@@ -309,9 +315,8 @@ This is what the crew meets. The words in quote marks are the game's own.
 
 | To the crew, the side is | A station of that side | A ship of that side |
 |---|---|---|
-| An enemy | Science draws its name in red. Comms can hail and taunt it. The crew cannot dock |
- Science draws its name in red and reads "Enemy vessel. Exercise caution." Comms is offered **Hail**, **Taunt** and **Surrender now** |
-| An ally | Science draws its name in green and reads "This is a friendly station." Comms is offered **Hail**, **Build Weapons** and **Request Priority Docking**. Helm can dock | Science shows it as `unknown` until you write scan text for one of its roles. Then its name is green, and Comms is offered **Hail** |
+| An enemy | Science draws its name in red. Comms can hail and taunt it. The crew cannot dock | Science draws its name in red and reads "Enemy vessel. Exercise caution." Comms is offered **Hail**, **Taunt** and **Surrender now** |
+| An ally | Science draws its name in green and reads "This is a friendly station." Comms is offered **Hail**, **Build Weapons**, **Request Priority Docking** and **Market**. Helm can dock | Science shows it as `unknown` until you write scan text for one of its roles. Then its name is green, and Comms is offered **Hail** |
 | Neutral, or nothing | Science shows it as `unknown` until you write scan text for one of its roles. Then its name is white. Comms is offered nothing, and the crew cannot dock | The same: `unknown`, then white once it has scan text of yours. Comms is offered nothing |
 
 Three more things follow from being enemies or allies.
@@ -460,7 +465,6 @@ For every row of the next table lint says `clean`. Check these by eye.
 | You wrote | What happens |
 |---|---|
 | The step still says `reach station 1000`, whether or not DS 1 wears `home` | The story can be finished at the Guild Yard. Lint cannot count your stations |
-
 | No `Side:` line on the cutter | The cutter is on no side. It is `unknown` |
 | `Roles: cutter, breaker` in place of `Side: breaker` | The same. A role is not a side |
 | `(Breaker)` with a capital in the heading | It half works. Science reads the cutter as an enemy. An enemy close by no longer stops docking. Write a key in small letters |
@@ -486,7 +490,6 @@ and gives the word in square brackets.
 | `Enemies: *` on the Breakers | Works: enemies of the TSN and of the Guild |
 | No TSN record in the Sides section | Works. Lines 18 to 20 of `story.mast` still make your side |
 | Lines 18 to 20 of `story.mast` deleted, with the TSN record in the file | Works. Leave them where they are all the same |
-
 | Your own side written a second time with another key, such as `### [TSN](navy)` | Works, and makes one more side that nobody is on. Take it out |
 | `Prefab: npc` on the cutter | Works. It means the same as `Prefab: ship` |
 
@@ -496,18 +499,22 @@ and gives the word in square brackets.
 sbs run server,helm,science,comms -m MyMission map=0
 ```
 
-1. On Science, select the **Guild Yard**. Until the scan is done it reads `unknown`. Then
-   its name is drawn in green, the word `guild` is beside it in the Guild's own green, and
-   the `scan` tab says "This is a friendly station."
-2. On Comms, select the Guild Yard. You are offered **Hail**, **Build Weapons** and
-   **Request Priority Docking**. Press **Hail**. The yard answers "Hello, Artemis. We stand
-   ready to assist", lists its shields, and says "You have full docking privileges."
+1. On Science, pick the **Guild Yard** from the contact list. A station in sensor range
+   scans itself, so there is nothing to press. Its name is drawn in green, the word `guild`
+   is beside it in the Guild's own green, and the `scan` tab says "This is a friendly
+   station."
+2. On Comms, select the Guild Yard. You are offered **Hail**, **Build Weapons**,
+   **Request Priority Docking** and **Market**. Press **Hail**. The answer arrives as a
+   header in the message list at the top: click the header to read it. The words are the
+   game's own, and they change from game to game.
 3. On Helm, fly to within 600 of the yard. Helm can dock there, the same as at DS 1.
-4. Fly out past the Unknown Hulk. On Science, select the **Breaker Cutter**. Its name is
-   drawn in red, the word `breaker` is beside it in orange, and the `scan` tab says "Enemy
-   vessel. Exercise caution."
+4. Fly out past the Unknown Hulk. On Science, pick the **Breaker Cutter** and scan it if
+   it is not scanned yet: until it is, the list calls it `unknown` and Helm draws it grey,
+   so find it on the map. Once scanned its name is drawn in red, the word `breaker` is
+   beside it in orange, and the `scan` tab says "Enemy vessel. Exercise caution."
 5. On Comms, select the cutter. You are offered **Hail**, **Taunt** and **Surrender now**.
-   Press **Hail**: "Go away, Artemis! You talk too much!"
+   Press **Hail**, and click the answer's header in the message list. It is one of the
+   game's own lines for a pirate ship.
 6. Stay near the cutter for a while. It does not move, and nobody shoots.
 7. Now finish the story: the hulk, the lifeboat, the wait for the tug. When **Bring the Log
    Home** appears, fly to the Guild Yard first. Nothing happens. Fly to DS 1. Inside 1000,
@@ -516,7 +523,7 @@ sbs run server,helm,science,comms -m MyMission map=0
 
 The side is paid what it was paid in Lecture 11: 500 credits with the bonus, 450 without.
 
-On the map, the cutter is red and the yard is blue, like DS 1. That is the color of a
+On the map, once both are scanned, the cutter is red and the yard is blue, like DS 1. That is the color of a
 relation. Your `Color:` shows only in the word beside the name.
 
 ### The other tabs of an enemy ship

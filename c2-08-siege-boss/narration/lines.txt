@@ -12,31 +12,38 @@ s02_what_a_boss_is_4	something worse arrives when the raiders are nearly beaten.
 s02_what_a_boss_is_5	Four bosses come with the game,
 s02_what_a_boss_is_6	and each one is a single file in a folder.
 s02_what_a_boss_is_7	So if you add a file, you've added a boss.
-s03_read_the_warlord_0	Here's the Warlord, and it's two records,
-s03_read_the_warlord_1	in the shape you already know:
-s03_read_the_warlord_2	a heading, a fence, and a body.
-s03_read_the_warlord_3	The first record is the boss herself.
-s03_read_the_warlord_4	There's one word alone on a line, the word Boss,
-s03_read_the_warlord_5	which says what kind of record this is.
-s03_read_the_warlord_6	Trigger and Low say when she arrives:
-s03_read_the_warlord_7	when a quarter of the raiders are left.
-s03_read_the_warlord_8	Flies and Fleets say what comes with her,
-s03_read_the_warlord_9	and Named is her flagship:
-s03_read_the_warlord_10	a name, and then which ship it is.
-s03_read_the_warlord_11	The second record is a quest,
-s03_read_the_warlord_12	and you wrote plenty of those in Class 1.
-s03_read_the_warlord_13	It belongs to the Siege's own mission,
-s03_read_the_warlord_14	the crew needs it to win,
-s03_read_the_warlord_15	and it's done when the Siege says every raider is gone.
+s03_read_the_warlord_0	Before we open his file, here's the Warlord in the game.
+s03_read_the_warlord_1	He's a name in the Boss list,
+s03_read_the_warlord_2	and when he arrives, his flagship shows on Science,
+s03_read_the_warlord_3	with his name at the top.
+s03_read_the_warlord_4	And his objective, Defeat the Warlord, is in the Quest Log on Helm's handheld.
+s03_read_the_warlord_5	Here's his file, and it's two records,
+s03_read_the_warlord_6	in the shape you already know:
+s03_read_the_warlord_7	a heading, a fence, and a body.
+s03_read_the_warlord_8	The first record is the boss himself,
+s03_read_the_warlord_9	and the name in its heading is the one in the Boss list.
+s03_read_the_warlord_10	There's one word alone on a line, the word Boss,
+s03_read_the_warlord_11	which says what kind of record this is.
+s03_read_the_warlord_12	Trigger and Low say when he arrives:
+s03_read_the_warlord_13	when a quarter of the raiders are left.
+s03_read_the_warlord_14	Flies and Fleets say what comes with him,
+s03_read_the_warlord_15	and Named is his flagship:
+s03_read_the_warlord_16	a name, and then which ship it is.
+s03_read_the_warlord_17	The second record is a quest,
+s03_read_the_warlord_18	and it's the one in the Quest Log.
+s03_read_the_warlord_19	You wrote plenty of those in Class 1.
+s03_read_the_warlord_20	It belongs to the Siege's own mission,
+s03_read_the_warlord_21	the crew needs it to win,
+s03_read_the_warlord_22	and it's done when the Siege says every raider is gone.
 s04_make_the_copy_0	Don't edit the Warlord. Copy it.
 s04_make_the_copy_1	And don't paste it back into the game's own folder,
 s04_make_the_copy_2	because that folder is replaced every time the game is updated.
-s04_make_the_copy_3	Yours goes here instead:
-s04_make_the_copy_4	common data, and then a folder called bosses.
+s04_make_the_copy_3	Yours goes here instead, in common data,
+s04_make_the_copy_4	and then a folder called bosses.
 s04_make_the_copy_5	The Siege reads both folders,
 s04_make_the_copy_6	so a file in either one is a boss in the list.
-s04_make_the_copy_7	For the file's name,
-s04_make_the_copy_8	use small letters and underscores, with no spaces.
+s04_make_the_copy_7	For the file's name, use small letters and underscores,
+s04_make_the_copy_8	and leave out the spaces.
 s05_lint_it_before_you_change_a__0	Before I change anything, I'm going to run lint,
 s05_lint_it_before_you_change_a__1	pointed at my own bosses folder.
 s05_lint_it_before_you_change_a__2	And it already has something to say.
@@ -44,53 +51,55 @@ s05_lint_it_before_you_change_a__3	My copy still has the Warlord's name,
 s05_lint_it_before_you_change_a__4	and the list offers bosses by name,
 s05_lint_it_before_you_change_a__5	so only one of the two can be in it.
 s05_lint_it_before_you_change_a__6	It's a true warning, and it's the first thing we'll fix.
-s06_rename_the_boss_and_the_flag_0	The square brackets hold what the crew reads,
+s06_rename_the_boss_and_the_flag_0	The square brackets hold the name the Boss list shows,
 s06_rename_the_boss_and_the_flag_1	and the round brackets hold the key,
 s06_rename_the_boss_and_the_flag_2	which I make the same as my file's name.
 s06_rename_the_boss_and_the_flag_3	Next is her flagship,
-s06_rename_the_boss_and_the_flag_4	and I'm only changing the first word, the ship's name.
-s06_rename_the_boss_and_the_flag_5	There's one trap here.
-s06_rename_the_boss_and_the_flag_6	A flagship's name has to be one word.
-s06_rename_the_boss_and_the_flag_7	If I type Iron Duke, as two words,
-s06_rename_the_boss_and_the_flag_8	the game reads a ship called Iron,
-s06_rename_the_boss_and_the_flag_9	of a kind called Duke,
-s06_rename_the_boss_and_the_flag_10	and there's no such kind of ship.
-s06_rename_the_boss_and_the_flag_11	Lint does catch that one,
-s06_rename_the_boss_and_the_flag_12	and it shows you the line to write instead.
+s06_rename_the_boss_and_the_flag_4	the name Science shows at the top when she's selected,
+s06_rename_the_boss_and_the_flag_5	and I'm only changing the first word, the ship's name.
+s06_rename_the_boss_and_the_flag_6	There's one trap here, and it catches people.
+s06_rename_the_boss_and_the_flag_7	A flagship's name has to be one word.
+s06_rename_the_boss_and_the_flag_8	If I type Iron Duke, as two words,
+s06_rename_the_boss_and_the_flag_9	the game reads a ship called Iron,
+s06_rename_the_boss_and_the_flag_10	of a kind called Duke,
+s06_rename_the_boss_and_the_flag_11	and there's no such kind of ship.
+s06_rename_the_boss_and_the_flag_12	Lint does catch that one,
+s06_rename_the_boss_and_the_flag_13	and it shows you the line to write instead.
 s07_write_her_words_0	Now for the part you're here for.
 s07_write_her_words_1	Under the first fence goes one line about her.
 s07_write_her_words_2	That one's a note for you, and for anyone you give the file to,
 s07_write_her_words_3	because the game doesn't show it to the crew.
-s07_write_her_words_4	The objective is different,
-s07_write_her_words_5	since the crew does read that.
+s07_write_her_words_4	The objective is different, since the crew reads it in the Quest Log,
+s07_write_her_words_5	the way they read the Warlord's.
 s07_write_her_words_6	So it gets a new name, a new key,
 s07_write_her_words_7	what it pays, and a sentence in your own voice.
 s07_write_her_words_8	Leave the five lines in the middle alone today,
-s07_write_her_words_9	and keep the word credits after the number,
-s07_write_her_words_10	or nothing gets paid.
-s07_write_her_words_11	Then save, run lint again,
-s07_write_her_words_12	and this time it says clean.
+s07_write_her_words_9	and keep the word credits after the number, or nothing gets paid.
+s07_write_her_words_10	Then save, run lint again,
+s07_write_her_words_11	and this time it says clean.
 s08_see_her_in_the_list_0	To see her, I start the game the way you have since Class 1,
 s08_see_her_in_the_list_1	but with Legendary Missions as the mission,
 s08_see_her_in_the_list_2	and with no map on the end of the line.
 s08_see_her_in_the_list_3	That leaves the server on the start screen.
 s08_see_her_in_the_list_4	Siege is on the left,
 s08_see_her_in_the_list_5	and on the right is the Options panel, with a line called Boss.
-s08_see_her_in_the_list_6	And there she is, under the game's own four.
-s08_see_her_in_the_list_7	If she's missing for you,
-s08_see_her_in_the_list_8	the file's in the wrong folder,
-s08_see_her_in_the_list_9	or the game was already running when you saved it.
+s08_see_her_in_the_list_6	And there she is, at the top of the list,
+s08_see_her_in_the_list_7	above the game's own four.
+s08_see_her_in_the_list_8	If she's missing for you,
+s08_see_her_in_the_list_9	the file's in the wrong folder,
+s08_see_her_in_the_list_10	or the game was already running when you saved it.
 s09_meet_her_0	At twenty-five percent, you'd fight for a long time before she showed up.
 s09_meet_her_1	So for testing, I set Low to ninety.
 s09_meet_her_2	Now she comes when one raider in ten is gone,
 s09_meet_her_3	which here is after the second kill.
-s09_meet_her_4	There's the Morrigan, with her two fleets,
-s09_meet_her_5	and there's my objective in the Quest Log, in my words.
-s09_meet_her_6	Notice that nothing announced her.
-s09_meet_her_7	The game doesn't tell the crew a boss has arrived,
-s09_meet_her_8	and we'll do something about that later in the class.
-s09_meet_her_9	When you've finished testing,
-s09_meet_her_10	put Low back to twenty-five.
+s09_meet_her_4	There's the Morrigan on Science,
+s09_meet_her_5	her name in red at the top,
+s09_meet_her_6	among the raiders.
+s09_meet_her_7	And on Helm's handheld, there's my objective in the Quest Log, in my words.
+s09_meet_her_8	Notice that nothing announced her.
+s09_meet_her_9	The game doesn't tell the crew a boss has arrived,
+s09_meet_her_10	and we'll do something about that later in the class.
+s09_meet_her_11	When you've finished testing, put Low back to twenty-five.
 s10_keep_it_safe_and_your_turn_0	This is why she lives out here.
 s10_keep_it_safe_and_your_turn_1	You can update the game,
 s10_keep_it_safe_and_your_turn_2	and this folder is left alone.

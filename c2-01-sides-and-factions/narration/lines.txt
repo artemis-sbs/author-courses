@@ -4,21 +4,24 @@ s01_cold_open_2	These people want your hulk,
 s01_cold_open_3	and these people will fix your ship.
 s01_cold_open_4	That's three short records in your file,
 s01_cold_open_5	and one line that says who is whose enemy.
-s02_the_side_you_already_have_0	You read these three lines in Lecture 11.
-s02_the_side_you_already_have_1	They make a side called t s n,
-s02_the_side_you_already_have_2	and they give it a name and a color.
-s02_the_side_you_already_have_3	Now look where else that word turns up.
-s02_the_side_you_already_have_4	It's on the line for DS 1,
-s02_the_side_you_already_have_5	it's on the line for the hulk,
-s02_the_side_you_already_have_6	and it's on your tug.
-s02_the_side_you_already_have_7	Inside the quote marks, the first word is the side,
-s02_the_side_you_already_have_8	and the words after it are roles.
-s02_the_side_you_already_have_9	So t s n is the key of your own side.
-s02_the_side_you_already_have_10	Hold on to that word.
-s02_the_side_you_already_have_11	One more line, further down.
-s02_the_side_you_already_have_12	In Lecture 11 this one was marked for Class 2.
-s02_the_side_you_already_have_13	It reads a section called sides from your fact sheet,
-s02_the_side_you_already_have_14	and you haven't written one yet.
+s02_the_side_you_already_have_0	Here's DS 1 on the Science console, once it's scanned.
+s02_the_side_you_already_have_1	Its name is at the top of the read-out,
+s02_the_side_you_already_have_2	and the small word at the right of it, t s n, is its side.
+s02_the_side_you_already_have_3	That word comes from three lines you read in Lecture 11.
+s02_the_side_you_already_have_4	They make a side called t s n,
+s02_the_side_you_already_have_5	and they give it a name and a color.
+s02_the_side_you_already_have_6	Now look where else that word turns up.
+s02_the_side_you_already_have_7	It's on the line for DS 1,
+s02_the_side_you_already_have_8	it's on the line for the hulk,
+s02_the_side_you_already_have_9	and it's on your tug.
+s02_the_side_you_already_have_10	Inside the quote marks, the first word is the side,
+s02_the_side_you_already_have_11	and the words after it are roles.
+s02_the_side_you_already_have_12	So t s n is the key of your own side.
+s02_the_side_you_already_have_13	Hold on to that word.
+s02_the_side_you_already_have_14	One more line, further down.
+s02_the_side_you_already_have_15	In Lecture 11 this one was marked for Class 2.
+s02_the_side_you_already_have_16	It reads a section called sides from your fact sheet,
+s02_the_side_you_already_have_17	and you haven't written one yet.
 s03_a_sides_section_0	So let's write one.
 s03_a_sides_section_1	Sides are records, like everything else in this file.
 s03_a_sides_section_2	The section is two hashes, the word Sides,
@@ -31,44 +34,53 @@ s03_a_sides_section_8	because that's the word my ship already carries.
 s03_a_sides_section_9	Then a color, which is a hash sign and three characters,
 s03_a_sides_section_10	for red, green and blue.
 s03_a_sides_section_11	Zero means none of it, and F means all of it.
-s03_a_sides_section_12	I save, I run lint, and it's clean.
+s03_a_sides_section_12	This one is the blue of that word t s n, beside DS 1's name on Science.
+s03_a_sides_section_13	I save, I run lint, and it's clean.
 s04_two_more_sides_0	Now the people who aren't me.
-s04_two_more_sides_1	First the Breakers, with the key breaker, in orange.
-s04_two_more_sides_2	And here's the line that matters:
-s04_two_more_sides_3	Enemies, and then my key.
-s04_two_more_sides_4	Then the Harbor Guild, with the key guild, in green,
-s04_two_more_sides_5	and the line Allies, and my key.
-s04_two_more_sides_6	What comes after the colon is always a key, never a name.
-s04_two_more_sides_7	And I only say it once.
-s04_two_more_sides_8	Enemies on the Breakers makes them my enemy,
-s04_two_more_sides_9	and it makes me theirs.
-s04_two_more_sides_10	I don't go back and write it on my own record.
+s04_two_more_sides_1	Here's where we're going, on Science.
+s04_two_more_sides_2	The cutter's name is red, with the word breaker beside it in orange,
+s04_two_more_sides_3	and the yard's name is green, with guild beside it.
+s04_two_more_sides_4	First the Breakers, with the key breaker, in orange.
+s04_two_more_sides_5	And here's the line that matters:
+s04_two_more_sides_6	Enemies, and then my key.
+s04_two_more_sides_7	Then the Harbor Guild, with the key guild, in green,
+s04_two_more_sides_8	and the line Allies, and my key.
+s04_two_more_sides_9	What comes after the colon is always a key, never a name.
+s04_two_more_sides_10	And I only say it once.
+s04_two_more_sides_11	Enemies on the Breakers makes them my enemy,
+s04_two_more_sides_12	and it makes me theirs.
+s04_two_more_sides_13	I don't go back and write it on my own record.
 s05_something_on_each_side_0	A side with nothing on it is just a name in a file.
 s05_something_on_each_side_1	So I give each of them one thing on the map,
-s05_something_on_each_side_2	and I do it with landmarks, the way you did in Lecture 10.
-s05_something_on_each_side_3	A ship for the Breakers, out past the hulk,
-s05_something_on_each_side_4	and a station for the Guild, west of DS 1.
-s05_something_on_each_side_5	The Side line takes the side's key.
-s05_something_on_each_side_6	Now watch where I'm typing.
-s05_something_on_each_side_7	These two go in the Landmarks section,
-s05_something_on_each_side_8	above the Sides heading.
-s05_something_on_each_side_9	If I type a landmark below that heading,
-s05_something_on_each_side_10	the game reads it as a side called Breaker Cutter,
-s05_something_on_each_side_11	and it puts no ship anywhere.
+s05_something_on_each_side_2	and here they are on Helm's map.
+s05_something_on_each_side_3	The cutter is the grey one, out past the hulk,
+s05_something_on_each_side_4	grey because Science hasn't scanned it yet.
+s05_something_on_each_side_5	The yard is the blue one, west of DS 1.
+s05_something_on_each_side_6	They're landmarks, the way you made the lifeboat in Lecture 10,
+s05_something_on_each_side_7	one ship and one station.
+s05_something_on_each_side_8	The Side line takes the side's key.
+s05_something_on_each_side_9	Now watch where I'm typing.
+s05_something_on_each_side_10	These two go in the Landmarks section,
+s05_something_on_each_side_11	above the Sides heading.
+s05_something_on_each_side_12	If I type a landmark below that heading,
+s05_something_on_each_side_13	the game reads it as a side called Breaker Cutter,
+s05_something_on_each_side_14	and it puts no ship anywhere.
 s06_a_second_station_0	Lecture 10 warned you about this next part.
-s06_a_second_station_1	My story ends with the words reach station.
-s06_a_second_station_2	Station is a role, and every station wears it,
-s06_a_second_station_3	and I've just built a second station.
-s06_a_second_station_4	So the crew could carry the log to the Guild, and win.
-s06_a_second_station_5	The cure is a role that only DS 1 wears.
-s06_a_second_station_6	In the step, I write reach home.
-s06_a_second_station_7	Lint says nothing wears a role called home,
-s06_a_second_station_8	which is true, because I'm only half done.
-s06_a_second_station_9	So I go to line sixty-four, where DS 1 is made.
-s06_a_second_station_10	Inside the quote marks, after station,
-s06_a_second_station_11	I type a comma, a space, and the word home.
-s06_a_second_station_12	The side stays first, and the roles follow it.
-s06_a_second_station_13	And now lint is clean.
+s06_a_second_station_1	Here's the last step of my story, in the Quest Log:
+s06_a_second_station_2	Bring the Log Home, back to within a thousand of DS 1.
+s06_a_second_station_3	In the file, that step ends with the words reach station.
+s06_a_second_station_4	Station is a role, and every station wears it,
+s06_a_second_station_5	and I've just built a second station.
+s06_a_second_station_6	So the crew could carry the log to the Guild, and win.
+s06_a_second_station_7	The cure is a role that only DS 1 wears.
+s06_a_second_station_8	In the step, I write reach home.
+s06_a_second_station_9	Lint says nothing wears a role called home,
+s06_a_second_station_10	which is true, because I'm only half done.
+s06_a_second_station_11	So I go to line sixty-four, where DS 1 is made.
+s06_a_second_station_12	Inside the quote marks, after station,
+s06_a_second_station_13	I type a comma, a space, and the word home.
+s06_a_second_station_14	The side stays first, and the roles follow it.
+s06_a_second_station_15	And now lint is clean.
 s07_who_is_what_to_whom_0	Three sides make three pairs.
 s07_who_is_what_to_whom_1	Me and the Breakers are enemies,
 s07_who_is_what_to_whom_2	and me and the Guild are allies.
@@ -79,10 +91,11 @@ s07_who_is_what_to_whom_6	Scavengers and harbor pilots aren't strangers,
 s07_who_is_what_to_whom_7	so I add the Guild's key after mine, with a comma between.
 s07_who_is_what_to_whom_8	So what does a relation buy you?
 s07_who_is_what_to_whom_9	An enemy reads as an enemy on Science,
-s07_who_is_what_to_whom_10	and Comms can taunt it.
-s07_who_is_what_to_whom_11	A friendly station lets you dock.
-s07_who_is_what_to_whom_12	And here's the one thing it doesn't buy you: a fight.
-s07_who_is_what_to_whom_13	The cutter has no orders, so it'll just sit there.
+s07_who_is_what_to_whom_10	and here on Comms, it's offered Hail, Taunt, and Surrender now.
+s07_who_is_what_to_whom_11	A friendly station is offered Hail, Build Weapons, Request Priority Docking, and Market,
+s07_who_is_what_to_whom_12	and it lets you dock.
+s07_who_is_what_to_whom_13	And here's the one thing it doesn't buy you: a fight.
+s07_who_is_what_to_whom_14	The cutter has no orders, so it'll just sit there.
 s08_lint_and_what_lint_cannot_se_0	Now let's break it on purpose.
 s08_lint_and_what_lint_cannot_se_1	I misspell my own key after Enemies,
 s08_lint_and_what_lint_cannot_se_2	and lint catches it.
@@ -93,25 +106,32 @@ s08_lint_and_what_lint_cannot_se_6	I take the Side line off the cutter altogethe
 s08_lint_and_what_lint_cannot_se_7	and lint says clean.
 s08_lint_and_what_lint_cannot_se_8	And a fourth hash on the Guild's heading is clean as well.
 s08_lint_and_what_lint_cannot_se_9	In the game, those two look the same.
-s08_lint_and_what_lint_cannot_se_10	The thing reads as unknown on Science, for good,
-s08_lint_and_what_lint_cannot_se_11	and Comms has nothing to say to it.
-s08_lint_and_what_lint_cannot_se_12	So when a contact stays unknown,
-s08_lint_and_what_lint_cannot_se_13	look for its Side line first,
-s08_lint_and_what_lint_cannot_se_14	and then count the hashes on its side.
+s08_lint_and_what_lint_cannot_se_10	Here's the cutter on Science with no Side line.
+s08_lint_and_what_lint_cannot_se_11	It reads unknown, for good,
+s08_lint_and_what_lint_cannot_se_12	and Queue Scan never finishes on it.
+s08_lint_and_what_lint_cannot_se_13	The bar at the bottom counts no threats at all,
+s08_lint_and_what_lint_cannot_se_14	and Comms has nothing to say to it.
+s08_lint_and_what_lint_cannot_se_15	So when a contact stays unknown,
+s08_lint_and_what_lint_cannot_se_16	look for its Side line first,
+s08_lint_and_what_lint_cannot_se_17	and then count the hashes on its side.
 s09_play_it_0	Here's the yard on Science.
-s09_play_it_1	It's unknown until the scan is done,
-s09_play_it_2	and then it's green, with the word guild beside it.
-s09_play_it_3	On Comms I hail them,
-s09_play_it_4	and they tell me I have full docking privileges.
-s09_play_it_5	And Helm can dock.
-s09_play_it_6	Now the other one.
-s09_play_it_7	It's red, with the word breaker beside it,
-s09_play_it_8	and it reads enemy vessel, exercise caution.
-s09_play_it_9	I hail it, and it tells me to go away.
-s09_play_it_10	And then it just sits there,
-s09_play_it_11	because being enemies doesn't start a fight.
-s09_play_it_12	One last thing: I carry the log to the yard, and nothing happens.
-s09_play_it_13	I carry it to DS 1, and we're home.
+s09_play_it_1	A station in range scans itself,
+s09_play_it_2	so I don't even press Queue Scan.
+s09_play_it_3	It's green, with the word guild beside it.
+s09_play_it_4	On Comms I hail them,
+s09_play_it_5	and their answer arrives as a header in the message list.
+s09_play_it_6	I click the header to read it.
+s09_play_it_7	And Helm can dock.
+s09_play_it_8	Now the other one.
+s09_play_it_9	It's red, with the word breaker beside it,
+s09_play_it_10	and it reads enemy vessel, exercise caution.
+s09_play_it_11	I hail it, and it answers with one of the game's own pirate lines.
+s09_play_it_12	And then it just sits there,
+s09_play_it_13	because being enemies doesn't start a fight.
+s09_play_it_14	One last thing: I carry the log to the yard.
+s09_play_it_15	The Quest Log still says Active,
+s09_play_it_16	because the yard isn't home.
+s09_play_it_17	I carry it to DS 1, and we're home.
 s10_your_turn_0	Now it's your turn: write a faction of your own, with one ship.
 s10_your_turn_1	Say nothing about it, and Science calls it unknown.
 s10_your_turn_2	Give it a scan record, and it has a name.

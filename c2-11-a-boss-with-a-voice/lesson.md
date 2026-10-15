@@ -149,11 +149,14 @@ sbs run server,helm,comms -m LegendaryMissions
 
 Choose Corsair Queen on the **Boss** line of the Options panel and press **Start
 Mission**. She arrives about four seconds in. Do nothing. About a minute later Comms gets a message
-from the Morrigan, titled **Sink the Morrigan**:
+from the Morrigan: its header, `Morrigan (pirate)`, appears at the top of Comms. Click it
+to read the message, titled **Sink the Morrigan**:
 
 ```
-You have 1:59, little ship. Then this sector is mine.
+You have 2:00, little ship. Then this sector is mine.
 ```
+
+(`2:00` or `1:59`: the time is read at the moment it is sent.)
 
 A minute after that it says `1:00` or `0:59`, then `0:29`. Half a minute later the game
 is lost, with your `Lose:` sentence.
@@ -193,7 +196,7 @@ sbs lint common_data\bosses
 ```
 == common_data\bosses\corsair_queen.amd ==
   [WARNING] line 35:10: `sink_morrigan` gives its voice to `morrigan`, who is not in the cast (dangling-speaker)
-  [WARNING] line 82: `hails queen_calls` names `queen_calls`, which no record in this document declares. (dangling-action-ref)
+  [WARNING] line 93: `hails queen_calls` names `queen_calls`, which no record in this document declares. (dangling-action-ref)
 
 1 amd + 0 mast file(s): 0 error(s), 2 warning(s)
 ```
@@ -297,8 +300,8 @@ sbs lint LegendaryMissions
 The first prints the one warning from Step 2 and nothing else. The second ends with
 `0 error(s)`, and the only finding under a file of yours is that same warning.
 
-**Play it.** As she arrives, Comms has a call waiting: **The Corsair Queen - The Corsair
-Queen**. The first name is who is calling. The second is your `Title:` line. Open it. She
+**Play it.** As she arrives, Comms has a call waiting in its **Incoming Hails** list: **The
+Corsair Queen - The Corsair Queen**. The first name is who is calling. The second is your `Title:` line. Open it. She
 says one take of her first block. Press **Continue**. She makes her offer, and there is
 one answer. Choose it, and the crew is told `Quest complete: The Queen Calls`.
 
@@ -349,7 +352,11 @@ Done when: 5 seconds
 Action:
   - badb joins tsn
 ---
+[](ship://pirate_strongbow) The Badb, flying with you
+
 First Mate Orla has turned the Badb. She flies for you now.
+
+Leave her alone. A ship that fires on her now fires on a friend, and the Queen will remember who turned.
 ```
 
 Read the chain from the answer down:
@@ -448,10 +455,12 @@ mission. With the test numbers:
    among her objectives.
 3. Open the call. Continue. Choose `Badb, this is the TSN.` The name above the answers
    changes to **First Mate Orla**.
-4. Choose `Then fly with us.` The crew is told `Quest complete: The Queen Calls`, `Quest
-   complete: Turn the Badb` and `Quest failed: Sink the Badb`.
+4. Choose `Then fly with us.` The strip under the left panel shows one line at a time:
+   first `The Corsair Queen - The Corsair Queen - answered (Then fly with us.)`. In the
+   Quest Log, **The Queen Calls** and **Turn the Badb** are Done, and **Sink the Badb** is
+   Failed.
 5. The Badb is on the crew's side. There is one raider fewer to destroy. A few seconds
-   later the crew is told `Quest complete: The Badb Turns`.
+   later the strip says `Quest complete: The Badb Turns`.
 6. Ten seconds after the Queen, the Nemain arrives, as in Lecture 10.
 7. A minute after she arrived, the Morrigan calls the clock.
 
@@ -568,7 +577,12 @@ Speaker: morrigan
 Signal says: You have {time}, little ship. Then this sector is mine.
 Reward: 600 credits
 ---
+[](ship://pirate_brigantine) The Morrigan, the Queen's flagship
+
 The Queen's flagship Morrigan leads the last assault. Sink her within ten minutes of her arrival, or the sector is lost.
+
+- ![](icon://hourglass) Ten minutes, from the moment she arrives.
+- ![](icon://skull) When the time is up, the game is lost.
 
 ## [Sink the Badb](sink_badb)
 ---
@@ -580,6 +594,8 @@ Objective: Destroy the Badb
 Done when: destroy 1 badb
 Reward: 300 credits
 ---
+[](ship://pirate_strongbow) The Badb, the Queen's second ship
+
 A bonus. The Badb is the Queen's second ship. The siege can be won without sinking her.
 
 ## [Her Reserve](reserve)
@@ -594,6 +610,8 @@ Then: reveal sink_nemain
 ---
 The Queen never commits everything at once. Watch for a third ship.
 
+Somewhere out in the dark she is holding one more hull back, and she will send it in when it suits her, not when it suits you.
+
 ## [Sink the Nemain](sink_nemain)
 ---
 Quest
@@ -604,6 +622,8 @@ Objective: Destroy the Nemain
 Done when: destroy 1 nemain
 Reward: 400 credits
 ---
+[](ship://pirate_brigantine) The Nemain, the Queen's reserve
+
 The Nemain is here: the Queen's reserve. Sink her too.
 
 ## [The Queen Calls](parley)
@@ -635,7 +655,11 @@ Done when: 5 seconds
 Action:
   - badb joins tsn
 ---
+[](ship://pirate_strongbow) The Badb, flying with you
+
 First Mate Orla has turned the Badb. She flies for you now.
+
+Leave her alone. A ship that fires on her now fires on a friend, and the Queen will remember who turned.
 
 ## [Characters](characters)
 
@@ -693,6 +717,9 @@ Lecture 10's, unchanged, with its wait back at 90.
 - [ ] The boss, both named ships and the reserve ship have names from your own setting.
 - [ ] Every sentence the crew reads is yours: four objectives, the `Lose:` line, the clock
       line, the arrival sentence, both scenes, every answer.
+- [ ] Each objective's description is a page the crew can act on: who or what it is about
+      (a ship line), what to do, and what it costs to fail. The ship keys match your
+      `Named:` line and your card.
 
 **She is checked**
 

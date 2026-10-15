@@ -35,37 +35,45 @@ s04_who_speaks_for_the_guild_6	On a person it means, this character speaks for t
 s04_who_speaks_for_the_guild_7	Leave it off, and she speaks for nobody,
 s04_who_speaks_for_the_guild_8	and the number she reads is always zero.
 s05_two_deeds_0	Now the crew needs a way to earn something.
-s05_two_deeds_1	A deed is the word earns,
-s05_two_deeds_2	and then three more: a side, a trait and a number.
-s05_two_deeds_3	The first one goes on the quest.
-s05_two_deeds_4	After the credits I put a comma,
-s05_two_deeds_5	and then earns guild honest thirty.
-s05_two_deeds_6	The crew did the job and came back to say so,
-s05_two_deeds_7	and the Guild calls that honest.
-s05_two_deeds_8	The second deed goes on an answer.
-s05_two_deeds_9	I add a way to report that gives the fee to the tug crews,
-s05_two_deeds_10	and after the semicolon it earns generous thirty.
-s05_two_deeds_11	Both answers still finish the step,
-s05_two_deeds_12	because that's the rule from last time.
+s05_two_deeds_1	Here's the report call on Comms when we're done,
+s05_two_deeds_2	and there's a second answer: give our fee to the tug crews.
+s05_two_deeds_3	A deed is the word earns,
+s05_two_deeds_4	and then three more: a side, a trait and a number.
+s05_two_deeds_5	The first one goes on the quest.
+s05_two_deeds_6	After the credits I put a comma,
+s05_two_deeds_7	and then earns guild honest thirty.
+s05_two_deeds_8	The crew did the work and came back to say so,
+s05_two_deeds_9	and the Guild calls that honest.
+s05_two_deeds_10	The second deed goes on an answer.
+s05_two_deeds_11	I add a way to report that gives the fee to the tug crews,
+s05_two_deeds_12	and after the semicolon it earns generous thirty.
+s05_two_deeds_13	Both answers still finish the step,
+s05_two_deeds_14	because that's the rule from last time.
 s06_a_call_that_reads_standing_0	So far the Guild is keeping score, and nobody's reading it.
-s06_a_call_that_reads_standing_1	I add a beat that places a call when the ship comes near the Guild's yard,
-s06_a_call_that_reads_standing_2	and I write the scene for it.
-s06_a_call_that_reads_standing_3	Look at Quill's two lines.
-s06_a_call_that_reads_standing_4	Until today, two lines in a block were two takes,
-s06_a_call_that_reads_standing_5	and the game picked one.
-s06_a_call_that_reads_standing_6	These two each have a guard, in curly brackets, right after the percent sign.
-s06_a_call_that_reads_standing_7	The first can only be said to a ship below thirty.
-s06_a_call_that_reads_standing_8	The second can only be said at thirty or more.
-s06_a_call_that_reads_standing_9	Between them they cover every ship, and that matters.
-s06_a_call_that_reads_standing_10	If no line can be said, the call opens with no words at all.
+s06_a_call_that_reads_standing_1	Here's the call we're after, on Comms,
+s06_a_call_that_reads_standing_2	as the ship comes near the Guild's yard.
+s06_a_call_that_reads_standing_3	To a ship that has done nothing,
+s06_a_call_that_reads_standing_4	Quill says hold outside the markers.
+s06_a_call_that_reads_standing_5	So I add a beat that places the call,
+s06_a_call_that_reads_standing_6	and I write the scene for it.
+s06_a_call_that_reads_standing_7	Look at Quill's two lines.
+s06_a_call_that_reads_standing_8	Until today, two lines in a block were two takes,
+s06_a_call_that_reads_standing_9	and the game picked one.
+s06_a_call_that_reads_standing_10	These two each have a guard, in curly brackets, right after the percent sign.
+s06_a_call_that_reads_standing_11	The first can only be said to a ship below thirty.
+s06_a_call_that_reads_standing_12	The second can only be said at thirty or more.
+s06_a_call_that_reads_standing_13	Between them they cover every ship, and that matters.
+s06_a_call_that_reads_standing_14	If no line can be said, the call opens with no words at all.
 s07_an_answer_that_needs_standin_0	An answer can have a guard too.
-s07_an_answer_that_needs_standin_1	After the round brackets I write if and the condition,
-s07_an_answer_that_needs_standin_2	and only then the semicolon.
-s07_an_answer_that_needs_standin_3	A ship below thirty doesn't see this answer greyed out.
-s07_an_answer_that_needs_standin_4	It doesn't see it at all.
-s07_an_answer_that_needs_standin_5	Back in Lecture 4, I told you to leave this kind of condition alone,
-s07_an_answer_that_needs_standin_6	because there was almost nothing it could read.
-s07_an_answer_that_needs_standin_7	Now there is something: standing, with the side the speaker speaks for.
+s07_an_answer_that_needs_standin_1	Here's the same call to a ship the Guild likes:
+s07_an_answer_that_needs_standin_2	the warm line, and a second answer, request a berth.
+s07_an_answer_that_needs_standin_3	After the round brackets I write if and the condition,
+s07_an_answer_that_needs_standin_4	and only then the semicolon.
+s07_an_answer_that_needs_standin_5	A ship below thirty doesn't see this answer greyed out.
+s07_an_answer_that_needs_standin_6	It doesn't see it at all.
+s07_an_answer_that_needs_standin_7	Back in Lecture 4, I told you to leave this kind of condition alone,
+s07_an_answer_that_needs_standin_8	because there was almost nothing it could read.
+s07_an_answer_that_needs_standin_9	Now there is something: standing, with the side the speaker speaks for.
 s08_how_the_number_works_0	Here's the part that surprises people.
 s08_how_the_number_works_1	The quest earns honest thirty,
 s08_how_the_number_works_2	and the ship's standing after it is seventeen.
@@ -85,7 +93,7 @@ s09_play_it_1	First I fly straight to the yard, having done nothing.
 s09_play_it_2	There's the call, with the cold line,
 s09_play_it_3	and there's my one answer.
 s09_play_it_4	Now a new game.
-s09_play_it_5	I take the job, I wait for the beacon,
+s09_play_it_5	I take the quest, I wait for the beacon,
 s09_play_it_6	and this time the report call offers me two answers.
 s09_play_it_7	I give the fee away.
 s09_play_it_8	Then I fly to the yard.

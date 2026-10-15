@@ -2,8 +2,8 @@
 
 ## What you will have at the end
 
-The salvage job no longer finishes by itself. When the beacon is set, the Quest Log tells
-the crew to report. DS 1 calls, a second voice comes on the line, and the job pays when
+The salvage quest no longer finishes by itself. When the beacon is set, the Quest Log tells
+the crew to report. DS 1 calls, a second voice comes on the line, and the quest pays when
 Comms says the words.
 
 You will also know three things about every call you write from now on: which call sits at
@@ -23,7 +23,7 @@ You will edit one file, `mission.amd`: two quest records and one scene. Nothing 
 ## Before you start
 
 - Your mission as Lecture 4 left it. A crew that tells Quill "We will tag her." gets the
-  job **Tag the Hulk**, and about 30 seconds later she calls back.
+  quest **Tag the Hulk**, and about 30 seconds later she calls back.
 - `sbs lint MyMission` says `clean`.
 - VS Code with the mission folder open, a command prompt open in `data\missions`, and the
   game closed.
@@ -39,13 +39,14 @@ and `quill hails quill_hello`. This lecture is about the call itself.
 
 ## Step 1 - A step only an answer can finish
 
-In Lecture 4 the job finished on a clock and paid. Then Quill called to say well done.
+In Lecture 4 the quest finished on a clock and paid. Then Quill called to say well done.
 Nothing waited on that call. The crew could leave it in the list for the rest of the game.
 
-Now the job is not over until the crew has reported.
+Now the quest is not over until the crew has reported.
 
 Find **Tag the Hulk** in the Quests section. Make three changes: take out the `Reward:`
-line, change the `Then:` line, and add a sentence to the description.
+line, change the `Then:` line, and add a sentence to the end of the description's first
+paragraph.
 
 ```
 ### [Tag the Hulk](tag_hulk)
@@ -56,8 +57,12 @@ Objective: Give the salvage beacon 30 seconds to set
 Done when: 30 seconds
 Then: reveal report_in
 ---
+![](face://ter #e4cb8e 1 0;ter #fff 12 6;ter #e4cb8e 3 1;ter #e4cb8e 5 2;ter #704025 7 3;) Harbormaster Quill, DS 1 traffic control
+
 DS 1 wants a salvage beacon on the hulk before the Breakers find her. It pays when
 the ship reports back.
+
+A beacon makes her a claim on DS 1's salvage ledger. Until one is set, she belongs to whoever gets a line on her first, and the Breaker Cutter is already standing off.
 ```
 
 Below it is the beat **Beacon Set**. Replace the whole record with this one:
@@ -72,7 +77,11 @@ Reward: 150 credits
 Action:
   - quill hails quill_thanks
 ---
+![](face://ter #d2b2a1 0 0;ter #fff 13 6;ter #d2b2a1 11 1;ter #d2b2a1 12 2;ter #934e2c 11 3;ter #fff 9 5;) Chief Ives, salvage desk, DS 1
+
 The beacon is live. DS 1 pays when she hears it from the ship.
+
+Chief Ives will not write a claim into the ledger on a beacon's signal alone. Somebody aboard the ship that set it has to say so on Comms, so that it is on the record.
 ```
 
 This is a quest, not a beat. Compare it with the beat it replaces.
@@ -84,6 +93,11 @@ This is a quest, not a beat. Compare it with the beat it replaces.
 | `Reward:` | The pay has moved here. It is paid when this step completes |
 | `Action:` | The same two lines the beat had. `Action:` works on any quest. It happens the moment the quest starts |
 | No `Done when:` line | Nothing in the game finishes this step by itself. Only an answer can |
+| The description | Chief Ives's face, copied from his `Face:` line as in Lecture 2: the ledger is his. Then what has happened, and, after a blank line, why the crew has to say it out loud. The objective gives the order; the description gives the reason |
+
+In Tag the Hulk the new sentence runs onto a second line in the file. That is fine: there is
+no blank line between the two, so the Quest Log joins them into one paragraph and wraps it
+to fit.
 
 Save. Run lint: `clean`.
 
@@ -204,16 +218,16 @@ Your mission can be started with more than one ship. This is what happens with t
 |---|---|
 | The call is placed | Each ship gets its own copy, in its own Comms list |
 | One ship answers | Only that ship's copy ends. The other ship's copy is still waiting |
-| One ship says "We will tag her." | The job starts for everyone. There is one Tag the Hulk, and both crews see it in their Quest Logs |
-| The other ship then says "Find someone else, DS 1." | Nothing changes. The job goes on |
+| One ship says "We will tag her." | The quest starts for everyone. There is one Tag the Hulk, and both crews see it in their Quest Logs |
+| The other ship then says "Find someone else, DS 1." | Nothing changes. The quest goes on |
 | The report call | Goes to both ships. The first to report finishes the step, and the side is paid once. A second report changes nothing |
-| A ship says "We will tag her." after the job is finished | Nothing. A finished job stays finished |
+| A ship says "We will tag her." after the quest is finished | Nothing. A finished quest stays finished |
 
 Two things follow for a writer.
 
 - **Write the words for any ship that might hear them.** Your opening take says
   `Artemis, DS 1.` The crew of the Intrepid reads the same line.
-- **A job handed out by a call suits a mission flown by one ship.** With two, the second
+- **A quest handed out by a call suits a mission flown by one ship.** With two, the second
   crew's answer counts for nothing.
 
 All of this follows from the line `Scope: shared`: one quest for the whole table. The
@@ -230,12 +244,12 @@ This step has nothing to type. It is what the person at Comms can do with what y
 | Leaves the call in the list | It waits |
 | Opens it | The conversation is drawn on the Comms console and on the main screen, so the whole bridge can follow. Only a Comms console can open a call or answer one |
 | Presses **Back** | The call goes back in the list, unanswered. Nothing in the story changes. Opened again, it starts from the first block of the scene the crew had reached |
-| Turns the dial above the list | Off, This Console, Main Screen or Both. It starts on Both. It moves where the conversation is drawn. It answers nothing |
-| Opens the Hails tab of the info panel | Every finished call is kept there and can be read again. Reading one again cannot change what was answered |
-| Reads the ship's log | Each finished call leaves one line: who called, what about, and what the crew answered |
+| Turns the drop-down above the list | Both, Main Screen, This Console or Off. It starts on Both. It moves where the conversation is drawn. It answers nothing |
+| Opens the Hails tab of the info panel (the last icon in the left column) | Every finished call gets a row there, under the name of who called. A row is a record that the call happened: clicking it only highlights it, and the words are not shown again |
+| Reads the ship's log | Each finished call leaves one line, in the strip under the left panel: who called, what about, and what the crew answered |
 
 So an answer is a decision the crew makes once. Everything else on the console lets them
-put that decision off, or look back at it.
+put that decision off.
 
 ## Your finished pieces
 
@@ -250,8 +264,12 @@ Objective: Give the salvage beacon 30 seconds to set
 Done when: 30 seconds
 Then: reveal report_in
 ---
+![](face://ter #e4cb8e 1 0;ter #fff 12 6;ter #e4cb8e 3 1;ter #e4cb8e 5 2;ter #704025 7 3;) Harbormaster Quill, DS 1 traffic control
+
 DS 1 wants a salvage beacon on the hulk before the Breakers find her. It pays when
 the ship reports back.
+
+A beacon makes her a claim on DS 1's salvage ledger. Until one is set, she belongs to whoever gets a line on her first, and the Breaker Cutter is already standing off.
 
 ### [Report to DS 1](report_in)
 ---
@@ -262,7 +280,11 @@ Reward: 150 credits
 Action:
   - quill hails quill_thanks
 ---
+![](face://ter #d2b2a1 0 0;ter #fff 13 6;ter #d2b2a1 11 1;ter #d2b2a1 12 2;ter #934e2c 11 3;ter #fff 9 5;) Chief Ives, salvage desk, DS 1
+
 The beacon is live. DS 1 pays when she hears it from the ship.
+
+Chief Ives will not write a claim into the ledger on a beacon's signal alone. Somebody aboard the ship that set it has to say so on Comms, so that it is on the record.
 ```
 
 At the end of the file:
@@ -302,7 +324,7 @@ sbs lint MyMission
 ```
 
 Every row below was made on purpose, one at a time, on the finished file. Lint was run,
-and then the game was run without a screen, by a script that took the job, waited for the
+and then the game was run without a screen, by a script that took the quest, waited for the
 beacon, opened the report call and answered it.
 
 **Lint names these.**
@@ -327,7 +349,7 @@ beacon, opened the report call and answered it.
 | The `Beat` line is still in the fence of Report to DS 1 | The step works and pays, but it is not in the Quest Log while it is running. The crew is never told to report |
 | The answer in the report call is left as `()`, or the scene has a second answer that hangs up | The call ends and Report to DS 1 stays running for good |
 | The answer says `; completes tag_hulk`, the wrong step | The same |
-| `Reward: 150 credits` is still on Tag the Hulk as well | The job pays twice |
+| `Reward: 150 credits` is still on Tag the Hulk as well | The quest pays twice |
 | The `Then: reveal report_in` line is missing | The beacon sets and nothing follows. No step, no call |
 | The `Action:` lines are left off Report to DS 1 | The step appears in the Quest Log, and no call comes. It can never be finished |
 | `Done when: 30 seconds` on Report to DS 1 | The step finishes by itself and pays. The call is left waiting in the list |
@@ -368,12 +390,12 @@ sbs run server,helm,comms -m MyMission map=0
 8. The call is over. Report to DS 1 is done, and the side is paid 150 credits. The ship's
    log has a new line:
    `Harbormaster Quill - Your beacon - answered (It is ours, DS 1. The beacon is set.)`
-9. On Comms, open the Hails tab of the info panel. Both calls are listed. Choose one and
-   read it through again.
+9. On Comms, open the Hails tab of the info panel (the last icon in the left column).
+   Both calls are listed, each as a row with the caller's name.
 10. Finish the story, and close the game. `mast.compile.log` and `mast.runtime.log` are
     both empty.
 
-Play it once more, and this time turn the dial above the list to **This Console** before
+Play it once more, and this time set the drop-down above the list to **This Console** before
 you open the first call. The conversation is drawn on Comms only.
 
 ## If something goes wrong
@@ -383,8 +405,8 @@ you open the first call. The conversation is drawn on Comms only.
 | The beacon sets and nothing follows | Run lint. Then work down this list. `Then: reveal report_in` is missing. The key on the heading of Report to DS 1 is not `report_in`. The `Action:` lines are missing |
 | Report to DS 1 is not in the Quest Log while the call waits | The `Beat` line is still in its fence |
 | Comms answers, and Report to DS 1 stays in the Quest Log | The answer has no `; completes report_in`, or the key is misspelled. Look in `mast.runtime.log` |
-| The job pays as soon as the beacon sets | `Reward:` is still on Tag the Hulk |
-| The job pays 300 credits | `Reward:` is on both records |
+| The quest pays as soon as the beacon sets | `Reward:` is still on Tag the Hulk |
+| The quest pays 300 credits | `Reward:` is on both records |
 | The call arrives as the game starts | Report to DS 1 does not say `Starts when: revealed` |
 | Ives's line is shown under Quill's name, and there is no **Continue** | His `@` line is not `@` and a key. See Step 3 |
 | Now and then Quill says `@Chief Ives` out loud | The same |
@@ -436,7 +458,7 @@ your own now; two need something you do not have yet.
 
 | You will see | Why it is not in this lecture |
 |---|---|
-| `At start: posting`, a job listed for the crew with no Accept button, taken only by answering a call | It works: the tablet's Available Quests lists it as `Posted`, and selecting it says it is taken by answering the call. Your hidden job, started by an answer, does the same work without showing the crew the job first. Use `posting` when you want them to see it coming |
+| `At start: posting`, a quest listed for the crew with no Accept button, taken only by answering a call | It works: the tablet's Available Quests lists it as `Posted`, and selecting it says it is taken by answering the call. Your hidden quest, started by an answer, does the same work without showing the crew the quest first. Use `posting` when you want them to see it coming |
 | `Scope: ship` | See Step 5 |
 | `Presentation: still` and `Presentation: orbit` | A call is drawn as a portrait unless you say otherwise, and that needs nothing. `still` needs a picture file and a `Backdrop:` line. `orbit` is a moving shot of a ship on the main screen: add `Subject:` and a landmark's key or a role (`Subject: derelict`) |
 | `Audio:` | It plays a recorded line when the call opens. It needs a sound file you have recorded, as a `.wav`, kept inside your mission folder |

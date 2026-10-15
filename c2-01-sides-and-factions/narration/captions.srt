@@ -1,479 +1,559 @@
 1
-00:00:00,000 --> 00:00:06,522
+00:00:00,000 --> 00:00:04,490
 In Class 1, everything on your map was on one side, and it was yours.
 
 2
-00:00:07,422 --> 00:00:09,596
+00:00:05,390 --> 00:00:07,651
 Today the map gets politics.
 
 3
-00:00:10,496 --> 00:00:12,670
+00:00:08,551 --> 00:00:09,990
 These people want your hulk,
 
 4
-00:00:13,120 --> 00:00:16,163
+00:00:10,440 --> 00:00:12,496
 and these people will fix your ship.
 
 5
-00:00:17,963 --> 00:00:21,007
+00:00:14,296 --> 00:00:16,375
 That's three short records in your file,
 
 6
-00:00:21,457 --> 00:00:25,370
+00:00:16,825 --> 00:00:20,448
 and one line that says who is whose enemy.
 
 7
-00:00:26,570 --> 00:00:30,048
-You read these three lines in Lecture 11.
+00:00:21,648 --> 00:00:24,818
+Here's DS 1 on the Science console, once it's scanned.
 
 8
-00:00:30,948 --> 00:00:34,426
-They make a side called t s n,
+00:00:25,718 --> 00:00:27,577
+Its name is at the top of the read-out,
 
 9
-00:00:34,876 --> 00:00:38,789
-and they give it a name and a color.
+00:00:28,027 --> 00:00:32,700
+and the small word at the right of it, t s n, is its side.
 
 10
-00:00:39,689 --> 00:00:43,167
-Now look where else that word turns up.
+00:00:34,500 --> 00:00:37,608
+That word comes from three lines you read in Lecture 11.
 
 11
-00:00:44,067 --> 00:00:47,111
-It's on the line for DS 1,
+00:00:38,508 --> 00:00:40,760
+They make a side called t s n,
 
 12
-00:00:47,561 --> 00:00:50,604
-it's on the line for the hulk,
+00:00:41,210 --> 00:00:43,004
+and they give it a name and a color.
 
 13
-00:00:51,054 --> 00:00:53,228
-and it's on your tug.
+00:00:43,904 --> 00:00:45,932
+Now look where else that word turns up.
 
 14
-00:00:55,028 --> 00:00:59,376
-Inside the quote marks, the first word is the side,
+00:00:46,832 --> 00:00:48,479
+It's on the line for DS 1,
 
 15
-00:00:59,826 --> 00:01:02,870
-and the words after it are roles.
+00:00:48,929 --> 00:00:50,478
+it's on the line for the hulk,
 
 16
-00:01:03,770 --> 00:01:08,552
-So t s n is the key of your own side.
+00:00:50,928 --> 00:00:52,728
+and it's on your tug.
 
 17
-00:01:09,002 --> 00:01:11,176
-Hold on to that word.
+00:00:54,528 --> 00:00:58,557
+Inside the quote marks, the first word is the side,
 
 18
-00:01:12,976 --> 00:01:15,150
-One more line, further down.
+00:00:59,007 --> 00:01:01,087
+and the words after it are roles.
 
 19
-00:01:16,050 --> 00:01:20,398
-In Lecture 11 this one was marked for Class 2.
+00:01:01,987 --> 00:01:05,006
+So t s n is the key of your own side.
 
 20
-00:01:21,298 --> 00:01:25,646
-It reads a section called sides from your fact sheet,
+00:01:05,456 --> 00:01:06,870
+Hold on to that word.
 
 21
-00:01:26,096 --> 00:01:28,704
-and you haven't written one yet.
+00:01:08,670 --> 00:01:10,538
+One more line, further down.
 
 22
-00:01:29,904 --> 00:01:31,643
-So let's write one.
+00:01:11,438 --> 00:01:14,453
+In Lecture 11 this one was marked for Class 2.
 
 23
-00:01:32,543 --> 00:01:36,457
-Sides are records, like everything else in this file.
+00:01:15,353 --> 00:01:19,068
+It reads a section called sides from your fact sheet,
 
 24
-00:01:37,357 --> 00:01:40,835
-The section is two hashes, the word Sides,
+00:01:19,518 --> 00:01:20,959
+and you haven't written one yet.
 
 25
-00:01:41,285 --> 00:01:46,937
-and a key that has to be exactly that word, in small letters.
+00:01:22,159 --> 00:01:23,328
+So let's write one.
 
 26
-00:01:47,837 --> 00:01:50,446
-Then one record for each side:
+00:01:24,228 --> 00:01:27,038
+Sides are records, like everything else in this file.
 
 27
-00:01:50,896 --> 00:01:53,939
-three hashes, a name, and a key.
+00:01:27,938 --> 00:01:31,281
+The section is two hashes, the word Sides,
 
 28
-00:01:55,739 --> 00:01:57,913
-My own side goes first,
+00:01:31,731 --> 00:01:36,217
+and a key that has to be exactly that word, in small letters.
 
 29
-00:01:58,363 --> 00:02:01,407
-and its key is t s n,
+00:01:37,117 --> 00:01:39,244
+Then one record for each side:
 
 30
-00:02:01,857 --> 00:02:05,335
-because that's the word my ship already carries.
+00:01:39,694 --> 00:01:42,107
+three hashes, a name, and a key.
 
 31
-00:02:06,235 --> 00:02:11,017
-Then a color, which is a hash sign and three characters,
+00:01:43,907 --> 00:01:45,439
+My own side goes first,
 
 32
-00:02:11,467 --> 00:02:13,641
-for red, green and blue.
+00:01:45,889 --> 00:01:48,268
+and its key is t s n,
 
 33
-00:02:14,541 --> 00:02:19,324
-Zero means none of it, and F means all of it.
+00:01:48,718 --> 00:01:51,297
+because that's the word my ship already carries.
 
 34
-00:02:20,224 --> 00:02:23,702
-I save, I run lint, and it's clean.
+00:01:52,197 --> 00:01:55,637
+Then a color, which is a hash sign and three characters,
 
 35
-00:02:24,902 --> 00:02:27,511
-Now the people who aren't me.
+00:01:56,087 --> 00:01:58,025
+for red, green and blue.
 
 36
-00:02:28,411 --> 00:02:32,324
-First the Breakers, with the key breaker, in orange.
+00:01:58,925 --> 00:02:01,938
+Zero means none of it, and F means all of it.
 
 37
-00:02:33,224 --> 00:02:35,833
-And here's the line that matters:
+00:02:02,838 --> 00:02:08,886
+This one is the blue of that word t s n, beside DS 1's name on Science.
 
 38
-00:02:36,283 --> 00:02:38,457
-Enemies, and then my key.
+00:02:09,786 --> 00:02:12,841
+I save, I run lint, and it's clean.
 
 39
-00:02:40,257 --> 00:02:44,604
-Then the Harbor Guild, with the key guild, in green,
+00:02:14,041 --> 00:02:16,334
+Now the people who aren't me.
 
 40
-00:02:45,054 --> 00:02:48,098
-and the line Allies, and my key.
+00:02:17,234 --> 00:02:19,306
+Here's where we're going, on Science.
 
 41
-00:02:48,998 --> 00:02:54,215
-What comes after the colon is always a key, never a name.
+00:02:20,206 --> 00:02:24,028
+The cutter's name is red, with the word breaker beside it in orange,
 
 42
-00:02:55,115 --> 00:02:57,724
-And I only say it once.
+00:02:24,478 --> 00:02:27,548
+and the yard's name is green, with guild beside it.
 
 43
-00:02:58,624 --> 00:03:02,102
-Enemies on the Breakers makes them my enemy,
+00:02:29,348 --> 00:02:32,847
+First the Breakers, with the key breaker, in orange.
 
 44
-00:03:02,552 --> 00:03:04,726
-and it makes me theirs.
+00:02:33,747 --> 00:02:35,297
+And here's the line that matters:
 
 45
-00:03:05,176 --> 00:03:09,959
-I don't go back and write it on my own record.
+00:02:35,747 --> 00:02:37,538
+Enemies, and then my key.
 
 46
-00:03:11,159 --> 00:03:16,811
-A side with nothing on it is just a name in a file.
+00:02:39,338 --> 00:02:42,476
+Then the Harbor Guild, with the key guild, in green,
 
 47
-00:03:17,711 --> 00:03:22,493
-So I give each of them one thing on the map,
+00:02:42,926 --> 00:02:45,193
+and the line Allies, and my key.
 
 48
-00:03:22,943 --> 00:03:28,596
-and I do it with landmarks, the way you did in Lecture 10.
+00:02:46,093 --> 00:02:49,592
+What comes after the colon is always a key, never a name.
 
 49
-00:03:29,496 --> 00:03:33,409
-A ship for the Breakers, out past the hulk,
+00:02:50,492 --> 00:02:51,911
+And I only say it once.
 
 50
-00:03:33,859 --> 00:03:38,207
-and a station for the Guild, west of DS 1.
+00:02:52,811 --> 00:02:55,350
+Enemies on the Breakers makes them my enemy,
 
 51
-00:03:39,107 --> 00:03:42,150
-The Side line takes the side's key.
+00:02:55,800 --> 00:02:57,042
+and it makes me theirs.
 
 52
-00:03:43,950 --> 00:03:46,124
-Now watch where I'm typing.
+00:02:57,492 --> 00:03:00,090
+I don't go back and write it on my own record.
 
 53
-00:03:47,024 --> 00:03:50,067
-These two go in the Landmarks section,
+00:03:01,290 --> 00:03:04,603
+A side with nothing on it is just a name in a file.
 
 54
-00:03:50,517 --> 00:03:52,257
-above the Sides heading.
+00:03:05,503 --> 00:03:08,185
+So I give each of them one thing on the map,
 
 55
-00:03:53,157 --> 00:03:56,635
-If I type a landmark below that heading,
+00:03:08,635 --> 00:03:10,548
+and here they are on Helm's map.
 
 56
-00:03:57,085 --> 00:04:01,433
-the game reads it as a side called Breaker Cutter,
+00:03:11,448 --> 00:03:14,502
+The cutter is the grey one, out past the hulk,
 
 57
-00:04:01,883 --> 00:04:04,491
-and it puts no ship anywhere.
+00:03:14,952 --> 00:03:17,219
+grey because Science hasn't scanned it yet.
 
 58
-00:04:05,691 --> 00:04:09,170
-Lecture 10 warned you about this next part.
+00:03:18,119 --> 00:03:20,758
+The yard is the blue one, west of DS 1.
 
 59
-00:04:10,070 --> 00:04:13,548
-My story ends with the words reach station.
+00:03:22,558 --> 00:03:25,917
+They're landmarks, the way you made the lifeboat in Lecture 10,
 
 60
-00:04:14,448 --> 00:04:18,361
-Station is a role, and every station wears it,
+00:03:26,367 --> 00:03:28,300
+one ship and one station.
 
 61
-00:04:18,811 --> 00:04:21,854
-and I've just built a second station.
+00:03:29,200 --> 00:03:31,965
+The Side line takes the side's key.
 
 62
-00:04:22,754 --> 00:04:27,972
-So the crew could carry the log to the Guild, and win.
+00:03:33,765 --> 00:03:35,118
+Now watch where I'm typing.
 
 63
-00:04:29,772 --> 00:04:34,120
-The cure is a role that only DS 1 wears.
+00:03:36,018 --> 00:03:38,172
+These two go in the Landmarks section,
 
 64
-00:04:35,020 --> 00:04:38,063
-In the step, I write reach home.
+00:03:38,622 --> 00:03:39,998
+above the Sides heading.
 
 65
-00:04:38,963 --> 00:04:42,441
-Lint says nothing wears a role called home,
+00:03:40,898 --> 00:03:43,381
+If I type a landmark below that heading,
 
 66
-00:04:42,891 --> 00:04:46,370
-which is true, because I'm only half done.
+00:03:43,831 --> 00:03:46,284
+the game reads it as a side called Breaker Cutter,
 
 67
-00:04:47,270 --> 00:04:52,052
-So I go to line sixty-four, where DS 1 is made.
+00:03:46,734 --> 00:03:48,728
+and it puts no ship anywhere.
 
 68
-00:04:52,952 --> 00:04:55,561
-Inside the quote marks, after station,
+00:03:49,928 --> 00:03:52,400
+Lecture 10 warned you about this next part.
 
 69
-00:04:56,011 --> 00:05:00,359
-I type a comma, a space, and the word home.
+00:03:53,300 --> 00:03:56,187
+Here's the last step of my story, in the Quest Log:
 
 70
-00:05:01,259 --> 00:05:05,172
-The side stays first, and the roles follow it.
+00:03:56,637 --> 00:03:59,848
+Bring the Log Home, back to within a thousand of DS 1.
 
 71
-00:05:06,072 --> 00:05:08,246
-And now lint is clean.
+00:04:00,748 --> 00:04:04,462
+In the file, that step ends with the words reach station.
 
 72
-00:05:09,446 --> 00:05:11,620
-Three sides make three pairs.
+00:04:05,362 --> 00:04:07,932
+Station is a role, and every station wears it,
 
 73
-00:05:12,520 --> 00:05:15,128
-Me and the Breakers are enemies,
+00:04:08,382 --> 00:04:10,856
+and I've just built a second station.
 
 74
-00:05:15,578 --> 00:05:18,622
-and me and the Guild are allies.
+00:04:11,756 --> 00:04:14,683
+So the crew could carry the log to the Guild, and win.
 
 75
-00:05:19,522 --> 00:05:24,304
-But about the Breakers and the Guild, nobody said a word.
+00:04:16,483 --> 00:04:19,800
+The cure is a role that only DS 1 wears.
 
 76
-00:05:26,104 --> 00:05:30,452
-And a pair nobody mentions is nothing to each other.
+00:04:20,700 --> 00:04:23,216
+In the step, I write reach home.
 
 77
-00:05:30,902 --> 00:05:32,641
-The game doesn't guess.
+00:04:24,116 --> 00:04:26,607
+Lint says nothing wears a role called home,
 
 78
-00:05:33,541 --> 00:05:36,150
-Scavengers and harbor pilots aren't strangers,
+00:04:27,057 --> 00:04:29,850
+which is true, because I'm only half done.
 
 79
-00:05:36,600 --> 00:05:41,817
-so I add the Guild's key after mine, with a comma between.
+00:04:30,750 --> 00:04:34,622
+So I go to line sixty-four, where DS 1 is made.
 
 80
-00:05:43,617 --> 00:05:46,661
-So what does a relation buy you?
+00:04:35,522 --> 00:04:37,950
+Inside the quote marks, after station,
 
 81
-00:05:47,561 --> 00:05:51,039
-An enemy reads as an enemy on Science,
+00:04:38,400 --> 00:04:41,626
+I type a comma, a space, and the word home.
 
 82
-00:05:51,489 --> 00:05:53,663
-and Comms can taunt it.
+00:04:42,526 --> 00:04:45,685
+The side stays first, and the roles follow it.
 
 83
-00:05:54,563 --> 00:05:57,172
-A friendly station lets you dock.
+00:04:46,585 --> 00:04:48,451
+And now lint is clean.
 
 84
-00:05:58,072 --> 00:06:02,854
-And here's the one thing it doesn't buy you: a fight.
+00:04:49,651 --> 00:04:51,835
+Three sides make three pairs.
 
 85
-00:06:03,754 --> 00:06:08,102
-The cutter has no orders, so it'll just sit there.
+00:04:52,735 --> 00:04:54,654
+Me and the Breakers are enemies,
 
 86
-00:06:09,302 --> 00:06:11,911
-Now let's break it on purpose.
+00:04:55,104 --> 00:04:57,675
+and me and the Guild are allies.
 
 87
-00:06:12,811 --> 00:06:15,854
-I misspell my own key after Enemies,
+00:04:58,575 --> 00:05:01,481
+But about the Breakers and the Guild, nobody said a word.
 
 88
-00:06:16,304 --> 00:06:18,043
-and lint catches it.
+00:05:03,281 --> 00:05:06,006
+And a pair nobody mentions is nothing to each other.
 
 89
-00:06:18,943 --> 00:06:23,291
-It says that word isn't a side in this mission,
+00:05:06,456 --> 00:05:07,585
+The game doesn't guess.
 
 90
-00:06:23,741 --> 00:06:27,220
-and it lists the keys I did declare.
+00:05:08,485 --> 00:05:10,974
+Scavengers and harbor pilots aren't strangers,
 
 91
-00:06:29,020 --> 00:06:30,759
-But watch this one.
+00:05:11,424 --> 00:05:14,612
+so I add the Guild's key after mine, with a comma between.
 
 92
-00:06:31,659 --> 00:06:35,572
-I take the Side line off the cutter altogether,
+00:05:16,412 --> 00:05:18,410
+So what does a relation buy you?
 
 93
-00:06:36,022 --> 00:06:37,761
-and lint says clean.
+00:05:19,310 --> 00:05:22,459
+An enemy reads as an enemy on Science,
 
 94
-00:06:38,661 --> 00:06:43,878
-And a fourth hash on the Guild's heading is clean as well.
+00:05:22,909 --> 00:05:26,969
+and here on Comms, it's offered Hail, Taunt, and Surrender now.
 
 95
-00:06:45,678 --> 00:06:49,157
-In the game, those two look the same.
+00:05:27,869 --> 00:05:33,436
+A friendly station is offered Hail, Build Weapons, Request Priority Docking, and Market,
 
 96
-00:06:50,057 --> 00:06:53,970
-The thing reads as unknown on Science, for good,
+00:05:33,886 --> 00:05:35,729
+and it lets you dock.
 
 97
-00:06:54,420 --> 00:06:57,898
-and Comms has nothing to say to it.
+00:05:36,629 --> 00:05:39,243
+And here's the one thing it doesn't buy you: a fight.
 
 98
-00:06:58,798 --> 00:07:01,407
-So when a contact stays unknown,
+00:05:40,143 --> 00:05:43,164
+The cutter has no orders, so it'll just sit there.
 
 99
-00:07:01,857 --> 00:07:04,465
-look for its Side line first,
+00:05:44,364 --> 00:05:46,241
+Now let's break it on purpose.
 
 100
-00:07:04,915 --> 00:07:08,393
-and then count the hashes on its side.
+00:05:47,141 --> 00:05:49,759
+I misspell my own key after Enemies,
 
 101
-00:07:09,593 --> 00:07:11,767
-Here's the yard on Science.
+00:05:50,209 --> 00:05:51,321
+and lint catches it.
 
 102
-00:07:12,667 --> 00:07:15,711
-It's unknown until the scan is done,
+00:05:52,221 --> 00:05:55,081
+It says that word isn't a side in this mission,
 
 103
-00:07:16,161 --> 00:07:20,509
-and then it's green, with the word guild beside it.
+00:05:55,531 --> 00:05:57,640
+and it lists the keys I did declare.
 
 104
-00:07:21,409 --> 00:07:23,583
-On Comms I hail them,
+00:05:59,440 --> 00:06:00,257
+But watch this one.
 
 105
-00:07:24,033 --> 00:07:27,946
-and they tell me I have full docking privileges.
+00:06:01,157 --> 00:06:03,594
+I take the Side line off the cutter altogether,
 
 106
-00:07:28,846 --> 00:07:30,585
-And Helm can dock.
+00:06:04,044 --> 00:06:05,836
+and lint says clean.
 
 107
-00:07:32,385 --> 00:07:34,124
-Now the other one.
+00:06:06,736 --> 00:06:09,327
+And a fourth hash on the Guild's heading is clean as well.
 
 108
-00:07:35,024 --> 00:07:38,502
-It's red, with the word breaker beside it,
+00:06:11,127 --> 00:06:13,910
+In the game, those two look the same.
 
 109
-00:07:38,952 --> 00:07:41,996
-and it reads enemy vessel, exercise caution.
+00:06:14,810 --> 00:06:17,287
+Here's the cutter on Science with no Side line.
 
 110
-00:07:42,896 --> 00:07:47,243
-I hail it, and it tells me to go away.
+00:06:18,186 --> 00:06:20,419
+It reads unknown, for good,
 
 111
-00:07:48,143 --> 00:07:50,752
-And then it just sits there,
+00:06:20,869 --> 00:06:23,867
+and Queue Scan never finishes on it.
 
 112
-00:07:51,202 --> 00:07:54,246
-because being enemies doesn't start a fight.
+00:06:24,767 --> 00:06:27,242
+The bar at the bottom counts no threats at all,
 
 113
-00:07:56,046 --> 00:08:01,698
-One last thing: I carry the log to the yard, and nothing happens.
+00:06:27,692 --> 00:06:29,757
+and Comms has nothing to say to it.
 
 114
-00:08:02,598 --> 00:08:06,511
-I carry it to DS 1, and we're home.
+00:06:30,657 --> 00:06:32,586
+So when a contact stays unknown,
 
 115
-00:08:07,711 --> 00:08:13,363
-Now it's your turn: write a faction of your own, with one ship.
+00:06:33,036 --> 00:06:35,278
+look for its Side line first,
 
 116
-00:08:14,263 --> 00:08:18,176
-Say nothing about it, and Science calls it unknown.
+00:06:35,728 --> 00:06:37,781
+and then count the hashes on its side.
 
 117
-00:08:19,076 --> 00:08:23,424
-Give it a scan record, and it has a name.
+00:06:38,981 --> 00:06:40,516
+Here's the yard on Science.
 
 118
-00:08:24,324 --> 00:08:28,237
-Then make it an enemy, and then a friend,
+00:06:41,416 --> 00:06:43,949
+A station in range scans itself,
 
 119
-00:08:28,687 --> 00:08:31,296
-and watch the name change color.
+00:06:44,399 --> 00:06:46,599
+so I don't even press Queue Scan.
 
 120
-00:08:33,096 --> 00:08:37,443
+00:06:47,499 --> 00:06:50,940
+It's green, with the word guild beside it.
+
+121
+00:06:51,840 --> 00:06:53,287
+On Comms I hail them,
+
+122
+00:06:53,737 --> 00:06:57,196
+and their answer arrives as a header in the message list.
+
+123
+00:06:58,096 --> 00:06:59,677
+I click the header to read it.
+
+124
+00:07:00,577 --> 00:07:02,369
+And Helm can dock.
+
+125
+00:07:04,169 --> 00:07:05,385
+Now the other one.
+
+126
+00:07:06,285 --> 00:07:08,864
+It's red, with the word breaker beside it,
+
+127
+00:07:09,314 --> 00:07:12,832
+and it reads enemy vessel, exercise caution.
+
+128
+00:07:13,732 --> 00:07:18,549
+I hail it, and it answers with one of the game's own pirate lines.
+
+129
+00:07:19,449 --> 00:07:20,732
+And then it just sits there,
+
+130
+00:07:21,182 --> 00:07:23,575
+because being enemies doesn't start a fight.
+
+131
+00:07:25,375 --> 00:07:27,856
+One last thing: I carry the log to the yard.
+
+132
+00:07:28,756 --> 00:07:31,109
+The Quest Log still says Active,
+
+133
+00:07:31,559 --> 00:07:32,885
+because the yard isn't home.
+
+134
+00:07:33,785 --> 00:07:36,635
+I carry it to DS 1, and we're home.
+
+135
+00:07:37,835 --> 00:07:41,188
+Now it's your turn: write a faction of your own, with one ship.
+
+136
+00:07:42,088 --> 00:07:45,218
+Say nothing about it, and Science calls it unknown.
+
+137
+00:07:46,118 --> 00:07:48,416
+Give it a scan record, and it has a name.
+
+138
+00:07:49,316 --> 00:07:51,504
+Then make it an enemy, and then a friend,
+
+139
+00:07:51,954 --> 00:07:53,559
+and watch the name change color.
+
+140
+00:07:55,359 --> 00:07:58,173
 Next time, we meet the people who fly these ships.

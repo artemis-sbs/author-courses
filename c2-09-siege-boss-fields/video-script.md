@@ -23,8 +23,9 @@
 >   run in the engine again today.
 > - **Seen in the real game:** the start screen and its Options panel with the Boss line.
 >   Nothing else here has been seen on a screen.
-> - The `narration\` folder beside this file was generated from the older script and is
->   stale.
+> - **2026-10-15, for the video:** the narration is regenerated. Scenes 1, 2, 6 and 8 say
+>   where the crew sees each thing (Science's contact list) before the line that makes it.
+>   The storyboard is `narration\storyboard.py`.
 
 The companion page is `lesson.md`; the finished file is `example\corsair_queen.amd`.
 
@@ -71,19 +72,20 @@ Also capture the screenshot the page asks for.
 
 ### 1. Cold open
 
-**Screen:** The game. Two named ships, Morrigan and Badb, among three small pirate fleets.
-(Reuse footage from scene 8.)
+**Screen:** The game, Science, the `pirate-o` chip on: the Morrigan, the Badb and eight more
+pirates in the contact list. (Reuse footage from scene 8.)
 
-**Say:** "Last time your boss was a copy of the Warlord with new names. || So she flew a
-Kralien dreadnought, with Kralien escorts, | and a corsair shouldn't. ||| Today you change
+**Say:** "Last time your boss was a copy of the Warlord with new names. || So she flew a Kralien dreadnought, with Kralien or Torgoth escorts, | and a corsair shouldn't. ||| Today you change
 six lines, one at a time, | and by the end, every number in her file is one you chose. ||"
 
 ### 2. The six lines
 
-**Screen:** VS Code, `corsair_queen.amd`. The first fence, between the word Boss and the
+**Screen:** The game first: Science, last lecture's Queen arrived, the Morrigan selected, her
+name in red at the top of the read-out. Then VS Code, `corsair_queen.amd`. The first fence, between the word Boss and the
 closing fence line. Highlight the six lines in turn.
 
-**Say:** "Everything today is in the first fence. || Trigger says which kind of boss she
+**Say:** "Here's last time's Queen on Science, | with the Morrigan selected, | her name in red
+at the top. || Everything she brings is in the first fence of her file. || Trigger says which kind of boss she
 is. | Low says when she arrives. || Fleets, Flies and Difficulty say what comes with her, |
 and Named says which ships carry a name. ||| One thing before we start. || The game reads
 a boss file when the mission starts, | so after every change you save, | you start the
@@ -97,8 +99,7 @@ line, start the mission. She arrives within seconds.
 **Say:** "You're going to play her several times today, | and you don't want to fight for
 ten minutes each time. || So set Low to a hundred percent. || Low is a share of the
 raiders, | and she comes when that share or less is left. ||| A hundred percent is all of
-them, so she arrives about four seconds in, | before anyone has fired a shot. || That's
-your test setting, | and you put the real number back at the end. ||"
+them, so she arrives about four seconds in, | before anyone has fired a shot. || That's your test setting, and you put the real number back at the end. ||"
 
 ### 4. Fleets, and who flies them
 
@@ -106,8 +107,7 @@ your test setting, | and you put the real number back at the end. ||"
 `75% Pirate, 25% Kralien`.
 
 **Say:** "Fleets is the easy one. It's a whole number, written as a digit, | and that many
-escort fleets arrive with her. || Flies names a race, | and there are six that can fly a
-fleet. ||| Now here's the part people get wrong. || Seventy-five percent pirate, twenty-five
+escort fleets arrive with her. || Flies names a race, and there are six that can fly a fleet. ||| Now here's the part people get wrong. || Seventy-five percent pirate, twenty-five
 Kralien, with three fleets, | doesn't give you two pirate fleets and one Kralien. || The
 game rolls once, when she arrives, | and all three fleets are the same race. || So write
 the mix as a story: | most nights she brings her own corsairs, | and now and then she's
@@ -126,10 +126,11 @@ fleet is four to six. || So the night she's hired Kraliens is the hard night. ||
 
 ### 6. Her own ships
 
-**Screen:** Change the `Named:` line to
+**Screen:** Science, the `pirate-o` chip on: Morrigan and Badb in the contact list (from scene 1). Change the `Named:` line to
 `Morrigan pirate_brigantine, Badb pirate_strongbow`. Show the table of ship keys.
 
-**Say:** "Named is two words for each ship: | its name, and then which ship it is. || Last
+**Say:** "Named is two words for each ship: | its name, and then which ship it is. || The name is what
+Science shows for her, | and once she's scanned, it's her row in the contact list. || Last
 time you changed the first word. | Today you change the second, | and you add a second
 ship after a comma. ||| The second word is a ship key, | and the page has the raider ships
 in a table. || Type it exactly as it's printed, in small letters, with the underscores, |
@@ -138,23 +139,28 @@ because this is the one line where a spelling mistake gets past everything. ||"
 ### 7. Check it, and what lint can't check
 
 **Screen:** Command prompt: `sbs lint common_data\bosses`. `clean`. Then make the race
-plural, `Pirates`, and run lint again: still `clean`. Open `mast.runtime.log` after a game.
+plural, `Pirates`, and run lint again: still `clean`. Then the game on Science, the `raider` chip on: the Morrigan and the Badb among the Siege's
+own raiders, no pirate escorts. Then `mast.runtime.log` after that game: the same line three
+times.
 
 **Say:** "Lint reads the shape of a boss line. || It knows the field names, | it knows the
 two triggers, | and it knows a named ship is two words. ||| It doesn't check the other
 values. || So if I write pirates, with an S, lint still says clean, | and in the game her
-named ships arrive with no fleets at all. || The game does tell you, though. | It writes
-one line in the runtime log, in the Legendary Missions folder, | naming the race it
-couldn't find. || And for a number it can't read, | it leaves your boss out of the list
+named ships arrive with no fleets at all. || Here they are among the Siege's own raiders, |
+and not one pirate is with them. || The game does tell you, though. | It writes a line in
+the runtime log, in the Legendary Missions folder, | one for each fleet, | naming the race
+it couldn't find. || And for a number it can't read, | it leaves your boss out of the list
 and says which line. ||"
 
 ### 8. Play it, and count
 
 **Screen:** Start the game, Difficulty 5, Corsair Queen on the Boss line, start the
-mission. Count the named ships and the fleets on the map. Start again and count again.
+mission. On Science, scan the raiders (the `raider` chip, each row, Queue Scan), then turn
+`raider` off and press `pirate-o`: the Morrigan, the Badb and eight more pirates. Start again
+and count again.
 
-**Say:** "Now play it, and count what arrives. || Two named ships, the Morrigan and the
-Badb. | Three new fleets, all of one race. || Then start the mission again and look a
+**Say:** "Now play it, and count what arrives. || On Science, once they're scanned, | the pirate chip lists the Morrigan and the Badb, | and
+eight more pirates: | her three fleets, all of one race. || Then start the mission again and look a
 second time, | because about one arrival in four is the Kralien one. ||| Try changing one
 number and playing again. || Set the difficulty line to eleven, | and every fleet is six
 ships. ||"
@@ -164,8 +170,7 @@ ships. ||"
 **Screen:** Change `Low: 100%` to `Low: 40%`. Rewrite the note at the top of the file.
 Save. Lint: `clean`.
 
-**Say:** "Testing's over, so give her the number you want the crew to play. || I'm using
-forty percent. || With sixteen raiders at the start, | she comes when six are left. ||
+**Say:** "Testing's over, so give her the number you want the crew to play. || I'm using forty percent for mine. || With sixteen raiders at the start, | she comes when six are left. ||
 The crew's winning by then, | but the siege isn't over. ||| Then bring the note at the top
 of the file up to date. || It's for you, a year from now, | when you've forgotten why she
 flies what she flies. || Next time she gets objectives of her own. ||"

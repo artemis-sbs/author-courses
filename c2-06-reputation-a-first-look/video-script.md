@@ -120,25 +120,30 @@ nobody, | and the number she reads is always zero. ||"
 
 ### 5. Two deeds
 
-**Screen:** Report to DS 1: change the `Reward:` line. Then Quill Calls Back: add the
-second answer. Highlight the comma in each. Save. Lint: clean.
+**Screen:** The game first: Comms, the Your beacon call after Continue: Chief Ives, and
+two answers now, the second "It is ours. Give our fee to the tug crews." Then Report to
+DS 1: change the `Reward:` line. Then Quill Calls Back: add the second answer. Highlight the comma in each. Save. Lint: clean.
 
-**Say:** "Now the crew needs a way to earn something. || A deed is the word earns, | and
+**Say:** "Now the crew needs a way to earn something. || Here's the report call on Comms
+when we're done, | and there's a second answer: give our fee to the tug crews. ||| A deed is the word earns, | and
 then three more: a side, a trait and a number. ||| The first one goes on the quest. ||
 After the credits I put a comma, | and then earns guild honest thirty. || The crew did the
-job and came back to say so, | and the Guild calls that honest. ||| The second deed goes
+work and came back to say so, | and the Guild calls that honest. ||| The second deed goes
 on an answer. || I add a way to report that gives the fee to the tug crews, | and after
 the semicolon it earns generous thirty. || Both answers still finish the step, | because
 that's the rule from last time. ||"
 
 ### 6. A call that reads standing
 
-**Screen:** Type the beat The Yard Calls, then the scene The Guild Yard with its two
+**Screen:** The game first: Comms, the Incoming Hails row Harbormaster Quill - The Guild
+yard, then the call open on the cold line, "Artemis, the Guild yard is for members. Hold
+outside the markers." Then type the beat The Yard Calls, then the scene The Guild Yard with its two
 guarded lines and one answer. Highlight the curly brackets. Save. Lint: clean.
 
-**Say:** "So far the Guild is keeping score, and nobody's reading it. || I add a beat that
-places a call when the ship comes near the Guild's yard, | and I write the scene for it.
-||| Look at Quill's two lines. || Until today, two lines in a block were two takes, | and
+**Say:** "So far the Guild is keeping score, and nobody's reading it. || Here's the call
+we're after, on Comms, | as the ship comes near the Guild's yard. || To a ship that has
+done nothing, | Quill says hold outside the markers. ||| So I add a beat that places the
+call, | and I write the scene for it. ||| Look at Quill's two lines. || Until today, two lines in a block were two takes, | and
 the game picked one. || These two each have a guard, in curly brackets, right after the
 percent sign. || The first can only be said to a ship below thirty. || The second can only
 be said at thirty or more. ||| Between them they cover every ship, and that matters. ||
@@ -146,10 +151,13 @@ If no line can be said, the call opens with no words at all. ||"
 
 ### 7. An answer that needs standing
 
-**Screen:** Add the second answer to The Guild Yard, with `if standing >= 30` between the
+**Screen:** The game first: Comms, The Guild yard call to a ship at standing 30: the warm
+line, and two answers, the second "Request a berth at the yard." Then add the second
+answer to The Guild Yard, with `if standing >= 30` between the
 round brackets and the semicolon. Save. Lint: clean.
 
-**Say:** "An answer can have a guard too. || After the round brackets I write if and the condition, | and only then the semicolon. ||| A ship below thirty doesn't see this
+**Say:** "An answer can have a guard too. || Here's the same call to a ship the Guild
+likes: | the warm line, and a second answer, request a berth. ||| After the round brackets I write if and the condition, | and only then the semicolon. ||| A ship below thirty doesn't see this
 answer greyed out. || It doesn't see it at all. ||| Back in Lecture 4, I told you to leave
 this kind of condition alone, | because there was almost nothing it could read. || Now
 there is something: standing, with the side the speaker speaks for. ||"
@@ -170,12 +178,12 @@ it. || So one crew gets the berth, | and the crew beside them is told to hold ou
 ### 9. Play it
 
 **Screen:** Game one: fly straight to the Guild Yard. The call, the cold line, one
-answer. Close. Game two: the hulk, the job, the report call with two answers, the
+answer. Close. Game two: the hulk, the quest, the report call with two answers, the
 generous one. Then the yard: the warm line, two answers.
 
 **Say:** "Let's play it twice. || First I fly straight to the yard, having done nothing.
 || There's the call, with the cold line, | and there's my one answer. ||| Now a new
-game. || I take the job, I wait for the beacon, | and this time the report call offers me
+game. || I take the quest, I wait for the beacon, | and this time the report call offers me
 two answers. || I give the fee away. || Then I fly to the yard. ||| And there's the other
 line, | and a second answer under it. ||"
 

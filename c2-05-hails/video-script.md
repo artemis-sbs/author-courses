@@ -47,7 +47,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyMission` as Lecture 4 leaves it: Quill's call with answers, the job **Tag the Hulk** taken by "We will tag her.", the beat **Beacon Set** and the scene **Quill Calls Back**. `mission.amd` has 338 lines |
+| Mission | `MyMission` as Lecture 4 leaves it: Quill's call with answers, the job **Tag the Hulk** taken by "We will tag her.", the beat **Beacon Set** and the scene **Quill Calls Back**. `mission.amd` has 360 lines |
 | Lint | `sbs lint MyMission` says `clean` |
 | VS Code | `MyMission` folder open, `mission.amd` in one tab, scrolled to Tag the Hulk |
 | Command prompt | Open in `data\missions`, cleared |
@@ -95,6 +95,8 @@ Not seen by anyone, and to watch for while recording:
 3. The call on the main screen, and what the dial does to it.
 4. Anything with two ships.
 5. Where the ship's log is read on a console.
+6. Report to DS 1 in the Quest Log: Chief Ives's portrait and name at the top, two
+   paragraphs below (read in the library's text area code; not seen in the Quest Log).
 
 ## Scenes
 
@@ -103,48 +105,58 @@ Not seen by anyone, and to watch for while recording:
 **Screen:** The Quest Log: Report to DS 1, running. Comms: Harbormaster Quill - Your
 beacon in the list. It opens on Quill, then Chief Ives. One answer. The credits tick up.
 
-**Say:** "Last time, the job paid by itself, | and the call afterward was just manners. ||
-Today the job isn't over until the crew reports in. || And when they do, | a second voice
+**Say:** "Last time, the quest paid by itself, | and the call afterward was just manners. ||
+Today the quest isn't over until the crew reports in. || And when they do, | a second voice
 comes on the line. ||| Along the way you'll learn which call sits on top, | which ships
 get called, | and what Comms can do with a call that's waiting. ||"
 
 ### 2. A step only an answer can finish
 
-**Screen:** Tag the Hulk: delete the `Reward:` line, change `Then:` to
+**Screen:** The game first: Helm, the ePADD Quest Log, Report to DS 1 selected, running:
+the order "Answer DS 1 and tell her the beacon is set", Chief Ives's portrait under it,
+and the two paragraphs. Then Tag the Hulk: delete the `Reward:` line, change `Then:` to
 `reveal report_in`, add the sentence. Then select the whole beat Beacon Set and type
-Report to DS 1 over it. Highlight: no `Beat`, `Objective:`, `Reward:`, `Action:`, and the
-missing `Done when:`. Save. Lint: clean.
+Report to DS 1 over it, with Chief Ives's face line (his `Face:` string copied) and two
+paragraphs. Highlight: no `Beat`, `Objective:`, `Reward:`, `Action:`, and the missing
+`Done when:`. Save. Lint: clean.
 
-**Say:** "I start with the job. || I take its reward off, | and I point its Then line at
+**Say:** "Here's the new step in the Quest Log, | with Chief Ives under its order, | and an
+order that sends the crew to Comms. ||| I start with the quest before it. || I take its reward off, | and I point its Then line at
 a new key. || Then I replace the beat below it with a quest. ||| Look at what's different.
 || There's no Beat line, so the crew will see it in the Quest Log. || There's an
 objective, which sends them to Comms. || The reward has moved here. || The Action lines
 are the same two as before, | because Action works on any quest. ||| And look at what's
-missing: there's no Done when. || Nothing in the game finishes this step by itself. ||"
+missing: there's no Done when. || Nothing in the game finishes this step by itself. |||
+The description belongs to Chief Ives, | because the ledger is his. || So it opens with
+his face, copied from his record. || Then it tells the crew why they have to say it out
+loud. || The objective gives the order, | and the description gives the reason. ||"
 
 ### 3. The answer that finishes it
 
-**Screen:** The scene Quill Calls Back: change the two takes, and the answer to
+**Screen:** The game first: Comms, the Your beacon call open: Quill asking whether the
+beacon is theirs, and the one answer "It is ours, DS 1. The beacon is set." Then the
+scene Quill Calls Back: change the two takes, and the answer to
 `; completes report_in`. Save. Lint: clean.
 
-**Say:** "So what does finish it? | An answer from the crew does. || Quill
- should be asking now, not
-congratulating, | so I change her lines. ||
- And on the crew's answer, after the semicolon,
-| I write completes, and the step's key. ||| Now here's the rule for a call that a step is
+**Say:** "So what does finish it? | An answer from the crew does. || Here's the call on
+Comms now. | Quill is asking, not congratulating, | and the crew has one answer. || So I
+change her lines, | and on the crew's answer, after the semicolon, | I write completes,
+and the step's key. ||| Now here's the rule for a call that a step is
 waiting on. || Every answer that ends the call has to finish the step. || If I add an
 answer that just hangs up, | the call is gone, and the step stays in the Quest Log for
 good. || And lint can't see that. ||"
 
 ### 4. A second voice
 
-**Screen:** In Quill Calls Back, type `@quill` above her takes, then the `@ives` block.
+**Screen:** The game first: Comms, the same call after Continue: Chief Ives's face and
+name, and one of his takes. Then, in Quill Calls Back, type `@quill` above her takes, then the `@ives` block.
 Scroll up to show Chief Ives in the Characters section. Save. Lint: clean.
 
-**Say:** "A call can have more than one person on the line. || Chief Ives has been in my
+**Say:** "A call can have more than one person on the line. || On Comms, I press
+Continue, | and the face and the name change to Chief Ives. || Chief Ives has been in my
 cast since Lecture 2, | with nothing to say. || So I give him a block: | an at sign, his
 key, and two takes of his own. ||| The call still belongs to Quill, | and it's her name on
-the list. || But when Comms presses Continue, | the name and the face change to his. ||
+the list. || But inside the call, | each block brings its own name and its own face. ||
 Remember that the line is an at sign and a key, and nothing else. || Write his full name
 there, and his block is gone, | and lint says clean. ||"
 
@@ -165,20 +177,25 @@ a step is waiting on, | and leave the others alone. ||"
 
 **Say:** "I've never said which ship she calls, | and I don't have to, | because every
 player ship is called. || With one ship, that's all there is to it. ||| With two, each
-ship gets its own copy of the call. || But the job is shared, so there's only one of it.
+ship gets its own copy of the call. || But the quest is shared, so there's only one of it.
 || One crew says yes, and it starts for everybody. || And the first crew to report gets
 the side paid, just once. ||| So write your lines for any ship that might hear them, | and
-keep jobs like this for missions flown by one ship. ||"
+keep quests like this for missions flown by one ship. ||"
 
 ### 7. What Comms can do
 
-**Screen:** The table in Step 6 of the page.
+**Screen:** The table in Step 6 of the page, and the game beside each row: Comms with the
+call waiting in the list; the drop-down above the list, open (Both, Main Screen, This
+Console, Off); the Hails tab of the info panel (the last icon of the left column) listing
+who called; the ship's log line it left, in the strip under the left panel.
 
 **Say:** "This part has nothing to type. || It's what the person at Comms can do with what
-you wrote. || They can leave a call waiting, | they can open it, | and they can press
-Back. || There's a dial that chooses where the conversation is drawn. || And every
-finished call is kept, | so it can be read again. ||| So an answer is a decision the crew
-makes once. || Everything else lets them put it off, or look back at it. ||"
+you wrote, | and all of it is on the Comms console. || They can leave a call waiting, | they can open it, | and they can press
+Back. || There's a drop-down that chooses where the conversation is drawn: | both, the main
+screen, this console, or off. || Every finished call gets a row under the Hails tab, | by
+the name of who called. || And the ship's log gets a line that says what the crew answered.
+||| So an answer is a decision the crew makes once. || Everything else on Comms lets them
+put it off. ||"
 
 ### 8. What lint cannot see
 
@@ -198,11 +215,11 @@ those with your own eyes. ||"
 Log: Tag the Hulk. Wait. Report to DS 1 appears; the new call. Open it: Quill. Continue:
 Ives. Back. Open again. Continue. The answer. The credits. The ship's log line.
 
-**Say:** "Let's play it through. || I take the job, the way we did last time. || Thirty
+**Say:** "Let's play it through. || I take the quest, the way we did last time. || Thirty
 seconds later the beacon is set, | and there's my new step, telling me to report. || And
 there's the call. ||| It opens on Quill, | and when I press Continue, that's Chief Ives.
 || I press Back, and the call waits, and so does the step. || I open it again, and this
-time I give the answer. || The step is done, and now the job has paid. ||"
+time I give the answer. || The step is done, and now the quest has paid. ||"
 
 ### 10. Your turn
 

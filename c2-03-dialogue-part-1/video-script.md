@@ -101,11 +101,14 @@ and one short record, | all in your fact sheet. ||"
 
 ### 2. The scene
 
-**Screen:** `story.mast`, line 49 highlighted. Then `mission.amd`, the end of the file. Two
-blank lines. Type the note, the section line and the scene with three takes. Save. Lint:
-clean.
+**Screen:** The game first: Comms, Quill's call open: her face, her name, the title
+About that hulk, and one of her opening takes. Then `story.mast`, line 49 highlighted.
+Then `mission.amd`, the end of the file. Two blank lines. Type the note, the section line
+and the scene with three takes. Save. Lint: clean.
 
-**Say:** "First, the last of the lines that Lecture 11 marked for Class 2. || It reads
+**Say:** "Here's where we're going, on the Comms console. || The call is open, with her
+face and her name, | and the title, About that hulk, is a line I wrote. ||| First, the
+last of the lines that Lecture 11 marked for Class 2. || It reads
 every scene in a section called dialogue, | so that's the section I write. ||| A scene is
 a record, like everything else. || Speaker is who's talking, and it takes her key. || When
 hail means this is a call that comes in to the ship. || And the title is what the call is
@@ -124,10 +127,12 @@ Just keep each take on one line, | however long it gets. ||"
 
 ### 4. A second thing to say
 
-**Screen:** Type `@quill` above the three takes. Blank line. Type the second `@quill`
-block. Save. Lint: clean.
+**Screen:** The game first: Comms, the same call after Continue: her question, and the
+list offering Back and Close. Then type `@quill` above the three takes. Blank line. Type
+the second `@quill` block. Save. Lint: clean.
 
-**Say:** "But what if she has two things to say, one after the other? || Then I write
+**Say:** "But what if she has two things to say, one after the other? || On Comms, she
+greets the ship, I press Continue, | and then she asks her question. || For that, I write
 blocks. || A block starts with an at sign and her key, | with nothing else on that line.
 || So here's her greeting, | and here's her question. ||| The game takes one take from
 each block. || The crew reads the first, presses Continue, | and reads the second. ||"
@@ -142,16 +147,19 @@ places it lives up here, among my quests. ||"
 
 ### 6. The beat
 
-**Screen:** Below Quick Work's description, a blank line, then type DS 1 Calls. Highlight
+**Screen:** The game first: Comms, the Incoming Hails list with its one row, Harbormaster
+Quill - About that hulk, just after Close Inspection is done. Then, below Quick Work's
+description, a blank line, then type DS 1 Calls. Highlight
 `Beat`, then `Starts when: reach derelict 500`, then the two `Action:` lines. Save. Lint:
 clean.
 
-**Say:** "It's a record with three hashes, | so it stands by itself, outside the arc. ||
+**Say:** "Here's the moment on Comms: | a row in the Incoming Hails list, | the second the
+ship gets inside five hundred of the hulk. ||| In the file, it's a record with three
+hashes, | so it stands by itself, outside the arc. ||
 The first line of the fence is the word Beat, | alone, the way the word Arc was in Lecture
-9. || A beat is a moment in the story. | It isn't a job, and it's not in the Quest Log.
+9. || A beat is a moment in the story. | It isn't a quest, and it's not in the Quest Log.
 ||| Now, when does the moment come? || Until today, after Starts when, | you've written at once,
-or revealed. ||
- But that line takes the same words as Done when. || So I write
+or revealed. || But that line takes the same words as Done when. || So I write
 reach, derelict, five hundred, | and those are the very words that finish Close
 Inspection. ||| Then Action, which is what happens when the beat starts. || On the next
 line, two spaces and a dash, | and then who calls, the word hails, and the scene's key.

@@ -56,12 +56,12 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyMission` as Lecture 1 leaves it. `mission.amd` has 233 lines and ends with the Harbor Guild's description |
+| Mission | `MyMission` as Lecture 1 leaves it. `mission.amd` has 249 lines and ends with the Harbor Guild's description |
 | Lint | `sbs lint MyMission` says `clean` |
 | VS Code | `MyMission` folder open and trusted, the AMD add-on installed, `mission.amd` in one tab scrolled to the end. Font size raised. Word wrap as the viewer will have it: off, so that a face string runs off the right edge, and scene 8 can say so |
 | The game's drawings | The mission folder is inside the game's own `data\missions`, so the add-on finds `data\graphics` and draws the portraits |
 | Command prompt | Open in `data\missions`, cleared |
-| Game | Not needed. Scene 10 can show it running to prove nothing has changed |
+| Game | Running, with a console on the ePADD's Quest Log, for scene 11 |
 
 ## Confirm on camera
 
@@ -99,6 +99,10 @@ Read in the source and never seen. Check each one before recording:
    the portrait and the name.
 10. What the real game draws for a face that is not one (`Face: woman`). Nobody knows.
     This one needs Lecture 3's call to be seen at all.
+11. The Quest Log draws Quill's portrait under Close Inspection's order line, two lines tall,
+    with her name beside it (read in the library's text area code; a face beside words was
+    seen in the engine in a test pane on 2026-10-14, never in the Quest Log), and the
+    portrait is not hidden behind the pane's backdrop.
 
 Also capture the screenshot for the top of the page.
 
@@ -106,10 +110,14 @@ Also capture the screenshot for the top of the page.
 
 ### 1. Cold open
 
-**Screen:** The Face Builder beside `mission.amd`. A slider moves, and the portrait and
-the `Face:` line change together. Then three portraits side by side: Quill, Ives, Sable.
+**Screen:** The game first: Helm, the ePADD's Quest Log, Close Inspection selected:
+Quill's portrait under the order line, small, her name and her post beside it. Then the
+Face Builder beside `mission.amd`. A slider moves, and the portrait and the `Face:` line
+change together. Then three portraits side by side: Quill, Ives, Sable.
 
-**Say:** "Your map has sides now, | but there's nobody on them. || Today we fix that. ||
+**Say:** "This is the Quest Log on Helm's handheld, | and under Close Inspection's order
+there's a face: Harbormaster Quill of DS 1. || By the end of today, she's one of yours. |||
+Your map has sides now, | but there's nobody on them. || Today we fix that. ||
 We're going to write three people, | and give each of them a face. ||| It's one new
 section in your fact sheet, | and you won't touch the story file at all. ||"
 
@@ -217,12 +225,28 @@ Face. || So that part you check with your own eyes. ||"
 **Screen:** Click inside Quill's record. `Ctrl+Shift+P`, `preview node`, Enter: her
 portrait. The same for Ives and for Sable.
 
-**Say:** "Nobody speaks yet, so the game has nothing new to show. || But I can look at my
-cast right here. || I click inside her record, | I open that box again, and I type preview
+**Say:** "Nobody speaks yet, so the game has almost nothing new to show. || But I can
+look at my cast right here. || I click inside her record, | I open that box again, and I type preview
 node. || There's Quill, and she'll look like that in every game from now on. || And
 there's Ives, and there's Sable. ||"
 
-### 11. Your turn
+### 11. Her face on a job
+
+**Screen:** The game, the ePADD, the Quest Log with Close Inspection selected: Quill's
+portrait under the order line, her name beside it. Then `mission.amd`: select
+Quill's face string, copy it, and paste it into the new first line of Close Inspection
+between `![](face://` and `)`. Save. Lint: clean.
+
+**Say:** "There is one place the game can show her today, | and it's the Quest Log. ||
+Here's Close Inspection, in the list. || Under its order, before the first paragraph, there's Quill. || Her
+portrait, with her name and her job beside it. ||| In Class 1 we learned that a
+description is a page. | A page can hold a face, too. || I don't type her face. | I copy
+it from her record, all of it, | down to the last semicolon. || Then exclamation mark,
+empty square brackets, | and face, colon, two slashes. || Then I paste, type a closing bracket, | and
+the words that go beside her. || Lint doesn't read that line, | so if you change her face
+later, change this copy too. ||"
+
+### 12. Your turn
 
 **Screen:** The exercise on the companion page.
 

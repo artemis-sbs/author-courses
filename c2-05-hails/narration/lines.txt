@@ -1,46 +1,59 @@
-s01_cold_open_0	Last time, the job paid by itself,
+s01_cold_open_0	Last time, the quest paid by itself,
 s01_cold_open_1	and the call afterward was just manners.
-s01_cold_open_2	Today the job isn't over until the crew reports in.
+s01_cold_open_2	Today the quest isn't over until the crew reports in.
 s01_cold_open_3	And when they do,
 s01_cold_open_4	a second voice comes on the line.
 s01_cold_open_5	Along the way you'll learn which call sits on top,
 s01_cold_open_6	which ships get called,
 s01_cold_open_7	and what Comms can do with a call that's waiting.
-s02_a_step_only_an_answer_can_fi_0	I start with the job.
-s02_a_step_only_an_answer_can_fi_1	I take its reward off,
-s02_a_step_only_an_answer_can_fi_2	and I point its Then line at a new key.
-s02_a_step_only_an_answer_can_fi_3	Then I replace the beat below it with a quest.
-s02_a_step_only_an_answer_can_fi_4	Look at what's different.
-s02_a_step_only_an_answer_can_fi_5	There's no Beat line, so the crew will see it in the Quest Log.
-s02_a_step_only_an_answer_can_fi_6	There's an objective, which sends them to Comms.
-s02_a_step_only_an_answer_can_fi_7	The reward has moved here.
-s02_a_step_only_an_answer_can_fi_8	The Action lines are the same two as before,
-s02_a_step_only_an_answer_can_fi_9	because Action works on any quest.
-s02_a_step_only_an_answer_can_fi_10	And look at what's missing: there's no Done when.
-s02_a_step_only_an_answer_can_fi_11	Nothing in the game finishes this step by itself.
+s02_a_step_only_an_answer_can_fi_0	Here's the new step in the Quest Log,
+s02_a_step_only_an_answer_can_fi_1	with Chief Ives under its order,
+s02_a_step_only_an_answer_can_fi_2	and an order that sends the crew to Comms.
+s02_a_step_only_an_answer_can_fi_3	I start with the quest before it.
+s02_a_step_only_an_answer_can_fi_4	I take its reward off,
+s02_a_step_only_an_answer_can_fi_5	and I point its Then line at a new key.
+s02_a_step_only_an_answer_can_fi_6	Then I replace the beat below it with a quest.
+s02_a_step_only_an_answer_can_fi_7	Look at what's different.
+s02_a_step_only_an_answer_can_fi_8	There's no Beat line, so the crew will see it in the Quest Log.
+s02_a_step_only_an_answer_can_fi_9	There's an objective, which sends them to Comms.
+s02_a_step_only_an_answer_can_fi_10	The reward has moved here.
+s02_a_step_only_an_answer_can_fi_11	The Action lines are the same two as before,
+s02_a_step_only_an_answer_can_fi_12	because Action works on any quest.
+s02_a_step_only_an_answer_can_fi_13	And look at what's missing: there's no Done when.
+s02_a_step_only_an_answer_can_fi_14	Nothing in the game finishes this step by itself.
+s02_a_step_only_an_answer_can_fi_15	The description belongs to Chief Ives,
+s02_a_step_only_an_answer_can_fi_16	because the ledger is his.
+s02_a_step_only_an_answer_can_fi_17	So it opens with his face, copied from his record.
+s02_a_step_only_an_answer_can_fi_18	Then it tells the crew why they have to say it out loud.
+s02_a_step_only_an_answer_can_fi_19	The objective gives the order,
+s02_a_step_only_an_answer_can_fi_20	and the description gives the reason.
 s03_the_answer_that_finishes_it_0	So what does finish it?
 s03_the_answer_that_finishes_it_1	An answer from the crew does.
-s03_the_answer_that_finishes_it_2	Quill should be asking now, not congratulating,
-s03_the_answer_that_finishes_it_3	so I change her lines.
-s03_the_answer_that_finishes_it_4	And on the crew's answer, after the semicolon,
-s03_the_answer_that_finishes_it_5	I write completes, and the step's key.
-s03_the_answer_that_finishes_it_6	Now here's the rule for a call that a step is waiting on.
-s03_the_answer_that_finishes_it_7	Every answer that ends the call has to finish the step.
-s03_the_answer_that_finishes_it_8	If I add an answer that just hangs up,
-s03_the_answer_that_finishes_it_9	the call is gone, and the step stays in the Quest Log for good.
-s03_the_answer_that_finishes_it_10	And lint can't see that.
+s03_the_answer_that_finishes_it_2	Here's the call on Comms now.
+s03_the_answer_that_finishes_it_3	Quill is asking, not congratulating,
+s03_the_answer_that_finishes_it_4	and the crew has one answer.
+s03_the_answer_that_finishes_it_5	So I change her lines,
+s03_the_answer_that_finishes_it_6	and on the crew's answer, after the semicolon,
+s03_the_answer_that_finishes_it_7	I write completes, and the step's key.
+s03_the_answer_that_finishes_it_8	Now here's the rule for a call that a step is waiting on.
+s03_the_answer_that_finishes_it_9	Every answer that ends the call has to finish the step.
+s03_the_answer_that_finishes_it_10	If I add an answer that just hangs up,
+s03_the_answer_that_finishes_it_11	the call is gone, and the step stays in the Quest Log for good.
+s03_the_answer_that_finishes_it_12	And lint can't see that.
 s04_a_second_voice_0	A call can have more than one person on the line.
-s04_a_second_voice_1	Chief Ives has been in my cast since Lecture 2,
-s04_a_second_voice_2	with nothing to say.
-s04_a_second_voice_3	So I give him a block:
-s04_a_second_voice_4	an at sign, his key, and two takes of his own.
-s04_a_second_voice_5	The call still belongs to Quill,
-s04_a_second_voice_6	and it's her name on the list.
-s04_a_second_voice_7	But when Comms presses Continue,
-s04_a_second_voice_8	the name and the face change to his.
-s04_a_second_voice_9	Remember that the line is an at sign and a key, and nothing else.
-s04_a_second_voice_10	Write his full name there, and his block is gone,
-s04_a_second_voice_11	and lint says clean.
+s04_a_second_voice_1	On Comms, I press Continue,
+s04_a_second_voice_2	and the face and the name change to Chief Ives.
+s04_a_second_voice_3	Chief Ives has been in my cast since Lecture 2,
+s04_a_second_voice_4	with nothing to say.
+s04_a_second_voice_5	So I give him a block:
+s04_a_second_voice_6	an at sign, his key, and two takes of his own.
+s04_a_second_voice_7	The call still belongs to Quill,
+s04_a_second_voice_8	and it's her name on the list.
+s04_a_second_voice_9	But inside the call,
+s04_a_second_voice_10	each block brings its own name and its own face.
+s04_a_second_voice_11	Remember that the line is an at sign and a key, and nothing else.
+s04_a_second_voice_12	Write his full name there, and his block is gone,
+s04_a_second_voice_13	and lint says clean.
 s05_which_call_is_on_top_0	Calls wait in a list, and the newest one is on top.
 s05_which_call_is_on_top_1	So a call that matters can get pushed down by a later one.
 s05_which_call_is_on_top_2	A call never times out,
@@ -55,21 +68,24 @@ s06_who_gets_called_1	and I don't have to,
 s06_who_gets_called_2	because every player ship is called.
 s06_who_gets_called_3	With one ship, that's all there is to it.
 s06_who_gets_called_4	With two, each ship gets its own copy of the call.
-s06_who_gets_called_5	But the job is shared, so there's only one of it.
+s06_who_gets_called_5	But the quest is shared, so there's only one of it.
 s06_who_gets_called_6	One crew says yes, and it starts for everybody.
 s06_who_gets_called_7	And the first crew to report gets the side paid, just once.
 s06_who_gets_called_8	So write your lines for any ship that might hear them,
-s06_who_gets_called_9	and keep jobs like this for missions flown by one ship.
+s06_who_gets_called_9	and keep quests like this for missions flown by one ship.
 s07_what_comms_can_do_0	This part has nothing to type.
-s07_what_comms_can_do_1	It's what the person at Comms can do with what you wrote.
-s07_what_comms_can_do_2	They can leave a call waiting,
-s07_what_comms_can_do_3	they can open it,
-s07_what_comms_can_do_4	and they can press Back.
-s07_what_comms_can_do_5	There's a dial that chooses where the conversation is drawn.
-s07_what_comms_can_do_6	And every finished call is kept,
-s07_what_comms_can_do_7	so it can be read again.
-s07_what_comms_can_do_8	So an answer is a decision the crew makes once.
-s07_what_comms_can_do_9	Everything else lets them put it off, or look back at it.
+s07_what_comms_can_do_1	It's what the person at Comms can do with what you wrote,
+s07_what_comms_can_do_2	and all of it is on the Comms console.
+s07_what_comms_can_do_3	They can leave a call waiting,
+s07_what_comms_can_do_4	they can open it,
+s07_what_comms_can_do_5	and they can press Back.
+s07_what_comms_can_do_6	There's a drop-down that chooses where the conversation is drawn:
+s07_what_comms_can_do_7	both, the main screen, this console, or off.
+s07_what_comms_can_do_8	Every finished call gets a row under the Hails tab,
+s07_what_comms_can_do_9	by the name of who called.
+s07_what_comms_can_do_10	And the ship's log gets a line that says what the crew answered.
+s07_what_comms_can_do_11	So an answer is a decision the crew makes once.
+s07_what_comms_can_do_12	Everything else on Comms lets them put it off.
 s08_what_lint_cannot_see_0	Lint names ten mistakes in this lecture,
 s08_what_lint_cannot_see_1	and the page lists them.
 s08_what_lint_cannot_see_2	These two it can't see.
@@ -80,7 +96,7 @@ s08_what_lint_cannot_see_6	The step still works and pays,
 s08_what_lint_cannot_see_7	but the crew is never told to report.
 s08_what_lint_cannot_see_8	So check both of those with your own eyes.
 s09_play_it_0	Let's play it through.
-s09_play_it_1	I take the job, the way we did last time.
+s09_play_it_1	I take the quest, the way we did last time.
 s09_play_it_2	Thirty seconds later the beacon is set,
 s09_play_it_3	and there's my new step, telling me to report.
 s09_play_it_4	And there's the call.
@@ -88,7 +104,7 @@ s09_play_it_5	It opens on Quill,
 s09_play_it_6	and when I press Continue, that's Chief Ives.
 s09_play_it_7	I press Back, and the call waits, and so does the step.
 s09_play_it_8	I open it again, and this time I give the answer.
-s09_play_it_9	The step is done, and now the job has paid.
+s09_play_it_9	The step is done, and now the quest has paid.
 s10_your_turn_0	Now it's your turn: put more voices on your calls.
 s10_your_turn_1	Give Ives a block in the first call,
 s10_your_turn_2	and let Captain Sable listen in on the offer.

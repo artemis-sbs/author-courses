@@ -1,415 +1,495 @@
 1
-00:00:00,000 --> 00:00:06,087
+00:00:00,000 --> 00:00:05,111
 Your story has people in it now, and calls, and answers that start jobs.
 
 2
-00:00:06,987 --> 00:00:11,335
+00:00:06,011 --> 00:00:08,570
 It's getting hard to see all of it at once.
 
 3
-00:00:13,135 --> 00:00:17,483
+00:00:10,370 --> 00:00:13,929
 So today you don't learn a new kind of record.
 
 4
-00:00:17,933 --> 00:00:22,715
+00:00:14,379 --> 00:00:17,309
 You learn four ways to look at the ones you have,
 
 5
-00:00:23,165 --> 00:00:28,817
+00:00:17,759 --> 00:00:21,233
 and one habit that lets the tool write your to-do list for you.
 
 6
-00:00:30,017 --> 00:00:35,235
+00:00:22,433 --> 00:00:26,184
 Thirty-one records, and twelve places where one of them points at another.
 
 7
-00:00:36,135 --> 00:00:40,917
+00:00:27,084 --> 00:00:30,112
 You can't hold all of that in your head any more,
 
 8
-00:00:41,367 --> 00:00:43,976
+00:00:30,562 --> 00:00:32,675
 and it's only going to grow.
 
 9
-00:00:45,776 --> 00:00:48,820
+00:00:34,475 --> 00:00:36,861
 So I'll ask the tool a question.
 
 10
-00:00:49,720 --> 00:00:54,067
+00:00:37,761 --> 00:00:40,831
 It's lint, with one more word on the end: missing.
 
 11
-00:00:54,967 --> 00:00:57,141
+00:00:41,731 --> 00:00:43,792
 And it says nothing's missing,
 
 12
-00:00:57,591 --> 00:01:01,939
+00:00:44,242 --> 00:00:48,165
 which means every pointer lands on a record that exists.
 
 13
-00:01:02,839 --> 00:01:05,013
+00:00:49,065 --> 00:00:50,384
 Keep that answer in mind,
 
 14
-00:01:05,463 --> 00:01:10,680
+00:00:50,834 --> 00:00:54,586
 because in a few minutes we're going to break it on purpose.
 
 15
-00:01:11,880 --> 00:01:15,359
-A quest's description is written for the crew,
+00:00:55,786 --> 00:00:59,693
+This is the Quest Log on Helm's handheld, with First Contact open.
 
 16
-00:01:15,809 --> 00:01:18,852
-and it tells them what to do.
+00:01:00,593 --> 00:01:03,016
+The words in the pane are its description,
 
 17
-00:01:19,752 --> 00:01:23,665
-It doesn't say why your story needs that step,
+00:01:03,466 --> 00:01:06,627
+written for the crew, and they tell them what to do.
 
 18
-00:01:24,115 --> 00:01:25,854
-and a note does.
+00:01:07,527 --> 00:01:10,449
+A description doesn't say why your story needs that step,
 
 19
-00:01:27,654 --> 00:01:31,567
-A note is one line, right under the heading,
+00:01:10,899 --> 00:01:12,348
+and that's the job of a note.
 
 20
-00:01:32,017 --> 00:01:35,930
-that starts with an equals sign and a space.
+00:01:14,148 --> 00:01:16,830
+A note is one line, right under the heading,
 
 21
-00:01:36,830 --> 00:01:40,743
-So this one says what the mystery is for,
+00:01:17,280 --> 00:01:19,782
+that starts with an equals sign and a space.
 
 22
-00:01:41,193 --> 00:01:45,107
-and this one marks the end of act one.
+00:01:20,682 --> 00:01:23,449
+So this one says what the mystery is for,
 
 23
-00:01:46,007 --> 00:01:48,615
-The crew never sees a note.
+00:01:23,899 --> 00:01:26,419
+and this one marks the end of act one.
 
 24
-00:01:49,515 --> 00:01:55,602
-You do, every time you hold the mouse over a pointer to that record.
+00:01:27,319 --> 00:01:28,941
+The crew never sees a note,
 
 25
-00:01:56,502 --> 00:02:00,415
-And don't forget the space after the equals sign,
+00:01:29,391 --> 00:01:34,506
+and First Contact's page in the Quest Log stays just as it was.
 
 26
-00:02:00,865 --> 00:02:05,213
-because without it the line isn't a note at all.
+00:01:35,406 --> 00:01:37,895
+You see it, though, every time you hold the mouse
 
 27
-00:02:06,413 --> 00:02:10,761
-Now look at the top right corner of the editor,
+00:01:38,345 --> 00:01:40,231
+over a pointer to that record.
 
 28
-00:02:11,211 --> 00:02:15,559
-where the add-on has put a row of small icons.
+00:01:41,131 --> 00:01:44,116
+And don't forget the space after the equals sign,
 
 29
-00:02:16,459 --> 00:02:19,067
-The first one is the outline:
+00:01:44,566 --> 00:01:47,119
+because without it the line isn't a note at all.
 
 30
-00:02:19,517 --> 00:02:25,604
-every record in a list, grouped by section, with a box to search in.
+00:01:48,319 --> 00:01:50,792
+Now look at the top right corner of the editor,
 
 31
-00:02:26,504 --> 00:02:28,678
-The second is the timeline,
+00:01:51,242 --> 00:01:54,084
+where the add-on has put a row of small icons.
 
 32
-00:02:29,128 --> 00:02:32,172
-and that's the one I use most.
+00:01:54,984 --> 00:01:57,068
+The first one is the outline:
 
 33
-00:02:33,072 --> 00:02:35,246
-It has columns called beats,
+00:01:57,518 --> 00:02:02,028
+every record in a list, grouped by section, with a box to search in.
 
 34
-00:02:35,696 --> 00:02:41,348
-and whatever's in beat two can't happen until something in beat one has.
+00:02:02,928 --> 00:02:04,935
+The second is the timeline,
 
 35
-00:02:43,148 --> 00:02:45,322
-The third is the graph,
+00:02:05,385 --> 00:02:07,238
+and that's the one I use most.
 
 36
-00:02:45,772 --> 00:02:51,424
-which is a box for every record and an arrow for every pointer.
+00:02:08,138 --> 00:02:10,534
+It has columns called beats,
 
 37
-00:02:52,324 --> 00:02:54,933
-All three redraw while you type,
+00:02:10,984 --> 00:02:15,747
+and whatever's in beat two can't happen until something in beat one has.
 
 38
-00:02:55,383 --> 00:03:00,165
-and clicking a record takes you to it in the file.
+00:02:17,547 --> 00:02:19,163
+The third is the graph,
 
 39
-00:03:01,365 --> 00:03:06,148
-There's one thing you need to know before you trust it.
+00:02:19,613 --> 00:02:23,088
+which is a box for every record and an arrow for every pointer.
 
 40
-00:03:07,048 --> 00:03:09,222
-The timeline follows a reveal,
+00:02:23,988 --> 00:02:26,390
+All three redraw while you type,
 
 41
-00:03:09,672 --> 00:03:14,020
-and it follows an answer that leads to another scene.
+00:02:26,840 --> 00:02:29,204
+and clicking a record takes you to it in the file.
 
 42
-00:03:14,920 --> 00:03:19,267
-But it doesn't follow a call that a quest places,
+00:02:30,404 --> 00:02:33,397
+There's one thing you need to know before you trust it.
 
 43
-00:03:19,717 --> 00:03:23,196
-and it doesn't follow what an answer starts.
+00:02:34,297 --> 00:02:36,312
+The timeline follows a reveal,
 
 44
-00:03:24,996 --> 00:03:28,474
-So here's Tag the Hulk in beat one,
+00:02:36,763 --> 00:02:39,844
+and it follows an answer that leads to another scene.
 
 45
-00:03:28,924 --> 00:03:34,141
-even though that job only starts when Comms says, we'll tag her.
+00:02:40,744 --> 00:02:43,815
+But it doesn't follow a call that a quest places,
 
 46
-00:03:35,041 --> 00:03:38,954
-Read the timeline for the chain of your quests,
+00:02:44,265 --> 00:02:46,900
+and it doesn't follow what an answer starts.
 
 47
-00:03:39,404 --> 00:03:45,057
-and for who calls whom, read the printed script, which is coming up.
+00:02:48,700 --> 00:02:50,644
+So here's Tag the Hulk in beat one,
 
 48
-00:03:46,257 --> 00:03:49,735
-Here's the habit I want you to have.
+00:02:51,094 --> 00:02:54,813
+even though that job only starts when Comms says, we'll tag her.
 
 49
-00:03:50,635 --> 00:03:52,809
-Act two is three ideas:
+00:02:55,713 --> 00:02:58,107
+Read the timeline for the chain of your quests,
 
 50
-00:03:53,259 --> 00:03:58,476
-the hulk is worth something, the crew owns her for an hour,
+00:02:58,557 --> 00:03:01,890
+and for who calls whom, read the printed script, which is coming up.
 
 51
-00:03:58,926 --> 00:04:03,709
-and a Guild assessor called Vane wants to know her price.
+00:03:03,090 --> 00:03:04,798
+Here's the habit I want you to have.
 
 52
-00:04:04,609 --> 00:04:08,522
-I'm not going to write any of that yet.
+00:03:05,698 --> 00:03:07,603
+Act two is three ideas:
 
 53
-00:04:08,972 --> 00:04:11,580
-I'm going to point at it.
+00:03:08,053 --> 00:03:10,929
+the hulk is worth something, the crew owns her for an hour,
 
 54
-00:04:13,380 --> 00:04:18,163
-So this step reveals a quest called claim, which doesn't exist.
+00:03:11,379 --> 00:03:14,965
+and a Guild assessor called Vane wants to know her price.
 
 55
-00:04:19,063 --> 00:04:22,107
-This sentence has a link in it,
+00:03:15,865 --> 00:03:17,901
+I'm not going to write any of that yet.
 
 56
-00:04:22,557 --> 00:04:25,165
-two square brackets around a key,
+00:03:18,351 --> 00:03:21,577
+I'm going to point at it, from things the crew already sees.
 
 57
-00:04:25,615 --> 00:04:28,224
-for a person who doesn't exist.
+00:03:23,377 --> 00:03:27,373
+This is Report to DS 1 in the Quest Log, on Helm's handheld.
 
 58
-00:04:29,124 --> 00:04:33,907
-And this answer leads to a scene that doesn't exist either.
+00:03:28,273 --> 00:03:30,826
+And this is Quill's second call on Comms,
 
 59
-00:04:35,107 --> 00:04:38,585
-Now I ask the same question as before.
+00:03:31,276 --> 00:03:33,741
+where Chief Ives asks for it on the record.
 
 60
-00:04:39,485 --> 00:04:44,702
-And this time I get three things, referenced but not written yet.
+00:03:34,641 --> 00:03:37,950
+It has one answer: it is ours, DS 1.
 
 61
-00:04:45,602 --> 00:04:49,080
-For each one it tells me what's missing,
+00:03:39,750 --> 00:03:45,215
+So in the file, this step now reveals a quest called claim, which doesn't exist.
 
 62
-00:04:49,530 --> 00:04:53,443
-which record points at it, and on which line.
+00:03:46,115 --> 00:03:48,174
+This sentence in its page has a link in it,
 
 63
-00:04:55,243 --> 00:04:58,287
-That's my writing list for act two,
+00:03:48,624 --> 00:03:50,764
+two square brackets around a key,
 
 64
-00:04:58,737 --> 00:05:02,215
-and I didn't have to keep it anywhere.
+00:03:51,214 --> 00:03:53,148
+for a person who doesn't exist.
 
 65
-00:05:03,115 --> 00:05:07,463
-The fourth icon in the editor shows the same list,
+00:03:54,048 --> 00:03:58,002
+And this new answer leads to a scene that doesn't exist either.
 
 66
-00:05:07,913 --> 00:05:11,826
-and clicking a row takes me to the line.
+00:03:59,202 --> 00:04:01,387
+Now I ask the same question as before.
 
 67
-00:05:13,026 --> 00:05:16,504
-So I write them one at a time,
+00:04:02,287 --> 00:04:06,576
+And this time I get three things, referenced but not written yet.
 
 68
-00:05:16,954 --> 00:05:19,128
-and ask again after each.
+00:04:07,476 --> 00:04:09,552
+For each one it tells me what's missing,
 
 69
-00:05:20,028 --> 00:05:22,637
-There are two left, then one,
+00:04:10,002 --> 00:04:12,635
+which record points at it, and on which line.
 
 70
-00:05:23,087 --> 00:05:25,696
-and then nothing's missing at all.
+00:04:14,435 --> 00:04:16,365
+That's my writing list for act two,
 
 71
-00:05:27,496 --> 00:05:29,235
-Now the other direction.
+00:04:16,815 --> 00:04:18,775
+and I didn't have to keep it anywhere.
 
 72
-00:05:30,135 --> 00:05:33,613
-When you cut a scene, don't delete it.
+00:04:19,675 --> 00:04:22,680
+The fourth icon in the editor shows the same list,
 
 73
-00:05:34,513 --> 00:05:39,296
-Put a slash and a star on a line above it,
+00:04:23,130 --> 00:04:25,634
+and clicking a row takes me to the line.
 
 74
-00:05:39,746 --> 00:05:44,093
-and a star and a slash on a line below,
+00:04:26,834 --> 00:04:28,840
+So I write them one at a time,
 
 75
-00:05:44,543 --> 00:05:49,326
-and it's out of the mission and still in your file.
+00:04:29,290 --> 00:04:31,449
+and ask again after each.
 
 76
-00:05:50,226 --> 00:05:51,965
-Then ask what's missing.
+00:04:32,349 --> 00:04:36,526
+The Claim is where act two starts, so it gets a page.
 
 77
-00:05:52,865 --> 00:05:56,778
-One answer still leads to the scene I cut,
+00:04:37,426 --> 00:04:41,229
+Here it is in the Quest Log, on Helm's handheld, once it's written:
 
 78
-00:05:57,228 --> 00:06:01,576
-and if the crew picks it, the call just ends,
+00:04:41,679 --> 00:04:44,951
+the order, who else wants her, and what's at stake.
 
 79
-00:06:02,026 --> 00:06:04,200
-and the story stops there.
+00:04:45,851 --> 00:04:49,061
+I type it, I ask again, and there are two left.
 
 80
-00:06:05,100 --> 00:06:07,709
-So a cut has two halves,
+00:04:50,861 --> 00:04:53,397
+Next comes the person, Assessor Vane.
 
 81
-00:06:08,159 --> 00:06:11,637
-and the list tells you the second one.
+00:04:54,297 --> 00:04:56,904
+He's the link in Report to DS 1,
 
 82
-00:06:12,837 --> 00:06:15,880
-In Class 1 you printed one document.
+00:04:57,354 --> 00:05:01,460
+and once he's written, the Quest Log prints his name in that sentence.
 
 83
-00:06:16,330 --> 00:06:18,070
-Now print all four.
+00:05:02,360 --> 00:05:04,572
+Now there's only one thing left on the list.
 
 84
-00:06:18,970 --> 00:06:25,057
-The prose one is your story as a book, with your notes beside it.
+00:05:05,472 --> 00:05:07,677
+The last one is Quill's new scene,
 
 85
-00:06:25,957 --> 00:06:28,130
-The screenplay is every call,
+00:05:08,127 --> 00:05:11,981
+which plays on Comms when the crew picks the new answer.
 
 86
-00:06:28,580 --> 00:06:31,189
-with who speaks, what they say,
+00:05:12,881 --> 00:05:15,593
+And with that, nothing's missing at all.
 
 87
-00:06:31,639 --> 00:06:33,813
-and what each answer does.
+00:05:17,393 --> 00:05:19,512
+Now let's go the other way, and cut something.
 
 88
-00:06:35,613 --> 00:06:37,352
-Read that one aloud.
+00:05:20,412 --> 00:05:22,499
+When you cut a scene, don't delete it.
 
 89
-00:06:38,252 --> 00:06:43,470
-But remember that where you wrote three takes, it prints three lines,
+00:05:23,399 --> 00:05:26,221
+Put a slash and a star on a line above it,
 
 90
-00:06:43,920 --> 00:06:47,398
-and she only ever says one of them.
+00:05:26,671 --> 00:05:29,471
+and a star and a slash on a line below,
 
 91
-00:06:48,298 --> 00:06:51,341
-The catalog is for looking things up,
+00:05:29,921 --> 00:05:32,396
+and it's out of the mission and still in your file.
 
 92
-00:06:51,791 --> 00:06:56,139
-and the bible has the same beats as the timeline,
+00:05:33,296 --> 00:05:35,025
+Then ask the tool what's missing.
 
 93
-00:06:56,589 --> 00:06:58,763
-with the same two gaps.
+00:05:35,925 --> 00:05:38,755
+One answer still leads to the scene I cut.
 
 94
-00:06:59,963 --> 00:07:04,746
-And then you play it, because a list isn't a game.
+00:05:39,655 --> 00:05:42,586
+It's this one on Comms, in Quill's first call:
 
 95
-00:07:05,646 --> 00:07:10,863
-The link in my sentence is printed as his name, Assessor Vane.
+00:05:43,036 --> 00:05:44,455
+what do you know about her?
 
 96
-00:07:11,763 --> 00:07:15,241
-On the second call there's my new answer,
+00:05:45,355 --> 00:05:48,128
+If the crew picks it, the call just ends,
 
 97
-00:07:15,691 --> 00:07:18,735
-and it leads to Quill's new scene,
+00:05:48,578 --> 00:05:50,226
+and the story stops there.
 
 98
-00:07:19,185 --> 00:07:22,663
-which has the answer that finishes the report.
+00:05:51,126 --> 00:05:53,873
+So a cut has two halves,
 
 99
-00:07:24,463 --> 00:07:27,072
-The Claim appears in the log,
+00:05:54,323 --> 00:05:56,267
+and the list tells you the second one.
 
 100
-00:07:27,522 --> 00:07:30,130
-and a minute later it pays.
+00:05:57,467 --> 00:05:59,563
+In Class 1 you printed one document,
 
 101
-00:07:31,030 --> 00:07:33,639
-Your notes aren't on any console.
+00:06:00,013 --> 00:06:02,102
+and now you print all four.
 
 102
-00:07:34,089 --> 00:07:36,698
-They were only ever for you.
+00:06:03,002 --> 00:06:06,766
+The prose one is your story as a book, with your notes beside it.
 
 103
-00:07:37,598 --> 00:07:41,511
-Next time we leave this mission for a while,
+00:06:07,666 --> 00:06:09,785
+The screenplay is every call,
 
 104
-00:07:41,961 --> 00:07:44,135
+00:06:10,235 --> 00:06:12,105
+with who speaks, what they say,
+
+105
+00:06:12,555 --> 00:06:14,805
+and what each answer does.
+
+106
+00:06:16,605 --> 00:06:18,082
+That's the one to read aloud.
+
+107
+00:06:18,982 --> 00:06:23,362
+But remember that where you wrote three takes, it prints three lines,
+
+108
+00:06:23,812 --> 00:06:26,441
+and she only ever says one of them.
+
+109
+00:06:27,341 --> 00:06:29,900
+The catalog is for looking things up,
+
+110
+00:06:30,350 --> 00:06:33,274
+and the bible has the same beats as the timeline,
+
+111
+00:06:33,724 --> 00:06:35,062
+with the same two gaps.
+
+112
+00:06:36,262 --> 00:06:39,588
+And then you play it, because a list isn't a game.
+
+113
+00:06:40,488 --> 00:06:45,182
+On Helm's handheld, Report to DS 1 is in the Quest Log,
+
+114
+00:06:45,632 --> 00:06:49,542
+and the link in my sentence is printed as his name, Assessor Vane.
+
+115
+00:06:50,442 --> 00:06:53,789
+On Comms, the second call has my new answer,
+
+116
+00:06:54,239 --> 00:06:56,272
+and it leads to Quill's new scene,
+
+117
+00:06:56,722 --> 00:06:59,368
+which has the answer that finishes the report.
+
+118
+00:07:01,168 --> 00:07:03,043
+The Claim appears in the Quest Log,
+
+119
+00:07:03,493 --> 00:07:05,383
+with Sable and Vane in its table,
+
+120
+00:07:05,833 --> 00:07:07,134
+and a minute later it pays.
+
+121
+00:07:08,034 --> 00:07:10,114
+Your notes aren't on any console.
+
+122
+00:07:10,564 --> 00:07:12,019
+They were only ever for you.
+
+123
+00:07:12,919 --> 00:07:14,834
+Next time we leave this mission for a while,
+
+124
+00:07:15,284 --> 00:07:16,412
 and you write a boss.

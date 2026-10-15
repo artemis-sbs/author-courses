@@ -44,7 +44,7 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 
 | Item | State needed |
 |---|---|
-| Mission | `MyMission` as Lecture 11 leaves it. `story.mast` must match `c1-11-just-enough-mast\example\story.mast` line for line (115 lines), or lines 18 to 20, 44, 64, 68 and 113 on the page are wrong. `mission.amd` has 185 lines and ends with The Lifeboat |
+| Mission | `MyMission` as Lecture 11 leaves it. `story.mast` must match `c1-11-just-enough-mast\example\story.mast` line for line (115 lines), or lines 18 to 20, 44, 64, 68 and 113 on the page are wrong. `mission.amd` has 201 lines and ends with The Lifeboat |
 | Lint | `sbs lint MyMission` says `clean` |
 | VS Code | `MyMission` folder open, `mission.amd` in one tab scrolled to the end, `story.mast` in another at line 18. The status bar (`Ln`, `Col`) in shot |
 | Command prompt | Open in `data\missions`, cleared |
@@ -76,11 +76,11 @@ On the finished files:
    `unknown`: that word in grey, and no side word. (Mock. Engine: the red, the word.)
 4. A forced scan of the cutter stores "Enemy vessel. Exercise caution." on `scan`. A
    forced scan of the yard stores "This is a friendly station." (Mock, Engine.)
-5. Comms selecting the cutter is sent Hail, Taunt, Surrender now. Hail is answered "Go
-   away, Artemis! You talk too much!". Comms selecting the yard is sent Hail, Build
-   Weapons, Request Priority Docking. Hail is answered "Hello, Artemis. We stand ready to
-   assist", the shield and hull figures, and "You have full docking privileges." (Mock,
-   Engine.)
+5. Comms selecting the cutter is sent Hail, Taunt, Surrender now (and Cancel). Comms
+   selecting the yard is sent Hail, Build Weapons, Request Priority Docking, Market (and
+   Cancel). A Hail is answered with one of LM's stock lines (the cutter: a pirate line;
+   the yard: its production table), shown only when its header in the message list is
+   clicked. (Engine, 2026-10-15.)
 6. 400 from the yard the ship is offered the yard to dock with. 400 from the cutter
    nothing is offered. A dock request at DS 1 is accepted with the cutter far away and
    refused with the cutter 500 from the station. (Mock.)
@@ -122,9 +122,9 @@ Also capture the screenshot for the top of the page.
 
 ### 1. Cold open
 
-**Screen:** The Science console. Select the Breaker Cutter: its name in red, `breaker`
-beside it, "Enemy vessel. Exercise caution." Select the Guild Yard: green, `guild`,
-"This is a friendly station." Cut to Helm docking at the yard.
+**Screen:** The Science console. Pick the Breaker Cutter from the contact list, scanned:
+its name in red, `breaker` beside it, "Enemy vessel. Exercise caution." Pick the Guild
+Yard: green, `guild`, "This is a friendly station." Cut to Helm docking at the yard.
 
 **Say:** "In Class 1, everything on your map was on one side, and it was yours. || Today
 the map gets politics. || These people want your hulk, | and these people will fix your
@@ -133,10 +133,14 @@ enemy. ||"
 
 ### 2. The side you already have
 
-**Screen:** `story.mast`, lines 18 to 20 highlighted. Then line 64, line 68 and line 113:
+**Screen:** The game first: Science, DS 1 picked from the contact list and scanned. At
+the top of the read-out, its name in green and, at the right, the word `tsn` in blue.
+Then `story.mast`, lines 18 to 20 highlighted. Then line 64, line 68 and line 113:
 highlight the first word inside the quote marks each time. Then line 44.
 
-**Say:** "You read these three lines in Lecture 11. || They make a side called t s n, | and
+**Say:** "Here's DS 1 on the Science console, once it's scanned. || Its name is at the top
+of the read-out, | and the small word at the right of it, t s n, is its side. ||| That
+word comes from three lines you read in Lecture 11. || They make a side called t s n, | and
 they give it a name and a color. || Now look where else that word turns up. || It's on the
 line for DS 1, | it's on the line for the hulk, | and it's on your tug. ||| Inside the
 quote marks, the first word is the side, | and the words after it are roles. || So t s n
@@ -155,15 +159,20 @@ The section is two hashes, the word Sides, | and a key that has to be exactly th
 in small letters. || Then one record for each side: | three hashes, a name, and a key. |||
 My own side goes first, | and its key is t s n, | because that's the word my ship already
 carries. || Then a color, which is a hash sign and three characters, | for red, green and
-blue. || Zero means none of it, and F means all of it. || I save, I run lint, and it's
+blue. || Zero means none of it, and F means all of it. || This one is the blue of that word
+t s n, beside DS 1's name on Science. || I save, I run lint, and it's
 clean. ||"
 
 ### 4. Two more sides
 
-**Screen:** Below the TSN record, type The Breakers, then Harbor Guild. Highlight
+**Screen:** The game first: Science, the Breaker Cutter scanned, its name in red and
+`breaker` in orange at the right; then the Guild Yard scanned, green, `guild` in green.
+Then, below the TSN record, type The Breakers, then Harbor Guild. Highlight
 `Enemies: tsn`, then `Allies: tsn`. Save. Lint: clean.
 
-**Say:** "Now the people who aren't me. || First the Breakers, with the key breaker, in
+**Say:** "Now the people who aren't me. || Here's where we're going, on Science. || The
+cutter's name is red, with the word breaker beside it in orange, | and the yard's name is
+green, with guild beside it. ||| First the Breakers, with the key breaker, in
 orange. || And here's the line that matters: | Enemies, and then my key. ||| Then the
 Harbor Guild, with the key guild, in green, | and the line Allies, and my key. || What
 comes after the colon is always a key, never a name. || And I only say it once. || Enemies
@@ -172,24 +181,30 @@ it on my own record. ||"
 
 ### 5. Something on each side
 
-**Screen:** Scroll up to the Landmarks section. Below The Lifeboat, above the Sides note,
-type the Breaker Cutter and the Guild Yard. Highlight the two `Side:` lines. Lint: clean.
+**Screen:** The game first: Helm's map, DS 1 and the hulk, the cutter grey (not scanned
+yet) out past the hulk, the yard blue to the west of DS 1. Then scroll up to the Landmarks section. Below
+The Lifeboat, above the Sides note, type the Breaker Cutter and the Guild Yard. Highlight
+the two `Side:` lines. Lint: clean.
 
 **Say:** "A side with nothing on it is just a name in a file. || So I give each of them
-one thing on the map, | and I do it with landmarks, the way you did in Lecture 10. || A
-ship for the Breakers, out past the hulk, | and a station for the Guild, west of DS 1. ||
+one thing on the map, | and here they are on Helm's map. || The cutter is the grey one,
+out past the hulk, | grey because Science hasn't scanned it yet. || The yard is the blue
+one, west of DS 1. ||| They're landmarks,
+the way you made the lifeboat in Lecture 10, | one ship and one station. ||
 The Side line takes the side's key. ||| Now watch where I'm typing. || These two go in the
 Landmarks section, | above the Sides heading. || If I type a landmark below that heading,
 | the game reads it as a side called Breaker Cutter, | and it puts no ship anywhere. ||"
 
 ### 6. A second station
 
-**Screen:** The step Bring the Log Home, `Done when: reach station 1000` highlighted.
-Change it to `reach home 1000`. Save. Lint: the `role-nothing-wears` warning. `story.mast`,
+**Screen:** The game first: Helm, the Quest Log, Bring the Log Home selected, its order
+"Return to within 1000 of DS 1". Then the step Bring the Log Home in the file,
+`Done when: reach station 1000` highlighted. Change it to `reach home 1000`. Save. Lint: the `role-nothing-wears` warning. `story.mast`,
 line 64: add `, home` inside the quote marks. Save. Lint: clean.
 
-**Say:** "Lecture 10 warned you about this next part. || My story ends with the words
-reach station. || Station is a role, and every station wears it, | and I've just built a
+**Say:** "Lecture 10 warned you about this next part. || Here's the last step of my
+story, in the Quest Log: | Bring the Log Home, back to within a thousand of DS 1. || In the
+file, that step ends with the words reach station. || Station is a role, and every station wears it, | and I've just built a
 second station. || So the crew could carry the log to the Guild, and win. ||| The cure is
 a role that only DS 1 wears. || In the step, I write reach home. || Lint says nothing
 wears a role called home, | which is true, because I'm only half done. || So I go to line
@@ -200,46 +215,56 @@ And now lint is clean. ||"
 ### 7. Who is what to whom
 
 **Screen:** The three-pair table on the page. Then change the Breakers' line to
-`Enemies: tsn, guild`. Then the table "What a relation does in the game".
+`Enemies: tsn, guild`. Then the table "What a relation does in the game", and the game:
+Comms with the cutter picked, its buttons Hail, Taunt and Surrender now; then Comms with
+the yard picked, Hail, Build Weapons, Request Priority Docking and Market.
 
 **Say:** "Three sides make three pairs. || Me and the Breakers are enemies, | and me and
 the Guild are allies. || But about the Breakers and the Guild, nobody said a word. ||| And a pair
 nobody mentions is nothing to each other. | The game doesn't guess. || Scavengers and
 harbor pilots aren't strangers, | so I add the Guild's key after mine, with a comma
 between. ||| So what does a relation buy you? || An enemy reads as an enemy on Science, |
-and Comms can taunt it. || A friendly station lets you dock. || And here's the one thing
+and here on Comms, it's offered Hail, Taunt, and Surrender now. || A friendly station is
+offered Hail, Build Weapons, Request Priority Docking, and Market, | and it lets you dock. || And here's the one thing
 it doesn't buy you: a fight. || The cutter has no orders, so it'll just sit there. ||"
 
 ### 8. Lint, and what lint cannot see
 
 **Screen:** Command prompt. In the Breakers, change `Enemies: tsn, guild` to
 `Enemies: tsm`: lint, `dangling-side`. Undo. Take the `Side:` line off the cutter: lint,
-clean. Undo. Then give Harbor Guild a fourth hash: lint, clean. Undo. Show the table
+clean. Undo. Then give Harbor Guild a fourth hash: lint, clean. Undo. The game: Science, the cutter
+with no `Side:` line picked, its title reading `unknown`, Queue Scan still offered, and
+Threats 0 on the bottom bar. Show the table
 "What lint cannot see" on the page.
 
 **Say:** "Now let's break it on purpose. || I misspell my own key after Enemies, | and
 lint catches it. || It says that word isn't a side in this mission, | and it lists the
 keys I did declare. ||| But watch this one. || I take the Side line off the cutter
 altogether, | and lint says clean. || And a fourth hash on the Guild's heading is clean as
-well. ||| In the game, those two look the same. || The thing reads as unknown on Science,
-for good, | and Comms has nothing to say to it. || So when a contact stays unknown, | look
+well. ||| In the game, those two look the same. || Here's the cutter on Science with no Side
+line. || It reads unknown, for good, | and Queue Scan never finishes on it. || The bar at
+the bottom counts no threats at all, | and Comms has nothing to say to it. || So when a contact stays unknown, | look
 for its Side line first, | and then count the hashes on its side. ||"
 
 ### 9. Play it
 
-**Screen:** Server, Helm, Science and Comms. Science: select the Guild Yard, wait for the
-scan. Comms: select it, press Hail. Helm: fly inside 600 and dock. Undock. Fly past the
-hulk. Science: select the Breaker Cutter. Comms: select it, press Hail. Hold near the
-cutter for ten seconds. Then cut to the end of the story: Bring the Log Home showing, the
-ship at the Guild Yard, nothing; the ship at DS 1, the win.
+**Screen:** Server, Helm, Science and Comms. Science: pick the Guild Yard from the
+contact list; a station in range is already scanned. Comms: select it, press Hail, click
+the answer's header in the message list. Helm: fly inside 600 and dock. Undock. Fly past
+the hulk. Science: pick the Breaker Cutter on the map and scan it if it is not scanned
+yet. Comms: select it, press Hail, click the header. Hold near the cutter for ten seconds.
+Then cut to the end of the story: the ship at the Guild Yard, Bring the Log Home still
+Active in the Quest Log; the ship at DS 1, the win.
 
-**Say:** "Here's the yard on Science. || It's unknown until the scan is done, | and then
-it's green, with the word guild beside it. || On Comms I hail them, | and they tell me I
-have full docking privileges. || And Helm can dock. ||| Now the other one. || It's red,
+**Say:** "Here's the yard on Science. || A station in range scans itself, | so I don't
+even press Queue Scan. || It's green, with the word guild beside it. || On Comms I hail
+them, | and their answer arrives as a header in the message list. || I click the header to
+read it. || And Helm can dock. ||| Now the other one. || It's red,
 with the word breaker beside it, | and it reads enemy vessel, exercise caution. || I hail
-it, and it tells me to go away. || And then it just sits there, | because being enemies
-doesn't start a fight. ||| One last thing: I carry the log to the yard, and nothing
-happens. || I carry it to DS 1, and we're home. ||"
+it, and it answers with one of the game's own pirate lines. || And then it just sits there, | because being enemies
+doesn't start a fight. ||| One last thing: I carry the log to the yard. || The Quest
+Log still says Active, | because the yard isn't home. || I carry it to DS 1, and we're
+home. ||"
 
 ### 10. Your turn
 

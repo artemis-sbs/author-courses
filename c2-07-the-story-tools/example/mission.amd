@@ -60,7 +60,17 @@ Fails when: 10 minutes
 Win: The log is home. DS 1 knows what happened out there.
 Lose: The reactor let go with the log still aboard.
 ---
+![](ship://starbase_command) Orders from DS 1, the station you started at.
+
 The hulk's reactor is failing. Get her flight log back to DS 1 before she goes.
+
+| What | What DS 1 knows |
+|---|---|
+| Her reactor | Failing. Ten minutes, maybe less |
+| Her flight log | Aboard, as far as anyone can tell |
+| Her crew | Six when she sailed. None answering |
+
+The log is the only record of where she has been. Lose it, and nobody will ever know who sent her.
 
 #### [Close Inspection](approach)
 = The crew sees the hulk up close. DS 1 sees them do it, and that starts the talking.
@@ -74,7 +84,15 @@ Then: reveal salvage/boat
 Part of: salvage
 Required: true
 ---
+![](face://ter #e4cb8e 1 0;ter #fff 12 6;ter #e4cb8e 3 1;ter #e4cb8e 5 2;ter #704025 7 3;) Harbormaster Quill, DS 1 traffic control
+
 The hulk is not answering hails. Bring the ship in close and take a look.
+
+DS 1 has called her on every channel for an hour. Nothing has come back, not even a carrier wave.
+
+## Why it matters
+
+A ship with nobody at the helm is a danger to every lane near the border. If she is empty, DS 1 needs to know why. If she is not, somebody aboard needs help.
 
 #### [Find the Lifeboat](boat)
 ---
@@ -143,8 +161,12 @@ Objective: Give the salvage beacon 30 seconds to set
 Done when: 30 seconds
 Then: reveal report_in
 ---
+![](face://ter #e4cb8e 1 0;ter #fff 12 6;ter #e4cb8e 3 1;ter #e4cb8e 5 2;ter #704025 7 3;) Harbormaster Quill, DS 1 traffic control
+
 DS 1 wants a salvage beacon on the hulk before the Breakers find her. It pays when
 the ship reports back.
+
+A beacon makes her a claim on DS 1's salvage ledger. Until one is set, she belongs to whoever gets a line on her first, and the Breaker Cutter is already standing off.
 
 ### [Report to DS 1](report_in)
 = End of act one. The crew has done DS 1 a favor, and now DS 1 owes them the truth.
@@ -157,7 +179,11 @@ Then: reveal claim
 Action:
   - quill hails quill_thanks
 ---
+![](face://ter #d2b2a1 0 0;ter #fff 13 6;ter #d2b2a1 11 1;ter #d2b2a1 12 2;ter #934e2c 11 3;ter #fff 9 5;) Chief Ives, salvage desk, DS 1
+
 The beacon is live. DS 1 pays when she hears it from the ship. Chief Ives says [[vane]] has been asking what she is worth.
+
+Chief Ives will not write a claim into the ledger on a beacon's signal alone. Somebody aboard the ship that set it has to say so on Comms, so that it is on the record.
 
 ### [The Claim](claim)
 = Act two. The hulk is the crew's for one hour, and two others want her.
@@ -169,6 +195,15 @@ Done when: 60 seconds
 Reward: 200 credits
 ---
 Chief Ives has logged the hulk as yours for one hour. Stay with her until the ledger closes.
+
+## Who else wants her
+
+| Who | Wants her for |
+|---|---|
+| Captain Sable, the Breaker Cutter | Parts. She has never paid for a ship |
+| Assessor Vane, the Harbor Guild | Her value. He pays, and he pays low |
+
+A claim holds only while the ship that made it stands by. Leave her, and the first hull alongside can take her.
 
 // ---- Science scans. `Scan of:` names a ROLE, so one record covers every object wearing
 // it. `Tab:` picks which science tab the text lands in, and each `%` line is one of

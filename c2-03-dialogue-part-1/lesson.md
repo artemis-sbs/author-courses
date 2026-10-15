@@ -161,7 +161,7 @@ Leave a blank line below it, above the `// ---- Science scans` note.
 | Line | What it means |
 |---|---|
 | `### [DS 1 Calls](ds1_calls)` | **Three** hashes. This is a record of its own, not a step of Salvage Run |
-| `Beat` | A kind word, alone on the first line of the fence, the way `Arc` was in Lecture 9. A beat is a moment in the story, not a job. It is not in the Quest Log |
+| `Beat` | A kind word, alone on the first line of the fence, the way `Arc` was in Lecture 9. A beat is a moment in the story, not a quest. It is not in the Quest Log |
 | `Starts when: reach derelict 500` | When the moment comes. See below |
 | `Action:` | What happens the moment it starts |
 | `  - quill hails quill_hello` | Two spaces, a dash, a space. Then who calls, the word `hails`, and the key of the scene |
@@ -251,7 +251,6 @@ read the list of calls a Comms console would show, opened the call, and pressed
 | No `When: hail` line, or `When: comms` | Places the call all the same | `hail-not-a-hail` |
 | Curly quotes or a long dash in a take | Shows the plain character in its place | `non-ascii`, once for each |
 | Two scenes with the same key | Uses the lower one | `duplicate-key` |
-
 | A scene with no takes | Opens a call with nothing said | `hail-empty` |
 | A take broken onto two lines | Each half is a take, so the crew gets half a sentence | `line-wrapped`, on the second half |
 | `####` on the scene's heading | Reads it as if it had three. Fix it all the same | `heading-level-jump`, an error |
@@ -288,7 +287,7 @@ read the list of calls a Comms console would show, opened the call, and pressed
 | `Starts when: reach derelict` (no number) | The call still arrives when the ship is close. Give the number all the same: without it the game decides how close |
 | The beat typed with four hashes | It becomes a step of Quick Work. The call still arrives. Give it three |
 | The beat typed down in the Dialogue section | No call arrives |
-| No `Beat` line | No call arrives. DS 1 Calls is an ordinary job now, on offer on the Quest Log's second list, Available Quests |
+| No `Beat` line | No call arrives. DS 1 Calls is an ordinary quest now, on offer on the Quest Log's second list, Available Quests |
 | Two `- quill hails quill_hello` lines | The call is placed once |
 | `- quill hails` with no scene after it | The call still arrives. Name the scene all the same |
 | No `Title:` line | The call is listed as `Harbormaster Quill`, and nothing else |
@@ -313,7 +312,6 @@ read the list of calls a Comms console would show, opened the call, and pressed
 | `Action: quill hails quill_hello`, all on one line | Works. Use the list all the same: a beat can do more than one thing |
 | `beat` with a small b | Works |
 | A `#` typed in front of line 49 of `story.mast` | The call still arrives in this mission. Leave the line alone all the same |
-
 | `Speaker: sable`, `- sable hails quill_hello`, and `@sable` above each block | Works. Anyone in your cast can call, whatever side they are on. Change all three: the list shows the `Speaker:`, and each block is spoken by the person its `@` line names |
 
 
@@ -356,7 +354,6 @@ scene may read differently.
 | She says one thing where you wrote two | The second block has no `@quill` line above it, or that line has something else on it |
 | Now and then she says `@Harbormaster Quill` out loud | The same. An `@` line is `@` and a key, and nothing else |
 | No call arrives, and DS 1 Calls is in the Quest Log, under Available Quests | The `Beat` line is missing, or has a colon |
-
 | After a play, `mast.runtime.log` has a line about `hails` | The beat's `Action:` line names a scene the game does not have |
 
 ## Exercise

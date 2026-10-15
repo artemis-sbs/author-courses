@@ -16,7 +16,7 @@ words on a quest and on an answer, then one beat and one scene. Nothing in `stor
 changes.
 
 This is a first look. Class 5 comes back to reputation in Open Universe, where standing
-also sets prices, jobs and ceasefires. Everything you learn today is true there too.
+also sets prices, quests and ceasefires. Everything you learn today is true there too.
 
 ## The video
 
@@ -24,7 +24,7 @@ also sets prices, jobs and ceasefires. Everything you learn today is true there 
 
 ## Before you start
 
-- Your mission as Lecture 5 left it. The crew tags the hulk for DS 1, and the job pays
+- Your mission as Lecture 5 left it. The crew tags the hulk for DS 1, and the quest pays
   when Comms tells Quill and Chief Ives that the beacon is set.
 - `sbs lint MyMission` says `clean`.
 - The game closed.
@@ -336,7 +336,11 @@ Reward: 150 credits, earns guild honest 30
 Action:
   - quill hails quill_thanks
 ---
+![](face://ter #d2b2a1 0 0;ter #fff 13 6;ter #d2b2a1 11 1;ter #d2b2a1 12 2;ter #934e2c 11 3;ter #fff 9 5;) Chief Ives, salvage desk, DS 1
+
 The beacon is live. DS 1 pays when she hears it from the ship.
+
+Chief Ives will not write a claim into the ledger on a beacon's signal alone. Somebody aboard the ship that set it has to say so on Comms, so that it is on the record.
 
 ### [The Yard Calls](yard_calls)
 ---
@@ -416,7 +420,7 @@ sbs lint MyStanding
 ```
 
 Every row below was made on purpose, one at a time, on the finished file. Lint was run,
-and then the game was run without a screen, by a script that took the job, reported,
+and then the game was run without a screen, by a script that took the quest, reported,
 flew to the yard, opened the call and read what was said and what was offered.
 
 Lint knows your sides and it knows the fourteen traits. This is what it says when the
@@ -424,7 +428,7 @@ side after `earns` is misspelled:
 
 ```
 == mission.amd ==
-  [WARNING] line 151: `earns gild honest 30` - `gild` is not a side in this mission, so the standing is filed where nobody looks. A side is named by its key, the word in round brackets on its heading. Declared here: breaker, guild, tsn. (earns-unknown-side)
+  [WARNING] line 173: `earns gild honest 30` - `gild` is not a side in this mission, so the standing is filed where nobody looks. A side is named by its key, the word in round brackets on its heading. Declared here: breaker, guild, tsn. (earns-unknown-side)
 
 1 amd + 1 mast file(s): 0 error(s), 1 warning(s)
 ```
@@ -564,7 +568,7 @@ Lecture 7 is the story tools: four ways to see a whole story at once. It starts 
 - "Sides, lifeforms & faces" in the library documentation, the part headed "Reputation: a
   side that values deeds".
 - Class 5, Lecture 4 is reputation in Open Universe: the same six kinds of line, and what
-  standing does there to jobs, prices and ceasefires.
+  standing does there to quests, prices and ceasefires.
 
 That documentation mentions two things this lecture left out.
 

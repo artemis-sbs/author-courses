@@ -1,10 +1,13 @@
-s01_cold_open_0	Your map has sides now,
-s01_cold_open_1	but there's nobody on them.
-s01_cold_open_2	Today we fix that.
-s01_cold_open_3	We're going to write three people,
-s01_cold_open_4	and give each of them a face.
-s01_cold_open_5	It's one new section in your fact sheet,
-s01_cold_open_6	and you won't touch the story file at all.
+s01_cold_open_0	This is the Quest Log on Helm's handheld,
+s01_cold_open_1	and under Close Inspection's order there's a face: Harbormaster Quill of DS 1.
+s01_cold_open_2	By the end of today, she's one of yours.
+s01_cold_open_3	Your map has sides now,
+s01_cold_open_4	but there's nobody on them.
+s01_cold_open_5	Today we fix that.
+s01_cold_open_6	We're going to write three people,
+s01_cold_open_7	and give each of them a face.
+s01_cold_open_8	It's one new section in your fact sheet,
+s01_cold_open_9	and you won't touch the story file at all.
 s02_one_person_0	First, one line of the story file, just to read.
 s02_one_person_1	In Lecture 11 this line was marked for Class 2.
 s02_one_person_2	It makes a person from every record of a section called characters,
@@ -93,13 +96,29 @@ s09_what_lint_cannot_see_7	and that's no face at all.
 s09_what_lint_cannot_see_8	Lint knows where a person's record belongs.
 s09_what_lint_cannot_see_9	It doesn't read what comes after Face.
 s09_what_lint_cannot_see_10	So that part you check with your own eyes.
-s10_look_at_them_0	Nobody speaks yet, so the game has nothing new to show.
+s10_look_at_them_0	Nobody speaks yet, so the game has almost nothing new to show.
 s10_look_at_them_1	But I can look at my cast right here.
 s10_look_at_them_2	I click inside her record,
 s10_look_at_them_3	I open that box again, and I type preview node.
 s10_look_at_them_4	There's Quill, and she'll look like that in every game from now on.
 s10_look_at_them_5	And there's Ives, and there's Sable.
-s11_your_turn_0	Now it's your turn: add a fourth person of your own,
-s11_your_turn_1	from a people you haven't used.
-s11_your_turn_2	Roll a face, and then change two things about it in the builder.
-s11_your_turn_3	Next time, the harbormaster picks up the microphone.
+s11_her_face_on_a_job_0	There is one place the game can show her today,
+s11_her_face_on_a_job_1	and it's the Quest Log.
+s11_her_face_on_a_job_2	Here's Close Inspection, in the list.
+s11_her_face_on_a_job_3	Under its order, before the first paragraph, there's Quill.
+s11_her_face_on_a_job_4	Her portrait, with her name and her job beside it.
+s11_her_face_on_a_job_5	In Class 1 we learned that a description is a page.
+s11_her_face_on_a_job_6	A page can hold a face, too.
+s11_her_face_on_a_job_7	I don't type her face.
+s11_her_face_on_a_job_8	I copy it from her record, all of it,
+s11_her_face_on_a_job_9	down to the last semicolon.
+s11_her_face_on_a_job_10	Then exclamation mark, empty square brackets,
+s11_her_face_on_a_job_11	and face, colon, two slashes.
+s11_her_face_on_a_job_12	Then I paste, type a closing bracket,
+s11_her_face_on_a_job_13	and the words that go beside her.
+s11_her_face_on_a_job_14	Lint doesn't read that line,
+s11_her_face_on_a_job_15	so if you change her face later, change this copy too.
+s12_your_turn_0	Now it's your turn: add a fourth person of your own,
+s12_your_turn_1	from a people you haven't used.
+s12_your_turn_2	Roll a face, and then change two things about it in the builder.
+s12_your_turn_3	Next time, the harbormaster picks up the microphone.

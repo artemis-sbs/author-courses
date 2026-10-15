@@ -5,16 +5,19 @@ s01_cold_open_3	When the crew gets close to the hulk, she calls the ship,
 s01_cold_open_4	and what she says is different from one game to the next.
 s01_cold_open_5	It's one scene and one short record,
 s01_cold_open_6	all in your fact sheet.
-s02_the_scene_0	First, the last of the lines that Lecture 11 marked for Class 2.
-s02_the_scene_1	It reads every scene in a section called dialogue,
-s02_the_scene_2	so that's the section I write.
-s02_the_scene_3	A scene is a record, like everything else.
-s02_the_scene_4	Speaker is who's talking, and it takes her key.
-s02_the_scene_5	When hail means this is a call that comes in to the ship.
-s02_the_scene_6	And the title is what the call is about,
-s02_the_scene_7	which the crew reads before they answer.
-s02_the_scene_8	Below the fence come the lines she says,
-s02_the_scene_9	and each one starts with a percent sign.
+s02_the_scene_0	Here's where we're going, on the Comms console.
+s02_the_scene_1	The call is open, with her face and her name,
+s02_the_scene_2	and the title, About that hulk, is a line I wrote.
+s02_the_scene_3	First, the last of the lines that Lecture 11 marked for Class 2.
+s02_the_scene_4	It reads every scene in a section called dialogue,
+s02_the_scene_5	so that's the section I write.
+s02_the_scene_6	A scene is a record, like everything else.
+s02_the_scene_7	Speaker is who's talking, and it takes her key.
+s02_the_scene_8	When hail means this is a call that comes in to the ship.
+s02_the_scene_9	And the title is what the call is about,
+s02_the_scene_10	which the crew reads before they answer.
+s02_the_scene_11	Below the fence come the lines she says,
+s02_the_scene_12	and each one starts with a percent sign.
 s03_takes_0	I wrote three of those lines,
 s03_takes_1	but she won't say all three.
 s03_takes_2	Each one is a take,
@@ -25,33 +28,38 @@ s03_takes_6	and she stops sounding like a recording.
 s03_takes_7	Just keep each take on one line,
 s03_takes_8	however long it gets.
 s04_a_second_thing_to_say_0	But what if she has two things to say, one after the other?
-s04_a_second_thing_to_say_1	Then I write blocks.
-s04_a_second_thing_to_say_2	A block starts with an at sign and her key,
-s04_a_second_thing_to_say_3	with nothing else on that line.
-s04_a_second_thing_to_say_4	So here's her greeting,
-s04_a_second_thing_to_say_5	and here's her question.
-s04_a_second_thing_to_say_6	The game takes one take from each block.
-s04_a_second_thing_to_say_7	The crew reads the first, presses Continue,
-s04_a_second_thing_to_say_8	and reads the second.
+s04_a_second_thing_to_say_1	On Comms, she greets the ship, I press Continue,
+s04_a_second_thing_to_say_2	and then she asks her question.
+s04_a_second_thing_to_say_3	For that, I write blocks.
+s04_a_second_thing_to_say_4	A block starts with an at sign and her key,
+s04_a_second_thing_to_say_5	with nothing else on that line.
+s04_a_second_thing_to_say_6	So here's her greeting,
+s04_a_second_thing_to_say_7	and here's her question.
+s04_a_second_thing_to_say_8	The game takes one take from each block.
+s04_a_second_thing_to_say_9	The crew reads the first, presses Continue,
+s04_a_second_thing_to_say_10	and reads the second.
 s05_nobody_calls_yet_0	Lint is clean, and yet if I played this now, nobody would call.
 s05_nobody_calls_yet_1	A scene is only words on a page
 s05_nobody_calls_yet_2	until something in the story places the call.
 s05_nobody_calls_yet_3	And the thing that places it lives up here, among my quests.
-s06_the_beat_0	It's a record with three hashes,
-s06_the_beat_1	so it stands by itself, outside the arc.
-s06_the_beat_2	The first line of the fence is the word Beat,
-s06_the_beat_3	alone, the way the word Arc was in Lecture 9.
-s06_the_beat_4	A beat is a moment in the story.
-s06_the_beat_5	It isn't a job, and it's not in the Quest Log.
-s06_the_beat_6	Now, when does the moment come?
-s06_the_beat_7	Until today, after Starts when,
-s06_the_beat_8	you've written at once, or revealed.
-s06_the_beat_9	But that line takes the same words as Done when.
-s06_the_beat_10	So I write reach, derelict, five hundred,
-s06_the_beat_11	and those are the very words that finish Close Inspection.
-s06_the_beat_12	Then Action, which is what happens when the beat starts.
-s06_the_beat_13	On the next line, two spaces and a dash,
-s06_the_beat_14	and then who calls, the word hails, and the scene's key.
+s06_the_beat_0	Here's the moment on Comms:
+s06_the_beat_1	a row in the Incoming Hails list,
+s06_the_beat_2	the second the ship gets inside five hundred of the hulk.
+s06_the_beat_3	In the file, it's a record with three hashes,
+s06_the_beat_4	so it stands by itself, outside the arc.
+s06_the_beat_5	The first line of the fence is the word Beat,
+s06_the_beat_6	alone, the way the word Arc was in Lecture 9.
+s06_the_beat_7	A beat is a moment in the story.
+s06_the_beat_8	It isn't a quest, and it's not in the Quest Log.
+s06_the_beat_9	Now, when does the moment come?
+s06_the_beat_10	Until today, after Starts when,
+s06_the_beat_11	you've written at once, or revealed.
+s06_the_beat_12	But that line takes the same words as Done when.
+s06_the_beat_13	So I write reach, derelict, five hundred,
+s06_the_beat_14	and those are the very words that finish Close Inspection.
+s06_the_beat_15	Then Action, which is what happens when the beat starts.
+s06_the_beat_16	On the next line, two spaces and a dash,
+s06_the_beat_17	and then who calls, the word hails, and the scene's key.
 s07_what_lint_cannot_see_0	Lint knows this lecture well,
 s07_what_lint_cannot_see_1	and the page has its tables.
 s07_what_lint_cannot_see_2	But two mistakes get past it, and you'll make both.

@@ -83,7 +83,8 @@ A raider warlord and their honor guard warp in to break the defenders.
 | `Named: Warlord kralien_dreadnought` | The flagship: its name, then which ship it is |
 | The last line | A description, for you. The game does not show it to the crew |
 
-**The objective.** This is a quest, exactly like the ones you wrote in Class 1.
+**The objective.** This is a quest, exactly like the ones you wrote in Class 1. The crew
+reads it in the Quest Log, on Helm's handheld, when the boss arrives.
 
 ```
 ## [Defeat the Warlord](defeat_warlord)
@@ -325,7 +326,7 @@ The line for the flagship, in full:
 2. On the left, stay on **Siege**.
 3. On the right is the panel named **Options**. Open the list on its **Boss** line.
 
-Corsair Queen is in the list, under the game's own bosses. Choose her, then press
+Corsair Queen is in the list, at the top, above the game's own bosses. Choose her, then press
 **Start Mission**.
 
 The game reads both `bosses` folders when the mission starts. If you add or rename a boss
@@ -347,9 +348,11 @@ She does not come because time passes. If nobody destroys a raider, she never ar
 
 When she arrives you should see:
 
-- a ship named **Morrigan** among the raiders,
+- a ship named **Morrigan** among the raiders. Science's contact list shows a raider as
+  `unknown` until it is scanned, so find her on Science's map, or scan the raiders and
+  then press the chip for her race (`kralien-o`): she is the row named Morrigan,
 - two new raider fleets with her, a few ships in each,
-- a new objective, **Sink the Morrigan**, in the Quest Log.
+- a new objective, **Sink the Morrigan**, in the Quest Log on Helm's handheld.
 
 Nothing tells the crew that she has arrived, or that the list has grown. Lecture 10
 shows one way to say so, and Lecture 11 gives her a voice.

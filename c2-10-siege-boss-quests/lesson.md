@@ -58,7 +58,7 @@ It holds four quests. They are the Siege's tree.
 | Repel the Siege | `siege_mission` | `Win:` | The top of the tree. When it is finished, the game is won |
 | Break the Siege | `break_siege` | `Required: true`, `Done when: signal siege_won` | The Siege sends `siege_won` when every raider is gone |
 | Hold the Starbases | `hold_stations` | `Lose:` | Fails when the last starbase is destroyed. The game is lost |
-| Break It in Time | `beat_clock` | `Lose:` | Fails when the time limit runs out, if the server set **Survive Clock** to Loss. The game is lost |
+| Break It in Time | `beat_clock` | `Lose:` | Fails when the time limit runs out, if the server set **Survive Clock** to Loss. The game is lost. It is in the Quest Log, Active, even with Survive Clock left as it is |
 
 So a Siege with no boss is won when every raider is gone, and lost when the starbases
 are.
@@ -133,10 +133,26 @@ Objective: Destroy the Badb
 Done when: destroy 1 badb
 Reward: 300 credits
 ---
+[](ship://pirate_strongbow) The Badb, the Queen's second ship
+
 A bonus. The Badb is the Queen's second ship. The siege can be won without sinking her.
 ```
 
 Two hashes: it is an objective of the boss, like the first one.
+
+The first line of the description is the ship itself. The Quest Log, on Helm's handheld,
+draws the Badb in 3D,
+about four lines tall, with your words above her as her caption:
+
+| Part | What it is |
+|---|---|
+| `[](ship://` | The start: empty square brackets, a round bracket, and `ship://`. No exclamation mark is needed |
+| `pirate_strongbow` | The ship key. The same word as on your `Named:` line, after `Badb` |
+| `)` | The end of the ship |
+| `The Badb, the Queen's second ship` | Her caption, drawn centered above her |
+
+Then a blank line, and the description as before. If you change the Badb's ship on the
+`Named:` line, change it here too: nothing joins the two, and lint reads neither.
 
 It has no `Required:` line. The crew is paid 300 if they sink the Badb, and they can win
 without doing it.
@@ -170,15 +186,36 @@ Fails when: 10 minutes
 ```
 
 The crew gets no warning as the time runs down. So tell them the limit in words they
-read at the start. Change the `Objective:` line, and the description line under the fence:
+read at the start. Change the `Objective:` line, and replace the description under the
+fence with a page:
 
 ```
 Objective: Destroy the Morrigan within ten minutes
 ```
 
 ```
+[](ship://pirate_brigantine) The Morrigan, the Queen's flagship
+
 The Queen's flagship Morrigan leads the last assault. Sink her within ten minutes of her arrival, or the sector is lost.
+
+- ![](icon://hourglass) Ten minutes, from the moment she arrives.
+- ![](icon://skull) When the time is up, the game is lost.
 ```
+
+The ship line is the one you wrote for the Badb, with the Morrigan's ship from your
+`Named:` line. The last two lines are a list, and each item starts with an icon in place of
+its dash:
+
+| Part | What it is |
+|---|---|
+| `- ` | A list item: a hyphen and a space, as in Class 1 |
+| `![](icon://hourglass)` | An icon one line tall. `hourglass` is its name |
+| `Ten minutes, ...` | The words beside it |
+
+An icon's name has to be one the game has. A few that suit a briefing: `hourglass`,
+`skull`, `flag`, `wanted`, `shield`, `shield-broken`, `crosshair`, `radar`, `stop`,
+`handshake`, `first-aid`. There is no `warning`. A name the game does not have draws
+nothing, and lint says `clean`, so copy names from this list.
 
 If the crew sinks her in time, the objective is finished and the clock no longer matters.
 
@@ -341,6 +378,9 @@ On the ship line you change four things, and nothing else:
 | `pirate_brigantine` | A ship key from Lecture 9's table |
 | `nemain`, the last word | Her name in small letters. It is her role. Keep `raider, boss, ` in front of it |
 
+If you change `pirate_brigantine` on this line, change the ship line at the top of Sink the
+Nemain below to match.
+
 **The objectives.** A signal finishes a step, and a step can reveal another. That is the
 chain from Class 1. Type these two records at the very end of `corsair_queen.amd`:
 
@@ -357,6 +397,8 @@ Then: reveal sink_nemain
 ---
 The Queen never commits everything at once. Watch for a third ship.
 
+Somewhere out in the dark she is holding one more hull back, and she will send it in when it suits her, not when it suits you.
+
 ## [Sink the Nemain](sink_nemain)
 ---
 Quest
@@ -367,6 +409,8 @@ Objective: Destroy the Nemain
 Done when: destroy 1 nemain
 Reward: 400 credits
 ---
+[](ship://pirate_brigantine) The Nemain, the Queen's reserve
+
 The Nemain is here: the Queen's reserve. Sink her too.
 ```
 
@@ -500,11 +544,14 @@ For the mistakes nothing warns you about, check four things by eye:
 With the test numbers, this is what happens:
 
 1. About four seconds in, she arrives. Every crew ship is told `The Corsair Queen has
-   entered the sector.`
-2. The Quest Log has three new objectives: **Sink the Morrigan**, **Sink the Badb** and
-   **Her Reserve**. Sink the Nemain is not there.
-3. About ten seconds later the **Nemain** is on the map, 28000 from the middle, and she
-   starts to move. The crew is told `Quest complete: Her Reserve`. **Sink the Nemain** is
+   entered the sector.`, in red, in the strip under the left panel (on Helm, for one). It
+   stays about thirty seconds, and it is not kept in the Messages list.
+2. The Quest Log, on Helm's handheld, has three new objectives: **Sink the Morrigan**, **Sink the Badb** and
+   **Her Reserve**. Sink the Nemain is not there. Sink the Morrigan's row shows the time
+   left, such as `8:45 left`, in place of Active.
+3. About ten seconds later the **Nemain** arrives, 28000 from the middle, and she starts
+   to move. Find her on Science's map: the contact list reads `unknown` for a ship nobody
+   has scanned. The crew is told `Quest complete: Her Reserve`. **Sink the Nemain** is
    now in the list.
 4. Sink a named ship and its objective completes.
 5. When the Morrigan is sunk and every raider is gone, the game is won.
@@ -642,7 +689,12 @@ Fatal: true
 Lose: The Morrigan broke the line. The sector is hers.
 Reward: 600 credits
 ---
+[](ship://pirate_brigantine) The Morrigan, the Queen's flagship
+
 The Queen's flagship Morrigan leads the last assault. Sink her within ten minutes of her arrival, or the sector is lost.
+
+- ![](icon://hourglass) Ten minutes, from the moment she arrives.
+- ![](icon://skull) When the time is up, the game is lost.
 
 ## [Sink the Badb](sink_badb)
 ---
@@ -654,6 +706,8 @@ Objective: Destroy the Badb
 Done when: destroy 1 badb
 Reward: 300 credits
 ---
+[](ship://pirate_strongbow) The Badb, the Queen's second ship
+
 A bonus. The Badb is the Queen's second ship. The siege can be won without sinking her.
 
 ## [Her Reserve](reserve)
@@ -668,6 +722,8 @@ Then: reveal sink_nemain
 ---
 The Queen never commits everything at once. Watch for a third ship.
 
+Somewhere out in the dark she is holding one more hull back, and she will send it in when it suits her, not when it suits you.
+
 ## [Sink the Nemain](sink_nemain)
 ---
 Quest
@@ -678,6 +734,8 @@ Objective: Destroy the Nemain
 Done when: destroy 1 nemain
 Reward: 400 credits
 ---
+[](ship://pirate_brigantine) The Nemain, the Queen's reserve
+
 The Nemain is here: the Queen's reserve. Sink her too.
 ```
 

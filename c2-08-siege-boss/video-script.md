@@ -20,8 +20,10 @@
 > - **Seen in the real game:** Legendary Missions' start screen, Siege on the left, and the
 >   Options panel on the right with a Boss line. Nothing else in this lecture has been
 >   seen on a screen.
-> - The `narration\` folder beside this file was generated from the older script and is
->   stale.
+> - **2026-10-15, for the video:** the narration is regenerated. Scenes 3, 6, 7 and 9 show
+>   each thing in the game first (the Boss list, the boss selected on Science, the Quest Log on
+>   Helm's handheld), then the line that makes it. The storyboard is
+>   `narration\storyboard.py`.
 
 The companion page is `lesson.md`; the finished file is `example\corsair_queen.amd`.
 
@@ -94,17 +96,24 @@ one is a single file in a folder. || So if you add a file, you've added a boss. 
 
 ### 3. Read the Warlord
 
-**Screen:** VS Code, the `data\missions` folder open. Open `LegendaryMissions`, `maps`,
-`bosses`, `warlord.amd`. Highlight each line as it is named.
+**Screen:** The game first: the Boss list open on the Options panel, Warlord in it (from
+scene 2). Then a Siege with the Warlord arrived: his flagship selected on Science, `Warlord`
+at the top of the read-out, and Defeat the Warlord in the Quest Log on Helm's handheld. Then VS Code,
+the `data\missions` folder open. Open `LegendaryMissions`, `maps`, `bosses`,
+`warlord.amd`. Highlight each line as it is named.
 
-**Say:** "Here's the Warlord, and it's two records, | in the shape you already know: | a
-heading, a fence, and a body. || The first record is the boss herself. || There's one word
-alone on a line, the word Boss, | which says what kind of record this is. || Trigger and
-Low say when she arrives: | when a quarter of the raiders are left. || Flies and Fleets
-say what comes with her, | and Named is her flagship: | a name, and then which ship it is.
-||| The second record is a quest, | and you wrote plenty of those in Class 1. || It
-belongs to the Siege's own mission, | the crew needs it to win, | and it's done when the
-Siege says every raider is gone. ||"
+**Say:** "Before we open his file, here's the Warlord in the game. || He's a name in the
+Boss list, | and when he arrives, his flagship shows on Science, | with his name at the
+top. || And his objective, Defeat the Warlord, is in the Quest Log on Helm's handheld. ||| Here's his
+file, and it's two records, | in the shape you already know: | a heading, a fence, and a
+body. || The first record is the boss himself, | and the name in its heading is the one
+in the Boss list. || There's one word alone on a line, the word Boss, | which says what
+kind of record this is. || Trigger and Low say when he arrives: | when a quarter of the
+raiders are left. || Flies and Fleets say what comes with him, | and Named is his
+flagship: | a name, and then which ship it is. ||| The second record is a quest, | and
+it's the one in the Quest Log. || You wrote plenty of those in Class 1. || It belongs to
+the Siege's own mission, | the crew needs it to win, | and it's done when the Siege says
+every raider is gone. ||"
 
 ### 4. Make the copy
 
@@ -112,10 +121,8 @@ Siege says every raider is gone. ||"
 Folder, `bosses`. Right-click the new folder, Paste. Rename to `corsair_queen.amd`.
 
 **Say:** "Don't edit the Warlord. Copy it. || And don't paste it back into the game's own
-folder, | because that folder is replaced every time the game is updated. || Yours goes
-here instead: | common data, and then a folder called bosses. ||| The Siege reads both
-folders, | so a file in either one is a boss in the list. || For the file's name, | use
-small letters and underscores, with no spaces. ||"
+folder, | because that folder is replaced every time the game is updated. || Yours goes here instead, in common data, | and then a folder called bosses. ||| The Siege reads both
+folders, | so a file in either one is a boss in the list. || For the file's name, use small letters and underscores, | and leave out the spaces. ||"
 
 ### 5. Lint it before you change a word
 
@@ -133,25 +140,26 @@ warning, and it's the first thing we'll fix. ||"
 `Named: Morrigan kralien_dreadnought`. Briefly type `Iron Duke` as the name, pause on it,
 then undo.
 
-**Say:** "The square brackets hold what the crew reads, | and the round brackets hold the
-key, | which I make the same as my file's name. || Next is her flagship, | and I'm only
-changing the first word, the ship's name. ||| There's one trap here. || A flagship's name
+**Say:** "The square brackets hold the name the Boss list shows, | and the round brackets
+hold the key, | which I make the same as my file's name. || Next is her flagship, | the name Science shows at the top when she's selected, | and I'm only changing the first word, the
+ship's name. ||| There's one trap here, and it catches people. || A flagship's name
 has to be one word. || If I type Iron Duke, as two words, | the game reads a ship called
 Iron, | of a kind called Duke, | and there's no such kind of ship. || Lint does catch that
 one, | and it shows you the line to write instead. ||"
 
 ### 7. Write her words
 
-**Screen:** Replace the description line. Change the quest heading to
+**Screen:** Replace the description line. The Quest Log on Helm's handheld with Defeat
+the Warlord selected (from scene 3). Change the quest heading to
 `## [Sink the Morrigan](sink_morrigan)`, change the reward to 600, replace the last line.
 Replace the `//` notes at the top. Save. Run lint: `clean`.
 
 **Say:** "Now for the part you're here for. || Under the first fence goes one line about
 her. || That one's a note for you, and for anyone you give the file to, | because the game
-doesn't show it to the crew. || The objective is different, | since the crew does read
-that. || So it gets a new name, a new key, | what it pays, and a sentence in your own
-voice. ||| Leave the five lines in the middle alone today, | and keep the word credits
-after the number, | or nothing gets paid. || Then save, run lint again, | and this time it
+doesn't show it to the crew. || The objective is different, since the crew reads it in
+the Quest Log, | the way they read the Warlord's. || So it gets a new name, a new key, |
+what it pays, and a sentence in your own voice. ||| Leave the five lines in the middle alone today, | and keep the word credits
+after the number, or nothing gets paid. || Then save, run lint again, | and this time it
 says clean. ||"
 
 ### 8. See her in the list
@@ -163,26 +171,28 @@ Corsair Queen.
 **Say:** "To see her, I start the game the way you have since Class 1, | but with Legendary
 Missions as the mission, | and with no map on the end of the line. || That leaves the
 server on the start screen. || Siege is on the left, | and on the right is the Options
-panel, with a line called Boss. ||| And there she is, under the game's own four. || If
+panel, with a line called Boss. ||| And there she is, at the top of the list, | above the game's own four. || If
 she's missing for you, | the file's in the wrong folder, | or the game was already running
 when you saved it. ||"
 
 ### 9. Meet her
 
 **Screen:** VS Code, change `Low: 25%` to `Low: 90%`, save. Start the game again, choose
-her, start the mission. Destroy two raiders. The Morrigan arrives. Open the Quest Log.
+her, start the mission. Destroy two raiders. The Morrigan arrives: Science with her selected (her name
+in red at the top of the read-out), then the Quest Log on Helm's handheld.
 
 **Say:** "At twenty-five percent, you'd fight for a long time before she showed up. || So
 for testing, I set Low to ninety. || Now she comes when one raider in ten is gone, | which
-here is after the second kill. ||| There's the Morrigan, with her two fleets, | and
-there's my objective in the Quest Log, in my words. || Notice that nothing announced her. |
+here is after the second kill. ||| There's the Morrigan on Science, | her name in red at
+the top, | among the raiders. || And on Helm's handheld, there's my objective in the Quest
+Log, in my words. || Notice that nothing announced her. |
 The game doesn't tell the crew a boss has arrived, | and we'll do something about that
-later in the class. || When you've finished testing, | put Low back to twenty-five. ||"
+later in the class. || When you've finished testing, put Low back to twenty-five. ||"
 
 ### 10. Keep it safe, and your turn
 
-**Screen:** File Explorer: `data\missions\common_data\bosses`, with `corsair_queen.amd`
-in it, beside the `saves` folder.
+**Screen:** VS Code's file list: `common_data`, `bosses`, `corsair_queen.amd`, beside
+`LegendaryMissions`.
 
 **Say:** "This is why she lives out here. || You can update the game, | and this folder is
 left alone. || It's still one file on one computer, though, | so keep a copy somewhere
