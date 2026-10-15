@@ -1,50 +1,94 @@
 {
   "c1-01-what-you-are-going-to-build": {
-    "youtube": "Xyx0zujvAIU",
-    "minutes": 6
+    "youtube": "cyNIBzxMQ_E",
+    "minutes": 7
   },
   "c1-02-files-folders-command-prompt": {
-    "youtube": "oloVptKQtuQ",
+    "youtube": "aAKi-RE4C7c",
     "minutes": 10
   },
   "c1-03-editor-and-first-run": {
-    "youtube": "Q6D_hleogw4",
-    "minutes": 7
+    "youtube": "UIAq1o9fZKE",
+    "minutes": 8
   },
   "c1-04-markdown-in-twenty-minutes": {
-    "youtube": "x_u23OmoSTU",
-    "minutes": 8
+    "youtube": "e-389kyLWl8",
+    "minutes": 9
   },
   "c1-05-the-shape-of-a-record": {
-    "youtube": "Blopxvr72UQ",
-    "minutes": 6
-  },
-  "c1-06-lint-is-your-editor": {
-    "youtube": "SyNibfGDPTs",
-    "minutes": 8
-  },
-  "c1-07-roles-and-signals": {
-    "youtube": "vhfW7HcJm0U",
-    "minutes": 8
-  },
-  "c1-08-first-quest": {
-    "youtube": "yU4I7KlwxfM",
-    "minutes": 4
-  },
-  "c1-09-chains-and-trees": {
-    "youtube": "HeCe8w8_oJU",
-    "minutes": 6
-  },
-  "c1-10-things-quests-point-at": {
-    "youtube": "ImzXX4wpDHI",
+    "youtube": "8m11cvRDNA4",
     "minutes": 7
   },
-  "c1-11-just-enough-mast": {
-    "youtube": "dPG0NR8daCk",
+  "c1-06-lint-is-your-editor": {
+    "youtube": "LzeOHjqeM3A",
+    "minutes": 10
+  },
+  "c1-07-roles-and-signals": {
+    "youtube": "23PZwXPc_KI",
+    "minutes": 9
+  },
+  "c1-08-first-quest": {
+    "youtube": "_hICYlxA9Pc",
+    "minutes": 5
+  },
+  "c1-09-chains-and-trees": {
+    "youtube": "Be8CyASKCd0",
     "minutes": 8
   },
+  "c1-10-things-quests-point-at": {
+    "youtube": "SeDtCX5Rc_A",
+    "minutes": 8
+  },
+  "c1-11-just-enough-mast": {
+    "youtube": "l7eDifRwSOE",
+    "minutes": 9
+  },
   "c1-12-ship-a-quest-mission": {
-    "youtube": "02a98HOsBXU",
+    "youtube": "kiCLbKNPJDE",
+    "minutes": 8
+  },
+  "c2-01-sides-and-factions": {
+    "youtube": "g16UtSKX6f8",
+    "minutes": 8
+  },
+  "c2-02-characters-and-faces": {
+    "youtube": "gA8fw2t_hnw",
+    "minutes": 7
+  },
+  "c2-03-dialogue-part-1": {
+    "youtube": "qsN_lGSRAHY",
+    "minutes": 5
+  },
+  "c2-04-dialogue-part-2": {
+    "youtube": "DmOQ__tIly0",
+    "minutes": 7
+  },
+  "c2-05-hails": {
+    "youtube": "UXCG8ITF4hQ",
+    "minutes": 6
+  },
+  "c2-06-reputation-a-first-look": {
+    "youtube": "9UAbSZlhkOc",
+    "minutes": 7
+  },
+  "c2-07-the-story-tools": {
+    "youtube": "vxVUaIi3Ch0",
+    "minutes": 7
+  },
+  "c2-08-siege-boss": {
+    "youtube": "a6tF_rqaiNk",
+    "minutes": 6
+  },
+  "c2-09-siege-boss-fields": {
+    "youtube": "-QPPk_3N9pA",
+    "minutes": 5
+  },
+  "c2-10-siege-boss-quests": {
+    "youtube": "whfcdDW4as4",
+    "minutes": 8
+  },
+  "c2-11-a-boss-with-a-voice": {
+    "youtube": "PxiRzDK1ipc",
     "minutes": 7
   }
 }
