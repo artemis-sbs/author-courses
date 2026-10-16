@@ -4,7 +4,7 @@ s01_cold_open_2	and something in the cistern you can't talk to at all.
 s01_cold_open_3	They turn out to be the same kind of record,
 s01_cold_open_4	with one line between them.
 s02_a_person_0	Here's Pim in the game,
-s02_a_person_1	sitting in the scrub at the west end of the gully.
+s02_a_person_1	sitting in the scrub on the south side of the gully.
 s02_a_person_2	Pim belongs to a spot,
 s02_a_person_3	so first she gets a mark.
 s02_a_person_4	Then her record, under Old Marrow's.
@@ -78,13 +78,18 @@ s06_a_fight_and_getting_hurt_19	But one person alone wakes up next to whatever p
 s07_play_it_0	Three consoles this time.
 s07_play_it_1	The doctor talks to Pim.
 s07_play_it_2	Then two of them go down the stairs,
-s07_play_it_3	and stop at the foot.
-s07_play_it_4	Scan tells them what's in sight.
-s07_play_it_5	From the weapons console:
-s07_play_it_6	stun, then cut, twice, and then full.
-s07_play_it_7	And down it goes.
-s07_play_it_8	There's a tablet on the walkway where it fell,
-s07_play_it_9	and the engineer's story is complete.
+s07_play_it_3	and walk east until the crawler comes into view.
+s07_play_it_4	Scan tells them what's in sight,
+s07_play_it_5	and the crawler's line is there only while it's in sight.
+s07_play_it_6	From the weapons console,
+s07_play_it_7	stun to hold it,
+s07_play_it_8	then cut until it falls.
+s07_play_it_9	Shots miss a lot,
+s07_play_it_10	and no app tells you a shot hit or missed.
+s07_play_it_11	And down it goes,
+s07_play_it_12	with no full shot needed.
+s07_play_it_13	There's a tablet on the walkway where it fell,
+s07_play_it_14	and the engineer's story is complete.
 s08_what_lint_can_t_see_and_your_0	Lint knows a lot here.
 s08_what_lint_can_t_see_and_your_1	It knows the names of those signals,
 s08_what_lint_can_t_see_and_your_2	and it knows a crawler can't stand in water.

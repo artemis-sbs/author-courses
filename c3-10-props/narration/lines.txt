@@ -1,7 +1,7 @@
 s01_cold_open_0	Your maps have places on them.
 s01_cold_open_1	Today they get things:
 s01_cold_open_2	a locked door and its key,
-s01_cold_open_3	hung on a tent peg,
+s01_cold_open_3	left by a tent in the yard,
 s01_cold_open_4	and a panel only an engineer may touch.
 s01_cold_open_5	Every one of them is a few lines in the fact sheet,
 s01_cold_open_6	and what a thing does depends on which lines it has.
@@ -13,8 +13,8 @@ s02_what_a_prop_does_4	Is it something to pick up?
 s02_what_a_prop_does_5	Does it open a scene?
 s02_what_a_prop_does_6	It stops at the first yes.
 s02_what_a_prop_does_7	And if there's no yes at all,
-s02_what_a_prop_does_8	it shows the description.
-s02_what_a_prop_does_9	In the game, the key hangs on a tent peg in the yard.
+s02_what_a_prop_does_8	its description is on the handheld's Look app.
+s02_what_a_prop_does_9	In the game, the key lies by the foot of the tent.
 s02_what_a_prop_does_10	Click it, and the Pack app on the handheld has it.
 s02_what_a_prop_does_11	So here's the simplest prop there is.
 s02_what_a_prop_does_12	One line says Item,
@@ -47,13 +47,14 @@ s04_two_more_pickups_and_a_notic_6	Scene, and the key of a room,
 s04_two_more_pickups_and_a_notic_7	the same join you saw on the starter's terminal.
 s04_two_more_pickups_and_a_notic_8	And it has one more line:
 s04_two_more_pickups_and_a_notic_9	Once, and then yes.
-s04_two_more_pickups_and_a_notic_10	The room opens the first time,
-s04_two_more_pickups_and_a_notic_11	and after that a click only shows the description.
-s04_two_more_pickups_and_a_notic_12	Be careful with that one.
-s04_two_more_pickups_and_a_notic_13	It counts the room opening,
-s04_two_more_pickups_and_a_notic_14	not what anyone answered.
+s04_two_more_pickups_and_a_notic_10	The room opens the first time.
+s04_two_more_pickups_and_a_notic_11	After that a click only walks you up to it,
+s04_two_more_pickups_and_a_notic_12	and its description is on the Look app.
+s04_two_more_pickups_and_a_notic_13	Be careful with that one.
+s04_two_more_pickups_and_a_notic_14	It counts the room opening,
+s04_two_more_pickups_and_a_notic_15	not what anyone answered.
 s05_a_terminal_with_a_needs_0	In the game, the doctor clicks the pump panel,
-s05_a_terminal_with_a_needs_1	and the handheld tells her she'd need engineering.
+s05_a_terminal_with_a_needs_1	and the Look app tells her she'd need engineering.
 s05_a_terminal_with_a_needs_2	The pump panel is a terminal too,
 s05_a_terminal_with_a_needs_3	with one new line.
 s05_a_terminal_with_a_needs_4	Needs, and a job.
@@ -73,24 +74,26 @@ s06_their_rooms_and_a_true_warni_3	And the lever's answer sends a signal.
 s06_their_rooms_and_a_true_warni_4	Lint warns that nothing hears that signal.
 s06_their_rooms_and_a_true_warni_5	That's true for the moment.
 s06_their_rooms_and_a_true_warni_6	The next step is what hears it.
-s07_a_gate_a_hidden_cell_and_a_g_0	Downstairs in the game, the gate across the walkway is shut,
-s07_a_gate_a_hidden_cell_and_a_g_1	and the gauge stands out in the water.
-s07_a_gate_a_hidden_cell_and_a_g_2	Three marks in the cistern first,
-s07_a_gate_a_hidden_cell_and_a_g_3	one new legend line and one click each.
-s07_a_gate_a_hidden_cell_and_a_g_4	The sluice gate is a door with only one way to open.
-s07_a_gate_a_hidden_cell_and_a_g_5	Opens with, signal, and a name.
-s07_a_gate_a_hidden_cell_and_a_g_6	Nobody on the ground can force it.
-s07_a_gate_a_hidden_cell_and_a_g_7	The spare cell says Hidden until,
-s07_a_gate_a_hidden_cell_and_a_g_8	and the same name.
-s07_a_gate_a_hidden_cell_and_a_g_9	It isn't on the map at all until that signal is sent.
-s07_a_gate_a_hidden_cell_and_a_g_10	So one answer in the pump house does two things downstairs.
-s07_a_gate_a_hidden_cell_and_a_g_11	It opens the gate,
-s07_a_gate_a_hidden_cell_and_a_g_12	and it uncovers the cell.
-s07_a_gate_a_hidden_cell_and_a_g_13	The gauge stands out in the water.
-s07_a_gate_a_hidden_cell_and_a_g_14	Reach, and the number two,
-s07_a_gate_a_hidden_cell_and_a_g_15	lets a crew member use it from two cells away.
-s07_a_gate_a_hidden_cell_and_a_g_16	And lint is clean again,
-s07_a_gate_a_hidden_cell_and_a_g_17	because something hears the signal now.
+s07_a_gate_a_hidden_cell_and_a_g_0	Downstairs in the game, walk east along the walkway,
+s07_a_gate_a_hidden_cell_and_a_g_1	and the gate comes into view, shut across the way.
+s07_a_gate_a_hidden_cell_and_a_g_2	The gauge stands out in the water.
+s07_a_gate_a_hidden_cell_and_a_g_3	Three marks in the cistern first,
+s07_a_gate_a_hidden_cell_and_a_g_4	one new legend line and one click each.
+s07_a_gate_a_hidden_cell_and_a_g_5	The sluice gate is a door with only one way to open.
+s07_a_gate_a_hidden_cell_and_a_g_6	Opens with, signal, and a name.
+s07_a_gate_a_hidden_cell_and_a_g_7	Nobody on the ground can force it.
+s07_a_gate_a_hidden_cell_and_a_g_8	The spare cell says Hidden until,
+s07_a_gate_a_hidden_cell_and_a_g_9	and the same name.
+s07_a_gate_a_hidden_cell_and_a_g_10	It isn't on the map at all until that signal is sent.
+s07_a_gate_a_hidden_cell_and_a_g_11	So one answer in the pump house does two things downstairs.
+s07_a_gate_a_hidden_cell_and_a_g_12	It opens the gate,
+s07_a_gate_a_hidden_cell_and_a_g_13	and it uncovers the cell.
+s07_a_gate_a_hidden_cell_and_a_g_14	The gauge is out of reach in the water.
+s07_a_gate_a_hidden_cell_and_a_g_15	Reach, and the number two,
+s07_a_gate_a_hidden_cell_and_a_g_16	lets a crew member use it from two cells away.
+s07_a_gate_a_hidden_cell_and_a_g_17	On the walkway, the Look app offers it.
+s07_a_gate_a_hidden_cell_and_a_g_18	And lint is clean again,
+s07_a_gate_a_hidden_cell_and_a_g_19	because something hears the signal now.
 s08_what_lint_can_t_see_and_play_0	A word before you play.
 s08_what_lint_can_t_see_and_play_1	Lint reads a door now.
 s08_what_lint_can_t_see_and_play_2	Misspell the key's name, or the signal's,

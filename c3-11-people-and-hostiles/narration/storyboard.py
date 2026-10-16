@@ -14,7 +14,11 @@ the text hide the Side Bar, as every close view of this class does.
 THE TILE MAP EDITOR STILL (d_crawler) is taken in the add-on's own editor ("editor": "tiles",
 "view": "art"; see capture.web_steps).
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. The page plays with FOUR
+GAME STILLS. Taken 2026-10-16. What they showed: Pim sits on the south side of the gully;
+the crawler is NOT in sight from the foot of the stairs (seen from about 7, 1); its Scan line
+is there only while it is in sight; it fell to STUN and CUT shots, no FULL, with misses no
+app reports. The Tasks app does not show the Objective line (library, awaiting re-shoot).
+The yard exit is on the 18..25 loop since 2026-10-16 (see Lecture 9). The page plays with FOUR
 windows (server, engineering, weapons, science); the stills are taken in two games of THREE.
 Both use state final as the page has it (no probe-only change): the crew walks east by
 Lecture 9's path behind the relay house, five cells clear of the sentry's loop.
@@ -116,13 +120,13 @@ STILLS = {
     # cistern.tiles in the Tile Map Editor, Art, Things on: the crawler at 13, 3 and its dashed patrol loop
     "d_crawler": ("vscode", "final", 1, "mid", dict(_NS, file=CT, editor="tiles", view="art", zoom=48)),
     # THE REAL GAME (not taken yet). State final, two games of three windows; see the docstring
-    "game_l11_pim": ("game", "GAME A, Science (Dr Hale) in the gully: Pim sitting in the scrub at her camp (5, 8), at the west end"),
+    "game_l11_pim": ("game", "GAME A, Science (Dr Hale) in the gully: Pim sitting in the scrub at her camp (5, 8), on the south side"),
     "game_l11_pim_talk": ("game", "GAME A, Science, Pim clicked: her line '\"You are from the ship.\" She does not get up...' with her face, and two buttons, Ask what stopped her / Leave her be"),
     "game_l11_tasks": ("game", "GAME A, Engineering (Chief Okoro): the Tasks app, The Thing in the Sump listed, 'Clear the cistern walkway', not done"),
-    "game_l11_crawler": ("game", "GAME B, Engineering at the foot of the cistern stairs: the crawler on the far walkway at the east end of the tank"),
+    "game_l11_crawler": ("game", "GAME B, Engineering walked east to about 7, 1 (from the foot it is not in sight): the Tasks app, and the crawler on the east walkway"),
     "game_l11_scan": ("game", "GAME B, Engineering: the Scan app, what is in sight, the crawler's line 'Silicate shell, about the size of a dog...'"),
     "game_l11_fire": ("game", "GAME B, Weapons (Lt Reyes) at the foot of the stairs: the Fire app, STUN chosen, Arm"),
-    "game_l11_down": ("game", "GAME B, Weapons, after stun, cut, cut and full: the crawler gone, the tablet lying where it fell"),
+    "game_l11_down": ("game", "GAME B, Weapons, after a stun and CUT shots (no FULL): the crawler gone, the tablet lying where it fell"),
     "game_l11_done": ("game", "GAME B, Engineering: the Tasks app, The Thing in the Sump done"),
     # drawn
     "card_title": ("card", "title", {}),
@@ -139,16 +143,30 @@ STILLS = {
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 12", "sub": "Scenes on the ground"}),
 }
 
+# Marks on the game stills (fractions of the 1280x960 frame)
+_PI_PIM = ("rect", 0.195, 0.56, 0.235, 0.635)       # game_l11_pim: Pim in the scrub
+_PT_ROOM = ("rect", 0.67, 0.2, 0.985, 0.49)         # game_l11_pim_talk: her face, her line, two buttons
+_TK_SUMP = ("rect", 0.67, 0.29, 0.9, 0.355)         # game_l11_tasks: The Thing in the Sump, Active
+_CR_BUG = ("rect", 0.5, 0.49, 0.55, 0.54)           # game_l11_crawler: the crawler on the east walkway
+_CR_LEAD = ("rect", 0.665, 0.86, 0.99, 0.93)        # ... the lead: Sump crawler - 8 E
+_SC_LINE = ("rect", 0.665, 0.31, 0.99, 0.36)        # game_l11_scan: the crawler's line
+_SC_BUG = ("rect", 0.5, 0.385, 0.55, 0.43)          # ... the crawler, in sight
+_FI_STUN = ("rect", 0.67, 0.285, 0.99, 0.355)       # game_l11_fire: STUN chosen
+_FI_ARM = ("rect", 0.67, 0.93, 0.99, 0.995)         # ... Arm
+_FI_SAFE = ("rect", 0.785, 0.22, 0.875, 0.265)      # ... SAFE
+_DN_TABLET = ("rect", 0.5, 0.38, 0.545, 0.435)      # game_l11_down: the tablet where it fell
+_DN_DONE = ("rect", 0.67, 0.29, 0.9, 0.355)         # game_l11_done: The Thing in the Sump, Done
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
-        {"from": 0, "still": "game_l11_pim"},
-        {"from": 2, "still": "game_l11_crawler"},
+        {"from": 0, "still": "game_l11_pim", "marks": [_PI_PIM]},
+        {"from": 2, "still": "game_l11_crawler", "marks": [_CR_BUG]},
         {"from": 3, "still": "e_crawler", "marks": [("lines", 368, 383)]},
         {"from": 4, "still": "card_title"},
     ]},
     "s02_a_person": {"step": 1, "beats": [
         # the game first: Pim at her camp
-        {"from": 0, "still": "game_l11_pim"},
+        {"from": 0, "still": "game_l11_pim", "marks": [_PI_PIM]},
         {"from": 2, "still": "e_camp", "marks": [("lines", 20, 20), ("text", 32, "m")]},
         {"from": 4, "still": "e_pim", "marks": [("lines", 333, 344)]},
         {"from": 5, "still": "e_pim", "marks": [("lines", 336, 337)]},
@@ -161,14 +179,14 @@ BOARD = {
     ]},
     "s03_what_she_says": {"step": 3, "beats": [
         # the game first: her room on the handheld
-        {"from": 0, "still": "game_l11_pim_talk"},
+        {"from": 0, "still": "game_l11_pim_talk", "marks": [_PT_ROOM]},
         {"from": 2, "still": "e_rooms", "marks": [("lines", 489, 500)]},
         {"from": 4, "still": "e_rooms", "marks": [("lines", 491, 491)]},
         {"from": 5, "still": "e_rooms", "marks": [("lines", 497, 497)]},
     ]},
     "s04_a_hostile": {"step": 4, "beats": [
         # the game first: the crawler downstairs
-        {"from": 0, "still": "game_l11_crawler"},
+        {"from": 0, "still": "game_l11_crawler", "marks": [_CR_BUG]},
         {"from": 1, "still": "e_crawler", "marks": [("lines", 368, 383)]},
         {"from": 2, "still": "e_pim", "marks": [("lines", 340, 340)]},
         {"from": 3, "still": "e_crawler", "marks": [("lines", 370, 382)]},
@@ -179,11 +197,11 @@ BOARD = {
         {"from": 9, "still": "card_hostile", "marks": [("part", "r7")]},
         {"from": 10, "still": "d_crawler"},
         {"from": 14, "still": "e_crawler", "marks": [("lines", 371, 371), ("lines", 379, 379)]},
-        {"from": 17, "still": "game_l11_crawler"},
+        {"from": 17, "still": "game_l11_crawler", "marks": [_CR_BUG]},
     ]},
     "s05_a_quest_it_finishes": {"step": 5, "beats": [
         # the game first: the engineer's Tasks app
-        {"from": 0, "still": "game_l11_tasks"},
+        {"from": 0, "still": "game_l11_tasks", "marks": [_TK_SUMP]},
         {"from": 3, "still": "e_sump", "marks": [("lines", 126, 126)]},
         {"from": 5, "still": "e_sump", "marks": [("text", 126, "hostile_down_crawler")]},
         {"from": 6, "still": "e_sump", "marks": [("lines", 121, 129)]},
@@ -192,6 +210,8 @@ BOARD = {
     ]},
     "s06_a_fight_and_getting_hurt": {"step": 6, "beats": [
         {"from": 0, "still": "game_l11_fire"},
+        {"from": 2, "still": "game_l11_fire", "marks": [_FI_STUN, _FI_ARM]},
+        {"from": 4, "still": "game_l11_fire", "marks": [_FI_SAFE]},
         {"from": 5, "still": "card_settings", "marks": [("part", "r1")]},
         {"from": 6, "still": "card_settings", "marks": [("part", "r2")]},
         {"from": 7, "still": "card_settings", "marks": [("part", "r3")]},
@@ -203,12 +223,15 @@ BOARD = {
     ]},
     "s07_play_it": {"step": 9, "beats": [
         {"from": 0, "still": "card_run"},
-        {"from": 1, "still": "game_l11_pim_talk"},
-        {"from": 2, "still": "game_l11_crawler"},
-        {"from": 4, "still": "game_l11_scan"},
-        {"from": 5, "still": "game_l11_fire"},
-        {"from": 7, "still": "game_l11_down"},
-        {"from": 9, "still": "game_l11_done"},
+        {"from": 1, "still": "game_l11_pim_talk", "marks": [_PT_ROOM]},
+        {"from": 2, "still": "game_l11_crawler", "marks": [_CR_BUG, _CR_LEAD]},
+        {"from": 4, "still": "game_l11_scan", "marks": [_SC_LINE]},
+        {"from": 5, "still": "game_l11_scan", "marks": [_SC_LINE, _SC_BUG]},
+        {"from": 6, "still": "game_l11_fire", "marks": [_FI_STUN]},
+        {"from": 9, "still": "game_l11_fire", "marks": [_FI_SAFE]},
+        {"from": 11, "still": "game_l11_down"},
+        {"from": 13, "still": "game_l11_down", "marks": [_DN_TABLET]},
+        {"from": 14, "still": "game_l11_done", "marks": [_DN_DONE]},
     ]},
     "s08_what_lint_can_t_see_and_your": {"step": 8, "beats": [
         {"from": 0, "still": "t_final", "marks": [("part", "run1:clean")]},

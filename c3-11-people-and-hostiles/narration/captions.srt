@@ -24,7 +24,7 @@ Here's Pim in the game,
 
 7
 00:00:26,554 --> 00:00:31,337
-sitting in the scrub at the west end of the gully.
+sitting in the scrub on the south side of the gully.
 
 8
 00:00:33,137 --> 00:00:35,311
@@ -319,81 +319,101 @@ The doctor talks to Pim.
 Then two of them go down the stairs,
 
 81
-00:05:32,572 --> 00:05:34,746
-and stop at the foot.
+00:05:32,572 --> 00:05:36,485
+and walk east until the crawler comes into view.
 
 82
-00:05:35,646 --> 00:05:38,254
-Scan tells them what's in sight.
+00:05:37,385 --> 00:05:39,993
+Scan tells them what's in sight,
 
 83
-00:05:40,054 --> 00:05:41,793
-From the weapons console:
+00:05:40,443 --> 00:05:45,226
+and the crawler's line is there only while it's in sight.
 
 84
-00:05:42,243 --> 00:05:45,287
-stun, then cut, twice, and then full.
+00:05:47,026 --> 00:05:48,765
+From the weapons console,
 
 85
-00:05:46,187 --> 00:05:47,926
-And down it goes.
+00:05:49,215 --> 00:05:50,954
+stun to hold it,
 
 86
-00:05:48,376 --> 00:05:52,289
-There's a tablet on the walkway where it fell,
+00:05:51,404 --> 00:05:53,578
+then cut until it falls.
 
 87
-00:05:52,739 --> 00:05:55,348
-and the engineer's story is complete.
+00:05:54,478 --> 00:05:56,217
+Shots miss a lot,
 
 88
-00:05:56,548 --> 00:05:58,722
-Lint knows a lot here.
+00:05:56,667 --> 00:06:01,015
+and no app tells you a shot hit or missed.
 
 89
-00:05:59,172 --> 00:06:02,215
-It knows the names of those signals,
+00:06:01,915 --> 00:06:03,654
+And down it goes,
 
 90
-00:06:02,665 --> 00:06:06,578
-and it knows a crawler can't stand in water.
+00:06:04,104 --> 00:06:06,278
+with no full shot needed.
 
 91
-00:06:08,378 --> 00:06:11,857
-It even warns about a missing Calm line,
+00:06:06,728 --> 00:06:10,641
+There's a tablet on the walkway where it fell,
 
 92
-00:06:12,307 --> 00:06:15,350
-on anybody who has a Talk scene.
+00:06:11,091 --> 00:06:13,700
+and the engineer's story is complete.
 
 93
-00:06:16,250 --> 00:06:17,989
-Leave that line out,
+00:06:14,900 --> 00:06:17,074
+Lint knows a lot here.
 
 94
-00:06:18,439 --> 00:06:22,787
-and Pim attacks the first crew member who walks up.
+00:06:17,524 --> 00:06:20,567
+It knows the names of those signals,
 
 95
-00:06:24,587 --> 00:06:29,804
-What it can't see is a Leads to that points at nothing.
+00:06:21,017 --> 00:06:24,930
+and it knows a crawler can't stand in water.
 
 96
-00:06:30,254 --> 00:06:33,733
-The story is still handed out and finished,
+00:06:26,730 --> 00:06:30,209
+It even warns about a missing Calm line,
 
 97
-00:06:34,183 --> 00:06:36,357
-and it points at nowhere.
+00:06:30,659 --> 00:06:33,702
+on anybody who has a Talk scene.
 
 98
-00:06:38,157 --> 00:06:42,070
-For the exercise, make the crawler tougher, then gentler,
+00:06:34,602 --> 00:06:36,341
+Leave that line out,
 
 99
-00:06:42,520 --> 00:06:44,259
-and play each one.
+00:06:36,791 --> 00:06:41,139
+and Pim attacks the first crew member who walks up.
 
 100
-00:06:46,059 --> 00:06:49,102
+00:06:42,939 --> 00:06:48,157
+What it can't see is a Leads to that points at nothing.
+
+101
+00:06:48,607 --> 00:06:52,085
+The story is still handed out and finished,
+
+102
+00:06:52,535 --> 00:06:54,709
+and it points at nowhere.
+
+103
+00:06:56,509 --> 00:07:00,422
+For the exercise, make the crawler tougher, then gentler,
+
+104
+00:07:00,872 --> 00:07:02,611
+and play each one.
+
+105
+00:07:04,411 --> 00:07:07,454
 Next time, Pim wants that tablet back.

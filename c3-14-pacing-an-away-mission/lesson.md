@@ -151,7 +151,7 @@ You have four tools. You have used every one.
 | The tool | In your file | What it costs the crew |
 |---|---|---|
 | A clock | `Fails when:` on a quest with a `Lose:` line. You add it in Step 5 | Every minute, from the moment the quest starts |
-| A patrol | `Patrol:`, `Notice:` and `Speed:` on the sentry. Its square is 22 cells, so it comes round every 11 seconds | Timing. The keycard lies on its path |
+| A patrol | `Patrol:`, `Notice:` and `Speed:` on the sentry. Its square is 18 cells, so it comes round every 9 seconds | Timing. The keycard lies on its path |
 | A door that needs a key from somewhere else | The pump house door in the gully, the brass key by the tent | Not seconds: a crossing is 7. It costs knowing where to look |
 | A hidden thing | `Hidden until:` on the two medical kits, the spare cell, and Pim by the tent | A conversation. Somebody has to ask the right person |
 

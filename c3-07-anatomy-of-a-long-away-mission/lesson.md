@@ -126,7 +126,9 @@ The ship starts beside the relay station, so nobody has to fly anywhere.
    Party**, and it offers **Kesh Relay**. Press it, then press **BEAM DOWN**.
 2. The console is now the party's handheld, with a map beside it. You are standing on a
    landing pad at the west end of a yard. The Science console is Dr Ines Hale. The
-   Weapons console is Lt Sam Reyes.
+   Weapons console is Lt Sam Reyes. Only the ground the party has seen is drawn: at first
+   that is the pad and a little round it, and the rest of the yard is black. Walk, and
+   it fills in.
 3. **Click the map to walk.** Click a thing, or a person, to walk up to it and use it.
 4. As Dr Hale, click the man sitting by the tent. A scene opens on the handheld, with
    buttons, exactly like a room. Ask him things. One of his answers, **Look at that
@@ -136,6 +138,11 @@ The ship starts beside the relay station, so nobody has to fly anywhere.
 6. East of the tent a sentry walks a square. It attacks anyone it notices. As Lt Reyes,
    open **Fire** on the handheld, choose a setting, press **Arm**, and click the sentry.
    STUN holds it for ten seconds. FULL puts it down for good, and it drops a power cell.
+   Expect to miss. A shot goes to the cell you click, and the sentry steps a cell at a
+   time, so a shot often lands where it just was. Nothing tells you a shot missed, or
+   that one hit: the Fire app goes back to SAFE either way. Watch the sentry. It took
+   three shots on the real screen, from about four cells away, each one the moment it
+   stepped into a cell.
 7. Pick up the power cell, and the keycard lying where the sentry walked.
 8. Click the door of the relay house. Somebody in the party has the keycard, so it opens.
 9. Inside is the beacon. Click it. **Fit the power cell** is offered to whoever carries
@@ -145,8 +152,8 @@ The game ends, and the last screen reads: `The beacon is lit. Every convoy on th
 run has its way home again.`
 
 That route was walked by a script for this page, with a stand-in for each of three
-consoles: six presses, one stun, one shot, three pickups and one door. Nobody has yet
-watched it on a real screen, so your screen may not look the way these steps say. The
+consoles: six presses, one stun, one shot, three pickups and one door. Then it was
+played in the game itself, on real consoles, for the pictures in the video. The
 handheld has an app named **Look** that lists everything in reach as buttons. If a click
 on the map does not do what a step says, use Look.
 

@@ -24,7 +24,7 @@
 > **Taken from the Lecture 11 measurements, not re-run:** the wake-up of a party that is
 > all down (between five and ten seconds, at the entry, 1 point each), a stun holding,
 > a door check tried again at once.
-> **Computed, not timed:** the sentry's 11 second lap (22 cells at `Speed: 2`), and the
+> **Computed, not timed:** the sentry's 9 second lap (18 cells at `Speed: 2`), and the
 > odds table (a ten sided die plus the skill).
 > **Not measured at all:** three crew standing still against a hostile; how long a real
 > person takes over a press; any real table.

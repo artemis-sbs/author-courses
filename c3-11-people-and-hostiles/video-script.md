@@ -87,7 +87,7 @@ out to be the same kind of record, | with one line between them. ||"
 `gully.tiles`: + Entry, scrub, camp, m; paint cell 5, 8. Then `mission.amd`,
 the People section: type Pim. Highlight `Calm: yes` and `Talk scene:`.
 
-**Say:** "Here's Pim in the game, | sitting in the scrub at the west end of the gully. |||
+**Say:** "Here's Pim in the game, | sitting in the scrub on the south side of the gully. |||
 Pim belongs to a spot, | so first she gets a mark. || Then her record, under Old
 Marrow's. ||| Area and Mark put her on the map, | the way they put a prop there. || Sprite
 is her figure. | Face is the face shown beside what she says. ||| And these two lines are
@@ -152,12 +152,15 @@ game. | But one person alone wakes up next to whatever put them down. ||"
 ### 7. Play it
 
 **Screen:** `sbs run server,engineering,weapons,science -m MyAway map=0`. Talk to Pim.
-Open the pump house. Down the stairs. Scan. Fire: stun, cut, cut, full. The tablet. The
+Open the pump house. Down the stairs, then east along the walkway until the crawler is in
+view. Scan. Fire: stun, then cut until it falls (shots miss, silently). The tablet. The
 engineer's Tasks app.
 
 **Say:** "Three consoles this time. || The doctor talks to Pim. ||| Then two of them go
-down the stairs, | and stop at the foot. || Scan tells them what's in sight. ||| From the
-weapons console: | stun, then cut, twice, and then full. || And down it goes. | There's a
+down the stairs, | and walk east until the crawler comes into view. || Scan tells them
+what's in sight, | and the crawler's line is there only while it's in sight. ||| From the
+weapons console, | stun to hold it, | then cut until it falls. || Shots miss a lot, | and
+no app tells you a shot hit or missed. || And down it goes, | with no full shot needed. | There's a
 tablet on the walkway where it fell, | and the engineer's story is complete. ||"
 
 ### 8. What lint can't see, and your turn

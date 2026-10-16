@@ -19,7 +19,11 @@ THE TILE MAP EDITOR still (d_editor_landing) is taken in the add-on's own editor
 opens the file with vscode.openWith ("editor": "tiles") and sets the view over DevTools
 ("view": "art"). See capture.web_steps.
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. THREE windows:
+GAME STILLS. Taken 2026-10-16 (engine 1.3.15). What they showed that the first draft did not
+expect: fog of war (on arrival only the pad and a little round it are drawn; the tent and
+the relay house are black until seen); the medical kit appears the moment 'Ask what he has
+put by' is pressed; the keycard is out of sight from where the sentry is first seen; a shot
+goes to a CELL, so shots at the moving sentry miss and nothing says so (three shots). THREE windows:
 server, science (Dr Ines Hale, medical and science) and weapons (Lt Sam Reyes, security),
 the page's own `sbs run server,science,weapons -m MyAway map=0`. State "final" as it is: the
 ship starts beside Kesh Relay, so nothing is patched and nobody flies.
@@ -94,14 +98,14 @@ STILLS = {
     # landing.tiles in the Tile Map Editor, Art view: the yard as a picture
     "d_editor_landing": ("vscode", "final", 1, "mid", {"side": False, "file": "ground/landing.tiles", "editor": "tiles",
                                                        "view": "art", "zoom": 32}),
-    # THE REAL GAME (not taken yet). Consoles server,science,weapons; see the docstring
+    # THE REAL GAME (taken 2026-10-16). Consoles server,science,weapons; see the docstring
     "game_l7_offer": ("game", "GAME A, Science (Dr Ines Hale), ~15 s after the consoles are seated: the handheld (icon top left), the Boarding Party app offering Kesh Relay, with BEAM DOWN"),
-    "game_l7_landed": ("game", "GAME A, Science, BEAM DOWN just pressed: the yard map with Dr Hale's figure on the landing pad at the west end, the handheld beside it (her name, medical, the place word), the tent and the relay house in view"),
+    "game_l7_landed": ("game", "GAME A, Science, BEAM DOWN just pressed: the yard map with Dr Hale's figure on the landing pad at the west end, the handheld beside it (her name, medical, the place word); fog: only the ground round the pad is drawn"),
     "game_l7_walk": ("game", "GAME A, Science, after a click on open ground east of the pad (about 9, 5): Dr Hale has walked there, nearer the tent"),
     "game_l7_marrow": ("game", "GAME A, Science, Old Marrow clicked: the Act app with his line ('Nine days dark. I kept the kettle on...') and five buttons, 'Look at that cough' among them; his face beside what he says"),
     "game_l7_putby": ("game", "GAME A, Science, 'Ask what he has put by' pressed: the Put By line ('...Medical kit, under the netting...') and two buttons, Ask him something else / Thank him"),
     "game_l7_kit": ("game", "GAME A, Science, after Thank him: the yard map with the medical kit now drawn on the scrub beside the pad (cell 6, 8), where it was not before"),
-    "game_l7_sentry": ("game", "GAME A, Weapons (Lt Sam Reyes), beamed down and walked east: the sentry on its square south-east of the relay house (cells 20-26, 9-11); the keycard at 24, 10 in view if the fog allows"),
+    "game_l7_sentry": ("game", "GAME A, Weapons (Lt Sam Reyes), beamed down and walked east: the sentry on its square south-east of the relay house (cells 20-26, 9-11), Old Marrow by his tent; the keycard not yet in view"),
     "game_l7_fire": ("game", "GAME A, Weapons, the Fire app open: the three settings (STUN, CUT, FULL) with FULL chosen, and Arm"),
     "game_l7_sentry_down": ("game", "GAME A, Weapons, after the FULL shot: the sentry down for good, the power cell lying where it fell"),
     "game_l7_door": ("game", "GAME A, Weapons, carrying the cell and the keycard, the relay door clicked: the door at 22, 5 drawn open"),
@@ -127,10 +131,36 @@ STILLS = {
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 8", "sub": "The Tile Map Editor, part 1"}),
 }
 
+# Marks on the game stills (fractions of the 1280x960 frame)
+_OF_TILE = ("rect", 0.025, 0.055, 0.32, 0.1)        # game_l7_offer: Boarding Party, Kesh Relay
+_OF_BEAM = ("rect", 0.02, 0.235, 0.98, 0.29)        # ... BEAM DOWN
+_LD_HALE = ("rect", 0.15, 0.26, 0.275, 0.43)        # game_l7_landed: Dr Hale on the pad
+_LD_SEEN = ("rect", 0.035, 0.105, 0.51, 0.735)      # ... the ground she can see
+_LD_DARK = ("rect", 0.51, 0.045, 0.66, 0.98)        # ... the black: not seen yet
+_WK_HALE = ("rect", 0.345, 0.35, 0.39, 0.425)       # game_l7_walk: Dr Hale, walked east
+_WK_MARROW = ("rect", 0.465, 0.355, 0.505, 0.425)   # ... Old Marrow
+_WK_TENT = ("rect", 0.485, 0.225, 0.58, 0.345)      # ... the tent, drawn now
+_MR_BUTTONS = ("rect", 0.67, 0.385, 0.965, 0.655)   # ... his five buttons
+_MR_COUGH = ("rect", 0.67, 0.55, 0.845, 0.6)        # ... Look at that cough
+_PB_LINE = ("rect", 0.67, 0.49, 0.985, 0.67)        # game_l7_putby: the Put By line
+_PB_KIT = ("rect", 0.225, 0.535, 0.28, 0.59)        # ... the medical kit, already on the map
+_SN_SENTRY = ("rect", 0.53, 0.6, 0.595, 0.695)      # game_l7_sentry: the sentry
+_SN_MARROW = ("rect", 0.235, 0.355, 0.27, 0.43)     # ... Old Marrow
+_SN_TENT = ("rect", 0.25, 0.23, 0.345, 0.345)       # ... his tent
+_FI_FULL = ("rect", 0.67, 0.425, 0.99, 0.495)       # game_l7_fire: FULL chosen
+_FI_ARM = ("rect", 0.67, 0.93, 0.99, 0.995)         # ... Arm
+_FI_SAFE = ("rect", 0.785, 0.22, 0.875, 0.265)      # ... SAFE
+_SD_CELL = ("rect", 0.535, 0.625, 0.59, 0.685)      # game_l7_sentry_down: the power cell where it fell
+_DR_DOOR = ("rect", 0.38, 0.365, 0.435, 0.43)       # game_l7_door: the door, open
+_DR_PICKS = ("rect", 0.67, 0.2, 0.985, 0.345)       # ... the two pickups in Act
+_BC_FIT = ("rect", 0.67, 0.74, 0.83, 0.785)         # ... Fit the power cell
+_WN_LINE = ("rect", 0.015, 0.225, 0.26, 0.31)       # game_l7_win: the Win sentence
+_LS_LINE = ("rect", 0.015, 0.225, 0.26, 0.31)       # game_l7_lose: the Lose sentence
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
-        {"from": 0, "still": "game_l7_landed"},
-        {"from": 2, "still": "game_l7_marrow"},
+        {"from": 0, "still": "game_l7_landed", "marks": [_LD_HALE]},
+        {"from": 2, "still": "game_l7_sentry", "marks": [_SN_MARROW, _SN_SENTRY]},
         {"from": 3, "still": "e_map", "marks": [("lines", 31, 44)]},
         {"from": 4, "still": "t_create"},
         {"from": 6, "still": "card_title"},
@@ -150,18 +180,22 @@ BOARD = {
     ]},
     "s03_play_it_to_the_win": {"step": None, "beats": [
         {"from": 0, "still": "card_run"},
-        {"from": 2, "still": "game_l7_offer"},
-        {"from": 3, "still": "game_l7_landed"},
-        {"from": 5, "still": "game_l7_walk"},
-        {"from": 7, "still": "game_l7_marrow"},
-        {"from": 9, "still": "game_l7_putby"},
-        {"from": 10, "still": "game_l7_kit"},
-        {"from": 11, "still": "game_l7_sentry"},
-        {"from": 12, "still": "game_l7_fire"},
-        {"from": 14, "still": "game_l7_sentry_down"},
-        {"from": 15, "still": "game_l7_door"},
-        {"from": 16, "still": "game_l7_beacon"},
-        {"from": 17, "still": "game_l7_win"},
+        {"from": 2, "still": "game_l7_offer", "marks": [_OF_BEAM]},
+        {"from": 3, "still": "game_l7_landed", "marks": [_LD_HALE]},
+        {"from": 5, "still": "game_l7_walk", "marks": [_WK_HALE]},
+        {"from": 6, "still": "game_l7_walk", "marks": [_WK_MARROW]},
+        {"from": 7, "still": "game_l7_marrow", "marks": [_MR_BUTTONS]},
+        {"from": 8, "still": "game_l7_marrow", "marks": [_MR_COUGH]},
+        {"from": 9, "still": "game_l7_putby", "marks": [_PB_LINE]},
+        {"from": 10, "still": "game_l7_putby", "marks": [_PB_KIT]},
+        {"from": 11, "still": "game_l7_sentry", "marks": [_SN_SENTRY]},
+        {"from": 12, "still": "game_l7_fire", "marks": [_FI_FULL, _FI_ARM]},
+        {"from": 14, "still": "game_l7_sentry", "marks": [_SN_SENTRY]},
+        {"from": 16, "still": "game_l7_fire", "marks": [_FI_SAFE]},
+        {"from": 18, "still": "game_l7_sentry_down", "marks": [_SD_CELL]},
+        {"from": 19, "still": "game_l7_door", "marks": [_DR_DOOR, _DR_PICKS]},
+        {"from": 20, "still": "game_l7_beacon", "marks": [_BC_FIT]},
+        {"from": 21, "still": "game_l7_win", "marks": [_WN_LINE]},
     ]},
     "s04_four_files": {"step": None, "beats": [
         {"from": 0, "still": "v_folder"},
@@ -175,27 +209,30 @@ BOARD = {
     "s05_what_a_map_is": {"step": None, "beats": [
         # the game first: the yard on the Science console
         {"from": 0, "still": "game_l7_landed"},
-        {"from": 5, "still": "d_editor_landing"},
-        {"from": 7, "still": "e_head"},
-        {"from": 9, "still": "e_head", "marks": [("lines", 9, 12)]},
-        {"from": 10, "still": "e_head", "marks": [("lines", 12, 12)]},
-        {"from": 11, "still": "e_head", "marks": [("lines", 13, 20)]},
-        {"from": 12, "still": "e_head", "marks": [("lines", 14, 14)]},
-        {"from": 13, "still": "e_head", "marks": [("lines", 20, 20)]},
-        {"from": 14, "still": "e_head", "marks": [("lines", 21, 29)]},
-        {"from": 15, "still": "e_head", "marks": [("text", 22, "@door")]},
-        {"from": 18, "still": "e_map", "marks": [("lines", 31, 44)]},
-        {"from": 19, "still": "e_map", "marks": [("text", 35, "=P=")]},
-        {"from": 20, "still": "e_map", "marks": [("text", 34, "t")]},
-        {"from": 21, "still": "e_map", "marks": [("text", 32, "WWWWWWWWW"), ("text", 36, "WWWWDWWWW")]},
-        {"from": 22, "still": "e_map", "marks": [("lines", 31, 44)]},
-        {"from": 23, "still": "e_head", "marks": [("lines", 21, 29)]},
-        {"from": 24, "still": "e_tileset", "marks": [("lines", 11, 17)]},
+        {"from": 2, "still": "game_l7_landed", "marks": [_LD_SEEN]},
+        {"from": 4, "still": "game_l7_landed", "marks": [_LD_DARK]},
+        {"from": 6, "still": "game_l7_walk", "marks": [_WK_TENT]},
+        {"from": 7, "still": "d_editor_landing"},
+        {"from": 9, "still": "e_head"},
+        {"from": 11, "still": "e_head", "marks": [("lines", 9, 12)]},
+        {"from": 12, "still": "e_head", "marks": [("lines", 12, 12)]},
+        {"from": 13, "still": "e_head", "marks": [("lines", 13, 20)]},
+        {"from": 14, "still": "e_head", "marks": [("lines", 14, 14)]},
+        {"from": 15, "still": "e_head", "marks": [("lines", 20, 20)]},
+        {"from": 16, "still": "e_head", "marks": [("lines", 21, 29)]},
+        {"from": 17, "still": "e_head", "marks": [("text", 22, "@door")]},
+        {"from": 20, "still": "e_map", "marks": [("lines", 31, 44)]},
+        {"from": 21, "still": "e_map", "marks": [("text", 35, "=P=")]},
+        {"from": 22, "still": "e_map", "marks": [("text", 34, "t")]},
+        {"from": 23, "still": "e_map", "marks": [("text", 32, "WWWWWWWWW"), ("text", 36, "WWWWDWWWW")]},
+        {"from": 24, "still": "e_map", "marks": [("lines", 31, 44)]},
+        {"from": 25, "still": "e_head", "marks": [("lines", 21, 29)]},
+        {"from": 26, "still": "e_tileset", "marks": [("lines", 11, 17)]},
     ]},
     "s06_what_a_record_is": {"step": None, "beats": [
         # the game first: the keycard and Old Marrow on the map
-        {"from": 0, "still": "game_l7_sentry"},
-        {"from": 2, "still": "game_l7_walk"},
+        {"from": 0, "still": "game_l7_sentry", "marks": [_SN_SENTRY]},
+        {"from": 2, "still": "game_l7_sentry", "marks": [_SN_MARROW, _SN_TENT]},
         {"from": 3, "still": "card_sections"},
         {"from": 6, "still": "card_sections", "marks": [("part", "r4"), ("part", "r5"), ("part", "r6")]},
         {"from": 8, "still": "e_keycard", "marks": [("lines", 156, 163)]},
@@ -214,7 +251,7 @@ BOARD = {
     "s07_one_line_one_card_and_the_en": {"step": None, "beats": [
         {"from": 0, "still": "e_load", "marks": [("lines", 54, 54)]},
         # the game first: the tile the card puts on the handheld
-        {"from": 3, "still": "game_l7_offer"},
+        {"from": 3, "still": "game_l7_offer", "marks": [_OF_TILE]},
         {"from": 5, "still": "e_card", "marks": [("lines", 84, 88)]},
         {"from": 6, "still": "card_card"},
         {"from": 7, "still": "card_card", "marks": [("part", "r1")]},
@@ -224,10 +261,11 @@ BOARD = {
                                                   ("text", 87, '"landing"')]},
         # the game first: the last screen
         {"from": 13, "still": "game_l7_win"},
+        {"from": 15, "still": "game_l7_win", "marks": [_WN_LINE]},
         {"from": 16, "still": "e_relight", "marks": [("lines", 75, 75)]},
         {"from": 17, "still": "e_relight", "marks": [("lines", 76, 76)]},
         {"from": 18, "still": "e_endings", "marks": [("lines", 328, 328), ("lines", 338, 338)]},
-        {"from": 19, "still": "game_l7_lose"},
+        {"from": 19, "still": "game_l7_lose", "marks": [_LS_LINE]},
     ]},
     "s08_dawnline_and_your_turn": {"step": None, "beats": [
         {"from": 0, "still": "card_dawn"},

@@ -262,8 +262,8 @@ A painted board on a post: PUMP HOUSE, and an arrow pointing east.
 `At: 28, 5` is 28 across and 5 down, counted from 0, in the area `landing`. That is the
 cell above your exit and one to the left.
 
-In the game the sign stands by the exit, and a click on it shows its line on the
-handheld. `Sprite:` is the picture. The names come from the art packs: `prop:` and a word for a
+In the game the sign stands by the exit. A click on it walks you up beside it, and its
+line is on the handheld's **Look** app. `Sprite:` is the picture. The names come from the art packs: `prop:` and a word for a
 thing, `fig:` and a word for a figure. Further reading has where to find the list.
 
 Save, and open `landing.tiles` in the editor. With **Things** switched on, the editor
@@ -323,7 +323,7 @@ over a prop.
 Neither record has any words under its fence, and neither has a field that does
 anything. A prop like that is **scenery**. It is drawn, it is in the way, and a click on
 it only walks you up to it. The Trail sign is not scenery, because it has a line of
-description: click it and the handheld shows you that line.
+description: stand beside it and the handheld's **Look** app shows you that line.
 
 And one rule that is easy to get wrong. **A mark's name goes in `Mark:`, never in
 `At:`.** `At:` reads numbers only. A word written there reads as nothing, and the prop is
@@ -348,7 +348,7 @@ Open `landing.tiles` in the editor. The patrol is drawn as a dashed loop with a 
 each cell. Make it longer. Change the line to:
 
 ```
-Patrol: 18 9; 27 9; 27 11; 18 11
+Patrol: 18 9; 25 9; 25 11; 18 11
 ```
 
 In the editor you can drag the dots instead, with **Move**. Each drag rewrites one cell
@@ -368,8 +368,10 @@ the edge of the map. In `landing.tiles`, paint the top row with dust (`.`) from 
 ```
 
 The path joins the yard at both ends, at 17, 1 and at 27, 1. Go that way to the trail
-sign and the exit, and the nearest you come to the loop is five cells: one more than the
-sentry can notice.
+sign and the exit, and you never come nearer the loop than five cells: one more than the
+sentry can notice. That is why the loop grows west, and its east end comes in to 25. A click
+on the sign stands you on the cell beside it, 27, 5. With a corner at 27, 9 that cell
+would be four from the loop, and the sentry would find you reading.
 
 ## Step 11 - Check it
 
@@ -396,8 +398,8 @@ time.
 | `At: 40, 5` | `tiles-off-map`: `sign: At: 40, 5 is off the map (landing is 32 x 14)` |
 | `At: 5, 28`, the two numbers the wrong way round | `tiles-off-map`, when you are lucky. If both numbers fit on the map, lint is silent and the thing stands somewhere else |
 | A patrol cell off the map | `tiles-off-map` |
-| A patrol cell on rock | `tiles-unwalkable`: `sentry: Patrol 27, 12 is rock, which cannot be walked` |
-| `Patrol: 18 9, 27 9, 27 11, 18 11`, commas where the semicolons go | `patrol-shape`: it is read as one point, and the rest is ignored. In the game the sentry never moved. It stood at 18, 9 for as long as the test ran |
+| A patrol cell on rock | `tiles-unwalkable`: `sentry: Patrol 25, 12 is rock, which cannot be walked` |
+| `Patrol: 18 9, 25 9, 25 11, 18 11`, commas where the semicolons go | `patrol-shape`: it is read as one point, and the rest is ignored. In the game the sentry never moved. It stood at 18, 9 for as long as the test ran |
 | `Blocks: yse` | `unknown-enum-value` |
 
 A finding about a placement is printed under its own heading:
@@ -422,7 +424,7 @@ All of these lint clean.
 | The yard's exit never drawn | `tiles-mark-unplaced`, once, about the yard. Not a word about the two areas that can no longer be reached |
 
 Two spellings that look wrong and work: `At: 28 5`, with a space and no comma; and
-`Patrol: 18, 9; 27, 9; 27, 11; 18, 11`, with commas inside each cell. Use the spelling
+`Patrol: 18, 9; 25, 9; 25, 11; 18, 11`, with commas inside each cell. Use the spelling
 on this page anyway.
 
 When something is missing from a map, read `mast.runtime.log` first. The game names
@@ -436,9 +438,11 @@ sbs run server,engineering -m MyAway map=0
 
 1. Beam down. Open **Beam**: there is nowhere else to go.
 2. Walk east along the north side of the yard, well clear of the sentry: click the path
-   behind the relay house first, then the trail sign, and read it. Then click the cell
-   under it and to the right, the exit.
-3. You are in the gully. Open **Beam** again: the gully is on it now.
+   behind the relay house first, then the trail sign: you walk up beside it. Open **Look**
+   to read it. Then click the cell under the sign and to the right, the exit.
+3. You are in the gully. Open **Beam** again: it offers `To Kesh Relay`. A Beam list never
+   names the area you are standing in. The gully is on it now from everywhere else: the
+   cistern's list, in a moment, reads `To The Dry Gully` and `To Kesh Relay`.
 4. Walk into the pump house. Click the pump: you walk up to it, and that is all. Click
    the cell against the east wall, the stairs.
 5. You are in the cistern. Click the water: you walk to the edge and stop. Walk round

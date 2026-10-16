@@ -137,14 +137,14 @@ STILLS = {
 
 # Game stills, 1280x960, marks as fractions of the frame (taken 2026-10-15)
 _BAR = ("rect", 0.005, 0.06, 0.2, 0.13)              # game_bar_eng: 'Chief Okoro' / 'engineering'
-_BS_REC = ("rect", 0.01, 0.44, 0.203, 0.49)          # game_bridge_sci: Pull the sensor record
-_BE_ONE = ("rect", 0.01, 0.44, 0.2, 0.49)            # game_bridge_eng, game_alone_bridge: only Go back
-_RE_WAKE = ("rect", 0.24, 0.8, 0.42, 0.845)          # game_reactor_eng: Try to wake the core
-_RS_WAKE = ("rect", 0.01, 0.8, 0.192, 0.845)         # game_reactor_sci: Try to wake the core
-_RO_HALE = ("rect", 0.01, 0.82, 0.5, 0.89)           # game_roll_sci: her roll line, then the room's line
-_RO_HALE0 = ("rect", 0.01, 0.82, 0.36, 0.85)         # ... 'engineering 0'
-_RE_OKORO = ("rect", 0.01, 0.795, 0.4, 0.83)         # game_roll_eng / game_roll_both_sci: 'engineering 4 ... success'
-_RE_HALE = ("rect", 0.01, 0.39, 0.36, 0.42)          # ... Dr Hale's failed roll above it
+_BS_REC = ("rect", 0.008, 0.435, 0.206, 0.49)         # game_bridge_sci: Pull the sensor record
+_BE_ONE = ("rect", 0.008, 0.435, 0.203, 0.49)         # game_bridge_eng, game_alone_bridge: only Go back
+_RE_WAKE = ("rect", 0.237, 0.795, 0.425, 0.85)         # game_reactor_eng: Try to wake the core
+_RS_WAKE = ("rect", 0.008, 0.795, 0.194, 0.85)         # game_reactor_sci: Try to wake the core
+_RO_HALE = ("rect", 0.008, 0.815, 0.5, 0.902)         # game_roll_sci: her roll line, then the room's line
+_RO_HALE0 = ("rect", 0.008, 0.815, 0.36, 0.853)         # ... 'engineering 0'
+_RE_OKORO = ("rect", 0.008, 0.79, 0.4, 0.832)         # game_roll_eng / game_roll_both_sci: 'engineering 4 ... success'
+_RE_HALE = ("rect", 0.008, 0.385, 0.362, 0.426)         # ... Dr Hale's failed roll above it
 _AL_COVER = ("rect", 0.01, 0.315, 0.443, 0.362)      # game_alone_airlock: the covering button, last
 
 BOARD = {

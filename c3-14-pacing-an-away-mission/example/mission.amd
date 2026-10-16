@@ -444,7 +444,7 @@ Damage: 1
 Notice: 4
 Stun: 10
 Speed: 2
-Patrol: 18 9; 27 9; 27 11; 18 11
+Patrol: 18 9; 25 9; 25 11; 18 11
 Drops: power_cell
 Scan: Security frame, nine days without a recognition update. One power cell.
 ---

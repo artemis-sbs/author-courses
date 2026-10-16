@@ -43,7 +43,9 @@ The companion page is `lesson.md`; the finished file is in `example\ground\`.
    it is still `clean`. (Lint.)
 2. Beamed down, the Beam app's button puts the stand-in at cell 2, 5 of the gully, with
    the words `Energizing - The Dry Gully.`; a click at 14, 5 walks in through the gap;
-   a click on the wall at 12, 3 stops beside it at 11, 3. (Mock, by script.)
+   a click on the wall at 12, 3 stops beside it at 11, 3. (Mock, by script.) In the game
+   (2026-10-16) there were no such words, and on arrival only the west end of the gully
+   was drawn: the pump house was black until Okoro had seen it.
 3. Every row of the page's two tables. (Lint, Mock.)
 
 Read from the add-on's source, NOT seen. If one is not as described, stop and fix the
@@ -160,12 +162,14 @@ time. ||"
 ### 8. Play it, and your turn
 
 **Screen:** `sbs run server,engineering -m MyAway map=0`. Beam down. The Beam app: To The
-Dry Gully. Walk into the pump house. Click a wall. Then the exercise.
+Dry Gully. The gully: only its west end drawn. Click the black where the pump house is; he
+walks in through the gap, and the house is drawn. Click a wall. Then the exercise.
 
 **Say:** "Nothing in the mission leads to the gully yet. || But the ship's transporter can
 put you there. ||| Beam down as usual, | then open Beam on the handheld. | There's one
-other place on the list, and it's yours. || You're standing on your own mark. || Click
-inside the pump house, | and you walk in through the gap you painted. ||| For the
+other place on the list, and it's yours. || You're standing on your own mark. || Only the ground you can see is drawn, | and the
+pump house is still black. || Click inside it anyway, | and you walk in through the gap
+you painted. ||| For the
 exercise, try the other tools. | Draw a second building with the rectangle, | then break
 the file on purpose and read what lint says. ||| Next time, you join this map to the yard.
 ||"

@@ -137,15 +137,15 @@ you type it. ||"
 ### 6. A thing at a cell
 
 **Screen:** `mission.amd`, the end of Props. Type the Trail sign. The game: the sign
-clicked, its line on the handheld. Highlight `Area:` and
+clicked, Okoro beside it, and its line on the Look app. Highlight `Area:` and
 `At:`. Then `landing.tiles` in the editor: the sign on the map. Move it; show the `At:`
 line change; Undo move.
 
 **Say:** "Now the fact sheet. || A record that stands on a map says where in two fields. |
 The first is always Area. || The second is one of two. | At takes a cell: | how far
 across, a comma, and how far down. ||| So here's a trail sign, | at twenty-eight across
-and five down, in the yard. || In the game it stands by the exit, | and clicking it puts its
-line on the handheld. || Open the yard's map, | and the editor draws the sign where
+and five down, in the yard. || In the game it stands by the exit. || Click it, and you walk
+up beside it. | Its line is on the handheld, in the Look app. || Open the yard's map, | and the editor draws the sign where
 the record put it. || With Move I can drag it, | and the editor rewrites that line in the
 fact sheet for me. ||"
 
@@ -169,12 +169,14 @@ pair. || I've made its loop longer, | and the editor draws it as a dashed line. 
 
 **Screen:** Lint: clean. Misspell `to_landing`; lint; undo. Write the pump's mark in
 `At:`; lint; undo. Then the game: beam down, the Beam app empty, walk east along the path
-behind the relay house, the gully, the stairs, the cistern.
+behind the relay house, the gully and its Beam app (To Kesh Relay), the stairs, the
+cistern and its Beam app (To The Dry Gully).
 
 **Say:** "Lint knows about exits. | Misspell one of them, | and it tells you there's no
 such area. || Put a mark's name in At, | and it tells you that too. ||| It can't tell you
 an area is cut off, though. | It only says a mark was never drawn. ||| So play it through.
 || Beam down, and open Beam. | There's nowhere else to go. || Walk east, and take the
-exit. | Now the gully is on the list. || Go down the stairs, | and you're standing by the
-water. ||| For the exercise, stand a crate in the cistern, | and add a second way down.
+exit. || Open Beam in the gully, | and it offers the way back to Kesh Relay. || Go down
+the stairs, | and you're standing by the water. || And down here the Beam list names the
+gully too. ||| For the exercise, stand a crate in the cistern, | and add a second way down.
 ||| Next time, these maps get things you can use. ||"

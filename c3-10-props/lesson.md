@@ -4,7 +4,7 @@
 
 Your three areas have things in them, and the things do something.
 
-The pump house has a locked door, and its key hangs on a tent peg in the yard. A toolbox
+The pump house has a locked door, and its key lies by the tent in the yard. A toolbox
 holds two fuses. A notice beside the door can be read once. Inside, a pump panel that only
 an engineer may touch drains the cistern. And in the cistern: a sluice gate that opens
 when the water goes, a spare power cell that was under it, and a gauge on a post in the
@@ -50,7 +50,8 @@ yes:
 | Does it open a scene? | `Scene:` | The scene opens on their handheld |
 
 A prop that gets through all four with no yes shows its description: the words under
-its fence.
+its fence. They are on the handheld's **Look** app. The click itself only walks you up to
+the prop.
 
 ## Step 1 - A pickup
 
@@ -103,7 +104,7 @@ A steel door, rusted at the hinges.
 
 | Term | It opens when | Measured |
 |---|---|---|
-| `key pump_key` | Somebody in the party is carrying a `pump_key`. Not only the one at the door. The key is kept | The handheld says `pump key fits` |
+| `key pump_key` | Somebody in the party is carrying a `pump_key`. Not only the one at the door. The key is kept | It opens. In the mock the handheld said `pump key fits`; in the game no words show, the picture changes |
 | `check engineering 8` | The one at the door rolls a ten sided die, adds their engineering, and makes 8 | `Chief Okoro - engineering 4, rolled 4: 8 vs 8, success.` |
 | `cut` | Somebody shoots it with the weapon set to CUT. Lecture 11 has the weapon | A STUN shot did nothing. A CUT shot opened it |
 | `signal <name>` | That signal is sent. Step 7 has one | |
@@ -117,7 +118,8 @@ only decides how long the crew stands there. Lieutenant Reyes, with no engineeri
 all, opened this one with a 9. If a door must stay shut until the story says so, give it
 no check.
 
-A door that has been opened stays open. Using it again only shows its description.
+A door that has been opened stays open. Using it again only shows its description, on
+Look.
 
 ## Step 3 - A pickup worth two
 
@@ -159,8 +161,9 @@ A notice pasted beside the door, gone brown and brittle. It will not survive bei
 6. A prop and the room it opens may share a key, as these two do. The starter's terminal
 does the same.
 
-`Once: yes` means the scene opens one time. The second click shows the description
-instead. Write the description for that second click.
+`Once: yes` means the scene opens one time. After that a click only walks you up to the
+notice, and its description is on the **Look** app. Write the description for whoever
+comes back to it.
 
 Be careful what you put behind a `Once:`. It counts the scene opening, not what was
 answered. A crew member who opens it and backs out has used it up.
@@ -380,18 +383,23 @@ The Science console is Dr Hale and the Engineering console is Chief Okoro.
 
 1. Both beam down. Deal with the sentry, or walk east along the north edge of the yard,
    by the path behind the relay house, well clear of it.
-2. As Dr Hale, pick up the key by the tent. Both walk to the trail sign and take the
-   exit.
+2. As Dr Hale, pick up the key by the tent. Both walk east by the path behind the relay
+   house, past the trail sign, and take the exit, one at a time.
 3. As Chief Okoro, click the pump house door. He is not carrying the key. She is, and
-   that is enough: `pump key fits`.
-4. As Dr Hale, pick up the toolbox, then read the notice. Read it again.
-5. As Dr Hale, click the pump panel. `You would need engineering for that.`
-6. As Chief Okoro, take the stairs down. Click the gauge, out in the water. Click the
-   sluice gate.
+   that is enough: the door opens. No words come up. Its picture changes to an open
+   doorframe.
+4. As Dr Hale, pick up the toolbox, then read the notice. Click it again: this time she
+   only walks up to it, and its description is on **Look**.
+5. As Dr Hale, click the pump panel. Look says `You would need engineering for that.`
+6. As Chief Okoro, take the stairs down. On arrival only the west end is drawn. Walk east
+   along the walkway, and the sluice gate comes into view, shut. From the walkway, open
+   **Look**: it offers `Use Depth gauge`, out in the water, and reads `The needle reads
+   FULL.` Click the sluice gate.
 7. Go back up, click the pump panel, and throw the lever.
 8. Go down again. The gate is open, and there is a power cell in the east room.
 
-Every line of that was played by a script for this page, with two stand-in consoles.
+Every line of that was played by a script for this page, with two stand-in consoles,
+and then in the game itself for the video's pictures.
 
 ## If something goes wrong
 

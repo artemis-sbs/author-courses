@@ -357,13 +357,17 @@ sbs run server,engineering -m MyAway map=0
    the landing pad, as before.
 2. On the handheld, open **Beam**. It lists the other places the ship can put you. There
    is one: **To The Dry Gully**. Press it.
-3. You are standing on your `arrive` mark, at cell 2, 5.
-4. Click inside the pump house. You walk in through the gap in the wall.
+3. You are standing on your `arrive` mark, at cell 2, 5. Only the ground you can see from
+   there is drawn. The rest of the gully, the pump house too, stays black until somebody
+   has seen it.
+4. Click inside the pump house, black or not: the walk is worked out on the real map. You
+   walk in through the gap in the wall, and the house is drawn.
 5. Click a wall. You walk up to it and stop.
 6. Open **Beam** again and go back **To Kesh Relay**.
 
 That was done by a script for this page: a stand-in console, the Beam app's own button,
-and three clicks on the map. The handheld said `Energizing - The Dry Gully.`
+and three clicks on the map. Then it was played in the game itself for the video's
+pictures: there the handheld shows no words when it beams you, the map simply changes.
 
 If you cannot find the Beam app, there is another way in. In `story.mast`, on the card at
 the end, change `area="landing"` to `area="gully"`. The party then beams down into the

@@ -19,15 +19,17 @@ view ("view": "art"), a legend row picked ("pick"), + Entry's form filled in ("f
 cell under the pointer ("hover"), a title-bar button's tooltip ("tip"). Nothing moves the
 real mouse. See capture.web_steps.
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. TWO windows, server and
+GAME STILLS. Taken 2026-10-16. Fog of war: on arrival only the west end of the gully is
+drawn, and the pump house is black until seen; a click on the black still walks there. No
+`Energizing` words show. TWO windows, server and
 engineering (Chief Okoro), the page's `sbs run server,engineering -m MyAway map=0`, state
 "final": `python game.py c3-08-tile-map-editor-part-1 start --consoles server,engineering`
 (the probe is made from the `away` template, with every file of the state laid over it).
   1. About 15 s after Engineering is seated: handheld icon (top left), Boarding Party, Kesh
      Relay, BEAM DOWN. Chief Okoro is on the pad of the yard.
   2. Open Beam on the handheld: game_l8_beam (the list with one place, To The Dry Gully).
-  3. Press it: game_l8_arrived (the gully, Okoro on the arrive mark at cell 2, 5, the pump
-     house to the east; the handheld's words `Energizing - The Dry Gully.` if they show).
+  3. Press it: game_l8_arrived (the gully, Okoro on the arrive mark at cell 2, 5; the pump
+     house is not drawn yet, and no `Energizing` words show).
   4. Click inside the pump house (cell 15, 5) and wait for the walk (a few seconds):
      game_l8_inside (Okoro on the floor, in through the gap at 12, 5).
 """
@@ -127,7 +129,7 @@ STILLS = {
     "d_star": ("vscode", "final", 1, "mid", _ART),
     # THE REAL GAME (not taken yet). Consoles server,engineering; see the docstring
     "game_l8_beam": ("game", "Engineering (Chief Okoro) beamed down to the yard: the handheld's Beam app open, listing one place, To The Dry Gully"),
-    "game_l8_arrived": ("game", "Engineering, To The Dry Gully pressed: the gully map, Okoro on the arrive mark at the west end (2, 5), the pump house with its gap in the west wall to the east"),
+    "game_l8_arrived": ("game", "Engineering, To The Dry Gully pressed: the gully map, Okoro on the arrive mark at the west end (2, 5); fog: only the west end drawn, the pump house still black"),
     "game_l8_inside": ("game", "Engineering, after a click inside the pump house (15, 5) and the walk: Okoro on the pump house floor, in through the gap at 12, 5"),
     # drawn
     "card_title": ("card", "title", {}),
@@ -145,11 +147,20 @@ STILLS = {
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 9", "sub": "The Tile Map Editor, part 2"}),
 }
 
+# Marks on the game stills (fractions of the 1280x960 frame)
+_BM_GULLY = ("rect", 0.665, 0.135, 0.99, 0.275)     # game_l8_beam: BEAM, To The Dry Gully
+_AR_OKORO = ("rect", 0.07, 0.4, 0.125, 0.48)        # game_l8_arrived: Okoro on the arrive mark
+_AR_SEEN = ("rect", 0.035, 0.16, 0.39, 0.79)        # ... the ground he can see
+_AR_DARK = ("rect", 0.39, 0.045, 0.66, 0.98)        # ... the black where the pump house is
+_IN_HOUSE = ("rect", 0.23, 0.315, 0.505, 0.58)      # game_l8_inside: the pump house, drawn now
+_IN_GAP = ("rect", 0.228, 0.41, 0.275, 0.48)        # ... the gap in its west wall
+_IN_OKORO = ("rect", 0.35, 0.395, 0.39, 0.485)      # ... Okoro on its floor
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
         {"from": 0, "still": "d_art"},
         {"from": 2, "still": "e_final", "marks": [("lines", 2, 28)]},
-        {"from": 4, "still": "game_l8_inside"},
+        {"from": 4, "still": "game_l8_inside", "marks": [_IN_HOUSE]},
         {"from": 5, "still": "card_title"},
     ]},
     "s02_a_new_file_and_the_header": {"step": 1, "beats": [
@@ -160,7 +171,7 @@ BOARD = {
         {"from": 6, "still": "e_head", "marks": [("lines", 2, 2)]},
         {"from": 8, "still": "e_head", "marks": [("lines", 3, 3)]},
         # the game: where the title is read
-        {"from": 9, "still": "game_l8_beam"},
+        {"from": 9, "still": "game_l8_beam", "marks": [_BM_GULLY]},
         {"from": 10, "still": "e_head", "marks": [("lines", 4, 4)]},
         {"from": 11, "still": "e_head", "marks": [("lines", 5, 5)]},
         {"from": 12, "still": "card_header", "marks": [("part", "r4")]},
@@ -188,7 +199,8 @@ BOARD = {
     ]},
     "s05_a_door": {"step": 4, "beats": [
         # the game first: the gap the crew walks through
-        {"from": 0, "still": "game_l8_inside"},
+        {"from": 0, "still": "game_l8_inside", "marks": [_IN_HOUSE]},
+        {"from": 1, "still": "game_l8_inside", "marks": [_IN_GAP, _IN_OKORO]},
         {"from": 3, "still": "e_g1", "marks": [("lines", 18, 20)]},
         {"from": 6, "still": "e_g1", "marks": [("lines", 18, 20)]},
         {"from": 8, "still": "d_form"},
@@ -200,7 +212,7 @@ BOARD = {
     ]},
     "s06_a_mark_to_arrive_on_and_the_": {"step": 5, "beats": [
         # the game first: where the Beam app puts you
-        {"from": 0, "still": "game_l8_arrived"},
+        {"from": 0, "still": "game_l8_arrived", "marks": [_AR_OKORO]},
         {"from": 2, "still": "e_g3", "marks": [("lines", 14, 14)]},
         {"from": 4, "still": "e_g3", "marks": [("text", 21, "a")]},
         {"from": 5, "still": "e_g3", "marks": [("text", 14, "@arrive")]},
@@ -225,10 +237,13 @@ BOARD = {
     "s08_play_it_and_your_turn": {"step": 9, "beats": [
         {"from": 0, "still": "card_run"},
         {"from": 2, "still": "game_l8_beam"},
-        {"from": 5, "still": "game_l8_arrived"},
-        {"from": 6, "still": "game_l8_inside"},
-        {"from": 8, "still": "card_exercise", "marks": [("part", "item2")]},
-        {"from": 10, "still": "card_exercise", "marks": [("part", "item3")]},
-        {"from": 11, "still": "card_next"},
+        {"from": 4, "still": "game_l8_beam", "marks": [_BM_GULLY]},
+        {"from": 5, "still": "game_l8_arrived", "marks": [_AR_OKORO]},
+        {"from": 6, "still": "game_l8_arrived", "marks": [_AR_SEEN]},
+        {"from": 7, "still": "game_l8_arrived", "marks": [_AR_DARK]},
+        {"from": 8, "still": "game_l8_inside", "marks": [_IN_GAP, _IN_OKORO]},
+        {"from": 10, "still": "card_exercise", "marks": [("part", "item2")]},
+        {"from": 12, "still": "card_exercise", "marks": [("part", "item3")]},
+        {"from": 13, "still": "card_next"},
     ]},
 }

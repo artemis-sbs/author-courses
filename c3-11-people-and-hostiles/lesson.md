@@ -45,7 +45,7 @@ they do.
 
 ## Step 1 - A mark for a person
 
-In the game Pim sits in the scrub at the west end of the gully, and a click on her opens
+In the game Pim sits in the scrub on the south side of the gully, and a click on her opens
 her room on the handheld. She gets a mark, because she belongs to a spot: her camp in the
 scrub.
 
@@ -214,15 +214,21 @@ Every crew member carries a weapon. It is the **Fire** app on the handheld.
 
 A shot reaches six cells, and needs a clear line to what it is aimed at.
 
+Expect to miss. A shot goes to the cell you clicked, and a hostile that is walking may
+have left it by then. Nothing on the handheld tells you that a shot missed, or that it
+hit, or that it killed: the Fire app goes back to SAFE either way. Watch the map.
+
 | Setting | On a hostile | On a prop |
 |---|---|---|
 | STUN | It stands still for its `Stun:` seconds. It takes no hurt | Nothing |
 | CUT | It loses 1 HP | A door with `cut` in its `Opens with:` opens. Anything else is only scorched |
 | FULL | It is down at once, whatever its HP | The same as CUT. A shot never takes a prop off the map |
 
-So the crawler, with `HP: 3`, takes three CUT shots, or one FULL. In the test run for
-this page: a stun, two cuts and a full. The game reported `stunned`, `wounded`,
-`wounded` and `down`.
+So the crawler, with `HP: 3`, takes three CUT shots, or one FULL. In the scripted run for
+this page: a stun, two cuts and a full, and the calls returned `stunned`, `wounded`,
+`wounded` and `down`. On a real screen none of those words is shown. Played in the game,
+the crawler fell to a stun and CUT shots alone, with no FULL, and two of the CUT shots
+missed it while it walked.
 
 Lt Reyes fired from cell 9, 1, six cells from the crawler, and it never came for him.
 The weapon reaches six cells and this crawler notices at three. That is a kind fight.
@@ -313,15 +319,18 @@ sbs run server,engineering,weapons,science -m MyAway map=0
 1. All three beam down, and walk to the gully. As Dr Hale, click Pim and talk to her.
 2. Somebody opens the pump house: pick up the key on the way, or let Chief Okoro try the
    lock.
-3. Chief Okoro and Lt Reyes take the stairs. Stop at the foot. Open **Scan**: it tells
-   you what is in sight.
+3. Chief Okoro and Lt Reyes take the stairs. From the foot the crawler is not in sight.
+   Walk east along the walkway, to about 7, 1, until it comes into view. Open **Scan**:
+   it tells you what is in sight. The crawler's line is there only while it is in view,
+   and it comes and goes as the crawler walks.
 4. As Lt Reyes, open **Fire**, choose STUN, **Arm**, and click the crawler when it is
-   within six cells. Then CUT, twice. Then FULL.
+   within six cells. Then CUT, until it falls. Shots miss often, and nothing says so.
 5. As Chief Okoro, open **Tasks**. The Thing in the Sump is done. Pick up what the
    crawler dropped.
 
 That fight was played by a script for this page, with stand-in consoles: the settings,
 the arming and the four shots went through the same calls the Fire app's buttons make.
+Then it was played in the game itself for the video's pictures.
 
 ## If something goes wrong
 

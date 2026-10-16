@@ -298,8 +298,8 @@ STILLS = {
 }
 
 # Game stills, 1280x960, marks as fractions of the frame (taken 2026-10-15)
-_CB_SWITCH = ("rect", 0.01, 0.855, 0.945, 0.95)      # game_cabin_sci / _eng: DO NOT WAKE US, and the three buttons
-_CB_ENDS = ("rect", 0.01, 0.9, 0.588, 0.95)          # ... Throw the switch, Leave them sleeping
+_CB_SWITCH = ("rect", 0.01, 0.847, 0.945, 0.953)     # game_cabin_sci / _eng: DO NOT WAKE US, and the three buttons
+_CB_ENDS = ("rect", 0.01, 0.895, 0.589, 0.953)       # ... Throw the switch, Leave them sleeping
 _LS_PAGE = ("rect", 0.385, 0.075, 0.97, 0.355)       # game_log_standby: Stand By the Sleepers' page
 _LS_ROW = ("rect", 0.0, 0.288, 0.38, 0.36)           # ... its row, Active
 _LS_HOUR = ("rect", 0.395, 0.24, 0.785, 0.285)       # ... the hourglass line
@@ -307,14 +307,14 @@ _LC_PAGE = ("rect", 0.385, 0.075, 0.99, 0.455)       # game_log_carry: Carry Wor
 _LC_PIC = ("rect", 0.385, 0.24, 0.965, 0.35)         # ... DS 1's line over its picture
 _LA_TABLE = ("rect", 0.385, 0.24, 0.875, 0.38)       # game_log_account6: the What / What DS 1 knows list
 _LA_ROW = ("rect", 0.0, 0.36, 0.38, 0.43)            # ... Account for the Crew, Active
-_SO_HATCH = ("rect", 0.01, 0.755, 0.225, 0.88)       # game_alone_spine_open: the line, Open the captain's hatch
-_SP_FOUR = ("rect", 0.01, 0.39, 0.875, 0.52)         # game_alone_spine: 'cannot answer yet', four buttons
-_BE_COVER = ("rect", 0.195, 0.65, 0.574, 0.7)        # game_alone_berths: the covering button, last
+_SO_HATCH = ("rect", 0.01, 0.745, 0.229, 0.882)      # game_alone_spine_open: the line, Open the captain's hatch
+_SP_FOUR = ("rect", 0.01, 0.385, 0.99, 0.523)        # game_alone_spine: 'cannot answer yet', four buttons
+_BE_COVER = ("rect", 0.195, 0.645, 0.575, 0.703)     # game_alone_berths: the covering button, last
 _ST_LINE = ("rect", 0.015, 0.49, 0.275, 0.56)        # game_alone_strip: 'Quest complete: Account for the Crew'
-_AH_COVER = ("rect", 0.195, 0.9, 0.565, 0.95)        # game_alone_hold: Count the stores (covering ...), last
-_AE_END = ("rect", 0.01, 0.855, 0.83, 0.95)          # game_alone_end: Lights Out, Return to the ship
-_HS_SWEEP = ("rect", 0.01, 0.9, 0.3, 0.95)           # game_hold_sci: Pull the cargo scanner's last sweep
-_HE_NONE = ("rect", 0.01, 0.9, 0.565, 0.95)          # game_hold_eng: no sweep
+_AH_COVER = ("rect", 0.195, 0.895, 0.566, 0.953)     # game_alone_hold: Count the stores (covering ...), last
+_AE_END = ("rect", 0.01, 0.847, 0.825, 0.953)        # game_alone_end: Lights Out, Return to the ship
+_HS_SWEEP = ("rect", 0.008, 0.925, 0.302, 0.983)     # game_hold_sci: Pull the cargo scanner's last sweep
+_HE_NONE = ("rect", 0.008, 0.925, 0.566, 0.983)      # game_hold_eng: no sweep
 _WA_HOME = ("rect", 0.222, 0.26, 0.388, 0.31)        # game_walk_airlock: Return to the ship
 _WG_TILES = ("rect", 0.0, 0.12, 0.99, 0.72)          # game_walk_gone: the ePADD, no Boarding Party tile
 

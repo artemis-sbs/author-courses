@@ -90,7 +90,8 @@ back clean. ||"
 
 **Screen:** `sbs run server,science,weapons -m MyAway map=0`. Both consoles beam down.
 Science clicks the man by the tent; the scene; the medic's answer. The kit appears; pick
-it up. Weapons: Fire, Arm, the sentry. The cell, the keycard, the door, the beacon.
+it up. Weapons: Fire, Arm, the sentry (shots at a moving sentry miss, silently). The cell,
+the keycard, the door, the beacon.
 
 **Say:** "A server and two consoles. | The ship starts beside the relay, so nobody has to
 fly. || Handheld, Boarding Party, beam down. ||| And there's the difference: | a map, and
@@ -98,7 +99,9 @@ you on it. || Click the ground to walk. | Click a person, and you walk up and ta
 This is a room, exactly like the ones you've written: | buttons, and one of them only a
 medic is offered. ||| He mentions a medical kit, | and now it's on the map, where a moment
 ago it wasn't. || The sentry is the hard part. | From the weapons console I open Fire, |
-arm it, and click the sentry. || It drops a power cell. | The keycard opens the door, |
+arm it, and click the sentry. || It steps a cell at a time, | so a shot often lands where it just was.
+|| Nothing tells you a shot missed. | The Fire app just goes back to safe. || Put it down,
+and it drops a power cell. | The keycard opens the door, |
 the cell goes into the beacon, | and that's the game. ||"
 
 ### 4. Four files
@@ -115,13 +118,15 @@ There's no Python here, and you won't write any. ||"
 ### 5. What a map is
 
 **Screen:** The game first: the yard on the Science console, Dr Hale just beamed down (the
-pad, the tent, the relay house). Then `landing.tiles` in the Tile Map Editor; press Text.
+pad, and only the ground around it: the rest is black until seen). Then a few steps east:
+the tent drawn. Then `landing.tiles` in the Tile Map Editor; press Text.
 Highlight the header, then the legend, then the rows. Trace the pad, the tent, the relay
 house, the door.
 
 **Say:** "First, the yard as the crew sees it, | on the Science console, the moment she
-beams down. || The landing pad she stands on, | the caretaker's tent, | and the relay
-house at the east end. ||| Now click the map file in VS Code, and you get a picture. |
+beams down. || The landing pad she stands on, | and the ground she can see from it.
+|| The rest of the yard stays black | until somebody in the party has seen it. || A few
+steps east, and the caretaker's tent is drawn. ||| Now click the map file in VS Code, and you get a picture. |
 Next lecture is about that picture. || Today press Text, and read what's underneath. ||| It has three parts. || The header
 says what this area is called, | and where someone who beams down stands. || The legend
 says what each character means: | a dot is dust, | a capital W is wall. || And some lines
@@ -132,12 +137,12 @@ pad, | the tent beside it, | and the relay house with its door. || Notice what i
 
 ### 6. What a record is
 
-**Screen:** The game first: the yard on the Science console, the keycard in the dust and
-Old Marrow by his tent; then his scene open on the handheld. Then `mission.amd`. The table
+**Screen:** The game first: the yard on the Weapons console, the sentry on its square and
+Old Marrow by his tent (the keycard is still out of sight); then the yard on Science. Then `mission.amd`. The table
 of seven sections. Then the keycard record: draw a line from `Area:` to the map's `area:`
 line, and from `Mark:` to the legend. Then Old Marrow, and his `Talk scene:` to the room.
 
-**Say:** "Back in the game, | the keycard lies in the dust where the sentry walks, | and
+**Say:** "Back in the game, | the sentry walks its square south of the relay house, | and
 Old Marrow sits beside his tent. || Both of them are records in the fact sheet. ||| The
 fact sheet has seven sections, | and four of them you've written before. ||
 Three of them are new: | props, people and hostiles. ||| Here's one of the props. | A

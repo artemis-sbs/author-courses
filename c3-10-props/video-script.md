@@ -70,7 +70,7 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 Below, a gate across a walkway, and water.
 
 **Say:** "Your maps have places on them. || Today they get things: | a locked door and its
-key, | hung on a tent peg, | and a panel only an engineer may touch. ||| Every one of them
+key, | left by a tent in the yard, | and a panel only an engineer may touch. ||| Every one of them
 is a few lines in the fact sheet, | and what a thing does depends on which lines it has.
 ||"
 
@@ -81,8 +81,8 @@ the Pack app. Then the first record typed: the pump house key. Highlight `Item:`
 
 **Say:** "When somebody clicks a prop, | the game asks four questions in order. || May
 this person use it at all? || Is it a door, and shut? || Is it something to pick up? ||
-Does it open a scene? ||| It stops at the first yes. | And if there's no yes at all, | it
-shows the description. ||| In the game, the key hangs on a tent peg in the yard. | Click
+Does it open a scene? ||| It stops at the first yes. | And if there's no yes at all, | its
+description is on the handheld's Look app. ||| In the game, the key lies by the foot of the tent. | Click
 it, and the Pack app on the handheld has it. ||| So here's the simplest prop there is. | One line says Item, |
 and a name I made up. || Click it, and it's in your pack and off the map. ||"
 
@@ -104,7 +104,8 @@ end. ||"
 
 ### 4. Two more pickups, and a notice
 
-**Screen:** The game first: the Pack app with two fuses; the notice's scene. Type the
+**Screen:** The game first: the Pack app with two fuses; the notice's scene; then Look on
+the second visit (the description). Type the
 toolbox; highlight `Qty: 2`. Type the notice; highlight `Scene:` and
 `Once: yes`.
 
@@ -113,14 +114,15 @@ fuses, | and the notice opens a scene on the handheld. ||| The toolbox is a pick
 two. | That's the line that says Qty. ||| The
 notice opens a scene. | Scene, and the key of a room, | the same join you saw on the
 starter's terminal. || And it has one more line: | Once, and then yes. || The room opens
-the first time, | and after that a click only shows the description. ||| Be careful with
+the first time. || After that a click only walks you up to it, | and its description is on
+the Look app. ||| Be careful with
 that one. | It counts the room opening, | not what anyone answered. ||"
 
 ### 5. A terminal with a Needs
 
 **Screen:** The game first: Dr Hale refused at the panel. Type the pump panel. Highlight `Needs: engineering`, then `Scan:`.
 
-**Say:** "In the game, the doctor clicks the pump panel, | and the handheld tells her
+**Say:** "In the game, the doctor clicks the pump panel, | and the Look app tells her
 she'd need engineering. ||| The pump panel is a terminal too, | with one new line. || Needs, and a job. |||
 Anyone else who clicks it is told they'd need engineering, | and gets nothing more. ||
 That's stricter than a choice in a room. | A choice for a missing job gets covered by
@@ -139,18 +141,19 @@ nothing hears that signal. | That's true for the moment. | The next step is what
 
 ### 7. A gate, a hidden cell and a gauge
 
-**Screen:** The game first: the cistern, the gate shut, the gauge in the water. Then
+**Screen:** The game first: the cistern, walked east along the walkway until the gate
+comes into view, shut; the gauge in the water. Then
 `cistern.tiles`: three + Entry forms and three painted cells. Then
 `mission.amd`: type the sluice gate, the spare cell and the gauge. Lint: clean.
 
-**Say:** "Downstairs in the game, the gate across the walkway is shut, | and the gauge
-stands out in the water. ||| Three marks in the cistern first, | one new legend line and one click each. |||
+**Say:** "Downstairs in the game, walk east along the walkway, | and the gate comes into
+view, shut across the way. || The gauge stands out in the water. ||| Three marks in the cistern first, | one new legend line and one click each. |||
 The sluice gate is a door with only one way to open. | Opens with, signal, and a name. ||
 Nobody on the ground can force it. || The spare cell says Hidden until, | and the same
 name. | It isn't on the map at all until that signal is sent. ||| So one answer in the
 pump house does two things downstairs. | It opens the gate, | and it uncovers the cell.
-||| The gauge stands out in the water. | Reach, and the number two, | lets a crew member
-use it from two cells away. ||| And lint is clean again, | because something hears the
+||| The gauge is out of reach in the water. | Reach, and the number two, | lets a crew member
+use it from two cells away. || On the walkway, the Look app offers it. ||| And lint is clean again, | because something hears the
 signal now. ||"
 
 ### 8. What lint can't see, and play it

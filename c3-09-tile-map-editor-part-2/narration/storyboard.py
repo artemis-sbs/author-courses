@@ -15,25 +15,31 @@ the text hide the Side Bar, as every close view of this class does.
 
 STEP 10 also opens a path behind the relay house (row 0, cells 17 to 27, painted dust): the
 only other way east runs about three cells from the sentry's loop, which notices anyone
-within four. Along the path and on to the sign and the exit, nothing comes nearer the loop
-than five cells (checked with the library's own walking and noticing rules), so the page's
-"walk east along the north side of the yard, well clear of the sentry" is true as written.
+within four (|dx|+|dy|, in sight). The longer loop is 18 9; 25 9; 25 11; 18 11 (2026-10-16).
+It was 18..27 until the engine showed a crew member shot: a click on the sign stands you on
+27, 5 (the open cell beside it nearest you), exactly four from a corner at 27, 9, and the
+walk on to the exit passes 28, 6, four again. With the east end at 25, the path, the cell
+beside the sign, the walk to the exit and the exit itself are all five or more from every
+loop cell and the post (checked with the library's own walking, walk-beside and noticing
+rules), so "well clear of the sentry" is true as written.
 
 THE TILE MAP EDITOR STILLS are taken in the add-on's own editors ("editor": "tiles" /
 "tileset", opened with vscode.openWith), set up over DevTools ("view": "art", "zoom"). See
 capture.web_steps.
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. TWO windows, server and
-engineering (Chief Okoro), state final as the page has it (no probe-only change):
+GAME STILLS. Taken 2026-10-16 on the 18..27 loop; the six stills do not show the sentry,
+so none of them changes with the loop. Fog of war: only what the crew has seen is drawn.
+A click on a prop only walks you beside it; its words are on the Look app. TWO windows,
+server and engineering (Chief Okoro), state final as the page has it (no probe-only change):
 `python game.py c3-09-tile-map-editor-part-2 start --consoles server,engineering`.
   1. About 15 s after Engineering is seated: handheld icon (top left), Boarding Party, Kesh
      Relay, BEAM DOWN. Open Beam: game_l9_beam0 (nowhere else on it).
   2. Click the path behind the relay house (about 22, 0, the top row) and wait for the walk
-     (about 10 s), then click the trail sign (28, 5): game_l9_sign (its line on the
-     handheld). Never along row 6: that passes three cells from the sentry's loop.
+     (about 10 s), then click the trail sign (28, 5) and open Look: game_l9_sign (its line
+     on the Look app). Never along row 6: that passes three cells from the sentry's loop.
   3. Click the exit, the cell under the sign and to the right (29, 6): game_l9_gully (Okoro
      in the gully at 1, 4, beside the way back).
-  4. Open Beam: game_l9_beam1 (To The Dry Gully on it now).
+  4. Open Beam: game_l9_beam1 (To Kesh Relay: a Beam list never names the area you are in).
   5. Walk into the pump house (the gap at 12, 5) and click the pump (15, 4): game_l9_pump.
   6. Click the stairs against the east wall (17, 5): game_l9_cistern (the cistern, Okoro at
      2, 1 beside the foot of the stairs, the tank of water).
@@ -97,7 +103,7 @@ STATES = {
         ("replace", GT, "^...........W_____W..#^^\n^<a", "^...........W__p__W..#^^\n^<a"),
         ("replace", FILE, "pointing east.\n", "pointing east.\n\n" + _PUMP)]},
     # Step 10: the sentry's walk, and the path behind the relay house. The page's five files.
-    "final": {"base": "s9", "edits": [("replace", FILE, "Patrol: 20 9; 26 9; 26 11; 20 11", "Patrol: 18 9; 27 9; 27 11; 18 11"),
+    "final": {"base": "s9", "edits": [("replace", FILE, "Patrol: 20 9; 26 9; 26 11; 20 11", "Patrol: 18 9; 25 9; 25 11; 18 11"),
                                       ("replace", LT, "---\n" + "^" * 32 + "\n", "---\n" + "^" * 17 + "." * 11 + "^" * 4 + "\n")],
               "same_as": (_EX + "/mission.amd", _EX + "/ground/landing.tiles", _EX + "/ground/gully.tiles",
                           _EX + "/ground/starter.tileset", _EX + "/ground/cistern.tiles")},
@@ -107,6 +113,19 @@ STATES = {
     "b_landng": {"base": "final", "edits": [("replace", GT, "@to_landing", "@to_landng")]},
     "b_at": {"base": "final", "edits": [("replace", FILE, "Mark: pump\n", "At: pump\n")]},
 }
+
+# Marks on the game stills (fractions of the 1280x960 frame)
+_B0_NONE = ("rect", 0.665, 0.135, 0.885, 0.235)      # game_l9_beam0: BEAM, 'No other site has a lock yet.'
+_SG_SIGN = ("rect", 0.495, 0.295, 0.555, 0.425)      # game_l9_sign: Okoro beside the sign
+_SG_EXIT = ("rect", 0.495, 0.36, 0.59, 0.48)         # ... the sign and the exit under it, to the right
+_SG_LINE = ("rect", 0.665, 0.135, 0.985, 0.46)       # ... LOOK and the sign's line
+_GU_OKORO = ("rect", 0.025, 0.31, 0.1, 0.43)         # game_l9_gully: Okoro beside the way back
+_GU_PLACE = ("rect", 0.87, 0.085, 0.98, 0.135)       # ... The Dry Gully on the bar
+_B1_LIST = ("rect", 0.665, 0.135, 0.99, 0.275)       # game_l9_beam1: BEAM, To Kesh Relay
+_PU_PUMP = ("rect", 0.34, 0.36, 0.395, 0.485)        # game_l9_pump: Okoro beside the pump
+_CI_TANK = ("rect", 0.0, 0.31, 0.395, 0.69)          # game_l9_cistern: the walkway round the tank
+_CI_OKORO = ("rect", 0.07, 0.345, 0.125, 0.43)       # ... Okoro at the foot of the stairs
+_CI_BEAM = ("rect", 0.665, 0.195, 0.99, 0.27)        # ... the Beam list's To The Dry Gully
 
 _LINT = "sbs lint MyAway"
 _NS = {"side": False}
@@ -159,13 +178,13 @@ STILLS = {
     "d_stairs": ("vscode", "s7", 1, "mid", _ed(GT, 40)),
     # landing.tiles (s8), Things on, Art: the trail sign drawn at 28, 5
     "d_sign": ("vscode", "s8", 1, "mid", _ed(LT, 32)),
-    # landing.tiles (final), Things on: the sentry's patrol as a dashed loop, 18-27 by 9-11
+    # landing.tiles (final), Things on: the sentry's patrol as a dashed loop, 18-25 by 9-11
     "d_patrol": ("vscode", "final", 1, "mid", _ed(LT, 32)),
-    # THE REAL GAME (not taken yet). State final, consoles server,engineering; see the docstring
+    # THE REAL GAME (taken 2026-10-16). State final, consoles server,engineering; see the docstring
     "game_l9_beam0": ("game", "Engineering (Chief Okoro), just beamed down to the yard: the Beam app open, with nowhere else on it"),
-    "game_l9_sign": ("game", "Engineering, the trail sign (28, 5) clicked: its line 'A painted board on a post: PUMP HOUSE, and an arrow pointing east.' on the handheld"),
+    "game_l9_sign": ("game", "Engineering, the trail sign (28, 5) clicked: Okoro beside it, and on the Look app its line 'A painted board on a post: PUMP HOUSE, and an arrow pointing east.'"),
     "game_l9_gully": ("game", "Engineering, the yard's exit (29, 6) clicked: Okoro standing in the gully at 1, 4, beside its way back"),
-    "game_l9_beam1": ("game", "Engineering, in the gully: the Beam app open, To The Dry Gully on it now"),
+    "game_l9_beam1": ("game", "Engineering, in the gully: the Beam app open, To Kesh Relay on it"),
     "game_l9_pump": ("game", "Engineering, inside the pump house, the pump (15, 4) clicked: Okoro beside it, and nothing more"),
     "game_l9_cistern": ("game", "Engineering, the stairs (17, 5) clicked: the cistern, Okoro at 2, 1 beside the foot of the stairs, the tank of water beside the walkway"),
     # drawn
@@ -185,13 +204,14 @@ STILLS = {
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
         {"from": 0, "still": "d_three"},
-        {"from": 2, "still": "game_l9_gully"},
-        {"from": 4, "still": "game_l9_cistern"},
+        {"from": 2, "still": "game_l9_gully", "marks": [_GU_OKORO]},
+        {"from": 4, "still": "game_l9_cistern", "marks": [_CI_TANK]},
         {"from": 5, "still": "card_title"},
     ]},
     "s02_a_way_out_and_a_way_back": {"step": 1, "beats": [
         # the game first: through the exit
-        {"from": 0, "still": "game_l9_gully"},
+        {"from": 0, "still": "game_l9_gully", "marks": [_GU_OKORO]},
+        {"from": 2, "still": "game_l9_gully", "marks": [_GU_OKORO, _GU_PLACE]},
         {"from": 3, "still": "e_exit", "marks": [("text", 30, "@to_gully")]},
         {"from": 6, "still": "e_exit", "marks": [("lines", 30, 30)]},
         {"from": 8, "still": "e_exit", "marks": [("text", 38, ">")]},
@@ -203,7 +223,7 @@ BOARD = {
     ]},
     "s03_what_the_ship_knows": {"step": 3, "beats": [
         # the game first: the Beam app at the start
-        {"from": 0, "still": "game_l9_beam0"},
+        {"from": 0, "still": "game_l9_beam0", "marks": [_B0_NONE]},
         {"from": 2, "still": "card_known"},
         {"from": 6, "still": "card_known", "marks": [("part", "r1")]},
         {"from": 9, "still": "card_known", "marks": [("part", "r2")]},
@@ -211,7 +231,7 @@ BOARD = {
     ]},
     "s04_water_and_a_third_map": {"step": 4, "beats": [
         # the game first: the cistern
-        {"from": 0, "still": "game_l9_cistern"},
+        {"from": 0, "still": "game_l9_cistern", "marks": [_CI_TANK]},
         {"from": 2, "still": "d_tileset"},
         {"from": 4, "still": "e_water", "marks": [("lines", 17, 17)]},
         {"from": 5, "still": "e_water", "marks": [("text", 17, "see")]},
@@ -222,7 +242,7 @@ BOARD = {
     ]},
     "s05_stairs_and_where_they_arrive": {"step": 6, "beats": [
         {"from": 0, "still": "e_stairs", "marks": [("lines", 18, 18), ("text", 25, "v")]},
-        {"from": 2, "still": "game_l9_cistern"},
+        {"from": 2, "still": "game_l9_cistern", "marks": [_CI_OKORO]},
         {"from": 3, "still": "e_exits", "marks": [("lines", 19, 20)]},
         {"from": 6, "still": "e_exits", "marks": [("lines", 20, 20)]},
         {"from": 8, "still": "e_cistern", "marks": [("text", 14, "@foot")]},
@@ -236,9 +256,11 @@ BOARD = {
         {"from": 6, "still": "e_sign", "marks": [("lines", 198, 204)]},
         {"from": 7, "still": "e_sign", "marks": [("lines", 200, 201)]},
         # the game: the sign, clicked
-        {"from": 8, "still": "game_l9_sign"},
-        {"from": 10, "still": "d_sign"},
-        {"from": 12, "still": "e_moved", "marks": [("lines", 201, 201)]},
+        {"from": 8, "still": "game_l9_sign", "marks": [_SG_EXIT]},
+        {"from": 9, "still": "game_l9_sign", "marks": [_SG_SIGN]},
+        {"from": 10, "still": "game_l9_sign", "marks": [_SG_LINE]},
+        {"from": 11, "still": "d_sign"},
+        {"from": 13, "still": "e_moved", "marks": [("lines", 201, 201)]},
     ]},
     "s07_a_thing_on_a_mark_and_a_patr": {"step": 9, "beats": [
         {"from": 0, "still": "e_pumpmark", "marks": [("lines", 19, 19), ("text", 27, "p")]},
@@ -248,7 +270,7 @@ BOARD = {
         {"from": 10, "still": "e_pump", "marks": [("lines", 206, 221)]},
         {"from": 12, "still": "e_pump", "marks": [("lines", 212, 212), ("lines", 220, 220)]},
         # the game: the pump, clicked
-        {"from": 13, "still": "game_l9_pump"},
+        {"from": 13, "still": "game_l9_pump", "marks": [_PU_PUMP]},
         {"from": 15, "still": "e_patrol", "marks": [("lines", 247, 260)]},
         {"from": 16, "still": "e_patrol", "marks": [("lines", 257, 257)]},
         {"from": 18, "still": "d_patrol"},
@@ -260,12 +282,13 @@ BOARD = {
         {"from": 3, "still": "t_at", "marks": [("span", 1, "a mark name goes in Mark:")]},
         {"from": 5, "still": "card_lint", "marks": [("part", "r2")]},
         {"from": 7, "still": "card_run"},
-        {"from": 8, "still": "game_l9_beam0"},
-        {"from": 10, "still": "game_l9_gully"},
-        {"from": 11, "still": "game_l9_beam1"},
-        {"from": 12, "still": "game_l9_cistern"},
-        {"from": 14, "still": "card_exercise", "marks": [("part", "item1")]},
-        {"from": 15, "still": "card_exercise", "marks": [("part", "item3")]},
-        {"from": 16, "still": "card_next"},
+        {"from": 8, "still": "game_l9_beam0", "marks": [_B0_NONE]},
+        {"from": 10, "still": "game_l9_gully", "marks": [_GU_OKORO, _GU_PLACE]},
+        {"from": 11, "still": "game_l9_beam1", "marks": [_B1_LIST]},
+        {"from": 13, "still": "game_l9_cistern", "marks": [_CI_OKORO]},
+        {"from": 15, "still": "game_l9_cistern", "marks": [_CI_BEAM]},
+        {"from": 16, "still": "card_exercise", "marks": [("part", "item1")]},
+        {"from": 17, "still": "card_exercise", "marks": [("part", "item3")]},
+        {"from": 18, "still": "card_next"},
     ]},
 }

@@ -70,12 +70,13 @@ s06_a_thing_at_a_cell_4	At takes a cell:
 s06_a_thing_at_a_cell_5	how far across, a comma, and how far down.
 s06_a_thing_at_a_cell_6	So here's a trail sign,
 s06_a_thing_at_a_cell_7	at twenty-eight across and five down, in the yard.
-s06_a_thing_at_a_cell_8	In the game it stands by the exit,
-s06_a_thing_at_a_cell_9	and clicking it puts its line on the handheld.
-s06_a_thing_at_a_cell_10	Open the yard's map,
-s06_a_thing_at_a_cell_11	and the editor draws the sign where the record put it.
-s06_a_thing_at_a_cell_12	With Move I can drag it,
-s06_a_thing_at_a_cell_13	and the editor rewrites that line in the fact sheet for me.
+s06_a_thing_at_a_cell_8	In the game it stands by the exit.
+s06_a_thing_at_a_cell_9	Click it, and you walk up beside it.
+s06_a_thing_at_a_cell_10	Its line is on the handheld, in the Look app.
+s06_a_thing_at_a_cell_11	Open the yard's map,
+s06_a_thing_at_a_cell_12	and the editor draws the sign where the record put it.
+s06_a_thing_at_a_cell_13	With Move I can drag it,
+s06_a_thing_at_a_cell_14	and the editor rewrites that line in the fact sheet for me.
 s07_a_thing_on_a_mark_and_a_patr_0	The pump belongs to the pump house,
 s07_a_thing_on_a_mark_and_a_patr_1	so it gets a mark of its own.
 s07_a_thing_on_a_mark_and_a_patr_2	And its record says Mark,
@@ -107,9 +108,11 @@ s08_lint_play_it_and_your_turn_7	So play it through.
 s08_lint_play_it_and_your_turn_8	Beam down, and open Beam.
 s08_lint_play_it_and_your_turn_9	There's nowhere else to go.
 s08_lint_play_it_and_your_turn_10	Walk east, and take the exit.
-s08_lint_play_it_and_your_turn_11	Now the gully is on the list.
-s08_lint_play_it_and_your_turn_12	Go down the stairs,
-s08_lint_play_it_and_your_turn_13	and you're standing by the water.
-s08_lint_play_it_and_your_turn_14	For the exercise, stand a crate in the cistern,
-s08_lint_play_it_and_your_turn_15	and add a second way down.
-s08_lint_play_it_and_your_turn_16	Next time, these maps get things you can use.
+s08_lint_play_it_and_your_turn_11	Open Beam in the gully,
+s08_lint_play_it_and_your_turn_12	and it offers the way back to Kesh Relay.
+s08_lint_play_it_and_your_turn_13	Go down the stairs,
+s08_lint_play_it_and_your_turn_14	and you're standing by the water.
+s08_lint_play_it_and_your_turn_15	And down here the Beam list names the gully too.
+s08_lint_play_it_and_your_turn_16	For the exercise, stand a crate in the cistern,
+s08_lint_play_it_and_your_turn_17	and add a second way down.
+s08_lint_play_it_and_your_turn_18	Next time, these maps get things you can use.

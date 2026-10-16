@@ -32,10 +32,14 @@ s03_play_it_to_the_win_10	and now it's on the map, where a moment ago it wasn't.
 s03_play_it_to_the_win_11	The sentry is the hard part.
 s03_play_it_to_the_win_12	From the weapons console I open Fire,
 s03_play_it_to_the_win_13	arm it, and click the sentry.
-s03_play_it_to_the_win_14	It drops a power cell.
-s03_play_it_to_the_win_15	The keycard opens the door,
-s03_play_it_to_the_win_16	the cell goes into the beacon,
-s03_play_it_to_the_win_17	and that's the game.
+s03_play_it_to_the_win_14	It steps a cell at a time,
+s03_play_it_to_the_win_15	so a shot often lands where it just was.
+s03_play_it_to_the_win_16	Nothing tells you a shot missed.
+s03_play_it_to_the_win_17	The Fire app just goes back to safe.
+s03_play_it_to_the_win_18	Put it down, and it drops a power cell.
+s03_play_it_to_the_win_19	The keycard opens the door,
+s03_play_it_to_the_win_20	the cell goes into the beacon,
+s03_play_it_to_the_win_21	and that's the game.
 s04_four_files_0	Now look at the folder.
 s04_four_files_1	Nine files came with it,
 s04_four_files_2	and four of them are the mission.
@@ -50,30 +54,32 @@ s04_four_files_10	There's no Python here, and you won't write any.
 s05_what_a_map_is_0	First, the yard as the crew sees it,
 s05_what_a_map_is_1	on the Science console, the moment she beams down.
 s05_what_a_map_is_2	The landing pad she stands on,
-s05_what_a_map_is_3	the caretaker's tent,
-s05_what_a_map_is_4	and the relay house at the east end.
-s05_what_a_map_is_5	Now click the map file in VS Code, and you get a picture.
-s05_what_a_map_is_6	Next lecture is about that picture.
-s05_what_a_map_is_7	Today press Text, and read what's underneath.
-s05_what_a_map_is_8	It has three parts.
-s05_what_a_map_is_9	The header says what this area is called,
-s05_what_a_map_is_10	and where someone who beams down stands.
-s05_what_a_map_is_11	The legend says what each character means:
-s05_what_a_map_is_12	a dot is dust,
-s05_what_a_map_is_13	a capital W is wall.
-s05_what_a_map_is_14	And some lines carry an at sign and a name.
-s05_what_a_map_is_15	That's called a mark.
-s05_what_a_map_is_16	It gives a cell a name,
-s05_what_a_map_is_17	so a record can say, stand here.
-s05_what_a_map_is_18	Under three dashes is the map itself.
-s05_what_a_map_is_19	You can find the pad,
-s05_what_a_map_is_20	the tent beside it,
-s05_what_a_map_is_21	and the relay house with its door.
-s05_what_a_map_is_22	Notice what isn't here.
-s05_what_a_map_is_23	No caretaker, no sentry, no key.
-s05_what_a_map_is_24	Only the places they stand.
+s05_what_a_map_is_3	and the ground she can see from it.
+s05_what_a_map_is_4	The rest of the yard stays black
+s05_what_a_map_is_5	until somebody in the party has seen it.
+s05_what_a_map_is_6	A few steps east, and the caretaker's tent is drawn.
+s05_what_a_map_is_7	Now click the map file in VS Code, and you get a picture.
+s05_what_a_map_is_8	Next lecture is about that picture.
+s05_what_a_map_is_9	Today press Text, and read what's underneath.
+s05_what_a_map_is_10	It has three parts.
+s05_what_a_map_is_11	The header says what this area is called,
+s05_what_a_map_is_12	and where someone who beams down stands.
+s05_what_a_map_is_13	The legend says what each character means:
+s05_what_a_map_is_14	a dot is dust,
+s05_what_a_map_is_15	a capital W is wall.
+s05_what_a_map_is_16	And some lines carry an at sign and a name.
+s05_what_a_map_is_17	That's called a mark.
+s05_what_a_map_is_18	It gives a cell a name,
+s05_what_a_map_is_19	so a record can say, stand here.
+s05_what_a_map_is_20	Under three dashes is the map itself.
+s05_what_a_map_is_21	You can find the pad,
+s05_what_a_map_is_22	the tent beside it,
+s05_what_a_map_is_23	and the relay house with its door.
+s05_what_a_map_is_24	Notice what isn't here.
+s05_what_a_map_is_25	No caretaker, no sentry, no key.
+s05_what_a_map_is_26	Only the places they stand.
 s06_what_a_record_is_0	Back in the game,
-s06_what_a_record_is_1	the keycard lies in the dust where the sentry walks,
+s06_what_a_record_is_1	the sentry walks its square south of the relay house,
 s06_what_a_record_is_2	and Old Marrow sits beside his tent.
 s06_what_a_record_is_3	Both of them are records in the fact sheet.
 s06_what_a_record_is_4	The fact sheet has seven sections,

@@ -15,14 +15,17 @@ the text hide the Side Bar, as every close view of this class does.
 THE TILE MAP EDITOR STILL (d_marks) is taken in the add-on's own editor ("editor": "tiles",
 "view": "art"; see capture.web_steps).
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. THREE windows: server,
+GAME STILLS. Taken 2026-10-16. What they showed: the key is a small keycard sprite by the
+tent's foot, not on a peg; the door opens with no words; a prop's description (the notice's
+second visit, 'You would need engineering') is on the Look app; in the cistern the gate is
+only seen after walking the walkway east. THREE windows: server,
 science (Dr Ines Hale) and engineering (Chief Okoro), the page's
 `sbs run server,engineering,science -m MyAway map=0`, state final as the page has it (no
 probe-only change: Lecture 9's path behind the relay house keeps the crew five cells from
 the sentry's loop): `python game.py c3-10-props start --consoles server,engineering,science`.
   1. About 15 s after the consoles are seated, both: handheld icon (top left), Boarding Party,
      Kesh Relay, BEAM DOWN.
-  2. Science: walk toward the tent; the key on its peg at 14, 4 in view: game_l10_keymap.
+  2. Science: walk toward the tent; the key by the tent's foot at 14, 4 in view: game_l10_keymap.
      Click it, then open Pack: game_l10_pack (pump key).
   3. Both walk east by the path behind the relay house (click about 22, 0 first, never row 6,
      which passes three cells from the sentry's loop), then take the exit (29, 6), one at a
@@ -144,17 +147,17 @@ STILLS = {
     # cistern.tiles (p7a) in the Tile Map Editor, Art, Marks on: sluice, crate and gauge outlined
     "d_marks": ("vscode", "p7a", 1, "mid", dict(_NS, file=CT, editor="tiles", view="art", zoom=48)),
     # THE REAL GAME (not taken yet). State final, consoles server,engineering,science; see the docstring
-    "game_l10_keymap": ("game", "Science (Dr Hale) in the yard near the tent: the pump house key drawn on its peg at 14, 4"),
+    "game_l10_keymap": ("game", "Science (Dr Hale) in the yard near the tent: the pump house key, a small keycard sprite by the tent's foot at 14, 4"),
     "game_l10_pack": ("game", "Science, the key clicked: the Pack app open, holding the pump key; the key gone from the map"),
     "game_l10_door_shut": ("game", "Engineering (Chief Okoro) in the gully beside the pump house door (12, 5), shut"),
-    "game_l10_door_open": ("game", "Engineering, the door clicked with the key in Dr Hale's pack: the door open (the doorframe picture), the words 'pump key fits' if the handheld shows them"),
+    "game_l10_door_open": ("game", "Engineering, the door clicked with the key in Dr Hale's pack: the door open (the doorframe picture); no words on the handheld"),
     "game_l10_fuse": ("game", "Science, the toolbox (19, 8) clicked: the Pack app reading fuse x2"),
     "game_l10_notice": ("game", "Science, the notice (11, 4) clicked: The Notice's line 'SPARE BEACON CELL KEPT BELOW...' and one button, Let the pieces fall"),
-    "game_l10_notice2": ("game", "Science, the notice clicked a second time: only its description, '...It will not survive being read twice.'"),
+    "game_l10_notice2": ("game", "Science, the notice clicked a second time: she walks up to it; the Look app shows its description, '...It will not survive being read twice.'"),
     "game_l10_needs": ("game", "Science, the pump panel (16, 6) clicked: 'You would need engineering for that.'"),
     "game_l10_panel": ("game", "Engineering, the pump panel clicked: The Pump Panel's line and two buttons, Throw the lever / Leave it alone"),
-    "game_l10_cistern": ("game", "Engineering in the cistern before the lever: the sluice gate shut across the walkway (14, 2), the gauge out in the tank (6, 3), the east room empty"),
-    "game_l10_gauge": ("game", "Engineering, the gauge clicked from the walkway two cells off: its description, 'The needle reads FULL.'"),
+    "game_l10_cistern": ("game", "Engineering in the cistern before the lever, walked east along the walkway: the sluice gate shut at the east end (14, 2), the gauge out in the tank (6, 3)"),
+    "game_l10_gauge": ("game", "Engineering on the walkway two cells from the gauge: Look offers Use Depth gauge, and its description, 'The needle reads FULL.'"),
     "game_l10_drained": ("game", "Engineering in the cistern after 'Throw the lever': the sluice gate open, the spare power cell in the east room (16, 2)"),
     # drawn
     "card_title": ("card", "title", {}),
@@ -168,11 +171,29 @@ STILLS = {
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 11", "sub": "People and hostiles"}),
 }
 
+# Marks on the game stills (fractions of the 1280x960 frame)
+_KM_KEY = ("rect", 0.54, 0.325, 0.582, 0.375)       # game_l10_keymap: the key by the tent's foot
+_PK_KEY = ("rect", 0.665, 0.195, 0.775, 0.24)       # game_l10_pack: pump key x1
+_DS_DOOR = ("rect", 0.42, 0.37, 0.51, 0.485)        # game_l10_door_shut: Okoro at the shut door
+_DO_DOOR = ("rect", 0.42, 0.37, 0.51, 0.485)        # game_l10_door_open: the door, open
+_FU_PACK = ("rect", 0.665, 0.19, 0.775, 0.285)      # game_l10_fuse: fuse x2, pump key x1
+_NT_LINE = ("rect", 0.67, 0.415, 0.985, 0.635)      # game_l10_notice: the notice's line, its button
+_N2_HALE = ("rect", 0.185, 0.365, 0.24, 0.48)       # game_l10_notice2: Dr Hale beside the notice
+_N2_DESC = ("rect", 0.67, 0.53, 0.965, 0.625)       # ... its description on Look
+_ND_MSG = ("rect", 0.67, 0.53, 0.96, 0.57)          # game_l10_needs: You would need engineering
+_PN_LINE = ("rect", 0.67, 0.62, 0.985, 0.785)       # game_l10_panel: the panel's line, two buttons
+_CI_GATE = ("rect", 0.535, 0.42, 0.59, 0.485)       # game_l10_cistern: the gate, shut, at the east end
+_CI_GAUGE = ("rect", 0.235, 0.49, 0.27, 0.53)       # ... the gauge in the tank
+_GA_GAUGE = ("rect", 0.235, 0.35, 0.27, 0.53)       # game_l10_gauge: Okoro on the walkway, the gauge below
+_GA_LOOK = ("rect", 0.665, 0.19, 0.99, 0.265)       # ... Use Depth gauge
+_DR_OPEN = ("rect", 0.535, 0.415, 0.662, 0.5)       # game_l10_drained: the gate open, the spare cell
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
-        {"from": 0, "still": "game_l10_door_shut"},
-        {"from": 2, "still": "game_l10_door_open"},
-        {"from": 4, "still": "game_l10_panel"},
+        {"from": 0, "still": "game_l10_door_shut", "marks": [_DS_DOOR]},
+        {"from": 2, "still": "game_l10_door_open", "marks": [_DO_DOOR]},
+        {"from": 3, "still": "game_l10_keymap", "marks": [_KM_KEY]},
+        {"from": 4, "still": "game_l10_panel", "marks": [_PN_LINE]},
         {"from": 5, "still": "e_door", "marks": [("lines", 233, 243)]},
         {"from": 6, "still": "card_title"},
     ]},
@@ -184,16 +205,16 @@ BOARD = {
         {"from": 5, "still": "card_questions", "marks": [("part", "r4")]},
         {"from": 6, "still": "card_questions"},
         # the game first: the key, then the pack
-        {"from": 9, "still": "game_l10_keymap"},
-        {"from": 10, "still": "game_l10_pack"},
+        {"from": 9, "still": "game_l10_keymap", "marks": [_KM_KEY]},
+        {"from": 10, "still": "game_l10_pack", "marks": [_PK_KEY]},
         {"from": 11, "still": "e_key", "marks": [("lines", 224, 231)]},
         {"from": 12, "still": "e_key", "marks": [("lines", 229, 229)]},
-        {"from": 14, "still": "game_l10_pack"},
+        {"from": 14, "still": "game_l10_pack", "marks": [_PK_KEY]},
     ]},
     "s03_a_door": {"step": 2, "beats": [
         # the game first: the door, shut and open
-        {"from": 0, "still": "game_l10_door_shut"},
-        {"from": 1, "still": "game_l10_door_open"},
+        {"from": 0, "still": "game_l10_door_shut", "marks": [_DS_DOOR]},
+        {"from": 1, "still": "game_l10_door_open", "marks": [_DO_DOOR]},
         {"from": 2, "still": "e_door", "marks": [("lines", 233, 243)]},
         {"from": 3, "still": "e_door", "marks": [("lines", 239, 239)]},
         {"from": 5, "still": "e_door", "marks": [("lines", 240, 240)]},
@@ -206,22 +227,24 @@ BOARD = {
     "s04_two_more_pickups_and_a_notic": {"step": 3, "beats": [
         # the game first: two fuses, and the notice's scene
         {"from": 0, "still": "game_l10_fuse"},
-        {"from": 2, "still": "game_l10_notice"},
+        {"from": 1, "still": "game_l10_fuse", "marks": [_FU_PACK]},
+        {"from": 2, "still": "game_l10_notice", "marks": [_NT_LINE]},
         {"from": 3, "still": "e_toolbox", "marks": [("lines", 245, 254)]},
         {"from": 4, "still": "e_toolbox", "marks": [("lines", 252, 252)]},
         {"from": 5, "still": "e_notice", "marks": [("lines", 256, 265)]},
         {"from": 6, "still": "e_notice", "marks": [("lines", 262, 262)]},
         {"from": 8, "still": "e_notice", "marks": [("lines", 263, 263)]},
-        {"from": 10, "still": "game_l10_notice"},
-        {"from": 11, "still": "game_l10_notice2"},
-        {"from": 12, "still": "e_notice", "marks": [("lines", 263, 263)]},
+        {"from": 10, "still": "game_l10_notice", "marks": [_NT_LINE]},
+        {"from": 11, "still": "game_l10_notice2", "marks": [_N2_HALE]},
+        {"from": 12, "still": "game_l10_notice2", "marks": [_N2_DESC]},
+        {"from": 13, "still": "e_notice", "marks": [("lines", 263, 263)]},
     ]},
     "s05_a_terminal_with_a_needs": {"step": 5, "beats": [
         # the game first: the doctor refused
-        {"from": 0, "still": "game_l10_needs"},
+        {"from": 0, "still": "game_l10_needs", "marks": [_ND_MSG]},
         {"from": 2, "still": "e_panel", "marks": [("lines", 267, 278)]},
         {"from": 4, "still": "e_panel", "marks": [("lines", 275, 275)]},
-        {"from": 5, "still": "game_l10_needs"},
+        {"from": 5, "still": "game_l10_needs", "marks": [_ND_MSG]},
         {"from": 7, "still": "e_panel", "marks": [("lines", 275, 275)]},
         {"from": 11, "still": "e_panel", "marks": [("lines", 276, 276)]},
     ]},
@@ -234,18 +257,20 @@ BOARD = {
     ]},
     "s07_a_gate_a_hidden_cell_and_a_g": {"step": 7, "beats": [
         # the game first: downstairs, before the lever
-        {"from": 0, "still": "game_l10_cistern"},
-        {"from": 2, "still": "e_marks", "marks": [("lines", 15, 17)]},
-        {"from": 3, "still": "card_marks"},
-        {"from": 4, "still": "e_gate", "marks": [("lines", 280, 291)]},
-        {"from": 5, "still": "e_gate", "marks": [("lines", 288, 288)]},
-        {"from": 7, "still": "e_cell", "marks": [("lines", 299, 299)]},
-        {"from": 9, "still": "e_cell", "marks": [("lines", 293, 301)]},
-        {"from": 10, "still": "game_l10_drained"},
-        {"from": 13, "still": "e_cell", "marks": [("lines", 303, 313)]},
-        {"from": 14, "still": "e_cell", "marks": [("lines", 310, 310)]},
-        {"from": 15, "still": "game_l10_gauge"},
-        {"from": 16, "still": "t_final", "marks": [("part", "run1:clean")]},
+        {"from": 0, "still": "game_l10_cistern", "marks": [_CI_GATE]},
+        {"from": 2, "still": "game_l10_cistern", "marks": [_CI_GAUGE]},
+        {"from": 3, "still": "e_marks", "marks": [("lines", 15, 17)]},
+        {"from": 4, "still": "card_marks"},
+        {"from": 5, "still": "e_gate", "marks": [("lines", 280, 291)]},
+        {"from": 6, "still": "e_gate", "marks": [("lines", 288, 288)]},
+        {"from": 8, "still": "e_cell", "marks": [("lines", 299, 299)]},
+        {"from": 10, "still": "e_cell", "marks": [("lines", 293, 301)]},
+        {"from": 11, "still": "game_l10_drained", "marks": [_DR_OPEN]},
+        {"from": 14, "still": "e_cell", "marks": [("lines", 303, 313)]},
+        {"from": 15, "still": "e_cell", "marks": [("lines", 310, 310)]},
+        {"from": 16, "still": "game_l10_gauge", "marks": [_GA_GAUGE]},
+        {"from": 17, "still": "game_l10_gauge", "marks": [_GA_LOOK]},
+        {"from": 18, "still": "t_final", "marks": [("part", "run1:clean")]},
     ]},
     "s08_what_lint_can_t_see_and_play": {"step": 8, "beats": [
         {"from": 0, "still": "t_final", "marks": [("part", "run1:clean")]},
@@ -253,10 +278,10 @@ BOARD = {
         {"from": 4, "still": "t_signal", "marks": [("span", 1, "ground-signal-unsent")]},
         {"from": 5, "still": "card_cannot", "marks": [("part", "r1"), ("part", "r2")]},
         {"from": 8, "still": "card_run"},
-        {"from": 9, "still": "game_l10_pack"},
-        {"from": 10, "still": "game_l10_door_open"},
-        {"from": 11, "still": "game_l10_needs"},
-        {"from": 11.5, "still": "game_l10_panel"},
+        {"from": 9, "still": "game_l10_pack", "marks": [_PK_KEY]},
+        {"from": 10, "still": "game_l10_door_open", "marks": [_DO_DOOR]},
+        {"from": 11, "still": "game_l10_needs", "marks": [_ND_MSG]},
+        {"from": 11.5, "still": "game_l10_panel", "marks": [_PN_LINE]},
         {"from": 12, "still": "card_exercise", "marks": [("part", "item1")]},
         {"from": 14, "still": "card_next"},
     ]},
