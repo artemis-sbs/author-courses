@@ -40,7 +40,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 | Mission | `MyAway` with Lecture 11's files. Lint clean |
 | VS Code | `MyAway` folder open; `mission.amd` in two tabs: the Quests section, and the end of the file |
 | Command prompt | Open in `data\missions`, cleared |
-| Game | Closed. Started on camera in scene 8 with a server, Engineering, Weapons and Science |
+| Game | Closed. Started on camera in scene 8 with a server, Engineering and Weapons (two crew: Chief Okoro and Lt Reyes) |
 
 ## Confirm on camera
 
@@ -91,37 +91,54 @@ on people. ||"
 
 ### 3. A quest that waits, and two hidden records
 
-**Screen:** The Quests section: type Pim's Tablet. Lint: the warning. Then the People
-section: the second Pim. Then the Props section: the stash.
+**Screen:** The game first: the Quest Log on the Weapons console's ePADD (Lt Reyes, beamed
+back up) after Pim's promise, Pim's Tablet selected. Then the Quests section: type Pim's
+Tablet. Lint: the warning. Then the game: the yard on the Engineering console's map, Pim by
+the tent. Then the People section: the second Pim. Then the game: the gully, the medical
+kit by the rock. Then the Props section: the stash.
 
-**Say:** "First a quest that waits. | It starts when it's revealed, | which means when an
-answer says so. || Its description gets a second paragraph about who Pim is, | for
-whoever stayed on the ship and never met her. || Lint warns that nothing reveals it yet, | and that's true for now. |||
-Then two things that begin hidden. || A second record for Pim, by the tent in the yard. |
-When somebody goes somewhere else on a map, they're two records: | the one who leaves, and
-the one who arrives. || And a medical kit under a rock, | hidden until a scene shows it.
-||"
+**Say:** "First a quest that waits. || Here it is in the Quest Log, | on the ePADD of a crew
+member who beamed back up. || Pim's Tablet, a hundred credits, and two paragraphs. ||| In
+the file, it starts when it's revealed, | which means when an answer says so. || The
+second paragraph is about who Pim is, | for whoever stayed on the ship and never met her.
+|| Lint warns that nothing reveals it yet, | and that's true for now. ||| Then two things
+that begin hidden. || Here's the yard on the engineer's map, near the end, | and that's
+Pim, standing by the tent. || In the file she's a second record. | When somebody goes
+somewhere else on a map, they're two records: | the one who leaves, and the one who
+arrives. ||| And here's the gully on his map, | with a medical kit by the rock that wasn't there
+before. || In the file it's a prop, | hidden until a scene shows it. ||"
 
 ### 4. Pim's scene
 
-**Screen:** The end of the file: replace Pim's two rooms with the eight. Walk the cursor
-down the six answers of the first room. Lint: clean.
+**Screen:** The game first: Pim's scene in the Act app on the Engineering console's
+handheld (Chief Okoro), after the notice. Then the end of the file: replace Pim's two rooms
+with the eight. Walk the cursor down the six answers of the first room. Then the game: the
+same scene with the tablet in his pack. Lint: clean.
 
-**Say:** "Now for her scene, | and it's where most of today's words live. ||| This answer
-is only offered if the party learned a fact, | from the notice by the door. || This one
-reveals the stash. || In the next room, a promise accepts the quest. ||| And here's the
-payoff. | It's offered only to the one holding the tablet. || Then three outcomes in a
-row, with commas: | take the tablet, complete the quest, and give a fuse. ||| There's a
-mean answer too. | Keep the tablet, and she's roused: | she attacks, and the quest fails.
-|| And when she goes home, | one answer dismisses her here | and summons her there. ||"
+**Say:** "Now for her scene, | and it's where most of today's words live. ||| This is the
+Act app on the engineer's handheld, | talking to Pim in the gully. || He's read the notice
+by the pump house, | so he's offered a question about the spare cell. ||| In the file, that
+answer is only offered if the party learned a fact, | from the notice by the door. || This
+one reveals the stash. || In the next room, a promise accepts the quest. ||| And here's the
+payoff, on the handheld. | He's carrying the tablet now, | and there are two new buttons.
+||| In the file, the first is offered only to the one holding the tablet. || Then three
+outcomes in a row, with commas: | take the tablet, complete the quest, and give a fuse.
+||| The second is the mean answer. | Keep the tablet, and she's roused: | she attacks, and
+the quest fails. || And when she goes home, | one answer dismisses her here | and summons
+her there. ||"
 
 ### 5. The pump, with fuses
 
-**Screen:** Replace the pump panel's rooms with the four. Highlight `holding fuse >= 3`,
-then `take fuse 3`, then the two `%{party ...}` lines, then the signal on the last room.
+**Screen:** The game first: the pump panel in the Act app on the engineer's handheld, with
+two fuses in his pack; then with three. Then replace the pump panel's rooms with the four.
+Highlight `holding fuse >= 3`, then `take fuse 3`, then the two `%{party ...}` lines, then
+the signal on the last room.
 
-**Say:** "The pump needs three fuses now. || Look at the condition, | and at the outcome
-after it. || Holding three, and take three. ||| Take always takes from the person who
+**Say:** "The pump needs three fuses now. || Here's the panel on the engineer's handheld,
+| with two fuses in his pack. || He's offered the wire and the crowbar, and not the
+lever. ||| With a third fuse the line changes, | and fitting all three is the first button.
+||| In the file, look at the condition, | and at the outcome after it. || Holding three,
+and take three. ||| Take always takes from the person who
 answers. | So the condition in front of it is always holding, and never party. ||| The
 lines at the top are different. | A line is read by everybody, | so a line asks about the
 party. ||| The second answer is a gamble. | Two fuses and a bit of wire, | and a roll that
@@ -130,30 +147,39 @@ the signal sits on its one way out. ||"
 
 ### 6. Two more uses for old rooms
 
-**Screen:** The Yard Terminal: add the `calm sentry` answer and its room. Then Old Marrow:
-add the `if party pump_key` answer and its room.
+**Screen:** The game first: the Yard Terminal in the Act app once the code is copied down,
+with the new button. Then the Yard Terminal: add the `calm sentry` answer and its room.
+Then the game: Old Marrow on the Weapons console's handheld (Lt Reyes), with the key in
+Chief Okoro's pack. Then Old Marrow: add the `if party pump_key` answer and its room.
 
-**Say:** "The starter's terminal already teaches a fact. | Give it a second use. || Send
-the sentry its update, and it's calm. | It keeps its power cell, though, | so the party
-still needs another one. ||| And Marrow gets one answer about the brass key. || That
-condition is party, | because nothing is taken, | and it doesn't matter who picked the key
-up. ||"
+**Say:** "The starter's terminal already teaches a fact. | Give it a second use. || On the
+handheld, once the code is copied down, | there's a new button under Send the door code.
+||| In the file, send the sentry its update, and it's calm. | It keeps its power cell,
+though, | so the party still needs another one. ||| And Marrow gets one answer about the
+brass key. || Here it is on the weapons officer's handheld, | and it's the engineer who's
+carrying the key. || In the file, that condition is party, | because nothing is taken, |
+and it doesn't matter who picked the key up. ||"
 
 ### 7. The endings, and one more word
 
-**Screen:** The pump's `; fails relight`. Then the starter's beacon answer with `if
-holding power_cell`. Then Step 9: `; discover cistern`, and lint clean.
+**Screen:** The game first: the server's last screen after the crowbar, lost. Then the
+pump's `; fails relight`. Then the game: the beacon in the Act app with the spare cell in
+the pack. Then the starter's beacon answer with `if holding power_cell`. Then the last
+screen, won. Then Step 9: `; discover cistern`, and lint clean.
 
 **Say:** "You wrote no Win line today, and no Lose line. || You didn't need to. | Both sit
-on the starter's quest. ||| Your crowbar fails that quest, | so it loses the game from two
-maps away. || And your spare cell is a power cell, | so the starter's own winning answer
-takes it. ||| One more word, discover, | tells the ship an area exists. || It isn't in
+on the starter's quest. ||| Here's the last screen after the crowbar, | and that's the
+starter's Lose sentence. || Your crowbar fails that quest, | so it loses the game from two
+maps away. ||| And here's the beacon, with the spare cell in the engineer's pack. || Your
+spare is a power cell, | so the starter's own winning answer takes it, | and the game ends
+with the starter's Win sentence. ||| One more word, discover, | tells the ship an area
+exists. || It isn't in
 your mission, | because the ship can't beam into your cistern anyway. ||"
 
 ### 8. Play it, and your turn
 
-**Screen:** The game with three consoles: the route on the page, cut down to its turns.
-The win. Then again, with the crowbar. Then the exercise.
+**Screen:** The game with two consoles, Engineering and Weapons: the route on the page, cut
+down to its turns. The win. Then again, with the crowbar. Then the exercise.
 
 **Say:** "Play the long way round. || The key, then Marrow, and then the gully. || Pim
 asks for her tablet. || The crawler, the tablet, and back to Pim for a fuse. || Three

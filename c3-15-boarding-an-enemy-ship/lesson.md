@@ -24,8 +24,7 @@ console connected: the button was offered, the deck was built from the ship's pl
 a prize was taken. **Nobody has looked at the screen.** What the deck looks like is
 unseen, and this page does not describe it.
 
-This feature is also new, and three things about it are rough. They are on this page
-where they matter, in bold, and all three are reported.
+This feature is also new. Step 9 ends with what to know before your crew finds it.
 
 ## The video
 
@@ -66,14 +65,16 @@ when all four of these are true. Each was tried.
 | The ship has struck | Step 5 makes her strike | Before she strikes Comms offers `Hail`, `Taunt` and `Surrender now` |
 | Her hull has a plan | A `pirate_brigantine` has one, with rooms | See the table below |
 | The `station` art is installed | It is. It is the last line of `story.json`, from the starter | With that line gone, Comms would not open on her at all |
-| No other party is out | **It is not true in your mission.** The relay party is open all game | Comms answers `We cannot take a party aboard while your people are elsewhere.` |
+| No other party is out | **Not while anybody is down at the relay.** The relay party is open all game | Comms answers `We cannot take a party aboard while your people are elsewhere.` |
 
 Look at the last row. It is the one that shapes this lecture.
 
 **One party at a time.** Your relay party opens in the first second, because the ship
 starts within 6000 of the relay. And a party on a map never closes by itself. Beaming
-up does not close it. Only the end of the game does, or a card. So in `MyAway` as it
-stands, a ship that struck could never be boarded.
+up does not close it. Only the end of the game does, or a card. When nobody of that party
+is on the ground, the button gives way: it ends the landing and the crew goes aboard her.
+But with anybody still down at the relay, Comms gets the answer in the table, and nobody
+is moved.
 
 You will fix that with two lines of `story.mast` and one quest. The card that makes her
 strike calls the landing party home first. A quest opens the relay again when the ship
@@ -93,10 +94,8 @@ on every one:
 
 No hull at all has a `bridge`.
 
-One more thing about your starter, and you do not have to do anything. A hull's plan is
-only loaded when its race is allowed in the mission. Your mission allows every race, so
-the brigantine has hers. Legendary Missions itself allows only two, and there the
-button will almost never show.
+You do not have to do anything to get a plan. Every hull the game ships has its plan,
+whatever races a mission allows, so a ship of any race that strikes can be boarded.
 
 ## Step 2 - A side to strike
 
@@ -283,7 +282,7 @@ ship strike, and it is a roll of the dice.
 
 So a crew can talk her down that way, if Weapons has done the work first. Your story
 cannot count on it, and that is why the card exists. The two do not fight. A ship that
-Comms talked down still had the relay party open, so Comms got `We cannot take a party
+Comms talked down, with somebody still down at the relay, got `We cannot take a party
 aboard while your people are elsewhere.` Then the helm closed to 1500, your card ran,
 and the button worked.
 
@@ -410,28 +409,14 @@ You did not write them. Aboard the Black Gull the game put five, all calm, each 
 that has struck they are all calm. They stand where they are put, in the cabins, the
 holds and the sickbay, and they do not move.
 
-**That is the first rough thing, and it is the one that will cost you an evening.** A
-calm person blocks the cell they stand on. The game puts her crew down after your
-things, anywhere in those rooms, a doorway included. So one of her crew can shut one of
-your things in. And where the crew stands changes whenever you add or move a record.
+A calm person blocks the cell they stand on, so the game is careful where it puts
+them. They come aboard after your records, and none of them stands in a doorway, on the
+way in, or anywhere that would shut a room or cut off something of yours. The game checks
+that by walking the deck, each time. Adding or moving one of your records can change which
+cell a crew member stands on. It cannot make anything unreachable.
 
-Measured on this hull, each on the finished files with one line changed:
-
-| The change | What happened |
-|---|---|
-| The strongbox with `Mark: quarters` | It stood in the captain's cabin. One of her crew stood inside the cabin door. Nobody could reach it, and a click on it did nothing |
-| The kit with `Mark: cargo` | Reached. In an earlier draft of this page, with one more record aboard, the same line was shut in |
-| Twelve more things aboard, none of them blocking | The strongbox, still `Mark: brig`, could no longer be reached |
-| A box that blocks, in each of her twelve kinds of room | Five of the twelve could not be reached |
-
-Three rules come out of that.
-
-1. **Put what the story needs where her crew is never stood**: `entry`, `hallway`,
-   `brig` or `bay`. Her crew is only put in living rooms, holds and sickbays. On this
-   hull the brigs and the boat bay open straight onto the main hallway.
-2. **A hostile is not shut in.** Brakk walks to the party.
-3. **After every change to what is aboard, go aboard and walk to each thing.** Lint
-   cannot see this, and neither can you from the file.
+One rule still holds: **after every change to what is aboard, go aboard and walk to each
+thing.** Lint cannot walk a deck.
 
 ## Step 7 - The scenes, and three endings
 
@@ -491,20 +476,8 @@ party at 4,300. How fast she runs in the real game has not been measured.
 sbs lint MyAway
 ```
 
-**This is the second rough thing.** Your finished mission does not lint `clean`:
-
-```
-== mission.amd ==
-  [WARNING] line 789:35: `strongbox` emits signal `boarding_deck_scuttle` but no `//signal/boarding_deck_scuttle` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-  [WARNING] line 790:36: `strongbox` emits signal `boarding_deck_leave` but no `//signal/boarding_deck_leave` route was found in the mission's .mast (nor a known driver signal) (signal-no-route)
-
-1 amd + 1 mast file(s): 0 error(s), 2 warning(s)
-```
-
-Both warnings are wrong. The routes exist, in the game's `boarding` library, and both
-answers were played and worked. The tool does not see them there. Until it does, this
-mission has two warnings that you leave alone, and **two is the number to check**. A
-third warning is yours.
+It says `clean`. The three `boarding_deck_` signals are the game's own, and lint knows
+them.
 
 Each row below was tried on the finished files, one change at a time.
 
@@ -516,7 +489,7 @@ Each row below was tried on the finished files, one change at a time.
 | `Mark: captains-cabin`, a room's own name | It stands in that room on this hull, and in the hallway on any other | `tiles-deck-unknown-kind` |
 | `Area: decks` | The kit is not aboard. `mast.runtime.log` in the mission folder says so | `tiles-unknown-area` |
 | `Done when: signal boarding_deck_took` | Not played | `unfired-signal` |
-| `; signal boarding_deck_takes` | Not played | `unfired-signal`, on the quest that waits |
+| `; signal boarding_deck_takes` | Not played | `signal-no-route`, on the answer |
 | `; signal boarding_deck_scuttle fails prize`, no comma | Not played | `outcome-run-together` |
 | The card's lines typed at the left edge | Nothing runs at all | `mast-compile`, an error. It says `Bad indentation` |
 
@@ -528,7 +501,7 @@ The first of them, as lint printed it:
 
 ### What lint cannot see
 
-All of these gave only the two warnings you expect. All were played.
+All of these lint `clean`. All were played.
 
 | The mistake | What happens |
 |---|---|
@@ -537,10 +510,9 @@ All of these gave only the two warnings you expect. All were played.
 | No `Then: reveal back` | The same |
 | `Starts when: at once` on Come Back to Kesh Relay | The same. The card only hears a step that was hidden and then revealed |
 | `Starts when: signal ...` on that quest, in place of `revealed` | It sat in the quest list as `Available` and never started. The relay never opened again |
-| The card without `boarding_visit_end()` | She strikes. Comms answers `We cannot take a party aboard while your people are elsewhere.` |
+| The card without `boarding_visit_end()` | She strikes. With anybody down at the relay, Comms answers `We cannot take a party aboard while your people are elsewhere.` |
 | No second place for the ship | She strikes, and eight seconds later she is gone |
 | No `Enemies: tsn`, or no Sides section, or the key spelled `pirates` | Before she strikes, Comms cannot open on her. She still strikes and can still be boarded. With no side at all, `mast.runtime.log` says `Side not found: [pirate]` |
-| A thing shut in by one of her crew | Nothing. A click on it does nothing |
 | A `Mark:` for a room she does not have | The hallway, and one line in `debug.log` |
 
 ## Step 9 - Play it
@@ -593,27 +565,20 @@ to every thing you wrote.
 
 ### Five more things to know before your crew finds them
 
-**A FULL shot destroys any prop. This is the third rough thing, and you know it from
-Lecture 11.** Aboard a ship it is sharper, for two reasons.
-
-- One FULL shot at the strongbox, and there are no endings. Tried: the box was gone.
-  The party beamed up one by one from the Crew app. The Gull stayed held, and Comms
-  offered only `Take as prize`. The mission was not stuck: when the ship came back to
-  the relay, your line on the card brought the visit to an end and opened the relay.
-- A pickup under a hostile's feet is shot with her. In the first draft of this lecture
-  the power cell was a pickup lying in the boat bay. Brakk walked onto its cell, the
-  script fired FULL at her, and the shot destroyed the power cell and left her
-  standing. She put Lt Reyes down in the next few seconds. That is why the cell is
-  now something she `Drops:`.
+**A shot never removes a prop.** A FULL shot at the strongbox leaves it where it was,
+and as shut as it was. Only a prop whose `Opens with:` lists `cut` opens to a shot. So the
+box that holds your three endings is safe from a nervous gunner. And when a hostile stands
+on a pickup, the shot hits the hostile.
 
 **What a hostile drops is lost if nobody picks it up.** Tried: Brakk was put down, the
 party left without the cell, and came aboard again. Brakk was still down and the cell
 was not there.
 
-**`Take as prize` on Comms skips everything you wrote.** It is the game's own button,
-on every ship that has struck. Tried: she joined the crew's side at once, nobody went
-aboard, and **Take the Black Gull** stayed open for the rest of the game with no
-credits paid. Tell your Comms officer which button is the story.
+**`Take as prize` on Comms skips the deck.** It is the game's own button, on every ship
+that has struck. She joins the crew's side at once and nobody goes aboard. It sends the
+same `boarding_deck_take` as your answer aboard her, so **Take the Black Gull** is done and
+pays either way, but nobody meets Mate Oduya or the gunner. Tell your Comms officer which
+button is the story.
 
 **From her deck, the Beam app offers `To Kesh Relay`.** The transporter reaches any
 area of yours that is known, whichever party is open. Tried: Dr Hale beamed from the
@@ -652,9 +617,7 @@ ship was taken.
 | Comms has no **Send a boarding party** | She has not struck. Or somebody already sent a party: the button goes away while one is aboard | Look at the Boarding Party tile on the handheld |
 | `We cannot take a party aboard while your people are elsewhere.` | The relay party is open | The card is missing `boarding_visit_end()`. Or the ship has been back to the relay: one party at a time |
 | Comms will not open on her after she strikes, and lint is as it should be | The `station` art is not installed | `sbs fetch "MyAway" --update-libs`. Check the last line of `"shared_media"` in `story.json` |
-| A thing is aboard and cannot be clicked | One of her crew is in the way | Step 6: change its `Mark:` to `brig`, `bay`, `entry` or `hallway`, and walk it again |
 | A thing is in the hallway | Her hull has no room of that kind | Nothing, if you meant to board other hulls. `debug.log` has the line |
-| The party cannot end the visit | The strongbox was shot | Beam up from the Crew app, and fly back to the relay |
 | Somebody is down aboard her and stays down | The others are still up. Lecture 14's rule | The boarding kit, from the Pack app |
 | Lint says `mast-compile` and nothing runs | A line of the card is not indented | Four spaces, and eight on the `side_surrender` line |
 
@@ -663,13 +626,14 @@ ship was taken.
 1. Play all three endings. After each, write down what Comms is offered on the Black
    Gull.
 2. Add a thing with `Mark: lab`. Play it, and find where it stands.
-3. Move the strongbox to `Mark: quarters`. Go aboard and try to reach it. Put it back.
+3. Move the strongbox to `Mark: quarters`. Go aboard and walk to it. Where did her crew
+   stand? Put it back.
 4. Change her hull to `"cargo_ship"` and go aboard. Where is everything? How many crew
    has she? Change it back.
 5. The gunner's cell is a short road to the beacon. Do Lecture 14's three lists again
    with the Black Gull in them. Which party can win now that could not before?
 6. Break it and read lint: `Mark: bgri`; the comma out of the scuttle answer; the
-   card's lines at the left edge. Then count the warnings on the finished file.
+   card's lines at the left edge. Then lint the finished file again.
 
 Then answer on paper, from the two files alone:
 
@@ -681,7 +645,7 @@ Then answer on paper, from the two files alone:
 
 You are done when all six are true:
 
-- `sbs lint MyAway` gives exactly the two `signal-no-route` warnings of Step 8.
+- `sbs lint MyAway` says `clean`.
 - The Black Gull strikes when the ship closes on her, and Comms is offered **Send a
   boarding party**.
 - You have walked to the kit, the prisoner, the gunner and the strongbox.

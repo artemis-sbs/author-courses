@@ -13,8 +13,10 @@
 >   boarded ship can be one more place: a party of its own, not an area.
 > - **`sbs create` and `sbs fetch` were not run** to write this. The start files are
 >   Lecture 7's starter with `description.yaml` retitled the way `sbs create` does it.
-> - **A FULL shot destroys any prop** in the released game, and the game says nothing.
->   Scene 6 says so plainly. Do not soften it.
+> - **CORRECTED 2026-10-15: a shot never removes a prop.** The library released after this
+>   page was measured (sbs_utils a2d63d66) leaves every prop where it was, and opens only a
+>   prop whose `Opens with:` lists `cut`. Scene 6 and Step 8 were rewritten from the
+>   library's documentation. Not re-played.
 
 > **Measured 2026-10-10, in the mock**, on the packaged library (sbs_utils `ae05dac7`),
 > with stand-in consoles driven by a script. Walked end to end on the finished files:
@@ -41,7 +43,7 @@ The companion page is `lesson.md`; the finished mission is in `example\`.
 | Mission | A folder `MyClaim` holding the files in `example\`. Lint clean |
 | VS Code | `MyClaim` open; `mission.amd` at the Quests section and at The Rock Fall; `ground\works.tiles` in Text view; `story.mast` at the card |
 | Paper | Two sheets on camera: the beat sheet, and the twelve checks with mine filled in |
-| Game | Closed. Started on camera in scene 7 with a server, Science, Weapons and Engineering |
+| Game | Closed. Started on camera in scene 7 with a server, Science and Engineering (Dr Hale and Chief Okoro) |
 
 ## Confirm on camera
 
@@ -56,8 +58,8 @@ The companion page is `lesson.md`; the finished mission is in `example\`.
    ventilator and is not offered `Set his leg`. (Mock.)
 6. The guard is offered `Shape them to spare the roof`, and it ends with the first
    `Win:` sentence. (Mock.)
-7. A FULL shot removes the lift gate, and the party can walk through. A FULL shot
-   removes the rock fall, and the game then ends by the clock. (Mock.)
+7. A FULL shot leaves the lift gate shut and the rock fall standing; it opens the stores
+   door, which lists `cut`. (Library documentation; not re-played.)
 
 Not seen by anyone. If one is not as described, stop and fix the page:
 
@@ -93,10 +95,13 @@ a last area, and an ending. | With minutes beside each one. ||"
 
 ### 3. Three areas
 
-**Screen:** The drawing: camp, works, gallery, and what joins them. Then `works.tiles`
+**Screen:** The game first: the Lift House on the Engineering console's map, Chief Okoro at
+its gate. Then the drawing: camp, works, gallery, and what joins them. Then `works.tiles`
 in Text view. Highlight `known: no`, then the marks.
 
-**Say:** "Three areas, and one decision each. || The camp is where they land. || The lift
+**Say:** "Here's my middle area on the engineer's console, | the lift house, with the lift
+at the far end. ||| In the files, three areas, and one decision each. || The camp is where
+they land. || The lift
 house has to be found once. | After that the ship can put you there. || And the gallery
 can't be beamed into at all. | That's what makes the lift matter. ||| Look at the map
 with last week's eyes. || Every mark is the name of a place. | Nothing hidden stands on a
@@ -104,21 +109,24 @@ mark. || And the titles read well after the words go to. ||"
 
 ### 4. Three people nobody can replace
 
-**Screen:** The three columns. Then the three lines: `if skill medical >= 3`, `Needs:
+**Screen:** The three columns. Then the game: Jo Reth's scene on the Science console's
+handheld, with Set his leg. Then the three lines: `if skill medical >= 3`, `Needs:
 engineering`, `if skill security >= 3`. Then the table of three roads.
 
 **Say:** "Draw three columns before you write a single prop. | Who's doing what, in each
 beat? ||| Then the hard part of the brief. | Each job gets one thing nobody else can do.
-|| There are two ways to write that. | A skill on an answer, or needs on a prop. || It can't be a job, | because a job is covered by whoever's in the scene. ||| And here's the rule that keeps it
+|| Here's one, on the doctor's handheld. | Only someone that good is offered Set his leg.
+||| There are two ways to write that. | A skill on an answer, or needs on a prop. || It can't be a job, | because a job is covered by whoever's in the scene. ||| And here's the rule that keeps it
 fair. || A thing only one person can do | must never be the only road. ||| So the cheap
 ending is open to anybody. || The good ending has two doors, | and each one needs
 somebody. ||"
 
 ### 5. The quest tree
 
-**Screen:** The Quests section: the arc and its four steps. Then the bridge's quest list
-at three moments: before Ada's answer, after it, and after the lift. Then the arc
-selected, its description shown: the table and the hourglass line.
+**Screen:** The game first: the bridge's quest list after the lift, a time under the arc.
+Then the Quests section: the arc and its four steps. Then the bridge's quest list at three
+moments: before Ada's answer, after it, and after the lift. Then the arc selected, its
+description shown: the table and the hourglass line.
 
 **Say:** "Now the quest tree. | Remember what the bridge gets: the shared quests, and
 nothing else. || So this tree is the story the bridge follows. ||| One arc, with the clock
@@ -132,27 +140,28 @@ the bridge's briefing. || Nobody aboard hears Ada Corvin, | so the arc says what
 
 ### 6. Two endings, and a full shot
 
-**Screen:** The Rock Fall's room, then Four Charges. Then the map: a shot at the lift
-gate, and the gate gone. A shot at the rock fall, and it gone too.
+**Screen:** The game first: the rock fall on the engineer's handheld, with the party's
+four facts. Then The Rock Fall's room, then Four Charges. Then the game: a FULL shot at
+the lift gate, and the gate still shut. Then Step 8's table.
 
-**Say:** "Both endings live in one room. || A choice has one condition, | so a thing that
-needs two takes two rooms. | Facts in the first, and the jacks in the second. ||| Now
-something you have to plan for. || A full shot destroys any prop it hits. | The game
-doesn't stop, and it doesn't tell anyone. ||| Shoot the lift gate, and you can walk
-through it. || Shoot the rock fall, and no ending is left. ||| So ask two questions of
-your own mission. | Which props hold an ending? | And which doors does only a signal
-open? ||| Mine still ends, because the clock runs out. | That's the best reason to have
-one. ||"
+**Say:** "Both endings live in one room. || Here's the rock fall on the engineer's
+handheld, | once the party knows all four things. ||| In the file, a choice has one
+condition, | so a thing that needs two takes two rooms. | Facts in the first, and the
+jacks in the second. ||| Now something to plan for. || A shot never removes a prop. ||
+Shoot the lift gate, and it stays shut, | because only the lift's own signal opens it. ||
+Shoot the rock fall, and both endings are still there. ||| A door opens to a shot | only
+when its Opens with line says cut. || So ask one question of your own mission. | Which
+doors should the crew be able to force? ||"
 
 ### 7. Twelve checks, and the walk
 
-**Screen:** The sheet of twelve checks, mine filled in. Then the game with three
-consoles: the dig ending, cut to its turns. Then one console alone: the blast ending.
+**Screen:** The sheet of twelve checks, mine filled in. Then the game with two
+consoles, Science and Engineering: the dig ending, cut to its turns. Then one console alone: the blast ending.
 
 **Say:** "Lint reads your spelling. | It doesn't walk your map. || So here are the
 checks of the whole class, on one sheet. | Twelve of them, in order. ||| Ways in and ways
-out. | Keys and names that join. | Signals with two ends. || Then the worst party, and the three columns. | The screen, a full shot, and the clock. ||| Then walk it, every road. || Three
-people dig them out. || One person, with no skill at all, blasts them out. ||| The times
+out. | Keys and names that join. | Signals with two ends. || Then the worst party, and the three columns. | The screen, a full shot, and the clock. ||| Then walk it, every road. || A doctor
+and an engineer dig them out. || One person, with no skill at all, blasts them out. ||| The times
 on the page are floors from a script. | Walk yours with people, and write down what you
 get. ||"
 

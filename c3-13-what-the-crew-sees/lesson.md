@@ -677,8 +677,8 @@ This time do not play to win. Play to read.
 4. As Ens Vale, walk to the terminal. Mind the sentry. Find his answer.
 5. As Dr Hale, pick up the brass key by the tent. Open **Pack**, then **Act**.
 6. Open **Scan** in the yard. Then walk east into the gully and open **Look**.
-7. On the server window, or a fourth console left aboard, open the handheld's
-   **Boarding Party** and **Quests**.
+7. On a console left aboard (a fourth one, or one that has pressed **Beam up**), open
+   the handheld's **Boarding Party** and **Quests**.
 
 Write down every word that makes you wince. That list is your exercise.
 

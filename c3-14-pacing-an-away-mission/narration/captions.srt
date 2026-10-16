@@ -179,209 +179,245 @@ A clock, a patrol,
 a key that's somewhere else, and a thing that's hidden.
 
 46
-00:03:18,420 --> 00:03:24,072
-The clock is one line, and you wrote it in the first class.
+00:03:18,420 --> 00:03:21,028
+Here's the clock on the ground,
 
 47
-00:03:24,972 --> 00:03:26,711
-Fails when, thirty minutes.
+00:03:21,478 --> 00:03:25,826
+in the Tasks app, counting down under the starter's quest.
 
 48
-00:03:28,511 --> 00:03:31,989
-The Lose sentence has to change with it.
+00:03:26,726 --> 00:03:32,813
+In the file it's one line, and you wrote it in the first class.
 
 49
-00:03:32,439 --> 00:03:35,917
-It used to say the beacon was slag.
+00:03:33,713 --> 00:03:35,452
+Fails when, thirty minutes.
 
 50
-00:03:36,817 --> 00:03:40,730
-Now it's read when the clock runs out too,
+00:03:37,252 --> 00:03:40,730
+The Lose sentence has to change with it.
 
 51
 00:03:41,180 --> 00:03:44,659
-so it has to be true every way.
+It used to say the beacon was slag.
 
 52
-00:03:46,459 --> 00:03:48,633
-Then I tell the bridge.
+00:03:45,559 --> 00:03:49,472
+Now it's read when the clock runs out too,
 
 53
-00:03:49,083 --> 00:03:51,257
-One line in the description,
+00:03:49,922 --> 00:03:53,400
+so it has to be true every way.
 
 54
-00:03:51,707 --> 00:03:54,315
-with an hourglass at the start.
+00:03:55,200 --> 00:03:57,374
+Then I tell the bridge.
 
 55
-00:03:56,115 --> 00:03:59,593
-And the clock starts when the quest starts.
+00:03:57,824 --> 00:03:59,998
+One line in the description,
 
 56
-00:04:00,043 --> 00:04:02,652
-This one starts with the game.
+00:04:00,448 --> 00:04:03,057
+with an hourglass at the start.
 
 57
-00:04:03,852 --> 00:04:06,026
-Lint doesn't walk your map.
+00:04:03,957 --> 00:04:06,130
+In the Quest Log aboard,
 
 58
-00:04:06,476 --> 00:04:09,520
-You do, on paper, in three lists.
+00:04:06,580 --> 00:04:09,624
+it sits under the quest's first paragraph.
 
 59
-00:04:11,320 --> 00:04:13,928
-Every area, every item, every ending.
+00:04:11,424 --> 00:04:14,902
+And the clock starts when the quest starts.
 
 60
-00:04:14,378 --> 00:04:17,857
-And beside each one, who can do it.
+00:04:15,352 --> 00:04:17,961
+This one starts with the game.
 
 61
-00:04:19,657 --> 00:04:23,135
-Now find a party the lists leave stuck.
+00:04:19,161 --> 00:04:21,335
+Lint doesn't walk your map.
 
 62
-00:04:24,035 --> 00:04:27,513
-A scientist and a guard, and no engineer.
+00:04:21,785 --> 00:04:24,828
+You do, on paper, in three lists.
 
 63
-00:04:29,313 --> 00:04:33,226
-She pulls the door code, and calms the sentry.
+00:04:26,628 --> 00:04:29,237
+Every area, every item, every ending.
 
 64
-00:04:33,676 --> 00:04:35,415
-That's the clever answer.
+00:04:29,687 --> 00:04:33,165
+And beside each one, who can do it.
 
 65
-00:04:36,315 --> 00:04:38,924
-But the sentry keeps its cell,
+00:04:34,965 --> 00:04:38,443
+Now find a party the lists leave stuck.
 
 66
-00:04:39,374 --> 00:04:42,417
-and nobody here can run the pump.
+00:04:39,343 --> 00:04:42,822
+A scientist and a guard, and no engineer.
 
 67
-00:04:44,217 --> 00:04:47,261
-The clever answer left them with nothing.
+00:04:44,622 --> 00:04:48,535
+She pulls the door code, and calms the sentry.
 
 68
-00:04:48,161 --> 00:04:50,770
-So fix it where it broke.
+00:04:48,985 --> 00:04:50,724
+That's the clever answer.
 
 69
-00:04:51,220 --> 00:04:53,828
-The sentry hands its cell over.
+00:04:51,624 --> 00:04:54,233
+But the sentry keeps its cell,
 
 70
-00:04:54,278 --> 00:04:56,452
-One outcome, after a comma.
+00:04:54,683 --> 00:04:57,726
+and nobody here can run the pump.
 
 71
-00:04:57,652 --> 00:05:00,261
-Three columns, one for each console.
+00:04:59,526 --> 00:05:02,570
+The clever answer left them with nothing.
 
 72
-00:05:00,711 --> 00:05:02,885
-What is each person doing?
+00:05:03,470 --> 00:05:06,078
+So fix it where it broke.
 
 73
-00:05:04,685 --> 00:05:08,163
-This is the mission as you left it.
+00:05:06,528 --> 00:05:09,137
+The sentry hands its cell over.
 
 74
-00:05:09,063 --> 00:05:12,541
-The chief makes eight presses out of twelve.
+00:05:10,937 --> 00:05:15,285
+Here's the terminal on the doctor's handheld after the update,
 
 75
-00:05:12,991 --> 00:05:16,035
-The doctor is finished in ten seconds.
+00:05:15,735 --> 00:05:19,213
+and there's the power cell in her pack.
 
 76
-00:05:17,835 --> 00:05:20,878
-What you have there is a chain.
+00:05:20,113 --> 00:05:24,026
+In the file it's one outcome, after a comma.
 
 77
-00:05:21,328 --> 00:05:24,372
-Every step waits for the one before,
+00:05:25,226 --> 00:05:27,835
+Three columns, one for each console.
 
 78
-00:05:24,822 --> 00:05:27,865
-so only one person is ever busy.
+00:05:28,285 --> 00:05:30,459
+What is each person doing?
 
 79
-00:05:29,665 --> 00:05:31,839
-The cure is a join.
+00:05:32,259 --> 00:05:35,737
+This is the mission as you left it.
 
 80
-00:05:32,289 --> 00:05:37,072
-Make the thing in the middle need pieces from three places.
+00:05:36,637 --> 00:05:40,115
+The chief makes eight presses out of twelve.
 
 81
-00:05:38,872 --> 00:05:41,046
-Your pump needs three fuses.
+00:05:40,565 --> 00:05:43,609
+The doctor is finished in ten seconds.
 
 82
-00:05:41,496 --> 00:05:45,409
-So give Marrow one to pay the doctor with.
+00:05:45,409 --> 00:05:48,452
+What you have there is a chain.
 
 83
-00:05:46,309 --> 00:05:50,657
-Now three people each carry something to the pump house,
+00:05:48,902 --> 00:05:51,946
+Every step waits for the one before,
 
 84
-00:05:51,107 --> 00:05:54,150
-and nobody presses more than five times.
+00:05:52,396 --> 00:05:55,439
+so only one person is ever busy.
 
 85
-00:05:55,350 --> 00:05:58,393
-Put it together in a beat sheet.
+00:05:57,239 --> 00:05:59,413
+The cure is a join.
 
 86
-00:05:59,293 --> 00:06:01,902
-One column is the stand-in's clock,
+00:05:59,863 --> 00:06:04,646
+Make the thing in the middle need pieces from three places.
 
 87
-00:06:02,352 --> 00:06:04,526
-and that one is measured.
+00:06:06,446 --> 00:06:08,620
+Your pump needs three fuses.
 
 88
-00:06:05,426 --> 00:06:09,339
-The other is my guess for a first play.
+00:06:09,070 --> 00:06:12,983
+So give Marrow one to pay the doctor with.
 
 89
-00:06:11,139 --> 00:06:13,748
-Now play it with a stopwatch,
+00:06:13,883 --> 00:06:19,100
+On her handheld, he pays with the fuse out of his kettle,
 
 90
-00:06:14,198 --> 00:06:17,241
-and write your own times over mine.
+00:06:19,550 --> 00:06:21,724
+and it's in her pack.
 
 91
-00:06:19,041 --> 00:06:22,085
-For forty-five minutes, write the sheet first.
+00:06:22,624 --> 00:06:27,407
+In the file, it's one more outcome on the cough answer.
 
 92
-00:06:22,985 --> 00:06:24,724
-Five for the landing.
+00:06:29,207 --> 00:06:33,554
+Now three people each carry something to the pump house,
 
 93
-00:06:25,174 --> 00:06:26,913
-Twenty for three tracks.
+00:06:34,004 --> 00:06:37,048
+and nobody presses more than five times.
 
 94
-00:06:27,363 --> 00:06:29,102
-Eight for the join.
+00:06:38,248 --> 00:06:41,291
+Put it together in a beat sheet.
 
 95
-00:06:30,002 --> 00:06:32,176
-Seven for the last area,
+00:06:42,191 --> 00:06:44,800
+One column is the stand-in's clock,
 
 96
-00:06:32,626 --> 00:06:34,800
-and five for the ending.
+00:06:45,250 --> 00:06:47,424
+and that one is measured.
 
 97
-00:06:36,600 --> 00:06:40,078
+00:06:48,324 --> 00:06:52,237
+The other is my guess for a first play.
+
+98
+00:06:54,037 --> 00:06:56,646
+Now play it with a stopwatch,
+
+99
+00:06:57,096 --> 00:07:00,139
+and write your own times over mine.
+
+100
+00:07:01,939 --> 00:07:04,983
+For forty-five minutes, write the sheet first.
+
+101
+00:07:05,883 --> 00:07:07,622
+Five for the landing.
+
+102
+00:07:08,072 --> 00:07:09,811
+Twenty for three tracks.
+
+103
+00:07:10,261 --> 00:07:12,000
+Eight for the join.
+
+104
+00:07:12,900 --> 00:07:15,074
+Seven for the last area,
+
+105
+00:07:15,524 --> 00:07:17,698
+and five for the ending.
+
+106
+00:07:19,498 --> 00:07:22,976
 That sheet is where your own mission starts.

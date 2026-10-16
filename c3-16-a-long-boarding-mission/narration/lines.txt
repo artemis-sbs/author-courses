@@ -17,30 +17,34 @@ s02_three_sentences_and_a_beat_s_7	Then the beat sheet from last time.
 s02_three_sentences_and_a_beat_s_8	A landing, three tracks, a join,
 s02_three_sentences_and_a_beat_s_9	a last area, and an ending.
 s02_three_sentences_and_a_beat_s_10	With minutes beside each one.
-s03_three_areas_0	Three areas, and one decision each.
-s03_three_areas_1	The camp is where they land.
-s03_three_areas_2	The lift house has to be found once.
-s03_three_areas_3	After that the ship can put you there.
-s03_three_areas_4	And the gallery can't be beamed into at all.
-s03_three_areas_5	That's what makes the lift matter.
-s03_three_areas_6	Look at the map with last week's eyes.
-s03_three_areas_7	Every mark is the name of a place.
-s03_three_areas_8	Nothing hidden stands on a mark.
-s03_three_areas_9	And the titles read well after the words go to.
+s03_three_areas_0	Here's my middle area on the engineer's console,
+s03_three_areas_1	the lift house, with the lift at the far end.
+s03_three_areas_2	In the files, three areas, and one decision each.
+s03_three_areas_3	The camp is where they land.
+s03_three_areas_4	The lift house has to be found once.
+s03_three_areas_5	After that the ship can put you there.
+s03_three_areas_6	And the gallery can't be beamed into at all.
+s03_three_areas_7	That's what makes the lift matter.
+s03_three_areas_8	Look at the map with last week's eyes.
+s03_three_areas_9	Every mark is the name of a place.
+s03_three_areas_10	Nothing hidden stands on a mark.
+s03_three_areas_11	And the titles read well after the words go to.
 s04_three_people_nobody_can_repl_0	Draw three columns before you write a single prop.
 s04_three_people_nobody_can_repl_1	Who's doing what, in each beat?
 s04_three_people_nobody_can_repl_2	Then the hard part of the brief.
 s04_three_people_nobody_can_repl_3	Each job gets one thing nobody else can do.
-s04_three_people_nobody_can_repl_4	There are two ways to write that.
-s04_three_people_nobody_can_repl_5	A skill on an answer, or needs on a prop.
-s04_three_people_nobody_can_repl_6	It can't be a job,
-s04_three_people_nobody_can_repl_7	because a job is covered by whoever's in the scene.
-s04_three_people_nobody_can_repl_8	And here's the rule that keeps it fair.
-s04_three_people_nobody_can_repl_9	A thing only one person can do
-s04_three_people_nobody_can_repl_10	must never be the only road.
-s04_three_people_nobody_can_repl_11	So the cheap ending is open to anybody.
-s04_three_people_nobody_can_repl_12	The good ending has two doors,
-s04_three_people_nobody_can_repl_13	and each one needs somebody.
+s04_three_people_nobody_can_repl_4	Here's one, on the doctor's handheld.
+s04_three_people_nobody_can_repl_5	Only someone that good is offered Set his leg.
+s04_three_people_nobody_can_repl_6	There are two ways to write that.
+s04_three_people_nobody_can_repl_7	A skill on an answer, or needs on a prop.
+s04_three_people_nobody_can_repl_8	It can't be a job,
+s04_three_people_nobody_can_repl_9	because a job is covered by whoever's in the scene.
+s04_three_people_nobody_can_repl_10	And here's the rule that keeps it fair.
+s04_three_people_nobody_can_repl_11	A thing only one person can do
+s04_three_people_nobody_can_repl_12	must never be the only road.
+s04_three_people_nobody_can_repl_13	So the cheap ending is open to anybody.
+s04_three_people_nobody_can_repl_14	The good ending has two doors,
+s04_three_people_nobody_can_repl_15	and each one needs somebody.
 s05_the_quest_tree_0	Now the quest tree.
 s05_the_quest_tree_1	Remember what the bridge gets: the shared quests, and nothing else.
 s05_the_quest_tree_2	So this tree is the story the bridge follows.
@@ -60,19 +64,20 @@ s05_the_quest_tree_15	so the arc says what she said.
 s05_the_quest_tree_16	Who's where, in a table,
 s05_the_quest_tree_17	and the air she counted, on an hourglass line.
 s06_two_endings_and_a_full_shot_0	Both endings live in one room.
-s06_two_endings_and_a_full_shot_1	A choice has one condition,
-s06_two_endings_and_a_full_shot_2	so a thing that needs two takes two rooms.
-s06_two_endings_and_a_full_shot_3	Facts in the first, and the jacks in the second.
-s06_two_endings_and_a_full_shot_4	Now something you have to plan for.
-s06_two_endings_and_a_full_shot_5	A full shot destroys any prop it hits.
-s06_two_endings_and_a_full_shot_6	The game doesn't stop, and it doesn't tell anyone.
-s06_two_endings_and_a_full_shot_7	Shoot the lift gate, and you can walk through it.
-s06_two_endings_and_a_full_shot_8	Shoot the rock fall, and no ending is left.
-s06_two_endings_and_a_full_shot_9	So ask two questions of your own mission.
-s06_two_endings_and_a_full_shot_10	Which props hold an ending?
-s06_two_endings_and_a_full_shot_11	And which doors does only a signal open?
-s06_two_endings_and_a_full_shot_12	Mine still ends, because the clock runs out.
-s06_two_endings_and_a_full_shot_13	That's the best reason to have one.
+s06_two_endings_and_a_full_shot_1	Here's the rock fall on the engineer's handheld,
+s06_two_endings_and_a_full_shot_2	once the party knows all four things.
+s06_two_endings_and_a_full_shot_3	In the file, a choice has one condition,
+s06_two_endings_and_a_full_shot_4	so a thing that needs two takes two rooms.
+s06_two_endings_and_a_full_shot_5	Facts in the first, and the jacks in the second.
+s06_two_endings_and_a_full_shot_6	Now something to plan for.
+s06_two_endings_and_a_full_shot_7	A shot never removes a prop.
+s06_two_endings_and_a_full_shot_8	Shoot the lift gate, and it stays shut,
+s06_two_endings_and_a_full_shot_9	because only the lift's own signal opens it.
+s06_two_endings_and_a_full_shot_10	Shoot the rock fall, and both endings are still there.
+s06_two_endings_and_a_full_shot_11	A door opens to a shot
+s06_two_endings_and_a_full_shot_12	only when its Opens with line says cut.
+s06_two_endings_and_a_full_shot_13	So ask one question of your own mission.
+s06_two_endings_and_a_full_shot_14	Which doors should the crew be able to force?
 s07_twelve_checks_and_the_walk_0	Lint reads your spelling.
 s07_twelve_checks_and_the_walk_1	It doesn't walk your map.
 s07_twelve_checks_and_the_walk_2	So here are the checks of the whole class, on one sheet.
@@ -83,7 +88,7 @@ s07_twelve_checks_and_the_walk_6	Signals with two ends.
 s07_twelve_checks_and_the_walk_7	Then the worst party, and the three columns.
 s07_twelve_checks_and_the_walk_8	The screen, a full shot, and the clock.
 s07_twelve_checks_and_the_walk_9	Then walk it, every road.
-s07_twelve_checks_and_the_walk_10	Three people dig them out.
+s07_twelve_checks_and_the_walk_10	A doctor and an engineer dig them out.
 s07_twelve_checks_and_the_walk_11	One person, with no skill at all, blasts them out.
 s07_twelve_checks_and_the_walk_12	The times on the page are floors from a script.
 s07_twelve_checks_and_the_walk_13	Walk yours with people, and write down what you get.

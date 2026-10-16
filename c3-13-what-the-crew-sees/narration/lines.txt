@@ -3,7 +3,7 @@ s01_cold_open_1	Your crew never sees a record.
 s01_cold_open_2	What they see is this handheld.
 s01_cold_open_3	Eight apps, and every one of them is made of your words.
 s01_cold_open_4	Some of those words you chose with care.
-s01_cold_open_5	And some you typed in a hurry, as a name for yourself.
+s01_cold_open_5	And some you typed in a hurry, as a name for yourself,
 s01_cold_open_6	like the last word on this bar.
 s01_cold_open_7	Today we read the mission from their side,
 s01_cold_open_8	and fix what reads badly.
@@ -21,9 +21,9 @@ s02_the_bar_and_the_eight_apps_10	Which of my words is this?
 s03_who_is_offered_what_0	A choice with no condition goes to everybody in the scene.
 s03_who_is_offered_what_1	A choice for a job goes to the person with that job.
 s03_who_is_offered_what_2	Now here's the surprise.
-s03_who_is_offered_what_3	The engineer walks up to Marrow alone.
+s03_who_is_offered_what_3	The helm officer walks up to Marrow alone.
 s03_who_is_offered_what_4	The medic is across the yard, on the landing pad.
-s03_who_is_offered_what_5	And he's offered her answer, marked as covering.
+s03_who_is_offered_what_5	And she's offered the medic's answer, marked as covering.
 s03_who_is_offered_what_6	Covering is worked out scene by scene,
 s03_who_is_offered_what_7	from who is standing in it.
 s03_who_is_offered_what_8	So a job is never out of reach.
@@ -42,7 +42,7 @@ s04_a_mark_is_a_word_9	until the thing is found.
 s04_a_mark_is_a_word_10	So the map never gives your secret away.
 s05_titles_and_what_the_pack_say_0	An area's title is read after other words.
 s05_titles_and_what_the_pack_say_1	Go to, in Look. To, in Beam.
-s05_titles_and_what_the_pack_say_2	So a title that starts with The reads badly twice.
+s05_titles_and_what_the_pack_say_2	So a title that starts with The reads badly twice,
 s05_titles_and_what_the_pack_say_3	and the fix is to take it off.
 s05_titles_and_what_the_pack_say_4	Next, the things you pick up.
 s05_titles_and_what_the_pack_say_5	The transcript says he picked up a toolbox.

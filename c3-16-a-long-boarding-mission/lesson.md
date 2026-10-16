@@ -153,7 +153,7 @@ of ground it does not have, add the line you added in Lecture 10.
 
 Draw Lecture 14's three columns before you write a single prop.
 
-| | Dr Hale | Lt Reyes | Chief Okoro |
+| Where | Dr Hale | Lt Reyes | Chief Okoro |
 |---|---|---|---|
 | The camp | Ada Corvin: what happened, the lift, the stores. The gallery plan | The stores key, the stores, the jacks | Walks east |
 | The lift house | | The hauler. Its coupling. The lift console | The ventilator |
@@ -367,27 +367,21 @@ use for it.
 
 ## Step 8 - What a FULL shot does
 
-One fact about the game belongs in every plan. Lecture 11 warned you about it.
+One fact about the game belongs in every plan.
 
-**A FULL shot from the Fire app destroys any prop it hits.** The game does not stop,
-and it says nothing. Two shots were tried on Corvin's Claim.
+**A shot never removes a prop.** A FULL shot from the Fire app at a door, a terminal or
+the thing that holds your ending leaves it where it was, and as shut as it was. The only
+prop a shot opens is one whose `Opens with:` lists `cut`. On Corvin's Claim:
 
-| The shot | What happened |
+| The shot | What happens |
 |---|---|
-| The lift gate, which only a signal opens | The gate was gone. The guard walked into the lower gallery with the lift still dead |
-| The rock fall, which holds both endings | The rock fall was gone. Nothing was left to use. No ending could be reached |
+| The lift gate, which only a signal opens | It stays shut. Nobody walks into the lower gallery until the lift runs |
+| The stores door, whose `Opens with:` lists `cut` | It opens, as the key would |
+| The rock fall, which holds both endings | It stays. Both endings are still there |
 
-So there are two questions to ask of your own mission, with a pencil.
-
-**Which props hold an ending?** If one is shot away, can the game still end? Mine can,
-because of the clock: the test was left to run, and it ended with the `Lose:` sentence.
-A mission with an ending on a prop and no clock can be left with no way to finish at
-all. That is the best reason to give a long mission a clock.
-
-**Which doors does only a signal open?** If one is shot away, does anything behind it
-still make sense? Mine does. Jo Reth and the rock fall do not care how you came down.
-
-Then tell your crew, in the mission. Ada Corvin could say it. Somebody should.
+So there is one question to ask of your own mission, with a pencil: **which doors should
+the crew be able to force?** Put `cut` on those, and only those. A door without it is a
+door the party cannot shoot its way through, so a prop is safe to hang an ending on.
 
 ## Step 9 - One sheet of checks
 
@@ -407,7 +401,7 @@ this order, and write the result of each on your sheet.
 | 8 | Nothing only one person can do is on the only road | For each thing you crossed out in 7: name the other road |
 | 9 | Three columns | Lecture 14's sheet. Nobody is watching for more than one beat |
 | 10 | The screen reads well | Lecture 13: marks, titles after `Go to`, headings after `picked up`, item keys, `Scan:` lines, and the arc's description read as the bridge reads it |
-| 11 | A FULL shot | Step 8's two questions |
+| 11 | A FULL shot | Step 8's question: which doors list `cut`, and should they? |
 | 12 | The clock | It starts from an answer. `Lose:` is true every way the arc can fail |
 
 Mine, checked this way:
@@ -424,7 +418,7 @@ Mine, checked this way:
 | 8 | The leg and the ventilator: the charges go round both. The shaped charge: the plain one |
 | 9 | Presses 9, 2 and 7. Chief Okoro walks while Dr Hale talks. Fair |
 | 10 | Read. `Blasting charges` is in the pack as `charges`: I let it stand |
-| 11 | The rock fall holds every ending: the clock ends the game. The lift gate can be shot away: nothing behind it breaks |
+| 11 | Only the stores door lists `cut`: a party that forces it is a party in a hurry. The lift gate and the rock fall stay whatever is fired at them |
 | 12 | It starts from Ada's first answer. One `Lose:`, and one way to fail |
 
 ## Step 10 - Check it
@@ -490,7 +484,7 @@ can imagine, then the clock.
 
 Your capstone is done when you can tick every line.
 
-| | The mission has | How you know |
+| # | The mission has | How you know |
 |---|---|---|
 | 1 | Three areas, one that has to be found and one the ship cannot beam into | `known: no` and `beam: no` in two map files |
 | 2 | A quest tree: an arc, steps that reveal each other, and the endings as its last steps | The ship's quest list changes at least three times in a play |
@@ -500,7 +494,7 @@ Your capstone is done when you can tick every line.
 | 6 | An ending for the smallest party | One person, with no skill used, has finished it |
 | 7 | Work for three at once | The three columns, and no column with half the presses |
 | 8 | A screen that reads well | Lecture 13's list, done on the handheld, not in the file |
-| 9 | An answer to a FULL shot | Step 8's two questions, written down |
+| 9 | An answer to a FULL shot | Step 8's question, written down for every door |
 | 10 | A clean lint, and a full sheet | `clean`, and twelve results in your own hand |
 
 ## If something goes wrong
@@ -512,7 +506,7 @@ Your capstone is done when you can tick every line.
 | A lead is on the Tasks app before anybody has been told anything | A step says `Starts when: at once` inside an arc that waits | Make the step wait too, and `accepts` it with the arc |
 | The last answer is pressed and the game goes on | The step it completes has no `Win:` line | Give each ending step its own `Win:` sentence |
 | A choice is offered to nobody | It has two conditions. A choice has one | Two rooms. Step 6 |
-| A door is gone, or the thing that ends the game is gone | A FULL shot | Step 8. The game does this to any prop |
+| A door opened to a shot that should not have | Its `Opens with:` lists `cut` | Take `cut` off it. Step 8 |
 | No Boarding Party tile, and lint is clean | `area=` on the card names no area | Step 7 |
 
 ## Exercise

@@ -134,7 +134,7 @@ party talks. **My guess is half a minute a press, and I double the total for a c
 playing it the first time.** Write your own guess beside mine, and correct it the first
 time you watch people play.
 
-| | Presses on the busiest console | At half a minute each | Doubled, for a first play |
+| The road | Presses on the busiest console | At half a minute each | Doubled, for a first play |
 |---|---|---|---|
 | The short road | 2 | 1 minute | 2 minutes |
 | The long road, alone | 11 | 6 minutes | 11 minutes |
@@ -255,9 +255,9 @@ answer, and the mission taught her to find it.
 The sentry is calm now, and it keeps its cell. The spare is past the sluice, and nobody
 here can run the pump. **The clever answer has left this party with no power cell.**
 
-There is still a way: a FULL shot puts a calm sentry down, and it drops the cell. That
-was tried, and it works. But nothing in the game says so, and a crew that has just made
-peace with a machine will not think to shoot it.
+And there is no way back to it. Somebody calm is not harmed by any shot, STUN, CUT or
+FULL, so the sentry cannot be put down for its cell any more. Nothing in the game says
+so: the party is simply stuck.
 
 Fix it where it broke. Find the line in **The Yard Terminal** and add an outcome:
 
@@ -282,7 +282,7 @@ two different lectures that nobody put side by side.
 Draw three columns on your sheet, one for each console, and write down what each person
 is doing from the landing to the win. This is the mission as Lecture 13 left it:
 
-| | Dr Hale | Lt Reyes | Chief Okoro |
+| Where | Dr Hale | Lt Reyes | Chief Okoro |
 |---|---|---|---|
 | The yard | Marrow's cough | The sentry | The brass key |
 | The gully | | | The toolbox. Pim. The door. The panel: two fuses, one short |
@@ -315,9 +315,10 @@ and change the line of **Dust Lung**:
 % You listen to his chest for a long minute. Dust lung, nine days of it, and nothing that will not mend. He takes the inhaler like it is made of glass, and pays for it with the fuse out of his kettle.
 ```
 
-Save and run lint: `clean`. Now the sheet reads:
+Save and run lint: `clean`. On her handheld, Dust Lung now ends with the fuse, and the fuse
+is in her **Pack**. Now the sheet reads:
 
-| | Dr Hale | Lt Reyes | Chief Okoro |
+| Where | Dr Hale | Lt Reyes | Chief Okoro |
 |---|---|---|---|
 | The yard | Marrow's cough: a fuse. The keycard. The relay door | The sentry | The brass key |
 | The gully | Carries her fuse to the pump house | Pim's promise. The pump house door | The toolbox: two fuses. The panel |
@@ -379,6 +380,7 @@ Each row was tried on the finished files, one change at a time.
 | `Fails when: thirty minutes` | `unknown-trigger` |
 | `Fail when: 30 minutes` | `unknown-field`. It guesses `Fails when` |
 | `; calm sentry give power_cell`, with no comma | `outcome-run-together`: the cell is never given |
+| `; calm sentry, give power cell`, with a space | `pack-item-shape`: the game skips this whole answer, so the sentry is not calmed either |
 
 The last one, as lint printed it:
 
@@ -393,7 +395,6 @@ All of these lint `clean`.
 | The mistake | What happens |
 |---|---|
 | The clock kept, and the `Lose:` line deleted | When the time is up the quest fails and the game goes on. It can no longer be won, and nothing says so. Played |
-| `; calm sentry, give power cell`, with a space | The sentry is calmed, nothing is given, the scene does not move on, and the game logs an error. Played |
 | `; calm sentry, give power_sell` | Lint has no list of items. Not played |
 | A party the three lists leave stuck | Nothing, until that party plays it |
 | A chain | Nothing. Two of your crew watch the third |

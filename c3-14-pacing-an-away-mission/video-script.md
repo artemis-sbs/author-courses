@@ -38,7 +38,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 | Mission | `MyAway` with Lecture 13's files. Lint clean |
 | VS Code | `MyAway` folder open; `mission.amd` in three tabs: the Quests section, The Yard Terminal, Old Marrow |
 | Paper | The sheet from the page, blank, on camera: numbers, walks, presses, three lists, three columns |
-| Game | Closed. Started on camera in scene 8 with a server, Engineering, Weapons and Science, and a stopwatch |
+| Game | Closed. Started on camera in scene 8 with a server, Science and Weapons (Dr Hale and Lt Reyes), and a stopwatch |
 
 ## Confirm on camera
 
@@ -110,21 +110,26 @@ minute a press, | and double it for a first play. || Write your own guess beside
 
 ### 5. A clock
 
-**Screen:** The Quests section: one line typed above `Win:`, the `Lose:` line
-rewritten, and the hourglass line typed into the description. Lint clean. Then the Tasks app: the time under the quest.
+**Screen:** The game first: the Tasks app on Dr Hale's handheld, a time under Relight Kesh
+Relay. Then the Quests section: one line typed above `Win:`, the `Lose:` line rewritten,
+and the hourglass line typed into the description. Lint clean. Then the game: the Quest
+Log on Weapons, aboard, with the hourglass line in the quest's page.
 
 **Say:** "You have four ways to press on a crew. || A clock, a patrol, | a key that's
-somewhere else, and a thing that's hidden. ||| The clock is one line, and you wrote it in
-the first class. || Fails when, thirty minutes. ||| The Lose sentence has to change with
+somewhere else, and a thing that's hidden. ||| Here's the clock on the ground, | in the Tasks app, counting down under the starter's
+quest. || In the file it's one line, and you wrote it in the first class. || Fails when,
+thirty minutes. ||| The Lose sentence has to change with
 it. | It used to say the beacon was slag. || Now it's read when the clock runs out too, |
 so it has to be true every way. ||| Then I tell the bridge. | One line in the
-description, | with an hourglass at the start. ||| And the clock starts when the quest starts. | This
+description, | with an hourglass at the start. || In the Quest Log aboard, | it sits under
+the quest's first paragraph. ||| And the clock starts when the quest starts. | This
 one starts with the game. ||"
 
 ### 6. Can every party get there?
 
 **Screen:** Three lists on the sheet of paper: every area, every item, every ending,
-with a word beside each: anyone, a job, a skill, luck. Then the terminal's answer, and
+with a word beside each: anyone, a job, a skill, luck. Then the game: Dr Hale's handheld at the
+terminal after the update, and her Pack with a power cell. Then the terminal's answer, and
 `give power_cell` typed onto it.
 
 **Say:** "Lint doesn't walk your map. | You do, on paper, in three lists. ||| Every area,
@@ -132,12 +137,15 @@ every item, every ending. | And beside each one, who can do it. ||| Now find a p
 lists leave stuck. || A scientist and a guard, and no engineer. ||| She pulls the door
 code, and calms the sentry. | That's the clever answer. || But the sentry keeps its cell,
 | and nobody here can run the pump. ||| The clever answer left them with nothing. || So
-fix it where it broke. | The sentry hands its cell over. | One outcome, after a comma. ||"
+fix it where it broke. | The sentry hands its cell over. ||| Here's the terminal on the
+doctor's handheld after the update, | and there's the power cell in her pack. || In the
+file it's one outcome, after a comma. ||"
 
 ### 7. Three columns
 
 **Screen:** The first three-column table: one column full, two nearly empty. Then the
-cough answer with `give fuse` typed onto it. Then the second table, all three columns
+game: Dr Hale's handheld after Marrow's cough, and her Pack with a fuse. Then the cough
+answer with `give fuse` typed onto it. Then the second table, all three columns
 busy.
 
 **Say:** "Three columns, one for each console. | What is each person doing? ||| This is
@@ -145,7 +153,8 @@ the mission as you left it. || The chief makes eight presses out of twelve. | Th
 is finished in ten seconds. ||| What you have there is a chain. | Every step waits for the one before, |
 so only one person is ever busy. ||| The cure is a join. | Make the thing in the middle
 need pieces from three places. ||| Your pump needs three fuses. | So give Marrow one to
-pay the doctor with. || Now three people each carry something to the pump house, | and
+pay the doctor with. || On her handheld, he pays with the fuse out of his kettle, | and
+it's in her pack. || In the file, it's one more outcome on the cough answer. ||| Now three people each carry something to the pump house, | and
 nobody presses more than five times. ||"
 
 ### 8. The beat sheet, and your turn

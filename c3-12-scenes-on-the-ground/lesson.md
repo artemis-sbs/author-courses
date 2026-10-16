@@ -133,7 +133,7 @@ this mission sends that signal. The name is only there to keep her hidden.
 Lint knows it. Run it now and it adds a second warning, `ground-signal-unsent`: she
 `stays hidden for good`. That is true until Step 4 writes the answer that summons her.
 
-Her name on screen is Pim, the same as the first record. Her key is different. Keys are
+You will see her on the yard's map, by the tent, once she has gone home. Her name on screen is Pim, the same as the first record. Her key is different. Keys are
 what the file joins with.
 
 ## Step 3 - A stash
@@ -153,7 +153,7 @@ Hidden until: stash_shown
 A medical kit wedged under the rock, where the dust would not find it.
 ```
 
-A `medkit` is the one item the game knows what to do with. In the handheld's **Pack** app
+You will see it on the gully's map, by the rock, once Pim has told of it. A `medkit` is the one item the game knows what to do with. In the handheld's **Pack** app
 it has a **Use medkit** button.
 
 Lint says of the stash what it said of Pim, and for the same reason: no answer reveals it
@@ -219,7 +219,7 @@ Find the two rooms you wrote for Pim in Lecture 11, at the end of the file: **Pi
 Save and run lint. It says `clean`: the quest from Step 1 now has an answer that names
 it, and the two hidden records each have an answer that shows them.
 
-Take the new lines one at a time. Each was played for this page.
+You will see them in the handheld's **Act** app, talking to Pim in the gully. Take the new lines one at a time. Each was played for this page.
 
 **`if learned spare`.** The fact comes from the notice by the pump house door, which says
 `; learn spare`. A party that has not read the notice is not offered this choice.
@@ -279,7 +279,7 @@ Find **The Pump Panel** and **The Pump Runs**, and replace both with these four 
 - [Run]() ; fails relight
 ```
 
-Four things to see.
+You will see these in the **Act** app at the pump panel. Four things to see.
 
 **`holding` is one person. `party` is everybody.** `if holding fuse >= 3` is offered to a
 crew member with three fuses in their own pack. `party fuse` adds up every pack on the
@@ -323,7 +323,7 @@ and add this room above **Nine Days**:
 - [Step back]()
 ```
 
-`calm sentry` turns a hostile into a person who never attacks. It keeps its power cell,
+In the **Act** app at the terminal, the new answer is offered once somebody has copied down the code. `calm sentry` turns a hostile into a person who never attacks. It keeps its power cell,
 so a party that calms it still has to find another one. That is what your cistern is
 for.
 
@@ -346,7 +346,7 @@ and add this room above **The Keycard**:
 - [Thank him]()
 ```
 
-`if party pump_key` is the right word here. Nothing is taken, and it does not matter who
+In the **Act** app at Marrow, it is offered to whoever talks to him while anybody on the ground carries the key. `if party pump_key` is the right word here. Nothing is taken, and it does not matter who
 picked the key up. In the test run the engineer carried it and the doctor was offered
 the choice.
 

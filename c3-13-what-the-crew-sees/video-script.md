@@ -47,7 +47,7 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 | Mission | `MyAway` with Lecture 12's files. Lint clean |
 | VS Code | `MyAway` folder open; `mission.amd` and the three maps in tabs, the maps in Text view |
 | Command prompt | Open in `data\missions`, cleared |
-| Game | Closed. Started on camera in scene 2 with a server, Helm, Comms and Science |
+| Game | Closed. Started on camera in scene 2 with a server, Science and Helm (two crew: Dr Hale and Lt Ross; Lt Ross stays aboard for scene 8) |
 
 ## Confirm on camera
 
@@ -86,12 +86,12 @@ jobs, and the word `arrive`.
 **Say:** "For six lectures you've written records. || Your crew never sees a record. |||
 What they see is this handheld. | Eight apps, and every one of them is made of your words. || Some of
 those words you chose with care. || And some you typed in a hurry, as a name for
-yourself. | like the last word on this bar. ||| Today we read the mission from their side, | and fix what
+yourself, | like the last word on this bar. ||| Today we read the mission from their side, | and fix what
 reads badly. ||"
 
 ### 2. The bar and the eight apps
 
-**Screen:** The game with three consoles down. The bar. Then each tile opened once and
+**Screen:** The game with two consoles down, Science (Dr Hale) and Helm (Lt Ross). The bar. Then each tile opened once and
 closed: Crew, Act, Look, Pack, Tasks, Beam, Scan, Fire. The table from the page beside
 it.
 
@@ -109,20 +109,21 @@ this? ||"
 ### 3. Who is offered what
 
 **Screen:** Two handhelds side by side at Old Marrow: the medic's, with the cough
-answer; the engineer's, with the same answer marked as covering.
+answer; the helm officer's, with the same answer marked as covering.
 
 **Say:** "A choice with no condition goes to everybody in the scene. || A choice for a
-job goes to the person with that job. ||| Now here's the surprise. | The engineer walks
-up to Marrow alone. || The medic is across the yard, on the landing pad. || And he's
-offered her answer, marked as covering. ||| Covering is worked out scene by scene, | from
+job goes to the person with that job. ||| Now here's the surprise. | The helm officer walks
+up to Marrow alone. || The medic is across the yard, on the landing pad. || And she's
+offered the medic's answer, marked as covering. ||| Covering is worked out scene by scene, | from
 who is standing in it. || So a job is never out of reach. | If only a medic's hands will
 do, | ask for a skill instead. ||"
 
 ### 4. A mark is a word
 
 **Screen:** The bar reading `pad`. Then the doctor in the gully: the bar reads `arrive`.
-Then the three map files in Text view, the lines changed. Then the doctor on the scrub
-where the kit is hidden: the bar reads `Kesh Relay`.
+Then the three map files in Text view, the lines changed, and the bar again: `landing pad`,
+then `gully mouth`. Then the doctor on the scrub where the kit is hidden: the bar reads
+`Kesh Relay`.
 
 **Say:** "That third word on the bar is a mark from your map file. || Any mark somebody
 can stand on is a word on their screen. ||| So watch what happens in the gully. || The
@@ -138,7 +139,7 @@ lines changed. Then Act: `picked up Toolbox`, and Pack: `fuse x2`, `pump key x1`
 the three lines that name the key, changed together.
 
 **Say:** "An area's title is read after other words. | Go to, in Look. To, in Beam. || So
-a title that starts with The reads badly twice. | and the fix is to take it off. ||| Next, the things you
+a title that starts with The reads badly twice, | and the fix is to take it off. ||| Next, the things you
 pick up. || The transcript says he picked up a toolbox. | The pack says two fuses. ||| And
 the key is worse. | The heading says pump house key. | The pack and the door say pump
 key. || That's the item's key, with its underscore shown as a space. ||| So make the
@@ -171,8 +172,8 @@ then the two answers put that right. ||"
 
 **Screen:** A console left aboard: Boarding Party, with the names of the party. Then the
 quest list. Then Messages, with one line: reporting in. Then `mission.amd`: Relight Kesh
-Relay's description retyped, the ship line, the paragraphs and the table. Then the
-exercise.
+Relay's description retyped, the ship line, the paragraphs and the table. Then the Quest Log
+again, the new page. Then the exercise.
 
 **Say:** "Somebody stays on the bridge. | Here's everything they get. ||| A list of who
 went down. || The shared quests, as they start and finish. || And one line in Messages, |
