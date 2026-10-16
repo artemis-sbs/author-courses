@@ -1,12 +1,13 @@
 s01_cold_open_0	This is a boarding party.
-s01_cold_open_1	Somebody has left the ship,
-s01_cold_open_2	and they're standing on a landing field,
-s01_cold_open_3	talking to a woman who says everything is fine.
-s01_cold_open_4	Nobody drew this place. It's this:
-s01_cold_open_5	about a hundred lines of text.
-s01_cold_open_6	In this class, you write places like it.
-s01_cold_open_7	Today, you play one that somebody else wrote,
-s01_cold_open_8	and then you read how it was made.
+s01_cold_open_1	This was the Helm console a minute ago,
+s01_cold_open_2	and now it's the handheld of someone who has left the ship.
+s01_cold_open_3	They're standing on a landing field,
+s01_cold_open_4	talking to a woman who says everything is fine.
+s01_cold_open_5	Nobody drew this place. It's this:
+s01_cold_open_6	about a hundred lines of text.
+s01_cold_open_7	In this class, you write places like it.
+s01_cold_open_8	Today, you play one that somebody else wrote,
+s01_cold_open_9	and then you read how it was made.
 s02_a_mission_for_this_class_0	First, a new mission.
 s02_a_mission_for_this_class_1	This class doesn't build on the one from Class 1.
 s02_a_mission_for_this_class_2	That story ends the game ten minutes in,
@@ -19,15 +20,21 @@ s02_a_mission_for_this_class_8	It's clean, and it's the same small mission you s
 s03_borrow_a_scene_0	There's a shipped campaign with a colony in it called Ferrow Landing.
 s03_borrow_a_scene_1	Eleven people, a raked gravel landing field,
 s03_borrow_a_scene_2	and an administrator with an answer for everything.
-s03_borrow_a_scene_3	I go to the very end of my fact sheet,
-s03_borrow_a_scene_4	and I paste that colony's scene.
-s03_borrow_a_scene_5	Don't read it yet.
-s03_borrow_a_scene_6	Lint has one thing to say.
-s03_borrow_a_scene_7	Nothing in this mission reads these rooms. And that's true,
-s03_borrow_a_scene_8	because a scene needs something to start it.
-s03_borrow_a_scene_9	So I open the story file, go to the very end,
-s03_borrow_a_scene_10	and paste one card.
-s03_borrow_a_scene_11	Now lint is clean.
+s03_borrow_a_scene_3	On the handheld, the bar names the room,
+s03_borrow_a_scene_4	and everything under it, the line and the buttons,
+s03_borrow_a_scene_5	comes from the block I'm about to paste.
+s03_borrow_a_scene_6	I go to the very end of my fact sheet,
+s03_borrow_a_scene_7	and I paste that colony's scene.
+s03_borrow_a_scene_8	Don't read it yet.
+s03_borrow_a_scene_9	Lint has one thing to say.
+s03_borrow_a_scene_10	Nothing in this mission reads these rooms. And that's true,
+s03_borrow_a_scene_11	because a scene needs something to start it.
+s03_borrow_a_scene_12	On Helm, the handheld icon opens a page of tiles,
+s03_borrow_a_scene_13	and one called Boarding Party offers the visit by its name.
+s03_borrow_a_scene_14	That name, and the moment the tile appears, are on a card.
+s03_borrow_a_scene_15	So I open the story file, go to the very end,
+s03_borrow_a_scene_16	and paste the card.
+s03_borrow_a_scene_17	Now lint is clean.
 s04_play_it_0	I start the game with a server and a Helm console,
 s04_play_it_1	and I fly toward the hulk.
 s04_play_it_2	When I'm close, I stop the ship,
@@ -47,24 +54,30 @@ s04_play_it_15	So I go back and look harder.
 s04_play_it_16	Three things found out,
 s04_play_it_17	and now the button's there.
 s05_read_what_you_pasted_0	Now let's read it.
-s05_read_what_you_pasted_1	It's one section, with fourteen records in it,
-s05_read_what_you_pasted_2	and each record is a room.
-s05_read_what_you_pasted_3	A room has no fence at all.
-s05_read_what_you_pasted_4	These lines, the ones that start with a percent sign,
-s05_read_what_you_pasted_5	are what the party finds.
-s05_read_what_you_pasted_6	There are two here,
-s05_read_what_you_pasted_7	and the game showed me one of them.
-s05_read_what_you_pasted_8	Each line with a dash is a choice.
-s05_read_what_you_pasted_9	The words go on a button,
-s05_read_what_you_pasted_10	and the key in round brackets is the room it leads to.
-s05_read_what_you_pasted_11	This one adds a condition.
-s05_read_what_you_pasted_12	Only a medic is offered it.
-s05_read_what_you_pasted_13	And after the semicolon,
-s05_read_what_you_pasted_14	the party learns something.
-s05_read_what_you_pasted_15	Then here, at the cable, is the door.
-s05_read_what_you_pasted_16	It asks how many things the party has learned.
-s05_read_what_you_pasted_17	And this last kind has nothing in its brackets. It leads nowhere,
-s05_read_what_you_pasted_18	and it ends the visit.
+s05_read_what_you_pasted_1	Here's the landing field on the handheld again:
+s05_read_what_you_pasted_2	the room's name in the bar, one line, and six buttons.
+s05_read_what_you_pasted_3	In the file, it's one section, with fourteen records in it,
+s05_read_what_you_pasted_4	and each record is a room.
+s05_read_what_you_pasted_5	A room has no fence at all.
+s05_read_what_you_pasted_6	These lines, the ones that start with a percent sign,
+s05_read_what_you_pasted_7	are what the party finds.
+s05_read_what_you_pasted_8	There are two here,
+s05_read_what_you_pasted_9	and the game showed me one of them.
+s05_read_what_you_pasted_10	Each line with a dash is a choice.
+s05_read_what_you_pasted_11	The words go on a button,
+s05_read_what_you_pasted_12	and the key in round brackets is the room it leads to.
+s05_read_what_you_pasted_13	This one adds a condition.
+s05_read_what_you_pasted_14	Only a medic is offered it.
+s05_read_what_you_pasted_15	I'm not a medic, so it came to me marked as covering for medical.
+s05_read_what_you_pasted_16	And after the semicolon,
+s05_read_what_you_pasted_17	the party learns something.
+s05_read_what_you_pasted_18	At the cable, the handheld had no Open it button,
+s05_read_what_you_pasted_19	until I'd found three things.
+s05_read_what_you_pasted_20	Here's that door in the file.
+s05_read_what_you_pasted_21	It asks how many things the party has learned.
+s05_read_what_you_pasted_22	And this last kind has nothing in its brackets. It leads nowhere,
+s05_read_what_you_pasted_23	and it ends the visit.
+s05_read_what_you_pasted_24	On the handheld, it's the Beam back up button.
 s06_read_the_rest_of_the_file_0	The shipped file is about two hundred lines,
 s06_read_the_rest_of_the_file_1	and I pasted half of it.
 s06_read_the_rest_of_the_file_2	It opens with a page of notes, from the author to whoever comes next.

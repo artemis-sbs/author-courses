@@ -65,7 +65,8 @@ Roles: medical
 
 This is a crew roster. Each record is the person at one console. Whoever sits at
 Engineering is Chief Okoro, on the bridge and aboard the hulk. There is one cast, and it
-is the crew.
+is the crew. In the game, the name is at the top of the Engineering console, beside the
+handheld icon, before anyone has flown anywhere.
 
 | Line | What it means |
 |---|---|
@@ -108,7 +109,8 @@ Below the crew section, leave two blank lines and add the rooms:
 - [Go back to the airlock](airlock)
 ```
 
-A room is a record with two parts. It has no fence.
+A room is a record with two parts. It has no fence. On the boarding party's handheld, its
+name is in the bar at the top, its `%` line is under the bar, and each choice is a button.
 
 | Part | How to write it | What it does |
 |---|---|---|
@@ -174,7 +176,8 @@ The hulk is not answering hails. Bring the ship in close and take a look.
 Inside 500, a boarding party can go across. Whoever goes, goes as themselves, so think about who you send.
 ```
 
-You wrote quests like this in Class 1. The line that matters today is `Then:`. It says
+You wrote quests like this in Class 1, and you will see this one on Helm, in the
+handheld's Quest Log. The line that matters today is `Then:`. It says
 what happens when the quest completes, and this one sends a signal named `board_hulk`.
 
 The description is a page, as in Class 1, Lecture 8: the Quest Log shows it in full, and

@@ -67,11 +67,14 @@ job is. || This time it asks how good you are. ||"
 
 ### 2. Say what each person is good at
 
-**Screen:** `mission.amd`, the crew roster. Add a `Skills:` line to Chief Okoro, then to
-Dr Hale. Highlight `science 3` on Dr Hale.
+**Screen:** The Engineering console's handheld (the xESS) in the airlock: the bar at the
+top says Chief Okoro, and under it engineering. Then `mission.amd`, the crew roster. Add a
+`Skills:` line to Chief Okoro, then to Dr Hale. Highlight `science 3` on Dr Hale.
 
-**Say:** "I open my roster, | and I give each person one new line, under their job. It's a
-list: | a word, a space and a number, | with commas in between. ||| The chief is
+**Say:** "This is the chief's handheld, standing in the hulk's airlock. || The bar at the
+top says who he is and what his job is, | and both of those come from my roster. ||| So I
+open my roster, | and I give each person one new line, under their job. It's a list: | a
+word, a space and a number, | with commas in between. ||| The chief is
 engineering four, and science one. || The doctor is medical four, and science three. ||
 Now look at that last one. | Science isn't her job. | She's simply good at it. || And
 that's what a skill is for. ||| There's nothing to paste this time. | The game reads these
@@ -80,11 +83,15 @@ before today the chief's engineering was two, and this line makes it four. ||"
 
 ### 3. A choice for someone good enough
 
-**Screen:** The Bridge. Type the `Pull the sensor record` choice, then The Sensor Record
-room. Then show the page's table of three kinds of choice.
+**Screen:** The bridge on two handhelds: Science (Dr Hale) is offered Pull the sensor
+record, Engineering (Chief Okoro) is not. Then `mission.amd`, The Bridge. Type the
+`Pull the sensor record` choice, then The Sensor Record room. Then show the page's table
+of three kinds of choice.
 
-**Say:** "On the bridge I add a choice with a new kind of condition. It says if, | then
-the word skill, then science, | then at least three. ||| Dr Hale has science three, so
+**Say:** "Here's the hulk's bridge, on both handhelds. || The doctor has a button that the
+chief doesn't: pull the sensor record. ||| In the file, the bridge gets that choice, |
+with a new kind of condition. || It says if, then the word skill, | then science, then at
+least three. ||| Dr Hale has science three, so
 she's offered it. | The chief has one, so he isn't. || And here's the thing to remember.
 ||| When a choice asks for a job, | and that person stayed on the ship, | somebody covers
 for them. || When a choice asks for a skill, nobody covers. || With the doctor at home,
@@ -92,11 +99,14 @@ that record isn't on anyone's menu. ||"
 
 ### 4. A choice anyone may try
 
-**Screen:** The Reactor Room. Type the `Try to wake the core` choice. Type the two rooms.
-Highlight `check engineering 9`, then `else core_dead`, then `, learn lockout`.
+**Screen:** The reactor room on both handhelds: each is offered Try to wake the core.
+Then `mission.amd`, The Reactor Room. Type the `Try to wake the core` choice. Type the two
+rooms. Highlight `check engineering 9`, then `else core_dead`, then `, learn lockout`.
+Then the roll lines on a handheld.
 
-**Say:** "In the reactor room, a different idea. || This choice has no condition, | so
-everyone is offered it. || What differs is how it turns out. ||| After the semicolon it
+**Say:** "In the reactor room, a different idea. || Both handhelds have the same button
+here, | try to wake the core. ||| This choice has no condition, | so everyone is offered
+it. || What differs is how it turns out. ||| After the semicolon it
 says check, then a skill, | then a target of nine. || The game picks a number from one to
 ten, | adds that person's skill, | and nine or more works. ||| Then else, and a second
 room, | which is where a failure goes. || And after a comma, what the party learns, | but

@@ -54,42 +54,54 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 
 ### 1. Cold open
 
-**Screen:** Two consoles side by side in the airlock. Point at the one button only the
-Science console has.
+**Screen:** Two consoles' handhelds in the airlock, one after the other: Science (Dr
+Hale), then Engineering (Chief Okoro). Point at the one button only the Science console
+has.
 
-**Say:** "Same room. Same moment. Two different menus. || The doctor can read something
-the engineer can't, | and neither of them can open the captain's log alone. ||| That's the
+**Say:** "Same room. Same moment. Two different menus. || The doctor, on the Science
+console, can read something | the engineer, on Engineering, can't, | and neither of them
+can open the captain's log alone. ||| That's the
 whole trick of a boarding party, | and it costs you one word and one semicolon. ||"
 
 ### 2. A choice for one job
 
-**Screen:** `mission.amd`, The Airlock. Type the new choice above the others. Then type
+**Screen:** The game first: Dr Hale's handheld in the airlock, four buttons; Chief
+Okoro's, three. Then `mission.amd`, The Airlock. Type the new choice above the others.
+Then the game: Dr Hale's handheld after the tags, Six Suits' line and Step back. Then type
 the Six Suits room under the airlock.
 
-**Say:** "Here's a choice of the kind you already write, | with two things added on the
-end. || The first is the word if, and then medical. | Only someone whose job is medical is
+**Say:** "Here's the airlock on the Science console's handheld. || Dr Hale has four
+buttons, | and the first one, Read the name tags on the suits, is new. || Chief Okoro, on
+Engineering, has the other three. ||| In the file, it's a choice of the kind you already
+write, | with two things added on the end. || The first is the word if, and then medical. | Only someone whose job is medical is
 offered this. || That's the word on the Roles line in your roster, | so this one belongs
 to Dr Hale. ||| The second comes after a semicolon. | Learn, and then a name I've made up.
 || When she takes it, the party knows a fact. ||| And the choice needs somewhere to go, |
-so I write a short room that says what she found, | with one way back. ||"
+so I write a short room that says what she found, | with one way back. || On her
+handheld, that room is the next line on the page, | with one button, Step back. ||"
 
 ### 3. The other job
 
-**Screen:** The Reactor Room. Type the choice and the Shutdown Record room.
+**Screen:** The game first: Chief Okoro's handheld in the reactor room, with Read the
+shutdown record; Dr Hale's, without it. Then The Reactor Room. Type the choice and the
+Shutdown Record room.
 
-**Say:** "Then the same again, for the engineer. || A choice in the reactor room that only
-engineering is offered, | a fact with its own name, | and a short room to hold what he
-reads. ||| So now each of my two people has one thing that only they can read. || And
+**Say:** "Then the same again, for the engineer. || In the reactor room, Chief Okoro's
+handheld offers him a reading, and Dr Hale's doesn't. ||| In the file, it's a choice in
+the reactor room that only engineering is offered, | a fact with its own name, | and a
+short room to hold what he reads. ||| So now each of my two people has one thing that only they can read. || And
 notice the shape, because you'll use it again and again. | A reading goes somewhere, says
 one thing, and comes straight back. ||"
 
 ### 4. A door that opens when they know enough
 
-**Screen:** The Bridge. Type the `Answer the log` choice. Type The Last Entry at the end
-of the file. Highlight its `Return to the ship`.
+**Screen:** The game first: the handheld on the bridge once both readings are taken, with
+Answer the log. Then The Bridge. Type the `Answer the log` choice. Type The Last Entry at
+the end of the file. Highlight its `Return to the ship`.
 
-**Say:** "Now the lock. On the bridge I add a choice with a different kind of condition.
-It says learned, then at least, then two. ||| Learned is a number. | It's how many
+**Say:** "Now the lock. On the bridge, once both readings are taken, | the handheld
+offers a new button, Answer the log. ||| In the file, it's a choice with a different kind
+of condition. | It says learned, then at least, then two. ||| Learned is a number. | It's how many
 different facts the party has. || The party, mind, and not the person, | so the surgeon's
 reading and the engineer's both count. || And a fact counts once, | however many times
 they read it. ||| Behind the lock is the last room of this story, | so it's the second
@@ -97,13 +109,15 @@ room that gets a way home. ||"
 
 ### 5. A line that changes
 
-**Screen:** Replace the bridge's line with the two lines that start with a percent sign
-and curly brackets.
+**Screen:** The game first: the handheld on the bridge with nothing read yet, its line
+saying the log is locked. Then the same room once both readings are taken. Then replace
+the bridge's line with the two lines that start with a percent sign and curly brackets.
 
 **Say:** "There's one more thing to fix. || A party that walks to the bridge first finds a
-room with nothing to do, | and they'll think the game is broken. ||| So I write the line
-twice, | with a condition in curly brackets on each. || Too early, they're told there's
-more to find. | Later, they're told it's time. || A room should never leave the party
+room with nothing to do, | and they'll think the game is broken. ||| So the handheld tells
+them. || Too early, the bridge's line says the log is locked behind a question. | Later,
+the same room says they know what it's going to ask. ||| In the file, I write the line
+twice, | with a condition in curly brackets on each. || A room should never leave the party
 wondering whether it's finished. | If there's more to find, say so in the room. ||"
 
 ### 6. Three rules, and lint
@@ -130,7 +144,7 @@ button.
 **Say:** "Two people aboard. The doctor has the button, and the chief doesn't. || Straight
 to the bridge: | no log, and the line says why. Back. | She reads the tags. Aft. | He
 reads the record. Forward again, | and the line has changed, and there's the log. ||| Now
-watch what happens when the doctor stays on the bridge. || Same room, one person, | and
+watch what happens when the doctor stays behind on the ship. || Same room, one person, | and
 her reading comes to me, marked as covering for medical. || A short crew still finishes
 the story. || And the covering only happens for a job, | one that's on your roster, or one
 of the game's standard jobs. || A word that's nobody's job isn't offered to anyone. ||"

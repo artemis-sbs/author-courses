@@ -23,333 +23,373 @@ Today you give one person a quest that's theirs,
 and you make it lead somewhere.
 
 7
-00:00:26,570 --> 00:00:29,178
-A side story is a quest.
+00:00:26,570 --> 00:00:30,048
+This is the doctor's handheld, aboard the hulk,
 
 8
-00:00:30,078 --> 00:00:33,991
-It has the fields you learned in Class 1,
+00:00:30,498 --> 00:00:32,672
+with its Tasks app open.
 
 9
-00:00:34,441 --> 00:00:40,963
-and it lives in a section of its own, at the end of the file.
+00:00:33,572 --> 00:00:37,485
+The row under her name is a side story,
 
 10
-00:00:42,763 --> 00:00:44,937
-What's new is this line.
+00:00:37,935 --> 00:00:41,848
+and the rows under Party are the ship's quests.
 
 11
-00:00:45,387 --> 00:00:47,561
-For, and then a job.
+00:00:43,648 --> 00:00:46,257
+A side story is a quest.
 
 12
-00:00:48,461 --> 00:00:53,243
-A quest in your Quests section belongs to the whole ship.
+00:00:47,157 --> 00:00:51,070
+It has the fields you learned in Class 1,
 
 13
-00:00:53,693 --> 00:00:56,302
-This one belongs to one person.
+00:00:51,520 --> 00:00:58,041
+and it lives in a section of its own, at the end of the file.
 
 14
-00:00:58,102 --> 00:00:59,841
-It starts at once,
+00:00:59,841 --> 00:01:02,015
+What's new is this line.
 
 15
-00:01:00,291 --> 00:01:02,030
-it has an objective,
+00:01:02,465 --> 00:01:04,639
+For, and then a job.
 
 16
-00:01:02,480 --> 00:01:06,828
-and it's done when a signal arrives. Lint warns twice,
+00:01:05,539 --> 00:01:10,322
+A quest in your Quests section belongs to the whole ship.
 
 17
-00:01:07,278 --> 00:01:10,322
-and both warnings are true for now.
+00:01:10,772 --> 00:01:13,380
+This one belongs to one person.
 
 18
-00:01:10,772 --> 00:01:12,946
-Nothing sends that signal yet,
+00:01:15,180 --> 00:01:16,920
+It starts at once,
 
 19
-00:01:13,396 --> 00:01:16,004
-and nothing hands the story out.
+00:01:17,370 --> 00:01:19,109
+it has an objective,
 
 20
-00:01:16,904 --> 00:01:21,252
-The word after For is a job from your roster,
+00:01:19,559 --> 00:01:23,907
+and it's done when a signal arrives. Lint warns twice,
 
 21
-00:01:21,702 --> 00:01:26,485
-or it can be a person: their key, or their name.
+00:01:24,357 --> 00:01:27,400
+and both warnings are true for now.
 
 22
-00:01:27,685 --> 00:01:29,424
-So first, the signal.
+00:01:27,850 --> 00:01:30,024
+Nothing sends that signal yet,
 
 23
-00:01:30,324 --> 00:01:34,237
-I find the choice only the surgeon is offered,
+00:01:30,474 --> 00:01:33,083
+and nothing hands the story out.
 
 24
-00:01:34,687 --> 00:01:38,600
-and I add a second outcome after the first,
+00:01:33,983 --> 00:01:38,330
+The word after For is a job from your roster,
 
 25
-00:01:39,050 --> 00:01:44,267
-with a comma between them. Learn the fact, comma, send the signal.
+00:01:38,780 --> 00:01:43,563
+or it can be a person: their key, or their name.
 
 26
-00:01:45,167 --> 00:01:49,515
-The name has to match the story's, letter for letter.
+00:01:44,763 --> 00:01:46,502
+So first, the signal.
 
 27
-00:01:50,415 --> 00:01:52,589
-And don't lose that comma.
+00:01:47,402 --> 00:01:50,446
+On the doctor's handheld, in the airlock,
 
 28
-00:01:53,039 --> 00:01:56,083
-Without it, the signal is never sent.
+00:01:50,896 --> 00:01:55,243
+her reading is the button that should finish her story.
 
 29
-00:01:57,283 --> 00:01:59,022
-Then the handing out.
+00:01:57,043 --> 00:02:03,130
+In the file I find that choice, the one only the surgeon is offered,
 
 30
-00:01:59,922 --> 00:02:02,096
-I open the story file
+00:02:03,580 --> 00:02:07,493
+and I add a second outcome after the first,
 
 31
-00:02:02,546 --> 00:02:05,589
-and find the card from Lecture 2.
+00:02:07,943 --> 00:02:13,161
+with a comma between them. Learn the fact, comma, send the signal.
 
 32
-00:02:06,489 --> 00:02:09,533
-One line on it starts the visit,
+00:02:14,061 --> 00:02:18,409
+The name has to match the story's, letter for letter.
 
 33
-00:02:09,983 --> 00:02:16,070
-and I add a few words to the end of that line. Stories equals,
+00:02:19,309 --> 00:02:21,483
+And don't lose that comma.
 
 34
-00:02:16,520 --> 00:02:21,737
-and then the section of the fact sheet to read them from.
+00:02:21,933 --> 00:02:24,976
+Without it, the signal is never sent.
 
 35
-00:02:22,637 --> 00:02:27,854
-The key in quotes is the key on my Side Stories heading.
+00:02:26,176 --> 00:02:27,915
+Then the handing out.
 
 36
-00:02:29,654 --> 00:02:31,393
-That's the whole change.
+00:02:28,815 --> 00:02:30,989
+I open the story file
 
 37
-00:02:32,293 --> 00:02:37,946
-From now on each person is handed their story as they beam down,
+00:02:31,439 --> 00:02:34,483
+and find the card from Lecture 2.
 
 38
-00:02:38,396 --> 00:02:41,874
-and that includes someone who beams down late.
+00:02:35,383 --> 00:02:38,426
+One line on it starts the visit,
 
 39
-00:02:43,074 --> 00:02:45,248
-The engineer gets one too,
+00:02:38,876 --> 00:02:44,963
+and I add a few words to the end of that line. Stories equals,
 
 40
-00:02:45,698 --> 00:02:47,872
-finished by his own reading.
+00:02:45,413 --> 00:02:50,630
+and then the section of the fact sheet to read them from.
 
 41
-00:02:49,672 --> 00:02:52,715
-And a side story can lead on,
+00:02:51,530 --> 00:02:56,748
+The key in quotes is the key on my Side Stories heading.
 
 42
-00:02:53,165 --> 00:02:56,643
-the same way any quest does, with Then.
+00:02:58,548 --> 00:03:00,287
+That's the whole change.
 
 43
-00:02:57,543 --> 00:03:01,891
-When the surgeon's story completes, it sends a second signal,
+00:03:01,187 --> 00:03:06,839
+From now on each person is handed their story as they beam down,
 
 44
-00:03:02,341 --> 00:03:07,559
-and a quest for the whole ship is waiting to hear it.
+00:03:07,289 --> 00:03:10,767
+and that includes someone who beams down late.
 
 45
-00:03:09,359 --> 00:03:12,402
-So read the chain from the top.
+00:03:11,967 --> 00:03:14,141
+The engineer gets one too.
 
 46
-00:03:12,852 --> 00:03:14,591
-She reads the tags.
+00:03:15,041 --> 00:03:18,954
+Here it is on his handheld, under his name,
 
 47
-00:03:15,041 --> 00:03:16,780
-That finishes her story.
+00:03:19,404 --> 00:03:22,448
+and it's finished by his own reading.
 
 48
-00:03:17,230 --> 00:03:19,839
-Her story finishes the ship's quest,
+00:03:24,248 --> 00:03:27,291
+And a side story can lead on,
 
 49
-00:03:20,289 --> 00:03:22,463
-and the ship is paid.
+00:03:27,741 --> 00:03:31,220
+the same way any quest does, with Then.
 
 50
-00:03:23,363 --> 00:03:28,146
-A story can carry a reward of its own as well,
+00:03:32,120 --> 00:03:36,467
+When the surgeon's story completes, it sends a second signal,
 
 51
-00:03:28,596 --> 00:03:32,943
-and it's paid to the ship that person came from.
+00:03:36,917 --> 00:03:42,135
+and a quest for the whole ship is waiting to hear it.
 
 52
-00:03:34,743 --> 00:03:37,352
-The ship's quest gets a page,
+00:03:43,935 --> 00:03:46,978
+So read the chain from the top.
 
 53
-00:03:37,802 --> 00:03:41,280
-because the Quest Log shows all of it.
+00:03:47,428 --> 00:03:49,167
+She reads the tags.
 
 54
-00:03:42,180 --> 00:03:47,398
-A heading, and two bullets with a small picture for a dot.
+00:03:49,617 --> 00:03:51,357
+That finishes her story.
 
 55
-00:03:48,298 --> 00:03:51,341
-The word after icon names the picture.
+00:03:51,807 --> 00:03:54,415
+Her story finishes the ship's quest,
 
 56
-00:03:53,141 --> 00:03:55,315
-The side story stays short.
+00:03:54,865 --> 00:03:57,039
+and the ship is paid.
 
 57
-00:03:55,765 --> 00:03:57,939
-Tasks only shows its heading.
+00:03:57,939 --> 00:04:02,722
+A story can carry a reward of its own as well,
 
 58
-00:03:59,139 --> 00:04:04,791
-Four rules. A side story is a bonus, and never the only way,
+00:04:03,172 --> 00:04:07,520
+and it's paid to the ship that person came from.
 
 59
-00:04:05,241 --> 00:04:07,850
-because nobody covers for a person.
+00:04:09,320 --> 00:04:11,928
+The ship's quest gets a page,
 
 60
-00:04:08,750 --> 00:04:11,793
-One job word goes in three places:
+00:04:12,378 --> 00:04:15,857
+because the Quest Log shows all of it.
 
 61
-00:04:12,243 --> 00:04:16,591
-the roster, the story, and the choice that finishes it.
+00:04:16,757 --> 00:04:20,235
+This is the Quest Log on Helm's handheld.
 
 62
-00:04:17,491 --> 00:04:20,535
-For takes one job, or one person.
+00:04:20,685 --> 00:04:25,902
+A heading, and two bullets with a small picture for a dot.
 
 63
-00:04:21,435 --> 00:04:24,478
-And one story goes to one person.
+00:04:26,802 --> 00:04:31,150
+In the file, the word after icon names the picture.
 
 64
-00:04:26,278 --> 00:04:28,017
-Lint is good here.
+00:04:32,950 --> 00:04:35,124
+The side story stays short.
 
 65
-00:04:28,467 --> 00:04:32,380
-It tells you when a story is for nobody,
+00:04:35,574 --> 00:04:37,748
+Tasks only shows its heading.
 
 66
-00:04:32,830 --> 00:04:37,178
-and it tells you when two outcomes have run together.
+00:04:38,948 --> 00:04:44,600
+Four rules. A side story is a bonus, and never the only way,
 
 67
-00:04:38,378 --> 00:04:43,161
-Both aboard. On the doctor's handheld I go back one step,
+00:04:45,050 --> 00:04:47,659
+because nobody covers for a person.
 
 68
-00:04:43,611 --> 00:04:46,220
-and there are three apps now,
+00:04:48,559 --> 00:04:51,602
+One job word goes in three places:
 
 69
-00:04:46,670 --> 00:04:49,278
-and the third one is Tasks.
+00:04:52,052 --> 00:04:56,400
+the roster, the story, and the choice that finishes it.
 
 70
-00:04:50,178 --> 00:04:52,787
-There's her story, under her name.
+00:04:57,300 --> 00:05:00,343
+For takes one job, or one person.
 
 71
-00:04:54,587 --> 00:04:56,326
-She reads the tags,
+00:05:01,243 --> 00:05:04,287
+And one story goes to one person.
 
 72
-00:04:56,776 --> 00:04:59,385
-and the bridge is told twice:
+00:05:06,087 --> 00:05:07,826
+Lint is good here.
 
 73
-00:04:59,835 --> 00:05:04,183
-her story is complete, and so is the ship's quest.
+00:05:08,276 --> 00:05:12,189
+It tells you when a story is for nobody,
 
 74
-00:05:05,083 --> 00:05:07,691
-Then the chief reads his record,
+00:05:12,639 --> 00:05:16,987
+and it tells you when two outcomes have run together.
 
 75
-00:05:08,141 --> 00:05:10,315
-and his story completes too.
+00:05:18,187 --> 00:05:24,274
+I play it twice, and each time Helm stays on the bridge to watch.
 
 76
-00:05:12,115 --> 00:05:14,724
-Now think about a short crew.
+00:05:25,174 --> 00:05:27,348
+First the doctor goes across.
 
 77
-00:05:15,624 --> 00:05:18,667
-If the doctor stays on the ship,
+00:05:27,798 --> 00:05:31,276
+On her handheld I go back one step,
 
 78
-00:05:19,117 --> 00:05:22,161
-another console can still take her reading,
+00:05:31,726 --> 00:05:34,335
+and there are three apps now,
 
 79
-00:05:22,611 --> 00:05:25,654
-but her story was never handed out,
+00:05:34,785 --> 00:05:37,393
+and the third one is Tasks.
 
 80
-00:05:26,104 --> 00:05:28,713
-so the ship's quest stays open.
+00:05:38,293 --> 00:05:40,902
+There's her story, under her name.
 
 81
-00:05:29,613 --> 00:05:33,526
-The next lecture shows you the way round that.
+00:05:42,702 --> 00:05:44,441
+She reads the tags,
 
 82
-00:05:34,726 --> 00:05:37,770
-Write a story for your third person,
+00:05:44,891 --> 00:05:47,500
+and the bridge is told twice:
 
 83
-00:05:38,220 --> 00:05:40,393
-finished by their own reading.
+00:05:47,950 --> 00:05:52,298
+her story is complete, and so is the ship's quest.
 
 84
-00:05:41,293 --> 00:05:45,641
-Give the chief's story somewhere to lead. Then break it.
+00:05:54,098 --> 00:05:56,707
+Then the chief goes across alone,
 
 85
-00:05:46,091 --> 00:05:48,265
-Misspell the job after For,
+00:05:57,157 --> 00:05:59,330
+and that's a short crew.
 
 86
-00:05:48,715 --> 00:05:50,454
-read what lint says,
+00:06:00,230 --> 00:06:03,274
+He's offered her reading, marked as covering,
 
 87
-00:05:50,904 --> 00:05:53,078
-and play it once anyway.
+00:06:03,724 --> 00:06:06,333
+and the party learns the fact.
 
 88
-00:05:54,878 --> 00:05:57,052
-Next time is the checkpoint:
+00:06:07,233 --> 00:06:10,276
+But her story was never handed out,
 
 89
-00:05:57,502 --> 00:06:02,285
+00:06:10,726 --> 00:06:13,335
+so the ship's quest stays open.
+
+90
+00:06:15,135 --> 00:06:19,483
+Then he reads his own record, and his story completes.
+
+91
+00:06:20,383 --> 00:06:25,165
+The next lecture shows you the way round that open quest.
+
+92
+00:06:26,365 --> 00:06:29,409
+Write a story for your third person,
+
+93
+00:06:29,859 --> 00:06:32,033
+finished by their own reading.
+
+94
+00:06:32,933 --> 00:06:37,280
+Give the chief's story somewhere to lead. Then break it.
+
+95
+00:06:37,730 --> 00:06:39,904
+Misspell the job after For,
+
+96
+00:06:40,354 --> 00:06:42,093
+read what lint says,
+
+97
+00:06:42,543 --> 00:06:44,717
+and play it once anyway.
+
+98
+00:06:46,517 --> 00:06:48,691
+Next time is the checkpoint:
+
+99
+00:06:49,141 --> 00:06:53,924
 one away scene of your own, planned on paper and played.

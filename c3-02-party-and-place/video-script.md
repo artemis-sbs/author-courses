@@ -68,21 +68,24 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 
 ### 1. Cold open
 
-**Screen:** The handheld on an Engineering console: a bar with a name, a job and a room,
-one line of text, three buttons.
+**Screen:** The handheld on an Engineering console: a bar with Chief Okoro, engineering
+and The Airlock, one line of text, three buttons.
 
-**Say:** "This is a boarding party. || The ship is alongside a dead hulk, | and the people
-on the bridge have just gone aboard as themselves. ||| Last time you played a scene
+**Say:** "This is a boarding party. || The ship is alongside a dead hulk, | and the
+Engineering console has just gone aboard as Chief Okoro. ||| He's the person who sits at
+Engineering in this story, | on the bridge and on the hulk. ||| Last time you played a scene
 somebody else wrote. || Today you write your own: who goes, where they go, | and the few
 lines that start it. ||"
 
 ### 2. Your crew
 
-**Screen:** `mission.amd`, the end of the file. Type the roster: the section with its
-fence, then the two people.
+**Screen:** The game first: the Engineering console at the start, before anyone has
+flown, the name Chief Okoro at the top beside the handheld icon. Then `mission.amd`, the
+end of the file. Type the roster: the section with its fence, then the two people.
 
-**Say:** "First, who goes. I go to the end of my fact sheet and add a section, | and the
-first line inside its fence is one bare word, crew. || Then the ship these people crew, |
+**Say:** "First, who goes. || This is the Engineering console at the start of the game, |
+and the name at the top, Chief Okoro, is a name I wrote. ||| I go to the end of my fact
+sheet and add a section, | and the first line inside its fence is one bare word, crew. || Then the ship these people crew, |
 and a line that says the names are locked. ||| Under it, one record for each person. ||
 Each one says which console they sit at, | what they look like, and their job. || So
 whoever sits at Engineering tonight is Chief Okoro, | on the bridge and aboard the hulk.
@@ -90,15 +93,18 @@ whoever sits at Engineering tonight is Chief Okoro, | on the bridge and aboard t
 
 ### 3. The place
 
-**Screen:** Below the roster, type the Scenes heading and the three rooms. Point at a
-percent line, then at a choice, then at the empty brackets.
+**Screen:** The game first: Chief Okoro's handheld in the airlock: the bar naming The
+Airlock, one line, three buttons. Then, below the roster, type the Scenes heading and the
+three rooms. Point at a percent line, then at a choice, then at the empty brackets.
 
-**Say:** "Now, where they go. || A place is a section of rooms, | and a room is the
-simplest record you've written yet. | It has no fence at all. ||| One line that starts
-with a percent sign is what the party finds. || Each line that starts with a dash is a way
-out: | the words in square brackets go on a button, | and the key in round brackets names
-the room it leads to. ||| And this one has nothing in its round brackets. It leads
-nowhere, | and taking it ends the visit. ||"
+**Say:** "Now, where they go. || On the handheld, the bar names the room, The Airlock, |
+and under it there's one line and three buttons. || All of that is one record I write. |||
+A place is a section of rooms, | and a room is the simplest record you've written yet. |
+It has no fence at all. ||| One line that starts with a percent sign is what the party
+finds. || Each line that starts with a dash is a way out: | the words in square brackets
+go on a button, | and the key in round brackets names the room it leads to. ||| And this
+one has nothing in its round brackets. | On the handheld, it's the Return to the ship
+button. || It leads nowhere, and taking it ends the visit. ||"
 
 ### 4. Lint notices
 
@@ -112,30 +118,38 @@ the thing that reads it. ||"
 
 ### 5. Two rules
 
-**Screen:** The three rooms. Highlight each `Go back to the airlock`. Then highlight the
-single `Return to the ship`.
+**Screen:** The game first: the handheld in the reactor room, its one button Go back to
+the airlock. Then the three rooms. Highlight each `Go back to the airlock`. Then highlight
+the single `Return to the ship`.
 
-**Say:** "Before that, two rules. || One: every room has a way back. || A room with no way
-out holds the party for good, | and lint won't tell you. ||| Two: the way home goes where
+**Say:** "Before that, two rules. || One: every room has a way back. || In the reactor
+room, the handheld has one button, | and it's the way back to the airlock. || A room with
+no way out holds the party for good, | and lint won't tell you. ||| Two: the way home goes where
 leaving is a decision. || One press of that button, by anyone, | ends the visit for
 everybody, and the place isn't offered again. || So it's in the room they arrive in, | and
 nowhere else for now. ||"
 
 ### 6. Start it
 
-**Screen:** `mission.amd`, the Quests section: type Close Inspection, and highlight its
-`Then:` line, then its description: the ship line at the top, two paragraphs. Then
-`story.mast`, the very end: paste the card. Highlight `board_hulk`,
-`"airlock"` and `"The Hulk"` in turn. Lint: clean.
+**Screen:** The game first: Helm's handheld icon, Quests: Close Inspection selected, with
+the hulk's picture and two paragraphs. Then `mission.amd`, the Quests section: type Close
+Inspection, and highlight its `Then:` line, then its description: the ship line at the
+top, two paragraphs. Then the game: Engineering's handheld icon, the Boarding Party tile
+offering The Hulk. Then `story.mast`, the very end: paste the card. Highlight
+`board_hulk`, `"airlock"` and `"The Hulk"` in turn. Lint: clean.
 
-**Say:** "Now the start. I add a quest of the kind you wrote in Class 1: | bring the ship
-within five hundred of the hulk. || The new line is this one. | When the quest completes,
-it sends a signal, | and I've named it board hulk. ||| The description's a page, the way
-it was in Class 1. || A picture of the hulk at the top, | then two short paragraphs. ||
-The second one tells the crew a party can cross, | so they think about who goes. ||| Then I open the story file, go to
-the very end, | and paste one recipe card. || I don't read it. | I change three things on
-it, and they're on the page: the signal's name, | the key of the room the party arrives
-in, | and the name the crew sees. ||| I run lint again, and now it's clean. ||"
+**Say:** "Now the start. || On Helm, the handheld's Quest Log has a step called Close
+Inspection, | with a picture of the hulk and two short paragraphs. ||| It's a quest of the
+kind you wrote in Class 1: | bring the ship within five hundred of the hulk. || The new
+line is this one. | When the quest completes, it sends a signal, | and I've named it board
+hulk. ||| The description's a page, the way it was in Class 1. || A picture of the hulk at
+the top, | then two short paragraphs. || The second one tells the crew a party can cross, |
+so they think about who goes. ||| When the quest completes, Engineering's handheld has a
+tile called Boarding Party, | offering a visit called The Hulk. || One recipe card makes
+that happen. | I open the story file, go to the very end, and paste it. || I don't read
+it. | I change three things on it, and they're on the page: the signal's name, | the key
+of the room the party arrives in, | and the name the crew sees on the tile. ||| I run lint
+again, and now it's clean. ||"
 
 ### 7. Play it
 

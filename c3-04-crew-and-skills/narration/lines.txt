@@ -3,48 +3,56 @@ s01_cold_open_1	One of them is the chief engineer and one of them is a surgeon,
 s01_cold_open_2	and the hulk can tell the difference.
 s01_cold_open_3	Last time, a choice asked what your job is.
 s01_cold_open_4	This time it asks how good you are.
-s02_say_what_each_person_is_good_0	I open my roster,
-s02_say_what_each_person_is_good_1	and I give each person one new line, under their job. It's a list:
-s02_say_what_each_person_is_good_2	a word, a space and a number,
-s02_say_what_each_person_is_good_3	with commas in between.
-s02_say_what_each_person_is_good_4	The chief is engineering four, and science one.
-s02_say_what_each_person_is_good_5	The doctor is medical four, and science three.
-s02_say_what_each_person_is_good_6	Now look at that last one.
-s02_say_what_each_person_is_good_7	Science isn't her job.
-s02_say_what_each_person_is_good_8	She's simply good at it.
-s02_say_what_each_person_is_good_9	And that's what a skill is for.
-s02_say_what_each_person_is_good_10	There's nothing to paste this time.
-s02_say_what_each_person_is_good_11	The game reads these lines along with the rest of the roster.
-s02_say_what_each_person_is_good_12	A job with no number counts as two,
-s02_say_what_each_person_is_good_13	so before today the chief's engineering was two, and this line makes it four.
-s03_a_choice_for_someone_good_en_0	On the bridge I add a choice with a new kind of condition. It says if,
-s03_a_choice_for_someone_good_en_1	then the word skill, then science,
-s03_a_choice_for_someone_good_en_2	then at least three.
-s03_a_choice_for_someone_good_en_3	Dr Hale has science three, so she's offered it.
-s03_a_choice_for_someone_good_en_4	The chief has one, so he isn't.
-s03_a_choice_for_someone_good_en_5	And here's the thing to remember.
-s03_a_choice_for_someone_good_en_6	When a choice asks for a job,
-s03_a_choice_for_someone_good_en_7	and that person stayed on the ship,
-s03_a_choice_for_someone_good_en_8	somebody covers for them.
-s03_a_choice_for_someone_good_en_9	When a choice asks for a skill, nobody covers.
-s03_a_choice_for_someone_good_en_10	With the doctor at home, that record isn't on anyone's menu.
+s02_say_what_each_person_is_good_0	This is the chief's handheld, standing in the hulk's airlock.
+s02_say_what_each_person_is_good_1	The bar at the top says who he is and what his job is,
+s02_say_what_each_person_is_good_2	and both of those come from my roster.
+s02_say_what_each_person_is_good_3	So I open my roster,
+s02_say_what_each_person_is_good_4	and I give each person one new line, under their job. It's a list:
+s02_say_what_each_person_is_good_5	a word, a space and a number,
+s02_say_what_each_person_is_good_6	with commas in between.
+s02_say_what_each_person_is_good_7	The chief is engineering four, and science one.
+s02_say_what_each_person_is_good_8	The doctor is medical four, and science three.
+s02_say_what_each_person_is_good_9	Now look at that last one.
+s02_say_what_each_person_is_good_10	Science isn't her job.
+s02_say_what_each_person_is_good_11	She's simply good at it.
+s02_say_what_each_person_is_good_12	And that's what a skill is for.
+s02_say_what_each_person_is_good_13	There's nothing to paste this time.
+s02_say_what_each_person_is_good_14	The game reads these lines along with the rest of the roster.
+s02_say_what_each_person_is_good_15	A job with no number counts as two,
+s02_say_what_each_person_is_good_16	so before today the chief's engineering was two, and this line makes it four.
+s03_a_choice_for_someone_good_en_0	Here's the hulk's bridge, on both handhelds.
+s03_a_choice_for_someone_good_en_1	The doctor has a button that the chief doesn't: pull the sensor record.
+s03_a_choice_for_someone_good_en_2	In the file, the bridge gets that choice,
+s03_a_choice_for_someone_good_en_3	with a new kind of condition.
+s03_a_choice_for_someone_good_en_4	It says if, then the word skill,
+s03_a_choice_for_someone_good_en_5	then science, then at least three.
+s03_a_choice_for_someone_good_en_6	Dr Hale has science three, so she's offered it.
+s03_a_choice_for_someone_good_en_7	The chief has one, so he isn't.
+s03_a_choice_for_someone_good_en_8	And here's the thing to remember.
+s03_a_choice_for_someone_good_en_9	When a choice asks for a job,
+s03_a_choice_for_someone_good_en_10	and that person stayed on the ship,
+s03_a_choice_for_someone_good_en_11	somebody covers for them.
+s03_a_choice_for_someone_good_en_12	When a choice asks for a skill, nobody covers.
+s03_a_choice_for_someone_good_en_13	With the doctor at home, that record isn't on anyone's menu.
 s04_a_choice_anyone_may_try_0	In the reactor room, a different idea.
-s04_a_choice_anyone_may_try_1	This choice has no condition,
-s04_a_choice_anyone_may_try_2	so everyone is offered it.
-s04_a_choice_anyone_may_try_3	What differs is how it turns out.
-s04_a_choice_anyone_may_try_4	After the semicolon it says check, then a skill,
-s04_a_choice_anyone_may_try_5	then a target of nine.
-s04_a_choice_anyone_may_try_6	The game picks a number from one to ten,
-s04_a_choice_anyone_may_try_7	adds that person's skill,
-s04_a_choice_anyone_may_try_8	and nine or more works.
-s04_a_choice_anyone_may_try_9	Then else, and a second room,
-s04_a_choice_anyone_may_try_10	which is where a failure goes.
-s04_a_choice_anyone_may_try_11	And after a comma, what the party learns,
-s04_a_choice_anyone_may_try_12	but only when it worked.
-s04_a_choice_anyone_may_try_13	So the chief wakes the core six times in ten,
-s04_a_choice_anyone_may_try_14	and the doctor manages it twice in ten.
-s04_a_choice_anyone_may_try_15	And the page shows the roll to everyone in the room,
-s04_a_choice_anyone_may_try_16	so the whole party sees who tried and how close it was.
+s04_a_choice_anyone_may_try_1	Both handhelds have the same button here,
+s04_a_choice_anyone_may_try_2	try to wake the core.
+s04_a_choice_anyone_may_try_3	This choice has no condition,
+s04_a_choice_anyone_may_try_4	so everyone is offered it.
+s04_a_choice_anyone_may_try_5	What differs is how it turns out.
+s04_a_choice_anyone_may_try_6	After the semicolon it says check, then a skill,
+s04_a_choice_anyone_may_try_7	then a target of nine.
+s04_a_choice_anyone_may_try_8	The game picks a number from one to ten,
+s04_a_choice_anyone_may_try_9	adds that person's skill,
+s04_a_choice_anyone_may_try_10	and nine or more works.
+s04_a_choice_anyone_may_try_11	Then else, and a second room,
+s04_a_choice_anyone_may_try_12	which is where a failure goes.
+s04_a_choice_anyone_may_try_13	And after a comma, what the party learns,
+s04_a_choice_anyone_may_try_14	but only when it worked.
+s04_a_choice_anyone_may_try_15	So the chief wakes the core six times in ten,
+s04_a_choice_anyone_may_try_16	and the doctor manages it twice in ten.
+s04_a_choice_anyone_may_try_17	And the page shows the roll to everyone in the room,
+s04_a_choice_anyone_may_try_18	so the whole party sees who tried and how close it was.
 s05_four_rules_0	Four rules. A skill choice is a bonus, and never the only way,
 s05_four_rules_1	because nobody covers for a skill.
 s05_four_rules_2	A check always has an else,

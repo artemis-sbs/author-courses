@@ -101,14 +101,15 @@ Also capture the screenshot for the top of the page.
 
 ### 1. Cold open
 
-**Screen:** The game. A console showing the boarding party's handheld: a name, a job, a
-place, one line of text and six buttons. Cut to a text file, a hundred lines long.
+**Screen:** The game. The Helm console, turned into the boarding party's handheld: the bar
+with a name, the job `helm` and the room The Landing Field, one line of text and six
+buttons. Cut to a text file, a hundred lines long.
 
-**Say:** "This is a boarding party. || Somebody has left the ship, | and they're standing
-on a landing field, | talking to a woman who says everything is fine. ||| Nobody drew this
-place. It's this: | about a hundred lines of text. ||| In this class, you write places
-like it. | Today, you play one that somebody else wrote, | and then you read how it was
-made. ||"
+**Say:** "This is a boarding party. || This was the Helm console a minute ago, | and now
+it's the handheld of someone who has left the ship. ||| They're standing on a landing
+field, | talking to a woman who says everything is fine. ||| Nobody drew this place. It's
+this: | about a hundred lines of text. ||| In this class, you write places like it. |
+Today, you play one that somebody else wrote, | and then you read how it was made. ||"
 
 ### 2. A mission for this class
 
@@ -124,16 +125,22 @@ It's clean, and it's the same small mission you started Class 1 with. ||"
 
 ### 3. Borrow a scene
 
-**Screen:** `mission.amd`, the end of the file. Two blank lines. Paste the block. Scroll
-through it slowly. Save. Lint: one warning. Then `story.mast`, the end of the file: paste
-the card. Save. Lint: clean.
+**Screen:** The game first: the handheld on the landing field, the bar naming the room.
+Then `mission.amd`, the end of the file. Two blank lines. Paste the block. Scroll through
+it slowly. Save. Lint: one warning. Then the game: Helm's handheld icon open, the
+Boarding Party tile offering Ferrow Landing. Then `story.mast`, the end of the file:
+paste the card. Save. Lint: clean.
 
 **Say:** "There's a shipped campaign with a colony in it called Ferrow Landing. || Eleven
 people, a raked gravel landing field, | and an administrator with an answer for
-everything. ||| I go to the very end of my fact sheet, | and I paste that colony's scene.
-|| Don't read it yet. ||| Lint has one thing to say. | Nothing in this mission reads these
-rooms. And that's true, | because a scene needs something to start it. ||| So I open the
-story file, go to the very end, | and paste one card. || Now lint is clean. ||"
+everything. ||| On the handheld, the bar names the room, | and everything under it, the
+line and the buttons, | comes from the block I'm about to paste. ||| I go to the very end
+of my fact sheet, | and I paste that colony's scene. || Don't read it yet. ||| Lint has
+one thing to say. | Nothing in this mission reads these rooms. And that's true, | because
+a scene needs something to start it. ||| On Helm, the handheld icon opens a page of tiles,
+| and one called Boarding Party offers the visit by its name. || That name, and the moment
+the tile appears, are on a card. || So I open the story file, go to the very end, | and
+paste the card. || Now lint is clean. ||"
 
 ### 4. Play it
 
@@ -154,19 +161,25 @@ cable. || And she won't open the shed, | because I haven't found enough to say o
 
 ### 5. Read what you pasted
 
-**Screen:** `mission.amd`, the pasted block, The Landing Field. Highlight in turn: the
+**Screen:** The game first: the handheld on the landing field (the bar, the line, six
+buttons). Then `mission.amd`, the pasted block, The Landing Field. Highlight in turn: the
 heading and its key; the two lines that start with a percent sign; a plain choice; the
-`if` on a choice; the `learn` after the semicolon; the empty brackets. Then The East
-Cable: the `learned >= 3` choice and the line with curly brackets.
+`if` on a choice; the `learn` after the semicolon. Then the handheld at the east cable,
+with no Open it button, and again with it. Then The East Cable in the file: the
+`learned >= 3` choice. Then the empty brackets of a Beam back up.
 
-**Say:** "Now let's read it. || It's one section, with fourteen records in it, | and each
-record is a room. ||| A room has no fence at all. || These lines, the ones that start with
-a percent sign, | are what the party finds. || There are two here, | and the game showed
-me one of them. ||| Each line with a dash is a choice. | The words go on a button, | and
-the key in round brackets is the room it leads to. ||| This one adds a condition. | Only a
-medic is offered it. || And after the semicolon, | the party learns something. ||| Then
-here, at the cable, is the door. | It asks how many things the party has learned. || And
-this last kind has nothing in its brackets. It leads nowhere, | and it ends the visit. ||"
+**Say:** "Now let's read it. || Here's the landing field on the handheld again: | the
+room's name in the bar, one line, and six buttons. ||| In the file, it's one section, with
+fourteen records in it, | and each record is a room. ||| A room has no fence at all. ||
+These lines, the ones that start with a percent sign, | are what the party finds. || There
+are two here, | and the game showed me one of them. ||| Each line with a dash is a choice.
+| The words go on a button, | and the key in round brackets is the room it leads to. |||
+This one adds a condition. | Only a medic is offered it. || I'm not a medic, so it came
+to me marked as covering for medical. || And after the semicolon, | the party learns
+something. ||| At the cable, the handheld had no Open it button, | until I'd found three
+things. || Here's that door in the file. | It asks how many things the party has learned.
+||| And this last kind has nothing in its brackets. It leads nowhere, | and it ends the
+visit. || On the handheld, it's the Beam back up button. ||"
 
 ### 6. Read the rest of the file
 

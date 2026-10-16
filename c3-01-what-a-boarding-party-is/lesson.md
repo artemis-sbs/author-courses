@@ -280,6 +280,8 @@ marked as covering.
 ## Stop 4 - Read what you pasted
 
 Go back to `mission.amd` and read the block. It is one section, and fourteen records.
+You saw the first of them on the handheld: the bar named the room The Landing Field, one
+line was under it, and its six buttons are its six choices.
 
 A record here is simpler than a quest. It has a heading, and no fence at all. Take the
 first one:

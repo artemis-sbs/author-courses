@@ -1,29 +1,38 @@
 s01_cold_open_0	This is a boarding party.
 s01_cold_open_1	The ship is alongside a dead hulk,
-s01_cold_open_2	and the people on the bridge have just gone aboard as themselves.
-s01_cold_open_3	Last time you played a scene somebody else wrote.
-s01_cold_open_4	Today you write your own: who goes, where they go,
-s01_cold_open_5	and the few lines that start it.
-s02_your_crew_0	First, who goes. I go to the end of my fact sheet and add a section,
-s02_your_crew_1	and the first line inside its fence is one bare word, crew.
-s02_your_crew_2	Then the ship these people crew,
-s02_your_crew_3	and a line that says the names are locked.
-s02_your_crew_4	Under it, one record for each person.
-s02_your_crew_5	Each one says which console they sit at,
-s02_your_crew_6	what they look like, and their job.
-s02_your_crew_7	So whoever sits at Engineering tonight is Chief Okoro,
-s02_your_crew_8	on the bridge and aboard the hulk.
-s02_your_crew_9	There's one cast, and it's the crew.
+s01_cold_open_2	and the Engineering console has just gone aboard as Chief Okoro.
+s01_cold_open_3	He's the person who sits at Engineering in this story,
+s01_cold_open_4	on the bridge and on the hulk.
+s01_cold_open_5	Last time you played a scene somebody else wrote.
+s01_cold_open_6	Today you write your own: who goes, where they go,
+s01_cold_open_7	and the few lines that start it.
+s02_your_crew_0	First, who goes.
+s02_your_crew_1	This is the Engineering console at the start of the game,
+s02_your_crew_2	and the name at the top, Chief Okoro, is a name I wrote.
+s02_your_crew_3	I go to the end of my fact sheet and add a section,
+s02_your_crew_4	and the first line inside its fence is one bare word, crew.
+s02_your_crew_5	Then the ship these people crew,
+s02_your_crew_6	and a line that says the names are locked.
+s02_your_crew_7	Under it, one record for each person.
+s02_your_crew_8	Each one says which console they sit at,
+s02_your_crew_9	what they look like, and their job.
+s02_your_crew_10	So whoever sits at Engineering tonight is Chief Okoro,
+s02_your_crew_11	on the bridge and aboard the hulk.
+s02_your_crew_12	There's one cast, and it's the crew.
 s03_the_place_0	Now, where they go.
-s03_the_place_1	A place is a section of rooms,
-s03_the_place_2	and a room is the simplest record you've written yet.
-s03_the_place_3	It has no fence at all.
-s03_the_place_4	One line that starts with a percent sign is what the party finds.
-s03_the_place_5	Each line that starts with a dash is a way out:
-s03_the_place_6	the words in square brackets go on a button,
-s03_the_place_7	and the key in round brackets names the room it leads to.
-s03_the_place_8	And this one has nothing in its round brackets. It leads nowhere,
-s03_the_place_9	and taking it ends the visit.
+s03_the_place_1	On the handheld, the bar names the room, The Airlock,
+s03_the_place_2	and under it there's one line and three buttons.
+s03_the_place_3	All of that is one record I write.
+s03_the_place_4	A place is a section of rooms,
+s03_the_place_5	and a room is the simplest record you've written yet.
+s03_the_place_6	It has no fence at all.
+s03_the_place_7	One line that starts with a percent sign is what the party finds.
+s03_the_place_8	Each line that starts with a dash is a way out:
+s03_the_place_9	the words in square brackets go on a button,
+s03_the_place_10	and the key in round brackets names the room it leads to.
+s03_the_place_11	And this one has nothing in its round brackets.
+s03_the_place_12	On the handheld, it's the Return to the ship button.
+s03_the_place_13	It leads nowhere, and taking it ends the visit.
 s04_lint_notices_0	I save, and I run lint,
 s04_lint_notices_1	and for once it isn't clean.
 s04_lint_notices_2	It says nothing in this mission reads a section with this key,
@@ -33,30 +42,37 @@ s04_lint_notices_5	So I leave the key exactly as it is,
 s04_lint_notices_6	and I go and add the thing that reads it.
 s05_two_rules_0	Before that, two rules.
 s05_two_rules_1	One: every room has a way back.
-s05_two_rules_2	A room with no way out holds the party for good,
-s05_two_rules_3	and lint won't tell you.
-s05_two_rules_4	Two: the way home goes where leaving is a decision.
-s05_two_rules_5	One press of that button, by anyone,
-s05_two_rules_6	ends the visit for everybody, and the place isn't offered again.
-s05_two_rules_7	So it's in the room they arrive in,
-s05_two_rules_8	and nowhere else for now.
-s06_start_it_0	Now the start. I add a quest of the kind you wrote in Class 1:
-s06_start_it_1	bring the ship within five hundred of the hulk.
-s06_start_it_2	The new line is this one.
-s06_start_it_3	When the quest completes, it sends a signal,
-s06_start_it_4	and I've named it board hulk.
-s06_start_it_5	The description's a page, the way it was in Class 1.
-s06_start_it_6	A picture of the hulk at the top,
-s06_start_it_7	then two short paragraphs.
-s06_start_it_8	The second one tells the crew a party can cross,
-s06_start_it_9	so they think about who goes.
-s06_start_it_10	Then I open the story file, go to the very end,
-s06_start_it_11	and paste one recipe card.
-s06_start_it_12	I don't read it.
-s06_start_it_13	I change three things on it, and they're on the page: the signal's name,
-s06_start_it_14	the key of the room the party arrives in,
-s06_start_it_15	and the name the crew sees.
-s06_start_it_16	I run lint again, and now it's clean.
+s05_two_rules_2	In the reactor room, the handheld has one button,
+s05_two_rules_3	and it's the way back to the airlock.
+s05_two_rules_4	A room with no way out holds the party for good,
+s05_two_rules_5	and lint won't tell you.
+s05_two_rules_6	Two: the way home goes where leaving is a decision.
+s05_two_rules_7	One press of that button, by anyone,
+s05_two_rules_8	ends the visit for everybody, and the place isn't offered again.
+s05_two_rules_9	So it's in the room they arrive in,
+s05_two_rules_10	and nowhere else for now.
+s06_start_it_0	Now the start.
+s06_start_it_1	On Helm, the handheld's Quest Log has a step called Close Inspection,
+s06_start_it_2	with a picture of the hulk and two short paragraphs.
+s06_start_it_3	It's a quest of the kind you wrote in Class 1:
+s06_start_it_4	bring the ship within five hundred of the hulk.
+s06_start_it_5	The new line is this one.
+s06_start_it_6	When the quest completes, it sends a signal,
+s06_start_it_7	and I've named it board hulk.
+s06_start_it_8	The description's a page, the way it was in Class 1.
+s06_start_it_9	A picture of the hulk at the top,
+s06_start_it_10	then two short paragraphs.
+s06_start_it_11	The second one tells the crew a party can cross,
+s06_start_it_12	so they think about who goes.
+s06_start_it_13	When the quest completes, Engineering's handheld has a tile called Boarding Party,
+s06_start_it_14	offering a visit called The Hulk.
+s06_start_it_15	One recipe card makes that happen.
+s06_start_it_16	I open the story file, go to the very end, and paste it.
+s06_start_it_17	I don't read it.
+s06_start_it_18	I change three things on it, and they're on the page: the signal's name,
+s06_start_it_19	the key of the room the party arrives in,
+s06_start_it_20	and the name the crew sees on the tile.
+s06_start_it_21	I run lint again, and now it's clean.
 s07_play_it_0	I start the game with a server, a Helm and an Engineering console.
 s07_play_it_1	And there's my name, before I've flown anywhere.
 s07_play_it_2	I bring the ship in close,

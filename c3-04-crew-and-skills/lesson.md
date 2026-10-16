@@ -118,7 +118,7 @@ The condition has four parts.
 | `3` | The number to reach |
 
 Dr Hale has science 3, so she is offered this choice. Chief Okoro has science 1, and is
-not.
+not. You will see it on the bridge, on the Science console's handheld, in its Act app.
 
 You now have three kinds of choice. They differ in who is offered them.
 
@@ -174,8 +174,9 @@ The number after the skill is the target. This table shows how often a check wor
 So Chief Okoro wakes the core 6 times in 10. Dr Hale, with no engineering at all, manages
 it 2 times in 10.
 
-The page tells the crew what happened. After a try, everyone's page gains a line like
-this, and then the line of the room they landed in:
+The page tells the crew what happened. After a try, everyone's page (the Act app on each
+handheld in the room) gains a line like this, and then the line of the room they landed
+in:
 
 ```
 Chief Okoro - engineering 4, rolled 5: 9 vs 9, success.

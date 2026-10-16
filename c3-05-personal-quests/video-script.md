@@ -69,10 +69,13 @@ somewhere. ||"
 
 ### 2. A section for side stories
 
-**Screen:** `mission.amd`, the end of the file. Type the Side Stories heading and Six
-Names. Highlight `For: medical`. Lint: two warnings.
+**Screen:** The Science console's handheld again, its Tasks app: Six Names under Dr
+Hale's name, and under Party the ship's quests. Then `mission.amd`, the end of the file.
+Type the Side Stories heading and Six Names. Highlight `For: medical`. Lint: two warnings.
 
-**Say:** "A side story is a quest. || It has the fields you learned in Class 1, | and it
+**Say:** "This is the doctor's handheld, aboard the hulk, | with its Tasks app open. || The
+row under her name is a side story, | and the rows under Party are the ship's quests. |||
+A side story is a quest. || It has the fields you learned in Class 1, | and it
 lives in a section of its own, at the end of the file. ||| What's new is this line. | For,
 and then a job. || A quest in your Quests section belongs to the whole ship. | This one
 belongs to one person. ||| It starts at once, | it has an objective, | and it's done when
@@ -82,10 +85,13 @@ your roster, | or it can be a person: their key, or their name. ||"
 
 ### 3. Her own reading finishes it
 
-**Screen:** The Airlock. On the surgeon's choice, add a comma and `signal names_read`
-after `learn suits`. Lint: one warning left.
+**Screen:** The airlock on the Science console's handheld: Read the name tags on the
+suits. Then `mission.amd`, The Airlock. On the surgeon's choice, add a comma and
+`signal names_read` after `learn suits`. Lint: one warning left.
 
-**Say:** "So first, the signal. || I find the choice only the surgeon is offered, | and I
+**Say:** "So first, the signal. || On the doctor's handheld, in the airlock, | her reading
+is the button that should finish her story. ||| In the file I find that choice, the one
+only the surgeon is offered, | and I
 add a second outcome after the first, | with a comma between them. Learn the fact, comma,
 send the signal. || The name has to match the story's, letter for letter. || And don't
 lose that comma. | Without it, the signal is never sent. ||"
@@ -93,7 +99,8 @@ lose that comma. | Without it, the signal is never sent. ||"
 ### 4. Hand the stories to the visit
 
 **Screen:** `story.mast`, the card at the end. On the `boarding_visit` line, type the
-`stories=` part before the last bracket. Lint: clean.
+`stories=` part before the last bracket. Lint: clean. Then the doctor's handheld with its
+three apps.
 
 **Say:** "Then the handing out. || I open the story file | and find the card from Lecture
 2. || One line on it starts the visit, | and I add a few words to the end of that line.
@@ -104,20 +111,22 @@ down late. ||"
 
 ### 5. A second story, and where one leads
 
-**Screen:** Type A Cold Core, and add its signal to the engineer's choice. Then add
-`Then: signal names_known` to Six Names, and type Account for the Crew in the Quests
-section, with its heading and two icon bullets. Draw the chain with the cursor: the
-choice, the story, the ship's quest.
+**Screen:** The Engineering console's handheld, its Tasks app: A Cold Core under Chief
+Okoro's name. Type A Cold Core, and add its signal to the engineer's choice. Then add
+`Then: signal names_known` to Six Names. Helm's handheld, the Quest Log: Account for the
+Crew's page. Type Account for the Crew in the Quests section, with its heading and two
+icon bullets. Draw the chain with the cursor: the choice, the story, the ship's quest.
 
-**Say:** "The engineer gets one too, | finished by his own reading. ||| And a side story
+**Say:** "The engineer gets one too. || Here it is on his handheld, under his name, | and
+it's finished by his own reading. ||| And a side story
 can lead on, | the same way any quest does, with Then. || When the surgeon's story
 completes, it sends a second signal, | and a quest for the whole ship is waiting to hear
 it. ||| So read the chain from the top. | She reads the tags. | That finishes her story. |
 Her story finishes the ship's quest, | and the ship is paid. || A story can carry a reward
 of its own as well, | and it's paid to the ship that person came from. |||
-The ship's quest gets a page, | because the Quest Log shows all of it. || A heading,
-and two bullets with a small picture for a dot. || The word after icon names the
-picture. ||| The side story stays short. | Tasks only shows its heading. ||"
+The ship's quest gets a page, | because the Quest Log shows all of it. || This is the
+Quest Log on Helm's handheld. | A heading, and two bullets with a small picture for a dot.
+|| In the file, the word after icon names the picture. ||| The side story stays short. | Tasks only shows its heading. ||"
 
 ### 6. Four rules, and lint
 
@@ -132,17 +141,22 @@ tells you when two outcomes have run together. ||"
 
 ### 7. Play it
 
-**Screen:** `sbs run server,helm,engineering,science -m MyBoarding map=0`. Alongside.
-Both beam down. On Science: Back, the three apps, Tasks, Six Names. Back, Act. The
-surgeon reads the tags; show the ship's log on Helm. Aft; the engineer reads the record.
+**Screen:** `sbs run server,helm,engineering,science -m MyBoarding map=0`. Two plays,
+each with Helm left on the bridge to watch. First the surgeon goes alone: on Science,
+Back, the three apps, Tasks, Six Names. Back, Act. She reads the tags; the ship's log
+line on Helm. Then the engineer goes alone: the suit tags offered to him, marked as
+covering; he reads them; Account for the Crew still Active in Helm's Quest Log. Aft; he
+reads the record; Helm's log line.
 
-**Say:** "Both aboard. On the doctor's handheld I go back one step, | and there are three
-apps now, | and the third one is Tasks. || There's her story, under her name. ||| She
-reads the tags, | and the bridge is told twice: | her story is complete, and so is the
-ship's quest. || Then the chief reads his record, | and his story completes too. ||| Now
-think about a short crew. || If the doctor stays on the ship, | another console can still
-take her reading, | but her story was never handed out, | so the ship's quest stays open.
-|| The next lecture shows you the way round that. ||"
+**Say:** "I play it twice, and each time Helm stays on the bridge to watch. || First the
+doctor goes across. | On her handheld I go back one step, | and there are three apps now,
+| and the third one is Tasks. || There's her story, under her name. ||| She reads the
+tags, | and the bridge is told twice: | her story is complete, and so is the ship's
+quest. ||| Then the chief goes across alone, | and that's a short crew. || He's offered
+her reading, marked as covering, | and the party learns the fact. || But her story was
+never handed out, | so the ship's quest stays open. ||| Then he reads his own record,
+and his story completes. || The next lecture shows you the way round that open quest.
+||"
 
 ### 8. Your turn
 

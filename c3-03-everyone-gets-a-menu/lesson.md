@@ -58,7 +58,9 @@ The new choice has three parts.
 | `; learn suits` | When it is taken, the party learns a fact named `suits` |
 
 The job word is the one you wrote on `Roles:` in your crew roster. Dr Hale has
-`Roles: medical`, so this choice is hers. Chief Okoro is not offered it.
+`Roles: medical`, so this choice is hers. Chief Okoro is not offered it. In the game, it
+is a fourth button on the Science console's handheld, in the airlock, and the
+Engineering console's handheld has three.
 
 The fact name is yours to invent. One word is best.
 
@@ -151,7 +153,7 @@ walked through it.
 |---|---|---|
 | `; lern suits` | Offers the reading, and teaches nothing. The log never opens | `unknown-outcome-verb` |
 | `; learn` with no name after it | The same | `learn-nothing` |
-| `if learned => 2` (the sign backwards) | Offers the choice to nobody | `unreadable-guard` |
+| `if learned => 2` (the sign backwards) | Offers the choice to nobody | `unreadable-guard`, and `guard-learned-unknown` on the same line |
 | `if medical, learn suits` (a comma where the `;` goes) | Offers the choice to nobody | `unreadable-guard` |
 | `; learn suits if medical` (the `if` after the `;`) | Offers the choice to everybody | `guard-after-outcome` |
 | `if medical and learned >= 1` | Offers the choice to nobody | `guard-joined` |
@@ -192,7 +194,7 @@ sbs run server,helm,engineering,science -m MyBoarding map=0
 
 The party moves together. When anyone picks a way out, everyone goes.
 
-**With Engineering alone aboard**, leave the Science console on the bridge. You are Chief
+**With Engineering alone aboard**, leave the Science console at its own station, aboard the ship. You are Chief
 Okoro, and there is no surgeon in the party. The game hands her reading to you, marked so
 you know whose it is:
 

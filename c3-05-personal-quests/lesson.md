@@ -55,7 +55,8 @@ Six suits on their hooks, and nobody in them. Somebody should read the tags.
 
 A side story is a quest. It has the fields you learned in Class 1. What is new is who it
 belongs to. A quest in your Quests section belongs to the whole ship. A side story belongs
-to one person.
+to one person. You will see it on that person's handheld, aboard the hulk, in the Tasks
+app (Step 8).
 
 | Line | What it means |
 |---|---|
@@ -174,8 +175,8 @@ Somebody crewed that ship. Command wants names.
 Bring the names home, and DS 1 can tell their families something.
 ```
 
-The ship's quest is read in the Quest Log, so its description is a page (Class 1, Lecture
-8): a plain heading, two bullets and a closing paragraph. One thing is new. A bullet
+The ship's quest is read in the Quest Log (a bridge console's handheld, then Quests), so
+its description is a page (Class 1, Lecture 8): a plain heading, two bullets and a closing paragraph. One thing is new. A bullet
 that starts `- ![](icon://person)` uses a small picture for its dot. The word after
 `icon://` names a picture from the game's icon sheet: `person`, `tablet`, `hourglass`,
 `flag` and many more, listed on the "Icons by name" page of the library documentation.

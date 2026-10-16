@@ -7,7 +7,7 @@ Five things to find out. A hatch that opens when the party knows three of them. 
 endings, and each ending hands the ship a different quest. Two of your crew go aboard with
 a story of their own.
 
-*[Screenshot to add: three handhelds in the captain's cabin, with the two endings as buttons.]*
+*[Screenshot to add: two handhelds in the captain's cabin, with the two endings as buttons.]*
 
 This lecture teaches almost nothing new. It gives you a way to plan a scene, and five
 checks to make with a pencil. You need the pencil because lint checks your spelling. It
@@ -351,7 +351,7 @@ The sleepers are safe for as long as their one cell lasts. Nobody aboard knows h
 `Starts when: revealed` keeps each quest hidden until something starts it.
 
 Each description is the first thing the crew reads after the choice, so each is a short
-page. `![](icon://hourglass)` at the start of a line is the icon from Lecture 5 without
+page. They read it in the Quest Log, on a bridge console's handheld (Quests). `![](icon://hourglass)` at the start of a line is the icon from Lecture 5 without
 the bullet: one line tall, with the words beside it. The DS 1 line is a ship lead line, as
 on Close Inspection.
 

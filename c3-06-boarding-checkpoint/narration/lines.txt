@@ -1,6 +1,6 @@
 s01_cold_open_0	Twelve people asleep behind frosted glass, one switch,
 s01_cold_open_1	and a note that says don't.
-s01_cold_open_2	Three of my crew are standing in front of it,
+s01_cold_open_2	Two of my crew are standing in front of it,
 s01_cold_open_3	and whichever button they press, the ship gets a different quest.
 s01_cold_open_4	This is the checkpoint for the first half of the class.
 s01_cold_open_5	You'll plan one away scene on paper, type it, check it, and play it.
@@ -33,28 +33,32 @@ s04_the_facts_table_6	A reading for a skill isn't,
 s04_the_facts_table_7	and neither is anything behind a roll.
 s04_the_facts_table_8	I have three sure facts.
 s04_the_facts_table_9	So my door may ask for three, and no more.
-s05_type_it_in_layers_0	Now I type, in layers, and I run lint after each one. Places first,
-s05_type_it_in_layers_1	and I've torn out my practice rooms to make space.
-s05_type_it_in_layers_2	Lint warns about two signals,
-s05_type_it_in_layers_3	and it's right, because the rooms that sent them are gone. Then the readings. Then the check.
-s05_type_it_in_layers_4	Then the door, with a line that tells an early party why it's shut. Then the endings.
-s05_type_it_in_layers_5	Each ending is a quest the ship doesn't have yet,
-s05_type_it_in_layers_6	a choice that starts it, with the new word accepts,
-s05_type_it_in_layers_7	and a last room with one way out.
-s05_type_it_in_layers_8	The crew reads an ending's quest the moment they choose,
-s05_type_it_in_layers_9	so each one gets a short page.
-s05_type_it_in_layers_10	An hourglass on one, the station drawn beside the other.
-s05_type_it_in_layers_11	Then the two stories.
-s05_type_it_in_layers_12	And lint is clean.
-s06_a_quest_any_party_can_finish_0	The ship's quest gets a new page too:
-s06_a_quest_any_party_can_finish_1	a table of what the station knows before anybody boards.
-s06_a_quest_any_party_can_finish_2	And one change to how it ends.
-s06_a_quest_any_party_can_finish_3	Last time, it waited for the surgeon's story to finish.
-s06_a_quest_any_party_can_finish_4	But a story is handed to nobody when its person stays home,
-s06_a_quest_any_party_can_finish_5	so a short crew could never complete it.
-s06_a_quest_any_party_can_finish_6	Now it waits for the reading's own signal.
-s06_a_quest_any_party_can_finish_7	The surgeon's press finishes her story and the ship's quest together,
-s06_a_quest_any_party_can_finish_8	and when she's not there, the covered reading still finishes the ship's.
+s05_type_it_in_layers_0	This is where it's going:
+s05_type_it_in_layers_1	the spine on the chief's handheld, with the captain's hatch open at last.
+s05_type_it_in_layers_2	Now I type, in layers, and I run lint after each one. Places first,
+s05_type_it_in_layers_3	and I've torn out my practice rooms to make space.
+s05_type_it_in_layers_4	Lint warns about two signals,
+s05_type_it_in_layers_5	and it's right, because the rooms that sent them are gone. Then the readings. Then the check.
+s05_type_it_in_layers_6	Then the door, with a line that tells an early party why it's shut. Then the endings.
+s05_type_it_in_layers_7	Each ending is a quest the ship doesn't have yet,
+s05_type_it_in_layers_8	a choice that starts it, with the new word accepts,
+s05_type_it_in_layers_9	and a last room with one way out.
+s05_type_it_in_layers_10	The crew reads an ending's quest the moment they choose,
+s05_type_it_in_layers_11	so each one gets a short page.
+s05_type_it_in_layers_12	Here they are in the Quest Log:
+s05_type_it_in_layers_13	an hourglass on one, the station drawn beside the other.
+s05_type_it_in_layers_14	Then the two stories.
+s05_type_it_in_layers_15	And lint is clean.
+s06_a_quest_any_party_can_finish_0	The ship's quest gets a new page too.
+s06_a_quest_any_party_can_finish_1	Here it is in the Quest Log on Helm:
+s06_a_quest_any_party_can_finish_2	a table of what the station knows before anybody boards.
+s06_a_quest_any_party_can_finish_3	And one change to how it ends.
+s06_a_quest_any_party_can_finish_4	Last time, it waited for the surgeon's story to finish.
+s06_a_quest_any_party_can_finish_5	But a story is handed to nobody when its person stays home,
+s06_a_quest_any_party_can_finish_6	so a short crew could never complete it.
+s06_a_quest_any_party_can_finish_7	Now it waits for the reading's own signal.
+s06_a_quest_any_party_can_finish_8	The surgeon's press finishes her story and the ship's quest together,
+s06_a_quest_any_party_can_finish_9	and when she's not there, the covered reading still finishes the ship's.
 s07_five_checks_with_a_pencil_0	Lint has passed, and lint checks your spelling.
 s07_five_checks_with_a_pencil_1	It doesn't walk through your rooms.
 s07_five_checks_with_a_pencil_2	So I do, with a pencil.
@@ -72,12 +76,14 @@ s08_play_it_three_times_0	Then I play it three times, with a watch beside me.
 s08_play_it_three_times_1	Alone, I'm the chief,
 s08_play_it_three_times_2	and two readings come to me marked as covering.
 s08_play_it_three_times_3	Sixteen presses, and I'm home with an ending.
-s08_play_it_three_times_4	With everyone aboard, nothing is covered,
-s08_play_it_three_times_5	and reading it all takes twenty.
-s08_play_it_three_times_6	And once, I walk away.
-s08_play_it_three_times_7	One press in the airlock,
-s08_play_it_three_times_8	and the visit is over for everybody, with nothing finished.
-s08_play_it_three_times_9	That's why the way home is where it is.
+s08_play_it_three_times_4	With the doctor aboard too, the menus differ.
+s08_play_it_three_times_5	In the hold, only she is offered the scanner's sweep.
+s08_play_it_three_times_6	With all three aboard, nothing is covered,
+s08_play_it_three_times_7	and reading it all takes twenty.
+s08_play_it_three_times_8	And once, I walk away.
+s08_play_it_three_times_9	One press in the airlock,
+s08_play_it_three_times_10	and the visit is over for everybody, with nothing finished.
+s08_play_it_three_times_11	That's why the way home is where it is.
 s09_your_turn_0	Now write your own.
 s09_your_turn_1	Three sentences, a beat sheet, a drawing, a facts table,
 s09_your_turn_2	and then the typing.

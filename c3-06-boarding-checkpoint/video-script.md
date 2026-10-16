@@ -69,10 +69,11 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 
 ### 1. Cold open
 
-**Screen:** Three handhelds in the captain's cabin, with the two endings as buttons.
+**Screen:** Two handhelds in the captain's cabin, Science and Engineering, with the two
+endings as buttons.
 
 **Say:** "Twelve people asleep behind frosted glass, one switch, | and a note that says
-don't. ||| Three of my crew are standing in front of it, | and whichever button they
+don't. ||| Two of my crew are standing in front of it, | and whichever button they
 press, the ship gets a different quest. || This is the checkpoint for the first half of
 the class. | You'll plan one away scene on paper, type it, check it, and play it. ||"
 
@@ -110,27 +111,33 @@ have three sure facts. | So my door may ask for three, and no more. ||"
 
 ### 5. Type it in layers
 
-**Screen:** `mission.amd`. The practice rooms deleted; five places typed; lint, two
-warnings. Then in quick cuts: the readings, the check, the door, the endings, the
-stories; lint after each. End on clean.
+**Screen:** The spine on the Engineering console's handheld, the captain's hatch on
+offer. Then `mission.amd`. The practice rooms deleted; five places typed; lint, two
+warnings. Then in quick cuts: the readings, the check, the door, the endings (with the
+two ending quests in the Quest Log, Stand By the Sleepers on Science's handheld and
+Carry Word Home on Helm's, before their lines in the file), the stories; lint after each.
+End on clean.
 
-**Say:** "Now I type, in layers, and I run lint after each one. Places first, | and I've
+**Say:** "This is where it's going: | the spine on the chief's handheld, with the
+captain's hatch open at last. ||| Now I type, in layers, and I run lint after each one.
+Places first, | and I've
 torn out my practice rooms to make space. || Lint warns about two signals, | and it's
 right, because the rooms that sent them are gone. Then the readings. Then the check. |
 Then the door, with a line that tells an early party why it's shut. Then the endings. |
 Each ending is a quest the ship doesn't have yet, | a choice that starts it, with the new
 word accepts, | and a last room with one way out. || The crew reads an ending's quest the
-moment they choose, | so each one gets a short page. | An hourglass on one, the station
-drawn beside the other. ||| Then the two stories. | And lint is
+moment they choose, | so each one gets a short page. || Here they are in the Quest Log: |
+an hourglass on one, the station drawn beside the other. ||| Then the two stories. | And lint is
 clean. ||"
 
 ### 6. A quest any party can finish
 
-**Screen:** Account for the Crew: its new description, with the three-row table. Then
-its `Done when:` line. Then the page's table of the two ways to wire it.
+**Screen:** Helm's handheld, the Quest Log: Account for the Crew's new page, with the
+three-row table. Then the same record in `mission.amd`, then its `Done when:` line. Then
+the page's table of the two ways to wire it.
 
-**Say:** "The ship's quest gets a new page too: | a table of what the station knows before
-anybody boards. ||| And one change to how it ends. || Last time, it waited for the surgeon's story
+**Say:** "The ship's quest gets a new page too. || Here it is in the Quest Log on Helm: | a
+table of what the station knows before anybody boards. ||| And one change to how it ends. || Last time, it waited for the surgeon's story
 to finish. | But a story is handed to nobody when its person stays home, | so a short crew
 could never complete it. ||| Now it waits for the reading's own signal. || The surgeon's
 press finishes her story and the ship's quest together, | and when she's not there, the
@@ -152,15 +159,17 @@ starts hidden. ||"
 ### 8. Play it three times
 
 **Screen:** `sbs run server,helm,engineering,science -m MyBoarding map=0`. Engineering
-alone aboard: a covering button, the hatch, an ending. Cut to three aboard in the hold:
-three different menus. Cut to the cabin. Cut to the airlock: one press of Return to the
-ship, and the visit is gone.
+alone aboard: a covering button, the hatch, an ending. Cut to two aboard in the hold, the
+surgeon and the chief: two different menus. Cut to the cabin. Cut to the airlock: one
+press of Return to the ship, and the handheld has no Boarding Party any more.
 
 **Say:** "Then I play it three times, with a watch beside me. || Alone, I'm the chief, |
 and two readings come to me marked as covering. || Sixteen presses, and I'm home with an
-ending. ||| With everyone aboard, nothing is covered, | and reading it all takes twenty.
-||| And once, I walk away. | One press in the airlock, | and the visit is over for
-everybody, with nothing finished. || That's why the way home is where it is. ||"
+ending. ||| With the doctor aboard too, the menus differ. | In the hold, only she is
+offered the scanner's sweep. || With all three aboard, nothing is covered, | and reading
+it all takes twenty. ||| And once, I walk away. | One press in the airlock, | and the
+visit is over for everybody, with nothing finished. || That's why the way home is where
+it is. ||"
 
 ### 9. Your turn
 
