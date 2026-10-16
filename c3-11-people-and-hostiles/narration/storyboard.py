@@ -103,10 +103,8 @@ def _lint(state):
     return ("session", [_LINT], {"state": state})
 STILLS = {
     "t_final": _lint("final"),
-    # DEFERRED: the released library's lint printed `clean` here on 2026-10-15. The warning
-    # person-talks-but-attacks is in sbs_utils 4beddf8c and not yet in the release the stand-in
-    # fetches. Retake it (as _lint("b_nocalm")) once that is released.
-    "t_nocalm": ("derived", "deferred until the lint release: sbs lint MyAway on b_nocalm, the warning person-talks-but-attacks on Pim"),
+    # person-talks-but-attacks: sbs_utils 4beddf8c, released 2026-10-15.
+    "t_nocalm": _lint("b_nocalm"),
     "t_water": _lint("b_water"),
     "t_signal": _lint("b_signal"),
     "e_camp": ("vscode", "h1", 22, "mid", {"side": False, "file": GT}),   # lines 8 to 36
