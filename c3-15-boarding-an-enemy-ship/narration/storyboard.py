@@ -31,10 +31,18 @@ line and two sentences ("A pirate raider", "A raider is worth more"), and the co
 Mate Oduya (it said the game puts her crew aboard). Mock, --use-working-tree, 2026-10-16:
 no carrier role, bay_count 0; her deck builds (52 x 52 tiles, planned from the grid text);
 the strongbox in the WEST brig (17, 23), Oduya in the EAST brig (35, 23), the kit on the
-arrival (26, 33), Brakk in the boat bay (25, 41). Brakk (Notice 4, she must see you) only
-notices the four cells in front of the bay's door (26..28, 40); she can be shot only from
-(28, 39) (5 cells) and (29, 39) (6), the first cells of the hallway on the right of the bay
-from which she is in sight. Those are reachable from the arrival unseen.
+arrival (26, 33), Brakk in the boat bay (25, 41).
+
+2026-10-16, THE GUNNER (owner's decision): once the Black Gull strikes her crew stand down,
+so Brakk hands the cell over in a scene and nobody shoots her. She moved from Hostiles to
+People: `Calm: yes`, `Face: female`, `Talk scene: brakk`, no HP/Damage/Notice/Stun/Drops.
+Her two scenes (`brakk`: Ask her for the beacon cell `; give power_cell`, Leave her be;
+`brakk_cell`) sit after Oduya's in the Lecture 15 scenes block, so _SCENES carries them.
+Oduya's `The Gunner` line now says the crew put their weapons down. The record keeps the
+same line count, so every line number below (e_scenes 783 to 803 among them) is unchanged
+and no editor still needed taking again. Mock, --use-working-tree: lint clean, headless
+PASS, and Brakk stands calm in the boat bay at (25, 41), the cell she had as a hostile.
+The scene itself is not played anywhere yet: the sitting below is its first play.
 
 GAME STILLS. Taken 2026-10-16 on the BRIGANTINE (server, Helm Lt Dana Ross, Comms Ens Tam
 Vale): what they showed is in the captions, except where the hull or a library fix changes
@@ -46,9 +54,11 @@ fighters), game_l15_deck_arrive, game_l15_deck_brig, game_l15_strongbox and game
 library defects being fixed), game_l15_log_prize (the brigantine sentence). game_l15_bp_gull
 names no hull and may be kept (no beat uses it). SITTING 4 (2026-10-16): all taken again on
 the strongbow. Once she has struck her crew stand down: Brakk never attacked, so
-game_l15_medkit was never taken and its beat (and step 7 and the medkit part of step 8
-below) is dropped. game_l15_brakk_fire shows Vale armed FULL with a calm Brakk in sight.
-Generated `Pirate crew` figures stand calm in the Plunder Hold and Crew Berths.
+game_l15_medkit was never taken and its beat is dropped. Generated `Pirate crew` figures
+stand calm in the Plunder Hold and Crew Berths. Sitting 4's game_l15_brakk_fire (Vale armed
+FULL) is no longer used: the gunner is talked to now. SITTING 5 TO TAKE: only the two
+gunner stills, game_l15_brakk_talk and game_l15_brakk_cell (step 7 below); the others
+from sitting 4 stand, since nothing they show changed. Add their marks after.
 State "final": `python game.py c3-15-boarding-an-enemy-ship start --consoles server,helm,comms`.
 Nobody beams down at the relay. ENGINE 1.3.15 ON COMMS: select only the Black Gull, never press
 Cancel, and DO NOT TOUCH COMMS from step 2 until she has struck (re-clicking her to refresh the
@@ -66,14 +76,17 @@ menu took the 2D map away). About fifteen minutes:
      game_l15_deck_arrive (Helm: the deck, nobody else in view, the kit a step away).
   6. Vale: take the boarding kit. Ross: Look, `? Captain's strongbox` (it walks him to the
      west brig): game_l15_deck_brig. Vale: Look, `? Mate Oduya` (east brig): game_l15_oduya.
-  7. Ross: walk to the cells in front of the boat bay's door (26..28, 40): Brakk hits him,
-     `Hit by Gunner Brakk - you are DOWN.` (the medkit still needs him down).
-  8. Vale: from the arrival walk aft down the hallway on the RIGHT of the boat bay, one cell
-     at a time; stop where Brakk comes into sight (28, 39). Fire, FULL, Arm:
-     game_l15_brakk_fire (armed FULL, Brakk in sight through the door). Click her: down for
-     good, a power cell where she fell. Vale beside Ross: Pack, `Use medkit on Lt Dana Ross`:
-     game_l15_medkit. Press it: back on his feet.
-  9. Ross: Look, Use Captain's strongbox: game_l15_strongbox. Take her as a prize. Both are
+  7. Vale, SITTING 5 (steps 1 to 6 first, to get aboard; their stills need not be taken
+     again): Look, `? Gunner Brakk` (it walks her aft to the boat bay, Brakk at about
+     (25, 41)), or click Brakk on the map. Her scene opens on Act: game_l15_brakk_talk (Brakk
+     on the map beside Vale; her face; 'The captain struck, so the Gull struck. I do not
+     fight for a ship that has already lost.'; Ask her for the beacon cell, Leave her be).
+     Press Ask her for the beacon cell: The Cell, 'She unslings the cell...'. Press Leave
+     her be. Open Pack: game_l15_brakk_cell (a power cell in Vale's pack; Brakk still standing
+     in the bay). If no cell is there, or her scene does not open, stop: the page is wrong.
+     Optional, not a still: Fire, FULL, Arm, click Brakk: nothing should happen (she is
+     calm). Note what the handheld says.
+  8. Ross: Look, Use Captain's strongbox: game_l15_strongbox. Take her as a prize. Both are
      home. Helm's Quest Log, Take the Black Gull: game_l15_log_prize (Done, 200 credits).
 """
 import os as _os
@@ -107,8 +120,8 @@ _SCENES = _cut(_A, "\n\n// ---- Lecture 15: aboard the Black Gull. The three", "
 _SIDES = _cut(_A, "\n\n// ---- Sides")
 _QUESTS = _cut(_A, "// ---- Lecture 15. `reach gull", "\n// ---- Side stories")
 _PROPS = _cut(_A, "// ---- Lecture 15: aboard the Black Gull. `Area: deck`", "\n// ---- People")
-_ODUYA = _cut(_A, "// ---- Lecture 15. Aboard the Black Gull, in her brig", "\n// ---- Hostiles")
-_BRAKK = _cut(_A, "// ---- Lecture 15. The captain struck.", "\n// ---- Scenes")
+_ODUYA = _cut(_A, "// ---- Lecture 15. Aboard the Black Gull, in her brig", "// ---- Lecture 15. The gunner, in the boat bay")
+_BRAKK = _cut(_A, "// ---- Lecture 15. The gunner, in the boat bay", "\n// ---- Hostiles")
 _SHIP = _cut(_M, "    # THE BLACK GULL.", "    await task_schedule(spawn_players)")
 _CARD = _cut(_M, "\n\n#\n# Come Back to Kesh Relay")
 _GUARD = "    ->END if party_ship is None\n"
@@ -164,7 +177,8 @@ STILLS = {
     "game_l15_deck_arrive": ("game", "Helm's console aboard the Black Gull, just beamed across: the generated deck on the map, nobody else in view, the boarding kit a step from the arrival, the xESS home beside it"),
     "game_l15_deck_brig": ("game", "Helm's console aboard her, Lt Ross in the west brig: the strongbox in the brig on the map, the bar naming the room (Brig), Look's Use Captain's strongbox and the box's description"),
     "game_l15_oduya": ("game", "Comms' xESS aboard her, Act, talking to Mate Oduya: 'Tender Halcyon, out of Kesh...', and Ask what the tender was carrying, Ask who is still armed, Tell her she is going home"),
-    "game_l15_brakk_fire": ("game", "Comms' xESS aboard her, Ens Vale three cells from Gunner Brakk in the boat bay: FIRE armed, FULL, Brakk in sight"),
+    "game_l15_brakk_talk": ("game", "Comms' xESS aboard her, Act, Ens Vale beside Gunner Brakk in the boat bay (on the map): her face and her line 'The captain struck, so the Gull struck...', and the answers Ask her for the beacon cell, Leave her be"),
+    "game_l15_brakk_cell": ("game", "Comms' xESS aboard her, Pack, after Ask her for the beacon cell: the power cell in Ens Vale's pack (Brakk still standing in the boat bay on the map)"),
     "game_l15_strongbox": ("game", "Helm's xESS, Act, the strongbox: its line, and Take her as a prize, Open her sea cocks, Go back to the ship, Leave it for now"),
     "game_l15_log_prize": ("game", "Helm's ePADD Quest Log after Take her as a prize, both crew home: Take the Black Gull Done, Reward 200 credits; Come Back to Kesh Relay Active"),
     # drawn
@@ -187,7 +201,7 @@ STILLS = {
     "card_warn": ("card", "points", {"kicker": "Before your crew finds them", "items": [
         "A shot never removes a prop: the strongbox is safe",
         "Take as prize, on Comms: the quest pays, and nobody goes aboard",
-        "What the gunner drops is lost if nobody picks it up",
+        "Somebody calm cannot be shot: the gunner's cell is her answer",
         "From her deck, Beam still offers To Kesh Relay"]}),
     "card_exercise": ("card", "list", {"heading": "Exercise", "kicker": "Your turn"}),
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 16", "sub": "A long boarding mission"}),
@@ -210,9 +224,8 @@ _LC_PIC = ("rect", 0.385, 0.17, 0.74, 0.305)        # ... her picture and its ca
 _DB_BOX = ("rect", 0.225, 0.63, 0.28, 0.695)        # game_l15_deck_brig: the strongbox in the brig
 _DB_DECK = ("rect", 0.035, 0.105, 0.665, 0.995)       # ... the whole deck
 _LP_DONE = ("rect", 0.385, 0.075, 0.575, 0.145)     # game_l15_log_prize: Done, 200 credits
-_BF_BRAKK = ("rect", 0.185, 0.52, 0.245, 0.64)      # game_l15_brakk_fire: Gunner Brakk, in the boat bay
-_BF_MAP = ("rect", 0.185, 0.49, 0.36, 0.64)         # ... Ens Vale and Brakk, three cells apart
-_BF_ARMED = ("rect", 0.67, 0.21, 0.99, 0.495)       # ... ARMED - FULL, > FULL
+# game_l15_brakk_talk and game_l15_brakk_cell: not taken yet, so no marks. Measure them
+# on the new stills (her line and answer; the power cell row in the Pack) and add them.
 
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
@@ -282,9 +295,9 @@ BOARD = {
         {"from": 0, "still": "game_l15_comms_gull", "marks": [_CG_HER]},
         {"from": 1, "still": "game_l15_comms_struck", "marks": [_CS_STRIP]},
         {"from": 2, "still": "game_l15_comms_hove", "marks": [_CH_SAYS]},
-        # the gunner (sitting 4: she stands down with her crew; no medkit beat)
-        {"from": 3, "still": "game_l15_brakk_fire", "marks": [_BF_BRAKK]},
-        {"from": 8, "still": "game_l15_brakk_fire", "marks": [_BF_ARMED, _BF_MAP]},
+        # the gunner: she stands down with her crew, and her scene hands the cell over
+        {"from": 3, "still": "game_l15_brakk_talk"},
+        {"from": 9, "still": "game_l15_brakk_cell"},
         {"from": 10, "still": "game_l15_strongbox", "marks": [_SB_THREE]},
         {"from": 11, "still": "card_endings", "marks": [("part", "r1")]},
         {"from": 12, "still": "game_l15_log_prize", "marks": [_LP_DONE]},

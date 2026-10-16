@@ -351,109 +351,109 @@ and the gunner with them.
 She still carries the relay's cell.
 
 89
-00:06:17,330 --> 00:06:19,939
-Fire, full, arm, and click her,
+00:06:17,330 --> 00:06:20,809
+Walk up to her and ask for it,
 
 90
-00:06:20,389 --> 00:06:22,128
-and she drops it.
+00:06:21,259 --> 00:06:24,737
+and she hands it over, no shot fired.
 
 91
-00:06:23,928 --> 00:06:26,972
+00:06:26,537 --> 00:06:29,580
 The strongbox has three answers that matter.
 
 92
-00:06:27,872 --> 00:06:30,915
+00:06:30,480 --> 00:06:33,524
 Take her, and she joins your side,
 
 93
-00:06:31,365 --> 00:06:33,104
+00:06:33,974 --> 00:06:35,713
 and the quest pays.
 
 94
-00:06:34,004 --> 00:06:36,178
+00:06:36,613 --> 00:06:38,787
 Scuttle her, and she's gone.
 
 95
-00:06:37,078 --> 00:06:40,122
+00:06:39,687 --> 00:06:42,730
 Leave her, and she runs for home.
 
 96
-00:06:41,922 --> 00:06:45,835
+00:06:44,530 --> 00:06:48,443
 Every one of them brings the party home first.
 
 97
-00:06:46,735 --> 00:06:48,474
+00:06:49,343 --> 00:06:51,083
 And after every one,
 
 98
-00:06:48,924 --> 00:06:52,837
+00:06:51,533 --> 00:06:55,446
 the relay opens again when the ship comes back.
 
 99
-00:06:54,037 --> 00:06:57,080
+00:06:56,646 --> 00:06:59,689
 Lint says clean on your finished mission.
 
 100
-00:06:57,980 --> 00:07:01,459
+00:07:00,589 --> 00:07:04,067
 What's left to know isn't in your file.
 
 101
-00:07:03,259 --> 00:07:05,867
+00:07:05,867 --> 00:07:08,476
 A shot never removes a prop.
 
 102
-00:07:06,767 --> 00:07:10,246
+00:07:09,376 --> 00:07:12,854
 The strongbox is safe from a full shot,
 
 103
-00:07:10,696 --> 00:07:14,609
+00:07:13,304 --> 00:07:17,217
 and so is anything else that holds an ending.
 
 104
-00:07:16,409 --> 00:07:19,887
+00:07:19,017 --> 00:07:22,496
 Comms has its own button, take as prize.
 
 105
-00:07:20,337 --> 00:07:23,815
+00:07:22,946 --> 00:07:26,424
 It finishes the same quest as your strongbox,
 
 106
-00:07:24,265 --> 00:07:28,178
+00:07:26,874 --> 00:07:30,787
 but nobody goes aboard to meet what you wrote.
 
 107
-00:07:29,978 --> 00:07:34,761
-What the gunner drops is lost if nobody picks it up.
+00:07:32,587 --> 00:07:38,674
+Somebody calm can't be shot, so the gunner's cell comes only from her answer.
 
 108
-00:07:36,561 --> 00:07:40,909
+00:07:40,474 --> 00:07:44,822
 And from her deck, the transporter still reaches your relay.
 
 109
-00:07:41,809 --> 00:07:44,852
+00:07:45,722 --> 00:07:48,765
 Know these before your crew finds them.
 
 110
-00:07:46,052 --> 00:07:47,791
+00:07:49,965 --> 00:07:51,704
 Now it's your turn.
 
 111
-00:07:48,691 --> 00:07:50,430
+00:07:52,604 --> 00:07:54,343
 Play all three endings.
 
 112
-00:07:51,330 --> 00:07:55,678
+00:07:55,243 --> 00:07:59,591
 Move the strongbox into the cabin, and walk to it.
 
 113
-00:07:56,578 --> 00:08:01,361
+00:08:00,491 --> 00:08:05,274
 Swap her hull for a freighter, and see where everything goes.
 
 114
-00:08:03,161 --> 00:08:06,639
+00:08:07,074 --> 00:08:10,552
 Then light the beacon with the gunner's cell.
 
 115
-00:08:07,539 --> 00:08:10,583
+00:08:11,452 --> 00:08:14,496
 Next time, the mission is your own.

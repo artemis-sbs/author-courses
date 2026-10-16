@@ -512,6 +512,21 @@ Scan: One human. Nine days of ship's biscuit, and not hurt.
 ---
 The mate of the convoy tender, sitting on the brig's one bench with her arms folded.
 
+// ---- Lecture 15. The gunner, in the boat bay. Her captain struck, and she stood down
+// with the rest of the crew, so she is calm and nobody can shoot her. One answer in her
+// scene puts the relay's cell in the pack of whoever asks for it.
+### [Gunner Brakk](brakk)
+---
+Area: deck
+Mark: bay
+Sprite: fig:hunter_f
+Face: female
+Calm: yes
+Talk scene: brakk
+Scan: One human. Her cutlass is on the deck at her feet. One power cell, slung on her back.
+---
+The Gull's gunner, in the boat bay, with her cutlass at her feet and the tender's beacon cell on her back.
+
 
 // ---- Hostiles: someone who walks a `Patrol:` (cells, `x y; x y`), notices a crew member
 // within `Notice:` cells, and attacks. `HP:` is how much it takes; `Stun:` how many
@@ -550,21 +565,6 @@ Drops: tablet
 Scan: Silicate shell, about the size of a dog. It has something flat in its jaws.
 ---
 Something low and glassy that has had the walkway to itself for nine days.
-
-// ---- Lecture 15. The captain struck. Not everybody aboard agreed.
-### [Gunner Brakk](brakk)
----
-Area: deck
-Mark: bay
-Sprite: fig:hunter_f
-HP: 2
-Damage: 1
-Notice: 4
-Stun: 10
-Drops: power_cell
-Scan: One human, armed. Not on the list of those who struck. One power cell, slung on her back.
----
-The Gull's gunner, in the boat bay, with a cutlass in her hand and the tender's beacon cell on her back.
 
 
 // ---- Scenes: what is said, and what can be answered. Each `%` line is something the
@@ -804,10 +804,23 @@ The Gull's gunner, in the boat bay, with a cutlass in her hand and the tender's 
 - [Tell her she is going home]()
 
 ### [The Gunner](oduya_brakk)
-% "Brakk. The captain struck and the gunner did not. She is in the boat bay, aft, with a cutlass, and our cell slung on her back."
+% "Nobody, now. The captain struck, and the crew put their weapons down with him. Brakk too, the gunner. She is in the boat bay, aft, with our cell slung on her back."
 
 - [Ask her something else](oduya)
 - [Tell her she is going home]()
+
+// The gunner. `give power_cell` puts one in the pack of whoever answered: the cell is
+// handed over, and nobody fires a shot.
+### [Gunner Brakk](brakk)
+% "The captain struck, so the Gull struck. I do not fight for a ship that has already lost." Her cutlass lies on the deck at her feet.
+
+- [Ask her for the beacon cell](brakk_cell) ; give power_cell
+- [Leave her be]()
+
+### [The Cell](brakk_cell)
+% She unslings the cell and holds it out by the strap. "Take it, then. It never fitted anything aboard this ship."
+
+- [Leave her be]()
 
 
 // ---- Sides. The crew's own side, `tsn`, is made in story.mast. This is the other one.

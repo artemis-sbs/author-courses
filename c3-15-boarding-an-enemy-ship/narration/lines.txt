@@ -86,8 +86,8 @@ s07_three_endings_4	Once the ship has struck,
 s07_three_endings_5	her crew stand down,
 s07_three_endings_6	and the gunner with them.
 s07_three_endings_7	She still carries the relay's cell.
-s07_three_endings_8	Fire, full, arm, and click her,
-s07_three_endings_9	and she drops it.
+s07_three_endings_8	Walk up to her and ask for it,
+s07_three_endings_9	and she hands it over, no shot fired.
 s07_three_endings_10	The strongbox has three answers that matter.
 s07_three_endings_11	Take her, and she joins your side,
 s07_three_endings_12	and the quest pays.
@@ -104,7 +104,7 @@ s08_what_to_warn_your_crew_about_4	and so is anything else that holds an ending.
 s08_what_to_warn_your_crew_about_5	Comms has its own button, take as prize.
 s08_what_to_warn_your_crew_about_6	It finishes the same quest as your strongbox,
 s08_what_to_warn_your_crew_about_7	but nobody goes aboard to meet what you wrote.
-s08_what_to_warn_your_crew_about_8	What the gunner drops is lost if nobody picks it up.
+s08_what_to_warn_your_crew_about_8	Somebody calm can't be shot, so the gunner's cell comes only from her answer.
 s08_what_to_warn_your_crew_about_9	And from her deck, the transporter still reaches your relay.
 s08_what_to_warn_your_crew_about_10	Know these before your crew finds them.
 s09_your_turn_0	Now it's your turn.

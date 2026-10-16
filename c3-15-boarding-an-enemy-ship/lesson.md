@@ -14,13 +14,14 @@ Engineering looks at. You write what is on it, and you say where each thing goes
 *[Screenshot to add: the handheld aboard the Black Gull, with the deck beside it.]*
 
 You change two files. In `mission.amd` you add one side, three quests, four things
-aboard and four rooms. In `story.mast` you add two lines to the map, one line to the
+aboard and six rooms. In `story.mast` you add two lines to the map, one line to the
 card you have, and one new card of four lines.
 
 Read this before you start. **Most of this lecture was measured in a stand-in for the
 game**, with stand-in consoles driven by a script: 13 plays, and 33 files with one line
 changed. Then it was played in the real game, with Helm and Comms going across. What
-the game showed is on this page as it showed it.
+the game showed is on this page as it showed it. One part came after that: the gunner
+hands over her cell in a scene, and that scene has not been played yet.
 
 This feature is also new. Step 9 ends with what to know before your crew finds it.
 
@@ -47,7 +48,7 @@ Words for this lecture:
 | Prize | A ship that has struck and been claimed. She joins your side |
 | Deck | The inside of a ship, as a map the party walks. The game draws it |
 | Kind of room | `brig`, `cargo`, `quarters`, `bay`: what a room is for, not what it is called |
-| Hold-out | Somebody aboard who goes on fighting after the ship has struck |
+| Stand down | Put the weapons away. Once a ship has struck, her crew do |
 
 ## Step 1 - What the game does, and what it asks for
 
@@ -338,7 +339,7 @@ Scan: A medical kit, sealed. Nobody aboard has needed it yet.
 A medical kit on a hook beside the entry port, for whoever comes aboard the hard way.
 ```
 
-In the People section, below the last line of the second **Pim**:
+In the People section, below the last line of the second **Pim**, type two people:
 
 ```
 ### [Mate Oduya](oduya)
@@ -352,28 +353,29 @@ Talk scene: oduya
 Scan: One human. Nine days of ship's biscuit, and not hurt.
 ---
 The mate of the convoy tender, sitting on the brig's one bench with her arms folded.
-```
 
-In the Hostiles section, below the last line of **Sump crawler**:
-
-```
 ### [Gunner Brakk](brakk)
 ---
 Area: deck
 Mark: bay
 Sprite: fig:hunter_f
-HP: 2
-Damage: 1
-Notice: 4
-Stun: 10
-Drops: power_cell
-Scan: One human, armed. Not on the list of those who struck. One power cell, slung on her back.
+Face: female
+Calm: yes
+Talk scene: brakk
+Scan: One human. Her cutlass is on the deck at her feet. One power cell, slung on her back.
 ---
-The Gull's gunner, in the boat bay, with a cutlass in her hand and the tender's beacon cell on her back.
+The Gull's gunner, in the boat bay, with her cutlass at her feet and the tender's beacon cell on her back.
 ```
 
 Every other line is one from Lectures 10 and 11. A prop is still a scene, a pickup or
 scenery. A person is still calm or not.
+
+**Why is the gunner calm?** Once a ship has struck, her crew stand down, and the gunner
+with them. The game showed it before this record said so: Brakk was first written as a
+hostile, with `HP:` and `Notice:`, and in the game she still did not fight. A crew member
+stood beside her for fifteen seconds and was not hit. `Calm: yes` says it in the file,
+where the next writer can read it. It also means nobody can shoot her, so her cell comes
+from her scene, in Step 7.
 
 Here is where the game stood them, on this hull, with exactly these four records:
 
@@ -392,8 +394,8 @@ this hull the hold is `plunder-hold`, the sickbay is `surgery` and the quarters 
 the kind, and it works on both.
 
 And the power cell. It is a third way to light your beacon, and the lists you made in
-Lecture 14 gain a row: `Power cell | The gunner of the Black Gull drops one | Anyone,
-with one FULL shot, after a chase`.
+Lecture 14 gain a row: `Power cell | The gunner of the Black Gull hands one over |
+Anyone who asks her, after a chase`.
 
 ### A kind she does not have
 
@@ -454,11 +456,28 @@ blank lines and type:
 - [Tell her she is going home]()
 
 ### [The Gunner](oduya_brakk)
-% "Brakk. The captain struck and the gunner did not. She is in the boat bay, aft, with a cutlass, and our cell slung on her back."
+% "Nobody, now. The captain struck, and the crew put their weapons down with him. Brakk too, the gunner. She is in the boat bay, aft, with our cell slung on her back."
 
 - [Ask her something else](oduya)
 - [Tell her she is going home]()
+
+### [Gunner Brakk](brakk)
+% "The captain struck, so the Gull struck. I do not fight for a ship that has already lost." Her cutlass lies on the deck at her feet.
+
+- [Ask her for the beacon cell](brakk_cell) ; give power_cell
+- [Leave her be]()
+
+### [The Cell](brakk_cell)
+% She unslings the cell and holds it out by the strap. "Take it, then. It never fitted anything aboard this ship."
+
+- [Leave her be]()
 ```
+
+**`; give power_cell`** is the outcome Pim paid with in Lecture 11, `give fuse`, with
+another item: it puts one power cell in the pack of whoever answered. So whoever asks
+the gunner carries the cell home, and nobody fires a shot. Ask her twice and she hands
+over a second one, which does no harm: the beacon needs only one. Lecture 16 shows how
+to take an answer away once it has been given.
 
 Three of those answers send a signal you did not invent. They are the game's, and each
 was played:
@@ -499,6 +518,8 @@ Each row below was tried on the finished files, one change at a time.
 | `Done when: signal boarding_deck_took` | Not played | `unfired-signal` |
 | `; signal boarding_deck_takes` | Not played | `signal-no-route`, on the answer |
 | `; signal boarding_deck_scuttle fails prize`, no comma | Not played | `outcome-run-together` |
+| No `Calm: yes` on the gunner | Not played | `person-talks-but-attacks` |
+| `; give power cell`, with a space | Not played | `pack-item-shape`. It says the game skips the whole answer |
 | The card's lines typed at the left edge | Nothing runs at all | `mast-compile`, an error. It says `Bad indentation` |
 
 The first of them, as lint printed it:
@@ -552,21 +573,20 @@ sbs run server,helm,comms,weapons,science -m MyAway map=0
    Take it.
 8. As Dr Hale, click Mate Oduya, in a brig. Ask her both questions. The second tells you
    where the gunner is.
-9. Gunner Brakk stands in the boat bay, aft. Her story says she did not strike, but once
-   the ship has struck, her crew stand down, and the gunner with them. In the game she
-   did not fight: a crew member stood beside her for fifteen seconds and was not hit.
-10. She still carries the cell. As Lt Reyes, walk aft until you can see her in the boat
-    bay. Open **Fire**, choose FULL, press **Arm** and click her. She stands still, so
-    the shot lands: she is down for good, and a power cell lies where she fell. Walk over
-    and pick it up. Nothing on the handheld says that a shot hit. Watch the map.
+9. Gunner Brakk stands in the boat bay, aft. Once the ship has struck, her crew stand
+   down, and the gunner with them. She is calm, like Mate Oduya.
+10. She still carries the cell. As Lt Reyes, walk aft to the boat bay and click her. Take
+    **Ask her for the beacon cell**. The power cell is in Lt Reyes's pack now: look in the
+    Pack app. Then **Leave her be**.
 11. Click the strongbox, in the other brig. Take **Take her as a prize**.
 12. Everybody is back at their console, and the ship has 200 credits. Helm: fly back to
     within 3000 of Kesh Relay. The Boarding Party tile offers **Kesh Relay** again.
 13. Beam down. Lt Reyes still has the cell. Light the beacon with it.
 
-A script walked the same in the stand-in. The beacon was lit with the gunner's cell, and
-the last screen read `The beacon is lit. Every convoy on the Kesh run has its way home
-again.`
+A script walked the same in the stand-in, when the gunner still had to be shot for her
+cell. The beacon was lit with the gunner's cell, and the last screen read `The beacon is
+lit. Every convoy on the Kesh run has its way home again.` Her scene came after that,
+and after the game was played: steps 9 and 10, as written here, have not been played yet.
 
 The handheld's bar names the room each person is in: `Brig`, `Boat Bay`, `Hallway`.
 The names come from her plan. You did not choose them, and you cannot change them.
@@ -581,9 +601,11 @@ and as shut as it was. Only a prop whose `Opens with:` lists `cut` opens to a sh
 box that holds your three endings is safe from a nervous gunner. And when a hostile stands
 on a pickup, the shot hits the hostile.
 
-**What a hostile drops is lost if nobody picks it up.** Tried: Brakk was put down, the
-party left without the cell, and came aboard again. Brakk was still down and the cell
-was not there.
+**Somebody calm cannot be shot.** A STUN, a CUT or a FULL shot at Brakk does nothing at
+all. Lecture 11 fired every setting at Pim and a FULL shot at Old Marrow, and nobody calm
+was harmed. Not fired at Brakk. So her answer is the only road to her cell. A Weapons
+officer who reaches for the Fire app first will think the game is broken. Tell them to
+talk.
 
 **`Take as prize` on Comms skips the deck.** It is the game's own button, on every ship
 that has struck. She joins the crew's side at once and nobody goes aboard. It sends the
@@ -612,7 +634,7 @@ freighter:
 | Aboard the Black Gull | Then aboard the freighter |
 |---|---|
 | The kit was taken | No kit |
-| Brakk was put down | No Brakk |
+| Brakk handed over her cell | Not played with her scene. When she was a hostile and was put down, there was no Brakk |
 | Mate Oduya was talked to | Mate Oduya again, in the hallway: a freighter has no brig |
 | The strongbox was left | The strongbox again. **Take her as a prize** took the freighter, and finished **Take the Black Gull** |
 
@@ -632,6 +654,8 @@ ship was taken.
 | A thing is in the hallway | Her hull has no room of that kind | Nothing, if you meant to board other hulls. `debug.log` has the line |
 | Somebody is down aboard her and stays down | The others are still up. Lecture 14's rule | The boarding kit, from the Pack app |
 | Lint says `mast-compile` and nothing runs | A line of the card is not indented | Four spaces, and eight on the `side_surrender` line |
+| A shot at the gunner does nothing | She is calm. Nobody calm can be shot | Click her and ask for the cell |
+| Somebody asked Brakk and the beacon still says no cell | The cell went to whoever answered. Or the answer has `power cell`, with a space: lint says `pack-item-shape` | Look in each person's Pack app, and use **Give to**. Or take the cell to the beacon as the one who has it |
 
 ## Exercise
 

@@ -22,8 +22,16 @@
 > - **PLAYED AGAIN 2026-10-16 on the strongbow** (sitting 4). Every scene's game still is
 >   from that play. Once she has struck, her crew stand down: Gunner Brakk did not fight
 >   (a crew member stood beside her ~15 s, no hit), so nobody was downed and the medkit
->   beat is gone. One FULL shot still drops her and her power cell. The game also stands
->   generated `Pirate crew` figures, calm, in the Plunder Hold and Crew Berths.
+>   beat is gone. The game also stands generated `Pirate crew` figures, calm, in the
+>   Plunder Hold and Crew Berths.
+> - **CHANGED 2026-10-16 (owner): nobody shoots the gunner.** Brakk moved from Hostiles
+>   to People with `Calm: yes` and `Talk scene: brakk`; her `HP:`/`Damage:`/`Notice:`/
+>   `Stun:`/`Drops:` are gone. Her scene's answer `Ask her for the beacon cell` gives
+>   `power_cell` to whoever answered. Oduya's `The Gunner` line now says the crew put
+>   their weapons down. Lint clean; mock headless PASS, and in the mock Brakk stands calm
+>   in the boat bay (25, 41), the same cell as before. The scene itself is NOT played in
+>   the mock or the game: scene 7's two new stills (`game_l15_brakk_talk`,
+>   `game_l15_brakk_cell`) are its first play.
 > - **HULL CHANGED 2026-10-16: `pirate_strongbow`, not `pirate_brigantine`.** The
 >   brigantine is a light carrier (`baycount` 6, role `carrier` in the ship data), so
 >   Legendary Missions launched six `Black Gull NN` fighters that shot at the ship all
@@ -72,6 +80,9 @@ The companion page is `lesson.md`; the finished files are in `example\`.
    and the relay. (Mock; the prize also in the game.)
 6. With the strongbox in `Mark: quarters` it can still be reached: nothing aboard shuts
    anything in. (Library documentation; not re-played.)
+7. Clicking Gunner Brakk opens her scene, and `Ask her for the beacon cell` puts a power
+   cell in the pack of whoever answered. (Not played yet: the sitting for scene 7 is its
+   first play.)
 
 Not seen yet. If one is not as described, stop and fix the page:
 
@@ -171,13 +182,14 @@ after every change to what's aboard, | go aboard and walk to each thing. ||"
 ### 7. Three endings
 
 **Screen:** The game, three windows: the server, Helm and Comms. Helm closes on her. Comms presses the button. The
-party beams across. Comms' Fire app armed with FULL, the gunner in sight in the boat bay.
-The strongbox scene with its four answers. Then the endings table.
+party beams across. The gunner in the boat bay, and her scene on Comms' xESS with its
+answer, Ask her for the beacon cell. Then the Pack app, with the power cell in it. The
+strongbox scene with its four answers. Then the endings table.
 
 **Say:** "Now play it through. || Helm closes to fifteen hundred, and she strikes. || Comms
 selects her, and sends a party. ||| Aboard, the gunner stands in the boat bay. || Once
 the ship has struck, | her crew stand down, | and the gunner with them. ||| She still
-carries the relay's cell. || Fire, full, arm, and click her, | and she drops it. ||| The
+carries the relay's cell. || Walk up to her and ask for it, | and she hands it over, no shot fired. ||| The
 strongbox has three answers that matter. || Take her, and she joins your side, | and the quest pays. || Scuttle her, and
 she's gone. || Leave her, and she runs for home. ||| Every one of them brings the party
 home first. || And after every one, | the relay opens again when the ship comes back.
@@ -189,13 +201,13 @@ home first. || And after every one, | the relay opens again when the ship comes 
 ### 8. What to warn your crew about
 
 **Screen:** Lint on the finished files: clean. Then four short captions, one at a time:
-A shot never removes a prop. Take as prize. The cell left behind. Beam, to Kesh Relay.
+A shot never removes a prop. Take as prize. The calm gunner. Beam, to Kesh Relay.
 
 **Say:** "Lint says clean on your finished mission. || What's left to know isn't in your
 file. ||| A shot never removes a prop. || The strongbox is safe from a full shot, | and so
 is anything else that holds an ending. ||| Comms has its own button, take as prize. |
 It finishes the same quest as your strongbox, | but nobody goes aboard to meet what you
-wrote. ||| What the gunner drops is lost if nobody picks it up. ||| And from her deck,
+wrote. ||| Somebody calm can't be shot, so the gunner's cell comes only from her answer. ||| And from her deck,
 the transporter still reaches your relay. || Know these before your crew finds them. ||"
 
 ### 9. Your turn
