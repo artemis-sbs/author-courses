@@ -291,8 +291,8 @@ sbs run server,helm,engineering,science -m MyBoarding map=0
 1. Before you leave the station, open the quest list. **Account for the Crew** is there.
 2. Fly inside 500 of the hulk. On Engineering and on Science, press the handheld icon,
    open **Boarding Party** and press **BEAM DOWN**.
-3. On the Science console (Dr Hale), press **Back**. The handheld shows three apps: Crew,
-   Act and **Tasks**. Open Tasks. Under her name is **Six Names**, marked Active. Below it,
+3. On the Science console (Dr Hale), press **Back** (top right). The handheld shows a list
+   headed `xESS` with three rows: Crew, Act and **Tasks**. Open Tasks. Under her name is **Six Names**, marked Active. Below it,
    under Party, are the ship's quests. Press Back, then open Act.
 4. In the airlock, Dr Hale takes **Read the name tags on the suits**.
 5. The crew on the bridge is told twice in the ship's log: `Quest complete: Account for the
@@ -305,7 +305,7 @@ sbs run server,helm,engineering,science -m MyBoarding map=0
 A person with no story of their own has two apps on the handheld, Crew and Act.
 
 **With Engineering alone aboard**: you are Chief Okoro. The suit tags come to you
-marked as covering for medical. Take the reading. The party learns the fact, and Account
+as the last button, marked as covering for medical. Take the reading. The party learns the fact, and Account
 for the Crew stays open, because nobody was handed Six Names. Your own story, A Cold Core,
 still finishes when you read the shutdown record.
 

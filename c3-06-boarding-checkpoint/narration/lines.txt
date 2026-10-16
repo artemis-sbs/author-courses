@@ -46,9 +46,10 @@ s05_type_it_in_layers_9	and a last room with one way out.
 s05_type_it_in_layers_10	The crew reads an ending's quest the moment they choose,
 s05_type_it_in_layers_11	so each one gets a short page.
 s05_type_it_in_layers_12	Here they are in the Quest Log:
-s05_type_it_in_layers_13	an hourglass on one, the station drawn beside the other.
-s05_type_it_in_layers_14	Then the two stories.
-s05_type_it_in_layers_15	And lint is clean.
+s05_type_it_in_layers_13	an hourglass on the first one,
+s05_type_it_in_layers_14	and a picture of the station on the other.
+s05_type_it_in_layers_15	Then the two stories.
+s05_type_it_in_layers_16	And lint is clean.
 s06_a_quest_any_party_can_finish_0	The ship's quest gets a new page too.
 s06_a_quest_any_party_can_finish_1	Here it is in the Quest Log on Helm:
 s06_a_quest_any_party_can_finish_2	a table of what the station knows before anybody boards.

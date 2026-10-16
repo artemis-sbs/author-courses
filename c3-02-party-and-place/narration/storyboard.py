@@ -9,7 +9,8 @@ is typed in two parts ("r1a", "r1"), then the three rooms ("r2", where lint warn
 Close Inspection among the quests ("r3"), then the card ("final", the page's own
 example\\, both files).
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. ONE game, THREE windows:
+GAME STILLS. Taken in the real engine 2026-10-15; marks set from the screenshots. ONE game,
+THREE windows:
 `python game.py c3-02-party-and-place start --state final --consoles server,helm,engineering`.
 No probe patch: Helm flies to the hulk, 9000 out. Helm is whoever the game names; the
 Engineering console is Chief Okoro (the roster). The visit is played on Engineering, on
@@ -97,12 +98,12 @@ STILLS = {
     "t_r2": ("terminal", [("r2", _LINT)]),
     "t_final": ("terminal", [("final", _LINT)]),
     "t_noback": ("terminal", [("b_noback", _LINT)]),
-    # THE REAL GAME (not taken yet). State final, consoles server,helm,engineering (see the docstring)
+    # THE REAL GAME (taken 2026-10-15). State final, consoles server,helm,engineering (see the docstring)
     "game_l2_eng_start": ("game", "Engineering at the start (state final), before Helm moves: the name Chief Okoro at the top of the console, beside the handheld icon"),
-    "game_l2_log": ("game", "Helm, the handheld icon (top left), then Quests, Close Inspection selected: State Active, Reward 100 credits, the order 'Close to within 500 of the hulk', the hulk's picture with 'The Unknown Hulk, as DS 1's sensors see her.', and the two paragraphs"),
+    "game_l2_log": ("game", "Helm, the handheld icon (top left), then Quests, Close Inspection selected: State Active, Reward 100 credits, the order 'Close to within 500 of the hulk', 'The Unknown Hulk, as DS 1's sensors see her.' over the hulk's picture, and the two paragraphs"),
     "game_l2_complete": ("game", "Helm, the ship inside 500 of the Unknown Hulk: the strip line 'Quest complete: Close Inspection'"),
     "game_l2_tile": ("game", "Engineering, just after Close Inspection completes: the handheld icon pressed, the page of tiles with the Boarding Party tile and its line 'The Hulk'"),
-    "game_l2_app": ("game", "Engineering, the Boarding Party tile pressed: 'Going down to The Hulk', Chief Okoro's face and name, engineering, and the BEAM DOWN button"),
+    "game_l2_app": ("game", "Engineering, the Boarding Party tile pressed: 'Going down to The Hulk', Chief Okoro's face (did not draw: awaiting a re-shoot after the library fix) and name, engineering, and the BEAM DOWN button"),
     "game_l2_airlock": ("game", "Engineering, BEAM DOWN pressed: the handheld (xESS) on its Act app. The bar: Chief Okoro, then engineering and The Airlock. The airlock's line, and three buttons: Go aft, toward the reactor; Go forward, to the bridge; Return to the ship"),
     "game_l2_reactor": ("game", "Engineering's handheld after Go aft, toward the reactor: the page keeps the airlock's line, then Chief Okoro and his choice, then the reactor room's line and its one button, Go back to the airlock. The bar reads The Reactor Room"),
     "game_l2_bridge": ("game", "Engineering's handheld after Go back to the airlock, then Go forward, to the bridge: the bridge's line and its one button, Go back to the airlock, under the page so far. The bar reads The Bridge"),
@@ -121,16 +122,40 @@ STILLS = {
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 3", "sub": "Everyone gets a menu"}),
 }
 
+# Game stills, 1280x960, marks as fractions of the frame (taken 2026-10-15)
+_ES_NAME = ("rect", 0.205, 0.0, 0.34, 0.045)         # game_l2_eng_start: 'Chief Okoro' by the handheld icon
+_LG_ROW = ("rect", 0.0, 0.288, 0.38, 0.36)           # game_l2_log: Close Inspection, Active
+_LG_ORDER = ("rect", 0.385, 0.075, 0.68, 0.19)       # ... State, Reward, the order
+_LG_PIC = ("rect", 0.385, 0.2, 0.82, 0.315)          # ... the lead line over the hulk's picture
+_LG_PARAS = ("rect", 0.385, 0.33, 0.985, 0.455)      # ... the two paragraphs
+_LG_PARA2 = ("rect", 0.385, 0.38, 0.985, 0.455)      # ... the second one
+_CP_STRIP = ("rect", 0.015, 0.49, 0.275, 0.53)       # game_l2_complete: 'Quest complete: Close Inspection'
+_CP_HULK = ("rect", 0.45, 0.51, 0.56, 0.615)         # ... the Unknown Hulk, 373 off
+_TI_BOARD = ("rect", 0.0, 0.155, 0.318, 0.335)       # game_l2_tile: Boarding Party, The Hulk
+_AP_BEAM = ("rect", 0.02, 0.235, 0.98, 0.29)         # game_l2_app: BEAM DOWN
+_AL_BAR = ("rect", 0.005, 0.06, 0.99, 0.13)          # game_l2_airlock: the bar
+_AL_ROOM = ("rect", 0.655, 0.095, 0.74, 0.128)       # ... The Airlock
+_AL_BODY = ("rect", 0.01, 0.2, 0.77, 0.315)          # ... the line and three buttons
+_AL_CHIPS = ("rect", 0.01, 0.26, 0.625, 0.31)        # ... the three buttons
+_AL_HOME = ("rect", 0.458, 0.26, 0.625, 0.31)        # ... Return to the ship
+_RE_KEPT = ("rect", 0.01, 0.2, 0.77, 0.49)           # game_l2_reactor: the page so far
+_RE_BACK = ("rect", 0.01, 0.395, 0.63, 0.49)         # ... the reactor's line, its one button
+_BR_ROOM = ("rect", 0.01, 0.755, 0.76, 0.85)         # game_l2_bridge: the bridge's line, its button
+_BK_CHIPS = ("rect", 0.01, 0.885, 0.77, 0.98)        # game_l2_back: the airlock again, three buttons
+_HM_STRIP = ("rect", 0.015, 0.37, 0.275, 0.405)      # game_l2_home: back on Engineering, the strip line
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
         {"from": 0, "still": "game_l2_airlock"},
-        {"from": 3, "still": "game_l2_eng_start"},
-        {"from": 4, "still": "game_l2_airlock"},
+        {"from": 2, "still": "game_l2_airlock", "marks": [_AL_BAR]},
+        {"from": 3, "still": "game_l2_eng_start", "marks": [_ES_NAME]},
+        {"from": 4, "still": "game_l2_airlock", "marks": [_AL_BAR]},
         {"from": 5, "still": "card_title"},
     ]},
     "s02_your_crew": {"step": 1, "beats": [
         # the game first: the name on the Engineering console
         {"from": 0, "still": "game_l2_eng_start"},
+        {"from": 2, "still": "game_l2_eng_start", "marks": [_ES_NAME]},
         {"from": 3, "still": "e_end0", "marks": [("lines", 55, 60)]},
         {"from": 4, "still": "e_r1a", "marks": [("lines", 65, 65)]},
         {"from": 5, "still": "e_r1a", "marks": [("lines", 66, 66)]},
@@ -138,13 +163,15 @@ BOARD = {
         {"from": 7, "still": "e_r1", "marks": [("lines", 71, 83)]},
         {"from": 8, "still": "e_r1", "marks": [("lines", 73, 73)]},
         {"from": 9, "still": "e_r1", "marks": [("lines", 74, 75)]},
-        {"from": 10, "still": "game_l2_eng_start"},
+        {"from": 10, "still": "game_l2_eng_start", "marks": [_ES_NAME]},
         {"from": 11, "still": "e_r1", "marks": [("lines", 71, 76)]},
         {"from": 12, "still": "t_r1", "marks": [("part", "run1:clean")]},
     ]},
     "s03_the_place": {"step": 2, "beats": [
         # the game first: the room on the handheld
         {"from": 0, "still": "game_l2_airlock"},
+        {"from": 1, "still": "game_l2_airlock", "marks": [_AL_ROOM]},
+        {"from": 2, "still": "game_l2_airlock", "marks": [_AL_BODY]},
         {"from": 3, "still": "e_r2", "marks": [("lines", 88, 93)]},
         {"from": 4, "still": "e_r2", "marks": [("lines", 86, 86)]},
         {"from": 5, "still": "e_r2", "marks": [("lines", 88, 88)]},
@@ -153,7 +180,7 @@ BOARD = {
         {"from": 9, "still": "e_r2", "marks": [("text", 91, "[Go aft, toward the reactor]")]},
         {"from": 10, "still": "e_r2", "marks": [("text", 91, "(reactor)")]},
         {"from": 11, "still": "e_r2", "marks": [("text", 93, "()")]},
-        {"from": 12, "still": "game_l2_airlock"},
+        {"from": 12, "still": "game_l2_airlock", "marks": [_AL_HOME]},
         {"from": 13, "still": "e_r2", "marks": [("lines", 93, 93)]},
     ]},
     "s04_lint_notices": {"step": 2, "beats": [
@@ -166,17 +193,19 @@ BOARD = {
         {"from": 0, "still": "card_rules"},
         {"from": 1, "still": "card_rules", "marks": [("part", "item1")]},
         # the game first: the one button in the reactor room
-        {"from": 2, "still": "game_l2_reactor"},
+        {"from": 2, "still": "game_l2_reactor", "marks": [_RE_BACK]},
         {"from": 4, "still": "e_r2", "marks": [("lines", 98, 98), ("lines", 103, 103)]},
         {"from": 5, "still": "card_cannot", "marks": [("part", "r1")]},
         {"from": 6, "still": "card_rules", "marks": [("part", "item2")]},
         {"from": 7, "still": "e_r2", "marks": [("lines", 93, 93)]},
-        {"from": 9, "still": "game_l2_airlock"},
+        {"from": 9, "still": "game_l2_airlock", "marks": [_AL_ROOM, _AL_HOME]},
         {"from": 10, "still": "e_r2", "marks": [("lines", 88, 93)]},
     ]},
     "s06_start_it": {"step": 4, "beats": [
         # the game first: the step in Helm's Quest Log
         {"from": 0, "still": "game_l2_log"},
+        {"from": 1, "still": "game_l2_log", "marks": [_LG_ROW]},
+        {"from": 2, "still": "game_l2_log", "marks": [_LG_PIC, _LG_PARAS]},
         {"from": 3, "still": "e_r3", "marks": [("lines", 41, 54)]},
         {"from": 4, "still": "e_r3", "marks": [("lines", 46, 46)]},
         {"from": 5, "still": "e_r3", "marks": [("lines", 47, 47)]},
@@ -186,7 +215,7 @@ BOARD = {
         {"from": 10, "still": "e_r3", "marks": [("lines", 52, 54)]},
         {"from": 11, "still": "e_r3", "marks": [("lines", 54, 54)]},
         # the game first: the tile the card makes
-        {"from": 13, "still": "game_l2_tile"},
+        {"from": 13, "still": "game_l2_tile", "marks": [_TI_BOARD]},
         {"from": 15, "still": "m_end0", "marks": [("lines", 103, 105)]},
         {"from": 16, "still": "m_card", "marks": [("lines", 108, 116)]},
         {"from": 17, "still": "card_three"},
@@ -197,13 +226,18 @@ BOARD = {
     ]},
     "s07_play_it": {"step": 6, "beats": [
         {"from": 0, "still": "game_l2_eng_start"},
-        {"from": 2, "still": "game_l2_complete"},
+        {"from": 1, "still": "game_l2_eng_start", "marks": [_ES_NAME]},
+        {"from": 2, "still": "game_l2_complete", "marks": [_CP_HULK]},
+        {"from": 3, "still": "game_l2_complete", "marks": [_CP_STRIP]},
         {"from": 4, "still": "game_l2_tile"},
-        {"from": 5, "still": "game_l2_app"},
+        {"from": 5, "still": "game_l2_tile", "marks": [_TI_BOARD]},
+        {"from": 5.6, "still": "game_l2_app", "marks": [_AP_BEAM]},
         {"from": 6, "still": "game_l2_airlock"},
-        {"from": 9, "still": "game_l2_reactor"},
-        {"from": 10, "still": "game_l2_bridge"},
-        {"from": 11, "still": "game_l2_back"},
+        {"from": 7, "still": "game_l2_airlock", "marks": [_AL_BAR]},
+        {"from": 8, "still": "game_l2_airlock", "marks": [_AL_BODY]},
+        {"from": 9, "still": "game_l2_reactor", "marks": [_RE_KEPT]},
+        {"from": 10, "still": "game_l2_bridge", "marks": [_BR_ROOM]},
+        {"from": 11, "still": "game_l2_back", "marks": [_BK_CHIPS]},
         {"from": 12, "still": "game_l2_home"},
     ]},
     "s08_your_turn": {"step": None, "beats": [

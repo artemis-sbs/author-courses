@@ -44,11 +44,15 @@ Seen on a real screen by the earlier pilot, with one Engineering console: the co
 button with those words, the page gaining who chose, what they chose, and the next line,
 and the bar naming the room.
 
-Not seen by anyone. If one is not as described, stop and fix the page:
-
-1. Two real consoles in the same room showing different buttons.
-2. One console's press changing the other console's screen.
-3. The bridge line changing between the first visit and the second.
+> **Seen in the real engine, 2026-10-15** (state g_wait; server, Engineering, Science).
+> In the airlock Dr Hale has four buttons with her own reading FIRST; Chief Okoro has
+> three. The bridge line changes between the first visit and the second. The visit is ONE
+> shared page: every pick appears on both consoles under the picker's name, and either
+> console's button moves the whole party. Engineering alone gets the tags reading as the
+> LAST button, on a row of its own, marked `(covering for medical)`. Awaiting a re-shoot
+> after library fixes: the two airlock menus "at the same moment" (Engineering's open menu
+> did not repaint when Dr Hale beamed down, so the kept still is Engineering back in the
+> airlock after the bridge), and the faces of Chief Okoro and Dr Hale, which did not draw.
 
 ## Scenes
 
@@ -139,13 +143,14 @@ after an if is the word learned, | or a job from your roster. ||"
 Both beam down. Show the two menus. Go to the bridge: no log. Back. Science reads the
 tags. Aft. Engineering reads the record. Forward: the line has changed. Answer the log.
 Return to the ship. Then start again, beam down Engineering only, and show the covering
-button.
+button: the last one, on a second row after Return to the ship.
 
 **Say:** "Two people aboard. The doctor has the button, and the chief doesn't. || Straight
 to the bridge: | no log, and the line says why. Back. | She reads the tags. Aft. | He
-reads the record. Forward again, | and the line has changed, and there's the log. ||| Now
+reads the record. Forward again, | and the line has changed, and there's the log. || Both
+consoles show the same page, | and either one's button moves the whole party. ||| Now
 watch what happens when the doctor stays behind on the ship. || Same room, one person, | and
-her reading comes to me, marked as covering for medical. || A short crew still finishes
+her reading comes to me, | last in the row, marked as covering for medical. || A short crew still finishes
 the story. || And the covering only happens for a job, | one that's on your roster, or one
 of the game's standard jobs. || A word that's nobody's job isn't offered to anyone. ||"
 

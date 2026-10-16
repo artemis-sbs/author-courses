@@ -47,13 +47,16 @@ Seen on a real screen by the earlier pilot, with three real consoles: the Tasks 
 the surgeon's handheld and its list, Six Names marked Active with the ship's quests under
 Party.
 
-Not seen by anyone. If one is not as described, stop and fix the page:
-
-1. This rewrite's files in the real game.
-2. The two `Quest complete:` lines on a bridge console as the reading is taken.
-3. The Back button's place on the handheld.
-4. Account for the Crew in the Quest Log: the heading, and the person and
-   tablet icons as the two bullets.
+> **Seen in the real engine, 2026-10-15** (state g_now; server, Helm, Science, then
+> server, Helm, Engineering). Back is at the top right of the ACT title line, and goes to
+> the xESS home: a LIST headed `xESS` with three full-width rows, Crew, Act and Tasks (not
+> tiles). Tasks lists Six Names under Dr Hale and the ship's quests under Party. Account
+> for the Crew's page in the Quest Log has its heading and two bullets. Engineering alone
+> gets the suit tags as the LAST button, on a row of its own, and Account for the Crew
+> stays Active; A Cold Core completes on Helm's strip. Awaiting a re-shoot after library
+> fixes: the strip line `Quest complete: Account for the Crew` (only `Six Names` showed;
+> the quest did complete), so `game_strip_account` is a placeholder; and the bullet icons,
+> which drew magenta.
 
 ## Scenes
 
@@ -99,8 +102,8 @@ lose that comma. | Without it, the signal is never sent. ||"
 ### 4. Hand the stories to the visit
 
 **Screen:** `story.mast`, the card at the end. On the `boarding_visit` line, type the
-`stories=` part before the last bracket. Lint: clean. Then the doctor's handheld with its
-three apps.
+`stories=` part before the last bracket. Lint: clean. Then the doctor's handheld on its
+xESS list: Crew, Act and Tasks.
 
 **Say:** "Then the handing out. || I open the story file | and find the card from Lecture
 2. || One line on it starts the visit, | and I add a few words to the end of that line.
@@ -143,17 +146,17 @@ tells you when two outcomes have run together. ||"
 
 **Screen:** `sbs run server,helm,engineering,science -m MyBoarding map=0`. Two plays,
 each with Helm left on the bridge to watch. First the surgeon goes alone: on Science,
-Back, the three apps, Tasks, Six Names. Back, Act. She reads the tags; the ship's log
+Back, the xESS list (Crew, Act, Tasks), Tasks, Six Names. Back, Act. She reads the tags; the ship's log
 line on Helm. Then the engineer goes alone: the suit tags offered to him, marked as
-covering; he reads them; Account for the Crew still Active in Helm's Quest Log. Aft; he
+covering, the last button; he reads them; Account for the Crew still Active in Helm's Quest Log. Aft; he
 reads the record; Helm's log line.
 
 **Say:** "I play it twice, and each time Helm stays on the bridge to watch. || First the
-doctor goes across. | On her handheld I go back one step, | and there are three apps now,
+doctor goes across. | On her handheld I go back one step, | and the list there has three rows now,
 | and the third one is Tasks. || There's her story, under her name. ||| She reads the
 tags, | and the bridge is told twice: | her story is complete, and so is the ship's
 quest. ||| Then the chief goes across alone, | and that's a short crew. || He's offered
-her reading, marked as covering, | and the party learns the fact. || But her story was
+her reading as the last button, marked as covering, | and the party learns the fact. || But her story was
 never handed out, | so the ship's quest stays open. ||| Then he reads his own record,
 and his story completes. || The next lecture shows you the way round that open quest.
 ||"

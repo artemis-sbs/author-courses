@@ -35,24 +35,32 @@ s03_borrow_a_scene_14	That name, and the moment the tile appears, are on a card.
 s03_borrow_a_scene_15	So I open the story file, go to the very end,
 s03_borrow_a_scene_16	and paste the card.
 s03_borrow_a_scene_17	Now lint is clean.
-s04_play_it_0	I start the game with a server and a Helm console,
-s04_play_it_1	and I fly toward the hulk.
-s04_play_it_2	When I'm close, I stop the ship,
-s04_play_it_3	and I open the handheld.
-s04_play_it_4	There's a tile called Boarding Party, and it's offering Ferrow Landing. I beam down.
-s04_play_it_5	Now this console is my handheld.
-s04_play_it_6	Two of these buttons are plain.
-s04_play_it_7	The others say covering,
-s04_play_it_8	and then a job.
-s04_play_it_9	Those belong to people who aren't here,
-s04_play_it_10	and I'm one helm officer, so they all come to me. I take one,
-s04_play_it_11	and I read what a medic would've noticed. I walk in.
-s04_play_it_12	I ask about the cable.
-s04_play_it_13	And she won't open the shed,
-s04_play_it_14	because I haven't found enough to say out loud.
-s04_play_it_15	So I go back and look harder.
-s04_play_it_16	Three things found out,
-s04_play_it_17	and now the button's there.
+s04_play_it_0	I start the game with a server and a Helm console.
+s04_play_it_1	At first the hulk is off the map,
+s04_play_it_2	so I zoom out once.
+s04_play_it_3	It's this mark up ahead, with no name yet,
+s04_play_it_4	and I fly toward it.
+s04_play_it_5	Close in, it gets its name,
+s04_play_it_6	and the first step of the quest completes.
+s04_play_it_7	I stop the ship,
+s04_play_it_8	and I open the handheld.
+s04_play_it_9	There's a tile called Boarding Party, and it's offering Ferrow Landing. I beam down.
+s04_play_it_10	Now this console is my handheld.
+s04_play_it_11	The first two buttons are plain.
+s04_play_it_12	The ones after them say covering,
+s04_play_it_13	and then a job.
+s04_play_it_14	Those belong to people who aren't here,
+s04_play_it_15	and I'm one helm officer, so they all come to me. I take one,
+s04_play_it_16	and I read what a medic would've noticed.
+s04_play_it_17	The page keeps my pick,
+s04_play_it_18	without the covering words.
+s04_play_it_19	I walk in,
+s04_play_it_20	and I ask about the cable.
+s04_play_it_21	And she won't open the shed,
+s04_play_it_22	because I haven't found enough to say out loud.
+s04_play_it_23	So I go back and look harder.
+s04_play_it_24	Three things found out,
+s04_play_it_25	and now the button's there.
 s05_read_what_you_pasted_0	Now let's read it.
 s05_read_what_you_pasted_1	Here's the landing field on the handheld again:
 s05_read_what_you_pasted_2	the room's name in the bar, one line, and six buttons.

@@ -287,57 +287,69 @@ He reads the record. Forward again,
 and the line has changed, and there's the log.
 
 73
-00:05:30,391 --> 00:05:35,609
-Now watch what happens when the doctor stays behind on the ship.
+00:05:29,491 --> 00:05:32,100
+Both consoles show the same page,
 
 74
-00:05:36,509 --> 00:05:38,248
-Same room, one person,
+00:05:32,550 --> 00:05:36,028
+and either one's button moves the whole party.
 
 75
-00:05:38,698 --> 00:05:43,480
-and her reading comes to me, marked as covering for medical.
+00:05:37,828 --> 00:05:43,046
+Now watch what happens when the doctor stays behind on the ship.
 
 76
-00:05:44,380 --> 00:05:47,424
-A short crew still finishes the story.
+00:05:43,946 --> 00:05:45,685
+Same room, one person,
 
 77
-00:05:48,324 --> 00:05:51,802
-And the covering only happens for a job,
+00:05:46,135 --> 00:05:48,743
+and her reading comes to me,
 
 78
-00:05:52,252 --> 00:05:57,470
-one that's on your roster, or one of the game's standard jobs.
+00:05:49,193 --> 00:05:53,107
+last in the row, marked as covering for medical.
 
 79
-00:05:58,370 --> 00:06:02,283
-A word that's nobody's job isn't offered to anyone.
+00:05:54,007 --> 00:05:57,050
+A short crew still finishes the story.
 
 80
-00:06:03,483 --> 00:06:07,830
-Your third crew member has a job you made up.
+00:05:57,950 --> 00:06:01,428
+And the covering only happens for a job,
 
 81
-00:06:08,730 --> 00:06:11,774
-Give them a reading on the bridge,
+00:06:01,878 --> 00:06:07,096
+one that's on your roster, or one of the game's standard jobs.
 
 82
-00:06:12,224 --> 00:06:14,833
-and leave the log at two.
+00:06:07,996 --> 00:06:11,909
+A word that's nobody's job isn't offered to anyone.
 
 83
-00:06:15,733 --> 00:06:19,646
-Now any two of three readings will open it,
+00:06:13,109 --> 00:06:17,457
+Your third crew member has a job you made up.
 
 84
-00:06:20,096 --> 00:06:23,139
-so there's more than one way through.
+00:06:18,357 --> 00:06:21,400
+Give them a reading on the bridge,
 
 85
-00:06:24,939 --> 00:06:29,287
-Next time, we ask not only what someone's job is,
+00:06:21,850 --> 00:06:24,459
+and leave the log at two.
 
 86
-00:06:29,737 --> 00:06:32,780
+00:06:25,359 --> 00:06:29,272
+Now any two of three readings will open it,
+
+87
+00:06:29,722 --> 00:06:32,765
+so there's more than one way through.
+
+88
+00:06:34,565 --> 00:06:38,913
+Next time, we ask not only what someone's job is,
+
+89
+00:06:39,363 --> 00:06:42,407
 but how good they are at it.

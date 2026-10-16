@@ -353,7 +353,7 @@ The sleepers are safe for as long as their one cell lasts. Nobody aboard knows h
 Each description is the first thing the crew reads after the choice, so each is a short
 page. They read it in the Quest Log, on a bridge console's handheld (Quests). `![](icon://hourglass)` at the start of a line is the icon from Lecture 5 without
 the bullet: one line tall, with the words beside it. The DS 1 line is a ship lead line, as
-on Close Inspection.
+on Close Inspection: the words over a small picture of the station.
 
 In **The Captain's Cabin**, add the two choices above the way back:
 
@@ -607,7 +607,9 @@ That is 16 presses. Try the main cell on the way and it is 18.
 
 **With two aboard**, Engineering and Science. Dr Hale reads the monitors herself. The
 bridge is told `Quest complete: Account for the Crew` and `Quest complete: Twelve Berths`.
-The stores are still covered. In the hold, Dr Hale is offered the scanner's sweep.
+The stores are still covered, by one of the two of you. In the hold, only Dr Hale is
+offered the scanner's sweep. The party moves together: either console's button takes
+everyone, and both show the same page.
 
 **With three aboard**, Engineering, Science and Helm. Nothing is marked as covering.
 Reading everything and trying the main cell once takes 20 presses.

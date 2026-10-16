@@ -56,14 +56,23 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 Seen on a real screen by the earlier pilot, with three real consoles, start to finish:
 the roll line, and the cabin's two endings as buttons.
 
+> **Seen in the real engine, 2026-10-15** (state g_now; three games). With the chief and
+> the doctor aboard, only she is offered the scanner's sweep in the hold; the quartermaster
+> cover went to ONE console (the chief's, that time): do not say which. Covering buttons
+> come LAST in the row. The party moves together, on one shared page. The ending quests
+> read as written in the Quest Log: the hourglass line, and DS 1's lead line ABOVE a small
+> picture of the station; Account for the Crew's table is a plain two-column list. The
+> chief alone completes Account for the Crew with the covered berth reading (the strip
+> line wraps to two lines). One press of Return to the ship in the airlock puts the
+> console back on its station with no Boarding Party tile. Helm's officer is the roster's
+> Mr Pell. Awaiting a re-shoot after library fixes: the faces of Chief Okoro and Dr Hale,
+> and the hourglass icon, which drew magenta.
+
 Not seen by anyone. If one is not as described, stop and fix the page:
 
-1. This rewrite's files in the real game.
-2. The Crew app's Beam up button, and a console coming back down.
-3. The time. Fourteen to twenty presses is a count. "About ten minutes" is a guess, and
+1. The Crew app's Beam up button, and a console coming back down.
+2. The time. Fourteen to twenty presses is a count. "About ten minutes" is a guess, and
    the page says so.
-4. The two ending quests in the Quest Log: the hourglass line, the DS 1 lead
-   line, and Account for the Crew's three-row table.
 
 ## Scenes
 
@@ -127,7 +136,7 @@ Then the door, with a line that tells an early party why it's shut. Then the end
 Each ending is a quest the ship doesn't have yet, | a choice that starts it, with the new
 word accepts, | and a last room with one way out. || The crew reads an ending's quest the
 moment they choose, | so each one gets a short page. || Here they are in the Quest Log: |
-an hourglass on one, the station drawn beside the other. ||| Then the two stories. | And lint is
+an hourglass on the first one, | and a picture of the station on the other. ||| Then the two stories. | And lint is
 clean. ||"
 
 ### 6. A quest any party can finish

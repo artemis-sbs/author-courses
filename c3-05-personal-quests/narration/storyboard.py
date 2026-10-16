@@ -12,11 +12,11 @@ ship's Account for the Crew ("final", the page's own example\\mission.amd and st
 NO COMMAND STARTS THE GAME HERE. `sbs run server,helm,engineering,science -m MyBoarding
 map=0` is a drawn card of the page's own words (card_run).
 
-GAME STILLS. Not taken yet (marks to be set from the screenshots). The handheld a party
+GAME STILLS. Taken in the real engine 2026-10-15; marks set from the screenshots. The handheld a party
 member carries is the xESS: BEAM DOWN turns the console into it, Act opens by itself on
 each new room (a running transcript, the newest room at the foot, its choices as buttons),
-and Back (top right of the ACT title line) goes to the tile sheet: Crew, Act, and Tasks
-for someone holding a story of their own. Tasks lists that person's stories under their
+and Back (top right of the ACT title line) goes to the xESS home: a LIST headed `xESS`
+with full-width rows Crew, Act, and Tasks for someone holding a story of their own. Tasks lists that person's stories under their
 name, then the ship's quests under Party. The bridge is told `Quest complete:` on the
 strip under Helm's left panel, one line at a time (Class 2). Two games, each with Helm
 left on the bridge to watch, both from the PROBE-ONLY state g_now (never shown in the
@@ -124,16 +124,18 @@ STILLS = {
     "t_final": ("terminal", [("final", _LINT)]),
     "t_medcal": ("terminal", [("b_medcal", _LINT)]),
     "t_comma": ("terminal", [("b_comma", _LINT)]),
-    # THE REAL GAME (not taken yet; see the docstring for the two games and the clicks)
+    # THE REAL GAME (taken 2026-10-15; see the docstring for the two games and the clicks)
     "game_log_account": ("game", _GA + ", step 1, before anyone beams down: Helm's handheld (icon top left), Quests, Account for the Crew selected: Active, Reward 150 credits, the order 'Find out who was aboard the hulk', 'Somebody crewed that ship. Command wants names.', the heading 'Where names are kept', two bullets with a person icon and a tablet icon for dots, and the closing line"),
     "game_airlock_sci": ("game", _GA + ", step 2: Science (Dr Hale), the xESS just after BEAM DOWN, Act on The Airlock: 'The outer door was never sealed...' and the buttons Read the name tags on the suits, Go aft, Go forward, Return to the ship (and the shutdown record does not show here: that is in the reactor room)"),
     "game_home_sci": ("game", _GA + ", step 3: Science, Back pressed: the xESS tile sheet - the airlock line, then three tiles Crew, Act and Tasks"),
     "game_tasks_sci": ("game", _GA + ", step 3: Science, the Tasks app: under 'Dr Hale', Six Names (Active); under 'Party', the ship's quests (Close Inspection, Account for the Crew and the rest)"),
     "game_strip_six": ("game", _GA + ", step 4: Helm, the strip under the left panel just after Dr Hale reads the tags: the first 'Quest complete:' line (Six Names or Account for the Crew - note which came first; if Six Names never appears there, say so)"),
+    # NOT TAKEN 2026-10-15: the line never showed (only Six Names), though the quest completed.
+    # A placeholder until the library fix and the re-shoot.
     "game_strip_account": ("game", _GA + ", step 4, a few seconds later: Helm, the strip's next line, 'Quest complete: Account for the Crew' (or Six Names if that came second)"),
     "game_tasks_done_sci": ("game", _GA + ", step 5: Science, Tasks again: Six Names Done under 'Dr Hale', Account for the Crew Done under 'Party'"),
     "game_tasks_eng": ("game", _GB + ", step 1: Engineering, the Tasks app: under 'Chief Okoro', A Cold Core (Active), then the ship's quests under 'Party'. No Six Names anywhere: it was handed to nobody"),
-    "game_airlock_eng": ("game", _GB + ", step 1: Engineering, Act on The Airlock: 'Read the name tags on the suits (covering for medical)' among the buttons"),
+    "game_airlock_eng": ("game", _GB + ", step 1: Engineering, Act on The Airlock: 'Read the name tags on the suits (covering for medical)' as the LAST button, on a row of its own"),
     "game_log_open": ("game", _GB + ", step 2, after the chief read the tags: Helm, Quests, Account for the Crew selected and still Active"),
     "game_strip_core": ("game", _GB + ", step 3: Helm, the strip under the left panel just after the chief reads the shutdown record: 'Quest complete: A Cold Core'"),
     # drawn
@@ -147,16 +149,35 @@ STILLS = {
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 6", "sub": "Checkpoint: a short boarding quest"}),
 }
 
+# Game stills, 1280x960, marks as fractions of the frame (taken 2026-10-15)
+_AS_TAGS = ("rect", 0.01, 0.26, 0.278, 0.31)         # game_airlock_sci: Read the name tags on the suits
+_AS_BODY = ("rect", 0.01, 0.2, 0.895, 0.31)          # ... the room's line and four buttons
+_HO_LIST = ("rect", 0.01, 0.14, 0.985, 0.72)         # game_home_sci: the list headed xESS
+_HO_TASKS = ("rect", 0.01, 0.63, 0.98, 0.72)         # ... Tasks, the third row
+_TS_HALE = ("rect", 0.015, 0.205, 0.99, 0.355)       # game_tasks_sci: Dr Hale > Six Names, Active
+_TS_PARTY = ("rect", 0.015, 0.37, 0.99, 0.76)        # ... Party > the ship's quests
+_TD_SIX = ("rect", 0.015, 0.29, 0.2, 0.355)          # game_tasks_done_sci: Six Names, Done
+_TD_ACC = ("rect", 0.015, 0.7, 0.215, 0.76)          # ... Account for the Crew, Done
+_TE_CORE = ("rect", 0.015, 0.205, 0.99, 0.355)       # game_tasks_eng: Chief Okoro > A Cold Core
+_LA_ROW = ("rect", 0.0, 0.36, 0.38, 0.43)            # game_log_account: Account for the Crew, Active
+_LA_PAGE = ("rect", 0.385, 0.075, 0.9, 0.42)         # ... its page
+_LA_LIST = ("rect", 0.385, 0.25, 0.9, 0.37)          # ... the heading and two bullets
+_STRIP = ("rect", 0.015, 0.49, 0.275, 0.53)          # game_strip_six / game_strip_core: the strip line
+_AE_COVER = ("rect", 0.01, 0.315, 0.443, 0.362)      # game_airlock_eng: the covering button, last
+_LO_ROW = ("rect", 0.0, 0.288, 0.38, 0.36)           # game_log_open: Account for the Crew, still Active
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
-        {"from": 0, "still": "game_airlock_sci"},
-        {"from": 1, "still": "game_tasks_sci"},
-        {"from": 3, "still": "game_airlock_sci"},
+        {"from": 0, "still": "game_airlock_sci", "marks": [_AS_BODY]},
+        {"from": 1, "still": "game_tasks_sci", "marks": [_TS_HALE]},
+        {"from": 3, "still": "game_airlock_sci", "marks": [_AS_TAGS]},
         {"from": 4, "still": "card_title"},
     ]},
     "s02_a_section_for_side_stories": {"step": 1, "beats": [
         # the game first: the story on her handheld
         {"from": 0, "still": "game_tasks_sci"},
+        {"from": 2, "still": "game_tasks_sci", "marks": [_TS_HALE]},
+        {"from": 3, "still": "game_tasks_sci", "marks": [_TS_PARTY]},
         {"from": 4, "still": "e_st1", "marks": [("lines", 161, 168)]},
         {"from": 6, "still": "e_st1", "marks": [("lines", 159, 159)]},
         {"from": 7, "still": "e_st1", "marks": [("text", 163, "For: medical")]},
@@ -173,6 +194,7 @@ BOARD = {
     "s03_her_own_reading_finishes_it": {"step": 2, "beats": [
         # the game first: her reading, in the airlock
         {"from": 0, "still": "game_airlock_sci"},
+        {"from": 2, "still": "game_airlock_sci", "marks": [_AS_TAGS]},
         {"from": 3, "still": "e_airlock1", "marks": [("lines", 108, 108)]},
         {"from": 4, "still": "e_airlock2", "marks": [("text", 108, ", signal names_read")]},
         {"from": 6, "still": "e_airlock2", "marks": [("text", 108, "names_read")]},
@@ -187,11 +209,12 @@ BOARD = {
         {"from": 5, "still": "e_card3", "marks": [("text", 115, "\"side_stories\"")]},
         {"from": 6, "still": "e_st1", "marks": [("text", 159, "side_stories")]},
         {"from": 7, "still": "t_st3", "marks": [("part", "run1:clean")]},
-        {"from": 8, "still": "game_home_sci"},
+        {"from": 8, "still": "game_home_sci", "marks": [_HO_TASKS]},
     ]},
     "s05_a_second_story_and_where_one": {"step": 4, "beats": [
         # the game first: his story on his handheld
         {"from": 0, "still": "game_tasks_eng"},
+        {"from": 1, "still": "game_tasks_eng", "marks": [_TE_CORE]},
         {"from": 2, "still": "e_st4", "marks": [("lines", 170, 177)]},
         {"from": 2.5, "still": "e_st4b", "marks": [("text", 121, ", signal core_read")]},
         {"from": 3, "still": "e_st5", "marks": [("text", 167, "Then: signal names_known")]},
@@ -202,11 +225,13 @@ BOARD = {
         {"from": 11, "still": "e_final_account", "marks": [("text", 62, "Reward: 150 credits")]},
         {"from": 12, "still": "e_final_six", "marks": [("lines", 178, 186)]},
         # the game first: the ship's quest in the Quest Log
-        {"from": 14, "still": "game_log_account"},
+        {"from": 14, "still": "game_log_account", "marks": [_LA_ROW]},
+        {"from": 15, "still": "game_log_account", "marks": [_LA_PAGE]},
+        {"from": 16, "still": "game_log_account", "marks": [_LA_LIST]},
         {"from": 17, "still": "e_final_account", "marks": [("lines", 66, 69)]},
         {"from": 18, "still": "e_final_account", "marks": [("text", 68, "icon://person"), ("text", 69, "icon://tablet")]},
         {"from": 19, "still": "e_final_six", "marks": [("lines", 186, 186)]},
-        {"from": 20, "still": "game_tasks_sci"},
+        {"from": 20, "still": "game_tasks_sci", "marks": [_TS_HALE]},
     ]},
     "s06_four_rules_and_lint": {"step": 6, "beats": [
         {"from": 0, "still": "card_rules", "marks": [("part", "item1")]},
@@ -223,16 +248,18 @@ BOARD = {
         {"from": 0, "still": "card_run", "marks": [("part", "item1")]},
         {"from": 1, "still": "game_airlock_sci"},
         {"from": 2, "still": "game_home_sci"},
-        {"from": 5, "still": "game_tasks_sci"},
-        {"from": 6, "still": "game_airlock_sci"},
-        {"from": 7, "still": "game_strip_six"},
+        {"from": 3, "still": "game_home_sci", "marks": [_HO_LIST]},
+        {"from": 4, "still": "game_home_sci", "marks": [_HO_TASKS]},
+        {"from": 5, "still": "game_tasks_sci", "marks": [_TS_HALE]},
+        {"from": 6, "still": "game_airlock_sci", "marks": [_AS_TAGS]},
+        {"from": 7, "still": "game_strip_six", "marks": [_STRIP]},
         {"from": 8, "still": "game_strip_account"},
-        {"from": 8.5, "still": "game_tasks_done_sci"},
-        {"from": 9, "still": "game_tasks_eng"},
-        {"from": 11, "still": "game_airlock_eng"},
-        {"from": 13, "still": "game_log_open"},
-        {"from": 15, "still": "game_strip_core"},
-        {"from": 16, "still": "game_log_open"},
+        {"from": 8.5, "still": "game_tasks_done_sci", "marks": [_TD_SIX, _TD_ACC]},
+        {"from": 9, "still": "game_tasks_eng", "marks": [_TE_CORE]},
+        {"from": 11, "still": "game_airlock_eng", "marks": [_AE_COVER]},
+        {"from": 13, "still": "game_log_open", "marks": [_LO_ROW]},
+        {"from": 15, "still": "game_strip_core", "marks": [_STRIP]},
+        {"from": 16, "still": "game_log_open", "marks": [_LO_ROW]},
     ]},
     "s08_your_turn": {"step": None, "beats": [
         {"from": 0, "still": "card_exercise", "marks": [("part", "item1")]},

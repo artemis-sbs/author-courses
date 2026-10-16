@@ -240,18 +240,21 @@ Start the game with a server and a Helm console:
 sbs run server,helm -m MyBoarding map=0
 ```
 
-1. At Helm, fly toward the hulk. When the ship is inside 2000 of it, the first step of
-   First Contact completes. Bring the ship to a stop.
+1. At Helm, find the hulk. At the start it is off the map: press the zoom-out magnifier
+   above the map once, and the hulk is the mark with no name ahead of the ship. Its name
+   appears when the ship is within about 4K. Fly toward it. When the ship is inside 2000
+   of it, the first step of First Contact completes. Bring the ship to a stop.
 2. Press the handheld icon at the top of the console. One of its tiles is **Boarding
    Party**, and it offers **Ferrow Landing**. Press it, then press **BEAM DOWN**.
 3. The console is now the boarding party's handheld. The bar across the top says who you
    are, your job, and where you are standing. Under it is a line about the place, and
    under that the buttons.
-4. Read the buttons. Two are plain: **Walk in with her** and **Beam back up**. Four end
-   in words like `(covering for medical)`. Those belong to jobs nobody in your party
-   holds. You are one helm officer, so the game hands them all to you.
-5. Take a covering choice. You read what that person would have noticed, and one button
-   brings you back.
+4. Read the buttons. The first two are plain: **Walk in with her** and **Beam back up**.
+   The four after them end in words like `(covering for medical)`. Those belong to jobs
+   nobody in your party holds. You are one helm officer, so the game hands them all to you.
+5. Take a covering choice. Your pick is written into the page, without its covering
+   words, then what that person would have noticed, and one button brings you back. The
+   page keeps the whole visit, with the newest at the foot.
 6. Walk in with her, to the long hall. Ask to see the east cable. If the party has found
    out fewer than three things, **Open it** is not there. Walk back and take more of the
    covering choices, in either room.
@@ -275,7 +278,8 @@ What the game made from the block, counted in a test run:
 If you can, play it once more with two or three consoles: add `engineering` and
 `science` after `helm` on the `sbs run` line. Then the engineer is offered the power spur
 as their own, the science officer is offered the supply run, and only what is left over is
-marked as covering.
+marked as covering. The party moves together: every console shows the same page, and a
+button that leads to another room takes everyone there.
 
 ## Stop 4 - Read what you pasted
 

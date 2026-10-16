@@ -75,7 +75,7 @@ s06_four_rules_and_lint_8	and it tells you when two outcomes have run together.
 s07_play_it_0	I play it twice, and each time Helm stays on the bridge to watch.
 s07_play_it_1	First the doctor goes across.
 s07_play_it_2	On her handheld I go back one step,
-s07_play_it_3	and there are three apps now,
+s07_play_it_3	and the list there has three rows now,
 s07_play_it_4	and the third one is Tasks.
 s07_play_it_5	There's her story, under her name.
 s07_play_it_6	She reads the tags,
@@ -83,7 +83,7 @@ s07_play_it_7	and the bridge is told twice:
 s07_play_it_8	her story is complete, and so is the ship's quest.
 s07_play_it_9	Then the chief goes across alone,
 s07_play_it_10	and that's a short crew.
-s07_play_it_11	He's offered her reading, marked as covering,
+s07_play_it_11	He's offered her reading as the last button, marked as covering,
 s07_play_it_12	and the party learns the fact.
 s07_play_it_13	But her story was never handed out,
 s07_play_it_14	so the ship's quest stays open.

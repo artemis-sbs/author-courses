@@ -15,7 +15,8 @@ The shipped file is never opened: the student does not need Open Universe, and t
 does not have it. Scene 6 shows the page's own excerpts as cards (the order of the parts is
 the shipped file's, checked against quiet_shore.amd, 211 lines, 2026-10-15).
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. ONE game, TWO windows:
+GAME STILLS. Taken in the real engine 2026-10-15; marks set from the screenshots. ONE game,
+TWO windows:
 `python game.py c3-01-what-a-boarding-party-is start --state final --consoles server,helm`.
 No probe patch: the hulk stays 9000 out and Helm flies to it (about a minute at full
 impulse), so somebody is seated at a console when the visit opens. (If the visit opened
@@ -23,7 +24,8 @@ with nobody seated, nobody would be offered the covering choices: a known librar
 A boarding visit is played on the HANDHELD: BEAM DOWN turns the console into the xESS, an
 identity bar (name; job and the room) over the Act app, which shows the room's line as a
 running page with the choices as buttons in the text. Press order, all on Helm:
-  1. game_l1_helm_start, at once. Then fly toward the Unknown Hulk; stop inside 2000.
+  1. Zoom the map out once (the magnifier above it): game_l1_helm_start. The hulk is an
+     unnamed mark at 22, 8K; it is named only within about 4K. Fly to it; stop inside 2000.
   2. game_l1_near once 'Quest complete: Find the Derelict' shows on the strip.
   3. the handheld icon (top left): game_l1_tile. Press Boarding Party: game_l1_app.
   4. BEAM DOWN: game_l1_field.
@@ -93,16 +95,16 @@ STILLS = {
     "m_back": ("vscode", "start", 95, "big", _M),
     "t_back": ("terminal", [("start", _LINT)]),
     "t_card": ("terminal", [("b_card", _LINT)]),
-    # THE REAL GAME (not taken yet). State final, consoles server,helm, all on Helm (see the docstring)
-    "game_l1_helm_start": ("game", "Helm at the start (state final, no patch): the ship by DS 1, the Unknown Hulk far off on the map, nothing pressed"),
+    # THE REAL GAME (taken 2026-10-15). State final, consoles server,helm, all on Helm (see the docstring)
+    "game_l1_helm_start": ("game", "Helm at the start (state final, no patch), the map zoomed out once: the ship by DS 1, the hulk an unnamed mark at 22, 8K"),
     "game_l1_near": ("game", "Helm, the ship stopped inside 2000 of the Unknown Hulk: the hulk close on the map, and the strip line 'Quest complete: Find the Derelict'"),
-    "game_l1_tile": ("game", "Helm, the handheld icon (top left) pressed, just after Find the Derelict completes: the page of tiles, with the Boarding Party tile and its line 'Ferrow Landing'"),
-    "game_l1_app": ("game", "Helm, the Boarding Party tile pressed: 'Going down to Ferrow Landing', the Helm officer's own face and name, the job helm, and the BEAM DOWN button"),
-    "game_l1_field": ("game", "Helm, BEAM DOWN pressed: the handheld (xESS) on its Act app. The bar: the officer's name, then helm and The Landing Field. One of the room's two lines, and six buttons: four ending '(covering for medical)', '(covering for engineering)', '(covering for security)', '(covering for science)', then Walk in with her and Beam back up"),
-    "game_l1_medic": ("game", "Helm's handheld after 'Look at the people meeting you (covering for medical)': the page keeps the landing field's line, then who chose and the choice, then one of The People Meeting You's two lines and its one button, Say it out loud"),
-    "game_l1_hall": ("game", "Helm's handheld after Say it out loud, then Walk in with her: the bar reads The Long Hall; one of its two lines; six buttons (four covering, Ask to see the east cable, Beam back up)"),
+    "game_l1_tile": ("game", "Helm, the handheld icon (top left) pressed, just after Find the Derelict completes: the page of tiles, with the Boarding Party tile and its line 'Ferrow Landing' ('Boarding Party' on the tile is cut to 'Boardin': awaiting a re-shoot after the library fix)"),
+    "game_l1_app": ("game", "Helm, the Boarding Party tile pressed: 'Going down to Ferrow Landing', the Helm officer's own face and name, the job helm, and the BEAM DOWN button."),
+    "game_l1_field": ("game", "Helm, BEAM DOWN pressed: the handheld (xESS) on its Act app. The bar: the officer's name and helm at the left, The Landing Field at the right. One of the room's two lines, and six buttons: Walk in with her and Beam back up FIRST, then four ending '(covering for medical)', '(covering for engineering)', '(covering for security)', '(covering for science)'"),
+    "game_l1_medic": ("game", "Helm's handheld after 'Look at the people meeting you (covering for medical)': the page keeps the landing field's line, then who chose and the choice (with no covering words), then one of The People Meeting You's two lines and its one button, Say it out loud"),
+    "game_l1_hall": ("game", "Helm's handheld after Say it out loud, then Walk in with her: the bar reads The Long Hall; one of its two lines; six buttons (Ask to see the east cable, Beam back up, then the four covering)"),
     "game_l1_cable_shut": ("game", "Helm's handheld, Ask to see the east cable pressed with ONE thing found (only the medic's reading taken): the bar reads The East Cable; its line; the buttons Ask her plainly what is in the shed, Let her show you the orchard, Walk back to the hall, Beam back up, and NO Open it"),
-    "game_l1_cable_open": ("game", "Helm's handheld at The East Cable again, after the engineering and security covering readings in the long hall (three things found): Open it is now among the buttons"),
+    "game_l1_cable_open": ("game", "Helm's handheld at The East Cable again, after the engineering and security covering readings in the long hall (three things found): Open it is now the second button"),
     # drawn
     "card_title": ("card", "title", {}),
     "card_why": ("card", "points", {"kicker": "A mission of its own", "items": [
@@ -144,12 +146,41 @@ STILLS = {
 
 _FIELD = ("lines", 65, 74)       # e_field: The Landing Field
 
+# Game stills, 1280x960, marks as fractions of the frame (taken 2026-10-15)
+_HS_ZOOM = ("rect", 0.385, 0.045, 0.44, 0.115)       # game_l1_helm_start: the magnifier pressed once
+_HS_HULK = ("rect", 0.57, 0.24, 0.625, 0.33)         # ... the hulk, an unnamed mark at 22, 8K
+_HN_HULK = ("rect", 0.465, 0.455, 0.575, 0.525)      # game_l1_near: 'Unknown Hulk', 1824 off
+_HN_STRIP = ("rect", 0.015, 0.49, 0.275, 0.53)       # ... 'Quest complete: Find the Derelict'
+_HN_SPD = ("rect", 0.02, 0.565, 0.1, 0.6)            # ... SPD 0.01
+_TI_TILES = ("rect", 0.0, 0.12, 0.99, 0.79)          # game_l1_tile: the page of tiles
+_TI_BOARD = ("rect", 0.0, 0.155, 0.325, 0.335)       # ... the Boarding Party tile, Ferrow Landing
+_AP_HEAD = ("rect", 0.03, 0.06, 0.35, 0.1)           # game_l1_app: 'Boarding Party' 'Ferrow Landing'
+_AP_BEAM = ("rect", 0.02, 0.235, 0.98, 0.29)         # ... BEAM DOWN
+_FI_BAR = ("rect", 0.005, 0.06, 0.99, 0.13)          # game_l1_field: the bar
+_FI_ROOM = ("rect", 0.655, 0.095, 0.79, 0.128)       # ... the room, The Landing Field
+_FI_LINE = ("rect", 0.01, 0.21, 0.59, 0.245)         # ... the room's line
+_FI_ALL = ("rect", 0.01, 0.2, 0.74, 0.42)            # ... the line and the six buttons
+_FI_PLAIN = ("rect", 0.01, 0.26, 0.302, 0.31)        # ... Walk in with her, Beam back up (first)
+_FI_COVER = [("rect", 0.305, 0.26, 0.735, 0.31),     # ... the four covering choices, after them
+             ("rect", 0.01, 0.315, 0.73, 0.418)]
+_FI_MED = ("rect", 0.305, 0.26, 0.735, 0.31)         # ... '(covering for medical)'
+_ME_FOUND = ("rect", 0.01, 0.39, 0.915, 0.49)        # game_l1_medic: what a medic notices, Say it out loud
+_ME_PICK = ("rect", 0.01, 0.255, 0.28, 0.37)         # ... the pick, with no covering words
+_HA_ROOM = ("rect", 0.655, 0.095, 0.76, 0.128)       # game_l1_hall: The Long Hall
+_HA_COVER = ("rect", 0.01, 0.8, 0.825, 0.955)        # ... the hall's buttons, covering ones last
+_CS_ROOM = ("rect", 0.655, 0.095, 0.765, 0.128)      # game_l1_cable_shut: The East Cable
+_CS_CHIPS = ("rect", 0.01, 0.93, 0.87, 0.98)         # ... four buttons, no Open it
+_CO_OPEN = ("rect", 0.297, 0.932, 0.383, 0.98)       # game_l1_cable_open: Open it
+_CO_BEAM = ("rect", 0.825, 0.932, 0.96, 0.98)        # ... Beam back up
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
         # the game first: the Helm console, now the handheld
         {"from": 0, "still": "game_l1_field"},
         {"from": 1, "still": "game_l1_helm_start"},
-        {"from": 2, "still": "game_l1_field"},
+        {"from": 2, "still": "game_l1_field", "marks": [_FI_BAR]},
+        {"from": 3, "still": "game_l1_field", "marks": [_FI_ROOM]},
+        {"from": 4, "still": "game_l1_field", "marks": [_FI_LINE]},
         {"from": 5, "still": "e_mid1"},
         {"from": 7, "still": "card_title"},
     ]},
@@ -165,50 +196,65 @@ BOARD = {
     "s03_borrow_a_scene": {"step": None, "beats": [
         # the game first: the room on the handheld
         {"from": 0, "still": "game_l1_field"},
+        {"from": 3, "still": "game_l1_field", "marks": [_FI_ROOM]},
+        {"from": 4, "still": "game_l1_field", "marks": [_FI_ALL]},
         {"from": 6, "still": "e_end0", "marks": [("lines", 55, 60)]},
         {"from": 7, "still": "e_field", "marks": [("lines", 63, 74)]},
         {"from": 8, "still": "e_mid1"},
         {"from": 9, "still": "t_p1", "marks": [("span", 1, "section-not-loaded")]},
         {"from": 10, "still": "t_p1", "marks": [("span", 1, "boarding")]},
         # the game first: the tile that names the visit
-        {"from": 12, "still": "game_l1_tile"},
+        {"from": 12, "still": "game_l1_tile", "marks": [_TI_TILES]},
+        {"from": 13, "still": "game_l1_tile", "marks": [_TI_BOARD]},
         {"from": 15, "still": "m_end0", "marks": [("lines", 103, 105)]},
         {"from": 16, "still": "m_card", "marks": [("lines", 108, 115)]},
         {"from": 17, "still": "t_final", "marks": [("part", "run1:clean")]},
     ]},
     "s04_play_it": {"step": None, "beats": [
         {"from": 0, "still": "game_l1_helm_start"},
-        {"from": 2, "still": "game_l1_near"},
-        {"from": 3, "still": "game_l1_tile"},
-        {"from": 4, "still": "game_l1_app"},
-        {"from": 5, "still": "game_l1_field"},
-        {"from": 11, "still": "game_l1_medic"},
-        {"from": 12, "still": "game_l1_cable_shut"},
-        {"from": 15, "still": "game_l1_hall"},
-        {"from": 16, "still": "game_l1_cable_open"},
+        {"from": 2, "still": "game_l1_helm_start", "marks": [_HS_ZOOM]},
+        {"from": 3, "still": "game_l1_helm_start", "marks": [_HS_HULK]},
+        {"from": 5, "still": "game_l1_near", "marks": [_HN_HULK]},
+        {"from": 6, "still": "game_l1_near", "marks": [_HN_STRIP]},
+        {"from": 7, "still": "game_l1_near", "marks": [_HN_SPD]},
+        {"from": 8, "still": "game_l1_tile"},
+        {"from": 9, "still": "game_l1_tile", "marks": [_TI_BOARD]},
+        {"from": 9.6, "still": "game_l1_app", "marks": [_AP_BEAM]},
+        {"from": 10, "still": "game_l1_field", "marks": [_FI_BAR]},
+        {"from": 11, "still": "game_l1_field", "marks": [_FI_PLAIN]},
+        {"from": 12, "still": "game_l1_field", "marks": _FI_COVER},
+        {"from": 15, "still": "game_l1_field", "marks": [_FI_MED]},
+        {"from": 16, "still": "game_l1_medic", "marks": [_ME_FOUND]},
+        {"from": 17, "still": "game_l1_medic", "marks": [_ME_PICK]},
+        {"from": 19, "still": "game_l1_hall", "marks": [_HA_ROOM]},
+        {"from": 20, "still": "game_l1_cable_shut", "marks": [_CS_ROOM]},
+        {"from": 21, "still": "game_l1_cable_shut", "marks": [_CS_CHIPS]},
+        {"from": 23, "still": "game_l1_hall", "marks": [_HA_COVER]},
+        {"from": 24, "still": "game_l1_cable_open", "marks": [_CO_OPEN]},
     ]},
     "s05_read_what_you_pasted": {"step": None, "beats": [
         # the game first: the room as the crew sees it
         {"from": 0, "still": "game_l1_field"},
+        {"from": 2, "still": "game_l1_field", "marks": [_FI_ROOM, _FI_ALL]},
         {"from": 3, "still": "e_field", "marks": [("hashes", 63)]},
         {"from": 4, "still": "e_field", "marks": [_FIELD]},
         {"from": 5, "still": "e_field", "marks": [("lines", 65, 65)]},
         {"from": 6, "still": "e_field", "marks": [("text", 66, "%"), ("text", 67, "%")]},
         {"from": 8, "still": "e_field", "marks": [("lines", 66, 67)]},
-        {"from": 9, "still": "game_l1_field"},
+        {"from": 9, "still": "game_l1_field", "marks": [_FI_LINE]},
         {"from": 10, "still": "e_field", "marks": [("lines", 69, 74)]},
         {"from": 11, "still": "e_field", "marks": [("text", 73, "[Walk in with her]")]},
         {"from": 12, "still": "e_field", "marks": [("text", 73, "(hall)")]},
         {"from": 13, "still": "e_field", "marks": [("text", 69, "if medical >= 1")]},
-        {"from": 15, "still": "game_l1_field"},
+        {"from": 15, "still": "game_l1_field", "marks": [_FI_MED]},
         {"from": 16, "still": "e_field", "marks": [("text", 69, "; learn thin")]},
         # the game first: the door, shut and then open
-        {"from": 18, "still": "game_l1_cable_shut"},
-        {"from": 19, "still": "game_l1_cable_open"},
+        {"from": 18, "still": "game_l1_cable_shut", "marks": [_CS_CHIPS]},
+        {"from": 19, "still": "game_l1_cable_open", "marks": [_CO_OPEN]},
         {"from": 20, "still": "e_cable", "marks": [("lines", 141, 141)]},
         {"from": 21, "still": "e_cable", "marks": [("text", 141, "if learned >= 3")]},
         {"from": 22, "still": "e_cable", "marks": [("text", 144, "()")]},
-        {"from": 24, "still": "game_l1_cable_open"},
+        {"from": 24, "still": "game_l1_cable_open", "marks": [_CO_BEAM]},
     ]},
     "s06_read_the_rest_of_the_file": {"step": None, "beats": [
         {"from": 0, "still": "card_file"},

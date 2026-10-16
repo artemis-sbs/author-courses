@@ -48,10 +48,14 @@ Seen on a real screen by the earlier pilot, with two real consoles on the bridge
 hulk: the two bars, two buttons on Engineering and three on Science, and roll lines one to
 a line above the room's own line.
 
-Not seen by anyone. If one is not as described, stop and fix the page:
-
-1. A real roll made by pressing the button, and the room that follows it.
-2. This rewrite's files in the real game.
+> **Seen in the real engine, 2026-10-15** (state g_flat; server, Engineering, Science,
+> then Engineering alone). On the bridge Dr Hale has Pull the sensor record and Chief
+> Okoro does not; in the reactor room both have Try to wake the core. A roll prints one
+> line, `Dr Hale - engineering 0, rolled 5: 5 vs 9, failure.`, then the room's line, and
+> both rolls are on both consoles' pages. The party moves together: Dr Hale's Step back
+> took the chief back too. Engineering alone gets the suit tags as the LAST button, on a
+> row of its own, and no sensor record. Awaiting a re-shoot after library fixes: the
+> faces of Chief Okoro and Dr Hale over their picks, which did not draw.
 
 ## Scenes
 

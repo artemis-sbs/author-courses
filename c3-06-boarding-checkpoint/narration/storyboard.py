@@ -16,11 +16,13 @@ the finished Scenes section in VS Code, with marks where the pencil goes.
 NO COMMAND STARTS THE GAME HERE. `sbs run server,helm,engineering,science -m MyBoarding
 map=0` is a drawn card of the page's own words (card_run).
 
-GAME STILLS. Not taken yet (marks to be set from the screenshots). The handheld a party
+GAME STILLS. Taken in the real engine 2026-10-15; marks set from the screenshots. The handheld a party
 member carries is the xESS: BEAM DOWN turns the console into it, Act opens by itself on
 each new room (a running transcript, the newest room at the foot, its choices as buttons),
-and Back (top right of the ACT title line) goes to the tile sheet. A choice that nobody
-present holds the job for is offered to one console as `<choice> (covering for <job>)`.
+and Back (top right of the ACT title line) goes to the xESS home list (Crew, Act, Tasks).
+A choice that nobody
+present holds the job for is offered to one console as `<choice> (covering for <job>)`, LAST in the row (which
+console is not predictable: in Game 1 the quartermaster cover went to the chief).
 The Quest Log is a bridge console's handheld (icon top left), then Quests; `Quest
 complete:` lines come on the strip under Helm's left panel. At most three windows, so the
 script's "three aboard" is never on one screen: Mr Pell (Helm) stays home in every game.
@@ -262,7 +264,7 @@ STILLS = {
     "e_sc3": ("vscode", "final", 226, "mid", _NS),           # lines 212 to 240
     "t_l1": ("terminal", [("l1", _LINT)]),
     "t_final": ("terminal", [("final", _LINT)]),
-    # THE REAL GAME (not taken yet; see the docstring for the three games and the clicks)
+    # THE REAL GAME (taken 2026-10-15; see the docstring for the three games and the clicks)
     "game_cabin_sci": ("game", _G1 + ", step 2: Science (Dr Hale), Act on The Captain's Cabin: 'The captain's last order is taped to the desk: DO NOT WAKE US WITHOUT A DOCTOR...' and the buttons Throw the switch and wake them, Leave them sleeping and go for help, Go back to the spine"),
     "game_cabin_eng": ("game", _G1 + ", step 2, the same moment: Engineering (Chief Okoro), Act on The Captain's Cabin: the same line and the same three buttons"),
     "game_hold_sci": ("game", _G1 + ", step 1: Science (Dr Hale), Act on The Hold: 'Racks from deck to overhead...' and her buttons - Pull the cargo scanner's last sweep is hers alone (and Count the stores (covering for quartermaster) if the cover came to her)"),
@@ -270,12 +272,12 @@ STILLS = {
     "game_log_standby": ("game", _G1 + ", step 3: Science back at its station, the handheld, Quests, Stand By the Sleepers selected (Active if opened inside 30 seconds of the choice, else Done): Reward 300 credits, the order 'Hold station for 30 seconds while the crew wakes', the line, the hourglass icon with 'Thirty seconds, while the last of the lids come up.', and the last paragraph"),
     "game_log_account6": ("game", _G2 + ", step 1, before the visit: Helm's handheld, Quests, Account for the Crew selected: Active, Reward 150 credits, 'Find out what became of the hulk's crew', the sentence, the two-column table What / What DS 1 knows with three rows (registry, last call, power), and the closing line"),
     "game_alone_spine": ("game", _G2 + ", step 2: Engineering, Act on The Spine, nothing learned yet: '...The captain's hatch is sealed, and the panel beside it asks a question you cannot answer yet.' and four buttons (forward, aft, below, back to the airlock) - no captain's hatch"),
-    "game_alone_berths": ("game", _G2 + ", step 3: Engineering, Act on The Berth Deck: 'Read the berth monitors (covering for medical)' and Go back to the spine"),
+    "game_alone_berths": ("game", _G2 + ", step 3: Engineering, Act on The Berth Deck: Go back to the spine, then 'Read the berth monitors (covering for medical)' LAST"),
     "game_alone_strip": ("game", _G2 + ", step 3, after the chief takes the covered reading: Helm, the strip under the left panel, 'Quest complete: Account for the Crew'"),
-    "game_alone_hold": ("game", _G2 + ", step 4: Engineering, Act on The Hold: 'Count the stores (covering for quartermaster)' and Go back to the spine. The scanner's sweep is not offered at all"),
+    "game_alone_hold": ("game", _G2 + ", step 4: Engineering, Act on The Hold: Go back to the spine, then 'Count the stores (covering for quartermaster)' LAST. The scanner's sweep is not offered at all"),
     "game_alone_spine_open": ("game", _G2 + ", step 4, back on The Spine with three facts: '...and now you know what the panel beside it wants to hear.' and Open the captain's hatch at the top of the buttons"),
     "game_alone_end": ("game", _G2 + ", step 5: Engineering after Leave them sleeping and go for help: Lights Out's line 'You close the hatch on twelve sleepers and the cold...' and the one button Return to the ship"),
-    "game_log_carry": ("game", _G2 + ", step 5, at once: Helm, Quests, Carry Word Home selected, Active: Reward 200 credits, 'Return to within 1000 of DS 1', the line, DS 1's picture with 'DS 1, and the nearest doctor. Within 1000 of her is close enough.', and the last paragraph. Stand By the Sleepers is not in the list"),
+    "game_log_carry": ("game", _G2 + ", step 5, at once: Helm, Quests, Carry Word Home selected, Active: Reward 200 credits, 'Return to within 1000 of DS 1', the line, 'DS 1, and the nearest doctor. Within 1000 of her is close enough.' over a small picture of DS 1, and the last paragraph. Stand By the Sleepers is not in the list"),
     "game_walk_airlock": ("game", _G3 + ", step 1: Engineering, Act on The Airlock: 'The inner door stands open...' and the buttons Go inboard, to the spine and Return to the ship"),
     "game_walk_gone": ("game", _G3 + ", step 2, after one press of Return to the ship: Engineering back at its station with its handheld open - no Boarding Party tile any more (the visit is over and cannot be joined again)"),
     # drawn: the paper, and the rest
@@ -295,12 +297,33 @@ STILLS = {
     "card_exercise": ("card", "list", {"heading": "Exercise", "kicker": "Now write your own"}),
 }
 
+# Game stills, 1280x960, marks as fractions of the frame (taken 2026-10-15)
+_CB_SWITCH = ("rect", 0.01, 0.855, 0.945, 0.95)      # game_cabin_sci / _eng: DO NOT WAKE US, and the three buttons
+_CB_ENDS = ("rect", 0.01, 0.9, 0.588, 0.95)          # ... Throw the switch, Leave them sleeping
+_LS_PAGE = ("rect", 0.385, 0.075, 0.97, 0.355)       # game_log_standby: Stand By the Sleepers' page
+_LS_ROW = ("rect", 0.0, 0.288, 0.38, 0.36)           # ... its row, Active
+_LS_HOUR = ("rect", 0.395, 0.24, 0.785, 0.285)       # ... the hourglass line
+_LC_PAGE = ("rect", 0.385, 0.075, 0.99, 0.455)       # game_log_carry: Carry Word Home's page
+_LC_PIC = ("rect", 0.385, 0.24, 0.965, 0.35)         # ... DS 1's line over its picture
+_LA_TABLE = ("rect", 0.385, 0.24, 0.875, 0.38)       # game_log_account6: the What / What DS 1 knows list
+_LA_ROW = ("rect", 0.0, 0.36, 0.38, 0.43)            # ... Account for the Crew, Active
+_SO_HATCH = ("rect", 0.01, 0.755, 0.225, 0.88)       # game_alone_spine_open: the line, Open the captain's hatch
+_SP_FOUR = ("rect", 0.01, 0.39, 0.875, 0.52)         # game_alone_spine: 'cannot answer yet', four buttons
+_BE_COVER = ("rect", 0.195, 0.65, 0.574, 0.7)        # game_alone_berths: the covering button, last
+_ST_LINE = ("rect", 0.015, 0.49, 0.275, 0.56)        # game_alone_strip: 'Quest complete: Account for the Crew'
+_AH_COVER = ("rect", 0.195, 0.9, 0.565, 0.95)        # game_alone_hold: Count the stores (covering ...), last
+_AE_END = ("rect", 0.01, 0.855, 0.83, 0.95)          # game_alone_end: Lights Out, Return to the ship
+_HS_SWEEP = ("rect", 0.01, 0.9, 0.3, 0.95)           # game_hold_sci: Pull the cargo scanner's last sweep
+_HE_NONE = ("rect", 0.01, 0.9, 0.565, 0.95)          # game_hold_eng: no sweep
+_WA_HOME = ("rect", 0.222, 0.26, 0.388, 0.31)        # game_walk_airlock: Return to the ship
+_WG_TILES = ("rect", 0.0, 0.12, 0.99, 0.72)          # game_walk_gone: the ePADD, no Boarding Party tile
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
-        {"from": 0, "still": "game_cabin_sci"},
-        {"from": 2, "still": "game_cabin_eng"},
-        {"from": 3, "still": "game_log_standby"},
-        {"from": 3.5, "still": "game_log_carry"},
+        {"from": 0, "still": "game_cabin_sci", "marks": [_CB_SWITCH]},
+        {"from": 2, "still": "game_cabin_eng", "marks": [_CB_ENDS]},
+        {"from": 3, "still": "game_log_standby", "marks": [_LS_PAGE]},
+        {"from": 3.5, "still": "game_log_carry", "marks": [_LC_PAGE]},
         {"from": 4, "still": "card_title"},
     ]},
     "s02_three_sentences": {"step": 1, "beats": [
@@ -331,6 +354,7 @@ BOARD = {
     "s05_type_it_in_layers": {"step": None, "beats": [
         # the game first: where the typing is going
         {"from": 0, "still": "game_alone_spine_open"},
+        {"from": 1, "still": "game_alone_spine_open", "marks": [_SO_HATCH]},
         {"from": 2, "still": "e_l1", "marks": [("hashes", n) for n in (130, 136, 144, 149, 154)]},
         {"from": 4, "still": "t_l1", "marks": [("span", 1, "unfired-signal")]},
         {"from": 5.6, "still": "e_l2", "marks": [("lines", 147, 147), ("lines", 158, 158), ("lines", 169, 170)]},
@@ -341,23 +365,29 @@ BOARD = {
         {"from": 8, "still": "e_l5_cabin", "marks": [("text", 227, "accepts stand_by")]},
         {"from": 9, "still": "e_l5_cabin", "marks": [("lines", 231, 234)]},
         # the game first: the two ending pages in the Quest Log
-        {"from": 10, "still": "game_log_standby"},
-        {"from": 12, "still": "game_log_carry"},
-        {"from": 13, "still": "e_l5_q", "marks": [("text", 83, "icon://hourglass"), ("text", 97, "ship://starbase_command")]},
-        {"from": 14, "still": "e_final_stories", "marks": [("lines", 245, 262)]},
-        {"from": 15, "still": "t_final", "marks": [("part", "run1:clean")]},
+        {"from": 10, "still": "game_log_standby", "marks": [_LS_ROW]},
+        {"from": 11, "still": "game_log_standby", "marks": [_LS_PAGE]},
+        {"from": 12, "still": "game_log_carry", "marks": [_LC_PAGE]},
+        {"from": 13, "still": "game_log_standby", "marks": [_LS_HOUR]},
+        {"from": 13.5, "still": "e_l5_q", "marks": [("text", 83, "icon://hourglass")]},
+        {"from": 14, "still": "game_log_carry", "marks": [_LC_PIC]},
+        {"from": 14.5, "still": "e_l5_q", "marks": [("text", 97, "ship://starbase_command")]},
+        {"from": 15, "still": "e_final_stories", "marks": [("lines", 245, 262)]},
+        {"from": 16, "still": "t_final", "marks": [("part", "run1:clean")]},
     ]},
     "s06_a_quest_any_party_can_finish": {"step": 8, "beats": [
         # the game first: the ship's quest's new page
         {"from": 0, "still": "game_log_account6"},
+        {"from": 1, "still": "game_log_account6", "marks": [_LA_ROW]},
+        {"from": 2, "still": "game_log_account6", "marks": [_LA_TABLE]},
         {"from": 2.5, "still": "e_final_acc", "marks": [("lines", 66, 70)]},
         {"from": 3, "still": "e_final_acc", "marks": [("text", 61, "Done when: signal berths_read")]},
         {"from": 4, "still": "e_l5_acc", "marks": [("text", 61, "Done when: signal names_known")]},
         {"from": 5, "still": "card_wire", "marks": [("part", "r2")]},
         {"from": 7, "still": "e_final_berths", "marks": [("text", 178, "signal berths_read")]},
         {"from": 8, "still": "card_wire", "marks": [("part", "r1")]},
-        {"from": 9, "still": "game_alone_berths"},
-        {"from": 9.5, "still": "game_alone_strip"},
+        {"from": 9, "still": "game_alone_berths", "marks": [_BE_COVER]},
+        {"from": 9.5, "still": "game_alone_strip", "marks": [_ST_LINE]},
     ]},
     "s07_five_checks_with_a_pencil": {"step": 9, "beats": [
         {"from": 0, "still": "t_final", "marks": [("part", "run1:clean")]},
@@ -377,15 +407,17 @@ BOARD = {
     ]},
     "s08_play_it_three_times": {"step": 11, "beats": [
         {"from": 0, "still": "card_run", "marks": [("part", "item1")]},
-        {"from": 1, "still": "game_alone_spine"},
-        {"from": 2, "still": "game_alone_berths"},
-        {"from": 2.5, "still": "game_alone_hold"},
-        {"from": 3, "still": "game_alone_end"},
+        {"from": 1, "still": "game_alone_spine", "marks": [_SP_FOUR]},
+        {"from": 2, "still": "game_alone_berths", "marks": [_BE_COVER]},
+        {"from": 2.5, "still": "game_alone_hold", "marks": [_AH_COVER]},
+        {"from": 3, "still": "game_alone_end", "marks": [_AE_END]},
         {"from": 4, "still": "game_hold_sci"},
-        {"from": 5.5, "still": "game_hold_eng"},
+        {"from": 5, "still": "game_hold_sci", "marks": [_HS_SWEEP]},
+        {"from": 5.5, "still": "game_hold_eng", "marks": [_HE_NONE]},
         {"from": 6, "still": "card_beats", "marks": [("part", "r10")]},
         {"from": 8, "still": "game_walk_airlock"},
-        {"from": 10, "still": "game_walk_gone"},
+        {"from": 9, "still": "game_walk_airlock", "marks": [_WA_HOME]},
+        {"from": 10, "still": "game_walk_gone", "marks": [_WG_TILES]},
         {"from": 11, "still": "e_sc1", "marks": [("lines", 162, 163)]},
     ]},
     "s09_your_turn": {"step": None, "beats": [

@@ -264,7 +264,9 @@ sbs run server,helm,engineering -m MyBoarding map=0
 
 1. Look at the top of the Engineering console, beside the handheld icon. The name there
    is Chief Okoro.
-2. At Helm, fly to within 500 of the hulk. Close Inspection completes.
+2. At Helm, fly to within 500 of the hulk. At the start it is off the map: zoom the map
+   out once, and it is the mark with no name ahead; its name appears within about 4K.
+   Close Inspection completes inside 500.
 3. On the Engineering console, press the handheld icon. One of its tiles is **Boarding
    Party**, and it offers The Hulk.
 4. Press the tile, then press **BEAM DOWN**. The console becomes the boarding party's
@@ -277,7 +279,8 @@ sbs run server,helm,engineering -m MyBoarding map=0
    console is back at Engineering without another press.
 
 The Helm console can beam down too. It is not on your roster, so it goes as whoever the
-game named it, with the job `helm`.
+game named it, with the job `helm`. The party moves together: both consoles show the same
+page, and either one's button takes everyone to the next room.
 
 ## If something goes wrong
 

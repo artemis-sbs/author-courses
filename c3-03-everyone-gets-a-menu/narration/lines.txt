@@ -70,13 +70,16 @@ s07_play_it_2	no log, and the line says why. Back.
 s07_play_it_3	She reads the tags. Aft.
 s07_play_it_4	He reads the record. Forward again,
 s07_play_it_5	and the line has changed, and there's the log.
-s07_play_it_6	Now watch what happens when the doctor stays behind on the ship.
-s07_play_it_7	Same room, one person,
-s07_play_it_8	and her reading comes to me, marked as covering for medical.
-s07_play_it_9	A short crew still finishes the story.
-s07_play_it_10	And the covering only happens for a job,
-s07_play_it_11	one that's on your roster, or one of the game's standard jobs.
-s07_play_it_12	A word that's nobody's job isn't offered to anyone.
+s07_play_it_6	Both consoles show the same page,
+s07_play_it_7	and either one's button moves the whole party.
+s07_play_it_8	Now watch what happens when the doctor stays behind on the ship.
+s07_play_it_9	Same room, one person,
+s07_play_it_10	and her reading comes to me,
+s07_play_it_11	last in the row, marked as covering for medical.
+s07_play_it_12	A short crew still finishes the story.
+s07_play_it_13	And the covering only happens for a job,
+s07_play_it_14	one that's on your roster, or one of the game's standard jobs.
+s07_play_it_15	A word that's nobody's job isn't offered to anyone.
 s08_your_turn_0	Your third crew member has a job you made up.
 s08_your_turn_1	Give them a reading on the bridge,
 s08_your_turn_2	and leave the log at two.

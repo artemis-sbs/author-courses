@@ -260,13 +260,14 @@ sbs run server,helm,engineering,science -m MyBoarding map=0
 3. Go back, then aft to the reactor. Both consoles are offered **Try to wake the core**.
 4. Let Dr Hale try. The page shows her roll, with `engineering 0` in it. Most times she
    lands in The Board Stays Dark.
-5. Step back. Let Chief Okoro try. This roll says `engineering 4`.
+5. Step back. Let Chief Okoro try. This roll says `engineering 4`. Either console's Step
+   back takes the whole party, and both rolls stay on both pages.
 
 Look at the number in the roll line. If the chief's line says `engineering 2`, the game is
 not reading his `Skills:` line. Run lint: the line is misspelled, or its entry is.
 
 **With Engineering alone aboard**: you are Chief Okoro. The suit tags come to you marked
-as covering, as they did last time. The sensor record does not come to you at all. You can
+as covering, as the last button, as they did last time. The sensor record does not come to you at all. You can
 still try the core.
 
 Nothing on the handheld shows a person their own skill numbers. The only number a player

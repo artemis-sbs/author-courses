@@ -184,7 +184,8 @@ Start the game with Helm to fly, and the two people on your roster:
 sbs run server,helm,engineering,science -m MyBoarding map=0
 ```
 
-1. Fly inside 500 of the hulk. On Engineering and on Science, press the handheld icon,
+1. Fly inside 500 of the hulk (zoom Helm's map out once to find it: it is the mark with
+   no name until you are within about 4K). On Engineering and on Science, press the handheld icon,
    open **Boarding Party** and press **BEAM DOWN**.
 2. In the airlock, the Science console (Dr Hale) is offered **Read the name tags on the
    suits**. The Engineering console is not.
@@ -192,11 +193,12 @@ sbs run server,helm,engineering,science -m MyBoarding map=0
 4. Go back. Dr Hale reads the suit tags. Go aft. Chief Okoro reads the shutdown record.
 5. Go forward again. The line has changed, and **Answer the log** is there for both.
 
-The party moves together. When anyone picks a way out, everyone goes.
+The party moves together. When anyone picks a way out, everyone goes. Both consoles show
+the same page, with every pick written under the name of the person who made it.
 
 **With Engineering alone aboard**, leave the Science console at its own station, aboard the ship. You are Chief
 Okoro, and there is no surgeon in the party. The game hands her reading to you, marked so
-you know whose it is:
+you know whose it is. It is the last button, after Return to the ship:
 
 ```
 Read the name tags on the suits (covering for medical)

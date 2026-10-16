@@ -90,6 +90,14 @@ Not seen by anyone. If one is not as described, stop and fix the page:
 4. Whether Open Universe is in a student's install. The page says the student does not
    need it, and quotes everything it uses.
 
+> **Seen in the real engine, 2026-10-15** (Helm, state final). At Helm's default zoom the
+> hulk is off the map; one zoom-out shows it as an unnamed mark, and its name appears only
+> within about 4K. On the handheld the covering choices come LAST in the button row, after
+> the room's own choices. A pick is written into the page without its `(covering for ...)`
+> words. The page keeps the whole visit, newest at the foot. The Helm officer's name is
+> random: do not quote it. Awaiting a re-shoot after library fixes: the Boarding Party
+> tile's title, which is cut to "Boardin" when the tile also names Ferrow Landing.
+
 > One thing to know before recording with more than one console. If the visit opens while
 > nobody at all is at a console, the people who join afterwards are offered no covering
 > choices, and a short crew cannot open the shed. On this page the visit opens when Helm
@@ -144,20 +152,24 @@ paste the card. || Now lint is clean. ||"
 
 ### 4. Play it
 
-**Screen:** Command prompt: `sbs run server,helm -m MyBoarding map=0`. Fly toward the
-hulk; stop inside 2000. Press the handheld icon; the Boarding Party tile; BEAM DOWN. Read
-the buttons. Take one covering choice and come back. Walk in. Ask to see the east cable.
-Walk back, take more readings. East cable again: Open it. The last room. Its one button.
+**Screen:** Command prompt: `sbs run server,helm -m MyBoarding map=0`. On Helm, zoom the
+map out once: the hulk is the unnamed mark ahead. Fly toward it; it is named once the ship
+is within about 4K. Stop inside 2000. Press the handheld icon; the Boarding Party tile;
+BEAM DOWN. Read the buttons: the two plain ones first, the four covering ones after them.
+Take one covering choice and come back. Walk in. Ask to see the east cable. Walk back, take
+more readings. East cable again: Open it. The last room. Its one button.
 
-**Say:** "I start the game with a server and a Helm console, | and I fly toward the hulk.
-|| When I'm close, I stop the ship, | and I open the handheld. ||| There's a tile called
-Boarding Party, and it's offering Ferrow Landing. I beam down. ||| Now this console is my
-handheld. || Two of these buttons are plain. | The others say covering, | and then a job.
-|| Those belong to people who aren't here, | and I'm one helm officer, so they all come to
-me. I take one, | and I read what a medic would've noticed. I walk in. | I ask about the
-cable. || And she won't open the shed, | because I haven't found enough to say out loud.
-||| So I go back and look harder. || Three things found out, | and now the button's there.
-||"
+**Say:** "I start the game with a server and a Helm console. || At first the hulk is off
+the map, | so I zoom out once. || It's this mark up ahead, with no name yet, | and I fly
+toward it. || Close in, it gets its name, | and the first step of the quest completes. ||
+I stop the ship, | and I open the handheld. ||| There's a tile called Boarding Party, and
+it's offering Ferrow Landing. I beam down. ||| Now this console is my handheld. || The
+first two buttons are plain. | The ones after them say covering, | and then a job. ||
+Those belong to people who aren't here, | and I'm one helm officer, so they all come to
+me. I take one, | and I read what a medic would've noticed. || The page keeps my pick, |
+without the covering words. || I walk in, | and I ask about the cable. || And she won't
+open the shed, | because I haven't found enough to say out loud. ||| So I go back and look
+harder. || Three things found out, | and now the button's there. ||"
 
 ### 5. Read what you pasted
 

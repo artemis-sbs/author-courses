@@ -8,8 +8,8 @@ example laid over it). Only mission.amd changes: the medic's reading and its roo
 "m2"), the engineer's reading and its room ("m3", "m4"), the log and the last room ("m5",
 "m6"), and the bridge's two conditional lines ("final", the page's own example\\mission.amd).
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. THREE windows, and no
-Helm: state g_wait is PROBE-ONLY (never shown in the editor), Close Inspection's
+GAME STILLS. Taken in the real engine 2026-10-15; marks set from the screenshots. THREE
+windows, and no Helm: state g_wait is PROBE-ONLY (never shown in the editor), Close Inspection's
 `Done when: reach derelict 500` replaced by `Done when: 90 seconds`, so the party forms
 90 seconds into the game with nobody flying (90, not 10: the consoles must be seated when
 the visit opens, or nobody is offered a covering choice - a known library defect). The
@@ -109,9 +109,9 @@ STILLS = {
     "t_lern": ("terminal", [("b_lern", _LINT)]),
     "t_sign": ("terminal", [("b_sign", _LINT)]),
     "t_medcal": ("terminal", [("b_medcal", _LINT)]),
-    # THE REAL GAME (not taken yet). State g_wait, consoles server,engineering,science (see the docstring)
+    # THE REAL GAME (taken 2026-10-15). State g_wait, consoles server,engineering,science (see the docstring)
     "game_l3_sci_airlock": ("game", "GAME A, Science (Dr Hale), both consoles just beamed down: the handheld's bar Dr Hale, medical, The Airlock; the airlock's line; FOUR buttons, the first 'Read the name tags on the suits', then Go aft, Go forward, Return to the ship"),
-    "game_l3_eng_airlock": ("game", "GAME A, Engineering (Chief Okoro), the same moment: the bar Chief Okoro, engineering, The Airlock; the same line; THREE buttons, no name tags"),
+    "game_l3_eng_airlock": ("game", "GAME A, Engineering (Chief Okoro): the bar Chief Okoro, engineering, The Airlock; the same line; THREE buttons, no name tags. KEPT: Engineering back in the airlock after the bridge (its menu did not repaint when Dr Hale beamed down); awaiting a re-shoot at the same moment after the library fix"),
     "game_l3_bridge_early": ("game", "GAME A, Engineering, Go forward, to the bridge pressed before any reading: the bar The Bridge; the line '...locked behind a question you cannot answer yet.'; one button, Go back to the airlock, no Answer the log"),
     "game_l3_suits": ("game", "GAME A, Science, back in the airlock, 'Read the name tags on the suits' pressed: Dr Hale and her choice on the page, then Six Suits' line and its one button, Step back"),
     "game_l3_eng_reactor": ("game", "GAME A, Engineering, Go aft, toward the reactor pressed: the bar The Reactor Room; its line; two buttons, 'Read the shutdown record' and Go back to the airlock"),
@@ -119,7 +119,7 @@ STILLS = {
     "game_l3_shutdown": ("game", "GAME A, Engineering, 'Read the shutdown record' pressed: Chief Okoro and his choice on the page, then The Shutdown Record's line and Step back"),
     "game_l3_bridge_late": ("game", "GAME A, Engineering, at the bridge again after both readings: the line '...and now you know what it is going to ask.' and two buttons, Answer the log and Go back to the airlock"),
     "game_l3_last": ("game", "GAME A, Engineering, Answer the log pressed: The Last Entry's line ('...The last entry is one word: QUARANTINE.') and one button, Return to the ship"),
-    "game_l3_eng_alone": ("game", "GAME B, Engineering the only console down (Science left at its own screen): the airlock with FOUR buttons, the first 'Read the name tags on the suits (covering for medical)'"),
+    "game_l3_eng_alone": ("game", "GAME B, Engineering the only console down (Science left at its own screen): the airlock with FOUR buttons: Go aft, Go forward, Return to the ship, then LAST, on a second row, 'Read the name tags on the suits (covering for medical)'"),
     # drawn
     "card_title": ("card", "title", {}),
     "card_rules": ("card", "list", {"heading": "Step 5 - Three rules for a menu", "kicker": "Three rules for a menu"}),
@@ -128,17 +128,39 @@ STILLS = {
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 4", "sub": "Crew and skills"}),
 }
 
+# Game stills, 1280x960, marks as fractions of the frame (taken 2026-10-15)
+_SA_BAR = ("rect", 0.005, 0.06, 0.99, 0.13)          # game_l3_sci_airlock: Dr Hale, medical, The Airlock
+_SA_CHIPS = ("rect", 0.01, 0.26, 0.895, 0.31)        # ... four buttons
+_SA_TAGS = ("rect", 0.01, 0.26, 0.278, 0.31)         # ... Read the name tags on the suits (first)
+_EA_CHIPS = ("rect", 0.01, 0.62, 0.625, 0.67)        # game_l3_eng_airlock: three buttons, no tags
+_BE_LINE = ("rect", 0.01, 0.385, 0.865, 0.49)        # game_l3_bridge_early: 'cannot answer yet', one button
+_SU_ROOM = ("rect", 0.655, 0.095, 0.72, 0.128)       # game_l3_suits: Six Suits
+_SU_READ = ("rect", 0.01, 0.62, 0.69, 0.85)          # ... Dr Hale, her pick, the line, Step back
+_SU_PAGE = ("rect", 0.01, 0.2, 0.86, 0.85)           # ... both people's picks on her page
+_ER_ROOM = ("rect", 0.655, 0.095, 0.785, 0.128)      # game_l3_eng_reactor: The Reactor Room
+_ER_HALE = ("rect", 0.01, 0.755, 0.235, 0.865)       # ... Dr Hale's 'Go aft' moved him too
+_ER_REC = ("rect", 0.01, 0.93, 0.235, 0.98)          # ... Read the shutdown record
+_SR_ONE = ("rect", 0.01, 0.93, 0.2, 0.98)            # game_l3_sci_reactor: one button
+_SD_READ = ("rect", 0.01, 0.695, 0.955, 0.98)        # game_l3_shutdown: his pick, the record, Step back
+_BL_LINE = ("rect", 0.01, 0.85, 0.81, 0.885)         # game_l3_bridge_late: 'now you know what it is going to ask'
+_BL_LOG = ("rect", 0.01, 0.9, 0.153, 0.95)           # ... Answer the log
+_LA_END = ("rect", 0.01, 0.885, 0.605, 0.98)         # game_l3_last: QUARANTINE, Return to the ship
+_AL_COVER = ("rect", 0.01, 0.315, 0.443, 0.362)      # game_l3_eng_alone: the covering button, last
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
-        {"from": 0, "still": "game_l3_sci_airlock"},
-        {"from": 2, "still": "game_l3_eng_airlock"},
-        {"from": 3, "still": "game_l3_bridge_early"},
+        {"from": 0, "still": "game_l3_sci_airlock", "marks": [_SA_CHIPS]},
+        {"from": 1, "still": "game_l3_sci_airlock", "marks": [_SA_TAGS]},
+        {"from": 2, "still": "game_l3_eng_airlock", "marks": [_EA_CHIPS]},
+        {"from": 3, "still": "game_l3_bridge_early", "marks": [_BE_LINE]},
         {"from": 4, "still": "card_title"},
     ]},
     "s02_a_choice_for_one_job": {"step": 1, "beats": [
         # the game first: two menus in one room
-        {"from": 0, "still": "game_l3_sci_airlock"},
-        {"from": 3, "still": "game_l3_eng_airlock"},
+        {"from": 0, "still": "game_l3_sci_airlock", "marks": [_SA_BAR]},
+        {"from": 1, "still": "game_l3_sci_airlock", "marks": [_SA_CHIPS]},
+        {"from": 2, "still": "game_l3_sci_airlock", "marks": [_SA_TAGS]},
+        {"from": 3, "still": "game_l3_eng_airlock", "marks": [_EA_CHIPS]},
         {"from": 4, "still": "e_m1", "marks": [("lines", 106, 106)]},
         {"from": 5, "still": "e_m1", "marks": [("text", 106, "if medical ; learn suits")]},
         {"from": 6, "still": "e_m1", "marks": [("text", 106, "if medical")]},
@@ -149,22 +171,24 @@ BOARD = {
         {"from": 13, "still": "e_m1", "marks": [("text", 106, "(suits)")]},
         {"from": 14, "still": "e_m2", "marks": [("lines", 111, 114)]},
         {"from": 15, "still": "e_m2", "marks": [("lines", 114, 114)]},
-        {"from": 16, "still": "game_l3_suits"},
+        {"from": 16, "still": "game_l3_suits", "marks": [_SU_READ]},
     ]},
     "s03_the_other_job": {"step": 2, "beats": [
         # the game first: the reactor room, two handhelds
         {"from": 0, "still": "game_l3_eng_reactor"},
-        {"from": 1.6, "still": "game_l3_sci_reactor"},
+        {"from": 1, "still": "game_l3_eng_reactor", "marks": [_ER_REC]},
+        {"from": 1.6, "still": "game_l3_sci_reactor", "marks": [_SR_ONE]},
         {"from": 2, "still": "e_m3", "marks": [("lines", 119, 119)]},
         {"from": 3, "still": "e_m3", "marks": [("text", 119, "learn shutdown")]},
         {"from": 4, "still": "e_m4", "marks": [("lines", 122, 125)]},
-        {"from": 5, "still": "game_l3_shutdown"},
+        {"from": 5, "still": "game_l3_shutdown", "marks": [_SD_READ]},
         {"from": 6, "still": "card_rules", "marks": [("part", "item2")]},
         {"from": 7, "still": "e_m4", "marks": [("lines", 119, 119), ("lines", 122, 125)]},
     ]},
     "s04_a_door_that_opens_when_they_": {"step": 3, "beats": [
         # the game first: the lock, open
-        {"from": 0, "still": "game_l3_bridge_late"},
+        {"from": 0, "still": "game_l3_bridge_late", "marks": [_BL_LINE]},
+        {"from": 1, "still": "game_l3_bridge_late", "marks": [_BL_LOG]},
         {"from": 2, "still": "e_m4b", "marks": [("lines", 127, 130)]},
         {"from": 2.6, "still": "e_m5", "marks": [("lines", 130, 130)]},
         {"from": 3, "still": "e_m5", "marks": [("text", 130, "if learned >= 2")]},
@@ -176,7 +200,8 @@ BOARD = {
     "s05_a_line_that_changes": {"step": 4, "beats": [
         # the game first: the same room, early and late
         {"from": 0, "still": "game_l3_bridge_early"},
-        {"from": 5, "still": "game_l3_bridge_late"},
+        {"from": 1, "still": "game_l3_bridge_early", "marks": [_BE_LINE]},
+        {"from": 5, "still": "game_l3_bridge_late", "marks": [_BL_LINE]},
         {"from": 6, "still": "e_final", "marks": [("lines", 128, 129)]},
         {"from": 7, "still": "e_final", "marks": [("text", 128, "{learned < 2}"), ("text", 129, "{learned >= 2}")]},
         {"from": 8, "still": "e_final", "marks": [("lines", 128, 128)]},
@@ -196,15 +221,19 @@ BOARD = {
         {"from": 11, "still": "e_roster", "marks": [("lines", 90, 90), ("lines", 97, 97)]},
     ]},
     "s07_play_it": {"step": 7, "beats": [
-        {"from": 0, "still": "game_l3_sci_airlock"},
-        {"from": 1, "still": "game_l3_bridge_early"},
-        {"from": 3, "still": "game_l3_suits"},
-        {"from": 4, "still": "game_l3_shutdown"},
-        {"from": 5, "still": "game_l3_bridge_late"},
-        {"from": 6, "still": "game_l3_eng_alone"},
-        {"from": 9, "still": "game_l3_last"},
-        {"from": 10, "still": "e_roster", "marks": [("lines", 90, 90), ("lines", 97, 97)]},
-        {"from": 12, "still": "card_cannot", "marks": [("part", "r1")]},
+        {"from": 0, "still": "game_l3_sci_airlock", "marks": [_SA_TAGS]},
+        {"from": 0.6, "still": "game_l3_eng_airlock", "marks": [_EA_CHIPS]},
+        {"from": 1, "still": "game_l3_bridge_early", "marks": [_BE_LINE]},
+        {"from": 3, "still": "game_l3_suits", "marks": [_SU_READ]},
+        {"from": 4, "still": "game_l3_shutdown", "marks": [_SD_READ]},
+        {"from": 5, "still": "game_l3_bridge_late", "marks": [_BL_LINE, _BL_LOG]},
+        {"from": 6, "still": "game_l3_suits", "marks": [_SU_PAGE]},
+        {"from": 7, "still": "game_l3_eng_reactor", "marks": [_ER_HALE, _ER_ROOM]},
+        {"from": 8, "still": "game_l3_eng_alone"},
+        {"from": 10, "still": "game_l3_eng_alone", "marks": [_AL_COVER]},
+        {"from": 12, "still": "game_l3_last", "marks": [_LA_END]},
+        {"from": 13, "still": "e_roster", "marks": [("lines", 90, 90), ("lines", 97, 97)]},
+        {"from": 15, "still": "card_cannot", "marks": [("part", "r1")]},
     ]},
     "s08_your_turn": {"step": None, "beats": [
         {"from": 0, "still": "card_exercise"},

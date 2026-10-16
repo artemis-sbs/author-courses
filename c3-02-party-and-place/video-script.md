@@ -54,15 +54,14 @@ Party tile, BEAM DOWN, the handheld's bar and buttons, and the console back at
 Engineering afterwards. That was before this rewrite; the rooms and the card's shape have
 changed since.
 
-Not seen by anyone. If one is not as described, stop and fix the page:
-
-1. This lecture's files in the real game at all.
-2. The name on a console's top bar after the visit. In the mock, a stand-in console came
-   home with no crew name; a real console has a page that puts it back, and the earlier
-   pilot saw it do so.
-3. A room with no choices on the handheld: what the crew actually looks at.
-4. Close Inspection in the Quest Log: the hulk drawn beside its lead line, and two
-   paragraphs under it.
+> **Seen in the real engine, 2026-10-15** (state final; server, Helm, Engineering). The
+> Engineering console's handheld reads Chief Okoro from the start and again after the
+> visit; one press of Return to the ship puts the console back on its station. In the
+> Quest Log, Close Inspection's lead line sits ABOVE a small picture of the hulk, then
+> the two paragraphs. At Helm's default zoom the hulk is off the map; one zoom-out shows
+> it as an unnamed mark, named only within about 4K. Helm, not on the roster, gets a
+> random name: do not quote it. Awaiting a re-shoot after library fixes: Chief Okoro's
+> face, which did not draw on the Boarding Party app or beside his picks.
 
 ## Scenes
 
@@ -154,7 +153,8 @@ again, and now it's clean. ||"
 ### 7. Play it
 
 **Screen:** Command prompt: `sbs run server,helm,engineering -m MyBoarding map=0`. The
-Engineering top bar: Chief Okoro. Fly Helm to the hulk. On Engineering: the handheld
+Engineering top bar: Chief Okoro. Fly Helm to the hulk (zoom the map out once: it is the
+unnamed mark ahead). On Engineering: the handheld
 icon, the Boarding Party tile, BEAM DOWN. Walk aft, back, forward, back. Return to the
 ship.
 

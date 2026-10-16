@@ -76,7 +76,7 @@ SHOTS = [
     {
         "id": "s05_type_it_in_layers",
         "title": 'Type it in layers',
-        "frames": 2330,
+        "frames": 2408,
         "captions": [
             ("This is where it's going:", 0, 65),
             ("the spine on the chief's handheld, with the captain's hatch open at last.", 79, 248),
@@ -91,11 +91,12 @@ SHOTS = [
             ("The crew reads an ending's quest the moment they choose,", 1624, 1755),
             ('so each one gets a short page.', 1768, 1859),
             ('Here they are in the Quest Log:', 1886, 1978),
-            ('an hourglass on one, the station drawn beside the other.', 1991, 2122),
-            ('Then the two stories.', 2176, 2228),
-            ('And lint is clean.', 2241, 2294),
+            ('an hourglass on the first one,', 1991, 2070),
+            ('and a picture of the station on the other.', 2083, 2200),
+            ('Then the two stories.', 2254, 2307),
+            ('And lint is clean.', 2320, 2372),
         ],
-        "pauses": [0.45, 1.8, 0.45, 0.9, 0.45, 0.45, 0.45, 0.45, 0.45, 0.9, 0.45, 0.9, 0.45, 1.8, 0.45, 1.2],
+        "pauses": [0.45, 1.8, 0.45, 0.9, 0.45, 0.45, 0.45, 0.45, 0.45, 0.9, 0.45, 0.9, 0.45, 0.45, 1.8, 0.45, 1.2],
     },
     {
         "id": "s06_a_quest_any_party_can_finish",
