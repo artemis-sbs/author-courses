@@ -23,6 +23,8 @@ science (Dr Ines Hale) and engineering (Chief Okoro), the page's
 `sbs run server,engineering,science -m MyAway map=0`, state final as the page has it (no
 probe-only change: Lecture 9's path behind the relay house keeps the crew five cells from
 the sentry's loop): `python game.py c3-10-props start --consoles server,engineering,science`.
+AWAITING RE-SHOOT (sbs_utils 19c038f9: a pickup names the PROP, and the prop leaves the map):
+game_l10_notice, whose Act shows the old pickup lines above the notice's scene (step 4).
   1. About 15 s after the consoles are seated, both: handheld icon (top left), Boarding Party,
      Kesh Relay, BEAM DOWN.
   2. Science: walk toward the tent; the key by the tent's foot at 14, 4 in view: game_l10_keymap.
@@ -152,7 +154,7 @@ STILLS = {
     "game_l10_door_shut": ("game", "Engineering (Chief Okoro) in the gully beside the pump house door (12, 5), shut"),
     "game_l10_door_open": ("game", "Engineering, the door clicked with the key in Dr Hale's pack: the door open (the doorframe picture); no words on the handheld"),
     "game_l10_fuse": ("game", "Science, the toolbox (19, 8) clicked: the Pack app reading fuse x2"),
-    "game_l10_notice": ("game", "Science, the notice (11, 4) clicked: The Notice's line 'SPARE BEACON CELL KEPT BELOW...' and one button, Let the pieces fall"),
+    "game_l10_notice": ("game", "Science, the notice (11, 4) clicked: The Notice's line 'SPARE BEACON CELL KEPT BELOW...' and one button, Let the pieces fall; above it in Act, 'Dr Ines Hale picked up Pump house key.' and 'Dr Ines Hale picked up Toolbox (fuse x2).'. AWAITING RE-SHOOT: 7ea2c918 wrote the pickups as 'pump key from the Pump house key' and 'fuse x2 from the Toolbox'"),
     "game_l10_notice2": ("game", "Science, the notice clicked a second time: she walks up to it; the Look app shows its description, '...It will not survive being read twice.'"),
     "game_l10_needs": ("game", "Science, the pump panel (16, 6) clicked: 'You would need engineering for that.'"),
     "game_l10_panel": ("game", "Engineering, the pump panel clicked: The Pump Panel's line and two buttons, Throw the lever / Leave it alone"),

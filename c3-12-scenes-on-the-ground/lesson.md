@@ -442,8 +442,9 @@ The long way round, as it was played in the game for this page:
    Expect to miss: a shot goes to the cell you clicked, and the sentry may have walked
    on. Nothing tells you a shot hit or missed. Watch the map.
 2. Chief Okoro picks up the pump house key, a small blue key by the foot of the tent.
-   Act says `Chief Okoro picked up pump key from the Pump house key.`: the item, then
-   the prop it came from. Lt Reyes shows Marrow the key.
+   Act says `Chief Okoro picked up Pump house key.`: the prop's heading, and the key is
+   gone from the map. Pack says `pump key x1`, the item's key. Lt Reyes shows Marrow the
+   key.
 3. Okoro walks to the gully, by the trail sign and the way out. Near the relay door,
    Look's first button is **Use Relay door**, not **Go to**. In the gully he takes the
    toolbox, reads the notice, and talks to Pim: the spare cell, the stash, and a

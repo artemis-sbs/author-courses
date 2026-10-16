@@ -13,9 +13,13 @@
 >   that the capture did not: the handheld's first screen is a LIST of eight full-width
 >   rows, not tiles; Tasks is a list with the picked quest's page under it (state, the
 >   objective, the text, leads); Beam on the pad reads `No other site has a lock yet.`;
->   Messages holds the crew's mail from home beside the Report in line; a pickup reads
->   `picked up pump key from the Pump house key.` Scan on the pad lists the key and the
->   kit too, once the kit is found.
+>   Messages holds the crew's mail from home beside the Report in line; Scan on the pad
+>   lists the key and the kit too, once the kit is found.
+> - **A pickup names the prop now** (sbs_utils `19c038f9`): Act reads `Dr Ines Hale
+>   picked up Pump house key.` and `Dr Ines Hale picked up Toolbox (fuse x2).`, and after
+>   Step 4 `Dr Ines Hale picked up Two fuses.`; the prop is gone from the map. That build
+>   showed `picked up pump key from the Pump house key.`, so `game_l13_act_toolbox` waits
+>   for a re-shoot. Pack still lists the item key: `fuse x2`, `pump key x1`.
 > - **The bar's third slot names the mark you stand on.** That build showed the area's
 >   title there instead; the library is being put back to the mark. Six stills of the bar
 >   wait for a re-shoot (see the storyboard).
@@ -141,16 +145,17 @@ thing is found. || So the map never gives your secret away. ||"
 ### 5. Titles, and what the pack says
 
 **Screen:** Look: `Go to The Dry Gully`. Beam: `To The Dry Gully`. The two `title:`
-lines changed. Then Act: `picked up pump key from the Pump house key.`, and Pack: `fuse
-x2`, `pump key x1`. Then the three lines that name the key, changed together.
+lines changed. Then Act: `picked up Pump house key.` and `picked up Toolbox (fuse x2).`,
+and Pack: `fuse x2`, `pump key x1`. Then the three lines that name the key, changed
+together.
 
 **Say:** "An area's title is read after other words. | Go to, in Look. To, in Beam. || So
 a title that starts with The reads badly twice, | and the fix is to take it off. ||| Next, the things you
-pick up. || The transcript names the item, | and the thing it came from. ||| For the key,
-that's two names for one thing. | She picked up pump key, | from the pump house key. || The
-pack and the door say pump key too. || That's the item's key, with its underscore shown as a space. ||| So make the
-item's key the same words as the heading. || Three lines name it, | and all three change
-together. | Miss one, and lint tells you. ||"
+pick up. || Act names each one by its heading, | the words on your record. ||| For the key,
+that's the pump house key. || But the pack and the door say pump key. || That's the item's
+key, with its underscore shown as a space. ||| So she picks up one thing, and carries
+another. || Make the item's key the same words as the heading. || Three lines name it, |
+and all three change together. | Miss one, and lint tells you. ||"
 
 ### 6. Scan, and a title that is the whole task
 

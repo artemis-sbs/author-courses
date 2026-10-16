@@ -512,9 +512,10 @@ blast, with Dr Hale alone and no skill used. Both reached their `Win:` sentence 
 server's last screen. Dr Hale alone took about ten minutes of game time. The dig took
 twenty-five, with Chief Okoro beaming up between beats to read the bridge's quest list
 for this page. Note what is in the pack as you go: it lists items by their key, `jacks x1`,
-`stores key x1`, `charges x1`. Act names a pickup two ways: `picked up Stores key.` where
-the prop and the item share a name, and `picked up jacks from the Shoring jacks.` where
-they do not.
+`stores key x1`, `charges x1`. Act names a pickup by the prop's heading: `picked up
+Stores key.`, `picked up Shoring jacks.`, `picked up Blasting charges.`. So the jacks are
+`Shoring jacks` in Act and `jacks x1` in the pack: two names for one thing, the pair
+Lecture 13 asks you to choose together.
 
 By Lecture 14's guess, half a minute a press and doubled for a first play, the busiest
 console in the first walk has nine presses: nine minutes of reading, and a first play

@@ -115,13 +115,15 @@ Dr Ines Hale
 [Thank him]
 ~ ~ ~
 The conversation is over.
-Dr Ines Hale picked up pump key from the Pump house key.
-Dr Ines Hale picked up fuse x2 from the Toolbox.
+Dr Ines Hale picked up Pump house key.
+Dr Ines Hale picked up Toolbox (fuse x2).
 ```
 
-So a pickup writes a sentence from two of your words: the item's key, and the prop's
-heading. `fuse x2 from the Toolbox` reads well. `pump key from the Pump house key` names
-one thing twice, in two different ways. That is Step 4.
+So a pickup is named by the prop's heading, the words the crew saw on the map, and the
+prop is gone from the map once it is picked up. When the heading does not say how many,
+the count follows in round brackets, in the pack's words: `Toolbox (fuse x2)`. The pack
+itself says `pump key x1` and `fuse x2`, the item's key. One thing, two names. That is
+Step 4.
 
 ### Who is offered what
 
@@ -305,14 +307,14 @@ A prop you pick up is on screen under two names: its heading, and its `Item:` ke
 |---|---|
 | Look | `Use Brittle notice`, `Use Pump house door` |
 | Further off | `? Pump house key - 5 E` |
-| Act | `Dr Ines Hale picked up pump key from the Pump house key.` |
+| Act | `Dr Ines Hale picked up Pump house key.` |
 | Pack | `fuse x2`, `pump key x1` |
 | At the door | `pump key fits` |
 | Handing over | `Handed over medkit.` |
 
-The heading says `Pump house key`. The pack and the door say `pump key`, because that
-is the item's key with its underscore turned into a space. Act puts both in one
-sentence: she picked up `pump key` from the `Pump house key`. To your crew those are two
+Look, Further off and Act say the heading, `Pump house key`. The pack and the door say
+`pump key`, because that is the item's key with its underscore turned into a space. So
+she picks up a `Pump house key` and is carrying a `pump key`. To your crew those are two
 different things.
 
 **Make the item's key the same words as the heading.** Three lines name the pump house
@@ -350,7 +352,8 @@ The note above the keycard record names the old key too. Change it to match.
 
 **Name a pickup for what ends up in the pack.** Until somebody picks it up, the heading
 is all the crew has: a `? Toolbox` row under Look's `Further off`, and `Toolbox` in Scan,
-say where to walk and not what is there. Change two headings:
+say where to walk and not what is there. And it is the heading Act says once they do.
+Change two headings:
 
 ```
 ### [Two fuses](toolbox)
@@ -367,12 +370,15 @@ Save and run lint: `clean`. Played again:
 
 ```
 Dr Ines Hale picked up Pump house key.
+Dr Ines Hale picked up Two fuses.
 pump house key x1
 pump house key fits
 relay keycard fits
 ```
 
-When the heading and the item's key are the same words, Act names the thing once.
+When the heading and the item's key are the same words, Act and the pack name the thing
+the same way: `Pump house key`, `pump house key x1`. `Two fuses` and `fuse x2` agree
+too, and because the heading already says how many, Act adds no count after it.
 
 Miss one of the three lines and lint tells you: nothing in the mission gives the old
 key any more. Step 10 has the warning.
@@ -699,7 +705,7 @@ None of these is a mistake lint could know about. They are choices of words.
 |---|---|
 | A mark named for yourself | `arrive`, on the bar of anybody who stands there |
 | A title that starts with `The` | `Go to The Dry Gully` |
-| An item key that is not the heading's words | `picked up pump key from the Pump house key.` |
+| An item key that is not the heading's words | `picked up Pump house key.` in Act, then `pump key x1` in the pack |
 | A choice too long to read at a glance | Nobody has measured where it stops fitting |
 
 After any rename, run lint, and then search the file for the old word. In VS Code,
@@ -744,7 +750,8 @@ Write down every word that makes you wince. That list is your exercise.
 1. Stand on the cell where the medical kit is hidden, before and after you ask Marrow
    about it. Read the bar both times.
 2. Read every prop heading in your file after the word `Use`, and after the words
-   `picked up`. Change the ones that jar.
+   `picked up`, then the same prop's line in the pack. Change the ones that jar, or that
+   name one thing two ways.
 3. Read every `Scan:` line. Each should tell the crew something they could not see.
    Rewrite two.
 4. Find your three longest choices. Can each lose five words and keep its meaning?

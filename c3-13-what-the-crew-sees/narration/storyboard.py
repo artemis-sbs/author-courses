@@ -19,7 +19,8 @@ them. What they showed: the handheld's first screen is a LIST of eight full-widt
 Act, Look, Pack, Tasks, Beam, Scan, Fire), not tiles; Tasks is a list with the picked quest's
 page under it (State, the objective, the text, Leads); Beam on the pad reads `No other site
 has a lock yet.`; Messages holds the crew's home mail (`Sam`, `Mum`) under the Report in
-line; a pickup reads `picked up pump key from the Pump house key.`; Scan by the tent lists
+line; a pickup read `picked up pump key from the Pump house key.` (since 19c038f9 it names
+the prop: `picked up Pump house key.`, `picked up Toolbox (fuse x2).`); Scan by the tent lists
 the key and the kit too (the kit once Marrow has told of it); Marrow's cough answer is
 covered whenever the medic is not BESIDE him (Hale was on the pad, six cells off).
 
@@ -31,7 +32,10 @@ game_l13_bar_scrub (scrub), game_l13_bar_arrive (arrive), game_l13_bar_landing_p
 pad), game_l13_bar_gully_mouth (gully mouth). Their rects box the bar's third slot and stay
 right after the re-shoot. AWAITING RE-SHOOT (library defect being fixed):
 game_l13_tasks_ross_after, whose page text breaks mid-sentence (`somebody will` / `have to
-fly a new one down.`); captioned for the whole sentence.
+fly a new one down.`); captioned for the whole sentence. AWAITING RE-SHOOT (19c038f9, a
+pickup names the PROP): game_l13_act_toolbox, which shows 7ea2c918's `picked up pump key
+from the Pump house key.` / `picked up fuse x2 from the Toolbox.`; captioned for
+`picked up Pump house key.` / `picked up Toolbox (fuse x2).` (game one, step 5).
 
 `python game.py c3-13-what-the-crew-sees start --state start --consoles server,science,helm`
 (game one) and `--state final` (game two): the probe is made from the `away` template with
@@ -76,8 +80,8 @@ GAME TWO, state "final", about five minutes:
      game_l13_bar_gully_mouth. The Toolbox; Pack: game_l13_pack_after. Look, Go to Kesh
      Relay, Back; Look: game_l13_look_after.
   3. Ross: Crew, Beam up. Quests, Relight Kesh Relay: game_l13_log_relight.
-For the re-shoot, only the six bar stills and game_l13_tasks_ross_after are needed: game
-one steps 1, 3 and 5, game two steps 1 and 2.
+For the re-shoot, only the six bar stills, game_l13_tasks_ross_after and
+game_l13_act_toolbox are needed: game one steps 1, 3 and 5, game two steps 1 and 2.
 """
 import os as _os
 
@@ -220,7 +224,7 @@ STILLS = {
     "game_l13_bar_scrub": ("game", "Science's xESS, Dr Hale on the kit's cell after Ask what he has put by: the kit drawn there now, Marrow's line about it in Act, and the bar reads scrub. RE-SHOOT: 7ea2c918 drew Kesh Relay, and she stood one cell east of the kit"),
     "game_l13_scan_before": ("game", "Science's xESS, Scan in the yard by the tent (state start, the kit already told of): Kesh Relay, '**Tent** - no reading', the Pump house key, the Medical kit, and Old Marrow, each with its line"),
     "game_l13_bar_arrive": ("game", "Science's xESS, Dr Hale just walked into the gully (state start): the bar reads Dr Ines Hale, medical, science, arrive. RE-SHOOT: 7ea2c918 drew The Dry Gully"),
-    "game_l13_act_toolbox": ("game", "Science's xESS, Act after the brass key and the toolbox: Marrow's talk above, then 'Dr Ines Hale picked up pump key from the Pump house key.' and 'Dr Ines Hale picked up fuse x2 from the Toolbox.', each with its picture"),
+    "game_l13_act_toolbox": ("game", "Science's xESS, Act after the brass key and the toolbox: Marrow's talk above, then 'Dr Ines Hale picked up Pump house key.' and 'Dr Ines Hale picked up Toolbox (fuse x2).', each with its picture. AWAITING RE-SHOOT: 7ea2c918 wrote 'picked up pump key from the Pump house key.' and 'picked up fuse x2 from the Toolbox.'"),
     "game_l13_pack_before": ("game", "Science's xESS, Pack after the key and the toolbox (state start): fuse x2, pump key x1"),
     "game_l13_look_before": ("game", "Science's xESS, Look back in the yard beside the trail sign (state start): Use Trail sign, 'Go to The Dry Gully', Further off '! Old Marrow - 17 W', '? Relay keycard - 10 SW'"),
     "game_l13_beam_before": ("game", "Science's xESS, Beam in the yard (state start): 'To The Dry Gully'"),
@@ -256,7 +260,7 @@ _CR_LIST = ("rect", 0.668, 0.205, 0.99, 0.39)       # game_l13_crew: 1 down, Art
 _CR_BTN = ("rect", 0.668, 0.86, 0.99, 0.995)        # ... Report in, Beam up
 _AT_ALL = ("rect", 0.672, 0.2, 0.97, 0.885)         # game_l13_act_toolbox: the whole transcript
 _AT_BOTH = ("rect", 0.672, 0.745, 0.97, 0.885)      # ... the two pickup lines
-_AT_KEY = ("rect", 0.672, 0.745, 0.97, 0.795)       # ... 'picked up pump key from the Pump house key.'
+_AT_KEY = ("rect", 0.672, 0.745, 0.97, 0.795)       # ... 'picked up Pump house key.' (the first pickup line; check after the re-shoot)
 _LK_ALL = ("rect", 0.668, 0.198, 0.99, 0.522)       # game_l13_look_before / _after: the buttons
 _LK_GO = ("rect", 0.668, 0.267, 0.99, 0.338)        # ... 'Go to The Dry Gully' / 'Go to Dry Gully'
 _PK_ALL = ("rect", 0.668, 0.198, 0.82, 0.29)        # game_l13_pack_before / _after: the two items
@@ -335,13 +339,14 @@ BOARD = {
         {"from": 3, "still": "e_gully3", "marks": [("lines", 3, 3)]},
         {"from": 3.5, "still": "e_cist3", "marks": [("lines", 3, 3)]},
         {"from": 4, "still": "game_l13_act_toolbox", "marks": [_AT_BOTH]},
+        {"from": 6, "still": "e_key0", "marks": [("lines", 248, 248)]},
         {"from": 7, "still": "game_l13_act_toolbox", "marks": [_AT_KEY]},
-        {"from": 9, "still": "e_key0", "marks": [("lines", 248, 248)]},
+        {"from": 8, "still": "game_l13_pack_before", "marks": [_PK_KEY]},
+        {"from": 9, "still": "e_key0", "marks": [("lines", 253, 253)]},
         {"from": 10, "still": "game_l13_pack_before", "marks": [_PK_KEY]},
-        {"from": 11, "still": "e_key0", "marks": [("lines", 253, 253)]},
-        {"from": 12, "still": "e_key4", "marks": [("lines", 248, 248), ("lines", 253, 253)]},
-        {"from": 13, "still": "card_key"},
-        {"from": 15, "still": "t_miss", "marks": [("span", 1, "item-nothing-gives")]},
+        {"from": 11, "still": "e_key4", "marks": [("lines", 248, 248), ("lines", 253, 253)]},
+        {"from": 12, "still": "card_key"},
+        {"from": 14, "still": "t_miss", "marks": [("span", 1, "item-nothing-gives")]},
     ]},
     "s06_scan_and_a_title_that_is_the": {"step": 5, "beats": [
         {"from": 0, "still": "game_l13_scan_before", "marks": [_SB_ALL]},

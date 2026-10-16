@@ -26,7 +26,8 @@ Pack, Tasks, Beam, Scan, Fire). A click on a prop or a person walks there and us
 lists the same things as buttons, and Go to <area>. The bar's third slot reads the AREA title
 (`Kesh Relay`, `The Dry Gully`) in these stills; no caption here talks about that slot.
 What they showed: the "brass key" is the Pump house key, a small blue key by the tent's foot
-(no peg); Act logs `Chief Okoro picked up pump key from the Pump house key.`. Faces are random
+(no peg); Act logged `Chief Okoro picked up pump key from the Pump house key.` on 7ea2c918;
+since 19c038f9 it is `Chief Okoro picked up Pump house key.` (no caption quotes it). Faces are random
 per game, and `pim` (gully) and `pim_yard` (by the tent) have two different faces: no caption
 claims a face. Roll lines wrap to three lines (cosmetic). The squashed xESS home after Back
 (library defect, R:\\cosmos\\courses\\c3_12\\game\\defect_home_squash.png) is in no beat.

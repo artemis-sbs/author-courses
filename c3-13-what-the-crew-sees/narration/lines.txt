@@ -45,17 +45,16 @@ s05_titles_and_what_the_pack_say_1	Go to, in Look. To, in Beam.
 s05_titles_and_what_the_pack_say_2	So a title that starts with The reads badly twice,
 s05_titles_and_what_the_pack_say_3	and the fix is to take it off.
 s05_titles_and_what_the_pack_say_4	Next, the things you pick up.
-s05_titles_and_what_the_pack_say_5	The transcript names the item,
-s05_titles_and_what_the_pack_say_6	and the thing it came from.
-s05_titles_and_what_the_pack_say_7	For the key, that's two names for one thing.
-s05_titles_and_what_the_pack_say_8	She picked up pump key,
-s05_titles_and_what_the_pack_say_9	from the pump house key.
-s05_titles_and_what_the_pack_say_10	The pack and the door say pump key too.
-s05_titles_and_what_the_pack_say_11	That's the item's key, with its underscore shown as a space.
-s05_titles_and_what_the_pack_say_12	So make the item's key the same words as the heading.
-s05_titles_and_what_the_pack_say_13	Three lines name it,
-s05_titles_and_what_the_pack_say_14	and all three change together.
-s05_titles_and_what_the_pack_say_15	Miss one, and lint tells you.
+s05_titles_and_what_the_pack_say_5	Act names each one by its heading,
+s05_titles_and_what_the_pack_say_6	the words on your record.
+s05_titles_and_what_the_pack_say_7	For the key, that's the pump house key.
+s05_titles_and_what_the_pack_say_8	But the pack and the door say pump key.
+s05_titles_and_what_the_pack_say_9	That's the item's key, with its underscore shown as a space.
+s05_titles_and_what_the_pack_say_10	So she picks up one thing, and carries another.
+s05_titles_and_what_the_pack_say_11	Make the item's key the same words as the heading.
+s05_titles_and_what_the_pack_say_12	Three lines name it,
+s05_titles_and_what_the_pack_say_13	and all three change together.
+s05_titles_and_what_the_pack_say_14	Miss one, and lint tells you.
 s06_scan_and_a_title_that_is_the_0	Scan lists everything in sight, scenery too.
 s06_scan_and_a_title_that_is_the_1	With no scan line and no description, it says no reading.
 s06_scan_and_a_title_that_is_the_2	So give your scenery one line each.
