@@ -162,6 +162,11 @@ def title(kicker, title_text, sub=""):
     return img, {"kind": "card", "parts": {}}
 
 
+def _bold(cell):
+    """A header or label cell in bold; code stays code, and an empty cell stays empty."""
+    return cell if not cell.strip() or "`" in cell else "**%s**" % cell
+
+
 def table(kicker, header, rows):
     """A table. The text shrinks, and the margins with it, until every row is on the card."""
     img, d = _canvas()
@@ -172,13 +177,15 @@ def table(kicker, header, rows):
         left, right = (160, c.W - 160) if px >= 34 else (90, c.W - 90)
         # the first column holds labels and is narrow (never more than a third); the others share what is left
         def natural(cell):                             # how wide the cell is when nothing makes it wrap
-            text = cell if "`" in cell else "**%s**" % cell
-            return max(w[2] + d.textlength(w[0], font=_fonts(px)[w[1]]) for w in _layout(d, text, px, 10 ** 6)[0])
+            laid_out = _layout(d, _bold(cell), px, 10 ** 6)
+            if not laid_out:                           # an empty cell (a header's first, often)
+                return 0
+            return max(w[2] + d.textlength(w[0], font=_fonts(px)[w[1]]) for w in laid_out[0])
         first = max(natural(r[0]) for r in [header] + rows) + 2 * pad_x + 20
         first = min(first, (right - left) * 0.42)
         other = (right - left - first) / (ncol - 1)
         xs = [left, left + first] + [left + first + other * i for i in range(1, ncol)]
-        laid = [[_layout(d, ("**%s**" % cell) if ((ri == 0 or ci == 0) and "`" not in cell) else cell, px, xs[ci + 1] - xs[ci] - 2 * pad_x)
+        laid = [[_layout(d, _bold(cell) if (ri == 0 or ci == 0) else cell, px, xs[ci + 1] - xs[ci] - 2 * pad_x)
                  for ci, cell in enumerate(r)] for ri, r in enumerate([header] + rows)]
         heights = [max(_height(cell, px) for cell in r) + 2 * pad_y for r in laid]
         if sum(heights) <= c.H - 220 or px <= 22:

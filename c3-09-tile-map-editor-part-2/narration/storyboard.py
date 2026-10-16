@@ -9,28 +9,28 @@ gully.tiles). Each of the page's steps is a state: the yard's exit (s1), the way
 block (s7), the trail sign (s8), the pump and the crate (s9), and the longer patrol
 ("final", the page's five example files).
 
-THE GROUND FOLDER (see c3-07's docstring: a state cannot hold a subfolder). Every state lays
-`ground\\` flat at the top of MyAway, so every state-based VS Code still has the Side Bar
-hidden and opens .tiles/.tileset as TEXT (_TXT). Every lint still is a session that puts the
-tiles files back into ground\\ first (_UNFLAT, not drawn), so lint prints what the student's
-does.
+THE GROUND FOLDER. A state holds `ground\\` as the student has it (states.py reads, diffs and
+writes subfolders), and lint prints `ground\\...` as the student's does. The close views of
+the text hide the Side Bar, as every close view of this class does.
 
-THE TILE MAP EDITOR STILLS are ("derived", ...) for now (DEFERRED holds the spec to take them
-with). The new add-on is installed in the user's VS Code, but the capture profile
-(_work\\vsc_ext) still holds 0.9.4, whose editor is named "Tile Map Editor (experimental)":
-see the report. Take them once the capture profile has the new build.
+STEP 10 also opens a path behind the relay house (row 0, cells 17 to 27, painted dust): the
+only other way east runs about three cells from the sentry's loop, which notices anyone
+within four. Along the path and on to the sign and the exit, nothing comes nearer the loop
+than five cells (checked with the library's own walking and noticing rules), so the page's
+"walk east along the north side of the yard, well clear of the sentry" is true as written.
+
+THE TILE MAP EDITOR STILLS are taken in the add-on's own editors ("editor": "tiles" /
+"tileset", opened with vscode.openWith), set up over DevTools ("view": "art", "zoom"). See
+capture.web_steps.
 
 GAME STILLS. Not taken yet; no marks until the screenshots exist. TWO windows, server and
-engineering (Chief Okoro), state g_calm: PROBE-ONLY (never shown in the editor), the
-sentry's `Notice: 4` made `Notice: 1`, so Okoro can walk past it. The yard's way east runs
-between the relay house and the sentry's loop, about three cells from it: with the page's
-Notice: 4 it is noticed and attacked. GAME.PY CANNOT START THIS YET: its probe is the `amd`
-template with only mission.amd and story.mast copied in; make the probe from `-t away` and
-copy every file of the state.
+engineering (Chief Okoro), state final as the page has it (no probe-only change):
+`python game.py c3-09-tile-map-editor-part-2 start --consoles server,engineering`.
   1. About 15 s after Engineering is seated: handheld icon (top left), Boarding Party, Kesh
      Relay, BEAM DOWN. Open Beam: game_l9_beam0 (nowhere else on it).
-  2. Walk east along row 6, south of the relay house, to the trail sign (28, 5). Click it:
-     game_l9_sign (its line on the handheld).
+  2. Click the path behind the relay house (about 22, 0, the top row) and wait for the walk
+     (about 10 s), then click the trail sign (28, 5): game_l9_sign (its line on the
+     handheld). Never along row 6: that passes three cells from the sentry's loop.
   3. Click the exit, the cell under the sign and to the right (29, 6): game_l9_gully (Okoro
      in the gully at 1, 4, beside the way back).
   4. Open Beam: game_l9_beam1 (To The Dry Gully on it now).
@@ -43,7 +43,7 @@ TITLE = ("Class 3, Lecture 9", "The Tile Map Editor, part 2", "Three maps, and t
 MISSION = "MyAway"
 FILE = "mission.amd"
 MAST = "story.mast"
-LT, GT, TS, CT = "landing.tiles", "gully.tiles", "starter.tileset", "cistern.tiles"
+LT, GT, TS, CT = "ground/landing.tiles", "ground/gully.tiles", "ground/starter.tileset", "ground/cistern.tiles"
 
 _L7 = "c3-07-anatomy-of-a-long-away-mission/example"
 _L8 = "c3-08-tile-map-editor-part-1/example"
@@ -66,8 +66,8 @@ _PUMP = ("// SCENERY again: no words, so nothing offers to use it. It only stand
          "### [Crate](gully_crate)\n---\nArea: gully\nAt: 6, 9\nSprite: prop:crate\nBlocks: yes\n---\n")
 
 STATES = {
-    # Lecture 8's files: the starter and the gully, ground\ laid flat
-    "start": {"folder": _L7, "over": (_L7 + "/ground", _L8 + "/ground")},
+    # Lecture 8's files: the starter and the gully
+    "start": {"folder": _L7, "over": (_L8,)},
     # Step 1: a way out of the yard
     "s1": {"base": "start", "edits": [
         ("replace", LT, "  h: scrub @scrub\n", "  h: scrub @scrub\n  >: dust @to_gully\n"),
@@ -96,8 +96,9 @@ STATES = {
         ("replace", GT, "@to_cistern\nexits:", "@to_cistern\n  p: floor @pump\nexits:"),
         ("replace", GT, "^...........W_____W..#^^\n^<a", "^...........W__p__W..#^^\n^<a"),
         ("replace", FILE, "pointing east.\n", "pointing east.\n\n" + _PUMP)]},
-    # Step 10: the sentry's walk. The page's five files.
-    "final": {"base": "s9", "edits": [("replace", FILE, "Patrol: 20 9; 26 9; 26 11; 20 11", "Patrol: 18 9; 27 9; 27 11; 18 11")],
+    # Step 10: the sentry's walk, and the path behind the relay house. The page's five files.
+    "final": {"base": "s9", "edits": [("replace", FILE, "Patrol: 20 9; 26 9; 26 11; 20 11", "Patrol: 18 9; 27 9; 27 11; 18 11"),
+                                      ("replace", LT, "---\n" + "^" * 32 + "\n", "---\n" + "^" * 17 + "." * 11 + "^" * 4 + "\n")],
               "same_as": (_EX + "/mission.amd", _EX + "/ground/landing.tiles", _EX + "/ground/gully.tiles",
                           _EX + "/ground/starter.tileset", _EX + "/ground/cistern.tiles")},
     # Step 8: the sign after one drag with Move (and before Undo move)
@@ -105,35 +106,24 @@ STATES = {
     # Step 11 / scene 8: two slips lint catches
     "b_landng": {"base": "final", "edits": [("replace", GT, "@to_landing", "@to_landng")]},
     "b_at": {"base": "final", "edits": [("replace", FILE, "Mark: pump\n", "At: pump\n")]},
-    # PROBE-ONLY, for the game stills: the sentry notices nobody further than one cell away
-    "g_calm": {"base": "final", "edits": [("replace", FILE, "Notice: 4", "Notice: 1")]},
 }
 
 _LINT = "sbs lint MyAway"
-_UNFLAT = "mkdir MyAway\\ground & move /y MyAway\\*.tiles MyAway\\ground >nul & move /y MyAway\\*.tileset MyAway\\ground >nul"
-_TXT = {"workbench.editorAssociations": {"*.tiles": "default", "*.tileset": "default"}}
 _NS = {"side": False}
 
 
 def _t(f):
-    return {"side": False, "file": f, "settings": _TXT}
+    return {"side": False, "file": f}
+
+
+def _ed(f, zoom, **more):
+    """The file in the Tile Map Editor, Art view (see capture.web_steps)."""
+    return dict(_NS, file=f, editor="tiles", view="art", zoom=zoom, **more)
 
 
 def _lint(state):
-    """sbs lint on the student's real layout (ground\\ put back first; only the lint is drawn)."""
-    return ("session", [_UNFLAT, _LINT], {"state": state, "show": (2, 2)})
-
-
-DEFERRED = {
-    "d_three": ("vscode", "final", 1, "mid", dict(_NS, file=LT, plain=True)),
-    "d_exit": ("vscode", "s1", 1, "mid", dict(_NS, file=LT, plain=True)),
-    "d_tileset": ("vscode", "s4", 1, "mid", dict(_NS, file=TS, plain=True)),
-    "d_cistern": ("vscode", "s5", 1, "mid", dict(_NS, file=CT, plain=True)),
-    "d_stairs": ("vscode", "s7", 1, "mid", dict(_NS, file=GT, plain=True)),
-    "d_sign": ("vscode", "s8", 1, "mid", dict(_NS, file=LT, plain=True)),
-    "d_patrol": ("vscode", "final", 1, "mid", dict(_NS, file=LT, plain=True)),
-}
-
+    """sbs lint on the state, as the student types it."""
+    return ("session", [_LINT], {"state": state})
 STILLS = {
     # lint, each on the real layout
     "t_s2": _lint("s2"),
@@ -157,14 +147,21 @@ STILLS = {
     "e_patrol": ("vscode", "final", 257, "big", _NS),       # lines 247 to 267: the sentry
     "e_landng": ("vscode", "b_landng", 15, "mid", _t(GT)),
     # The Tile Map Editor (see the docstring)
-    "d_three": ("derived", "deferred (capture profile still has add-on 0.9.4). The yard in the Tile Map Editor, Art, Marks on: its exit outlined in blue, labelled gully"),
-    "d_exit": ("derived", "deferred (capture profile still has add-on 0.9.4). landing.tiles (s1) in the editor, Marks on: the new exit at 29, 6 outlined in blue with the name of the area it leads to"),
-    "d_tileset": ("derived", "deferred (capture profile still has add-on 0.9.4). starter.tileset (s4) in the Tileset Editor: the new water row, See ticked, Walk not, Look water"),
-    "d_cistern": ("derived", "deferred (capture profile still has add-on 0.9.4). cistern.tiles (s5) in the editor, Art: the walkway round the tank, the east room"),
-    "d_stairs": ("derived", "deferred (capture profile still has add-on 0.9.4). gully.tiles (s7) in the editor, Marks on: the stairs at 17, 5 outlined in blue, labelled cistern"),
-    "d_sign": ("derived", "deferred (capture profile still has add-on 0.9.4). landing.tiles (s8) in the editor, Things on, Art: the trail sign drawn at 28, 5"),
-    "d_patrol": ("derived", "deferred (capture profile still has add-on 0.9.4). landing.tiles (final) in the editor, Things on: the sentry's patrol as a dashed loop, 18-27 by 9-11"),
-    # THE REAL GAME (not taken yet). State g_calm, consoles server,engineering; see the docstring
+    # the yard, Art, Marks on: its exit outlined in blue, labelled gully (and the path behind the relay house)
+    "d_three": ("vscode", "final", 1, "mid", _ed(LT, 32)),
+    # landing.tiles (s1), Marks on: the new exit at 29, 6 outlined in blue with the name of the area it leads to
+    "d_exit": ("vscode", "s1", 1, "mid", _ed(LT, 32)),
+    # starter.tileset (s4) in the Tileset Editor: the new water row, See ticked, Walk not, Look water
+    "d_tileset": ("vscode", "s4", 1, "mid", dict(_NS, file=TS, editor="tileset")),
+    # cistern.tiles (s5), Art: the walkway round the tank, the east room
+    "d_cistern": ("vscode", "s5", 1, "mid", _ed(CT, 48)),
+    # gully.tiles (s7), Marks on: the stairs at 17, 5 outlined in blue, labelled cistern
+    "d_stairs": ("vscode", "s7", 1, "mid", _ed(GT, 40)),
+    # landing.tiles (s8), Things on, Art: the trail sign drawn at 28, 5
+    "d_sign": ("vscode", "s8", 1, "mid", _ed(LT, 32)),
+    # landing.tiles (final), Things on: the sentry's patrol as a dashed loop, 18-27 by 9-11
+    "d_patrol": ("vscode", "final", 1, "mid", _ed(LT, 32)),
+    # THE REAL GAME (not taken yet). State final, consoles server,engineering; see the docstring
     "game_l9_beam0": ("game", "Engineering (Chief Okoro), just beamed down to the yard: the Beam app open, with nowhere else on it"),
     "game_l9_sign": ("game", "Engineering, the trail sign (28, 5) clicked: its line 'A painted board on a post: PUMP HOUSE, and an arrow pointing east.' on the handheld"),
     "game_l9_gully": ("game", "Engineering, the yard's exit (29, 6) clicked: Okoro standing in the gully at 1, 4, beside its way back"),

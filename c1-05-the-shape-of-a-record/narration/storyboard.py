@@ -40,7 +40,7 @@ _BODY = "% No flight plan was ever filed for this ship. Somebody wanted her forg
 
 STATES = {
     # Lecture 4's finished folder is where Lecture 5 starts.
-    "start": {"folder": "c1-04-markdown-in-twenty-minutes/example"},
+    "start": {"folder": "c1-04-markdown-in-twenty-minutes/example", "skip": ("step-11-only",)},
     "reworded": {"base": "start", "edits": [("replace", FILE, _OLD, _NEW)]},
     # the new record, as it is typed
     "w1": {"base": "reworded", "edits": [("append", FILE, "\n### [Derelict Intel]\n")]},

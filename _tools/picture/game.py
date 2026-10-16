@@ -3,8 +3,11 @@ it starts the engine, and its clicks need the game's window in front, so a perso
 know it is running.
 
     python game.py <lecture> start [--state final] [--patch "old=>new"] [--consoles server,helm,science]
-        makes the probe mission _pic_probe from the template (sbs create), lays the state's
-        files over it, applies any --patch to its story.mast, and starts the game on it
+        makes the probe mission _pic_probe from the template (sbs create), lays EVERY file of
+        the state over it (subfolders too: a tile map's ground\\), applies any --patch to its
+        story.mast, and starts the game on it
+    python game.py <lecture> build [--state final] [--patch ...]
+        the same probe, and nothing started (nor stopped): to look at what start would run
     python game.py <lecture> list                       the game's windows and their process ids
     python game.py <lecture> shot  <window> <name>      screenshot a window (helm, science, server)
     python game.py <lecture> click <window> <x> <y> <name>    click at a fraction of the window, then screenshot
@@ -15,6 +18,11 @@ know it is running.
 Screenshots land in <out>/game/. eng.ps1 does the looking and the clicking; it REFUSES to
 click unless the game's window really is in front. If it refuses, do not fight it.
 One game at a time. Every run sets GAME_RESULTS_SAVE false.
+
+The template is the storyboard's TEMPLATE ("amd", "away"), or else "away" when the state has
+a tile map or a tileset in it, and "amd" when it has not. `-t away` brings the art packs a
+tile map is drawn with (story.json's shared_media, settings.yaml's TILE_ART); the state's own
+files are laid over it, so the probe is the student's folder, art and all.
 """
 import argparse
 import os
@@ -57,30 +65,65 @@ def stop_game():
     subprocess.run(["taskkill", "/IM", "Artemis3-x64-release.exe", "/F"], capture_output=True)
 
 
-def start(lecture, state, patches, consoles, wait, amd_patches=()):
+def template_of(sb, files):
+    """The `sbs create -t` template a lecture's probe is made from."""
+    named = getattr(sb, "TEMPLATE", None)
+    if named:
+        return named
+    return "away" if any(f.endswith((".tiles", ".tileset")) for f in files) else "amd"
+
+
+def build(lecture, state, patches, amd_patches=()):
+    """Make _pic_probe for the state: the template, then every file of the state over it.
+    -> the probe's folder. Starts and stops nothing."""
     _, _, sb = board.load(lecture)
     probe = os.path.join(MISSIONS, PROBE)
-    stop_game()
     if os.path.isdir(probe):
         shutil.rmtree(probe)
-    made = subprocess.run([PY, "sbs.pyz", "create", PROBE, "-t", "amd", "--title", "Picture Probe", "-y"],
+    files = states.files_of(sb, state)
+    template = template_of(sb, files)
+    made = subprocess.run([PY, "sbs.pyz", "create", PROBE, "-t", template, "--title", "Picture Probe", "-y"],
                           cwd=MISSIONS, env=ENV, capture_output=True, text=True)
     if not os.path.isdir(probe):
         sys.exit("sbs create did not make the probe:\n" + made.stdout + made.stderr)
-    files = states.files_of(sb, state)
-    template_story = open(os.path.join(probe, "story.mast"), encoding="utf-8", newline="").read().replace("\r\n", "\n")
-    print("story.mast of the state is the template's:", files.get("story.mast") == template_story)
-    for f in (sb.FILE, "story.mast"):                 # the lecture's content; the rest stays the template's
+    print(f"probe made from the '{template}' template")
+    if patches and "story.mast" not in files:
+        sys.exit("--patch: the state has no story.mast")
+    for f in sorted(files):                           # the lecture's whole folder; the rest stays the template's
         text = files[f]
-        if f in ("story.mast", sb.FILE):
-            for p in (patches if f == "story.mast" else amd_patches):
-                old, new = p.split("=>", 1)
-                if text.count(old) != 1:
-                    sys.exit(f"patch {old!r} is in {f} {text.count(old)} times, wanted once")
-                text = text.replace(old, new)
-                print(f"PROBE-ONLY change to {f}: {old!r} -> {new!r}")
-        with open(os.path.join(probe, f), "w", encoding="utf-8", newline="\n") as fh:
+        want = patches if f == "story.mast" else amd_patches if f == states.key(sb.FILE) else ()
+        for p in want:
+            old, new = p.split("=>", 1)
+            if text.count(old) != 1:
+                sys.exit(f"patch {old!r} is in {f} {text.count(old)} times, wanted once")
+            text = text.replace(old, new)
+            print(f"PROBE-ONLY change to {f}: {old!r} -> {new!r}")
+        dest = os.path.join(probe, *f.split("/"))
+        before = None
+        if os.path.exists(dest):
+            with open(dest, encoding="utf-8", newline="") as fh:
+                before = fh.read().replace("\r\n", "\n")
+        os.makedirs(os.path.dirname(dest), exist_ok=True)
+        with open(dest, "w", encoding="utf-8", newline="\n") as fh:
             fh.write(text)
+        said = "as the template has it" if before == text else "the state's" if before is not None else "the state's (new)"
+        print(f"  {f:30} {said}")
+    for root, _dirs, names in os.walk(probe):         # what only the template has
+        for n in names:
+            rel = states.key(os.path.relpath(os.path.join(root, n), probe))
+            if rel in files or "__pycache__" in rel:
+                continue
+            if n.endswith((".tiles", ".tileset")):     # another area would join the mission's map
+                os.remove(os.path.join(root, n))
+                print(f"  {rel:30} the template's, REMOVED (not in the state)")
+            else:
+                print(f"  {rel:30} the template's, kept (not in the state)")
+    return probe
+
+
+def start(lecture, state, patches, consoles, wait, amd_patches=()):
+    stop_game()
+    build(lecture, state, patches, amd_patches)
     subprocess.Popen([PY, "sbs.pyz", "run", consoles, "-m", PROBE, "map=0"], cwd=MISSIONS, env=ENV,
                      stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     time.sleep(wait)
@@ -104,6 +147,8 @@ def main():
     os.makedirs(shots, exist_ok=True)
     if a.op == "start":
         start(a.lecture, a.state, a.patch, a.consoles, a.wait, a.patch_amd)
+    elif a.op == "build":
+        build(a.lecture, a.state, a.patch, a.patch_amd)
     elif a.op == "list":
         print(eng("-Action", "list"))
     elif a.op in ("shot", "click"):

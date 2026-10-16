@@ -99,6 +99,35 @@ line number, so the window does not scroll under the new line (Lecture 8, `e_q1`
 `game.py` also has `log <name>` (keeps the probe's two logs before `stop` deletes it) and
 `--patch-amd "old=>new"` (a probe-only change to the fact sheet, printed like `--patch`).
 
+## Tile maps and the add-on's own editors (added for Class 3)
+
+| In the storyboard | What it does |
+|---|---|
+| a state with subfolders | A state is the whole folder, subfolders included: files are named by their path with forward slashes (`"ground/gully.tiles"`), in edits, `same_as` and a still's `"file"`. `materialize` writes the folder as the student has it. `"skip"` takes a top-level file or folder out (`"skip": ("step-11-only",)`) |
+| `("vscode", state, 1, "mid", {"file": "ground/x.tiles", "editor": "tiles"})` | The file in the Tile Map Editor (`"tileset"`: the Tileset Editor), opened with `vscode.openWith`, not `--goto` (which always opens text). A picture with no lines to mark |
+| `"view": "art"`, `"zoom": 40`, `"toggles": {"marks": False}` | What the editor shows: Art or Kinds, pixels a cell, the toolbar's Grid / Marks / Chars / Things |
+| `"pick": "D"`, `"form": {"kind", "mark", "char"}`, `"hover": (12, 5)` | A legend row selected, + Entry's form filled in, the cell under the pointer (its outline and the footer that reads it) |
+| `"tip": "Open in Tile Map"` | On a text still: the title-bar button with those words in its label, its tooltip showing |
+
+The editor's own steps are run over DevTools: a still that asks for them starts its window
+with `--remote-debugging-port` (`capture.DEVTOOLS_PORT`), waits until the editor has had the
+language server's answer (its PROBLEMS list is filled in), and runs JavaScript in an isolated
+world of the editor's page (`cdp.py`, standard library only). A tooltip is a DevTools mouse
+move to the button. The real mouse and keyboard are never used. After an editor still the
+folder's remembered editors are forgotten, so the next text still opens alone.
+
+The add-on in the throwaway profile is installed from a `.vsix`, into that profile only:
+
+```
+set ELECTRON_RUN_AS_NODE=
+code --user-data-dir R:\cosmos\courses\_work\vsc_data --extensions-dir R:\cosmos\courses\_work\vsc_ext --install-extension amd-language-0.9.5.vsix --force
+```
+
+`game.py` makes its probe from the storyboard's `TEMPLATE`, or from `away` when the state has
+a `.tiles` or `.tileset` file (`amd` otherwise), and lays EVERY file of the state over it,
+subfolders included; a `.tiles`/`.tileset` the template has and the state has not is taken
+out. `python game.py <lecture> build [--state x]` makes the probe and starts nothing.
+
 ## Motion, and the game's side bars
 
 - **One kind of motion: a slow push-in.** Beats that follow each other on the same still

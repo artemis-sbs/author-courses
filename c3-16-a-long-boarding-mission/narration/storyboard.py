@@ -8,22 +8,21 @@ The capstone is a second mission, MyClaim (`sbs create MyClaim -t away --title "
 Claim"`). The lecture shows it finished, so there is one state, "final": the page's whole
 example\\ folder. Most of the lecture is the page's tables, drawn as cards.
 
-THE GROUND IS LAID FLAT, as in Lectures 12 to 15: the tool reads one folder level, so the
-three maps and the tileset are written beside mission.amd (`sbs lint` prints the same).
-The three maps in the cold open and works.tiles in scene 3 are their TEXT. A Tile Map
-Editor still is DEFERRED: capture opens a file at a line, which is always the text editor,
-and the throwaway profile still has add-on 0.9.4, the one with the "Experimental" badge.
+THE GROUND FOLDER. The state holds `ground\\` as the student has it (states.py reads, diffs
+and writes subfolders). The three maps in the cold open are pictures from the Tile Map
+Editor, Art view ("editor": "tiles"; see capture.web_steps); works.tiles in scene 3 is its
+TEXT, at the lines the scene marks.
 
 2026-10-15: scene 6 and the page's Step 8 said a FULL shot removes any prop. The library
 released after the page was measured leaves every prop where it was and opens only one
 whose `Opens with:` lists `cut`. Both were rewritten from the library's documentation;
 not re-played.
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. game.py cannot start this
-mission (it makes its probe from the `amd` template and copies only mission.amd and
-story.mast). Copy the page's example\\ folder, ground\\ included, to data\\missions\\MyClaim,
-`sbs fetch MyClaim --update-libs` once, then `sbs run server,science,engineering -m MyClaim
-map=0` with COSMOS_SETTINGS '{"GAME_RESULTS_SAVE": false}'. THREE windows: the server,
+GAME STILLS. Not taken yet; no marks until the screenshots exist. State "final":
+`python game.py c3-16-a-long-boarding-mission start --consoles server,science,engineering`
+(the probe is made from the `away` template with every file of the state laid over it,
+ground\\ included; the template's own landing.tiles is taken out, as the page has the
+student delete it; GAME_RESULTS_SAVE is false). THREE windows: the server,
 Science (Dr Ines Hale) and Engineering (Chief Okoro). The party is offered at once (the
 handheld icon, Boarding Party, BEAM DOWN). To read the bridge's quest list, Okoro presses
 Crew, Beam up; then Boarding Party, BEAM DOWN puts him back where the party is.
@@ -49,48 +48,32 @@ GAME TWO, the blast (about six minutes, Science alone): Ada, the stores key, the
 the coupling, the lift, down, the rock fall, Set the charges, Fire them as they are, Bring
 them up. The server's last screen: game_l16_won_blast.
 """
-import os as _os
-
 LECTURE = "c3-16-a-long-boarding-mission"
 TITLE = ("Class 3, Lecture 16", "Capstone: a long boarding mission", "Corvin's Claim, and then yours")
 MISSION = "MyClaim"
 FILE = "mission.amd"
 MAST = "story.mast"
 
-_HERE = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
-_COURSES = _os.path.dirname(_HERE)
-
-
-def _read(*parts):
-    with open(_os.path.join(_COURSES, *parts), encoding="utf-8", newline="") as f:
-        return f.read().replace("\r\n", "\n")
-
-
-_G = (LECTURE, "example", "ground")
 _EX = LECTURE + "/example"
 
 STATES = {
-    # The page's whole example\\ folder, its maps laid flat
+    # The page's whole example\\ folder, ground\\ and all
     "final": {"folder": _EX,
-              "edits": [("write", name, _read(*_G, name))
-                        for name in ("starter.tileset", "camp.tiles", "works.tiles", "gallery.tiles")],
               "same_as": (_EX + "/mission.amd", _EX + "/story.mast")},
 }
 
 _LINT = "sbs lint MyClaim"
 _NS = {"side": False}
-_TEXT = {"side": False, "settings": {"workbench.editorAssociations": {"*.tiles": "default", "*.tileset": "default"}}}
+_TEXT = {"side": False}                                 # a map as text, at a line
+_MAP = {"side": False, "editor": "tiles", "view": "art"}  # a map in the Tile Map Editor (capture.web_steps)
 
 STILLS = {
-    # Not on screen: the first window on a new folder must show the Side Bar, so the tool can
-    # hide it for every still after (the folder is laid flat, so it is never used).
-    "v_open": ("vscode", "final", 1, "wide"),
-    # The three maps, as text: the rows of each map
-    "e_map_camp": ("vscode", "final", 24, "big", dict(_TEXT, file="camp.tiles")),         # lines 14 to 34: the map, rows 19 to 29
-    "e_map_works": ("vscode", "final", 26, "big", dict(_TEXT, file="works.tiles")),       # lines 16 to 36: the map, rows 21 to 31
-    "e_map_gallery": ("vscode", "final", 18, "big", dict(_TEXT, file="gallery.tiles")),   # lines 8 to 28: the map, rows 16 to 21
+    # The three maps, in the Tile Map Editor's Art view
+    "e_map_camp": ("vscode", "final", 1, "mid", dict(_MAP, file="ground/camp.tiles", zoom=40)),
+    "e_map_works": ("vscode", "final", 1, "mid", dict(_MAP, file="ground/works.tiles", zoom=40)),
+    "e_map_gallery": ("vscode", "final", 1, "mid", dict(_MAP, file="ground/gallery.tiles", zoom=48)),
     # Step 3: the middle map as text
-    "e_works": ("vscode", "final", 12, "big", dict(_TEXT, file="works.tiles")),    # lines 2 to 22: title (3), known (6), the marks (15, 18, 19)
+    "e_works": ("vscode", "final", 12, "big", dict(_TEXT, file="ground/works.tiles")),    # lines 2 to 22: title (3), known (6), the marks (15, 18, 19)
     # Step 4: the three lines only one person can use
     "e_vent": ("vscode", "final", 254, "big", _NS),        # lines 244 to 264: Ventilator panel, Needs: engineering (256)
     "e_leg": ("vscode", "final", 415, "big", _NS),         # lines 405 to 425: Jo Reth's scene, Set his leg (415)

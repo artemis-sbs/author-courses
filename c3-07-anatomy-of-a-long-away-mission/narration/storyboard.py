@@ -7,37 +7,25 @@ A NEW MISSION, MyAway, made by `sbs create MyAway -t away --title "Kesh Relay"`.
 typed in this lecture: every state is the page's own example (the starter as the command
 makes it). The steps are "Stops" on the page, not "Step N", so every scene's step chip is None.
 
-THE GROUND FOLDER, AND A LIMIT OF THE TOOL (2026-10-15). states.py reads only the top level of
-a folder and materialize() deletes subfolders, so a state cannot hold `ground\\`. Every state
-here lays the example's `ground\\` files at the TOP of the mission folder ("over" the ground
-folder). The game and lint find .tiles/.tileset files anywhere in the folder, so the flattened
-folder plays and lints the same; only a finding ABOUT a tiles file prints `landing.tiles`
-instead of `ground\\landing.tiles`. So:
-  - every state-based VS Code still has the Side Bar hidden (the file list would show the
-    flattening), and opens .tiles/.tileset as TEXT (_TXT: the Tile Map Editor is the default
-    editor for them);
-  - the one still WITH the file list (v_folder) is folder-based: it shows MyAway as it is on
-    disk, and t_layout puts the real layout there just before it (state "start", then the
-    tiles files moved into `ground\\`; only its lint is drawn). Redo v_folder only together
-    with t_layout. Sessions run before every VS Code still, and v_folder is the first VS Code
-    still in STILLS, before any state-based one wipes the folder again.
+THE GROUND FOLDER. A state holds the example's `ground\\` folder as the student has it
+(states.py reads, diffs and writes subfolders), so the files are named `ground/landing.tiles`
+and lint prints `ground\\landing.tiles`. v_folder shows the file list with ground\\ open.
+The close views of a file hide the Side Bar, as every close view of this class does.
   - t_create / t_fetch / t_lint0 are ONE real cmd.exe session, with any MyAway hidden
     meanwhile and what it made thrown away after (a copy is kept in <out>\\made\\myaway, to
     compare with this lecture's example).
 
-DEFERRED: the Tile Map Editor still. It is ("derived", ...) below so that --capture never
-tries it; DEFERRED holds a spec to start from. The capture profile (_worksc_ext) still
-holds add-on 0.9.4 ("Tile Map Editor (experimental)"), and capture.py's --goto opens a
-.tiles file as text, not in the editor: see c3-08's docstring.
+THE TILE MAP EDITOR still (d_editor_landing) is taken in the add-on's own editor: capture
+opens the file with vscode.openWith ("editor": "tiles") and sets the view over DevTools
+("view": "art"). See capture.web_steps.
 
 GAME STILLS. Not taken yet; no marks until the screenshots exist. THREE windows:
 server, science (Dr Ines Hale, medical and science) and weapons (Lt Sam Reyes, security),
 the page's own `sbs run server,science,weapons -m MyAway map=0`. State "final" as it is: the
 ship starts beside Kesh Relay, so nothing is patched and nobody flies.
-GAME.PY CANNOT START THIS YET (2026-10-15): it builds the probe from the `amd` template and
-copies only mission.amd and story.mast, so the probe would have no tiles files, no art packs
-in story.json and no TILE_ART. Make the probe from `-t away` (or copy every file of the state,
-the flattened tiles files included) before starting it.
+`python game.py c3-07-anatomy-of-a-long-away-mission start --consoles server,science,weapons`
+makes the probe from the `away` template and lays every file of the state over it, ground\\
+included.
 GAME A (the win):
   1. Wait about 15 s after both consoles are seated: Hold at the Relay completes on its own.
      On Science press the handheld icon (top left), then Boarding Party: game_l7_offer.
@@ -69,8 +57,8 @@ MAST = "story.mast"
 _EX = "c3-07-anatomy-of-a-long-away-mission/example"
 
 STATES = {
-    # The starter as `sbs create ... -t away` makes it, ground\ laid flat (see the docstring).
-    "start": {"folder": _EX, "over": (_EX + "/ground",)},
+    # The starter as `sbs create ... -t away` makes it, ground\ and all.
+    "start": {"folder": _EX},
     "final": {"base": "start", "same_as": (_EX + "/mission.amd", _EX + "/story.mast",
                                            _EX + "/ground/landing.tiles", _EX + "/ground/starter.tileset")},
 }
@@ -80,27 +68,18 @@ _FETCH = 'sbs fetch "MyAway" --update-libs'
 _LINT = "sbs lint MyAway"
 _MAKE = [(_CREATE, ("",)), _FETCH, _LINT]
 _NO = {"without": ("MyAway",), "keep": {"myaway": "MyAway"}}
-# the tiles files put back into ground\, as the student has them (not drawn: show=(2, 2))
-_UNFLAT = "mkdir MyAway\\ground & move /y MyAway\\*.tiles MyAway\\ground >nul & move /y MyAway\\*.tileset MyAway\\ground >nul"
-_TXT = {"workbench.editorAssociations": {"*.tiles": "default", "*.tileset": "default"}}
 _NS = {"side": False}
-_TILES = {"side": False, "file": "landing.tiles", "settings": _TXT}
-_TSET = {"side": False, "file": "starter.tileset", "settings": _TXT}
+_TILES = {"side": False, "file": "ground/landing.tiles"}
+_TSET = {"side": False, "file": "ground/starter.tileset"}
 _M = {"side": False, "file": MAST}
-
-DEFERRED = {
-    "d_editor_landing": ("vscode", "final", 1, "mid", {"side": False, "file": "landing.tiles", "plain": True}),
-}
 
 STILLS = {
     # Stop 1: one real cmd.exe session, with no MyAway before it
     "t_create": ("session", _MAKE, dict(_NO, show=(1, 1))),
     "t_fetch": ("session", _MAKE, dict(_NO, show=(2, 2), tail=14)),
     "t_lint0": ("session", _MAKE, dict(_NO, show=(3, 3))),
-    # the real layout on disk, for v_folder (its own lint is the same clean)
-    "t_layout": ("session", [_UNFLAT, _LINT], {"state": "start", "show": (2, 2)}),
-    # FIRST of the VS Code stills: MyAway as it is on disk, the file list showing ground\ open
-    "v_folder": ("vscode", None, 9, "wide", {"folder": "MyAway", "file": "ground\\landing.tiles", "settings": _TXT}),
+    # MyAway as the student has it: the file list showing ground\ open
+    "v_folder": ("vscode", "start", 9, "wide", {"file": "ground/landing.tiles"}),
     "e_json": ("vscode", "final", 14, "big", {"side": False, "file": "story.json"}),    # lines 4 to 24
     "e_head": ("vscode", "final", 19, "big", _TILES),        # lines 9 to 29: header and legend
     "e_map": ("vscode", "final", 34, "big", _TILES),         # lines 24 to 44: the end of the legend, the map
@@ -112,7 +91,9 @@ STILLS = {
     "e_card": ("vscode", "final", 80, "big", _M),            # lines 70 to 88: the card
     "e_relight": ("vscode", "final", 72, "big", _NS),        # lines 62 to 82: Relight Kesh Relay
     "e_endings": ("vscode", "final", 328, "big", _NS),       # lines 318 to 338: the beacon's answers
-    "d_editor_landing": ("derived", "deferred: needs the new add-on installed. landing.tiles in the Tile Map Editor, Art view: the yard as a picture"),
+    # landing.tiles in the Tile Map Editor, Art view: the yard as a picture
+    "d_editor_landing": ("vscode", "final", 1, "mid", {"side": False, "file": "ground/landing.tiles", "editor": "tiles",
+                                                       "view": "art", "zoom": 32}),
     # THE REAL GAME (not taken yet). Consoles server,science,weapons; see the docstring
     "game_l7_offer": ("game", "GAME A, Science (Dr Ines Hale), ~15 s after the consoles are seated: the handheld (icon top left), the Boarding Party app offering Kesh Relay, with BEAM DOWN"),
     "game_l7_landed": ("game", "GAME A, Science, BEAM DOWN just pressed: the yard map with Dr Hale's figure on the landing pad at the west end, the handheld beside it (her name, medical, the place word), the tent and the relay house in view"),
@@ -136,14 +117,8 @@ STILLS = {
     "card_opens": ("card", "table", {"heading": "Stop 5 - What a record is", "nth": 3, "kicker": "Nobody walks into a scene"}),
     "card_card": ("card", "table", {"heading": "Stop 6 - One line and one card", "kicker": "Beside the Lecture 2 card"}),
     "card_words": ("card", "table", {"heading": "Stop 6 - One line and one card", "nth": 2, "kicker": "Three words are yours"}),
-    # the page's table, as a rows card: its first header cell is empty, and a table card with an
-    # empty first header cell crashes cards.table (2026-10-15)
-    "card_dawn": ("card", "rows", {"kicker": "Your starter and Dawnline", "header": ("In it", "Your starter", "Dawnline"),
-                                   "rows": (("Areas", "1", "6: a ridge, a colony, salt flats, caves, and two more"),
-                                            ("The biggest map", "32 by 14", "42 by 19"),
-                                            ("Props", "6", "42"), ("People", "1", "10"), ("Hostiles", "1", "5"),
-                                            ("Rooms", "14", "77"), ("Side stories", "2", "6"),
-                                            ("Lines in its .amd files", "338", "1,557, in three files"))}),
+    # the page's own table (its first header cell is empty)
+    "card_dawn": ("card", "table", {"heading": "Stop 8 - The long one: Dawnline", "kicker": "Your starter and Dawnline"}),
     "card_exits": ("card", "rows", {"kicker": "Dawnline's first area, ridge", "header": ("In its legend", "Means"),
                                     "rows": (("C: exit @to_colony", "A mark named to_colony: the way out to the area colony"),
                                              ("F: exit @to_flats", "The way out to the area flats"),

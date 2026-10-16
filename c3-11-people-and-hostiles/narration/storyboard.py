@@ -7,26 +7,26 @@ The lecture starts from Lecture 10's files ("start"). Each step is a state: Pim'
 the gully (h1), Pim (h2), her two rooms at the end of the file (h3), the sump crawler (h4)
 and The Thing in the Sump ("final", the page's own example files).
 
-THE GROUND FOLDER (see c3-07's docstring: a state cannot hold a subfolder). Every state lays
-`ground\\` flat at the top of MyAway; state-based VS Code stills hide the Side Bar and open
-.tiles as TEXT (_TXT); every lint still is a session that puts the tiles files back into
-ground\\ first (_UNFLAT, not drawn).
+THE GROUND FOLDER. A state holds `ground\\` as the student has it (states.py reads, diffs and
+writes subfolders), and lint prints `ground\\...` as the student's does. The close views of
+the text hide the Side Bar, as every close view of this class does.
 
-THE TILE MAP EDITOR STILL (d_crawler) is ("derived", ...): the capture profile still has
-add-on 0.9.4 (see the report). DEFERRED holds its spec.
+THE TILE MAP EDITOR STILL (d_crawler) is taken in the add-on's own editor ("editor": "tiles",
+"view": "art"; see capture.web_steps).
 
 GAME STILLS. Not taken yet; no marks until the screenshots exist. The page plays with FOUR
 windows (server, engineering, weapons, science); the stills are taken in two games of THREE.
-Both use state g_calm: PROBE-ONLY, the sentry's `Notice: 4` made `Notice: 1`, so the crew
-can walk east past it (the way runs about three cells from its loop). GAME.PY CANNOT START
-THIS YET: its probe is the `amd` template with only mission.amd and story.mast copied in;
-make it from `-t away` and copy every file of the state.
+Both use state final as the page has it (no probe-only change): the crew walks east by
+Lecture 9's path behind the relay house, five cells clear of the sentry's loop.
+`python game.py c3-11-people-and-hostiles start --consoles server,science,engineering`
+(GAME A), `--consoles server,engineering,weapons` (GAME B).
 GAME A: server, science (Dr Ines Hale), engineering (Chief Okoro).
   1. About 15 s after the consoles are seated, both: handheld icon (top left), Boarding
      Party, Kesh Relay, BEAM DOWN.
   2. Engineering: open Tasks: game_l11_tasks (The Thing in the Sump, not done).
-  3. Science: walk east along row 6, take the exit (29, 6). In the gully walk toward Pim's
-     camp in the scrub (5, 8): game_l11_pim. Click her: game_l11_pim_talk (her room).
+  3. Science: click the path behind the relay house (about 22, 0; never row 6), then the
+     exit (29, 6). In the gully walk toward Pim's camp in the scrub (5, 8): game_l11_pim.
+     Click her: game_l11_pim_talk (her room).
 GAME B: server, engineering (Chief Okoro), weapons (Lt Sam Reyes).
   1. Both beam down and walk to the gully. Open the pump house door: Okoro clicks it until
      his check makes 8 (it can be tried again at once), or Reyes shoots it with CUT.
@@ -43,7 +43,7 @@ TITLE = ("Class 3, Lecture 11", "People and hostiles", "One line between them")
 MISSION = "MyAway"
 FILE = "mission.amd"
 MAST = "story.mast"
-GT, CT = "gully.tiles", "cistern.tiles"
+GT, CT = "ground/gully.tiles", "ground/cistern.tiles"
 
 _L7 = "c3-07-anatomy-of-a-long-away-mission/example"
 _L8 = "c3-08-tile-map-editor-part-1/example"
@@ -76,8 +76,8 @@ def _before(heading, rec):
 
 
 STATES = {
-    # Lecture 10's files, ground\ laid flat
-    "start": {"folder": _L7, "over": (_L7 + "/ground", _L8 + "/ground", _L9, _L9 + "/ground", _L10, _L10 + "/ground")},
+    # Lecture 10's files
+    "start": {"folder": _L7, "over": (_L8, _L9, _L10)},
     # Step 1: a mark for a person
     "h1": {"base": "start", "edits": [
         ("replace", GT, "  p: floor @pump\n", "  p: floor @pump\n  m: scrub @camp\n"),
@@ -92,26 +92,15 @@ STATES = {
     "b_nocalm": {"base": "final", "edits": [("replace", FILE, "Face: female\nCalm: yes\n", "Face: female\n")]},
     "b_water": {"base": "final", "edits": [("replace", FILE, "At: 13, 3\n", "At: 6, 3\n")]},
     "b_signal": {"base": "final", "edits": [("replace", FILE, "signal hostile_down_crawler", "signal hostile_down_crawlr")]},
-    # PROBE-ONLY, for the game stills: the sentry notices nobody further than one cell away
-    "g_calm": {"base": "final", "edits": [("replace", FILE, "Notice: 4", "Notice: 1")]},
 }
 
 _LINT = "sbs lint MyAway"
-_UNFLAT = "mkdir MyAway\\ground & move /y MyAway\\*.tiles MyAway\\ground >nul & move /y MyAway\\*.tileset MyAway\\ground >nul"
-_TXT = {"workbench.editorAssociations": {"*.tiles": "default", "*.tileset": "default"}}
 _NS = {"side": False}
 
 
 def _lint(state):
-    """sbs lint on the student's real layout (ground\\ put back first; only the lint is drawn)."""
-    return ("session", [_UNFLAT, _LINT], {"state": state, "show": (2, 2)})
-
-
-DEFERRED = {
-    "t_nocalm": _lint("b_nocalm"),
-    "d_crawler": ("vscode", "final", 1, "mid", dict(_NS, file=CT, plain=True)),
-}
-
+    """sbs lint on the state, as the student types it."""
+    return ("session", [_LINT], {"state": state})
 STILLS = {
     "t_final": _lint("final"),
     # DEFERRED: the released library's lint printed `clean` here on 2026-10-15. The warning
@@ -120,14 +109,15 @@ STILLS = {
     "t_nocalm": ("derived", "deferred until the lint release: sbs lint MyAway on b_nocalm, the warning person-talks-but-attacks on Pim"),
     "t_water": _lint("b_water"),
     "t_signal": _lint("b_signal"),
-    "e_camp": ("vscode", "h1", 22, "mid", {"side": False, "file": GT, "settings": _TXT}),   # lines 8 to 36
+    "e_camp": ("vscode", "h1", 22, "mid", {"side": False, "file": GT}),   # lines 8 to 36
     "e_pim": ("vscode", "h2", 339, "big", _NS),             # lines 329 to 349: Pim
     "e_rooms": ("vscode", "h3", 494, "big", _NS),          # lines 484 to 500: her rooms
     "e_crawler": ("vscode", "h4", 376, "big", _NS),        # lines 366 to 386: the crawler
     "e_sump": ("vscode", "final", 125, "big", _NS),        # lines 115 to 135: the story
     "e_nocalm": ("vscode", "b_nocalm", 349, "big", _NS),   # lines 339 to 359
-    "d_crawler": ("derived", "deferred (capture profile still has add-on 0.9.4). cistern.tiles in the Tile Map Editor, Things on: the crawler at 13, 3 and its dashed patrol loop"),
-    # THE REAL GAME (not taken yet). State g_calm, two games of three windows; see the docstring
+    # cistern.tiles in the Tile Map Editor, Art, Things on: the crawler at 13, 3 and its dashed patrol loop
+    "d_crawler": ("vscode", "final", 1, "mid", dict(_NS, file=CT, editor="tiles", view="art", zoom=48)),
+    # THE REAL GAME (not taken yet). State final, two games of three windows; see the docstring
     "game_l11_pim": ("game", "GAME A, Science (Dr Hale) in the gully: Pim sitting in the scrub at her camp (5, 8), at the west end"),
     "game_l11_pim_talk": ("game", "GAME A, Science, Pim clicked: her line '\"You are from the ship.\" She does not get up...' with her face, and two buttons, Ask what stopped her / Leave her be"),
     "game_l11_tasks": ("game", "GAME A, Engineering (Chief Okoro): the Tasks app, The Thing in the Sump listed, 'Clear the cistern walkway', not done"),

@@ -8,27 +8,21 @@ ground\\gully.tiles: empty ("g0"), the header ("g_head"), Step 2's whole file ("
 ("g2"), the arrive mark ("g3") and the entry line ("final", the page's own example file).
 The steps are the page's "## Step N" headings.
 
-THE GROUND FOLDER (see c3-07's docstring: a state cannot hold a subfolder). Every state lays
-`ground\\` flat at the top of MyAway, so every state-based VS Code still has the Side Bar
-hidden and opens .tiles as TEXT (_TXT). The one still with the file list, v_new, is
-folder-based and shows MyAway as t_layout left it on disk (state g0, the tiles files moved
-back into ground\\). Redo v_new only together with t_layout. Every lint still is a session
-that does the same move first (_UNFLAT, not drawn), so lint prints `ground\\gully.tiles`
-exactly as the student's does.
+THE GROUND FOLDER. A state holds `ground\\` as the student has it (states.py reads, diffs and
+writes subfolders): the new file is `ground/gully.tiles`, v_new shows it in the file list
+with ground\\ open, and lint prints `ground\\gully.tiles` as the student's does. The close
+views of the text hide the Side Bar, as every close view of this class does.
 
-DEFERRED: every picture of the Tile Map Editor itself. They are ("derived", ...) in STILLS,
-so --capture never tries them; DEFERRED holds a spec to start from. Two things stop them
-(2026-10-15): the capture profile (_worksc_ext) still holds add-on 0.9.4, whose editors
-are "Tile Map Editor (experimental)" (0.9.5 is only in the user's own VS Code); and
-capture.py opens every file with --goto, which opens a .tiles file as TEXT, not in the
-editor (a test still with "plain": True came out as text). Taking them needs the profile
-refreshed and a way to open the custom editor (vscode.openWith with a Uri).
+THE TILE MAP EDITOR stills are taken in the add-on's own editor: capture opens the file with
+vscode.openWith ("editor": "tiles") and sets up what the caption says over DevTools - the
+view ("view": "art"), a legend row picked ("pick"), + Entry's form filled in ("form"), the
+cell under the pointer ("hover"), a title-bar button's tooltip ("tip"). Nothing moves the
+real mouse. See capture.web_steps.
 
 GAME STILLS. Not taken yet; no marks until the screenshots exist. TWO windows, server and
 engineering (Chief Okoro), the page's `sbs run server,engineering -m MyAway map=0`, state
-"final". GAME.PY CANNOT START THIS YET: its probe is the `amd` template with only mission.amd
-and story.mast copied in (no tiles files, no art packs, no TILE_ART); make the probe from
-`-t away` and copy every file of the state (the flattened tiles files work where they are).
+"final": `python game.py c3-08-tile-map-editor-part-1 start --consoles server,engineering`
+(the probe is made from the `away` template, with every file of the state laid over it).
   1. About 15 s after Engineering is seated: handheld icon (top left), Boarding Party, Kesh
      Relay, BEAM DOWN. Chief Okoro is on the pad of the yard.
   2. Open Beam on the handheld: game_l8_beam (the list with one place, To The Dry Gully).
@@ -42,7 +36,7 @@ TITLE = ("Class 3, Lecture 8", "The Tile Map Editor, part 1", "A map of your own
 MISSION = "MyAway"
 FILE = "mission.amd"
 MAST = "story.mast"
-G = "gully.tiles"                                         # where the flattened state keeps it
+G = "ground/gully.tiles"
 
 _L7 = "c3-07-anatomy-of-a-long-away-mission/example"
 _EX = "c3-08-tile-map-editor-part-1/example"
@@ -66,8 +60,8 @@ _ROWS = ("---\n"
 _ROW5 = "^...........W_____W..#^^\n^...........W_____W..#^^\n^...........W_____W..#^^\n"
 
 STATES = {
-    # Lecture 7's starter, ground\ laid flat
-    "start": {"folder": _L7, "over": (_L7 + "/ground",)},
+    # Lecture 7's starter, ground\ and all
+    "start": {"folder": _L7},
     # Step 1: the new file, empty
     "g0": {"base": "start", "edits": [("write", G, "")]},
     # Step 2: the header, then the legend and the ground
@@ -90,29 +84,23 @@ STATES = {
 }
 
 _LINT = "sbs lint MyAway"
-_UNFLAT = "mkdir MyAway\\ground & move /y MyAway\\*.tiles MyAway\\ground >nul & move /y MyAway\\*.tileset MyAway\\ground >nul"
-_TXT = {"workbench.editorAssociations": {"*.tiles": "default", "*.tileset": "default"}}
-_GT = {"side": False, "file": G, "settings": _TXT}
+_GT = {"side": False, "file": G}
+_ED = {"side": False, "file": G, "editor": "tiles", "zoom": 40}          # the Tile Map Editor
+_ART = dict(_ED, view="art")
 
 
 def _lint(state):
-    """sbs lint on the student's real layout (ground\\ put back first; only the lint is drawn)."""
-    return ("session", [_UNFLAT, _LINT], {"state": state, "show": (2, 2)})
+    """sbs lint on the state, as the student types it."""
+    return ("session", [_LINT], {"state": state})
 
-
-DEFERRED = {
-    "d_art": ("vscode", "final", 1, "mid", {"side": False, "file": G, "plain": True}),
-}
 
 STILLS = {
-    # lint, each on the real layout. t_layout also leaves g0 on disk, for v_new.
     "t_g1": _lint("g1"),
     "t_final": _lint("final"),
     "t_arival": _lint("b_arival"),
     "t_w": _lint("b_w"),
-    "t_layout": _lint("g0"),
-    # FIRST of the VS Code stills: the file list, ground\ open, the new empty gully.tiles
-    "v_new": ("vscode", None, 1, "wide", {"folder": "MyAway", "file": "ground\\gully.tiles", "settings": _TXT}),
+    # the file list, ground\ open, the new empty gully.tiles
+    "v_new": ("vscode", "g0", 1, "wide", {"file": G}),
     "e_empty": ("vscode", "g0", 1, "mid", _GT),
     "e_head": ("vscode", "g_head", 5, "mid", _GT),
     "e_g1": ("vscode", "g1", 13, "mid", _GT),             # the whole file, lines 1 to 25
@@ -120,15 +108,23 @@ STILLS = {
     "e_g3": ("vscode", "g3", 13, "mid", _GT),             # 27 lines
     "e_final": ("vscode", "final", 13, "mid", _GT),       # 28 lines
     "e_arival": ("vscode", "b_arival", 13, "mid", _GT),
-    # The Tile Map Editor: DEFERRED until the new add-on is installed (see the docstring)
-    "d_art": ("derived", "deferred: needs the new add-on installed. The finished gully in the Tile Map Editor, Art view"),
-    "d_kinds": ("derived", "deferred: needs the new add-on installed. The gully (state g1) in the editor, Kinds view: the cells nobody can walk hatched"),
-    "d_nomap": ("derived", "deferred: needs the new add-on installed. The empty gully.tiles in the editor: 'No map yet.' and the toolbar with Text at its end"),
-    "d_button": ("derived", "deferred: needs the new add-on installed. gully.tiles as text, the title-bar button 'Open in Tile Map / Tileset Editor' (its tip showing)"),
-    "d_hover": ("derived", "deferred: needs the new add-on installed. The editor (g1, Art) with the mouse over cell 12, 5: the bottom line reading the cell, wall, and the area's name and size"),
-    "d_form": ("derived", "deferred: needs the new add-on installed. + Entry's form filled in: Kind floor, Mark pump_door, Character D"),
-    "d_door": ("derived", "deferred: needs the new add-on installed. The editor (g2, Art) after painting cell 12, 5: the gap in the west wall, the new legend row D floor @pump_door selected"),
-    "d_star": ("derived", "deferred: needs the new add-on installed. The editor (final, Art): the arrive mark outlined at 2, 5 and the green star of the entry on it"),
+    # The Tile Map Editor (see the docstring)
+    # the finished gully, Art view
+    "d_art": ("vscode", "final", 1, "mid", _ART),
+    # the gully (g1), Kinds view: the cells nobody can walk hatched
+    "d_kinds": ("vscode", "g1", 1, "mid", dict(_ED, view="kinds")),
+    # the empty gully.tiles: 'No map yet.' and the toolbar with Text at its end
+    "d_nomap": ("vscode", "g0", 1, "mid", _ED),
+    # gully.tiles as text, the title-bar button 'Open in Tile Map / Tileset Editor', its tip showing
+    "d_button": ("vscode", "g1", 13, "mid", dict(_GT, tip="Open in Tile Map")),
+    # g1, Art, the pointer over cell 12, 5: the bottom line reading the cell, wall, and the area's name and size
+    "d_hover": ("vscode", "g1", 1, "mid", dict(_ART, hover=(12, 5))),
+    # + Entry's form filled in: Kind floor, Mark pump_door, Character D
+    "d_form": ("vscode", "g1", 1, "mid", dict(_ART, form={"kind": "floor", "mark": "pump_door", "char": "D"})),
+    # g2, Art, after painting cell 12, 5: the gap in the west wall, the legend row D floor @pump_door selected
+    "d_door": ("vscode", "g2", 1, "mid", dict(_ART, pick="D")),
+    # final, Art: the arrive mark outlined at 2, 5 and the green star of the entry on it
+    "d_star": ("vscode", "final", 1, "mid", _ART),
     # THE REAL GAME (not taken yet). Consoles server,engineering; see the docstring
     "game_l8_beam": ("game", "Engineering (Chief Okoro) beamed down to the yard: the handheld's Beam app open, listing one place, To The Dry Gully"),
     "game_l8_arrived": ("game", "Engineering, To The Dry Gully pressed: the gully map, Okoro on the arrive mark at the west end (2, 5), the pump house with its gap in the west wall to the east"),

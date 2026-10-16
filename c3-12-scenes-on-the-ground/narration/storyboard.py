@@ -9,19 +9,15 @@ starter with the example\\ folders of Lectures 8 to 11 laid over it). Only missi
 changes: a quest, a person and a prop are added, two scenes are rewritten and two of the
 starter's get a line ("r1" .. "r6", then "final", the page's own example\\mission.amd).
 
-THE GROUND IS LAID FLAT. The tool reads one folder level, so the starter's ground\\ files
-(the latest of each, from Lectures 9 to 11) are written beside mission.amd. `sbs lint`
-finds them there as it does in ground\\ and prints the same lines (checked 2026-10-15). No
-still shows the Side Bar, so the flat folder is never seen.
+THE GROUND FOLDER. A state holds `ground\\` as the student has it (states.py reads, diffs and
+writes subfolders): the example\\ folders laid over the starter bring the latest of each
+ground file, from Lectures 9 to 11. The close views of the text hide the Side Bar, as every
+close view of this class does.
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. game.py cannot start this
-mission as it stands (it makes its probe from the `amd` template and copies only
-mission.amd and story.mast: no ground\\, no tile art). Start the real thing instead: a
-MyAway folder holding state "final" WITH its ground\\ folder (Lecture 7's example\\ with
-the example\\ folders of Lectures 8 to 12 laid over it, subfolders included), `sbs fetch
-MyAway --update-libs` once for the Cosmos-Tiles art, then
-`sbs run server,engineering,weapons -m MyAway map=0` with COSMOS_SETTINGS
-'{"GAME_RESULTS_SAVE": false}'. THREE windows: the server, Engineering (Chief Okoro) and
+GAME STILLS. Not taken yet; no marks until the screenshots exist. State "final", started with
+`python game.py c3-12-scenes-on-the-ground start --consoles server,engineering,weapons`
+(the probe is made from the `away` template, every file of the state laid over it, ground\\
+included; GAME_RESULTS_SAVE is false). THREE windows: the server, Engineering (Chief Okoro) and
 Weapons (Lt Reyes). The ship starts beside the relay, so the party is offered at once: on
 each console the handheld icon (top left), the Boarding Party tile, BEAM DOWN. The console
 becomes the xESS: the map, and beside it the device (bar: name, job, the mark you stand
@@ -77,12 +73,6 @@ def _read(*parts):
         return f.read().replace("\r\n", "\n")
 
 
-# The starter's ground as Lecture 11 left it, laid flat (see the docstring).
-_GROUND = [("write", "starter.tileset", _read("c3-09-tile-map-editor-part-2", "example", "ground", "starter.tileset")),
-           ("write", "landing.tiles", _read("c3-09-tile-map-editor-part-2", "example", "ground", "landing.tiles")),
-           ("write", "cistern.tiles", _read("c3-10-props", "example", "ground", "cistern.tiles")),
-           ("write", "gully.tiles", _read("c3-11-people-and-hostiles", "example", "ground", "gully.tiles"))]
-
 _FINAL = _read(LECTURE, "example", "mission.amd")
 
 
@@ -118,8 +108,7 @@ STATES = {
     # Lecture 11's finished files: where this lecture starts
     "start": {"folder": "c3-07-anatomy-of-a-long-away-mission/example",
               "over": ("c3-09-tile-map-editor-part-2/example", "c3-10-props/example",
-                       "c3-11-people-and-hostiles/example"),
-              "edits": _GROUND},
+                       "c3-11-people-and-hostiles/example")},
     # Step 1: a quest that waits
     "r1": {"base": "start", "edits": [("replace", FILE, "transporter lock.\n\n", "transporter lock.\n\n" + _TABLET)]},
     # Step 2: Pim, by the tent

@@ -8,25 +8,25 @@ door (p2), the toolbox (p3), the notice (p4), the panel (p5), their three rooms 
 of the file (p6, lint's one true warning), the cistern's three marks (p7a) and the gate, the
 spare cell and the gauge ("final", the page's own example files).
 
-THE GROUND FOLDER (see c3-07's docstring: a state cannot hold a subfolder). Every state lays
-`ground\\` flat at the top of MyAway; state-based VS Code stills hide the Side Bar and open
-.tiles as TEXT (_TXT); every lint still is a session that puts the tiles files back into
-ground\\ first (_UNFLAT, not drawn).
+THE GROUND FOLDER. A state holds `ground\\` as the student has it (states.py reads, diffs and
+writes subfolders), and lint prints `ground\\...` as the student's does. The close views of
+the text hide the Side Bar, as every close view of this class does.
 
-THE TILE MAP EDITOR STILL (d_marks) is ("derived", ...): the capture profile still has add-on
-0.9.4 (see the report). DEFERRED holds its spec.
+THE TILE MAP EDITOR STILL (d_marks) is taken in the add-on's own editor ("editor": "tiles",
+"view": "art"; see capture.web_steps).
 
 GAME STILLS. Not taken yet; no marks until the screenshots exist. THREE windows: server,
 science (Dr Ines Hale) and engineering (Chief Okoro), the page's
-`sbs run server,engineering,science -m MyAway map=0`, state g_calm: PROBE-ONLY, the sentry's
-`Notice: 4` made `Notice: 1` so both can walk past it (the way east runs about three cells
-from its loop). GAME.PY CANNOT START THIS YET: its probe is the `amd` template with only
-mission.amd and story.mast copied in; make it from `-t away` and copy every file of the state.
+`sbs run server,engineering,science -m MyAway map=0`, state final as the page has it (no
+probe-only change: Lecture 9's path behind the relay house keeps the crew five cells from
+the sentry's loop): `python game.py c3-10-props start --consoles server,engineering,science`.
   1. About 15 s after the consoles are seated, both: handheld icon (top left), Boarding Party,
      Kesh Relay, BEAM DOWN.
   2. Science: walk toward the tent; the key on its peg at 14, 4 in view: game_l10_keymap.
      Click it, then open Pack: game_l10_pack (pump key).
-  3. Both walk east along row 6 and take the exit (29, 6). Engineering: walk to the pump house
+  3. Both walk east by the path behind the relay house (click about 22, 0 first, never row 6,
+     which passes three cells from the sentry's loop), then take the exit (29, 6), one at a
+     time. Engineering: walk to the pump house
      door (12, 5): game_l10_door_shut. Click it: game_l10_door_open (open; the words
      `pump key fits` if they show).
   4. Science: click the toolbox (19, 8), open Pack: game_l10_fuse (fuse x2). Click the notice
@@ -44,7 +44,7 @@ TITLE = ("Class 3, Lecture 10", "Props", "Things to pick up, open and use")
 MISSION = "MyAway"
 FILE = "mission.amd"
 MAST = "story.mast"
-CT = "cistern.tiles"
+CT = "ground/cistern.tiles"
 
 _L7 = "c3-07-anatomy-of-a-long-away-mission/example"
 _L8 = "c3-08-tile-map-editor-part-1/example"
@@ -99,8 +99,8 @@ def _add(rec):
 
 
 STATES = {
-    # Lecture 9's files, ground\ laid flat
-    "start": {"folder": _L7, "over": (_L7 + "/ground", _L8 + "/ground", _L9, _L9 + "/ground")},
+    # Lecture 9's files
+    "start": {"folder": _L7, "over": (_L8, _L9)},
     "p1": {"base": "start", "edits": [_add(_KEY)]},           # Step 1: a pickup
     "p2": {"base": "p1", "edits": [_add(_DOOR)]},             # Step 2: a door
     "p3": {"base": "p2", "edits": [_add(_TOOLBOX)]},          # Step 3: a pickup worth two
@@ -116,26 +116,16 @@ STATES = {
     # Step 8 / scene 8: a key's name and a signal's name misspelled
     "b_key": {"base": "final", "edits": [("replace", FILE, "Item: pump_key", "Item: pumphouse_key")]},
     "b_signal": {"base": "final", "edits": [("replace", FILE, "Opens with: signal cistern_drained", "Opens with: signal cistern_draind")]},
-    # PROBE-ONLY, for the game stills: the sentry notices nobody further than one cell away
-    "g_calm": {"base": "final", "edits": [("replace", FILE, "Notice: 4", "Notice: 1")]},
 }
 
 _LINT = "sbs lint MyAway"
-_UNFLAT = "mkdir MyAway\\ground & move /y MyAway\\*.tiles MyAway\\ground >nul & move /y MyAway\\*.tileset MyAway\\ground >nul"
-_TXT = {"workbench.editorAssociations": {"*.tiles": "default", "*.tileset": "default"}}
 _NS = {"side": False}
-_CT = {"side": False, "file": CT, "settings": _TXT}
+_CT = {"side": False, "file": CT}
 
 
 def _lint(state):
-    """sbs lint on the student's real layout (ground\\ put back first; only the lint is drawn)."""
-    return ("session", [_UNFLAT, _LINT], {"state": state, "show": (2, 2)})
-
-
-DEFERRED = {
-    "d_marks": ("vscode", "p7a", 1, "mid", dict(_NS, file=CT, plain=True)),
-}
-
+    """sbs lint on the state, as the student types it."""
+    return ("session", [_LINT], {"state": state})
 STILLS = {
     "t_p6": _lint("p6"),
     "t_final": _lint("final"),
@@ -151,8 +141,9 @@ STILLS = {
     "e_marks": ("vscode", "p7a", 13, "mid", _CT),          # the whole cistern, 25 lines
     "e_gate": ("vscode", "final", 285, "big", _NS),        # lines 275 to 295: the sluice gate
     "e_cell": ("vscode", "final", 303, "big", _NS),        # lines 293 to 313: the cell, the gauge
-    "d_marks": ("derived", "deferred (capture profile still has add-on 0.9.4). cistern.tiles (p7a) in the Tile Map Editor, Marks on: sluice, crate and gauge outlined"),
-    # THE REAL GAME (not taken yet). State g_calm, consoles server,engineering,science; see the docstring
+    # cistern.tiles (p7a) in the Tile Map Editor, Art, Marks on: sluice, crate and gauge outlined
+    "d_marks": ("vscode", "p7a", 1, "mid", dict(_NS, file=CT, editor="tiles", view="art", zoom=48)),
+    # THE REAL GAME (not taken yet). State final, consoles server,engineering,science; see the docstring
     "game_l10_keymap": ("game", "Science (Dr Hale) in the yard near the tent: the pump house key drawn on its peg at 14, 4"),
     "game_l10_pack": ("game", "Science, the key clicked: the Pack app open, holding the pump key; the key gone from the map"),
     "game_l10_door_shut": ("game", "Engineering (Chief Okoro) in the gully beside the pump house door (12, 5), shut"),

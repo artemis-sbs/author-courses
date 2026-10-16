@@ -7,7 +7,7 @@ gully, through the pump house, and down a flight of stairs to a cistern: a walkw
 a tank of standing water.
 
 You will also have stood the first things on your maps: a trail sign, a pump and a crate.
-And you will have redrawn the walk the sentry takes.
+And you will have redrawn the walk the sentry takes, and given the crew a way round it.
 
 *[Screenshot to add: the three areas side by side in the Tile Map Editor, the exits
 outlined in blue.]*
@@ -358,6 +358,19 @@ Look at what the longer walk does to your map. The keycard at 24, 10 is still in
 loop. The terminal, at 21, 6, is three cells from the top of it, and the sentry notices
 anyone within four.
 
+So is everyone who walks past the front of the relay house, and that row is the only way
+east. Give the crew another one: a path behind the relay house, between its back wall and
+the edge of the map. In `landing.tiles`, paint the top row with dust (`.`) from 17, 0 to
+27, 0, eleven cells. The first row of the map becomes:
+
+```
+^^^^^^^^^^^^^^^^^...........^^^^
+```
+
+The path joins the yard at both ends, at 17, 1 and at 27, 1. Go that way to the trail
+sign and the exit, and the nearest you come to the loop is five cells: one more than the
+sentry can notice.
+
 ## Step 11 - Check it
 
 ```
@@ -422,8 +435,9 @@ sbs run server,engineering -m MyAway map=0
 ```
 
 1. Beam down. Open **Beam**: there is nowhere else to go.
-2. Walk east along the north side of the yard, well clear of the sentry. Click the trail
-   sign and read it. Then click the cell under it and to the right, the exit.
+2. Walk east along the north side of the yard, well clear of the sentry: click the path
+   behind the relay house first, then the trail sign, and read it. Then click the cell
+   under it and to the right, the exit.
 3. You are in the gully. Open **Beam** again: the gully is on it now.
 4. Walk into the pump house. Click the pump: you walk up to it, and that is all. Click
    the cell against the east wall, the stairs.

@@ -17,15 +17,13 @@ never removes a prop, the finished files lint clean, `Take as prize` finishes th
 a landing party with nobody on the ground gives way. From the library's documentation and
 lint only; nobody has re-played the deck since.
 
-THE GROUND IS LAID FLAT, as in Lectures 12 to 14 (the tool reads one folder level).
+THE GROUND FOLDER. A state holds `ground\\` as the student has it (states.py reads, diffs and
+writes subfolders).
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. game.py cannot start this
-mission (it makes its probe from the `amd` template and copies only mission.amd and
-story.mast). Build a real MyAway folder for state "final" WITH its ground\\ folder (Lecture
-7's example\\ with the example\\ folders of Lectures 8 to 15 laid over it, subfolders
-included), `sbs fetch MyAway --update-libs` once (the station art: without it there is no
-button), then `sbs run server,helm,comms -m MyAway map=0` with COSMOS_SETTINGS
-'{"GAME_RESULTS_SAVE": false}'. THREE windows: the server, Helm (Lt Dana Ross) and Comms
+GAME STILLS. Not taken yet; no marks until the screenshots exist. State "final":
+`python game.py c3-15-boarding-an-enemy-ship start --consoles server,helm,comms` (the probe
+is made from the `away` template with every file of the state laid over it, ground\\
+included, and the station art its story.json names; GAME_RESULTS_SAVE is false). THREE windows: the server, Helm (Lt Dana Ross) and Comms
 (Ens Tam Vale). Nobody beams down at the relay. ENGINE 1.3.15 ON COMMS: select only the
 Black Gull all game, and never press Cancel (either bug takes the 2D map away). About ten
 minutes:
@@ -65,12 +63,6 @@ def _read(*parts):
         return f.read().replace("\r\n", "\n")
 
 
-_L13 = ("c3-13-what-the-crew-sees", "example", "ground")
-_GROUND = [("write", "starter.tileset", _read("c3-09-tile-map-editor-part-2", "example", "ground", "starter.tileset")),
-           ("write", "landing.tiles", _read(*_L13, "landing.tiles")),
-           ("write", "cistern.tiles", _read(*_L13, "cistern.tiles")),
-           ("write", "gully.tiles", _read(*_L13, "gully.tiles"))]
-
 _A = _read(LECTURE, "example", "mission.amd")
 _M = _read(LECTURE, "example", "story.mast")
 
@@ -96,8 +88,7 @@ STATES = {
     "start": {"folder": "c3-07-anatomy-of-a-long-away-mission/example",
               "over": ("c3-09-tile-map-editor-part-2/example", "c3-10-props/example",
                        "c3-11-people-and-hostiles/example", "c3-12-scenes-on-the-ground/example",
-                       "c3-13-what-the-crew-sees/example", "c3-14-pacing-an-away-mission/example"),
-              "edits": _GROUND},
+                       "c3-13-what-the-crew-sees/example", "c3-14-pacing-an-away-mission/example")},
     # The page's own files, and back from there one step at a time
     "final": {"base": "start", "edits": [("write", FILE, _A), ("write", MAST, _M)],
               "same_as": (_EX + "/mission.amd", _EX + "/story.mast")},

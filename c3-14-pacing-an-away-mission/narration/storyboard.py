@@ -14,17 +14,14 @@ mark lines (Mark: keycard, At: 6, 8, At: 16, 2, Mark: sentry) that Lecture 13's 
 had changed to Mark: yard / scrub / crate / post; lint reported two of them as never placed.
 They now match Lecture 13, and the finished file lints clean.
 
-THE GROUND IS LAID FLAT, as in Lectures 12 and 13 (the tool reads one folder level). The
-three maps in scene 3 are their TEXT, the rows of each map. A Tile Map Editor still is
-DEFERRED: capture opens a file at a line, which is always the text editor, and the
-throwaway profile still has add-on 0.9.4, the one with the "Experimental" badge.
+THE GROUND FOLDER. A state holds `ground\\` as the student has it (states.py reads, diffs and
+writes subfolders). The three maps in scene 3 are pictures from the Tile Map Editor, Art
+view ("editor": "tiles"; see capture.web_steps).
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. game.py cannot start this
-mission (it makes its probe from the `amd` template and copies only mission.amd and
-story.mast). Build a real MyAway folder for state "final" WITH its ground\\ folder (Lecture
-7's example\\ with the example\\ folders of Lectures 8 to 14 laid over it, subfolders
-included), `sbs fetch MyAway --update-libs` once, then `sbs run server,science,weapons -m
-MyAway map=0` with COSMOS_SETTINGS '{"GAME_RESULTS_SAVE": false}'. THREE windows: the
+GAME STILLS. Not taken yet; no marks until the screenshots exist. State "final":
+`python game.py c3-14-pacing-an-away-mission start --consoles server,science,weapons` (the
+probe is made from the `away` template with every file of the state laid over it, ground\\
+included; GAME_RESULTS_SAVE is false). THREE windows: the
 server, Science (Dr Ines Hale) and Weapons (Lt Sam Reyes): the page's scientist and guard,
 no engineer. About six minutes; the clock is real, so take the clock stills first.
   1. Weapons (Reyes), still aboard: the handheld icon, Quests: the list with a time under
@@ -60,12 +57,6 @@ def _read(*parts):
         return f.read().replace("\r\n", "\n")
 
 
-_L13 = ("c3-13-what-the-crew-sees", "example", "ground")
-_GROUND = [("write", "starter.tileset", _read("c3-09-tile-map-editor-part-2", "example", "ground", "starter.tileset")),
-           ("write", "landing.tiles", _read(*_L13, "landing.tiles")),
-           ("write", "cistern.tiles", _read(*_L13, "cistern.tiles")),
-           ("write", "gully.tiles", _read(*_L13, "gully.tiles"))]
-
 _LOSE_OLD = "Lose: The beacon is slag. The Kesh run stays dark, and the convoys must find another road.\n"
 _LOSE_NEW = "Lose: Kesh Relay stays dark. The convoy comes through blind, and must find another road.\n"
 _HOURGLASS = "![](icon://hourglass) Thirty minutes. Then the next convoy comes through, lamp or no lamp.\n\n"
@@ -82,8 +73,7 @@ STATES = {
     "start": {"folder": "c3-07-anatomy-of-a-long-away-mission/example",
               "over": ("c3-09-tile-map-editor-part-2/example", "c3-10-props/example",
                        "c3-11-people-and-hostiles/example", "c3-12-scenes-on-the-ground/example",
-                       "c3-13-what-the-crew-sees/example"),
-              "edits": _GROUND},
+                       "c3-13-what-the-crew-sees/example")},
     # Step 5: a clock, a Lose line true every way, and the hourglass for the bridge
     "r5": {"base": "start", "edits": [
         ("replace", FILE, "Leads to: beacon\nWin:", "Leads to: beacon\nFails when: 30 minutes\nWin:"),
@@ -102,13 +92,13 @@ STATES = {
 
 _LINT = "sbs lint MyAway"
 _NS = {"side": False}
-_TEXT = {"side": False, "settings": {"workbench.editorAssociations": {"*.tiles": "default", "*.tileset": "default"}}}
+_MAP = {"side": False, "editor": "tiles", "view": "art"}            # a map in the Tile Map Editor (capture.web_steps)
 
 STILLS = {
-    # Step 2: the three maps, as text: the rows of each map
-    "e_map_landing": ("vscode", "start", 38, "big", dict(_TEXT, file="landing.tiles")),   # lines 28 to 48: the map, rows 32 to 45
-    "e_map_gully": ("vscode", "start", 30, "big", dict(_TEXT, file="gully.tiles")),       # lines 20 to 40: the map, rows 24 to 35
-    "e_map_cistern": ("vscode", "start", 21, "big", dict(_TEXT, file="cistern.tiles")),   # lines 11 to 31: the map, rows 19 to 25
+    # Step 2: the three maps, in the Tile Map Editor's Art view
+    "e_map_landing": ("vscode", "start", 1, "mid", dict(_MAP, file="ground/landing.tiles", zoom=32)),
+    "e_map_gully": ("vscode", "start", 1, "mid", dict(_MAP, file="ground/gully.tiles", zoom=40)),
+    "e_map_cistern": ("vscode", "start", 1, "mid", dict(_MAP, file="ground/cistern.tiles", zoom=48)),
     # Step 5: the clock
     "e_clock0": ("vscode", "start", 76, "big", _NS),       # lines 66 to 86: Relight Kesh Relay as Lecture 13 left it
     "e_clock": ("vscode", "final", 78, "big", _NS),        # lines 68 to 88: Fails when (75), Lose (77), the hourglass (83)

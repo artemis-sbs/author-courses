@@ -154,7 +154,7 @@ fact sheet for me. ||"
 **Screen:** `gully.tiles`: + Entry, floor, pump, `p`; paint cell 15, 4. The game: Okoro
 beside the pump. `mission.amd`:
 type the pump and the crate. Then the sentry: change the `Patrol:` line; the dashed loop
-in the editor.
+in the editor, and the path painted behind the relay house.
 
 **Say:** "The pump belongs to the pump house, | so it gets a mark of its own. || And its
 record says Mark, | and the mark's name. ||| Here's the rule that's easy to break. | A
@@ -168,8 +168,8 @@ pair. || I've made its loop longer, | and the editor draws it as a dashed line. 
 ### 8. Lint, play it, and your turn
 
 **Screen:** Lint: clean. Misspell `to_landing`; lint; undo. Write the pump's mark in
-`At:`; lint; undo. Then the game: beam down, the Beam app empty, walk east, the gully, the
-stairs, the cistern.
+`At:`; lint; undo. Then the game: beam down, the Beam app empty, walk east along the path
+behind the relay house, the gully, the stairs, the cistern.
 
 **Say:** "Lint knows about exits. | Misspell one of them, | and it tells you there's no
 such area. || Put a mark's name in At, | and it tells you that too. ||| It can't tell you

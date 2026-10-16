@@ -379,7 +379,7 @@ sbs run server,engineering,science -m MyAway map=0
 The Science console is Dr Hale and the Engineering console is Chief Okoro.
 
 1. Both beam down. Deal with the sentry, or walk east along the north edge of the yard,
-   well clear of it.
+   by the path behind the relay house, well clear of it.
 2. As Dr Hale, pick up the key by the tent. Both walk to the trail sign and take the
    exit.
 3. As Chief Okoro, click the pump house door. He is not carrying the key. She is, and

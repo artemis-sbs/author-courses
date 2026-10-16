@@ -384,9 +384,11 @@ exports.activate = async function () {
     try { steps = JSON.parse(fs.readFileSync(file, 'utf8')); } catch (e) { return; }
     const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     await sleep(1500);
+    // {"$uri": "<path>"} in a step stands for vscode.Uri.file(path): vscode.openWith takes a Uri
+    const arg = (a) => (a && typeof a === 'object' && a.$uri) ? vscode.Uri.file(a.$uri) : a;
     for (const step of steps) {
         if (typeof step === 'number') { await sleep(step); continue; }
-        try { await vscode.commands.executeCommand(step[0], ...step.slice(1)); } catch (e) { }
+        try { await vscode.commands.executeCommand(step[0], ...step.slice(1).map(arg)); } catch (e) { }
         await sleep(700);
     }
     try { fs.writeFileSync(file + '.done', 'ok'); } catch (e) { }
@@ -447,8 +449,103 @@ def workspace_state(folder, key, value=None, delete=False):
     return None
 
 
+EDITORS = {"tiles": "amd.tilesEditor", "tileset": "amd.tilesetEditor"}   # the add-on's custom editors
+DEVTOOLS_PORT = 9333
+# How a custom editor's page is known, and when it has its picture: both editors write
+# their problems (or "No problems.") once the language server has answered; the Tile Map
+# Editor writes the art sets it drew with in its footer at the same moment.
+_WEB_PAGE = {"amd.tilesEditor": "!!document.getElementById('map')",
+             "amd.tilesetEditor": "!!document.getElementById('rows')"}
+_WEB_READY = {"amd.tilesEditor": "document.getElementById('problems').textContent.length > 0",
+              "amd.tilesetEditor": "document.getElementById('problems').textContent.length > 0"}
+
+
+def web_steps(opts):
+    """What a still asks to be set up inside a custom editor, as cdp steps:
+    "view": "art" | "kinds"; "toggles": {"grid"|"marks"|"chars"|"things": bool};
+    "zoom": pixels a cell; "pick": a legend character (that row selected, as a click does);
+    "form": {"kind", "mark", "char"} (+ Entry's form, filled in); "hover": (x, y) (the cell
+    under the pointer: its outline and the footer that reads it); "tip": words of a title-bar
+    button's label (VS Code's tooltip for it, by a DevTools mouse move - never the real mouse)."""
+    steps = []
+    if opts.get("view"):
+        steps.append(f"document.querySelector('[data-mode={opts['view']}]').click(); true")
+    for name, want in (opts.get("toggles") or {}).items():
+        bid = {"grid": "tGrid", "marks": "tMarks", "chars": "tChars", "things": "tThings"}[name]
+        steps.append(f"(function(){{const b=document.getElementById('{bid}');"
+                     f"if (b.classList.contains('on') !== {str(bool(want)).lower()}) b.click(); return true;}})()")
+    if opts.get("zoom"):
+        steps.append("(function(){const m=document.getElementById('size').textContent.match(/(\\d+) x (\\d+)/);"
+                     "const cv=document.getElementById('map');"
+                     f"for (let i=0; i<12 && m && cv.width/Number(m[1]) < {int(opts['zoom'])}; i++) "
+                     "document.getElementById('zin').click(); return true;})()")
+    if opts.get("pick"):
+        steps.append("(function(){const e=[...document.querySelectorAll('#legend .entry')]"
+                     f".find(x => x.dataset.ch === {json.dumps(opts['pick'])}); if (!e) throw new Error('no legend row "
+                     f"{opts['pick']}'); e.click(); return true;}})()")
+    if opts.get("form"):
+        f = opts["form"]
+        steps.append("(function(){document.getElementById('addEntry').click();"
+                     f"const k=document.getElementById('fKind'); k.value={json.dumps(f.get('kind', ''))};"
+                     "k.dispatchEvent(new Event('input'));"
+                     f"document.getElementById('fMark').value={json.dumps(f.get('mark', ''))};"
+                     f"document.getElementById('fChar').value={json.dumps(f.get('char', ''))}; return true;}})()")
+    if opts.get("hover"):
+        x, y = opts["hover"]
+        steps.append("(function(){const cv=document.getElementById('map'); const r=cv.getBoundingClientRect();"
+                     "const m=document.getElementById('size').textContent.match(/(\\d+) x (\\d+)/);"
+                     "const cw=r.width/Number(m[1]), ch=r.height/Number(m[2]);"
+                     f"window.dispatchEvent(new MouseEvent('mousemove', {{clientX: r.left+({x}+0.5)*cw, "
+                     f"clientY: r.top+({y}+0.5)*ch, bubbles: true}})); return true;}})()")
+    if opts.get("tip"):
+        steps.append(("tip", opts["tip"]))
+    return steps
+
+
+def run_web(port, editor, steps, timeout=40):
+    """Set up a still inside the window over DevTools: wait for the custom editor's picture,
+    then each step. A step is JavaScript run in the editor's page, ("tip", words) for a
+    tooltip VS Code draws, or a number of milliseconds to wait."""
+    import cdp
+    page = None
+    if editor:
+        page = cdp.webview(port, _WEB_PAGE.get(editor, "true"), timeout=timeout)
+        t0 = time.time()
+        while not page.run(_WEB_READY.get(editor, "true")):
+            if time.time() - t0 > timeout:
+                raise RuntimeError(f"{editor} never had its picture (the language server did not answer)")
+            time.sleep(0.5)
+        time.sleep(1.5)                                  # its art sheets load after the answer
+    for step in steps:
+        if isinstance(step, (int, float)):
+            time.sleep(step / 1000)
+        elif isinstance(step, tuple) and step[0] == "tip":
+            sock = cdp.window_page(port)
+            try:
+                where = sock.call("Runtime.evaluate", {"returnByValue": True, "expression": (
+                    "(function(){const e=[...document.querySelectorAll('.editor-actions [aria-label]')]"
+                    f".find(x => (x.getAttribute('aria-label')||'').includes({json.dumps(step[1])}));"
+                    "if (!e) return null; const r=e.getBoundingClientRect();"
+                    "return [r.left + r.width/2, r.top + r.height/2];})()")})["result"].get("value")
+                if not where:
+                    raise RuntimeError(f"no title-bar button labelled {step[1]!r}")
+                for dx in (8, 0):                        # arrive, then stop on it: VS Code shows the tip
+                    sock.call("Input.dispatchMouseEvent", {"type": "mouseMoved", "x": where[0] - dx, "y": where[1]})
+                    time.sleep(0.3)
+                time.sleep(2.0)
+            finally:
+                sock.close()
+        else:
+            if page is None:
+                raise RuntimeError("a webview step with no custom editor open")
+            page.run(step)
+            time.sleep(0.4)
+    if page is not None:
+        page.sock.close()
+
+
 def vscode_still(folder, file, line, size, settle=7.0, timeout=60, side=True, wrap=False, preview=False,
-                 trust=True, extra=None, do=None, plain=False):
+                 trust=True, extra=None, do=None, plain=False, editor=None, web=None):
     """Open the folder and the file at a line in a fresh throwaway window, and read it.
     side=False hides the Side Bar (the file list); wrap=True wraps long lines, for a log.
     preview=True opens a .md file in VS Code's built-in markdown preview instead of as text
@@ -459,6 +556,9 @@ def vscode_still(folder, file, line, size, settle=7.0, timeout=60, side=True, wr
     extra: more settings for this one still.
     plain=True: what is in front is not a text editor (the Workspace Trust page, say), so
     there is no cursor line to find: the window is read once it has stopped changing.
+    editor: a custom editor's viewType ("amd.tilesEditor"): the file is opened in it with
+    vscode.openWith (not --goto, which always opens text), and the still is a plain one.
+    web: steps run over DevTools once the window is up (see run_web and web_steps).
     do: VS Code commands the helper extension runs once the window is up, in order: a list
     of [command, args...] (a number is a wait in milliseconds). For example
     [["markdown.showPreviewToSide"], ["workbench.action.focusFirstEditorGroup"]].
@@ -488,6 +588,10 @@ def vscode_still(folder, file, line, size, settle=7.0, timeout=60, side=True, wr
         st.update(extra or {})
         json.dump(st, f, indent=2)
     env = {k: v for k, v in os.environ.items() if not k.startswith(("VSCODE_", "ELECTRON_"))}
+    if editor:                                         # the custom editor, opened by the helper
+        plain = True
+        do = [["vscode.openWith", {"$uri": os.path.join(folder, file)}, editor]] + list(do or [])
+    devtools = bool(editor or web)
     do_file = os.path.join(c.VSC_DATA, "picture_do.json")
     for f in (do_file, do_file + ".done"):
         if os.path.exists(f):
@@ -501,13 +605,16 @@ def vscode_still(folder, file, line, size, settle=7.0, timeout=60, side=True, wr
         env["PICTURE_DO"] = do_file
         settle = max(settle, 9.0)
     front = user32.GetForegroundWindow()
-    target = [os.path.join(folder, file)] if preview else ["--goto", f"{os.path.join(folder, file)}:{line}:1"]
+    target = ([] if editor else [os.path.join(folder, file)] if preview
+              else ["--goto", f"{os.path.join(folder, file)}:{line}:1"])
     subprocess.Popen([c.VSCODE, f"--user-data-dir={c.VSC_DATA}", f"--extensions-dir={c.VSC_EXT}", "--new-window",
                       "--skip-welcome", "--skip-release-notes"] + (["--disable-workspace-trust"] if trust else [])
+                     + ([f"--remote-debugging-port={DEVTOOLS_PORT}"] if devtools else [])
                      + [folder] + target, env=env, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     t0, hwnd, seen, last = time.time(), None, None, None
+    webbed = not devtools
     try:
-        while time.time() - t0 < timeout:
+        while time.time() - t0 < timeout + (40 if devtools else 0):
             time.sleep(1.0)
             if hwnd is None:
                 hwnd, _title = window_of(set(our_pids()))
@@ -518,6 +625,10 @@ def vscode_still(folder, file, line, size, settle=7.0, timeout=60, side=True, wr
                     user32.SetForegroundWindow(front)                    # hand the keyboard back
                 continue
             if not place(hwnd):
+                continue
+            if not webbed and (not do or os.path.exists(do_file + ".done")):
+                run_web(DEVTOOLS_PORT, editor, web or [])
+                webbed, seen, last = True, None, None
                 continue
             if preview or plain:                                         # no cursor line to find: wait for stillness
                 img = grab(hwnd)
@@ -549,6 +660,8 @@ def vscode_still(folder, file, line, size, settle=7.0, timeout=60, side=True, wr
         raise RuntimeError(f"VS Code never showed {file} at line {line} (window {'found' if hwnd else 'not found'})")
     finally:
         stop_vscode()
+        if editor:                                     # the next window on this folder must not reopen it
+            workspace_state(folder, "memento/workbench.parts.editor", delete=True)
 
 
 def wrap_starts(line, cols):
@@ -571,15 +684,20 @@ def wrap_starts(line, cols):
 def make_vscode(sb, name, spec, stills_dir, mission_dir):
     _, state, line, size = spec[:4]
     opts = spec[4] if len(spec) > 4 else {}
-    file = opts.get("file", sb.FILE)                   # another file of the folder: a log, story.mast
+    key = states.key(opts.get("file", sb.FILE))        # another file of the folder: a log, story.mast, ground/x.tiles
+    file = key.replace("/", os.sep)
     if opts.get("folder"):                             # another folder of the stand-in's missions, as it is on disk
         mission_dir = os.path.join(c.STANDIN_MISSIONS, opts["folder"])      # (state is not used: pass None)
         with open(os.path.join(mission_dir, file), encoding="utf-8", newline="") as fh:
-            files = {file: fh.read().replace(chr(13) + chr(10), chr(10))}
+            files = {key: fh.read().replace(chr(13) + chr(10), chr(10))}
         if not opts.get("side", True) and workspace_state(mission_dir, "workbench.sideBar.hidden") is None:
             vscode_still(mission_dir, file, line, size)                     # open it once, so its Side Bar can be hidden
     else:
         files = states.materialize(sb, state, mission_dir)
+        if not opts.get("side", True) and workspace_state(mission_dir, "workbench.sideBar.hidden") is None:
+            vscode_still(mission_dir, file, line, size)                     # (as above, for a new mission folder)
+    editor = EDITORS.get(opts.get("editor"), opts.get("editor"))           # "tiles", "tileset", or a viewType
+    web = web_steps(opts)
     do = list(opts.get("do", ()))
     if opts.get("beside") == "preview":                # the markdown preview in the right half; the cursor stays left
         do = [["markdown.showPreviewToSide"], ["workbench.action.focusFirstEditorGroup"]] + do
@@ -589,12 +707,13 @@ def make_vscode(sb, name, spec, stills_dir, mission_dir):
         extra.setdefault("markdown.preview.fontSize", c.EDITOR_FONT[size] + 1)
     img, geo = vscode_still(mission_dir, file, line, size, side=opts.get("side", True), wrap=wrap,
                             trust=opts.get("trust", True), do=do or None, extra=extra,
-                            plain=opts.get("plain", False))
+                            plain=opts.get("plain", False), editor=editor, web=web or None)
     if geo is None:                                    # a page, not a file: a picture with no lines to mark
         img.save(os.path.join(stills_dir, name + ".png"))
-        json.dump({"kind": "vscode", "state": state, "parts": {}, "file": file},
+        json.dump({"kind": "vscode", "state": state, "parts": {}, "file": key, "editor": editor},
                   open(os.path.join(stills_dir, name + ".json"), "w", encoding="utf-8"), indent=1)
-        return "a page (no lines to mark)"
+        return f"in {editor} (no lines to mark)" if editor else "a page (no lines to mark)"
+    file = key
     if wrap:                                           # the cursor's own line may be folded: its band is then
         rows = max(1, round(geo["h"] / (c.EDITOR_LINE[size] * 1.25)))       # several rows tall (125% screen)
         geo["h"] = geo["h"] / rows

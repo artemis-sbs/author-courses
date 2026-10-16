@@ -9,19 +9,16 @@ the three maps (marks renamed, "m2"; two titles, "m3") and mission.amd (item key
 headings "m4", three Scan lines "m5", three quest headings "m6", two side stories "m7" and
 their answers "m7b", the bridge's briefing "final", the page's own example\\ files).
 
-THE GROUND IS LAID FLAT, as in Lecture 12's storyboard: the tool reads one folder level, so
-ground\\ files are written beside mission.amd (`sbs lint` prints the same either way). No
-still shows the Side Bar. The maps are shown as TEXT, as the page asks ("press Text"): the
-stills open .tiles files with the plain text editor (`workbench.editorAssociations`), so the
-Tile Map Editor is not in them.
+THE GROUND FOLDER. A state holds `ground\\` as the student has it (states.py reads, diffs and
+writes subfolders). The close views hide the Side Bar, as every close view of this class
+does. The maps are shown as TEXT, as the page asks ("press Text"): capture opens a file at a
+line, which is the text editor.
 
 GAME STILLS. Not taken yet; no marks until the screenshots exist. This lecture is mostly the
-game. game.py cannot start this mission (it makes its probe from the `amd` template and
-copies only mission.amd and story.mast). Build a real MyAway folder for the state, WITH its
-ground\\ folder (Lecture 7's example\\ with the example\\ folders of Lectures 8 to 12 laid
-over it, subfolders included; for "final" add Lecture 13's), `sbs fetch MyAway
---update-libs` once, and run `sbs run server,science,helm -m MyAway map=0` with
-COSMOS_SETTINGS '{"GAME_RESULTS_SAVE": false}'. THREE windows: the server, Science (Dr Ines
+game. `python game.py c3-13-what-the-crew-sees start --state start --consoles server,science,helm`
+(game one) and `--state final` (game two): the probe is made from the `away` template with
+every file of the state laid over it, ground\\ included; GAME_RESULTS_SAVE is false.
+THREE windows: the server, Science (Dr Ines
 Hale, medical and science) and Helm (Lt Dana Ross). To go down: the handheld icon (top
 left), the Boarding Party tile, BEAM DOWN. The device's first screen is its tile sheet;
 a tile opens an app, Back closes it.
@@ -39,8 +36,9 @@ GAME ONE, state "start" (Lecture 12's files), about eight minutes:
      away from him): game_l13_marrow_hale. Ask what he has put by. Back to the kit's cell
      (click beside the kit and then onto it, without using it): game_l13_bar_scrub.
   4. Hale: Scan, in the yard near the tent: game_l13_scan_before.
-  5. Hale: pick up the brass key on the tent peg. Walk east off the yard (the right edge,
-     row 6) into the gully: game_l13_bar_arrive. Pick up the Toolbox (east of the pump
+  5. Hale: pick up the brass key on the tent peg. Walk east off the yard by the path behind
+     the relay house (click about 22, 0 first, never row 6, which passes three cells from
+     the sentry's loop), then the exit (29, 6), into the gully: game_l13_bar_arrive. Pick up the Toolbox (east of the pump
      house): Act, game_l13_act_toolbox; Pack, game_l13_pack_before.
   6. Hale: Look, Go to Kesh Relay. In the yard, Look: game_l13_look_before; Beam:
      game_l13_beam_before.
@@ -51,7 +49,8 @@ GAME TWO, state "final", about five minutes:
   1. Both beam down. Hale's bar on the pad: game_l13_bar_landing_pad. Tasks, both:
      game_l13_tasks_hale_after, game_l13_tasks_ross_after. Hale's Scan by the tent:
      game_l13_scan_after.
-  2. Hale: the brass key, east into the gully: game_l13_bar_gully_mouth. The Toolbox; Pack:
+  2. Hale: the brass key, east into the gully by the path behind the relay house:
+     game_l13_bar_gully_mouth. The Toolbox; Pack:
      game_l13_pack_after. Look, Go to Kesh Relay; Look: game_l13_look_after.
   3. Ross: Crew, Beam up. Quests, Relight Kesh Relay: game_l13_log_relight.
 """
@@ -72,10 +71,7 @@ def _read(*parts):
         return f.read().replace("\r\n", "\n")
 
 
-_GROUND = [("write", "starter.tileset", _read("c3-09-tile-map-editor-part-2", "example", "ground", "starter.tileset")),
-           ("write", "landing.tiles", _read("c3-09-tile-map-editor-part-2", "example", "ground", "landing.tiles")),
-           ("write", "cistern.tiles", _read("c3-10-props", "example", "ground", "cistern.tiles")),
-           ("write", "gully.tiles", _read("c3-11-people-and-hostiles", "example", "ground", "gully.tiles"))]
+LT, GT, CT = "ground/landing.tiles", "ground/gully.tiles", "ground/cistern.tiles"
 
 _FINAL = _read(LECTURE, "example", "mission.amd")
 
@@ -97,21 +93,20 @@ STATES = {
     # Lecture 12's finished files
     "start": {"folder": "c3-07-anatomy-of-a-long-away-mission/example",
               "over": ("c3-09-tile-map-editor-part-2/example", "c3-10-props/example",
-                       "c3-11-people-and-hostiles/example", "c3-12-scenes-on-the-ground/example"),
-              "edits": _GROUND},
+                       "c3-11-people-and-hostiles/example", "c3-12-scenes-on-the-ground/example")},
     # Step 2: marks named for the place
     "m2": {"base": "start", "edits": [
-        ("replace", "landing.tiles", "entry: pad\n", "entry: landing_pad\n"),
-        ("replace", "landing.tiles", "  P: pad @pad\n", "  P: pad @landing_pad\n"),
-        ("replace", "gully.tiles", "entry: arrive\n", "entry: gully_mouth\n"),
-        ("replace", "gully.tiles", "  a: dust @arrive\n", "  a: dust @gully_mouth\n"),
-        ("replace", "gully.tiles", "  to_cistern: cistern @foot\n", "  to_cistern: cistern @foot_of_the_stairs\n"),
-        ("replace", "cistern.tiles", "entry: foot\n", "entry: foot_of_the_stairs\n"),
-        ("replace", "cistern.tiles", "  f: floor @foot\n", "  f: floor @foot_of_the_stairs\n")]},
+        ("replace", LT, "entry: pad\n", "entry: landing_pad\n"),
+        ("replace", LT, "  P: pad @pad\n", "  P: pad @landing_pad\n"),
+        ("replace", GT, "entry: arrive\n", "entry: gully_mouth\n"),
+        ("replace", GT, "  a: dust @arrive\n", "  a: dust @gully_mouth\n"),
+        ("replace", GT, "  to_cistern: cistern @foot\n", "  to_cistern: cistern @foot_of_the_stairs\n"),
+        ("replace", CT, "entry: foot\n", "entry: foot_of_the_stairs\n"),
+        ("replace", CT, "  f: floor @foot\n", "  f: floor @foot_of_the_stairs\n")]},
     # Step 3: two titles. The three maps are now the page's own.
     "m3": {"base": "m2", "edits": [
-        ("replace", "gully.tiles", "title: The Dry Gully\n", "title: Dry Gully\n"),
-        ("replace", "cistern.tiles", "title: The Cistern\n", "title: Pump House Cistern\n")],
+        ("replace", GT, "title: The Dry Gully\n", "title: Dry Gully\n"),
+        ("replace", CT, "title: The Cistern\n", "title: Pump House Cistern\n")],
         "same_as": (_EX + "/ground/landing.tiles", _EX + "/ground/gully.tiles", _EX + "/ground/cistern.tiles")},
     # Step 4: item keys the same words as the headings, and two headings
     "m4": {"base": "m3", "edits": [
@@ -156,17 +151,17 @@ STATES = {
 
 _LINT = "sbs lint MyAway"
 _NS = {"side": False}
-_TEXT = {"side": False, "settings": {"workbench.editorAssociations": {"*.tiles": "default", "*.tileset": "default"}}}
+_TEXT = {"side": False}                                 # a map as text, as the page has the student press Text
 
 STILLS = {
     # Step 2: the marks, in the three maps (as text)
-    "e_land2": ("vscode", "m2", 12, "big", dict(_TEXT, file="landing.tiles")),     # lines 2 to 22: entry (12), the P line (21)
-    "e_gully2": ("vscode", "m2", 12, "big", dict(_TEXT, file="gully.tiles")),      # lines 2 to 22: entry (5), the a line (16), the exit (22)
-    "e_cist2": ("vscode", "m2", 9, "big", dict(_TEXT, file="cistern.tiles")),      # lines 1 to 19: entry (5), the f line (14)
+    "e_land2": ("vscode", "m2", 12, "big", dict(_TEXT, file=LT)),     # lines 2 to 22: entry (12), the P line (21)
+    "e_gully2": ("vscode", "m2", 12, "big", dict(_TEXT, file=GT)),      # lines 2 to 22: entry (5), the a line (16), the exit (22)
+    "e_cist2": ("vscode", "m2", 9, "big", dict(_TEXT, file=CT)),      # lines 1 to 19: entry (5), the f line (14)
     "t_m3": ("terminal", [("m3", _LINT)]),
     # Step 3: two titles
-    "e_gully3": ("vscode", "m3", 12, "big", dict(_TEXT, file="gully.tiles")),      # title (3)
-    "e_cist3": ("vscode", "m3", 9, "big", dict(_TEXT, file="cistern.tiles")),      # title (3)
+    "e_gully3": ("vscode", "m3", 12, "big", dict(_TEXT, file=GT)),      # title (3)
+    "e_cist3": ("vscode", "m3", 9, "big", dict(_TEXT, file=CT)),      # title (3)
     # Step 4: the key's three lines, and the headings
     "e_key0": ("vscode", "start", 258, "big", _NS),        # lines 248 to 268: Pump house key (248), Item: pump_key (253), the door's Opens with (264)
     "e_key4": ("vscode", "m4", 258, "big", _NS),           # the same lines after Step 4; Two fuses (270) just below
