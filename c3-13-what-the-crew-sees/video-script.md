@@ -8,9 +8,17 @@
 >   `mission.amd` and the three `.tiles` files. `example\` holds them.
 > - **No MAST and no new field.** The student renames marks, titles, headings and item
 >   keys, adds three `Scan:` lines, and writes two side stories of the Lecture 5 kind.
-> - **NOBODY HAS SEEN ANY SCREEN IN THIS LECTURE.** No person has looked at the handheld
->   on the ground. Every statement about what an app shows is one of the two kinds
->   below. Record nothing as fact until the list under "Confirm on camera" is ticked.
+> - **Seen on the game 2026-10-16** (engine 1.3.15, sbs_utils `7ea2c918`): every app, the
+>   Boarding Party screen, Messages and the Quest Log, in two games. What the game showed
+>   that the capture did not: the handheld's first screen is a LIST of eight full-width
+>   rows, not tiles; Tasks is a list with the picked quest's page under it (state, the
+>   objective, the text, leads); Beam on the pad reads `No other site has a lock yet.`;
+>   Messages holds the crew's mail from home beside the Report in line; a pickup reads
+>   `picked up pump key from the Pump house key.` Scan on the pad lists the key and the
+>   kit too, once the kit is found.
+> - **The bar's third slot names the mark you stand on.** That build showed the area's
+>   title there instead; the library is being put back to the mark. Six stills of the bar
+>   wait for a re-shoot (see the storyboard).
 
 > **CAPTURED FROM THE APPS' OWN DRAWING CODE (mock, 2026-10-10).** The probe ran each
 > app's draw function with the widget calls recorded, for stand-in consoles, on the
@@ -32,11 +40,11 @@
 
 > **READ FROM SOURCE ONLY, NOT CAPTURED.** Look's limits (six in reach, four further
 > off) and Tasks' four leads; that a prop's scene takes in crew within two cells (seen
-> once in a capture, with two at the terminal); that the first screen shows the scene's
-> line in a band that scrolls; that choices in Act are buttons in a wrapping row; the
-> `Give to` button (the probe called its function; the button was not drawn in a
-> capture); which apps a rooms-only party has. Layout, size, color and position were
-> never captured and are not described anywhere.
+> once in a capture, with two at the terminal); the `Give to` button (the probe called
+> its function; the button was not drawn in a capture); which apps a rooms-only party
+> has. (Two more from this list were wrong on the game and are gone from the page: Act's
+> choices stand one under another, not in a wrapping row, and in these stills the first
+> screen is the list alone, with no scene line above it.)
 
 The companion page is `lesson.md`; the finished files are in `example\`.
 
@@ -67,21 +75,21 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 7. Chief Okoro, alone with Marrow while Dr Hale stands on the pad, is offered her
    answer as covering. (Mock.)
 
-Not seen by anyone. If one is not as described, stop and fix the page:
+Seen on the game 2026-10-16: every app in the order captured; a covered choice, `Look at
+that cough (covering for medical)`, on one line; the Boarding Party screen and the quest
+list on a console left aboard; Relight Kesh Relay's new page (the relay drawn beside its
+lead line, then the table); items 3, 5 and 6 above, and 7 with Lt Ross in the chief's
+place. Item 2 waits for the bar's re-shoot. Not seen yet:
 
-1. Every app, on a screen. Whether the rows are in the order captured.
-2. Whether a 44 character choice fits, and how a covered choice looks.
-3. The bar when a mark's name is three words long.
-4. The Boarding Party screen and the quest list on a console left aboard.
-5. Relight Kesh Relay in the Quest Log on a console left aboard: the relay
-   drawn beside its lead line, then the table.
+1. Whether a 44 character choice fits.
+2. The bar when a mark's name is three words long.
 
 ## Scenes
 
 ### 1. Cold open
 
-**Screen:** The handheld on the ground, eight tiles. Then the bar, close: a name, two
-jobs, and the word `arrive`.
+**Screen:** The handheld on the ground: the bar, and the list of eight apps. Then the
+bar, close: a name, two jobs, and the word `arrive`.
 
 **Say:** "For six lectures you've written records. || Your crew never sees a record. |||
 What they see is this handheld. | Eight apps, and every one of them is made of your words. || Some of
@@ -91,8 +99,9 @@ reads badly. ||"
 
 ### 2. The bar and the eight apps
 
-**Screen:** The game with two consoles down, Science (Dr Hale) and Helm (Lt Ross). The bar. Then each tile opened once and
-closed: Crew, Act, Look, Pack, Tasks, Beam, Scan, Fire. The table from the page beside
+**Screen:** The game with two consoles down, Science (Dr Hale) and Helm (Lt Ross). The bar. Then each app opened once from
+the list and closed: Crew, Act, Look, Pack, Tasks, Beam, Fire. Look is shown in the yard,
+where it has buttons (on the pad it has nothing in reach). The table from the page beside
 it.
 
 **Say:** "Start with the line that's always there. | Your name, your jobs, and where you
@@ -102,14 +111,11 @@ Pack is what you carry. || Tasks is your own story, and the party's. || Beam, Sc
 Fire do what they say. ||| For each one, ask a single question. | Which of my words is
 this? ||"
 
-> Builder: everything said in this scene was captured from the apps' draw functions,
-> not seen. If the order of tiles or rows differs on a real screen, say what the screen
-> shows.
-
 ### 3. Who is offered what
 
-**Screen:** Two handhelds side by side at Old Marrow: the medic's, with the cough
-answer; the helm officer's, with the same answer marked as covering.
+**Screen:** Two handhelds at Old Marrow: the medic's, with the cough answer; the helm
+officer's, with the same answer marked as covering, while the medic stands on the
+landing pad six cells off.
 
 **Say:** "A choice with no condition goes to everybody in the scene. || A choice for a
 job goes to the person with that job. ||| Now here's the surprise. | The helm officer walks
@@ -135,14 +141,14 @@ thing is found. || So the map never gives your secret away. ||"
 ### 5. Titles, and what the pack says
 
 **Screen:** Look: `Go to The Dry Gully`. Beam: `To The Dry Gully`. The two `title:`
-lines changed. Then Act: `picked up Toolbox`, and Pack: `fuse x2`, `pump key x1`. Then
-the three lines that name the key, changed together.
+lines changed. Then Act: `picked up pump key from the Pump house key.`, and Pack: `fuse
+x2`, `pump key x1`. Then the three lines that name the key, changed together.
 
 **Say:** "An area's title is read after other words. | Go to, in Look. To, in Beam. || So
 a title that starts with The reads badly twice, | and the fix is to take it off. ||| Next, the things you
-pick up. || The transcript says he picked up a toolbox. | The pack says two fuses. ||| And
-the key is worse. | The heading says pump house key. | The pack and the door say pump
-key. || That's the item's key, with its underscore shown as a space. ||| So make the
+pick up. || The transcript names the item, | and the thing it came from. ||| For the key,
+that's two names for one thing. | She picked up pump key, | from the pump house key. || The
+pack and the door say pump key too. || That's the item's key, with its underscore shown as a space. ||| So make the
 item's key the same words as the heading. || Three lines name it, | and all three change
 together. | Miss one, and lint tells you. ||"
 
@@ -153,8 +159,9 @@ Tent record. Then Dr Hale's Tasks app, and the three headings changed.
 
 **Say:** "Scan lists everything in sight, scenery too. || With no scan line and no
 description, it says no reading. || So give your scenery one line each. | It's the
-cheapest clue you have. ||| Now open the Tasks app. || On the ship, a quest shows its objective. | Down
-here it shows a heading, a state, and a lead. ||| So on the ground the heading has to be
+cheapest clue you have. ||| Now open the Tasks app. || It's a list, and every quest in it
+is a heading and a state. || The objective is on the page under the list, | for the one
+quest you've picked. ||| So the heading is what the crew reads first. | Make the heading
 the instruction. || The Caretaker's Cough becomes See to Marrow's Cough. ||"
 
 ### 7. The two with nothing to do
@@ -171,19 +178,17 @@ then the two answers put that right. ||"
 ### 8. What the bridge sees, and your turn
 
 **Screen:** A console left aboard: Boarding Party, with the names of the party. Then the
-quest list. Then Messages, with one line: reporting in. Then `mission.amd`: Relight Kesh
+quest list. Then Messages: the reporting-in line, above the crew's mail from home. Then `mission.amd`: Relight Kesh
 Relay's description retyped, the ship line, the paragraphs and the table. Then the Quest Log
 again, the new page. Then the exercise.
 
 **Say:** "Somebody stays on the bridge. | Here's everything they get. ||| A list of who
-went down. || The shared quests, as they start and finish. || And one line in Messages, |
-when somebody on the ground presses Report in. ||| No scene line ever reaches the bridge.
+went down. || The shared quests, as they start and finish. || And in Messages, one line of
+yours, | when somebody on the ground presses Report in. || The rest is the crew's mail from
+home. ||| No scene line ever reaches the bridge.
 || So the shared quests are its only window. | Remember that for the capstone. |||
 Select a quest, and the Quest Log shows its description in full. || The starter's is one
 sentence, | and for the bridge that's the whole briefing. || So give it a page. | The
-relay drawn at the top, | then a table of what the ship knows from up there. ||| For
+relay's picture comes first, | then a table of what the ship knows from up there. ||| For
 the exercise, play it to read, not to win. || Write down every word that makes you wince,
 | and then go and fix each one. ||| Next time, we put a clock on it. ||"
-
-> Builder: the Boarding Party screen, the quest rows and the Messages line were captured
-> for a stand-in console that stayed aboard. Nobody has seen them drawn.

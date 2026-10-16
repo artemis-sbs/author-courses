@@ -58,22 +58,34 @@ s05_a_clock_14	In the Quest Log aboard,
 s05_a_clock_15	it sits under the quest's first paragraph.
 s05_a_clock_16	And the clock starts when the quest starts.
 s05_a_clock_17	This one starts with the game.
+s05_a_clock_18	So by the time anybody lands,
+s05_a_clock_19	it already reads a few minutes under thirty.
 s06_can_every_party_get_there_0	Lint doesn't walk your map.
 s06_can_every_party_get_there_1	You do, on paper, in three lists.
 s06_can_every_party_get_there_2	Every area, every item, every ending.
 s06_can_every_party_get_there_3	And beside each one, who can do it.
 s06_can_every_party_get_there_4	Now find a party the lists leave stuck.
 s06_can_every_party_get_there_5	A scientist and a guard, and no engineer.
-s06_can_every_party_get_there_6	She pulls the door code, and calms the sentry.
-s06_can_every_party_get_there_7	That's the clever answer.
-s06_can_every_party_get_there_8	But the sentry keeps its cell,
-s06_can_every_party_get_there_9	and nobody here can run the pump.
-s06_can_every_party_get_there_10	The clever answer left them with nothing.
-s06_can_every_party_get_there_11	So fix it where it broke.
-s06_can_every_party_get_there_12	The sentry hands its cell over.
-s06_can_every_party_get_there_13	Here's the terminal on the doctor's handheld after the update,
-s06_can_every_party_get_there_14	and there's the power cell in her pack.
-s06_can_every_party_get_there_15	In the file it's one outcome, after a comma.
+s06_can_every_party_get_there_6	First she has to reach the terminal alive.
+s06_can_every_party_get_there_7	It stands inside the sentry's notice.
+s06_can_every_party_get_there_8	So the guard stuns the sentry first,
+s06_can_every_party_get_there_9	and she works the terminal while it stands.
+s06_can_every_party_get_there_10	Ten seconds isn't long.
+s06_can_every_party_get_there_11	If it wakes, stun it again.
+s06_can_every_party_get_there_12	Shots miss a lot,
+s06_can_every_party_get_there_13	and no app tells you a shot hit or missed.
+s06_can_every_party_get_there_14	She pulls the door code, and calms the sentry.
+s06_can_every_party_get_there_15	That's the clever answer.
+s06_can_every_party_get_there_16	But the sentry keeps its cell,
+s06_can_every_party_get_there_17	and nobody here can run the pump.
+s06_can_every_party_get_there_18	The clever answer left them with nothing.
+s06_can_every_party_get_there_19	So fix it where it broke.
+s06_can_every_party_get_there_20	The sentry hands its cell over.
+s06_can_every_party_get_there_21	Here's the terminal on the doctor's handheld after the update.
+s06_can_every_party_get_there_22	The words say the sentry walks over.
+s06_can_every_party_get_there_23	On the map it just stands where the stun caught it.
+s06_can_every_party_get_there_24	And there's the power cell in her pack.
+s06_can_every_party_get_there_25	In the file it's one outcome, after a comma.
 s07_three_columns_0	Three columns, one for each console.
 s07_three_columns_1	What is each person doing?
 s07_three_columns_2	This is the mission as you left it.

@@ -136,6 +136,9 @@ Lint knows it. Run it now and it adds a second warning, `ground-signal-unsent`: 
 You will see her on the yard's map, by the tent, once she has gone home. Her name on screen is Pim, the same as the first record. Her key is different. Keys are
 what the file joins with.
 
+Her face is her own, too. `Face: female` picks a face at random, for each record and in
+each game, so the Pim by the tent does not look like the Pim in the gully.
+
 ## Step 3 - A stash
 
 In the Props section, under the Depth gauge's last line, leave a blank line and add:
@@ -347,8 +350,8 @@ and add this room above **The Keycard**:
 ```
 
 In the **Act** app at Marrow, it is offered to whoever talks to him while anybody on the ground carries the key. `if party pump_key` is the right word here. Nothing is taken, and it does not matter who
-picked the key up. In the test run the engineer carried it and the doctor was offered
-the choice.
+picked the key up. In the game the engineer carried it, and Lt Reyes, at Weapons, was
+offered the choice.
 
 ## Step 8 - The two endings
 
@@ -429,23 +432,33 @@ of it: it should say `holding`, and ask for at least as many.
 ## Step 11 - Play it
 
 ```
-sbs run server,engineering,weapons,science -m MyAway map=0
+sbs run server,engineering,weapons -m MyAway map=0
 ```
 
-The long way round, as a script played it for this page:
+The long way round, as it was played in the game for this page:
 
-1. All three beam down. Lt Reyes deals with the sentry.
-2. Chief Okoro picks up the brass key by the tent. Dr Hale shows Marrow the key.
-3. Okoro and Reyes walk to the gully. Okoro takes the toolbox, reads the notice, and
-   talks to Pim: the spare cell, the stash, and a promise to fetch her tablet.
-4. The door opens to the key. At the panel, Okoro has two fuses. He is offered the wire
+1. Both beam down. Lt Reyes deals with the sentry: **Fire**, **FULL**, **Arm**, and a
+   click on it. One FULL shot puts it down, and it drops its power cell. Leave the cell.
+   Expect to miss: a shot goes to the cell you clicked, and the sentry may have walked
+   on. Nothing tells you a shot hit or missed. Watch the map.
+2. Chief Okoro picks up the pump house key, a small blue key by the foot of the tent.
+   Act says `Chief Okoro picked up pump key from the Pump house key.`: the item, then
+   the prop it came from. Lt Reyes shows Marrow the key.
+3. Okoro walks to the gully, by the trail sign and the way out. Near the relay door,
+   Look's first button is **Use Relay door**, not **Go to**. In the gully he takes the
+   toolbox, reads the notice, and talks to Pim: the spare cell, the stash, and a
+   promise to fetch her tablet.
+4. Reyes beams up: **Crew**, **Beam up**. The Weapons console's Quest Log now has
+   Pim's Tablet.
+5. The door opens to the key. At the panel, Okoro has two fuses. He is offered the wire
    and the crowbar, and takes neither.
-5. Reyes goes down first and puts the crawler down. Okoro picks up the tablet.
-6. Back to Pim. **Give her the tablet**: a fuse, and 100 credits. She goes home.
-7. The panel again. Now **Fit three fuses and throw the lever** is there.
-8. Down the stairs. The sluice is open. Okoro takes the spare cell.
-9. Back to the yard. Pim is by the tent, and opens the relay house.
-10. The beacon, **Fit the power cell**, **Call it in**.
+6. Okoro goes down the stairs and, from the foot, puts the crawler down: **Fire**,
+   **FULL**, **Arm**, a click. Expect to miss here too. He picks up the tablet.
+7. Back to Pim. **Give her the tablet**: a fuse, and 100 credits. She goes home.
+8. The panel again. Now **Fit three fuses and throw the lever** is there.
+9. Down the stairs. The sluice is open. Okoro takes the spare cell.
+10. Back to the yard. Pim is by the tent, and opens the relay house.
+11. The beacon, **Fit the power cell**, **Call it in**.
 
 Then play it once more and lose it, with the crowbar.
 

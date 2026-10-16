@@ -2,7 +2,7 @@
 
 Pure data, read by _tools/picture. The format is described in the storyboards of Class 1,
 Lectures 5, 6 and 12, and the kinds of still in _tools/picture/README.md. Caption numbers
-are those of shots.py (2026-10-15).
+are those of shots.py (2026-10-16).
 
 The lecture starts from Lecture 14's finished files in MyAway ("start"). Two files change.
 The states are built BACKWARDS from the page's own example\\ files ("final"), taking each
@@ -20,31 +20,58 @@ lint only; nobody has re-played the deck since.
 THE GROUND FOLDER. A state holds `ground\\` as the student has it (states.py reads, diffs and
 writes subfolders).
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. State "final":
-`python game.py c3-15-boarding-an-enemy-ship start --consoles server,helm,comms` (the probe
-is made from the `away` template with every file of the state laid over it, ground\\
-included, and the station art its story.json names; GAME_RESULTS_SAVE is false). THREE windows: the server, Helm (Lt Dana Ross) and Comms
-(Ens Tam Vale). Nobody beams down at the relay. ENGINE 1.3.15 ON COMMS: select only the
-Black Gull all game, and never press Cancel (either bug takes the 2D map away). About ten
-minutes:
-  1. Helm: the handheld icon, Quests, Run Down the Black Gull: game_l15_log_chase (the
-     brigantine at the top of its page).
-  2. Comms: the Black Gull from the contact list (about 7,100 out): game_l15_comms_gull
-     (Hail, Taunt, Surrender now).
-  3. Helm: fly to her, inside 1500 (about a minute at full impulse). She strikes; Come Back
-     to Kesh Relay joins the quest list.
-  4. Comms: her buttons now: game_l15_comms_struck (Take as prize, Send a boarding party).
-     Send a boarding party: game_l15_comms_hove ('We are hove to. Send your party
-     across: Boarding Party, on the ePADD.').
-  5. Helm: the handheld icon, Boarding Party: game_l15_bp_gull ('Going down to Black
-     Gull'). BEAM DOWN: game_l15_deck_arrive (her deck, her crew standing about, the
-     boarding kit a step away). Comms: BEAM DOWN too.
-  6. Ross: walk to the brig with the strongbox (Look lists it further off; pressing it
-     walks there): game_l15_deck_brig (the strongbox in the brig, the bar's place word).
-  7. Vale: talk to Mate Oduya, in the other brig: game_l15_oduya.
-  8. Ross: use the strongbox: game_l15_strongbox (four answers). Take her as a prize. Both
-     are home. Helm's Quest Log, Take the Black Gull: game_l15_log_prize (Done, 200
-     credits).
+2026-10-16, HULL: the Black Gull is a `pirate_strongbow`, not a `pirate_brigantine` (owner's
+decision). The brigantine is a light carrier (ship data `baycount` 6, role `carrier`), and
+LM's npc_cag launched six `Black Gull NN` fighters that shot at the Artemis all game, after
+she struck and after she was taken. The strongbow has no bay and no `carrier` role, is about
+the same size (mesh about 52 x 75 against 49 x 61), and has the same kinds of room: two
+brigs, a boat bay, a plunder hold, a surgery, captains-cabin and crew-berths (plus a
+grog-locker and a mess-deck). Changed: story.mast's npc_spawn art, mission.amd's picture
+line and two sentences ("A pirate raider", "A raider is worth more"), and the comment over
+Mate Oduya (it said the game puts her crew aboard). Mock, --use-working-tree, 2026-10-16:
+no carrier role, bay_count 0; her deck builds (52 x 52 tiles, planned from the grid text);
+the strongbox in the WEST brig (17, 23), Oduya in the EAST brig (35, 23), the kit on the
+arrival (26, 33), Brakk in the boat bay (25, 41). Brakk (Notice 4, she must see you) only
+notices the four cells in front of the bay's door (26..28, 40); she can be shot only from
+(28, 39) (5 cells) and (29, 39) (6), the first cells of the hallway on the right of the bay
+from which she is in sight. Those are reachable from the arrival unseen.
+
+GAME STILLS. Taken 2026-10-16 on the BRIGANTINE (server, Helm Lt Dana Ross, Comms Ens Tam
+Vale): what they showed is in the captions, except where the hull or a library fix changes
+it. EVERY ONE NEEDS TAKING AGAIN on the strongbow, and its marks checking after:
+game_l15_log_chase (her picture and the brigantine sentence), game_l15_comms_gull,
+game_l15_comms_struck and game_l15_comms_hove (Threats 7 / 6 and shields shot down: her
+fighters), game_l15_deck_arrive, game_l15_deck_brig, game_l15_strongbox and game_l15_oduya
+(her deck; the bar's raw `room:brig` key and Look's bare `Captain's strongbox` line are
+library defects being fixed), game_l15_log_prize (the brigantine sentence). game_l15_bp_gull
+names no hull and may be kept (no beat uses it). NOT TAKEN: game_l15_brakk_fire and
+game_l15_medkit (placeholders).
+State "final": `python game.py c3-15-boarding-an-enemy-ship start --consoles server,helm,comms`.
+Nobody beams down at the relay. ENGINE 1.3.15 ON COMMS: select only the Black Gull, never press
+Cancel, and DO NOT TOUCH COMMS from step 2 until she has struck (re-clicking her to refresh the
+menu took the 2D map away). About fifteen minutes:
+  1. Helm: the handheld icon, Quests (0.15, 0.55), Run Down the Black Gull (0.12, 0.24):
+     game_l15_log_chase (her picture under 'The Black Gull, out past the relay.').
+  2. Comms: click the Black Gull on the 2D map (she starts about 5K out; her name red):
+     game_l15_comms_gull (Black Gull (pirate), Hail, Taunt, Surrender now). Hands off Comms.
+  3. Helm: 3rd magnifier (0.465, 0.07), click her marker, full impulse: inside 1500 in about
+     25 s. The strip: Quest complete: Run Down the Black Gull; her marker turns yellow.
+  4. Comms: her menu now: game_l15_comms_struck (Take as prize, Send a boarding party).
+     Send a boarding party, then click the `Black Gull (pirate)` header (0.38, 0.064):
+     game_l15_comms_hove.
+  5. Helm, then Comms: handheld (0.15, 0.24), Boarding Party, BEAM DOWN:
+     game_l15_deck_arrive (Helm: the deck, nobody else in view, the kit a step away).
+  6. Vale: take the boarding kit. Ross: Look, `? Captain's strongbox` (it walks him to the
+     west brig): game_l15_deck_brig. Vale: Look, `? Mate Oduya` (east brig): game_l15_oduya.
+  7. Ross: walk to the cells in front of the boat bay's door (26..28, 40): Brakk hits him,
+     `Hit by Gunner Brakk - you are DOWN.` (the medkit still needs him down).
+  8. Vale: from the arrival walk aft down the hallway on the RIGHT of the boat bay, one cell
+     at a time; stop where Brakk comes into sight (28, 39). Fire, FULL, Arm:
+     game_l15_brakk_fire (armed FULL, Brakk in sight through the door). Click her: down for
+     good, a power cell where she fell. Vale beside Ross: Pack, `Use medkit on Lt Dana Ross`:
+     game_l15_medkit. Press it: back on his feet.
+  9. Ross: Look, Use Captain's strongbox: game_l15_strongbox. Take her as a prize. Both are
+     home. Helm's Quest Log, Take the Black Gull: game_l15_log_prize (Done, 200 credits).
 """
 import os as _os
 
@@ -77,7 +104,7 @@ _SCENES = _cut(_A, "\n\n// ---- Lecture 15: aboard the Black Gull. The three", "
 _SIDES = _cut(_A, "\n\n// ---- Sides")
 _QUESTS = _cut(_A, "// ---- Lecture 15. `reach gull", "\n// ---- Side stories")
 _PROPS = _cut(_A, "// ---- Lecture 15: aboard the Black Gull. `Area: deck`", "\n// ---- People")
-_ODUYA = _cut(_A, "// ---- Lecture 15. The Black Gull's own crew", "\n// ---- Hostiles")
+_ODUYA = _cut(_A, "// ---- Lecture 15. Aboard the Black Gull, in her brig", "\n// ---- Hostiles")
 _BRAKK = _cut(_A, "// ---- Lecture 15. The captain struck.", "\n// ---- Scenes")
 _SHIP = _cut(_M, "    # THE BLACK GULL.", "    await task_schedule(spawn_players)")
 _CARD = _cut(_M, "\n\n#\n# Come Back to Kesh Relay")
@@ -124,16 +151,18 @@ STILLS = {
     # Step 7: the scenes
     "e_scenes": ("vscode", "final", 793, "big", _NS),      # lines 783 to 803: The Strongbox (785 to 791), Mate Oduya (793)
     "t_final": ("terminal", [("final", _LINT)]),
-    # THE REAL GAME (not taken yet). State final, three windows: server, Helm (Lt Ross),
-    # Comms (Ens Vale). Press order in the docstring.
-    "game_l15_log_chase": ("game", "Helm's ePADD Quest Log, Run Down the Black Gull selected: the brigantine drawn with 'The Black Gull, out past the relay.', the two paragraphs; Take the Black Gull and Relight Kesh Relay (with its time) in the list"),
-    "game_l15_comms_gull": ("game", "Comms, the Black Gull picked from the contact list before she strikes: her name, red, and the buttons Hail, Taunt, Surrender now"),
+    # THE REAL GAME. Taken 2026-10-16 on the brigantine: all to take again on the strongbow
+    # (docstring). State final, three windows: server, Helm (Lt Ross), Comms (Ens Vale).
+    "game_l15_log_chase": ("game", "Helm's ePADD Quest Log, Run Down the Black Gull selected: her picture (the strongbow) under 'The Black Gull, out past the relay.', the two paragraphs; Take the Black Gull, Relight Kesh Relay (with its time) and Hold at the Relay in the list"),
+    "game_l15_comms_gull": ("game", "Comms, the Black Gull picked on the 2D map before she strikes: Black Gull (pirate), her name red on the map, and the buttons Hail, Taunt, Surrender now, Cancel"),
     "game_l15_comms_struck": ("game", "Comms, the Black Gull after Helm closed inside 1500 and she struck: the buttons Take as prize and Send a boarding party"),
     "game_l15_comms_hove": ("game", "Comms after Send a boarding party: her answer 'We are hove to. Send your party across: Boarding Party, on the ePADD.'"),
     "game_l15_bp_gull": ("game", "Helm's handheld, the Boarding Party tile pressed: 'Going down to Black Gull', Lt Dana Ross, helm, and BEAM DOWN"),
-    "game_l15_deck_arrive": ("game", "Helm's console aboard the Black Gull, just beamed across: the generated deck on the map, her own crew standing in her rooms, the boarding kit a step from the arrival, the xESS beside it"),
-    "game_l15_deck_brig": ("game", "Helm's console aboard her, Lt Ross at the brig: the strongbox in the brig on the map, and the bar's place word"),
+    "game_l15_deck_arrive": ("game", "Helm's console aboard the Black Gull, just beamed across: the generated deck on the map, nobody else in view, the boarding kit a step from the arrival, the xESS home beside it"),
+    "game_l15_deck_brig": ("game", "Helm's console aboard her, Lt Ross in the west brig: the strongbox in the brig on the map, the bar naming the room (Brig), Look's Use Captain's strongbox and the box's description"),
     "game_l15_oduya": ("game", "Comms' xESS aboard her, Act, talking to Mate Oduya: 'Tender Halcyon, out of Kesh...', and Ask what the tender was carrying, Ask who is still armed, Tell her she is going home"),
+    "game_l15_brakk_fire": ("game", "Comms' xESS aboard her, Ens Vale in the hallway on the right of the boat bay, five cells from Gunner Brakk: FIRE armed, FULL, Brakk in sight through the bay's door"),
+    "game_l15_medkit": ("game", "Comms' xESS, Ens Vale beside Lt Ross, who is DOWN: Pack, with Use medkit on Lt Dana Ross"),
     "game_l15_strongbox": ("game", "Helm's xESS, Act, the strongbox: its line, and Take her as a prize, Open her sea cocks, Go back to the ship, Leave it for now"),
     "game_l15_log_prize": ("game", "Helm's ePADD Quest Log after Take her as a prize, both crew home: Take the Black Gull Done, Reward 200 credits; Come Back to Kesh Relay Active"),
     # drawn
@@ -162,13 +191,31 @@ STILLS = {
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 16", "sub": "A long boarding mission"}),
 }
 
+# Marks on the game stills (fractions of the 1280 x 960 frame), measured on the 2026-10-16
+# (brigantine) stills: check each after the re-shoot.
+_CS_SEND = ("rect", 0.27, 0.67, 0.62, 0.755)        # game_l15_comms_struck: Send a boarding party
+_CS_STRIP = ("rect", 0.018, 0.49, 0.27, 0.56)       # ... the strip: Quest complete: Run Down the Black Gull
+_CG_HER = ("rect", 0.655, 0.56, 0.76, 0.67)         # game_l15_comms_gull: her marker, Black Gull
+_CG_BTNS = ("rect", 0.27, 0.555, 0.645, 0.795)      # ... Hail, Taunt, Surrender now
+_CH_SAYS = ("rect", 0.51, 0.255, 1.0, 0.35)         # game_l15_comms_hove: her answer
+_DA_DECK = ("rect", 0.27, 0.265, 0.585, 0.89)       # game_l15_deck_arrive: the deck, nobody about
+_OD_LINE = ("rect", 0.67, 0.33, 0.99, 0.49)         # game_l15_oduya: her face and her line
+_OD_MAP = ("rect", 0.465, 0.36, 0.505, 0.42)        # ... Mate Oduya on the map, in the east brig
+_SB_ALL = ("rect", 0.67, 0.205, 0.99, 0.57)         # game_l15_strongbox: its line and four answers
+_SB_THREE = ("rect", 0.67, 0.355, 0.85, 0.515)      # ... Take her, Open her sea cocks, Go back
+_LC_ROW = ("rect", 0.0, 0.215, 0.38, 0.285)         # game_l15_log_chase: Run Down the Black Gull
+_LC_PIC = ("rect", 0.385, 0.17, 0.74, 0.305)        # ... her picture and its caption
+_DB_BOX = ("rect", 0.305, 0.335, 0.395, 0.485)      # game_l15_deck_brig: the strongbox in the brig
+_DB_DECK = ("rect", 0.15, 0.0, 0.665, 0.995)        # ... the whole deck
+_LP_DONE = ("rect", 0.385, 0.075, 0.575, 0.145)     # game_l15_log_prize: Done, 200 credits
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
-        {"from": 0, "still": "game_l15_comms_struck"},
-        {"from": 3, "still": "game_l15_deck_arrive"},
-        {"from": 6, "still": "game_l15_oduya"},
-        {"from": 7, "still": "game_l15_strongbox"},
-        {"from": 8, "still": "card_title"},
+        {"from": 0, "still": "game_l15_comms_struck", "marks": [_CS_SEND]},
+        {"from": 3, "still": "game_l15_deck_arrive", "marks": [_DA_DECK]},
+        {"from": 5, "still": "game_l15_oduya", "marks": [_OD_LINE]},
+        {"from": 6, "still": "game_l15_strongbox", "marks": [_SB_ALL]},
+        {"from": 7, "still": "card_title"},
     ]},
     "s02_one_party_at_a_time": {"step": 1, "beats": [
         {"from": 0, "still": "card_needs"},
@@ -183,17 +230,21 @@ BOARD = {
     ]},
     "s03_a_side_and_a_ship": {"step": 2, "beats": [
         # the game first: the Black Gull on Comms
-        {"from": 0, "still": "game_l15_comms_gull"},
+        {"from": 0, "still": "game_l15_comms_gull", "marks": [_CG_HER]},
+        {"from": 2, "still": "game_l15_comms_gull", "marks": [_CG_BTNS]},
         {"from": 3, "still": "e_sides", "marks": [("lines", 683, 689)]},
         {"from": 4, "still": "e_sides", "marks": [("lines", 688, 688)]},
         {"from": 5, "still": "m_ship", "marks": [("lines", 66, 67)]},
-        {"from": 8, "still": "m_ship", "marks": [("text", 66, "20000, 0, 20000")]},
-        {"from": 9, "still": "m_ship", "marks": [("text", 67, "6000, 0, 4000")]},
-        {"from": 10, "still": "m_ship", "marks": [("lines", 64, 65)]},
+        {"from": 7, "still": "m_ship", "marks": [("text", 66, '"pirate_strongbow"')]},
+        {"from": 10, "still": "m_ship", "marks": [("lines", 66, 67)]},
+        {"from": 11, "still": "m_ship", "marks": [("text", 66, "20000, 0, 20000")]},
+        {"from": 12, "still": "m_ship", "marks": [("text", 67, "6000, 0, 4000")]},
+        {"from": 13, "still": "m_ship", "marks": [("lines", 64, 65)]},
     ]},
     "s04_three_quests_and_a_card": {"step": 4, "beats": [
         # the game first: the chase in the Quest Log
-        {"from": 0, "still": "game_l15_log_chase"},
+        {"from": 0, "still": "game_l15_log_chase", "marks": [_LC_ROW]},
+        {"from": 1, "still": "game_l15_log_chase", "marks": [_LC_PIC]},
         {"from": 2, "still": "e_chase", "marks": [("lines", 124, 130)]},
         {"from": 3, "still": "e_chase", "marks": [("lines", 129, 130)]},
         {"from": 4, "still": "e_back", "marks": [("lines", 141, 148)]},
@@ -206,7 +257,7 @@ BOARD = {
     ]},
     "s05_kinds_of_room": {"step": 6, "beats": [
         # the game first: the strongbox in her brig
-        {"from": 0, "still": "game_l15_deck_brig"},
+        {"from": 0, "still": "game_l15_deck_brig", "marks": [_DB_BOX]},
         {"from": 1, "still": "e_strong", "marks": [("lines", 437, 438)]},
         {"from": 2, "still": "e_strong", "marks": [("lines", 437, 437)]},
         {"from": 3, "still": "e_strong", "marks": [("lines", 438, 438)]},
@@ -216,21 +267,26 @@ BOARD = {
         {"from": 11, "still": "card_kinds"},
     ]},
     "s06_her_own_crew_and_the_walk": {"step": None, "beats": [
-        {"from": 0, "still": "game_l15_deck_arrive"},
-        {"from": 5, "still": "game_l15_deck_brig"},
-        {"from": 9, "still": "card_rule", "marks": [("part", "item1")]},
+        {"from": 0, "still": "game_l15_deck_arrive", "marks": [_DA_DECK]},
+        {"from": 3, "still": "game_l15_oduya", "marks": [_OD_MAP]},
+        {"from": 4, "still": "game_l15_deck_brig", "marks": [_DB_BOX]},
+        {"from": 5, "still": "game_l15_deck_brig", "marks": [_DB_DECK]},
+        {"from": 10, "still": "card_rule", "marks": [("part", "item1")]},
     ]},
     "s07_three_endings": {"step": 9, "beats": [
-        {"from": 0, "still": "game_l15_comms_gull"},
-        {"from": 1, "still": "game_l15_comms_struck"},
-        {"from": 2, "still": "game_l15_comms_hove"},
-        {"from": 3, "still": "game_l15_strongbox"},
-        {"from": 4, "still": "card_endings", "marks": [("part", "r1")]},
-        {"from": 5, "still": "game_l15_log_prize"},
-        {"from": 6, "still": "card_endings", "marks": [("part", "r2")]},
-        {"from": 7, "still": "card_endings", "marks": [("part", "r3")]},
-        {"from": 8, "still": "card_endings", "marks": [("part", "r1c2"), ("part", "r2c2"), ("part", "r3c2")]},
-        {"from": 9, "still": "card_endings", "marks": [("part", "r1c5"), ("part", "r2c5"), ("part", "r3c5")]},
+        {"from": 0, "still": "game_l15_comms_gull", "marks": [_CG_HER]},
+        {"from": 1, "still": "game_l15_comms_struck", "marks": [_CS_STRIP]},
+        {"from": 2, "still": "game_l15_comms_hove", "marks": [_CH_SAYS]},
+        # the gunner: not taken yet (placeholders, no marks)
+        {"from": 3, "still": "game_l15_brakk_fire"},
+        {"from": 12, "still": "game_l15_medkit"},
+        {"from": 15, "still": "game_l15_strongbox", "marks": [_SB_THREE]},
+        {"from": 16, "still": "card_endings", "marks": [("part", "r1")]},
+        {"from": 17, "still": "game_l15_log_prize", "marks": [_LP_DONE]},
+        {"from": 18, "still": "card_endings", "marks": [("part", "r2")]},
+        {"from": 19, "still": "card_endings", "marks": [("part", "r3")]},
+        {"from": 20, "still": "card_endings", "marks": [("part", "r1c2"), ("part", "r2c2"), ("part", "r3c2")]},
+        {"from": 21, "still": "card_endings", "marks": [("part", "r1c5"), ("part", "r2c5"), ("part", "r3c5")]},
     ]},
     "s08_what_to_warn_your_crew_about": {"step": 8, "beats": [
         {"from": 0, "still": "t_final", "marks": [("part", "run1:clean")]},

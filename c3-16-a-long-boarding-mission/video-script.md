@@ -17,6 +17,13 @@
 >   page was measured (sbs_utils a2d63d66) leaves every prop where it was, and opens only a
 >   prop whose `Opens with:` lists `cut`. Scene 6 and Step 8 were rewritten from the
 >   library's documentation. Not re-played.
+> - **PLAYED IN THE ENGINE 2026-10-16** (Artemis Cosmos 1.3.15, sbs_utils 7ea2c918), two
+>   games: Science and Engineering to the dig, and Science alone to the blast. What it
+>   showed that this page did not say: the coupling is had by stopping the ore hauler, one
+>   FULL shot from the works gate (outside its Notice of 3, inside the shot's range of 6);
+>   a shot at the lift gate leaves no note anywhere; the lift house is in fog from the
+>   works gate; the arc's time stands where its state would. What a clock reads depends on how long
+>   the crew took, so the page never quotes one.
 
 > **Measured 2026-10-10, in the mock**, on the packaged library (sbs_utils `ae05dac7`),
 > with stand-in consoles driven by a script. Walked end to end on the finished files:
@@ -61,14 +68,14 @@ The companion page is `lesson.md`; the finished mission is in `example\`.
 7. A FULL shot leaves the lift gate shut and the rock fall standing; it opens the stores
    door, which lists `cut`. (Library documentation; not re-played.)
 
+Seen in the engine on 2026-10-16: the maps drawn, the quest list changing on a console
+beamed back up, the arc's description with its table and hourglass line, both endings,
+and the hauler stopped by one FULL shot from the works gate.
+
 Not seen by anyone. If one is not as described, stop and fix the page:
 
-1. Any of the three maps drawn, and whether `prop:rubble`, `prop:crate_ammo`,
-   `prop:generator` and `prop:machine_part` look like what the records say they are.
-2. The quest list changing on a console left aboard.
-3. Any real crew's time.
-4. The arc's description in the Quest Log, with the arc selected: the
-   three-row table and the hourglass line.
+1. Any real crew's time, played by people who did not write it.
+2. A shot at the stores door opening it (only the lift gate was shot).
 
 ## Scenes
 
@@ -95,12 +102,13 @@ a last area, and an ending. | With minutes beside each one. ||"
 
 ### 3. Three areas
 
-**Screen:** The game first: the Lift House on the Engineering console's map, Chief Okoro at
-its gate. Then the drawing: camp, works, gallery, and what joins them. Then `works.tiles`
-in Text view. Highlight `known: no`, then the marks.
+**Screen:** The game first: the Lift House area on the Engineering console's map, Chief
+Okoro at the works gate and the ore hauler in the yard; the house itself not drawn yet.
+Then the drawing: camp, works, gallery, and what joins them. Then `works.tiles` in Text
+view. Highlight `known: no`, then the marks.
 
-**Say:** "Here's my middle area on the engineer's console, | the lift house, with the lift
-at the far end. ||| In the files, three areas, and one decision each. || The camp is where
+**Say:** "Here's my middle area on the engineer's console, | the chief at the gate, and
+the ore hauler in the yard. || The lift house itself is still in fog. ||| In the files, three areas, and one decision each. || The camp is where
 they land. || The lift
 house has to be found once. | After that the ship can put you there. || And the gallery
 can't be beamed into at all. | That's what makes the lift matter. ||| Look at the map
@@ -141,27 +149,34 @@ the bridge's briefing. || Nobody aboard hears Ada Corvin, | so the arc says what
 ### 6. Two endings, and a full shot
 
 **Screen:** The game first: the rock fall on the engineer's handheld, with the party's
-four facts. Then The Rock Fall's room, then Four Charges. Then the game: a FULL shot at
-the lift gate, and the gate still shut. Then Step 8's table.
+four facts. Then The Rock Fall's room, then Four Charges. Then the game: after a FULL shot
+at the lift gate, the gate still shut, and Look's last line still the pickup before the
+shot. Then Step 8's table.
 
 **Say:** "Both endings live in one room. || Here's the rock fall on the engineer's
 handheld, | once the party knows all four things. ||| In the file, a choice has one
 condition, | so a thing that needs two takes two rooms. | Facts in the first, and the
 jacks in the second. ||| Now something to plan for. || A shot never removes a prop. ||
 Shoot the lift gate, and it stays shut, | because only the lift's own signal opens it. ||
-Shoot the rock fall, and both endings are still there. ||| A door opens to a shot | only
+And nothing on the handheld mentions the shot. | Look still shows the last thing picked
+up. || Shoot the rock fall, and both endings are still there. ||| A door opens to a shot | only
 when its Opens with line says cut. || So ask one question of your own mission. | Which
 doors should the crew be able to force? ||"
 
 ### 7. Twelve checks, and the walk
 
 **Screen:** The sheet of twelve checks, mine filled in. Then the game with two
-consoles, Science and Engineering: the dig ending, cut to its turns. Then one console alone: the blast ending.
+consoles, Science and Engineering: the gallery, then the engineer at the works gate with
+the ore hauler in the yard, then the dig ending. Then one console alone: the blast ending.
 
 **Say:** "Lint reads your spelling. | It doesn't walk your map. || So here are the
 checks of the whole class, on one sheet. | Twelve of them, in order. ||| Ways in and ways
-out. | Keys and names that join. | Signals with two ends. || Then the worst party, and the three columns. | The screen, a full shot, and the clock. ||| Then walk it, every road. || A doctor
-and an engineer dig them out. || One person, with no skill at all, blasts them out. ||| The times
+out. | Keys and names that join. | Signals with two ends. || Then the worst party, and the three columns. | The screen, a full shot, and the clock. ||| Then walk it, every road. || On the way,
+somebody has to stop the hauler for its coupling. | Stand on the works gate, outside its
+notice, and fire one full shot. || Click the cell it has just stepped onto, | as it walks
+up the west side of its square. || Shots miss a lot, | and no app tells you a shot hit or
+missed. ||| A doctor and an engineer dig them out. || One person alone, using no skill at
+all, blasts them out. ||| The times
 on the page are floors from a script. | Walk yours with people, and write down what you
 get. ||"
 

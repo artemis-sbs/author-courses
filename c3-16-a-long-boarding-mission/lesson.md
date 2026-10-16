@@ -161,7 +161,8 @@ Draw Lecture 14's three columns before you write a single prop.
 | The gallery | Jo Reth: sets his leg | Hands the jacks over | The rock fall: listens, shores, digs |
 
 Played that way by script, the presses were 9, 2 and 7. Lt Reyes does his work with
-his hands and his feet, not with answers, and that is a fair track too.
+his hands and his feet, not with answers, and that is a fair track too. The coupling is
+on the ore hauler, so his track includes a shot: Step 11 says where to stand for it.
 
 Now the three things only one person can do. On the ground there are two ways to write
 one, and neither is covered by anybody else:
@@ -268,16 +269,21 @@ Corvin's first answer starts it:
 - [Ask what happened](corvin_fall) if learned told < 1 ; accepts rescue, accepts rescue/power, learn told
 ```
 
-Before that answer the ship's quest list held one line, `Hold at the Relay`. After it:
+Before that answer the ship's quest list held one line, `Hold at the Relay`, `Done`.
+After it, in the game:
 
 ```
 Bring the Dig Crew Out
-Active
-Get the Lift Running
-Active
+(the time left)
+    Get the Lift Running
+    Active
+Hold at the Relay
+Done
 ```
 
-So a crew that takes five minutes to choose consoles loses none of its twenty-five.
+Where a quest shows its state, the arc shows the time it has left. It starts at about
+twenty-five minutes, the arc's `Fails when:`. Ada's "half an hour" is the story's words;
+the clock is the arc's. So a crew that takes five minutes to choose consoles loses none of its twenty-five.
 `if learned told < 1` takes the answer away once it has been given, so the clock cannot
 be started twice.
 
@@ -285,12 +291,16 @@ be started twice.
 
 ```
 Bring the Dig Crew Out
-24:40 left
-Reach the Rock Fall
-Active
-Get the Lift Running
+(the time left)
+    Reach the Rock Fall
+    Active
+    Get the Lift Running
+    Done
+Hold at the Relay
 Done
 ```
+
+What the time reads by then depends on how long your crew took to get the lift running.
 
 Each signal a scene sends, `lift_running` and then `fall_reached`, moves the tree. Put
 a step wherever the bridge would want to say something.
@@ -302,7 +312,8 @@ answer at the rock fall completes one, by its path: `; completes rescue/dig`.
 their own, outside the arc. Played, the arc finished the moment its two steps were
 done, and the clock stopped with it: the party stood at the rock fall with all the time
 in the world. With the endings inside the arc, and waiting, the arc cannot finish
-early. Played again, the list at the rock fall read `24:20 left` with both steps done.
+early. Played again, the list at the rock fall still showed the time left, with both
+steps done.
 
 **The arc's description is the bridge's briefing.** Select the arc in the Quest Log and
 its description is shown above the checklist of its steps. Whoever stayed aboard never
@@ -379,6 +390,10 @@ prop a shot opens is one whose `Opens with:` lists `cut`. On Corvin's Claim:
 | The stores door, whose `Opens with:` lists `cut` | It opens, as the key would |
 | The rock fall, which holds both endings | It stays. Both endings are still there |
 
+Played in the game, a FULL shot at the lift gate left it shut, and left no note
+anywhere: Look's last line was still the one from before the shot, `Picked up coupling.`
+A shot at a door says nothing, the same as a shot at a hostile. Watch the map.
+
 So there is one question to ask of your own mission, with a pencil: **which doors should
 the crew be able to force?** Put `cut` on those, and only those. A door without it is a
 door the party cannot shoot its way through, so a prop is safe to hang an ending on.
@@ -414,7 +429,7 @@ Mine, checked this way:
 | 4 | One: `reveal stores_key`, and the prop's key is `stores_key` |
 | 5 | `lift_running`: the gate and a step wait, The Drum Turns sends. `fall_reached`, `air_moving`, `reth_treated`: each has one sender. `stores_key_shown` is never sent, on purpose: the answer reveals the key by name |
 | 6 | Three areas. Four items. Three winning answers and the clock |
-| 7 | Ada, the key, the charges, the hauler, the coupling, the lift, the fall: Lt Ross alone, 12 presses |
+| 7 | Ada, the key, the charges, the hauler (one FULL shot from the works gate), the coupling, the lift, the fall: Lt Ross alone, 12 presses |
 | 8 | The leg and the ventilator: the charges go round both. The shaped charge: the plain one |
 | 9 | Presses 9, 2 and 7. Chief Okoro walks while Dr Hale talks. Fair |
 | 10 | Read. `Blasting charges` is in the pack as `charges`: I let it stand |
@@ -472,6 +487,34 @@ are Lecture 14's floors.
 | Blast them out | Lt Ross, alone | 33 seconds | 12 | `All four walk out. Behind them the lower gallery comes down for good.` |
 | The shaped charge | Lt Reyes, put at the fall with the charges | | 3 | The first sentence again |
 | The clock | Lt Reyes, with the clock set to 40 seconds | | | `The air in the lower gallery ran out before anybody reached them.` |
+
+**The hauler, and the coupling.** Every road goes through the lift, and the lift needs
+the coupling the ore hauler is dragging. The coupling is the hauler's `Drops:`, so
+somebody has to stop it. It walks a square in front of the lift house, cell 7, 2 to
+10, 2 to 10, 6 to 7, 6 and back, and with `Notice: 3` it notices anybody within three
+cells. The works gate, where you arrive, is cell 2, 4: five cells from the nearest side
+of that square, so outside its Notice, and inside a shot's six. So:
+
+1. Stand on the works gate. Do not walk into the yard.
+2. Open **Fire**, pick **FULL**, press **Arm**.
+3. Watch the hauler come up the west side of its square, from 7, 6 toward 7, 2. Click
+   the cell it has just stepped onto.
+
+One FULL shot downs it, whatever its HP, and it leaves the coupling where it fell. Walk
+over and pick it up: Act reads `Chief Okoro picked up coupling.` (or your own crew
+member's name). Expect to miss. A shot goes to the cell you clicked, and a hostile that
+is walking may have left it by then. Nothing on the handheld tells you that a shot
+missed, or that it hit, or that it killed: the Fire app goes back to SAFE either way.
+Watch the map, arm again, and wait for it to come round.
+
+Then I played it in the real game: the dig, with Dr Hale and Chief Okoro, and the
+blast, with Dr Hale alone and no skill used. Both reached their `Win:` sentence on the
+server's last screen. Dr Hale alone took about ten minutes of game time. The dig took
+twenty-five, with Chief Okoro beaming up between beats to read the bridge's quest list
+for this page. Note what is in the pack as you go: it lists items by their key, `jacks x1`,
+`stores key x1`, `charges x1`. Act names a pickup two ways: `picked up Stores key.` where
+the prop and the item share a name, and `picked up jacks from the Shoring jacks.` where
+they do not.
 
 By Lecture 14's guess, half a minute a press and doubled for a first play, the busiest
 console in the first walk has nine presses: nine minutes of reading, and a first play

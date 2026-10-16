@@ -14,45 +14,70 @@ writes subfolders). The close views hide the Side Bar, as every close view of th
 does. The maps are shown as TEXT, as the page asks ("press Text"): capture opens a file at a
 line, which is the text editor.
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. This lecture is mostly the
-game. `python game.py c3-13-what-the-crew-sees start --state start --consoles server,science,helm`
+GAME STILLS. Taken 2026-10-16 (engine 1.3.15, sbs_utils 7ea2c918), all 32; marks set from
+them. What they showed: the handheld's first screen is a LIST of eight full-width rows (Crew,
+Act, Look, Pack, Tasks, Beam, Scan, Fire), not tiles; Tasks is a list with the picked quest's
+page under it (State, the objective, the text, Leads); Beam on the pad reads `No other site
+has a lock yet.`; Messages holds the crew's home mail (`Sam`, `Mum`) under the Report in
+line; a pickup reads `picked up pump key from the Pump house key.`; Scan by the tent lists
+the key and the kit too (the kit once Marrow has told of it); Marrow's cough answer is
+covered whenever the medic is not BESIDE him (Hale was on the pad, six cells off).
+
+RE-SHOOT (owner decision 2026-10-16: the bar's third slot NAMES THE MARK you stand on, and
+the library is being put back to that). 7ea2c918 showed the AREA TITLE there, so these six
+show the wrong word in the bar and are captioned for the mark: game_l13_tiles (pad),
+game_l13_bar_hidden (Kesh Relay, right for the hidden kit, but for the wrong reason),
+game_l13_bar_scrub (scrub), game_l13_bar_arrive (arrive), game_l13_bar_landing_pad (landing
+pad), game_l13_bar_gully_mouth (gully mouth). Their rects box the bar's third slot and stay
+right after the re-shoot. AWAITING RE-SHOOT (library defect being fixed):
+game_l13_tasks_ross_after, whose page text breaks mid-sentence (`somebody will` / `have to
+fly a new one down.`); captioned for the whole sentence.
+
+`python game.py c3-13-what-the-crew-sees start --state start --consoles server,science,helm`
 (game one) and `--state final` (game two): the probe is made from the `away` template with
-every file of the state laid over it, ground\\ included; GAME_RESULTS_SAVE is false.
-THREE windows: the server, Science (Dr Ines
-Hale, medical and science) and Helm (Lt Dana Ross). To go down: the handheld icon (top
-left), the Boarding Party tile, BEAM DOWN. The device's first screen is its tile sheet;
-a tile opens an app, Back closes it.
+every file of the state laid over it, ground\\ included; GAME_RESULTS_SAVE is false. THREE
+windows: the server, Science (Dr Ines Hale, medical and science) and Helm (Lt Dana Ross).
+To go down: the handheld icon (top left), the Boarding Party tile (0.15, 0.24), BEAM DOWN
+(0.4, 0.25 first, 0.4, 0.375 when somebody is down). The device's first screen is its list
+of apps (rows at x 0.82: Crew 0.24, Act 0.34, Look 0.44, Pack 0.54, Tasks 0.64, Beam 0.74,
+Scan 0.84, Fire 0.93); a row opens an app, Back (0.94, 0.16) closes it. MIND LOOK: a row of
+an open Look sits where the home rows are, and a `Further off` row WALKS you to that thing,
+through the sentry's square if it is in the way (game one's first run lost Hale that way).
 
 GAME ONE, state "start" (Lecture 12's files), about eight minutes:
-  1. Science: beam down. On the pad, the tile sheet: game_l13_tiles (its bar reads Dr Ines
-     Hale, medical, science, pad). Open each tile once and Back: game_l13_crew,
-     game_l13_act, game_l13_look, game_l13_pack, game_l13_tasks_hale_before (The
-     Caretaker's Cough), game_l13_beam, game_l13_scan, game_l13_fire.
+  1. Science: beam down. On the pad, the list: game_l13_tiles (its bar: Dr Ines Hale,
+     medical, science, pad). Open each app once and Back: game_l13_crew, game_l13_act,
+     game_l13_look, game_l13_pack, game_l13_tasks_hale_before (The Caretaker's Cough),
+     game_l13_beam, game_l13_scan, game_l13_fire.
   2. Helm: beam down. Tasks: game_l13_tasks_ross_before. Ross walks to Old Marrow (by the
      tent) while Hale stays on the pad; talk to him: game_l13_marrow_ross. Leave him to
      his kettle, and walk Ross back to the pad.
-  3. Hale: click the scrub cell left of the pad's bottom row (the kit's cell, 6,8; click
-     the ground, nothing is there yet): game_l13_bar_hidden. Then talk to Marrow (Ross
+  3. Hale: click the scrub cell left of the pad's bottom row (the kit's cell, 6,8: click
+     0.25, 0.55; nothing is there yet): game_l13_bar_hidden. Then talk to Marrow (Ross
      away from him): game_l13_marrow_hale. Ask what he has put by. Back to the kit's cell
      (click beside the kit and then onto it, without using it): game_l13_bar_scrub.
   4. Hale: Scan, in the yard near the tent: game_l13_scan_before.
-  5. Hale: pick up the brass key on the tent peg. Walk east off the yard by the path behind
+  5. Hale: pick up the brass key by the tent. Walk east off the yard by the path behind
      the relay house (click about 22, 0 first, never row 6, which passes three cells from
-     the sentry's loop), then the exit (29, 6), into the gully: game_l13_bar_arrive. Pick up the Toolbox (east of the pump
-     house): Act, game_l13_act_toolbox; Pack, game_l13_pack_before.
-  6. Hale: Look, Go to Kesh Relay. In the yard, Look: game_l13_look_before; Beam:
-     game_l13_beam_before.
+     the sentry's loop), then the exit (29, 6), into the gully: game_l13_bar_arrive. Pick
+     up the Toolbox (east of the pump house): Act, game_l13_act_toolbox; Pack,
+     game_l13_pack_before.
+  6. Hale: Look, Go to Kesh Relay, then Back BEFORE pressing anything else. In the yard
+     beside the trail sign, Look: game_l13_look_before; Beam: game_l13_beam_before.
   7. Ross: Crew, Beam up. On Helm the handheld icon, Boarding Party: game_l13_bp. Then
-     Hale: Crew, Report in. Ross: Messages, game_l13_messages; Quests, game_l13_questlist;
-     Relight Kesh Relay selected, game_l13_log_relight_old.
+     Hale: Crew, Report in. Ross: Messages (0.82, 0.24 with the Boarding Party tile
+     showing), game_l13_messages; Quests, game_l13_questlist; Relight Kesh Relay
+     selected, game_l13_log_relight_old.
 GAME TWO, state "final", about five minutes:
   1. Both beam down. Hale's bar on the pad: game_l13_bar_landing_pad. Tasks, both:
      game_l13_tasks_hale_after, game_l13_tasks_ross_after. Hale's Scan by the tent:
      game_l13_scan_after.
   2. Hale: the brass key, east into the gully by the path behind the relay house:
-     game_l13_bar_gully_mouth. The Toolbox; Pack:
-     game_l13_pack_after. Look, Go to Kesh Relay; Look: game_l13_look_after.
+     game_l13_bar_gully_mouth. The Toolbox; Pack: game_l13_pack_after. Look, Go to Kesh
+     Relay, Back; Look: game_l13_look_after.
   3. Ross: Crew, Beam up. Quests, Relight Kesh Relay: game_l13_log_relight.
+For the re-shoot, only the six bar stills and game_l13_tasks_ross_after are needed: game
+one steps 1, 3 and 5, game two steps 1 and 2.
 """
 import os as _os
 
@@ -177,37 +202,37 @@ STILLS = {
     "t_m7b": ("terminal", [("m7b", _LINT)]),
     # Step 9: the bridge's briefing
     "e_brief": ("vscode", "final", 80, "big", _NS),        # lines 70 to 90: the ship line (78), the table (82 to 86), the last line (88)
-    # THE REAL GAME (not taken yet). Two games, three windows: server, Science (Dr Hale), Helm
-    # (Lt Ross). Press order in the docstring.
-    "game_l13_tiles": ("game", "Science's xESS just beamed down (game one, state start): the tile sheet, eight tiles with their one-line blurbs (Crew, Act, Look, Pack, Tasks, Beam, Scan, Fire), and the bar: Dr Ines Hale, medical, science, pad"),
-    "game_l13_crew": ("game", "Science's xESS, the Crew app on the pad: the ship, each person down and where they stand, Everyone, and the buttons"),
-    "game_l13_act": ("game", "Science's xESS, the Act app with nothing open yet"),
-    "game_l13_look": ("game", "Science's xESS, the Look app on the pad: what is in reach (likely 'Nothing within reach.'), then Further off"),
-    "game_l13_pack": ("game", "Science's xESS, the Pack app on the pad, empty"),
-    "game_l13_tasks_hale_before": ("game", "Science's xESS, the Tasks app (state start): Dr Ines Hale, The Caretaker's Cough, Active, then the party's quests and Leads ('! Old Marrow - Kesh Relay')"),
-    "game_l13_beam": ("game", "Science's xESS, the Beam app on the pad: To Kesh Relay"),
-    "game_l13_scan": ("game", "Science's xESS, the Scan app on the pad"),
-    "game_l13_fire": ("game", "Science's xESS, the Fire app: SAFE, the three settings STUN, CUT, FULL, and Arm"),
-    "game_l13_tasks_ross_before": ("game", "Helm's xESS (Lt Ross), the Tasks app (state start): no story of her own, Party with Relight Kesh Relay and Hold at the Relay, and Leads"),
-    "game_l13_marrow_ross": ("game", "Helm's xESS, Act, Lt Ross talking to Old Marrow while Dr Hale stands on the landing pad: the answers, one of them 'Look at that cough (covering for medical)'"),
-    "game_l13_marrow_hale": ("game", "Science's xESS, Act, Dr Hale talking to Old Marrow with Lt Ross away: 'Look at that cough' with no covering mark"),
-    "game_l13_bar_hidden": ("game", "Science's xESS, Dr Hale standing on the scrub cell where the medical kit is hidden, before Marrow has told of it: the bar's third slot reads Kesh Relay"),
-    "game_l13_bar_scrub": ("game", "Science's xESS, Dr Hale on the same cell after Ask what he has put by: the kit drawn there now, and the bar reads scrub"),
-    "game_l13_scan_before": ("game", "Science's xESS, Scan in the yard by the tent (state start): '**Tent** - no reading', then Old Marrow with his Scan line"),
-    "game_l13_bar_arrive": ("game", "Science's xESS, Dr Hale just walked into the gully (state start): the bar reads Dr Ines Hale, medical, science, arrive"),
-    "game_l13_act_toolbox": ("game", "Science's xESS, Act after picking up the brass key and the toolbox: the transcript lines 'Dr Ines Hale picked up Pump house key.' and 'Dr Ines Hale picked up Toolbox.'"),
+    # THE REAL GAME (taken 2026-10-16). Two games, three windows: server, Science (Dr Hale),
+    # Helm (Lt Ross). Press order in the docstring. RE-SHOOT marks the six bar stills.
+    "game_l13_tiles": ("game", "Science's xESS just beamed down (game one, state start): the list of eight apps, each a full-width row with its one-line blurb (Crew, Act, Look, Pack, Tasks, Beam, Scan, Fire), and the bar: Dr Ines Hale, medical, science, pad. RE-SHOOT: 7ea2c918 drew the area title, Kesh Relay, where the mark goes"),
+    "game_l13_crew": ("game", "Science's xESS, the Crew app on the pad: Kesh Relay - 1 down, the rows Artemis, Dr Ines Hale (you), Everyone, 'Artemis - ship', 'Nothing said yet.', and Report in / Beam up at the foot"),
+    "game_l13_act": ("game", "Science's xESS, the Act app with nothing open yet: 'Nothing to decide here.'"),
+    "game_l13_look": ("game", "Science's xESS, the Look app on the pad: 'Nothing within reach.' and nothing further off yet"),
+    "game_l13_pack": ("game", "Science's xESS, the Pack app on the pad: 'You are not carrying anything.'"),
+    "game_l13_tasks_hale_before": ("game", "Science's xESS, the Tasks app (state start): the list, Dr Ines Hale > The Caretaker's Cough, Active, then Party; under it the page, State Active, 'See to the caretaker', the sentence; Leads '! Old Marrow - Kesh Relay', '! The beacon - Kesh Relay'"),
+    "game_l13_beam": ("game", "Science's xESS, the Beam app on the pad: 'No other site has a lock yet.' (a Beam list never names the area you are in)"),
+    "game_l13_scan": ("game", "Science's xESS, the Scan app on the pad: Kesh Relay, 'Nothing in sight worth a reading.'"),
+    "game_l13_fire": ("game", "Science's xESS, the Fire app: SAFE, the three settings > STUN, CUT, FULL, STUN's line, Range 6 cells, Arm"),
+    "game_l13_tasks_ross_before": ("game", "Helm's xESS (Lt Ross), the Tasks app (state start): no story of her own, Party with Relight Kesh Relay Active and Hold at the Relay Done, its page, and Leads '! The beacon - Kesh Relay'"),
+    "game_l13_marrow_ross": ("game", "Helm's xESS, Act, Lt Ross talking to Old Marrow while Dr Hale stands on the landing pad six cells off: five answers, the last 'Look at that cough (covering for medical)'"),
+    "game_l13_marrow_hale": ("game", "Science's xESS, Act, Dr Hale talking to Old Marrow with Lt Ross away: 'Look at that cough' with no covering mark, fourth of five"),
+    "game_l13_bar_hidden": ("game", "Science's xESS, Dr Hale standing on the scrub cell where the medical kit is hidden, before Marrow has told of it: the bar's third slot reads Kesh Relay. RE-SHOOT: right word, but 7ea2c918 drew the area title on every cell"),
+    "game_l13_bar_scrub": ("game", "Science's xESS, Dr Hale on the kit's cell after Ask what he has put by: the kit drawn there now, Marrow's line about it in Act, and the bar reads scrub. RE-SHOOT: 7ea2c918 drew Kesh Relay, and she stood one cell east of the kit"),
+    "game_l13_scan_before": ("game", "Science's xESS, Scan in the yard by the tent (state start, the kit already told of): Kesh Relay, '**Tent** - no reading', the Pump house key, the Medical kit, and Old Marrow, each with its line"),
+    "game_l13_bar_arrive": ("game", "Science's xESS, Dr Hale just walked into the gully (state start): the bar reads Dr Ines Hale, medical, science, arrive. RE-SHOOT: 7ea2c918 drew The Dry Gully"),
+    "game_l13_act_toolbox": ("game", "Science's xESS, Act after the brass key and the toolbox: Marrow's talk above, then 'Dr Ines Hale picked up pump key from the Pump house key.' and 'Dr Ines Hale picked up fuse x2 from the Toolbox.', each with its picture"),
     "game_l13_pack_before": ("game", "Science's xESS, Pack after the key and the toolbox (state start): fuse x2, pump key x1"),
-    "game_l13_look_before": ("game", "Science's xESS, Look back in the yard after the gully was found (state start): 'Go to The Dry Gully' among the buttons"),
+    "game_l13_look_before": ("game", "Science's xESS, Look back in the yard beside the trail sign (state start): Use Trail sign, 'Go to The Dry Gully', Further off '! Old Marrow - 17 W', '? Relay keycard - 10 SW'"),
     "game_l13_beam_before": ("game", "Science's xESS, Beam in the yard (state start): 'To The Dry Gully'"),
     "game_l13_bp": ("game", "Helm, beamed back up (Crew, Beam up): its handheld's Boarding Party screen: 'Going down to Kesh Relay', Lt Dana Ross, helm, In the party, Dr Ines Hale, medical, science, BEAM DOWN"),
-    "game_l13_messages": ("game", "Helm's handheld, Messages, after Dr Hale presses Report in on her Crew app: the one line 'Dr Ines Hale, reporting in.'"),
+    "game_l13_messages": ("game", "Helm's handheld, Messages, after Dr Hale presses Report in on her Crew app: the row 'Dr Ines Hale, reporting in.' at the top, and under it the crew's home mail, Sam and Mum"),
     "game_l13_questlist": ("game", "Helm's handheld, the Quest Log list: Relight Kesh Relay Active, Hold at the Relay Done, and nothing of anybody's side story"),
-    "game_l13_log_relight_old": ("game", "Helm's Quest Log, Relight Kesh Relay selected (state start): its one sentence, 'The relay's beacon went dark nine days ago. Go down and light it.'"),
-    "game_l13_bar_landing_pad": ("game", "Science's xESS just beamed down (game two, state final): the bar reads Dr Ines Hale, medical, science, landing pad"),
-    "game_l13_tasks_hale_after": ("game", "Science's xESS, Tasks (state final): See to Marrow's Cough, Active, and its lead"),
-    "game_l13_tasks_ross_after": ("game", "Helm's xESS, Tasks (state final): Lt Dana Ross, Find a Place to Set Down, Active"),
+    "game_l13_log_relight_old": ("game", "Helm's Quest Log, Relight Kesh Relay selected (state start): State Active, 'Light the beacon at Kesh Relay', and its one sentence, 'The relay's beacon went dark nine days ago. Go down and light it.'"),
+    "game_l13_bar_landing_pad": ("game", "Science's xESS just beamed down (game two, state final): the bar reads Dr Ines Hale, medical, science, landing pad. RE-SHOOT: 7ea2c918 drew Kesh Relay"),
+    "game_l13_tasks_hale_after": ("game", "Science's xESS, Tasks (state final): See to Marrow's Cough, Active, its page and its leads"),
+    "game_l13_tasks_ross_after": ("game", "Helm's xESS, Tasks (state final): Lt Dana Ross > Find a Place to Set Down, Active; its page, 'Ask the caretaker where a shuttle could land', 'If the beacon cannot be lit, somebody will have to fly a new one down.' AWAITING RE-SHOOT: the sentence breaks after 'will' (library defect)"),
     "game_l13_scan_after": ("game", "Science's xESS, Scan by the tent (state final): '**Tent** - Canvas, a camp bed, and a kettle that is still warm.'"),
-    "game_l13_bar_gully_mouth": ("game", "Science's xESS, Dr Hale just walked into the gully (state final): the bar reads gully mouth"),
+    "game_l13_bar_gully_mouth": ("game", "Science's xESS, Dr Hale just walked into the gully (state final): the bar reads gully mouth. RE-SHOOT: 7ea2c918 drew Dry Gully"),
     "game_l13_pack_after": ("game", "Science's xESS, Pack after the key and the toolbox (state final): fuse x2, pump house key x1"),
     "game_l13_look_after": ("game", "Science's xESS, Look back in the yard (state final): 'Go to Dry Gully'"),
     "game_l13_log_relight": ("game", "Helm's Quest Log, Relight Kesh Relay selected (state final): the station picture with 'Kesh Relay, the only light on the Kesh run.', the sentence, the three-row table What / What the ship knows, and 'Every convoy on the Kesh run steers by that lamp.'"),
@@ -223,81 +248,133 @@ STILLS = {
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 14", "sub": "Pacing an away mission"}),
 }
 
+# Marks on the game stills (fractions of the 1280x960 frame). The xESS column is x 0.668..0.99.
+_BAR = ("rect", 0.668, 0.058, 0.99, 0.132)          # the bar: name, jobs, and where she stands
+_SLOT = ("rect", 0.875, 0.09, 0.99, 0.132)          # the bar's third slot (the mark; RE-SHOOT stills)
+_HOME = ("rect", 0.668, 0.195, 0.982, 0.99)         # game_l13_tiles: the list of eight apps
+_CR_LIST = ("rect", 0.668, 0.205, 0.99, 0.39)       # game_l13_crew: 1 down, Artemis, Dr Ines Hale (you), Everyone
+_CR_BTN = ("rect", 0.668, 0.86, 0.99, 0.995)        # ... Report in, Beam up
+_AT_ALL = ("rect", 0.672, 0.2, 0.97, 0.885)         # game_l13_act_toolbox: the whole transcript
+_AT_BOTH = ("rect", 0.672, 0.745, 0.97, 0.885)      # ... the two pickup lines
+_AT_KEY = ("rect", 0.672, 0.745, 0.97, 0.795)       # ... 'picked up pump key from the Pump house key.'
+_LK_ALL = ("rect", 0.668, 0.198, 0.99, 0.522)       # game_l13_look_before / _after: the buttons
+_LK_GO = ("rect", 0.668, 0.267, 0.99, 0.338)        # ... 'Go to The Dry Gully' / 'Go to Dry Gully'
+_PK_ALL = ("rect", 0.668, 0.198, 0.82, 0.29)        # game_l13_pack_before / _after: the two items
+_PK_KEY = ("rect", 0.668, 0.255, 0.82, 0.29)        # ... pump key x1 / pump house key x1
+_TH_LIST = ("rect", 0.672, 0.205, 0.965, 0.415)     # game_l13_tasks_*: her group, her story, Party
+_TH_ROW = ("rect", 0.672, 0.287, 0.965, 0.372)      # ... her story's heading and state
+_TH_PAGE = ("rect", 0.672, 0.52, 0.97, 0.685)       # ... the page: State, the objective, the text
+_BM_MSG = ("rect", 0.668, 0.198, 0.875, 0.235)      # game_l13_beam: 'No other site has a lock yet.'
+_BM_TO = ("rect", 0.668, 0.198, 0.99, 0.27)         # game_l13_beam_before: 'To The Dry Gully'
+_FI_SET = ("rect", 0.668, 0.22, 0.99, 0.495)        # game_l13_fire: SAFE and the three settings
+_MH_COUGH = ("rect", 0.672, 0.551, 0.842, 0.598)    # game_l13_marrow_hale: 'Look at that cough', unmarked
+_MR_TWO = ("rect", 0.39, 0.345, 0.5, 0.425)         # game_l13_marrow_ross: Ross and Marrow by the tent
+_MR_HALE = ("rect", 0.19, 0.3, 0.235, 0.375)        # ... Hale on the landing pad
+_MR_COVER = ("rect", 0.672, 0.607, 0.988, 0.652)    # ... 'Look at that cough (covering for medical)'
+_TR_PARTY = ("rect", 0.672, 0.205, 0.99, 0.44)      # game_l13_tasks_ross_before: Party, Relight, Hold, no story
+_HD_HALE = ("rect", 0.232, 0.51, 0.272, 0.578)      # game_l13_bar_hidden: Hale on the kit's cell
+_SC_KIT = ("rect", 0.235, 0.545, 0.265, 0.58)       # game_l13_bar_scrub: the kit, drawn now
+_SB_ALL = ("rect", 0.668, 0.2, 0.99, 0.46)          # game_l13_scan_before: everything in sight
+_SB_TENT = ("rect", 0.668, 0.243, 0.83, 0.275)      # ... 'Tent - no reading'
+_SA_TENT = ("rect", 0.668, 0.243, 0.99, 0.3)        # game_l13_scan_after: the tent's Scan line
+_AR_HALE = ("rect", 0.036, 0.355, 0.082, 0.42)      # game_l13_bar_arrive / _gully_mouth: Hale at the gully's entry
+_BP_ALL = ("rect", 0.018, 0.11, 0.5, 0.3)           # game_l13_bp: who is going, and who is down
+_BP_PARTY = ("rect", 0.018, 0.235, 0.48, 0.3)       # ... In the party, Dr Ines Hale
+_MS_HALE = ("rect", 0.022, 0.118, 0.445, 0.202)     # game_l13_messages: 'Dr Ines Hale, reporting in.'
+_MS_HOME = ("rect", 0.022, 0.205, 0.2, 0.45)        # ... the crew's mail from home
+_QL = ("rect", 0.0, 0.142, 0.38, 0.28)              # game_l13_questlist: Relight Kesh Relay, Hold at the Relay
+_LO_PAGE = ("rect", 0.385, 0.075, 0.87, 0.205)      # game_l13_log_relight_old: State, objective, the sentence
+_LO_SENT = ("rect", 0.385, 0.17, 0.87, 0.205)       # ... its one sentence
+_LR_PIC = ("rect", 0.385, 0.165, 0.81, 0.3)         # game_l13_log_relight: the relay's picture and line
+_LR_TABLE = ("rect", 0.385, 0.36, 0.92, 0.49)       # ... the table
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
-        {"from": 0, "still": "game_l13_tiles"},
-        {"from": 5, "still": "game_l13_bar_arrive"},
+        {"from": 0, "still": "game_l13_tiles", "marks": [_HOME]},
+        {"from": 5, "still": "game_l13_bar_arrive", "marks": [_SLOT]},
         {"from": 7, "still": "card_title"},
     ]},
     "s02_the_bar_and_the_eight_apps": {"step": 1, "beats": [
-        {"from": 0, "still": "game_l13_tiles"},
-        {"from": 3, "still": "game_l13_crew"},
-        {"from": 4, "still": "game_l13_act"},
-        {"from": 5, "still": "game_l13_look"},
-        {"from": 6, "still": "game_l13_pack"},
-        {"from": 7, "still": "game_l13_tasks_hale_before"},
-        {"from": 8, "still": "game_l13_beam"},
-        {"from": 8.5, "still": "game_l13_fire"},
+        {"from": 0, "still": "game_l13_tiles", "marks": [_BAR]},
+        {"from": 2, "still": "game_l13_tiles", "marks": [_HOME]},
+        {"from": 3, "still": "game_l13_crew", "marks": [_CR_LIST, _CR_BTN]},
+        {"from": 4, "still": "game_l13_act_toolbox", "marks": [_AT_ALL]},
+        {"from": 5, "still": "game_l13_look_before", "marks": [_LK_ALL]},
+        {"from": 6, "still": "game_l13_pack_before", "marks": [_PK_ALL]},
+        {"from": 7, "still": "game_l13_tasks_hale_before", "marks": [_TH_LIST]},
+        {"from": 8, "still": "game_l13_beam", "marks": [_BM_MSG]},
+        {"from": 8.5, "still": "game_l13_fire", "marks": [_FI_SET]},
         {"from": 9, "still": "card_apps"},
         {"from": 10, "still": "card_apps", "marks": [("part", "r1c3"), ("part", "r2c3"), ("part", "r3c3"), ("part", "r4c3")]},
     ]},
     "s03_who_is_offered_what": {"step": None, "beats": [
         {"from": 0, "still": "card_offered", "marks": [("part", "r1")]},
-        {"from": 1, "still": "game_l13_marrow_hale"},
-        {"from": 3, "still": "game_l13_marrow_ross"},
+        {"from": 1, "still": "game_l13_marrow_hale", "marks": [_MH_COUGH]},
+        {"from": 3, "still": "game_l13_marrow_ross", "marks": [_MR_TWO]},
+        {"from": 4, "still": "game_l13_marrow_ross", "marks": [_MR_HALE]},
+        {"from": 5, "still": "game_l13_marrow_ross", "marks": [_MR_COVER]},
         {"from": 6, "still": "card_offered", "marks": [("part", "r3")]},
         {"from": 9, "still": "card_offered", "marks": [("part", "r4")]},
     ]},
     "s04_a_mark_is_a_word": {"step": 2, "beats": [
-        {"from": 0, "still": "game_l13_tiles"},
-        {"from": 2, "still": "game_l13_bar_arrive"},
+        {"from": 0, "still": "game_l13_tiles", "marks": [_SLOT]},
+        {"from": 2, "still": "game_l13_bar_arrive", "marks": [_SLOT, _AR_HALE]},
         {"from": 5, "still": "e_land2", "marks": [("lines", 12, 12), ("lines", 21, 21)]},
-        {"from": 5.5, "still": "e_gully2", "marks": [("lines", 5, 5), ("lines", 16, 16), ("lines", 22, 22)]},
-        {"from": 6, "still": "e_cist2", "marks": [("lines", 5, 5), ("lines", 14, 14)]},
-        {"from": 6.5, "still": "game_l13_bar_landing_pad"},
-        {"from": 7, "still": "game_l13_bar_hidden"},
-        {"from": 9, "still": "game_l13_bar_scrub"},
-        {"from": 10, "still": "game_l13_bar_hidden"},
+        {"from": 5.33, "still": "e_gully2", "marks": [("lines", 5, 5), ("lines", 16, 16), ("lines", 22, 22)]},
+        {"from": 5.67, "still": "e_cist2", "marks": [("lines", 5, 5), ("lines", 14, 14)]},
+        {"from": 6, "still": "game_l13_bar_landing_pad", "marks": [_SLOT]},
+        {"from": 6.5, "still": "game_l13_bar_gully_mouth", "marks": [_SLOT]},
+        {"from": 7, "still": "game_l13_bar_hidden", "marks": [_HD_HALE]},
+        {"from": 8, "still": "game_l13_bar_hidden", "marks": [_HD_HALE, _SLOT]},
+        {"from": 9, "still": "game_l13_bar_scrub", "marks": [_SC_KIT, _SLOT]},
+        {"from": 10, "still": "game_l13_bar_hidden", "marks": [_SLOT]},
     ]},
     "s05_titles_and_what_the_pack_say": {"step": 3, "beats": [
-        {"from": 0, "still": "game_l13_look_before"},
-        {"from": 1.5, "still": "game_l13_beam_before"},
+        {"from": 0, "still": "game_l13_look_before", "marks": [_LK_GO]},
+        {"from": 1.5, "still": "game_l13_beam_before", "marks": [_BM_TO]},
         {"from": 3, "still": "e_gully3", "marks": [("lines", 3, 3)]},
         {"from": 3.5, "still": "e_cist3", "marks": [("lines", 3, 3)]},
-        {"from": 4, "still": "game_l13_act_toolbox"},
-        {"from": 6, "still": "game_l13_pack_before"},
-        {"from": 8, "still": "e_key0", "marks": [("lines", 248, 248)]},
-        {"from": 9, "still": "game_l13_pack_before"},
-        {"from": 10, "still": "e_key0", "marks": [("lines", 253, 253)]},
-        {"from": 11, "still": "e_key4", "marks": [("lines", 248, 248), ("lines", 253, 253)]},
-        {"from": 12, "still": "card_key"},
-        {"from": 14, "still": "t_miss", "marks": [("span", 1, "item-nothing-gives")]},
+        {"from": 4, "still": "game_l13_act_toolbox", "marks": [_AT_BOTH]},
+        {"from": 7, "still": "game_l13_act_toolbox", "marks": [_AT_KEY]},
+        {"from": 9, "still": "e_key0", "marks": [("lines", 248, 248)]},
+        {"from": 10, "still": "game_l13_pack_before", "marks": [_PK_KEY]},
+        {"from": 11, "still": "e_key0", "marks": [("lines", 253, 253)]},
+        {"from": 12, "still": "e_key4", "marks": [("lines", 248, 248), ("lines", 253, 253)]},
+        {"from": 13, "still": "card_key"},
+        {"from": 15, "still": "t_miss", "marks": [("span", 1, "item-nothing-gives")]},
     ]},
     "s06_scan_and_a_title_that_is_the": {"step": 5, "beats": [
-        {"from": 0, "still": "game_l13_scan_before"},
+        {"from": 0, "still": "game_l13_scan_before", "marks": [_SB_ALL]},
+        {"from": 1, "still": "game_l13_scan_before", "marks": [_SB_TENT]},
         {"from": 2, "still": "e_scan5", "marks": [("lines", 220, 220)]},
-        {"from": 3, "still": "game_l13_scan_after"},
-        {"from": 4, "still": "game_l13_tasks_hale_before"},
-        {"from": 7, "still": "e_cough6", "marks": [("lines", 113, 113)]},
-        {"from": 8, "still": "game_l13_tasks_hale_after"},
+        {"from": 3, "still": "game_l13_scan_after", "marks": [_SA_TENT]},
+        {"from": 4, "still": "game_l13_tasks_hale_before", "marks": [_TH_LIST]},
+        {"from": 6, "still": "game_l13_tasks_hale_before", "marks": [_TH_PAGE]},
+        {"from": 8, "still": "game_l13_tasks_hale_before", "marks": [_TH_ROW]},
+        {"from": 9, "still": "e_cough6", "marks": [("lines", 113, 113)]},
+        {"from": 10, "still": "game_l13_tasks_hale_after", "marks": [_TH_ROW]},
     ]},
     "s07_the_two_with_nothing_to_do": {"step": 7, "beats": [
-        {"from": 0, "still": "game_l13_tasks_ross_before"},
-        {"from": 2, "still": "game_l13_marrow_ross"},
+        {"from": 0, "still": "game_l13_tasks_ross_before", "marks": [_TR_PARTY]},
+        {"from": 2, "still": "game_l13_marrow_ross", "marks": [_MR_COVER]},
         {"from": 4, "still": "e_stories", "marks": [("lines", 145, 163)]},
         {"from": 6, "still": "t_m7", "marks": [("span", 1, "unfired-signal")]},
         {"from": 7, "still": "e_strip", "marks": [("lines", 520, 520)]},
-        {"from": 7.5, "still": "game_l13_tasks_ross_after"},
+        {"from": 7.5, "still": "game_l13_tasks_ross_after", "marks": [_TH_ROW]},
     ]},
     "s08_what_the_bridge_sees_and_you": {"step": 9, "beats": [
-        {"from": 0, "still": "game_l13_bp"},
-        {"from": 3, "still": "game_l13_questlist"},
-        {"from": 4, "still": "game_l13_messages"},
-        {"from": 6, "still": "game_l13_questlist"},
-        {"from": 9, "still": "game_l13_log_relight_old"},
-        {"from": 12, "still": "e_brief", "marks": [("lines", 78, 88)]},
-        {"from": 13, "still": "game_l13_log_relight"},
-        {"from": 15, "still": "card_exercise"},
-        {"from": 18, "still": "card_next"},
+        {"from": 0, "still": "game_l13_bp", "marks": [_BP_ALL]},
+        {"from": 2, "still": "game_l13_bp", "marks": [_BP_PARTY]},
+        {"from": 3, "still": "game_l13_questlist", "marks": [_QL]},
+        {"from": 4, "still": "game_l13_messages", "marks": [_MS_HALE]},
+        {"from": 6, "still": "game_l13_messages", "marks": [_MS_HOME]},
+        {"from": 7, "still": "game_l13_questlist", "marks": [_QL]},
+        {"from": 10, "still": "game_l13_log_relight_old", "marks": [_LO_PAGE]},
+        {"from": 11, "still": "game_l13_log_relight_old", "marks": [_LO_SENT]},
+        {"from": 13, "still": "e_brief", "marks": [("lines", 78, 88)]},
+        {"from": 14, "still": "game_l13_log_relight", "marks": [_LR_PIC]},
+        {"from": 15, "still": "game_l13_log_relight", "marks": [_LR_TABLE]},
+        {"from": 16, "still": "card_exercise"},
+        {"from": 19, "still": "card_next"},
     ]},
 }

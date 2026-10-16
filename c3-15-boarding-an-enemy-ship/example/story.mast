@@ -63,7 +63,7 @@ Properties:
 
     # THE BLACK GULL. The first three numbers are where she comes FROM: a ship that has
     # struck and is not boarded goes back there. The second line brings her in close.
-    gull = npc_spawn(20000, 0, 20000, "Black Gull", "pirate, ship, gull", "pirate_brigantine", "behav_npcship")
+    gull = npc_spawn(20000, 0, 20000, "Black Gull", "pirate, ship, gull", "pirate_strongbow", "behav_npcship")
     set_pos(gull, 6000, 0, 4000)
 
     await task_schedule(spawn_players)

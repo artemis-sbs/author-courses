@@ -12,13 +12,10 @@ you typed in a hurry as a name for yourself, and they are on the screen too.
 Today you go through the handheld one app at a time, find what reads badly in `MyAway`,
 and fix it. You also give the two crew members with nothing to do something to do.
 
-*[Screenshot to add: the handheld on the ground, with its eight tiles.]*
+*[Screenshot to add: the handheld on the ground, with its list of eight apps.]*
 
-One thing to know before you start. **Nobody has seen these screens yet.** Everything on
-this page about what an app shows was captured by running the app's own drawing code
-with a recorder where the screen should be. So this page can tell you which words an
-app shows, and in what order. It cannot tell you where they sit, how big they are or
-what color they are, and it does not try.
+The screens on this page were played on the game itself. A few numbers come from the
+game's code and were not counted on a screen, and the page says so where they come up.
 
 You change four files: `mission.amd` and the three maps.
 
@@ -36,7 +33,7 @@ Words for this lecture:
 | Word | Meaning |
 |---|---|
 | Handheld | What a console becomes when its crew member beams down |
-| App | One tile on the handheld: Crew, Act, Look, Pack, Tasks, Beam, Scan, Fire |
+| App | One row of the handheld's first screen: Crew, Act, Look, Pack, Tasks, Beam, Scan, Fire |
 | Bar | The line that is always there: your name, your jobs, and where you are |
 | Covering | Offered a choice that belongs to a job you do not have |
 
@@ -65,7 +62,8 @@ Dr Ines Hale | medical, science | DOWN - needs a medkit
 
 ### The eight apps
 
-Each tile has a name and one line under it. They are the same in every mission:
+The handheld's first screen is a list: one full-width row for each app, its name and one
+line under it. They are the same in every mission:
 
 ```
 Crew | Who is out here, and the way home
@@ -86,14 +84,18 @@ Here is what each one lists, and which of your words it uses.
 | Act | The scene that is open: every line so far, then your choices | Every `%` line and every choice |
 | Look | Things in reach, as `Use` and a name, or `Talk to` and a name. Ways out, as `Go to` and an area's title. Then `Further off`: up to four things in sight. Then the last thing that happened to you | Prop and person headings, area titles |
 | Pack | What you carry, as an item and a count. `Use medkit`. `Give to` and a name, for somebody standing next to you | Item keys |
-| Tasks | Your own side story, then the party's quests, then `Leads`: what each quest points at and where | Quest headings, `Leads to:`, area titles |
-| Beam | `To` and an area's title, for each area the ship can put you in | Area titles |
+| Tasks | A list: your own side story, then the party's quests, each a heading and a state. Under it, the page of the one you pick: its state, its objective, its text. Then `Leads`: what each quest points at and where | Quest headings, `Objective:`, the text, `Leads to:`, area titles |
+| Beam | `To` and an area's title, for each other area the ship can put you in. Never the one you are in: on the pad at the start it says `No other site has a lock yet.` | Area titles |
 | Scan | The place you stand, then everything in sight with its `Scan:` line | Mark names, area titles, headings, `Scan:` lines |
 | Fire | `SAFE` or `ARMED`, three settings, what the chosen one does, `Arm` or `Make safe` | None |
 
 Two of those numbers were read from the game's code and not counted on a screen: Look
 shows at most six things in reach and four further off, and Tasks shows at most four
 leads.
+
+A `Further off` row is a button, and pressing it walks you straight to that thing. The
+walk goes round walls, not round a hostile: a crew member pressed one in the yard and
+was downed walking through the sentry's square.
 
 Not every console has all eight. A console in a party of rooms, like Lecture 6's, has
 Crew and Act, and Tasks if its person holds a story. Look, Pack, Beam, Scan and Fire
@@ -102,20 +104,24 @@ need a map to stand on.
 ### Act is a transcript
 
 Act does not show one room. It keeps everything this console has read, in order. Here
-is Chief Okoro's Act app after one talk and three pickups. The long first line is cut
-short here:
+is the end of Dr Hale's Act app after a talk with Marrow and two pickups. His long line
+is cut short here:
 
 ```
-Chief Okoro picked up Medical kit.
+Dr Ines Hale
+[Ask what he has put by]
+He nods at the scrub beside the landing pad. "Medical kit, under the netting. ..."
+Dr Ines Hale
+[Thank him]
 ~ ~ ~
 The conversation is over.
-Chief Okoro picked up Pump house key.
-Chief Okoro picked up Toolbox.
+Dr Ines Hale picked up pump key from the Pump house key.
+Dr Ines Hale picked up fuse x2 from the Toolbox.
 ```
 
-So a pickup writes a sentence, and the sentence is built from the prop's heading.
-`Chief Okoro picked up Toolbox.` is true, and it is not what happened. What he has is
-two fuses. That is Step 4.
+So a pickup writes a sentence from two of your words: the item's key, and the prop's
+heading. `fuse x2 from the Toolbox` reads well. `pump key from the Pump house key` names
+one thing twice, in two different ways. That is Step 4.
 
 ### Who is offered what
 
@@ -131,13 +137,16 @@ All of this was played with stand-in consoles on your Lecture 12 files.
 | `Needs: engineering` on a prop | Anybody else is told `You would need engineering for that.` |
 | `For: medical` on a side story | Her Tasks app, and nobody else's. It is not on the ship's quest list |
 
-The third row has a surprise in it. **Covering is worked out scene by scene.** Chief
-Okoro walked up to Marrow alone, while Dr Hale stood on the landing pad. He was offered
-her answer:
+The third row has a surprise in it. **Covering is worked out scene by scene.** Lt Ross
+walked up to Marrow alone, while Dr Hale stood on the landing pad six cells away. Ross
+was offered the medic's answer, last of the five:
 
 ```
 [Look at that cough (covering for medical)]
 ```
+
+Dr Hale was on the ground, and not beside him, so she was not in his scene. The answer
+is covered whenever the medic is not standing with Marrow.
 
 So a choice for a job is never out of reach because the right person is busy elsewhere.
 If only a medic's hands will do, ask for a skill, not a job.
@@ -153,7 +162,12 @@ Now look at the mission as Lt Ross, your helm officer. Her Tasks app:
 ```
 Party
 Relight Kesh Relay
+Active
 Hold at the Relay
+Done
+State  Active
+Light the beacon at Kesh Relay
+The relay's beacon went dark nine days ago. Go down and light it.
 Leads
 ! The beacon - Kesh Relay
 ```
@@ -291,13 +305,14 @@ A prop you pick up is on screen under two names: its heading, and its `Item:` ke
 |---|---|
 | Look | `Use Brittle notice`, `Use Pump house door` |
 | Further off | `? Pump house key - 5 E` |
-| Act | `Chief Okoro picked up Toolbox.` |
+| Act | `Dr Ines Hale picked up pump key from the Pump house key.` |
 | Pack | `fuse x2`, `pump key x1` |
 | At the door | `pump key fits` |
 | Handing over | `Handed over medkit.` |
 
 The heading says `Pump house key`. The pack and the door say `pump key`, because that
-is the item's key with its underscore turned into a space. To your crew those are two
+is the item's key with its underscore turned into a space. Act puts both in one
+sentence: she picked up `pump key` from the `Pump house key`. To your crew those are two
 different things.
 
 **Make the item's key the same words as the heading.** Three lines name the pump house
@@ -333,7 +348,9 @@ Opens with: key relay_keycard, check engineering 9, cut, signal relay_unlocked
 
 The note above the keycard record names the old key too. Change it to match.
 
-**Name a pickup for what ends up in the pack.** Change two headings:
+**Name a pickup for what ends up in the pack.** Until somebody picks it up, the heading
+is all the crew has: a `? Toolbox` row under Look's `Further off`, and `Toolbox` in Scan,
+say where to walk and not what is there. Change two headings:
 
 ```
 ### [Two fuses](toolbox)
@@ -349,11 +366,13 @@ them.
 Save and run lint: `clean`. Played again:
 
 ```
-Chief Okoro picked up Two fuses.
+Dr Ines Hale picked up Pump house key.
 pump house key x1
 pump house key fits
 relay keycard fits
 ```
+
+When the heading and the item's key are the same words, Act names the thing once.
 
 Miss one of the three lines and lint tells you: nothing in the mission gives the old
 key any more. Step 10 has the warning.
@@ -365,12 +384,17 @@ use it. Scan does not know that. This is the yard through Scan, on your Lecture 
 files:
 
 ```
+Kesh Relay
 **Tent** - no reading
+**Pump house key** - A brass key on a loop of wire, hung on a tent peg.
+**Medical kit** - A sealed medical kit under camouflage netting.
 **Old Marrow** - One human. Elevated pulse, and a wet cough.
 ```
 
-Scan lists everything in sight. For each thing it shows the `Scan:` line. With no
-`Scan:` line it shows the description, and with neither it says `no reading`.
+Scan lists everything in sight: scenery, pickups and people. The medical kit is on the
+list because Marrow had already told of it; before that it is not there at all. For each
+thing it shows the `Scan:` line. With no `Scan:` line it shows the description, and with
+neither it says `no reading`.
 
 A `Scan:` line does not stop a prop being scenery. Give your three pieces of scenery
 one each. In the **Tent** record, under `Blocks: yes`:
@@ -401,20 +425,27 @@ Played again from the gully mouth:
 A `Scan:` line is the cheapest clue you have. It costs the crew no walking. Use it to
 say what a thing is for before they cross the map to find out.
 
-## Step 6 - On the ground, a title is the whole task
+## Step 6 - In the list, a heading is the whole task
 
-On the ship, the quest log shows a quest's objective and its description. The Tasks app
-does not. This is everything Dr Hale is shown about her own story:
+Open Dr Hale's Tasks app:
 
 ```
 Dr Ines Hale
-The Caretaker's Cough
-Active
+  The Caretaker's Cough
+  Active
+Party
+State  Active
+See to the caretaker
+The man who kept the relay has been breathing its dust for nine days.
 Leads
 ! Old Marrow - Kesh Relay
+! The beacon - Kesh Relay
 ```
 
-A heading, a state, and a lead. So on the ground the heading has to be the instruction.
+The top is a list, and each quest in it is a heading and a state. The page under it,
+with the objective and the text, is for the one quest picked in the list. The ship's
+Quest Log is built the same way. So the heading is what the crew reads first, and with
+several quests in the list it is all they read. Make the heading the instruction.
 Change three headings in `mission.amd`. The keys stay as they are:
 
 ```
@@ -503,8 +534,12 @@ Save and run lint: `clean`. Lt Ross's Tasks app now starts:
 
 ```
 Lt Dana Ross
-Find a Place to Set Down
-Active
+  Find a Place to Set Down
+  Active
+Party
+State  Active
+Ask the caretaker where a shuttle could land
+If the beacon cannot be lit, somebody will have to fly a new one down.
 ```
 
 and after her answer it says `Done`.
@@ -516,8 +551,9 @@ why the party can never be stuck.
 
 ## Step 8 - How long is a line
 
-Nobody has seen how much fits. What can be measured is what the shipped missions do, so
-count yours against them.
+One length has been seen on the game: `Look at that cough (covering for medical)`, 41
+characters, fits on one line in Act. Past that, what can be measured is what the shipped
+missions do, so count yours against them.
 
 | Counted | The starter | Yours, now | Dawnline |
 |---|---|---|---|
@@ -529,15 +565,14 @@ count yours against them.
 | The longest `%` line | 37 words | 38 words | 74 words |
 | A heading, middle length | 11 characters | 12 | 12 |
 
-Three things from the game's code, to plan with:
+Three things to plan with:
 
 - A choice that is covered grows by `(covering for medical)` and the like: up to 27 more
-  characters on your longest job word.
-- The first screen of the handheld shows the open scene's line above the tiles, in a
-  space that scrolls. The Act app shows the whole transcript and scrolls too. So a long
-  line is never cut off. It is only read less.
-- In Act your choices are buttons at the end of the transcript, set one after another
-  in a row that wraps. Short choices can share a row.
+  characters on your longest job word. (From the game's code.)
+- The Act app shows the whole transcript and scrolls. A long line wraps onto more lines;
+  it is never cut off. It is only read less.
+- In Act your choices are buttons at the end of the transcript, one under another, each
+  as wide as its words.
 
 So keep to the starter's numbers until you have seen your own mission on a screen: a
 choice under 35 characters, a line under 40 words. Your longest choice is 44 characters,
@@ -548,19 +583,15 @@ so it is never covered. Leave it, and look at it first when you play.
 
 Somebody stays aboard. Here is all of it.
 
-On the ship's tablet, the **Boarding Party** screen lists who has gone:
+On the ship's tablet, the **Boarding Party** screen lists who has gone. This is Lt Ross,
+back aboard, with Dr Hale still down:
 
 ```
+Boarding Party  Kesh Relay
 Going down to Kesh Relay
-Lt Dana Ross
-helm
+Lt Dana Ross  helm
 In the party
-Chief Okoro
-engineering
-Dr Ines Hale
-medical, science
-Lt Sam Reyes
-security
+Dr Ines Hale  medical, science
 BEAM DOWN
 ```
 
@@ -579,8 +610,18 @@ And Messages gets a line only when somebody on the ground presses **Report in**,
 their Crew app:
 
 ```
-Dr Ines Hale, reporting in.
+Dr Ines Hale
+  Dr Ines Hale, reporting in.
+* Sam
+  The cat has opinions
+* Mum
+  Are you eating
+* Mum
+  Nan says hello
 ```
+
+The rows under it are the crew's mail from home. They come with the game, not with your
+mission. The reporting-in line is the only one of yours.
 
 That is everything. No scene line reaches the bridge. So the shared quests are the
 bridge's only window on the ground. Every time one starts or finishes, the bridge
@@ -612,8 +653,9 @@ You know every piece of it from Classes 1 and 2: a ship lead line, paragraphs, a
 the ship is holding beside. The table says only what the ship could know from up there.
 Nothing in it gives away a scene.
 
-The side stories are a different matter. Their words under the fence are on no screen
-that this page captured, on the ground or aboard, so leave them short.
+The side stories are a different matter. Their words under the fence are on one screen
+only, the page under the owner's Tasks list, on the ground. Nobody aboard reads them, so
+leave them short.
 
 ## Step 10 - Check it
 
@@ -657,8 +699,8 @@ None of these is a mistake lint could know about. They are choices of words.
 |---|---|
 | A mark named for yourself | `arrive`, on the bar of anybody who stands there |
 | A title that starts with `The` | `Go to The Dry Gully` |
-| A pickup named for its box | `picked up Toolbox.` |
-| A choice too long to read at a glance | Nobody has measured what fits |
+| An item key that is not the heading's words | `picked up pump key from the Pump house key.` |
+| A choice too long to read at a glance | Nobody has measured where it stops fitting |
 
 After any rename, run lint, and then search the file for the old word. In VS Code,
 Ctrl+F, type the old key, and look at every line it finds.
@@ -671,12 +713,18 @@ sbs run server,helm,comms,science -m MyAway map=0
 
 This time do not play to win. Play to read.
 
-1. All three beam down. On each console, open every tile once and press **Back**.
+1. All three beam down. On each console, open every app on the list once and press
+   **Back**.
 2. Read the bar. Walk off the pad and read it again.
 3. As Lt Ross, open **Tasks**, then talk to Marrow. Find her answer.
-4. As Ens Vale, walk to the terminal. Mind the sentry. Find his answer.
+4. As Ens Vale, walk to the terminal and find his answer. Every cell beside the terminal
+   is within the sentry's notice, so it will come for him. Stun it first from the
+   **Fire** app (a stun lasts about ten seconds), then read fast. Shots miss a lot, and
+   no app tells you a shot hit or missed.
 5. As Dr Hale, pick up the brass key by the tent. Open **Pack**, then **Act**.
-6. Open **Scan** in the yard. Then walk east into the gully and open **Look**.
+6. Open **Scan** in the yard. Then walk east into the gully by the path behind the relay
+   house, as in Lecture 9, and open **Look**. Press only the row you mean: a `Further
+   off` row walks you there, sentry or no sentry.
 7. On a console left aboard (a fourth one, or one that has pressed **Beam up**), open
    the handheld's **Boarding Party** and **Quests**.
 

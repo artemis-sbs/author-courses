@@ -239,185 +239,233 @@ And the clock starts when the quest starts.
 This one starts with the game.
 
 61
-00:04:19,161 --> 00:04:21,335
-Lint doesn't walk your map.
+00:04:18,861 --> 00:04:21,470
+So by the time anybody lands,
 
 62
-00:04:21,785 --> 00:04:24,828
-You do, on paper, in three lists.
+00:04:21,920 --> 00:04:25,398
+it already reads a few minutes under thirty.
 
 63
-00:04:26,628 --> 00:04:29,237
-Every area, every item, every ending.
+00:04:26,598 --> 00:04:28,772
+Lint doesn't walk your map.
 
 64
-00:04:29,687 --> 00:04:33,165
-And beside each one, who can do it.
+00:04:29,222 --> 00:04:32,265
+You do, on paper, in three lists.
 
 65
-00:04:34,965 --> 00:04:38,443
-Now find a party the lists leave stuck.
+00:04:34,065 --> 00:04:36,674
+Every area, every item, every ending.
 
 66
-00:04:39,343 --> 00:04:42,822
-A scientist and a guard, and no engineer.
+00:04:37,124 --> 00:04:40,602
+And beside each one, who can do it.
 
 67
-00:04:44,622 --> 00:04:48,535
-She pulls the door code, and calms the sentry.
+00:04:42,402 --> 00:04:45,880
+Now find a party the lists leave stuck.
 
 68
-00:04:48,985 --> 00:04:50,724
-That's the clever answer.
+00:04:46,780 --> 00:04:50,259
+A scientist and a guard, and no engineer.
 
 69
-00:04:51,624 --> 00:04:54,233
-But the sentry keeps its cell,
+00:04:52,059 --> 00:04:55,537
+First she has to reach the terminal alive.
 
 70
-00:04:54,683 --> 00:04:57,726
-and nobody here can run the pump.
+00:04:56,437 --> 00:04:59,046
+It stands inside the sentry's notice.
 
 71
-00:04:59,526 --> 00:05:02,570
-The clever answer left them with nothing.
+00:05:00,846 --> 00:05:03,889
+So the guard stuns the sentry first,
 
 72
-00:05:03,470 --> 00:05:06,078
-So fix it where it broke.
+00:05:04,339 --> 00:05:07,817
+and she works the terminal while it stands.
 
 73
-00:05:06,528 --> 00:05:09,137
-The sentry hands its cell over.
+00:05:08,717 --> 00:05:10,457
+Ten seconds isn't long.
 
 74
-00:05:10,937 --> 00:05:15,285
-Here's the terminal on the doctor's handheld after the update,
+00:05:10,907 --> 00:05:13,515
+If it wakes, stun it again.
 
 75
-00:05:15,735 --> 00:05:19,213
-and there's the power cell in her pack.
+00:05:14,415 --> 00:05:16,154
+Shots miss a lot,
 
 76
-00:05:20,113 --> 00:05:24,026
-In the file it's one outcome, after a comma.
+00:05:16,604 --> 00:05:20,952
+and no app tells you a shot hit or missed.
 
 77
-00:05:25,226 --> 00:05:27,835
-Three columns, one for each console.
+00:05:22,752 --> 00:05:26,665
+She pulls the door code, and calms the sentry.
 
 78
-00:05:28,285 --> 00:05:30,459
-What is each person doing?
+00:05:27,115 --> 00:05:28,854
+That's the clever answer.
 
 79
-00:05:32,259 --> 00:05:35,737
-This is the mission as you left it.
+00:05:29,754 --> 00:05:32,363
+But the sentry keeps its cell,
 
 80
-00:05:36,637 --> 00:05:40,115
-The chief makes eight presses out of twelve.
+00:05:32,813 --> 00:05:35,857
+and nobody here can run the pump.
 
 81
-00:05:40,565 --> 00:05:43,609
-The doctor is finished in ten seconds.
+00:05:37,657 --> 00:05:40,700
+The clever answer left them with nothing.
 
 82
-00:05:45,409 --> 00:05:48,452
-What you have there is a chain.
+00:05:41,600 --> 00:05:44,209
+So fix it where it broke.
 
 83
-00:05:48,902 --> 00:05:51,946
-Every step waits for the one before,
+00:05:44,659 --> 00:05:47,267
+The sentry hands its cell over.
 
 84
-00:05:52,396 --> 00:05:55,439
-so only one person is ever busy.
+00:05:49,067 --> 00:05:53,415
+Here's the terminal on the doctor's handheld after the update.
 
 85
-00:05:57,239 --> 00:05:59,413
-The cure is a join.
+00:05:54,315 --> 00:05:57,359
+The words say the sentry walks over.
 
 86
-00:05:59,863 --> 00:06:04,646
-Make the thing in the middle need pieces from three places.
+00:05:57,809 --> 00:06:02,591
+On the map it just stands where the stun caught it.
 
 87
-00:06:06,446 --> 00:06:08,620
-Your pump needs three fuses.
+00:06:03,491 --> 00:06:06,970
+And there's the power cell in her pack.
 
 88
-00:06:09,070 --> 00:06:12,983
-So give Marrow one to pay the doctor with.
+00:06:07,870 --> 00:06:11,783
+In the file it's one outcome, after a comma.
 
 89
-00:06:13,883 --> 00:06:19,100
-On her handheld, he pays with the fuse out of his kettle,
+00:06:12,983 --> 00:06:15,591
+Three columns, one for each console.
 
 90
-00:06:19,550 --> 00:06:21,724
-and it's in her pack.
+00:06:16,041 --> 00:06:18,215
+What is each person doing?
 
 91
-00:06:22,624 --> 00:06:27,407
-In the file, it's one more outcome on the cough answer.
+00:06:20,015 --> 00:06:23,493
+This is the mission as you left it.
 
 92
-00:06:29,207 --> 00:06:33,554
-Now three people each carry something to the pump house,
+00:06:24,393 --> 00:06:27,872
+The chief makes eight presses out of twelve.
 
 93
-00:06:34,004 --> 00:06:37,048
-and nobody presses more than five times.
+00:06:28,322 --> 00:06:31,365
+The doctor is finished in ten seconds.
 
 94
-00:06:38,248 --> 00:06:41,291
-Put it together in a beat sheet.
+00:06:33,165 --> 00:06:36,209
+What you have there is a chain.
 
 95
-00:06:42,191 --> 00:06:44,800
-One column is the stand-in's clock,
+00:06:36,659 --> 00:06:39,702
+Every step waits for the one before,
 
 96
-00:06:45,250 --> 00:06:47,424
-and that one is measured.
+00:06:40,152 --> 00:06:43,196
+so only one person is ever busy.
 
 97
-00:06:48,324 --> 00:06:52,237
-The other is my guess for a first play.
+00:06:44,996 --> 00:06:47,170
+The cure is a join.
 
 98
-00:06:54,037 --> 00:06:56,646
-Now play it with a stopwatch,
+00:06:47,620 --> 00:06:52,402
+Make the thing in the middle need pieces from three places.
 
 99
-00:06:57,096 --> 00:07:00,139
-and write your own times over mine.
+00:06:54,202 --> 00:06:56,376
+Your pump needs three fuses.
 
 100
-00:07:01,939 --> 00:07:04,983
-For forty-five minutes, write the sheet first.
+00:06:56,826 --> 00:07:00,739
+So give Marrow one to pay the doctor with.
 
 101
-00:07:05,883 --> 00:07:07,622
-Five for the landing.
+00:07:01,639 --> 00:07:06,857
+On her handheld, he pays with the fuse out of his kettle,
 
 102
-00:07:08,072 --> 00:07:09,811
-Twenty for three tracks.
+00:07:07,307 --> 00:07:09,480
+and it's in her pack.
 
 103
-00:07:10,261 --> 00:07:12,000
-Eight for the join.
+00:07:10,380 --> 00:07:15,163
+In the file, it's one more outcome on the cough answer.
 
 104
-00:07:12,900 --> 00:07:15,074
-Seven for the last area,
+00:07:16,963 --> 00:07:21,311
+Now three people each carry something to the pump house,
 
 105
-00:07:15,524 --> 00:07:17,698
-and five for the ending.
+00:07:21,761 --> 00:07:24,804
+and nobody presses more than five times.
 
 106
-00:07:19,498 --> 00:07:22,976
+00:07:26,004 --> 00:07:29,048
+Put it together in a beat sheet.
+
+107
+00:07:29,948 --> 00:07:32,557
+One column is the stand-in's clock,
+
+108
+00:07:33,007 --> 00:07:35,180
+and that one is measured.
+
+109
+00:07:36,080 --> 00:07:39,993
+The other is my guess for a first play.
+
+110
+00:07:41,793 --> 00:07:44,402
+Now play it with a stopwatch,
+
+111
+00:07:44,852 --> 00:07:47,896
+and write your own times over mine.
+
+112
+00:07:49,696 --> 00:07:52,739
+For forty-five minutes, write the sheet first.
+
+113
+00:07:53,639 --> 00:07:55,378
+Five for the landing.
+
+114
+00:07:55,828 --> 00:07:57,567
+Twenty for three tracks.
+
+115
+00:07:58,017 --> 00:07:59,757
+Eight for the join.
+
+116
+00:08:00,657 --> 00:08:02,830
+Seven for the last area,
+
+117
+00:08:03,280 --> 00:08:05,454
+and five for the ending.
+
+118
+00:08:07,254 --> 00:08:10,733
 That sheet is where your own mission starts.

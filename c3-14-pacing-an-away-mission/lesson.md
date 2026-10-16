@@ -12,7 +12,7 @@ reach every ending, and look at what three people are doing in the same minute.
 The hand check finds two things wrong with the mission you finished in Lecture 12. You
 fix both. Each fix is one line.
 
-*[Screenshot to add: the Tasks app with `29:53 left` under Relight Kesh Relay.]*
+*[Screenshot to add: the Tasks app with the time left under Relight Kesh Relay.]*
 
 Only `mission.amd` changes. Three records, five lines.
 
@@ -151,7 +151,7 @@ You have four tools. You have used every one.
 | The tool | In your file | What it costs the crew |
 |---|---|---|
 | A clock | `Fails when:` on a quest with a `Lose:` line. You add it in Step 5 | Every minute, from the moment the quest starts |
-| A patrol | `Patrol:`, `Notice:` and `Speed:` on the sentry. Its square is 18 cells, so it comes round every 9 seconds | Timing. The keycard lies on its path |
+| A patrol | `Patrol:`, `Notice:` and `Speed:` on the sentry. Its square is 18 cells, so it comes round every 9 seconds | Timing. The keycard lies on its path, and the yard terminal is inside its notice |
 | A door that needs a key from somewhere else | The pump house door in the gully, the brass key by the tent | Not seconds: a crossing is 7. It costs knowing where to look |
 | A hidden thing | `Hidden until:` on the two medical kits, the spare cell, and Pim by the tent | A conversation. Somebody has to ask the right person |
 
@@ -193,14 +193,18 @@ Thirty minutes comes from Step 3: longer than a first play that reads most thing
 shorter than one that reads everything twice. It is a guess until you have watched a
 crew.
 
-Played, the Tasks app shows the clock under the quest, on every handheld on the ground:
+Played, the Tasks app shows the clock under the quest, on every handheld on the ground.
+Tasks opens on your own story first: pick Relight Kesh Relay in the list.
 
 ```
 Relight Kesh Relay
-29:53 left
+<minutes>:<seconds> left
 ```
 
-The ship's quest list shows the same line, so the bridge can call the time down.
+The quest's page under the list has a `Time left` row too. Aboard, the ship's quest list
+shows the same line and the quest's page the same row, so the bridge can call the time
+down. Do not expect it to read thirty when you land: the clock runs from the start of the
+map, so by the time anybody beams down it is already a few minutes under.
 
 Tried for this page with `Fails when: 25 seconds`: the game ended with the party on the
 ground, and the last screen read the new `Lose:` sentence.
@@ -248,9 +252,30 @@ can do it. Use four words: **anyone**, a **job** (covered, so anyone in the end)
 | Lose | The clock | Everyone |
 
 Now look for a party the lists leave stuck. Take Dr Hale and Lt Reyes: a scientist and
-a guard, no engineer. Dr Hale is good enough to pull the door code, and the terminal
-then offers her `Send the sentry its recognition update`. She takes it. It is the clever
-answer, and the mission taught her to find it.
+a guard, no engineer.
+
+First she has to reach the terminal alive. **The yard terminal is inside the sentry's
+notice**: every cell beside it is four cells or less from the sentry's square, so a
+doctor standing there is seen, and shot. This is the patrol from Step 4, costing the crew
+timing. So Lt Reyes goes first. Dr Hale waits five cells west of the terminal, where the
+sentry cannot notice her. Reyes opens **Fire**, chooses **STUN**, presses **Arm** and
+clicks the sentry. It holds for its `Stun:` seconds, ten. While it stands, Dr Hale walks
+to the terminal and answers: `Pull the door code out of its memory`, `Copy it down`,
+`Send the sentry its recognition update`. If the stun runs out first, Reyes stuns it
+again: two more touches, **Arm** and a click.
+
+Expect to miss. A shot goes to the cell you clicked, and a hostile that is walking may
+have left it by then. Nothing on the handheld tells you that a shot missed, or that it
+hit, or that it killed: the Fire app goes back to SAFE either way. Watch the map.
+
+Ten seconds is less than three answers take somebody who reads them, so expect the second
+stun. That is Step 1 again: a hostile is the one thing on your map that is faster than
+your players. And STUN, not FULL. A FULL shot puts the sentry down, its cell falls where
+it stands, and this party never meets the problem below.
+
+Dr Hale is good enough to pull the door code, and the terminal then offers her `Send the
+sentry its recognition update`. She takes it. It is the clever answer, and the mission
+taught her to find it.
 
 The sentry is calm now, and it keeps its cell. The spare is past the sluice, and nobody
 here can run the pump. **The clever answer has left this party with no power cell.**
@@ -271,8 +296,9 @@ and change the line of **Recognition Update** to say what happened:
 % The terminal sends nine days of crew lists in one burst. The sentry stops, walks to the terminal, opens its chest and sets a power cell in your hands. Then it goes back to its square with its weapon down.
 ```
 
-Save and run lint: `clean`. Played again, Dr Hale's pack read `power cell x1`, and the
-sentry stood calm on its square.
+Save and run lint: `clean`. Played again the same way, Reyes's stun first, Dr Hale's pack
+read `power cell x1`. The map does not act the line out: the sentry stays standing where
+the stun caught it, calm and harmless, and the cell is simply in her pack.
 
 That is what the three lists are for. Every mistake of this kind is two good ideas from
 two different lectures that nobody put side by side.
@@ -410,7 +436,9 @@ sbs run server,engineering,weapons,science -m MyAway map=0
 ```
 
 Play the long road with three people, each on their own track from Step 7's second
-sheet. Before you start, start a stopwatch. Write the time beside each beat in Step 8.
+sheet. Lt Reyes deals with the sentry before anybody goes to the keycard, the relay door
+or the terminal: all three are inside its notice. Before you start, start a stopwatch.
+Write the time beside each beat in Step 8.
 
 Then play it again, and have one console do nothing but open **Tasks** and call out the
 clock.
@@ -425,6 +453,7 @@ for in Lecture 16.
 | Lint says `unknown-trigger` on the `Fails when:` line | The time is not a number and a unit | Write `30 minutes` |
 | The time runs out and nothing happens | The quest has no `Lose:` line | Put it back. Lint cannot see it |
 | The game is lost while the crew is still choosing consoles | The clock starts with the quest, and the quest starts with the game | Make the time longer, or see Lecture 16 |
+| Dr Hale goes down at the yard terminal | The terminal is inside the sentry's notice | Have Lt Reyes STUN the sentry first, and stun it again if it wakes before she is done. Step 6 |
 | The sentry is calm and nobody has a cell | The answer is missing `, give power_cell`, or the comma | Step 6. Lint warns about a missing comma |
 | Dr Hale has a fuse and cannot fit it | The panel needs an engineer. A fuse is fitted from the pack of the one who answers | Stand next to Chief Okoro and use **Give to**, in the Pack app |
 

@@ -1,12 +1,11 @@
 s01_cold_open_0	For eight lectures, you've drawn every floor your crew walked on.
 s01_cold_open_1	Today they board a ship,
 s01_cold_open_2	and you draw nothing.
-s01_cold_open_3	The game builds her deck from her own plan,
-s01_cold_open_4	and puts her crew aboard.
-s01_cold_open_5	Your job is what's on it.
-s01_cold_open_6	A prisoner, a gunner who won't give up,
-s01_cold_open_7	and a strongbox that ends it three ways.
-s01_cold_open_8	It's brand new, so at the end I'll show you what to check before your crew finds it.
+s01_cold_open_3	The game builds her deck from her own plan.
+s01_cold_open_4	Your job is what's on it.
+s01_cold_open_5	A prisoner, a gunner who won't give up,
+s01_cold_open_6	and a strongbox that ends it three ways.
+s01_cold_open_7	It's brand new, so at the end I'll show you what to check before your crew finds it.
 s02_one_party_at_a_time_0	The button needs four things.
 s02_one_party_at_a_time_1	A ship that has struck.
 s02_one_party_at_a_time_2	A hull with a plan.
@@ -28,21 +27,24 @@ s03_a_side_and_a_ship_3	In the file, first a side for her to be on.
 s03_a_side_and_a_ship_4	One record, and one line that says enemies.
 s03_a_side_and_a_ship_5	Then the ship, in the story file.
 s03_a_side_and_a_ship_6	Two lines, under the relay's own line.
-s03_a_side_and_a_ship_7	Look at the numbers.
-s03_a_side_and_a_ship_8	The first set is where she comes from.
-s03_a_side_and_a_ship_9	The second is where she is.
-s03_a_side_and_a_ship_10	That matters, because a ship that strikes and isn't boarded runs for home,
-s03_a_side_and_a_ship_11	and when she gets there she's taken off the map.
-s03_a_side_and_a_ship_12	I tried it with one place.
-s03_a_side_and_a_ship_13	She struck, and eight seconds later she was gone.
+s03_a_side_and_a_ship_7	Her hull is a pirate raider, with no fighter bay.
+s03_a_side_and_a_ship_8	A carrier brings its fighters,
+s03_a_side_and_a_ship_9	and they'd shoot at your ship all game.
+s03_a_side_and_a_ship_10	Look at the numbers.
+s03_a_side_and_a_ship_11	The first set is where she comes from.
+s03_a_side_and_a_ship_12	The second is where she is.
+s03_a_side_and_a_ship_13	That matters, because a ship that strikes and isn't boarded runs for home,
+s03_a_side_and_a_ship_14	and when she gets there she's taken off the map.
+s03_a_side_and_a_ship_15	I tried it with one place.
+s03_a_side_and_a_ship_16	She struck, and eight seconds later she was gone.
 s04_three_quests_and_a_card_0	Here's the chase in the Quest Log aboard,
-s04_three_quests_and_a_card_1	with the brigantine drawn at the top.
+s04_three_quests_and_a_card_1	with her picture at the top.
 s04_three_quests_and_a_card_2	In the file there are three quests.
 s04_three_quests_and_a_card_3	Run her down, which waits for the ship to close on her.
 s04_three_quests_and_a_card_4	Come back to the relay, which is hidden until then.
 s04_three_quests_and_a_card_5	And take her, which waits for a signal the game sends.
 s04_three_quests_and_a_card_6	Two of them get a page for the bridge.
-s04_three_quests_and_a_card_7	The brigantine drawn at the top of the chase,
+s04_three_quests_and_a_card_7	Her picture at the top of the chase,
 s04_three_quests_and_a_card_8	and two icon bullets on the prize.
 s04_three_quests_and_a_card_9	The card is one you know.
 s04_three_quests_and_a_card_10	It's the tug card from the first class,
@@ -64,28 +66,41 @@ s05_kinds_of_room_9	You don't need to know that.
 s05_kinds_of_room_10	You write the kind, and it works on any hull.
 s05_kinds_of_room_11	And when a hull has no such room,
 s05_kinds_of_room_12	your thing stands in the hallway, and the game says so once.
-s06_her_own_crew_and_the_walk_0	Here's her deck again, and those figures are her own crew.
-s06_her_own_crew_and_the_walk_1	The game puts them aboard,
-s06_her_own_crew_and_the_walk_2	calm, and standing still.
+s06_her_own_crew_and_the_walk_0	Here's her deck again.
+s06_her_own_crew_and_the_walk_1	Nobody stands about on it
+s06_her_own_crew_and_the_walk_2	but the people you wrote.
 s06_her_own_crew_and_the_walk_3	A calm person blocks the cell they stand on,
-s06_her_own_crew_and_the_walk_4	so the game walks the deck before it puts anyone down.
-s06_her_own_crew_and_the_walk_5	None of them stands in a doorway,
-s06_her_own_crew_and_the_walk_6	or anywhere that would shut in something of yours.
-s06_her_own_crew_and_the_walk_7	Where they stand can change when you add a record.
-s06_her_own_crew_and_the_walk_8	What they can never do is block the way.
-s06_her_own_crew_and_the_walk_9	So keep one rule: after every change to what's aboard,
-s06_her_own_crew_and_the_walk_10	go aboard and walk to each thing.
+s06_her_own_crew_and_the_walk_4	and so does a strongbox.
+s06_her_own_crew_and_the_walk_5	So the game walks the deck before it puts anything down.
+s06_her_own_crew_and_the_walk_6	Nothing of yours stands in a doorway,
+s06_her_own_crew_and_the_walk_7	or anywhere that would shut something in.
+s06_her_own_crew_and_the_walk_8	Where a thing stands can change when you add a record.
+s06_her_own_crew_and_the_walk_9	What it can never do is block the way.
+s06_her_own_crew_and_the_walk_10	So keep one rule: after every change to what's aboard,
+s06_her_own_crew_and_the_walk_11	go aboard and walk to each thing.
 s07_three_endings_0	Now play it through.
 s07_three_endings_1	Helm closes to fifteen hundred, and she strikes.
 s07_three_endings_2	Comms selects her, and sends a party.
-s07_three_endings_3	Aboard, the strongbox has three answers that matter.
-s07_three_endings_4	Take her, and she joins your side,
-s07_three_endings_5	and the quest pays.
-s07_three_endings_6	Scuttle her, and she's gone.
-s07_three_endings_7	Leave her, and she runs for home.
-s07_three_endings_8	Every one of them brings the party home first.
-s07_three_endings_9	And after every one,
-s07_three_endings_10	the relay opens again when the ship comes back.
+s07_three_endings_3	Aboard, the gunner waits in the boat bay.
+s07_three_endings_4	She sees anyone within four cells,
+s07_three_endings_5	and one hit can put them down.
+s07_three_endings_6	So one of you goes aft,
+s07_three_endings_7	a cell at a time.
+s07_three_endings_8	The moment she's in sight, five cells off,
+s07_three_endings_9	fire, full, arm, and click her.
+s07_three_endings_10	Shots miss a lot,
+s07_three_endings_11	and no app tells you a shot hit or missed.
+s07_three_endings_12	If she downs somebody,
+s07_three_endings_13	the boarding kit gets them up again.
+s07_three_endings_14	Pack, use medkit.
+s07_three_endings_15	The strongbox has three answers that matter.
+s07_three_endings_16	Take her, and she joins your side,
+s07_three_endings_17	and the quest pays.
+s07_three_endings_18	Scuttle her, and she's gone.
+s07_three_endings_19	Leave her, and she runs for home.
+s07_three_endings_20	Every one of them brings the party home first.
+s07_three_endings_21	And after every one,
+s07_three_endings_22	the relay opens again when the ship comes back.
 s08_what_to_warn_your_crew_about_0	Lint says clean on your finished mission.
 s08_what_to_warn_your_crew_about_1	What's left to know isn't in your file.
 s08_what_to_warn_your_crew_about_2	A shot never removes a prop.

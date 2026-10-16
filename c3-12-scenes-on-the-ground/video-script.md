@@ -178,13 +178,17 @@ your mission, | because the ship can't beam into your cistern anyway. ||"
 
 ### 8. Play it, and your turn
 
-**Screen:** The game with two consoles, Engineering and Weapons: the route on the page, cut
-down to its turns. The win. Then again, with the crowbar. Then the exercise.
+**Screen:** The route on the page, its first step marked (the sentry shot). Then the game
+with two consoles, Engineering and Weapons, cut down to its turns; the route's crawler step
+marked where the crawler is shot. The win. Then again, with the crowbar. Then the exercise.
 
-**Say:** "Play the long way round. || The key, then Marrow, and then the gully. || Pim
-asks for her tablet. || The crawler, the tablet, and back to Pim for a fuse. || Three
-fuses in the pump, | then the gate, and the spare cell. || Pim opens the relay house from
-her chair, | and the beacon lights. ||| Then play it again, and lose it with the crowbar.
+**Say:** "Play the long way round. || First the weapons officer puts the sentry down, |
+with one full shot. || Shots miss a lot, | and no app tells you a shot hit or missed. |||
+The key, then Marrow, and then the gully. || Pim asks for her tablet. || The engineer
+puts the crawler down, | with a full shot from the foot of the stairs. || Then the
+tablet, and back to Pim for a fuse. || Three fuses in the pump, | then the gate, and the
+spare cell. || Pim opens the relay house from across the yard, | and the beacon lights.
+||| Then play it again, and lose it with the crowbar.
 ||| For the exercise, give Marrow a use for the medical kit, | and write a second losing
 answer that plays fair. ||| That's the last new word for a while. | Next time, the screen
 your crew has been looking at. ||"

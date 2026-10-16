@@ -2,14 +2,14 @@
 
 ## What you will have at the end
 
-A pirate brigantine, the Black Gull, standing off Kesh Relay. The crew runs her down and
+A pirate raider, the Black Gull, standing off Kesh Relay. The crew runs her down and
 she strikes her colors. Comms sends a party across, and they walk her deck: a prisoner
 in the brig, a gunner in the boat bay who did not agree to surrender, and the captain's
 strongbox, which ends it one of three ways.
 
 **Nobody draws that deck.** The game builds it from the ship's own plan, the one
-Engineering looks at, and puts her crew aboard. You write what is on it, and you say
-where each thing goes by the *kind* of room: `Mark: brig`.
+Engineering looks at. You write what is on it, and you say where each thing goes by the
+*kind* of room: `Mark: brig`.
 
 *[Screenshot to add: the handheld aboard the Black Gull, with the deck beside it.]*
 
@@ -18,11 +18,9 @@ aboard and four rooms. In `story.mast` you add two lines to the map, one line to
 card you have, and one new card of four lines.
 
 Read this before you start. **Most of this lecture was measured in a stand-in for the
-game**, with stand-in consoles driven by a script: 13 plays, and 33 files with one line changed. The game's
-own test of this feature has been run once in the real game, by script, with one Helm
-console connected: the button was offered, the deck was built from the ship's plan, and
-a prize was taken. **Nobody has looked at the screen.** What the deck looks like is
-unseen, and this page does not describe it.
+game**, with stand-in consoles driven by a script: 13 plays, and 33 files with one line
+changed. Then it was played in the real game, with Helm and Comms going across. What
+the game showed is on this page as it showed it.
 
 This feature is also new. Step 9 ends with what to know before your crew finds it.
 
@@ -63,7 +61,7 @@ when all four of these are true. Each was tried.
 | It needs | In `MyAway` | Tried by taking it away |
 |---|---|---|
 | The ship has struck | Step 5 makes her strike | Before she strikes Comms offers `Hail`, `Taunt` and `Surrender now` |
-| Her hull has a plan | A `pirate_brigantine` has one, with rooms | See the table below |
+| Her hull has a plan | A `pirate_strongbow` has one, with rooms | See the table below |
 | The `station` art is installed | It is. It is the last line of `story.json`, from the starter | With that line gone, Comms would not open on her at all |
 | No other party is out | **Not while anybody is down at the relay.** The relay party is open all game | Comms answers `We cannot take a party aboard while your people are elsewhere.` |
 
@@ -129,7 +127,7 @@ Open `story.mast`. Find the line that puts Kesh Relay on the map. It begins
 twice. Type these two lines, lined up with the line above them:
 
 ```
-    gull = npc_spawn(20000, 0, 20000, "Black Gull", "pirate, ship, gull", "pirate_brigantine", "behav_npcship")
+    gull = npc_spawn(20000, 0, 20000, "Black Gull", "pirate, ship, gull", "pirate_strongbow", "behav_npcship")
     set_pos(gull, 6000, 0, 4000)
 ```
 
@@ -142,8 +140,8 @@ You read a line like the first one in Class 1.
 | `pirate` | Her side: the key from Step 2. It stays first |
 | `ship` | A role. Keep it: Comms looks for it |
 | `gull` | Your role. A quest and a card will look for it |
-| `"pirate_brigantine"` | Her hull, and so her deck |
-| `6000, 0, 4000` on the second line | Where she is when the game starts: about 7,100 from your ship |
+| `"pirate_strongbow"` | Her hull, and so her deck. A pirate raider, with no fighter bay |
+| `6000, 0, 4000` on the second line | Where she is when the game starts: about 5,000 from your ship |
 
 Why two places? A ship that has struck and is not boarded turns for the place she came
 from, at speed, and when she gets there she is taken off the map. That is the game's
@@ -152,6 +150,14 @@ she is.
 
 Tried for this page with one place, `6000, 0, 4000` on the first line and no second
 line: she struck, and eight seconds later she was gone, with no word to anybody.
+
+**Why a hull with no fighter bay?** The Black Gull was first a `pirate_brigantine`, and
+in the game that was a mistake. A brigantine is a light carrier. Legendary Missions
+launches a carrier's fighters at your ship, so six fighters named `Black Gull` and a
+number came out at the start and shot at the ship all game: before she struck, after
+she struck, and after she was taken. A `pirate_strongbow` is a raider about the same
+size, with no bay. Before you give a ship a hull, look it up in the ship data: a hull
+whose roles say `carrier` brings fighters.
 
 Save, and run lint: `clean`.
 
@@ -169,9 +175,9 @@ Objective: Close to within 1500 of the Black Gull
 Done when: reach gull 1500
 Then: reveal back
 ---
-![](ship://pirate_brigantine) The Black Gull, out past the relay.
+![](ship://pirate_strongbow) The Black Gull, out past the relay.
 
-A pirate brigantine is standing off the dark relay, waiting for a convoy that cannot see her.
+A pirate raider is standing off the dark relay, waiting for a convoy that cannot see her.
 
 Run her down. A pirate crew caught by a navy ship will often strike rather than fight.
 
@@ -193,7 +199,7 @@ Objective: Board the Black Gull and take her as a prize
 Done when: signal boarding_deck_take
 Reward: 200 credits
 ---
-A brigantine is worth more to the Kesh run with a navy crew aboard than as wreckage.
+A raider is worth more to the Kesh run with a navy crew aboard than as wreckage.
 
 ## Once she strikes
 
@@ -203,7 +209,7 @@ A brigantine is worth more to the Kesh run with a navy crew aboard than as wreck
 
 Every line is one you have written before. What matters is how they hang together.
 
-The descriptions are pages for the bridge, as in Lecture 13. `pirate_brigantine` is the
+The descriptions are pages for the bridge, as in Lecture 13. `pirate_strongbow` is the
 hull `story.mast` gives the Black Gull, so the lead line draws the ship they are chasing.
 `flag` and `chest` are two more icon names.
 
@@ -391,7 +397,7 @@ with one FULL shot, after a chase`.
 
 ### A kind she does not have
 
-A brigantine has no laboratory. Tried: a thing with `Mark: lab` was stood in the
+She has no laboratory. Tried: a thing with `Mark: lab` was stood in the
 hallway, and the game said so once, in its `debug.log` file. A freighter has no rooms
 at all. Tried on one, the line read:
 
@@ -399,21 +405,20 @@ at all. Tried on one, the line read:
 boarding_deck: the deck of 'cargo_ship' has no free 'brig' for 'Captain's strongbox', 'Mate Oduya', so the hallway it is. On `Area: deck` a `Mark:` is a kind of room; this hull has: hallway, impulse, maneuver, sensor, shield, warp.
 ```
 
-That is not an error. It is how one mission can board a brigantine and a freighter.
+That is not an error. It is how one mission can board a raider and a freighter.
 `Mark: bridge` gets the same treatment on every hull there is.
 
-### The ship's own crew
+### Who else is aboard
 
-You did not write them. Aboard the Black Gull the game put five, all calm, each named
-`Pirate crew` and drawn as her race. Aboard the freighter it put twelve. Aboard a ship
-that has struck they are all calm. They stand where they are put, in the cabins, the
-holds and the sickbay, and they do not move.
+Nobody you did not write. In the game, the only people on her deck were Mate Oduya, in
+her brig, and Gunner Brakk, in the boat bay. None of her own crew stood about.
 
-A calm person blocks the cell they stand on, so the game is careful where it puts
-them. They come aboard after your records, and none of them stands in a doorway, on the
-way in, or anywhere that would shut a room or cut off something of yours. The game checks
-that by walking the deck, each time. Adding or moving one of your records can change which
-cell a crew member stands on. It cannot make anything unreachable.
+Your records still have to fit round each other and round her furniture. A calm person
+and a prop with `Blocks: yes` each block the cell they stand on, so the game is careful
+where it puts them: never in a doorway, never on the way in, never where it would shut a
+room or cut off something of yours. It checks that by walking the deck, each time.
+Adding or moving one of your records can change which cell another one gets. It cannot
+make anything unreachable.
 
 One rule still holds: **after every change to what is aboard, go aboard and walk to each
 thing.** Lint cannot walk a deck.
@@ -523,12 +528,16 @@ sbs run server,helm,comms,weapons,science -m MyAway map=0
 
 1. Open the quest list. **Run Down the Black Gull** and **Take the Black Gull** are
    there from the first second, beside **Relight Kesh Relay** and its clock.
-2. On Comms, select the Black Gull. The buttons are `Hail`, `Taunt` and `Surrender now`.
-3. Helm: fly to within 1500 of her. She is about 7,100 away.
-4. She strikes. **Come Back to Kesh Relay** appears in the quest list. Anybody who was
-   down at the relay is back at their console.
-5. On Comms, select her again. The buttons are now `Take as prize` and `Send a boarding
-   party`. Press **Send a boarding party**. She answers:
+2. On Comms, click the Black Gull on the map. Her name is red: she is an enemy. The
+   buttons are `Hail`, `Taunt` and `Surrender now`.
+3. Helm: fly to within 1500 of her. She is about 5,000 away: under half a minute at full
+   impulse.
+4. She strikes. The strip reads `Quest complete: Run Down the Black Gull`, her marker
+   turns yellow, and **Come Back to Kesh Relay** appears in the quest list. Anybody who
+   was down at the relay is back at their console.
+5. On Comms, the buttons are now `Take as prize` and `Send a boarding party`. Press
+   **Send a boarding party**. Her answer comes in at the top of the screen, under her
+   name. Click that, and it reads:
 
    ```
    We are hove to. Send your party across: Boarding Party, on the ePADD.
@@ -536,29 +545,36 @@ sbs run server,helm,comms,weapons,science -m MyAway map=0
 
 6. On each console that is going, press the handheld icon, then **Boarding Party**. It
    says `Going down to Black Gull`. Press **BEAM DOWN**.
-7. You are in her hallway. The boarding kit is one step away. Take it.
-8. As Dr Hale, click Mate Oduya, in a brig. Ask her both questions.
-9. As Lt Reyes, find the gunner in the boat bay. Open **Fire**, choose FULL, press
-   **Arm** and click her. She drops a power cell. Pick it up.
-10. Click the strongbox, in the other brig. Take **Take her as a prize**.
-11. Everybody is back at their console, and the ship has 200 credits. Helm: fly back to
-    within 3000 of Kesh Relay. The Boarding Party tile offers **Kesh Relay** again.
-12. Beam down. Lt Reyes still has the cell. Light the beacon with it.
+7. You are in her hallway, forward of the boat bay. The boarding kit is one step away.
+   Take it.
+8. As Dr Hale, click Mate Oduya, in a brig. Ask her both questions. The second tells you
+   where the gunner is.
+9. **Keep everybody out of the aft hallway.** Gunner Brakk stands in the boat bay, aft,
+   and she notices anybody within four cells that she can see. In the game one hit from
+   her put a crew member down. Send one person who means it.
+10. As Lt Reyes, walk aft from where you arrived, down the hallway on the right of the
+    boat bay, one cell at a time. The moment you can see her through the bay's door,
+    stop: you are five cells from her. Open **Fire**, choose FULL, press **Arm** and
+    click her. One FULL shot puts her down for good, and she drops a power cell. Walk
+    over and pick it up.
 
-A script walked exactly that for this page, on three stand-in consoles. Aboard her it
-took 22 seconds and five presses. The beacon was lit with the gunner's cell, and the
-last screen read `The beacon is lit. Every convoy on the Kesh run has its way home
+    She stands still until she notices somebody, so a shot at her then lands. If she is
+    walking, expect to miss: a shot goes to the cell you clicked, and she may have left
+    it. Nothing on the handheld tells you that a shot hit or missed. Watch the map.
+11. If she downs somebody, that is what the kit is for. Whoever took it walks beside
+    them, opens **Pack**, and presses `Use medkit on` and their name. They are back on
+    their feet.
+12. Click the strongbox, in the other brig. Take **Take her as a prize**.
+13. Everybody is back at their console, and the ship has 200 credits. Helm: fly back to
+    within 3000 of Kesh Relay. The Boarding Party tile offers **Kesh Relay** again.
+14. Beam down. Lt Reyes still has the cell. Light the beacon with it.
+
+A script walked the same in the stand-in. The beacon was lit with the gunner's cell, and
+the last screen read `The beacon is lit. Every convoy on the Kesh run has its way home
 again.`
 
-What the handheld showed aboard, captured the way Lecture 13's were:
-
-```
-Dr Ines Hale | medical, science | entry
-Lt Sam Reyes | security | room:boat-bay
-```
-
-The third word is the game's own name for the room, colon and all. You did not choose
-it and you cannot change it.
+The handheld's bar names the room each person is in: `Brig`, `Boat Bay`, `Hallway`.
+The names come from her plan. You did not choose them, and you cannot change them.
 
 Then play the other two endings. And then do the walk from Step 6: go aboard and walk
 to every thing you wrote.
@@ -587,9 +603,10 @@ story was not there to be finished, because a party sent by the Comms button is 
 no side stories. A line `beam: no` in the yard's map did not close it: once the gully
 was known, the deck offered `To Dry Gully`. Know that it is there.
 
-**A ship that has struck may still launch fighters.** The team that built this saw one
-do it with a party aboard. In this mission, in eighty seconds, the Black Gull launched
-none. A carrier may. If you board one, expect it.
+**A carrier brings fighters, and they do not strike with her.** Step 3 said why the
+Black Gull is not a brigantine. In the game the brigantine's six fighters went on
+shooting at the ship after she struck, and after she was taken as a prize. If your story
+boards a carrier, expect them, and give Weapons something to do.
 
 ### What your records remember
 
@@ -619,6 +636,7 @@ ship was taken.
 | Comms will not open on her after she strikes, and lint is as it should be | The `station` art is not installed | `sbs fetch "MyAway" --update-libs`. Check the last line of `"shared_media"` in `story.json` |
 | A thing is in the hallway | Her hull has no room of that kind | Nothing, if you meant to board other hulls. `debug.log` has the line |
 | Somebody is down aboard her and stays down | The others are still up. Lecture 14's rule | The boarding kit, from the Pack app |
+| `Hit by Gunner Brakk - you are DOWN.` on Look, on the way aft | She saw them within four cells | Step 9: the kit gets them up. Then shoot her from five cells |
 | Lint says `mast-compile` and nothing runs | A line of the card is not indented | Four spaces, and eight on the `side_surrender` line |
 
 ## Exercise
@@ -626,10 +644,9 @@ ship was taken.
 1. Play all three endings. After each, write down what Comms is offered on the Black
    Gull.
 2. Add a thing with `Mark: lab`. Play it, and find where it stands.
-3. Move the strongbox to `Mark: quarters`. Go aboard and walk to it. Where did her crew
-   stand? Put it back.
-4. Change her hull to `"cargo_ship"` and go aboard. Where is everything? How many crew
-   has she? Change it back.
+3. Move the strongbox to `Mark: quarters`. Go aboard and walk to it. Can you still walk
+   to everything else? Put it back.
+4. Change her hull to `"cargo_ship"` and go aboard. Where is everything? Change it back.
 5. The gunner's cell is a short road to the beacon. Do Lecture 14's three lists again
    with the Black Gull in them. Which party can win now that could not before?
 6. Break it and read lint: `Mark: bgri`; the comma out of the scuttle answer; the

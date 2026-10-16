@@ -54,11 +54,19 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 
 Not seen by anyone, or not measured. If one is not as described, stop and fix the page:
 
-1. The clock on a real handheld, and how it reads below one minute.
+1. How the clock reads below one minute. (Above it, seen in the engine 2026-10-16: the
+   Tasks row and the quest's `Time left` row, already a few minutes under thirty by
+   beam-down, because the clock runs from map start. Never quote a time on camera.)
 2. A real crew's time for any beat. The stopwatch in scene 8 is the first.
-3. Whether seven seconds is enough for a real hand to arm and fire.
-4. The hourglass line in Relight Kesh Relay's description, between the first
-   paragraph and the table.
+3. Whether seven seconds is enough for a real hand to arm and fire, and whether a real
+   hand lands a stun on the walking sentry. Shots at a walking hostile miss often, with
+   no message either way.
+
+Seen in the engine (2026-10-16), not by a crew: the hourglass line sits under the quest's
+first paragraph, above the table. The yard terminal is inside the sentry's notice: a
+doctor working it with the sentry live was shot down. With a STUN on the sentry first she
+finished in time, and once calm the sentry stays standing where it was stunned; the cell just
+appears in her pack.
 
 ## Scenes
 
@@ -123,23 +131,29 @@ it. | It used to say the beacon was slag. || Now it's read when the clock runs o
 so it has to be true every way. ||| Then I tell the bridge. | One line in the
 description, | with an hourglass at the start. || In the Quest Log aboard, | it sits under
 the quest's first paragraph. ||| And the clock starts when the quest starts. | This
-one starts with the game. ||"
+one starts with the game. || So by the time anybody lands, | it already reads a few
+minutes under thirty. ||"
 
 ### 6. Can every party get there?
 
 **Screen:** Three lists on the sheet of paper: every area, every item, every ending,
-with a word beside each: anyone, a job, a skill, luck. Then the game: Dr Hale's handheld at the
-terminal after the update, and her Pack with a power cell. Then the terminal's answer, and
-`give power_cell` typed onto it.
+with a word beside each: anyone, a job, a skill, luck. Then the yard in the Tile Map Editor:
+the terminal, and the sentry's square just south of it. Then the game: Dr Hale's handheld at the
+terminal after the update, the sentry standing where the stun caught it, and her Pack with a
+power cell. Then the terminal's answer, and `give power_cell` typed onto it.
 
 **Say:** "Lint doesn't walk your map. | You do, on paper, in three lists. ||| Every area,
 every item, every ending. | And beside each one, who can do it. ||| Now find a party the
-lists leave stuck. || A scientist and a guard, and no engineer. ||| She pulls the door
-code, and calms the sentry. | That's the clever answer. || But the sentry keeps its cell,
+lists leave stuck. || A scientist and a guard, and no engineer. ||| First she has to reach
+the terminal alive. || It stands inside the sentry's notice. ||| So the guard stuns the
+sentry first, | and she works the terminal while it stands. || Ten seconds isn't long. | If
+it wakes, stun it again. || Shots miss a lot, | and no app tells you a shot hit or missed.
+||| She pulls the door code, and calms the sentry. | That's the clever answer. || But the sentry keeps its cell,
 | and nobody here can run the pump. ||| The clever answer left them with nothing. || So
 fix it where it broke. | The sentry hands its cell over. ||| Here's the terminal on the
-doctor's handheld after the update, | and there's the power cell in her pack. || In the
-file it's one outcome, after a comma. ||"
+doctor's handheld after the update. || The words say the sentry walks over. | On the map
+it just stands where the stun caught it. || And there's the power cell in her pack. || In
+the file it's one outcome, after a comma. ||"
 
 ### 7. Three columns
 

@@ -104,15 +104,21 @@ s07_the_endings_and_one_more_wor_12	tells the ship an area exists.
 s07_the_endings_and_one_more_wor_13	It isn't in your mission,
 s07_the_endings_and_one_more_wor_14	because the ship can't beam into your cistern anyway.
 s08_play_it_and_your_turn_0	Play the long way round.
-s08_play_it_and_your_turn_1	The key, then Marrow, and then the gully.
-s08_play_it_and_your_turn_2	Pim asks for her tablet.
-s08_play_it_and_your_turn_3	The crawler, the tablet, and back to Pim for a fuse.
-s08_play_it_and_your_turn_4	Three fuses in the pump,
-s08_play_it_and_your_turn_5	then the gate, and the spare cell.
-s08_play_it_and_your_turn_6	Pim opens the relay house from her chair,
-s08_play_it_and_your_turn_7	and the beacon lights.
-s08_play_it_and_your_turn_8	Then play it again, and lose it with the crowbar.
-s08_play_it_and_your_turn_9	For the exercise, give Marrow a use for the medical kit,
-s08_play_it_and_your_turn_10	and write a second losing answer that plays fair.
-s08_play_it_and_your_turn_11	That's the last new word for a while.
-s08_play_it_and_your_turn_12	Next time, the screen your crew has been looking at.
+s08_play_it_and_your_turn_1	First the weapons officer puts the sentry down,
+s08_play_it_and_your_turn_2	with one full shot.
+s08_play_it_and_your_turn_3	Shots miss a lot,
+s08_play_it_and_your_turn_4	and no app tells you a shot hit or missed.
+s08_play_it_and_your_turn_5	The key, then Marrow, and then the gully.
+s08_play_it_and_your_turn_6	Pim asks for her tablet.
+s08_play_it_and_your_turn_7	The engineer puts the crawler down,
+s08_play_it_and_your_turn_8	with a full shot from the foot of the stairs.
+s08_play_it_and_your_turn_9	Then the tablet, and back to Pim for a fuse.
+s08_play_it_and_your_turn_10	Three fuses in the pump,
+s08_play_it_and_your_turn_11	then the gate, and the spare cell.
+s08_play_it_and_your_turn_12	Pim opens the relay house from across the yard,
+s08_play_it_and_your_turn_13	and the beacon lights.
+s08_play_it_and_your_turn_14	Then play it again, and lose it with the crowbar.
+s08_play_it_and_your_turn_15	For the exercise, give Marrow a use for the medical kit,
+s08_play_it_and_your_turn_16	and write a second losing answer that plays fair.
+s08_play_it_and_your_turn_17	That's the last new word for a while.
+s08_play_it_and_your_turn_18	Next time, the screen your crew has been looking at.

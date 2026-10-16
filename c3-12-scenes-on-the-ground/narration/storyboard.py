@@ -14,47 +14,60 @@ writes subfolders): the example\\ folders laid over the starter bring the latest
 ground file, from Lectures 9 to 11. The close views of the text hide the Side Bar, as every
 close view of this class does.
 
-GAME STILLS. Not taken yet; no marks until the screenshots exist. State "final", started with
+GAME STILLS. Taken 2026-10-16 (all 16 kept), library 7ea2c918, marks set from them. State
+"final" as the page has it, started with
 `python game.py c3-12-scenes-on-the-ground start --consoles server,engineering,weapons`
 (the probe is made from the `away` template, every file of the state laid over it, ground\\
 included; GAME_RESULTS_SAVE is false). THREE windows: the server, Engineering (Chief Okoro) and
-Weapons (Lt Reyes). The ship starts beside the relay, so the party is offered at once: on
-each console the handheld icon (top left), the Boarding Party tile, BEAM DOWN. The console
-becomes the xESS: the map, and beside it the device (bar: name, job, the mark you stand
-on; tiles Crew, Act, Look, Pack, Tasks, Beam, Scan, Fire). A click on a prop or a person
-walks there and uses it; Look lists the same things as buttons, and Go to <area>.
+Weapons (Lt Sam Reyes, `security` on his bar). The ship starts beside the relay, so the party
+is offered at once: on each console the handheld icon (top left), the Boarding Party tile, BEAM
+DOWN. The console becomes the xESS: the map, and beside it the device (tiles Crew, Act, Look,
+Pack, Tasks, Beam, Scan, Fire). A click on a prop or a person walks there and uses it; Look
+lists the same things as buttons, and Go to <area>. The bar's third slot reads the AREA title
+(`Kesh Relay`, `The Dry Gully`) in these stills; no caption here talks about that slot.
+What they showed: the "brass key" is the Pump house key, a small blue key by the tent's foot
+(no peg); Act logs `Chief Okoro picked up pump key from the Pump house key.`. Faces are random
+per game, and `pim` (gully) and `pim_yard` (by the tent) have two different faces: no caption
+claims a face. Roll lines wrap to three lines (cosmetic). The squashed xESS home after Back
+(library defect, R:\\cosmos\\courses\\c3_12\\game\\defect_home_squash.png) is in no beat.
 
-GAME ONE, the long road (about ten minutes). Press order:
-  1. Weapons (Reyes): Fire, FULL, click the sentry (it walks the square right of the yard).
-     It goes down and drops a power cell; leave it.
+GAME ONE, the long road (about 28 minutes). Press order, as played:
+  1. Weapons (Reyes): Fire, FULL, Arm, click the sentry (it walks the 18..25 loop east of the
+     yard). ONE FULL shot put it down, clicking the cell it had just ENTERED on its west leg
+     (18, 9 / 18, 10) from beside the tent; a shot at where it is now usually misses, and no
+     app says hit or miss. It drops a power cell; leave it.
   2. Engineering (Okoro): the terminal beside the relay door, Force the service port (a
-     roll; on Dead Screen walk away and use it again), Copy it down. Use the terminal once
-     more: game_l12_terminal_update. Step back.
-  3. Okoro: pick up the brass key on the tent peg (right of the tent). Reyes: talk to Old
-     Marrow (by the tent): game_l12_marrow_key. Leave him to his kettle.
-  4. Okoro: Look, Go to The Dry Gully. Pick up the Toolbox (two fuses). Use the Brittle
-     notice beside the pump house door; Let the pieces fall.
-  5. Okoro: talk to Pim (lower left, against a rock): game_l12_pim_notice. Ask if she has
-     anything for a fight; on Under the Rock, Okoro's map shows the kit by the rock:
-     game_l12_stash. Ask her something else, Ask what stopped her: game_l12_promise.
-     Promise to bring it back.
-  6. Reyes: Crew, Beam up on the ship's row. On Weapons, the handheld icon, Quests, Pim's
-     Tablet: game_l12_log_tablet. (Reyes can stay aboard from here.)
-  7. Okoro: the pump house door (the key opens it), the pump panel inside:
-     game_l12_panel_two. Leave it alone.
-  8. Okoro: the stairs in the pump house (Go to The Cistern). At once Fire, FULL, click the
-     crawler on the walkway; pick up what it drops (the tablet). Go to The Dry Gully.
+     roll; on Dead Screen, Look, Use Yard terminal again), Copy it down. The terminal re-opens
+     at once: game_l12_terminal_update. Step back.
+  3. Okoro: pick up the Pump house key (14, 4, the small blue key by the foot of the tent).
+     Reyes: talk to Old Marrow (by the tent): game_l12_marrow_key. Leave him to his kettle.
+  4. Okoro: to The Dry Gully by the trail sign, then the exit. NOT Look's first row: with the
+     relay door and terminal in reach Look lists Use Relay door, Use Yard terminal first (a
+     press there rolls at the door). Pick up the Toolbox (two fuses). Use the Brittle notice
+     beside the pump house door; Let the pieces fall.
+  5. Okoro: talk to Pim (lower left): game_l12_pim_notice. Ask if she has anything for a
+     fight; on Under the Rock, Okoro's map shows the kit by the rock (4, 9): game_l12_stash.
+     Ask her something else, Ask what stopped her: game_l12_promise. Promise to bring it back.
+  6. Reyes: Crew, Beam up. On Weapons, the handheld icon, Quests (0.15, 0.55), Pim's Tablet
+     (0.12, 0.24): game_l12_log_tablet. Reyes stays aboard from here.
+  7. Okoro: the pump house door (the key opens it), the pump panel inside (a click at 0.642,
+     0.5 walks him in): game_l12_panel_two. Leave it alone.
+  8. Okoro: the stairs in the pump house (Go to The Cistern). From the foot, Fire, FULL, Arm,
+     click the crawler on the walkway as it enters 12, 1 / 13, 1: one shot. Pick up the drop
+     (`Chief Okoro picked up tablet.`). Go to The Dry Gully.
   9. Okoro: talk to Pim: game_l12_pim_give. Give her the tablet: game_l12_thanks. Watch
-     her go.
+     her go (she leaves the gully at once).
  10. Okoro: the pump panel: game_l12_panel_three. Fit three fuses and throw the lever;
      Step back. Go to The Cistern, through the open sluice, pick up the spare cell.
- 11. Okoro: Go to Kesh Relay. Okoro's map of the yard, Pim by the tent: game_l12_pim_yard.
-     Talk to her: game_l12_pim_home. Ask her to open the relay house; Thank her.
- 12. Okoro: into the relay house, use the beacon: game_l12_beacon. Fit the power cell,
-     Call it in. The server's last screen: game_l12_won.
-GAME TWO, the loss (about three minutes): Okoro only. The brass key, Go to The Dry Gully,
-the pump house door, the pump panel, Jam a crowbar across all three clips, Run. The
-server's last screen: game_l12_lost.
+ 11. Okoro: Go to Kesh Relay. Look, on Okoro's map of the yard, Pim by the tent (11, 4, beside
+     Marrow at 12, 5): game_l12_pim_yard. Talk to her: game_l12_pim_home. Ask her to open the
+     relay house; Thank her. (Look's `! The beacon` row walks him through the door to it.)
+ 12. Okoro: the beacon: game_l12_beacon. Fit the power cell, Call it in. The server's last
+     screen: game_l12_won.
+GAME TWO, the loss (about three minutes): server, engineering. Okoro only: the key, the path
+behind the house to the gully, the pump house door, the pump panel (no fuses: only Jam a
+crowbar and Leave it alone), Jam a crowbar across all three clips, Run. The server's last
+screen: game_l12_lost.
 """
 import os as _os
 
@@ -185,16 +198,54 @@ STILLS = {
     "card_title": ("card", "title", {}),
     "card_conditions": ("card", "table", {"heading": "The words, all of them", "kicker": "Conditions: who is offered it"}),
     "card_outcomes": ("card", "table", {"heading": "The words, all of them", "nth": 2, "kicker": "Outcomes: what it does"}),
-    "card_route": ("card", "list", {"heading": "Step 11 - Play it", "kicker": "The long way round"}),
+    # Step 11's eleven steps, cut down to the script's turns (the page's own list is too long for one card)
+    "card_route": ("card", "points", {"kicker": "The long way round (Step 11)", "items": [
+        "Reyes: **Fire**, **FULL**, **Arm**, click the sentry. One shot drops it. Expect to miss",
+        "Okoro picks up the pump house key. Reyes shows Marrow the key",
+        "The gully: the toolbox, the notice, Pim's promise. Reyes beams up",
+        "The pump panel with two fuses: neither the wire nor the crowbar",
+        "From the foot of the stairs, **FULL** on the crawler. The tablet",
+        "**Give her the tablet**: a fuse. She goes home",
+        "**Fit three fuses and throw the lever**. The spare cell",
+        "Pim, by the tent, opens the relay house. **Fit the power cell**"]}),
     "card_exercise": ("card", "list", {"heading": "Exercise", "kicker": "Your turn"}),
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 13", "sub": "What the crew sees"}),
 }
 
+# Marks on the game stills (fractions of the 1280x960 console window; the device column is x 0.67..0.98)
+_GV_GIVE = ("rect", 0.67, 0.765, 0.845, 0.82)        # game_l12_pim_give: Give her the tablet
+_GV_TWO = ("rect", 0.67, 0.765, 0.935, 0.875)        # ... Give her the tablet, Tell her the tablet is yours now
+_GV_GOT = ("rect", 0.67, 0.3, 0.945, 0.365)          # ... Chief Okoro picked up tablet.
+_P2_LINE = ("rect", 0.67, 0.625, 0.97, 0.72)         # game_l12_panel_two: Three fuse clips, all empty...
+_P2_OFFER = ("rect", 0.67, 0.74, 0.965, 0.875)       # ... the wire and the crowbar
+_P2_BAR = ("rect", 0.67, 0.825, 0.965, 0.875)        # ... Jam a crowbar across all three clips
+_P3_LINE = ("rect", 0.67, 0.455, 0.97, 0.51)         # game_l12_panel_three: ...and three fuses between you
+_P3_FIT = ("rect", 0.67, 0.565, 0.96, 0.615)         # ... Fit three fuses and throw the lever, first
+_LOST = ("rect", 0.015, 0.215, 0.265, 0.315)         # game_l12_lost: the starter's Lose sentence
+_WON = ("rect", 0.015, 0.215, 0.25, 0.315)           # game_l12_won: the starter's Win sentence
+_LT_ROW = ("rect", 0.004, 0.217, 0.38, 0.285)        # game_l12_log_tablet: Pim's Tablet, Active
+_LT_PAGE = ("rect", 0.383, 0.075, 0.96, 0.31)        # ... State, Reward 100 credits, objective, two paragraphs
+_PY_PIM = ("rect", 0.075, 0.305, 0.118, 0.375)       # game_l12_pim_yard: Pim beside the tent (11, 4)
+_ST_KIT = ("rect", 0.155, 0.64, 0.195, 0.69)         # game_l12_stash: the medical crate by the rock (4, 9)
+_PN_LINE = ("rect", 0.67, 0.455, 0.97, 0.61)         # game_l12_pim_notice: Pim's line
+_PN_READ = ("rect", 0.67, 0.24, 0.835, 0.29)         # ... Let the pieces fall: the notice was read
+_PN_SPARE = ("rect", 0.67, 0.683, 0.88, 0.73)        # ... Ask about the spare cell
+_TU_SEALED = ("rect", 0.67, 0.565, 0.965, 0.66)      # game_l12_terminal_update: DOOR SEALED ... one to give it
+_TU_COPY = ("rect", 0.67, 0.498, 0.8, 0.543)         # ... Copy it down
+_TU_NEW = ("rect", 0.67, 0.785, 0.967, 0.89)         # ... Send the door code, and under it the sentry's update
+_MK_SHOW = ("rect", 0.67, 0.552, 0.875, 0.6)         # game_l12_marrow_key: Show him the brass key
+_MK_WHO = ("rect", 0.668, 0.06, 0.79, 0.13)          # ... Lt Sam Reyes, the one talking
+_MK_OKORO = ("rect", 0.31, 0.355, 0.35, 0.42)        # ... Okoro (gold suit), who carries the key
+_PR_PROMISE = ("rect", 0.67, 0.79, 0.88, 0.84)       # game_l12_promise: Promise to bring it back
+_BC_FIT = ("rect", 0.67, 0.59, 0.97, 0.82)           # game_l12_beacon: the beacon's line and Fit the power cell
+_PH_OPEN = ("rect", 0.67, 0.74, 0.935, 0.787)        # game_l12_pim_home: Ask her to open the relay house
+
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
-        {"from": 0, "still": "game_l12_pim_give"},
-        {"from": 3, "still": "game_l12_panel_two"},
-        {"from": 4, "still": "game_l12_lost"},
+        {"from": 0, "still": "game_l12_pim_give", "marks": [_GV_GIVE]},
+        {"from": 3, "still": "game_l12_panel_two", "marks": [_P2_LINE]},
+        {"from": 4, "still": "game_l12_panel_two", "marks": [_P2_BAR]},
+        {"from": 4.5, "still": "game_l12_lost", "marks": [_LOST]},
         {"from": 5, "still": "card_title"},
     ]},
     "s02_the_words": {"step": None, "beats": [
@@ -209,28 +260,32 @@ BOARD = {
     ]},
     "s03_a_quest_that_waits_and_two_h": {"step": 1, "beats": [
         # the game first: the quest in the Quest Log
-        {"from": 0, "still": "game_l12_log_tablet"},
+        {"from": 0, "still": "game_l12_log_tablet", "marks": [_LT_ROW]},
+        {"from": 3, "still": "game_l12_log_tablet", "marks": [_LT_PAGE]},
         {"from": 4, "still": "e_tab", "marks": [("lines", 98, 98)]},
         {"from": 6, "still": "e_tab", "marks": [("lines", 105, 105)]},
         {"from": 8, "still": "t_r1", "marks": [("span", 1, "never-revealed")]},
         # the game first: Pim by the tent
-        {"from": 10, "still": "game_l12_pim_yard"},
+        {"from": 10, "still": "game_l12_pim_yard", "marks": [_PY_PIM]},
         {"from": 13, "still": "e_yard", "marks": [("lines", 372, 382)]},
         {"from": 14, "still": "e_yard", "marks": [("text", 372, "(pim_yard)")]},
         {"from": 15, "still": "e_yard", "marks": [("lines", 380, 380)]},
         # the game first: the kit by the rock
-        {"from": 16, "still": "game_l12_stash"},
+        {"from": 16, "still": "game_l12_stash", "marks": [_ST_KIT]},
         {"from": 18, "still": "e_stash", "marks": [("lines", 340, 348)]},
         {"from": 19, "still": "e_stash", "marks": [("lines", 346, 346)]},
     ]},
     "s04_pim_s_scene": {"step": 4, "beats": [
         # the game first: her scene on the engineer's handheld
-        {"from": 0, "still": "game_l12_pim_notice"},
+        {"from": 0, "still": "game_l12_pim_notice", "marks": [_PN_LINE]},
+        {"from": 4, "still": "game_l12_pim_notice", "marks": [_PN_READ]},
+        {"from": 5, "still": "game_l12_pim_notice", "marks": [_PN_SPARE]},
         {"from": 6, "still": "e_r4a", "marks": [("text", 560, "if learned spare")]},
         {"from": 8, "still": "e_r4a", "marks": [("text", 561, "; reveal stash")]},
         {"from": 9, "still": "e_r4a", "marks": [("lines", 569, 569)]},
         # the game first: the tablet in his pack
-        {"from": 10, "still": "game_l12_pim_give"},
+        {"from": 10, "still": "game_l12_pim_give", "marks": [_GV_GOT]},
+        {"from": 12, "still": "game_l12_pim_give", "marks": [_GV_TWO]},
         {"from": 13, "still": "e_r4a", "marks": [("text", 562, "if holding tablet")]},
         {"from": 14, "still": "e_r4a", "marks": [("text", 562, "; take tablet, completes pim_tablet, give fuse")]},
         {"from": 16, "still": "e_r4a", "marks": [("lines", 563, 563)]},
@@ -240,8 +295,10 @@ BOARD = {
     ]},
     "s05_the_pump_with_fuses": {"step": 5, "beats": [
         # the game first: the panel with two fuses, then three
-        {"from": 0, "still": "game_l12_panel_two"},
-        {"from": 4, "still": "game_l12_panel_three"},
+        {"from": 0, "still": "game_l12_panel_two", "marks": [_P2_LINE]},
+        {"from": 3, "still": "game_l12_panel_two", "marks": [_P2_OFFER]},
+        {"from": 4, "still": "game_l12_panel_three", "marks": [_P3_LINE]},
+        {"from": 5, "still": "game_l12_panel_three", "marks": [_P3_FIT]},
         {"from": 6, "still": "e_r5", "marks": [("text", 547, "if holding fuse >= 3")]},
         {"from": 7, "still": "e_r5", "marks": [("text", 547, "; take fuse 3")]},
         {"from": 8, "still": "e_r5", "marks": [("text", 547, "if holding fuse >= 3"), ("text", 547, "; take fuse 3")]},
@@ -256,40 +313,46 @@ BOARD = {
     ]},
     "s06_two_more_uses_for_old_rooms": {"step": 6, "beats": [
         # the game first: the terminal's new button
-        {"from": 0, "still": "game_l12_terminal_update"},
+        {"from": 0, "still": "game_l12_terminal_update", "marks": [_TU_SEALED]},
+        {"from": 2, "still": "game_l12_terminal_update", "marks": [_TU_COPY]},
+        {"from": 3, "still": "game_l12_terminal_update", "marks": [_TU_NEW]},
         {"from": 4, "still": "e_r6", "marks": [("lines", 456, 456)]},
         {"from": 5, "still": "e_r6", "marks": [("text", 456, "; calm sentry")]},
         {"from": 6, "still": "e_r6", "marks": [("lines", 459, 462)]},
         # the game first: Marrow on the weapons officer's handheld
-        {"from": 7, "still": "game_l12_marrow_key"},
+        {"from": 7, "still": "game_l12_marrow_key", "marks": [_MK_SHOW]},
+        {"from": 8, "still": "game_l12_marrow_key", "marks": [_MK_WHO]},
+        {"from": 9, "still": "game_l12_marrow_key", "marks": [_MK_OKORO]},
         {"from": 10, "still": "e_marrow", "marks": [("text", 490, "if party pump_key")]},
         {"from": 11, "still": "e_marrow", "marks": [("lines", 494, 498)]},
     ]},
     "s07_the_endings_and_one_more_wor": {"step": 8, "beats": [
         {"from": 0, "still": "e_relight", "marks": [("lines", 75, 76)]},
         # the game first: the loss
-        {"from": 3, "still": "game_l12_lost"},
+        {"from": 3, "still": "game_l12_lost", "marks": [_LOST]},
         {"from": 5, "still": "e_burn", "marks": [("lines", 578, 578)]},
         {"from": 6, "still": "e_burn", "marks": [("text", 578, "; fails relight")]},
         # the game first: the beacon with the spare in the pack
-        {"from": 7, "still": "game_l12_beacon"},
+        {"from": 7, "still": "game_l12_beacon", "marks": [_BC_FIT]},
         {"from": 8, "still": "e_beacon", "marks": [("lines", 529, 529)]},
         {"from": 9, "still": "e_beacon", "marks": [("text", 529, "if holding power_cell ; take power_cell")]},
-        {"from": 10, "still": "game_l12_won"},
+        {"from": 10, "still": "game_l12_won", "marks": [_WON]},
         {"from": 11, "still": "e_discover", "marks": [("text", 586, "; discover cistern")]},
         {"from": 13, "still": "t_discover", "marks": [("part", "run1:clean")]},
     ]},
     "s08_play_it_and_your_turn": {"step": 11, "beats": [
         {"from": 0, "still": "card_route"},
-        {"from": 1, "still": "game_l12_marrow_key"},
-        {"from": 2, "still": "game_l12_promise"},
-        {"from": 3, "still": "game_l12_pim_give"},
-        {"from": 4, "still": "game_l12_panel_three"},
-        {"from": 6, "still": "game_l12_pim_home"},
-        {"from": 7, "still": "game_l12_won"},
-        {"from": 8, "still": "game_l12_lost"},
-        {"from": 9, "still": "card_exercise", "marks": [("part", "item1")]},
-        {"from": 10, "still": "card_exercise", "marks": [("part", "item3")]},
-        {"from": 11, "still": "card_next"},
+        {"from": 1, "still": "card_route", "marks": [("part", "item1")]},
+        {"from": 5, "still": "game_l12_marrow_key", "marks": [_MK_SHOW]},
+        {"from": 6, "still": "game_l12_promise", "marks": [_PR_PROMISE]},
+        {"from": 7, "still": "card_route", "marks": [("part", "item5")]},
+        {"from": 9, "still": "game_l12_pim_give", "marks": [_GV_GIVE]},
+        {"from": 10, "still": "game_l12_panel_three", "marks": [_P3_FIT]},
+        {"from": 12, "still": "game_l12_pim_home", "marks": [_PH_OPEN]},
+        {"from": 13, "still": "game_l12_won", "marks": [_WON]},
+        {"from": 14, "still": "game_l12_lost", "marks": [_LOST]},
+        {"from": 15, "still": "card_exercise", "marks": [("part", "item1")]},
+        {"from": 16, "still": "card_exercise", "marks": [("part", "item3")]},
+        {"from": 17, "still": "card_next"},
     ]},
 }

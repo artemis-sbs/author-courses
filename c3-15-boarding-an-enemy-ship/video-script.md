@@ -16,7 +16,17 @@
 >   races are allowed. The finished files lint `clean` (checked with the released tool).
 >   Scenes 1, 2, 6 and 8 and the matching lines of the page were corrected from the
 >   library's documentation and lint. They have NOT been re-played in the mock.
-> - **Nobody has seen the deck.** Do not describe how it looks until scene 7 shows it.
+> - **PLAYED IN THE GAME 2026-10-16** (server, Helm, Comms; ten stills). Corrected from
+>   that play the same day: she starts about 5,000 from the ship; she is picked on the
+>   Comms 2D map; nobody but Oduya and Brakk stands on her deck; Brakk downs anybody who
+>   walks into her sight, and the play scene now says how to deal with her.
+> - **HULL CHANGED 2026-10-16: `pirate_strongbow`, not `pirate_brigantine`.** The
+>   brigantine is a light carrier (`baycount` 6, role `carrier` in the ship data), so
+>   Legendary Missions launched six `Black Gull NN` fighters that shot at the ship all
+>   game. The strongbow has no bay and no `carrier` role, and the same rooms (two brigs, a
+>   boat bay, a plunder hold, a surgery). Checked in the mock: no carrier role, her deck
+>   builds (52 x 52 tiles), the strongbox and Oduya in a brig each, the kit at the
+>   arrival, Brakk in the boat bay. EVERY GAME STILL showing her needs taking again.
 
 > **Measured 2026-10-10, in the mock**, on the packaged library (sbs_utils `ce28c951`,
 > LegendaryMissions `243e0a4`), with stand-in consoles driven by a script. Walked on the
@@ -49,27 +59,28 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 1. Lint after Steps 2 and 3 is `clean`; after Step 4 it has one `unfired-signal`; the
    finished files are `clean`. (Lint, 2026-10-15.)
 2. Before she strikes, Comms offers `Hail`, `Taunt`, `Surrender now`. After, `Take as
-   prize` and `Send a boarding party`. (Mock, the real comms route.)
+   prize` and `Send a boarding party`. (Game, 2026-10-16.)
 3. The answer to the button is `We are hove to. Send your party across: Boarding Party,
-   on the ePADD.` (Mock.)
+   on the ePADD.`, shown once its header is clicked. (Game.)
 4. The strongbox and the prisoner stand in a brig each, the kit one cell from the
-   arrival, the gunner in the boat bay. (Mock.)
+   arrival, the gunner in the boat bay. (Game on the brigantine; mock on the strongbow.)
 5. Each of the three endings does what the table says to the party, the ship, the quest
-   and the relay. (Mock.)
-6. With the strongbox in `Mark: quarters` it can still be reached: her crew never shuts
+   and the relay. (Mock; the prize also in the game.)
+6. With the strongbox in `Mark: quarters` it can still be reached: nothing aboard shuts
    anything in. (Library documentation; not re-played.)
 
-Not seen by anyone. If one is not as described, stop and fix the page:
+Not seen yet. If one is not as described, stop and fix the page:
 
-1. The deck on a real console: its art, its size on the screen, whether a click lands.
-2. Whether Comms opens on the Black Gull without Science having scanned her. The mock
-   does not check this.
-3. What the Black Gull does before she strikes. In the mock she sits still.
-4. How fast she runs for home, and how long a real crew has.
-5. Where a student finds `debug.log`.
-6. The room names on the handheld's bar, as `room:boat-bay`.
-7. Run Down the Black Gull in the Quest Log with the brigantine drawn beside
-   its lead line, and Take the Black Gull's two icon bullets.
+1. How fast she runs for home, and how long a real crew has.
+2. Where a student finds `debug.log`.
+3. The room names on the handheld's bar as words (`Brig`, `Boat Bay`, `Hallway`). The
+   2026-10-16 play showed the raw keys (`room:brig`); the library is being fixed.
+4. Look's line for the strongbox: its description, not its bare name. Same play, same fix.
+5. The open Comms menu changing by itself when she strikes. Same play, same fix.
+6. Run Down the Black Gull in the Quest Log with the strongbow drawn under its lead
+   line. (The brigantine was drawn there; the strongbow has not been seen.)
+7. On the strongbow's deck: that the strongbox, Oduya and Brakk stand where the mock put
+   them, and that Brakk comes into sight through the boat bay's door five cells off.
 
 ## Scenes
 
@@ -80,7 +91,7 @@ party. Then a title: Boarding an enemy ship.
 
 **Say:** "For eight lectures, you've drawn every floor your crew walked on. ||| Today
 they board a ship, | and you draw nothing. || The game builds her deck from her own
-plan, | and puts her crew aboard. ||| Your job is what's on it. || A prisoner, a
+plan. ||| Your job is what's on it. || A prisoner, a
 gunner who won't give up, | and a strongbox that ends it three ways. ||| It's brand new, so at the end I'll show you what to check before your crew finds it.
 ||"
 
@@ -98,16 +109,17 @@ comes home. || When the ship comes back, the relay opens again. ||"
 
 ### 3. A side and a ship
 
-**Screen:** The game first: the Comms console, the Black Gull picked from the list, her
+**Screen:** The game first: the Comms console, the Black Gull picked on the 2D map, her
 buttons Hail, Taunt and Surrender now. Then the Sides section typed at the end of the file.
-Then two lines typed into the map in the story file, with the two sets of numbers
-highlighted.
+Then two lines typed into the map in the story file, with her hull and the two sets of
+numbers highlighted.
 
 **Say:** "Here she is on the Comms console, | the Black Gull, a pirate, out past the relay.
 || Hail, taunt, or tell her to surrender. ||| In the file, first a side for her to be on. |
 One record, and one line that says enemies.
-||| Then the ship, in the story file. | Two lines, under the relay's own line. ||| Look
-at the numbers. || The first set is where she comes from. | The second is where she is.
+||| Then the ship, in the story file. | Two lines, under the relay's own line. ||| Her hull
+is a pirate raider, with no fighter bay. || A carrier brings its fighters, | and they'd
+shoot at your ship all game. ||| Look at the numbers. || The first set is where she comes from. | The second is where she is.
 ||| That matters, because a ship that strikes and isn't boarded runs for home, | and
 when she gets there she's taken off the map. || I tried it with one place. | She
 struck, and eight seconds later she was gone. ||"
@@ -115,16 +127,16 @@ struck, and eight seconds later she was gone. ||"
 ### 4. Three quests and a card
 
 **Screen:** The game first: the Quest Log on Helm's ePADD, Run Down the Black Gull selected,
-the brigantine at the top of its page. Then the three quests in the Quests section, with
+her picture at the top of its page. Then the three quests in the Quests section, with
 their descriptions, and arrows: the first reveals the second, the second sends the relay's
 signal. Then the card pasted at the end of the
 story file, and one line added to the starter's card.
 
-**Say:** "Here's the chase in the Quest Log aboard, | with the brigantine drawn at the top.
+**Say:** "Here's the chase in the Quest Log aboard, | with her picture at the top.
 ||| In the file there are three quests. || Run her down, which waits for the ship to close on her. ||
 Come back to the relay, which is hidden until then. || And take her, which waits for a
-signal the game sends. ||| Two of them get a page for the bridge. | The brigantine drawn at
-the top of the chase, | and two icon bullets on the prize. ||| The card is one you know. | It's the tug card from the first
+signal the game sends. ||| Two of them get a page for the bridge. | Her picture at the top
+of the chase, | and two icon bullets on the prize. ||| The card is one you know. | It's the tug card from the first
 class, | hearing a different step start. ||| It does two things. | It calls the landing
 party home, and she strikes. ||| And the same line goes on your old card, | for the
 trip back. ||"
@@ -145,30 +157,36 @@ hallway, and the game says so once. ||"
 
 ### 6. Her own crew, and the walk
 
-**Screen:** The game first: the deck on Helm, her crew standing in her cabins and
-holds. Then one rule, as a card.
+**Screen:** The game first: the deck on Helm, just beamed across, nobody else in view.
+Then the strongbox in its brig. Then one rule, as a card.
 
-**Say:** "Here's her deck again, and those figures are her own crew. || The game puts
-them aboard, | calm, and standing still. ||| A calm person blocks the cell they stand on,
-| so the game walks the deck before it puts anyone down. || None of them stands in a
-doorway, | or anywhere that would shut in something of yours. ||| Where they stand can
-change when you add a record. | What they can never do is block the way. ||| So keep one
-rule: after every change to what's aboard, | go aboard and walk to each thing. ||"
+**Say:** "Here's her deck again. || Nobody stands about on it | but the people you
+wrote. ||| A calm person blocks the cell they stand on, | and so does a strongbox. || So
+the game walks the deck before it puts anything down. || Nothing of yours stands in a
+doorway, | or anywhere that would shut something in. ||| Where a thing stands can change
+when you add a record. | What it can never do is block the way. ||| So keep one rule:
+after every change to what's aboard, | go aboard and walk to each thing. ||"
 
 ### 7. Three endings
 
 **Screen:** The game, three windows: the server, Helm and Comms. Helm closes on her. Comms presses the button. The
-party beams across. The strongbox scene with its four answers. Then the endings table.
+party beams across. Comms' Fire app armed with FULL, the gunner in sight through the boat
+bay's door. Pack, Use medkit on Lt Dana Ross. The strongbox scene with its four answers.
+Then the endings table.
 
 **Say:** "Now play it through. || Helm closes to fifteen hundred, and she strikes. || Comms
-selects her, and sends a party. ||| Aboard, the strongbox has three answers that
-matter. || Take her, and she joins your side, | and the quest pays. || Scuttle her, and
+selects her, and sends a party. ||| Aboard, the gunner waits in the boat bay. || She sees
+anyone within four cells, | and one hit can put them down. ||| So one of you goes aft, |
+a cell at a time. || The moment she's in sight, five cells off, | fire, full, arm, and
+click her. || Shots miss a lot, | and no app tells you a shot hit or missed. ||| If she
+downs somebody, | the boarding kit gets them up again. | Pack, use medkit. ||| The
+strongbox has three answers that matter. || Take her, and she joins your side, | and the quest pays. || Scuttle her, and
 she's gone. || Leave her, and she runs for home. ||| Every one of them brings the party
 home first. || And after every one, | the relay opens again when the ship comes back.
 ||"
 
-> Builder: this is the first time anybody looks at a generated deck on a real console.
-> If the map is black, the art pack is missing: see "If something goes wrong".
+> Builder: if the map is black, the art pack is missing: see "If something goes wrong".
+> Do not touch Comms between taking the Black Gull's first menu and her strike.
 
 ### 8. What to warn your crew about
 

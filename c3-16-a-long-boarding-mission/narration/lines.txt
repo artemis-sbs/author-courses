@@ -18,17 +18,18 @@ s02_three_sentences_and_a_beat_s_8	A landing, three tracks, a join,
 s02_three_sentences_and_a_beat_s_9	a last area, and an ending.
 s02_three_sentences_and_a_beat_s_10	With minutes beside each one.
 s03_three_areas_0	Here's my middle area on the engineer's console,
-s03_three_areas_1	the lift house, with the lift at the far end.
-s03_three_areas_2	In the files, three areas, and one decision each.
-s03_three_areas_3	The camp is where they land.
-s03_three_areas_4	The lift house has to be found once.
-s03_three_areas_5	After that the ship can put you there.
-s03_three_areas_6	And the gallery can't be beamed into at all.
-s03_three_areas_7	That's what makes the lift matter.
-s03_three_areas_8	Look at the map with last week's eyes.
-s03_three_areas_9	Every mark is the name of a place.
-s03_three_areas_10	Nothing hidden stands on a mark.
-s03_three_areas_11	And the titles read well after the words go to.
+s03_three_areas_1	the chief at the gate, and the ore hauler in the yard.
+s03_three_areas_2	The lift house itself is still in fog.
+s03_three_areas_3	In the files, three areas, and one decision each.
+s03_three_areas_4	The camp is where they land.
+s03_three_areas_5	The lift house has to be found once.
+s03_three_areas_6	After that the ship can put you there.
+s03_three_areas_7	And the gallery can't be beamed into at all.
+s03_three_areas_8	That's what makes the lift matter.
+s03_three_areas_9	Look at the map with last week's eyes.
+s03_three_areas_10	Every mark is the name of a place.
+s03_three_areas_11	Nothing hidden stands on a mark.
+s03_three_areas_12	And the titles read well after the words go to.
 s04_three_people_nobody_can_repl_0	Draw three columns before you write a single prop.
 s04_three_people_nobody_can_repl_1	Who's doing what, in each beat?
 s04_three_people_nobody_can_repl_2	Then the hard part of the brief.
@@ -73,11 +74,13 @@ s06_two_endings_and_a_full_shot_6	Now something to plan for.
 s06_two_endings_and_a_full_shot_7	A shot never removes a prop.
 s06_two_endings_and_a_full_shot_8	Shoot the lift gate, and it stays shut,
 s06_two_endings_and_a_full_shot_9	because only the lift's own signal opens it.
-s06_two_endings_and_a_full_shot_10	Shoot the rock fall, and both endings are still there.
-s06_two_endings_and_a_full_shot_11	A door opens to a shot
-s06_two_endings_and_a_full_shot_12	only when its Opens with line says cut.
-s06_two_endings_and_a_full_shot_13	So ask one question of your own mission.
-s06_two_endings_and_a_full_shot_14	Which doors should the crew be able to force?
+s06_two_endings_and_a_full_shot_10	And nothing on the handheld mentions the shot.
+s06_two_endings_and_a_full_shot_11	Look still shows the last thing picked up.
+s06_two_endings_and_a_full_shot_12	Shoot the rock fall, and both endings are still there.
+s06_two_endings_and_a_full_shot_13	A door opens to a shot
+s06_two_endings_and_a_full_shot_14	only when its Opens with line says cut.
+s06_two_endings_and_a_full_shot_15	So ask one question of your own mission.
+s06_two_endings_and_a_full_shot_16	Which doors should the crew be able to force?
 s07_twelve_checks_and_the_walk_0	Lint reads your spelling.
 s07_twelve_checks_and_the_walk_1	It doesn't walk your map.
 s07_twelve_checks_and_the_walk_2	So here are the checks of the whole class, on one sheet.
@@ -88,10 +91,16 @@ s07_twelve_checks_and_the_walk_6	Signals with two ends.
 s07_twelve_checks_and_the_walk_7	Then the worst party, and the three columns.
 s07_twelve_checks_and_the_walk_8	The screen, a full shot, and the clock.
 s07_twelve_checks_and_the_walk_9	Then walk it, every road.
-s07_twelve_checks_and_the_walk_10	A doctor and an engineer dig them out.
-s07_twelve_checks_and_the_walk_11	One person, with no skill at all, blasts them out.
-s07_twelve_checks_and_the_walk_12	The times on the page are floors from a script.
-s07_twelve_checks_and_the_walk_13	Walk yours with people, and write down what you get.
+s07_twelve_checks_and_the_walk_10	On the way, somebody has to stop the hauler for its coupling.
+s07_twelve_checks_and_the_walk_11	Stand on the works gate, outside its notice, and fire one full shot.
+s07_twelve_checks_and_the_walk_12	Click the cell it has just stepped onto,
+s07_twelve_checks_and_the_walk_13	as it walks up the west side of its square.
+s07_twelve_checks_and_the_walk_14	Shots miss a lot,
+s07_twelve_checks_and_the_walk_15	and no app tells you a shot hit or missed.
+s07_twelve_checks_and_the_walk_16	A doctor and an engineer dig them out.
+s07_twelve_checks_and_the_walk_17	One person alone, using no skill at all, blasts them out.
+s07_twelve_checks_and_the_walk_18	The times on the page are floors from a script.
+s07_twelve_checks_and_the_walk_19	Walk yours with people, and write down what you get.
 s08_the_rubric_and_your_turn_0	Here's the rubric, in ten lines,
 s08_the_rubric_and_your_turn_1	and each one has a way to know.
 s08_the_rubric_and_your_turn_2	Three areas. A quest tree. Two endings and a way to lose.

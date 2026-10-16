@@ -45,25 +45,28 @@ s05_titles_and_what_the_pack_say_1	Go to, in Look. To, in Beam.
 s05_titles_and_what_the_pack_say_2	So a title that starts with The reads badly twice,
 s05_titles_and_what_the_pack_say_3	and the fix is to take it off.
 s05_titles_and_what_the_pack_say_4	Next, the things you pick up.
-s05_titles_and_what_the_pack_say_5	The transcript says he picked up a toolbox.
-s05_titles_and_what_the_pack_say_6	The pack says two fuses.
-s05_titles_and_what_the_pack_say_7	And the key is worse.
-s05_titles_and_what_the_pack_say_8	The heading says pump house key.
-s05_titles_and_what_the_pack_say_9	The pack and the door say pump key.
-s05_titles_and_what_the_pack_say_10	That's the item's key, with its underscore shown as a space.
-s05_titles_and_what_the_pack_say_11	So make the item's key the same words as the heading.
-s05_titles_and_what_the_pack_say_12	Three lines name it,
-s05_titles_and_what_the_pack_say_13	and all three change together.
-s05_titles_and_what_the_pack_say_14	Miss one, and lint tells you.
+s05_titles_and_what_the_pack_say_5	The transcript names the item,
+s05_titles_and_what_the_pack_say_6	and the thing it came from.
+s05_titles_and_what_the_pack_say_7	For the key, that's two names for one thing.
+s05_titles_and_what_the_pack_say_8	She picked up pump key,
+s05_titles_and_what_the_pack_say_9	from the pump house key.
+s05_titles_and_what_the_pack_say_10	The pack and the door say pump key too.
+s05_titles_and_what_the_pack_say_11	That's the item's key, with its underscore shown as a space.
+s05_titles_and_what_the_pack_say_12	So make the item's key the same words as the heading.
+s05_titles_and_what_the_pack_say_13	Three lines name it,
+s05_titles_and_what_the_pack_say_14	and all three change together.
+s05_titles_and_what_the_pack_say_15	Miss one, and lint tells you.
 s06_scan_and_a_title_that_is_the_0	Scan lists everything in sight, scenery too.
 s06_scan_and_a_title_that_is_the_1	With no scan line and no description, it says no reading.
 s06_scan_and_a_title_that_is_the_2	So give your scenery one line each.
 s06_scan_and_a_title_that_is_the_3	It's the cheapest clue you have.
 s06_scan_and_a_title_that_is_the_4	Now open the Tasks app.
-s06_scan_and_a_title_that_is_the_5	On the ship, a quest shows its objective.
-s06_scan_and_a_title_that_is_the_6	Down here it shows a heading, a state, and a lead.
-s06_scan_and_a_title_that_is_the_7	So on the ground the heading has to be the instruction.
-s06_scan_and_a_title_that_is_the_8	The Caretaker's Cough becomes See to Marrow's Cough.
+s06_scan_and_a_title_that_is_the_5	It's a list, and every quest in it is a heading and a state.
+s06_scan_and_a_title_that_is_the_6	The objective is on the page under the list,
+s06_scan_and_a_title_that_is_the_7	for the one quest you've picked.
+s06_scan_and_a_title_that_is_the_8	So the heading is what the crew reads first.
+s06_scan_and_a_title_that_is_the_9	Make the heading the instruction.
+s06_scan_and_a_title_that_is_the_10	The Caretaker's Cough becomes See to Marrow's Cough.
 s07_the_two_with_nothing_to_do_0	Look at the mission as your helm officer.
 s07_the_two_with_nothing_to_do_1	No story of her own.
 s07_the_two_with_nothing_to_do_2	One answer she's covering, and a panel that refuses her.
@@ -76,18 +79,19 @@ s08_what_the_bridge_sees_and_you_0	Somebody stays on the bridge.
 s08_what_the_bridge_sees_and_you_1	Here's everything they get.
 s08_what_the_bridge_sees_and_you_2	A list of who went down.
 s08_what_the_bridge_sees_and_you_3	The shared quests, as they start and finish.
-s08_what_the_bridge_sees_and_you_4	And one line in Messages,
+s08_what_the_bridge_sees_and_you_4	And in Messages, one line of yours,
 s08_what_the_bridge_sees_and_you_5	when somebody on the ground presses Report in.
-s08_what_the_bridge_sees_and_you_6	No scene line ever reaches the bridge.
-s08_what_the_bridge_sees_and_you_7	So the shared quests are its only window.
-s08_what_the_bridge_sees_and_you_8	Remember that for the capstone.
-s08_what_the_bridge_sees_and_you_9	Select a quest, and the Quest Log shows its description in full.
-s08_what_the_bridge_sees_and_you_10	The starter's is one sentence,
-s08_what_the_bridge_sees_and_you_11	and for the bridge that's the whole briefing.
-s08_what_the_bridge_sees_and_you_12	So give it a page.
-s08_what_the_bridge_sees_and_you_13	The relay drawn at the top,
-s08_what_the_bridge_sees_and_you_14	then a table of what the ship knows from up there.
-s08_what_the_bridge_sees_and_you_15	For the exercise, play it to read, not to win.
-s08_what_the_bridge_sees_and_you_16	Write down every word that makes you wince,
-s08_what_the_bridge_sees_and_you_17	and then go and fix each one.
-s08_what_the_bridge_sees_and_you_18	Next time, we put a clock on it.
+s08_what_the_bridge_sees_and_you_6	The rest is the crew's mail from home.
+s08_what_the_bridge_sees_and_you_7	No scene line ever reaches the bridge.
+s08_what_the_bridge_sees_and_you_8	So the shared quests are its only window.
+s08_what_the_bridge_sees_and_you_9	Remember that for the capstone.
+s08_what_the_bridge_sees_and_you_10	Select a quest, and the Quest Log shows its description in full.
+s08_what_the_bridge_sees_and_you_11	The starter's is one sentence,
+s08_what_the_bridge_sees_and_you_12	and for the bridge that's the whole briefing.
+s08_what_the_bridge_sees_and_you_13	So give it a page.
+s08_what_the_bridge_sees_and_you_14	The relay's picture comes first,
+s08_what_the_bridge_sees_and_you_15	then a table of what the ship knows from up there.
+s08_what_the_bridge_sees_and_you_16	For the exercise, play it to read, not to win.
+s08_what_the_bridge_sees_and_you_17	Write down every word that makes you wince,
+s08_what_the_bridge_sees_and_you_18	and then go and fix each one.
+s08_what_the_bridge_sees_and_you_19	Next time, we put a clock on it.

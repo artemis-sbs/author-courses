@@ -12,408 +12,468 @@ and you draw nothing.
 
 4
 00:00:11,846 --> 00:00:15,759
-The game builds her deck from her own plan,
+The game builds her deck from her own plan.
 
 5
-00:00:16,209 --> 00:00:18,383
-and puts her crew aboard.
-
-6
-00:00:20,183 --> 00:00:22,791
+00:00:17,559 --> 00:00:20,167
 Your job is what's on it.
 
-7
-00:00:23,691 --> 00:00:27,170
+6
+00:00:21,067 --> 00:00:24,546
 A prisoner, a gunner who won't give up,
 
-8
-00:00:27,620 --> 00:00:31,098
+7
+00:00:24,996 --> 00:00:28,474
 and a strongbox that ends it three ways.
 
-9
-00:00:32,898 --> 00:00:40,724
+8
+00:00:30,274 --> 00:00:38,100
 It's brand new, so at the end I'll show you what to check before your crew finds it.
 
-10
-00:00:41,924 --> 00:00:44,098
+9
+00:00:39,300 --> 00:00:41,474
 The button needs four things.
+
+10
+00:00:42,374 --> 00:00:44,548
+A ship that has struck.
 
 11
 00:00:44,998 --> 00:00:47,172
-A ship that has struck.
-
-12
-00:00:47,622 --> 00:00:49,796
 A hull with a plan.
 
-13
-00:00:50,246 --> 00:00:53,724
+12
+00:00:47,622 --> 00:00:51,100
 The station art, which your starter already has.
 
-14
-00:00:55,524 --> 00:00:57,698
+13
+00:00:52,900 --> 00:00:55,074
 And no other party out.
 
-15
-00:00:58,598 --> 00:01:01,207
+14
+00:00:55,974 --> 00:00:58,583
 That last one is the trouble.
 
-16
-00:01:03,007 --> 00:01:06,485
+15
+00:01:00,383 --> 00:01:03,861
 Your relay party opens in the first second,
 
-17
-00:01:06,935 --> 00:01:11,283
+16
+00:01:04,311 --> 00:01:08,659
 and a party on a map never closes by itself.
 
-18
-00:01:12,183 --> 00:01:14,357
+17
+00:01:09,559 --> 00:01:11,733
 So as your mission stands,
 
-19
-00:01:14,807 --> 00:01:17,850
+18
+00:01:12,183 --> 00:01:15,226
 with anybody still down at the relay,
 
-20
-00:01:18,300 --> 00:01:21,343
+19
+00:01:15,676 --> 00:01:18,720
 Comms can't send a party to her.
 
-21
-00:01:23,143 --> 00:01:25,752
+20
+00:01:20,520 --> 00:01:23,128
 We fix that with one rule.
 
-22
-00:01:26,202 --> 00:01:29,680
+21
+00:01:23,578 --> 00:01:27,057
 When she strikes, the landing party comes home.
 
-23
-00:01:30,580 --> 00:01:34,493
+22
+00:01:27,957 --> 00:01:31,870
 When the ship comes back, the relay opens again.
 
-24
-00:01:35,693 --> 00:01:38,737
+23
+00:01:33,070 --> 00:01:36,113
 Here she is on the Comms console,
 
-25
-00:01:39,187 --> 00:01:43,100
+24
+00:01:36,563 --> 00:01:40,476
 the Black Gull, a pirate, out past the relay.
 
-26
-00:01:44,000 --> 00:01:47,043
+25
+00:01:41,376 --> 00:01:44,420
 Hail, taunt, or tell her to surrender.
 
-27
-00:01:48,843 --> 00:01:53,626
+26
+00:01:46,220 --> 00:01:51,002
 In the file, first a side for her to be on.
 
-28
-00:01:54,076 --> 00:01:57,554
+27
+00:01:51,452 --> 00:01:54,930
 One record, and one line that says enemies.
 
-29
-00:01:59,354 --> 00:02:02,398
+28
+00:01:56,730 --> 00:01:59,774
 Then the ship, in the story file.
 
-30
-00:02:02,848 --> 00:02:05,891
+29
+00:02:00,224 --> 00:02:03,267
 Two lines, under the relay's own line.
 
+30
+00:02:05,067 --> 00:02:09,415
+Her hull is a pirate raider, with no fighter bay.
+
 31
-00:02:07,691 --> 00:02:09,430
-Look at the numbers.
+00:02:10,315 --> 00:02:12,489
+A carrier brings its fighters,
 
 32
-00:02:10,330 --> 00:02:13,809
-The first set is where she comes from.
+00:02:12,939 --> 00:02:16,417
+and they'd shoot at your ship all game.
 
 33
-00:02:14,259 --> 00:02:16,867
-The second is where she is.
+00:02:18,217 --> 00:02:19,957
+Look at the numbers.
 
 34
-00:02:18,667 --> 00:02:24,320
-That matters, because a ship that strikes and isn't boarded runs for home,
+00:02:20,857 --> 00:02:24,335
+The first set is where she comes from.
 
 35
-00:02:24,770 --> 00:02:29,117
-and when she gets there she's taken off the map.
+00:02:24,785 --> 00:02:27,393
+The second is where she is.
 
 36
-00:02:30,017 --> 00:02:32,626
-I tried it with one place.
+00:02:29,193 --> 00:02:34,846
+That matters, because a ship that strikes and isn't boarded runs for home,
 
 37
-00:02:33,076 --> 00:02:36,989
-She struck, and eight seconds later she was gone.
+00:02:35,296 --> 00:02:39,643
+and when she gets there she's taken off the map.
 
 38
-00:02:38,189 --> 00:02:41,667
-Here's the chase in the Quest Log aboard,
+00:02:40,543 --> 00:02:43,152
+I tried it with one place.
 
 39
-00:02:42,117 --> 00:02:45,161
-with the brigantine drawn at the top.
+00:02:43,602 --> 00:02:47,515
+She struck, and eight seconds later she was gone.
 
 40
-00:02:46,961 --> 00:02:50,004
-In the file there are three quests.
+00:02:48,715 --> 00:02:52,193
+Here's the chase in the Quest Log aboard,
 
 41
-00:02:50,904 --> 00:02:56,122
-Run her down, which waits for the ship to close on her.
+00:02:52,643 --> 00:02:55,252
+with her picture at the top.
 
 42
-00:02:57,022 --> 00:03:01,370
-Come back to the relay, which is hidden until then.
+00:02:57,052 --> 00:03:00,096
+In the file there are three quests.
 
 43
-00:03:02,270 --> 00:03:07,052
-And take her, which waits for a signal the game sends.
+00:03:00,996 --> 00:03:06,213
+Run her down, which waits for the ship to close on her.
 
 44
-00:03:08,852 --> 00:03:12,765
-Two of them get a page for the bridge.
+00:03:07,113 --> 00:03:11,461
+Come back to the relay, which is hidden until then.
 
 45
-00:03:13,215 --> 00:03:17,128
-The brigantine drawn at the top of the chase,
+00:03:12,361 --> 00:03:17,143
+And take her, which waits for a signal the game sends.
 
 46
-00:03:17,578 --> 00:03:20,622
-and two icon bullets on the prize.
+00:03:18,943 --> 00:03:22,857
+Two of them get a page for the bridge.
 
 47
-00:03:22,422 --> 00:03:25,030
-The card is one you know.
+00:03:23,307 --> 00:03:26,785
+Her picture at the top of the chase,
 
 48
-00:03:25,480 --> 00:03:28,959
-It's the tug card from the first class,
+00:03:27,235 --> 00:03:30,278
+and two icon bullets on the prize.
 
 49
-00:03:29,409 --> 00:03:31,583
-hearing a different step start.
+00:03:32,078 --> 00:03:34,687
+The card is one you know.
 
 50
-00:03:33,383 --> 00:03:35,122
-It does two things.
+00:03:35,137 --> 00:03:38,615
+It's the tug card from the first class,
 
 51
-00:03:35,572 --> 00:03:39,485
-It calls the landing party home, and she strikes.
+00:03:39,065 --> 00:03:41,239
+hearing a different step start.
 
 52
-00:03:41,285 --> 00:03:45,198
-And the same line goes on your old card,
+00:03:43,039 --> 00:03:44,778
+It does two things.
 
 53
-00:03:45,648 --> 00:03:47,387
-for the trip back.
+00:03:45,228 --> 00:03:49,141
+It calls the landing party home, and she strikes.
 
 54
-00:03:48,587 --> 00:03:52,935
-Here's her deck, and the captain's strongbox, in her brig.
+00:03:50,941 --> 00:03:54,854
+And the same line goes on your old card,
 
 55
-00:03:54,735 --> 00:03:58,648
-In the file, two new words put it there.
+00:03:55,304 --> 00:03:57,043
+for the trip back.
 
 56
-00:03:59,548 --> 00:04:03,026
-Area, deck: that means whatever ship we board.
+00:03:58,243 --> 00:04:02,591
+Here's her deck, and the captain's strongbox, in her brig.
 
 57
-00:04:04,826 --> 00:04:09,174
-And mark is no longer a mark in a file,
+00:04:04,391 --> 00:04:08,304
+In the file, two new words put it there.
 
 58
-00:04:09,624 --> 00:04:11,798
-because there is no file.
+00:04:09,204 --> 00:04:12,683
+Area, deck: that means whatever ship we board.
 
 59
-00:04:12,698 --> 00:04:14,872
-It's a kind of room.
+00:04:14,483 --> 00:04:18,830
+And mark is no longer a mark in a file,
 
 60
-00:04:15,322 --> 00:04:17,061
-Brig, cargo, quarters, bay.
+00:04:19,280 --> 00:04:21,454
+because there is no file.
 
 61
-00:04:18,861 --> 00:04:21,904
-Her hold is called the plunder hold.
+00:04:22,354 --> 00:04:24,528
+It's a kind of room.
 
 62
-00:04:22,354 --> 00:04:24,528
-Her sickbay is the surgery.
+00:04:24,978 --> 00:04:26,717
+Brig, cargo, quarters, bay.
 
 63
-00:04:25,428 --> 00:04:28,037
-You don't need to know that.
+00:04:28,517 --> 00:04:31,561
+Her hold is called the plunder hold.
 
 64
-00:04:28,487 --> 00:04:32,835
-You write the kind, and it works on any hull.
+00:04:32,011 --> 00:04:34,185
+Her sickbay is the surgery.
 
 65
-00:04:34,635 --> 00:04:38,113
-And when a hull has no such room,
+00:04:35,085 --> 00:04:37,693
+You don't need to know that.
 
 66
-00:04:38,563 --> 00:04:43,780
-your thing stands in the hallway, and the game says so once.
+00:04:38,143 --> 00:04:42,491
+You write the kind, and it works on any hull.
 
 67
-00:04:44,980 --> 00:04:49,763
-Here's her deck again, and those figures are her own crew.
+00:04:44,291 --> 00:04:47,770
+And when a hull has no such room,
 
 68
-00:04:50,663 --> 00:04:52,837
-The game puts them aboard,
+00:04:48,220 --> 00:04:53,437
+your thing stands in the hallway, and the game says so once.
 
 69
-00:04:53,287 --> 00:04:55,026
-calm, and standing still.
+00:04:54,637 --> 00:04:56,376
+Here's her deck again.
 
 70
-00:04:56,826 --> 00:05:00,739
-A calm person blocks the cell they stand on,
+00:04:57,276 --> 00:04:59,450
+Nobody stands about on it
 
 71
-00:05:01,189 --> 00:05:05,972
-so the game walks the deck before it puts anyone down.
+00:04:59,900 --> 00:05:02,074
+but the people you wrote.
 
 72
-00:05:06,872 --> 00:05:09,915
-None of them stands in a doorway,
+00:05:03,874 --> 00:05:07,787
+A calm person blocks the cell they stand on,
 
 73
-00:05:10,365 --> 00:05:14,278
-or anywhere that would shut in something of yours.
+00:05:08,237 --> 00:05:10,411
+and so does a strongbox.
 
 74
-00:05:16,078 --> 00:05:20,426
-Where they stand can change when you add a record.
+00:05:11,311 --> 00:05:16,093
+So the game walks the deck before it puts anything down.
 
 75
-00:05:20,876 --> 00:05:24,789
-What they can never do is block the way.
+00:05:16,993 --> 00:05:20,037
+Nothing of yours stands in a doorway,
 
 76
-00:05:26,589 --> 00:05:30,937
-So keep one rule: after every change to what's aboard,
+00:05:20,487 --> 00:05:23,530
+or anywhere that would shut something in.
 
 77
-00:05:31,387 --> 00:05:34,430
-go aboard and walk to each thing.
+00:05:25,330 --> 00:05:30,113
+Where a thing stands can change when you add a record.
 
 78
-00:05:35,630 --> 00:05:37,370
-Now play it through.
+00:05:30,563 --> 00:05:34,476
+What it can never do is block the way.
 
 79
-00:05:38,270 --> 00:05:41,748
-Helm closes to fifteen hundred, and she strikes.
+00:05:36,276 --> 00:05:40,624
+So keep one rule: after every change to what's aboard,
 
 80
-00:05:42,648 --> 00:05:45,691
-Comms selects her, and sends a party.
+00:05:41,074 --> 00:05:44,117
+go aboard and walk to each thing.
 
 81
-00:05:47,491 --> 00:05:50,970
-Aboard, the strongbox has three answers that matter.
+00:05:45,317 --> 00:05:47,057
+Now play it through.
 
 82
-00:05:51,870 --> 00:05:54,913
-Take her, and she joins your side,
+00:05:47,957 --> 00:05:51,435
+Helm closes to fifteen hundred, and she strikes.
 
 83
-00:05:55,363 --> 00:05:57,102
-and the quest pays.
+00:05:52,335 --> 00:05:55,378
+Comms selects her, and sends a party.
 
 84
-00:05:58,002 --> 00:06:00,176
-Scuttle her, and she's gone.
+00:05:57,178 --> 00:06:00,657
+Aboard, the gunner waits in the boat bay.
 
 85
-00:06:01,076 --> 00:06:04,120
-Leave her, and she runs for home.
+00:06:01,557 --> 00:06:04,165
+She sees anyone within four cells,
 
 86
-00:06:05,920 --> 00:06:09,833
-Every one of them brings the party home first.
+00:06:04,615 --> 00:06:07,659
+and one hit can put them down.
 
 87
-00:06:10,733 --> 00:06:12,472
-And after every one,
+00:06:09,459 --> 00:06:12,067
+So one of you goes aft,
 
 88
-00:06:12,922 --> 00:06:16,835
-the relay opens again when the ship comes back.
+00:06:12,517 --> 00:06:14,691
+a cell at a time.
 
 89
-00:06:18,035 --> 00:06:21,078
-Lint says clean on your finished mission.
+00:06:15,591 --> 00:06:19,070
+The moment she's in sight, five cells off,
 
 90
-00:06:21,978 --> 00:06:25,457
-What's left to know isn't in your file.
+00:06:19,520 --> 00:06:22,128
+fire, full, arm, and click her.
 
 91
-00:06:27,257 --> 00:06:29,865
-A shot never removes a prop.
+00:06:23,028 --> 00:06:24,767
+Shots miss a lot,
 
 92
-00:06:30,765 --> 00:06:34,243
-The strongbox is safe from a full shot,
+00:06:25,217 --> 00:06:29,565
+and no app tells you a shot hit or missed.
 
 93
-00:06:34,693 --> 00:06:38,607
-and so is anything else that holds an ending.
+00:06:31,365 --> 00:06:33,104
+If she downs somebody,
 
 94
-00:06:40,407 --> 00:06:43,885
-Comms has its own button, take as prize.
+00:06:33,554 --> 00:06:36,598
+the boarding kit gets them up again.
 
 95
-00:06:44,335 --> 00:06:47,813
-It finishes the same quest as your strongbox,
+00:06:37,048 --> 00:06:38,352
+Pack, use medkit.
 
 96
-00:06:48,263 --> 00:06:52,176
-but nobody goes aboard to meet what you wrote.
+00:06:40,152 --> 00:06:43,196
+The strongbox has three answers that matter.
 
 97
-00:06:53,976 --> 00:06:58,759
-What the gunner drops is lost if nobody picks it up.
+00:06:44,096 --> 00:06:47,139
+Take her, and she joins your side,
 
 98
-00:07:00,559 --> 00:07:04,907
-And from her deck, the transporter still reaches your relay.
+00:06:47,589 --> 00:06:49,328
+and the quest pays.
 
 99
-00:07:05,807 --> 00:07:08,850
-Know these before your crew finds them.
+00:06:50,228 --> 00:06:52,402
+Scuttle her, and she's gone.
 
 100
-00:07:10,050 --> 00:07:11,789
-Now it's your turn.
+00:06:53,302 --> 00:06:56,346
+Leave her, and she runs for home.
 
 101
-00:07:12,689 --> 00:07:14,428
-Play all three endings.
+00:06:58,146 --> 00:07:02,059
+Every one of them brings the party home first.
 
 102
-00:07:15,328 --> 00:07:19,676
-Move the strongbox into the cabin, and walk to it.
+00:07:02,959 --> 00:07:04,698
+And after every one,
 
 103
-00:07:20,576 --> 00:07:25,359
-Swap her hull for a freighter, and see where everything goes.
+00:07:05,148 --> 00:07:09,061
+the relay opens again when the ship comes back.
 
 104
-00:07:27,159 --> 00:07:30,637
-Then light the beacon with the gunner's cell.
+00:07:10,261 --> 00:07:13,304
+Lint says clean on your finished mission.
 
 105
-00:07:31,537 --> 00:07:34,580
+00:07:14,204 --> 00:07:17,683
+What's left to know isn't in your file.
+
+106
+00:07:19,483 --> 00:07:22,091
+A shot never removes a prop.
+
+107
+00:07:22,991 --> 00:07:26,470
+The strongbox is safe from a full shot,
+
+108
+00:07:26,920 --> 00:07:30,833
+and so is anything else that holds an ending.
+
+109
+00:07:32,633 --> 00:07:36,111
+Comms has its own button, take as prize.
+
+110
+00:07:36,561 --> 00:07:40,039
+It finishes the same quest as your strongbox,
+
+111
+00:07:40,489 --> 00:07:44,402
+but nobody goes aboard to meet what you wrote.
+
+112
+00:07:46,202 --> 00:07:50,985
+What the gunner drops is lost if nobody picks it up.
+
+113
+00:07:52,785 --> 00:07:57,133
+And from her deck, the transporter still reaches your relay.
+
+114
+00:07:58,033 --> 00:08:01,076
+Know these before your crew finds them.
+
+115
+00:08:02,276 --> 00:08:04,015
+Now it's your turn.
+
+116
+00:08:04,915 --> 00:08:06,654
+Play all three endings.
+
+117
+00:08:07,554 --> 00:08:11,902
+Move the strongbox into the cabin, and walk to it.
+
+118
+00:08:12,802 --> 00:08:17,585
+Swap her hull for a freighter, and see where everything goes.
+
+119
+00:08:19,385 --> 00:08:22,863
+Then light the beacon with the gunner's cell.
+
+120
+00:08:23,763 --> 00:08:26,807
 Next time, the mission is your own.

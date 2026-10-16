@@ -129,9 +129,9 @@ Objective: Close to within 1500 of the Black Gull
 Done when: reach gull 1500
 Then: reveal back
 ---
-![](ship://pirate_brigantine) The Black Gull, out past the relay.
+![](ship://pirate_strongbow) The Black Gull, out past the relay.
 
-A pirate brigantine is standing off the dark relay, waiting for a convoy that cannot see her.
+A pirate raider is standing off the dark relay, waiting for a convoy that cannot see her.
 
 Run her down. A pirate crew caught by a navy ship will often strike rather than fight.
 
@@ -157,7 +157,7 @@ Objective: Board the Black Gull and take her as a prize
 Done when: signal boarding_deck_take
 Reward: 200 credits
 ---
-A brigantine is worth more to the Kesh run with a navy crew aboard than as wreckage.
+A raider is worth more to the Kesh run with a navy crew aboard than as wreckage.
 
 ## Once she strikes
 
@@ -498,7 +498,7 @@ Hidden until: pim_went_home
 ---
 Marrow's apprentice, home, with a mug in both hands.
 
-// ---- Lecture 15. The Black Gull's own crew is put aboard by the game. This is somebody
+// ---- Lecture 15. Aboard the Black Gull, in her brig: the mate of the tender she took,
 // with something to say.
 ### [Mate Oduya](oduya)
 ---

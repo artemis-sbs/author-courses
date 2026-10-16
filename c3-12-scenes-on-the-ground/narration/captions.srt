@@ -424,48 +424,72 @@ Play the long way round.
 
 107
 00:07:23,526 --> 00:07:27,004
-The key, then Marrow, and then the gully.
+First the weapons officer puts the sentry down,
 
 108
-00:07:27,904 --> 00:07:30,078
-Pim asks for her tablet.
+00:07:27,454 --> 00:07:29,193
+with one full shot.
 
 109
-00:07:30,978 --> 00:07:35,761
-The crawler, the tablet, and back to Pim for a fuse.
+00:07:30,093 --> 00:07:31,833
+Shots miss a lot,
 
 110
-00:07:36,661 --> 00:07:38,835
-Three fuses in the pump,
+00:07:32,283 --> 00:07:36,630
+and no app tells you a shot hit or missed.
 
 111
-00:07:39,285 --> 00:07:42,328
-then the gate, and the spare cell.
+00:07:38,430 --> 00:07:41,909
+The key, then Marrow, and then the gully.
 
 112
-00:07:43,228 --> 00:07:46,707
-Pim opens the relay house from her chair,
+00:07:42,809 --> 00:07:44,983
+Pim asks for her tablet.
 
 113
-00:07:47,157 --> 00:07:48,896
-and the beacon lights.
+00:07:45,883 --> 00:07:48,491
+The engineer puts the crawler down,
 
 114
-00:07:50,696 --> 00:07:55,043
-Then play it again, and lose it with the crowbar.
+00:07:48,941 --> 00:07:53,289
+with a full shot from the foot of the stairs.
 
 115
-00:07:56,843 --> 00:08:01,626
-For the exercise, give Marrow a use for the medical kit,
+00:07:54,189 --> 00:07:58,537
+Then the tablet, and back to Pim for a fuse.
 
 116
-00:08:02,076 --> 00:08:05,989
-and write a second losing answer that plays fair.
+00:07:59,437 --> 00:08:01,611
+Three fuses in the pump,
 
 117
-00:08:07,789 --> 00:08:11,267
-That's the last new word for a while.
+00:08:02,061 --> 00:08:05,104
+then the gate, and the spare cell.
 
 118
-00:08:11,717 --> 00:08:16,065
+00:08:06,004 --> 00:08:09,917
+Pim opens the relay house from across the yard,
+
+119
+00:08:10,367 --> 00:08:12,107
+and the beacon lights.
+
+120
+00:08:13,907 --> 00:08:18,254
+Then play it again, and lose it with the crowbar.
+
+121
+00:08:20,054 --> 00:08:24,837
+For the exercise, give Marrow a use for the medical kit,
+
+122
+00:08:25,287 --> 00:08:29,200
+and write a second losing answer that plays fair.
+
+123
+00:08:31,000 --> 00:08:34,478
+That's the last new word for a while.
+
+124
+00:08:34,928 --> 00:08:39,276
 Next time, the screen your crew has been looking at.
