@@ -31,7 +31,7 @@ s03_who_is_offered_what_9	If only a medic's hands will do,
 s03_who_is_offered_what_10	ask for a skill instead.
 s04_a_mark_is_a_word_0	That third word on the bar is a mark from your map file.
 s04_a_mark_is_a_word_1	Any mark somebody can stand on is a word on their screen.
-s04_a_mark_is_a_word_2	So watch what happens in the gully.
+s04_a_mark_is_a_word_2	So take one step into the gully, onto its mark.
 s04_a_mark_is_a_word_3	The bar says arrive.
 s04_a_mark_is_a_word_4	That was a name for you, not for her.
 s04_a_mark_is_a_word_5	Name a mark for the place, the way you'd say it.
@@ -40,6 +40,9 @@ s04_a_mark_is_a_word_7	One thing the game does for you.
 s04_a_mark_is_a_word_8	A mark with something hidden on it isn't shown at all,
 s04_a_mark_is_a_word_9	until the thing is found.
 s04_a_mark_is_a_word_10	So the map never gives your secret away.
+s04_a_mark_is_a_word_11	Once Marrow has told of the kit,
+s04_a_mark_is_a_word_12	the bar says scrub,
+s04_a_mark_is_a_word_13	and stepping on it picks the kit up.
 s05_titles_and_what_the_pack_say_0	An area's title is read after other words.
 s05_titles_and_what_the_pack_say_1	Go to, in Look. To, in Beam.
 s05_titles_and_what_the_pack_say_2	So a title that starts with The reads badly twice,

@@ -18,8 +18,12 @@
 >   library's documentation and lint. They have NOT been re-played in the mock.
 > - **PLAYED IN THE GAME 2026-10-16** (server, Helm, Comms; ten stills). Corrected from
 >   that play the same day: she starts about 5,000 from the ship; she is picked on the
->   Comms 2D map; nobody but Oduya and Brakk stands on her deck; Brakk downs anybody who
->   walks into her sight, and the play scene now says how to deal with her.
+>   Comms 2D map.
+> - **PLAYED AGAIN 2026-10-16 on the strongbow** (sitting 4). Every scene's game still is
+>   from that play. Once she has struck, her crew stand down: Gunner Brakk did not fight
+>   (a crew member stood beside her ~15 s, no hit), so nobody was downed and the medkit
+>   beat is gone. One FULL shot still drops her and her power cell. The game also stands
+>   generated `Pirate crew` figures, calm, in the Plunder Hold and Crew Berths.
 > - **HULL CHANGED 2026-10-16: `pirate_strongbow`, not `pirate_brigantine`.** The
 >   brigantine is a light carrier (`baycount` 6, role `carrier` in the ship data), so
 >   Legendary Missions launched six `Black Gull NN` fighters that shot at the ship all
@@ -73,14 +77,11 @@ Not seen yet. If one is not as described, stop and fix the page:
 
 1. How fast she runs for home, and how long a real crew has.
 2. Where a student finds `debug.log`.
-3. The room names on the handheld's bar as words (`Brig`, `Boat Bay`, `Hallway`). The
-   2026-10-16 play showed the raw keys (`room:brig`); the library is being fixed.
-4. Look's line for the strongbox: its description, not its bare name. Same play, same fix.
-5. The open Comms menu changing by itself when she strikes. Same play, same fix.
-6. Run Down the Black Gull in the Quest Log with the strongbow drawn under its lead
-   line. (The brigantine was drawn there; the strongbow has not been seen.)
-7. On the strongbow's deck: that the strongbox, Oduya and Brakk stand where the mock put
-   them, and that Brakk comes into sight through the boat bay's door five cells off.
+
+Seen in the game since (2026-10-16, on the strongbow): the bar's room names as words
+(`Hallway`, `Brig`, `Boat Bay`); Look's description of the strongbox; the open Comms
+menu changing by itself when she strikes; her picture in the Quest Log; the strongbox and
+Oduya in a brig each, Brakk in the boat bay.
 
 ## Scenes
 
@@ -92,7 +93,7 @@ party. Then a title: Boarding an enemy ship.
 **Say:** "For eight lectures, you've drawn every floor your crew walked on. ||| Today
 they board a ship, | and you draw nothing. || The game builds her deck from her own
 plan. ||| Your job is what's on it. || A prisoner, a
-gunner who won't give up, | and a strongbox that ends it three ways. ||| It's brand new, so at the end I'll show you what to check before your crew finds it.
+gunner with the cell your beacon needs, | and a strongbox that ends it three ways. ||| It's brand new, so at the end I'll show you what to check before your crew finds it.
 ||"
 
 ### 2. One party at a time
@@ -157,11 +158,11 @@ hallway, and the game says so once. ||"
 
 ### 6. Her own crew, and the walk
 
-**Screen:** The game first: the deck on Helm, just beamed across, nobody else in view.
-Then the strongbox in its brig. Then one rule, as a card.
+**Screen:** The game first: the deck on Helm, just beamed across. Then Mate Oduya in
+her brig. Then the strongbox in its brig. Then one rule, as a card.
 
-**Say:** "Here's her deck again. || Nobody stands about on it | but the people you
-wrote. ||| A calm person blocks the cell they stand on, | and so does a strongbox. || So
+**Say:** "Here's her deck again. || A few of her own crew stand about on it too, | calm,
+and they won't fight. ||| A calm person blocks the cell they stand on, | and so does a strongbox. || So
 the game walks the deck before it puts anything down. || Nothing of yours stands in a
 doorway, | or anywhere that would shut something in. ||| Where a thing stands can change
 when you add a record. | What it can never do is block the way. ||| So keep one rule:
@@ -170,16 +171,13 @@ after every change to what's aboard, | go aboard and walk to each thing. ||"
 ### 7. Three endings
 
 **Screen:** The game, three windows: the server, Helm and Comms. Helm closes on her. Comms presses the button. The
-party beams across. Comms' Fire app armed with FULL, the gunner in sight through the boat
-bay's door. Pack, Use medkit on Lt Dana Ross. The strongbox scene with its four answers.
-Then the endings table.
+party beams across. Comms' Fire app armed with FULL, the gunner in sight in the boat bay.
+The strongbox scene with its four answers. Then the endings table.
 
 **Say:** "Now play it through. || Helm closes to fifteen hundred, and she strikes. || Comms
-selects her, and sends a party. ||| Aboard, the gunner waits in the boat bay. || She sees
-anyone within four cells, | and one hit can put them down. ||| So one of you goes aft, |
-a cell at a time. || The moment she's in sight, five cells off, | fire, full, arm, and
-click her. || Shots miss a lot, | and no app tells you a shot hit or missed. ||| If she
-downs somebody, | the boarding kit gets them up again. | Pack, use medkit. ||| The
+selects her, and sends a party. ||| Aboard, the gunner stands in the boat bay. || Once
+the ship has struck, | her crew stand down, | and the gunner with them. ||| She still
+carries the relay's cell. || Fire, full, arm, and click her, | and she drops it. ||| The
 strongbox has three answers that matter. || Take her, and she joins your side, | and the quest pays. || Scuttle her, and
 she's gone. || Leave her, and she runs for home. ||| Every one of them brings the party
 home first. || And after every one, | the relay opens again when the ship comes back.

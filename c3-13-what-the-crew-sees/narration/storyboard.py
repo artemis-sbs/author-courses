@@ -221,10 +221,10 @@ STILLS = {
     "game_l13_marrow_ross": ("game", "Helm's xESS, Act, Lt Ross talking to Old Marrow while Dr Hale stands on the landing pad six cells off: five answers, the last 'Look at that cough (covering for medical)'"),
     "game_l13_marrow_hale": ("game", "Science's xESS, Act, Dr Hale talking to Old Marrow with Lt Ross away: 'Look at that cough' with no covering mark, fourth of five"),
     "game_l13_bar_hidden": ("game", "Science's xESS, Dr Hale standing on the scrub cell where the medical kit is hidden, before Marrow has told of it: the bar's third slot reads Kesh Relay. RE-SHOOT: right word, but 7ea2c918 drew the area title on every cell"),
-    "game_l13_bar_scrub": ("game", "Science's xESS, Dr Hale on the kit's cell after Ask what he has put by: the kit drawn there now, Marrow's line about it in Act, and the bar reads scrub. RE-SHOOT: 7ea2c918 drew Kesh Relay, and she stood one cell east of the kit"),
+    "game_l13_bar_scrub": ("game", "Science's xESS, Dr Hale on the kit's cell after Ask what he has put by: the bar reads scrub, the cell is empty (the step picked the kit up), Marrow's line about it and 'Dr Ines Hale picked up Medical kit.' in Act (sitting 4)"),
     "game_l13_scan_before": ("game", "Science's xESS, Scan in the yard by the tent (state start, the kit already told of): Kesh Relay, '**Tent** - no reading', the Pump house key, the Medical kit, and Old Marrow, each with its line"),
-    "game_l13_bar_arrive": ("game", "Science's xESS, Dr Hale just walked into the gully (state start): the bar reads Dr Ines Hale, medical, science, arrive. RE-SHOOT: 7ea2c918 drew The Dry Gully"),
-    "game_l13_act_toolbox": ("game", "Science's xESS, Act after the brass key and the toolbox: Marrow's talk above, then 'Dr Ines Hale picked up Pump house key.' and 'Dr Ines Hale picked up Toolbox (fuse x2).', each with its picture. AWAITING RE-SHOOT: 7ea2c918 wrote 'picked up pump key from the Pump house key.' and 'picked up fuse x2 from the Toolbox.'"),
+    "game_l13_bar_arrive": ("game", "Science's xESS, Dr Hale one step into the gully, on the mark's cell (state start): the bar reads Dr Ines Hale, medical, science, arrive (the cell she landed on reads The Dry Gully) (sitting 4)"),
+    "game_l13_act_toolbox": ("game", "Science's xESS, Act after the kit, the brass key and the toolbox: Marrow's talk above, then 'Dr Ines Hale picked up Medical kit.', 'Dr Ines Hale picked up Pump house key.', the end of the conversation, and 'Dr Ines Hale picked up Toolbox (fuse x2).', each with its picture (sitting 4)"),
     "game_l13_pack_before": ("game", "Science's xESS, Pack after the key and the toolbox (state start): fuse x2, pump key x1"),
     "game_l13_look_before": ("game", "Science's xESS, Look back in the yard beside the trail sign (state start): Use Trail sign, 'Go to The Dry Gully', Further off '! Old Marrow - 17 W', '? Relay keycard - 10 SW'"),
     "game_l13_beam_before": ("game", "Science's xESS, Beam in the yard (state start): 'To The Dry Gully'"),
@@ -236,7 +236,7 @@ STILLS = {
     "game_l13_tasks_hale_after": ("game", "Science's xESS, Tasks (state final): See to Marrow's Cough, Active, its page and its leads"),
     "game_l13_tasks_ross_after": ("game", "Helm's xESS, Tasks (state final): Lt Dana Ross > Find a Place to Set Down, Active; its page, 'Ask the caretaker where a shuttle could land', 'If the beacon cannot be lit, somebody will have to fly a new one down.' AWAITING RE-SHOOT: the sentence breaks after 'will' (library defect)"),
     "game_l13_scan_after": ("game", "Science's xESS, Scan by the tent (state final): '**Tent** - Canvas, a camp bed, and a kettle that is still warm.'"),
-    "game_l13_bar_gully_mouth": ("game", "Science's xESS, Dr Hale just walked into the gully (state final): the bar reads gully mouth. RE-SHOOT: 7ea2c918 drew Dry Gully"),
+    "game_l13_bar_gully_mouth": ("game", "Science's xESS, Dr Hale one step into the gully, on the mark's cell (state final): the bar reads gully mouth (the arrival cell reads Dry Gully) (sitting 4)"),
     "game_l13_pack_after": ("game", "Science's xESS, Pack after the key and the toolbox (state final): fuse x2, pump house key x1"),
     "game_l13_look_after": ("game", "Science's xESS, Look back in the yard (state final): 'Go to Dry Gully'"),
     "game_l13_log_relight": ("game", "Helm's Quest Log, Relight Kesh Relay selected (state final): the station picture with 'Kesh Relay, the only light on the Kesh run.', the sentence, the three-row table What / What the ship knows, and 'Every convoy on the Kesh run steers by that lamp.'"),
@@ -259,8 +259,8 @@ _HOME = ("rect", 0.668, 0.195, 0.982, 0.99)         # game_l13_tiles: the list o
 _CR_LIST = ("rect", 0.668, 0.205, 0.99, 0.39)       # game_l13_crew: 1 down, Artemis, Dr Ines Hale (you), Everyone
 _CR_BTN = ("rect", 0.668, 0.86, 0.99, 0.995)        # ... Report in, Beam up
 _AT_ALL = ("rect", 0.672, 0.2, 0.97, 0.885)         # game_l13_act_toolbox: the whole transcript
-_AT_BOTH = ("rect", 0.672, 0.745, 0.97, 0.885)      # ... the two pickup lines
-_AT_KEY = ("rect", 0.672, 0.745, 0.97, 0.795)       # ... 'picked up Pump house key.' (the first pickup line; check after the re-shoot)
+_AT_BOTH = ("rect", 0.672, 0.55, 0.97, 0.86)        # ... the three pickup lines (kit, key, toolbox)
+_AT_KEY = ("rect", 0.672, 0.625, 0.97, 0.69)        # ... 'picked up Pump house key.' (sitting 4)
 _LK_ALL = ("rect", 0.668, 0.198, 0.99, 0.522)       # game_l13_look_before / _after: the buttons
 _LK_GO = ("rect", 0.668, 0.267, 0.99, 0.338)        # ... 'Go to The Dry Gully' / 'Go to Dry Gully'
 _PK_ALL = ("rect", 0.668, 0.198, 0.82, 0.29)        # game_l13_pack_before / _after: the two items
@@ -277,11 +277,13 @@ _MR_HALE = ("rect", 0.19, 0.3, 0.235, 0.375)        # ... Hale on the landing pa
 _MR_COVER = ("rect", 0.672, 0.607, 0.988, 0.652)    # ... 'Look at that cough (covering for medical)'
 _TR_PARTY = ("rect", 0.672, 0.205, 0.99, 0.44)      # game_l13_tasks_ross_before: Party, Relight, Hold, no story
 _HD_HALE = ("rect", 0.232, 0.51, 0.272, 0.578)      # game_l13_bar_hidden: Hale on the kit's cell
-_SC_KIT = ("rect", 0.235, 0.545, 0.265, 0.58)       # game_l13_bar_scrub: the kit, drawn now
+_SC_KIT = ("rect", 0.232, 0.51, 0.272, 0.578)       # game_l13_bar_scrub: Hale on the kit's cell, empty now
+_SC_TOLD = ("rect", 0.672, 0.49, 0.99, 0.67)        # ... Marrow's line about the kit
+_SC_PICK = ("rect", 0.672, 0.815, 0.99, 0.87)       # ... 'Dr Ines Hale picked up Medical kit.'
 _SB_ALL = ("rect", 0.668, 0.2, 0.99, 0.46)          # game_l13_scan_before: everything in sight
 _SB_TENT = ("rect", 0.668, 0.243, 0.83, 0.275)      # ... 'Tent - no reading'
 _SA_TENT = ("rect", 0.668, 0.243, 0.99, 0.3)        # game_l13_scan_after: the tent's Scan line
-_AR_HALE = ("rect", 0.036, 0.355, 0.082, 0.42)      # game_l13_bar_arrive / _gully_mouth: Hale at the gully's entry
+_AR_HALE = ("rect", 0.07, 0.4, 0.12, 0.475)         # game_l13_bar_arrive / _gully_mouth: Hale at the gully's entry
 _BP_ALL = ("rect", 0.018, 0.11, 0.5, 0.3)           # game_l13_bp: who is going, and who is down
 _BP_PARTY = ("rect", 0.018, 0.235, 0.48, 0.3)       # ... In the party, Dr Ines Hale
 _MS_HALE = ("rect", 0.022, 0.118, 0.445, 0.202)     # game_l13_messages: 'Dr Ines Hale, reporting in.'
@@ -330,8 +332,10 @@ BOARD = {
         {"from": 6.5, "still": "game_l13_bar_gully_mouth", "marks": [_SLOT]},
         {"from": 7, "still": "game_l13_bar_hidden", "marks": [_HD_HALE]},
         {"from": 8, "still": "game_l13_bar_hidden", "marks": [_HD_HALE, _SLOT]},
-        {"from": 9, "still": "game_l13_bar_scrub", "marks": [_SC_KIT, _SLOT]},
         {"from": 10, "still": "game_l13_bar_hidden", "marks": [_SLOT]},
+        {"from": 11, "still": "game_l13_bar_scrub", "marks": [_SC_TOLD]},
+        {"from": 12, "still": "game_l13_bar_scrub", "marks": [_SLOT]},
+        {"from": 13, "still": "game_l13_bar_scrub", "marks": [_SC_KIT, _SC_PICK]},
     ]},
     "s05_titles_and_what_the_pack_say": {"step": 3, "beats": [
         {"from": 0, "still": "game_l13_look_before", "marks": [_LK_GO]},

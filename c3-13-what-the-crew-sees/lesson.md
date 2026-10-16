@@ -111,11 +111,10 @@ is cut short here:
 Dr Ines Hale
 [Ask what he has put by]
 He nods at the scrub beside the landing pad. "Medical kit, under the netting. ..."
-Dr Ines Hale
-[Thank him]
+Dr Ines Hale picked up Medical kit.
+Dr Ines Hale picked up Pump house key.
 ~ ~ ~
 The conversation is over.
-Dr Ines Hale picked up Pump house key.
 Dr Ines Hale picked up Toolbox (fuse x2).
 ```
 
@@ -185,7 +184,10 @@ The bar said `pad`. That is the mark `@pad` in `landing.tiles`. Any mark a crew 
 can stand on is a word on their bar, in the Crew app beside their name, and at the top
 of Scan. An underscore is shown as a space.
 
-Now walk Dr Hale across your three maps, and read the bar on four more marks:
+Now walk Dr Hale across your three maps, and read the bar on four more marks. A mark
+shows only while somebody stands ON its cell. The cell a person lands on when they walk
+into an area reads the area's title (`The Dry Gully`). One step further, onto the
+mark's own cell, and the bar reads the mark:
 
 ```
 Dr Ines Hale | medical, science | post
@@ -236,7 +238,8 @@ The gully names that last mark too, as the place its stairs come out. In
   to_cistern: cistern @foot_of_the_stairs
 ```
 
-Save the three files and run lint. It says `clean`. Played again, the bar reads:
+Save the three files and run lint. It says `clean`. Played again, on the pad and one step
+into the gully, the bar reads:
 
 ```
 Dr Ines Hale | medical, science | landing pad
@@ -253,8 +256,9 @@ Dr Ines Hale | medical, science | Kesh Relay
 ```
 
 The area's title, and nothing more. A cell with no mark at all reads the same way. Once
-Marrow has told of the kit, the same cell reads `scrub`. So you may put a hidden thing
-on a mark. Name the mark for the place all the same, because it is on the bar from the
+Marrow has told of the kit, the same cell reads `scrub`, and stepping onto it picks the
+kit up: Act says `Dr Ines Hale picked up Medical kit.` and the cell is empty. So you may
+put a hidden thing on a mark. Name the mark for the place all the same, because it is on the bar from the
 moment the thing is found.
 
 Marks under a thing that blocks, like `door` and `tent`, are never stood on. Leave them.
@@ -748,7 +752,8 @@ Write down every word that makes you wince. That list is your exercise.
 ## Exercise
 
 1. Stand on the cell where the medical kit is hidden, before and after you ask Marrow
-   about it. Read the bar both times.
+   about it. Read the bar both times. The second time, read Act too: the step picked the
+   kit up.
 2. Read every prop heading in your file after the word `Use`, and after the words
    `picked up`, then the same prop's line in the pack. Change the ones that jar, or that
    name one thing two ways.

@@ -3,7 +3,7 @@ s01_cold_open_1	Today they board a ship,
 s01_cold_open_2	and you draw nothing.
 s01_cold_open_3	The game builds her deck from her own plan.
 s01_cold_open_4	Your job is what's on it.
-s01_cold_open_5	A prisoner, a gunner who won't give up,
+s01_cold_open_5	A prisoner, a gunner with the cell your beacon needs,
 s01_cold_open_6	and a strongbox that ends it three ways.
 s01_cold_open_7	It's brand new, so at the end I'll show you what to check before your crew finds it.
 s02_one_party_at_a_time_0	The button needs four things.
@@ -67,8 +67,8 @@ s05_kinds_of_room_10	You write the kind, and it works on any hull.
 s05_kinds_of_room_11	And when a hull has no such room,
 s05_kinds_of_room_12	your thing stands in the hallway, and the game says so once.
 s06_her_own_crew_and_the_walk_0	Here's her deck again.
-s06_her_own_crew_and_the_walk_1	Nobody stands about on it
-s06_her_own_crew_and_the_walk_2	but the people you wrote.
+s06_her_own_crew_and_the_walk_1	A few of her own crew stand about on it too,
+s06_her_own_crew_and_the_walk_2	calm, and they won't fight.
 s06_her_own_crew_and_the_walk_3	A calm person blocks the cell they stand on,
 s06_her_own_crew_and_the_walk_4	and so does a strongbox.
 s06_her_own_crew_and_the_walk_5	So the game walks the deck before it puts anything down.
@@ -81,26 +81,21 @@ s06_her_own_crew_and_the_walk_11	go aboard and walk to each thing.
 s07_three_endings_0	Now play it through.
 s07_three_endings_1	Helm closes to fifteen hundred, and she strikes.
 s07_three_endings_2	Comms selects her, and sends a party.
-s07_three_endings_3	Aboard, the gunner waits in the boat bay.
-s07_three_endings_4	She sees anyone within four cells,
-s07_three_endings_5	and one hit can put them down.
-s07_three_endings_6	So one of you goes aft,
-s07_three_endings_7	a cell at a time.
-s07_three_endings_8	The moment she's in sight, five cells off,
-s07_three_endings_9	fire, full, arm, and click her.
-s07_three_endings_10	Shots miss a lot,
-s07_three_endings_11	and no app tells you a shot hit or missed.
-s07_three_endings_12	If she downs somebody,
-s07_three_endings_13	the boarding kit gets them up again.
-s07_three_endings_14	Pack, use medkit.
-s07_three_endings_15	The strongbox has three answers that matter.
-s07_three_endings_16	Take her, and she joins your side,
-s07_three_endings_17	and the quest pays.
-s07_three_endings_18	Scuttle her, and she's gone.
-s07_three_endings_19	Leave her, and she runs for home.
-s07_three_endings_20	Every one of them brings the party home first.
-s07_three_endings_21	And after every one,
-s07_three_endings_22	the relay opens again when the ship comes back.
+s07_three_endings_3	Aboard, the gunner stands in the boat bay.
+s07_three_endings_4	Once the ship has struck,
+s07_three_endings_5	her crew stand down,
+s07_three_endings_6	and the gunner with them.
+s07_three_endings_7	She still carries the relay's cell.
+s07_three_endings_8	Fire, full, arm, and click her,
+s07_three_endings_9	and she drops it.
+s07_three_endings_10	The strongbox has three answers that matter.
+s07_three_endings_11	Take her, and she joins your side,
+s07_three_endings_12	and the quest pays.
+s07_three_endings_13	Scuttle her, and she's gone.
+s07_three_endings_14	Leave her, and she runs for home.
+s07_three_endings_15	Every one of them brings the party home first.
+s07_three_endings_16	And after every one,
+s07_three_endings_17	the relay opens again when the ship comes back.
 s08_what_to_warn_your_crew_about_0	Lint says clean on your finished mission.
 s08_what_to_warn_your_crew_about_1	What's left to know isn't in your file.
 s08_what_to_warn_your_crew_about_2	A shot never removes a prop.

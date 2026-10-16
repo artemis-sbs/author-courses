@@ -44,8 +44,11 @@ game_l15_comms_struck and game_l15_comms_hove (Threats 7 / 6 and shields shot do
 fighters), game_l15_deck_arrive, game_l15_deck_brig, game_l15_strongbox and game_l15_oduya
 (her deck; the bar's raw `room:brig` key and Look's bare `Captain's strongbox` line are
 library defects being fixed), game_l15_log_prize (the brigantine sentence). game_l15_bp_gull
-names no hull and may be kept (no beat uses it). NOT TAKEN: game_l15_brakk_fire and
-game_l15_medkit (placeholders).
+names no hull and may be kept (no beat uses it). SITTING 4 (2026-10-16): all taken again on
+the strongbow. Once she has struck her crew stand down: Brakk never attacked, so
+game_l15_medkit was never taken and its beat (and step 7 and the medkit part of step 8
+below) is dropped. game_l15_brakk_fire shows Vale armed FULL with a calm Brakk in sight.
+Generated `Pirate crew` figures stand calm in the Plunder Hold and Crew Berths.
 State "final": `python game.py c3-15-boarding-an-enemy-ship start --consoles server,helm,comms`.
 Nobody beams down at the relay. ENGINE 1.3.15 ON COMMS: select only the Black Gull, never press
 Cancel, and DO NOT TOUCH COMMS from step 2 until she has struck (re-clicking her to refresh the
@@ -161,8 +164,7 @@ STILLS = {
     "game_l15_deck_arrive": ("game", "Helm's console aboard the Black Gull, just beamed across: the generated deck on the map, nobody else in view, the boarding kit a step from the arrival, the xESS home beside it"),
     "game_l15_deck_brig": ("game", "Helm's console aboard her, Lt Ross in the west brig: the strongbox in the brig on the map, the bar naming the room (Brig), Look's Use Captain's strongbox and the box's description"),
     "game_l15_oduya": ("game", "Comms' xESS aboard her, Act, talking to Mate Oduya: 'Tender Halcyon, out of Kesh...', and Ask what the tender was carrying, Ask who is still armed, Tell her she is going home"),
-    "game_l15_brakk_fire": ("game", "Comms' xESS aboard her, Ens Vale in the hallway on the right of the boat bay, five cells from Gunner Brakk: FIRE armed, FULL, Brakk in sight through the bay's door"),
-    "game_l15_medkit": ("game", "Comms' xESS, Ens Vale beside Lt Ross, who is DOWN: Pack, with Use medkit on Lt Dana Ross"),
+    "game_l15_brakk_fire": ("game", "Comms' xESS aboard her, Ens Vale three cells from Gunner Brakk in the boat bay: FIRE armed, FULL, Brakk in sight"),
     "game_l15_strongbox": ("game", "Helm's xESS, Act, the strongbox: its line, and Take her as a prize, Open her sea cocks, Go back to the ship, Leave it for now"),
     "game_l15_log_prize": ("game", "Helm's ePADD Quest Log after Take her as a prize, both crew home: Take the Black Gull Done, Reward 200 credits; Come Back to Kesh Relay Active"),
     # drawn
@@ -191,23 +193,26 @@ STILLS = {
     "card_next": ("card", "title", {"kicker": "Next", "title": "Lecture 16", "sub": "A long boarding mission"}),
 }
 
-# Marks on the game stills (fractions of the 1280 x 960 frame), measured on the 2026-10-16
-# (brigantine) stills: check each after the re-shoot.
+# Marks on the game stills (fractions of the 1280 x 960 frame), measured 2026-10-16 on the
+# sitting-4 (strongbow) stills.
 _CS_SEND = ("rect", 0.27, 0.67, 0.62, 0.755)        # game_l15_comms_struck: Send a boarding party
 _CS_STRIP = ("rect", 0.018, 0.49, 0.27, 0.56)       # ... the strip: Quest complete: Run Down the Black Gull
-_CG_HER = ("rect", 0.655, 0.56, 0.76, 0.67)         # game_l15_comms_gull: her marker, Black Gull
+_CG_HER = ("rect", 0.63, 0.655, 0.74, 0.76)         # game_l15_comms_gull: her marker, Black Gull
 _CG_BTNS = ("rect", 0.27, 0.555, 0.645, 0.795)      # ... Hail, Taunt, Surrender now
 _CH_SAYS = ("rect", 0.51, 0.255, 1.0, 0.35)         # game_l15_comms_hove: her answer
-_DA_DECK = ("rect", 0.27, 0.265, 0.585, 0.89)       # game_l15_deck_arrive: the deck, nobody about
+_DA_DECK = ("rect", 0.265, 0.105, 0.435, 0.84)      # game_l15_deck_arrive: the deck, nobody about
 _OD_LINE = ("rect", 0.67, 0.33, 0.99, 0.49)         # game_l15_oduya: her face and her line
-_OD_MAP = ("rect", 0.465, 0.36, 0.505, 0.42)        # ... Mate Oduya on the map, in the east brig
+_OD_MAP = ("rect", 0.315, 0.655, 0.39, 0.74)         # ... Mate Oduya on the map, in the east brig
 _SB_ALL = ("rect", 0.67, 0.205, 0.99, 0.57)         # game_l15_strongbox: its line and four answers
 _SB_THREE = ("rect", 0.67, 0.355, 0.85, 0.515)      # ... Take her, Open her sea cocks, Go back
 _LC_ROW = ("rect", 0.0, 0.215, 0.38, 0.285)         # game_l15_log_chase: Run Down the Black Gull
 _LC_PIC = ("rect", 0.385, 0.17, 0.74, 0.305)        # ... her picture and its caption
-_DB_BOX = ("rect", 0.305, 0.335, 0.395, 0.485)      # game_l15_deck_brig: the strongbox in the brig
-_DB_DECK = ("rect", 0.15, 0.0, 0.665, 0.995)        # ... the whole deck
+_DB_BOX = ("rect", 0.225, 0.63, 0.28, 0.695)        # game_l15_deck_brig: the strongbox in the brig
+_DB_DECK = ("rect", 0.035, 0.105, 0.665, 0.995)       # ... the whole deck
 _LP_DONE = ("rect", 0.385, 0.075, 0.575, 0.145)     # game_l15_log_prize: Done, 200 credits
+_BF_BRAKK = ("rect", 0.185, 0.52, 0.245, 0.64)      # game_l15_brakk_fire: Gunner Brakk, in the boat bay
+_BF_MAP = ("rect", 0.185, 0.49, 0.36, 0.64)         # ... Ens Vale and Brakk, three cells apart
+_BF_ARMED = ("rect", 0.67, 0.21, 0.99, 0.495)       # ... ARMED - FULL, > FULL
 
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
@@ -277,16 +282,16 @@ BOARD = {
         {"from": 0, "still": "game_l15_comms_gull", "marks": [_CG_HER]},
         {"from": 1, "still": "game_l15_comms_struck", "marks": [_CS_STRIP]},
         {"from": 2, "still": "game_l15_comms_hove", "marks": [_CH_SAYS]},
-        # the gunner: not taken yet (placeholders, no marks)
-        {"from": 3, "still": "game_l15_brakk_fire"},
-        {"from": 12, "still": "game_l15_medkit"},
-        {"from": 15, "still": "game_l15_strongbox", "marks": [_SB_THREE]},
-        {"from": 16, "still": "card_endings", "marks": [("part", "r1")]},
-        {"from": 17, "still": "game_l15_log_prize", "marks": [_LP_DONE]},
-        {"from": 18, "still": "card_endings", "marks": [("part", "r2")]},
-        {"from": 19, "still": "card_endings", "marks": [("part", "r3")]},
-        {"from": 20, "still": "card_endings", "marks": [("part", "r1c2"), ("part", "r2c2"), ("part", "r3c2")]},
-        {"from": 21, "still": "card_endings", "marks": [("part", "r1c5"), ("part", "r2c5"), ("part", "r3c5")]},
+        # the gunner (sitting 4: she stands down with her crew; no medkit beat)
+        {"from": 3, "still": "game_l15_brakk_fire", "marks": [_BF_BRAKK]},
+        {"from": 8, "still": "game_l15_brakk_fire", "marks": [_BF_ARMED, _BF_MAP]},
+        {"from": 10, "still": "game_l15_strongbox", "marks": [_SB_THREE]},
+        {"from": 11, "still": "card_endings", "marks": [("part", "r1")]},
+        {"from": 12, "still": "game_l15_log_prize", "marks": [_LP_DONE]},
+        {"from": 13, "still": "card_endings", "marks": [("part", "r2")]},
+        {"from": 14, "still": "card_endings", "marks": [("part", "r3")]},
+        {"from": 15, "still": "card_endings", "marks": [("part", "r1c2"), ("part", "r2c2"), ("part", "r3c2")]},
+        {"from": 16, "still": "card_endings", "marks": [("part", "r1c5"), ("part", "r2c5"), ("part", "r3c5")]},
     ]},
     "s08_what_to_warn_your_crew_about": {"step": 8, "beats": [
         {"from": 0, "still": "t_final", "marks": [("part", "run1:clean")]},

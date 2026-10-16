@@ -131,253 +131,265 @@ That third word on the bar is a mark from your map file.
 Any mark somebody can stand on is a word on their screen.
 
 34
-00:02:26,328 --> 00:02:29,372
-So watch what happens in the gully.
+00:02:26,328 --> 00:02:30,676
+So take one step into the gully, onto its mark.
 
 35
-00:02:30,272 --> 00:02:32,011
+00:02:31,576 --> 00:02:33,315
 The bar says arrive.
 
 36
-00:02:32,461 --> 00:02:36,374
+00:02:33,765 --> 00:02:37,678
 That was a name for you, not for her.
 
 37
-00:02:38,174 --> 00:02:42,957
+00:02:39,478 --> 00:02:44,261
 Name a mark for the place, the way you'd say it.
 
 38
-00:02:43,407 --> 00:02:46,885
+00:02:44,711 --> 00:02:48,189
 Landing pad. Gully mouth. Foot of the stairs.
 
 39
-00:02:48,685 --> 00:02:51,728
+00:02:49,989 --> 00:02:53,033
 One thing the game does for you.
 
 40
-00:02:52,628 --> 00:02:57,411
+00:02:53,933 --> 00:02:58,715
 A mark with something hidden on it isn't shown at all,
 
 41
-00:02:57,861 --> 00:03:00,035
+00:02:59,165 --> 00:03:01,339
 until the thing is found.
 
 42
-00:03:00,935 --> 00:03:04,413
+00:03:02,239 --> 00:03:05,717
 So the map never gives your secret away.
 
 43
-00:03:05,613 --> 00:03:09,091
-An area's title is read after other words.
+00:03:07,517 --> 00:03:10,561
+Once Marrow has told of the kit,
 
 44
-00:03:09,541 --> 00:03:12,585
-Go to, in Look. To, in Beam.
+00:03:11,011 --> 00:03:12,750
+the bar says scrub,
 
 45
-00:03:13,485 --> 00:03:17,833
-So a title that starts with The reads badly twice,
+00:03:13,200 --> 00:03:16,678
+and stepping on it picks the kit up.
 
 46
-00:03:18,283 --> 00:03:21,761
-and the fix is to take it off.
+00:03:17,878 --> 00:03:21,357
+An area's title is read after other words.
 
 47
-00:03:23,561 --> 00:03:26,170
-Next, the things you pick up.
+00:03:21,807 --> 00:03:24,850
+Go to, in Look. To, in Beam.
 
 48
-00:03:27,070 --> 00:03:30,113
-Act names each one by its heading,
+00:03:25,750 --> 00:03:30,098
+So a title that starts with The reads badly twice,
 
 49
-00:03:30,563 --> 00:03:32,737
-the words on your record.
+00:03:30,548 --> 00:03:34,026
+and the fix is to take it off.
 
 50
-00:03:34,537 --> 00:03:38,015
-For the key, that's the pump house key.
+00:03:35,826 --> 00:03:38,435
+Next, the things you pick up.
 
 51
-00:03:38,915 --> 00:03:42,828
-But the pack and the door say pump key.
+00:03:39,335 --> 00:03:42,378
+Act names each one by its heading,
 
 52
-00:03:43,728 --> 00:03:48,511
-That's the item's key, with its underscore shown as a space.
+00:03:42,828 --> 00:03:45,002
+the words on your record.
 
 53
-00:03:50,311 --> 00:03:54,224
-So she picks up one thing, and carries another.
+00:03:46,802 --> 00:03:50,280
+For the key, that's the pump house key.
 
 54
-00:03:55,124 --> 00:03:59,472
-Make the item's key the same words as the heading.
+00:03:51,180 --> 00:03:55,093
+But the pack and the door say pump key.
 
 55
-00:04:00,372 --> 00:04:02,111
-Three lines name it,
+00:03:55,993 --> 00:04:00,776
+That's the item's key, with its underscore shown as a space.
 
 56
-00:04:02,561 --> 00:04:04,735
-and all three change together.
+00:04:02,576 --> 00:04:06,489
+So she picks up one thing, and carries another.
 
 57
-00:04:05,185 --> 00:04:07,793
-Miss one, and lint tells you.
+00:04:07,389 --> 00:04:11,737
+Make the item's key the same words as the heading.
 
 58
-00:04:08,993 --> 00:04:12,037
-Scan lists everything in sight, scenery too.
+00:04:12,637 --> 00:04:14,376
+Three lines name it,
 
 59
-00:04:12,937 --> 00:04:17,720
-With no scan line and no description, it says no reading.
+00:04:14,826 --> 00:04:17,000
+and all three change together.
 
 60
-00:04:18,620 --> 00:04:21,663
-So give your scenery one line each.
+00:04:17,450 --> 00:04:20,059
+Miss one, and lint tells you.
 
 61
-00:04:22,113 --> 00:04:24,722
-It's the cheapest clue you have.
+00:04:21,259 --> 00:04:24,302
+Scan lists everything in sight, scenery too.
 
 62
-00:04:26,522 --> 00:04:28,696
-Now open the Tasks app.
+00:04:25,202 --> 00:04:29,985
+With no scan line and no description, it says no reading.
 
 63
-00:04:29,596 --> 00:04:35,683
-It's a list, and every quest in it is a heading and a state.
+00:04:30,885 --> 00:04:33,928
+So give your scenery one line each.
 
 64
-00:04:36,583 --> 00:04:40,496
-The objective is on the page under the list,
+00:04:34,378 --> 00:04:36,987
+It's the cheapest clue you have.
 
 65
-00:04:40,946 --> 00:04:43,554
-for the one quest you've picked.
+00:04:38,787 --> 00:04:40,961
+Now open the Tasks app.
 
 66
-00:04:45,354 --> 00:04:49,267
-So the heading is what the crew reads first.
+00:04:41,861 --> 00:04:47,948
+It's a list, and every quest in it is a heading and a state.
 
 67
-00:04:49,717 --> 00:04:51,891
-Make the heading the instruction.
+00:04:48,848 --> 00:04:52,761
+The objective is on the page under the list,
 
 68
-00:04:52,791 --> 00:04:56,270
-The Caretaker's Cough becomes See to Marrow's Cough.
+00:04:53,211 --> 00:04:55,820
+for the one quest you've picked.
 
 69
-00:04:57,470 --> 00:05:00,948
-Look at the mission as your helm officer.
+00:04:57,620 --> 00:05:01,533
+So the heading is what the crew reads first.
 
 70
-00:05:01,848 --> 00:05:04,022
-No story of her own.
+00:05:01,983 --> 00:05:04,157
+Make the heading the instruction.
 
 71
-00:05:04,472 --> 00:05:08,820
-One answer she's covering, and a panel that refuses her.
+00:05:05,057 --> 00:05:08,535
+The Caretaker's Cough becomes See to Marrow's Cough.
 
 72
-00:05:10,620 --> 00:05:14,967
-Two of your five crew have come down to watch.
+00:05:09,735 --> 00:05:13,213
+Look at the mission as your helm officer.
 
 73
-00:05:15,867 --> 00:05:21,520
-So give each of them a story, and one answer that finishes it.
+00:05:14,113 --> 00:05:16,287
+No story of her own.
 
 74
-00:05:21,970 --> 00:05:26,317
-You know every word of this from the fifth lecture.
+00:05:16,737 --> 00:05:21,085
+One answer she's covering, and a panel that refuses her.
 
 75
-00:05:28,117 --> 00:05:31,161
-Lint warns that nothing sends the signals,
+00:05:22,885 --> 00:05:27,233
+Two of your five crew have come down to watch.
 
 76
-00:05:31,611 --> 00:05:35,089
-and then the two answers put that right.
+00:05:28,133 --> 00:05:33,785
+So give each of them a story, and one answer that finishes it.
 
 77
-00:05:36,289 --> 00:05:38,463
-Somebody stays on the bridge.
+00:05:34,235 --> 00:05:38,583
+You know every word of this from the fifth lecture.
 
 78
-00:05:38,913 --> 00:05:40,652
-Here's everything they get.
+00:05:40,383 --> 00:05:43,426
+Lint warns that nothing sends the signals,
 
 79
-00:05:42,452 --> 00:05:45,061
-A list of who went down.
+00:05:43,876 --> 00:05:47,354
+and then the two answers put that right.
 
 80
-00:05:45,961 --> 00:05:49,439
-The shared quests, as they start and finish.
+00:05:48,554 --> 00:05:50,728
+Somebody stays on the bridge.
 
 81
-00:05:50,339 --> 00:05:53,383
-And in Messages, one line of yours,
+00:05:51,178 --> 00:05:52,917
+Here's everything they get.
 
 82
-00:05:53,833 --> 00:05:57,311
-when somebody on the ground presses Report in.
+00:05:54,717 --> 00:05:57,326
+A list of who went down.
 
 83
-00:05:58,211 --> 00:06:01,689
-The rest is the crew's mail from home.
+00:05:58,226 --> 00:06:01,704
+The shared quests, as they start and finish.
 
 84
-00:06:03,489 --> 00:06:06,533
-No scene line ever reaches the bridge.
+00:06:02,604 --> 00:06:05,648
+And in Messages, one line of yours,
 
 85
-00:06:07,433 --> 00:06:10,911
-So the shared quests are its only window.
+00:06:06,098 --> 00:06:09,576
+when somebody on the ground presses Report in.
 
 86
-00:06:11,361 --> 00:06:13,535
-Remember that for the capstone.
+00:06:10,476 --> 00:06:13,954
+The rest is the crew's mail from home.
 
 87
-00:06:15,335 --> 00:06:20,552
-Select a quest, and the Quest Log shows its description in full.
+00:06:15,754 --> 00:06:18,798
+No scene line ever reaches the bridge.
 
 88
-00:06:21,452 --> 00:06:23,626
-The starter's is one sentence,
+00:06:19,698 --> 00:06:23,176
+So the shared quests are its only window.
 
 89
-00:06:24,076 --> 00:06:27,554
-and for the bridge that's the whole briefing.
+00:06:23,626 --> 00:06:25,800
+Remember that for the capstone.
 
 90
-00:06:28,454 --> 00:06:30,628
-So give it a page.
+00:06:27,600 --> 00:06:32,817
+Select a quest, and the Quest Log shows its description in full.
 
 91
-00:06:31,078 --> 00:06:33,252
-The relay's picture comes first,
+00:06:33,717 --> 00:06:35,891
+The starter's is one sentence,
 
 92
-00:06:33,702 --> 00:06:38,485
-then a table of what the ship knows from up there.
+00:06:36,341 --> 00:06:39,820
+and for the bridge that's the whole briefing.
 
 93
-00:06:40,285 --> 00:06:44,633
-For the exercise, play it to read, not to win.
+00:06:40,720 --> 00:06:42,893
+So give it a page.
 
 94
-00:06:45,533 --> 00:06:49,011
-Write down every word that makes you wince,
+00:06:43,343 --> 00:06:45,517
+The relay's picture comes first,
 
 95
-00:06:49,461 --> 00:06:52,504
-and then go and fix each one.
+00:06:45,967 --> 00:06:50,750
+then a table of what the ship knows from up there.
 
 96
-00:06:54,304 --> 00:06:57,783
+00:06:52,550 --> 00:06:56,898
+For the exercise, play it to read, not to win.
+
+97
+00:06:57,798 --> 00:07:01,276
+Write down every word that makes you wince,
+
+98
+00:07:01,726 --> 00:07:04,770
+and then go and fix each one.
+
+99
+00:07:06,570 --> 00:07:10,048
 Next time, we put a clock on it.

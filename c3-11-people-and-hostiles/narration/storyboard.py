@@ -147,6 +147,7 @@ STILLS = {
 _PI_PIM = ("rect", 0.195, 0.56, 0.235, 0.635)       # game_l11_pim: Pim in the scrub
 _PT_ROOM = ("rect", 0.67, 0.2, 0.985, 0.49)         # game_l11_pim_talk: her face, her line, two buttons
 _TK_SUMP = ("rect", 0.67, 0.29, 0.9, 0.355)         # game_l11_tasks: The Thing in the Sump, Active
+_TK_OBJ = ("rect", 0.67, 0.57, 0.88, 0.615)         # ... its objective, Clear the cistern walkway (sitting 4)
 _CR_BUG = ("rect", 0.5, 0.49, 0.55, 0.54)           # game_l11_crawler: the crawler on the east walkway
 _CR_LEAD = ("rect", 0.665, 0.86, 0.99, 0.93)        # ... the lead: Sump crawler - 8 E
 _SC_LINE = ("rect", 0.665, 0.31, 0.99, 0.36)        # game_l11_scan: the crawler's line
@@ -202,6 +203,7 @@ BOARD = {
     "s05_a_quest_it_finishes": {"step": 5, "beats": [
         # the game first: the engineer's Tasks app
         {"from": 0, "still": "game_l11_tasks", "marks": [_TK_SUMP]},
+        {"from": 2, "still": "game_l11_tasks", "marks": [_TK_OBJ]},
         {"from": 3, "still": "e_sump", "marks": [("lines", 126, 126)]},
         {"from": 5, "still": "e_sump", "marks": [("text", 126, "hostile_down_crawler")]},
         {"from": 6, "still": "e_sump", "marks": [("lines", 121, 129)]},

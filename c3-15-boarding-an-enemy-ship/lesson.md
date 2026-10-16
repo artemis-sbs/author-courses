@@ -4,8 +4,8 @@
 
 A pirate raider, the Black Gull, standing off Kesh Relay. The crew runs her down and
 she strikes her colors. Comms sends a party across, and they walk her deck: a prisoner
-in the brig, a gunner in the boat bay who did not agree to surrender, and the captain's
-strongbox, which ends it one of three ways.
+in the brig, a gunner in the boat bay with the relay's spare beacon cell on her back,
+and the captain's strongbox, which ends it one of three ways.
 
 **Nobody draws that deck.** The game builds it from the ship's own plan, the one
 Engineering looks at. You write what is on it, and you say where each thing goes by the
@@ -410,8 +410,11 @@ That is not an error. It is how one mission can board a raider and a freighter.
 
 ### Who else is aboard
 
-Nobody you did not write. In the game, the only people on her deck were Mate Oduya, in
-her brig, and Gunner Brakk, in the boat bay. None of her own crew stood about.
+Your records, and some of her own crew. In the game Mate Oduya stood in a brig and
+Gunner Brakk in the boat bay, as written, and the game added figures you did not write:
+`Pirate crew`, standing calm in the Plunder Hold and the Crew Berths. Scan reads one as
+`Pirate crew - no reading`. Scan lists the people of the whole deck, not only the room
+you are in: it named Mate Oduya from 25 cells off.
 
 Your records still have to fit round each other and round her furniture. A calm person
 and a prop with `Blocks: yes` each block the cell they stand on, so the game is careful
@@ -549,25 +552,17 @@ sbs run server,helm,comms,weapons,science -m MyAway map=0
    Take it.
 8. As Dr Hale, click Mate Oduya, in a brig. Ask her both questions. The second tells you
    where the gunner is.
-9. **Keep everybody out of the aft hallway.** Gunner Brakk stands in the boat bay, aft,
-   and she notices anybody within four cells that she can see. In the game one hit from
-   her put a crew member down. Send one person who means it.
-10. As Lt Reyes, walk aft from where you arrived, down the hallway on the right of the
-    boat bay, one cell at a time. The moment you can see her through the bay's door,
-    stop: you are five cells from her. Open **Fire**, choose FULL, press **Arm** and
-    click her. One FULL shot puts her down for good, and she drops a power cell. Walk
-    over and pick it up.
-
-    She stands still until she notices somebody, so a shot at her then lands. If she is
-    walking, expect to miss: a shot goes to the cell you clicked, and she may have left
-    it. Nothing on the handheld tells you that a shot hit or missed. Watch the map.
-11. If she downs somebody, that is what the kit is for. Whoever took it walks beside
-    them, opens **Pack**, and presses `Use medkit on` and their name. They are back on
-    their feet.
-12. Click the strongbox, in the other brig. Take **Take her as a prize**.
-13. Everybody is back at their console, and the ship has 200 credits. Helm: fly back to
+9. Gunner Brakk stands in the boat bay, aft. Her story says she did not strike, but once
+   the ship has struck, her crew stand down, and the gunner with them. In the game she
+   did not fight: a crew member stood beside her for fifteen seconds and was not hit.
+10. She still carries the cell. As Lt Reyes, walk aft until you can see her in the boat
+    bay. Open **Fire**, choose FULL, press **Arm** and click her. She stands still, so
+    the shot lands: she is down for good, and a power cell lies where she fell. Walk over
+    and pick it up. Nothing on the handheld says that a shot hit. Watch the map.
+11. Click the strongbox, in the other brig. Take **Take her as a prize**.
+12. Everybody is back at their console, and the ship has 200 credits. Helm: fly back to
     within 3000 of Kesh Relay. The Boarding Party tile offers **Kesh Relay** again.
-14. Beam down. Lt Reyes still has the cell. Light the beacon with it.
+13. Beam down. Lt Reyes still has the cell. Light the beacon with it.
 
 A script walked the same in the stand-in. The beacon was lit with the gunner's cell, and
 the last screen read `The beacon is lit. Every convoy on the Kesh run has its way home
@@ -636,7 +631,6 @@ ship was taken.
 | Comms will not open on her after she strikes, and lint is as it should be | The `station` art is not installed | `sbs fetch "MyAway" --update-libs`. Check the last line of `"shared_media"` in `story.json` |
 | A thing is in the hallway | Her hull has no room of that kind | Nothing, if you meant to board other hulls. `debug.log` has the line |
 | Somebody is down aboard her and stays down | The others are still up. Lecture 14's rule | The boarding kit, from the Pack app |
-| `Hit by Gunner Brakk - you are DOWN.` on Look, on the way aft | She saw them within four cells | Step 9: the kit gets them up. Then shoot her from five cells |
 | Lint says `mast-compile` and nothing runs | A line of the card is not indented | Four spaces, and eight on the `side_surrender` line |
 
 ## Exercise

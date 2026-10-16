@@ -17,12 +17,13 @@
 >   lists the key and the kit too, once the kit is found.
 > - **A pickup names the prop now** (sbs_utils `19c038f9`): Act reads `Dr Ines Hale
 >   picked up Pump house key.` and `Dr Ines Hale picked up Toolbox (fuse x2).`, and after
->   Step 4 `Dr Ines Hale picked up Two fuses.`; the prop is gone from the map. That build
->   showed `picked up pump key from the Pump house key.`, so `game_l13_act_toolbox` waits
->   for a re-shoot. Pack still lists the item key: `fuse x2`, `pump key x1`.
-> - **The bar's third slot names the mark you stand on.** That build showed the area's
->   title there instead; the library is being put back to the mark. Six stills of the bar
->   wait for a re-shoot (see the storyboard).
+>   Step 4 `Dr Ines Hale picked up Two fuses.`; the prop is gone from the map. Pack still
+>   lists the item key: `fuse x2`, `pump key x1`. Stepping onto a found item's cell picks
+>   it up, so the medical kit is never drawn under her: Act gains `Dr Ines Hale picked up
+>   Medical kit.` above the key's line (re-shot 2026-10-16, sitting 4).
+> - **The bar's third slot names the mark you stand ON** (re-shot, sitting 4). The cell
+>   you land on in the gully reads the area's title; `arrive` / `gully mouth` shows one
+>   step further, on the mark's own cell.
 
 > **CAPTURED FROM THE APPS' OWN DRAWING CODE (mock, 2026-10-10).** The probe ran each
 > app's draw function with the widget calls recorded, for stand-in consoles, on the
@@ -66,9 +67,10 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 1. Lint is `clean` after Steps 2, 3, 4, 5 and 6, warns `unfired-signal` twice after the
    two stories are typed, and is `clean` again after the two answers. (Lint.)
 2. The bar's third slot reads `pad` before Step 2 and `landing pad` after it; in the
-   gully it reads `arrive` before and `gully mouth` after. On the hidden kit's cell it
-   reads `Kesh Relay` until Marrow has told of the kit, and `scrub` after. (Mock,
-   captured.)
+   gully, one step onto the mark's cell, it reads `arrive` before and `gully mouth` after
+   (the cell you land on reads the area's title). On the hidden kit's cell it reads
+   `Kesh Relay` until Marrow has told of the kit, and `scrub` after, and stepping onto
+   that cell picks the kit up (`Dr Ines Hale picked up Medical kit.`). (Game, 2026-10-16.)
 3. Look and Beam read `Go to Dry Gully` and `To Dry Gully` after Step 3. (Mock.)
 4. After Step 4 the pack reads `pump house key x1` and the door says `pump house key
    fits`. With the door's line left stale, the key does not open it, and lint says
@@ -130,17 +132,19 @@ do, | ask for a skill instead. ||"
 
 ### 4. A mark is a word
 
-**Screen:** The bar reading `pad`. Then the doctor in the gully: the bar reads `arrive`.
-Then the three map files in Text view, the lines changed, and the bar again: `landing pad`,
-then `gully mouth`. Then the doctor on the scrub where the kit is hidden: the bar reads
-`Kesh Relay`.
+**Screen:** The bar reading `pad`. Then the doctor one step into the gully: the bar reads
+`arrive`. Then the three map files in Text view, the lines changed, and the bar again:
+`landing pad`, then `gully mouth`. Then the doctor on the scrub where the kit is hidden: the
+bar reads `Kesh Relay`. Then the same cell after Marrow has told of the kit: the bar reads
+`scrub`, the cell is empty, and Act says `Dr Ines Hale picked up Medical kit.`
 
 **Say:** "That third word on the bar is a mark from your map file. || Any mark somebody
-can stand on is a word on their screen. ||| So watch what happens in the gully. || The
-bar says arrive. | That was a name for you, not for her. ||| Name a mark for the place,
+can stand on is a word on their screen. ||| So take one step into the gully, onto its
+mark. || The bar says arrive. | That was a name for you, not for her. ||| Name a mark for the place,
 the way you'd say it. | Landing pad. Gully mouth. Foot of the stairs. ||| One thing the
 game does for you. || A mark with something hidden on it isn't shown at all, | until the
-thing is found. || So the map never gives your secret away. ||"
+thing is found. || So the map never gives your secret away. ||| Once Marrow has told of
+the kit, | the bar says scrub, | and stepping on it picks the kit up. ||"
 
 ### 5. Titles, and what the pack says
 

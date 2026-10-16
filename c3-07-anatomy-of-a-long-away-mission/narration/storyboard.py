@@ -30,8 +30,9 @@ ship starts beside Kesh Relay, so nothing is patched and nobody flies.
 `python game.py c3-07-anatomy-of-a-long-away-mission start --consoles server,science,weapons`
 makes the probe from the `away` template and lays every file of the state over it, ground\\
 included.
-AWAITING RE-SHOOT (sbs_utils 19c038f9: a pickup names the PROP, and the prop leaves the map):
-game_l7_door, whose Act shows the old keycard pickup line (game A, step 8).
+RE-SHOT 2026-10-16 (sitting 4, sbs_utils 19c038f9: a pickup names the PROP, and the prop
+leaves the map): game_l7_door, Act `Lt Sam Reyes picked up power cell.` and `Lt Sam Reyes
+picked up Relay keycard.`; game_l7_landed.
 GAME A (the win):
   1. Wait about 15 s after both consoles are seated: Hold at the Relay completes on its own.
      On Science press the handheld icon (top left), then Boarding Party: game_l7_offer.
@@ -110,7 +111,7 @@ STILLS = {
     "game_l7_sentry": ("game", "GAME A, Weapons (Lt Sam Reyes), beamed down and walked east: the sentry on its square south-east of the relay house (cells 20-26, 9-11), Old Marrow by his tent; the keycard not yet in view"),
     "game_l7_fire": ("game", "GAME A, Weapons, the Fire app open: the three settings (STUN, CUT, FULL) with FULL chosen, and Arm"),
     "game_l7_sentry_down": ("game", "GAME A, Weapons, after the FULL shot: the sentry down for good, the power cell lying where it fell"),
-    "game_l7_door": ("game", "GAME A, Weapons, carrying the cell and the keycard, the relay door clicked: the door at 22, 5 drawn open, and Act's two pickups, the cell's and 'Lt Sam Reyes picked up Relay keycard.'. AWAITING RE-SHOOT: 7ea2c918 wrote the keycard as 'relay key from the Relay keycard'"),
+    "game_l7_door": ("game", "GAME A, Weapons, carrying the cell and the keycard, the relay door clicked: the door at 22, 5 drawn open, and Act's two pickups, 'Lt Sam Reyes picked up power cell.' and 'Lt Sam Reyes picked up Relay keycard.', each with its picture (sitting 4)"),
     "game_l7_beacon": ("game", "GAME A, Weapons, inside the relay house, the beacon clicked: The Beacon's line ('The beacon fills the room, dark...') and its buttons, 'Fit the power cell' first"),
     "game_l7_win": ("game", "GAME A, the server's last screen after 'Fit the power cell' and 'Call it in': Game results, the sentence 'The beacon is lit. Every convoy on the Kesh run has its way home again.' at the left"),
     "game_l7_lose": ("game", "GAME B, the server's last screen after 'Pull the governor...' and 'Step back from the smoke': 'The beacon is slag. The Kesh run stays dark, and the convoys must find another road.'"),
