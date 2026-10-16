@@ -73,12 +73,13 @@ s07_lint_and_what_it_can_t_see_1	Misspell the entry line,
 s07_lint_and_what_it_can_t_see_2	and it tells you the name is neither a mark nor a cell.
 s07_lint_and_what_it_can_t_see_3	Type a letter that isn't in the legend,
 s07_lint_and_what_it_can_t_see_4	and it tells you the whole area won't load.
-s07_lint_and_what_it_can_t_see_5	But there are things it can't see.
-s07_lint_and_what_it_can_t_see_6	Give two areas the same key,
-s07_lint_and_what_it_can_t_see_7	and it says nothing at all.
-s07_lint_and_what_it_can_t_see_8	Draw a row longer than the size line says,
-s07_lint_and_what_it_can_t_see_9	and the extra cells are quietly cut off.
-s07_lint_and_what_it_can_t_see_10	So compare your file with the page, one character at a time.
+s07_lint_and_what_it_can_t_see_5	It warns you, too,
+s07_lint_and_what_it_can_t_see_6	when two files claim the same area,
+s07_lint_and_what_it_can_t_see_7	and when a row is longer than the size line says.
+s07_lint_and_what_it_can_t_see_8	But there are things it can't see.
+s07_lint_and_what_it_can_t_see_9	Leave a space in the middle of a row,
+s07_lint_and_what_it_can_t_see_10	and that cell is a hole nobody can walk on.
+s07_lint_and_what_it_can_t_see_11	So compare your file with the page, one character at a time.
 s08_play_it_and_your_turn_0	Nothing in the mission leads to the gully yet.
 s08_play_it_and_your_turn_1	But the ship's transporter can put you there.
 s08_play_it_and_your_turn_2	Beam down as usual,

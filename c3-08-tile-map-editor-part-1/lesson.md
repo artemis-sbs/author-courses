@@ -44,8 +44,8 @@ you can always press **Text** on its toolbar and read what it wrote.
 So this page gives every step as text you can type. Where the editor is quicker, the
 step says what to click as well. Use whichever you like. The file is what the game reads.
 
-The editor's toolbar says **Experimental**. It is new. If it does something this page
-does not describe, press **Text**, fix the file by hand, and carry on.
+If the editor ever does something this page does not describe, press **Text**, fix the
+file by hand, and carry on.
 
 ## Step 1 - A new file
 

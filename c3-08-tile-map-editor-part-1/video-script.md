@@ -52,10 +52,9 @@ page:
 1. A new `.tiles` file opens in the Tile Map Editor, and an empty one shows the words
    `No map yet.`
 2. The toolbar: Paint, Rect, Fill, Pick, Entry, Move, Kinds, Art, `-`, `+`, Grid, Marks,
-   Chars, Things, Face S, two boxes and Resize, Refresh, Text, and the word
-   Experimental.
+   Chars, Things, Face S, two boxes and Resize, Refresh and Text.
 3. **Text** opens the plain text; the button back is on the text editor's title bar and
-   its tip reads `Open in Tile Map / Tileset Editor (experimental)`.
+   its tip reads `Open in Tile Map / Tileset Editor`.
 4. **+ Entry** opens a form with Kind, Mark (optional) and Character, OK and Cancel; the
    new row is selected afterwards; it writes one legend line after the last one.
 5. A paint stroke rewrites only the map rows it changed.

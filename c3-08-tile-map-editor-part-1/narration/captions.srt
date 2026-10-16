@@ -299,73 +299,77 @@ Type a letter that isn't in the legend,
 and it tells you the whole area won't load.
 
 76
-00:04:51,696 --> 00:04:54,739
-But there are things it can't see.
+00:04:51,696 --> 00:04:53,435
+It warns you, too,
 
 77
-00:04:55,639 --> 00:04:58,248
-Give two areas the same key,
+00:04:53,885 --> 00:04:56,928
+when two files claim the same area,
 
 78
-00:04:58,698 --> 00:05:01,307
-and it says nothing at all.
+00:04:57,828 --> 00:05:02,611
+and when a row is longer than the size line says.
 
 79
-00:05:02,207 --> 00:05:06,120
-Draw a row longer than the size line says,
+00:05:04,411 --> 00:05:07,454
+But there are things it can't see.
 
 80
-00:05:06,570 --> 00:05:10,048
-and the extra cells are quietly cut off.
+00:05:08,354 --> 00:05:12,267
+Leave a space in the middle of a row,
 
 81
-00:05:10,948 --> 00:05:16,165
-So compare your file with the page, one character at a time.
+00:05:12,717 --> 00:05:17,065
+and that cell is a hole nobody can walk on.
 
 82
-00:05:17,365 --> 00:05:21,278
-Nothing in the mission leads to the gully yet.
+00:05:17,965 --> 00:05:23,183
+So compare your file with the page, one character at a time.
 
 83
-00:05:22,178 --> 00:05:25,657
-But the ship's transporter can put you there.
+00:05:24,383 --> 00:05:28,296
+Nothing in the mission leads to the gully yet.
 
 84
-00:05:27,457 --> 00:05:29,196
-Beam down as usual,
+00:05:29,196 --> 00:05:32,674
+But the ship's transporter can put you there.
 
 85
-00:05:29,646 --> 00:05:32,254
-then open Beam on the handheld.
+00:05:34,474 --> 00:05:36,213
+Beam down as usual,
 
 86
-00:05:32,704 --> 00:05:37,052
-There's one other place on the list, and it's yours.
+00:05:36,663 --> 00:05:39,272
+then open Beam on the handheld.
 
 87
-00:05:37,952 --> 00:05:40,561
-You're standing on your own mark.
+00:05:39,722 --> 00:05:44,070
+There's one other place on the list, and it's yours.
 
 88
-00:05:41,461 --> 00:05:43,635
-Click inside the pump house,
+00:05:44,970 --> 00:05:47,578
+You're standing on your own mark.
 
 89
-00:05:44,085 --> 00:05:47,998
-and you walk in through the gap you painted.
+00:05:48,478 --> 00:05:50,652
+Click inside the pump house,
 
 90
-00:05:49,798 --> 00:05:52,841
-For the exercise, try the other tools.
+00:05:51,102 --> 00:05:55,015
+and you walk in through the gap you painted.
 
 91
-00:05:53,291 --> 00:05:56,335
-Draw a second building with the rectangle,
+00:05:56,815 --> 00:05:59,859
+For the exercise, try the other tools.
 
 92
-00:05:56,785 --> 00:06:01,567
-then break the file on purpose and read what lint says.
+00:06:00,309 --> 00:06:03,352
+Draw a second building with the rectangle,
 
 93
-00:06:03,367 --> 00:06:07,280
+00:06:03,802 --> 00:06:08,585
+then break the file on purpose and read what lint says.
+
+94
+00:06:10,385 --> 00:06:14,298
 Next time, you join this map to the yard.
