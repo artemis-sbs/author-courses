@@ -87,7 +87,8 @@ Press Text. Type the comment line and the four header lines.
 **Say:** "Right-click the ground folder, new file, | and call it gully dot tiles. || It
 opens in the Tile Map Editor, | and there's nothing to draw yet, | so press the Text
 button. ||| The top of an area file is its header. || Area is the key, | the name the rest
-of your mission knows it by. || Title is what the crew sees. || Tileset names the file
+of your mission knows it by. || Title is what the crew sees: | on the handheld's Beam app,
+this area will read To The Dry Gully. || Tileset names the file
 that lists the kinds of ground. || And size is how many cells across, | then a small x,
 and how many down. ||"
 
@@ -116,10 +117,13 @@ house. | It's a box with no way in. ||"
 
 ### 5. A door
 
-**Screen:** Press + Entry. Fill in floor, pump_door, D. OK. Paint. Click cell 12, 5. Press
-Text: the new legend line, and the one changed character.
+**Screen:** The game first: the finished gully on the Engineering console, Chief Okoro
+standing inside the pump house, through the gap. Then press + Entry. Fill in floor,
+pump_door, D. OK. Paint. Click cell 12, 5. Press Text: the new legend line, and the one
+changed character.
 
-**Say:** "A door on a map is two things. || It's a cell you can walk through, | in a wall
+**Say:** "Here's where this is going. || In the game, the pump house has a gap in its west
+wall, | and the crew walks in through it. ||| A door on a map is two things. || It's a cell you can walk through, | in a wall
 you can't. || And it's a mark, | so that later a real door can be stood on it. ||| Plus
 Entry gives me a new legend line. | The kind is floor, | the mark is pump door, | and the
 character is a capital D. || Then I paint one cell with it, | in the middle of the west
@@ -128,10 +132,12 @@ and one changed character in the map. | Nothing else was touched. ||"
 
 ### 6. A mark to arrive on, and the entry
 
-**Screen:** + Entry again: dust, arrive, a. Paint cell 2, 5. Then Text: type `entry:
+**Screen:** The game first: Chief Okoro just beamed into the gully, standing at its west
+end. Then + Entry again: dust, arrive, a. Paint cell 2, 5. Then Text: type `entry:
 arrive` under `tileset:`. Back in the editor, the star on the cell.
 
-**Say:** "The party needs somewhere to stand when it beams down. || So I make a second
+**Say:** "When the transporter puts somebody in the gully, | this is where they'll stand,
+at the west end of the map. ||| The party needs somewhere to stand when it beams down. || So I make a second
 mark the same way, | on open ground at the west end. ||| The mark gives that cell a name,
 | and it's still dust. || Then one more line in the header. | Entry, and the name of the
 mark. ||| The editor has a tool for this as well, | and it writes the cell's numbers. ||

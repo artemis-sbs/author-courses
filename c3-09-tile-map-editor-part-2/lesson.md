@@ -43,7 +43,8 @@ has yet checked them against a real screen.
 
 ## Step 1 - A way out of the yard
 
-An exit is a mark with a special name: `to_`, and then the key of the area it leads to.
+In the game an exit is a cell at the edge of a map: walk onto it and you are in the next
+area. An exit is a mark with a special name: `to_`, and then the key of the area it leads to.
 The gully's key is `gully`, so the way to it is a mark named `to_gully`.
 
 Open `ground\landing.tiles`. It needs one new legend line and one changed cell, at the
@@ -261,7 +262,8 @@ A painted board on a post: PUMP HOUSE, and an arrow pointing east.
 `At: 28, 5` is 28 across and 5 down, counted from 0, in the area `landing`. That is the
 cell above your exit and one to the left.
 
-`Sprite:` is the picture. The names come from the art packs: `prop:` and a word for a
+In the game the sign stands by the exit, and a click on it shows its line on the
+handheld. `Sprite:` is the picture. The names come from the art packs: `prop:` and a word for a
 thing, `fig:` and a word for a figure. Further reading has where to find the list.
 
 Save, and open `landing.tiles` in the editor. With **Things** switched on, the editor

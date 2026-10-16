@@ -69,7 +69,8 @@ Item: pump_key
 A brass key on a loop of wire, hung on a tent peg.
 ```
 
-`Item: pump_key` is the whole of it. Using the prop puts one `pump_key` in your pack, and
+In the game the key hangs by the tent in the yard; picked up, it is in that crew member's
+**Pack** app on the handheld. `Item: pump_key` is the whole of it. Using the prop puts one `pump_key` in your pack, and
 the prop is gone from the map. An item's name is yours to make up: small letters, with
 `_` where you would put a space.
 
@@ -235,7 +236,8 @@ True, for now. Nothing in the mission hears that signal yet.
 
 ## Step 7 - A gate, a hidden cell and a gauge
 
-Three more props, all in the cistern, and each needs a mark. Open
+Three more props, all in the cistern: in the game, a gate shut across the walkway, a
+cell nobody can see yet, and a gauge out in the water. Each needs a mark. Open
 `ground\cistern.tiles`.
 
 In the editor, three times over: **+ Entry**, then **Paint** and one click.

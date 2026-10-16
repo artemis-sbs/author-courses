@@ -12,10 +12,11 @@ s02_a_new_file_and_the_header_4	so press the Text button.
 s02_a_new_file_and_the_header_5	The top of an area file is its header.
 s02_a_new_file_and_the_header_6	Area is the key,
 s02_a_new_file_and_the_header_7	the name the rest of your mission knows it by.
-s02_a_new_file_and_the_header_8	Title is what the crew sees.
-s02_a_new_file_and_the_header_9	Tileset names the file that lists the kinds of ground.
-s02_a_new_file_and_the_header_10	And size is how many cells across,
-s02_a_new_file_and_the_header_11	then a small x, and how many down.
+s02_a_new_file_and_the_header_8	Title is what the crew sees:
+s02_a_new_file_and_the_header_9	on the handheld's Beam app, this area will read To The Dry Gully.
+s02_a_new_file_and_the_header_10	Tileset names the file that lists the kinds of ground.
+s02_a_new_file_and_the_header_11	And size is how many cells across,
+s02_a_new_file_and_the_header_12	then a small x, and how many down.
 s03_the_legend_and_the_ground_0	Next comes the legend.
 s03_the_legend_and_the_ground_1	Each line is one character, a colon,
 s03_the_legend_and_the_ground_2	and a kind of ground from the tileset.
@@ -41,33 +42,38 @@ s04_look_at_it_7	and the bottom line tells you which cell you're over,
 s04_look_at_it_8	and what it is.
 s04_look_at_it_9	And look at the pump house.
 s04_look_at_it_10	It's a box with no way in.
-s05_a_door_0	A door on a map is two things.
-s05_a_door_1	It's a cell you can walk through,
-s05_a_door_2	in a wall you can't.
-s05_a_door_3	And it's a mark,
-s05_a_door_4	so that later a real door can be stood on it.
-s05_a_door_5	Plus Entry gives me a new legend line.
-s05_a_door_6	The kind is floor,
-s05_a_door_7	the mark is pump door,
-s05_a_door_8	and the character is a capital D.
-s05_a_door_9	Then I paint one cell with it,
-s05_a_door_10	in the middle of the west wall.
-s05_a_door_11	Press Text, and look at what the editor wrote.
-s05_a_door_12	One new line in the legend,
-s05_a_door_13	and one changed character in the map.
-s05_a_door_14	Nothing else was touched.
-s06_a_mark_to_arrive_on_and_the__0	The party needs somewhere to stand when it beams down.
-s06_a_mark_to_arrive_on_and_the__1	So I make a second mark the same way,
-s06_a_mark_to_arrive_on_and_the__2	on open ground at the west end.
-s06_a_mark_to_arrive_on_and_the__3	The mark gives that cell a name,
-s06_a_mark_to_arrive_on_and_the__4	and it's still dust.
-s06_a_mark_to_arrive_on_and_the__5	Then one more line in the header.
-s06_a_mark_to_arrive_on_and_the__6	Entry, and the name of the mark.
-s06_a_mark_to_arrive_on_and_the__7	The editor has a tool for this as well,
-s06_a_mark_to_arrive_on_and_the__8	and it writes the cell's numbers.
-s06_a_mark_to_arrive_on_and_the__9	Both of them work.
-s06_a_mark_to_arrive_on_and_the__10	The name is better,
-s06_a_mark_to_arrive_on_and_the__11	because it still points at the right place after you redraw the map.
+s05_a_door_0	Here's where this is going.
+s05_a_door_1	In the game, the pump house has a gap in its west wall,
+s05_a_door_2	and the crew walks in through it.
+s05_a_door_3	A door on a map is two things.
+s05_a_door_4	It's a cell you can walk through,
+s05_a_door_5	in a wall you can't.
+s05_a_door_6	And it's a mark,
+s05_a_door_7	so that later a real door can be stood on it.
+s05_a_door_8	Plus Entry gives me a new legend line.
+s05_a_door_9	The kind is floor,
+s05_a_door_10	the mark is pump door,
+s05_a_door_11	and the character is a capital D.
+s05_a_door_12	Then I paint one cell with it,
+s05_a_door_13	in the middle of the west wall.
+s05_a_door_14	Press Text, and look at what the editor wrote.
+s05_a_door_15	One new line in the legend,
+s05_a_door_16	and one changed character in the map.
+s05_a_door_17	Nothing else was touched.
+s06_a_mark_to_arrive_on_and_the__0	When the transporter puts somebody in the gully,
+s06_a_mark_to_arrive_on_and_the__1	this is where they'll stand, at the west end of the map.
+s06_a_mark_to_arrive_on_and_the__2	The party needs somewhere to stand when it beams down.
+s06_a_mark_to_arrive_on_and_the__3	So I make a second mark the same way,
+s06_a_mark_to_arrive_on_and_the__4	on open ground at the west end.
+s06_a_mark_to_arrive_on_and_the__5	The mark gives that cell a name,
+s06_a_mark_to_arrive_on_and_the__6	and it's still dust.
+s06_a_mark_to_arrive_on_and_the__7	Then one more line in the header.
+s06_a_mark_to_arrive_on_and_the__8	Entry, and the name of the mark.
+s06_a_mark_to_arrive_on_and_the__9	The editor has a tool for this as well,
+s06_a_mark_to_arrive_on_and_the__10	and it writes the cell's numbers.
+s06_a_mark_to_arrive_on_and_the__11	Both of them work.
+s06_a_mark_to_arrive_on_and_the__12	The name is better,
+s06_a_mark_to_arrive_on_and_the__13	because it still points at the right place after you redraw the map.
 s07_lint_and_what_it_can_t_see_0	Lint reads your maps along with everything else.
 s07_lint_and_what_it_can_t_see_1	Misspell the entry line,
 s07_lint_and_what_it_can_t_see_2	and it tells you the name is neither a mark nor a cell.

@@ -79,10 +79,12 @@ to a tank of standing water. || And you stand the first things on your maps. ||"
 
 ### 2. A way out, and a way back
 
-**Screen:** `landing.tiles`: + Entry, dust, to_gully, `>`. Paint cell 29, 6. Then
+**Screen:** The game first: Engineering, Chief Okoro through the yard's exit and standing in
+the gully. Then `landing.tiles`: + Entry, dust, to_gully, `>`. Paint cell 29, 6. Then
 `gully.tiles`: + Entry, dust, to_landing, `<`. Paint cell 1, 5. The blue outlines.
 
-**Say:** "An exit is a mark with a special name. || It starts with the word to, | then an
+**Say:** "Here's an exit in the game. || The crew walks onto the east edge of the yard, | and
+they're standing in your gully. ||| An exit is a mark with a special name. || It starts with the word to, | then an
 underscore, and then the key of the area it leads to. ||| So in the yard I add a legend
 line, | with the mark to gully, | and paint one cell at the east edge. || Then the same in
 the gully, | with a mark that leads back. ||| Three things to know about exits. || An exit
@@ -91,10 +93,13 @@ takes whoever stops on it, | so click the exit itself. || Each person goes throu
 
 ### 3. What the ship knows
 
-**Screen:** `gully.tiles` as text. Type `known: no` under `entry:`. Then the table of two
+**Screen:** The game first: the Beam app at the start, nowhere else on it. Then
+`gully.tiles` as text. Type `known: no` under `entry:`. Then the table of two
 header lines from the page.
 
-**Say:** "Last time, the transporter put you straight into the gully. || That would spoil
+**Say:** "This is the Beam app at the start of the game, | before anybody has walked
+anywhere, and there's nowhere else on it. ||| Last time, the transporter put you straight
+into the gully. || That would spoil
 things now. | A crew that can beam anywhere never has to find the way. ||| Two lines in
 the header decide it. || Known, and then no, | means the ship doesn't know this area
 exists | until somebody has walked into it. || And beam, followed by no, | means the
@@ -103,10 +108,12 @@ it yourself, | because the editor has no box for it. ||"
 
 ### 4. Water, and a third map
 
-**Screen:** `starter.tileset` in the Tileset Editor, then as text: the `water` line typed
+**Screen:** The game first: the cistern on Engineering. Then `starter.tileset` in the
+Tileset Editor, then as text: the `water` line typed
 under `cliff`. Then a new file `cistern.tiles`: type it. Look at it in the editor.
 
-**Say:** "The cistern needs water, | and the tileset has no such kind. || So I add one
+**Say:** "This is the cistern on the handheld, | a walkway round a tank of standing
+water. ||| The cistern needs water, | and the tileset has no such kind. || So I add one
 line to the tileset. | Water can be seen across, | and it can't be walked on. ||| That
 pair is what makes a map readable. | You can see the far side, | and getting there is the
 puzzle. ||| Then a new area file, | typed the way you typed the gully. || A walkway round
@@ -115,10 +122,12 @@ way in is on foot. ||"
 
 ### 5. Stairs, and where they arrive
 
-**Screen:** `gully.tiles`: + Entry, floor, to_cistern, `v`. Paint cell 17, 5. Then Text:
+**Screen:** `gully.tiles`: + Entry, floor, to_cistern, `v`. The game: Okoro at the foot of
+the stairs in the cistern. Paint cell 17, 5. Then Text:
 type the `exits:` block under the legend.
 
-**Say:** "The stairs are one more exit, | inside the pump house against the east wall. |||
+**Say:** "The stairs are one more exit, | inside the pump house against the east wall. ||
+In the game, the crew member who takes them comes out beside the water. |||
 Now, an area file can also say where its exits lead. || It's a block of its own, called
 exits, | after the legend and before the dashes. ||| Read this line as: | the mark to
 cistern leads to the area cistern, | and you arrive beside the mark called foot. || You
@@ -127,20 +136,23 @@ you type it. ||"
 
 ### 6. A thing at a cell
 
-**Screen:** `mission.amd`, the end of Props. Type the Trail sign. Highlight `Area:` and
+**Screen:** `mission.amd`, the end of Props. Type the Trail sign. The game: the sign
+clicked, its line on the handheld. Highlight `Area:` and
 `At:`. Then `landing.tiles` in the editor: the sign on the map. Move it; show the `At:`
 line change; Undo move.
 
 **Say:** "Now the fact sheet. || A record that stands on a map says where in two fields. |
 The first is always Area. || The second is one of two. | At takes a cell: | how far
 across, a comma, and how far down. ||| So here's a trail sign, | at twenty-eight across
-and five down, in the yard. || Open the yard's map, | and the editor draws the sign where
+and five down, in the yard. || In the game it stands by the exit, | and clicking it puts its
+line on the handheld. || Open the yard's map, | and the editor draws the sign where
 the record put it. || With Move I can drag it, | and the editor rewrites that line in the
 fact sheet for me. ||"
 
 ### 7. A thing on a mark, and a patrol
 
-**Screen:** `gully.tiles`: + Entry, floor, pump, `p`; paint cell 15, 4. `mission.amd`:
+**Screen:** `gully.tiles`: + Entry, floor, pump, `p`; paint cell 15, 4. The game: Okoro
+beside the pump. `mission.amd`:
 type the pump and the crate. Then the sentry: change the `Patrol:` line; the dashed loop
 in the editor.
 
@@ -148,7 +160,8 @@ in the editor.
 record says Mark, | and the mark's name. ||| Here's the rule that's easy to break. | A
 mark's name goes in Mark, | and never in At. || At reads numbers only, | so a word there
 reads as nothing, | and the thing is never placed. ||| Neither of these two has any words
-under its fence. | That makes them scenery. | They're drawn, and they're in the way. |||
+under its fence. | That makes them scenery. | They're drawn, and they're in the way. || Click the pump in the game, | and you walk up
+to it, and that's all. |||
 Last comes the sentry. || Its patrol is a list of cells, | with a semicolon between each
 pair. || I've made its loop longer, | and the editor draws it as a dashed line. ||"
 

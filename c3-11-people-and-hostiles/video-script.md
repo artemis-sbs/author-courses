@@ -83,10 +83,12 @@ out to be the same kind of record, | with one line between them. ||"
 
 ### 2. A person
 
-**Screen:** `gully.tiles`: + Entry, scrub, camp, m; paint cell 5, 8. Then `mission.amd`,
+**Screen:** The game first: Pim at her camp in the gully, on the Science console. Then
+`gully.tiles`: + Entry, scrub, camp, m; paint cell 5, 8. Then `mission.amd`,
 the People section: type Pim. Highlight `Calm: yes` and `Talk scene:`.
 
-**Say:** "Pim belongs to a spot, | so first she gets a mark. || Then her record, under Old
+**Say:** "Here's Pim in the game, | sitting in the scrub at the west end of the gully. |||
+Pim belongs to a spot, | so first she gets a mark. || Then her record, under Old
 Marrow's. ||| Area and Mark put her on the map, | the way they put a prop there. || Sprite
 is her figure. | Face is the face shown beside what she says. ||| And these two lines are
 the ones that matter. || Calm, and then yes, | means she never attacks. || And Talk scene
@@ -95,18 +97,22 @@ says Scene. | Lint tells you if you mix them up. ||"
 
 ### 3. What she says
 
-**Screen:** The end of the file: type the two rooms.
+**Screen:** The game first: Pim clicked, her room on the handheld. Then the end of the
+file: type the two rooms.
 
-**Say:** "Her rooms go at the end of the file, | and there's nothing new in them. || She
+**Say:** "Click her, and her room opens on the handheld, | the way the caretaker's did. |||
+Her rooms go at the end of the file, | and there's nothing new in them. || She
 came out here to start the pump, | and something below took her tablet. ||| Next lecture
 gives her a great deal more to say. ||"
 
 ### 4. A hostile
 
-**Screen:** The Hostiles section: type the sump crawler. The table of seven fields from
+**Screen:** The game first: the crawler on the far walkway of the cistern, on Engineering.
+Then the Hostiles section: type the sump crawler. The table of seven fields from
 the page. Then `cistern.tiles` in the editor: the crawler and its dashed patrol loop.
 
-**Say:** "Now the crawler, under the sentry. || Look at what's missing. | There's no Calm
+**Say:** "Downstairs in the game, something low and glassy walks the far end of the
+walkway. ||| Now the crawler, under the sentry. || Look at what's missing. | There's no Calm
 line, | and that's all it takes to make a hostile. ||| HP is how much hurt it can take. ||
 Damage is how much it does with each strike. || Notice is how close you can get before it
 sees you, counted in cells. || Patrol is the walk it takes. | And Drops is what it leaves
@@ -117,10 +123,12 @@ the stairs. | A party that arrives has room to stop and look. ||"
 
 ### 5. A quest it finishes
 
-**Screen:** The Side Stories section: type The Thing in the Sump. Highlight the `Done
+**Screen:** The game first: the Tasks app on Engineering. Then the Side Stories section:
+type The Thing in the Sump. Highlight the `Done
 when:` line and `Leads to:`.
 
-**Say:** "When a hostile goes down for good, | the game sends a signal by itself. || The
+**Say:** "On the engineer's handheld, | the Tasks app lists a story of his own: | clear
+the cistern walkway. ||| When a hostile goes down for good, | the game sends a signal by itself. || The
 name is hostile, down, and the record's key, joined with underscores. ||| So a quest can
 wait for it, | with no answer and no card. || This one is a side story for the engineer.
 ||| And Leads to finally has something to point at. | It's the key of the thing on the map
@@ -128,7 +136,8 @@ this story is about. ||"
 
 ### 6. A fight, and getting hurt
 
-**Screen:** The table of three settings. Then the two ways back up, from the page.
+**Screen:** The Fire app on the handheld. The table of three settings. Then the two ways
+back up, from the page.
 
 **Say:** "Every crew member carries a weapon, | and it's the Fire app on the handheld. ||
 Pick a setting and press Arm, | and the next click on the map is a shot. || One shot, and
@@ -156,8 +165,9 @@ tablet on the walkway where it fell, | and the engineer's story is complete. ||"
 **Screen:** The second table on the page. Then the exercise.
 
 **Say:** "Lint knows a lot here. | It knows the names of those signals, | and it knows a
-crawler can't stand in water. ||| It can't see a missing Calm line, though. | Leave that
-line out, | and Pim attacks the first crew member who walks up. || And it can't see a Talk
-scene that names no room. | You click her, and nothing happens. ||| For the exercise, make
+crawler can't stand in water. ||| It even warns about a missing Calm line, | on anybody
+who has a Talk scene. || Leave that line out, | and Pim attacks the first crew member who
+walks up. ||| What it can't see is a Leads to that points at nothing. | The story is still
+handed out and finished, | and it points at nowhere. ||| For the exercise, make
 the crawler tougher, then gentler, | and play each one. ||| Next time, Pim wants that
 tablet back. ||"

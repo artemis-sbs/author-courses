@@ -12,10 +12,10 @@ s02_a_second_mission_3	Press Enter at the question,
 s02_a_second_mission_4	and it tells you the mission is ready.
 s02_a_second_mission_5	Then the fetch line, once,
 s02_a_second_mission_6	to bring the libraries up to date.
-s02_a_second_mission_7	That second line matters more than usual here.
+s02_a_second_mission_7	Both lines matter more than usual here.
 s02_a_second_mission_8	This mission has no pictures of its own.
 s02_a_second_mission_9	Its map is drawn with two art packs that missions share,
-s02_a_second_mission_10	and that line is what unpacks them.
+s02_a_second_mission_10	and these two commands are what fetch them and unpack them.
 s02_a_second_mission_11	Open the folder, trust it, and run lint,
 s02_a_second_mission_12	and it comes back clean.
 s03_play_it_to_the_win_0	A server and two consoles.
@@ -47,59 +47,72 @@ s04_four_files_7	And the story file,
 s04_four_files_8	where one line loads the ground
 s04_four_files_9	and one card opens the party.
 s04_four_files_10	There's no Python here, and you won't write any.
-s05_what_a_map_is_0	Click the map file and you get a picture.
-s05_what_a_map_is_1	Next lecture is about that picture.
-s05_what_a_map_is_2	Today press Text, and read what's underneath.
-s05_what_a_map_is_3	It has three parts.
-s05_what_a_map_is_4	The header says what this area is called,
-s05_what_a_map_is_5	and where someone who beams down stands.
-s05_what_a_map_is_6	The legend says what each character means:
-s05_what_a_map_is_7	a dot is dust,
-s05_what_a_map_is_8	a capital W is wall.
-s05_what_a_map_is_9	And some lines carry an at sign and a name.
-s05_what_a_map_is_10	That's called a mark.
-s05_what_a_map_is_11	It gives a cell a name,
-s05_what_a_map_is_12	so a record can say, stand here.
-s05_what_a_map_is_13	Under three dashes is the map itself.
-s05_what_a_map_is_14	You can find the pad,
-s05_what_a_map_is_15	the tent beside it,
-s05_what_a_map_is_16	and the relay house with its door.
-s05_what_a_map_is_17	Notice what isn't here.
-s05_what_a_map_is_18	No caretaker, no sentry, no key.
-s05_what_a_map_is_19	Only the places they stand.
-s06_what_a_record_is_0	The fact sheet has seven sections,
-s06_what_a_record_is_1	and four of them you've written before.
-s06_what_a_record_is_2	Three of them are new:
-s06_what_a_record_is_3	props, people and hostiles.
-s06_what_a_record_is_4	Here's one of the props.
-s06_what_a_record_is_5	A heading, a fence, and a line of description.
-s06_what_a_record_is_6	Two fields put it on the map.
-s06_what_a_record_is_7	Area names the map file.
-s06_what_a_record_is_8	Mark names a mark in that file's legend.
-s06_what_a_record_is_9	And one field says what it does.
-s06_what_a_record_is_10	Item means you can pick it up.
-s06_what_a_record_is_11	A person is the same shape.
-s06_what_a_record_is_12	And this line is a join you already know.
-s06_what_a_record_is_13	It's the key of a room.
-s06_what_a_record_is_14	So a room on the ground is the room you've always written,
-s06_what_a_record_is_15	with one difference: nobody walks into it.
-s06_what_a_record_is_16	It belongs to the thing or the person that opens it.
+s05_what_a_map_is_0	First, the yard as the crew sees it,
+s05_what_a_map_is_1	on the Science console, the moment she beams down.
+s05_what_a_map_is_2	The landing pad she stands on,
+s05_what_a_map_is_3	the caretaker's tent,
+s05_what_a_map_is_4	and the relay house at the east end.
+s05_what_a_map_is_5	Now click the map file in VS Code, and you get a picture.
+s05_what_a_map_is_6	Next lecture is about that picture.
+s05_what_a_map_is_7	Today press Text, and read what's underneath.
+s05_what_a_map_is_8	It has three parts.
+s05_what_a_map_is_9	The header says what this area is called,
+s05_what_a_map_is_10	and where someone who beams down stands.
+s05_what_a_map_is_11	The legend says what each character means:
+s05_what_a_map_is_12	a dot is dust,
+s05_what_a_map_is_13	a capital W is wall.
+s05_what_a_map_is_14	And some lines carry an at sign and a name.
+s05_what_a_map_is_15	That's called a mark.
+s05_what_a_map_is_16	It gives a cell a name,
+s05_what_a_map_is_17	so a record can say, stand here.
+s05_what_a_map_is_18	Under three dashes is the map itself.
+s05_what_a_map_is_19	You can find the pad,
+s05_what_a_map_is_20	the tent beside it,
+s05_what_a_map_is_21	and the relay house with its door.
+s05_what_a_map_is_22	Notice what isn't here.
+s05_what_a_map_is_23	No caretaker, no sentry, no key.
+s05_what_a_map_is_24	Only the places they stand.
+s06_what_a_record_is_0	Back in the game,
+s06_what_a_record_is_1	the keycard lies in the dust where the sentry walks,
+s06_what_a_record_is_2	and Old Marrow sits beside his tent.
+s06_what_a_record_is_3	Both of them are records in the fact sheet.
+s06_what_a_record_is_4	The fact sheet has seven sections,
+s06_what_a_record_is_5	and four of them you've written before.
+s06_what_a_record_is_6	Three of them are new:
+s06_what_a_record_is_7	props, people and hostiles.
+s06_what_a_record_is_8	Here's one of the props.
+s06_what_a_record_is_9	A heading, a fence, and a line of description.
+s06_what_a_record_is_10	Two fields put it on the map.
+s06_what_a_record_is_11	Area names the map file.
+s06_what_a_record_is_12	Mark names a mark in that file's legend.
+s06_what_a_record_is_13	And one field says what it does.
+s06_what_a_record_is_14	Item means you can pick it up.
+s06_what_a_record_is_15	A person is the same shape.
+s06_what_a_record_is_16	And this line is a join you already know.
+s06_what_a_record_is_17	It's the key of a room.
+s06_what_a_record_is_18	So a room on the ground is the room you've always written,
+s06_what_a_record_is_19	with one difference: nobody walks into it.
+s06_what_a_record_is_20	It belongs to the thing or the person that opens it.
 s07_one_line_one_card_and_the_en_0	In the story file, one line loads the ground.
 s07_one_line_one_card_and_the_en_1	You never change it.
 s07_one_line_one_card_and_the_en_2	A new map is found by itself.
-s07_one_line_one_card_and_the_en_3	And this is the card.
-s07_one_line_one_card_and_the_en_4	Put it beside the one from Lecture 2.
-s07_one_line_one_card_and_the_en_5	The first room is gone,
-s07_one_line_one_card_and_the_en_6	because a map has no first room.
-s07_one_line_one_card_and_the_en_7	And there's a new word:
-s07_one_line_one_card_and_the_en_8	the area to beam down into.
-s07_one_line_one_card_and_the_en_9	Three words here are yours.
-s07_one_line_one_card_and_the_en_10	The signal, the name on the tile, and the area.
-s07_one_line_one_card_and_the_en_11	Last comes the ending.
-s07_one_line_one_card_and_the_en_12	This quest carries two sentences,
-s07_one_line_one_card_and_the_en_13	one for a win and one for a loss.
-s07_one_line_one_card_and_the_en_14	And an answer at the beacon either completes that quest, or fails it.
-s07_one_line_one_card_and_the_en_15	That's the whole ending.
+s07_one_line_one_card_and_the_en_3	Now remember the Boarding Party app on the handheld,
+s07_one_line_one_card_and_the_en_4	with Kesh Relay waiting in it.
+s07_one_line_one_card_and_the_en_5	That comes from a card at the end of the story file.
+s07_one_line_one_card_and_the_en_6	Put it beside the one from Lecture 2.
+s07_one_line_one_card_and_the_en_7	The first room is gone,
+s07_one_line_one_card_and_the_en_8	because a map has no first room.
+s07_one_line_one_card_and_the_en_9	And there's a new word:
+s07_one_line_one_card_and_the_en_10	the area to beam down into.
+s07_one_line_one_card_and_the_en_11	Three words here are yours.
+s07_one_line_one_card_and_the_en_12	The signal, the name on the tile, and the area.
+s07_one_line_one_card_and_the_en_13	Last comes the ending.
+s07_one_line_one_card_and_the_en_14	This is the last screen of the win,
+s07_one_line_one_card_and_the_en_15	and the sentence at the left is in the fact sheet.
+s07_one_line_one_card_and_the_en_16	This quest carries it,
+s07_one_line_one_card_and_the_en_17	with a second sentence beside it for a loss.
+s07_one_line_one_card_and_the_en_18	And an answer at the beacon either completes that quest, or fails it.
+s07_one_line_one_card_and_the_en_19	That's the whole ending.
 s08_dawnline_and_your_turn_0	The long example of all this is a mission called Dawnline.
 s08_dawnline_and_your_turn_1	It doesn't come with the game,
 s08_dawnline_and_your_turn_2	and you don't need it.

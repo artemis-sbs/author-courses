@@ -89,9 +89,9 @@ missions share, named `frontier` and `station`. They are listed in the mission's
     ]
 ```
 
-`sbs create` downloads everything on that list into `C:\Cosmos\data\missions\__lib__`,
-and `sbs fetch "MyAway" --update-libs` downloads it again and unpacks the art. You did
-both, so there is nothing more to do.
+`sbs create` downloads everything on that list into `C:\Cosmos\data\missions\__lib__`
+and unpacks the art (`media unpacked:`), and `sbs fetch "MyAway" --update-libs` downloads
+it again (`media up to date:`). You did both, so there is nothing more to do.
 
 Without the two packs the mission still runs, and the map is black. The game says so
 once, in its `debug.log` file. Tried for this page with the two
@@ -104,8 +104,8 @@ boarding_ground: the tile art 'frontier', 'station' is not installed, so what it
 Everything else worked as before: the party beamed down and walked. If you ever see a
 black map, "If something goes wrong" has the fix.
 
-What `sbs create` and `sbs fetch` download was read from the tool's own code for this
-page. Neither command was run to write it.
+Both commands were run for this page on 2026-10-15, with the released tool: the mission
+they made was this lecture's `example` folder, file for file.
 
 Two things to leave alone. Do not change the numbers in those three lines: the art packs
 have their own version numbers, and `0.4.2` is right. And never add `--retarget` to
@@ -192,7 +192,8 @@ those four files.
 
 ## Stop 4 - What a map is
 
-Click `landing.tiles`. It opens as a picture of the yard, in a part of the add-on called
+You have seen this yard already: it is the map beside the handheld, the moment you beam
+down. Click `landing.tiles`. It opens as a picture of the yard, in a part of the add-on called
 the Tile Map Editor. Lecture 8 is about that editor. Today, press **Text** on its toolbar
 and read the file as it is written.
 
@@ -302,7 +303,8 @@ record in it: a heading, a fence, and words underneath.
 | `## [Hostiles](hostiles)` | 1 | Someone who attacks |
 | `## [Scenes](scenes)` | 14 | Rooms, as in Lectures 2 to 6 |
 
-Three of those sections are new. Here is one record from each.
+Three of those sections are new. Here is one record from each. The first two are things
+you clicked in Stop 2: the keycard in the yard, and Old Marrow by his tent.
 
 A prop:
 

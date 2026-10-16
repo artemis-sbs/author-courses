@@ -76,21 +76,24 @@ is a few lines in the fact sheet, | and what a thing does depends on which lines
 
 ### 2. What a prop does
 
-**Screen:** The table of four questions from the page. Then the first record typed: the
-pump house key. Highlight `Item:`.
+**Screen:** The table of four questions from the page. The game: the key by the tent, then
+the Pack app. Then the first record typed: the pump house key. Highlight `Item:`.
 
 **Say:** "When somebody clicks a prop, | the game asks four questions in order. || May
 this person use it at all? || Is it a door, and shut? || Is it something to pick up? ||
 Does it open a scene? ||| It stops at the first yes. | And if there's no yes at all, | it
-shows the description. ||| So here's the simplest prop there is. | One line says Item, |
+shows the description. ||| In the game, the key hangs on a tent peg in the yard. | Click
+it, and the Pack app on the handheld has it. ||| So here's the simplest prop there is. | One line says Item, |
 and a name I made up. || Click it, and it's in your pack and off the map. ||"
 
 ### 3. A door
 
-**Screen:** Type the pump house door. Highlight `Blocks: yes`, then `Opens with:`. The
+**Screen:** The game first: the door shut, then open. Type the pump house door. Highlight `Blocks: yes`, then `Opens with:`. The
 table of four terms.
 
-**Say:** "Now the door, on the mark you painted two lectures ago. || Blocks, and then yes,
+**Say:** "In the game, the door stands in the gap of the pump house, | and with the key
+anywhere in the party, a click opens it. ||| Now the door, on the mark you painted two
+lectures ago. || Blocks, and then yes,
 | means nobody walks through it while it's shut. || And Opens with lists the ways it
 opens, | with commas between them. ||| A key opens it when anybody in the party is
 carrying one, | not just the one at the door. || A check is a roll: | a ten sided die,
@@ -101,10 +104,13 @@ end. ||"
 
 ### 4. Two more pickups, and a notice
 
-**Screen:** Type the toolbox; highlight `Qty: 2`. Type the notice; highlight `Scene:` and
+**Screen:** The game first: the Pack app with two fuses; the notice's scene. Type the
+toolbox; highlight `Qty: 2`. Type the notice; highlight `Scene:` and
 `Once: yes`.
 
-**Say:** "The toolbox is a pickup worth two. | That's the line that says Qty. ||| The
+**Say:** "Here are the next two in the game. || After the toolbox, the Pack app reads two
+fuses, | and the notice opens a scene on the handheld. ||| The toolbox is a pickup worth
+two. | That's the line that says Qty. ||| The
 notice opens a scene. | Scene, and the key of a room, | the same join you saw on the
 starter's terminal. || And it has one more line: | Once, and then yes. || The room opens
 the first time, | and after that a click only shows the description. ||| Be careful with
@@ -112,9 +118,10 @@ that one. | It counts the room opening, | not what anyone answered. ||"
 
 ### 5. A terminal with a Needs
 
-**Screen:** Type the pump panel. Highlight `Needs: engineering`, then `Scan:`.
+**Screen:** The game first: Dr Hale refused at the panel. Type the pump panel. Highlight `Needs: engineering`, then `Scan:`.
 
-**Say:** "The pump panel is a terminal too, | with one new line. || Needs, and a job. |||
+**Say:** "In the game, the doctor clicks the pump panel, | and the handheld tells her
+she'd need engineering. ||| The pump panel is a terminal too, | with one new line. || Needs, and a job. |||
 Anyone else who clicks it is told they'd need engineering, | and gets nothing more. ||
 That's stricter than a choice in a room. | A choice for a missing job gets covered by
 somebody else. | Nobody covers for a Needs. ||| So never put the only way through your
@@ -132,10 +139,12 @@ nothing hears that signal. | That's true for the moment. | The next step is what
 
 ### 7. A gate, a hidden cell and a gauge
 
-**Screen:** `cistern.tiles`: three + Entry forms and three painted cells. Then
+**Screen:** The game first: the cistern, the gate shut, the gauge in the water. Then
+`cistern.tiles`: three + Entry forms and three painted cells. Then
 `mission.amd`: type the sluice gate, the spare cell and the gauge. Lint: clean.
 
-**Say:** "Three marks in the cistern first, | one new legend line and one click each. |||
+**Say:** "Downstairs in the game, the gate across the walkway is shut, | and the gauge
+stands out in the water. ||| Three marks in the cistern first, | one new legend line and one click each. |||
 The sluice gate is a door with only one way to open. | Opens with, signal, and a name. ||
 Nobody on the ground can force it. || The spare cell says Hidden until, | and the same
 name. | It isn't on the map at all until that signal is sent. ||| So one answer in the

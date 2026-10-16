@@ -45,7 +45,9 @@ they do.
 
 ## Step 1 - A mark for a person
 
-Pim gets a mark, because she belongs to a spot: her camp in the scrub.
+In the game Pim sits in the scrub at the west end of the gully, and a click on her opens
+her room on the handheld. She gets a mark, because she belongs to a spot: her camp in the
+scrub.
 
 In `gully.tiles`, in the editor: **+ Entry**, Kind `scrub`, Mark `camp`, Character a
 small `m`, **OK**. **Paint**, and click cell `5, 8`.
@@ -283,6 +285,7 @@ Each row was tried on the finished files, one change at a time.
 | `Done when: signal crawler_down` | `unfired-signal`. The name is `hostile_down_` and the key, in that order |
 | `For: enginering` | `for-nobody`, as in Lecture 5 |
 | The crawler typed under the Props heading | `unknown-field` for each of its fields, and `unfired-signal` for the story |
+| Pim with no `Calm:` line | `person-talks-but-attacks`: she has a `Talk scene:` and no `Calm: yes`. In the game she is a hostile: she walked up to the engineer and took him from 3 HP to 1 in five seconds |
 | `Talk scene: pimm` | `dangling-scene`. In the game a click on her walks you over, and nothing opens |
 | `HP: three` | `not-a-number`: `Write it in figures`. The game reads the default, 2, and says so once in `mast.runtime.log` |
 
@@ -292,7 +295,6 @@ All of these lint clean.
 
 | The mistake | What happens |
 |---|---|
-| Pim with no `Calm:` line | She is a hostile. She walked up to the engineer and took him from 3 HP to 1 in five seconds |
 | `Calm: yse` | Lint does warn. In the game it reads as no, and she attacks |
 | `Scene: pim` on a person | Lint does warn. In the game nothing opens |
 | `Leads to: crawlr` | The story is handed out and can be finished. It points at nothing |

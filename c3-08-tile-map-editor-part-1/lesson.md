@@ -100,7 +100,7 @@ has to start at the very left edge of the line.
 | Line | Means |
 |---|---|
 | `area: gully` | This area's key. Every area in a mission needs its own |
-| `title: The Dry Gully` | What the crew is shown |
+| `title: The Dry Gully` | What the crew is shown: the Beam app on the handheld names the area by it |
 | `tileset: starter` | Its kinds of ground come from `starter.tileset`, the file you read in Lecture 7 |
 | `size: 24x12` | 24 cells across and 12 down. A small `x`, and no spaces |
 | `legend:` | The start of the legend. It has nothing after the colon |
@@ -152,6 +152,7 @@ Try three things. None of them changes the file.
 
 ## Step 4 - A door
 
+In the game this is the gap the crew walks through, in the west wall of the pump house.
 A door on a map is two things. It is a cell you can walk through, in a wall you cannot.
 And it is a mark, so that in Lecture 10 a door can be stood on it.
 
@@ -189,8 +190,8 @@ button paints `nothing`: a hole in the map, drawn black, that nobody can walk on
 
 ## Step 5 - A mark to arrive on
 
-The party needs somewhere to stand when it beams down. Make a second mark, on the open
-ground at the west end.
+The party needs somewhere to stand when it beams down: in Step 9 it is where the Beam app
+puts you. Make a second mark, on the open ground at the west end.
 
 In the editor: **+ Entry**, Kind `dust`, Mark `arrive`, Character a small `a`, **OK**.
 Then **Paint**, and click cell `2, 5`.

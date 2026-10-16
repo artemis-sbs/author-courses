@@ -36,9 +36,11 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 ## Confirm on camera
 
 1. `sbs create MyAway -t away --title "Kesh Relay"` ends `MyAway is ready.` and makes a
-   folder with a `ground` folder in it. (Read from the tool's code. NOT run.)
+   folder with a `ground` folder in it. (Run 2026-10-15 in the picture stand-in: matches
+   `example\`, `media unpacked:` for both packs.)
 2. After `sbs fetch "MyAway" --update-libs` the folder
-   `__lib__\media` holds the two Cosmos-Tiles packs, unpacked. (Read from code.)
+   `__lib__\media` holds the two Cosmos-Tiles packs, unpacked. (Run 2026-10-15: `media up to
+   date:`; `sbs create` had already unpacked them.)
 3. Lint on the fresh mission prints the three lines on the page. (Lint.)
 4. Beamed down, Dr Hale holds The Caretaker's Cough and Lt Reyes holds Clear the Yard;
    the handheld has eight apps: Crew, Act, Look, Pack, Tasks, Beam, Scan, Fire. (Mock.)
@@ -79,9 +81,9 @@ last line. Then the fetch line. Then VS Code: open the folder, trust it. Lint: c
 **Say:** "This half of the class gets a mission of its own. || Same command as before, |
 with a different template after the dash t: away. ||| Press Enter at the question, | and
 it tells you the mission is ready. || Then the fetch line, once, | to bring the libraries
-up to date. || That second line matters more than usual here. | This mission has no
-pictures of its own. | Its map is drawn with two art packs that missions share, | and that
-line is what unpacks them. ||| Open the folder, trust it, and run lint, | and it comes
+up to date. || Both lines matter more than usual here. | This mission has no pictures of
+its own. | Its map is drawn with two art packs that missions share, | and these two
+commands are what fetch them and unpack them. ||| Open the folder, trust it, and run lint, | and it comes
 back clean. ||"
 
 ### 3. Play it to the win
@@ -112,11 +114,15 @@ There's no Python here, and you won't write any. ||"
 
 ### 5. What a map is
 
-**Screen:** `landing.tiles` in the Tile Map Editor; press Text. Highlight the header, then
-the legend, then the rows. Trace the pad, the tent, the relay house, the door.
+**Screen:** The game first: the yard on the Science console, Dr Hale just beamed down (the
+pad, the tent, the relay house). Then `landing.tiles` in the Tile Map Editor; press Text.
+Highlight the header, then the legend, then the rows. Trace the pad, the tent, the relay
+house, the door.
 
-**Say:** "Click the map file and you get a picture. | Next lecture is about that picture.
-|| Today press Text, and read what's underneath. ||| It has three parts. || The header
+**Say:** "First, the yard as the crew sees it, | on the Science console, the moment she
+beams down. || The landing pad she stands on, | the caretaker's tent, | and the relay
+house at the east end. ||| Now click the map file in VS Code, and you get a picture. |
+Next lecture is about that picture. || Today press Text, and read what's underneath. ||| It has three parts. || The header
 says what this area is called, | and where someone who beams down stands. || The legend
 says what each character means: | a dot is dust, | a capital W is wall. || And some lines
 carry an at sign and a name. | That's called a mark. | It gives a cell a name, | so a
@@ -126,11 +132,14 @@ pad, | the tent beside it, | and the relay house with its door. || Notice what i
 
 ### 6. What a record is
 
-**Screen:** `mission.amd`. The table of seven sections. Then the keycard record: draw a
-line from `Area:` to the map's `area:` line, and from `Mark:` to the legend. Then Old
-Marrow, and his `Talk scene:` to the room.
+**Screen:** The game first: the yard on the Science console, the keycard in the dust and
+Old Marrow by his tent; then his scene open on the handheld. Then `mission.amd`. The table
+of seven sections. Then the keycard record: draw a line from `Area:` to the map's `area:`
+line, and from `Mark:` to the legend. Then Old Marrow, and his `Talk scene:` to the room.
 
-**Say:** "The fact sheet has seven sections, | and four of them you've written before. ||
+**Say:** "Back in the game, | the keycard lies in the dust where the sentry walks, | and
+Old Marrow sits beside his tent. || Both of them are records in the fact sheet. ||| The
+fact sheet has seven sections, | and four of them you've written before. ||
 Three of them are new: | props, people and hostiles. ||| Here's one of the props. | A
 heading, a fence, and a line of description. || Two fields put it on the map. | Area names
 the map file. | Mark names a mark in that file's legend. || And one field says what it
@@ -141,16 +150,20 @@ thing or the person that opens it. ||"
 
 ### 7. One line, one card, and the ending
 
-**Screen:** `story.mast`. Highlight the load line. Then the card; put Lecture 2's card
-beside it. Circle the three words. Then the quest with `Win:` and `Lose:`, and the two
-answers.
+**Screen:** `story.mast`. Highlight the load line. Then the game: the handheld's Boarding
+Party app offering Kesh Relay. Then the card; put Lecture 2's card beside it. Circle the
+three words. Then the game's last screen with the win sentence; the quest with `Win:` and
+`Lose:`, and the two answers.
 
 **Say:** "In the story file, one line loads the ground. | You never change it. | A new map
-is found by itself. ||| And this is the card. || Put it beside the one from Lecture 2. |
+is found by itself. ||| Now remember the Boarding Party app on the handheld, | with Kesh
+Relay waiting in it. || That comes from a card at the end of the story file. || Put it
+beside the one from Lecture 2. |
 The first room is gone, | because a map has no first room. | And there's a new word: | the
 area to beam down into. || Three words here are yours. | The signal, the name on the tile,
-and the area. ||| Last comes the ending. || This quest carries two sentences, | one for a
-win and one for a loss. || And an answer at the beacon either completes that quest, or
+and the area. ||| Last comes the ending. || This is the last screen of the win, | and the
+sentence at the left is in the fact sheet. || This quest carries it, | with a second
+sentence beside it for a loss. || And an answer at the beacon either completes that quest, or
 fails it. | That's the whole ending. ||"
 
 ### 8. Dawnline, and your turn
