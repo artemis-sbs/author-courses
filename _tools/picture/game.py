@@ -11,20 +11,45 @@ know it is running.
     python game.py <lecture> list                       the game's windows and their process ids
     python game.py <lecture> shot  <window> <name>      screenshot a window (helm, science, server)
     python game.py <lecture> click <window> <x> <y> <name>    click at a fraction of the window, then screenshot
+    python game.py <lecture> wait  <seconds>            a pause, recorded for the replay
     python game.py <lecture> keep  <shot name> <still name>   a screenshot becomes a still of the lecture
     python game.py <lecture> log   <name>               copies the probe's two logs to <out>/game/<name>.<log> and prints them
     python game.py <lecture> stop                       stops the game and deletes _pic_probe
+    python game.py <lecture> steps                      prints what has been recorded
+    python game.py <lecture> forget                     empties the recording
+    python game.py <lecture> replay [--from N] [--only-keeps]
+        runs the recording again, unattended: start, clicks, shots, keeps and stop, with the
+        pauses that were left between them
+
+RECORDED. start, click, shot, wait, keep and stop are appended to the lecture's
+narration/capture_steps.py as they run (--no-record to leave it alone), with the time since
+the step before, so a re-shoot is `replay` instead of another hand session. A scouting
+sitting that wanders can `forget` and start again, or the file can be edited by hand: it is
+one step per line.
+
+THE SAME GAME EACH TIME. Every launch passes seed=<--seed> (default 7), which the library
+applies before the story's first line runs, so faces, names and spawns repeat between the
+scouting sitting, the filming sitting and a replay - and the marks placed on a still stay
+on what they point at. (Needs an sbs_utils with that, from 2026-10-17; older ones ignore it.)
+
+THE PLAYER'S SAVES ARE NOT TOUCHED. An Open Universe probe (template "ou", or --sandbox)
+is made one level down, in data/missions/_sandbox/, so the saves it writes land in
+_sandbox/common_data. And on every run, whatever the template, start copies
+data/missions/common_data/saves aside and stop puts back any file the run changed, and moves
+out any file it made - saying which.
 
 Screenshots land in <out>/game/. eng.ps1 does the looking and the clicking; it REFUSES to
 click unless the game's window really is in front. If it refuses, do not fight it.
 One game at a time. Every run sets GAME_RESULTS_SAVE false.
 
-The template is the storyboard's TEMPLATE ("amd", "away"), or else "away" when the state has
-a tile map or a tileset in it, and "amd" when it has not. `-t away` brings the art packs a
-tile map is drawn with (story.json's shared_media, settings.yaml's TILE_ART); the state's own
-files are laid over it, so the probe is the student's folder, art and all.
+The template is the storyboard's TEMPLATE ("amd", "away", "ou"), or else "away" when the
+state has a tile map or a tileset in it, and "amd" when it has not. `-t away` brings the art
+packs a tile map is drawn with (story.json's shared_media, settings.yaml's TILE_ART); the
+state's own files are laid over it, so the probe is the student's folder, art and all.
 """
 import argparse
+import ast
+import json
 import os
 import shutil
 import subprocess
@@ -40,8 +65,13 @@ import states  # noqa: E402
 
 MISSIONS = os.environ.get("PICTURE_GAME_MISSIONS", r"E:\a\Cosmos-dev\data\missions")
 PROBE = "_pic_probe"
+SANDBOX = "_sandbox"
 PY = os.path.join(MISSIONS, "..", "..", "PyRuntime", "python.exe")
 ENV = dict(os.environ, COSMOS_SETTINGS='{"GAME_RESULTS_SAVE": false}')
+SAVES = os.path.join(MISSIONS, "common_data", "saves")
+STATE = os.path.join(MISSIONS, f"{PROBE}.json")      # where the running probe is, for stop
+SANDBOX_TEMPLATES = ("ou",)
+GAP_MIN, GAP_MAX = 1.0, 90.0                         # a replay's pause between two steps
 
 
 def eng(*args):
@@ -73,20 +103,120 @@ def template_of(sb, files):
     return "away" if any(f.endswith((".tiles", ".tileset")) for f in files) else "amd"
 
 
-def build(lecture, state, patches, amd_patches=()):
+def probe_name(sandbox):
+    """The probe as `sbs` names it: a folder of data/missions, or one level down."""
+    return f"{SANDBOX}/{PROBE}" if sandbox else PROBE
+
+
+def probe_dir(sandbox):
+    return os.path.join(MISSIONS, *probe_name(sandbox).split("/"))
+
+
+def wants_sandbox(lecture, asked):
+    """--sandbox / --no-sandbox, else on for a template that writes saves."""
+    if asked is not None:
+        return asked
+    _, _, sb = board.load(lecture)
+    return template_of(sb, states.files_of(sb, "final")) in SANDBOX_TEMPLATES
+
+
+# --- the player's saves --------------------------------------------------------------------
+
+def saves_backup_dir(lecture):
+    return os.path.join(c.out_dir(lecture), "game", "_saves_backup")
+
+
+def saves_snapshot():
+    """{file: (size, mtime)} of data/missions/common_data/saves, recursively."""
+    seen = {}
+    for root, _dirs, names in os.walk(SAVES):
+        for n in names:
+            p = os.path.join(root, n)
+            st = os.stat(p)
+            seen[os.path.relpath(p, SAVES)] = (st.st_size, st.st_mtime_ns)
+    return seen
+
+
+def saves_guard_begin(lecture):
+    """Copy the player's saves aside before the game can write to them."""
+    back = saves_backup_dir(lecture)
+    if os.path.isdir(back):
+        shutil.rmtree(back)
+    os.makedirs(back)
+    if os.path.isdir(SAVES):
+        shutil.copytree(SAVES, os.path.join(back, "saves"))
+    with open(os.path.join(back, "snapshot.json"), "w", encoding="utf-8") as fh:
+        json.dump(saves_snapshot(), fh)
+    print(f"player saves copied aside: {len(saves_snapshot())} files")
+
+
+def saves_guard_end(lecture):
+    """Put back any save the run changed, and move out any it made. -> what was undone."""
+    back = saves_backup_dir(lecture)
+    snap = os.path.join(back, "snapshot.json")
+    if not os.path.exists(snap):
+        print("player saves: no copy from start to compare with - CHECK", SAVES, "by hand")
+        return []
+    with open(snap, encoding="utf-8") as fh:
+        before = {k: tuple(v) for k, v in json.load(fh).items()}
+    now = saves_snapshot()
+    undone = []
+    for rel, stamp in now.items():
+        if rel not in before:
+            dest = os.path.join(back, "made_by_the_run", rel)
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            shutil.move(os.path.join(SAVES, rel), dest)
+            undone.append(f"{rel} (new - moved to {dest})")
+        elif stamp != before[rel]:
+            shutil.copy2(os.path.join(back, "saves", rel), os.path.join(SAVES, rel))
+            undone.append(f"{rel} (changed - put back)")
+    for rel in before:
+        if rel not in now:
+            shutil.copy2(os.path.join(back, "saves", rel), os.path.join(SAVES, rel))
+            undone.append(f"{rel} (deleted - put back)")
+    if undone:
+        print("PLAYER SAVES THE RUN TOUCHED, undone:")
+        for u in undone:
+            print("  ", u)
+    else:
+        print("player saves: untouched")
+    return undone
+
+
+# --- the probe -----------------------------------------------------------------------------
+
+def sandbox_lib():
+    """_sandbox/__lib__ as a junction to data/missions/__lib__. The engine's loader looks for
+    the libraries beside the mission's folder (PyAddons/sbslibs.py: <parent>/__lib__), so a
+    mission one level down finds none without it."""
+    link = os.path.join(MISSIONS, SANDBOX, "__lib__")
+    if os.path.isdir(link):
+        return
+    made = subprocess.run(["cmd", "/c", "mklink", "/J", link, os.path.join(MISSIONS, "__lib__")],
+                          capture_output=True, text=True)
+    if not os.path.isdir(link):
+        sys.exit("could not make the sandbox's __lib__ junction:\n" + made.stdout + made.stderr)
+    print(f"{SANDBOX}/__lib__ -> __lib__ (junction)")
+
+
+def build(lecture, state, patches, amd_patches=(), sandbox=False):
     """Make _pic_probe for the state: the template, then every file of the state over it.
     -> the probe's folder. Starts and stops nothing."""
     _, _, sb = board.load(lecture)
-    probe = os.path.join(MISSIONS, PROBE)
+    probe = probe_dir(sandbox)
     if os.path.isdir(probe):
         shutil.rmtree(probe)
+    os.makedirs(os.path.dirname(probe), exist_ok=True)
+    if sandbox:
+        sandbox_lib()
     files = states.files_of(sb, state)
     template = template_of(sb, files)
-    made = subprocess.run([PY, "sbs.pyz", "create", PROBE, "-t", template, "--title", "Picture Probe", "-y"],
+    made = subprocess.run([PY, "sbs.pyz", "create", probe_name(sandbox), "-t", template,
+                           "--title", "Picture Probe", "-y"],
                           cwd=MISSIONS, env=ENV, capture_output=True, text=True)
     if not os.path.isdir(probe):
         sys.exit("sbs create did not make the probe:\n" + made.stdout + made.stderr)
-    print(f"probe made from the '{template}' template")
+    print(f"probe made from the '{template}' template" + (f" in {SANDBOX}/" if sandbox else ""))
     if patches and "story.mast" not in files:
         sys.exit("--patch: the state has no story.mast")
     for f in sorted(files):                           # the lecture's whole folder; the rest stays the template's
@@ -121,13 +251,145 @@ def build(lecture, state, patches, amd_patches=()):
     return probe
 
 
-def start(lecture, state, patches, consoles, wait, amd_patches=()):
+def start(lecture, state, patches, consoles, wait, amd_patches=(), sandbox=False, seed=7):
     stop_game()
-    build(lecture, state, patches, amd_patches)
-    subprocess.Popen([PY, "sbs.pyz", "run", consoles, "-m", PROBE, "map=0"], cwd=MISSIONS, env=ENV,
-                     stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    saves_guard_begin(lecture)
+    build(lecture, state, patches, amd_patches, sandbox)
+    with open(STATE, "w", encoding="utf-8") as fh:
+        json.dump({"lecture": lecture, "sandbox": sandbox}, fh)
+    args = [PY, "sbs.pyz", "run", consoles, "-m", probe_name(sandbox), "map=0"]
+    if seed:
+        args.append(f"seed={seed}")
+    subprocess.Popen(args, cwd=MISSIONS, env=ENV, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     time.sleep(wait)
     print(eng("-Action", "list"))
+
+
+def stop(lecture):
+    stop_game()
+    time.sleep(2)
+    sandbox = False
+    if os.path.exists(STATE):
+        with open(STATE, encoding="utf-8") as fh:
+            sandbox = json.load(fh).get("sandbox", False)
+        os.remove(STATE)
+    probe = probe_dir(sandbox)
+    log = os.path.join(probe, "mast.runtime.log")
+    if os.path.exists(log):
+        print("mast.runtime.log bytes:", os.path.getsize(log))
+    if os.path.isdir(probe):
+        shutil.rmtree(probe)
+    print("game stopped;", probe_name(sandbox), "deleted:", not os.path.isdir(probe))
+    saves_guard_end(lecture)
+
+
+# --- the recording -------------------------------------------------------------------------
+
+def steps_file(lecture):
+    return os.path.join(c.lecture_dir(lecture), "narration", "capture_steps.py")
+
+
+HEADER = '''"""The game stills of this lecture, as game.py made them - `game.py <lecture> replay`
+makes them again. One step per line; `gap` is the pause before it, in seconds."""
+'''
+
+
+def steps_load(lecture):
+    p = steps_file(lecture)
+    if not os.path.exists(p):
+        return []
+    with open(p, encoding="utf-8") as fh:
+        text = fh.read()
+    return ast.literal_eval(text.split("STEPS = ", 1)[1]) if "STEPS = " in text else []
+
+
+def steps_save(lecture, steps):
+    lines = [HEADER, "STEPS = ["]
+    lines += [f"    {s!r}," for s in steps]
+    lines.append("]")
+    with open(steps_file(lecture), "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("\n".join(lines) + "\n")
+
+
+def record(lecture, step):
+    steps = steps_load(lecture)
+    last = os.path.join(c.out_dir(lecture), "game", "_last_step_time")
+    now = time.time()
+    gap = 0.0
+    if steps and os.path.exists(last) and step["op"] != "start":
+        with open(last) as fh:
+            gap = round(min(GAP_MAX, max(0.0, now - float(fh.read() or now))), 1)
+    step = dict(step, gap=gap)
+    steps.append(step)
+    steps_save(lecture, steps)
+    with open(last, "w") as fh:
+        fh.write(str(now))
+
+
+def run_step(lecture, step, shots, out):
+    """Do one recorded step. -> True when it worked."""
+    op = step["op"]
+    if op == "start":
+        start(lecture, step.get("state", "final"), step.get("patch", []), step.get("consoles", "server,helm,science"),
+              step.get("wait", 45), step.get("patch_amd", []), step.get("sandbox", False), step.get("seed", 7))
+    elif op == "stop":
+        stop(lecture)
+    elif op == "wait":
+        time.sleep(float(step["seconds"]))
+    elif op in ("shot", "click"):
+        pid = windows().get(step["window"].lower())
+        if not pid:
+            print(f"no game window titled {step['window']}: {windows()}")
+            return False
+        if op == "shot":
+            print(eng("-Action", "shot", "-ProcId", pid, "-Name", step["name"], "-OutDir", shots))
+        else:
+            said = eng("-Action", "click", "-ProcId", pid, "-FracX", step["x"], "-FracY", step["y"],
+                       "-Name", step["name"], "-OutDir", shots)
+            print(said)
+            if "refus" in said.lower():
+                return False
+    elif op == "keep":
+        src = os.path.join(shots, step["shot"] + ".png")
+        dst = os.path.join(out, "stills", step["still"] + ".png")
+        if not os.path.exists(src):
+            print("no screenshot", src)
+            return False
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        shutil.copyfile(src, dst)
+        print("kept", dst)
+    else:
+        print("unknown step", step)
+        return False
+    return True
+
+
+def replay(lecture, shots, out, first=0, only_keeps=False):
+    steps = steps_load(lecture)
+    if not steps:
+        sys.exit(f"nothing recorded in {steps_file(lecture)}")
+    failed = []
+    started = False
+    try:
+        for i, step in enumerate(steps):
+            if i < first:
+                continue
+            started = started or step["op"] == "start"
+            if only_keeps and step["op"] != "keep":
+                continue
+            if step.get("gap") and step["op"] != "start" and not only_keeps:
+                time.sleep(min(GAP_MAX, max(GAP_MIN, step["gap"])))
+            print(f"[{i}] {step}")
+            if not run_step(lecture, step, shots, out):
+                failed.append(i)
+                if step["op"] in ("start", "click"):  # the rest would land on the wrong screen
+                    print(f"step {i} failed; stopping the replay")
+                    break
+    finally:
+        if started and steps[-1]["op"] != "stop" and not only_keeps:
+            stop(lecture)
+    print("replay done" + (f"; FAILED steps {failed}" if failed else ""))
+    return not failed
 
 
 def main():
@@ -141,33 +403,54 @@ def main():
                     help="the same, for the fact sheet; like --patch, a PROBE-ONLY change, and it is printed")
     ap.add_argument("--consoles", default="server,helm,science")
     ap.add_argument("--wait", type=int, default=45)
+    ap.add_argument("--seed", type=int, default=7, help="seed= on the launch line; 0 for none")
+    ap.add_argument("--sandbox", dest="sandbox", action="store_true", default=None,
+                    help=f"make the probe in {SANDBOX}/ (default: on for an Open Universe template)")
+    ap.add_argument("--no-sandbox", dest="sandbox", action="store_false")
+    ap.add_argument("--no-record", action="store_true", help="do not add this step to capture_steps.py")
+    ap.add_argument("--from", dest="first", type=int, default=0, help="replay: start at this step")
+    ap.add_argument("--only-keeps", action="store_true",
+                    help="replay: only copy the screenshots already taken into stills")
     a = ap.parse_args()
     out = c.out_dir(a.lecture)
     shots = os.path.join(out, "game")
     os.makedirs(shots, exist_ok=True)
+    rec = not a.no_record
     if a.op == "start":
-        start(a.lecture, a.state, a.patch, a.consoles, a.wait, a.patch_amd)
+        sandbox = wants_sandbox(a.lecture, a.sandbox)
+        step = {"op": "start", "state": a.state, "patch": a.patch, "patch_amd": a.patch_amd,
+                "consoles": a.consoles, "wait": a.wait, "sandbox": sandbox, "seed": a.seed}
+        run_step(a.lecture, step, shots, out)
+        if rec:                                       # after: the wait is not a gap
+            record(a.lecture, step)
     elif a.op == "build":
-        build(a.lecture, a.state, a.patch, a.patch_amd)
+        build(a.lecture, a.state, a.patch, a.patch_amd, wants_sandbox(a.lecture, a.sandbox))
     elif a.op == "list":
         print(eng("-Action", "list"))
-    elif a.op in ("shot", "click"):
-        pid = windows().get(a.args[0].lower())
-        if not pid:
-            sys.exit(f"no game window titled {a.args[0]}: {windows()}")
+    elif a.op in ("shot", "click", "wait", "keep", "stop"):
         if a.op == "shot":
-            print(eng("-Action", "shot", "-ProcId", pid, "-Name", a.args[1], "-OutDir", shots))
+            step = {"op": "shot", "window": a.args[0], "name": a.args[1]}
+        elif a.op == "click":
+            step = {"op": "click", "window": a.args[0], "x": float(a.args[1]), "y": float(a.args[2]),
+                    "name": a.args[3]}
+        elif a.op == "wait":
+            step = {"op": "wait", "seconds": float(a.args[0])}
+        elif a.op == "keep":
+            step = {"op": "keep", "shot": a.args[0], "still": a.args[1]}
         else:
-            print(eng("-Action", "click", "-ProcId", pid, "-FracX", a.args[1], "-FracY", a.args[2],
-                      "-Name", a.args[3], "-OutDir", shots))
-    elif a.op == "keep":
-        src = os.path.join(shots, a.args[0] + ".png")
-        dst = os.path.join(out, "stills", a.args[1] + ".png")
-        shutil.copyfile(src, dst)
-        print("kept", dst)
+            step = {"op": "stop"}
+        ok = run_step(a.lecture, step, shots, out)
+        if rec and ok:
+            record(a.lecture, step)
+        if not ok:
+            sys.exit(1)
     elif a.op == "log":                               # what the game wrote, kept before stop deletes the probe
+        sandbox = False
+        if os.path.exists(STATE):
+            with open(STATE, encoding="utf-8") as fh:
+                sandbox = json.load(fh).get("sandbox", False)
         for f in ("mast.runtime.log", "mast.compile.log"):
-            src = os.path.join(MISSIONS, PROBE, f)
+            src = os.path.join(probe_dir(sandbox), f)
             if os.path.exists(src):
                 dst = os.path.join(shots, f"{a.args[0]}.{f}")
                 shutil.copyfile(src, dst)
@@ -175,16 +458,14 @@ def main():
                 print(open(src, encoding="utf-8", errors="replace").read())
             else:
                 print(f"{f}: not there")
-    elif a.op == "stop":
-        stop_game()
-        time.sleep(2)
-        probe = os.path.join(MISSIONS, PROBE)
-        log = os.path.join(probe, "mast.runtime.log")
-        if os.path.exists(log):
-            print("mast.runtime.log bytes:", os.path.getsize(log))
-        if os.path.isdir(probe):
-            shutil.rmtree(probe)
-        print("game stopped;", PROBE, "deleted:", not os.path.isdir(probe))
+    elif a.op == "steps":
+        for i, s in enumerate(steps_load(a.lecture)):
+            print(f"[{i}] {s}")
+    elif a.op == "forget":
+        steps_save(a.lecture, [])
+        print("recording emptied:", steps_file(a.lecture))
+    elif a.op == "replay":
+        sys.exit(0 if replay(a.lecture, shots, out, a.first, a.only_keeps) else 1)
     else:
         sys.exit(f"unknown op {a.op}")
 

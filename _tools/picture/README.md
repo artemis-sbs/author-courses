@@ -67,6 +67,20 @@ python game.py %L% stop                                   # also deletes _pic_pr
 
 The `--patch` is a probe-only change: the hulk is put next to the ship so nobody has to fly.
 
+Every step above is RECORDED into the lecture's `narration/capture_steps.py`, with the
+pause before it, so the next time it is one command and no hands:
+
+```
+python game.py %L% replay            # start, clicks, keeps, stop - as recorded
+python game.py %L% steps             # what is recorded
+python game.py %L% forget            # start the recording over
+```
+
+Every launch passes `seed=7` (`--seed`), so the faces, names and spawns are the same on
+the replay as on the day the marks were placed. An Open Universe probe is built in
+`data/missions/_sandbox/` so it cannot write the player's saves, and every run copies
+`common_data/saves` aside at `start` and undoes any change at `stop`.
+
 ## How it stays true
 
 - A state is the previous lecture's `example\` plus edits that must each apply exactly once;

@@ -1,0 +1,337 @@
+[
+ {
+  "folder": "c1-01-what-you-are-going-to-build",
+  "file": "Class 1 Lecture 01 - What you are going to build",
+  "upload_title": "Class 1 Lecture 01 What you are going to build",
+  "title": "Cosmos Author Courses 1.1: What you are going to build",
+  "desc": "Class 1, Lecture 1 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/01-what-you-are-going-to-build/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 1
+ },
+ {
+  "folder": "c1-02-files-folders-command-prompt",
+  "file": "Class 1 Lecture 02 - Files, folders and the command prompt",
+  "upload_title": "Class 1 Lecture 02 Files, folders and the command prompt",
+  "title": "Cosmos Author Courses 1.2: Files, folders and the command prompt",
+  "desc": "Class 1, Lecture 2 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/02-files-folders-command-prompt/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 2
+ },
+ {
+  "folder": "c1-03-editor-and-first-run",
+  "file": "Class 1 Lecture 03 - Your editor and your first run",
+  "upload_title": "Class 1 Lecture 03 Your editor and your first run",
+  "title": "Cosmos Author Courses 1.3: Your editor and your first run",
+  "desc": "Class 1, Lecture 3 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/03-editor-and-first-run/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 3
+ },
+ {
+  "folder": "c1-04-markdown-in-twenty-minutes",
+  "file": "Class 1 Lecture 04 - Markdown in twenty minutes",
+  "upload_title": "Class 1 Lecture 04 Markdown in twenty minutes",
+  "title": "Cosmos Author Courses 1.4: Markdown in twenty minutes",
+  "desc": "Class 1, Lecture 4 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/04-markdown-in-twenty-minutes/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 4
+ },
+ {
+  "folder": "c1-05-the-shape-of-a-record",
+  "file": "Class 1 Lecture 05 - The shape of a record",
+  "upload_title": "Class 1 Lecture 05 The shape of a record",
+  "title": "Cosmos Author Courses 1.5: The shape of a record",
+  "desc": "Class 1, Lecture 5 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/05-the-shape-of-a-record/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 5
+ },
+ {
+  "folder": "c1-06-lint-is-your-editor",
+  "file": "Class 1 Lecture 06 - Lint is your editor",
+  "upload_title": "Class 1 Lecture 06 Lint is your editor",
+  "title": "Cosmos Author Courses 1.6: Lint is your editor",
+  "desc": "Class 1, Lecture 6 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/06-lint-is-your-editor/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 6
+ },
+ {
+  "folder": "c1-07-roles-and-signals",
+  "file": "Class 1 Lecture 07 - Roles and signals",
+  "upload_title": "Class 1 Lecture 07 Roles and signals",
+  "title": "Cosmos Author Courses 1.7: Roles and signals",
+  "desc": "Class 1, Lecture 7 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/07-roles-and-signals/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 7
+ },
+ {
+  "folder": "c1-08-first-quest",
+  "file": "Class 1 Lecture 08 - Your first quest",
+  "upload_title": "Class 1 Lecture 08 Your first quest",
+  "title": "Cosmos Author Courses 1.8: Your first quest",
+  "desc": "Class 1, Lecture 8 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/08-first-quest/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 8
+ },
+ {
+  "folder": "c1-09-chains-and-trees",
+  "file": "Class 1 Lecture 09 - Chains and trees",
+  "upload_title": "Class 1 Lecture 09 Chains and trees",
+  "title": "Cosmos Author Courses 1.9: Chains and trees",
+  "desc": "Class 1, Lecture 9 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/09-chains-and-trees/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 9
+ },
+ {
+  "folder": "c1-10-things-quests-point-at",
+  "file": "Class 1 Lecture 10 - Things quests point at",
+  "upload_title": "Class 1 Lecture 10 Things quests point at",
+  "title": "Cosmos Author Courses 1.10: Things quests point at",
+  "desc": "Class 1, Lecture 10 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/10-things-quests-point-at/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 10
+ },
+ {
+  "folder": "c1-11-just-enough-mast",
+  "file": "Class 1 Lecture 11 - Just enough MAST",
+  "upload_title": "Class 1 Lecture 11 Just enough MAST",
+  "title": "Cosmos Author Courses 1.11: Just enough MAST",
+  "desc": "Class 1, Lecture 11 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/11-just-enough-mast/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 11
+ },
+ {
+  "folder": "c1-12-ship-a-quest-mission",
+  "file": "Class 1 Lecture 12 - Ship a quest mission",
+  "upload_title": "Class 1 Lecture 12 Ship a quest mission",
+  "title": "Cosmos Author Courses 1.12: Ship a quest mission",
+  "desc": "Class 1, Lecture 12 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-1/12-ship-a-quest-mission/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 1,
+  "lec": 12
+ },
+ {
+  "folder": "c2-01-sides-and-factions",
+  "file": "Class 2 Lecture 01 - Sides and factions",
+  "upload_title": "Class 2 Lecture 01 Sides and factions",
+  "title": "Cosmos Author Courses 2.1: Sides and factions",
+  "desc": "Class 2, Lecture 1 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/01-sides-and-factions/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 1
+ },
+ {
+  "folder": "c2-02-characters-and-faces",
+  "file": "Class 2 Lecture 02 - Characters and faces",
+  "upload_title": "Class 2 Lecture 02 Characters and faces",
+  "title": "Cosmos Author Courses 2.2: Characters and faces",
+  "desc": "Class 2, Lecture 2 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/02-characters-and-faces/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 2
+ },
+ {
+  "folder": "c2-03-dialogue-part-1",
+  "file": "Class 2 Lecture 03 - Dialogue, part 1",
+  "upload_title": "Class 2 Lecture 03 Dialogue, part 1",
+  "title": "Cosmos Author Courses 2.3: Dialogue, part 1",
+  "desc": "Class 2, Lecture 3 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/03-dialogue-part-1/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 3
+ },
+ {
+  "folder": "c2-04-dialogue-part-2",
+  "file": "Class 2 Lecture 04 - Dialogue, part 2",
+  "upload_title": "Class 2 Lecture 04 Dialogue, part 2",
+  "title": "Cosmos Author Courses 2.4: Dialogue, part 2",
+  "desc": "Class 2, Lecture 4 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/04-dialogue-part-2/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 4
+ },
+ {
+  "folder": "c2-05-hails",
+  "file": "Class 2 Lecture 05 - Hails",
+  "upload_title": "Class 2 Lecture 05 Hails",
+  "title": "Cosmos Author Courses 2.5: Hails",
+  "desc": "Class 2, Lecture 5 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/05-hails/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 5
+ },
+ {
+  "folder": "c2-06-reputation-a-first-look",
+  "file": "Class 2 Lecture 06 - Reputation, a first look",
+  "upload_title": "Class 2 Lecture 06 Reputation, a first look",
+  "title": "Cosmos Author Courses 2.6: Reputation, a first look",
+  "desc": "Class 2, Lecture 6 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/06-reputation-a-first-look/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 6
+ },
+ {
+  "folder": "c2-07-the-story-tools",
+  "file": "Class 2 Lecture 07 - The story tools",
+  "upload_title": "Class 2 Lecture 07 The story tools",
+  "title": "Cosmos Author Courses 2.7: The story tools",
+  "desc": "Class 2, Lecture 7 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/07-the-story-tools/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 7
+ },
+ {
+  "folder": "c2-08-siege-boss",
+  "file": "Class 2 Lecture 08 - A Siege boss, part 1",
+  "upload_title": "Class 2 Lecture 08 A Siege boss, part 1",
+  "title": "Cosmos Author Courses 2.8: A Siege boss, part 1",
+  "desc": "Class 2, Lecture 8 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/08-siege-boss/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 8
+ },
+ {
+  "folder": "c2-09-siege-boss-fields",
+  "file": "Class 2 Lecture 09 - A Siege boss, part 2",
+  "upload_title": "Class 2 Lecture 09 A Siege boss, part 2",
+  "title": "Cosmos Author Courses 2.9: A Siege boss, part 2",
+  "desc": "Class 2, Lecture 9 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/09-siege-boss-fields/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 9
+ },
+ {
+  "folder": "c2-10-siege-boss-quests",
+  "file": "Class 2 Lecture 10 - A Siege boss, part 3",
+  "upload_title": "Class 2 Lecture 10 A Siege boss, part 3",
+  "title": "Cosmos Author Courses 2.10: A Siege boss, part 3",
+  "desc": "Class 2, Lecture 10 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/10-siege-boss-quests/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 10
+ },
+ {
+  "folder": "c2-11-a-boss-with-a-voice",
+  "file": "Class 2 Lecture 11 - A boss with a voice",
+  "upload_title": "Class 2 Lecture 11 A boss with a voice",
+  "title": "Cosmos Author Courses 2.11: A boss with a voice",
+  "desc": "Class 2, Lecture 11 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-2/11-a-boss-with-a-voice/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 2,
+  "lec": 11
+ },
+ {
+  "folder": "c3-01-what-a-boarding-party-is",
+  "file": "Class 3 Lecture 01",
+  "title": "Cosmos Author Courses 3.1: What a boarding party is",
+  "desc": "Class 3, Lecture 1 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/01-what-a-boarding-party-is/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 1
+ },
+ {
+  "folder": "c3-02-party-and-place",
+  "file": "Class 3 Lecture 02",
+  "title": "Cosmos Author Courses 3.2: A party and a place",
+  "desc": "Class 3, Lecture 2 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/02-party-and-place/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 2
+ },
+ {
+  "folder": "c3-03-everyone-gets-a-menu",
+  "file": "Class 3 Lecture 03",
+  "title": "Cosmos Author Courses 3.3: Everyone gets a menu",
+  "desc": "Class 3, Lecture 3 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/03-everyone-gets-a-menu/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 3
+ },
+ {
+  "folder": "c3-04-crew-and-skills",
+  "file": "Class 3 Lecture 04",
+  "title": "Cosmos Author Courses 3.4: Crew and skills",
+  "desc": "Class 3, Lecture 4 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/04-crew-and-skills/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 4
+ },
+ {
+  "folder": "c3-05-personal-quests",
+  "file": "Class 3 Lecture 05",
+  "title": "Cosmos Author Courses 3.5: Personal quests",
+  "desc": "Class 3, Lecture 5 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/05-personal-quests/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 5
+ },
+ {
+  "folder": "c3-06-boarding-checkpoint",
+  "file": "Class 3 Lecture 06",
+  "title": "Cosmos Author Courses 3.6: Checkpoint: a short boarding quest",
+  "desc": "Class 3, Lecture 6 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/06-boarding-checkpoint/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 6
+ },
+ {
+  "folder": "c3-07-anatomy-of-a-long-away-mission",
+  "file": "Class 3 Lecture 07",
+  "title": "Cosmos Author Courses 3.7: Anatomy of a long away mission",
+  "desc": "Class 3, Lecture 7 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/07-anatomy-of-a-long-away-mission/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 7
+ },
+ {
+  "folder": "c3-08-tile-map-editor-part-1",
+  "file": "Class 3 Lecture 08",
+  "title": "Cosmos Author Courses 3.8: The Tile Map Editor, part 1",
+  "desc": "Class 3, Lecture 8 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/08-tile-map-editor-part-1/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 8
+ },
+ {
+  "folder": "c3-09-tile-map-editor-part-2",
+  "file": "Class 3 Lecture 09",
+  "title": "Cosmos Author Courses 3.9: The Tile Map Editor, part 2",
+  "desc": "Class 3, Lecture 9 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/09-tile-map-editor-part-2/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 9
+ },
+ {
+  "folder": "c3-10-props",
+  "file": "Class 3 Lecture 10",
+  "title": "Cosmos Author Courses 3.10: Props",
+  "desc": "Class 3, Lecture 10 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/10-props/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 10
+ },
+ {
+  "folder": "c3-11-people-and-hostiles",
+  "file": "Class 3 Lecture 11",
+  "title": "Cosmos Author Courses 3.11: People and hostiles",
+  "desc": "Class 3, Lecture 11 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/11-people-and-hostiles/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 11
+ },
+ {
+  "folder": "c3-12-scenes-on-the-ground",
+  "file": "Class 3 Lecture 12",
+  "title": "Cosmos Author Courses 3.12: Scenes on the ground",
+  "desc": "Class 3, Lecture 12 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/12-scenes-on-the-ground/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 12
+ },
+ {
+  "folder": "c3-13-what-the-crew-sees",
+  "file": "Class 3 Lecture 13",
+  "title": "Cosmos Author Courses 3.13: What the crew sees",
+  "desc": "Class 3, Lecture 13 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/13-what-the-crew-sees/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 13
+ },
+ {
+  "folder": "c3-14-pacing-an-away-mission",
+  "file": "Class 3 Lecture 14",
+  "title": "Cosmos Author Courses 3.14: Pacing an away mission",
+  "desc": "Class 3, Lecture 14 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/14-pacing-an-away-mission/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 14
+ },
+ {
+  "folder": "c3-15-boarding-an-enemy-ship",
+  "file": "Class 3 Lecture 15",
+  "title": "Cosmos Author Courses 3.15: Boarding an enemy ship",
+  "desc": "Class 3, Lecture 15 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/15-boarding-an-enemy-ship/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 15
+ },
+ {
+  "folder": "c3-16-a-long-boarding-mission",
+  "file": "Class 3 Lecture 16",
+  "title": "Cosmos Author Courses 3.16: Capstone: a long boarding mission",
+  "desc": "Class 3, Lecture 16 of the Cosmos Author Courses: writing missions for Artemis Cosmos, for storytellers, not programmers.\n\nThe page for this lecture, with every step written out and the finished files to download:\nhttps://artemis-sbs.github.io/author-courses/class-3/16-a-long-boarding-mission/\n\nThe whole course: https://artemis-sbs.github.io/author-courses/\n\nThis is a review draft. The voice is generated from the author's own.",
+  "cls": 3,
+  "lec": 16
+ }
+]
