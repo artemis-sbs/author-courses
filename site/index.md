@@ -6,7 +6,7 @@ You do not need to know markdown, a command prompt or a code editor before you s
 first class teaches all three.
 
 !!! warning "This is a review copy"
-    Classes 1 and 2 are complete as drafts and are being read and tried by reviewers.
+    Classes 1, 2 and 3 are complete as drafts and are being read and tried by reviewers.
     Pages and videos will change. If you are one of the reviewers, start with
     [For reviewers](reviewers.md).
 
@@ -59,6 +59,35 @@ All eleven videos are also in one [playlist](https://www.youtube.com/playlist?li
 | 10 | [A Siege boss, part 3](class-2/10-siege-boss-quests.md) | Her quests: a flagship to sink against the clock, a bonus, and a ship held back |
 | 11 | [Capstone: a boss with a voice](class-2/11-a-boss-with-a-voice.md) | A boss who calls the crew herself, and an answer that turns one of her ships |
 
+## Class 3 - Boarding Parties
+
+Sixteen lectures. Your crew go aboard as themselves. First a scene of rooms: a derelict
+hulk where each person is offered different choices, where skills decide who can do what,
+and where two of the crew carry a story of their own. Then the party walks: maps you draw,
+things to pick up and use, people to talk to, something that fights, a clock, and an enemy
+ship boarded after she strikes her colors. You finish with a long away mission of your own.
+
+All sixteen videos are also in one [playlist](https://www.youtube.com/playlist?list=PLDtp68Wa9ogg).
+
+| # | Lecture | You leave with |
+|---|---|---|
+| 1 | [What a boarding party is](class-3/01-what-a-boarding-party-is.md) | A boarding scene played and read: the lines that made it, and its author's notes |
+| 2 | [A party and a place](class-3/02-party-and-place.md) | A party that forms at the hulk, and three rooms with a way back from each |
+| 3 | [Everyone gets a menu](class-3/03-everyone-gets-a-menu.md) | A secret no one person can find: different choices for different consoles |
+| 4 | [Crew and skills](class-3/04-crew-and-skills.md) | Crew who are good at different things, and a roll the page shows |
+| 5 | [Personal quests](class-3/05-personal-quests.md) | Two crew members who go aboard with a story of their own |
+| 6 | [Checkpoint: a short boarding quest](class-3/06-boarding-checkpoint.md) | A ten-minute away scene of your own, with two endings that each hand the ship a quest |
+| 7 | [Anatomy of a long away mission](class-3/07-anatomy-of-a-long-away-mission.md) | A walking mission played once and read from end to end |
+| 8 | [The Tile Map Editor, part 1](class-3/08-tile-map-editor-part-1.md) | A map of your own, drawn and walked |
+| 9 | [The Tile Map Editor, part 2](class-3/09-tile-map-editor-part-2.md) | Three maps joined into one place, with the first things standing on them |
+| 10 | [Props](class-3/10-props.md) | A locked door and its key, fuses, a notice, and a pump only an engineer may touch |
+| 11 | [People and hostiles](class-3/11-people-and-hostiles.md) | Somebody to talk to, and something in the cistern that fights |
+| 12 | [Scenes on the ground](class-3/12-scenes-on-the-ground.md) | One story across three maps, with two endings |
+| 13 | [What the crew sees](class-3/13-what-the-crew-sees.md) | The same mission read from the crew's side of the screen |
+| 14 | [Pacing an away mission](class-3/14-pacing-an-away-mission.md) | A sheet that says how long your mission is, and a mission that agrees with it |
+| 15 | [Boarding an enemy ship](class-3/15-boarding-an-enemy-ship.md) | A pirate raider run down, boarded and searched, ending one of three ways |
+| 16 | [Capstone: a long boarding mission](class-3/16-a-long-boarding-mission.md) | Your own long away mission: three areas, a clock, two endings and three jobs |
+
 ## What you need
 
 - Artemis Cosmos 1.4.0, from Steam or itch.io.
@@ -67,6 +96,5 @@ All eleven videos are also in one [playlist](https://www.youtube.com/playlist?li
 
 ## The classes to come
 
-Class 3 sends a boarding party aboard. Class 4 builds ancient ruins. Classes 5 and 6 build a universe and run a campaign in
-it. Drafts of some of their lectures are in the
+Class 4 builds ancient ruins. Classes 5 and 6 build a universe and run a campaign in it. Drafts of some of their lectures are in the
 [repository](https://github.com/artemis-sbs/author-courses); they are not published here yet.

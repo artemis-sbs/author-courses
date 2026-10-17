@@ -24,6 +24,7 @@ REPO = "https://github.com/artemis-sbs/author-courses"
 PUBLISHED = {
     1: "Class 1 - The Writer's Desk and Your First Quest",
     2: "Class 2 - People, Dialogue and Siege Bosses",
+    3: "Class 3 - Boarding Parties",
 }
 
 VIDEO_SECTION = re.compile(r"^## The video\s*\n.*?(?=^## )", re.S | re.M)

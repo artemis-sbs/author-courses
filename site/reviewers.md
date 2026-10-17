@@ -1,7 +1,7 @@
 # For reviewers
 
-Thank you for trying this. Classes 1 and 2 are complete drafts: twenty-three pages and
-twenty-three videos. Nobody outside the project has followed them yet. You are the first.
+Thank you for trying this. Classes 1, 2 and 3 are complete drafts: thirty-nine pages and
+thirty-nine videos. Nobody outside the project has followed them yet. You are the first.
 
 ## What we most want to know
 
@@ -26,7 +26,7 @@ finds the most. You need:
 
 - Artemis Cosmos installed. The lessons are written for version 1.4.0, which is not
   released yet. *[How reviewers get a build that works is being settled. Until it is, the
-  follow-along review starts at Lecture 2 and may stop at Lecture 3; tell us where.]*
+  follow-along review starts at Class 1, Lecture 2 and may stop at Lecture 3; tell us where.]*
 - About an hour a lecture.
 
 ## How to tell us
@@ -43,13 +43,13 @@ Please do not spend your time on these:
   *[Screenshot to add: ...]* marks where one will go.
 - **The pictures do not move much.** The videos are made from real screens, as stills with
   a slow push-in. Typing and clicking are shown by their result.
-- **Some screens are not a student's.** The game's mission list in Lecture 1 is a
+- **Some screens are not a student's.** The game's mission list in Class 1, Lecture 1 is a
   developer's, with more missions than you will have. A few game pictures show a folder
   named `_pic_probe`.
 - **Version numbers** on screen may be newer or older than yours.
-- **Lecture 6's video** shows three findings for the last example. The page shows six,
+- **Class 1, Lecture 6's video** shows three findings for the last example. The page shows six,
   and the page is right: the video was made from an older starting file.
-- **Classes 3 to 6** are not published. Their drafts are in the repository for the curious.
+- **Classes 4 to 6** are not published. Their drafts are in the repository for the curious.
 
 ## What happens to your report
 
