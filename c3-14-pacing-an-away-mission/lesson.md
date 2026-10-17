@@ -12,7 +12,8 @@ reach every ending, and look at what three people are doing in the same minute.
 The hand check finds two things wrong with the mission you finished in Lecture 12. You
 fix both. Each fix is one line.
 
-*[Screenshot to add: the Tasks app with the time left under Relight Kesh Relay.]*
+![Dr Hale's Tasks app on the pad: Relight Kesh Relay picked in the list with 26:51 left under it, and its page showing State Active and Time left 26:51](images/tasks-time-left.jpg)
+*Dr Hale's Tasks app just after she beams down: Relight Kesh Relay shows the time left in the list and again on its page.*
 
 Only `mission.amd` changes. Three records, five lines.
 

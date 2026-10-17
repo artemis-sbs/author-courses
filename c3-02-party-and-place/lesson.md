@@ -6,7 +6,8 @@ When the ship pulls alongside the hulk, a boarding party forms. Your crew go abo
 themselves: the people you wrote, at the consoles they sit at. Inside are three rooms.
 From every room there is a way back, and from the first room there is a way home.
 
-*[Screenshot to add: the Boarding Party app offering "The Hulk".]*
+![The Boarding Party app on Engineering: Going down to The Hulk, Chief Okoro, and BEAM DOWN](images/boarding-party-app.jpg)
+*The Boarding Party app on the Engineering console: going down to The Hulk, Chief Okoro's face, name and job, and the BEAM DOWN button.*
 
 You will write two short sections and one quest in `mission.amd`, and paste one recipe
 card at the end of `story.mast`.

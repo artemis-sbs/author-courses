@@ -10,8 +10,8 @@ an engineer may touch drains the cistern. And in the cistern: a sluice gate that
 when the water goes, a spare power cell that was under it, and a gauge on a post in the
 middle of the tank.
 
-*[Screenshot to add: the pump house door standing open, the handheld's Pack app showing a
-key and two fuses.]*
+![Two handhelds in the gully: Chief Okoro beside the pump house door, now open, and Dr Hale's Pack app reading fuse x2 and pump key x1](images/door-open-and-pack.jpg)
+*Chief Okoro (left) at the pump house door, open now that the key is in the party's hands, and Dr Hale's Pack app (right) holding the two fuses from the toolbox and the pump key.*
 
 You add eight records to the Props section of `mission.amd`, three short rooms to its
 Scenes section, and three marks to `ground\cistern.tiles`.

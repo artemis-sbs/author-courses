@@ -7,7 +7,8 @@ Five things to find out. A hatch that opens when the party knows three of them. 
 endings, and each ending hands the ship a different quest. Two of your crew go aboard with
 a story of their own.
 
-*[Screenshot to add: two handhelds in the captain's cabin, with the two endings as buttons.]*
+![Dr Hale's and Chief Okoro's handhelds side by side in The Captain's Cabin, both offering Throw the switch and wake them and Leave them sleeping and go for help](images/captains-cabin-two-handhelds.jpg)
+*Dr Hale (left) and Chief Okoro (right) in the captain's cabin: the captain's last order, and the two endings, Throw the switch and wake them and Leave them sleeping and go for help, on both handhelds.*
 
 This lecture teaches almost nothing new. It gives you a way to plan a scene, and five
 checks to make with a pencil. You need the pencil because lint checks your spelling. It

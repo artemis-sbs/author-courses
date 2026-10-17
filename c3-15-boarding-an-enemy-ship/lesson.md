@@ -11,7 +11,8 @@ and the captain's strongbox, which ends it one of three ways.
 Engineering looks at. You write what is on it, and you say where each thing goes by the
 *kind* of room: `Mark: brig`.
 
-*[Screenshot to add: the handheld aboard the Black Gull, with the deck beside it.]*
+![Lt Dana Ross's handheld just after beaming across to the Black Gull: a hallway of the ship's generated deck on the map, the boarding kit a step away, and the list of apps beside it](images/black-gull-deck.jpg)
+*Helm's handheld aboard the Black Gull: Lt Ross stands in a hallway of the deck the game built from the ship's plan, the boarding kit a step away.*
 
 You change two files. In `mission.amd` you add one side, three quests, four things
 aboard and six rooms. In `story.mast` you add two lines to the map, one line to the

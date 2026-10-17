@@ -362,18 +362,21 @@ thinks of the crew, is in preparation.
 **Class 3 - Boarding Parties.** Stop 4. In six lectures you write a place in rooms, give
 each job on the crew its own choices, add skills and a little luck, and hand two of the
 crew a story of their own. You end those six with an away scene about ten minutes long,
-with two endings, that a party of one, two or three can finish. The second half of the
-class, where the party walks a painted map, is in preparation.
-*[Screenshot to add: three handhelds in the captain's cabin, with the two endings as
-buttons.]*
+with two endings, that a party of one, two or three can finish. In the other ten the
+party walks: maps you draw, things to pick up and use, people to talk to, something that
+fights, a clock, and an enemy ship boarded after she strikes her colors.
+
+![Two handhelds side by side in the captain's cabin, Chief Okoro's and Dr Hale's, with the two endings as buttons](images/boarding-cabin-two-handhelds.jpg)
+*Two of the crew in the captain's cabin of the Class 3 checkpoint scene. The two endings are the buttons at the bottom.*
 
 **Class 4 - Ancient Ruins and EVA.** Stop 5. You write a ruin as rooms and passages,
 dress it, name its places, make a place call the ship, hide a room behind an answer, and
 run a quest through it from the way in to the heart. The lectures where a crew member
 leaves the ship in a suit are being finished; one, on repairs outside a station, is in
 preparation.
-*[Screenshot to add: the quest list showing "The Hollow Survey" with its steps, and
-Helm's map with The Altar on it.]*
+
+![The main screen inside The Voice: the ship between Torgoth walls, floor and trim](images/inside-the-voice.jpg)
+*Inside The Voice, from Storm's Beacon: the kind of ruin you build in Class 4.*
 
 **Class 5 - Open Universe: Building the World.** Open Universe is a mission that is a
 whole galaxy: many systems, sides that trade and fight, work to take, and a game you can

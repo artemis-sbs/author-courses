@@ -6,7 +6,8 @@ The hulk keeps a secret, and no one person can find it. The engineer is offered 
 reading, the surgeon another, and the captain's log only opens once the party has put two
 readings together.
 
-*[Screenshot to add: two consoles side by side in the airlock, with different choices.]*
+![Two handhelds side by side in The Reactor Room: Chief Okoro offered Read the shutdown record, Dr Hale offered only Go back to the airlock](images/reactor-room-two-consoles.jpg)
+*Chief Okoro (left) and Dr Hale (right) in the reactor room at the same moment: the same page, but only the engineer is offered Read the shutdown record.*
 
 You will edit one section of `mission.amd`. Nothing in `story.mast` changes.
 

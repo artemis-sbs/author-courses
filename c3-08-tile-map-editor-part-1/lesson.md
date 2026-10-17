@@ -8,8 +8,8 @@ four walls and a floor inside, and a gap in one wall where a door will go.
 You will have made a new area file, drawn on it with the Tile Map Editor, beamed a crew
 member into it and walked through the gap.
 
-*[Screenshot to add: `gully.tiles` open in the Tile Map Editor, the pump house in the
-middle, the legend down the left side.]*
+![gully.tiles open in the Tile Map Editor: the legend on the left, the gully with the arrive mark at the west end and the pump house on the right](images/gully-in-the-editor.jpg)
+*The Tile Map Editor in VS Code with `gully.tiles` open in Art view: the legend down the left, the arrive mark at the west end, and the pump house with its door mark in the west wall.*
 
 You make one new file today, `ground\gully.tiles`. Nothing else in the mission changes.
 

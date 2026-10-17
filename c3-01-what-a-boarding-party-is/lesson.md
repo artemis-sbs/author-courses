@@ -9,8 +9,8 @@ You will have played a scene borrowed from a shipped campaign, read the hundred 
 that made it, and read the rest of its file: the notes its author kept. You will also have
 the mission the rest of this class is built in.
 
-*[Screenshot to add: a console turned into the boarding party's handheld, standing on the
-landing field.]*
+![The Helm console as the officer's handheld, at The Landing Field, with the field's line and six choices](images/landing-field-handheld.jpg)
+*The Helm console turned into its officer's handheld, on the Act app at The Landing Field: the room's line, then Walk in with her, Beam back up and four choices covering for crew who stayed aboard.*
 
 You paste two blocks today, and you delete them again at the end. You write nothing of
 your own until Lecture 2.

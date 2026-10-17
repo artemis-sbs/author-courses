@@ -15,8 +15,8 @@ Mine is small on purpose: 19 rooms on three small maps, so that you can read all
 in one sitting. By Lecture 14's guess it plays in about twenty minutes. A mission of
 forty-five wants about twice the rooms, and the same skeleton.
 
-*[Screenshot to add: three handhelds at the rock fall, and the bridge's quest list beside
-them.]*
+![Chief Okoro's handheld at the rock fall offering Shore the roof and dig, Dr Hale's handheld with Jo Reth in the Lower Gallery offering Set his leg, and the Quest Log aboard showing Bring the Dig Crew Out with its time left and Reach the Rock Fall active](images/rock-fall-and-quest-log.jpg)
+*Chief Okoro at the rock fall (left), Dr Hale with Jo Reth in the Lower Gallery (middle), and the Quest Log aboard (right), with the time left under Bring the Dig Crew Out.*
 
 ## The video
 

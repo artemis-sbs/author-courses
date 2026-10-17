@@ -9,8 +9,8 @@ a tank of standing water.
 You will also have stood the first things on your maps: a trail sign, a pump and a crate.
 And you will have redrawn the walk the sentry takes, and given the crew a way round it.
 
-*[Screenshot to add: the three areas side by side in the Tile Map Editor, the exits
-outlined in blue.]*
+![The three maps in the Tile Map Editor's Art view: the relay yard with its exit to the gully, the gully with exits to the yard and the cistern, and the cistern with its exit back up, each exit outlined in blue](images/three-maps-in-the-editor.jpg)
+*The yard (top left), the gully (top right) and the cistern (below) in the Tile Map Editor: the exits are outlined in blue, the marks in yellow, and a star shows where the crew arrives.*
 
 Five files change today: the yard's map, the gully's map, the tileset, a new map for the
 cistern, and `mission.amd`. There is still nothing to do down there. Lectures 10 to 12

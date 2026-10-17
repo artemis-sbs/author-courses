@@ -8,7 +8,8 @@ story is handed to its person when they beam down, and it is listed on that pers
 handheld. Only that person's own reading finishes it, and finishing the surgeon's completes
 a quest for the whole ship.
 
-*[Screenshot to add: Dr Hale's handheld with the Tasks app open, showing Six Names.]*
+![Dr Hale's handheld on the Tasks app, Six Names listed under her name, with its order and line below](images/tasks-six-names.jpg)
+*Dr Hale's handheld on the Tasks app: Six Names, Active, under her own name, the party's quests under Party, and the selected quest's order and line at the foot.*
 
 You will add one section and one quest to `mission.amd`, change two choices, and add a few
 words to one line of `story.mast`.

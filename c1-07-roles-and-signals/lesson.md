@@ -11,7 +11,8 @@ Two words of your own, each written in two files, and a list that keeps track of
   story, and where each one comes from.
 - You know what lint says when the two files disagree, and where it says nothing.
 
-*[Screenshot to add: VS Code's search panel showing `8 results in 2 files` for `derelict`.]*
+![VS Code's Search panel: derelict, 8 results in 2 files, three in mission.amd and five in story.mast](images/search-derelict.jpg)
+*VS Code's Search panel with Match Case and Match Whole Word on: `derelict` is in both files.*
 
 You will open `story.mast` for the first time. You will not learn to read it. You will
 change four places in it, and every word you type there goes between quote marks that are

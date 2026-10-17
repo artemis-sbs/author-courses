@@ -7,7 +7,8 @@ the only one who can read the sensor record, and it has nothing to do with her j
 may try to wake the reactor, but the chief is three times as likely to manage it, and the
 page shows the roll.
 
-*[Screenshot to add: the reactor room after a roll, with the roll line above the room's line.]*
+![Chief Okoro's handheld after two tries to wake the core: Dr Hale's failed roll and his successful one, each above the line it led to](images/reactor-roll.jpg)
+*Chief Okoro's handheld in the reactor room: Dr Hale's roll (engineering 0, a failure) and then his (engineering 4, a success), each roll line just above the line it led to.*
 
 You will add two lines to your crew roster and two choices to your rooms in `mission.amd`.
 You will not touch `story.mast`.

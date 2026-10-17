@@ -12,7 +12,8 @@ you typed in a hurry as a name for yourself, and they are on the screen too.
 Today you go through the handheld one app at a time, find what reads badly in `MyAway`,
 and fix it. You also give the two crew members with nothing to do something to do.
 
-*[Screenshot to add: the handheld on the ground, with its list of eight apps.]*
+![Dr Hale's handheld on the landing pad: the map beside a list of eight apps, Crew, Act, Look, Pack, Tasks, Beam, Scan and Fire, each with a one-line description](images/handheld-eight-apps.jpg)
+*Dr Hale's handheld just after she beams down to the pad: the first screen is the list of eight apps.*
 
 The screens on this page were played on the game itself. A few numbers come from the
 game's code and were not counted on a screen, and the page says so where they come up.

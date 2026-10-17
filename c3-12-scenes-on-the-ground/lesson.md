@@ -13,7 +13,8 @@ game from inside the pump house.
 Every one of those is an answer in a room, with a condition in front of it or an outcome
 after it. You know the shape. Today you learn the words that only make sense on a map.
 
-*[Screenshot to add: Pim's scene on the handheld, with "Give her the tablet" offered.]*
+![Chief Okoro's handheld in the gully, Act app: Pim's line and her face, with Give her the tablet and Tell her the tablet is yours now among the answers](images/pim-give-tablet.jpg)
+*Chief Okoro talks to Pim in the gully with her tablet in his pack: the Act app now offers Give her the tablet.*
 
 Only `mission.amd` changes. You add one quest, one person and one prop, rewrite two
 scenes, and add a line to two of the starter's.

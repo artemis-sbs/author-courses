@@ -11,8 +11,8 @@ opens a door, and lights a beacon or burns it out.
 You type nothing of your own today. One command makes the mission. You play it, and then
 you read its four files until you can say what each one is for.
 
-*[Screenshot to add: a console on the ground at Kesh Relay: the map on one side, the
-handheld on the other.]*
+![The Science console on the ground at Kesh Relay: the yard map on the left, the handheld's apps on the right](images/kesh-relay-on-the-ground.jpg)
+*Science on the ground at Kesh Relay: Dr Ines Hale has walked off the landing pad toward Old Marrow and his tent, and the handheld beside the map lists its apps.*
 
 ## The video
 

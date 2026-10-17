@@ -9,8 +9,8 @@ click on her opens a scene. Down the stairs, a sump crawler walks the east end o
 walkway. It notices a crew member three cells off, chases them and hurts them. Putting it
 down finishes a side story for the engineer, and it drops something.
 
-*[Screenshot to add: the cistern, a crew member at the west end and the crawler coming
-round the tank.]*
+![Chief Okoro on the cistern's north walkway, the sump crawler at the walkway's east end, and the Tasks app showing The Thing in the Sump, Active](images/cistern-crawler.jpg)
+*Engineering's handheld in the cistern: Chief Okoro on the walkway above the tank, the sump crawler at its east end, and The Thing in the Sump still active on the Tasks app.*
 
 You add one mark to `ground\gully.tiles`, and to `mission.amd` one person, one hostile,
 two rooms and one side story.
