@@ -256,13 +256,21 @@ def start(lecture, state, patches, consoles, wait, amd_patches=(), sandbox=False
     saves_guard_begin(lecture)
     build(lecture, state, patches, amd_patches, sandbox)
     with open(STATE, "w", encoding="utf-8") as fh:
-        json.dump({"lecture": lecture, "sandbox": sandbox}, fh)
+        json.dump({"lecture": lecture, "sandbox": sandbox, "state": state}, fh)
     args = [PY, "sbs.pyz", "run", consoles, "-m", probe_name(sandbox), "map=0"]
     if seed:
         args.append(f"seed={seed}")
     subprocess.Popen(args, cwd=MISSIONS, env=ENV, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     time.sleep(wait)
     print(eng("-Action", "list"))
+
+
+def running_state():
+    """The state the running probe was started on, as start recorded it."""
+    if os.path.exists(STATE):
+        with open(STATE, encoding="utf-8") as fh:
+            return json.load(fh).get("state", "final")
+    return "final"
 
 
 def stop(lecture):
@@ -358,6 +366,13 @@ def run_step(lecture, step, shots, out):
         os.makedirs(os.path.dirname(dst), exist_ok=True)
         shutil.copyfile(src, dst)
         print("kept", dst)
+        _, _, sb = board.load(lecture)
+        spec = sb.STILLS.get(step["still"])
+        if spec:                                      # what it shows, for make.py --stale
+            import stale
+            stale.stamp(sb, os.path.dirname(dst), step["still"], spec, running_state())
+        else:
+            print(f"  (not in the storyboard's STILLS: {step['still']})")
     else:
         print("unknown step", step)
         return False

@@ -971,6 +971,8 @@ def run(lecture, sb, out, redo=()):
                 what = wincap.make_web(sb, name, spec, stills_dir, mission_dir)
             else:
                 what = make_vscode(sb, name, spec, stills_dir, mission_dir)
+            import stale
+            stale.stamp(sb, stills_dir, name, spec)        # what it shows, for make.py --stale
             print(f"  {name:16} {spec[0]:8} {what}  ({time.time() - t:.0f}s)")
         except Exception as e:                              # one bad still must not lose the others
             print(f"  {name:16} FAILED: {e}")

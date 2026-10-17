@@ -127,7 +127,16 @@ def main():
     ap.add_argument("--plan", action="store_true")
     ap.add_argument("--no-video", action="store_true")
     ap.add_argument("--allow-missing", action="store_true", help="encode even with placeholder stills")
+    ap.add_argument("--stale", action="store_true",
+                    help="list the stills whose fingerprint no longer matches (stale.py), and stop")
+    ap.add_argument("--delete", action="store_true", help="with --stale: delete the stale ones")
+    ap.add_argument("--delete-library", action="store_true",
+                    help="with --stale: also delete game stills whose library changed")
     a = ap.parse_args()
+    if a.stale:
+        import stale
+        stale.lecture_report(a.lecture, a.delete, a.delete_library)
+        return
 
     t0 = time.time()
     folder, shots, sb = board.load(a.lecture)
