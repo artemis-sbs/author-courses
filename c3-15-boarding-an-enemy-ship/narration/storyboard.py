@@ -58,7 +58,9 @@ game_l15_medkit was never taken and its beat is dropped. Generated `Pirate crew`
 stand calm in the Plunder Hold and Crew Berths. Sitting 4's game_l15_brakk_fire (Vale armed
 FULL) is no longer used: the gunner is talked to now. SITTING 5 TO TAKE: only the two
 gunner stills, game_l15_brakk_talk and game_l15_brakk_cell (step 7 below); the others
-from sitting 4 stand, since nothing they show changed. Add their marks after.
+from sitting 4 stand, since nothing they show changed. SITTING 5 (2026-10-16): both taken,
+her scene played as written and the power cell reached Vale's Pack; marks measured on them.
+The `The Cell` heading is not drawn, and a FULL shot at her does nothing, silently.
 State "final": `python game.py c3-15-boarding-an-enemy-ship start --consoles server,helm,comms`.
 Nobody beams down at the relay. ENGINE 1.3.15 ON COMMS: select only the Black Gull, never press
 Cancel, and DO NOT TOUCH COMMS from step 2 until she has struck (re-clicking her to refresh the
@@ -224,8 +226,11 @@ _LC_PIC = ("rect", 0.385, 0.17, 0.74, 0.305)        # ... her picture and its ca
 _DB_BOX = ("rect", 0.225, 0.63, 0.28, 0.695)        # game_l15_deck_brig: the strongbox in the brig
 _DB_DECK = ("rect", 0.035, 0.105, 0.665, 0.995)       # ... the whole deck
 _LP_DONE = ("rect", 0.385, 0.075, 0.575, 0.145)     # game_l15_log_prize: Done, 200 credits
-# game_l15_brakk_talk and game_l15_brakk_cell: not taken yet, so no marks. Measure them
-# on the new stills (her line and answer; the power cell row in the Pack) and add them.
+# Measured 2026-10-16 on the sitting-5 stills.
+_BT_MAP = ("rect", 0.19, 0.455, 0.275, 0.58)        # game_l15_brakk_talk: Vale beside Brakk, Boat Bay
+_BT_LINE = ("rect", 0.67, 0.335, 0.99, 0.49)        # ... her face and her line
+_BT_ASK = ("rect", 0.67, 0.51, 0.9, 0.61)           # ... Ask her for the beacon cell, Leave her be
+_BC_CELL = ("rect", 0.665, 0.315, 0.79, 0.355)      # game_l15_brakk_cell: power cell x1 in the Pack
 
 BOARD = {
     "s01_cold_open": {"step": None, "beats": [
@@ -296,8 +301,10 @@ BOARD = {
         {"from": 1, "still": "game_l15_comms_struck", "marks": [_CS_STRIP]},
         {"from": 2, "still": "game_l15_comms_hove", "marks": [_CH_SAYS]},
         # the gunner: she stands down with her crew, and her scene hands the cell over
-        {"from": 3, "still": "game_l15_brakk_talk"},
-        {"from": 9, "still": "game_l15_brakk_cell"},
+        {"from": 3, "still": "game_l15_brakk_talk", "marks": [_BT_MAP]},
+        {"from": 4, "still": "game_l15_brakk_talk", "marks": [_BT_LINE]},
+        {"from": 8, "still": "game_l15_brakk_talk", "marks": [_BT_ASK]},
+        {"from": 9, "still": "game_l15_brakk_cell", "marks": [_BC_CELL]},
         {"from": 10, "still": "game_l15_strongbox", "marks": [_SB_THREE]},
         {"from": 11, "still": "card_endings", "marks": [("part", "r1")]},
         {"from": 12, "still": "game_l15_log_prize", "marks": [_LP_DONE]},
