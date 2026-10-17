@@ -1,4 +1,4 @@
-"""Compact publish batches for several Class 3 drafts: python yt_c3.py 3.4 3.5"""
+"""Compact publish batches for several drafts, any class: python yt_c3.py 4.1 4.2"""
 import json, os, sys
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 T = int(os.environ["YT_TAB"])  # the Claude-in-Chrome tab id of the Studio tab
