@@ -89,13 +89,15 @@ s08_lint_3	That's good, because that call would never have come.
 s08_lint_4	Next I break the scene on the place.
 s08_lint_5	Lint tells me the Altar points at a scene that isn't there,
 s08_lint_6	and that's how I check the half I can't play.
-s08_lint_7	Now the word after reveal, and lint says clean.
-s08_lint_8	Lint doesn't check that word,
-s08_lint_9	and the game would say nothing either.
-s08_lint_10	The answer would end the call, and the Niche would stay dark.
-s08_lint_11	So read two things yourself, every time:
-s08_lint_12	the word after reveal,
-s08_lint_13	and that there's a number after the role.
+s08_lint_7	Now the word after reveal.
+s08_lint_8	Lint tells me nothing in the mission has that key,
+s08_lint_9	so the answer would do nothing.
+s08_lint_10	But if I put a room's key there, lint says clean,
+s08_lint_11	and the game would say nothing either.
+s08_lint_12	The answer would end the call, and the Niche would stay dark.
+s08_lint_13	So read two things yourself, every time:
+s08_lint_14	that the word after reveal is a place,
+s08_lint_15	and that there's a number after the role.
 s09_play_it_0	In through the Mouth we go, and across the Nave.
 s09_play_it_1	Up the tunnel, and there's the Altar on the map,
 s09_play_it_2	the same as last time.
