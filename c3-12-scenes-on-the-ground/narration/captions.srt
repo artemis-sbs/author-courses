@@ -1,495 +1,495 @@
 1
-00:00:00,000 --> 00:00:03,913
+00:00:00,000 --> 00:00:02,948
 You have three maps, some things, and two people.
 
 2
-00:00:04,813 --> 00:00:10,030
+00:00:03,848 --> 00:00:07,529
 What you don't have yet is a story that ties them together.
 
 3
-00:00:11,830 --> 00:00:14,439
+00:00:09,329 --> 00:00:11,261
 Today Pim wants her tablet back,
 
 4
-00:00:14,889 --> 00:00:17,063
+00:00:11,711 --> 00:00:13,528
 the pump wants three fuses,
 
 5
-00:00:17,513 --> 00:00:22,296
+00:00:13,978 --> 00:00:17,685
 and one bad idea with a crowbar loses the whole game.
 
 6
-00:00:23,196 --> 00:00:27,543
+00:00:18,585 --> 00:00:20,781
 Every bit of it is an answer in a room.
 
 7
-00:00:28,743 --> 00:00:33,961
+00:00:21,981 --> 00:00:25,840
 A choice has a condition in front of it, and outcomes behind.
 
 8
-00:00:34,861 --> 00:00:37,904
+00:00:26,740 --> 00:00:28,801
 You've used both since the third lecture.
 
 9
-00:00:39,704 --> 00:00:43,183
+00:00:30,601 --> 00:00:33,258
 On a map there are two new conditions.
 
 10
-00:00:44,083 --> 00:00:47,561
+00:00:34,158 --> 00:00:37,138
 Holding asks what the person answering is carrying.
 
 11
-00:00:48,461 --> 00:00:53,243
+00:00:38,038 --> 00:00:40,928
 Party asks what everybody on the ground is carrying between them.
 
 12
-00:00:55,043 --> 00:00:57,217
+00:00:42,728 --> 00:00:44,086
 And there are new outcomes.
 
 13
-00:00:58,117 --> 00:01:02,900
+00:00:44,986 --> 00:00:47,679
 Give and take move things in and out of a pack.
 
 14
-00:01:03,800 --> 00:01:06,409
+00:00:48,579 --> 00:00:50,986
 Open and reveal work on props.
 
 15
-00:01:07,309 --> 00:01:10,787
+00:00:51,886 --> 00:00:55,537
 Calm, rouse, dismiss and summon work on people.
 
 16
-00:01:11,987 --> 00:01:14,161
+00:00:56,737 --> 00:00:58,199
 First a quest that waits.
 
 17
-00:01:15,061 --> 00:01:18,104
+00:00:59,099 --> 00:01:01,389
 Here it is in the Quest Log,
 
 18
-00:01:18,554 --> 00:01:23,337
+00:01:01,839 --> 00:01:05,338
 on the ePADD of a crew member who beamed back up.
 
 19
-00:01:24,237 --> 00:01:27,715
+00:01:06,238 --> 00:01:09,627
 Pim's Tablet, a hundred credits, and two paragraphs.
 
 20
-00:01:29,515 --> 00:01:32,993
+00:01:11,427 --> 00:01:13,810
 In the file, it starts when it's revealed,
 
 21
-00:01:33,443 --> 00:01:36,487
+00:01:14,260 --> 00:01:16,056
 which means when an answer says so.
 
 22
-00:01:37,387 --> 00:01:40,865
+00:01:16,956 --> 00:01:20,063
 The second paragraph is about who Pim is,
 
 23
-00:01:41,315 --> 00:01:45,663
+00:01:20,513 --> 00:01:23,183
 for whoever stayed on the ship and never met her.
 
 24
-00:01:46,563 --> 00:01:49,607
+00:01:24,083 --> 00:01:26,564
 Lint warns that nothing reveals it yet,
 
 25
-00:01:50,057 --> 00:01:52,230
+00:01:27,014 --> 00:01:28,251
 and that's true for now.
 
 26
-00:01:54,030 --> 00:01:56,639
+00:01:30,051 --> 00:01:31,998
 Then two things that begin hidden.
 
 27
-00:01:57,539 --> 00:02:01,887
+00:01:32,898 --> 00:01:35,927
 Here's the yard on the engineer's map, near the end,
 
 28
-00:02:02,337 --> 00:02:05,380
+00:01:36,377 --> 00:01:38,608
 and that's Pim, standing by the tent.
 
 29
-00:02:06,280 --> 00:02:09,324
+00:01:39,508 --> 00:01:41,952
 In the file she's a second record.
 
 30
-00:02:09,774 --> 00:02:14,557
+00:01:42,402 --> 00:01:45,986
 When somebody goes somewhere else on a map, they're two records:
 
 31
-00:02:15,007 --> 00:02:18,920
+00:01:46,436 --> 00:01:48,729
 the one who leaves, and the one who arrives.
 
 32
-00:02:20,720 --> 00:02:23,763
+00:01:50,529 --> 00:01:52,973
 And here's the gully on his map,
 
 33
-00:02:24,213 --> 00:02:28,996
+00:01:53,423 --> 00:01:56,436
 with a medical kit by the rock that wasn't there before.
 
 34
-00:02:29,896 --> 00:02:32,504
+00:01:57,336 --> 00:01:59,082
 In the file it's a prop,
 
 35
-00:02:32,954 --> 00:02:35,563
+00:01:59,532 --> 00:02:01,718
 hidden until a scene shows it.
 
 36
-00:02:36,763 --> 00:02:38,502
+00:02:02,918 --> 00:02:04,262
 Now for her scene,
 
 37
-00:02:38,952 --> 00:02:42,430
+00:02:04,712 --> 00:02:07,555
 and it's where most of today's words live.
 
 38
-00:02:44,230 --> 00:02:48,143
+00:02:09,355 --> 00:02:11,862
 This is the Act app on the engineer's handheld,
 
 39
-00:02:48,593 --> 00:02:51,202
+00:02:12,312 --> 00:02:14,595
 talking to Pim in the gully.
 
 40
-00:02:52,102 --> 00:02:55,580
+00:02:15,495 --> 00:02:17,856
 He's read the notice by the pump house,
 
 41
-00:02:56,030 --> 00:02:59,943
+00:02:18,306 --> 00:02:21,515
 so he's offered a question about the spare cell.
 
 42
-00:03:01,743 --> 00:03:07,830
+00:02:23,315 --> 00:02:27,406
 In the file, that answer is only offered if the party learned a fact,
 
 43
-00:03:08,280 --> 00:03:10,889
+00:02:27,856 --> 00:02:29,298
 from the notice by the door.
 
 44
-00:03:11,789 --> 00:03:13,963
+00:02:30,198 --> 00:02:31,737
 This one reveals the stash.
 
 45
-00:03:14,863 --> 00:03:18,776
+00:02:32,637 --> 00:02:35,904
 In the next room, a promise accepts the quest.
 
 46
-00:03:20,576 --> 00:03:23,620
+00:02:37,704 --> 00:02:39,740
 And here's the payoff, on the handheld.
 
 47
-00:03:24,070 --> 00:03:26,243
+00:02:40,190 --> 00:02:41,759
 He's carrying the tablet now,
 
 48
-00:03:26,693 --> 00:03:29,302
+00:02:42,209 --> 00:02:43,924
 and there are two new buttons.
 
 49
-00:03:31,102 --> 00:03:37,189
+00:02:45,724 --> 00:02:49,813
 In the file, the first is offered only to the one holding the tablet.
 
 50
-00:03:38,089 --> 00:03:41,567
+00:02:50,713 --> 00:02:53,692
 Then three outcomes in a row, with commas:
 
 51
-00:03:42,017 --> 00:03:46,365
+00:02:54,142 --> 00:02:57,746
 take the tablet, complete the quest, and give a fuse.
 
 52
-00:03:48,165 --> 00:03:50,774
+00:02:59,546 --> 00:03:01,304
 The second is the mean answer.
 
 53
-00:03:51,224 --> 00:03:53,833
+00:03:01,754 --> 00:03:03,727
 Keep the tablet, and she's roused:
 
 54
-00:03:54,283 --> 00:03:56,891
+00:03:04,177 --> 00:03:07,162
 she attacks, and the quest fails.
 
 55
-00:03:57,791 --> 00:03:59,965
+00:03:08,062 --> 00:03:09,263
 And when she goes home,
 
 56
-00:04:00,415 --> 00:04:02,589
+00:03:09,713 --> 00:03:11,827
 one answer dismisses her here
 
 57
-00:04:03,039 --> 00:04:04,778
+00:03:12,277 --> 00:03:14,671
 and summons her there.
 
 58
-00:04:05,978 --> 00:04:08,587
+00:03:15,871 --> 00:03:17,752
 The pump needs three fuses now.
 
 59
-00:04:09,487 --> 00:04:12,530
+00:03:18,652 --> 00:03:20,756
 Here's the panel on the engineer's handheld,
 
 60
-00:04:12,980 --> 00:04:15,589
+00:03:21,206 --> 00:03:22,940
 with two fuses in his pack.
 
 61
-00:04:16,489 --> 00:04:21,272
+00:03:23,840 --> 00:03:27,847
 He's offered the wire and the crowbar, and not the lever.
 
 62
-00:04:23,072 --> 00:04:26,115
+00:03:29,647 --> 00:03:32,150
 With a third fuse the line changes,
 
 63
-00:04:26,565 --> 00:04:30,043
+00:03:32,600 --> 00:03:35,141
 and fitting all three is the first button.
 
 64
-00:04:31,843 --> 00:04:34,887
+00:03:36,941 --> 00:03:39,381
 In the file, look at the condition,
 
 65
-00:04:35,337 --> 00:04:37,946
+00:03:39,831 --> 00:03:42,023
 and at the outcome after it.
 
 66
-00:04:38,846 --> 00:04:41,020
+00:03:42,923 --> 00:03:45,140
 Holding three, and take three.
 
 67
-00:04:42,820 --> 00:04:46,298
+00:03:46,940 --> 00:03:49,891
 Take always takes from the person who answers.
 
 68
-00:04:46,748 --> 00:04:52,400
+00:03:50,341 --> 00:03:54,424
 So the condition in front of it is always holding, and never party.
 
 69
-00:04:54,200 --> 00:04:57,243
+00:03:56,224 --> 00:03:58,161
 The lines at the top are different.
 
 70
-00:04:57,693 --> 00:05:00,302
+00:03:58,611 --> 00:04:00,978
 A line is read by everybody,
 
 71
-00:05:00,752 --> 00:05:03,796
+00:04:01,428 --> 00:04:03,669
 so a line asks about the party.
 
 72
-00:05:05,596 --> 00:05:08,204
+00:04:05,469 --> 00:04:07,381
 The second answer is a gamble.
 
 73
-00:05:08,654 --> 00:05:11,698
+00:04:07,831 --> 00:04:09,532
 Two fuses and a bit of wire,
 
 74
-00:05:12,148 --> 00:05:14,757
+00:04:09,982 --> 00:04:11,646
 and a roll that can fail.
 
 75
-00:05:15,657 --> 00:05:18,265
+00:04:12,546 --> 00:04:14,213
 And notice where the signal went.
 
 76
-00:05:18,715 --> 00:05:21,759
+00:04:14,663 --> 00:04:16,868
 Two answers lead to this room now,
 
 77
-00:05:22,209 --> 00:05:26,122
+00:04:17,318 --> 00:04:19,642
 so the signal sits on its one way out.
 
 78
-00:05:27,322 --> 00:05:30,365
+00:04:20,842 --> 00:04:23,489
 The starter's terminal already teaches a fact.
 
 79
-00:05:30,815 --> 00:05:32,989
+00:04:23,939 --> 00:04:25,124
 Give it a second use.
 
 80
-00:05:33,889 --> 00:05:37,802
+00:04:26,024 --> 00:04:29,285
 On the handheld, once the code is copied down,
 
 81
-00:05:38,252 --> 00:05:42,165
+00:04:29,735 --> 00:04:32,460
 there's a new button under Send the door code.
 
 82
-00:05:43,965 --> 00:05:48,748
+00:04:34,260 --> 00:04:38,032
 In the file, send the sentry its update, and it's calm.
 
 83
-00:05:49,198 --> 00:05:51,807
+00:04:38,482 --> 00:04:40,321
 It keeps its power cell, though,
 
 84
-00:05:52,257 --> 00:05:55,300
+00:04:40,771 --> 00:04:42,388
 so the party still needs another one.
 
 85
-00:05:57,100 --> 00:06:01,013
+00:04:44,188 --> 00:04:46,510
 And Marrow gets one answer about the brass key.
 
 86
-00:06:01,913 --> 00:06:05,391
+00:04:47,410 --> 00:04:50,210
 Here it is on the weapons officer's handheld,
 
 87
-00:06:05,841 --> 00:06:09,320
+00:04:50,660 --> 00:04:53,034
 and it's the engineer who's carrying the key.
 
 88
-00:06:10,220 --> 00:06:13,263
+00:04:53,934 --> 00:04:57,027
 In the file, that condition is party,
 
 89
-00:06:13,713 --> 00:06:15,452
+00:04:57,477 --> 00:04:58,903
 because nothing is taken,
 
 90
-00:06:15,902 --> 00:06:19,815
+00:04:59,354 --> 00:05:01,654
 and it doesn't matter who picked the key up.
 
 91
-00:06:21,015 --> 00:06:25,363
+00:05:02,854 --> 00:05:06,844
 You wrote no Win line today, and no Lose line.
 
 92
-00:06:26,263 --> 00:06:28,002
+00:05:07,744 --> 00:05:08,868
 You didn't need to.
 
 93
-00:06:28,452 --> 00:06:31,061
+00:05:09,318 --> 00:05:11,663
 Both sit on the starter's quest.
 
 94
-00:06:32,861 --> 00:06:35,904
+00:05:13,463 --> 00:05:15,595
 Here's the last screen after the crowbar,
 
 95
-00:06:36,354 --> 00:06:38,963
+00:05:16,045 --> 00:05:18,191
 and that's the starter's Lose sentence.
 
 96
-00:06:39,863 --> 00:06:42,037
+00:05:19,091 --> 00:05:21,179
 Your crowbar fails that quest,
 
 97
-00:06:42,487 --> 00:06:46,400
+00:05:21,629 --> 00:05:24,411
 so it loses the game from two maps away.
 
 98
-00:06:48,200 --> 00:06:53,417
+00:05:26,211 --> 00:05:29,942
 And here's the beacon, with the spare cell in the engineer's pack.
 
 99
-00:06:54,317 --> 00:06:56,926
+00:05:30,842 --> 00:05:32,828
 Your spare is a power cell,
 
 100
-00:06:57,376 --> 00:07:00,854
+00:05:33,278 --> 00:05:36,960
 so the starter's own winning answer takes it,
 
 101
-00:07:01,304 --> 00:07:05,217
+00:05:37,410 --> 00:05:40,415
 and the game ends with the starter's Win sentence.
 
 102
-00:07:07,017 --> 00:07:08,757
+00:05:42,215 --> 00:05:43,970
 One more word, discover,
 
 103
-00:07:09,207 --> 00:07:11,815
+00:05:44,420 --> 00:05:46,730
 tells the ship an area exists.
 
 104
-00:07:12,715 --> 00:07:14,889
+00:05:47,630 --> 00:05:49,120
 It isn't in your mission,
 
 105
-00:07:15,339 --> 00:07:19,252
+00:05:49,570 --> 00:05:53,116
 because the ship can't beam into your cistern anyway.
 
 106
-00:07:20,452 --> 00:07:22,626
+00:05:54,316 --> 00:05:55,684
 Play the long way round.
 
 107
-00:07:23,526 --> 00:07:27,004
+00:05:56,584 --> 00:05:59,017
 First the weapons officer puts the sentry down,
 
 108
-00:07:27,454 --> 00:07:29,193
+00:05:59,467 --> 00:06:01,057
 with one full shot.
 
 109
-00:07:30,093 --> 00:07:31,833
+00:06:01,957 --> 00:06:03,723
 Shots miss a lot,
 
 110
-00:07:32,283 --> 00:07:36,630
+00:06:04,173 --> 00:06:06,988
 and no app tells you a shot hit or missed.
 
 111
-00:07:38,430 --> 00:07:41,909
+00:06:08,788 --> 00:06:10,984
 The key, then Marrow, and then the gully.
 
 112
-00:07:42,809 --> 00:07:44,983
+00:06:11,884 --> 00:06:13,266
 Pim asks for her tablet.
 
 113
-00:07:45,883 --> 00:07:48,491
+00:06:14,166 --> 00:06:16,407
 The engineer puts the crawler down,
 
 114
-00:07:48,941 --> 00:07:53,289
+00:06:16,857 --> 00:06:19,657
 with a full shot from the foot of the stairs.
 
 115
-00:07:54,189 --> 00:07:58,537
+00:06:20,557 --> 00:06:23,547
 Then the tablet, and back to Pim for a fuse.
 
 116
-00:07:59,437 --> 00:08:01,611
+00:06:24,447 --> 00:06:26,304
 Three fuses in the pump,
 
 117
-00:08:02,061 --> 00:08:05,104
+00:06:26,754 --> 00:06:29,343
 then the gate, and the spare cell.
 
 118
-00:08:06,004 --> 00:08:09,917
+00:06:30,243 --> 00:06:32,626
 Pim opens the relay house from across the yard,
 
 119
-00:08:10,367 --> 00:08:12,107
+00:06:33,076 --> 00:06:34,449
 and the beacon lights.
 
 120
-00:08:13,907 --> 00:08:18,254
+00:06:36,249 --> 00:06:38,797
 Then play it again, and lose it with the crowbar.
 
 121
-00:08:20,054 --> 00:08:24,837
+00:06:40,597 --> 00:06:44,060
 For the exercise, give Marrow a use for the medical kit,
 
 122
-00:08:25,287 --> 00:08:29,200
+00:06:44,510 --> 00:06:47,468
 and write a second losing answer that plays fair.
 
 123
-00:08:31,000 --> 00:08:34,478
+00:06:49,268 --> 00:06:51,471
 That's the last new word for a while.
 
 124
-00:08:34,928 --> 00:08:39,276
+00:06:51,921 --> 00:06:54,700
 Next time, the screen your crew has been looking at.

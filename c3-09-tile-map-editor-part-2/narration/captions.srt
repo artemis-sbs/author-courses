@@ -1,471 +1,471 @@
 1
-00:00:00,000 --> 00:00:02,174
+00:00:00,000 --> 00:00:01,647
 One map is a place.
 
 2
-00:00:03,074 --> 00:00:06,552
+00:00:02,547 --> 00:00:05,063
 Three maps joined together are somewhere to go.
 
 3
-00:00:08,352 --> 00:00:11,830
+00:00:06,863 --> 00:00:08,805
 Today the crew walks out of the yard,
 
 4
-00:00:12,280 --> 00:00:14,020
+00:00:09,255 --> 00:00:10,684
 through your pump house,
 
 5
-00:00:14,470 --> 00:00:19,687
+00:00:11,134 --> 00:00:14,468
 and down a flight of stairs to a tank of standing water.
 
 6
-00:00:20,587 --> 00:00:24,500
+00:00:15,368 --> 00:00:18,256
 And you stand the first things on your maps.
 
 7
-00:00:25,700 --> 00:00:28,309
+00:00:19,456 --> 00:00:20,845
 Here's an exit in the game.
 
 8
-00:00:29,209 --> 00:00:33,557
+00:00:21,745 --> 00:00:24,109
 The crew walks onto the east edge of the yard,
 
 9
-00:00:34,007 --> 00:00:36,615
+00:00:24,559 --> 00:00:26,434
 and they're standing in your gully.
 
 10
-00:00:38,415 --> 00:00:42,328
+00:00:28,234 --> 00:00:30,858
 An exit is a mark with a special name.
 
 11
-00:00:43,228 --> 00:00:45,837
+00:00:31,758 --> 00:00:33,393
 It starts with the word to,
 
 12
-00:00:46,287 --> 00:00:51,939
+00:00:33,843 --> 00:00:37,546
 then an underscore, and then the key of the area it leads to.
 
 13
-00:00:53,739 --> 00:00:57,652
+00:00:39,346 --> 00:00:42,324
 So in the yard I add a legend line,
 
 14
-00:00:58,102 --> 00:01:00,276
+00:00:42,774 --> 00:00:44,140
 with the mark to gully,
 
 15
-00:01:00,726 --> 00:01:04,204
+00:00:44,590 --> 00:00:46,686
 and paint one cell at the east edge.
 
 16
-00:01:05,104 --> 00:01:07,713
+00:00:47,586 --> 00:00:49,406
 Then the same in the gully,
 
 17
-00:01:08,163 --> 00:01:10,772
+00:00:49,856 --> 00:00:51,609
 with a mark that leads back.
 
 18
-00:01:12,572 --> 00:01:15,180
+00:00:53,409 --> 00:00:55,434
 Three things to know about exits.
 
 19
-00:01:16,080 --> 00:01:19,124
+00:00:56,334 --> 00:00:58,410
 An exit takes whoever stops on it,
 
 20
-00:01:19,574 --> 00:01:21,748
+00:00:58,860 --> 00:01:00,738
 so click the exit itself.
 
 21
-00:01:22,648 --> 00:01:24,822
+00:01:01,638 --> 00:01:03,422
 Each person goes through alone.
 
 22
-00:01:25,722 --> 00:01:28,765
+00:01:04,322 --> 00:01:06,239
 And they arrive beside the way back,
 
 23
-00:01:29,215 --> 00:01:31,389
+00:01:06,689 --> 00:01:08,496
 never on top of it.
 
 24
-00:01:32,589 --> 00:01:37,372
+00:01:09,696 --> 00:01:11,880
 This is the Beam app at the start of the game,
 
 25
-00:01:37,822 --> 00:01:42,604
+00:01:12,330 --> 00:01:15,936
 before anybody has walked anywhere, and there's nowhere else on it.
 
 26
-00:01:44,404 --> 00:01:48,752
+00:01:17,736 --> 00:01:20,933
 Last time, the transporter put you straight into the gully.
 
 27
-00:01:49,652 --> 00:01:51,826
+00:01:21,833 --> 00:01:23,232
 That would spoil things now.
 
 28
-00:01:52,276 --> 00:01:57,493
+00:01:23,682 --> 00:01:27,178
 A crew that can beam anywhere never has to find the way.
 
 29
-00:01:59,293 --> 00:02:02,337
+00:01:28,978 --> 00:01:30,576
 Two lines in the header decide it.
 
 30
-00:02:03,237 --> 00:02:04,976
+00:01:31,476 --> 00:01:33,217
 Known, and then no,
 
 31
-00:02:05,426 --> 00:02:08,904
+00:01:33,667 --> 00:01:37,168
 means the ship doesn't know this area exists
 
 32
-00:02:09,354 --> 00:02:11,963
+00:01:37,618 --> 00:01:39,437
 until somebody has walked into it.
 
 33
-00:02:12,863 --> 00:02:15,037
+00:01:40,337 --> 00:01:42,730
 And beam, followed by no,
 
 34
-00:02:15,487 --> 00:02:19,835
+00:01:43,180 --> 00:01:46,238
 means the transporter can never lock on there at all.
 
 35
-00:02:21,635 --> 00:02:24,243
+00:01:48,038 --> 00:01:49,533
 The gully gets the first one.
 
 36
-00:02:24,693 --> 00:02:26,433
+00:01:49,983 --> 00:01:51,221
 You type it yourself,
 
 37
-00:02:26,883 --> 00:02:30,361
+00:01:51,671 --> 00:01:53,719
 because the editor has no box for it.
 
 38
-00:02:31,561 --> 00:02:34,604
+00:01:54,919 --> 00:01:56,799
 This is the cistern on the handheld,
 
 39
-00:02:35,054 --> 00:02:38,533
+00:01:57,249 --> 00:01:59,588
 a walkway round a tank of standing water.
 
 40
-00:02:40,333 --> 00:02:42,072
+00:02:01,388 --> 00:02:02,882
 The cistern needs water,
 
 41
-00:02:42,522 --> 00:02:45,565
+00:02:03,332 --> 00:02:05,706
 and the tileset has no such kind.
 
 42
-00:02:46,465 --> 00:02:49,943
+00:02:06,606 --> 00:02:08,529
 So I add one line to the tileset.
 
 43
-00:02:50,393 --> 00:02:52,567
+00:02:08,979 --> 00:02:10,682
 Water can be seen across,
 
 44
-00:02:53,017 --> 00:02:55,626
+00:02:11,132 --> 00:02:12,749
 and it can't be walked on.
 
 45
-00:02:57,426 --> 00:03:00,904
+00:02:14,549 --> 00:02:16,785
 That pair is what makes a map readable.
 
 46
-00:03:01,354 --> 00:03:03,963
+00:02:17,235 --> 00:02:19,279
 You can see the far side,
 
 47
-00:03:04,413 --> 00:03:07,022
+00:02:19,729 --> 00:02:21,999
 and getting there is the puzzle.
 
 48
-00:03:08,822 --> 00:03:10,996
+00:02:23,799 --> 00:02:25,810
 Then a new area file,
 
 49
-00:03:11,446 --> 00:03:14,489
+00:02:26,260 --> 00:02:28,143
 typed the way you typed the gully.
 
 50
-00:03:15,389 --> 00:03:17,563
+00:02:29,043 --> 00:02:30,786
 A walkway round a tank,
 
 51
-00:03:18,013 --> 00:03:21,491
+00:02:31,236 --> 00:02:33,007
 and a small room at the east end.
 
 52
-00:03:22,391 --> 00:03:24,565
+00:02:33,907 --> 00:02:35,923
 It carries both header lines,
 
 53
-00:03:25,015 --> 00:03:28,493
+00:02:36,373 --> 00:02:38,332
 so the only way in is on foot.
 
 54
-00:03:29,693 --> 00:03:32,302
+00:02:39,532 --> 00:02:41,878
 The stairs are one more exit,
 
 55
-00:03:32,752 --> 00:03:36,230
+00:02:42,328 --> 00:02:44,709
 inside the pump house against the east wall.
 
 56
-00:03:37,130 --> 00:03:43,217
+00:02:45,609 --> 00:02:49,967
 In the game, the crew member who takes them comes out beside the water.
 
 57
-00:03:45,017 --> 00:03:49,800
+00:02:51,767 --> 00:02:55,332
 Now, an area file can also say where its exits lead.
 
 58
-00:03:50,700 --> 00:03:54,178
+00:02:56,232 --> 00:02:58,752
 It's a block of its own, called exits,
 
 59
-00:03:54,628 --> 00:03:57,672
+00:02:59,202 --> 00:03:01,833
 after the legend and before the dashes.
 
 60
-00:03:59,472 --> 00:04:01,211
+00:03:03,633 --> 00:03:04,869
 Read this line as:
 
 61
-00:04:01,661 --> 00:04:05,574
+00:03:05,319 --> 00:03:08,536
 the mark to cistern leads to the area cistern,
 
 62
-00:04:06,024 --> 00:04:09,502
+00:03:08,986 --> 00:03:11,534
 and you arrive beside the mark called foot.
 
 63
-00:04:10,402 --> 00:04:15,185
+00:03:12,434 --> 00:03:15,181
 You only need the block when the usual arrival isn't right.
 
 64
-00:04:15,635 --> 00:04:19,983
+00:03:15,631 --> 00:03:18,115
 And the editor can't edit it, so you type it.
 
 65
-00:04:21,183 --> 00:04:22,922
+00:03:19,315 --> 00:03:20,255
 Now the fact sheet.
 
 66
-00:04:23,822 --> 00:04:29,039
+00:03:21,155 --> 00:03:25,065
 A record that stands on a map says where in two fields.
 
 67
-00:04:29,489 --> 00:04:31,663
+00:03:25,515 --> 00:03:27,393
 The first is always Area.
 
 68
-00:04:32,563 --> 00:04:35,172
+00:03:28,293 --> 00:03:29,865
 The second is one of two.
 
 69
-00:04:35,622 --> 00:04:37,361
+00:03:30,315 --> 00:03:31,805
 At takes a cell:
 
 70
-00:04:37,811 --> 00:04:41,724
+00:03:32,255 --> 00:03:35,605
 how far across, a comma, and how far down.
 
 71
-00:04:43,524 --> 00:04:45,698
+00:03:37,405 --> 00:03:38,717
 So here's a trail sign,
 
 72
-00:04:46,148 --> 00:04:50,061
+00:03:39,167 --> 00:03:43,045
 at twenty-eight across and five down, in the yard.
 
 73
-00:04:50,961 --> 00:04:54,439
+00:03:43,945 --> 00:03:46,372
 In the game it stands by the exit.
 
 74
-00:04:55,339 --> 00:04:58,817
+00:03:47,272 --> 00:03:49,420
 Click it, and you walk up beside it.
 
 75
-00:04:59,267 --> 00:05:03,615
+00:03:49,870 --> 00:03:53,025
 Its line is on the handheld, in the Look app.
 
 76
-00:05:04,515 --> 00:05:06,254
+00:03:53,925 --> 00:03:55,179
 Open the yard's map,
 
 77
-00:05:06,704 --> 00:05:11,487
+00:03:55,629 --> 00:03:58,573
 and the editor draws the sign where the record put it.
 
 78
-00:05:12,387 --> 00:05:14,996
+00:03:59,473 --> 00:04:01,554
 With Move I can drag it,
 
 79
-00:05:15,446 --> 00:05:20,663
+00:04:02,004 --> 00:04:05,459
 and the editor rewrites that line in the fact sheet for me.
 
 80
-00:05:21,863 --> 00:05:24,907
+00:04:06,659 --> 00:04:08,584
 The pump belongs to the pump house,
 
 81
-00:05:25,357 --> 00:05:28,835
+00:04:09,034 --> 00:04:11,530
 so it gets a mark of its own.
 
 82
-00:05:29,735 --> 00:05:31,909
+00:04:12,430 --> 00:04:14,203
 And its record says Mark,
 
 83
-00:05:32,359 --> 00:05:34,098
+00:04:14,653 --> 00:04:16,000
 and the mark's name.
 
 84
-00:05:35,898 --> 00:05:38,941
+00:04:17,800 --> 00:04:19,867
 Here's the rule that's easy to break.
 
 85
-00:05:39,391 --> 00:05:42,000
+00:04:20,317 --> 00:04:21,912
 A mark's name goes in Mark,
 
 86
-00:05:42,450 --> 00:05:44,189
+00:04:22,362 --> 00:04:23,237
 and never in At.
 
 87
-00:05:45,089 --> 00:05:46,828
+00:04:24,137 --> 00:04:25,809
 At reads numbers only,
 
 88
-00:05:47,278 --> 00:05:50,322
+00:04:26,259 --> 00:04:28,779
 so a word there reads as nothing,
 
 89
-00:05:50,772 --> 00:05:53,380
+00:04:29,229 --> 00:04:31,285
 and the thing is never placed.
 
 90
-00:05:55,180 --> 00:05:59,528
+00:04:33,085 --> 00:04:36,227
 Neither of these two has any words under its fence.
 
 91
-00:05:59,978 --> 00:06:01,717
+00:04:36,677 --> 00:04:38,132
 That makes them scenery.
 
 92
-00:06:02,167 --> 00:06:05,211
+00:04:38,582 --> 00:04:40,541
 They're drawn, and they're in the way.
 
 93
-00:06:06,111 --> 00:06:08,720
+00:04:41,441 --> 00:04:42,843
 Click the pump in the game,
 
 94
-00:06:09,170 --> 00:06:13,083
+00:04:43,293 --> 00:04:45,277
 and you walk up to it, and that's all.
 
 95
-00:06:14,883 --> 00:06:16,622
+00:04:47,077 --> 00:04:48,919
 Last comes the sentry.
 
 96
-00:06:17,522 --> 00:06:20,565
+00:04:49,819 --> 00:04:51,987
 Its patrol is a list of cells,
 
 97
-00:06:21,015 --> 00:06:23,624
+00:04:52,437 --> 00:04:54,414
 with a semicolon between each pair.
 
 98
-00:06:24,524 --> 00:06:26,698
+00:04:55,314 --> 00:04:57,324
 I've made its loop longer,
 
 99
-00:06:27,148 --> 00:06:31,061
+00:04:57,774 --> 00:05:00,460
 and the editor draws it as a dashed line.
 
 100
-00:06:32,261 --> 00:06:34,000
+00:05:01,660 --> 00:05:03,834
 Lint knows about exits.
 
 101
-00:06:34,450 --> 00:06:36,189
+00:05:04,284 --> 00:05:05,554
 Misspell one of them,
 
 102
-00:06:36,639 --> 00:06:40,117
+00:05:06,004 --> 00:05:08,424
 and it tells you there's no such area.
 
 103
-00:06:41,017 --> 00:06:43,626
+00:05:09,324 --> 00:05:11,038
 Put a mark's name in At,
 
 104
-00:06:44,076 --> 00:06:46,685
+00:05:11,488 --> 00:05:12,944
 and it tells you that too.
 
 105
-00:06:48,485 --> 00:06:52,833
+00:05:14,744 --> 00:05:16,765
 It can't tell you an area is cut off, though.
 
 106
-00:06:53,283 --> 00:06:56,761
+00:05:17,215 --> 00:05:19,135
 It only says a mark was never drawn.
 
 107
-00:06:58,561 --> 00:07:00,300
+00:05:20,935 --> 00:05:22,231
 So play it through.
 
 108
-00:07:01,200 --> 00:07:03,374
+00:05:23,131 --> 00:05:25,439
 Beam down, and open Beam.
 
 109
-00:07:03,824 --> 00:07:05,998
+00:05:25,889 --> 00:05:27,121
 There's nowhere else to go.
 
 110
-00:07:06,898 --> 00:07:09,507
+00:05:28,021 --> 00:05:29,972
 Walk east, and take the exit.
 
 111
-00:07:10,407 --> 00:07:12,580
+00:05:30,872 --> 00:05:32,443
 Open Beam in the gully,
 
 112
-00:07:13,030 --> 00:07:16,943
+00:05:32,893 --> 00:05:35,365
 and it offers the way back to Kesh Relay.
 
 113
-00:07:17,843 --> 00:07:19,583
+00:05:36,265 --> 00:05:37,268
 Go down the stairs,
 
 114
-00:07:20,033 --> 00:07:22,641
+00:05:37,718 --> 00:05:39,317
 and you're standing by the water.
 
 115
-00:07:23,541 --> 00:07:27,889
+00:05:40,217 --> 00:05:42,816
 And down here the Beam list names the gully too.
 
 116
-00:07:29,689 --> 00:07:33,602
+00:05:44,616 --> 00:05:47,835
 For the exercise, stand a crate in the cistern,
 
 117
-00:07:34,052 --> 00:07:36,661
+00:05:48,285 --> 00:05:49,750
 and add a second way down.
 
 118
-00:07:38,461 --> 00:07:42,374
+00:05:51,550 --> 00:05:54,478
 Next time, these maps get things you can use.

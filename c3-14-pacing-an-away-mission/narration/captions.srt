@@ -1,471 +1,471 @@
 1
-00:00:00,000 --> 00:00:02,174
+00:00:00,000 --> 00:00:01,179
 How long is your mission?
 
 2
-00:00:03,974 --> 00:00:07,452
+00:00:02,979 --> 00:00:05,028
 You've played it, so you have a feeling.
 
 3
-00:00:07,902 --> 00:00:10,076
+00:00:05,478 --> 00:00:06,864
 A feeling isn't a number.
 
 4
-00:00:11,876 --> 00:00:15,789
+00:00:08,664 --> 00:00:11,184
 Today we measure it with the game's own numbers.
 
 5
-00:00:16,689 --> 00:00:19,298
+00:00:12,084 --> 00:00:13,572
 We put a clock on it.
 
 6
-00:00:20,198 --> 00:00:24,111
+00:00:14,472 --> 00:00:17,261
 We check by hand that every party can finish.
 
 7
-00:00:25,011 --> 00:00:30,663
+00:00:18,162 --> 00:00:22,322
 And we look at what three people are doing in the same minute.
 
 8
-00:00:32,463 --> 00:00:34,202
+00:00:24,122 --> 00:00:25,528
 There's one warning first.
 
 9
-00:00:34,652 --> 00:00:39,435
+00:00:25,978 --> 00:00:29,289
 A script walked this for us, and a script doesn't read.
 
 10
-00:00:40,335 --> 00:00:43,378
+00:00:30,189 --> 00:00:32,753
 So every number today is a floor.
 
 11
-00:00:44,578 --> 00:00:48,057
+00:00:33,953 --> 00:00:36,578
 A crew member walks four cells a second.
 
 12
-00:00:48,957 --> 00:00:50,696
+00:00:37,478 --> 00:00:38,821
 Your hostiles walk two.
 
 13
-00:00:52,496 --> 00:00:57,713
+00:00:40,621 --> 00:00:43,491
 A hostile beside you hits after about two and a half seconds,
 
 14
-00:00:58,163 --> 00:01:01,641
+00:00:43,941 --> 00:00:46,028
 and then again every two and a half.
 
 15
-00:01:02,541 --> 00:01:04,715
+00:00:46,928 --> 00:00:48,444
 Three hits, and you're down,
 
 16
-00:01:05,165 --> 00:01:06,904
+00:00:48,894 --> 00:00:50,596
 in about seven seconds.
 
 17
-00:01:08,704 --> 00:01:14,791
+00:00:52,396 --> 00:00:56,086
 If the others are still up, you stay down until somebody brings a medkit.
 
 18
-00:01:15,691 --> 00:01:23,083
+00:00:56,986 --> 00:01:03,373
 If everybody's down, you all wake at the entry a few seconds later, with one point each.
 
 19
-00:01:24,883 --> 00:01:29,230
+00:01:05,173 --> 00:01:07,777
 And a full shot puts any hostile down in one,
 
 20
-00:01:29,680 --> 00:01:31,854
+00:01:08,227 --> 00:01:09,857
 whatever its hit points say.
 
 21
-00:01:33,054 --> 00:01:35,228
+00:01:11,057 --> 00:01:12,474
 Now walk your own map.
 
 22
-00:01:35,678 --> 00:01:38,722
+00:01:12,924 --> 00:01:15,074
 Count the cells and divide by four.
 
 23
-00:01:40,522 --> 00:01:44,870
+00:01:16,874 --> 00:01:19,806
 The landing pad to the way east is seven seconds.
 
 24
-00:01:45,770 --> 00:01:50,552
+00:01:20,706 --> 00:01:24,383
 The whole long road, out to the spare cell and back,
 
 25
-00:01:51,002 --> 00:01:52,741
+00:01:24,833 --> 00:01:26,204
 is under a minute.
 
 26
-00:01:54,541 --> 00:01:58,020
+00:01:28,004 --> 00:01:30,390
 So distance isn't what makes a mission long.
 
 27
-00:01:58,920 --> 00:02:05,007
+00:01:31,290 --> 00:01:34,630
 A door on the far side of the map costs your crew seven seconds.
 
 28
-00:02:06,807 --> 00:02:10,285
+00:01:36,430 --> 00:01:39,661
 What costs them time is reading, and deciding.
 
 29
-00:02:10,735 --> 00:02:13,343
+00:01:40,111 --> 00:01:41,671
 So that's what we count next.
 
 30
-00:02:14,543 --> 00:02:17,152
+00:01:42,871 --> 00:01:45,249
 Thirty-one rooms, and nine hundred words.
 
 31
-00:02:18,952 --> 00:02:20,691
+00:01:47,049 --> 00:01:48,818
 Three plays, by script.
 
 32
-00:02:21,591 --> 00:02:24,635
+00:01:49,718 --> 00:01:52,612
 The long road alone is eleven presses.
 
 33
-00:02:25,535 --> 00:02:29,013
+00:01:53,512 --> 00:01:56,540
 With three crew it's still eleven, between them.
 
 34
-00:02:30,813 --> 00:02:32,987
+00:01:58,340 --> 00:02:00,876
 And look at this one.
 
 35
-00:02:33,437 --> 00:02:36,915
+00:02:01,326 --> 00:02:05,199
 The comms officer, alone, wins in two presses.
 
 36
-00:02:37,815 --> 00:02:41,728
+00:02:06,099 --> 00:02:09,141
 Shoot the sentry, take its cell, light the beacon.
 
 37
-00:02:42,178 --> 00:02:46,091
+00:02:09,591 --> 00:02:12,843
 That's the starter's design, and it's a kind one.
 
 38
-00:02:46,541 --> 00:02:48,280
+00:02:13,293 --> 00:02:14,122
 Just know it's there.
 
 39
-00:02:50,080 --> 00:02:53,993
+00:02:15,922 --> 00:02:18,697
 To turn presses into minutes, I have to guess.
 
 40
-00:02:54,893 --> 00:02:57,067
+00:02:19,597 --> 00:02:21,059
 Half a minute a press,
 
 41
-00:02:57,517 --> 00:03:00,561
+00:02:21,509 --> 00:02:23,726
 and double it for a first play.
 
 42
-00:03:01,461 --> 00:03:04,070
+00:02:24,626 --> 00:02:26,767
 Write your own guess beside mine.
 
 43
-00:03:05,270 --> 00:03:09,183
+00:02:27,967 --> 00:02:30,164
 You have four ways to press on a crew.
 
 44
-00:03:10,083 --> 00:03:11,822
+00:02:31,064 --> 00:02:32,943
 A clock, a patrol,
 
 45
-00:03:12,272 --> 00:03:16,620
+00:02:33,393 --> 00:02:37,436
 a key that's somewhere else, and a thing that's hidden.
 
 46
-00:03:18,420 --> 00:03:21,028
+00:02:39,236 --> 00:02:40,564
 Here's the clock on the ground,
 
 47
-00:03:21,478 --> 00:03:25,826
+00:02:41,014 --> 00:02:44,571
 in the Tasks app, counting down under the starter's quest.
 
 48
-00:03:26,726 --> 00:03:32,813
+00:02:45,471 --> 00:02:49,299
 In the file it's one line, and you wrote it in the first class.
 
 49
-00:03:33,713 --> 00:03:35,452
+00:02:50,199 --> 00:02:52,182
 Fails when, thirty minutes.
 
 50
-00:03:37,252 --> 00:03:40,730
+00:02:53,982 --> 00:02:56,106
 The Lose sentence has to change with it.
 
 51
-00:03:41,180 --> 00:03:44,659
+00:02:56,556 --> 00:02:58,652
 It used to say the beacon was slag.
 
 52
-00:03:45,559 --> 00:03:49,472
+00:02:59,552 --> 00:03:02,358
 Now it's read when the clock runs out too,
 
 53
-00:03:49,922 --> 00:03:53,400
+00:03:02,808 --> 00:03:05,832
 so it has to be true every way.
 
 54
-00:03:55,200 --> 00:03:57,374
+00:03:07,632 --> 00:03:08,738
 Then I tell the bridge.
 
 55
-00:03:57,824 --> 00:03:59,998
+00:03:09,188 --> 00:03:11,018
 One line in the description,
 
 56
-00:04:00,448 --> 00:04:03,057
+00:03:11,468 --> 00:03:13,333
 with an hourglass at the start.
 
 57
-00:04:03,957 --> 00:04:06,130
+00:03:14,233 --> 00:03:15,763
 In the Quest Log aboard,
 
 58
-00:04:06,580 --> 00:04:09,624
+00:03:16,213 --> 00:03:19,078
 it sits under the quest's first paragraph.
 
 59
-00:04:11,424 --> 00:04:14,902
+00:03:20,878 --> 00:03:23,115
 And the clock starts when the quest starts.
 
 60
-00:04:15,352 --> 00:04:17,961
+00:03:23,565 --> 00:03:25,510
 This one starts with the game.
 
 61
-00:04:18,861 --> 00:04:21,470
+00:03:26,410 --> 00:03:28,652
 So by the time anybody lands,
 
 62
-00:04:21,920 --> 00:04:25,398
+00:03:29,102 --> 00:03:31,229
 it already reads a few minutes under thirty.
 
 63
-00:04:26,598 --> 00:04:28,772
+00:03:32,429 --> 00:03:33,726
 Lint doesn't walk your map.
 
 64
-00:04:29,222 --> 00:04:32,265
+00:03:34,176 --> 00:03:37,142
 You do, on paper, in three lists.
 
 65
-00:04:34,065 --> 00:04:36,674
+00:03:38,942 --> 00:03:41,635
 Every area, every item, every ending.
 
 66
-00:04:37,124 --> 00:04:40,602
+00:03:42,085 --> 00:03:44,837
 And beside each one, who can do it.
 
 67
-00:04:42,402 --> 00:04:45,880
+00:03:46,637 --> 00:03:49,401
 Now find a party the lists leave stuck.
 
 68
-00:04:46,780 --> 00:04:50,259
+00:03:50,301 --> 00:03:53,091
 A scientist and a guard, and no engineer.
 
 69
-00:04:52,059 --> 00:04:55,537
+00:03:54,891 --> 00:03:57,344
 First she has to reach the terminal alive.
 
 70
-00:04:56,437 --> 00:04:59,046
+00:03:58,244 --> 00:04:00,168
 It stands inside the sentry's notice.
 
 71
-00:05:00,846 --> 00:05:03,889
+00:04:01,968 --> 00:04:05,121
 So the guard stuns the sentry first,
 
 72
-00:05:04,339 --> 00:05:07,817
+00:04:05,571 --> 00:04:08,031
 and she works the terminal while it stands.
 
 73
-00:05:08,717 --> 00:05:10,457
+00:04:08,931 --> 00:04:10,253
 Ten seconds isn't long.
 
 74
-00:05:10,907 --> 00:05:13,515
+00:04:10,703 --> 00:04:12,573
 If it wakes, stun it again.
 
 75
-00:05:14,415 --> 00:05:16,154
+00:04:13,473 --> 00:04:15,239
 Shots miss a lot,
 
 76
-00:05:16,604 --> 00:05:20,952
+00:04:15,689 --> 00:04:18,504
 and no app tells you a shot hit or missed.
 
 77
-00:05:22,752 --> 00:05:26,665
+00:04:20,304 --> 00:04:23,318
 She pulls the door code, and calms the sentry.
 
 78
-00:05:27,115 --> 00:05:28,854
+00:04:23,768 --> 00:04:25,241
 That's the clever answer.
 
 79
-00:05:29,754 --> 00:05:32,363
+00:04:26,141 --> 00:04:27,811
 But the sentry keeps its cell,
 
 80
-00:05:32,813 --> 00:05:35,857
+00:04:28,261 --> 00:04:30,498
 and nobody here can run the pump.
 
 81
-00:05:37,657 --> 00:05:40,700
+00:04:32,298 --> 00:04:34,395
 The clever answer left them with nothing.
 
 82
-00:05:41,600 --> 00:05:44,209
+00:04:35,295 --> 00:04:36,893
 So fix it where it broke.
 
 83
-00:05:44,659 --> 00:05:47,267
+00:04:37,343 --> 00:04:39,087
 The sentry hands its cell over.
 
 84
-00:05:49,067 --> 00:05:53,415
+00:04:40,887 --> 00:04:44,116
 Here's the terminal on the doctor's handheld after the update.
 
 85
-00:05:54,315 --> 00:05:57,359
+00:04:45,016 --> 00:04:47,016
 The words say the sentry walks over.
 
 86
-00:05:57,809 --> 00:06:02,591
+00:04:47,466 --> 00:04:50,463
 On the map it just stands where the stun caught it.
 
 87
-00:06:03,491 --> 00:06:06,970
+00:04:51,363 --> 00:04:53,176
 And there's the power cell in her pack.
 
 88
-00:06:07,870 --> 00:06:11,783
+00:04:54,076 --> 00:04:57,203
 In the file it's one outcome, after a comma.
 
 89
-00:06:12,983 --> 00:06:15,591
+00:04:58,403 --> 00:05:00,638
 Three columns, one for each console.
 
 90
-00:06:16,041 --> 00:06:18,215
+00:05:01,088 --> 00:05:03,436
 What is each person doing?
 
 91
-00:06:20,015 --> 00:06:23,493
+00:05:05,236 --> 00:05:07,093
 This is the mission as you left it.
 
 92
-00:06:24,393 --> 00:06:27,872
+00:05:07,993 --> 00:05:10,350
 The chief makes eight presses out of twelve.
 
 93
-00:06:28,322 --> 00:06:31,365
+00:05:10,800 --> 00:05:13,294
 The doctor is finished in ten seconds.
 
 94
-00:06:33,165 --> 00:06:36,209
+00:05:15,094 --> 00:05:16,502
 What you have there is a chain.
 
 95
-00:06:36,659 --> 00:06:39,702
+00:05:16,952 --> 00:05:19,017
 Every step waits for the one before,
 
 96
-00:06:40,152 --> 00:06:43,196
+00:05:19,467 --> 00:05:22,147
 so only one person is ever busy.
 
 97
-00:06:44,996 --> 00:06:47,170
+00:05:23,947 --> 00:05:26,001
 The cure is a join.
 
 98
-00:06:47,620 --> 00:06:52,402
+00:05:26,451 --> 00:05:30,210
 Make the thing in the middle need pieces from three places.
 
 99
-00:06:54,202 --> 00:06:56,376
+00:05:32,010 --> 00:05:34,097
 Your pump needs three fuses.
 
 100
-00:06:56,826 --> 00:07:00,739
+00:05:34,547 --> 00:05:37,203
 So give Marrow one to pay the doctor with.
 
 101
-00:07:01,639 --> 00:07:06,857
+00:05:38,103 --> 00:05:41,659
 On her handheld, he pays with the fuse out of his kettle,
 
 102
-00:07:07,307 --> 00:07:09,480
+00:05:42,109 --> 00:05:43,558
 and it's in her pack.
 
 103
-00:07:10,380 --> 00:07:15,163
+00:05:44,458 --> 00:05:47,834
 In the file, it's one more outcome on the cough answer.
 
 104
-00:07:16,963 --> 00:07:21,311
+00:05:49,634 --> 00:05:52,800
 Now three people each carry something to the pump house,
 
 105
-00:07:21,761 --> 00:07:24,804
+00:05:53,250 --> 00:05:55,618
 and nobody presses more than five times.
 
 106
-00:07:26,004 --> 00:07:29,048
+00:05:56,818 --> 00:05:58,660
 Put it together in a beat sheet.
 
 107
-00:07:29,948 --> 00:07:32,557
+00:05:59,560 --> 00:06:01,564
 One column is the stand-in's clock,
 
 108
-00:07:33,007 --> 00:07:35,180
+00:06:02,014 --> 00:06:03,214
 and that one is measured.
 
 109
-00:07:36,080 --> 00:07:39,993
+00:06:04,114 --> 00:06:05,898
 The other is my guess for a first play.
 
 110
-00:07:41,793 --> 00:07:44,402
+00:06:07,698 --> 00:06:09,400
 Now play it with a stopwatch,
 
 111
-00:07:44,852 --> 00:07:47,896
+00:06:09,850 --> 00:06:12,462
 and write your own times over mine.
 
 112
-00:07:49,696 --> 00:07:52,739
+00:06:14,262 --> 00:06:16,931
 For forty-five minutes, write the sheet first.
 
 113
-00:07:53,639 --> 00:07:55,378
+00:06:17,831 --> 00:06:19,434
 Five for the landing.
 
 114
-00:07:55,828 --> 00:07:57,567
+00:06:19,884 --> 00:06:21,747
 Twenty for three tracks.
 
 115
-00:07:58,017 --> 00:07:59,757
+00:06:22,197 --> 00:06:23,609
 Eight for the join.
 
 116
-00:08:00,657 --> 00:08:02,830
+00:06:24,509 --> 00:06:26,245
 Seven for the last area,
 
 117
-00:08:03,280 --> 00:08:05,454
+00:06:26,695 --> 00:06:29,806
 and five for the ending.
 
 118
-00:08:07,254 --> 00:08:10,733
+00:06:31,606 --> 00:06:33,857
 That sheet is where your own mission starts.

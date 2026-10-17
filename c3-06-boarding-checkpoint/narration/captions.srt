@@ -1,375 +1,375 @@
 1
-00:00:00,000 --> 00:00:03,478
+00:00:00,000 --> 00:00:03,116
 Twelve people asleep behind frosted glass, one switch,
 
 2
-00:00:03,928 --> 00:00:06,537
+00:00:03,566 --> 00:00:05,443
 and a note that says don't.
 
 3
-00:00:08,337 --> 00:00:12,685
+00:00:07,243 --> 00:00:09,706
 Two of my crew are standing in front of it,
 
 4
-00:00:13,135 --> 00:00:17,917
+00:00:10,156 --> 00:00:13,600
 and whichever button they press, the ship gets a different quest.
 
 5
-00:00:18,817 --> 00:00:23,600
+00:00:14,500 --> 00:00:17,233
 This is the checkpoint for the first half of the class.
 
 6
-00:00:24,050 --> 00:00:30,137
+00:00:17,683 --> 00:00:22,199
 You'll plan one away scene on paper, type it, check it, and play it.
 
 7
-00:00:31,337 --> 00:00:33,511
+00:00:23,399 --> 00:00:25,501
 Before any rooms, three sentences.
 
 8
-00:00:34,411 --> 00:00:36,585
+00:00:26,401 --> 00:00:28,218
 The question the scene asks.
 
 9
-00:00:37,035 --> 00:00:41,383
+00:00:28,668 --> 00:00:32,972
 Why is this hulk drifting, with nobody at the controls?
 
 10
-00:00:42,283 --> 00:00:45,761
+00:00:33,872 --> 00:00:36,379
 The answer, which the party finds in pieces.
 
 11
-00:00:46,211 --> 00:00:51,863
+00:00:36,829 --> 00:00:40,649
 Her crew put themselves to sleep, to wait for help that never came.
 
 12
-00:00:52,763 --> 00:00:56,241
+00:00:41,549 --> 00:00:44,206
 And the choice they make at the end.
 
 13
-00:00:56,691 --> 00:01:01,039
+00:00:44,656 --> 00:00:47,529
 Wake them now, or leave them and fetch a doctor.
 
 14
-00:01:02,839 --> 00:01:06,317
+00:00:49,329 --> 00:00:51,584
 The pieces of the answer become your readings,
 
 15
-00:01:06,767 --> 00:01:09,811
+00:00:52,034 --> 00:00:54,787
 and the choice becomes your two endings.
 
 16
-00:01:10,711 --> 00:01:13,754
+00:00:55,687 --> 00:00:57,858
 If you can't write the third sentence,
 
 17
-00:01:14,204 --> 00:01:17,683
+00:00:58,308 --> 00:01:00,338
 you have a tour, and not a scene.
 
 18
-00:01:18,883 --> 00:01:21,926
+00:01:01,538 --> 00:01:04,791
 Next, how much of everything. Six places.
 
 19
-00:01:22,376 --> 00:01:26,289
+00:01:05,241 --> 00:01:08,003
 Three readings, one for each job on my roster.
 
 20
-00:01:26,739 --> 00:01:30,217
+00:01:08,453 --> 00:01:10,576
 One reading for a skill, and one check.
 
 21
-00:01:30,667 --> 00:01:35,450
+00:01:11,026 --> 00:01:14,156
 Five facts in all, and a door that asks for three.
 
 22
-00:01:37,250 --> 00:01:41,598
+00:01:15,956 --> 00:01:18,551
 Then I draw it, with one room in the middle,
 
 23
-00:01:42,048 --> 00:01:45,961
+00:01:19,001 --> 00:01:21,889
 and every other place leads back to that room.
 
 24
-00:01:46,861 --> 00:01:51,209
+00:01:22,789 --> 00:01:25,525
 The way home goes in the room they arrive in,
 
 25
-00:01:51,659 --> 00:01:54,702
+00:01:25,975 --> 00:01:28,120
 and at each ending, and nowhere else.
 
 26
-00:01:55,902 --> 00:01:58,946
+00:01:29,320 --> 00:01:31,143
 This is the table that saves you.
 
 27
-00:01:59,846 --> 00:02:04,628
+00:01:32,043 --> 00:01:34,640
 For every fact I write where it is, who's offered it,
 
 28
-00:02:05,078 --> 00:02:06,817
+00:01:35,090 --> 00:01:36,819
 and whether it's sure.
 
 29
-00:02:08,617 --> 00:02:12,965
+00:01:38,619 --> 00:01:41,314
 A fact is sure when every party can get it.
 
 30
-00:02:13,865 --> 00:02:18,213
+00:01:42,214 --> 00:01:44,632
 A reading for a job on my roster is sure,
 
 31
-00:02:18,663 --> 00:02:22,141
+00:01:45,082 --> 00:01:48,357
 because when that person stays home, somebody covers.
 
 32
-00:02:23,041 --> 00:02:25,650
+00:01:49,257 --> 00:01:51,267
 A reading for a skill isn't,
 
 33
-00:02:26,100 --> 00:02:29,143
+00:01:51,717 --> 00:01:54,146
 and neither is anything behind a roll.
 
 34
-00:02:30,943 --> 00:02:33,117
+00:01:55,946 --> 00:01:57,398
 I have three sure facts.
 
 35
-00:02:33,567 --> 00:02:37,915
+00:01:57,848 --> 00:02:00,309
 So my door may ask for three, and no more.
 
 36
-00:02:39,115 --> 00:02:41,289
+00:02:01,509 --> 00:02:02,751
 This is where it's going:
 
 37
-00:02:41,739 --> 00:02:47,391
+00:02:03,201 --> 00:02:07,593
 the spine on the chief's handheld, with the captain's hatch open at last.
 
 38
-00:02:49,191 --> 00:02:55,278
+00:02:09,393 --> 00:02:14,179
 Now I type, in layers, and I run lint after each one. Places first,
 
 39
-00:02:55,728 --> 00:03:00,076
+00:02:14,629 --> 00:02:17,369
 and I've torn out my practice rooms to make space.
 
 40
-00:03:00,976 --> 00:03:03,150
+00:02:18,269 --> 00:02:20,209
 Lint warns about two signals,
 
 41
-00:03:03,600 --> 00:03:10,991
+00:02:20,659 --> 00:02:25,966
 and it's right, because the rooms that sent them are gone. Then the readings. Then the check.
 
 42
-00:03:11,441 --> 00:03:18,833
+00:02:26,416 --> 00:02:32,067
 Then the door, with a line that tells an early party why it's shut. Then the endings.
 
 43
-00:03:19,283 --> 00:03:23,630
+00:02:32,517 --> 00:02:35,343
 Each ending is a quest the ship doesn't have yet,
 
 44
-00:03:24,080 --> 00:03:28,428
+00:02:35,793 --> 00:02:38,994
 a choice that starts it, with the new word accepts,
 
 45
-00:03:28,878 --> 00:03:32,357
+00:02:39,444 --> 00:02:41,558
 and a last room with one way out.
 
 46
-00:03:33,257 --> 00:03:37,604
+00:02:42,458 --> 00:02:45,597
 The crew reads an ending's quest the moment they choose,
 
 47
-00:03:38,054 --> 00:03:41,098
+00:02:46,047 --> 00:02:48,152
 so each one gets a short page.
 
 48
-00:03:41,998 --> 00:03:45,041
+00:02:49,052 --> 00:02:51,069
 Here they are in the Quest Log:
 
 49
-00:03:45,491 --> 00:03:48,100
+00:02:51,519 --> 00:02:53,605
 an hourglass on the first one,
 
 50
-00:03:48,550 --> 00:03:52,463
+00:02:54,055 --> 00:02:56,358
 and a picture of the station on the other.
 
 51
-00:03:54,263 --> 00:03:56,002
+00:02:58,158 --> 00:02:59,329
 Then the two stories.
 
 52
-00:03:56,452 --> 00:03:58,191
+00:02:59,779 --> 00:03:00,837
 And lint is clean.
 
 53
-00:03:59,391 --> 00:04:02,870
+00:03:02,037 --> 00:03:04,221
 The ship's quest gets a new page too.
 
 54
-00:04:03,770 --> 00:04:07,683
+00:03:05,121 --> 00:03:08,094
 Here it is in the Quest Log on Helm:
 
 55
-00:04:08,133 --> 00:04:12,480
+00:03:08,544 --> 00:03:12,349
 a table of what the station knows before anybody boards.
 
 56
-00:04:14,280 --> 00:04:17,324
+00:03:14,149 --> 00:03:16,406
 And one change to how it ends.
 
 57
-00:04:18,224 --> 00:04:22,572
+00:03:17,306 --> 00:03:20,576
 Last time, it waited for the surgeon's story to finish.
 
 58
-00:04:23,022 --> 00:04:28,239
+00:03:21,026 --> 00:03:24,267
 But a story is handed to nobody when its person stays home,
 
 59
-00:04:28,689 --> 00:04:32,167
+00:03:24,717 --> 00:03:27,573
 so a short crew could never complete it.
 
 60
-00:04:33,967 --> 00:04:37,446
+00:03:29,373 --> 00:03:31,761
 Now it waits for the reading's own signal.
 
 61
-00:04:38,346 --> 00:04:43,128
+00:03:32,661 --> 00:03:36,681
 The surgeon's press finishes her story and the ship's quest together,
 
 62
-00:04:43,578 --> 00:04:48,796
+00:03:37,131 --> 00:03:40,821
 and when she's not there, the covered reading still finishes the ship's.
 
 63
-00:04:49,996 --> 00:04:53,474
+00:03:42,021 --> 00:03:44,917
 Lint has passed, and lint checks your spelling.
 
 64
-00:04:53,924 --> 00:04:56,533
+00:03:45,367 --> 00:03:46,959
 It doesn't walk through your rooms.
 
 65
-00:04:57,433 --> 00:05:00,041
+00:03:47,859 --> 00:03:49,516
 So I do, with a pencil.
 
 66
-00:05:01,841 --> 00:05:06,189
+00:03:51,316 --> 00:03:54,473
 One: every room has a way out with no condition.
 
 67
-00:05:07,089 --> 00:05:10,133
+00:03:55,373 --> 00:03:57,993
 Two: every room has a way in.
 
 68
-00:05:11,033 --> 00:05:15,815
+00:03:58,893 --> 00:04:02,340
 Three: the door asks for no more than the sure facts,
 
 69
-00:05:16,265 --> 00:05:19,309
+00:04:02,790 --> 00:04:04,880
 and every fact has its own name.
 
 70
-00:05:21,109 --> 00:05:23,283
+00:04:06,680 --> 00:04:08,145
 Four is the big one.
 
 71
-00:05:23,733 --> 00:05:28,515
+00:04:08,595 --> 00:04:12,526
 I cross out everything that needs a skill or a roll,
 
 72
-00:05:28,965 --> 00:05:32,878
+00:04:12,976 --> 00:04:15,909
 and with what's left I walk to each ending.
 
 73
-00:05:33,778 --> 00:05:36,387
+00:04:16,809 --> 00:04:18,930
 If I can, every crew can.
 
 74
-00:05:38,187 --> 00:05:41,665
+00:04:20,730 --> 00:04:23,987
 Five: each story's reading belongs to its person,
 
 75
-00:05:42,115 --> 00:05:44,724
+00:04:24,437 --> 00:04:26,998
 and each ending's quest starts hidden.
 
 76
-00:05:45,924 --> 00:05:50,707
+00:04:28,198 --> 00:04:31,261
 Then I play it three times, with a watch beside me.
 
 77
-00:05:51,607 --> 00:05:53,346
+00:04:32,161 --> 00:04:33,933
 Alone, I'm the chief,
 
 78
-00:05:53,796 --> 00:05:57,709
+00:04:34,383 --> 00:04:37,874
 and two readings come to me marked as covering.
 
 79
-00:05:58,609 --> 00:06:02,087
+00:04:38,774 --> 00:04:41,731
 Sixteen presses, and I'm home with an ending.
 
 80
-00:06:03,887 --> 00:06:07,365
+00:04:43,531 --> 00:04:46,504
 With the doctor aboard too, the menus differ.
 
 81
-00:06:07,815 --> 00:06:12,163
+00:04:46,954 --> 00:04:50,329
 In the hold, only she is offered the scanner's sweep.
 
 82
-00:06:13,063 --> 00:06:16,107
+00:04:51,229 --> 00:04:53,557
 With all three aboard, nothing is covered,
 
 83
-00:06:16,557 --> 00:06:19,165
+00:04:54,007 --> 00:04:56,125
 and reading it all takes twenty.
 
 84
-00:06:20,965 --> 00:06:23,139
+00:04:57,925 --> 00:04:59,718
 And once, I walk away.
 
 85
-00:06:23,589 --> 00:06:25,763
+00:05:00,169 --> 00:05:01,585
 One press in the airlock,
 
 86
-00:06:26,213 --> 00:06:30,561
+00:05:02,035 --> 00:05:05,669
 and the visit is over for everybody, with nothing finished.
 
 87
-00:06:31,461 --> 00:06:35,374
+00:05:06,569 --> 00:05:08,862
 That's why the way home is where it is.
 
 88
-00:06:36,574 --> 00:06:38,313
+00:05:10,062 --> 00:05:11,009
 Now write your own.
 
 89
-00:06:39,213 --> 00:06:43,561
+00:05:11,909 --> 00:05:16,287
 Three sentences, a beat sheet, a drawing, a facts table,
 
 90
-00:06:44,011 --> 00:06:45,750
+00:05:16,737 --> 00:05:17,919
 and then the typing.
 
 91
-00:06:46,650 --> 00:06:48,389
+00:05:18,819 --> 00:05:19,928
 Do the five checks,
 
 92
-00:06:48,839 --> 00:06:56,230
+00:05:20,378 --> 00:05:26,213
 and break it three times on purpose, to see lint say clean when the scene is wrong.
 
 93
-00:06:58,030 --> 00:07:01,509
+00:05:28,013 --> 00:05:30,154
 Then play it with everyone you can find,
 
 94
-00:07:01,959 --> 00:07:05,002
+00:05:30,604 --> 00:05:32,660
 and write down how long it took.

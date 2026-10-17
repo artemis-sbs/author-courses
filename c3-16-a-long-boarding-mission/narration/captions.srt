@@ -1,459 +1,459 @@
 1
-00:00:00,000 --> 00:00:03,478
+00:00:00,000 --> 00:00:02,516
 This is the last lecture of the class,
 
 2
-00:00:03,928 --> 00:00:06,537
+00:00:02,966 --> 00:00:05,453
 and it teaches no new word.
 
 3
-00:00:08,337 --> 00:00:12,250
+00:00:07,253 --> 00:00:10,244
 You're going to write your own long away mission.
 
 4
-00:00:13,150 --> 00:00:16,628
+00:00:11,144 --> 00:00:14,168
 Three areas, a quest tree, and two endings.
 
 5
-00:00:17,078 --> 00:00:21,426
+00:00:14,618 --> 00:00:17,919
 Three jobs, each with something only that person can do.
 
 6
-00:00:23,226 --> 00:00:26,270
+00:00:19,719 --> 00:00:22,309
 I'll show you mine, start to finish.
 
 7
-00:00:26,720 --> 00:00:31,502
+00:00:22,759 --> 00:00:25,420
 It's small on purpose, so you can read all of it.
 
 8
-00:00:33,302 --> 00:00:35,041
+00:00:27,220 --> 00:00:29,890
 Then you write yours.
 
 9
-00:00:36,241 --> 00:00:41,459
+00:00:31,090 --> 00:00:34,914
 Start on paper, with the same three sentences as the sixth lecture.
 
 10
-00:00:42,359 --> 00:00:45,837
+00:00:35,814 --> 00:00:38,309
 The question, and the answer found in pieces.
 
 11
-00:00:46,287 --> 00:00:48,896
+00:00:38,759 --> 00:00:40,189
 And the choice at the end.
 
 12
-00:00:50,696 --> 00:00:52,435
+00:00:41,989 --> 00:00:43,398
 Mine is a mine.
 
 13
-00:00:52,885 --> 00:00:55,493
+00:00:43,848 --> 00:00:45,853
 Four diggers behind a rock fall.
 
 14
-00:00:56,393 --> 00:00:59,437
+00:00:46,753 --> 00:00:48,379
 Dig them out and keep the mine,
 
 15
-00:00:59,887 --> 00:01:02,930
+00:00:48,829 --> 00:00:50,785
 or blast them out and lose it.
 
 16
-00:01:04,730 --> 00:01:07,774
+00:00:52,585 --> 00:00:54,343
 Then the beat sheet from last time.
 
 17
-00:01:08,674 --> 00:01:11,283
+00:00:55,243 --> 00:00:58,225
 A landing, three tracks, a join,
 
 18
-00:01:11,733 --> 00:01:14,341
+00:00:58,675 --> 00:01:00,571
 a last area, and an ending.
 
 19
-00:01:14,791 --> 00:01:16,965
+00:01:01,021 --> 00:01:02,949
 With minutes beside each one.
 
 20
-00:01:18,165 --> 00:01:21,643
+00:01:04,149 --> 00:01:06,748
 Here's my middle area on the engineer's console,
 
 21
-00:01:22,093 --> 00:01:27,311
+00:01:07,198 --> 00:01:09,886
 the chief at the gate, and the ore hauler in the yard.
 
 22
-00:01:28,211 --> 00:01:31,689
+00:01:10,786 --> 00:01:13,066
 The lift house itself is still in fog.
 
 23
-00:01:33,489 --> 00:01:37,402
+00:01:14,866 --> 00:01:18,467
 In the files, three areas, and one decision each.
 
 24
-00:01:38,302 --> 00:01:40,911
+00:01:19,367 --> 00:01:21,317
 The camp is where they land.
 
 25
-00:01:41,811 --> 00:01:45,289
+00:01:22,217 --> 00:01:24,230
 The lift house has to be found once.
 
 26
-00:01:45,739 --> 00:01:49,217
+00:01:24,680 --> 00:01:26,489
 After that the ship can put you there.
 
 27
-00:01:50,117 --> 00:01:54,030
+00:01:27,389 --> 00:01:29,876
 And the gallery can't be beamed into at all.
 
 28
-00:01:54,480 --> 00:01:57,089
+00:01:30,326 --> 00:01:32,018
 That's what makes the lift matter.
 
 29
-00:01:58,889 --> 00:02:02,367
+00:01:33,818 --> 00:01:36,146
 Look at the map with last week's eyes.
 
 30
-00:02:03,267 --> 00:02:06,746
+00:01:37,046 --> 00:01:39,346
 Every mark is the name of a place.
 
 31
-00:02:07,196 --> 00:02:09,804
+00:01:39,796 --> 00:01:41,726
 Nothing hidden stands on a mark.
 
 32
-00:02:10,704 --> 00:02:15,052
+00:01:42,626 --> 00:01:45,725
 And the titles read well after the words go to.
 
 33
-00:02:16,252 --> 00:02:20,165
+00:01:46,925 --> 00:01:49,452
 Draw three columns before you write a single prop.
 
 34
-00:02:20,615 --> 00:02:23,224
+00:01:49,902 --> 00:01:52,114
 Who's doing what, in each beat?
 
 35
-00:02:25,024 --> 00:02:28,067
+00:01:53,914 --> 00:01:55,342
 Then the hard part of the brief.
 
 36
-00:02:28,517 --> 00:02:32,430
+00:01:55,792 --> 00:01:58,886
 Each job gets one thing nobody else can do.
 
 37
-00:02:33,330 --> 00:02:35,939
+00:01:59,786 --> 00:02:01,941
 Here's one, on the doctor's handheld.
 
 38
-00:02:36,389 --> 00:02:40,302
+00:02:02,391 --> 00:02:05,624
 Only someone that good is offered Set his leg.
 
 39
-00:02:42,102 --> 00:02:45,146
+00:02:07,424 --> 00:02:08,824
 There are two ways to write that.
 
 40
-00:02:45,596 --> 00:02:49,943
+00:02:09,274 --> 00:02:12,773
 A skill on an answer, or needs on a prop.
 
 41
-00:02:50,843 --> 00:02:53,017
+00:02:13,673 --> 00:02:15,136
 It can't be a job,
 
 42
-00:02:53,467 --> 00:02:57,815
+00:02:15,586 --> 00:02:18,853
 because a job is covered by whoever's in the scene.
 
 43
-00:02:59,615 --> 00:03:03,093
+00:02:20,653 --> 00:02:22,842
 And here's the rule that keeps it fair.
 
 44
-00:03:03,993 --> 00:03:07,037
+00:02:23,742 --> 00:02:25,838
 A thing only one person can do
 
 45
-00:03:07,487 --> 00:03:10,096
+00:02:26,288 --> 00:02:27,975
 must never be the only road.
 
 46
-00:03:11,896 --> 00:03:15,374
+00:02:29,775 --> 00:02:32,261
 So the cheap ending is open to anybody.
 
 47
-00:03:16,274 --> 00:03:18,883
+00:02:33,161 --> 00:02:35,083
 The good ending has two doors,
 
 48
-00:03:19,333 --> 00:03:21,507
+00:02:35,533 --> 00:02:37,315
 and each one needs somebody.
 
 49
-00:03:22,707 --> 00:03:24,446
+00:02:38,515 --> 00:02:39,505
 Now the quest tree.
 
 50
-00:03:24,896 --> 00:03:29,678
+00:02:39,955 --> 00:02:43,798
 Remember what the bridge gets: the shared quests, and nothing else.
 
 51
-00:03:30,578 --> 00:03:34,491
+00:02:44,698 --> 00:02:47,832
 So this tree is the story the bridge follows.
 
 52
-00:03:36,291 --> 00:03:39,335
+00:02:49,632 --> 00:02:51,375
 One arc, with the clock on it.
 
 53
-00:03:40,235 --> 00:03:45,452
+00:02:52,275 --> 00:02:55,405
 The arc waits, and the first answer on the ground starts it.
 
 54
-00:03:45,902 --> 00:03:48,946
+00:02:55,855 --> 00:02:58,416
 So nobody loses time choosing a console.
 
 55
-00:03:50,746 --> 00:03:53,789
+00:03:00,216 --> 00:03:01,965
 Each step is news for the ship.
 
 56
-00:03:54,689 --> 00:03:58,602
+00:03:02,865 --> 00:03:05,354
 And the two endings are the last two steps,
 
 57
-00:03:59,052 --> 00:04:01,661
+00:03:05,804 --> 00:03:08,057
 each with its own winning sentence.
 
 58
-00:04:03,461 --> 00:04:06,504
+00:03:09,857 --> 00:03:11,373
 I got this wrong the first time.
 
 59
-00:04:06,954 --> 00:04:09,998
+00:03:11,823 --> 00:03:14,604
 I had the endings outside the arc.
 
 60
-00:04:10,898 --> 00:04:15,246
+00:03:15,504 --> 00:03:18,004
 The arc finished early, and the clock stopped with it.
 
 61
-00:04:15,696 --> 00:04:18,304
+00:03:18,454 --> 00:03:21,458
 Keep the endings inside, and waiting.
 
 62
-00:04:20,104 --> 00:04:23,583
+00:03:23,258 --> 00:03:26,470
 And the arc's description is the bridge's briefing.
 
 63
-00:04:24,483 --> 00:04:26,657
+00:03:27,370 --> 00:03:29,715
 Nobody aboard hears Ada Corvin,
 
 64
-00:04:27,107 --> 00:04:30,150
+00:03:30,165 --> 00:03:32,265
 so the arc says what she said.
 
 65
-00:04:31,050 --> 00:04:33,224
+00:03:33,165 --> 00:03:35,638
 Who's where, in a table,
 
 66
-00:04:33,674 --> 00:04:37,587
+00:03:36,088 --> 00:03:38,978
 and the air she counted, on an hourglass line.
 
 67
-00:04:38,787 --> 00:04:41,396
+00:03:40,178 --> 00:03:42,480
 Both endings live in one room.
 
 68
-00:04:42,296 --> 00:04:45,774
+00:03:43,380 --> 00:03:46,034
 Here's the rock fall on the engineer's handheld,
 
 69
-00:04:46,224 --> 00:04:49,267
+00:03:46,484 --> 00:03:48,747
 once the party knows all four things.
 
 70
-00:04:51,067 --> 00:04:54,546
+00:03:50,547 --> 00:03:53,295
 In the file, a choice has one condition,
 
 71
-00:04:54,996 --> 00:04:58,909
+00:03:53,745 --> 00:03:56,491
 so a thing that needs two takes two rooms.
 
 72
-00:04:59,359 --> 00:05:03,707
+00:03:56,941 --> 00:03:59,325
 Facts in the first, and the jacks in the second.
 
 73
-00:05:05,507 --> 00:05:07,680
+00:04:01,125 --> 00:04:02,559
 Now something to plan for.
 
 74
-00:05:08,580 --> 00:05:11,189
+00:04:03,459 --> 00:04:05,577
 A shot never removes a prop.
 
 75
-00:05:12,089 --> 00:05:15,567
+00:04:06,477 --> 00:04:08,665
 Shoot the lift gate, and it stays shut,
 
 76
-00:05:16,017 --> 00:05:19,496
+00:04:09,115 --> 00:04:11,615
 because only the lift's own signal opens it.
 
 77
-00:05:20,396 --> 00:05:23,874
+00:04:12,515 --> 00:04:14,729
 And nothing on the handheld mentions the shot.
 
 78
-00:05:24,324 --> 00:05:27,802
+00:04:15,179 --> 00:04:17,623
 Look still shows the last thing picked up.
 
 79
-00:05:28,702 --> 00:05:33,050
+00:04:18,523 --> 00:04:21,323
 Shoot the rock fall, and both endings are still there.
 
 80
-00:05:34,850 --> 00:05:37,459
+00:04:23,124 --> 00:04:25,197
 A door opens to a shot
 
 81
-00:05:37,909 --> 00:05:41,387
+00:04:25,647 --> 00:04:28,595
 only when its Opens with line says cut.
 
 82
-00:05:42,287 --> 00:05:45,765
+00:04:29,495 --> 00:04:31,745
 So ask one question of your own mission.
 
 83
-00:05:46,215 --> 00:05:50,128
+00:04:32,195 --> 00:04:35,106
 Which doors should the crew be able to force?
 
 84
-00:05:51,328 --> 00:05:53,067
+00:04:36,306 --> 00:04:37,710
 Lint reads your spelling.
 
 85
-00:05:53,517 --> 00:05:55,691
+00:04:38,160 --> 00:04:39,736
 It doesn't walk your map.
 
 86
-00:05:56,591 --> 00:06:01,809
+00:04:40,636 --> 00:04:44,092
 So here are the checks of the whole class, on one sheet.
 
 87
-00:06:02,259 --> 00:06:04,433
+00:04:44,542 --> 00:04:46,112
 Twelve of them, in order.
 
 88
-00:06:06,233 --> 00:06:08,407
+00:04:47,912 --> 00:04:49,506
 Ways in and ways out.
 
 89
-00:06:08,857 --> 00:06:11,030
+00:04:49,956 --> 00:04:51,748
 Keys and names that join.
 
 90
-00:06:11,480 --> 00:06:13,220
+00:04:52,198 --> 00:04:53,662
 Signals with two ends.
 
 91
-00:06:14,120 --> 00:06:17,598
+00:04:54,562 --> 00:04:57,189
 Then the worst party, and the three columns.
 
 92
-00:06:18,048 --> 00:06:21,526
+00:04:57,639 --> 00:05:01,037
 The screen, a full shot, and the clock.
 
 93
-00:06:23,326 --> 00:06:25,500
+00:05:02,837 --> 00:05:04,463
 Then walk it, every road.
 
 94
-00:06:26,400 --> 00:06:31,617
+00:05:05,363 --> 00:05:08,756
 On the way, somebody has to stop the hauler for its coupling.
 
 95
-00:06:32,067 --> 00:06:37,720
+00:05:09,206 --> 00:05:14,424
 Stand on the works gate, outside its notice, and fire one full shot.
 
 96
-00:06:38,620 --> 00:06:42,098
+00:05:15,324 --> 00:05:17,780
 Click the cell it has just stepped onto,
 
 97
-00:06:42,548 --> 00:06:46,896
+00:05:18,230 --> 00:05:20,375
 as it walks up the west side of its square.
 
 98
-00:06:47,796 --> 00:06:49,535
+00:05:21,275 --> 00:05:23,041
 Shots miss a lot,
 
 99
-00:06:49,985 --> 00:06:54,333
+00:05:23,491 --> 00:05:26,306
 and no app tells you a shot hit or missed.
 
 100
-00:06:56,133 --> 00:06:59,611
+00:05:28,106 --> 00:05:30,331
 A doctor and an engineer dig them out.
 
 101
-00:07:00,511 --> 00:07:05,293
+00:05:31,231 --> 00:05:35,277
 One person alone, using no skill at all, blasts them out.
 
 102
-00:07:07,093 --> 00:07:11,441
+00:05:37,077 --> 00:05:40,039
 The times on the page are floors from a script.
 
 103
-00:07:11,891 --> 00:07:16,239
+00:05:40,489 --> 00:05:43,668
 Walk yours with people, and write down what you get.
 
 104
-00:07:17,439 --> 00:07:20,048
+00:05:44,868 --> 00:05:46,968
 Here's the rubric, in ten lines,
 
 105
-00:07:20,498 --> 00:07:23,976
+00:05:47,418 --> 00:05:49,333
 and each one has a way to know.
 
 106
-00:07:25,776 --> 00:07:30,993
+00:05:51,133 --> 00:05:55,030
 Three areas. A quest tree. Two endings and a way to lose.
 
 107
-00:07:31,893 --> 00:07:34,067
+00:05:55,930 --> 00:05:58,118
 Three jobs nobody can replace.
 
 108
-00:07:34,517 --> 00:07:37,561
+00:05:58,568 --> 00:06:00,364
 A clock that starts on the ground.
 
 109
-00:07:38,461 --> 00:07:41,070
+00:06:01,264 --> 00:06:03,595
 An ending for the smallest party.
 
 110
-00:07:41,520 --> 00:07:44,128
+00:06:04,045 --> 00:06:06,053
 And work for three at once.
 
 111
-00:07:45,928 --> 00:07:48,972
+00:06:07,853 --> 00:06:09,918
 You're done when every line is ticked,
 
 112
-00:07:49,422 --> 00:07:52,465
+00:06:10,368 --> 00:06:12,128
 and when somebody who didn't write it
 
 113
-00:07:52,915 --> 00:07:57,263
+00:06:12,578 --> 00:06:15,602
 has played it to an ending without asking you anything.
 
 114
-00:07:59,063 --> 00:08:01,672
+00:06:17,402 --> 00:06:19,218
 That's the end of Boarding Parties.
 
 115
-00:08:02,122 --> 00:08:04,296
+00:06:19,668 --> 00:06:21,056
 Now go and write yours.
