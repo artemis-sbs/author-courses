@@ -12,7 +12,7 @@
 >   `c4-08-eva\example\mission.amd` (501 lines) and Lecture 6's `story.mast` (116 lines).
 >   The game is started with `sbs run server,helm,comms -m MyRuin map=0`.
 > - **`mission.amd` only.**
-> - **`example\` holds the one file that differs from the start:** `mission.amd` (526
+> - **`example\` holds the one file that differs from the start:** `mission.amd` (554
 >   lines).
 > - **Why the worksite is in the same mission:** decided once, for the class. The Relics
 >   section builds every relic in the file, so a second one costs four records; and two
@@ -40,6 +40,17 @@
 > **Where the ship starts.** The script put the ship 1400 from the airlock. Left where the
 > game put it, the ship was 4342 from the airlock with this lecture's finished file, and
 > 2322 with an earlier draft of it: the start is somewhere near DS 1 and not a fixed spot.
+
+> **Re-measured 2026-10-17, headless (rm_c4b).** Lint from the CLI source with the
+> working-tree library: the states after Steps 2 and 3, every row of Step 6, the five "not
+> mistakes" and the exercise, as on the page. Played with the working-tree library, the
+> server starting the map, the same driver: items 2 to 7 and 9. The suit FLEW from the
+> airlock to the mast and stopped 238 from it; at the valve and the panel too. Left where
+> the game put it, the ship was 4309 from the airlock. One nuance for scene 8: once the
+> offer is made at 1400, it is still there at 3300 (it is taken back past 3450, as in
+> Lecture 8); "At 3300 nothing is offered" is true only for a ship that has not yet been
+> closer. No change to the page; the example's line count above was stale (554). Probe:
+> `_sandbox\rm_c4b\c4_09`.
 
 > **Seen in the real game's SERVER, with no console (2026-10-09, another session)**, on
 > Legendary Missions' own test maps: a worksite built from a relic file and its repair

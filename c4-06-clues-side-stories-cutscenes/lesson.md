@@ -607,7 +607,7 @@ end of the line lint prints.
 | `; learn` with no word after it | The same | `learn-nothing` |
 | `() learn names` (no semicolon) | The same | `choice-tail-ignored` |
 | `if names` (the word by itself) | The same | `guard-names-a-fact` |
-| `if learned => 1` (the sign backwards) | The same | `unreadable-guard` |
+| `if learned => 1` (the sign backwards) | The same | `unreadable-guard`, and `guard-learned-unknown` on the same line |
 | `; if learned >= 1` (the `if` after the `;`) | The entry is offered to everybody | `unknown-outcome-verb` |
 
 Not a mistake: `if learned names`. Lint says `clean`, and the entry is offered to a crew

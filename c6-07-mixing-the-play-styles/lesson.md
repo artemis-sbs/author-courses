@@ -408,5 +408,6 @@ crew did and did not find, and read what the game recorded.
 ## Further reading
 
 - Class 5 Lecture 6, "Jobs": `Fails when:`, `Penalty:` and `Tier:` on a job.
+- "Reputation" in the Open Universe reference: what a job's `Tier:` does to standing.
 - Class 5 Lecture 7, "Narrative and goals": a step finished by an answer.
 - Class 3 and Class 4: the missions an interlude would use.

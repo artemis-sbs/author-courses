@@ -105,7 +105,7 @@ Where the lab's campaign stands now, as it was measured:
 | | |
 |---|---|
 | The ship | Kestrel Relay, (0, 0) |
-| Credits | 1050 |
+| Credits | 1200 (150 of it is salvage from scanning the Wren) |
 | Standing with Hollin | 20 |
 | Done | One of Five, Her Log, Enter It, Two of Five, Bait, Enter It Twice |
 | Open | **The Long Count: Three of Five**. Also The Tern's Manifest, and your four Class 5 leads |
@@ -212,7 +212,7 @@ sbs run server,helm,comms -m RevisionLab map=0
 | 5. Renamed, with `Was:` | Enter It Twice is still Done. The save's record moved to the new key |
 | 6. Renamed, with no `Was:` | The old step was parked. The new key is a new step, hidden, and nothing will reveal it, because the step that would have is already done. Her Log has vanished from the Quest Log |
 | 7. A new step behind a finished one | Hidden. The step that reveals it was finished last week, and a finished step does not reveal again |
-| Everything you did not touch | Credits 1050, standing 20, the Escort in hand, three places charted |
+| Everything you did not touch | Credits 1200, standing 20, the Escort in hand, three places charted |
 
 Close the game.
 

@@ -94,7 +94,8 @@ calls it Home Port.
 1. A card names the place: **Home Port**.
 2. There is one station, called **Starbase**. It belongs to the crew's own navy.
 3. In the `comms` window, select the station. Among its buttons are **Market**, **Accept
-   Cargo Run** and **Transport a passenger**. Press **Accept Cargo Run**. A cargo run is
+   Cargo Run** and **Transport a passenger**, with two numbers after it. Press **Accept
+   Cargo Run**. A cargo run is
    a job: carry freight to another system, and be paid on arrival.
 4. In the `helm` window, press the handheld icon in the top bar, then **Quests**. The
    Quest Log holds three things:

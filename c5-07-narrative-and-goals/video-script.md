@@ -1,5 +1,23 @@
 # C5-7 video script - Narrative and goals
 
+> **RE-MEASURED 2026-10-17** on today's working tree (sbs_utils `91a84ecf`,
+> LegendaryMissions `1bdc956`, Open Universe `7b25cb2`, lint from `sbs_cli` source
+> `3162354`), in the game's stand-in and by lint. Nothing ran in the real game and nobody
+> saw a screen. Lint on the finished file and 27 one-change variants: every message the
+> page quotes is still printed, and four rows now print more than the page said (two
+> answers get `signal-no-route` when no beat waits for `ledger_read`; a duplicated key
+> that a `Then:` names also gets `ambiguous-reference`). The page's table says so now.
+> Played by script: the chain, Engage on The Assay Ledger leaving the ship where it is,
+> the hail and both answers (500 to 350 to 550 and standing 20; demand: 700 and -20),
+> asking early (fee taken, beat still hidden), 950 at the Bone Pile, and the goal ending
+> the game won with the `Win:` sentence and the save saying `won`. The Assay Office had
+> to be SCANNED before Comms gave it any buttons (the stand-in shows an unscanned contact
+> as `unknown`); check on camera whether the real game needs a Science scan first. In the
+> stand-in a kill made with the mock's own damage call never counted toward `destroy 4
+> enemies` (the mock deletes the victim before `//damage/killed` runs, so the hostile
+> test fails); the kills were counted the way the engine's route does. Real kills on
+> camera are still the thing to watch.
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the

@@ -177,8 +177,9 @@ kinds are new here:
 
 The word after `icon://` must be one of the game's icon names: `hourglass`, `crosshair`,
 `handshake`, `flag`, `skull`, `shield`, `person` and `wrench` are a few. An icon name
-the game does not have draws nothing. Lint does not read pictures at all, neither an
-icon's name nor a model's, so copy the names from this page.
+the game does not have draws nothing. Lint checks an icon's name, and warns about one it
+does not know. It does not check a model's name after `ship://`, so copy that one from
+this page.
 
 ## Step 4 - Put them on offer
 
@@ -233,6 +234,7 @@ played.
 | No comma before `earns`: `Reward: 150 credits earns hollin selfish 20` | Pays the 150. The deed does not happen | A warning: "has `earns` in the middle of it, so the `earns` is not read and no standing moves. Put a comma before `earns`" (`earns-shape`) |
 | A job with two hashes | That job, and every job under it in the chapter, is never offered | A warning on each of their lines: "this record is being read as a map" (`unknown-field`) |
 | `## [Jobs](work)` | No station offers any work | The same warning, on every line of every job |
+| An icon name misspelled: `icon://hourglas` | No hourglass is drawn | A warning: "`icon://hourglas` is not an icon name" (`embed-unknown-icon`) |
 
 **Mistakes lint cannot see**
 
@@ -269,7 +271,7 @@ So check these by eye:
 - Every `Reward:` has a number and the word `credits`, and a comma before each `earns`.
 - Every word after an `Offers:` is the key of a job, and every job is after somebody's
   `Offers:`.
-- Every name after `icon://` or `ship://` is copied from this page, letter for letter.
+- Every name after `ship://` is copied from this page, letter for letter.
 
 ## Step 6 - Play it
 

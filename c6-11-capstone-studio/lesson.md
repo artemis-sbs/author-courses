@@ -61,7 +61,7 @@ sbs run server,helm,comms,science,weapons -m KestrelVerge map=0
 | When I stopped | Measured |
 |---|---|
 | The ship | Kestrel Relay, (0, 0) |
-| Credits | 1050 |
+| Credits | 1200: 500, less the levy, plus 300 and 350 from the story and 150 of salvage from scanning the Wren |
 | Standing with Hollin | 20 |
 | The open step of The Long Count | **Three of Five** |
 | Hidden | Four of Five and Five of Five, which are still stubs, and Five Boats |
@@ -270,17 +270,17 @@ sbs run server,helm,comms,science,weapons -m KestrelVerge map=0
 |---|---|---|
 | 1 | Helm: open the Quest Log | The open step reads **The Long Count: The Plover**. Your new title reached a game in progress |
 | 2 | Evening 3: engage it | The ship is at the Assay Office. The Escort from sitting one pays on arrival |
-| 3 | Comms: hail the Deepwell, **Pay the search fee for the Plover's bill of sale** | The Plover's Price is Done. Credits are 1200 |
-| 4 | Engage **Enter It Again** | Home. Credits are 1500. **Four of Five** is in the Quest Log |
+| 3 | Comms: hail the Deepwell, **Pay the search fee for the Plover's bill of sale** | The Plover's Price is Done. Credits are 1350 |
+| 4 | Engage **Enter It Again** | Home. Credits are 1650. **Four of Five** is in the Quest Log |
 | 5 | Evening 4: engage **Four of Five** | The ship is at The Petrel, (4, -2). **Her Beacon** is in the Quest Log, Active. A step you wrote an hour ago, revealed by a stub the crew had never seen |
-| 6 | Science: scan the Petrel | Her Beacon is Done |
-| 7 | Engage **Enter It a Fourth Time** | Home. Credits are 1800. **Five of Five** is in the Quest Log |
+| 6 | Science: scan the Petrel | Her Beacon is Done. Her salvage pays 150: credits are 1800 |
+| 7 | Engage **Enter It a Fourth Time** | Home. Credits are 2100. **Five of Five** is in the Quest Log |
 
 Close every window of the game.
 
 | When I stopped | Measured |
 |---|---|
-| Credits | 1800 |
+| Credits | 2100 |
 | Standing | Hollin 25, Deepwell 20 |
 | The open step of The Long Count | **Five of Five** |
 
@@ -293,8 +293,8 @@ The same line again.
 | 1 | Evening 5: engage **Five of Five** | The ship is at the Gleaners' home, (-3, -2). **The Skua's Price** is in the Quest Log |
 | 2 | Comms: **Hail The Gleaners** | Four answers: Tell them you go where you like, Ask what became of the Tern's boats, Sell them a copy of the Count, Back away. Neither of your new ones |
 | 3 | **Ask what became of the Tern's boats**, then hail again | Six answers. **Buy the Skua's log** and **Tell them the Compact knows what they broke** are there now |
-| 4 | **Buy the Skua's log** | "Paid. Her log, captain. Nobody was aboard when we took her. Somebody had been, and had left tidy." Credits are 1500. The Skua's Price is Done, and **Five Boats** is in the Quest Log |
-| 5 | Engage **Five Boats** | Home. The act's ending pays 1000: credits are 2500. **While They Read** is in the Quest Log |
+| 4 | **Buy the Skua's log** | "Paid. Her log, captain. Nobody was aboard when we took her. Somebody had been, and had left tidy." Credits are 1800. The Skua's Price is Done, and **Five Boats** is in the Quest Log |
+| 5 | Engage **Five Boats** | Home. The act's ending pays 1000: credits are 2800. **While They Read** is in the Quest Log |
 | 6 | Helm: the Quest Log | Every step of The Long Count but that one is Done. The Tern's Manifest and two Class 5 leads are still open, for a crew that wants them |
 
 Close the game. If you start it once more, the game continues, and it is not over:
@@ -438,6 +438,8 @@ Write evening 6.
 ## Further reading
 
 - Lecture 2 of this class: facts, and what the save keeps.
+- "What the game remembers" in the Open Universe writer's walkthrough: the save file, line
+  by line, and which changes to a running campaign are safe.
 - Lecture 9: the list of safe changes, and the lab.
 - Lecture 10, Step 7: sending Act Two. Step 9 of this page is the measured version.
 - Class 5 Lecture 11: a ruin on the map, for evening 8.

@@ -31,6 +31,17 @@
 > screen, and the ruin's name on Science. Not seen close up: plates, blocks, ribs, the
 > ring, and which consoles draw a place's name.
 
+> **Re-measured 2026-10-17, in the mock.** Tool `sbs` run from source (`sbs_cli/src`) for
+> the AMD checks and the installed `sbs.pyz` for the story compile check; library from the
+> working tree (sbs_utils `91a84ecf`), Legendary Missions mastlibs as built in `__lib__`
+> on 2026-10-17. Headless only: no engine, no window. Walls now go through a prefab
+> (sbs_utils `2f1a8c90`); the counts did not move. Re-measured: 453 scenery objects (67
+> `generic-cube`, 1 `generic-torus`, 385 asteroids); the `Walls:` table (448 / 373 / 373 /
+> 373 + 14 bars / 0, each plus 60); the `Gaps:` table (82 / 77 / 67 / 41 / 0); `Debris:`
+> 423 / 453 / 483 / 623; `Seed:`; the clouds; the ring's place, size and facing; the name
+> at `0, 0, 19300`; The Altar lit at 1100 and dark at 1300; every row of both Step 8
+> tables; the exercise. No change to the page was needed.
+
 The companion page is `lesson.md`; the finished file is in `example\`.
 
 ## Before recording

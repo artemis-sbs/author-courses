@@ -1,5 +1,21 @@
 # C5-3 video script - Sides, diplomacy and goods
 
+> **RE-MEASURED 2026-10-17** on today's libraries (sbs_utils working tree `91a84ecf`,
+> LegendaryMissions built 2026-10-17, Open Universe `7b25cb2`, lint `sbs` 0.15), in the
+> game's stand-in and by lint. Nothing ran in the real game and nobody saw a screen.
+> Finished file: lint `clean`; `--test 60` PASS with an empty `mast.runtime.log`. Lint
+> on all 24 one-change variants as printed. Played as printed: Hollin Compact offers
+> Patrol and Escort, Kestrel Relay a market and no such jobs; the leads Engage to 3, 1
+> (Deepwell Assembly, Escort and no Patrol) and -3, -2 (The Gleaners, Torgoth ships);
+> no Negotiate Ceasefire at 500, there at 900, 600 paid, peace saved; loot 964 ore,
+> 690 provisions, 222 tech, 124 contraband, no gas. `Flies: Klingon`, `Disposition:
+> hostile`, `Weight: lots`, `(Hollin)` and `reach 3 1` as the table says. Nothing on
+> the page changed. Two things to know when filming: the jobs' buttons read
+> `Patrol  (200 cr)` with two spaces, and while the Gleaners are at war their station
+> also shows the game's own Hail, Taunt, Hail and rain, You're Ugly and Surrender now.
+> (`reach -3 -2`, with no comma, DOES fly and finish: the minus signs part the numbers.
+> The page's own example, `reach 3 1`, does not.)
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the

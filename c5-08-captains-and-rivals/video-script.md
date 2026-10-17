@@ -1,5 +1,16 @@
 # C5-8 video script - Captains and rivals
 
+> **RE-MEASURED 2026-10-17** on today's working tree (sbs_utils `91a84ecf`,
+> LegendaryMissions `1bdc956`, Open Universe `7b25cb2`, lint from `sbs_cli` source
+> `3162354`), in the game's stand-in and by lint. Nothing ran in the real game and nobody
+> saw a screen. Lint on the finished file and 22 one-change variants: every quoted
+> message matches. Played by script: Edda's button on Hollin Compact and on Kestrel
+> Relay, the short line and two answers, standing 20 with Edda and 0 with Hollin, the
+> kettle line and three answers; Sable's button on The Gleaners, the toll (credits 400,
+> Sable 20, Gleaners 0), the Tern answer appearing, -30 after crossing her twice, the
+> cold line, the Tern answer gone; `edda` and `sable` in the save. No page change. As in
+> Lecture 7, each station was scanned by the script before Comms showed its buttons.
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the

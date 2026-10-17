@@ -1,5 +1,19 @@
 # C5-11 video script - A ruin on the map
 
+> **RE-MEASURED 2026-10-17** on today's working tree (sbs_utils `91a84ecf`,
+> LegendaryMissions `1bdc956`, Open Universe `7b25cb2`, lint from `sbs_cli` source
+> `3162354`), in the game's stand-in and by lint. Nothing ran in the real game and nobody
+> saw a screen. Lint on the finished seven files and 14 one-change variants: every quoted
+> message matches. Played by script in the whole mission, with the LegendaryMissions and
+> tile art reachable: Engage to 2, -3 and the card 'Location charted: The Hollow...'; no
+> offer from where the ship arrives (26,843 away today, the page said 29,000); SUIT UP at
+> 600; Nav lists The Gallery Door and The Niche; at the door the Fire app's list is The
+> Fallen Slab, 450, tool beam, under its two tool buttons BEAM and TETHER; a 12-second
+> cut, 600 credits; the bowl taken on reaching the niche, 900; COME ABOARD back to Comms;
+> no offer at 9,000; home and back; a Continue with the slab open and 900. The save also
+> lists the two signals sent; the page's excerpt shows that now. The exosuit fault the
+> page warned about is fixed in engine 1.3.15; the page says so.
+
 > **STATE ON 2026-10-10, evening.** Written and played against the libraries of that
 > morning (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`). Lint, and every row of
 > Step 5's tables, were measured again that evening on the released tool `sbs` 0.14 and
@@ -63,11 +77,15 @@ is a contact on the map; that a ship's beams open a barrier; that ordinary loot 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 
 1. Every screen: the ruin, the handheld, the suit's apps.
-2. The exosuit, and the known fault with it. If a console closes when the suit appears,
-   say so on camera and use the way round it on the page.
+2. The exosuit, and the known fault with it (fixed in engine 1.3.15; record on 1.3.15 or
+   later). If a console closes when the suit appears, say so on camera and use the way
+   round it on the page.
 3. A suit flown by a person from the mouth to the Gallery door. The script put it
    there.
-4. How the bowl is taken at a console: by flying into it, or by the TETHER tool.
+4. How the bowl is taken at a console: by flying into it, or by the TETHER tool. In the
+   stand-in on 2026-10-17, reaching the niche took it; TETHER was not needed. After that
+   the Fire app still lists "The Niche" as a find to TETHER, at 0 (the point's marker
+   carries `relic_piece`); pressing it changed nothing.
 5. Science scanning anything inside.
 
 ## Scenes
@@ -150,9 +168,10 @@ Then on to the niche. || The bowl comes with me, | and that's the last step. ||"
 **Screen:** The note on the suit under Step 6.
 
 **Say:** "I have to be honest about what you just saw. || When I checked this page, a
-script flew all of it, | and nobody was watching a screen. ||| And the exosuit has one
-known fault. || A console can close the first time it meets one mid-game. || It's
-reported, and it isn't your file. | The way round it is on the page. ||"
+script flew all of it, | and nobody was watching a screen. ||| And the exosuit had one
+known fault, in older versions of the game. || A console could close the first time it
+met one mid-game. || It's fixed now, | and if your game is older, the way round it is on
+the page. ||"
 
 ### 9. The ruin remembers
 

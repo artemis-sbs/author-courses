@@ -218,18 +218,18 @@ the line lint prints.
 | `Passage to: crypt 300`, and no room has the key `crypt` | Builds no ruin at all | `relic-dangling-passage` |
 | `Passage to: The Mouth 350` (the name, not the key) | Builds no ruin at all | `relic-dangling-passage`, about the word `The` |
 | `Relic: holow`, or `Relic: The Hollow`, on a room | That room is missing. If another room has a passage to it, no ruin at all | `relic-dangling-parent` |
-| `Chambre:` | The same as a missing room | `unknown-field`: did you mean `Chamber`? |
+| `Chambre:` | Builds no ruin at all. The room's passage still names it, and it has no space | `unknown-field`: did you mean `Chamber`? |
 | `Pasage to:`, or `Passage:` | The ruin is built with that passage missing. The room is there, sealed off | `unknown-field`, and `relic-disconnected` |
 | A radius of `0` or `-700` | Builds no ruin at all | `relic-bad-radius` |
-| Three numbers where four are needed, or `700u` for the radius | The same as a missing room | `relic-short-part` |
+| Three numbers where four are needed, or `700u` for the radius | Builds no ruin at all | `relic-short-part` |
 | A room that no passage reaches and that touches no other room | The room is there, sealed off | `relic-disconnected`. It points at the ruin's heading, not at the room |
 | Two rooms with the same key | One of the two rooms is missing | `duplicate-key` |
 | A room written with four hashes | That room is missing. With every room nested, no ruin at all | `relic-part-level`: give it 3 hashes |
 | A room written with two hashes | That room, and every room below it, is missing | `relic-outside-section` |
 | A room with no `Relic:` line, or with the line below the closing `---` | That room is missing | `relic-part-no-owner` |
 | `Loc:` with two numbers | The ruin is built around the station | `relic-bad-loc` |
-| No colon after `Chamber` | The same as a missing room | `fence-syntax`, an error |
-| The closing `---` left off a room | That room is missing | `unclosed-data-fence`, an error |
+| No colon after `Chamber` | Builds no ruin at all | `fence-syntax`, an error |
+| The closing `---` left off a room | On the last room in the file, that room is missing. On any other, the next heading closes it and the room is built, with a line in `mast.runtime.log` | `unclosed-data-fence`, an error |
 | `## [Old Places](places)` for the section | No ruin at all | `section-not-loaded` |
 | A `#` typed in front of the `relics_spawn` line in `story.mast` | No ruin at all | `section-not-loaded`, about your Relics section |
 | The section heading left out, or written with three hashes | No ruin at all. The rooms are read as scans | `relic-outside-section` |

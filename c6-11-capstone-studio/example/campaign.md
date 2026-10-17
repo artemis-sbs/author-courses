@@ -207,10 +207,10 @@ Three sittings, one save. Walked alone, by the writer, before any crew.
 
 | Sitting | Started with | Evenings | Credits at the end | Standing at the end | The open step when I stopped |
 |---|---|---|---|---|---|
-| 1 | A new game | 1 and 2 | 1050 | Hollin 20 | Three of Five |
+| 1 | A new game | 1 and 2 | 1200 | Hollin 20 | Three of Five |
 | | *I wrote evenings 4 and 5 here, and retitled evening 3* | | | | |
-| 2 | Continue | 3 and 4 | 1800 | Hollin 25, Deepwell 20 | Five of Five |
-| 3 | Continue | 5, and the act's end | 2500 | Hollin 25, Deepwell 20 | While They Read, which waits for Act Two |
+| 2 | Continue | 3 and 4 | 2100 | Hollin 25, Deepwell 20 | Five of Five |
+| 3 | Continue | 5, and the act's end | 2800 | Hollin 25, Deepwell 20 | While They Read, which waits for Act Two |
 
 ## Act Two - The Buyers (outline)
 

@@ -17,7 +17,7 @@
 >   `sbs run server,helm,comms -m MyRuin map=0`.
 > - **`mission.amd` only.** `story.mast` is opened only if the exosuit closes a console
 >   (see "If something goes wrong").
-> - **`example\` holds the one file that differs from the start:** `mission.amd` (478
+> - **`example\` holds the one file that differs from the start:** `mission.amd` (501
 >   lines).
 > - **THE EXOSUIT CAN CLOSE A CLIENT.** A console that first meets the hull `lm_eva_suit`
 >   in the middle of a game can crash (an engine fault, reported). If it does on camera,
@@ -52,6 +52,20 @@
 > It never reeled anything in: in the mock the suit took the bowl on contact as the bowl
 > appeared (for a ship the stand-in takes a pick-up from 500 away and not from 700, and
 > the tether reaches 600). No engine, no window, no person.
+
+> **Re-measured 2026-10-17, headless (rm_c4b).** Lint from the CLI source with the
+> working-tree library: every row of Step 7 and the exercise. One row moved: `Starts when:
+> signal slab_opened` on The Niche is no longer lint-clean (`signal-no-route` twice, on the
+> two answers), so it is now in the bowl table. Played with the working-tree library, the
+> server starting the map, the same driver as above: items 2 to 9 and 13 as listed. The
+> suit is `lm_eva_suit`. ONE NEW FAULT, IN THE LIBRARY: flying The Way In to The Altar on
+> the autopilot, the suit stopped in The Nave at 3014, -46, 21163, at the mouth of the
+> passage to The Vault, about 120 seconds in; the library sent `eva_stuck` and cleared the
+> route, and nothing on any screen says so. Picking The Altar again finished the leg.
+> FIXED in the same fix batch (sbs_utils): the sideways drift was the same angle on every
+> re-plan, so the suit hit the same wall six times; a re-planned route now flies the
+> centerline, and the same leg arrives at The Altar on one pick. No row on the page. If a
+> suit ever stops on camera anyway, pick the place again and keep rolling. Probe: `_sandbox\rm_c4b\c4_08`.
 
 > **Seen in the real game's SERVER, with no console (2026-10-09, another session)**, on
 > Legendary Missions' own test map: the offer at the door, the party named for the ruin,

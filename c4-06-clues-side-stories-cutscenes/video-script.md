@@ -30,6 +30,15 @@
 > a screen. Where a cutscene is involved the run was started the way a server starts a
 > map, so that the server's window is a main screen as it is in the game.
 
+> **Re-measured 2026-10-17, headless (rm_c4b).** Lint from the CLI source (sbs_cli `src`)
+> with the working-tree library; the play with the working-tree library and the mastlibs
+> in `__lib__`, the server starting the map itself so its window is a main screen. Every
+> step, every row of Step 8 and the exercise as on the page, with two changes made: one
+> comment in the template's `story.mast` now names `Prefab:` (still 105 lines,
+> `relics_spawn` on line 62), so `example\story.mast` was brought in line with it; and
+> `if learned => 1` now prints a second warning, `guard-learned-unknown`, on the same line
+> (Class 3, Lecture 3 already teaches the pair). Probe: `_sandbox\rm_c4b\c4_06`.
+
 > **SEEN IN THE REAL ENGINE, 2026-10-04**, on the first version of these files; the
 > records this lecture adds have not changed. The probe's report matched the mock's line
 > for line. The cutscene was WATCHED on the main screen (the server's window, seven

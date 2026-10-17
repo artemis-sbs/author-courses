@@ -1,5 +1,14 @@
 # C6-10 video script - Publishing
 
+> **RE-MEASURED 2026-10-17.** Lint from source on the page's files and both
+> `Description:` mistakes: as printed. The packaged `sbs.pyz doctor` on a copy of the
+> folder: `1 sbslib, 23 mastlib, 0 media`, all libraries present, `0 problems` (the
+> report now ends with a `content checks:` line after the count, so the page says the
+> count line ends `0 problems`). Folders of other names with the same title continued one
+> save. `run`, `fetch --update-libs`, `fetch -u`, `update` and `release` all still exist
+> (`--help` only; nothing fetched, released or launched). One page error fixed: a kept
+> save does not hold any step's text; it names every step by its key.
+
 > **STATE ON 2026-10-10.** Lint and doctor re-measured 2026-10-10 on the released tool
 > `sbs` 0.14 (the doctor's count is 23 libraries for a folder with today's template
 > `story.json`; it was 21). Written 2026-10-09 against `sbs`

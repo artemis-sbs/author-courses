@@ -1,5 +1,18 @@
 # C5-9 video script - Organizing a big universe
 
+> **RE-MEASURED 2026-10-17** on today's working tree (sbs_utils `91a84ecf`,
+> LegendaryMissions `1bdc956`, Open Universe `7b25cb2`, lint from `sbs_cli` source
+> `3162354`), in the game's stand-in and by lint. Nothing ran in the real game and nobody
+> saw a screen. Lint on the finished files and 26 one-change variants: every quoted
+> message matches. `sbs docs` and `sbs site` (from source) printed the page's counts: 6
+> files, 7 pages, 67 records, and refused a players' bible. The released `sbs.pyz` prints
+> the path in full, the source build prints it as typed; either is fine on camera. Played
+> by script: the levy (400 credits, Patrol 240, Escort 300), the Library holding a
+> chapter Codex with the four pages, the story's ledger closing across two files, and
+> Kestrel Traffic: on Comms with the ship ITSELF selected the only button is Ultra-Beam,
+> and it lists Kestrel Traffic, whose two answers and lines are the page's. Step 9 now
+> says where to look.
+
 > **STATE ON 2026-10-10.** Written 2026-10-09; lint re-measured 2026-10-10 on the released
 > tools: `sbs` 0.14 and the published v1.4.0 libraries (sbs_utils `ed811ecb`,
 > LegendaryMissions `cc9cd06`, Open Universe `80e9397`). The game side was run

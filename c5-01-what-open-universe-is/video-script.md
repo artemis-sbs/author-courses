@@ -1,5 +1,19 @@
 # C5-1 video script - What Open Universe is
 
+> **RE-MEASURED 2026-10-17** on today's libraries (sbs_utils working tree `91a84ecf`,
+> LegendaryMissions built 2026-10-17, Open Universe `7b25cb2`), in the game's stand-in,
+> on a sandboxed copy of the Open Universe mission. Nothing ran in the real game and
+> nobody saw a screen. The mission's `story.mast` still has no Engage or waypoint line:
+> with The Silver Reach, Engage, charted places and Navigation are off and the Admiral
+> console is inactive, so no console moves the ship. Everything in "Confirm on camera"
+> came out as printed, with two differences: the passenger button now carries its
+> destination, `Transport a passenger to (2, 3)` (Stop 3 now says so), and with today's
+> seed the Combine's home also held an Outpost, a third station offering the same work.
+> `silver_reach.amd` is unchanged: 364 lines, ten chapters, the Lantern Combine record
+> and the five exercise answers as quoted. `sbs fetch` still defaults to `main`, which
+> on GitHub has no `silver_reach.amd`; `v1.4.0_dev` has it (read with `git ls-remote`,
+> the fetch itself not run).
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. The Open Universe
@@ -50,7 +64,8 @@ The companion page is `lesson.md`. There is no `example\`: the student writes no
 2. With The Silver Reach: mode `sandbox`; the arrival card is handed `Home Port`; one
    station, Starbase, on the crew's side; 500 credits.
 3. Comms is sent these buttons for Starbase: Market, Hail, Build Weapons, Request
-   Priority Docking, Accept Cargo Run, Transport a passenger, Accept Patrol Mission.
+   Priority Docking, Accept Cargo Run, Transport a passenger to (2, 3), Accept Patrol
+   Mission.
 4. The Quest Log is handed The Dimming: A Cold Lane and Break the Veil, both Active.
 5. The Quest Log's own gate, asked about the story's first step on Helm: no Engage, and
    the hint "Manage quests at the Admiral or Comms console."

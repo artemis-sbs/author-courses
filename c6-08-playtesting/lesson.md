@@ -70,7 +70,8 @@ under it: `reached from` and `leads to`. Read only those.
 | The Plover's Price is `reached from` Three of Five, and the Deepwell Hail `leads to` it | An answer finishes it. Both joins are there |
 | A later step is up in beat 1, and has no `reached from` | Nothing reveals it. The crew will never see it |
 
-The bible has its own words for your fields. `Goal` is your `Done when:`.
+The bible shows your fields under the names you wrote them with: `Starts when`, `Done
+when`, `Then`.
 
 **Check 3 - Walk it.** Start the game alone and go down the spine with Engage, as in
 Lecture 5. You are looking for one thing: after each evening's last step, is the next

@@ -245,7 +245,7 @@ Where the middle column says what the game does, it was played as well.
 | The key misspelled after `reveal`: `Then: reveal s01_scn` | Her Log never appears. The evening stops at the Wren with nothing to do | Two warnings. On One of Five: "Then reveals `s01_scn`, and no record has that key, so nothing is revealed" (`dangling-reveal`). On Her Log: "waits to be revealed, and nothing reveals it" (`never-revealed`) |
 | No `Then:` line on Her Log | Not played | A warning on Enter It: "waits to be revealed, and nothing reveals it ... It never appears" (`never-revealed`) |
 | The hook left out: Enter It says `Then: reveal s02_go` and there is no such record | Not played | A warning: "`s01_home` Then reveals `s02_go`, and no record has that key" (`dangling-reveal`) |
-| `Then: show s01_scan` | Not played | Three warnings. The first says what is wrong: "`show` is not a `Then:` verb ... `Then:` takes reveal or signal" (`unknown-then-verb`) |
+| `Then: show s01_scan` | Not played | Three warnings. The first says what is wrong: "`show` is not a `Then:` verb ... `Then:` takes reveal or signal or learn" (`unknown-then-verb`) |
 
 **Mistakes lint cannot see**
 
@@ -274,7 +274,8 @@ sbs run server,helm,science -m MyUniverse map=0
    guarded.
 3. The Quest Log now has **The Long Count: Her Log**.
 4. In the `science` window, select The Wren and scan her. Her Log shows `Done`, and
-   **Enter It** is in the list.
+   **Enter It** is in the list. The side has 150 credits more as well: the game pays
+   salvage the first time a wreck is scanned. That is the game's, not your story's.
 5. Engage **Enter It**. The ship is home. The side has 300 credits more, and **The Long
    Count: Two of Five** is in the list.
 6. That is the evening. Close every window of the game.

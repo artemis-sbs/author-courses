@@ -139,14 +139,16 @@ Guards: pirate 2
 The third colony's ship, circling where she never landed.
 ```
 
-`pirate 2` is one or two small ships. In the game this page was measured in, it was one.
+`pirate 2` is one or two small ships. In the first game this page was measured in, it was one. In the later ones, two.
 
 Four things are true of every guard fleet:
 
 1. **The crew is warned.** On arrival the game shows a card titled **Threat**: "The Tern
    is guarded - hostiles on approach."
-2. **They wait by the landmark, not by the crew.** At The Bone Pile the guards were about
-   17,500 away from where the ship arrived. At The Tern, about 7,600.
+2. **They wait by the landmark, not by the crew.** How far that is from where the ship
+   arrives changes from game to game. In the games measured for this page, the guards at
+   The Bone Pile were between about 13,000 and 24,000 away, and at The Tern between about
+   7,600 and 18,300.
 3. **They belong to nobody.** Guards are raiders, whatever kind of ship you chose. A
    ceasefire with the Gleaners does not call off the Torgoth at The Bone Pile.
 4. **They do not come back.** When every guard is destroyed the game remembers it, in
@@ -166,7 +168,7 @@ number.
 | Difficulty | Ships in the home fleet |
 |---|---|
 | 1 | 1 |
-| 4 | 1 |
+| 4 | 1 or 2 |
 | 5 | 2 |
 | 8 | 3 |
 | 11 | 6 |
@@ -376,11 +378,11 @@ sbs run server,helm,comms -m MyUniverse map=0
 
 1. You start at Kestrel Relay. Nothing in the Hollin Fields shoots.
 2. In the `helm` window, open the Quest Log and Engage **The Third Colony**. The card
-   reads **The Tern**, and a second card, **Threat**, says she is guarded. One small
-   ship is out by the wreck.
+   reads **The Tern**, and a second card, **Threat**, says she is guarded. One or two
+   small ships are out by the wreck.
 3. Engage **The Breaking Yard**. This is the Gleaners' home. Their fleet is close.
 4. Close the game. Change line 53 to `DIFFICULTY: 8`, delete the save, and do step 3
-   again. The fleet at the Gleaners' home was one ship. Now it is three. Put line 53
+   again. The fleet at the Gleaners' home was one or two ships. Now it is three. Put line 53
    back to 4 and delete the save once more.
 
 **What you need to know about danger**
@@ -442,6 +444,8 @@ moment the story arrives there.
 
 - "The dials" in the Open Universe writer's walkthrough: the mixes and chances.
 - "Painting the map", in the same walkthrough: `Guards:` and `Terrain:` on a landmark.
+- "Battles and fleets" in the Open Universe reference: where every enemy ship comes from,
+  the Difficulty and Danger numbers, `Guards:` in full, and the ship budget.
 - "Fleets & raiding" in the sbs_utils guide: what a fleet is and how tiers work. It is
   written for programmers; the tables are the part to read.
 - Lecture 5 of this class: the mixes, regions and landmarks this lecture counts.

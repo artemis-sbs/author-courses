@@ -12,7 +12,7 @@
 >   `c4-09-station-repair\example\mission.amd` (554 lines) and Lecture 6's `story.mast`
 >   (116 lines). The game is started with `sbs run server,helm,comms -m MyRuin map=0`.
 > - **`mission.amd` only.**
-> - **`example\` holds the one file that differs from the start:** `mission.amd` (552
+> - **`example\` holds the one file that differs from the start:** `mission.amd` (587
 >   lines). It is the whole class in one file.
 > - **Scenes 6 to 8 are one take of about twenty minutes of play, cut down,** and they
 >   end a game. A recording take adds a line to the game's own `game_results.yaml`. That is
@@ -44,6 +44,17 @@
 > run: nothing in this lecture was flown. (Lecture 8 flew one leg; Lecture 9 flew one.)
 > The cutscene at the cairn was started by Lecture 6's card and had no main screen to
 > play on.
+
+> **Re-measured 2026-10-17, headless (rm_c4b).** Lint from the CLI source with the
+> working-tree library: every row of Step 4 and the "One more thing" section, as on the
+> page. The capstone walk with the working-tree library, the server starting the map: all
+> fifteen rows and every credit (40, 90, 140, 220, 320, 420, 720, a win with 820), with ONE
+> leg flown this time (The Way In to The Altar, by the suit's autopilot, arriving). The
+> loss at 20 seconds. The optional side story: lint `clean`; the crew member the stand-in
+> was dealt was a Helm officer, so it was not on their list, and it was announced and paid
+> at the cairn (the same as the note in item 9). See Lecture 8's note about a suit that
+> stops short of The Altar. No change to the page; the example's line count above was
+> stale (587). Probe: `_sandbox\rm_c4b\c4_10`.
 
 The companion page is `lesson.md`; the finished file is in `example\`.
 

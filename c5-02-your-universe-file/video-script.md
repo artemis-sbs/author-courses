@@ -1,5 +1,20 @@
 # C5-2 video script - Your universe file
 
+> **RE-MEASURED 2026-10-17** on today's libraries (sbs_utils working tree `91a84ecf`,
+> LegendaryMissions built 2026-10-17, Open Universe `7b25cb2`) and `sbs` 0.15, in the
+> game's stand-in and by lint. Nothing ran in the real game and nobody saw a screen.
+> `sbs create -t ou --title "The Kestrel Verge"` was RUN again (into a sandbox): it
+> downloaded the starter's `v1.4.0` branch, made 7 files, and its `story.mast` carries
+> both travel lines (`QUEST_ENGAGE_ENABLED`, `WAYPOINTS_ENABLED`) and the Save Slot dial;
+> lint `clean`. The page's steps applied to it by script give `example\` byte for byte
+> (4 and 2 found). Play: card Kestrel Relay, two stations, Engage on Helm, the run to
+> (2, -3) pays 400 (900 saved), Continue starts there, Charted Locations takes it home;
+> New Game keeps `.previous.bak`; slot 2 writes `_2`. Lint on all 32 one-change variants
+> as printed. The `story.mast` compile errors are printed by the zipapp `sbs` only (a
+> source checkout of the tool skips that check without a word). The two passenger
+> buttons now read `Transport a passenger to (2, -3)`. Step 1 changed: the output it
+> quoted was not the end of what `sbs create` prints.
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the

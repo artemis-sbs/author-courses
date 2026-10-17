@@ -51,7 +51,7 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 8. Every row of the tables in Step 6: 6 variants, each linted, 4 of them played.
 
 **Read in the plan for this course, not built:** the four styles in the second table of
-Step 1. Class 5 Lectures 11, 14 and 15 are written now. Lecture 10 is not.
+Step 1. Class 5 Lectures 10, 11, 14 and 15 are written now.
 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 

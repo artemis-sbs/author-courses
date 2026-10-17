@@ -51,10 +51,12 @@ sbs create MyUniverse -t ou --title "The Kestrel Verge"
 The rules for a title are the ones from Class 1, Lecture 3: letters, numbers and spaces,
 no colon, 40 characters at most.
 
-The command ends like this:
+Answer its question about libraries as you did in Class 1. Among the lines it prints are
+these two, the second near the end:
 
 ```
 Created MyUniverse from 'ou' (7 files)
+MyUniverse is ready.
 ```
 
 Then bring its libraries up to date, as you did for `MyMission`:
@@ -388,7 +390,7 @@ first file as it was. Class 6 Lecture 2 uses it.
 
 | What you see | Likely cause |
 |---|---|
-| `sbs create` says `Error: no template 'ou'`, or does not end `MyUniverse is ready.` | Your tool is older than this page. Type `sbs update`, then try again |
+| `sbs create` says `Error: no template 'ou'`, or never prints `MyUniverse is ready.` | Your tool is older than this page. Type `sbs update`, then try again |
 | The start screen says My Universe | Step 7, part 1 was not done. Replace All should have found 4 |
 | The start screen has no **Save Slot** | Your folder was made before the dial was added. Nothing is wrong: the game plays in slot 1, as this page says. Class 6 Lecture 2 gives the one line that adds the dial |
 | The game starts, home is called Home Port, and there is no Kestrel Relay | The universe file was not loaded, or the landmark was not. Read `mast.runtime.log`. Then check the title is spelled one way, the file name after `universe:` is right, and the landmark has `At: 0, 0` |

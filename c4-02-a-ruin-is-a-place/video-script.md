@@ -35,6 +35,20 @@
 > script in the same run: 3 chambers and 2 passages in one piece, 534 wall props, and a
 > ship put on a wall prop was not pushed off it and reported no collision.
 
+> **Re-measured 2026-10-17, in the mock.** Tool `sbs` run from source (`sbs_cli/src`) for
+> the AMD checks and the installed `sbs.pyz` for the story compile check; library from the
+> working tree (sbs_utils `91a84ecf`), Legendary Missions mastlibs as built in `__lib__`
+> on 2026-10-17. Headless only: no engine, no window. mast_starter `b295cfd` (2026-10-14)
+> had made the template's `story.mast` 106 lines with `relics_spawn` on line 63; the fix
+> batch rewrapped that comment, so it is 105 lines and line 62 again, as Classes 1 to 3
+> say. Check a fresh `sbs create` before filming. Every row of the Step 7
+> table re-linted and played. Four rows changed: `Chambre:`, a short `Chamber:` and a
+> `Chamber` with no colon build NO ruin at all (the room's own `Passage to:` still names
+> it), not just a missing room; and the closing `---` left off a room loses that room only
+> when it is the last record in the file - otherwise the next heading closes the fence and
+> the room is built, with an `AMD error` line in `mast.runtime.log`. The two quoted lint
+> lines are word for word.
+
 The companion page is `lesson.md`; the finished file is in `example\`.
 
 ## Before recording

@@ -1,5 +1,7 @@
 # C5-12 video script - Battles, part 1: how dangerous a system is
 
+> **RE-MEASURED 2026-10-17** headless (the mock) on the libraries of that day (sbs_utils `91a84ecf`, LegendaryMissions `1bdc956` built that morning, Open Universe `7b25cb2`) and `sbs` 0.15 lint, run from source. Still nothing in the real game, and no screen seen. Lint and every lint row of the mistake tables re-measured, all as printed (the four `mast-compile` rows with `sbs` 0.15). Played again: Difficulty 4 and 8, the Tern and Bone Pile guards, guards cleared and gone on return, the Gleaners' home (fleet and the four fighters), an enemy system with `"Dormant"`, `DANGER` over 21 seeds, the 16 `Guards:` lines, `Flies: Gleaner`, and the `settings.yaml` / card mistakes. Changed on the page: the guards' distances and the Tern's guard count (two ships now, one before), and the home fleet at Difficulty 4 (one or two). Both are dice, not drift: each new game places and sizes them differently.
+
 > **STATE ON 2026-10-10.** Written 2026-10-09; lint and every lint row of the mistake tables
 > re-measured 2026-10-10 on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`): all `clean` now. The

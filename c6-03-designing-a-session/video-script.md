@@ -1,5 +1,12 @@
 # C6-3 video script - Designing a session
 
+> **RE-MEASURED 2026-10-17** in the mock against the working-tree libraries (sbs_utils
+> `91a84ecf`, Open Universe `7b25cb2`), lint from source. Evening 1 walked and continued:
+> as the page says. Two changes to the page: scanning the Wren also pays 150 credits of
+> salvage (the game's own, paid the first time a wreck is scanned; the earlier walk told
+> the quest directly and skipped it), and the `unknown-then-verb` quote now ends "reveal
+> or signal or learn". Three guards at the Wren, not destroyed, were there after Continue.
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the

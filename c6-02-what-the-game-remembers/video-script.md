@@ -1,5 +1,16 @@
 # C6-2 video script - What the game remembers
 
+> **RE-MEASURED 2026-10-17** in the mock against the working-tree libraries (sbs_utils
+> `91a84ecf`, Open Universe `7b25cb2`), lint from source. Step 6 played and continued in
+> a second process: system, 700 credits, standing 25, both facts, four answers, the
+> second line, all as printed. All 17 lint variants as printed. Re-measured with probe
+> copies: a failed clock and its penalty in the save within seconds; a running clock
+> gained up to half a minute; a renamed ship kept its record; a second ship came back
+> at (1, 0); a new title, slot 2 and New Game wrote the files the page names; a damaged
+> save was left as it was, with `.unreadable.bak` beside it; a `Win:` step finished by a
+> signal gave one Campaign won card on Continue and the game went on. One change: a step
+> in the save is five lines now (`children: {}`).
+
 > **STATE ON 2026-10-10, evening.** Written that morning against `sbs` 0.13 and the
 > libraries of the day (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`, saves version
 > 2). Re-measured the same evening on the released tool `sbs` 0.14 and libraries

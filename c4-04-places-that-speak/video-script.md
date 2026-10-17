@@ -37,6 +37,19 @@
 > closes, and a later arrival reads the `Scan:`. `mast.runtime.log` was empty. Nothing
 > was SEEN on a console.
 
+> **Re-measured 2026-10-17, in the mock.** Tool `sbs` run from source (`sbs_cli/src`) for
+> the AMD checks and the installed `sbs.pyz` for the story compile check; library from the
+> working tree (sbs_utils `91a84ecf`), Legendary Missions mastlibs as built in `__lib__`
+> on 2026-10-17. Headless only: no engine, no window. Ship part: no call at 900, the call
+> at 500 as `Surveyor Rook` / `A recording at the altar`, both branches, "Mark the
+> Gallery." lights The Niche, "Shut it off." lights nothing, no second call, nothing opens
+> on top of The Altar. Suit part, with a harness modeled on `tests/test_eva_places.py` on
+> this lesson's own file: the autopilot arrival opens `altar_look`, a second suit joins
+> it, "Read the marks on the rim" leads on, "Step back" closes it, a later console reads
+> the `Scan:`, a repeat arrival reads nothing new. Every row of the three Step 7 tables,
+> the four non-mistakes and the exercise re-linted and played. No change to the page was
+> needed.
+
 The companion page is `lesson.md`; the finished file is in `example\`.
 
 ## Before recording

@@ -317,7 +317,7 @@ sbs lint AdmiralLab
 == captains\ashfang.amd ==
   clean
 == cast\frontier.amd ==
-  [WARNING] line 30:1: `Patience` is not a field a lifeform has. Check the spelling. A lifeform has: color, deliver_to, face, file, flies, host... (a mission adds its own with amd_register_fields) (unknown-field)
+  [WARNING] line 30:1: `Patience` is not a field a lifeform has. Check the spelling. A lifeform has: color, data, deliver_to, face, file, flies... (a mission adds its own with amd_register_fields) (unknown-field)
 == default.amd ==
   clean
 == dialogue\ashfang.amd ==
@@ -341,7 +341,7 @@ sbs lint AdmiralLab
 == skirmish_arena.amd ==
   clean
 
-13 amd + 13 mast file(s): 0 error(s), 2 warning(s)
+13 amd + 14 mast file(s): 0 error(s), 2 warning(s)
 ```
 
 Two warnings, and neither is yours. Both were there before you changed anything, in

@@ -339,7 +339,7 @@ offered. The names of the buttons are the game's own.
 |---|---|---|
 | 1 | Helm: opens the Quest Log | Four leads, one of them **A Hole in the Chart** |
 | 2 | Helm: engages it | The ship arrives at (2, -3). The card reads "Location charted: The Hollow". A Hole in the Chart is Done, and **Cut Through** is in the Quest Log |
-| 3 | Helm: flies toward the way in | The game's guide says the way in is a contact on the map, and nothing else inside is marked. At 29,000 from it, no handheld offers anything |
+| 3 | Helm: flies toward the way in | The game's guide says the way in is a contact on the map, and nothing else inside is marked. From where the ship arrives, about 27,000 from it, no handheld offers anything |
 | 4 | Helm: stops within 3,000 of the way in | A crew member's handheld has the **Boarding Party** app, and its button reads **SUIT UP**, going out to The Hollow |
 | 5 | That crew member presses **SUIT UP** | They are outside, in a suit, in The Mouth. The suit's Nav app lists **The Gallery Door** and **The Niche** |
 | 6 | The suit flies to The Gallery Door | The suit's Fire app lists **The Fallen Slab**, 450 away, with two tools: **BEAM** and **TETHER** |
@@ -354,10 +354,10 @@ a suit's cutter does. That was not played here. Class 4 Lecture 8 has more on it
 
 **The suit.** In the run behind this page the suit was drawn as the game's stock
 shuttle, because that run could not reach the art packs. On your computer, with the
-libraries fetched, the game's guide says it is the crew exosuit. There is one known
-fault with that hull, and it is not yours: a console can stop the first time it meets
-the exosuit in the middle of a game. It is reported to the game's makers. "If something
-goes wrong" has the way round it.
+libraries fetched, the game's guide says it is the crew exosuit. Versions of the game
+before 1.3.15 had one fault with that hull, and it was not yours: a console could stop
+the first time it met the exosuit in the middle of a game. It is fixed in 1.3.15. On an
+older game, "If something goes wrong" has the way round it.
 
 ## Step 7 - The ruin remembers
 
@@ -395,6 +395,9 @@ state:
           - slab
         taken:
           - niche
+    sent:
+      - hollow_taken
+      - slab_opened
 ```
 
 The game's guide adds one limit, not measured here: only the piece is remembered.
@@ -433,7 +436,7 @@ Nothing else on those pages changes. The Hollow is in a system no other lecture 
 | `story.json` has no line with `boarding` in it | The folder was made before the template changed. Find the line that ends `items.v1.4.0.mastlib",` and add this line under it, with its comma: `"artemis-sbs.LegendaryMissions.boarding.v1.4.0.mastlib",` |
 | The slab is cut and Cut Through is still open | The word after `signal` is not `slab_opened`. Lint says so, on that step |
 | The bowl is aboard and What the Hollow Kept is still open | The word after `signal` is not `hollow_taken`, or The Niche has lost `relic_piece` from its roles. Lint warns about that step either way |
-| A console closes the moment somebody suits up | The known fault with the exosuit. Start the game again with the same line: it continues, and the ruin is as the crew left it. Until the fault is fixed you can have suits drawn as the stock shuttle. Open `story.mast`, find the line `default shared WAYPOINTS_ENABLED = True`, and add this on a line of its own below it: `eva_set_suit_hull("tsn_shuttle")`. That line was played: suits were offered and the two steps finished as before |
+| A console closes the moment somebody suits up | The known fault with the exosuit, in a game older than 1.3.15. Start the game again with the same line: it continues, and the ruin is as the crew left it. Until you can update the game you can have suits drawn as the stock shuttle. Open `story.mast`, find the line `default shared WAYPOINTS_ENABLED = True`, and add this on a line of its own below it: `eva_set_suit_hull("tsn_shuttle")`. That line was played: suits were offered and the two steps finished as before |
 | The suit is a shuttle | The LegendaryMissions art pack is not fetched. `sbs fetch "MyUniverse" --update-libs` |
 
 ## Exercise

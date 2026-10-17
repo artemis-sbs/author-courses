@@ -378,7 +378,9 @@ sbs run server,helm,comms -m MyUniverse map=0
 8. On Comms, select the Gleaners' station. The crew has 700 credits, so **Negotiate
    Ceasefire** is there, at a price of 600. Do not press it.
 9. Press **Hail The Gleaners**, then **Tell them you go where you like**. The ship's
-   standing with the Gleaners is 20.
+   standing with the Gleaners is 20. While the Gleaners are at war with the crew, their
+   station also has buttons of the game's own, **Hail** and **Taunt** among them. Yours
+   is the one with their name in it.
 10. Select the station again. There is a job now, **Salvage (180 cr)**: a foe deals with
     a ship at 20. Press **Negotiate Ceasefire**. It costs 200.
 11. Give the bold answer twice more. Standing is 57, and it will not go higher: the
@@ -448,6 +450,8 @@ stations that belong to a side, and the dials that shape the whole galaxy.
 
 - "Sides - who lives here" in the Open Universe writer's walkthrough: the `Values:` line.
 - "The dials", in the same walkthrough: the six threshold lines.
-- "Dialogue", in the same walkthrough. One correction to it: where it says the first
-  matching line wins, the game in fact picks at random among every line that can be said.
+- "Dialogue", in the same walkthrough: lines a side says at each standing. Among every
+  line that can be said, the game picks one at random.
+- "Reputation" in the Open Universe reference: every line you can write, every deed that
+  moves standing, and what the game does at each number, on one page.
 - Class 2, Lectures 3 and 4, "Dialogue": calls and answers, taught in full.

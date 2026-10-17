@@ -1,5 +1,7 @@
 # C5-16 video script - Capstone: a playable universe
 
+> **RE-MEASURED 2026-10-17** headless (the mock) on the libraries of that day (sbs_utils `91a84ecf`, LegendaryMissions `1bdc956` built that morning, Open Universe `7b25cb2`) and `sbs` 0.15 lint, run from source. Still nothing in the real game, and no screen seen. Both sittings walked again by script: every row as the page says except two dice rows. The Tern had two raiders, not one, and The Bone Pile was not an enemy system in that game, so row 16 counted seven (three guards and a battle line of four). Rows 7 and 16 and scene 7 now hold for any game. Lint clean with the session card.
+
 > **STATE ON 2026-10-10.** Written 2026-10-09; lint and every lint row of the mistake tables
 > re-measured 2026-10-10 on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`): all `clean` now. The
@@ -43,7 +45,9 @@ The companion page is `lesson.md`; the finished `kestrel_verge.amd` is in `examp
    750, the Quest Log as it was left.
 4. Engage on What the Gleaners Keep: the ship is at -4, -3; four cards are sent (the
    Gleaners' greeting, the guards' Threat card, the charted card and ours); credits
-   1150; eleven hostile ships, four of them the battle line.
+   1150; eleven hostile ships, four of them the battle line. (Re-measured 2026-10-17 in a
+   game where The Bone Pile was not an enemy system: seven, three guards and a battle line
+   of four. Row 16 now says seven to twelve.)
 5. Four Gleaner kills reported: the game says game over, a win, with the `Win:`
    sentence, and sends a card titled VICTORY with the `Citation:` sentence.
 
@@ -135,9 +139,9 @@ end screen.
 **Say:** "I start it with the same line, | and we're back at the Assay Office, with
 the same credits. || The Quest Log is just as I left it. ||| Now for the place the
 Gleaners won't talk about. || Three cards come up. | The place, the guards, and the
-one I wrote. ||| I count eleven ships. || Four of them are a long way off, | three are
-by the wreck, | and four are right in front of me. || That's the battle line from last
-time. ||| I have to tell you something about this last row. || When I checked this
+one I wrote. ||| Now I count the ships. || Three are by the wreck, | and four or five
+are right in front of me. || That's the battle line from last time. || If the dice made
+this an enemy system, | there are more, a long way off. ||| I have to tell you something about this last row. || When I checked this
 page, | a script told the game the four ships were destroyed. || Nobody has fought
 this fight. || So this is the first time, and we'll find out together. ||"
 

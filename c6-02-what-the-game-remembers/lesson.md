@@ -250,13 +250,14 @@ state:
       - the gleaners broke a boat
 ```
 
-Above them, under `shared_quests:`, is every step of your story. A step is four lines:
+Above them, under `shared_quests:`, is every step of your story. A step is five lines:
 
 ```
   lead_deepwell:
     authored: true
     state: 99
     progress: 0
+    children: {}
 ```
 
 | `state:` | The step is |

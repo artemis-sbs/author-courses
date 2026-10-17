@@ -346,4 +346,5 @@ evening, and how to stop five evenings in a row from being the same evening.
 - Class 5 Lecture 4, "Reputation": the seven pairs of traits, the average, and the six
   dials that move the game's own doors.
 - Class 5 Lecture 8, "Captains and rivals": standing with one person.
+- "Reputation" in the Open Universe reference: every deed that moves standing, on one page.
 - Class 2 Lecture 4, "Dialogue, part 2": `if` on an answer.

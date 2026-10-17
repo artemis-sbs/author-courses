@@ -1,5 +1,23 @@
 # C5-5 video script - The map
 
+> **RE-MEASURED 2026-10-17** on today's libraries (sbs_utils working tree `91a84ecf`,
+> LegendaryMissions built 2026-10-17, Open Universe `7b25cb2`, lint `sbs` 0.15), in the
+> game's stand-in and by lint. Nothing ran in the real game and nobody saw a screen.
+> Finished file: lint `clean`; `--test 60` PASS with an empty `mast.runtime.log`. Lint on
+> all 22 one-change variants of Step 6: every result as printed, the `Loot max` warning
+> included (still given, still wrong). Step 7 played as printed: the four cards, the sky
+> `sky1-blue` at home and `sky-neb2-rvb` with `artemis2` in the Breakers, nothing asked
+> for at 3, 1, two Torgoth guards on the raiders' side at the Bone Pile, four places in
+> Charted Locations. **Changed:** (1) Landmarks are made through prefabs since
+> 2026-10-14, and `Prefab: wreck` now places NOTHING (the library's `wreck` needs an
+> `Art:`), so its row and one
+> trouble row changed. The fix batch then made lint warn on it (`landmark-no-art`) and put
+> the runtime warning in `mast.runtime.log`, so the row moved to "Mistakes lint finds". (2) Item 3 below held for that seed only: with today's seed the
+> Breakers held 2 enemy systems of 9 (rolls checked by hand, the dial is 60%), so Step 3
+> and the Bone Pile row in Step 7 now say "about six in ten" and "in most games". The
+> Bone Pile's own system was an enemy system with this seed. `Guards: klingon`,
+> `Terrain: fog`, `Art: starbase_huge` and no `Side:` played as the table says.
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the

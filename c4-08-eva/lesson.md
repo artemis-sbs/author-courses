@@ -477,17 +477,17 @@ end of the line lint prints.
 | The `Starts when:` line left off The Niche | The bowl is there from the start. A ship that flies in and takes it early has spent the word. What Rook Put Back never finishes | `signal-no-route`, twice |
 | The two answers left as `; signal hollow_taken` | Comms finishes the step from the bridge. Nobody goes for the bowl, and the niche stays empty | `unfired-signal` |
 | No `Then: reveal survey/home` on What Rook Put Back | The bowl is taken, Carry It Home never appears, and the game cannot be won | `never-revealed` |
+| `Starts when: signal slab_opened` on The Niche | The slab is cut, the word is sent, and the bowl never appears. A place hears the words YOUR file sends, from an answer or a `Then:` line. It does not hear the game's own three | `signal-no-route`, twice: nothing hears `niche_open` now |
 
 ### What lint cannot see
 
-Lint says `clean` for everything in this table. The first three are the ones to check by
+Lint says `clean` for everything in this table. The first two are the ones to check by
 eye every time you write a barrier.
 
 | You wrote | What happens | What tells you |
 |---|---|---|
 | No place within 600 of the slab (The Gallery Door deleted) | Nav says `No way through to niche from here.` From every place on the list, the Fire app says `Nothing in reach. Fly closer.` No crew member can open the slab | Those two lines |
 | The slab is not across the way: `Barrier: 3000, 0, -300, 100` | The suit flies to the niche past it. Cut Through waits until somebody cuts the slab anyway | Nothing |
-| `Starts when: signal slab_opened` on The Niche | The slab is cut, the word is sent, and the bowl never appears. A place hears the words YOUR file sends, from an answer or a `Then:` line. It does not hear the game's own three | Nothing |
 | `Part of:` and `Required:` left off Carry It Home | The game is won at the niche, as the bowl is taken, with the crew member still outside | Nothing |
 | Nothing wrong: Helm flies home with somebody still outside | The game is won with them outside. `reach station` asks about the ship | Nothing |
 | A crew member flies on from the altar without choosing an answer that ends the scene | The scene stays open on their Act app, wherever they go | The Act app |
@@ -501,7 +501,8 @@ Five things that look like mistakes and are not:
   200 as well.
 - No place with `Roles: entrance` at all. The offer is measured from the ruin's `Loc:`,
   the suit appears there, and so does the name on the map. For The Hollow that is the
-  middle of The Mouth.
+  middle of The Mouth. In this mission keep it all the same: Find the Way In waits on
+  `reach entrance`, and without the role lint warns `role-nothing-wears`.
 - A `; signal niche_open` that is never heard, because the crew presses Back. Back puts
   the call in the list again, and the niche waits with it.
 

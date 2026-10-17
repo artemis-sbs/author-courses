@@ -28,6 +28,16 @@
 > one-change variants: the pasting mistakes, the shipped lines left in, and the exercise.
 > No engine, no window. Nothing in this lecture has been seen on a screen.
 
+> **Re-measured 2026-10-17, in the mock.** Tool `sbs` run from source (`sbs_cli/src`) for
+> the AMD checks and the installed `sbs.pyz` for the story compile check; library from the
+> working tree (sbs_utils `91a84ecf`), Legendary Missions mastlibs as built in `__lib__`
+> on 2026-10-17. Headless only: no engine, no window. `sbs create` run for real; the
+> example lints `clean`; every row of "If something goes wrong", the two Stop 6 slips, the
+> shipped lines left in and the exercise re-linted, the quoted `relic-disconnected` line
+> word for word. Played: 732 rock objects (682 with the drift taken out), four purple
+> clouds (green when asked), `The Sink` at `1600, 0, 12000` (`1600, 0, 20000` with the new
+> `Loc:`), the three places lit at 0, 1100 and 1200. No change to the page was needed.
+
 The companion page is `lesson.md`; the file with the borrowed ruin is in `example\`.
 
 ## Before recording

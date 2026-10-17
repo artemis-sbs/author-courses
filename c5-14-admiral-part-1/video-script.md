@@ -1,5 +1,7 @@
 # C5-14 video script - The Admiral, part 1: the game from above
 
+> **RE-MEASURED 2026-10-17** headless (the mock) on the libraries of that day (sbs_utils `91a84ecf`, LegendaryMissions `1bdc956` built that morning, Open Universe `7b25cb2`) and `sbs` 0.15 lint, run from source. Still nothing in the real game, and no screen seen. Lint counts 14 `.mast` files now (Open Universe gained `universe_prefabs.mast` on 2026-10-14). That change also put `Prefab: worldlet` on every world in `skirmish_arena.amd`, a line nothing reads in `## Worldlets` (those records are types, not placed worlds) and only there to quiet a lint warning; the fix batch made lint treat `## Worldlets` as a catalog and took the lines out, so the arena is 160 lines again and the page and example are unchanged on that point. The `Patience` warning's field list changed and is updated. Lint rows re-measured. The Admiral loop was played again by script: 6,000 / 1,200 / 480, tanks 7,200, the HQ and eight buttons, seven officers with Maren first, three ships, Hail and five orders, research to 7,700.
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. The lab was
@@ -42,7 +44,7 @@ it belongs in the `AdmiralLab` copy, not in `MyUniverse`.
 **In the mock, by script, in a copy of the Open Universe mission, with the page's own
 `skirmish_arena.amd`:**
 
-1. Lint of a whole copy of the mission: 13 `.amd` and 13 `.mast` files, two warnings,
+1. Lint of a whole copy of the mission: 13 `.amd` and 14 `.mast` files (13 before 2026-10-14), two warnings,
    neither in `skirmish_arena.amd`. With the page's changes: the same two, and
    `skirmish_arena.amd` is `clean`. With `Also: economy` added to a research record the
    game still reads its `Time: 40` as 40.

@@ -11,7 +11,7 @@
 >   template's, untouched. The game is started with
 >   `sbs run server,helm,comms -m MyRuin map=0`.
 > - **`mission.amd` only.** `story.mast` is not opened.
-> - **`example\` holds the one file that differs from the start:** `mission.amd` (247
+> - **`example\` holds the one file that differs from the start:** `mission.amd` (251
 >   lines).
 > - **The template picks things up since 2026-10-09.** Its `story.json` loads Legendary
 >   Missions' `items` addon. A `MyRuin` made before that date does not: with that folder
@@ -33,6 +33,18 @@
 > not fake the pick-up: the stand-in's own contact rule reported it, the `items` addon's
 > own route took the thing, and the library sent `hollow_taken`. No engine, no window.
 > Nobody has flown a ship into a thing in this mission.
+
+> **Re-measured 2026-10-17, in the mock.** Tool `sbs` run from source (`sbs_cli/src`) for
+> the AMD checks and the installed `sbs.pyz` for the story compile check; library from the
+> working tree (sbs_utils `91a84ecf`), Legendary Missions mastlibs as built in `__lib__`
+> on 2026-10-17. Headless only: no engine, no window. Pick-ups now go through a prefab
+> (sbs_utils `a3fa2e87`); nothing a student sees moved. Re-measured: both things placed,
+> nothing taken after six seconds, none at 700, the cache at 500 (hold 3, `Pickup: Survey
+> Canister x3`, 60 credits), the bowl (`hollow_taken`, 260 credits); the folder without
+> the `items` line; every row of the Step 7 tables and the three non-mistakes; the
+> exercise; the steps typed onto Lecture 7's file (with Lecture 6's `story.mast`) lint
+> `clean` and play the same. The pick-up line is now a corner toast (`overlay_toast`). The
+> Science reading was NOT re-measured. The example is 251 lines, as the page says.
 
 The companion page is `lesson.md`; the finished file is in `example\`.
 

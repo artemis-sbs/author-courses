@@ -180,7 +180,8 @@ Three things a region does in play:
 2. A system in it with no landmark is named after it on the arrival card: **The Hollin
    Fields**, and the system's two numbers under the name.
 3. Its dials decide what the game rolls there. The Hollin Fields have no enemy systems.
-   Most of the Breakers is enemy systems, and none of it has a port.
+   In the Breakers about six systems in ten are enemy systems, and none is a port. With
+   only nine systems, your game may have more or fewer.
 
 **When two regions overlap,** a system belongs to the one written first in the file. So
 write a small region before the large one it sits inside. These two do not touch.
@@ -313,6 +314,7 @@ played.
 | `## [Regions](areas)` | No regions. No sky changes, and a system with no landmark reads `Uncharted` | A warning on each `Center:` and `Radius:` line: "this record is being read as a map" (`unknown-field`) |
 | A region written with two hashes | That region is lost. The others work | The same warning, on that region's two lines |
 | `Side: deepwel` on a landmark | The station is there and belongs to nobody you wrote. It offers no work | A warning: "`deepwel` is not a side in this mission", with the keys you did declare (`dangling-side`) |
+| `Prefab: wreck` | Nothing is placed: the game's own `wreck` needs an `Art:` line. The card still reads The Tern | A warning: "`The Tern` has no `Art:` line, and the library's `wreck` prefab never guesses one" (`landmark-no-art`) |
 
 One warning is wrong. `Loot max: 6` works, and lint says "`Loot max` is not a field a map
 has". Leave it, as you left the threshold dials in Lecture 4.
@@ -333,7 +335,6 @@ Lint says `clean` for every one of these.
 | A sky that is not one of the seven: `Skybox: sky-red` | The sky does not change there. The music still does |
 | `Music: Artemis3` | The music does not change there. The sky still does |
 | A large region written before a small one inside it | The small one never happens. Every system belongs to the large one |
-| `Prefab: wreck` | Plain wreckage, not Open Universe's derelict. A `Site:` on it does nothing |
 | No `Side:` on a station landmark | The station is the crew's own, with a market and none of that side's work |
 | An `Art:` the game does not have: `Art: starbase_huge` | Not seen. The station is given that name for its model |
 | `Guards: klingon` | No guards. `mast.runtime.log` names the word and lists the six it knows |
@@ -348,7 +349,6 @@ So check these by eye:
 - Every region has a `Center:` of two numbers and a `Radius:` that is a number.
 - Every `Skybox:` is one of the seven, letter for letter.
 - A small region is written before a large one that overlaps it.
-- `Prefab:` is `station` or `derelict`, not `wreck`.
 - Every landmark's line is one line, of 60 characters or fewer.
 
 ## Step 7 - Play it
@@ -378,7 +378,7 @@ sbs run server,helm,comms -m MyUniverse map=0
 | Only a landmark is charted | A region, and a side's home with no landmark in it, are not in Charted Locations. The crew cannot jump back to them without a job that leads there |
 | The sky changes when the crew arrives in a region | A system in no region keeps whatever sky the crew arrived with. If the sky matters, put a region there |
 | The galaxy is made from the seed, and every new game has a new seed | Your dials decide how much of each kind there is. Which system is which is different in every new game. Only your landmarks, your sides' homes and your regions stay put |
-| A landmark sits on top of what the game rolled | The Bone Pile is in an enemy system, so a Gleaner fleet is there as well as the guards. A landmark does not empty its system |
+| A landmark sits on top of what the game rolled | In most games the Bone Pile's system is rolled as an enemy system, so a Gleaner fleet is there as well as the guards. A landmark does not empty its system |
 
 ## If something goes wrong
 
@@ -390,7 +390,7 @@ sbs run server,helm,comms -m MyUniverse map=0
 | The sky does not change in a region | The name after `Skybox:` is not one of the seven |
 | The Deepwell's home still reads `Uncharted (3, 1)` | The Assay Office's `At:` is not `3, 1` |
 | The Assay Office has a market and no escort job | It has no `Side:` line, so it is the crew's own |
-| The Tern is missing, or is plain wreckage | `Prefab:` is not the word `derelict` |
+| The Tern is missing | `Prefab:` is not the word `derelict` |
 | No fleet at The Bone Pile | The word after `Guards:` is not one of the six kinds of ship. Or the crew has been here before in this save and destroyed it |
 | Ships at The Bone Pile attack after a ceasefire with the Gleaners | The guards are raiders. They are nobody's to call off |
 | A place is missing from Charted Locations | Only a landmark is charted, and only once the crew has been there |

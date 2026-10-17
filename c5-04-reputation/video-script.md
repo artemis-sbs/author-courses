@@ -1,5 +1,21 @@
 # C5-4 video script - Reputation
 
+> **RE-MEASURED 2026-10-17** on today's libraries (sbs_utils working tree `91a84ecf`,
+> LegendaryMissions built 2026-10-17, Open Universe `7b25cb2`, lint `sbs` 0.15), in the
+> game's stand-in and by lint. Nothing ran in the real game and nobody saw a screen.
+> Finished file: lint `clean`; `--test 60` PASS with an empty `mast.runtime.log`. Step 6
+> played as printed, press by press: Escort (250 cr) and no Patrol; the two lines; 400
+> and 20 after the levy; Patrol (240 cr) and Escort (300 cr); 700 and 25 at 3, 1; at the
+> Gleaners 700 credits and Negotiate Ceasefire; 20 and Salvage (180 cr) after the bold
+> answer; a 200 ceasefire; 57 with the fearsome score at 100. A second start read back
+> 25, 57 and the ceasefire. The dials (600/400/200/0, tiers 20/50, alliance 60, pay
+> 1.0/1.2/1.5/2.0) as printed; `Ceasefire per point: 10` makes it 300. Lint on all 27
+> one-change variants as printed (the six dial lines still warn, still wrongly).
+> `Tier: two` and `Max reward: 200%` still stop the mission; `Speaker: holin` loses the
+> Hail button. **Changed:** step 9 now warns that a hostile station also shows the
+> game's own **Hail**, **Taunt**, **Hail and rain**, **You're Ugly** and **Surrender
+> now** beside **Hail The Gleaners** (they go after the ceasefire). Film the right one.
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the

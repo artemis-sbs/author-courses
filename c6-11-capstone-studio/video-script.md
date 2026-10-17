@@ -1,5 +1,14 @@
 # C6-11 video script - Capstone studio
 
+> **RE-MEASURED 2026-10-17** in the mock against the working-tree libraries (sbs_utils
+> `91a84ecf`, Open Universe `7b25cb2`), lint from source. All five launches walked again
+> on one save: every step state, title, answer count, line and standing as the page says.
+> The credits were 150 higher per wreck scanned: the scan now went through the same
+> route a Science scan takes, and that route pays 150 of salvage the first time a wreck
+> is scanned (the earlier walk told the quest directly and skipped it). The page's
+> credits were corrected: 1200, 1350, 1650, 1800, 2100, 1800, 2800. `; accepts s06_go`
+> was pressed in a continued game and opened the step.
+
 > **STATE ON 2026-10-10, evening.** Written and walked that morning against `sbs` 0.13
 > and the libraries of the day (sbs_utils `ae05dac7`, LegendaryMissions `b37a320`, saves
 > version 2). Re-measured the same evening on the released tool `sbs` 0.14 and libraries
@@ -34,17 +43,17 @@ are in `example\`.
 **In the mock, by script, on 2026-10-10, with the page's own files:**
 
 1. Sitting one, a new game on Lecture 10's file: evenings 1 and 2. At the end the ship
-   is at 0, 0, credits 1050, standing with Hollin 20, Three of Five open, the Escort in
+   is at 0, 0, credits 1200, standing with Hollin 20, Three of Five open, the Escort in
    hand.
 2. The finished file lints with one warning, the true one about `act2_begins`. Four
    one-change variants add the warnings in Step 7; a fifth adds none.
 3. Sitting two, the same save, the finished file: the open step is listed as The Long
-   Count: The Plover. Evening 3: credits 1200 at the Assay Office after the fee, 1500 at
-   home. Evening 4: on arrival at 4, -2, Her Beacon is Active; scanned, then home:
-   credits 1800, standing Hollin 25, Deepwell 20.
+   Count: The Plover. Evening 3: credits 1350 at the Assay Office after the fee, 1650 at
+   home. Evening 4: on arrival at 4, -2, Her Beacon is Active; scanned (1800), then home:
+   credits 2100, standing Hollin 25, Deepwell 20.
 4. Sitting three, the same save: at the Gleaners' home the hail gives four answers;
    after Ask what became of the Tern's boats it gives six; Buy the Skua's log leaves
-   credits at 1500 and the step Done; Five Boats at home pays 1000: credits 2500, every
+   credits at 1800 and the step Done; Five Boats at home pays 1000: credits 2800, every
    step of The Long Count Done but While They Read, which is Active.
 5. A fourth launch: the game continues and is not over. A fifth, with Act Two's three
    additions in the file: While They Read is Active and evening 6's step hidden; the

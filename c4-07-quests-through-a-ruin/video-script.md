@@ -13,7 +13,7 @@
 >   the file and in the game while this lecture is played. The game is started with
 >   `sbs run server,helm,comms,science -m MyRuin map=0`.
 > - **`mission.amd` only.** `story.mast` is not opened.
-> - **`example\` holds the one file that differs from the start:** `mission.amd` (395
+> - **`example\` holds the one file that differs from the start:** `mission.amd` (409
 >   lines).
 > - **Scene 9 ends a game.** A recording take adds a line to the game's own
 >   `game_results.yaml`. That is fine for a real play; say nothing about it.
@@ -30,6 +30,13 @@
 > a probe that moves the ship, opens calls with the game's own functions, forces a Science
 > scan, and prints every quest's state, the quest list, the calls waiting, the side's
 > credits and what the crew is told.
+
+> **Re-measured 2026-10-17, headless (rm_c4b).** Lint from the CLI source with the
+> working-tree library, on a copy with no probe in it: the half-way state of Step 4, every
+> row of Step 7's tables and the "not mistakes", as on the page. Played with the
+> working-tree library, the server starting the map: items 2 to 6, 8, 9 and the exercise
+> (items 1 to 3) as listed below. No change to the page. One count here was stale and
+> was corrected: `example\mission.amd` is 409 lines. Probe: `_sandbox\rm_c4b\c4_07`.
 
 > **CHECKED IN THE REAL ENGINE, 2026-10-04 (server only, by script)**, on the first
 > version of this file, which had no ring call and no side story; the records this

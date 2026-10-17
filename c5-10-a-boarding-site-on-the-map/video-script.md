@@ -1,5 +1,21 @@
 # C5-10 video script - A boarding site on the map
 
+> **RE-MEASURED 2026-10-17** on today's working tree (sbs_utils `91a84ecf`,
+> LegendaryMissions `1bdc956`, Open Universe `7b25cb2`, lint from `sbs_cli` source
+> `3162354`), in the game's stand-in and by lint. Nothing ran in the real game and nobody
+> saw a screen. Lint on Part 1's seven files, the finished eight, and 30 one-change
+> variants: every quoted message matches, `story.json` line 33 column 9 included. Played
+> by script in the whole mission (not a unit test): a seated stand-in at Weapons, the
+> dock signal, the call answered by the game's hail calls, BEAM DOWN by the app's own two
+> calls, every room and choice of Part 1 (550, the second line, three choices after), and
+> Tally Yard by the game's own map-click policy (stood at 4, 3; loader down by the FULL
+> strike; terminal walked to 14, 6; door refused, keycard, door open from 16, 6; the
+> ledger's 'Two crates short' line; 700). Docked again, jumped to 1, 0 and back (a new
+> station object), and a second launch on the same save: door open, keycard gone, loader
+> down, facts kept, 700. Jumping with somebody on the map ended the visit and gave the
+> console back as Weapons. One row changed: two sites sharing a key lose the thing at
+> whichever site is read second, not always the new one.
+
 > **STATE ON 2026-10-10, evening.** Written that morning, and re-measured the same
 > evening against the released tools: `sbs` 0.14, the published v1.4.0 libraries
 > (sbs_utils `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`). Lint, the

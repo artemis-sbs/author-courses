@@ -1,5 +1,10 @@
 # C6-8 video script - Playtesting
 
+> **RE-MEASURED 2026-10-17** against lint from source and the working-tree libraries.
+> Lint on the finished file and the four variants as printed; the bible's `reached from`
+> and `leads to` lines as the table says. One change: the bible prints `Done when`, not
+> `Goal`, so the line that said `Goal` is your `Done when:` was rewritten.
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the

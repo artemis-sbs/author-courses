@@ -1,5 +1,12 @@
 # C6-9 video script - Revising between sessions
 
+> **RE-MEASURED 2026-10-17** in the mock against the working-tree libraries (sbs_utils
+> `91a84ecf`, Open Universe `7b25cb2`), lint from source. The lab in slot 6, walked two
+> evenings in, then continued five times (rounds one to four, then Step 7's split file
+> and renamed ship): every row as the page says, both quoted reports word for word. The
+> credits were 1200, not 1050: the scan went through the route a Science scan takes,
+> which pays 150 of salvage the first time a wreck is scanned. The page was corrected.
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the lab at
@@ -35,7 +42,7 @@ them: they belong in `RevisionLab`, not in `MyUniverse`.
 
 **In the mock, by script, on 2026-10-10, with the page's own changes:**
 
-1. With evenings 1 and 2 walked: the ship at 0, 0, credits 1050, standing with Hollin
+1. With evenings 1 and 2 walked: the ship at 0, 0, credits 1200, standing with Hollin
    20, six steps Done, Three of Five open, the Escort in hand.
 2. Round one, linted: two warnings, `dangling-reveal` and `never-revealed`, both from
    the deleted step. Continued: the reworded open step and the reworded finished step

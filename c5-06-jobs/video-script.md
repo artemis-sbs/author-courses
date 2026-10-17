@@ -1,5 +1,16 @@
 # C5-6 video script - Jobs
 
+> **RE-MEASURED 2026-10-17** on today's libraries (sbs_utils working tree `91a84ecf`,
+> LegendaryMissions built 2026-10-17, Open Universe `7b25cb2`, lint `sbs` 0.15), in the
+> game's stand-in and by lint. Nothing ran in the real game and nobody saw a screen.
+> Finished file: lint `clean`; `--test 60` PASS with an empty `mast.runtime.log`. Every
+> number in Step 6 came out as printed (250, 240/300, 700, 220/180, 920, 1160 and 35,
+> 180, 1340 and 35 to 26, 1520, 252/315). Lint on all 31 one-change variants: every
+> row as printed. **Changed:** lint now checks an icon's name (`embed-unknown-icon`), so
+> Step 3, its check-by-eye line and scene 6 no longer say lint reads no pictures, and the
+> first table of Step 5 has a row for it. A model's name after `ship://` is still not
+> checked. Scene 6 needs its narration made again.
+
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
 > stand-in and by lint. Nothing ran in the real game and nobody saw a screen. Lint on the
@@ -144,8 +155,8 @@ first line puts the Assay Office beside the words, in three dimensions. || It's 
 same model as the station's Art line, | so they see who's paying. ||| An empty line starts
 a new paragraph. || The first one is the order, | and the second is why it matters. |||
 And an icon can start a line, or be a bullet. || An hourglass for the clock, | and a
-crosshair for the hulls. || Lint doesn't check those names, | so copy them from the page.
-||"
+crosshair for the hulls. || Lint checks the icon names, | but not the name of a model, |
+so copy that one from the page. ||"
 
 ### 7. On offer
 

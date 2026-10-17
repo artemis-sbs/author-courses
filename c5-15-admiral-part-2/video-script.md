@@ -1,5 +1,7 @@
 # C5-15 video script - The Admiral, part 2: an Admiral alongside a bridge crew
 
+> **RE-MEASURED 2026-10-17** headless (the mock) on the libraries of that day (sbs_utils `91a84ecf`, LegendaryMissions `1bdc956` built that morning, Open Universe `7b25cb2`) and `sbs` 0.15 lint, run from source. Still nothing in the real game, and no screen seen. Without `Prefab: worldlet` on the two worlds lint warned `landmark-no-prefab` twice, though the game is the same either way (played both ways): `## Worldlets` holds types, not placed worlds. The fix batch made lint treat that chapter as a catalog, so the page stays as it was. Lint rows re-measured. Played again by script: the three switches each left out, `Mode: story` with chapters, `campain`, `Economy pace: standard`, `Start ore: 10`, the whole Step 7 loop (every number as the page gives it), Continue, the empty-seat walk of Lecture 16, and the Campaign won card after a win.
+
 > **STATE ON 2026-10-10.** Written that morning; lint and every lint row of the mistake tables
 > re-measured 2026-10-10 on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`): all `clean` now. The

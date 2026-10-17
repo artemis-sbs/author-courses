@@ -435,8 +435,10 @@ sbs run server,helm,comms -m MyUniverse map=0
 3. Open the handheld, then **Library**. There is a chapter called **Codex** with your
    pages in it.
 4. Look for **Kestrel Traffic** on Comms. The game has made the voice and given it
-   your record to speak. Where its button is, this page cannot tell you: nobody has
-   seen that screen yet.
+   your record to speak. In the game's stand-in it is here: on Comms, select your own
+   ship. The one button is **Ultra-Beam**, and it lists **Kestrel Traffic**. Press it
+   for one of the two greetings, and **Ask where the work is**. Nobody has seen that
+   screen in the real game yet.
 5. Play the story from Lecture 7 as far as the Assay Office. Pay the fee. The Assay
    Ledger closes, with the answer in one file and the beat in another.
 

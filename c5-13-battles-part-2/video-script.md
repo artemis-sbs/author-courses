@@ -1,5 +1,7 @@
 # C5-13 video script - Battles, part 2: a battle that waits for the story
 
+> **RE-MEASURED 2026-10-17** headless (the mock) on the libraries of that day (sbs_utils `91a84ecf`, LegendaryMissions `1bdc956` built that morning, Open Universe `7b25cb2`) and `sbs` 0.15 lint, run from source. Still nothing in the real game, and no screen seen. Lint and every lint row re-measured, all as printed; the one-equals error is printed twice now, the second against line 1, and the page says so. Played again: early arrival (no line), the story's arrival (four ships at about 7,000), leave and come back (one line), Continue at The Bone Pile (a line of five), the win, and the no-delay, `gleaner` race, `gleaner` side, quoted tier and small-letter `arrive_i` mistakes: every one as the page says.
+
 > **STATE ON 2026-10-10.** Written 2026-10-09; lint and every lint row of the mistake tables
 > re-measured 2026-10-10 on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`): all `clean` now. The

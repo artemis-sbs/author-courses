@@ -202,7 +202,7 @@ played through the story to The Bone Pile.
 | The mistake | What the game does | What lint says |
 |---|---|---|
 | `//signal/universe_arrived` | In a test with no consoles, the same as the right line. With consoles it runs once for each | A warning: "calls a spawn - runs once PER console; use //shared/signal" (`signal-side-effect-spawn`) |
-| One equals sign: `ARRIVE_I = -4` | Nothing runs: no ship, no station | An error: "Maybe you meant '==' ... The story does not compile, so NOTHING in this mission runs" (`mast-compile`) |
+| One equals sign: `ARRIVE_I = -4` | Nothing runs: no ship, no station | An error: "Maybe you meant '==' ... The story does not compile, so NOTHING in this mission runs" (`mast-compile`). Lint prints it twice, the second time against line 1 |
 | The last bracket of the long line typed as `)` with no `}` before it | Nothing runs | An error: "closing parenthesis ')' does not match opening parenthesis '{'" (`mast-compile`) |
 | A curly quote mark in the sentence | Nothing runs | An error: "invalid character" (`mast-compile`) |
 | The card pasted inside the map's lines, in the middle of the file | The game stops with an error as it starts. No ship and no station | A warning: "this line never runs: the label ended at `->END`" (`mast-unreachable`) |
@@ -340,5 +340,7 @@ Admiral, with worlds to mine, officers to commission and research to climb.
 - Lecture 11 of Class 1, "Just enough MAST": how to read a route, and the three rules
   for changing one.
 - "Fleets & raiding" in the sbs_utils guide: the fleet this card makes.
+- "Battles and fleets" in the Open Universe reference: this card's timing, and what else
+  puts enemy ships in a system.
 - `StormsBeacon\story.mast` in the Storm's Beacon mission, the part named `xorn_engage`:
   a set piece that hunts the crew wherever they linger. Read it; do not copy it yet.

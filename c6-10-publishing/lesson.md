@@ -129,7 +129,7 @@ KestrelVerge
 `23 mastlib` is the libraries a universe made from today's template runs on. Two of
 them are the Open Universe's own. Your Class 1 mission had about a dozen. Your count
 may differ by one or two, and an older folder has fewer.
-Its last words must be `0 problems`.
+The line that counts the checks must end `0 problems`.
 
 Then the walk, from Lecture 8, on a deleted save. And delete the save again afterward.
 
@@ -144,7 +144,7 @@ they are the plot.
 |---|---|
 | `campaign.md` | Every act, the ledger, the ending |
 | `playtest.md` | What other crews did |
-| Any `evening_NN.yaml` you kept here | A save has every hidden step's text in it |
+| Any `evening_NN.yaml` you kept here | A save names every step of your story by its key, the ones ahead too |
 
 **2. Delete what the tools made.** All of it comes back when it is needed.
 
