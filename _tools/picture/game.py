@@ -65,6 +65,11 @@ import states  # noqa: E402
 
 MISSIONS = os.environ.get("PICTURE_GAME_MISSIONS", r"E:\a\Cosmos-dev\data\missions")
 PROBE = "_pic_probe"
+#: Written into every probe this tool makes. A probe can be named after the STUDENT's
+#: mission (`--as-mission`, so the end screen does not read "_pic_probe" on film), and a
+#: folder of that name could be somebody's real mission - this tool deletes only a folder
+#: carrying its own mark.
+PROBE_MARK = ".pic_probe"
 SANDBOX = "_sandbox"
 PY = os.path.join(MISSIONS, "..", "..", "PyRuntime", "python.exe")
 ENV = dict(os.environ, COSMOS_SETTINGS='{"GAME_RESULTS_SAVE": false}')
@@ -110,6 +115,16 @@ def probe_name(sandbox):
 
 def probe_dir(sandbox):
     return os.path.join(MISSIONS, *probe_name(sandbox).split("/"))
+
+
+def probe_remove(probe):
+    """Delete a probe folder - only one this tool made (its mark, or the stock name)."""
+    if not os.path.isdir(probe):
+        return
+    if os.path.basename(probe) != "_pic_probe" and \
+            not os.path.exists(os.path.join(probe, PROBE_MARK)):
+        sys.exit(f"{probe} is not a probe this tool made (no {PROBE_MARK}) - not deleting it")
+    shutil.rmtree(probe)
 
 
 def wants_sandbox(lecture, asked, state="final"):
@@ -205,8 +220,7 @@ def build(lecture, state, patches, amd_patches=(), sandbox=False):
     -> the probe's folder. Starts and stops nothing."""
     _, _, sb = board.load(lecture)
     probe = probe_dir(sandbox)
-    if os.path.isdir(probe):
-        shutil.rmtree(probe)
+    probe_remove(probe)
     os.makedirs(os.path.dirname(probe), exist_ok=True)
     if sandbox:
         sandbox_lib()
@@ -217,6 +231,7 @@ def build(lecture, state, patches, amd_patches=(), sandbox=False):
                           cwd=MISSIONS, env=ENV, capture_output=True, text=True)
     if not os.path.isdir(probe):
         sys.exit("sbs create did not make the probe:\n" + made.stdout + made.stderr)
+    open(os.path.join(probe, PROBE_MARK), "w").close()
     print(f"probe made from the '{template}' template" + (f" in {SANDBOX}/" if sandbox else ""))
     if patches and "story.mast" not in files:
         sys.exit("--patch: the state has no story.mast")
@@ -257,7 +272,7 @@ def start(lecture, state, patches, consoles, wait, amd_patches=(), sandbox=False
     saves_guard_begin(lecture)
     build(lecture, state, patches, amd_patches, sandbox)
     with open(STATE, "w", encoding="utf-8") as fh:
-        json.dump({"lecture": lecture, "sandbox": sandbox, "state": state}, fh)
+        json.dump({"lecture": lecture, "sandbox": sandbox, "state": state, "probe": PROBE}, fh)
     args = [PY, "sbs.pyz", "run", consoles, "-m", probe_name(sandbox), "map=0"]
     if seed:
         args.append(f"seed={seed}")
@@ -277,17 +292,19 @@ def running_state():
 def stop(lecture):
     stop_game()
     time.sleep(2)
+    global PROBE
     sandbox = False
     if os.path.exists(STATE):
         with open(STATE, encoding="utf-8") as fh:
-            sandbox = json.load(fh).get("sandbox", False)
+            st = json.load(fh)
+        sandbox = st.get("sandbox", False)
+        PROBE = st.get("probe") or PROBE
         os.remove(STATE)
     probe = probe_dir(sandbox)
     log = os.path.join(probe, "mast.runtime.log")
     if os.path.exists(log):
         print("mast.runtime.log bytes:", os.path.getsize(log))
-    if os.path.isdir(probe):
-        shutil.rmtree(probe)
+    probe_remove(probe)
     print("game stopped;", probe_name(sandbox), "deleted:", not os.path.isdir(probe))
     saves_guard_end(lecture)
 
@@ -414,6 +431,8 @@ def main():
     ap.add_argument("op")
     ap.add_argument("args", nargs="*")
     ap.add_argument("--state", default="final")
+    ap.add_argument("--as-mission", action="store_true",
+                    help="name the probe after the lecture's MISSION (for filming: the end screen)")
     ap.add_argument("--patch", action="append", default=[])
     ap.add_argument("--patch-amd", action="append", default=[],
                     help="the same, for the fact sheet; like --patch, a PROBE-ONLY change, and it is printed")
@@ -428,6 +447,12 @@ def main():
     ap.add_argument("--only-keeps", action="store_true",
                     help="replay: only copy the screenshots already taken into stills")
     a = ap.parse_args()
+    if a.as_mission or os.environ.get("PIC_AS_MISSION"):
+        # THE STUDENT'S NAME ON THE PROBE: the end screen names the mission folder, and on
+        # film it must read what the student's reads (the storyboard's MISSION).
+        global PROBE
+        _, _, sb = board.load(a.lecture)
+        PROBE = getattr(sb, "MISSION", None) or PROBE
     out = c.out_dir(a.lecture)
     shots = os.path.join(out, "game")
     os.makedirs(shots, exist_ok=True)
