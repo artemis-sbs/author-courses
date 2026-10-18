@@ -41,7 +41,8 @@ the ship at the door (`_scout.pos = Vec3(0, 0, 18700)` after spawn_players). Mar
   9. Wait fourteen seconds. Helm's quest list: game_c8_quests (Cut Through done, The Second
      Marker running).
  10. Nav: The Niche. On arrival, Comms: game_c8_comms_second (A second recording, the
-     answer Open the niche.). Choose it: game_c8_bowl (the bowl in the niche, the suit beside).
+     answer Open the niche.). Choose it. (No "bowl beside the suit" frame: the suit stands at
+     the niche, so the bowl is in reach the moment it appears - engine-seen 2026-10-18.)
  11. The suit takes the bowl: game_c8_pickup (the line 'Pickup: The Stone Bowl').
  12. Crew app: game_c8_crew (Come aboard). Press it, then Helm flies to within 1000 of DS 1:
      game_c8_win (the end screen with the Win: sentence). Never caption a face.
@@ -232,7 +233,6 @@ STILLS = {
     "game_c8_beam": ("game", "The Fire app after the row is selected and pressed again: the banner 'BEAM - The Fallen Slab, 12s'"),
     "game_c8_quests": ("game", "Helm's quest list fourteen seconds later: Cut Through done, The Second Marker running"),
     "game_c8_comms_second": ("game", "Comms, the call 'A second recording' with the answer Open the niche."),
-    "game_c8_bowl": ("game", "The suit at The Niche after Open the niche.: the stone bowl in the recess, the suit beside it"),
     "game_c8_pickup": ("game", "The suit has taken the bowl: the line 'Pickup: The Stone Bowl' and Carry It Home appearing"),
     "game_c8_crew": ("game", "The suit's Crew app: the button Come aboard"),
     "game_c8_win": ("game", "The end screen at DS 1: the Win: sentence 'The Hollow is surveyed, and what Rook put back is aboard.'"),
@@ -353,8 +353,7 @@ BOARD = {
         {"from": 12, "still": "game_c8_beam"},
         {"from": 13, "still": "game_c8_quests"},
         {"from": 14, "still": "game_c8_comms_second"},
-        {"from": 15, "still": "game_c8_bowl"},
-        {"from": 16, "still": "game_c8_pickup"},
+        {"from": 15, "still": "game_c8_pickup"},
         {"from": 16.55, "still": "game_c8_crew"},
         {"from": 17, "still": "game_c8_win"},
     ]},

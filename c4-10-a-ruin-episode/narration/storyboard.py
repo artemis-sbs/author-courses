@@ -53,7 +53,8 @@ order, with the row of the walk table:
  12. Row 12: Nav, The Gallery Door. Fire: game_c10_beam (the banner 'BEAM - The Fallen
      Slab, 12s'). Fourteen seconds later the slab is open.
  13. Row 13: Nav, The Niche. Comms: game_c10_comms_second ('A second recording', the answer
-     Open the niche.). Choose it: game_c10_bowl (the bowl in the niche, the suit beside it).
+     Open the niche.). Choose it. (No "bowl beside the suit" frame: the suit stands at the
+     niche, so the bowl is taken the moment it appears - engine-seen 2026-10-18.)
  14. Row 14: the suit takes the bowl: game_c10_pickup ('Pickup: The Stone Bowl').
  15. Row 15: Crew, Come aboard: game_c10_crew. Fly to within 1000 of DS 1: game_c10_win (the
      end screen with the Win: sentence).
@@ -217,7 +218,6 @@ STILLS = {
     "game_c10_done41": ("game", "The strip line 'Quest complete: Forty-One' after Log it"),
     "game_c10_beam": ("game", "The suit's Fire app at The Gallery Door: the banner 'BEAM - The Fallen Slab, 12s'"),
     "game_c10_comms_second": ("game", "Comms, the call 'A second recording' with the answer Open the niche."),
-    "game_c10_bowl": ("game", "The suit at The Niche after Open the niche.: the stone bowl in the recess, the suit beside it"),
     "game_c10_pickup": ("game", "The suit has taken the bowl: the line 'Pickup: The Stone Bowl' and Carry It Home appearing"),
     "game_c10_crew": ("game", "The suit's Crew app: the button Come aboard"),
     "game_c10_win": ("game", "The end screen at DS 1: the Win: sentence 'The Hollow is surveyed, and what Rook put back is aboard.'"),
@@ -308,7 +308,7 @@ BOARD = {
     "s08_the_bowl_and_home": {"step": 5, "beats": [
         {"from": 0, "still": "game_c10_beam"},
         {"from": 1, "still": "game_c10_comms_second"},
-        {"from": 2, "still": "game_c10_bowl"},
+        {"from": 2, "still": "game_c10_pickup"},
         {"from": 3, "still": "game_c10_crew"},
         {"from": 4, "still": "game_c10_win"},
         {"from": 5, "still": "card_walk", "marks": [("part", "r15")]},

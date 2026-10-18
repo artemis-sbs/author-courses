@@ -124,7 +124,14 @@ def probe_remove(probe):
     if os.path.basename(probe) != "_pic_probe" and \
             not os.path.exists(os.path.join(probe, PROBE_MARK)):
         sys.exit(f"{probe} is not a probe this tool made (no {PROBE_MARK}) - not deleting it")
-    shutil.rmtree(probe)
+    try:
+        shutil.rmtree(probe)
+    except OSError:
+        # A running game holds a log open, and rmtree has already taken the mark with
+        # the files it got to - put it back, or the next run refuses its own probe.
+        if os.path.isdir(probe):
+            open(os.path.join(probe, PROBE_MARK), "w").close()
+        raise
 
 
 def wants_sandbox(lecture, asked, state="final"):
