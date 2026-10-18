@@ -63,10 +63,11 @@
 > the autopilot, the suit stopped in The Nave at 3014, -46, 21163, at the mouth of the
 > passage to The Vault, about 120 seconds in; the library sent `eva_stuck` and cleared the
 > route, and nothing on any screen says so. Picking The Altar again finished the leg.
-> FIXED in the same fix batch (sbs_utils): the sideways drift was the same angle on every
-> re-plan, so the suit hit the same wall six times; a re-planned route now flies the
-> centerline, and the same leg arrives at The Altar on one pick. No row on the page. If a
-> suit ever stops on camera anyway, pick the place again and keep rolling. Probe: `_sandbox\rm_c4b\c4_08`.
+> FIXED 2026-10-18 (sbs_utils): the cause was the autopilot counting the time a suit
+> spends turning as stall time - the engine's suit turns slowly, so after a turn it was
+> "stuck" within seconds. Measured with a once-a-second trace in the engine; the leg now
+> arrives 3 of 3. No row on the page. If a suit ever stops on camera anyway, pick the
+> place again and keep rolling. Probe: `_sandbox\rm_c4b\c4_08`.
 
 > **Seen in the real game's SERVER, with no console (2026-10-09, another session)**, on
 > Legendary Missions' own test map: the offer at the door, the party named for the ruin,
