@@ -8,7 +8,9 @@ import json, os, sys
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 T = int(os.environ["YT_TAB"])  # the Claude-in-Chrome tab id of the Studio tab
 ids = {k: v.strip() for k, v in (l.split(None, 1) for l in open("yt_ids.txt", encoding="utf-8").read().split("\n") if l.strip())}
-SRT = os.path.join(os.getcwd(), "srt")
+# The .srt files to upload. The browser only takes files the session can share (its
+# scratchpad), not R:/cosmos/upload - so copy them there and point YT_SRT at the folder.
+SRT = os.environ.get("YT_SRT") or os.path.join(os.getcwd(), "srt")
 srt = {}
 for f in os.listdir(SRT):
     c, l = f.split(" - ")[0].replace("Class ", "").split(" Lecture ")

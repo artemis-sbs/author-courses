@@ -11,8 +11,8 @@ Two quests wait for them. One is finished when the canisters are aboard. The oth
 finished when the bowl leaves its place, and you never write the line that says so. The
 game says it for you.
 
-*[Screenshot to add: Helm's map with The Cache on it, and the quest list showing "What the
-Survey Left" and "The Bowl".]*
+![The canisters of The Cache, and the quest list with What the Survey Left and The Bowl](images/the-cache.jpg)
+*The Cache's canisters from the ship, and the quest list: What the Survey Left and The Bowl.*
 
 You will add to `mission.amd`. You will not touch `story.mast`.
 

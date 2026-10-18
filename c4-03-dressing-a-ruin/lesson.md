@@ -7,7 +7,8 @@ it, a hoop of metal across the first passage, and three named places. The ruin's
 the map sits at the way in. The other two places turn up on the map as the ship reaches
 them.
 
-*[Screenshot to add: the ship in The Nave, looking back at The Ring, with the haze on.]*
+![The Ring set across the first passage, with rock around it](images/the-ring.jpg)
+*The Ring across the first passage: one Prop line and one Dress line.*
 
 You will add lines to the Relics section of `mission.amd`. You will not touch
 `story.mast`.

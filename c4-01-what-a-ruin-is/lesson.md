@@ -8,8 +8,8 @@ You will have flown through a ruin borrowed from a shipped campaign, read the th
 that built it, and read the rest of its file: the parts this class teaches you to write.
 You will also have the mission the rest of this class is built in.
 
-*[Screenshot to add: Helm's map with The Sink on it, and the purple haze on the main
-screen beside it.]*
+![Helm's map with The Sink past the hulk, and the purple haze inside its way in](images/the-sink.jpg)
+*Helm's map with The Sink on it, and the main screen just inside the inlet: purple haze and rock.*
 
 You paste one block today, and you delete it again at the end. You write nothing of your
 own until Lecture 2.

@@ -13,8 +13,8 @@ of your story is finished. Comms opens the niche. The crew member brings out the
 the last word of Lecture 7 is said by the game, and no longer by Comms. Then everybody comes
 aboard, the ship flies home, and the game is won.
 
-*[Screenshot to add: a crew member's console in a suit inside The Nave, with the list of
-places beside the view.]*
+![A crew member's console in a suit inside the ruin, with Nav's list of places](images/a-suit-in-the-ruin.jpg)
+*A crew member out in a suit, in The Vault: the view on the left, Nav's list of places on the right.*
 
 You will add to `mission.amd`. You will not touch `story.mast`. Going outside needs no
 line of yours at all: the game offers it at any ruin you build.

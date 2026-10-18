@@ -11,7 +11,8 @@ The Altar says something, twice over.
   stands in front of it. You write those today. Nobody leaves the ship until Lecture 8, so
   you will not hear them today.
 
-*[Screenshot to add: the Comms console with "Surveyor Rook - A recording at the altar" open.]*
+![The Comms console with Surveyor Rook's recording at the altar open](images/rook-at-the-altar.jpg)
+*Comms with "Surveyor Rook - A recording at the altar" open: the take, Back, and the two answers.*
 
 You will add to `mission.amd`. You will not touch `story.mast`.
 

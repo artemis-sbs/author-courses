@@ -6,7 +6,8 @@ An ancient ruin of your own, standing in space past the drifting hulk. It has th
 and two passages. You can look at its plan in the editor, find it on the map by name, and
 fly to it.
 
-*[Screenshot to add: the Relic Plan showing The Mouth, The Nave and The Vault.]*
+![The ship in the middle of The Mouth, rock all round](images/the-mouth.jpg)
+*The Mouth from inside: three rooms and two passages are all it takes to make a place to fly.*
 
 You will write one section in `mission.amd`. You will not touch `story.mast`.
 

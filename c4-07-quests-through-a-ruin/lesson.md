@@ -11,8 +11,8 @@ the job not done, and the game is lost.
 
 Science has something to read at the altar and at the niche.
 
-*[Screenshot to add: the quest list showing "The Hollow Survey" with its steps under it,
-and Helm's map with The Altar on it.]*
+![The quest list with The Hollow Survey's steps, and Helm in The Vault](images/the-hollow-survey.jpg)
+*The Hollow Survey with its steps under it, and Helm in The Vault, at The Altar.*
 
 You will add to `mission.amd`. You will not touch `story.mast`.
 

@@ -12,8 +12,8 @@ The Hollow keeps one secret for a crew that listens.
   the ship for ten seconds: first the altar, then the cairn, with a line of words under
   each.
 
-*[Screenshot to add: the main screen during the cutscene, with the words "The Cairn -
-Forty-one stones. One for each day." at the bottom.]*
+![The main screen during the cutscene, The Cairn, Forty-one stones. One for each day.](images/the-cairn-cutscene.jpg)
+*The main screen during the cutscene: "The Cairn - Forty-one stones. One for each day."*
 
 You will add to `mission.amd`. For the cutscene you will also paste one card into
 `story.mast`: one line and one block.

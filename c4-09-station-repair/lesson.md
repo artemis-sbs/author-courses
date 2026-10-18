@@ -12,7 +12,8 @@ quest is finished and the side is paid.
 There is no ruin in any of that. It is the same suit and the same tools, in open space
 beside a station.
 
-*[Screenshot to add: a suit beside DS 1, with the Fire app showing "Repair: Survey Mast".]*
+![A suit beside DS 1, with the Fire app showing Repair: Survey Mast](images/repair-survey-mast.jpg)
+*A suit beside DS 1, its Fire app offering "Repair: Survey Mast".*
 
 You will add to `mission.amd`. You will not touch `story.mast`.
 

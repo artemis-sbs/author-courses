@@ -88,6 +88,28 @@ All sixteen videos are also in one [playlist](https://www.youtube.com/playlist?l
 | 15 | [Boarding an enemy ship](class-3/15-boarding-an-enemy-ship.md) | A pirate raider run down, boarded and searched, ending one of three ways |
 | 16 | [Capstone: a long boarding mission](class-3/16-a-long-boarding-mission.md) | Your own long away mission: three areas, a clock, two endings and three jobs |
 
+## Class 4 - Ancient Ruins and EVA
+
+Ten lectures. A ruin is a place in space a ship can fly inside: rooms, passages and a haze,
+older than anyone who could have built it. You build one room by room, dress it, give its
+places something to say, hide things in it, and give it a story the crew follows through it.
+Then the crew go outside in suits. You finish with one whole ruin episode of your own.
+
+All ten videos are also in one [playlist](https://www.youtube.com/playlist?list=PLa8JHjXj50bo).
+
+| # | Lecture | You leave with |
+|---|---|---|
+| 1 | [What a ruin is](class-4/01-what-a-ruin-is.md) | A ruin flown through and read: the thirty lines that built it |
+| 2 | [A ruin is a place](class-4/02-a-ruin-is-a-place.md) | A ruin of your own, three rooms and two passages, on the map by name |
+| 3 | [Dressing a ruin](class-4/03-dressing-a-ruin.md) | A cave with a built hall, a haze, a ring across the passage and named places |
+| 4 | [Places that speak](class-4/04-places-that-speak.md) | A place that says something when the ship arrives, and a recording on Comms |
+| 5 | [What is inside](class-4/05-what-is-inside.md) | Things to find in the ruin, and quests that wait for them |
+| 6 | [Clues, side stories and cutscenes](class-4/06-clues-side-stories-cutscenes.md) | A secret for a crew that listens, a side story, and a cutscene on the main screen |
+| 7 | [Quests through a ruin](class-4/07-quests-through-a-ruin.md) | One quest whose steps lead the crew through the ruin |
+| 8 | [EVA](class-4/08-eva.md) | The crew out in suits, flying the ruin and cutting a way through |
+| 9 | [EVA elsewhere: a repair outside a station](class-4/09-station-repair.md) | A job outside DS 1: suits, a mast, and a repair |
+| 10 | [Capstone: a ruin episode](class-4/10-a-ruin-episode.md) | One ruin episode of your own, from the first line to the last |
+
 ## What you need
 
 - Artemis Cosmos 1.4.0, from Steam or itch.io.
@@ -96,5 +118,5 @@ All sixteen videos are also in one [playlist](https://www.youtube.com/playlist?l
 
 ## The classes to come
 
-Class 4 builds ancient ruins. Classes 5 and 6 build a universe and run a campaign in it. Drafts of some of their lectures are in the
+Classes 5 and 6 build a universe and run a campaign in it. Drafts of some of their lectures are in the
 [repository](https://github.com/artemis-sbs/author-courses); they are not published here yet.

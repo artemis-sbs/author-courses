@@ -13,8 +13,8 @@ Every part of that is something you have already written. Today you join the par
 one clue chain for the people who go inside, and learn to check an episode from end to
 end before a crew ever sees it.
 
-*[Screenshot to add: the quest list at the end of the episode, with every step of The
-Hollow Survey done.]*
+![The end screen: The Hollow is surveyed, and what Rook put back is aboard.](images/the-end-screen.jpg)
+*The end of the episode: "The Hollow is surveyed, and what Rook put back is aboard."*
 
 You will add to `mission.amd`. You will not touch `story.mast`.
 
