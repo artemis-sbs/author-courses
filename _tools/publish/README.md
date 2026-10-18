@@ -19,6 +19,8 @@ Rules learned on Class 3: two videos per batch; subtitles through the editor; ch
 stills (`../page_stills_c3.py` is the template), and a push.
 
 For a new class: `python yt_meta.py 4` adds its lectures to `yt_meta.json` (title from
-each lesson's heading, page link from its folder), the drafts are uploaded, their ids go
+each lesson's heading, page link from its folder), each `R:/cosmos/courses/cN_NN/draft.mp4`
+and `draft.srt` is copied to `R:/cosmos/upload/` as `Class N Lecture NN - <Title>.mp4/.srt`
+(a `:` in the title becomes `,` - Windows will not take a colon), the drafts are uploaded, their ids go
 into `yt_ids.txt` as `4.1 <id>`, and `yt_c3.py 4.1 4.2` prints the batches - it reads any
 class, despite its name.
