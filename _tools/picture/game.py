@@ -112,12 +112,13 @@ def probe_dir(sandbox):
     return os.path.join(MISSIONS, *probe_name(sandbox).split("/"))
 
 
-def wants_sandbox(lecture, asked):
-    """--sandbox / --no-sandbox, else on for a template that writes saves."""
+def wants_sandbox(lecture, asked, state="final"):
+    """--sandbox / --no-sandbox, else on for a template that writes saves. Judged on the
+    state being run: not every lecture has a "final" (C4-01's last state is "pasted")."""
     if asked is not None:
         return asked
     _, _, sb = board.load(lecture)
-    return template_of(sb, states.files_of(sb, "final")) in SANDBOX_TEMPLATES
+    return template_of(sb, states.files_of(sb, state)) in SANDBOX_TEMPLATES
 
 
 # --- the player's saves --------------------------------------------------------------------
@@ -432,14 +433,14 @@ def main():
     os.makedirs(shots, exist_ok=True)
     rec = not a.no_record
     if a.op == "start":
-        sandbox = wants_sandbox(a.lecture, a.sandbox)
+        sandbox = wants_sandbox(a.lecture, a.sandbox, a.state)
         step = {"op": "start", "state": a.state, "patch": a.patch, "patch_amd": a.patch_amd,
                 "consoles": a.consoles, "wait": a.wait, "sandbox": sandbox, "seed": a.seed}
         run_step(a.lecture, step, shots, out)
         if rec:                                       # after: the wait is not a gap
             record(a.lecture, step)
     elif a.op == "build":
-        build(a.lecture, a.state, a.patch, a.patch_amd, wants_sandbox(a.lecture, a.sandbox))
+        build(a.lecture, a.state, a.patch, a.patch_amd, wants_sandbox(a.lecture, a.sandbox, a.state))
     elif a.op == "list":
         print(eng("-Action", "list"))
     elif a.op in ("shot", "click", "wait", "keep", "stop"):
