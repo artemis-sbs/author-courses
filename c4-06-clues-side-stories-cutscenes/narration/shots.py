@@ -93,7 +93,7 @@ SHOTS = [
             ('He said a side room, so there has to be one.', 0, 143),
             ("It's a chamber, six hundred, with a passage to the Nave,", 170, 314),
             ("and that's Lecture 2.", 327, 380),
-            ("In the middle of it there's a place, with a cone standing on it,", 407, 589),
+            ("In the middle of it there's a place, with a rock standing on it,", 407, 589),
             ("and that's Lecture 3.", 603, 655),
             ('Now the answer shows it, with reveal cairn.', 709, 813),
             ("That's the key of the place, and not crypt.", 840, 958),

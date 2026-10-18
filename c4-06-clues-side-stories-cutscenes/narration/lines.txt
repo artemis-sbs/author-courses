@@ -48,7 +48,7 @@ s04_the_clue_opens_an_answer_11	so this crew still hears the main recording.
 s05_a_side_room_and_the_place_in_0	He said a side room, so there has to be one.
 s05_a_side_room_and_the_place_in_1	It's a chamber, six hundred, with a passage to the Nave,
 s05_a_side_room_and_the_place_in_2	and that's Lecture 2.
-s05_a_side_room_and_the_place_in_3	In the middle of it there's a place, with a cone standing on it,
+s05_a_side_room_and_the_place_in_3	In the middle of it there's a place, with a rock standing on it,
 s05_a_side_room_and_the_place_in_4	and that's Lecture 3.
 s05_a_side_room_and_the_place_in_5	Now the answer shows it, with reveal cairn.
 s05_a_side_room_and_the_place_in_6	That's the key of the place, and not crypt.

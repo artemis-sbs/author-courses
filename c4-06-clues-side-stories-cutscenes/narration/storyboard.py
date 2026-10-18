@@ -49,7 +49,7 @@ _PLATE = ("### [The Ring Plate](plate)\n---\nRelic: hollow\nPoint: 1400, 0, 0\nR
           "A metal plate bolted to the ring. The first survey left it.\n")
 _CRYPT = ("### [The Crypt](crypt)\n---\nRelic: hollow\nChamber: 5200, 0, 0, 600\nPassage to: nave 250\n---\n"
           "A small side room off the Nave. The first survey's notes do not mention it.\n")
-_CAIRN = ("### [The Cairn](cairn)\n---\nRelic: hollow\nPoint: 5200, 0, 0\nRoles: cairn\nHidden: yes\nDress: generic-cone 2\n---\n"
+_CAIRN = ("### [The Cairn](cairn)\n---\nRelic: hollow\nPoint: 5200, 0, 0\nRoles: cairn\nHidden: yes\nDress: plain_asteroid_9 0.4\n---\n"
           "A pile of stones in the middle of the Crypt.\n")
 _MZ = ("### [Marker Zero](marker_zero)\n---\nBeat\nStarts when: reach plate 500\nAction:\n  - rook hails rook_plate\n---\n"
        "The ship flies through the ring, and the plate on it starts to play.\n")

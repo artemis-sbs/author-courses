@@ -200,7 +200,7 @@ Relic: hollow
 Point: 5200, 0, 0
 Roles: cairn
 Hidden: yes
-Dress: generic-cone 2
+Dress: plain_asteroid_9 0.4
 ---
 A pile of stones in the middle of the Crypt.
 ```
@@ -529,7 +529,7 @@ Relic: hollow
 Point: 5200, 0, 0
 Roles: cairn
 Hidden: yes
-Dress: generic-cone 2
+Dress: plain_asteroid_9 0.4
 ---
 A pile of stones in the middle of the Crypt.
 ```

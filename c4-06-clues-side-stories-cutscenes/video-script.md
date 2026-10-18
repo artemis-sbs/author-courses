@@ -199,7 +199,7 @@ Mark the side room. Highlight `cairn` in the heading and in the answer.
 
 **Say:** "He said a side room, so there has to be one. || It's a chamber, six hundred,
 with a passage to the Nave, | and that's Lecture 2. || In the middle of it there's a
-place, with a cone standing on it, | and that's Lecture 3. ||| Now the answer shows it,
+place, with a rock standing on it, | and that's Lecture 3. ||| Now the answer shows it,
 with reveal cairn. || That's the key of the place, and not crypt. | A room isn't a place,
 and lint won't tell you. ||"
 

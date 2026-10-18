@@ -135,8 +135,8 @@ Whoever kept the count kept it for a long time, and then stopped.
 _SURVEY_HEAD = "### [The Hollow Survey](survey)"
 _ALTAR_OLD = "- [Read the marks on the rim](altar_marks)\n"
 _ALTAR_NEW = "- [Read the marks on the rim](altar_marks) ; learn tally, accepts forty_one\n"
-_CAIRN_OLD = "Dress: generic-cone 2\n---"
-_CAIRN_NEW = ("Dress: generic-cone 2\nScene: cairn_look\n"
+_CAIRN_OLD = "Dress: plain_asteroid_9 0.4\n---"
+_CAIRN_NEW = ("Dress: plain_asteroid_9 0.4\nScene: cairn_look\n"
               "Scan: A cairn of flat stones, laid by hand. Somebody is under it.\n---")
 _BACK = "- [Step back]()\n"
 _SCENES = """
