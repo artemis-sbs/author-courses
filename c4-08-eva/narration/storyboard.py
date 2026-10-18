@@ -19,9 +19,10 @@ GAME STILLS. NOT YET TAKEN: no Class 4 game still exists. They are taken in ONE 
 sitting in the real engine, from the finished mission (this lecture has never been filmed;
 nobody has flown a suit, so scout it first and fix the page where the screen differs):
 `python game.py c4-08-eva start --state final --consoles server,helm,comms`
-Two people, or one at two consoles: Helm goes outside, Comms answers. If a console closes
-when the suit appears, add `eva_set_suit_hull("tsn_shuttle")` (the page's box) and say so.
-No probe patch. Marks are left off until the stills exist. Press order:
+Two people, or one at two consoles: Helm goes outside, Comms answers. SUIT UP closed the
+client until 2026-10-17 (assigned a ship in its spawn frame); the library now waits ~2 s,
+so take the suit stills a few seconds after the press. One probe patch for scouting puts
+the ship at the door (`_scout.pos = Vec3(0, 0, 18700)` after spawn_players). Marks are left off until the stills exist. Press order:
   1. Helm: fly to the door of The Hollow (Find the Way In completes), stop the ship:
      game_c8_door (the ship at the mouth).
   2. Helm: the handheld icon, the Boarding Party app: game_c8_party (it names The Hollow,
@@ -244,7 +245,7 @@ STILLS = {
         "A suit flies to places, and to nothing else. It cannot be steered by hand.",
         "A Hidden: yes place is not on the list until somebody has been within 1200 of it, or an answer has revealed it.",
         "The tools reach 600. A thing further off than that is not offered."]}),
-    "card_icons": ("card", "table", {"heading": "Step 3 - The slab is a step of the story", "nth": 2, "kicker": "A picture for a bullet"}),
+    "card_icons": ("card", "table", {"heading": "Step 3 - The slab is a step of the story", "nth": 1, "kicker": "A picture for a bullet"}),
     "card_endrun": ("card", "table", {"heading": "Step 4 - The bowl, by hand", "kicker": "How the end of the story runs now"}),
     "card_cannot": ("card", "table", {"heading": "Step 7 - Check it", "nth": 3, "kicker": "Lint says clean, and", "rows": (1, 2)}),
     "card_exercise": ("card", "list", {"heading": "Exercise", "kicker": "Your turn"}),

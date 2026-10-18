@@ -32,13 +32,21 @@ def _canvas(color=None):
 # ------------------------------------------------------------- lesson.md -----
 def _section(lesson_text, heading):
     """The lines under a '## heading' (or ###), up to the next heading of the same depth."""
+    # A `#` line inside a ``` fence is the student's FILE (an AMD heading, a MAST comment),
+    # not the page's own heading: it neither starts nor ends a section.
     lines = lesson_text.replace("\r\n", "\n").split("\n")
+    fenced = False
     for i, ln in enumerate(lines):
-        m = re.match(r"^(#+)\s+(.*?)\s*$", ln)
+        if ln.lstrip().startswith("```"):
+            fenced = not fenced
+            continue
+        m = None if fenced else re.match(r"^(#+)\s+(.*?)\s*$", ln)
         if m and m.group(2) == heading:
-            depth, out = len(m.group(1)), []
+            depth, out, inner = len(m.group(1)), [], False
             for nxt in lines[i + 1:]:
-                m2 = re.match(r"^(#+)\s", nxt)
+                if nxt.lstrip().startswith("```"):
+                    inner = not inner
+                m2 = None if inner else re.match(r"^(#+)\s", nxt)
                 if m2 and len(m2.group(1)) <= depth:
                     break
                 out.append(nxt)

@@ -168,7 +168,7 @@ BOARD = {
         {"from": 1, "still": "card_exercise", "marks": [("part", "item1")]},
         {"from": 2, "still": "card_exercise", "marks": [("part", "item2")]},
         {"from": 3, "still": "card_exercise", "marks": [("part", "item3")]},
-        {"from": 5, "still": "card_exercise", "marks": [("part", "item4")]},
+        {"from": 5, "still": "card_exercise", "marks": []},   # the paper questions: not list items
         {"from": 7, "still": "card_next"},
     ]},
 }

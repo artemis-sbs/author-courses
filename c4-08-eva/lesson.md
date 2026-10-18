@@ -597,19 +597,17 @@ they are on the screen, nobody has seen. If your screen differs, the screen is r
 | The altar's scene does not open for the suit | The same causes as in Lecture 4: the key after `Scene:`, or the scene itself. Lint names both |
 | The game ends in a loss while the crew is still inside | The clock. Make `Fails when:` longer |
 
-**If a console closes when somebody suits up.** The suit is drawn as an exosuit that is
-new in this version of the game. A console that meets it for the first time in the middle
-of a game can close. It is a fault in the game, it has been reported, and it is not your
-file. Until it is fixed you can have suits drawn as a small stock shuttle. Open
-`story.mast`, find the line `shared MISSION_DOC = None` near the top, and add this on a
-line of its own below it:
+**If a console closes when somebody suits up.** Your libraries are older than this
+lecture. They handed the console its suit in the same moment the suit was made, and the
+game closes a console given a ship it has not been sent yet. It is not your file. Get
+today's libraries:
 
 ```
-eva_set_suit_hull("tsn_shuttle")
+sbs fetch MyRuin --update-libs
 ```
 
-Everything else on this page works the same. Take the line out again when the game is
-fixed. It is the only line of `story.mast` in this lecture.
+Now SUIT UP takes about two seconds before the console becomes the suit, and the console
+stays open.
 
 ## Exercise
 
