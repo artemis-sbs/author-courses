@@ -606,7 +606,7 @@ today's libraries:
 sbs fetch MyRuin --update-libs
 ```
 
-Now SUIT UP takes about two seconds before the console becomes the suit, and the console
+Now SUIT UP takes about five seconds before the console becomes the suit, and the console
 stays open.
 
 ## Exercise

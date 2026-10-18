@@ -20,7 +20,7 @@ sitting in the real engine, from the finished mission (this lecture has never be
 nobody has flown a suit, so scout it first and fix the page where the screen differs):
 `python game.py c4-08-eva start --state final --consoles server,helm,comms`
 Two people, or one at two consoles: Helm goes outside, Comms answers. SUIT UP closed the
-client until 2026-10-17 (assigned a ship in its spawn frame); the library now waits ~2 s,
+client until 2026-10-17 (assigned a ship in its spawn frame); the library now waits ~5 s,
 so take the suit stills a few seconds after the press. One probe patch for scouting puts
 the ship at the door (`_scout.pos = Vec3(0, 0, 18700)` after spawn_players). Marks are left off until the stills exist. Press order:
   1. Helm: fly to the door of The Hollow (Find the Way In completes), stop the ship:

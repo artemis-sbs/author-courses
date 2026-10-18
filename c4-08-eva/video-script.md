@@ -21,7 +21,7 @@
 >   lines).
 > - **SUIT UP USED TO CLOSE THE CLIENT** (scouting, 2026-10-17, 3 of 3). The cause was not
 >   the exosuit: the library handed the console a ship in the frame it was spawned. Fixed in
->   sbs_utils (`EVA_ASSIGN_DELAY`, the console becomes the suit about 2 s after the press;
+>   sbs_utils (`EVA_ASSIGN_DELAY`, the console becomes the suit about 5 s after the press;
 >   measured 3 of 3 alive). Record on libraries from 2026-10-17 on. The page's box now says
 >   to update the libraries, not to change the hull.
 > - **Scene 9 ends a game.** A recording take adds a line to the game's own
@@ -125,7 +125,7 @@ page.
 10. A ship's shot at the slab opens it, sends `slab_opened` and finishes Cut Through. (Mock,
     by the `destroyed` event. Whether the ship's weapons can target the slab in the engine
     is not known.)
-11. SUIT UP: the console becomes the suit about two seconds after the press, and stays
+11. SUIT UP: the console becomes the suit about five seconds after the press, and stays
     open. (Engine, 3 of 3, scripted press.)
 12. Every row of the tables in Step 7, the five "not mistakes" and the note about The
     Niche in the Fire app: lint for all of them, and the mock for what the game does.
