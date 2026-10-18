@@ -1,383 +1,383 @@
 1
-00:00:00,000 --> 00:00:03,478
+00:00:00,000 --> 00:00:02,585
 Last time the crew went into a ruin.
 
 2
-00:00:04,378 --> 00:00:06,987
+00:00:03,485 --> 00:00:05,615
 Today there's no ruin at all.
 
 3
-00:00:08,787 --> 00:00:12,265
+00:00:07,415 --> 00:00:09,495
 It's the same suit, and the same tools,
 
 4
-00:00:12,715 --> 00:00:15,759
+00:00:09,945 --> 00:00:12,721
 outside a station, on a repair job.
 
 5
-00:00:16,659 --> 00:00:20,137
+00:00:13,621 --> 00:00:15,378
 A crew member comes out of the airlock,
 
 6
-00:00:20,587 --> 00:00:24,065
+00:00:15,828 --> 00:00:18,270
 flies round the hull, and welds a mast.
 
 7
-00:00:25,865 --> 00:00:29,778
+00:00:20,069 --> 00:00:22,565
 And it's one more record than you already know.
 
 8
-00:00:30,978 --> 00:00:38,370
+00:00:23,765 --> 00:00:28,340
 A crew member can go outside wherever the game has a space to fly a suit in.
 
 9
-00:00:39,270 --> 00:00:41,878
+00:00:29,240 --> 00:00:30,750
 That's what a ruin's records are:
 
 10
-00:00:42,328 --> 00:00:45,807
+00:00:31,200 --> 00:00:34,056
 rooms, a way in, and places to go.
 
 11
-00:00:47,607 --> 00:00:51,085
+00:00:35,856 --> 00:00:38,360
 So a worksite is written as a ruin,
 
 12
-00:00:51,535 --> 00:00:55,448
+00:00:38,810 --> 00:00:41,857
 with everything that looks like a ruin switched off.
 
 13
-00:00:56,348 --> 00:01:00,696
+00:00:42,757 --> 00:00:46,430
 It has no walls, no drifting rock, and no cloud.
 
 14
-00:01:01,596 --> 00:01:03,770
+00:00:47,330 --> 00:00:48,512
 One room to work in,
 
 15
-00:01:04,220 --> 00:01:07,698
+00:00:48,962 --> 00:00:51,824
 and one solid lump where the station is.
 
 16
-00:01:09,498 --> 00:01:12,541
+00:00:53,624 --> 00:00:57,631
 And there's one new record, the job.
 
 17
-00:01:13,441 --> 00:01:16,920
+00:00:58,531 --> 00:01:00,707
 It's written like the barrier from last time,
 
 18
-00:01:17,370 --> 00:01:19,978
+00:01:01,157 --> 00:01:02,977
 but it's never in anybody's way.
 
 19
-00:01:21,178 --> 00:01:22,917
+00:01:04,177 --> 00:01:05,818
 Here are four records.
 
 20
-00:01:23,817 --> 00:01:26,426
+00:01:06,718 --> 00:01:08,410
 The first is the worksite itself.
 
 21
-00:01:26,876 --> 00:01:32,528
+00:01:08,860 --> 00:01:12,327
 It has no Relic line, so it's a second ruin, beside the Hollow.
 
 22
-00:01:33,428 --> 00:01:36,037
+00:01:13,227 --> 00:01:15,517
 It sits at zero, zero, zero,
 
 23
-00:01:36,487 --> 00:01:39,965
+00:01:15,967 --> 00:01:18,096
 which is where the template puts the station.
 
 24
-00:01:40,865 --> 00:01:43,909
+00:01:18,996 --> 00:01:22,681
 It says walls, none, and debris, zero,
 
 25
-00:01:44,359 --> 00:01:46,967
+00:01:23,131 --> 00:01:24,762
 and it has no Atmosphere line.
 
 26
-00:01:48,767 --> 00:01:53,115
+00:01:26,562 --> 00:01:29,582
 Then one round room, fifteen hundred across from the middle.
 
 27
-00:01:54,015 --> 00:01:55,754
+00:01:30,482 --> 00:01:31,771
 Then comes a solid,
 
 28
-00:01:56,204 --> 00:01:59,683
+00:01:32,221 --> 00:01:34,646
 which takes the middle five hundred back out,
 
 29
-00:02:00,133 --> 00:02:04,915
+00:01:35,096 --> 00:01:37,792
 so a suit flies round the station and not through it.
 
 30
-00:02:06,715 --> 00:02:08,454
+00:01:39,592 --> 00:01:41,051
 And last the airlock.
 
 31
-00:02:09,354 --> 00:02:11,528
+00:01:41,951 --> 00:01:43,684
 It wears the role entrance,
 
 32
-00:02:11,978 --> 00:02:14,587
+00:01:44,134 --> 00:01:45,651
 so it's where the suit appears,
 
 33
-00:02:15,037 --> 00:02:18,080
+00:01:46,101 --> 00:01:48,784
 and where suit up is measured from.
 
 34
-00:02:19,280 --> 00:02:22,759
+00:01:49,984 --> 00:01:51,964
 The rule is the one from last time.
 
 35
-00:02:23,209 --> 00:02:27,991
+00:01:52,414 --> 00:01:56,017
 The ship has to be within three thousand of the entrance.
 
 36
-00:02:29,791 --> 00:02:33,270
+00:01:57,817 --> 00:02:00,562
 Now, a ship doesn't always start that close.
 
 37
-00:02:34,170 --> 00:02:38,083
+00:02:01,462 --> 00:02:04,363
 In my two tests it started twenty-three hundred away,
 
 38
-00:02:38,533 --> 00:02:40,272
+00:02:04,813 --> 00:02:06,832
 and then forty-three hundred.
 
 39
-00:02:41,172 --> 00:02:45,520
+00:02:07,732 --> 00:02:10,809
 So if the app offers nothing, fly toward the station.
 
 40
-00:02:47,320 --> 00:02:50,363
+00:02:12,609 --> 00:02:14,560
 And with two ruins in one mission,
 
 41
-00:02:50,813 --> 00:02:52,987
+00:02:15,010 --> 00:02:16,355
 the offer follows the ship.
 
 42
-00:02:53,887 --> 00:02:58,235
+00:02:17,255 --> 00:02:19,918
 It's the worksite here, and the Hollow at the Hollow.
 
 43
-00:02:59,435 --> 00:03:01,609
+00:02:21,118 --> 00:02:22,588
 Now for the job itself.
 
 44
-00:03:02,509 --> 00:03:06,857
+00:02:23,488 --> 00:02:27,011
 Repair, three numbers for where, and one for how big.
 
 45
-00:03:07,757 --> 00:03:12,539
+00:02:27,911 --> 00:02:30,765
 I've put it just outside the hull, on the airlock's side.
 
 46
-00:03:14,339 --> 00:03:16,513
+00:02:32,565 --> 00:02:34,797
 It says Clear with, beam,
 
 47
-00:03:16,963 --> 00:03:19,572
+00:02:35,247 --> 00:02:36,893
 so the crew member welds it.
 
 48
-00:03:20,472 --> 00:03:23,950
+00:02:37,793 --> 00:02:40,237
 The tools are the ones from last time:
 
 49
-00:03:24,400 --> 00:03:26,139
+00:02:40,687 --> 00:02:42,047
 the beam, the tether,
 
 50
-00:03:26,589 --> 00:03:29,198
+00:02:42,497 --> 00:02:44,647
 or a check of somebody's skill.
 
 51
-00:03:30,398 --> 00:03:34,746
+00:02:45,847 --> 00:02:48,491
 When a job is done, the game sends a word.
 
 52
-00:03:35,646 --> 00:03:39,124
+00:02:49,391 --> 00:02:52,099
 It's the job's key, and then underscore repaired.
 
 53
-00:03:40,024 --> 00:03:43,937
+00:02:52,999 --> 00:02:56,772
 So my quest says done when, signal, mast repaired.
 
 54
-00:03:45,737 --> 00:03:50,085
+00:02:58,572 --> 00:03:02,128
 That's three words now that the game sends by itself.
 
 55
-00:03:50,985 --> 00:03:52,724
+00:03:03,028 --> 00:03:04,592
 A barrier has opened,
 
 56
-00:03:53,174 --> 00:03:55,348
+00:03:05,042 --> 00:03:06,620
 a job has been repaired,
 
 57
-00:03:55,798 --> 00:03:58,841
+00:03:07,070 --> 00:03:09,200
 or a ruin's piece has been taken.
 
 58
-00:03:59,741 --> 00:04:01,480
+00:03:10,100 --> 00:03:11,918
 Lint knows all three.
 
 59
-00:04:03,280 --> 00:04:06,324
+00:03:13,718 --> 00:03:16,179
 The description borrows two things from earlier.
 
 60
-00:04:07,224 --> 00:04:12,441
+00:03:17,079 --> 00:03:21,329
 The station's lead line, so the crew knows it's DS 1 asking.
 
 61
-00:04:13,341 --> 00:04:18,559
+00:03:22,229 --> 00:03:26,100
 And a short list, with a person and a wrench for bullets,
 
 62
-00:04:19,009 --> 00:04:23,357
+00:03:26,550 --> 00:03:29,004
 so whoever reads it knows what to do, in order.
 
 63
-00:04:24,557 --> 00:04:29,339
+00:03:30,204 --> 00:03:32,767
 Now here's the reason I kept this in the same mission.
 
 64
-00:04:30,239 --> 00:04:33,717
+00:03:33,667 --> 00:03:35,818
 I have two places with the role entrance.
 
 65
-00:04:34,167 --> 00:04:35,907
+00:03:36,268 --> 00:03:38,183
 The game needs both.
 
 66
-00:04:37,707 --> 00:04:40,750
+00:03:39,983 --> 00:03:41,853
 But my story uses that word too.
 
 67
-00:04:41,650 --> 00:04:45,128
+00:03:42,753 --> 00:03:46,251
 The first step says reach entrance, one thousand.
 
 68
-00:04:46,028 --> 00:04:49,507
+00:03:47,151 --> 00:03:49,836
 And reach doesn't know which entrance I meant.
 
 69
-00:04:51,307 --> 00:04:56,524
+00:03:51,636 --> 00:03:54,402
 So a suit that steps out of the airlock at the station
 
 70
-00:04:56,974 --> 00:04:59,148
+00:03:54,852 --> 00:03:56,482
 is standing on an entrance,
 
 71
-00:04:59,598 --> 00:05:01,772
+00:03:56,932 --> 00:03:58,369
 and the step finishes there.
 
 72
-00:05:02,672 --> 00:05:07,020
+00:03:59,269 --> 00:04:02,081
 It pays, and it sends the crew to the altar,
 
 73
-00:05:07,470 --> 00:05:09,209
+00:04:02,531 --> 00:04:03,892
 before they've left home.
 
 74
-00:05:11,009 --> 00:05:12,748
+00:04:05,692 --> 00:04:07,418
 Lint can't see it.
 
 75
-00:05:13,198 --> 00:05:14,937
+00:04:07,868 --> 00:04:09,114
 Both lines are correct.
 
 76
-00:05:15,837 --> 00:05:19,315
+00:04:10,014 --> 00:04:12,062
 The cure is a role of my own.
 
 77
-00:05:20,215 --> 00:05:23,693
+00:04:12,962 --> 00:04:15,979
 I add hollow door to the Way In,
 
 78
-00:05:24,143 --> 00:05:26,752
+00:04:16,429 --> 00:04:17,861
 and the step waits for that.
 
 79
-00:05:27,952 --> 00:05:31,430
+00:04:19,061 --> 00:04:21,382
 Lint is clean, so I start the game.
 
 80
-00:05:32,330 --> 00:05:35,374
+00:04:22,282 --> 00:04:24,387
 The Boarding Party app names the worksite,
 
 81
-00:05:35,824 --> 00:05:37,563
+00:04:24,837 --> 00:04:25,994
 so I suit up.
 
 82
-00:05:39,363 --> 00:05:42,841
+00:04:27,794 --> 00:04:30,165
 There's one place on the list, the mast.
 
 83
-00:05:43,291 --> 00:05:46,770
+00:04:30,615 --> 00:04:33,591
 I pick it, and the suit flies round.
 
 84
-00:05:47,670 --> 00:05:51,148
+00:04:34,491 --> 00:04:38,562
 On Fire, the row says Repair, Survey Mast.
 
 85
-00:05:52,048 --> 00:05:54,657
+00:04:39,462 --> 00:04:41,772
 I select it, I press again,
 
 86
-00:05:55,107 --> 00:05:58,150
+00:04:42,222 --> 00:04:45,124
 and the banner says repair, twelve seconds.
 
 87
-00:05:59,950 --> 00:06:01,689
+00:04:46,924 --> 00:04:47,789
 And then it's done.
 
 88
-00:06:02,139 --> 00:06:06,487
+00:04:48,239 --> 00:04:51,157
 The quest is finished, and I never sent the word.
 
 89
-00:06:07,687 --> 00:06:09,426
+00:04:52,357 --> 00:04:53,360
 Now it's your turn.
 
 90
-00:06:10,326 --> 00:06:13,370
+00:04:54,260 --> 00:04:56,085
 Add a valve that's worked by hand,
 
 91
-00:06:13,820 --> 00:06:16,863
+00:04:56,535 --> 00:04:58,381
 and a panel that's hauled into place.
 
 92
-00:06:17,763 --> 00:06:20,807
+00:04:59,281 --> 00:05:00,691
 Write a quest for one of them.
 
 93
-00:06:22,607 --> 00:06:26,520
+00:05:02,491 --> 00:05:04,910
 Then break one line where lint can see it,
 
 94
-00:06:26,970 --> 00:06:29,143
+00:05:05,360 --> 00:05:06,735
 and one where it can't.
 
 95
-00:06:30,043 --> 00:06:32,652
+00:05:07,635 --> 00:05:09,585
 Next time is the last one:
 
 96
-00:06:33,102 --> 00:06:35,711
+00:05:10,035 --> 00:05:12,204
 the whole class, in one episode.

@@ -1,407 +1,407 @@
 1
-00:00:00,000 --> 00:00:04,783
+00:00:00,000 --> 00:00:03,888
 So far the ruin has rooms, and places, and a voice.
 
 2
-00:00:05,683 --> 00:00:08,291
+00:00:04,788 --> 00:00:06,386
 Today it has things in it.
 
 3
-00:00:09,191 --> 00:00:12,670
+00:00:07,286 --> 00:00:09,525
 There are sample canisters in the big room,
 
 4
-00:00:13,120 --> 00:00:17,902
+00:00:09,975 --> 00:00:12,685
 and a stone bowl at the back of the built one.
 
 5
-00:00:18,802 --> 00:00:23,585
+00:00:13,585 --> 00:00:17,132
 A ship that flies up to either one takes it aboard.
 
 6
-00:00:25,385 --> 00:00:27,993
+00:00:18,932 --> 00:00:20,338
 And when the bowl is taken,
 
 7
-00:00:28,443 --> 00:00:31,487
+00:00:20,788 --> 00:00:23,228
 the game itself tells the story so.
 
 8
-00:00:32,687 --> 00:00:37,470
+00:00:24,428 --> 00:00:27,226
 It takes three records to make a thing you can take.
 
 9
-00:00:38,370 --> 00:00:41,413
+00:00:28,126 --> 00:00:30,562
 The item says what the thing is.
 
 10
-00:00:41,863 --> 00:00:45,341
+00:00:31,012 --> 00:00:33,183
 A place says where one of them lies.
 
 11
-00:00:45,791 --> 00:00:50,139
+00:00:33,633 --> 00:00:36,402
 And a quest says what the story does about it.
 
 12
-00:00:51,939 --> 00:00:54,983
+00:00:38,202 --> 00:00:40,311
 A quest can wait in two ways.
 
 13
-00:00:55,883 --> 00:01:00,665
+00:00:41,211 --> 00:00:44,331
 It can wait for a kind of thing, by its key,
 
 14
-00:01:01,115 --> 00:01:03,289
+00:00:44,781 --> 00:00:46,595
 and that's for ordinary finds.
 
 15
-00:01:04,189 --> 00:01:07,233
+00:00:47,495 --> 00:00:49,409
 Or it can wait for a word,
 
 16
-00:01:07,683 --> 00:01:12,465
+00:00:49,859 --> 00:00:52,577
 and that's for the one thing the whole ruin is about.
 
 17
-00:01:13,365 --> 00:01:16,409
+00:00:53,477 --> 00:00:56,027
 The game sends that word by itself.
 
 18
-00:01:17,609 --> 00:01:21,087
+00:00:57,227 --> 00:00:59,096
 Items live in a section of their own.
 
 19
-00:01:21,987 --> 00:01:24,596
+00:00:59,996 --> 00:01:03,053
 I find the comment above Characters,
 
 20
-00:01:25,046 --> 00:01:28,524
+00:01:03,503 --> 00:01:05,278
 and I type the new section above it.
 
 21
-00:01:29,424 --> 00:01:33,772
+00:01:06,178 --> 00:01:09,475
 Two hashes for the section, and three for the item.
 
 22
-00:01:35,572 --> 00:01:37,311
+00:01:11,275 --> 00:01:12,603
 The key is canister,
 
 23
-00:01:37,761 --> 00:01:41,239
+00:01:13,053 --> 00:01:15,919
 and that's the word everything else will use.
 
 24
-00:01:42,139 --> 00:01:44,313
+00:01:16,819 --> 00:01:21,457
 Type says item, slash, quest,
 
 25
-00:01:44,763 --> 00:01:47,372
+00:01:21,907 --> 00:01:24,080
 which means the story carries it.
 
 26
-00:01:48,272 --> 00:01:51,315
+00:01:24,980 --> 00:01:26,794
 And Art is what it looks like.
 
 27
-00:01:53,115 --> 00:01:56,593
+00:01:28,594 --> 00:01:31,331
 That last line matters more than you'd think.
 
 28
-00:01:57,493 --> 00:02:01,407
+00:01:32,231 --> 00:01:34,312
 A ship takes a thing by flying into it,
 
 29
-00:02:01,857 --> 00:02:05,335
+00:01:34,762 --> 00:01:37,004
 and only some shapes can be flown into.
 
 30
-00:02:06,235 --> 00:02:09,278
+00:01:37,904 --> 00:01:39,962
 The table on the page lists them.
 
 31
-00:02:10,178 --> 00:02:13,222
+00:01:40,862 --> 00:01:43,952
 Leave the line out, or misspell it,
 
 32
-00:02:13,672 --> 00:02:18,020
+00:01:44,402 --> 00:01:46,987
 and the thing just sits there for the whole game.
 
 33
-00:02:18,920 --> 00:02:20,659
+00:01:47,887 --> 00:01:49,181
 Lint won't tell you.
 
 34
-00:02:21,859 --> 00:02:24,033
+00:01:50,381 --> 00:01:51,626
 Now a place for it.
 
 35
-00:02:24,933 --> 00:02:29,280
+00:01:52,526 --> 00:01:54,774
 This is a place like the ones from Lecture three,
 
 36
-00:02:29,730 --> 00:02:31,470
+00:01:55,224 --> 00:01:57,303
 with two new lines.
 
 37
-00:02:32,370 --> 00:02:37,152
+00:01:58,203 --> 00:02:01,892
 Item, and the item's key, means one of these lies here.
 
 38
-00:02:38,052 --> 00:02:41,096
+00:02:02,792 --> 00:02:06,231
 And Qty, three, means it's worth three.
 
 39
-00:02:42,896 --> 00:02:46,374
+00:02:08,031 --> 00:02:10,428
 The crew takes all three in one go.
 
 40
-00:02:47,274 --> 00:02:50,752
+00:02:11,328 --> 00:02:13,059
 So this is one thing to pick up,
 
 41
-00:02:51,202 --> 00:02:54,246
+00:02:13,509 --> 00:02:15,251
 and it's worth three in the hold.
 
 42
-00:02:54,696 --> 00:02:57,304
+00:02:15,701 --> 00:02:17,448
 Remember that for the next step.
 
 43
-00:02:58,504 --> 00:03:01,548
+00:02:18,648 --> 00:02:20,733
 Here's the quest that waits for them.
 
 44
-00:03:02,448 --> 00:03:06,796
+00:02:21,633 --> 00:02:25,624
 Everything in it is from Class one, except one line.
 
 45
-00:03:07,696 --> 00:03:09,435
+00:02:26,524 --> 00:02:28,557
 Done when, collect, canister.
 
 46
-00:03:09,885 --> 00:03:13,363
+00:02:29,007 --> 00:02:32,022
 The word after collect is the item's key.
 
 47
-00:03:15,163 --> 00:03:16,902
+00:02:33,822 --> 00:02:35,694
 And here's the catch.
 
 48
-00:03:17,802 --> 00:03:19,541
+00:02:36,594 --> 00:02:37,923
 The game counts pick-ups,
 
 49
-00:03:19,991 --> 00:03:23,470
+00:02:38,373 --> 00:02:40,493
 it doesn't count what a pick-up is worth.
 
 50
-00:03:24,370 --> 00:03:26,543
+00:02:41,393 --> 00:02:43,391
 My cache is one pick-up.
 
 51
-00:03:27,443 --> 00:03:30,052
+00:02:44,291 --> 00:02:46,716
 If I write collect three canister,
 
 52
-00:03:30,502 --> 00:03:33,546
+00:02:47,166 --> 00:02:49,255
 the game waits for three separate pick-ups,
 
 53
-00:03:33,996 --> 00:03:37,039
+00:02:49,705 --> 00:02:52,030
 and with one cache, it waits forever.
 
 54
-00:03:38,839 --> 00:03:41,013
+00:02:53,830 --> 00:02:55,398
 Lint says clean either way.
 
 55
-00:03:41,463 --> 00:03:44,941
+00:02:55,848 --> 00:02:58,439
 So I write collect canister, with no number.
 
 56
-00:03:46,741 --> 00:03:51,089
+00:03:00,239 --> 00:03:03,429
 The description gets a second paragraph, after a blank line.
 
 57
-00:03:51,989 --> 00:03:54,598
+00:03:04,329 --> 00:03:06,261
 The first says what to do,
 
 58
-00:03:55,048 --> 00:03:57,222
+00:03:06,711 --> 00:03:08,990
 the second says what's known.
 
 59
-00:03:58,422 --> 00:04:01,465
+00:03:10,190 --> 00:03:11,824
 Now the thing the ruin was hiding.
 
 60
-00:04:02,365 --> 00:04:04,974
+00:03:12,724 --> 00:03:14,808
 First the item, a stone bowl.
 
 61
-00:04:05,874 --> 00:04:11,091
+00:03:15,708 --> 00:03:18,578
 Then I go back to the Niche, and I change two lines.
 
 62
-00:04:12,891 --> 00:04:18,109
+00:03:20,378 --> 00:03:24,746
 On the Roles line I add a comma, and relic underscore piece.
 
 63
-00:04:19,009 --> 00:04:20,748
+00:03:25,646 --> 00:03:27,479
 That role isn't mine.
 
 64
-00:04:21,198 --> 00:04:23,372
+00:03:27,929 --> 00:03:29,697
 It's the game's own word,
 
 65
-00:04:23,822 --> 00:04:26,865
+00:03:30,147 --> 00:03:32,144
 the way entrance was in Lecture three.
 
 66
-00:04:27,765 --> 00:04:32,113
+00:03:33,044 --> 00:03:36,461
 It means the thing in this place is the piece.
 
 67
-00:04:33,913 --> 00:04:36,087
+00:03:38,261 --> 00:03:41,016
 And then Item, stone bowl.
 
 68
-00:04:36,987 --> 00:04:38,726
+00:03:41,916 --> 00:03:43,117
 It takes both lines.
 
 69
-00:04:39,176 --> 00:04:42,220
+00:03:43,567 --> 00:03:45,981
 The role alone is an empty place,
 
 70
-00:04:42,670 --> 00:04:46,148
+00:03:46,431 --> 00:03:48,657
 and the item alone is just another find.
 
 71
-00:04:47,348 --> 00:04:49,087
+00:03:49,857 --> 00:03:51,264
 And the second quest.
 
 72
-00:04:49,987 --> 00:04:52,161
+00:03:52,164 --> 00:03:55,035
 Done when, signal, hollow taken.
 
 73
-00:04:53,961 --> 00:04:57,439
+00:03:56,835 --> 00:04:00,015
 Now, nothing in my file sends that word,
 
 74
-00:04:57,889 --> 00:05:00,063
+00:04:00,465 --> 00:04:01,945
 and lint still says clean.
 
 75
-00:05:00,963 --> 00:05:03,572
+00:04:02,845 --> 00:04:04,523
 That's because the game sends it.
 
 76
-00:05:04,472 --> 00:05:08,820
+00:04:05,423 --> 00:04:08,182
 It takes the key of the ruin, which is hollow,
 
 77
-00:05:09,270 --> 00:05:11,443
+00:04:08,632 --> 00:04:10,999
 and it adds underscore taken.
 
 78
-00:05:13,243 --> 00:05:14,983
+00:04:12,799 --> 00:04:14,142
 It's the ruin's key.
 
 79
-00:05:15,433 --> 00:05:19,346
+00:04:14,592 --> 00:04:17,669
 It's not the place's, and it's not the thing's.
 
 80
-00:05:20,246 --> 00:05:24,593
+00:04:18,569 --> 00:04:21,552
 Lint will catch you if you use either of those.
 
 81
-00:05:26,393 --> 00:05:28,567
+00:04:23,352 --> 00:04:24,797
 The word is sent once.
 
 82
-00:05:29,467 --> 00:05:35,120
+00:04:25,697 --> 00:04:30,161
 So the quest has to be running before anybody can reach the bowl.
 
 83
-00:05:35,570 --> 00:05:38,613
+00:04:30,611 --> 00:04:32,771
 That's why this one starts at once.
 
 84
-00:05:39,813 --> 00:05:42,422
+00:04:33,971 --> 00:04:35,913
 I run lint, and it's clean.
 
 85
-00:05:43,322 --> 00:05:46,365
+00:04:36,813 --> 00:04:38,449
 Now I take out the Art line,
 
 86
-00:05:46,815 --> 00:05:48,989
+00:04:38,899 --> 00:04:40,238
 and lint is still clean.
 
 87
-00:05:49,889 --> 00:05:55,107
+00:04:41,138 --> 00:04:43,759
 That's the one to check by eye, so I put it back.
 
 88
-00:05:56,907 --> 00:05:59,080
+00:04:45,559 --> 00:04:46,941
 Then I start the game.
 
 89
-00:05:59,980 --> 00:06:02,589
+00:04:47,841 --> 00:04:49,705
 Both quests are in the list.
 
 90
-00:06:03,489 --> 00:06:07,837
+00:04:50,605 --> 00:04:55,058
 I fly into the Nave and straight at the canisters.
 
 91
-00:06:08,287 --> 00:06:13,070
+00:04:55,508 --> 00:04:59,026
 There's the pick-up, times three, and the first quest is done.
 
 92
-00:06:14,870 --> 00:06:18,783
+00:05:00,826 --> 00:05:03,045
 Now the Gallery, all the way to the back.
 
 93
-00:06:19,683 --> 00:06:21,857
+00:05:03,945 --> 00:05:05,506
 And there's the stone bowl.
 
 94
-00:06:22,307 --> 00:06:26,220
+00:05:05,956 --> 00:05:08,259
 I take it, and the second quest is done.
 
 95
-00:06:27,120 --> 00:06:31,033
+00:05:09,159 --> 00:05:11,118
 And I never wrote the line that said so.
 
 96
-00:06:32,233 --> 00:06:33,972
+00:05:12,318 --> 00:05:13,321
 Now it's your turn.
 
 97
-00:06:34,872 --> 00:06:39,220
+00:05:14,221 --> 00:05:17,910
 Add a second cache, and make the quest want both.
 
 98
-00:06:40,120 --> 00:06:44,467
+00:05:18,810 --> 00:05:21,973
 Make the canisters appear only when the ship comes near.
 
 99
-00:06:45,367 --> 00:06:50,150
+00:05:22,873 --> 00:05:26,688
 Make the bowl appear only when Comms has heard Rook out.
 
 100
-00:06:51,950 --> 00:06:55,863
+00:05:28,488 --> 00:05:30,907
 Then break one line where lint can see it,
 
 101
-00:06:56,313 --> 00:06:58,487
+00:05:31,357 --> 00:05:32,732
 and one where it can't.
 
 102
-00:06:59,387 --> 00:07:05,039
+00:05:33,632 --> 00:05:36,997
 Later in this class, someone goes in and takes that bowl by hand.

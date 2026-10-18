@@ -1,583 +1,583 @@
 1
-00:00:00,000 --> 00:00:02,609
+00:00:00,000 --> 00:00:01,816
 Last time, the ruin could talk.
 
 2
-00:00:03,059 --> 00:00:05,233
+00:00:02,266 --> 00:00:03,940
 Today, it keeps a secret.
 
 3
-00:00:06,133 --> 00:00:11,785
+00:00:04,840 --> 00:00:08,364
 A crew that listens at the door gets one more answer further in.
 
 4
-00:00:12,685 --> 00:00:15,293
+00:00:09,264 --> 00:00:11,247
 That answer opens a side room,
 
 5
-00:00:15,743 --> 00:00:18,787
+00:00:11,697 --> 00:00:13,670
 and a small story of its own.
 
 6
-00:00:20,587 --> 00:00:24,065
+00:00:15,470 --> 00:00:17,367
 And when they find what's in the room,
 
 7
-00:00:24,515 --> 00:00:27,559
+00:00:17,817 --> 00:00:19,685
 the main screen stops being a window,
 
 8
-00:00:28,009 --> 00:00:31,052
+00:00:20,135 --> 00:00:22,518
 and becomes a film, for ten seconds.
 
 9
-00:00:32,252 --> 00:00:36,600
+00:00:23,718 --> 00:00:26,959
 A clue is something the crew learns in one place
 
 10
-00:00:37,050 --> 00:00:39,659
+00:00:27,409 --> 00:00:29,587
 that changes what happens in another.
 
 11
-00:00:40,559 --> 00:00:42,298
+00:00:30,487 --> 00:00:31,753
 You've already written one,
 
 12
-00:00:42,748 --> 00:00:47,096
+00:00:32,203 --> 00:00:34,488
 when Mark the Gallery put a place on the map.
 
 13
-00:00:47,996 --> 00:00:50,604
+00:00:35,388 --> 00:00:37,561
 Today there are two new words.
 
 14
-00:00:51,504 --> 00:00:56,287
+00:00:38,461 --> 00:00:41,915
 Learn, on an answer, writes a word down for this crew.
 
 15
-00:00:56,737 --> 00:01:00,215
+00:00:42,365 --> 00:00:45,312
 And learned, on another answer, counts the words.
 
 16
-00:01:02,015 --> 00:01:03,754
+00:00:47,112 --> 00:00:48,177
 It can count them,
 
 17
-00:01:04,204 --> 00:01:08,117
+00:00:48,627 --> 00:00:51,177
 or it can ask for one word by name.
 
 18
-00:01:09,017 --> 00:01:14,670
+00:00:52,077 --> 00:00:55,287
 What's learned in a call goes on one list, for the whole game.
 
 19
-00:01:15,570 --> 00:01:18,613
+00:00:56,187 --> 00:00:58,188
 And here's the rule that shapes everything:
 
 20
-00:01:19,063 --> 00:01:25,150
+00:00:58,638 --> 00:01:02,577
 the game reads the count when the crew opens the scene, and only then.
 
 21
-00:01:26,050 --> 00:01:29,093
+00:01:03,477 --> 00:01:05,241
 If they open a call too early,
 
 22
-00:01:29,543 --> 00:01:32,587
+00:01:05,691 --> 00:01:07,853
 going away and coming back doesn't help.
 
 23
-00:01:33,487 --> 00:01:37,835
+00:01:08,753 --> 00:01:11,589
 So the clue has to come first on the road.
 
 24
-00:01:39,035 --> 00:01:41,643
+00:01:12,789 --> 00:01:14,573
 Every ship flies through the ring,
 
 25
-00:01:42,093 --> 00:01:44,702
+00:01:15,023 --> 00:01:16,832
 so the first clue goes there.
 
 26
-00:01:45,602 --> 00:01:50,385
+00:01:17,732 --> 00:01:20,421
 It takes a place, on the same spot as the ring,
 
 27
-00:01:50,835 --> 00:01:53,878
+00:01:20,871 --> 00:01:23,169
 with a role of its own, plate.
 
 28
-00:01:54,778 --> 00:01:58,691
+00:01:24,069 --> 00:01:26,122
 It takes a beat, the same as last time:
 
 29
-00:01:59,141 --> 00:02:04,359
+00:01:26,572 --> 00:01:29,566
 when a ship is within five hundred of the plate, Rook calls.
 
 30
-00:02:05,259 --> 00:02:10,041
+00:01:30,466 --> 00:01:33,715
 And it takes the scene, with one take and two answers.
 
 31
-00:02:11,841 --> 00:02:13,580
+00:01:35,515 --> 00:01:36,569
 Here's the new part.
 
 32
-00:02:14,030 --> 00:02:17,074
+00:01:37,019 --> 00:01:39,370
 After Log the names there's a semicolon,
 
 33
-00:02:17,524 --> 00:02:19,263
+00:01:39,820 --> 00:01:41,310
 and then learn names.
 
 34
-00:02:20,163 --> 00:02:24,511
+00:01:42,210 --> 00:01:45,116
 Names is my word, and the crew never sees it.
 
 35
-00:02:24,961 --> 00:02:28,004
+00:01:45,566 --> 00:01:47,486
 What they see is Log the names.
 
 36
-00:02:29,204 --> 00:02:32,248
+00:01:48,686 --> 00:01:50,711
 Now the altar gets one new answer,
 
 37
-00:02:32,698 --> 00:02:35,307
+00:01:51,161 --> 00:01:53,125
 between the two that are there.
 
 38
-00:02:36,207 --> 00:02:39,685
+00:01:54,026 --> 00:01:56,449
 It says play the entry keyed to Dace,
 
 39
-00:02:40,135 --> 00:02:43,613
+00:01:56,899 --> 00:01:59,412
 and after the round brackets comes a condition:
 
 40
-00:02:44,063 --> 00:02:46,672
+00:01:59,862 --> 00:02:01,938
 if learned is at least one.
 
 41
-00:02:47,572 --> 00:02:51,485
+00:02:02,838 --> 00:02:05,717
 So a crew that knows nothing gets two answers,
 
 42
-00:02:51,935 --> 00:02:55,848
+00:02:06,167 --> 00:02:09,214
 and a crew that logged the names gets three.
 
 43
-00:02:57,648 --> 00:03:00,691
+00:02:11,014 --> 00:02:13,176
 The answer leads to a new scene.
 
 44
-00:03:01,591 --> 00:03:03,330
+00:02:14,076 --> 00:02:15,189
 It has one take:
 
 45
-00:03:03,780 --> 00:03:08,998
+00:02:15,639 --> 00:02:18,406
 Dace didn't come out, and there's a cairn in a side room.
 
 46
-00:03:09,898 --> 00:03:15,550
+00:02:19,306 --> 00:02:23,037
 And it has one answer, which leads on to The Rest of It,
 
 47
-00:03:16,000 --> 00:03:19,478
+00:02:23,487 --> 00:02:26,301
 so this crew still hears the main recording.
 
 48
-00:03:20,678 --> 00:03:25,461
+00:02:27,501 --> 00:02:29,762
 He said a side room, so there has to be one.
 
 49
-00:03:26,361 --> 00:03:31,143
+00:02:30,662 --> 00:02:34,327
 It's a chamber, six hundred, with a passage to the Nave,
 
 50
-00:03:31,593 --> 00:03:33,333
+00:02:34,777 --> 00:02:36,087
 and that's Lecture 2.
 
 51
-00:03:34,233 --> 00:03:40,320
-In the middle of it there's a place, with a cone standing on it,
+00:02:36,987 --> 00:02:40,234
+In the middle of it there's a place, with a rock standing on it,
 
 52
-00:03:40,770 --> 00:03:42,509
+00:02:40,684 --> 00:02:42,042
 and that's Lecture 3.
 
 53
-00:03:44,309 --> 00:03:47,787
+00:02:43,842 --> 00:02:46,794
 Now the answer shows it, with reveal cairn.
 
 54
-00:03:48,687 --> 00:03:52,600
+00:02:47,694 --> 00:02:50,846
 That's the key of the place, and not crypt.
 
 55
-00:03:53,050 --> 00:03:57,398
+00:02:51,296 --> 00:02:54,231
 A room isn't a place, and lint won't tell you.
 
 56
-00:03:58,598 --> 00:04:04,250
+00:02:55,431 --> 00:02:58,495
 A side story is a quest that isn't part of the main story.
 
 57
-00:04:05,150 --> 00:04:06,889
+00:02:59,395 --> 00:03:00,662
 It has three hashes.
 
 58
-00:04:07,339 --> 00:04:12,557
+00:03:01,112 --> 00:03:05,385
 It starts when revealed, so it's asleep and out of the list.
 
 59
-00:04:13,457 --> 00:04:19,109
+00:03:06,285 --> 00:03:09,610
 And it's done when a ship is within four hundred of the cairn.
 
 60
-00:04:20,909 --> 00:04:22,648
+00:03:11,410 --> 00:03:12,748
 The description's a page,
 
 61
-00:04:23,098 --> 00:04:27,011
+00:03:13,198 --> 00:03:15,595
 so under the first line there's a small table.
 
 62
-00:04:27,911 --> 00:04:31,389
+00:03:16,495 --> 00:03:19,081
 It lists five surveyors, and who came out.
 
 63
-00:04:32,289 --> 00:04:37,072
+00:03:19,981 --> 00:03:23,331
 The crew only sees this quest after they've heard the names,
 
 64
-00:04:37,522 --> 00:04:40,130
+00:03:23,781 --> 00:03:25,306
 so the table can use them.
 
 65
-00:04:41,930 --> 00:04:46,713
+00:03:27,106 --> 00:03:31,278
 The answer starts it, with a comma and then accepts stayed.
 
 66
-00:04:47,613 --> 00:04:50,222
+00:03:32,178 --> 00:03:34,880
 That's two things after one semicolon.
 
 67
-00:04:52,022 --> 00:04:57,674
+00:03:36,680 --> 00:03:41,228
 Now, in the game's shipped ruins you'll find a section called Side Stories,
 
 68
-00:04:58,124 --> 00:05:00,733
+00:03:41,678 --> 00:03:43,644
 and those are a different animal.
 
 69
-00:05:01,633 --> 00:05:04,676
+00:03:44,544 --> 00:03:47,766
 Each one says For, and a job.
 
 70
-00:05:05,126 --> 00:05:07,300
+00:03:48,216 --> 00:03:49,883
 They belong to one person,
 
 71
-00:05:07,750 --> 00:05:13,402
+00:03:50,333 --> 00:03:54,019
 and they're handed over when that person leaves the ship in a suit.
 
 72
-00:05:14,302 --> 00:05:16,911
+00:03:54,919 --> 00:03:56,534
 So leave that section for now.
 
 73
-00:05:17,361 --> 00:05:22,578
+00:03:56,984 --> 00:04:00,402
 You'll type one at the end of the class, in Lecture 10.
 
 74
-00:05:23,778 --> 00:05:26,822
+00:04:01,602 --> 00:04:03,407
 A cutscene is a list of shots.
 
 75
-00:05:27,722 --> 00:05:32,504
+00:04:04,307 --> 00:04:07,901
 It's a new section, and its key has to be cutscenes.
 
 76
-00:05:33,404 --> 00:05:36,448
+00:04:08,801 --> 00:04:11,346
 The first record is the cutscene itself,
 
 77
-00:05:36,898 --> 00:05:41,246
+00:04:11,796 --> 00:04:16,014
 with its key, and Letterbox yes for the black bars.
 
 78
-00:05:42,146 --> 00:05:45,189
+00:04:16,914 --> 00:04:19,266
 Then there's one record for each shot.
 
 79
-00:05:46,989 --> 00:05:50,467
+00:04:21,066 --> 00:04:23,733
 A shot says which cutscene it belongs to.
 
 80
-00:05:50,917 --> 00:05:53,961
+00:04:24,183 --> 00:04:26,003
 It says what the camera looks at,
 
 81
-00:05:54,411 --> 00:05:59,193
+00:04:26,453 --> 00:04:29,948
 and that's a role, the same word I write after reach.
 
 82
-00:06:00,093 --> 00:06:03,572
+00:04:30,848 --> 00:04:34,149
 It says how near: close, medium or wide.
 
 83
-00:06:04,022 --> 00:06:09,239
+00:04:34,599 --> 00:04:38,694
 Two words with a comma make a move, from wide to close.
 
 84
-00:06:10,139 --> 00:06:12,313
+00:04:39,594 --> 00:04:41,705
 It says how many seconds.
 
 85
-00:06:13,213 --> 00:06:17,126
+00:04:42,605 --> 00:04:46,413
 And Overlay, lower third, puts words at the bottom:
 
 86
-00:06:17,576 --> 00:06:21,054
+00:04:46,863 --> 00:04:49,782
 a name, and under the fence, the line.
 
 87
-00:06:22,854 --> 00:06:27,637
+00:04:51,582 --> 00:04:54,975
 Everywhere else in this file, that line is my own note.
 
 88
-00:06:28,087 --> 00:06:30,261
+00:04:55,425 --> 00:04:56,822
 Here, the crew reads it.
 
 89
-00:06:31,161 --> 00:06:35,943
+00:04:57,722 --> 00:05:01,306
 So keep the cutscene short, because the crew can't skip it,
 
 90
-00:06:36,393 --> 00:06:39,002
+00:05:01,756 --> 00:05:03,628
 and keep each line short too.
 
 91
-00:06:40,202 --> 00:06:41,941
+00:05:04,828 --> 00:05:05,824
 I run lint first.
 
 92
-00:06:42,841 --> 00:06:47,624
+00:05:06,724 --> 00:05:10,555
 It says nothing in this mission reads a section keyed cutscenes.
 
 93
-00:06:48,074 --> 00:06:52,857
+00:05:11,005 --> 00:05:13,705
 It's right, and the end of its sentence is the fix:
 
 94
-00:06:53,307 --> 00:06:55,915
+00:05:14,155 --> 00:05:15,445
 add the line that reads it.
 
 95
-00:06:57,715 --> 00:07:00,324
+00:05:17,245 --> 00:05:19,390
 That's a card, in two parts.
 
 96
-00:07:01,224 --> 00:07:04,267
+00:05:20,290 --> 00:05:22,390
 Part one goes in the map block,
 
 97
-00:07:04,717 --> 00:07:07,761
+00:05:22,840 --> 00:05:24,760
 under the line that builds the ruin,
 
 98
-00:07:08,211 --> 00:07:11,689
+00:05:25,210 --> 00:05:26,884
 and I don't change a letter of it.
 
 99
-00:07:12,589 --> 00:07:14,328
+00:05:27,784 --> 00:05:28,993
 Lint is clean now.
 
 100
-00:07:14,778 --> 00:07:18,691
+00:05:29,443 --> 00:05:32,067
 The section is read, and still nothing plays it.
 
 101
-00:07:20,491 --> 00:07:23,535
+00:05:33,867 --> 00:05:35,759
 So the quest has to say when,
 
 102
-00:07:23,985 --> 00:07:26,159
+00:05:36,209 --> 00:05:39,526
 with Then, signal, cairn found.
 
 103
-00:07:27,059 --> 00:07:30,102
+00:05:40,426 --> 00:05:42,716
 That's my word, and lint warns again:
 
 104
-00:07:30,552 --> 00:07:34,030
+00:05:43,166 --> 00:05:45,593
 the word is sent, and nothing hears it.
 
 105
-00:07:34,930 --> 00:07:39,713
+00:05:46,493 --> 00:05:49,373
 Part two goes at the very end of the story file.
 
 106
-00:07:40,163 --> 00:07:47,120
+00:05:49,823 --> 00:05:54,730
 When that word is sent, it plays the cutscene with this key, on every main screen.
 
 107
-00:07:48,020 --> 00:07:52,802
+00:05:55,630 --> 00:05:58,970
 Two things in it are mine, the word and the key.
 
 108
-00:07:53,252 --> 00:07:54,991
+00:05:59,420 --> 00:06:00,478
 And lint is clean.
 
 109
-00:07:56,191 --> 00:07:57,930
+00:06:01,678 --> 00:06:03,050
 Now for three breaks.
 
 110
-00:07:58,830 --> 00:08:01,439
+00:06:03,950 --> 00:06:06,388
 First, I turn the sign round,
 
 111
-00:08:01,889 --> 00:08:06,237
+00:06:06,838 --> 00:06:09,728
 and lint tells me that it can't read that condition.
 
 112
-00:08:07,137 --> 00:08:11,485
+00:06:10,628 --> 00:06:14,324
 That's good, because that answer would never have been offered.
 
 113
-00:08:13,285 --> 00:08:17,198
+00:06:16,124 --> 00:06:19,632
 Next, I misspell a subject, and lint says clean.
 
 114
-00:08:18,098 --> 00:08:21,141
+00:06:20,532 --> 00:06:23,101
 Lint reads the outside of a cutscene,
 
 115
-00:08:21,591 --> 00:08:24,635
+00:06:23,551 --> 00:06:25,292
 and not the inside of a shot.
 
 116
-00:08:25,535 --> 00:08:28,143
+00:06:26,192 --> 00:06:27,785
 That shot would be left out,
 
 117
-00:08:28,593 --> 00:08:35,115
+00:06:28,235 --> 00:06:33,426
 and the game does say so, in one line, in its log, after you've played.
 
 118
-00:08:36,915 --> 00:08:39,089
+00:06:35,226 --> 00:06:37,463
 Last, I misspell the overlay.
 
 119
-00:08:39,539 --> 00:08:43,452
+00:06:37,913 --> 00:06:40,802
 It's clean again, and this time nothing says anything:
 
 120
-00:08:43,902 --> 00:08:46,511
+00:06:41,252 --> 00:06:43,110
 the shot plays with no words.
 
 121
-00:08:47,411 --> 00:08:53,063
+00:06:44,010 --> 00:06:47,246
 There's a table on the page of the ones nothing tells you about.
 
 122
-00:08:53,513 --> 00:08:55,687
+00:06:47,696 --> 00:06:48,854
 Read it before you play.
 
 123
-00:08:56,887 --> 00:09:01,670
+00:06:50,054 --> 00:06:53,484
 Through the ring we go, and there's Rook, at the ring.
 
 124
-00:09:02,120 --> 00:09:03,859
+00:06:53,934 --> 00:06:55,180
 I log the names.
 
 125
-00:09:04,759 --> 00:09:07,802
+00:06:56,080 --> 00:06:58,493
 Across the Nave and up the tunnel,
 
 126
-00:09:08,252 --> 00:09:12,600
+00:06:58,943 --> 00:07:01,786
 and there's Rook at the altar, with my third answer.
 
 127
-00:09:13,500 --> 00:09:18,717
+00:07:02,686 --> 00:07:05,572
 I take the entry for Dace, and I mark the side room.
 
 128
-00:09:19,167 --> 00:09:23,515
+00:07:06,022 --> 00:07:08,486
 Then the rest of it, and I mark the Gallery.
 
 129
-00:09:25,315 --> 00:09:30,098
+00:07:10,286 --> 00:07:12,780
 There's a new contact on the far side of the Nave,
 
 130
-00:09:30,548 --> 00:09:33,591
+00:07:13,230 --> 00:07:15,536
 and a new quest in the list.
 
 131
-00:09:34,491 --> 00:09:38,839
+00:07:16,436 --> 00:07:20,497
 So back down, straight across, and into the side room.
 
 132
-00:09:40,639 --> 00:09:42,378
+00:07:22,297 --> 00:07:23,295
 And there it goes.
 
 133
-00:09:43,278 --> 00:09:45,017
+00:07:24,195 --> 00:07:25,199
 The bars come up.
 
 134
-00:09:45,467 --> 00:09:49,815
+00:07:25,649 --> 00:07:28,576
 The altar: the tally on the rim stops at forty-one.
 
 135
-00:09:50,715 --> 00:09:54,193
+00:07:29,476 --> 00:07:33,089
 The cairn: forty-one stones, one for each day.
 
 136
-00:09:55,093 --> 00:09:56,833
+00:07:33,989 --> 00:07:35,000
 And then we're back.
 
 137
-00:09:58,633 --> 00:10:02,980
+00:07:36,800 --> 00:07:39,472
 One thing you'll notice is that panel in the corner.
 
 138
-00:10:03,430 --> 00:10:06,039
+00:07:39,922 --> 00:07:42,578
 It says The Altar, energy zero.
 
 139
-00:10:06,939 --> 00:10:11,722
+00:07:43,478 --> 00:07:46,854
 It's the ship's own panel, reading whatever the camera is on.
 
 140
-00:10:12,172 --> 00:10:16,954
+00:07:47,304 --> 00:07:49,784
 It isn't in my file, and I can't take it away.
 
 141
-00:10:18,154 --> 00:10:19,893
+00:07:50,984 --> 00:07:51,987
 Now it's your turn.
 
 142
-00:10:20,793 --> 00:10:26,011
+00:07:52,887 --> 00:07:56,426
 Give Rook a line that only a crew who knows will hear.
 
 143
-00:10:26,911 --> 00:10:31,259
+00:07:57,326 --> 00:08:00,183
 Pay for the side story, and add a third shot.
 
 144
-00:10:32,159 --> 00:10:36,072
+00:08:01,083 --> 00:08:03,502
 Then break one line where lint can see it,
 
 145
-00:10:36,522 --> 00:10:38,696
+00:08:03,952 --> 00:08:05,327
 and one where it can't.
 
 146
-00:10:40,496 --> 00:10:42,670
+00:08:07,127 --> 00:08:09,053
 Next time, the main story.
