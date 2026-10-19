@@ -90,7 +90,8 @@ def ln(state, needle, nth=1):
 
 
 STATES = {
-    "start": {"folder": _EX3},
+    # C5-02 holds the folder (story.mast, description.yaml); C5-03 holds only the .amd.
+    "start": {"folder": "c5-02-your-universe-file/example", "over": [_EX3]},
     # Step 1: a Values: line on each side
     "values": {"base": "start", "edits": [("write", FILE, _T["values"])]},
     # Step 2: the escort's ending and the patrol's rank

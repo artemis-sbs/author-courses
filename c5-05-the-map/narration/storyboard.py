@@ -91,7 +91,8 @@ def ln(state, needle, nth=1):
 
 
 STATES = {
-    "start": {"folder": _EX4},
+    # C5-02 holds the folder (story.mast, description.yaml); C5-04 holds only the .amd.
+    "start": {"folder": "c5-02-your-universe-file/example", "over": [_EX4]},
     # Step 2: four dial lines under Display:
     "dials": {"base": "start", "edits": [("write", FILE, _T["dials"])]},
     # Step 3: the Regions chapter, in front of Landmarks: The Hollin Fields, then The Breakers
