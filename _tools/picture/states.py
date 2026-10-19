@@ -97,6 +97,25 @@ def check(sb):
     return {name: files_of(sb, name) for name in sb.STATES}
 
 
+TEMPLATES = os.environ.get("PIC_TEMPLATES", "E:/a/Cosmos-dev/data/missions/mast_starter/templates")
+
+
+def template_files(name):
+    """{relative path: text} of an `sbs create -t` template, or {} for None."""
+    if not name:
+        return {}
+    root = os.path.join(TEMPLATES, name)
+    if not os.path.isdir(root):
+        raise FileNotFoundError(f"TEMPLATE_BASE {name!r}: no template folder {root}")
+    out = {}
+    for d, subs, fs in os.walk(root):
+        subs[:] = [x for x in subs if x != "__pycache__"]
+        for f in fs:
+            rel = os.path.relpath(os.path.join(d, f), root).replace(os.sep, "/")
+            out[rel] = open(os.path.join(d, f), encoding="utf-8").read()
+    return out
+
+
 def materialize(sb, name, dest):
     """Write the state's files into dest (the stand-in's mission folder), replacing what
     is there, subfolders and all. Logs and caches the tools left behind are removed, so
@@ -109,6 +128,18 @@ def materialize(sb, name, dest):
             shutil.rmtree(p, ignore_errors=True)
         else:
             os.remove(p)
+    # A board may say which `sbs create -t` template its mission was made from
+    # (TEMPLATE_BASE). Its files go in FIRST, under the state's: a real student's folder
+    # has script.py, story.json and the rest, and without them lint reported "No module
+    # named 'script'" and every Open Universe field as unknown (the add-ons never loaded).
+    # NOT its .amd: the lesson renames or replaces it, and a second universe file would be
+    # linted beside the student's.
+    for f, text in template_files(getattr(sb, "TEMPLATE_BASE", None)).items():
+        if f not in files and not f.endswith(".amd"):
+            p = os.path.join(dest, *f.split("/"))
+            os.makedirs(os.path.dirname(p), exist_ok=True)
+            with open(p, "w", encoding="utf-8", newline="\n") as fh:
+                fh.write(text)
     for f, text in files.items():
         p = os.path.join(dest, *f.split("/"))
         os.makedirs(os.path.dirname(p), exist_ok=True)

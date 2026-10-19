@@ -37,6 +37,7 @@ import os
 LECTURE = "c5-03-sides-diplomacy-goods"
 TITLE = ("Class 5, Lecture 3", "Sides, diplomacy and goods", "Three factions, one of them a foe, and the cargo of your world")
 MISSION = "MyUniverse"
+TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
 FILE = "kestrel_verge.amd"
 
 _EX2 = "c5-02-your-universe-file/example"

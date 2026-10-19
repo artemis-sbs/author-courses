@@ -54,6 +54,7 @@ def _ln(text, needle, nth=1):
 LECTURE = "c5-12-battles-part-1"
 TITLE = ("Class 5, Lecture 12", "Battles, part 1", "How dangerous a system is, and a budget of ships")
 MISSION = "MyUniverse"
+TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 TEMPLATE = "ou"

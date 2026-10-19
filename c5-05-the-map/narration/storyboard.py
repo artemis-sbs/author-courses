@@ -42,6 +42,7 @@ import os
 LECTURE = "c5-05-the-map"
 TITLE = ("Class 5, Lecture 5", "The map", "Regions, landmarks and the dials that shape the galaxy")
 MISSION = "MyUniverse"
+TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
 FILE = "kestrel_verge.amd"
 
 _EX4 = "c5-04-reputation/example"
