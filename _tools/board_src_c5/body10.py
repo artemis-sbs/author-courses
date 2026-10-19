@@ -83,7 +83,7 @@ _m = _F.index("### [The Short Count](yard_count)")
 _o = _HEAD.search(_F, _m + 10).start()
 _NCUS, _NSH, _NAFTER = _F[_n:_m], _F[_m:_o], _F[_o:_o + 60]
 _PEOPLE_OLD = "nobody buys people." + chr(10) * 2
-_PEOPLE_NEW = "nobody buys people." + chr(10)
+_PEOPLE_NEW = "nobody buys people." + chr(10) * 2   # the blank line before the lead
 _NCUS0 = _NCUS.replace("Then: reveal yard_count\n", "")
 
 _chain("start", [
