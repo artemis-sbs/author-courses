@@ -72,10 +72,10 @@ s07_play_it_16	and that's the last step.
 s08_an_honest_word_0	I have to be honest about what you just saw.
 s08_an_honest_word_1	When I checked this page, a script flew all of it,
 s08_an_honest_word_2	and nobody was watching a screen.
-s08_an_honest_word_3	And the exosuit has one known fault.
-s08_an_honest_word_4	A console can close the first time it meets one mid-game.
-s08_an_honest_word_5	It's reported, and it isn't your file.
-s08_an_honest_word_6	The way round it is on the page.
+s08_an_honest_word_3	And the exosuit had one known fault, in older versions of the game.
+s08_an_honest_word_4	A console could close the first time it met one mid-game.
+s08_an_honest_word_5	It's fixed now,
+s08_an_honest_word_6	and if your game is older, the way round it is on the page.
 s09_the_ruin_remembers_0	Now the part that makes a ruin fit a campaign.
 s09_the_ruin_remembers_1	I go home, and I come back.
 s09_the_ruin_remembers_2	The game rebuilt the whole place.

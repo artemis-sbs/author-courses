@@ -239,121 +239,125 @@ Three cards come up.
 The place, the guards, and the one I wrote.
 
 61
-00:04:20,659 --> 00:04:22,398
-I count eleven ships.
+00:04:20,659 --> 00:04:22,833
+Now I count the ships.
 
 62
-00:04:23,298 --> 00:04:26,776
-Four of them are a long way off,
+00:04:23,733 --> 00:04:25,907
+Three are by the wreck,
 
 63
-00:04:27,226 --> 00:04:29,400
-three are by the wreck,
+00:04:26,357 --> 00:04:30,704
+and four or five are right in front of me.
 
 64
-00:04:29,850 --> 00:04:33,328
-and four are right in front of me.
-
-65
-00:04:34,228 --> 00:04:37,272
+00:04:31,604 --> 00:04:34,648
 That's the battle line from last time.
 
+65
+00:04:35,548 --> 00:04:39,026
+If the dice made this an enemy system,
+
 66
-00:04:39,072 --> 00:04:43,420
-I have to tell you something about this last row.
+00:04:39,476 --> 00:04:42,520
+there are more, a long way off.
 
 67
-00:04:44,320 --> 00:04:46,493
-When I checked this page,
+00:04:44,320 --> 00:04:48,667
+I have to tell you something about this last row.
 
 68
-00:04:46,943 --> 00:04:51,291
-a script told the game the four ships were destroyed.
+00:04:49,567 --> 00:04:51,741
+When I checked this page,
 
 69
-00:04:52,191 --> 00:04:54,365
-Nobody has fought this fight.
+00:04:52,191 --> 00:04:56,539
+a script told the game the four ships were destroyed.
 
 70
-00:04:55,265 --> 00:05:00,048
-So this is the first time, and we'll find out together.
+00:04:57,439 --> 00:04:59,613
+Nobody has fought this fight.
 
 71
-00:05:01,248 --> 00:05:04,291
-There are three things to read afterward.
+00:05:00,513 --> 00:05:05,296
+So this is the first time, and we'll find out together.
 
 72
-00:05:05,191 --> 00:05:08,235
-The runtime log, which should be empty.
+00:05:06,496 --> 00:05:09,539
+There are three things to read afterward.
 
 73
-00:05:09,135 --> 00:05:11,743
-Your ticks, every one of them.
+00:05:10,439 --> 00:05:13,483
+The runtime log, which should be empty.
 
 74
-00:05:12,643 --> 00:05:16,122
-And your standings, which should match the page.
+00:05:14,383 --> 00:05:16,991
+Your ticks, every one of them.
 
 75
-00:05:17,922 --> 00:05:20,530
-And then there's one more table,
+00:05:17,891 --> 00:05:21,370
+And your standings, which should match the page.
 
 76
-00:05:20,980 --> 00:05:24,024
-the things this universe doesn't do yet.
+00:05:23,170 --> 00:05:25,778
+And then there's one more table,
 
 77
-00:05:24,924 --> 00:05:27,967
-An admiral's numbers can't be balanced yet.
+00:05:26,228 --> 00:05:29,272
+the things this universe doesn't do yet.
 
 78
-00:05:28,867 --> 00:05:33,215
-A captain can't be made a rival with one line.
+00:05:30,172 --> 00:05:33,215
+An admiral's numbers can't be balanced yet.
 
 79
-00:05:35,015 --> 00:05:37,624
-Neither of those is your mistake.
+00:05:34,115 --> 00:05:38,463
+A captain can't be made a rival with one line.
 
 80
-00:05:38,524 --> 00:05:41,133
-But a writer who knows them
+00:05:40,263 --> 00:05:42,872
+Neither of those is your mistake.
 
 81
-00:05:41,583 --> 00:05:45,930
-writes around them, and that's why they're on the page.
+00:05:43,772 --> 00:05:46,380
+But a writer who knows them
 
 82
-00:05:47,130 --> 00:05:48,870
-Now it's your turn,
+00:05:46,830 --> 00:05:51,178
+writes around them, and that's why they're on the page.
 
 83
-00:05:49,320 --> 00:05:52,363
-and this time it really is yours.
+00:05:52,378 --> 00:05:54,117
+Now it's your turn,
 
 84
-00:05:53,263 --> 00:05:56,307
-Plan two sittings, and write your card.
+00:05:54,567 --> 00:05:57,611
+and this time it really is yours.
 
 85
-00:05:57,207 --> 00:06:01,120
-Write down what you should see before you play,
+00:05:58,511 --> 00:06:01,554
+Plan two sittings, and write your card.
 
 86
-00:06:01,570 --> 00:06:03,309
-from your own files.
+00:06:02,454 --> 00:06:06,367
+Write down what you should see before you play,
 
 87
-00:06:05,109 --> 00:06:07,717
-Then give it to a crew,
+00:06:06,817 --> 00:06:08,557
+from your own files.
 
 88
-00:06:08,167 --> 00:06:10,776
-sit behind them, and don't help.
+00:06:10,357 --> 00:06:12,965
+Then give it to a crew,
 
 89
-00:06:12,576 --> 00:06:16,054
-That's a whole universe, and you wrote it.
+00:06:13,415 --> 00:06:16,024
+sit behind them, and don't help.
 
 90
-00:06:16,954 --> 00:06:19,128
+00:06:17,824 --> 00:06:21,302
+That's a whole universe, and you wrote it.
+
+91
+00:06:22,202 --> 00:06:24,376
 Well done, and thank you.

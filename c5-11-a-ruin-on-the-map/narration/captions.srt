@@ -295,89 +295,89 @@ When I checked this page, a script flew all of it,
 and nobody was watching a screen.
 
 75
-00:04:52,376 --> 00:04:55,420
-And the exosuit has one known fault.
+00:04:52,376 --> 00:04:58,028
+And the exosuit had one known fault, in older versions of the game.
 
 76
-00:04:56,320 --> 00:05:01,102
-A console can close the first time it meets one mid-game.
+00:04:58,928 --> 00:05:03,711
+A console could close the first time it met one mid-game.
 
 77
-00:05:02,002 --> 00:05:05,046
-It's reported, and it isn't your file.
+00:05:04,611 --> 00:05:05,915
+It's fixed now,
 
 78
-00:05:05,496 --> 00:05:08,974
-The way round it is on the page.
+00:05:06,365 --> 00:05:12,452
+and if your game is older, the way round it is on the page.
 
 79
-00:05:10,174 --> 00:05:14,522
+00:05:13,652 --> 00:05:18,000
 Now the part that makes a ruin fit a campaign.
 
 80
-00:05:16,322 --> 00:05:19,365
+00:05:19,800 --> 00:05:22,843
 I go home, and I come back.
 
 81
-00:05:20,265 --> 00:05:22,874
+00:05:23,743 --> 00:05:26,352
 The game rebuilt the whole place.
 
 82
-00:05:23,324 --> 00:05:25,498
+00:05:26,802 --> 00:05:28,976
 And the slab's still cut.
 
 83
-00:05:26,398 --> 00:05:28,137
+00:05:29,876 --> 00:05:31,615
 The bowl's still gone,
 
 84
-00:05:28,587 --> 00:05:30,761
+00:05:32,065 --> 00:05:34,239
 and nobody paid me twice.
 
 85
-00:05:32,561 --> 00:05:35,604
+00:05:36,039 --> 00:05:39,083
 Now I close the game, and continue,
 
 86
-00:05:36,054 --> 00:05:38,228
+00:05:39,533 --> 00:05:41,707
 and it's the same again.
 
 87
-00:05:40,028 --> 00:05:43,072
+00:05:43,507 --> 00:05:46,550
 And here it is in the save.
 
 88
-00:05:43,522 --> 00:05:47,435
+00:05:47,000 --> 00:05:50,913
 The ruin, what was opened, and what was taken.
 
 89
-00:05:48,635 --> 00:05:51,243
+00:05:52,113 --> 00:05:54,722
 One note before you go on.
 
 90
-00:05:52,143 --> 00:05:56,926
+00:05:55,622 --> 00:06:00,404
 The battle lectures were written for a universe with no ruin.
 
 91
-00:05:57,826 --> 00:06:00,870
+00:06:01,304 --> 00:06:04,348
 So three small things read differently there,
 
 92
-00:06:01,320 --> 00:06:03,928
+00:06:04,798 --> 00:06:07,407
 and they're listed on the page.
 
 93
-00:06:05,728 --> 00:06:07,467
+00:06:09,207 --> 00:06:10,946
 Now it's your turn.
 
 94
-00:06:08,367 --> 00:06:12,715
+00:06:11,846 --> 00:06:16,193
 Give The Hollow your own name and your own words.
 
 95
-00:06:13,615 --> 00:06:15,789
+00:06:17,093 --> 00:06:19,267
 Play it to the bowl.
 
 96
-00:06:16,239 --> 00:06:20,152
+00:06:19,717 --> 00:06:23,630
 Go home, come back, and look at that slab.

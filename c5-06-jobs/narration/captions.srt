@@ -260,208 +260,212 @@ and a crosshair for the hulls.
 
 66
 00:04:55,880 --> 00:04:58,054
-Lint doesn't check those names,
+Lint checks the icon names,
 
 67
-00:04:58,504 --> 00:05:01,113
-so copy them from the page.
+00:04:58,504 --> 00:05:01,548
+but not the name of a model,
 
 68
-00:05:02,313 --> 00:05:05,357
-A job nobody offers is never seen.
+00:05:01,998 --> 00:05:05,041
+so copy that one from the page.
 
 69
-00:05:06,257 --> 00:05:08,865
-So, back up to the sides.
+00:05:06,241 --> 00:05:09,285
+A job nobody offers is never seen.
 
 70
-00:05:10,665 --> 00:05:13,709
-The farmers get patrol, escort and strike.
+00:05:10,185 --> 00:05:12,793
+So, back up to the sides.
 
 71
-00:05:14,609 --> 00:05:18,522
-The miners get the survey and the relay run.
+00:05:14,593 --> 00:05:17,637
+The farmers get patrol, escort and strike.
 
 72
-00:05:20,322 --> 00:05:23,800
-I'm taking the escort away from the miners,
+00:05:18,537 --> 00:05:22,450
+The miners get the survey and the relay run.
 
 73
 00:05:24,250 --> 00:05:27,728
-because it ends at their own front door.
+I'm taking the escort away from the miners,
 
 74
-00:05:28,628 --> 00:05:31,672
-A job that ends at a place
+00:05:28,178 --> 00:05:31,657
+because it ends at their own front door.
 
 75
-00:05:32,122 --> 00:05:35,600
-belongs to a side that lives somewhere else.
+00:05:32,557 --> 00:05:35,600
+A job that ends at a place
 
 76
-00:05:36,800 --> 00:05:39,409
-I save, and lint says clean.
+00:05:36,050 --> 00:05:39,528
+belongs to a side that lives somewhere else.
 
 77
-00:05:41,209 --> 00:05:44,687
-And today that's less than half the check.
+00:05:40,728 --> 00:05:43,337
+I save, and lint says clean.
 
 78
-00:05:45,587 --> 00:05:48,196
-Lint knows the five first words,
+00:05:45,137 --> 00:05:48,615
+And today that's less than half the check.
 
 79
-00:05:48,646 --> 00:05:51,689
-so a misspelled one gets a warning.
+00:05:49,515 --> 00:05:52,124
+Lint knows the five first words,
 
 80
-00:05:52,589 --> 00:05:55,633
-But it doesn't read what comes after.
+00:05:52,574 --> 00:05:55,617
+so a misspelled one gets a warning.
 
 81
-00:05:57,433 --> 00:06:00,041
-Write the number as a word,
+00:05:56,517 --> 00:05:59,561
+But it doesn't read what comes after.
 
 82
-00:06:00,491 --> 00:06:02,665
-and the job never finishes.
+00:06:01,361 --> 00:06:03,970
+Write the number as a word,
 
 83
-00:06:03,565 --> 00:06:07,913
-Name a good you don't have, and it never finishes.
+00:06:04,420 --> 00:06:06,593
+and the job never finishes.
 
 84
-00:06:09,713 --> 00:06:13,191
-And here's the one that will catch you.
+00:06:07,493 --> 00:06:11,841
+Name a good you don't have, and it never finishes.
 
 85
-00:06:14,091 --> 00:06:16,700
-You can't write, destroy three gleaners.
+00:06:13,641 --> 00:06:17,120
+And here's the one that will catch you.
 
 86
-00:06:17,600 --> 00:06:20,209
-The game takes the s off,
+00:06:18,020 --> 00:06:20,628
+You can't write, destroy three gleaners.
 
 87
-00:06:20,659 --> 00:06:24,572
-looks for something called a gleaner, and finds nothing.
+00:06:21,528 --> 00:06:24,137
+The game takes the s off,
 
 88
-00:06:25,472 --> 00:06:27,211
-So write enemies instead.
+00:06:24,587 --> 00:06:28,500
+looks for something called a gleaner, and finds nothing.
 
 89
-00:06:28,411 --> 00:06:31,454
-At home, the farmers offer one job.
+00:06:29,400 --> 00:06:31,139
+So write enemies instead.
 
 90
-00:06:32,354 --> 00:06:34,093
-I pay the levy,
+00:06:32,339 --> 00:06:35,383
+At home, the farmers offer one job.
 
 91
-00:06:34,543 --> 00:06:38,891
-and now there are two, and the escort pays more.
+00:06:36,283 --> 00:06:38,022
+I pay the levy,
 
 92
-00:06:40,691 --> 00:06:45,474
-I take both, and here they are in the Quest Log.
+00:06:38,472 --> 00:06:42,820
+and now there are two, and the escort pays more.
 
 93
-00:06:46,374 --> 00:06:50,287
-I engage the escort, and on arrival it's done.
+00:06:44,620 --> 00:06:49,402
+I take both, and here they are in the Quest Log.
 
 94
-00:06:52,087 --> 00:06:55,565
-The miners' office has my two new jobs.
+00:06:50,302 --> 00:06:54,215
+I engage the escort, and on arrival it's done.
 
 95
-00:06:56,465 --> 00:07:01,683
-I take them, and the clock on the relay run is running.
+00:06:56,015 --> 00:06:59,493
+The miners' office has my two new jobs.
 
 96
-00:07:03,483 --> 00:07:06,091
-The survey wants a dead ship,
+00:07:00,393 --> 00:07:05,611
+I take them, and the clock on the relay run is running.
 
 97
-00:07:06,541 --> 00:07:09,150
-and I know where one is.
+00:07:07,411 --> 00:07:10,020
+The survey wants a dead ship,
 
 98
-00:07:10,050 --> 00:07:12,224
-And the patrol wants enemies,
+00:07:10,470 --> 00:07:13,078
+and I know where one is.
 
 99
-00:07:12,674 --> 00:07:15,717
-and I know where those are too.
+00:07:13,978 --> 00:07:16,152
+And the patrol wants enemies,
 
 100
-00:07:16,917 --> 00:07:19,961
-The Gleaners will deal with me now,
+00:07:16,602 --> 00:07:19,646
+and I know where those are too.
 
 101
-00:07:20,411 --> 00:07:22,585
-so I take their salvage.
+00:07:20,846 --> 00:07:23,889
+The Gleaners will deal with me now,
 
 102
-00:07:24,385 --> 00:07:26,993
-When it's done, watch the farmers.
+00:07:24,339 --> 00:07:26,513
+so I take their salvage.
 
 103
-00:07:27,893 --> 00:07:30,502
-My standing with them just dropped,
+00:07:28,313 --> 00:07:30,922
+When it's done, watch the farmers.
 
 104
-00:07:30,952 --> 00:07:33,561
-and I never spoke to them.
+00:07:31,822 --> 00:07:34,430
+My standing with them just dropped,
 
 105
-00:07:35,361 --> 00:07:40,143
-Now the relay run takes me home, inside its ten minutes.
+00:07:34,880 --> 00:07:37,489
+and I never spoke to them.
 
 106
-00:07:41,043 --> 00:07:43,652
-And look at the farmers' list.
+00:07:39,289 --> 00:07:44,072
+Now the relay run takes me home, inside its ten minutes.
 
 107
-00:07:44,552 --> 00:07:49,770
-Patrol is back, and it pays a little more than last time.
+00:07:44,972 --> 00:07:47,580
+And look at the farmers' list.
 
 108
-00:07:51,570 --> 00:07:55,048
-That's the thing to remember about a job.
+00:07:48,480 --> 00:07:53,698
+Patrol is back, and it pays a little more than last time.
 
 109
-00:07:55,948 --> 00:07:57,687
-It never runs out.
+00:07:55,498 --> 00:07:58,976
+That's the thing to remember about a job.
 
 110
-00:07:58,587 --> 00:08:05,543
-So think about how often you want a crew to be able to please each side.
+00:07:59,876 --> 00:08:01,615
+It never runs out.
 
 111
-00:08:06,743 --> 00:08:08,483
-Now it's your turn.
+00:08:02,515 --> 00:08:09,472
+So think about how often you want a crew to be able to please each side.
 
 112
-00:08:09,383 --> 00:08:14,600
-Write one job for each side that only that side would offer.
+00:08:10,672 --> 00:08:12,411
+Now it's your turn.
 
 113
-00:08:15,500 --> 00:08:18,109
-Make one of them tier two.
+00:08:13,311 --> 00:08:18,528
+Write one job for each side that only that side would offer.
 
 114
-00:08:18,559 --> 00:08:22,037
-Make one that costs the crew somewhere else.
+00:08:19,428 --> 00:08:22,037
+Make one of them tier two.
 
 115
-00:08:22,937 --> 00:08:27,720
-And put one against the clock, and let it fail once.
+00:08:22,487 --> 00:08:25,965
+Make one that costs the crew somewhere else.
 
 116
-00:08:29,520 --> 00:08:32,563
-Next time, your universe gets a story,
+00:08:26,865 --> 00:08:31,648
+And put one against the clock, and let it fail once.
 
 117
-00:08:33,013 --> 00:08:35,622
+00:08:33,448 --> 00:08:36,491
+Next time, your universe gets a story,
+
+118
+00:08:36,941 --> 00:08:39,550
 with a beginning and an end.

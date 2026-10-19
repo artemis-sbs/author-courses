@@ -63,8 +63,9 @@ s06_the_briefing_10	and the second is why it matters.
 s06_the_briefing_11	And an icon can start a line, or be a bullet.
 s06_the_briefing_12	An hourglass for the clock,
 s06_the_briefing_13	and a crosshair for the hulls.
-s06_the_briefing_14	Lint doesn't check those names,
-s06_the_briefing_15	so copy them from the page.
+s06_the_briefing_14	Lint checks the icon names,
+s06_the_briefing_15	but not the name of a model,
+s06_the_briefing_16	so copy that one from the page.
 s07_on_offer_0	A job nobody offers is never seen.
 s07_on_offer_1	So, back up to the sides.
 s07_on_offer_2	The farmers get patrol, escort and strike.

@@ -58,16 +58,17 @@ s07_the_second_sitting_2	The Quest Log is just as I left it.
 s07_the_second_sitting_3	Now for the place the Gleaners won't talk about.
 s07_the_second_sitting_4	Three cards come up.
 s07_the_second_sitting_5	The place, the guards, and the one I wrote.
-s07_the_second_sitting_6	I count eleven ships.
-s07_the_second_sitting_7	Four of them are a long way off,
-s07_the_second_sitting_8	three are by the wreck,
-s07_the_second_sitting_9	and four are right in front of me.
-s07_the_second_sitting_10	That's the battle line from last time.
-s07_the_second_sitting_11	I have to tell you something about this last row.
-s07_the_second_sitting_12	When I checked this page,
-s07_the_second_sitting_13	a script told the game the four ships were destroyed.
-s07_the_second_sitting_14	Nobody has fought this fight.
-s07_the_second_sitting_15	So this is the first time, and we'll find out together.
+s07_the_second_sitting_6	Now I count the ships.
+s07_the_second_sitting_7	Three are by the wreck,
+s07_the_second_sitting_8	and four or five are right in front of me.
+s07_the_second_sitting_9	That's the battle line from last time.
+s07_the_second_sitting_10	If the dice made this an enemy system,
+s07_the_second_sitting_11	there are more, a long way off.
+s07_the_second_sitting_12	I have to tell you something about this last row.
+s07_the_second_sitting_13	When I checked this page,
+s07_the_second_sitting_14	a script told the game the four ships were destroyed.
+s07_the_second_sitting_15	Nobody has fought this fight.
+s07_the_second_sitting_16	So this is the first time, and we'll find out together.
 s08_after_you_play_0	There are three things to read afterward.
 s08_after_you_play_1	The runtime log, which should be empty.
 s08_after_you_play_2	Your ticks, every one of them.
