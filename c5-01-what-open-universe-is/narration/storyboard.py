@@ -35,6 +35,8 @@ until the stills are taken. Never caption a face. Press order:
 LECTURE = "c5-01-what-open-universe-is"
 TITLE = ("Class 5, Lecture 1", "What Open Universe is", "A whole galaxy, from one file")
 MISSION = "OpenUniverse"
+TEMPLATE = "ou"               # game.py: sandboxed (Open Universe writes saves)
+PROBE_FROM = "OpenUniverse"   # game.py: the probe is the mission itself
 FILE = "silver_reach.amd"
 
 STATES = {}

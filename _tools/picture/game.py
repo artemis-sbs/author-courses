@@ -140,7 +140,8 @@ def wants_sandbox(lecture, asked, state="final"):
     if asked is not None:
         return asked
     _, _, sb = board.load(lecture)
-    return template_of(sb, states.files_of(sb, state)) in SANDBOX_TEMPLATES
+    named = getattr(sb, "TEMPLATE", None)                # no state needed to know it
+    return (named or template_of(sb, states.files_of(sb, state))) in SANDBOX_TEMPLATES
 
 
 # --- the player's saves --------------------------------------------------------------------
@@ -244,9 +245,11 @@ def build(lecture, state, patches, amd_patches=(), sandbox=False):
     os.makedirs(os.path.dirname(probe), exist_ok=True)
     if sandbox:
         sandbox_lib()
-    files = states.files_of(sb, state)
-    template = template_of(sb, files)
     source = getattr(sb, "PROBE_FROM", None)
+    # A lecture that only PLAYS a shipped mission (C5-01) has no states at all: the probe is
+    # that mission as it is.
+    files = {} if (source and not sb.STATES) else states.files_of(sb, state)
+    template = template_of(sb, files)
     if source:
         # A COPY OF A SHIPPED MISSION (Class 5, Lecture 14's AdmiralLab is a copy of
         # OpenUniverse): its committed files, then the state over them. No template would
@@ -319,7 +322,9 @@ def start(lecture, state, patches, consoles, wait, amd_patches=(), sandbox=False
     build(lecture, state, patches, amd_patches, sandbox)
     with open(STATE, "w", encoding="utf-8") as fh:
         json.dump({"lecture": lecture, "sandbox": sandbox, "state": state, "probe": PROBE}, fh)
-    args = [PY, "sbs.pyz", "run", consoles, "-m", probe_name(sandbox), "map=0"]
+    args = [PY, "sbs.pyz", "run", consoles, "-m", probe_name(sandbox)]
+    if not os.environ.get("PIC_NO_MAP"):              # PIC_NO_MAP=1: stop on the start screen
+        args.append("map=0")
     if seed:
         args.append(f"seed={seed}")
     subprocess.Popen(args, cwd=MISSIONS, env=ENV, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

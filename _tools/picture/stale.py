@@ -60,7 +60,8 @@ def library_sha():
 
 
 def _state_sha(sb, state):
-    files = states.files_of(sb, state)
+    # A lecture that only PLAYS a shipped mission (C5-01) has no states: nothing to hash.
+    files = states.files_of(sb, state) if sb.STATES else {}
     return _sha(sorted(files.items()))
 
 
