@@ -323,141 +323,141 @@ and lint still says clean.
 If I played that, my universe wouldn't load.
 
 82
-00:05:59,554 --> 00:06:04,337
-The game would start anyway, with a place called Home Port,
+00:05:59,554 --> 00:06:03,467
+The game would start anyway, with an empty sky,
 
 83
-00:06:04,787 --> 00:06:07,830
+00:06:03,917 --> 00:06:06,961
 and none of my work in it.
 
 84
-00:06:08,730 --> 00:06:14,383
+00:06:07,861 --> 00:06:13,513
 So the title has to be spelled the same way, all four times.
 
 85
-00:06:15,283 --> 00:06:17,891
+00:06:14,413 --> 00:06:17,022
 If it ever happens to you,
 
 86
-00:06:18,341 --> 00:06:22,254
+00:06:17,472 --> 00:06:21,385
 the runtime log in your mission folder says so.
 
 87
-00:06:23,154 --> 00:06:25,328
+00:06:22,285 --> 00:06:24,459
 I put the letter back.
 
 88
-00:06:26,528 --> 00:06:31,746
+00:06:25,659 --> 00:06:30,876
 Here's the card, with my station's name on it, and my line.
 
 89
-00:06:32,646 --> 00:06:35,254
+00:06:31,776 --> 00:06:34,385
 On Comms, I select a station,
 
 90
-00:06:35,704 --> 00:06:39,183
+00:06:34,835 --> 00:06:38,313
 and I take the cargo run it offers.
 
 91
-00:06:40,083 --> 00:06:43,561
+00:06:39,213 --> 00:06:42,691
 Then on Helm, I open the Quest Log,
 
 92
-00:06:44,011 --> 00:06:47,489
+00:06:43,141 --> 00:06:46,620
 I pick the run, and I press Engage.
 
 93
-00:06:48,389 --> 00:06:50,998
+00:06:47,520 --> 00:06:50,128
 And that's the jump you're watching.
 
 94
-00:06:52,798 --> 00:06:56,276
+00:06:51,928 --> 00:06:55,407
 We're somewhere new, and the run has paid.
 
 95
-00:06:57,176 --> 00:07:00,220
+00:06:56,307 --> 00:06:59,350
 And look at this group, Charted Locations.
 
 96
-00:07:00,670 --> 00:07:02,843
+00:06:59,800 --> 00:07:01,974
 Kestrel Relay is in it,
 
 97
-00:07:03,293 --> 00:07:05,467
+00:07:02,424 --> 00:07:04,598
 and that's my way home.
 
 98
-00:07:06,367 --> 00:07:08,976
+00:07:05,498 --> 00:07:08,107
 But I'm not going home yet.
 
 99
-00:07:09,426 --> 00:07:12,035
+00:07:08,557 --> 00:07:11,165
 I'm closing the game right here.
 
 100
-00:07:13,235 --> 00:07:15,843
+00:07:12,365 --> 00:07:14,974
 This is what the game kept.
 
 101
-00:07:16,743 --> 00:07:19,787
+00:07:15,874 --> 00:07:18,917
 It's a file named after my title,
 
 102
-00:07:20,237 --> 00:07:23,280
+00:07:19,367 --> 00:07:22,411
 and here's the system I stopped in.
 
 103
-00:07:25,080 --> 00:07:28,993
+00:07:24,211 --> 00:07:28,124
 I start the game again, with the same command,
 
 104
-00:07:29,443 --> 00:07:34,661
+00:07:28,574 --> 00:07:33,791
 and I'm where I left off, with the money from the run.
 
 105
-00:07:35,561 --> 00:07:40,343
+00:07:34,691 --> 00:07:39,474
 Then I pick Kestrel Relay, I press Engage, and we're home.
 
 106
-00:07:42,143 --> 00:07:45,187
+00:07:41,274 --> 00:07:44,317
 Two things to remember about that file.
 
 107
-00:07:46,087 --> 00:07:48,261
+00:07:45,217 --> 00:07:47,391
 It's named from the title,
 
 108
-00:07:48,711 --> 00:07:53,928
+00:07:47,841 --> 00:07:53,059
 so if you change the title, you start a new, empty game.
 
 109
-00:07:54,828 --> 00:07:57,437
+00:07:53,959 --> 00:07:56,567
 And to begin again on purpose,
 
 110
-00:07:57,887 --> 00:08:00,930
+00:07:57,017 --> 00:08:00,061
 close the game and delete the file.
 
 111
-00:08:02,130 --> 00:08:03,870
+00:08:01,261 --> 00:08:03,000
 Now make it yours:
 
 112
-00:08:04,320 --> 00:08:09,537
+00:08:03,450 --> 00:08:08,667
 your title, your file name, your home port, and your two lines.
 
 113
-00:08:10,437 --> 00:08:16,524
+00:08:09,567 --> 00:08:15,654
 Before you play, write down what you think the save file will be called,
 
 114
-00:08:16,974 --> 00:08:19,148
+00:08:16,104 --> 00:08:18,278
 and then go and look.
 
 115
-00:08:20,948 --> 00:08:24,426
+00:08:20,078 --> 00:08:23,557
 Next time, we fill this place with people:
 
 116
-00:08:24,876 --> 00:08:28,354
+00:08:24,007 --> 00:08:27,485
 three factions, and one of them shoots first.

@@ -189,7 +189,7 @@ STILLS = {
     "game_c52_arrived": ("game", "Helm after the jump: the new system, the cargo run paid"),
     "game_c52_charted": ("game", "Helm's Quest Log, Charted Locations open with Kestrel Relay in it"),
     "game_c52_resumed": ("game", "The second start of the game: the ship in the system it stopped in, with the pay from the run"),
-    "game_c52_home_port": ("game", "State typo: Helm at the start with the card reading Home Port, and no Kestrel Relay anywhere"),
+    "game_c52_home_port": ("game", "State typo: Helm at the start with nothing around the ship - no station, no Kestrel Relay (the runtime log names the title it looked for)"),
     # drawn
     "card_title": ("card", "title", {}),
     "card_modes": ("card", "table", {"heading": "Step 5 - The scenario", "nth": 1, "kicker": "What Mode says"}),

@@ -79,7 +79,7 @@ s08_check_it_1	But I want you to see the one it can't catch.
 s08_check_it_2	I change a single letter of the title, on this one line,
 s08_check_it_3	and lint still says clean.
 s08_check_it_4	If I played that, my universe wouldn't load.
-s08_check_it_5	The game would start anyway, with a place called Home Port,
+s08_check_it_5	The game would start anyway, with an empty sky,
 s08_check_it_6	and none of my work in it.
 s08_check_it_7	So the title has to be spelled the same way, all four times.
 s08_check_it_8	If it ever happens to you,

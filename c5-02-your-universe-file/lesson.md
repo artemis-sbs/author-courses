@@ -320,7 +320,7 @@ Lint says `clean` for every one of these.
 
 | The mistake | What the game does |
 |---|---|
-| The title spelled two ways. One capital or one extra space is enough | The universe is not loaded. The game still starts, with no sides and no landmark, and home is called Home Port |
+| The title spelled two ways. One capital or one extra space is enough | The universe is not loaded. The game still starts, with nothing around the ship: no station, no sides and no landmark. `mast.runtime.log` names the title it looked for |
 | The file name after `universe:` is not your file's exact name | The same |
 | `QUEST_ENGAGE_ENABLED` line deleted | No Engage button. A cargo run can be taken and never flown |
 | `WAYPOINTS_ENABLED` line deleted | No list of charted places, so no way back |
@@ -393,7 +393,7 @@ first file as it was. Class 6 Lecture 2 uses it.
 | `sbs create` says `Error: no template 'ou'`, or never prints `MyUniverse is ready.` | Your tool is older than this page. Type `sbs update`, then try again |
 | The start screen says My Universe | Step 7, part 1 was not done. Replace All should have found 4 |
 | The start screen has no **Save Slot** | Your folder was made before the dial was added. Nothing is wrong: the game plays in slot 1, as this page says. Class 6 Lecture 2 gives the one line that adds the dial |
-| The game starts, home is called Home Port, and there is no Kestrel Relay | The universe file was not loaded, or the landmark was not. Read `mast.runtime.log`. Then check the title is spelled one way, the file name after `universe:` is right, and the landmark has `At: 0, 0` |
+| The game starts with no station, or with no Kestrel Relay | The universe file was not loaded, or the landmark was not. Read `mast.runtime.log`: a title spelled two ways is named there. Then check the title is spelled one way, the file name after `universe:` is right, and the landmark has `At: 0, 0` |
 | No ship and no station. Nothing happens | `story.mast` is broken. Run `sbs lint MyUniverse` and read the first error |
 | No **Engage** button in Helm's Quest Log | The two travel lines are missing or changed. See Step 7, part 4. If your `story.mast` never had them, type them directly under the first `UNIVERSE_SELECT` line. Both start at the left edge, and `True` has a capital T |
 | The Quest Log says "Manage quests at the Admiral or Comms console." | You are on Helm, looking at a job. Helm flies a job. Comms takes it and gives it up |

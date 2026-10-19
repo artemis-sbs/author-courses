@@ -191,7 +191,7 @@ and the second keeps the list of charted places. ||"
 **Say:** "Lint reads both files now, and it says clean. ||| But I want you to see the one
 it can't catch. || I change a single letter of the title, on this one line, | and lint
 still says clean. || If I played that, my universe wouldn't load. | The game would start
-anyway, with a place called Home Port, | and none of my work in it. || So the title has to
+anyway, with an empty sky, | and none of my work in it. || So the title has to
 be spelled the same way, all four times. || If it ever happens to you, | the runtime log
 in your mission folder says so. || I put the letter back. ||"
 
