@@ -11,9 +11,9 @@ s02_why_the_dice_aren_t_enough_2	Well, do they really?
 s02_why_the_dice_aren_t_enough_3	Last time I counted four Gleaner ships at the Bone Pile.
 s02_why_the_dice_aren_t_enough_4	But they're only there because the game rolled an enemy system,
 s02_why_the_dice_aren_t_enough_5	and every new game rolls again.
-s02_why_the_dice_aren_t_enough_6	In the game I measured,
-s02_why_the_dice_aren_t_enough_7	five of the nine systems in that region were not enemy systems.
-s02_why_the_dice_aren_t_enough_8	If the Bone Pile is one of those,
+s02_why_the_dice_aren_t_enough_6	I asked the game about four hundred new games,
+s02_why_the_dice_aren_t_enough_7	and in about four of every ten the Bone Pile was not an enemy system.
+s02_why_the_dice_aren_t_enough_8	In those,
 s02_why_the_dice_aren_t_enough_9	the crew arrives for the last fight and finds three raiders.
 s03_the_card_0	So here's a card.
 s03_the_card_1	It's the only new piece of MAST in this whole class,

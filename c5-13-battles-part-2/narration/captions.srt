@@ -51,297 +51,297 @@ But they're only there because the game rolled an enemy system,
 and every new game rolls again.
 
 14
-00:00:58,163 --> 00:01:00,337
-In the game I measured,
+00:00:58,163 --> 00:01:02,076
+I asked the game about four hundred new games,
 
 15
-00:01:00,787 --> 00:01:06,004
-five of the nine systems in that region were not enemy systems.
+00:01:02,526 --> 00:01:09,048
+and in about four of every ten the Bone Pile was not an enemy system.
 
 16
-00:01:06,904 --> 00:01:10,383
-If the Bone Pile is one of those,
+00:01:09,948 --> 00:01:10,948
+In those,
 
 17
-00:01:10,833 --> 00:01:15,615
+00:01:11,398 --> 00:01:16,180
 the crew arrives for the last fight and finds three raiders.
 
 18
-00:01:16,815 --> 00:01:18,554
+00:01:17,380 --> 00:01:19,120
 So here's a card.
 
 19
-00:01:19,454 --> 00:01:24,237
+00:01:20,020 --> 00:01:24,802
 It's the only new piece of MAST in this whole class,
 
 20
-00:01:24,687 --> 00:01:29,035
+00:01:25,252 --> 00:01:29,600
 and you don't need to be able to write it.
 
 21
-00:01:29,935 --> 00:01:32,543
+00:01:30,500 --> 00:01:33,109
 You copy it from the page,
 
 22
-00:01:32,993 --> 00:01:36,472
+00:01:33,559 --> 00:01:37,037
 to the very end of the story file.
 
 23
-00:01:38,272 --> 00:01:40,880
+00:01:38,837 --> 00:01:41,446
 One of these lines is long.
 
 24
-00:01:41,780 --> 00:01:44,824
+00:01:42,346 --> 00:01:45,389
 It's one line, so don't break it.
 
 25
-00:01:46,624 --> 00:01:49,667
+00:01:47,189 --> 00:01:50,233
 Let's read it once, from the top.
 
 26
-00:01:50,567 --> 00:01:54,046
+00:01:51,133 --> 00:01:54,611
 The line with two slashes is a route.
 
 27
-00:01:54,946 --> 00:01:57,989
+00:01:55,511 --> 00:01:58,554
 The game says, a ship has arrived,
 
 28
-00:01:58,439 --> 00:02:00,613
+00:01:59,004 --> 00:02:01,178
 and this block hears it.
 
 29
-00:02:01,513 --> 00:02:05,861
+00:02:02,078 --> 00:02:06,426
 The rest of that line says, only in this system.
 
 30
-00:02:07,661 --> 00:02:09,835
+00:02:08,226 --> 00:02:10,400
 Then it waits one second.
 
 31
-00:02:10,735 --> 00:02:15,952
+00:02:11,300 --> 00:02:16,517
 Then it asks, is this step of the story open right now?
 
 32
-00:02:16,402 --> 00:02:18,141
+00:02:16,967 --> 00:02:18,707
 If not, it stops.
 
 33
-00:02:19,941 --> 00:02:21,680
+00:02:20,507 --> 00:02:22,246
 And if it is,
 
 34
-00:02:22,130 --> 00:02:26,043
+00:02:22,696 --> 00:02:26,609
 it finds where the system is, makes one fleet,
 
 35
-00:02:26,493 --> 00:02:29,102
+00:02:27,059 --> 00:02:29,667
 and shows the crew a card.
 
 36
-00:02:30,302 --> 00:02:34,215
+00:02:30,867 --> 00:02:34,780
 There are seven things you change, and nothing else.
 
 37
-00:02:36,015 --> 00:02:38,624
+00:02:36,580 --> 00:02:39,189
 The two numbers of the system,
 
 38
-00:02:39,074 --> 00:02:41,683
+00:02:39,639 --> 00:02:42,248
 which you copy from the landmark.
 
 39
-00:02:42,583 --> 00:02:45,626
+00:02:43,148 --> 00:02:46,191
 The key of the step, in quotes.
 
 40
-00:02:46,526 --> 00:02:49,570
+00:02:47,091 --> 00:02:50,135
 The kind of ship, and the tier,
 
 41
-00:02:50,020 --> 00:02:53,933
+00:02:50,585 --> 00:02:54,498
 and you know both of those from last time.
 
 42
-00:02:54,833 --> 00:02:58,311
+00:02:55,398 --> 00:02:58,876
 The key of the side they fight for,
 
 43
-00:02:58,761 --> 00:03:02,239
+00:02:59,326 --> 00:03:02,804
 which has to come first inside those quotes.
 
 44
-00:03:03,139 --> 00:03:05,748
+00:03:03,704 --> 00:03:06,313
 How far away they form up.
 
 45
-00:03:06,648 --> 00:03:09,257
+00:03:07,213 --> 00:03:09,822
 And the sentence the crew reads.
 
 46
-00:03:10,457 --> 00:03:15,239
+00:03:11,022 --> 00:03:15,804
 Two parts of this card look like details, and they aren't.
 
 47
-00:03:17,039 --> 00:03:19,648
+00:03:17,604 --> 00:03:20,213
 The first is the word shared.
 
 48
-00:03:20,548 --> 00:03:25,330
+00:03:21,113 --> 00:03:25,896
 A route without it runs once for every console that's connected.
 
 49
-00:03:26,230 --> 00:03:30,578
+00:03:26,796 --> 00:03:31,143
 Anything that makes a ship goes on a shared route,
 
 50
-00:03:31,028 --> 00:03:34,072
+00:03:31,593 --> 00:03:34,637
 or every console makes its own fleet.
 
 51
-00:03:35,872 --> 00:03:38,480
+00:03:36,437 --> 00:03:39,046
 The second is the one-second wait.
 
 52
-00:03:39,380 --> 00:03:41,120
+00:03:39,946 --> 00:03:41,685
 When the crew arrives,
 
 53
-00:03:41,570 --> 00:03:47,222
+00:03:42,135 --> 00:03:47,787
 the game finishes one step and reveals the next, at that same moment.
 
 54
-00:03:48,122 --> 00:03:51,600
+00:03:48,687 --> 00:03:52,165
 Without the wait, my card looks too early.
 
 55
-00:03:52,050 --> 00:03:55,963
+00:03:52,615 --> 00:03:56,528
 It sees a hidden step, and it makes nothing.
 
 56
-00:03:56,863 --> 00:04:02,080
+00:03:57,428 --> 00:04:02,646
 I took that line out to check, and that's exactly what happened.
 
 57
-00:04:03,280 --> 00:04:05,889
+00:04:03,846 --> 00:04:06,454
 So when is the battle there?
 
 58
-00:04:06,789 --> 00:04:08,528
+00:04:07,354 --> 00:04:09,093
 I played every case.
 
 59
-00:04:10,328 --> 00:04:13,807
+00:04:10,893 --> 00:04:14,372
 If the crew wanders in early, there's nothing,
 
 60
-00:04:14,257 --> 00:04:16,865
+00:04:14,822 --> 00:04:17,430
 because the step is still hidden.
 
 61
-00:04:17,765 --> 00:04:21,678
+00:04:18,330 --> 00:04:22,243
 If they arrive on the story's business, it's there.
 
 62
-00:04:23,478 --> 00:04:28,696
+00:04:24,043 --> 00:04:29,261
 If they run and come back, there's one battle line, not two,
 
 63
-00:04:29,146 --> 00:04:33,059
+00:04:29,711 --> 00:04:33,624
 because the system is taken down when they leave.
 
 64
-00:04:33,959 --> 00:04:36,567
+00:04:34,524 --> 00:04:37,133
 After a Continue, it's there again.
 
 65
-00:04:37,467 --> 00:04:40,946
+00:04:38,033 --> 00:04:41,511
 And once the step is done, it's gone.
 
 66
-00:04:42,746 --> 00:04:44,485
+00:04:43,311 --> 00:04:45,050
 There's one warning here.
 
 67
-00:04:45,385 --> 00:04:49,298
+00:04:45,950 --> 00:04:49,863
 The tier on the card doesn't move with Difficulty,
 
 68
-00:04:49,748 --> 00:04:53,661
+00:04:50,313 --> 00:04:54,226
 so add it to your budget from last time.
 
 69
-00:04:54,561 --> 00:04:57,604
+00:04:55,126 --> 00:04:58,170
 Mine comes to eleven or twelve ships,
 
 70
-00:04:58,054 --> 00:05:01,098
+00:04:58,620 --> 00:05:01,663
 which is a lot for one cruiser.
 
 71
-00:05:02,298 --> 00:05:05,776
+00:05:02,863 --> 00:05:06,341
 Lint says clean, as it did last time.
 
 72
-00:05:06,676 --> 00:05:12,763
+00:05:07,241 --> 00:05:13,328
 And once again, it can't see most of what goes wrong on this card,
 
 73
-00:05:13,213 --> 00:05:16,257
+00:05:13,778 --> 00:05:16,822
 so use the list on the page.
 
 74
-00:05:18,057 --> 00:05:20,230
+00:05:18,622 --> 00:05:20,796
 Now let's play the story.
 
 75
-00:05:21,130 --> 00:05:24,174
+00:05:21,696 --> 00:05:24,739
 The Tern first, and then the ledger.
 
 76
-00:05:24,624 --> 00:05:28,537
+00:05:25,189 --> 00:05:29,102
 And then the place the Gleaners won't talk about.
 
 77
-00:05:30,337 --> 00:05:32,076
+00:05:30,902 --> 00:05:32,641
 There are three cards.
 
 78
-00:05:32,526 --> 00:05:35,135
+00:05:33,091 --> 00:05:35,700
 The place, the guards, and mine.
 
 79
-00:05:36,035 --> 00:05:38,643
+00:05:36,600 --> 00:05:39,209
 Now I'll run, and come back.
 
 80
-00:05:39,543 --> 00:05:41,717
+00:05:40,109 --> 00:05:42,283
 There's still one battle line.
 
 81
-00:05:42,917 --> 00:05:44,657
+00:05:43,483 --> 00:05:45,222
 Now it's your turn.
 
 82
-00:05:45,557 --> 00:05:51,643
+00:05:46,122 --> 00:05:52,209
 Find the one place in your story where the fight has to be there.
 
 83
-00:05:52,543 --> 00:05:56,891
+00:05:53,109 --> 00:05:57,457
 If you don't have one, you don't need this card.
 
 84
-00:05:58,691 --> 00:06:00,865
+00:05:59,257 --> 00:06:01,430
 If you do, paste it,
 
 85
-00:06:01,315 --> 00:06:06,098
+00:06:01,880 --> 00:06:06,663
 change the seven words, and then go there early on purpose.
 
 86
-00:06:06,998 --> 00:06:09,172
+00:06:07,563 --> 00:06:09,737
 There should be nothing waiting.
 
 87
-00:06:10,972 --> 00:06:15,754
+00:06:11,537 --> 00:06:16,320
 Next time, somebody else gets to play your universe, from above.

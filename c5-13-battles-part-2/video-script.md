@@ -86,8 +86,8 @@ Breakers region and `Enemy mix: 60%`.
 **Say:** "Here's the end of my story. || It says four Gleaner hulls stand between you
 and them. ||| Well, do they really? || Last time I counted four Gleaner ships at the Bone Pile. ||
 But they're only there because the game rolled an enemy system, | and every new game
-rolls again. ||| In the game I measured, | five of the nine systems in that region were
-not enemy systems. || If the Bone Pile is one of those, | the crew arrives for the last
+rolls again. ||| I asked the game about four hundred new games, | and in about four of
+every ten the Bone Pile was not an enemy system. || In those, | the crew arrives for the last
 fight and finds three raiders. ||"
 
 ### 3. The card

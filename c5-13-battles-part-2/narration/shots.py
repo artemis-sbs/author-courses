@@ -24,7 +24,7 @@ SHOTS = [
     {
         "id": "s02_why_the_dice_aren_t_enough",
         "title": "Why the dice aren't enough",
-        "frames": 1388,
+        "frames": 1405,
         "captions": [
             ("Here's the end of my story.", 0, 78),
             ('It says four Gleaner hulls stand between you and them.', 105, 236),
@@ -32,10 +32,10 @@ SHOTS = [
             ('Last time I counted four Gleaner ships at the Bone Pile.', 369, 512),
             ("But they're only there because the game rolled an enemy system,", 539, 683),
             ('and every new game rolls again.', 696, 775),
-            ('In the game I measured,', 829, 894),
-            ('five of the nine systems in that region were not enemy systems.', 907, 1064),
-            ('If the Bone Pile is one of those,', 1091, 1195),
-            ('the crew arrives for the last fight and finds three raiders.', 1209, 1352),
+            ('I asked the game about four hundred new games,', 829, 946),
+            ('and in about four of every ten the Bone Pile was not an enemy system.', 959, 1155),
+            ('In those,', 1182, 1212),
+            ('the crew arrives for the last fight and finds three raiders.', 1226, 1369),
         ],
         "pauses": [0.9, 1.8, 0.9, 0.9, 0.45, 1.8, 0.45, 0.9, 0.45, 1.2],
     },
