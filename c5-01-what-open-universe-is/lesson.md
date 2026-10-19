@@ -50,11 +50,8 @@ If the answer is `File Not Found`, fetch it:
 sbs fetch OpenUniverse -b v1.4.0_dev
 ```
 
-*[To be confirmed before this page is published: whether the game as installed already
-has this folder, and whether this is the line that fetches it. On the day this page was
-written, the Open Universe mission was published on a branch named `v1.4.0_dev`, and
-`sbs fetch OpenUniverse` with no `-b` fetched an older one that has no Silver Reach in
-it. The command was read, not run.]*
+Type the `-b v1.4.0_dev`. Without it, `sbs fetch` gets an older Open Universe that has no
+Silver Reach in it.
 
 This is the other job of `sbs fetch`, the one Class 1 told you to keep away from your own
 mission: it downloads a whole mission and puts it in a folder of that name. That is what
