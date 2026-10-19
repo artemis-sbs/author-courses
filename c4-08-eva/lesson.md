@@ -597,17 +597,16 @@ they are on the screen, nobody has seen. If your screen differs, the screen is r
 | The altar's scene does not open for the suit | The same causes as in Lecture 4: the key after `Scene:`, or the scene itself. Lint names both |
 | The game ends in a loss while the crew is still inside | The clock. Make `Fails when:` longer |
 
-**If a console closes when somebody suits up.** Your libraries are older than this
-lecture. They handed the console its suit in the same moment the suit was made, and the
-game closes a console given a ship it has not been sent yet. It is not your file. Get
-today's libraries:
+**If a console closes when somebody suits up.** Your game is older than this lecture.
+Older builds of Artemis Cosmos close a console that is handed a ship the moment the ship
+is made, which is what SUIT UP does. It is not your file. Update the game, and get
+today's libraries to go with it:
 
 ```
 sbs fetch MyRuin --update-libs
 ```
 
-Now SUIT UP takes about five seconds before the console becomes the suit, and the console
-stays open.
+Now the console becomes the suit straight away, and stays open.
 
 ## Exercise
 
