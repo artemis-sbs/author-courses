@@ -100,6 +100,66 @@ def stop_game():
     subprocess.run(["taskkill", "/IM", "Artemis3-x64-release.exe", "/F"], capture_output=True)
 
 
+# --- crash watch ---------------------------------------------------------------
+# The exe installs its own unhandled-exception filter, so a crashed window usually leaves
+# no dump and no event-log entry: it is just gone (C5-04's Comms, 2026-10-19). ProcDump
+# attached as a debugger sees the exception before that filter does. Every game window
+# gets one at start (and `list` picks up any window opened since), writing a MiniPlus dump
+# on an unhandled exception and a log of when the process went away. `stop` reports any
+# window that died before it was stopped.
+PROCDUMP = r"E:\a\Cosmos-dev\tools\procdump64.exe"
+CRASH_DIR = r"E:\a\Cosmos-dev\crash_evidence\game_py"
+WATCH = os.path.join(MISSIONS, f"{PROBE}.watch.json")
+
+
+def _watch_load():
+    if os.path.exists(WATCH):
+        with open(WATCH, encoding="utf-8") as fh:
+            return json.load(fh)
+    return {}
+
+
+def watch_crashes(lecture):
+    """Attach ProcDump to every game window not already watched."""
+    if not os.path.exists(PROCDUMP):
+        print(f"crash watch OFF: {PROCDUMP} not found")
+        return
+    w = _watch_load()
+    if "dir" not in w:
+        w = {"dir": os.path.join(CRASH_DIR, f"{lecture}_{time.strftime('%Y%m%d_%H%M%S')}"),
+             "pids": {}}
+    os.makedirs(w["dir"], exist_ok=True)
+    for title, pid in windows().items():
+        if str(pid) in w["pids"]:
+            continue
+        log = os.path.join(w["dir"], f"{title}_{pid}.log")
+        with open(log, "w", encoding="utf-8") as fh:
+            subprocess.Popen([PROCDUMP, "-accepteula", "-e", "-mp", str(pid), w["dir"]],
+                             stdout=fh, stderr=subprocess.STDOUT)
+        w["pids"][str(pid)] = title
+        print(f"crash watch: {title} ({pid})")
+    with open(WATCH, "w", encoding="utf-8") as fh:
+        json.dump(w, fh)
+
+
+def crash_report():
+    """Before stop: which watched windows are already gone, and any dumps written."""
+    w = _watch_load()
+    if not w:
+        return
+    alive = set(windows().values())
+    for pid, title in w.get("pids", {}).items():
+        if int(pid) not in alive:
+            print(f"CRASH WATCH: {title} ({pid}) was gone before stop - see {w['dir']}")
+    dumps = [n for n in os.listdir(w["dir"]) if n.endswith(".dmp")] if os.path.isdir(w["dir"]) else []
+    for n in dumps:
+        print(f"CRASH WATCH: dump {os.path.join(w['dir'], n)}")
+    if not dumps and os.path.isdir(w["dir"]) and not any(
+            int(p) not in alive for p in w.get("pids", {})):
+        shutil.rmtree(w["dir"], ignore_errors=True)   # a clean sitting leaves nothing behind
+    os.remove(WATCH)
+
+
 def template_of(sb, files):
     """The `sbs create -t` template a lecture's probe is made from."""
     named = getattr(sb, "TEMPLATE", None)
@@ -319,6 +379,7 @@ def start(lecture, state, patches, consoles, wait, amd_patches=(), sandbox=False
     subprocess.Popen(args, cwd=MISSIONS, env=ENV, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     time.sleep(wait)
     print(eng("-Action", "list"))
+    watch_crashes(lecture)
 
 
 def running_state():
@@ -330,6 +391,7 @@ def running_state():
 
 
 def stop(lecture):
+    crash_report()
     stop_game()
     time.sleep(2)
     global PROBE
@@ -508,6 +570,8 @@ def main():
         build(a.lecture, a.state, a.patch, a.patch_amd, wants_sandbox(a.lecture, a.sandbox, a.state))
     elif a.op == "list":
         print(eng("-Action", "list"))
+        if os.path.exists(WATCH):                     # a window opened since start
+            watch_crashes(a.lecture)
     elif a.op in ("shot", "click", "wait", "keep", "stop"):
         if a.op == "shot":
             step = {"op": "shot", "window": a.args[0], "name": a.args[1]}
