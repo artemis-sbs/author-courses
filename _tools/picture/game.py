@@ -184,19 +184,6 @@ def saves_guard_end(lecture):
     with open(snap, encoding="utf-8") as fh:
         before = {k: tuple(v) for k, v in json.load(fh).items()}
     now = saves_snapshot()
-    if os.environ.get("PIC_KEEP_SAVES"):
-        # A TWO-SITTING STILL (Class 5, Lecture 16's Continue): keep what THIS game wrote,
-        # so the next start can lay it back with PIC_RESUME_SAVES. The player's own saves
-        # are still put back below either way.
-        kept = os.path.join(back, "..", "_run_saves")
-        if os.path.isdir(kept):
-            shutil.rmtree(kept)
-        for rel, stamp in now.items():
-            if before.get(rel) != stamp:
-                dest = os.path.join(kept, rel)
-                os.makedirs(os.path.dirname(dest), exist_ok=True)
-                shutil.copy2(os.path.join(SAVES, rel), dest)
-                print(f"kept the run's save {rel} for the next sitting")
     undone = []
     for rel, stamp in now.items():
         if rel not in before:
@@ -307,18 +294,20 @@ def build(lecture, state, patches, amd_patches=(), sandbox=False):
 def start(lecture, state, patches, consoles, wait, amd_patches=(), sandbox=False, seed=7):
     stop_game()
     saves_guard_begin(lecture)
-    kept = os.path.join(saves_backup_dir(lecture), "..", "_run_saves")
-    if os.environ.get("PIC_RESUME_SAVES"):
-        # The second sitting: the saves the first one kept (PIC_KEEP_SAVES), laid in AFTER
-        # the player's own were copied aside, so the stop still puts the player's back.
-        if not os.path.isdir(kept):
-            sys.exit("PIC_RESUME_SAVES: no kept saves - stop the first sitting with PIC_KEEP_SAVES=1")
-        for root, _dirs, names in os.walk(kept):
-            for n in names:
-                rel = os.path.relpath(os.path.join(root, n), kept)
-                os.makedirs(os.path.dirname(os.path.join(SAVES, rel)), exist_ok=True)
-                shutil.copy2(os.path.join(root, n), os.path.join(SAVES, rel))
-                print(f"resumed the kept save {rel}")
+    # A SANDBOXED probe saves to _sandbox/common_data/saves, which no stop deletes - so the
+    # saves of every earlier lecture's run sit there, and a Continue (the default start)
+    # picks one up. Every start clears them, so a sitting begins as a new game; the SECOND
+    # sitting of a two-sitting still (C5-16, C5-02's "come back") sets PIC_RESUME_SAVES=1
+    # to keep the first sitting's save. The player's own saves are never in this folder.
+    sand_saves = os.path.join(MISSIONS, SANDBOX, "common_data", "saves")
+    if sandbox and os.path.isdir(sand_saves) and not os.environ.get("PIC_RESUME_SAVES"):
+        for n in os.listdir(sand_saves):
+            p = os.path.join(sand_saves, n)
+            if os.path.isfile(p):
+                os.remove(p)
+        print("sandbox saves cleared: this sitting is a new game")
+    elif sandbox and os.environ.get("PIC_RESUME_SAVES"):
+        print("sandbox saves KEPT: this sitting continues the last one")
     build(lecture, state, patches, amd_patches, sandbox)
     with open(STATE, "w", encoding="utf-8") as fh:
         json.dump({"lecture": lecture, "sandbox": sandbox, "state": state, "probe": PROBE}, fh)
