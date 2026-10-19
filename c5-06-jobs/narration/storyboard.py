@@ -43,6 +43,7 @@ Never caption a face or a clock time.
 LECTURE = "c5-06-jobs"
 TITLE = ("Class 5, Lecture 6", "Jobs", "Work a crew can take again and again")
 MISSION = "MyUniverse"
+TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 _EX = "c5-06-jobs/example"
@@ -187,7 +188,7 @@ _chain("final", [("b_nocomma", [("Reward: 150 credits, earns", "Reward: 150 cred
 _chain("final", [("b_icon", [("icon://hourglass", "icon://hourglas")])])
 
 # The editor. A window shows 21 lines: the one named, ten above and ten below.
-_E("e_jobs0", "start", "### [Escort](escort)")
+_E("e_jobs0", "start", "### [Escort](escort)", off=3)
 _E("e_patrol", "d_patrol", "Done when: destroy 3 enemies")
 _E("e_salv_end", "salv_end", "Done when: recover 2 tech")
 _E("e_salv", "salv_deed", "Reward: 150 credits, earns hollin selfish 20")

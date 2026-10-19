@@ -38,6 +38,7 @@ import re
 LECTURE = "c5-09-organizing-a-big-universe"
 TITLE = ("Class 5, Lecture 9", "Organizing a big universe", "One file becomes six, and the whole world is printed")
 MISSION = "MyUniverse"
+TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 _EX = "c5-09-organizing-a-big-universe/example"
@@ -211,8 +212,8 @@ STILLS["e_tree"] = ("vscode", "final", 1, "mid", {"file": "jobs.amd"})      # th
 _OF["e_tree"] = ("final", "jobs.amd")
 _E("e_fence", "j_fence", "## [Jobs](jobs)", off=3)
 _E("e_main_gone", "j_paste", "## [Jobs](jobs)", off=3)
-_E("e_jobs_paste", "j_paste", "### [Patrol](patrol)", off=8, file="jobs.amd")
-_E("e_jobs_hash", "j_hash", "# [Patrol](patrol)", off=8, file="jobs.amd")
+_E("e_jobs_paste", "j_paste", "### [Patrol](patrol)", off=0, file="jobs.amd")
+_E("e_jobs_hash", "j_hash", "# [Patrol](patrol)", off=0, file="jobs.amd")
 _E("e_dlg0", "j_fence", _DH, off=8)
 _E("e_hollin_d", "d_paste", "### [Hollin Hail](hollin_hail)", off=8, file="dialogue/hollin.amd")
 _E("e_edda_d", "d_paste", "### [Edda Brake](edda_hail)", off=4, file="dialogue/hollin.amd")
@@ -222,7 +223,7 @@ _E("e_sig_d", "d_fence", "signal ledger_read", file="dialogue/deepwell.amd", off
 _E("e_sig_bad", "b_sig", "Done when: signal ledger_red")
 _E("e_life", "l_life", "## [Lifeforms](lifeforms)", off=6)
 _E("e_scene", "l_scene", "# [Kestrel Traffic](traffic_hail)", off=8, file="dialogue/hollin.amd")
-_E("e_lore0", "final", "# [The Kestrel Verge](verge)", off=9, file="lore.amd")
+_E("e_lore0", "final", "# [The Kestrel Verge](verge)", off=0, file="lore.amd")
 _E("e_lore", "final", "| Colony | Landed | Now |", file="lore.amd")
 _E("e_lore2", "final", "## What it is for", file="lore.amd", off=-3)
 
@@ -291,7 +292,7 @@ BOARD = {
     "s06_a_voice_from_anywhere": _sc(5,
         _b(0, "e_life", _ln("e_life", "## [Lifeforms](lifeforms)", 10)),
         _b(2, "e_life", _tx("e_life", "### [Kestrel Traffic](kestrel_traffic)")),
-        _b(4, "e_life", _tx("e_life", "Face: terran"), _tx("e_life", "Color: #44aa66")),
+        _b(4, "e_life", _tx("e_life", "Face: terran"+chr(10)+"Roles: hollin", "Face: terran"), _tx("e_life", "Color: #44aa66"+chr(10)+"---"+chr(10)+"The relay", "Color: #44aa66")),
         _b(5, "e_life", _tx("e_life", "Scene: traffic_hail")),
         _b(6, "e_scene", _ln("e_scene", "# [Kestrel Traffic](traffic_hail)", 3)),
         _b(7, "e_scene", _ln("e_scene", "% Kestrel Traffic. The lamp is lit", 2)),

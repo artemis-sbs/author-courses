@@ -38,6 +38,7 @@ Never caption a face or a clock time.
 LECTURE = "c5-07-narrative-and-goals"
 TITLE = ("Class 5, Lecture 7", "Narrative and goals", "A story in chapters, and a last page")
 MISSION = "MyUniverse"
+TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 _EX = "c5-07-narrative-and-goals/example"
@@ -187,7 +188,9 @@ _E("e_then", "c_then", "Then: reveal tern_ledger", off=3)
 _E("e_ledger", "c_ledger", _SHIP, off=1)
 _E("e_keep0", "c_keep", "Then: reveal goal_bone_pile", off=2)
 _E("e_keep", "c_brief", _FACE, off=2)
-_E("e_hail", "d_hail", "### [Deepwell Hail](deepwell_hail)", off=6)
+_E("e_hail", "d_ledger", "### [Deepwell Hail](deepwell_hail)", off=6)
+_E("e_ans", "d_ledger", _A1, off=1)
+STILLS["e_ans"] = STILLS["e_ans"][:3] + ("mid",) + STILLS["e_ans"][4:]
 _E("e_goal", "final", "Win: The Bone Pile", off=1)
 _E("e_goalthen", "final", "Then: reveal goal_bone_pile", off=2)
 _E("e_typo", "b_typo", "Then: reveal tern_leger", off=3)
@@ -255,7 +258,7 @@ BOARD = {
         _b(1, "e_ledger", _ln("e_ledger", _SHIP, 11)),
         _b(2, "e_ledger", _ln("e_ledger", "The Tern's holds are bare", 1)),
         _b(3, "e_ledger", _tx("e_ledger", "Hail the Assay Office at (3, 1) and ask.")),
-        _b(4, "e_ledger", _tx("e_ledger", "(3, 1)")),
+        _b(4, "e_ledger", _tx("e_ledger", "Hail the Assay Office at (3, 1) and ask.", "(3, 1)")),
         _b(5, "e_ledger", _tx("e_ledger", "Done when: signal ledger_read")),
         _b(7, "e_ledger", _tx("e_ledger", "Done when: signal ledger_read", "signal ledger_read")),
         _b(8, "game_c57_ledger"),
@@ -270,15 +273,15 @@ BOARD = {
         _b(19, "e_keep", _ln("e_keep", "The ledger has the Tern's cargo", 1))),
     "s05_a_chapter_that_ends_in_a_cal": _sc(3,
         _b(0, "e_ledger", _tx("e_ledger", "Done when: signal ledger_read")),
-        _b(1, "e_hail", _ln("e_hail", "### [Deepwell Hail](deepwell_hail)", 11)),
+        _b(1, "e_hail", _ln("e_hail", "### [Deepwell Hail](deepwell_hail)", 5)),
         _b(2, "e_hail", _ln("e_hail", "### [Deepwell Hail](deepwell_hail)", 5)),
-        _b(3, "e_hail", _tx("e_hail", _A1, "signal ledger_read")),
-        _b(5, "e_hail", _ln("e_hail", _A1, 2)),
-        _b(6, "e_hail", _tx("e_hail", _A1, "signal ledger_read"), _tx("e_hail", _A2, "signal ledger_read")),
-        _b(7, "e_hail", _tx("e_hail", _A1, "earns deepwell by-the-book 20, earns deepwell peaceful 20")),
-        _b(9, "e_hail", _tx("e_hail", _A2, "earns deepwell resourceful 20, earns deepwell violent 20")),
-        _b(11, "e_hail", _ln("e_hail", _A1, 2)),
-        _b(12, "e_hail", _tx("e_hail", _A1, "earns deepwell by-the-book 20"), _tx("e_hail", _A2, "earns deepwell resourceful 20"))),
+        _b(3, "e_ans", _tx("e_ans", _A1, "signal ledger_read")),
+        _b(5, "e_ans", _ln("e_ans", _A1, 2)),
+        _b(6, "e_ans", _tx("e_ans", _A1, "signal ledger_read"), _tx("e_ans", _A2, "signal ledger_read")),
+        _b(7, "e_ans", _tx("e_ans", _A1, "earns deepwell by-the-book 20, earns deepwell peaceful 20")),
+        _b(9, "e_ans", _tx("e_ans", _A2, "earns deepwell resourceful 20, earns deepwell violent 20")),
+        _b(11, "e_ans", _ln("e_ans", _A1, 2)),
+        _b(12, "e_ans", _tx("e_ans", _A1, "earns deepwell by-the-book 20"), _tx("e_ans", _A2, "earns deepwell resourceful 20"))),
     "s06_on_the_beat_or_in_the_answer": _sc(3,
         _b(0, "card_note"),
         _b(1, "card_note", ("part", "r1")),
@@ -286,7 +289,7 @@ BOARD = {
         _b(5, "card_note", ("part", "r2")),
         _b(7, "card_note"),
         _b(8, "card_note", ("part", "r3")),
-        _b(10, "e_hail", _ln("e_hail", _A1, 2))),
+        _b(10, "e_ans", _ln("e_ans", _A1, 2))),
     "s07_the_last_page": _sc(4,
         _b(0, "e_goal", _ln("e_goal", "### [Break the Bone Pile](goal_bone_pile)", 7)),
         _b(1, "e_goal", _tx("e_goal", "Win: The Bone Pile", "Win:")),

@@ -49,6 +49,7 @@ import re
 LECTURE = "c5-10-a-boarding-site-on-the-map"
 TITLE = ("Class 5, Lecture 10", "A boarding site on the map", "A place of rooms, and a map the crew walks")
 MISSION = "MyUniverse"
+TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 _EX = "c5-10-a-boarding-site-on-the-map/example"
@@ -214,7 +215,7 @@ _SHIP = "![](ship://starbase_civil) The Customs House, beside Kestrel Relay"
 
 # The editor. A window shows 21 lines: the one named, ten above and ten below.
 _E("e_lm", "l_customs", "### [Customs House](customs_house)", off=4)
-_E("e_cust0", "c_file", "## [Voices](voices)", off=8, file=_CUS)
+_E("e_cust0", "c_file", "// Customs House: a place", off=0, file=_CUS)
 _E("e_cust_hails", "c_file", _BEAM, off=-2, file=_CUS)
 _E("e_cust_rooms", "c_file", "## [Scenes](boarding)", off=8, file=_CUS)
 _E("e_cust_counter", "c_file", _LEARN, off=-1, file=_CUS)
@@ -222,12 +223,12 @@ _E("e_cust_office", "c_file", "(customs_initial) if learned the manifest", off=1
 _E("e_nothing", "n_cus", "### [Nothing to Declare](lead_customs)", off=8)
 _E("e_json", "m_json", "artemis-sbs.Cosmos-Tiles.frontier", off=-4, file="story.json")
 _E("e_settings", "m_settings", "TILE_ART: frontier, station", off=-4, file="settings.yaml")
-_E("e_tileset", "m_tileset", "tileset: starter", off=3, file="ground/starter.tileset")
+_E("e_tileset", "m_tileset", "tileset: starter", off=0, file="ground/starter.tileset")
 _E("e_tiles_top", "m_tiles", "area: tally_yard", off=10, file="ground/tally_yard.tiles")
 _E("e_tiles_map", "m_tiles", "#..===.......WWWWWWW...#", off=5, file="ground/tally_yard.tiles")
 STILLS["e_tiles_pic"] = ("vscode", "m_tiles", 1, "mid", {"file": "ground/tally_yard.tiles", "editor": "tiles"})
 _OF["e_tiles_pic"] = ("m_tiles", "ground/tally_yard.tiles")
-_E("e_ty_top", "m_site", "# [Tally Yard](tally_yard)", off=8, file="tally_yard.amd")
+_E("e_ty_top", "m_site", "// Tally Yard: a place", off=0, file="tally_yard.amd")
 _E("e_ty_hails", "m_site", "signal boarding_down", off=-3, file="tally_yard.amd")
 _E("e_ty_props", "m_site", "### [Tally house door](yard_door)", off=-1, file="tally_yard.amd")
 _E("e_ty_keys", "m_site", "### [Yard keycard](yard_keycard)", off=4, file="tally_yard.amd")
@@ -299,7 +300,7 @@ BOARD = {
         _b(5, "e_lm", _tx("e_lm", "Site: customs"))),
     "s02_one_line_on_a_landmark": _sc(1,
         _b(0, "e_lm", _ln("e_lm", "### [Customs House](customs_house)", 8)),
-        _b(1, "e_lm", _tx("e_lm", "At: 0, 0")),
+        _b(1, "e_lm", _tx("e_lm", "At: 0, 0"+chr(10)+"Prefab: station"+chr(10)+"Art: starbase_civil", "At: 0, 0")),
         _b(3, "e_lm", _tx("e_lm", "Site: customs")),
         _b(5, "e_lm", _tx("e_lm", "Site: customs")),
         _b(6, "e_lm", _tx("e_lm", "Site: customs", "customs")),

@@ -36,6 +36,7 @@ Never caption a face or a clock time.
 LECTURE = "c5-08-captains-and-rivals"
 TITLE = ("Class 5, Lecture 8", "Captains and rivals", "People with a name, and a line you chose")
 MISSION = "MyUniverse"
+TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 _EX = "c5-08-captains-and-rivals/example"

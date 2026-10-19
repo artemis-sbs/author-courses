@@ -43,6 +43,7 @@ import re
 LECTURE = "c5-11-a-ruin-on-the-map"
 TITLE = ("Class 5, Lecture 11", "A ruin on the map", "A place to fly into, and a story through its rooms")
 MISSION = "MyUniverse"
+TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 _EX = "c5-11-a-ruin-on-the-map/example"
@@ -189,7 +190,7 @@ _chain("final", [("b_slab", [("Done when: signal slab_opened", "Done when: signa
 
 # The editor. A window shows 21 lines: the one named, ten above and ten below.
 _HF = "hollow.amd"
-_E("e_hollow_top", "h_file", "# [The Hollow](hollow_file)", off=10, file=_HF)
+_E("e_hollow_top", "h_file", "# [The Hollow](hollow_file)", off=2, file=_HF)
 _E("e_hollow_rooms", "h_file", "### [The Nave](nave)", off=3, file=_HF)
 _E("e_hollow_way", "h_file", "### [The Way In](way_in)", off=5, file=_HF)
 _E("e_hollow_slab", "h_file", "### [The Fallen Slab](slab)", off=5, file=_HF)
