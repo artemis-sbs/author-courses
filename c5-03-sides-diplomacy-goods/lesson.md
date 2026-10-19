@@ -348,9 +348,11 @@ shows a stranger no buttons. So at each new station, scan first.
 7. Select **The Breaking Yard** and press **Engage**. You arrive at -3, -2, and you are
    not welcome. The station is called **The Gleaners**, and a fleet of Torgoth ships
    stands by it.
-   Their ships open fire as you arrive, so be quick.
-8. On Comms, select the Gleaners' station (an enemy station needs no scan). Among its buttons is **Negotiate Ceasefire**.
-   Press it. It costs 600 credits, and the Gleaners are no longer at war with the crew.
+   Their ships open fire the moment you arrive, so go straight to Comms.
+8. On Comms, select the Gleaners' station (an enemy station needs no scan). Among its
+   buttons is **Negotiate Ceasefire**. Press it before anything else: it takes a few
+   seconds to reach their ships, and they fire until it does. It costs 600 credits, and
+   the Gleaners are no longer at war with the crew.
 
 The ceasefire is written into the save. Close the game, start it again, and the Gleaners
 are still at peace with you.
