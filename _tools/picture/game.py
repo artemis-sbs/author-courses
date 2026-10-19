@@ -183,6 +183,19 @@ def saves_guard_end(lecture):
     with open(snap, encoding="utf-8") as fh:
         before = {k: tuple(v) for k, v in json.load(fh).items()}
     now = saves_snapshot()
+    if os.environ.get("PIC_KEEP_SAVES"):
+        # A TWO-SITTING STILL (Class 5, Lecture 16's Continue): keep what THIS game wrote,
+        # so the next start can lay it back with PIC_RESUME_SAVES. The player's own saves
+        # are still put back below either way.
+        kept = os.path.join(back, "..", "_run_saves")
+        if os.path.isdir(kept):
+            shutil.rmtree(kept)
+        for rel, stamp in now.items():
+            if before.get(rel) != stamp:
+                dest = os.path.join(kept, rel)
+                os.makedirs(os.path.dirname(dest), exist_ok=True)
+                shutil.copy2(os.path.join(SAVES, rel), dest)
+                print(f"kept the run's save {rel} for the next sitting")
     undone = []
     for rel, stamp in now.items():
         if rel not in before:
@@ -233,13 +246,27 @@ def build(lecture, state, patches, amd_patches=(), sandbox=False):
         sandbox_lib()
     files = states.files_of(sb, state)
     template = template_of(sb, files)
-    made = subprocess.run([PY, "sbs.pyz", "create", probe_name(sandbox), "-t", template,
-                           "--title", "Picture Probe", "-y"],
-                          cwd=MISSIONS, env=ENV, capture_output=True, text=True)
-    if not os.path.isdir(probe):
-        sys.exit("sbs create did not make the probe:\n" + made.stdout + made.stderr)
+    source = getattr(sb, "PROBE_FROM", None)
+    if source:
+        # A COPY OF A SHIPPED MISSION (Class 5, Lecture 14's AdmiralLab is a copy of
+        # OpenUniverse): its committed files, then the state over them. No template would
+        # register the mission's own maps.
+        os.makedirs(probe, exist_ok=True)
+        arch = subprocess.run(["git", "-C", os.path.join(MISSIONS, source), "archive", "HEAD"],
+                              capture_output=True)
+        if arch.returncode != 0:
+            sys.exit(f"PROBE_FROM {source}: git archive failed: {arch.stderr.decode()[-400:]}")
+        subprocess.run(["tar", "-x", "-C", probe], input=arch.stdout, check=True)
+        what = f"a copy of {source}"
+    else:
+        made = subprocess.run([PY, "sbs.pyz", "create", probe_name(sandbox), "-t", template,
+                               "--title", "Picture Probe", "-y"],
+                              cwd=MISSIONS, env=ENV, capture_output=True, text=True)
+        if not os.path.isdir(probe):
+            sys.exit("sbs create did not make the probe:\n" + made.stdout + made.stderr)
+        what = f"the '{template}' template"
     open(os.path.join(probe, PROBE_MARK), "w").close()
-    print(f"probe made from the '{template}' template" + (f" in {SANDBOX}/" if sandbox else ""))
+    print(f"probe made from {what}" + (f" in {SANDBOX}/" if sandbox else ""))
     if patches and "story.mast" not in files:
         sys.exit("--patch: the state has no story.mast")
     for f in sorted(files):                           # the lecture's whole folder; the rest stays the template's
@@ -277,6 +304,18 @@ def build(lecture, state, patches, amd_patches=(), sandbox=False):
 def start(lecture, state, patches, consoles, wait, amd_patches=(), sandbox=False, seed=7):
     stop_game()
     saves_guard_begin(lecture)
+    kept = os.path.join(saves_backup_dir(lecture), "..", "_run_saves")
+    if os.environ.get("PIC_RESUME_SAVES"):
+        # The second sitting: the saves the first one kept (PIC_KEEP_SAVES), laid in AFTER
+        # the player's own were copied aside, so the stop still puts the player's back.
+        if not os.path.isdir(kept):
+            sys.exit("PIC_RESUME_SAVES: no kept saves - stop the first sitting with PIC_KEEP_SAVES=1")
+        for root, _dirs, names in os.walk(kept):
+            for n in names:
+                rel = os.path.relpath(os.path.join(root, n), kept)
+                os.makedirs(os.path.dirname(os.path.join(SAVES, rel)), exist_ok=True)
+                shutil.copy2(os.path.join(root, n), os.path.join(SAVES, rel))
+                print(f"resumed the kept save {rel}")
     build(lecture, state, patches, amd_patches, sandbox)
     with open(STATE, "w", encoding="utf-8") as fh:
         json.dump({"lecture": lecture, "sandbox": sandbox, "state": state, "probe": PROBE}, fh)

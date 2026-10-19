@@ -18,10 +18,10 @@ Universe probe: built in data/missions/_sandbox, saves backed up by game.py; nev
 game by hand for it. ONE game, FOUR windows, TWO sittings:
 `python game.py c5-16-a-playable-universe start --state final --consoles server,helm,comms,weapons`
 (seed=7, no probe patch). Marks are left off every game still until the stills are taken.
-WARNING FOR THE SITTING: game.py restores the saves when it stops, so the page's "close the game,
-start it again, Continue" (the second sitting) cannot be done by `stop` then `start`. Either take
-the continuing stills (game_c16_continue and what follows) in a run that keeps the save between
-the two starts, or check how game.py handles it first. Press order, sitting 1:
+THE TWO SITTINGS: game.py puts the player's saves back when it stops. End sitting 1 with
+`PIC_KEEP_SAVES=1 python game.py c5-16-a-playable-universe stop` (the run's save is kept in
+game/_run_saves) and start sitting 2 with `PIC_RESUME_SAVES=1 python game.py ... start ...`
+(the kept save is laid back after the player's are copied aside). Press order, sitting 1:
   1. Helm, at once: the handheld icon, Quests: game_c16_log (the three leads: The Second Colony,
      The Breaking Yard, The Third Colony; Kestrel Relay under Charted Locations).
   2. Comms: select Hollin Compact, Hail Hollin Compact: game_c16_levy (the answers, "Pay the

@@ -71,6 +71,7 @@ MISSION = "AdmiralLab"
 FILE = "skirmish_arena.amd"
 MAST = "story.mast"
 TEMPLATE = "ou"
+PROBE_FROM = "OpenUniverse"   # game.py: the probe is a copy of the mission (AdmiralLab), not a template
 
 _EX = "c5-14-admiral-part-1/example"
 
