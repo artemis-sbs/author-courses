@@ -73,18 +73,20 @@ s07_check_it_4	Every job after Offers is a key in the Jobs chapter.
 s07_check_it_5	Every ship after Flies is one of the six.
 s07_check_it_6	Every good is one of the five.
 s07_check_it_7	And the numbers after reach are that side's home.
-s08_meet_the_neighbors_0	On Comms, I select Hollin Compact.
-s08_meet_the_neighbors_1	There's the work I gave them:
-s08_meet_the_neighbors_2	a patrol, and an escort.
-s08_meet_the_neighbors_3	Kestrel Relay doesn't have those,
-s08_meet_the_neighbors_4	because it's the crew's own.
-s08_meet_the_neighbors_5	I take a cargo run, because I'm going to need the money.
-s08_meet_the_neighbors_6	On Helm, there are my two leads in the Quest Log.
-s08_meet_the_neighbors_7	I fly the cargo run first,
-s08_meet_the_neighbors_8	and then I engage The Second Colony.
-s08_meet_the_neighbors_9	And here's the Deepwell's own station,
-s08_meet_the_neighbors_10	offering an escort and nothing else,
-s08_meet_the_neighbors_11	just as I wrote it.
+s08_meet_the_neighbors_0	Science scans Hollin Compact first,
+s08_meet_the_neighbors_1	because a stranger shows Comms nothing.
+s08_meet_the_neighbors_2	Then on Comms, I select it.
+s08_meet_the_neighbors_3	There's the work I gave them:
+s08_meet_the_neighbors_4	a patrol, and an escort.
+s08_meet_the_neighbors_5	Kestrel Relay doesn't have those,
+s08_meet_the_neighbors_6	because it's the crew's own.
+s08_meet_the_neighbors_7	I take a cargo run, because I'm going to need the money.
+s08_meet_the_neighbors_8	On Helm, there are my two leads in the Quest Log.
+s08_meet_the_neighbors_9	I fly the cargo run first,
+s08_meet_the_neighbors_10	and then I engage The Second Colony.
+s08_meet_the_neighbors_11	And here's the Deepwell's own station,
+s08_meet_the_neighbors_12	offering an escort and nothing else,
+s08_meet_the_neighbors_13	just as I wrote it.
 s09_the_ones_who_shoot_first_0	Now the other lead.
 s09_the_ones_who_shoot_first_1	This is the Gleaners' home,
 s09_the_ones_who_shoot_first_2	and that's their fleet.

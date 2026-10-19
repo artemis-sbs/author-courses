@@ -325,25 +325,31 @@ game found nothing wrong.
 ## Step 7 - Play it
 
 ```
-sbs run server,helm,comms -m MyUniverse map=0
+sbs run server,helm,comms,science -m MyUniverse map=0
 ```
 
-1. In the `comms` window, select the station **Hollin Compact**. Among its buttons are
+A station of one of your sides is a stranger until Science has scanned it, and Comms
+shows a stranger no buttons. So at each new station, scan first.
+
+1. In the `science` window, select **Hollin Compact** and press **Queue Scan**. In a few
+   seconds Science reads it. Then in the `comms` window, select **Hollin Compact**. Among its buttons are
    **Patrol (200 cr)** and **Escort (250 cr)**: the two jobs after `Offers:`. Do not take
    them yet. Lecture 6 is where those jobs get an ending.
-2. Select **Kestrel Relay**. It has a market and no such jobs. It is the crew's own.
+2. Select **Kestrel Relay**. It is the crew's own, so it needs no scan. It has a market and
+   the standard work, but no Patrol (200 cr) or Escort (250 cr): those are Hollin's.
 3. Still on Comms, take **Accept Cargo Run** from either station. You will want the money.
 4. In the `helm` window, open the Quest Log: the handheld icon, then **Quests**. Your two
    leads are there, The Second Colony and The Breaking Yard, beside the cargo run.
 5. Select the cargo run and press **Engage**. On arrival it pays 400 credits. The crew
    now has 900.
 6. Select **The Second Colony** and press **Engage**. You arrive at 3, 1. The station
-   there is called **Deepwell Assembly**, and on Comms it offers **Escort (250 cr)** and
+   there is called **Deepwell Assembly**. Scan it, and on Comms it offers **Escort (250 cr)** and
    no patrol, as you wrote.
 7. Select **The Breaking Yard** and press **Engage**. You arrive at -3, -2, and you are
    not welcome. The station is called **The Gleaners**, and a fleet of Torgoth ships
    stands by it.
-8. On Comms, select the Gleaners' station. Among its buttons is **Negotiate Ceasefire**.
+   Their ships open fire as you arrive, so be quick.
+8. On Comms, select the Gleaners' station (an enemy station needs no scan). Among its buttons is **Negotiate Ceasefire**.
    Press it. It costs 600 credits, and the Gleaners are no longer at war with the crew.
 
 The ceasefire is written into the save. Close the game, start it again, and the Gleaners

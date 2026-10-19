@@ -182,7 +182,8 @@ reach are that side's home. ||"
 buttons. Then Kestrel Relay. Take the cargo run. Helm: Quest Log, Engage the cargo run,
 then The Second Colony.
 
-**Say:** "On Comms, I select Hollin Compact. || There's the work I gave them: | a patrol,
+**Say:** "Science scans Hollin Compact first, | because a stranger shows Comms nothing. ||
+Then on Comms, I select it. || There's the work I gave them: | a patrol,
 and an escort. || Kestrel Relay doesn't have those, | because it's the crew's own. ||| I
 take a cargo run, because I'm going to need the money. || On Helm, there are my two leads
 in the Quest Log. || I fly the cargo run first, | and then I engage The Second Colony. ||
