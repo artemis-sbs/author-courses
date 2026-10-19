@@ -39,6 +39,7 @@ LECTURE = "c5-07-narrative-and-goals"
 TITLE = ("Class 5, Lecture 7", "Narrative and goals", "A story in chapters, and a last page")
 MISSION = "MyUniverse"
 TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
+TEMPLATE = "ou"        # game.py: the probe is made with sbs create -t ou, in the sandbox
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 _EX = "c5-07-narrative-and-goals/example"

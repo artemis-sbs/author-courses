@@ -39,6 +39,7 @@ LECTURE = "c5-09-organizing-a-big-universe"
 TITLE = ("Class 5, Lecture 9", "Organizing a big universe", "One file becomes six, and the whole world is printed")
 MISSION = "MyUniverse"
 TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
+TEMPLATE = "ou"        # game.py: the probe is made with sbs create -t ou, in the sandbox
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 _EX = "c5-09-organizing-a-big-universe/example"

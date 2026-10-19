@@ -45,6 +45,7 @@ LECTURE = "c5-02-your-universe-file"
 TITLE = ("Class 5, Lecture 2", "Your universe file", "A title, a home port, and a game that can be continued")
 MISSION = "MyUniverse"
 TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
+TEMPLATE = "ou"        # game.py: the probe is made with sbs create -t ou, in the sandbox
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 

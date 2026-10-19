@@ -50,6 +50,7 @@ LECTURE = "c5-10-a-boarding-site-on-the-map"
 TITLE = ("Class 5, Lecture 10", "A boarding site on the map", "A place of rooms, and a map the crew walks")
 MISSION = "MyUniverse"
 TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
+TEMPLATE = "ou"        # game.py: the probe is made with sbs create -t ou, in the sandbox
 FILE = "kestrel_verge.amd"
 MAST = "story.mast"
 _EX = "c5-10-a-boarding-site-on-the-map/example"

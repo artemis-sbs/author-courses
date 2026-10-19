@@ -44,6 +44,7 @@ LECTURE = "c5-04-reputation"
 TITLE = ("Class 5, Lecture 4", "Reputation", "Sides that remember what the crew says and does")
 MISSION = "MyUniverse"
 TEMPLATE_BASE = "ou"   # capture lays the template's files (script.py, story.json...) under each state
+TEMPLATE = "ou"        # game.py: the probe is made with sbs create -t ou, in the sandbox
 FILE = "kestrel_verge.amd"
 
 _EX3 = "c5-03-sides-diplomacy-goods/example"
