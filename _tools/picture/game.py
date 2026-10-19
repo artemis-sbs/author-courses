@@ -134,7 +134,7 @@ def watch_crashes(lecture):
             continue
         log = os.path.join(w["dir"], f"{title}_{pid}.log")
         with open(log, "w", encoding="utf-8") as fh:
-            subprocess.Popen([PROCDUMP, "-accepteula", "-e", "-mp", str(pid), w["dir"]],
+            subprocess.Popen([PROCDUMP, "-accepteula", "-e", "-ma", str(pid), w["dir"]],
                              stdout=fh, stderr=subprocess.STDOUT)
         w["pids"][str(pid)] = title
         print(f"crash watch: {title} ({pid})")
