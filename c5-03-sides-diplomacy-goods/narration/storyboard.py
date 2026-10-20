@@ -28,7 +28,7 @@ taken. Never caption a face. Press order:
      the station Deepwell Assembly: game_c53_deepwell (Escort (250 cr) and no patrol).
   5. Engage The Breaking Yard. On arrival: game_c53_gleaners (the station The Gleaners, the
      Torgoth fleet standing by it).
-  6. Comms, select the Gleaners' station: game_c53_ceasefire (Negotiate Ceasefire among its
+  6. Comms, select the Gleaners' station: game_c53_ceasefire (Negotiate Ceasefire (600 cr) among its
      buttons). Press it: game_c53_peace (the war is off, 600 credits spent).
   7. Comms, the Gleaners' station again: game_c53_nowork (no jobs listed).
 """
@@ -148,7 +148,7 @@ STILLS = {
     "game_c53_quests": ("game", "Helm's Quest Log: The Second Colony and The Breaking Yard beside the cargo run, Engage in view"),
     "game_c53_deepwell": ("game", "Comms at 3, 1 with the station Deepwell Assembly selected: Escort (250 cr) and no patrol"),
     "game_c53_gleaners": ("game", "Helm at -3, -2: the station The Gleaners and a fleet of Torgoth ships standing by it"),
-    "game_c53_ceasefire": ("game", "Comms with the Gleaners' station selected: Negotiate Ceasefire among its buttons"),
+    "game_c53_ceasefire": ("game", "Comms with the Gleaners' station selected: Negotiate Ceasefire (600 cr) among its buttons"),
     "game_c53_peace": ("game", "Comms just after Negotiate Ceasefire: the war is off, the 600 credits gone"),
     "game_c53_nowork": ("game", "Comms with the Gleaners' station selected after the ceasefire: no jobs among its buttons"),
     # drawn

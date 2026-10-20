@@ -350,9 +350,9 @@ shows a stranger no buttons. So at each new station, scan first.
    stands by it.
    Their ships open fire the moment you arrive, so go straight to Comms.
 8. On Comms, select the Gleaners' station (an enemy station needs no scan). Among its
-   buttons is **Negotiate Ceasefire**. Press it before anything else: it takes a few
-   seconds to reach their ships, and they fire until it does. It costs 600 credits, and
-   the Gleaners are no longer at war with the crew.
+   buttons is **Negotiate Ceasefire (600 cr)**. Press it before anything else: it takes a
+   few seconds to reach their ships, and they fire until it does. It costs the 600 credits
+   it names, and the Gleaners are no longer at war with the crew.
 
 The ceasefire is written into the save. Close the game, start it again, and the Gleaners
 are still at peace with you.
