@@ -251,9 +251,9 @@ Five, with a row added for the Plover.
 
 **The fight shows the crew what they are fighting.** Bait's text starts with a ship, the
 way the Salvage Run arc did in Class 1 Lecture 11: `[](ship://torgoth_destroyer)` draws a
-Torgoth hull in 3D at the top of the page, with the words beside it. The Gleaners fly
+picture of a Torgoth hull at the top of the page, with the words beside it. The Gleaners fly
 Torgoth. The name after `ship://` must be a hull the game has, letter for letter, and
-lint does not read it. Copy it exactly.
+lint warns about one it does not know. Copy it exactly.
 
 **Two enemies, three ships.** Measured: three ships guard the Dunlin, and the step asks
 for two. That is on purpose. A fight the crew must finish to the last ship is a fight

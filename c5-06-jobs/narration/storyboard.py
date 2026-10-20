@@ -219,7 +219,7 @@ _game("game_c56_hollin_levy", "Comms, Hollin Compact selected again: Patrol (240
 _game("game_c56_log2", "Helm, the handheld icon then Quests: under Ship, Hollin Compact: Patrol and Hollin Compact: Escort, Patrol's objective Destroy 3 enemies")
 _game("game_c56_escort_done", "Helm, the ship arrived at 3, 1: the Escort done and paid")
 _game("game_c56_relay", "Helm, Quest Log: the Relay Run taken, its hourglass line and the clock running")
-_game("game_c56_briefing", "Helm, Quest Log: Wreck Survey's briefing, the Assay Office drawn in 3D beside its first line")
+_game("game_c56_briefing", "Helm, Quest Log: Wreck Survey's briefing, the Assay Office's picture beside its first line")
 _game("game_c56_log3", "Helm, Quest Log: three jobs under Ship")
 _game("game_c56_tern", "Science, the Tern selected and scanned: a dead ship in the list")
 _game("game_c56_yard", "Helm, at The Breaking Yard: the Gleaner hulls ahead, the patrol still to finish")

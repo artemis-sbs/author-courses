@@ -266,7 +266,7 @@ Three things about this job are for the campaign.
 and its pay. Once the crew takes it, it is in the Quest Log, and its text is drawn there
 as a page, like a step's. So the clock goes in the text as well, on a line of its own:
 `![](icon://hourglass)` draws a small hourglass, one line tall, with the words beside it.
-`hourglass` is one of the game's icon names; lint does not check the word.
+`hourglass` is one of the game's icon names; lint warns about a word it does not know.
 
 ## Step 5 - An evening off the map
 

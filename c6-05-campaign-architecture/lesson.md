@@ -180,7 +180,8 @@ moment the first act turns, so it gets more than a sentence. Its first line is a
 the way Class 2 Lecture 2 put the harbormaster on a quest: a `face://` picture with a
 whole face string inside its round brackets, then the words that name who is speaking. This one is
 Registrar Amsel, who keeps the Count at Kestrel Relay. Copy the face string exactly,
-every letter, number and semicolon: lint does not read it. Under her come two paragraphs
+every letter, number and semicolon. Lint warns about a face it cannot read, but not about
+one cut short at a semicolon. Under her come two paragraphs
 and the whole count, all five boats, in one table.
 
 **The act's ending has no `Then:` line.** Act Two is not written. When the crew finishes

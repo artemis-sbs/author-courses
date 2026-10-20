@@ -8,8 +8,8 @@
 > 180, 1340 and 35 to 26, 1520, 252/315). Lint on all 31 one-change variants: every
 > row as printed. **Changed:** lint now checks an icon's name (`embed-unknown-icon`), so
 > Step 3, its check-by-eye line and scene 6 no longer say lint reads no pictures, and the
-> first table of Step 5 has a row for it. A model's name after `ship://` is still not
-> checked. Scene 6 needs its narration made again.
+> first table of Step 5 has a row for it. Since 2026-10-19 lint checks a model's name after
+> `ship://` too (`embed-unknown-ship`), and the picture is a portrait, not a 3D model. Scene 6 needs its narration made again.
 
 > **RE-MEASURED 2026-10-10** on the released tool `sbs` 0.14 and libraries (sbs_utils
 > `ed811ecb`, LegendaryMissions `cc9cd06`, Open Universe `80e9397`), in the game's
@@ -155,8 +155,8 @@ first line puts the Assay Office beside the words, in three dimensions. || It's 
 same model as the station's Art line, | so they see who's paying. ||| An empty line starts
 a new paragraph. || The first one is the order, | and the second is why it matters. |||
 And an icon can start a line, or be a bullet. || An hourglass for the clock, | and a
-crosshair for the hulls. || Lint checks the icon names, | but not the name of a model, |
-so copy that one from the page. ||"
+crosshair for the hulls. || Lint checks the icon names, | and the model's name too, |
+so a misspelled one gets a warning. ||"
 
 ### 7. On offer
 

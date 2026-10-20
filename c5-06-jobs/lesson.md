@@ -171,15 +171,14 @@ kinds are new here:
 
 | You type | The Quest Log draws |
 |---|---|
-| `![](ship://starbase_industry) The Assay Office, Deepwell Assembly` | The station, in 3D, with the words beside it. `starbase_industry` is the model the Assay Office's `Art:` line names, so the crew sees the station that is paying |
+| `![](ship://starbase_industry) The Assay Office, Deepwell Assembly` | A picture of the station, with the words beside it. `starbase_industry` is the model the Assay Office's `Art:` line names, so the crew sees the station that is paying |
 | `![](icon://hourglass) Ten minutes, from the moment you take them.` | A small hourglass, one line tall, and the words beside it |
 | `- ![](icon://crosshair) Six hulls that hunt the lanes` | A list item whose bullet is the icon |
 
 The word after `icon://` must be one of the game's icon names: `hourglass`, `crosshair`,
 `handshake`, `flag`, `skull`, `shield`, `person` and `wrench` are a few. An icon name
-the game does not have draws nothing. Lint checks an icon's name, and warns about one it
-does not know. It does not check a model's name after `ship://`, so copy that one from
-this page.
+the game does not have draws nothing. Lint checks both names, and warns about an icon or
+a model it does not know. Copy them from this page all the same.
 
 ## Step 4 - Put them on offer
 

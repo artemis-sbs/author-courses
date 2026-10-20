@@ -100,7 +100,7 @@ SHOTS = [
     {
         "id": "s06_the_briefing",
         "title": 'The briefing',
-        "frames": 2269,
+        "frames": 2243,
         "captions": [
             ("Now look at what's under the fence.", 0, 91),
             ("That's the job's briefing, and it's a page, not a line.", 118, 262),
@@ -117,8 +117,8 @@ SHOTS = [
             ('An hourglass for the clock,', 1774, 1839),
             ('and a crosshair for the hulls.', 1853, 1931),
             ('Lint checks the icon names,', 1958, 2023),
-            ('but not the name of a model,', 2037, 2128),
-            ('so copy that one from the page.', 2142, 2233),
+            ("and the model's name too,", 2037, 2102),
+            ('so a misspelled one gets a warning.', 2116, 2207),
         ],
         "pauses": [0.9, 1.8, 0.45, 0.9, 1.8, 0.9, 0.45, 1.8, 0.9, 0.45, 1.8, 0.9, 0.45, 0.9, 0.45, 0.45, 1.2],
     },

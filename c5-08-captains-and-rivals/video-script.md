@@ -77,7 +77,8 @@ trait was played once, with `honest`).
 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 
-1. A captain's card: the face on it, the color, the name and title.
+1. A captain's card: the face on it, the color, the name and title. A captain with no
+   `Face:` line shows the portrait of the station they are hailed from (since 2026-10-19).
 2. Where the captain's button sits among a station's buttons.
 3. The answers as buttons, and the game's own Leave beside them.
 4. A friend hearing two greetings at random when three are written.

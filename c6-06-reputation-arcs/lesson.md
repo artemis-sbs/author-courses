@@ -121,7 +121,7 @@ heading and the three lines under it are drawn as a heading and a bulleted list.
 that starts with a hyphen and a space is a bullet. `![](icon://handshake)` straight after
 the hyphen puts a small picture where the dot would be, one line tall: a handshake, a
 flag, a crossed circle. The word after `icon://` must be one of the game's icon names,
-spelled exactly, and lint does not check it. Each line is a row of Step 1's table, in
+spelled exactly; lint warns about one it does not know. Each line is a row of Step 1's table, in
 the crew's words: the levy, the jobs, and the one thing that costs them the door.
 
 **The answer.** Find `### [Hollin Hail](hollin_hail)`. Add one line above

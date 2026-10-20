@@ -139,7 +139,7 @@ These are the two chapters the crew reads at a turn in the story, so they get th
 
 | In the briefing | What it is for |
 |---|---|
-| `![](ship://wreck) The Tern, at (1, -2).` and the words after it | The ship they have just left, drawn in 3D beside the words. `wreck` is a model the game has. The words after the round bracket sit beside it, as in Lecture 6 |
+| `![](ship://wreck) The Tern, at (1, -2).` and the words after it | A picture of the ship they have just left, beside the words. `wreck` is a model the game has. The words after the round bracket sit beside it, as in Lecture 6 |
 | The line that starts `![](face://` and ends `The Assay Office, reading you the entry` | Who is speaking: a face, with the words beside it, as in Class 2, Lecture 2. A face is the long string of codes after `face://`. Copy it whole from this page, from the first `zim` to the last `;` |
 | A table | What is known, in rows, as in Class 1, Lecture 11: a heading row, the row of dashes, then a row for each thing |
 | `## What the ledger leaves out` | A heading inside the briefing. No square brackets, so it is not a record of its own |
@@ -329,8 +329,8 @@ So check these by eye:
 - In an answer, `costs` comes before `signal`.
 - The goal has a `Win:` line with a sentence after it.
 - A face after `face://` is copied whole, from the first three letters to the last `;`
-  before the round bracket. Lint does not read pictures, and a face cut short is not a
-  face.
+  before the round bracket. Lint warns about a face it cannot read, but a face cut short
+  at a semicolon still reads, as part of a face.
 
 ## Step 6 - Play it
 
