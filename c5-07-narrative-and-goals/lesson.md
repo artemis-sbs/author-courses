@@ -345,16 +345,18 @@ sbs run server,helm,comms -m MyUniverse map=0
    Quest Log, with your briefing.
 3. Select The Assay Ledger and press **Engage**. The ship stays where it is. This
    chapter ends in a conversation, and the briefing says where.
-4. Engage **The Second Colony**. On Comms, select **Assay Office** and press **Hail
+4. Engage **The Second Colony**. The Assay Office is far out, as in Lecture 5: fly to it
+   and scan it on Science. Then on Comms select **Assay Office** and press **Hail
    Deepwell Assembly**. There are three answers.
 5. Press **Pay the search fee and ask about the Tern**. The fee takes the crew from 500
    credits to 350, and the chapter pays 200: they have 550. The ship's standing with
    the Deepwell is 20. In the Quest Log, The Assay Ledger is done and **What the
    Gleaners Keep** has appeared.
 6. Engage it. On arrival at -4, -3 it is done, and pays 400: the crew has 950. **Break
-   the Bone Pile** has appeared. Ships are waiting.
-7. Destroy four of them. The crew is sent a card titled VICTORY, with your `Citation:`
-   on it. The game ends, and the end-of-game screen shows your `Win:` sentence.
+   the Bone Pile** has appeared. Ships are waiting at the Bone Pile, far out from where
+   you arrive.
+7. Destroy four of them. An incoming hail titled VICTORY comes in on Comms, with your
+   `Citation:` as its line. The game ends, and the end-of-game screen shows your `Win:` sentence.
 
 Start a new game and at step 5 press **Demand the Tern's entry, now**. The chapter
 closes the same way, the crew keeps its 150 credits, and the ship's standing with the

@@ -30,7 +30,7 @@ Marks are left off every game still until the stills exist. Press order:
   5. Helm, Quests: game_c57_keep (What the Gleaners Keep, with its briefing and table).
   6. Helm: engage What the Gleaners Keep, at (-4, -3): game_c57_pile (the Bone Pile ahead);
      Quests: game_c57_goal (Break the Bone Pile newly in the log).
-  7. Fight the four hulls: game_c57_fight. When the last goes: game_c57_victory (the card
+  7. Fight the four hulls: game_c57_fight. When the last goes: game_c57_victory (the hail
      titled VICTORY with the citation), then game_c57_end (the last screen with the Win
      sentence).
 Never caption a face or a clock time.
@@ -200,15 +200,15 @@ _term("t_typo", "b_typo")
 
 # THE REAL GAME (planned; not taken yet - see the docstring for the press order)
 _game("game_c57_log3", "Helm, the handheld icon then Quests: three entries, and no sign of The Assay Ledger")
-_game("game_c57_tern", "Helm, the ship at (1, -2): the stripped wreck of the Tern ahead")
+_game("game_c57_tern", "Helm on arrival at (1, -2): the card reading The Tern with its line")
 _game("game_c57_ledger", "Helm, Quests: The Assay Ledger newly in the log, its briefing with the table under it")
-_game("game_c57_hail", "Comms, Hail the Assay Office: the greeting and the two answers, Pay the search fee and Demand the entry")
+_game("game_c57_hail", "Comms, the Assay Office selected, Hail Deepwell Assembly: the greeting and the answers, Pay the search fee and Demand the entry")
 _game("game_c57_paid", "Helm, Quests: The Assay Ledger done and paid, the Deepwell's standing a little higher")
 _game("game_c57_keep", "Helm, Quests: What the Gleaners Keep newly in the log, with its briefing and the table of the ledger")
-_game("game_c57_pile", "Helm, the ship at (-4, -3): the Bone Pile ahead, the Gleaner hulls round it")
+_game("game_c57_pile", "Helm on arrival at (-4, -3): the card reading The Bone Pile with its line")
 _game("game_c57_goal", "Helm, Quests: Break the Bone Pile newly in the log, as the last chapter")
 _game("game_c57_fight", "Helm, the four Gleaner hulls at the Bone Pile, the fight under way")
-_game("game_c57_victory", "The card titled VICTORY with the citation on it")
+_game("game_c57_victory", "Comms: the incoming hail titled VICTORY with the citation as its line")
 _game("game_c57_end", "The last screen of the game, the Win sentence on it")
 
 # drawn

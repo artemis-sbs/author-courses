@@ -66,7 +66,7 @@ The companion page is `lesson.md`; the finished file is in `example\`.
    hidden, and it still needs the answer afterward.
 7. On arrival at -4, -3: credits 950, Break the Bone Pile Active, seven hostile ships
    (five of the Gleaners, two raiders).
-8. With four kills reported the goal is done. The game is sent a card titled VICTORY
+8. With four kills reported the goal is done. The game is sent an incoming hail titled VICTORY
    carrying the `Citation:`, and is told the game is over, won, with the `Win:` sentence.
 9. Every row of the two tables in Step 5: 40 variants, one change each, each linted and
    played. Re-measured 2026-10-10 on the released libraries, with two ships:
@@ -87,7 +87,7 @@ before an unaffordable `costs` is sent anyway; that a shared reward pays each si
 1. A chapter appearing in the Quest Log while the crew watches, and its briefing there:
    the Tern drawn beside the first line of The Assay Ledger, its table, the Ximni face
    and the gray heading in What the Gleaners Keep, the icon bullets in the goal.
-2. The VICTORY card on a console, and how long it stays.
+2. The VICTORY hail on Comms.
 3. The end-of-game screen in an Open Universe mission, with the `Win:` sentence on it.
 4. What the crew can do after the game is won, and what Continue offers next time.
 5. Real kills counting toward the goal.
@@ -194,7 +194,7 @@ it paid me, | and the miners like me a little more. || And here's chapter three.
 ### 9. The end
 
 **Screen:** Engage What the Gleaners Keep. Break the Bone Pile appears. The fight. The
-VICTORY card. The end-of-game screen.
+VICTORY hail. The end-of-game screen.
 
 **Say:** "This is the place the Gleaners won't talk about. || And as I arrive, the goal
 appears. ||| Four of them, and it's over. ||| There's my citation, on the card. || And
