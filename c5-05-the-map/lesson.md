@@ -362,9 +362,13 @@ sbs run server,helm,comms -m MyUniverse map=0
 3. Engage **The Third Colony**. The card reads **The Tern**, with your line. The dead
    ship is in the system, in a nebula.
 4. Engage **The Second Colony**. Last time the card read `Uncharted (3, 1)`. Now it reads
-   **Assay Office**. On Comms, the Assay Office offers the Deepwell's escort.
+   **Assay Office**. It is far out, beyond Science's range from where you arrive: engage
+   **Assay Office** under Charted Locations to fly to it, and scan it on Science. Then on
+   Comms the Assay Office offers the Deepwell's escort.
 5. Engage **What the Gleaners Keep**. The card reads **The Bone Pile**. The sky and the
-   music change: this is the Breakers. Ships are waiting.
+   music change: this is the Breakers. Ships are waiting, at the Bone Pile itself: it is
+   far out from where you arrive, beyond what Comms shows, so they find you, or you go to
+   them.
 6. Engage **The Breaking Yard**. The Gleaners' home has no landmark, so the card reads
    **The Breakers**, with the system's numbers under it.
 7. Open the Quest Log and look at **Charted Locations**. It holds four places: Kestrel
