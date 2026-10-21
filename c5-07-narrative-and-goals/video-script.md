@@ -175,7 +175,7 @@ MyUniverse`: clean.
 
 **Say:** "A goal is a beat with one more line. || Win, and then a sentence. ||| When
 this quest is done, the game ends, | and that sentence is on the last screen. ||
-Citation is the line on the card the crew gets at that moment. ||| My goal is hidden
+Citation is the line the crew is hailed with at that moment. ||| My goal is hidden
 too, | and the third chapter reveals it. || So the ending arrives when the story has
 earned it. ||| I save, and lint says clean. || Lint is good at chains. | It'll tell you
 when a chapter can never appear. ||"
@@ -197,7 +197,7 @@ it paid me, | and the miners like me a little more. || And here's chapter three.
 VICTORY hail. The end-of-game screen.
 
 **Say:** "This is the place the Gleaners won't talk about. || And as I arrive, the goal
-appears. ||| Four of them, and it's over. ||| There's my citation, on the card. || And
+appears. ||| Four of them, and it's over. ||| There's my citation, in the hail. || And
 there's my sentence, on the last screen. ||| One thing before you go. || A universe
 doesn't have to end. || Leave the goals out, and it's a sandbox for as long as the crew
 likes. || Write a goal when your story has a last page. ||"
