@@ -216,12 +216,12 @@ _game("game_c56_assay", "Comms, the Assay Office selected: Wreck Survey and Rela
 _game("game_c56_hollin0", "Comms, Hollin Compact at standing 0: one job button, Escort (250 cr), and no Patrol")
 _game("game_c56_levy", "Comms, Hail Hollin Compact: the answer Pay the relay levy taken")
 _game("game_c56_hollin_levy", "Comms, Hollin Compact selected again: Patrol (240 cr) and Escort (300 cr)")
-_game("game_c56_log2", "Helm, the handheld icon then Quests: under Ship, Hollin Compact: Patrol and Hollin Compact: Escort, Patrol's objective Destroy 3 enemies")
+_game("game_c56_log2", "Helm, the handheld icon then Quests: under Ship, Hollin Compact: Patrol and Hollin Compact: Escort, Patrol selected: its pay and its description")
 _game("game_c56_escort_done", "Helm, the ship arrived at 3, 1: the Escort done and paid")
 _game("game_c56_relay", "Helm, Quest Log: the Relay Run taken, its hourglass line and the clock running")
 _game("game_c56_briefing", "Helm, Quest Log: Wreck Survey's briefing, the Assay Office's picture beside its first line")
 _game("game_c56_log3", "Helm, Quest Log: three jobs under Ship")
-_game("game_c56_tern", "Science, the Tern selected and scanned: a dead ship in the list")
+_game("game_c56_tern", "Science, a dead ship selected and scanned (Derelict), and Wreck Survey done")
 _game("game_c56_yard", "Helm, at The Breaking Yard: the Gleaner hulls ahead, the patrol still to finish")
 _game("game_c56_gleaners_salvage", "Comms, the Gleaners' station after the bold answer: Salvage (180 cr) among the buttons")
 _game("game_c56_hollin_standing", "Comms, Hollin Compact selected: the standing lower than before the salvage")
@@ -264,7 +264,7 @@ BOARD = {
         _b(5, "e_patrol", _tx("e_patrol", "Done when: destroy 3 enemies")),
         _b(6, "e_patrol", _tx("e_patrol", "enemies")),
         _b(8, "game_c56_log2"),
-        _b(9, "e_patrol", _tx("e_patrol", "Done when: destroy 3 enemies"))),
+        _b(9, "e_patrol", _tx("e_patrol", "Sweep a system and clear whatever is hunting in it."))),
     "s04_a_reward_that_costs_somethin": _sc(3,
         _b(0, "e_salv_end", _ln("e_salv_end", "### [Salvage](salvage)", 7)),
         _b(1, "e_salv_end", _tx("e_salv_end", "Done when: recover 2 tech")),

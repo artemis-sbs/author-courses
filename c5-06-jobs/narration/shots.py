@@ -42,7 +42,7 @@ SHOTS = [
     {
         "id": "s03_five_endings",
         "title": 'Five endings',
-        "frames": 1389,
+        "frames": 1363,
         "captions": [
             ('An ending is one line, Done when,', 0, 91),
             ("and it's an order to the captain in plain words.", 105, 235),
@@ -52,10 +52,11 @@ SHOTS = [
             ('So, for Patrol: Done when, destroy three enemies.', 671, 776),
             ('Enemies is a word the game knows.', 802, 894),
             ('It means anything at war with the crew.', 907, 1012),
-            ('And the game shows that same line to the crew as their objective,', 1066, 1235),
-            ("so write it the way you'd say it.", 1249, 1353),
+            ('The crew never sees that line.', 1066, 1144),
+            ('They read the description under it,', 1157, 1236),
+            ('so the order goes there too.', 1249, 1327),
         ],
-        "pauses": [0.45, 1.8, 0.9, 0.9, 1.8, 0.9, 0.45, 1.8, 0.45, 1.2],
+        "pauses": [0.45, 1.8, 0.9, 0.9, 1.8, 0.9, 0.45, 1.8, 0.45, 0.45, 1.2],
     },
     {
         "id": "s04_a_reward_that_costs_somethin",

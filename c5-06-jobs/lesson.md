@@ -60,16 +60,16 @@ Salvage can be taken and can never be finished. That is the first thing to fix.
 The line `Done when:` is an order to the captain, in plain words. The first word decides
 what the game watches for.
 
-| You write | The job is done when | The crew sees |
-|---|---|---|
-| `Done when: destroy 3 enemies` | The ship has destroyed three things it is at war with. A foe's station counts as one | Destroy 3 enemies |
-| `Done when: recover 2 tech` | The ship has picked up two crates of that good. The word is a key from your Goods chapter | Recover 2 tech |
-| `Done when: scan 1 derelict` | Science has scanned one dead ship | Scan 1 derelict |
-| `Done when: reach 3, 1` | The ship arrives in that system | Reach 3, 1 |
-| `Done when: dock station` | The ship docks at a station | Dock station |
+| You write | The job is done when |
+|---|---|
+| `Done when: destroy 3 enemies` | The ship has destroyed three things it is at war with. A foe's station counts as one |
+| `Done when: recover 2 tech` | The ship has picked up two crates of that good. The word is a key from your Goods chapter |
+| `Done when: scan 1 derelict` | Science has scanned one dead ship |
+| `Done when: reach 3, 1` | The ship arrives in that system |
+| `Done when: dock station` | The ship docks at a station |
 
-The game shows your line to the crew as the job's objective, with a capital letter put on
-it. So write it the way you would say it.
+The crew never sees this line. The game reads it; the crew reads the job's description,
+the sentence under the fence. So the order goes there too, in the crew's words.
 
 Open `kestrel_verge.amd` and find `## [Jobs](jobs)`. Give Patrol its ending:
 
@@ -292,10 +292,13 @@ sbs run server,helm,comms,science -m MyUniverse map=0
 
 **At the Assay Office.**
 
-6. On Comms, select **Assay Office**. It offers **Wreck Survey (220 cr)** and **Relay Run
+6. On Comms, select **Assay Office**. As in Lecture 5, it is far out: engage it under
+   Charted Locations first, and scan it on Science. It offers **Wreck Survey (220 cr)** and **Relay Run
    (180 cr)**. Press both. The Relay Run's ten minutes have started.
-7. On Helm, engage **The Third Colony**. The Tern is a dead ship. When Science has
-   scanned it, the survey is done, and pays 220.
+7. On Helm, engage **The Third Colony**. The Tern is a dead ship, and so is any wreck the
+   game scattered: `scan 1 derelict` counts whichever one Science scans first. On
+   Science, the Terrain button lists them. When one is scanned, the survey is done, and
+   pays 220.
 
 **In the Breakers.**
 

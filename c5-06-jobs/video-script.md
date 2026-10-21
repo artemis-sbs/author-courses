@@ -47,7 +47,8 @@ The companion page is `lesson.md`; the finished file is in `example\`.
 2. At standing 0 Comms is sent `Escort (250 cr)` for Hollin Compact and no Patrol. After
    the levy: `Patrol (240 cr)` and `Escort (300 cr)`.
 3. Both taken: the Quest Log's Ship section holds `Hollin Compact: Patrol` and `Hollin
-   Compact: Escort`. Patrol's objective is `Destroy 3 enemies`.
+   Compact: Escort`. Patrol shows its pay and its description; the `Done when:` line is
+   not shown (the Quest Log shows an `Objective:` field, never one made from `Done when:`).
 4. Engage on Patrol leaves the ship at 0, 0. Engage on Escort takes it to 3, 1, where
    Escort is done: credits 400 to 700, standing with Hollin 20 to 25.
 5. The Assay Office is sent `Wreck Survey (220 cr)` and `Relay Run (180 cr)`. With the
@@ -115,8 +116,8 @@ never finish them. ||"
 words. ||| There are five first words. || Destroy. Recover. Scan. Reach. And dock. ||
 After the word comes a number, and what to count. ||| So, for Patrol: Done when, destroy
 three enemies. || Enemies is a word the game knows. | It means anything at war with the
-crew. ||| And the game shows that same line to the crew as their objective, | so write
-it the way you'd say it. ||"
+crew. ||| The crew never sees that line. | They read the description under it, | so the
+order goes there too. ||"
 
 ### 4. A reward that costs something
 
