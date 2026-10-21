@@ -371,7 +371,10 @@ def start(lecture, state, patches, consoles, wait, amd_patches=(), sandbox=False
     build(lecture, state, patches, amd_patches, sandbox)
     with open(STATE, "w", encoding="utf-8") as fh:
         json.dump({"lecture": lecture, "sandbox": sandbox, "state": state, "probe": PROBE}, fh)
-    args = [PY, "sbs.pyz", "run", consoles, "-m", probe_name(sandbox)]
+    # --settle 5: each window must have read client_string_set.txt before the next is
+    # seeded, and at 2 s a slow start opened the fourth window on the third's console
+    # (Weapons came up as Helm, 2026-10-21).
+    args = [PY, "sbs.pyz", "run", consoles, "-m", probe_name(sandbox), "--settle", "5"]
     if not os.environ.get("PIC_NO_MAP"):              # PIC_NO_MAP=1: stop on the start screen
         args.append("map=0")
     if seed:
