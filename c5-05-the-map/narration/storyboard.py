@@ -27,8 +27,8 @@ caption a face. Press order (the page's Step 7):
      ship in a nebula).
   3. Engage The Second Colony: game_c55_assay (the card reading Assay Office). Comms, select
      the Assay Office: game_c55_assay_comms (the Deepwell's escort among its buttons).
-  4. Engage What the Gleaners Keep: game_c55_bone (the card reading The Bone Pile, the red
-     sky of the Breakers, a fleet waiting).
+  4. Engage What the Gleaners Keep: game_c55_bone (the card reading The Bone Pile, the
+     Breakers' nebula; the guards are far out, at the landmark).
   5. Engage The Breaking Yard: game_c55_breakers (the card reading The Breakers, with the
      system's two numbers under it).
   6. Quest Log, Charted Locations open: game_c55_charted (Kestrel Relay, The Tern, Assay
@@ -153,7 +153,7 @@ STILLS = {
     "game_c55_uncharted": ("game", "Helm on arrival at 3, 1 in the file as Lecture 4 left it: the card reading Uncharted and (3, 1)"),
     "game_c55_assay": ("game", "Helm on arrival at 3, 1: the card reading Assay Office with its line"),
     "game_c55_assay_comms": ("game", "Comms with the Assay Office selected: the Deepwell's escort among its buttons"),
-    "game_c55_bone": ("game", "Helm on arrival at -4, -3: the card reading The Bone Pile, the red sky of the Breakers, a fleet waiting"),
+    "game_c55_bone": ("game", "Helm on arrival at -4, -3: the card reading The Bone Pile with its line, in the Breakers' nebula"),
     "game_c55_breakers": ("game", "Helm on arrival at -3, -2: the card reading The Breakers with the system's two numbers under it"),
     "game_c55_charted": ("game", "Helm's Quest Log, Charted Locations open: Kestrel Relay, The Tern, Assay Office and The Bone Pile"),
     # drawn
