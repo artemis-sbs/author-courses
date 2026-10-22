@@ -291,125 +291,125 @@ When this quest is done, the game ends,
 and that sentence is on the last screen.
 
 74
-00:05:31,283 --> 00:05:36,935
-Citation is the line on the card the crew gets at that moment.
+00:05:31,283 --> 00:05:35,196
+Citation is printed under it, on that same screen.
 
 75
-00:05:38,735 --> 00:05:40,909
+00:05:36,996 --> 00:05:39,170
 My goal is hidden too,
 
 76
-00:05:41,359 --> 00:05:43,967
+00:05:39,620 --> 00:05:42,228
 and the third chapter reveals it.
 
 77
-00:05:44,867 --> 00:05:49,215
+00:05:43,128 --> 00:05:47,476
 So the ending arrives when the story has earned it.
 
 78
-00:05:51,015 --> 00:05:53,624
+00:05:49,276 --> 00:05:51,885
 I save, and lint says clean.
 
 79
-00:05:54,524 --> 00:05:56,698
+00:05:52,785 --> 00:05:54,959
 Lint is good at chains.
 
 80
-00:05:57,148 --> 00:06:01,061
+00:05:55,409 --> 00:05:59,322
 It'll tell you when a chapter can never appear.
 
 81
-00:06:02,261 --> 00:06:07,043
+00:06:00,522 --> 00:06:05,304
 Three entries at the start, and no sign of the rest.
 
 82
-00:06:08,843 --> 00:06:11,452
+00:06:07,104 --> 00:06:09,713
 I go and find the Tern.
 
 83
-00:06:12,352 --> 00:06:15,396
+00:06:10,613 --> 00:06:13,657
 And there's chapter two, with its briefing.
 
 84
-00:06:17,196 --> 00:06:22,848
+00:06:15,457 --> 00:06:21,109
 It says to ask at the Assay Office, so that's where I go.
 
 85
-00:06:23,748 --> 00:06:27,226
+00:06:22,009 --> 00:06:25,487
 I hail them, and I pay the fee.
 
 86
-00:06:29,026 --> 00:06:31,635
+00:06:27,287 --> 00:06:29,896
 The chapter's done, it paid me,
 
 87
-00:06:32,085 --> 00:06:35,563
+00:06:30,346 --> 00:06:33,824
 and the miners like me a little more.
 
 88
-00:06:36,463 --> 00:06:38,202
+00:06:34,724 --> 00:06:36,463
 And here's chapter three.
 
 89
-00:06:39,402 --> 00:06:43,315
+00:06:37,663 --> 00:06:41,576
 This is the place the Gleaners won't talk about.
 
 90
-00:06:44,215 --> 00:06:47,259
+00:06:42,476 --> 00:06:45,520
 And as I arrive, the goal appears.
 
 91
-00:06:49,059 --> 00:06:51,667
+00:06:47,320 --> 00:06:49,928
 Four of them, and it's over.
 
 92
-00:06:53,467 --> 00:06:56,076
-There's my citation, on the card.
+00:06:51,728 --> 00:06:54,772
+There's my sentence, on the last screen.
 
 93
-00:06:56,976 --> 00:07:00,454
-And there's my sentence, on the last screen.
+00:06:55,672 --> 00:06:57,846
+And my citation, under it.
 
 94
-00:07:02,254 --> 00:07:04,428
+00:06:59,646 --> 00:07:01,820
 One thing before you go.
 
 95
-00:07:05,328 --> 00:07:07,937
+00:07:02,720 --> 00:07:05,328
 A universe doesn't have to end.
 
 96
-00:07:08,837 --> 00:07:15,359
+00:07:06,228 --> 00:07:12,750
 Leave the goals out, and it's a sandbox for as long as the crew likes.
 
 97
-00:07:16,259 --> 00:07:20,607
+00:07:13,650 --> 00:07:17,998
 Write a goal when your story has a last page.
 
 98
-00:07:21,807 --> 00:07:23,546
+00:07:19,198 --> 00:07:20,937
 Now it's your turn.
 
 99
-00:07:24,446 --> 00:07:28,359
+00:07:21,837 --> 00:07:25,750
 Write your story as three lines on paper first.
 
 100
-00:07:29,259 --> 00:07:34,041
+00:07:26,650 --> 00:07:31,433
 Chain them, with the first one open and the rest hidden.
 
 101
-00:07:35,841 --> 00:07:38,450
+00:07:33,233 --> 00:07:35,841
 End one chapter with a conversation,
 
 102
-00:07:38,900 --> 00:07:44,117
+00:07:36,291 --> 00:07:41,509
 and give the crew two ways to get what they came for.
 
 103
-00:07:45,017 --> 00:07:47,626
+00:07:42,409 --> 00:07:45,017
 Then decide whether your universe ends.
 
 104
-00:07:49,426 --> 00:07:52,470
+00:07:46,817 --> 00:07:49,861
 Next time, we put people in it.

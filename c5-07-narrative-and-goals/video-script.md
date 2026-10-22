@@ -66,8 +66,9 @@ The companion page is `lesson.md`; the finished file is in `example\`.
    hidden, and it still needs the answer afterward.
 7. On arrival at -4, -3: credits 950, Break the Bone Pile Active, seven hostile ships
    (five of the Gleaners, two raiders).
-8. With four kills reported the goal is done. The game is sent an incoming hail titled VICTORY
-   carrying the `Citation:`, and is told the game is over, won, with the `Win:` sentence.
+8. With four kills reported the goal is done, and the game is over, won: the end-of-game
+   screen shows the `Win:` sentence with the `Citation:` under it (ENGINE-SEEN 2026-10-22,
+   kills reported by a probe).
 9. Every row of the two tables in Step 5: 40 variants, one change each, each linted and
    played. Re-measured 2026-10-10 on the released libraries, with two ships:
    `Standing: gleaners fearsome 70` on a beat left both at 40 with the Gleaners, and
@@ -87,10 +88,8 @@ before an unaffordable `costs` is sent anyway; that a shared reward pays each si
 1. A chapter appearing in the Quest Log while the crew watches, and its briefing there:
    the Tern drawn beside the first line of The Assay Ledger, its table, the Ximni face
    and the gray heading in What the Gleaners Keep, the icon bullets in the goal.
-2. The VICTORY hail on Comms.
-3. The end-of-game screen in an Open Universe mission, with the `Win:` sentence on it.
-4. What the crew can do after the game is won, and what Continue offers next time.
-5. Real kills counting toward the goal.
+2. What the crew can do after the game is won, and what Continue offers next time.
+3. Real kills counting toward the goal.
 
 ## Scenes
 
@@ -175,7 +174,7 @@ MyUniverse`: clean.
 
 **Say:** "A goal is a beat with one more line. || Win, and then a sentence. ||| When
 this quest is done, the game ends, | and that sentence is on the last screen. ||
-Citation is the line the crew is hailed with at that moment. ||| My goal is hidden
+Citation is printed under it, on that same screen. ||| My goal is hidden
 too, | and the third chapter reveals it. || So the ending arrives when the story has
 earned it. ||| I save, and lint says clean. || Lint is good at chains. | It'll tell you
 when a chapter can never appear. ||"
@@ -194,11 +193,11 @@ it paid me, | and the miners like me a little more. || And here's chapter three.
 ### 9. The end
 
 **Screen:** Engage What the Gleaners Keep. Break the Bone Pile appears. The fight. The
-VICTORY hail. The end-of-game screen.
+end-of-game screen.
 
 **Say:** "This is the place the Gleaners won't talk about. || And as I arrive, the goal
-appears. ||| Four of them, and it's over. ||| There's my citation, in the hail. || And
-there's my sentence, on the last screen. ||| One thing before you go. || A universe
+appears. ||| Four of them, and it's over. ||| There's my sentence, on the last screen. || And
+my citation, under it. ||| One thing before you go. || A universe
 doesn't have to end. || Leave the goals out, and it's a sandbox for as long as the crew
 likes. || Write a goal when your story has a last page. ||"
 

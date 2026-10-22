@@ -253,11 +253,11 @@ Forty years is long enough. Nobody else is coming for them.
 | `Starts when: revealed` | This goal is the story's last chapter, so the beat before it reveals it. A goal can also say `at once` |
 | `Done when: destroy 4 enemies` | The same endings as a job, from Lecture 6 |
 | `Win:` | Finishing this quest ends the game, won. The sentence is the one on the end-of-game screen. You know this line from Class 1 |
-| `Citation:` | The words on the card the crew is sent at that moment, under the title VICTORY |
+| `Citation:` | The closing words. The end-of-game screen prints them under your `Win:` sentence |
 | The text below the fence | The last briefing. The two lines starting `- ![](icon://` are a list whose bullets are icons, from Lecture 6: a crosshair for the fight, a person for who it is for |
 
-`Win:` and `Citation:` stay on one line each. They are fields, and each is shown in a
-place that has room for one sentence.
+`Win:` and `Citation:` stay on one line each. They are fields, and the end-of-game
+screen has room for one sentence of each.
 
 A universe with no Goals chapter never ends. That is a real choice, and many good
 sandboxes make it. Write a goal when your story has a last page.
@@ -315,8 +315,8 @@ Lint says `clean` for every one of these.
 | A cost the crew cannot pay: `costs 900 credits` | The answer is refused. The chapter stays open until they can pay, or give the other answer |
 | `Win: true` | The game ends, won. The end-of-game screen shows the goal's name where your sentence would be |
 | No `Win:` line on the goal | The goal is done, and the game goes on |
-| `Lose:` where you meant `Win:` | When the goal is done the crew is sent a card titled DEFEAT, and the game goes on |
-| No `Citation:` line | The card under VICTORY reads "The frontier is yours." |
+| `Lose:` where you meant `Win:` | When the goal is done nothing happens, and the game goes on |
+| No `Citation:` line | The end-of-game screen shows your `Win:` sentence alone |
 | A side's key that ends in s in a goal: `destroy 4 gleaners` | The goal never finishes. Lecture 6 has this row too. Write `enemies` |
 
 So check these by eye:
@@ -355,8 +355,8 @@ sbs run server,helm,comms -m MyUniverse map=0
 6. Engage it. On arrival at -4, -3 it is done, and pays 400: the crew has 950. **Break
    the Bone Pile** has appeared. Ships are waiting at the Bone Pile, far out from where
    you arrive.
-7. Destroy four of them. An incoming hail titled VICTORY comes in on Comms, with your
-   `Citation:` as its line. The game ends, and the end-of-game screen shows your `Win:` sentence.
+7. Destroy four of them. The game ends, and the end-of-game screen shows your `Win:`
+   sentence with your `Citation:` under it.
 
 Start a new game and at step 5 press **Demand the Tern's entry, now**. The chapter
 closes the same way, the crew keeps its 150 credits, and the ship's standing with the
@@ -386,7 +386,7 @@ Deepwell is 20 below where it was.
 | Pressing the fee answer leaves the same three buttons | The crew has fewer than 150 credits. The answer was refused |
 | A beat should have changed a side's standing, and did not | The deed names a trait that side does not value, or its key is misspelled. Lecture 4, Step 5 |
 | The goal was done and the game did not end | It has no `Win:` line, or it says `Lose:` |
-| The card under VICTORY reads "The frontier is yours." | The goal has no `Citation:` |
+| The end-of-game screen has no second sentence | The goal has no `Citation:` |
 
 ## Exercise
 

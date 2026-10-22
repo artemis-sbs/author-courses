@@ -48,13 +48,13 @@ The companion page is `lesson.md`; the finished `kestrel_verge.amd` is in `examp
    1150; eleven hostile ships, four of them the battle line. (Re-measured 2026-10-17 in a
    game where The Bone Pile was not an enemy system: seven, three guards and a battle line
    of four. Row 16 now says seven to twelve.)
-5. Four Gleaner kills reported: the game says game over, a win, with the `Win:`
-   sentence, and sends a card titled VICTORY with the `Citation:` sentence.
+5. Four Gleaner kills reported: the game says game over, a win; the end screen shows the
+   `Win:` sentence with the `Citation:` under it (ENGINE-SEEN 2026-10-22, kills reported
+   by a probe).
 
 **NOT seen by anyone.** If one is not as the page says, stop and fix the page:
 
-1. Row 18, for real: four Gleaner ships destroyed by a crew, the VICTORY card, the end
-   screen. If one light cruiser cannot do it, lower the tier on Lecture 13's card and
+1. Row 18, for real: four Gleaner ships destroyed by a crew, then the end screen. If one light cruiser cannot do it, lower the tier on Lecture 13's card and
    say so on camera.
 2. Every button's exact text on Comms. The page prints them as the game was asked to
    send them. `Escort (300 cr)` was sent with two spaces before the bracket.
@@ -133,8 +133,7 @@ that a single mission doesn't have. || There's the save, and I'm going to leave 
 ### 7. The second sitting
 
 **Screen:** The same command. The ship at Assay Office. The Quest Log. Engage What the
-Gleaners Keep: three cards. Science: the contacts. The fight. The VICTORY card and the
-end screen.
+Gleaners Keep: three cards. Science: the contacts. The fight. The end screen.
 
 **Say:** "I start it with the same line, | and we're back at the Assay Office, with
 the same credits. || The Quest Log is just as I left it. ||| Now for the place the

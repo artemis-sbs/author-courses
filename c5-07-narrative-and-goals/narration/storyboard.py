@@ -30,9 +30,10 @@ Marks are left off every game still until the stills exist. Press order:
   5. Helm, Quests: game_c57_keep (What the Gleaners Keep, with its briefing and table).
   6. Helm: engage What the Gleaners Keep, at (-4, -3): game_c57_pile (the Bone Pile ahead);
      Quests: game_c57_goal (Break the Bone Pile newly in the log).
-  7. Fight the four hulls: game_c57_fight. When the last goes: game_c57_victory (the hail
-     titled VICTORY with the citation), then game_c57_end (the last screen with the Win
-     sentence).
+  7. Fight the four hulls: game_c57_fight. When the last goes: game_c57_end (the end-of-game
+     screen, the Win sentence and the citation under it). TAKEN 2026-10-22 with the kills
+     reported by a probe (stats read 0 destroyed). There is no VICTORY hail: the end screen
+     shows the citation.
 Never caption a face or a clock time.
 """
 LECTURE = "c5-07-narrative-and-goals"
@@ -208,8 +209,7 @@ _game("game_c57_keep", "Helm, Quests: What the Gleaners Keep newly in the log, w
 _game("game_c57_pile", "Helm on arrival at (-4, -3): the card reading The Bone Pile with its line")
 _game("game_c57_goal", "Helm, Quests: Break the Bone Pile newly in the log, as the last chapter")
 _game("game_c57_fight", "Helm, the four Gleaner hulls at the Bone Pile, the fight under way")
-_game("game_c57_victory", "Comms: the incoming hail titled VICTORY with the citation as its line")
-_game("game_c57_end", "The last screen of the game, the Win sentence on it")
+_game("game_c57_end", "The end-of-game screen: Game results, the Win sentence and the citation under it")
 
 # drawn
 _card("card_have", "table", heading="Step 1 - What you already have, and what is missing", kicker="Three lines you know")
@@ -312,8 +312,7 @@ BOARD = {
         _b(0, "game_c57_pile"),
         _b(1, "game_c57_goal"),
         _b(2, "game_c57_fight"),
-        _b(3, "game_c57_victory"),
-        _b(4, "game_c57_end"),
+        _b(3, "game_c57_end"),
         _b(5, "card_ending"),
         _b(6, "card_ending", ("part", "r1")),
         _b(7, "card_ending", ("part", "r2")),

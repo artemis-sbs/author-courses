@@ -16,8 +16,8 @@ the narration.
 GAME STILLS. TAKEN 2026-10-22 in the real engine (exe of 10-22 16:09), 10/10. Probe-only
 help, never on screen: the ship is moved beside the Assay Office on arrival (it sits beyond
 Comms range), and for game_c16_win a third sitting from the same save reported four Gleaner
-kills through quest_on_kill_shared, so the end screen's stats read 0 destroyed. The VICTORY
-hail was already gone under the end screen when it was shot. game_c16_line shows the four
+kills through quest_on_kill_shared, so the end screen's stats read 0 destroyed. There is no
+VICTORY hail: the end screen shows the Win: sentence and the citation. game_c16_line shows the four
 ships in front; the guards by the wreck were out of view.
 Planned: Open
 Universe probe: built in data/missions/_sandbox, saves backed up by game.py; never start the
@@ -47,7 +47,7 @@ Sitting 2 (the same run line, same save):
      "A Gleaner battle line is forming up between you and the Bone Pile."): game_c16_pile.
   9. A few seconds later, count the ships: game_c16_line (three guards by the wreck, four or
      five in front of the ship). Do not wait for more.
- 10. game_c16_win (the VICTORY card and the end screen with "The Bone Pile is broken, and what
+ 10. game_c16_win (the end screen with "The Bone Pile is broken, and what
      was taken from the Tern is going home.") is NOT playable by hand: the page's own check
      told the game four Gleaner ships were destroyed. Take it the same way, with the devqueue
      or a probe patch that does it, and say so in the notes.
@@ -126,7 +126,7 @@ STILLS = {
     "game_c16_continue": ("game", "The second sitting's first screen: Helm, the crew beside the Assay Office where they stopped"),
     "game_c16_pile": ("game", "Comms just after arriving at The Bone Pile: the guards' Threat line, the Bone Pile charted, and ours 'A Gleaner battle line is forming up...'"),
     "game_c16_line": ("game", "Weapons a few seconds later, zoomed out: the battle line of four Gleaner ships closing on the ship"),
-    "game_c16_win": ("game", "The end screen on Comms: Game results, and the goal's own sentence 'The Bone Pile is broken, and what was taken from the Tern is going home.'"),
+    "game_c16_win": ("game", "The end screen on Comms: Game results, the goal's own sentence 'The Bone Pile is broken, and what was taken from the Tern is going home.' and its citation under it"),
     # drawn
     "card_title": ("card", "title", {}),
     "card_plan": ("card", "table", {"heading": "Step 1 - Plan the evening on paper", "nth": 1, "kicker": "One evening, two sittings"}),

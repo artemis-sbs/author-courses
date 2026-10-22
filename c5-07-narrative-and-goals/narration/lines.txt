@@ -71,7 +71,7 @@ s07_the_last_page_0	A goal is a beat with one more line.
 s07_the_last_page_1	Win, and then a sentence.
 s07_the_last_page_2	When this quest is done, the game ends,
 s07_the_last_page_3	and that sentence is on the last screen.
-s07_the_last_page_4	Citation is the line on the card the crew gets at that moment.
+s07_the_last_page_4	Citation is printed under it, on that same screen.
 s07_the_last_page_5	My goal is hidden too,
 s07_the_last_page_6	and the third chapter reveals it.
 s07_the_last_page_7	So the ending arrives when the story has earned it.
@@ -89,8 +89,8 @@ s08_play_the_story_7	And here's chapter three.
 s09_the_end_0	This is the place the Gleaners won't talk about.
 s09_the_end_1	And as I arrive, the goal appears.
 s09_the_end_2	Four of them, and it's over.
-s09_the_end_3	There's my citation, on the card.
-s09_the_end_4	And there's my sentence, on the last screen.
+s09_the_end_3	There's my sentence, on the last screen.
+s09_the_end_4	And my citation, under it.
 s09_the_end_5	One thing before you go.
 s09_the_end_6	A universe doesn't have to end.
 s09_the_end_7	Leave the goals out, and it's a sandbox for as long as the crew likes.

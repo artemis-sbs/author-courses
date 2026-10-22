@@ -177,7 +177,7 @@ sbs run server,helm,comms,weapons -m MyUniverse map=0
 | 15 | Helm: Engage **What the Gleaners Keep** | Three lines on Comms: **The Bone Pile**; "The Bone Pile is guarded - hostiles on approach."; and yours, "A Gleaner battle line is forming up between you and the Bone Pile." Credits are 1150 | |
 | 16 | Weapons or Helm: count | Three guards by the wreck, and the battle line of four or five close by. If this game made The Bone Pile an enemy system, Gleaner fleets wait far off as well (four ships in the game Lecture 12 counted). Seven to twelve hostile ships in all | |
 | 17 | Helm: the Quest Log | What the Gleaners Keep is Done. **Break the Bone Pile** has appeared | |
-| 18 | Weapons: destroy four Gleaner ships | A **VICTORY** hail on Comms: "Forty years late, the third colony has been counted." The game ends, and the end screen has your sentence: "The Bone Pile is broken, and what was taken from the Tern is going home." | |
+| 18 | Weapons: destroy four Gleaner ships | The game ends. The end screen has your sentence, "The Bone Pile is broken, and what was taken from the Tern is going home.", and your citation under it: "Forty years late, the third colony has been counted." | |
 
 Row 18 is the one row nobody has played. In the check behind this page a script told
 the game that four Gleaner ships had been destroyed, and the game ended as the row says.
