@@ -41,8 +41,8 @@ The companion page is `lesson.md`; the finished `kestrel_verge.amd` is in `examp
 3. The worldlet is sent `Build Headquarters (150 ore, 15 crew)`. Thirty-three seconds
    after the press: "Headquarters complete." The worldlet is then sent eight more
    buttons.
-4. Extractor, Academy, Shipyard and Lab, started together: all four stand inside 60
-   seconds. With the Extractor, ore rose 16 in 30 seconds.
+4. Extractor, Academy, Shipyard and Lab, one at a time (ENGINE: the Admiralty builds
+   one thing at once; the menu waits for it). With the Extractor, ore rose 16 in 30 seconds.
 5. The Shipyard is sent one button, Maren's. Commissioned: fleet F1, three ships on the
    crew's side. A ship of the fleet is sent `Hail` and five orders.
 6. The Lab is sent `Research Deeper Silos [engineering]`. Forty-one seconds after the

@@ -30,8 +30,8 @@ Press order:
      3,600 ore, 1,200 gas, 480 crew showing).
   3. Select Hollin Prime: game_c15_hq (the button "Build Headquarters (150 ore, 15 crew)").
      Press it, wait half a minute.
-  4. Select it again, build an Extractor, an Academy, a Shipyard and a Lab, wait 45 seconds:
-     game_c15_platforms (all four standing, ore climbing).
+  4. Select it again, build an Extractor, an Academy, a Shipyard and a Lab, one at a time
+     (the menu waits for each): game_c15_platforms (all four standing, ore climbing).
   5. Select the Shipyard: game_c15_shipyard (one button, "Commission Commodore Ilse Maren - the
      Harbormaster"; do not caption any face). Press it: game_c15_fleet (three ships formed at
      the Shipyard).
@@ -141,10 +141,10 @@ STILLS = {
     "game_c15_hq": ("game", "Hollin Prime selected: the single button 'Build Headquarters (150 ore, 15 crew)'"),
     "game_c15_platforms": ("game", "Hollin Prime with an Extractor, an Academy, a Shipyard and a Lab standing, the ore climbing"),
     "game_c15_shipyard": ("game", "The Shipyard selected: one button 'Commission Commodore Ilse Maren - the Harbormaster'"),
-    "game_c15_fleet": ("game", "The Admiral console: a fleet of three ships formed at the Shipyard, holding"),
+    "game_c15_fleet": ("game", "Forces open: Commodore Ilse Maren holding with three ships, Fleet F1 on the map by the Shipyard"),
     "game_c15_lab1": ("game", "The Lab selected: one button 'Research Deeper Silos [engineering]'"),
     "game_c15_lab2": ("game", "The Lab selected after the first step is done: 'Research Hot Drills [engineering]' is offered"),
-    "game_c15_continue": ("game", "The Admiral console after Continue and twenty seconds: the five platforms standing, the ore rising again"),
+    "game_c15_continue": ("game", "The Admiral console after Continue and twenty seconds: the five platforms and Fleet F1 back where they were"),
     # drawn
     "card_title": ("card", "title", {}),
     "card_three": ("card", "table", {"heading": "Step 1 - Three things switch it on", "nth": 1, "kicker": "Three things switch the Admiral on"}),

@@ -302,9 +302,9 @@ window's console to **Admiral**.
 | 2 | Selects Hollin Prime | One button: **Build Headquarters (150 ore, 15 crew)** |
 | 3 | Presses it | "Construction started: Headquarters." The pools drop to 3,450 ore and 465 crew at once. About half a minute later: "Headquarters complete." |
 | 4 | Selects Hollin Prime again | Eight more platforms on offer, with Lecture 14's costs |
-| 5 | Builds an Extractor, an Academy, a Shipyard and a Lab | All four stand within a minute. With the Extractor, ore climbs by about one every two seconds |
+| 5 | Builds an Extractor, an Academy, a Shipyard and a Lab | One at a time: the Admiralty builds one thing at once, and the menu waits for it. **Build** shows what is under way. With the Extractor, ore climbs by about one every two seconds |
 | 6 | Selects the Shipyard | One button, because you wrote one officer: **Commission Commodore Ilse Maren - the Harbormaster** |
-| 7 | Presses it | A fleet of three ships at the Shipyard, on the crew's own side: two light cruisers and a battle cruiser |
+| 7 | Presses it | A fleet of three ships at the Shipyard, on the crew's own side: two light cruisers and a battle cruiser. **Forces** lists it: Commodore Ilse Maren, holding, three ships |
 | 8 | Selects a ship of the fleet | **Hail**, **Escort the flagship**, **Patrol the system**, **Strike hostiles**, **Salvage wrecks**, **Withdraw to base** |
 | 9 | Selects the Lab | **Research Deeper Silos [engineering]** |
 | 10 | Presses it, and waits 41 seconds | "Research complete: Deeper Silos." Each pool can hold 14,900. The Lab offers **Research Hot Drills [engineering]** |
