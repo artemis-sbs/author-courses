@@ -13,7 +13,13 @@ NOT SHOWN AS WRITTEN: nothing is skipped in the editor. The run-through tables a
 page (rows 1 to 12 and 13 to 18), and the page's "if something goes wrong" table is not read in
 the narration.
 
-GAME STILLS. NOT TAKEN YET: planned here, to be taken in one sitting in the real engine. Open
+GAME STILLS. TAKEN 2026-10-22 in the real engine (exe of 10-22 16:09), 10/10. Probe-only
+help, never on screen: the ship is moved beside the Assay Office on arrival (it sits beyond
+Comms range), and for game_c16_win a third sitting from the same save reported four Gleaner
+kills through quest_on_kill_shared, so the end screen's stats read 0 destroyed. The VICTORY
+hail was already gone under the end screen when it was shot. game_c16_line shows the four
+ships in front; the guards by the wreck were out of view.
+Planned: Open
 Universe probe: built in data/missions/_sandbox, saves backed up by game.py; never start the
 game by hand for it. ONE game, FOUR windows, TWO sittings:
 `python game.py c5-16-a-playable-universe start --state final --consoles server,helm,comms,weapons`
@@ -112,15 +118,15 @@ STILLS = {
     "game_c16_log": ("game", "Helm, the Quest Log open: the three leads, Kestrel Relay under Charted Locations"),
     "game_c16_levy": ("game", "Comms with Hollin Compact selected: the hail answers, 'Pay the relay levy' among them"),
     "game_c16_escort": ("game", "Comms with Hollin Compact selected again: Patrol and 'Escort (300 cr)' now offered"),
-    "game_c16_tern": ("game", "Helm just after arriving at The Tern: the Tern card and the orange Threat card up"),
+    "game_c16_tern": ("game", "Comms just after arriving at The Tern, the ship's own channel: the orange Threat line 'The Tern is guarded - hostiles on approach.' and the Tern charted"),
     "game_c16_ledger_open": ("game", "Helm, the Quest Log: The Third Colony Done and The Assay Ledger newly appeared"),
-    "game_c16_assay": ("game", "Helm just after arriving at the Assay Office: the place card, the escort paid out"),
+    "game_c16_assay": ("game", "Comms just after arriving at the Assay Office: the ship beside it, Assay Office charted, 'Quest complete: Hollin Compact: Escort'"),
     "game_c16_fee": ("game", "Comms with Assay Office selected, Hail Deepwell Assembly: three answers, 'Pay the search fee and ask about the Tern' first"),
     "game_c16_keep": ("game", "Helm, the Quest Log: The Assay Ledger Done and What the Gleaners Keep newly appeared"),
-    "game_c16_continue": ("game", "The second sitting's first screen: the crew at the Assay Office where they stopped, the Quest Log as it was left"),
-    "game_c16_pile": ("game", "Helm just after arriving at The Bone Pile: the place card, the guards' Threat card and ours 'A Gleaner battle line is forming up...' up together"),
-    "game_c16_line": ("game", "The same system a few seconds later: three guards by the wreck and four or five ships in front of the ship"),
-    "game_c16_win": ("game", "The end screen: the VICTORY card and the goal's own sentence 'The Bone Pile is broken, and what was taken from the Tern is going home.'"),
+    "game_c16_continue": ("game", "The second sitting's first screen: Helm, the crew beside the Assay Office where they stopped"),
+    "game_c16_pile": ("game", "Comms just after arriving at The Bone Pile: the guards' Threat line, the Bone Pile charted, and ours 'A Gleaner battle line is forming up...'"),
+    "game_c16_line": ("game", "Weapons a few seconds later, zoomed out: the battle line of four Gleaner ships closing on the ship"),
+    "game_c16_win": ("game", "The end screen on Comms: Game results, and the goal's own sentence 'The Bone Pile is broken, and what was taken from the Tern is going home.'"),
     # drawn
     "card_title": ("card", "title", {}),
     "card_plan": ("card", "table", {"heading": "Step 1 - Plan the evening on paper", "nth": 1, "kicker": "One evening, two sittings"}),

@@ -84,7 +84,7 @@ that when a row fails you know where to look.
 
 Three rules for a plan like this:
 
-1. **One sitting, three places.** Every place has a card to read, a station to talk to
+1. **One sitting, three places.** Every place has a line to read on Comms, a station to talk to
    or a fight to have. Three is an evening.
 2. **End a sitting somewhere safe.** The save keeps the system the crew is in. The Assay
    Office is a friendly port. The Bone Pile is not a place to wake up in.
@@ -143,16 +143,16 @@ story was walked by script. Tick each row, or write what you saw instead.
 
 | | Do | You should see | Tick |
 |---|---|---|---|
-| 1 | Nothing yet. Read the cards | **Kestrel Relay**, and "Location charted: Kestrel Relay" | |
+| 1 | Nothing yet. Read Comms | **Kestrel Relay**, and "Location charted: Kestrel Relay" | |
 | 2 | Helm: open the Quest Log | Three leads: The Second Colony, The Breaking Yard, The Third Colony. Under Charted Locations: Kestrel Relay | |
 | 3 | Comms: select Hollin Compact | Six buttons. Among them **Hail Hollin Compact**, **Hail Edda Brake, the Relay Warden** and **Escort (250 cr)** | |
 | 4 | Comms: **Hail Hollin Compact**, then **Pay the relay levy** | "Paid and entered. The relay stays lit another month, and we know who lit it." The ship's credits go from 500 to 400 | |
 | 5 | Comms: select Hollin Compact again | **Patrol (240 cr)** is there now, and the escort pays more: **Escort (300 cr)** | |
 | 6 | Comms: **Escort (300 cr)** | The Quest Log has a Ship section, with **Hollin Compact: Escort** | |
-| 7 | Helm: Engage **The Third Colony** | **The Tern**, then a **Threat** card: "The Tern is guarded - hostiles on approach." One or two raiders are out by the wreck | |
+| 7 | Helm: Engage **The Third Colony** | On Comms: **The Tern**, then a **Threat** line: "The Tern is guarded - hostiles on approach." One or two raiders are out by the wreck | |
 | 8 | Helm: the Quest Log | The Third Colony is Done. **The Assay Ledger** has appeared. The Tern is under Charted Locations | |
 | 9 | Helm: Engage **The Second Colony** | **Assay Office**. The escort is Done, and credits are 700 | |
-| 10 | Comms: select Assay Office, **Hail Deepwell Assembly** | Three answers, the first of them **Pay the search fee and ask about the Tern** | |
+| 10 | Helm: Engage **Assay Office** under Charted Locations - it is far out, beyond what Comms shows. Then Comms: select Assay Office, **Hail Deepwell Assembly** | Three answers, the first of them **Pay the search fee and ask about the Tern** | |
 | 11 | Comms: **Pay the search fee and ask about the Tern** | "Fee received. Forty crates off the Tern, entered as salvage, sold to us by the Gleaners." Credits are 750: the fee was 150 and the step paid 200 | |
 | 12 | Helm: the Quest Log | The Assay Ledger is Done. **What the Gleaners Keep** has appeared | |
 
@@ -174,10 +174,10 @@ sbs run server,helm,comms,weapons -m MyUniverse map=0
 |---|---|---|---|
 | 13 | Nothing yet | The crew is at **Assay Office**, where they stopped. Credits are 750 | |
 | 14 | Helm: the Quest Log | As row 12 left it. Three places under Charted Locations | |
-| 15 | Helm: Engage **What the Gleaners Keep** | Three cards: **The Bone Pile**; "The Bone Pile is guarded - hostiles on approach."; and yours, "A Gleaner battle line is forming up between you and the Bone Pile." Credits are 1150 | |
+| 15 | Helm: Engage **What the Gleaners Keep** | Three lines on Comms: **The Bone Pile**; "The Bone Pile is guarded - hostiles on approach."; and yours, "A Gleaner battle line is forming up between you and the Bone Pile." Credits are 1150 | |
 | 16 | Weapons or Helm: count | Three guards by the wreck, and the battle line of four or five close by. If this game made The Bone Pile an enemy system, Gleaner fleets wait far off as well (four ships in the game Lecture 12 counted). Seven to twelve hostile ships in all | |
 | 17 | Helm: the Quest Log | What the Gleaners Keep is Done. **Break the Bone Pile** has appeared | |
-| 18 | Weapons: destroy four Gleaner ships | A **VICTORY** card: "Forty years late, the third colony has been counted." The game ends, and the end screen has your sentence: "The Bone Pile is broken, and what was taken from the Tern is going home." | |
+| 18 | Weapons: destroy four Gleaner ships | A **VICTORY** hail on Comms: "Forty years late, the third colony has been counted." The game ends, and the end screen has your sentence: "The Bone Pile is broken, and what was taken from the Tern is going home." | |
 
 Row 18 is the one row nobody has played. In the check behind this page a script told
 the game that four Gleaner ships had been destroyed, and the game ended as the row says.
