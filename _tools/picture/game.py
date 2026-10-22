@@ -318,7 +318,13 @@ def build(lecture, state, patches, amd_patches=(), sandbox=False):
     open(os.path.join(probe, PROBE_MARK), "w").close()
     print(f"probe made from {what}" + (f" in {SANDBOX}/" if sandbox else ""))
     if patches and "story.mast" not in files:
-        sys.exit("--patch: the state has no story.mast")
+        # A copy of a shipped mission (PROBE_FROM) keeps ITS story.mast when the state
+        # carries none - patch that one. Anything else has nothing to patch.
+        shipped = os.path.join(probe, "story.mast")
+        if not (source and os.path.exists(shipped)):
+            sys.exit("--patch: the state has no story.mast")
+        with open(shipped, encoding="utf-8", newline="") as fh:
+            files["story.mast"] = fh.read().replace("\r\n", "\n")
     for f in sorted(files):                           # the lecture's whole folder; the rest stays the template's
         text = files[f]
         want = patches if f == "story.mast" else amd_patches if f == states.key(sb.FILE) else ()

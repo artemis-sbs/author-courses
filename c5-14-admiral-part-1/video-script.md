@@ -23,7 +23,7 @@
 > game's stand-in (the mock). The Admiral's console was never opened. A script made the
 > Admiral's camera the way the console does, selected worldlets and platforms through
 > the game's own Comms routes, and pressed the buttons the game sent, by their text.
-> **Nothing in this lecture has been run in the real game, and nobody has seen any of
+> **ENGINE-SEEN 2026-10-22** (all 10 stills): the Admiral console, the build menu, the fleet and research. Before that: **Nothing in this lecture had been run in the real game, and nobody had seen any of
 > its screens.**
 
 The companion page is `lesson.md`. The finished `skirmish_arena.amd` is in `example\`;
@@ -188,7 +188,7 @@ page.
 
 **Say:** "Now let's play it. || On the start screen I pick the skirmish universe, and a new
 game. ||| There's one world at home, and it's mine. || I build a headquarters, | then
-the extractor, the academy, the shipyard and the lab. || The ore is climbing. ||| The
+the extractor, the academy, the shipyard and the lab. || One at a time. ||| The
 shipyard offers my officer first, | by her name and her title. || And the lab offers
 my first step, | and then, once that's done, my second. ||"
 

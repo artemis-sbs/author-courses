@@ -429,20 +429,21 @@ sbs run server,admiral -m AdmiralLab
 On the server's start screen, set **Universe** to **Skirmish - The Broken Accord** and
 **Start** to **New Game**, then start the mission.
 
-Nobody has seen the Admiral console for this page. The steps below are what the game
-was asked to do when a script pressed the Admiral's buttons. If the console is not
-offered in the second window, close the game and start it with `server,helm`, then
-change that window's console to **Admiral**.
+In the second window, pick **Admiral** from the console list and press **ready**.
 
-1. The home system has one worldlet, and it is **Hollin Prime**.
-2. Select it. **Build Headquarters (150 ore, 15 crew)**. Press it and wait half a
-   minute.
-3. Select it again. Build an **Extractor**, an **Academy**, a **Shipyard** and a
-   **Lab**. They build together. The slowest, the Shipyard, takes 45 seconds.
-4. Watch the ore. It climbs by about one a second.
+1. The home system has one worldlet, and it is **Hollin Prime**. Press **Worldlets** above
+   the map to see only it.
+2. Click its marker on the map. The menu that opens has one button: **Build Headquarters
+   (150 ore, 15 crew)**. Press it and wait half a minute.
+3. Click it again. Build an **Extractor**, an **Academy**, a **Shipyard** and a **Lab**,
+   one at a time: the Admiralty builds one thing at once, and the menu waits for it.
+   The Shipyard is the slowest, at 45 seconds. **Build**, on the right, shows what is
+   under way.
+4. Press **Info**. The ore, gas and crew pools are there. Each platform cost some.
 5. Select the Shipyard. **Commission Commodore Ilse Maren - the Harbormaster** is the
    first button, because she is first in the file.
-6. Select one of her three ships and read its orders.
+6. Press **Forces**: Commodore Ilse Maren holds the Shipyard with three ships, shown on the
+   map as Fleet F1.
 7. Select the Lab. **Research Deeper Silos [engineering]**. Forty seconds later, select
    the Lab again: **Research Hot Drills [engineering]**.
 

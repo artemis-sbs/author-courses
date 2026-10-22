@@ -167,7 +167,7 @@ SHOTS = [
             ("There's one world at home, and it's mine.", 303, 407),
             ('I build a headquarters,', 434, 486),
             ('then the extractor, the academy, the shipyard and the lab.', 500, 630),
-            ('The ore is climbing.', 657, 709),
+            ('One at a time.', 657, 709),
             ('The shipyard offers my officer first,', 763, 842),
             ('by her name and her title.', 855, 933),
             ('And the lab offers my first step,', 960, 1052),

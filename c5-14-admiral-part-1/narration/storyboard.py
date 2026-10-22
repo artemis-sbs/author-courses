@@ -138,13 +138,13 @@ STILLS = {
     # the command prompt
     "t_run": ("session", ["sbs run server,admiral -m AdmiralLab --dry-run"], {"state": "final"}),
     # THE REAL GAME (planned; not taken yet - see the docstring for the press order)
-    "game_c14_helm": ("game", "Helm, a ship's bridge view in a system: one ship, one crew (the contrast with the Admiral)"),
+    "game_c14_helm": ("game", "Helm, one ship's 2D view among enemy contacts (the contrast with the Admiral)"),
     "game_c14_admiral": ("game", "The Admiral console looking down on a whole system, a worldlet in view, no ship of the Admiral's own"),
-    "game_c14_fleet": ("game", "The Admiral console: a fleet of three ships formed at the Shipyard, on the Admiral's side"),
+    "game_c14_fleet": ("game", "The Admiral console: Forces lists Commodore Ilse Maren x3, Fleet F1 at the Shipyard"),
     "game_c14_start": ("game", "The server start screen: Universe set to 'Skirmish - The Broken Accord', Start set to New Game"),
     "game_c14_home": ("game", "The Admiral console in the home system: one world, Hollin Prime, and the pools showing"),
     "game_c14_hq": ("game", "Hollin Prime selected: the single button 'Build Headquarters (150 ore, 15 crew)'"),
-    "game_c14_platforms": ("game", "Hollin Prime with an Extractor, an Academy, a Shipyard and a Lab standing, the ore climbing"),
+    "game_c14_platforms": ("game", "The six platforms standing round Hollin Prime, Info showing the pools"),
     "game_c14_shipyard": ("game", "The Shipyard selected: the first button reads 'Commission Commodore Ilse Maren - the Harbormaster'"),
     "game_c14_lab1": ("game", "The Lab selected: one button, 'Research Deeper Silos [engineering]'"),
     "game_c14_lab2": ("game", "The Lab selected after the first step is done: 'Research Hot Drills [engineering]' is offered"),
