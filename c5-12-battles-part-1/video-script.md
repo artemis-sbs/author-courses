@@ -38,13 +38,13 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 4. An enemy system held 1, 3, 4, 6, 11 and 24 Gleaner ships at Difficulty 1, 3, 4, 5, 8
    and 11, in 1, 2, 2, 2, 3 and 4 fleets.
 5. At The Tern: one `pirate_longbow` marked as the landmark's guard, on the raiders'
-   side, 7,620 from the ship, and the card `The Tern is guarded - hostiles on approach.`
+   side, 7,620 from the ship, and the Threat line `The Tern is guarded - hostiles on approach.`
 6. At the Gleaners' home, Difficulty 4: one Torgoth destroyer and four fighters named
    The Gleaners Red 1 to 4, the nearest 1,758 away. Fighters were there on five visits
    of seven.
 7. At The Bone Pile: three guards (`torgoth 7`) 17,574 away and four Gleaner ships
    42,570 away. With the guards removed by script and the system left and entered
-   again: no guards, no Threat card, and the save holds `guards_cleared`.
+   again: no guards, no Threat line, and the save holds `guards_cleared`.
 8. `DANGER`: 14, 33 and 54 enemy systems of 169. `ENCOUNTERS`: nearest ship 18,606 on
    arrival, 40,701 dormant.
 9. Every row of the tables in Step 7: 40 variants linted, 22 played one at a time, and
@@ -57,7 +57,7 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 
 1. The Difficulty slider on the start screen, and that it starts at the number in
    `settings.yaml`.
-2. The Threat card on a console, and on which consoles.
+2. The Threat line on Comms (engine-seen 2026-10-21: the ship's own channel, titled Threat).
 3. Any fight. Whether one light cruiser can take three Torgoth at tier 7 is a question
    for a play test, not for this page.
 4. The four fighters at a foe's home in the real game, and what they look like. In the
@@ -69,7 +69,7 @@ The companion page is `lesson.md`; the finished files are in `example\`.
 
 ### 1. Cold open
 
-**Screen:** Helm arriving at The Tern. The card: The Tern. Then the Threat card.
+**Screen:** Comms after arriving at The Tern: the Threat line, 'The Tern is guarded'.
 
 **Say:** "Up to now, you've been writing a universe with enemies in it, | and letting
 the game decide how many. || Today you take that over. ||| By the end, you'll know how
@@ -116,7 +116,7 @@ ship. || Written like that, the guards follow Difficulty. ||| Put a number after
 word, and that's their tier, whatever Difficulty says. || Seven is three Torgoth
 ships, every time. ||| And I'm adding a small guard to the Tern, | because somebody is
 picking at that wreck. ||| There are four things to know about guards. || The crew gets
-a warning card. || The guards wait by the landmark, not by the crew. || They're raiders,
+a warning, on Comms. || The guards wait by the landmark, not by the crew. || They're raiders,
 so no ceasefire calls them off. | And once they're destroyed, they stay gone. ||"
 
 ### 6. A foe's home
@@ -165,7 +165,7 @@ Engage The Breaking Yard: the fleet close by.
 
 **Say:** "Lint says clean, for all six files. || But
 lint doesn't read the settings file at all, | so read the checklist on the page. |||
-Now let's fly it. || First we go to the Tern, | and there's her card, and then the warning. || And
+Now let's fly it. || First we go to the Tern, | and there's her card, and the warning on Comms. || And
 then the Gleaners' home. || This is what close looks like. ||"
 
 ### 10. Your turn

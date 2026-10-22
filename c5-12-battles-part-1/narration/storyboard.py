@@ -119,7 +119,7 @@ STILLS = {
     "t_run": ("session", ["sbs run server,helm,comms -m MyUniverse map=0 --dry-run"], {"state": "final"}),
     # THE REAL GAME (planned; not taken yet - see the docstring for the press order)
     "game_c12_log": ("game", "Helm, the Quest Log open: the three leads, The Third Colony among them, with Engage"),
-    "game_c12_tern": ("game", "Helm just after arriving at The Tern: the Tern card and the orange Threat card 'The Tern is guarded - hostiles on approach.' both up"),
+    "game_c12_tern": ("game", "Comms just after arriving at The Tern: the line titled Threat, 'The Tern is guarded - hostiles on approach.', on the ship's own channel"),
     "game_c12_home": ("game", "Helm just after arriving at the Gleaners' home: their station and one fleet close by"),
     "game_c12_fighters": ("game", "The same system a few seconds later: four small fighters launched beside the station, on the radar"),
     # drawn

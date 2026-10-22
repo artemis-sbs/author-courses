@@ -10,8 +10,8 @@ and two lines that say how thick the enemy is and how close they wait.
 And you will have a budget: a count of the ships in your worst system, written down, so
 you know what you are asking a crew to fight.
 
-*[Screenshot to add: Helm arriving at The Tern, the card reading "The Tern is guarded -
-hostiles on approach."]*
+*[Screenshot to add: Comms after arriving at The Tern, the line titled Threat: "The Tern is
+guarded - hostiles on approach."]*
 
 You change one number in `settings.yaml`, paste two lines into `story.mast`, and change
 two landmarks.
@@ -143,8 +143,8 @@ The third colony's ship, circling where she never landed.
 
 Four things are true of every guard fleet:
 
-1. **The crew is warned.** On arrival the game shows a card titled **Threat**: "The Tern
-   is guarded - hostiles on approach."
+1. **The crew is warned.** On arrival a message titled **Threat** comes in on Comms, on
+   the ship's own channel: "The Tern is guarded - hostiles on approach."
 2. **They wait by the landmark, not by the crew.** How far that is from where the ship
    arrives changes from game to game. In the games measured for this page, the guards at
    The Bone Pile were between about 13,000 and 24,000 away, and at The Tern between about
@@ -343,9 +343,9 @@ Lint says `clean` for every one of these.
 | `ENCOUNTER` for `ENCOUNTERS` | `"On Arrival"` |
 | `default shared DANGER = Dangerous`, with no quote marks | Nothing runs. `mast.runtime.log` says `name 'Dangerous' is not defined` |
 | `Guards: torgoth seven`, `torgoth x7` or `torgoth 7.5` | The tier is not a whole number, so the guards are a fleet at the Difficulty, as if you wrote no tier |
-| `Guards: 7 torgoth`, or `Guards: torgoth, 7` | No guards. `mast.runtime.log` says there is no fleet for `7`, or for `torgoth,`, and lists the six kinds. The Threat card is still shown |
-| `Guards: gleaners 7`, the key of a side | No guards. The word is a kind of ship, never a side. The log names it. The Threat card is still shown |
-| `Guards: none` | No guards, a line in the log, and a Threat card for a threat that is not there. To have no guards, write no `Guards:` line |
+| `Guards: 7 torgoth`, or `Guards: torgoth, 7` | No guards. `mast.runtime.log` says there is no fleet for `7`, or for `torgoth,`, and lists the six kinds. The Threat message is still sent |
+| `Guards: gleaners 7`, the key of a side | No guards. The word is a kind of ship, never a side. The log names it. The Threat message is still sent |
+| `Guards: none` | No guards, a line in the log, and a Threat message for a threat that is not there. To have no guards, write no `Guards:` line |
 | `Guards: torgoth 70` | Six of the largest. Any tier above 11 is 11 |
 | `Guards: torgoth 200` | Three ships: a number this large means "two above the Difficulty" |
 | `Guards: torgoth -3` | One ship. Any tier below 1 is 1 |
@@ -378,7 +378,8 @@ sbs run server,helm,comms -m MyUniverse map=0
 
 1. You start at Kestrel Relay. Nothing in the Hollin Fields shoots.
 2. In the `helm` window, open the Quest Log and Engage **The Third Colony**. The card
-   reads **The Tern**, and a second card, **Threat**, says she is guarded. One or two
+   reads **The Tern**, and on Comms, under the ship's own name, a message titled
+   **Threat** says she is guarded. One or two
    small ships are out by the wreck.
 3. Engage **The Breaking Yard**. This is the Gleaners' home. Their fleet is close.
 4. Close the game. Change line 53 to `DIFFICULTY: 8`, delete the save, and do step 3
@@ -403,8 +404,8 @@ sbs run server,helm,comms -m MyUniverse map=0
 | No ship and no station. Nothing happens | The card is indented, or at the end of `story.mast`, or a word in it lost its quote marks. Lint finds the first two. Read `mast.runtime.log` for the third |
 | The game plays at Difficulty 5 whatever line 53 says | The line lost its capitals or its space. Or the file was not saved |
 | Enemy fleets are still close on arrival | `ENCOUNTERS` or `"Dormant"` is misspelled. Or the system is a foe's home, or the ships are guards |
-| No guards, and a Threat card all the same | The word after `Guards:` is not one of the six kinds. `mast.runtime.log` names it |
-| No guards and no card | The crew destroyed them earlier in this save |
+| No guards, and a Threat message all the same | The word after `Guards:` is not one of the six kinds. `mast.runtime.log` names it |
+| No guards and no Threat message | The crew destroyed them earlier in this save |
 | Guards are a different size from the table | The tier is missing or is not a whole number, so they follow the Difficulty |
 | A foe side has no ships anywhere | Its `Flies:` line names something that is not a kind of ship |
 | Four fighters you never wrote, at a foe's home | The foe's station launches them. See Step 4 |
@@ -429,8 +430,8 @@ You are done when all five are true:
 
 - `sbs lint MyUniverse` says `clean` for all six files.
 - `mast.runtime.log` is empty after a play.
-- A landmark with `Guards:` and a tier shows the Threat card and the number of ships you
-  chose.
+- A landmark with `Guards:` and a tier sends the Threat message and has the number of
+  ships you chose.
 - You can say how many ships an enemy system holds at your Difficulty without looking
   it up.
 - Your budget is written in your main file.
