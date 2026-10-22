@@ -129,7 +129,7 @@ STILLS = {
     # THE REAL GAME (planned; not taken yet - see the docstring for the press order)
     "game_c13_ledger": ("game", "Helm, the Quest Log: the ledger step Done and What the Gleaners Keep newly appeared"),
     "game_c13_arrive": ("game", "Comms just after arriving at The Bone Pile: two lines titled Threat, the guards' and ours, 'A Gleaner battle line is forming up between you and the Bone Pile.'"),
-    "game_c13_line": ("game", "The same system a few seconds later: a line of four or five ships about 7,000 away, the guards by the wreck"),
+    "game_c13_line": ("game", "Comms a few seconds later: the battle line on the map, four ships in red beside the crew's ship"),
     "game_c13_back": ("game", "Helm, the Quest Log with Charted Locations open and The Bone Pile in it, after running and before engaging it again"),
     "game_c13_raiders": ("game", "A game where The Bone Pile was not made an enemy system: on arrival only the three guards by the wreck"),
     "game_c13_nowait": ("game", "The nodelay run at The Bone Pile: on Comms the guards' Threat line only, no line of ships and no warning of ours"),
