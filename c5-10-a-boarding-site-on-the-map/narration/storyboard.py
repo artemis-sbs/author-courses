@@ -264,9 +264,9 @@ _game("game_c510_door_shut", "The yard, the tally house door refusing the party"
 _game("game_c510_keycard", "The yard, the keycard lying on the ground, picked up")
 _game("game_c510_door_open", "The yard, the tally house door open")
 _game("game_c510_ledger", "Inside the tally house, the ledger")
-_game("game_c510_done", "Helm, Quests: The Short Count done and paid")
+_game("game_c510_done", "Quests: The Short Count done and paid, 150 credits")
 _game("game_c510_up", "The handheld: the last of the party beamed up, the visit over")
-_game("game_c510_door_still", "The yard on a second visit: the door still open, the loader still down")
+_game("game_c510_door_still", "The yard on a second visit: the door still open")
 
 # drawn
 _card("card_three_ch", "rows", kicker="The site's file: three chapters", header=["Chapter", "Its key", "What it is"],
