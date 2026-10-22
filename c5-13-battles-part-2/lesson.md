@@ -4,11 +4,11 @@
 
 One fight in your universe that is not left to the dice. When the story sends the crew
 to The Bone Pile, a Gleaner battle line of four or five ships is formed up in front of
-them, and a card tells them so. It is not there before the story arrives. It is there
+them, and a warning on Comms tells them so. It is not there before the story arrives. It is there
 again if the crew runs and comes back, and after a Continue. When the fight is won, it
 is over.
 
-*[Screenshot to add: Helm at The Bone Pile, the Threat card reading "A Gleaner battle
+*[Screenshot to add: Comms at The Bone Pile, the line titled Threat: "A Gleaner battle
 line is forming up between you and the Bone Pile."]*
 
 You paste one card at the end of `story.mast`, and change nothing else. This is the only
@@ -83,7 +83,7 @@ line, and paste this.
     ->END if not quest_is_active(universe_shared_id(), "goal_bone_pile")
     battle_at = universe_cell_origin(ARRIVE_I, ARRIVE_J)
     prefab_spawn(prefab_fleet_raider, {"race": "torgoth", "fleet_difficulty": 9, "ship_roles": "gleaners, raider", "START_X": battle_at.x + 6000, "START_Y": battle_at.y, "START_Z": battle_at.z + 6000})
-    universe_info_card("A Gleaner battle line is forming up between you and the Bone Pile.", "Threat", "#f80")
+    universe_comms("A Gleaner battle line is forming up between you and the Bone Pile.", "Threat", "#f80")
     ->END
 ```
 
@@ -100,7 +100,7 @@ What each line does:
 | `->END if not quest_is_active(...)` | Stop here unless this step of the story is open right now. The word in quotes is the step's key |
 | `battle_at = ...` | Finds where in space the game put this system |
 | The `prefab_spawn` line | Makes one fleet |
-| The `universe_info_card` line | Shows the crew a card |
+| The `universe_comms` line | Sends the crew a warning: a line on Comms, on the ship's own channel |
 | `->END` | The block is finished |
 
 **The words you may change.** Seven of them, and nothing else.
@@ -113,9 +113,9 @@ What each line does:
 | `9` | The tier, from 1 to 11. Use Lecture 12's table to pick a number of ships | |
 | `gleaners`, the first word of `"gleaners, raider"` | The key of the side the ships fight for. Leave `, raider` after it | |
 | `6000`, twice | How far from the arriving ship the fleet forms up. Change both to the same number | |
-| The sentence, and `"Threat"` | The card the crew reads, and its title | |
+| The sentence, and `"Threat"` | The warning the crew reads, and its title | |
 
-`"#f80"` is the card's color, as a web color. Orange is what the game uses for its own
+`"#f80"` is the title's color, as a web color. Orange is what the game uses for its own
 warnings.
 
 **Why `//shared/signal` and not `//signal`.** The two look alike. A `//shared/signal`
@@ -138,14 +138,14 @@ In the Quest Log a step is hidden, then open, then done. The battle is made only
 | When the crew arrives at The Bone Pile | Battle line | Why |
 |---|---|---|
 | Early, before the story has sent them | No | The goal is still hidden |
-| On the story's business, with **What the Gleaners Keep** open | Yes: 4 or 5 ships | Arriving finishes that step and reveals the goal. One second later the card looks, and the goal is open |
+| On the story's business, with **What the Gleaners Keep** open | Yes: 4 or 5 ships | Arriving finishes that step and reveals the goal. One second later the route looks, and the goal is open |
 | Again, after running away | Yes: one battle line, not two | The system was removed when the crew left, and built new when they came back |
 | After Continue, saved at The Bone Pile with the goal open | Yes | Continue builds the system the crew was in, and that counts as an arrival |
 | After the step is done | No | The step is done, not open. This was played with the card waiting on another step, because finishing this goal ends the game: it has a `Win:` line |
 
 That is what `await delay_sim(1)` is for. The game finishes **What the Gleaners Keep**
 and reveals the goal at the moment of arrival, and the card's route hears the same
-arrival. Without the one-second wait the card looks first, sees a hidden goal, and
+arrival. Without the one-second wait the route looks first, sees a hidden goal, and
 makes nothing.
 
 The fleet is four or five ships because Torgoth tier 9 is "4-5" in Lecture 12's table.
@@ -214,7 +214,7 @@ Lint says `clean` for every one of these.
 | The mistake | What the game does |
 |---|---|
 | `universe_arrive`, or any other misspelling of `universe_arrived` | No battle line, ever. Nothing is said |
-| No `if` on the route line | A battle line at The Bone Pile, and another in every system the crew jumps to while the step is open. In an empty system: four Gleaner ships and your card |
+| No `if` on the route line | A battle line at The Bone Pile, and another in every system the crew jumps to while the step is open. In an empty system: four Gleaner ships and your warning |
 | `or` where `and` goes | A battle line at The Bone Pile, and in every system whose first number is -4 or whose second is -3 |
 | A wrong number: `ARRIVE_J == 3` | No battle line at The Bone Pile |
 | `arrive_i` and `arrive_j` in small letters | The game stops with an error soon after it starts. `mast.runtime.log` says `name 'arrive_i' is not defined` |
@@ -222,7 +222,7 @@ Lint says `clean` for every one of these.
 | The `->END if not quest_is_active` line left out | A battle line on every arrival at The Bone Pile, from the first minute of the game |
 | A key that is not the step's: `"goal_bonepile"`, or the step's name `"Break the Bone Pile"` | No battle line, ever. Nothing is said |
 | The step's key changed in `kestrel_verge.amd` and not on the card | The same: no battle line, and nothing is said |
-| `"race": "gleaner"`, or any word that is not one of the six kinds | No fleet. The crew still gets your card. `mast.runtime.log` says "no fleet table for race 'gleaner'" and lists the six |
+| `"race": "gleaner"`, or any word that is not one of the six kinds | No fleet. The crew still gets your warning. `mast.runtime.log` says "no fleet table for race 'gleaner'" and lists the six |
 | `"fleet_difficulty": 0` | A fleet at the game's Difficulty: two ships at Difficulty 4 |
 | `"fleet_difficulty": 20` | Six of the largest. Any tier above 11 is 11 |
 | The tier in quote marks: `"fleet_difficulty": "9"` | The game stops with an error when the story arrives at The Bone Pile |
@@ -230,9 +230,9 @@ Lint says `clean` for every one of these.
 | `"ship_roles": "raider, gleaners"`, the side written second | The same. The first word is the side |
 | `"ship_roles": "gleaner, raider"`, the side's key misspelled | Four ships on a side called `gleaner`, which is no side. They are not hostile to the crew. `mast.runtime.log` says "Side not found: [gleaner]" |
 | `"ship_roles": "hollin, raider"`, a friend's key | Five Torgoth ships on the Hollin Compact's side. They are not hostile to the crew |
-| `battle_at.x + 6000` and the other two changed to bare numbers | The fleet is made 360,000 away, in another part of space. The crew gets the card and never sees a ship |
+| `battle_at.x + 6000` and the other two changed to bare numbers | The fleet is made 360,000 away, in another part of space. The crew gets the warning and never sees a ship |
 | The card pasted twice | Two battle lines: nine ships |
-| The `universe_info_card` line left out | The battle line with no card. Only the game's own card for the guards is shown |
+| The `universe_comms` line left out | The battle line with no warning. Only the game's own Threat line for the guards comes in |
 | A long dash in the sentence | It plays. The game is sent the dash, and cannot draw it. Type a plain one |
 
 Four things that look wrong and are not:
@@ -265,7 +265,8 @@ sbs run server,helm,comms -m MyUniverse map=0
 2. The Quest Log now has **The Assay Ledger**. Engage **The Second Colony**, hail the
    Assay Office on Comms, and ask about the Tern. The ledger step closes and **What the
    Gleaners Keep** appears.
-3. Engage **What the Gleaners Keep**. Three cards: the place, the guards, and yours.
+3. Engage **What the Gleaners Keep**. The place's card, then two lines on Comms titled
+   Threat: the guards, and yours.
    The battle line is about 7,000 away. The guards are out by the wreck.
 4. Run. Engage any other place. Then come back from **Charted Locations**. One battle
    line is there, not two.
@@ -326,7 +327,7 @@ You are done when all five are true:
 
 - `sbs lint MyUniverse` says `clean` for all six files.
 - A crew that arrives early finds no battle line.
-- A crew that arrives on the story's business finds one, and reads your card.
+- A crew that arrives on the story's business finds one, and reads your warning.
 - A crew that leaves and comes back finds one, not two.
 - `mast.runtime.log` is empty after a play.
 

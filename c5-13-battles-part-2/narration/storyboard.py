@@ -24,7 +24,7 @@ Press order:
   1. Helm: Quest Log, Engage The Third Colony (The Tern). Then Engage The Second Colony (Assay
      Office). Comms: hail the Assay Office, "Pay the search fee and ask about the Tern". Helm,
      Quest Log: game_c13_ledger (What the Gleaners Keep has appeared, the ledger step Done).
-  2. Engage What the Gleaners Keep. On arrival, once all three cards are up (the place, the
+  2. Engage What the Gleaners Keep. On arrival, once the place's card and both Threat lines are in (the place, the
      guards, and "A Gleaner battle line is forming up between you and the Bone Pile."):
      game_c13_arrive. A few seconds later, the 3D view or map with the line of ships about
      7,000 away and the guards by the wreck: game_c13_line.
@@ -34,7 +34,7 @@ Press order:
      system (try --seed 11, 13, 17 until the arrival has the guards and nothing else: three
      raiders). Take the Helm view of them.
   5. game_c13_nowait: `python game.py c5-13-battles-part-2 start --state nodelay ...` and the
-     same path to the Bone Pile: the guards' card only, no battle line, no card of ours.
+     same path to the Bone Pile: the guards' Threat line only, no battle line, no warning of ours.
 """
 import os
 
@@ -86,7 +86,7 @@ _AW = _ln(_M1, "await delay_sim(1)")
 _QA = _ln(_M1, "->END if not quest_is_active")
 _BAT = _ln(_M1, "battle_at = universe_cell_origin")
 _PF = _ln(_M1, "prefab_spawn(")
-_IC = _ln(_M1, "universe_info_card(")
+_IC = _ln(_M1, "universe_comms(")
 _LAST = _M1.rstrip("\n").count("\n") + 1
 _QA_ND = _ln(_M_ND, "->END if not quest_is_active")
 # kestrel_verge.amd
@@ -128,11 +128,11 @@ STILLS = {
     "t_run": ("session", ["sbs run server,helm,comms -m MyUniverse map=0 --dry-run"], {"state": "card"}),
     # THE REAL GAME (planned; not taken yet - see the docstring for the press order)
     "game_c13_ledger": ("game", "Helm, the Quest Log: the ledger step Done and What the Gleaners Keep newly appeared"),
-    "game_c13_arrive": ("game", "Helm just after arriving at The Bone Pile: the place card, the guards' Threat card and ours 'A Gleaner battle line is forming up between you and the Bone Pile.' up together"),
+    "game_c13_arrive": ("game", "Comms just after arriving at The Bone Pile: two lines titled Threat, the guards' and ours, 'A Gleaner battle line is forming up between you and the Bone Pile.'"),
     "game_c13_line": ("game", "The same system a few seconds later: a line of four or five ships about 7,000 away, the guards by the wreck"),
     "game_c13_back": ("game", "Helm, the Quest Log with Charted Locations open and The Bone Pile in it, after running and before engaging it again"),
     "game_c13_raiders": ("game", "A game where The Bone Pile was not made an enemy system: on arrival only the three guards by the wreck"),
-    "game_c13_nowait": ("game", "The nodelay run at The Bone Pile: the guards' card only, no line of ships and no card of ours"),
+    "game_c13_nowait": ("game", "The nodelay run at The Bone Pile: on Comms the guards' Threat line only, no line of ships and no warning of ours"),
     # drawn
     "card_title": ("card", "title", {}),
     "card_dials": ("card", "rows", {"kicker": "Lecture 12: setting the odds",

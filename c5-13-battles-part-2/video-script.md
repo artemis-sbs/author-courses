@@ -34,7 +34,7 @@ The companion page is `lesson.md`; the finished `story.mast` is in `example\`.
    `ledger_read` warnings when this was written). The mission plays with
    no errors (115 labels run) and an empty `mast.runtime.log`.
 2. Arriving at -4, -3 at the start, with the goal hidden: seven hostile ships (four
-   Gleaners, three guards), no battle line, no card of ours.
+   Gleaners, three guards), no battle line, no warning of ours.
 3. After The Tern and the ledger's signal, arriving with What the Gleaners Keep open:
    that step is Done, Break the Bone Pile is open, and there is one more Gleaner fleet
    of four ships (three destroyers and a leviathan), the nearest 7,014 from the ship.
@@ -42,7 +42,7 @@ The companion page is `lesson.md`; the finished `story.mast` is in `example\`.
 4. Leaving for -3, 0: no ship of The Bone Pile is left. Coming back: one battle line
    again, of five ships this time, not two lines.
 5. A second game continued from that save starts at -4, -3 with the goal open and a
-   battle line of five, and is sent the card.
+   battle line of five, and is sent the warning.
 6. Four Gleaner kills reported: the game says game over, a win, with the goal's `Win:`
    sentence.
 7. Without `await delay_sim(1)`: no battle line at the story's arrival.
@@ -70,7 +70,7 @@ a second ship arriving in a system that is already built does not say `universe_
 
 ### 1. Cold open
 
-**Screen:** Helm arriving at The Bone Pile. Three cards in turn: the place, the guards,
+**Screen:** Helm arriving at The Bone Pile: the place's card. Then Comms: two Threat lines, the guards,
 ours.
 
 **Say:** "Last time, you learned to set the odds. || How many systems have enemies, how
@@ -108,7 +108,7 @@ break it. |||"
 The game says, a ship has arrived, | and this block hears it. || The rest of that line
 says, only in this system. ||| Then it waits one second. || Then it asks, is this step
 of the story open right now? | If not, it stops. ||| And if it is, | it finds where the
-system is, makes one fleet, | and shows the crew a card. ||"
+system is, makes one fleet, | and sends the crew a warning. ||"
 
 ### 5. The seven words
 
@@ -149,12 +149,12 @@ Mine comes to eleven or twelve ships, | which is a lot for one cruiser. ||"
 
 **Screen:** `sbs lint MyUniverse`: six files, each one `clean`. Then
 `sbs run server,helm,comms -m MyUniverse map=0`. The Tern, the Assay Office hail, then
-Engage What the Gleaners Keep: three cards. Leave, come back.
+Engage What the Gleaners Keep: the place's card, then two Threat lines on Comms. Leave, come back.
 
 **Say:** "Lint says clean, as it did last time. || And once again, it can't see
 most of what goes wrong on this card, | so use the list on the page. ||| Now let's
 play the story. || The Tern first, and then the ledger. | And then the place the
-Gleaners won't talk about. ||| There are three cards. | The place, the guards, and
+Gleaners won't talk about. ||| There's the place, | and two warnings: the guards, and
 mine. || Now I'll run, and come back. || There's still one battle line. ||"
 
 ### 9. Your turn

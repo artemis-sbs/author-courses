@@ -75,5 +75,5 @@ GameCode:
     ->END if not quest_is_active(universe_shared_id(), "goal_bone_pile")
     battle_at = universe_cell_origin(ARRIVE_I, ARRIVE_J)
     prefab_spawn(prefab_fleet_raider, {"race": "torgoth", "fleet_difficulty": 9, "ship_roles": "gleaners, raider", "START_X": battle_at.x + 6000, "START_Y": battle_at.y, "START_Z": battle_at.z + 6000})
-    universe_info_card("A Gleaner battle line is forming up between you and the Bone Pile.", "Threat", "#f80")
+    universe_comms("A Gleaner battle line is forming up between you and the Bone Pile.", "Threat", "#f80")
     ->END
