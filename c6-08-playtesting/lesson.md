@@ -11,8 +11,8 @@ And one change already made: the first thing a playtest of evening 1 finds is th
 crew does not know what to do when they get there. So two steps get an order, in plain
 words, at the top.
 
-*[Screenshot to add: `playtest.md` with the clock table filled in, beside the save file
-open at `shared_quests`.]*
+![Helm's Quest Log with Her Log selected, its order reading Scan the Wren from Science](images/a-step-with-no-order.jpg)
+*A step in the Quest Log with its order: "Scan the Wren from Science."*
 
 You add a page, `playtest.md`. You add one line each to two steps.
 

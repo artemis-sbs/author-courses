@@ -9,8 +9,8 @@ where the second boat was last heard.
 
 Open, objective, climax, hook. Four parts, three records and one line on a landmark.
 
-*[Screenshot to add: Helm's Quest Log at the end of the evening, with The Long Count:
-Two of Five open and three steps of The Long Count under Done.]*
+![Helm's Quest Log with Two of Five open and three steps of The Long Count under Done](images/the-end-of-the-evening.jpg)
+*The end of evening 1: Two of Five open, and three steps of The Long Count under Done.*
 
 You write one section in `campaign.md`, change one record and one landmark, and add
 three records.

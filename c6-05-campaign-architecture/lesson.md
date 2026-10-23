@@ -10,8 +10,8 @@ the next act's question.
 You will also have a number: what one evening costs you to write. Multiply it by
 twenty before you promise anybody a campaign.
 
-*[Screenshot to add: the act table in `campaign.md`, and the Quest Log at the end of the
-walk with every line of The Long Count under Done.]*
+![Helm's Quest Log at the end of the walk, with every line of The Long Count under Done](images/the-walk-ends.jpg)
+*The end of the walk: every line of The Long Count under Done.*
 
 You add three sections to `campaign.md`. You change one record, add one landmark, and
 add three records.

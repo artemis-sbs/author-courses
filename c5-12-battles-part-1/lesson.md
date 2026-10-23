@@ -10,8 +10,8 @@ and two lines that say how thick the enemy is and how close they wait.
 And you will have a budget: a count of the ships in your worst system, written down, so
 you know what you are asking a crew to fight.
 
-*[Screenshot to add: Comms after arriving at The Tern, the line titled Threat: "The Tern is
-guarded - hostiles on approach."]*
+![Comms after arriving at The Tern, with the line titled Threat](images/the-tern-is-guarded.jpg)
+*On arrival at The Tern: "The Tern is guarded - hostiles on approach."*
 
 You change one number in `settings.yaml`, paste two lines into `story.mast`, and change
 two landmarks.

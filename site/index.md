@@ -6,7 +6,7 @@ You do not need to know markdown, a command prompt or a code editor before you s
 first class teaches all three.
 
 !!! warning "This is a review copy"
-    Classes 1, 2 and 3 are complete as drafts and are being read and tried by reviewers.
+    Classes 1 to 6 are complete as drafts and are being read and tried by reviewers.
     Pages and videos will change. If you are one of the reviewers, start with
     [For reviewers](reviewers.md).
 
@@ -110,13 +110,53 @@ All ten videos are also in one [playlist](https://www.youtube.com/playlist?list=
 | 9 | [EVA elsewhere: a repair outside a station](class-4/09-station-repair.md) | A job outside DS 1: suits, a mast, and a repair |
 | 10 | [Capstone: a ruin episode](class-4/10-a-ruin-episode.md) | One ruin episode of your own, from the first line to the last |
 
+## Class 5 - Open Universe: Building the World
+
+Sixteen lectures. Open Universe is a whole galaxy made from one file. You write your own: its sides and what each wants, the places on its map, the work on offer, the story that runs through it, and the people in it. Then you put an Admiral above it, make battles that wait for the story, and play one full evening in a universe that is yours.
+
+All sixteen videos are also in one [playlist](https://www.youtube.com/playlist?list=PLRUJdSYMG4dk).
+
+| # | Lecture | You leave with |
+|---|---|---|
+| 1 | [What Open Universe is](class-5/01-what-open-universe-is.md) | Open Universe played: The Silver Reach flown, and the top of its file read |
+| 2 | [Your universe file](class-5/02-your-universe-file.md) | A universe file of your own: a title, a scenario, one place, saved and continued |
+| 3 | [Sides, diplomacy and goods](class-5/03-sides-diplomacy-goods.md) | Three sides, who fights whom, and what each one trades |
+| 4 | [Reputation](class-5/04-reputation.md) | A side that keeps score: what it values, deeds that move standing, and the thresholds |
+| 5 | [The map](class-5/05-the-map.md) | A map with regions, landmarks and stations, and the dials that set how it plays |
+| 6 | [Jobs](class-5/06-jobs.md) | Work a crew can take again and again, and more of it as standing grows |
+| 7 | [Narrative and goals](class-5/07-narrative-and-goals.md) | A story in chapters that shift standing, and a last page that ends the game |
+| 8 | [Captains and rivals](class-5/08-captains-and-rivals.md) | People with a name and a line you chose: captains, rivals and what they say |
+| 9 | [Organizing a big universe](class-5/09-organizing-a-big-universe.md) | A big universe split across files, with its lore in a website of its own |
+| 10 | [A boarding site on the map](class-5/10-a-boarding-site-on-the-map.md) | A boarding site on the map, and a walkable one drawn as a tile map |
+| 11 | [A ruin on the map](class-5/11-a-ruin-on-the-map.md) | A ruin on the map the crew can fly into and walk through in suits |
+| 12 | [Battles, part 1: how dangerous a system is](class-5/12-battles-part-1.md) | How dangerous a system is: density, guards and a ship budget |
+| 13 | [Battles, part 2: a battle that waits for the story](class-5/13-battles-part-2.md) | A battle that waits for the story, and starts when the crew arrive |
+| 14 | [The Admiral, part 1: the game from above](class-5/14-admiral-part-1.md) | The Admiral's seat: worldlets, platforms, research and a fleet |
+| 15 | [The Admiral, part 2: an Admiral alongside a bridge crew](class-5/15-admiral-part-2.md) | An Admiral alongside a bridge crew, and a game that saves and comes back |
+| 16 | [Capstone: a playable universe](class-5/16-a-playable-universe.md) | Your own universe played through one whole evening, and checked |
+
+## Class 6 - Open Universe: Running the Campaign
+
+Eleven lectures. A campaign is more than one good evening. You take the Class 5 universe and plan twenty sessions: what the game remembers between them, how an evening is built, how standing opens and closes doors, and how the play styles take turns. Then you test it on a table, revise it safely, package it, and build the first act.
+
+All eleven videos are also in one [playlist](https://www.youtube.com/playlist?list=PLFiLBlj5wNxc).
+
+| # | Lecture | You leave with |
+|---|---|---|
+| 1 | [From one session to twenty](class-6/01-from-one-session-to-twenty.md) | A shipped campaign read, and a plan for yours in one file |
+| 2 | [What the game remembers](class-6/02-what-the-game-remembers.md) | What the game remembers between sessions: saves, slots and what Continue brings back |
+| 3 | [Designing a session](class-6/03-designing-a-session.md) | One evening designed: how it opens, what it asks, its climax and its hook |
+| 4 | [The episode, your repeatable unit](class-6/04-the-episode.md) | An episode you can write again and again from one template |
+| 5 | [Campaign architecture](class-6/05-campaign-architecture.md) | Twenty sessions as acts and episodes, with a content budget |
+| 6 | [Reputation arcs](class-6/06-reputation-arcs.md) | Standing that opens and closes doors over many sessions |
+| 7 | [Mixing the play styles](class-6/07-mixing-the-play-styles.md) | A rotation of bridge, boarding, EVA and battle evenings that cannot break the story |
+| 8 | [Playtesting](class-6/08-playtesting.md) | A table run and read: what happened, and what to change |
+| 9 | [Revising between sessions](class-6/09-revising-between-sessions.md) | Edits that are safe against a live save, and a lab to try them in |
+| 10 | [Publishing](class-6/10-publishing.md) | Your campaign packaged, named, and ready to hand to a friend |
+| 11 | [Capstone studio](class-6/11-capstone-studio.md) | Act one built and played, and acts two to four outlined |
+
 ## What you need
 
 - Artemis Cosmos 1.4.0, from Steam or itch.io.
 - A Windows computer you can install a free editor on.
 - About an hour a lecture, most of it your own typing.
-
-## The classes to come
-
-Classes 5 and 6 build a universe and run a campaign in it. Drafts of some of their lectures are in the
-[repository](https://github.com/artemis-sbs/author-courses); they are not published here yet.

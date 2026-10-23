@@ -10,8 +10,8 @@ What a captain thinks of the crew is a standing of its own. It is not the standi
 the side they belong to. A crew can be at war with the Gleaners and on good terms with
 their bookkeeper, and a crew that cheats her has made a rival who greets them as one.
 
-*[Screenshot to add: Comms on the Gleaners' station with the button Hail Sable Orrin, the
-Tallyman, and her card with her name and title.]*
+![Comms on the Gleaners' station with the button Hail Sable Orrin, the Tallyman](images/hail-sable-orrin.jpg)
+*The Gleaners' station on Comms, with the button Hail Sable Orrin, the Tallyman.*
 
 You write a Captains chapter with two records, and nine short records in the Dialogue
 chapter. All of it goes in `kestrel_verge.amd`.

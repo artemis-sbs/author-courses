@@ -7,8 +7,8 @@ starts in and hands out work there. One lives three jumps away. One shoots first
 its home with a fleet, and can be paid to stop. And the cargo the crew finds drifting in
 your systems is the cargo your world would have.
 
-*[Screenshot to add: Comms with the station Hollin Compact selected, showing Patrol and
-Escort among its buttons.]*
+![Comms with the station Hollin Compact selected, Patrol and Escort among its buttons](images/a-station-selected.jpg)
+*Comms with Hollin Compact selected: Patrol and Escort among its buttons.*
 
 You write three records in a Sides chapter, two short quests that take the crew to see
 them, and a Goods chapter. All of it goes in `kestrel_verge.amd`.

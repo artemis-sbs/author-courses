@@ -12,8 +12,8 @@ You will know the three things that switch the Admiral on, what the game does wi
 numbers you write, how a campaign with an Admiral ends, and what comes back after
 Continue. Every one of those was read out of the running game.
 
-*[Screenshot to add: the Admiral console looking down on Kestrel Relay's system, Hollin
-Prime selected, beside Helm's Quest Log with the three leads.]*
+![The Admiral console with Hollin Prime selected, and Helm's Quest Log with the three leads](images/the-admiral-and-the-bridge.jpg)
+*The Admiral looking down on the home system, and the bridge crew's Quest Log with the three leads.*
 
 You change one word in `kestrel_verge.amd` and add four chapters at its end. Lecture 14
 wrote those chapters in a lab. Today they come home.

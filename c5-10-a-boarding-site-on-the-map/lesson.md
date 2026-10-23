@@ -15,8 +15,8 @@ friends. What the party finds behind the door finishes the next step.
 Both places remember. Dock again, come back from another system, or close the game and
 continue next week: the door is still open and the manifest is still read.
 
-*[Screenshot to add: a handheld in the Customs House with three choices, beside a
-handheld showing the yard's map.]*
+![A handheld in the Customs House with three choices, and a handheld showing the yard's map](images/the-counter-and-the-yard.jpg)
+*The Customs House counter with its choices, and the yard's map on a handheld.*
 
 You add one line to a landmark, twice. Everything else is the place itself, in files of
 its own.

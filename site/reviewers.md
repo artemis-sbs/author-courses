@@ -1,7 +1,7 @@
 # For reviewers
 
-Thank you for trying this. Classes 1, 2 and 3 are complete drafts: thirty-nine pages and
-thirty-nine videos. Nobody outside the project has followed them yet. You are the first.
+Thank you for trying this. Classes 1 to 6 are complete drafts: seventy-six pages and
+seventy-six videos. Nobody outside the project has followed them yet. You are the first.
 
 ## What we most want to know
 

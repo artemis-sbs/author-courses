@@ -10,8 +10,8 @@ bowl back aboard, and each of those is a step of your story, paid when it happen
 And the ruin remembers. Leave and come back, tonight or next week, and the slab is
 still cut and the bowl is still gone.
 
-*[Screenshot to add: the main screen inside The Hollow, and a handheld with the Boarding
-Party app showing SUIT UP.]*
+![The main screen inside The Hollow, and a handheld with the Boarding Party app showing SUIT UP](images/inside-the-hollow.jpg)
+*Inside The Hollow, and the handheld's Boarding Party app offering SUIT UP.*
 
 You add one file to the mission, one landmark, and three steps of story. You do not
 write the ruin today. It is on this page, ready to paste.

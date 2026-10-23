@@ -8,7 +8,8 @@ is and which version, and nothing in it that gives the plot away. And a note to 
 with it that tells the host the four things a campaign needs and a single mission does
 not.
 
-*[Screenshot to add: the zip file beside the mission folder, and the note.]*
+![The missions folder with the mission folder and its zip beside it](images/the-mission-folder.jpg)
+*The mission folder, and the zip you hand to a friend.*
 
 You change one line of `description.yaml`, rename a folder, and write a note.
 

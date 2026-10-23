@@ -6,8 +6,8 @@ A picture of what an Open Universe mission is. You will have started one, stood 
 first system, and read the one file that made the whole of it. And you will have chosen
 what kind of game your own universe is going to be.
 
-*[Screenshot to add: the Quest Log in The Silver Reach, with The Dimming and Break the
-Veil in it, beside the top of `silver_reach.amd` in VS Code.]*
+![Helm's Quest Log in The Silver Reach, with The Dimming and Break the Veil in it](images/the-quest-log.jpg)
+*Helm's Quest Log in The Silver Reach: The Dimming, Break the Veil and the cargo run.*
 
 You write nothing in this lecture. You play a little, and you read.
 

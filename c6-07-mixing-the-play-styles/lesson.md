@@ -10,8 +10,8 @@ And there is a race against a clock on offer at home, for a crew the Compact tru
 You will also have a rotation: a table that says, for every evening of the act, what
 kind of evening it is and who is busy.
 
-*[Screenshot to add: the rotation table in `campaign.md`, and Comms in the Deepwell hail
-with the two ways to ask for the Plover's bill of sale.]*
+![Comms in the Deepwell hail with the two ways to ask for the Plover's bill of sale](images/two-ways-to-ask.jpg)
+*The Deepwell hail: two ways to ask for the Plover's bill of sale, and Sign off.*
 
 You add a rotation to `campaign.md`. You turn one stub into a whole evening, and add one
 job.

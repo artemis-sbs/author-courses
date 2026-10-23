@@ -7,7 +7,8 @@ missions. The place the crew starts has a name and a line that you wrote. The cr
 leave that place and come back to it. And a game you stop today can be continued
 tomorrow.
 
-*[Screenshot to add: the card the crew sees on arrival, reading Kestrel Relay.]*
+![The card the crew sees on arrival, reading Kestrel Relay](images/the-arrival-card.jpg)
+*The card on arrival, reading Kestrel Relay: your file's own words.*
 
 You write one file of your own, `kestrel_verge.amd`, and change a few marked words in
 `story.mast`.

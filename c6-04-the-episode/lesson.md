@@ -10,8 +10,8 @@ Evening 1 took a lecture to build. Evening 2 takes a form with a dozen blanks an
 short pieces of text. That is the difference between writing an evening and writing a
 campaign.
 
-*[Screenshot to add: the blank episode in `campaign.md` beside evening 2's four records
-in `kestrel_verge.amd`, with the changed words selected.]*
+![campaign.md open at Evening 2, with the table of parts and records](images/evening-two.jpg)
+*campaign.md at Evening 2: each part, and the record that carries it.*
 
 You add a blank pattern and a second sheet to `campaign.md`. You add one landmark, change
 one record, and add three records.

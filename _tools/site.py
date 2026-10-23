@@ -26,6 +26,8 @@ PUBLISHED = {
     2: "Class 2 - People, Dialogue and Siege Bosses",
     3: "Class 3 - Boarding Parties",
     4: "Class 4 - Ancient Ruins and EVA",
+    5: "Class 5 - Open Universe: Building the World",
+    6: "Class 6 - Open Universe: Running the Campaign",
 }
 
 VIDEO_SECTION = re.compile(r"^## The video\s*\n.*?(?=^## )", re.S | re.M)

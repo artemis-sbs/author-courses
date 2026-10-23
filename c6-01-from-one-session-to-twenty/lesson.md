@@ -9,8 +9,8 @@ boats and forty-one people, and the boats are gone. Tonight they find the first 
 You will also have stopped a game, started it again, and written down exactly what came
 back. A campaign is built on that list.
 
-*[Screenshot to add: `campaign.md` open in VS Code beside Helm's Quest Log, with The Long
-Count: One of Five under Game and The Wren under Charted Locations.]*
+![Helm's Quest Log with the four Class 5 leads and The Long Count: One of Five](images/the-quest-log.jpg)
+*Helm's Quest Log: the four Class 5 leads, and The Long Count: One of Five beside them.*
 
 You write one plain page, `campaign.md`. You add one landmark and one lead to your
 universe. Then you play one short evening twice.

@@ -11,8 +11,8 @@ start it again, and find that the crew still knows.
 You will also have the whole list of what the save keeps, a look inside the save file,
 and a second campaign in a slot of its own.
 
-*[Screenshot to add: the Hollin hail on Comms with "Report what the Gleaners said" among
-the answers, beside the last five lines of the save file in VS Code.]*
+![The Hollin hail on Comms with Report what the Gleaners said among the answers](images/report-what-the-gleaners-said.jpg)
+*The Hollin hail, with "Report what the Gleaners said" among the answers: the game remembered.*
 
 You add three lines and two records to `kestrel_verge.amd`. Then you play one short
 evening, stop, and come back.

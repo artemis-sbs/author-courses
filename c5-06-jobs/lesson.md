@@ -11,8 +11,8 @@ The crew takes a job at a station, does it, is paid, and can take it again. That
 difference between a job and the leads you have been writing: a lead happens once, and a
 job is there every time the crew comes back.
 
-*[Screenshot to add: Comms on the Assay Office with Wreck Survey (220 cr) and Relay Run
-(180 cr) among its buttons, and Helm's Quest Log with three jobs under Ship.]*
+![Comms on the Assay Office with its jobs, and Helm's Quest Log with the jobs under Ship](images/jobs-on-comms.jpg)
+*The Assay Office's jobs on Comms, and the three jobs under Ship in the Quest Log.*
 
 You change two jobs, write three more, and change two `Offers:` lines. All of it goes in
 `kestrel_verge.amd`.

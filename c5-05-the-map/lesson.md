@@ -8,8 +8,8 @@ them there: a counting-house that gives a colony's home a name, a dead ship in a
 and a wreck with guards on it. And four numbers at the top of the file make the whole
 galaxy emptier, cloudier and more full of wrecks than the one you were given.
 
-*[Screenshot to add: the arrival card reading The Bone Pile, and Helm's Quest Log with
-four places under Charted Locations.]*
+![The arrival at The Bone Pile, and Helm's Quest Log with the places under Charted Locations](images/the-bone-pile.jpg)
+*The Bone Pile on arrival, and the Quest Log's Charted Locations.*
 
 You write four lines in the title record, a Regions chapter, three landmarks and two
 leads.

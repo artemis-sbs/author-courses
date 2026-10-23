@@ -10,9 +10,8 @@ and get it back. After each round you will continue the same saved game and look
 You will do all of it in a copy, with a save of its own. The crew's campaign is never
 touched.
 
-*[Screenshot to add: Helm's Quest Log after the first round of changes, with The Long
-Count: The Plover and A Lamp for the Wren in it, beside `kestrel_verge.amd` with the
-`Was:` line highlighted.]*
+![kestrel_verge.amd open at Enter It Twice, with the Was: line](images/the-was-line.jpg)
+*A revised step in kestrel_verge.amd, with its `Was:` line naming the step it replaces.*
 
 You copy a folder, add one line to `story.mast`, and then change `kestrel_verge.amd`
 five times.

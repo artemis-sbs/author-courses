@@ -10,8 +10,8 @@ they are home, that the offer is gone and the work has dried up.
 And a ledger in `campaign.md`: where you expect the crew's standing to be at the end of
 each evening, so that you know when each door is meant to open.
 
-*[Screenshot to add: Comms in a hail with the Hollin Compact, with the answer Ask to see
-the Tern's manifest among the buttons.]*
+![Comms in a hail with the Hollin Compact, with the answer Ask to see the Tern's manifest](images/ask-to-see-the-manifest.jpg)
+*After two levies the hail has a fourth answer: "Ask to see the Tern's manifest."*
 
 You add one section to `campaign.md`. You add one lead, two answers to hails you already
 have, and two short records they lead to.

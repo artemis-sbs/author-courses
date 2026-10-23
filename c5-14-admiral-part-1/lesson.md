@@ -12,8 +12,8 @@ You will do it in a copy of the Open Universe mission, and not in `MyUniverse`. 
 copy holds a finished Admiral's game to read and to change. Lecture 15 then carries your
 four chapters into `MyUniverse`. The next section says how the two lectures fit.
 
-*[Screenshot to add: the Admiral console looking down on a system, a worldlet selected
-and the button "Build Headquarters (150 ore, 15 crew)".]*
+![The Admiral console looking down on a system, a worldlet selected, with the Build Headquarters button](images/build-headquarters.jpg)
+*The Admiral console: Hollin Prime selected, and the button "Build Headquarters (150 ore, 15 crew)".*
 
 ## Read this first: two lectures, two folders
 

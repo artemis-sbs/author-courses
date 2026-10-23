@@ -8,8 +8,8 @@ called standing. It decides what work a side offers, what the work pays, how a s
 greets the ship, what a ceasefire costs, and whether an old enemy will take the crew as
 an ally.
 
-*[Screenshot to add: Comms on Hollin Compact before and after the levy is paid. After,
-Patrol is on offer and Escort pays 300.]*
+![Comms on Hollin Compact before and after the levy is paid](images/before-and-after-the-levy.jpg)
+*Hollin Compact before the levy, and after: Patrol is on offer and Escort pays 300.*
 
 You add one line to each side, two lines to the jobs, and a Dialogue chapter with two
 short calls.

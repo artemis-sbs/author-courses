@@ -10,8 +10,8 @@ Gleaners' Bone Pile. And when the Bone Pile is broken, the game ends, in your wo
 Each chapter is hidden until the one before it is done. The crew is never handed the
 whole plot.
 
-*[Screenshot to add: Helm's Quest Log with The Assay Ledger newly in it, and the end of
-the game with the sentence about the Tern.]*
+![Helm's Quest Log with The Assay Ledger newly in it, and the end-of-game screen](images/a-story-and-its-end.jpg)
+*A chapter newly in the Quest Log, and the end-of-game screen with the goal's own sentence.*
 
 You change two of your leads, write one new chapter of the story between them, add a
 Goals chapter with one record, and write one more call in the Dialogue chapter.

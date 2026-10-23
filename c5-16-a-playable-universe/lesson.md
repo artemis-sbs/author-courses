@@ -7,8 +7,8 @@ first card to the last, in two sittings with a save between them. A card at the 
 your main file that says who the game is for and what it asks of them. And an honest
 list of what your universe does not do yet.
 
-*[Screenshot to add: the end-of-game screen with the goal's `Win:` sentence, beside the
-session card at the top of `kestrel_verge.amd`.]*
+![The end-of-game screen with the goal's Win sentence and its citation](images/the-end-screen.jpg)
+*The end of the evening: your goal's own sentence, and its citation under it.*
 
 This lecture teaches no new record and no new card. It asks you to finish. You write ten
 lines of notes, type two commands you know, and play your story twice: once reading this

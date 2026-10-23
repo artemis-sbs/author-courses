@@ -10,8 +10,8 @@ in progress, the way the other fifteen will be written.
 And a page that holds the rest: Acts Two to Four as tables, the three rules for
 changing a file a crew is playing, and a rubric you can mark yourself against.
 
-*[Screenshot to add: Helm's Quest Log at the end of the third sitting, every line of
-The Long Count marked Done, beside `campaign.md` open at Act Two.]*
+![campaign.md open at Act Two, with the table of steps](images/the-campaign-file.jpg)
+*campaign.md at Act Two: the plan your campaign was built from.*
 
 This lecture teaches nothing new. It is a studio: you build, you play, you write down
 what happened.

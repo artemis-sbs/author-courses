@@ -8,8 +8,8 @@ them, and a warning on Comms tells them so. It is not there before the story arr
 again if the crew runs and comes back, and after a Continue. When the fight is won, it
 is over.
 
-*[Screenshot to add: Comms at The Bone Pile, the line titled Threat: "A Gleaner battle
-line is forming up between you and the Bone Pile."]*
+![Comms at The Bone Pile with the two Threat lines, the second a Gleaner battle line forming up](images/a-battle-forms-up.jpg)
+*At The Bone Pile: the guards' Threat line, and ours, "A Gleaner battle line is forming up."*
 
 You paste one card at the end of `story.mast`, and change nothing else. This is the only
 lecture in this class that adds lines of MAST to do something new. You copy them. You do

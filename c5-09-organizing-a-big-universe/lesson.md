@@ -11,8 +11,8 @@ crew's handheld.
 And the whole world, printed: one document to read on paper, a script of every
 conversation, and a website you can open from a folder and hand to a co-writer.
 
-*[Screenshot to add: VS Code's file list with `jobs.amd`, `lore.amd` and the `dialogue`
-folder, beside the printed prose edition open in a browser.]*
+![The in-game Library, open at The Three Colonies](images/the-library.jpg)
+*The in-game Library, open at The Three Colonies: prose that lives in lore.amd.*
 
 Nothing the crew can do changes in this lecture, apart from the new voice and the lore.
 You move text between files, and you run two new commands.
