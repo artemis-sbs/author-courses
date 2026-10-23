@@ -1,0 +1,33 @@
+"""The game stills of this lecture, as game.py made them - `game.py <lecture> replay`
+makes them again. One step per line; `gap` is the pause before it, in seconds."""
+
+STEPS = [
+    {'op': 'stop', 'gap': 0.0},
+    {'op': 'keep', 'shot': 'r_hollin', 'still': 'game_c54_hollin', 'gap': 90.0},
+    {'op': 'keep', 'shot': 'r_cold', 'still': 'game_c54_cold', 'gap': 16.9},
+    {'op': 'keep', 'shot': 'r_levy', 'still': 'game_c54_levy', 'gap': 23.5},
+    {'op': 'keep', 'shot': 'r_after2', 'still': 'game_c54_hollin_after', 'gap': 14.9},
+    {'op': 'stop', 'gap': 90.0},
+    {'op': 'stop', 'gap': 90.0},
+    {'op': 'keep', 'shot': 'r_cold3', 'still': 'game_c54_cold', 'gap': 90.0},
+    {'op': 'keep', 'shot': 'r_levy3', 'still': 'game_c54_levy', 'gap': 0.3},
+    {'op': 'keep', 'shot': 'r_sel4', 'still': 'game_c54_hollin_after', 'gap': 81.6},
+    {'op': 'keep', 'shot': 'r_friendly3', 'still': 'game_c54_friendly', 'gap': 90.0},
+    {'op': 'keep', 'shot': 'r_ql2', 'still': 'game_c54_engage', 'gap': 90.0},
+    {'op': 'keep', 'shot': 'r_ql4', 'still': 'game_c54_done', 'gap': 42.4},
+    {'op': 'keep', 'shot': 'r_g2', 'still': 'game_c54_gl_station', 'gap': 90.0},
+    {'op': 'keep', 'shot': 'r4_c0', 'still': 'game_c54_hollin', 'gap': 90.0},
+    {'op': 'keep', 'shot': 'r4_c1', 'still': 'game_c54_cold', 'gap': 29.6},
+    {'op': 'keep', 'shot': 'r4_c2', 'still': 'game_c54_levy', 'gap': 15.4},
+    {'op': 'keep', 'shot': 'r4_c4', 'still': 'game_c54_hollin_after', 'gap': 26.7},
+    {'op': 'keep', 'shot': 'r4_c5', 'still': 'game_c54_friendly', 'gap': 15.6},
+    {'op': 'keep', 'shot': 'r4_h2', 'still': 'game_c54_engage', 'gap': 70.4},
+    {'op': 'keep', 'shot': 'r4_h3', 'still': 'game_c54_done', 'gap': 31.1},
+    {'op': 'keep', 'shot': 'r4_g1', 'still': 'game_c54_gl_station', 'gap': 77.3},
+    {'op': 'keep', 'shot': 'r6_g1', 'still': 'game_c54_gl_station', 'gap': 90.0},
+    {'op': 'keep', 'shot': 'r6_g2', 'still': 'game_c54_gl_hail', 'gap': 14.1},
+    {'op': 'keep', 'shot': 'r6_g5', 'still': 'game_c54_gl_after', 'gap': 46.0},
+    {'op': 'stop', 'gap': 90.0},
+    {'op': 'stop', 'gap': 90.0},
+    {'op': 'stop', 'gap': 90.0},
+]

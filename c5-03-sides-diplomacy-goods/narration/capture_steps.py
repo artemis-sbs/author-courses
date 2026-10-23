@@ -32,4 +32,11 @@ STEPS = [
     {'op': 'keep', 'shot': 'd_peace', 'still': 'game_c53_peace', 'gap': 15.7},
     {'op': 'keep', 'shot': 'd_peace', 'still': 'game_c53_nowork', 'gap': 0.3},
     {'op': 'stop', 'gap': 2.3},
+    {'op': 'stop', 'gap': 90.0},
+    {'op': 'stop', 'gap': 90.0},
+    {'op': 'stop', 'gap': 90.0},
+    {'op': 'stop', 'gap': 90.0},
+    {'op': 'keep', 'shot': 'r1_g1', 'still': 'game_c53_ceasefire', 'gap': 90.0},
+    {'op': 'keep', 'shot': 'r1_g3', 'still': 'game_c53_peace', 'gap': 35.5},
+    {'op': 'stop', 'gap': 90.0},
 ]

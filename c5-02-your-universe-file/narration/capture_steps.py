@@ -13,4 +13,5 @@ STEPS = [
     {'op': 'stop', 'gap': 3.9},
     {'op': 'keep', 'shot': 'k_v16', 'still': 'game_c52_home_port', 'gap': 90.0},
     {'op': 'stop', 'gap': 2.3},
+    {'op': 'stop', 'gap': 90.0},
 ]
