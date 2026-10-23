@@ -1,0 +1,4005 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Write missions for Artemis Cosmos. A course for storytellers, not programmers.">
+      
+      
+      
+        <link rel="canonical" href="https://artemis-sbs.github.io/author-courses/class-3/09-tile-map-editor-part-2/">
+      
+      
+        <link rel="prev" href="../08-tile-map-editor-part-1/">
+      
+      
+        <link rel="next" href="../10-props/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>9. The Tile Map Editor, part 2 - Cosmos Author Courses</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-3-lecture-9-the-tile-map-editor-part-2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cosmos Author Courses" class="md-header__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cosmos Author Courses
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9. The Tile Map Editor, part 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Light"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Dark"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cosmos Author Courses" class="md-nav__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cosmos Author Courses
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reviewers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For reviewers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/01-what-you-are-going-to-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What you are going to build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/02-files-folders-command-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Files, folders and the command prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/03-editor-and-first-run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Your editor and your first run
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/04-markdown-in-twenty-minutes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Markdown in twenty minutes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/05-the-shape-of-a-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. The shape of a record
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/06-lint-is-your-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Lint is your editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/07-roles-and-signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Roles and signals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/08-first-quest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Your first quest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/09-chains-and-trees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Chains and trees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/10-things-quests-point-at/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Things quests point at
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/11-just-enough-mast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Just enough MAST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/12-ship-a-quest-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Capstone: ship a quest mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 2 - People, Dialogue and Siege Bosses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 2 - People, Dialogue and Siege Bosses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/01-sides-and-factions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Sides and factions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/02-characters-and-faces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Characters and faces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/03-dialogue-part-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Dialogue, part 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/04-dialogue-part-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Dialogue, part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/05-hails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Hails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/06-reputation-a-first-look/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Reputation, a first look
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/07-the-story-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. The story tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/08-siege-boss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. A Siege boss, part 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/09-siege-boss-fields/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. A Siege boss, part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/10-siege-boss-quests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. A Siege boss, part 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-2/11-a-boss-with-a-voice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Capstone: a boss with a voice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 3 - Boarding Parties
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 3 - Boarding Parties
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-what-a-boarding-party-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What a boarding party is
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-party-and-place/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. A party and a place
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-everyone-gets-a-menu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Everyone gets a menu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-crew-and-skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Crew and skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-personal-quests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Personal quests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-boarding-checkpoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Checkpoint: a short boarding quest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-anatomy-of-a-long-away-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Anatomy of a long away mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-tile-map-editor-part-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. The Tile Map Editor, part 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. The Tile Map Editor, part 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. The Tile Map Editor, part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-a-way-out-of-the-yard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - A way out of the yard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-a-way-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - A way back
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-what-the-ship-knows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - What the ship knows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-a-new-kind-of-ground" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - A new kind of ground
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-a-third-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - A third area
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-stairs-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Stairs down
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-where-they-arrive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Where they arrive
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-a-thing-at-a-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - A thing at a cell
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-a-thing-on-a-mark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - A thing on a mark
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-the-sentrys-walk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - The sentry's walk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 - Check it
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 11 - Check it">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-lint-cannot-see" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What lint cannot see
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-12-play-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 12 - Play it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-props/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Props
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-people-and-hostiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. People and hostiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-scenes-on-the-ground/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Scenes on the ground
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-what-the-crew-sees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. What the crew sees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-pacing-an-away-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Pacing an away mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-boarding-an-enemy-ship/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. Boarding an enemy ship
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-a-long-boarding-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Capstone: a long boarding mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 4 - Ancient Ruins and EVA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 4 - Ancient Ruins and EVA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/01-what-a-ruin-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What a ruin is
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/02-a-ruin-is-a-place/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. A ruin is a place
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/03-dressing-a-ruin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Dressing a ruin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/04-places-that-speak/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Places that speak
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/05-what-is-inside/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. What is inside
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/06-clues-side-stories-cutscenes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Clues, side stories and cutscenes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/07-quests-through-a-ruin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Quests through a ruin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/08-eva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. EVA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/09-station-repair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. EVA elsewhere: a repair outside a station
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/10-a-ruin-episode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Capstone: a ruin episode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 5 - Open Universe: Building the World
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 5 - Open Universe: Building the World
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/01-what-open-universe-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What Open Universe is
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/02-your-universe-file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Your universe file
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/03-sides-diplomacy-goods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Sides, diplomacy and goods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/04-reputation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Reputation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/05-the-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. The map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/06-jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Jobs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/07-narrative-and-goals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Narrative and goals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/08-captains-and-rivals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Captains and rivals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/09-organizing-a-big-universe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Organizing a big universe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/10-a-boarding-site-on-the-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. A boarding site on the map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/11-a-ruin-on-the-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. A ruin on the map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/12-battles-part-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Battles, part 1: how dangerous a system is
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/13-battles-part-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Battles, part 2: a battle that waits for the story
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/14-admiral-part-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. The Admiral, part 1: the game from above
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/15-admiral-part-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. The Admiral, part 2: an Admiral alongside a bridge crew
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/16-a-playable-universe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Capstone: a playable universe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 6 - Open Universe: Running the Campaign
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 6 - Open Universe: Running the Campaign
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/01-from-one-session-to-twenty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. From one session to twenty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/02-what-the-game-remembers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. What the game remembers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/03-designing-a-session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Designing a session
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/04-the-episode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. The episode, your repeatable unit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/05-campaign-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Campaign architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/06-reputation-arcs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Reputation arcs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/07-mixing-the-play-styles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Mixing the play styles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/08-playtesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Playtesting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/09-revising-between-sessions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Revising between sessions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/10-publishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Publishing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/11-capstone-studio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Capstone studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-a-way-out-of-the-yard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - A way out of the yard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-a-way-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - A way back
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-what-the-ship-knows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - What the ship knows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-a-new-kind-of-ground" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - A new kind of ground
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-a-third-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - A third area
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-stairs-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Stairs down
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-where-they-arrive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Where they arrive
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-a-thing-at-a-cell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - A thing at a cell
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-a-thing-on-a-mark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - A thing on a mark
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-the-sentrys-walk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - The sentry's walk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 - Check it
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 11 - Check it">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-lint-cannot-see" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What lint cannot see
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-12-play-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 12 - Play it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="class-3-lecture-9-the-tile-map-editor-part-2">Class 3, Lecture 9 - The Tile Map Editor, part 2<a class="headerlink" href="#class-3-lecture-9-the-tile-map-editor-part-2" title="Permanent link">&para;</a></h1>
+<h2 id="what-you-will-have-at-the-end">What you will have at the end<a class="headerlink" href="#what-you-will-have-at-the-end" title="Permanent link">&para;</a></h2>
+<p>Three maps joined into one place. The crew walks east out of the relay yard into your
+gully, through the pump house, and down a flight of stairs to a cistern: a walkway round
+a tank of standing water.</p>
+<p>You will also have stood the first things on your maps: a trail sign, a pump and a crate.
+And you will have redrawn the walk the sentry takes, and given the crew a way round it.</p>
+<p><img alt="The three maps in the Tile Map Editor's Art view: the relay yard with its exit to the gully, the gully with exits to the yard and the cistern, and the cistern with its exit back up, each exit outlined in blue" src="../img/c3-09-tile-map-editor-part-2/three-maps-in-the-editor.jpg" />
+<em>The yard (top left), the gully (top right) and the cistern (below) in the Tile Map Editor: the exits are outlined in blue, the marks in yellow, and a star shows where the crew arrives.</em></p>
+<p>Five files change today: the yard's map, the gully's map, the tileset, a new map for the
+cistern, and <code>mission.amd</code>. There is still nothing to do down there. Lectures 10 to 12
+fill the three areas.</p>
+<h2 id="the-video">The video<a class="headerlink" href="#the-video" title="Permanent link">&para;</a></h2>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/v8yPwVSc7vM" title="Class 3, Lecture 9 - The Tile Map Editor, part 2" allowfullscreen></iframe></div>
+
+<p>About 6 minutes. Subtitles are available in the player.</p>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>MyAway</code> as Lecture 8 left it: <code>ground\gully.tiles</code> reads the same as the block at the
+  end of Lecture 8, Step 6, and <code>sbs lint MyAway</code> says <code>clean</code>.</li>
+<li>The <code>MyAway</code> folder open in VS Code.</li>
+<li>A command prompt open in <code>C:\Cosmos\data\missions</code>.</li>
+</ul>
+<p>Words for this lecture:</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exit</td>
+<td>A mark that leads to another area. Whoever stops on it goes there</td>
+</tr>
+<tr>
+<td>Known</td>
+<td>Whether the ship knows an area is there. The transporter only reaches known areas</td>
+</tr>
+<tr>
+<td>Placing</td>
+<td>Saying where on a map a record stands: <code>Area:</code>, and then <code>Mark:</code> or <code>At:</code></td>
+</tr>
+<tr>
+<td>Patrol</td>
+<td>The cells a hostile walks between, round and round</td>
+</tr>
+<tr>
+<td>Scenery</td>
+<td>A prop with nothing to it. It is drawn, and it is in the way</td>
+</tr>
+</tbody>
+</table>
+<p>As in Lecture 8, every step is given as text to type, and the editor's way is given
+beside it. Every editor step on this page was read from the add-on's own files. Nobody
+has yet checked them against a real screen.</p>
+<h2 id="step-1-a-way-out-of-the-yard">Step 1 - A way out of the yard<a class="headerlink" href="#step-1-a-way-out-of-the-yard" title="Permanent link">&para;</a></h2>
+<p>In the game an exit is a cell at the edge of a map: walk onto it and you are in the next
+area. An exit is a mark with a special name: <code>to_</code>, and then the key of the area it leads to.
+The gully's key is <code>gully</code>, so the way to it is a mark named <code>to_gully</code>.</p>
+<p>Open <code>ground\landing.tiles</code>. It needs one new legend line and one changed cell, at the
+east end of the seventh row of the map.</p>
+<p>In the editor: <strong>+ Entry</strong>, Kind <code>dust</code>, Mark <code>to_gully</code>, Character <code>&gt;</code>, <strong>OK</strong>. Then
+<strong>Paint</strong>, and click cell <code>29, 6</code>.</p>
+<p>Or in the text. Add the last line here to the end of the legend:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>  h: scrub @scrub
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  &gt;: dust @to_gully
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>---
+</code></pre></div>
+<p>and change the seventh row of the map, the one with the <code>T</code> in it:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>^#...................T.......&gt;^^
+</code></pre></div>
+<p>Save. In the editor an exit is outlined in blue, with the name of the area it leads to.</p>
+<h2 id="step-2-a-way-back">Step 2 - A way back<a class="headerlink" href="#step-2-a-way-back" title="Permanent link">&para;</a></h2>
+<p>Open <code>ground\gully.tiles</code> and do the same there, at its west end.</p>
+<p>In the editor: <strong>+ Entry</strong>, Kind <code>dust</code>, Mark <code>to_landing</code>, Character <code>&lt;</code>, <strong>OK</strong>.
+<strong>Paint</strong>, and click cell <code>1, 5</code>.</p>
+<p>Or in the text:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>  a: dust @arrive
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  &lt;: dust @to_landing
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>---
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>^&lt;a.........D_____W..#^^
+</code></pre></div>
+<p>Save both files and run <code>sbs lint MyAway</code>. It should say <code>clean</code>.</p>
+<p>Three rules about exits. Each was measured for this page.</p>
+<p><strong>An exit takes whoever stops on it.</strong> Walking across an exit on the way to somewhere
+else does nothing. Click the exit itself.</p>
+<p><strong>Each person goes through alone.</strong> The party does not move together. One crew member
+can be in the gully while the others are still in the yard.</p>
+<p><strong>They arrive beside the way back, never on it.</strong> Walk onto <code>to_gully</code> at 29, 6 and you
+stand in the gully at cell 1, 4, next to its <code>to_landing</code>. Walk back and you stand in the
+yard at 29, 5.</p>
+<p>The handheld's <strong>Look</strong> app lists the ways out of the area you are in, as buttons, once
+the party knows where they lead: <code>Go to Kesh Relay</code>. Pressing one walks you there.</p>
+<h2 id="step-3-what-the-ship-knows">Step 3 - What the ship knows<a class="headerlink" href="#step-3-what-the-ship-knows" title="Permanent link">&para;</a></h2>
+<p>In Lecture 8 the transporter put you straight into the gully. That was useful then. It
+would spoil things now: a crew that can beam anywhere never has to find the way.</p>
+<p>Two lines in an area's header decide what the transporter may do:</p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>known: no</code></td>
+<td>The ship does not know this area is there. It is not on the Beam app until a crew member has walked into it</td>
+</tr>
+<tr>
+<td><code>beam: no</code></td>
+<td>The transporter can never lock on here, known or not. Underground, say</td>
+</tr>
+</tbody>
+</table>
+<p>In <code>gully.tiles</code>, add one line under <code>entry:</code>. This one is typed. The editor has no box
+for it.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>entry: arrive
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>known: no
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>size: 24x12
+</code></pre></div>
+<p>Measured: at the start the Beam app can reach the yard and nowhere else. After one crew
+member has walked into the gully, it can reach the gully too, for everybody.</p>
+<h2 id="step-4-a-new-kind-of-ground">Step 4 - A new kind of ground<a class="headerlink" href="#step-4-a-new-kind-of-ground" title="Permanent link">&para;</a></h2>
+<p>The cistern needs water: something the crew can see across and cannot walk on. The
+starter's tileset has no such kind. Add one.</p>
+<p>Open <code>ground\starter.tileset</code>. It opens as a table, the Tileset Editor: a row for each
+kind, with boxes to tick for <strong>Walk</strong>, <strong>See</strong> and <strong>Tall</strong>. Press <strong>+ Kind</strong> for a new
+row, name it <code>water</code>, tick <strong>See</strong>, untick <strong>Walk</strong>, and set its <strong>Look</strong> to <code>water</code>.</p>
+<p>Or press <strong>Text</strong> and add one line under <code>cliff</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>  cliff:        see   look=cliff
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  water:        see   look=water
+</code></pre></div>
+<p><code>look=water</code> is a picture the <code>frontier</code> art pack has. The words on a kind's line are the
+rules it has. A kind with <code>see</code> and no <code>walk</code> is what makes a map readable: the far side
+is in view, and getting there is the puzzle.</p>
+<h2 id="step-5-a-third-area">Step 5 - A third area<a class="headerlink" href="#step-5-a-third-area" title="Permanent link">&para;</a></h2>
+<p>Make a new file in the <code>ground</code> folder, as in Lecture 8, Step 1. Name it
+<code>cistern.tiles</code>. Press <strong>Text</strong> and type:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a># Under the pump house: a walkway round a tank of standing water.
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>area: cistern
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>title: The Cistern
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>tileset: starter
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>entry: foot
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>known: no
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>beam: no
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>size: 18x7
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>legend:
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>  W: wall
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>  _: floor
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>  ~: water
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>  u: floor @to_gully
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>  f: floor @foot
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>---
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>WWWWWWWWWWWWWWWWWW
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>Wu_f__________W__W
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>W_~~~~~~~~~~_____W
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>W_~~~~~~~~~~__W__W
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>W_~~~~~~~~~~__W__W
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>W_____________W__W
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>WWWWWWWWWWWWWWWWWW
+</code></pre></div>
+<p>Save, and look at it in the editor. The tank is ten cells by three. The walkway runs all
+the way round it. At the east end a wall with one gap in it shuts off a small room.</p>
+<p>This area already has its way back: <code>u</code>, the mark <code>to_gully</code>, in the top left corner. It
+has <code>known: no</code> and <code>beam: no</code>, so the only way in is on foot.</p>
+<h2 id="step-6-stairs-down">Step 6 - Stairs down<a class="headerlink" href="#step-6-stairs-down" title="Permanent link">&para;</a></h2>
+<p>The way down is inside the pump house, against its east wall.</p>
+<p>In <code>gully.tiles</code>, in the editor: <strong>+ Entry</strong>, Kind <code>floor</code>, Mark <code>to_cistern</code>, Character
+a small <code>v</code>, <strong>OK</strong>. <strong>Paint</strong>, and click cell <code>17, 5</code>.</p>
+<p>Or in the text:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>  &lt;: dust @to_landing
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  v: floor @to_cistern
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>---
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>^&lt;a.........D____vW..#^^
+</code></pre></div>
+<h2 id="step-7-where-they-arrive">Step 7 - Where they arrive<a class="headerlink" href="#step-7-where-they-arrive" title="Permanent link">&para;</a></h2>
+<p>A crew member who takes an exit arrives beside the way back. That is usually right. When
+it is not, an area file can say where its exits lead, in a block of its own named
+<code>exits:</code>. It goes after the legend and before the <code>---</code>.</p>
+<p>In <code>gully.tiles</code>, in the text:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>  v: floor @to_cistern
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>exits:
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  to_cistern: cistern @foot
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>---
+</code></pre></div>
+<p>Read that one line as: the mark <code>to_cistern</code> leads to the area <code>cistern</code>, and whoever
+takes it arrives beside the mark <code>foot</code>.</p>
+<p>The editor shows exits and has no way to edit this block. Type it.</p>
+<p>With the block, a crew member who takes the stairs stands at cell 2, 1 of the cistern,
+beside <code>foot</code>. Without it they stand at 1, 2, beside the way back. One cell is not much.
+In a big area it is the difference between arriving at the gate and arriving in the
+middle of the square.</p>
+<p><code>exits:</code> has a second use. A mark does not have to be named <code>to_</code> and an area. Any mark
+is an exit if a line in this block says where it leads. A mark named <code>ladder</code>, with the
+line <code>ladder: cistern @foot</code>, was tried for this page, and it went down like the stairs.</p>
+<p>Save everything and run lint. It should say <code>clean</code>.</p>
+<h2 id="step-8-a-thing-at-a-cell">Step 8 - A thing at a cell<a class="headerlink" href="#step-8-a-thing-at-a-cell" title="Permanent link">&para;</a></h2>
+<p>Now <code>mission.amd</code>. A record that stands on a map says where in two fields. The first is
+always <code>Area:</code>. The second is one of two:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Takes</th>
+<th>Use it for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>At:</code></td>
+<td>A cell: across, a comma, down</td>
+<td>A loose thing: a crate, a sign, a dropped key</td>
+</tr>
+<tr>
+<td><code>Mark:</code></td>
+<td>The name of a mark in that area's file</td>
+<td>A thing that belongs to the drawing: a door in its gap, a machine in its room</td>
+</tr>
+</tbody>
+</table>
+<p>Start with <code>At:</code>. Find the end of the Props section. The last record in it is the Tent,
+which is three lines and a fence. Under the Tent's closing <code>---</code>, leave a blank line and
+add:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>### [Trail sign](sign)
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>---
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Area: landing
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>At: 28, 5
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>Sprite: prop:sign
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>---
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>A painted board on a post: PUMP HOUSE, and an arrow pointing east.
+</code></pre></div>
+<p><code>At: 28, 5</code> is 28 across and 5 down, counted from 0, in the area <code>landing</code>. That is the
+cell above your exit and one to the left.</p>
+<p>In the game the sign stands by the exit. A click on it walks you up beside it, and its
+line is on the handheld's <strong>Look</strong> app. <code>Sprite:</code> is the picture. The names come from the art packs: <code>prop:</code> and a word for a
+thing, <code>fig:</code> and a word for a figure. Further reading has where to find the list.</p>
+<p>Save, and open <code>landing.tiles</code> in the editor. With <strong>Things</strong> switched on, the editor
+draws what <code>mission.amd</code> stands on this map. The sign is there, at 28, 5. In <strong>Kinds</strong> a
+prop is an amber square; in <strong>Art</strong> it is its picture.</p>
+<p><strong>Move</strong> drags it. Press <strong>Move</strong>, drag the sign one cell, and let go. Then look at
+<code>mission.amd</code>: the editor has rewritten the <code>At:</code> line for you. Press <strong>Undo move</strong> on
+the toolbar to put it back. Ctrl+Z will not do it, because the change was made in a
+different file.</p>
+<h2 id="step-9-a-thing-on-a-mark">Step 9 - A thing on a mark<a class="headerlink" href="#step-9-a-thing-on-a-mark" title="Permanent link">&para;</a></h2>
+<p>The pump stands in the pump house. It belongs to that room, so it gets a mark.</p>
+<p>In <code>gully.tiles</code>, in the editor: <strong>+ Entry</strong>, Kind <code>floor</code>, Mark <code>pump</code>, Character a
+small <code>p</code>, <strong>OK</strong>. <strong>Paint</strong>, and click cell <code>15, 4</code>.</p>
+<p>Or in the text:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>  v: floor @to_cistern
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  p: floor @pump
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>exits:
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>^...........W__p__W..#^^
+</code></pre></div>
+<p>Then in <code>mission.amd</code>, under the Trail sign:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>// SCENERY again: no words, so nothing offers to use it. It only stands there, and blocks.
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>### [The pump](pump)
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>---
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>Area: gully
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>Mark: pump
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>Sprite: prop:machinery
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>Blocks: yes
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>---
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>### [Crate](gully_crate)
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>---
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>Area: gully
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>At: 6, 9
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>Sprite: prop:crate
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>Blocks: yes
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>---
+</code></pre></div>
+<p>Three things to see in those two records.</p>
+<p><code>Blocks: yes</code> means nobody can walk through it. Without that line the crew walks straight
+over a prop.</p>
+<p>Neither record has any words under its fence, and neither has a field that does
+anything. A prop like that is <strong>scenery</strong>. It is drawn, it is in the way, and a click on
+it only walks you up to it. The Trail sign is not scenery, because it has a line of
+description: stand beside it and the handheld's <strong>Look</strong> app shows you that line.</p>
+<p>And one rule that is easy to get wrong. <strong>A mark's name goes in <code>Mark:</code>, never in
+<code>At:</code>.</strong> <code>At:</code> reads numbers only. A word written there reads as nothing, and the prop is
+never placed. Lint tells you.</p>
+<p>In the editor, <strong>Move</strong> works on the pump too, and it does something different. The pump
+stands on a mark, so dragging it moves the mark: the <code>p</code> in the map moves, and the
+<code>.amd</code> is not touched.</p>
+<h2 id="step-10-the-sentrys-walk">Step 10 - The sentry's walk<a class="headerlink" href="#step-10-the-sentrys-walk" title="Permanent link">&para;</a></h2>
+<p>Find the sentry in the Hostiles section. One of its fields is a walk:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Patrol: 20 9; 26 9; 26 11; 20 11
+</code></pre></div>
+<p>A patrol is a list of cells. Each cell is across, a space, down. Between cells there is a
+semicolon. The sentry walks from each to the next, and from the last back to the first.</p>
+<p>Open <code>landing.tiles</code> in the editor. The patrol is drawn as a dashed loop with a dot at
+each cell. Make it longer. Change the line to:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Patrol: 18 9; 25 9; 25 11; 18 11
+</code></pre></div>
+<p>In the editor you can drag the dots instead, with <strong>Move</strong>. Each drag rewrites one cell
+of the <code>Patrol:</code> line.</p>
+<p>Look at what the longer walk does to your map. The keycard at 24, 10 is still inside the
+loop. The terminal, at 21, 6, is three cells from the top of it, and the sentry notices
+anyone within four.</p>
+<p>So is everyone who walks past the front of the relay house, and that row is the only way
+east. Give the crew another one: a path behind the relay house, between its back wall and
+the edge of the map. In <code>landing.tiles</code>, paint the top row with dust (<code>.</code>) from 17, 0 to
+27, 0, eleven cells. The first row of the map becomes:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>^^^^^^^^^^^^^^^^^...........^^^^
+</code></pre></div>
+<p>The path joins the yard at both ends, at 17, 1 and at 27, 1. Go that way to the trail
+sign and the exit, and you never come nearer the loop than five cells: one more than the
+sentry can notice. That is why the loop grows west, and its east end comes in to 25. A click
+on the sign stands you on the cell beside it, 27, 5. With a corner at 27, 9 that cell
+would be four from the loop, and the sentry would find you reading.</p>
+<h2 id="step-11-check-it">Step 11 - Check it<a class="headerlink" href="#step-11-check-it" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>sbs lint MyAway
+</code></pre></div>
+<p>It should say <code>clean</code>. Each row below was tried on the finished files, one change at a
+time.</p>
+<table>
+<thead>
+<tr>
+<th>The mistake</th>
+<th>What lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@to_landng</code> in the gully</td>
+<td><code>tiles-exit</code>: <code>@to_landng is named like an exit, but there is no area 'landng' (and no exits: line for it)</code></td>
+</tr>
+<tr>
+<td><code>to_cistern: cistrn @foot</code></td>
+<td><code>tiles-exit</code>: <code>exit to_cistern leads to 'cistrn', which is no area in this mission</code></td>
+</tr>
+<tr>
+<td><code>to_cistern: cistern @feet</code></td>
+<td><code>tiles-exit</code>: <code>exit to_cistern arrives at @feet, which is not a mark in cistern</code></td>
+</tr>
+<tr>
+<td><code>to_cistern: cistern foot</code>, with no <code>@</code></td>
+<td><code>tiles-exit</code>: <code>arrives at 'foot', which is neither @ and a mark's name nor x, y - so it is ignored</code>. In the game they arrive beside the way back, as if the block were not there</td>
+</tr>
+<tr>
+<td>The exit's legend line says <code>rock</code></td>
+<td><code>tiles-exit</code>: <code>exit @to_landing is on ground nobody can walk onto</code></td>
+</tr>
+<tr>
+<td>An exit in the legend that is drawn nowhere</td>
+<td><code>tiles-mark-unplaced</code>. This is all lint says when an area cannot be reached</td>
+</tr>
+<tr>
+<td>The <code>water</code> line missing from the tileset</td>
+<td><code>tiles-unknown-kind</code>, an error, in <code>cistern.tiles</code></td>
+</tr>
+<tr>
+<td><code>sea</code> for <code>see</code> in the tileset</td>
+<td><code>tileset-syntax</code>, an error, and then <code>tiles-unknown-tileset</code> for every area: one wrong word switches off the checks on all three maps</td>
+</tr>
+<tr>
+<td><code>Area: guly</code></td>
+<td><code>tiles-unknown-area</code>: <code>pump: no tile area 'guly' in this mission</code></td>
+</tr>
+<tr>
+<td><code>Mark: pmp</code></td>
+<td><code>tiles-unknown-mark</code>: <code>pump: no mark 'pmp' in gully - it is never placed</code></td>
+</tr>
+<tr>
+<td><code>At: to_gully</code></td>
+<td><code>tiles-at-not-a-cell</code>: <code>At: takes x, y - a mark name goes in Mark:</code></td>
+</tr>
+<tr>
+<td><code>At: 40, 5</code></td>
+<td><code>tiles-off-map</code>: <code>sign: At: 40, 5 is off the map (landing is 32 x 14)</code></td>
+</tr>
+<tr>
+<td><code>At: 5, 28</code>, the two numbers the wrong way round</td>
+<td><code>tiles-off-map</code>, when you are lucky. If both numbers fit on the map, lint is silent and the thing stands somewhere else</td>
+</tr>
+<tr>
+<td>A patrol cell off the map</td>
+<td><code>tiles-off-map</code></td>
+</tr>
+<tr>
+<td>A patrol cell on rock</td>
+<td><code>tiles-unwalkable</code>: <code>sentry: Patrol 25, 12 is rock, which cannot be walked</code></td>
+</tr>
+<tr>
+<td><code>Patrol: 18 9, 25 9, 25 11, 18 11</code>, commas where the semicolons go</td>
+<td><code>patrol-shape</code>: it is read as one point, and the rest is ignored. In the game the sentry never moved. It stood at 18, 9 for as long as the test ran</td>
+</tr>
+<tr>
+<td><code>Blocks: yse</code></td>
+<td><code>unknown-enum-value</code></td>
+</tr>
+</tbody>
+</table>
+<p>A finding about a placement is printed under its own heading:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>== mission.amd (tiles) ==
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>  [WARNING] line 210:7: pump: no mark 'pmp' in gully - it is never placed (tiles-unknown-mark)
+</code></pre></div>
+<h3 id="what-lint-cannot-see">What lint cannot see<a class="headerlink" href="#what-lint-cannot-see" title="Permanent link">&para;</a></h3>
+<p>All of these lint clean.</p>
+<table>
+<thead>
+<tr>
+<th>The mistake</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A prop with no <code>Area:</code> line, or with no <code>Mark:</code> and no <code>At:</code></td>
+<td>It is not placed. <code>mast.runtime.log</code> in the mission folder names it and says why: <code>'Trail sign' (sign) has no Area:, so it is nowhere.</code></td>
+</tr>
+<tr>
+<td><code>At: 5, 28</code>, and lint did warn</td>
+<td>It is placed all the same, off the edge of the map, where nobody can reach it</td>
+</tr>
+<tr>
+<td>A prop <code>At:</code> a cliff or a rock</td>
+<td>Allowed, and lint is right to be silent: a prop may stand anywhere. Only people have to stand where they can walk</td>
+</tr>
+<tr>
+<td>Both <code>Mark:</code> and <code>At:</code> on one record</td>
+<td><code>Mark:</code> wins. The sign stood on the pad</td>
+</tr>
+<tr>
+<td><code>Sprite: prop:sgn</code>, a picture that is not there</td>
+<td>It is placed, and nothing is drawn. Not seen on a screen for this page</td>
+</tr>
+<tr>
+<td><code>look=watr</code> in the tileset</td>
+<td>Nothing says so. In the editor's table the look is outlined in red. Not seen on a screen for this page</td>
+</tr>
+<tr>
+<td>The yard's exit never drawn</td>
+<td><code>tiles-mark-unplaced</code>, once, about the yard. Not a word about the two areas that can no longer be reached</td>
+</tr>
+</tbody>
+</table>
+<p>Two spellings that look wrong and work: <code>At: 28 5</code>, with a space and no comma; and
+<code>Patrol: 18, 9; 25, 9; 25, 11; 18, 11</code>, with commas inside each cell. Use the spelling
+on this page anyway.</p>
+<p>When something is missing from a map, read <code>mast.runtime.log</code> first. The game names
+every record it could not place.</p>
+<h2 id="step-12-play-it">Step 12 - Play it<a class="headerlink" href="#step-12-play-it" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>sbs run server,engineering -m MyAway map=0
+</code></pre></div>
+<ol>
+<li>Beam down. Open <strong>Beam</strong>: there is nowhere else to go.</li>
+<li>Walk east along the north side of the yard, well clear of the sentry: click the path
+   behind the relay house first, then the trail sign: you walk up beside it. Open <strong>Look</strong>
+   to read it. Then click the cell under the sign and to the right, the exit.</li>
+<li>You are in the gully. Open <strong>Beam</strong> again: it offers <code>To Kesh Relay</code>. A Beam list never
+   names the area you are standing in. The gully is on it now from everywhere else: the
+   cistern's list, in a moment, reads <code>To The Dry Gully</code> and <code>To Kesh Relay</code>.</li>
+<li>Walk into the pump house. Click the pump: you walk up to it, and that is all. Click
+   the cell against the east wall, the stairs.</li>
+<li>You are in the cistern. Click the water: you walk to the edge and stop. Walk round
+   the tank and through the gap into the east room.</li>
+<li>Go back up the stairs, and back to the yard.</li>
+</ol>
+<p>That walk was made by a script for this page, with a stand-in console: every exit, the
+click on the water, and the clicks on the pump and the crate.</p>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="headerlink" href="#if-something-goes-wrong" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>Why</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>You walk onto the exit and nothing happens</td>
+<td>You walked across it to somewhere else</td>
+<td>Click the exit cell itself</td>
+</tr>
+<tr>
+<td>You walk onto the exit and nothing happens, and lint says <code>tiles-exit</code></td>
+<td>The mark's name does not end in an area's key</td>
+<td>Check the name against the other file's <code>area:</code> line</td>
+</tr>
+<tr>
+<td>A thing is not on the map</td>
+<td>Its <code>Area:</code> or <code>Mark:</code> names nothing, or it has no place at all. <code>mast.runtime.log</code> in the mission folder names it and says why</td>
+<td>Read that file, then run lint</td>
+</tr>
+<tr>
+<td>The sentry stands still</td>
+<td>A <code>Patrol:</code> cell it cannot reach, or commas where the semicolons go</td>
+<td>Lint says <code>tiles-unwalkable</code>, or <code>patrol-shape</code></td>
+</tr>
+<tr>
+<td>The cistern is solid black in the editor's <strong>Kinds</strong> view</td>
+<td>The <code>water</code> line is missing from the tileset</td>
+<td>Step 4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Stand a second crate in the cistern's east room, with <code>At:</code>. Find its cell with the
+   mouse in the editor first. Run lint.</li>
+<li>Move your crate with the <strong>Move</strong> tool, and read the new <code>At:</code> line.</li>
+<li>Give the gully a second way down: a mark named <code>ladder</code> on a floor cell of the pump
+   house, and a line in the <code>exits:</code> block that sends it to the cistern. Take it out
+   again afterwards.</li>
+<li>Break it and read lint: misspell <code>to_landing</code>; write the pump's mark in <code>At:</code>; put a
+   patrol cell on the relay house wall.</li>
+</ol>
+<p>Then answer on paper:</p>
+<ul>
+<li>A crew member walks from the gully to the yard. Which cell do they stand on?</li>
+<li>Why does the pump get a mark and the crate a cell?</li>
+<li>The cistern has <code>beam: no</code>. What would the crew be able to skip without it?</li>
+</ul>
+<h2 id="checkpoint">Checkpoint<a class="headerlink" href="#checkpoint" title="Permanent link">&para;</a></h2>
+<p>You are done when all five are true:</p>
+<ul>
+<li><code>sbs lint MyAway</code> says <code>clean</code>.</li>
+<li>You have walked from the landing pad to the east room of the cistern and back.</li>
+<li>The Beam app offers the gully only after somebody has walked there, and never the
+  cistern.</li>
+<li>Your trail sign, pump and crate are where the page says, and the sentry walks the
+  longer loop.</li>
+<li>You can say when to use <code>Mark:</code> and when to use <code>At:</code>.</li>
+</ul>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>Lecture 10 puts a door in the gap in the pump house wall, and gives the crew things to
+pick up, read and use.</p>
+<h2 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
+<p>Nothing here is needed for Lecture 10.</p>
+<ul>
+<li>"Ground tile maps" in the library documentation: "Placing things on the ground", and
+  "Big things cover more than one cell".</li>
+<li>The picture names. Each art pack lists its own, in <code>__lib__\media</code>, in the pack's
+  <code>tileart</code> folder, in a file named <code>manifest.json</code>. Search it for <code>prop:</code> and <code>fig:</code>.</li>
+</ul>
+<hr />
+<p><a href="../../downloads/c3-09-tile-map-editor-part-2.zip">Download this lecture's finished files</a> (a zip of its <code>example</code> folder).</p>
+<p><a href="https://github.com/artemis-sbs/author-courses/issues/new?template=lecture-feedback.md&amp;title=c3-09-tile-map-editor-part-2%3A+">Report a problem with this lecture</a> | <a href="https://github.com/artemis-sbs/author-courses/blob/main/c3-09-tile-map-editor-part-2/lesson.md">This page's source</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../08-tile-map-editor-part-1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 8. The Tile Map Editor, part 1">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                8. The Tile Map Editor, part 1
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../10-props/" class="md-footer__link md-footer__link--next" aria-label="Next: 10. Props">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                10. Props
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.footer", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

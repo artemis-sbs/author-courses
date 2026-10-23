@@ -1,0 +1,4128 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Write missions for Artemis Cosmos. A course for storytellers, not programmers.">
+      
+      
+      
+        <link rel="canonical" href="https://artemis-sbs.github.io/author-courses/class-2/09-siege-boss-fields/">
+      
+      
+        <link rel="prev" href="../08-siege-boss/">
+      
+      
+        <link rel="next" href="../10-siege-boss-quests/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>9. A Siege boss, part 2 - Cosmos Author Courses</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-2-lecture-9-a-siege-boss-part-2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cosmos Author Courses" class="md-header__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cosmos Author Courses
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9. A Siege boss, part 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Light"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Dark"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cosmos Author Courses" class="md-nav__button md-logo" aria-label="Cosmos Author Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cosmos Author Courses
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/artemis-sbs/author-courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    artemis-sbs/author-courses
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reviewers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For reviewers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 1 - The Writer's Desk and Your First Quest
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/01-what-you-are-going-to-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What you are going to build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/02-files-folders-command-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Files, folders and the command prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/03-editor-and-first-run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Your editor and your first run
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/04-markdown-in-twenty-minutes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Markdown in twenty minutes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/05-the-shape-of-a-record/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. The shape of a record
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/06-lint-is-your-editor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Lint is your editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/07-roles-and-signals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Roles and signals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/08-first-quest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Your first quest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/09-chains-and-trees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Chains and trees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/10-things-quests-point-at/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Things quests point at
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/11-just-enough-mast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Just enough MAST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-1/12-ship-a-quest-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Capstone: ship a quest mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 2 - People, Dialogue and Siege Bosses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 2 - People, Dialogue and Siege Bosses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-sides-and-factions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Sides and factions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-characters-and-faces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Characters and faces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-dialogue-part-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Dialogue, part 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-dialogue-part-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Dialogue, part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-hails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Hails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-reputation-a-first-look/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Reputation, a first look
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-the-story-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. The story tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-siege-boss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. A Siege boss, part 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. A Siege boss, part 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. A Siege boss, part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-make-her-arrive-at-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Make her arrive at once
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-trigger-which-kind-of-boss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Trigger: - which kind of boss
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-low-when-she-arrives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Low: - when she arrives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-fleets-how-many-fleets-come-with-her" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Fleets: - how many fleets come with her
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-flies-who-flies-the-fleets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Flies: - who flies the fleets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-difficulty-how-big-each-fleet-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Difficulty: - how big each fleet is
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-named-her-own-ships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Named: - her own ships
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Check it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-play-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Play it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-set-her-real-arrival" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Set her real arrival
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-finished-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The finished file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-siege-boss-quests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. A Siege boss, part 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-a-boss-with-a-voice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Capstone: a boss with a voice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 3 - Boarding Parties
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 3 - Boarding Parties
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/01-what-a-boarding-party-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What a boarding party is
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/02-party-and-place/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. A party and a place
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/03-everyone-gets-a-menu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Everyone gets a menu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/04-crew-and-skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Crew and skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/05-personal-quests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Personal quests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/06-boarding-checkpoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Checkpoint: a short boarding quest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/07-anatomy-of-a-long-away-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Anatomy of a long away mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/08-tile-map-editor-part-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. The Tile Map Editor, part 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/09-tile-map-editor-part-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. The Tile Map Editor, part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/10-props/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Props
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/11-people-and-hostiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. People and hostiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/12-scenes-on-the-ground/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Scenes on the ground
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/13-what-the-crew-sees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. What the crew sees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/14-pacing-an-away-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Pacing an away mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/15-boarding-an-enemy-ship/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. Boarding an enemy ship
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-3/16-a-long-boarding-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Capstone: a long boarding mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 4 - Ancient Ruins and EVA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 4 - Ancient Ruins and EVA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/01-what-a-ruin-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What a ruin is
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/02-a-ruin-is-a-place/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. A ruin is a place
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/03-dressing-a-ruin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Dressing a ruin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/04-places-that-speak/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Places that speak
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/05-what-is-inside/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. What is inside
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/06-clues-side-stories-cutscenes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Clues, side stories and cutscenes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/07-quests-through-a-ruin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Quests through a ruin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/08-eva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. EVA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/09-station-repair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. EVA elsewhere: a repair outside a station
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-4/10-a-ruin-episode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Capstone: a ruin episode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 5 - Open Universe: Building the World
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 5 - Open Universe: Building the World
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/01-what-open-universe-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. What Open Universe is
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/02-your-universe-file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Your universe file
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/03-sides-diplomacy-goods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Sides, diplomacy and goods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/04-reputation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Reputation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/05-the-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. The map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/06-jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Jobs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/07-narrative-and-goals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Narrative and goals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/08-captains-and-rivals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Captains and rivals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/09-organizing-a-big-universe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Organizing a big universe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/10-a-boarding-site-on-the-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. A boarding site on the map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/11-a-ruin-on-the-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. A ruin on the map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/12-battles-part-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Battles, part 1: how dangerous a system is
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/13-battles-part-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Battles, part 2: a battle that waits for the story
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/14-admiral-part-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. The Admiral, part 1: the game from above
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/15-admiral-part-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. The Admiral, part 2: an Admiral alongside a bridge crew
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-5/16-a-playable-universe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Capstone: a playable universe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 6 - Open Universe: Running the Campaign
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Class 6 - Open Universe: Running the Campaign
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/01-from-one-session-to-twenty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. From one session to twenty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/02-what-the-game-remembers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. What the game remembers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/03-designing-a-session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Designing a session
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/04-the-episode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. The episode, your repeatable unit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/05-campaign-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Campaign architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/06-reputation-arcs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Reputation arcs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/07-mixing-the-play-styles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Mixing the play styles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/08-playtesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Playtesting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/09-revising-between-sessions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Revising between sessions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/10-publishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Publishing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../class-6/11-capstone-studio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Capstone studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-have-at-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you will have at the end
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The video
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-make-her-arrive-at-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Make her arrive at once
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-trigger-which-kind-of-boss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Trigger: - which kind of boss
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-low-when-she-arrives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Low: - when she arrives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-fleets-how-many-fleets-come-with-her" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Fleets: - how many fleets come with her
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-flies-who-flies-the-fleets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Flies: - who flies the fleets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-difficulty-how-big-each-fleet-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Difficulty: - how big each fleet is
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-named-her-own-ships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Named: - her own ships
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-check-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Check it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-play-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Play it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-set-her-real-arrival" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Set her real arrival
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-finished-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The finished file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-something-goes-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If something goes wrong
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="class-2-lecture-9-a-siege-boss-part-2">Class 2, Lecture 9 - A Siege boss, part 2<a class="headerlink" href="#class-2-lecture-9-a-siege-boss-part-2" title="Permanent link">&para;</a></h1>
+<h2 id="what-you-will-have-at-the-end">What you will have at the end<a class="headerlink" href="#what-you-will-have-at-the-end" title="Permanent link">&para;</a></h2>
+<p>The same boss, now built on purpose. You decide when she arrives, how many fleets come
+with her, who flies them, how big they are, and which ships carry a name.</p>
+<p><img alt="The Science console after the Corsair Queen arrives, the contact list showing the Morrigan and the Badb among pirate ships" src="../img/c2-09-siege-boss-fields/queen-arrival-science.jpg" />
+<em>Science after she arrives, the list set to scanned pirates: the Morrigan and the Badb among her escorts.</em></p>
+<p>In Lecture 8 your Corsair Queen flew a Kralien dreadnought with Kralien escorts, because
+she was a copy of the Warlord. A corsair should fly pirate ships. Today you fix that, one
+line at a time.</p>
+<p>You will write no code. You change six lines in one file.</p>
+<h2 id="the-video">The video<a class="headerlink" href="#the-video" title="Permanent link">&para;</a></h2>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/-QPPk_3N9pA" title="Class 2, Lecture 9 - A Siege boss, part 2" allowfullscreen></iframe></div>
+
+<p>About 5 minutes. Subtitles are available in the player.</p>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>corsair_queen.amd</code> as Lecture 8 left it, in <code>data\missions\common_data\bosses</code>. A copy
+  is in Lecture 8's <code>example\</code> folder.</li>
+<li><code>sbs lint common_data\bosses</code> says <code>clean</code>.</li>
+<li><code>Low:</code> is back at <code>25%</code>, the way Lecture 8 left it.</li>
+</ul>
+<p>Open the <code>data\missions</code> folder in VS Code, then <code>common_data</code>, <code>bosses</code>,
+<code>corsair_queen.amd</code>. Every change today is in the first fence, between <code>Boss</code> and the
+closing <code>---</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Boss
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Trigger: enemies_low
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Low: 25%
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Flies: 50% Kralien, 50% Torgoth
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Fleets: 2
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Difficulty: +1
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Named: Morrigan kralien_dreadnought
+</code></pre></div>
+<p>The game reads a boss file when the mission starts. After you save a change, start the
+mission again to see it.</p>
+<h2 id="step-1-make-her-arrive-at-once">Step 1 - Make her arrive at once<a class="headerlink" href="#step-1-make-her-arrive-at-once" title="Permanent link">&para;</a></h2>
+<p>You are going to play this boss several times today. Do not fight for ten minutes each
+time. Change one line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Low: 100%
+</code></pre></div>
+<p>With <code>Low: 100%</code> she arrives about four seconds after the game starts, before the crew
+has destroyed anything. This is your test setting. You put the real number back in
+Step 10.</p>
+<h2 id="step-2-trigger-which-kind-of-boss">Step 2 - <code>Trigger:</code> - which kind of boss<a class="headerlink" href="#step-2-trigger-which-kind-of-boss" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Trigger: enemies_low
+</code></pre></div>
+<p>Leave this line as it is. It can say one of two things.</p>
+<table>
+<thead>
+<tr>
+<th>You write</th>
+<th>What the boss is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Trigger: enemies_low</code></td>
+<td>One arrival. She comes when the raiders thin out, with her named ships, her fleets and her objective</td>
+</tr>
+<tr>
+<td><code>Trigger: continuous</code></td>
+<td>No arrival. A new wave of fleets comes again and again, from the start of the game on</td>
+</tr>
+</tbody>
+</table>
+<p>Your boss is the first kind. So are the Warlord, Ragnarok and the Infestation.</p>
+<p>A <code>continuous</code> boss is a different thing, and it reads different lines.</p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th><code>enemies_low</code></th>
+<th><code>continuous</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Low:</code></td>
+<td>When she arrives</td>
+<td>Ignored</td>
+</tr>
+<tr>
+<td><code>Wave:</code></td>
+<td>Ignored</td>
+<td>Seconds between waves. <code>Wave: 40</code> is a wave every 40 seconds. Leave it out and it is 45</td>
+</tr>
+<tr>
+<td><code>Fleets:</code></td>
+<td>Fleets that arrive with her</td>
+<td>Fleets in each wave. Never fewer than one</td>
+</tr>
+<tr>
+<td><code>Flies:</code> and <code>Difficulty:</code></td>
+<td>Used</td>
+<td>Used</td>
+</tr>
+<tr>
+<td><code>Named:</code></td>
+<td>Her named ships</td>
+<td>Ignored. No named ship arrives</td>
+</tr>
+<tr>
+<td>The objective under the boss</td>
+<td>Shown when she arrives</td>
+<td>Never shown</td>
+</tr>
+</tbody>
+</table>
+<p>The exercise at the end has you build one. For the rest of the lesson, stay with
+<code>enemies_low</code>.</p>
+<h2 id="step-3-low-when-she-arrives">Step 3 - <code>Low:</code> - when she arrives<a class="headerlink" href="#step-3-low-when-she-arrives" title="Permanent link">&para;</a></h2>
+<p><code>Low:</code> is a share of the raiders. The game remembers the largest number of raiders it has
+seen. When the number left is that share or less, she arrives.</p>
+<p>A Siege at difficulty 5 opens with 15 to 19 raiders. With 16:</p>
+<table>
+<thead>
+<tr>
+<th>You write</th>
+<th>She arrives when this many are left</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Low: 25%</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td><code>Low: 40%</code></td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>Low: 90%</code></td>
+<td>14</td>
+</tr>
+<tr>
+<td><code>Low: 100%</code></td>
+<td>16. That is all of them, so she arrives at once</td>
+</tr>
+</tbody>
+</table>
+<p>Three things to know.</p>
+<ul>
+<li><strong>Write the percent sign.</strong> The game reads <code>Low: 40</code> as 40% too, but write the sign:
+  every boss file you will read has it.</li>
+<li><strong>She comes when raiders are destroyed, not when time passes.</strong> If nobody destroys a
+  raider, she never arrives.</li>
+<li><strong>The game looks every four seconds.</strong> She arrives up to four seconds after the count
+  is reached, not on the same instant.</li>
+<li><strong>A low number is a long wait.</strong> At <code>Low: 10%</code> the crew must destroy nine raiders in
+  ten before she appears. With sixteen raiders, that is when one is left.</li>
+</ul>
+<p>Leave your line at <code>Low: 100%</code> for now.</p>
+<h2 id="step-4-fleets-how-many-fleets-come-with-her">Step 4 - <code>Fleets:</code> - how many fleets come with her<a class="headerlink" href="#step-4-fleets-how-many-fleets-come-with-her" title="Permanent link">&para;</a></h2>
+<p>Change the line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Fleets: 3
+</code></pre></div>
+<p>Three escort fleets now arrive with her. Each fleet appears at its own place.</p>
+<table>
+<thead>
+<tr>
+<th>You write</th>
+<th>What arrives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Fleets: 0</code>, or no <code>Fleets:</code> line</td>
+<td>Her named ships, alone</td>
+</tr>
+<tr>
+<td><code>Fleets: 1</code></td>
+<td>One fleet</td>
+</tr>
+<tr>
+<td><code>Fleets: 3</code></td>
+<td>Three fleets</td>
+</tr>
+</tbody>
+</table>
+<p>Write a whole number, as a digit. How many ships are in one fleet is not on this line. It
+comes from the next two.</p>
+<h2 id="step-5-flies-who-flies-the-fleets">Step 5 - <code>Flies:</code> - who flies the fleets<a class="headerlink" href="#step-5-flies-who-flies-the-fleets" title="Permanent link">&para;</a></h2>
+<p>Change the line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Flies: 75% Pirate, 25% Kralien
+</code></pre></div>
+<p><code>Flies:</code> names a race. The game has six that can fly an escort fleet:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Kralien   Torgoth   Arvonian   Skaraan   Ximni   Pirate
+</code></pre></div>
+<p>Capital letters do not matter. Spelling does, and so does the plural: it is <code>Pirate</code>, not
+<code>Pirates</code>.</p>
+<p>You can write the line three ways.</p>
+<table>
+<thead>
+<tr>
+<th>You write</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Flies: Pirate</code></td>
+<td>Every fleet is pirate, every game</td>
+</tr>
+<tr>
+<td><code>Flies: 75% Pirate, 25% Kralien</code></td>
+<td>The game rolls once when she arrives. Three games in four, every fleet is pirate. One game in four, every fleet is Kralien</td>
+</tr>
+<tr>
+<td><code>Flies: Pirate, Kralien</code></td>
+<td>The same, with even odds</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>One roll, not one roll per fleet.</strong> <code>75% Pirate, 25% Kralien</code> with three fleets does
+not give you two pirate fleets and a Kralien one. All three are the same race. Write the
+mix as a story: most nights she brings her own corsairs, and now and then she has hired
+Kraliens.</p>
+</blockquote>
+<p>The percentages are weights. They do not have to add up to 100. Put a percent sign on
+every race, and a comma between them.</p>
+<h2 id="step-6-difficulty-how-big-each-fleet-is">Step 6 - <code>Difficulty:</code> - how big each fleet is<a class="headerlink" href="#step-6-difficulty-how-big-each-fleet-is" title="Permanent link">&para;</a></h2>
+<p>Change the line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Difficulty: +2
+</code></pre></div>
+<p>The Siege has a Difficulty setting, from 1 to 11. The crew picks it before the game.
+Your <code>Difficulty:</code> line says how hard the boss's fleets are next to that.</p>
+<table>
+<thead>
+<tr>
+<th>You write</th>
+<th>The fleets are built for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Difficulty: +2</code></td>
+<td>Two levels above the game. In a game at 5, level 7</td>
+</tr>
+<tr>
+<td><code>Difficulty: -1</code></td>
+<td>One level below the game</td>
+</tr>
+<tr>
+<td><code>Difficulty: 7</code></td>
+<td>Level 7, whatever the game is set to</td>
+</tr>
+<tr>
+<td>No <code>Difficulty:</code> line</td>
+<td>The game's own level</td>
+</tr>
+</tbody>
+</table>
+<p>The level cannot go below 1 or above 11. In a game already at 11, <code>+2</code> is still 11.</p>
+<p>The level decides how many ships are in one fleet, and how large they are. A fleet is
+picked from a short list for its race and level, so two fleets at one level can differ.</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Kralien</th>
+<th>Torgoth</th>
+<th>Arvonian</th>
+<th>Pirate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1 or 2 ships</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2 or 3</td>
+<td>1 or 2</td>
+<td>2 or 3</td>
+<td>1 or 2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>3 or 4</td>
+<td>2 or 3</td>
+<td>1 to 3</td>
+<td>1 or 2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>4 to 6</td>
+<td>3</td>
+<td>2 to 4</td>
+<td>1 to 3</td>
+</tr>
+<tr>
+<td>9</td>
+<td>5 or 6</td>
+<td>4 or 5</td>
+<td>3 to 5</td>
+<td>3 or 4</td>
+</tr>
+<tr>
+<td>11</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>A Skaraan fleet is one ship at every level. A Ximni fleet is one ship up to level 9.
+Their ships get larger as the level rises.</p>
+<p>So your boss, in a game at 5, brings three fleets at level 7. On a pirate night that is
+three fleets of one to three ships. On a Kralien night it is three fleets of four to six.
+The Kralien night is the harder one.</p>
+<p><code>Difficulty:</code> changes the fleets only. It does not change a named ship.</p>
+<h2 id="step-7-named-her-own-ships">Step 7 - <code>Named:</code> - her own ships<a class="headerlink" href="#step-7-named-her-own-ships" title="Permanent link">&para;</a></h2>
+<p>Change the line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Named: Morrigan pirate_brigantine, Badb pirate_strongbow
+</code></pre></div>
+<p>Each named ship is two words: its name, then which ship it is. You met the rule in
+Lecture 8: the name is one word. Today you change the second word, and you add a second
+ship after a comma.</p>
+<p>The second word is a ship key. These are the raider ships, smallest first:</p>
+<table>
+<thead>
+<tr>
+<th>Race</th>
+<th>Ship keys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kralien</td>
+<td><code>kralien_cruiser</code>, <code>kralien_battleship</code>, <code>kralien_dreadnought</code></td>
+</tr>
+<tr>
+<td>Torgoth</td>
+<td><code>torgoth_destroyer</code>, <code>torgoth_goliath</code>, <code>torgoth_leviathan</code>, <code>torgoth_behemoth</code></td>
+</tr>
+<tr>
+<td>Arvonian</td>
+<td><code>arvonian_destroyer</code>, <code>arvonian_light_carrier</code>, <code>arvonian_carrier</code></td>
+</tr>
+<tr>
+<td>Skaraan</td>
+<td><code>skaraan_defiler</code>, <code>skaraan_enforcer</code>, <code>skaraan_executor</code></td>
+</tr>
+<tr>
+<td>Pirate</td>
+<td><code>pirate_longbow</code>, <code>pirate_strongbow</code>, <code>pirate_brigantine</code></td>
+</tr>
+<tr>
+<td>Ximni</td>
+<td><code>xim_light_cruiser</code>, <code>xim_battleship</code>, <code>xim_dreadnought</code></td>
+</tr>
+</tbody>
+</table>
+<p>Type a key exactly as it is here: lowercase, with the underscores. A named ship does not
+have to match the fleets. A Kralien dreadnought can lead pirate fleets.</p>
+<table>
+<thead>
+<tr>
+<th>You write</th>
+<th>What arrives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Named: Morrigan pirate_brigantine</code></td>
+<td>One named ship</td>
+</tr>
+<tr>
+<td><code>Named: Morrigan pirate_brigantine, Badb pirate_strongbow</code></td>
+<td>Two named ships</td>
+</tr>
+<tr>
+<td>No <code>Named:</code> line</td>
+<td>Fleets only. The objective still appears</td>
+</tr>
+</tbody>
+</table>
+<p>A named ship is as strong as the ship you chose. It hunts the crew's ships and the
+starbases.</p>
+<p>Your objective is called Sink the Morrigan. With two named ships it still means what it
+meant in Lecture 8: it is done when every raider is gone, the Badb included. Lecture 10
+is about objectives.</p>
+<h2 id="step-8-check-it">Step 8 - Check it<a class="headerlink" href="#step-8-check-it" title="Permanent link">&para;</a></h2>
+<p>Save the file. In a command prompt in <code>data\missions</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sbs lint common_data\bosses
+</code></pre></div>
+<p>You want:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>== common_data\bosses\corsair_queen.amd ==
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  clean
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>1 amd + 0 mast file(s): 0 error(s), 0 warning(s)
+</code></pre></div>
+<p>Lint reads the shape of a boss line. It names these mistakes. The word in the last column
+is at the end of the line lint prints.</p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game would do</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Fleats: 3</code> (the label misspelled)</td>
+<td>Bring her named ships with no fleets</td>
+<td><code>unknown-field</code></td>
+</tr>
+<tr>
+<td><code>Fleets 3</code> (no colon)</td>
+<td>The same</td>
+<td>An error: it expected <code>Label: value</code></td>
+</tr>
+<tr>
+<td><code>Fleets: 3</code> typed below the closing <code>---</code></td>
+<td>The same</td>
+<td><code>field-below-fence</code></td>
+</tr>
+<tr>
+<td><code>Fleets: 3</code> typed in the objective's fence</td>
+<td>The same</td>
+<td><code>unknown-field</code>. It says <code>Fleets</code> is not a quest field</td>
+</tr>
+<tr>
+<td><code>Named: Morrigan</code> (no ship key)</td>
+<td>Bring the fleets and the objective, and no named ship</td>
+<td><code>hull-name-shape</code></td>
+</tr>
+<tr>
+<td><code>Named: Morrigan, pirate_brigantine</code> (a comma between the two words)</td>
+<td>The same</td>
+<td><code>hull-name-shape</code>, twice</td>
+</tr>
+<tr>
+<td><code>Named: Morrigan pirate_brigantine Badb pirate_strongbow</code> (no comma between the ships)</td>
+<td>Bring the Morrigan and not the Badb</td>
+<td><code>hull-name-shape</code>. The line it suggests is wrong. Add the comma</td>
+</tr>
+</tbody>
+</table>
+<p>Lint also knows the two triggers:</p>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What the game would do</th>
+<th>Lint says</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Trigger: enemy_low</code>, or <code>enemies low</code> with a space</td>
+<td>Leave your boss out of the Boss list</td>
+<td><code>unknown-enum-value</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lint does not check the other values.</strong> It says <code>clean</code> for every row of this next table.
+The game does check most of them: a boss file with a line it cannot read is LEFT OUT of
+the Boss list, and <code>mast.runtime.log</code> names the file and the line. So if your boss is not
+in the list, open that log.</p>
+<table>
+<thead>
+<tr>
+<th>You wrote</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Low: forty percent</code>, or any word</td>
+<td>Your boss is not in the list. The log names the line</td>
+</tr>
+<tr>
+<td><code>Fleets: three</code>, <code>Fleets: 3 fleets</code>, or <code>Fleets: -1</code></td>
+<td>The same</td>
+</tr>
+<tr>
+<td><code>Wave: fast</code> on a <code>continuous</code> boss</td>
+<td>The same</td>
+</tr>
+<tr>
+<td><code>Difficulty: hard</code>, <code>+two</code>, <code>7.5</code>, or <code>0</code></td>
+<td>The same. A level is 1 to 11, or a step such as <code>+2</code></td>
+</tr>
+<tr>
+<td><code>Low: 40</code> (no percent sign)</td>
+<td>40%, the same as <code>Low: 40%</code></td>
+</tr>
+<tr>
+<td>Two <code>Low:</code> lines</td>
+<td>The second one is used</td>
+</tr>
+<tr>
+<td><code>Flies: 75% Pirates, 25% Kraliens</code> (plurals), or any race that is not one of the six</td>
+<td>Her named ships arrive with no fleets. The log says there is no fleet table for that race, and lists the six</td>
+</tr>
+<tr>
+<td><code>Flies: 75 Pirate, 25 Kralien</code> (no percent signs), or <code>75% Pirate 25% Kralien</code> (no comma)</td>
+<td>The same</td>
+</tr>
+<tr>
+<td><code>Flies: 75% Pirate, Kralien</code> (a percent on one race only)</td>
+<td>Every fleet is pirate, every game. Kralien is dropped, and nothing says so</td>
+</tr>
+<tr>
+<td><code>Named: pirate_brigantine Morrigan</code> (the ship key first)</td>
+<td>A ship named <code>pirate_brigantine</code> arrives, on a ship key the game does not have. Do not share a boss like this</td>
+</tr>
+<tr>
+<td><code>Named: Morrigan pirate_brigantin</code> (a key misspelled), or <code>Pirate_Brigantine</code> (capitals)</td>
+<td>A ship named Morrigan arrives, on a ship key the game does not have. The game does not stop. Do not share a boss like this</td>
+</tr>
+</tbody>
+</table>
+<p><code>mast.runtime.log</code> is in the <code>LegendaryMissions</code> folder. It is empty after a clean game.</p>
+<h2 id="step-9-play-it">Step 9 - Play it<a class="headerlink" href="#step-9-play-it" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Start the game with <code>sbs run server,helm,science -m LegendaryMissions</code>: as in
+   Lecture 8, but with Science, where you count. Stay on <strong>Siege</strong>.</li>
+<li>In the <strong>Options</strong> panel, set <strong>Difficulty</strong> to 5 and choose Corsair Queen on the
+   <strong>Boss</strong> line.</li>
+<li>Press <strong>Start Mission</strong>.</li>
+</ol>
+<p>With <code>Low: 100%</code> she arrives about four seconds in. On Science, count what came. The
+contact list names a ship only once it is scanned; until then it reads <code>unknown</code>. So press
+the <code>raider</code> chip, pick each row in turn and press <strong>Queue Scan</strong>. Then turn <code>raider</code> off
+and press the chip for her fleets' race, <code>pirate-o</code> or <code>kralien-o</code>: it lists the scanned
+ships of that race. You should count:</p>
+<ul>
+<li>two named ships, <strong>Morrigan</strong> and <strong>Badb</strong>,</li>
+<li>three new fleets, all of one race,</li>
+<li>pirate fleets of one to three ships each, or Kralien fleets of four to six,</li>
+<li>the objective <strong>Sink the Morrigan</strong> in the Quest Log.</li>
+</ul>
+<p>Start the mission again and look a second time. Over many games, about three arrivals in
+four are pirate.</p>
+<p>Then change one number and play again. Try <code>Fleets: 1</code>. Try <code>Difficulty: 11</code>: every fleet
+is six ships. Put your own numbers back when you have seen it.</p>
+<h2 id="step-10-set-her-real-arrival">Step 10 - Set her real arrival<a class="headerlink" href="#step-10-set-her-real-arrival" title="Permanent link">&para;</a></h2>
+<p>Testing is over. Change <code>Low:</code> to the number you want the crew to play:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Low: 40%
+</code></pre></div>
+<p>Four raiders in ten are still flying when she comes. The crew is winning, but the siege
+is not yet over.</p>
+<p>Then bring the note at the top of the file up to date. It is for you, a year from now:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>// The Corsair Queen - my Siege boss.
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>// She arrives when 4 raiders in 10 are left: two named ships and three escort fleets,
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>// two levels above the game's difficulty. Three games in four the fleets are her own
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>// pirates. One game in four she has hired Kraliens.
+</code></pre></div>
+<p>Save, and run <code>sbs lint common_data\bosses</code> once more.</p>
+<h2 id="the-finished-file">The finished file<a class="headerlink" href="#the-finished-file" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>// The Corsair Queen - my Siege boss.
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>// She arrives when 4 raiders in 10 are left: two named ships and three escort fleets,
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>// two levels above the game's difficulty. Three games in four the fleets are her own
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>// pirates. One game in four she has hired Kraliens.
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a># [Corsair Queen](corsair_queen)
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>---
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>Boss
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>Trigger: enemies_low
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>Low: 40%
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>Flies: 75% Pirate, 25% Kralien
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>Fleets: 3
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>Difficulty: +2
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>Named: Morrigan pirate_brigantine, Badb pirate_strongbow
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>---
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>The Corsair Queen watched the siege falter from the dark. Now she brings her own ships to finish it.
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>## [Sink the Morrigan](sink_morrigan)
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>---
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>Quest
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>Scope: shared
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>State: active
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>Parent: siege_mission
+<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a>Required: true
+<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a>Done when: signal siege_won
+<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a>Reward: 600 credits
+<a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a>---
+<a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a>The Queen's flagship Morrigan leads the last assault. Destroy her and every raider with her.
+</code></pre></div>
+<p>A line you leave out has a meaning too:</p>
+<table>
+<thead>
+<tr>
+<th>Line left out</th>
+<th>The game uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Trigger:</code></td>
+<td><code>enemies_low</code></td>
+</tr>
+<tr>
+<td><code>Low:</code></td>
+<td><code>25%</code></td>
+</tr>
+<tr>
+<td><code>Flies:</code></td>
+<td>Kralien</td>
+</tr>
+<tr>
+<td><code>Fleets:</code></td>
+<td>No fleets</td>
+</tr>
+<tr>
+<td><code>Difficulty:</code></td>
+<td>The game's own level</td>
+</tr>
+<tr>
+<td><code>Named:</code></td>
+<td>No named ship</td>
+</tr>
+<tr>
+<td><code>Wave:</code></td>
+<td>45 seconds</td>
+</tr>
+</tbody>
+</table>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="headerlink" href="#if-something-goes-wrong" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>Likely cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>She arrives the moment the game starts</td>
+<td><code>Low:</code> is still <code>100%</code> from testing</td>
+</tr>
+<tr>
+<td>She never arrives</td>
+<td>She is not chosen in the Boss list, or <code>Low:</code> is small and the crew has not destroyed enough raiders</td>
+</tr>
+<tr>
+<td>The named ships arrive with no fleets</td>
+<td>The race on <code>Flies:</code> is misspelled, plural, or missing its percent sign or comma. Or <code>Fleets:</code> is misspelled, missing, or outside the fence</td>
+</tr>
+<tr>
+<td>The fleets arrive with no named ship</td>
+<td><code>Named:</code> has one word, or a comma between the name and the ship key</td>
+</tr>
+<tr>
+<td>One named ship arrives and the second does not</td>
+<td>The comma between the two ships is missing</td>
+</tr>
+<tr>
+<td>Your boss is not in the Boss list</td>
+<td>One of her lines cannot be read: <code>Trigger:</code>, <code>Low:</code>, <code>Fleets:</code>, <code>Wave:</code> or <code>Difficulty:</code>. <code>mast.runtime.log</code> names the file and the line</td>
+</tr>
+<tr>
+<td>Every arrival is the same race</td>
+<td>That is the rule: one roll for all the fleets. If it is the same race every game, one race on <code>Flies:</code> has no percent sign</td>
+</tr>
+<tr>
+<td>A change you saved did nothing</td>
+<td>The mission was already running. Boss files are read when the mission starts</td>
+</tr>
+<tr>
+<td>Lint warns about every line of the first fence</td>
+<td>Your copy of the game or of <code>sbs</code> is older than this course. Let the store update the game to 1.4.0, and type <code>sbs update</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p><strong>On your own boss.</strong> In Lecture 8 you made a second boss from your own setting.</p>
+<ol>
+<li>Give it a <code>Flies:</code> line that fits its story: one race, or a mix written as odds.</li>
+<li>Choose its named ship from the table in Step 7. Add a second named ship.</li>
+<li>Decide when it arrives. A boss at <code>Low: 60%</code> interrupts a fight. A boss at <code>Low: 15%</code>
+   is a last stand.</li>
+<li>Set <code>Fleets:</code> and <code>Difficulty:</code>. Use the table in Step 6 to work out how many ships
+   that is at game difficulty 5. Write the number down, then play and count.</li>
+<li>Break it on purpose: make the race plural. Run lint: it says <code>clean</code>. Play: the named
+   ships arrive alone. Fix it.</li>
+</ol>
+<p><strong>A wave boss.</strong> Copy <code>corsair_queen.amd</code> to a new file in the same folder, such as
+<code>corsair_tide.amd</code>. Give it a new name and key in the first heading. Then:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Trigger: continuous
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>Wave: 20
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>Flies: Skaraan
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>Fleets: 1
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>Difficulty: 9
+</code></pre></div>
+<p>Delete its <code>Low:</code> and <code>Named:</code> lines, and its objective. A <code>continuous</code> boss uses none
+of them. Before you start the mission, type <code>1</code> on the <strong>Time Limit</strong> line of the
+<strong>Options</strong> panel.
+Then play it: one Skaraan ship arrives every 20 seconds. When the minute runs out the
+waves stop and the crew wins.</p>
+<h2 id="checkpoint">Checkpoint<a class="headerlink" href="#checkpoint" title="Permanent link">&para;</a></h2>
+<p>You are done when all five are true:</p>
+<ul>
+<li><code>sbs lint common_data\bosses</code> shows your file as <code>clean</code>.</li>
+<li>You can say what each of the six lines does without looking it up.</li>
+<li>With <code>Low: 100%</code>, your boss arrives a few seconds into the game.</li>
+<li>She brings the number of fleets on your <code>Fleets:</code> line, all of one race from your
+  <code>Flies:</code> line.</li>
+<li>Every ship on your <code>Named:</code> line arrives under its name.</li>
+</ul>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>Lecture 10 gives the boss more than "destroy everything": objectives of its own, and one
+card of MAST for a boss that does something no line can say.</p>
+<h2 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
+<ul>
+<li>"Writing a Siege boss" in the LegendaryMissions documentation: the reference table for
+  the boss fields. It does not yet say three things this page does: the mix on <code>Flies:</code>
+  is rolled once for all the fleets, a <code>continuous</code> boss ignores <code>Low:</code>, <code>Named:</code> and its
+  objectives, and a value the game cannot read leaves the boss out of the Boss list.</li>
+<li>The four shipped bosses in <code>LegendaryMissions\maps\bosses</code>. Read <code>ragnarok.amd</code> for two
+  named ships and <code>continuous.amd</code> for a wave boss.</li>
+<li><code>data\shipData.yaml</code>: every ship in the game. Search it for <code>"key":</code> to find more ship
+  keys. Do not edit it.</li>
+</ul>
+<hr />
+<p><a href="../../downloads/c2-09-siege-boss-fields.zip">Download this lecture's finished files</a> (a zip of its <code>example</code> folder).</p>
+<p><a href="https://github.com/artemis-sbs/author-courses/issues/new?template=lecture-feedback.md&amp;title=c2-09-siege-boss-fields%3A+">Report a problem with this lecture</a> | <a href="https://github.com/artemis-sbs/author-courses/blob/main/c2-09-siege-boss-fields/lesson.md">This page's source</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../08-siege-boss/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 8. A Siege boss, part 1">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                8. A Siege boss, part 1
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../10-siege-boss-quests/" class="md-footer__link md-footer__link--next" aria-label="Next: 10. A Siege boss, part 3">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                10. A Siege boss, part 3
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.footer", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
