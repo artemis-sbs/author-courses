@@ -1,419 +1,419 @@
 1
-00:00:00,000 --> 00:00:04,783
+00:00:00,000 --> 00:00:03,254
 This is the last lecture, and it teaches you nothing new.
 
 2
-00:00:06,583 --> 00:00:10,061
+00:00:05,054 --> 00:00:07,926
 It's a studio, where you build, you play,
 
 3
-00:00:10,511 --> 00:00:13,120
+00:00:08,376 --> 00:00:10,480
 and you write down what happened.
 
 4
-00:00:14,920 --> 00:00:19,267
+00:00:12,280 --> 00:00:15,297
 By the end you'll have act one finished and walked,
 
 5
-00:00:19,717 --> 00:00:23,196
+00:00:15,747 --> 00:00:17,693
 and the other three acts on a page.
 
 6
-00:00:24,396 --> 00:00:26,570
+00:00:18,893 --> 00:00:21,091
 Three sittings, on one save.
 
 7
-00:00:28,370 --> 00:00:32,283
+00:00:22,891 --> 00:00:26,060
 In the first, I play evenings one and two,
 
 8
-00:00:32,733 --> 00:00:35,776
+00:00:26,510 --> 00:00:29,050
 on the file exactly as it stands.
 
 9
-00:00:36,676 --> 00:00:41,024
+00:00:29,950 --> 00:00:32,971
 Then I stop, and I write evenings four and five.
 
 10
-00:00:42,824 --> 00:00:44,998
+00:00:34,771 --> 00:00:36,027
 I do that on purpose,
 
 11
-00:00:45,448 --> 00:00:48,926
+00:00:36,477 --> 00:00:38,851
 because it's how you'll write the other fifteen:
 
 12
-00:00:49,376 --> 00:00:51,550
+00:00:39,301 --> 00:00:41,064
 with a crew already playing.
 
 13
-00:00:53,350 --> 00:00:56,828
+00:00:42,864 --> 00:00:45,271
 Then two more sittings to finish the act.
 
 14
-00:00:58,028 --> 00:01:02,811
+00:00:46,471 --> 00:00:49,839
 Sitting one is a walk, as fast as I can go.
 
 15
-00:01:03,711 --> 00:01:05,450
+00:00:50,739 --> 00:00:52,586
 The levy, a job,
 
 16
-00:01:05,900 --> 00:01:07,639
+00:00:53,036 --> 00:00:54,372
 the Wren and home,
 
 17
-00:01:08,089 --> 00:01:09,828
+00:00:54,822 --> 00:00:56,157
 the Dunlin and home.
 
 18
-00:01:11,628 --> 00:01:13,802
+00:00:57,957 --> 00:00:59,255
 And here's where I stop.
 
 19
-00:01:14,702 --> 00:01:17,746
+00:01:00,155 --> 00:01:02,272
 The open step is three of five.
 
 20
-00:01:18,646 --> 00:01:21,254
+00:01:03,172 --> 00:01:05,021
 Four and five are still stubs,
 
 21
-00:01:21,704 --> 00:01:24,748
+00:01:05,471 --> 00:01:07,220
 and the crew can't see them yet.
 
 22
-00:01:26,548 --> 00:01:28,287
+00:01:09,020 --> 00:01:09,942
 I close the game.
 
 23
-00:01:29,487 --> 00:01:32,965
+00:01:11,142 --> 00:01:13,851
 Now I write, with a game in progress.
 
 24
-00:01:34,765 --> 00:01:39,113
+00:01:15,651 --> 00:01:18,947
 Evening four is one step that goes to the Petrel.
 
 25
-00:01:40,013 --> 00:01:42,187
+00:01:19,847 --> 00:01:21,979
 I change where it leads,
 
 26
-00:01:42,637 --> 00:01:46,550
+00:01:22,429 --> 00:01:25,200
 and I add an objective and a way home.
 
 27
-00:01:48,350 --> 00:01:50,959
+00:01:27,000 --> 00:01:29,808
 Is that safe for the save?
 
 28
-00:01:51,859 --> 00:01:54,033
+00:01:30,708 --> 00:01:32,935
 Yes, and I know why.
 
 29
-00:01:54,483 --> 00:01:57,091
+00:01:33,385 --> 00:01:35,301
 The crew hasn't finished that step,
 
 30
-00:01:57,541 --> 00:02:01,889
+00:01:35,751 --> 00:01:38,177
 so its new line will be read when they do.
 
 31
-00:02:02,789 --> 00:02:07,137
+00:01:39,077 --> 00:01:41,828
 And the new steps are ahead of them, not behind.
 
 32
-00:02:08,337 --> 00:02:12,685
+00:01:43,028 --> 00:01:46,179
 Evening five is a talk evening, in the Gleaners' yard.
 
 33
-00:02:13,585 --> 00:02:15,324
+00:01:47,079 --> 00:01:48,057
 There are two answers,
 
 34
-00:02:15,774 --> 00:02:17,948
+00:01:48,508 --> 00:01:50,939
 and either one finishes it.
 
 35
-00:02:19,748 --> 00:02:22,357
+00:01:52,739 --> 00:01:54,540
 But this time they're held back.
 
 36
-00:02:23,257 --> 00:02:26,300
+00:01:55,440 --> 00:01:57,589
 If learned, the Gleaners broke a boat.
 
 37
-00:02:28,100 --> 00:02:32,448
+00:01:59,389 --> 00:02:02,645
 A crew that hails them cold won't see either answer.
 
 38
-00:02:33,348 --> 00:02:36,826
+00:02:03,545 --> 00:02:05,547
 They have to ask the right question first.
 
 39
-00:02:38,626 --> 00:02:41,235
+00:02:07,347 --> 00:02:08,983
 That's the fact from lecture two,
 
 40
-00:02:41,685 --> 00:02:43,424
+00:02:09,433 --> 00:02:10,392
 doing a real job.
 
 41
-00:02:45,224 --> 00:02:48,267
+00:02:12,192 --> 00:02:14,775
 And the step's second paragraph says so.
 
 42
-00:02:49,167 --> 00:02:52,646
+00:02:15,675 --> 00:02:18,191
 A crew that's stuck reads the Quest Log,
 
 43
-00:02:53,096 --> 00:02:55,704
+00:02:18,641 --> 00:02:20,305
 so that's where the hint goes.
 
 44
-00:02:56,904 --> 00:03:01,252
+00:02:21,505 --> 00:02:24,585
 And one change to something the crew has already seen.
 
 45
-00:03:02,152 --> 00:03:06,500
+00:02:25,485 --> 00:02:28,214
 The step they're on had a placeholder for a title.
 
 46
-00:03:07,400 --> 00:03:09,139
+00:02:29,114 --> 00:02:30,379
 I change the title,
 
 47
-00:03:09,589 --> 00:03:12,198
+00:02:30,829 --> 00:02:32,335
 and I leave the key alone.
 
 48
-00:03:13,998 --> 00:03:17,911
+00:02:34,135 --> 00:02:36,722
 One more step, for act two to stand on.
 
 49
-00:03:18,811 --> 00:03:21,854
+00:02:37,622 --> 00:02:40,234
 It stays open when the act ends,
 
 50
-00:03:22,304 --> 00:03:24,913
+00:02:40,684 --> 00:02:42,422
 and act two will finish it.
 
 51
-00:03:26,713 --> 00:03:29,322
+00:02:44,222 --> 00:02:45,992
 It could be open for weeks,
 
 52
-00:03:29,772 --> 00:03:31,946
+00:02:46,442 --> 00:02:47,651
 so it gets a page.
 
 53
-00:03:32,846 --> 00:03:37,628
+00:02:48,551 --> 00:02:51,835
 A paragraph, and a short list of what's still out there.
 
 54
-00:03:39,428 --> 00:03:42,037
+00:02:53,635 --> 00:02:55,500
 I save, and I run lint.
 
 55
-00:03:42,937 --> 00:03:45,980
+00:02:56,400 --> 00:02:58,592
 One warning, and for once it's true.
 
 56
-00:03:46,430 --> 00:03:48,604
+00:02:59,042 --> 00:03:00,935
 Nothing sends that signal yet.
 
 57
-00:03:50,404 --> 00:03:53,883
+00:03:02,735 --> 00:03:05,246
 If it said a step is never revealed,
 
 58
-00:03:54,333 --> 00:03:57,376
+00:03:05,696 --> 00:03:08,294
 I'd stop right here and fix it.
 
 59
-00:03:58,576 --> 00:04:02,054
+00:03:09,494 --> 00:03:12,048
 Sitting two, and I don't delete the save.
 
 60
-00:04:03,854 --> 00:04:06,898
+00:03:13,848 --> 00:03:16,130
 The open step has its new name.
 
 61
-00:04:07,798 --> 00:04:10,841
+00:03:17,030 --> 00:03:19,435
 My words reached a game in progress.
 
 62
-00:04:12,641 --> 00:04:16,120
+00:03:21,235 --> 00:03:24,503
 Evening three is the assay office, and home.
 
 63
-00:04:17,020 --> 00:04:18,759
+00:03:25,403 --> 00:03:26,777
 Then comes evening four.
 
 64
-00:04:19,659 --> 00:04:21,833
+00:03:27,677 --> 00:03:29,529
 I arrive at the Petrel,
 
 65
-00:04:22,283 --> 00:04:26,196
+00:03:29,979 --> 00:03:32,368
 and there's the step I wrote an hour ago.
 
 66
-00:04:27,096 --> 00:04:30,139
+00:03:33,268 --> 00:03:35,228
 I scan her, and I go home.
 
 67
-00:04:31,939 --> 00:04:34,548
+00:03:37,028 --> 00:03:38,839
 Now five of five is waiting.
 
 68
-00:04:35,448 --> 00:04:37,622
+00:03:39,739 --> 00:03:41,072
 I close the game again.
 
 69
-00:04:38,822 --> 00:04:40,561
+00:03:42,272 --> 00:03:43,465
 And the last sitting.
 
 70
-00:04:42,361 --> 00:04:45,404
+00:03:45,265 --> 00:03:47,112
 At the yard, I hail the Gleaners.
 
 71
-00:04:46,304 --> 00:04:48,043
+00:03:48,012 --> 00:03:49,386
 There are four answers,
 
 72
-00:04:48,493 --> 00:04:51,102
+00:03:49,836 --> 00:03:51,285
 and neither of my new ones.
 
 73
-00:04:52,902 --> 00:04:55,946
+00:03:53,085 --> 00:03:55,153
 I ask what became of the boats,
 
 74
-00:04:56,396 --> 00:04:58,135
+00:03:55,603 --> 00:03:56,708
 and I hail again.
 
 75
-00:04:59,035 --> 00:05:00,774
+00:03:57,608 --> 00:03:58,571
 Now there are six.
 
 76
-00:05:02,574 --> 00:05:04,313
+00:04:00,371 --> 00:04:01,312
 I buy the log.
 
 77
-00:05:04,763 --> 00:05:06,502
+00:04:01,762 --> 00:04:02,807
 The step is done,
 
 78
-00:05:06,952 --> 00:05:09,126
+00:04:03,257 --> 00:04:04,896
 and the act's ending appears.
 
 79
-00:05:10,926 --> 00:05:12,665
+00:04:06,696 --> 00:04:08,538
 Home, and it pays.
 
 80
-00:05:13,565 --> 00:05:17,043
+00:04:09,438 --> 00:04:11,540
 Every line of the long count is done,
 
 81
-00:05:17,493 --> 00:05:20,972
+00:04:11,990 --> 00:04:13,740
 but the one that's waiting for act two.
 
 82
-00:05:22,172 --> 00:05:23,911
+00:04:14,940 --> 00:04:15,895
 Now for the page.
 
 83
-00:05:24,811 --> 00:05:29,159
+00:04:16,795 --> 00:04:20,322
 Act one's table says in full, all the way down.
 
 84
-00:05:30,959 --> 00:05:33,133
+00:04:22,122 --> 00:04:23,584
 I write what I played:
 
 85
-00:05:33,583 --> 00:05:38,365
+00:04:24,034 --> 00:04:27,620
 three sittings, with the credits and the open step each time.
 
 86
-00:05:40,165 --> 00:05:42,774
+00:04:29,420 --> 00:04:31,050
 And then the other three acts.
 
 87
-00:05:43,674 --> 00:05:46,717
+00:04:31,950 --> 00:04:34,525
 One table each, one row an evening.
 
 88
-00:05:47,167 --> 00:05:51,515
+00:04:34,975 --> 00:04:38,643
 A title, a place, a style, and how it ends.
 
 89
-00:05:53,315 --> 00:05:55,924
+00:04:40,443 --> 00:04:42,036
 I don't write a single record.
 
 90
-00:05:56,824 --> 00:05:59,867
+00:04:42,936 --> 00:04:45,500
 There's one win in the whole campaign,
 
 91
-00:06:00,317 --> 00:06:02,491
+00:04:45,950 --> 00:04:47,864
 and it's on evening twenty.
 
 92
-00:06:03,691 --> 00:06:05,865
+00:04:49,064 --> 00:04:51,062
 Mark yourself against the rubric.
 
 93
-00:06:06,765 --> 00:06:10,243
+00:04:51,962 --> 00:04:54,637
 And be honest, the way this page is.
 
 94
-00:06:12,043 --> 00:06:15,522
+00:04:56,437 --> 00:04:58,254
 Nobody has sat a crew down to this.
 
 95
-00:06:16,422 --> 00:06:19,900
+00:04:59,154 --> 00:05:01,596
 A script did the scanning and the fighting.
 
 96
-00:06:20,800 --> 00:06:24,278
+00:05:02,496 --> 00:05:05,121
 Every time on my sheets is a plan.
 
 97
-00:06:26,078 --> 00:06:31,296
+00:05:06,921 --> 00:05:10,129
 The last two points on the rubric are the ones that count.
 
 98
-00:06:32,196 --> 00:06:35,674
+00:05:11,028 --> 00:05:13,425
 A crew that isn't you plays evening one,
 
 99
-00:06:36,124 --> 00:06:38,298
+00:05:13,875 --> 00:05:15,369
 and you watch without helping.
 
 100
-00:06:39,498 --> 00:06:41,237
+00:05:16,569 --> 00:05:17,697
 And that's the course.
 
 101
-00:06:43,037 --> 00:06:48,254
+00:05:19,497 --> 00:05:23,976
 You have a universe, and a campaign with its first act played.
 
 102
-00:06:49,154 --> 00:06:52,198
+00:05:24,876 --> 00:05:26,765
 You have a plan for the rest,
 
 103
-00:06:52,648 --> 00:06:57,430
+00:05:27,215 --> 00:05:29,784
 and the habits to write it while a crew is playing.
 
 104
-00:06:59,230 --> 00:07:02,709
+00:05:31,584 --> 00:05:33,524
 So there's only one thing left to do.
 
 105
-00:07:03,609 --> 00:07:05,783
+00:05:34,424 --> 00:05:36,350
 Go and write evening six.

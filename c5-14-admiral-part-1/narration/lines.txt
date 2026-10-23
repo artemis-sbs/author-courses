@@ -90,7 +90,7 @@ s09_play_it_1	On the start screen I pick the skirmish universe, and a new game.
 s09_play_it_2	There's one world at home, and it's mine.
 s09_play_it_3	I build a headquarters,
 s09_play_it_4	then the extractor, the academy, the shipyard and the lab.
-s09_play_it_5	The ore is climbing.
+s09_play_it_5	One at a time.
 s09_play_it_6	The shipyard offers my officer first,
 s09_play_it_7	by her name and her title.
 s09_play_it_8	And the lab offers my first step,

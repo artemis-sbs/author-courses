@@ -1,379 +1,379 @@
 1
-00:00:00,000 --> 00:00:06,522
+00:00:00,000 --> 00:00:04,490
 Your universe works, and a crew can sit down and play it for an evening.
 
 2
-00:00:07,422 --> 00:00:10,900
+00:00:05,390 --> 00:00:07,398
 This class is about the evening after that,
 
 3
-00:00:11,350 --> 00:00:13,524
+00:00:07,848 --> 00:00:09,372
 and the eighteen after that.
 
 4
-00:00:15,324 --> 00:00:20,976
+00:00:11,172 --> 00:00:15,478
 Today you'll give your crew a question that takes twenty evenings to answer.
 
 5
-00:00:21,876 --> 00:00:24,920
+00:00:16,378 --> 00:00:18,606
 And you'll find out, by measuring it,
 
 6
-00:00:25,370 --> 00:00:30,152
+00:00:19,056 --> 00:00:22,376
 exactly what the game remembers from one week to the next.
 
 7
-00:00:31,352 --> 00:00:37,874
+00:00:23,576 --> 00:00:27,723
 The people who make the game built a campaign on the same machinery you're using.
 
 8
-00:00:38,774 --> 00:00:40,513
+00:00:28,623 --> 00:00:30,088
 It's called Storm's Beacon,
 
 9
-00:00:40,963 --> 00:00:45,311
+00:00:30,538 --> 00:00:33,462
 and they wrote down what they decided as they went.
 
 10
-00:00:47,111 --> 00:00:50,154
+00:00:35,262 --> 00:00:38,100
 First, every episode goes round one loop.
 
 11
-00:00:50,604 --> 00:00:55,387
+00:00:38,550 --> 00:00:42,336
 Someone names a place, the crew goes, finds one thing out,
 
 12
-00:00:55,837 --> 00:00:58,011
+00:00:42,786 --> 00:00:44,952
 gets interrupted, and reports back.
 
 13
-00:00:58,911 --> 00:01:02,389
+00:00:45,852 --> 00:00:49,380
 Second, only three evenings are written by hand.
 
 14
-00:01:02,839 --> 00:01:05,448
+00:00:49,830 --> 00:00:51,473
 The rest come from one pattern.
 
 15
-00:01:06,348 --> 00:01:10,696
+00:00:52,373 --> 00:00:55,295
 Third, they built the pattern before they wrote the episodes.
 
 16
-00:01:12,496 --> 00:01:15,974
+00:00:57,095 --> 00:00:59,038
 And they were honest about the hard part.
 
 17
-00:01:16,874 --> 00:01:18,613
+00:00:59,938 --> 00:01:01,388
 It isn't the machinery.
 
 18
-00:01:19,063 --> 00:01:22,541
+00:01:01,838 --> 00:01:03,716
 It's having enough for the crew to do.
 
 19
-00:01:23,741 --> 00:01:31,133
+00:01:04,916 --> 00:01:09,877
 So let's look at what you have, the way a crew sees it on the first night.
 
 20
-00:01:32,033 --> 00:01:35,946
+00:01:10,777 --> 00:01:13,581
 There are four leads, and all four are open.
 
 21
-00:01:37,746 --> 00:01:39,920
+00:01:15,381 --> 00:01:17,310
 For one evening, that's generous.
 
 22
-00:01:40,370 --> 00:01:45,152
+00:01:17,760 --> 00:01:20,599
 For a campaign, it's the whole map in the first minute.
 
 23
-00:01:46,052 --> 00:01:49,965
+00:01:21,499 --> 00:01:24,709
 Three things change when the same people come back.
 
 24
-00:01:51,765 --> 00:01:55,243
+00:01:26,509 --> 00:01:28,374
 You show them one lead at a time.
 
 25
-00:01:56,143 --> 00:01:59,622
+00:01:29,274 --> 00:01:32,175
 A win belongs to the very last evening.
 
 26
-00:02:00,522 --> 00:02:05,304
+00:01:33,075 --> 00:01:35,898
 And only what the game keeps is still true next week.
 
 27
-00:02:06,504 --> 00:02:10,417
+00:01:37,098 --> 00:01:39,651
 The plan for a campaign isn't for the game,
 
 28
-00:02:10,867 --> 00:02:14,780
+00:01:40,101 --> 00:01:43,109
 and it isn't for the crew. It's for you.
 
 29
-00:02:15,680 --> 00:02:20,463
+00:01:44,009 --> 00:01:47,359
 So it goes in a plain page beside the universe file.
 
 30
-00:02:22,263 --> 00:02:24,002
+00:01:49,159 --> 00:01:50,942
 A premise: one question.
 
 31
-00:02:24,452 --> 00:02:27,496
+00:01:51,392 --> 00:01:54,997
 Five boats and forty-one people are missing.
 
 32
-00:02:28,396 --> 00:02:31,439
+00:01:55,897 --> 00:01:57,956
 A pressure that's true every single week.
 
 33
-00:02:31,889 --> 00:02:34,498
+00:01:58,406 --> 00:02:00,439
 Somebody else is stripping those boats.
 
 34
-00:02:35,398 --> 00:02:38,007
+00:02:01,339 --> 00:02:03,600
 And the loop, in five lines.
 
 35
-00:02:39,807 --> 00:02:41,980
+00:02:05,400 --> 00:02:07,267
 Lint doesn't read this page,
 
 36
-00:02:42,430 --> 00:02:44,604
+00:02:07,717 --> 00:02:09,059
 and neither does the game.
 
 37
-00:02:45,504 --> 00:02:50,722
+00:02:09,959 --> 00:02:13,775
 I tried, with a page made to look exactly like a record.
 
 38
-00:02:51,922 --> 00:02:54,965
+00:02:14,975 --> 00:02:16,931
 Now the part the game does read.
 
 39
-00:02:55,865 --> 00:02:58,909
+00:02:17,831 --> 00:02:20,402
 One landmark, a lifeboat called the Wren.
 
 40
-00:02:59,359 --> 00:03:03,272
+00:02:20,852 --> 00:02:22,839
 And one lead that sends the crew to her.
 
 41
-00:03:05,072 --> 00:03:09,420
+00:02:24,639 --> 00:02:27,590
 You know every line of these from the last class.
 
 42
-00:03:10,320 --> 00:03:12,059
+00:02:28,490 --> 00:02:29,593
 Three habits are new.
 
 43
-00:03:12,959 --> 00:03:15,567
+00:02:30,493 --> 00:02:32,395
 The lead's text is a page,
 
 44
-00:03:16,017 --> 00:03:21,670
+00:02:32,845 --> 00:02:36,748
 so I give it three short paragraphs, with an empty line between them.
 
 45
-00:03:22,570 --> 00:03:26,048
+00:02:37,648 --> 00:02:40,419
 What happened, where to go, and why tonight.
 
 46
-00:03:27,848 --> 00:03:30,022
+00:02:42,219 --> 00:02:44,454
 The landmark stays one line,
 
 47
-00:03:30,472 --> 00:03:34,385
+00:02:44,904 --> 00:02:48,110
 because the arrival card shows only its first line.
 
 48
-00:03:36,185 --> 00:03:39,228
+00:02:49,910 --> 00:02:52,034
 The title starts with the campaign's name,
 
 49
-00:03:39,678 --> 00:03:44,461
+00:02:52,484 --> 00:02:55,707
 because in week six the Quest Log is a long list.
 
 50
-00:03:45,361 --> 00:03:48,839
+00:02:56,607 --> 00:02:59,158
 And the key starts with the evening's number,
 
 51
-00:03:49,289 --> 00:03:52,767
+00:02:59,608 --> 00:03:01,905
 because you're going to write sixty of them.
 
 52
-00:03:53,967 --> 00:03:56,576
+00:03:03,105 --> 00:03:05,151
 I save, and I run lint,
 
 53
-00:03:57,026 --> 00:03:58,765
+00:03:05,601 --> 00:03:07,674
 and it says clean.
 
 54
-00:04:00,565 --> 00:04:05,348
+00:03:09,474 --> 00:03:12,831
 Now look at the count: one universe file, one story file.
 
 55
-00:04:06,248 --> 00:04:08,422
+00:03:13,731 --> 00:03:15,581
 The campaign page isn't counted,
 
 56
-00:04:08,872 --> 00:04:11,480
+00:03:16,031 --> 00:03:18,526
 which is exactly what we want.
 
 57
-00:04:12,680 --> 00:04:17,463
+00:03:19,726 --> 00:03:22,950
 This next part is the measurement the whole class stands on.
 
 58
-00:04:18,363 --> 00:04:20,102
+00:03:23,850 --> 00:03:25,222
 I pay the levy,
 
 59
-00:04:20,552 --> 00:04:22,291
+00:03:25,672 --> 00:03:26,894
 I take a job,
 
 60
-00:04:22,741 --> 00:04:27,959
+00:03:27,344 --> 00:03:30,043
 I follow the lead out to the Wren, and I come home.
 
 61
-00:04:29,759 --> 00:04:32,367
+00:03:31,843 --> 00:03:34,093
 Then I write down six things.
 
 62
-00:04:32,817 --> 00:04:36,296
+00:03:34,544 --> 00:03:37,501
 Where the ship is. The credits. The standing.
 
 63
-00:04:37,196 --> 00:04:38,935
+00:03:38,401 --> 00:03:39,844
 The lead, the job,
 
 64
-00:04:39,385 --> 00:04:41,124
+00:03:40,294 --> 00:03:41,791
 and the charted places.
 
 65
-00:04:42,924 --> 00:04:46,402
+00:03:43,591 --> 00:03:45,599
 Now I close the game. All of it.
 
 66
-00:04:47,302 --> 00:04:50,346
+00:03:46,499 --> 00:03:48,157
 And I type the same line again.
 
 67
-00:04:52,146 --> 00:04:53,885
+00:03:49,957 --> 00:03:51,365
 It's the same system,
 
 68
-00:04:54,335 --> 00:04:57,378
+00:03:51,815 --> 00:03:54,300
 the same credits, and the same standing.
 
 69
-00:04:58,278 --> 00:05:00,452
+00:03:55,200 --> 00:03:56,810
 The lead is still done,
 
 70
-00:05:00,902 --> 00:05:03,076
+00:03:57,260 --> 00:03:58,648
 the job is still mine,
 
 71
-00:05:03,526 --> 00:05:07,004
+00:03:59,098 --> 00:04:01,186
 and the Wren is still on the chart.
 
 72
-00:05:08,204 --> 00:05:10,378
+00:04:02,386 --> 00:04:04,052
 So that's a campaign's memory.
 
 73
-00:05:11,278 --> 00:05:13,017
+00:04:04,953 --> 00:04:05,803
 Where the ship is,
 
 74
-00:05:13,467 --> 00:05:16,511
+00:04:06,253 --> 00:04:08,254
 what the side has in the bank,
 
 75
-00:05:16,961 --> 00:05:20,439
+00:04:08,704 --> 00:04:10,610
 and what every side thinks of this ship.
 
 76
-00:05:22,239 --> 00:05:24,413
+00:04:12,410 --> 00:04:13,605
 Every step of the story,
 
 77
-00:05:24,863 --> 00:05:27,037
+00:04:14,055 --> 00:04:16,437
 done, open, or still hidden.
 
 78
-00:05:27,937 --> 00:05:29,676
+00:04:17,337 --> 00:04:18,450
 The jobs in hand,
 
 79
-00:05:30,126 --> 00:05:32,300
+00:04:18,900 --> 00:04:20,612
 and every place they've charted.
 
 80
-00:05:34,100 --> 00:05:37,143
+00:04:22,412 --> 00:04:24,721
 That's enough to build twenty evenings on.
 
 81
-00:05:38,343 --> 00:05:40,952
+00:04:25,921 --> 00:04:27,577
 And here's what it doesn't keep.
 
 82
-00:05:41,402 --> 00:05:43,141
+00:04:28,027 --> 00:04:29,026
 It's a short list.
 
 83
-00:05:44,941 --> 00:05:48,420
+00:04:30,826 --> 00:04:33,215
 Guards the crew ran away from are back.
 
 84
-00:05:49,320 --> 00:05:54,102
+00:04:34,115 --> 00:04:37,194
 And a universe with a new title is a new game,
 
 85
-00:05:54,552 --> 00:05:56,726
+00:04:37,644 --> 00:04:39,285
 so choose the title once.
 
 86
-00:05:58,526 --> 00:06:02,439
+00:04:41,085 --> 00:04:43,774
 Some things you might expect to lose are kept.
 
 87
-00:06:03,339 --> 00:06:08,991
+00:04:44,674 --> 00:04:47,838
 A clock that was running comes back with the time it had left.
 
 88
-00:06:09,891 --> 00:06:14,239
+00:04:48,738 --> 00:04:51,967
 A ship you rename keeps its standing and its jobs.
 
 89
-00:06:16,039 --> 00:06:20,387
+00:04:53,767 --> 00:04:56,221
 And the game can remember a fact of your story.
 
 90
-00:06:21,287 --> 00:06:23,026
+00:04:57,121 --> 00:04:58,531
 That's the next lecture.
 
 91
-00:06:24,226 --> 00:06:27,704
+00:04:59,731 --> 00:05:01,928
 So you have a premise, a first lead,
 
 92
-00:06:28,154 --> 00:06:30,763
+00:05:02,378 --> 00:05:04,311
 and a table you measured yourself.
 
 93
-00:06:32,563 --> 00:06:35,172
+00:05:06,111 --> 00:05:08,381
 End every evening the same way:
 
 94
-00:06:35,622 --> 00:06:38,230
+00:05:08,831 --> 00:05:10,939
 jump home, then close the game.
 
 95
-00:06:39,130 --> 00:06:43,913
+00:05:11,839 --> 00:05:15,274
 Next time, we build a whole evening round that one lead.

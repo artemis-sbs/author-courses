@@ -32,7 +32,7 @@ s04_read_it_top_to_bottom_6	Then it asks, is this step of the story open right n
 s04_read_it_top_to_bottom_7	If not, it stops.
 s04_read_it_top_to_bottom_8	And if it is,
 s04_read_it_top_to_bottom_9	it finds where the system is, makes one fleet,
-s04_read_it_top_to_bottom_10	and shows the crew a card.
+s04_read_it_top_to_bottom_10	and sends the crew a warning.
 s05_the_seven_words_0	There are seven things you change, and nothing else.
 s05_the_seven_words_1	The two numbers of the system,
 s05_the_seven_words_2	which you copy from the landmark.
@@ -74,8 +74,8 @@ s08_check_and_play_it_2	so use the list on the page.
 s08_check_and_play_it_3	Now let's play the story.
 s08_check_and_play_it_4	The Tern first, and then the ledger.
 s08_check_and_play_it_5	And then the place the Gleaners won't talk about.
-s08_check_and_play_it_6	There are three cards.
-s08_check_and_play_it_7	The place, the guards, and mine.
+s08_check_and_play_it_6	There's the place,
+s08_check_and_play_it_7	and two warnings: the guards, and mine.
 s08_check_and_play_it_8	Now I'll run, and come back.
 s08_check_and_play_it_9	There's still one battle line.
 s09_your_turn_0	Now it's your turn.

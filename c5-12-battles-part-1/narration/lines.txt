@@ -42,7 +42,7 @@ s05_guards_with_a_number_4	Seven is three Torgoth ships, every time.
 s05_guards_with_a_number_5	And I'm adding a small guard to the Tern,
 s05_guards_with_a_number_6	because somebody is picking at that wreck.
 s05_guards_with_a_number_7	There are four things to know about guards.
-s05_guards_with_a_number_8	The crew gets a warning card.
+s05_guards_with_a_number_8	The crew gets a warning, on Comms.
 s05_guards_with_a_number_9	The guards wait by the landmark, not by the crew.
 s05_guards_with_a_number_10	They're raiders, so no ceasefire calls them off.
 s05_guards_with_a_number_11	And once they're destroyed, they stay gone.
@@ -89,7 +89,7 @@ s09_check_and_fly_it_1	But lint doesn't read the settings file at all,
 s09_check_and_fly_it_2	so read the checklist on the page.
 s09_check_and_fly_it_3	Now let's fly it.
 s09_check_and_fly_it_4	First we go to the Tern,
-s09_check_and_fly_it_5	and there's her card, and then the warning.
+s09_check_and_fly_it_5	and there's her card, and the warning on Comms.
 s09_check_and_fly_it_6	And then the Gleaners' home.
 s09_check_and_fly_it_7	This is what close looks like.
 s10_your_turn_0	Now it's your turn.

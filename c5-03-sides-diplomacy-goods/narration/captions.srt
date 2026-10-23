@@ -1,435 +1,435 @@
 1
-00:00:00,000 --> 00:00:05,217
+00:00:00,000 --> 00:00:04,068
 Last time, you made a universe with one named place in it,
 
 2
-00:00:05,667 --> 00:00:08,711
+00:00:04,518 --> 00:00:06,662
 and nobody living there but the crew.
 
 3
-00:00:09,611 --> 00:00:11,350
+00:00:07,562 --> 00:00:09,176
 Today it gets people.
 
 4
-00:00:12,250 --> 00:00:13,989
+00:00:10,076 --> 00:00:11,376
 There are three factions:
 
 5
-00:00:14,439 --> 00:00:17,483
+00:00:11,826 --> 00:00:14,102
 one runs the port you start in,
 
 6
-00:00:17,933 --> 00:00:20,107
+00:00:14,552 --> 00:00:16,415
 one lives three jumps away,
 
 7
-00:00:20,557 --> 00:00:22,296
+00:00:16,865 --> 00:00:18,653
 and one shoots first.
 
 8
-00:00:24,096 --> 00:00:27,139
+00:00:20,453 --> 00:00:23,106
 You'll write all three in one chapter,
 
 9
-00:00:27,589 --> 00:00:30,633
+00:00:23,556 --> 00:00:25,394
 and then you'll go and meet them.
 
 10
-00:00:31,833 --> 00:00:36,180
+00:00:26,594 --> 00:00:29,839
 The template gave me two sides, and I'm deleting both.
 
 11
-00:00:37,080 --> 00:00:41,428
+00:00:30,739 --> 00:00:34,990
 But before they go, look at this line: Disposition, hostile.
 
 12
-00:00:42,328 --> 00:00:45,372
+00:00:35,890 --> 00:00:37,691
 You'd think that side was an enemy,
 
 13
-00:00:45,822 --> 00:00:47,561
+00:00:38,141 --> 00:00:39,435
 and it never was.
 
 14
-00:00:48,461 --> 00:00:51,939
+00:00:40,335 --> 00:00:42,502
 The game knows two words on that line,
 
 15
-00:00:52,389 --> 00:00:54,998
+00:00:42,952 --> 00:00:44,970
 and hostile isn't one of them.
 
 16
-00:00:56,798 --> 00:00:59,407
+00:00:46,770 --> 00:00:48,799
 Lint said clean the whole time.
 
 17
-00:01:00,307 --> 00:01:02,915
+00:00:49,699 --> 00:00:51,110
 So keep that in mind today:
 
 18
-00:01:03,365 --> 00:01:06,409
+00:00:51,560 --> 00:00:53,665
 clean means the record is well made.
 
 19
-00:01:06,859 --> 00:01:12,076
+00:00:54,115 --> 00:00:57,994
 It doesn't mean the words inside it are words the game knows.
 
 20
-00:01:13,276 --> 00:01:16,754
+00:00:59,194 --> 00:01:01,479
 A side is a record with three hashes,
 
 21
-00:01:17,204 --> 00:01:19,378
+00:01:01,929 --> 00:01:03,511
 a name, and a key.
 
 22
-00:01:20,278 --> 00:01:25,061
+00:01:04,411 --> 00:01:08,170
 The key matters, because everything else names this side by it.
 
 23
-00:01:26,861 --> 00:01:30,339
+00:01:09,970 --> 00:01:12,835
 Then come its facts, starting with a color.
 
 24
-00:01:31,239 --> 00:01:36,891
+00:01:13,735 --> 00:01:17,929
 There's a character, in one word, which decides how they greet the crew.
 
 25
-00:01:37,791 --> 00:01:40,835
+00:01:18,829 --> 00:01:21,343
 A disposition, which I'll come back to.
 
 26
-00:01:41,735 --> 00:01:46,083
+00:01:22,243 --> 00:01:25,798
 A home, which is a system, written as two numbers.
 
 27
-00:01:46,983 --> 00:01:48,722
+00:01:26,698 --> 00:01:27,831
 The jobs they offer,
 
 28
-00:01:49,172 --> 00:01:51,346
+00:01:28,281 --> 00:01:29,736
 and the ships they fly.
 
 29
-00:01:53,146 --> 00:01:56,189
+00:01:31,536 --> 00:01:34,229
 Now look at the home: zero, zero.
 
 30
-00:01:56,639 --> 00:01:58,813
+00:01:34,679 --> 00:01:36,704
 That's where the crew starts.
 
 31
-00:01:59,713 --> 00:02:03,626
+00:01:37,604 --> 00:01:40,689
 So the station the game put there last time
 
 32
-00:02:04,076 --> 00:02:07,989
+00:01:41,139 --> 00:01:44,505
 now belongs to these people, and carries their name.
 
 33
-00:02:09,189 --> 00:02:11,363
+00:01:45,705 --> 00:01:46,781
 Here are the other two.
 
 34
-00:02:12,263 --> 00:02:15,741
+00:01:47,681 --> 00:01:50,386
 The second colony is neutral, like the first,
 
 35
-00:02:16,191 --> 00:02:20,539
+00:01:50,836 --> 00:01:53,820
 and its home is three systems over and one up.
 
 36
-00:02:22,339 --> 00:02:25,817
+00:01:55,620 --> 00:01:58,534
 The third one says foe, in small letters.
 
 37
-00:02:26,717 --> 00:02:29,761
+00:01:59,434 --> 00:02:01,293
 That's the only other word there is.
 
 38
-00:02:30,661 --> 00:02:34,574
+00:02:02,193 --> 00:02:06,000
 Neutral means they talk, and their station offers work.
 
 39
-00:02:35,474 --> 00:02:40,691
+00:02:06,900 --> 00:02:10,212
 Foe means they're at war with the crew from the first minute.
 
 40
-00:02:42,491 --> 00:02:46,839
+00:02:12,012 --> 00:02:14,383
 And a foe gets things from the game for free.
 
 41
-00:02:47,739 --> 00:02:50,348
+00:02:15,283 --> 00:02:17,254
 There's a fleet guarding its home.
 
 42
-00:02:51,248 --> 00:02:54,726
+00:02:18,154 --> 00:02:21,052
 And every system the game fills with enemies,
 
 43
-00:02:55,176 --> 00:02:56,915
+00:02:21,502 --> 00:02:22,772
 anywhere in the universe,
 
 44
-00:02:57,365 --> 00:02:59,539
+00:02:23,222 --> 00:02:24,746
 is filled with their ships.
 
 45
-00:03:00,439 --> 00:03:03,917
+00:02:25,646 --> 00:02:28,688
 So one word gives your villains a navy.
 
 46
-00:03:05,117 --> 00:03:07,726
+00:02:29,888 --> 00:02:32,386
 My sides live in three systems,
 
 47
-00:03:08,176 --> 00:03:12,959
+00:02:32,836 --> 00:02:35,522
 and the crew can only jump where a job sends them.
 
 48
-00:03:13,859 --> 00:03:19,076
+00:02:36,422 --> 00:02:40,210
 So I give them two jobs whose whole point is the trip.
 
 49
-00:03:20,876 --> 00:03:25,659
+00:02:42,010 --> 00:02:45,551
 These are quests, like the ones you wrote in Class 1,
 
 50
-00:03:26,109 --> 00:03:29,587
+00:02:46,001 --> 00:02:48,951
 and they live in a chapter called Narrative.
 
 51
-00:03:30,487 --> 00:03:35,270
+00:02:49,852 --> 00:02:53,990
 The new part is this: Done when, reach, and two numbers.
 
 52
-00:03:36,170 --> 00:03:38,778
+00:02:54,890 --> 00:02:57,275
 That means, arrive in that system.
 
 53
-00:03:39,678 --> 00:03:43,157
+00:02:58,175 --> 00:03:00,802
 And because the quest has somewhere to go,
 
 54
-00:03:43,607 --> 00:03:46,650
+00:03:01,252 --> 00:03:03,418
 Helm gets an Engage button on it.
 
 55
-00:03:47,850 --> 00:03:51,763
+00:03:04,618 --> 00:03:07,045
 Last comes the economy, and it's a small one.
 
 56
-00:03:52,663 --> 00:03:54,837
+00:03:07,945 --> 00:03:10,118
 Crates drift in most systems,
 
 57
-00:03:55,287 --> 00:03:58,765
+00:03:10,568 --> 00:03:13,098
 and the game knows five kinds of cargo.
 
 58
-00:03:59,665 --> 00:04:04,013
+00:03:13,998 --> 00:03:16,642
 This chapter says which of the five my world has,
 
 59
-00:04:04,463 --> 00:04:07,072
+00:03:17,092 --> 00:03:18,840
 and how common each one is.
 
 60
-00:04:08,872 --> 00:04:12,350
+00:03:20,640 --> 00:03:22,553
 The weights are just compared with each other.
 
 61
-00:04:13,250 --> 00:04:17,598
+00:03:23,453 --> 00:03:26,789
 So with these numbers, about half the crates are ore,
 
 62
-00:04:18,048 --> 00:04:19,787
+00:03:27,239 --> 00:03:29,116
 a third are food,
 
 63
-00:04:20,237 --> 00:04:21,976
+00:03:29,566 --> 00:03:31,304
 and contraband is rare.
 
 64
-00:04:22,876 --> 00:04:25,050
+00:03:32,204 --> 00:03:34,030
 I left gas out altogether,
 
 65
-00:04:25,500 --> 00:04:27,674
+00:03:34,480 --> 00:03:36,521
 so there isn't any, anywhere.
 
 66
-00:04:29,474 --> 00:04:33,387
+00:03:38,321 --> 00:03:40,470
 That's the whole of what a writer decides here.
 
 67
-00:04:34,287 --> 00:04:38,200
+00:03:41,370 --> 00:03:43,989
 The prices in a market belong to the game.
 
 68
-00:04:39,400 --> 00:04:43,748
+00:03:45,189 --> 00:03:48,406
 Lint says clean, and today that's only half the check.
 
 69
-00:04:44,648 --> 00:04:48,126
+00:03:49,306 --> 00:03:51,110
 So I read down this list by eye.
 
 70
-00:04:49,926 --> 00:04:52,100
+00:03:52,910 --> 00:03:55,337
 Disposition is neutral or foe.
 
 71
-00:04:53,000 --> 00:04:57,783
+00:03:56,237 --> 00:04:00,010
 Every home is two numbers, and no two sides share one.
 
 72
-00:04:58,683 --> 00:05:03,465
+00:04:00,910 --> 00:04:04,168
 Every job after Offers is a key in the Jobs chapter.
 
 73
-00:05:04,365 --> 00:05:08,278
+00:04:05,068 --> 00:04:07,656
 Every ship after Flies is one of the six.
 
 74
-00:05:09,178 --> 00:05:12,222
+00:04:08,556 --> 00:04:10,382
 Every good is one of the five.
 
 75
-00:05:13,122 --> 00:05:17,035
+00:04:11,282 --> 00:04:14,088
 And the numbers after reach are that side's home.
 
 76
-00:05:18,235 --> 00:05:20,409
+00:04:15,288 --> 00:04:17,916
 Science scans Hollin Compact first,
 
 77
-00:05:20,859 --> 00:05:23,467
+00:04:18,366 --> 00:04:21,524
 because a stranger shows Comms nothing.
 
 78
-00:05:24,367 --> 00:05:26,976
+00:04:22,424 --> 00:04:24,572
 Then on Comms, I select it.
 
 79
-00:05:27,876 --> 00:05:30,485
+00:04:25,472 --> 00:04:27,205
 There's the work I gave them:
 
 80
-00:05:30,935 --> 00:05:33,109
+00:04:27,655 --> 00:04:29,669
 a patrol, and an escort.
 
 81
-00:05:34,009 --> 00:05:36,183
+00:04:30,569 --> 00:04:32,566
 Kestrel Relay doesn't have those,
 
 82
-00:05:36,633 --> 00:05:38,807
+00:04:33,016 --> 00:04:35,377
 because it's the crew's own.
 
 83
-00:05:40,607 --> 00:05:45,824
+00:04:37,177 --> 00:04:40,056
 I take a cargo run, because I'm going to need the money.
 
 84
-00:05:46,724 --> 00:05:51,507
+00:04:40,956 --> 00:04:44,186
 On Helm, there are my two leads in the Quest Log.
 
 85
-00:05:52,407 --> 00:05:55,015
+00:04:45,086 --> 00:04:47,171
 I fly the cargo run first,
 
 86
-00:05:55,465 --> 00:05:58,509
+00:04:47,621 --> 00:04:50,298
 and then I engage The Second Colony.
 
 87
-00:05:59,409 --> 00:06:02,017
+00:04:51,198 --> 00:04:53,655
 And here's the Deepwell's own station,
 
 88
-00:06:02,467 --> 00:06:05,076
+00:04:54,105 --> 00:04:56,215
 offering an escort and nothing else,
 
 89
-00:06:05,526 --> 00:06:07,700
+00:04:56,665 --> 00:04:58,022
 just as I wrote it.
 
 90
-00:06:08,900 --> 00:06:10,639
+00:04:59,222 --> 00:05:00,161
 Now the other lead.
 
 91
-00:06:11,539 --> 00:06:13,713
+00:05:01,061 --> 00:05:02,420
 This is the Gleaners' home,
 
 92
-00:06:14,163 --> 00:06:15,902
+00:05:02,870 --> 00:05:04,000
 and that's their fleet.
 
 93
-00:06:17,702 --> 00:06:20,311
+00:05:05,800 --> 00:05:07,923
 On Comms, I select their station,
 
 94
-00:06:20,761 --> 00:06:23,370
+00:05:08,373 --> 00:05:11,276
 and there's a button: Negotiate Ceasefire.
 
 95
-00:06:24,270 --> 00:06:26,443
+00:05:12,176 --> 00:05:13,833
 It costs six hundred credits.
 
 96
-00:06:27,343 --> 00:06:30,387
+00:05:14,733 --> 00:05:17,250
 A new crew starts with five hundred,
 
 97
-00:06:30,837 --> 00:06:34,750
+00:05:17,700 --> 00:05:20,119
 which is why I flew that cargo run first.
 
 98
-00:06:35,650 --> 00:06:39,128
+00:05:21,019 --> 00:05:22,837
 I press it, and the war is off.
 
 99
-00:06:40,928 --> 00:06:43,102
+00:05:24,637 --> 00:05:26,508
 It's the whole side, everywhere,
 
 100
-00:06:43,552 --> 00:06:46,161
+00:05:26,958 --> 00:05:29,033
 and it's written into the save.
 
 101
-00:06:47,061 --> 00:06:50,539
+00:05:29,933 --> 00:05:32,264
 But it's a ceasefire, and not a friendship.
 
 102
-00:06:50,989 --> 00:06:53,598
+00:05:32,714 --> 00:05:34,337
 They still won't give me work.
 
 103
-00:06:54,798 --> 00:06:57,841
+00:05:35,537 --> 00:05:37,421
 Now make the three of them yours:
 
 104
-00:06:58,291 --> 00:07:00,900
+00:05:37,871 --> 00:05:40,470
 new names, new keys, new homes.
 
 105
-00:07:01,800 --> 00:07:03,539
+00:05:41,370 --> 00:05:43,227
 Choose each one's character,
 
 106
-00:07:03,989 --> 00:07:06,598
+00:05:43,677 --> 00:05:45,600
 and read its greeting out loud.
 
 107
-00:07:07,498 --> 00:07:11,846
+00:05:46,500 --> 00:05:49,731
 Then decide what's common in your world, and what's rare.
 
 108
-00:07:13,646 --> 00:07:17,124
+00:05:51,531 --> 00:05:54,497
 Next time, each side gets something it values,
 
 109
-00:07:17,574 --> 00:07:23,226
+00:05:54,947 --> 00:05:58,652
 and what the crew does starts to change what people think of them.

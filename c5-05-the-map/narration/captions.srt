@@ -1,459 +1,459 @@
 1
-00:00:00,000 --> 00:00:03,913
+00:00:00,000 --> 00:00:03,010
 So far, you've written who lives in your universe,
 
 2
-00:00:04,363 --> 00:00:08,711
+00:00:03,460 --> 00:00:06,616
 and the game has decided what every system looks like.
 
 3
-00:00:09,611 --> 00:00:12,654
+00:00:07,516 --> 00:00:09,703
 Today you take some of that back.
 
 4
-00:00:14,454 --> 00:00:19,237
+00:00:11,503 --> 00:00:15,324
 You'll change how the whole galaxy is made, with four numbers.
 
 5
-00:00:20,137 --> 00:00:24,920
+00:00:16,224 --> 00:00:19,519
 You'll give two stretches of it a name and a sky.
 
 6
-00:00:25,820 --> 00:00:30,602
+00:00:20,419 --> 00:00:22,999
 And you'll put three more places on the map by hand.
 
 7
-00:00:31,802 --> 00:00:36,150
+00:00:24,199 --> 00:00:28,314
 First, how the game fills a system you never wrote.
 
 8
-00:00:37,050 --> 00:00:39,659
+00:00:29,214 --> 00:00:30,875
 It rolls once for each one,
 
 9
-00:00:40,109 --> 00:00:43,152
+00:00:31,325 --> 00:00:32,935
 and the roll comes from the seed,
 
 10
-00:00:43,602 --> 00:00:47,515
+00:00:33,385 --> 00:00:35,951
 so it's the same every time for that system.
 
 11
-00:00:49,315 --> 00:00:52,359
+00:00:37,751 --> 00:00:39,950
 About one in seven is a station.
 
 12
-00:00:52,809 --> 00:00:56,287
+00:00:40,400 --> 00:00:44,117
 About one in seven is full of enemies.
 
 13
-00:00:57,187 --> 00:01:00,230
+00:00:45,017 --> 00:00:48,004
 Some are nebula, a few are anomalies,
 
 14
-00:01:00,680 --> 00:01:03,289
+00:00:48,454 --> 00:00:50,189
 and half of them are empty.
 
 15
-00:01:05,089 --> 00:01:09,437
+00:00:51,989 --> 00:00:54,934
 And on top of that, a system might have loot,
 
 16
-00:01:09,887 --> 00:01:13,800
+00:00:55,384 --> 00:00:58,094
 or a dead ship to scan, or a minefield.
 
 17
-00:01:14,700 --> 00:01:19,483
+00:00:58,994 --> 00:01:02,097
 Every one of those chances is a number you can change.
 
 18
-00:01:20,683 --> 00:01:22,857
+00:01:03,297 --> 00:01:05,506
 Those numbers are called dials,
 
 19
-00:01:23,307 --> 00:01:28,959
+00:01:05,956 --> 00:01:09,150
 and they go in the title record, at the top of the file.
 
 20
-00:01:30,759 --> 00:01:34,237
+00:01:10,950 --> 00:01:13,704
 My universe is a frontier that was abandoned.
 
 21
-00:01:35,137 --> 00:01:39,050
+00:01:14,604 --> 00:01:18,359
 So I want few ports, a lot of cloud,
 
 22
-00:01:39,500 --> 00:01:42,109
+00:01:18,809 --> 00:01:20,232
 and a lot of dead ships,
 
 23
-00:01:42,559 --> 00:01:44,298
+00:01:20,682 --> 00:01:22,258
 and that's four lines.
 
 24
-00:01:46,098 --> 00:01:51,750
+00:01:24,058 --> 00:01:28,963
 And here's what they did, counted over the nearest hundred and sixty-nine systems.
 
 25
-00:01:52,650 --> 00:01:55,259
+00:01:29,863 --> 00:01:32,810
 Stations went from twenty-five to fifteen,
 
 26
-00:01:55,709 --> 00:01:58,317
+00:01:33,260 --> 00:01:35,828
 and nebulas from twenty-nine to forty.
 
 27
-00:02:00,117 --> 00:02:04,465
+00:01:37,628 --> 00:01:40,091
 One warning, and it's the big one in this lecture.
 
 28
-00:02:05,365 --> 00:02:07,104
+00:01:40,991 --> 00:01:42,402
 Write the percent sign.
 
 29
-00:02:08,004 --> 00:02:11,917
+00:01:43,302 --> 00:01:46,494
 Leave it off, and twelve means twelve hundred percent,
 
 30
-00:02:12,367 --> 00:02:14,976
+00:01:46,944 --> 00:01:48,602
 and lint won't say a word.
 
 31
-00:02:16,176 --> 00:02:20,524
+00:01:49,802 --> 00:01:52,464
 A dial in the title record is the same everywhere.
 
 32
-00:02:21,424 --> 00:02:26,207
+00:01:53,364 --> 00:01:56,202
 A region is a patch of the map where it's different.
 
 33
-00:02:28,007 --> 00:02:32,789
+00:01:58,002 --> 00:02:01,050
 It has a center, which is a system, and a radius.
 
 34
-00:02:33,689 --> 00:02:38,037
+00:02:01,950 --> 00:02:04,815
 A region is a square, so a radius of two
 
 35
-00:02:38,487 --> 00:02:41,096
+00:02:05,265 --> 00:02:07,303
 is five systems on a side.
 
 36
-00:02:42,896 --> 00:02:48,113
+00:02:09,103 --> 00:02:12,193
 It has a sky, from a list of seven on the page.
 
 37
-00:02:49,013 --> 00:02:52,491
+00:02:13,093 --> 00:02:15,637
 And it can have any of the dials.
 
 38
-00:02:53,391 --> 00:02:58,174
+00:02:16,537 --> 00:02:20,567
 Here I've said, no enemy systems at all, and more stations.
 
 39
-00:02:59,074 --> 00:03:03,422
+00:02:21,467 --> 00:02:25,237
 So this is safe, farmed space around the home port.
 
 40
-00:03:04,622 --> 00:03:07,230
+00:02:26,437 --> 00:02:28,475
 And here's the opposite: the Breakers.
 
 41
-00:03:08,130 --> 00:03:10,739
+00:02:29,375 --> 00:02:31,502
 There's a red sky, different music,
 
 42
-00:03:11,189 --> 00:03:14,667
+00:02:31,952 --> 00:02:35,401
 enemies in most systems, no ports, and mines.
 
 43
-00:03:16,467 --> 00:03:19,076
+00:02:37,201 --> 00:02:38,743
 I drew it on paper first,
 
 44
-00:03:19,526 --> 00:03:23,004
+00:02:39,193 --> 00:02:41,256
 and I'd ask you to do the same.
 
 45
-00:03:23,904 --> 00:03:28,687
+00:02:42,156 --> 00:02:45,761
 Mark each side's home, and draw each region as a square.
 
 46
-00:03:30,487 --> 00:03:32,661
+00:02:47,561 --> 00:02:48,995
 It shows you two things.
 
 47
-00:03:33,561 --> 00:03:36,170
+00:02:49,895 --> 00:02:52,264
 One is whether two regions overlap.
 
 48
-00:03:36,620 --> 00:03:41,402
+00:02:52,714 --> 00:02:56,787
 If they do, a system belongs to the one written first.
 
 49
-00:03:42,302 --> 00:03:48,824
+00:02:57,687 --> 00:03:01,721
 The other is whether a side's home is inside the region you meant for it.
 
 50
-00:03:49,724 --> 00:03:53,637
+00:03:02,621 --> 00:03:05,381
 Nothing moves a home into a region for you.
 
 51
-00:03:54,087 --> 00:03:57,565
+00:03:05,831 --> 00:03:08,347
 You keep those two lines in step yourself.
 
 52
-00:03:58,765 --> 00:04:00,504
+00:03:09,547 --> 00:03:10,814
 Now for the landmarks.
 
 53
-00:04:01,404 --> 00:04:04,013
+00:03:11,714 --> 00:03:13,308
 You wrote one in Lecture 2,
 
 54
-00:04:04,463 --> 00:04:08,811
+00:03:13,758 --> 00:03:17,192
 and here are three more, each for a different reason.
 
 55
-00:04:10,611 --> 00:04:14,524
+00:03:18,992 --> 00:03:21,525
 The first is a station at the miners' home.
 
 56
-00:04:15,424 --> 00:04:18,467
+00:03:22,425 --> 00:03:24,750
 Last time, when the crew arrived there,
 
 57
-00:04:18,917 --> 00:04:22,396
+00:03:25,200 --> 00:03:28,402
 the card just said uncharted, and two numbers.
 
 58
-00:04:23,296 --> 00:04:25,904
+00:03:29,302 --> 00:03:31,388
 A side's home doesn't name itself,
 
 59
-00:04:26,354 --> 00:04:28,093
+00:03:31,838 --> 00:03:33,355
 but a landmark does.
 
 60
-00:04:29,893 --> 00:04:33,372
+00:03:35,155 --> 00:03:38,151
 So now the card will read Assay Office,
 
 61
-00:04:33,822 --> 00:04:38,604
+00:03:38,601 --> 00:03:41,870
 and the place goes on the crew's list of charted locations.
 
 62
-00:04:39,504 --> 00:04:42,113
+00:03:42,770 --> 00:03:45,122
 And because of this line, Side,
 
 63
-00:04:42,563 --> 00:04:46,911
+00:03:45,572 --> 00:03:48,693
 the station belongs to the miners and offers their work.
 
 64
-00:04:48,111 --> 00:04:50,720
+00:03:49,893 --> 00:03:52,008
 The second is a dead ship.
 
 65
-00:04:51,620 --> 00:04:55,967
+00:03:52,908 --> 00:03:56,646
 Prefab, derelict, makes it a wreck for Science to scan.
 
 66
-00:04:56,867 --> 00:05:02,085
+00:03:57,546 --> 00:04:00,568
 The game scatters wrecks of its own, but they have no names.
 
 67
-00:05:02,985 --> 00:05:07,333
+00:04:01,468 --> 00:04:04,379
 This one has a name, a line on the card,
 
 68
-00:05:07,783 --> 00:05:12,130
+00:04:04,829 --> 00:04:07,712
 and a nebula around it, whatever the game rolled there.
 
 69
-00:05:13,930 --> 00:05:16,539
+00:04:09,512 --> 00:04:11,303
 And the third is a fight.
 
 70
-00:05:17,439 --> 00:05:20,483
+00:04:12,203 --> 00:04:14,168
 Guards puts a fleet on the landmark,
 
 71
-00:05:20,933 --> 00:05:23,541
+00:04:14,618 --> 00:04:16,635
 the first time the crew arrives.
 
 72
-00:05:25,341 --> 00:05:27,950
+00:04:18,435 --> 00:04:19,846
 One thing to know about them.
 
 73
-00:05:28,850 --> 00:05:31,024
+00:04:20,746 --> 00:04:22,376
 The guards belong to nobody.
 
 74
-00:05:31,474 --> 00:05:34,083
+00:04:22,826 --> 00:04:25,433
 They're raiders, even in Gleaner country,
 
 75
-00:05:34,533 --> 00:05:38,880
+00:04:25,883 --> 00:04:29,020
 so a ceasefire with the Gleaners won't call them off.
 
 76
-00:05:40,080 --> 00:05:43,559
+00:04:30,220 --> 00:04:32,812
 The crew still needs a reason to go,
 
 77
-00:05:44,009 --> 00:05:49,226
+00:04:33,262 --> 00:04:36,560
 so I add two leads, the way we did in Lecture 3.
 
 78
-00:05:50,126 --> 00:05:52,735
+00:04:37,460 --> 00:04:39,370
 The Assay Office doesn't need one,
 
 79
-00:05:53,185 --> 00:05:56,228
+00:04:39,820 --> 00:04:41,937
 because an old lead already goes there.
 
 80
-00:05:58,028 --> 00:06:00,637
+00:04:43,737 --> 00:04:46,103
 The third colony gets two paragraphs,
 
 81
-00:06:01,087 --> 00:06:03,696
+00:04:46,553 --> 00:04:48,096
 with an empty line between them.
 
 82
-00:06:04,596 --> 00:06:08,509
+00:04:48,996 --> 00:04:51,190
 The Quest Log shows a lead as a page,
 
 83
-00:06:08,959 --> 00:06:12,002
+00:04:51,640 --> 00:04:54,480
 so the first paragraph is the order,
 
 84
-00:06:12,452 --> 00:06:15,930
+00:04:54,930 --> 00:04:57,065
 and the second is why anyone would go.
 
 85
-00:06:17,730 --> 00:06:19,904
+00:04:58,865 --> 00:05:00,867
 A landmark's line is different.
 
 86
-00:06:20,804 --> 00:06:23,413
+00:05:01,767 --> 00:05:03,498
 The card shows the first line,
 
 87
-00:06:23,863 --> 00:06:26,472
+00:05:03,948 --> 00:05:06,393
 and cuts it after sixty characters,
 
 88
-00:06:26,922 --> 00:06:30,835
+00:05:06,843 --> 00:05:10,180
 so no landmark line here is longer than that.
 
 89
-00:06:32,635 --> 00:06:35,243
+00:05:11,980 --> 00:05:14,144
 I save, and lint says clean.
 
 90
-00:06:36,143 --> 00:06:39,622
+00:05:15,044 --> 00:05:18,011
 And again, clean isn't the whole check today.
 
 91
-00:06:40,522 --> 00:06:44,870
+00:05:18,911 --> 00:05:21,768
 Lint doesn't know a sky's name from a typing mistake,
 
 92
-00:06:45,320 --> 00:06:48,363
+00:05:22,218 --> 00:05:24,352
 and it doesn't count your percent signs.
 
 93
-00:06:49,263 --> 00:06:52,741
+00:05:25,252 --> 00:05:27,379
 So read down the list on the page.
 
 94
-00:06:53,941 --> 00:06:56,985
+00:05:28,579 --> 00:05:30,871
 Four leads in the Quest Log now.
 
 95
-00:06:57,885 --> 00:06:59,624
+00:05:31,771 --> 00:05:33,343
 First, the third colony.
 
 96
-00:07:00,074 --> 00:07:03,987
+00:05:33,793 --> 00:05:36,478
 There's her name on the card, and my line.
 
 97
-00:07:05,787 --> 00:07:07,526
+00:05:38,278 --> 00:05:39,348
 Then the miners' home,
 
 98
-00:07:07,976 --> 00:07:11,020
+00:05:39,798 --> 00:05:41,751
 and this time it has a name.
 
 99
-00:07:11,920 --> 00:07:15,833
+00:05:42,651 --> 00:05:46,461
 On Comms, the Assay Office offers the miners' escort.
 
 100
-00:07:17,633 --> 00:07:21,111
+00:05:48,261 --> 00:05:50,187
 Now the one the Gleaners won't talk about.
 
 101
-00:07:22,011 --> 00:07:25,054
+00:05:51,087 --> 00:05:53,603
 This is the Breakers, and somebody's waiting.
 
 102
-00:07:26,854 --> 00:07:29,463
+00:05:55,403 --> 00:05:57,532
 And last, the Gleaners' own home.
 
 103
-00:07:30,363 --> 00:07:32,102
+00:05:58,432 --> 00:05:59,755
 It has no landmark,
 
 104
-00:07:32,552 --> 00:07:36,465
+00:06:00,205 --> 00:06:02,809
 so the card falls back to the region's name.
 
 105
-00:07:38,265 --> 00:07:41,743
+00:06:04,609 --> 00:06:07,491
 Here's Charted Locations, with four places in it.
 
 106
-00:07:42,643 --> 00:07:46,122
+00:06:08,391 --> 00:06:11,051
 Those are my landmarks, and only my landmarks.
 
 107
-00:07:47,022 --> 00:07:49,196
+00:06:11,951 --> 00:06:13,445
 A region doesn't get charted,
 
 108
-00:07:49,646 --> 00:07:53,993
+00:06:13,895 --> 00:06:16,400
 and neither does a home with no landmark in it.
 
 109
-00:07:55,193 --> 00:07:56,933
+00:06:17,600 --> 00:06:18,603
 Now it's your turn.
 
 110
-00:07:57,833 --> 00:08:01,746
+00:06:19,503 --> 00:06:22,414
 Say what your galaxy is like in one sentence,
 
 111
-00:08:02,196 --> 00:08:06,109
+00:06:22,864 --> 00:06:25,429
 and set no more than four dials to match.
 
 112
-00:08:07,009 --> 00:08:09,183
+00:06:26,329 --> 00:06:27,970
 Draw the grid on paper.
 
 113
-00:08:10,083 --> 00:08:12,691
+00:06:28,870 --> 00:06:30,985
 Give every side's home a landmark,
 
 114
-00:08:13,141 --> 00:08:18,793
+00:06:31,435 --> 00:06:35,532
 and write one place that's only a story, and one that's a fight.
 
 115
-00:08:20,593 --> 00:08:26,680
+00:06:37,332 --> 00:06:41,490
 Next time, the work a station hands out gets a beginning and an end.

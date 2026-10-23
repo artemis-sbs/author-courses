@@ -23,8 +23,9 @@ s03_five_endings_4	After the word comes a number, and what to count.
 s03_five_endings_5	So, for Patrol: Done when, destroy three enemies.
 s03_five_endings_6	Enemies is a word the game knows.
 s03_five_endings_7	It means anything at war with the crew.
-s03_five_endings_8	And the game shows that same line to the crew as their objective,
-s03_five_endings_9	so write it the way you'd say it.
+s03_five_endings_8	The crew never sees that line.
+s03_five_endings_9	They read the description under it,
+s03_five_endings_10	so the order goes there too.
 s04_a_reward_that_costs_somethin_0	Salvage is the Gleaners' job.
 s04_a_reward_that_costs_somethin_1	Its ending is, recover two tech,
 s04_a_reward_that_costs_somethin_2	and tech is a key from your Goods chapter.
@@ -64,8 +65,8 @@ s06_the_briefing_11	And an icon can start a line, or be a bullet.
 s06_the_briefing_12	An hourglass for the clock,
 s06_the_briefing_13	and a crosshair for the hulls.
 s06_the_briefing_14	Lint checks the icon names,
-s06_the_briefing_15	but not the name of a model,
-s06_the_briefing_16	so copy that one from the page.
+s06_the_briefing_15	and the model's name too,
+s06_the_briefing_16	so a misspelled one gets a warning.
 s07_on_offer_0	A job nobody offers is never seen.
 s07_on_offer_1	So, back up to the sides.
 s07_on_offer_2	The farmers get patrol, escort and strike.
