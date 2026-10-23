@@ -16,7 +16,7 @@ bold sentence on prize and price are cards from the page; the paragraph and the 
 drawn as a short list in the board's own words. How an answer that is not offered looks in the
 engine (absent or greyed) is not known: the game stills are taken, never described here.
 
-GAME STILLS. NOT TAKEN YET: planned here, taken in one sitting by hand. NEVER start the engine
+GAME STILLS. TAKEN 2026-10-23 in the engine (exe of 10-22 16:09); probe help (faces re-sent, ship beside a far landmark, steps completed or revealed, kills reported) in the session log. Planned here, taken in one sitting by hand. NEVER start the engine
 for them from this file: Open Universe rewrites the player's save. ONE game, THREE windows, on
 the sandbox probe:
 `python game.py c6-06-reputation-arcs start --state final --consoles server,helm,comms`
@@ -192,7 +192,7 @@ _E("e_ledger_a", "final", "What I expect, if the crew takes", off=3, file=CAMP)
 _term("t_lint", "final")
 
 # THE REAL GAME (planned; not taken yet - see the docstring for the press order)
-_game("game_c66_hail3", "Comms with the Hollin Compact selected, Hail Hollin Compact pressed: the cold greeting and three answers, no Ask to see the Tern's manifest")
+_game("game_c66_hail3", "Comms with the Hollin Compact selected, Hail Hollin Compact pressed: three answers, no Ask to see the Tern's manifest")
 _game("game_c66_hail4", "Comms after two levies, hailing again: four answers, the fourth Ask to see the Tern's manifest")
 _game("game_c66_asked", "Helm, Quest Log: The Tern's Manifest done, 200 credits paid")
 _game("game_c66_sold", "Comms at the Gleaners' home after Sell them a copy of the Count: their answer on the screen, nothing about what it cost")

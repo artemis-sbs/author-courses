@@ -17,7 +17,7 @@ its measured table (cards, no game). Scene 4's "I tried, with a page made to loo
 record" is an act, not a screen: campaign.md stays up. Scene 7 fills the table at the end only
 (k3), not column by column.
 
-GAME STILLS. NOT TAKEN YET: planned here, taken by hand. NEVER start the engine for them from
+GAME STILLS. TAKEN 2026-10-23 in the engine (exe of 10-22 16:09); probe help (faces re-sent, ship beside a far landmark, steps completed or revealed, kills reported) in the session log. Planned here, taken by hand. NEVER start the engine for them from
 this file: Open Universe rewrites the player's save. One game still, on the sandbox probe:
 `python game.py c6-01-from-one-session-to-twenty start --state w2 --consoles server,helm`
 Marks are left off every game still.
@@ -191,7 +191,7 @@ _E("e_lead", "w2", "### [The Long Count: One of Five](s01_go)", off=3)
 _E("e_leadt", "w2", "The Tern carried five boats", off=3)
 _term("t_lint", "w2")
 
-_game("game_c61_log4", "Helm, the handheld icon then Quests: the four Class 5 leads, all open, as the campaign begins")
+_game("game_c61_log4", "Helm, the handheld icon then Quests: the four Class 5 leads, all open, and The Long Count: One of Five beside them")
 
 _card("card_title", "title")
 _card("card_loop", "table", heading="Step 1 - Read a campaign that shipped", nth=1, kicker="Five decisions Storm's Beacon wrote down")

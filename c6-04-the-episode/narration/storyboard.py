@@ -16,7 +16,7 @@ of the editor (the page's slot table is not drawn: a fenced "## ..." line inside
 a heading's section for the picture tool, so the tables after it are drawn as rows in the
 board's own words). Scene 5 adds the three records in one state ("recs"), not one at a time.
 
-GAME STILLS. NOT TAKEN YET: planned here, taken by hand. NEVER start the engine for them from
+GAME STILLS. TAKEN 2026-10-23 in the engine (exe of 10-22 16:09); probe help (faces re-sent, ship beside a far landmark, steps completed or revealed, kills reported) in the session log. Planned here, taken by hand. NEVER start the engine for them from
 this file: Open Universe rewrites the player's save. ONE game, THREE windows, on the sandbox probe:
 `python game.py c6-04-the-episode start --state recs --consoles server,helm,science,weapons`
 Marks are left off every game still. Press order:
@@ -197,7 +197,7 @@ _E("e_three", "recs", "## The count so far", nth=2, off=3)
 _E("e_two2", "recs", "Done when: destroy 2 enemies", off=3)
 _term("t_lint", "recs")
 
-_game("game_c64_dunlin", "Helm on arrival at (-2, 3): the card reading The Dunlin with its line, the warning that she is guarded, and The Long Count: Bait in the Quest Log")
+_game("game_c64_dunlin", "Comms on arrival at (-2, 3), the ship's own channel: the Threat line 'The Dunlin is guarded - hostiles on approach.' and the Dunlin charted")
 _game("game_c64_charted", "Helm, Quest Log, Charted Locations: Kestrel Relay, The Wren and The Dunlin")
 
 _card("card_title", "title")

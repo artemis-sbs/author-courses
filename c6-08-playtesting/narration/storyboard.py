@@ -17,7 +17,7 @@ it, and the page's table of `state:` values, as cards. (3) File Explorer deletin
 save (scenes 4 and 7) and the walk in the game (scene 4) are cards in the page's own words. (4)
 The bible page in a browser is the command (a terminal) and then the page's table of what to read.
 
-GAME STILLS. NOT TAKEN YET: planned here, taken in one sitting by hand. NEVER start the engine
+GAME STILLS. TAKEN 2026-10-23 in the engine (exe of 10-22 16:09); probe help (faces re-sent, ship beside a far landmark, steps completed or revealed, kills reported) in the session log. Planned here, taken in one sitting by hand. NEVER start the engine
 for it from this file: Open Universe rewrites the player's save. ONE game, on the sandbox probe:
 `python game.py c6-08-playtesting start --state final --consoles server,helm,science,comms`
 Marks are left off every game still until it exists. Press order (Step 6 of the page):

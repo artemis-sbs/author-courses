@@ -16,7 +16,7 @@ are shown as the editor's text in campaign.md; the page's other tables are cards
 The bible page in a browser (scene 7) is shown as the command and then the page's own table of
 what it says, as cards: nobody has run it in a browser.
 
-GAME STILLS. NOT TAKEN YET: planned here, taken in one sitting by hand. NEVER start the engine
+GAME STILLS. TAKEN 2026-10-23 in the engine (exe of 10-22 16:09); probe help (faces re-sent, ship beside a far landmark, steps completed or revealed, kills reported) in the session log. Planned here, taken in one sitting by hand. NEVER start the engine
 for them from this file: Open Universe rewrites the player's save. ONE game, TWO windows, on the
 sandbox probe:
 `python game.py c6-05-campaign-architecture start --state final --consoles server,helm`
@@ -187,7 +187,7 @@ _term("t_bible", "final", "sbs docs MyUniverse --lens bible")
 
 # THE REAL GAME (planned; not taken yet - see the docstring for the press order)
 _game("game_c65_four", "Helm, Quest Log: Three of Five just finished at the Assay Office, Four of Five in the list at once")
-_game("game_c65_petrel", "Helm on arrival at (4, -2): the card reading The Petrel, and Five of Five in the list")
+_game("game_c65_petrel", "Helm, Quest Log on arrival at (4, -2): Four of Five done, its line naming the Petrel, and The Petrel under Charted Locations")
 _game("game_c65_done", "Helm, Quest Log after Five Boats: every line of The Long Count under Done, the Class 5 leads finished too, and no new lead")
 
 # drawn

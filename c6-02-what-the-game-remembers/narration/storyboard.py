@@ -17,7 +17,7 @@ words, with the page's own lines. The start screen's dial was never seen by anyo
 so); it is the "slots" card. Scenes 6 and 7 are the page's numbered steps and measured table, with
 the one game still below at the hail.
 
-GAME STILLS. NOT TAKEN YET: planned here, taken by hand. NEVER start the engine for them from
+GAME STILLS. TAKEN 2026-10-23 in the engine (exe of 10-22 16:09); probe help (faces re-sent, ship beside a far landmark, steps completed or revealed, kills reported) in the session log. Planned here, taken by hand. NEVER start the engine for them from
 this file: Open Universe rewrites the player's save. One game still, on the sandbox probe:
 `python game.py c6-02-what-the-game-remembers start --state h2 --consoles server,helm,comms`
 Marks are left off every game still.

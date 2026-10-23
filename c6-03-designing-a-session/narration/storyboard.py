@@ -16,7 +16,7 @@ of Two of Five, then the table" is two marks on the one still. Scene 8 plays the
 page's numbered steps are a card, with two game stills (the Wren's arrival, the Quest Log at the
 end). Nobody has seen the scan in the real game (the page says so).
 
-GAME STILLS. NOT TAKEN YET: planned here, taken by hand. NEVER start the engine for them from
+GAME STILLS. TAKEN 2026-10-23 in the engine (exe of 10-22 16:09); probe help (faces re-sent, ship beside a far landmark, steps completed or revealed, kills reported) in the session log. Planned here, taken by hand. NEVER start the engine for them from
 this file: Open Universe rewrites the player's save. ONE game, TWO windows, on the sandbox probe:
 `python game.py c6-03-designing-a-session start --state hook --consoles server,helm,science`
 Marks are left off every game still. Press order:
@@ -180,7 +180,7 @@ _E("e_home", "hook", "### [The Long Count: Enter It](s01_home)", off=6)
 _E("e_two", "hook", "### [The Long Count: Two of Five](s02_go)", off=8)
 _term("t_lint", "hook")
 
-_game("game_c63_wren", "Helm on arrival at (2, 2): the card reading The Wren with its line, and the warning that she is guarded")
+_game("game_c63_wren", "Comms on arrival at (2, 2), the ship's own channel: the Threat line 'The Wren is guarded - hostiles on approach.', the Wren charted, and Sensors flagging the derelict")
 _game("game_c63_end", "Helm, Quest Log at the end of the evening: Two of Five open, three steps of The Long Count under Done")
 
 _card("card_parts", "table", heading="Step 1 - The four parts of an evening", nth=1, kicker="Open, objective, climax, hook")

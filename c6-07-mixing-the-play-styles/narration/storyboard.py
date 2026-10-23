@@ -16,7 +16,7 @@ cards from the page. In The Plover's Price the briefing's `ship://` line is a pi
 hull, not a 3D model; it is marked as a line of text. Scene 8 (an evening off the map) is the
 page's table and nothing else: no other mission is started.
 
-GAME STILLS. NOT TAKEN YET: planned here, taken in one sitting by hand. NEVER start the engine
+GAME STILLS. TAKEN 2026-10-23 in the engine (exe of 10-22 16:09); probe help (faces re-sent, ship beside a far landmark, steps completed or revealed, kills reported) in the session log. Planned here, taken in one sitting by hand. NEVER start the engine
 for them from this file: Open Universe rewrites the player's save. ONE game, THREE windows, on
 the sandbox probe:
 `python game.py c6-07-mixing-the-play-styles start --state final --consoles server,helm,comms`
@@ -192,7 +192,7 @@ _term("t_lint", "final")
 # THE REAL GAME (planned; not taken yet - see the docstring for the press order)
 _game("game_c67_nolamp", "Comms with the Hollin Compact selected, standing 0: its list of jobs with no Lamp Run on it")
 _game("game_c67_lamp", "Comms with the Hollin Compact selected after one levy: Lamp Run on the list with its price")
-_game("game_c67_done", "Helm on arrival at (2, 2): Lamp Run done and paid")
+_game("game_c67_done", "Helm, Quest Log on arrival at (2, 2): Hollin Compact: Lamp Run done, 360 credits")
 _game("game_c67_ask", "Comms with the Assay Office selected, hailed: the two ways to ask, and Sign off")
 _game("game_c67_open", "Helm, Quest Log: The Plover's Price done, Enter It Again newly in the list")
 
