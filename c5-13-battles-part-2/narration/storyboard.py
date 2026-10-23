@@ -131,7 +131,7 @@ STILLS = {
     "game_c13_arrive": ("game", "Comms just after arriving at The Bone Pile: two lines titled Threat, the guards' and ours, 'A Gleaner battle line is forming up between you and the Bone Pile.'"),
     "game_c13_line": ("game", "Comms a few seconds later: the battle line on the map, four ships in red beside the crew's ship"),
     "game_c13_back": ("game", "Helm, the Quest Log with Charted Locations open and The Bone Pile in it, after running and before engaging it again"),
-    "game_c13_raiders": ("game", "A game where The Bone Pile was not made an enemy system: on arrival only the three guards by the wreck"),
+    "game_c13_raiders": ("game", "Comms at The Bone Pile in a game where it was not made an enemy system (seed 13): the guards' Threat line, our own Threat line, and hostile contacts closing on the ship, with no Gleaner fleets waiting far off"),
     "game_c13_nowait": ("game", "The nodelay run at The Bone Pile: on Comms the guards' Threat line only, no line of ships and no warning of ours"),
     # drawn
     "card_title": ("card", "title", {}),
